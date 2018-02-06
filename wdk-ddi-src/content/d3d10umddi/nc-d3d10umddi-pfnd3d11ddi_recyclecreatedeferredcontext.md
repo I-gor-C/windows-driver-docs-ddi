@@ -40,7 +40,7 @@ apiname:
 -	RecycleCreateDeferredContext
 product: Windows
 targetos: Windows
-req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
+req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
 ---
 
 
@@ -117,13 +117,13 @@ For more information about <i>RecycleCreateDeferredContext</i>, see <a href="htt
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createdeferredcontext.md">D3D11DDIARG_CREATEDEFERREDCONTEXT</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
-
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
 
  
 

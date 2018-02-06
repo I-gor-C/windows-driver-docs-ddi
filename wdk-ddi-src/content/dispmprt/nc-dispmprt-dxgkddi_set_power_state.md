@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiSetPowerState
 product: Windows
 targetos: Windows
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -108,11 +108,11 @@ The <i>DxgkDdiSetPowerState</i> function should be made pageable.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+<a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a>
 
  
 

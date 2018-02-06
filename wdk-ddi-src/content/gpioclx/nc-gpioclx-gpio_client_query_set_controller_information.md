@@ -40,7 +40,7 @@ apiname:
 -	CLIENT_QuerySetControllerInformation
 product: Windows
 targetos: Windows
-req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+req.typenames: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
 ---
 
 
@@ -112,11 +112,11 @@ Implementing a <i>CLIENT_QuerySetControllerInformation</i> function is optional.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698240">CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a>
 
  
 

@@ -78,7 +78,7 @@ Returns the value of the performance counter in units of ticks.
 
 Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, the minidriver must also supply <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> callback functions.
 
-The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteristics as <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
+The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteristics as <a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,13 +88,13 @@ The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteri
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
-
 <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 
-<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a>
+
+<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 
  
 

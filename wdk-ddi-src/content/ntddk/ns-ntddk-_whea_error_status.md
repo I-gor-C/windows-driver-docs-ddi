@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 5b11112b-e900-4894-a9ce-6895a4fa1956
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: ntddk/PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, whea.whea_error_status, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, PWHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, _WHEA_ERROR_STATUS
+ms.keywords: ntddk/PWHEA_ERROR_STATUS, PWHEA_ERROR_STATUS, whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], whea.whea_error_status, _WHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], WHEA_ERROR_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,9 +89,9 @@ A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_wh
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
 
 <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
 

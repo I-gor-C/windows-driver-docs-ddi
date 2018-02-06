@@ -78,9 +78,9 @@ The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-moun
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
-
 <a href="..\mountdev\ns-mountdev-_mountdev_unique_id.md">MOUNTDEV_UNIQUE_ID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
 
  
 

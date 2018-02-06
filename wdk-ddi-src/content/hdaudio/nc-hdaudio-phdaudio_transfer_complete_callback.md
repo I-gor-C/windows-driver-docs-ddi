@@ -40,7 +40,7 @@ apiname:
 -	HDAudioTransferCompleteCallback
 product: Windows
 targetos: Windows
-req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+req.typenames: "*PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT"
 ---
 
 

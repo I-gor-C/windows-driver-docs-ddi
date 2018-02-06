@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6239f9b5-99e9-4ed7-b2a8-863c1784692b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_sendscsiinquiry, fibreHBA_rtns_7a60c4a4-d9d4-408f-b5c9-6cb593f510fb.xml, HBA_SendScsiInquiry routine [Storage Devices], hbaapi/HBA_SendScsiInquiry, HBA_SendScsiInquiry
+ms.keywords: HBA_SendScsiInquiry routine [Storage Devices], fibreHBA_rtns_7a60c4a4-d9d4-408f-b5c9-6cb593f510fb.xml, HBA_SendScsiInquiry, storage.hba_sendscsiinquiry, hbaapi/HBA_SendScsiInquiry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -178,9 +178,9 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
  
 

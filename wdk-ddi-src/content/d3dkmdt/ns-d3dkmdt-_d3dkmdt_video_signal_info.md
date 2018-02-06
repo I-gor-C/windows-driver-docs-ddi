@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 38d0a655-265b-46e0-8af3-de6757025588
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmdt_video_signal_info, DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO, _D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices]
+ms.keywords: d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, _D3DKMDT_VIDEO_SIGNAL_INFO, display.d3dkmdt_video_signal_info, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices], D3DKMDT_VIDEO_SIGNAL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -104,9 +104,9 @@ A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a> stru
 
 ## See Also
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_target.md">D3DKMDT_VIDEO_PRESENT_TARGET</a>
-
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_present_target.md">D3DKMDT_VIDEO_PRESENT_TARGET</a>
 
  
 

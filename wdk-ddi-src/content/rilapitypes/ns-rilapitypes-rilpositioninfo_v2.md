@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 881e85a2-4ba2-4940-94c0-61a2d335e52a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "*LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2, RILPOSITIONINFO, netvista.rilpositioninfo_v2, *LPRILPOSITIONINFO, rilapitypes/RILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista]"
+ms.keywords: RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfo_v2, RILPOSITIONINFO_V2, RILPOSITIONINFO, rilapitypes/RILPOSITIONINFO_V2, *LPRILPOSITIONINFO, *LPRILPOSITIONINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	RILPOSITIONINFO_V2
 product: Windows
 targetos: Windows
-req.typenames: RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, *LPRILPOSITIONINFO
+req.typenames: RILPOSITIONINFO_V2, *LPRILPOSITIONINFO, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO
 req.product: Windows 10 or later.
 ---
 

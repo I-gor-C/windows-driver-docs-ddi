@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 86ec2e8f-1a89-4c0a-b761-d9bf0d3dc35a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddndis/NdisNicSwitchVPortIntModMedium, ntddndis/NdisNicSwitchVPortIntModAdaptive, ntddndis/NdisNicSwitchVPortIntModOff, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration pointer [Network Drivers Starting with Windows Vista], NdisNicSwitchVPortIntModLow, ntddndis/NdisNicSwitchVPortIntModUndefined, ntddndis/NdisNicSwitchVPortIntModLow, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NdisNicSwitchVPortIntModHigh, _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModOff, NdisNicSwitchVPortIntModUndefined, NdisNicSwitchVPortIntModMedium, NdisNicSwitchVPortIntModAdaptive, ntddndis/NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, netvista.ndis_nic_switch_vport_interrupt_moderation, NdisNicSwitchVPortIntModHigh, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords: netvista.ndis_nic_switch_vport_interrupt_moderation, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModOff, NdisNicSwitchVPortIntModAdaptive, ntddndis/NdisNicSwitchVPortIntModLow, ntddndis/NdisNicSwitchVPortIntModHigh, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration [Network Drivers Starting with Windows Vista], NdisNicSwitchVPortIntModHigh, ntddndis/NdisNicSwitchVPortIntModOff, _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisNicSwitchVPortIntModAdaptive, NdisNicSwitchVPortIntModLow, NdisNicSwitchVPortIntModMedium, ntddndis/NdisNicSwitchVPortIntModMedium, NdisNicSwitchVPortIntModUndefined, ntddndis/PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NdisNicSwitchVPortIntModUndefined
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -107,9 +107,9 @@ The <b>InterruptModeration</b> member of the <a href="..\ntddndis\ns-ntddndis-_n
 
     ## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a>
+        <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a>
 
 <b></b>
 

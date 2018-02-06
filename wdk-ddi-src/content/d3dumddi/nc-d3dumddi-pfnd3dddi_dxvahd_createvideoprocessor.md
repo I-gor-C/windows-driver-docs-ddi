@@ -113,9 +113,9 @@ The video processor is successfully created.
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_destroyvideoprocessor.md">DestroyVideoProcessor</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_createvideoprocessor.md">D3DDDIARG_DXVAHD_CREATEVIDEOPROCESSOR</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_destroyvideoprocessor.md">DestroyVideoProcessor</a>
 
  
 

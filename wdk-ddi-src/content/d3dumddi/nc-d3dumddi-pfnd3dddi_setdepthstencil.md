@@ -87,9 +87,9 @@ The user-mode display driver should store the depth buffer in the driver's conte
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setdepthstencil.md">D3DDDIARG_SETDEPTHSTENCIL</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
  
 

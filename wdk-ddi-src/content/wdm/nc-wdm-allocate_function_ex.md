@@ -121,15 +121,15 @@ The <i>LookasideListAllocateEx</i> routine is called at the same IRQL as the cal
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
-
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-
 <a href="..\wdm\nf-wdm-exallocatefromlookasidelistex.md">ExAllocateFromLookasideListEx</a>
 
 <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
 
 <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
 

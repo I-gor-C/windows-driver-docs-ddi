@@ -97,9 +97,9 @@ The <b><i>IdeHwBuildIo</i></b> routine resembles Storport's <a href="..\storport
 
 ## See Also
 
-<a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
+
+<a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
 
  
 

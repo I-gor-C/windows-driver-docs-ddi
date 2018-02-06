@@ -98,9 +98,9 @@ USBCAMD_WaitOnDeviceEvent.
 
 ## See Also
 
-<a href="..\usbcamdi\nf-usbcamdi-usbcamd_controlvendorcommand.md">USBCAMD_ControlVendorCommand</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568638">USBCAMD_WaitOnDeviceEvent</a>
+
+<a href="..\usbcamdi\nf-usbcamdi-usbcamd_controlvendorcommand.md">USBCAMD_ControlVendorCommand</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568577">USBCAMD_BulkReadWrite</a>
 

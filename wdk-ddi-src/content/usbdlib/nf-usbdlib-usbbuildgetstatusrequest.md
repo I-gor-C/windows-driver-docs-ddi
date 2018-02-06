@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 7a5fcb4f-fc9a-4ebb-93ef-b83461557b22
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: buses.usbbuildgetstatusrequest, UsbBuildGetStatusRequest routine [Buses], usbdlib/UsbBuildGetStatusRequest, UsbBuildGetStatusRequest, usbfunc_a99bf737-8bb6-4000-af2b-ac076a4ffc8e.xml
+ms.keywords: usbfunc_a99bf737-8bb6-4000-af2b-ac076a4ffc8e.xml, UsbBuildGetStatusRequest routine [Buses], UsbBuildGetStatusRequest, buses.usbbuildgetstatusrequest, usbdlib/UsbBuildGetStatusRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	UsbBuildGetStatusRequest
 product: Windows
 targetos: Windows
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
 req.product: Windows 10 or later.
 ---
 
@@ -102,11 +102,11 @@ None
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
 <a href="..\usb\ns-usb-_urb_control_get_status_request.md">_URB_CONTROL_GET_STATUS_REQUEST</a>
 
 <a href="..\usb\ns-usb-_urb.md">URB</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
 
  
 

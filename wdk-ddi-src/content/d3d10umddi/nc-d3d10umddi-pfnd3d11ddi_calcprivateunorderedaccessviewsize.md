@@ -40,7 +40,7 @@ apiname:
 -	CalcPrivateUnorderedAccessViewSize
 product: Windows
 targetos: Windows
-req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
+req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
 ---
 
 
@@ -84,9 +84,9 @@ SIZE_T Pfnd3d11ddiCalcprivateunorderedaccessviewsize(
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
-
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createunorderedaccessview.md">D3D11DDIARG_CREATEUNORDEREDACCESSVIEW</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
 
  
 

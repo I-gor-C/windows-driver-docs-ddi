@@ -84,9 +84,9 @@ Returns S_OK or an appropriate error result if the volume bitblt operation is no
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_volumeblt1.md">D3DDDIARG_VOLUMEBLT1</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
  
 

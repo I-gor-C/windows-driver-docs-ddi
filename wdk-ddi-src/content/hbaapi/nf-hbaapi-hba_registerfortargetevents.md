@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a06f6757-e125-4f80-9594-a60fa1fef6e4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_registerfortargetevents, HBA_RegisterForTargetEvents routine [Storage Devices], hbaapi/HBA_RegisterForTargetEvents, HBA_RegisterForTargetEvents, fibreHBA_rtns_511fff45-f98b-4dbe-a74c-d577497f4e8c.xml
+ms.keywords: HBA_RegisterForTargetEvents routine [Storage Devices], hbaapi/HBA_RegisterForTargetEvents, HBA_RegisterForTargetEvents, storage.hba_registerfortargetevents, fibreHBA_rtns_511fff45-f98b-4dbe-a74c-d577497f4e8c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -149,13 +149,13 @@ To stop event delivery, call <b>HBA_RemoveCallback</b>.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557123">HBA_PORT_CALLBACK</a>
-
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
-
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557123">HBA_PORT_CALLBACK</a>
 
  
 

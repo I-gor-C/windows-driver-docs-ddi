@@ -40,7 +40,7 @@ apiname:
 -	pfnVideoProcessorSetStreamColorSpace
 product: Windows
 targetos: Windows
-req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
+req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
 ---
 
 
@@ -94,9 +94,9 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
-
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_color_space.md">D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
 
  
 

@@ -145,13 +145,13 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
 
 <a href="..\ndis\nf-ndis-ndisfindicatestatus.md">NdisFIndicateStatus</a>
 
-<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
  
 

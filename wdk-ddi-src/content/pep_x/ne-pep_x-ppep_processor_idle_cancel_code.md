@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6112360C-B74F-4A77-8DE5-3EF1AAF49533
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: pep_x/PEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration [Kernel-Mode Driver Architecture], PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelMax, PepIdleCancelNoCState, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, kernel.pep_processor_idle_cancel_code, pep_x/PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelWorkPending, PEP_PROCESSOR_IDLE_CANCEL_CODE, pep_x/PepIdleCancelNoCState, PepIdleCancelMax, PepIdleCancelWorkPending
+ms.keywords: pep_x/PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelWorkPending, pep_x/PepIdleCancelMax, PepIdleCancelDependencyCheckFailed, PepIdleCancelNoCState, kernel.pep_processor_idle_cancel_code, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, pep_x/PepIdleCancelNoCState, PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration [Kernel-Mode Driver Architecture], pep_x/PEP_PROCESSOR_IDLE_CANCEL_CODE, PepIdleCancelMax, PEP_PROCESSOR_IDLE_CANCEL_CODE, PepIdleCancelWorkPending
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -40,7 +40,7 @@ apiname:
 -	PEP_PROCESSOR_IDLE_CANCEL_CODE
 product: Windows
 targetos: Windows
-req.typenames: PEP_PROCESSOR_IDLE_CANCEL_CODE, *PPEP_PROCESSOR_IDLE_CANCEL_CODE
+req.typenames: "*PPEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE"
 ---
 
 # *PPEP_PROCESSOR_IDLE_CANCEL_CODE Enumeration
@@ -93,9 +93,9 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
 
     ## See Also
 
-        <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a>
+        <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a>
+<a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a>
 
  
 

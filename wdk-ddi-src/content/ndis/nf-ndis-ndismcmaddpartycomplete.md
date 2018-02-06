@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 5bbcd552-00c2-4085-8222-c514eb92e654
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMCmAddPartyComplete, condis_mcm_ref_929fb1d1-4d15-4d2d-be4b-a6845674f7e6.xml, NdisMCmAddPartyComplete macro [Network Drivers Starting with Windows Vista], netvista.ndismcmaddpartycomplete, ndis/NdisMCmAddPartyComplete
+ms.keywords: condis_mcm_ref_929fb1d1-4d15-4d2d-be4b-a6845674f7e6.xml, NdisMCmAddPartyComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmAddPartyComplete, NdisMCmAddPartyComplete, netvista.ndismcmaddpartycomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -145,20 +145,20 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
-
-<a href="..\ndis\nf-ndis-ndismcmdroppartycomplete.md">NdisMCmDropPartyComplete</a>
-
 <a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
-
-<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
 
+<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
+
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdroppartycomplete.md">NdisMCmDropPartyComplete</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
+
 <a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
    NdisAllocateFromNPagedLookasideList</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
 
  
 

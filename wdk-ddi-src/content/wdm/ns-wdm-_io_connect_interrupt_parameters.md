@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 450c2e2b-56fa-4896-ba81-0f84f7e3051d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, _IO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, wdm/PIO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], PIO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture]
+ms.keywords: "*PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/PIO_CONNECT_INTERRUPT_PARAMETERS, kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, _IO_CONNECT_INTERRUPT_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	IO_CONNECT_INTERRUPT_PARAMETERS
 product: Windows
 targetos: Windows
-req.typenames: "*PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS"
+req.typenames: IO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS
 req.product: Windows 10 or later.
 ---
 

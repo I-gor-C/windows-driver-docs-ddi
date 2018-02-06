@@ -40,7 +40,7 @@ apiname:
 -	IDebugControl6
 product: Windows
 targetos: Windows
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 # IDebugControl6 interface
@@ -68,15 +68,15 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol5.md">IDebugControl5</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

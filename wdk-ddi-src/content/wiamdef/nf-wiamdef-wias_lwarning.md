@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 2959c470-1da7-4396-a591-7a356379f9de
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WIAS_LWARNING macro [Imaging Devices], IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING, image.wias_lwarning, wiamdef/WIAS_LWARNING
+ms.keywords: wiamdef/WIAS_LWARNING, WIAS_LWARNING, WIAS_LWARNING macro [Imaging Devices], image.wias_lwarning, IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	WIAS_LWARNING
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
 req.product: Windows 10 or later.
 ---
 

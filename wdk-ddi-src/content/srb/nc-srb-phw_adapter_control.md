@@ -40,7 +40,7 @@ apiname:
 -	(*PHW_ADAPTER_CONTROL)
 product: Windows
 targetos: Windows
-req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.typenames: "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
 req.product: Windows 10 or later.
 ---
 
@@ -96,9 +96,9 @@ For more information about the adapter control routine that is used with the Sto
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>
+
+<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
 
  
 

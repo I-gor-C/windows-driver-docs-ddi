@@ -119,9 +119,9 @@ A driver or application can query for the necessary output buffer size by settin
 
 ## See Also
 
-<b>ENUMERATE_BANDS_PARAMETERS</b>
-
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">BAND_TABLE</a>
+
+<b>ENUMERATE_BANDS_PARAMETERS</b>
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1be057dc-6a97-4798-a152-7cc6d6febda5
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmddi/DXGK_ALLOCATIONLIST, DXGK_ALLOCATIONLIST structure [Display Devices], DXGK_ALLOCATIONLIST, _DXGK_ALLOCATIONLIST, DmStructs_ed92f9cf-ad3f-4566-89ff-31d6b162f755.xml, display.dxgk_allocationlist
+ms.keywords: display.dxgk_allocationlist, DXGK_ALLOCATIONLIST structure [Display Devices], DmStructs_ed92f9cf-ad3f-4566-89ff-31d6b162f755.xml, d3dkmddi/DXGK_ALLOCATIONLIST, _DXGK_ALLOCATIONLIST, DXGK_ALLOCATIONLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -92,15 +92,15 @@ In the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_openallocationinfo.md">DxgkDdiOpenAllocation</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_openallocationinfo.md">DxgkDdiOpenAllocation</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_CDROM_ENABLE_STREAMING
 product: Windows
 targetos: Windows
-req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
+req.typenames: "*PWRITE_ROTATION, WRITE_ROTATION"
 ---
 
 # IOCTL_CDROM_ENABLE_STREAMING IOCTL
@@ -86,9 +86,9 @@ By default, streaming is disabled for all newly opened raw CDROM handles. A play
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>
-
 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>
 
  
 

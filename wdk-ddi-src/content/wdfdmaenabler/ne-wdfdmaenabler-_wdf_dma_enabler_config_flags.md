@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8F8C97B2-5C77-4AD0-9434-22108111F5A8
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WDF_DMA_ENABLER_CONFIG_FLAGS, _WDF_DMA_ENABLER_CONFIG_FLAGS, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, kmdf.wdf_dma_enabler_config_flags, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, wdf.wdf_dma_enabler_config_flags, WDF_DMA_ENABLER_CONFIG_FLAGS enumeration
+ms.keywords: wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_FLAGS, kmdf.wdf_dma_enabler_config_flags, WDF_DMA_ENABLER_CONFIG_FLAGS enumeration, WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, _WDF_DMA_ENABLER_CONFIG_FLAGS, wdf.wdf_dma_enabler_config_flags, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -106,11 +106,11 @@ For more info, see <a href="https://msdn.microsoft.com/windows/hardware/drivers/
 
     ## See Also
 
-        <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement.md">WdfDmaTransactionSetSingleTransferRequirement</a>
+        <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement.md">WdfDmaTransactionSetSingleTransferRequirement</a>
 
 <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_profile.md">WDF_DMA_PROFILE</a>
-
-<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
 
  
 

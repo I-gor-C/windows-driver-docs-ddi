@@ -40,7 +40,7 @@ apiname:
 -	DxgkCbIndicateChildStatus
 product: Windows
 targetos: Windows
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -112,9 +112,9 @@ The lid on a portable computer gets closed. In this case, the display miniport d
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
  
 

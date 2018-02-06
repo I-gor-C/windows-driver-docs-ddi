@@ -123,9 +123,9 @@ If a nonzero <b>Handle</b> value has been previously specified in an earlier cal
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawtripatch.md">D3DDDIARG_DRAWTRIPATCH</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
  
 

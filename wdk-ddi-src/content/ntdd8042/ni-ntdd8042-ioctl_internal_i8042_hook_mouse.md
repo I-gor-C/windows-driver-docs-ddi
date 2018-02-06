@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_INTERNAL_I8042_HOOK_MOUSE
 product: Windows
 targetos: Windows
-req.typenames: MOUSE_STATE, *PMOUSE_STATE
+req.typenames: "*PMOUSE_STATE, MOUSE_STATE"
 ---
 
 # IOCTL_INTERNAL_I8042_HOOK_MOUSE IOCTL
@@ -115,9 +115,9 @@ The <b>Status</b> member is set to one of the following values:
 
 ## See Also
 
-<a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_mouse.md">INTERNAL_I8042_HOOK_MOUSE</a>
-
 <a href="..\kbdmou\ni-kbdmou-ioctl_internal_mouse_connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a>
+
+<a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_mouse.md">INTERNAL_I8042_HOOK_MOUSE</a>
 
  
 

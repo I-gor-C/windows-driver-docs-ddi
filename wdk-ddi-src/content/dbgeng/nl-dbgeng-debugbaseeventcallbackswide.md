@@ -40,7 +40,7 @@ apiname:
 -	DebugBaseEventCallbacksWide
 product: Windows
 targetos: Windows
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 # DebugBaseEventCallbacksWide Class
@@ -68,9 +68,9 @@ Be careful to implement <a href="https://msdn.microsoft.com/b1e62ae3-4a3d-42db-b
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugeventcallbackswide.md">IDebugEventCallbacksWide</a>
-
 <a href="https://msdn.microsoft.com/b1e62ae3-4a3d-42db-b7fe-87d1a7e0b438">GetInterestMask</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugeventcallbackswide.md">IDebugEventCallbacksWide</a>
 
  
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 67dd0ea0-9c69-415a-8b37-0e8700b6fbd8
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: stream.streamclassstreamnotification, strmini/StreamClassStreamNotification, StreamClassStreamNotification, strclass-routines_22bc1b48-b75e-4dce-9aae-16e16b1ca1f9.xml, StreamClassStreamNotification routine [Streaming Media Devices]
+ms.keywords: strmini/StreamClassStreamNotification, StreamClassStreamNotification, stream.streamclassstreamnotification, strclass-routines_22bc1b48-b75e-4dce-9aae-16e16b1ca1f9.xml, StreamClassStreamNotification routine [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	StreamClassStreamNotification
 product: Windows
 targetos: Windows
-req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.typenames: STREAM_PRIORITY, *PSTREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -71,14 +71,9 @@ This is an enumeration value that contains the type of notification that the min
 
 
 
-#### DeleteStreamEvent
+#### StreamRequestComplete
 
-Deletes the event specified by the <i>EventEntry</i> parameter.
-
-
-#### ReadyForNextStreamControlRequest
-
-Indicates that this stream is ready to receive another control request. 
+Indicates that the minidriver has completed its handling of the stream-oriented stream request block that is pointed to by the optional third argument of this routine, <i>pSrb</i>.
 
 
 #### ReadyForNextStreamDataRequest
@@ -86,9 +81,9 @@ Indicates that this stream is ready to receive another control request.
 Indicates that this stream is ready to receive another data request. 
 
 
-#### SignalMultipleStreamEvents
+#### ReadyForNextStreamControlRequest
 
-Signals that all events that match the criteria specified in the <i>EventSet</i> and <i>EventId</i> parameters have occurred.
+Indicates that this stream is ready to receive another control request. 
 
 
 #### SignalStreamEvent
@@ -96,9 +91,14 @@ Signals that all events that match the criteria specified in the <i>EventSet</i>
 Signals that the event specified by the <i>EventEntry</i> parameter has occurred.
 
 
-#### StreamRequestComplete
+#### SignalMultipleStreamEvents
 
-Indicates that the minidriver has completed its handling of the stream-oriented stream request block that is pointed to by the optional third argument of this routine, <i>pSrb</i>.
+Signals that all events that match the criteria specified in the <i>EventSet</i> and <i>EventId</i> parameters have occurred.
+
+
+#### DeleteStreamEvent
+
+Deletes the event specified by the <i>EventEntry</i> parameter.
 
 `StreamObject`
 

@@ -133,13 +133,13 @@ Drivers typically call <b>AllocateCommonBuffer</b> as part of device start-up, d
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-
 <a href="..\wdm\nc-wdm-pfree_common_buffer.md">FreeCommonBuffer</a>
 
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
 <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
  
 

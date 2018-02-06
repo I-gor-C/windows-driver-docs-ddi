@@ -98,9 +98,9 @@ SerCx2 also calls the <i>EvtSerCx2PurgeFifos</i> function when a client opens a 
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_purge.md">IOCTL_SERIAL_PURGE</a>
-
 <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_purge.md">IOCTL_SERIAL_PURGE</a>
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiInterruptRoutine
 product: Windows
 targetos: Windows
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -108,9 +108,9 @@ The <i>DxgkDdiInterruptRoutine</i> function can call <a href="..\dispmprt\nc-dis
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_queue_dpc.md">DxgkCbQueueDpc</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_synchronize_execution.md">DxgkCbSynchronizeExecution</a>
 

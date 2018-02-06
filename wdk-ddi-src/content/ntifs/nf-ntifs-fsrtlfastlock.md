@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: c3e209b5-9925-4911-8c42-0f15c1c710be
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ifsk.fsrtlfastlock, fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], FsRtlFastLock
+ms.keywords: FsRtlFastLock, fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ifsk.fsrtlfastlock, ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro

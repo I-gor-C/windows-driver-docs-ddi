@@ -40,7 +40,7 @@ apiname:
 -	pfnGetVideoDecoderProfile
 product: Windows
 targetos: Windows
-req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
+req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
 ---
 
 

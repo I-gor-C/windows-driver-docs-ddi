@@ -97,9 +97,9 @@ D3DTSS_DISABLETEXTURECOLORKEY in the <b>State</b> member and <b>TRUE</b> in the 
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_texturestagestate.md">D3DDDIARG_TEXTURESTAGESTATE</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
  
 

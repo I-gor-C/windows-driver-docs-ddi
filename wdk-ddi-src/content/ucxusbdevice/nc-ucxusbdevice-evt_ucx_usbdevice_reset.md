@@ -96,9 +96,9 @@ The client driver returns completion status in <i>Request</i>.  The driver can c
 
 ## See Also
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_reset.md">USBDEVICE_RESET</a>
-
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_reset.md">USBDEVICE_RESET</a>
 
  
 

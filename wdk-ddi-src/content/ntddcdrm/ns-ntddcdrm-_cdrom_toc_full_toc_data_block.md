@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 8d6d1283-b64e-4c3b-8a45-376cfe76a19d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "*PCDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/CDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/PCDROM_TOC_FULL_TOC_DATA_BLOCK, CDROM_TOC_FULL_TOC_DATA_BLOCK, structs-CD-ROM_c55aee22-f6ca-4567-82c6-7bb960f4976a.xml, storage.cdrom_toc_full_toc_data_block, _CDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK structure pointer [Storage Devices], CDROM_TOC_FULL_TOC_DATA_BLOCK structure [Storage Devices]"
+ms.keywords: CDROM_TOC_FULL_TOC_DATA_BLOCK structure [Storage Devices], structs-CD-ROM_c55aee22-f6ca-4567-82c6-7bb960f4976a.xml, PCDROM_TOC_FULL_TOC_DATA_BLOCK structure pointer [Storage Devices], storage.cdrom_toc_full_toc_data_block, *PCDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/PCDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK, CDROM_TOC_FULL_TOC_DATA_BLOCK, _CDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/CDROM_TOC_FULL_TOC_DATA_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,11 +76,12 @@ Indicates the type of information encoded in the Q subchannel of the block where
 
 
 
+#### ADR_NO_MODE_INFORMATION
+
+Q subchannel mode information not supplied. 
+
+
 #### ADR_ENCODES_CURRENT_POSITION
-
-
-
-#### 
 
 
 
@@ -88,9 +89,8 @@ Indicates the type of information encoded in the Q subchannel of the block where
 
 
 
-#### ADR_ENCODES_ISRC
+#### 
 
-Q subchannel encodes ISRC. 
 
 
 #### ADR_ENCODES_MEDIA_CATALOG
@@ -98,9 +98,9 @@ Q subchannel encodes ISRC.
 Q subchannel encodes media catalog number. 
 
 
-#### ADR_NO_MODE_INFORMATION
+#### ADR_ENCODES_ISRC
 
-Q subchannel mode information not supplied.
+Q subchannel encodes ISRC.
 
 `Control`
 
@@ -115,11 +115,6 @@ Indicates the attributes of the track.
 
 
 
-#### AUDIO_DATA_TRACK
-
-Indicates that the track contains nonaudio data. 
-
-
 #### AUDIO_WITH_PREEMPHASIS
 
 Indicates two audio channels with preemphasis of 50/15 microseconds have been added. 
@@ -128,6 +123,11 @@ Indicates two audio channels with preemphasis of 50/15 microseconds have been ad
 #### DIGITAL_COPY_PERMITTED
 
 Indicates digital copying is allowed. 
+
+
+#### AUDIO_DATA_TRACK
+
+Indicates that the track contains nonaudio data. 
 
 
 #### TWO_FOUR_CHANNEL_AUDIO
@@ -166,9 +166,9 @@ Contains the value of the zero bit.
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data.md">CDROM_TOC_FULL_TOC_DATA</a>
-
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_full_toc_data.md">CDROM_TOC_FULL_TOC_DATA</a>
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
 

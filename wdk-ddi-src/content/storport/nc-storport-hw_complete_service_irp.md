@@ -96,9 +96,9 @@ HW_COMPLETE_SERVICE_IRP (
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
-
 <a href="..\storport\nf-storport-storportcompleteserviceirp.md">StorPortCompleteServiceIrp</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
 
  
 

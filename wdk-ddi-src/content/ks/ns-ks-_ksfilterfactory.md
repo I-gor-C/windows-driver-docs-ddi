@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: c40e25f8-e6e5-43bc-895d-a6b247d07470
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: "*PKSFILTERFACTORY, PKSFILTERFACTORY structure pointer [Streaming Media Devices], stream.ksfilterfactory, KSFILTERFACTORY, ks/PKSFILTERFACTORY, ks/KSFILTERFACTORY, PKSFILTERFACTORY, _KSFILTERFACTORY, KSFILTERFACTORY structure [Streaming Media Devices], avstruct_def7ad6b-4cda-4677-abbc-3f8a458fbc87.xml"
+ms.keywords: avstruct_def7ad6b-4cda-4677-abbc-3f8a458fbc87.xml, KSFILTERFACTORY structure [Streaming Media Devices], _KSFILTERFACTORY, ks/PKSFILTERFACTORY, KSFILTERFACTORY, stream.ksfilterfactory, PKSFILTERFACTORY structure pointer [Streaming Media Devices], PKSFILTERFACTORY, *PKSFILTERFACTORY, ks/KSFILTERFACTORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,11 +77,11 @@ Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d
 
 ## See Also
 
-<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
 
  
 

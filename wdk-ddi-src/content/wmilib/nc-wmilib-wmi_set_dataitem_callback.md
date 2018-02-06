@@ -40,7 +40,7 @@ apiname:
 -	DpWmiSetDataItem
 product: Windows
 targetos: Windows
-req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.typenames: "*PWMI_CHANGER_PROBLEM_DEVICE_ERROR, WMI_CHANGER_PROBLEM_DEVICE_ERROR"
 req.product: Windows 10 or later.
 ---
 
@@ -147,11 +147,11 @@ For more information about implementing this routine, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
+
 <a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a>
-
-<a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
 
  
 

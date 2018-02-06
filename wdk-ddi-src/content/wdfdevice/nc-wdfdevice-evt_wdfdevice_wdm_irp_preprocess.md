@@ -123,9 +123,9 @@ The <i>EvtDeviceWdmIrpPreprocess</i> callback function is called at the IRQL of 
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchpreprocessedirp.md">WdfDeviceWdmDispatchPreprocessedIrp</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignwdmirppreprocesscallback.md">WdfDeviceInitAssignWdmIrpPreprocessCallback</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchpreprocessedirp.md">WdfDeviceWdmDispatchPreprocessedIrp</a>
 
  
 

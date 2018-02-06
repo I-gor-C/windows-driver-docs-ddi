@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 18A07670-B610-4D09-8BF0-3C55E781A68B
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: USBFN_CLASS_INFORMATION_PACKET, _USBFN_CLASS_INFORMATION_PACKET, usbfnbase/PUSBFN_CLASS_INFORMATION_PACKET, USBFN_CLASS_INFORMATION_PACKET structure [Buses], PUSBFN_CLASS_INFORMATION_PACKET structure pointer [Buses], PUSBFN_CLASS_INFORMATION_PACKET, buses.usbfn_class_information_packet, usbfnbase/USBFN_CLASS_INFORMATION_PACKET, *PUSBFN_CLASS_INFORMATION_PACKET
+ms.keywords: "*PUSBFN_CLASS_INFORMATION_PACKET, _USBFN_CLASS_INFORMATION_PACKET, usbfnbase/PUSBFN_CLASS_INFORMATION_PACKET, usbfnbase/USBFN_CLASS_INFORMATION_PACKET, USBFN_CLASS_INFORMATION_PACKET, buses.usbfn_class_information_packet, PUSBFN_CLASS_INFORMATION_PACKET structure pointer [Buses], PUSBFN_CLASS_INFORMATION_PACKET, USBFN_CLASS_INFORMATION_PACKET structure [Buses]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	USBFN_CLASS_INFORMATION_PACKET
 product: Windows
 targetos: Windows
-req.typenames: "*PUSBFN_CLASS_INFORMATION_PACKET, USBFN_CLASS_INFORMATION_PACKET"
+req.typenames: USBFN_CLASS_INFORMATION_PACKET, *PUSBFN_CLASS_INFORMATION_PACKET
 req.product: Windows 10 or later.
 ---
 
@@ -96,9 +96,9 @@ A <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTE
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
-
 <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
 
  
 

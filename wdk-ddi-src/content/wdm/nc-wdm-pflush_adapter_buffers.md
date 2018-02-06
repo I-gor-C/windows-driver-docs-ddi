@@ -117,19 +117,19 @@ A driver can get the initial <i>CurrentVa</i> for the start of a packet-based DM
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
 
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
 <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
 
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
 
-<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
+<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
 
  
 

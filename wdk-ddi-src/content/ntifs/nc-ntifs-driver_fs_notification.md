@@ -40,7 +40,7 @@ apiname:
 -	PDRIVER_FS_NOTIFICATION
 product: Windows
 targetos: Windows
-req.typenames: VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
+req.typenames: "*PVOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT"
 ---
 
 
@@ -88,13 +88,13 @@ You must declare the callback function by using the <i>DRIVER_FS_NOTIFICATION</i
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
-
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>
-
 <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 
+<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
+
 <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangemountaware.md">IoRegisterFsRegistrationChangeMountAware</a>
+
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>
 
  
 

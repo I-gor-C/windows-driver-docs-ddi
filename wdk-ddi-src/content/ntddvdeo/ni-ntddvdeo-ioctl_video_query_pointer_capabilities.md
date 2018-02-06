@@ -78,9 +78,9 @@ If the miniport driver successfully returns the pointer capabilities, it sets th
 
 ## See Also
 
-<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_pointer_capabilities.md">VIDEO_POINTER_CAPABILITIES</a>
+
+<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
  
 

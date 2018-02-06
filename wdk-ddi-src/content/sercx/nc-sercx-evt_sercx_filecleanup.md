@@ -98,9 +98,9 @@ For more information, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a>
-
 <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a>
 
  
 

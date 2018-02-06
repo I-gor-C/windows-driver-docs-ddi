@@ -40,7 +40,7 @@ apiname:
 -	RunOnceInitialization
 product: Windows
 targetos: Windows
-req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 
@@ -95,13 +95,13 @@ A small number of low-order bits in the location pointed to by the <i>Context</i
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a>
-
 <a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+
+<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
 
 <a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a>
 
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
+<a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
 

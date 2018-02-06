@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 61699da0-2c34-44cb-8e1a-b266acfc7878
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks-struct_690ec7fd-ea7c-4a47-8351-779aa2cf8e2c.xml, ks/PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL structure pointer [Streaming Media Devices], KSEVENT_TIME_INTERVAL structure [Streaming Media Devices], ks/KSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL, stream.ksevent_time_interval
+ms.keywords: "*PKSEVENT_TIME_INTERVAL, ks/PKSEVENT_TIME_INTERVAL, ks-struct_690ec7fd-ea7c-4a47-8351-779aa2cf8e2c.xml, KSEVENT_TIME_INTERVAL structure [Streaming Media Devices], KSEVENT_TIME_INTERVAL, stream.ksevent_time_interval, PKSEVENT_TIME_INTERVAL, ks/KSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL structure pointer [Streaming Media Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -78,9 +78,9 @@ Specifies the initial clock time when the event should be signaled.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksevent_time_mark.md">KSEVENT_TIME_MARK</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561764">KSEVENTSETID_Clock</a>
+
+<a href="..\ks\ns-ks-ksevent_time_mark.md">KSEVENT_TIME_MARK</a>
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	AgpReleasePhysical
 product: Windows
 targetos: Windows
-req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.typenames: "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
 req.product: Windows 10 or later.
 ---
 
@@ -89,9 +89,9 @@ The miniport driver must call <a href="..\videoagp\nc-videoagp-pagp_free_physica
 
 ## See Also
 
-<a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
-
 <a href="..\videoagp\nc-videoagp-pagp_free_physical.md">AgpFreePhysical</a>
+
+<a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
 
  
 

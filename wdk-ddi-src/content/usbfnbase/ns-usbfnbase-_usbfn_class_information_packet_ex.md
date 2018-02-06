@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 373D7CA9-AF1B-46E8-AE6A-F693A9214527
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: "*PUSBFN_CLASS_INFORMATION_PACKET_EX, PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX, usbfnbase/PUSBFN_CLASS_INFORMATION_PACKET_EX, buses.usbfn_class_information_packet_ex, usbfnbase/USBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX structure [Buses], PUSBFN_CLASS_INFORMATION_PACKET_EX structure pointer [Buses], _USBFN_CLASS_INFORMATION_PACKET_EX"
+ms.keywords: PUSBFN_CLASS_INFORMATION_PACKET_EX, *PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX, buses.usbfn_class_information_packet_ex, _USBFN_CLASS_INFORMATION_PACKET_EX, usbfnbase/PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX structure [Buses], usbfnbase/USBFN_CLASS_INFORMATION_PACKET_EX, PUSBFN_CLASS_INFORMATION_PACKET_EX structure pointer [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	USBFN_CLASS_INFORMATION_PACKET_EX
 product: Windows
 targetos: Windows
-req.typenames: USBFN_CLASS_INFORMATION_PACKET_EX, *PUSBFN_CLASS_INFORMATION_PACKET_EX
+req.typenames: "*PUSBFN_CLASS_INFORMATION_PACKET_EX, USBFN_CLASS_INFORMATION_PACKET_EX"
 req.product: Windows 10 or later.
 ---
 
@@ -96,9 +96,9 @@ Determines whether the driver has published a device interface is GUID.
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
-
 <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 03352d5d-122f-4818-965d-f5cc8231d6ed
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: umdprovider/UMDEtwRegister, display.umdetwregister, UMDEtwRegister, UMDEtwRegister function [Display Devices]
+ms.keywords: umdprovider/UMDEtwRegister, UMDEtwRegister, UMDEtwRegister function [Display Devices], display.umdetwregister
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -163,9 +163,9 @@ FORCEINLINE void UMDEtwRegister(PFNUMDETW_RUNDOWN RundownCb)
 
 ## See Also
 
-<a href="..\umdprovider\nf-umdprovider-umdetwunregister.md">UMDEtwUnregister</a>
-
 <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
+
+<a href="..\umdprovider\nf-umdprovider-umdetwunregister.md">UMDEtwUnregister</a>
 
  
 

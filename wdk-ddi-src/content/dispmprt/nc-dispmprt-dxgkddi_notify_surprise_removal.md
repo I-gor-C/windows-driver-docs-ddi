@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiNotifySurpriseRemoval
 product: Windows
 targetos: Windows
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -91,11 +91,11 @@ If the driver returns an error code, does not set <a href="..\d3dkmddi\ns-d3dkmd
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406678">D3DKMT_WDDM_1_2_CAPS</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406678">D3DKMT_WDDM_1_2_CAPS</a>
 
 <a href="..\dispmprt\ne-dispmprt-_dxgk_surprise_removal_type.md">DXGK_SURPRISE_REMOVAL_TYPE</a>
 

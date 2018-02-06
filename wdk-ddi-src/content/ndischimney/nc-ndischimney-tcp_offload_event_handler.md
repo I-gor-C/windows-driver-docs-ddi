@@ -85,12 +85,6 @@ The event being indicated as one of the following TCP_OFFLOAD_EVENT_TYPE values:
 
 
 
-#### TcpIndicateAbort
-
-Indicates that the remote host initiated an abortive disconnect by sending an acceptable RST
-       segment on the connection.
-
-
 #### TcpIndicateDisconnect
 
 Indicates that the remote host initiated a graceful disconnect by sending a FIN segment on the
@@ -101,6 +95,12 @@ Indicates that the remote host initiated a graceful disconnect by sending a FIN 
 
 Indicates that the offload target is requesting the host stack to terminate the offload of a TCP
        connection.
+
+
+#### TcpIndicateAbort
+
+Indicates that the remote host initiated an abortive disconnect by sending an acceptable RST
+       segment on the connection.
 
 
 #### TcpIndicateSendBacklogChange
@@ -115,11 +115,6 @@ Specifies additional information about the event being indicated as follows:
 
 
 
-#### TcpIndicateAbort
-
-Not meaningful.
-
-
 #### TcpIndicateDisconnect
 
 Not meaningful.
@@ -131,6 +126,11 @@ Indicates the reason for the upload request as a TCP_UPLOAD_REASON value. For mo
        see 
        <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
        NdisTcpOffloadEventHandler</a>.
+
+
+#### TcpIndicateAbort
+
+Not meaningful.
 
 
 #### TcpIndicateSendBacklogChange

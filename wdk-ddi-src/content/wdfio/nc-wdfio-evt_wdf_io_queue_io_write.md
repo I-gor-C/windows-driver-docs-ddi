@@ -40,7 +40,7 @@ apiname:
 -	EvtIoWrite
 product: Windows
 targetos: Windows
-req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.typenames: "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
 req.product: Windows 10 or later.
 ---
 
@@ -121,9 +121,9 @@ A driver's <i>EvtIoWrite</i> callback function should not call the following que
 
 ## See Also
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_default.md">EvtIoDefault</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_default.md">EvtIoDefault</a>
 
 <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
 

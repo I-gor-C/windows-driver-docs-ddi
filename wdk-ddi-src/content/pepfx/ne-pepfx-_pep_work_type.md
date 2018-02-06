@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5AED6B9E-5DB8-44AF-925C-4B587D100040
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PepWorkAcpiNotify, pepfx/PepWorkAcpiEvaluateControlMethodComplete, PepWorkActiveComplete, PepWorkDevicePower, PepWorkCompletePerfState, *PPEP_WORK_TYPE, pepfx/PepWorkCompleteIdleState, _PEP_WORK_TYPE, PepWorkMax, PepWorkRequestIdleState, kernel.pep_work_type, PepWorkAcpiEvaluateControlMethodComplete, pepfx/PEP_WORK_TYPE, PEP_WORK_TYPE, pepfx/PepWorkRequestIdleState, pepfx/PepWorkRequestPowerControl, pepfx/PepWorkDevicePower, pepfx/PepWorkDeviceIdle, PepWorkRequestPowerControl, pepfx/PepWorkMax, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepWorkCompletePerfState, PepWorkDeviceIdle, pepfx/PepWorkAcpiNotify, pepfx/PepWorkActiveComplete, PepWorkCompleteIdleState
+ms.keywords: PepWorkRequestPowerControl, PepWorkDevicePower, pepfx/PepWorkDevicePower, kernel.pep_work_type, pepfx/PepWorkAcpiNotify, pepfx/PepWorkActiveComplete, pepfx/PepWorkRequestPowerControl, PepWorkDeviceIdle, PEP_WORK_TYPE, pepfx/PepWorkRequestIdleState, PepWorkRequestIdleState, _PEP_WORK_TYPE, pepfx/PepWorkCompletePerfState, *PPEP_WORK_TYPE, PepWorkAcpiNotify, pepfx/PepWorkMax, PepWorkAcpiEvaluateControlMethodComplete, PepWorkActiveComplete, pepfx/PEP_WORK_TYPE, pepfx/PepWorkAcpiEvaluateControlMethodComplete, pepfx/PepWorkCompleteIdleState, pepfx/PepWorkDeviceIdle, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], PepWorkCompleteIdleState, PepWorkMax, PepWorkCompletePerfState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -109,15 +109,15 @@ typedef enum _PEP_WORK_TYPE {
 
     ## See Also
 
-        <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
+        <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
+<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
 
-<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
 
  
 

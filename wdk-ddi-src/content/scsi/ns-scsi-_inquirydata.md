@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2389fb1e-b16a-4d0a-b347-8b8a0f1cf061
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "*PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], INQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/INQUIRYDATA, _INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, PINQUIRYDATA, storage.inquirydata, scsi/PINQUIRYDATA"
+ms.keywords: "*PINQUIRYDATA, scsi/INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, storage.inquirydata, INQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], _INQUIRYDATA, PINQUIRYDATA"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	INQUIRYDATA
 product: Windows
 targetos: Windows
-req.typenames: INQUIRYDATA, *PINQUIRYDATA
+req.typenames: "*PINQUIRYDATA, INQUIRYDATA"
 req.product: Windows 10 or later.
 ---
 

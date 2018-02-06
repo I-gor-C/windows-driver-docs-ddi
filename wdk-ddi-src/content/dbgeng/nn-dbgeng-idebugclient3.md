@@ -40,7 +40,7 @@ apiname:
 -	IDebugClient3
 product: Windows
 targetos: Windows
-req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
+req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ---
 
 # IDebugClient3 interface
@@ -68,9 +68,9 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 
  
 

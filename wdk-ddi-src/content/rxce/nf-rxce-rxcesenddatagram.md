@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9cb714d5-92f6-481d-bc5e-5fa05b6a0938
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ifsk.rxcesenddatagram, rxce/RxCeSendDatagram, rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml, RxCeSendDatagram, RxCeSendDatagram function [Installable File System Drivers]
+ms.keywords: RxCeSendDatagram, rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml, RxCeSendDatagram function [Installable File System Drivers], rxce/RxCeSendDatagram, ifsk.rxcesenddatagram
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	RxCeSendDatagram
 product: Windows
 targetos: Windows
-req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.typenames: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -145,9 +145,9 @@ Note that the synchronous <i>Option</i> is disregarded for sending datagrams bec
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-
 <a href="..\rxce\nf-rxce-rxcesend.md">RxCeSend</a>
+
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 
  
 

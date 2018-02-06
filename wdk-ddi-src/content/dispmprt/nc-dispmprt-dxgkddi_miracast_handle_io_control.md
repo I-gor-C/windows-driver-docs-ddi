@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiMiracastIoControl
 product: Windows
 targetos: Windows
-req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -127,15 +127,15 @@ The threading and synchronization level for this function is set by how the user
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
-
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_miracast_io_control.md">MiracastIoControl</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
 <a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_miracast_io_control.md">MiracastIoControl</a>
+
+<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
 
  
 

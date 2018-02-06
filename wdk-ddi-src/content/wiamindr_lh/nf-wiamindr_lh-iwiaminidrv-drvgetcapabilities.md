@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 946a6ea7-5818-4959-adf2-3568c1b64b1a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaMiniDrv, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetcapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities
+ms.keywords: wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, IWiaMiniDrv, drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetcapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method

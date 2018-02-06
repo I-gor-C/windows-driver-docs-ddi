@@ -78,9 +78,9 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 ## See Also
 
-<a href="..\ntddtape\ns-ntddtape-_tape_set_drive_parameters.md">TAPE_SET_DRIVE_PARAMETERS</a>
-
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
+
+<a href="..\ntddtape\ns-ntddtape-_tape_set_drive_parameters.md">TAPE_SET_DRIVE_PARAMETERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567952">TapeMiniSetDriveParameters</a>
 

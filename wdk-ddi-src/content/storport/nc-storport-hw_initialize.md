@@ -115,11 +115,11 @@ Set up and initialize all events and DPCs that are used by the miniport driver.
 
 ## See Also
 
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
 <a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
 
 <a href="..\storport\nc-storport-hw_dpc_routine.md">HwStorDpcRoutine</a>
-
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
 <a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>
 

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: aa221279-8d59-4f6f-8fc6-ad09e36a12a9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: audmp-routines_a6630d1b-4a9d-4d4e-973a-09d541d7db70.xml, IMiniportDMus, NewStream method [Audio Devices], IMiniportDMus interface, dmusicks/IMiniportDMus::NewStream, audio.iminiportdmus_newstream, IMiniportDMus interface [Audio Devices], NewStream method, NewStream method [Audio Devices], NewStream, IMiniportDMus::NewStream
+ms.keywords: NewStream, IMiniportDMus, IMiniportDMus interface [Audio Devices], NewStream method, IMiniportDMus::NewStream, NewStream method [Audio Devices], audio.iminiportdmus_newstream, NewStream method [Audio Devices], IMiniportDMus interface, dmusicks/IMiniportDMus::NewStream, audmp-routines_a6630d1b-4a9d-4d4e-973a-09d541d7db70.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -91,14 +91,14 @@ Specifies the type of data stream to create. This parameter is set to one of the
 For more information, see the following Remarks section.
 
 
-#### DMUS_STREAM_MIDI_CAPTURE
-
-Specifies a MIDI input stream.
-
-
 #### DMUS_STREAM_MIDI_RENDER
 
 Specifies a MIDI output (playback) stream.
+
+
+#### DMUS_STREAM_MIDI_CAPTURE
+
+Specifies a MIDI input stream.
 
 
 #### DMUS_STREAM_WAVE_SINK
@@ -160,25 +160,25 @@ The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF<
 
 <a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-
-<a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>
-
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a>
-
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
-<a href="..\dmusicks\nn-dmusicks-imxf.md">IMXF</a>
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-
-<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
+<a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 
-<a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
+
+<a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a>
+
+<a href="..\dmusicks\nn-dmusicks-imxf.md">IMXF</a>
+
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
+
+<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
 
  
 

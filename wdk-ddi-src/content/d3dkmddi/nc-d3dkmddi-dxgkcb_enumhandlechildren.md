@@ -86,9 +86,9 @@ The display miniport driver can call the <b>DxgkCbEnumHandleChildren</b> functio
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_enumhandlechildren.md">DXGKARGCB_ENUMHANDLECHILDREN</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a>
 
  
 

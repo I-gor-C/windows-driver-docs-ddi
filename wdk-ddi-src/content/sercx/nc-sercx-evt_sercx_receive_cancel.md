@@ -86,9 +86,9 @@ To register an <i>EvtSerCxReceiveCancel</i> callback function, the driver must c
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
-
 <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
+
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 
  
 

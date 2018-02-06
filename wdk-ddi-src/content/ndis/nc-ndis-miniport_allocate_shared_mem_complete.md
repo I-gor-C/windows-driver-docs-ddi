@@ -165,13 +165,13 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+   NdisMAllocateSharedMemoryAsyncEx</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 
-<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
-   NdisMAllocateSharedMemoryAsyncEx</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9D5787B8-CEF4-49AA-B7C6-C200AC95A280
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pep_ppm_feedback_read, PEP_PPM_FEEDBACK_READ, _PEP_PPM_FEEDBACK_READ, PPEP_PPM_FEEDBACK_READ structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_FEEDBACK_READ, *PPEP_PPM_FEEDBACK_READ, pepfx/PPEP_PPM_FEEDBACK_READ, PEP_PPM_FEEDBACK_READ structure [Kernel-Mode Driver Architecture], PPEP_PPM_FEEDBACK_READ
+ms.keywords: PPEP_PPM_FEEDBACK_READ, _PEP_PPM_FEEDBACK_READ, PEP_PPM_FEEDBACK_READ, kernel.pep_ppm_feedback_read, PEP_PPM_FEEDBACK_READ structure [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_FEEDBACK_READ, PPEP_PPM_FEEDBACK_READ structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_FEEDBACK_READ, pepfx/PEP_PPM_FEEDBACK_READ
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PEP_PPM_FEEDBACK_READ
 product: Windows
 targetos: Windows
-req.typenames: PEP_PPM_FEEDBACK_READ, *PPEP_PPM_FEEDBACK_READ
+req.typenames: "*PPEP_PPM_FEEDBACK_READ, PEP_PPM_FEEDBACK_READ"
 ---
 
 # _PEP_PPM_FEEDBACK_READ structure

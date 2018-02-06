@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 426ff4f4-7924-4115-9f66-b4152e2ba5bb
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisallocatecloneoidrequest, NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, ndis/NdisAllocateCloneOidRequest
+ms.keywords: ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, netvista.ndisallocatecloneoidrequest, ndis/NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 57b4d120-e12a-4821-a379-a392b804590c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.rilcalldisconnectdetails_2, *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista], RILCALLDISCONNECTDETAILS, rilapitypes/RILCALLDISCONNECTDETAILS
+ms.keywords: rilapitypes/RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista], RILCALLDISCONNECTDETAILS, netvista.rilcalldisconnectdetails_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	RILCALLDISCONNECTDETAILS
 product: Windows
 targetos: Windows
-req.typenames: RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
+req.typenames: "*LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS"
 req.product: Windows 10 or later.
 ---
 

@@ -91,11 +91,11 @@ This routine is called at PASSIVE_LEVEL in an arbitrary thread context with norm
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
+<a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a>
 
 <a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
 
-<a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a>
+<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
 
 <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
 

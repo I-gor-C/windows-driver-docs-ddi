@@ -40,7 +40,7 @@ apiname:
 -	CalcPrivateGeometryShaderWithStreamOutput
 product: Windows
 targetos: Windows
-req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
+req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
 ---
 
 
@@ -89,11 +89,11 @@ SIZE_T Pfnd3d10ddiCalcprivategeometryshaderwithstreamoutput(
 
 ## See Also
 
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_creategeometryshaderwithstreamoutput.md">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_stage_io_signatures.md">D3D10DDIARG_STAGE_IO_SIGNATURES</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_creategeometryshaderwithstreamoutput.md">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
 
  
 

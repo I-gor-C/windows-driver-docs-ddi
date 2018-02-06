@@ -90,9 +90,9 @@ When a capture buffer is destroyed, the DirectX graphics kernel subsystem calls 
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_stopcapture.md">DXGKARG_STOPCAPTURE</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_stopcapture.md">DXGKARG_STOPCAPTURE</a>
 
  
 

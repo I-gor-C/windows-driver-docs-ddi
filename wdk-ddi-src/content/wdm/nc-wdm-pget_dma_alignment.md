@@ -90,13 +90,13 @@ A driver can call this routine to determine alignment requirements for DMA buffe
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-
 <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
  
 

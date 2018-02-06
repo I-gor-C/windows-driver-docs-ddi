@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3e160700-5d90-4241-8ed4-8d87b545b9c3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DXGK_GAMMARAMPCAPS, DXGK_GAMMARAMPCAPS structure [Display Devices], _DXGK_GAMMARAMPCAPS, d3dkmddi/DXGK_GAMMARAMPCAPS, display.dxgk_gammarampcaps, DmStructs_2f60099d-a359-41f4-b3d0-a7c0d0a6cca4.xml
+ms.keywords: DXGK_GAMMARAMPCAPS, DXGK_GAMMARAMPCAPS structure [Display Devices], display.dxgk_gammarampcaps, DmStructs_2f60099d-a359-41f4-b3d0-a7c0d0a6cca4.xml, d3dkmddi/DXGK_GAMMARAMPCAPS, _DXGK_GAMMARAMPCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -71,9 +71,9 @@ typedef struct _DXGK_GAMMARAMPCAPS {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 

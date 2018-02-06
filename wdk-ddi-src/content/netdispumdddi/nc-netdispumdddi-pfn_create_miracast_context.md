@@ -94,13 +94,13 @@ The driver can call the callback functions pointed to by <i>pMiracastCallbacks</
 
 ## See Also
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
-
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 
-<a href="..\netdispumdddi\ns-netdispumdddi-_miracast_callbacks.md">MIRACAST_CALLBACKS</a>
-
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+
+<a href="..\netdispumdddi\ns-netdispumdddi-_miracast_callbacks.md">MIRACAST_CALLBACKS</a>
 
  
 
