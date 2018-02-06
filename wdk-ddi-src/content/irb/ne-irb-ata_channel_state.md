@@ -1,41 +1,46 @@
 ---
-UID : NE:irb.ATA_CHANNEL_STATE
-title : ATA_CHANNEL_STATE
-author : windows-driver-content
-description : The ATA_CHANNEL_STATE enumeration type indicates the state of the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ata_channel_state.htm
-old-project : storage
-ms.assetid : 97df2db8-6a42-46d4-bc31-babb124635ee
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : irb/ChannelStateUnKnown, ChannelStateEnabled, ChannelStateDisabled, ATA_CHANNEL_STATE enumeration [Storage Devices], irb/ChannelStateEnabled, ChannelStateUnKnown, storage.ata_channel_state, irb/ChannelStateDisabled, ATA_CHANNEL_STATE, structs-ATA_317e3cc4-5b93-4942-9256-9418f692a8e2.xml, irb/ATA_CHANNEL_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ATA_CHANNEL_STATE
+UID: NE:irb.ATA_CHANNEL_STATE
+title: ATA_CHANNEL_STATE
+author: windows-driver-content
+description: The ATA_CHANNEL_STATE enumeration type indicates the state of the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ata_channel_state.htm
+old-project: storage
+ms.assetid: 97df2db8-6a42-46d4-bc31-babb124635ee
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: irb/ChannelStateUnKnown, ChannelStateEnabled, ChannelStateDisabled, ATA_CHANNEL_STATE enumeration [Storage Devices], irb/ChannelStateEnabled, ChannelStateUnKnown, storage.ata_channel_state, irb/ChannelStateDisabled, ATA_CHANNEL_STATE, structs-ATA_317e3cc4-5b93-4942-9256-9418f692a8e2.xml, irb/ATA_CHANNEL_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	ATA_CHANNEL_STATE
+product: Windows
+targetos: Windows
+req.typenames: ATA_CHANNEL_STATE
 ---
 
 # ATA_CHANNEL_STATE Enumeration
@@ -54,35 +59,35 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>ChannelStateDisabled</td>
-<td>Indicates that the channel is disabled.</td>
-</tr>
-
-<tr>
-<td>ChannelStateEnabled</td>
-<td>Indicates that the channel is enabled.</td>
-</tr>
-
-<tr>
-<td>ChannelStateUnKnown</td>
-<td>Indicates that the state of the channel is unknown.</td>
-</tr>
+            
+                <tr>
+                    <td>ChannelStateDisabled</td>
+                    <td>Indicates that the channel is disabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChannelStateEnabled</td>
+                    <td>Indicates that the channel is enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChannelStateUnKnown</td>
+                    <td>Indicates that the state of the channel is unknown.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The ATA_CHANNEL_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine to determine whether the channel is enabled.
+        The ATA_CHANNEL_STATE enumeration type is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a> routine to determine whether the channel is enabled.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | irb.h (include Irb.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff550142">AtaControllerChannelEnabled</a>
 
  
 

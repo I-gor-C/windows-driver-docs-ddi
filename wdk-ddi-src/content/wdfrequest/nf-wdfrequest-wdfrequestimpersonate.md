@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfrequest.WdfRequestImpersonate
-title : WdfRequestImpersonate function
-author : windows-driver-content
-description : The WdfRequestImpersonate method registers a driver-supplied event callback function that the framework should call for impersonation.
-old-location : wdf\wdfrequestimpersonate.htm
-old-project : wdf
-ms.assetid : E5267F04-D693-453B-BAD2-C61F89B07F6E
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestImpersonate method, WdfRequestImpersonate, wdfrequest/WdfRequestImpersonate, wdf.wdfrequestimpersonate, PFN_WDFREQUESTIMPERSONATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WUDFx02000.lib
-req.dll : WUDFx02000.dll; TBD
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestImpersonate
+title: WdfRequestImpersonate function
+author: windows-driver-content
+description: The WdfRequestImpersonate method registers a driver-supplied event callback function that the framework should call for impersonation.
+old-location: wdf\wdfrequestimpersonate.htm
+old-project: wdf
+ms.assetid: E5267F04-D693-453B-BAD2-C61F89B07F6E
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestImpersonate method, WdfRequestImpersonate, wdfrequest/WdfRequestImpersonate, wdf.wdfrequestimpersonate, PFN_WDFREQUESTIMPERSONATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WUDFx02000.lib
+req.dll: WUDFx02000.dll; TBD
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfRequestImpersonate
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

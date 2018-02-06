@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortRequestSynchronizedRoutine
-title : AtaPortRequestSynchronizedRoutine function
-author : windows-driver-content
-description : The AtaPortRequestSynchronizedRoutine routine is used by the miniport driver to request synchronization with the interrupt service routine (ISR).Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportrequestsynchronizedroutine.htm
-old-project : storage
-ms.assetid : fc4faca4-4d44-4b3e-bace-718fc8774f54
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportrequestsynchronizedroutine, AtaPortRequestSynchronizedRoutine routine [Storage Devices], irb/AtaPortRequestSynchronizedRoutine, atartns_612d4956-589d-4404-b3d3-f72eb6119e65.xml, AtaPortRequestSynchronizedRoutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortRequestSynchronizedRoutine
+title: AtaPortRequestSynchronizedRoutine function
+author: windows-driver-content
+description: The AtaPortRequestSynchronizedRoutine routine is used by the miniport driver to request synchronization with the interrupt service routine (ISR).Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportrequestsynchronizedroutine.htm
+old-project: storage
+ms.assetid: fc4faca4-4d44-4b3e-bace-718fc8774f54
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportrequestsynchronizedroutine, AtaPortRequestSynchronizedRoutine routine [Storage Devices], irb/AtaPortRequestSynchronizedRoutine, atartns_612d4956-589d-4404-b3d3-f72eb6119e65.xml, AtaPortRequestSynchronizedRoutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortRequestSynchronizedRoutine
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetEventBuffer_OUT
-title : "_GetEventBuffer_OUT"
-author : windows-driver-content
-description : The GetEventBuffer_OUT structure is used to report the output parameter data of the GetEventBuffer WMI method to the WMI client.
-old-location : storage\geteventbuffer_out.htm
-old-project : storage
-ms.assetid : 1ba41017-8c4b-49eb-b0ec-8e58c2673314
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PGetEventBuffer_OUT, hbapiwmi/GetEventBuffer_OUT, *PGetEventBuffer_OUT, PGetEventBuffer_OUT, structs-Fibre_af1916c9-60f8-4601-b9dd-d4575a100d98.xml, _GetEventBuffer_OUT, storage.geteventbuffer_out, GetEventBuffer_OUT, GetEventBuffer_OUT structure [Storage Devices], PGetEventBuffer_OUT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetEventBuffer_OUT, *PGetEventBuffer_OUT
+UID: NS:hbapiwmi._GetEventBuffer_OUT
+title: "_GetEventBuffer_OUT"
+author: windows-driver-content
+description: The GetEventBuffer_OUT structure is used to report the output parameter data of the GetEventBuffer WMI method to the WMI client.
+old-location: storage\geteventbuffer_out.htm
+old-project: storage
+ms.assetid: 1ba41017-8c4b-49eb-b0ec-8e58c2673314
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PGetEventBuffer_OUT, hbapiwmi/GetEventBuffer_OUT, *PGetEventBuffer_OUT, PGetEventBuffer_OUT, structs-Fibre_af1916c9-60f8-4601-b9dd-d4575a100d98.xml, _GetEventBuffer_OUT, storage.geteventbuffer_out, GetEventBuffer_OUT, GetEventBuffer_OUT structure [Storage Devices], PGetEventBuffer_OUT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetEventBuffer_OUT
+product: Windows
+targetos: Windows
+req.typenames: GetEventBuffer_OUT, *PGetEventBuffer_OUT
 ---
 
 # _GetEventBuffer_OUT structure

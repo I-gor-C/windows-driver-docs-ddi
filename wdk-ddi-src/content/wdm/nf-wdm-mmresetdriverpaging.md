@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmResetDriverPaging
-title : MmResetDriverPaging function
-author : windows-driver-content
-description : The MmResetDriverPaging routine resets the pageable status of a driver's sections to that specified when the driver was compiled.
-old-location : kernel\mmresetdriverpaging.htm
-old-project : kernel
-ms.assetid : 6d1d1f0d-d6da-488d-a120-713b77da86a9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmResetDriverPaging routine [Kernel-Mode Driver Architecture], k106_4b691510-4e1f-4da2-bfba-d008a83ef43e.xml, wdm/MmResetDriverPaging, kernel.mmresetdriverpaging, MmResetDriverPaging
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmResetDriverPaging
+title: MmResetDriverPaging function
+author: windows-driver-content
+description: The MmResetDriverPaging routine resets the pageable status of a driver's sections to that specified when the driver was compiled.
+old-location: kernel\mmresetdriverpaging.htm
+old-project: kernel
+ms.assetid: 6d1d1f0d-d6da-488d-a120-713b77da86a9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmResetDriverPaging routine [Kernel-Mode Driver Architecture], k106_4b691510-4e1f-4da2-bfba-d008a83ef43e.xml, wdm/MmResetDriverPaging, kernel.mmresetdriverpaging, MmResetDriverPaging
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmResetDriverPaging
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

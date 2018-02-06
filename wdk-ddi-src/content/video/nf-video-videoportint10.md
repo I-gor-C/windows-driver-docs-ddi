@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortInt10
-title : VideoPortInt10 function
-author : windows-driver-content
-description : The VideoPortInt10 function performs the equivalent of an MS-DOS INT10 operation, such as setting the video mode. VideoPortInt10 runs the BIOS ROM code on the device.
-old-location : display\videoportint10.htm
-old-project : display
-ms.assetid : 5743d84c-6132-4058-b517-250b5de9a6b5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportint10, VideoPort_Functions_681fc4cc-f8f5-4d26-b3eb-8f4098339470.xml, VideoPortInt10 function [Display Devices], VideoPortInt10, video/VideoPortInt10
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortInt10
+title: VideoPortInt10 function
+author: windows-driver-content
+description: The VideoPortInt10 function performs the equivalent of an MS-DOS INT10 operation, such as setting the video mode. VideoPortInt10 runs the BIOS ROM code on the device.
+old-location: display\videoportint10.htm
+old-project: display
+ms.assetid: 5743d84c-6132-4058-b517-250b5de9a6b5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportint10, VideoPort_Functions_681fc4cc-f8f5-4d26-b3eb-8f4098339470.xml, VideoPortInt10 function [Display Devices], VideoPortInt10, video/VideoPortInt10
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortInt10
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

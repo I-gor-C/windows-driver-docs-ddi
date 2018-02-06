@@ -1,41 +1,46 @@
 ---
-UID : NF:iddcx.IddCxSwapChainReportFrameStatistics
-title : IddCxSwapChainReportFrameStatistics function
-author : windows-driver-content
-description : An OS callback function the driver calls to report the frame statistics after it has processed a frame completely.
-old-location : display\iddcxswapchainreportframestatistics.htm
-old-project : display
-ms.assetid : 0dd32160-93d4-4fb8-aed1-9267f38e9909
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.iddcxswapchainreportframestatistics, iddcx/IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics method [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_Must_inspect_result_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:iddcx.IddCxSwapChainReportFrameStatistics
+title: IddCxSwapChainReportFrameStatistics function
+author: windows-driver-content
+description: An OS callback function the driver calls to report the frame statistics after it has processed a frame completely.
+old-location: display\iddcxswapchainreportframestatistics.htm
+old-project: display
+ms.assetid: 0dd32160-93d4-4fb8-aed1-9267f38e9909
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.iddcxswapchainreportframestatistics, iddcx/IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics method [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_Must_inspect_result_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IddCxSwapChainReportFrameStatistics
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

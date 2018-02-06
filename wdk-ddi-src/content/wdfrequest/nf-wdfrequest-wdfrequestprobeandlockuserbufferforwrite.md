@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfrequest.WdfRequestProbeAndLockUserBufferForWrite
-title : WdfRequestProbeAndLockUserBufferForWrite function
-author : windows-driver-content
-description : The WdfRequestProbeAndLockUserBufferForWrite method verifies that an I/O request's user-mode buffer is writeable, and then it locks the buffer's physical memory pages so drivers in the driver stack can write into the buffer.
-old-location : wdf\wdfrequestprobeandlockuserbufferforwrite.htm
-old-project : wdf
-ms.assetid : a4e6f0aa-bf96-4274-9a1d-f37dc7bd96fd
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestprobeandlockuserbufferforwrite, WdfRequestProbeAndLockUserBufferForWrite, WdfRequestProbeAndLockUserBufferForWrite method, wdfrequest/WdfRequestProbeAndLockUserBufferForWrite, DFRequestObjectRef_8a3643bf-a6b6-4e22-baa8-bfb8a5716af6.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORWRITE, kmdf.wdfrequestprobeandlockuserbufferforwrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestProbeAndLockUserBufferForWrite
+title: WdfRequestProbeAndLockUserBufferForWrite function
+author: windows-driver-content
+description: The WdfRequestProbeAndLockUserBufferForWrite method verifies that an I/O request's user-mode buffer is writeable, and then it locks the buffer's physical memory pages so drivers in the driver stack can write into the buffer.
+old-location: wdf\wdfrequestprobeandlockuserbufferforwrite.htm
+old-project: wdf
+ms.assetid: a4e6f0aa-bf96-4274-9a1d-f37dc7bd96fd
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfrequestprobeandlockuserbufferforwrite, WdfRequestProbeAndLockUserBufferForWrite, WdfRequestProbeAndLockUserBufferForWrite method, wdfrequest/WdfRequestProbeAndLockUserBufferForWrite, DFRequestObjectRef_8a3643bf-a6b6-4e22-baa8-bfb8a5716af6.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORWRITE, kmdf.wdfrequestprobeandlockuserbufferforwrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfRequestProbeAndLockUserBufferForWrite
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

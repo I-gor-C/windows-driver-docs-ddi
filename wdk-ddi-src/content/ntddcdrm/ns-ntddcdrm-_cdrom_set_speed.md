@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_SET_SPEED
-title : "_CDROM_SET_SPEED"
-author : windows-driver-content
-description : The CDROM_SET_SPEED structure is used with the IOCTL_CDROM_SET_SPEED request to set the spindle speed of a CD-ROM drive during data transfers in which no data loss is permitted.
-old-location : storage\cdrom_set_speed.htm
-old-project : storage
-ms.assetid : 42cffab4-d8a7-4dff-9f53-19aa2769a85c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdrm/PCDROM_SET_SPEED, ntddcdrm/CDROM_SET_SPEED, CDROM_SET_SPEED, PCDROM_SET_SPEED, _CDROM_SET_SPEED, structs-CD-ROM_e6e6b227-c3d9-4976-b1a5-a2100c49d266.xml, storage.cdrom_set_speed, CDROM_SET_SPEED structure [Storage Devices], PCDROM_SET_SPEED structure pointer [Storage Devices], *PCDROM_SET_SPEED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_SET_SPEED, *PCDROM_SET_SPEED
+UID: NS:ntddcdrm._CDROM_SET_SPEED
+title: "_CDROM_SET_SPEED"
+author: windows-driver-content
+description: The CDROM_SET_SPEED structure is used with the IOCTL_CDROM_SET_SPEED request to set the spindle speed of a CD-ROM drive during data transfers in which no data loss is permitted.
+old-location: storage\cdrom_set_speed.htm
+old-project: storage
+ms.assetid: 42cffab4-d8a7-4dff-9f53-19aa2769a85c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdrm/PCDROM_SET_SPEED, ntddcdrm/CDROM_SET_SPEED, CDROM_SET_SPEED, PCDROM_SET_SPEED, _CDROM_SET_SPEED, structs-CD-ROM_e6e6b227-c3d9-4976-b1a5-a2100c49d266.xml, storage.cdrom_set_speed, CDROM_SET_SPEED structure [Storage Devices], PCDROM_SET_SPEED structure pointer [Storage Devices], *PCDROM_SET_SPEED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_SET_SPEED
+product: Windows
+targetos: Windows
+req.typenames: CDROM_SET_SPEED, *PCDROM_SET_SPEED
 ---
 
 # _CDROM_SET_SPEED structure

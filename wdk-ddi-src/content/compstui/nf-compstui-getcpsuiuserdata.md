@@ -1,41 +1,46 @@
 ---
-UID : NF:compstui.GetCPSUIUserData
-title : GetCPSUIUserData function
-author : windows-driver-content
-description : CPSUI's GetCPSUIUserData function retrieves data that was previously stored using the SetCPSUIUserData function.
-old-location : print\getcpsuiuserdata.htm
-old-project : print
-ms.assetid : 2a0a74cd-2dcf-4485-8941-7f205dcecede
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetCPSUIUserData function [Print Devices], compstui/GetCPSUIUserData, print.getcpsuiuserdata, GetCPSUIUserData, cpsuifnc_78057e6d-1a47-4b92-9d43-881ab0935169.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Compstui.lib
-req.dll : Compstui.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
+UID: NF:compstui.GetCPSUIUserData
+title: GetCPSUIUserData function
+author: windows-driver-content
+description: CPSUI's GetCPSUIUserData function retrieves data that was previously stored using the SetCPSUIUserData function.
+old-location: print\getcpsuiuserdata.htm
+old-project: print
+ms.assetid: 2a0a74cd-2dcf-4485-8941-7f205dcecede
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetCPSUIUserData function [Print Devices], compstui/GetCPSUIUserData, print.getcpsuiuserdata, GetCPSUIUserData, cpsuifnc_78057e6d-1a47-4b92-9d43-881ab0935169.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Compstui.lib
+req.dll: Compstui.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Compstui.dll
+apiname:
+-	GetCPSUIUserData
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_SliceInfo
-title : "_DXVA_SliceInfo"
-author : windows-driver-content
-description : The DXVA_SliceInfo structure is sent by the host decoder to the accelerator to specify the slice-level parameters of a slice of bitstream data for off-host bitstream compressed picture decoding.
-old-location : display\dxva_sliceinfo.htm
-old-project : display
-ms.assetid : fd1d0cf5-2ee2-44d8-945f-492af57c3990
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVA_SliceInfo, dxva/LPDXVA_SliceInfo, DXVA_SliceInfo, *LPDXVA_SliceInfo, LPDXVA_SliceInfo, dxvaref_04736e26-0c58-4e92-9f45-1675565c9f55.xml, LPDXVA_SliceInfo structure pointer [Display Devices], dxva/DXVA_SliceInfo, DXVA_SliceInfo structure [Display Devices], display.dxva_sliceinfo"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_SliceInfo, DXVA_SliceInfo"
+UID: NS:dxva._DXVA_SliceInfo
+title: "_DXVA_SliceInfo"
+author: windows-driver-content
+description: The DXVA_SliceInfo structure is sent by the host decoder to the accelerator to specify the slice-level parameters of a slice of bitstream data for off-host bitstream compressed picture decoding.
+old-location: display\dxva_sliceinfo.htm
+old-project: display
+ms.assetid: fd1d0cf5-2ee2-44d8-945f-492af57c3990
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVA_SliceInfo, dxva/LPDXVA_SliceInfo, DXVA_SliceInfo, *LPDXVA_SliceInfo, LPDXVA_SliceInfo, dxvaref_04736e26-0c58-4e92-9f45-1675565c9f55.xml, LPDXVA_SliceInfo structure pointer [Display Devices], dxva/DXVA_SliceInfo, DXVA_SliceInfo structure [Display Devices], display.dxva_sliceinfo"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_SliceInfo
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_SliceInfo, DXVA_SliceInfo"
 ---
 
 # _DXVA_SliceInfo structure

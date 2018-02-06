@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsMgmtTailAdvanceFailure
-title : ClfsMgmtTailAdvanceFailure function
-author : windows-driver-content
-description : The ClfsMgmtTailAdvanceFailure routine notifies CLFS management that the client could not advance the log's tail.
-old-location : kernel\clfsmgmttailadvancefailure.htm
-old-project : kernel
-ms.assetid : 21a2f593-716a-434a-922c-23544ddb0122
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsMgmtTailAdvanceFailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture], kernel.clfsmgmttailadvancefailure, wdm/ClfsMgmtTailAdvanceFailure, Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsMgmtTailAdvanceFailure
+title: ClfsMgmtTailAdvanceFailure function
+author: windows-driver-content
+description: The ClfsMgmtTailAdvanceFailure routine notifies CLFS management that the client could not advance the log's tail.
+old-location: kernel\clfsmgmttailadvancefailure.htm
+old-project: kernel
+ms.assetid: 21a2f593-716a-434a-922c-23544ddb0122
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsMgmtTailAdvanceFailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture], kernel.clfsmgmttailadvancefailure, wdm/ClfsMgmtTailAdvanceFailure, Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsMgmtTailAdvanceFailure
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

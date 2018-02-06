@@ -1,42 +1,47 @@
 ---
-UID : NF:umdprovider.UMDEtwLogUnmapAllocation
-title : UMDEtwLogUnmapAllocation function
-author : windows-driver-content
-description : Indicates that a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) memory allocation, or a portion of the allocation, is no longer being used. Call this function whether or not the allocation is being destroyed.
-old-location : display\umdetwlogunmapallocation.htm
-old-project : display
-ms.assetid : 36c204fb-638d-44d2-8379-a5bd79e4167a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : umdprovider/UMDEtwLogUnmapAllocation, UMDEtwLogUnmapAllocation function [Display Devices], display.umdetwlogunmapallocation, UMDEtwLogUnmapAllocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : umdprovider.h
-req.include-header : Umdprovider.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_SEMANTIC
-req.product : Windows 10 or later.
+UID: NF:umdprovider.UMDEtwLogUnmapAllocation
+title: UMDEtwLogUnmapAllocation function
+author: windows-driver-content
+description: Indicates that a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) memory allocation, or a portion of the allocation, is no longer being used. Call this function whether or not the allocation is being destroyed.
+old-location: display\umdetwlogunmapallocation.htm
+old-project: display
+ms.assetid: 36c204fb-638d-44d2-8379-a5bd79e4167a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: umdprovider/UMDEtwLogUnmapAllocation, UMDEtwLogUnmapAllocation function [Display Devices], display.umdetwlogunmapallocation, UMDEtwLogUnmapAllocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: umdprovider.h
+req.include-header: Umdprovider.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	umdprovider.h
+apiname:
+-	UMDEtwLogUnmapAllocation
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_SEMANTIC
+req.product: Windows 10 or later.
 ---
 
 

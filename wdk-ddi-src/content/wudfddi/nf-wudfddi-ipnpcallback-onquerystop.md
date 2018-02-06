@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallback.OnQueryStop
-title : IPnpCallback::OnQueryStop method
-author : windows-driver-content
-description : The OnQueryStop method notifies a driver before a device is stopped.
-old-location : wdf\ipnpcallback_onquerystop.htm
-old-project : wdf
-ms.assetid : e0cb14fa-82d0-4ce3-8672-801e7f04d522
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.ipnpcallback_onquerystop, OnQueryStop method, IPnpCallback interface, IPnpCallback, IPnpCallback::OnQueryStop, IPnpCallback interface, OnQueryStop method, wdf.ipnpcallback_onquerystop, UMDFDeviceObjectRef_9215c39e-2cb9-4de6-9fb3-f228dad51f6d.xml, OnQueryStop, OnQueryStop method, wudfddi/IPnpCallback::OnQueryStop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallback.OnQueryStop
+title: IPnpCallback::OnQueryStop method
+author: windows-driver-content
+description: The OnQueryStop method notifies a driver before a device is stopped.
+old-location: wdf\ipnpcallback_onquerystop.htm
+old-project: wdf
+ms.assetid: e0cb14fa-82d0-4ce3-8672-801e7f04d522
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.ipnpcallback_onquerystop, OnQueryStop method, IPnpCallback interface, IPnpCallback, IPnpCallback::OnQueryStop, IPnpCallback interface, OnQueryStop method, wdf.ipnpcallback_onquerystop, UMDFDeviceObjectRef_9215c39e-2cb9-4de6-9fb3-f228dad51f6d.xml, OnQueryStop, OnQueryStop method, wudfddi/IPnpCallback::OnQueryStop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallback.OnQueryStop
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

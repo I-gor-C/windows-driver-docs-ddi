@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_SYMBOL_PARAMETERS
-title : "_DEBUG_SYMBOL_PARAMETERS"
-author : windows-driver-content
-description : The DEBUG_SYMBOL_PARAMETERS structure describes a symbol in a symbol group.
-old-location : debugger\debug_symbol_parameters.htm
-old-project : debugger
-ms.assetid : c73ea2b0-e87a-4fb1-9164-ff14d43f1426
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Structures_d79dd552-1acf-4023-99e0-418639a54782.xml, dbgeng/DEBUG_SYMBOL_PARAMETERS, PDEBUG_SYMBOL_PARAMETERS structure pointer [Windows Debugging], debugger.debug_symbol_parameters, dbgeng/PDEBUG_SYMBOL_PARAMETERS, PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS structure [Windows Debugging], DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS, _DEBUG_SYMBOL_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS"
+UID: NS:dbgeng._DEBUG_SYMBOL_PARAMETERS
+title: "_DEBUG_SYMBOL_PARAMETERS"
+author: windows-driver-content
+description: The DEBUG_SYMBOL_PARAMETERS structure describes a symbol in a symbol group.
+old-location: debugger\debug_symbol_parameters.htm
+old-project: debugger
+ms.assetid: c73ea2b0-e87a-4fb1-9164-ff14d43f1426
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Structures_d79dd552-1acf-4023-99e0-418639a54782.xml, dbgeng/DEBUG_SYMBOL_PARAMETERS, PDEBUG_SYMBOL_PARAMETERS structure pointer [Windows Debugging], debugger.debug_symbol_parameters, dbgeng/PDEBUG_SYMBOL_PARAMETERS, PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS structure [Windows Debugging], DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS, _DEBUG_SYMBOL_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_SYMBOL_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS"
 ---
 
 # _DEBUG_SYMBOL_PARAMETERS structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_STATE_CS_UAV_CB
-title : PFND3D11DDI_STATE_CS_UAV_CB
-author : windows-driver-content
-description : The pfnStateCsUavCb function causes the Microsoft Direct3D 11 runtime to refresh the constant unordered access view state for the compute shader.
-old-location : display\pfnstatecsuavcb.htm
-old-project : display
-ms.assetid : 2ff9e226-2981-4670-9164-7138f25528a0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstatecsuavcb, pfnStateCsUavCb callback function [Display Devices], pfnStateCsUavCb, PFND3D11DDI_STATE_CS_UAV_CB, PFND3D11DDI_STATE_CS_UAV_CB, d3d10umddi/pfnStateCsUavCb, d3d11state_functions_2818f407-e0b4-4923-ae5e-43b1450d4a82.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : pfnStateCsUavCb is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_STATE_CS_UAV_CB
+title: PFND3D11DDI_STATE_CS_UAV_CB
+author: windows-driver-content
+description: The pfnStateCsUavCb function causes the Microsoft Direct3D 11 runtime to refresh the constant unordered access view state for the compute shader.
+old-location: display\pfnstatecsuavcb.htm
+old-project: display
+ms.assetid: 2ff9e226-2981-4670-9164-7138f25528a0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstatecsuavcb, pfnStateCsUavCb callback function [Display Devices], pfnStateCsUavCb, PFND3D11DDI_STATE_CS_UAV_CB, PFND3D11DDI_STATE_CS_UAV_CB, d3d10umddi/pfnStateCsUavCb, d3d11state_functions_2818f407-e0b4-4923-ae5e-43b1450d4a82.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: pfnStateCsUavCb is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateCsUavCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

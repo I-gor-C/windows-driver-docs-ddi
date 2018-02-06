@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUIntSub
-title : RtlUIntSub function
-author : windows-driver-content
-description : Subtracts one value of type UINT from another.
-old-location : kernel\rtluintsub.htm
-old-project : kernel
-ms.assetid : 0886578A-C1CF-4A48-86A3-407A0C16ADEC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtluintsub, RtlUIntSub function [Kernel-Mode Driver Architecture], RtlUIntSub, ntintsafe/RtlUIntSub
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUIntSub
+title: RtlUIntSub function
+author: windows-driver-content
+description: Subtracts one value of type UINT from another.
+old-location: kernel\rtluintsub.htm
+old-project: kernel
+ms.assetid: 0886578A-C1CF-4A48-86A3-407A0C16ADEC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtluintsub, RtlUIntSub function [Kernel-Mode Driver Architecture], RtlUIntSub, ntintsafe/RtlUIntSub
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlUIntSub
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

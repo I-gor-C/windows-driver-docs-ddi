@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeCaptureSubjectContext
-title : SeCaptureSubjectContext function
-author : windows-driver-content
-description : The SeCaptureSubjectContext routine captures the security context of the calling thread for access validation and auditing.
-old-location : ifsk\secapturesubjectcontext.htm
-old-project : ifsk
-ms.assetid : 7d41263e-a5f7-455e-859b-10a452a22ddf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SeCaptureSubjectContext, SeCaptureSubjectContext routine [Installable File System Drivers], seref_192d13d7-4841-4c3e-831f-c12fe3cde04f.xml, SeCaptureSubjectContext, ifsk.secapturesubjectcontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeCaptureSubjectContext
+title: SeCaptureSubjectContext function
+author: windows-driver-content
+description: The SeCaptureSubjectContext routine captures the security context of the calling thread for access validation and auditing.
+old-location: ifsk\secapturesubjectcontext.htm
+old-project: ifsk
+ms.assetid: 7d41263e-a5f7-455e-859b-10a452a22ddf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SeCaptureSubjectContext, SeCaptureSubjectContext routine [Installable File System Drivers], seref_192d13d7-4841-4c3e-831f-c12fe3cde04f.xml, SeCaptureSubjectContext, ifsk.secapturesubjectcontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeCaptureSubjectContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

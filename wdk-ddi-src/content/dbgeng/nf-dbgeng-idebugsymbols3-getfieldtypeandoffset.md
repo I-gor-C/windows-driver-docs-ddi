@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetFieldTypeAndOffset
-title : IDebugSymbols3::GetFieldTypeAndOffset method
-author : windows-driver-content
-description : The GetFieldTypeAndOffset method returns the type of a field and its offset within a container.
-old-location : debugger\getfieldtypeandoffset.htm
-old-project : debugger
-ms.assetid : a73a3bb5-f9f4-41d7-9df7-c7f36a01d157
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetFieldTypeAndOffset, GetFieldTypeAndOffset, debugger.getfieldtypeandoffset, IDebugSymbols3 interface [Windows Debugging], GetFieldTypeAndOffset method, GetFieldTypeAndOffset method [Windows Debugging], IDebugSymbols_032d7936-6c9c-4748-ac81-a15673aa4e0f.xml, GetFieldTypeAndOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFieldTypeAndOffset, IDebugSymbols3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetFieldTypeAndOffset
+title: IDebugSymbols3::GetFieldTypeAndOffset method
+author: windows-driver-content
+description: The GetFieldTypeAndOffset method returns the type of a field and its offset within a container.
+old-location: debugger\getfieldtypeandoffset.htm
+old-project: debugger
+ms.assetid: a73a3bb5-f9f4-41d7-9df7-c7f36a01d157
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols3::GetFieldTypeAndOffset, GetFieldTypeAndOffset, debugger.getfieldtypeandoffset, IDebugSymbols3 interface [Windows Debugging], GetFieldTypeAndOffset method, GetFieldTypeAndOffset method [Windows Debugging], IDebugSymbols_032d7936-6c9c-4748-ac81-a15673aa4e0f.xml, GetFieldTypeAndOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFieldTypeAndOffset, IDebugSymbols3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetFieldTypeAndOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

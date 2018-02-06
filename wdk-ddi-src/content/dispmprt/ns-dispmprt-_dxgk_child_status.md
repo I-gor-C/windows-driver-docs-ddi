@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_CHILD_STATUS
-title : "_DXGK_CHILD_STATUS"
-author : windows-driver-content
-description : The DXGK_CHILD_STATUS structure contains members that indicate the status of a child device of the display adapter.
-old-location : display\dxgk_child_status.htm
-old-project : display
-ms.assetid : e2aba049-b51f-49b9-b0bb-c98c318dea86
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_child_status, DXGK_CHILD_STATUS, DmStructs_9a370d5a-9ca8-4c4f-a5cf-3361847d65e7.xml, PDXGK_CHILD_STATUS, _DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS, dispmprt/DXGK_CHILD_STATUS, dispmprt/PDXGK_CHILD_STATUS, PDXGK_CHILD_STATUS structure pointer [Display Devices], DXGK_CHILD_STATUS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS"
+UID: NS:dispmprt._DXGK_CHILD_STATUS
+title: "_DXGK_CHILD_STATUS"
+author: windows-driver-content
+description: The DXGK_CHILD_STATUS structure contains members that indicate the status of a child device of the display adapter.
+old-location: display\dxgk_child_status.htm
+old-project: display
+ms.assetid: e2aba049-b51f-49b9-b0bb-c98c318dea86
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_child_status, DXGK_CHILD_STATUS, DmStructs_9a370d5a-9ca8-4c4f-a5cf-3361847d65e7.xml, PDXGK_CHILD_STATUS, _DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS, dispmprt/DXGK_CHILD_STATUS, dispmprt/PDXGK_CHILD_STATUS, PDXGK_CHILD_STATUS structure pointer [Display Devices], DXGK_CHILD_STATUS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_CHILD_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS"
 ---
 
 # _DXGK_CHILD_STATUS structure

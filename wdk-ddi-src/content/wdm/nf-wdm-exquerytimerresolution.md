@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ExQueryTimerResolution
-title : ExQueryTimerResolution function
-author : windows-driver-content
-description : The ExQueryTimerResolution routine reports the range of timer resolutions that are supported by the system clock.
-old-location : kernel\exquerytimerresolution.htm
-old-project : kernel
-ms.assetid : 2648AD10-B2D7-4F24-A508-239DA6AF551D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExQueryTimerResolution, kernel.exquerytimerresolution, ExQueryTimerResolution routine [Kernel-Mode Driver Architecture], wdm/ExQueryTimerResolution
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : Any level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExQueryTimerResolution
+title: ExQueryTimerResolution function
+author: windows-driver-content
+description: The ExQueryTimerResolution routine reports the range of timer resolutions that are supported by the system clock.
+old-location: kernel\exquerytimerresolution.htm
+old-project: kernel
+ms.assetid: 2648AD10-B2D7-4F24-A508-239DA6AF551D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExQueryTimerResolution, kernel.exquerytimerresolution, ExQueryTimerResolution routine [Kernel-Mode Driver Architecture], wdm/ExQueryTimerResolution
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: Any level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	ExQueryTimerResolution
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

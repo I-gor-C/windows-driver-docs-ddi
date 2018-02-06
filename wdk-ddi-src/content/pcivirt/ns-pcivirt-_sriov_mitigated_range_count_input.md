@@ -1,41 +1,46 @@
 ---
-UID : NS:pcivirt._SRIOV_MITIGATED_RANGE_COUNT_INPUT
-title : "_SRIOV_MITIGATED_RANGE_COUNT_INPUT"
-author : windows-driver-content
-description : This structure is used as an input buffer to the IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT request to determine the ranges of memory-mapped I/O space that must be mitigated.
-old-location : pci\sriov_mitigated_range_count_input.htm
-old-project : PCI
-ms.assetid : 7de35a35-2b90-421d-bbde-4c5cb760070a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_mitigated_range_count_input, pcivirt/SRIOV_MITIGATED_RANGE_COUNT_INPUT, _SRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT, *PSRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_MITIGATED_RANGE_COUNT_INPUT, *PSRIOV_MITIGATED_RANGE_COUNT_INPUT
+UID: NS:pcivirt._SRIOV_MITIGATED_RANGE_COUNT_INPUT
+title: "_SRIOV_MITIGATED_RANGE_COUNT_INPUT"
+author: windows-driver-content
+description: This structure is used as an input buffer to the IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT request to determine the ranges of memory-mapped I/O space that must be mitigated.
+old-location: pci\sriov_mitigated_range_count_input.htm
+old-project: PCI
+ms.assetid: 7de35a35-2b90-421d-bbde-4c5cb760070a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_mitigated_range_count_input, pcivirt/SRIOV_MITIGATED_RANGE_COUNT_INPUT, _SRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT, *PSRIOV_MITIGATED_RANGE_COUNT_INPUT, SRIOV_MITIGATED_RANGE_COUNT_INPUT structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	SRIOV_MITIGATED_RANGE_COUNT_INPUT
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_MITIGATED_RANGE_COUNT_INPUT, *PSRIOV_MITIGATED_RANGE_COUNT_INPUT
 ---
 
 # _SRIOV_MITIGATED_RANGE_COUNT_INPUT structure

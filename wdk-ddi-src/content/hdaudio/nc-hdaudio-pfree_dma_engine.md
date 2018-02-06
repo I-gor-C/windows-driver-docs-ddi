@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PFREE_DMA_ENGINE
-title : PFREE_DMA_ENGINE
-author : windows-driver-content
-description : The FreeDmaEngine routine frees a DMA engine that was previously allocated by a call to AllocateCaptureDmaEngine or AllocateRenderDmaEngine.The function pointer type for a FreeDmaEngine routine is defined as:
-old-location : audio\freedmaengine.htm
-old-project : audio
-ms.assetid : 3f068ac0-2b18-4242-86de-7044ce558788
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.freedmaengine, FreeDmaEngine callback function [Audio Devices], FreeDmaEngine, PFREE_DMA_ENGINE, PFREE_DMA_ENGINE, hdaudio/FreeDmaEngine, aud-prop2_98407bc5-c9ae-499f-92b4-afd8c797dc1d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PFREE_DMA_ENGINE
+title: PFREE_DMA_ENGINE
+author: windows-driver-content
+description: The FreeDmaEngine routine frees a DMA engine that was previously allocated by a call to AllocateCaptureDmaEngine or AllocateRenderDmaEngine.The function pointer type for a FreeDmaEngine routine is defined as:
+old-location: audio\freedmaengine.htm
+old-project: audio
+ms.assetid: 3f068ac0-2b18-4242-86de-7044ce558788
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.freedmaengine, FreeDmaEngine callback function [Audio Devices], FreeDmaEngine, PFREE_DMA_ENGINE, PFREE_DMA_ENGINE, hdaudio/FreeDmaEngine, aud-prop2_98407bc5-c9ae-499f-92b4-afd8c797dc1d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	FreeDmaEngine
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

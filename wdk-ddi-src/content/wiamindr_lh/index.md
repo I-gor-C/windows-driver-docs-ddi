@@ -1,12 +1,12 @@
 ---
-UID : NA:wiamindr_lh
-ms.assetid : 8bb4455b-7b9a-3281-8f57-256069118040
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:wiamindr_lh
+ms.assetid: 8bb4455b-7b9a-3281-8f57-256069118040
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # wiamindr_lh.h header

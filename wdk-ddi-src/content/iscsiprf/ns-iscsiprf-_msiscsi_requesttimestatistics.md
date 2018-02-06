@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_RequestTimeStatistics
-title : "_MSiSCSI_RequestTimeStatistics"
-author : windows-driver-content
-description : The MSiSCSI_RequestTimeStatistics structure is used by iSCSI initiators to report request time statistics.
-old-location : storage\msiscsi_requesttimestatistics.htm
-old-project : storage
-ms.assetid : fb884cff-dedb-44cf-b9ea-306bfa66b06f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSiSCSI_RequestTimeStatistics structure [Storage Devices], *PMSiSCSI_RequestTimeStatistics, structs-iSCSI_32f6d3e4-d3d4-431d-aff0-f956aa2c1594.xml, storage.msiscsi_requesttimestatistics, PMSiSCSI_RequestTimeStatistics, _MSiSCSI_RequestTimeStatistics, iscsiprf/PMSiSCSI_RequestTimeStatistics, iscsiprf/MSiSCSI_RequestTimeStatistics, PMSiSCSI_RequestTimeStatistics structure pointer [Storage Devices], MSiSCSI_RequestTimeStatistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_RequestTimeStatistics, MSiSCSI_RequestTimeStatistics"
+UID: NS:iscsiprf._MSiSCSI_RequestTimeStatistics
+title: "_MSiSCSI_RequestTimeStatistics"
+author: windows-driver-content
+description: The MSiSCSI_RequestTimeStatistics structure is used by iSCSI initiators to report request time statistics.
+old-location: storage\msiscsi_requesttimestatistics.htm
+old-project: storage
+ms.assetid: fb884cff-dedb-44cf-b9ea-306bfa66b06f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSiSCSI_RequestTimeStatistics structure [Storage Devices], *PMSiSCSI_RequestTimeStatistics, structs-iSCSI_32f6d3e4-d3d4-431d-aff0-f956aa2c1594.xml, storage.msiscsi_requesttimestatistics, PMSiSCSI_RequestTimeStatistics, _MSiSCSI_RequestTimeStatistics, iscsiprf/PMSiSCSI_RequestTimeStatistics, iscsiprf/MSiSCSI_RequestTimeStatistics, PMSiSCSI_RequestTimeStatistics structure pointer [Storage Devices], MSiSCSI_RequestTimeStatistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_RequestTimeStatistics
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_RequestTimeStatistics, MSiSCSI_RequestTimeStatistics"
 ---
 
 # _MSiSCSI_RequestTimeStatistics structure

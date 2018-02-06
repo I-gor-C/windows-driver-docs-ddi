@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_WRITE_PINS_MASK
-title : GPIO_CLIENT_WRITE_PINS_MASK
-author : windows-driver-content
-description : The CLIENT_WriteGpioPinsUsingMask event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs.
-old-location : gpio\client_writegpiopinsusingmask.htm
-old-project : GPIO
-ms.assetid : 6B3667AA-4658-4EDE-A8E1-925064BCD249
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_writegpiopinsusingmask, CLIENT_WriteGpioPinsUsingMask callback function [Parallel Ports], CLIENT_WriteGpioPinsUsingMask, GPIO_CLIENT_WRITE_PINS_MASK, GPIO_CLIENT_WRITE_PINS_MASK, gpioclx/CLIENT_WriteGpioPinsUsingMask
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NC:gpioclx.GPIO_CLIENT_WRITE_PINS_MASK
+title: GPIO_CLIENT_WRITE_PINS_MASK
+author: windows-driver-content
+description: The CLIENT_WriteGpioPinsUsingMask event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs.
+old-location: gpio\client_writegpiopinsusingmask.htm
+old-project: GPIO
+ms.assetid: 6B3667AA-4658-4EDE-A8E1-925064BCD249
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_writegpiopinsusingmask, CLIENT_WriteGpioPinsUsingMask callback function [Parallel Ports], CLIENT_WriteGpioPinsUsingMask, GPIO_CLIENT_WRITE_PINS_MASK, GPIO_CLIENT_WRITE_PINS_MASK, gpioclx/CLIENT_WriteGpioPinsUsingMask
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_WriteGpioPinsUsingMask
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 

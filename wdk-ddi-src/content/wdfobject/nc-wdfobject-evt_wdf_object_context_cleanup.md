@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfobject.EVT_WDF_OBJECT_CONTEXT_CLEANUP
-title : EVT_WDF_OBJECT_CONTEXT_CLEANUP
-author : windows-driver-content
-description : A driver's EvtCleanupCallback event callback function removes the driver's references on an object so that the object can be deleted.
-old-location : wdf\evtcleanupcallback.htm
-old-project : wdf
-ms.assetid : aba2efca-7d1f-4594-af65-13356f0e3f8b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtcleanupcallback, EvtCleanupCallback callback function, EvtCleanupCallback, EVT_WDF_OBJECT_CONTEXT_CLEANUP, EVT_WDF_OBJECT_CONTEXT_CLEANUP, wdfobject/EvtCleanupCallback, DFGenObjectRef_aef7bd25-42a4-41d2-9ba1-1b1113159657.xml, kmdf.evtcleanupcallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NC:wdfobject.EVT_WDF_OBJECT_CONTEXT_CLEANUP
+title: EVT_WDF_OBJECT_CONTEXT_CLEANUP
+author: windows-driver-content
+description: A driver's EvtCleanupCallback event callback function removes the driver's references on an object so that the object can be deleted.
+old-location: wdf\evtcleanupcallback.htm
+old-project: wdf
+ms.assetid: aba2efca-7d1f-4594-af65-13356f0e3f8b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtcleanupcallback, EvtCleanupCallback callback function, EvtCleanupCallback, EVT_WDF_OBJECT_CONTEXT_CLEANUP, EVT_WDF_OBJECT_CONTEXT_CLEANUP, wdfobject/EvtCleanupCallback, DFGenObjectRef_aef7bd25-42a4-41d2-9ba1-1b1113159657.xml, kmdf.evtcleanupcallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfobject.h
+apiname:
+-	EvtCleanupCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSymbolEntryString
-title : IDebugSymbols3::GetSymbolEntryString method
-author : windows-driver-content
-description : The GetSymbolEntryString method returns string information for the specified symbol.
-old-location : debugger\getsymbolentrystring.htm
-old-project : debugger
-ms.assetid : 3ec46b53-f3a8-4fd6-bf94-261ff8accad7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolEntryString method [Windows Debugging], GetSymbolEntryString method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSymbolEntryString, dbgeng/IDebugSymbols3::GetSymbolEntryString, IDebugSymbols_cf31d6c1-ffc6-4112-af04-dc023635bb5a.xml, GetSymbolEntryString, debugger.getsymbolentrystring, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryString method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolEntryString
+title: IDebugSymbols3::GetSymbolEntryString method
+author: windows-driver-content
+description: The GetSymbolEntryString method returns string information for the specified symbol.
+old-location: debugger\getsymbolentrystring.htm
+old-project: debugger
+ms.assetid: 3ec46b53-f3a8-4fd6-bf94-261ff8accad7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolEntryString method [Windows Debugging], GetSymbolEntryString method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSymbolEntryString, dbgeng/IDebugSymbols3::GetSymbolEntryString, IDebugSymbols_cf31d6c1-ffc6-4112-af04-dc023635bb5a.xml, GetSymbolEntryString, debugger.getsymbolentrystring, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryString method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSymbolEntryString
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:d3d10umddi.D3D11_1DDI_VIDEO_USAGE
-title : D3D11_1DDI_VIDEO_USAGE
-author : windows-driver-content
-description : Identifies how the decode device plays video.
-old-location : display\d3d11_1ddi_video_usage.htm
-old-project : display
-ms.assetid : f107b9a8-d124-4fc3-80b3-dd20a87f9a86
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_USAGE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, display.d3d11_1ddi_video_usage, d3d10umddi/D3D11_1DDI_VIDEO_USAGE, D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_USAGE
+UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_USAGE
+title: D3D11_1DDI_VIDEO_USAGE
+author: windows-driver-content
+description: Identifies how the decode device plays video.
+old-location: display\d3d11_1ddi_video_usage.htm
+old-project: display
+ms.assetid: f107b9a8-d124-4fc3-80b3-dd20a87f9a86
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_VIDEO_USAGE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, display.d3d11_1ddi_video_usage, d3d10umddi/D3D11_1DDI_VIDEO_USAGE, D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_USAGE
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_USAGE
 ---
 
 # D3D11_1DDI_VIDEO_USAGE Enumeration
@@ -53,26 +58,26 @@ typedef enum D3D11_1DDI_VIDEO_USAGE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY</td>
-<td>Specifies that the device plays video at optimal quality.</td>
-</tr>
-
-<tr>
-<td>D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED</td>
-<td>Specifies that the device plays video at optimal speed.</td>
-</tr>
-
-<tr>
-<td>D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL</td>
-<td>Specifies that the device plays video at normal speed.</td>
-</tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY</td>
+                    <td>Specifies that the device plays video at optimal quality.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED</td>
+                    <td>Specifies that the device plays video at optimal speed.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL</td>
+                    <td>Specifies that the device plays video at normal speed.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> member of a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a> structure to help describe a decode device.
+        A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> member of a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a> structure to help describe a decode device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +85,9 @@ A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> m
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a>
+        <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md">D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TVAUDIO_S
-title : KSPROPERTY_TVAUDIO_S
-author : windows-driver-content
-description : The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings.
-old-location : stream\ksproperty_tvaudio_s.htm
-old-project : stream
-ms.assetid : a2e26798-322a-4057-8c29-3429711e36a4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/PKSPROPERTY_TVAUDIO_S, PKSPROPERTY_TVAUDIO_S, stream.ksproperty_tvaudio_s, *PKSPROPERTY_TVAUDIO_S, KSPROPERTY_TVAUDIO_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TVAUDIO_S, PKSPROPERTY_TVAUDIO_S structure pointer [Streaming Media Devices], KSPROPERTY_TVAUDIO_S, vidcapstruct_d9dd7c2c-ed79-4efa-ae11-07e069abda5c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_TVAUDIO_S, *PKSPROPERTY_TVAUDIO_S
+UID: NS:ksmedia.KSPROPERTY_TVAUDIO_S
+title: KSPROPERTY_TVAUDIO_S
+author: windows-driver-content
+description: The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings.
+old-location: stream\ksproperty_tvaudio_s.htm
+old-project: stream
+ms.assetid: a2e26798-322a-4057-8c29-3429711e36a4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/PKSPROPERTY_TVAUDIO_S, PKSPROPERTY_TVAUDIO_S, stream.ksproperty_tvaudio_s, *PKSPROPERTY_TVAUDIO_S, KSPROPERTY_TVAUDIO_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TVAUDIO_S, PKSPROPERTY_TVAUDIO_S structure pointer [Streaming Media Devices], KSPROPERTY_TVAUDIO_S, vidcapstruct_d9dd7c2c-ed79-4efa-ae11-07e069abda5c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TVAUDIO_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_TVAUDIO_S, *PKSPROPERTY_TVAUDIO_S
 ---
 
 # KSPROPERTY_TVAUDIO_S structure

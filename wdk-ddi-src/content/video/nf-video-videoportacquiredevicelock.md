@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortAcquireDeviceLock
-title : VideoPortAcquireDeviceLock function
-author : windows-driver-content
-description : The VideoPortAcquireDeviceLock function acquires the device lock maintained by the video port driver.
-old-location : display\videoportacquiredevicelock.htm
-old-project : display
-ms.assetid : eeb2d1ad-ad99-4099-9560-8653a627aa08
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportacquiredevicelock, VideoPortAcquireDeviceLock, video/VideoPortAcquireDeviceLock, VideoPort_Functions_4c588378-53be-496c-93f0-0d285b8a1a05.xml, VideoPortAcquireDeviceLock function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortAcquireDeviceLock
+title: VideoPortAcquireDeviceLock function
+author: windows-driver-content
+description: The VideoPortAcquireDeviceLock function acquires the device lock maintained by the video port driver.
+old-location: display\videoportacquiredevicelock.htm
+old-project: display
+ms.assetid: eeb2d1ad-ad99-4099-9560-8653a627aa08
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportacquiredevicelock, VideoPortAcquireDeviceLock, video/VideoPortAcquireDeviceLock, VideoPort_Functions_4c588378-53be-496c-93f0-0d285b8a1a05.xml, VideoPortAcquireDeviceLock function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortAcquireDeviceLock
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

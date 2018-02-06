@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._GETINFO_GLYPHWIDTH
-title : "_GETINFO_GLYPHWIDTH"
-author : windows-driver-content
-description : The GETINFO_GLYPHWIDTH structure is used as input to the UNIFONTOBJ_GetInfo callback function.
-old-location : print\getinfo_glyphwidth.htm
-old-project : print
-ms.assetid : bc01b363-71e9-4c50-ad14-a101abbfe6ec
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GETINFO_GLYPHWIDTH, printoem/PGETINFO_GLYPHWIDTH, print.getinfo_glyphwidth, printoem/GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH, PGETINFO_GLYPHWIDTH structure pointer [Print Devices], print_unidrv-pscript_rendering_d4e07803-7342-4550-90fd-1ee8669934f0.xml, GETINFO_GLYPHWIDTH structure [Print Devices], PGETINFO_GLYPHWIDTH, _GETINFO_GLYPHWIDTH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH
-req.product : Windows 10 or later.
+UID: NS:printoem._GETINFO_GLYPHWIDTH
+title: "_GETINFO_GLYPHWIDTH"
+author: windows-driver-content
+description: The GETINFO_GLYPHWIDTH structure is used as input to the UNIFONTOBJ_GetInfo callback function.
+old-location: print\getinfo_glyphwidth.htm
+old-project: print
+ms.assetid: bc01b363-71e9-4c50-ad14-a101abbfe6ec
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GETINFO_GLYPHWIDTH, printoem/PGETINFO_GLYPHWIDTH, print.getinfo_glyphwidth, printoem/GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH, PGETINFO_GLYPHWIDTH structure pointer [Print Devices], print_unidrv-pscript_rendering_d4e07803-7342-4550-90fd-1ee8669934f0.xml, GETINFO_GLYPHWIDTH structure [Print Devices], PGETINFO_GLYPHWIDTH, _GETINFO_GLYPHWIDTH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	GETINFO_GLYPHWIDTH
+product: Windows
+targetos: Windows
+req.typenames: GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH
+req.product: Windows 10 or later.
 ---
 
 # _GETINFO_GLYPHWIDTH structure

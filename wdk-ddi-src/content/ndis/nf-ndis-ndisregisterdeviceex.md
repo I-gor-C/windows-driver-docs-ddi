@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisRegisterDeviceEx
-title : NdisRegisterDeviceEx function
-author : windows-driver-content
-description : The NdisRegisterDeviceEx function creates a device object that is based upon the specified attributes.
-old-location : netvista\ndisregisterdeviceex.htm
-old-project : netvista
-ms.assetid : 8e0d406e-748c-4b37-90fb-c7b9dfc28362
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisRegisterDeviceEx, ndis/NdisRegisterDeviceEx, ndis_devices_ref_57ed58e5-f149-4cbe-ad9d-667f433a7e77.xml, NdisRegisterDeviceEx function [Network Drivers Starting with Windows Vista], netvista.ndisregisterdeviceex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRegisterDeviceEx
+title: NdisRegisterDeviceEx function
+author: windows-driver-content
+description: The NdisRegisterDeviceEx function creates a device object that is based upon the specified attributes.
+old-location: netvista\ndisregisterdeviceex.htm
+old-project: netvista
+ms.assetid: 8e0d406e-748c-4b37-90fb-c7b9dfc28362
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisRegisterDeviceEx, ndis/NdisRegisterDeviceEx, ndis_devices_ref_57ed58e5-f149-4cbe-ad9d-667f433a7e77.xml, NdisRegisterDeviceEx function [Network Drivers Starting with Windows Vista], netvista.ndisregisterdeviceex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisRegisterDeviceEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

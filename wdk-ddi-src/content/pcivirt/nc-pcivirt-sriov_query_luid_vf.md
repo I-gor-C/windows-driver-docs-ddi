@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_QUERY_LUID_VF
-title : SRIOV_QUERY_LUID_VF
-author : windows-driver-content
-description : Gets the PCI Express SR-IOV Virtual Function (VF) given a unique identifier.
-old-location : pci\sriov_query_luid_vf.htm
-old-project : PCI
-ms.assetid : 00dddc92-08d1-4eaa-b3de-5e96c7a6d3e0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_query_luid_vf, SriovQueryLuidVf callback function [Buses], SriovQueryLuidVf, SRIOV_QUERY_LUID_VF, SRIOV_QUERY_LUID_VF, pcivirt/SriovQueryLuidVf, *PSRIOV_QUERY_LUID_VF callback function pointer [Buses], *PSRIOV_QUERY_LUID_VF
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_QUERY_LUID_VF
+title: SRIOV_QUERY_LUID_VF
+author: windows-driver-content
+description: Gets the PCI Express SR-IOV Virtual Function (VF) given a unique identifier.
+old-location: pci\sriov_query_luid_vf.htm
+old-project: PCI
+ms.assetid: 00dddc92-08d1-4eaa-b3de-5e96c7a6d3e0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_query_luid_vf, SriovQueryLuidVf callback function [Buses], SriovQueryLuidVf, SRIOV_QUERY_LUID_VF, SRIOV_QUERY_LUID_VF, pcivirt/SriovQueryLuidVf, *PSRIOV_QUERY_LUID_VF callback function pointer [Buses], *PSRIOV_QUERY_LUID_VF
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pcivirt.h
+apiname:
+-	*PSRIOV_QUERY_LUID_VF
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

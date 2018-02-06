@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetInputReport
-title : HidD_GetInputReport function
-author : windows-driver-content
-description : The HidD_GetInputReport routine returns an input reports from a top-level collection.
-old-location : hid\hidd_getinputreport.htm
-old-project : hid
-ms.assetid : 42e0a96b-2b0b-4d22-8c91-14457d02e9c7
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidD_GetInputReport routine [Human Input Devices], hidfunc_fdcd7a5b-6623-419f-abdf-de19370ee793.xml, hidsdi/HidD_GetInputReport, HidD_GetInputReport, hid.hidd_getinputreport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetInputReport
+title: HidD_GetInputReport function
+author: windows-driver-content
+description: The HidD_GetInputReport routine returns an input reports from a top-level collection.
+old-location: hid\hidd_getinputreport.htm
+old-project: hid
+ms.assetid: 42e0a96b-2b0b-4d22-8c91-14457d02e9c7
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidD_GetInputReport routine [Human Input Devices], hidfunc_fdcd7a5b-6623-419f-abdf-de19370ee793.xml, hidsdi/HidD_GetInputReport, HidD_GetInputReport, hid.hidd_getinputreport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetInputReport
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

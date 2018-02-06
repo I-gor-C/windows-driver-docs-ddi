@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiGetInstanceName
-title : ScsiPortWmiGetInstanceName function
-author : windows-driver-content
-description : The ScsiPortWmiGetInstanceName routine returns a pointer to the instance name associated with the indicated the Windows Management Instrumentation (WMI) SCSI Request Block (SRB).
-old-location : storage\scsiportwmigetinstancename.htm
-old-project : storage
-ms.assetid : ff2ebd1c-d0ac-47a7-90d4-0b49259784c1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_184c6508-4189-4ab2-a445-7e52e5c688ab.xml, storage.scsiportwmigetinstancename, ScsiPortWmiGetInstanceName routine [Storage Devices], ScsiPortWmiGetInstanceName, scsiwmi/ScsiPortWmiGetInstanceName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiGetInstanceName
+title: ScsiPortWmiGetInstanceName function
+author: windows-driver-content
+description: The ScsiPortWmiGetInstanceName routine returns a pointer to the instance name associated with the indicated the Windows Management Instrumentation (WMI) SCSI Request Block (SRB).
+old-location: storage\scsiportwmigetinstancename.htm
+old-project: storage
+ms.assetid: ff2ebd1c-d0ac-47a7-90d4-0b49259784c1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_184c6508-4189-4ab2-a445-7e52e5c688ab.xml, storage.scsiportwmigetinstancename, ScsiPortWmiGetInstanceName routine [Storage Devices], ScsiPortWmiGetInstanceName, scsiwmi/ScsiPortWmiGetInstanceName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	ScsiPortWmiGetInstanceName
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

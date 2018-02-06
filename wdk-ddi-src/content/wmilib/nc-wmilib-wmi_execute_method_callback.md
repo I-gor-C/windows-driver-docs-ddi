@@ -1,42 +1,47 @@
 ---
-UID : NC:wmilib.WMI_EXECUTE_METHOD_CALLBACK
-title : WMI_EXECUTE_METHOD_CALLBACK
-author : windows-driver-content
-description : The DpWmiExecuteMethod routine executes a method associated with a data block. This routine is optional.
-old-location : kernel\dpwmiexecutemethod.htm
-old-project : kernel
-ms.assetid : 3e671484-8f8d-4ba0-a763-37c3178487ca
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.dpwmiexecutemethod, DpWmiExecuteMethod, DpWmiExecuteMethod callback function [Kernel-Mode Driver Architecture], DpWmiExecuteMethod, WMI_EXECUTE_METHOD_CALLBACK, WMI_EXECUTE_METHOD_CALLBACK, wmilib/DpWmiExecuteMethod, k903_b641484a-8f32-440d-8efc-76293ddeec2c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NC:wmilib.WMI_EXECUTE_METHOD_CALLBACK
+title: WMI_EXECUTE_METHOD_CALLBACK
+author: windows-driver-content
+description: The DpWmiExecuteMethod routine executes a method associated with a data block. This routine is optional.
+old-location: kernel\dpwmiexecutemethod.htm
+old-project: kernel
+ms.assetid: 3e671484-8f8d-4ba0-a763-37c3178487ca
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.dpwmiexecutemethod, DpWmiExecuteMethod, DpWmiExecuteMethod callback function [Kernel-Mode Driver Architecture], DpWmiExecuteMethod, WMI_EXECUTE_METHOD_CALLBACK, WMI_EXECUTE_METHOD_CALLBACK, wmilib/DpWmiExecuteMethod, k903_b641484a-8f32-440d-8efc-76293ddeec2c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wmilib.h
+apiname:
+-	DpWmiExecuteMethod
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

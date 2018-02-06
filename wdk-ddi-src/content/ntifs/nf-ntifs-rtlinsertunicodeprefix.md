@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlInsertUnicodePrefix
-title : RtlInsertUnicodePrefix function
-author : windows-driver-content
-description : The RtlInsertUnicodePrefix routine inserts a new element into a Unicode prefix table.
-old-location : ifsk\rtlinsertunicodeprefix.htm
-old-project : ifsk
-ms.assetid : d8a2fa19-8f44-4088-b515-69c9f2119714
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlinsertunicodeprefix, rtlref_5c8e1a42-5c73-4029-9c1f-5426e43e123c.xml, ntifs/RtlInsertUnicodePrefix, RtlInsertUnicodePrefix, RtlInsertUnicodePrefix routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlInsertUnicodePrefix
+title: RtlInsertUnicodePrefix function
+author: windows-driver-content
+description: The RtlInsertUnicodePrefix routine inserts a new element into a Unicode prefix table.
+old-location: ifsk\rtlinsertunicodeprefix.htm
+old-project: ifsk
+ms.assetid: d8a2fa19-8f44-4088-b515-69c9f2119714
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlinsertunicodeprefix, rtlref_5c8e1a42-5c73-4029-9c1f-5426e43e123c.xml, ntifs/RtlInsertUnicodePrefix, RtlInsertUnicodePrefix, RtlInsertUnicodePrefix routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlInsertUnicodePrefix
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

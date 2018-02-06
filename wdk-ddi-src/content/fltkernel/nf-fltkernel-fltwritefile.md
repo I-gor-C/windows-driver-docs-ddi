@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltWriteFile
-title : FltWriteFile function
-author : windows-driver-content
-description : FltWriteFile is used to write data to an open file, stream, or device.
-old-location : ifsk\fltwritefile.htm
-old-project : ifsk
-ms.assetid : 994b4a75-4581-423b-8b8f-17a64600fb74
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltwritefile, FltWriteFile, fltkernel/FltWriteFile, FltApiRef_p_to_z_8d4d2b16-fa86-4084-8dad-879d4908f2fe.xml, FltWriteFile function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltWriteFile
+title: FltWriteFile function
+author: windows-driver-content
+description: FltWriteFile is used to write data to an open file, stream, or device.
+old-location: ifsk\fltwritefile.htm
+old-project: ifsk
+ms.assetid: 994b4a75-4581-423b-8b8f-17a64600fb74
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltwritefile, FltWriteFile, fltkernel/FltWriteFile, FltApiRef_p_to_z_8d4d2b16-fa86-4084-8dad-879d4908f2fe.xml, FltWriteFile function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltWriteFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

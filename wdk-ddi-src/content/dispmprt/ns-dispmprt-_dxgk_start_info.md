@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_START_INFO
-title : "_DXGK_START_INFO"
-author : windows-driver-content
-description : The DXGK_START_INFO structure holds information that is needed by the display miniport driver's DxgkDdiStartDevice function.
-old-location : display\dxgk_start_info.htm
-old-project : display
-ms.assetid : 4d28bc79-5145-48a0-99e8-3f81b2ec4a05
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGK_START_INFO, DmStructs_c2f6faad-cd05-43ea-ab58-b296bc130e09.xml, PDXGK_START_INFO, dispmprt/DXGK_START_INFO, _DXGK_START_INFO, display.dxgk_start_info, *PDXGK_START_INFO, PDXGK_START_INFO structure pointer [Display Devices], DXGK_START_INFO structure [Display Devices], DXGK_START_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_START_INFO, *PDXGK_START_INFO
+UID: NS:dispmprt._DXGK_START_INFO
+title: "_DXGK_START_INFO"
+author: windows-driver-content
+description: The DXGK_START_INFO structure holds information that is needed by the display miniport driver's DxgkDdiStartDevice function.
+old-location: display\dxgk_start_info.htm
+old-project: display
+ms.assetid: 4d28bc79-5145-48a0-99e8-3f81b2ec4a05
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dispmprt/PDXGK_START_INFO, DmStructs_c2f6faad-cd05-43ea-ab58-b296bc130e09.xml, PDXGK_START_INFO, dispmprt/DXGK_START_INFO, _DXGK_START_INFO, display.dxgk_start_info, *PDXGK_START_INFO, PDXGK_START_INFO structure pointer [Display Devices], DXGK_START_INFO structure [Display Devices], DXGK_START_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_START_INFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_START_INFO, *PDXGK_START_INFO
 ---
 
 # _DXGK_START_INFO structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmaenabler.WdfDmaEnablerCreate
-title : WdfDmaEnablerCreate function
-author : windows-driver-content
-description : The WdfDmaEnablerCreate method creates a DMA enabler object.
-old-location : wdf\wdfdmaenablercreate.htm
-old-project : wdf
-ms.assetid : 750c9293-7662-41e0-9a2a-5c19e49ad20e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdmaenablercreate, PFN_WDFDMAENABLERCREATE, DFDmaObjectRef_f0ec3598-ae92-45b3-98af-b2ce590f996f.xml, wdf.wdfdmaenablercreate, WdfDmaEnablerCreate method, wdfdmaenabler/WdfDmaEnablerCreate, WdfDmaEnablerCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_PROFILE
-req.product : Windows 10 or later.
+UID: NF:wdfdmaenabler.WdfDmaEnablerCreate
+title: WdfDmaEnablerCreate function
+author: windows-driver-content
+description: The WdfDmaEnablerCreate method creates a DMA enabler object.
+old-location: wdf\wdfdmaenablercreate.htm
+old-project: wdf
+ms.assetid: 750c9293-7662-41e0-9a2a-5c19e49ad20e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdmaenablercreate, PFN_WDFDMAENABLERCREATE, DFDmaObjectRef_f0ec3598-ae92-45b3-98af-b2ce590f996f.xml, wdf.wdfdmaenablercreate, WdfDmaEnablerCreate method, wdfdmaenabler/WdfDmaEnablerCreate, WdfDmaEnablerCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaEnablerCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_PROFILE
+req.product: Windows 10 or later.
 ---
 
 

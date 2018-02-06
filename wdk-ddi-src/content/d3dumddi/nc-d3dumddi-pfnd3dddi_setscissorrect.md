@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETSCISSORRECT
-title : PFND3DDDI_SETSCISSORRECT
-author : windows-driver-content
-description : The SetScissorRect function marks a portion of a render target that rendering is confined to.
-old-location : display\setscissorrect.htm
-old-project : display
-ms.assetid : 779fd7ff-e4d6-45b4-8164-186e9cb89513
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setscissorrect, SetScissorRect callback function [Display Devices], SetScissorRect, PFND3DDDI_SETSCISSORRECT, PFND3DDDI_SETSCISSORRECT, d3dumddi/SetScissorRect, UserModeDisplayDriver_Functions_bd6b8a3d-d007-4272-9d43-f65c5da3959a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETSCISSORRECT
+title: PFND3DDDI_SETSCISSORRECT
+author: windows-driver-content
+description: The SetScissorRect function marks a portion of a render target that rendering is confined to.
+old-location: display\setscissorrect.htm
+old-project: display
+ms.assetid: 779fd7ff-e4d6-45b4-8164-186e9cb89513
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setscissorrect, SetScissorRect callback function [Display Devices], SetScissorRect, PFND3DDDI_SETSCISSORRECT, PFND3DDDI_SETSCISSORRECT, d3dumddi/SetScissorRect, UserModeDisplayDriver_Functions_bd6b8a3d-d007-4272-9d43-f65c5da3959a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetScissorRect
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

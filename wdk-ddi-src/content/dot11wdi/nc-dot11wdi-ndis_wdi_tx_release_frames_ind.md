@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_TX_RELEASE_FRAMES_IND
-title : NDIS_WDI_TX_RELEASE_FRAMES_IND
-author : windows-driver-content
-description : The NdisWdiTxReleaseFrameIndication callback function releases up to a specified number or aggregate cost of frames queued to a given peer-TID combination when transmission is paused.
-old-location : netvista\ndiswditxreleaseframesindication.htm
-old-project : netvista
-ms.assetid : 1324D516-8AEF-4357-86EC-81F6EBDC8FB9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswditxreleaseframesindication, NdisWdiTxReleaseFrameIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiTxReleaseFrameIndication, NDIS_WDI_TX_RELEASE_FRAMES_IND, NDIS_WDI_TX_RELEASE_FRAMES_IND, dot11wdi/NdisWdiTxReleaseFrameIndication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_TX_RELEASE_FRAMES_IND
+title: NDIS_WDI_TX_RELEASE_FRAMES_IND
+author: windows-driver-content
+description: The NdisWdiTxReleaseFrameIndication callback function releases up to a specified number or aggregate cost of frames queued to a given peer-TID combination when transmission is paused.
+old-location: netvista\ndiswditxreleaseframesindication.htm
+old-project: netvista
+ms.assetid: 1324D516-8AEF-4357-86EC-81F6EBDC8FB9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswditxreleaseframesindication, NdisWdiTxReleaseFrameIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiTxReleaseFrameIndication, NDIS_WDI_TX_RELEASE_FRAMES_IND, NDIS_WDI_TX_RELEASE_FRAMES_IND, dot11wdi/NdisWdiTxReleaseFrameIndication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiTxReleaseFrameIndication
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

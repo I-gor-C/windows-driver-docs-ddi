@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_UICC_RESET_INFO
-title : "_WWAN_UICC_RESET_INFO"
-author : windows-driver-content
-description : The WWAN_UICC_RESET_INFO structure represents the passthrough status of a modem miniport adapter for a UICC smart card.
-old-location : netvista\wwan_uicc_reset_info.htm
-old-project : netvista
-ms.assetid : 1D53135F-3826-4546-A0AD-34697D186E8A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_UICC_RESET_INFO, PWWAN_UICC_RESET_INFO structure pointer [Network Drivers Starting with Windows Vista], _WWAN_UICC_RESET_INFO, wwan/PWWAN_UICC_RESET_INFO, wwan/WWAN_UICC_RESET_INFO, WWAN_UICC_RESET_INFO, WWAN_UICC_RESET_INFO structure [Network Drivers Starting with Windows Vista], *PWWAN_UICC_RESET_INFO, netvista.wwan_uicc_reset_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_UICC_RESET_INFO, *PWWAN_UICC_RESET_INFO
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_UICC_RESET_INFO
+title: "_WWAN_UICC_RESET_INFO"
+author: windows-driver-content
+description: The WWAN_UICC_RESET_INFO structure represents the passthrough status of a modem miniport adapter for a UICC smart card.
+old-location: netvista\wwan_uicc_reset_info.htm
+old-project: netvista
+ms.assetid: 1D53135F-3826-4546-A0AD-34697D186E8A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_UICC_RESET_INFO, PWWAN_UICC_RESET_INFO structure pointer [Network Drivers Starting with Windows Vista], _WWAN_UICC_RESET_INFO, wwan/PWWAN_UICC_RESET_INFO, wwan/WWAN_UICC_RESET_INFO, WWAN_UICC_RESET_INFO, WWAN_UICC_RESET_INFO structure [Network Drivers Starting with Windows Vista], *PWWAN_UICC_RESET_INFO, netvista.wwan_uicc_reset_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_UICC_RESET_INFO
+product: Windows
+targetos: Windows
+req.typenames: WWAN_UICC_RESET_INFO, *PWWAN_UICC_RESET_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_UICC_RESET_INFO structure

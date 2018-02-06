@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwRecoverEnlistment
-title : ZwRecoverEnlistment function
-author : windows-driver-content
-description : The ZwRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment.
-old-location : kernel\zwrecoverenlistment.htm
-old-project : kernel
-ms.assetid : 0f34d2d1-bb3a-4529-9ced-d9bed998c4ce
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwRecoverEnlistment, ZwRecoverEnlistment, ktm_ref_0a6564fb-c6d1-4b4b-a278-a1d78395c1b4.xml, wdm/NtRecoverEnlistment, ZwRecoverEnlistment routine [Kernel-Mode Driver Architecture], NtRecoverEnlistment, kernel.zwrecoverenlistment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwRecoverEnlistment
+title: ZwRecoverEnlistment function
+author: windows-driver-content
+description: The ZwRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment.
+old-location: kernel\zwrecoverenlistment.htm
+old-project: kernel
+ms.assetid: 0f34d2d1-bb3a-4529-9ced-d9bed998c4ce
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwRecoverEnlistment, ZwRecoverEnlistment, ktm_ref_0a6564fb-c6d1-4b4b-a278-a1d78395c1b4.xml, wdm/NtRecoverEnlistment, ZwRecoverEnlistment routine [Kernel-Mode Driver Architecture], NtRecoverEnlistment, kernel.zwrecoverenlistment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwRecoverEnlistment
+-	NtRecoverEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

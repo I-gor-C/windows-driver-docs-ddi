@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxSetComponentLatency
-title : PoFxSetComponentLatency function
-author : windows-driver-content
-description : The PoFxSetComponentLatency routine specifies the maximum latency that can be tolerated in the transition from the idle condition to the active condition in the specified component.
-old-location : kernel\pofxsetcomponentlatency.htm
-old-project : kernel
-ms.assetid : 670AFE37-1617-4171-9504-50B13B8E0F76
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PoFxSetComponentLatency, PoFxSetComponentLatency, kernel.pofxsetcomponentlatency, PoFxSetComponentLatency routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxSetComponentLatency
+title: PoFxSetComponentLatency function
+author: windows-driver-content
+description: The PoFxSetComponentLatency routine specifies the maximum latency that can be tolerated in the transition from the idle condition to the active condition in the specified component.
+old-location: kernel\pofxsetcomponentlatency.htm
+old-project: kernel
+ms.assetid: 670AFE37-1617-4171-9504-50B13B8E0F76
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PoFxSetComponentLatency, PoFxSetComponentLatency, kernel.pofxsetcomponentlatency, PoFxSetComponentLatency routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxSetComponentLatency
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

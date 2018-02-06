@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetDisassembleEffectiveOffset
-title : IDebugControl3::GetDisassembleEffectiveOffset method
-author : windows-driver-content
-description : The GetDisassembleEffectiveOffset method returns the address of the last instruction disassembled using Disassemble.
-old-location : debugger\getdisassembleeffectiveoffset.htm
-old-project : debugger
-ms.assetid : 07f652f2-d370-4f88-a7f0-f6946fd50c79
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2::GetDisassembleEffectiveOffset, IDebugControl2 interface [Windows Debugging], GetDisassembleEffectiveOffset method, IDebugControl3, dbgeng/IDebugControl::GetDisassembleEffectiveOffset, IDebugControl::GetDisassembleEffectiveOffset, GetDisassembleEffectiveOffset method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetDisassembleEffectiveOffset, IDebugControl_5593ec3a-31f4-4775-9356-49f1757323c0.xml, dbgeng/IDebugControl2::GetDisassembleEffectiveOffset, debugger.getdisassembleeffectiveoffset, GetDisassembleEffectiveOffset method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], GetDisassembleEffectiveOffset method, GetDisassembleEffectiveOffset method [Windows Debugging], GetDisassembleEffectiveOffset method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetDisassembleEffectiveOffset, IDebugControl interface [Windows Debugging], GetDisassembleEffectiveOffset method, GetDisassembleEffectiveOffset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetDisassembleEffectiveOffset
+title: IDebugControl3::GetDisassembleEffectiveOffset method
+author: windows-driver-content
+description: The GetDisassembleEffectiveOffset method returns the address of the last instruction disassembled using Disassemble.
+old-location: debugger\getdisassembleeffectiveoffset.htm
+old-project: debugger
+ms.assetid: 07f652f2-d370-4f88-a7f0-f6946fd50c79
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2::GetDisassembleEffectiveOffset, IDebugControl2 interface [Windows Debugging], GetDisassembleEffectiveOffset method, IDebugControl3, dbgeng/IDebugControl::GetDisassembleEffectiveOffset, IDebugControl::GetDisassembleEffectiveOffset, GetDisassembleEffectiveOffset method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetDisassembleEffectiveOffset, IDebugControl_5593ec3a-31f4-4775-9356-49f1757323c0.xml, dbgeng/IDebugControl2::GetDisassembleEffectiveOffset, debugger.getdisassembleeffectiveoffset, GetDisassembleEffectiveOffset method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], GetDisassembleEffectiveOffset method, GetDisassembleEffectiveOffset method [Windows Debugging], GetDisassembleEffectiveOffset method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetDisassembleEffectiveOffset, IDebugControl interface [Windows Debugging], GetDisassembleEffectiveOffset method, GetDisassembleEffectiveOffset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetDisassembleEffectiveOffset
+-	IDebugControl2.GetDisassembleEffectiveOffset
+-	IDebugControl3.GetDisassembleEffectiveOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

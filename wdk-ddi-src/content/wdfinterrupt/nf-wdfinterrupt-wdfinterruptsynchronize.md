@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptSynchronize
-title : WdfInterruptSynchronize function
-author : windows-driver-content
-description : The WdfInterruptSynchronize method executes a specified callback function at the device's DIRQL while holding an interrupt object's spin lock.
-old-location : wdf\wdfinterruptsynchronize.htm
-old-project : wdf
-ms.assetid : b41fc37a-d41f-49ca-848f-844e049dd987
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml, PFN_WDFINTERRUPTSYNCHRONIZE, wdfinterrupt/WdfInterruptSynchronize, WdfInterruptSynchronize, kmdf.wdfinterruptsynchronize, WdfInterruptSynchronize method, wdf.wdfinterruptsynchronize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptSynchronize
+title: WdfInterruptSynchronize function
+author: windows-driver-content
+description: The WdfInterruptSynchronize method executes a specified callback function at the device's DIRQL while holding an interrupt object's spin lock.
+old-location: wdf\wdfinterruptsynchronize.htm
+old-project: wdf
+ms.assetid: b41fc37a-d41f-49ca-848f-844e049dd987
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml, PFN_WDFINTERRUPTSYNCHRONIZE, wdfinterrupt/WdfInterruptSynchronize, WdfInterruptSynchronize, kmdf.wdfinterruptsynchronize, WdfInterruptSynchronize method, wdf.wdfinterruptsynchronize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptSynchronize
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

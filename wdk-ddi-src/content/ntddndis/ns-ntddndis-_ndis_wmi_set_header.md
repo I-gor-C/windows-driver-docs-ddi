@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_WMI_SET_HEADER
-title : "_NDIS_WMI_SET_HEADER"
-author : windows-driver-content
-description : The NDIS_WMI_SET_HEADER structure provides information about a GUID set request from WMI clients.
-old-location : netvista\ndis_wmi_set_header.htm
-old-project : netvista
-ms.assetid : ea6f37e0-a46f-41d9-84f2-624f5727863a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER, ntddndis/NDIS_WMI_SET_HEADER, PNDIS_WMI_SET_HEADER, ndis_wmi_ref_c7789da2-ca0f-48e3-8000-8abff7fe866e.xml, NDIS_WMI_SET_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_SET_HEADER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_SET_HEADER, netvista.ndis_wmi_set_header, *PNDIS_WMI_SET_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER"
+UID: NS:ntddndis._NDIS_WMI_SET_HEADER
+title: "_NDIS_WMI_SET_HEADER"
+author: windows-driver-content
+description: The NDIS_WMI_SET_HEADER structure provides information about a GUID set request from WMI clients.
+old-location: netvista\ndis_wmi_set_header.htm
+old-project: netvista
+ms.assetid: ea6f37e0-a46f-41d9-84f2-624f5727863a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER, ntddndis/NDIS_WMI_SET_HEADER, PNDIS_WMI_SET_HEADER, ndis_wmi_ref_c7789da2-ca0f-48e3-8000-8abff7fe866e.xml, NDIS_WMI_SET_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_SET_HEADER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_SET_HEADER, netvista.ndis_wmi_set_header, *PNDIS_WMI_SET_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_WMI_SET_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER"
 ---
 
 # _NDIS_WMI_SET_HEADER structure

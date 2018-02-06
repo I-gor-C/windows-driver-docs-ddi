@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._GLYPHRUN
-title : "_GLYPHRUN"
-author : windows-driver-content
-description : The GLYPHRUN structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
-old-location : print\glyphrun.htm
-old-project : print
-ms.assetid : 21f6631c-dff1-459f-a83e-7aa1d5d2ab2b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : prntfont/GLYPHRUN, GLYPHRUN structure [Print Devices], PGLYPHRUN, prntfont/PGLYPHRUN, PGLYPHRUN structure pointer [Print Devices], print_unidrv-pscript_fonts_591184a3-96f1-4b27-bf6a-d1c512a2bf7e.xml, print.glyphrun, *PGLYPHRUN, GLYPHRUN, _GLYPHRUN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GLYPHRUN, *PGLYPHRUN
-req.product : Windows 10 or later.
+UID: NS:prntfont._GLYPHRUN
+title: "_GLYPHRUN"
+author: windows-driver-content
+description: The GLYPHRUN structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
+old-location: print\glyphrun.htm
+old-project: print
+ms.assetid: 21f6631c-dff1-459f-a83e-7aa1d5d2ab2b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: prntfont/GLYPHRUN, GLYPHRUN structure [Print Devices], PGLYPHRUN, prntfont/PGLYPHRUN, PGLYPHRUN structure pointer [Print Devices], print_unidrv-pscript_fonts_591184a3-96f1-4b27-bf6a-d1c512a2bf7e.xml, print.glyphrun, *PGLYPHRUN, GLYPHRUN, _GLYPHRUN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	GLYPHRUN
+product: Windows
+targetos: Windows
+req.typenames: GLYPHRUN, *PGLYPHRUN
+req.product: Windows 10 or later.
 ---
 
 # _GLYPHRUN structure

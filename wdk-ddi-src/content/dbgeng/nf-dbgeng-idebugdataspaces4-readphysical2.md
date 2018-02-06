@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadPhysical2
-title : IDebugDataSpaces4::ReadPhysical2 method
-author : windows-driver-content
-description : The ReadPhysical2 method reads the target's memory from the specified physical address.
-old-location : debugger\readphysical2.htm
-old-project : debugger
-ms.assetid : ad376a6f-b8e3-40ba-9b00-df1410c1293c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical2 method, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces4::ReadPhysical2, debugger.readphysical2, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_b7eb9d7f-98a3-4be4-a264-68d9ac1eaea7.xml, dbgeng/IDebugDataSpaces4::ReadPhysical2, IDebugDataSpaces4, ReadPhysical2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadPhysical2
+title: IDebugDataSpaces4::ReadPhysical2 method
+author: windows-driver-content
+description: The ReadPhysical2 method reads the target's memory from the specified physical address.
+old-location: debugger\readphysical2.htm
+old-project: debugger
+ms.assetid: ad376a6f-b8e3-40ba-9b00-df1410c1293c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical2 method, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces4::ReadPhysical2, debugger.readphysical2, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_b7eb9d7f-98a3-4be4-a264-68d9ac1eaea7.xml, dbgeng/IDebugDataSpaces4::ReadPhysical2, IDebugDataSpaces4, ReadPhysical2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces4.ReadPhysical2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

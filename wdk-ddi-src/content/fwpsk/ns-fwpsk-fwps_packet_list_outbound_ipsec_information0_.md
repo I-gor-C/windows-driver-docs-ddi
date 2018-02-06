@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_
-title : FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_
-author : windows-driver-content
-description : The FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure defines IPsec information associated with outbound packet data.Note  FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 is a specific version of FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION.
-old-location : netvista\fwps_packet_list_outbound_ipsec_information0.htm
-old-project : netvista
-ms.assetid : 18312157-f41c-474d-9cf4-446d8b189c4d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_packet_list_outbound_ipsec_information0, wfp_ref_3_struct_3_fwps_P-Z_b5959556-81fe-4c93-9700-2214fee005c5.xml, fwpsk/FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_, FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure [Network Drivers Starting with Windows Vista], FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0
+UID: NS:fwpsk.FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_
+title: FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_
+author: windows-driver-content
+description: The FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure defines IPsec information associated with outbound packet data.Note  FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 is a specific version of FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION.
+old-location: netvista\fwps_packet_list_outbound_ipsec_information0.htm
+old-project: netvista
+ms.assetid: 18312157-f41c-474d-9cf4-446d8b189c4d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_packet_list_outbound_ipsec_information0, wfp_ref_3_struct_3_fwps_P-Z_b5959556-81fe-4c93-9700-2214fee005c5.xml, fwpsk/FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_, FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0 structure [Network Drivers Starting with Windows Vista], FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0
 ---
 
 # FWPS_PACKET_LIST_OUTBOUND_IPSEC_INFORMATION0_ structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:portcls._PCPROPERTY_REQUEST
-title : "_PCPROPERTY_REQUEST"
-author : windows-driver-content
-description : The PCPROPERTY_REQUEST structure specifies a property request.
-old-location : audio\pcproperty_request.htm
-old-project : audio
-ms.assetid : 3683735d-ce00-4615-9782-dee9f4753cc7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCPROPERTY_REQUEST, audpc-struct_f153c6fb-8b21-4a81-ab9b-d7b7fef9f9db.xml, audio.pcproperty_request, *PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST structure [Audio Devices], portcls/PCPROPERTY_REQUEST, _PCPROPERTY_REQUEST, PPCPROPERTY_REQUEST structure pointer [Audio Devices], PPCPROPERTY_REQUEST, portcls/PPCPROPERTY_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST"
+UID: NS:portcls._PCPROPERTY_REQUEST
+title: "_PCPROPERTY_REQUEST"
+author: windows-driver-content
+description: The PCPROPERTY_REQUEST structure specifies a property request.
+old-location: audio\pcproperty_request.htm
+old-project: audio
+ms.assetid: 3683735d-ce00-4615-9782-dee9f4753cc7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCPROPERTY_REQUEST, audpc-struct_f153c6fb-8b21-4a81-ab9b-d7b7fef9f9db.xml, audio.pcproperty_request, *PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST structure [Audio Devices], portcls/PCPROPERTY_REQUEST, _PCPROPERTY_REQUEST, PPCPROPERTY_REQUEST structure pointer [Audio Devices], PPCPROPERTY_REQUEST, portcls/PPCPROPERTY_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	portcls.h
+apiname:
+-	PCPROPERTY_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST"
 ---
 
 # _PCPROPERTY_REQUEST structure

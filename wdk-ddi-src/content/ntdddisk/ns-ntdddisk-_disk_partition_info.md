@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_PARTITION_INFO
-title : "_DISK_PARTITION_INFO"
-author : windows-driver-content
-description : The DISK_PARTITION_INFO structure is used to report information about the disk's partition table.
-old-location : storage\disk_partition_info.htm
-old-project : storage
-ms.assetid : 14df0604-39cd-4743-a051-894d63f4417c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PDISK_PARTITION_INFO structure pointer [Storage Devices], PDISK_PARTITION_INFO, ntdddisk/PDISK_PARTITION_INFO, DISK_PARTITION_INFO, _DISK_PARTITION_INFO, structs-disk_307cbbb9-2940-4a87-b6b7-04e588811b8e.xml, *PDISK_PARTITION_INFO, ntdddisk/DISK_PARTITION_INFO, DISK_PARTITION_INFO structure [Storage Devices], storage.disk_partition_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_PARTITION_INFO, DISK_PARTITION_INFO"
+UID: NS:ntdddisk._DISK_PARTITION_INFO
+title: "_DISK_PARTITION_INFO"
+author: windows-driver-content
+description: The DISK_PARTITION_INFO structure is used to report information about the disk's partition table.
+old-location: storage\disk_partition_info.htm
+old-project: storage
+ms.assetid: 14df0604-39cd-4743-a051-894d63f4417c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PDISK_PARTITION_INFO structure pointer [Storage Devices], PDISK_PARTITION_INFO, ntdddisk/PDISK_PARTITION_INFO, DISK_PARTITION_INFO, _DISK_PARTITION_INFO, structs-disk_307cbbb9-2940-4a87-b6b7-04e588811b8e.xml, *PDISK_PARTITION_INFO, ntdddisk/DISK_PARTITION_INFO, DISK_PARTITION_INFO structure [Storage Devices], storage.disk_partition_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_PARTITION_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_PARTITION_INFO, DISK_PARTITION_INFO"
 ---
 
 # _DISK_PARTITION_INFO structure

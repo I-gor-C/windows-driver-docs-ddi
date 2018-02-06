@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KS_COMPRESSION
-title : KS_COMPRESSION
-author : windows-driver-content
-description : The KS_COMPRESSION structure defines the compression of frames on an output pin.
-old-location : stream\ks_compression.htm
-old-project : stream
-ms.assetid : 065f51c3-f476-4f04-880a-5c42e493d458
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_COMPRESSION structure [Streaming Media Devices], stream.ks_compression, ks-struct_e554d828-61e3-45cd-8ddf-fe1c0b96e02d.xml, ks/PKS_COMPRESSION, *PKS_COMPRESSION, KS_COMPRESSION, ks/KS_COMPRESSION, PKS_COMPRESSION, PKS_COMPRESSION structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_COMPRESSION, KS_COMPRESSION"
+UID: NS:ks.KS_COMPRESSION
+title: KS_COMPRESSION
+author: windows-driver-content
+description: The KS_COMPRESSION structure defines the compression of frames on an output pin.
+old-location: stream\ks_compression.htm
+old-project: stream
+ms.assetid: 065f51c3-f476-4f04-880a-5c42e493d458
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_COMPRESSION structure [Streaming Media Devices], stream.ks_compression, ks-struct_e554d828-61e3-45cd-8ddf-fe1c0b96e02d.xml, ks/PKS_COMPRESSION, *PKS_COMPRESSION, KS_COMPRESSION, ks/KS_COMPRESSION, PKS_COMPRESSION, PKS_COMPRESSION structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KS_COMPRESSION
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_COMPRESSION, KS_COMPRESSION"
 ---
 
 # KS_COMPRESSION structure

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmDispatchIrpToIoQueue
-title : WdfDeviceWdmDispatchIrpToIoQueue function
-author : windows-driver-content
-description : The WdfDeviceWdmDispatchIrpToIoQueue method forwards the IRP to a specified I/O queue.
-old-location : wdf\wdfdevicewdmdispatchirptoioqueue.htm
-old-project : wdf
-ms.assetid : 5D1B228D-81D9-47FE-8CF2-41AAD9148667
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue, kmdf.wdfdevicewdmforwardirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue, WdfDeviceWdmDispatchIrpToIoQueue method, wdf.wdfdevicewdmdispatchirptoioqueue, kmdf.wdfdevicewdmdispatchirptoioqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.17
-req.ddi-compliance : DriverCreate, FwdIrpToIoQueueValid
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmDispatchIrpToIoQueue
+title: WdfDeviceWdmDispatchIrpToIoQueue function
+author: windows-driver-content
+description: The WdfDeviceWdmDispatchIrpToIoQueue method forwards the IRP to a specified I/O queue.
+old-location: wdf\wdfdevicewdmdispatchirptoioqueue.htm
+old-project: wdf
+ms.assetid: 5D1B228D-81D9-47FE-8CF2-41AAD9148667
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue, kmdf.wdfdevicewdmforwardirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue, WdfDeviceWdmDispatchIrpToIoQueue method, wdf.wdfdevicewdmdispatchirptoioqueue, kmdf.wdfdevicewdmdispatchirptoioqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.17
+req.ddi-compliance: DriverCreate, FwdIrpToIoQueueValid
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceWdmDispatchIrpToIoQueue
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

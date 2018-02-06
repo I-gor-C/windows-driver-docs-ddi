@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_AVAILABLE_FREQUENCY_LIST
-title : "_DOT11_AVAILABLE_FREQUENCY_LIST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_available_frequency_list.htm
-old-project : netvista
-ms.assetid : b8862ba3-c871-4d9b-9ee4-99ec9d0bcda9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_available_frequency_list, DOT11_AVAILABLE_FREQUENCY_LIST structure [Network Drivers Starting with Windows Vista], windot11/DOT11_AVAILABLE_FREQUENCY_LIST, _DOT11_AVAILABLE_FREQUENCY_LIST, PDOT11_AVAILABLE_FREQUENCY_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_df13c6f8-9257-493e-b8bb-c85cbbb2fea9.xml, DOT11_AVAILABLE_FREQUENCY_LIST, PDOT11_AVAILABLE_FREQUENCY_LIST, windot11/PDOT11_AVAILABLE_FREQUENCY_LIST, *PDOT11_AVAILABLE_FREQUENCY_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_AVAILABLE_FREQUENCY_LIST, DOT11_AVAILABLE_FREQUENCY_LIST"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_AVAILABLE_FREQUENCY_LIST
+title: "_DOT11_AVAILABLE_FREQUENCY_LIST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_available_frequency_list.htm
+old-project: netvista
+ms.assetid: b8862ba3-c871-4d9b-9ee4-99ec9d0bcda9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_available_frequency_list, DOT11_AVAILABLE_FREQUENCY_LIST structure [Network Drivers Starting with Windows Vista], windot11/DOT11_AVAILABLE_FREQUENCY_LIST, _DOT11_AVAILABLE_FREQUENCY_LIST, PDOT11_AVAILABLE_FREQUENCY_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_df13c6f8-9257-493e-b8bb-c85cbbb2fea9.xml, DOT11_AVAILABLE_FREQUENCY_LIST, PDOT11_AVAILABLE_FREQUENCY_LIST, windot11/PDOT11_AVAILABLE_FREQUENCY_LIST, *PDOT11_AVAILABLE_FREQUENCY_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_AVAILABLE_FREQUENCY_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_AVAILABLE_FREQUENCY_LIST, DOT11_AVAILABLE_FREQUENCY_LIST"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_AVAILABLE_FREQUENCY_LIST structure

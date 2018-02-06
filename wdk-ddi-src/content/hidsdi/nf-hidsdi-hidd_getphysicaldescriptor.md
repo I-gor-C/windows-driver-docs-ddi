@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetPhysicalDescriptor
-title : HidD_GetPhysicalDescriptor function
-author : windows-driver-content
-description : The HidD_GetPhysicalDescriptor routine returns the embedded string of a top-level collection that identifies the collection's physical device.
-old-location : hid\hidd_getphysicaldescriptor.htm
-old-project : hid
-ms.assetid : 05f853a9-395a-4b2b-b681-0010dd019bbc
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_GetPhysicalDescriptor, HidD_GetPhysicalDescriptor routine [Human Input Devices], HidD_GetPhysicalDescriptor, hid.hidd_getphysicaldescriptor, hidfunc_e9532fa2-49f8-41ec-9e23-19416b889b47.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetPhysicalDescriptor
+title: HidD_GetPhysicalDescriptor function
+author: windows-driver-content
+description: The HidD_GetPhysicalDescriptor routine returns the embedded string of a top-level collection that identifies the collection's physical device.
+old-location: hid\hidd_getphysicaldescriptor.htm
+old-project: hid
+ms.assetid: 05f853a9-395a-4b2b-b681-0010dd019bbc
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidsdi/HidD_GetPhysicalDescriptor, HidD_GetPhysicalDescriptor routine [Human Input Devices], HidD_GetPhysicalDescriptor, hid.hidd_getphysicaldescriptor, hidfunc_e9532fa2-49f8-41ec-9e23-19416b889b47.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetPhysicalDescriptor
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

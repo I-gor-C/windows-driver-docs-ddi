@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SET_CONTEXT
-title : "_WWAN_SET_CONTEXT"
-author : windows-driver-content
-description : The WWAN_SET_CONTEXT structure represents a provisioned context with a network provider identification that is supported by the MB device.
-old-location : netvista\wwan_set_context.htm
-old-project : netvista
-ms.assetid : 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_SET_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT structure [Network Drivers Starting with Windows Vista], WwanRef_08361ced-712a-464d-b374-7b18a096b8e5.xml, WWAN_SET_CONTEXT, netvista.wwan_set_context, _WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT, wwan/PWWAN_SET_CONTEXT, PWWAN_SET_CONTEXT, wwan/WWAN_SET_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SET_CONTEXT
+title: "_WWAN_SET_CONTEXT"
+author: windows-driver-content
+description: The WWAN_SET_CONTEXT structure represents a provisioned context with a network provider identification that is supported by the MB device.
+old-location: netvista\wwan_set_context.htm
+old-project: netvista
+ms.assetid: 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_SET_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT structure [Network Drivers Starting with Windows Vista], WwanRef_08361ced-712a-464d-b374-7b18a096b8e5.xml, WWAN_SET_CONTEXT, netvista.wwan_set_context, _WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT, wwan/PWWAN_SET_CONTEXT, PWWAN_SET_CONTEXT, wwan/WWAN_SET_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SET_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SET_CONTEXT structure

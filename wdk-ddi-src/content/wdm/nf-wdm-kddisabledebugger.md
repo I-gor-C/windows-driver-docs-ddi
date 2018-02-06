@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.KdDisableDebugger
-title : KdDisableDebugger function
-author : windows-driver-content
-description : The KdDisableDebugger routine disables the kernel debugger.
-old-location : devtest\kddisabledebugger.htm
-old-project : devtest
-ms.assetid : 491f1b10-342d-4edf-9b70-732f9d4755f2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KdDisableDebugger
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : KdDisableDebugger
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KdDisableDebugger
+title: KdDisableDebugger function
+author: windows-driver-content
+description: The KdDisableDebugger routine disables the kernel debugger.
+old-location: devtest\kddisabledebugger.htm
+old-project: devtest
+ms.assetid: 491f1b10-342d-4edf-9b70-732f9d4755f2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KdDisableDebugger
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KdDisableDebugger
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

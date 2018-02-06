@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCreateKey
-title : ZwCreateKey function
-author : windows-driver-content
-description : The ZwCreateKey routine creates a new registry key or opens an existing one.
-old-location : kernel\zwcreatekey.htm
-old-project : kernel
-ms.assetid : 333f54e8-738e-4d1f-8fd7-93f282d9b9d8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwCreateKey, ZwCreateKey routine [Kernel-Mode Driver Architecture], kernel.zwcreatekey, k111_1ab9fba3-0c39-45b8-9a79-d33ad73c0642.xml, wdm/NtCreateKey, NtCreateKey, wdm/ZwCreateKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateKey
+title: ZwCreateKey function
+author: windows-driver-content
+description: The ZwCreateKey routine creates a new registry key or opens an existing one.
+old-location: kernel\zwcreatekey.htm
+old-project: kernel
+ms.assetid: 333f54e8-738e-4d1f-8fd7-93f282d9b9d8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwCreateKey, ZwCreateKey routine [Kernel-Mode Driver Architecture], kernel.zwcreatekey, k111_1ab9fba3-0c39-45b8-9a79-d33ad73c0642.xml, wdm/NtCreateKey, NtCreateKey, wdm/ZwCreateKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateKey
+-	NtCreateKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

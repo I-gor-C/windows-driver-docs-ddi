@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeGetCurrentProcessorNumberEx
-title : KeGetCurrentProcessorNumberEx function
-author : windows-driver-content
-description : The KeGetCurrentProcessorNumberEx routine gets the processor number of the logical processor that the caller is running on.
-old-location : kernel\kegetcurrentprocessornumberex.htm
-old-project : kernel
-ms.assetid : eb66a17e-2e85-453c-8b39-091f0dc8c29b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_3eea6705-7267-452a-88c2-1597c6f19828.xml, KeGetCurrentProcessorNumberEx, KeGetCurrentProcessorNumberEx routine [Kernel-Mode Driver Architecture], wdm/KeGetCurrentProcessorNumberEx, kernel.kegetcurrentprocessornumberex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeGetCurrentProcessorNumberEx
+title: KeGetCurrentProcessorNumberEx function
+author: windows-driver-content
+description: The KeGetCurrentProcessorNumberEx routine gets the processor number of the logical processor that the caller is running on.
+old-location: kernel\kegetcurrentprocessornumberex.htm
+old-project: kernel
+ms.assetid: eb66a17e-2e85-453c-8b39-091f0dc8c29b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_3eea6705-7267-452a-88c2-1597c6f19828.xml, KeGetCurrentProcessorNumberEx, KeGetCurrentProcessorNumberEx routine [Kernel-Mode Driver Architecture], wdm/KeGetCurrentProcessorNumberEx, kernel.kegetcurrentprocessornumberex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeGetCurrentProcessorNumberEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._GENERIC_MAPPING
-title : "_GENERIC_MAPPING"
-author : windows-driver-content
-description : The GENERIC_MAPPING structure describes the ACCESS_MASK value of specific access rights associated with each type of generic access right.
-old-location : kernel\generic_mapping.htm
-old-project : kernel
-ms.assetid : 54524c7e-12eb-46c7-b96d-67e49821e7a8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : GENERIC_MAPPING structure [Kernel-Mode Driver Architecture], GENERIC_MAPPING, wdm/GENERIC_MAPPING, PGENERIC_MAPPING, kstruct_b_488ee84c-2f22-4682-8b90-56e892f07f7b.xml, PGENERIC_MAPPING structure pointer [Kernel-Mode Driver Architecture], _GENERIC_MAPPING, wdm/PGENERIC_MAPPING, *PGENERIC_MAPPING, kernel.generic_mapping
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GENERIC_MAPPING
-req.product : Windows 10 or later.
+UID: NS:wdm._GENERIC_MAPPING
+title: "_GENERIC_MAPPING"
+author: windows-driver-content
+description: The GENERIC_MAPPING structure describes the ACCESS_MASK value of specific access rights associated with each type of generic access right.
+old-location: kernel\generic_mapping.htm
+old-project: kernel
+ms.assetid: 54524c7e-12eb-46c7-b96d-67e49821e7a8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: GENERIC_MAPPING structure [Kernel-Mode Driver Architecture], GENERIC_MAPPING, wdm/GENERIC_MAPPING, PGENERIC_MAPPING, kstruct_b_488ee84c-2f22-4682-8b90-56e892f07f7b.xml, PGENERIC_MAPPING structure pointer [Kernel-Mode Driver Architecture], _GENERIC_MAPPING, wdm/PGENERIC_MAPPING, *PGENERIC_MAPPING, kernel.generic_mapping
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	GENERIC_MAPPING
+product: Windows
+targetos: Windows
+req.typenames: GENERIC_MAPPING
+req.product: Windows 10 or later.
 ---
 
 # _GENERIC_MAPPING structure

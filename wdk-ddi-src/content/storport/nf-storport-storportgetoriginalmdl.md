@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetOriginalMdl
-title : StorPortGetOriginalMdl function
-author : windows-driver-content
-description : The StorPortGetOriginalMdl routine returns the MDL associated with the given SRB.
-old-location : storage\storportgetoriginalmdl.htm
-old-project : storage
-ms.assetid : 48042e9d-ed83-4326-931d-ded753deb1a7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetOriginalMdl, StorPortGetOriginalMdl routine [Storage Devices], StorPortGetOriginalMdl, storage.storportgetoriginalmdl, storprt_4617200d-18b4-4ee2-aa43-92fc5f3a7b66.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetOriginalMdl
+title: StorPortGetOriginalMdl function
+author: windows-driver-content
+description: The StorPortGetOriginalMdl routine returns the MDL associated with the given SRB.
+old-location: storage\storportgetoriginalmdl.htm
+old-project: storage
+ms.assetid: 48042e9d-ed83-4326-931d-ded753deb1a7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortGetOriginalMdl, StorPortGetOriginalMdl routine [Storage Devices], StorPortGetOriginalMdl, storage.storportgetoriginalmdl, storprt_4617200d-18b4-4ee2-aa43-92fc5f3a7b66.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetOriginalMdl
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

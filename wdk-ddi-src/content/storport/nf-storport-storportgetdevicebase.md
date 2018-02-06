@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetDeviceBase
-title : StorPortGetDeviceBase function
-author : windows-driver-content
-description : The StorPortGetDeviceBase routine maps an I/O address to system address space.
-old-location : storage\storportgetdevicebase.htm
-old-project : storage
-ms.assetid : 6d25f2fb-be77-480f-b07c-294ab8a4272e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortGetDeviceBase, storprt_8be3e3d9-dae5-49cb-aa44-31d3be745045.xml, storport/StorPortGetDeviceBase, storage.storportgetdevicebase, StorPortGetDeviceBase routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetDeviceBase
+title: StorPortGetDeviceBase function
+author: windows-driver-content
+description: The StorPortGetDeviceBase routine maps an I/O address to system address space.
+old-location: storage\storportgetdevicebase.htm
+old-project: storage
+ms.assetid: 6d25f2fb-be77-480f-b07c-294ab8a4272e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortGetDeviceBase, storprt_8be3e3d9-dae5-49cb-aa44-31d3be745045.xml, storport/StorPortGetDeviceBase, storage.storportgetdevicebase, StorPortGetDeviceBase routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetDeviceBase
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

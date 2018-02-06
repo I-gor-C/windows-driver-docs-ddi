@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinAttemptProcessing
-title : KsPinAttemptProcessing function
-author : windows-driver-content
-description : The KsPinAttemptProcessing function is used to resume processing on a specific pin on a pin-centric filter. It attempts to initiate processing on Pin by sending a processing dispatch call to Pin's processing object.
-old-location : stream\kspinattemptprocessing.htm
-old-project : stream
-ms.assetid : 9b916114-85aa-4ab7-acaa-6b19d0a4d776
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_e17d5ad8-b0e3-4b5e-ab4c-a552f1650ed4.xml, KsPinAttemptProcessing function [Streaming Media Devices], KsPinAttemptProcessing, ks/KsPinAttemptProcessing, stream.kspinattemptprocessing
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinAttemptProcessing
+title: KsPinAttemptProcessing function
+author: windows-driver-content
+description: The KsPinAttemptProcessing function is used to resume processing on a specific pin on a pin-centric filter. It attempts to initiate processing on Pin by sending a processing dispatch call to Pin's processing object.
+old-location: stream\kspinattemptprocessing.htm
+old-project: stream
+ms.assetid: 9b916114-85aa-4ab7-acaa-6b19d0a4d776
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_e17d5ad8-b0e3-4b5e-ab4c-a552f1650ed4.xml, KsPinAttemptProcessing function [Streaming Media Devices], KsPinAttemptProcessing, ks/KsPinAttemptProcessing, stream.kspinattemptprocessing
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinAttemptProcessing
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

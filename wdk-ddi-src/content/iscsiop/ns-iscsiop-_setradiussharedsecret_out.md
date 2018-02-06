@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetRADIUSSharedSecret_OUT
-title : "_SetRADIUSSharedSecret_OUT"
-author : windows-driver-content
-description : The SetRADIUSSharedSecret_OUT structure holds the output data for the SetRADIUSSharedSecret method.
-old-location : storage\setradiussharedsecret_out.htm
-old-project : storage
-ms.assetid : 55be7611-3249-4109-a142-c0115dfebb98
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_497fc66e-8a5d-4390-9229-622b359776bc.xml, SetRADIUSSharedSecret_OUT, storage.setradiussharedsecret_out, _SetRADIUSSharedSecret_OUT, iscsiop/SetRADIUSSharedSecret_OUT, *PSetRADIUSSharedSecret_OUT, PSetRADIUSSharedSecret_OUT structure pointer [Storage Devices], SetRADIUSSharedSecret_OUT structure [Storage Devices], PSetRADIUSSharedSecret_OUT, iscsiop/PSetRADIUSSharedSecret_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetRADIUSSharedSecret_OUT, SetRADIUSSharedSecret_OUT"
+UID: NS:iscsiop._SetRADIUSSharedSecret_OUT
+title: "_SetRADIUSSharedSecret_OUT"
+author: windows-driver-content
+description: The SetRADIUSSharedSecret_OUT structure holds the output data for the SetRADIUSSharedSecret method.
+old-location: storage\setradiussharedsecret_out.htm
+old-project: storage
+ms.assetid: 55be7611-3249-4109-a142-c0115dfebb98
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-iSCSI_497fc66e-8a5d-4390-9229-622b359776bc.xml, SetRADIUSSharedSecret_OUT, storage.setradiussharedsecret_out, _SetRADIUSSharedSecret_OUT, iscsiop/SetRADIUSSharedSecret_OUT, *PSetRADIUSSharedSecret_OUT, PSetRADIUSSharedSecret_OUT structure pointer [Storage Devices], SetRADIUSSharedSecret_OUT structure [Storage Devices], PSetRADIUSSharedSecret_OUT, iscsiop/PSetRADIUSSharedSecret_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetRADIUSSharedSecret_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PSetRADIUSSharedSecret_OUT, SetRADIUSSharedSecret_OUT"
 ---
 
 # _SetRADIUSSharedSecret_OUT structure

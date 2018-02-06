@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwFlushVirtualMemory
-title : ZwFlushVirtualMemory function
-author : windows-driver-content
-description : The ZwFlushVirtualMemory routine flushes a range of virtual addresses within the virtual address space of a specified process which map to a data file back out to the data file if they have been modified.
-old-location : kernel\zwflushvirtualmemory.htm
-old-project : kernel
-ms.assetid : 86e04896-2921-4f77-9bee-283ceb9a66bc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwFlushVirtualMemory, k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], NtFlushVirtualMemory, ntifs/ZwFlushVirtualMemory, kernel.zwflushvirtualmemory, ntifs/NtFlushVirtualMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwFlushVirtualMemory
+title: ZwFlushVirtualMemory function
+author: windows-driver-content
+description: The ZwFlushVirtualMemory routine flushes a range of virtual addresses within the virtual address space of a specified process which map to a data file back out to the data file if they have been modified.
+old-location: kernel\zwflushvirtualmemory.htm
+old-project: kernel
+ms.assetid: 86e04896-2921-4f77-9bee-283ceb9a66bc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwFlushVirtualMemory, k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], NtFlushVirtualMemory, ntifs/ZwFlushVirtualMemory, kernel.zwflushvirtualmemory, ntifs/NtFlushVirtualMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwFlushVirtualMemory
+-	NtFlushVirtualMemory
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

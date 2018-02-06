@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfmemory.WdfLookasideListCreate
-title : WdfLookasideListCreate function
-author : windows-driver-content
-description : The WdfLookasideListCreate method creates a lookaside-list object, from which the driver can obtain memory objects.
-old-location : wdf\wdflookasidelistcreate.htm
-old-project : wdf
-ms.assetid : 37fc86b0-de8c-469b-94bb-ad482b9c7202
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdflookasidelistcreate, kmdf.wdflookasidelistcreate, wdfmemory/WdfLookasideListCreate, WdfLookasideListCreate method, WdfLookasideListCreate, DFMemoryObjectRef_f5146f3e-a9ae-459c-9361-37a4f33edd67.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WdfLookasideListCreate
+title: WdfLookasideListCreate function
+author: windows-driver-content
+description: The WdfLookasideListCreate method creates a lookaside-list object, from which the driver can obtain memory objects.
+old-location: wdf\wdflookasidelistcreate.htm
+old-project: wdf
+ms.assetid: 37fc86b0-de8c-469b-94bb-ad482b9c7202
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdflookasidelistcreate, kmdf.wdflookasidelistcreate, wdfmemory/WdfLookasideListCreate, WdfLookasideListCreate method, WdfLookasideListCreate, DFMemoryObjectRef_f5146f3e-a9ae-459c-9361-37a4f33edd67.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfLookasideListCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

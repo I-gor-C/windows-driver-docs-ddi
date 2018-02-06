@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_DEVICE_STATE
-title : "_WDF_DEVICE_STATE"
-author : windows-driver-content
-description : The WDF_DEVICE_STATE structure specifies a device's Plug and Play state.
-old-location : wdf\wdf_device_state.htm
-old-project : wdf
-ms.assetid : 5d0a2303-df2b-45fe-9c88-df4bb19a2a9f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_device_state, DFDeviceObjectGeneralRef_a5705164-b38f-4307-8b7d-5b3156aadf62.xml, wdfdevice/PWDF_DEVICE_STATE, WDF_DEVICE_STATE structure, *PWDF_DEVICE_STATE, kmdf.wdf_device_state, wdfdevice/WDF_DEVICE_STATE, PWDF_DEVICE_STATE structure pointer, _WDF_DEVICE_STATE, PWDF_DEVICE_STATE, WDF_DEVICE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DEVICE_STATE, WDF_DEVICE_STATE"
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_DEVICE_STATE
+title: "_WDF_DEVICE_STATE"
+author: windows-driver-content
+description: The WDF_DEVICE_STATE structure specifies a device's Plug and Play state.
+old-location: wdf\wdf_device_state.htm
+old-project: wdf
+ms.assetid: 5d0a2303-df2b-45fe-9c88-df4bb19a2a9f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_device_state, DFDeviceObjectGeneralRef_a5705164-b38f-4307-8b7d-5b3156aadf62.xml, wdfdevice/PWDF_DEVICE_STATE, WDF_DEVICE_STATE structure, *PWDF_DEVICE_STATE, kmdf.wdf_device_state, wdfdevice/WDF_DEVICE_STATE, PWDF_DEVICE_STATE structure pointer, _WDF_DEVICE_STATE, PWDF_DEVICE_STATE, WDF_DEVICE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_DEVICE_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DEVICE_STATE, WDF_DEVICE_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_STATE structure

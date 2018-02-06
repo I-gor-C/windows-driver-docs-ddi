@@ -1,42 +1,47 @@
 ---
-UID : NC:strmini.PHW_EVENT_ROUTINE
-title : PHW_EVENT_ROUTINE
-author : windows-driver-content
-description : The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled.
-old-location : stream\strminievent.htm
-old-project : stream
-ms.assetid : 17f96498-3973-41f8-926d-85aa5f72de47
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.strminievent, StrMiniEvent routine [Streaming Media Devices], StrMiniEvent, PHW_EVENT_ROUTINE, PHW_EVENT_ROUTINE, strmini/StrMiniEvent, strmini-routines_048c6591-7f69-44c2-8aa1-db42b5d718e0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NC:strmini.PHW_EVENT_ROUTINE
+title: PHW_EVENT_ROUTINE
+author: windows-driver-content
+description: The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled.
+old-location: stream\strminievent.htm
+old-project: stream
+ms.assetid: 17f96498-3973-41f8-926d-85aa5f72de47
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.strminievent, StrMiniEvent routine [Streaming Media Devices], StrMiniEvent, PHW_EVENT_ROUTINE, PHW_EVENT_ROUTINE, strmini/StrMiniEvent, strmini-routines_048c6591-7f69-44c2-8aa1-db42b5d718e0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	strmini.h
+apiname:
+-	StrMiniEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 

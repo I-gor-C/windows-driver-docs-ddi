@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCurrentOplockH
-title : FltCurrentOplockH function
-author : windows-driver-content
-description : A minifilter driver calls the FltCurrentOplockH routine to determine whether there are any CACHE_HANDLE_LEVEL opportunistic locks (oplocks) on a file.
-old-location : ifsk\fltcurrentoplockh.htm
-old-project : ifsk
-ms.assetid : ee066013-99fb-4a43-82f9-edbad7b5a8e9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltcurrentoplockh, FltApiRef_a_to_d_0abdd89d-fe36-4546-a3bd-87d7d132f73e.xml, fltkernel/FltCurrentOplockH, FltCurrentOplockH routine [Installable File System Drivers], FltCurrentOplockH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltCurrentOplockH routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCurrentOplockH
+title: FltCurrentOplockH function
+author: windows-driver-content
+description: A minifilter driver calls the FltCurrentOplockH routine to determine whether there are any CACHE_HANDLE_LEVEL opportunistic locks (oplocks) on a file.
+old-location: ifsk\fltcurrentoplockh.htm
+old-project: ifsk
+ms.assetid: ee066013-99fb-4a43-82f9-edbad7b5a8e9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltcurrentoplockh, FltApiRef_a_to_d_0abdd89d-fe36-4546-a3bd-87d7d132f73e.xml, fltkernel/FltCurrentOplockH, FltCurrentOplockH routine [Installable File System Drivers], FltCurrentOplockH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltCurrentOplockH routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCurrentOplockH
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

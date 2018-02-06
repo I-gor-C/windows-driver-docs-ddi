@@ -1,41 +1,46 @@
 ---
-UID : NE:d3d9types._D3DRENDERSTATETYPE
-title : "_D3DRENDERSTATETYPE"
-author : windows-driver-content
-description : The D3DRENDERSTATETYPE enumerated type lists a variety of attributes, or render states.
-old-location : display\d3drenderstatetype.htm
-old-project : display
-ms.assetid : 82978b22-1538-4da0-bcf2-c4c52d2e3429
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRS_DELETERTPATCH, D3DRENDERSTATETYPE, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, D3DRS_DELETERTPATCH, d3d9types/D3DRENDERSTATE_SCENECAPTURE, _D3DRENDERSTATETYPE, enumeration [Display Devices], D3DRENDERSTATE_SCENECAPTURE, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRS_MAXVERTEXSHADERINST, d3d9types/, D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXVERTEXSHADERINST, display.d3drenderstatetype
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3d9types.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DRENDERSTATETYPE
+UID: NE:d3d9types._D3DRENDERSTATETYPE
+title: "_D3DRENDERSTATETYPE"
+author: windows-driver-content
+description: The D3DRENDERSTATETYPE enumerated type lists a variety of attributes, or render states.
+old-location: display\d3drenderstatetype.htm
+old-project: display
+ms.assetid: 82978b22-1538-4da0-bcf2-c4c52d2e3429
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRS_DELETERTPATCH, D3DRENDERSTATETYPE, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, D3DRS_DELETERTPATCH, d3d9types/D3DRENDERSTATE_SCENECAPTURE, _D3DRENDERSTATETYPE, enumeration [Display Devices], D3DRENDERSTATE_SCENECAPTURE, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRS_MAXVERTEXSHADERINST, d3d9types/, D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXVERTEXSHADERINST, display.d3drenderstatetype
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3d9types.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d9types.h
+apiname:
+-	D3DRENDERSTATETYPE
+product: Windows
+targetos: Windows
+req.typenames: D3DRENDERSTATETYPE
 ---
 
 # _D3DRENDERSTATETYPE Enumeration
@@ -57,531 +62,531 @@ enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DRS_ADAPTIVETESS_W</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ADAPTIVETESS_X</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ADAPTIVETESS_Y</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ADAPTIVETESS_Z</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ALPHABLENDENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ALPHAFUNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ALPHAREF</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ALPHATESTENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_AMBIENT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_AMBIENTMATERIALSOURCE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ANTIALIASEDLINEENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_BLENDFACTOR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_BLENDOP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_BLENDOPALPHA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CCW_STENCILFAIL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CCW_STENCILFUNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CCW_STENCILPASS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CCW_STENCILZFAIL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CLIPPING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CLIPPLANEENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_COLORVERTEX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_COLORWRITEENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_COLORWRITEENABLE1</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_COLORWRITEENABLE2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_COLORWRITEENABLE3</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_CULLMODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_DEBUGMONITORTOKEN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_DEPTHBIAS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_DESTBLEND</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_DESTBLENDALPHA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_DIFFUSEMATERIALSOURCE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_DITHERENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_EMISSIVEMATERIALSOURCE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ENABLEADAPTIVETESSELLATION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FILLMODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGCOLOR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGDENSITY</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGEND</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGSTART</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGTABLEMODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FOGVERTEXMODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_FORCE_DWORD</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_INDEXEDVERTEXBLENDENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_LASTPIXEL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_LIGHTING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_LOCALVIEWER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_MAXTESSELLATIONLEVEL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_MINTESSELLATIONLEVEL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_MULTISAMPLEANTIALIAS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_MULTISAMPLEMASK</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_NORMALDEGREE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_NORMALIZENORMALS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_PATCHEDGESTYLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSCALE_A</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSCALE_B</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSCALE_C</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSCALEENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSIZE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSIZE_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSIZE_MIN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POINTSPRITEENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_POSITIONDEGREE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_RANGEFOGENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SCISSORTESTENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SEPARATEALPHABLENDENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SHADEMODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SLOPESCALEDEPTHBIAS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SPECULARENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SPECULARMATERIALSOURCE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SRCBLEND</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SRCBLENDALPHA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_SRGBWRITEENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILFAIL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILFUNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILMASK</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILPASS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILREF</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILWRITEMASK</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_STENCILZFAIL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_TEXTUREFACTOR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_TWEENFACTOR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_TWOSIDEDSTENCILMODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_VERTEXBLEND</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP0</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP1</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP10</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP11</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP12</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP13</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP14</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP15</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP3</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP4</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP5</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP6</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP7</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP8</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_WRAP9</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ZENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ZFUNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DRS_ZWRITEENABLE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>D3DRS_ADAPTIVETESS_W</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ADAPTIVETESS_X</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ADAPTIVETESS_Y</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ADAPTIVETESS_Z</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ALPHABLENDENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ALPHAFUNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ALPHAREF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ALPHATESTENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_AMBIENT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_AMBIENTMATERIALSOURCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ANTIALIASEDLINEENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_BLENDFACTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_BLENDOP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_BLENDOPALPHA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CCW_STENCILFAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CCW_STENCILFUNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CCW_STENCILPASS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CCW_STENCILZFAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CLIPPING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CLIPPLANEENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_COLORVERTEX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_COLORWRITEENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_COLORWRITEENABLE1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_COLORWRITEENABLE2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_COLORWRITEENABLE3</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_CULLMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_DEBUGMONITORTOKEN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_DEPTHBIAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_DESTBLEND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_DESTBLENDALPHA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_DIFFUSEMATERIALSOURCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_DITHERENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_EMISSIVEMATERIALSOURCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ENABLEADAPTIVETESSELLATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FILLMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGCOLOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGDENSITY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGEND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGSTART</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGTABLEMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FOGVERTEXMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_FORCE_DWORD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_INDEXEDVERTEXBLENDENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_LASTPIXEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_LIGHTING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_LOCALVIEWER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_MAXTESSELLATIONLEVEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_MINTESSELLATIONLEVEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_MULTISAMPLEANTIALIAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_MULTISAMPLEMASK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_NORMALDEGREE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_NORMALIZENORMALS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_PATCHEDGESTYLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSCALE_A</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSCALE_B</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSCALE_C</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSCALEENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSIZE_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSIZE_MIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POINTSPRITEENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_POSITIONDEGREE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_RANGEFOGENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SCISSORTESTENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SEPARATEALPHABLENDENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SHADEMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SLOPESCALEDEPTHBIAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SPECULARENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SPECULARMATERIALSOURCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SRCBLEND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SRCBLENDALPHA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_SRGBWRITEENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILFAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILFUNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILMASK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILPASS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILREF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILWRITEMASK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_STENCILZFAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_TEXTUREFACTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_TWEENFACTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_TWOSIDEDSTENCILMODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_VERTEXBLEND</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP0</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP10</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP11</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP12</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP13</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP14</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP15</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP3</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP4</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP5</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP6</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP7</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP8</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_WRAP9</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ZENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ZFUNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DRS_ZWRITEENABLE</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The driver uses these render states when it performs graphics rendering. Only render states that are specific to drivers are included in the Windows Driver Kit (WDK) documentation. The render states accessible to DirectX applications are included in the DirectX SDK documentation. These application-level render states include such characteristics as whether alpha blending is enabled, whether dithering is enabled, whether Direct3D lighting is used, and the type of shading to be used. 
+        The driver uses these render states when it performs graphics rendering. Only render states that are specific to drivers are included in the Windows Driver Kit (WDK) documentation. The render states accessible to DirectX applications are included in the DirectX SDK documentation. These application-level render states include such characteristics as whether alpha blending is enabled, whether dithering is enabled, whether Direct3D lighting is used, and the type of shading to be used. 
 
 To update a particular render state, Direct3D stores information about the render state, and then calls the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback routine. The information provided to the driver enables it to:
 <ul>

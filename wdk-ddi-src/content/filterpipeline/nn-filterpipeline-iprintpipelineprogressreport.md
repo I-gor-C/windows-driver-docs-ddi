@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IPrintPipelineProgressReport
-title : IPrintPipelineProgressReport
-author : windows-driver-content
-description : A rendering filter uses the IPrintPipelineProgressReport interface to send progress status to a spooler.
-old-location : print\iprintpipelineprogressreport.htm
-old-project : print
-ms.assetid : 7a2644af-fdfe-4481-8c44-c40244b8a00e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintpipelineprogressreport, IPrintPipelineProgressReport interface [Print Devices], IPrintPipelineProgressReport interface [Print Devices], described, IPrintPipelineProgressReport, filterpipeline/IPrintPipelineProgressReport, filterpipeline_de104fc6-8ac2-4a10-ab09-09596a093835.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IPrintPipelineProgressReport
+title: IPrintPipelineProgressReport
+author: windows-driver-content
+description: A rendering filter uses the IPrintPipelineProgressReport interface to send progress status to a spooler.
+old-location: print\iprintpipelineprogressreport.htm
+old-project: print
+ms.assetid: 7a2644af-fdfe-4481-8c44-c40244b8a00e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintpipelineprogressreport, IPrintPipelineProgressReport interface [Print Devices], IPrintPipelineProgressReport interface [Print Devices], described, IPrintPipelineProgressReport, filterpipeline/IPrintPipelineProgressReport, filterpipeline_de104fc6-8ac2-4a10-ab09-09596a093835.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPrintPipelineProgressReport
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintPipelineProgressReport interface

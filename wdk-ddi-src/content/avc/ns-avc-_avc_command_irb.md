@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_COMMAND_IRB
-title : "_AVC_COMMAND_IRB"
-author : windows-driver-content
-description : The AVC_COMMAND_IRB structure defines a structure that contains an AV/C command and response pair.
-old-location : stream\avc_command_irb.htm
-old-project : stream
-ms.assetid : 0aefbce4-a838-40c4-b31f-ff8dd13621f7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avcref_1f88c208-64b9-40d1-9048-d10b105b5569.xml, AVC_COMMAND_IRB structure [Streaming Media Devices], avc/PAVC_COMMAND_IRB, PAVC_COMMAND_IRB, AVC_COMMAND_IRB, _AVC_COMMAND_IRB, *PAVC_COMMAND_IRB, PAVC_COMMAND_IRB structure pointer [Streaming Media Devices], avc/AVC_COMMAND_IRB, stream.avc_command_irb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_COMMAND_IRB, *PAVC_COMMAND_IRB
+UID: NS:avc._AVC_COMMAND_IRB
+title: "_AVC_COMMAND_IRB"
+author: windows-driver-content
+description: The AVC_COMMAND_IRB structure defines a structure that contains an AV/C command and response pair.
+old-location: stream\avc_command_irb.htm
+old-project: stream
+ms.assetid: 0aefbce4-a838-40c4-b31f-ff8dd13621f7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avcref_1f88c208-64b9-40d1-9048-d10b105b5569.xml, AVC_COMMAND_IRB structure [Streaming Media Devices], avc/PAVC_COMMAND_IRB, PAVC_COMMAND_IRB, AVC_COMMAND_IRB, _AVC_COMMAND_IRB, *PAVC_COMMAND_IRB, PAVC_COMMAND_IRB structure pointer [Streaming Media Devices], avc/AVC_COMMAND_IRB, stream.avc_command_irb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_COMMAND_IRB
+product: Windows
+targetos: Windows
+req.typenames: AVC_COMMAND_IRB, *PAVC_COMMAND_IRB
 ---
 
 # _AVC_COMMAND_IRB structure

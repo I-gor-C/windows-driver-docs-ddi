@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportPnpNotify
-title : IMiniportPnpNotify
-author : windows-driver-content
-description : IMiniportPnpNotify is an optional interface to allow miniport objects (audio subdevices) to receive PnP state change notifications.
-old-location : audio\iminiportpnpnotify.htm
-old-project : audio
-ms.assetid : 634ADB7C-85B6-4C37-81A0-4A4891D0BBC4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportpnpnotify, IMiniportPnpNotify interface [Audio Devices], IMiniportPnpNotify interface [Audio Devices], described, IMiniportPnpNotify, portcls/IMiniportPnpNotify
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportPnpNotify
+title: IMiniportPnpNotify
+author: windows-driver-content
+description: IMiniportPnpNotify is an optional interface to allow miniport objects (audio subdevices) to receive PnP state change notifications.
+old-location: audio\iminiportpnpnotify.htm
+old-project: audio
+ms.assetid: 634ADB7C-85B6-4C37-81A0-4A4891D0BBC4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportpnpnotify, IMiniportPnpNotify interface [Audio Devices], IMiniportPnpNotify interface [Audio Devices], described, IMiniportPnpNotify, portcls/IMiniportPnpNotify
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportPnpNotify
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportPnpNotify interface

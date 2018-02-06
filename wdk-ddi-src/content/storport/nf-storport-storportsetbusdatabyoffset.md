@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortSetBusDataByOffset
-title : StorPortSetBusDataByOffset function
-author : windows-driver-content
-description : The StorPortSetBusDataByOffset routine writes bus-specific configuration information.
-old-location : storage\storportsetbusdatabyoffset.htm
-old-project : storage
-ms.assetid : ec1db013-b630-421b-8d22-385a2d9b9510
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportsetbusdatabyoffset, storport/StorPortSetBusDataByOffset, storprt_ebb2afc1-b190-4674-8ee7-bd61953565ab.xml, StorPortSetBusDataByOffset, StorPortSetBusDataByOffset routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortSetBusDataByOffset
+title: StorPortSetBusDataByOffset function
+author: windows-driver-content
+description: The StorPortSetBusDataByOffset routine writes bus-specific configuration information.
+old-location: storage\storportsetbusdatabyoffset.htm
+old-project: storage
+ms.assetid: ec1db013-b630-421b-8d22-385a2d9b9510
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportsetbusdatabyoffset, storport/StorPortSetBusDataByOffset, storprt_ebb2afc1-b190-4674-8ee7-bd61953565ab.xml, StorPortSetBusDataByOffset, StorPortSetBusDataByOffset routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortSetBusDataByOffset
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

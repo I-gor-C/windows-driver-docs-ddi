@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._ACL
-title : "_ACL"
-author : windows-driver-content
-description : The ACL structure is the header of an access-control list (ACL). A complete ACL consists of an ACL structure followed by an ordered list of zero or more access-control entries (ACE).
-old-location : ifsk\acl.htm
-old-project : ifsk
-ms.assetid : dac27df2-fabd-4402-8daf-9317888dd30b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : wdm/PACL, *PACL, wdm/ACL, securitystructures_a41770ca-4016-400f-8626-e6c8dc92642e.xml, PACL, ACL structure [Installable File System Drivers], _ACL, PACL structure pointer [Installable File System Drivers], ifsk.acl, ACL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACL
-req.product : Windows 10 or later.
+UID: NS:wdm._ACL
+title: "_ACL"
+author: windows-driver-content
+description: The ACL structure is the header of an access-control list (ACL). A complete ACL consists of an ACL structure followed by an ordered list of zero or more access-control entries (ACE).
+old-location: ifsk\acl.htm
+old-project: ifsk
+ms.assetid: dac27df2-fabd-4402-8daf-9317888dd30b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: wdm/PACL, *PACL, wdm/ACL, securitystructures_a41770ca-4016-400f-8626-e6c8dc92642e.xml, PACL, ACL structure [Installable File System Drivers], _ACL, PACL structure pointer [Installable File System Drivers], ifsk.acl, ACL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	ACL
+product: Windows
+targetos: Windows
+req.typenames: ACL
+req.product: Windows 10 or later.
 ---
 
 # _ACL structure

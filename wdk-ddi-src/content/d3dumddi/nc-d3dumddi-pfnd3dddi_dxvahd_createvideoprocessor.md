@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR
-title : PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR
-author : windows-driver-content
-description : The CreateVideoProcessor function creates a Microsoft DirectX Video Acceleration (DirectX VA) video processor that is used to process high-definition video.
-old-location : display\createvideoprocessor.htm
-old-project : display
-ms.assetid : 68a7c394-4b0f-4446-a54b-5aee6cf8a913
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createvideoprocessor, CreateVideoProcessor callback function [Display Devices], CreateVideoProcessor, PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR, PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR, d3dumddi/CreateVideoProcessor, UserModeDisplayDriver_Functions_ce6a0d51-9da3-43d9-ac23-c2e250ca4cfa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateVideoProcessor is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR
+title: PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR
+author: windows-driver-content
+description: The CreateVideoProcessor function creates a Microsoft DirectX Video Acceleration (DirectX VA) video processor that is used to process high-definition video.
+old-location: display\createvideoprocessor.htm
+old-project: display
+ms.assetid: 68a7c394-4b0f-4446-a54b-5aee6cf8a913
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createvideoprocessor, CreateVideoProcessor callback function [Display Devices], CreateVideoProcessor, PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR, PFND3DDDI_DXVAHD_CREATEVIDEOPROCESSOR, d3dumddi/CreateVideoProcessor, UserModeDisplayDriver_Functions_ce6a0d51-9da3-43d9-ac23-c2e250ca4cfa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateVideoProcessor is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateVideoProcessor
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

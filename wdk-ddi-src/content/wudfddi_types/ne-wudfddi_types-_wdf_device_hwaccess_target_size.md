@@ -1,42 +1,48 @@
 ---
-UID : NE:wudfddi_types._WDF_DEVICE_HWACCESS_TARGET_SIZE
-title : "_WDF_DEVICE_HWACCESS_TARGET_SIZE"
-author : windows-driver-content
-description : The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use.
-old-location : wdf\wdf_device_hwaccess_target_size.htm
-old-project : wdf
-ms.assetid : C675431E-6213-4FA8-86DB-65FE6EE90853
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceHwAccessTargetSizeMaximum, wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetSizeUchar, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetSizeUlong, PWDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetSizeMaximum, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WdfDeviceHwAccessTargetSizeUlong, WDF_DEVICE_HWACCESS_TARGET_TYPE, umdf.wdf_device_hwaccess_target_size, wdfdevice/WdfDeviceHwAccessTargetSizeUlong64, wudfddi_types/WdfDeviceHwAccessTargetSizeUshort, *PWDF_DEVICE_HWACCESS_TARGET_SIZE, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong64, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetSizeInvalid, wdfdevice/WdfDeviceHwAccessTargetSizeUchar, WdfDeviceHwAccessTargetSizeInvalid, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, WDF_DEVICE_HWACCESS_TARGET_SIZE, wdf.wdf_device_hwaccess_target_size, _WDF_DEVICE_HWACCESS_TARGET_SIZE, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong, wdfdevice/WdfDeviceHwAccessTargetSizeInvalid, wudfddi_types/WdfDeviceHwAccessTargetSizeUchar, WdfDeviceHwAccessTargetSizeUlong64, wdfdevice/WdfDeviceHwAccessTargetSizeMaximum, wdfdevice/WdfDeviceHwAccessTargetSizeUshort, WdfDeviceHwAccessTargetSizeUshort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DEVICE_HWACCESS_TARGET_SIZE, WDF_DEVICE_HWACCESS_TARGET_SIZE"
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_DEVICE_HWACCESS_TARGET_SIZE
+title: "_WDF_DEVICE_HWACCESS_TARGET_SIZE"
+author: windows-driver-content
+description: The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use.
+old-location: wdf\wdf_device_hwaccess_target_size.htm
+old-project: wdf
+ms.assetid: C675431E-6213-4FA8-86DB-65FE6EE90853
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceHwAccessTargetSizeMaximum, wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetSizeUchar, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetSizeUlong, PWDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetSizeMaximum, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WdfDeviceHwAccessTargetSizeUlong, WDF_DEVICE_HWACCESS_TARGET_TYPE, umdf.wdf_device_hwaccess_target_size, wdfdevice/WdfDeviceHwAccessTargetSizeUlong64, wudfddi_types/WdfDeviceHwAccessTargetSizeUshort, *PWDF_DEVICE_HWACCESS_TARGET_SIZE, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong64, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetSizeInvalid, wdfdevice/WdfDeviceHwAccessTargetSizeUchar, WdfDeviceHwAccessTargetSizeInvalid, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, WDF_DEVICE_HWACCESS_TARGET_SIZE, wdf.wdf_device_hwaccess_target_size, _WDF_DEVICE_HWACCESS_TARGET_SIZE, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong, wdfdevice/WdfDeviceHwAccessTargetSizeInvalid, wudfddi_types/WdfDeviceHwAccessTargetSizeUchar, WdfDeviceHwAccessTargetSizeUlong64, wdfdevice/WdfDeviceHwAccessTargetSizeMaximum, wdfdevice/WdfDeviceHwAccessTargetSizeUshort, WdfDeviceHwAccessTargetSizeUshort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+-	wudfddi_types.h
+apiname:
+-	WDF_DEVICE_HWACCESS_TARGET_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DEVICE_HWACCESS_TARGET_SIZE, WDF_DEVICE_HWACCESS_TARGET_SIZE"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_HWACCESS_TARGET_SIZE Enumeration
@@ -59,36 +65,36 @@ typedef enum __WDF_IO_TARGET_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfDeviceHwAccessTargetSizeInvalid</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetSizeMaximum</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetSizeUchar</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetSizeUlong</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetSizeUlong64</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetSizeUshort</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetSizeInvalid</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetSizeMaximum</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetSizeUchar</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetSizeUlong</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetSizeUlong64</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetSizeUshort</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -98,9 +104,9 @@ typedef enum __WDF_IO_TARGET_STATE {
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_types.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
 
  
 

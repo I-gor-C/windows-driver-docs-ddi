@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInitializeGuardedMutex
-title : KeInitializeGuardedMutex function
-author : windows-driver-content
-description : The KeInitializeGuardedMutex routine initializes a guarded mutex.
-old-location : kernel\keinitializeguardedmutex.htm
-old-project : kernel
-ms.assetid : 28d45b36-c20d-40a5-bdf9-5fb754e36e74
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeInitializeGuardedMutex, kernel.keinitializeguardedmutex, KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml, wdm/KeInitializeGuardedMutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInitializeGuardedMutex
+title: KeInitializeGuardedMutex function
+author: windows-driver-content
+description: The KeInitializeGuardedMutex routine initializes a guarded mutex.
+old-location: kernel\keinitializeguardedmutex.htm
+old-project: kernel
+ms.assetid: 28d45b36-c20d-40a5-bdf9-5fb754e36e74
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeInitializeGuardedMutex, kernel.keinitializeguardedmutex, KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml, wdm/KeInitializeGuardedMutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeGuardedMutex
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

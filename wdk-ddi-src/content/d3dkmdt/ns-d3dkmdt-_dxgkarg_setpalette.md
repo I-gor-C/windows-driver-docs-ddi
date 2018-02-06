@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKARG_SETPALETTE
-title : "_DXGKARG_SETPALETTE"
-author : windows-driver-content
-description : The DXGKARG_SETPALETTE structure describes the palette to set for a display.
-old-location : display\dxgkarg_setpalette.htm
-old-project : display
-ms.assetid : a76d9549-d182-437f-a570-7d24fd6a5488
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/DXGKARG_SETPALETTE, DmStructs_d5720608-bc3d-437a-b080-6cd8b9635391.xml, DXGKARG_SETPALETTE, display.dxgkarg_setpalette, DXGKARG_SETPALETTE structure [Display Devices], _DXGKARG_SETPALETTE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETPALETTE
+UID: NS:d3dkmdt._DXGKARG_SETPALETTE
+title: "_DXGKARG_SETPALETTE"
+author: windows-driver-content
+description: The DXGKARG_SETPALETTE structure describes the palette to set for a display.
+old-location: display\dxgkarg_setpalette.htm
+old-project: display
+ms.assetid: a76d9549-d182-437f-a570-7d24fd6a5488
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/DXGKARG_SETPALETTE, DmStructs_d5720608-bc3d-437a-b080-6cd8b9635391.xml, DXGKARG_SETPALETTE, display.dxgkarg_setpalette, DXGKARG_SETPALETTE structure [Display Devices], _DXGKARG_SETPALETTE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKARG_SETPALETTE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETPALETTE
 ---
 
 # _DXGKARG_SETPALETTE structure

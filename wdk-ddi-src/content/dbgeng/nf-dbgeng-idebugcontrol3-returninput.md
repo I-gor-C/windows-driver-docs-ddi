@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.ReturnInput
-title : IDebugControl3::ReturnInput method
-author : windows-driver-content
-description : The ReturnInput method is used by IDebugInputCallbacks objects to send an input string to the engine following a request for input.
-old-location : debugger\returninput.htm
-old-project : debugger
-ms.assetid : 1f4c63da-8583-4382-a208-8279b4fe0906
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_e060c1a6-43cd-46a1-ba4c-e9aa69bcf205.xml, ReturnInput method [Windows Debugging], ReturnInput method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], ReturnInput method, dbgeng/IDebugControl2::ReturnInput, ReturnInput method [Windows Debugging], IDebugControl2 interface, IDebugControl2::ReturnInput, dbgeng/IDebugControl::ReturnInput, IDebugControl3, ReturnInput, IDebugControl2 interface [Windows Debugging], ReturnInput method, ReturnInput method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], ReturnInput method, debugger.returninput, dbgeng/IDebugControl3::ReturnInput, IDebugControl::ReturnInput, IDebugControl3::ReturnInput
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.ReturnInput
+title: IDebugControl3::ReturnInput method
+author: windows-driver-content
+description: The ReturnInput method is used by IDebugInputCallbacks objects to send an input string to the engine following a request for input.
+old-location: debugger\returninput.htm
+old-project: debugger
+ms.assetid: 1f4c63da-8583-4382-a208-8279b4fe0906
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_e060c1a6-43cd-46a1-ba4c-e9aa69bcf205.xml, ReturnInput method [Windows Debugging], ReturnInput method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], ReturnInput method, dbgeng/IDebugControl2::ReturnInput, ReturnInput method [Windows Debugging], IDebugControl2 interface, IDebugControl2::ReturnInput, dbgeng/IDebugControl::ReturnInput, IDebugControl3, ReturnInput, IDebugControl2 interface [Windows Debugging], ReturnInput method, ReturnInput method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], ReturnInput method, debugger.returninput, dbgeng/IDebugControl3::ReturnInput, IDebugControl::ReturnInput, IDebugControl3::ReturnInput
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.ReturnInput
+-	IDebugControl2.ReturnInput
+-	IDebugControl3.ReturnInput
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

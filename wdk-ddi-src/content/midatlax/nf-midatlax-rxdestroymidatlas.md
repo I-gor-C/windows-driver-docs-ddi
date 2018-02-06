@@ -1,41 +1,46 @@
 ---
-UID : NF:midatlax.RxDestroyMidAtlas
-title : RxDestroyMidAtlas function
-author : windows-driver-content
-description : RxDestroyMidAtlas destroys an existing instance of a MID_ATLAS data structure and frees the allocated memory.
-old-location : ifsk\rxdestroymidatlas.htm
-old-project : ifsk
-ms.assetid : 9d5c08c8-8306-46e3-b10b-eeefe473d340
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxdestroymidatlas, rxref_3a954108-5744-4b47-87b7-7553d64ec038.xml, RxDestroyMidAtlas function [Installable File System Drivers], RxDestroyMidAtlas, midatlax/RxDestroyMidAtlas
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : midatlax.h
-req.include-header : Midatlax.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
+UID: NF:midatlax.RxDestroyMidAtlas
+title: RxDestroyMidAtlas function
+author: windows-driver-content
+description: RxDestroyMidAtlas destroys an existing instance of a MID_ATLAS data structure and frees the allocated memory.
+old-location: ifsk\rxdestroymidatlas.htm
+old-project: ifsk
+ms.assetid: 9d5c08c8-8306-46e3-b10b-eeefe473d340
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxdestroymidatlas, rxref_3a954108-5744-4b47-87b7-7553d64ec038.xml, RxDestroyMidAtlas function [Installable File System Drivers], RxDestroyMidAtlas, midatlax/RxDestroyMidAtlas
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: midatlax.h
+req.include-header: Midatlax.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	midatlax.h
+apiname:
+-	RxDestroyMidAtlas
+product: Windows
+targetos: Windows
+req.typenames: "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 

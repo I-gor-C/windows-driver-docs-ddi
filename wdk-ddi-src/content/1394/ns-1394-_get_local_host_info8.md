@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._GET_LOCAL_HOST_INFO8
-title : "_GET_LOCAL_HOST_INFO8"
-author : windows-driver-content
-description : The GET_LOCAL_HOST_INFO8 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DDI_VERSION.
-old-location : ieee\get_local_host_info8.htm
-old-project : IEEE
-ms.assetid : DA30F8BA-B920-458E-B7C7-8D7B7081507A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8 structure pointer [Buses], _GET_LOCAL_HOST_INFO8, IEEE.get_local_host_info8, GET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8 structure [Buses], 1394/PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8, 1394/GET_LOCAL_HOST_INFO8"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8
+UID: NS:1394._GET_LOCAL_HOST_INFO8
+title: "_GET_LOCAL_HOST_INFO8"
+author: windows-driver-content
+description: The GET_LOCAL_HOST_INFO8 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DDI_VERSION.
+old-location: ieee\get_local_host_info8.htm
+old-project: IEEE
+ms.assetid: DA30F8BA-B920-458E-B7C7-8D7B7081507A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8 structure pointer [Buses], _GET_LOCAL_HOST_INFO8, IEEE.get_local_host_info8, GET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8 structure [Buses], 1394/PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8, 1394/GET_LOCAL_HOST_INFO8"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	GET_LOCAL_HOST_INFO8
+product: Windows
+targetos: Windows
+req.typenames: GET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8
 ---
 
 # _GET_LOCAL_HOST_INFO8 structure

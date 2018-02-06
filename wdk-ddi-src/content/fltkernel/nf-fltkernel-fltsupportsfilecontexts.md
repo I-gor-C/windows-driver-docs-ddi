@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSupportsFileContexts
-title : FltSupportsFileContexts function
-author : windows-driver-content
-description : The FltSupportsFileContexts routine determines whether the file system supports file contexts for a given file.
-old-location : ifsk\fltsupportsfilecontexts.htm
-old-project : ifsk
-ms.assetid : 968c2c6d-3544-45e7-b852-740fa4930349
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSupportsFileContexts, FltSupportsFileContexts routine [Installable File System Drivers], FltApiRef_p_to_z_cad3f45c-7ae0-44dc-840d-a8ec3da65ea6.xml, FltSupportsFileContexts, ifsk.fltsupportsfilecontexts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSupportsFileContexts
+title: FltSupportsFileContexts function
+author: windows-driver-content
+description: The FltSupportsFileContexts routine determines whether the file system supports file contexts for a given file.
+old-location: ifsk\fltsupportsfilecontexts.htm
+old-project: ifsk
+ms.assetid: 968c2c6d-3544-45e7-b852-740fa4930349
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltSupportsFileContexts, FltSupportsFileContexts routine [Installable File System Drivers], FltApiRef_p_to_z_cad3f45c-7ae0-44dc-840d-a8ec3da65ea6.xml, FltSupportsFileContexts, ifsk.fltsupportsfilecontexts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSupportsFileContexts
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_ExtendedFormat
-title : "_DXVA_ExtendedFormat"
-author : windows-driver-content
-description : The DXVA_ExtendedFormat structure describes the extended format of the video frame.
-old-location : display\dxva_extendedformat.htm
-old-project : display
-ms.assetid : b4d01c1f-8267-490e-a808-87d9be666a94
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxvaref_3e46e283-492a-4ec5-8213-ff05215b0676.xml, dxva/DXVA_ExtendedFormat, DXVA_ExtendedFormat, DXVA_ExtendedFormat structure [Display Devices], display.dxva_extendedformat, _DXVA_ExtendedFormat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_ExtendedFormat
+UID: NS:dxva._DXVA_ExtendedFormat
+title: "_DXVA_ExtendedFormat"
+author: windows-driver-content
+description: The DXVA_ExtendedFormat structure describes the extended format of the video frame.
+old-location: display\dxva_extendedformat.htm
+old-project: display
+ms.assetid: b4d01c1f-8267-490e-a808-87d9be666a94
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxvaref_3e46e283-492a-4ec5-8213-ff05215b0676.xml, dxva/DXVA_ExtendedFormat, DXVA_ExtendedFormat, DXVA_ExtendedFormat structure [Display Devices], display.dxva_extendedformat, _DXVA_ExtendedFormat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_ExtendedFormat
+product: Windows
+targetos: Windows
+req.typenames: DXVA_ExtendedFormat
 ---
 
 # _DXVA_ExtendedFormat structure

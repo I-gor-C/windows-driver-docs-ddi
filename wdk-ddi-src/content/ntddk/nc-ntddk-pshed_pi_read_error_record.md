@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_READ_ERROR_RECORD
-title : PSHED_PI_READ_ERROR_RECORD
-author : windows-driver-content
-description : A PSHED plug-in's ReadErrorRecord callback function reads an error record from the system's persistent data storage.
-old-location : whea\readerrorrecord.htm
-old-project : whea
-ms.assetid : 2fcbdfe3-bcce-4e5b-a16b-501612975e82
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.readerrorrecord, ReadErrorRecord callback function [WHEA Drivers and Applications], ReadErrorRecord, PSHED_PI_READ_ERROR_RECORD, PSHED_PI_READ_ERROR_RECORD, ntddk/ReadErrorRecord, whearef_ec353a58-1ca7-4356-8651-52802d855582.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_READ_ERROR_RECORD
+title: PSHED_PI_READ_ERROR_RECORD
+author: windows-driver-content
+description: A PSHED plug-in's ReadErrorRecord callback function reads an error record from the system's persistent data storage.
+old-location: whea\readerrorrecord.htm
+old-project: whea
+ms.assetid: 2fcbdfe3-bcce-4e5b-a16b-501612975e82
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.readerrorrecord, ReadErrorRecord callback function [WHEA Drivers and Applications], ReadErrorRecord, PSHED_PI_READ_ERROR_RECORD, PSHED_PI_READ_ERROR_RECORD, ntddk/ReadErrorRecord, whearef_ec353a58-1ca7-4356-8651-52802d855582.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	ReadErrorRecord
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

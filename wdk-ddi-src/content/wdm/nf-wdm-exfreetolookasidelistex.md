@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExFreeToLookasideListEx
-title : ExFreeToLookasideListEx function
-author : windows-driver-content
-description : The ExFreeToLookasideListEx routine inserts an entry into a lookaside list, or, if the list is full, frees the allocated storage for the entry.
-old-location : kernel\exfreetolookasidelistex.htm
-old-project : kernel
-ms.assetid : 37057400-7f4d-4274-b1ef-f03771cae34f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExFreeToLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exfreetolookasidelistex, ExFreeToLookasideListEx, k102_2d275628-4a0f-4da8-a512-60a0998d8c5b.xml, wdm/ExFreeToLookasideListEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExFreeToLookasideListEx
+title: ExFreeToLookasideListEx function
+author: windows-driver-content
+description: The ExFreeToLookasideListEx routine inserts an entry into a lookaside list, or, if the list is full, frees the allocated storage for the entry.
+old-location: kernel\exfreetolookasidelistex.htm
+old-project: kernel
+ms.assetid: 37057400-7f4d-4274-b1ef-f03771cae34f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExFreeToLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exfreetolookasidelistex, ExFreeToLookasideListEx, k102_2d275628-4a0f-4da8-a512-60a0998d8c5b.xml, wdm/ExFreeToLookasideListEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExFreeToLookasideListEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

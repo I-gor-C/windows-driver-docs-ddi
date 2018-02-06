@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAllocateObjectCreateItem
-title : KsAllocateObjectCreateItem function
-author : windows-driver-content
-description : The KsAllocateObjectCreateItem function allocates a slot for the specified create item, optionally allocating space for and copying the create item data as well.
-old-location : stream\ksallocateobjectcreateitem.htm
-old-project : stream
-ms.assetid : 43c3894c-5568-4cba-80ed-1d4e4388547b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsAllocateObjectCreateItem, KsAllocateObjectCreateItem, ksfunc_57773cdc-d649-4381-9841-deba5beddf73.xml, stream.ksallocateobjectcreateitem, KsAllocateObjectCreateItem function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAllocateObjectCreateItem
+title: KsAllocateObjectCreateItem function
+author: windows-driver-content
+description: The KsAllocateObjectCreateItem function allocates a slot for the specified create item, optionally allocating space for and copying the create item data as well.
+old-location: stream\ksallocateobjectcreateitem.htm
+old-project: stream
+ms.assetid: 43c3894c-5568-4cba-80ed-1d4e4388547b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsAllocateObjectCreateItem, KsAllocateObjectCreateItem, ksfunc_57773cdc-d649-4381-9841-deba5beddf73.xml, stream.ksallocateobjectcreateitem, KsAllocateObjectCreateItem function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAllocateObjectCreateItem
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

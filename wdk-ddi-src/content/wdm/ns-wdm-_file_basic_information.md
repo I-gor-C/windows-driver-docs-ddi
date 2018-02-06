@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._FILE_BASIC_INFORMATION
-title : "_FILE_BASIC_INFORMATION"
-author : windows-driver-content
-description : The FILE_BASIC_INFORMATION structure is used as an argument to routines that query or set file information.
-old-location : kernel\file_basic_information.htm
-old-project : kernel
-ms.assetid : 8f79a3cf-9bc7-4135-a90e-d9dce86cf5f6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PFILE_BASIC_INFORMATION, PFILE_BASIC_INFORMATION, _FILE_BASIC_INFORMATION, wdm/PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_BASIC_INFORMATION, wdm/FILE_BASIC_INFORMATION, kernel.file_basic_information, kstruct_b_3de98e8c-d842-45e9-a9bd-948276ef1b87.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._FILE_BASIC_INFORMATION
+title: "_FILE_BASIC_INFORMATION"
+author: windows-driver-content
+description: The FILE_BASIC_INFORMATION structure is used as an argument to routines that query or set file information.
+old-location: kernel\file_basic_information.htm
+old-project: kernel
+ms.assetid: 8f79a3cf-9bc7-4135-a90e-d9dce86cf5f6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PFILE_BASIC_INFORMATION, PFILE_BASIC_INFORMATION, _FILE_BASIC_INFORMATION, wdm/PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_BASIC_INFORMATION, wdm/FILE_BASIC_INFORMATION, kernel.file_basic_information, kstruct_b_3de98e8c-d842-45e9-a9bd-948276ef1b87.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	FILE_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _FILE_BASIC_INFORMATION structure

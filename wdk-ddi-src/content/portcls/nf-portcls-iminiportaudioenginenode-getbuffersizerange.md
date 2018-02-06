@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetBufferSizeRange
-title : IMiniportAudioEngineNode::GetBufferSizeRange method
-author : windows-driver-content
-description : Gets the minimum and maximum buffer size that the hardware audio engine can support.
-old-location : audio\iminiportaudioenginenode_getbuffersizerange.htm
-old-project : audio
-ms.assetid : 75CBDD4F-618F-4618-9D53-4A8DF40992B0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetBufferSizeRange method, IMiniportAudioEngineNode::GetBufferSizeRange, GetBufferSizeRange method [Audio Devices], GetBufferSizeRange method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getbuffersizerange, GetBufferSizeRange, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode::GetBufferSizeRange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetBufferSizeRange
+title: IMiniportAudioEngineNode::GetBufferSizeRange method
+author: windows-driver-content
+description: Gets the minimum and maximum buffer size that the hardware audio engine can support.
+old-location: audio\iminiportaudioenginenode_getbuffersizerange.htm
+old-project: audio
+ms.assetid: 75CBDD4F-618F-4618-9D53-4A8DF40992B0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportAudioEngineNode interface [Audio Devices], GetBufferSizeRange method, IMiniportAudioEngineNode::GetBufferSizeRange, GetBufferSizeRange method [Audio Devices], GetBufferSizeRange method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getbuffersizerange, GetBufferSizeRange, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode::GetBufferSizeRange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetBufferSizeRange
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

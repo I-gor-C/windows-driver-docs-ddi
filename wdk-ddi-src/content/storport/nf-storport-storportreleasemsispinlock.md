@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortReleaseMSISpinLock
-title : StorPortReleaseMSISpinLock function
-author : windows-driver-content
-description : The StorPortReleaseMSISpinLock routine releases a previously acquired message signaled interrupt (MSI) spin lock for the specified message.
-old-location : storage\storportreleasemsispinlock.htm
-old-project : storage
-ms.assetid : 5a2cf757-9dca-4717-a775-834a22c02a12
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortReleaseMSISpinLock routine [Storage Devices], storage.storportreleasemsispinlock, storprt_212b8090-c4a3-4ea8-8c50-6704a6d0cee7.xml, storport/StorPortReleaseMSISpinLock, StorPortReleaseMSISpinLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortReleaseMSISpinLock
+title: StorPortReleaseMSISpinLock function
+author: windows-driver-content
+description: The StorPortReleaseMSISpinLock routine releases a previously acquired message signaled interrupt (MSI) spin lock for the specified message.
+old-location: storage\storportreleasemsispinlock.htm
+old-project: storage
+ms.assetid: 5a2cf757-9dca-4717-a775-834a22c02a12
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortReleaseMSISpinLock routine [Storage Devices], storage.storportreleasemsispinlock, storprt_212b8090-c4a3-4ea8-8c50-6704a6d0cee7.xml, storport/StorPortReleaseMSISpinLock, StorPortReleaseMSISpinLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortReleaseMSISpinLock
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetSectionContext
-title : FltGetSectionContext function
-author : windows-driver-content
-description : The FltGetSectionContext routine retrieves a section context that was created for a file stream by a specified minifilter driver instance.
-old-location : ifsk\fltgetsectioncontext.htm
-old-project : ifsk
-ms.assetid : 0B5C1BF9-59C3-4AC9-B545-FD7260B75E90
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetSectionContext, fltkernel/FltGetSectionContext, ifsk.fltgetsectioncontext, FltGetSectionContext routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltGetSectionContext routine is available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetSectionContext
+title: FltGetSectionContext function
+author: windows-driver-content
+description: The FltGetSectionContext routine retrieves a section context that was created for a file stream by a specified minifilter driver instance.
+old-location: ifsk\fltgetsectioncontext.htm
+old-project: ifsk
+ms.assetid: 0B5C1BF9-59C3-4AC9-B545-FD7260B75E90
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetSectionContext, fltkernel/FltGetSectionContext, ifsk.fltgetsectioncontext, FltGetSectionContext routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltGetSectionContext routine is available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetSectionContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

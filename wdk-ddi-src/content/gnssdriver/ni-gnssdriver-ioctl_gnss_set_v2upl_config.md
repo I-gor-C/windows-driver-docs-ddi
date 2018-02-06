@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_SET_V2UPL_CONFIG
-title : IOCTL_GNSS_SET_V2UPL_CONFIG
-author : windows-driver-content
-description : The IOCTL_GNSS_SET_V2UPL_CONFIG control code is used by the GNSS adapter to set configuration for v2 user plane location for CDMA, which consist of the MPC address, and in testing mode, potentially the PDE address.
-old-location : sensors\ioctl_gnss_set_v2upl_config.htm
-old-project : sensors
-ms.assetid : 7E06DAAF-B360-4C6C-8E6B-0F7CFC46A69E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_set_v2upl_config, IOCTL_GNSS_SET_V2UPL_CONFIG control code [Sensor Devices], IOCTL_GNSS_SET_V2UPL_CONFIG, gnssdriver/IOCTL_GNSS_SET_V2UPL_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_SET_V2UPL_CONFIG
+title: IOCTL_GNSS_SET_V2UPL_CONFIG
+author: windows-driver-content
+description: The IOCTL_GNSS_SET_V2UPL_CONFIG control code is used by the GNSS adapter to set configuration for v2 user plane location for CDMA, which consist of the MPC address, and in testing mode, potentially the PDE address.
+old-location: sensors\ioctl_gnss_set_v2upl_config.htm
+old-project: sensors
+ms.assetid: 7E06DAAF-B360-4C6C-8E6B-0F7CFC46A69E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_set_v2upl_config, IOCTL_GNSS_SET_V2UPL_CONFIG control code [Sensor Devices], IOCTL_GNSS_SET_V2UPL_CONFIG, gnssdriver/IOCTL_GNSS_SET_V2UPL_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_SET_V2UPL_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_SET_V2UPL_CONFIG IOCTL

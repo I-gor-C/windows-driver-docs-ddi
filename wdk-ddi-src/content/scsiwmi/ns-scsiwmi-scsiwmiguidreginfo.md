@@ -1,42 +1,47 @@
 ---
-UID : NS:scsiwmi.SCSIWMIGUIDREGINFO
-title : SCSIWMIGUIDREGINFO
-author : windows-driver-content
-description : The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver.
-old-location : storage\scsiwmiguidreginfo.htm
-old-project : storage
-ms.assetid : 7116445e-751b-478a-8e58-8f5c90d06b9b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSCSIWMIGUIDREGINFO structure pointer [Storage Devices], scsiwmi/PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO structure [Storage Devices], PSCSIWMIGUIDREGINFO, storage.scsiwmiguidreginfo, SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO, structs-scsibus_3688cdd5-2515-4fd8-8eae-37689dac26c0.xml, scsiwmi/SCSIWMIGUIDREGINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO"
-req.product : Windows 10 or later.
+UID: NS:scsiwmi.SCSIWMIGUIDREGINFO
+title: SCSIWMIGUIDREGINFO
+author: windows-driver-content
+description: The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver.
+old-location: storage\scsiwmiguidreginfo.htm
+old-project: storage
+ms.assetid: 7116445e-751b-478a-8e58-8f5c90d06b9b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSCSIWMIGUIDREGINFO structure pointer [Storage Devices], scsiwmi/PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO structure [Storage Devices], PSCSIWMIGUIDREGINFO, storage.scsiwmiguidreginfo, SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO, structs-scsibus_3688cdd5-2515-4fd8-8eae-37689dac26c0.xml, scsiwmi/SCSIWMIGUIDREGINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	SCSIWMIGUIDREGINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO"
+req.product: Windows 10 or later.
 ---
 
 # SCSIWMIGUIDREGINFO structure

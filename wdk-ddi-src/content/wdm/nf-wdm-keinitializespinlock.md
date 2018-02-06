@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInitializeSpinLock
-title : KeInitializeSpinLock function
-author : windows-driver-content
-description : The KeInitializeSpinLock routine initializes a variable of type KSPIN_LOCK.
-old-location : kernel\keinitializespinlock.htm
-old-project : kernel
-ms.assetid : 84962db0-55ed-443c-84e3-2d8f3e9ec1d7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeInitializeSpinLock, KeInitializeSpinLock, k105_715eff59-827a-4d41-8e3a-2ce0d1f1181d.xml, kernel.keinitializespinlock, KeInitializeSpinLock routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInitializeSpinLock
+title: KeInitializeSpinLock function
+author: windows-driver-content
+description: The KeInitializeSpinLock routine initializes a variable of type KSPIN_LOCK.
+old-location: kernel\keinitializespinlock.htm
+old-project: kernel
+ms.assetid: 84962db0-55ed-443c-84e3-2d8f3e9ec1d7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeInitializeSpinLock, KeInitializeSpinLock, k105_715eff59-827a-4d41-8e3a-2ce0d1f1181d.xml, kernel.keinitializespinlock, KeInitializeSpinLock routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeSpinLock
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

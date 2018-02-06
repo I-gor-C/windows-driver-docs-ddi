@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetKernelConnectionOptions
-title : IDebugClient5::GetKernelConnectionOptions method
-author : windows-driver-content
-description : The GetKernelConnectionOptions method returns the connection options for the current kernel target.
-old-location : debugger\getkernelconnectionoptions.htm
-old-project : debugger
-ms.assetid : 2862fe26-1613-4fc2-98e1-3deb5078d1e2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient interface [Windows Debugging], GetKernelConnectionOptions method, dbgeng/IDebugClient3::GetKernelConnectionOptions, dbgeng/IDebugClient::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], IDebugClient4 interface, GetKernelConnectionOptions method [Windows Debugging], IDebugClient interface, IDebugClient4::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient2::GetKernelConnectionOptions, debugger.getkernelconnectionoptions, IDebugClient3 interface [Windows Debugging], GetKernelConnectionOptions method, GetKernelConnectionOptions method [Windows Debugging], IDebugClient5 interface, IDebugClient2::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], dbgeng/IDebugClient4::GetKernelConnectionOptions, dbgeng/IDebugClient5::GetKernelConnectionOptions, IDebugClient3::GetKernelConnectionOptions, GetKernelConnectionOptions, IDebugClient4 interface [Windows Debugging], GetKernelConnectionOptions method, IDebugClient::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], IDebugClient3 interface, IDebugClient_5a7fe06a-42e4-4bdd-935c-8130cdfef568.xml, IDebugClient2 interface [Windows Debugging], GetKernelConnectionOptions method, IDebugClient5::GetKernelConnectionOptions, IDebugClient5 interface [Windows Debugging], GetKernelConnectionOptions method, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetKernelConnectionOptions
+title: IDebugClient5::GetKernelConnectionOptions method
+author: windows-driver-content
+description: The GetKernelConnectionOptions method returns the connection options for the current kernel target.
+old-location: debugger\getkernelconnectionoptions.htm
+old-project: debugger
+ms.assetid: 2862fe26-1613-4fc2-98e1-3deb5078d1e2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient interface [Windows Debugging], GetKernelConnectionOptions method, dbgeng/IDebugClient3::GetKernelConnectionOptions, dbgeng/IDebugClient::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], IDebugClient4 interface, GetKernelConnectionOptions method [Windows Debugging], IDebugClient interface, IDebugClient4::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient2::GetKernelConnectionOptions, debugger.getkernelconnectionoptions, IDebugClient3 interface [Windows Debugging], GetKernelConnectionOptions method, GetKernelConnectionOptions method [Windows Debugging], IDebugClient5 interface, IDebugClient2::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], dbgeng/IDebugClient4::GetKernelConnectionOptions, dbgeng/IDebugClient5::GetKernelConnectionOptions, IDebugClient3::GetKernelConnectionOptions, GetKernelConnectionOptions, IDebugClient4 interface [Windows Debugging], GetKernelConnectionOptions method, IDebugClient::GetKernelConnectionOptions, GetKernelConnectionOptions method [Windows Debugging], IDebugClient3 interface, IDebugClient_5a7fe06a-42e4-4bdd-935c-8130cdfef568.xml, IDebugClient2 interface [Windows Debugging], GetKernelConnectionOptions method, IDebugClient5::GetKernelConnectionOptions, IDebugClient5 interface [Windows Debugging], GetKernelConnectionOptions method, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetKernelConnectionOptions
+-	IDebugClient2.GetKernelConnectionOptions
+-	IDebugClient3.GetKernelConnectionOptions
+-	IDebugClient4.GetKernelConnectionOptions
+-	IDebugClient5.GetKernelConnectionOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

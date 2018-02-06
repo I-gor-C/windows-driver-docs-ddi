@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestForwardToIoQueue
-title : WdfRequestForwardToIoQueue function
-author : windows-driver-content
-description : The WdfRequestForwardToIoQueue method requeues an I/O request to one of the calling driver's I/O queues.
-old-location : wdf\wdfrequestforwardtoioqueue.htm
-old-project : wdf
-ms.assetid : a98d7e74-8311-46bf-a0b9-a160f5675c3d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestForwardToIoQueue method, DFRequestObjectRef_91c731d6-de15-4ae6-a0d0-ae449a5a47b6.xml, WdfRequestForwardToIoQueue, wdf.wdfrequestforwardtoioqueue, PFN_WDFREQUESTFORWARDTOIOQUEUE, wdfrequest/WdfRequestForwardToIoQueue, kmdf.wdfrequestforwardtoioqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestForwardToIoQueue
+title: WdfRequestForwardToIoQueue function
+author: windows-driver-content
+description: The WdfRequestForwardToIoQueue method requeues an I/O request to one of the calling driver's I/O queues.
+old-location: wdf\wdfrequestforwardtoioqueue.htm
+old-project: wdf
+ms.assetid: a98d7e74-8311-46bf-a0b9-a160f5675c3d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestForwardToIoQueue method, DFRequestObjectRef_91c731d6-de15-4ae6-a0d0-ae449a5a47b6.xml, WdfRequestForwardToIoQueue, wdf.wdfrequestforwardtoioqueue, PFN_WDFREQUESTFORWARDTOIOQUEUE, wdfrequest/WdfRequestForwardToIoQueue, kmdf.wdfrequestforwardtoioqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestForwardToIoQueue
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

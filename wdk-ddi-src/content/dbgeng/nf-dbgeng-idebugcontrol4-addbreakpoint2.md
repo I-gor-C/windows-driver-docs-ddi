@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.AddBreakpoint2
-title : IDebugControl4::AddBreakpoint2 method
-author : windows-driver-content
-description : The AddBreakpoint2 method creates a new breakpoint for the current target.
-old-location : debugger\addbreakpoint2.htm
-old-project : debugger
-ms.assetid : 001a64dd-1470-42e0-98ba-22ba33f3fa69
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddBreakpoint2 method [Windows Debugging], IDebugControl4 interface, AddBreakpoint2, IDebugControl4 interface [Windows Debugging], AddBreakpoint2 method, IDebugControl4::AddBreakpoint2, dbgeng/IDebugControl4::AddBreakpoint2, AddBreakpoint2 method [Windows Debugging], debugger.addbreakpoint2, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.AddBreakpoint2
+title: IDebugControl4::AddBreakpoint2 method
+author: windows-driver-content
+description: The AddBreakpoint2 method creates a new breakpoint for the current target.
+old-location: debugger\addbreakpoint2.htm
+old-project: debugger
+ms.assetid: 001a64dd-1470-42e0-98ba-22ba33f3fa69
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddBreakpoint2 method [Windows Debugging], IDebugControl4 interface, AddBreakpoint2, IDebugControl4 interface [Windows Debugging], AddBreakpoint2 method, IDebugControl4::AddBreakpoint2, dbgeng/IDebugControl4::AddBreakpoint2, AddBreakpoint2 method [Windows Debugging], debugger.addbreakpoint2, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl4.AddBreakpoint2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

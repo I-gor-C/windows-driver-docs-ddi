@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetRunningProcessSystemIdByExecutableNameWide
-title : IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide method
-author : windows-driver-content
-description : The GetRunningProcessSystemIdByExecutableNameWide method searches for a process with a given executable file name and return its process ID.
-old-location : debugger\getrunningprocesssystemidbyexecutablenamewide.htm
-old-project : debugger
-ms.assetid : ab21286e-96cd-402c-bb8d-d33b4ee7938e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide, IDebugClient5 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method, IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide, IDebugClient3 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method, debugger.getrunningprocesssystemidbyexecutablenamewide, GetRunningProcessSystemIdByExecutableNameWide, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient5, IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetRunningProcessSystemIdByExecutableNameWide
+title: IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide method
+author: windows-driver-content
+description: The GetRunningProcessSystemIdByExecutableNameWide method searches for a process with a given executable file name and return its process ID.
+old-location: debugger\getrunningprocesssystemidbyexecutablenamewide.htm
+old-project: debugger
+ms.assetid: ab21286e-96cd-402c-bb8d-d33b4ee7938e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide, IDebugClient5 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method, IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide, IDebugClient3 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method, debugger.getrunningprocesssystemidbyexecutablenamewide, GetRunningProcessSystemIdByExecutableNameWide, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], IDebugClient5, IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient3.GetRunningProcessSystemIdByExecutableNameWide
+-	IDebugClient4.GetRunningProcessSystemIdByExecutableNameWide
+-	IDebugClient5.GetRunningProcessSystemIdByExecutableNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

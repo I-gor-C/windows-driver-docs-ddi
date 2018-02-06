@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETLIGHT
-title : PFND3DDDI_SETLIGHT
-author : windows-driver-content
-description : The SetLight function sets properties for a light source.
-old-location : display\setlight.htm
-old-project : display
-ms.assetid : 28e3992e-a636-47e2-a5a6-5da06d276b5c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setlight, SetLight callback function [Display Devices], SetLight, PFND3DDDI_SETLIGHT, PFND3DDDI_SETLIGHT, d3dumddi/SetLight, UserModeDisplayDriver_Functions_82c42629-2344-4778-aaf4-e41acac4cfce.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETLIGHT
+title: PFND3DDDI_SETLIGHT
+author: windows-driver-content
+description: The SetLight function sets properties for a light source.
+old-location: display\setlight.htm
+old-project: display
+ms.assetid: 28e3992e-a636-47e2-a5a6-5da06d276b5c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setlight, SetLight callback function [Display Devices], SetLight, PFND3DDDI_SETLIGHT, PFND3DDDI_SETLIGHT, d3dumddi/SetLight, UserModeDisplayDriver_Functions_82c42629-2344-4778-aaf4-e41acac4cfce.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetLight
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

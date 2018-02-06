@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMUnmapIoSpace
-title : NdisMUnmapIoSpace function
-author : windows-driver-content
-description : NdisMUnmapIoSpace releases a virtual range mapped by an initialization-time call to NdisMMapIoSpace.
-old-location : netvista\ndismunmapiospace.htm
-old-project : netvista
-ms.assetid : 068232d3-b160-4090-b72c-63d9a31c1567
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : miniport_memory_mapped_ref_b10c4068-0218-4349-8d87-5a9d9a32aac7.xml, netvista.ndismunmapiospace, NdisMUnmapIoSpace function [Network Drivers Starting with Windows Vista], NdisMUnmapIoSpace, ndis/NdisMUnmapIoSpace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMUnmapIoSpace
+title: NdisMUnmapIoSpace function
+author: windows-driver-content
+description: NdisMUnmapIoSpace releases a virtual range mapped by an initialization-time call to NdisMMapIoSpace.
+old-location: netvista\ndismunmapiospace.htm
+old-project: netvista
+ms.assetid: 068232d3-b160-4090-b72c-63d9a31c1567
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: miniport_memory_mapped_ref_b10c4068-0218-4349-8d87-5a9d9a32aac7.xml, netvista.ndismunmapiospace, NdisMUnmapIoSpace function [Network Drivers Starting with Windows Vista], NdisMUnmapIoSpace, ndis/NdisMUnmapIoSpace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMUnmapIoSpace
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._AddPort_IN
-title : "_AddPort_IN"
-author : windows-driver-content
-description : The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the AddPort WMI method to the HBA miniport driver.
-old-location : storage\addport_in.htm
-old-project : storage
-ms.assetid : c9cdc0fc-e292-4142-a070-50a25a2a5673
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PAddPort_IN, PAddPort_IN, _AddPort_IN, storage.addport_in, hbapiwmi/AddPort_IN, AddPort_IN, PAddPort_IN structure pointer [Storage Devices], structs-Fibre_0f7b349b-048b-444c-b8ac-bdf63b00f998.xml, AddPort_IN structure [Storage Devices], hbapiwmi/PAddPort_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AddPort_IN, *PAddPort_IN
+UID: NS:hbapiwmi._AddPort_IN
+title: "_AddPort_IN"
+author: windows-driver-content
+description: The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the AddPort WMI method to the HBA miniport driver.
+old-location: storage\addport_in.htm
+old-project: storage
+ms.assetid: c9cdc0fc-e292-4142-a070-50a25a2a5673
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PAddPort_IN, PAddPort_IN, _AddPort_IN, storage.addport_in, hbapiwmi/AddPort_IN, AddPort_IN, PAddPort_IN structure pointer [Storage Devices], structs-Fibre_0f7b349b-048b-444c-b8ac-bdf63b00f998.xml, AddPort_IN structure [Storage Devices], hbapiwmi/PAddPort_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	AddPort_IN
+product: Windows
+targetos: Windows
+req.typenames: AddPort_IN, *PAddPort_IN
 ---
 
 # _AddPort_IN structure

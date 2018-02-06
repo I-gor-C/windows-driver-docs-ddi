@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_LIST_HEADER
-title : "_WWAN_LIST_HEADER"
-author : windows-driver-content
-description : The WWAN_LIST_HEADER structure represents the header of a list of MB objects, including the number of objects in the list that follow the header in memory.
-old-location : netvista\wwan_list_header.htm
-old-project : netvista
-ms.assetid : ef5c94e9-641c-41ea-baf1-343b876c92a4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_LIST_HEADER, wwan/PWWAN_LIST_HEADER, netvista.wwan_list_header, WWAN_LIST_HEADER, PWWAN_LIST_HEADER, _WWAN_LIST_HEADER, WwanRef_78070f1a-5913-41b6-9be2-0b26c19dd149.xml, WWAN_LIST_HEADER structure [Network Drivers Starting with Windows Vista], *PWWAN_LIST_HEADER, PWWAN_LIST_HEADER structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_LIST_HEADER, *PWWAN_LIST_HEADER
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_LIST_HEADER
+title: "_WWAN_LIST_HEADER"
+author: windows-driver-content
+description: The WWAN_LIST_HEADER structure represents the header of a list of MB objects, including the number of objects in the list that follow the header in memory.
+old-location: netvista\wwan_list_header.htm
+old-project: netvista
+ms.assetid: ef5c94e9-641c-41ea-baf1-343b876c92a4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WWAN_LIST_HEADER, wwan/PWWAN_LIST_HEADER, netvista.wwan_list_header, WWAN_LIST_HEADER, PWWAN_LIST_HEADER, _WWAN_LIST_HEADER, WwanRef_78070f1a-5913-41b6-9be2-0b26c19dd149.xml, WWAN_LIST_HEADER structure [Network Drivers Starting with Windows Vista], *PWWAN_LIST_HEADER, PWWAN_LIST_HEADER structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_LIST_HEADER
+product: Windows
+targetos: Windows
+req.typenames: WWAN_LIST_HEADER, *PWWAN_LIST_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_LIST_HEADER structure

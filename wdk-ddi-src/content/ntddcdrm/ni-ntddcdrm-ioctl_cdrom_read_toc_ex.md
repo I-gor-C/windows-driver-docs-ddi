@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_READ_TOC_EX
-title : IOCTL_CDROM_READ_TOC_EX
-author : windows-driver-content
-description : Queries the target device for the table of contents (TOC), the program memory area (PMA), and the absolute time in pregroove (ATIP).
-old-location : storage\ioctl_cdrom_read_toc_ex.htm
-old-project : storage
-ms.assetid : 279df233-9164-4c80-b31f-1d4cdc1073fa
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_read_toc_ex, IOCTL_CDROM_READ_TOC_EX control code [Storage Devices], IOCTL_CDROM_READ_TOC_EX, ntddcdrm/IOCTL_CDROM_READ_TOC_EX, k307_5206dcdd-936b-4d6f-b51a-4407e54814ea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_READ_TOC_EX
+title: IOCTL_CDROM_READ_TOC_EX
+author: windows-driver-content
+description: Queries the target device for the table of contents (TOC), the program memory area (PMA), and the absolute time in pregroove (ATIP).
+old-location: storage\ioctl_cdrom_read_toc_ex.htm
+old-project: storage
+ms.assetid: 279df233-9164-4c80-b31f-1d4cdc1073fa
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_read_toc_ex, IOCTL_CDROM_READ_TOC_EX control code [Storage Devices], IOCTL_CDROM_READ_TOC_EX, ntddcdrm/IOCTL_CDROM_READ_TOC_EX, k307_5206dcdd-936b-4d6f-b51a-4407e54814ea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_READ_TOC_EX
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_READ_TOC_EX IOCTL

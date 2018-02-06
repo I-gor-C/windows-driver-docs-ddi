@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetIoPriorityHintIntoCallbackData
-title : FltSetIoPriorityHintIntoCallbackData function
-author : windows-driver-content
-description : The FltSetIoPriorityHintIntoCallbackData routine is used by a minifilter driver to set the I/O priority information in callback data.
-old-location : ifsk\fltsetiopriorityhintintocallbackdata.htm
-old-project : ifsk
-ms.assetid : 25aba58b-654b-4492-9c54-83c53987342a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetIoPriorityHintIntoCallbackData, ifsk.fltsetiopriorityhintintocallbackdata, FltApiRef_p_to_z_2d697ab8-c8ef-47f5-bfed-d0a82a61a1ef.xml, fltkernel/FltSetIoPriorityHintIntoCallbackData, FltSetIoPriorityHintIntoCallbackData routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetIoPriorityHintIntoCallbackData
+title: FltSetIoPriorityHintIntoCallbackData function
+author: windows-driver-content
+description: The FltSetIoPriorityHintIntoCallbackData routine is used by a minifilter driver to set the I/O priority information in callback data.
+old-location: ifsk\fltsetiopriorityhintintocallbackdata.htm
+old-project: ifsk
+ms.assetid: 25aba58b-654b-4492-9c54-83c53987342a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetIoPriorityHintIntoCallbackData, ifsk.fltsetiopriorityhintintocallbackdata, FltApiRef_p_to_z_2d697ab8-c8ef-47f5-bfed-d0a82a61a1ef.xml, fltkernel/FltSetIoPriorityHintIntoCallbackData, FltSetIoPriorityHintIntoCallbackData routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetIoPriorityHintIntoCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

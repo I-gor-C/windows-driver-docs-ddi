@@ -1,12 +1,12 @@
 ---
-UID : NA:wlclient
-ms.assetid : 22d24a0a-8c97-3c3a-b767-ec58932a8962
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:wlclient
+ms.assetid: 22d24a0a-8c97-3c3a-b767-ec58932a8962
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # wlclient.h header

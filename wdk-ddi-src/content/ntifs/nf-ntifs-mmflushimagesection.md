@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.MmFlushImageSection
-title : MmFlushImageSection function
-author : windows-driver-content
-description : The MmFlushImageSection routine flushes the image section for a file.
-old-location : ifsk\mmflushimagesection.htm
-old-project : ifsk
-ms.assetid : e5c94f80-8ff8-4945-b1b8-a12190c3dec7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : MmFlushImageSection, ntifs/MmFlushImageSection, ifsk.mmflushimagesection, MmFlushImageSection routine [Installable File System Drivers], mmref_d6a37cf0-a204-4070-80f6-bd407f671ee8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.MmFlushImageSection
+title: MmFlushImageSection function
+author: windows-driver-content
+description: The MmFlushImageSection routine flushes the image section for a file.
+old-location: ifsk\mmflushimagesection.htm
+old-project: ifsk
+ms.assetid: e5c94f80-8ff8-4945-b1b8-a12190c3dec7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: MmFlushImageSection, ntifs/MmFlushImageSection, ifsk.mmflushimagesection, MmFlushImageSection routine [Installable File System Drivers], mmref_d6a37cf0-a204-4070-80f6-bd407f671ee8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmFlushImageSection
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

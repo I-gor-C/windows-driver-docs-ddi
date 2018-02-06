@@ -1,42 +1,47 @@
 ---
-UID : NS:udecxusbdevice._UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
-title : "_UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS"
-author : windows-driver-content
-description : Initializes a UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure with pointers to callback functions that are implemented by a UDE client for a virtual USB device.
-old-location : buses\udecx_usb_device_state_change_callbacks.htm
-old-project : usbref
-ms.assetid : 9847A6E1-9551-4F0A-8B50-BB191B0181EF
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure pointer [Buses], PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, *PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, udecxusbdevice/PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure [Buses], UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, buses.udecx_usb_device_state_change_callbacks, _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, udecxusbdevice/UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, *PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
-req.product : Windows 10 or later.
+UID: NS:udecxusbdevice._UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
+title: "_UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS"
+author: windows-driver-content
+description: Initializes a UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure with pointers to callback functions that are implemented by a UDE client for a virtual USB device.
+old-location: buses\udecx_usb_device_state_change_callbacks.htm
+old-project: usbref
+ms.assetid: 9847A6E1-9551-4F0A-8B50-BB191B0181EF
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure pointer [Buses], PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, *PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, udecxusbdevice/PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure [Buses], UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, buses.udecx_usb_device_state_change_callbacks, _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, udecxusbdevice/UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	UdecxUsbDevice.h
+apiname:
+-	UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, *PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure

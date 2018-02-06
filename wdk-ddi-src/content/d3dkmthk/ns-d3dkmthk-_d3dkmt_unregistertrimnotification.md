@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_UNREGISTERTRIMNOTIFICATION
-title : "_D3DKMT_UNREGISTERTRIMNOTIFICATION"
-author : windows-driver-content
-description : D3DKMT_UNREGISTERTRIMNOTIFICATION is used with D3DKMTUnregisterTrimNotification to remove a callback registration for a kernel mode device receiving notifications from a graphics framework (such as OpenGL).
-old-location : display\d3dkmt_unregistertrimnotification.htm
-old-project : display
-ms.assetid : 336C5C6A-619B-4D28-9F06-A09CABF78073
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_UNREGISTERTRIMNOTIFICATION structure [Display Devices], d3dkmthk/D3DKMT_UNREGISTERTRIMNOTIFICATION, D3DKMT_UNREGISTERTRIMNOTIFICATION, _D3DKMT_UNREGISTERTRIMNOTIFICATION, display.d3dkmt_unregistertrimnotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_UNREGISTERTRIMNOTIFICATION
+UID: NS:d3dkmthk._D3DKMT_UNREGISTERTRIMNOTIFICATION
+title: "_D3DKMT_UNREGISTERTRIMNOTIFICATION"
+author: windows-driver-content
+description: D3DKMT_UNREGISTERTRIMNOTIFICATION is used with D3DKMTUnregisterTrimNotification to remove a callback registration for a kernel mode device receiving notifications from a graphics framework (such as OpenGL).
+old-location: display\d3dkmt_unregistertrimnotification.htm
+old-project: display
+ms.assetid: 336C5C6A-619B-4D28-9F06-A09CABF78073
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_UNREGISTERTRIMNOTIFICATION structure [Display Devices], d3dkmthk/D3DKMT_UNREGISTERTRIMNOTIFICATION, D3DKMT_UNREGISTERTRIMNOTIFICATION, _D3DKMT_UNREGISTERTRIMNOTIFICATION, display.d3dkmt_unregistertrimnotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_UNREGISTERTRIMNOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_UNREGISTERTRIMNOTIFICATION
 ---
 
 # _D3DKMT_UNREGISTERTRIMNOTIFICATION structure

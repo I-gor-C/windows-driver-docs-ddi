@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_GET_LENGTH_INFO
-title : IOCTL_DISK_GET_LENGTH_INFO
-author : windows-driver-content
-description : Returns the length, in bytes, of the disk, partition, or volume associated with the device object that is the target of the request.
-old-location : storage\ioctl_disk_get_length_info.htm
-old-project : storage
-ms.assetid : 62d31b13-bc4a-4b2f-82be-551a61cae218
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_get_length_info, IOCTL_DISK_GET_LENGTH_INFO control code [Storage Devices], IOCTL_DISK_GET_LENGTH_INFO, ntdddisk/IOCTL_DISK_GET_LENGTH_INFO, k307_50fea771-4937-481d-9a1b-f4d69bb939bb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_GET_LENGTH_INFO
+title: IOCTL_DISK_GET_LENGTH_INFO
+author: windows-driver-content
+description: Returns the length, in bytes, of the disk, partition, or volume associated with the device object that is the target of the request.
+old-location: storage\ioctl_disk_get_length_info.htm
+old-project: storage
+ms.assetid: 62d31b13-bc4a-4b2f-82be-551a61cae218
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_get_length_info, IOCTL_DISK_GET_LENGTH_INFO control code [Storage Devices], IOCTL_DISK_GET_LENGTH_INFO, ntdddisk/IOCTL_DISK_GET_LENGTH_INFO, k307_50fea771-4937-481d-9a1b-f4d69bb939bb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_GET_LENGTH_INFO
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_LENGTH_INFO IOCTL

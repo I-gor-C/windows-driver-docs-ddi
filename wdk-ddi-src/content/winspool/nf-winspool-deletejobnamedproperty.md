@@ -1,42 +1,48 @@
 ---
-UID : NF:winspool.DeleteJobNamedProperty
-title : DeleteJobNamedProperty function
-author : windows-driver-content
-description : Deletes the named property for the specified print job on the specified printer.
-old-location : print\deletejobnamedproperty.htm
-old-project : print
-ms.assetid : 14F8C0A2-0D19-446E-8C2B-530A3AEDA879
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.deletejobnamedproperty, winspool/DeleteJobNamedProperty, DeleteJobNamedProperty function [Print Devices], DeleteJobNamedProperty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WinSpool.lib
-req.dll : Spoolss.dll; WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BIDI_TYPE
-req.product : Windows 10 or later.
+UID: NF:winspool.DeleteJobNamedProperty
+title: DeleteJobNamedProperty function
+author: windows-driver-content
+description: Deletes the named property for the specified print job on the specified printer.
+old-location: print\deletejobnamedproperty.htm
+old-project: print
+ms.assetid: 14F8C0A2-0D19-446E-8C2B-530A3AEDA879
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.deletejobnamedproperty, winspool/DeleteJobNamedProperty, DeleteJobNamedProperty function [Print Devices], DeleteJobNamedProperty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WinSpool.lib
+req.dll: Spoolss.dll; WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	spoolss.dll
+-	WinSpool.drv
+apiname:
+-	DeleteJobNamedProperty
+product: Windows
+targetos: Windows
+req.typenames: BIDI_TYPE
+req.product: Windows 10 or later.
 ---
 
 

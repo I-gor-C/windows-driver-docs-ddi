@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_LOG_EVENT_DETAILS
-title : "_STOR_LOG_EVENT_DETAILS"
-author : windows-driver-content
-description : The STOR_LOG_EVENT_DETAILS structure provides details pertaining to Storport-specific error log events and system log events.
-old-location : storage\stor_log_event_details.htm
-old-project : storage
-ms.assetid : 2370e730-6c35-45e6-a370-62adc10df53b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_LOG_EVENT_DETAILS structure [Storage Devices], structs-storport_ba65fe62-1b9a-4234-b9a4-b145bf549699.xml, storport/STOR_LOG_EVENT_DETAILS, _STOR_LOG_EVENT_DETAILS, PSTOR_LOG_EVENT_DETAILS, STOR_LOG_EVENT_DETAILS, storport/PSTOR_LOG_EVENT_DETAILS, *PSTOR_LOG_EVENT_DETAILS, PSTOR_LOG_EVENT_DETAILS structure pointer [Storage Devices], storage.stor_log_event_details
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_LOG_EVENT_DETAILS, STOR_LOG_EVENT_DETAILS"
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_LOG_EVENT_DETAILS
+title: "_STOR_LOG_EVENT_DETAILS"
+author: windows-driver-content
+description: The STOR_LOG_EVENT_DETAILS structure provides details pertaining to Storport-specific error log events and system log events.
+old-location: storage\stor_log_event_details.htm
+old-project: storage
+ms.assetid: 2370e730-6c35-45e6-a370-62adc10df53b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_LOG_EVENT_DETAILS structure [Storage Devices], structs-storport_ba65fe62-1b9a-4234-b9a4-b145bf549699.xml, storport/STOR_LOG_EVENT_DETAILS, _STOR_LOG_EVENT_DETAILS, PSTOR_LOG_EVENT_DETAILS, STOR_LOG_EVENT_DETAILS, storport/PSTOR_LOG_EVENT_DETAILS, *PSTOR_LOG_EVENT_DETAILS, PSTOR_LOG_EVENT_DETAILS structure pointer [Storage Devices], storage.stor_log_event_details
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_LOG_EVENT_DETAILS
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_LOG_EVENT_DETAILS, STOR_LOG_EVENT_DETAILS"
+req.product: Windows 10 or later.
 ---
 
 # _STOR_LOG_EVENT_DETAILS structure

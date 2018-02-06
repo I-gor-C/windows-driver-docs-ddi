@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerAdvance
-title : KsStreamPointerAdvance function
-author : windows-driver-content
-description : The KsStreamPointerAdvance function advances a stream pointer to the next data frame.
-old-location : stream\ksstreampointeradvance.htm
-old-project : stream
-ms.assetid : 98d0b8ce-5485-4584-b164-a1bc698b08ba
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsStreamPointerAdvance function [Streaming Media Devices], ks/KsStreamPointerAdvance, KsStreamPointerAdvance, avfunc_1c66466d-2144-4d67-ac1f-31156bc3b07d.xml, stream.ksstreampointeradvance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerAdvance
+title: KsStreamPointerAdvance function
+author: windows-driver-content
+description: The KsStreamPointerAdvance function advances a stream pointer to the next data frame.
+old-location: stream\ksstreampointeradvance.htm
+old-project: stream
+ms.assetid: 98d0b8ce-5485-4584-b164-a1bc698b08ba
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsStreamPointerAdvance function [Streaming Media Devices], ks/KsStreamPointerAdvance, KsStreamPointerAdvance, avfunc_1c66466d-2144-4d67-ac1f-31156bc3b07d.xml, stream.ksstreampointeradvance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerAdvance
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

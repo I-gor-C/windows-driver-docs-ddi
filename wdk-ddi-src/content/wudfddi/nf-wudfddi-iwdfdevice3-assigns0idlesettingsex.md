@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice3.AssignS0IdleSettingsEx
-title : IWDFDevice3::AssignS0IdleSettingsEx method
-author : windows-driver-content
-description : The AssignS0IdleSettingsEx method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
-old-location : wdf\iwdfdevice3_assigns0idlesettingsex.htm
-old-project : wdf
-ms.assetid : D020B8AA-7353-47E1-A111-82BFE6F5F03D
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdevice3_assigns0idlesettingsex, IWDFDevice3::AssignS0IdleSettingsEx, AssignS0IdleSettingsEx method, IWDFDevice3 interface, IWDFDevice3 interface, AssignS0IdleSettingsEx method, AssignS0IdleSettingsEx, umdf.iwdfdevice3_assigns0idlesettingsex, wudfddi/IWDFDevice3::AssignS0IdleSettingsEx, IWDFDevice3, AssignS0IdleSettingsEx method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice3.AssignS0IdleSettingsEx
+title: IWDFDevice3::AssignS0IdleSettingsEx method
+author: windows-driver-content
+description: The AssignS0IdleSettingsEx method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
+old-location: wdf\iwdfdevice3_assigns0idlesettingsex.htm
+old-project: wdf
+ms.assetid: D020B8AA-7353-47E1-A111-82BFE6F5F03D
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfdevice3_assigns0idlesettingsex, IWDFDevice3::AssignS0IdleSettingsEx, AssignS0IdleSettingsEx method, IWDFDevice3 interface, IWDFDevice3 interface, AssignS0IdleSettingsEx method, AssignS0IdleSettingsEx, umdf.iwdfdevice3_assigns0idlesettingsex, wudfddi/IWDFDevice3::AssignS0IdleSettingsEx, IWDFDevice3, AssignS0IdleSettingsEx method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3.AssignS0IdleSettingsEx
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

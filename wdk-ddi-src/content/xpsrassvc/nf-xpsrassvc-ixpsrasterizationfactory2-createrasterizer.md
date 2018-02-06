@@ -1,42 +1,47 @@
 ---
-UID : NF:xpsrassvc.IXpsRasterizationFactory2.CreateRasterizer
-title : IXpsRasterizationFactory2::CreateRasterizer method
-author : windows-driver-content
-description : The CreateRasterizer method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs.
-old-location : print\ixpsrasterizationfactory2_createrasterizer.htm
-old-project : print
-ms.assetid : C31681A0-17C6-4255-9068-7486A2101AB7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, print.ixpsrasterizationfactory2_createrasterizer, CreateRasterizer, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2::CreateRasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, IXpsRasterizationFactory2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : xpsrassvc.h
-req.include-header : Xpsrassvc.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : xpsrassvc.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : XPSRAS_BACKGROUND_COLOR
-req.product : Windows 10 or later.
+UID: NF:xpsrassvc.IXpsRasterizationFactory2.CreateRasterizer
+title: IXpsRasterizationFactory2::CreateRasterizer method
+author: windows-driver-content
+description: The CreateRasterizer method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs.
+old-location: print\ixpsrasterizationfactory2_createrasterizer.htm
+old-project: print
+ms.assetid: C31681A0-17C6-4255-9068-7486A2101AB7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, print.ixpsrasterizationfactory2_createrasterizer, CreateRasterizer, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2::CreateRasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, IXpsRasterizationFactory2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: xpsrassvc.h
+req.include-header: Xpsrassvc.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: xpsrassvc.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	xpsrassvc.h
+apiname:
+-	IXpsRasterizationFactory2.CreateRasterizer
+product: Windows
+targetos: Windows
+req.typenames: XPSRAS_BACKGROUND_COLOR
+req.product: Windows 10 or later.
 ---
 
 

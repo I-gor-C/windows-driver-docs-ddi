@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_CAPABILITIES
-title : "_NDIS_RECEIVE_FILTER_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_CAPABILITIES structure specifies the receive filtering capabilities of a network adapter.
-old-location : netvista\ndis_receive_filter_capabilities.htm
-old-project : netvista
-ms.assetid : aecc1fe0-03f9-44be-9a38-b689eee4c5a6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_RECEIVE_FILTER_CAPABILITIES, *PNDIS_RECEIVE_FILTER_CAPABILITIES, virtual_machine_queue_ref_51c84771-6803-4059-9011-df2d870614a0.xml, ntddndis/NDIS_RECEIVE_FILTER_CAPABILITIES, PNDIS_RECEIVE_FILTER_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_FILTER_CAPABILITIES structure [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_CAPABILITIES, netvista.ndis_receive_filter_capabilities, ntddndis/PNDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES"
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_CAPABILITIES
+title: "_NDIS_RECEIVE_FILTER_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_CAPABILITIES structure specifies the receive filtering capabilities of a network adapter.
+old-location: netvista\ndis_receive_filter_capabilities.htm
+old-project: netvista
+ms.assetid: aecc1fe0-03f9-44be-9a38-b689eee4c5a6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_RECEIVE_FILTER_CAPABILITIES, *PNDIS_RECEIVE_FILTER_CAPABILITIES, virtual_machine_queue_ref_51c84771-6803-4059-9011-df2d870614a0.xml, ntddndis/NDIS_RECEIVE_FILTER_CAPABILITIES, PNDIS_RECEIVE_FILTER_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_FILTER_CAPABILITIES structure [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_CAPABILITIES, netvista.ndis_receive_filter_capabilities, ntddndis/PNDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES"
 ---
 
 # _NDIS_RECEIVE_FILTER_CAPABILITIES structure

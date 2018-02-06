@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IAdapterPowerManagement3.D3ExitLatencyChanged
-title : IAdapterPowerManagement3::D3ExitLatencyChanged method
-author : windows-driver-content
-description : PortCls calls the D3ExitLatencyChanged method while the device is in sleep (D3) power state, to provide a new exit latency value.
-old-location : audio\iadapterpowermanagement3_d3exitlatencychanged.htm
-old-project : audio
-ms.assetid : B62920AB-39B2-4A04-AFB9-9C935A273F9A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IAdapterPowerManagement3, D3ExitLatencyChanged, IAdapterPowerManagement3::D3ExitLatencyChanged, IAdapterPowerManagement3 interface [Audio Devices], D3ExitLatencyChanged method, D3ExitLatencyChanged method [Audio Devices], D3ExitLatencyChanged method [Audio Devices], IAdapterPowerManagement3 interface, portcls/IAdapterPowerManagement3::D3ExitLatencyChanged, audio.iadapterpowermanagement3_d3exitlatencychanged
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IAdapterPowerManagement3.D3ExitLatencyChanged
+title: IAdapterPowerManagement3::D3ExitLatencyChanged method
+author: windows-driver-content
+description: PortCls calls the D3ExitLatencyChanged method while the device is in sleep (D3) power state, to provide a new exit latency value.
+old-location: audio\iadapterpowermanagement3_d3exitlatencychanged.htm
+old-project: audio
+ms.assetid: B62920AB-39B2-4A04-AFB9-9C935A273F9A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IAdapterPowerManagement3, D3ExitLatencyChanged, IAdapterPowerManagement3::D3ExitLatencyChanged, IAdapterPowerManagement3 interface [Audio Devices], D3ExitLatencyChanged method, D3ExitLatencyChanged method [Audio Devices], D3ExitLatencyChanged method [Audio Devices], IAdapterPowerManagement3 interface, portcls/IAdapterPowerManagement3::D3ExitLatencyChanged, audio.iadapterpowermanagement3_d3exitlatencychanged
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IAdapterPowerManagement3.D3ExitLatencyChanged
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

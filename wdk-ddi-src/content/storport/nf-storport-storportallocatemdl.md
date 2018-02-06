@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortAllocateMdl
-title : StorPortAllocateMdl function
-author : windows-driver-content
-description : The StorPortAllocateMdl routine allocates an MDL to describe the given non-paged pool memory.
-old-location : storage\storportallocatemdl.htm
-old-project : storage
-ms.assetid : 45450486-3264-4fc8-8051-f7c48997e3dd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml, StorPortAllocateMdl routine [Storage Devices], StorPortAllocateMdl, storage.storportallocatemdl, storport/StorPortAllocateMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAllocateMdl
+title: StorPortAllocateMdl function
+author: windows-driver-content
+description: The StorPortAllocateMdl routine allocates an MDL to describe the given non-paged pool memory.
+old-location: storage\storportallocatemdl.htm
+old-project: storage
+ms.assetid: 45450486-3264-4fc8-8051-f7c48997e3dd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml, StorPortAllocateMdl routine [Storage Devices], StorPortAllocateMdl, storage.storportallocatemdl, storport/StorPortAllocateMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortAllocateMdl
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

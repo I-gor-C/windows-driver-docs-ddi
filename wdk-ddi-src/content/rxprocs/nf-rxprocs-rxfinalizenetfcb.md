@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxFinalizeNetFcb
-title : RxFinalizeNetFcb function
-author : windows-driver-content
-description : RxFinalizeNetFCB finalizes the given FCB structure. The caller must have an exclusive lock on the NET_ROOT associated with FCB.
-old-location : ifsk\rxfinalizenetfcb.htm
-old-project : ifsk
-ms.assetid : 1eed44e2-f9ed-45a1-a5fa-dbf6a9c7c703
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxfinalizenetfcb, RxFinalizeNetFcb, rxref_5aaa19aa-c75c-4978-b731-f3046e84217d.xml, RxFinalizeNetFcb function [Installable File System Drivers], rxprocs/RxFinalizeNetFcb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxFinalizeNetFcb
+title: RxFinalizeNetFcb function
+author: windows-driver-content
+description: RxFinalizeNetFCB finalizes the given FCB structure. The caller must have an exclusive lock on the NET_ROOT associated with FCB.
+old-location: ifsk\rxfinalizenetfcb.htm
+old-project: ifsk
+ms.assetid: 1eed44e2-f9ed-45a1-a5fa-dbf6a9c7c703
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxfinalizenetfcb, RxFinalizeNetFcb, rxref_5aaa19aa-c75c-4978-b731-f3046e84217d.xml, RxFinalizeNetFcb function [Installable File System Drivers], rxprocs/RxFinalizeNetFcb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxFinalizeNetFcb
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

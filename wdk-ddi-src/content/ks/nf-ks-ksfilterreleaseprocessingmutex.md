@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterReleaseProcessingMutex
-title : KsFilterReleaseProcessingMutex function
-author : windows-driver-content
-description : The KsFilterReleaseProcessingMutex function releases the processing mutex for the AVStream filter specified by Filter.
-old-location : stream\ksfilterreleaseprocessingmutex.htm
-old-project : stream
-ms.assetid : 8ccf24a4-f087-4d61-8a9e-4bc05d7ec7bf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterReleaseProcessingMutex function [Streaming Media Devices], avfunc_35026563-e7aa-4305-a4fc-2558c1b21aa7.xml, KsFilterReleaseProcessingMutex, ks/KsFilterReleaseProcessingMutex, stream.ksfilterreleaseprocessingmutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterReleaseProcessingMutex
+title: KsFilterReleaseProcessingMutex function
+author: windows-driver-content
+description: The KsFilterReleaseProcessingMutex function releases the processing mutex for the AVStream filter specified by Filter.
+old-location: stream\ksfilterreleaseprocessingmutex.htm
+old-project: stream
+ms.assetid: 8ccf24a4-f087-4d61-8a9e-4bc05d7ec7bf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterReleaseProcessingMutex function [Streaming Media Devices], avfunc_35026563-e7aa-4305-a4fc-2558c1b21aa7.xml, KsFilterReleaseProcessingMutex, ks/KsFilterReleaseProcessingMutex, stream.ksfilterreleaseprocessingmutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterReleaseProcessingMutex
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

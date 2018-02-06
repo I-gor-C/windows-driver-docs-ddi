@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_LINK_INFORMATION
-title : "_FILE_LINK_INFORMATION"
-author : windows-driver-content
-description : The FILE_LINK_INFORMATION structure is used to create an NTFS hard link to an existing file.
-old-location : ifsk\file_link_information.htm
-old-project : ifsk
-ms.assetid : c0c47dc7-d672-4094-af17-9de2b01886aa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FILE_LINK_INFORMATION, _FILE_LINK_INFORMATION, PFILE_LINK_INFORMATION structure pointer [Installable File System Drivers], FILE_LINK_INFORMATION, PFILE_LINK_INFORMATION, fileinformationstructures_6702855e-5076-41aa-a6c8-e9569c782646.xml, FILE_LINK_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_LINK_INFORMATION, *PFILE_LINK_INFORMATION, ifsk.file_link_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_LINK_INFORMATION, *PFILE_LINK_INFORMATION
+UID: NS:ntifs._FILE_LINK_INFORMATION
+title: "_FILE_LINK_INFORMATION"
+author: windows-driver-content
+description: The FILE_LINK_INFORMATION structure is used to create an NTFS hard link to an existing file.
+old-location: ifsk\file_link_information.htm
+old-project: ifsk
+ms.assetid: c0c47dc7-d672-4094-af17-9de2b01886aa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FILE_LINK_INFORMATION, _FILE_LINK_INFORMATION, PFILE_LINK_INFORMATION structure pointer [Installable File System Drivers], FILE_LINK_INFORMATION, PFILE_LINK_INFORMATION, fileinformationstructures_6702855e-5076-41aa-a6c8-e9569c782646.xml, FILE_LINK_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_LINK_INFORMATION, *PFILE_LINK_INFORMATION, ifsk.file_link_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_LINK_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_LINK_INFORMATION, *PFILE_LINK_INFORMATION
 ---
 
 # _FILE_LINK_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPINSETDEVICESTATE
-title : PFNKSPINSETDEVICESTATE
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniPinSetDeviceState routine is called when the state of a KSPIN structure is changed due to the arrival of a connection state property 'set' IOCTL.
-old-location : stream\avstrminipinsetdevicestate.htm
-old-project : stream
-ms.assetid : df68dda0-6128-46c9-bf2b-562c10f9a6f1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipinsetdevicestate, AVStrMiniPinSetDeviceState, AVStrMiniPinSetDeviceState routine [Streaming Media Devices], AVStrMiniPinSetDeviceState, PFNKSPINSETDEVICESTATE, PFNKSPINSETDEVICESTATE, ks/AVStrMiniPinSetDeviceState, avstclbk_5a0f9097-33fb-4047-a361-bf14ac834cc3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPINSETDEVICESTATE
+title: PFNKSPINSETDEVICESTATE
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniPinSetDeviceState routine is called when the state of a KSPIN structure is changed due to the arrival of a connection state property 'set' IOCTL.
+old-location: stream\avstrminipinsetdevicestate.htm
+old-project: stream
+ms.assetid: df68dda0-6128-46c9-bf2b-562c10f9a6f1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipinsetdevicestate, AVStrMiniPinSetDeviceState, AVStrMiniPinSetDeviceState routine [Streaming Media Devices], AVStrMiniPinSetDeviceState, PFNKSPINSETDEVICESTATE, PFNKSPINSETDEVICESTATE, ks/AVStrMiniPinSetDeviceState, avstclbk_5a0f9097-33fb-4047-a361-bf14ac834cc3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniPinSetDeviceState
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_DELETE_POINTS
-title : IOCTL_MOUNTMGR_DELETE_POINTS
-author : windows-driver-content
-description : This IOCTL is identical in input and output to IOCTL_MOUNTMGR_QUERY_POINTS. The difference is that IOCTL_MOUNTMGR_DELETE_POINTS has the side effect of deleting the symbolic links and the mount manager database entries for the triples returned.
-old-location : storage\ioctl_mountmgr_delete_points.htm
-old-project : storage
-ms.assetid : c11d801a-4870-42c4-9374-e0f849d57cde
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_delete_points, IOCTL_MOUNTMGR_DELETE_POINTS control code [Storage Devices], IOCTL_MOUNTMGR_DELETE_POINTS, mountmgr/IOCTL_MOUNTMGR_DELETE_POINTS, k307_c218ecf5-b934-4cad-934c-738cde9bff2b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_DELETE_POINTS
+title: IOCTL_MOUNTMGR_DELETE_POINTS
+author: windows-driver-content
+description: This IOCTL is identical in input and output to IOCTL_MOUNTMGR_QUERY_POINTS. The difference is that IOCTL_MOUNTMGR_DELETE_POINTS has the side effect of deleting the symbolic links and the mount manager database entries for the triples returned.
+old-location: storage\ioctl_mountmgr_delete_points.htm
+old-project: storage
+ms.assetid: c11d801a-4870-42c4-9374-e0f849d57cde
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_delete_points, IOCTL_MOUNTMGR_DELETE_POINTS control code [Storage Devices], IOCTL_MOUNTMGR_DELETE_POINTS, mountmgr/IOCTL_MOUNTMGR_DELETE_POINTS, k307_c218ecf5-b934-4cad-934c-738cde9bff2b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_DELETE_POINTS
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_DELETE_POINTS IOCTL

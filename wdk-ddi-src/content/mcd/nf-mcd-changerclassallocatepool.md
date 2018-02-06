@@ -1,41 +1,47 @@
 ---
-UID : NF:mcd.ChangerClassAllocatePool
-title : ChangerClassAllocatePool function
-author : windows-driver-content
-description : The ChangerClassAllocatePool function allocates pool memory.
-old-location : storage\changerclassallocatepool.htm
-old-project : storage
-ms.assetid : d211bab9-4932-41c5-9b6f-528a75bb2ae4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : mcd/ChangerClassAllocatePool, chgrclas_e1b15ece-f3e4-446f-adc4-39301fc0346f.xml, storage.changerclassallocatepool, ChangerClassAllocatePool function [Storage Devices], ChangerClassAllocatePool
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mcd.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerClassAllocatePool
+title: ChangerClassAllocatePool function
+author: windows-driver-content
+description: The ChangerClassAllocatePool function allocates pool memory.
+old-location: storage\changerclassallocatepool.htm
+old-project: storage
+ms.assetid: d211bab9-4932-41c5-9b6f-528a75bb2ae4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: mcd/ChangerClassAllocatePool, chgrclas_e1b15ece-f3e4-446f-adc4-39301fc0346f.xml, storage.changerclassallocatepool, ChangerClassAllocatePool function [Storage Devices], ChangerClassAllocatePool
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mcd.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mcd.lib
+-	Mcd.dll
+apiname:
+-	ChangerClassAllocatePool
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

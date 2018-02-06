@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._SRBEX_DATA_SCSI_CDB_VAR
-title : "_SRBEX_DATA_SCSI_CDB_VAR"
-author : windows-driver-content
-description : The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB).
-old-location : storage\srbex_data_scsi_cdb_var.htm
-old-project : storage
-ms.assetid : 8D3BD2E0-02EA-4745-AA1C-86D829E6BA81
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SRBEX_DATA_SCSI_CDB_VAR structure [Storage Devices], PSRBEX_DATA_SCSI_CDB_VAR structure pointer [Storage Devices], *PSRBEX_DATA_SCSI_CDB_VAR, _SRBEX_DATA_SCSI_CDB_VAR, storport/PSRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR, storage.srbex_data_scsi_cdb_var, SRBEX_DATA_SCSI_CDB_VAR, storport/SRBEX_DATA_SCSI_CDB_VAR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR"
-req.product : Windows 10 or later.
+UID: NS:srb._SRBEX_DATA_SCSI_CDB_VAR
+title: "_SRBEX_DATA_SCSI_CDB_VAR"
+author: windows-driver-content
+description: The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB).
+old-location: storage\srbex_data_scsi_cdb_var.htm
+old-project: storage
+ms.assetid: 8D3BD2E0-02EA-4745-AA1C-86D829E6BA81
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SRBEX_DATA_SCSI_CDB_VAR structure [Storage Devices], PSRBEX_DATA_SCSI_CDB_VAR structure pointer [Storage Devices], *PSRBEX_DATA_SCSI_CDB_VAR, _SRBEX_DATA_SCSI_CDB_VAR, storport/PSRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR, storage.srbex_data_scsi_cdb_var, SRBEX_DATA_SCSI_CDB_VAR, storport/SRBEX_DATA_SCSI_CDB_VAR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA_SCSI_CDB_VAR
+product: Windows
+targetos: Windows
+req.typenames: "*PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR"
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA_SCSI_CDB_VAR structure

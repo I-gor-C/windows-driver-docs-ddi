@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSSETTIMER
-title : PFNKSSETTIMER
-author : windows-driver-content
-description : A streaming minidriver's KStrSetTimer routine is called to generate DPC timer callbacks based on presentation time.
-old-location : stream\kstrsettimer.htm
-old-project : stream
-ms.assetid : c9150c02-a53e-4ffc-8cf1-ca668680cdd9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrsettimer, KStrSetTimer routine [Streaming Media Devices], KStrSetTimer, PFNKSSETTIMER, PFNKSSETTIMER, ks/KStrSetTimer, ksfunc_a1a590b8-ea16-45bd-8517-45e4bfc46ad3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSSETTIMER
+title: PFNKSSETTIMER
+author: windows-driver-content
+description: A streaming minidriver's KStrSetTimer routine is called to generate DPC timer callbacks based on presentation time.
+old-location: stream\kstrsettimer.htm
+old-project: stream
+ms.assetid: c9150c02-a53e-4ffc-8cf1-ca668680cdd9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrsettimer, KStrSetTimer routine [Streaming Media Devices], KStrSetTimer, PFNKSSETTIMER, PFNKSSETTIMER, ks/KStrSetTimer, ksfunc_a1a590b8-ea16-45bd-8517-45e4bfc46ad3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrSetTimer
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_CONTROL_FEATURE_REQUEST
-title : "_URB_CONTROL_FEATURE_REQUEST"
-author : windows-driver-content
-description : The _URB_CONTROL_FEATURE_REQUEST structure is used by USB client drivers to set or clear features on a device, interface, or endpoint.
-old-location : buses\_urb_control_feature_request.htm
-old-project : usbref
-ms.assetid : b32c6a7e-84c2-412a-a13e-959aaddc81ac
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/_URB_CONTROL_FEATURE_REQUEST, _URB_CONTROL_FEATURE_REQUEST structure [Buses], usbstrct_0552c436-5e4b-4573-b9ea-1f098de7dedd.xml, _URB_CONTROL_FEATURE_REQUEST, buses._urb_control_feature_request
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_CONTROL_FEATURE_REQUEST
+title: "_URB_CONTROL_FEATURE_REQUEST"
+author: windows-driver-content
+description: The _URB_CONTROL_FEATURE_REQUEST structure is used by USB client drivers to set or clear features on a device, interface, or endpoint.
+old-location: buses\_urb_control_feature_request.htm
+old-project: usbref
+ms.assetid: b32c6a7e-84c2-412a-a13e-959aaddc81ac
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/_URB_CONTROL_FEATURE_REQUEST, _URB_CONTROL_FEATURE_REQUEST structure [Buses], usbstrct_0552c436-5e4b-4573-b9ea-1f098de7dedd.xml, _URB_CONTROL_FEATURE_REQUEST, buses._urb_control_feature_request
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_CONTROL_FEATURE_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_CONTROL_FEATURE_REQUEST structure

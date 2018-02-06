@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_GetInterfaceLength
-title : USBD_GetInterfaceLength function
-author : windows-driver-content
-description : The USBD_GetInterfaceLength routine obtains the length of a given interface descriptor, including the length of all endpoint descriptors contained within the interface.
-old-location : buses\usbd_getinterfacelength.htm
-old-project : usbref
-ms.assetid : bcfc2b11-d89c-40f8-95ce-07a599e2a2bb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBD_GetInterfaceLength routine [Buses], usbfunc_d462af93-f7ec-429f-9719-4b09af55236c.xml, buses.usbd_getinterfacelength, usbdlib/USBD_GetInterfaceLength, USBD_GetInterfaceLength
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbd.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_GetInterfaceLength
+title: USBD_GetInterfaceLength function
+author: windows-driver-content
+description: The USBD_GetInterfaceLength routine obtains the length of a given interface descriptor, including the length of all endpoint descriptors contained within the interface.
+old-location: buses\usbd_getinterfacelength.htm
+old-project: usbref
+ms.assetid: bcfc2b11-d89c-40f8-95ce-07a599e2a2bb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBD_GetInterfaceLength routine [Buses], usbfunc_d462af93-f7ec-429f-9719-4b09af55236c.xml, buses.usbd_getinterfacelength, usbdlib/USBD_GetInterfaceLength, USBD_GetInterfaceLength
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbd.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbd.lib
+-	Usbd.dll
+apiname:
+-	USBD_GetInterfaceLength
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IsReparseTagNameSurrogate
-title : IsReparseTagNameSurrogate macro
-author : windows-driver-content
-description : The IsReparseTagNameSurrogate macro determines whether a tag's associated reparse point is a surrogate for another named entity, such as a volume mount point.
-old-location : ifsk\isreparsetagnamesurrogate.htm
-old-project : ifsk
-ms.assetid : 51e80cd6-19c1-4e21-b676-662c77840a8b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IsReparseTagNameSurrogate, ifsk.isreparsetagnamesurrogate, ntifs/IsReparseTagNameSurrogate, ioref_f44ef76c-2211-43a1-b151-a5804c7cd361.xml, IsReparseTagNameSurrogate function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IsReparseTagNameSurrogate
+title: IsReparseTagNameSurrogate macro
+author: windows-driver-content
+description: The IsReparseTagNameSurrogate macro determines whether a tag's associated reparse point is a surrogate for another named entity, such as a volume mount point.
+old-location: ifsk\isreparsetagnamesurrogate.htm
+old-project: ifsk
+ms.assetid: 51e80cd6-19c1-4e21-b676-662c77840a8b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IsReparseTagNameSurrogate, ifsk.isreparsetagnamesurrogate, ntifs/IsReparseTagNameSurrogate, ioref_f44ef76c-2211-43a1-b151-a5804c7cd361.xml, IsReparseTagNameSurrogate function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IsReparseTagNameSurrogate
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

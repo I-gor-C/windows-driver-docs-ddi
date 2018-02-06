@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltInitializePushLock
-title : FltInitializePushLock function
-author : windows-driver-content
-description : The FltInitializePushLock routine initializes a push lock variable.
-old-location : ifsk\fltinitializepushlock.htm
-old-project : ifsk
-ms.assetid : 49b624d6-ef06-4e73-98ac-b0be1669afc7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltInitializePushLock, ifsk.fltinitializepushlock, fltkernel/FltInitializePushLock, FltApiRef_e_to_o_348be4fc-280f-4dc3-b5fb-ada1aa037d09.xml, FltInitializePushLock routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltInitializePushLock
+title: FltInitializePushLock function
+author: windows-driver-content
+description: The FltInitializePushLock routine initializes a push lock variable.
+old-location: ifsk\fltinitializepushlock.htm
+old-project: ifsk
+ms.assetid: 49b624d6-ef06-4e73-98ac-b0be1669afc7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltInitializePushLock, ifsk.fltinitializepushlock, fltkernel/FltInitializePushLock, FltApiRef_e_to_o_348be4fc-280f-4dc3-b5fb-ada1aa037d09.xml, FltInitializePushLock routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltInitializePushLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

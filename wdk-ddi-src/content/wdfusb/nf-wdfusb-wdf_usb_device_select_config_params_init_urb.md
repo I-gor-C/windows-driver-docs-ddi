@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB
-title : WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function
-author : windows-driver-content
-description : The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can specify a configuration by using a URB.
-old-location : wdf\wdf_usb_device_select_config_params_init_urb.htm
-old-project : wdf
-ms.assetid : 087888ce-e08a-4f9f-adac-419a638e65bd
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_usb_device_select_config_params_init_urb, DFUsbRef_bb81c111-ac7f-4f37-bda6-c09ebc32e5fd.xml, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB, wdfusb/WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB, kmdf.wdf_usb_device_select_config_params_init_urb, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB
+title: WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function
+author: windows-driver-content
+description: The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can specify a configuration by using a URB.
+old-location: wdf\wdf_usb_device_select_config_params_init_urb.htm
+old-project: wdf
+ms.assetid: 087888ce-e08a-4f9f-adac-419a638e65bd
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_usb_device_select_config_params_init_urb, DFUsbRef_bb81c111-ac7f-4f37-bda6-c09ebc32e5fd.xml, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB, wdfusb/WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB, kmdf.wdf_usb_device_select_config_params_init_urb, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_URB
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

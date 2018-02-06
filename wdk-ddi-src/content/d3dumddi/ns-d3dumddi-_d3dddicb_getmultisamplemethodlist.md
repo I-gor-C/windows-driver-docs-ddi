@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_GETMULTISAMPLEMETHODLIST
-title : "_D3DDDICB_GETMULTISAMPLEMETHODLIST"
-author : windows-driver-content
-description : The D3DDDICB_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve the list of multiple-sample methods for an allocation.
-old-location : display\d3dddicb_getmultisamplemethodlist.htm
-old-project : display
-ms.assetid : 07cabd0e-5b5c-42ff-9b2a-57bec527d690
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_GETMULTISAMPLEMETHODLIST, _D3DDDICB_GETMULTISAMPLEMETHODLIST, D3DDDICB_GETMULTISAMPLEMETHODLIST, D3DDDICB_GETMULTISAMPLEMETHODLIST structure [Display Devices], D3D_param_Structs_11da91d5-a4e6-4d24-b2b1-3645003ff25e.xml, display.d3dddicb_getmultisamplemethodlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_GETMULTISAMPLEMETHODLIST
+UID: NS:d3dumddi._D3DDDICB_GETMULTISAMPLEMETHODLIST
+title: "_D3DDDICB_GETMULTISAMPLEMETHODLIST"
+author: windows-driver-content
+description: The D3DDDICB_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve the list of multiple-sample methods for an allocation.
+old-location: display\d3dddicb_getmultisamplemethodlist.htm
+old-project: display
+ms.assetid: 07cabd0e-5b5c-42ff-9b2a-57bec527d690
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_GETMULTISAMPLEMETHODLIST, _D3DDDICB_GETMULTISAMPLEMETHODLIST, D3DDDICB_GETMULTISAMPLEMETHODLIST, D3DDDICB_GETMULTISAMPLEMETHODLIST structure [Display Devices], D3D_param_Structs_11da91d5-a4e6-4d24-b2b1-3645003ff25e.xml, display.d3dddicb_getmultisamplemethodlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_GETMULTISAMPLEMETHODLIST
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_GETMULTISAMPLEMETHODLIST
 ---
 
 # _D3DDDICB_GETMULTISAMPLEMETHODLIST structure

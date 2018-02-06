@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdd8042.PI8042_QUEUE_PACKET
-title : PI8042_QUEUE_PACKET
-author : windows-driver-content
-description : The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for processing by the ISR DPC of a keyboard or mouse device. I8042prt provides this callback.
-old-location : hid\pi8042_queue_packet.htm
-old-project : hid
-ms.assetid : f5d42701-b418-4bda-b936-3e0a1f57ac9d
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.pi8042_queue_packet, QueuePacket callback function [Human Input Devices], QueuePacket, PI8042_QUEUE_PACKET, PI8042_QUEUE_PACKET, ntdd8042/QueuePacket, i8042ref_44eb4361-586b-4390-8aea-4e1470a70691.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NC:ntdd8042.PI8042_QUEUE_PACKET
+title: PI8042_QUEUE_PACKET
+author: windows-driver-content
+description: The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for processing by the ISR DPC of a keyboard or mouse device. I8042prt provides this callback.
+old-location: hid\pi8042_queue_packet.htm
+old-project: hid
+ms.assetid: f5d42701-b418-4bda-b936-3e0a1f57ac9d
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.pi8042_queue_packet, QueuePacket callback function [Human Input Devices], QueuePacket, PI8042_QUEUE_PACKET, PI8042_QUEUE_PACKET, ntdd8042/QueuePacket, i8042ref_44eb4361-586b-4390-8aea-4e1470a70691.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdd8042.h
+apiname:
+-	QueuePacket
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 

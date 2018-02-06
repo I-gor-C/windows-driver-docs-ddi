@@ -1,41 +1,46 @@
 ---
-UID : NC:poclass.DEVICE_ACTIVE_COOLING
-title : DEVICE_ACTIVE_COOLING
-author : windows-driver-content
-description : The ActiveCooling callback routine engages or disengages a device's active-cooling function.
-old-location : kernel\activecooling.htm
-old-project : kernel
-ms.assetid : ADC0145D-135F-46E6-91C9-B545DBE1D83B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.activecooling, ActiveCooling routine [Kernel-Mode Driver Architecture], ActiveCooling, DEVICE_ACTIVE_COOLING, DEVICE_ACTIVE_COOLING, poclass/ActiveCooling
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : poclass.h
-req.include-header : Poclass.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
+UID: NC:poclass.DEVICE_ACTIVE_COOLING
+title: DEVICE_ACTIVE_COOLING
+author: windows-driver-content
+description: The ActiveCooling callback routine engages or disengages a device's active-cooling function.
+old-location: kernel\activecooling.htm
+old-project: kernel
+ms.assetid: ADC0145D-135F-46E6-91C9-B545DBE1D83B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.activecooling, ActiveCooling routine [Kernel-Mode Driver Architecture], ActiveCooling, DEVICE_ACTIVE_COOLING, DEVICE_ACTIVE_COOLING, poclass/ActiveCooling
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: poclass.h
+req.include-header: Poclass.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Poclass.h
+apiname:
+-	ActiveCooling
+product: Windows
+targetos: Windows
+req.typenames: PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
 ---
 
 

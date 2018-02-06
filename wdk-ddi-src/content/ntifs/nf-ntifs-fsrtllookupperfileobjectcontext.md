@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlLookupPerFileObjectContext
-title : FsRtlLookupPerFileObjectContext function
-author : windows-driver-content
-description : For a &#0034;legacy&#0034; file system filter driver, the FsRtlLookupPerFileObjectContext function retrieves context information previously associated with a file object.
-old-location : ifsk\fsrtllookupperfileobjectcontext.htm
-old-project : ifsk
-ms.assetid : a066d78b-f6c7-484a-9d62-3578bbd063a2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlLookupPerFileObjectContext, fsrtlref_1b9542db-9037-400a-97e2-1bcfddcd1957.xml, FsRtlLookupPerFileObjectContext function [Installable File System Drivers], ifsk.fsrtllookupperfileobjectcontext, ntifs/FsRtlLookupPerFileObjectContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlLookupPerFileObjectContext
+title: FsRtlLookupPerFileObjectContext function
+author: windows-driver-content
+description: For a &#0034;legacy&#0034; file system filter driver, the FsRtlLookupPerFileObjectContext function retrieves context information previously associated with a file object.
+old-location: ifsk\fsrtllookupperfileobjectcontext.htm
+old-project: ifsk
+ms.assetid: a066d78b-f6c7-484a-9d62-3578bbd063a2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlLookupPerFileObjectContext, fsrtlref_1b9542db-9037-400a-97e2-1bcfddcd1957.xml, FsRtlLookupPerFileObjectContext function [Installable File System Drivers], ifsk.fsrtllookupperfileobjectcontext, ntifs/FsRtlLookupPerFileObjectContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlLookupPerFileObjectContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

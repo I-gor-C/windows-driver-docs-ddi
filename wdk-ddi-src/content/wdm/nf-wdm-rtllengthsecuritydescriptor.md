@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlLengthSecurityDescriptor
-title : RtlLengthSecurityDescriptor function
-author : windows-driver-content
-description : The RtlLengthSecurityDescriptor routine returns the size of a given security descriptor.
-old-location : kernel\rtllengthsecuritydescriptor.htm
-old-project : kernel
-ms.assetid : e06888eb-2ced-46c0-bdbf-3bad57020bf7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_ea245194-f36b-4b47-9d81-2d72fc19d5bc.xml, RtlLengthSecurityDescriptor, wdm/RtlLengthSecurityDescriptor, kernel.rtllengthsecuritydescriptor, RtlLengthSecurityDescriptor routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlLengthSecurityDescriptor
+title: RtlLengthSecurityDescriptor function
+author: windows-driver-content
+description: The RtlLengthSecurityDescriptor routine returns the size of a given security descriptor.
+old-location: kernel\rtllengthsecuritydescriptor.htm
+old-project: kernel
+ms.assetid: e06888eb-2ced-46c0-bdbf-3bad57020bf7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_ea245194-f36b-4b47-9d81-2d72fc19d5bc.xml, RtlLengthSecurityDescriptor, wdm/RtlLengthSecurityDescriptor, kernel.rtllengthsecuritydescriptor, RtlLengthSecurityDescriptor routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlLengthSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

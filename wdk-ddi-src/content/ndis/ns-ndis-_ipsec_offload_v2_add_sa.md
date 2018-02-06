@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._IPSEC_OFFLOAD_V2_ADD_SA
-title : "_IPSEC_OFFLOAD_V2_ADD_SA"
-author : windows-driver-content
-description : The IPSEC_OFFLOAD_V2_ADD_SA structure defines information about a security association (SA) that a miniport driver should add to a NIC.
-old-location : netvista\ipsec_offload_v2_add_sa.htm
-old-project : netvista
-ms.assetid : 78c5e765-40e5-47f0-8460-a86124fb43d8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : task_offload_IPsecv2_ref_0358b0f6-783e-4466-8615-12bd95ce4638.xml, IPSEC_OFFLOAD_V2_ADD_SA structure [Network Drivers Starting with Windows Vista], ndis/IPSEC_OFFLOAD_V2_ADD_SA, netvista.ipsec_offload_v2_add_sa, _IPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA, PIPSEC_OFFLOAD_V2_ADD_SA, PIPSEC_OFFLOAD_V2_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], *PIPSEC_OFFLOAD_V2_ADD_SA, ndis/PIPSEC_OFFLOAD_V2_ADD_SA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and 6.20. For NDIS 6.30 and later, use IPSEC_OFFLOAD_V2_ADD_SA_EX.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA"
+UID: NS:ndis._IPSEC_OFFLOAD_V2_ADD_SA
+title: "_IPSEC_OFFLOAD_V2_ADD_SA"
+author: windows-driver-content
+description: The IPSEC_OFFLOAD_V2_ADD_SA structure defines information about a security association (SA) that a miniport driver should add to a NIC.
+old-location: netvista\ipsec_offload_v2_add_sa.htm
+old-project: netvista
+ms.assetid: 78c5e765-40e5-47f0-8460-a86124fb43d8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: task_offload_IPsecv2_ref_0358b0f6-783e-4466-8615-12bd95ce4638.xml, IPSEC_OFFLOAD_V2_ADD_SA structure [Network Drivers Starting with Windows Vista], ndis/IPSEC_OFFLOAD_V2_ADD_SA, netvista.ipsec_offload_v2_add_sa, _IPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA, PIPSEC_OFFLOAD_V2_ADD_SA, PIPSEC_OFFLOAD_V2_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], *PIPSEC_OFFLOAD_V2_ADD_SA, ndis/PIPSEC_OFFLOAD_V2_ADD_SA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and 6.20. For NDIS 6.30 and later, use IPSEC_OFFLOAD_V2_ADD_SA_EX.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	IPSEC_OFFLOAD_V2_ADD_SA
+product: Windows
+targetos: Windows
+req.typenames: "*PIPSEC_OFFLOAD_V2_ADD_SA, IPSEC_OFFLOAD_V2_ADD_SA"
 ---
 
 # _IPSEC_OFFLOAD_V2_ADD_SA structure

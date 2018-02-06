@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugClient5.IsKernelDebuggerEnabled
-title : IDebugClient5::IsKernelDebuggerEnabled method
-author : windows-driver-content
-description : The IsKernelDebuggerEnabled method checks whether kernel debugging is enabled for the local kernel.
-old-location : debugger\iskerneldebuggerenabled.htm
-old-project : debugger
-ms.assetid : a6dc4832-6b9b-441e-a57a-6fcb2cafa2c6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient2::IsKernelDebuggerEnabled, IDebugClient4::IsKernelDebuggerEnabled, IDebugClient_05c5446d-28b4-4d9b-bb20-7dc1746545d6.xml, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient2 interface, IDebugClient2 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient5::IsKernelDebuggerEnabled, debugger.iskerneldebuggerenabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::IsKernelDebuggerEnabled, dbgeng/IDebugClient3::IsKernelDebuggerEnabled, dbgeng/IDebugClient5::IsKernelDebuggerEnabled, IDebugClient5 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient4 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient3 interface, IsKernelDebuggerEnabled method [Windows Debugging], dbgeng/IDebugClient4::IsKernelDebuggerEnabled, IDebugClient3 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient4 interface, IDebugClient3::IsKernelDebuggerEnabled, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.IsKernelDebuggerEnabled
+title: IDebugClient5::IsKernelDebuggerEnabled method
+author: windows-driver-content
+description: The IsKernelDebuggerEnabled method checks whether kernel debugging is enabled for the local kernel.
+old-location: debugger\iskerneldebuggerenabled.htm
+old-project: debugger
+ms.assetid: a6dc4832-6b9b-441e-a57a-6fcb2cafa2c6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient2::IsKernelDebuggerEnabled, IDebugClient4::IsKernelDebuggerEnabled, IDebugClient_05c5446d-28b4-4d9b-bb20-7dc1746545d6.xml, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient2 interface, IDebugClient2 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient5::IsKernelDebuggerEnabled, debugger.iskerneldebuggerenabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::IsKernelDebuggerEnabled, dbgeng/IDebugClient3::IsKernelDebuggerEnabled, dbgeng/IDebugClient5::IsKernelDebuggerEnabled, IDebugClient5 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient4 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient3 interface, IsKernelDebuggerEnabled method [Windows Debugging], dbgeng/IDebugClient4::IsKernelDebuggerEnabled, IDebugClient3 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient4 interface, IDebugClient3::IsKernelDebuggerEnabled, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient2.IsKernelDebuggerEnabled
+-	IDebugClient3.IsKernelDebuggerEnabled
+-	IDebugClient4.IsKernelDebuggerEnabled
+-	IDebugClient5.IsKernelDebuggerEnabled
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

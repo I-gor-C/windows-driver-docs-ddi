@@ -1,41 +1,46 @@
 ---
-UID : NF:d3dkmdt.D3DKMDT_VPPR_GET_OFFSET_ROTATION
-title : D3DKMDT_VPPR_GET_OFFSET_ROTATION function
-author : windows-driver-content
-description : A helper function that extracts the offset angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration.
-old-location : display\d3dkmdt_vppr_get_offset_rotation.htm
-old-project : display
-ms.assetid : EA7D2840-63B2-417A-933C-C1D360106264
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VPPR_GET_OFFSET_ROTATION, D3DKMDT_VPPR_GET_OFFSET_ROTATION function [Display Devices], d3dkmdt/D3DKMDT_VPPR_GET_OFFSET_ROTATION, display.d3dkmdt_vppr_get_offset_rotation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_RENDER_PIPELINE_STAGE
+UID: NF:d3dkmdt.D3DKMDT_VPPR_GET_OFFSET_ROTATION
+title: D3DKMDT_VPPR_GET_OFFSET_ROTATION function
+author: windows-driver-content
+description: A helper function that extracts the offset angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration.
+old-location: display\d3dkmdt_vppr_get_offset_rotation.htm
+old-project: display
+ms.assetid: EA7D2840-63B2-417A-933C-C1D360106264
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_VPPR_GET_OFFSET_ROTATION, D3DKMDT_VPPR_GET_OFFSET_ROTATION function [Display Devices], d3dkmdt/D3DKMDT_VPPR_GET_OFFSET_ROTATION, display.d3dkmdt_vppr_get_offset_rotation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	D3DKMDT_VPPR_GET_OFFSET_ROTATION
+product: Windows
+targetos: Windows
+req.typenames: DXGK_RENDER_PIPELINE_STAGE
 ---
 
 

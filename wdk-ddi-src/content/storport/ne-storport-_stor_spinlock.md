@@ -1,42 +1,47 @@
 ---
-UID : NE:storport._STOR_SPINLOCK
-title : "_STOR_SPINLOCK"
-author : windows-driver-content
-description : The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
-old-location : storage\stor_spinlock.htm
-old-project : storage
-ms.assetid : 73e5e994-4133-4651-bb94-1d21386be1cd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_SPINLOCK, storport/STOR_SPINLOCK, structs-general_53d45f74-68b2-4839-81c1-c93a2773f0d8.xml, StartIoLock, InterruptLock, _STOR_SPINLOCK, STOR_SPINLOCK enumeration [Storage Devices], DpcLock, storage.stor_spinlock, storport/InterruptLock, storport/StartIoLock, storport/DpcLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NE:storport._STOR_SPINLOCK
+title: "_STOR_SPINLOCK"
+author: windows-driver-content
+description: The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
+old-location: storage\stor_spinlock.htm
+old-project: storage
+ms.assetid: 73e5e994-4133-4651-bb94-1d21386be1cd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_SPINLOCK, storport/STOR_SPINLOCK, structs-general_53d45f74-68b2-4839-81c1-c93a2773f0d8.xml, StartIoLock, InterruptLock, _STOR_SPINLOCK, STOR_SPINLOCK enumeration [Storage Devices], DpcLock, storage.stor_spinlock, storport/InterruptLock, storport/StartIoLock, storport/DpcLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_SPINLOCK
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 # _STOR_SPINLOCK Enumeration
@@ -54,21 +59,21 @@ typedef enum _STOR_SPINLOCK {
 ## Constants
 
 <table>
-
-<tr>
-<td>DpcLock</td>
-<td>Indicates a DPC spinlock.</td>
-</tr>
-
-<tr>
-<td>InterruptLock</td>
-<td>Indicates an Interrupt spinlock.</td>
-</tr>
-
-<tr>
-<td>StartIoLock</td>
-<td>Indicates a StartIo spinlock.</td>
-</tr>
+            
+                <tr>
+                    <td>DpcLock</td>
+                    <td>Indicates a DPC spinlock.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptLock</td>
+                    <td>Indicates an Interrupt spinlock.</td>
+                </tr>
+            
+                <tr>
+                    <td>StartIoLock</td>
+                    <td>Indicates a StartIo spinlock.</td>
+                </tr>
 </table>
 
 
@@ -77,9 +82,9 @@ typedef enum _STOR_SPINLOCK {
 | ---- |:---- |
 | **Header** | storport.h (include Storport.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
+        <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
 
  
 

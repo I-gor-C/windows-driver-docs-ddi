@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_POFX_DEVICE_V3
-title : "_STOR_POFX_DEVICE_V3"
-author : windows-driver-content
-description : The STOR_POFX_DEVICE_V3 structure describes the power attributes of a storage device to the power management framework (PoFx).
-old-location : storage\stor_pofx_device_v3.htm
-old-project : storage
-ms.assetid : 49B03A5F-9F96-4F0B-AC52-ADBDC8ED03B2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT, STOR_POFX_DEVICE_FLAG_NO_D0, STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION, STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE, STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT, PSTOR_POFX_DEVICE_V3 structure pointer [Storage Devices], storport/STOR_POFX_DEVICE_V2, _STOR_POFX_DEVICE_V3, *PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3 structure [Storage Devices], STOR_POFX_DEVICE_FLAG_NO_D3, storage.stor_pofx_device_v3, STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD, PSTOR_POFX_DEVICE_V3, storport/PSTOR_POFX_DEVICE_V3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3"
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_POFX_DEVICE_V3
+title: "_STOR_POFX_DEVICE_V3"
+author: windows-driver-content
+description: The STOR_POFX_DEVICE_V3 structure describes the power attributes of a storage device to the power management framework (PoFx).
+old-location: storage\stor_pofx_device_v3.htm
+old-project: storage
+ms.assetid: 49B03A5F-9F96-4F0B-AC52-ADBDC8ED03B2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT, STOR_POFX_DEVICE_FLAG_NO_D0, STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION, STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE, STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT, PSTOR_POFX_DEVICE_V3 structure pointer [Storage Devices], storport/STOR_POFX_DEVICE_V2, _STOR_POFX_DEVICE_V3, *PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3 structure [Storage Devices], STOR_POFX_DEVICE_FLAG_NO_D3, storage.stor_pofx_device_v3, STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD, PSTOR_POFX_DEVICE_V3, storport/PSTOR_POFX_DEVICE_V3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_POFX_DEVICE_V3
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3"
+req.product: Windows 10 or later.
 ---
 
 # _STOR_POFX_DEVICE_V3 structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:hidport.HidRegisterMinidriver
-title : HidRegisterMinidriver function
-author : windows-driver-content
-description : The HidRegisterMinidriver routine is called by HID minidrivers, during their initialization, to register with the HID class driver.
-old-location : hid\hidregisterminidriver.htm
-old-project : hid
-ms.assetid : 521928f8-6434-443a-83f0-7e8e00c756b5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml, hid.hidregisterminidriver, HidRegisterMinidriver routine [Human Input Devices], hidport/HidRegisterMinidriver, HidRegisterMinidriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NF:hidport.HidRegisterMinidriver
+title: HidRegisterMinidriver function
+author: windows-driver-content
+description: The HidRegisterMinidriver routine is called by HID minidrivers, during their initialization, to register with the HID class driver.
+old-location: hid\hidregisterminidriver.htm
+old-project: hid
+ms.assetid: 521928f8-6434-443a-83f0-7e8e00c756b5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml, hid.hidregisterminidriver, HidRegisterMinidriver routine [Human Input Devices], hidport/HidRegisterMinidriver, HidRegisterMinidriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hid.lib
+-	Hid.dll
+apiname:
+-	HidRegisterMinidriver
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 

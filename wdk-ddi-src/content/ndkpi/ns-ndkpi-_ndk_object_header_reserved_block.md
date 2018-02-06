@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_OBJECT_HEADER_RESERVED_BLOCK
-title : "_NDK_OBJECT_HEADER_RESERVED_BLOCK"
-author : windows-driver-content
-description : The NDK_OBJECT_HEADER_RESERVED_BLOCK structure specifies reserved information in an NDK object.
-old-location : netvista\ndk_object_header_reserved_block.htm
-old-project : netvista
-ms.assetid : 39D3265C-ED32-420F-9216-EFD0EDC27C84
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_object_header_reserved_block, NDK_OBJECT_HEADER_RESERVED_BLOCK structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_OBJECT_HEADER_RESERVED_BLOCK, _NDK_OBJECT_HEADER_RESERVED_BLOCK, NDK_OBJECT_HEADER_RESERVED_BLOCK, PNDK_OBJECT_HEADER_RESERVED_BLOCK structure pointer [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER_RESERVED_BLOCK, ndkpi/NDK_OBJECT_HEADER_RESERVED_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_OBJECT_HEADER_RESERVED_BLOCK
+UID: NS:ndkpi._NDK_OBJECT_HEADER_RESERVED_BLOCK
+title: "_NDK_OBJECT_HEADER_RESERVED_BLOCK"
+author: windows-driver-content
+description: The NDK_OBJECT_HEADER_RESERVED_BLOCK structure specifies reserved information in an NDK object.
+old-location: netvista\ndk_object_header_reserved_block.htm
+old-project: netvista
+ms.assetid: 39D3265C-ED32-420F-9216-EFD0EDC27C84
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_object_header_reserved_block, NDK_OBJECT_HEADER_RESERVED_BLOCK structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_OBJECT_HEADER_RESERVED_BLOCK, _NDK_OBJECT_HEADER_RESERVED_BLOCK, NDK_OBJECT_HEADER_RESERVED_BLOCK, PNDK_OBJECT_HEADER_RESERVED_BLOCK structure pointer [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER_RESERVED_BLOCK, ndkpi/NDK_OBJECT_HEADER_RESERVED_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_OBJECT_HEADER_RESERVED_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: NDK_OBJECT_HEADER_RESERVED_BLOCK
 ---
 
 # _NDK_OBJECT_HEADER_RESERVED_BLOCK structure

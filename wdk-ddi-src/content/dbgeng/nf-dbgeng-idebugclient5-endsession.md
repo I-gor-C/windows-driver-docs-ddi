@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.EndSession
-title : IDebugClient5::EndSession method
-author : windows-driver-content
-description : The EndSession method ends the current debugger session.
-old-location : debugger\endsession.htm
-old-project : debugger
-ms.assetid : 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : EndSession method [Windows Debugging], IDebugClient3 interface, IDebugClient5 interface [Windows Debugging], EndSession method, dbgeng/IDebugClient2::EndSession, IDebugClient4::EndSession, debugger.endsession, EndSession method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient5::EndSession, IDebugClient::EndSession, EndSession method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient4::EndSession, IDebugClient4 interface [Windows Debugging], EndSession method, dbgeng/IDebugClient3::EndSession, EndSession method [Windows Debugging], IDebugClient4 interface, IDebugClient3 interface [Windows Debugging], EndSession method, IDebugClient5::EndSession, EndSession method [Windows Debugging], dbgeng/IDebugClient::EndSession, EndSession method [Windows Debugging], IDebugClient interface, IDebugClient2::EndSession, IDebugClient interface [Windows Debugging], EndSession method, IDebugClient2 interface [Windows Debugging], EndSession method, IDebugClient_b3243254-eb98-4ee6-8dc9-92fe4c998500.xml, IDebugClient3::EndSession, EndSession, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.EndSession
+title: IDebugClient5::EndSession method
+author: windows-driver-content
+description: The EndSession method ends the current debugger session.
+old-location: debugger\endsession.htm
+old-project: debugger
+ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: EndSession method [Windows Debugging], IDebugClient3 interface, IDebugClient5 interface [Windows Debugging], EndSession method, dbgeng/IDebugClient2::EndSession, IDebugClient4::EndSession, debugger.endsession, EndSession method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient5::EndSession, IDebugClient::EndSession, EndSession method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient4::EndSession, IDebugClient4 interface [Windows Debugging], EndSession method, dbgeng/IDebugClient3::EndSession, EndSession method [Windows Debugging], IDebugClient4 interface, IDebugClient3 interface [Windows Debugging], EndSession method, IDebugClient5::EndSession, EndSession method [Windows Debugging], dbgeng/IDebugClient::EndSession, EndSession method [Windows Debugging], IDebugClient interface, IDebugClient2::EndSession, IDebugClient interface [Windows Debugging], EndSession method, IDebugClient2 interface [Windows Debugging], EndSession method, IDebugClient_b3243254-eb98-4ee6-8dc9-92fe4c998500.xml, IDebugClient3::EndSession, EndSession, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.EndSession
+-	IDebugClient2.EndSession
+-	IDebugClient3.EndSession
+-	IDebugClient4.EndSession
+-	IDebugClient5.EndSession
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

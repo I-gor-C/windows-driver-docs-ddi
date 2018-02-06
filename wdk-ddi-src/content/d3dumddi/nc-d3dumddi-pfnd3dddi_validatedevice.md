@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_VALIDATEDEVICE
-title : PFND3DDDI_VALIDATEDEVICE
-author : windows-driver-content
-description : The ValidateDevice function returns the number of passes in which the hardware can perform the blending operations that are specified in the current state.
-old-location : display\validatedevice.htm
-old-project : display
-ms.assetid : 058696e0-be4a-45f3-b3e8-55abccdce3ce
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.validatedevice, ValidateDevice callback function [Display Devices], ValidateDevice, PFND3DDDI_VALIDATEDEVICE, PFND3DDDI_VALIDATEDEVICE, d3dumddi/ValidateDevice, UserModeDisplayDriver_Functions_37e253ca-1d0f-4896-aaad-4c36053877c5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_VALIDATEDEVICE
+title: PFND3DDDI_VALIDATEDEVICE
+author: windows-driver-content
+description: The ValidateDevice function returns the number of passes in which the hardware can perform the blending operations that are specified in the current state.
+old-location: display\validatedevice.htm
+old-project: display
+ms.assetid: 058696e0-be4a-45f3-b3e8-55abccdce3ce
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.validatedevice, ValidateDevice callback function [Display Devices], ValidateDevice, PFND3DDDI_VALIDATEDEVICE, PFND3DDDI_VALIDATEDEVICE, d3dumddi/ValidateDevice, UserModeDisplayDriver_Functions_37e253ca-1d0f-4896-aaad-4c36053877c5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	ValidateDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

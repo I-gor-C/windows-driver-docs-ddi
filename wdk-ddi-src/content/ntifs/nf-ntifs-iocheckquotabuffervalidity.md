@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoCheckQuotaBufferValidity
-title : IoCheckQuotaBufferValidity function
-author : windows-driver-content
-description : The IoCheckQuotaBufferValidity routine checks whether the specified quota buffer is valid.
-old-location : ifsk\iocheckquotabuffervalidity.htm
-old-project : ifsk
-ms.assetid : 8a003d78-3b7d-44af-a7cf-a2a516c2cc20
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoCheckQuotaBufferValidity routine [Installable File System Drivers], ioref_b4dc2b93-aaf1-450b-8240-b92792182057.xml, ntifs/IoCheckQuotaBufferValidity, ifsk.iocheckquotabuffervalidity, IoCheckQuotaBufferValidity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoCheckQuotaBufferValidity
+title: IoCheckQuotaBufferValidity function
+author: windows-driver-content
+description: The IoCheckQuotaBufferValidity routine checks whether the specified quota buffer is valid.
+old-location: ifsk\iocheckquotabuffervalidity.htm
+old-project: ifsk
+ms.assetid: 8a003d78-3b7d-44af-a7cf-a2a516c2cc20
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoCheckQuotaBufferValidity routine [Installable File System Drivers], ioref_b4dc2b93-aaf1-450b-8240-b92792182057.xml, ntifs/IoCheckQuotaBufferValidity, ifsk.iocheckquotabuffervalidity, IoCheckQuotaBufferValidity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCheckQuotaBufferValidity
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

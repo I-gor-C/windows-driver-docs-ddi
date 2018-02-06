@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolEntryInformation
-title : IDebugSymbolGroup2::GetSymbolEntryInformation method
-author : windows-driver-content
-description : The GetSymbolEntryInformation method returns information about a symbol in a symbol group.
-old-location : debugger\getsymbolentryinformation2.htm
-old-project : debugger
-ms.assetid : ee8ea970-04ee-4bf5-9e81-7d5baf0eac0d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolEntryInformation method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolEntryInformation method, ComOther_b34e6d42-3da1-43bd-954d-0aaf0da5a3a8.xml, IDebugSymbolGroup2, GetSymbolEntryInformation, GetSymbolEntryInformation method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::GetSymbolEntryInformation, IDebugSymbolGroup2::GetSymbolEntryInformation, debugger.getsymbolentryinformation2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolEntryInformation
+title: IDebugSymbolGroup2::GetSymbolEntryInformation method
+author: windows-driver-content
+description: The GetSymbolEntryInformation method returns information about a symbol in a symbol group.
+old-location: debugger\getsymbolentryinformation2.htm
+old-project: debugger
+ms.assetid: ee8ea970-04ee-4bf5-9e81-7d5baf0eac0d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolEntryInformation method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolEntryInformation method, ComOther_b34e6d42-3da1-43bd-954d-0aaf0da5a3a8.xml, IDebugSymbolGroup2, GetSymbolEntryInformation, GetSymbolEntryInformation method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::GetSymbolEntryInformation, IDebugSymbolGroup2::GetSymbolEntryInformation, debugger.getsymbolentryinformation2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolEntryInformation
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

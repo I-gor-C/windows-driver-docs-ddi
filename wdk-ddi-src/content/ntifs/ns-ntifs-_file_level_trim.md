@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_LEVEL_TRIM
-title : "_FILE_LEVEL_TRIM"
-author : windows-driver-content
-description : The FILE_LEVEL_TRIM structure contains an array of byte ranges to trim for a file.
-old-location : ifsk\file_level_trim.htm
-old-project : ifsk
-ms.assetid : 72FD2A3B-B246-41BA-BEB6-169C214C32D7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_LEVEL_TRIM, FILE_LEVEL_TRIM structure [Installable File System Drivers], ifsk.file_level_trim, _FILE_LEVEL_TRIM, *PFILE_LEVEL_TRIM, PFILE_LEVEL_TRIM, ntifs/FILE_LEVEL_TRIM, PFILE_LEVEL_TRIM structure pointer [Installable File System Drivers], ntifs/PFILE_LEVEL_TRIM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_LEVEL_TRIM, *PFILE_LEVEL_TRIM
+UID: NS:ntifs._FILE_LEVEL_TRIM
+title: "_FILE_LEVEL_TRIM"
+author: windows-driver-content
+description: The FILE_LEVEL_TRIM structure contains an array of byte ranges to trim for a file.
+old-location: ifsk\file_level_trim.htm
+old-project: ifsk
+ms.assetid: 72FD2A3B-B246-41BA-BEB6-169C214C32D7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_LEVEL_TRIM, FILE_LEVEL_TRIM structure [Installable File System Drivers], ifsk.file_level_trim, _FILE_LEVEL_TRIM, *PFILE_LEVEL_TRIM, PFILE_LEVEL_TRIM, ntifs/FILE_LEVEL_TRIM, PFILE_LEVEL_TRIM structure pointer [Installable File System Drivers], ntifs/PFILE_LEVEL_TRIM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_LEVEL_TRIM
+product: Windows
+targetos: Windows
+req.typenames: FILE_LEVEL_TRIM, *PFILE_LEVEL_TRIM
 ---
 
 # _FILE_LEVEL_TRIM structure

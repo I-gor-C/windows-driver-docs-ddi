@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PCI_MSIX_SET_ENTRY
-title : PCI_MSIX_SET_ENTRY
-author : windows-driver-content
-description : The SetTableEntry routine sets the message ID for a table entry in the MSI-X hardware interrupt table.
-old-location : kernel\settableentry.htm
-old-project : kernel
-ms.assetid : A8F2A43B-CAEF-4EE6-AB3F-1DF5A9D3F7A5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.settableentry, SetTableEntry routine [Kernel-Mode Driver Architecture], SetTableEntry, PCI_MSIX_SET_ENTRY, PCI_MSIX_SET_ENTRY, wdm/SetTableEntry, kernel.msixsettableentry, drvr_interface_93258cbb-54ac-4992-9fed-57248d997245.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCI_MSIX_SET_ENTRY
+title: PCI_MSIX_SET_ENTRY
+author: windows-driver-content
+description: The SetTableEntry routine sets the message ID for a table entry in the MSI-X hardware interrupt table.
+old-location: kernel\settableentry.htm
+old-project: kernel
+ms.assetid: A8F2A43B-CAEF-4EE6-AB3F-1DF5A9D3F7A5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.settableentry, SetTableEntry routine [Kernel-Mode Driver Architecture], SetTableEntry, PCI_MSIX_SET_ENTRY, PCI_MSIX_SET_ENTRY, wdm/SetTableEntry, kernel.msixsettableentry, drvr_interface_93258cbb-54ac-4992-9fed-57248d997245.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	SetTableEntry
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

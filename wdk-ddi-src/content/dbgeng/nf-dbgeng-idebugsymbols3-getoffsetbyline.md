@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetOffsetByLine
-title : IDebugSymbols3::GetOffsetByLine method
-author : windows-driver-content
-description : The GetOffsetByLine method returns the location of the instruction that corresponds to a specified line in the source code.
-old-location : debugger\getoffsetbyline.htm
-old-project : debugger
-ms.assetid : 347e0d45-8be1-4e4e-8a6a-44d5c914bf0f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3::GetOffsetByLine, IDebugSymbols2 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3, GetOffsetByLine method [Windows Debugging], GetOffsetByLine method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols::GetOffsetByLine, IDebugSymbols_1aa7fddc-6a33-469e-828f-45ff0f31aae7.xml, IDebugSymbols interface [Windows Debugging], GetOffsetByLine method, dbgeng/IDebugSymbols3::GetOffsetByLine, dbgeng/IDebugSymbols::GetOffsetByLine, debugger.getoffsetbyline, IDebugSymbols2::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols interface, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetOffsetByLine, GetOffsetByLine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetOffsetByLine
+title: IDebugSymbols3::GetOffsetByLine method
+author: windows-driver-content
+description: The GetOffsetByLine method returns the location of the instruction that corresponds to a specified line in the source code.
+old-location: debugger\getoffsetbyline.htm
+old-project: debugger
+ms.assetid: 347e0d45-8be1-4e4e-8a6a-44d5c914bf0f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3::GetOffsetByLine, IDebugSymbols2 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3, GetOffsetByLine method [Windows Debugging], GetOffsetByLine method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols::GetOffsetByLine, IDebugSymbols_1aa7fddc-6a33-469e-828f-45ff0f31aae7.xml, IDebugSymbols interface [Windows Debugging], GetOffsetByLine method, dbgeng/IDebugSymbols3::GetOffsetByLine, dbgeng/IDebugSymbols::GetOffsetByLine, debugger.getoffsetbyline, IDebugSymbols2::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols interface, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetOffsetByLine, GetOffsetByLine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetOffsetByLine
+-	IDebugSymbols2.GetOffsetByLine
+-	IDebugSymbols3.GetOffsetByLine
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

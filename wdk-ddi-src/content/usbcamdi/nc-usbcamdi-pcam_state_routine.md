@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_STATE_ROUTINE
-title : PCAM_STATE_ROUTINE
-author : windows-driver-content
-description : A camera minidriver's state callback function restores a previously saved device context state or saves the current device context state.
-old-location : stream\camrestorestate.htm
-old-project : stream
-ms.assetid : 9a69cace-11cc-4671-9e7c-df510cbdd16d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camrestorestate, CamRestoreState, CamSaveState, MyCamState callback function [Streaming Media Devices], MyCamState, PCAM_STATE_ROUTINE, PCAM_STATE_ROUTINE, usbcamdi/MyCamState, usbcmdpr_74c8ba54-9be6-4512-a498-b49635db1760.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Windows operating system versions prior to Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_STATE_ROUTINE
+title: PCAM_STATE_ROUTINE
+author: windows-driver-content
+description: A camera minidriver's state callback function restores a previously saved device context state or saves the current device context state.
+old-location: stream\camrestorestate.htm
+old-project: stream
+ms.assetid: 9a69cace-11cc-4671-9e7c-df510cbdd16d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camrestorestate, CamRestoreState, CamSaveState, MyCamState callback function [Streaming Media Devices], MyCamState, PCAM_STATE_ROUTINE, PCAM_STATE_ROUTINE, usbcamdi/MyCamState, usbcmdpr_74c8ba54-9be6-4512-a498-b49635db1760.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Windows operating system versions prior to Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	MyCamState
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

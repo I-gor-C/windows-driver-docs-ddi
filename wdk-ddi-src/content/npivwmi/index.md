@@ -1,12 +1,12 @@
 ---
-UID : NA:npivwmi
-ms.assetid : 3f3ebad4-5170-3ce6-892b-d0f6ff7cae65
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:npivwmi
+ms.assetid: 3f3ebad4-5170-3ce6-892b-d0f6ff7cae65
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # npivwmi.h header

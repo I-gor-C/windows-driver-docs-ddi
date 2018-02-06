@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SRIOV_CAPABILITIES
-title : "_NDIS_SRIOV_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_SRIOV_CAPABILITIES structure specifies the single root I/O virtualization (SR-IOV) capabilities of the network adapter.
-old-location : netvista\ndis_sriov_capabilities.htm
-old-project : netvista
-ms.assetid : 57cf980c-4477-4c12-8d82-7a8df8b2922f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SRIOV_CAPABILITIES, *PNDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_CAPABILITIES, netvista.ndis_sriov_capabilities, _NDIS_SRIOV_CAPABILITIES, ntddndis/NDIS_SRIOV_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES"
+UID: NS:ntddndis._NDIS_SRIOV_CAPABILITIES
+title: "_NDIS_SRIOV_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_SRIOV_CAPABILITIES structure specifies the single root I/O virtualization (SR-IOV) capabilities of the network adapter.
+old-location: netvista\ndis_sriov_capabilities.htm
+old-project: netvista
+ms.assetid: 57cf980c-4477-4c12-8d82-7a8df8b2922f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SRIOV_CAPABILITIES, *PNDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_CAPABILITIES, netvista.ndis_sriov_capabilities, _NDIS_SRIOV_CAPABILITIES, ntddndis/NDIS_SRIOV_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SRIOV_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SRIOV_CAPABILITIES, NDIS_SRIOV_CAPABILITIES"
 ---
 
 # _NDIS_SRIOV_CAPABILITIES structure

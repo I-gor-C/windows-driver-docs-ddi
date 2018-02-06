@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS
-title : "_WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS"
-author : windows-driver-content
-description : The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIXDEVICE_ERROR_SECTION structure contain valid data.
-old-location : whea\whea_pcixdevice_error_section_validbits.htm
-old-project : whea
-ms.assetid : 705cfd2c-b4c0-4a59-a494-f57007e13385
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, whearef_aa4d8f33-e22c-46df-8bb7-408cf04db2d1.xml, *PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], ntddk/WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_VALIDBITS, whea.whea_pcixdevice_error_section_validbits, PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS"
+UID: NS:ntddk._WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS
+title: "_WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS"
+author: windows-driver-content
+description: The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIXDEVICE_ERROR_SECTION structure contain valid data.
+old-location: whea\whea_pcixdevice_error_section_validbits.htm
+old-project: whea
+ms.assetid: 705cfd2c-b4c0-4a59-a494-f57007e13385
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, whearef_aa4d8f33-e22c-46df-8bb7-408cf04db2d1.xml, *PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], ntddk/WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_VALIDBITS, whea.whea_pcixdevice_error_section_validbits, PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS"
 ---
 
 # _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS structure

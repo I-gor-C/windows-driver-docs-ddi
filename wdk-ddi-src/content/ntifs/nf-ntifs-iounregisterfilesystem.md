@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoUnregisterFileSystem
-title : IoUnregisterFileSystem function
-author : windows-driver-content
-description : The IoUnregisterFileSystem routine removes a file system's control device object from the global file system queue.
-old-location : ifsk\iounregisterfilesystem.htm
-old-project : ifsk
-ms.assetid : f6a0bff7-85b6-479a-b952-9a3a637e339e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoUnregisterFileSystem routine [Installable File System Drivers], ntifs/IoUnregisterFileSystem, IoUnregisterFileSystem, ifsk.iounregisterfilesystem, ioref_8799f64d-023b-4a67-8761-0899951596ad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoUnregisterFileSystem
+title: IoUnregisterFileSystem function
+author: windows-driver-content
+description: The IoUnregisterFileSystem routine removes a file system's control device object from the global file system queue.
+old-location: ifsk\iounregisterfilesystem.htm
+old-project: ifsk
+ms.assetid: f6a0bff7-85b6-479a-b952-9a3a637e339e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoUnregisterFileSystem routine [Installable File System Drivers], ntifs/IoUnregisterFileSystem, IoUnregisterFileSystem, ifsk.iounregisterfilesystem, ioref_8799f64d-023b-4a67-8761-0899951596ad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoUnregisterFileSystem
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

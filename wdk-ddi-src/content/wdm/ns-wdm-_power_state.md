@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._POWER_STATE
-title : "_POWER_STATE"
-author : windows-driver-content
-description : The POWER_STATE union specifies a system power state value or a device power state value.
-old-location : kernel\power_state.htm
-old-project : kernel
-ms.assetid : c3730035-74fc-421a-89dc-7411e53950f5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPOWER_STATE, PPOWER_STATE union pointer [Kernel-Mode Driver Architecture], kernel.power_state, *PPOWER_STATE, POWER_STATE union [Kernel-Mode Driver Architecture], _POWER_STATE, kstruct_c_a0fca0b4-3d45-48e4-b3ee-ba473ac08347.xml, wdm/POWER_STATE, wdm/PPOWER_STATE, POWER_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWER_STATE, POWER_STATE"
-req.product : Windows 10 or later.
+UID: NS:wdm._POWER_STATE
+title: "_POWER_STATE"
+author: windows-driver-content
+description: The POWER_STATE union specifies a system power state value or a device power state value.
+old-location: kernel\power_state.htm
+old-project: kernel
+ms.assetid: c3730035-74fc-421a-89dc-7411e53950f5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPOWER_STATE, PPOWER_STATE union pointer [Kernel-Mode Driver Architecture], kernel.power_state, *PPOWER_STATE, POWER_STATE union [Kernel-Mode Driver Architecture], _POWER_STATE, kstruct_c_a0fca0b4-3d45-48e4-b3ee-ba473ac08347.xml, wdm/POWER_STATE, wdm/PPOWER_STATE, POWER_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	POWER_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWER_STATE, POWER_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _POWER_STATE structure

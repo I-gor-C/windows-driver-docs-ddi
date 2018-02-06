@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetInterruptTimeout
-title : IDebugControl3::SetInterruptTimeout method
-author : windows-driver-content
-description : The SetInterruptTimeout method sets the number of seconds that the debugger engine should wait when requesting a break into the debugger.
-old-location : debugger\setinterrupttimeout.htm
-old-project : debugger
-ms.assetid : 93bc2a07-a6f7-45df-945d-81c6c53adb47
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetInterruptTimeout, IDebugControl3 interface [Windows Debugging], SetInterruptTimeout method, dbgeng/IDebugControl2::SetInterruptTimeout, SetInterruptTimeout method [Windows Debugging], IDebugControl interface, SetInterruptTimeout method [Windows Debugging], IDebugControl3 interface, IDebugControl_c16219f4-97b7-451d-8f04-30aa262667f6.xml, IDebugControl3, SetInterruptTimeout method [Windows Debugging], IDebugControl2 interface, IDebugControl3::SetInterruptTimeout, debugger.setinterrupttimeout, IDebugControl interface [Windows Debugging], SetInterruptTimeout method, IDebugControl::SetInterruptTimeout, dbgeng/IDebugControl::SetInterruptTimeout, IDebugControl2::SetInterruptTimeout, dbgeng/IDebugControl3::SetInterruptTimeout, IDebugControl2 interface [Windows Debugging], SetInterruptTimeout method, SetInterruptTimeout method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetInterruptTimeout
+title: IDebugControl3::SetInterruptTimeout method
+author: windows-driver-content
+description: The SetInterruptTimeout method sets the number of seconds that the debugger engine should wait when requesting a break into the debugger.
+old-location: debugger\setinterrupttimeout.htm
+old-project: debugger
+ms.assetid: 93bc2a07-a6f7-45df-945d-81c6c53adb47
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetInterruptTimeout, IDebugControl3 interface [Windows Debugging], SetInterruptTimeout method, dbgeng/IDebugControl2::SetInterruptTimeout, SetInterruptTimeout method [Windows Debugging], IDebugControl interface, SetInterruptTimeout method [Windows Debugging], IDebugControl3 interface, IDebugControl_c16219f4-97b7-451d-8f04-30aa262667f6.xml, IDebugControl3, SetInterruptTimeout method [Windows Debugging], IDebugControl2 interface, IDebugControl3::SetInterruptTimeout, debugger.setinterrupttimeout, IDebugControl interface [Windows Debugging], SetInterruptTimeout method, IDebugControl::SetInterruptTimeout, dbgeng/IDebugControl::SetInterruptTimeout, IDebugControl2::SetInterruptTimeout, dbgeng/IDebugControl3::SetInterruptTimeout, IDebugControl2 interface [Windows Debugging], SetInterruptTimeout method, SetInterruptTimeout method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetInterruptTimeout
+-	IDebugControl2.SetInterruptTimeout
+-	IDebugControl3.SetInterruptTimeout
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

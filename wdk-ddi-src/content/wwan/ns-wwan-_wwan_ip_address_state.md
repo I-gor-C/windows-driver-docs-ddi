@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_IP_ADDRESS_STATE
-title : "_WWAN_IP_ADDRESS_STATE"
-author : windows-driver-content
-description : The WWAN_IP_ADDRESS_STATE structure represents the IP addresses, gateways, DNS servers, and/or MTUs of a PDP context.
-old-location : netvista\wwan_ip_address_state.htm
-old-project : netvista
-ms.assetid : 63D3B055-A3B0-4A76-B53C-C5E87C40A52C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_IP_ADDRESS_STATE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE structure [Network Drivers Starting with Windows Vista], *PWWAN_IP_ADDRESS_STATE, _WWAN_IP_ADDRESS_STATE, netvista.wwan_ip_address_state, wwan/PWWAN_IP_ADDRESS_STATE, wwan/WWAN_IP_ADDRESS_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8.1 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_IP_ADDRESS_STATE
+title: "_WWAN_IP_ADDRESS_STATE"
+author: windows-driver-content
+description: The WWAN_IP_ADDRESS_STATE structure represents the IP addresses, gateways, DNS servers, and/or MTUs of a PDP context.
+old-location: netvista\wwan_ip_address_state.htm
+old-project: netvista
+ms.assetid: 63D3B055-A3B0-4A76-B53C-C5E87C40A52C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_IP_ADDRESS_STATE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE structure [Network Drivers Starting with Windows Vista], *PWWAN_IP_ADDRESS_STATE, _WWAN_IP_ADDRESS_STATE, netvista.wwan_ip_address_state, wwan/PWWAN_IP_ADDRESS_STATE, wwan/WWAN_IP_ADDRESS_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8.1 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_IP_ADDRESS_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_IP_ADDRESS_STATE structure

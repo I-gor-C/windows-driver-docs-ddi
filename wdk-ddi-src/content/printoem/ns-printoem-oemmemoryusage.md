@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem.OEMMEMORYUSAGE
-title : OEMMEMORYUSAGE
-author : windows-driver-content
-description : The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's IPrintOemUni::MemoryUsage method.
-old-location : print\oemmemoryusage.htm
-old-project : print
-ms.assetid : a7a522b8-7aa2-45b6-9200-407471dca82f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.oemmemoryusage, POEMMEMORYUSAGE structure pointer [Print Devices], printoem/POEMMEMORYUSAGE, OEMMEMORYUSAGE structure [Print Devices], POEMMEMORYUSAGE, *POEMMEMORYUSAGE, print_unidrv-pscript_rendering_c6746c1c-f6c5-4acf-bcd3-bc1f69382dae.xml, printoem/OEMMEMORYUSAGE, OEMMEMORYUSAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POEMMEMORYUSAGE, OEMMEMORYUSAGE"
-req.product : Windows 10 or later.
+UID: NS:printoem.OEMMEMORYUSAGE
+title: OEMMEMORYUSAGE
+author: windows-driver-content
+description: The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's IPrintOemUni::MemoryUsage method.
+old-location: print\oemmemoryusage.htm
+old-project: print
+ms.assetid: a7a522b8-7aa2-45b6-9200-407471dca82f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.oemmemoryusage, POEMMEMORYUSAGE structure pointer [Print Devices], printoem/POEMMEMORYUSAGE, OEMMEMORYUSAGE structure [Print Devices], POEMMEMORYUSAGE, *POEMMEMORYUSAGE, print_unidrv-pscript_rendering_c6746c1c-f6c5-4acf-bcd3-bc1f69382dae.xml, printoem/OEMMEMORYUSAGE, OEMMEMORYUSAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMMEMORYUSAGE
+product: Windows
+targetos: Windows
+req.typenames: "*POEMMEMORYUSAGE, OEMMEMORYUSAGE"
+req.product: Windows 10 or later.
 ---
 
 # OEMMEMORYUSAGE structure

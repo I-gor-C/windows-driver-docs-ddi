@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
-title : IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
-author : windows-driver-content
-description : The IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION control code configures the serial port to use the default hardware settings for the serial controller device.
-old-location : serports\ioctl_serial_apply_default_configuration.htm
-old-project : serports
-ms.assetid : 59AA6029-906C-480F-8F18-82C271A2BE88
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_apply_default_configuration, IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION control code [Serial Ports], IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION, ntddser/IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
+title: IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
+author: windows-driver-content
+description: The IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION control code configures the serial port to use the default hardware settings for the serial controller device.
+old-location: serports\ioctl_serial_apply_default_configuration.htm
+old-project: serports
+ms.assetid: 59AA6029-906C-480F-8F18-82C271A2BE88
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_apply_default_configuration, IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION control code [Serial Ports], IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION, ntddser/IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION IOCTL

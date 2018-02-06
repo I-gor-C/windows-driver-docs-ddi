@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure
-title : IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure method
-author : windows-driver-content
-description : A driver's OnReaderFailure event callback function informs the driver that a continuous reader has reported an error while processing a read request.
-old-location : wdf\iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure.htm
-old-project : wdf
-ms.assetid : ad91208e-e57a-4b80-b1a1-13b9f7eb1119
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed, OnReaderFailure, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, UMDFUSBref_01c8b9de-ab85-4cc6-abec-238dcda2b1e8.xml, OnReaderFailure method, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure
+title: IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure method
+author: windows-driver-content
+description: A driver's OnReaderFailure event callback function informs the driver that a continuous reader has reported an error while processing a read request.
+old-location: wdf\iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure.htm
+old-project: wdf
+ms.assetid: ad91208e-e57a-4b80-b1a1-13b9f7eb1119
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed, OnReaderFailure, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, UMDFUSBref_01c8b9de-ab85-4cc6-abec-238dcda2b1e8.xml, OnReaderFailure method, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfusb.h
+apiname:
+-	IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAllocatePoolWithQuotaTag
-title : ExAllocatePoolWithQuotaTag function
-author : windows-driver-content
-description : The ExAllocatePoolWithQuotaTag routine allocates pool memory, charging the quota against the current process.
-old-location : kernel\exallocatepoolwithquotatag.htm
-old-project : kernel
-ms.assetid : 1d2e4c8c-c76c-4936-80bf-005d8a393aa9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExAllocatePoolWithQuotaTag, ExAllocatePoolWithQuotaTag routine [Kernel-Mode Driver Architecture], wdm/ExAllocatePoolWithQuotaTag, k102_70106c3b-0d33-4fa7-be6a-2ac42cf3cbfe.xml, kernel.exallocatepoolwithquotatag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAllocatePoolWithQuotaTag
+title: ExAllocatePoolWithQuotaTag function
+author: windows-driver-content
+description: The ExAllocatePoolWithQuotaTag routine allocates pool memory, charging the quota against the current process.
+old-location: kernel\exallocatepoolwithquotatag.htm
+old-project: kernel
+ms.assetid: 1d2e4c8c-c76c-4936-80bf-005d8a393aa9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExAllocatePoolWithQuotaTag, ExAllocatePoolWithQuotaTag routine [Kernel-Mode Driver Architecture], wdm/ExAllocatePoolWithQuotaTag, k102_70106c3b-0d33-4fa7-be6a-2ac42cf3cbfe.xml, kernel.exallocatepoolwithquotatag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAllocatePoolWithQuotaTag
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

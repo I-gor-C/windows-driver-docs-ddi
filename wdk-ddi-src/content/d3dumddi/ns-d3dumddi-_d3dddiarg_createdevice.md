@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATEDEVICE
-title : "_D3DDDIARG_CREATEDEVICE"
-author : windows-driver-content
-description : The D3DDDIARG_CREATEDEVICE structure contains information that describes the display device to create.
-old-location : display\d3dddiarg_createdevice.htm
-old-project : display
-ms.assetid : 18be278c-2d69-472b-9baf-7c35f8abe879
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATEDEVICE, _D3DDDIARG_CREATEDEVICE, D3DDDIARG_CREATEDEVICE structure [Display Devices], display.d3dddiarg_createdevice, d3dumddi/D3DDDIARG_CREATEDEVICE, UMDisplayDriver_param_Structs_42cad924-5200-4737-9d17-4464767f9e93.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATEDEVICE
+UID: NS:d3dumddi._D3DDDIARG_CREATEDEVICE
+title: "_D3DDDIARG_CREATEDEVICE"
+author: windows-driver-content
+description: The D3DDDIARG_CREATEDEVICE structure contains information that describes the display device to create.
+old-location: display\d3dddiarg_createdevice.htm
+old-project: display
+ms.assetid: 18be278c-2d69-472b-9baf-7c35f8abe879
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_CREATEDEVICE, _D3DDDIARG_CREATEDEVICE, D3DDDIARG_CREATEDEVICE structure [Display Devices], display.d3dddiarg_createdevice, d3dumddi/D3DDDIARG_CREATEDEVICE, UMDisplayDriver_param_Structs_42cad924-5200-4737-9d17-4464767f9e93.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATEDEVICE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATEDEVICE
 ---
 
 # _D3DDDIARG_CREATEDEVICE structure

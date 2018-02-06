@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.NextEntry
-title : IDebugFailureAnalysis2::NextEntry method
-author : windows-driver-content
-description : The NextEntry method gets the next FA entry, after a given FA entry, in a DebugFailureAnalysis object.
-old-location : debugger\idebugfailureanalysis2_nextentry.htm
-old-project : debugger
-ms.assetid : B5640B86-D931-4A26-85F2-BBE18620668C
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2::NextEntry, NextEntry method [Windows Debugging], NextEntry method [Windows Debugging], IDebugFailureAnalysis2 interface, NextEntry, IDebugFailureAnalysis2 interface [Windows Debugging], NextEntry method, debugger.idebugfailureanalysis2_nextentry, extsfns/IDebugFailureAnalysis2::NextEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.NextEntry
+title: IDebugFailureAnalysis2::NextEntry method
+author: windows-driver-content
+description: The NextEntry method gets the next FA entry, after a given FA entry, in a DebugFailureAnalysis object.
+old-location: debugger\idebugfailureanalysis2_nextentry.htm
+old-project: debugger
+ms.assetid: B5640B86-D931-4A26-85F2-BBE18620668C
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2::NextEntry, NextEntry method [Windows Debugging], NextEntry method [Windows Debugging], IDebugFailureAnalysis2 interface, NextEntry, IDebugFailureAnalysis2 interface [Windows Debugging], NextEntry method, debugger.idebugfailureanalysis2_nextentry, extsfns/IDebugFailureAnalysis2::NextEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.NextEntry
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

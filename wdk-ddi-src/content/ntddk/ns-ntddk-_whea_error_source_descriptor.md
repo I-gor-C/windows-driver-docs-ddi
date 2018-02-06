@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_SOURCE_DESCRIPTOR
-title : "_WHEA_ERROR_SOURCE_DESCRIPTOR"
-author : windows-driver-content
-description : The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source.
-old-location : whea\whea_error_source_descriptor.htm
-old-project : whea
-ms.assetid : 59ee6d51-c60a-4a71-b831-1b9437a69d34
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_ERROR_SOURCE_DESCRIPTOR, _WHEA_ERROR_SOURCE_DESCRIPTOR, WHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], PWHEA_ERROR_SOURCE_DESCRIPTOR, whearef_eb6a1167-cf15-4a53-b885-c3d5c4353510.xml, *PWHEA_ERROR_SOURCE_DESCRIPTOR, ntddk/PWHEA_ERROR_SOURCE_DESCRIPTOR, whea.whea_error_source_descriptor, WHEA_ERROR_SOURCE_DESCRIPTOR structure [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_ERROR_SOURCE_DESCRIPTOR, *PWHEA_ERROR_SOURCE_DESCRIPTOR
+UID: NS:ntddk._WHEA_ERROR_SOURCE_DESCRIPTOR
+title: "_WHEA_ERROR_SOURCE_DESCRIPTOR"
+author: windows-driver-content
+description: The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source.
+old-location: whea\whea_error_source_descriptor.htm
+old-project: whea
+ms.assetid: 59ee6d51-c60a-4a71-b831-1b9437a69d34
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WHEA_ERROR_SOURCE_DESCRIPTOR, _WHEA_ERROR_SOURCE_DESCRIPTOR, WHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], PWHEA_ERROR_SOURCE_DESCRIPTOR, whearef_eb6a1167-cf15-4a53-b885-c3d5c4353510.xml, *PWHEA_ERROR_SOURCE_DESCRIPTOR, ntddk/PWHEA_ERROR_SOURCE_DESCRIPTOR, whea.whea_error_source_descriptor, WHEA_ERROR_SOURCE_DESCRIPTOR structure [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_SOURCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_ERROR_SOURCE_DESCRIPTOR, *PWHEA_ERROR_SOURCE_DESCRIPTOR
 ---
 
 # _WHEA_ERROR_SOURCE_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_PRECONNECT_INFO
-title : "_AVC_PRECONNECT_INFO"
-author : windows-driver-content
-description : The AVC_PRECONNECT_INFO structure specifies the preconnection information for the specified pin ID (zero-based offset) on an AV/C subunit device.
-old-location : stream\avc_preconnect_info.htm
-old-project : stream
-ms.assetid : 823713de-16d4-45cd-936e-1af4a8425c94
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : AVC_PRECONNECT_INFO structure [Streaming Media Devices], avcref_86ee1545-848a-4186-9b6a-bee1c689fa68.xml, *PAVC_PRECONNECT_INFO, avc/PAVC_PRECONNECT_INFO, avc/AVC_PRECONNECT_INFO, _AVC_PRECONNECT_INFO, AVC_PRECONNECT_INFO, PAVC_PRECONNECT_INFO structure pointer [Streaming Media Devices], PAVC_PRECONNECT_INFO, stream.avc_preconnect_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_PRECONNECT_INFO, AVC_PRECONNECT_INFO"
+UID: NS:avc._AVC_PRECONNECT_INFO
+title: "_AVC_PRECONNECT_INFO"
+author: windows-driver-content
+description: The AVC_PRECONNECT_INFO structure specifies the preconnection information for the specified pin ID (zero-based offset) on an AV/C subunit device.
+old-location: stream\avc_preconnect_info.htm
+old-project: stream
+ms.assetid: 823713de-16d4-45cd-936e-1af4a8425c94
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: AVC_PRECONNECT_INFO structure [Streaming Media Devices], avcref_86ee1545-848a-4186-9b6a-bee1c689fa68.xml, *PAVC_PRECONNECT_INFO, avc/PAVC_PRECONNECT_INFO, avc/AVC_PRECONNECT_INFO, _AVC_PRECONNECT_INFO, AVC_PRECONNECT_INFO, PAVC_PRECONNECT_INFO structure pointer [Streaming Media Devices], PAVC_PRECONNECT_INFO, stream.avc_preconnect_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_PRECONNECT_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_PRECONNECT_INFO, AVC_PRECONNECT_INFO"
 ---
 
 # _AVC_PRECONNECT_INFO structure

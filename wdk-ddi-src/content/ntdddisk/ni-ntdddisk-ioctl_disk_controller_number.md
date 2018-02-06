@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_CONTROLLER_NUMBER
-title : IOCTL_DISK_CONTROLLER_NUMBER
-author : windows-driver-content
-description : Retrieves the controller number and disk number for an IDE disk.
-old-location : storage\ioctl_disk_controller_number.htm
-old-project : storage
-ms.assetid : dbf7829b-c5b9-4428-a296-34199a726ec5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_controller_number, IOCTL_DISK_CONTROLLER_NUMBER control code [Storage Devices], IOCTL_DISK_CONTROLLER_NUMBER, ntdddisk/IOCTL_DISK_CONTROLLER_NUMBER, k307_227ab511-78ff-4aba-be29-3429329d05e5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_CONTROLLER_NUMBER
+title: IOCTL_DISK_CONTROLLER_NUMBER
+author: windows-driver-content
+description: Retrieves the controller number and disk number for an IDE disk.
+old-location: storage\ioctl_disk_controller_number.htm
+old-project: storage
+ms.assetid: dbf7829b-c5b9-4428-a296-34199a726ec5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_controller_number, IOCTL_DISK_CONTROLLER_NUMBER control code [Storage Devices], IOCTL_DISK_CONTROLLER_NUMBER, ntdddisk/IOCTL_DISK_CONTROLLER_NUMBER, k307_227ab511-78ff-4aba-be29-3429329d05e5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_CONTROLLER_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_CONTROLLER_NUMBER IOCTL

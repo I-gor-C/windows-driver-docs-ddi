@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TIMECODE_S
-title : KSPROPERTY_TIMECODE_S
-author : windows-driver-content
-description : The KSPROPERTY_TIMECODE_S structure describes a timecode.
-old-location : stream\ksproperty_timecode_s.htm
-old-project : stream
-ms.assetid : 45af16ee-7405-44a4-ad14-e2cf9d916164
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_timecode_s, *PKSPROPERTY_TIMECODE_S, ksmedia/KSPROPERTY_TIMECODE_S, vidcapstruct_03a0e9f7-37b7-4591-8cbc-e1d189c82ef2.xml, KSPROPERTY_TIMECODE_S structure [Streaming Media Devices], PKSPROPERTY_TIMECODE_S, ksmedia/PKSPROPERTY_TIMECODE_S, PKSPROPERTY_TIMECODE_S structure pointer [Streaming Media Devices], KSPROPERTY_TIMECODE_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_TIMECODE_S, KSPROPERTY_TIMECODE_S"
+UID: NS:ksmedia.KSPROPERTY_TIMECODE_S
+title: KSPROPERTY_TIMECODE_S
+author: windows-driver-content
+description: The KSPROPERTY_TIMECODE_S structure describes a timecode.
+old-location: stream\ksproperty_timecode_s.htm
+old-project: stream
+ms.assetid: 45af16ee-7405-44a4-ad14-e2cf9d916164
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksproperty_timecode_s, *PKSPROPERTY_TIMECODE_S, ksmedia/KSPROPERTY_TIMECODE_S, vidcapstruct_03a0e9f7-37b7-4591-8cbc-e1d189c82ef2.xml, KSPROPERTY_TIMECODE_S structure [Streaming Media Devices], PKSPROPERTY_TIMECODE_S, ksmedia/PKSPROPERTY_TIMECODE_S, PKSPROPERTY_TIMECODE_S structure pointer [Streaming Media Devices], KSPROPERTY_TIMECODE_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TIMECODE_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_TIMECODE_S, KSPROPERTY_TIMECODE_S"
 ---
 
 # KSPROPERTY_TIMECODE_S structure

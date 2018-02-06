@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON
-title : EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON
-author : windows-driver-content
-description : A driver's EvtDeviceArmWakeFromSxWithReason event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state.
-old-location : wdf\evtdevicearmwakefromsxwithreason.htm
-old-project : wdf
-ms.assetid : 8966ea8f-9760-4a09-b9d3-8fd1ac278b12
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicearmwakefromsxwithreason, EvtDeviceArmWakeFromSxWithReason callback function, EvtDeviceArmWakeFromSxWithReason, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON, wdfdevice/EvtDeviceArmWakeFromSxWithReason, DFDeviceObjectGeneralRef_4d1a0d9f-ce8a-465c-afb9-0ded36c70f42.xml, kmdf.evtdevicearmwakefromsxwithreason
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.7
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON
+title: EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON
+author: windows-driver-content
+description: A driver's EvtDeviceArmWakeFromSxWithReason event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state.
+old-location: wdf\evtdevicearmwakefromsxwithreason.htm
+old-project: wdf
+ms.assetid: 8966ea8f-9760-4a09-b9d3-8fd1ac278b12
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicearmwakefromsxwithreason, EvtDeviceArmWakeFromSxWithReason callback function, EvtDeviceArmWakeFromSxWithReason, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX_WITH_REASON, wdfdevice/EvtDeviceArmWakeFromSxWithReason, DFDeviceObjectGeneralRef_4d1a0d9f-ce8a-465c-afb9-0ded36c70f42.xml, kmdf.evtdevicearmwakefromsxwithreason
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.7
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceArmWakeFromSxWithReason
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

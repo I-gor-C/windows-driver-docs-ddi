@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_CREATE_CONNECTOR
-title : NDK_FN_CREATE_CONNECTOR
-author : windows-driver-content
-description : The NdkCreateConnector (NDK_FN_CREATE_CONNECTOR) function creates an NDK connector object.
-old-location : netvista\ndk_fn_create_connector.htm
-old-project : netvista
-ms.assetid : E800AC7B-EAEB-44FB-96ED-890C6442F066
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_create_connector, NdkCreateConnector callback function [Network Drivers Starting with Windows Vista], NdkCreateConnector, NDK_FN_CREATE_CONNECTOR, NDK_FN_CREATE_CONNECTOR, ndkpi/NdkCreateConnector
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_CREATE_CONNECTOR
+title: NDK_FN_CREATE_CONNECTOR
+author: windows-driver-content
+description: The NdkCreateConnector (NDK_FN_CREATE_CONNECTOR) function creates an NDK connector object.
+old-location: netvista\ndk_fn_create_connector.htm
+old-project: netvista
+ms.assetid: E800AC7B-EAEB-44FB-96ED-890C6442F066
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_create_connector, NdkCreateConnector callback function [Network Drivers Starting with Windows Vista], NdkCreateConnector, NDK_FN_CREATE_CONNECTOR, NDK_FN_CREATE_CONNECTOR, ndkpi/NdkCreateConnector
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkCreateConnector
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

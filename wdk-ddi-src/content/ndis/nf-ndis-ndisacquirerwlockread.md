@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAcquireRWLockRead
-title : NdisAcquireRWLockRead function
-author : windows-driver-content
-description : The NdisAcquireRWLockRead function obtains a read lock that the caller uses for read access to resources that are shared among driver threads.
-old-location : netvista\ndisacquirerwlockread.htm
-old-project : netvista
-ms.assetid : a9c16537-e344-43d4-bae7-fb11487caa0e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisAcquireRWLockRead function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_0ac3bf44-b94f-4818-af69-79eec8045cc9.xml, netvista.ndisacquirerwlockread, NdisAcquireRWLockRead, ndis/NdisAcquireRWLockRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAcquireRWLockRead
+title: NdisAcquireRWLockRead function
+author: windows-driver-content
+description: The NdisAcquireRWLockRead function obtains a read lock that the caller uses for read access to resources that are shared among driver threads.
+old-location: netvista\ndisacquirerwlockread.htm
+old-project: netvista
+ms.assetid: a9c16537-e344-43d4-bae7-fb11487caa0e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisAcquireRWLockRead function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_0ac3bf44-b94f-4818-af69-79eec8045cc9.xml, netvista.ndisacquirerwlockread, NdisAcquireRWLockRead, ndis/NdisAcquireRWLockRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAcquireRWLockRead
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

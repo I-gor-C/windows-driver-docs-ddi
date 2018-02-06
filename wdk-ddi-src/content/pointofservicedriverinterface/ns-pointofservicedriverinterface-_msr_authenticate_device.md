@@ -1,41 +1,46 @@
 ---
-UID : NS:pointofservicedriverinterface._MSR_AUTHENTICATE_DEVICE
-title : "_MSR_AUTHENTICATE_DEVICE"
-author : windows-driver-content
-description : This structure provides the authentication information used to authenticate a device.
-old-location : pos\msr_authenticate_device.htm
-old-project : pos
-ms.assetid : b75dce2c-5ad5-4340-b1b7-5fcf4440e58c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_MSR_AUTHENTICATE_DEVICE, PMSR_AUTHENTICATE_DEVICE, pointofservicedriverinterface/PMSR_AUTHENTICATE_DEVICE, pointofservicedriverinterface/MSR_AUTHENTICATE_DEVICE, pos.msr_authenticate_device, MSR_AUTHENTICATE_DEVICE structure, MSR_AUTHENTICATE_DEVICE, *PMSR_AUTHENTICATE_DEVICE, PMSR_AUTHENTICATE_DEVICE structure pointer"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pointofservicedriverinterface.h
-req.include-header : PointOfServiceDriverInterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSR_AUTHENTICATE_DEVICE, *PMSR_AUTHENTICATE_DEVICE
+UID: NS:pointofservicedriverinterface._MSR_AUTHENTICATE_DEVICE
+title: "_MSR_AUTHENTICATE_DEVICE"
+author: windows-driver-content
+description: This structure provides the authentication information used to authenticate a device.
+old-location: pos\msr_authenticate_device.htm
+old-project: pos
+ms.assetid: b75dce2c-5ad5-4340-b1b7-5fcf4440e58c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_MSR_AUTHENTICATE_DEVICE, PMSR_AUTHENTICATE_DEVICE, pointofservicedriverinterface/PMSR_AUTHENTICATE_DEVICE, pointofservicedriverinterface/MSR_AUTHENTICATE_DEVICE, pos.msr_authenticate_device, MSR_AUTHENTICATE_DEVICE structure, MSR_AUTHENTICATE_DEVICE, *PMSR_AUTHENTICATE_DEVICE, PMSR_AUTHENTICATE_DEVICE structure pointer"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pointofservicedriverinterface.h
+req.include-header: PointOfServiceDriverInterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	PointOfServiceDriverInterface.h
+apiname:
+-	MSR_AUTHENTICATE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: MSR_AUTHENTICATE_DEVICE, *PMSR_AUTHENTICATE_DEVICE
 ---
 
 # _MSR_AUTHENTICATE_DEVICE structure

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.ExecuteCommandFile
-title : IDebugControl3::ExecuteCommandFile method
-author : windows-driver-content
-description : The ExecuteCommandFile method opens the specified file and executes the debugger commands that are contained within.
-old-location : debugger\executecommandfile.htm
-old-project : debugger
-ms.assetid : 6b8f53d7-361c-40a3-b93c-39e653bd9032
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl::ExecuteCommandFile, debugger.executecommandfile, IDebugControl2 interface [Windows Debugging], ExecuteCommandFile method, IDebugControl3 interface [Windows Debugging], ExecuteCommandFile method, ExecuteCommandFile method [Windows Debugging], IDebugControl_61c4589a-321e-4574-8565-87bdc7b36a73.xml, IDebugControl3, IDebugControl interface [Windows Debugging], ExecuteCommandFile method, ExecuteCommandFile method [Windows Debugging], IDebugControl3 interface, ExecuteCommandFile method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::ExecuteCommandFile, IDebugControl3::ExecuteCommandFile, IDebugControl2::ExecuteCommandFile, dbgeng/IDebugControl::ExecuteCommandFile, ExecuteCommandFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.ExecuteCommandFile
+title: IDebugControl3::ExecuteCommandFile method
+author: windows-driver-content
+description: The ExecuteCommandFile method opens the specified file and executes the debugger commands that are contained within.
+old-location: debugger\executecommandfile.htm
+old-project: debugger
+ms.assetid: 6b8f53d7-361c-40a3-b93c-39e653bd9032
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl::ExecuteCommandFile, debugger.executecommandfile, IDebugControl2 interface [Windows Debugging], ExecuteCommandFile method, IDebugControl3 interface [Windows Debugging], ExecuteCommandFile method, ExecuteCommandFile method [Windows Debugging], IDebugControl_61c4589a-321e-4574-8565-87bdc7b36a73.xml, IDebugControl3, IDebugControl interface [Windows Debugging], ExecuteCommandFile method, ExecuteCommandFile method [Windows Debugging], IDebugControl3 interface, ExecuteCommandFile method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::ExecuteCommandFile, IDebugControl3::ExecuteCommandFile, IDebugControl2::ExecuteCommandFile, dbgeng/IDebugControl::ExecuteCommandFile, ExecuteCommandFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.ExecuteCommandFile
+-	IDebugControl2.ExecuteCommandFile
+-	IDebugControl3.ExecuteCommandFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

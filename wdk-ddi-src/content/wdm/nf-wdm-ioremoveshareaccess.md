@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoRemoveShareAccess
-title : IoRemoveShareAccess function
-author : windows-driver-content
-description : The IoRemoveShareAccess routine removes the access and share-access information for a given open instance of a file object.
-old-location : kernel\ioremoveshareaccess.htm
-old-project : kernel
-ms.assetid : 999ee9cc-13c7-4e6b-a294-7e7d28272384
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoRemoveShareAccess, k104_0034e41b-0320-40e0-8dea-847db6b6dc58.xml, IoRemoveShareAccess routine [Kernel-Mode Driver Architecture], wdm/IoRemoveShareAccess, kernel.ioremoveshareaccess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoRemoveShareAccess
+title: IoRemoveShareAccess function
+author: windows-driver-content
+description: The IoRemoveShareAccess routine removes the access and share-access information for a given open instance of a file object.
+old-location: kernel\ioremoveshareaccess.htm
+old-project: kernel
+ms.assetid: 999ee9cc-13c7-4e6b-a294-7e7d28272384
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoRemoveShareAccess, k104_0034e41b-0320-40e0-8dea-847db6b6dc58.xml, IoRemoveShareAccess routine [Kernel-Mode Driver Architecture], wdm/IoRemoveShareAccess, kernel.ioremoveshareaccess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRemoveShareAccess
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

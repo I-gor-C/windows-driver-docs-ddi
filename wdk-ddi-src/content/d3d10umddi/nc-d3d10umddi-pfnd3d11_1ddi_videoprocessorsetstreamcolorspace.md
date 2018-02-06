@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE
-title : PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE
-author : windows-driver-content
-description : Sets the color space for an input stream on the video processor.
-old-location : display\videoprocessorsetstreamcolorspace.htm
-old-project : display
-ms.assetid : bb187968-ae2a-4872-a745-fb42c0cff528
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetstreamcolorspace, pfnVideoProcessorSetStreamColorSpace callback function [Display Devices], pfnVideoProcessorSetStreamColorSpace, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE, d3d10umddi/pfnVideoProcessorSetStreamColorSpace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE
+title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE
+author: windows-driver-content
+description: Sets the color space for an input stream on the video processor.
+old-location: display\videoprocessorsetstreamcolorspace.htm
+old-project: display
+ms.assetid: bb187968-ae2a-4872-a745-fb42c0cff528
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetstreamcolorspace, pfnVideoProcessorSetStreamColorSpace callback function [Display Devices], pfnVideoProcessorSetStreamColorSpace, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE, d3d10umddi/pfnVideoProcessorSetStreamColorSpace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetStreamColorSpace
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

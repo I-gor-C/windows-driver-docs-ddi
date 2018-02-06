@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePciStream.Service
-title : IMiniportWavePciStream::Service method
-author : windows-driver-content
-description : The Service method notifies the miniport driver of a request for service.
-old-location : audio\iminiportwavepcistream_service.htm
-old-project : audio
-ms.assetid : d41e0774-54b4-43cc-997d-fbd512440450
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWavePciStream::Service, Service method [Audio Devices], audio.iminiportwavepcistream_service, IMiniportWavePciStream, Service, Service method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::Service, audmp-routines_c723ca89-3315-43a2-b93b-86c5bce87910.xml, IMiniportWavePciStream interface [Audio Devices], Service method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePciStream.Service
+title: IMiniportWavePciStream::Service method
+author: windows-driver-content
+description: The Service method notifies the miniport driver of a request for service.
+old-location: audio\iminiportwavepcistream_service.htm
+old-project: audio
+ms.assetid: d41e0774-54b4-43cc-997d-fbd512440450
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IMiniportWavePciStream::Service, Service method [Audio Devices], audio.iminiportwavepcistream_service, IMiniportWavePciStream, Service, Service method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::Service, audmp-routines_c723ca89-3315-43a2-b93b-86c5bce87910.xml, IMiniportWavePciStream interface [Audio Devices], Service method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePciStream.Service
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

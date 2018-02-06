@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION
-title : PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION
-author : windows-driver-content
-description : The AllocateDmaBufferWithNotification routine allocates a data buffer in system memory for a DMA engine.The function pointer type for an AllocateDmaBufferWithNotification routine is defined as follows.
-old-location : audio\allocatedmabufferwithnotification.htm
-old-project : audio
-ms.assetid : c74b5969-35d4-45db-b631-31e00572107d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.allocatedmabufferwithnotification, AllocateDmaBufferWithNotification callback function [Audio Devices], AllocateDmaBufferWithNotification, PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION, PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION, hdaudio/AllocateDmaBufferWithNotification, aud-prop2_37aa129c-f389-402a-ba68-8dedb9ce6b6b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION
+title: PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION
+author: windows-driver-content
+description: The AllocateDmaBufferWithNotification routine allocates a data buffer in system memory for a DMA engine.The function pointer type for an AllocateDmaBufferWithNotification routine is defined as follows.
+old-location: audio\allocatedmabufferwithnotification.htm
+old-project: audio
+ms.assetid: c74b5969-35d4-45db-b631-31e00572107d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.allocatedmabufferwithnotification, AllocateDmaBufferWithNotification callback function [Audio Devices], AllocateDmaBufferWithNotification, PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION, PALLOCATE_DMA_BUFFER_WITH_NOTIFICATION, hdaudio/AllocateDmaBufferWithNotification, aud-prop2_37aa129c-f389-402a-ba68-8dedb9ce6b6b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Hdaudio.h
+apiname:
+-	AllocateDmaBufferWithNotification
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

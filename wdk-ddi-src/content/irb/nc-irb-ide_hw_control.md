@@ -1,41 +1,46 @@
 ---
-UID : NC:irb.IDE_HW_CONTROL
-title : IDE_HW_CONTROL
-author : windows-driver-content
-description : The IdeHwControl miniport driver routine notifies the miniport driver about Plug and Play (PnP) and power events.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\idehwcontrol.htm
-old-project : storage
-ms.assetid : 53f85f8d-3b50-4cfe-8bdd-d41d8c057f3e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.idehwcontrol, IdeHwControl routine [Storage Devices], IdeHwControl, IDE_HW_CONTROL, IDE_HW_CONTROL, irb/IdeHwControl, atartns_9c868c08-5470-4940-9067-0aa8a796b191.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NC:irb.IDE_HW_CONTROL
+title: IDE_HW_CONTROL
+author: windows-driver-content
+description: The IdeHwControl miniport driver routine notifies the miniport driver about Plug and Play (PnP) and power events.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\idehwcontrol.htm
+old-project: storage
+ms.assetid: 53f85f8d-3b50-4cfe-8bdd-d41d8c057f3e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.idehwcontrol, IdeHwControl routine [Storage Devices], IdeHwControl, IDE_HW_CONTROL, IDE_HW_CONTROL, irb/IdeHwControl, atartns_9c868c08-5470-4940-9067-0aa8a796b191.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	irb.h
+apiname:
+-	IdeHwControl
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

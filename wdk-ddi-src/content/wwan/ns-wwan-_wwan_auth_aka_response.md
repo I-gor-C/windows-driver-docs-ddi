@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_AUTH_AKA_RESPONSE
-title : "_WWAN_AUTH_AKA_RESPONSE"
-author : windows-driver-content
-description : The WWAN_AUTH_AKA_RESPONSE structure represents a response to an AKA authentication challenge.
-old-location : netvista\wwan_auth_aka_response.htm
-old-project : netvista
-ms.assetid : 16F20188-AFAC-46BF-9D90-26376DEF1595
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_AUTH_AKA_RESPONSE, PWWAN_AUTH_AKA_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_AKA_RESPONSE, *PWWAN_AUTH_AKA_RESPONSE, netvista.wwan_auth_aka_response, PWWAN_AUTH_AKA_RESPONSE, WWAN_AUTH_AKA_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_AKA_RESPONSE, _WWAN_AUTH_AKA_RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_AUTH_AKA_RESPONSE, WWAN_AUTH_AKA_RESPONSE"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_AUTH_AKA_RESPONSE
+title: "_WWAN_AUTH_AKA_RESPONSE"
+author: windows-driver-content
+description: The WWAN_AUTH_AKA_RESPONSE structure represents a response to an AKA authentication challenge.
+old-location: netvista\wwan_auth_aka_response.htm
+old-project: netvista
+ms.assetid: 16F20188-AFAC-46BF-9D90-26376DEF1595
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_AUTH_AKA_RESPONSE, PWWAN_AUTH_AKA_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_AKA_RESPONSE, *PWWAN_AUTH_AKA_RESPONSE, netvista.wwan_auth_aka_response, PWWAN_AUTH_AKA_RESPONSE, WWAN_AUTH_AKA_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_AKA_RESPONSE, _WWAN_AUTH_AKA_RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_AUTH_AKA_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_AUTH_AKA_RESPONSE, WWAN_AUTH_AKA_RESPONSE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_AUTH_AKA_RESPONSE structure

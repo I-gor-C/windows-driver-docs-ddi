@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoInitializeTimer
-title : IoInitializeTimer function
-author : windows-driver-content
-description : The IoInitializeTimer routine sets up a driver-supplied IoTimer routine associated with a given device object.
-old-location : kernel\ioinitializetimer.htm
-old-project : kernel
-ms.assetid : f2b0f74d-7417-443e-96ec-5101b1289f9d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoInitializeTimer, IoInitializeTimer routine [Kernel-Mode Driver Architecture], kernel.ioinitializetimer, k104_28bd2888-4ec7-4de8-b2ea-f006a8f39209.xml, IoInitializeTimer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoInitializeTimer
+title: IoInitializeTimer function
+author: windows-driver-content
+description: The IoInitializeTimer routine sets up a driver-supplied IoTimer routine associated with a given device object.
+old-location: kernel\ioinitializetimer.htm
+old-project: kernel
+ms.assetid: f2b0f74d-7417-443e-96ec-5101b1289f9d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoInitializeTimer, IoInitializeTimer routine [Kernel-Mode Driver Architecture], kernel.ioinitializetimer, k104_28bd2888-4ec7-4de8-b2ea-f006a8f39209.xml, IoInitializeTimer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoInitializeTimer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSPROPERTY_SPHLI
-title : "_KSPROPERTY_SPHLI"
-author : windows-driver-content
-description : The KSPROPERTY_SPHLI structure is used to describe a rectangle of subpicture or screen whose color or contrast is to be changed.
-old-location : stream\ksproperty_sphli.htm
-old-project : stream
-ms.assetid : e1ee8d13-7f83-4020-9f34-4b2c3626685b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : dvdref_f6cc5797-e4f6-4973-abff-6b1bb9c0c637.xml, PKSPROPERTY_SPHLI, KSPROPERTY_SPHLI structure [Streaming Media Devices], stream.ksproperty_sphli, PKSPROPERTY_SPHLI structure pointer [Streaming Media Devices], KSPROPERTY_SPHLI, _KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI, ksmedia/PKSPROPERTY_SPHLI, ksmedia/KSPROPERTY_SPHLI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI
+UID: NS:ksmedia._KSPROPERTY_SPHLI
+title: "_KSPROPERTY_SPHLI"
+author: windows-driver-content
+description: The KSPROPERTY_SPHLI structure is used to describe a rectangle of subpicture or screen whose color or contrast is to be changed.
+old-location: stream\ksproperty_sphli.htm
+old-project: stream
+ms.assetid: e1ee8d13-7f83-4020-9f34-4b2c3626685b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: dvdref_f6cc5797-e4f6-4973-abff-6b1bb9c0c637.xml, PKSPROPERTY_SPHLI, KSPROPERTY_SPHLI structure [Streaming Media Devices], stream.ksproperty_sphli, PKSPROPERTY_SPHLI structure pointer [Streaming Media Devices], KSPROPERTY_SPHLI, _KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI, ksmedia/PKSPROPERTY_SPHLI, ksmedia/KSPROPERTY_SPHLI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_SPHLI
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI
 ---
 
 # _KSPROPERTY_SPHLI structure

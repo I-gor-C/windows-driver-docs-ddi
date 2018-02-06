@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoCancelFileOpen
-title : IoCancelFileOpen function
-author : windows-driver-content
-description : The IoCancelFileOpen routine can be used by a file system filter driver to close a file that has been opened by a file system driver in the filter driver's device stack.
-old-location : ifsk\iocancelfileopen.htm
-old-project : ifsk
-ms.assetid : 249a77b4-c0da-4445-a669-1c4e2ced5b57
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoCancelFileOpen, IoCancelFileOpen routine [Installable File System Drivers], ntddk/IoCancelFileOpen, ioref_e63977d2-a70b-4743-85e2-557458ca89ae.xml, ifsk.iocancelfileopen
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoCancelFileOpen
+title: IoCancelFileOpen function
+author: windows-driver-content
+description: The IoCancelFileOpen routine can be used by a file system filter driver to close a file that has been opened by a file system driver in the filter driver's device stack.
+old-location: ifsk\iocancelfileopen.htm
+old-project: ifsk
+ms.assetid: 249a77b4-c0da-4445-a669-1c4e2ced5b57
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoCancelFileOpen, IoCancelFileOpen routine [Installable File System Drivers], ntddk/IoCancelFileOpen, ioref_e63977d2-a70b-4743-85e2-557458ca89ae.xml, ifsk.iocancelfileopen
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCancelFileOpen
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxsstreams.UcxStaticStreamsCreate
-title : UcxStaticStreamsCreate function
-author : windows-driver-content
-description : Creates a static streams object.
-old-location : buses\_ucxstaticstreamscreate.htm
-old-project : usbref
-ms.assetid : F7AA10E3-5F56-4751-A603-54A0BFB00927
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcxStaticStreamsCreate, UcxStaticStreamsCreate method [Buses], ucxsstreams/UcxStaticStreamsCreate, buses._ucxstaticstreamscreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxsstreams.h
-req.include-header : Ucxclass.h, Ucxstreams.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:ucxsstreams.UcxStaticStreamsCreate
+title: UcxStaticStreamsCreate function
+author: windows-driver-content
+description: Creates a static streams object.
+old-location: buses\_ucxstaticstreamscreate.htm
+old-project: usbref
+ms.assetid: F7AA10E3-5F56-4751-A603-54A0BFB00927
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcxStaticStreamsCreate, UcxStaticStreamsCreate method [Buses], ucxsstreams/UcxStaticStreamsCreate, buses._ucxstaticstreamscreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxsstreams.h
+req.include-header: Ucxclass.h, Ucxstreams.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxsstreams.h
+apiname:
+-	UcxStaticStreamsCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

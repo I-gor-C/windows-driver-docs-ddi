@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxcontroller._UCX_CONTROLLER_CONFIG
-title : "_UCX_CONTROLLER_CONFIG"
-author : windows-driver-content
-description : This structure configuration data for a USB controller.
-old-location : buses\_ucx_controller_config.htm
-old-project : usbref
-ms.assetid : 9A4249B6-BFC2-42B4-BBA6-094BD78C98DE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxcontroller/_UCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG structure pointer [Buses], *PUCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG structure [Buses], UCX_CONTROLLER_CONFIG, _UCX_CONTROLLER_CONFIG, ucxcontroller/P_UCX_CONTROLLER_CONFIG, buses._ucx_controller_config
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NS:ucxcontroller._UCX_CONTROLLER_CONFIG
+title: "_UCX_CONTROLLER_CONFIG"
+author: windows-driver-content
+description: This structure configuration data for a USB controller.
+old-location: buses\_ucx_controller_config.htm
+old-project: usbref
+ms.assetid: 9A4249B6-BFC2-42B4-BBA6-094BD78C98DE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxcontroller/_UCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG structure pointer [Buses], *PUCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG structure [Buses], UCX_CONTROLLER_CONFIG, _UCX_CONTROLLER_CONFIG, ucxcontroller/P_UCX_CONTROLLER_CONFIG, buses._ucx_controller_config
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	UCX_CONTROLLER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _UCX_CONTROLLER_CONFIG structure

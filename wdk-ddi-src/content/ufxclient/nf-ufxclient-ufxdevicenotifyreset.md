@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UfxDeviceNotifyReset
-title : UfxDeviceNotifyReset function
-author : windows-driver-content
-description : Notifies UFX about a USB bus reset event.
-old-location : buses\ufxdevicenotifyreset.htm
-old-project : usbref
-ms.assetid : FD88E645-7CBB-4998-BEBA-5BBE2FF167FC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UfxDeviceNotifyReset, buses.ufxdevicenotifyreset, ufxclient/UfxDeviceNotifyReset, UfxDeviceNotifyReset method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UfxDeviceNotifyReset
+title: UfxDeviceNotifyReset function
+author: windows-driver-content
+description: Notifies UFX about a USB bus reset event.
+old-location: buses\ufxdevicenotifyreset.htm
+old-project: usbref
+ms.assetid: FD88E645-7CBB-4998-BEBA-5BBE2FF167FC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UfxDeviceNotifyReset, buses.ufxdevicenotifyreset, ufxclient/UfxDeviceNotifyReset, UfxDeviceNotifyReset method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ufxclient.h
+apiname:
+-	UfxDeviceNotifyReset
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

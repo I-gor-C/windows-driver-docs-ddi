@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_RETURN_NET_BUFFER_LISTS
-title : MINIPORT_RETURN_NET_BUFFER_LISTS
-author : windows-driver-content
-description : NDIS calls the MiniportReturnNetBufferLists function to return ownership of NET_BUFFER_LIST structures, associated NET_BUFFER structures, and any attached MDLs to a miniport driver.
-old-location : netvista\miniportreturnnetbufferlists.htm
-old-project : netvista
-ms.assetid : 0f33ae87-164e-40dc-a915-28211a0d74b7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportreturnnetbufferlists, MiniportReturnNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportReturnNetBufferLists, MINIPORT_RETURN_NET_BUFFER_LISTS, MINIPORT_RETURN_NET_BUFFER_LISTS, ndis/MiniportReturnNetBufferLists, ndis_sendrcv_ref_dfe745f1-643d-4834-827c-687aa6404cf2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_RETURN_NET_BUFFER_LISTS
+title: MINIPORT_RETURN_NET_BUFFER_LISTS
+author: windows-driver-content
+description: NDIS calls the MiniportReturnNetBufferLists function to return ownership of NET_BUFFER_LIST structures, associated NET_BUFFER structures, and any attached MDLs to a miniport driver.
+old-location: netvista\miniportreturnnetbufferlists.htm
+old-project: netvista
+ms.assetid: 0f33ae87-164e-40dc-a915-28211a0d74b7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportreturnnetbufferlists, MiniportReturnNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportReturnNetBufferLists, MINIPORT_RETURN_NET_BUFFER_LISTS, MINIPORT_RETURN_NET_BUFFER_LISTS, ndis/MiniportReturnNetBufferLists, ndis_sendrcv_ref_dfe745f1-643d-4834-827c-687aa6404cf2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportReturnNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

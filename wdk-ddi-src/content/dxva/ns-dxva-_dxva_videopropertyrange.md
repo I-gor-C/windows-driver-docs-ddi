@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_VideoPropertyRange
-title : "_DXVA_VideoPropertyRange"
-author : windows-driver-content
-description : The DXVA_VideoPropertyRange structure specifies the range of allowed values for ProcAmp control properties.
-old-location : display\dxva_videopropertyrange.htm
-old-project : display
-ms.assetid : e78fa9ba-7573-47db-b4d8-9b7584d5b432
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/LPDXVA_VideoPropertyRange, _DXVA_VideoPropertyRange, LPDXVA_VideoPropertyRange structure pointer [Display Devices], DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange, DXVA_VideoPropertyRange structure [Display Devices], LPDXVA_VideoPropertyRange, dxva/DXVA_VideoPropertyRange, dxvaref_0e7bc2aa-0404-4025-908a-5d4c528e020b.xml, display.dxva_videopropertyrange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : DirectX 9.0 and later versions only.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange
+UID: NS:dxva._DXVA_VideoPropertyRange
+title: "_DXVA_VideoPropertyRange"
+author: windows-driver-content
+description: The DXVA_VideoPropertyRange structure specifies the range of allowed values for ProcAmp control properties.
+old-location: display\dxva_videopropertyrange.htm
+old-project: display
+ms.assetid: e78fa9ba-7573-47db-b4d8-9b7584d5b432
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/LPDXVA_VideoPropertyRange, _DXVA_VideoPropertyRange, LPDXVA_VideoPropertyRange structure pointer [Display Devices], DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange, DXVA_VideoPropertyRange structure [Display Devices], LPDXVA_VideoPropertyRange, dxva/DXVA_VideoPropertyRange, dxvaref_0e7bc2aa-0404-4025-908a-5d4c528e020b.xml, display.dxva_videopropertyrange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: DirectX 9.0 and later versions only.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_VideoPropertyRange
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange
 ---
 
 # _DXVA_VideoPropertyRange structure

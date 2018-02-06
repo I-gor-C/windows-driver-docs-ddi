@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaValidateNodeProperty
-title : BdaValidateNodeProperty function
-author : windows-driver-content
-description : The BdaValidateNodeProperty function validates that a node property request is associated with a specific pin.
-old-location : stream\bdavalidatenodeproperty.htm
-old-project : stream
-ms.assetid : e3a6d757-68c5-49d1-92cc-0ebf6ba6bbec
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BdaValidateNodeProperty, bdasup/BdaValidateNodeProperty, stream.bdavalidatenodeproperty, BdaValidateNodeProperty function [Streaming Media Devices], bdaref_a6f1ec2f-9e23-4cbb-a3dc-fab0d2c5ca1c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaValidateNodeProperty
+title: BdaValidateNodeProperty function
+author: windows-driver-content
+description: The BdaValidateNodeProperty function validates that a node property request is associated with a specific pin.
+old-location: stream\bdavalidatenodeproperty.htm
+old-project: stream
+ms.assetid: e3a6d757-68c5-49d1-92cc-0ebf6ba6bbec
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BdaValidateNodeProperty, bdasup/BdaValidateNodeProperty, stream.bdavalidatenodeproperty, BdaValidateNodeProperty function [Streaming Media Devices], bdaref_a6f1ec2f-9e23-4cbb-a3dc-fab0d2c5ca1c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaValidateNodeProperty
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

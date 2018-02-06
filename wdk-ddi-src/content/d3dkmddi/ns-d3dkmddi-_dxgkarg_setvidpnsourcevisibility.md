@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEVISIBILITY
-title : "_DXGKARG_SETVIDPNSOURCEVISIBILITY"
-author : windows-driver-content
-description : The DXGKARG_SETVIDPNSOURCEVISIBILITY structure contains arguments for the DxgkDdiSetVidPnSourceVisibility function.
-old-location : display\dxgkarg_setvidpnsourcevisibility.htm
-old-project : display
-ms.assetid : 073fbcc4-57d8-4709-9605-a3440b5e8e17
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_SETVIDPNSOURCEVISIBILITY structure [Display Devices], d3dkmddi/DXGKARG_SETVIDPNSOURCEVISIBILITY, DXGKARG_SETVIDPNSOURCEVISIBILITY, _DXGKARG_SETVIDPNSOURCEVISIBILITY, DmStructs_877a0a99-de1a-4f16-81af-e9dae624281a.xml, display.dxgkarg_setvidpnsourcevisibility
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETVIDPNSOURCEVISIBILITY
+UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEVISIBILITY
+title: "_DXGKARG_SETVIDPNSOURCEVISIBILITY"
+author: windows-driver-content
+description: The DXGKARG_SETVIDPNSOURCEVISIBILITY structure contains arguments for the DxgkDdiSetVidPnSourceVisibility function.
+old-location: display\dxgkarg_setvidpnsourcevisibility.htm
+old-project: display
+ms.assetid: 073fbcc4-57d8-4709-9605-a3440b5e8e17
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_SETVIDPNSOURCEVISIBILITY structure [Display Devices], d3dkmddi/DXGKARG_SETVIDPNSOURCEVISIBILITY, DXGKARG_SETVIDPNSOURCEVISIBILITY, _DXGKARG_SETVIDPNSOURCEVISIBILITY, DmStructs_877a0a99-de1a-4f16-81af-e9dae624281a.xml, display.dxgkarg_setvidpnsourcevisibility
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETVIDPNSOURCEVISIBILITY
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETVIDPNSOURCEVISIBILITY
 ---
 
 # _DXGKARG_SETVIDPNSOURCEVISIBILITY structure

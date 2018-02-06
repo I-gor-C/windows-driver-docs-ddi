@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryActiveProcessors
-title : KeQueryActiveProcessors function
-author : windows-driver-content
-description : The KeQueryActiveProcessors routine returns a bitmask of the currently active processors.
-old-location : kernel\kequeryactiveprocessors.htm
-old-project : kernel
-ms.assetid : 3a7e50e9-0aeb-46e8-a1d2-7267df4921ad
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryActiveProcessors routine [Kernel-Mode Driver Architecture], KeQueryActiveProcessors, wdm/KeQueryActiveProcessors, kernel.kequeryactiveprocessors, k105_963f6993-c875-4939-89ce-7abf2e7a9c22.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeApcLte1, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryActiveProcessors
+title: KeQueryActiveProcessors function
+author: windows-driver-content
+description: The KeQueryActiveProcessors routine returns a bitmask of the currently active processors.
+old-location: kernel\kequeryactiveprocessors.htm
+old-project: kernel
+ms.assetid: 3a7e50e9-0aeb-46e8-a1d2-7267df4921ad
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryActiveProcessors routine [Kernel-Mode Driver Architecture], KeQueryActiveProcessors, wdm/KeQueryActiveProcessors, kernel.kequeryactiveprocessors, k105_963f6993-c875-4939-89ce-7abf2e7a9c22.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeApcLte1, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryActiveProcessors
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

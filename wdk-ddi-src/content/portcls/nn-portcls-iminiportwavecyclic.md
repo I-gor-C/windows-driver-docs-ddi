@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportWaveCyclic
-title : IMiniportWaveCyclic
-author : windows-driver-content
-description : The IMiniportWaveCyclic interface is the primary interface that is exposed by the miniport driver for a WaveCyclic audio device.
-old-location : audio\iminiportwavecyclic.htm
-old-project : audio
-ms.assetid : 12f19ef8-ce7c-4a04-814a-a8c34beca1b9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavecyclic, IMiniportWaveCyclic interface [Audio Devices], IMiniportWaveCyclic interface [Audio Devices], described, IMiniportWaveCyclic, portcls/IMiniportWaveCyclic, audmp-routines_e9dda3e8-2545-4734-bf66-e08ff0c4a1e0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportWaveCyclic
+title: IMiniportWaveCyclic
+author: windows-driver-content
+description: The IMiniportWaveCyclic interface is the primary interface that is exposed by the miniport driver for a WaveCyclic audio device.
+old-location: audio\iminiportwavecyclic.htm
+old-project: audio
+ms.assetid: 12f19ef8-ce7c-4a04-814a-a8c34beca1b9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavecyclic, IMiniportWaveCyclic interface [Audio Devices], IMiniportWaveCyclic interface [Audio Devices], described, IMiniportWaveCyclic, portcls/IMiniportWaveCyclic, audmp-routines_e9dda3e8-2545-4734-bf66-e08ff0c4a1e0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveCyclic
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportWaveCyclic interface

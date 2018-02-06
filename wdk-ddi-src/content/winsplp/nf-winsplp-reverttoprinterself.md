@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RevertToPrinterSelf
-title : RevertToPrinterSelf function
-author : windows-driver-content
-description : When RevertToPrinterSelf is called on an impersonating thread, it returns the token for the thread that is being impersonated.
-old-location : print\reverttoprinterself.htm
-old-project : print
-ms.assetid : 3d94d363-fc8b-4b12-b90d-43dfc5923bdf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/RevertToPrinterSelf, RevertToPrinterSelf function [Print Devices], print.reverttoprinterself, spoolfnc_4cf3c4c1-39bf-4ef6-b578-b9ff0955cbe5.xml, RevertToPrinterSelf
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RevertToPrinterSelf
+title: RevertToPrinterSelf function
+author: windows-driver-content
+description: When RevertToPrinterSelf is called on an impersonating thread, it returns the token for the thread that is being impersonated.
+old-location: print\reverttoprinterself.htm
+old-project: print
+ms.assetid: 3d94d363-fc8b-4b12-b90d-43dfc5923bdf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/RevertToPrinterSelf, RevertToPrinterSelf function [Print Devices], print.reverttoprinterself, spoolfnc_4cf3c4c1-39bf-4ef6-b578-b9ff0955cbe5.xml, RevertToPrinterSelf
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RevertToPrinterSelf
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

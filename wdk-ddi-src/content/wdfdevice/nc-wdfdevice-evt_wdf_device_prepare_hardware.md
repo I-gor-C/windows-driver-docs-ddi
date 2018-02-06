@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_PREPARE_HARDWARE
-title : EVT_WDF_DEVICE_PREPARE_HARDWARE
-author : windows-driver-content
-description : A driver's EvtDevicePrepareHardware event callback function performs any operations that are needed to make a device accessible to the driver.
-old-location : wdf\evtdevicepreparehardware.htm
-old-project : wdf
-ms.assetid : a3d4a983-8a75-44be-bd72-8673d89f9f87
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicepreparehardware, EvtDevicePrepareHardware callback function, EvtDevicePrepareHardware, EVT_WDF_DEVICE_PREPARE_HARDWARE, EVT_WDF_DEVICE_PREPARE_HARDWARE, wdfdevice/EvtDevicePrepareHardware, DFDeviceObjectGeneralRef_a447de77-9692-4a48-83c2-3ced294863e4.xml, kmdf.evtdevicepreparehardware
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_PREPARE_HARDWARE
+title: EVT_WDF_DEVICE_PREPARE_HARDWARE
+author: windows-driver-content
+description: A driver's EvtDevicePrepareHardware event callback function performs any operations that are needed to make a device accessible to the driver.
+old-location: wdf\evtdevicepreparehardware.htm
+old-project: wdf
+ms.assetid: a3d4a983-8a75-44be-bd72-8673d89f9f87
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicepreparehardware, EvtDevicePrepareHardware callback function, EvtDevicePrepareHardware, EVT_WDF_DEVICE_PREPARE_HARDWARE, EVT_WDF_DEVICE_PREPARE_HARDWARE, wdfdevice/EvtDevicePrepareHardware, DFDeviceObjectGeneralRef_a447de77-9692-4a48-83c2-3ced294863e4.xml, kmdf.evtdevicepreparehardware
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDevicePrepareHardware
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_SLOT_NUMBER
-title : "_PCI_SLOT_NUMBER"
-author : windows-driver-content
-description : The PCI_SLOT_NUMBER structure is obsolete.
-old-location : kernel\pci_slot_number.htm
-old-project : kernel
-ms.assetid : 0e04813d-e138-435e-8357-562f79a3a4a2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pci_slot_number, _PCI_SLOT_NUMBER, wdm/PCI_SLOT_NUMBER, wdm/PPCI_SLOT_NUMBER, *PPCI_SLOT_NUMBER, PCI_SLOT_NUMBER, PPCI_SLOT_NUMBER, PPCI_SLOT_NUMBER structure pointer [Kernel-Mode Driver Architecture], PCI_SLOT_NUMBER structure [Kernel-Mode Driver Architecture], kstruct_c_e9aa5e88-0c5d-4740-80f3-4b59da610598.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_SLOT_NUMBER, *PPCI_SLOT_NUMBER
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_SLOT_NUMBER
+title: "_PCI_SLOT_NUMBER"
+author: windows-driver-content
+description: The PCI_SLOT_NUMBER structure is obsolete.
+old-location: kernel\pci_slot_number.htm
+old-project: kernel
+ms.assetid: 0e04813d-e138-435e-8357-562f79a3a4a2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pci_slot_number, _PCI_SLOT_NUMBER, wdm/PCI_SLOT_NUMBER, wdm/PPCI_SLOT_NUMBER, *PPCI_SLOT_NUMBER, PCI_SLOT_NUMBER, PPCI_SLOT_NUMBER, PPCI_SLOT_NUMBER structure pointer [Kernel-Mode Driver Architecture], PCI_SLOT_NUMBER structure [Kernel-Mode Driver Architecture], kstruct_c_e9aa5e88-0c5d-4740-80f3-4b59da610598.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_SLOT_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: PCI_SLOT_NUMBER, *PPCI_SLOT_NUMBER
+req.product: Windows 10 or later.
 ---
 
 # _PCI_SLOT_NUMBER structure

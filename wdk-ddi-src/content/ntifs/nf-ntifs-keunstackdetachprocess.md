@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeUnstackDetachProcess
-title : KeUnstackDetachProcess function
-author : windows-driver-content
-description : The KeUnstackDetachProcess routine detaches the current thread from the address space of a process and restores the previous attach state.
-old-location : ifsk\keunstackdetachprocess.htm
-old-project : ifsk
-ms.assetid : 3dd5b8f7-d8f8-4c02-80d1-76d0dbe06cd3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/KeUnstackDetachProcess, ifsk.keunstackdetachprocess, KeUnstackDetachProcess routine [Installable File System Drivers], keref_47d45f58-d264-4633-8808-2172646df566.xml, KeUnstackDetachProcess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeUnstackDetachProcess
+title: KeUnstackDetachProcess function
+author: windows-driver-content
+description: The KeUnstackDetachProcess routine detaches the current thread from the address space of a process and restores the previous attach state.
+old-location: ifsk\keunstackdetachprocess.htm
+old-project: ifsk
+ms.assetid: 3dd5b8f7-d8f8-4c02-80d1-76d0dbe06cd3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/KeUnstackDetachProcess, ifsk.keunstackdetachprocess, KeUnstackDetachProcess routine [Installable File System Drivers], keref_47d45f58-d264-4633-8808-2172646df566.xml, KeUnstackDetachProcess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeUnstackDetachProcess
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

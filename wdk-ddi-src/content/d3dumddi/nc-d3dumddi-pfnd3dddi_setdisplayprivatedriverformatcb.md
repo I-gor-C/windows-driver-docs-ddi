@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
-title : PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
-author : windows-driver-content
-description : The pfnSetDisplayPrivateDriverFormatCb function changes the private-format attribute of a video present source.
-old-location : display\pfnsetdisplayprivatedriverformatcb.htm
-old-project : display
-ms.assetid : 499e6de7-67cc-4834-bcec-4f3907b180f7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnsetdisplayprivatedriverformatcb, pfnSetDisplayPrivateDriverFormatCb callback function [Display Devices], pfnSetDisplayPrivateDriverFormatCb, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, d3dumddi/pfnSetDisplayPrivateDriverFormatCb, D3Druntime_Functions_36bd86e3-96bb-4c68-85a1-a678a54daed4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
+title: PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
+author: windows-driver-content
+description: The pfnSetDisplayPrivateDriverFormatCb function changes the private-format attribute of a video present source.
+old-location: display\pfnsetdisplayprivatedriverformatcb.htm
+old-project: display
+ms.assetid: 499e6de7-67cc-4834-bcec-4f3907b180f7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnsetdisplayprivatedriverformatcb, pfnSetDisplayPrivateDriverFormatCb callback function [Display Devices], pfnSetDisplayPrivateDriverFormatCb, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, d3dumddi/pfnSetDisplayPrivateDriverFormatCb, D3Druntime_Functions_36bd86e3-96bb-4c68-85a1-a678a54daed4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnSetDisplayPrivateDriverFormatCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

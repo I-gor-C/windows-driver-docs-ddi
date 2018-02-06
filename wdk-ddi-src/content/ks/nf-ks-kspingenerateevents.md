@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGenerateEvents
-title : KsPinGenerateEvents function
-author : windows-driver-content
-description : The KsPinGenerateEvents function generates events of an indicated type that are present in Pin's event list.
-old-location : stream\kspingenerateevents.htm
-old-project : stream
-ms.assetid : c2137849-aff0-4bf7-abab-b92e17aaef70
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinGenerateEvents function [Streaming Media Devices], avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, KsPinGenerateEvents, stream.kspingenerateevents, ks/KsPinGenerateEvents
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGenerateEvents
+title: KsPinGenerateEvents function
+author: windows-driver-content
+description: The KsPinGenerateEvents function generates events of an indicated type that are present in Pin's event list.
+old-location: stream\kspingenerateevents.htm
+old-project: stream
+ms.assetid: c2137849-aff0-4bf7-abab-b92e17aaef70
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinGenerateEvents function [Streaming Media Devices], avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, KsPinGenerateEvents, stream.kspingenerateevents, ks/KsPinGenerateEvents
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGenerateEvents
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_EVICTCB
-title : PFND3DDDI_EVICTCB
-author : windows-driver-content
-description : pfnEvictCb is used to instruct the OS to decrement the residency reference count. Once this count reaches zero, it will remove the allocation from the device residency list.
-old-location : display\pfnevictcb.htm
-old-project : display
-ms.assetid : 5E66A522-BC1C-4E7C-8732-87D40F99BBDA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnevictcb, pfnEvictCb callback function [Display Devices], pfnEvictCb, PFND3DDDI_EVICTCB, PFND3DDDI_EVICTCB, d3dumddi/pfnEvictCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_EVICTCB
+title: PFND3DDDI_EVICTCB
+author: windows-driver-content
+description: pfnEvictCb is used to instruct the OS to decrement the residency reference count. Once this count reaches zero, it will remove the allocation from the device residency list.
+old-location: display\pfnevictcb.htm
+old-project: display
+ms.assetid: 5E66A522-BC1C-4E7C-8732-87D40F99BBDA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnevictcb, pfnEvictCb callback function [Display Devices], pfnEvictCb, PFND3DDDI_EVICTCB, PFND3DDDI_EVICTCB, d3dumddi/pfnEvictCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnEvictCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

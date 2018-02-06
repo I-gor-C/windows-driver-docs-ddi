@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._STORAGE_DIAGNOSTIC_MP_REQUEST
-title : "_STORAGE_DIAGNOSTIC_MP_REQUEST"
-author : windows-driver-content
-description : Describes a diagnostic request to Miniport. The STORAGE_DIAGNOSTIC_MP_REQUEST structure is provided in the input/output buffer of an IOCTL_SCSI_MINIPORT_DIAGNOSTIC request.
-old-location : storage\storage_diagnostic_mp_request.htm
-old-project : storage
-ms.assetid : 1F2B15A6-7C05-4FBA-B54F-EEF013FF5739
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storage_diagnostic_mp_request, STORAGE_DIAGNOSTIC_MP_REQUEST, _STORAGE_DIAGNOSTIC_MP_REQUEST, PSTORAGE_DIAGNOSTIC_MP_REQUEST, PSTORAGE_DIAGNOSTIC_MP_REQUEST structure pointer [Storage Devices], *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST structure [Storage Devices], ntddscsi/PSTORAGE_DIAGNOSTIC_MP_REQUEST, ntddscsi/STORAGE_DIAGNOSTIC_MP_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+UID: NS:ntddscsi._STORAGE_DIAGNOSTIC_MP_REQUEST
+title: "_STORAGE_DIAGNOSTIC_MP_REQUEST"
+author: windows-driver-content
+description: Describes a diagnostic request to Miniport. The STORAGE_DIAGNOSTIC_MP_REQUEST structure is provided in the input/output buffer of an IOCTL_SCSI_MINIPORT_DIAGNOSTIC request.
+old-location: storage\storage_diagnostic_mp_request.htm
+old-project: storage
+ms.assetid: 1F2B15A6-7C05-4FBA-B54F-EEF013FF5739
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storage_diagnostic_mp_request, STORAGE_DIAGNOSTIC_MP_REQUEST, _STORAGE_DIAGNOSTIC_MP_REQUEST, PSTORAGE_DIAGNOSTIC_MP_REQUEST, PSTORAGE_DIAGNOSTIC_MP_REQUEST structure pointer [Storage Devices], *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST structure [Storage Devices], ntddscsi/PSTORAGE_DIAGNOSTIC_MP_REQUEST, ntddscsi/STORAGE_DIAGNOSTIC_MP_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	STORAGE_DIAGNOSTIC_MP_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
 ---
 
 # _STORAGE_DIAGNOSTIC_MP_REQUEST structure

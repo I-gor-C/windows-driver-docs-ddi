@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTGetSharedPrimaryHandle
-title : D3DKMTGetSharedPrimaryHandle function
-author : windows-driver-content
-description : The D3DKMTGetSharedPrimaryHandle function retrieves the global shared handle for the primary surface.
-old-location : display\d3dkmtgetsharedprimaryhandle.htm
-old-project : display
-ms.assetid : 927a6ddd-caac-4460-b9df-3ba22db69398
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTGetSharedPrimaryHandle, OpenGL_Functions_bb0d000e-4846-4851-a6c5-c70330ef8921.xml, display.d3dkmtgetsharedprimaryhandle, D3DKMTGetSharedPrimaryHandle function [Display Devices], d3dkmthk/D3DKMTGetSharedPrimaryHandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTGetSharedPrimaryHandle
+title: D3DKMTGetSharedPrimaryHandle function
+author: windows-driver-content
+description: The D3DKMTGetSharedPrimaryHandle function retrieves the global shared handle for the primary surface.
+old-location: display\d3dkmtgetsharedprimaryhandle.htm
+old-project: display
+ms.assetid: 927a6ddd-caac-4460-b9df-3ba22db69398
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTGetSharedPrimaryHandle, OpenGL_Functions_bb0d000e-4846-4851-a6c5-c70330ef8921.xml, display.d3dkmtgetsharedprimaryhandle, D3DKMTGetSharedPrimaryHandle function [Display Devices], d3dkmthk/D3DKMTGetSharedPrimaryHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTGetSharedPrimaryHandle
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

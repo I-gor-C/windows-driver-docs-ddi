@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauDbgLegacyTrace
-title : wiauDbgLegacyTrace function
-author : windows-driver-content
-description : The wiauDbgLegacyTrace function logs a trace message.
-old-location : image\wiaudbglegacytrace.htm
-old-project : image
-ms.assetid : ccbcab46-0af9-4c21-896f-14096f1461bc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauDbgLegacyTrace function [Imaging Devices], wiauDbgLegacyTrace, wiautil/wiauDbgLegacyTrace, wiauFncs_a780f296-5780-4589-9aa6-1e61ebec013e.xml, image.wiaudbglegacytrace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : This function is available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauDbgLegacyTrace
+title: wiauDbgLegacyTrace function
+author: windows-driver-content
+description: The wiauDbgLegacyTrace function logs a trace message.
+old-location: image\wiaudbglegacytrace.htm
+old-project: image
+ms.assetid: ccbcab46-0af9-4c21-896f-14096f1461bc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauDbgLegacyTrace function [Imaging Devices], wiauDbgLegacyTrace, wiautil/wiauDbgLegacyTrace, wiauFncs_a780f296-5780-4589-9aa6-1e61ebec013e.xml, image.wiaudbglegacytrace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: This function is available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wiautil.h
+apiname:
+-	wiauDbgLegacyTrace
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

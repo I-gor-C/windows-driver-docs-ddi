@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_TranslateUsagesToI8042ScanCodes
-title : HidP_TranslateUsagesToI8042ScanCodes function
-author : windows-driver-content
-description : The HidP_TranslateUsagesToI8042ScanCodes routine maps a list of HID usages on the HID_USAGE_PAGE_KEYBOARD usage page to their respective PS/2 scan codes (Scan Code Set 1).
-old-location : hid\hidp_translateusagestoi8042scancodes.htm
-old-project : hid
-ms.assetid : d3ad851d-ba09-4052-a2d0-d6cb8315e04f
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_TranslateUsagesToI8042ScanCodes, HidP_TranslateUsagesToI8042ScanCodes routine [Human Input Devices], hidfunc_da67ba0d-7d82-4b35-9ebb-cdd93b12450b.xml, hidpi/HidP_TranslateUsagesToI8042ScanCodes, hid.hidp_translateusagestoi8042scancodes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_TranslateUsagesToI8042ScanCodes
+title: HidP_TranslateUsagesToI8042ScanCodes function
+author: windows-driver-content
+description: The HidP_TranslateUsagesToI8042ScanCodes routine maps a list of HID usages on the HID_USAGE_PAGE_KEYBOARD usage page to their respective PS/2 scan codes (Scan Code Set 1).
+old-location: hid\hidp_translateusagestoi8042scancodes.htm
+old-project: hid
+ms.assetid: d3ad851d-ba09-4052-a2d0-d6cb8315e04f
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_TranslateUsagesToI8042ScanCodes, HidP_TranslateUsagesToI8042ScanCodes routine [Human Input Devices], hidfunc_da67ba0d-7d82-4b35-9ebb-cdd93b12450b.xml, hidpi/HidP_TranslateUsagesToI8042ScanCodes, hid.hidp_translateusagestoi8042scancodes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_TranslateUsagesToI8042ScanCodes
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

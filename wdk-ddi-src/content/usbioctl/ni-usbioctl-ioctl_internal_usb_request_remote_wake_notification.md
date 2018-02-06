@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
-title : IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
-author : windows-driver-content
-description : The IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION I/O request is sent by the driver of a Universal Serial Bus (USB) multi-function device (composite driver) to request remote wake-up notifications from a specific function in the device.
-old-location : buses\ioctl_internal_usb_usbdevice_remote_wake_notification.htm
-old-project : usbref
-ms.assetid : 1EAFEFAD-A8FC-4A79-9332-75B143EEEB18
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usb_usbdevice_remote_wake_notification, IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION control code [Buses], IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION, usbioctl/IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
+title: IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
+author: windows-driver-content
+description: The IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION I/O request is sent by the driver of a Universal Serial Bus (USB) multi-function device (composite driver) to request remote wake-up notifications from a specific function in the device.
+old-location: buses\ioctl_internal_usb_usbdevice_remote_wake_notification.htm
+old-project: usbref
+ms.assetid: 1EAFEFAD-A8FC-4A79-9332-75B143EEEB18
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usb_usbdevice_remote_wake_notification, IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION control code [Buses], IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION, usbioctl/IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION IOCTL

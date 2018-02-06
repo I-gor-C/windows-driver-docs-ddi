@@ -1,41 +1,46 @@
 ---
-UID : NC:ntifs.DRIVER_FS_NOTIFICATION
-title : DRIVER_FS_NOTIFICATION
-author : windows-driver-content
-description : A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a file system registers or unregisters itself by using IoRegisterFileSystem or IoUnregisterFileSystem.
-old-location : ifsk\pdriver_fs_notification.htm
-old-project : ifsk
-ms.assetid : 571aaa9b-8620-46ff-af29-19b00804e0ad
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pdriver_fs_notification, DriverNotificationRoutine routine [Installable File System Drivers], DriverNotificationRoutine, DRIVER_FS_NOTIFICATION, DRIVER_FS_NOTIFICATION, ntifs/DriverNotificationRoutine, FilterCallbacks_5b421108-0db7-47ba-afba-3a8b79a61d66.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
+UID: NC:ntifs.DRIVER_FS_NOTIFICATION
+title: DRIVER_FS_NOTIFICATION
+author: windows-driver-content
+description: A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a file system registers or unregisters itself by using IoRegisterFileSystem or IoUnregisterFileSystem.
+old-location: ifsk\pdriver_fs_notification.htm
+old-project: ifsk
+ms.assetid: 571aaa9b-8620-46ff-af29-19b00804e0ad
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pdriver_fs_notification, DriverNotificationRoutine routine [Installable File System Drivers], DriverNotificationRoutine, DRIVER_FS_NOTIFICATION, DRIVER_FS_NOTIFICATION, ntifs/DriverNotificationRoutine, FilterCallbacks_5b421108-0db7-47ba-afba-3a8b79a61d66.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntifs.h
+apiname:
+-	PDRIVER_FS_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ---
 
 

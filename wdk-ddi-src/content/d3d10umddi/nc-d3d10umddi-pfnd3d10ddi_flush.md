@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_FLUSH
-title : PFND3D10DDI_FLUSH
-author : windows-driver-content
-description : The Flush(D3D10) function submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver.
-old-location : display\flush_d3d10_.htm
-old-project : display
-ms.assetid : 846f8539-4cb3-41d5-836d-563b7eb0d70b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.flush_d3d10_, Flush callback function [Display Devices], Flush, PFND3D10DDI_FLUSH, PFND3D10DDI_FLUSH, d3d10umddi/Flush, UserModeDisplayDriverDx10_Functions_35acd3a9-af32-4a8f-b2d6-a4b12f3aebc4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_FLUSH
+title: PFND3D10DDI_FLUSH
+author: windows-driver-content
+description: The Flush(D3D10) function submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver.
+old-location: display\flush_d3d10_.htm
+old-project: display
+ms.assetid: 846f8539-4cb3-41d5-836d-563b7eb0d70b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.flush_d3d10_, Flush callback function [Display Devices], Flush, PFND3D10DDI_FLUSH, PFND3D10DDI_FLUSH, d3d10umddi/Flush, UserModeDisplayDriverDx10_Functions_35acd3a9-af32-4a8f-b2d6-a4b12f3aebc4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	Flush
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

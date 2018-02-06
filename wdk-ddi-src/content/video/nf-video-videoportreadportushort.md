@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadPortUshort
-title : VideoPortReadPortUshort function
-author : windows-driver-content
-description : The VideoPortReadPortUshort function reads a USHORT value from a mapped I/O port.
-old-location : display\videoportreadportushort.htm
-old-project : display
-ms.assetid : a5277cee-40e8-4c87-8521-8ae59c9b33a3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortReadPortUshort function [Display Devices], video/VideoPortReadPortUshort, display.videoportreadportushort, VideoPortReadPortUshort, VideoPort_Functions_cb14aa82-3092-4982-83c5-4682d7a487c0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadPortUshort
+title: VideoPortReadPortUshort function
+author: windows-driver-content
+description: The VideoPortReadPortUshort function reads a USHORT value from a mapped I/O port.
+old-location: display\videoportreadportushort.htm
+old-project: display
+ms.assetid: a5277cee-40e8-4c87-8521-8ae59c9b33a3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortReadPortUshort function [Display Devices], video/VideoPortReadPortUshort, display.videoportreadportushort, VideoPortReadPortUshort, VideoPort_Functions_cb14aa82-3092-4982-83c5-4682d7a487c0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadPortUshort
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

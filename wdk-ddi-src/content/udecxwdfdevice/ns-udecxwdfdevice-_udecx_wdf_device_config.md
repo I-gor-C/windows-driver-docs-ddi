@@ -1,42 +1,47 @@
 ---
-UID : NS:udecxwdfdevice._UDECX_WDF_DEVICE_CONFIG
-title : "_UDECX_WDF_DEVICE_CONFIG"
-author : windows-driver-content
-description : Contains pointers to event callback functions implemented by the UDE client driver for a USB host controller. Initialize this structure by calling UDECX_WDF_DEVICE_CONFIG_INIT.
-old-location : buses\udecx_wdf_device_config.htm
-old-project : usbref
-ms.assetid : 54853C39-FA6C-4F9B-A202-F116C43D3A4E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UDECX_WDF_DEVICE_CONFIG, PUDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG, udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG, _UDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG structure [Buses], PUDECX_WDF_DEVICE_CONFIG structure pointer [Buses], udecxwdfdevice/PUDECX_WDF_DEVICE_CONFIG, buses.udecx_wdf_device_config
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : udecxwdfdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG
-req.product : Windows 10 or later.
+UID: NS:udecxwdfdevice._UDECX_WDF_DEVICE_CONFIG
+title: "_UDECX_WDF_DEVICE_CONFIG"
+author: windows-driver-content
+description: Contains pointers to event callback functions implemented by the UDE client driver for a USB host controller. Initialize this structure by calling UDECX_WDF_DEVICE_CONFIG_INIT.
+old-location: buses\udecx_wdf_device_config.htm
+old-project: usbref
+ms.assetid: 54853C39-FA6C-4F9B-A202-F116C43D3A4E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UDECX_WDF_DEVICE_CONFIG, PUDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG, udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG, _UDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG structure [Buses], PUDECX_WDF_DEVICE_CONFIG structure pointer [Buses], udecxwdfdevice/PUDECX_WDF_DEVICE_CONFIG, buses.udecx_wdf_device_config
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: udecxwdfdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	udecxwdfdevice.h
+apiname:
+-	UDECX_WDF_DEVICE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: UDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _UDECX_WDF_DEVICE_CONFIG structure

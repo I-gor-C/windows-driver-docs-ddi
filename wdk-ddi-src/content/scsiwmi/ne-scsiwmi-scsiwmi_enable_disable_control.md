@@ -1,42 +1,47 @@
 ---
-UID : NE:scsiwmi.SCSIWMI_ENABLE_DISABLE_CONTROL
-title : SCSIWMI_ENABLE_DISABLE_CONTROL
-author : windows-driver-content
-description : The SCSIWMI_ENABLE_DISABLE_CONTROL enumerator is used to specify what to enable or disable.
-old-location : storage\scsiwmi_enable_disable_control.htm
-old-project : storage
-ms.assetid : 0327bdc0-e4a4-4c2f-a9b9-5854e3330068
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiWmiEventControl, scsiwmi/SCSIWMI_ENABLE_DISABLE_CONTROL, structs-scsibus_58a70c92-6ee7-4385-b212-45672a12ac8b.xml, scsiwmi/ScsiWmiDataBlockControl, SCSIWMI_ENABLE_DISABLE_CONTROL, scsiwmi/ScsiWmiEventControl, ScsiWmiDataBlockControl, storage.scsiwmi_enable_disable_control, SCSIWMI_ENABLE_DISABLE_CONTROL enumeration [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NE:scsiwmi.SCSIWMI_ENABLE_DISABLE_CONTROL
+title: SCSIWMI_ENABLE_DISABLE_CONTROL
+author: windows-driver-content
+description: The SCSIWMI_ENABLE_DISABLE_CONTROL enumerator is used to specify what to enable or disable.
+old-location: storage\scsiwmi_enable_disable_control.htm
+old-project: storage
+ms.assetid: 0327bdc0-e4a4-4c2f-a9b9-5854e3330068
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiWmiEventControl, scsiwmi/SCSIWMI_ENABLE_DISABLE_CONTROL, structs-scsibus_58a70c92-6ee7-4385-b212-45672a12ac8b.xml, scsiwmi/ScsiWmiDataBlockControl, SCSIWMI_ENABLE_DISABLE_CONTROL, scsiwmi/ScsiWmiEventControl, ScsiWmiDataBlockControl, storage.scsiwmi_enable_disable_control, SCSIWMI_ENABLE_DISABLE_CONTROL enumeration [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	SCSIWMI_ENABLE_DISABLE_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 # SCSIWMI_ENABLE_DISABLE_CONTROL Enumeration
@@ -54,16 +59,16 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>ScsiWmiDataBlockControl</td>
-<td>Indicates that a data collection for a block is to be enabled or disabled.</td>
-</tr>
-
-<tr>
-<td>ScsiWmiEventControl</td>
-<td>Indicates that a WMI event is to be enabled or disabled.</td>
-</tr>
+            
+                <tr>
+                    <td>ScsiWmiDataBlockControl</td>
+                    <td>Indicates that a data collection for a block is to be enabled or disabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>ScsiWmiEventControl</td>
+                    <td>Indicates that a WMI event is to be enabled or disabled.</td>
+                </tr>
 </table>
 
 
@@ -72,9 +77,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | scsiwmi.h (include Scsiwmi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wmilib\nc-wmilib-wmi_function_control_callback.md">DpWmiFunctionControl</a>
+        <a href="..\wmilib\nc-wmilib-wmi_function_control_callback.md">DpWmiFunctionControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
 

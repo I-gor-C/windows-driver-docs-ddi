@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_SETRESOURCEMINLOD
-title : PFND3D11DDI_SETRESOURCEMINLOD
-author : windows-driver-content
-description : The SetResourceMinLOD function sets the minimum level of detail (LOD) for a resource.
-old-location : display\setresourceminlod.htm
-old-project : display
-ms.assetid : a54b2fa7-c0c2-42b7-ae89-7984282d4af4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setresourceminlod, SetResourceMinLOD callback function [Display Devices], SetResourceMinLOD, PFND3D11DDI_SETRESOURCEMINLOD, PFND3D11DDI_SETRESOURCEMINLOD, d3d10umddi/SetResourceMinLOD, UserModeDisplayDriverDx11_Functions_3c56a9a6-a13e-4377-a997-e84af3ff12ef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : SetResourceMinLOD is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_SETRESOURCEMINLOD
+title: PFND3D11DDI_SETRESOURCEMINLOD
+author: windows-driver-content
+description: The SetResourceMinLOD function sets the minimum level of detail (LOD) for a resource.
+old-location: display\setresourceminlod.htm
+old-project: display
+ms.assetid: a54b2fa7-c0c2-42b7-ae89-7984282d4af4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setresourceminlod, SetResourceMinLOD callback function [Display Devices], SetResourceMinLOD, PFND3D11DDI_SETRESOURCEMINLOD, PFND3D11DDI_SETRESOURCEMINLOD, d3d10umddi/SetResourceMinLOD, UserModeDisplayDriverDx11_Functions_3c56a9a6-a13e-4377-a997-e84af3ff12ef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: SetResourceMinLOD is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	SetResourceMinLOD
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlFlushNonVolatileMemoryRanges
-title : RtlFlushNonVolatileMemoryRanges function
-author : windows-driver-content
-description : The routine RtlFlushNonVolatileMemoryRanges optimally flushes the given non-volatile memory regions.
-old-location : ifsk\rtlflushnonvolatilememoryranges.htm
-old-project : ifsk
-ms.assetid : 169C5F41-B372-4056-AAC5-53DD0582A563
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlflushnonvolatilememoryranges, RtlFlushNonVolatileMemoryRanges, ntddk/RtlFlushNonVolatileMemoryRanges, RtlFlushNonVolatileMemoryRanges routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Winnt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlFlushNonVolatileMemoryRanges
+title: RtlFlushNonVolatileMemoryRanges function
+author: windows-driver-content
+description: The routine RtlFlushNonVolatileMemoryRanges optimally flushes the given non-volatile memory regions.
+old-location: ifsk\rtlflushnonvolatilememoryranges.htm
+old-project: ifsk
+ms.assetid: 169C5F41-B372-4056-AAC5-53DD0582A563
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlflushnonvolatilememoryranges, RtlFlushNonVolatileMemoryRanges, ntddk/RtlFlushNonVolatileMemoryRanges, RtlFlushNonVolatileMemoryRanges routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Winnt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlFlushNonVolatileMemoryRanges
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

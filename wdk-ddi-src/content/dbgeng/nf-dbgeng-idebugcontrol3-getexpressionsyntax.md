@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetExpressionSyntax
-title : IDebugControl3::GetExpressionSyntax method
-author : windows-driver-content
-description : The GetExpressionSyntax method returns the current syntax that the engine is using for evaluating expressions.
-old-location : debugger\getexpressionsyntax.htm
-old-project : debugger
-ms.assetid : e04e4567-5ae6-4349-9876-0c2b55c340e0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_9eae3270-fd1f-4d50-875b-3bd9908ba76d.xml, IDebugControl3::GetExpressionSyntax, GetExpressionSyntax, IDebugControl3 interface [Windows Debugging], GetExpressionSyntax method, IDebugControl3, GetExpressionSyntax method [Windows Debugging], IDebugControl3 interface, debugger.getexpressionsyntax, GetExpressionSyntax method [Windows Debugging], dbgeng/IDebugControl3::GetExpressionSyntax
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetExpressionSyntax
+title: IDebugControl3::GetExpressionSyntax method
+author: windows-driver-content
+description: The GetExpressionSyntax method returns the current syntax that the engine is using for evaluating expressions.
+old-location: debugger\getexpressionsyntax.htm
+old-project: debugger
+ms.assetid: e04e4567-5ae6-4349-9876-0c2b55c340e0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_9eae3270-fd1f-4d50-875b-3bd9908ba76d.xml, IDebugControl3::GetExpressionSyntax, GetExpressionSyntax, IDebugControl3 interface [Windows Debugging], GetExpressionSyntax method, IDebugControl3, GetExpressionSyntax method [Windows Debugging], IDebugControl3 interface, debugger.getexpressionsyntax, GetExpressionSyntax method [Windows Debugging], dbgeng/IDebugControl3::GetExpressionSyntax
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.GetExpressionSyntax
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

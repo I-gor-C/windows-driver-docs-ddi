@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_REMOVESURFACEFROMSWAPCHAIN
-title : "_D3DKMT_REMOVESURFACEFROMSWAPCHAIN"
-author : windows-driver-content
-description : Used to remove a surface from the swap chain.
-old-location : display\d3dkmt-removesurfacefromswapchain.htm
-old-project : display
-ms.assetid : 249a2bfc-7326-480f-bcc0-8d5104a9c890
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_REMOVESURFACEFROMSWAPCHAIN, D3DKMT_REMOVESURFACEFROMSWAPCHAIN structure [Display Devices], D3DKMT_REMOVESURFACEFROMSWAPCHAIN, d3dkmthk/D3DKMT_REMOVESURFACEFROMSWAPCHAIN, display.d3dkmt-removesurfacefromswapchain"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_REMOVESURFACEFROMSWAPCHAIN
+UID: NS:d3dkmthk._D3DKMT_REMOVESURFACEFROMSWAPCHAIN
+title: "_D3DKMT_REMOVESURFACEFROMSWAPCHAIN"
+author: windows-driver-content
+description: Used to remove a surface from the swap chain.
+old-location: display\d3dkmt-removesurfacefromswapchain.htm
+old-project: display
+ms.assetid: 249a2bfc-7326-480f-bcc0-8d5104a9c890
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_REMOVESURFACEFROMSWAPCHAIN, D3DKMT_REMOVESURFACEFROMSWAPCHAIN structure [Display Devices], D3DKMT_REMOVESURFACEFROMSWAPCHAIN, d3dkmthk/D3DKMT_REMOVESURFACEFROMSWAPCHAIN, display.d3dkmt-removesurfacefromswapchain"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_REMOVESURFACEFROMSWAPCHAIN
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_REMOVESURFACEFROMSWAPCHAIN
 ---
 
 # _D3DKMT_REMOVESURFACEFROMSWAPCHAIN structure

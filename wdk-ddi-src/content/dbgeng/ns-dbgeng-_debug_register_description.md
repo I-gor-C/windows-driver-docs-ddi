@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_REGISTER_DESCRIPTION
-title : "_DEBUG_REGISTER_DESCRIPTION"
-author : windows-driver-content
-description : The DEBUG_REGISTER_DESCRIPTION structure is returned by GetDescription to describe a processor's register.
-old-location : debugger\debug_register_description.htm
-old-project : debugger
-ms.assetid : 92e7800d-4de6-498c-87f8-8690d7e8fc51
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/PDEBUG_REGISTER_DESCRIPTION, debugger.debug_register_description, *PDEBUG_REGISTER_DESCRIPTION, PDEBUG_REGISTER_DESCRIPTION structure pointer [Windows Debugging], Structures_a7dd005e-3383-4c58-8b01-fe2127d6bc20.xml, PDEBUG_REGISTER_DESCRIPTION, dbgeng/DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION structure [Windows Debugging], _DEBUG_REGISTER_DESCRIPTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION"
+UID: NS:dbgeng._DEBUG_REGISTER_DESCRIPTION
+title: "_DEBUG_REGISTER_DESCRIPTION"
+author: windows-driver-content
+description: The DEBUG_REGISTER_DESCRIPTION structure is returned by GetDescription to describe a processor's register.
+old-location: debugger\debug_register_description.htm
+old-project: debugger
+ms.assetid: 92e7800d-4de6-498c-87f8-8690d7e8fc51
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/PDEBUG_REGISTER_DESCRIPTION, debugger.debug_register_description, *PDEBUG_REGISTER_DESCRIPTION, PDEBUG_REGISTER_DESCRIPTION structure pointer [Windows Debugging], Structures_a7dd005e-3383-4c58-8b01-fe2127d6bc20.xml, PDEBUG_REGISTER_DESCRIPTION, dbgeng/DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION structure [Windows Debugging], _DEBUG_REGISTER_DESCRIPTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_REGISTER_DESCRIPTION
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION"
 ---
 
 # _DEBUG_REGISTER_DESCRIPTION structure

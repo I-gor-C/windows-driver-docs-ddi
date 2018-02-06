@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATECONTEXTVIRTUAL
-title : "_D3DKMT_CREATECONTEXTVIRTUAL"
-author : windows-driver-content
-description : D3DKMT_CREATECONTEXTVIRTUAL is used with D3DKMTCreateContextVirtual to create a kernel mode device context that supports virtual addressing.
-old-location : display\d3dkmt_createcontextvirtual.htm
-old-project : display
-ms.assetid : C9707F47-75DF-4CDE-B88B-24323FC8C94B
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATECONTEXTVIRTUAL structure [Display Devices], display.d3dkmt_createcontextvirtual, D3DKMT_CREATECONTEXTVIRTUAL, _D3DKMT_CREATECONTEXTVIRTUAL, d3dkmthk/D3DKMT_CREATECONTEXTVIRTUAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATECONTEXTVIRTUAL
+UID: NS:d3dkmthk._D3DKMT_CREATECONTEXTVIRTUAL
+title: "_D3DKMT_CREATECONTEXTVIRTUAL"
+author: windows-driver-content
+description: D3DKMT_CREATECONTEXTVIRTUAL is used with D3DKMTCreateContextVirtual to create a kernel mode device context that supports virtual addressing.
+old-location: display\d3dkmt_createcontextvirtual.htm
+old-project: display
+ms.assetid: C9707F47-75DF-4CDE-B88B-24323FC8C94B
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CREATECONTEXTVIRTUAL structure [Display Devices], display.d3dkmt_createcontextvirtual, D3DKMT_CREATECONTEXTVIRTUAL, _D3DKMT_CREATECONTEXTVIRTUAL, d3dkmthk/D3DKMT_CREATECONTEXTVIRTUAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATECONTEXTVIRTUAL
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATECONTEXTVIRTUAL
 ---
 
 # _D3DKMT_CREATECONTEXTVIRTUAL structure

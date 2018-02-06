@@ -1,38 +1,38 @@
 ---
-UID : NS:wdm._PCW_COUNTER_DESCRIPTOR
-title : _PCW_COUNTER_DESCRIPTOR
-author : windows-driver-content
-description : The PCW_COUNTER_DESCRIPTOR structure supplies details about the notification to send.
-old-location : devtest\pcw_counter_descriptor.htm
-old-project : devtest
-ms.assetid : 0b099aec-f254-4cfb-87cb-2f8965d5faae
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PCW_COUNTER_DESCRIPTOR, PCW_COUNTER_DESCRIPTOR, *PPCW_COUNTER_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PCW_COUNTER_DESCRIPTOR
-req.alt-loc : wdm.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : PCW_COUNTER_DESCRIPTOR, *PPCW_COUNTER_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:wdm._PCW_COUNTER_DESCRIPTOR
+title: _PCW_COUNTER_DESCRIPTOR
+author: windows-driver-content
+description: The PCW_COUNTER_DESCRIPTOR structure supplies details about the notification to send.
+old-location: devtest\pcw_counter_descriptor.htm
+old-project: devtest
+ms.assetid: 0b099aec-f254-4cfb-87cb-2f8965d5faae
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _PCW_COUNTER_DESCRIPTOR, PCW_COUNTER_DESCRIPTOR, *PPCW_COUNTER_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PCW_COUNTER_DESCRIPTOR
+req.alt-loc: wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: PCW_COUNTER_DESCRIPTOR, *PPCW_COUNTER_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _PCW_COUNTER_DESCRIPTOR structure

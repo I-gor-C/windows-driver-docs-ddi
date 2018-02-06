@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCreateDefaultAllocatorEx
-title : KsCreateDefaultAllocatorEx function
-author : windows-driver-content
-description : Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
-old-location : stream\kscreatedefaultallocatorex.htm
-old-project : stream
-ms.assetid : 63b2d9a3-7f8e-4c03-8c0c-a4555c27e39c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsCreateDefaultAllocatorEx, KsCreateDefaultAllocatorEx, KsCreateDefaultAllocatorEx function [Streaming Media Devices], ksfunc_99b91933-c8d3-4580-bd51-a6620defcf30.xml, stream.kscreatedefaultallocatorex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateDefaultAllocatorEx
+title: KsCreateDefaultAllocatorEx function
+author: windows-driver-content
+description: Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
+old-location: stream\kscreatedefaultallocatorex.htm
+old-project: stream
+ms.assetid: 63b2d9a3-7f8e-4c03-8c0c-a4555c27e39c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsCreateDefaultAllocatorEx, KsCreateDefaultAllocatorEx, KsCreateDefaultAllocatorEx function [Streaming Media Devices], ksfunc_99b91933-c8d3-4580-bd51-a6620defcf30.xml, stream.kscreatedefaultallocatorex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsCreateDefaultAllocatorEx
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

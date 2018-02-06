@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetFieldData
-title : GetFieldData function
-author : windows-driver-content
-description : The GetFieldData function returns the value of a member in a structure.
-old-location : debugger\getfielddata.htm
-old-project : debugger
-ms.assetid : e60c2288-fe25-4da5-9b17-6e95a30e7c1c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getfielddata, wdbgexts/GetFieldData, GetFieldData, GetFieldData function [Windows Debugging], WdbgExts_Ref_898dacb4-308c-4a8f-99e2-030adf2b0eae.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetFieldData
+title: GetFieldData function
+author: windows-driver-content
+description: The GetFieldData function returns the value of a member in a structure.
+old-location: debugger\getfielddata.htm
+old-project: debugger
+ms.assetid: e60c2288-fe25-4da5-9b17-6e95a30e7c1c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getfielddata, wdbgexts/GetFieldData, GetFieldData, GetFieldData function [Windows Debugging], WdbgExts_Ref_898dacb4-308c-4a8f-99e2-030adf2b0eae.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetFieldData
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

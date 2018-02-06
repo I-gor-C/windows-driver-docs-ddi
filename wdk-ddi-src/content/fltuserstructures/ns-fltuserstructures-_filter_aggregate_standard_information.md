@@ -1,41 +1,46 @@
 ---
-UID : NS:fltuserstructures._FILTER_AGGREGATE_STANDARD_INFORMATION
-title : "_FILTER_AGGREGATE_STANDARD_INFORMATION"
-author : windows-driver-content
-description : The FILTER_AGGREGATE_STANDARD_INFORMATION structure contains information about a minifilter or legacy filter driver.
-old-location : ifsk\filter_aggregate_standard_information.htm
-old-project : ifsk
-ms.assetid : 76703a53-45c1-4dfa-b8aa-4f73d4d84538
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltuserstructures/FILTER_AGGREGATE_STANDARD_INFORMATION, FILTER_AGGREGATE_STANDARD_INFORMATION, PFILTER_AGGREGATE_STANDARD_INFORMATION structure pointer [Installable File System Drivers], PFILTER_AGGREGATE_STANDARD_INFORMATION, ifsk.filter_aggregate_standard_information, _FILTER_AGGREGATE_STANDARD_INFORMATION, *PFILTER_AGGREGATE_STANDARD_INFORMATION, FltSystemStructures_2b06b94c-69dc-4b0c-a9bc-56bba1592036.xml, FILTER_AGGREGATE_STANDARD_INFORMATION structure [Installable File System Drivers], fltuserstructures/PFILTER_AGGREGATE_STANDARD_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltuserstructures.h
-req.include-header : FltUser.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_AGGREGATE_STANDARD_INFORMATION, FILTER_AGGREGATE_STANDARD_INFORMATION"
+UID: NS:fltuserstructures._FILTER_AGGREGATE_STANDARD_INFORMATION
+title: "_FILTER_AGGREGATE_STANDARD_INFORMATION"
+author: windows-driver-content
+description: The FILTER_AGGREGATE_STANDARD_INFORMATION structure contains information about a minifilter or legacy filter driver.
+old-location: ifsk\filter_aggregate_standard_information.htm
+old-project: ifsk
+ms.assetid: 76703a53-45c1-4dfa-b8aa-4f73d4d84538
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltuserstructures/FILTER_AGGREGATE_STANDARD_INFORMATION, FILTER_AGGREGATE_STANDARD_INFORMATION, PFILTER_AGGREGATE_STANDARD_INFORMATION structure pointer [Installable File System Drivers], PFILTER_AGGREGATE_STANDARD_INFORMATION, ifsk.filter_aggregate_standard_information, _FILTER_AGGREGATE_STANDARD_INFORMATION, *PFILTER_AGGREGATE_STANDARD_INFORMATION, FltSystemStructures_2b06b94c-69dc-4b0c-a9bc-56bba1592036.xml, FILTER_AGGREGATE_STANDARD_INFORMATION structure [Installable File System Drivers], fltuserstructures/PFILTER_AGGREGATE_STANDARD_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltuserstructures.h
+req.include-header: FltUser.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltuserstructures.h
+apiname:
+-	FILTER_AGGREGATE_STANDARD_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_AGGREGATE_STANDARD_INFORMATION, FILTER_AGGREGATE_STANDARD_INFORMATION"
 ---
 
 # _FILTER_AGGREGATE_STANDARD_INFORMATION structure

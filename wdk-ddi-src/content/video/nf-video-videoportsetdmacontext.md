@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortSetDmaContext
-title : VideoPortSetDmaContext function
-author : windows-driver-content
-description : The VideoPortSetDmaContext function is obsolete in Windows 2000 and later.
-old-location : display\videoportsetdmacontext.htm
-old-project : display
-ms.assetid : 4f357612-c07d-42fe-a49f-59acec80a8bc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortSetDmaContext, VideoPortSetDmaContext function [Display Devices], display.videoportsetdmacontext, VideoPortSetDmaContext, VideoPort_Functions_8e20017f-9d32-45c9-8f68-10cc61b6591d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortSetDmaContext
+title: VideoPortSetDmaContext function
+author: windows-driver-content
+description: The VideoPortSetDmaContext function is obsolete in Windows 2000 and later.
+old-location: display\videoportsetdmacontext.htm
+old-project: display
+ms.assetid: 4f357612-c07d-42fe-a49f-59acec80a8bc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortSetDmaContext, VideoPortSetDmaContext function [Display Devices], display.videoportsetdmacontext, VideoPortSetDmaContext, VideoPort_Functions_8e20017f-9d32-45c9-8f68-10cc61b6591d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortSetDmaContext
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

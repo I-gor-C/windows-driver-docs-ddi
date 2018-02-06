@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcCopyRead
-title : CcCopyRead function
-author : windows-driver-content
-description : The CcCopyRead routine copies data from a cached file to a user buffer.
-old-location : ifsk\cccopyread.htm
-old-project : ifsk
-ms.assetid : ab095bc4-b896-4c8b-a778-714952fd41d4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcCopyRead, ifsk.cccopyread, ccref_76dde6ff-ccd7-4d90-a744-9d2c05624b00.xml, CcCopyRead, CcCopyRead routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows 2000 and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcCopyRead
+title: CcCopyRead function
+author: windows-driver-content
+description: The CcCopyRead routine copies data from a cached file to a user buffer.
+old-location: ifsk\cccopyread.htm
+old-project: ifsk
+ms.assetid: ab095bc4-b896-4c8b-a778-714952fd41d4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcCopyRead, ifsk.cccopyread, ccref_76dde6ff-ccd7-4d90-a744-9d2c05624b00.xml, CcCopyRead, CcCopyRead routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows 2000 and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcCopyRead
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

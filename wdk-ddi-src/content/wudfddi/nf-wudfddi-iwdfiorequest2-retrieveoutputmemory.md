@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.RetrieveOutputMemory
-title : IWDFIoRequest2::RetrieveOutputMemory method
-author : windows-driver-content
-description : The RetrieveOutputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's output buffer.
-old-location : wdf\iwdfiorequest2_retrieveoutputmemory.htm
-old-project : wdf
-ms.assetid : d17e7435-adc3-4248-a6c9-c7e267504291
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFRequestObjectRef_9fbbb5ad-480f-4744-805a-1af1dd841274.xml, RetrieveOutputMemory, IWDFIoRequest2 interface, RetrieveOutputMemory method, RetrieveOutputMemory method, IWDFIoRequest2 interface, IWDFIoRequest2, umdf.iwdfiorequest2_retrieveoutputmemory, RetrieveOutputMemory method, wudfddi/IWDFIoRequest2::RetrieveOutputMemory, IWDFIoRequest2::RetrieveOutputMemory, wdf.iwdfiorequest2_retrieveoutputmemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.RetrieveOutputMemory
+title: IWDFIoRequest2::RetrieveOutputMemory method
+author: windows-driver-content
+description: The RetrieveOutputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's output buffer.
+old-location: wdf\iwdfiorequest2_retrieveoutputmemory.htm
+old-project: wdf
+ms.assetid: d17e7435-adc3-4248-a6c9-c7e267504291
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFRequestObjectRef_9fbbb5ad-480f-4744-805a-1af1dd841274.xml, RetrieveOutputMemory, IWDFIoRequest2 interface, RetrieveOutputMemory method, RetrieveOutputMemory method, IWDFIoRequest2 interface, IWDFIoRequest2, umdf.iwdfiorequest2_retrieveoutputmemory, RetrieveOutputMemory method, wudfddi/IWDFIoRequest2::RetrieveOutputMemory, IWDFIoRequest2::RetrieveOutputMemory, wdf.iwdfiorequest2_retrieveoutputmemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.RetrieveOutputMemory
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlGetGroupSecurityDescriptor
-title : RtlGetGroupSecurityDescriptor function
-author : windows-driver-content
-description : The RtlGetGroupSecurityDescriptor routine returns the primary group information for a given security descriptor.
-old-location : ifsk\rtlgetgroupsecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : a2fbb125-42cf-4c33-83bb-3fc875712be3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlgetgroupsecuritydescriptor, RtlGetGroupSecurityDescriptor routine [Installable File System Drivers], ntifs/RtlGetGroupSecurityDescriptor, rtlref_6ff72a5f-d1ef-4fac-bdd0-4a612c0018ca.xml, RtlGetGroupSecurityDescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlGetGroupSecurityDescriptor
+title: RtlGetGroupSecurityDescriptor function
+author: windows-driver-content
+description: The RtlGetGroupSecurityDescriptor routine returns the primary group information for a given security descriptor.
+old-location: ifsk\rtlgetgroupsecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: a2fbb125-42cf-4c33-83bb-3fc875712be3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlgetgroupsecuritydescriptor, RtlGetGroupSecurityDescriptor routine [Installable File System Drivers], ntifs/RtlGetGroupSecurityDescriptor, rtlref_6ff72a5f-d1ef-4fac-bdd0-4a612c0018ca.xml, RtlGetGroupSecurityDescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlGetGroupSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

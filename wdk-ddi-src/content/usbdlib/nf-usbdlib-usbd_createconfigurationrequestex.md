@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_CreateConfigurationRequestEx
-title : USBD_CreateConfigurationRequestEx function
-author : windows-driver-content
-description : The USBD_CreateConfigurationRequestEx routine allocates and formats a URB to select a configuration for a USB device.USBD_CreateConfigurationRequestEx replaces USBD_CreateConfigurationRequest.
-old-location : buses\usbd_createconfigurationrequestex.htm
-old-project : usbref
-ms.assetid : 9683b171-4f2e-4a18-89b7-76d49001be37
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbfunc_d0c1e002-ed01-4bd4-98f0-b4b2d6da2ca6.xml, buses.usbd_createconfigurationrequestex, usbdlib/USBD_CreateConfigurationRequestEx, USBD_CreateConfigurationRequestEx routine [Buses], USBD_CreateConfigurationRequestEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbd.lib
-req.dll : 
-req.irql : DISPATCH_LEVEL (See Remarks)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_CreateConfigurationRequestEx
+title: USBD_CreateConfigurationRequestEx function
+author: windows-driver-content
+description: The USBD_CreateConfigurationRequestEx routine allocates and formats a URB to select a configuration for a USB device.USBD_CreateConfigurationRequestEx replaces USBD_CreateConfigurationRequest.
+old-location: buses\usbd_createconfigurationrequestex.htm
+old-project: usbref
+ms.assetid: 9683b171-4f2e-4a18-89b7-76d49001be37
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbfunc_d0c1e002-ed01-4bd4-98f0-b4b2d6da2ca6.xml, buses.usbd_createconfigurationrequestex, usbdlib/USBD_CreateConfigurationRequestEx, USBD_CreateConfigurationRequestEx routine [Buses], USBD_CreateConfigurationRequestEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbd.lib
+req.dll: 
+req.irql: DISPATCH_LEVEL (See Remarks)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbd.lib
+-	Usbd.dll
+apiname:
+-	USBD_CreateConfigurationRequestEx
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

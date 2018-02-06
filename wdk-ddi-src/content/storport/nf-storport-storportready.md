@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortReady
-title : StorPortReady function
-author : windows-driver-content
-description : The StorPortReady routine notifies the port driver that the adapter is no longer busy.
-old-location : storage\storportready.htm
-old-project : storage
-ms.assetid : 37c19ee9-4741-448c-bcbe-12437f4f3b4d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortReady, storprt_6938d8e3-03f8-4f40-a867-07b64d91a6a2.xml, StorPortReady routine [Storage Devices], storport/StorPortReady, storage.storportready
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortReady
+title: StorPortReady function
+author: windows-driver-content
+description: The StorPortReady routine notifies the port driver that the adapter is no longer busy.
+old-location: storage\storportready.htm
+old-project: storage
+ms.assetid: 37c19ee9-4741-448c-bcbe-12437f4f3b4d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortReady, storprt_6938d8e3-03f8-4f40-a867-07b64d91a6a2.xml, StorPortReady routine [Storage Devices], storport/StorPortReady, storage.storportready
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortReady
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

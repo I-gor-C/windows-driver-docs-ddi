@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PI2C_WRITE
-title : PI2C_WRITE
-author : windows-driver-content
-description : The I2CWrite function writes data over the I2C channel.
-old-location : display\i2cwrite.htm
-old-project : display
-ms.assetid : 5aaebf38-bc09-4fb5-969e-7b456773d5ac
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.i2cwrite, I2CWrite callback function [Display Devices], I2CWrite, PI2C_WRITE, PI2C_WRITE, video/I2CWrite, VideoPort_Functions_3e35f4d8-7c13-4c2c-b0e4-c518bc63e6f6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PI2C_WRITE
+title: PI2C_WRITE
+author: windows-driver-content
+description: The I2CWrite function writes data over the I2C channel.
+old-location: display\i2cwrite.htm
+old-project: display
+ms.assetid: 5aaebf38-bc09-4fb5-969e-7b456773d5ac
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.i2cwrite, I2CWrite callback function [Display Devices], I2CWrite, PI2C_WRITE, PI2C_WRITE, video/I2CWrite, VideoPort_Functions_3e35f4d8-7c13-4c2c-b0e4-c518bc63e6f6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	I2CWrite
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

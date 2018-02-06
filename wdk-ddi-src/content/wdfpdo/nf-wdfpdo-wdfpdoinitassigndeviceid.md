@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoInitAssignDeviceID
-title : WdfPdoInitAssignDeviceID function
-author : windows-driver-content
-description : The WdfPdoInitAssignDeviceID method updates the device ID for a child device.
-old-location : wdf\wdfpdoinitassigndeviceid.htm
-old-project : wdf
-ms.assetid : f8992245-42db-4ca8-afdc-e123adc0a40d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectFdoPdoRef_c0885107-9e40-4c57-ab50-c757ea58b2f9.xml, kmdf.wdfpdoinitassigndeviceid, PFN_WDFPDOINITASSIGNDEVICEID, WdfPdoInitAssignDeviceID, wdf.wdfpdoinitassigndeviceid, wdfpdo/WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoInitAssignDeviceID
+title: WdfPdoInitAssignDeviceID function
+author: windows-driver-content
+description: The WdfPdoInitAssignDeviceID method updates the device ID for a child device.
+old-location: wdf\wdfpdoinitassigndeviceid.htm
+old-project: wdf
+ms.assetid: f8992245-42db-4ca8-afdc-e123adc0a40d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectFdoPdoRef_c0885107-9e40-4c57-ab50-c757ea58b2f9.xml, kmdf.wdfpdoinitassigndeviceid, PFN_WDFPDOINITASSIGNDEVICEID, WdfPdoInitAssignDeviceID, wdf.wdfpdoinitassigndeviceid, wdfpdo/WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoInitAssignDeviceID
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

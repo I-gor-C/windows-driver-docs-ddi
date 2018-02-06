@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestSetCompletionRoutine
-title : WdfRequestSetCompletionRoutine function
-author : windows-driver-content
-description : The WdfRequestSetCompletionRoutine method registers or deregisters a completion routine for the specified framework request object.
-old-location : wdf\wdfrequestsetcompletionroutine.htm
-old-project : wdf
-ms.assetid : c60f3dd5-2a74-4d7c-8804-35b9dd91dce4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine method, DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, wdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine, wdfrequest/WdfRequestSetCompletionRoutine, PFN_WDFREQUESTSETCOMPLETIONROUTINE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, ReqCompletionRoutine
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestSetCompletionRoutine
+title: WdfRequestSetCompletionRoutine function
+author: windows-driver-content
+description: The WdfRequestSetCompletionRoutine method registers or deregisters a completion routine for the specified framework request object.
+old-location: wdf\wdfrequestsetcompletionroutine.htm
+old-project: wdf
+ms.assetid: c60f3dd5-2a74-4d7c-8804-35b9dd91dce4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine method, DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, wdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine, wdfrequest/WdfRequestSetCompletionRoutine, PFN_WDFREQUESTSETCOMPLETIONROUTINE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, ReqCompletionRoutine
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestSetCompletionRoutine
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxstruc.RxUnregisterMinirdr
-title : RxUnregisterMinirdr function
-author : windows-driver-content
-description : RxUnregisterMinirdr is an inline routine called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.
-old-location : ifsk\rxunregisterminirdr.htm
-old-project : ifsk
-ms.assetid : 090e5fc5-a0cf-4df2-b9b9-abaf4833aef7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxstruc/RxUnregisterMinirdr, RxUnregisterMinirdr routine [Installable File System Drivers], ifsk.rxunregisterminirdr, RxUnregisterMinirdr, rxref_5c58f656-5d6a-46db-9c7e-f3331e48a66a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxstruc.h
-req.include-header : Rxstruc.h, Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxstruc.RxUnregisterMinirdr
+title: RxUnregisterMinirdr function
+author: windows-driver-content
+description: RxUnregisterMinirdr is an inline routine called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.
+old-location: ifsk\rxunregisterminirdr.htm
+old-project: ifsk
+ms.assetid: 090e5fc5-a0cf-4df2-b9b9-abaf4833aef7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxstruc/RxUnregisterMinirdr, RxUnregisterMinirdr routine [Installable File System Drivers], ifsk.rxunregisterminirdr, RxUnregisterMinirdr, rxref_5c58f656-5d6a-46db-9c7e-f3331e48a66a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxstruc.h
+req.include-header: Rxstruc.h, Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxstruc.h
+apiname:
+-	RxUnregisterMinirdr
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

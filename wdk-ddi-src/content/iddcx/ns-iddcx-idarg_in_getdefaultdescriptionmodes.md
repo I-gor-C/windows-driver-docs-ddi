@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDARG_IN_GETDEFAULTDESCRIPTIONMODES
-title : IDARG_IN_GETDEFAULTDESCRIPTIONMODES
-author : windows-driver-content
-description : Gives information about the default monitor modes passed into the driver.
-old-location : display\idarg_in_getdefaultdescriptionmodes.htm
-old-project : display
-ms.assetid : 4d0a1f81-efc0-40aa-9dde-b9cac64afb8b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.idarg_in_getdefaultdescriptionmodes, IDARG_IN_GETDEFAULTDESCRIPTIONMODES structure [Display Devices], IDARG_IN_GETDEFAULTDESCRIPTIONMODES, iddcx/IDARG_IN_GETDEFAULTDESCRIPTIONMODES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDARG_IN_GETDEFAULTDESCRIPTIONMODES
+title: IDARG_IN_GETDEFAULTDESCRIPTIONMODES
+author: windows-driver-content
+description: Gives information about the default monitor modes passed into the driver.
+old-location: display\idarg_in_getdefaultdescriptionmodes.htm
+old-project: display
+ms.assetid: 4d0a1f81-efc0-40aa-9dde-b9cac64afb8b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.idarg_in_getdefaultdescriptionmodes, IDARG_IN_GETDEFAULTDESCRIPTIONMODES structure [Display Devices], IDARG_IN_GETDEFAULTDESCRIPTIONMODES, iddcx/IDARG_IN_GETDEFAULTDESCRIPTIONMODES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDARG_IN_GETDEFAULTDESCRIPTIONMODES
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDARG_IN_GETDEFAULTDESCRIPTIONMODES structure

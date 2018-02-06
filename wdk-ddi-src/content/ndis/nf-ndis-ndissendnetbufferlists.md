@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSendNetBufferLists
-title : NdisSendNetBufferLists function
-author : windows-driver-content
-description : Protocol drivers call the NdisSendNetBufferLists function to send network data that is contained in a list of NET_BUFFER_LIST structures.
-old-location : netvista\ndissendnetbufferlists.htm
-old-project : netvista
-ms.assetid : f615acc4-7e3e-4390-8a6a-e68663fcc162
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndissendnetbufferlists, NdisSendNetBufferLists, ndis/NdisSendNetBufferLists, NdisSendNetBufferLists function [Network Drivers Starting with Windows Vista], ndis_sendrcv_ref_c63c443f-ecd0-4ff3-8a60-b25cef2a5cd3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_SendRcv_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSendNetBufferLists
+title: NdisSendNetBufferLists function
+author: windows-driver-content
+description: Protocol drivers call the NdisSendNetBufferLists function to send network data that is contained in a list of NET_BUFFER_LIST structures.
+old-location: netvista\ndissendnetbufferlists.htm
+old-project: netvista
+ms.assetid: f615acc4-7e3e-4390-8a6a-e68663fcc162
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndissendnetbufferlists, NdisSendNetBufferLists, ndis/NdisSendNetBufferLists, NdisSendNetBufferLists function [Network Drivers Starting with Windows Vista], ndis_sendrcv_ref_c63c443f-ecd0-4ff3-8a60-b25cef2a5cd3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_SendRcv_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSendNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

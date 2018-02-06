@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.KeRaiseIrqlToDpcLevel
-title : KeRaiseIrqlToDpcLevel function
-author : windows-driver-content
-description : The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor.
-old-location : kernel\keraiseirqltodpclevel.htm
-old-project : kernel
-ms.assetid : ac82e003-ec05-4b8b-a4fb-64498fb17f9b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeRaiseIrqlToDpcLevel, kernel.keraiseirqltodpclevel, KeRaiseIrqlToDpcLevel routine [Kernel-Mode Driver Architecture], KeRaiseIrqlToDpcLevel, k105_64c33a5b-8efa-4d97-9569-2ea68a227d17.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRaiseIrqlToDpcLevel
+title: KeRaiseIrqlToDpcLevel function
+author: windows-driver-content
+description: The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor.
+old-location: kernel\keraiseirqltodpclevel.htm
+old-project: kernel
+ms.assetid: ac82e003-ec05-4b8b-a4fb-64498fb17f9b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeRaiseIrqlToDpcLevel, kernel.keraiseirqltodpclevel, KeRaiseIrqlToDpcLevel routine [Kernel-Mode Driver Architecture], KeRaiseIrqlToDpcLevel, k105_64c33a5b-8efa-4d97-9569-2ea68a227d17.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hal.lib
+-	Hal.dll
+apiname:
+-	KeRaiseIrqlToDpcLevel
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortReadPortUlong
-title : StorPortReadPortUlong function
-author : windows-driver-content
-description : The StorPortReadPortUlong routine reads a value from a specified port address.
-old-location : storage\storportreadportulong.htm
-old-project : storage
-ms.assetid : b04ef64a-cf1f-4de5-acb3-e57687f64719
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortReadPortUlong, storage.storportreadportulong, storprt_3ef5c577-3d75-4797-b5ce-8f36e4080c47.xml, storport/StorPortReadPortUlong, StorPortReadPortUlong routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortReadPortUlong
+title: StorPortReadPortUlong function
+author: windows-driver-content
+description: The StorPortReadPortUlong routine reads a value from a specified port address.
+old-location: storage\storportreadportulong.htm
+old-project: storage
+ms.assetid: b04ef64a-cf1f-4de5-acb3-e57687f64719
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortReadPortUlong, storage.storportreadportulong, storprt_3ef5c577-3d75-4797-b5ce-8f36e4080c47.xml, storport/StorPortReadPortUlong, StorPortReadPortUlong routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortReadPortUlong
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

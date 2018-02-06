@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetEventFilterCommand
-title : IDebugControl3::GetEventFilterCommand method
-author : windows-driver-content
-description : The GetEventFilterCommand method returns the debugger command that the engine will execute when a specified event occurs.
-old-location : debugger\geteventfiltercommand.htm
-old-project : debugger
-ms.assetid : ea88d1de-70c1-424a-a3a0-cce46cc3fe39
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetEventFilterCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl_a0acf45f-8741-48a0-9eb0-f8a9aa55c476.xml, GetEventFilterCommand method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetEventFilterCommand, debugger.geteventfiltercommand, IDebugControl::GetEventFilterCommand, GetEventFilterCommand, IDebugControl3, GetEventFilterCommand method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetEventFilterCommand method, GetEventFilterCommand method [Windows Debugging], dbgeng/IDebugControl2::GetEventFilterCommand, IDebugControl3::GetEventFilterCommand, dbgeng/IDebugControl::GetEventFilterCommand, IDebugControl3 interface [Windows Debugging], GetEventFilterCommand method, dbgeng/IDebugControl3::GetEventFilterCommand, IDebugControl interface [Windows Debugging], GetEventFilterCommand method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetEventFilterCommand
+title: IDebugControl3::GetEventFilterCommand method
+author: windows-driver-content
+description: The GetEventFilterCommand method returns the debugger command that the engine will execute when a specified event occurs.
+old-location: debugger\geteventfiltercommand.htm
+old-project: debugger
+ms.assetid: ea88d1de-70c1-424a-a3a0-cce46cc3fe39
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetEventFilterCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl_a0acf45f-8741-48a0-9eb0-f8a9aa55c476.xml, GetEventFilterCommand method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetEventFilterCommand, debugger.geteventfiltercommand, IDebugControl::GetEventFilterCommand, GetEventFilterCommand, IDebugControl3, GetEventFilterCommand method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetEventFilterCommand method, GetEventFilterCommand method [Windows Debugging], dbgeng/IDebugControl2::GetEventFilterCommand, IDebugControl3::GetEventFilterCommand, dbgeng/IDebugControl::GetEventFilterCommand, IDebugControl3 interface [Windows Debugging], GetEventFilterCommand method, dbgeng/IDebugControl3::GetEventFilterCommand, IDebugControl interface [Windows Debugging], GetEventFilterCommand method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetEventFilterCommand
+-	IDebugControl2.GetEventFilterCommand
+-	IDebugControl3.GetEventFilterCommand
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

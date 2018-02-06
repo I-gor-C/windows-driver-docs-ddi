@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenKeyedMutex
-title : D3DKMTOpenKeyedMutex function
-author : windows-driver-content
-description : The D3DKMTOpenKeyedMutex function opens a keyed mutex object.
-old-location : display\d3dkmtopenkeyedmutex.htm
-old-project : display
-ms.assetid : 309a43bf-5fad-409f-83e6-e88361b03827
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenKeyedMutex function [Display Devices], OpenGL_Functions_6e2179a9-932f-4bd3-b222-4d5f1471636c.xml, D3DKMTOpenKeyedMutex, display.d3dkmtopenkeyedmutex, d3dkmthk/D3DKMTOpenKeyedMutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTOpenKeyedMutex is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenKeyedMutex
+title: D3DKMTOpenKeyedMutex function
+author: windows-driver-content
+description: The D3DKMTOpenKeyedMutex function opens a keyed mutex object.
+old-location: display\d3dkmtopenkeyedmutex.htm
+old-project: display
+ms.assetid: 309a43bf-5fad-409f-83e6-e88361b03827
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTOpenKeyedMutex function [Display Devices], OpenGL_Functions_6e2179a9-932f-4bd3-b222-4d5f1471636c.xml, D3DKMTOpenKeyedMutex, display.d3dkmtopenkeyedmutex, d3dkmthk/D3DKMTOpenKeyedMutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTOpenKeyedMutex is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenKeyedMutex
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

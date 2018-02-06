@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._SET_LOCAL_HOST_PROPS3
-title : "_SET_LOCAL_HOST_PROPS3"
-author : windows-driver-content
-description : SET_LOCAL_HOST_PROPS3 contains the data necessary for defining or identifying one or more unit directories in the Configuration ROM of a 1394 Host Controller.
-old-location : ieee\set_local_host_props3.htm
-old-project : IEEE
-ms.assetid : f49a8b86-5611-4737-9b25-e7446e155bbc
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 1394/PSET_LOCAL_HOST_PROPS3, PSET_LOCAL_HOST_PROPS3, PSET_LOCAL_HOST_PROPS3 structure pointer [Buses], IEEE.set_local_host_props3, SET_LOCAL_HOST_PROPS3 structure [Buses], 1394/SET_LOCAL_HOST_PROPS3, _SET_LOCAL_HOST_PROPS3, *PSET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3, 1394stct_3e1725d2-1109-4762-b64e-05283146250a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3"
+UID: NS:1394._SET_LOCAL_HOST_PROPS3
+title: "_SET_LOCAL_HOST_PROPS3"
+author: windows-driver-content
+description: SET_LOCAL_HOST_PROPS3 contains the data necessary for defining or identifying one or more unit directories in the Configuration ROM of a 1394 Host Controller.
+old-location: ieee\set_local_host_props3.htm
+old-project: IEEE
+ms.assetid: f49a8b86-5611-4737-9b25-e7446e155bbc
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 1394/PSET_LOCAL_HOST_PROPS3, PSET_LOCAL_HOST_PROPS3, PSET_LOCAL_HOST_PROPS3 structure pointer [Buses], IEEE.set_local_host_props3, SET_LOCAL_HOST_PROPS3 structure [Buses], 1394/SET_LOCAL_HOST_PROPS3, _SET_LOCAL_HOST_PROPS3, *PSET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3, 1394stct_3e1725d2-1109-4762-b64e-05283146250a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	SET_LOCAL_HOST_PROPS3
+product: Windows
+targetos: Windows
+req.typenames: "*PSET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3"
 ---
 
 # _SET_LOCAL_HOST_PROPS3 structure

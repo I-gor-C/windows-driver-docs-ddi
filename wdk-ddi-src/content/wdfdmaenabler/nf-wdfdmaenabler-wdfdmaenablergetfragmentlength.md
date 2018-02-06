@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmaenabler.WdfDmaEnablerGetFragmentLength
-title : WdfDmaEnablerGetFragmentLength function
-author : windows-driver-content
-description : The WdfDmaEnablerGetFragmentLength method returns the maximum transfer length that the operating system supports for a single DMA transfer.
-old-location : wdf\wdfdmaenablergetfragmentlength.htm
-old-project : wdf
-ms.assetid : f7481655-4413-4937-8a0a-99ca07d5b7b0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerGetFragmentLength method, kmdf.wdfdmaenablergetfragmentlength, wdfdmaenabler/WdfDmaEnablerGetFragmentLength, PFN_WDFDMAENABLERGETFRAGMENTLENGTH, DFDmaObjectRef_7c147fef-46f6-49aa-b8a9-9ef1a82ef963.xml, WdfDmaEnablerGetFragmentLength, wdf.wdfdmaenablergetfragmentlength
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.1
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_PROFILE
-req.product : Windows 10 or later.
+UID: NF:wdfdmaenabler.WdfDmaEnablerGetFragmentLength
+title: WdfDmaEnablerGetFragmentLength function
+author: windows-driver-content
+description: The WdfDmaEnablerGetFragmentLength method returns the maximum transfer length that the operating system supports for a single DMA transfer.
+old-location: wdf\wdfdmaenablergetfragmentlength.htm
+old-project: wdf
+ms.assetid: f7481655-4413-4937-8a0a-99ca07d5b7b0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDmaEnablerGetFragmentLength method, kmdf.wdfdmaenablergetfragmentlength, wdfdmaenabler/WdfDmaEnablerGetFragmentLength, PFN_WDFDMAENABLERGETFRAGMENTLENGTH, DFDmaObjectRef_7c147fef-46f6-49aa-b8a9-9ef1a82ef963.xml, WdfDmaEnablerGetFragmentLength, wdf.wdfdmaenablergetfragmentlength
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.1
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaEnablerGetFragmentLength
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_PROFILE
+req.product: Windows 10 or later.
 ---
 
 

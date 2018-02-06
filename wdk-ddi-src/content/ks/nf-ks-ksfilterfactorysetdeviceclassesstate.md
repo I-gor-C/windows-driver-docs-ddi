@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterFactorySetDeviceClassesState
-title : KsFilterFactorySetDeviceClassesState function
-author : windows-driver-content
-description : The KsFilterFactorySetDeviceClassesState function enables or disables the device classes that have been registered by a given filter factory.
-old-location : stream\ksfilterfactorysetdeviceclassesstate.htm
-old-project : stream
-ms.assetid : 66515f08-b652-4aa0-8f22-b5ff0a407d6a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterFactorySetDeviceClassesState, avfunc_a88f0816-e755-450f-b8b7-83dee85171f9.xml, stream.ksfilterfactorysetdeviceclassesstate, KsFilterFactorySetDeviceClassesState function [Streaming Media Devices], ks/KsFilterFactorySetDeviceClassesState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactorySetDeviceClassesState
+title: KsFilterFactorySetDeviceClassesState function
+author: windows-driver-content
+description: The KsFilterFactorySetDeviceClassesState function enables or disables the device classes that have been registered by a given filter factory.
+old-location: stream\ksfilterfactorysetdeviceclassesstate.htm
+old-project: stream
+ms.assetid: 66515f08-b652-4aa0-8f22-b5ff0a407d6a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterFactorySetDeviceClassesState, avfunc_a88f0816-e755-450f-b8b7-83dee85171f9.xml, stream.ksfilterfactorysetdeviceclassesstate, KsFilterFactorySetDeviceClassesState function [Streaming Media Devices], ks/KsFilterFactorySetDeviceClassesState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterFactorySetDeviceClassesState
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

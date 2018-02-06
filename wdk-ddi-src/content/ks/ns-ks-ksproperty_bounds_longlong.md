@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_BOUNDS_LONGLONG
-title : KSPROPERTY_BOUNDS_LONGLONG
-author : windows-driver-content
-description : The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property.
-old-location : stream\ksproperty_bounds_longlong.htm
-old-project : stream
-ms.assetid : 25e3e430-abce-4d14-a336-4cb32a4fe5df
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_BOUNDS_LONGLONG, PKSPROPERTY_BOUNDS_LONGLONG union pointer [Streaming Media Devices], KSPROPERTY_BOUNDS_LONGLONG union [Streaming Media Devices], KSPROPERTY_BOUNDS_LONGLONG, stream.ksproperty_bounds_longlong, PKSPROPERTY_BOUNDS_LONGLONG, ks-struct_553b35b1-55c4-404d-af6b-a9fb2bbfb6b9.xml, ks/PKSPROPERTY_BOUNDS_LONGLONG, ks/KSPROPERTY_BOUNDS_LONGLONG"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG"
+UID: NS:ks.KSPROPERTY_BOUNDS_LONGLONG
+title: KSPROPERTY_BOUNDS_LONGLONG
+author: windows-driver-content
+description: The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property.
+old-location: stream\ksproperty_bounds_longlong.htm
+old-project: stream
+ms.assetid: 25e3e430-abce-4d14-a336-4cb32a4fe5df
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_BOUNDS_LONGLONG, PKSPROPERTY_BOUNDS_LONGLONG union pointer [Streaming Media Devices], KSPROPERTY_BOUNDS_LONGLONG union [Streaming Media Devices], KSPROPERTY_BOUNDS_LONGLONG, stream.ksproperty_bounds_longlong, PKSPROPERTY_BOUNDS_LONGLONG, ks-struct_553b35b1-55c4-404d-af6b-a9fb2bbfb6b9.xml, ks/PKSPROPERTY_BOUNDS_LONGLONG, ks/KSPROPERTY_BOUNDS_LONGLONG"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_BOUNDS_LONGLONG
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG"
 ---
 
 # KSPROPERTY_BOUNDS_LONGLONG structure

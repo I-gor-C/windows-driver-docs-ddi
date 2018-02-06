@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_CREATEOVERLAY
-title : "_D3DDDICB_CREATEOVERLAY"
-author : windows-driver-content
-description : The D3DDDICB_CREATEOVERLAY structure describes overlay hardware.
-old-location : display\d3dddicb_createoverlay.htm
-old-project : display
-ms.assetid : 52f95379-7bfd-4606-9199-ea253ccd6f35
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_CREATEOVERLAY structure [Display Devices], D3DDDICB_CREATEOVERLAY, _D3DDDICB_CREATEOVERLAY, d3dumddi/D3DDDICB_CREATEOVERLAY, display.d3dddicb_createoverlay, D3D_param_Structs_d6883734-5c4a-480f-bb54-12df15297daa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_CREATEOVERLAY
+UID: NS:d3dumddi._D3DDDICB_CREATEOVERLAY
+title: "_D3DDDICB_CREATEOVERLAY"
+author: windows-driver-content
+description: The D3DDDICB_CREATEOVERLAY structure describes overlay hardware.
+old-location: display\d3dddicb_createoverlay.htm
+old-project: display
+ms.assetid: 52f95379-7bfd-4606-9199-ea253ccd6f35
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_CREATEOVERLAY structure [Display Devices], D3DDDICB_CREATEOVERLAY, _D3DDDICB_CREATEOVERLAY, d3dumddi/D3DDDICB_CREATEOVERLAY, display.d3dddicb_createoverlay, D3D_param_Structs_d6883734-5c4a-480f-bb54-12df15297daa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_CREATEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_CREATEOVERLAY
 ---
 
 # _D3DDDICB_CREATEOVERLAY structure

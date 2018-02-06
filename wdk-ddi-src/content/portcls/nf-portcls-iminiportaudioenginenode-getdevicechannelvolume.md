@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelVolume
-title : IMiniportAudioEngineNode::GetDeviceChannelVolume method
-author : windows-driver-content
-description : Gets the volume level for a given channel of the audio device.
-old-location : audio\iminiportaudioenginenode_getdevicechannelvolume.htm
-old-project : audio
-ms.assetid : 195AAD37-6993-4F0A-BEF7-848122402742
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetDeviceChannelVolume method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelVolume, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelVolume method, IMiniportAudioEngineNode::GetDeviceChannelVolume, audio.iminiportaudioenginenode_getdevicechannelvolume, portcls/IMiniportAudioEngineNode::GetDeviceChannelVolume, IMiniportAudioEngineNode, GetDeviceChannelVolume method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelVolume
+title: IMiniportAudioEngineNode::GetDeviceChannelVolume method
+author: windows-driver-content
+description: Gets the volume level for a given channel of the audio device.
+old-location: audio\iminiportaudioenginenode_getdevicechannelvolume.htm
+old-project: audio
+ms.assetid: 195AAD37-6993-4F0A-BEF7-848122402742
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetDeviceChannelVolume method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelVolume, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelVolume method, IMiniportAudioEngineNode::GetDeviceChannelVolume, audio.iminiportaudioenginenode_getdevicechannelvolume, portcls/IMiniportAudioEngineNode::GetDeviceChannelVolume, IMiniportAudioEngineNode, GetDeviceChannelVolume method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetDeviceChannelVolume
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

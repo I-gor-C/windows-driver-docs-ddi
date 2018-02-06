@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlInitializeSidEx
-title : RtlInitializeSidEx function
-author : windows-driver-content
-description : The RtlInitializeSidEx routine initializes a pre-allocated security identifier (SID) structure.
-old-location : ifsk\rtlinitializesidex.htm
-old-project : ifsk
-ms.assetid : 367D8BC1-07F4-474E-913A-5F825320A70C
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlInitializeSidEx routine [Installable File System Drivers], ntifs/RtlInitializeSidEx, ifsk.rtlinitializesidex, RtlInitializeSidEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows 10 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlInitializeSidEx
+title: RtlInitializeSidEx function
+author: windows-driver-content
+description: The RtlInitializeSidEx routine initializes a pre-allocated security identifier (SID) structure.
+old-location: ifsk\rtlinitializesidex.htm
+old-project: ifsk
+ms.assetid: 367D8BC1-07F4-474E-913A-5F825320A70C
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlInitializeSidEx routine [Installable File System Drivers], ntifs/RtlInitializeSidEx, ifsk.rtlinitializesidex, RtlInitializeSidEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows 10 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlInitializeSidEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

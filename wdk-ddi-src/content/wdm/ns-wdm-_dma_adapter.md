@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DMA_ADAPTER
-title : "_DMA_ADAPTER"
-author : windows-driver-content
-description : The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure.
-old-location : kernel\dma_adapter.htm
-old-project : kernel
-ms.assetid : 08cd5b10-725e-4a36-b70d-42a831b79372
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/DMA_ADAPTER, PDMA_ADAPTER, kernel.dma_adapter, DMA_ADAPTER, *PADAPTER_OBJECT, PDMA_ADAPTER structure pointer [Kernel-Mode Driver Architecture], DMA_ADAPTER structure [Kernel-Mode Driver Architecture], wdm/PDMA_ADAPTER, *PDMA_ADAPTER, _DMA_ADAPTER, kstruct_a_030ef4da-75e2-4427-baf6-cb9a5eb194cf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PADAPTER_OBJECT, DMA_ADAPTER, *PDMA_ADAPTER"
-req.product : Windows 10 or later.
+UID: NS:wdm._DMA_ADAPTER
+title: "_DMA_ADAPTER"
+author: windows-driver-content
+description: The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure.
+old-location: kernel\dma_adapter.htm
+old-project: kernel
+ms.assetid: 08cd5b10-725e-4a36-b70d-42a831b79372
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/DMA_ADAPTER, PDMA_ADAPTER, kernel.dma_adapter, DMA_ADAPTER, *PADAPTER_OBJECT, PDMA_ADAPTER structure pointer [Kernel-Mode Driver Architecture], DMA_ADAPTER structure [Kernel-Mode Driver Architecture], wdm/PDMA_ADAPTER, *PDMA_ADAPTER, _DMA_ADAPTER, kstruct_a_030ef4da-75e2-4427-baf6-cb9a5eb194cf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DMA_ADAPTER
+product: Windows
+targetos: Windows
+req.typenames: "*PADAPTER_OBJECT, DMA_ADAPTER, *PDMA_ADAPTER"
+req.product: Windows 10 or later.
 ---
 
 # _DMA_ADAPTER structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetLongPtr
-title : ExtRemoteData::GetLongPtr method
-author : windows-driver-content
-description : The GetLongPtr method returns a signed integer version (extended to LONG64) of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target.
-old-location : debugger\extremotedata_getlongptr.htm
-old-project : debugger
-ms.assetid : 9f796af1-870b-4349-b86a-3c9d868662f6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.extremotedata_getlongptr, ExtRemoteData, GetLongPtr method [Windows Debugging], ExtRemoteData class, ExtRemoteData::GetLongPtr, GetLongPtr, EngExtCpp_Ref_3160f5ef-8983-40b4-a7f8-95a1a40d67ac.xml, ExtRemoteData class [Windows Debugging], GetLongPtr method, GetLongPtr method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetLongPtr
+title: ExtRemoteData::GetLongPtr method
+author: windows-driver-content
+description: The GetLongPtr method returns a signed integer version (extended to LONG64) of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target.
+old-location: debugger\extremotedata_getlongptr.htm
+old-project: debugger
+ms.assetid: 9f796af1-870b-4349-b86a-3c9d868662f6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.extremotedata_getlongptr, ExtRemoteData, GetLongPtr method [Windows Debugging], ExtRemoteData class, ExtRemoteData::GetLongPtr, GetLongPtr, EngExtCpp_Ref_3160f5ef-8983-40b4-a7f8-95a1a40d67ac.xml, ExtRemoteData class [Windows Debugging], GetLongPtr method, GetLongPtr method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetLongPtr
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

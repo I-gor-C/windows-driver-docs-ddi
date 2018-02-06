@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetFC4Statistics_IN
-title : "_GetFC4Statistics_IN"
-author : windows-driver-content
-description : The GetFC4Statistics_IN structure is used to pass input parameter data to the GetFC4Statistics WMI method.
-old-location : storage\getfc4statistics_in.htm
-old-project : storage
-ms.assetid : 10e3c823-97e3-47e9-8545-94cd186e5b59
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PGetFC4Statistics_IN, GetFC4Statistics_IN, PGetFC4Statistics_IN structure pointer [Storage Devices], _GetFC4Statistics_IN, structs-Fibre_17ea3e0e-1cf9-4cf8-9128-1152e610847c.xml, *PGetFC4Statistics_IN, storage.getfc4statistics_in, PGetFC4Statistics_IN, hbapiwmi/GetFC4Statistics_IN, GetFC4Statistics_IN structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetFC4Statistics_IN, GetFC4Statistics_IN"
+UID: NS:hbapiwmi._GetFC4Statistics_IN
+title: "_GetFC4Statistics_IN"
+author: windows-driver-content
+description: The GetFC4Statistics_IN structure is used to pass input parameter data to the GetFC4Statistics WMI method.
+old-location: storage\getfc4statistics_in.htm
+old-project: storage
+ms.assetid: 10e3c823-97e3-47e9-8545-94cd186e5b59
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PGetFC4Statistics_IN, GetFC4Statistics_IN, PGetFC4Statistics_IN structure pointer [Storage Devices], _GetFC4Statistics_IN, structs-Fibre_17ea3e0e-1cf9-4cf8-9128-1152e610847c.xml, *PGetFC4Statistics_IN, storage.getfc4statistics_in, PGetFC4Statistics_IN, hbapiwmi/GetFC4Statistics_IN, GetFC4Statistics_IN structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetFC4Statistics_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PGetFC4Statistics_IN, GetFC4Statistics_IN"
 ---
 
 # _GetFC4Statistics_IN structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_IEEE1284_GET_MODE
-title : IOCTL_IEEE1284_GET_MODE
-author : windows-driver-content
-description : The IOCTL_IEEE1284_GET_MODE request returns the IEEE 1284 read and write protocols that are currently set for a parallel device.
-old-location : parports\ioctl_ieee1284_get_mode.htm
-old-project : parports
-ms.assetid : d4bf4c05-fd60-4770-830c-1b146eaec967
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_ieee1284_get_mode, IOCTL_IEEE1284_GET_MODE control code [Parallel Ports], IOCTL_IEEE1284_GET_MODE, ntddpar/IOCTL_IEEE1284_GET_MODE, cisspd_e421ca10-5fc6-444c-bb92-09f680fca56a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_IEEE1284_GET_MODE
+title: IOCTL_IEEE1284_GET_MODE
+author: windows-driver-content
+description: The IOCTL_IEEE1284_GET_MODE request returns the IEEE 1284 read and write protocols that are currently set for a parallel device.
+old-location: parports\ioctl_ieee1284_get_mode.htm
+old-project: parports
+ms.assetid: d4bf4c05-fd60-4770-830c-1b146eaec967
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_ieee1284_get_mode, IOCTL_IEEE1284_GET_MODE control code [Parallel Ports], IOCTL_IEEE1284_GET_MODE, ntddpar/IOCTL_IEEE1284_GET_MODE, cisspd_e421ca10-5fc6-444c-bb92-09f680fca56a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_IEEE1284_GET_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_IEEE1284_GET_MODE IOCTL

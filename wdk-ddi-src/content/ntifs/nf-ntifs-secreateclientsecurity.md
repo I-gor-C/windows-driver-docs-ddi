@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeCreateClientSecurity
-title : SeCreateClientSecurity function
-author : windows-driver-content
-description : The SeCreateClientSecurity routine initializes a security client context structure with the information needed to call SeImpersonateClientEx.
-old-location : ifsk\secreateclientsecurity.htm
-old-project : ifsk
-ms.assetid : 10aadf41-79c4-46d6-a5ae-e8b3b5f338f0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SeCreateClientSecurity, seref_3b2ae680-788b-4ecb-b747-427f8fd3b4bf.xml, SeCreateClientSecurity routine [Installable File System Drivers], ifsk.secreateclientsecurity, ntifs/SeCreateClientSecurity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeCreateClientSecurity
+title: SeCreateClientSecurity function
+author: windows-driver-content
+description: The SeCreateClientSecurity routine initializes a security client context structure with the information needed to call SeImpersonateClientEx.
+old-location: ifsk\secreateclientsecurity.htm
+old-project: ifsk
+ms.assetid: 10aadf41-79c4-46d6-a5ae-e8b3b5f338f0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SeCreateClientSecurity, seref_3b2ae680-788b-4ecb-b747-427f8fd3b4bf.xml, SeCreateClientSecurity routine [Installable File System Drivers], ifsk.secreateclientsecurity, ntifs/SeCreateClientSecurity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeCreateClientSecurity
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

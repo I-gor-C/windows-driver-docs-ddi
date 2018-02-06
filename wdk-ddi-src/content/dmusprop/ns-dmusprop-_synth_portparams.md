@@ -1,41 +1,46 @@
 ---
-UID : NS:dmusprop._SYNTH_PORTPARAMS
-title : "_SYNTH_PORTPARAMS"
-author : windows-driver-content
-description : The SYNTH_PORTPARAMS structure contains the configuration parameters for a DirectMusic port, which is a DirectMusic term for a device that sends or receives music data.
-old-location : audio\synth_portparams.htm
-old-project : audio
-ms.assetid : 94c953ae-519b-4659-a4c9-a97db7dc31e9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SYNTH_PORTPARAMS structure [Audio Devices], dmusprop/SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices], _SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, audio.synth_portparams, dmusprop/PSYNTH_PORTPARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dmusprop.h
-req.include-header : Dmusprop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
+UID: NS:dmusprop._SYNTH_PORTPARAMS
+title: "_SYNTH_PORTPARAMS"
+author: windows-driver-content
+description: The SYNTH_PORTPARAMS structure contains the configuration parameters for a DirectMusic port, which is a DirectMusic term for a device that sends or receives music data.
+old-location: audio\synth_portparams.htm
+old-project: audio
+ms.assetid: 94c953ae-519b-4659-a4c9-a97db7dc31e9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SYNTH_PORTPARAMS structure [Audio Devices], dmusprop/SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices], _SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, audio.synth_portparams, dmusprop/PSYNTH_PORTPARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dmusprop.h
+req.include-header: Dmusprop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dmusprop.h
+apiname:
+-	SYNTH_PORTPARAMS
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
 ---
 
 # _SYNTH_PORTPARAMS structure

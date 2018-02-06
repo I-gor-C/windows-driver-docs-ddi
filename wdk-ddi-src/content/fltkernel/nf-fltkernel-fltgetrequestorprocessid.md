@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetRequestorProcessId
-title : FltGetRequestorProcessId function
-author : windows-driver-content
-description : The FltGetRequestorProcessId routine returns the unique 32-bit process ID for the process associated with the thread that requested a given I/O operation.
-old-location : ifsk\fltgetrequestorprocessid.htm
-old-project : ifsk
-ms.assetid : 45965b8c-749c-42ef-b29f-22a46028e4d3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetRequestorProcessId routine [Installable File System Drivers], FltGetRequestorProcessId, ifsk.fltgetrequestorprocessid, fltkernel/FltGetRequestorProcessId, FltApiRef_e_to_o_1e770f18-5024-4f82-9d63-eba6a9e6fd5b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetRequestorProcessId
+title: FltGetRequestorProcessId function
+author: windows-driver-content
+description: The FltGetRequestorProcessId routine returns the unique 32-bit process ID for the process associated with the thread that requested a given I/O operation.
+old-location: ifsk\fltgetrequestorprocessid.htm
+old-project: ifsk
+ms.assetid: 45965b8c-749c-42ef-b29f-22a46028e4d3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetRequestorProcessId routine [Installable File System Drivers], FltGetRequestorProcessId, ifsk.fltgetrequestorprocessid, fltkernel/FltGetRequestorProcessId, FltApiRef_e_to_o_1e770f18-5024-4f82-9d63-eba6a9e6fd5b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetRequestorProcessId
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

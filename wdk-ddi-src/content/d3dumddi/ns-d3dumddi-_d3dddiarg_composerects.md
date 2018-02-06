@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_COMPOSERECTS
-title : "_D3DDDIARG_COMPOSERECTS"
-author : windows-driver-content
-description : The D3DDDIARG_COMPOSERECTS structure describes the parameters that are used to compose rectangular areas.
-old-location : display\d3dddiarg_composerects.htm
-old-project : display
-ms.assetid : 9360f9c4-e30e-4fc0-ade7-1d98ff8b1d1b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_COMPOSERECTS, d3dumddi/D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS structure [Display Devices], D3DDDIARG_COMPOSERECTS, display.d3dddiarg_composerects, UMDisplayDriver_param_Structs_2f10ffa4-f55f-490b-9aa4-08c0c3e3d924.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_COMPOSERECTS
+UID: NS:d3dumddi._D3DDDIARG_COMPOSERECTS
+title: "_D3DDDIARG_COMPOSERECTS"
+author: windows-driver-content
+description: The D3DDDIARG_COMPOSERECTS structure describes the parameters that are used to compose rectangular areas.
+old-location: display\d3dddiarg_composerects.htm
+old-project: display
+ms.assetid: 9360f9c4-e30e-4fc0-ade7-1d98ff8b1d1b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDIARG_COMPOSERECTS, d3dumddi/D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS structure [Display Devices], D3DDDIARG_COMPOSERECTS, display.d3dddiarg_composerects, UMDisplayDriver_param_Structs_2f10ffa4-f55f-490b-9aa4-08c0c3e3d924.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_COMPOSERECTS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_COMPOSERECTS
 ---
 
 # _D3DDDIARG_COMPOSERECTS structure

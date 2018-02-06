@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_ConnectMode
-title : "_DXVA_ConnectMode"
-author : windows-driver-content
-description : The DXVA_ConnectMode structure is sent by the host decoder to the accelerator to define the restricted profile used within a DirectX VA connection.
-old-location : display\dxva_connectmode.htm
-old-project : display
-ms.assetid : 84520745-c99d-4495-a7c4-514d5e6cd27e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPDXVA_ConnectMode structure pointer [Display Devices], LPDXVA_ConnectMode, dxva/DXVA_ConnectMode, DXVA_ConnectMode, *LPDXVA_ConnectMode, DXVA_ConnectMode structure [Display Devices], _DXVA_ConnectMode, display.dxva_connectmode, dxva/LPDXVA_ConnectMode, dxvaref_24815d94-550d-4b5c-be95-2fb0882781c0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_ConnectMode, DXVA_ConnectMode"
+UID: NS:dxva._DXVA_ConnectMode
+title: "_DXVA_ConnectMode"
+author: windows-driver-content
+description: The DXVA_ConnectMode structure is sent by the host decoder to the accelerator to define the restricted profile used within a DirectX VA connection.
+old-location: display\dxva_connectmode.htm
+old-project: display
+ms.assetid: 84520745-c99d-4495-a7c4-514d5e6cd27e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPDXVA_ConnectMode structure pointer [Display Devices], LPDXVA_ConnectMode, dxva/DXVA_ConnectMode, DXVA_ConnectMode, *LPDXVA_ConnectMode, DXVA_ConnectMode structure [Display Devices], _DXVA_ConnectMode, display.dxva_connectmode, dxva/LPDXVA_ConnectMode, dxvaref_24815d94-550d-4b5c-be95-2fb0882781c0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_ConnectMode
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_ConnectMode, DXVA_ConnectMode"
 ---
 
 # _DXVA_ConnectMode structure

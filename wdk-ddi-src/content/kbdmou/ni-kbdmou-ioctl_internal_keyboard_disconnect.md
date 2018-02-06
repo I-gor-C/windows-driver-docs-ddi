@@ -1,41 +1,46 @@
 ---
-UID : NI:kbdmou.IOCTL_INTERNAL_KEYBOARD_DISCONNECT
-title : IOCTL_INTERNAL_KEYBOARD_DISCONNECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_KEYBOARD_DISCONNECT request is completed with a status of STATUS_NOT_IMPLEMENTED. Note that a Plug and Play keyboard can be added or removed by the Plug and Play manager.
-old-location : hid\ioctl_internal_keyboard_disconnect.htm
-old-project : hid
-ms.assetid : ec1c2267-b92c-4d4c-86fa-f2b3ccb6aa40
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_keyboard_disconnect, IOCTL_INTERNAL_KEYBOARD_DISCONNECT control code [Human Input Devices], IOCTL_INTERNAL_KEYBOARD_DISCONNECT, kbdmou/IOCTL_INTERNAL_KEYBOARD_DISCONNECT, kfilref_fd52cb0d-fbdd-44fb-9c71-ec829387a88b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : kbdmou.h
-req.include-header : Kbdmou.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+UID: NI:kbdmou.IOCTL_INTERNAL_KEYBOARD_DISCONNECT
+title: IOCTL_INTERNAL_KEYBOARD_DISCONNECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_KEYBOARD_DISCONNECT request is completed with a status of STATUS_NOT_IMPLEMENTED. Note that a Plug and Play keyboard can be added or removed by the Plug and Play manager.
+old-location: hid\ioctl_internal_keyboard_disconnect.htm
+old-project: hid
+ms.assetid: ec1c2267-b92c-4d4c-86fa-f2b3ccb6aa40
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_keyboard_disconnect, IOCTL_INTERNAL_KEYBOARD_DISCONNECT control code [Human Input Devices], IOCTL_INTERNAL_KEYBOARD_DISCONNECT, kbdmou/IOCTL_INTERNAL_KEYBOARD_DISCONNECT, kfilref_fd52cb0d-fbdd-44fb-9c71-ec829387a88b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: kbdmou.h
+req.include-header: Kbdmou.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	kbdmou.h
+apiname:
+-	IOCTL_INTERNAL_KEYBOARD_DISCONNECT
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # IOCTL_INTERNAL_KEYBOARD_DISCONNECT IOCTL

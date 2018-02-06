@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_USSD_STRING
-title : "_WWAN_USSD_STRING"
-author : windows-driver-content
-description : The WWAN_USSD_STRING structure describes an Unstructured Supplementary Service Data (USSD) string.
-old-location : netvista\wwan_ussd_string.htm
-old-project : netvista
-ms.assetid : 9DE6CE5D-9570-4728-ACED-D6863812A3F4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_ussd_string, wwan/PWWAN_USSD_STRING, WWAN_USSD_STRING, WWAN_USSD_STRING structure [Network Drivers Starting with Windows Vista], PWWAN_USSD_STRING, PWWAN_USSD_STRING structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_USSD_STRING, wwan/WWAN_USSD_STRING, _WWAN_USSD_STRING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_USSD_STRING, WWAN_USSD_STRING"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_USSD_STRING
+title: "_WWAN_USSD_STRING"
+author: windows-driver-content
+description: The WWAN_USSD_STRING structure describes an Unstructured Supplementary Service Data (USSD) string.
+old-location: netvista\wwan_ussd_string.htm
+old-project: netvista
+ms.assetid: 9DE6CE5D-9570-4728-ACED-D6863812A3F4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_ussd_string, wwan/PWWAN_USSD_STRING, WWAN_USSD_STRING, WWAN_USSD_STRING structure [Network Drivers Starting with Windows Vista], PWWAN_USSD_STRING, PWWAN_USSD_STRING structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_USSD_STRING, wwan/WWAN_USSD_STRING, _WWAN_USSD_STRING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_USSD_STRING
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_USSD_STRING, WWAN_USSD_STRING"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_USSD_STRING structure

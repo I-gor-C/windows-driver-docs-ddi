@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1
-title : PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1
-author : windows-driver-content
-description : Sets the colorspace information for the video processor input stream. This function must be implemented by Windows Display Driver Model (WDDM) 2.0, or later, drivers.
-old-location : display\videoprocessorsetstreamcolorspace1.htm
-old-project : display
-ms.assetid : BFE62398-DDAE-4DC1-9DB3-6B71BBDD506D
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetstreamcolorspace1, pfnVideoProcessorSetStreamColorSpace1 callback function [Display Devices], pfnVideoProcessorSetStreamColorSpace1, PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1, PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1, d3d10umddi/pfnVideoProcessorSetStreamColorSpace1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1
+title: PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1
+author: windows-driver-content
+description: Sets the colorspace information for the video processor input stream. This function must be implemented by Windows Display Driver Model (WDDM) 2.0, or later, drivers.
+old-location: display\videoprocessorsetstreamcolorspace1.htm
+old-project: display
+ms.assetid: BFE62398-DDAE-4DC1-9DB3-6B71BBDD506D
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetstreamcolorspace1, pfnVideoProcessorSetStreamColorSpace1 callback function [Display Devices], pfnVideoProcessorSetStreamColorSpace1, PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1, PFND3DWDDM2_0DDI_VIDEOPROCESSORSETSTREAMCOLORSPACE1, d3d10umddi/pfnVideoProcessorSetStreamColorSpace1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetStreamColorSpace1
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

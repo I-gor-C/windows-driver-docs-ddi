@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._PD_BUFFER_8021Q_INFO
-title : "_PD_BUFFER_8021Q_INFO"
-author : windows-driver-content
-description : This structure contains the IEEE 802.1Q information.
-old-location : netvista\pd_buffer_8021q_info.htm
-old-project : netvista
-ms.assetid : B5B2051E-C62F-4E3D-9C52-DE46145A2C24
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PPD_BUFFER_8021Q_INFO, netvista.pd_buffer_8021q_info, PPD_BUFFER_8021Q_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PPD_BUFFER_8021Q_INFO, _PD_BUFFER_8021Q_INFO, ndis/PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_8021Q_INFO
+UID: NS:ndis._PD_BUFFER_8021Q_INFO
+title: "_PD_BUFFER_8021Q_INFO"
+author: windows-driver-content
+description: This structure contains the IEEE 802.1Q information.
+old-location: netvista\pd_buffer_8021q_info.htm
+old-project: netvista
+ms.assetid: B5B2051E-C62F-4E3D-9C52-DE46145A2C24
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PPD_BUFFER_8021Q_INFO, netvista.pd_buffer_8021q_info, PPD_BUFFER_8021Q_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PPD_BUFFER_8021Q_INFO, _PD_BUFFER_8021Q_INFO, ndis/PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	PD_BUFFER_8021Q_INFO
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_8021Q_INFO
 ---
 
 # _PD_BUFFER_8021Q_INFO structure

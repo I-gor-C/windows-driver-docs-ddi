@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_GETROOTPAGETABLESIZE
-title : DXGKDDI_GETROOTPAGETABLESIZE
-author : windows-driver-content
-description : DxgkDdiGetRootPageTableSize returns the minimum root page table size, in bytes, that is needed to hold the given number of page table entries.
-old-location : display\dxgkddigetrootpagetablesize.htm
-old-project : display
-ms.assetid : 474F1772-0DF9-487B-AEB9-302392AE0B98
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetrootpagetablesize, DxgkDdiGetRootPageTableSize callback function [Display Devices], DxgkDdiGetRootPageTableSize, DXGKDDI_GETROOTPAGETABLESIZE, DXGKDDI_GETROOTPAGETABLESIZE, d3dkmddi/DxgkDdiGetRootPageTableSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_GETROOTPAGETABLESIZE
+title: DXGKDDI_GETROOTPAGETABLESIZE
+author: windows-driver-content
+description: DxgkDdiGetRootPageTableSize returns the minimum root page table size, in bytes, that is needed to hold the given number of page table entries.
+old-location: display\dxgkddigetrootpagetablesize.htm
+old-project: display
+ms.assetid: 474F1772-0DF9-487B-AEB9-302392AE0B98
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetrootpagetablesize, DxgkDdiGetRootPageTableSize callback function [Display Devices], DxgkDdiGetRootPageTableSize, DXGKDDI_GETROOTPAGETABLESIZE, DXGKDDI_GETROOTPAGETABLESIZE, d3dkmddi/DxgkDdiGetRootPageTableSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiGetRootPageTableSize
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

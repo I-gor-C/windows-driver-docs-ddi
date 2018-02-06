@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL
-title : EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL
-author : windows-driver-content
-description : A driver's EvtIoDeviceControl event callback function processes a specified device I/O control request.
-old-location : wdf\evtiodevicecontrol.htm
-old-project : wdf
-ms.assetid : 3e3c4c53-e557-4bd1-8b7d-be59dde4b9ce
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiodevicecontrol, EvtIoDeviceControl callback function, EvtIoDeviceControl, EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL, EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL, wdfio/EvtIoDeviceControl, DFQueueObjectRef_90eafb20-dd9c-49ca-b435-fdee9b13e4e1.xml, kmdf.evtiodevicecontrol
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL
+title: EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL
+author: windows-driver-content
+description: A driver's EvtIoDeviceControl event callback function processes a specified device I/O control request.
+old-location: wdf\evtiodevicecontrol.htm
+old-project: wdf
+ms.assetid: 3e3c4c53-e557-4bd1-8b7d-be59dde4b9ce
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiodevicecontrol, EvtIoDeviceControl callback function, EvtIoDeviceControl, EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL, EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL, wdfio/EvtIoDeviceControl, DFQueueObjectRef_90eafb20-dd9c-49ca-b435-fdee9b13e4e1.xml, kmdf.evtiodevicecontrol
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoDeviceControl
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

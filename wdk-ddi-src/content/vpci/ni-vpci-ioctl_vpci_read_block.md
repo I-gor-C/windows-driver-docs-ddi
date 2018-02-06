@@ -1,42 +1,47 @@
 ---
-UID : NI:vpci.IOCTL_VPCI_READ_BLOCK
-title : IOCTL_VPCI_READ_BLOCK
-author : windows-driver-content
-description : The driver for a PCI Express (PCIe) virtual function (VF) issues an IOCTL_VPCI_READ_BLOCK I/O control code (IOCTL) in order to read data from a VF configuration block. The driver issues this IOCTL to the next-lower driver in the driver stack.
-old-location : pci\ioctl_vpci_read_block.htm
-old-project : PCI
-ms.assetid : C493724D-316B-4F64-866B-D26C2DBA822A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl_vpci_read_block, IOCTL_VPCI_READ_BLOCK control code, IOCTL_VPCI_READ_BLOCK, vpci/IOCTL_VPCI_READ_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : vpci.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
-req.product : Windows 10 or later.
+UID: NI:vpci.IOCTL_VPCI_READ_BLOCK
+title: IOCTL_VPCI_READ_BLOCK
+author: windows-driver-content
+description: The driver for a PCI Express (PCIe) virtual function (VF) issues an IOCTL_VPCI_READ_BLOCK I/O control code (IOCTL) in order to read data from a VF configuration block. The driver issues this IOCTL to the next-lower driver in the driver stack.
+old-location: pci\ioctl_vpci_read_block.htm
+old-project: PCI
+ms.assetid: C493724D-316B-4F64-866B-D26C2DBA822A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl_vpci_read_block, IOCTL_VPCI_READ_BLOCK control code, IOCTL_VPCI_READ_BLOCK, vpci/IOCTL_VPCI_READ_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: vpci.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Vpci.h
+apiname:
+-	IOCTL_VPCI_READ_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_VPCI_READ_BLOCK IOCTL

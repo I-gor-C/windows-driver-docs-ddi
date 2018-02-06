@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUnicodeToMultiByteSize
-title : RtlUnicodeToMultiByteSize function
-author : windows-driver-content
-description : The RtlUnicodeToMultiByteSize routine determines the number of bytes that are required to store the multibyte translation for the specified Unicode string. The translation is assumed to use the current system ANSI code page (ACP).
-old-location : ifsk\rtlunicodetomultibytesize.htm
-old-project : ifsk
-ms.assetid : 603a5554-2e61-49f1-a4b1-e0f0f3ba36c8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlUnicodeToMultiByteSize routine [Installable File System Drivers], ntifs/RtlUnicodeToMultiByteSize, RtlUnicodeToMultiByteSize, rtlref_f0366c3a-b185-45f3-a7e2-541168b842d3.xml, ifsk.rtlunicodetomultibytesize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUnicodeToMultiByteSize
+title: RtlUnicodeToMultiByteSize function
+author: windows-driver-content
+description: The RtlUnicodeToMultiByteSize routine determines the number of bytes that are required to store the multibyte translation for the specified Unicode string. The translation is assumed to use the current system ANSI code page (ACP).
+old-location: ifsk\rtlunicodetomultibytesize.htm
+old-project: ifsk
+ms.assetid: 603a5554-2e61-49f1-a4b1-e0f0f3ba36c8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlUnicodeToMultiByteSize routine [Installable File System Drivers], ntifs/RtlUnicodeToMultiByteSize, RtlUnicodeToMultiByteSize, rtlref_f0366c3a-b185-45f3-a7e2-541168b842d3.xml, ifsk.rtlunicodetomultibytesize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUnicodeToMultiByteSize
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

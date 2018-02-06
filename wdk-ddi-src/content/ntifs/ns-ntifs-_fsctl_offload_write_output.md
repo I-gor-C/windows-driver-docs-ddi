@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FSCTL_OFFLOAD_WRITE_OUTPUT
-title : "_FSCTL_OFFLOAD_WRITE_OUTPUT"
-author : windows-driver-content
-description : The FSCTL_OFFLOAD_WRITE_OUTPUT structure contains the output for the FSCTL_OFFLOAD_WRITE control code request.
-old-location : ifsk\fsctl_offload_write_output.htm
-old-project : ifsk
-ms.assetid : 7293940B-A316-43C5-A5E8-6ED70EC6FDF8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT, _FSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT, ifsk.fsctl_offload_write_output, OFFLOAD_READ_FLAG_FILE_TOO_SMALL, ntifs/FSCTL_OFFLOAD_WRITE_OUTPUT, ntifs/PFSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT structure [Installable File System Drivers], PFSCTL_OFFLOAD_WRITE_OUTPUT structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT
+UID: NS:ntifs._FSCTL_OFFLOAD_WRITE_OUTPUT
+title: "_FSCTL_OFFLOAD_WRITE_OUTPUT"
+author: windows-driver-content
+description: The FSCTL_OFFLOAD_WRITE_OUTPUT structure contains the output for the FSCTL_OFFLOAD_WRITE control code request.
+old-location: ifsk\fsctl_offload_write_output.htm
+old-project: ifsk
+ms.assetid: 7293940B-A316-43C5-A5E8-6ED70EC6FDF8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT, _FSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT, ifsk.fsctl_offload_write_output, OFFLOAD_READ_FLAG_FILE_TOO_SMALL, ntifs/FSCTL_OFFLOAD_WRITE_OUTPUT, ntifs/PFSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT structure [Installable File System Drivers], PFSCTL_OFFLOAD_WRITE_OUTPUT structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSCTL_OFFLOAD_WRITE_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: FSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT
 ---
 
 # _FSCTL_OFFLOAD_WRITE_OUTPUT structure

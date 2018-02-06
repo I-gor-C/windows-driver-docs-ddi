@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmAllocatePagesForMdlEx
-title : MmAllocatePagesForMdlEx function
-author : windows-driver-content
-description : The MmAllocatePagesForMdlEx routine allocates nonpaged, physical memory pages to an MDL.
-old-location : kernel\mmallocatepagesformdlex.htm
-old-project : kernel
-ms.assetid : f860c230-01ca-4c7f-8b67-5d92a80ff906
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmAllocatePagesForMdlEx, MM_ALLOCATE_FROM_LOCAL_NODE_ONLY, MM_DONT_ZERO_ALLOCATION, kernel.mmallocatepagesformdlex, MmAllocatePagesForMdlEx routine [Kernel-Mode Driver Architecture], MM_ALLOCATE_FULLY_REQUIRED, k106_df4d4bea-4360-4755-841c-f39849228e9b.xml, MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS, MM_ALLOCATE_PREFER_CONTIGUOUS, MM_ALLOCATE_NO_WAIT, wdm/MmAllocatePagesForMdlEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. You should use this routine instead of MmAllocatePagesForMdl on these operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmAllocatePagesForMdlEx
+title: MmAllocatePagesForMdlEx function
+author: windows-driver-content
+description: The MmAllocatePagesForMdlEx routine allocates nonpaged, physical memory pages to an MDL.
+old-location: kernel\mmallocatepagesformdlex.htm
+old-project: kernel
+ms.assetid: f860c230-01ca-4c7f-8b67-5d92a80ff906
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmAllocatePagesForMdlEx, MM_ALLOCATE_FROM_LOCAL_NODE_ONLY, MM_DONT_ZERO_ALLOCATION, kernel.mmallocatepagesformdlex, MmAllocatePagesForMdlEx routine [Kernel-Mode Driver Architecture], MM_ALLOCATE_FULLY_REQUIRED, k106_df4d4bea-4360-4755-841c-f39849228e9b.xml, MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS, MM_ALLOCATE_PREFER_CONTIGUOUS, MM_ALLOCATE_NO_WAIT, wdm/MmAllocatePagesForMdlEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. You should use this routine instead of MmAllocatePagesForMdl on these operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAllocatePagesForMdlEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

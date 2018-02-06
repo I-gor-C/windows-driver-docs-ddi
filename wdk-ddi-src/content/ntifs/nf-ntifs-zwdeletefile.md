@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwDeleteFile
-title : ZwDeleteFile function
-author : windows-driver-content
-description : The ZwDeleteFile routine deletes the specified file.
-old-location : kernel\zwdeletefile.htm
-old-project : kernel
-ms.assetid : e6ad3bc5-9e19-4d32-bc08-b894ac802f41
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwdeletefile, ntifs/NtDeleteFile, ntifs/ZwDeleteFile, ZwDeleteFile, ZwDeleteFile routine [Kernel-Mode Driver Architecture], k111_4f0117b0-323a-46b6-a1c0-74de4db2ca4d.xml, NtDeleteFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwDeleteFile
+title: ZwDeleteFile function
+author: windows-driver-content
+description: The ZwDeleteFile routine deletes the specified file.
+old-location: kernel\zwdeletefile.htm
+old-project: kernel
+ms.assetid: e6ad3bc5-9e19-4d32-bc08-b894ac802f41
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwdeletefile, ntifs/NtDeleteFile, ntifs/ZwDeleteFile, ZwDeleteFile, ZwDeleteFile routine [Kernel-Mode Driver Architecture], k111_4f0117b0-323a-46b6-a1c0-74de4db2ca4d.xml, NtDeleteFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwDeleteFile
+-	NtDeleteFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtOpenEnlistment
-title : NtOpenEnlistment function
-author : windows-driver-content
-description : The ZwOpenEnlistment routine obtains a handle to an existing enlistment object.
-old-location : kernel\zwopenenlistment.htm
-old-project : kernel
-ms.assetid : b70d524f-2341-4b19-9c4a-f5095cb7f412
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwOpenEnlistment, NtOpenEnlistment, kernel.zwopenenlistment, wdm/ZwOpenEnlistment, wdm/NtOpenEnlistment, ktm_ref_cc7719f5-a9a2-42be-9961-01f910f864bc.xml, ZwOpenEnlistment routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtOpenEnlistment
+title: NtOpenEnlistment function
+author: windows-driver-content
+description: The ZwOpenEnlistment routine obtains a handle to an existing enlistment object.
+old-location: kernel\zwopenenlistment.htm
+old-project: kernel
+ms.assetid: b70d524f-2341-4b19-9c4a-f5095cb7f412
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwOpenEnlistment, NtOpenEnlistment, kernel.zwopenenlistment, wdm/ZwOpenEnlistment, wdm/NtOpenEnlistment, ktm_ref_cc7719f5-a9a2-42be-9961-01f910f864bc.xml, ZwOpenEnlistment routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenEnlistment
+-	NtOpenEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

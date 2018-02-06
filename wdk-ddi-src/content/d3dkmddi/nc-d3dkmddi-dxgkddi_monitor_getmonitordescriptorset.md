@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET
-title : DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET
-author : windows-driver-content
-description : The pfnGetMonitorDescriptorSet function returns a handle to a monitor descriptor set object that is associated with a specified monitor.
-old-location : display\dxgk_monitor_interface_pfngetmonitordescriptorset.htm
-old-project : display
-ms.assetid : e2244cd3-6630-440b-a4f7-1e0fa5702161
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitor_interface_pfngetmonitordescriptorset, pfnGetMonitorDescriptorSet callback function [Display Devices], pfnGetMonitorDescriptorSet, DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET, DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET, d3dkmddi/pfnGetMonitorDescriptorSet, VidPnFunctions_3d364729-f0d7-4bba-a71b-08d9c56499d7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET
+title: DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET
+author: windows-driver-content
+description: The pfnGetMonitorDescriptorSet function returns a handle to a monitor descriptor set object that is associated with a specified monitor.
+old-location: display\dxgk_monitor_interface_pfngetmonitordescriptorset.htm
+old-project: display
+ms.assetid: e2244cd3-6630-440b-a4f7-1e0fa5702161
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitor_interface_pfngetmonitordescriptorset, pfnGetMonitorDescriptorSet callback function [Display Devices], pfnGetMonitorDescriptorSet, DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET, DXGKDDI_MONITOR_GETMONITORDESCRIPTORSET, d3dkmddi/pfnGetMonitorDescriptorSet, VidPnFunctions_3d364729-f0d7-4bba-a71b-08d9c56499d7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnGetMonitorDescriptorSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

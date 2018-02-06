@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_OFFERRESOURCES
-title : PFND3DDDI_OFFERRESOURCES
-author : windows-driver-content
-description : Called by the Microsoft Direct3D runtime to request that the user-mode display driver offer video memory resources for reuse.
-old-location : display\offerresources.htm
-old-project : display
-ms.assetid : 68551AD7-AC0C-4138-948F-33773F02DA41
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.offerresources, OfferResources callback function [Display Devices], OfferResources, PFND3DDDI_OFFERRESOURCES, PFND3DDDI_OFFERRESOURCES, d3dumddi/OfferResources
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_OFFERRESOURCES
+title: PFND3DDDI_OFFERRESOURCES
+author: windows-driver-content
+description: Called by the Microsoft Direct3D runtime to request that the user-mode display driver offer video memory resources for reuse.
+old-location: display\offerresources.htm
+old-project: display
+ms.assetid: 68551AD7-AC0C-4138-948F-33773F02DA41
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.offerresources, OfferResources callback function [Display Devices], OfferResources, PFND3DDDI_OFFERRESOURCES, PFND3DDDI_OFFERRESOURCES, d3dumddi/OfferResources
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	OfferResources
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

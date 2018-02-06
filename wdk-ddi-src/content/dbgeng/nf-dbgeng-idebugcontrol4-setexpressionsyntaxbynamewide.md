@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.SetExpressionSyntaxByNameWide
-title : IDebugControl4::SetExpressionSyntaxByNameWide method
-author : windows-driver-content
-description : The SetExpressionSyntaxByNameWide method sets the syntax that the engine will use to evaluate expressions.
-old-location : debugger\setexpressionsyntaxbynamewide.htm
-old-project : debugger
-ms.assetid : cad4ee84-333a-49ff-a087-da0e36b87989
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.setexpressionsyntaxbynamewide, SetExpressionSyntaxByNameWide method [Windows Debugging], SetExpressionSyntaxByNameWide, dbgeng/IDebugControl4::SetExpressionSyntaxByNameWide, SetExpressionSyntaxByNameWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::SetExpressionSyntaxByNameWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], SetExpressionSyntaxByNameWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.SetExpressionSyntaxByNameWide
+title: IDebugControl4::SetExpressionSyntaxByNameWide method
+author: windows-driver-content
+description: The SetExpressionSyntaxByNameWide method sets the syntax that the engine will use to evaluate expressions.
+old-location: debugger\setexpressionsyntaxbynamewide.htm
+old-project: debugger
+ms.assetid: cad4ee84-333a-49ff-a087-da0e36b87989
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.setexpressionsyntaxbynamewide, SetExpressionSyntaxByNameWide method [Windows Debugging], SetExpressionSyntaxByNameWide, dbgeng/IDebugControl4::SetExpressionSyntaxByNameWide, SetExpressionSyntaxByNameWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::SetExpressionSyntaxByNameWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], SetExpressionSyntaxByNameWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.SetExpressionSyntaxByNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

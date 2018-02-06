@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._SCSI_PASS_THROUGH_DIRECT_EX
-title : "_SCSI_PASS_THROUGH_DIRECT_EX"
-author : windows-driver-content
-description : The SCSI_PASS_THROUGH_DIRECT_EX structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_DIRECT_EX request to instruct the port driver to send an embedded SCSI command to the target device.
-old-location : storage\scsi_pass_through_direct_ex.htm
-old-project : storage
-ms.assetid : FE699F78-99AC-46E0-9C51-6F69A5C4932C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX structure [Storage Devices], storage.scsi_pass_through_direct_ex, PSCSI_PASS_THROUGH_DIRECT_EX structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_DIRECT_EX, *PSCSI_PASS_THROUGH_DIRECT_EX, _SCSI_PASS_THROUGH_DIRECT_EX, PSCSI_PASS_THROUGH_DIRECT_EX, ntddscsi/PSCSI_PASS_THROUGH_DIRECT_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX"
+UID: NS:ntddscsi._SCSI_PASS_THROUGH_DIRECT_EX
+title: "_SCSI_PASS_THROUGH_DIRECT_EX"
+author: windows-driver-content
+description: The SCSI_PASS_THROUGH_DIRECT_EX structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_DIRECT_EX request to instruct the port driver to send an embedded SCSI command to the target device.
+old-location: storage\scsi_pass_through_direct_ex.htm
+old-project: storage
+ms.assetid: FE699F78-99AC-46E0-9C51-6F69A5C4932C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX structure [Storage Devices], storage.scsi_pass_through_direct_ex, PSCSI_PASS_THROUGH_DIRECT_EX structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_DIRECT_EX, *PSCSI_PASS_THROUGH_DIRECT_EX, _SCSI_PASS_THROUGH_DIRECT_EX, PSCSI_PASS_THROUGH_DIRECT_EX, ntddscsi/PSCSI_PASS_THROUGH_DIRECT_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	SCSI_PASS_THROUGH_DIRECT_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX"
 ---
 
 # _SCSI_PASS_THROUGH_DIRECT_EX structure

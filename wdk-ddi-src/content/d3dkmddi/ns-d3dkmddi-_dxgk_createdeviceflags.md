@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_CREATEDEVICEFLAGS
-title : "_DXGK_CREATEDEVICEFLAGS"
-author : windows-driver-content
-description : The DXGK_CREATEDEVICEFLAGS structure identifies how to create devices.
-old-location : display\dxgk_createdeviceflags.htm
-old-project : display
-ms.assetid : 31dc1493-a7c9-4ca0-b718-98224d9c5675
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_CREATEDEVICEFLAGS structure [Display Devices], DXGK_CREATEDEVICEFLAGS, _DXGK_CREATEDEVICEFLAGS, DmStructs_f8513fe3-ce39-4555-a667-20ff383583fc.xml, display.dxgk_createdeviceflags, d3dkmddi/DXGK_CREATEDEVICEFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_CREATEDEVICEFLAGS
+UID: NS:d3dkmddi._DXGK_CREATEDEVICEFLAGS
+title: "_DXGK_CREATEDEVICEFLAGS"
+author: windows-driver-content
+description: The DXGK_CREATEDEVICEFLAGS structure identifies how to create devices.
+old-location: display\dxgk_createdeviceflags.htm
+old-project: display
+ms.assetid: 31dc1493-a7c9-4ca0-b718-98224d9c5675
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_CREATEDEVICEFLAGS structure [Display Devices], DXGK_CREATEDEVICEFLAGS, _DXGK_CREATEDEVICEFLAGS, DmStructs_f8513fe3-ce39-4555-a667-20ff383583fc.xml, display.dxgk_createdeviceflags, d3dkmddi/DXGK_CREATEDEVICEFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_CREATEDEVICEFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_CREATEDEVICEFLAGS
 ---
 
 # _DXGK_CREATEDEVICEFLAGS structure

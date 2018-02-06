@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerClone
-title : KsStreamPointerClone function
-author : windows-driver-content
-description : The KsStreamPointerClone function creates a clone of a given stream pointer.
-old-location : stream\ksstreampointerclone.htm
-old-project : stream
-ms.assetid : b51e1c17-e6b5-4108-bfbc-29f1ee06d9f4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsStreamPointerClone, ks/KsStreamPointerClone, stream.ksstreampointerclone, KsStreamPointerClone function [Streaming Media Devices], avfunc_29a7da58-5321-4c19-83df-c9deab062e78.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerClone
+title: KsStreamPointerClone function
+author: windows-driver-content
+description: The KsStreamPointerClone function creates a clone of a given stream pointer.
+old-location: stream\ksstreampointerclone.htm
+old-project: stream
+ms.assetid: b51e1c17-e6b5-4108-bfbc-29f1ee06d9f4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsStreamPointerClone, ks/KsStreamPointerClone, stream.ksstreampointerclone, KsStreamPointerClone function [Streaming Media Devices], avfunc_29a7da58-5321-4c19-83df-c9deab062e78.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerClone
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

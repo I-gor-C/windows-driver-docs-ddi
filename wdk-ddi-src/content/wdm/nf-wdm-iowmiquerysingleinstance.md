@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIQuerySingleInstance
-title : IoWMIQuerySingleInstance function
-author : windows-driver-content
-description : The IoWMIQuerySingleInstance routine returns the specified instance of a WMI data block.
-old-location : kernel\iowmiquerysingleinstance.htm
-old-project : kernel
-ms.assetid : 742535da-4726-4320-88ec-f6752ad02fb3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoWMIQuerySingleInstance, k104_ef4cfbd8-cca3-4ec0-99cd-3715c2ddf52f.xml, kernel.iowmiquerysingleinstance, IoWMIQuerySingleInstance routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIQuerySingleInstance
+title: IoWMIQuerySingleInstance function
+author: windows-driver-content
+description: The IoWMIQuerySingleInstance routine returns the specified instance of a WMI data block.
+old-location: kernel\iowmiquerysingleinstance.htm
+old-project: kernel
+ms.assetid: 742535da-4726-4320-88ec-f6752ad02fb3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoWMIQuerySingleInstance, k104_ef4cfbd8-cca3-4ec0-99cd-3715c2ddf52f.xml, kernel.iowmiquerysingleinstance, IoWMIQuerySingleInstance routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIQuerySingleInstance
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

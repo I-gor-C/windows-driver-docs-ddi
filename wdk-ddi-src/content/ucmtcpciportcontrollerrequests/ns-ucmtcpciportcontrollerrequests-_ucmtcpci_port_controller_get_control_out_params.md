@@ -1,42 +1,47 @@
 ---
-UID : NS:ucmtcpciportcontrollerrequests._UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS
-title : "_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS"
-author : windows-driver-content
-description : Stores the values of all control registers of the port controller retrieved by the IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL request.
-old-location : buses\ucmtcpci_port_controller_get_control_out_params.htm
-old-project : usbref
-ms.assetid : c75167cb-14c9-4189-961a-97a50c84d6be
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, buses.ucmtcpci_port_controller_get_control_out_params, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS structure pointer [Buses], ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucmtcpciportcontrollerrequests.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS
-req.product : Windows 10 or later.
+UID: NS:ucmtcpciportcontrollerrequests._UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS
+title: "_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS"
+author: windows-driver-content
+description: Stores the values of all control registers of the port controller retrieved by the IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_CONTROL request.
+old-location: buses\ucmtcpci_port_controller_get_control_out_params.htm
+old-project: usbref
+ms.assetid: c75167cb-14c9-4189-961a-97a50c84d6be
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, buses.ucmtcpci_port_controller_get_control_out_params, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS structure pointer [Buses], ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucmtcpciportcontrollerrequests.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucmtcpciportcontrollerrequests.h
+apiname:
+-	UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_OUT_PARAMS structure

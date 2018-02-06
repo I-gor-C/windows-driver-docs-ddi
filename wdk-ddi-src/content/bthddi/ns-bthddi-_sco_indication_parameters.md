@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._SCO_INDICATION_PARAMETERS
-title : "_SCO_INDICATION_PARAMETERS"
-author : windows-driver-content
-description : The SCO_INDICATION_PARAMETERS structure describes indication parameters about a SCO connect or disconnect notification.
-old-location : bltooth\sco_indication_parameters.htm
-old-project : bltooth
-ms.assetid : 2d3ae219-8a40-476c-b8eb-94f4c0566527
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_SCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], PSCO_INDICATION_PARAMETERS, bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, bthddi/SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], bthddi/PSCO_INDICATION_PARAMETERS, bltooth.sco_indication_parameters, SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS"
+UID: NS:bthddi._SCO_INDICATION_PARAMETERS
+title: "_SCO_INDICATION_PARAMETERS"
+author: windows-driver-content
+description: The SCO_INDICATION_PARAMETERS structure describes indication parameters about a SCO connect or disconnect notification.
+old-location: bltooth\sco_indication_parameters.htm
+old-project: bltooth
+ms.assetid: 2d3ae219-8a40-476c-b8eb-94f4c0566527
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_SCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], PSCO_INDICATION_PARAMETERS, bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, bthddi/SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], bthddi/PSCO_INDICATION_PARAMETERS, bltooth.sco_indication_parameters, SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	SCO_INDICATION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PSCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS"
 ---
 
 # _SCO_INDICATION_PARAMETERS structure

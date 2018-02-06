@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmRecoverEnlistment
-title : TmRecoverEnlistment function
-author : windows-driver-content
-description : The TmRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment.
-old-location : kernel\tmrecoverenlistment.htm
-old-project : kernel
-ms.assetid : 2483ca0e-f9b5-4cd0-a5c5-29b48099d86f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmRecoverEnlistment, TmRecoverEnlistment routine [Kernel-Mode Driver Architecture], kernel.tmrecoverenlistment, ktm_ref_bcbfbdfe-017c-4d33-a0f5-dda597ee9166.xml, wdm/TmRecoverEnlistment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmRecoverEnlistment
+title: TmRecoverEnlistment function
+author: windows-driver-content
+description: The TmRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment.
+old-location: kernel\tmrecoverenlistment.htm
+old-project: kernel
+ms.assetid: 2483ca0e-f9b5-4cd0-a5c5-29b48099d86f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmRecoverEnlistment, TmRecoverEnlistment routine [Kernel-Mode Driver Architecture], kernel.tmrecoverenlistment, ktm_ref_bcbfbdfe-017c-4d33-a0f5-dda597ee9166.xml, wdm/TmRecoverEnlistment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmRecoverEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

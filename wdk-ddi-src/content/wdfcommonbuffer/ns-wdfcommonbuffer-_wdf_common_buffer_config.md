@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfcommonbuffer._WDF_COMMON_BUFFER_CONFIG
-title : "_WDF_COMMON_BUFFER_CONFIG"
-author : windows-driver-content
-description : The WDF_COMMON_BUFFER_CONFIG structure contains configuration information for a common buffer.
-old-location : wdf\wdf_common_buffer_config.htm
-old-project : wdf
-ms.assetid : 19e98448-6951-4eb4-bca1-8119cd6f7713
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, _WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/PWDF_COMMON_BUFFER_CONFIG, wdf.wdf_common_buffer_config, DFCommonBufferObjectRef_6b9d3f2e-8954-4777-b5e4-9828f73feec3.xml, PWDF_COMMON_BUFFER_CONFIG structure pointer, kmdf.wdf_common_buffer_config, WDF_COMMON_BUFFER_CONFIG structure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfcommonbuffer.h
-req.include-header : WdfCommonBuffer.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfcommonbuffer._WDF_COMMON_BUFFER_CONFIG
+title: "_WDF_COMMON_BUFFER_CONFIG"
+author: windows-driver-content
+description: The WDF_COMMON_BUFFER_CONFIG structure contains configuration information for a common buffer.
+old-location: wdf\wdf_common_buffer_config.htm
+old-project: wdf
+ms.assetid: 19e98448-6951-4eb4-bca1-8119cd6f7713
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, _WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/PWDF_COMMON_BUFFER_CONFIG, wdf.wdf_common_buffer_config, DFCommonBufferObjectRef_6b9d3f2e-8954-4777-b5e4-9828f73feec3.xml, PWDF_COMMON_BUFFER_CONFIG structure pointer, kmdf.wdf_common_buffer_config, WDF_COMMON_BUFFER_CONFIG structure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfcommonbuffer.h
+req.include-header: WdfCommonBuffer.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfcommonbuffer.h
+apiname:
+-	WDF_COMMON_BUFFER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_COMMON_BUFFER_CONFIG structure

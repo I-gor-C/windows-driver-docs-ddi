@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetConnectedPinFileObject
-title : KsPinGetConnectedPinFileObject function
-author : windows-driver-content
-description : The KsPinGetConnectedPinFileObject function returns the file object for the pin to which Pin is connected. Works only for source pins.
-old-location : stream\kspingetconnectedpinfileobject.htm
-old-project : stream
-ms.assetid : 1025c89f-8d63-4aeb-be7c-16b555cfa58a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kspingetconnectedpinfileobject, avfunc_af97a9b7-4bf9-4faa-a728-099daf7d4c96.xml, ks/KsPinGetConnectedPinFileObject, KsPinGetConnectedPinFileObject function [Streaming Media Devices], KsPinGetConnectedPinFileObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetConnectedPinFileObject
+title: KsPinGetConnectedPinFileObject function
+author: windows-driver-content
+description: The KsPinGetConnectedPinFileObject function returns the file object for the pin to which Pin is connected. Works only for source pins.
+old-location: stream\kspingetconnectedpinfileobject.htm
+old-project: stream
+ms.assetid: 1025c89f-8d63-4aeb-be7c-16b555cfa58a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kspingetconnectedpinfileobject, avfunc_af97a9b7-4bf9-4faa-a728-099daf7d4c96.xml, ks/KsPinGetConnectedPinFileObject, KsPinGetConnectedPinFileObject function [Streaming Media Devices], KsPinGetConnectedPinFileObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetConnectedPinFileObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

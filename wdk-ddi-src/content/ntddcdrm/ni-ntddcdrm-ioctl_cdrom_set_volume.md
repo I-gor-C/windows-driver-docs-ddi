@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_SET_VOLUME
-title : IOCTL_CDROM_SET_VOLUME
-author : windows-driver-content
-description : Resets the volume for its device's audio ports. Obsolete, beginning with Windows Vista.
-old-location : storage\ioctl_cdrom_set_volume.htm
-old-project : storage
-ms.assetid : 9331ad0b-42e0-4f20-9410-fb135f4791b0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_set_volume, IOCTL_CDROM_SET_VOLUME control code [Storage Devices], IOCTL_CDROM_SET_VOLUME, ntddcdrm/IOCTL_CDROM_SET_VOLUME, k307_d31efcd3-1072-49db-82d0-6ecce05a8964.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : Obsolete, beginning with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_SET_VOLUME
+title: IOCTL_CDROM_SET_VOLUME
+author: windows-driver-content
+description: Resets the volume for its device's audio ports. Obsolete, beginning with Windows Vista.
+old-location: storage\ioctl_cdrom_set_volume.htm
+old-project: storage
+ms.assetid: 9331ad0b-42e0-4f20-9410-fb135f4791b0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_set_volume, IOCTL_CDROM_SET_VOLUME control code [Storage Devices], IOCTL_CDROM_SET_VOLUME, ntddcdrm/IOCTL_CDROM_SET_VOLUME, k307_d31efcd3-1072-49db-82d0-6ecce05a8964.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: Obsolete, beginning with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_SET_VOLUME
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_SET_VOLUME IOCTL

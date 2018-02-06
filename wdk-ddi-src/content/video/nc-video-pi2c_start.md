@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PI2C_START
-title : PI2C_START
-author : windows-driver-content
-description : The I2CStart function starts I2C communication.
-old-location : display\i2cstart.htm
-old-project : display
-ms.assetid : 90f0a38d-f50e-4da0-b98f-2f3068f03b2e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.i2cstart, I2CStart callback function [Display Devices], I2CStart, PI2C_START, PI2C_START, video/I2CStart, VideoPort_Functions_287e51cf-dce0-47c5-b743-c6fb401bb74e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PI2C_START
+title: PI2C_START
+author: windows-driver-content
+description: The I2CStart function starts I2C communication.
+old-location: display\i2cstart.htm
+old-project: display
+ms.assetid: 90f0a38d-f50e-4da0-b98f-2f3068f03b2e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.i2cstart, I2CStart callback function [Display Devices], I2CStart, PI2C_START, PI2C_START, video/I2CStart, VideoPort_Functions_287e51cf-dce0-47c5-b743-c6fb401bb74e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	I2CStart
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

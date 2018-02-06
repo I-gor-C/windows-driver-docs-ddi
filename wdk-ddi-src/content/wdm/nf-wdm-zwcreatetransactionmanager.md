@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCreateTransactionManager
-title : ZwCreateTransactionManager function
-author : windows-driver-content
-description : The ZwCreateTransactionManager routine creates a new transaction manager object.
-old-location : kernel\zwcreatetransactionmanager.htm
-old-project : kernel
-ms.assetid : 9c9f0a8b-7add-4ab1-835d-39f508ce32a9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwCreateTransactionManager routine [Kernel-Mode Driver Architecture], ZwCreateTransactionManager, ktm_ref_56fad0b5-053d-4d65-bdb3-8c2d09fee541.xml, kernel.zwcreatetransactionmanager, wdm/ZwCreateTransactionManager, NtCreateTransactionManager, wdm/NtCreateTransactionManager
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateTransactionManager
+title: ZwCreateTransactionManager function
+author: windows-driver-content
+description: The ZwCreateTransactionManager routine creates a new transaction manager object.
+old-location: kernel\zwcreatetransactionmanager.htm
+old-project: kernel
+ms.assetid: 9c9f0a8b-7add-4ab1-835d-39f508ce32a9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwCreateTransactionManager routine [Kernel-Mode Driver Architecture], ZwCreateTransactionManager, ktm_ref_56fad0b5-053d-4d65-bdb3-8c2d09fee541.xml, kernel.zwcreatetransactionmanager, wdm/ZwCreateTransactionManager, NtCreateTransactionManager, wdm/NtCreateTransactionManager
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateTransactionManager
+-	NtCreateTransactionManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

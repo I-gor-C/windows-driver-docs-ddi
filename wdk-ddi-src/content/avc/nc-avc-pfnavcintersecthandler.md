@@ -1,41 +1,46 @@
 ---
-UID : NC:avc.PFNAVCINTERSECTHANDLER
-title : PFNAVCINTERSECTHANDLER
-author : windows-driver-content
-description : The AV/C intersect handler determines if the data ranges are compatible.
-old-location : stream\av_c_intersect_handler.htm
-old-project : stream
-ms.assetid : 65ab5b68-9b76-497b-b560-9a4867d4d34e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.av_c_intersect_handler, PFNAVCINTERSECTHANDLER function pointer [Streaming Media Devices], PFNAVCINTERSECTHANDLER, avc/PFNAVCINTERSECTHANDLER, avcref_6aa55400-08b6-4a96-af38-23e69fed1621.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KBUGCHECK_DATA, *PKBUGCHECK_DATA
+UID: NC:avc.PFNAVCINTERSECTHANDLER
+title: PFNAVCINTERSECTHANDLER
+author: windows-driver-content
+description: The AV/C intersect handler determines if the data ranges are compatible.
+old-location: stream\av_c_intersect_handler.htm
+old-project: stream
+ms.assetid: 65ab5b68-9b76-497b-b560-9a4867d4d34e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.av_c_intersect_handler, PFNAVCINTERSECTHANDLER function pointer [Streaming Media Devices], PFNAVCINTERSECTHANDLER, avc/PFNAVCINTERSECTHANDLER, avcref_6aa55400-08b6-4a96-af38-23e69fed1621.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	avc.h
+apiname:
+-	PFNAVCINTERSECTHANDLER
+product: Windows
+targetos: Windows
+req.typenames: KBUGCHECK_DATA, *PKBUGCHECK_DATA
 ---
 
 

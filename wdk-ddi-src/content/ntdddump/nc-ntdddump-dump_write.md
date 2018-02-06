@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdddump.DUMP_WRITE
-title : DUMP_WRITE
-author : windows-driver-content
-description : The Dump_Write callback routine is called before the write to the dump port driver. The filter driver can access the dump data at this time.
-old-location : storage\dump_write.htm
-old-project : storage
-ms.assetid : c7eda6a7-a1ce-43a3-b0e4-41f5afc61be6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.dump_write, Dump_Write routine [Storage Devices], Dump_Write, PDUMP_WRITE, PDUMP_WRITE, ntdddump/Dump_Write, filter_rtns_acfeabaa-fc01-494a-b344-c47d1fccd1ee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdddump.h
-req.include-header : Ntdddump.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Vista and Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
+UID: NC:ntdddump.DUMP_WRITE
+title: DUMP_WRITE
+author: windows-driver-content
+description: The Dump_Write callback routine is called before the write to the dump port driver. The filter driver can access the dump data at this time.
+old-location: storage\dump_write.htm
+old-project: storage
+ms.assetid: c7eda6a7-a1ce-43a3-b0e4-41f5afc61be6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.dump_write, Dump_Write routine [Storage Devices], Dump_Write, PDUMP_WRITE, PDUMP_WRITE, ntdddump/Dump_Write, filter_rtns_acfeabaa-fc01-494a-b344-c47d1fccd1ee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdddump.h
+req.include-header: Ntdddump.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Vista and Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdddump.h
+apiname:
+-	Dump_Write
+product: Windows
+targetos: Windows
+req.typenames: VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 

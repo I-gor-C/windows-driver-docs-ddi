@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDIARG_VIDEODECODEREXTENSION
-title : D3D11_1DDIARG_VIDEODECODEREXTENSION
-author : windows-driver-content
-description : Specifies driver-specific data for the extended Microsoft DirectX Video Acceleration (DXVA) decoding function that is provided by a call to the VideoDecoderExtension function.
-old-location : display\d3d11_1ddiarg_videodecoderextension.htm
-old-project : display
-ms.assetid : d11a6be1-f723-47eb-b131-e1b02451e18a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_VIDEODECODEREXTENSION, D3D11_1DDIARG_VIDEODECODEREXTENSION structure [Display Devices], display.d3d11_1ddiarg_videodecoderextension, d3d10umddi/D3D11_1DDIARG_VIDEODECODEREXTENSION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDIARG_VIDEODECODEREXTENSION
+UID: NS:d3d10umddi.D3D11_1DDIARG_VIDEODECODEREXTENSION
+title: D3D11_1DDIARG_VIDEODECODEREXTENSION
+author: windows-driver-content
+description: Specifies driver-specific data for the extended Microsoft DirectX Video Acceleration (DXVA) decoding function that is provided by a call to the VideoDecoderExtension function.
+old-location: display\d3d11_1ddiarg_videodecoderextension.htm
+old-project: display
+ms.assetid: d11a6be1-f723-47eb-b131-e1b02451e18a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDIARG_VIDEODECODEREXTENSION, D3D11_1DDIARG_VIDEODECODEREXTENSION structure [Display Devices], display.d3d11_1ddiarg_videodecoderextension, d3d10umddi/D3D11_1DDIARG_VIDEODECODEREXTENSION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDIARG_VIDEODECODEREXTENSION
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDIARG_VIDEODECODEREXTENSION
 ---
 
 # D3D11_1DDIARG_VIDEODECODEREXTENSION structure

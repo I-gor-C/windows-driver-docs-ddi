@@ -1,41 +1,46 @@
 ---
-UID : NC:iddcx.EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
-title : EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
-author : windows-driver-content
-description : EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE is called by the OS to get an OPM certificate.
-old-location : display\evt_idd_cx_monitor_opm_get_certificate.htm
-old-project : display
-ms.assetid : f1a3882e-7d45-4634-ae1d-fb8102716f36
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.evt_idd_cx_monitor_opm_get_certificate, EvtIddCxMonitorOpmGetCertificate callback function [Display Devices], EvtIddCxMonitorOpmGetCertificate, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, iddcx/EvtIddCxMonitorOpmGetCertificate, PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "_requires_same_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
+title: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
+author: windows-driver-content
+description: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE is called by the OS to get an OPM certificate.
+old-location: display\evt_idd_cx_monitor_opm_get_certificate.htm
+old-project: display
+ms.assetid: f1a3882e-7d45-4634-ae1d-fb8102716f36
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.evt_idd_cx_monitor_opm_get_certificate, EvtIddCxMonitorOpmGetCertificate callback function [Display Devices], EvtIddCxMonitorOpmGetCertificate, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, iddcx/EvtIddCxMonitorOpmGetCertificate, PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "_requires_same_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	iddcx.h
+apiname:
+-	PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

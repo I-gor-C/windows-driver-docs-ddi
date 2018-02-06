@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET
-title : DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET
-author : windows-driver-content
-description : The pfnAcquireMonitorSourceModeSet function returns a handle to the monitor source mode set object that is associated with a specified monitor.
-old-location : display\dxgk_monitor_interface_pfnacquiremonitorsourcemodeset.htm
-old-project : display
-ms.assetid : a64197c0-a61f-4989-9b68-4e06b1a69fd4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitor_interface_pfnacquiremonitorsourcemodeset, pfnAcquireMonitorSourceModeSet callback function [Display Devices], pfnAcquireMonitorSourceModeSet, DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET, DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET, d3dkmddi/pfnAcquireMonitorSourceModeSet, VidPnFunctions_b540037c-9f98-4160-aeb3-ded9723e09fa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET
+title: DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET
+author: windows-driver-content
+description: The pfnAcquireMonitorSourceModeSet function returns a handle to the monitor source mode set object that is associated with a specified monitor.
+old-location: display\dxgk_monitor_interface_pfnacquiremonitorsourcemodeset.htm
+old-project: display
+ms.assetid: a64197c0-a61f-4989-9b68-4e06b1a69fd4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitor_interface_pfnacquiremonitorsourcemodeset, pfnAcquireMonitorSourceModeSet callback function [Display Devices], pfnAcquireMonitorSourceModeSet, DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET, DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET, d3dkmddi/pfnAcquireMonitorSourceModeSet, VidPnFunctions_b540037c-9f98-4160-aeb3-ded9723e09fa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquireMonitorSourceModeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

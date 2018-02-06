@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCloseClientPort
-title : FltCloseClientPort function
-author : windows-driver-content
-description : FltCloseClientPort closes a communication client port.
-old-location : ifsk\fltcloseclientport.htm
-old-project : ifsk
-ms.assetid : 7a23b8f6-688f-4aa4-9bf3-f8bda0458566
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCloseClientPort function [Installable File System Drivers], FltApiRef_a_to_d_0def0996-8190-4482-a7bb-018c79773eca.xml, ifsk.fltcloseclientport, FltCloseClientPort, fltkernel/FltCloseClientPort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCloseClientPort
+title: FltCloseClientPort function
+author: windows-driver-content
+description: FltCloseClientPort closes a communication client port.
+old-location: ifsk\fltcloseclientport.htm
+old-project: ifsk
+ms.assetid: 7a23b8f6-688f-4aa4-9bf3-f8bda0458566
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCloseClientPort function [Installable File System Drivers], FltApiRef_a_to_d_0def0996-8190-4482-a7bb-018c79773eca.xml, ifsk.fltcloseclientport, FltCloseClientPort, fltkernel/FltCloseClientPort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltCloseClientPort
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

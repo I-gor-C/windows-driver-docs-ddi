@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlFindSetBitsAndClear
-title : RtlFindSetBitsAndClear function
-author : windows-driver-content
-description : The RtlFindSetBitsAndClear routine searches for a range of set bits of a requested size within a bitmap and clears all bits in the range when it has been located.
-old-location : kernel\rtlfindsetbitsandclear.htm
-old-project : kernel
-ms.assetid : d88797c6-c06c-4c3b-a3e4-baf412e051ef
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlFindSetBitsAndClear, wdm/RtlFindSetBitsAndClear, k109_a6043f35-d317-434a-93c1-1c44aa9e8cd4.xml, kernel.rtlfindsetbitsandclear, RtlFindSetBitsAndClear routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlFindSetBitsAndClear
+title: RtlFindSetBitsAndClear function
+author: windows-driver-content
+description: The RtlFindSetBitsAndClear routine searches for a range of set bits of a requested size within a bitmap and clears all bits in the range when it has been located.
+old-location: kernel\rtlfindsetbitsandclear.htm
+old-project: kernel
+ms.assetid: d88797c6-c06c-4c3b-a3e4-baf412e051ef
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlFindSetBitsAndClear, wdm/RtlFindSetBitsAndClear, k109_a6043f35-d317-434a-93c1-1c44aa9e8cd4.xml, kernel.rtlfindsetbitsandclear, RtlFindSetBitsAndClear routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFindSetBitsAndClear
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

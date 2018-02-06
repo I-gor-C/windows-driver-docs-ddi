@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_RENAME
-title : "_D3DDDIARG_RENAME"
-author : windows-driver-content
-description : The D3DDDIARG_RENAME structure describes a resource or a surface within the resource to rename with a new allocation.
-old-location : display\d3dddiarg_rename.htm
-old-project : display
-ms.assetid : 3ecddaf4-bce7-4ea0-b53d-e4872fa21f81
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_RENAME, D3DDDIARG_RENAME structure [Display Devices], display.d3dddiarg_rename, UMDisplayDriver_param_Structs_5acf671e-94e3-4752-89c1-b3c9e33cba7a.xml, d3dumddi/D3DDDIARG_RENAME, _D3DDDIARG_RENAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_RENAME
+UID: NS:d3dumddi._D3DDDIARG_RENAME
+title: "_D3DDDIARG_RENAME"
+author: windows-driver-content
+description: The D3DDDIARG_RENAME structure describes a resource or a surface within the resource to rename with a new allocation.
+old-location: display\d3dddiarg_rename.htm
+old-project: display
+ms.assetid: 3ecddaf4-bce7-4ea0-b53d-e4872fa21f81
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_RENAME, D3DDDIARG_RENAME structure [Display Devices], display.d3dddiarg_rename, UMDisplayDriver_param_Structs_5acf671e-94e3-4752-89c1-b3c9e33cba7a.xml, d3dumddi/D3DDDIARG_RENAME, _D3DDDIARG_RENAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_RENAME
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_RENAME
 ---
 
 # _D3DDDIARG_RENAME structure

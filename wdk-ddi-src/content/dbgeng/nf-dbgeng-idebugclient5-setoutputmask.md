@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.SetOutputMask
-title : IDebugClient5::SetOutputMask method
-author : windows-driver-content
-description : The SetOutputMask method sets the output mask for the client.
-old-location : debugger\setoutputmask.htm
-old-project : debugger
-ms.assetid : 8fef4def-9735-4623-841b-a18995d4d403
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::SetOutputMask, IDebugClient3 interface [Windows Debugging], SetOutputMask method, SetOutputMask method [Windows Debugging], IDebugClient5 interface, debugger.setoutputmask, SetOutputMask method [Windows Debugging], IDebugClient2 interface, IDebugClient4::SetOutputMask, IDebugClient5::SetOutputMask, IDebugClient2 interface [Windows Debugging], SetOutputMask method, SetOutputMask method [Windows Debugging], IDebugClient4 interface, IDebugClient::SetOutputMask, IDebugClient5 interface [Windows Debugging], SetOutputMask method, dbgeng/IDebugClient2::SetOutputMask, dbgeng/IDebugClient3::SetOutputMask, SetOutputMask method [Windows Debugging], IDebugClient3 interface, SetOutputMask method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::SetOutputMask, IDebugClient3::SetOutputMask, IDebugClient4 interface [Windows Debugging], SetOutputMask method, dbgeng/IDebugClient4::SetOutputMask, IDebugClient2::SetOutputMask, IDebugClient_85242101-702d-4c9a-b71a-5eddd76a4fa6.xml, IDebugClient interface [Windows Debugging], SetOutputMask method, SetOutputMask, SetOutputMask method [Windows Debugging], IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.SetOutputMask
+title: IDebugClient5::SetOutputMask method
+author: windows-driver-content
+description: The SetOutputMask method sets the output mask for the client.
+old-location: debugger\setoutputmask.htm
+old-project: debugger
+ms.assetid: 8fef4def-9735-4623-841b-a18995d4d403
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::SetOutputMask, IDebugClient3 interface [Windows Debugging], SetOutputMask method, SetOutputMask method [Windows Debugging], IDebugClient5 interface, debugger.setoutputmask, SetOutputMask method [Windows Debugging], IDebugClient2 interface, IDebugClient4::SetOutputMask, IDebugClient5::SetOutputMask, IDebugClient2 interface [Windows Debugging], SetOutputMask method, SetOutputMask method [Windows Debugging], IDebugClient4 interface, IDebugClient::SetOutputMask, IDebugClient5 interface [Windows Debugging], SetOutputMask method, dbgeng/IDebugClient2::SetOutputMask, dbgeng/IDebugClient3::SetOutputMask, SetOutputMask method [Windows Debugging], IDebugClient3 interface, SetOutputMask method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::SetOutputMask, IDebugClient3::SetOutputMask, IDebugClient4 interface [Windows Debugging], SetOutputMask method, dbgeng/IDebugClient4::SetOutputMask, IDebugClient2::SetOutputMask, IDebugClient_85242101-702d-4c9a-b71a-5eddd76a4fa6.xml, IDebugClient interface [Windows Debugging], SetOutputMask method, SetOutputMask, SetOutputMask method [Windows Debugging], IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.SetOutputMask
+-	IDebugClient2.SetOutputMask
+-	IDebugClient3.SetOutputMask
+-	IDebugClient4.SetOutputMask
+-	IDebugClient5.SetOutputMask
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

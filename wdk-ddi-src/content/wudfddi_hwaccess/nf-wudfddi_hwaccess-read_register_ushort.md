@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi_hwaccess.READ_REGISTER_USHORT
-title : READ_REGISTER_USHORT function
-author : windows-driver-content
-description : The READ_REGISTER_USHORT function reads a USHORT value from the specified register address.
-old-location : wdf\read_register_ushort.htm
-old-project : wdf
-ms.assetid : 75DDFC2A-EF7F-4652-B0D0-8BF1583B3679
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi_hwaccess/READ_REGISTER_USHORT, wdf.read_register_ushort, umdf.read_register_ushort, READ_REGISTER_USHORT function, READ_REGISTER_USHORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfddi_hwaccess.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wudfddi_hwaccess.READ_REGISTER_USHORT
+title: READ_REGISTER_USHORT function
+author: windows-driver-content
+description: The READ_REGISTER_USHORT function reads a USHORT value from the specified register address.
+old-location: wdf\read_register_ushort.htm
+old-project: wdf
+ms.assetid: 75DDFC2A-EF7F-4652-B0D0-8BF1583B3679
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi_hwaccess/READ_REGISTER_USHORT, wdf.read_register_ushort, umdf.read_register_ushort, READ_REGISTER_USHORT function, READ_REGISTER_USHORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfddi_hwaccess.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_hwaccess.h
+apiname:
+-	READ_REGISTER_USHORT
+product: Windows
+targetos: Windows
+req.typenames: UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

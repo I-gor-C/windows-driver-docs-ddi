@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USBDEVICE_UPDATE_FLAGS
-title : "_USBDEVICE_UPDATE_FLAGS"
-author : windows-driver-content
-description : Contains request flags set by UCX that is passed in the USBDEVICE_UPDATE structure when UCX invokes the client driver's EVT_UCX_USBDEVICE_UPDATE callback function.
-old-location : buses\_usbdevice_update_flags.htm
-old-project : usbref
-ms.assetid : 36F009C8-046B-437A-83D6-AE8D5BF51AF3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/P_USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS, ucxusbdevice/_USBDEVICE_UPDATE_FLAGS, USBDEVICE_UPDATE_FLAGS structure [Buses], USBDEVICE_UPDATE_FLAGS, buses._usbdevice_update_flags, _USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBDEVICE_UPDATE_FLAGS
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USBDEVICE_UPDATE_FLAGS
+title: "_USBDEVICE_UPDATE_FLAGS"
+author: windows-driver-content
+description: Contains request flags set by UCX that is passed in the USBDEVICE_UPDATE structure when UCX invokes the client driver's EVT_UCX_USBDEVICE_UPDATE callback function.
+old-location: buses\_usbdevice_update_flags.htm
+old-project: usbref
+ms.assetid: 36F009C8-046B-437A-83D6-AE8D5BF51AF3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxusbdevice/P_USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS, ucxusbdevice/_USBDEVICE_UPDATE_FLAGS, USBDEVICE_UPDATE_FLAGS structure [Buses], USBDEVICE_UPDATE_FLAGS, buses._usbdevice_update_flags, _USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USBDEVICE_UPDATE_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: USBDEVICE_UPDATE_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_UPDATE_FLAGS structure

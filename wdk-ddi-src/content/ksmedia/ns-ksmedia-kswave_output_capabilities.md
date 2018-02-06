@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSWAVE_OUTPUT_CAPABILITIES
-title : KSWAVE_OUTPUT_CAPABILITIES
-author : windows-driver-content
-description : The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device.
-old-location : stream\kswave_output_capabilities.htm
-old-project : stream
-ms.assetid : 3f7d534d-bfd8-4aca-a14d-97c047fb5aeb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kswave_output_capabilities, ksmedia/KSWAVE_OUTPUT_CAPABILITIES, PKSWAVE_OUTPUT_CAPABILITIES structure pointer [Streaming Media Devices], ksmedia/PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES, dvdref_7660f724-15c2-419f-a0d9-c432069547a3.xml, KSWAVE_OUTPUT_CAPABILITIES structure [Streaming Media Devices], PKSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES"
+UID: NS:ksmedia.KSWAVE_OUTPUT_CAPABILITIES
+title: KSWAVE_OUTPUT_CAPABILITIES
+author: windows-driver-content
+description: The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device.
+old-location: stream\kswave_output_capabilities.htm
+old-project: stream
+ms.assetid: 3f7d534d-bfd8-4aca-a14d-97c047fb5aeb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kswave_output_capabilities, ksmedia/KSWAVE_OUTPUT_CAPABILITIES, PKSWAVE_OUTPUT_CAPABILITIES structure pointer [Streaming Media Devices], ksmedia/PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES, dvdref_7660f724-15c2-419f-a0d9-c432069547a3.xml, KSWAVE_OUTPUT_CAPABILITIES structure [Streaming Media Devices], PKSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSWAVE_OUTPUT_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES"
 ---
 
 # KSWAVE_OUTPUT_CAPABILITIES structure

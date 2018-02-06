@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_ENABLE_SECURE_READ
-title : IOCTL_HID_ENABLE_SECURE_READ
-author : windows-driver-content
-description : The IOCTL_HID_ENABLE_SECURE_READ request enables a secure read for open files of a HID collection.
-old-location : hid\ioctl_hid_enable_secure_read.htm
-old-project : hid
-ms.assetid : 9ec1c4e9-8c98-4772-8657-3392ff0827b5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_enable_secure_read, IOCTL_HID_ENABLE_SECURE_READ control code [Human Input Devices], IOCTL_HID_ENABLE_SECURE_READ, hidclass/IOCTL_HID_ENABLE_SECURE_READ, hidioreq_2d4e5797-33fb-40dd-bf76-8d81a0d26826.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_ENABLE_SECURE_READ
+title: IOCTL_HID_ENABLE_SECURE_READ
+author: windows-driver-content
+description: The IOCTL_HID_ENABLE_SECURE_READ request enables a secure read for open files of a HID collection.
+old-location: hid\ioctl_hid_enable_secure_read.htm
+old-project: hid
+ms.assetid: 9ec1c4e9-8c98-4772-8657-3392ff0827b5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_enable_secure_read, IOCTL_HID_ENABLE_SECURE_READ control code [Human Input Devices], IOCTL_HID_ENABLE_SECURE_READ, hidclass/IOCTL_HID_ENABLE_SECURE_READ, hidioreq_2d4e5797-33fb-40dd-bf76-8d81a0d26826.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_ENABLE_SECURE_READ
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_ENABLE_SECURE_READ IOCTL

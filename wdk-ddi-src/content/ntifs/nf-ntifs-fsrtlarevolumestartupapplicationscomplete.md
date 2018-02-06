@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAreVolumeStartupApplicationsComplete
-title : FsRtlAreVolumeStartupApplicationsComplete function
-author : windows-driver-content
-description : The FsRtlAreVolumeStartupApplicationsComplete function determines whether volume startup applications have completed processing.
-old-location : ifsk\fsrtlarevolumestartupapplicationscomplete.htm
-old-project : ifsk
-ms.assetid : a6ee1b04-7f62-452c-92b7-7325278bcd17
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlAreVolumeStartupApplicationsComplete, FsRtlAreVolumeStartupApplicationsComplete function [Installable File System Drivers], ntifs/FsRtlAreVolumeStartupApplicationsComplete, ifsk.fsrtlarevolumestartupapplicationscomplete, fsrtlref_c0858a3d-5e61-4ba3-bbaf-9ec881042d6a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAreVolumeStartupApplicationsComplete
+title: FsRtlAreVolumeStartupApplicationsComplete function
+author: windows-driver-content
+description: The FsRtlAreVolumeStartupApplicationsComplete function determines whether volume startup applications have completed processing.
+old-location: ifsk\fsrtlarevolumestartupapplicationscomplete.htm
+old-project: ifsk
+ms.assetid: a6ee1b04-7f62-452c-92b7-7325278bcd17
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlAreVolumeStartupApplicationsComplete, FsRtlAreVolumeStartupApplicationsComplete function [Installable File System Drivers], ntifs/FsRtlAreVolumeStartupApplicationsComplete, ifsk.fsrtlarevolumestartupapplicationscomplete, fsrtlref_c0858a3d-5e61-4ba3-bbaf-9ec881042d6a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlAreVolumeStartupApplicationsComplete
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

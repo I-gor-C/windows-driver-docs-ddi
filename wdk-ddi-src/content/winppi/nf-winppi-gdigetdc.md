@@ -1,42 +1,49 @@
 ---
-UID : NF:winppi.GdiGetDC
-title : GdiGetDC function
-author : windows-driver-content
-description : The GdiGetDC function returns a handle to a printer's device context.
-old-location : print\gdigetdc.htm
-old-project : print
-ms.assetid : f8aacb6d-4e8a-4fdb-902c-3d0efbc40f08
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winppi/GdiGetDC, GdiGetDC, gdifnc_4129439c-9cb6-46d3-8659-d12438841bb5.xml, print.gdigetdc, GdiGetDC function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winppi.h
-req.include-header : Winppi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.Lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NF:winppi.GdiGetDC
+title: GdiGetDC function
+author: windows-driver-content
+description: The GdiGetDC function returns a handle to a printer's device context.
+old-location: print\gdigetdc.htm
+old-project: print
+ms.assetid: f8aacb6d-4e8a-4fdb-902c-3d0efbc40f08
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winppi/GdiGetDC, GdiGetDC, gdifnc_4129439c-9cb6-46d3-8659-d12438841bb5.xml, print.gdigetdc, GdiGetDC function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winppi.h
+req.include-header: Winppi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.Lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+-	GDI32Full.dll
+apiname:
+-	GdiGetDC
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 

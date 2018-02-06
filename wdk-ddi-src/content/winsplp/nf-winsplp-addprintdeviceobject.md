@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.AddPrintDeviceObject
-title : AddPrintDeviceObject function
-author : windows-driver-content
-description : The AddPrintDeviceObject print provider function creates a device object for a print provider queue.
-old-location : print\addprintdeviceobject.htm
-old-project : print
-ms.assetid : C01071FD-7D1D-4D6F-AFDD-355FFDA699EA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.addprintdeviceobject, winsplp/AddPrintDeviceObject, AddPrintDeviceObject, AddPrintDeviceObject function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winspool.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WinSpool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.AddPrintDeviceObject
+title: AddPrintDeviceObject function
+author: windows-driver-content
+description: The AddPrintDeviceObject print provider function creates a device object for a print provider queue.
+old-location: print\addprintdeviceobject.htm
+old-project: print
+ms.assetid: C01071FD-7D1D-4D6F-AFDD-355FFDA699EA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.addprintdeviceobject, winsplp/AddPrintDeviceObject, AddPrintDeviceObject, AddPrintDeviceObject function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winspool.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WinSpool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	AddPrintDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

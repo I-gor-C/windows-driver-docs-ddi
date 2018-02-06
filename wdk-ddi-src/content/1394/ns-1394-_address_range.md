@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._ADDRESS_RANGE
-title : "_ADDRESS_RANGE"
-author : windows-driver-content
-description : The ADDRESS_RANGE structure describes a range in a IEEE 1394 device's address space.
-old-location : ieee\address_range.htm
-old-project : IEEE
-ms.assetid : 4eeb543b-0c23-4119-8e42-ff086b4b7682
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_ADDRESS_RANGE, *PADDRESS_RANGE, PADDRESS_RANGE, 1394stct_e03538df-3b91-483d-99da-95645f017bef.xml, IEEE.address_range, ADDRESS_RANGE structure [Buses], ADDRESS_RANGE, 1394/ADDRESS_RANGE, PADDRESS_RANGE structure pointer [Buses], 1394/PADDRESS_RANGE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ADDRESS_RANGE, *PADDRESS_RANGE
+UID: NS:1394._ADDRESS_RANGE
+title: "_ADDRESS_RANGE"
+author: windows-driver-content
+description: The ADDRESS_RANGE structure describes a range in a IEEE 1394 device's address space.
+old-location: ieee\address_range.htm
+old-project: IEEE
+ms.assetid: 4eeb543b-0c23-4119-8e42-ff086b4b7682
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_ADDRESS_RANGE, *PADDRESS_RANGE, PADDRESS_RANGE, 1394stct_e03538df-3b91-483d-99da-95645f017bef.xml, IEEE.address_range, ADDRESS_RANGE structure [Buses], ADDRESS_RANGE, 1394/ADDRESS_RANGE, PADDRESS_RANGE structure pointer [Buses], 1394/PADDRESS_RANGE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	ADDRESS_RANGE
+product: Windows
+targetos: Windows
+req.typenames: ADDRESS_RANGE, *PADDRESS_RANGE
 ---
 
 # _ADDRESS_RANGE structure

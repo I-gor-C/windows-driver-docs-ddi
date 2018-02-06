@@ -1,42 +1,47 @@
 ---
-UID : NF:rxstruc.RxGetRDBSSProcess
-title : RxGetRDBSSProcess function
-author : windows-driver-content
-description : RxGetRDBSSProcess returns a pointer to the process of the main thread used by the RDBSS kernel process.
-old-location : ifsk\rxgetrdbssprocess.htm
-old-project : ifsk
-ms.assetid : 2d3717c2-c809-48b9-a84b-1e69a04b767e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxGetRDBSSProcess, RxGetRDBSSProcess function [Installable File System Drivers], rxref_7eee8a99-f7c3-41d3-8b16-1906ef301f47.xml, ifsk.rxgetrdbssprocess, rxstruc/RxGetRDBSSProcess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxstruc.h
-req.include-header : Rxstruc.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxstruc.RxGetRDBSSProcess
+title: RxGetRDBSSProcess function
+author: windows-driver-content
+description: RxGetRDBSSProcess returns a pointer to the process of the main thread used by the RDBSS kernel process.
+old-location: ifsk\rxgetrdbssprocess.htm
+old-project: ifsk
+ms.assetid: 2d3717c2-c809-48b9-a84b-1e69a04b767e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxGetRDBSSProcess, RxGetRDBSSProcess function [Installable File System Drivers], rxref_7eee8a99-f7c3-41d3-8b16-1906ef301f47.xml, ifsk.rxgetrdbssprocess, rxstruc/RxGetRDBSSProcess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxstruc.h
+req.include-header: Rxstruc.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxstruc.h
+apiname:
+-	RxGetRDBSSProcess
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI1_1_DDI_BASE_FUNCTIONS
-title : DXGI1_1_DDI_BASE_FUNCTIONS
-author : windows-driver-content
-description : The DXGI1_1_DDI_BASE_FUNCTIONS structure contains pointers to functions that the user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, getting notifications regarding shared and GDI interoperable surfaces, and managing a full-screen transition.
-old-location : display\dxgi1_1_ddi_base_functions.htm
-old-project : display
-ms.assetid : 624da381-86c9-46d8-82eb-1f21e752ea57
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGI1_1_DDI_BASE_FUNCTIONS, dxgiddi/DXGI1_1_DDI_BASE_FUNCTIONS, UMDisplayDriver_Dx10param_Structs_92bae538-7b48-48d5-a26f-c593ff5875cf.xml, DXGI1_1_DDI_BASE_FUNCTIONS structure [Display Devices], display.dxgi1_1_ddi_base_functions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXGI1_1_DDI_BASE_FUNCTIONS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI1_1_DDI_BASE_FUNCTIONS
+UID: NS:dxgiddi.DXGI1_1_DDI_BASE_FUNCTIONS
+title: DXGI1_1_DDI_BASE_FUNCTIONS
+author: windows-driver-content
+description: The DXGI1_1_DDI_BASE_FUNCTIONS structure contains pointers to functions that the user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, getting notifications regarding shared and GDI interoperable surfaces, and managing a full-screen transition.
+old-location: display\dxgi1_1_ddi_base_functions.htm
+old-project: display
+ms.assetid: 624da381-86c9-46d8-82eb-1f21e752ea57
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGI1_1_DDI_BASE_FUNCTIONS, dxgiddi/DXGI1_1_DDI_BASE_FUNCTIONS, UMDisplayDriver_Dx10param_Structs_92bae538-7b48-48d5-a26f-c593ff5875cf.xml, DXGI1_1_DDI_BASE_FUNCTIONS structure [Display Devices], display.dxgi1_1_ddi_base_functions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXGI1_1_DDI_BASE_FUNCTIONS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI1_1_DDI_BASE_FUNCTIONS
+product: Windows
+targetos: Windows
+req.typenames: DXGI1_1_DDI_BASE_FUNCTIONS
 ---
 
 # DXGI1_1_DDI_BASE_FUNCTIONS structure

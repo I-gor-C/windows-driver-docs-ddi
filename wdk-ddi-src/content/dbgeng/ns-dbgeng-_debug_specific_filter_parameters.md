@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_SPECIFIC_FILTER_PARAMETERS
-title : "_DEBUG_SPECIFIC_FILTER_PARAMETERS"
-author : windows-driver-content
-description : The DEBUG_SPECIFIC_FILTER_PARAMETERS structure contains the parameters for a specific event filter.
-old-location : debugger\debug_specific_filter_parameters.htm
-old-project : debugger
-ms.assetid : 06926380-aae5-4d9f-94e0-43098f8a0423
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : "_DEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS structure [Windows Debugging], PDEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/DEBUG_SPECIFIC_FILTER_PARAMETERS, *PDEBUG_SPECIFIC_FILTER_PARAMETERS, PDEBUG_SPECIFIC_FILTER_PARAMETERS structure pointer [Windows Debugging], dbgeng/PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS, Structures_b0152b9b-4809-46c8-81a7-5f571720eca1.xml, debugger.debug_specific_filter_parameters"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS"
+UID: NS:dbgeng._DEBUG_SPECIFIC_FILTER_PARAMETERS
+title: "_DEBUG_SPECIFIC_FILTER_PARAMETERS"
+author: windows-driver-content
+description: The DEBUG_SPECIFIC_FILTER_PARAMETERS structure contains the parameters for a specific event filter.
+old-location: debugger\debug_specific_filter_parameters.htm
+old-project: debugger
+ms.assetid: 06926380-aae5-4d9f-94e0-43098f8a0423
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: "_DEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS structure [Windows Debugging], PDEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/DEBUG_SPECIFIC_FILTER_PARAMETERS, *PDEBUG_SPECIFIC_FILTER_PARAMETERS, PDEBUG_SPECIFIC_FILTER_PARAMETERS structure pointer [Windows Debugging], dbgeng/PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS, Structures_b0152b9b-4809-46c8-81a7-5f571720eca1.xml, debugger.debug_specific_filter_parameters"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_SPECIFIC_FILTER_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS"
 ---
 
 # _DEBUG_SPECIFIC_FILTER_PARAMETERS structure

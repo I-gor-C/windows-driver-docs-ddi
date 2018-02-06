@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.KeRaiseIrql
-title : KeRaiseIrql macro
-author : windows-driver-content
-description : The KeRaiseIrql routine raises the hardware priority to the specified IRQL value, thereby masking off interrupts of equivalent or lower IRQL on the current processor.
-old-location : kernel\keraiseirql.htm
-old-project : kernel
-ms.assetid : ee340d85-5a66-4773-b325-831257e9bfd8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.keraiseirql, k105_66b09c47-8f95-41ee-8432-5784f306ad62.xml, KeRaiseIrql routine [Kernel-Mode Driver Architecture], wdm/KeRaiseIrql, KeRaiseIrql
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeRaiseLower, IrqlKeRaiseLower2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRaiseIrql
+title: KeRaiseIrql macro
+author: windows-driver-content
+description: The KeRaiseIrql routine raises the hardware priority to the specified IRQL value, thereby masking off interrupts of equivalent or lower IRQL on the current processor.
+old-location: kernel\keraiseirql.htm
+old-project: kernel
+ms.assetid: ee340d85-5a66-4773-b325-831257e9bfd8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.keraiseirql, k105_66b09c47-8f95-41ee-8432-5784f306ad62.xml, KeRaiseIrql routine [Kernel-Mode Driver Architecture], wdm/KeRaiseIrql, KeRaiseIrql
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeRaiseLower, IrqlKeRaiseLower2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hal.lib
+-	Hal.dll
+apiname:
+-	KeRaiseIrql
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

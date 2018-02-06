@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.SeAccessCheck
-title : SeAccessCheck function
-author : windows-driver-content
-description : The SeAccessCheck routine determines whether the requested access rights can be granted to an object protected by a security descriptor and an object owner.
-old-location : kernel\seaccesscheck.htm
-old-project : kernel
-ms.assetid : 90726c66-738f-416f-993a-84cbf2eb67d2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k110_7d3f1afa-5728-4ade-8915-aeb77dc3edd3.xml, wdm/SeAccessCheck, kernel.seaccesscheck, SeAccessCheck, SeAccessCheck routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.SeAccessCheck
+title: SeAccessCheck function
+author: windows-driver-content
+description: The SeAccessCheck routine determines whether the requested access rights can be granted to an object protected by a security descriptor and an object owner.
+old-location: kernel\seaccesscheck.htm
+old-project: kernel
+ms.assetid: 90726c66-738f-416f-993a-84cbf2eb67d2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k110_7d3f1afa-5728-4ade-8915-aeb77dc3edd3.xml, wdm/SeAccessCheck, kernel.seaccesscheck, SeAccessCheck, SeAccessCheck routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeAccessCheck
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

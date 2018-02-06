@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortCreateSpinLock
-title : VideoPortCreateSpinLock function
-author : windows-driver-content
-description : The VideoPortCreateSpinLock function creates a spin lock.
-old-location : display\videoportcreatespinlock.htm
-old-project : display
-ms.assetid : bb5f3b3e-3358-4181-9c4d-1871be1a7b7b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortCreateSpinLock, VideoPortCreateSpinLock function [Display Devices], video/VideoPortCreateSpinLock, display.videoportcreatespinlock, VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortCreateSpinLock
+title: VideoPortCreateSpinLock function
+author: windows-driver-content
+description: The VideoPortCreateSpinLock function creates a spin lock.
+old-location: display\videoportcreatespinlock.htm
+old-project: display
+ms.assetid: bb5f3b3e-3358-4181-9c4d-1871be1a7b7b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortCreateSpinLock, VideoPortCreateSpinLock function [Display Devices], video/VideoPortCreateSpinLock, display.videoportcreatespinlock, VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortCreateSpinLock
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

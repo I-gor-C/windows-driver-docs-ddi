@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetNextSiblingPin
-title : KsPinGetNextSiblingPin function
-author : windows-driver-content
-description : The KsPinGetNextSiblingPin function returns the next instantiated pin of the same type and on the same filter as Pin.
-old-location : stream\kspingetnextsiblingpin.htm
-old-project : stream
-ms.assetid : e6eb5998-50ad-4ad9-8368-4cd29e4f7777
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_a5363c0a-af05-43a6-aa4d-edd43e076eb7.xml, KsPinGetNextSiblingPin, KsPinGetNextSiblingPin function [Streaming Media Devices], ks/KsPinGetNextSiblingPin, stream.kspingetnextsiblingpin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetNextSiblingPin
+title: KsPinGetNextSiblingPin function
+author: windows-driver-content
+description: The KsPinGetNextSiblingPin function returns the next instantiated pin of the same type and on the same filter as Pin.
+old-location: stream\kspingetnextsiblingpin.htm
+old-project: stream
+ms.assetid: e6eb5998-50ad-4ad9-8368-4cd29e4f7777
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_a5363c0a-af05-43a6-aa4d-edd43e076eb7.xml, KsPinGetNextSiblingPin, KsPinGetNextSiblingPin function [Streaming Media Devices], ks/KsPinGetNextSiblingPin, stream.kspingetnextsiblingpin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetNextSiblingPin
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

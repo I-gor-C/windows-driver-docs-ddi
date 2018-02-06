@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.WheaIsValidErrorRecordSignature
-title : WheaIsValidErrorRecordSignature function
-author : windows-driver-content
-description : The WheaIsValidErrorRecordSignature function verifies whether a WHEA error record is valid.
-old-location : whea\wheaisvaliderrorrecordsignature.htm
-old-project : whea
-ms.assetid : 35149395-4238-41fd-ae96-6491534e3cc1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.wheaisvaliderrorrecordsignature, WheaIsValidErrorRecordSignature, ntddk/WheaIsValidErrorRecordSignature, whearef2_6ba74e00-cc1f-49e9-b6ee-b300571eb412.xml, WheaIsValidErrorRecordSignature function [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.WheaIsValidErrorRecordSignature
+title: WheaIsValidErrorRecordSignature function
+author: windows-driver-content
+description: The WheaIsValidErrorRecordSignature function verifies whether a WHEA error record is valid.
+old-location: whea\wheaisvaliderrorrecordsignature.htm
+old-project: whea
+ms.assetid: 35149395-4238-41fd-ae96-6491534e3cc1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.wheaisvaliderrorrecordsignature, WheaIsValidErrorRecordSignature, ntddk/WheaIsValidErrorRecordSignature, whearef2_6ba74e00-cc1f-49e9-b6ee-b300571eb412.xml, WheaIsValidErrorRecordSignature function [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WheaIsValidErrorRecordSignature
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

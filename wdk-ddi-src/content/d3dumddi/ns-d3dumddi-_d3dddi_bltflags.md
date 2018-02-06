@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDI_BLTFLAGS
-title : "_D3DDDI_BLTFLAGS"
-author : windows-driver-content
-description : The D3DDDI_BLTFLAGS structure identifies the type of bit-block transfer (bitblt) to perform.
-old-location : display\d3dddi_bltflags.htm
-old-project : display
-ms.assetid : 844d6aed-2ca2-45ef-bd53-54344dbdadbf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS structure [Display Devices], D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, D3DDDI_BLTFLAGS, display.d3dddi_bltflags"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_BLTFLAGS
+UID: NS:d3dumddi._D3DDDI_BLTFLAGS
+title: "_D3DDDI_BLTFLAGS"
+author: windows-driver-content
+description: The D3DDDI_BLTFLAGS structure identifies the type of bit-block transfer (bitblt) to perform.
+old-location: display\d3dddi_bltflags.htm
+old-project: display
+ms.assetid: 844d6aed-2ca2-45ef-bd53-54344dbdadbf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS structure [Display Devices], D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, D3DDDI_BLTFLAGS, display.d3dddi_bltflags"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDI_BLTFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_BLTFLAGS
 ---
 
 # _D3DDDI_BLTFLAGS structure

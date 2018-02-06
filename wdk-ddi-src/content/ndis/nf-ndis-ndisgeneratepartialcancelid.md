@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGeneratePartialCancelId
-title : NdisGeneratePartialCancelId function
-author : windows-driver-content
-description : The NdisGeneratePartialCancelId function returns a value that the calling driver must use as the high-order byte of a cancellation ID.
-old-location : netvista\ndisgeneratepartialcancelid.htm
-old-project : netvista
-ms.assetid : a26e9602-058b-401b-85be-9d80e4ef213b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : protocol_ndis_functions_ref_0d6b9e5a-d346-46a0-8f1c-d6677df53f1c.xml, netvista.ndisgeneratepartialcancelid, NdisGeneratePartialCancelId, ndis/NdisGeneratePartialCancelId, NdisGeneratePartialCancelId function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGeneratePartialCancelId   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGeneratePartialCancelId   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGeneratePartialCancelId
+title: NdisGeneratePartialCancelId function
+author: windows-driver-content
+description: The NdisGeneratePartialCancelId function returns a value that the calling driver must use as the high-order byte of a cancellation ID.
+old-location: netvista\ndisgeneratepartialcancelid.htm
+old-project: netvista
+ms.assetid: a26e9602-058b-401b-85be-9d80e4ef213b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: protocol_ndis_functions_ref_0d6b9e5a-d346-46a0-8f1c-d6677df53f1c.xml, netvista.ndisgeneratepartialcancelid, NdisGeneratePartialCancelId, ndis/NdisGeneratePartialCancelId, NdisGeneratePartialCancelId function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGeneratePartialCancelId   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGeneratePartialCancelId   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGeneratePartialCancelId
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

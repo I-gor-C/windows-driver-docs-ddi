@@ -1,42 +1,47 @@
 ---
-UID : NE:ucmtcpciportcontrollerrequests._UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS
-title : "_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS"
-author : windows-driver-content
-description : Defines values to determine whether a display out status for a DisplayPort device is enabled.
-old-location : buses\_ucmtcpci_port_controller_displayport_display_out_status.htm
-old-project : usbref
-ms.assetid : c57da7f2-d484-479c-9d8a-626789d8b23e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerDisplayOutStatusOff, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS, UcmTcpciPortControllerDisplayOutStatusOn, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS, _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS, buses._ucmtcpci_port_controller_displayport_display_out_status, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerDisplayOutStatusOn, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS enumeration [Buses], ucmtcpciportcontrollerrequests/UcmTcpciPortControllerDisplayOutStatusOff
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ucmtcpciportcontrollerrequests.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS
-req.product : Windows 10 or later.
+UID: NE:ucmtcpciportcontrollerrequests._UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS
+title: "_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS"
+author: windows-driver-content
+description: Defines values to determine whether a display out status for a DisplayPort device is enabled.
+old-location: buses\_ucmtcpci_port_controller_displayport_display_out_status.htm
+old-project: usbref
+ms.assetid: c57da7f2-d484-479c-9d8a-626789d8b23e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmTcpciPortControllerDisplayOutStatusOff, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS, UcmTcpciPortControllerDisplayOutStatusOn, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS, _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS, buses._ucmtcpci_port_controller_displayport_display_out_status, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerDisplayOutStatusOn, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS enumeration [Buses], ucmtcpciportcontrollerrequests/UcmTcpciPortControllerDisplayOutStatusOff
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ucmtcpciportcontrollerrequests.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucmtcpciportcontrollerrequests.h
+apiname:
+-	UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS
+req.product: Windows 10 or later.
 ---
 
 # _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS Enumeration
@@ -53,16 +58,16 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS {
 ## Constants
 
 <table>
-
-<tr>
-<td>UcmTcpciPortControllerDisplayOutStatusOff</td>
-<td>Display out status is enabled.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerDisplayOutStatusOn</td>
-<td>Display out status is enabled.</td>
-</tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerDisplayOutStatusOff</td>
+                    <td>Display out status is enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerDisplayOutStatusOn</td>
+                    <td>Display out status is enabled.</td>
+                </tr>
 </table>
 
 
@@ -72,9 +77,9 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucmtcpciportcontrollerrequests.h |
 
-## See Also
+    ## See Also
 
-<a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_displayport_display_out_status_changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED</a>
+        <a href="..\ucmtcpciportcontrollerrequests\ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_displayport_display_out_status_changed.md">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED</a>
 
 <a href="..\ucmtcpciportcontrollerrequests\ns-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_display_out_status_changed_in_params.md">UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS</a>
 

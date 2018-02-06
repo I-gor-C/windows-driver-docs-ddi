@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSRTAUDIO_BUFFER
-title : KSRTAUDIO_BUFFER
-author : windows-driver-content
-description : The KSRTAUDIO_BUFFER structure specifies the buffer address, size, and a call memory barrier flag for a cyclic audio data buffer.
-old-location : audio\ksrtaudio_buffer.htm
-old-project : audio
-ms.assetid : b80efaf0-ecee-40cd-befb-2139a20840a5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ksrtaudio_buffer, aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, ksmedia/PKSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], PKSRTAUDIO_BUFFER, ksmedia/KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], KSRTAUDIO_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER
+UID: NS:ksmedia.KSRTAUDIO_BUFFER
+title: KSRTAUDIO_BUFFER
+author: windows-driver-content
+description: The KSRTAUDIO_BUFFER structure specifies the buffer address, size, and a call memory barrier flag for a cyclic audio data buffer.
+old-location: audio\ksrtaudio_buffer.htm
+old-project: audio
+ms.assetid: b80efaf0-ecee-40cd-befb-2139a20840a5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ksrtaudio_buffer, aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, ksmedia/PKSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], PKSRTAUDIO_BUFFER, ksmedia/KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], KSRTAUDIO_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSRTAUDIO_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER
 ---
 
 # KSRTAUDIO_BUFFER structure

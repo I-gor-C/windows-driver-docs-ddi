@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._UNI_GLYPHSETDATA
-title : "_UNI_GLYPHSETDATA"
-author : windows-driver-content
-description : The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
-old-location : print\uni_glyphsetdata.htm
-old-project : print
-ms.assetid : a2c98783-c463-435e-9d78-c10686f1c75c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_UNI_GLYPHSETDATA, PUNI_GLYPHSETDATA, print.uni_glyphsetdata, prntfont/UNI_GLYPHSETDATA, UNI_GLYPHSETDATA, print_unidrv-pscript_fonts_51c5f97c-3b3c-4990-8dcb-9c7bf387b03f.xml, PUNI_GLYPHSETDATA structure pointer [Print Devices], *PUNI_GLYPHSETDATA, prntfont/PUNI_GLYPHSETDATA, UNI_GLYPHSETDATA structure [Print Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNI_GLYPHSETDATA, *PUNI_GLYPHSETDATA
-req.product : Windows 10 or later.
+UID: NS:prntfont._UNI_GLYPHSETDATA
+title: "_UNI_GLYPHSETDATA"
+author: windows-driver-content
+description: The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
+old-location: print\uni_glyphsetdata.htm
+old-project: print
+ms.assetid: a2c98783-c463-435e-9d78-c10686f1c75c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_UNI_GLYPHSETDATA, PUNI_GLYPHSETDATA, print.uni_glyphsetdata, prntfont/UNI_GLYPHSETDATA, UNI_GLYPHSETDATA, print_unidrv-pscript_fonts_51c5f97c-3b3c-4990-8dcb-9c7bf387b03f.xml, PUNI_GLYPHSETDATA structure pointer [Print Devices], *PUNI_GLYPHSETDATA, prntfont/PUNI_GLYPHSETDATA, UNI_GLYPHSETDATA structure [Print Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	UNI_GLYPHSETDATA
+product: Windows
+targetos: Windows
+req.typenames: UNI_GLYPHSETDATA, *PUNI_GLYPHSETDATA
+req.product: Windows 10 or later.
 ---
 
 # _UNI_GLYPHSETDATA structure

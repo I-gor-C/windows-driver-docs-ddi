@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionInitialize
-title : WdfDmaTransactionInitialize function
-author : windows-driver-content
-description : The WdfDmaTransactionInitialize method initializes a specified DMA transaction.
-old-location : wdf\wdfdmatransactioninitialize.htm
-old-project : wdf
-ms.assetid : cb17b31a-a069-4d41-a613-81a9815ac9a3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdmatransactioninitialize, WdfDmaTransactionInitialize, DFDmaObjectRef_d7f9d480-a08b-4d5e-a4a2-bfc2de6b4d34.xml, WdfDmaTransactionInitialize method, wdf.wdfdmatransactioninitialize, wdfdmatransaction/WdfDmaTransactionInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA, RequestCompleted, RequestCompletedLocal
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionInitialize
+title: WdfDmaTransactionInitialize function
+author: windows-driver-content
+description: The WdfDmaTransactionInitialize method initializes a specified DMA transaction.
+old-location: wdf\wdfdmatransactioninitialize.htm
+old-project: wdf
+ms.assetid: cb17b31a-a069-4d41-a613-81a9815ac9a3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdmatransactioninitialize, WdfDmaTransactionInitialize, DFDmaObjectRef_d7f9d480-a08b-4d5e-a4a2-bfc2de6b4d34.xml, WdfDmaTransactionInitialize method, wdf.wdfdmatransactioninitialize, wdfdmatransaction/WdfDmaTransactionInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA, RequestCompleted, RequestCompletedLocal
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionInitialize
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_CREATEDEFERREDCONTEXT
-title : D3D11DDIARG_CREATEDEFERREDCONTEXT
-author : windows-driver-content
-description : The D3D11DDIARG_CREATEDEFERREDCONTEXT structure describes the deferred context to create.
-old-location : display\d3d11ddiarg_createdeferredcontext.htm
-old-project : display
-ms.assetid : 4486939d-a35c-4b0b-b0d0-6402a62a4870
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CREATEDEFERREDCONTEXT structure [Display Devices], display.d3d11ddiarg_createdeferredcontext, d3d10umddi/D3D11DDIARG_CREATEDEFERREDCONTEXT, D3D11DDIARG_CREATEDEFERREDCONTEXT, UMDisplayDriver_Dx11param_Structs_c66ddced-4073-4400-8142-4464ceadad74.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_CREATEDEFERREDCONTEXT
+UID: NS:d3d10umddi.D3D11DDIARG_CREATEDEFERREDCONTEXT
+title: D3D11DDIARG_CREATEDEFERREDCONTEXT
+author: windows-driver-content
+description: The D3D11DDIARG_CREATEDEFERREDCONTEXT structure describes the deferred context to create.
+old-location: display\d3d11ddiarg_createdeferredcontext.htm
+old-project: display
+ms.assetid: 4486939d-a35c-4b0b-b0d0-6402a62a4870
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11DDIARG_CREATEDEFERREDCONTEXT structure [Display Devices], display.d3d11ddiarg_createdeferredcontext, d3d10umddi/D3D11DDIARG_CREATEDEFERREDCONTEXT, D3D11DDIARG_CREATEDEFERREDCONTEXT, UMDisplayDriver_Dx11param_Structs_c66ddced-4073-4400-8142-4464ceadad74.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_CREATEDEFERREDCONTEXT
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_CREATEDEFERREDCONTEXT
 ---
 
 # D3D11DDIARG_CREATEDEFERREDCONTEXT structure

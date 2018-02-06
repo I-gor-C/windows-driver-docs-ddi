@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._KBUGCHECK_CALLBACK_REASON
-title : "_KBUGCHECK_CALLBACK_REASON"
-author : windows-driver-content
-description : The KBUGCHECK_CALLBACK_REASON enumeration type specifies the situations in which a bug-check callback executes.
-old-location : kernel\kbugcheck_callback_reason.htm
-old-project : kernel
-ms.assetid : 08246843-9b6e-4694-8475-acb02fbdd82b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KBUGCHECK_CALLBACK_REASON, sysenum_e8373f57-7ba5-44ad-9ad9-4110710732ee.xml, wdm/KbCallbackAddPages, KbCallbackDumpIo, KbCallbackSecondaryDumpData, wdm/KbCallbackInvalid, wdm/KbCallbackReserved1, KbCallbackAddPages, kernel.kbugcheck_callback_reason, wdm/KbCallbackSecondaryDumpData, KBUGCHECK_CALLBACK_REASON enumeration [Kernel-Mode Driver Architecture], wdm/KbCallbackDumpIo, _KBUGCHECK_CALLBACK_REASON, KbCallbackReserved1, wdm/KBUGCHECK_CALLBACK_REASON, KbCallbackInvalid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KBUGCHECK_CALLBACK_REASON
-req.product : Windows 10 or later.
+UID: NE:wdm._KBUGCHECK_CALLBACK_REASON
+title: "_KBUGCHECK_CALLBACK_REASON"
+author: windows-driver-content
+description: The KBUGCHECK_CALLBACK_REASON enumeration type specifies the situations in which a bug-check callback executes.
+old-location: kernel\kbugcheck_callback_reason.htm
+old-project: kernel
+ms.assetid: 08246843-9b6e-4694-8475-acb02fbdd82b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KBUGCHECK_CALLBACK_REASON, sysenum_e8373f57-7ba5-44ad-9ad9-4110710732ee.xml, wdm/KbCallbackAddPages, KbCallbackDumpIo, KbCallbackSecondaryDumpData, wdm/KbCallbackInvalid, wdm/KbCallbackReserved1, KbCallbackAddPages, kernel.kbugcheck_callback_reason, wdm/KbCallbackSecondaryDumpData, KBUGCHECK_CALLBACK_REASON enumeration [Kernel-Mode Driver Architecture], wdm/KbCallbackDumpIo, _KBUGCHECK_CALLBACK_REASON, KbCallbackReserved1, wdm/KBUGCHECK_CALLBACK_REASON, KbCallbackInvalid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KBUGCHECK_CALLBACK_REASON
+product: Windows
+targetos: Windows
+req.typenames: KBUGCHECK_CALLBACK_REASON
+req.product: Windows 10 or later.
 ---
 
 # _KBUGCHECK_CALLBACK_REASON Enumeration
@@ -56,41 +61,41 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 ## Constants
 
 <table>
-
-<tr>
-<td>KbCallbackAddPages</td>
-<td>Specifies that the callback is executed to provide one or more pages of data that the system adds to the primary section of the crash dump file. For more information about this type of callback, see <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>. This enumeration value is supported in Windows Server 2008 and later versions of Windows.</td>
-</tr>
-
-<tr>
-<td>KbCallbackDumpIo</td>
-<td>Specifies that the callback is executed each time a section of the dump file is written. For more information about this type of callback, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>.</td>
-</tr>
-
-<tr>
-<td>KbCallbackInvalid</td>
-<td>Reserved for system use. Do not use.</td>
-</tr>
-
-<tr>
-<td>KbCallbackRemovePages</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KbCallbackReserved1</td>
-<td>Reserved for system use. Do not use.</td>
-</tr>
-
-<tr>
-<td>KbCallbackSecondaryDumpData</td>
-<td>Specifies that the callback is executed to provide data that the system appends to the secondary section of the crash dump file. For more information about this type of callback, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>.</td>
-</tr>
-
-<tr>
-<td>KbCallbackSecondaryMultiPartDumpData</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>KbCallbackAddPages</td>
+                    <td>Specifies that the callback is executed to provide one or more pages of data that the system adds to the primary section of the crash dump file. For more information about this type of callback, see <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>. This enumeration value is supported in Windows Server 2008 and later versions of Windows.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbCallbackDumpIo</td>
+                    <td>Specifies that the callback is executed each time a section of the dump file is written. For more information about this type of callback, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbCallbackInvalid</td>
+                    <td>Reserved for system use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbCallbackRemovePages</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KbCallbackReserved1</td>
+                    <td>Reserved for system use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbCallbackSecondaryDumpData</td>
+                    <td>Specifies that the callback is executed to provide data that the system appends to the secondary section of the crash dump file. For more information about this type of callback, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbCallbackSecondaryMultiPartDumpData</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -100,9 +105,9 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 | **Windows version** | Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
 

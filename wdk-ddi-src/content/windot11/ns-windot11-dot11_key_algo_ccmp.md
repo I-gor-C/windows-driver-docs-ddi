@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_KEY_ALGO_CCMP
-title : DOT11_KEY_ALGO_CCMP
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_key_algo_ccmp.htm
-old-project : netvista
-ms.assetid : cf89ee80-d19d-4d97-b71f-8ebee4b96562
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_KEY_ALGO_CCMP, netvista.dot11_key_algo_ccmp, windot11/DOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP, Native_802.11_data_types_37999ce3-5aae-4c91-80f0-f47a7182a963.xml, windot11/PDOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP structure [Network Drivers Starting with Windows Vista], PDOT11_KEY_ALGO_CCMP structure pointer [Network Drivers Starting with Windows Vista], PDOT11_KEY_ALGO_CCMP"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_KEY_ALGO_CCMP, *PDOT11_KEY_ALGO_CCMP
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_KEY_ALGO_CCMP
+title: DOT11_KEY_ALGO_CCMP
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_key_algo_ccmp.htm
+old-project: netvista
+ms.assetid: cf89ee80-d19d-4d97-b71f-8ebee4b96562
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_KEY_ALGO_CCMP, netvista.dot11_key_algo_ccmp, windot11/DOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP, Native_802.11_data_types_37999ce3-5aae-4c91-80f0-f47a7182a963.xml, windot11/PDOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP structure [Network Drivers Starting with Windows Vista], PDOT11_KEY_ALGO_CCMP structure pointer [Network Drivers Starting with Windows Vista], PDOT11_KEY_ALGO_CCMP"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_KEY_ALGO_CCMP
+product: Windows
+targetos: Windows
+req.typenames: DOT11_KEY_ALGO_CCMP, *PDOT11_KEY_ALGO_CCMP
+req.product: Windows 10 or later.
 ---
 
 # DOT11_KEY_ALGO_CCMP structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._ACCESS_DENIED_ACE
-title : "_ACCESS_DENIED_ACE"
-author : windows-driver-content
-description : The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object.
-old-location : ifsk\access_denied_ace.htm
-old-project : ifsk
-ms.assetid : a7030210-2907-45c7-a689-5e41db7c81b0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PACCESS_DENIED_ACE, securitystructures_d2c690e3-53bc-4d57-b1b5-1a34ef612a7b.xml, ifsk.access_denied_ace, _ACCESS_DENIED_ACE, ACCESS_DENIED_ACE structure [Installable File System Drivers], ntifs/ACCESS_DENIED_ACE, ntifs/PACCESS_DENIED_ACE, PACCESS_DENIED_ACE, PACCESS_DENIED_ACE structure pointer [Installable File System Drivers], ACCESS_DENIED_ACE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACCESS_DENIED_ACE
+UID: NS:ntifs._ACCESS_DENIED_ACE
+title: "_ACCESS_DENIED_ACE"
+author: windows-driver-content
+description: The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object.
+old-location: ifsk\access_denied_ace.htm
+old-project: ifsk
+ms.assetid: a7030210-2907-45c7-a689-5e41db7c81b0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PACCESS_DENIED_ACE, securitystructures_d2c690e3-53bc-4d57-b1b5-1a34ef612a7b.xml, ifsk.access_denied_ace, _ACCESS_DENIED_ACE, ACCESS_DENIED_ACE structure [Installable File System Drivers], ntifs/ACCESS_DENIED_ACE, ntifs/PACCESS_DENIED_ACE, PACCESS_DENIED_ACE, PACCESS_DENIED_ACE structure pointer [Installable File System Drivers], ACCESS_DENIED_ACE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	ACCESS_DENIED_ACE
+product: Windows
+targetos: Windows
+req.typenames: ACCESS_DENIED_ACE
 ---
 
 # _ACCESS_DENIED_ACE structure

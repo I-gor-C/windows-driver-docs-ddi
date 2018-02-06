@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.SetSymbolOptions
-title : IDebugSymbols3::SetSymbolOptions method
-author : windows-driver-content
-description : The SetSymbolOptions method changes the engine's global symbol options.
-old-location : debugger\setsymboloptions.htm
-old-project : debugger
-ms.assetid : 06cfae40-eb32-4f9b-b7ad-266cb12f4a32
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols::SetSymbolOptions, IDebugSymbols2::SetSymbolOptions, SetSymbolOptions method [Windows Debugging], IDebugSymbols2 interface, SetSymbolOptions, IDebugSymbols3::SetSymbolOptions, IDebugSymbols3, SetSymbolOptions method [Windows Debugging], IDebugSymbols interface, SetSymbolOptions method [Windows Debugging], dbgeng/IDebugSymbols2::SetSymbolOptions, SetSymbolOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::SetSymbolOptions, dbgeng/IDebugSymbols3::SetSymbolOptions, IDebugSymbols2 interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols_56cfcd8d-304b-4433-beab-2fc3e58a54a4.xml, debugger.setsymboloptions, IDebugSymbols interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols3 interface [Windows Debugging], SetSymbolOptions method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Dbghelp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.SetSymbolOptions
+title: IDebugSymbols3::SetSymbolOptions method
+author: windows-driver-content
+description: The SetSymbolOptions method changes the engine's global symbol options.
+old-location: debugger\setsymboloptions.htm
+old-project: debugger
+ms.assetid: 06cfae40-eb32-4f9b-b7ad-266cb12f4a32
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols::SetSymbolOptions, IDebugSymbols2::SetSymbolOptions, SetSymbolOptions method [Windows Debugging], IDebugSymbols2 interface, SetSymbolOptions, IDebugSymbols3::SetSymbolOptions, IDebugSymbols3, SetSymbolOptions method [Windows Debugging], IDebugSymbols interface, SetSymbolOptions method [Windows Debugging], dbgeng/IDebugSymbols2::SetSymbolOptions, SetSymbolOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::SetSymbolOptions, dbgeng/IDebugSymbols3::SetSymbolOptions, IDebugSymbols2 interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols_56cfcd8d-304b-4433-beab-2fc3e58a54a4.xml, debugger.setsymboloptions, IDebugSymbols interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols3 interface [Windows Debugging], SetSymbolOptions method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Dbghelp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.SetSymbolOptions
+-	IDebugSymbols2.SetSymbolOptions
+-	IDebugSymbols3.SetSymbolOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

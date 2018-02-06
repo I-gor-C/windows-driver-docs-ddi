@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USBDEVICE_TREE_PURGEIO
-title : "_USBDEVICE_TREE_PURGEIO"
-author : windows-driver-content
-description : This structure provides the handle for the Universal Serial Bus (USB) device tree to purge I/O for.
-old-location : buses\_usbdevice_tree_purgeio.htm
-old-project : usbref
-ms.assetid : 47C442F5-7D16-4E73-8D05-82D63D5265C1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO structure pointer [Buses], USBDEVICE_TREE_PURGEIO structure [Buses], ucxusbdevice/P_USBDEVICE_TREE_PURGEIO, ucxusbdevice/_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO, buses._usbdevice_tree_purgeio, USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USBDEVICE_TREE_PURGEIO
+title: "_USBDEVICE_TREE_PURGEIO"
+author: windows-driver-content
+description: This structure provides the handle for the Universal Serial Bus (USB) device tree to purge I/O for.
+old-location: buses\_usbdevice_tree_purgeio.htm
+old-project: usbref
+ms.assetid: 47C442F5-7D16-4E73-8D05-82D63D5265C1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO structure pointer [Buses], USBDEVICE_TREE_PURGEIO structure [Buses], ucxusbdevice/P_USBDEVICE_TREE_PURGEIO, ucxusbdevice/_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO, buses._usbdevice_tree_purgeio, USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USBDEVICE_TREE_PURGEIO
+product: Windows
+targetos: Windows
+req.typenames: USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO
+req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_TREE_PURGEIO structure

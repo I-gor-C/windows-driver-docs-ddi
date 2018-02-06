@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSFILTER
-title : "_KSFILTER"
-author : windows-driver-content
-description : The KSFILTER structure describes an instantiated filter.
-old-location : stream\ksfilter.htm
-old-project : stream
-ms.assetid : b9233f69-1ddf-4133-afd3-150aef5fc4a0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avstruct_6662a03a-c6de-4f5e-b86a-a3685dba320e.xml, *PKSFILTER, _KSFILTER, KSFILTER structure [Streaming Media Devices], ks/KSFILTER, PKSFILTER, stream.ksfilter, PKSFILTER structure pointer [Streaming Media Devices], KSFILTER, ks/PKSFILTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSFILTER, KSFILTER"
+UID: NS:ks._KSFILTER
+title: "_KSFILTER"
+author: windows-driver-content
+description: The KSFILTER structure describes an instantiated filter.
+old-location: stream\ksfilter.htm
+old-project: stream
+ms.assetid: b9233f69-1ddf-4133-afd3-150aef5fc4a0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avstruct_6662a03a-c6de-4f5e-b86a-a3685dba320e.xml, *PKSFILTER, _KSFILTER, KSFILTER structure [Streaming Media Devices], ks/KSFILTER, PKSFILTER, stream.ksfilter, PKSFILTER structure pointer [Streaming Media Devices], KSFILTER, ks/PKSFILTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSFILTER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSFILTER, KSFILTER"
 ---
 
 # _KSFILTER structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlFindLeastSignificantBit
-title : RtlFindLeastSignificantBit function
-author : windows-driver-content
-description : The RtlFindLeastSignificantBit routine returns the zero-based position of the least significant nonzero bit in its parameter.
-old-location : kernel\rtlfindleastsignificantbit.htm
-old-project : kernel
-ms.assetid : fb260c9b-dece-49ef-9701-d5198b8a08fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlfindleastsignificantbit, RtlFindLeastSignificantBit routine [Kernel-Mode Driver Architecture], RtlFindLeastSignificantBit, wdm/RtlFindLeastSignificantBit, k109_c7ab87ad-4b9e-40f5-87fb-25ced2ec0dd8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlFindLeastSignificantBit
+title: RtlFindLeastSignificantBit function
+author: windows-driver-content
+description: The RtlFindLeastSignificantBit routine returns the zero-based position of the least significant nonzero bit in its parameter.
+old-location: kernel\rtlfindleastsignificantbit.htm
+old-project: kernel
+ms.assetid: fb260c9b-dece-49ef-9701-d5198b8a08fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlfindleastsignificantbit, RtlFindLeastSignificantBit routine [Kernel-Mode Driver Architecture], RtlFindLeastSignificantBit, wdm/RtlFindLeastSignificantBit, k109_c7ab87ad-4b9e-40f5-87fb-25ced2ec0dd8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFindLeastSignificantBit
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

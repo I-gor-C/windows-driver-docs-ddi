@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetOffsetExpression
-title : IDebugBreakpoint2::GetOffsetExpression method
-author : windows-driver-content
-description : The GetOffsetExpression methods return the expression string that evaluates to the location that triggers a breakpoint.
-old-location : debugger\getoffsetexpression.htm
-old-project : debugger
-ms.assetid : 9fbdfa42-7231-4281-ba19-a33e854cd801
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint::GetOffsetExpression, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2, ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression method [Windows Debugging], GetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetOffsetExpression method, GetOffsetExpression, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpression method, IDebugBreakpoint2::GetOffsetExpression, debugger.getoffsetexpression, dbgeng/IDebugBreakpoint2::GetOffsetExpression
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetOffsetExpression
+title: IDebugBreakpoint2::GetOffsetExpression method
+author: windows-driver-content
+description: The GetOffsetExpression methods return the expression string that evaluates to the location that triggers a breakpoint.
+old-location: debugger\getoffsetexpression.htm
+old-project: debugger
+ms.assetid: 9fbdfa42-7231-4281-ba19-a33e854cd801
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugBreakpoint::GetOffsetExpression, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2, ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression method [Windows Debugging], GetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetOffsetExpression method, GetOffsetExpression, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpression method, IDebugBreakpoint2::GetOffsetExpression, debugger.getoffsetexpression, dbgeng/IDebugBreakpoint2::GetOffsetExpression
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetOffsetExpression
+-	IDebugBreakpoint2.GetOffsetExpression
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeDeregisterBugCheckCallback
-title : KeDeregisterBugCheckCallback function
-author : windows-driver-content
-description : The KeDeregisterBugCheckCallback routine removes a callback routine that was registered by KeRegisterBugCheckCallback.
-old-location : kernel\kederegisterbugcheckcallback.htm
-old-project : kernel
-ms.assetid : 0be95cee-c648-4905-9f4a-ea4e5fc794ed
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kederegisterbugcheckcallback, KeDeregisterBugCheckCallback routine [Kernel-Mode Driver Architecture], KeDeregisterBugCheckCallback, wdm/KeDeregisterBugCheckCallback, k105_6bb11ae2-ceb1-4640-b59c-47b42496b819.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeDeregisterBugCheckCallback
+title: KeDeregisterBugCheckCallback function
+author: windows-driver-content
+description: The KeDeregisterBugCheckCallback routine removes a callback routine that was registered by KeRegisterBugCheckCallback.
+old-location: kernel\kederegisterbugcheckcallback.htm
+old-project: kernel
+ms.assetid: 0be95cee-c648-4905-9f4a-ea4e5fc794ed
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kederegisterbugcheckcallback, KeDeregisterBugCheckCallback routine [Kernel-Mode Driver Architecture], KeDeregisterBugCheckCallback, wdm/KeDeregisterBugCheckCallback, k105_6bb11ae2-ceb1-4640-b59c-47b42496b819.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeDeregisterBugCheckCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

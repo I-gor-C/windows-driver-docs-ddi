@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL
-title : PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL
-author : windows-driver-content
-description : Processes a request from an application to configure an authenticated channel for content protection. Implemented by a Windows Display Driver Model (WDDM) 1.2 or later user-mode display driver.
-old-location : display\configureauthenticatedchannel1.htm
-old-project : display
-ms.assetid : 28d32813-15f5-4b9c-9bdb-5ad9b47bbe3b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.configureauthenticatedchannel1, ConfigureAuthenticatedChannel callback function [Display Devices], ConfigureAuthenticatedChannel, PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL, PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL, d3d10umddi/ConfigureAuthenticatedChannel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL
+title: PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL
+author: windows-driver-content
+description: Processes a request from an application to configure an authenticated channel for content protection. Implemented by a Windows Display Driver Model (WDDM) 1.2 or later user-mode display driver.
+old-location: display\configureauthenticatedchannel1.htm
+old-project: display
+ms.assetid: 28d32813-15f5-4b9c-9bdb-5ad9b47bbe3b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.configureauthenticatedchannel1, ConfigureAuthenticatedChannel callback function [Display Devices], ConfigureAuthenticatedChannel, PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL, PFND3D11_1DDI_CONFIGUREAUTHENTICATEDCHANNEL, d3d10umddi/ConfigureAuthenticatedChannel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	ConfigureAuthenticatedChannel
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

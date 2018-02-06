@@ -1,41 +1,46 @@
 ---
-UID : NS:poclass._BATTERY_INFORMATION
-title : "_BATTERY_INFORMATION"
-author : windows-driver-content
-description : Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
-old-location : battery\battery_information.htm
-old-project : battery
-ms.assetid : e9326d96-bd96-4493-a0b2-abe6b8f2401a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : BATTERY_INFORMATION, PBATTERY_INFORMATION structure pointer [Battery Devices], PBATTERY_INFORMATION, bat-struct_c2f83d6c-44f6-4e41-8f15-874edfc17b7c.xml, BATTERY_INFORMATION structure [Battery Devices], *PBATTERY_INFORMATION, poclass/PBATTERY_INFORMATION, poclass/BATTERY_INFORMATION, battery.battery_information, _BATTERY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : poclass.h
-req.include-header : Batclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBATTERY_INFORMATION, BATTERY_INFORMATION"
+UID: NS:poclass._BATTERY_INFORMATION
+title: "_BATTERY_INFORMATION"
+author: windows-driver-content
+description: Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
+old-location: battery\battery_information.htm
+old-project: battery
+ms.assetid: e9326d96-bd96-4493-a0b2-abe6b8f2401a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: BATTERY_INFORMATION, PBATTERY_INFORMATION structure pointer [Battery Devices], PBATTERY_INFORMATION, bat-struct_c2f83d6c-44f6-4e41-8f15-874edfc17b7c.xml, BATTERY_INFORMATION structure [Battery Devices], *PBATTERY_INFORMATION, poclass/PBATTERY_INFORMATION, poclass/BATTERY_INFORMATION, battery.battery_information, _BATTERY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: poclass.h
+req.include-header: Batclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poclass.h
+apiname:
+-	BATTERY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PBATTERY_INFORMATION, BATTERY_INFORMATION"
 ---
 
 # _BATTERY_INFORMATION structure

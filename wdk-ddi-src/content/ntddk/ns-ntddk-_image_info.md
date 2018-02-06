@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._IMAGE_INFO
-title : "_IMAGE_INFO"
-author : windows-driver-content
-description : Used by driver's load-image routine (PLOAD_IMAGE_NOTIFY_ROUTINE) to specify image information.
-old-location : kernel\image_info.htm
-old-project : kernel
-ms.assetid : D2CD2457-8DDF-4449-9DC1-F1E7472C87CA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PIMAGE_INFO, _IMAGE_INFO, IMAGE_INFO structure [Kernel-Mode Driver Architecture], kernel.image_info, ntddk/PIMAGE_INFO, ntddk/IMAGE_INFO, *PIMAGE_INFO, IMAGE_INFO, PIMAGE_INFO structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IMAGE_INFO, *PIMAGE_INFO
+UID: NS:ntddk._IMAGE_INFO
+title: "_IMAGE_INFO"
+author: windows-driver-content
+description: Used by driver's load-image routine (PLOAD_IMAGE_NOTIFY_ROUTINE) to specify image information.
+old-location: kernel\image_info.htm
+old-project: kernel
+ms.assetid: D2CD2457-8DDF-4449-9DC1-F1E7472C87CA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PIMAGE_INFO, _IMAGE_INFO, IMAGE_INFO structure [Kernel-Mode Driver Architecture], kernel.image_info, ntddk/PIMAGE_INFO, ntddk/IMAGE_INFO, *PIMAGE_INFO, IMAGE_INFO, PIMAGE_INFO structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	IMAGE_INFO
+product: Windows
+targetos: Windows
+req.typenames: IMAGE_INFO, *PIMAGE_INFO
 ---
 
 # _IMAGE_INFO structure

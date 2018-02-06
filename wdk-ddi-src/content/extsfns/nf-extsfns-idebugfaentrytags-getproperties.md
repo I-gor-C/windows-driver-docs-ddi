@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFAEntryTags.GetProperties
-title : IDebugFAEntryTags::GetProperties method
-author : windows-driver-content
-description : The GetProperties method gets the name or description (or both) of a tag in a DebugFailureAnalysisTags object.
-old-location : debugger\idebugfaentrytags_getproperties.htm
-old-project : debugger
-ms.assetid : 140EAE7D-E349-4096-8578-6CF011C1FBA7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFAEntryTags interface [Windows Debugging], GetProperties method, GetProperties method [Windows Debugging], GetProperties, IDebugFAEntryTags, extsfns/IDebugFAEntryTags::GetProperties, IDebugFAEntryTags::GetProperties, GetProperties method [Windows Debugging], IDebugFAEntryTags interface, debugger.idebugfaentrytags_getproperties
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFAEntryTags.GetProperties
+title: IDebugFAEntryTags::GetProperties method
+author: windows-driver-content
+description: The GetProperties method gets the name or description (or both) of a tag in a DebugFailureAnalysisTags object.
+old-location: debugger\idebugfaentrytags_getproperties.htm
+old-project: debugger
+ms.assetid: 140EAE7D-E349-4096-8578-6CF011C1FBA7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFAEntryTags interface [Windows Debugging], GetProperties method, GetProperties method [Windows Debugging], GetProperties, IDebugFAEntryTags, extsfns/IDebugFAEntryTags::GetProperties, IDebugFAEntryTags::GetProperties, GetProperties method [Windows Debugging], IDebugFAEntryTags interface, debugger.idebugfaentrytags_getproperties
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFAEntryTags.GetProperties
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

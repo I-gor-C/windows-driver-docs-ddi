@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SMS_SEND
-title : "_NDIS_WWAN_SMS_SEND"
-author : windows-driver-content
-description : The NDIS_WWAN_SMS_SEND structure represents an SMS message to send.
-old-location : netvista\ndis_wwan_sms_send.htm
-old-project : netvista
-ms.assetid : d92c0ebe-4a11-49d9-95aa-182e99ca8dcf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_ef75a09f-b42a-4bd6-ae59-b94d5e4b0e54.xml, netvista.ndis_wwan_sms_send, NDIS_WWAN_SMS_SEND structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_SEND structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SMS_SEND, PNDIS_WWAN_SMS_SEND, NDIS_WWAN_SMS_SEND, _NDIS_WWAN_SMS_SEND, ndiswwan/PNDIS_WWAN_SMS_SEND, *PNDIS_WWAN_SMS_SEND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SMS_SEND, NDIS_WWAN_SMS_SEND"
+UID: NS:ndiswwan._NDIS_WWAN_SMS_SEND
+title: "_NDIS_WWAN_SMS_SEND"
+author: windows-driver-content
+description: The NDIS_WWAN_SMS_SEND structure represents an SMS message to send.
+old-location: netvista\ndis_wwan_sms_send.htm
+old-project: netvista
+ms.assetid: d92c0ebe-4a11-49d9-95aa-182e99ca8dcf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_ef75a09f-b42a-4bd6-ae59-b94d5e4b0e54.xml, netvista.ndis_wwan_sms_send, NDIS_WWAN_SMS_SEND structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_SEND structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SMS_SEND, PNDIS_WWAN_SMS_SEND, NDIS_WWAN_SMS_SEND, _NDIS_WWAN_SMS_SEND, ndiswwan/PNDIS_WWAN_SMS_SEND, *PNDIS_WWAN_SMS_SEND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SMS_SEND
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SMS_SEND, NDIS_WWAN_SMS_SEND"
 ---
 
 # _NDIS_WWAN_SMS_SEND structure

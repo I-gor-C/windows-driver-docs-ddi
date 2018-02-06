@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmdt._D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
-title : "_D3DKMDT_MONITOR_CAPABILITIES_ORIGIN"
-author : windows-driver-content
-description : The D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration is used to indicate where a monitor's capability information was obtained.
-old-location : display\d3dkmdt_monitor_capabilities_origin.htm
-old-project : display
-ms.assetid : fbbea7d7-2bd7-4dd0-bcb8-3fc93c7474a3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_MCO_DEFAULTMONITORPROFILE, D3DKMDT_MCO_MONITORDESCRIPTOR, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration [Display Devices], d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DRIVER, DmEnums_fc03a227-b0c7-4152-a4f0-c8badee981e5.xml, _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_DRIVER, d3dkmdt/D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR, D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DEFAULTMONITORPROFILE, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, display.d3dkmdt_monitor_capabilities_origin, d3dkmdt/D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
+UID: NE:d3dkmdt._D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
+title: "_D3DKMDT_MONITOR_CAPABILITIES_ORIGIN"
+author: windows-driver-content
+description: The D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration is used to indicate where a monitor's capability information was obtained.
+old-location: display\d3dkmdt_monitor_capabilities_origin.htm
+old-project: display
+ms.assetid: fbbea7d7-2bd7-4dd0-bcb8-3fc93c7474a3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_MCO_DEFAULTMONITORPROFILE, D3DKMDT_MCO_MONITORDESCRIPTOR, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration [Display Devices], d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DRIVER, DmEnums_fc03a227-b0c7-4152-a4f0-c8badee981e5.xml, _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_DRIVER, d3dkmdt/D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR, D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DEFAULTMONITORPROFILE, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, display.d3dkmdt_monitor_capabilities_origin, d3dkmdt/D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
 ---
 
 # _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN Enumeration
@@ -56,41 +61,41 @@ typedef enum _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMDT_MCO_DEFAULTMONITORPROFILE</td>
-<td>Indicates that the capability information was obtained from the default monitor profile.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MCO_DRIVER</td>
-<td>Indicates that the capability information was obtained by a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendmonitormodes.md">DxgkDdiRecommendMonitorModes</a> function.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MCO_MONITORDESCRIPTOR</td>
-<td>Indicates that the capability information was obtained from an Extended Display Information Data (EDID) descriptor.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE</td>
-<td>Indicates that the capability information was obtained from an INF file section that overrides the monitor's EDID descriptor.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE</td>
-<td>Indicates that the capability information was obtained from an INF file section that overrides a single capability.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MCO_UNINITIALIZED</td>
-<td>Indicates that a variable of type D3DKMDT_MONITOR_CAPABILITIES_ORIGIN has not yet been assigned a meaningful value.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMDT_MCO_DEFAULTMONITORPROFILE</td>
+                    <td>Indicates that the capability information was obtained from the default monitor profile.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MCO_DRIVER</td>
+                    <td>Indicates that the capability information was obtained by a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendmonitormodes.md">DxgkDdiRecommendMonitorModes</a> function.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MCO_MONITORDESCRIPTOR</td>
+                    <td>Indicates that the capability information was obtained from an Extended Display Information Data (EDID) descriptor.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE</td>
+                    <td>Indicates that the capability information was obtained from an INF file section that overrides the monitor's EDID descriptor.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE</td>
+                    <td>Indicates that the capability information was obtained from an INF file section that overrides a single capability.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MCO_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_MONITOR_CAPABILITIES_ORIGIN has not yet been assigned a meaningful value.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure is a constant from the D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration.
+        The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure is a constant from the D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,9 +103,9 @@ The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
 
  
 

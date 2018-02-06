@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortSetTrappedEmulatorPorts
-title : VideoPortSetTrappedEmulatorPorts function
-author : windows-driver-content
-description : VGA-compatible (SVGA) miniport drivers call the VideoPortSetTrappedEmulatorPorts function to dynamically change the list of I/O ports that are trapped when a VDM runs in full-screen mode on an x86-based machine.
-old-location : display\videoportsettrappedemulatorports.htm
-old-project : display
-ms.assetid : c1ded22b-a5bf-4755-903a-4797c6a65713
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortSetTrappedEmulatorPorts function [Display Devices], video/VideoPortSetTrappedEmulatorPorts, VideoPort_Functions_2283311e-a325-433b-9fff-be20e9c0e092.xml, display.videoportsettrappedemulatorports, VideoPortSetTrappedEmulatorPorts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortSetTrappedEmulatorPorts
+title: VideoPortSetTrappedEmulatorPorts function
+author: windows-driver-content
+description: VGA-compatible (SVGA) miniport drivers call the VideoPortSetTrappedEmulatorPorts function to dynamically change the list of I/O ports that are trapped when a VDM runs in full-screen mode on an x86-based machine.
+old-location: display\videoportsettrappedemulatorports.htm
+old-project: display
+ms.assetid: c1ded22b-a5bf-4755-903a-4797c6a65713
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortSetTrappedEmulatorPorts function [Display Devices], video/VideoPortSetTrappedEmulatorPorts, VideoPort_Functions_2283311e-a325-433b-9fff-be20e9c0e092.xml, display.videoportsettrappedemulatorports, VideoPortSetTrappedEmulatorPorts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortSetTrappedEmulatorPorts
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

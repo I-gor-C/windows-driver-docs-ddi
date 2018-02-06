@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CREATERENDERTARGETVIEW
-title : PFND3D10DDI_CREATERENDERTARGETVIEW
-author : windows-driver-content
-description : The CreateRenderTargetView function creates a render target view.
-old-location : display\createrendertargetview.htm
-old-project : display
-ms.assetid : bf9fc732-5f9a-4fee-8ea0-19b140789463
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createrendertargetview, CreateRenderTargetView callback function [Display Devices], CreateRenderTargetView, PFND3D10DDI_CREATERENDERTARGETVIEW, PFND3D10DDI_CREATERENDERTARGETVIEW, d3d10umddi/CreateRenderTargetView, UserModeDisplayDriverDx10_Functions_abef4fc8-0aac-40a9-9f45-de2160c347af.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CREATERENDERTARGETVIEW
+title: PFND3D10DDI_CREATERENDERTARGETVIEW
+author: windows-driver-content
+description: The CreateRenderTargetView function creates a render target view.
+old-location: display\createrendertargetview.htm
+old-project: display
+ms.assetid: bf9fc732-5f9a-4fee-8ea0-19b140789463
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createrendertargetview, CreateRenderTargetView callback function [Display Devices], CreateRenderTargetView, PFND3D10DDI_CREATERENDERTARGETVIEW, PFND3D10DDI_CREATERENDERTARGETVIEW, d3d10umddi/CreateRenderTargetView, UserModeDisplayDriverDx10_Functions_abef4fc8-0aac-40a9-9f45-de2160c347af.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateRenderTargetView
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

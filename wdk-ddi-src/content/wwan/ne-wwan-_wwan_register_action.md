@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_REGISTER_ACTION
-title : "_WWAN_REGISTER_ACTION"
-author : windows-driver-content
-description : The WWAN_REGISTER_ACTION enumeration lists the different provider network registration actions that are supported by the MB device.
-old-location : netvista\wwan_register_action.htm
-old-project : netvista
-ms.assetid : 8c343094-0927-4cdd-be39-93dcb25f6bf6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_REGISTER_ACTION enumeration pointer [Network Drivers Starting with Windows Vista], WwanRef_27e66042-089c-435b-b255-d01e1ddebb5f.xml, PWWAN_REGISTER_ACTION, WwanRegisterActionMax, wwan/WwanRegisterActionMax, _WWAN_REGISTER_ACTION, wwan/WWAN_REGISTER_ACTION, wwan/PWWAN_REGISTER_ACTION, wwan/WwanRegisterActionAutomatic, WWAN_REGISTER_ACTION enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_register_action, WwanRegisterActionManual, wwan/WwanRegisterActionManual, WwanRegisterActionAutomatic, WWAN_REGISTER_ACTION, *PWWAN_REGISTER_ACTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_REGISTER_ACTION, WWAN_REGISTER_ACTION"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_REGISTER_ACTION
+title: "_WWAN_REGISTER_ACTION"
+author: windows-driver-content
+description: The WWAN_REGISTER_ACTION enumeration lists the different provider network registration actions that are supported by the MB device.
+old-location: netvista\wwan_register_action.htm
+old-project: netvista
+ms.assetid: 8c343094-0927-4cdd-be39-93dcb25f6bf6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_REGISTER_ACTION enumeration pointer [Network Drivers Starting with Windows Vista], WwanRef_27e66042-089c-435b-b255-d01e1ddebb5f.xml, PWWAN_REGISTER_ACTION, WwanRegisterActionMax, wwan/WwanRegisterActionMax, _WWAN_REGISTER_ACTION, wwan/WWAN_REGISTER_ACTION, wwan/PWWAN_REGISTER_ACTION, wwan/WwanRegisterActionAutomatic, WWAN_REGISTER_ACTION enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_register_action, WwanRegisterActionManual, wwan/WwanRegisterActionManual, WwanRegisterActionAutomatic, WWAN_REGISTER_ACTION, *PWWAN_REGISTER_ACTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_REGISTER_ACTION
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_REGISTER_ACTION, WWAN_REGISTER_ACTION"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_REGISTER_ACTION Enumeration
@@ -55,21 +60,21 @@ typedef enum _WWAN_REGISTER_ACTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanRegisterActionAutomatic</td>
-<td>Automatically register with provider and then packet-attach, if required.</td>
-</tr>
-
-<tr>
-<td>WwanRegisterActionManual</td>
-<td>Manually register with provider and then packet-attach, if required.</td>
-</tr>
-
-<tr>
-<td>WwanRegisterActionMax</td>
-<td>The total number of supported registration actions.</td>
-</tr>
+            
+                <tr>
+                    <td>WwanRegisterActionAutomatic</td>
+                    <td>Automatically register with provider and then packet-attach, if required.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanRegisterActionManual</td>
+                    <td>Manually register with provider and then packet-attach, if required.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanRegisterActionMax</td>
+                    <td>The total number of supported registration actions.</td>
+                </tr>
 </table>
 
 
@@ -79,9 +84,9 @@ typedef enum _WWAN_REGISTER_ACTION {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_set_register_state.md">WWAN_SET_REGISTER_STATE</a>
+        <a href="..\wwan\ns-wwan-_wwan_set_register_state.md">WWAN_SET_REGISTER_STATE</a>
 
  
 

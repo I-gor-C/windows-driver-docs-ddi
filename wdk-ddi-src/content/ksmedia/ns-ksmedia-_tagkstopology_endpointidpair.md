@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._tagKSTOPOLOGY_ENDPOINTIDPAIR
-title : "_tagKSTOPOLOGY_ENDPOINTIDPAIR"
-author : windows-driver-content
-description : The KSTOPOLOGY_ENDPOINTIDPAIR structure specifies the render and capture endpoint IDs to use for the KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR property.
-old-location : audio\kstopology_endpointidpair.htm
-old-project : audio
-ms.assetid : 556B56A6-1EF4-406B-A9FB-901C0CF24BC0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.kstopology_endpointidpair, ksmedia/KSTOPOLOGY_ENDPOINTIDPAIR, _tagKSTOPOLOGY_ENDPOINTIDPAIR, *PKSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR, ksmedia/PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR structure [Audio Devices], KSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10,Windows 10 Mobile
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR"
+UID: NS:ksmedia._tagKSTOPOLOGY_ENDPOINTIDPAIR
+title: "_tagKSTOPOLOGY_ENDPOINTIDPAIR"
+author: windows-driver-content
+description: The KSTOPOLOGY_ENDPOINTIDPAIR structure specifies the render and capture endpoint IDs to use for the KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR property.
+old-location: audio\kstopology_endpointidpair.htm
+old-project: audio
+ms.assetid: 556B56A6-1EF4-406B-A9FB-901C0CF24BC0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.kstopology_endpointidpair, ksmedia/KSTOPOLOGY_ENDPOINTIDPAIR, _tagKSTOPOLOGY_ENDPOINTIDPAIR, *PKSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR, ksmedia/PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR structure [Audio Devices], KSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10,Windows 10 Mobile
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSTOPOLOGY_ENDPOINTIDPAIR
+product: Windows
+targetos: Windows
+req.typenames: "*PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR"
 ---
 
 # _tagKSTOPOLOGY_ENDPOINTIDPAIR structure

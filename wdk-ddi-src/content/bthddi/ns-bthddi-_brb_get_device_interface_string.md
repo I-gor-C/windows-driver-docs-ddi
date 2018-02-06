@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_GET_DEVICE_INTERFACE_STRING
-title : "_BRB_GET_DEVICE_INTERFACE_STRING"
-author : windows-driver-content
-description : The _BRB_GET_DEVICE_INTERFACE_STRING structure describes the device interface string for the current device object.
-old-location : bltooth\_brb_get_device_interface_string.htm
-old-project : bltooth
-ms.assetid : 340e4b9a-9959-4eda-b26b-674f7fca7156
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bthddi/_BRB_GET_DEVICE_INTERFACE_STRING, _BRB_GET_DEVICE_INTERFACE_STRING structure [Bluetooth Devices], bth_structs_3d85c9ac-2714-4d6c-8a3e-f8908d8e5be9.xml, _BRB_GET_DEVICE_INTERFACE_STRING, bltooth._brb_get_device_interface_string
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_GET_DEVICE_INTERFACE_STRING
+title: "_BRB_GET_DEVICE_INTERFACE_STRING"
+author: windows-driver-content
+description: The _BRB_GET_DEVICE_INTERFACE_STRING structure describes the device interface string for the current device object.
+old-location: bltooth\_brb_get_device_interface_string.htm
+old-project: bltooth
+ms.assetid: 340e4b9a-9959-4eda-b26b-674f7fca7156
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bthddi/_BRB_GET_DEVICE_INTERFACE_STRING, _BRB_GET_DEVICE_INTERFACE_STRING structure [Bluetooth Devices], bth_structs_3d85c9ac-2714-4d6c-8a3e-f8908d8e5be9.xml, _BRB_GET_DEVICE_INTERFACE_STRING, bltooth._brb_get_device_interface_string
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_GET_DEVICE_INTERFACE_STRING
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_GET_DEVICE_INTERFACE_STRING structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CO_CREATE_VC
-title : PROTOCOL_CO_CREATE_VC
-author : windows-driver-content
-description : The ProtocolCoCreateVc function is a required function that allocates resources necessary for a call manager or client to activate and maintain a virtual connection (VC).Note  You must declare the function by using the PROTOCOL_CO_CREATE_VC type.
-old-location : netvista\protocolcocreatevc.htm
-old-project : netvista
-ms.assetid : b086dd24-74f5-474a-8684-09bf92ac731b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcocreatevc, ProtocolCoCreateVc callback function [Network Drivers Starting with Windows Vista], ProtocolCoCreateVc, PROTOCOL_CO_CREATE_VC, PROTOCOL_CO_CREATE_VC, ndis/ProtocolCoCreateVc, condis_protocol_ref_f0a7e657-70d5-4cd1-a42a-684cefe1dc60.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCoCreateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCoCreateVc (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CO_CREATE_VC
+title: PROTOCOL_CO_CREATE_VC
+author: windows-driver-content
+description: The ProtocolCoCreateVc function is a required function that allocates resources necessary for a call manager or client to activate and maintain a virtual connection (VC).Note  You must declare the function by using the PROTOCOL_CO_CREATE_VC type.
+old-location: netvista\protocolcocreatevc.htm
+old-project: netvista
+ms.assetid: b086dd24-74f5-474a-8684-09bf92ac731b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcocreatevc, ProtocolCoCreateVc callback function [Network Drivers Starting with Windows Vista], ProtocolCoCreateVc, PROTOCOL_CO_CREATE_VC, PROTOCOL_CO_CREATE_VC, ndis/ProtocolCoCreateVc, condis_protocol_ref_f0a7e657-70d5-4cd1-a42a-684cefe1dc60.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCoCreateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCoCreateVc (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCoCreateVc
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

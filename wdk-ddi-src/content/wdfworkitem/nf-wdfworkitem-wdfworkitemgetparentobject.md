@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfworkitem.WdfWorkItemGetParentObject
-title : WdfWorkItemGetParentObject function
-author : windows-driver-content
-description : The WdfWorkItemGetParentObject method returns the framework object that a specified work item is associated with.
-old-location : wdf\wdfworkitemgetparentobject.htm
-old-project : wdf
-ms.assetid : 6ebb1955-1ffc-4869-84c8-69d672ac782e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfWorkItemGetParentObject method, wdf.wdfworkitemgetparentobject, DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, WdfWorkItemGetParentObject, kmdf.wdfworkitemgetparentobject, PFN_WDFWORKITEMGETPARENTOBJECT, wdfworkitem/WdfWorkItemGetParentObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfworkitem.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfworkitem.WdfWorkItemGetParentObject
+title: WdfWorkItemGetParentObject function
+author: windows-driver-content
+description: The WdfWorkItemGetParentObject method returns the framework object that a specified work item is associated with.
+old-location: wdf\wdfworkitemgetparentobject.htm
+old-project: wdf
+ms.assetid: 6ebb1955-1ffc-4869-84c8-69d672ac782e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfWorkItemGetParentObject method, wdf.wdfworkitemgetparentobject, DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, WdfWorkItemGetParentObject, kmdf.wdfworkitemgetparentobject, PFN_WDFWORKITEMGETPARENTOBJECT, wdfworkitem/WdfWorkItemGetParentObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfworkitem.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfWorkItemGetParentObject
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

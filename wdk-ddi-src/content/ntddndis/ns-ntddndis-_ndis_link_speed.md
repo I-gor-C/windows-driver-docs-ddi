@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_LINK_SPEED
-title : "_NDIS_LINK_SPEED"
-author : windows-driver-content
-description : The NDIS_LINK_SPEED structure specifies transmit and receive link speeds.
-old-location : netvista\ndis_link_speed.htm
-old-project : netvista
-ms.assetid : d11155a3-b455-4c6e-83b8-7a86d8fd2aa1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : oid_structures_ref_c610b58c-eead-4483-96ab-c3fd62c1e846.xml, _NDIS_LINK_SPEED, netvista.ndis_link_speed, *PNDIS_LINK_SPEED, PNDIS_LINK_SPEED, PNDIS_LINK_SPEED structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_LINK_SPEED, NDIS_LINK_SPEED structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_LINK_SPEED, NDIS_LINK_SPEED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_LINK_SPEED, *PNDIS_LINK_SPEED
+UID: NS:ntddndis._NDIS_LINK_SPEED
+title: "_NDIS_LINK_SPEED"
+author: windows-driver-content
+description: The NDIS_LINK_SPEED structure specifies transmit and receive link speeds.
+old-location: netvista\ndis_link_speed.htm
+old-project: netvista
+ms.assetid: d11155a3-b455-4c6e-83b8-7a86d8fd2aa1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: oid_structures_ref_c610b58c-eead-4483-96ab-c3fd62c1e846.xml, _NDIS_LINK_SPEED, netvista.ndis_link_speed, *PNDIS_LINK_SPEED, PNDIS_LINK_SPEED, PNDIS_LINK_SPEED structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_LINK_SPEED, NDIS_LINK_SPEED structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_LINK_SPEED, NDIS_LINK_SPEED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_LINK_SPEED
+product: Windows
+targetos: Windows
+req.typenames: NDIS_LINK_SPEED, *PNDIS_LINK_SPEED
 ---
 
 # _NDIS_LINK_SPEED structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_GETDDIVERSIONDATA
-title : "_DD_GETDDIVERSIONDATA"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. DD_GETDDIVERSIONDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETDDIVERSION.
-old-location : display\dd_getddiversiondata.htm
-old-project : display
-ms.assetid : 4f96ef86-1155-4483-915e-706cc18c3bca
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DD_GETDDIVERSIONDATA, DD_GETDDIVERSIONDATA structure [Display Devices], d3dhal/DD_GETDDIVERSIONDATA, display.dd_getddiversiondata, DD_GETDDIVERSIONDATA, d3dstrct_c15b9015-5e12-41bc-a44b-751f2a8813e9.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_GETDDIVERSIONDATA
+UID: NS:d3dhal._DD_GETDDIVERSIONDATA
+title: "_DD_GETDDIVERSIONDATA"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. DD_GETDDIVERSIONDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETDDIVERSION.
+old-location: display\dd_getddiversiondata.htm
+old-project: display
+ms.assetid: 4f96ef86-1155-4483-915e-706cc18c3bca
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DD_GETDDIVERSIONDATA, DD_GETDDIVERSIONDATA structure [Display Devices], d3dhal/DD_GETDDIVERSIONDATA, display.dd_getddiversiondata, DD_GETDDIVERSIONDATA, d3dstrct_c15b9015-5e12-41bc-a44b-751f2a8813e9.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_GETDDIVERSIONDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_GETDDIVERSIONDATA
 ---
 
 # _DD_GETDDIVERSIONDATA structure

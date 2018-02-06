@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_INSPECT_COMPLETE
-title : PFN_WSK_INSPECT_COMPLETE
-author : windows-driver-content
-description : The WskInspectComplete function completes the inspection of a previously pended incoming connection request that was received on a listening socket that has conditional accept mode enabled.
-old-location : netvista\wskinspectcomplete.htm
-old-project : netvista
-ms.assetid : 31846ec9-0a4b-4e1f-9c14-c1b139f39c55
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskinspectcomplete, WskInspectComplete callback function [Network Drivers Starting with Windows Vista], WskInspectComplete, PFN_WSK_INSPECT_COMPLETE, PFN_WSK_INSPECT_COMPLETE, wsk/WskInspectComplete, wskref_af7aebea-0be9-457d-8404-6106b21312ec.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_INSPECT_COMPLETE
+title: PFN_WSK_INSPECT_COMPLETE
+author: windows-driver-content
+description: The WskInspectComplete function completes the inspection of a previously pended incoming connection request that was received on a listening socket that has conditional accept mode enabled.
+old-location: netvista\wskinspectcomplete.htm
+old-project: netvista
+ms.assetid: 31846ec9-0a4b-4e1f-9c14-c1b139f39c55
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskinspectcomplete, WskInspectComplete callback function [Network Drivers Starting with Windows Vista], WskInspectComplete, PFN_WSK_INSPECT_COMPLETE, PFN_WSK_INSPECT_COMPLETE, wsk/WskInspectComplete, wskref_af7aebea-0be9-457d-8404-6106b21312ec.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskInspectComplete
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

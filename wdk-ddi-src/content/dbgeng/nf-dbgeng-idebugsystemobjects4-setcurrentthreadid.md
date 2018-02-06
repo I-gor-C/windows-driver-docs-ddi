@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.SetCurrentThreadId
-title : IDebugSystemObjects4::SetCurrentThreadId method
-author : windows-driver-content
-description : The SetCurrentThreadId method makes the specified thread the current thread.
-old-location : debugger\setcurrentthreadid.htm
-old-project : debugger
-ms.assetid : 965c2fe0-5be5-4036-b649-a25fcc6e2dc2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects2 interface, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects2::SetCurrentThreadId, debugger.setcurrentthreadid, IDebugSystemObjects4 interface [Windows Debugging], SetCurrentThreadId method, dbgeng/IDebugSystemObjects3::SetCurrentThreadId, dbgeng/IDebugSystemObjects4::SetCurrentThreadId, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], SetCurrentThreadId method, dbgeng/IDebugSystemObjects2::SetCurrentThreadId, IDebugSystemObjects4, dbgeng/IDebugSystemObjects::SetCurrentThreadId, IDebugSystemObjects4::SetCurrentThreadId, SetCurrentThreadId, IDebugSystemObjects_61d7341c-41f8-4971-ad7e-b4fbd5b022b1.xml, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3 interface [Windows Debugging], SetCurrentThreadId method, IDebugSystemObjects3::SetCurrentThreadId, IDebugSystemObjects interface [Windows Debugging], SetCurrentThreadId method, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects::SetCurrentThreadId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.SetCurrentThreadId
+title: IDebugSystemObjects4::SetCurrentThreadId method
+author: windows-driver-content
+description: The SetCurrentThreadId method makes the specified thread the current thread.
+old-location: debugger\setcurrentthreadid.htm
+old-project: debugger
+ms.assetid: 965c2fe0-5be5-4036-b649-a25fcc6e2dc2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects2 interface, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects2::SetCurrentThreadId, debugger.setcurrentthreadid, IDebugSystemObjects4 interface [Windows Debugging], SetCurrentThreadId method, dbgeng/IDebugSystemObjects3::SetCurrentThreadId, dbgeng/IDebugSystemObjects4::SetCurrentThreadId, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], SetCurrentThreadId method, dbgeng/IDebugSystemObjects2::SetCurrentThreadId, IDebugSystemObjects4, dbgeng/IDebugSystemObjects::SetCurrentThreadId, IDebugSystemObjects4::SetCurrentThreadId, SetCurrentThreadId, IDebugSystemObjects_61d7341c-41f8-4971-ad7e-b4fbd5b022b1.xml, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3 interface [Windows Debugging], SetCurrentThreadId method, IDebugSystemObjects3::SetCurrentThreadId, IDebugSystemObjects interface [Windows Debugging], SetCurrentThreadId method, SetCurrentThreadId method [Windows Debugging], IDebugSystemObjects::SetCurrentThreadId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.SetCurrentThreadId
+-	IDebugSystemObjects2.SetCurrentThreadId
+-	IDebugSystemObjects3.SetCurrentThreadId
+-	IDebugSystemObjects4.SetCurrentThreadId
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

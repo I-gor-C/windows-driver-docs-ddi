@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi._VPD_THIRD_PARTY_COPY_PAGE
-title : "_VPD_THIRD_PARTY_COPY_PAGE"
-author : windows-driver-content
-description : The VPD_THIRD_PARTY_COPY_PAGE structure defines the vital product data (VPD) page for offload data transfer operations.
-old-location : storage\vpd_third_party_copy_page.htm
-old-project : storage
-ms.assetid : E8D9E05C-26C3-474C-854F-9AD12C8834DF
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsi/VPD_THIRD_PARTY_COPY_PAGE, storage.vpd_third_party_copy_page, _VPD_THIRD_PARTY_COPY_PAGE, scsi/PVPD_THIRD_PARTY_COPY_PAGE, PVPD_THIRD_PARTY_COPY_PAGE structure pointer [Storage Devices], *PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE structure [Storage Devices], PVPD_THIRD_PARTY_COPY_PAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPD_THIRD_PARTY_COPY_PAGE, *PVPD_THIRD_PARTY_COPY_PAGE
-req.product : Windows 10 or later.
+UID: NS:scsi._VPD_THIRD_PARTY_COPY_PAGE
+title: "_VPD_THIRD_PARTY_COPY_PAGE"
+author: windows-driver-content
+description: The VPD_THIRD_PARTY_COPY_PAGE structure defines the vital product data (VPD) page for offload data transfer operations.
+old-location: storage\vpd_third_party_copy_page.htm
+old-project: storage
+ms.assetid: E8D9E05C-26C3-474C-854F-9AD12C8834DF
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsi/VPD_THIRD_PARTY_COPY_PAGE, storage.vpd_third_party_copy_page, _VPD_THIRD_PARTY_COPY_PAGE, scsi/PVPD_THIRD_PARTY_COPY_PAGE, PVPD_THIRD_PARTY_COPY_PAGE structure pointer [Storage Devices], *PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE structure [Storage Devices], PVPD_THIRD_PARTY_COPY_PAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	VPD_THIRD_PARTY_COPY_PAGE
+product: Windows
+targetos: Windows
+req.typenames: VPD_THIRD_PARTY_COPY_PAGE, *PVPD_THIRD_PARTY_COPY_PAGE
+req.product: Windows 10 or later.
 ---
 
 # _VPD_THIRD_PARTY_COPY_PAGE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_DESTROYDCFROMMEMORY
-title : "_D3DKMT_DESTROYDCFROMMEMORY"
-author : windows-driver-content
-description : The D3DKMT_DESTROYDCFROMMEMORY structure describes parameters for releasing the display context.
-old-location : display\d3dkmt_destroydcfrommemory.htm
-old-project : display
-ms.assetid : 98110dcc-bd82-444b-80bb-45a989e2f4f1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_destroydcfrommemory, OpenGL_Structs_1d3adbd5-a0cf-4650-b293-148ca3b093fb.xml, D3DKMT_DESTROYDCFROMMEMORY structure [Display Devices], d3dkmthk/D3DKMT_DESTROYDCFROMMEMORY, D3DKMT_DESTROYDCFROMMEMORY, _D3DKMT_DESTROYDCFROMMEMORY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DESTROYDCFROMMEMORY
+UID: NS:d3dkmthk._D3DKMT_DESTROYDCFROMMEMORY
+title: "_D3DKMT_DESTROYDCFROMMEMORY"
+author: windows-driver-content
+description: The D3DKMT_DESTROYDCFROMMEMORY structure describes parameters for releasing the display context.
+old-location: display\d3dkmt_destroydcfrommemory.htm
+old-project: display
+ms.assetid: 98110dcc-bd82-444b-80bb-45a989e2f4f1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_destroydcfrommemory, OpenGL_Structs_1d3adbd5-a0cf-4650-b293-148ca3b093fb.xml, D3DKMT_DESTROYDCFROMMEMORY structure [Display Devices], d3dkmthk/D3DKMT_DESTROYDCFROMMEMORY, D3DKMT_DESTROYDCFROMMEMORY, _D3DKMT_DESTROYDCFROMMEMORY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DESTROYDCFROMMEMORY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DESTROYDCFROMMEMORY
 ---
 
 # _D3DKMT_DESTROYDCFROMMEMORY structure

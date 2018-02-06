@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_RELATED_CONTEXTS_EX
-title : "_FLT_RELATED_CONTEXTS_EX"
-author : windows-driver-content
-description : The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation.
-old-location : ifsk\flt_related_contexts_ex.htm
-old-project : ifsk
-ms.assetid : 9D3E77AE-C63D-4253-8520-6A9ACCBB89CC
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.flt_related_contexts_ex, _FLT_RELATED_CONTEXTS_EX, fltkernel/PFLT_RELATED_CONTEXTS_EX, fltkernel/FLT_RELATED_CONTEXTS_EX, PFLT_RELATED_CONTEXTS_EX structure pointer [Installable File System Drivers], FLT_RELATED_CONTEXTS_EX structure [Installable File System Drivers], *PFLT_RELATED_CONTEXTS_EX, FLT_RELATED_CONTEXTS_EX, PFLT_RELATED_CONTEXTS_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_RELATED_CONTEXTS_EX, FLT_RELATED_CONTEXTS_EX"
+UID: NS:fltkernel._FLT_RELATED_CONTEXTS_EX
+title: "_FLT_RELATED_CONTEXTS_EX"
+author: windows-driver-content
+description: The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation.
+old-location: ifsk\flt_related_contexts_ex.htm
+old-project: ifsk
+ms.assetid: 9D3E77AE-C63D-4253-8520-6A9ACCBB89CC
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.flt_related_contexts_ex, _FLT_RELATED_CONTEXTS_EX, fltkernel/PFLT_RELATED_CONTEXTS_EX, fltkernel/FLT_RELATED_CONTEXTS_EX, PFLT_RELATED_CONTEXTS_EX structure pointer [Installable File System Drivers], FLT_RELATED_CONTEXTS_EX structure [Installable File System Drivers], *PFLT_RELATED_CONTEXTS_EX, FLT_RELATED_CONTEXTS_EX, PFLT_RELATED_CONTEXTS_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_RELATED_CONTEXTS_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_RELATED_CONTEXTS_EX, FLT_RELATED_CONTEXTS_EX"
 ---
 
 # _FLT_RELATED_CONTEXTS_EX structure

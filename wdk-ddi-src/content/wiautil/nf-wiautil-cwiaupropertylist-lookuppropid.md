@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauPropertyList.LookupPropId
-title : CWiauPropertyList::LookupPropId method
-author : windows-driver-content
-description : The CWiauPropertyList::LookupPropId method finds a property's index, given its property ID.
-old-location : image\cwiaupropertylist_lookuppropid.htm
-old-project : image
-ms.assetid : 454e51fc-f81a-49c8-9e07-e32819af2642
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.cwiaupropertylist_lookuppropid, LookupPropId method [Imaging Devices], wiautil/CWiauPropertyList::LookupPropId, CWiauPropertyList interface [Imaging Devices], LookupPropId method, LookupPropId, LookupPropId method [Imaging Devices], CWiauPropertyList interface, wiauFncs_087766c2-718f-4d02-be7f-869df198c3a7.xml, CWiauPropertyList, CWiauPropertyList::LookupPropId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauPropertyList.LookupPropId
+title: CWiauPropertyList::LookupPropId method
+author: windows-driver-content
+description: The CWiauPropertyList::LookupPropId method finds a property's index, given its property ID.
+old-location: image\cwiaupropertylist_lookuppropid.htm
+old-project: image
+ms.assetid: 454e51fc-f81a-49c8-9e07-e32819af2642
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.cwiaupropertylist_lookuppropid, LookupPropId method [Imaging Devices], wiautil/CWiauPropertyList::LookupPropId, CWiauPropertyList interface [Imaging Devices], LookupPropId method, LookupPropId, LookupPropId method [Imaging Devices], CWiauPropertyList interface, wiauFncs_087766c2-718f-4d02-be7f-869df198c3a7.xml, CWiauPropertyList, CWiauPropertyList::LookupPropId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauPropertyList.LookupPropId
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

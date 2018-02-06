@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.Assemble
-title : IDebugControl3::Assemble method
-author : windows-driver-content
-description : The Assemble method assembles a single processor instruction. The assembled instruction is placed in the target's memory.
-old-location : debugger\assemble.htm
-old-project : debugger
-ms.assetid : 4d7d84e7-4fa4-4514-9d52-dbae5fed159b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Assemble method [Windows Debugging], IDebugControl2 interface, IDebugControl3, dbgeng/IDebugControl::Assemble, dbgeng/IDebugControl2::Assemble, IDebugControl3 interface [Windows Debugging], Assemble method, debugger.assemble, Assemble method [Windows Debugging], IDebugControl interface, IDebugControl::Assemble, IDebugControl interface [Windows Debugging], Assemble method, dbgeng/IDebugControl3::Assemble, IDebugControl2 interface [Windows Debugging], Assemble method, Assemble method [Windows Debugging], IDebugControl2::Assemble, Assemble method [Windows Debugging], IDebugControl3 interface, IDebugControl_99336950-ba0b-46e1-871d-582f08ab5519.xml, IDebugControl3::Assemble, Assemble
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.Assemble
+title: IDebugControl3::Assemble method
+author: windows-driver-content
+description: The Assemble method assembles a single processor instruction. The assembled instruction is placed in the target's memory.
+old-location: debugger\assemble.htm
+old-project: debugger
+ms.assetid: 4d7d84e7-4fa4-4514-9d52-dbae5fed159b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Assemble method [Windows Debugging], IDebugControl2 interface, IDebugControl3, dbgeng/IDebugControl::Assemble, dbgeng/IDebugControl2::Assemble, IDebugControl3 interface [Windows Debugging], Assemble method, debugger.assemble, Assemble method [Windows Debugging], IDebugControl interface, IDebugControl::Assemble, IDebugControl interface [Windows Debugging], Assemble method, dbgeng/IDebugControl3::Assemble, IDebugControl2 interface [Windows Debugging], Assemble method, Assemble method [Windows Debugging], IDebugControl2::Assemble, Assemble method [Windows Debugging], IDebugControl3 interface, IDebugControl_99336950-ba0b-46e1-871d-582f08ab5519.xml, IDebugControl3::Assemble, Assemble
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.Assemble
+-	IDebugControl2.Assemble
+-	IDebugControl3.Assemble
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_ENUMHANDLECHILDREN
-title : DXGKCB_ENUMHANDLECHILDREN
-author : windows-driver-content
-description : The DxgkCbEnumHandleChildren function enumerates all of the allocations that are associated with a given resource, one allocation at a time.
-old-location : display\dxgkcbenumhandlechildren.htm
-old-project : display
-ms.assetid : 36307e63-9e94-4441-92c6-fd4293ea8fa9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbenumhandlechildren, DxgkCbEnumHandleChildren callback function [Display Devices], DxgkCbEnumHandleChildren, DXGKCB_ENUMHANDLECHILDREN, DXGKCB_ENUMHANDLECHILDREN, d3dkmddi/DxgkCbEnumHandleChildren, DpFunctions_9690e256-00e7-4c6e-88cc-d2e1c32580a2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_ENUMHANDLECHILDREN
+title: DXGKCB_ENUMHANDLECHILDREN
+author: windows-driver-content
+description: The DxgkCbEnumHandleChildren function enumerates all of the allocations that are associated with a given resource, one allocation at a time.
+old-location: display\dxgkcbenumhandlechildren.htm
+old-project: display
+ms.assetid: 36307e63-9e94-4441-92c6-fd4293ea8fa9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbenumhandlechildren, DxgkCbEnumHandleChildren callback function [Display Devices], DxgkCbEnumHandleChildren, DXGKCB_ENUMHANDLECHILDREN, DXGKCB_ENUMHANDLECHILDREN, d3dkmddi/DxgkCbEnumHandleChildren, DpFunctions_9690e256-00e7-4c6e-88cc-d2e1c32580a2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkCbEnumHandleChildren
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

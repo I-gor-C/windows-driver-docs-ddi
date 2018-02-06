@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_L2CA_OPEN_ENHANCED_CHANNEL
-title : "_BRB_L2CA_OPEN_ENHANCED_CHANNEL"
-author : windows-driver-content
-description : The _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure is used to open an enhanced L2CAP channel to a remote device, or send a response for accepting/rejecting an incoming enhanced L2CAP connection request that was initiated by a remote device.
-old-location : bltooth\_brb_l2ca_open_enhanced_channel.htm
-old-project : bltooth
-ms.assetid : 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth._brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_L2CA_OPEN_ENHANCED_CHANNEL
+title: "_BRB_L2CA_OPEN_ENHANCED_CHANNEL"
+author: windows-driver-content
+description: The _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure is used to open an enhanced L2CAP channel to a remote device, or send a response for accepting/rejecting an incoming enhanced L2CAP connection request that was initiated by a remote device.
+old-location: bltooth\_brb_l2ca_open_enhanced_channel.htm
+old-project: bltooth
+ms.assetid: 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth._brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthddi.h
+apiname:
+-	BRB_L2CA_OPEN_ENHANCED_CHANNEL
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure

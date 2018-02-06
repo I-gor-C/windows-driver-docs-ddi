@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._RemoveTarget_IN
-title : "_RemoveTarget_IN"
-author : windows-driver-content
-description : The RemoveTarget_IN structure is used by a WMI client to deliver input parameter data to the RemoveTarget WMI method.
-old-location : storage\removetarget_in.htm
-old-project : storage
-ms.assetid : 54fcbb64-09ce-4f18-963b-fee2627d4231
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRemoveTarget_IN, *PRemoveTarget_IN, storage.removetarget_in, hbapiwmi/RemoveTarget_IN, _RemoveTarget_IN, RemoveTarget_IN, PRemoveTarget_IN structure pointer [Storage Devices], structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml, hbapiwmi/PRemoveTarget_IN, RemoveTarget_IN structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RemoveTarget_IN, *PRemoveTarget_IN
+UID: NS:hbapiwmi._RemoveTarget_IN
+title: "_RemoveTarget_IN"
+author: windows-driver-content
+description: The RemoveTarget_IN structure is used by a WMI client to deliver input parameter data to the RemoveTarget WMI method.
+old-location: storage\removetarget_in.htm
+old-project: storage
+ms.assetid: 54fcbb64-09ce-4f18-963b-fee2627d4231
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRemoveTarget_IN, *PRemoveTarget_IN, storage.removetarget_in, hbapiwmi/RemoveTarget_IN, _RemoveTarget_IN, RemoveTarget_IN, PRemoveTarget_IN structure pointer [Storage Devices], structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml, hbapiwmi/PRemoveTarget_IN, RemoveTarget_IN structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	RemoveTarget_IN
+product: Windows
+targetos: Windows
+req.typenames: RemoveTarget_IN, *PRemoveTarget_IN
 ---
 
 # _RemoveTarget_IN structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
-title : EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
-author : windows-driver-content
-description : The client driver's implementation to initiate remote wake-up on the function controller.
-old-location : buses\evt_ufx_device_remote_wakeup_signal.htm
-old-project : usbref
-ms.assetid : A1250501-DC33-4AA8-8AD7-9938ECAC8AFB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_remote_wakeup_signal, EvtUfxDeviceRemoteWakeupSignal callback function [Buses], EvtUfxDeviceRemoteWakeupSignal, EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL, EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL, ufxclient/EvtUfxDeviceRemoteWakeupSignal, PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL callback function pointer [Buses], PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
+title: EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
+author: windows-driver-content
+description: The client driver's implementation to initiate remote wake-up on the function controller.
+old-location: buses\evt_ufx_device_remote_wakeup_signal.htm
+old-project: usbref
+ms.assetid: A1250501-DC33-4AA8-8AD7-9938ECAC8AFB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_remote_wakeup_signal, EvtUfxDeviceRemoteWakeupSignal callback function [Buses], EvtUfxDeviceRemoteWakeupSignal, EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL, EVT_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL, ufxclient/EvtUfxDeviceRemoteWakeupSignal, PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL callback function pointer [Buses], PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_REMOTE_WAKEUP_SIGNAL
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

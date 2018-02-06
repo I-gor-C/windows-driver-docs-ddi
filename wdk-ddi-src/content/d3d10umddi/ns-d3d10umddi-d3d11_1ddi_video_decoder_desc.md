@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_DECODER_DESC
-title : D3D11_1DDI_VIDEO_DECODER_DESC
-author : windows-driver-content
-description : Describes a video stream for a Microsoft Direct3D video decoder or video processor.
-old-location : display\d3d11_1ddi_video_decoder_desc.htm
-old-project : display
-ms.assetid : 35fe914b-13e8-4658-9ea6-af1eb9068f6f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddi_video_decoder_desc, D3D11_1DDI_VIDEO_DECODER_DESC structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_DECODER_DESC, D3D11_1DDI_VIDEO_DECODER_DESC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_DECODER_DESC
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_DECODER_DESC
+title: D3D11_1DDI_VIDEO_DECODER_DESC
+author: windows-driver-content
+description: Describes a video stream for a Microsoft Direct3D video decoder or video processor.
+old-location: display\d3d11_1ddi_video_decoder_desc.htm
+old-project: display
+ms.assetid: 35fe914b-13e8-4658-9ea6-af1eb9068f6f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d11_1ddi_video_decoder_desc, D3D11_1DDI_VIDEO_DECODER_DESC structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_DECODER_DESC, D3D11_1DDI_VIDEO_DECODER_DESC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_DECODER_DESC
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_DECODER_DESC
 ---
 
 # D3D11_1DDI_VIDEO_DECODER_DESC structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._KEY_NODE_INFORMATION
-title : "_KEY_NODE_INFORMATION"
-author : windows-driver-content
-description : The KEY_NODE_INFORMATION structure defines the basic information available for a registry (sub)key.
-old-location : kernel\key_node_information.htm
-old-project : kernel
-ms.assetid : 2eed1a3d-fc40-4416-ad61-d82bf4fb69a1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.key_node_information, PKEY_NODE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _KEY_NODE_INFORMATION, KEY_NODE_INFORMATION, kstruct_c_a41bb6c8-4e12-4aac-94cf-a24d32727c5e.xml, KEY_NODE_INFORMATION structure [Kernel-Mode Driver Architecture], *PKEY_NODE_INFORMATION, PKEY_NODE_INFORMATION, wdm/KEY_NODE_INFORMATION, wdm/PKEY_NODE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKEY_NODE_INFORMATION, KEY_NODE_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._KEY_NODE_INFORMATION
+title: "_KEY_NODE_INFORMATION"
+author: windows-driver-content
+description: The KEY_NODE_INFORMATION structure defines the basic information available for a registry (sub)key.
+old-location: kernel\key_node_information.htm
+old-project: kernel
+ms.assetid: 2eed1a3d-fc40-4416-ad61-d82bf4fb69a1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.key_node_information, PKEY_NODE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _KEY_NODE_INFORMATION, KEY_NODE_INFORMATION, kstruct_c_a41bb6c8-4e12-4aac-94cf-a24d32727c5e.xml, KEY_NODE_INFORMATION structure [Kernel-Mode Driver Architecture], *PKEY_NODE_INFORMATION, PKEY_NODE_INFORMATION, wdm/KEY_NODE_INFORMATION, wdm/PKEY_NODE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KEY_NODE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PKEY_NODE_INFORMATION, KEY_NODE_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _KEY_NODE_INFORMATION structure

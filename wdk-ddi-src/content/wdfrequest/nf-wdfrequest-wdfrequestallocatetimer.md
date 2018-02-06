@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestAllocateTimer
-title : WdfRequestAllocateTimer function
-author : windows-driver-content
-description : The WdfRequestAllocateTimer method allocates a timer for a specified I/O request.
-old-location : wdf\wdfrequestallocatetimer.htm
-old-project : wdf
-ms.assetid : e77aece7-df27-42d8-8e25-6907a5401ff9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_ae292896-d156-44ae-b0cd-3f807fbc1765.xml, WdfRequestAllocateTimer, kmdf.wdfrequestallocatetimer, wdfrequest/WdfRequestAllocateTimer, WdfRequestAllocateTimer method, PFN_WDFREQUESTALLOCATETIMER, wdf.wdfrequestallocatetimer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestAllocateTimer
+title: WdfRequestAllocateTimer function
+author: windows-driver-content
+description: The WdfRequestAllocateTimer method allocates a timer for a specified I/O request.
+old-location: wdf\wdfrequestallocatetimer.htm
+old-project: wdf
+ms.assetid: e77aece7-df27-42d8-8e25-6907a5401ff9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFRequestObjectRef_ae292896-d156-44ae-b0cd-3f807fbc1765.xml, WdfRequestAllocateTimer, kmdf.wdfrequestallocatetimer, wdfrequest/WdfRequestAllocateTimer, WdfRequestAllocateTimer method, PFN_WDFREQUESTALLOCATETIMER, wdf.wdfrequestallocatetimer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestAllocateTimer
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

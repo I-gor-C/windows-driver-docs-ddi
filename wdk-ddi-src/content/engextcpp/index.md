@@ -1,12 +1,12 @@
 ---
-UID : NA:engextcpp
-ms.assetid : 4849a6b1-830f-3826-8f7f-f7451944fa5f
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:engextcpp
+ms.assetid: 4849a6b1-830f-3826-8f7f-f7451944fa5f
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # engextcpp.h header

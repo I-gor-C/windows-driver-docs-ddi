@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInitializePagedLookasideList
-title : ExInitializePagedLookasideList function
-author : windows-driver-content
-description : The ExInitializePagedLookasideList routine initializes a lookaside list for pageable entries of the specified size.
-old-location : kernel\exinitializepagedlookasidelist.htm
-old-project : kernel
-ms.assetid : 7a6b21f1-37e3-4f73-a826-4629624ac5a9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInitializePagedLookasideList routine [Kernel-Mode Driver Architecture], ExInitializePagedLookasideList, k102_7044b56d-db76-4021-8d76-b4f157e2d783.xml, wdm/ExInitializePagedLookasideList, kernel.exinitializepagedlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInitializePagedLookasideList
+title: ExInitializePagedLookasideList function
+author: windows-driver-content
+description: The ExInitializePagedLookasideList routine initializes a lookaside list for pageable entries of the specified size.
+old-location: kernel\exinitializepagedlookasidelist.htm
+old-project: kernel
+ms.assetid: 7a6b21f1-37e3-4f73-a826-4629624ac5a9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInitializePagedLookasideList routine [Kernel-Mode Driver Architecture], ExInitializePagedLookasideList, k102_7044b56d-db76-4021-8d76-b4f157e2d783.xml, wdm/ExInitializePagedLookasideList, kernel.exinitializepagedlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInitializePagedLookasideList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

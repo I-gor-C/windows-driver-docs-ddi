@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.StopAcknowledge
-title : IWDFIoRequest2::StopAcknowledge method
-author : windows-driver-content
-description : The StopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request.
-old-location : wdf\iwdfiorequest2_stopacknowledge.htm
-old-project : wdf
-ms.assetid : af4ae2c0-b1e1-45af-bd0e-3b9a91566caa
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFRequestObjectRef_9a125e95-f59a-4338-a7af-cb7f99289eb7.xml, wdf.iwdfiorequest2_stopacknowledge, IWDFIoRequest2 interface, StopAcknowledge method, StopAcknowledge, umdf.iwdfiorequest2_stopacknowledge, IWDFIoRequest2, wudfddi/IWDFIoRequest2::StopAcknowledge, IWDFIoRequest2::StopAcknowledge, StopAcknowledge method, StopAcknowledge method, IWDFIoRequest2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.StopAcknowledge
+title: IWDFIoRequest2::StopAcknowledge method
+author: windows-driver-content
+description: The StopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request.
+old-location: wdf\iwdfiorequest2_stopacknowledge.htm
+old-project: wdf
+ms.assetid: af4ae2c0-b1e1-45af-bd0e-3b9a91566caa
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFRequestObjectRef_9a125e95-f59a-4338-a7af-cb7f99289eb7.xml, wdf.iwdfiorequest2_stopacknowledge, IWDFIoRequest2 interface, StopAcknowledge method, StopAcknowledge, umdf.iwdfiorequest2_stopacknowledge, IWDFIoRequest2, wudfddi/IWDFIoRequest2::StopAcknowledge, IWDFIoRequest2::StopAcknowledge, StopAcknowledge method, StopAcknowledge method, IWDFIoRequest2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.StopAcknowledge
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

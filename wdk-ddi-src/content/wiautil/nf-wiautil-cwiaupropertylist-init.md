@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauPropertyList.Init
-title : CWiauPropertyList::Init method
-author : windows-driver-content
-description : The CWiauPropertyList::Init method initializes a property list object.
-old-location : image\cwiaupropertylist_init.htm
-old-project : image
-ms.assetid : cbbe0d76-7fd1-4653-ad79-d5e6d692dec0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiautil/CWiauPropertyList::Init, CWiauPropertyList interface [Imaging Devices], Init method, CWiauPropertyList::Init, image.cwiaupropertylist_init, Init method [Imaging Devices], Init, CWiauPropertyList, Init method [Imaging Devices], CWiauPropertyList interface, wiauFncs_4bc30663-6fd6-45b7-a18f-1adc766489be.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauPropertyList.Init
+title: CWiauPropertyList::Init method
+author: windows-driver-content
+description: The CWiauPropertyList::Init method initializes a property list object.
+old-location: image\cwiaupropertylist_init.htm
+old-project: image
+ms.assetid: cbbe0d76-7fd1-4653-ad79-d5e6d692dec0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiautil/CWiauPropertyList::Init, CWiauPropertyList interface [Imaging Devices], Init method, CWiauPropertyList::Init, image.cwiaupropertylist_init, Init method [Imaging Devices], Init, CWiauPropertyList, Init method [Imaging Devices], CWiauPropertyList interface, wiauFncs_4bc30663-6fd6-45b7-a18f-1adc766489be.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauPropertyList.Init
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

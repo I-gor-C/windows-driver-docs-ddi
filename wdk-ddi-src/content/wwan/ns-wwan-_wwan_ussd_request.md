@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_USSD_REQUEST
-title : "_WWAN_USSD_REQUEST"
-author : windows-driver-content
-description : The WWAN_USSD_REQUEST structure describes an Unstructured Supplementary Service Data (USSD) request.
-old-location : netvista\wwan_ussd_request.htm
-old-project : netvista
-ms.assetid : 429F5EC9-F8AA-4D5D-9CA7-D9D9AEC46842
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista], _WWAN_USSD_REQUEST, wwan/PWWAN_USSD_REQUEST, *PWWAN_USSD_REQUEST, netvista.wwan_ussd_request, wwan/WWAN_USSD_REQUEST, WWAN_USSD_REQUEST, PWWAN_USSD_REQUEST, PWWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_USSD_REQUEST, WWAN_USSD_REQUEST"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_USSD_REQUEST
+title: "_WWAN_USSD_REQUEST"
+author: windows-driver-content
+description: The WWAN_USSD_REQUEST structure describes an Unstructured Supplementary Service Data (USSD) request.
+old-location: netvista\wwan_ussd_request.htm
+old-project: netvista
+ms.assetid: 429F5EC9-F8AA-4D5D-9CA7-D9D9AEC46842
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista], _WWAN_USSD_REQUEST, wwan/PWWAN_USSD_REQUEST, *PWWAN_USSD_REQUEST, netvista.wwan_ussd_request, wwan/WWAN_USSD_REQUEST, WWAN_USSD_REQUEST, PWWAN_USSD_REQUEST, PWWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_USSD_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_USSD_REQUEST, WWAN_USSD_REQUEST"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_USSD_REQUEST structure

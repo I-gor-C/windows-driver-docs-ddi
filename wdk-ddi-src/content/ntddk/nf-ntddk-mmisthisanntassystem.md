@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.MmIsThisAnNtAsSystem
-title : MmIsThisAnNtAsSystem function
-author : windows-driver-content
-description : The MmIsThisAnNtAsSystem routine is obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead.
-old-location : kernel\mmisthisanntassystem.htm
-old-project : kernel
-ms.assetid : e9daafb1-16ec-4ffe-b863-6f07c4b2a9b7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture], MmIsThisAnNtAsSystem, k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, ntddk/MmIsThisAnNtAsSystem, kernel.mmisthisanntassystem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.MmIsThisAnNtAsSystem
+title: MmIsThisAnNtAsSystem function
+author: windows-driver-content
+description: The MmIsThisAnNtAsSystem routine is obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead.
+old-location: kernel\mmisthisanntassystem.htm
+old-project: kernel
+ms.assetid: e9daafb1-16ec-4ffe-b863-6f07c4b2a9b7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture], MmIsThisAnNtAsSystem, k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, ntddk/MmIsThisAnNtAsSystem, kernel.mmisthisanntassystem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmIsThisAnNtAsSystem
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

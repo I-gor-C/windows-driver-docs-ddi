@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortMidi.Notify
-title : IPortMidi::Notify method
-author : windows-driver-content
-description : The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred. It should be called from the miniport driver's interrupt service routine (ISR).
-old-location : audio\iportmidi_notify.htm
-old-project : audio
-ms.assetid : eeec5e45-4db2-4a81-b773-0f9cbf86f593
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : Notify method [Audio Devices], IPortMidi interface, IPortMidi, Notify, IPortMidi::Notify, audmp-routines_33df6b8a-0ebf-4544-8ad4-17fb93edf0c9.xml, audio.iportmidi_notify, IPortMidi interface [Audio Devices], Notify method, portcls/IPortMidi::Notify, Notify method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortMidi.Notify
+title: IPortMidi::Notify method
+author: windows-driver-content
+description: The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred. It should be called from the miniport driver's interrupt service routine (ISR).
+old-location: audio\iportmidi_notify.htm
+old-project: audio
+ms.assetid: eeec5e45-4db2-4a81-b773-0f9cbf86f593
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: Notify method [Audio Devices], IPortMidi interface, IPortMidi, Notify, IPortMidi::Notify, audmp-routines_33df6b8a-0ebf-4544-8ad4-17fb93edf0c9.xml, audio.iportmidi_notify, IPortMidi interface [Audio Devices], Notify method, portcls/IPortMidi::Notify, Notify method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortMidi.Notify
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

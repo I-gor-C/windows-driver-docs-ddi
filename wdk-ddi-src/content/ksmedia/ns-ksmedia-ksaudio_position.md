@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_POSITION
-title : KSAUDIO_POSITION
-author : windows-driver-content
-description : The KSAUDIO_POSITION structure specifies the current positions of the play and write cursors in the sound buffer for an audio stream.
-old-location : audio\ksaudio_position.htm
-old-project : audio
-ms.assetid : 91658dfc-dad4-4fbb-8688-13971e7275e2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/KSAUDIO_POSITION, PKSAUDIO_POSITION structure pointer [Audio Devices], KSAUDIO_POSITION structure [Audio Devices], *PKSAUDIO_POSITION, aud-prop_0518af7c-0c1d-4710-8879-43bb42e1ba2a.xml, PKSAUDIO_POSITION, audio.ksaudio_position, ksmedia/PKSAUDIO_POSITION, KSAUDIO_POSITION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIO_POSITION, KSAUDIO_POSITION"
+UID: NS:ksmedia.KSAUDIO_POSITION
+title: KSAUDIO_POSITION
+author: windows-driver-content
+description: The KSAUDIO_POSITION structure specifies the current positions of the play and write cursors in the sound buffer for an audio stream.
+old-location: audio\ksaudio_position.htm
+old-project: audio
+ms.assetid: 91658dfc-dad4-4fbb-8688-13971e7275e2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/KSAUDIO_POSITION, PKSAUDIO_POSITION structure pointer [Audio Devices], KSAUDIO_POSITION structure [Audio Devices], *PKSAUDIO_POSITION, aud-prop_0518af7c-0c1d-4710-8879-43bb42e1ba2a.xml, PKSAUDIO_POSITION, audio.ksaudio_position, ksmedia/PKSAUDIO_POSITION, KSAUDIO_POSITION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_POSITION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIO_POSITION, KSAUDIO_POSITION"
 ---
 
 # KSAUDIO_POSITION structure

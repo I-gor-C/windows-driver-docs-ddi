@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlCreateHeap
-title : RtlCreateHeap function
-author : windows-driver-content
-description : The RtlCreateHeap routine creates a heap object that can be used by the calling process. This routine reserves space in the virtual address space of the process and allocates physical storage for a specified initial portion of this block.
-old-location : ifsk\rtlcreateheap.htm
-old-project : ifsk
-ms.assetid : 77ba5ba3-11d3-4c28-86e6-91f3189b5403
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlcreateheap, rtlref_e57e4a89-3686-4ab4-85e2-af223cdb3b18.xml, ntifs/RtlCreateHeap, RtlCreateHeap routine [Installable File System Drivers], RtlCreateHeap
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlCreateHeap
+title: RtlCreateHeap function
+author: windows-driver-content
+description: The RtlCreateHeap routine creates a heap object that can be used by the calling process. This routine reserves space in the virtual address space of the process and allocates physical storage for a specified initial portion of this block.
+old-location: ifsk\rtlcreateheap.htm
+old-project: ifsk
+ms.assetid: 77ba5ba3-11d3-4c28-86e6-91f3189b5403
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlcreateheap, rtlref_e57e4a89-3686-4ab4-85e2-af223cdb3b18.xml, ntifs/RtlCreateHeap, RtlCreateHeap routine [Installable File System Drivers], RtlCreateHeap
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlCreateHeap
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

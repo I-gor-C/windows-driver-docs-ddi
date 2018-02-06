@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_PROTOCOL_PAUSE_PARAMETERS
-title : "_NDIS_PROTOCOL_PAUSE_PARAMETERS"
-author : windows-driver-content
-description : NDIS passes an NDIS_PROTOCOL_PAUSE_PARAMETERS structure to a protocol driver when it calls the ProtocolNetPnPEvent function to indicate a NetEventPause event.
-old-location : netvista\ndis_protocol_pause_parameters.htm
-old-project : netvista
-ms.assetid : 7754d47f-9e21-44c7-8a6f-141d18623ddf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : protocol_structures_ref_0b5004b2-d77f-427a-8473-f0ffb13a09f4.xml, NDIS_PROTOCOL_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_PROTOCOL_PAUSE_PARAMETERS, PNDIS_PROTOCOL_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_PAUSE_PARAMETERS, ndis/PNDIS_PROTOCOL_PAUSE_PARAMETERS, *PNDIS_PROTOCOL_PAUSE_PARAMETERS, PNDIS_PROTOCOL_PAUSE_PARAMETERS, ndis/NDIS_PROTOCOL_PAUSE_PARAMETERS, netvista.ndis_protocol_pause_parameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PROTOCOL_PAUSE_PARAMETERS, *PNDIS_PROTOCOL_PAUSE_PARAMETERS
+UID: NS:ndis._NDIS_PROTOCOL_PAUSE_PARAMETERS
+title: "_NDIS_PROTOCOL_PAUSE_PARAMETERS"
+author: windows-driver-content
+description: NDIS passes an NDIS_PROTOCOL_PAUSE_PARAMETERS structure to a protocol driver when it calls the ProtocolNetPnPEvent function to indicate a NetEventPause event.
+old-location: netvista\ndis_protocol_pause_parameters.htm
+old-project: netvista
+ms.assetid: 7754d47f-9e21-44c7-8a6f-141d18623ddf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: protocol_structures_ref_0b5004b2-d77f-427a-8473-f0ffb13a09f4.xml, NDIS_PROTOCOL_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_PROTOCOL_PAUSE_PARAMETERS, PNDIS_PROTOCOL_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_PAUSE_PARAMETERS, ndis/PNDIS_PROTOCOL_PAUSE_PARAMETERS, *PNDIS_PROTOCOL_PAUSE_PARAMETERS, PNDIS_PROTOCOL_PAUSE_PARAMETERS, ndis/NDIS_PROTOCOL_PAUSE_PARAMETERS, netvista.ndis_protocol_pause_parameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_PROTOCOL_PAUSE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PROTOCOL_PAUSE_PARAMETERS, *PNDIS_PROTOCOL_PAUSE_PARAMETERS
 ---
 
 # _NDIS_PROTOCOL_PAUSE_PARAMETERS structure

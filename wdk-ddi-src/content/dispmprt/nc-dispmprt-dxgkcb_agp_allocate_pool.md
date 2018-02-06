@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_AGP_ALLOCATE_POOL
-title : DXGKCB_AGP_ALLOCATE_POOL
-author : windows-driver-content
-description : The AgpAllocatePool function reserves, commits, and maps AGP memory.
-old-location : display\agpallocatepool.htm
-old-project : display
-ms.assetid : abac76e0-eb8a-450a-a797-3733a8f71990
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpallocatepool, AgpAllocatePool callback function [Display Devices], AgpAllocatePool, DXGKCB_AGP_ALLOCATE_POOL, DXGKCB_AGP_ALLOCATE_POOL, dispmprt/AgpAllocatePool, DpFunctions_2bd4981c-c9f1-4b37-a921-9eb33d1b622b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_AGP_ALLOCATE_POOL
+title: DXGKCB_AGP_ALLOCATE_POOL
+author: windows-driver-content
+description: The AgpAllocatePool function reserves, commits, and maps AGP memory.
+old-location: display\agpallocatepool.htm
+old-project: display
+ms.assetid: abac76e0-eb8a-450a-a797-3733a8f71990
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpallocatepool, AgpAllocatePool callback function [Display Devices], AgpAllocatePool, DXGKCB_AGP_ALLOCATE_POOL, DXGKCB_AGP_ALLOCATE_POOL, dispmprt/AgpAllocatePool, DpFunctions_2bd4981c-c9f1-4b37-a921-9eb33d1b622b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	AgpAllocatePool
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

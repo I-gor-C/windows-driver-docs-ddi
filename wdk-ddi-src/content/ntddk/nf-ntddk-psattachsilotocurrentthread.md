@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsAttachSiloToCurrentThread
-title : PsAttachSiloToCurrentThread function
-author : windows-driver-content
-description : This routine places a thread temporarily into the specified Silo.
-old-location : kernel\psattachsilotocurrentthread.htm
-old-project : kernel
-ms.assetid : 1C66E50F-3BD7-4038-9FDF-2F2B712D9B5E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/PsAttachSiloToCurrentThread, kernel.psattachsilotocurrentthread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], PsAttachSiloToCurrentThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsAttachSiloToCurrentThread
+title: PsAttachSiloToCurrentThread function
+author: windows-driver-content
+description: This routine places a thread temporarily into the specified Silo.
+old-location: kernel\psattachsilotocurrentthread.htm
+old-project: kernel
+ms.assetid: 1C66E50F-3BD7-4038-9FDF-2F2B712D9B5E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/PsAttachSiloToCurrentThread, kernel.psattachsilotocurrentthread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], PsAttachSiloToCurrentThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PsAttachSiloToCurrentThread
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

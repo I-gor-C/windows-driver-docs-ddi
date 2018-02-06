@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.SetImplicitProcessDataOffset
-title : IDebugSystemObjects4::SetImplicitProcessDataOffset method
-author : windows-driver-content
-description : The SetImplicitProcessDataOffset method sets the implicit process for the current target.
-old-location : debugger\setimplicitprocessdataoffset.htm
-old-project : debugger
-ms.assetid : 2a09341d-a580-4817-9103-29d8c36b81e3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects4, IDebugSystemObjects3 interface [Windows Debugging], SetImplicitProcessDataOffset method, dbgeng/IDebugSystemObjects2::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], debugger.setimplicitprocessdataoffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4::SetImplicitProcessDataOffset, IDebugSystemObjects2::SetImplicitProcessDataOffset, IDebugSystemObjects3::SetImplicitProcessDataOffset, dbgeng/IDebugSystemObjects4::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset, IDebugSystemObjects_10effa04-b87c-4555-9860-c2d5057a2529.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.SetImplicitProcessDataOffset
+title: IDebugSystemObjects4::SetImplicitProcessDataOffset method
+author: windows-driver-content
+description: The SetImplicitProcessDataOffset method sets the implicit process for the current target.
+old-location: debugger\setimplicitprocessdataoffset.htm
+old-project: debugger
+ms.assetid: 2a09341d-a580-4817-9103-29d8c36b81e3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects4, IDebugSystemObjects3 interface [Windows Debugging], SetImplicitProcessDataOffset method, dbgeng/IDebugSystemObjects2::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], debugger.setimplicitprocessdataoffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4::SetImplicitProcessDataOffset, IDebugSystemObjects2::SetImplicitProcessDataOffset, IDebugSystemObjects3::SetImplicitProcessDataOffset, dbgeng/IDebugSystemObjects4::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset, IDebugSystemObjects_10effa04-b87c-4555-9860-c2d5057a2529.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects2.SetImplicitProcessDataOffset
+-	IDebugSystemObjects3.SetImplicitProcessDataOffset
+-	IDebugSystemObjects4.SetImplicitProcessDataOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

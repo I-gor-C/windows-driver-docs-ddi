@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICB_LOGUMDMARKER
-title : D3DDDICB_LOGUMDMARKER
-author : windows-driver-content
-description : Specifies info about the location of an Event Tracing for Windows (ETW) marker event that the user-mode display driver has defined.
-old-location : display\d3dddicb_logumdmarker.htm
-old-project : display
-ms.assetid : D953C714-6C11-4F8A-A7F9-416A00C518B4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_LOGUMDMARKER, D3DDDICB_LOGUMDMARKER structure [Display Devices], display.d3dddicb_logumdmarker, D3DDDICB_LOGUMDMARKER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_LOGUMDMARKER
+UID: NS:d3dumddi.D3DDDICB_LOGUMDMARKER
+title: D3DDDICB_LOGUMDMARKER
+author: windows-driver-content
+description: Specifies info about the location of an Event Tracing for Windows (ETW) marker event that the user-mode display driver has defined.
+old-location: display\d3dddicb_logumdmarker.htm
+old-project: display
+ms.assetid: D953C714-6C11-4F8A-A7F9-416A00C518B4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_LOGUMDMARKER, D3DDDICB_LOGUMDMARKER structure [Display Devices], display.d3dddicb_logumdmarker, D3DDDICB_LOGUMDMARKER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICB_LOGUMDMARKER
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_LOGUMDMARKER
 ---
 
 # D3DDDICB_LOGUMDMARKER structure

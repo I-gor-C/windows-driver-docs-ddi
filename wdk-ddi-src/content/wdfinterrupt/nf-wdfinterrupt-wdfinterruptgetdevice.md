@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptGetDevice
-title : WdfInterruptGetDevice function
-author : windows-driver-content
-description : The WdfInterruptGetDevice method returns a handle to the framework device object that is associated with a specified framework interrupt object.
-old-location : wdf\wdfinterruptgetdevice.htm
-old-project : wdf
-ms.assetid : c1e7a9ce-5794-4ed0-bb30-e3e68b0251db
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfinterruptgetdevice, DFInterruptObjectRef_9c646459-e17b-434f-b313-d22f3a211c4e.xml, WdfInterruptGetDevice method, WdfInterruptGetDevice, wdfinterrupt/WdfInterruptGetDevice, kmdf.wdfinterruptgetdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptGetDevice
+title: WdfInterruptGetDevice function
+author: windows-driver-content
+description: The WdfInterruptGetDevice method returns a handle to the framework device object that is associated with a specified framework interrupt object.
+old-location: wdf\wdfinterruptgetdevice.htm
+old-project: wdf
+ms.assetid: c1e7a9ce-5794-4ed0-bb30-e3e68b0251db
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfinterruptgetdevice, DFInterruptObjectRef_9c646459-e17b-434f-b313-d22f3a211c4e.xml, WdfInterruptGetDevice method, WdfInterruptGetDevice, wdfinterrupt/WdfInterruptGetDevice, kmdf.wdfinterruptgetdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptGetDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeQueryGroupAffinity
-title : KeQueryGroupAffinity function
-author : windows-driver-content
-description : The KeQueryGroupAffinity routine returns an affinity mask that identifies the active logical processors in a specified group in a multiprocessor system.
-old-location : kernel\kequerygroupaffinity.htm
-old-project : kernel
-ms.assetid : 235ec93e-5b3c-4a19-876f-f668271a56a5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture], wdm/KeQueryGroupAffinity, k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, kernel.kequerygroupaffinity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeQueryGroupAffinity
+title: KeQueryGroupAffinity function
+author: windows-driver-content
+description: The KeQueryGroupAffinity routine returns an affinity mask that identifies the active logical processors in a specified group in a multiprocessor system.
+old-location: kernel\kequerygroupaffinity.htm
+old-project: kernel
+ms.assetid: 235ec93e-5b3c-4a19-876f-f668271a56a5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture], wdm/KeQueryGroupAffinity, k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, kernel.kequerygroupaffinity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryGroupAffinity
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

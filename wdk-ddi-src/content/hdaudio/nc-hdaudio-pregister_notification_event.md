@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PREGISTER_NOTIFICATION_EVENT
-title : PREGISTER_NOTIFICATION_EVENT
-author : windows-driver-content
-description : The RegisterNotificationEvent routine registers a kernel event so that it can receive DMA progress notifications.The function pointer type for a RegisterNotificationEvent routine is defined as follows.
-old-location : audio\registernotificationevent.htm
-old-project : audio
-ms.assetid : 44702d79-80ac-411f-ae47-bf60b9cb541d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.registernotificationevent, RegisterNotificationEvent callback function [Audio Devices], RegisterNotificationEvent, PREGISTER_NOTIFICATION_EVENT, PREGISTER_NOTIFICATION_EVENT, hdaudio/RegisterNotificationEvent, aud-prop2_fa7a1f01-c553-40df-971b-932f8da48353.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PREGISTER_NOTIFICATION_EVENT
+title: PREGISTER_NOTIFICATION_EVENT
+author: windows-driver-content
+description: The RegisterNotificationEvent routine registers a kernel event so that it can receive DMA progress notifications.The function pointer type for a RegisterNotificationEvent routine is defined as follows.
+old-location: audio\registernotificationevent.htm
+old-project: audio
+ms.assetid: 44702d79-80ac-411f-ae47-bf60b9cb541d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.registernotificationevent, RegisterNotificationEvent callback function [Audio Devices], RegisterNotificationEvent, PREGISTER_NOTIFICATION_EVENT, PREGISTER_NOTIFICATION_EVENT, hdaudio/RegisterNotificationEvent, aud-prop2_fa7a1f01-c553-40df-971b-932f8da48353.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Hdaudio.h
+apiname:
+-	RegisterNotificationEvent
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

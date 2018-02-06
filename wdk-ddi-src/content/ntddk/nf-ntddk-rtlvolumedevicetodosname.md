@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlVolumeDeviceToDosName
-title : RtlVolumeDeviceToDosName function
-author : windows-driver-content
-description : The RtlVolumeDeviceToDosName routine is obsolete for Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead.RtlVolumeDeviceToDosName returns the MS-DOS path for a specified device object that represents a file system volume.
-old-location : kernel\rtlvolumedevicetodosname.htm
-old-project : kernel
-ms.assetid : e25db70f-04bf-4fb1-8ff5-2beb4c825797
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/RtlVolumeDeviceToDosName, RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture], RtlVolumeDeviceToDosName, k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, kernel.rtlvolumedevicetodosname
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Obsolete for Microsoft Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlVolumeDeviceToDosName
+title: RtlVolumeDeviceToDosName function
+author: windows-driver-content
+description: The RtlVolumeDeviceToDosName routine is obsolete for Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead.RtlVolumeDeviceToDosName returns the MS-DOS path for a specified device object that represents a file system volume.
+old-location: kernel\rtlvolumedevicetodosname.htm
+old-project: kernel
+ms.assetid: e25db70f-04bf-4fb1-8ff5-2beb4c825797
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/RtlVolumeDeviceToDosName, RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture], RtlVolumeDeviceToDosName, k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, kernel.rtlvolumedevicetodosname
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Obsolete for Microsoft Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlVolumeDeviceToDosName
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

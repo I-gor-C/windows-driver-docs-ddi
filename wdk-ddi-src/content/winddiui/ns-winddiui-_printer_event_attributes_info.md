@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._PRINTER_EVENT_ATTRIBUTES_INFO
-title : "_PRINTER_EVENT_ATTRIBUTES_INFO"
-author : windows-driver-content
-description : The PRINTER_EVENT_ATTRIBUTES_INFO structure contains the former attributes and the new attributes for a printer.
-old-location : print\printer_event_attributes_info.htm
-old-project : print
-ms.assetid : 3c39a515-f4f4-4309-8d4e-461b8835295b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PRINTER_EVENT_ATTRIBUTES_INFO structure [Print Devices], PRINTER_EVENT_ATTRIBUTES_INFO, winddiui/PRINTER_EVENT_ATTRIBUTES_INFO, PPRINTER_EVENT_ATTRIBUTES_INFO, _PRINTER_EVENT_ATTRIBUTES_INFO, print_interface-graphics_a4fa57f7-bd03-4c38-9c0f-026da9d3535e.xml, *PPRINTER_EVENT_ATTRIBUTES_INFO, print.printer_event_attributes_info, winddiui/PPRINTER_EVENT_ATTRIBUTES_INFO, PPRINTER_EVENT_ATTRIBUTES_INFO structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
-req.product : Windows 10 or later.
+UID: NS:winddiui._PRINTER_EVENT_ATTRIBUTES_INFO
+title: "_PRINTER_EVENT_ATTRIBUTES_INFO"
+author: windows-driver-content
+description: The PRINTER_EVENT_ATTRIBUTES_INFO structure contains the former attributes and the new attributes for a printer.
+old-location: print\printer_event_attributes_info.htm
+old-project: print
+ms.assetid: 3c39a515-f4f4-4309-8d4e-461b8835295b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PRINTER_EVENT_ATTRIBUTES_INFO structure [Print Devices], PRINTER_EVENT_ATTRIBUTES_INFO, winddiui/PRINTER_EVENT_ATTRIBUTES_INFO, PPRINTER_EVENT_ATTRIBUTES_INFO, _PRINTER_EVENT_ATTRIBUTES_INFO, print_interface-graphics_a4fa57f7-bd03-4c38-9c0f-026da9d3535e.xml, *PPRINTER_EVENT_ATTRIBUTES_INFO, print.printer_event_attributes_info, winddiui/PPRINTER_EVENT_ATTRIBUTES_INFO, PPRINTER_EVENT_ATTRIBUTES_INFO structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	PRINTER_EVENT_ATTRIBUTES_INFO
+product: Windows
+targetos: Windows
+req.typenames: PRINTER_EVENT_ATTRIBUTES_INFO, *PPRINTER_EVENT_ATTRIBUTES_INFO
+req.product: Windows 10 or later.
 ---
 
 # _PRINTER_EVENT_ATTRIBUTES_INFO structure

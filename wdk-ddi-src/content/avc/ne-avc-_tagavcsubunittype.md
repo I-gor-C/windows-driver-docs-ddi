@@ -1,41 +1,46 @@
 ---
-UID : NE:avc._tagAvcSubunitType
-title : "_tagAvcSubunitType"
-author : windows-driver-content
-description : The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit.
-old-location : stream\avcsubunittype.htm
-old-project : stream
-ms.assetid : c99db45c-2d99-4bf7-98f8-4d9501ac81c0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avc/AVC_SUBUNITTYPE_VENDOR_UNIQUE, avc/AVC_SUBUNITTYPE_CA, AVC_SUBUNITTYPE_TUNER, AVC_SUBUNITTYPE_VIDEO_CAMERA, avc/AVC_SUBUNITTYPE_EXTENDED_FULL, AvcSubunitType, _tagAvcSubunitType, avc/AVC_SUBUNITTYPE_AUDIO, AVC_SUBUNITTYPE_EXTENDED_FULL, AVC_SUBUNITTYPE_PRINTER, AVC_SUBUNITTYPE_CA, AVC_SUBUNITTYPE_BULLETINBOARD, stream.avcsubunittype, avc/AvcSubunitType, AVC_SUBUNITTYPE_AUDIO, avc/AVC_SUBUNITTYPE_EXTENDED, avc/AVC_SUBUNITTYPE_PANEL, AVC_SUBUNITTYPE_PANEL, avc/AVC_SUBUNITTYPE_PRINTER, avc/AVC_SUBUNITTYPE_CAMERASTORAGE, avc/AVC_SUBUNITTYPE_DISC_PLAYER, AVC_SUBUNITTYPE_VIDEO_MONITOR, AVC_SUBUNITTYPE_EXTENDED, AVC_SUBUNITTYPE_UNIT, avc/AVC_SUBUNITTYPE_BULLETINBOARD, AVC_SUBUNITTYPE_VENDOR_UNIQUE, avcref_e6283b0f-7f87-4c6b-aedf-c8e8762e7098.xml, AVC_SUBUNITTYPE_CAMERASTORAGE, AVC_SUBUNITTYPE_DISC_PLAYER, AvcSubunitType enumeration [Streaming Media Devices], avc/AVC_SUBUNITTYPE_TAPE_PLAYER, avc/AVC_SUBUNITTYPE_VIDEO_CAMERA, avc/AVC_SUBUNITTYPE_TUNER, avc/AVC_SUBUNITTYPE_UNIT, AVC_SUBUNITTYPE_TAPE_PLAYER, avc/AVC_SUBUNITTYPE_VIDEO_MONITOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AvcSubunitType
+UID: NE:avc._tagAvcSubunitType
+title: "_tagAvcSubunitType"
+author: windows-driver-content
+description: The AvcSubunitType enumeration type is used to indicate the type of AV/C subunit.
+old-location: stream\avcsubunittype.htm
+old-project: stream
+ms.assetid: c99db45c-2d99-4bf7-98f8-4d9501ac81c0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avc/AVC_SUBUNITTYPE_VENDOR_UNIQUE, avc/AVC_SUBUNITTYPE_CA, AVC_SUBUNITTYPE_TUNER, AVC_SUBUNITTYPE_VIDEO_CAMERA, avc/AVC_SUBUNITTYPE_EXTENDED_FULL, AvcSubunitType, _tagAvcSubunitType, avc/AVC_SUBUNITTYPE_AUDIO, AVC_SUBUNITTYPE_EXTENDED_FULL, AVC_SUBUNITTYPE_PRINTER, AVC_SUBUNITTYPE_CA, AVC_SUBUNITTYPE_BULLETINBOARD, stream.avcsubunittype, avc/AvcSubunitType, AVC_SUBUNITTYPE_AUDIO, avc/AVC_SUBUNITTYPE_EXTENDED, avc/AVC_SUBUNITTYPE_PANEL, AVC_SUBUNITTYPE_PANEL, avc/AVC_SUBUNITTYPE_PRINTER, avc/AVC_SUBUNITTYPE_CAMERASTORAGE, avc/AVC_SUBUNITTYPE_DISC_PLAYER, AVC_SUBUNITTYPE_VIDEO_MONITOR, AVC_SUBUNITTYPE_EXTENDED, AVC_SUBUNITTYPE_UNIT, avc/AVC_SUBUNITTYPE_BULLETINBOARD, AVC_SUBUNITTYPE_VENDOR_UNIQUE, avcref_e6283b0f-7f87-4c6b-aedf-c8e8762e7098.xml, AVC_SUBUNITTYPE_CAMERASTORAGE, AVC_SUBUNITTYPE_DISC_PLAYER, AvcSubunitType enumeration [Streaming Media Devices], avc/AVC_SUBUNITTYPE_TAPE_PLAYER, avc/AVC_SUBUNITTYPE_VIDEO_CAMERA, avc/AVC_SUBUNITTYPE_TUNER, avc/AVC_SUBUNITTYPE_UNIT, AVC_SUBUNITTYPE_TAPE_PLAYER, avc/AVC_SUBUNITTYPE_VIDEO_MONITOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AvcSubunitType
+product: Windows
+targetos: Windows
+req.typenames: AvcSubunitType
 ---
 
 # _tagAvcSubunitType Enumeration
@@ -65,81 +70,81 @@ typedef enum _tagAvcSubunitType {
 ## Constants
 
 <table>
-
-<tr>
-<td>AVC_SUBUNITTYPE_AUDIO</td>
-<td>Specifies an audio subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_BULLETINBOARD</td>
-<td>Specifies a bulletin board subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_CA</td>
-<td>Specifies a conditional access (CA) subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_CAMERASTORAGE</td>
-<td>Specifies a camera storage subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_DISC_PLAYER</td>
-<td>Specifies a disc player subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_EXTENDED</td>
-<td>Specifies an extended subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_EXTENDED_FULL</td>
-<td>This is used only in extension bytes</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_PANEL</td>
-<td>Specifies a panel subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_PRINTER</td>
-<td>Specifies a printer subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_TAPE_PLAYER</td>
-<td>Specifies a tape player subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_TUNER</td>
-<td>Specifies a tuner subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_UNIT</td>
-<td>Specifies a generic subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_VENDOR_UNIQUE</td>
-<td>Specifies a vendor unique subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_VIDEO_CAMERA</td>
-<td>Specifies a video camera subunit type.</td>
-</tr>
-
-<tr>
-<td>AVC_SUBUNITTYPE_VIDEO_MONITOR</td>
-<td>Specifies a video monitor subunit type.</td>
-</tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_AUDIO</td>
+                    <td>Specifies an audio subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_BULLETINBOARD</td>
+                    <td>Specifies a bulletin board subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_CA</td>
+                    <td>Specifies a conditional access (CA) subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_CAMERASTORAGE</td>
+                    <td>Specifies a camera storage subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_DISC_PLAYER</td>
+                    <td>Specifies a disc player subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_EXTENDED</td>
+                    <td>Specifies an extended subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_EXTENDED_FULL</td>
+                    <td>This is used only in extension bytes</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_PANEL</td>
+                    <td>Specifies a panel subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_PRINTER</td>
+                    <td>Specifies a printer subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_TAPE_PLAYER</td>
+                    <td>Specifies a tape player subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_TUNER</td>
+                    <td>Specifies a tuner subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_UNIT</td>
+                    <td>Specifies a generic subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_VENDOR_UNIQUE</td>
+                    <td>Specifies a vendor unique subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_VIDEO_CAMERA</td>
+                    <td>Specifies a video camera subunit type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_SUBUNITTYPE_VIDEO_MONITOR</td>
+                    <td>Specifies a video monitor subunit type.</td>
+                </tr>
 </table>
 
 

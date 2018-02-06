@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols4.GetScopeEx
-title : IDebugSymbols4::GetScopeEx method
-author : windows-driver-content
-description : Gets the scope as an extended frame structure.
-old-location : debugger\idebugsymbols4_getscopeex.htm
-old-project : debugger
-ms.assetid : B91EF786-51F7-406E-BCC2-C917E6881886
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols4::GetScopeEx, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetScopeEx method, GetScopeEx, IDebugSymbols4, debugger.idebugsymbols4_getscopeex, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetScopeEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols4.GetScopeEx
+title: IDebugSymbols4::GetScopeEx method
+author: windows-driver-content
+description: Gets the scope as an extended frame structure.
+old-location: debugger\idebugsymbols4_getscopeex.htm
+old-project: debugger
+ms.assetid: B91EF786-51F7-406E-BCC2-C917E6881886
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols4::GetScopeEx, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetScopeEx method, GetScopeEx, IDebugSymbols4, debugger.idebugsymbols4_getscopeex, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetScopeEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols4.GetScopeEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

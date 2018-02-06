@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateNetBufferPool
-title : NdisAllocateNetBufferPool function
-author : windows-driver-content
-description : Call the NdisAllocateNetBufferPool function to allocate a pool of NET_BUFFER structures.
-old-location : netvista\ndisallocatenetbufferpool.htm
-old-project : netvista
-ms.assetid : bc27758a-a793-48a1-a6ab-bd193aa9c61a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatenetbufferpool, NdisAllocateNetBufferPool, ndis/NdisAllocateNetBufferPool, ndis_netbuf_functions_ref_f12d38a1-161d-4209-95ea-6e66fcbef255.xml, NdisAllocateNetBufferPool function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateNetBufferPool
+title: NdisAllocateNetBufferPool function
+author: windows-driver-content
+description: Call the NdisAllocateNetBufferPool function to allocate a pool of NET_BUFFER structures.
+old-location: netvista\ndisallocatenetbufferpool.htm
+old-project: netvista
+ms.assetid: bc27758a-a793-48a1-a6ab-bd193aa9c61a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisallocatenetbufferpool, NdisAllocateNetBufferPool, ndis/NdisAllocateNetBufferPool, ndis_netbuf_functions_ref_f12d38a1-161d-4209-95ea-6e66fcbef255.xml, NdisAllocateNetBufferPool function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateNetBufferPool
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

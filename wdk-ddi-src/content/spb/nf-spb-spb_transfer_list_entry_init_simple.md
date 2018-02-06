@@ -1,42 +1,47 @@
 ---
-UID : NF:spb.SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE
-title : SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function
-author : windows-driver-content
-description : The SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function returns an SPB_TRANSFER_LIST_ENTRY structure that is initialized to describe a simple data buffer.SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function returns an SPB_TRANSFER_LIST_ENTRY structure that is initialized to describe a simple data buffer.
-old-location : spb\spb_transfer_list_entry_init_simple.htm
-old-project : SPB
-ms.assetid : 38F50F76-5D14-47CE-A211-3FC4F1399A74
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB.spb_transfer_list_entry_init_simple, spb/SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE, SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE, SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spb.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
-req.product : Windows 10 or later.
+UID: NF:spb.SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE
+title: SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function
+author: windows-driver-content
+description: The SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function returns an SPB_TRANSFER_LIST_ENTRY structure that is initialized to describe a simple data buffer.SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function returns an SPB_TRANSFER_LIST_ENTRY structure that is initialized to describe a simple data buffer.
+old-location: spb\spb_transfer_list_entry_init_simple.htm
+old-project: SPB
+ms.assetid: 38F50F76-5D14-47CE-A211-3FC4F1399A74
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB.spb_transfer_list_entry_init_simple, spb/SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE, SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE, SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE function [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spb.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spb.h
+apiname:
+-	SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
+req.product: Windows 10 or later.
 ---
 
 

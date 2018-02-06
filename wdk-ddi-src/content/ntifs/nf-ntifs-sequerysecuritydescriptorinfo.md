@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeQuerySecurityDescriptorInfo
-title : SeQuerySecurityDescriptorInfo function
-author : windows-driver-content
-description : The SeQuerySecurityDescriptorInfo routine retrieves a copy of an object's security descriptor.
-old-location : ifsk\sequerysecuritydescriptorinfo.htm
-old-project : ifsk
-ms.assetid : 4803e816-c59a-42b2-adc1-7a197ae16d42
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SeQuerySecurityDescriptorInfo, SeQuerySecurityDescriptorInfo, SeQuerySecurityDescriptorInfo routine [Installable File System Drivers], ifsk.sequerysecuritydescriptorinfo, seref_c8ecba25-bc67-4314-a262-3dbae1407205.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeQuerySecurityDescriptorInfo
+title: SeQuerySecurityDescriptorInfo function
+author: windows-driver-content
+description: The SeQuerySecurityDescriptorInfo routine retrieves a copy of an object's security descriptor.
+old-location: ifsk\sequerysecuritydescriptorinfo.htm
+old-project: ifsk
+ms.assetid: 4803e816-c59a-42b2-adc1-7a197ae16d42
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SeQuerySecurityDescriptorInfo, SeQuerySecurityDescriptorInfo, SeQuerySecurityDescriptorInfo routine [Installable File System Drivers], ifsk.sequerysecuritydescriptorinfo, seref_c8ecba25-bc67-4314-a262-3dbae1407205.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeQuerySecurityDescriptorInfo
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

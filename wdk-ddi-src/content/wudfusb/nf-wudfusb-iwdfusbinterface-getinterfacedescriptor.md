@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbInterface.GetInterfaceDescriptor
-title : IWDFUsbInterface::GetInterfaceDescriptor method
-author : windows-driver-content
-description : The GetInterfaceDescriptor method retrieves a descriptor for a USB interface.
-old-location : wdf\iwdfusbinterface_getinterfacedescriptor.htm
-old-project : wdf
-ms.assetid : ae4cffc8-65db-452c-9b85-19752c32c421
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetInterfaceDescriptor, IWDFUsbInterface::GetInterfaceDescriptor, IWDFUsbInterface, UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, wdf.iwdfusbinterface_getinterfacedescriptor, GetInterfaceDescriptor method, IWDFUsbInterface interface, GetInterfaceDescriptor method, GetInterfaceDescriptor method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor, umdf.iwdfusbinterface_getinterfacedescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbInterface.GetInterfaceDescriptor
+title: IWDFUsbInterface::GetInterfaceDescriptor method
+author: windows-driver-content
+description: The GetInterfaceDescriptor method retrieves a descriptor for a USB interface.
+old-location: wdf\iwdfusbinterface_getinterfacedescriptor.htm
+old-project: wdf
+ms.assetid: ae4cffc8-65db-452c-9b85-19752c32c421
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetInterfaceDescriptor, IWDFUsbInterface::GetInterfaceDescriptor, IWDFUsbInterface, UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, wdf.iwdfusbinterface_getinterfacedescriptor, GetInterfaceDescriptor method, IWDFUsbInterface interface, GetInterfaceDescriptor method, GetInterfaceDescriptor method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor, umdf.iwdfusbinterface_getinterfacedescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbInterface.GetInterfaceDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

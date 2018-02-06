@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_ONEX_START
-title : DOT11EXT_ONEX_START
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extstartonex.htm
-old-project : netvista
-ms.assetid : d4117da4-349a-4143-b2a8-d4edf6c02e7b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extstartonex, Dot11ExtStartOneX callback function [Network Drivers Starting with Windows Vista], Dot11ExtStartOneX, DOT11EXT_ONEX_START, DOT11EXT_ONEX_START, wlanihv/Dot11ExtStartOneX, Native_802.11_IHV_Ext_71199b82-64e0-4b96-89f0-e964dd959077.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_ONEX_START
+title: DOT11EXT_ONEX_START
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extstartonex.htm
+old-project: netvista
+ms.assetid: d4117da4-349a-4143-b2a8-d4edf6c02e7b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extstartonex, Dot11ExtStartOneX callback function [Network Drivers Starting with Windows Vista], Dot11ExtStartOneX, DOT11EXT_ONEX_START, DOT11EXT_ONEX_START, wlanihv/Dot11ExtStartOneX, Native_802.11_IHV_Ext_71199b82-64e0-4b96-89f0-e964dd959077.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtStartOneX
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

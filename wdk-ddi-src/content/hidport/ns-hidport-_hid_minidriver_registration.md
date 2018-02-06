@@ -1,41 +1,46 @@
 ---
-UID : NS:hidport._HID_MINIDRIVER_REGISTRATION
-title : "_HID_MINIDRIVER_REGISTRATION"
-author : windows-driver-content
-description : The HID_MINIDRIVER_REGISTRATION structure contains registration information that a HID minidriver passes to the HID Client Drivers when the minidriver registers with the class driver.
-old-location : hid\hid_minidriver_registration.htm
-old-project : hid
-ms.assetid : 75c0f546-1a58-45e8-a3eb-3075f07c426b
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PHID_MINIDRIVER_REGISTRATION structure pointer [Human Input Devices], hidport/HID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION, _HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION, hid.hid_minidriver_registration, PHID_MINIDRIVER_REGISTRATION, hidstrct_d0f637a8-58c0-4d83-9a2f-2e14761b6183.xml, HID_MINIDRIVER_REGISTRATION structure [Human Input Devices], hidport/PHID_MINIDRIVER_REGISTRATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NS:hidport._HID_MINIDRIVER_REGISTRATION
+title: "_HID_MINIDRIVER_REGISTRATION"
+author: windows-driver-content
+description: The HID_MINIDRIVER_REGISTRATION structure contains registration information that a HID minidriver passes to the HID Client Drivers when the minidriver registers with the class driver.
+old-location: hid\hid_minidriver_registration.htm
+old-project: hid
+ms.assetid: 75c0f546-1a58-45e8-a3eb-3075f07c426b
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PHID_MINIDRIVER_REGISTRATION structure pointer [Human Input Devices], hidport/HID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION, _HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION, hid.hid_minidriver_registration, PHID_MINIDRIVER_REGISTRATION, hidstrct_d0f637a8-58c0-4d83-9a2f-2e14761b6183.xml, HID_MINIDRIVER_REGISTRATION structure [Human Input Devices], hidport/PHID_MINIDRIVER_REGISTRATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	HID_MINIDRIVER_REGISTRATION
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 # _HID_MINIDRIVER_REGISTRATION structure

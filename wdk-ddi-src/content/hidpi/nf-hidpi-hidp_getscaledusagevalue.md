@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetScaledUsageValue
-title : HidP_GetScaledUsageValue function
-author : windows-driver-content
-description : The HidP_GetScaledUsageValue routine returns the signed and scaled result of a HID control value extracted from a HID report.
-old-location : hid\hidp_getscaledusagevalue.htm
-old-project : hid
-ms.assetid : 0af1a3f2-b933-4232-865c-cccca53fd32e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_GetScaledUsageValue, hid.hidp_getscaledusagevalue, HidP_GetScaledUsageValue routine [Human Input Devices], hidfunc_7fa22086-ab66-4c6b-a7de-65adce226b10.xml, hidpi/HidP_GetScaledUsageValue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetScaledUsageValue
+title: HidP_GetScaledUsageValue function
+author: windows-driver-content
+description: The HidP_GetScaledUsageValue routine returns the signed and scaled result of a HID control value extracted from a HID report.
+old-location: hid\hidp_getscaledusagevalue.htm
+old-project: hid
+ms.assetid: 0af1a3f2-b933-4232-865c-cccca53fd32e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_GetScaledUsageValue, hid.hidp_getscaledusagevalue, HidP_GetScaledUsageValue routine [Human Input Devices], hidfunc_7fa22086-ab66-4c6b-a7de-65adce226b10.xml, hidpi/HidP_GetScaledUsageValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetScaledUsageValue
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCmActivateVc
-title : NdisCmActivateVc function
-author : windows-driver-content
-description : NdisCmActivateVc passes CM-supplied call parameters, including media parameters, for a particular VC down to the underlying miniport driver.
-old-location : netvista\ndiscmactivatevc.htm
-old-project : netvista
-ms.assetid : 9091426c-3174-4367-b7c7-5684877efe9c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_call_manager_ref_425eba15-2cda-4e36-b88d-59978501ecbf.xml, NdisCmActivateVc function [Network Drivers Starting with Windows Vista], ndis/NdisCmActivateVc, netvista.ndiscmactivatevc, NdisCmActivateVc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_CallManager_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCmActivateVc
+title: NdisCmActivateVc function
+author: windows-driver-content
+description: NdisCmActivateVc passes CM-supplied call parameters, including media parameters, for a particular VC down to the underlying miniport driver.
+old-location: netvista\ndiscmactivatevc.htm
+old-project: netvista
+ms.assetid: 9091426c-3174-4367-b7c7-5684877efe9c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_call_manager_ref_425eba15-2cda-4e36-b88d-59978501ecbf.xml, NdisCmActivateVc function [Network Drivers Starting with Windows Vista], ndis/NdisCmActivateVc, netvista.ndiscmactivatevc, NdisCmActivateVc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_CallManager_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCmActivateVc
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

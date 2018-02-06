@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_COMPLETION_INFORMATION
-title : "_FILE_COMPLETION_INFORMATION"
-author : windows-driver-content
-description : The FILE_COMPLETION_INFORMATION structure contains the port handle and key for an I/O completion port created for a file handle.
-old-location : ifsk\file_completion_information.htm
-old-project : ifsk
-ms.assetid : 8C3C1A62-A838-436E-B8CC-ACE70FEAE8EA
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PFILE_COMPLETION_INFORMATION, PFILE_COMPLETION_INFORMATION structure pointer [Installable File System Drivers], ntifs/PFILE_COMPLETION_INFORMATION, ifsk.file_completion_information, PFILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION structure [Installable File System Drivers], _FILE_COMPLETION_INFORMATION, ntifs/FILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_COMPLETION_INFORMATION, *PFILE_COMPLETION_INFORMATION
+UID: NS:ntifs._FILE_COMPLETION_INFORMATION
+title: "_FILE_COMPLETION_INFORMATION"
+author: windows-driver-content
+description: The FILE_COMPLETION_INFORMATION structure contains the port handle and key for an I/O completion port created for a file handle.
+old-location: ifsk\file_completion_information.htm
+old-project: ifsk
+ms.assetid: 8C3C1A62-A838-436E-B8CC-ACE70FEAE8EA
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PFILE_COMPLETION_INFORMATION, PFILE_COMPLETION_INFORMATION structure pointer [Installable File System Drivers], ntifs/PFILE_COMPLETION_INFORMATION, ifsk.file_completion_information, PFILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION structure [Installable File System Drivers], _FILE_COMPLETION_INFORMATION, ntifs/FILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_COMPLETION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_COMPLETION_INFORMATION, *PFILE_COMPLETION_INFORMATION
 ---
 
 # _FILE_COMPLETION_INFORMATION structure

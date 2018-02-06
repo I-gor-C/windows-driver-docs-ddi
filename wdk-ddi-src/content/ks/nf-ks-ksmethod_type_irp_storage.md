@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KSMETHOD_TYPE_IRP_STORAGE
-title : KSMETHOD_TYPE_IRP_STORAGE macro
-author : windows-driver-content
-description : This macro accesses the type of method as described in the KSMETHOD_ITEM. If the method will be processed asynchronously using KsDispatchSpecificMethod, this storage must be maintained intact.
-old-location : stream\ksmethod_type_irp_storage.htm
-old-project : stream
-ms.assetid : f5327cbf-e71b-4c1c-94c0-0e27afb4d7cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_de99d882-5298-4972-9d16-fa4478d6229c.xml, ks/KSMETHOD_TYPE_IRP_STORAGE, KSMETHOD_TYPE_IRP_STORAGE macro [Streaming Media Devices], stream.ksmethod_type_irp_storage, KSMETHOD_TYPE_IRP_STORAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KSMETHOD_TYPE_IRP_STORAGE
+title: KSMETHOD_TYPE_IRP_STORAGE macro
+author: windows-driver-content
+description: This macro accesses the type of method as described in the KSMETHOD_ITEM. If the method will be processed asynchronously using KsDispatchSpecificMethod, this storage must be maintained intact.
+old-location: stream\ksmethod_type_irp_storage.htm
+old-project: stream
+ms.assetid: f5327cbf-e71b-4c1c-94c0-0e27afb4d7cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_de99d882-5298-4972-9d16-fa4478d6229c.xml, ks/KSMETHOD_TYPE_IRP_STORAGE, KSMETHOD_TYPE_IRP_STORAGE macro [Streaming Media Devices], stream.ksmethod_type_irp_storage, KSMETHOD_TYPE_IRP_STORAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSMETHOD_TYPE_IRP_STORAGE
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

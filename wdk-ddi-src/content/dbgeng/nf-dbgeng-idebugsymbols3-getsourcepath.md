@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSourcePath
-title : IDebugSymbols3::GetSourcePath method
-author : windows-driver-content
-description : The GetSourcePath method returns the source path.
-old-location : debugger\getsourcepath.htm
-old-project : debugger
-ms.assetid : 93a1efce-5f93-4a09-aa61-ffbd3d619176
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols2::GetSourcePath, GetSourcePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetSourcePath method, dbgeng/IDebugSymbols3::GetSourcePath, IDebugSymbols_cbdf5e16-41ba-4134-b41b-81164dfc07a0.xml, IDebugSymbols3, GetSourcePath method [Windows Debugging], IDebugSymbols interface, GetSourcePath, IDebugSymbols3 interface [Windows Debugging], GetSourcePath method, IDebugSymbols interface [Windows Debugging], GetSourcePath method, debugger.getsourcepath, IDebugSymbols::GetSourcePath, dbgeng/IDebugSymbols::GetSourcePath, IDebugSymbols2::GetSourcePath, GetSourcePath method [Windows Debugging], GetSourcePath method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSourcePath
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSourcePath
+title: IDebugSymbols3::GetSourcePath method
+author: windows-driver-content
+description: The GetSourcePath method returns the source path.
+old-location: debugger\getsourcepath.htm
+old-project: debugger
+ms.assetid: 93a1efce-5f93-4a09-aa61-ffbd3d619176
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols2::GetSourcePath, GetSourcePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetSourcePath method, dbgeng/IDebugSymbols3::GetSourcePath, IDebugSymbols_cbdf5e16-41ba-4134-b41b-81164dfc07a0.xml, IDebugSymbols3, GetSourcePath method [Windows Debugging], IDebugSymbols interface, GetSourcePath, IDebugSymbols3 interface [Windows Debugging], GetSourcePath method, IDebugSymbols interface [Windows Debugging], GetSourcePath method, debugger.getsourcepath, IDebugSymbols::GetSourcePath, dbgeng/IDebugSymbols::GetSourcePath, IDebugSymbols2::GetSourcePath, GetSourcePath method [Windows Debugging], GetSourcePath method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSourcePath
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetSourcePath
+-	IDebugSymbols2.GetSourcePath
+-	IDebugSymbols3.GetSourcePath
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSEVENT_SET
-title : KSEVENT_SET
-author : windows-driver-content
-description : The KSEVENT_SET structure describes the events that comprise a kernel streaming event set.
-old-location : stream\ksevent_set.htm
-old-project : stream
-ms.assetid : 0cfe3674-2261-44f5-a916-fb786bb25fe5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSEVENT_SET, ks-struct_f3a678ec-93b4-4b60-959a-ca750b4ac4c2.xml, PKSEVENT_SET, KSEVENT_SET, stream.ksevent_set, KSEVENT_SET structure [Streaming Media Devices], *PKSEVENT_SET, ks/KSEVENT_SET, PKSEVENT_SET structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSEVENT_SET, *PKSEVENT_SET
+UID: NS:ks.KSEVENT_SET
+title: KSEVENT_SET
+author: windows-driver-content
+description: The KSEVENT_SET structure describes the events that comprise a kernel streaming event set.
+old-location: stream\ksevent_set.htm
+old-project: stream
+ms.assetid: 0cfe3674-2261-44f5-a916-fb786bb25fe5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSEVENT_SET, ks-struct_f3a678ec-93b4-4b60-959a-ca750b4ac4c2.xml, PKSEVENT_SET, KSEVENT_SET, stream.ksevent_set, KSEVENT_SET structure [Streaming Media Devices], *PKSEVENT_SET, ks/KSEVENT_SET, PKSEVENT_SET structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSEVENT_SET
+product: Windows
+targetos: Windows
+req.typenames: KSEVENT_SET, *PKSEVENT_SET
 ---
 
 # KSEVENT_SET structure

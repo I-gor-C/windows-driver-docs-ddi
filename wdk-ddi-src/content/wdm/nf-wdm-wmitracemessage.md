@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.WmiTraceMessage
-title : WmiTraceMessage function
-author : windows-driver-content
-description : The WmiTraceMessage routine adds a message to the output log of a WPP software tracing session.
-old-location : kernel\wmitracemessage.htm
-old-project : kernel
-ms.assetid : 045c45fe-c971-4d41-a43d-415c2a4d464b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WmiTraceMessage routine [Kernel-Mode Driver Architecture], WmiTraceMessage, k902_114717ae-d439-4ddd-b939-913795610dee.xml, wdm/WmiTraceMessage, kernel.wmitracemessage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.WmiTraceMessage
+title: WmiTraceMessage function
+author: windows-driver-content
+description: The WmiTraceMessage routine adds a message to the output log of a WPP software tracing session.
+old-location: kernel\wmitracemessage.htm
+old-project: kernel
+ms.assetid: 045c45fe-c971-4d41-a43d-415c2a4d464b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WmiTraceMessage routine [Kernel-Mode Driver Architecture], WmiTraceMessage, k902_114717ae-d439-4ddd-b939-913795610dee.xml, wdm/WmiTraceMessage, kernel.wmitracemessage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	WmiTraceMessage
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

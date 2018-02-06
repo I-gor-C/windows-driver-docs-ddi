@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxendpoint._ENDPOINTS_CONFIGURE
-title : "_ENDPOINTS_CONFIGURE"
-author : windows-driver-content
-description : Describes endpoints to enable or disable endpoints. This structure is passed by UCX in the EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function.
-old-location : buses\_endpoints_configure.htm
-old-project : usbref
-ms.assetid : C24B7D85-AEA9-43B3-9BEE-262CAA255834
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ENDPOINTS_CONFIGURE structure [Buses], P_ENDPOINTS_CONFIGURE, ENDPOINTS_CONFIGURE, P_ENDPOINTS_CONFIGURE structure pointer [Buses], _ENDPOINTS_CONFIGURE, ucxendpoint/P_ENDPOINTS_CONFIGURE, buses._endpoints_configure, ucxendpoint/_ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE
-req.product : Windows 10 or later.
+UID: NS:ucxendpoint._ENDPOINTS_CONFIGURE
+title: "_ENDPOINTS_CONFIGURE"
+author: windows-driver-content
+description: Describes endpoints to enable or disable endpoints. This structure is passed by UCX in the EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function.
+old-location: buses\_endpoints_configure.htm
+old-project: usbref
+ms.assetid: C24B7D85-AEA9-43B3-9BEE-262CAA255834
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ENDPOINTS_CONFIGURE structure [Buses], P_ENDPOINTS_CONFIGURE, ENDPOINTS_CONFIGURE, P_ENDPOINTS_CONFIGURE structure pointer [Buses], _ENDPOINTS_CONFIGURE, ucxendpoint/P_ENDPOINTS_CONFIGURE, buses._endpoints_configure, ucxendpoint/_ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	ENDPOINTS_CONFIGURE
+product: Windows
+targetos: Windows
+req.typenames: ENDPOINTS_CONFIGURE, *PENDPOINTS_CONFIGURE
+req.product: Windows 10 or later.
 ---
 
 # _ENDPOINTS_CONFIGURE structure

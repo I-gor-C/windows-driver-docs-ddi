@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoAcquireVpbSpinLock
-title : IoAcquireVpbSpinLock function
-author : windows-driver-content
-description : The IoAcquireVpbSpinLock routine acquires the Volume Parameter Block (VPB) spin lock.
-old-location : ifsk\ioacquirevpbspinlock.htm
-old-project : ifsk
-ms.assetid : 2a385a7a-e4c9-41ff-aaf2-7a4607fa2b2b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/IoAcquireVpbSpinLock, IoAcquireVpbSpinLock, ifsk.ioacquirevpbspinlock, IoAcquireVpbSpinLock routine [Installable File System Drivers], ioref_b5833043-4673-46ff-850c-bd71da7defef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoAcquireVpbSpinLock
+title: IoAcquireVpbSpinLock function
+author: windows-driver-content
+description: The IoAcquireVpbSpinLock routine acquires the Volume Parameter Block (VPB) spin lock.
+old-location: ifsk\ioacquirevpbspinlock.htm
+old-project: ifsk
+ms.assetid: 2a385a7a-e4c9-41ff-aaf2-7a4607fa2b2b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/IoAcquireVpbSpinLock, IoAcquireVpbSpinLock, ifsk.ioacquirevpbspinlock, IoAcquireVpbSpinLock routine [Installable File System Drivers], ioref_b5833043-4673-46ff-850c-bd71da7defef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoAcquireVpbSpinLock
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

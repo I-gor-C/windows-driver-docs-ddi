@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateRWLock
-title : NdisAllocateRWLock function
-author : windows-driver-content
-description : The NdisAllocateRWLock function allocates a read/write lock variable of type NDIS_RW_LOCK_EX.
-old-location : netvista\ndisallocaterwlock.htm
-old-project : netvista
-ms.assetid : 460c81bf-ae06-40f7-a019-b006e5c9f94b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocaterwlock, ndis_processor_group_ref_7df54f29-88d4-4596-9649-8af7b84f6d7e.xml, ndis/NdisAllocateRWLock, NdisAllocateRWLock, NdisAllocateRWLock function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateRWLock
+title: NdisAllocateRWLock function
+author: windows-driver-content
+description: The NdisAllocateRWLock function allocates a read/write lock variable of type NDIS_RW_LOCK_EX.
+old-location: netvista\ndisallocaterwlock.htm
+old-project: netvista
+ms.assetid: 460c81bf-ae06-40f7-a019-b006e5c9f94b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisallocaterwlock, ndis_processor_group_ref_7df54f29-88d4-4596-9649-8af7b84f6d7e.xml, ndis/NdisAllocateRWLock, NdisAllocateRWLock, NdisAllocateRWLock function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateRWLock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

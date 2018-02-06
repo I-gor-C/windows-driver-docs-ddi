@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_FREE_WDI_FRAME_METADATA
-title : NDIS_WDI_FREE_WDI_FRAME_METADATA
-author : windows-driver-content
-description : The NdisWdiFreeWiFiFrameMetaData callback function frees a frame metadata buffer.
-old-location : netvista\ndiswdifreewdiframemetadata.htm
-old-project : netvista
-ms.assetid : 828C181F-918A-4674-B6CE-FCB9750948E0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswdifreewdiframemetadata, NdisWdiFreeWiFiFrameMetaData callback function [Network Drivers Starting with Windows Vista], NdisWdiFreeWiFiFrameMetaData, NDIS_WDI_FREE_WDI_FRAME_METADATA, NDIS_WDI_FREE_WDI_FRAME_METADATA, dot11wdi/NdisWdiFreeWiFiFrameMetaData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_FREE_WDI_FRAME_METADATA
+title: NDIS_WDI_FREE_WDI_FRAME_METADATA
+author: windows-driver-content
+description: The NdisWdiFreeWiFiFrameMetaData callback function frees a frame metadata buffer.
+old-location: netvista\ndiswdifreewdiframemetadata.htm
+old-project: netvista
+ms.assetid: 828C181F-918A-4674-B6CE-FCB9750948E0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswdifreewdiframemetadata, NdisWdiFreeWiFiFrameMetaData callback function [Network Drivers Starting with Windows Vista], NdisWdiFreeWiFiFrameMetaData, NDIS_WDI_FREE_WDI_FRAME_METADATA, NDIS_WDI_FREE_WDI_FRAME_METADATA, dot11wdi/NdisWdiFreeWiFiFrameMetaData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiFreeWiFiFrameMetaData
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

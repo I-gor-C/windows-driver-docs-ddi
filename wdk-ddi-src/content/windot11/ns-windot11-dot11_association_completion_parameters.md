@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_ASSOCIATION_COMPLETION_PARAMETERS
-title : DOT11_ASSOCIATION_COMPLETION_PARAMETERS
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_association_completion_parameters.htm
-old-project : netvista
-ms.assetid : 770962e3-0339-46f8-a789-7c9bbf9e058f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_ASSOCIATION_COMPLETION_PARAMETERS, netvista.dot11_association_completion_parameters, Native_802.11_data_types_54cece34-410b-4c18-8657-47db6cab5518.xml, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, windot11/PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_ASSOCIATION_COMPLETION_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_ASSOCIATION_COMPLETION_PARAMETERS
+title: DOT11_ASSOCIATION_COMPLETION_PARAMETERS
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_association_completion_parameters.htm
+old-project: netvista
+ms.assetid: 770962e3-0339-46f8-a789-7c9bbf9e058f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_ASSOCIATION_COMPLETION_PARAMETERS, netvista.dot11_association_completion_parameters, Native_802.11_data_types_54cece34-410b-4c18-8657-47db6cab5518.xml, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, windot11/PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_ASSOCIATION_COMPLETION_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_ASSOCIATION_COMPLETION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure

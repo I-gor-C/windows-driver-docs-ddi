@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.KSEVENT_CAMERAEVENT
-title : KSEVENT_CAMERAEVENT
-author : windows-driver-content
-description : KSEVENT_CAMERAEVENT enumerates a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver.
-old-location : stream\ksevent_cameraevent.htm
-old-project : stream
-ms.assetid : FD9483A5-7112-4141-8566-80B8D010366C
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSEVENT_PHOTO_SAMPLE_SCANNED, ksmedia/KSEVENT_CAMERAEVENT, stream.ksevent_cameraevent, KSEVENT_CAMERAEVENT enumeration [Streaming Media Devices], KSEVENT_CAMERAEVENT, ksmedia/KSEVENT_PHOTO_SAMPLE_SCANNED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSEVENT_CAMERAEVENT
+UID: NE:ksmedia.KSEVENT_CAMERAEVENT
+title: KSEVENT_CAMERAEVENT
+author: windows-driver-content
+description: KSEVENT_CAMERAEVENT enumerates a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver.
+old-location: stream\ksevent_cameraevent.htm
+old-project: stream
+ms.assetid: FD9483A5-7112-4141-8566-80B8D010366C
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSEVENT_PHOTO_SAMPLE_SCANNED, ksmedia/KSEVENT_CAMERAEVENT, stream.ksevent_cameraevent, KSEVENT_CAMERAEVENT enumeration [Streaming Media Devices], KSEVENT_CAMERAEVENT, ksmedia/KSEVENT_PHOTO_SAMPLE_SCANNED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSEVENT_CAMERAEVENT
+product: Windows
+targetos: Windows
+req.typenames: KSEVENT_CAMERAEVENT
 ---
 
 # KSEVENT_CAMERAEVENT Enumeration
@@ -51,16 +56,16 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KSEVENT_PHOTO_SAMPLE_SCANNED</td>
-<td>Event notifications to synchronize the shutter sound playback for a photo capture.</td>
-</tr>
+            
+                <tr>
+                    <td>KSEVENT_PHOTO_SAMPLE_SCANNED</td>
+                    <td>Event notifications to synchronize the shutter sound playback for a photo capture.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The camera event DDI is defined by <b>KSEVENTSETID_CameraEvent</b>, a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver. This is a filter level event meaning that the driver must implement and define the event in the filter’s automation table and use <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a> (or <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a> with filter object) to generate event notifications.
+        The camera event DDI is defined by <b>KSEVENTSETID_CameraEvent</b>, a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver. This is a filter level event meaning that the driver must implement and define the event in the filter’s automation table and use <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a> (or <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a> with filter object) to generate event notifications.
 
 KSEVENTSETID_CameraEvent and its related data structures are defined in Ksmedia.h as follows.
 <div class="code"><span codelanguage=""><table>

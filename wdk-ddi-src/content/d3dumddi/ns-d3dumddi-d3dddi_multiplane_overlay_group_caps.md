@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
-title : D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
-author : windows-driver-content
-description : Used by the user-mode display driver to specify a group of overlay plane capabilities.
-old-location : display\d3dddi_multiplane_overlay_group_caps.htm
-old-project : display
-ms.assetid : 6909579F-5387-4A35-B65B-EF77CC50DCC4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.d3dddi_multiplane_overlay_group_caps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+UID: NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+title: D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+author: windows-driver-content
+description: Used by the user-mode display driver to specify a group of overlay plane capabilities.
+old-location: display\d3dddi_multiplane_overlay_group_caps.htm
+old-project: display
+ms.assetid: 6909579F-5387-4A35-B65B-EF77CC50DCC4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.d3dddi_multiplane_overlay_group_caps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS
 ---
 
 # D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure

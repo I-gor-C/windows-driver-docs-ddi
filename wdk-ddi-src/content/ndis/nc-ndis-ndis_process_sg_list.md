@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_PROCESS_SG_LIST
-title : NDIS_PROCESS_SG_LIST
-author : windows-driver-content
-description : The NetProcessSGList function (NDIS_PROCESS_SG_LIST_HANDLER entry point) processes a scatter/gather list.
-old-location : netvista\netprocesssglist.htm
-old-project : netvista
-ms.assetid : 5b99e0ec-7c82-46d6-b32a-246b368cf4f1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.netprocesssglist, NetProcessSGList callback function [Network Drivers Starting with Windows Vista], NetProcessSGList, NDIS_PROCESS_SG_LIST, NDIS_PROCESS_SG_LIST, ndis/NetProcessSGList, ndis_shared_memory_ref_0c3e2851-6897-4997-a974-2a108e1e5ee9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_PROCESS_SG_LIST
+title: NDIS_PROCESS_SG_LIST
+author: windows-driver-content
+description: The NetProcessSGList function (NDIS_PROCESS_SG_LIST_HANDLER entry point) processes a scatter/gather list.
+old-location: netvista\netprocesssglist.htm
+old-project: netvista
+ms.assetid: 5b99e0ec-7c82-46d6-b32a-246b368cf4f1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.netprocesssglist, NetProcessSGList callback function [Network Drivers Starting with Windows Vista], NetProcessSGList, NDIS_PROCESS_SG_LIST, NDIS_PROCESS_SG_LIST, ndis/NetProcessSGList, ndis_shared_memory_ref_0c3e2851-6897-4997-a974-2a108e1e5ee9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	NetProcessSGList
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

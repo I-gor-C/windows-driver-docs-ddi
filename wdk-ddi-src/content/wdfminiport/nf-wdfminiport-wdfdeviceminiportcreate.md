@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfminiport.WdfDeviceMiniportCreate
-title : WdfDeviceMiniportCreate function
-author : windows-driver-content
-description : The WdfDeviceMiniportCreate method creates a framework device object that a miniport driver can use.
-old-location : wdf\wdfdeviceminiportcreate.htm
-old-project : wdf
-ms.assetid : d74dedbd-f418-4ea3-ae76-c0da9c5f2fb9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfminiport/WdfDeviceMiniportCreate, kmdf.wdfdeviceminiportcreate, DFDeviceObjectGeneralRef_18104589-c58d-4e8b-af91-c6620b3772e9.xml, WdfDeviceMiniportCreate, wdf.wdfdeviceminiportcreate, PFN_WDFDEVICEMINIPORTCREATE, WdfDeviceMiniportCreate method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfminiport.h
-req.include-header : Wdfminiport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NF:wdfminiport.WdfDeviceMiniportCreate
+title: WdfDeviceMiniportCreate function
+author: windows-driver-content
+description: The WdfDeviceMiniportCreate method creates a framework device object that a miniport driver can use.
+old-location: wdf\wdfdeviceminiportcreate.htm
+old-project: wdf
+ms.assetid: d74dedbd-f418-4ea3-ae76-c0da9c5f2fb9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfminiport/WdfDeviceMiniportCreate, kmdf.wdfdeviceminiportcreate, DFDeviceObjectGeneralRef_18104589-c58d-4e8b-af91-c6620b3772e9.xml, WdfDeviceMiniportCreate, wdf.wdfdeviceminiportcreate, PFN_WDFDEVICEMINIPORTCREATE, WdfDeviceMiniportCreate method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfminiport.h
+req.include-header: Wdfminiport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceMiniportCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_CANUNLOAD
-title : PDEBUG_EXTENSION_CANUNLOAD
-author : windows-driver-content
-description : The DebugExtensionCanUnload callback function checks whether a debug extension can unload after the uninitialization call.
-old-location : debugger\debugextensioncanunload.htm
-old-project : debugger
-ms.assetid : 6CF651D7-7F5F-4622-8FDF-8BFF4E4A701D
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugextensioncanunload, DebugExtensionCanUnload, DebugExtensionCanUnload callback function [Windows Debugging], DebugExtensionCanUnload, PDEBUG_EXTENSION_CANUNLOAD, PDEBUG_EXTENSION_CANUNLOAD, dbgeng/DebugExtensionCanUnload
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_CANUNLOAD
+title: PDEBUG_EXTENSION_CANUNLOAD
+author: windows-driver-content
+description: The DebugExtensionCanUnload callback function checks whether a debug extension can unload after the uninitialization call.
+old-location: debugger\debugextensioncanunload.htm
+old-project: debugger
+ms.assetid: 6CF651D7-7F5F-4622-8FDF-8BFF4E4A701D
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugextensioncanunload, DebugExtensionCanUnload, DebugExtensionCanUnload callback function [Windows Debugging], DebugExtensionCanUnload, PDEBUG_EXTENSION_CANUNLOAD, PDEBUG_EXTENSION_CANUNLOAD, dbgeng/DebugExtensionCanUnload
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dbgeng.h
+apiname:
+-	DebugExtensionCanUnload
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

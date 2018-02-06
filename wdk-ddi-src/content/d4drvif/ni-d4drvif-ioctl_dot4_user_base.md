@@ -1,41 +1,46 @@
 ---
-UID : NI:d4drvif.IOCTL_DOT4_USER_BASE
-title : IOCTL_DOT4_USER_BASE
-author : windows-driver-content
-description : This topic describes IOCTL_DOT4_USER_BASE.
-old-location : print\ioctl_ioctl_dot4_user_base.htm
-old-project : print
-ms.assetid : 600AF104-C80B-4ECE-A662-68CF38235078
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ioctl_ioctl_dot4_user_base, IOCTL_DOT4_USER_BASE control code [Print Devices], IOCTL_DOT4_USER_BASE, d4drvif/IOCTL_DOT4_USER_BASE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : d4drvif.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETENCRYPTIONBLTKEY
+UID: NI:d4drvif.IOCTL_DOT4_USER_BASE
+title: IOCTL_DOT4_USER_BASE
+author: windows-driver-content
+description: This topic describes IOCTL_DOT4_USER_BASE.
+old-location: print\ioctl_ioctl_dot4_user_base.htm
+old-project: print
+ms.assetid: 600AF104-C80B-4ECE-A662-68CF38235078
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ioctl_ioctl_dot4_user_base, IOCTL_DOT4_USER_BASE control code [Print Devices], IOCTL_DOT4_USER_BASE, d4drvif/IOCTL_DOT4_USER_BASE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: d4drvif.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D4drvif.h
+apiname:
+-	IOCTL_DOT4_USER_BASE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETENCRYPTIONBLTKEY
 ---
 
 # IOCTL_DOT4_USER_BASE IOCTL

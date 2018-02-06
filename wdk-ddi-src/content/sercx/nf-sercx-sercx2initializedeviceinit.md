@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2InitializeDeviceInit
-title : SerCx2InitializeDeviceInit function
-author : windows-driver-content
-description : The SerCx2InitializeDeviceInit method enables version 2 of the serial framework extension (SerCx2) to register extension-specific properties with the driver framework during the creation of the framework device object for the serial controller.
-old-location : serports\sercx2initializedeviceinit.htm
-old-project : serports
-ms.assetid : E63B234D-07B7-467D-A13B-157781513F22
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.sercx2initializedeviceinit, SerCx2InitializeDeviceInit, SerCx2InitializeDeviceInit method [Serial Ports], 2/SerCx2InitializeDeviceInit
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2InitializeDeviceInit
+title: SerCx2InitializeDeviceInit function
+author: windows-driver-content
+description: The SerCx2InitializeDeviceInit method enables version 2 of the serial framework extension (SerCx2) to register extension-specific properties with the driver framework during the creation of the framework device object for the serial controller.
+old-location: serports\sercx2initializedeviceinit.htm
+old-project: serports
+ms.assetid: E63B234D-07B7-467D-A13B-157781513F22
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.sercx2initializedeviceinit, SerCx2InitializeDeviceInit, SerCx2InitializeDeviceInit method [Serial Ports], 2/SerCx2InitializeDeviceInit
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2InitializeDeviceInit
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

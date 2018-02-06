@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSetContextSchedulingPriority
-title : D3DKMTSetContextSchedulingPriority function
-author : windows-driver-content
-description : The D3DKMTSetContextSchedulingPriority function sets the scheduling priority for a device context.
-old-location : display\d3dkmtsetcontextschedulingpriority.htm
-old-project : display
-ms.assetid : 781d5a78-a3e2-4cac-868d-c4ae8b39b2fc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTSetContextSchedulingPriority, OpenGL_Functions_f9314ed6-8aad-4c55-b42a-f1223dada5bc.xml, D3DKMTSetContextSchedulingPriority function [Display Devices], display.d3dkmtsetcontextschedulingpriority, D3DKMTSetContextSchedulingPriority
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSetContextSchedulingPriority
+title: D3DKMTSetContextSchedulingPriority function
+author: windows-driver-content
+description: The D3DKMTSetContextSchedulingPriority function sets the scheduling priority for a device context.
+old-location: display\d3dkmtsetcontextschedulingpriority.htm
+old-project: display
+ms.assetid: 781d5a78-a3e2-4cac-868d-c4ae8b39b2fc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTSetContextSchedulingPriority, OpenGL_Functions_f9314ed6-8aad-4c55-b42a-f1223dada5bc.xml, D3DKMTSetContextSchedulingPriority function [Display Devices], display.d3dkmtsetcontextschedulingpriority, D3DKMTSetContextSchedulingPriority
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTSetContextSchedulingPriority
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

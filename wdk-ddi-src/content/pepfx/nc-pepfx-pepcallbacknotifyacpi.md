@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.PEPCALLBACKNOTIFYACPI
-title : PEPCALLBACKNOTIFYACPI
-author : windows-driver-content
-description : An AcceptAcpiNotification event callback routine handles ACPI notifications from the Windows power management framework (PoFx).
-old-location : kernel\acceptacpinotification.htm
-old-project : kernel
-ms.assetid : 7BC27FD1-CCD8-4ABC-B973-C2242D6C243B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.acceptacpinotification, AcceptAcpiNotification routine [Kernel-Mode Driver Architecture], AcceptAcpiNotification, PEPCALLBACKNOTIFYACPI, PEPCALLBACKNOTIFYACPI, pepfx/AcceptAcpiNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.PEPCALLBACKNOTIFYACPI
+title: PEPCALLBACKNOTIFYACPI
+author: windows-driver-content
+description: An AcceptAcpiNotification event callback routine handles ACPI notifications from the Windows power management framework (PoFx).
+old-location: kernel\acceptacpinotification.htm
+old-project: kernel
+ms.assetid: 7BC27FD1-CCD8-4ABC-B973-C2242D6C243B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.acceptacpinotification, AcceptAcpiNotification routine [Kernel-Mode Driver Architecture], AcceptAcpiNotification, PEPCALLBACKNOTIFYACPI, PEPCALLBACKNOTIFYACPI, pepfx/AcceptAcpiNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	AcceptAcpiNotification
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

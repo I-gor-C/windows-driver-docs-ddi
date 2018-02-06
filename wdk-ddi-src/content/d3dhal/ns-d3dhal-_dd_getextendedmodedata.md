@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_GETEXTENDEDMODEDATA
-title : "_DD_GETEXTENDEDMODEDATA"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. DD_GETEXTENDEDMODEDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETEXTENDEDMODE.
-old-location : display\dd_getextendedmodedata.htm
-old-project : display
-ms.assetid : 50b2a1fd-4214-4ad8-b087-f48c14dbe587
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/DD_GETEXTENDEDMODEDATA, d3dstrct_a39e1e5a-9b07-48eb-a7c6-40bcac8a21d6.xml, _DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA structure [Display Devices], display.dd_getextendedmodedata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_GETEXTENDEDMODEDATA
+UID: NS:d3dhal._DD_GETEXTENDEDMODEDATA
+title: "_DD_GETEXTENDEDMODEDATA"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. DD_GETEXTENDEDMODEDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETEXTENDEDMODE.
+old-location: display\dd_getextendedmodedata.htm
+old-project: display
+ms.assetid: 50b2a1fd-4214-4ad8-b087-f48c14dbe587
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/DD_GETEXTENDEDMODEDATA, d3dstrct_a39e1e5a-9b07-48eb-a7c6-40bcac8a21d6.xml, _DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA structure [Display Devices], display.dd_getextendedmodedata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_GETEXTENDEDMODEDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_GETEXTENDEDMODEDATA
 ---
 
 # _DD_GETEXTENDEDMODEDATA structure

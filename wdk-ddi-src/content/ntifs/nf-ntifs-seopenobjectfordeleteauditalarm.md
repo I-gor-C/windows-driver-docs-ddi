@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeOpenObjectForDeleteAuditAlarm
-title : SeOpenObjectForDeleteAuditAlarm function
-author : windows-driver-content
-description : The SeOpenObjectForDeleteAuditAlarm routine generates audit and alarm messages when an attempt is made to open an object for deletion.
-old-location : ifsk\seopenobjectfordeleteauditalarm.htm
-old-project : ifsk
-ms.assetid : c7a5bcce-a19e-4938-9d7b-ce73b3ecdc86
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SeOpenObjectForDeleteAuditAlarm, SeOpenObjectForDeleteAuditAlarm routine [Installable File System Drivers], ntifs/SeOpenObjectForDeleteAuditAlarm, ifsk.seopenobjectfordeleteauditalarm, seref_59133039-b4e5-47d9-941a-df78051d6408.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeOpenObjectForDeleteAuditAlarm
+title: SeOpenObjectForDeleteAuditAlarm function
+author: windows-driver-content
+description: The SeOpenObjectForDeleteAuditAlarm routine generates audit and alarm messages when an attempt is made to open an object for deletion.
+old-location: ifsk\seopenobjectfordeleteauditalarm.htm
+old-project: ifsk
+ms.assetid: c7a5bcce-a19e-4938-9d7b-ce73b3ecdc86
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SeOpenObjectForDeleteAuditAlarm, SeOpenObjectForDeleteAuditAlarm routine [Installable File System Drivers], ntifs/SeOpenObjectForDeleteAuditAlarm, ifsk.seopenobjectfordeleteauditalarm, seref_59133039-b4e5-47d9-941a-df78051d6408.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeOpenObjectForDeleteAuditAlarm
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

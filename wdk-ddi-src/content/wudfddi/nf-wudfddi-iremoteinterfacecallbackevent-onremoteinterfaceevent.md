@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRemoteInterfaceCallbackEvent.OnRemoteInterfaceEvent
-title : IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent method
-author : windows-driver-content
-description : A UMDF-based driver's OnRemoteInterfaceEvent event callback function handles device events that are associated with a device interface.
-old-location : wdf\iremoteinterfacecallbackevent_onremoteinterfaceevent.htm
-old-project : wdf
-ms.assetid : 6cee6662-2eef-4caf-ab70-780748521ba9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IRemoteInterfaceCallbackEvent, IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent, OnRemoteInterfaceEvent, wudfddi/IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent, UMDFIoTargetObjectRef_4adfa540-b8f4-416f-b8c2-f0aec6e87619.xml, umdf.iremoteinterfacecallbackevent_onremoteinterfaceevent, wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent, IRemoteInterfaceCallbackEvent interface, OnRemoteInterfaceEvent method, OnRemoteInterfaceEvent method, IRemoteInterfaceCallbackEvent interface, OnRemoteInterfaceEvent method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRemoteInterfaceCallbackEvent.OnRemoteInterfaceEvent
+title: IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent method
+author: windows-driver-content
+description: A UMDF-based driver's OnRemoteInterfaceEvent event callback function handles device events that are associated with a device interface.
+old-location: wdf\iremoteinterfacecallbackevent_onremoteinterfaceevent.htm
+old-project: wdf
+ms.assetid: 6cee6662-2eef-4caf-ab70-780748521ba9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IRemoteInterfaceCallbackEvent, IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent, OnRemoteInterfaceEvent, wudfddi/IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent, UMDFIoTargetObjectRef_4adfa540-b8f4-416f-b8c2-f0aec6e87619.xml, umdf.iremoteinterfacecallbackevent_onremoteinterfaceevent, wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent, IRemoteInterfaceCallbackEvent interface, OnRemoteInterfaceEvent method, OnRemoteInterfaceEvent method, IRemoteInterfaceCallbackEvent interface, OnRemoteInterfaceEvent method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRemoteInterfaceCallbackEvent.OnRemoteInterfaceEvent
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

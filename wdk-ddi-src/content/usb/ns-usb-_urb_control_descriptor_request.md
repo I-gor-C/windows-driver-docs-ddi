@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_CONTROL_DESCRIPTOR_REQUEST
-title : "_URB_CONTROL_DESCRIPTOR_REQUEST"
-author : windows-driver-content
-description : The _URB_CONTROL_DESCRIPTOR_REQUEST structure is used by USB client drivers to get or set descriptors on a USB device.
-old-location : buses\_urb_control_descriptor_request.htm
-old-project : usbref
-ms.assetid : 770659f4-701f-47dc-b20f-e51c85cdee4b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/_URB_CONTROL_DESCRIPTOR_REQUEST, _URB_CONTROL_DESCRIPTOR_REQUEST structure [Buses], usbstrct_f28020e9-3fa4-466c-8cc5-5630d3b06d9c.xml, _URB_CONTROL_DESCRIPTOR_REQUEST, buses._urb_control_descriptor_request
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_CONTROL_DESCRIPTOR_REQUEST
+title: "_URB_CONTROL_DESCRIPTOR_REQUEST"
+author: windows-driver-content
+description: The _URB_CONTROL_DESCRIPTOR_REQUEST structure is used by USB client drivers to get or set descriptors on a USB device.
+old-location: buses\_urb_control_descriptor_request.htm
+old-project: usbref
+ms.assetid: 770659f4-701f-47dc-b20f-e51c85cdee4b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/_URB_CONTROL_DESCRIPTOR_REQUEST, _URB_CONTROL_DESCRIPTOR_REQUEST structure [Buses], usbstrct_f28020e9-3fa4-466c-8cc5-5630d3b06d9c.xml, _URB_CONTROL_DESCRIPTOR_REQUEST, buses._urb_control_descriptor_request
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_CONTROL_DESCRIPTOR_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_CONTROL_DESCRIPTOR_REQUEST structure

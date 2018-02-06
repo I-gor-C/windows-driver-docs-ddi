@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_CREATECONTEXTFLAGS
-title : "_DXGK_CREATECONTEXTFLAGS"
-author : windows-driver-content
-description : The DXGK_CREATECONTEXTFLAGS structure identifies how to create contexts.
-old-location : display\dxgk_createcontextflags.htm
-old-project : display
-ms.assetid : f7cadf78-c908-4034-889d-b5c7d0ffdaad
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_CREATECONTEXTFLAGS structure [Display Devices], display.dxgk_createcontextflags, DmStructs_19418464-77f9-407f-8b04-c6a35561069b.xml, d3dkmddi/DXGK_CREATECONTEXTFLAGS, _DXGK_CREATECONTEXTFLAGS, DXGK_CREATECONTEXTFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_CREATECONTEXTFLAGS
+UID: NS:d3dkmddi._DXGK_CREATECONTEXTFLAGS
+title: "_DXGK_CREATECONTEXTFLAGS"
+author: windows-driver-content
+description: The DXGK_CREATECONTEXTFLAGS structure identifies how to create contexts.
+old-location: display\dxgk_createcontextflags.htm
+old-project: display
+ms.assetid: f7cadf78-c908-4034-889d-b5c7d0ffdaad
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_CREATECONTEXTFLAGS structure [Display Devices], display.dxgk_createcontextflags, DmStructs_19418464-77f9-407f-8b04-c6a35561069b.xml, d3dkmddi/DXGK_CREATECONTEXTFLAGS, _DXGK_CREATECONTEXTFLAGS, DXGK_CREATECONTEXTFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_CREATECONTEXTFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_CREATECONTEXTFLAGS
 ---
 
 # _DXGK_CREATECONTEXTFLAGS structure

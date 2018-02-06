@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfobject._WDF_OBJECT_CONTEXT_TYPE_INFO
-title : "_WDF_OBJECT_CONTEXT_TYPE_INFO"
-author : windows-driver-content
-description : The WDF_OBJECT_CONTEXT_TYPE_INFO structure describes a framework object's driver-defined context memory.
-old-location : wdf\wdf_object_context_type_info.htm
-old-project : wdf
-ms.assetid : 2b56183e-03aa-493a-84ba-03f9bc5daee2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_object_context_type_info, DFGenObjectRef_8c3ba75b-eb62-455f-a905-61b715478b5b.xml, wdfobject/WDF_OBJECT_CONTEXT_TYPE_INFO, wdfobject/PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO, _WDF_OBJECT_CONTEXT_TYPE_INFO, PWDF_OBJECT_CONTEXT_TYPE_INFO structure pointer, wdf.wdf_object_context_type_info, PWDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO structure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NS:wdfobject._WDF_OBJECT_CONTEXT_TYPE_INFO
+title: "_WDF_OBJECT_CONTEXT_TYPE_INFO"
+author: windows-driver-content
+description: The WDF_OBJECT_CONTEXT_TYPE_INFO structure describes a framework object's driver-defined context memory.
+old-location: wdf\wdf_object_context_type_info.htm
+old-project: wdf
+ms.assetid: 2b56183e-03aa-493a-84ba-03f9bc5daee2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_object_context_type_info, DFGenObjectRef_8c3ba75b-eb62-455f-a905-61b715478b5b.xml, wdfobject/WDF_OBJECT_CONTEXT_TYPE_INFO, wdfobject/PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO, _WDF_OBJECT_CONTEXT_TYPE_INFO, PWDF_OBJECT_CONTEXT_TYPE_INFO structure pointer, wdf.wdf_object_context_type_info, PWDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO structure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfobject.h
+apiname:
+-	WDF_OBJECT_CONTEXT_TYPE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_OBJECT_CONTEXT_TYPE_INFO structure

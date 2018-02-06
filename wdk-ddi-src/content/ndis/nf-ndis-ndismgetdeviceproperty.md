@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMGetDeviceProperty
-title : NdisMGetDeviceProperty function
-author : windows-driver-content
-description : The NdisMGetDeviceProperty function retrieves device objects required to set up communication with a miniport driver through a bus driver.
-old-location : netvista\ndismgetdeviceproperty.htm
-old-project : netvista
-ms.assetid : caef96b6-1b94-475d-9f78-66ae6d6ac979
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismgetdeviceproperty, ndis/NdisMGetDeviceProperty, miniport_ndis_functions_ref_849a967a-d488-4440-a9b5-9c7fbc247acd.xml, NdisMGetDeviceProperty, NdisMGetDeviceProperty function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMGetDeviceProperty (NDIS   5.1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMGetDeviceProperty
+title: NdisMGetDeviceProperty function
+author: windows-driver-content
+description: The NdisMGetDeviceProperty function retrieves device objects required to set up communication with a miniport driver through a bus driver.
+old-location: netvista\ndismgetdeviceproperty.htm
+old-project: netvista
+ms.assetid: caef96b6-1b94-475d-9f78-66ae6d6ac979
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismgetdeviceproperty, ndis/NdisMGetDeviceProperty, miniport_ndis_functions_ref_849a967a-d488-4440-a9b5-9c7fbc247acd.xml, NdisMGetDeviceProperty, NdisMGetDeviceProperty function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMGetDeviceProperty (NDIS   5.1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMGetDeviceProperty
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

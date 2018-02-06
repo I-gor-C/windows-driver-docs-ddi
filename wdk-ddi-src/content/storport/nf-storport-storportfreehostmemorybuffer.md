@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortFreeHostMemoryBuffer
-title : StorPortFreeHostMemoryBuffer function
-author : windows-driver-content
-description : The StorPortFreeHostMemoryBuffer routine frees the physically contiguous memory that was allocated to be used for a Host Memory Buffer (HMB).
-old-location : storage\storportfreehostmemorybuffer.htm
-old-project : storage
-ms.assetid : 686D141E-E6EA-4BB6-8556-0ECAC592E8F0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportfreehostmemorybuffer, StorPortFreeHostMemoryBuffer, storport/StorPortFreeHostMemoryBuffer, StorPortFreeHostMemoryBuffer routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortFreeHostMemoryBuffer
+title: StorPortFreeHostMemoryBuffer function
+author: windows-driver-content
+description: The StorPortFreeHostMemoryBuffer routine frees the physically contiguous memory that was allocated to be used for a Host Memory Buffer (HMB).
+old-location: storage\storportfreehostmemorybuffer.htm
+old-project: storage
+ms.assetid: 686D141E-E6EA-4BB6-8556-0ECAC592E8F0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportfreehostmemorybuffer, StorPortFreeHostMemoryBuffer, storport/StorPortFreeHostMemoryBuffer, StorPortFreeHostMemoryBuffer routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortFreeHostMemoryBuffer
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

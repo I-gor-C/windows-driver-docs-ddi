@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCoOidRequest
-title : NdisCoOidRequest function
-author : windows-driver-content
-description : The NdisCoOidRequest function forwards a request to targeted CoNDIS drivers to query or set OID-specified information of the target driver.
-old-location : netvista\ndiscooidrequest.htm
-old-project : netvista
-ms.assetid : 7d46f2c1-7b54-4510-968a-2e35e33cf849
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_request_ref_4f9b0ee3-9096-4f13-9851-edd1f7b4af8b.xml, NdisCoOidRequest, netvista.ndiscooidrequest, ndis/NdisCoOidRequest, NdisCoOidRequest function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Connection_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCoOidRequest
+title: NdisCoOidRequest function
+author: windows-driver-content
+description: The NdisCoOidRequest function forwards a request to targeted CoNDIS drivers to query or set OID-specified information of the target driver.
+old-location: netvista\ndiscooidrequest.htm
+old-project: netvista
+ms.assetid: 7d46f2c1-7b54-4510-968a-2e35e33cf849
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_request_ref_4f9b0ee3-9096-4f13-9851-edd1f7b4af8b.xml, NdisCoOidRequest, netvista.ndiscooidrequest, ndis/NdisCoOidRequest, NdisCoOidRequest function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Connection_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCoOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wlantypes.DOT11_AUTH_CIPHER_PAIR
-title : DOT11_AUTH_CIPHER_PAIR
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_auth_cipher_pair.htm
-old-project : netvista
-ms.assetid : 301e9c21-69e7-48d3-b170-de01684f4a12
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_AUTH_CIPHER_PAIR structure [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_CIPHER_PAIR, DOT11_AUTH_CIPHER_PAIR, PDOT11_AUTH_CIPHER_PAIR, Native_802.11_data_types_84940691-1e26-4039-927d-e1f1e0d14ea1.xml, *PDOT11_AUTH_CIPHER_PAIR, wlantypes/PDOT11_AUTH_CIPHER_PAIR, netvista.dot11_auth_cipher_pair, PDOT11_AUTH_CIPHER_PAIR structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlantypes.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_AUTH_CIPHER_PAIR, *PDOT11_AUTH_CIPHER_PAIR
-req.product : Windows 10 or later.
+UID: NS:wlantypes.DOT11_AUTH_CIPHER_PAIR
+title: DOT11_AUTH_CIPHER_PAIR
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_auth_cipher_pair.htm
+old-project: netvista
+ms.assetid: 301e9c21-69e7-48d3-b170-de01684f4a12
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_AUTH_CIPHER_PAIR structure [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_CIPHER_PAIR, DOT11_AUTH_CIPHER_PAIR, PDOT11_AUTH_CIPHER_PAIR, Native_802.11_data_types_84940691-1e26-4039-927d-e1f1e0d14ea1.xml, *PDOT11_AUTH_CIPHER_PAIR, wlantypes/PDOT11_AUTH_CIPHER_PAIR, netvista.dot11_auth_cipher_pair, PDOT11_AUTH_CIPHER_PAIR structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlantypes.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlantypes.h
+apiname:
+-	DOT11_AUTH_CIPHER_PAIR
+product: Windows
+targetos: Windows
+req.typenames: DOT11_AUTH_CIPHER_PAIR, *PDOT11_AUTH_CIPHER_PAIR
+req.product: Windows 10 or later.
 ---
 
 # DOT11_AUTH_CIPHER_PAIR structure

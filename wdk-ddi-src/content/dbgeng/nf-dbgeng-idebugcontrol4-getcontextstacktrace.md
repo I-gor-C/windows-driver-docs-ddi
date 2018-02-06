@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetContextStackTrace
-title : IDebugControl4::GetContextStackTrace method
-author : windows-driver-content
-description : The GetContextStackTrace method returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame.
-old-location : debugger\getcontextstacktrace.htm
-old-project : debugger
-ms.assetid : 8d7a461e-46bf-4556-b13c-805bb5af572e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getcontextstacktrace, GetContextStackTrace method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetContextStackTrace method, IDebugControl4::GetContextStackTrace, dbgeng/IDebugControl4::GetContextStackTrace, IDebugControl_ae12ec1a-8839-49cc-8082-c328a570188b.xml, GetContextStackTrace method [Windows Debugging], IDebugControl4 interface, IDebugControl4, GetContextStackTrace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetContextStackTrace
+title: IDebugControl4::GetContextStackTrace method
+author: windows-driver-content
+description: The GetContextStackTrace method returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame.
+old-location: debugger\getcontextstacktrace.htm
+old-project: debugger
+ms.assetid: 8d7a461e-46bf-4556-b13c-805bb5af572e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getcontextstacktrace, GetContextStackTrace method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetContextStackTrace method, IDebugControl4::GetContextStackTrace, dbgeng/IDebugControl4::GetContextStackTrace, IDebugControl_ae12ec1a-8839-49cc-8082-c328a570188b.xml, GetContextStackTrace method [Windows Debugging], IDebugControl4 interface, IDebugControl4, GetContextStackTrace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetContextStackTrace
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

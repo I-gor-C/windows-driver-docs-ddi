@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IInterruptSync.RegisterServiceRoutine
-title : IInterruptSync::RegisterServiceRoutine method
-author : windows-driver-content
-description : The RegisterServiceRoutine method registers an interrupt service routine (ISR) that is to be called when an interrupt occurs.
-old-location : audio\iinterruptsync_registerserviceroutine.htm
-old-project : audio
-ms.assetid : fb0650ee-24a6-4f64-9f16-dded0ccc79cd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IInterruptSync::RegisterServiceRoutine, IInterruptSync interface [Audio Devices], RegisterServiceRoutine method, RegisterServiceRoutine method [Audio Devices], RegisterServiceRoutine method [Audio Devices], IInterruptSync interface, audio.iinterruptsync_registerserviceroutine, portcls/IInterruptSync::RegisterServiceRoutine, IInterruptSync, RegisterServiceRoutine, audmp-routines_92919bdc-00aa-4911-ac3c-58a0807c7212.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IInterruptSync.RegisterServiceRoutine
+title: IInterruptSync::RegisterServiceRoutine method
+author: windows-driver-content
+description: The RegisterServiceRoutine method registers an interrupt service routine (ISR) that is to be called when an interrupt occurs.
+old-location: audio\iinterruptsync_registerserviceroutine.htm
+old-project: audio
+ms.assetid: fb0650ee-24a6-4f64-9f16-dded0ccc79cd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IInterruptSync::RegisterServiceRoutine, IInterruptSync interface [Audio Devices], RegisterServiceRoutine method, RegisterServiceRoutine method [Audio Devices], RegisterServiceRoutine method [Audio Devices], IInterruptSync interface, audio.iinterruptsync_registerserviceroutine, portcls/IInterruptSync::RegisterServiceRoutine, IInterruptSync, RegisterServiceRoutine, audmp-routines_92919bdc-00aa-4911-ac3c-58a0807c7212.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IInterruptSync.RegisterServiceRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

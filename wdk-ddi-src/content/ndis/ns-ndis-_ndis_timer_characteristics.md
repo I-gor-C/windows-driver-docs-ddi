@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_TIMER_CHARACTERISTICS
-title : "_NDIS_TIMER_CHARACTERISTICS"
-author : windows-driver-content
-description : The NDIS_TIMER_CHARACTERISTICS structure defines characteristics of a one-shot or periodic timer.
-old-location : netvista\ndis_timer_characteristics.htm
-old-project : netvista
-ms.assetid : 9a62e94c-f635-4ab7-b439-b98c60ba2854
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndis_timer_ref_af673f64-aa72-4767-81a0-5df465a52c81.xml, *PNDIS_TIMER_CHARACTERISTICS, ndis/PNDIS_TIMER_CHARACTERISTICS, _NDIS_TIMER_CHARACTERISTICS, netvista.ndis_timer_characteristics, PNDIS_TIMER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS"
+UID: NS:ndis._NDIS_TIMER_CHARACTERISTICS
+title: "_NDIS_TIMER_CHARACTERISTICS"
+author: windows-driver-content
+description: The NDIS_TIMER_CHARACTERISTICS structure defines characteristics of a one-shot or periodic timer.
+old-location: netvista\ndis_timer_characteristics.htm
+old-project: netvista
+ms.assetid: 9a62e94c-f635-4ab7-b439-b98c60ba2854
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndis_timer_ref_af673f64-aa72-4767-81a0-5df465a52c81.xml, *PNDIS_TIMER_CHARACTERISTICS, ndis/PNDIS_TIMER_CHARACTERISTICS, _NDIS_TIMER_CHARACTERISTICS, netvista.ndis_timer_characteristics, PNDIS_TIMER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_TIMER_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS"
 ---
 
 # _NDIS_TIMER_CHARACTERISTICS structure

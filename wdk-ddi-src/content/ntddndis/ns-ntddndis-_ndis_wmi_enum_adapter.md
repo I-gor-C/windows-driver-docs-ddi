@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_WMI_ENUM_ADAPTER
-title : "_NDIS_WMI_ENUM_ADAPTER"
-author : windows-driver-content
-description : The NDIS_WMI_ENUM_ADAPTER structure is returned when NDIS responds to the GUID_NDIS_ENUMERATE_ADAPTERS_EX GUID.
-old-location : netvista\ndis_wmi_enum_adapter.htm
-old-project : netvista
-ms.assetid : 89fa481a-b6f4-4948-8fda-e1e19c58da28
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WMI_ENUM_ADAPTER, NDIS_WMI_ENUM_ADAPTER structure [Network Drivers Starting with Windows Vista], *PNDIS_WMI_ENUM_ADAPTER, netvista.ndis_wmi_enum_adapter, NDIS_WMI_ENUM_ADAPTER, ntddndis/NDIS_WMI_ENUM_ADAPTER, PNDIS_WMI_ENUM_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_ENUM_ADAPTER, ntddndis/PNDIS_WMI_ENUM_ADAPTER, ndis_wmi_ref_a64c64b4-2108-4b99-937d-098197c5a72c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WMI_ENUM_ADAPTER, NDIS_WMI_ENUM_ADAPTER"
+UID: NS:ntddndis._NDIS_WMI_ENUM_ADAPTER
+title: "_NDIS_WMI_ENUM_ADAPTER"
+author: windows-driver-content
+description: The NDIS_WMI_ENUM_ADAPTER structure is returned when NDIS responds to the GUID_NDIS_ENUMERATE_ADAPTERS_EX GUID.
+old-location: netvista\ndis_wmi_enum_adapter.htm
+old-project: netvista
+ms.assetid: 89fa481a-b6f4-4948-8fda-e1e19c58da28
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WMI_ENUM_ADAPTER, NDIS_WMI_ENUM_ADAPTER structure [Network Drivers Starting with Windows Vista], *PNDIS_WMI_ENUM_ADAPTER, netvista.ndis_wmi_enum_adapter, NDIS_WMI_ENUM_ADAPTER, ntddndis/NDIS_WMI_ENUM_ADAPTER, PNDIS_WMI_ENUM_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_ENUM_ADAPTER, ntddndis/PNDIS_WMI_ENUM_ADAPTER, ndis_wmi_ref_a64c64b4-2108-4b99-937d-098197c5a72c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_WMI_ENUM_ADAPTER
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WMI_ENUM_ADAPTER, NDIS_WMI_ENUM_ADAPTER"
 ---
 
 # _NDIS_WMI_ENUM_ADAPTER structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._TRACK_DATA
-title : "_TRACK_DATA"
-author : windows-driver-content
-description : Track descriptor is used in conjunction with CDROM_TOC and CDROM_TOC_SESSION_DATA.
-old-location : storage\track_data.htm
-old-project : storage
-ms.assetid : f412ff4e-6c65-40f8-9747-dc5059e588f6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdrm/PTRACK_DATA, ntddcdrm/TRACK_DATA, PTRACK_DATA, TRACK_DATA, storage.track_data, TRACK_DATA structure [Storage Devices], *PTRACK_DATA, _TRACK_DATA, structs-CD-ROM_37ea4578-82b7-4b8e-be1b-28c27de349d9.xml, PTRACK_DATA structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTRACK_DATA, TRACK_DATA"
+UID: NS:ntddcdrm._TRACK_DATA
+title: "_TRACK_DATA"
+author: windows-driver-content
+description: Track descriptor is used in conjunction with CDROM_TOC and CDROM_TOC_SESSION_DATA.
+old-location: storage\track_data.htm
+old-project: storage
+ms.assetid: f412ff4e-6c65-40f8-9747-dc5059e588f6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdrm/PTRACK_DATA, ntddcdrm/TRACK_DATA, PTRACK_DATA, TRACK_DATA, storage.track_data, TRACK_DATA structure [Storage Devices], *PTRACK_DATA, _TRACK_DATA, structs-CD-ROM_37ea4578-82b7-4b8e-be1b-28c27de349d9.xml, PTRACK_DATA structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	TRACK_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PTRACK_DATA, TRACK_DATA"
 ---
 
 # _TRACK_DATA structure

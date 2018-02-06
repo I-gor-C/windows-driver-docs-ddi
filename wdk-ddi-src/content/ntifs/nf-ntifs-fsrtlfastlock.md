@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlFastLock
-title : FsRtlFastLock macro
-author : windows-driver-content
-description : The FsRtlFastLock macro is used by file systems and filter drivers to request a byte-range lock for a file stream.
-old-location : ifsk\fsrtlfastlock.htm
-old-project : ifsk
-ms.assetid : c3e209b5-9925-4911-8c42-0f15c1c710be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlfastlock, fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], FsRtlFastLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlFastLock
+title: FsRtlFastLock macro
+author: windows-driver-content
+description: The FsRtlFastLock macro is used by file systems and filter drivers to request a byte-range lock for a file stream.
+old-location: ifsk\fsrtlfastlock.htm
+old-project: ifsk
+ms.assetid: c3e209b5-9925-4911-8c42-0f15c1c710be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlfastlock, fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], FsRtlFastLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlFastLock
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

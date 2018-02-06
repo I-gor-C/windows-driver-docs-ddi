@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_CLOSE_AF_COMPLETE
-title : PROTOCOL_CL_CLOSE_AF_COMPLETE
-author : windows-driver-content
-description : The ProtocolClCloseAfComplete function is used by connection-oriented NDIS clients.
-old-location : netvista\protocolclcloseafcomplete.htm
-old-project : netvista
-ms.assetid : 7597e124-34e4-4326-98b3-c65dbe90ae6f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclcloseafcomplete, ProtocolClCloseAfComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClCloseAfComplete, PROTOCOL_CL_CLOSE_AF_COMPLETE, PROTOCOL_CL_CLOSE_AF_COMPLETE, ndis/ProtocolClCloseAfComplete, condis_client_ref_27fe2447-59c5-4922-b6be-67911961f0e4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_CLOSE_AF_COMPLETE
+title: PROTOCOL_CL_CLOSE_AF_COMPLETE
+author: windows-driver-content
+description: The ProtocolClCloseAfComplete function is used by connection-oriented NDIS clients.
+old-location: netvista\protocolclcloseafcomplete.htm
+old-project: netvista
+ms.assetid: 7597e124-34e4-4326-98b3-c65dbe90ae6f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclcloseafcomplete, ProtocolClCloseAfComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClCloseAfComplete, PROTOCOL_CL_CLOSE_AF_COMPLETE, PROTOCOL_CL_CLOSE_AF_COMPLETE, ndis/ProtocolClCloseAfComplete, condis_client_ref_27fe2447-59c5-4922-b6be-67911961f0e4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClCloseAfComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

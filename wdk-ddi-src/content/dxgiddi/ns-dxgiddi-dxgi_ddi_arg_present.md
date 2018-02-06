@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_PRESENT
-title : DXGI_DDI_ARG_PRESENT
-author : windows-driver-content
-description : The DXGI_DDI_ARG_PRESENT structure describes a resource to display.
-old-location : display\dxgi_ddi_arg_present.htm
-old-project : display
-ms.assetid : 001cb9fc-d1fa-4ae5-aefd-954d307c4e89
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_5ad1821d-dfdb-4361-84dc-48a4a283d66a.xml, display.dxgi_ddi_arg_present, dxgiddi/DXGI_DDI_ARG_PRESENT, DXGI_DDI_ARG_PRESENT, DXGI_DDI_ARG_PRESENT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_PRESENT
+UID: NS:dxgiddi.DXGI_DDI_ARG_PRESENT
+title: DXGI_DDI_ARG_PRESENT
+author: windows-driver-content
+description: The DXGI_DDI_ARG_PRESENT structure describes a resource to display.
+old-location: display\dxgi_ddi_arg_present.htm
+old-project: display
+ms.assetid: 001cb9fc-d1fa-4ae5-aefd-954d307c4e89
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_5ad1821d-dfdb-4361-84dc-48a4a283d66a.xml, display.dxgi_ddi_arg_present, dxgiddi/DXGI_DDI_ARG_PRESENT, DXGI_DDI_ARG_PRESENT, DXGI_DDI_ARG_PRESENT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_PRESENT
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_PRESENT
 ---
 
 # DXGI_DDI_ARG_PRESENT structure

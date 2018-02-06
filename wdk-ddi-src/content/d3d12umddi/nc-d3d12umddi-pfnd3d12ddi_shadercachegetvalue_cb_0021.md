@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d12umddi.PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021
-title : PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021
-author : windows-driver-content
-description : The pfnShaderCacheGetValueCb callback function gets a shader cache value.
-old-location : display\pfnd3d12ddi_shadercachegetvalue_cb_0021.htm
-old-project : display
-ms.assetid : EFC9E2D0-1995-4FE9-840C-7B33081AEF2F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnd3d12ddi_shadercachegetvalue_cb_0021, pfnShaderCacheGetValueCb callback function [Display Devices], pfnShaderCacheGetValueCb, PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021, PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021, d3d12umddi/pfnShaderCacheGetValueCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d12umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
+UID: NC:d3d12umddi.PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021
+title: PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021
+author: windows-driver-content
+description: The pfnShaderCacheGetValueCb callback function gets a shader cache value.
+old-location: display\pfnd3d12ddi_shadercachegetvalue_cb_0021.htm
+old-project: display
+ms.assetid: EFC9E2D0-1995-4FE9-840C-7B33081AEF2F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnd3d12ddi_shadercachegetvalue_cb_0021, pfnShaderCacheGetValueCb callback function [Display Devices], pfnShaderCacheGetValueCb, PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021, PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021, d3d12umddi/pfnShaderCacheGetValueCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d12umddi.h
+apiname:
+-	pfnShaderCacheGetValueCb
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetEventSystem
-title : IDebugSystemObjects4::GetEventSystem method
-author : windows-driver-content
-description : The GetEventSystem method returns the engine target ID for the target in which the last event occurred.
-old-location : debugger\geteventsystem.htm
-old-project : debugger
-ms.assetid : b0a3ce92-b29a-4c5e-8cab-18fc92787e2e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects3 interface [Windows Debugging], GetEventSystem method, GetEventSystem, dbgeng/IDebugSystemObjects4::GetEventSystem, debugger.geteventsystem, GetEventSystem method [Windows Debugging], dbgeng/IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects4::GetEventSystem, IDebugSystemObjects4 interface [Windows Debugging], GetEventSystem method, IDebugSystemObjects_6cb96e5a-e9a5-4ff7-9f36-a7770bc77ef1.xml, GetEventSystem method [Windows Debugging], IDebugSystemObjects4 interface, GetEventSystem method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetEventSystem
+title: IDebugSystemObjects4::GetEventSystem method
+author: windows-driver-content
+description: The GetEventSystem method returns the engine target ID for the target in which the last event occurred.
+old-location: debugger\geteventsystem.htm
+old-project: debugger
+ms.assetid: b0a3ce92-b29a-4c5e-8cab-18fc92787e2e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects3 interface [Windows Debugging], GetEventSystem method, GetEventSystem, dbgeng/IDebugSystemObjects4::GetEventSystem, debugger.geteventsystem, GetEventSystem method [Windows Debugging], dbgeng/IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects4::GetEventSystem, IDebugSystemObjects4 interface [Windows Debugging], GetEventSystem method, IDebugSystemObjects_6cb96e5a-e9a5-4ff7-9f36-a7770bc77ef1.xml, GetEventSystem method [Windows Debugging], IDebugSystemObjects4 interface, GetEventSystem method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects3.GetEventSystem
+-	IDebugSystemObjects4.GetEventSystem
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

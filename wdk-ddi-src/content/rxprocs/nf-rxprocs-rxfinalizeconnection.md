@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxFinalizeConnection
-title : RxFinalizeConnection function
-author : windows-driver-content
-description : RxFinalizeConnection deletes a connection to a share.
-old-location : ifsk\rxfinalizeconnection.htm
-old-project : ifsk
-ms.assetid : 3f3e6c56-937e-4a4b-885a-71be2e9513d8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxfinalizeconnection, rxref_4d5f5633-98fc-4cdc-9803-01ccc06486f5.xml, rxprocs/RxFinalizeConnection, RxFinalizeConnection, RxFinalizeConnection function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxFinalizeConnection
+title: RxFinalizeConnection function
+author: windows-driver-content
+description: RxFinalizeConnection deletes a connection to a share.
+old-location: ifsk\rxfinalizeconnection.htm
+old-project: ifsk
+ms.assetid: 3f3e6c56-937e-4a4b-885a-71be2e9513d8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxfinalizeconnection, rxref_4d5f5633-98fc-4cdc-9803-01ccc06486f5.xml, rxprocs/RxFinalizeConnection, RxFinalizeConnection, RxFinalizeConnection function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxFinalizeConnection
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

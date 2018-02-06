@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._QUERY_FILE_LAYOUT_INPUT
-title : "_QUERY_FILE_LAYOUT_INPUT"
-author : windows-driver-content
-description : The QUERY_FILE_LAYOUT_INPUT structure selects which file layout entries are returned from a FSCTL_QUERY_FILE_LAYOUT request.
-old-location : ifsk\query_file_layout_input.htm
-old-project : ifsk
-ms.assetid : 7404BFC3-8942-4927-9F5B-9FA860F9F95F
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/QUERY_FILE_LAYOUT_INPUT, ntifs/PQUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_NAMES, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_STREAMS, _QUERY_FILE_LAYOUT_INPUT, PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, QUERY_FILE_LAYOUT_RESTART
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting in Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT"
+UID: NS:ntifs._QUERY_FILE_LAYOUT_INPUT
+title: "_QUERY_FILE_LAYOUT_INPUT"
+author: windows-driver-content
+description: The QUERY_FILE_LAYOUT_INPUT structure selects which file layout entries are returned from a FSCTL_QUERY_FILE_LAYOUT request.
+old-location: ifsk\query_file_layout_input.htm
+old-project: ifsk
+ms.assetid: 7404BFC3-8942-4927-9F5B-9FA860F9F95F
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/QUERY_FILE_LAYOUT_INPUT, ntifs/PQUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_NAMES, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_STREAMS, _QUERY_FILE_LAYOUT_INPUT, PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, QUERY_FILE_LAYOUT_RESTART
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting in Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	QUERY_FILE_LAYOUT_INPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT"
 ---
 
 # _QUERY_FILE_LAYOUT_INPUT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_Pty_EventInfo
-title : HBA_Pty_EventInfo
-author : windows-driver-content
-description : The HBA_Link_EventInfo structure contains information about a WMI proprietary event associated with the fibre channel HBA API.
-old-location : storage\hba_pty_eventinfo.htm
-old-project : storage
-ms.assetid : 4291e6cd-9497-4106-82bf-c054108a0946
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_Pty_EventInfo structure [Storage Devices], structs-Fibre_78e65a2e-556a-459c-9cb0-95cfbfbe4c84.xml, HBA_PTY_EVENTINFO, storage.hba_pty_eventinfo, hbaapi/PHBA_PTY_EVENTINFO, PHBA_PTY_EVENTINFO, *PHBA_PTY_EVENTINFO, HBA_PTY_EVENTINFO structure [Storage Devices], hbaapi/HBA_Pty_EventInfo, PHBA_PTY_EVENTINFO structure pointer [Storage Devices], HBA_Pty_EventInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_PTY_EVENTINFO, *PHBA_PTY_EVENTINFO
+UID: NS:hbaapi.HBA_Pty_EventInfo
+title: HBA_Pty_EventInfo
+author: windows-driver-content
+description: The HBA_Link_EventInfo structure contains information about a WMI proprietary event associated with the fibre channel HBA API.
+old-location: storage\hba_pty_eventinfo.htm
+old-project: storage
+ms.assetid: 4291e6cd-9497-4106-82bf-c054108a0946
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_Pty_EventInfo structure [Storage Devices], structs-Fibre_78e65a2e-556a-459c-9cb0-95cfbfbe4c84.xml, HBA_PTY_EVENTINFO, storage.hba_pty_eventinfo, hbaapi/PHBA_PTY_EVENTINFO, PHBA_PTY_EVENTINFO, *PHBA_PTY_EVENTINFO, HBA_PTY_EVENTINFO structure [Storage Devices], hbaapi/HBA_Pty_EventInfo, PHBA_PTY_EVENTINFO structure pointer [Storage Devices], HBA_Pty_EventInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_PTY_EVENTINFO
+product: Windows
+targetos: Windows
+req.typenames: HBA_PTY_EVENTINFO, *PHBA_PTY_EVENTINFO
 ---
 
 # HBA_Pty_EventInfo structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiDispatchFunction
-title : ScsiPortWmiDispatchFunction function
-author : windows-driver-content
-description : The ScsiPortWmiDispatchFunction routine is a dispatch routine for miniport drivers that support WMI.
-old-location : storage\scsiportwmidispatchfunction.htm
-old-project : storage
-ms.assetid : 48806050-403b-4375-8b19-e867f905b761
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortWmiDispatchFunction routine [Storage Devices], scsiwmi/ScsiPortWmiDispatchFunction, scsiprt_03d0ec2c-b525-48d5-bcc3-cfd89fe020bd.xml, ScsiPortWmiDispatchFunction, storage.scsiportwmidispatchfunction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiDispatchFunction
+title: ScsiPortWmiDispatchFunction function
+author: windows-driver-content
+description: The ScsiPortWmiDispatchFunction routine is a dispatch routine for miniport drivers that support WMI.
+old-location: storage\scsiportwmidispatchfunction.htm
+old-project: storage
+ms.assetid: 48806050-403b-4375-8b19-e867f905b761
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortWmiDispatchFunction routine [Storage Devices], scsiwmi/ScsiPortWmiDispatchFunction, scsiprt_03d0ec2c-b525-48d5-bcc3-cfd89fe020bd.xml, ScsiPortWmiDispatchFunction, storage.scsiportwmidispatchfunction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	ScsiPortWmiDispatchFunction
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

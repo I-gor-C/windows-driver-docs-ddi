@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.D3DDDI_TRIMRESIDENCYSET_FLAGS
-title : D3DDDI_TRIMRESIDENCYSET_FLAGS
-author : windows-driver-content
-description : D3DDDI_TRIMRESIDENCYSET_FLAGS is used with pfnTrimResidencySet to trim the residency list for a given device.
-old-location : display\d3dddi_trimresidencyset_flags.htm
-old-project : display
-ms.assetid : B063561B-FA79-44B4-A058-71DB9CBF4804
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_TRIMRESIDENCYSET_FLAGS, D3DDDI_TRIMRESIDENCYSET_FLAGS structure [Display Devices], display.d3dddi_trimresidencyset_flags, d3dukmdt/D3DDDI_TRIMRESIDENCYSET_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_TRIMRESIDENCYSET_FLAGS
+UID: NS:d3dukmdt.D3DDDI_TRIMRESIDENCYSET_FLAGS
+title: D3DDDI_TRIMRESIDENCYSET_FLAGS
+author: windows-driver-content
+description: D3DDDI_TRIMRESIDENCYSET_FLAGS is used with pfnTrimResidencySet to trim the residency list for a given device.
+old-location: display\d3dddi_trimresidencyset_flags.htm
+old-project: display
+ms.assetid: B063561B-FA79-44B4-A058-71DB9CBF4804
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_TRIMRESIDENCYSET_FLAGS, D3DDDI_TRIMRESIDENCYSET_FLAGS structure [Display Devices], display.d3dddi_trimresidencyset_flags, d3dukmdt/D3DDDI_TRIMRESIDENCYSET_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_TRIMRESIDENCYSET_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_TRIMRESIDENCYSET_FLAGS
 ---
 
 # D3DDDI_TRIMRESIDENCYSET_FLAGS structure

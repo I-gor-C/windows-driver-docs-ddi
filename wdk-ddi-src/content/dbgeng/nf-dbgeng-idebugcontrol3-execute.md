@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.Execute
-title : IDebugControl3::Execute method
-author : windows-driver-content
-description : The Execute method executes the specified debugger commands.
-old-location : debugger\execute.htm
-old-project : debugger
-ms.assetid : 595aa371-ff7e-48e2-b29a-a7aabc70ebd7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], Execute method, IDebugControl_d49bfbf9-c9e1-4a43-8f2c-8778ef51db79.xml, Execute method [Windows Debugging], Execute method [Windows Debugging], IDebugControl2 interface, Execute method [Windows Debugging], IDebugControl interface, IDebugControl::Execute, IDebugControl2 interface [Windows Debugging], Execute method, dbgeng/IDebugControl2::Execute, IDebugControl3 interface [Windows Debugging], Execute method, IDebugControl3, Execute, IDebugControl2::Execute, IDebugControl3::Execute, dbgeng/IDebugControl3::Execute, dbgeng/IDebugControl::Execute, debugger.execute, Execute method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.Execute
+title: IDebugControl3::Execute method
+author: windows-driver-content
+description: The Execute method executes the specified debugger commands.
+old-location: debugger\execute.htm
+old-project: debugger
+ms.assetid: 595aa371-ff7e-48e2-b29a-a7aabc70ebd7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl interface [Windows Debugging], Execute method, IDebugControl_d49bfbf9-c9e1-4a43-8f2c-8778ef51db79.xml, Execute method [Windows Debugging], Execute method [Windows Debugging], IDebugControl2 interface, Execute method [Windows Debugging], IDebugControl interface, IDebugControl::Execute, IDebugControl2 interface [Windows Debugging], Execute method, dbgeng/IDebugControl2::Execute, IDebugControl3 interface [Windows Debugging], Execute method, IDebugControl3, Execute, IDebugControl2::Execute, IDebugControl3::Execute, dbgeng/IDebugControl3::Execute, dbgeng/IDebugControl::Execute, debugger.execute, Execute method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.Execute
+-	IDebugControl2.Execute
+-	IDebugControl3.Execute
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

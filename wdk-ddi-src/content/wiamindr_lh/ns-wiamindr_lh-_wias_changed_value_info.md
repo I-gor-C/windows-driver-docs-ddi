@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamindr_lh._WIAS_CHANGED_VALUE_INFO
-title : "_WIAS_CHANGED_VALUE_INFO"
-author : windows-driver-content
-description : The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property.
-old-location : image\wias_changed_value_info.htm
-old-project : image
-ms.assetid : bfef9d54-fcd5-436b-b3ec-8cd3b8f38360
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.wias_changed_value_info, wiastrct_0c1c5e66-1f26-471f-9916-117460b6a373.xml, wiamindr_lh/PWIAS_CHANGED_VALUE_INFO, _WIAS_CHANGED_VALUE_INFO, *PWIAS_CHANGED_VALUE_INFO, PWIAS_CHANGED_VALUE_INFO structure pointer [Imaging Devices], WIAS_CHANGED_VALUE_INFO structure [Imaging Devices], PWIAS_CHANGED_VALUE_INFO, wiamindr_lh/WIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO"
-req.product : Windows 10 or later.
+UID: NS:wiamindr_lh._WIAS_CHANGED_VALUE_INFO
+title: "_WIAS_CHANGED_VALUE_INFO"
+author: windows-driver-content
+description: The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property.
+old-location: image\wias_changed_value_info.htm
+old-project: image
+ms.assetid: bfef9d54-fcd5-436b-b3ec-8cd3b8f38360
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.wias_changed_value_info, wiastrct_0c1c5e66-1f26-471f-9916-117460b6a373.xml, wiamindr_lh/PWIAS_CHANGED_VALUE_INFO, _WIAS_CHANGED_VALUE_INFO, *PWIAS_CHANGED_VALUE_INFO, PWIAS_CHANGED_VALUE_INFO structure pointer [Imaging Devices], WIAS_CHANGED_VALUE_INFO structure [Imaging Devices], PWIAS_CHANGED_VALUE_INFO, wiamindr_lh/WIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	WIAS_CHANGED_VALUE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _WIAS_CHANGED_VALUE_INFO structure

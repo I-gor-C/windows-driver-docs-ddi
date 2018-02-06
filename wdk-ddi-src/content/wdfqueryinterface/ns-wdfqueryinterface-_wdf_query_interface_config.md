@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfqueryinterface._WDF_QUERY_INTERFACE_CONFIG
-title : "_WDF_QUERY_INTERFACE_CONFIG"
-author : windows-driver-content
-description : The WDF_QUERY_INTERFACE_CONFIG structure describes a driver-defined interface.
-old-location : wdf\wdf_query_interface_config.htm
-old-project : wdf
-ms.assetid : 2f7112fc-7f3e-415d-9994-ffd93f456d97
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG, PWDF_QUERY_INTERFACE_CONFIG structure pointer, *PWDF_QUERY_INTERFACE_CONFIG, kmdf.wdf_query_interface_config, WDF_QUERY_INTERFACE_CONFIG, wdf.wdf_query_interface_config, WDF_QUERY_INTERFACE_CONFIG structure, _WDF_QUERY_INTERFACE_CONFIG, DFDeviceObjectDriverDefIntRef_5b68f6e3-95f7-4339-91c2-2ea2d88d698b.xml, wdfqueryinterface/PWDF_QUERY_INTERFACE_CONFIG, PWDF_QUERY_INTERFACE_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfqueryinterface.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfqueryinterface._WDF_QUERY_INTERFACE_CONFIG
+title: "_WDF_QUERY_INTERFACE_CONFIG"
+author: windows-driver-content
+description: The WDF_QUERY_INTERFACE_CONFIG structure describes a driver-defined interface.
+old-location: wdf\wdf_query_interface_config.htm
+old-project: wdf
+ms.assetid: 2f7112fc-7f3e-415d-9994-ffd93f456d97
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG, PWDF_QUERY_INTERFACE_CONFIG structure pointer, *PWDF_QUERY_INTERFACE_CONFIG, kmdf.wdf_query_interface_config, WDF_QUERY_INTERFACE_CONFIG, wdf.wdf_query_interface_config, WDF_QUERY_INTERFACE_CONFIG structure, _WDF_QUERY_INTERFACE_CONFIG, DFDeviceObjectDriverDefIntRef_5b68f6e3-95f7-4339-91c2-2ea2d88d698b.xml, wdfqueryinterface/PWDF_QUERY_INTERFACE_CONFIG, PWDF_QUERY_INTERFACE_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfqueryinterface.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdfqueryinterface.h
+apiname:
+-	WDF_QUERY_INTERFACE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_QUERY_INTERFACE_CONFIG structure

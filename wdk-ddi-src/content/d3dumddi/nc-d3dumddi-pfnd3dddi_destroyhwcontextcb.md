@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYHWCONTEXTCB
-title : PFND3DDDI_DESTROYHWCONTEXTCB
-author : windows-driver-content
-description : A callback to destroy a hardware context.
-old-location : display\pfnd3dddi_destroyhwcontextcb.htm
-old-project : display
-ms.assetid : CD3B8EE1-8B54-4F0A-B3C7-3B6F7D968497
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnd3dddi_destroyhwcontextcb, PFND3DDDI_DESTROYHWCONTEXTCB callback function [Display Devices], PFND3DDDI_DESTROYHWCONTEXTCB, d3dumddi/PFND3DDDI_DESTROYHWCONTEXTCB
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYHWCONTEXTCB
+title: PFND3DDDI_DESTROYHWCONTEXTCB
+author: windows-driver-content
+description: A callback to destroy a hardware context.
+old-location: display\pfnd3dddi_destroyhwcontextcb.htm
+old-project: display
+ms.assetid: CD3B8EE1-8B54-4F0A-B3C7-3B6F7D968497
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnd3dddi_destroyhwcontextcb, PFND3DDDI_DESTROYHWCONTEXTCB callback function [Display Devices], PFND3DDDI_DESTROYHWCONTEXTCB, d3dumddi/PFND3DDDI_DESTROYHWCONTEXTCB
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	PFND3DDDI_DESTROYHWCONTEXTCB
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

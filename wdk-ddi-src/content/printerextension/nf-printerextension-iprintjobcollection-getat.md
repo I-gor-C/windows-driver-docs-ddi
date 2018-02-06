@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintJobCollection.GetAt
-title : IPrintJobCollection::GetAt method
-author : windows-driver-content
-description : Gets a pointer to an IPrintJob object.
-old-location : print\iprintjobcollection_getat.htm
-old-project : print
-ms.assetid : B920E5D1-D565-4626-A15E-8500DFFBC9FF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printerextension/IPrintJobCollection::GetAt, IPrintJobCollection, print.iprintjobcollection_getat, IPrintJobCollection interface [Print Devices], GetAt method, GetAt, IPrintJobCollection::GetAt, GetAt method [Print Devices], IPrintJobCollection interface, GetAt method [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintJobCollection.GetAt
+title: IPrintJobCollection::GetAt method
+author: windows-driver-content
+description: Gets a pointer to an IPrintJob object.
+old-location: print\iprintjobcollection_getat.htm
+old-project: print
+ms.assetid: B920E5D1-D565-4626-A15E-8500DFFBC9FF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printerextension/IPrintJobCollection::GetAt, IPrintJobCollection, print.iprintjobcollection_getat, IPrintJobCollection interface [Print Devices], GetAt method, GetAt, IPrintJobCollection::GetAt, GetAt method [Print Devices], IPrintJobCollection interface, GetAt method [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintJobCollection.GetAt
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SE_TOKEN_USER
-title : "_SE_TOKEN_USER"
-author : windows-driver-content
-description : The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation.
-old-location : ifsk\se_token_user.htm
-old-project : ifsk
-ms.assetid : 3B870461-0C5D-46DF-A850-EB796AE5A4CB
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SE_TOKEN_USER, PSE_TOKEN_USER structure pointer [Installable File System Drivers], ntifs/PSE_TOKEN_USER, _SE_TOKEN_USER, SE_TOKEN_USER structure [Installable File System Drivers], ifsk.se_token_user, SE_TOKEN_USER, PSE_TOKEN_USER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SE_TOKEN_USER, PSE_TOKEN_USER
+UID: NS:ntifs._SE_TOKEN_USER
+title: "_SE_TOKEN_USER"
+author: windows-driver-content
+description: The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation.
+old-location: ifsk\se_token_user.htm
+old-project: ifsk
+ms.assetid: 3B870461-0C5D-46DF-A850-EB796AE5A4CB
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SE_TOKEN_USER, PSE_TOKEN_USER structure pointer [Installable File System Drivers], ntifs/PSE_TOKEN_USER, _SE_TOKEN_USER, SE_TOKEN_USER structure [Installable File System Drivers], ifsk.se_token_user, SE_TOKEN_USER, PSE_TOKEN_USER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SE_TOKEN_USER
+product: Windows
+targetos: Windows
+req.typenames: SE_TOKEN_USER, PSE_TOKEN_USER
 ---
 
 # _SE_TOKEN_USER structure

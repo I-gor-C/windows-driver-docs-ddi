@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB
-title : PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB
-author : windows-driver-content
-description : pfnWaitForSynchronizationObjectFromGpuCb waits for a monitored fence to reach a certain value before processing subsequent context commands.
-old-location : display\pfnwaitforsynchronizationobjectfromgpucb.htm
-old-project : display
-ms.assetid : 49023D25-D57E-418F-AD10-133377B90493
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnwaitforsynchronizationobjectfromgpucb, pfnWaitForSynchronizationObjectFromGpuCb callback function [Display Devices], pfnWaitForSynchronizationObjectFromGpuCb, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB, d3dumddi/pfnWaitForSynchronizationObjectFromGpuCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB
+title: PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB
+author: windows-driver-content
+description: pfnWaitForSynchronizationObjectFromGpuCb waits for a monitored fence to reach a certain value before processing subsequent context commands.
+old-location: display\pfnwaitforsynchronizationobjectfromgpucb.htm
+old-project: display
+ms.assetid: 49023D25-D57E-418F-AD10-133377B90493
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnwaitforsynchronizationobjectfromgpucb, pfnWaitForSynchronizationObjectFromGpuCb callback function [Display Devices], pfnWaitForSynchronizationObjectFromGpuCb, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMGPUCB, d3dumddi/pfnWaitForSynchronizationObjectFromGpuCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnWaitForSynchronizationObjectFromGpuCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

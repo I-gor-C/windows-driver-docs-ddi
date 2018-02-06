@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvGetWiaFormatInfo
-title : IWiaMiniDrv::drvGetWiaFormatInfo method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvGetWiaFormatInfo method finds the image formats and media types that the WIA hardware device supports.
-old-location : image\iwiaminidrv_drvgetwiaformatinfo.htm
-old-project : image
-ms.assetid : f0b7d982-735f-489c-b9f8-81a287f6722a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, IWiaMiniDrv, IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetwiaformatinfo, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvGetWiaFormatInfo
+title: IWiaMiniDrv::drvGetWiaFormatInfo method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvGetWiaFormatInfo method finds the image formats and media types that the WIA hardware device supports.
+old-location: image\iwiaminidrv_drvgetwiaformatinfo.htm
+old-project: image
+ms.assetid: f0b7d982-735f-489c-b9f8-81a287f6722a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, IWiaMiniDrv, IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetwiaformatinfo, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvGetWiaFormatInfo
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

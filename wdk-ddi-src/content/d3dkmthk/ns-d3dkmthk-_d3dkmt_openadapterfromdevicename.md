@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENADAPTERFROMDEVICENAME
-title : "_D3DKMT_OPENADAPTERFROMDEVICENAME"
-author : windows-driver-content
-description : The D3DKMT_OPENADAPTERFROMDEVICENAME structure describes the mapping of the given name of a device to a graphics adapter handle and monitor output.
-old-location : display\d3dkmt_openadapterfromdevicename.htm
-old-project : display
-ms.assetid : 4e633c7c-fd88-4b8f-9d29-2c7a3daa3d32
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_OPENADAPTERFROMDEVICENAME, D3DKMT_OPENADAPTERFROMDEVICENAME, display.d3dkmt_openadapterfromdevicename, D3DKMT_OPENADAPTERFROMDEVICENAME structure [Display Devices], _D3DKMT_OPENADAPTERFROMDEVICENAME, OpenGL_Structs_f710fec6-a0f4-4b86-b4ba-5f8411deb490.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENADAPTERFROMDEVICENAME
+UID: NS:d3dkmthk._D3DKMT_OPENADAPTERFROMDEVICENAME
+title: "_D3DKMT_OPENADAPTERFROMDEVICENAME"
+author: windows-driver-content
+description: The D3DKMT_OPENADAPTERFROMDEVICENAME structure describes the mapping of the given name of a device to a graphics adapter handle and monitor output.
+old-location: display\d3dkmt_openadapterfromdevicename.htm
+old-project: display
+ms.assetid: 4e633c7c-fd88-4b8f-9d29-2c7a3daa3d32
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_OPENADAPTERFROMDEVICENAME, D3DKMT_OPENADAPTERFROMDEVICENAME, display.d3dkmt_openadapterfromdevicename, D3DKMT_OPENADAPTERFROMDEVICENAME structure [Display Devices], _D3DKMT_OPENADAPTERFROMDEVICENAME, OpenGL_Structs_f710fec6-a0f4-4b86-b4ba-5f8411deb490.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_OPENADAPTERFROMDEVICENAME
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENADAPTERFROMDEVICENAME
 ---
 
 # _D3DKMT_OPENADAPTERFROMDEVICENAME structure

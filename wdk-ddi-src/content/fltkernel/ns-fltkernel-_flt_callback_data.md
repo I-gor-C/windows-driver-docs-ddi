@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_CALLBACK_DATA
-title : "_FLT_CALLBACK_DATA"
-author : windows-driver-content
-description : The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations.
-old-location : ifsk\flt_callback_data.htm
-old-project : ifsk
-ms.assetid : c526585e-aa6d-4332-9dd7-927d83293f09
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_FLT_CALLBACK_DATA, PFLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA, ifsk.flt_callback_data, fltkernel/FLT_CALLBACK_DATA, PFLT_CALLBACK_DATA structure pointer [Installable File System Drivers], fltkernel/PFLT_CALLBACK_DATA, FltSystemStructures_36133023-b06f-46c9-87fc-04543cade79a.xml, FLT_CALLBACK_DATA, FLT_CALLBACK_DATA structure [Installable File System Drivers]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_CALLBACK_DATA, FLT_CALLBACK_DATA"
+UID: NS:fltkernel._FLT_CALLBACK_DATA
+title: "_FLT_CALLBACK_DATA"
+author: windows-driver-content
+description: The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations.
+old-location: ifsk\flt_callback_data.htm
+old-project: ifsk
+ms.assetid: c526585e-aa6d-4332-9dd7-927d83293f09
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_FLT_CALLBACK_DATA, PFLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA, ifsk.flt_callback_data, fltkernel/FLT_CALLBACK_DATA, PFLT_CALLBACK_DATA structure pointer [Installable File System Drivers], fltkernel/PFLT_CALLBACK_DATA, FltSystemStructures_36133023-b06f-46c9-87fc-04543cade79a.xml, FLT_CALLBACK_DATA, FLT_CALLBACK_DATA structure [Installable File System Drivers]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_CALLBACK_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_CALLBACK_DATA, FLT_CALLBACK_DATA"
 ---
 
 # _FLT_CALLBACK_DATA structure

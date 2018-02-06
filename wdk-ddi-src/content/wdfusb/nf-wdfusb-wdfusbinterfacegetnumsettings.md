@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbInterfaceGetNumSettings
-title : WdfUsbInterfaceGetNumSettings function
-author : windows-driver-content
-description : The WdfUsbInterfaceGetNumSettings method returns the number of alternate settings that a specified USB interface supports.
-old-location : wdf\wdfusbinterfacegetnumsettings.htm
-old-project : wdf
-ms.assetid : 07de1b64-bafb-4b5b-8ef3-24b87ae0c273
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbinterfacegetnumsettings, WdfUsbInterfaceGetNumSettings, WdfUsbInterfaceGetNumSettings method, DFUsbRef_5515a8bf-1a43-434c-9806-75393a17fdf5.xml, wdfusb/WdfUsbInterfaceGetNumSettings, wdf.wdfusbinterfacegetnumsettings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.5
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbInterfaceGetNumSettings
+title: WdfUsbInterfaceGetNumSettings function
+author: windows-driver-content
+description: The WdfUsbInterfaceGetNumSettings method returns the number of alternate settings that a specified USB interface supports.
+old-location: wdf\wdfusbinterfacegetnumsettings.htm
+old-project: wdf
+ms.assetid: 07de1b64-bafb-4b5b-8ef3-24b87ae0c273
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfusbinterfacegetnumsettings, WdfUsbInterfaceGetNumSettings, WdfUsbInterfaceGetNumSettings method, DFUsbRef_5515a8bf-1a43-434c-9806-75393a17fdf5.xml, wdfusb/WdfUsbInterfaceGetNumSettings, wdf.wdfusbinterfacegetnumsettings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.5
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbInterfaceGetNumSettings
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

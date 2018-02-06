@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGK_BRIGHTNESS_STATE
-title : "_DXGK_BRIGHTNESS_STATE"
-author : windows-driver-content
-description : Used to enable smooth brightness control for an integrated display panel.
-old-location : display\dxgk_brightness_state.htm
-old-project : display
-ms.assetid : 60896a51-63c9-46fd-96ee-9cdbb72ac30c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_brightness_state, DXGK_BRIGHTNESS_STATE structure [Display Devices], d3dkmdt/DXGK_BRIGHTNESS_STATE, _DXGK_BRIGHTNESS_STATE, DXGK_BRIGHTNESS_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_BRIGHTNESS_STATE
+UID: NS:d3dkmdt._DXGK_BRIGHTNESS_STATE
+title: "_DXGK_BRIGHTNESS_STATE"
+author: windows-driver-content
+description: Used to enable smooth brightness control for an integrated display panel.
+old-location: display\dxgk_brightness_state.htm
+old-project: display
+ms.assetid: 60896a51-63c9-46fd-96ee-9cdbb72ac30c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_brightness_state, DXGK_BRIGHTNESS_STATE structure [Display Devices], d3dkmdt/DXGK_BRIGHTNESS_STATE, _DXGK_BRIGHTNESS_STATE, DXGK_BRIGHTNESS_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	DXGK_BRIGHTNESS_STATE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_BRIGHTNESS_STATE
 ---
 
 # _DXGK_BRIGHTNESS_STATE structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._ENLISTMENT_BASIC_INFORMATION
-title : "_ENLISTMENT_BASIC_INFORMATION"
-author : windows-driver-content
-description : The ENLISTMENT_BASIC_INFORMATION structure contains information about an enlistment object.
-old-location : kernel\enlistment_basic_information.htm
-old-project : kernel
-ms.assetid : 50c989b9-147c-41ea-b933-3a3e8575563e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PENLISTMENT_BASIC_INFORMATION, wdm/ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION, ENLISTMENT_BASIC_INFORMATION, wdm/PENLISTMENT_BASIC_INFORMATION, ktm_ref_5748a3a5-6a2a-4cf1-a610-2a406161b689.xml, ENLISTMENT_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.enlistment_basic_information"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PENLISTMENT_BASIC_INFORMATION, ENLISTMENT_BASIC_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._ENLISTMENT_BASIC_INFORMATION
+title: "_ENLISTMENT_BASIC_INFORMATION"
+author: windows-driver-content
+description: The ENLISTMENT_BASIC_INFORMATION structure contains information about an enlistment object.
+old-location: kernel\enlistment_basic_information.htm
+old-project: kernel
+ms.assetid: 50c989b9-147c-41ea-b933-3a3e8575563e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PENLISTMENT_BASIC_INFORMATION, wdm/ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION, ENLISTMENT_BASIC_INFORMATION, wdm/PENLISTMENT_BASIC_INFORMATION, ktm_ref_5748a3a5-6a2a-4cf1-a610-2a406161b689.xml, ENLISTMENT_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.enlistment_basic_information"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	ENLISTMENT_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PENLISTMENT_BASIC_INFORMATION, ENLISTMENT_BASIC_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _ENLISTMENT_BASIC_INFORMATION structure

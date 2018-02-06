@@ -1,41 +1,47 @@
 ---
-UID : NF:dispmprt.DxgkInitializeDisplayOnlyDriver
-title : DxgkInitializeDisplayOnlyDriver function
-author : windows-driver-content
-description : Loads and initializes the DirectX graphics kernel subsystem (Dxgkrnl.sys) for use by a kernel mode display-only driver (KMDOD).
-old-location : display\dxgkinitializedisplayonlydriver.htm
-old-project : display
-ms.assetid : d80d2d6a-758f-4b11-b33c-4b176a458bd2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DxgkInitializeDisplayOnlyDriver, display.dxgkinitializedisplayonlydriver, DxgkInitializeDisplayOnlyDriver function [Display Devices], dispmprt/DxgkInitializeDisplayOnlyDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Displib.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SURPRISE_REMOVAL_TYPE
+UID: NF:dispmprt.DxgkInitializeDisplayOnlyDriver
+title: DxgkInitializeDisplayOnlyDriver function
+author: windows-driver-content
+description: Loads and initializes the DirectX graphics kernel subsystem (Dxgkrnl.sys) for use by a kernel mode display-only driver (KMDOD).
+old-location: display\dxgkinitializedisplayonlydriver.htm
+old-project: display
+ms.assetid: d80d2d6a-758f-4b11-b33c-4b176a458bd2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DxgkInitializeDisplayOnlyDriver, display.dxgkinitializedisplayonlydriver, DxgkInitializeDisplayOnlyDriver function [Display Devices], dispmprt/DxgkInitializeDisplayOnlyDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Displib.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Displib.lib
+-	Displib.dll
+apiname:
+-	DxgkInitializeDisplayOnlyDriver
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SURPRISE_REMOVAL_TYPE
 ---
 
 

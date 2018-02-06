@@ -1,42 +1,47 @@
 ---
-UID : NI:usbfnioctl.IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
-title : IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
-author : windows-driver-content
-description : The class driver sends this request to initiate an IN transfer to the specified pipe and appends a zero-length packet to indicate the end of the transfer.
-old-location : buses\ioctl_internal_usbfn_transfer_in_append_zero_pkt.htm
-old-project : usbref
-ms.assetid : 3912A632-E9D0-42D5-B7B7-766A92EE8C95
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usbfn_transfer_in_append_zero_pkt, IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT control code [Buses], IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT, usbfnioctl/IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbfnioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
-req.product : Windows 10 or later.
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
+title: IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
+author: windows-driver-content
+description: The class driver sends this request to initiate an IN transfer to the specified pipe and appends a zero-length packet to indicate the end of the transfer.
+old-location: buses\ioctl_internal_usbfn_transfer_in_append_zero_pkt.htm
+old-project: usbref
+ms.assetid: 3912A632-E9D0-42D5-B7B7-766A92EE8C95
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usbfn_transfer_in_append_zero_pkt, IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT control code [Buses], IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT, usbfnioctl/IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbfnioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnioctl.h
+apiname:
+-	IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT
+product: Windows
+targetos: Windows
+req.typenames: USBFN_USB_STRING, *PUSBFN_USB_STRING
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USBFN_TRANSFER_IN_APPEND_ZERO_PKT IOCTL

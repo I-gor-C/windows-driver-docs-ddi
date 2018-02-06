@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendRPL_IN
-title : "_SendRPL_IN"
-author : windows-driver-content
-description : The SendRPL_IN structure is used to deliver input parameter data to the SendRPL WMI method.
-old-location : storage\sendrpl_in.htm
-old-project : storage
-ms.assetid : 0c084258-2bd6-47a8-a060-d4ba2734ebed
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSendRPL_IN, structs-Fibre_3babb7ed-9d87-4154-b038-8e503750eed4.xml, _SendRPL_IN, storage.sendrpl_in, hbapiwmi/PSendRPL_IN, hbapiwmi/SendRPL_IN, SendRPL_IN, PSendRPL_IN structure pointer [Storage Devices], *PSendRPL_IN, SendRPL_IN structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SendRPL_IN, *PSendRPL_IN
+UID: NS:hbapiwmi._SendRPL_IN
+title: "_SendRPL_IN"
+author: windows-driver-content
+description: The SendRPL_IN structure is used to deliver input parameter data to the SendRPL WMI method.
+old-location: storage\sendrpl_in.htm
+old-project: storage
+ms.assetid: 0c084258-2bd6-47a8-a060-d4ba2734ebed
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSendRPL_IN, structs-Fibre_3babb7ed-9d87-4154-b038-8e503750eed4.xml, _SendRPL_IN, storage.sendrpl_in, hbapiwmi/PSendRPL_IN, hbapiwmi/SendRPL_IN, SendRPL_IN, PSendRPL_IN structure pointer [Storage Devices], *PSendRPL_IN, SendRPL_IN structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendRPL_IN
+product: Windows
+targetos: Windows
+req.typenames: SendRPL_IN, *PSendRPL_IN
 ---
 
 # _SendRPL_IN structure

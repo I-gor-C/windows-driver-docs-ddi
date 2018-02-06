@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.KdBreakPointWithStatus
-title : KdBreakPointWithStatus macro
-author : windows-driver-content
-description : The KdBreakPointWithStatus macro breaks into the kernel debugger and sends the value of Status to the debugger.
-old-location : devtest\kdbreakpointwithstatus.htm
-old-project : devtest
-ms.assetid : 0b7f2f55-f7b8-415b-b683-3b6b96f84eb3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KdBreakPointWithStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : KdBreakPointWithStatus
-req.alt-loc : ntddk.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KdBreakPointWithStatus
+title: KdBreakPointWithStatus macro
+author: windows-driver-content
+description: The KdBreakPointWithStatus macro breaks into the kernel debugger and sends the value of Status to the debugger.
+old-location: devtest\kdbreakpointwithstatus.htm
+old-project: devtest
+ms.assetid: 0b7f2f55-f7b8-415b-b683-3b6b96f84eb3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KdBreakPointWithStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KdBreakPointWithStatus
+req.alt-loc: ntddk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

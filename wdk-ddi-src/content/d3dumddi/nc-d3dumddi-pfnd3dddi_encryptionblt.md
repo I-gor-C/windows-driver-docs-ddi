@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_ENCRYPTIONBLT
-title : PFND3DDDI_ENCRYPTIONBLT
-author : windows-driver-content
-description : The EncryptionBlt function reads encrypted data from a protected surface.
-old-location : display\encryptionblt.htm
-old-project : display
-ms.assetid : a92bfff7-8af6-48c3-9e7f-95b9426aaaf2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.encryptionblt, EncryptionBlt callback function [Display Devices], EncryptionBlt, PFND3DDDI_ENCRYPTIONBLT, PFND3DDDI_ENCRYPTIONBLT, d3dumddi/EncryptionBlt, UserModeDisplayDriver_Functions_49cc68db-1210-44e5-80f1-347210dc6cf3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : EncryptionBlt is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_ENCRYPTIONBLT
+title: PFND3DDDI_ENCRYPTIONBLT
+author: windows-driver-content
+description: The EncryptionBlt function reads encrypted data from a protected surface.
+old-location: display\encryptionblt.htm
+old-project: display
+ms.assetid: a92bfff7-8af6-48c3-9e7f-95b9426aaaf2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.encryptionblt, EncryptionBlt callback function [Display Devices], EncryptionBlt, PFND3DDDI_ENCRYPTIONBLT, PFND3DDDI_ENCRYPTIONBLT, d3dumddi/EncryptionBlt, UserModeDisplayDriver_Functions_49cc68db-1210-44e5-80f1-347210dc6cf3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: EncryptionBlt is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	EncryptionBlt
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

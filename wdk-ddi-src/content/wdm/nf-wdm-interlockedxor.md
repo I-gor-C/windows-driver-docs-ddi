@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.InterlockedXor
-title : InterlockedXor function
-author : windows-driver-content
-description : The InterlockedOr routine atomically computes a bitwise exclusive OR operation.
-old-location : kernel\interlockedxor.htm
-old-project : kernel
-ms.assetid : 3ddf62f1-ce5d-4d55-9964-8d1786ac2997
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_7b4b6df0-2179-4a6a-941d-5aaa95609cd8.xml, InterlockedXor routine [Kernel-Mode Driver Architecture], kernel.interlockedxor, wdm/InterlockedXor, InterlockedXor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.InterlockedXor
+title: InterlockedXor function
+author: windows-driver-content
+description: The InterlockedOr routine atomically computes a bitwise exclusive OR operation.
+old-location: kernel\interlockedxor.htm
+old-project: kernel
+ms.assetid: 3ddf62f1-ce5d-4d55-9964-8d1786ac2997
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_7b4b6df0-2179-4a6a-941d-5aaa95609cd8.xml, InterlockedXor routine [Kernel-Mode Driver Architecture], kernel.interlockedxor, wdm/InterlockedXor, InterlockedXor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	InterlockedXor
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

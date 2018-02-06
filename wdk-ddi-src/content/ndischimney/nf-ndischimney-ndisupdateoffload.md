@@ -1,41 +1,47 @@
 ---
-UID : NF:ndischimney.NdisUpdateOffload
-title : NdisUpdateOffload function
-author : windows-driver-content
-description : A protocol or intermediate driver calls the NdisUpdateOffload function to update previously offloaded TCP chimney state objects.
-old-location : netvista\ndisupdateoffload.htm
-old-project : netvista
-ms.assetid : 1e85357d-9fe2-406b-bc1a-69e4357a0f8b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisUpdateOffload function [Network Drivers Starting with Windows Vista], NdisUpdateOffload, ndischimney/NdisUpdateOffload, netvista.ndisupdateoffload, tcp_chim_ndis_func_e33474cc-f963-48b8-8122-14f78bceb38f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisUpdateOffload
+title: NdisUpdateOffload function
+author: windows-driver-content
+description: A protocol or intermediate driver calls the NdisUpdateOffload function to update previously offloaded TCP chimney state objects.
+old-location: netvista\ndisupdateoffload.htm
+old-project: netvista
+ms.assetid: 1e85357d-9fe2-406b-bc1a-69e4357a0f8b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisUpdateOffload function [Network Drivers Starting with Windows Vista], NdisUpdateOffload, ndischimney/NdisUpdateOffload, netvista.ndisupdateoffload, tcp_chim_ndis_func_e33474cc-f963-48b8-8122-14f78bceb38f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisUpdateOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

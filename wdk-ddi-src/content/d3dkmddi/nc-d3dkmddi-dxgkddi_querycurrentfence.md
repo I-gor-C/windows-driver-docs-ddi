@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_QUERYCURRENTFENCE
-title : DXGKDDI_QUERYCURRENTFENCE
-author : windows-driver-content
-description : The DxgkDdiQueryCurrentFence function queries about the latest completed submission fence identifier in the hardware command execution unit.
-old-location : display\dxgkddiquerycurrentfence.htm
-old-project : display
-ms.assetid : 0ca4d42f-3036-4b81-91a4-fbce7ac891fe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiquerycurrentfence, DxgkDdiQueryCurrentFence callback function [Display Devices], DxgkDdiQueryCurrentFence, DXGKDDI_QUERYCURRENTFENCE, DXGKDDI_QUERYCURRENTFENCE, d3dkmddi/DxgkDdiQueryCurrentFence, DmFunctions_d8fe2a82-bd21-4071-9dcf-5b3a12fe25ef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_QUERYCURRENTFENCE
+title: DXGKDDI_QUERYCURRENTFENCE
+author: windows-driver-content
+description: The DxgkDdiQueryCurrentFence function queries about the latest completed submission fence identifier in the hardware command execution unit.
+old-location: display\dxgkddiquerycurrentfence.htm
+old-project: display
+ms.assetid: 0ca4d42f-3036-4b81-91a4-fbce7ac891fe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiquerycurrentfence, DxgkDdiQueryCurrentFence callback function [Display Devices], DxgkDdiQueryCurrentFence, DXGKDDI_QUERYCURRENTFENCE, DXGKDDI_QUERYCURRENTFENCE, d3dkmddi/DxgkDdiQueryCurrentFence, DmFunctions_d8fe2a82-bd21-4071-9dcf-5b3a12fe25ef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiQueryCurrentFence
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

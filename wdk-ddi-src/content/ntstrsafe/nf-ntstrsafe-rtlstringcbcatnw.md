@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbCatNW
-title : RtlStringCbCatNW function
-author : windows-driver-content
-description : The RtlStringCbCatNW and RtlStringCbCatNA functions concatenate two byte-counted strings while limiting the size of the appended string.
-old-location : kernel\rtlstringcbcatn.htm
-old-project : kernel
-ms.assetid : 60ecabb1-5607-4962-82c6-8081916b507d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlStringCbCatNW, safestrings_3f453d8e-bae5-466f-a55a-2b6a68d5cb57.xml, RtlStringCbCatNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatNW, RtlStringCbCatN, ntstrsafe/RtlStringCbCatNA, RtlStringCbCatNA, kernel.rtlstringcbcatn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbCatNW (Unicode) and RtlStringCbCatNA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbCatNW
+title: RtlStringCbCatNW function
+author: windows-driver-content
+description: The RtlStringCbCatNW and RtlStringCbCatNA functions concatenate two byte-counted strings while limiting the size of the appended string.
+old-location: kernel\rtlstringcbcatn.htm
+old-project: kernel
+ms.assetid: 60ecabb1-5607-4962-82c6-8081916b507d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlStringCbCatNW, safestrings_3f453d8e-bae5-466f-a55a-2b6a68d5cb57.xml, RtlStringCbCatNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatNW, RtlStringCbCatN, ntstrsafe/RtlStringCbCatNA, RtlStringCbCatNA, kernel.rtlstringcbcatn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbCatNW (Unicode) and RtlStringCbCatNA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbCatNW
+-	RtlStringCbCatNA
+-	RtlStringCbCatNW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

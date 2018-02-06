@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NDK_LOCAL_ENDPOINT_ENTRY
-title : "_NDIS_NDK_LOCAL_ENDPOINT_ENTRY"
-author : windows-driver-content
-description : The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure specifies an ND local endpoint entry for an ND local endpoint on a miniport adapter.
-old-location : netvista\ndis_ndk_local_endpoint_entry.htm
-old-project : netvista
-ms.assetid : 83B88D3D-8FBF-4DC1-8A73-FAB306281F36
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure [Network Drivers Starting with Windows Vista], NDIS_NDK_LOCAL_ENDPOINT_ENTRY, _NDIS_NDK_LOCAL_ENDPOINT_ENTRY, netvista.ndis_ndk_local_endpoint_entry, ntddndis/NDIS_NDK_LOCAL_ENDPOINT_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NDK_LOCAL_ENDPOINT_ENTRY
+UID: NS:ntddndis._NDIS_NDK_LOCAL_ENDPOINT_ENTRY
+title: "_NDIS_NDK_LOCAL_ENDPOINT_ENTRY"
+author: windows-driver-content
+description: The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure specifies an ND local endpoint entry for an ND local endpoint on a miniport adapter.
+old-location: netvista\ndis_ndk_local_endpoint_entry.htm
+old-project: netvista
+ms.assetid: 83B88D3D-8FBF-4DC1-8A73-FAB306281F36
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure [Network Drivers Starting with Windows Vista], NDIS_NDK_LOCAL_ENDPOINT_ENTRY, _NDIS_NDK_LOCAL_ENDPOINT_ENTRY, netvista.ndis_ndk_local_endpoint_entry, ntddndis/NDIS_NDK_LOCAL_ENDPOINT_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_NDK_LOCAL_ENDPOINT_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NDK_LOCAL_ENDPOINT_ENTRY
 ---
 
 # _NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure

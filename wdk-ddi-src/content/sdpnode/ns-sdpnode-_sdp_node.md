@@ -1,42 +1,47 @@
 ---
-UID : NS:sdpnode._SDP_NODE
-title : "_SDP_NODE"
-author : windows-driver-content
-description : The SDP_NODE structure holds information about an element in a tree-based representation of an SDP record.
-old-location : bltooth\sdp_node.htm
-old-project : bltooth
-ms.assetid : 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PSDP_NODE structure pointer [Bluetooth Devices], bltooth.sdp_node, sdpnode/PSDP_NODE, _SDP_NODE, PSDP_NODE, bth_structs_30367149-bffb-4ff9-a6d8-2f73c5198874.xml, *PSDP_NODE, SDP_NODE structure [Bluetooth Devices], sdpnode/SDP_NODE, SDP_NODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sdpnode.h
-req.include-header : Sdpnode.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDP_NODE, *PSDP_NODE
-req.product : Windows 10 or later.
+UID: NS:sdpnode._SDP_NODE
+title: "_SDP_NODE"
+author: windows-driver-content
+description: The SDP_NODE structure holds information about an element in a tree-based representation of an SDP record.
+old-location: bltooth\sdp_node.htm
+old-project: bltooth
+ms.assetid: 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PSDP_NODE structure pointer [Bluetooth Devices], bltooth.sdp_node, sdpnode/PSDP_NODE, _SDP_NODE, PSDP_NODE, bth_structs_30367149-bffb-4ff9-a6d8-2f73c5198874.xml, *PSDP_NODE, SDP_NODE structure [Bluetooth Devices], sdpnode/SDP_NODE, SDP_NODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sdpnode.h
+req.include-header: Sdpnode.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdpnode.h
+apiname:
+-	SDP_NODE
+product: Windows
+targetos: Windows
+req.typenames: SDP_NODE, *PSDP_NODE
+req.product: Windows 10 or later.
 ---
 
 # _SDP_NODE structure

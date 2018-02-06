@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInvokeAcpiMethod
-title : StorPortInvokeAcpiMethod function
-author : windows-driver-content
-description : The StorPortInvokeAcpiMethod routine executes an ACPI method for a storage device.
-old-location : storage\storportinvokeacpimethod.htm
-old-project : storage
-ms.assetid : 2A8EF694-B699-46A0-9B1D-B7D0831F3944
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportinvokeacpimethod, storport/StorPortInvokeAcpiMethod, StorPortInvokeAcpiMethod routine [Storage Devices], StorPortInvokeAcpiMethod
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInvokeAcpiMethod
+title: StorPortInvokeAcpiMethod function
+author: windows-driver-content
+description: The StorPortInvokeAcpiMethod routine executes an ACPI method for a storage device.
+old-location: storage\storportinvokeacpimethod.htm
+old-project: storage
+ms.assetid: 2A8EF694-B699-46A0-9B1D-B7D0831F3944
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportinvokeacpimethod, storport/StorPortInvokeAcpiMethod, StorPortInvokeAcpiMethod routine [Storage Devices], StorPortInvokeAcpiMethod
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInvokeAcpiMethod
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

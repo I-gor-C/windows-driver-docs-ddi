@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_QUERYENGINESTATUS
-title : "_DXGKARG_QUERYENGINESTATUS"
-author : windows-driver-content
-description : Used in a call to the DxgkDdiQueryEngineStatus function to specify a node within an active physical adapter (engine) that is to be queried for its progress.
-old-location : display\dxgkarg_queryenginestatus.htm
-old-project : display
-ms.assetid : f7255c97-5c25-4ee2-988b-ff301878fe7c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_QUERYENGINESTATUS, *INOUT_PDXGKARG_QUERYENGINESTATUS, display.dxgkarg_queryenginestatus, DXGKARG_QUERYENGINESTATUS structure [Display Devices], _DXGKARG_QUERYENGINESTATUS, d3dkmddi/DXGKARG_QUERYENGINESTATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_QUERYENGINESTATUS
+UID: NS:d3dkmddi._DXGKARG_QUERYENGINESTATUS
+title: "_DXGKARG_QUERYENGINESTATUS"
+author: windows-driver-content
+description: Used in a call to the DxgkDdiQueryEngineStatus function to specify a node within an active physical adapter (engine) that is to be queried for its progress.
+old-location: display\dxgkarg_queryenginestatus.htm
+old-project: display
+ms.assetid: f7255c97-5c25-4ee2-988b-ff301878fe7c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_QUERYENGINESTATUS, *INOUT_PDXGKARG_QUERYENGINESTATUS, display.dxgkarg_queryenginestatus, DXGKARG_QUERYENGINESTATUS structure [Display Devices], _DXGKARG_QUERYENGINESTATUS, d3dkmddi/DXGKARG_QUERYENGINESTATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_QUERYENGINESTATUS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_QUERYENGINESTATUS
 ---
 
 # _DXGKARG_QUERYENGINESTATUS structure

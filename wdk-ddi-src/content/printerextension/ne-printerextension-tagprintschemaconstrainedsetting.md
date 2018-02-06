@@ -1,42 +1,47 @@
 ---
-UID : NE:printerextension.tagPrintSchemaConstrainedSetting
-title : tagPrintSchemaConstrainedSetting
-author : windows-driver-content
-description : The PrintSchemaConstrainedSetting enumeration specifies whether the Option is available based on the current device configuration. The constrained attribute appears only in a PrintCapabilities document.
-old-location : print\printschemaconstrainedsetting.htm
-old-project : print
-ms.assetid : 637A210F-9FD7-49BD-AF71-8A77E07D5C20
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.printschemaconstrainedsetting, tagPrintSchemaConstrainedSetting, PrintSchemaConstrainedSetting_None, PrintSchemaConstrainedSetting, printerextension/PrintSchemaConstrainedSetting, PrintSchemaConstrainedSetting enumeration [Print Devices], printerextension/PrintSchemaConstrainedSetting_None, PrintSchemaConstrainedSetting_PrintTicket, PrintSchemaConstrainedSetting_Device, printerextension/PrintSchemaConstrainedSetting_Admin, PrintSchemaConstrainedSetting_Admin, printerextension/PrintSchemaConstrainedSetting_Device, printerextension/PrintSchemaConstrainedSetting_PrintTicket
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaConstrainedSetting
-req.product : Windows 10 or later.
+UID: NE:printerextension.tagPrintSchemaConstrainedSetting
+title: tagPrintSchemaConstrainedSetting
+author: windows-driver-content
+description: The PrintSchemaConstrainedSetting enumeration specifies whether the Option is available based on the current device configuration. The constrained attribute appears only in a PrintCapabilities document.
+old-location: print\printschemaconstrainedsetting.htm
+old-project: print
+ms.assetid: 637A210F-9FD7-49BD-AF71-8A77E07D5C20
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.printschemaconstrainedsetting, tagPrintSchemaConstrainedSetting, PrintSchemaConstrainedSetting_None, PrintSchemaConstrainedSetting, printerextension/PrintSchemaConstrainedSetting, PrintSchemaConstrainedSetting enumeration [Print Devices], printerextension/PrintSchemaConstrainedSetting_None, PrintSchemaConstrainedSetting_PrintTicket, PrintSchemaConstrainedSetting_Device, printerextension/PrintSchemaConstrainedSetting_Admin, PrintSchemaConstrainedSetting_Admin, printerextension/PrintSchemaConstrainedSetting_Device, printerextension/PrintSchemaConstrainedSetting_PrintTicket
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Printerextension.h
+apiname:
+-	PrintSchemaConstrainedSetting
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaConstrainedSetting
+req.product: Windows 10 or later.
 ---
 
 # tagPrintSchemaConstrainedSetting Enumeration
@@ -55,26 +60,26 @@ typedef enum tagPrintSchemaConstrainedSetting {
 ## Constants
 
 <table>
-
-<tr>
-<td>PrintSchemaConstrainedSetting_Admin</td>
-<td>The Option is constrained by the administrator's settings. The Option constraint should not be removable by a user without administrator privileges.</td>
-</tr>
-
-<tr>
-<td>PrintSchemaConstrainedSetting_Device</td>
-<td>The Option is constrained by the device configuration. The Option should not be removable by either a user or administrator without changing the device configuration.</td>
-</tr>
-
-<tr>
-<td>PrintSchemaConstrainedSetting_None</td>
-<td>The Option is not constrained.</td>
-</tr>
-
-<tr>
-<td>PrintSchemaConstrainedSetting_PrintTicket</td>
-<td>The Option is constrained by the PrintTicket settings. Changing the PrintTicket document settings should be able to remove the constraint.</td>
-</tr>
+            
+                <tr>
+                    <td>PrintSchemaConstrainedSetting_Admin</td>
+                    <td>The Option is constrained by the administrator's settings. The Option constraint should not be removable by a user without administrator privileges.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintSchemaConstrainedSetting_Device</td>
+                    <td>The Option is constrained by the device configuration. The Option should not be removable by either a user or administrator without changing the device configuration.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintSchemaConstrainedSetting_None</td>
+                    <td>The Option is not constrained.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintSchemaConstrainedSetting_PrintTicket</td>
+                    <td>The Option is constrained by the PrintTicket settings. Changing the PrintTicket document settings should be able to remove the constraint.</td>
+                </tr>
 </table>
 
 
@@ -84,9 +89,9 @@ typedef enum tagPrintSchemaConstrainedSetting {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | printerextension.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/57E13395-9E23-4708-B4EC-6839CB6FC62B">IPrintSchemaOption::Constrained</a>
+        <a href="https://msdn.microsoft.com/57E13395-9E23-4708-B4EC-6839CB6FC62B">IPrintSchemaOption::Constrained</a>
 
  
 

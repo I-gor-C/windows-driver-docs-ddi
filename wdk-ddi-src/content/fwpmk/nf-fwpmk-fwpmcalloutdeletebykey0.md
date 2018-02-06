@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpmk.FwpmCalloutDeleteByKey0
-title : FwpmCalloutDeleteByKey0 function
-author : windows-driver-content
-description : The FwpmCalloutDeleteByKey0 function deletes a callout from the filter engine.Note  FwpmCalloutDeleteByKey0 is a specific version of FwpmCalloutDeleteByKey.
-old-location : netvista\fwpmcalloutdeletebykey0.htm
-old-project : netvista
-ms.assetid : b4c3cb7e-9c4a-40a5-a11b-952562c4790b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpmCalloutDeleteByKey0, netvista.fwpmcalloutdeletebykey0, fwpmk/FwpmCalloutDeleteByKey0, wfp_ref_2_funct_2_fwpm_606dbd2f-8df7-497b-8feb-ba7aedbabedb.xml, FwpmCalloutDeleteByKey0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpmk.h
-req.include-header : Fwpmk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NF:fwpmk.FwpmCalloutDeleteByKey0
+title: FwpmCalloutDeleteByKey0 function
+author: windows-driver-content
+description: The FwpmCalloutDeleteByKey0 function deletes a callout from the filter engine.Note  FwpmCalloutDeleteByKey0 is a specific version of FwpmCalloutDeleteByKey.
+old-location: netvista\fwpmcalloutdeletebykey0.htm
+old-project: netvista
+ms.assetid: b4c3cb7e-9c4a-40a5-a11b-952562c4790b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpmCalloutDeleteByKey0, netvista.fwpmcalloutdeletebykey0, fwpmk/FwpmCalloutDeleteByKey0, wfp_ref_2_funct_2_fwpm_606dbd2f-8df7-497b-8feb-ba7aedbabedb.xml, FwpmCalloutDeleteByKey0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpmk.h
+req.include-header: Fwpmk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpmCalloutDeleteByKey0
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

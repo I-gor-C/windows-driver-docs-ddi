@@ -1,41 +1,46 @@
 ---
-UID : NF:mrxfcb.RxAcquireSharedFcbResourceInMRx
-title : RxAcquireSharedFcbResourceInMRx function
-author : windows-driver-content
-description : RxAcquireSharedFcbResourceInMRx acquires the FCB resource for a network mini-redirector driver in shared mode.
-old-location : ifsk\rxacquiresharedfcbresourceinmrx.htm
-old-project : ifsk
-ms.assetid : 5ef976a7-5be6-414b-a558-75c107f75d61
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxAcquireSharedFcbResourceInMRx routine [Installable File System Drivers], ifsk.rxacquiresharedfcbresourceinmrx, mrxfcb/RxAcquireSharedFcbResourceInMRx, rxref_8be6c6b8-c906-4071-b1a1-7687f044dcb7.xml, RxAcquireSharedFcbResourceInMRx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrxfcb.h
-req.include-header : Mrxfcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrxfcb.RxAcquireSharedFcbResourceInMRx
+title: RxAcquireSharedFcbResourceInMRx function
+author: windows-driver-content
+description: RxAcquireSharedFcbResourceInMRx acquires the FCB resource for a network mini-redirector driver in shared mode.
+old-location: ifsk\rxacquiresharedfcbresourceinmrx.htm
+old-project: ifsk
+ms.assetid: 5ef976a7-5be6-414b-a558-75c107f75d61
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxAcquireSharedFcbResourceInMRx routine [Installable File System Drivers], ifsk.rxacquiresharedfcbresourceinmrx, mrxfcb/RxAcquireSharedFcbResourceInMRx, rxref_8be6c6b8-c906-4071-b1a1-7687f044dcb7.xml, RxAcquireSharedFcbResourceInMRx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrxfcb.h
+req.include-header: Mrxfcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrxfcb.h
+apiname:
+-	RxAcquireSharedFcbResourceInMRx
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

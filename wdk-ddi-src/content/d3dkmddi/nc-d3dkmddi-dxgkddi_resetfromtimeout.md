@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RESETFROMTIMEOUT
-title : DXGKDDI_RESETFROMTIMEOUT
-author : windows-driver-content
-description : The DxgkDdiResetFromTimeout function resets the graphics processing unit (GPU) after a hardware timeout occurs and guarantees that the GPU is not writing or reading any memory by the time that DxgkDdiResetFromTimeout returns.
-old-location : display\dxgkddiresetfromtimeout.htm
-old-project : display
-ms.assetid : b9bfc801-33f6-4911-ab7d-8e3c99a5e2e9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiresetfromtimeout, DxgkDdiResetFromTimeout callback function [Display Devices], DxgkDdiResetFromTimeout, DXGKDDI_RESETFROMTIMEOUT, DXGKDDI_RESETFROMTIMEOUT, d3dkmddi/DxgkDdiResetFromTimeout, DmFunctions_de82b888-dc3d-40b6-a3c3-360254efb972.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RESETFROMTIMEOUT
+title: DXGKDDI_RESETFROMTIMEOUT
+author: windows-driver-content
+description: The DxgkDdiResetFromTimeout function resets the graphics processing unit (GPU) after a hardware timeout occurs and guarantees that the GPU is not writing or reading any memory by the time that DxgkDdiResetFromTimeout returns.
+old-location: display\dxgkddiresetfromtimeout.htm
+old-project: display
+ms.assetid: b9bfc801-33f6-4911-ab7d-8e3c99a5e2e9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiresetfromtimeout, DxgkDdiResetFromTimeout callback function [Display Devices], DxgkDdiResetFromTimeout, DXGKDDI_RESETFROMTIMEOUT, DXGKDDI_RESETFROMTIMEOUT, d3dkmddi/DxgkDdiResetFromTimeout, DmFunctions_de82b888-dc3d-40b6-a3c3-360254efb972.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiResetFromTimeout
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

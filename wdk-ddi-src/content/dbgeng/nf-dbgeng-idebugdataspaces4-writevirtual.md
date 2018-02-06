@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.WriteVirtual
-title : IDebugDataSpaces4::WriteVirtual method
-author : windows-driver-content
-description : The WriteVirtual method writes data to the target's virtual address space.
-old-location : debugger\writevirtual.htm
-old-project : debugger
-ms.assetid : 52813320-90a4-4dca-9b9c-44aa22fc49de
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces::WriteVirtual, IDebugDataSpaces_2f8783ea-c7e4-438f-ad5b-898d0072a2f4.xml, IDebugDataSpaces4 interface [Windows Debugging], WriteVirtual method, dbgeng/IDebugDataSpaces3::WriteVirtual, IDebugDataSpaces2::WriteVirtual, WriteVirtual, IDebugDataSpaces3::WriteVirtual, WriteVirtual method [Windows Debugging], IDebugDataSpaces2 interface, WriteVirtual method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], WriteVirtual method, WriteVirtual method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4::WriteVirtual, IDebugDataSpaces2 interface [Windows Debugging], WriteVirtual method, WriteVirtual method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::WriteVirtual, debugger.writevirtual, dbgeng/IDebugDataSpaces::WriteVirtual, IDebugDataSpaces interface [Windows Debugging], WriteVirtual method, dbgeng/IDebugDataSpaces2::WriteVirtual, WriteVirtual method [Windows Debugging], IDebugDataSpaces4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.WriteVirtual
+title: IDebugDataSpaces4::WriteVirtual method
+author: windows-driver-content
+description: The WriteVirtual method writes data to the target's virtual address space.
+old-location: debugger\writevirtual.htm
+old-project: debugger
+ms.assetid: 52813320-90a4-4dca-9b9c-44aa22fc49de
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces::WriteVirtual, IDebugDataSpaces_2f8783ea-c7e4-438f-ad5b-898d0072a2f4.xml, IDebugDataSpaces4 interface [Windows Debugging], WriteVirtual method, dbgeng/IDebugDataSpaces3::WriteVirtual, IDebugDataSpaces2::WriteVirtual, WriteVirtual, IDebugDataSpaces3::WriteVirtual, WriteVirtual method [Windows Debugging], IDebugDataSpaces2 interface, WriteVirtual method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], WriteVirtual method, WriteVirtual method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4::WriteVirtual, IDebugDataSpaces2 interface [Windows Debugging], WriteVirtual method, WriteVirtual method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::WriteVirtual, debugger.writevirtual, dbgeng/IDebugDataSpaces::WriteVirtual, IDebugDataSpaces interface [Windows Debugging], WriteVirtual method, dbgeng/IDebugDataSpaces2::WriteVirtual, WriteVirtual method [Windows Debugging], IDebugDataSpaces4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.WriteVirtual
+-	IDebugDataSpaces2.WriteVirtual
+-	IDebugDataSpaces3.WriteVirtual
+-	IDebugDataSpaces4.WriteVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

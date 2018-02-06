@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetExtensionFunction
-title : IDebugControl3::GetExtensionFunction method
-author : windows-driver-content
-description : The GetExtensionFunction method returns a pointer to an extension function from an extension library.
-old-location : debugger\getextensionfunction.htm
-old-project : debugger
-ms.assetid : bad50869-472c-4eb7-9bc0-0fa2d27ee753
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetExtensionFunction method, IDebugControl_9f227e3a-ee1e-44d0-9675-ec773e3391e5.xml, IDebugControl3, dbgeng/IDebugControl::GetExtensionFunction, IDebugControl3 interface [Windows Debugging], GetExtensionFunction method, GetExtensionFunction, debugger.getextensionfunction, GetExtensionFunction method [Windows Debugging], IDebugControl2 interface, IDebugControl::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], dbgeng/IDebugControl2::GetExtensionFunction, IDebugControl2 interface [Windows Debugging], GetExtensionFunction method, GetExtensionFunction method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::GetExtensionFunction, IDebugControl2::GetExtensionFunction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetExtensionFunction
+title: IDebugControl3::GetExtensionFunction method
+author: windows-driver-content
+description: The GetExtensionFunction method returns a pointer to an extension function from an extension library.
+old-location: debugger\getextensionfunction.htm
+old-project: debugger
+ms.assetid: bad50869-472c-4eb7-9bc0-0fa2d27ee753
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetExtensionFunction method, IDebugControl_9f227e3a-ee1e-44d0-9675-ec773e3391e5.xml, IDebugControl3, dbgeng/IDebugControl::GetExtensionFunction, IDebugControl3 interface [Windows Debugging], GetExtensionFunction method, GetExtensionFunction, debugger.getextensionfunction, GetExtensionFunction method [Windows Debugging], IDebugControl2 interface, IDebugControl::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], dbgeng/IDebugControl2::GetExtensionFunction, IDebugControl2 interface [Windows Debugging], GetExtensionFunction method, GetExtensionFunction method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::GetExtensionFunction, IDebugControl2::GetExtensionFunction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetExtensionFunction
+-	IDebugControl2.GetExtensionFunction
+-	IDebugControl3.GetExtensionFunction
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

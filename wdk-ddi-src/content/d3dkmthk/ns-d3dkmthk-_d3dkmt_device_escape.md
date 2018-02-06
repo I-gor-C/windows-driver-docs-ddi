@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_DEVICE_ESCAPE
-title : "_D3DKMT_DEVICE_ESCAPE"
-author : windows-driver-content
-description : Do not use the D3DKMT_DEVICE_ESCAPE structure or D3DKMT_DEVICEESCAPE_TYPE enumeration. They are for testing purposes only. The D3DKMT_DEVICE_ESCAPE structure describes how to control the display device in a call to the D3DKMTEscape function.
-old-location : display\d3dkmt_device_escape.htm
-old-project : display
-ms.assetid : 274bdd80-e898-42c7-8adc-8eae4e895b5f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_DEVICE_ESCAPE, OpenGL_Structs_38febe04-ae75-475a-ab69-81995acb567b.xml, display.d3dkmt_device_escape, D3DKMT_DEVICE_ESCAPE, D3DKMT_DEVICE_ESCAPE structure [Display Devices], d3dkmthk/D3DKMT_DEVICE_ESCAPE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DEVICE_ESCAPE
+UID: NS:d3dkmthk._D3DKMT_DEVICE_ESCAPE
+title: "_D3DKMT_DEVICE_ESCAPE"
+author: windows-driver-content
+description: Do not use the D3DKMT_DEVICE_ESCAPE structure or D3DKMT_DEVICEESCAPE_TYPE enumeration. They are for testing purposes only. The D3DKMT_DEVICE_ESCAPE structure describes how to control the display device in a call to the D3DKMTEscape function.
+old-location: display\d3dkmt_device_escape.htm
+old-project: display
+ms.assetid: 274bdd80-e898-42c7-8adc-8eae4e895b5f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_DEVICE_ESCAPE, OpenGL_Structs_38febe04-ae75-475a-ab69-81995acb567b.xml, display.d3dkmt_device_escape, D3DKMT_DEVICE_ESCAPE, D3DKMT_DEVICE_ESCAPE structure [Display Devices], d3dkmthk/D3DKMT_DEVICE_ESCAPE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DEVICE_ESCAPE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DEVICE_ESCAPE
 ---
 
 # _D3DKMT_DEVICE_ESCAPE structure

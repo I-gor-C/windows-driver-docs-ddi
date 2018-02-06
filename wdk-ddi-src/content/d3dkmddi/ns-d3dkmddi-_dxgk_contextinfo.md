@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_CONTEXTINFO
-title : "_DXGK_CONTEXTINFO"
-author : windows-driver-content
-description : The DXGK_CONTEXTINFO structure describes a device context.
-old-location : display\dxgk_contextinfo.htm
-old-project : display
-ms.assetid : 52c98ca7-8024-42d6-9001-1a7a69d24a95
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_CONTEXTINFO, DXGK_CONTEXTINFO structure [Display Devices], DmStructs_e95e533c-2156-4384-9e7e-718e7d61c458.xml, display.dxgk_contextinfo, DXGK_CONTEXTINFO, d3dkmddi/DXGK_CONTEXTINFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_CONTEXTINFO
+UID: NS:d3dkmddi._DXGK_CONTEXTINFO
+title: "_DXGK_CONTEXTINFO"
+author: windows-driver-content
+description: The DXGK_CONTEXTINFO structure describes a device context.
+old-location: display\dxgk_contextinfo.htm
+old-project: display
+ms.assetid: 52c98ca7-8024-42d6-9001-1a7a69d24a95
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_CONTEXTINFO, DXGK_CONTEXTINFO structure [Display Devices], DmStructs_e95e533c-2156-4384-9e7e-718e7d61c458.xml, display.dxgk_contextinfo, DXGK_CONTEXTINFO, d3dkmddi/DXGK_CONTEXTINFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_CONTEXTINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_CONTEXTINFO
 ---
 
 # _DXGK_CONTEXTINFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDEO_PRESENT_TARGET
-title : "_D3DKMDT_VIDEO_PRESENT_TARGET"
-author : windows-driver-content
-description : The D3DKMDT_VIDEO_PRESENT_TARGET structure contains information about a video present target.
-old-location : display\d3dkmdt_video_present_target.htm
-old-project : display
-ms.assetid : e36aba12-51fc-486c-a92c-47f72a4bcb0a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VIDEO_PRESENT_TARGET structure [Display Devices], D3DKMDT_VIDEO_PRESENT_TARGET, display.d3dkmdt_video_present_target, _D3DKMDT_VIDEO_PRESENT_TARGET, d3dkmdt/D3DKMDT_VIDEO_PRESENT_TARGET, DmStructs_ef451c58-7ee5-4c52-9afe-9aab45114186.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDEO_PRESENT_TARGET
+UID: NS:d3dkmdt._D3DKMDT_VIDEO_PRESENT_TARGET
+title: "_D3DKMDT_VIDEO_PRESENT_TARGET"
+author: windows-driver-content
+description: The D3DKMDT_VIDEO_PRESENT_TARGET structure contains information about a video present target.
+old-location: display\d3dkmdt_video_present_target.htm
+old-project: display
+ms.assetid: e36aba12-51fc-486c-a92c-47f72a4bcb0a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_VIDEO_PRESENT_TARGET structure [Display Devices], D3DKMDT_VIDEO_PRESENT_TARGET, display.d3dkmdt_video_present_target, _D3DKMDT_VIDEO_PRESENT_TARGET, d3dkmdt/D3DKMDT_VIDEO_PRESENT_TARGET, DmStructs_ef451c58-7ee5-4c52-9afe-9aab45114186.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDEO_PRESENT_TARGET
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDEO_PRESENT_TARGET
 ---
 
 # _D3DKMDT_VIDEO_PRESENT_TARGET structure

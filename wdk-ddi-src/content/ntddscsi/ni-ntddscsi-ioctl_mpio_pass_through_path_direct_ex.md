@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
-title : IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
-author : windows-driver-content
-description : The IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX control code request is the extended version of the IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT request. This request provides support for bidirectional data transfers and allows a command data block (CDB) &gt; 16 bytes.
-old-location : storage\ioctl_mpio_pass_through_path_direct_ex.htm
-old-project : storage
-ms.assetid : 2B5AF281-C080-4ED9-9C58-5757CDE0117A
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mpio_pass_through_path_direct_ex, IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX control code [Storage Devices], IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX, ntddscsi/IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
+title: IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
+author: windows-driver-content
+description: The IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX control code request is the extended version of the IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT request. This request provides support for bidirectional data transfers and allows a command data block (CDB) &gt; 16 bytes.
+old-location: storage\ioctl_mpio_pass_through_path_direct_ex.htm
+old-project: storage
+ms.assetid: 2B5AF281-C080-4ED9-9C58-5757CDE0117A
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mpio_pass_through_path_direct_ex, IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX control code [Storage Devices], IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX, ntddscsi/IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_REQUEST_COMPONENT_PERF_STATE
-title : "_PEP_REQUEST_COMPONENT_PERF_STATE"
-author : windows-driver-content
-description : The PEP_REQUEST_COMPONENT_PERF_STATE structure contains a list of performance state (P-state) changes requested by the Windows power management framework (PoFx), plus status information about the handling of these requests by the platform extension plug-in (PEP).
-old-location : kernel\pep_request_component_perf_state.htm
-old-project : kernel
-ms.assetid : 8334434D-D2FC-4967-8234-3C097908C70B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_REQUEST_COMPONENT_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_REQUEST_COMPONENT_PERF_STATE, PPEP_REQUEST_COMPONENT_PERF_STATE, kernel.pep_request_component_perf_state, pepfx/PPEP_REQUEST_COMPONENT_PERF_STATE, PEP_REQUEST_COMPONENT_PERF_STATE structure [Kernel-Mode Driver Architecture], _PEP_REQUEST_COMPONENT_PERF_STATE, pepfx/PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE
+UID: NS:pepfx._PEP_REQUEST_COMPONENT_PERF_STATE
+title: "_PEP_REQUEST_COMPONENT_PERF_STATE"
+author: windows-driver-content
+description: The PEP_REQUEST_COMPONENT_PERF_STATE structure contains a list of performance state (P-state) changes requested by the Windows power management framework (PoFx), plus status information about the handling of these requests by the platform extension plug-in (PEP).
+old-location: kernel\pep_request_component_perf_state.htm
+old-project: kernel
+ms.assetid: 8334434D-D2FC-4967-8234-3C097908C70B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_REQUEST_COMPONENT_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_REQUEST_COMPONENT_PERF_STATE, PPEP_REQUEST_COMPONENT_PERF_STATE, kernel.pep_request_component_perf_state, pepfx/PPEP_REQUEST_COMPONENT_PERF_STATE, PEP_REQUEST_COMPONENT_PERF_STATE structure [Kernel-Mode Driver Architecture], _PEP_REQUEST_COMPONENT_PERF_STATE, pepfx/PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_REQUEST_COMPONENT_PERF_STATE
+product: Windows
+targetos: Windows
+req.typenames: PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE
 ---
 
 # _PEP_REQUEST_COMPONENT_PERF_STATE structure

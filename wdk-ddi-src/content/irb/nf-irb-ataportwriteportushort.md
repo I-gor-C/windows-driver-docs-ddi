@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortWritePortUshort
-title : AtaPortWritePortUshort function
-author : windows-driver-content
-description : The AtaPortWritePortUshort routine transfers a USHORT value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportwriteportushort.htm
-old-project : storage
-ms.assetid : 14b47f0a-5de8-4650-8a90-40e9da8537f1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortWritePortUshort routine [Storage Devices], irb/AtaPortWritePortUshort, AtaPortWritePortUshort, atartns_1766efcd-f235-43ae-8fbe-ab56a858a7ee.xml, storage.ataportwriteportushort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortWritePortUshort
+title: AtaPortWritePortUshort function
+author: windows-driver-content
+description: The AtaPortWritePortUshort routine transfers a USHORT value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportwriteportushort.htm
+old-project: storage
+ms.assetid: 14b47f0a-5de8-4650-8a90-40e9da8537f1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortWritePortUshort routine [Storage Devices], irb/AtaPortWritePortUshort, AtaPortWritePortUshort, atartns_1766efcd-f235-43ae-8fbe-ab56a858a7ee.xml, storage.ataportwriteportushort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortWritePortUshort
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

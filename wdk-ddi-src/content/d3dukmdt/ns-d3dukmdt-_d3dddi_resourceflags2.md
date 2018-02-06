@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_RESOURCEFLAGS2
-title : "_D3DDDI_RESOURCEFLAGS2"
-author : windows-driver-content
-description : Identifies the type of resource to create in a call to the driver's CreateResource2 function.
-old-location : display\d3dddi_resourceflags2.htm
-old-project : display
-ms.assetid : 2edf2104-ad17-4c84-b991-57e64565029f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_RESOURCEFLAGS2 structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2, _D3DDDI_RESOURCEFLAGS2, display.d3dddi_resourceflags2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dukmdt.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_RESOURCEFLAGS2
+UID: NS:d3dukmdt._D3DDDI_RESOURCEFLAGS2
+title: "_D3DDDI_RESOURCEFLAGS2"
+author: windows-driver-content
+description: Identifies the type of resource to create in a call to the driver's CreateResource2 function.
+old-location: display\d3dddi_resourceflags2.htm
+old-project: display
+ms.assetid: 2edf2104-ad17-4c84-b991-57e64565029f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_RESOURCEFLAGS2 structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2, _D3DDDI_RESOURCEFLAGS2, display.d3dddi_resourceflags2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dukmdt.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dukmdt.h
+apiname:
+-	D3DDDI_RESOURCEFLAGS2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_RESOURCEFLAGS2
 ---
 
 # _D3DDDI_RESOURCEFLAGS2 structure

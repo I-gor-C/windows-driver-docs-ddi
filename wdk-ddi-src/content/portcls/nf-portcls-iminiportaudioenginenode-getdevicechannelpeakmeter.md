@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelPeakMeter
-title : IMiniportAudioEngineNode::GetDeviceChannelPeakMeter method
-author : windows-driver-content
-description : Gets the PeakMeter value for the audio device channel.
-old-location : audio\iminiportaudioenginenode_getdevicechannelpeakmeter.htm
-old-project : audio
-ms.assetid : 31F291ED-0B04-4CDF-A83B-7CF3717EC234
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportaudioenginenode_getdevicechannelpeakmeter, GetDeviceChannelPeakMeter method [Audio Devices], GetDeviceChannelPeakMeter, GetDeviceChannelPeakMeter method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelPeakMeter method, IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelPeakMeter
+title: IMiniportAudioEngineNode::GetDeviceChannelPeakMeter method
+author: windows-driver-content
+description: Gets the PeakMeter value for the audio device channel.
+old-location: audio\iminiportaudioenginenode_getdevicechannelpeakmeter.htm
+old-project: audio
+ms.assetid: 31F291ED-0B04-4CDF-A83B-7CF3717EC234
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportaudioenginenode_getdevicechannelpeakmeter, GetDeviceChannelPeakMeter method [Audio Devices], GetDeviceChannelPeakMeter, GetDeviceChannelPeakMeter method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelPeakMeter method, IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetDeviceChannelPeakMeter
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

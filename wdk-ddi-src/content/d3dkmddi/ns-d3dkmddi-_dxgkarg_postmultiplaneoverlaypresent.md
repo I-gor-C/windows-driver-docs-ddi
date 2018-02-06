@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
-title : "_DXGKARG_POSTMULTIPLANEOVERLAYPRESENT"
-author : windows-driver-content
-description : Contains arguments for the DxgkDdiPostMultiPlaneOverlayPresent function.
-old-location : display\dxgkarg_postmultiplaneoverlaypresent.htm
-old-project : display
-ms.assetid : E257606A-66EE-4F53-B661-F5FFC63E1F54
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, d3dkmddi/DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, display.dxgkarg_postmultiplaneoverlaypresent, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+UID: NS:d3dkmddi._DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+title: "_DXGKARG_POSTMULTIPLANEOVERLAYPRESENT"
+author: windows-driver-content
+description: Contains arguments for the DxgkDdiPostMultiPlaneOverlayPresent function.
+old-location: display\dxgkarg_postmultiplaneoverlaypresent.htm
+old-project: display
+ms.assetid: E257606A-66EE-4F53-B661-F5FFC63E1F54
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, d3dkmddi/DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT, display.dxgkarg_postmultiplaneoverlaypresent, DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_POSTMULTIPLANEOVERLAYPRESENT
 ---
 
 # _DXGKARG_POSTMULTIPLANEOVERLAYPRESENT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._BAND_LOCATION_INFO
-title : "_BAND_LOCATION_INFO"
-author : windows-driver-content
-description : The BAND_LOCATION_INFO structure specifies the location information for a band table entry query.
-old-location : storage\band_location_info.htm
-old-project : storage
-ms.assetid : A9E28600-45B2-4082-917F-29B3237DEC84
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/PBAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], _BAND_LOCATION_INFO, BAND_LOCATION_INFO, storage.band_location_info, BAND_LOCATION_INFO structure [Storage Devices], PBAND_LOCATION_INFO, ehstorbandmgmt/BAND_LOCATION_INFO, *PBAND_LOCATION_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBAND_LOCATION_INFO, BAND_LOCATION_INFO"
+UID: NS:ehstorbandmgmt._BAND_LOCATION_INFO
+title: "_BAND_LOCATION_INFO"
+author: windows-driver-content
+description: The BAND_LOCATION_INFO structure specifies the location information for a band table entry query.
+old-location: storage\band_location_info.htm
+old-project: storage
+ms.assetid: A9E28600-45B2-4082-917F-29B3237DEC84
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/PBAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], _BAND_LOCATION_INFO, BAND_LOCATION_INFO, storage.band_location_info, BAND_LOCATION_INFO structure [Storage Devices], PBAND_LOCATION_INFO, ehstorbandmgmt/BAND_LOCATION_INFO, *PBAND_LOCATION_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	BAND_LOCATION_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PBAND_LOCATION_INFO, BAND_LOCATION_INFO"
 ---
 
 # _BAND_LOCATION_INFO structure

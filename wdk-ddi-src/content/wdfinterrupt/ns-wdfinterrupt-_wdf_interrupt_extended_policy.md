@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfinterrupt._WDF_INTERRUPT_EXTENDED_POLICY
-title : "_WDF_INTERRUPT_EXTENDED_POLICY"
-author : windows-driver-content
-description : The WDF_INTERRUPT_EXTENDED_POLICY structure contains information about an interrupt's policy, priority, affinity, and group.
-old-location : wdf\wdf_interrupt_extended_policy.htm
-old-project : wdf
-ms.assetid : 28cc79e8-7078-4b29-ab2a-2eeca5c5b8b3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_INTERRUPT_EXTENDED_POLICY structure pointer, *PWDF_INTERRUPT_EXTENDED_POLICY, PWDF_INTERRUPT_EXTENDED_POLICY, DFInterruptObjectRef_db1feccc-0171-4163-b95f-6be057430176.xml, wdf.wdf_interrupt_extended_policy, wdfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY, _WDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY, wdfinterrupt/PWDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY structure, kmdf.wdf_interrupt_extended_policy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY"
-req.product : Windows 10 or later.
+UID: NS:wdfinterrupt._WDF_INTERRUPT_EXTENDED_POLICY
+title: "_WDF_INTERRUPT_EXTENDED_POLICY"
+author: windows-driver-content
+description: The WDF_INTERRUPT_EXTENDED_POLICY structure contains information about an interrupt's policy, priority, affinity, and group.
+old-location: wdf\wdf_interrupt_extended_policy.htm
+old-project: wdf
+ms.assetid: 28cc79e8-7078-4b29-ab2a-2eeca5c5b8b3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_INTERRUPT_EXTENDED_POLICY structure pointer, *PWDF_INTERRUPT_EXTENDED_POLICY, PWDF_INTERRUPT_EXTENDED_POLICY, DFInterruptObjectRef_db1feccc-0171-4163-b95f-6be057430176.xml, wdf.wdf_interrupt_extended_policy, wdfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY, _WDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY, wdfinterrupt/PWDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY structure, kmdf.wdf_interrupt_extended_policy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfinterrupt.h
+apiname:
+-	WDF_INTERRUPT_EXTENDED_POLICY
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_INTERRUPT_EXTENDED_POLICY, WDF_INTERRUPT_EXTENDED_POLICY"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_INTERRUPT_EXTENDED_POLICY structure

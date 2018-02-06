@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.FreePagesFromMdl
-title : IPortWaveRTStream::FreePagesFromMdl method
-author : windows-driver-content
-description : The FreePagesFromMdl method frees a memory descriptor list (MDL).
-old-location : audio\iportwavertstream_freepagesfrommdl.htm
-old-project : audio
-ms.assetid : 8839c0ab-08c5-4cc7-a526-aa1ebe2fde15
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : FreePagesFromMdl method [Audio Devices], IPortWaveRTStream interface, audmp-routines_7e3477c5-08b8-4e7c-bfb9-36945bf765c4.xml, FreePagesFromMdl, portcls/IPortWaveRTStream::FreePagesFromMdl, FreePagesFromMdl method [Audio Devices], audio.iportwavertstream_freepagesfrommdl, IPortWaveRTStream::FreePagesFromMdl, IPortWaveRTStream interface [Audio Devices], FreePagesFromMdl method, IPortWaveRTStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.FreePagesFromMdl
+title: IPortWaveRTStream::FreePagesFromMdl method
+author: windows-driver-content
+description: The FreePagesFromMdl method frees a memory descriptor list (MDL).
+old-location: audio\iportwavertstream_freepagesfrommdl.htm
+old-project: audio
+ms.assetid: 8839c0ab-08c5-4cc7-a526-aa1ebe2fde15
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: FreePagesFromMdl method [Audio Devices], IPortWaveRTStream interface, audmp-routines_7e3477c5-08b8-4e7c-bfb9-36945bf765c4.xml, FreePagesFromMdl, portcls/IPortWaveRTStream::FreePagesFromMdl, FreePagesFromMdl method [Audio Devices], audio.iportwavertstream_freepagesfrommdl, IPortWaveRTStream::FreePagesFromMdl, IPortWaveRTStream interface [Audio Devices], FreePagesFromMdl method, IPortWaveRTStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.FreePagesFromMdl
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

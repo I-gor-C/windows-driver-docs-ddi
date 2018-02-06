@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.CoerceValue
-title : IDebugControl3::CoerceValue method
-author : windows-driver-content
-description : The CoerceValue method converts a value of one type into a value of another type.
-old-location : debugger\coercevalue.htm
-old-project : debugger
-ms.assetid : db037fc8-d503-4a72-b6bc-d5189f6786d4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_034a690e-25bb-40a1-b788-7b148ba0d9cd.xml, dbgeng/IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl3 interface, IDebugControl3::CoerceValue, IDebugControl3, IDebugControl::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], CoerceValue method, IDebugControl2 interface [Windows Debugging], CoerceValue method, CoerceValue, CoerceValue method [Windows Debugging], IDebugControl interface, debugger.coercevalue, dbgeng/IDebugControl3::CoerceValue, dbgeng/IDebugControl::CoerceValue, IDebugControl interface [Windows Debugging], CoerceValue method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.CoerceValue
+title: IDebugControl3::CoerceValue method
+author: windows-driver-content
+description: The CoerceValue method converts a value of one type into a value of another type.
+old-location: debugger\coercevalue.htm
+old-project: debugger
+ms.assetid: db037fc8-d503-4a72-b6bc-d5189f6786d4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_034a690e-25bb-40a1-b788-7b148ba0d9cd.xml, dbgeng/IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl3 interface, IDebugControl3::CoerceValue, IDebugControl3, IDebugControl::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], CoerceValue method, IDebugControl2 interface [Windows Debugging], CoerceValue method, CoerceValue, CoerceValue method [Windows Debugging], IDebugControl interface, debugger.coercevalue, dbgeng/IDebugControl3::CoerceValue, dbgeng/IDebugControl::CoerceValue, IDebugControl interface [Windows Debugging], CoerceValue method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.CoerceValue
+-	IDebugControl2.CoerceValue
+-	IDebugControl3.CoerceValue
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

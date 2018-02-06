@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlParent
-title : RtlParent macro
-author : windows-driver-content
-description : The RtlParent routine returns a pointer to the parent of the specified node in a splay link tree.
-old-location : ifsk\rtlparent.htm
-old-project : ifsk
-ms.assetid : 940c9234-6c4e-421d-a3e3-87ba2d786248
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlParent, rtlref_85e6ffbf-9d34-47f5-b5c2-1d57a1a57056.xml, RtlParent routine [Installable File System Drivers], ifsk.rtlparent, ntddk/RtlParent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntddk.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlParent
+title: RtlParent macro
+author: windows-driver-content
+description: The RtlParent routine returns a pointer to the parent of the specified node in a splay link tree.
+old-location: ifsk\rtlparent.htm
+old-project: ifsk
+ms.assetid: 940c9234-6c4e-421d-a3e3-87ba2d786248
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlParent, rtlref_85e6ffbf-9d34-47f5-b5c2-1d57a1a57056.xml, RtlParent routine [Installable File System Drivers], ifsk.rtlparent, ntddk/RtlParent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntddk.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlParent
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

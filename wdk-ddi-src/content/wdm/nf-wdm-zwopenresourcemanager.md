@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwOpenResourceManager
-title : ZwOpenResourceManager function
-author : windows-driver-content
-description : The ZwOpenResourceManager routine returns a handle to an existing resource manager object.
-old-location : kernel\zwopenresourcemanager.htm
-old-project : kernel
-ms.assetid : baa12e3c-dc17-4fef-bce4-29c50328314c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtOpenResourceManager, ktm_ref_f873ba66-20d0-4498-a8b6-d62bf8593d05.xml, wdm/ZwOpenResourceManager, kernel.zwopenresourcemanager, ZwOpenResourceManager routine [Kernel-Mode Driver Architecture], wdm/NtOpenResourceManager, ZwOpenResourceManager
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenResourceManager
+title: ZwOpenResourceManager function
+author: windows-driver-content
+description: The ZwOpenResourceManager routine returns a handle to an existing resource manager object.
+old-location: kernel\zwopenresourcemanager.htm
+old-project: kernel
+ms.assetid: baa12e3c-dc17-4fef-bce4-29c50328314c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtOpenResourceManager, ktm_ref_f873ba66-20d0-4498-a8b6-d62bf8593d05.xml, wdm/ZwOpenResourceManager, kernel.zwopenresourcemanager, ZwOpenResourceManager routine [Kernel-Mode Driver Architecture], wdm/NtOpenResourceManager, ZwOpenResourceManager
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenResourceManager
+-	NtOpenResourceManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

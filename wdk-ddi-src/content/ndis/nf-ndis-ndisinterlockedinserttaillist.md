@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInterlockedInsertTailList
-title : NdisInterlockedInsertTailList macro
-author : windows-driver-content
-description : The NdisInterlockedInsertTailList function inserts an entry, usually a packet, at the tail of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
-old-location : netvista\ndisinterlockedinserttaillist.htm
-old-project : netvista
-ms.assetid : cc455bb1-3574-4dfb-9462-f2c67632132b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_interlocked_ref_1fd860e3-2f63-41a0-9231-7e50a9b87e36.xml, netvista.ndisinterlockedinserttaillist, NdisInterlockedInsertTailList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertTailList, ndis/NdisInterlockedInsertTailList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedInsertTailList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedInsertTailList (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInterlockedInsertTailList
+title: NdisInterlockedInsertTailList macro
+author: windows-driver-content
+description: The NdisInterlockedInsertTailList function inserts an entry, usually a packet, at the tail of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
+old-location: netvista\ndisinterlockedinserttaillist.htm
+old-project: netvista
+ms.assetid: cc455bb1-3574-4dfb-9462-f2c67632132b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_interlocked_ref_1fd860e3-2f63-41a0-9231-7e50a9b87e36.xml, netvista.ndisinterlockedinserttaillist, NdisInterlockedInsertTailList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertTailList, ndis/NdisInterlockedInsertTailList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedInsertTailList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedInsertTailList (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInterlockedInsertTailList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

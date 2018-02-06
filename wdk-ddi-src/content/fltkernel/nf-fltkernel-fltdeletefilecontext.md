@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeleteFileContext
-title : FltDeleteFileContext function
-author : windows-driver-content
-description : The FltDeleteFileContext routine retrieves and deletes a file context that a given minifilter driver has set for a given file.
-old-location : ifsk\fltdeletefilecontext.htm
-old-project : ifsk
-ms.assetid : faffa053-0382-415c-8f61-ee9121839598
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltDeleteFileContext routine [Installable File System Drivers], FltApiRef_a_to_d_53ae4cfc-b70a-405d-b947-cb0f04d4663b.xml, ifsk.fltdeletefilecontext, FltDeleteFileContext, fltkernel/FltDeleteFileContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeleteFileContext
+title: FltDeleteFileContext function
+author: windows-driver-content
+description: The FltDeleteFileContext routine retrieves and deletes a file context that a given minifilter driver has set for a given file.
+old-location: ifsk\fltdeletefilecontext.htm
+old-project: ifsk
+ms.assetid: faffa053-0382-415c-8f61-ee9121839598
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltDeleteFileContext routine [Installable File System Drivers], FltApiRef_a_to_d_53ae4cfc-b70a-405d-b947-cb0f04d4663b.xml, ifsk.fltdeletefilecontext, FltDeleteFileContext, fltkernel/FltDeleteFileContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeleteFileContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

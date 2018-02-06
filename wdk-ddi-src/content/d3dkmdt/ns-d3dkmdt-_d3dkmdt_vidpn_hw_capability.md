@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_HW_CAPABILITY
-title : "_D3DKMDT_VIDPN_HW_CAPABILITY"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_HW_CAPABILITY structure describes the capabilities of the display miniport driver to perform display operations on a specified functional VidPN without dedicated GPU hardware support.
-old-location : display\d3dkmdt_vidpn_hw_capability.htm
-old-project : display
-ms.assetid : 8d881133-3ea7-43c4-99cc-d843026573d6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml, _D3DKMDT_VIDPN_HW_CAPABILITY, display.d3dkmdt_vidpn_hw_capability, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_HW_CAPABILITY
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_HW_CAPABILITY
+title: "_D3DKMDT_VIDPN_HW_CAPABILITY"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_HW_CAPABILITY structure describes the capabilities of the display miniport driver to perform display operations on a specified functional VidPN without dedicated GPU hardware support.
+old-location: display\d3dkmdt_vidpn_hw_capability.htm
+old-project: display
+ms.assetid: 8d881133-3ea7-43c4-99cc-d843026573d6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml, _D3DKMDT_VIDPN_HW_CAPABILITY, display.d3dkmdt_vidpn_hw_capability, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_HW_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_HW_CAPABILITY
 ---
 
 # _D3DKMDT_VIDPN_HW_CAPABILITY structure

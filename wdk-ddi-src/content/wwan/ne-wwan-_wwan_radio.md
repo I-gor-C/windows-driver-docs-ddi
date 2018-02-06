@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_RADIO
-title : "_WWAN_RADIO"
-author : windows-driver-content
-description : The WWAN_RADIO enumeration lists the different types of radio power modes that are supported by the MB device.
-old-location : netvista\wwan_radio.htm
-old-project : netvista
-ms.assetid : f589180c-5379-4f50-876e-48d142b44be4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_RADIO enumeration [Network Drivers Starting with Windows Vista], _WWAN_RADIO, PWWAN_RADIO, *PWWAN_RADIO, wwan/WwanRadioOn, WwanRadioOff, wwan/WwanRadioOff, WWAN_RADIO, PWWAN_RADIO enumeration pointer [Network Drivers Starting with Windows Vista], netvista.wwan_radio, WwanRadioOn, wwan/PWWAN_RADIO, WwanRef_b864982c-e4b4-4a2e-b45b-ba6e534a1a71.xml, wwan/WWAN_RADIO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_RADIO, WWAN_RADIO"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_RADIO
+title: "_WWAN_RADIO"
+author: windows-driver-content
+description: The WWAN_RADIO enumeration lists the different types of radio power modes that are supported by the MB device.
+old-location: netvista\wwan_radio.htm
+old-project: netvista
+ms.assetid: f589180c-5379-4f50-876e-48d142b44be4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_RADIO enumeration [Network Drivers Starting with Windows Vista], _WWAN_RADIO, PWWAN_RADIO, *PWWAN_RADIO, wwan/WwanRadioOn, WwanRadioOff, wwan/WwanRadioOff, WWAN_RADIO, PWWAN_RADIO enumeration pointer [Network Drivers Starting with Windows Vista], netvista.wwan_radio, WwanRadioOn, wwan/PWWAN_RADIO, WwanRef_b864982c-e4b4-4a2e-b45b-ba6e534a1a71.xml, wwan/WWAN_RADIO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_RADIO
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_RADIO, WWAN_RADIO"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_RADIO Enumeration
@@ -54,16 +59,16 @@ typedef enum _WWAN_RADIO {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanRadioOff</td>
-<td>The radio power is turned off.</td>
-</tr>
-
-<tr>
-<td>WwanRadioOn</td>
-<td>The radio power is turned on.</td>
-</tr>
+            
+                <tr>
+                    <td>WwanRadioOff</td>
+                    <td>The radio power is turned off.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanRadioOn</td>
+                    <td>The radio power is turned on.</td>
+                </tr>
 </table>
 
 
@@ -73,9 +78,9 @@ typedef enum _WWAN_RADIO {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
+        <a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_radio_state.md">NDIS_WWAN_SET_RADIO_STATE</a>
 

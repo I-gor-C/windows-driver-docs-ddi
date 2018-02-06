@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorioctl._ENUM_PDO_ENTRY
-title : "_ENUM_PDO_ENTRY"
-author : windows-driver-content
-description : This structure describes a single entry in a result set of Physical Device Objects (PDOs) that are enumerated with IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS.
-old-location : storage\enum_pdo_entry.htm
-old-project : storage
-ms.assetid : c3f5cc8e-a600-4ca1-8745-d74943feb2c7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml, PENUM_PDO_ENTRY, _ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY, storage.enum_pdo_entry, ehstorioctl/PENUM_PDO_ENTRY, PENUM_PDO_ENTRY structure pointer [Storage Devices], ENUM_PDO_ENTRY, ENUM_PDO_ENTRY structure [Storage Devices], ehstorioctl/ENUM_PDO_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY
+UID: NS:ehstorioctl._ENUM_PDO_ENTRY
+title: "_ENUM_PDO_ENTRY"
+author: windows-driver-content
+description: This structure describes a single entry in a result set of Physical Device Objects (PDOs) that are enumerated with IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS.
+old-location: storage\enum_pdo_entry.htm
+old-project: storage
+ms.assetid: c3f5cc8e-a600-4ca1-8745-d74943feb2c7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml, PENUM_PDO_ENTRY, _ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY, storage.enum_pdo_entry, ehstorioctl/PENUM_PDO_ENTRY, PENUM_PDO_ENTRY structure pointer [Storage Devices], ENUM_PDO_ENTRY, ENUM_PDO_ENTRY structure [Storage Devices], ehstorioctl/ENUM_PDO_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	ENUM_PDO_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY
 ---
 
 # _ENUM_PDO_ENTRY structure

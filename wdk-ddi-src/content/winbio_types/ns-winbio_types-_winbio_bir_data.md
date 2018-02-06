@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_types._WINBIO_BIR_DATA
-title : "_WINBIO_BIR_DATA"
-author : windows-driver-content
-description : The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the WINBIO_BIR structure.
-old-location : biometric\winbio_bir_data.htm
-old-project : biometric
-ms.assetid : c9ce383e-277d-4fed-839b-8539554f654c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : biometric_ref_8f527949-820e-416e-952d-8dd3bdf543f6.xml, WINBIO_BIR_DATA structure [Biometric Devices], WINBIO_BIR_DATA, *PWINBIO_BIR_DATA, _WINBIO_BIR_DATA, PWINBIO_BIR_DATA structure pointer [Biometric Devices], PWINBIO_BIR_DATA, winbio_types/PWINBIO_BIR_DATA, biometric.winbio_bir_data, winbio_types/WINBIO_BIR_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_types.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_BIR_DATA
-req.product : Windows 10 or later.
+UID: NS:winbio_types._WINBIO_BIR_DATA
+title: "_WINBIO_BIR_DATA"
+author: windows-driver-content
+description: The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the WINBIO_BIR structure.
+old-location: biometric\winbio_bir_data.htm
+old-project: biometric
+ms.assetid: c9ce383e-277d-4fed-839b-8539554f654c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: biometric_ref_8f527949-820e-416e-952d-8dd3bdf543f6.xml, WINBIO_BIR_DATA structure [Biometric Devices], WINBIO_BIR_DATA, *PWINBIO_BIR_DATA, _WINBIO_BIR_DATA, PWINBIO_BIR_DATA structure pointer [Biometric Devices], PWINBIO_BIR_DATA, winbio_types/PWINBIO_BIR_DATA, biometric.winbio_bir_data, winbio_types/WINBIO_BIR_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_types.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_types.h
+apiname:
+-	WINBIO_BIR_DATA
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_BIR_DATA
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_BIR_DATA structure

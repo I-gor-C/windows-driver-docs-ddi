@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_SUPL_CERT_CONFIG
-title : GNSS_SUPL_CERT_CONFIG
-author : windows-driver-content
-description : This structure contains SUPL certificate information.
-old-location : sensors\gnss_supl_cert_config.htm
-old-project : sensors
-ms.assetid : F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PGNSS_SUPL_CERT_CONFIG structure pointer [Sensor Devices], GNSS_SUPL_CERT_CONFIG structure [Sensor Devices], gnssdriver/PGNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG, sensors.gnss_supl_cert_config, gnssdriver/GNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
+UID: NS:gnssdriver.GNSS_SUPL_CERT_CONFIG
+title: GNSS_SUPL_CERT_CONFIG
+author: windows-driver-content
+description: This structure contains SUPL certificate information.
+old-location: sensors\gnss_supl_cert_config.htm
+old-project: sensors
+ms.assetid: F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PGNSS_SUPL_CERT_CONFIG structure pointer [Sensor Devices], GNSS_SUPL_CERT_CONFIG structure [Sensor Devices], gnssdriver/PGNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG, sensors.gnss_supl_cert_config, gnssdriver/GNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_SUPL_CERT_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 ---
 
 # GNSS_SUPL_CERT_CONFIG structure

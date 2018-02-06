@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CREATECOMPUTESHADER
-title : PFND3D11DDI_CREATECOMPUTESHADER
-author : windows-driver-content
-description : The CreateComputeShader function creates a compute shader.
-old-location : display\createcomputeshader.htm
-old-project : display
-ms.assetid : e62ad086-f652-4e2c-bc2d-f1ccb197f01e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createcomputeshader, CreateComputeShader callback function [Display Devices], CreateComputeShader, PFND3D11DDI_CREATECOMPUTESHADER, PFND3D11DDI_CREATECOMPUTESHADER, d3d10umddi/CreateComputeShader, UserModeDisplayDriverDx11_Functions_37f002b7-445e-4a89-8c3d-586c8072773d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateComputeShader is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CREATECOMPUTESHADER
+title: PFND3D11DDI_CREATECOMPUTESHADER
+author: windows-driver-content
+description: The CreateComputeShader function creates a compute shader.
+old-location: display\createcomputeshader.htm
+old-project: display
+ms.assetid: e62ad086-f652-4e2c-bc2d-f1ccb197f01e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createcomputeshader, CreateComputeShader callback function [Display Devices], CreateComputeShader, PFND3D11DDI_CREATECOMPUTESHADER, PFND3D11DDI_CREATECOMPUTESHADER, d3d10umddi/CreateComputeShader, UserModeDisplayDriverDx11_Functions_37f002b7-445e-4a89-8c3d-586c8072773d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateComputeShader is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateComputeShader
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

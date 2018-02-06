@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_CALLOUT_CLASSIFY_FN0
-title : FWPS_CALLOUT_CLASSIFY_FN0
-author : windows-driver-content
-description : The filter engine calls a callout's classifyFn0 callout function whenever there is data to be processed by the callout.Note  classifyFn0 is the specific version of classifyFn used in Windows Vista and later.
-old-location : netvista\classifyfn0.htm
-old-project : netvista
-ms.assetid : e8423c27-d3eb-4bef-a835-37fae0e2b68c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.classifyfn0, classifyFn0 callback function [Network Drivers Starting with Windows Vista], classifyFn0, FWPS_CALLOUT_CLASSIFY_FN0, FWPS_CALLOUT_CLASSIFY_FN0, fwpsk/classifyFn0, wfp_ref_2_funct_4_callout_402ad3d3-74db-4024-8dcb-50459ab669c7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_CALLOUT_CLASSIFY_FN0
+title: FWPS_CALLOUT_CLASSIFY_FN0
+author: windows-driver-content
+description: The filter engine calls a callout's classifyFn0 callout function whenever there is data to be processed by the callout.Note  classifyFn0 is the specific version of classifyFn used in Windows Vista and later.
+old-location: netvista\classifyfn0.htm
+old-project: netvista
+ms.assetid: e8423c27-d3eb-4bef-a835-37fae0e2b68c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.classifyfn0, classifyFn0 callback function [Network Drivers Starting with Windows Vista], classifyFn0, FWPS_CALLOUT_CLASSIFY_FN0, FWPS_CALLOUT_CLASSIFY_FN0, fwpsk/classifyFn0, wfp_ref_2_funct_4_callout_402ad3d3-74db-4024-8dcb-50459ab669c7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Fwpsk.h
+apiname:
+-	classifyFn0
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

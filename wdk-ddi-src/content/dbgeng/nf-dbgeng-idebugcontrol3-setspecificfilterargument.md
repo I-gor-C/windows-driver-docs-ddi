@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetSpecificFilterArgument
-title : IDebugControl3::SetSpecificFilterArgument method
-author : windows-driver-content
-description : The SetSpecificFilterArgument method sets the value of filter argument for the specific filters that can have an argument.
-old-location : debugger\setspecificfilterargument.htm
-old-project : debugger
-ms.assetid : 99731ad4-1023-4225-a133-3cb73e3ad07f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3::SetSpecificFilterArgument, IDebugControl_a7f790fa-29f1-46f2-9163-a4b99f4880da.xml, SetSpecificFilterArgument, IDebugControl3 interface [Windows Debugging], SetSpecificFilterArgument method, IDebugControl2::SetSpecificFilterArgument, IDebugControl interface [Windows Debugging], SetSpecificFilterArgument method, dbgeng/IDebugControl::SetSpecificFilterArgument, IDebugControl3, SetSpecificFilterArgument method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], SetSpecificFilterArgument method, dbgeng/IDebugControl3::SetSpecificFilterArgument, IDebugControl::SetSpecificFilterArgument, SetSpecificFilterArgument method [Windows Debugging], debugger.setspecificfilterargument, SetSpecificFilterArgument method [Windows Debugging], IDebugControl3 interface, SetSpecificFilterArgument method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::SetSpecificFilterArgument
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetSpecificFilterArgument
+title: IDebugControl3::SetSpecificFilterArgument method
+author: windows-driver-content
+description: The SetSpecificFilterArgument method sets the value of filter argument for the specific filters that can have an argument.
+old-location: debugger\setspecificfilterargument.htm
+old-project: debugger
+ms.assetid: 99731ad4-1023-4225-a133-3cb73e3ad07f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3::SetSpecificFilterArgument, IDebugControl_a7f790fa-29f1-46f2-9163-a4b99f4880da.xml, SetSpecificFilterArgument, IDebugControl3 interface [Windows Debugging], SetSpecificFilterArgument method, IDebugControl2::SetSpecificFilterArgument, IDebugControl interface [Windows Debugging], SetSpecificFilterArgument method, dbgeng/IDebugControl::SetSpecificFilterArgument, IDebugControl3, SetSpecificFilterArgument method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], SetSpecificFilterArgument method, dbgeng/IDebugControl3::SetSpecificFilterArgument, IDebugControl::SetSpecificFilterArgument, SetSpecificFilterArgument method [Windows Debugging], debugger.setspecificfilterargument, SetSpecificFilterArgument method [Windows Debugging], IDebugControl3 interface, SetSpecificFilterArgument method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::SetSpecificFilterArgument
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetSpecificFilterArgument
+-	IDebugControl2.SetSpecificFilterArgument
+-	IDebugControl3.SetSpecificFilterArgument
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

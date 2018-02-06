@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_GETCAPTUREADDRESS
-title : DXGKCB_GETCAPTUREADDRESS
-author : windows-driver-content
-description : The DxgkCbGetCaptureAddress function retrieves the physical address and segment identifier of a capture buffer that is associated with the given allocation handle.
-old-location : display\dxgkcbgetcaptureaddress.htm
-old-project : display
-ms.assetid : f87a5a5f-20d3-48cb-93f0-114eafe7238b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbgetcaptureaddress, DxgkCbGetCaptureAddress callback function [Display Devices], DxgkCbGetCaptureAddress, DXGKCB_GETCAPTUREADDRESS, DXGKCB_GETCAPTUREADDRESS, d3dkmddi/DxgkCbGetCaptureAddress, DpFunctions_a8e4882c-a196-4cdf-826f-fa4cf44ba8f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_GETCAPTUREADDRESS
+title: DXGKCB_GETCAPTUREADDRESS
+author: windows-driver-content
+description: The DxgkCbGetCaptureAddress function retrieves the physical address and segment identifier of a capture buffer that is associated with the given allocation handle.
+old-location: display\dxgkcbgetcaptureaddress.htm
+old-project: display
+ms.assetid: f87a5a5f-20d3-48cb-93f0-114eafe7238b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbgetcaptureaddress, DxgkCbGetCaptureAddress callback function [Display Devices], DxgkCbGetCaptureAddress, DXGKCB_GETCAPTUREADDRESS, DXGKCB_GETCAPTUREADDRESS, d3dkmddi/DxgkCbGetCaptureAddress, DpFunctions_a8e4882c-a196-4cdf-826f-fa4cf44ba8f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkCbGetCaptureAddress
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

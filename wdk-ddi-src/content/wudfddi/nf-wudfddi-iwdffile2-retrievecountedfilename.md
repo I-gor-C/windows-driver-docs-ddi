@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFFile2.RetrieveCountedFileName
-title : IWDFFile2::RetrieveCountedFileName method
-author : windows-driver-content
-description : The RetrieveCountedFileName method retrieves the full counted file name for a file that is associated with a device.
-old-location : wdf\iwdffile2_retrievecountedfilename.htm
-old-project : wdf
-ms.assetid : 0b3aa8d9-1947-4e5e-91d1-6f73ddb3908a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdffile2_retrievecountedfilename, UMDFFileObjectRef_89204c8a-3847-4e03-bf8b-c660b1b2408b.xml, umdf.iwdffile2_retrievecountedfilename, IWDFFile2 interface, RetrieveCountedFileName method, IWDFFile2::RetrieveCountedFileName, IWDFFile2, wudfddi/IWDFFile2::RetrieveCountedFileName, RetrieveCountedFileName method, RetrieveCountedFileName method, IWDFFile2 interface, RetrieveCountedFileName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFFile2.RetrieveCountedFileName
+title: IWDFFile2::RetrieveCountedFileName method
+author: windows-driver-content
+description: The RetrieveCountedFileName method retrieves the full counted file name for a file that is associated with a device.
+old-location: wdf\iwdffile2_retrievecountedfilename.htm
+old-project: wdf
+ms.assetid: 0b3aa8d9-1947-4e5e-91d1-6f73ddb3908a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdffile2_retrievecountedfilename, UMDFFileObjectRef_89204c8a-3847-4e03-bf8b-c660b1b2408b.xml, umdf.iwdffile2_retrievecountedfilename, IWDFFile2 interface, RetrieveCountedFileName method, IWDFFile2::RetrieveCountedFileName, IWDFFile2, wudfddi/IWDFFile2::RetrieveCountedFileName, RetrieveCountedFileName method, RetrieveCountedFileName method, IWDFFile2 interface, RetrieveCountedFileName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFFile2.RetrieveCountedFileName
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

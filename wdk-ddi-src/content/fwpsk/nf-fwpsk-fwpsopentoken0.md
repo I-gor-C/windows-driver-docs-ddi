@@ -1,41 +1,46 @@
 ---
-UID : NF:fwpsk.FwpsOpenToken0
-title : FwpsOpenToken0 function
-author : windows-driver-content
-description : The FwpsOpenToken0 function opens an access token.
-old-location : netvista\fwpsopentoken0.htm
-old-project : netvista
-ms.assetid : B6C61023-F840-4517-83C1-BC9CBDFC27B0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsOpenToken0, fwpsk/FwpsOpenToken0, FwpsOpenToken0 function [Network Drivers Starting with Windows Vista], netvista.fwpsopentoken0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsOpenToken0
+title: FwpsOpenToken0 function
+author: windows-driver-content
+description: The FwpsOpenToken0 function opens an access token.
+old-location: netvista\fwpsopentoken0.htm
+old-project: netvista
+ms.assetid: B6C61023-F840-4517-83C1-BC9CBDFC27B0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsOpenToken0, fwpsk/FwpsOpenToken0, FwpsOpenToken0 function [Network Drivers Starting with Windows Vista], netvista.fwpsopentoken0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FwpsOpenToken0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

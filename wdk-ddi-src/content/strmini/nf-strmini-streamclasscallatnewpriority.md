@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassCallAtNewPriority
-title : StreamClassCallAtNewPriority function
-author : windows-driver-content
-description : The StreamClassCallAtNewPriority routine schedules a routine to be called at a different priority.
-old-location : stream\streamclasscallatnewpriority.htm
-old-project : stream
-ms.assetid : 86c4e9da-7c71-4d79-b8e2-f602489da647
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : strclass-routines_6335ceee-08a1-4078-a9ce-aaa15d8158cd.xml, strmini/StreamClassCallAtNewPriority, StreamClassCallAtNewPriority, stream.streamclasscallatnewpriority, StreamClassCallAtNewPriority routine [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : "(See Parameters section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassCallAtNewPriority
+title: StreamClassCallAtNewPriority function
+author: windows-driver-content
+description: The StreamClassCallAtNewPriority routine schedules a routine to be called at a different priority.
+old-location: stream\streamclasscallatnewpriority.htm
+old-project: stream
+ms.assetid: 86c4e9da-7c71-4d79-b8e2-f602489da647
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: strclass-routines_6335ceee-08a1-4078-a9ce-aaa15d8158cd.xml, strmini/StreamClassCallAtNewPriority, StreamClassCallAtNewPriority, stream.streamclasscallatnewpriority, StreamClassCallAtNewPriority routine [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: "(See Parameters section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassCallAtNewPriority
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

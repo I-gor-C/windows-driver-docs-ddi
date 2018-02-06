@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxcontroller.EVT_UCX_CONTROLLER_USBDEVICE_ADD
-title : EVT_UCX_CONTROLLER_USBDEVICE_ADD
-author : windows-driver-content
-description : The client driver's implementation that UCX calls when a new USB device is detected.
-old-location : buses\evt_ucx_controller_usbdevice_add.htm
-old-project : usbref
-ms.assetid : 0f89b57a-3374-4f40-88b5-43d233ba0e47
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_controller_usbdevice_add, EvtUcxControllerUsbDeviceAdd callback function [Buses], EvtUcxControllerUsbDeviceAdd, EVT_UCX_CONTROLLER_USBDEVICE_ADD, EVT_UCX_CONTROLLER_USBDEVICE_ADD, ucxcontroller/EvtUcxControllerUsbDeviceAdd, PEVT_UCX_CONTROLLER_USBDEVICE_ADD callback function pointer [Buses], PEVT_UCX_CONTROLLER_USBDEVICE_ADD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NC:ucxcontroller.EVT_UCX_CONTROLLER_USBDEVICE_ADD
+title: EVT_UCX_CONTROLLER_USBDEVICE_ADD
+author: windows-driver-content
+description: The client driver's implementation that UCX calls when a new USB device is detected.
+old-location: buses\evt_ucx_controller_usbdevice_add.htm
+old-project: usbref
+ms.assetid: 0f89b57a-3374-4f40-88b5-43d233ba0e47
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_controller_usbdevice_add, EvtUcxControllerUsbDeviceAdd callback function [Buses], EvtUcxControllerUsbDeviceAdd, EVT_UCX_CONTROLLER_USBDEVICE_ADD, EVT_UCX_CONTROLLER_USBDEVICE_ADD, ucxcontroller/EvtUcxControllerUsbDeviceAdd, PEVT_UCX_CONTROLLER_USBDEVICE_ADD callback function pointer [Buses], PEVT_UCX_CONTROLLER_USBDEVICE_ADD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	PEVT_UCX_CONTROLLER_USBDEVICE_ADD
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 

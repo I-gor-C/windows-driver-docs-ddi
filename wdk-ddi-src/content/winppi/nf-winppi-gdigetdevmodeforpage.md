@@ -1,42 +1,49 @@
 ---
-UID : NF:winppi.GdiGetDevmodeForPage
-title : GdiGetDevmodeForPage function
-author : windows-driver-content
-description : The GdiGetDevmodeForPage function returns DEVMODEW structures for the specified and previous pages of a print job.
-old-location : print\gdigetdevmodeforpage.htm
-old-project : print
-ms.assetid : 3410e8b1-820f-4892-8d26-d803e3f943da
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winppi/GdiGetDevmodeForPage, gdifnc_39ecbc8c-73fb-4e71-9df7-abdc4d8ccdcf.xml, GdiGetDevmodeForPage function [Print Devices], print.gdigetdevmodeforpage, GdiGetDevmodeForPage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winppi.h
-req.include-header : Winppi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.Lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NF:winppi.GdiGetDevmodeForPage
+title: GdiGetDevmodeForPage function
+author: windows-driver-content
+description: The GdiGetDevmodeForPage function returns DEVMODEW structures for the specified and previous pages of a print job.
+old-location: print\gdigetdevmodeforpage.htm
+old-project: print
+ms.assetid: 3410e8b1-820f-4892-8d26-d803e3f943da
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winppi/GdiGetDevmodeForPage, gdifnc_39ecbc8c-73fb-4e71-9df7-abdc4d8ccdcf.xml, GdiGetDevmodeForPage function [Print Devices], print.gdigetdevmodeforpage, GdiGetDevmodeForPage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winppi.h
+req.include-header: Winppi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.Lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+-	GDI32Full.dll
+apiname:
+-	GdiGetDevmodeForPage
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 

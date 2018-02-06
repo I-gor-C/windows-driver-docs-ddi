@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_QUERY_KEY_NAME
-title : "_REG_QUERY_KEY_NAME"
-author : windows-driver-content
-description : The REG_QUERY_KEY_NAME structure describes the full registry key name of an object being queried.
-old-location : kernel\reg_query_key_name.htm
-old-project : kernel
-ms.assetid : 396DA33D-46E0-456C-9FCF-85A7D9915F48
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : REG_QUERY_KEY_NAME, wdm/PREG_QUERY_KEY_NAME, PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME structure [Kernel-Mode Driver Architecture], kernel.reg_query_key_name, *PREG_QUERY_KEY_NAME, _REG_QUERY_KEY_NAME, PREG_QUERY_KEY_NAME structure pointer [Kernel-Mode Driver Architecture], wdm/REG_QUERY_KEY_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows 10 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_QUERY_KEY_NAME
+title: "_REG_QUERY_KEY_NAME"
+author: windows-driver-content
+description: The REG_QUERY_KEY_NAME structure describes the full registry key name of an object being queried.
+old-location: kernel\reg_query_key_name.htm
+old-project: kernel
+ms.assetid: 396DA33D-46E0-456C-9FCF-85A7D9915F48
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: REG_QUERY_KEY_NAME, wdm/PREG_QUERY_KEY_NAME, PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME structure [Kernel-Mode Driver Architecture], kernel.reg_query_key_name, *PREG_QUERY_KEY_NAME, _REG_QUERY_KEY_NAME, PREG_QUERY_KEY_NAME structure pointer [Kernel-Mode Driver Architecture], wdm/REG_QUERY_KEY_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows 10 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	REG_QUERY_KEY_NAME
+product: Windows
+targetos: Windows
+req.typenames: REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME
+req.product: Windows 10 or later.
 ---
 
 # _REG_QUERY_KEY_NAME structure

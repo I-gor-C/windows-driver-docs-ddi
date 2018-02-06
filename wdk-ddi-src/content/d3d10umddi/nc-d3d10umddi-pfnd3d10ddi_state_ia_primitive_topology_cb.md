@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB
-title : PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB
-author : windows-driver-content
-description : The pfnStateIaPrimitiveTopologyCb function causes the Microsoft Direct3D 10 runtime to refresh the primitive topology state.
-old-location : display\pfnstateiaprimitivetopologycb.htm
-old-project : display
-ms.assetid : 5a394a5b-afbc-41f5-8013-ab228e6284f9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstateiaprimitivetopologycb, pfnStateIaPrimitiveTopologyCb callback function [Display Devices], pfnStateIaPrimitiveTopologyCb, PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB, PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB, d3d10umddi/pfnStateIaPrimitiveTopologyCb, d3d10state_functions_5866253f-2d14-41e3-b60d-d633b272848c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB
+title: PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB
+author: windows-driver-content
+description: The pfnStateIaPrimitiveTopologyCb function causes the Microsoft Direct3D 10 runtime to refresh the primitive topology state.
+old-location: display\pfnstateiaprimitivetopologycb.htm
+old-project: display
+ms.assetid: 5a394a5b-afbc-41f5-8013-ab228e6284f9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstateiaprimitivetopologycb, pfnStateIaPrimitiveTopologyCb callback function [Display Devices], pfnStateIaPrimitiveTopologyCb, PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB, PFND3D10DDI_STATE_IA_PRIMITIVE_TOPOLOGY_CB, d3d10umddi/pfnStateIaPrimitiveTopologyCb, d3d10state_functions_5866253f-2d14-41e3-b60d-d633b272848c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateIaPrimitiveTopologyCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

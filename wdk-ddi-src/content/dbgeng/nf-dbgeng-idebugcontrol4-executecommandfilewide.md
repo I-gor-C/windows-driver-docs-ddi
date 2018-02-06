@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.ExecuteCommandFileWide
-title : IDebugControl4::ExecuteCommandFileWide method
-author : windows-driver-content
-description : The ExecuteCommandFileWide method opens the specified file and executes the debugger commands that are contained within.
-old-location : debugger\executecommandfilewide.htm
-old-project : debugger
-ms.assetid : 4c3fbd76-745a-45d0-b4fd-6da382712322
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface, ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteCommandFileWide method, ExecuteCommandFileWide, IDebugControl4::ExecuteCommandFileWide, dbgeng/IDebugControl4::ExecuteCommandFileWide, debugger.executecommandfilewide, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.ExecuteCommandFileWide
+title: IDebugControl4::ExecuteCommandFileWide method
+author: windows-driver-content
+description: The ExecuteCommandFileWide method opens the specified file and executes the debugger commands that are contained within.
+old-location: debugger\executecommandfilewide.htm
+old-project: debugger
+ms.assetid: 4c3fbd76-745a-45d0-b4fd-6da382712322
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface, ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteCommandFileWide method, ExecuteCommandFileWide, IDebugControl4::ExecuteCommandFileWide, dbgeng/IDebugControl4::ExecuteCommandFileWide, debugger.executecommandfilewide, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.ExecuteCommandFileWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

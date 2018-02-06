@@ -1,41 +1,46 @@
 ---
-UID : NE:hwnclx._HWN_CLX_EXPORT_INDEX
-title : "_HWN_CLX_EXPORT_INDEX"
-author : windows-driver-content
-description : Defines the position for each of the Hardware Notification exports in the export table.
-old-location : gpiobtn\_hwn_clx_export_index.htm
-old-project : gpiobtn
-ms.assetid : fcbbd188-438a-4eaa-8034-67ca52d1fb56
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UnregisterClientIndex, HWN_CLX_EXPORT_INDEX enumeration, AddDevicePreDeviceCreateIndex, HwNExportLastExportIndex, _HWN_CLX_EXPORT_INDEX, AddDevicePostDeviceCreateIndex, hwnclx/RegisterClientIndex, RegisterClientIndex, hwnclx/HWN_CLX_EXPORT_INDEX, hwnclx/AddDevicePostDeviceCreateIndex, HWN_CLX_EXPORT_INDEX, hwnclx/HwNExportLastExportIndex, hwnclx/AddDevicePreDeviceCreateIndex, gpiobtn._hwn_clx_export_index, *PHWN_CLX_EXPORT_INDEX, hwnclx/UnregisterClientIndex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
+UID: NE:hwnclx._HWN_CLX_EXPORT_INDEX
+title: "_HWN_CLX_EXPORT_INDEX"
+author: windows-driver-content
+description: Defines the position for each of the Hardware Notification exports in the export table.
+old-location: gpiobtn\_hwn_clx_export_index.htm
+old-project: gpiobtn
+ms.assetid: fcbbd188-438a-4eaa-8034-67ca52d1fb56
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UnregisterClientIndex, HWN_CLX_EXPORT_INDEX enumeration, AddDevicePreDeviceCreateIndex, HwNExportLastExportIndex, _HWN_CLX_EXPORT_INDEX, AddDevicePostDeviceCreateIndex, hwnclx/RegisterClientIndex, RegisterClientIndex, hwnclx/HWN_CLX_EXPORT_INDEX, hwnclx/AddDevicePostDeviceCreateIndex, HWN_CLX_EXPORT_INDEX, hwnclx/HwNExportLastExportIndex, hwnclx/AddDevicePreDeviceCreateIndex, gpiobtn._hwn_clx_export_index, *PHWN_CLX_EXPORT_INDEX, hwnclx/UnregisterClientIndex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hwnclx.h
+apiname:
+-	HWN_CLX_EXPORT_INDEX
+product: Windows
+targetos: Windows
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 # _HWN_CLX_EXPORT_INDEX Enumeration
@@ -55,31 +60,31 @@ typedef enum _HWN_CLX_EXPORT_INDEX {
 ## Constants
 
 <table>
-
-<tr>
-<td>AddDevicePostDeviceCreateIndex</td>
-<td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepostdevicecreate.md">HwNProcessAddDevicePostDeviceCreate</a> hardware notification in the export table.</td>
-</tr>
-
-<tr>
-<td>AddDevicePreDeviceCreateIndex</td>
-<td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepredevicecreate.md">HwNProcessAddDevicePreDeviceCreate</a> hardware notification in the export table.</td>
-</tr>
-
-<tr>
-<td>HwNExportLastExportIndex</td>
-<td>Position of the last hardware notification in the export table.</td>
-</tr>
-
-<tr>
-<td>RegisterClientIndex</td>
-<td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a> hardware notification in the export table.</td>
-</tr>
-
-<tr>
-<td>UnregisterClientIndex</td>
-<td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnunregisterclient.md">HwNUnregisterClient</a> hardware notification in the export table.</td>
-</tr>
+            
+                <tr>
+                    <td>AddDevicePostDeviceCreateIndex</td>
+                    <td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepostdevicecreate.md">HwNProcessAddDevicePostDeviceCreate</a> hardware notification in the export table.</td>
+                </tr>
+            
+                <tr>
+                    <td>AddDevicePreDeviceCreateIndex</td>
+                    <td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepredevicecreate.md">HwNProcessAddDevicePreDeviceCreate</a> hardware notification in the export table.</td>
+                </tr>
+            
+                <tr>
+                    <td>HwNExportLastExportIndex</td>
+                    <td>Position of the last hardware notification in the export table.</td>
+                </tr>
+            
+                <tr>
+                    <td>RegisterClientIndex</td>
+                    <td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a> hardware notification in the export table.</td>
+                </tr>
+            
+                <tr>
+                    <td>UnregisterClientIndex</td>
+                    <td>Position of the <a href="..\hwnclx\nf-hwnclx-hwnunregisterclient.md">HwNUnregisterClient</a> hardware notification in the export table.</td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ typedef enum _HWN_CLX_EXPORT_INDEX {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | hwnclx.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
+        <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
 

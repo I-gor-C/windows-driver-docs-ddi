@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_ARP_HEADER_FIELD
-title : "_NDIS_ARP_HEADER_FIELD"
-author : windows-driver-content
-description : The NDIS_ARP_HEADER_FIELD enumeration identifies the type of a field in an Address Resolution Protocol (ARP) header.
-old-location : netvista\ndis_arp_header_field.htm
-old-project : netvista
-ms.assetid : 63DA6329-C673-48A0-8E36-67035E2DB4C9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisARPHeaderFieldMaximum, PNDIS_ARP_HEADER_FIELD, ntddndis/PNDIS_ARP_HEADER_FIELD, NDIS_ARP_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], NdisARPHeaderFieldUndefined, NdisARPHeaderFieldTPA, ntddndis/NdisARPHeaderFieldTPA, PNDIS_ARP_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], *PNDIS_ARP_HEADER_FIELD, NdisARPHeaderFieldOperation, ntddndis/NdisARPHeaderFieldSPA, ntddndis/NdisARPHeaderFieldUndefined, ntddndis/NdisARPHeaderFieldOperation, ntddndis/NdisARPHeaderFieldMaximum, NdisARPHeaderFieldSPA, _NDIS_ARP_HEADER_FIELD, ntddndis/NDIS_ARP_HEADER_FIELD, netvista.ndis_arp_header_field, NDIS_ARP_HEADER_FIELD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_ARP_HEADER_FIELD, *PNDIS_ARP_HEADER_FIELD
+UID: NE:ntddndis._NDIS_ARP_HEADER_FIELD
+title: "_NDIS_ARP_HEADER_FIELD"
+author: windows-driver-content
+description: The NDIS_ARP_HEADER_FIELD enumeration identifies the type of a field in an Address Resolution Protocol (ARP) header.
+old-location: netvista\ndis_arp_header_field.htm
+old-project: netvista
+ms.assetid: 63DA6329-C673-48A0-8E36-67035E2DB4C9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisARPHeaderFieldMaximum, PNDIS_ARP_HEADER_FIELD, ntddndis/PNDIS_ARP_HEADER_FIELD, NDIS_ARP_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], NdisARPHeaderFieldUndefined, NdisARPHeaderFieldTPA, ntddndis/NdisARPHeaderFieldTPA, PNDIS_ARP_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], *PNDIS_ARP_HEADER_FIELD, NdisARPHeaderFieldOperation, ntddndis/NdisARPHeaderFieldSPA, ntddndis/NdisARPHeaderFieldUndefined, ntddndis/NdisARPHeaderFieldOperation, ntddndis/NdisARPHeaderFieldMaximum, NdisARPHeaderFieldSPA, _NDIS_ARP_HEADER_FIELD, ntddndis/NDIS_ARP_HEADER_FIELD, netvista.ndis_arp_header_field, NDIS_ARP_HEADER_FIELD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_ARP_HEADER_FIELD
+product: Windows
+targetos: Windows
+req.typenames: NDIS_ARP_HEADER_FIELD, *PNDIS_ARP_HEADER_FIELD
 ---
 
 # _NDIS_ARP_HEADER_FIELD Enumeration
@@ -55,37 +60,37 @@ typedef enum _NDIS_ARP_HEADER_FIELD {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisARPHeaderFieldMaximum</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+            
+                <tr>
+                    <td>NdisARPHeaderFieldMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisARPHeaderFieldOperation</td>
-<td>The ARP operation field.</td>
-</tr>
-
-<tr>
-<td>NdisARPHeaderFieldSPA</td>
-<td>The ARP source protocol address (SPA) field.</td>
-</tr>
-
-<tr>
-<td>NdisARPHeaderFieldTPA</td>
-<td>The ARP target protocol address (TPA) field.</td>
-</tr>
-
-<tr>
-<td>NdisARPHeaderFieldUndefined</td>
-<td>An undefined ARP header field.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>NdisARPHeaderFieldOperation</td>
+                    <td>The ARP operation field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisARPHeaderFieldSPA</td>
+                    <td>The ARP source protocol address (SPA) field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisARPHeaderFieldTPA</td>
+                    <td>The ARP target protocol address (TPA) field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisARPHeaderFieldUndefined</td>
+                    <td>An undefined ARP header field.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>NDIS_ARP_HEADER_FIELD</b> enumeration is used in the 
+        The <b>NDIS_ARP_HEADER_FIELD</b> enumeration is used in the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
     NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
@@ -95,9 +100,9 @@ The <b>NDIS_ARP_HEADER_FIELD</b> enumeration is used in the
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+        <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  

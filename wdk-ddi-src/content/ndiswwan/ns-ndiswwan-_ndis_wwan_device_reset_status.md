@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_RESET_STATUS
-title : "_NDIS_WWAN_DEVICE_RESET_STATUS"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_RESET_STATUS structure represents a modem device's reset status. It is sent to the MB host in the NDIS_STATUS_WWAN_DEVICE_RESET_STATUS notification in an asynchronous response to an OID_WWAN_DEVICE_RESET set request.
-old-location : netvista\ndis_wwan_device_reset_status.htm
-old-project : netvista
-ms.assetid : D18E8633-BEAD-49A5-A730-10564AFF8A3E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_DEVICE_RESET_STATUS, netvista.ndis_wwan_device_reset_status, *PNDIS_WWAN_DEVICE_RESET_STATUS, ndiswwan/NDIS_WWAN_DEVICE_RESET_STATUS, PNDIS_WWAN_DEVICE_RESET_STATUS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_RESET_STATUS, PNDIS_WWAN_DEVICE_RESET_STATUS, NDIS_WWAN_DEVICE_RESET_STATUS structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_RESET_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_DEVICE_RESET_STATUS, *PNDIS_WWAN_DEVICE_RESET_STATUS
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_RESET_STATUS
+title: "_NDIS_WWAN_DEVICE_RESET_STATUS"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_RESET_STATUS structure represents a modem device's reset status. It is sent to the MB host in the NDIS_STATUS_WWAN_DEVICE_RESET_STATUS notification in an asynchronous response to an OID_WWAN_DEVICE_RESET set request.
+old-location: netvista\ndis_wwan_device_reset_status.htm
+old-project: netvista
+ms.assetid: D18E8633-BEAD-49A5-A730-10564AFF8A3E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_DEVICE_RESET_STATUS, netvista.ndis_wwan_device_reset_status, *PNDIS_WWAN_DEVICE_RESET_STATUS, ndiswwan/NDIS_WWAN_DEVICE_RESET_STATUS, PNDIS_WWAN_DEVICE_RESET_STATUS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_RESET_STATUS, PNDIS_WWAN_DEVICE_RESET_STATUS, NDIS_WWAN_DEVICE_RESET_STATUS structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_RESET_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_RESET_STATUS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_DEVICE_RESET_STATUS, *PNDIS_WWAN_DEVICE_RESET_STATUS
 ---
 
 # _NDIS_WWAN_DEVICE_RESET_STATUS structure

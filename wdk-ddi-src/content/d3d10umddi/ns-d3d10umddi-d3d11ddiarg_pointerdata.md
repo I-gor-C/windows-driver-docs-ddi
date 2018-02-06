@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_POINTERDATA
-title : D3D11DDIARG_POINTERDATA
-author : windows-driver-content
-description : The D3D11DDIARG_POINTERDATA structure describes the location of the data that is reference by a class instance that has been assigned to an interface implementation.
-old-location : display\d3d11ddiarg_pointerdata.htm
-old-project : display
-ms.assetid : 1065079d-ff48-4b68-930c-bbbd3f17d5bd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d11ddiarg_pointerdata, UMDisplayDriver_Dx11param_Structs_4e1d0abb-4385-4d8b-9687-0c913884ab46.xml, D3D11DDIARG_POINTERDATA, d3d10umddi/D3D11DDIARG_POINTERDATA, D3D11DDIARG_POINTERDATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_POINTERDATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_POINTERDATA
+UID: NS:d3d10umddi.D3D11DDIARG_POINTERDATA
+title: D3D11DDIARG_POINTERDATA
+author: windows-driver-content
+description: The D3D11DDIARG_POINTERDATA structure describes the location of the data that is reference by a class instance that has been assigned to an interface implementation.
+old-location: display\d3d11ddiarg_pointerdata.htm
+old-project: display
+ms.assetid: 1065079d-ff48-4b68-930c-bbbd3f17d5bd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d11ddiarg_pointerdata, UMDisplayDriver_Dx11param_Structs_4e1d0abb-4385-4d8b-9687-0c913884ab46.xml, D3D11DDIARG_POINTERDATA, d3d10umddi/D3D11DDIARG_POINTERDATA, D3D11DDIARG_POINTERDATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_POINTERDATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_POINTERDATA
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_POINTERDATA
 ---
 
 # D3D11DDIARG_POINTERDATA structure

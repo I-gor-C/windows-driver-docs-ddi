@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.ReadControlSpace64
-title : ReadControlSpace64 function
-author : windows-driver-content
-description : The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf.
-old-location : debugger\readcontrolspace64.htm
-old-project : debugger
-ms.assetid : 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadControlSpace64, ReadControlSpace64 function [Windows Debugging], debugger.readcontrolspace64, WdbgExts_Ref_3327dad4-903c-4285-b3cc-fe408d15f129.xml, wdbgexts/ReadControlSpace64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.ReadControlSpace64
+title: ReadControlSpace64 function
+author: windows-driver-content
+description: The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf.
+old-location: debugger\readcontrolspace64.htm
+old-project: debugger
+ms.assetid: 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadControlSpace64, ReadControlSpace64 function [Windows Debugging], debugger.readcontrolspace64, WdbgExts_Ref_3327dad4-903c-4285-b3cc-fe408d15f129.xml, wdbgexts/ReadControlSpace64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	ReadControlSpace64
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

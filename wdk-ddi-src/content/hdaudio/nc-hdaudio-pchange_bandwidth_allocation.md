@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PCHANGE_BANDWIDTH_ALLOCATION
-title : PCHANGE_BANDWIDTH_ALLOCATION
-author : windows-driver-content
-description : The ChangeBandwidthAllocation routine changes a DMA engine's bandwidth allocation on the HD Audio Link.The function pointer type for a ChangeBandwidthAllocation routine is defined as:
-old-location : audio\changebandwidthallocation.htm
-old-project : audio
-ms.assetid : 4dcf8fb6-71f5-4e11-a92a-0292c2a1515c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.changebandwidthallocation, ChangeBandwidthAllocation callback function [Audio Devices], ChangeBandwidthAllocation, PCHANGE_BANDWIDTH_ALLOCATION, PCHANGE_BANDWIDTH_ALLOCATION, hdaudio/ChangeBandwidthAllocation, aud-prop2_3d85fecb-4617-404b-951b-7457f9e650cc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PCHANGE_BANDWIDTH_ALLOCATION
+title: PCHANGE_BANDWIDTH_ALLOCATION
+author: windows-driver-content
+description: The ChangeBandwidthAllocation routine changes a DMA engine's bandwidth allocation on the HD Audio Link.The function pointer type for a ChangeBandwidthAllocation routine is defined as:
+old-location: audio\changebandwidthallocation.htm
+old-project: audio
+ms.assetid: 4dcf8fb6-71f5-4e11-a92a-0292c2a1515c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.changebandwidthallocation, ChangeBandwidthAllocation callback function [Audio Devices], ChangeBandwidthAllocation, PCHANGE_BANDWIDTH_ALLOCATION, PCHANGE_BANDWIDTH_ALLOCATION, hdaudio/ChangeBandwidthAllocation, aud-prop2_3d85fecb-4617-404b-951b-7457f9e650cc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	ChangeBandwidthAllocation
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

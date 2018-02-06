@@ -1,41 +1,46 @@
 ---
-UID : NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
-title : IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
-author : windows-driver-content
-description : This I/O control function is used to keep a claim on a device when a client is notified that its claim on the device is being contested by another client.
-old-location : pos\ioctl_point_of_service_retain_device.htm
-old-project : pos
-ms.assetid : c221862f-99db-4815-812f-8b22b46fff4a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.ioctl_point_of_service_retain_device, IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE control code, IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pointofservicedriverinterface.h
-req.include-header : Pointofservicedriverinterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PosPropertyId
+UID: NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
+title: IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
+author: windows-driver-content
+description: This I/O control function is used to keep a claim on a device when a client is notified that its claim on the device is being contested by another client.
+old-location: pos\ioctl_point_of_service_retain_device.htm
+old-project: pos
+ms.assetid: c221862f-99db-4815-812f-8b22b46fff4a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.ioctl_point_of_service_retain_device, IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE control code, IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pointofservicedriverinterface.h
+req.include-header: Pointofservicedriverinterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pointofservicedriverinterface.h
+apiname:
+-	IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: PosPropertyId
 ---
 
 # IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE IOCTL

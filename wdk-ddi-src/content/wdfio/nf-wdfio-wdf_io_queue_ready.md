@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_READY
-title : WDF_IO_QUEUE_READY function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_READY function returns TRUE if an I/O queue's state indicates that the queue is drained.
-old-location : wdf\wdf_io_queue_ready.htm
-old-project : wdf
-ms.assetid : 622e09eb-37ae-403e-9d18-acf2e7761b43
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_READY, kmdf.wdf_io_queue_ready, wdfio/WDF_IO_QUEUE_READY, DFQueueObjectRef_d5c37eea-044b-41b6-9c0a-f910fef04d00.xml, wdf.wdf_io_queue_ready, WDF_IO_QUEUE_READY function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_READY
+title: WDF_IO_QUEUE_READY function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_READY function returns TRUE if an I/O queue's state indicates that the queue is drained.
+old-location: wdf\wdf_io_queue_ready.htm
+old-project: wdf
+ms.assetid: 622e09eb-37ae-403e-9d18-acf2e7761b43
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_QUEUE_READY, kmdf.wdf_io_queue_ready, wdfio/WDF_IO_QUEUE_READY, DFQueueObjectRef_d5c37eea-044b-41b6-9c0a-f910fef04d00.xml, wdf.wdf_io_queue_ready, WDF_IO_QUEUE_READY function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_IO_QUEUE_READY
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

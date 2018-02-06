@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlCreateSystemVolumeInformationFolder
-title : RtlCreateSystemVolumeInformationFolder function
-author : windows-driver-content
-description : The RtlCreateSystemVolumeInformationFolder routine verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created.
-old-location : ifsk\rtlcreatesystemvolumeinformationfolder.htm
-old-project : ifsk
-ms.assetid : bcbbddc7-6675-4555-bd05-588762148554
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlCreateSystemVolumeInformationFolder routine [Installable File System Drivers], ntifs/RtlCreateSystemVolumeInformationFolder, ifsk.rtlcreatesystemvolumeinformationfolder, RtlCreateSystemVolumeInformationFolder, rtlref_f854cbbb-1aa4-4f0a-8d2d-5b160634a155.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows XP and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlCreateSystemVolumeInformationFolder
+title: RtlCreateSystemVolumeInformationFolder function
+author: windows-driver-content
+description: The RtlCreateSystemVolumeInformationFolder routine verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created.
+old-location: ifsk\rtlcreatesystemvolumeinformationfolder.htm
+old-project: ifsk
+ms.assetid: bcbbddc7-6675-4555-bd05-588762148554
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlCreateSystemVolumeInformationFolder routine [Installable File System Drivers], ntifs/RtlCreateSystemVolumeInformationFolder, ifsk.rtlcreatesystemvolumeinformationfolder, RtlCreateSystemVolumeInformationFolder, rtlref_f854cbbb-1aa4-4f0a-8d2d-5b160634a155.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows XP and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlCreateSystemVolumeInformationFolder
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

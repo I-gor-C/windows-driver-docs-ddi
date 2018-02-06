@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauDbgDump
-title : wiauDbgDump function
-author : windows-driver-content
-description : The wiauDbgDump function logs a message containing one or more data values.
-old-location : image\wiaudbgdump.htm
-old-project : image
-ms.assetid : 5df074ff-572d-47f7-9c5c-4423b200cddc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.wiaudbgdump, wiauFncs_dbe56add-64ef-442d-9824-ed0b26aba9ac.xml, wiautil/wiauDbgDump, wiauDbgDump function [Imaging Devices], wiauDbgDump
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauDbgDump
+title: wiauDbgDump function
+author: windows-driver-content
+description: The wiauDbgDump function logs a message containing one or more data values.
+old-location: image\wiaudbgdump.htm
+old-project: image
+ms.assetid: 5df074ff-572d-47f7-9c5c-4423b200cddc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.wiaudbgdump, wiauFncs_dbe56add-64ef-442d-9824-ed0b26aba9ac.xml, wiautil/wiauDbgDump, wiauDbgDump function [Imaging Devices], wiauDbgDump
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wiautil.h
+apiname:
+-	wiauDbgDump
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

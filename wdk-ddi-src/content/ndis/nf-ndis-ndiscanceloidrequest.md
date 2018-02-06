@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCancelOidRequest
-title : NdisCancelOidRequest function
-author : windows-driver-content
-description : Protocol drivers call the NdisCancelOidRequest function to cancel a previous request to the underlying drivers.
-old-location : netvista\ndiscanceloidrequest.htm
-old-project : netvista
-ms.assetid : 4cb12ac3-7cb6-4773-b680-d77a55b19246
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisCancelOidRequest, ndis/NdisCancelOidRequest, NdisCancelOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_ref_5f7f8a9a-f773-4ca8-aba3-21fe74431e0c.xml, netvista.ndiscanceloidrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_OID_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCancelOidRequest
+title: NdisCancelOidRequest function
+author: windows-driver-content
+description: Protocol drivers call the NdisCancelOidRequest function to cancel a previous request to the underlying drivers.
+old-location: netvista\ndiscanceloidrequest.htm
+old-project: netvista
+ms.assetid: 4cb12ac3-7cb6-4773-b680-d77a55b19246
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisCancelOidRequest, ndis/NdisCancelOidRequest, NdisCancelOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_ref_5f7f8a9a-f773-4ca8-aba3-21fe74431e0c.xml, netvista.ndiscanceloidrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_OID_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCancelOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_SEND_INVITATION_REQUEST_PARAMETERS
-title : "_DOT11_SEND_INVITATION_REQUEST_PARAMETERS"
-author : windows-driver-content
-description : The request parameters for an inivitation request are specified in a DOT11_SEND_INVITATION_REQUEST_PARAMETERS structure. This structure is sent with an OID_DOT11_WFD_SEND_INVITATION_REQUEST request to the miniport.
-old-location : netvista\dot11_send_invitation_request_parameters.htm
-old-project : netvista
-ms.assetid : A1177154-4674-425C-A83B-A4A8FCD1729C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_SEND_INVITATION_REQUEST_PARAMETERS, *PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, windot11/PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, _DOT11_SEND_INVITATION_REQUEST_PARAMETERS, DOT11_SEND_INVITATION_REQUEST_PARAMETERS, PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, netvista.dot11_send_invitation_request_parameters, DOT11_SEND_INVITATION_REQUEST_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_SEND_INVITATION_REQUEST_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with   Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, DOT11_SEND_INVITATION_REQUEST_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_SEND_INVITATION_REQUEST_PARAMETERS
+title: "_DOT11_SEND_INVITATION_REQUEST_PARAMETERS"
+author: windows-driver-content
+description: The request parameters for an inivitation request are specified in a DOT11_SEND_INVITATION_REQUEST_PARAMETERS structure. This structure is sent with an OID_DOT11_WFD_SEND_INVITATION_REQUEST request to the miniport.
+old-location: netvista\dot11_send_invitation_request_parameters.htm
+old-project: netvista
+ms.assetid: A1177154-4674-425C-A83B-A4A8FCD1729C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/DOT11_SEND_INVITATION_REQUEST_PARAMETERS, *PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, windot11/PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, _DOT11_SEND_INVITATION_REQUEST_PARAMETERS, DOT11_SEND_INVITATION_REQUEST_PARAMETERS, PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, netvista.dot11_send_invitation_request_parameters, DOT11_SEND_INVITATION_REQUEST_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_SEND_INVITATION_REQUEST_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with   Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_SEND_INVITATION_REQUEST_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_SEND_INVITATION_REQUEST_PARAMETERS, DOT11_SEND_INVITATION_REQUEST_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_SEND_INVITATION_REQUEST_PARAMETERS structure

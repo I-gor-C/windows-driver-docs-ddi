@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._CPSUIDATABLOCK
-title : "_CPSUIDATABLOCK"
-author : windows-driver-content
-description : The CPSUIDATABLOCK structure is used as a parameter for the ComPropSheet function, if the function code is CPSFUNC_SET_DATABLOCK or CPSFUNC_QUERY_DATABLOCK.
-old-location : print\cpsuidatablock.htm
-old-project : print
-ms.assetid : c5b488ac-dd8d-4484-81ca-b64fdf517100
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : compstui/PCPSUIDATABLOCK, _CPSUIDATABLOCK, CPSUIDATABLOCK structure [Print Devices], compstui/CPSUIDATABLOCK, PCPSUIDATABLOCK, *PCPSUIDATABLOCK, print.cpsuidatablock, PCPSUIDATABLOCK structure pointer [Print Devices], CPSUIDATABLOCK, cpsuifnc_c9e406f5-1d6a-403d-a286-89cf199a09d2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CPSUIDATABLOCK, *PCPSUIDATABLOCK
+UID: NS:compstui._CPSUIDATABLOCK
+title: "_CPSUIDATABLOCK"
+author: windows-driver-content
+description: The CPSUIDATABLOCK structure is used as a parameter for the ComPropSheet function, if the function code is CPSFUNC_SET_DATABLOCK or CPSFUNC_QUERY_DATABLOCK.
+old-location: print\cpsuidatablock.htm
+old-project: print
+ms.assetid: c5b488ac-dd8d-4484-81ca-b64fdf517100
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: compstui/PCPSUIDATABLOCK, _CPSUIDATABLOCK, CPSUIDATABLOCK structure [Print Devices], compstui/CPSUIDATABLOCK, PCPSUIDATABLOCK, *PCPSUIDATABLOCK, print.cpsuidatablock, PCPSUIDATABLOCK structure pointer [Print Devices], CPSUIDATABLOCK, cpsuifnc_c9e406f5-1d6a-403d-a286-89cf199a09d2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	CPSUIDATABLOCK
+product: Windows
+targetos: Windows
+req.typenames: CPSUIDATABLOCK, *PCPSUIDATABLOCK
 ---
 
 # _CPSUIDATABLOCK structure

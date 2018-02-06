@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGenerateDataEvent
-title : KsGenerateDataEvent function
-author : windows-driver-content
-description : The KsGenerateDataEvent function generates one of the standard event notifications when given an event entry structure and callback data.
-old-location : stream\ksgeneratedataevent.htm
-old-project : stream
-ms.assetid : 3ba49134-e144-4212-9ef7-e16b9d5f90ea
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsGenerateDataEvent, KsGenerateDataEvent, KsGenerateDataEvent function [Streaming Media Devices], stream.ksgeneratedataevent, ksfunc_4e7efb50-d6c2-45b5-9b44-5c3d48e91933.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGenerateDataEvent
+title: KsGenerateDataEvent function
+author: windows-driver-content
+description: The KsGenerateDataEvent function generates one of the standard event notifications when given an event entry structure and callback data.
+old-location: stream\ksgeneratedataevent.htm
+old-project: stream
+ms.assetid: 3ba49134-e144-4212-9ef7-e16b9d5f90ea
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsGenerateDataEvent, KsGenerateDataEvent, KsGenerateDataEvent function [Streaming Media Devices], stream.ksgeneratedataevent, ksfunc_4e7efb50-d6c2-45b5-9b44-5c3d48e91933.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGenerateDataEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

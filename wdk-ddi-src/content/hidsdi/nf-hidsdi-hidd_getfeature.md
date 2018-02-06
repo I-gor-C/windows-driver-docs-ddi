@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetFeature
-title : HidD_GetFeature function
-author : windows-driver-content
-description : The HidD_GetFeature routine returns a feature report from a specified top-level collection.
-old-location : hid\hidd_getfeature.htm
-old-project : hid
-ms.assetid : e6a01367-981a-4b44-97a8-4cb37f9753fc
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidd_getfeature, hidfunc_2992bcaf-4ca6-4b6f-9a85-d0add8c7fe99.xml, HidD_GetFeature, hidsdi/HidD_GetFeature, HidD_GetFeature routine [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetFeature
+title: HidD_GetFeature function
+author: windows-driver-content
+description: The HidD_GetFeature routine returns a feature report from a specified top-level collection.
+old-location: hid\hidd_getfeature.htm
+old-project: hid
+ms.assetid: e6a01367-981a-4b44-97a8-4cb37f9753fc
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidd_getfeature, hidfunc_2992bcaf-4ca6-4b6f-9a85-d0add8c7fe99.xml, HidD_GetFeature, hidsdi/HidD_GetFeature, HidD_GetFeature routine [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetFeature
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_DESTROYCOMMANDLIST
-title : PFND3D11DDI_DESTROYCOMMANDLIST
-author : windows-driver-content
-description : The DestroyCommandList function destroys a command list.
-old-location : display\destroycommandlist.htm
-old-project : display
-ms.assetid : 9f03c193-f017-4189-a082-908e28a2e9f7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroycommandlist, DestroyCommandList callback function [Display Devices], DestroyCommandList, PFND3D11DDI_DESTROYCOMMANDLIST, PFND3D11DDI_DESTROYCOMMANDLIST, d3d10umddi/DestroyCommandList, UserModeDisplayDriverDx11_Functions_cf01bd33-1921-4d56-a377-f8eda35a8d04.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DestroyCommandList is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_DESTROYCOMMANDLIST
+title: PFND3D11DDI_DESTROYCOMMANDLIST
+author: windows-driver-content
+description: The DestroyCommandList function destroys a command list.
+old-location: display\destroycommandlist.htm
+old-project: display
+ms.assetid: 9f03c193-f017-4189-a082-908e28a2e9f7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroycommandlist, DestroyCommandList callback function [Display Devices], DestroyCommandList, PFND3D11DDI_DESTROYCOMMANDLIST, PFND3D11DDI_DESTROYCOMMANDLIST, d3d10umddi/DestroyCommandList, UserModeDisplayDriverDx11_Functions_cf01bd33-1921-4d56-a377-f8eda35a8d04.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DestroyCommandList is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyCommandList
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

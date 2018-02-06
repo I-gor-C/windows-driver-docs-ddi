@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsTopologyPropertyHandler
-title : KsTopologyPropertyHandler function
-author : windows-driver-content
-description : The KsTopologyPropertyHandler function performs standard handling of the static members of the KSPROPSETID_Topology Property Set. The function uses the KSTOPOLOGY structure, which describes the set of information that is returned by this property set.
-old-location : stream\kstopologypropertyhandler.htm
-old-project : stream
-ms.assetid : fe033614-b1a0-490b-b45b-a8d8de650dbf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsTopologyPropertyHandler, stream.kstopologypropertyhandler, KsTopologyPropertyHandler function [Streaming Media Devices], ksfunc_d007eab3-23b3-42ea-a1d9-b2be806cb4ea.xml, ks/KsTopologyPropertyHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsTopologyPropertyHandler
+title: KsTopologyPropertyHandler function
+author: windows-driver-content
+description: The KsTopologyPropertyHandler function performs standard handling of the static members of the KSPROPSETID_Topology Property Set. The function uses the KSTOPOLOGY structure, which describes the set of information that is returned by this property set.
+old-location: stream\kstopologypropertyhandler.htm
+old-project: stream
+ms.assetid: fe033614-b1a0-490b-b45b-a8d8de650dbf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsTopologyPropertyHandler, stream.kstopologypropertyhandler, KsTopologyPropertyHandler function [Streaming Media Devices], ksfunc_d007eab3-23b3-42ea-a1d9-b2be806cb4ea.xml, ks/KsTopologyPropertyHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsTopologyPropertyHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

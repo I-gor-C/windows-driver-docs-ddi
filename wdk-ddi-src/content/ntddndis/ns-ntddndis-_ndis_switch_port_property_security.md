@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_SECURITY
-title : "_NDIS_SWITCH_PORT_PROPERTY_SECURITY"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_PROPERTY_SECURITY structure specifies a security policy property for a Hyper-V extensible switch port.NDIS_SWITCH_PORT_PROPERTY_SECURITY structure specifies a security policy property for a Hyper-V extensible switch port.
-old-location : netvista\ndis_switch_port_property_security.htm
-old-project : netvista
-ms.assetid : 632ce2d0-4dff-422e-a968-436bd17dd6d8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_switch_port_property_security, NDIS_SWITCH_PORT_PROPERTY_SECURITY, PNDIS_SWITCH_PORT_PROPERTY_SECURITY structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_PROPERTY_SECURITY, ntddndis/NDIS_SWITCH_PORT_PROPERTY_SECURITY, PNDIS_SWITCH_PORT_PROPERTY_SECURITY, NDIS_SWITCH_PORT_PROPERTY_SECURITY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_PORT_PROPERTY_SECURITY, _NDIS_SWITCH_PORT_PROPERTY_SECURITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PORT_PROPERTY_SECURITY, NDIS_SWITCH_PORT_PROPERTY_SECURITY"
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_SECURITY
+title: "_NDIS_SWITCH_PORT_PROPERTY_SECURITY"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_PROPERTY_SECURITY structure specifies a security policy property for a Hyper-V extensible switch port.NDIS_SWITCH_PORT_PROPERTY_SECURITY structure specifies a security policy property for a Hyper-V extensible switch port.
+old-location: netvista\ndis_switch_port_property_security.htm
+old-project: netvista
+ms.assetid: 632ce2d0-4dff-422e-a968-436bd17dd6d8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_switch_port_property_security, NDIS_SWITCH_PORT_PROPERTY_SECURITY, PNDIS_SWITCH_PORT_PROPERTY_SECURITY structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_PROPERTY_SECURITY, ntddndis/NDIS_SWITCH_PORT_PROPERTY_SECURITY, PNDIS_SWITCH_PORT_PROPERTY_SECURITY, NDIS_SWITCH_PORT_PROPERTY_SECURITY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_PORT_PROPERTY_SECURITY, _NDIS_SWITCH_PORT_PROPERTY_SECURITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_PROPERTY_SECURITY
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_PORT_PROPERTY_SECURITY, NDIS_SWITCH_PORT_PROPERTY_SECURITY"
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_SECURITY structure

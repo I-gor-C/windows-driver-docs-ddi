@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_QUERYADAPTERINFO
-title : DXGKDDI_QUERYADAPTERINFO
-author : windows-driver-content
-description : The DxgkDdiQueryAdapterInfo function retrieves configuration information from the graphics adapter.
-old-location : display\dxgkddiqueryadapterinfo.htm
-old-project : display
-ms.assetid : f2f4c54c-7413-48e5-a165-d71f35642b6c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiqueryadapterinfo, DxgkDdiQueryAdapterInfo callback function [Display Devices], DxgkDdiQueryAdapterInfo, DXGKDDI_QUERYADAPTERINFO, DXGKDDI_QUERYADAPTERINFO, d3dkmddi/DxgkDdiQueryAdapterInfo, DmFunctions_700dcca1-79a6-4d31-953c-00e33c8a404d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_QUERYADAPTERINFO
+title: DXGKDDI_QUERYADAPTERINFO
+author: windows-driver-content
+description: The DxgkDdiQueryAdapterInfo function retrieves configuration information from the graphics adapter.
+old-location: display\dxgkddiqueryadapterinfo.htm
+old-project: display
+ms.assetid: f2f4c54c-7413-48e5-a165-d71f35642b6c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiqueryadapterinfo, DxgkDdiQueryAdapterInfo callback function [Display Devices], DxgkDdiQueryAdapterInfo, DXGKDDI_QUERYADAPTERINFO, DXGKDDI_QUERYADAPTERINFO, d3dkmddi/DxgkDdiQueryAdapterInfo, DmFunctions_700dcca1-79a6-4d31-953c-00e33c8a404d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiQueryAdapterInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

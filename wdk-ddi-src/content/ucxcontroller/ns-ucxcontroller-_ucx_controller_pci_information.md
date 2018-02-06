@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxcontroller._UCX_CONTROLLER_PCI_INFORMATION
-title : "_UCX_CONTROLLER_PCI_INFORMATION"
-author : windows-driver-content
-description : This structure provides information about a PCI USB controller.
-old-location : buses\_ucx_controller_pci_information.htm
-old-project : usbref
-ms.assetid : 178C9423-D7C9-43FD-BC80-A675383BDE9B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxcontroller/P_UCX_CONTROLLER_PCI_INFORMATION, buses._ucx_controller_pci_information, P_UCX_CONTROLLER_PCI_INFORMATION, *PUCX_CONTROLLER_PCI_INFORMATION, UCX_CONTROLLER_PCI_INFORMATION, UCX_CONTROLLER_PCI_INFORMATION structure [Buses], ucxcontroller/_UCX_CONTROLLER_PCI_INFORMATION, P_UCX_CONTROLLER_PCI_INFORMATION structure pointer [Buses], _UCX_CONTROLLER_PCI_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCX_CONTROLLER_PCI_INFORMATION, UCX_CONTROLLER_PCI_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:ucxcontroller._UCX_CONTROLLER_PCI_INFORMATION
+title: "_UCX_CONTROLLER_PCI_INFORMATION"
+author: windows-driver-content
+description: This structure provides information about a PCI USB controller.
+old-location: buses\_ucx_controller_pci_information.htm
+old-project: usbref
+ms.assetid: 178C9423-D7C9-43FD-BC80-A675383BDE9B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxcontroller/P_UCX_CONTROLLER_PCI_INFORMATION, buses._ucx_controller_pci_information, P_UCX_CONTROLLER_PCI_INFORMATION, *PUCX_CONTROLLER_PCI_INFORMATION, UCX_CONTROLLER_PCI_INFORMATION, UCX_CONTROLLER_PCI_INFORMATION structure [Buses], ucxcontroller/_UCX_CONTROLLER_PCI_INFORMATION, P_UCX_CONTROLLER_PCI_INFORMATION structure pointer [Buses], _UCX_CONTROLLER_PCI_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	UCX_CONTROLLER_PCI_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PUCX_CONTROLLER_PCI_INFORMATION, UCX_CONTROLLER_PCI_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _UCX_CONTROLLER_PCI_INFORMATION structure

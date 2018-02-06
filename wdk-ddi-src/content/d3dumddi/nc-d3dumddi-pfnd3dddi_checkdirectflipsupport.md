@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CHECKDIRECTFLIPSUPPORT
-title : PFND3DDDI_CHECKDIRECTFLIPSUPPORT
-author : windows-driver-content
-description : Called by the Desktop Window Manager (DWM) to verify that the user-mode driver supports Direct Flip operations, in which video memory is seamlessly flipped between an application's managed primary allocations and the DWM's managed primary allocations.
-old-location : display\checkdirectflipsupport.htm
-old-project : display
-ms.assetid : BB909041-0194-4828-ACA2-E3F6B1974DBB
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkdirectflipsupport, CheckDirectFlipSupport callback function [Display Devices], CheckDirectFlipSupport, PFND3DDDI_CHECKDIRECTFLIPSUPPORT, PFND3DDDI_CHECKDIRECTFLIPSUPPORT, d3dumddi/CheckDirectFlipSupport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CHECKDIRECTFLIPSUPPORT
+title: PFND3DDDI_CHECKDIRECTFLIPSUPPORT
+author: windows-driver-content
+description: Called by the Desktop Window Manager (DWM) to verify that the user-mode driver supports Direct Flip operations, in which video memory is seamlessly flipped between an application's managed primary allocations and the DWM's managed primary allocations.
+old-location: display\checkdirectflipsupport.htm
+old-project: display
+ms.assetid: BB909041-0194-4828-ACA2-E3F6B1974DBB
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkdirectflipsupport, CheckDirectFlipSupport callback function [Display Devices], CheckDirectFlipSupport, PFND3DDDI_CHECKDIRECTFLIPSUPPORT, PFND3DDDI_CHECKDIRECTFLIPSUPPORT, d3dumddi/CheckDirectFlipSupport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CheckDirectFlipSupport
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

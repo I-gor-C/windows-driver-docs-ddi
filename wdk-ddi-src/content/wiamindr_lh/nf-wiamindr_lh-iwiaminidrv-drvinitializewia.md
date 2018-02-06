@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvInitializeWia
-title : IWiaMiniDrv::drvInitializeWia method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvInitializeWia method initializes the minidriver and builds the driver item tree representing the device.
-old-location : image\iwiaminidrv_drvinitializewia.htm
-old-project : image
-ms.assetid : 93b155eb-0254-441f-b01f-3da8eb7376a5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : drvInitializeWia method [Imaging Devices], drvInitializeWia, IWiaMiniDrv, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvInitializeWia, IWiaMiniDrv::drvInitializeWia, MiniDrv_04485b20-ff45-4cf7-a861-841bf03befcf.xml, IWiaMiniDrv interface [Imaging Devices], drvInitializeWia method, image.iwiaminidrv_drvinitializewia
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvInitializeWia
+title: IWiaMiniDrv::drvInitializeWia method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvInitializeWia method initializes the minidriver and builds the driver item tree representing the device.
+old-location: image\iwiaminidrv_drvinitializewia.htm
+old-project: image
+ms.assetid: 93b155eb-0254-441f-b01f-3da8eb7376a5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: drvInitializeWia method [Imaging Devices], drvInitializeWia, IWiaMiniDrv, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvInitializeWia, IWiaMiniDrv::drvInitializeWia, MiniDrv_04485b20-ff45-4cf7-a861-841bf03befcf.xml, IWiaMiniDrv interface [Imaging Devices], drvInitializeWia method, image.iwiaminidrv_drvinitializewia
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvInitializeWia
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

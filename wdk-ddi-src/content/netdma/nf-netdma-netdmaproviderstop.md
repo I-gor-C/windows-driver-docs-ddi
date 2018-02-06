@@ -1,41 +1,46 @@
 ---
-UID : NF:netdma.NetDmaProviderStop
-title : NetDmaProviderStop function
-author : windows-driver-content
-description : The NetDmaProviderStop function notifies the NetDMA interface that all of the DMA channels that are associated with a DMA provider are no longer available for DMA transfers.
-old-location : netvista\netdmaproviderstop.htm
-old-project : netvista
-ms.assetid : 992fcdbd-200f-465d-b4be-922132d51d97
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NetDmaProviderStop, NetDmaProviderStop function [Network Drivers Starting with Windows Vista], netdma_ref_3d99732a-b6db-4d07-a5f0-0e79f82dac32.xml, netdma/NetDmaProviderStop, netvista.netdmaproviderstop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+UID: NF:netdma.NetDmaProviderStop
+title: NetDmaProviderStop function
+author: windows-driver-content
+description: The NetDmaProviderStop function notifies the NetDMA interface that all of the DMA channels that are associated with a DMA provider are no longer available for DMA transfers.
+old-location: netvista\netdmaproviderstop.htm
+old-project: netvista
+ms.assetid: 992fcdbd-200f-465d-b4be-922132d51d97
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NetDmaProviderStop, NetDmaProviderStop function [Network Drivers Starting with Windows Vista], netdma_ref_3d99732a-b6db-4d07-a5f0-0e79f82dac32.xml, netdma/NetDmaProviderStop, netvista.netdmaproviderstop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NetDmaProviderStop
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 

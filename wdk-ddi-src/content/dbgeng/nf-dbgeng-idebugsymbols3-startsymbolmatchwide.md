@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.StartSymbolMatchWide
-title : IDebugSymbols3::StartSymbolMatchWide method
-author : windows-driver-content
-description : The StartSymbolMatchWide method initializes a search for symbols whose names match a given pattern.
-old-location : debugger\startsymbolmatchwide.htm
-old-project : debugger
-ms.assetid : dbf8c1a3-cc59-40d7-8355-62891b5b45d2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, debugger.startsymbolmatchwide, dbgeng/IDebugSymbols3::StartSymbolMatchWide, StartSymbolMatchWide, IDebugSymbols3::StartSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], StartSymbolMatchWide method, StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.StartSymbolMatchWide
+title: IDebugSymbols3::StartSymbolMatchWide method
+author: windows-driver-content
+description: The StartSymbolMatchWide method initializes a search for symbols whose names match a given pattern.
+old-location: debugger\startsymbolmatchwide.htm
+old-project: debugger
+ms.assetid: dbf8c1a3-cc59-40d7-8355-62891b5b45d2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, debugger.startsymbolmatchwide, dbgeng/IDebugSymbols3::StartSymbolMatchWide, StartSymbolMatchWide, IDebugSymbols3::StartSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], StartSymbolMatchWide method, StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.StartSymbolMatchWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeName
-title : FltGetVolumeName function
-author : windows-driver-content
-description : The FltGetVolumeName routine gets the volume name for a given volume.
-old-location : ifsk\fltgetvolumename.htm
-old-project : ifsk
-ms.assetid : 50815b33-d417-4499-9423-f65697396200
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetVolumeName, FltGetVolumeName routine [Installable File System Drivers], FltGetVolumeName, ifsk.fltgetvolumename, FltApiRef_e_to_o_8d8cee36-2d14-4d5e-b95a-065a50d83f15.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeName
+title: FltGetVolumeName function
+author: windows-driver-content
+description: The FltGetVolumeName routine gets the volume name for a given volume.
+old-location: ifsk\fltgetvolumename.htm
+old-project: ifsk
+ms.assetid: 50815b33-d417-4499-9423-f65697396200
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltGetVolumeName, FltGetVolumeName routine [Installable File System Drivers], FltGetVolumeName, ifsk.fltgetvolumename, FltApiRef_e_to_o_8d8cee36-2d14-4d5e-b95a-065a50d83f15.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeName
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

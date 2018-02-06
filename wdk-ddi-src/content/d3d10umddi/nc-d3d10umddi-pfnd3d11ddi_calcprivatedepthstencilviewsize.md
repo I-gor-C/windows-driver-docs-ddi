@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE
-title : PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE
-author : windows-driver-content
-description : The CalcPrivateDepthStencilViewSize(D3D11) function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a depth-stencil view.
-old-location : display\calcprivatedepthstencilviewsize_d3d11_.htm
-old-project : display
-ms.assetid : d92e3bde-9527-401e-aafd-4ba39603d4a7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivatedepthstencilviewsize_d3d11_, CalcPrivateDepthStencilViewSize callback function [Display Devices], CalcPrivateDepthStencilViewSize, PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE, PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE, d3d10umddi/CalcPrivateDepthStencilViewSize, UserModeDisplayDriverDx11_Functions_865f13d6-ea1c-4e9f-94b2-7f77d10c8283.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CalcPrivateDepthStencilViewSize(D3D11) is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE
+title: PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE
+author: windows-driver-content
+description: The CalcPrivateDepthStencilViewSize(D3D11) function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a depth-stencil view.
+old-location: display\calcprivatedepthstencilviewsize_d3d11_.htm
+old-project: display
+ms.assetid: d92e3bde-9527-401e-aafd-4ba39603d4a7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivatedepthstencilviewsize_d3d11_, CalcPrivateDepthStencilViewSize callback function [Display Devices], CalcPrivateDepthStencilViewSize, PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE, PFND3D11DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE, d3d10umddi/CalcPrivateDepthStencilViewSize, UserModeDisplayDriverDx11_Functions_865f13d6-ea1c-4e9f-94b2-7f77d10c8283.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CalcPrivateDepthStencilViewSize(D3D11) is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CalcPrivateDepthStencilViewSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

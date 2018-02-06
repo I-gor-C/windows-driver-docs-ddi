@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSDPC_ITEM
-title : KSDPC_ITEM
-author : windows-driver-content
-description : The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL.
-old-location : stream\ksdpc_item.htm
-old-project : stream
-ms.assetid : 7732b1a8-4f76-49d0-acbf-ce0be6b36858
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSDPC_ITEM, KSDPC_ITEM structure [Streaming Media Devices], KSDPC_ITEM, PKSDPC_ITEM, PKSDPC_ITEM structure pointer [Streaming Media Devices], ks/KSDPC_ITEM, *PKSDPC_ITEM, ks-struct_c40f10e3-5732-4020-a22f-4695eaaa471a.xml, stream.ksdpc_item
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDPC_ITEM, *PKSDPC_ITEM
+UID: NS:ks.KSDPC_ITEM
+title: KSDPC_ITEM
+author: windows-driver-content
+description: The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL.
+old-location: stream\ksdpc_item.htm
+old-project: stream
+ms.assetid: 7732b1a8-4f76-49d0-acbf-ce0be6b36858
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSDPC_ITEM, KSDPC_ITEM structure [Streaming Media Devices], KSDPC_ITEM, PKSDPC_ITEM, PKSDPC_ITEM structure pointer [Streaming Media Devices], ks/KSDPC_ITEM, *PKSDPC_ITEM, ks-struct_c40f10e3-5732-4020-a22f-4695eaaa471a.xml, stream.ksdpc_item
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDPC_ITEM
+product: Windows
+targetos: Windows
+req.typenames: KSDPC_ITEM, *PKSDPC_ITEM
 ---
 
 # KSDPC_ITEM structure

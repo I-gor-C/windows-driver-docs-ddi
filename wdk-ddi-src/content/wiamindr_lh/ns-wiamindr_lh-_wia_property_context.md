@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamindr_lh._WIA_PROPERTY_CONTEXT
-title : "_WIA_PROPERTY_CONTEXT"
-author : windows-driver-content
-description : The WIA_PROPERTY_CONTEXT structure stores property identifiers and their context.
-old-location : image\wia_property_context.htm
-old-project : image
-ms.assetid : afe92cb5-519a-46a3-a66d-c01b6a2c780b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PWIA_PROPERTY_CONTEXT, _WIA_PROPERTY_CONTEXT, WIA_PROPERTY_CONTEXT structure [Imaging Devices], wiamindr_lh/WIA_PROPERTY_CONTEXT, PWIA_PROPERTY_CONTEXT structure pointer [Imaging Devices], WIA_PROPERTY_CONTEXT, image.wia_property_context, wiamindr_lh/PWIA_PROPERTY_CONTEXT, wiastrct_044e9a49-3276-42f5-a903-d21969cf6168.xml, PWIA_PROPERTY_CONTEXT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWIA_PROPERTY_CONTEXT, WIA_PROPERTY_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wiamindr_lh._WIA_PROPERTY_CONTEXT
+title: "_WIA_PROPERTY_CONTEXT"
+author: windows-driver-content
+description: The WIA_PROPERTY_CONTEXT structure stores property identifiers and their context.
+old-location: image\wia_property_context.htm
+old-project: image
+ms.assetid: afe92cb5-519a-46a3-a66d-c01b6a2c780b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PWIA_PROPERTY_CONTEXT, _WIA_PROPERTY_CONTEXT, WIA_PROPERTY_CONTEXT structure [Imaging Devices], wiamindr_lh/WIA_PROPERTY_CONTEXT, PWIA_PROPERTY_CONTEXT structure pointer [Imaging Devices], WIA_PROPERTY_CONTEXT, image.wia_property_context, wiamindr_lh/PWIA_PROPERTY_CONTEXT, wiastrct_044e9a49-3276-42f5-a903-d21969cf6168.xml, PWIA_PROPERTY_CONTEXT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	WIA_PROPERTY_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PWIA_PROPERTY_CONTEXT, WIA_PROPERTY_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _WIA_PROPERTY_CONTEXT structure

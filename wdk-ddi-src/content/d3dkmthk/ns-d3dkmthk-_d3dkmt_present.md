@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_PRESENT
-title : "_D3DKMT_PRESENT"
-author : windows-driver-content
-description : The D3DKMT_PRESENT structure describes the present operation.
-old-location : display\d3dkmt_present.htm
-old-project : display
-ms.assetid : 959d17f1-588b-4b65-a3ea-e4609aa84eed
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_present, D3DKMT_PRESENT, _D3DKMT_PRESENT, OpenGL_Structs_f3a9c661-7b2d-4f75-864f-c5f2a3c591ad.xml, D3DKMT_PRESENT structure [Display Devices], d3dkmthk/D3DKMT_PRESENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_PRESENT
+UID: NS:d3dkmthk._D3DKMT_PRESENT
+title: "_D3DKMT_PRESENT"
+author: windows-driver-content
+description: The D3DKMT_PRESENT structure describes the present operation.
+old-location: display\d3dkmt_present.htm
+old-project: display
+ms.assetid: 959d17f1-588b-4b65-a3ea-e4609aa84eed
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_present, D3DKMT_PRESENT, _D3DKMT_PRESENT, OpenGL_Structs_f3a9c661-7b2d-4f75-864f-c5f2a3c591ad.xml, D3DKMT_PRESENT structure [Display Devices], d3dkmthk/D3DKMT_PRESENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_PRESENT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_PRESENT
 ---
 
 # _D3DKMT_PRESENT structure

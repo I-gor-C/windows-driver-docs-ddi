@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_SETCLIPPLANE
-title : "_D3DDDIARG_SETCLIPPLANE"
-author : windows-driver-content
-description : The D3DDDIARG_SETCLIPPLANE structure describes a clip plane.
-old-location : display\d3dddiarg_setclipplane.htm
-old-project : display
-ms.assetid : 94e942a4-de66-47a3-89bf-fbec2a408775
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_SETCLIPPLANE structure [Display Devices], _D3DDDIARG_SETCLIPPLANE, UMDisplayDriver_param_Structs_3371265a-3cb5-4aee-b019-14ef454e9d6d.xml, display.d3dddiarg_setclipplane, d3dumddi/D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_SETCLIPPLANE
+UID: NS:d3dumddi._D3DDDIARG_SETCLIPPLANE
+title: "_D3DDDIARG_SETCLIPPLANE"
+author: windows-driver-content
+description: The D3DDDIARG_SETCLIPPLANE structure describes a clip plane.
+old-location: display\d3dddiarg_setclipplane.htm
+old-project: display
+ms.assetid: 94e942a4-de66-47a3-89bf-fbec2a408775
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_SETCLIPPLANE structure [Display Devices], _D3DDDIARG_SETCLIPPLANE, UMDisplayDriver_param_Structs_3371265a-3cb5-4aee-b019-14ef454e9d6d.xml, display.d3dddiarg_setclipplane, d3dumddi/D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_SETCLIPPLANE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_SETCLIPPLANE
 ---
 
 # _D3DDDIARG_SETCLIPPLANE structure

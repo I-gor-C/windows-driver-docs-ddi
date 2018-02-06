@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DRAWTRIPATCH
-title : PFND3DDDI_DRAWTRIPATCH
-author : windows-driver-content
-description : The DrawTriPatch function draws a new or cached triangular patch or updates the specification of a previously defined patch.
-old-location : display\drawtripatch.htm
-old-project : display
-ms.assetid : 98e5f2c5-2795-4226-b5c0-9498b37c22df
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.drawtripatch, DrawTriPatch callback function [Display Devices], DrawTriPatch, PFND3DDDI_DRAWTRIPATCH, PFND3DDDI_DRAWTRIPATCH, d3dumddi/DrawTriPatch, UserModeDisplayDriver_Functions_a4fb7bb1-ec56-45a9-9cca-5be7bd9f4746.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DRAWTRIPATCH
+title: PFND3DDDI_DRAWTRIPATCH
+author: windows-driver-content
+description: The DrawTriPatch function draws a new or cached triangular patch or updates the specification of a previously defined patch.
+old-location: display\drawtripatch.htm
+old-project: display
+ms.assetid: 98e5f2c5-2795-4226-b5c0-9498b37c22df
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.drawtripatch, DrawTriPatch callback function [Display Devices], DrawTriPatch, PFND3DDDI_DRAWTRIPATCH, PFND3DDDI_DRAWTRIPATCH, d3dumddi/DrawTriPatch, UserModeDisplayDriver_Functions_a4fb7bb1-ec56-45a9-9cca-5be7bd9f4746.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DrawTriPatch
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

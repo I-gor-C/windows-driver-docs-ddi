@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PINTERFACE_DEREFERENCE
-title : PINTERFACE_DEREFERENCE
-author : windows-driver-content
-description : The InterfaceDereference routine decrements the reference count on a driver-defined interface.
-old-location : kernel\interfacedereference.htm
-old-project : kernel
-ms.assetid : ed23d7fb-0fff-4c04-9291-90e7323f3e6f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.interfacedereference, InterfaceDereference, InterfaceDereference routine [Kernel-Mode Driver Architecture], InterfaceDereference, PINTERFACE_DEREFERENCE, PINTERFACE_DEREFERENCE, wdm/InterfaceDereference, drvr_interface_96e41fd1-22ff-48d9-85ae-94b735ba67bf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PINTERFACE_DEREFERENCE
+title: PINTERFACE_DEREFERENCE
+author: windows-driver-content
+description: The InterfaceDereference routine decrements the reference count on a driver-defined interface.
+old-location: kernel\interfacedereference.htm
+old-project: kernel
+ms.assetid: ed23d7fb-0fff-4c04-9291-90e7323f3e6f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.interfacedereference, InterfaceDereference, InterfaceDereference routine [Kernel-Mode Driver Architecture], InterfaceDereference, PINTERFACE_DEREFERENCE, PINTERFACE_DEREFERENCE, wdm/InterfaceDereference, drvr_interface_96e41fd1-22ff-48d9-85ae-94b735ba67bf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	InterfaceDereference
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

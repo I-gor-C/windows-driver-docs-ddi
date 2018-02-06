@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._PD_BUFFER
-title : "_PD_BUFFER"
-author : windows-driver-content
-description : This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
-old-location : netvista\pd_buffer.htm
-old-project : netvista
-ms.assetid : 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/PPD_BUFFER, netvista.pd_buffer, _PD_BUFFER, ndis/PD_BUFFER, PPD_BUFFER, PD_BUFFER structure [Network Drivers Starting with Windows Vista], PPD_BUFFER structure pointer [Network Drivers Starting with Windows Vista], PD_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER
+UID: NS:ndis._PD_BUFFER
+title: "_PD_BUFFER"
+author: windows-driver-content
+description: This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
+old-location: netvista\pd_buffer.htm
+old-project: netvista
+ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/PPD_BUFFER, netvista.pd_buffer, _PD_BUFFER, ndis/PD_BUFFER, PPD_BUFFER, PD_BUFFER structure [Network Drivers Starting with Windows Vista], PPD_BUFFER structure pointer [Network Drivers Starting with Windows Vista], PD_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	PD_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER
 ---
 
 # _PD_BUFFER structure

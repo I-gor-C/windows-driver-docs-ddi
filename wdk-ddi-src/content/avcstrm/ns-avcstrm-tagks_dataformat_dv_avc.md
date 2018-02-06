@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm.tagKS_DATAFORMAT_DV_AVC
-title : tagKS_DATAFORMAT_DV_AVC
-author : windows-driver-content
-description : The KS_DATAFORMAT_DV_AVC structure stores the data format for an AV/C digital video connection.
-old-location : stream\ks_dataformat_dv_avc.htm
-old-project : stream
-ms.assetid : fe545ee3-8004-46fc-a49a-4274f8d1a6a7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_DV_AVC, avcstrm/PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC, avcstrm/KS_DATAFORMAT_DV_AVC, PKS_DATAFORMAT_DV_AVC, stream.ks_dataformat_dv_avc, avcsref_36d913e1-7071-46db-849d-2493fa30aad8.xml, *PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC structure [Streaming Media Devices], PKS_DATAFORMAT_DV_AVC structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC
+UID: NS:avcstrm.tagKS_DATAFORMAT_DV_AVC
+title: tagKS_DATAFORMAT_DV_AVC
+author: windows-driver-content
+description: The KS_DATAFORMAT_DV_AVC structure stores the data format for an AV/C digital video connection.
+old-location: stream\ks_dataformat_dv_avc.htm
+old-project: stream
+ms.assetid: fe545ee3-8004-46fc-a49a-4274f8d1a6a7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: tagKS_DATAFORMAT_DV_AVC, avcstrm/PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC, avcstrm/KS_DATAFORMAT_DV_AVC, PKS_DATAFORMAT_DV_AVC, stream.ks_dataformat_dv_avc, avcsref_36d913e1-7071-46db-849d-2493fa30aad8.xml, *PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC structure [Streaming Media Devices], PKS_DATAFORMAT_DV_AVC structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	KS_DATAFORMAT_DV_AVC
+product: Windows
+targetos: Windows
+req.typenames: KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC
 ---
 
 # tagKS_DATAFORMAT_DV_AVC structure

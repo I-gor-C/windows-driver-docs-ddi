@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2CustomReceiveCreate
-title : SerCx2CustomReceiveCreate function
-author : windows-driver-content
-description : The SerCx2CustomReceiveCreate method creates a custom-receive object, which version 2 of the serial framework extension (SerCx2) uses to read receive data from the serial controller by means of a custom data-transfer mechanism.
-old-location : serports\sercx2customreceivecreate.htm
-old-project : serports
-ms.assetid : EC2DBC18-C3F6-4663-891E-AFF43A6D1CE3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCx2CustomReceiveCreate method [Serial Ports], serports.sercx2customreceivecreate, SerCx2CustomReceiveCreate, 2/SerCx2CustomReceiveCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2CustomReceiveCreate
+title: SerCx2CustomReceiveCreate function
+author: windows-driver-content
+description: The SerCx2CustomReceiveCreate method creates a custom-receive object, which version 2 of the serial framework extension (SerCx2) uses to read receive data from the serial controller by means of a custom data-transfer mechanism.
+old-location: serports\sercx2customreceivecreate.htm
+old-project: serports
+ms.assetid: EC2DBC18-C3F6-4663-891E-AFF43A6D1CE3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCx2CustomReceiveCreate method [Serial Ports], serports.sercx2customreceivecreate, SerCx2CustomReceiveCreate, 2/SerCx2CustomReceiveCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2CustomReceiveCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

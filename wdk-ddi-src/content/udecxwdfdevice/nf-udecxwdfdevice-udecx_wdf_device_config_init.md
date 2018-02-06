@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxwdfdevice.UDECX_WDF_DEVICE_CONFIG_INIT
-title : UDECX_WDF_DEVICE_CONFIG_INIT function
-author : windows-driver-content
-description : Initializes a UDECX_WDF_DEVICE_CONFIG structure.
-old-location : buses\udecx_wdf_device_config_init.htm
-old-project : usbref
-ms.assetid : EC26EDCA-1C9E-4D06-A970-71FB96FEB0DF
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG_INIT, buses.udecx_wdf_device_config_init, UDECX_WDF_DEVICE_CONFIG_INIT function [Buses], UDECX_WDF_DEVICE_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxwdfdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION"
-req.product : Windows 10 or later.
+UID: NF:udecxwdfdevice.UDECX_WDF_DEVICE_CONFIG_INIT
+title: UDECX_WDF_DEVICE_CONFIG_INIT function
+author: windows-driver-content
+description: Initializes a UDECX_WDF_DEVICE_CONFIG structure.
+old-location: buses\udecx_wdf_device_config_init.htm
+old-project: usbref
+ms.assetid: EC26EDCA-1C9E-4D06-A970-71FB96FEB0DF
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG_INIT, buses.udecx_wdf_device_config_init, UDECX_WDF_DEVICE_CONFIG_INIT function [Buses], UDECX_WDF_DEVICE_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxwdfdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UDECX_WDF_DEVICE_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION"
+req.product: Windows 10 or later.
 ---
 
 

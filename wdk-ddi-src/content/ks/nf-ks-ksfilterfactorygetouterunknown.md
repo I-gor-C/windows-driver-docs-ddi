@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterFactoryGetOuterUnknown
-title : KsFilterFactoryGetOuterUnknown function
-author : windows-driver-content
-description : The KsFilterFactoryGetOuterUnknown function returns the outer IUnknown of the specified filter factory.
-old-location : stream\ksfilterfactorygetouterunknown.htm
-old-project : stream
-ms.assetid : 65244091-6089-4d0c-abf4-1178cf0bf1b5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfilterfactorygetouterunknown, KsFilterFactoryGetOuterUnknown function [Streaming Media Devices], KsFilterFactoryGetOuterUnknown, ks/KsFilterFactoryGetOuterUnknown, avfunc_4a154d39-a344-4f58-8abe-cbf2a0926271.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactoryGetOuterUnknown
+title: KsFilterFactoryGetOuterUnknown function
+author: windows-driver-content
+description: The KsFilterFactoryGetOuterUnknown function returns the outer IUnknown of the specified filter factory.
+old-location: stream\ksfilterfactorygetouterunknown.htm
+old-project: stream
+ms.assetid: 65244091-6089-4d0c-abf4-1178cf0bf1b5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfilterfactorygetouterunknown, KsFilterFactoryGetOuterUnknown function [Streaming Media Devices], KsFilterFactoryGetOuterUnknown, ks/KsFilterFactoryGetOuterUnknown, avfunc_4a154d39-a344-4f58-8abe-cbf2a0926271.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterFactoryGetOuterUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

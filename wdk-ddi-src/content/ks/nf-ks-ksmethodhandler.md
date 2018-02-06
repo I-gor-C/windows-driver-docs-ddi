@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsMethodHandler
-title : KsMethodHandler function
-author : windows-driver-content
-description : The KsMethodHandler function handles methods requested through IOCTL_KS_METHOD. It works with all method identifiers defined by the sets. The function can only be called at PASSIVE_LEVEL.
-old-location : stream\ksmethodhandler.htm
-old-project : stream
-ms.assetid : 730b5fae-3536-44ed-8f92-e4563a137be9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_1f1959ed-e370-4ebb-9932-435c448a944b.xml, KsMethodHandler, KsMethodHandler function [Streaming Media Devices], ks/KsMethodHandler, stream.ksmethodhandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsMethodHandler
+title: KsMethodHandler function
+author: windows-driver-content
+description: The KsMethodHandler function handles methods requested through IOCTL_KS_METHOD. It works with all method identifiers defined by the sets. The function can only be called at PASSIVE_LEVEL.
+old-location: stream\ksmethodhandler.htm
+old-project: stream
+ms.assetid: 730b5fae-3536-44ed-8f92-e4563a137be9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_1f1959ed-e370-4ebb-9932-435c448a944b.xml, KsMethodHandler, KsMethodHandler function [Streaming Media Devices], ks/KsMethodHandler, stream.ksmethodhandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsMethodHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

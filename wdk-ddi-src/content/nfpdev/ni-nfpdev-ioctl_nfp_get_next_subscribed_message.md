@@ -1,41 +1,46 @@
 ---
-UID : NI:nfpdev.IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
-title : IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
-author : windows-driver-content
-description : The client sends the IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE request to the subscription handle repeatedly in order to receive subscribed messages as they arrive.
-old-location : nfpdrivers\ioctl_nfp_get_next_subscribed_message.htm
-old-project : nfpdrivers
-ms.assetid : 975C32AE-6A2C-44C8-8F53-4158FDF1B942
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfp_get_next_subscribed_message, IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE, nfpdev/IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfpdev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NI:nfpdev.IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
+title: IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
+author: windows-driver-content
+description: The client sends the IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE request to the subscription handle repeatedly in order to receive subscribed messages as they arrive.
+old-location: nfpdrivers\ioctl_nfp_get_next_subscribed_message.htm
+old-project: nfpdrivers
+ms.assetid: 975C32AE-6A2C-44C8-8F53-4158FDF1B942
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfp_get_next_subscribed_message, IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE, nfpdev/IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfpdev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfpdev.h
+apiname:
+-	IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE IOCTL

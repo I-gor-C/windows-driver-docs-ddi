@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSystemActiveProcessorCount
-title : NdisSystemActiveProcessorCount function
-author : windows-driver-content
-description : The NdisSystemActiveProcessorCount function returns the number of currently active processors in the local computer.
-old-location : netvista\ndissystemactiveprocessorcount.htm
-old-project : netvista
-ms.assetid : 7ddb54eb-9f20-4cb9-8488-5f2806d23430
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndissystemactiveprocessorcount, NdisSystemActiveProcessorCount function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_f69290a6-03f9-4fe8-bc02-6f58a650fa00.xml, NdisSystemActiveProcessorCount, ndis/NdisSystemActiveProcessorCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.1. For NDIS 6.20 and later, use NdisGroupActiveProcessorCount instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSystemActiveProcessorCount
+title: NdisSystemActiveProcessorCount function
+author: windows-driver-content
+description: The NdisSystemActiveProcessorCount function returns the number of currently active processors in the local computer.
+old-location: netvista\ndissystemactiveprocessorcount.htm
+old-project: netvista
+ms.assetid: 7ddb54eb-9f20-4cb9-8488-5f2806d23430
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndissystemactiveprocessorcount, NdisSystemActiveProcessorCount function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_f69290a6-03f9-4fe8-bc02-6f58a650fa00.xml, NdisSystemActiveProcessorCount, ndis/NdisSystemActiveProcessorCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.1. For NDIS 6.20 and later, use NdisGroupActiveProcessorCount instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSystemActiveProcessorCount
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

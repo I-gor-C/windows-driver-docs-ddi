@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetTextReplacement
-title : IDebugControl3::SetTextReplacement method
-author : windows-driver-content
-description : The SetTextReplacement method sets the value of a user-named alias.
-old-location : debugger\settextreplacement.htm
-old-project : debugger
-ms.assetid : 00c82e73-5649-403b-9f07-81bdd2f6c756
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetTextReplacement method [Windows Debugging], IDebugControl3::SetTextReplacement, IDebugControl3 interface [Windows Debugging], SetTextReplacement method, dbgeng/IDebugControl3::SetTextReplacement, IDebugControl3, IDebugControl2::SetTextReplacement, dbgeng/IDebugControl2::SetTextReplacement, SetTextReplacement method [Windows Debugging], IDebugControl2 interface, SetTextReplacement, SetTextReplacement method [Windows Debugging], IDebugControl3 interface, debugger.settextreplacement, IDebugControl_b53cd6ec-4cc4-45b2-96a0-b830bc7f8ca9.xml, IDebugControl2 interface [Windows Debugging], SetTextReplacement method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetTextReplacement
+title: IDebugControl3::SetTextReplacement method
+author: windows-driver-content
+description: The SetTextReplacement method sets the value of a user-named alias.
+old-location: debugger\settextreplacement.htm
+old-project: debugger
+ms.assetid: 00c82e73-5649-403b-9f07-81bdd2f6c756
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetTextReplacement method [Windows Debugging], IDebugControl3::SetTextReplacement, IDebugControl3 interface [Windows Debugging], SetTextReplacement method, dbgeng/IDebugControl3::SetTextReplacement, IDebugControl3, IDebugControl2::SetTextReplacement, dbgeng/IDebugControl2::SetTextReplacement, SetTextReplacement method [Windows Debugging], IDebugControl2 interface, SetTextReplacement, SetTextReplacement method [Windows Debugging], IDebugControl3 interface, debugger.settextreplacement, IDebugControl_b53cd6ec-4cc4-45b2-96a0-b830bc7f8ca9.xml, IDebugControl2 interface [Windows Debugging], SetTextReplacement method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.SetTextReplacement
+-	IDebugControl3.SetTextReplacement
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

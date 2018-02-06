@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.BUS_INTERFACE_REFERENCE
-title : BUS_INTERFACE_REFERENCE
-author : windows-driver-content
-description : A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use.
-old-location : stream\bus_interface_reference.htm
-old-project : stream
-ms.assetid : 17c2c46c-ff79-4c80-82c9-c49b18426789
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, PBUS_INTERFACE_REFERENCE, ks/BUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE, PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], BUS_INTERFACE_REFERENCE structure [Streaming Media Devices], stream.bus_interface_reference, BUS_INTERFACE_REFERENCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE"
+UID: NS:ks.BUS_INTERFACE_REFERENCE
+title: BUS_INTERFACE_REFERENCE
+author: windows-driver-content
+description: A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use.
+old-location: stream\bus_interface_reference.htm
+old-project: stream
+ms.assetid: 17c2c46c-ff79-4c80-82c9-c49b18426789
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, PBUS_INTERFACE_REFERENCE, ks/BUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE, PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], BUS_INTERFACE_REFERENCE structure [Streaming Media Devices], stream.bus_interface_reference, BUS_INTERFACE_REFERENCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	BUS_INTERFACE_REFERENCE
+product: Windows
+targetos: Windows
+req.typenames: "*PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE"
 ---
 
 # BUS_INTERFACE_REFERENCE structure

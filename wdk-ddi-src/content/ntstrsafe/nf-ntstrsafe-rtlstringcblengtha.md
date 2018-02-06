@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbLengthA
-title : RtlStringCbLengthA function
-author : windows-driver-content
-description : The RtlStringCbLengthW and RtlStringCbLengthA functions determine the length, in bytes, of a supplied string.
-old-location : kernel\rtlstringcblength.htm
-old-project : kernel
-ms.assetid : 74644211-7cf5-48d4-9025-7831cb449979
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbLengthW, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLength, RtlStringCbLengthW, RtlStringCbLengthA, kernel.rtlstringcblength, ntstrsafe/RtlStringCbLengthA, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbLengthW (Unicode) and RtlStringCbLengthA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbLengthA
+title: RtlStringCbLengthA function
+author: windows-driver-content
+description: The RtlStringCbLengthW and RtlStringCbLengthA functions determine the length, in bytes, of a supplied string.
+old-location: kernel\rtlstringcblength.htm
+old-project: kernel
+ms.assetid: 74644211-7cf5-48d4-9025-7831cb449979
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlStringCbLengthW, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLength, RtlStringCbLengthW, RtlStringCbLengthA, kernel.rtlstringcblength, ntstrsafe/RtlStringCbLengthA, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbLengthW (Unicode) and RtlStringCbLengthA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbLengthW
+-	RtlStringCbLengthA
+-	RtlStringCbLengthW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

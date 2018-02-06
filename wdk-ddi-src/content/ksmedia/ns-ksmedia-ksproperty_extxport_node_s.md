@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_EXTXPORT_NODE_S
-title : KSPROPERTY_EXTXPORT_NODE_S
-author : windows-driver-content
-description : The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities.
-old-location : stream\ksproperty_extxport_node_s.htm
-old-project : stream
-ms.assetid : e0321fa8-610b-4920-8be8-dd91a3452beb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_EXTXPORT_NODE_S, vidcapstruct_06823ca7-5d41-494c-879e-0835ab0b447f.xml, PKSPROPERTY_EXTXPORT_NODE_S structure pointer [Streaming Media Devices], *PKSPROPERTY_EXTXPORT_NODE_S, ksmedia/KSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S structure [Streaming Media Devices], KSPROPERTY_EXTXPORT_NODE_S, stream.ksproperty_extxport_node_s, ksmedia/PKSPROPERTY_EXTXPORT_NODE_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S"
+UID: NS:ksmedia.KSPROPERTY_EXTXPORT_NODE_S
+title: KSPROPERTY_EXTXPORT_NODE_S
+author: windows-driver-content
+description: The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities.
+old-location: stream\ksproperty_extxport_node_s.htm
+old-project: stream
+ms.assetid: e0321fa8-610b-4920-8be8-dd91a3452beb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_EXTXPORT_NODE_S, vidcapstruct_06823ca7-5d41-494c-879e-0835ab0b447f.xml, PKSPROPERTY_EXTXPORT_NODE_S structure pointer [Streaming Media Devices], *PKSPROPERTY_EXTXPORT_NODE_S, ksmedia/KSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S structure [Streaming Media Devices], KSPROPERTY_EXTXPORT_NODE_S, stream.ksproperty_extxport_node_s, ksmedia/PKSPROPERTY_EXTXPORT_NODE_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_EXTXPORT_NODE_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S"
 ---
 
 # KSPROPERTY_EXTXPORT_NODE_S structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PORT_STATE
-title : "_NDIS_PORT_STATE"
-author : windows-driver-content
-description : The NDIS_PORT_STATE structure specifies the port state information for an NDIS port.
-old-location : netvista\ndis_port_state.htm
-old-project : netvista
-ms.assetid : 57d76d1e-4276-4dbd-b651-2bba6de898b2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_PORT_STATE, _NDIS_PORT_STATE, ntddndis/PNDIS_PORT_STATE, ndis_ports_ref_dbfd8cd5-9c0c-4ea9-8329-d9fbf15b14df.xml, netvista.ndis_port_state, NDIS_PORT_STATE structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PORT_STATE, NDIS_PORT_STATE, PNDIS_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PORT_STATE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PORT_STATE, *PNDIS_PORT_STATE
+UID: NS:ntddndis._NDIS_PORT_STATE
+title: "_NDIS_PORT_STATE"
+author: windows-driver-content
+description: The NDIS_PORT_STATE structure specifies the port state information for an NDIS port.
+old-location: netvista\ndis_port_state.htm
+old-project: netvista
+ms.assetid: 57d76d1e-4276-4dbd-b651-2bba6de898b2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_PORT_STATE, _NDIS_PORT_STATE, ntddndis/PNDIS_PORT_STATE, ndis_ports_ref_dbfd8cd5-9c0c-4ea9-8329-d9fbf15b14df.xml, netvista.ndis_port_state, NDIS_PORT_STATE structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PORT_STATE, NDIS_PORT_STATE, PNDIS_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PORT_STATE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PORT_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PORT_STATE, *PNDIS_PORT_STATE
 ---
 
 # _NDIS_PORT_STATE structure

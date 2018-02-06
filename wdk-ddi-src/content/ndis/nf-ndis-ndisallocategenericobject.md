@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateGenericObject
-title : NdisAllocateGenericObject function
-author : windows-driver-content
-description : Components that do not have an NDIS handle use the NdisAllocateGenericObject function to allocate a generic NDIS object.
-old-location : netvista\ndisallocategenericobject.htm
-old-project : netvista
-ms.assetid : 166584fb-8a81-4a5b-93c9-3ad5348e15a7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisAllocateGenericObject, NdisAllocateGenericObject function [Network Drivers Starting with Windows Vista], NdisAllocateGenericObject, netvista.ndisallocategenericobject, ndis_object_ref_bb08930d-d264-4580-be64-a48061ab8ad4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function, NdisAllocateGenericObject
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateGenericObject
+title: NdisAllocateGenericObject function
+author: windows-driver-content
+description: Components that do not have an NDIS handle use the NdisAllocateGenericObject function to allocate a generic NDIS object.
+old-location: netvista\ndisallocategenericobject.htm
+old-project: netvista
+ms.assetid: 166584fb-8a81-4a5b-93c9-3ad5348e15a7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisAllocateGenericObject, NdisAllocateGenericObject function [Network Drivers Starting with Windows Vista], NdisAllocateGenericObject, netvista.ndisallocategenericobject, ndis_object_ref_bb08930d-d264-4580-be64-a48061ab8ad4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function, NdisAllocateGenericObject
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateGenericObject
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

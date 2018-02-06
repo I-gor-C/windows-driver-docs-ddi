@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAllocatePoolWithQuota
-title : ExAllocatePoolWithQuota function
-author : windows-driver-content
-description : The ExAllocatePoolWithQuota routine is obsolete, and is exported only for existing driver binaries. Use ExAllocatePoolWithQuotaTag instead.ExAllocatePoolWithQuota allocates pool memory, charging quota against the current process.
-old-location : kernel\exallocatepoolwithquota.htm
-old-project : kernel
-ms.assetid : cfdfae5e-4669-4e88-82d2-35fb2bca3012
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExAllocatePoolWithQuota routine [Kernel-Mode Driver Architecture], wdm/ExAllocatePoolWithQuota, kernel.exallocatepoolwithquota, ExAllocatePoolWithQuota, k102_6f0151af-8673-4fde-a4ab-744cb25d660f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Obsolete. This routine is exported only for existing driver binaries. Use ExAllocatePoolWithQuotaTag instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAllocatePoolWithQuota
+title: ExAllocatePoolWithQuota function
+author: windows-driver-content
+description: The ExAllocatePoolWithQuota routine is obsolete, and is exported only for existing driver binaries. Use ExAllocatePoolWithQuotaTag instead.ExAllocatePoolWithQuota allocates pool memory, charging quota against the current process.
+old-location: kernel\exallocatepoolwithquota.htm
+old-project: kernel
+ms.assetid: cfdfae5e-4669-4e88-82d2-35fb2bca3012
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExAllocatePoolWithQuota routine [Kernel-Mode Driver Architecture], wdm/ExAllocatePoolWithQuota, kernel.exallocatepoolwithquota, ExAllocatePoolWithQuota, k102_6f0151af-8673-4fde-a4ab-744cb25d660f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Obsolete. This routine is exported only for existing driver binaries. Use ExAllocatePoolWithQuotaTag instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAllocatePoolWithQuota
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

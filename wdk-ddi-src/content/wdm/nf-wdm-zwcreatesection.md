@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCreateSection
-title : ZwCreateSection function
-author : windows-driver-content
-description : The ZwCreateSection routine creates a section object.
-old-location : kernel\zwcreatesection.htm
-old-project : kernel
-ms.assetid : 805d7eff-19be-47a1-acc9-1b97e5493031
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtCreateSection, wdm/ZwCreateSection, ZwCreateSection routine [Kernel-Mode Driver Architecture], ZwCreateSection, kernel.zwcreatesection, wdm/NtCreateSection, k111_8e0d13e2-4cd7-4b39-b1ce-41b193c495be.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateSection
+title: ZwCreateSection function
+author: windows-driver-content
+description: The ZwCreateSection routine creates a section object.
+old-location: kernel\zwcreatesection.htm
+old-project: kernel
+ms.assetid: 805d7eff-19be-47a1-acc9-1b97e5493031
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtCreateSection, wdm/ZwCreateSection, ZwCreateSection routine [Kernel-Mode Driver Architecture], ZwCreateSection, kernel.zwcreatesection, wdm/NtCreateSection, k111_8e0d13e2-4cd7-4b39-b1ce-41b193c495be.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateSection
+-	NtCreateSection
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

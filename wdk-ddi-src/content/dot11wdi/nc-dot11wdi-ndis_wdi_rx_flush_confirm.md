@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_RX_FLUSH_CONFIRM
-title : NDIS_WDI_RX_FLUSH_CONFIRM
-author : windows-driver-content
-description : The NdisWdiRxFlushConfirm callback function indicates completion of a MiniportWdiRxFlush request. The RxEngine must complete the discard of all RX data frames that match the flush request prior to issuing NdisWdiRxFlushConfirm.
-old-location : netvista\ndiswdirxflushconfirm.htm
-old-project : netvista
-ms.assetid : CEED709C-F295-4633-B7C1-4719EDDC7CD4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswdirxflushconfirm, NdisWdiRxFlushConfirm callback function [Network Drivers Starting with Windows Vista], NdisWdiRxFlushConfirm, NDIS_WDI_RX_FLUSH_CONFIRM, NDIS_WDI_RX_FLUSH_CONFIRM, dot11wdi/NdisWdiRxFlushConfirm
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_RX_FLUSH_CONFIRM
+title: NDIS_WDI_RX_FLUSH_CONFIRM
+author: windows-driver-content
+description: The NdisWdiRxFlushConfirm callback function indicates completion of a MiniportWdiRxFlush request. The RxEngine must complete the discard of all RX data frames that match the flush request prior to issuing NdisWdiRxFlushConfirm.
+old-location: netvista\ndiswdirxflushconfirm.htm
+old-project: netvista
+ms.assetid: CEED709C-F295-4633-B7C1-4719EDDC7CD4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswdirxflushconfirm, NdisWdiRxFlushConfirm callback function [Network Drivers Starting with Windows Vista], NdisWdiRxFlushConfirm, NDIS_WDI_RX_FLUSH_CONFIRM, NDIS_WDI_RX_FLUSH_CONFIRM, dot11wdi/NdisWdiRxFlushConfirm
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiRxFlushConfirm
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

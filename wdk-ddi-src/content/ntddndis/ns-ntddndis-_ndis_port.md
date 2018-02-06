@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PORT
-title : "_NDIS_PORT"
-author : windows-driver-content
-description : The NDIS_PORT structure specifies the characteristics of an NDIS port and a pointer to the next element in a linked list of ports.
-old-location : netvista\ndis_port.htm
-old-project : netvista
-ms.assetid : aef1b7b2-73d3-49ad-a3f2-c06fa1f34839
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_ports_ref_df9a02e1-4a6b-4901-8794-37a5e30ececb.xml, _NDIS_PORT, *PNDIS_PORT, ntddndis/NDIS_PORT, netvista.ndis_port, PNDIS_PORT, PNDIS_PORT structure pointer [Network Drivers Starting with Windows Vista], NDIS_PORT structure [Network Drivers Starting with Windows Vista], NDIS_PORT, ntddndis/PNDIS_PORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_PORT, NDIS_PORT"
+UID: NS:ntddndis._NDIS_PORT
+title: "_NDIS_PORT"
+author: windows-driver-content
+description: The NDIS_PORT structure specifies the characteristics of an NDIS port and a pointer to the next element in a linked list of ports.
+old-location: netvista\ndis_port.htm
+old-project: netvista
+ms.assetid: aef1b7b2-73d3-49ad-a3f2-c06fa1f34839
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_ports_ref_df9a02e1-4a6b-4901-8794-37a5e30ececb.xml, _NDIS_PORT, *PNDIS_PORT, ntddndis/NDIS_PORT, netvista.ndis_port, PNDIS_PORT, PNDIS_PORT structure pointer [Network Drivers Starting with Windows Vista], NDIS_PORT structure [Network Drivers Starting with Windows Vista], NDIS_PORT, ntddndis/PNDIS_PORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PORT
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_PORT, NDIS_PORT"
 ---
 
 # _NDIS_PORT structure

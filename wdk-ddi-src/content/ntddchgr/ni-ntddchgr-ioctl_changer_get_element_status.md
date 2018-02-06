@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddchgr.IOCTL_CHANGER_GET_ELEMENT_STATUS
-title : IOCTL_CHANGER_GET_ELEMENT_STATUS
-author : windows-driver-content
-description : Returns the status of all elements or the status of a specified number of elements of a particular type. For a description of the possible element types, see CHANGER_ELEMENT.
-old-location : storage\ioctl_changer_get_element_status.htm
-old-project : storage
-ms.assetid : 5611bd28-16ed-4af1-a01c-07ef590bad65
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_changer_get_element_status, IOCTL_CHANGER_GET_ELEMENT_STATUS control code [Storage Devices], IOCTL_CHANGER_GET_ELEMENT_STATUS, ntddchgr/IOCTL_CHANGER_GET_ELEMENT_STATUS, k307_017d1ca9-974c-4a25-b28f-51e0bdc562d8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddchgr.h
-req.include-header : Ntddchgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NI:ntddchgr.IOCTL_CHANGER_GET_ELEMENT_STATUS
+title: IOCTL_CHANGER_GET_ELEMENT_STATUS
+author: windows-driver-content
+description: Returns the status of all elements or the status of a specified number of elements of a particular type. For a description of the possible element types, see CHANGER_ELEMENT.
+old-location: storage\ioctl_changer_get_element_status.htm
+old-project: storage
+ms.assetid: 5611bd28-16ed-4af1-a01c-07ef590bad65
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_changer_get_element_status, IOCTL_CHANGER_GET_ELEMENT_STATUS control code [Storage Devices], IOCTL_CHANGER_GET_ELEMENT_STATUS, ntddchgr/IOCTL_CHANGER_GET_ELEMENT_STATUS, k307_017d1ca9-974c-4a25-b28f-51e0bdc562d8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddchgr.h
+req.include-header: Ntddchgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddchgr.h
+apiname:
+-	IOCTL_CHANGER_GET_ELEMENT_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_GET_ELEMENT_STATUS IOCTL

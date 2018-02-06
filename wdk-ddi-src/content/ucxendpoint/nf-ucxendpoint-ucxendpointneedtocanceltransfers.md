@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxendpoint.UcxEndpointNeedToCancelTransfers
-title : UcxEndpointNeedToCancelTransfers function
-author : windows-driver-content
-description : The client driver calls this method before it cancels transfers on the wire.
-old-location : buses\_ucxendpointneedtocanceltransfers.htm
-old-project : usbref
-ms.assetid : 4DA3FB63-D2D3-43E1-9420-29303176B837
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcxEndpointNeedToCancelTransfers, ucxendpoint/UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses], buses._ucxendpointneedtocanceltransfers
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxendpoint.UcxEndpointNeedToCancelTransfers
+title: UcxEndpointNeedToCancelTransfers function
+author: windows-driver-content
+description: The client driver calls this method before it cancels transfers on the wire.
+old-location: buses\_ucxendpointneedtocanceltransfers.htm
+old-project: usbref
+ms.assetid: 4DA3FB63-D2D3-43E1-9420-29303176B837
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcxEndpointNeedToCancelTransfers, ucxendpoint/UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses], buses._ucxendpointneedtocanceltransfers
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	UcxEndpointNeedToCancelTransfers
+product: Windows
+targetos: Windows
+req.typenames: UCX_ENDPOINT_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

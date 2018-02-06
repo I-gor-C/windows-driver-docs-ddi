@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_CAPABILITIES_REGISTER
-title : "_PCI_EXPRESS_CAPABILITIES_REGISTER"
-author : windows-driver-content
-description : The PCI_EXPRESS_CAPABILITIES_REGISTER structure describes a PCI Express (PCIe) capabilities register of a PCIe capability structure.
-old-location : pci\pci_express_capabilities_register.htm
-old-project : PCI
-ms.assetid : aae9218e-e52b-4a72-9d96-d648ff6d2f5d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_CAPABILITIES_REGISTER union [Buses], ntddk/PCI_EXPRESS_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_CAPABILITIES_REGISTER, *PPCI_EXPRESS_CAPABILITIES_REGISTER, PPCI_EXPRESS_CAPABILITIES_REGISTER union pointer [Buses], PPCI_EXPRESS_CAPABILITIES_REGISTER, pci_struct_86cc3b70-4de8-4479-b431-5f7f10d4a2f4.xml, _PCI_EXPRESS_CAPABILITIES_REGISTER, PCI.pci_express_capabilities_register, PCI_EXPRESS_CAPABILITIES_REGISTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_CAPABILITIES_REGISTER, PCI_EXPRESS_CAPABILITIES_REGISTER"
+UID: NS:ntddk._PCI_EXPRESS_CAPABILITIES_REGISTER
+title: "_PCI_EXPRESS_CAPABILITIES_REGISTER"
+author: windows-driver-content
+description: The PCI_EXPRESS_CAPABILITIES_REGISTER structure describes a PCI Express (PCIe) capabilities register of a PCIe capability structure.
+old-location: pci\pci_express_capabilities_register.htm
+old-project: PCI
+ms.assetid: aae9218e-e52b-4a72-9d96-d648ff6d2f5d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI_EXPRESS_CAPABILITIES_REGISTER union [Buses], ntddk/PCI_EXPRESS_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_CAPABILITIES_REGISTER, *PPCI_EXPRESS_CAPABILITIES_REGISTER, PPCI_EXPRESS_CAPABILITIES_REGISTER union pointer [Buses], PPCI_EXPRESS_CAPABILITIES_REGISTER, pci_struct_86cc3b70-4de8-4479-b431-5f7f10d4a2f4.xml, _PCI_EXPRESS_CAPABILITIES_REGISTER, PCI.pci_express_capabilities_register, PCI_EXPRESS_CAPABILITIES_REGISTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_CAPABILITIES_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_CAPABILITIES_REGISTER, PCI_EXPRESS_CAPABILITIES_REGISTER"
 ---
 
 # _PCI_EXPRESS_CAPABILITIES_REGISTER structure

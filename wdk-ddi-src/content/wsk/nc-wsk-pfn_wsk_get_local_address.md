@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_GET_LOCAL_ADDRESS
-title : PFN_WSK_GET_LOCAL_ADDRESS
-author : windows-driver-content
-description : The WskGetLocalAddress function retrieves the local transport address of a socket.
-old-location : netvista\wskgetlocaladdress.htm
-old-project : netvista
-ms.assetid : 13cd4199-63f8-49f3-a12f-86e1d367b4aa
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskgetlocaladdress, WskGetLocalAddress callback function [Network Drivers Starting with Windows Vista], WskGetLocalAddress, PFN_WSK_GET_LOCAL_ADDRESS, PFN_WSK_GET_LOCAL_ADDRESS, wsk/WskGetLocalAddress, wskref_35a0f32f-247a-435c-83fe-0ba642f8519c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_GET_LOCAL_ADDRESS
+title: PFN_WSK_GET_LOCAL_ADDRESS
+author: windows-driver-content
+description: The WskGetLocalAddress function retrieves the local transport address of a socket.
+old-location: netvista\wskgetlocaladdress.htm
+old-project: netvista
+ms.assetid: 13cd4199-63f8-49f3-a12f-86e1d367b4aa
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskgetlocaladdress, WskGetLocalAddress callback function [Network Drivers Starting with Windows Vista], WskGetLocalAddress, PFN_WSK_GET_LOCAL_ADDRESS, PFN_WSK_GET_LOCAL_ADDRESS, wsk/WskGetLocalAddress, wskref_35a0f32f-247a-435c-83fe-0ba642f8519c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskGetLocalAddress
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

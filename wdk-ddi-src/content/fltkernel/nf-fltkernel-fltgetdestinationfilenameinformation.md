@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetDestinationFileNameInformation
-title : FltGetDestinationFileNameInformation function
-author : windows-driver-content
-description : The FltGetDestinationFileNameInformation routine constructs a full destination path name for a file or directory that is being renamed or for which an NTFS hard link is being created.
-old-location : ifsk\fltgetdestinationfilenameinformation.htm
-old-project : ifsk
-ms.assetid : b5438802-fc96-4445-9261-5d497d2d24cc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetDestinationFileNameInformation, fltkernel/FltGetDestinationFileNameInformation, FltGetDestinationFileNameInformation routine [Installable File System Drivers], ifsk.fltgetdestinationfilenameinformation, FltApiRef_e_to_o_127cb786-b74b-4c1b-bb38-87ad3494900b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetDestinationFileNameInformation
+title: FltGetDestinationFileNameInformation function
+author: windows-driver-content
+description: The FltGetDestinationFileNameInformation routine constructs a full destination path name for a file or directory that is being renamed or for which an NTFS hard link is being created.
+old-location: ifsk\fltgetdestinationfilenameinformation.htm
+old-project: ifsk
+ms.assetid: b5438802-fc96-4445-9261-5d497d2d24cc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetDestinationFileNameInformation, fltkernel/FltGetDestinationFileNameInformation, FltGetDestinationFileNameInformation routine [Installable File System Drivers], ifsk.fltgetdestinationfilenameinformation, FltApiRef_e_to_o_127cb786-b74b-4c1b-bb38-87ad3494900b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetDestinationFileNameInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

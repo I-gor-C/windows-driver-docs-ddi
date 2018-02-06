@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReleaseContextsEx
-title : FltReleaseContextsEx function
-author : windows-driver-content
-description : FltReleaseContextsEx releases each context in a given FLT_RELATED_CONTEXTS_EX structure.
-old-location : ifsk\fltreleasecontextsex.htm
-old-project : ifsk
-ms.assetid : AC0811C9-8746-40F4-801E-6A1567ABDE0B
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltreleasecontextsex, FltReleaseContextsEx, fltkernel/FltReleaseContextsEx, FltReleaseContextsEx routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReleaseContextsEx
+title: FltReleaseContextsEx function
+author: windows-driver-content
+description: FltReleaseContextsEx releases each context in a given FLT_RELATED_CONTEXTS_EX structure.
+old-location: ifsk\fltreleasecontextsex.htm
+old-project: ifsk
+ms.assetid: AC0811C9-8746-40F4-801E-6A1567ABDE0B
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltreleasecontextsex, FltReleaseContextsEx, fltkernel/FltReleaseContextsEx, FltReleaseContextsEx routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReleaseContextsEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

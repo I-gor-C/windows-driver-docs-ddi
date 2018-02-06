@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetPortAttributesByWWN_IN
-title : "_GetPortAttributesByWWN_IN"
-author : windows-driver-content
-description : The GetPortAttributesByWWN_IN structure is used by a WMI client to deliver input parameter data to the GetPortAttributesByWWN WMI method.
-old-location : storage\getportattributesbywwn_in.htm
-old-project : storage
-ms.assetid : 2b189ece-6c49-42e2-8ef2-b3db516fc844
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_GetPortAttributesByWWN_IN, storage.getportattributesbywwn_in, PGetPortAttributesByWWN_IN, structs-Fibre_0093904b-888e-48de-ba79-5302d0ed6b75.xml, hbapiwmi/PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN, PGetPortAttributesByWWN_IN structure pointer [Storage Devices], *PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN structure [Storage Devices], hbapiwmi/GetPortAttributesByWWN_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN"
+UID: NS:hbapiwmi._GetPortAttributesByWWN_IN
+title: "_GetPortAttributesByWWN_IN"
+author: windows-driver-content
+description: The GetPortAttributesByWWN_IN structure is used by a WMI client to deliver input parameter data to the GetPortAttributesByWWN WMI method.
+old-location: storage\getportattributesbywwn_in.htm
+old-project: storage
+ms.assetid: 2b189ece-6c49-42e2-8ef2-b3db516fc844
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_GetPortAttributesByWWN_IN, storage.getportattributesbywwn_in, PGetPortAttributesByWWN_IN, structs-Fibre_0093904b-888e-48de-ba79-5302d0ed6b75.xml, hbapiwmi/PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN, PGetPortAttributesByWWN_IN structure pointer [Storage Devices], *PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN structure [Storage Devices], hbapiwmi/GetPortAttributesByWWN_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetPortAttributesByWWN_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN"
 ---
 
 # _GetPortAttributesByWWN_IN structure

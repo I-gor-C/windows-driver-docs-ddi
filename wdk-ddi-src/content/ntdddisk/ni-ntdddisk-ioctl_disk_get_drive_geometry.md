@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_GET_DRIVE_GEOMETRY
-title : IOCTL_DISK_GET_DRIVE_GEOMETRY
-author : windows-driver-content
-description : Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
-old-location : storage\ioctl_disk_get_drive_geometry.htm
-old-project : storage
-ms.assetid : 571308bc-1e8e-437a-8819-8b28251a3f03
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_get_drive_geometry, IOCTL_DISK_GET_DRIVE_GEOMETRY control code [Storage Devices], IOCTL_DISK_GET_DRIVE_GEOMETRY, ntdddisk/IOCTL_DISK_GET_DRIVE_GEOMETRY, k307_e6bc4a05-f2cf-40f7-9632-b78da2087662.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_GET_DRIVE_GEOMETRY
+title: IOCTL_DISK_GET_DRIVE_GEOMETRY
+author: windows-driver-content
+description: Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
+old-location: storage\ioctl_disk_get_drive_geometry.htm
+old-project: storage
+ms.assetid: 571308bc-1e8e-437a-8819-8b28251a3f03
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_get_drive_geometry, IOCTL_DISK_GET_DRIVE_GEOMETRY control code [Storage Devices], IOCTL_DISK_GET_DRIVE_GEOMETRY, ntdddisk/IOCTL_DISK_GET_DRIVE_GEOMETRY, k307_e6bc4a05-f2cf-40f7-9632-b78da2087662.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_GET_DRIVE_GEOMETRY
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_DRIVE_GEOMETRY IOCTL

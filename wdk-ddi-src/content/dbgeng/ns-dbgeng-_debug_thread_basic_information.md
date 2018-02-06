@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_THREAD_BASIC_INFORMATION
-title : "_DEBUG_THREAD_BASIC_INFORMATION"
-author : windows-driver-content
-description : The DEBUG_THREAD_BASIC_INFORMATION structure describes an operating system thread.
-old-location : debugger\debug_thread_basic_information.htm
-old-project : debugger
-ms.assetid : e964ed63-6c00-4308-955c-f8a99490a248
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : DEBUG_THREAD_BASIC_INFORMATION, dbgeng/PDEBUG_THREAD_BASIC_INFORMATION, debugger.debug_thread_basic_information, dbgeng/DEBUG_THREAD_BASIC_INFORMATION, *PDEBUG_THREAD_BASIC_INFORMATION, Structures_e48c9daa-ce4f-4131-9ca6-cb1a7a129fcc.xml, PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION structure [Windows Debugging], PDEBUG_THREAD_BASIC_INFORMATION structure pointer [Windows Debugging], _DEBUG_THREAD_BASIC_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION"
+UID: NS:dbgeng._DEBUG_THREAD_BASIC_INFORMATION
+title: "_DEBUG_THREAD_BASIC_INFORMATION"
+author: windows-driver-content
+description: The DEBUG_THREAD_BASIC_INFORMATION structure describes an operating system thread.
+old-location: debugger\debug_thread_basic_information.htm
+old-project: debugger
+ms.assetid: e964ed63-6c00-4308-955c-f8a99490a248
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: DEBUG_THREAD_BASIC_INFORMATION, dbgeng/PDEBUG_THREAD_BASIC_INFORMATION, debugger.debug_thread_basic_information, dbgeng/DEBUG_THREAD_BASIC_INFORMATION, *PDEBUG_THREAD_BASIC_INFORMATION, Structures_e48c9daa-ce4f-4131-9ca6-cb1a7a129fcc.xml, PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION structure [Windows Debugging], PDEBUG_THREAD_BASIC_INFORMATION structure pointer [Windows Debugging], _DEBUG_THREAD_BASIC_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_THREAD_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION"
 ---
 
 # _DEBUG_THREAD_BASIC_INFORMATION structure

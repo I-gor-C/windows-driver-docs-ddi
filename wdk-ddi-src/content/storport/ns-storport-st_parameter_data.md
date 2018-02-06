@@ -1,42 +1,47 @@
 ---
-UID : NS:storport.ST_PARAMETER_DATA
-title : ST_PARAMETER_DATA
-author : windows-driver-content
-description : The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command.
-old-location : storage\st_parameter_data.htm
-old-project : storage
-ms.assetid : C50F45EC-433C-421D-BD02-4C86CB44D5A4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ST_PARAMETER_DATA structure [Storage Devices], PST_PARAMETER_DATA, PST_PARAMETER_DATA structure pointer [Storage Devices], scsi/PST_PARAMETER_DATA, storage.st_parameter_data, ST_PARAMETER_DATA, scsi/ST_PARAMETER_DATA, *PST_PARAMETER_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Minitape.h, Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ST_PARAMETER_DATA, *PST_PARAMETER_DATA
-req.product : Windows 10 or later.
+UID: NS:storport.ST_PARAMETER_DATA
+title: ST_PARAMETER_DATA
+author: windows-driver-content
+description: The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command.
+old-location: storage\st_parameter_data.htm
+old-project: storage
+ms.assetid: C50F45EC-433C-421D-BD02-4C86CB44D5A4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ST_PARAMETER_DATA structure [Storage Devices], PST_PARAMETER_DATA, PST_PARAMETER_DATA structure pointer [Storage Devices], scsi/PST_PARAMETER_DATA, storage.st_parameter_data, ST_PARAMETER_DATA, scsi/ST_PARAMETER_DATA, *PST_PARAMETER_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Minitape.h, Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	ST_PARAMETER_DATA
+product: Windows
+targetos: Windows
+req.typenames: ST_PARAMETER_DATA, *PST_PARAMETER_DATA
+req.product: Windows 10 or later.
 ---
 
 # ST_PARAMETER_DATA structure

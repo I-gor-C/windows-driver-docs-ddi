@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasQueueEvent
-title : wiasQueueEvent function
-author : windows-driver-content
-description : The wiasQueueEvent function informs the service that the device generated an event.
-old-location : image\wiasqueueevent.htm
-old-project : image
-ms.assetid : 1ea82b64-e0e0-445b-8200-70cd6920d29b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasFncs_a853cdf1-8d80-4bb6-9c41-c7190e9e9202.xml, wiamdef/wiasQueueEvent, wiasQueueEvent, image.wiasqueueevent, wiasQueueEvent function [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasQueueEvent
+title: wiasQueueEvent function
+author: windows-driver-content
+description: The wiasQueueEvent function informs the service that the device generated an event.
+old-location: image\wiasqueueevent.htm
+old-project: image
+ms.assetid: 1ea82b64-e0e0-445b-8200-70cd6920d29b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasFncs_a853cdf1-8d80-4bb6-9c41-c7190e9e9202.xml, wiamdef/wiasQueueEvent, wiasQueueEvent, image.wiasqueueevent, wiasQueueEvent function [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasQueueEvent
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

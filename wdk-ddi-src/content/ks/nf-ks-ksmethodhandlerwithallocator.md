@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsMethodHandlerWithAllocator
-title : KsMethodHandlerWithAllocator function
-author : windows-driver-content
-description : The KsMethodHandlerWithAllocator functions performs the same handling as KsMethodHandler, with the same restrictions, but allows an optional allocator callback to be used to provide a buffer for the parameters.
-old-location : stream\ksmethodhandlerwithallocator.htm
-old-project : stream
-ms.assetid : 3a4c2eaa-167a-406a-a792-612c3e624f89
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsMethodHandlerWithAllocator function [Streaming Media Devices], KsMethodHandlerWithAllocator, stream.ksmethodhandlerwithallocator, ks/KsMethodHandlerWithAllocator, ksfunc_b8089a49-086b-4695-bebd-6fc3817ed7e0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsMethodHandlerWithAllocator
+title: KsMethodHandlerWithAllocator function
+author: windows-driver-content
+description: The KsMethodHandlerWithAllocator functions performs the same handling as KsMethodHandler, with the same restrictions, but allows an optional allocator callback to be used to provide a buffer for the parameters.
+old-location: stream\ksmethodhandlerwithallocator.htm
+old-project: stream
+ms.assetid: 3a4c2eaa-167a-406a-a792-612c3e624f89
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsMethodHandlerWithAllocator function [Streaming Media Devices], KsMethodHandlerWithAllocator, stream.ksmethodhandlerwithallocator, ks/KsMethodHandlerWithAllocator, ksfunc_b8089a49-086b-4695-bebd-6fc3817ed7e0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsMethodHandlerWithAllocator
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

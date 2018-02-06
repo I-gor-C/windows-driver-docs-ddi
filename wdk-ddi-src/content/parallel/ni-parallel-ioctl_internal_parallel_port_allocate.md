@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
-title : IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
-author : windows-driver-content
-description : The IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE request allocates a parallel port for exclusive access by a client.
-old-location : parports\ioctl_internal_parallel_port_allocate.htm
-old-project : parports
-ms.assetid : de088a25-c9ad-4d48-b9cb-d0e6958ce164
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_parallel_port_allocate, IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE, parallel/IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE, cisspd_79cabd40-4310-48c4-9ee3-f7b50fc60f6f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
+title: IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
+author: windows-driver-content
+description: The IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE request allocates a parallel port for exclusive access by a client.
+old-location: parports\ioctl_internal_parallel_port_allocate.htm
+old-project: parports
+ms.assetid: de088a25-c9ad-4d48-b9cb-d0e6958ce164
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_parallel_port_allocate, IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE, parallel/IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE, cisspd_79cabd40-4310-48c4-9ee3-f7b50fc60f6f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE IOCTL

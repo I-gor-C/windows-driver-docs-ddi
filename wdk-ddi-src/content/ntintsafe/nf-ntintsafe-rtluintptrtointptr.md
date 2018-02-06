@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUIntPtrToIntPtr
-title : RtlUIntPtrToIntPtr function
-author : windows-driver-content
-description : Converts a value of type UINT_PTR to a value of type INT_PTR.
-old-location : kernel\rtluintptrtointptr.htm
-old-project : kernel
-ms.assetid : 5340A64A-3A26-4EE1-9829-BFF4F1951FEC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtluintptrtointptr, RtlUIntPtrToIntPtr function [Kernel-Mode Driver Architecture], RtlUIntPtrToIntPtr, ntintsafe/RtlUIntPtrToIntPtr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUIntPtrToIntPtr
+title: RtlUIntPtrToIntPtr function
+author: windows-driver-content
+description: Converts a value of type UINT_PTR to a value of type INT_PTR.
+old-location: kernel\rtluintptrtointptr.htm
+old-project: kernel
+ms.assetid: 5340A64A-3A26-4EE1-9829-BFF4F1951FEC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtluintptrtointptr, RtlUIntPtrToIntPtr function [Kernel-Mode Driver Architecture], RtlUIntPtrToIntPtr, ntintsafe/RtlUIntPtrToIntPtr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlUIntPtrToIntPtr
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

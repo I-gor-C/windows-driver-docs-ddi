@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackHardwareInterrupt.OnD0EntryPostInterruptsEnabled
-title : IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled method
-author : windows-driver-content
-description : A driver's OnD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required when the driver enables the device's hardware interrupts.
-old-location : wdf\ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled.htm
-old-project : wdf
-ms.assetid : 6AA5AA6F-DC73-40E6-8EE0-CAA91D89A0E8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnD0EntryPostInterruptsEnabled method, OnD0EntryPostInterruptsEnabled method, IPnpCallbackHardwareInterrupt interface, wudfddi/IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled, IPnpCallbackHardwareInterrupt interface, OnD0EntryPostInterruptsEnabled method, wdf.ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled, umdf.ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled, IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled, IPnpCallbackHardwareInterrupt, OnD0EntryPostInterruptsEnabled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackHardwareInterrupt.OnD0EntryPostInterruptsEnabled
+title: IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled method
+author: windows-driver-content
+description: A driver's OnD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required when the driver enables the device's hardware interrupts.
+old-location: wdf\ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled.htm
+old-project: wdf
+ms.assetid: 6AA5AA6F-DC73-40E6-8EE0-CAA91D89A0E8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnD0EntryPostInterruptsEnabled method, OnD0EntryPostInterruptsEnabled method, IPnpCallbackHardwareInterrupt interface, wudfddi/IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled, IPnpCallbackHardwareInterrupt interface, OnD0EntryPostInterruptsEnabled method, wdf.ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled, umdf.ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled, IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled, IPnpCallbackHardwareInterrupt, OnD0EntryPostInterruptsEnabled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackHardwareInterrupt.OnD0EntryPostInterruptsEnabled
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

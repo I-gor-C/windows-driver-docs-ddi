@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._IO_PAGING_PRIORITY
-title : "_IO_PAGING_PRIORITY"
-author : windows-driver-content
-description : The IO_PAGING_PRIORITY enumeration describes the priority value for a paging I/O IRP.
-old-location : kernel\io_paging_priority.htm
-old-project : kernel
-ms.assetid : c96d1c81-429f-46de-b56c-6424734ccd7a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_IO_PAGING_PRIORITY, wdm/IoPagingPriorityNormal, IoPagingPriorityReserved2, sysenum_8e021ebd-f26a-4749-8e76-c540af5dfae1.xml, IoPagingPriorityNormal, IoPagingPriorityHigh, IoPagingPriorityReserved1, wdm/IO_PAGING_PRIORITY, wdm/IoPagingPriorityInvalid, wdm/IoPagingPriorityReserved2, IoPagingPriorityInvalid, IO_PAGING_PRIORITY, wdm/IoPagingPriorityReserved1, IO_PAGING_PRIORITY enumeration [Kernel-Mode Driver Architecture], wdm/IoPagingPriorityHigh, kernel.io_paging_priority"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_PAGING_PRIORITY
-req.product : Windows 10 or later.
+UID: NE:wdm._IO_PAGING_PRIORITY
+title: "_IO_PAGING_PRIORITY"
+author: windows-driver-content
+description: The IO_PAGING_PRIORITY enumeration describes the priority value for a paging I/O IRP.
+old-location: kernel\io_paging_priority.htm
+old-project: kernel
+ms.assetid: c96d1c81-429f-46de-b56c-6424734ccd7a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_IO_PAGING_PRIORITY, wdm/IoPagingPriorityNormal, IoPagingPriorityReserved2, sysenum_8e021ebd-f26a-4749-8e76-c540af5dfae1.xml, IoPagingPriorityNormal, IoPagingPriorityHigh, IoPagingPriorityReserved1, wdm/IO_PAGING_PRIORITY, wdm/IoPagingPriorityInvalid, wdm/IoPagingPriorityReserved2, IoPagingPriorityInvalid, IO_PAGING_PRIORITY, wdm/IoPagingPriorityReserved1, IO_PAGING_PRIORITY enumeration [Kernel-Mode Driver Architecture], wdm/IoPagingPriorityHigh, kernel.io_paging_priority"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	IO_PAGING_PRIORITY
+product: Windows
+targetos: Windows
+req.typenames: IO_PAGING_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 # _IO_PAGING_PRIORITY Enumeration
@@ -56,45 +61,45 @@ typedef enum _IO_PAGING_PRIORITY {
 ## Constants
 
 <table>
-
-<tr>
-<td>IoPagingPriorityHigh</td>
-<td>The associated IRP has a high priority level for paging I/O.</td>
-</tr>
-
-<tr>
-<td>IoPagingPriorityInvalid</td>
-<td>The IRP is not a paging I/O IRP.</td>
-</tr>
-
-<tr>
-<td>IoPagingPriorityNormal</td>
-<td>The associated IRP has a normal priority level for paging I/O.</td>
-</tr>
-
-<tr>
-<td>IoPagingPriorityReserved1</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>IoPagingPriorityReserved2</td>
-<td>Reserved for system use.</td>
-</tr>
+            
+                <tr>
+                    <td>IoPagingPriorityHigh</td>
+                    <td>The associated IRP has a high priority level for paging I/O.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPagingPriorityInvalid</td>
+                    <td>The IRP is not a paging I/O IRP.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPagingPriorityNormal</td>
+                    <td>The associated IRP has a normal priority level for paging I/O.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPagingPriorityReserved1</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPagingPriorityReserved2</td>
+                    <td>Reserved for system use.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a> routine returns an <b>IO_PAGING_PRIORITY</b> value to indicate the priority value of a paging I/O IRP.
+        The <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a> routine returns an <b>IO_PAGING_PRIORITY</b> value to indicate the priority value of a paging I/O IRP.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a>
+        <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a>
 
  
 

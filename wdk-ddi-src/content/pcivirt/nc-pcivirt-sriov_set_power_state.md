@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_SET_POWER_STATE
-title : SRIOV_SET_POWER_STATE
-author : windows-driver-content
-description : Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF).
-old-location : pci\sriov_set_power_state.htm
-old-project : PCI
-ms.assetid : d43a21cb-5cee-4e72-8f0c-7aa8b2453507
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_set_power_state, SRIOV_SET_POWER_STATE callback function [Buses], SRIOV_SET_POWER_STATE, pcivirt/SRIOV_SET_POWER_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_SET_POWER_STATE
+title: SRIOV_SET_POWER_STATE
+author: windows-driver-content
+description: Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF).
+old-location: pci\sriov_set_power_state.htm
+old-project: PCI
+ms.assetid: d43a21cb-5cee-4e72-8f0c-7aa8b2453507
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_set_power_state, SRIOV_SET_POWER_STATE callback function [Buses], SRIOV_SET_POWER_STATE, pcivirt/SRIOV_SET_POWER_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	SRIOV_SET_POWER_STATE
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

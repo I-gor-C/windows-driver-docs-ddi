@@ -1,41 +1,47 @@
 ---
-UID : NF:mcd.ChangerClassSendSrbSynchronous
-title : ChangerClassSendSrbSynchronous function
-author : windows-driver-content
-description : The ChangerClassSendSrbSynchronous routine synchronously sends an SRB to a specified device.
-old-location : storage\changerclasssendsrbsynchronous.htm
-old-project : storage
-ms.assetid : 6765d7d5-528f-42c5-98c3-0484608a020b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : mcd/ChangerClassSendSrbSynchronous, chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous routine [Storage Devices], storage.changerclasssendsrbsynchronous
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mcd.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerClassSendSrbSynchronous
+title: ChangerClassSendSrbSynchronous function
+author: windows-driver-content
+description: The ChangerClassSendSrbSynchronous routine synchronously sends an SRB to a specified device.
+old-location: storage\changerclasssendsrbsynchronous.htm
+old-project: storage
+ms.assetid: 6765d7d5-528f-42c5-98c3-0484608a020b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: mcd/ChangerClassSendSrbSynchronous, chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous routine [Storage Devices], storage.changerclasssendsrbsynchronous
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mcd.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mcd.lib
+-	Mcd.dll
+apiname:
+-	ChangerClassSendSrbSynchronous
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

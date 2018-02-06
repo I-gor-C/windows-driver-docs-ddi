@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfpdo.EVT_WDF_DEVICE_EJECT
-title : EVT_WDF_DEVICE_EJECT
-author : windows-driver-content
-description : A driver's EvtDeviceEject event callback function handles operations that are necessary to eject a device from its docking station.
-old-location : wdf\evtdeviceeject.htm
-old-project : wdf
-ms.assetid : fc3f3a15-9a79-4275-9ba4-b01ab8851390
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviceeject, EvtDeviceEject callback function, EvtDeviceEject, EVT_WDF_DEVICE_EJECT, EVT_WDF_DEVICE_EJECT, wdfpdo/EvtDeviceEject, DFDeviceObjectFdoPdoRef_38feba70-59b4-4981-af2d-0fc0fa4ff68a.xml, kmdf.evtdeviceeject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfpdo.EVT_WDF_DEVICE_EJECT
+title: EVT_WDF_DEVICE_EJECT
+author: windows-driver-content
+description: A driver's EvtDeviceEject event callback function handles operations that are necessary to eject a device from its docking station.
+old-location: wdf\evtdeviceeject.htm
+old-project: wdf
+ms.assetid: fc3f3a15-9a79-4275-9ba4-b01ab8851390
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviceeject, EvtDeviceEject callback function, EvtDeviceEject, EVT_WDF_DEVICE_EJECT, EVT_WDF_DEVICE_EJECT, wdfpdo/EvtDeviceEject, DFDeviceObjectFdoPdoRef_38feba70-59b4-4981-af2d-0fc0fa4ff68a.xml, kmdf.evtdeviceeject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfpdo.h
+apiname:
+-	EvtDeviceEject
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

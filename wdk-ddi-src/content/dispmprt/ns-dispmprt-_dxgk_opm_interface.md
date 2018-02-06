@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_OPM_INTERFACE
-title : "_DXGK_OPM_INTERFACE"
-author : windows-driver-content
-description : The DXGK_OPM_INTERFACE structure contains pointers to functions in the Output Protection Manager (OPM) Interface, which is implemented by the display miniport driver.
-old-location : display\dxgk_opm_interface.htm
-old-project : display
-ms.assetid : 6ae1d9a8-db9a-460d-b258-222a2bd96265
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_OPM_INTERFACE structure [Display Devices], DXGK_OPM_INTERFACE, _DXGK_OPM_INTERFACE, *PDXGK_OPM_INTERFACE, dispmprt/DXGK_OPM_INTERFACE, display.dxgk_opm_interface, dispmprt/PDXGK_OPM_INTERFACE, PDXGK_OPM_INTERFACE structure pointer [Display Devices], PDXGK_OPM_INTERFACE, DmStructs_e1644da8-220d-470a-b9b9-f23ba7e1c4f6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_OPM_INTERFACE, DXGK_OPM_INTERFACE"
+UID: NS:dispmprt._DXGK_OPM_INTERFACE
+title: "_DXGK_OPM_INTERFACE"
+author: windows-driver-content
+description: The DXGK_OPM_INTERFACE structure contains pointers to functions in the Output Protection Manager (OPM) Interface, which is implemented by the display miniport driver.
+old-location: display\dxgk_opm_interface.htm
+old-project: display
+ms.assetid: 6ae1d9a8-db9a-460d-b258-222a2bd96265
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_OPM_INTERFACE structure [Display Devices], DXGK_OPM_INTERFACE, _DXGK_OPM_INTERFACE, *PDXGK_OPM_INTERFACE, dispmprt/DXGK_OPM_INTERFACE, display.dxgk_opm_interface, dispmprt/PDXGK_OPM_INTERFACE, PDXGK_OPM_INTERFACE structure pointer [Display Devices], PDXGK_OPM_INTERFACE, DmStructs_e1644da8-220d-470a-b9b9-f23ba7e1c4f6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DXGK_OPM_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_OPM_INTERFACE, DXGK_OPM_INTERFACE"
 ---
 
 # _DXGK_OPM_INTERFACE structure

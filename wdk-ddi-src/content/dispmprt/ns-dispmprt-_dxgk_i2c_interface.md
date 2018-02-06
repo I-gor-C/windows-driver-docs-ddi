@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_I2C_INTERFACE
-title : "_DXGK_I2C_INTERFACE"
-author : windows-driver-content
-description : The DXGK_I2C_INTERFACE structure contains pointers to functions in the I2C interface, which is implemented by the display miniport driver.
-old-location : display\dxgk_i2c_interface.htm
-old-project : display
-ms.assetid : aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, dispmprt/DXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE structure pointer [Display Devices], *PDXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE, DmStructs_59985b59-bb86-459c-8bd2-2b6124a6b9bb.xml, display.dxgk_i2c_interface, _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
+UID: NS:dispmprt._DXGK_I2C_INTERFACE
+title: "_DXGK_I2C_INTERFACE"
+author: windows-driver-content
+description: The DXGK_I2C_INTERFACE structure contains pointers to functions in the I2C interface, which is implemented by the display miniport driver.
+old-location: display\dxgk_i2c_interface.htm
+old-project: display
+ms.assetid: aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dispmprt/PDXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, dispmprt/DXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE structure pointer [Display Devices], *PDXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE, DmStructs_59985b59-bb86-459c-8bd2-2b6124a6b9bb.xml, display.dxgk_i2c_interface, _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_I2C_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_I2C_INTERFACE, *PDXGK_I2C_INTERFACE
 ---
 
 # _DXGK_I2C_INTERFACE structure

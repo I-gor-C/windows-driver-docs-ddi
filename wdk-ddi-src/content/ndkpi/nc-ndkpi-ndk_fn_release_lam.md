@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_RELEASE_LAM
-title : NDK_FN_RELEASE_LAM
-author : windows-driver-content
-description : The NdkReleaseLam (NDK_FN_RELEASE_LAM) function releases an NDK adapter logical address mapping (LAM).
-old-location : netvista\ndk_fn_release_lam.htm
-old-project : netvista
-ms.assetid : 8CEBDCCE-5B71-443D-9DE5-F789E16843D7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_release_lam, NdkReleaseLam callback function [Network Drivers Starting with Windows Vista], NdkReleaseLam, NDK_FN_RELEASE_LAM, NDK_FN_RELEASE_LAM, ndkpi/NdkReleaseLam
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_RELEASE_LAM
+title: NDK_FN_RELEASE_LAM
+author: windows-driver-content
+description: The NdkReleaseLam (NDK_FN_RELEASE_LAM) function releases an NDK adapter logical address mapping (LAM).
+old-location: netvista\ndk_fn_release_lam.htm
+old-project: netvista
+ms.assetid: 8CEBDCCE-5B71-443D-9DE5-F789E16843D7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_release_lam, NdkReleaseLam callback function [Network Drivers Starting with Windows Vista], NdkReleaseLam, NDK_FN_RELEASE_LAM, NDK_FN_RELEASE_LAM, ndkpi/NdkReleaseLam
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkReleaseLam
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

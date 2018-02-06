@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetDeviceBase
-title : VideoPortGetDeviceBase function
-author : windows-driver-content
-description : The VideoPortGetDeviceBase function maps a range of bus-relative device memory or I/O addresses into system space.
-old-location : display\videoportgetdevicebase.htm
-old-project : display
-ms.assetid : 53665c1d-8c0b-45c7-8d23-13c0964eda39
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortGetDeviceBase, VideoPort_Functions_ee5844a6-6337-42b7-b960-5228ad1c1ae4.xml, video/VideoPortGetDeviceBase, VideoPortGetDeviceBase function [Display Devices], display.videoportgetdevicebase
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetDeviceBase
+title: VideoPortGetDeviceBase function
+author: windows-driver-content
+description: The VideoPortGetDeviceBase function maps a range of bus-relative device memory or I/O addresses into system space.
+old-location: display\videoportgetdevicebase.htm
+old-project: display
+ms.assetid: 53665c1d-8c0b-45c7-8d23-13c0964eda39
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortGetDeviceBase, VideoPort_Functions_ee5844a6-6337-42b7-b960-5228ad1c1ae4.xml, video/VideoPortGetDeviceBase, VideoPortGetDeviceBase function [Display Devices], display.videoportgetdevicebase
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetDeviceBase
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

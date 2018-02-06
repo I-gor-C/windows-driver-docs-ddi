@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_VIDEOINFOHEADER2
-title : tagKS_VIDEOINFOHEADER2
-author : windows-driver-content
-description : The KS_VIDEOINFOHEADER2 structure describes the details of a video stream, including bob or weave settings, copy protection, and pixel aspect ratio.
-old-location : stream\ks_videoinfoheader2.htm
-old-project : stream
-ms.assetid : 4eb909fe-7ba2-4208-b713-54252022a5cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_VIDEOINFOHEADER2 structure [Streaming Media Devices], vidcapstruct_c789f606-9b19-42b0-8492-3b945141c274.xml, PKS_VIDEOINFOHEADER2, stream.ks_videoinfoheader2, tagKS_VIDEOINFOHEADER2, PKS_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_VIDEOINFOHEADER2, ksmedia/PKS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2"
+UID: NS:ksmedia.tagKS_VIDEOINFOHEADER2
+title: tagKS_VIDEOINFOHEADER2
+author: windows-driver-content
+description: The KS_VIDEOINFOHEADER2 structure describes the details of a video stream, including bob or weave settings, copy protection, and pixel aspect ratio.
+old-location: stream\ks_videoinfoheader2.htm
+old-project: stream
+ms.assetid: 4eb909fe-7ba2-4208-b713-54252022a5cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_VIDEOINFOHEADER2 structure [Streaming Media Devices], vidcapstruct_c789f606-9b19-42b0-8492-3b945141c274.xml, PKS_VIDEOINFOHEADER2, stream.ks_videoinfoheader2, tagKS_VIDEOINFOHEADER2, PKS_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_VIDEOINFOHEADER2, ksmedia/PKS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_VIDEOINFOHEADER2
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2"
 ---
 
 # tagKS_VIDEOINFOHEADER2 structure

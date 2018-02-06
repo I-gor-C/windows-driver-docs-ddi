@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PM_PACKET_PATTERN
-title : "_NDIS_PM_PACKET_PATTERN"
-author : windows-driver-content
-description : The NDIS_PM_PACKET_PATTERN structure specifies a wake-up pattern, which, when detected by a network adapter that has pattern-match enabled, causes the network adapter to signal a power-management wake-up event.
-old-location : netvista\ndis_pm_packet_pattern.htm
-old-project : netvista
-ms.assetid : dfda0b5f-06fc-4e94-b14c-6bd32c2c138a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_PM_PACKET_PATTERN, _NDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN, PNDIS_PM_PACKET_PATTERN, netvista.ndis_pm_packet_pattern, NDIS_PM_PACKET_PATTERN structure [Network Drivers Starting with Windows Vista], 212pnpoid_bfc58374-2745-4c29-a2ac-b7ef864aa710.xml, PNDIS_PM_PACKET_PATTERN structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PM_PACKET_PATTERN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN
+UID: NS:ntddndis._NDIS_PM_PACKET_PATTERN
+title: "_NDIS_PM_PACKET_PATTERN"
+author: windows-driver-content
+description: The NDIS_PM_PACKET_PATTERN structure specifies a wake-up pattern, which, when detected by a network adapter that has pattern-match enabled, causes the network adapter to signal a power-management wake-up event.
+old-location: netvista\ndis_pm_packet_pattern.htm
+old-project: netvista
+ms.assetid: dfda0b5f-06fc-4e94-b14c-6bd32c2c138a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_PM_PACKET_PATTERN, _NDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN, PNDIS_PM_PACKET_PATTERN, netvista.ndis_pm_packet_pattern, NDIS_PM_PACKET_PATTERN structure [Network Drivers Starting with Windows Vista], 212pnpoid_bfc58374-2745-4c29-a2ac-b7ef864aa710.xml, PNDIS_PM_PACKET_PATTERN structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PM_PACKET_PATTERN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PM_PACKET_PATTERN
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN
 ---
 
 # _NDIS_PM_PACKET_PATTERN structure

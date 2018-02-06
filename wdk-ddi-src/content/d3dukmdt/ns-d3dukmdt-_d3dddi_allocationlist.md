@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_ALLOCATIONLIST
-title : "_D3DDDI_ALLOCATIONLIST"
-author : windows-driver-content
-description : The D3DDDI_ALLOCATIONLIST structure describes information about an allocation specification that is used in direct memory access (DMA) buffering.
-old-location : display\d3dddi_allocationlist.htm
-old-project : display
-ms.assetid : 167ceb16-d7b9-4657-84cd-f3b9de5e5267
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_ALLOCATIONLIST, D3DDDI_ALLOCATIONLIST, d3dukmdt/D3DDDI_ALLOCATIONLIST, D3D_other_Structs_0e766b30-b39d-4107-8739-0b9290e7d489.xml, D3DDDI_ALLOCATIONLIST structure [Display Devices], display.d3dddi_allocationlist"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_ALLOCATIONLIST
+UID: NS:d3dukmdt._D3DDDI_ALLOCATIONLIST
+title: "_D3DDDI_ALLOCATIONLIST"
+author: windows-driver-content
+description: The D3DDDI_ALLOCATIONLIST structure describes information about an allocation specification that is used in direct memory access (DMA) buffering.
+old-location: display\d3dddi_allocationlist.htm
+old-project: display
+ms.assetid: 167ceb16-d7b9-4657-84cd-f3b9de5e5267
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDI_ALLOCATIONLIST, D3DDDI_ALLOCATIONLIST, d3dukmdt/D3DDDI_ALLOCATIONLIST, D3D_other_Structs_0e766b30-b39d-4107-8739-0b9290e7d489.xml, D3DDDI_ALLOCATIONLIST structure [Display Devices], display.d3dddi_allocationlist"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_ALLOCATIONLIST
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_ALLOCATIONLIST
 ---
 
 # _D3DDDI_ALLOCATIONLIST structure

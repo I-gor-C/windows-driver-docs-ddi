@@ -1,41 +1,46 @@
 ---
-UID : NS:fltuserstructures._INSTANCE_AGGREGATE_STANDARD_INFORMATION
-title : "_INSTANCE_AGGREGATE_STANDARD_INFORMATION"
-author : windows-driver-content
-description : The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver.
-old-location : ifsk\instance_aggregate_standard_information.htm
-old-project : ifsk
-ms.assetid : 35311ee7-d023-4b04-b510-a949ab9a40ca
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.instance_aggregate_standard_information, PINSTANCE_AGGREGATE_STANDARD_INFORMATION structure pointer [Installable File System Drivers], fltuserstructures/INSTANCE_AGGREGATE_STANDARD_INFORMATION, FltSystemStructures_b1c8bf6f-d693-4f15-ad58-9e31d593464b.xml, INSTANCE_AGGREGATE_STANDARD_INFORMATION structure [Installable File System Drivers], fltuserstructures/PINSTANCE_AGGREGATE_STANDARD_INFORMATION, _INSTANCE_AGGREGATE_STANDARD_INFORMATION, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, SUPPORTED_FS_FEATURES_OFFLOAD_READ, *PINSTANCE_AGGREGATE_STANDARD_INFORMATION, PINSTANCE_AGGREGATE_STANDARD_INFORMATION, INSTANCE_AGGREGATE_STANDARD_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltuserstructures.h
-req.include-header : FltUser.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_AGGREGATE_STANDARD_INFORMATION, *PINSTANCE_AGGREGATE_STANDARD_INFORMATION
+UID: NS:fltuserstructures._INSTANCE_AGGREGATE_STANDARD_INFORMATION
+title: "_INSTANCE_AGGREGATE_STANDARD_INFORMATION"
+author: windows-driver-content
+description: The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver.
+old-location: ifsk\instance_aggregate_standard_information.htm
+old-project: ifsk
+ms.assetid: 35311ee7-d023-4b04-b510-a949ab9a40ca
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.instance_aggregate_standard_information, PINSTANCE_AGGREGATE_STANDARD_INFORMATION structure pointer [Installable File System Drivers], fltuserstructures/INSTANCE_AGGREGATE_STANDARD_INFORMATION, FltSystemStructures_b1c8bf6f-d693-4f15-ad58-9e31d593464b.xml, INSTANCE_AGGREGATE_STANDARD_INFORMATION structure [Installable File System Drivers], fltuserstructures/PINSTANCE_AGGREGATE_STANDARD_INFORMATION, _INSTANCE_AGGREGATE_STANDARD_INFORMATION, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, SUPPORTED_FS_FEATURES_OFFLOAD_READ, *PINSTANCE_AGGREGATE_STANDARD_INFORMATION, PINSTANCE_AGGREGATE_STANDARD_INFORMATION, INSTANCE_AGGREGATE_STANDARD_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltuserstructures.h
+req.include-header: FltUser.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltuserstructures.h
+apiname:
+-	INSTANCE_AGGREGATE_STANDARD_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_AGGREGATE_STANDARD_INFORMATION, *PINSTANCE_AGGREGATE_STANDARD_INFORMATION
 ---
 
 # _INSTANCE_AGGREGATE_STANDARD_INFORMATION structure

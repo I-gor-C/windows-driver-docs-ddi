@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._OPTTYPE
-title : "_OPTTYPE"
-author : windows-driver-content
-description : The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a property sheet option, if the option is specified by an OPTITEM structure.
-old-location : print\opttype.htm
-old-project : print
-ms.assetid : 041dd438-e837-4912-bda7-de654204198b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_OPTTYPE, compstui/POPTTYPE, OPTTYPE structure [Print Devices], *POPTTYPE, POPTTYPE, OPTTYPE, print.opttype, POPTTYPE structure pointer [Print Devices], cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, compstui/OPTTYPE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POPTTYPE, OPTTYPE"
+UID: NS:compstui._OPTTYPE
+title: "_OPTTYPE"
+author: windows-driver-content
+description: The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a property sheet option, if the option is specified by an OPTITEM structure.
+old-location: print\opttype.htm
+old-project: print
+ms.assetid: 041dd438-e837-4912-bda7-de654204198b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_OPTTYPE, compstui/POPTTYPE, OPTTYPE structure [Print Devices], *POPTTYPE, POPTTYPE, OPTTYPE, print.opttype, POPTTYPE structure pointer [Print Devices], cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, compstui/OPTTYPE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	OPTTYPE
+product: Windows
+targetos: Windows
+req.typenames: "*POPTTYPE, OPTTYPE"
 ---
 
 # _OPTTYPE structure

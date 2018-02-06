@@ -1,42 +1,47 @@
 ---
-UID : NS:ptpusd._PTP_VENDOR_DATA_IN
-title : "_PTP_VENDOR_DATA_IN"
-author : windows-driver-content
-description : The PTP_VENDOR_DATA_IN structure contains information about an arbitrary command that an application issues to the device.
-old-location : image\ptp_vendor_data_in.htm
-old-project : image
-ms.assetid : 896209d0-d545-495b-b743-98c0b9d976ff
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PTP_VENDOR_DATA_IN, ptpusd/PPTP_VENDOR_DATA_IN, image.ptp_vendor_data_in, ptpusd/PTP_VENDOR_DATA_IN, wiastrct_b0ebb671-78d9-4224-8bde-893fb0afc9f8.xml, PPTP_VENDOR_DATA_IN, _PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN structure pointer [Imaging Devices], PTP_VENDOR_DATA_IN structure [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ptpusd.h
-req.include-header : Ptpusd.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN"
-req.product : Windows 10 or later.
+UID: NS:ptpusd._PTP_VENDOR_DATA_IN
+title: "_PTP_VENDOR_DATA_IN"
+author: windows-driver-content
+description: The PTP_VENDOR_DATA_IN structure contains information about an arbitrary command that an application issues to the device.
+old-location: image\ptp_vendor_data_in.htm
+old-project: image
+ms.assetid: 896209d0-d545-495b-b743-98c0b9d976ff
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PTP_VENDOR_DATA_IN, ptpusd/PPTP_VENDOR_DATA_IN, image.ptp_vendor_data_in, ptpusd/PTP_VENDOR_DATA_IN, wiastrct_b0ebb671-78d9-4224-8bde-893fb0afc9f8.xml, PPTP_VENDOR_DATA_IN, _PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN structure pointer [Imaging Devices], PTP_VENDOR_DATA_IN structure [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ptpusd.h
+req.include-header: Ptpusd.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ptpusd.h
+apiname:
+-	PTP_VENDOR_DATA_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN"
+req.product: Windows 10 or later.
 ---
 
 # _PTP_VENDOR_DATA_IN structure

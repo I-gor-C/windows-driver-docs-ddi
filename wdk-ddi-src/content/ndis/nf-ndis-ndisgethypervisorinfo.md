@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetHypervisorInfo
-title : NdisGetHypervisorInfo function
-author : windows-driver-content
-description : Important  Starting with Windows 10 Version 1703, NdisGetHypervisorInfo is deprecated and should not be used.
-old-location : netvista\ndisgethypervisorinfo.htm
-old-project : netvista
-ms.assetid : 5469c6aa-90df-4379-b670-23aaa6919055
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGetHypervisorInfo, NdisGetHypervisorInfo function [Network Drivers Starting with Windows Vista], ndis/NdisGetHypervisorInfo, netvista.ndisgethypervisorinfo, virtual_machine_queue_ref_afe96cc4-b307-4953-9587-65b6bec35b18.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetHypervisorInfo
+title: NdisGetHypervisorInfo function
+author: windows-driver-content
+description: Important  Starting with Windows 10 Version 1703, NdisGetHypervisorInfo is deprecated and should not be used.
+old-location: netvista\ndisgethypervisorinfo.htm
+old-project: netvista
+ms.assetid: 5469c6aa-90df-4379-b670-23aaa6919055
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGetHypervisorInfo, NdisGetHypervisorInfo function [Network Drivers Starting with Windows Vista], ndis/NdisGetHypervisorInfo, netvista.ndisgethypervisorinfo, virtual_machine_queue_ref_afe96cc4-b307-4953-9587-65b6bec35b18.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetHypervisorInfo
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

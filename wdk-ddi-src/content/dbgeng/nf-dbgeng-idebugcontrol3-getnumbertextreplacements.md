@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberTextReplacements
-title : IDebugControl3::GetNumberTextReplacements method
-author : windows-driver-content
-description : The GetNumberTextReplacements method returns the number of currently defined user-named and automatic aliases.
-old-location : debugger\getnumbertextreplacements.htm
-old-project : debugger
-ms.assetid : d15400a8-3d8d-48dd-86f0-4e53f8b04add
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetNumberTextReplacements method [Windows Debugging], GetNumberTextReplacements method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetNumberTextReplacements, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetNumberTextReplacements method, IDebugControl_34139b78-b8a1-4096-a54c-7fdfac7024ce.xml, IDebugControl3 interface [Windows Debugging], GetNumberTextReplacements method, GetNumberTextReplacements, IDebugControl2::GetNumberTextReplacements, GetNumberTextReplacements method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetNumberTextReplacements, debugger.getnumbertextreplacements, dbgeng/IDebugControl2::GetNumberTextReplacements
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberTextReplacements
+title: IDebugControl3::GetNumberTextReplacements method
+author: windows-driver-content
+description: The GetNumberTextReplacements method returns the number of currently defined user-named and automatic aliases.
+old-location: debugger\getnumbertextreplacements.htm
+old-project: debugger
+ms.assetid: d15400a8-3d8d-48dd-86f0-4e53f8b04add
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetNumberTextReplacements method [Windows Debugging], GetNumberTextReplacements method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetNumberTextReplacements, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetNumberTextReplacements method, IDebugControl_34139b78-b8a1-4096-a54c-7fdfac7024ce.xml, IDebugControl3 interface [Windows Debugging], GetNumberTextReplacements method, GetNumberTextReplacements, IDebugControl2::GetNumberTextReplacements, GetNumberTextReplacements method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetNumberTextReplacements, debugger.getnumbertextreplacements, dbgeng/IDebugControl2::GetNumberTextReplacements
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.GetNumberTextReplacements
+-	IDebugControl3.GetNumberTextReplacements
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

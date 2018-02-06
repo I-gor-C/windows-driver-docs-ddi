@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoInitSetDefaultLocale
-title : WdfPdoInitSetDefaultLocale function
-author : windows-driver-content
-description : The WdfPdoInitSetDefaultLocale method sets a device's default locale.
-old-location : wdf\wdfpdoinitsetdefaultlocale.htm
-old-project : wdf
-ms.assetid : d3c068dd-d09c-4b3a-be96-c1c55b3ebfe4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFPDOINITSETDEFAULTLOCALE, WdfPdoInitSetDefaultLocale method, kmdf.wdfpdoinitsetdefaultlocale, WdfPdoInitSetDefaultLocale, DFDeviceObjectFdoPdoRef_12f9db03-8d4b-4ce4-9cde-0081884c6b9c.xml, wdfpdo/WdfPdoInitSetDefaultLocale, wdf.wdfpdoinitsetdefaultlocale
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoInitSetDefaultLocale
+title: WdfPdoInitSetDefaultLocale function
+author: windows-driver-content
+description: The WdfPdoInitSetDefaultLocale method sets a device's default locale.
+old-location: wdf\wdfpdoinitsetdefaultlocale.htm
+old-project: wdf
+ms.assetid: d3c068dd-d09c-4b3a-be96-c1c55b3ebfe4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFPDOINITSETDEFAULTLOCALE, WdfPdoInitSetDefaultLocale method, kmdf.wdfpdoinitsetdefaultlocale, WdfPdoInitSetDefaultLocale, DFDeviceObjectFdoPdoRef_12f9db03-8d4b-4ce4-9cde-0081884c6b9c.xml, wdfpdo/WdfPdoInitSetDefaultLocale, wdf.wdfpdoinitsetdefaultlocale
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoInitSetDefaultLocale
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

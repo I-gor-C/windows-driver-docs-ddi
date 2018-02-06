@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDeviceInitialize.AutoForwardCreateCleanupClose
-title : IWDFDeviceInitialize::AutoForwardCreateCleanupClose method
-author : windows-driver-content
-description : The AutoForwardCreateCleanupClose method controls when create, cleanup, and close notifications are forwarded to the next lower driver in the device stack.
-old-location : wdf\iwdfdeviceinitialize_autoforwardcreatecleanupclose.htm
-old-project : wdf
-ms.assetid : b9c8e54e-7cd5-48a9-b948-5327900c8a99
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_6f68d9cd-cfb9-49ae-94b8-a230e4dc0762.xml, AutoForwardCreateCleanupClose method, IWDFDeviceInitialize interface, IWDFDeviceInitialize, IWDFDeviceInitialize interface, AutoForwardCreateCleanupClose method, umdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose method, wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, wudfddi/IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDeviceInitialize.AutoForwardCreateCleanupClose
+title: IWDFDeviceInitialize::AutoForwardCreateCleanupClose method
+author: windows-driver-content
+description: The AutoForwardCreateCleanupClose method controls when create, cleanup, and close notifications are forwarded to the next lower driver in the device stack.
+old-location: wdf\iwdfdeviceinitialize_autoforwardcreatecleanupclose.htm
+old-project: wdf
+ms.assetid: b9c8e54e-7cd5-48a9-b948-5327900c8a99
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_6f68d9cd-cfb9-49ae-94b8-a230e4dc0762.xml, AutoForwardCreateCleanupClose method, IWDFDeviceInitialize interface, IWDFDeviceInitialize, IWDFDeviceInitialize interface, AutoForwardCreateCleanupClose method, umdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose method, wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, wudfddi/IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDeviceInitialize.AutoForwardCreateCleanupClose
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

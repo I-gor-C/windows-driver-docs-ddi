@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPINVOID
-title : PFNKSPINVOID
-author : windows-driver-content
-description : An AVStream minidriver's callback routine is called when:The relevant KSPIN is serving as a sink pin and this sink pin is disconnected from an AVStream source pin.A KSPIN structure's reset state is changed due to the arrival of an IOCTL_KS_RESET_STATE device control. This routine is also called when the queue associated with the given pin is flushed.
-old-location : stream\avstrminipindisconnect.htm
-old-project : stream
-ms.assetid : 64bcbc05-8dbd-4f97-afbb-dadd44b60078
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipindisconnect, AVStrMiniPinDisconnect, AVStrMiniPinReset, MyAVStrMiniPin routine [Streaming Media Devices], MyAVStrMiniPin, PFNKSPINVOID, PFNKSPINVOID, ks/MyAVStrMiniPin, avstclbk_7d4db969-3c67-4f42-9b06-723964af1147.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPINVOID
+title: PFNKSPINVOID
+author: windows-driver-content
+description: An AVStream minidriver's callback routine is called when:The relevant KSPIN is serving as a sink pin and this sink pin is disconnected from an AVStream source pin.A KSPIN structure's reset state is changed due to the arrival of an IOCTL_KS_RESET_STATE device control. This routine is also called when the queue associated with the given pin is flushed.
+old-location: stream\avstrminipindisconnect.htm
+old-project: stream
+ms.assetid: 64bcbc05-8dbd-4f97-afbb-dadd44b60078
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipindisconnect, AVStrMiniPinDisconnect, AVStrMiniPinReset, MyAVStrMiniPin routine [Streaming Media Devices], MyAVStrMiniPin, PFNKSPINVOID, PFNKSPINVOID, ks/MyAVStrMiniPin, avstclbk_7d4db969-3c67-4f42-9b06-723964af1147.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	MyAVStrMiniPin
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

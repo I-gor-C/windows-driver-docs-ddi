@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._DEVICE_INSTALL_STATE
-title : "_DEVICE_INSTALL_STATE"
-author : windows-driver-content
-description : The DEVICE_INSTALL_STATE enumeration describes a device's installation state.
-old-location : kernel\device_install_state.htm
-old-project : kernel
-ms.assetid : 82b702ae-ea62-4bc1-ad92-467eba027e3d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.device_install_state, DEVICE_INSTALL_STATE, wdm/DEVICE_INSTALL_STATE, InstallStateInstalled, InstallStateNeedsReinstall, wdm/InstallStateNeedsReinstall, InstallStateFinishInstall, sysenum_ba359e9d-17fd-43c7-8efd-ce6c61f46be6.xml, _DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE, wdm/InstallStateFinishInstall, InstallStateFailedInstall, DEVICE_INSTALL_STATE enumeration [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE enumeration pointer [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE, wdm/PDEVICE_INSTALL_STATE, wdm/InstallStateFailedInstall, wdm/InstallStateInstalled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE
-req.product : Windows 10 or later.
+UID: NE:wdm._DEVICE_INSTALL_STATE
+title: "_DEVICE_INSTALL_STATE"
+author: windows-driver-content
+description: The DEVICE_INSTALL_STATE enumeration describes a device's installation state.
+old-location: kernel\device_install_state.htm
+old-project: kernel
+ms.assetid: 82b702ae-ea62-4bc1-ad92-467eba027e3d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.device_install_state, DEVICE_INSTALL_STATE, wdm/DEVICE_INSTALL_STATE, InstallStateInstalled, InstallStateNeedsReinstall, wdm/InstallStateNeedsReinstall, InstallStateFinishInstall, sysenum_ba359e9d-17fd-43c7-8efd-ce6c61f46be6.xml, _DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE, wdm/InstallStateFinishInstall, InstallStateFailedInstall, DEVICE_INSTALL_STATE enumeration [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE enumeration pointer [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE, wdm/PDEVICE_INSTALL_STATE, wdm/InstallStateFailedInstall, wdm/InstallStateInstalled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	DEVICE_INSTALL_STATE
+product: Windows
+targetos: Windows
+req.typenames: DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE
+req.product: Windows 10 or later.
 ---
 
 # _DEVICE_INSTALL_STATE Enumeration
@@ -55,31 +60,31 @@ typedef enum _DEVICE_INSTALL_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>InstallStateFailedInstall</td>
-<td>The device did not install properly.</td>
-</tr>
-
-<tr>
-<td>InstallStateFinishInstall</td>
-<td>The installation of this device is not yet complete.</td>
-</tr>
-
-<tr>
-<td>InstallStateInstalled</td>
-<td>The device is installed.</td>
-</tr>
-
-<tr>
-<td>InstallStateNeedsReinstall</td>
-<td>The system will try to reinstall the device on a later enumeration.</td>
-</tr>
+            
+                <tr>
+                    <td>InstallStateFailedInstall</td>
+                    <td>The device did not install properly.</td>
+                </tr>
+            
+                <tr>
+                    <td>InstallStateFinishInstall</td>
+                    <td>The installation of this device is not yet complete.</td>
+                </tr>
+            
+                <tr>
+                    <td>InstallStateInstalled</td>
+                    <td>The device is installed.</td>
+                </tr>
+            
+                <tr>
+                    <td>InstallStateNeedsReinstall</td>
+                    <td>The system will try to reinstall the device on a later enumeration.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routine supplies a <b>DEVICE_INSTALL_STATE</b> enumeration value when a driver requests <b>DevicePropertyInstallState</b>. The operating system uses the value as a hint about the install state of the device.
+        The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routine supplies a <b>DEVICE_INSTALL_STATE</b> enumeration value when a driver requests <b>DevicePropertyInstallState</b>. The operating system uses the value as a hint about the install state of the device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,9 +92,9 @@ The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routi
 | **Windows version** | Available in Microsoft Windows XP and later versions of the Windows operating system. Available in Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+        <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 
 <a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a>
 

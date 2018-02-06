@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwSetInformationResourceManager
-title : ZwSetInformationResourceManager function
-author : windows-driver-content
-description : The ZwSetInformationResourceManager routine is not used.
-old-location : kernel\zwsetinformationresourcemanager.htm
-old-project : kernel
-ms.assetid : 0a0d86c7-1d42-4312-a4f9-9b9ea092ebec
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/NtSetInformationResourceManager, function [Kernel-Mode Driver Architecture], wdm/, NtSetInformationResourceManager, ktm_ref_6b15a16a-ffed-4f3e-9ca3-370b85896dc2.xml, ZwSetInformationResourceManager, kernel.zwsetinformationresourcemanager
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwSetInformationResourceManager
+title: ZwSetInformationResourceManager function
+author: windows-driver-content
+description: The ZwSetInformationResourceManager routine is not used.
+old-location: kernel\zwsetinformationresourcemanager.htm
+old-project: kernel
+ms.assetid: 0a0d86c7-1d42-4312-a4f9-9b9ea092ebec
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/NtSetInformationResourceManager, function [Kernel-Mode Driver Architecture], wdm/, NtSetInformationResourceManager, ktm_ref_6b15a16a-ffed-4f3e-9ca3-370b85896dc2.xml, ZwSetInformationResourceManager, kernel.zwsetinformationresourcemanager
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	ZwSetInformationResourceManager
+-	NtSetInformationResourceManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

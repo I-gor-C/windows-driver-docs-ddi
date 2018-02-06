@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterScriptablePropertyBag.GetBool
-title : IPrinterScriptablePropertyBag::GetBool method
-author : windows-driver-content
-description : Gets a specified boolean property.
-old-location : print\iprinterscriptablepropertybag_getbool.htm
-old-project : print
-ms.assetid : EEBB916B-0E7B-4523-BB13-A4758F5491BB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getbool, GetBool method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetBool, GetBool method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::GetBool, IPrinterScriptablePropertyBag interface [Print Devices], GetBool method, GetBool
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterScriptablePropertyBag.GetBool
+title: IPrinterScriptablePropertyBag::GetBool method
+author: windows-driver-content
+description: Gets a specified boolean property.
+old-location: print\iprinterscriptablepropertybag_getbool.htm
+old-project: print
+ms.assetid: EEBB916B-0E7B-4523-BB13-A4758F5491BB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getbool, GetBool method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetBool, GetBool method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::GetBool, IPrinterScriptablePropertyBag interface [Print Devices], GetBool method, GetBool
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterScriptablePropertyBag.GetBool
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10_1DDI_CREATESHADERRESOURCEVIEW
-title : PFND3D10_1DDI_CREATESHADERRESOURCEVIEW
-author : windows-driver-content
-description : The CreateShaderResourceView(D3D10_1) function creates a shader resource view.
-old-location : display\createshaderresourceview_d3d10_1_.htm
-old-project : display
-ms.assetid : 7a0a92d2-a5df-4bee-a950-8a89aeb3dbb8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createshaderresourceview_d3d10_1_, CreateShaderResourceView_d3d10_1_ callback function [Display Devices], CreateShaderResourceView_d3d10_1_, PFND3D10_1DDI_CREATESHADERRESOURCEVIEW, PFND3D10_1DDI_CREATESHADERRESOURCEVIEW, d3d10umddi/CreateShaderResourceView_d3d10_1_, UserModeDisplayDriverDx10_Functions_e8a41f3e-a247-4350-aa1d-3967ec2f903d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateShaderResourceView(D3D10_1) is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10_1DDI_CREATESHADERRESOURCEVIEW
+title: PFND3D10_1DDI_CREATESHADERRESOURCEVIEW
+author: windows-driver-content
+description: The CreateShaderResourceView(D3D10_1) function creates a shader resource view.
+old-location: display\createshaderresourceview_d3d10_1_.htm
+old-project: display
+ms.assetid: 7a0a92d2-a5df-4bee-a950-8a89aeb3dbb8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createshaderresourceview_d3d10_1_, CreateShaderResourceView_d3d10_1_ callback function [Display Devices], CreateShaderResourceView_d3d10_1_, PFND3D10_1DDI_CREATESHADERRESOURCEVIEW, PFND3D10_1DDI_CREATESHADERRESOURCEVIEW, d3d10umddi/CreateShaderResourceView_d3d10_1_, UserModeDisplayDriverDx10_Functions_e8a41f3e-a247-4350-aa1d-3967ec2f903d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateShaderResourceView(D3D10_1) is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateShaderResourceView_d3d10_1_
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

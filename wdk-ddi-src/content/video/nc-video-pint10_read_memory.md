@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PINT10_READ_MEMORY
-title : PINT10_READ_MEMORY
-author : windows-driver-content
-description : The Int10ReadMemory function reads a block of memory in the context of another thread and stores it in an output buffer.
-old-location : display\int10readmemory.htm
-old-project : display
-ms.assetid : 94b72ad0-1ace-4fde-a4a9-1078103e3d9b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.int10readmemory, Int10ReadMemory callback function [Display Devices], Int10ReadMemory, PINT10_READ_MEMORY, PINT10_READ_MEMORY, video/Int10ReadMemory, VideoPort_Functions_fab5815b-1478-4d19-823f-05fd1de02b0c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PINT10_READ_MEMORY
+title: PINT10_READ_MEMORY
+author: windows-driver-content
+description: The Int10ReadMemory function reads a block of memory in the context of another thread and stores it in an output buffer.
+old-location: display\int10readmemory.htm
+old-project: display
+ms.assetid: 94b72ad0-1ace-4fde-a4a9-1078103e3d9b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.int10readmemory, Int10ReadMemory callback function [Display Devices], Int10ReadMemory, PINT10_READ_MEMORY, PINT10_READ_MEMORY, video/Int10ReadMemory, VideoPort_Functions_fab5815b-1478-4d19-823f-05fd1de02b0c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	Int10ReadMemory
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

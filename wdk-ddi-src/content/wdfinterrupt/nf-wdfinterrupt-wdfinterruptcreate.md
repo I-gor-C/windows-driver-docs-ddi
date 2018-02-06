@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptCreate
-title : WdfInterruptCreate function
-author : windows-driver-content
-description : The WdfInterruptCreate method creates a framework interrupt object.
-old-location : wdf\wdfinterruptcreate.htm
-old-project : wdf
-ms.assetid : 6279f9ed-f271-45e6-92ef-2a919f3584ed
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfInterruptCreate, wdf.wdfinterruptcreate, WdfInterruptCreate method, DFInterruptObjectRef_44b197bb-82d6-45ff-a640-67fd1de506cc.xml, wdfinterrupt/WdfInterruptCreate, kmdf.wdfinterruptcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptCreate
+title: WdfInterruptCreate function
+author: windows-driver-content
+description: The WdfInterruptCreate method creates a framework interrupt object.
+old-location: wdf\wdfinterruptcreate.htm
+old-project: wdf
+ms.assetid: 6279f9ed-f271-45e6-92ef-2a919f3584ed
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfInterruptCreate, wdf.wdfinterruptcreate, WdfInterruptCreate method, DFInterruptObjectRef_44b197bb-82d6-45ff-a640-67fd1de506cc.xml, wdfinterrupt/WdfInterruptCreate, kmdf.wdfinterruptcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

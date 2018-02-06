@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlFillMemoryUlonglong
-title : RtlFillMemoryUlonglong function
-author : windows-driver-content
-description : The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value.
-old-location : ifsk\rtlfillmemoryulonglong.htm
-old-project : ifsk
-ms.assetid : b5604cdb-084e-431a-b413-020e8213a18f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_5e06d1be-accd-40f6-a5b1-2a3b39caacce.xml, RtlFillMemoryUlonglong, ntifs/RtlFillMemoryUlonglong, ifsk.rtlfillmemoryulonglong, RtlFillMemoryUlonglong routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : For AMD64 systems, this routine is available on Microsoft Windows 2000 and later. For non-AMD64 systems, this routine is available on Windows 7 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlFillMemoryUlonglong
+title: RtlFillMemoryUlonglong function
+author: windows-driver-content
+description: The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value.
+old-location: ifsk\rtlfillmemoryulonglong.htm
+old-project: ifsk
+ms.assetid: b5604cdb-084e-431a-b413-020e8213a18f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_5e06d1be-accd-40f6-a5b1-2a3b39caacce.xml, RtlFillMemoryUlonglong, ntifs/RtlFillMemoryUlonglong, ifsk.rtlfillmemoryulonglong, RtlFillMemoryUlonglong routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: For AMD64 systems, this routine is available on Microsoft Windows 2000 and later. For non-AMD64 systems, this routine is available on Windows 7 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFillMemoryUlonglong
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

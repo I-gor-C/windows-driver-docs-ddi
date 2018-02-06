@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoCreateStreamFileObjectLite
-title : IoCreateStreamFileObjectLite function
-author : windows-driver-content
-description : The IoCreateStreamFileObjectLite routine creates a new stream file object, but does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack.
-old-location : ifsk\iocreatestreamfileobjectlite.htm
-old-project : ifsk
-ms.assetid : 79c6438c-ba8c-4fc5-8c3f-5865a51869b7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoCreateStreamFileObjectLite routine [Installable File System Drivers], ntifs/IoCreateStreamFileObjectLite, ioref_0e35141f-7028-47b0-8dc1-0bd9d1c4e0be.xml, ifsk.iocreatestreamfileobjectlite, IoCreateStreamFileObjectLite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoCreateStreamFileObjectLite
+title: IoCreateStreamFileObjectLite function
+author: windows-driver-content
+description: The IoCreateStreamFileObjectLite routine creates a new stream file object, but does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack.
+old-location: ifsk\iocreatestreamfileobjectlite.htm
+old-project: ifsk
+ms.assetid: 79c6438c-ba8c-4fc5-8c3f-5865a51869b7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoCreateStreamFileObjectLite routine [Installable File System Drivers], ntifs/IoCreateStreamFileObjectLite, ioref_0e35141f-7028-47b0-8dc1-0bd9d1c4e0be.xml, ifsk.iocreatestreamfileobjectlite, IoCreateStreamFileObjectLite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateStreamFileObjectLite
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

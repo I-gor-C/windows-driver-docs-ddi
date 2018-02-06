@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAllocatePoolWithTag
-title : FsRtlAllocatePoolWithTag macro
-author : windows-driver-content
-description : The FsRtlAllocatePoolWithTag routine allocates pool memory.
-old-location : ifsk\fsrtlallocatepoolwithtag.htm
-old-project : ifsk
-ms.assetid : a9ea59d1-1d51-4332-b497-7d2b7f39e686
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml, ntifs/FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag routine [Installable File System Drivers], ifsk.fsrtlallocatepoolwithtag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAllocatePoolWithTag
+title: FsRtlAllocatePoolWithTag macro
+author: windows-driver-content
+description: The FsRtlAllocatePoolWithTag routine allocates pool memory.
+old-location: ifsk\fsrtlallocatepoolwithtag.htm
+old-project: ifsk
+ms.assetid: a9ea59d1-1d51-4332-b497-7d2b7f39e686
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml, ntifs/FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag routine [Installable File System Drivers], ifsk.fsrtlallocatepoolwithtag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlAllocatePoolWithTag
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

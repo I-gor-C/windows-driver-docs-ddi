@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.AddUlong64
-title : IDebugFailureAnalysis2::AddUlong64 method
-author : windows-driver-content
-description : The AddUlong64 method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified 64-bit value.
-old-location : debugger\idebugfailureanalysis2_addulong64.htm
-old-project : debugger
-ms.assetid : E5FB5911-C6E5-44C1-B33F-75B4DD86A3D9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, AddUlong64, debugger.idebugfailureanalysis2_addulong64, AddUlong64 method [Windows Debugging], IDebugFailureAnalysis2 interface, extsfns/IDebugFailureAnalysis2::AddUlong64, AddUlong64 method [Windows Debugging], IDebugFailureAnalysis2::AddUlong64, IDebugFailureAnalysis2 interface [Windows Debugging], AddUlong64 method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.AddUlong64
+title: IDebugFailureAnalysis2::AddUlong64 method
+author: windows-driver-content
+description: The AddUlong64 method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified 64-bit value.
+old-location: debugger\idebugfailureanalysis2_addulong64.htm
+old-project: debugger
+ms.assetid: E5FB5911-C6E5-44C1-B33F-75B4DD86A3D9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, AddUlong64, debugger.idebugfailureanalysis2_addulong64, AddUlong64 method [Windows Debugging], IDebugFailureAnalysis2 interface, extsfns/IDebugFailureAnalysis2::AddUlong64, AddUlong64 method [Windows Debugging], IDebugFailureAnalysis2::AddUlong64, IDebugFailureAnalysis2 interface [Windows Debugging], AddUlong64 method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.AddUlong64
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

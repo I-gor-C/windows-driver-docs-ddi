@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadTeb
-title : IDebugSystemObjects4::GetCurrentThreadTeb method
-author : windows-driver-content
-description : The GetCurrentThreadTeb method returns the location of the thread environment block (TEB) for the current thread.
-old-location : debugger\getcurrentthreadteb.htm
-old-project : debugger
-ms.assetid : f5acd64c-c5a8-4977-8059-cc0bd12ef0c0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects4::GetCurrentThreadTeb, GetCurrentThreadTeb, debugger.getcurrentthreadteb, IDebugSystemObjects::GetCurrentThreadTeb, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadTeb method, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects_d496c1cf-524f-469f-9cb6-1476f972ae9a.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadTeb, GetCurrentThreadTeb method [Windows Debugging], dbgeng/IDebugSystemObjects::GetCurrentThreadTeb, IDebugSystemObjects4, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadTeb method, dbgeng/IDebugSystemObjects3::GetCurrentThreadTeb, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadTeb method, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects2 interface, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3::GetCurrentThreadTeb, IDebugSystemObjects4::GetCurrentThreadTeb, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects2::GetCurrentThreadTeb, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadTeb method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadTeb
+title: IDebugSystemObjects4::GetCurrentThreadTeb method
+author: windows-driver-content
+description: The GetCurrentThreadTeb method returns the location of the thread environment block (TEB) for the current thread.
+old-location: debugger\getcurrentthreadteb.htm
+old-project: debugger
+ms.assetid: f5acd64c-c5a8-4977-8059-cc0bd12ef0c0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSystemObjects4::GetCurrentThreadTeb, GetCurrentThreadTeb, debugger.getcurrentthreadteb, IDebugSystemObjects::GetCurrentThreadTeb, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadTeb method, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects_d496c1cf-524f-469f-9cb6-1476f972ae9a.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadTeb, GetCurrentThreadTeb method [Windows Debugging], dbgeng/IDebugSystemObjects::GetCurrentThreadTeb, IDebugSystemObjects4, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadTeb method, dbgeng/IDebugSystemObjects3::GetCurrentThreadTeb, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadTeb method, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects2 interface, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3::GetCurrentThreadTeb, IDebugSystemObjects4::GetCurrentThreadTeb, GetCurrentThreadTeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects2::GetCurrentThreadTeb, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadTeb method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentThreadTeb
+-	IDebugSystemObjects2.GetCurrentThreadTeb
+-	IDebugSystemObjects3.GetCurrentThreadTeb
+-	IDebugSystemObjects4.GetCurrentThreadTeb
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

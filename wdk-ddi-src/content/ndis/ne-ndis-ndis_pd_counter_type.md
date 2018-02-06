@@ -1,41 +1,46 @@
 ---
-UID : NE:ndis.NDIS_PD_COUNTER_TYPE
-title : NDIS_PD_COUNTER_TYPE
-author : windows-driver-content
-description : The NDIS_PD_COUNTER_TYPE enumeration defines types of PacketDirect Provider Interface (PDPI) counters. Its enumeration values are used in the Type member of the NDIS_PD_COUNTER_PARAMETERS structure.
-old-location : netvista\ndis_pd_counter_type.htm
-old-project : netvista
-ms.assetid : 36DA5A61-2DA4-4CD1-8BA5-74444DC002F0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/PDCounterTypeUnknown, NDIS_PD_COUNTER_TYPE enumeration [Network Drivers Starting with Windows Vista], PDCounterTypeUnknown, netvista.ndis_pd_counter_type, ndis/PDCounterTypeReceiveQueue, ndis/NDIS_PD_COUNTER_TYPE, PDCounterTypeReceiveQueue, ndis/PDCounterTypeTransmitQueue, PDCounterTypeReceiveFilter, ndis/PDCounterTypeReceiveFilter, PDCounterTypeTransmitQueue, ndis/PDCounterTypeMax, NDIS_PD_COUNTER_TYPE, PDCounterTypeMax
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PD_COUNTER_TYPE
+UID: NE:ndis.NDIS_PD_COUNTER_TYPE
+title: NDIS_PD_COUNTER_TYPE
+author: windows-driver-content
+description: The NDIS_PD_COUNTER_TYPE enumeration defines types of PacketDirect Provider Interface (PDPI) counters. Its enumeration values are used in the Type member of the NDIS_PD_COUNTER_PARAMETERS structure.
+old-location: netvista\ndis_pd_counter_type.htm
+old-project: netvista
+ms.assetid: 36DA5A61-2DA4-4CD1-8BA5-74444DC002F0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/PDCounterTypeUnknown, NDIS_PD_COUNTER_TYPE enumeration [Network Drivers Starting with Windows Vista], PDCounterTypeUnknown, netvista.ndis_pd_counter_type, ndis/PDCounterTypeReceiveQueue, ndis/NDIS_PD_COUNTER_TYPE, PDCounterTypeReceiveQueue, ndis/PDCounterTypeTransmitQueue, PDCounterTypeReceiveFilter, ndis/PDCounterTypeReceiveFilter, PDCounterTypeTransmitQueue, ndis/PDCounterTypeMax, NDIS_PD_COUNTER_TYPE, PDCounterTypeMax
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_PD_COUNTER_TYPE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PD_COUNTER_TYPE
 ---
 
 # NDIS_PD_COUNTER_TYPE Enumeration
@@ -55,31 +60,31 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PDCounterTypeMax</td>
-<td>The maximum value for this enumeration. This value might change in future versions of NDIS header files and binaries.</td>
-</tr>
-
-<tr>
-<td>PDCounterTypeReceiveFilter</td>
-<td>The counter is a receive filter counter.</td>
-</tr>
-
-<tr>
-<td>PDCounterTypeReceiveQueue</td>
-<td>The counter is a receive queue counter.</td>
-</tr>
-
-<tr>
-<td>PDCounterTypeTransmitQueue</td>
-<td>The counter is a transmit queue counter.</td>
-</tr>
-
-<tr>
-<td>PDCounterTypeUnknown</td>
-<td>The counter type is not known.</td>
-</tr>
+            
+                <tr>
+                    <td>PDCounterTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of NDIS header files and binaries.</td>
+                </tr>
+            
+                <tr>
+                    <td>PDCounterTypeReceiveFilter</td>
+                    <td>The counter is a receive filter counter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PDCounterTypeReceiveQueue</td>
+                    <td>The counter is a receive queue counter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PDCounterTypeTransmitQueue</td>
+                    <td>The counter is a transmit queue counter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PDCounterTypeUnknown</td>
+                    <td>The counter type is not known.</td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |
 
-## See Also
+    ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a>
+        <a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a>
 
  
 

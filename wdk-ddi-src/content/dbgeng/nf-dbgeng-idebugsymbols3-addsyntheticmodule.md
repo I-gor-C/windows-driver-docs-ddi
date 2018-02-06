@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AddSyntheticModule
-title : IDebugSymbols3::AddSyntheticModule method
-author : windows-driver-content
-description : The AddSyntheticModule method adds a synthetic module to the module list the debugger maintains for the current process.
-old-location : debugger\addsyntheticmodule.htm
-old-project : debugger
-ms.assetid : 87d9f307-996b-47df-b3dd-368fef6c1042
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, AddSyntheticModule, debugger.addsyntheticmodule, AddSyntheticModule method [Windows Debugging], dbgeng/IDebugSymbols3::AddSyntheticModule, IDebugSymbols3, IDebugSymbols3::AddSyntheticModule, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AddSyntheticModule
+title: IDebugSymbols3::AddSyntheticModule method
+author: windows-driver-content
+description: The AddSyntheticModule method adds a synthetic module to the module list the debugger maintains for the current process.
+old-location: debugger\addsyntheticmodule.htm
+old-project: debugger
+ms.assetid: 87d9f307-996b-47df-b3dd-368fef6c1042
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, AddSyntheticModule, debugger.addsyntheticmodule, AddSyntheticModule method [Windows Debugging], dbgeng/IDebugSymbols3::AddSyntheticModule, IDebugSymbols3, IDebugSymbols3::AddSyntheticModule, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.AddSyntheticModule
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

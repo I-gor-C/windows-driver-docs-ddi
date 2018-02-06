@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEVIDEOPROCESSDEVICE
-title : PFND3DDDI_CREATEVIDEOPROCESSDEVICE
-author : windows-driver-content
-description : The CreateVideoProcessDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) video processing device that is used to process video (for example, to deinterlace the video and adjust ProcAmp properties of the video).
-old-location : display\createvideoprocessdevice.htm
-old-project : display
-ms.assetid : 3149c7d9-0bf7-4355-8f15-821cf6b92f0a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createvideoprocessdevice, CreateVideoProcessDevice callback function [Display Devices], CreateVideoProcessDevice, PFND3DDDI_CREATEVIDEOPROCESSDEVICE, PFND3DDDI_CREATEVIDEOPROCESSDEVICE, d3dumddi/CreateVideoProcessDevice, UserModeDisplayDriver_Functions_2f8b832f-db45-4f76-ab8f-5ba94f818933.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEVIDEOPROCESSDEVICE
+title: PFND3DDDI_CREATEVIDEOPROCESSDEVICE
+author: windows-driver-content
+description: The CreateVideoProcessDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) video processing device that is used to process video (for example, to deinterlace the video and adjust ProcAmp properties of the video).
+old-location: display\createvideoprocessdevice.htm
+old-project: display
+ms.assetid: 3149c7d9-0bf7-4355-8f15-821cf6b92f0a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createvideoprocessdevice, CreateVideoProcessDevice callback function [Display Devices], CreateVideoProcessDevice, PFND3DDDI_CREATEVIDEOPROCESSDEVICE, PFND3DDDI_CREATEVIDEOPROCESSDEVICE, d3dumddi/CreateVideoProcessDevice, UserModeDisplayDriver_Functions_2f8b832f-db45-4f76-ab8f-5ba94f818933.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateVideoProcessDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_DESTROYALLOCATIONFLAGS
-title : "_DXGK_DESTROYALLOCATIONFLAGS"
-author : windows-driver-content
-description : The DXGK_DESTROYALLOCATIONFLAGS structure identifies how to release allocations.
-old-location : display\dxgk_destroyallocationflags.htm
-old-project : display
-ms.assetid : 8f848d68-cef4-45a2-bdda-1bc8c9df6272
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS, _DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], display.dxgk_destroyallocationflags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_DESTROYALLOCATIONFLAGS
+UID: NS:d3dkmddi._DXGK_DESTROYALLOCATIONFLAGS
+title: "_DXGK_DESTROYALLOCATIONFLAGS"
+author: windows-driver-content
+description: The DXGK_DESTROYALLOCATIONFLAGS structure identifies how to release allocations.
+old-location: display\dxgk_destroyallocationflags.htm
+old-project: display
+ms.assetid: 8f848d68-cef4-45a2-bdda-1bc8c9df6272
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS, _DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], display.dxgk_destroyallocationflags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_DESTROYALLOCATIONFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_DESTROYALLOCATIONFLAGS
 ---
 
 # _DXGK_DESTROYALLOCATIONFLAGS structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:poscx.PosCxMarkPosApp
-title : PosCxMarkPosApp function
-author : windows-driver-content
-description : PosCxMarkPosApp marks the open instance as associated or not associated with a point-of-service application.
-old-location : pos\poscxmarkposapp.htm
-old-project : pos
-ms.assetid : 6BFFD014-E9DC-495C-9810-0D23BD93C41A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PosCxMarkPosApp function, poscx/PosCxMarkPosApp, pos.poscxmarkposapp, PosCxMarkPosApp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : poscx.h
-req.include-header : Poscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POS_CX_EVENT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:poscx.PosCxMarkPosApp
+title: PosCxMarkPosApp function
+author: windows-driver-content
+description: PosCxMarkPosApp marks the open instance as associated or not associated with a point-of-service application.
+old-location: pos\poscxmarkposapp.htm
+old-project: pos
+ms.assetid: 6BFFD014-E9DC-495C-9810-0D23BD93C41A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PosCxMarkPosApp function, poscx/PosCxMarkPosApp, pos.poscxmarkposapp, PosCxMarkPosApp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: poscx.h
+req.include-header: Poscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poscx.h
+apiname:
+-	PosCxMarkPosApp
+product: Windows
+targetos: Windows
+req.typenames: POS_CX_EVENT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

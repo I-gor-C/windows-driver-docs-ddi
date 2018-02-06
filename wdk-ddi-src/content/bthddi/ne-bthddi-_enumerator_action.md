@@ -1,41 +1,46 @@
 ---
-UID : NE:bthddi._ENUMERATOR_ACTION
-title : "_ENUMERATOR_ACTION"
-author : windows-driver-content
-description : Reserved for internal use.
-old-location : bltooth\enumerator_action.htm
-old-project : bltooth
-ms.assetid : d5acaec6-7b3b-4dd9-8901-f96b4e49149f
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : ENUMERATOR_ACTION_CREATE, bltooth.enumerator_action, bthddi/ENUMERATOR_ACTION_CREATE, bthddi/ENUMERATOR_ACTION_MAX, ENUMERATOR_ACTION enumeration pointer [Bluetooth Devices], PENUMERATOR_ACTION, PENUMERATOR_ACTION enumeration pointer [Bluetooth Devices], bthddi/PENUMERATOR_ACTION, bth_enums_5ffc09cb-5aae-408c-ba92-b1872890541a.xml, *PENUMERATOR_ACTION, ENUMERATOR_ACTION_REMOVE, ENUMERATOR_ACTION_DESTROY, bthddi/ENUMERATOR_ACTION_DESTROY, bthddi/ENUMERATOR_ACTION_REMOVE, bthddi/ENUMERATOR_ACTION, _ENUMERATOR_ACTION, ENUMERATOR_ACTION, ENUMERATOR_ACTION enumeration [Bluetooth Devices], ENUMERATOR_ACTION_MAX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PENUMERATOR_ACTION, ENUMERATOR_ACTION"
+UID: NE:bthddi._ENUMERATOR_ACTION
+title: "_ENUMERATOR_ACTION"
+author: windows-driver-content
+description: Reserved for internal use.
+old-location: bltooth\enumerator_action.htm
+old-project: bltooth
+ms.assetid: d5acaec6-7b3b-4dd9-8901-f96b4e49149f
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: ENUMERATOR_ACTION_CREATE, bltooth.enumerator_action, bthddi/ENUMERATOR_ACTION_CREATE, bthddi/ENUMERATOR_ACTION_MAX, ENUMERATOR_ACTION enumeration pointer [Bluetooth Devices], PENUMERATOR_ACTION, PENUMERATOR_ACTION enumeration pointer [Bluetooth Devices], bthddi/PENUMERATOR_ACTION, bth_enums_5ffc09cb-5aae-408c-ba92-b1872890541a.xml, *PENUMERATOR_ACTION, ENUMERATOR_ACTION_REMOVE, ENUMERATOR_ACTION_DESTROY, bthddi/ENUMERATOR_ACTION_DESTROY, bthddi/ENUMERATOR_ACTION_REMOVE, bthddi/ENUMERATOR_ACTION, _ENUMERATOR_ACTION, ENUMERATOR_ACTION, ENUMERATOR_ACTION enumeration [Bluetooth Devices], ENUMERATOR_ACTION_MAX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	ENUMERATOR_ACTION
+product: Windows
+targetos: Windows
+req.typenames: "*PENUMERATOR_ACTION, ENUMERATOR_ACTION"
 ---
 
 # _ENUMERATOR_ACTION Enumeration
@@ -54,26 +59,26 @@ typedef enum _ENUMERATOR_ACTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>ENUMERATOR_ACTION_CREATE</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>ENUMERATOR_ACTION_DESTROY</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>ENUMERATOR_ACTION_MAX</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>ENUMERATOR_ACTION_REMOVE</td>
-<td>Reserved.</td>
-</tr>
+            
+                <tr>
+                    <td>ENUMERATOR_ACTION_CREATE</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ENUMERATOR_ACTION_DESTROY</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ENUMERATOR_ACTION_MAX</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>ENUMERATOR_ACTION_REMOVE</td>
+                    <td>Reserved.</td>
+                </tr>
 </table>
 
 
@@ -83,9 +88,9 @@ typedef enum _ENUMERATOR_ACTION {
 | **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+        <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
 
 <a href="..\bthddi\ns-bthddi-_brb.md">BRB</a>
 

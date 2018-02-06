@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcSetLogHandleForFile
-title : CcSetLogHandleForFile function
-author : windows-driver-content
-description : The CcSetLogHandleForFile routine sets a log handle for a file.
-old-location : ifsk\ccsetloghandleforfile.htm
-old-project : ifsk
-ms.assetid : 7bb56650-a75e-4b49-bfb3-83848ede29c0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcSetLogHandleForFile routine [Installable File System Drivers], ntifs/CcSetLogHandleForFile, ifsk.ccsetloghandleforfile, LogHandle, Lsn, ccref_e4928c2e-41c5-4744-83c6-9c22766e9cfa.xml, CcSetLogHandleForFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcSetLogHandleForFile
+title: CcSetLogHandleForFile function
+author: windows-driver-content
+description: The CcSetLogHandleForFile routine sets a log handle for a file.
+old-location: ifsk\ccsetloghandleforfile.htm
+old-project: ifsk
+ms.assetid: 7bb56650-a75e-4b49-bfb3-83848ede29c0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcSetLogHandleForFile routine [Installable File System Drivers], ntifs/CcSetLogHandleForFile, ifsk.ccsetloghandleforfile, LogHandle, Lsn, ccref_e4928c2e-41c5-4744-83c6-9c22766e9cfa.xml, CcSetLogHandleForFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcSetLogHandleForFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

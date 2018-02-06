@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DMA_OPERATIONS
-title : "_DMA_OPERATIONS"
-author : windows-driver-content
-description : The DMA_OPERATIONS structure provides a table of pointers to functions that control the operation of a DMA controller.
-old-location : kernel\dma_operations.htm
-old-project : kernel
-ms.assetid : b4a5d830-252b-410e-be2c-390371af971c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : DMA_OPERATIONS structure [Kernel-Mode Driver Architecture], kstruct_a_ace4fb72-3208-4f4a-9c36-5a1f5791451a.xml, DMA_OPERATIONS, _DMA_OPERATIONS, PDMA_OPERATIONS structure pointer [Kernel-Mode Driver Architecture], kernel.dma_operations, wdm/PDMA_OPERATIONS, wdm/DMA_OPERATIONS, PDMA_OPERATIONS, *PDMA_OPERATIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMA_OPERATIONS, *PDMA_OPERATIONS
-req.product : Windows 10 or later.
+UID: NS:wdm._DMA_OPERATIONS
+title: "_DMA_OPERATIONS"
+author: windows-driver-content
+description: The DMA_OPERATIONS structure provides a table of pointers to functions that control the operation of a DMA controller.
+old-location: kernel\dma_operations.htm
+old-project: kernel
+ms.assetid: b4a5d830-252b-410e-be2c-390371af971c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: DMA_OPERATIONS structure [Kernel-Mode Driver Architecture], kstruct_a_ace4fb72-3208-4f4a-9c36-5a1f5791451a.xml, DMA_OPERATIONS, _DMA_OPERATIONS, PDMA_OPERATIONS structure pointer [Kernel-Mode Driver Architecture], kernel.dma_operations, wdm/PDMA_OPERATIONS, wdm/DMA_OPERATIONS, PDMA_OPERATIONS, *PDMA_OPERATIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DMA_OPERATIONS
+product: Windows
+targetos: Windows
+req.typenames: DMA_OPERATIONS, *PDMA_OPERATIONS
+req.product: Windows 10 or later.
 ---
 
 # _DMA_OPERATIONS structure

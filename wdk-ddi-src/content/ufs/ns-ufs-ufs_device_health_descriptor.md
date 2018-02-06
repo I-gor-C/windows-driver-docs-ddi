@@ -1,42 +1,47 @@
 ---
-UID : NS:ufs.UFS_DEVICE_HEALTH_DESCRIPTOR
-title : UFS_DEVICE_HEALTH_DESCRIPTOR
-author : windows-driver-content
-description : The UFS_DEVICE_HEALTH_DESCRIPTOR structure describes the health of a device.
-old-location : storage\ufs_device_health_descriptor.htm
-old-project : storage
-ms.assetid : 6B085DBB-2AAA-4170-A2B1-EA4D2C207A24
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PUFS_DEVICE_HEALTH_DESCRIPTOR, ufs/UFS_DEVICE_HEALTH_DESCRIPTOR, ufs/PUFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR structure [Storage Devices], *PUFS_DEVICE_HEALTH_DESCRIPTOR, PUFS_DEVICE_HEALTH_DESCRIPTOR structure pointer [Storage Devices], storage.ufs_device_health_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ufs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:ufs.UFS_DEVICE_HEALTH_DESCRIPTOR
+title: UFS_DEVICE_HEALTH_DESCRIPTOR
+author: windows-driver-content
+description: The UFS_DEVICE_HEALTH_DESCRIPTOR structure describes the health of a device.
+old-location: storage\ufs_device_health_descriptor.htm
+old-project: storage
+ms.assetid: 6B085DBB-2AAA-4170-A2B1-EA4D2C207A24
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PUFS_DEVICE_HEALTH_DESCRIPTOR, ufs/UFS_DEVICE_HEALTH_DESCRIPTOR, ufs/PUFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR structure [Storage Devices], *PUFS_DEVICE_HEALTH_DESCRIPTOR, PUFS_DEVICE_HEALTH_DESCRIPTOR structure pointer [Storage Devices], storage.ufs_device_health_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ufs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ufs.h
+apiname:
+-	UFS_DEVICE_HEALTH_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # UFS_DEVICE_HEALTH_DESCRIPTOR structure

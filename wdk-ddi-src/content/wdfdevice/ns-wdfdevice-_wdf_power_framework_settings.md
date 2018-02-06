@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_POWER_FRAMEWORK_SETTINGS
-title : "_WDF_POWER_FRAMEWORK_SETTINGS"
-author : windows-driver-content
-description : The WDF_POWER_FRAMEWORK_SETTINGS structure describes power management framework (PoFx) settings for single-component devices.
-old-location : wdf\wdf_power_framework_settings.htm
-old-project : wdf
-ms.assetid : 2512682A-4E1C-453F-8C46-E8979E46B8EF
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_POWER_FRAMEWORK_SETTINGS, wdf.wdf_power_framework_settings, *PWDF_POWER_FRAMEWORK_SETTINGS, kmdf.wdf_power_framework_settings, _WDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS structure, PWDF_POWER_FRAMEWORK_SETTINGS structure pointer, wdfdevice/PWDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS, wdfdevice/WDF_POWER_FRAMEWORK_SETTINGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS"
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_POWER_FRAMEWORK_SETTINGS
+title: "_WDF_POWER_FRAMEWORK_SETTINGS"
+author: windows-driver-content
+description: The WDF_POWER_FRAMEWORK_SETTINGS structure describes power management framework (PoFx) settings for single-component devices.
+old-location: wdf\wdf_power_framework_settings.htm
+old-project: wdf
+ms.assetid: 2512682A-4E1C-453F-8C46-E8979E46B8EF
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_POWER_FRAMEWORK_SETTINGS, wdf.wdf_power_framework_settings, *PWDF_POWER_FRAMEWORK_SETTINGS, kmdf.wdf_power_framework_settings, _WDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS structure, PWDF_POWER_FRAMEWORK_SETTINGS structure pointer, wdfdevice/PWDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS, wdfdevice/WDF_POWER_FRAMEWORK_SETTINGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_POWER_FRAMEWORK_SETTINGS
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_POWER_FRAMEWORK_SETTINGS, WDF_POWER_FRAMEWORK_SETTINGS"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_POWER_FRAMEWORK_SETTINGS structure

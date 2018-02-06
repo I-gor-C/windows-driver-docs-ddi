@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxendpoint.UcxEndpointCreate
-title : UcxEndpointCreate function
-author : windows-driver-content
-description : Creates an endpoint on the specified USB device object.
-old-location : buses\_ucxendpointcreate.htm
-old-project : usbref
-ms.assetid : 2BB3B2CE-FD15-4D28-BBDA-29C3BB523874
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxendpoint/UcxEndpointCreate, UcxEndpointCreate, buses._ucxendpointcreate, UcxEndpointCreate method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxendpoint.UcxEndpointCreate
+title: UcxEndpointCreate function
+author: windows-driver-content
+description: Creates an endpoint on the specified USB device object.
+old-location: buses\_ucxendpointcreate.htm
+old-project: usbref
+ms.assetid: 2BB3B2CE-FD15-4D28-BBDA-29C3BB523874
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxendpoint/UcxEndpointCreate, UcxEndpointCreate, buses._ucxendpointcreate, UcxEndpointCreate method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	UcxEndpointCreate
+product: Windows
+targetos: Windows
+req.typenames: UCX_ENDPOINT_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

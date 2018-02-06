@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsRegisterWorker
-title : KsRegisterWorker function
-author : windows-driver-content
-description : The KsRegisterWorker function handles clients registering for use of a thread.
-old-location : stream\ksregisterworker.htm
-old-project : stream
-ms.assetid : b9c74a56-3f2c-4b94-8fb2-6b44075ec34b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksregisterworker, KsRegisterWorker function [Streaming Media Devices], ksfunc_c2cb48b6-6268-4d53-a81b-07c1984f80aa.xml, KsRegisterWorker, ks/KsRegisterWorker
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsRegisterWorker
+title: KsRegisterWorker function
+author: windows-driver-content
+description: The KsRegisterWorker function handles clients registering for use of a thread.
+old-location: stream\ksregisterworker.htm
+old-project: stream
+ms.assetid: b9c74a56-3f2c-4b94-8fb2-6b44075ec34b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksregisterworker, KsRegisterWorker function [Streaming Media Devices], ksfunc_c2cb48b6-6268-4d53-a81b-07c1984f80aa.xml, KsRegisterWorker, ks/KsRegisterWorker
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsRegisterWorker
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

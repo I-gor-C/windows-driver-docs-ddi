@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddsysenv._SYSENV_VARIABLE_INFO
-title : "_SYSENV_VARIABLE_INFO"
-author : windows-driver-content
-description : Stores the information about a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_QUERY_VARIABLE_INFO request.
-old-location : kernel\sysenv_variable_info.htm
-old-project : kernel
-ms.assetid : D9C7BB96-1E26-4D89-9CBE-074232FD0752
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.sysenv_variable_info, ntddsysenv/PSYSENV_VARIABLE_INFO, PSYSENV_VARIABLE_INFO, PSYSENV_VARIABLE_INFO structure pointer [Kernel-Mode Driver Architecture], *PSYSENV_VARIABLE_INFO, ntddsysenv/SYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO structure [Kernel-Mode Driver Architecture], SYSENV_VARIABLE_INFO, _SYSENV_VARIABLE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddsysenv.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO
+UID: NS:ntddsysenv._SYSENV_VARIABLE_INFO
+title: "_SYSENV_VARIABLE_INFO"
+author: windows-driver-content
+description: Stores the information about a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_QUERY_VARIABLE_INFO request.
+old-location: kernel\sysenv_variable_info.htm
+old-project: kernel
+ms.assetid: D9C7BB96-1E26-4D89-9CBE-074232FD0752
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.sysenv_variable_info, ntddsysenv/PSYSENV_VARIABLE_INFO, PSYSENV_VARIABLE_INFO, PSYSENV_VARIABLE_INFO structure pointer [Kernel-Mode Driver Architecture], *PSYSENV_VARIABLE_INFO, ntddsysenv/SYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO structure [Kernel-Mode Driver Architecture], SYSENV_VARIABLE_INFO, _SYSENV_VARIABLE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddsysenv.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddsysenv.h
+apiname:
+-	SYSENV_VARIABLE_INFO
+product: Windows
+targetos: Windows
+req.typenames: SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO
 ---
 
 # _SYSENV_VARIABLE_INFO structure

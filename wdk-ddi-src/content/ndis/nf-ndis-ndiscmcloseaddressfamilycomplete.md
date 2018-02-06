@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCmCloseAddressFamilyComplete
-title : NdisCmCloseAddressFamilyComplete function
-author : windows-driver-content
-description : NdisCmCloseAddressFamilyComplete returns the final status of a client's request, for which the CM's ProtocolCmCloseAf function returned NDIS_STATUS_PENDING, to close the AF.
-old-location : netvista\ndiscmcloseaddressfamilycomplete.htm
-old-project : netvista
-ms.assetid : 1aeb2ca5-8c56-4a78-8cd5-a178efa9b014
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisCmCloseAddressFamilyComplete function [Network Drivers Starting with Windows Vista], netvista.ndiscmcloseaddressfamilycomplete, condis_call_manager_ref_e8f3c7fa-1a6a-4cf4-9c3c-78f036c2e912.xml, NdisCmCloseAddressFamilyComplete, ndis/NdisCmCloseAddressFamilyComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_CallManager_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCmCloseAddressFamilyComplete
+title: NdisCmCloseAddressFamilyComplete function
+author: windows-driver-content
+description: NdisCmCloseAddressFamilyComplete returns the final status of a client's request, for which the CM's ProtocolCmCloseAf function returned NDIS_STATUS_PENDING, to close the AF.
+old-location: netvista\ndiscmcloseaddressfamilycomplete.htm
+old-project: netvista
+ms.assetid: 1aeb2ca5-8c56-4a78-8cd5-a178efa9b014
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisCmCloseAddressFamilyComplete function [Network Drivers Starting with Windows Vista], netvista.ndiscmcloseaddressfamilycomplete, condis_call_manager_ref_e8f3c7fa-1a6a-4cf4-9c3c-78f036c2e912.xml, NdisCmCloseAddressFamilyComplete, ndis/NdisCmCloseAddressFamilyComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_CallManager_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCmCloseAddressFamilyComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

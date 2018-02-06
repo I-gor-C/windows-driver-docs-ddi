@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETPIXELSHADERCONST
-title : "_D3DHAL_DP2SETPIXELSHADERCONST"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2SETPIXELSHADERCONST structure is used to set one or more of the pixel shader constant registers when the D3DDP2OP_SETPIXELSHADERCONST opcode is received by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2setpixelshaderconst.htm
-old-project : display
-ms.assetid : 8431fee3-d8c9-4c31-aa74-f5ce55f7fdcd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2SETPIXELSHADERCONST, _D3DHAL_DP2SETPIXELSHADERCONST, *LPD3DHAL_DP2SETPIXELSHADERCONSTB, d3dhal/D3DHAL_DP2SETPIXELSHADERCONST, *LPD3DHAL_DP2SETPIXELSHADERCONSTI, display.d3dhal_dp2setpixelshaderconst, D3DHAL_DP2SETPIXELSHADERCONSTB, *LPD3DHAL_DP2SETPIXELSHADERCONST, d3dstrct_927a3360-7000-4cf0-99c7-f02407ae63eb.xml, D3DHAL_DP2SETPIXELSHADERCONSTI, D3DHAL_DP2SETPIXELSHADERCONST structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETPIXELSHADERCONST
+UID: NS:d3dhal._D3DHAL_DP2SETPIXELSHADERCONST
+title: "_D3DHAL_DP2SETPIXELSHADERCONST"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2SETPIXELSHADERCONST structure is used to set one or more of the pixel shader constant registers when the D3DDP2OP_SETPIXELSHADERCONST opcode is received by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2setpixelshaderconst.htm
+old-project: display
+ms.assetid: 8431fee3-d8c9-4c31-aa74-f5ce55f7fdcd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2SETPIXELSHADERCONST, _D3DHAL_DP2SETPIXELSHADERCONST, *LPD3DHAL_DP2SETPIXELSHADERCONSTB, d3dhal/D3DHAL_DP2SETPIXELSHADERCONST, *LPD3DHAL_DP2SETPIXELSHADERCONSTI, display.d3dhal_dp2setpixelshaderconst, D3DHAL_DP2SETPIXELSHADERCONSTB, *LPD3DHAL_DP2SETPIXELSHADERCONST, d3dstrct_927a3360-7000-4cf0-99c7-f02407ae63eb.xml, D3DHAL_DP2SETPIXELSHADERCONSTI, D3DHAL_DP2SETPIXELSHADERCONST structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETPIXELSHADERCONST
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETPIXELSHADERCONST
 ---
 
 # _D3DHAL_DP2SETPIXELSHADERCONST structure
