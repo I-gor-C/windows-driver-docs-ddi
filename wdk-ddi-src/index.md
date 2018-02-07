@@ -49,7 +49,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                     </div>
                     <div class="cardText">
                         <h3>Download the Windows Driver Kit (WDK)</h3>
-                            <ul><li><a href="/windows-hardware/drivers/debugger/index">Debugging Tools for Windows</a></li><li><a href="/windows-hardware/drivers/ddi/content/_debugger/index">Debugger Reference</a></li></ul>
+                            <ul><li><a href="/windows-hardware/drivers/debugger/index">Debugging Tools for Windows</a></li><li><a href="/windows-hardware/drivers/ddi/content/_debugger/index">Debugger API Reference</a></li></ul>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardText">
                         <h3>System</h3>
-						<p><a href="/windows-hardware/drivers/ddi/content/_display/">Display</a></p><p><a href="/windows-hardware/drivers/ddi/content/_battery/">Battery</a></p><p><a href="/windows-hardware/drivers/ddi/content/_acpi/">ACPI</a></p><p><a href="/windows-hardware/drivers/ddi/content/_storage/">Storage</a></p><p><a href="/windows-hardware/drivers/ddi/content/_ifsk/">File system</a></p><p><a href="/windows-hardware/drivers/ddi/content/_gpiobtn/">Hardware notifications</a></p>
+						<p><a href="/windows-hardware/drivers/ddi/content/_display/">Display</a></p><p><a href="/windows-hardware/drivers/ddi/content/_battery/">Battery</a></p><p><a href="/windows-hardware/drivers/ddi/content/_acpi/">ACPI</a></p><p><a href="/windows-hardware/drivers/ddi/content/_storage/">Storage</a></p><p><a href="/windows-hardware/drivers/ddi/content/_ifsk/">File system</a></p><p><a href="/windows-hardware/drivers/ddi/content/_gpiobtn/">Hardware notifications</a></p><p><a href="/windows-hardware/drivers/ddi/content/_powermeter/">Power metering</a></p><p><a href="/windows-hardware/drivers/ddi/content/_biometric/">Biometric</a></p>
                      </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                 <div class="card">
                     <div class="cardText">
                         <h3>Connectivity </h3>
-                        <p><a href="/windows-hardware/drivers/ddi/content/_netvista/">Network</a></p><p><a                          href="/windows-hardware/drivers/ddi/content/_bltooth/">Bluetooth</a></p><p><a                            href="/windows-hardware/drivers/ddi/content/_nfpdrivers/">NFC</a></p>
+                        <p><a href="/windows-hardware/drivers/ddi/content/_netvista/">Network</a></p><p><a href="/windows-hardware/drivers/ddi/content/_bltooth/">Bluetooth</a></p><p><a href="/windows-hardware/drivers/ddi/content/_nfpdrivers/">NFC</a></p><p><a href="/windows-hardware/drivers/ddi/content/_smartcrd/">Smart Card Readers</a></p>
                     </div>
                 </div>
             </div>
