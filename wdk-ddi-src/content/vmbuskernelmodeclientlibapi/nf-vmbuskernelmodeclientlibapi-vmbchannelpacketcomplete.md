@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 1DC215DF-1F53-4910-84D5-17E13BE6202A
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelPacketComplete function [Network Drivers Starting with Windows Vista], VmbChannelPacketComplete, vmbuskernelmodeclientlibapi/VmbChannelPacketComplete, netvista.vmbchannelpacketcomplete
+ms.keywords: netvista.vmbchannelpacketcomplete, VmbChannelPacketComplete function [Network Drivers Starting with Windows Vista], VmbChannelPacketComplete, vmbuskernelmodeclientlibapi/VmbChannelPacketComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelPacketComplete
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

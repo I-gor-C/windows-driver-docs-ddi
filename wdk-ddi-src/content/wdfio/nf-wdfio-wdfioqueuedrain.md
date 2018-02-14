@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 376579c6-545d-4f5a-8ba4-0046c0b2b755
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfioqueuedrain, WdfIoQueueDrain method, wdfio/WdfIoQueueDrain, DFQueueObjectRef_39ca90c2-1fc9-4f1c-b05f-d46f668a3cd1.xml, PFN_WDFIOQUEUEDRAIN, wdf.wdfioqueuedrain, WdfIoQueueDrain
+ms.keywords: WdfIoQueueDrain, wdfio/WdfIoQueueDrain, kmdf.wdfioqueuedrain, DFQueueObjectRef_39ca90c2-1fc9-4f1c-b05f-d46f668a3cd1.xml, WdfIoQueueDrain method, wdf.wdfioqueuedrain, PFN_WDFIOQUEUEDRAIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,6 +98,26 @@ As a best practice, you should only call <b>WdfIoQueueDrain</b> when you are cer
 
 After a driver has drained an I/O queue, it can restart the queue by calling <a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>.
 
+
+#### Examples
+
+The following code example drains an I/O queue and calls a driver's <b>EvtIoQueueDrainComplete</b> function when all requests that were delivered to the driver have been completed or canceled.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfIoQueueDrain(
+                Queue,
+                EvtIoQueueDrainComplete,
+                (WDFCONTEXT) myQueueContext
+                );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -111,11 +131,17 @@ After a driver has drained an I/O queue, it can restart the queue by calling <a 
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuedrainsynchronously.md">WdfIoQueueDrainSynchronously</a>
-
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
+
+
 <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>
+
+
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuedrainsynchronously.md">WdfIoQueueDrainSynchronously</a>
+
+
 
  
 

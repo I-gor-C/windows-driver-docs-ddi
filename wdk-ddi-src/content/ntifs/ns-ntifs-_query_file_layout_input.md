@@ -7,8 +7,8 @@ old-location: ifsk\query_file_layout_input.htm
 old-project: ifsk
 ms.assetid: 7404BFC3-8942-4927-9F5B-9FA860F9F95F
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, PQUERY_FILE_LAYOUT_INPUT, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_STREAMS, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, ntifs/PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_NAMES, QUERY_FILE_LAYOUT_RESTART, _QUERY_FILE_LAYOUT_INPUT, ntifs/QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS
+ms.date: 2/7/2018
+ms.keywords: QUERY_FILE_LAYOUT_INCLUDE_STREAMS, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], ntifs/PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_INCLUDE_NAMES, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], ntifs/QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT, _QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_RESTART, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -72,6 +72,7 @@ This member is ignored if <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b> is specified
 `FilterType`
 
 Specifies a filtering method to restrict returned layout information. May be one of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -112,6 +113,7 @@ Restrict filter layout information to the ranges in <b>Filter.FileReferenceRange
 `Flags`
 
 Indicates which file layout entries are included in the query results. <b>Flags</b> is set to a valid combination of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -204,12 +206,16 @@ When <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>, the <b>
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
-
 <a href="..\ntifs\ns-ntifs-_query_file_layout_output.md">QUERY_FILE_LAYOUT_OUTPUT</a>
 
- 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

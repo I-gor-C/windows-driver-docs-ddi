@@ -2,7 +2,7 @@
 UID: TP:hid
 ms.assetid: 87c002be-da96-313a-bae1-c6a49c9ce065
 ms.author: windowsdriverdev
-ms.date: 01/19/18
+ms.date: 01/18/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,17 +84,17 @@ For the programming guide, see [Human Interface Devices (HID)](https://docs.micr
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_VHF_ASYNC_OPERATION function](..\vhf\nc-vhf-evt_vhf_async_operation.md) | The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports. |
-| [EVT_VHF_CLEANUP function](..\vhf\nc-vhf-evt_vhf_cleanup.md) | The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device. |
-| [EVT_VHF_READY_FOR_NEXT_READ_REPORT function](..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md) | The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF. |
-| [PI8042_ISR_WRITE_PORT callback function](..\ntdd8042\nc-ntdd8042-pi8042_isr_write_port.md) | The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback. |
-| [PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback function](..\ntdd8042\nc-ntdd8042-pi8042_keyboard_initialization_routine.md) | A PI8042_KEYBOARD_INITIALIZATION_ROUTINE-typed callback routine supplements the default initialization of a keyboard device by I8042prt. |
-| [PI8042_KEYBOARD_ISR callback function](..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md) | A PI8042_KEYBOARD_ISR-typed callback routine customizes the operation of the I8042prt keyboard ISR. |
-| [PI8042_MOUSE_ISR callback function](..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md) | A PI8042_MOUSE_ISR-typed callback routine customizes the operation of the I8042prt mouse ISR. |
-| [PI8042_QUEUE_PACKET callback function](..\ntdd8042\nc-ntdd8042-pi8042_queue_packet.md) | The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for processing by the ISR DPC of a keyboard or mouse device. I8042prt provides this callback. |
-| [PI8042_SYNCH_READ_PORT callback function](..\ntdd8042\nc-ntdd8042-pi8042_synch_read_port.md) | The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from an i8042 port. I8042prt supplies this callback. |
-| [PI8042_SYNCH_WRITE_PORT callback function](..\ntdd8042\nc-ntdd8042-pi8042_synch_write_port.md) | The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized write to an i8042 port. I8042prt supplies this routine. |
-| [PSERVICE_CALLBACK_ROUTINE callback function](..\kbdmou\nc-kbdmou-pservice_callback_routine.md) | A function driver calls the class service callback in its ISR dispatch completion routine. The class service callback transfers input data from the input data buffer of a device to the class data queue. |
+| [EVT_VHF_ASYNC_OPERATION callback](..\vhf\nc-vhf-evt_vhf_async_operation.md) | The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports. |
+| [EVT_VHF_CLEANUP callback](..\vhf\nc-vhf-evt_vhf_cleanup.md) | The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device. |
+| [EVT_VHF_READY_FOR_NEXT_READ_REPORT callback](..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md) | The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF. |
+| [PI8042_ISR_WRITE_PORT callback](..\ntdd8042\nc-ntdd8042-pi8042_isr_write_port.md) | The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback. |
+| [PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback](..\ntdd8042\nc-ntdd8042-pi8042_keyboard_initialization_routine.md) | A PI8042_KEYBOARD_INITIALIZATION_ROUTINE-typed callback routine supplements the default initialization of a keyboard device by I8042prt. |
+| [PI8042_KEYBOARD_ISR callback](..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md) | A PI8042_KEYBOARD_ISR-typed callback routine customizes the operation of the I8042prt keyboard ISR. |
+| [PI8042_MOUSE_ISR callback](..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md) | A PI8042_MOUSE_ISR-typed callback routine customizes the operation of the I8042prt mouse ISR. |
+| [PI8042_QUEUE_PACKET callback](..\ntdd8042\nc-ntdd8042-pi8042_queue_packet.md) | The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for processing by the ISR DPC of a keyboard or mouse device. I8042prt provides this callback. |
+| [PI8042_SYNCH_READ_PORT callback](..\ntdd8042\nc-ntdd8042-pi8042_synch_read_port.md) | The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from an i8042 port. I8042prt supplies this callback. |
+| [PI8042_SYNCH_WRITE_PORT callback](..\ntdd8042\nc-ntdd8042-pi8042_synch_write_port.md) | The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized write to an i8042 port. I8042prt supplies this routine. |
+| [PSERVICE_CALLBACK_ROUTINE callback](..\kbdmou\nc-kbdmou-pservice_callback_routine.md) | A function driver calls the class service callback in its ISR dispatch completion routine. The class service callback transfers input data from the input data buffer of a device to the class data queue. |
 
 ## Structures
 
@@ -130,9 +130,9 @@ For the programming guide, see [Human Interface Devices (HID)](https://docs.micr
 
 | Title   | Description   |
 | ---- |:---- |
-| [_HIDP_REPORT_TYPE Enumeration](..\hidpi\ne-hidpi-_hidp_report_type.md) | The HIDP_REPORT_TYPE enumeration type is used to specify a HID report type. |
-| [_KEYBOARD_SCAN_STATE Enumeration](..\ntdd8042\ne-ntdd8042-_keyboard_scan_state.md) | The KEYBOARD_SCAN_STATE enumeration type indicates the scan state of an input byte from a keyboard. |
-| [_MOUSE_STATE Enumeration](..\ntdd8042\ne-ntdd8042-_mouse_state.md) | The MOUSE_STATE enumeration type identifies the current state of input from a mouse. |
+| [_HIDP_REPORT_TYPE enumeration](..\hidpi\ne-hidpi-_hidp_report_type.md) | The HIDP_REPORT_TYPE enumeration type is used to specify a HID report type. |
+| [_KEYBOARD_SCAN_STATE enumeration](..\ntdd8042\ne-ntdd8042-_keyboard_scan_state.md) | The KEYBOARD_SCAN_STATE enumeration type indicates the scan state of an input byte from a keyboard. |
+| [_MOUSE_STATE enumeration](..\ntdd8042\ne-ntdd8042-_mouse_state.md) | The MOUSE_STATE enumeration type identifies the current state of input from a mouse. |
 
 ## I/O control codes
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_power_mgmt_mode_status_info, DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, _DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO
+ms.keywords: PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_power_mgmt_mode_status_info, DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -63,6 +63,7 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 `Header`
 
 The type, revision, and size of the DOT11_POWER_MGMT_MODE_STATUS_INFO structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -93,6 +94,7 @@ Reason that the device changed into the current power mode.
 `uPowerSaveLevel`
 
 One of the following values describing power saving levels:
+
 <table>
 <tr>
 <th>Value</th>

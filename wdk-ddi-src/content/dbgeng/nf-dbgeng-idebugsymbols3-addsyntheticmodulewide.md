@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: dc5dc9f4-53a6-468a-907c-9b271fed83aa
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.addsyntheticmodulewide, AddSyntheticModuleWide method [Windows Debugging], IDebugSymbols3 interface, AddSyntheticModuleWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AddSyntheticModuleWide method, IDebugSymbols3, dbgeng/IDebugSymbols3::AddSyntheticModuleWide, AddSyntheticModuleWide, IDebugSymbols3::AddSyntheticModuleWide
+ms.keywords: debugger.addsyntheticmodulewide, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModuleWide method, AddSyntheticModuleWide method [Windows Debugging], dbgeng/IDebugSymbols3::AddSyntheticModuleWide, AddSyntheticModuleWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::AddSyntheticModuleWide, AddSyntheticModuleWide, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -100,7 +100,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -121,11 +122,17 @@ For more information about synthetic modules, see <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
+
+
 
  
 

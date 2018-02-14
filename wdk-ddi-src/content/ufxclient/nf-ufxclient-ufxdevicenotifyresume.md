@@ -7,8 +7,8 @@ old-location: buses\ufxdevicenotifyresume.htm
 old-project: usbref
 ms.assetid: A89E9E65-937D-455F-A718-A6BC7611BB8F
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: buses.ufxdevicenotifyresume, ufxclient/UfxDeviceNotifyResume, UfxDeviceNotifyResume method [Buses], UfxDeviceNotifyResume
+ms.date: 2/8/2018
+ms.keywords: buses.ufxdevicenotifyresume, ufxclient/UfxDeviceNotifyResume, UfxDeviceNotifyResume, UfxDeviceNotifyResume method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ This method does not return a value.
 The client driver calls <b>UfxDeviceNotifyResume</b> when it receives a bus resume event. The controller should return to the same state it was in at the time of the bus resume event.
 
 The client driver typically calls <b>UfxDeviceNotifyResume</b> from its <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a> callback function.  The following example shows how to handle a resume event.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

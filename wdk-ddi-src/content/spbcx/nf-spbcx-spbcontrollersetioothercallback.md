@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 605E2353-8C82-4005-BB72-4CB44146A253
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SpbControllerSetIoOtherCallback method [Buses], SpbControllerSetIoOtherCallback, spbcx/SpbControllerSetIoOtherCallback, SPB.spbcontrollersetioothercallback
+ms.keywords: SpbControllerSetIoOtherCallback, SpbControllerSetIoOtherCallback method [Buses], SPB.spbcontrollersetioothercallback, spbcx/SpbControllerSetIoOtherCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	SpbControllerSetIoOtherCallback
 product: Windows
 targetos: Windows
-req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.typenames: "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -105,9 +105,15 @@ The SPB controller driver must call this method before it <i>commits</i> the dev
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450908">SpbControllerSetRequestAttributes</a>
+
 
 <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450908">SpbControllerSetRequestAttributes</a>
+
+
 
  
 

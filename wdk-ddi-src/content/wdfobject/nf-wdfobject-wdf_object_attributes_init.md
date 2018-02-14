@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: c8412ad0-a3c2-41cf-aed6-32b244bc3969
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdf_object_attributes_init, WDF_OBJECT_ATTRIBUTES_INIT function, DFGenObjectRef_2d1e5e34-5637-4301-807c-ad525d4cb34b.xml, WDF_OBJECT_ATTRIBUTES_INIT, wdfobject/WDF_OBJECT_ATTRIBUTES_INIT, kmdf.wdf_object_attributes_init
+ms.keywords: DFGenObjectRef_2d1e5e34-5637-4301-807c-ad525d4cb34b.xml, WDF_OBJECT_ATTRIBUTES_INIT function, wdfobject/WDF_OBJECT_ATTRIBUTES_INIT, kmdf.wdf_object_attributes_init, WDF_OBJECT_ATTRIBUTES_INIT, wdf.wdf_object_attributes_init
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,6 +87,8 @@ For code examples that use WDF_OBJECT_ATTRIBUTES_INIT, see <a href="..\wdfobject
 ## See Also
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
 
  
 

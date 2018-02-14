@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f4297e91-06ae-4c7a-87bc-12e3f5b0238c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], AtaPortRegistryControllerKeyWriteDeferred, storage.ataportregistrycontrollerkeywritedeferred, atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred
+ms.keywords: AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], AtaPortRegistryControllerKeyWriteDeferred, storage.ataportregistrycontrollerkeywritedeferred, irb/AtaPortRegistryControllerKeyWriteDeferred, atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,7 @@ Contains the name of the registry value to write to.
 `ValueType`
 
 Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -147,7 +148,11 @@ The buffer pointed to by <i>Buffer </i>must be allocated by using <a href="..\ir
 
 <a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
 
+
+
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+
+
 
  
 

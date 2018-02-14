@@ -40,7 +40,7 @@ apiname:
 -	CalcPrivateShaderSize(D3D11_1)
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -90,6 +90,8 @@ The size of the memory region that the driver requires for creating a shader.
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_stage_io_signatures.md">D3D11_1DDIARG_STAGE_IO_SIGNATURES</a>
+
+
 
  
 

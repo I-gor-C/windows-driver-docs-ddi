@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 98e93636-33e3-4642-a4fb-8590a7a0e784
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl4, SetTextMacroWide method [Windows Debugging], IDebugControl4::SetTextMacroWide, dbgeng/IDebugControl4::SetTextMacroWide, IDebugControl4 interface [Windows Debugging], SetTextMacroWide method, SetTextMacroWide method [Windows Debugging], IDebugControl4 interface, debugger.settextmacrowide, SetTextMacroWide
+ms.keywords: debugger.settextmacrowide, SetTextMacroWide method [Windows Debugging], dbgeng/IDebugControl4::SetTextMacroWide, SetTextMacroWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, SetTextMacroWide, IDebugControl4 interface [Windows Debugging], SetTextMacroWide method, IDebugControl4::SetTextMacroWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Specifies the new value of the alias specified by <i>Slot</i>.  The <a href="htt
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,15 +104,25 @@ For an overview of aliases used by the debugger engine, see <a href="https://msd
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549270">GetTextMacro</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554548">RemoveTextReplacements</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549270">GetTextMacro</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556818">SetTextReplacement</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
 
  
 

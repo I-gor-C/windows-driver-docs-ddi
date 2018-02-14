@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: aa40633e-1881-4bf4-a57b-f7ee3ce23438
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTWaitForVerticalBlankEvent, display.d3dkmtwaitforverticalblankevent, d3dkmthk/D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent function [Display Devices], OpenGL_Functions_9e2c6684-7429-43d7-b43a-0f11aea6807f.xml
+ms.keywords: d3dkmthk/D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent function [Display Devices], OpenGL_Functions_9e2c6684-7429-43d7-b43a-0f11aea6807f.xml, display.d3dkmtwaitforverticalblankevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTWaitForVerticalBlankEvent</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -106,7 +107,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -123,6 +125,8 @@ This function might also return other NTSTATUS values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforverticalblankevent.md">D3DKMT_WAITFORVERTICALBLANKEVENT</a>
+
+
 
  
 

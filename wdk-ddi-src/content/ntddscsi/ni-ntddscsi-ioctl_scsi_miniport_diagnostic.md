@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SCSI_MINIPORT_DIAGNOSTIC
 product: Windows
 targetos: Windows
-req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames: "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # IOCTL_SCSI_MINIPORT_DIAGNOSTIC IOCTL
@@ -70,7 +70,9 @@ The <b>IOCTL_SCSI_MINIPORT_DIAGNOSTIC</b>
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## Remarks
@@ -100,9 +102,13 @@ Parameters
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
+
+
+
 <a href="..\ntddscsi\ns-ntddscsi-_storage_diagnostic_mp_request.md">STORAGE_DIAGNOSTIC_MP_REQUEST</a>
 
-<a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
+
 
  
 

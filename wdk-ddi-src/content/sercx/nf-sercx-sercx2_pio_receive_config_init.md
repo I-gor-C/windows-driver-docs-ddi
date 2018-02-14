@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 08FBBC1D-EB2A-4178-9245-C3FF60424F95
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: serports.sercx2_pio_receive_config_init, 2/SERCX2_PIO_RECEIVE_CONFIG_INIT, SERCX2_PIO_RECEIVE_CONFIG_INIT, SERCX2_PIO_RECEIVE_CONFIG_INIT function [Serial Ports]
+ms.keywords: 2/SERCX2_PIO_RECEIVE_CONFIG_INIT, serports.sercx2_pio_receive_config_init, SERCX2_PIO_RECEIVE_CONFIG_INIT function [Serial Ports], SERCX2_PIO_RECEIVE_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,9 +99,13 @@ Your serial controller driver must use this function to initialize a <a href="..
 
 ## See Also
 
+<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
+
+
+
 <a href="..\sercx\ns-sercx-_sercx2_pio_receive_config.md">SERCX2_PIO_RECEIVE_CONFIG</a>
 
-<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
+
 
  
 

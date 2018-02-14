@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 843050e1-a1ec-4313-b527-529c4ff6ca07
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: condis_mcm_ref_b5a94c5f-7483-44dd-8167-6e64f52cada6.xml, NdisMCmDispatchIncomingCloseCall, ndis/NdisMCmDispatchIncomingCloseCall, NdisMCmDispatchIncomingCloseCall macro [Network Drivers Starting with Windows Vista], netvista.ndismcmdispatchincomingclosecall
+ms.keywords: netvista.ndismcmdispatchincomingclosecall, NdisMCmDispatchIncomingCloseCall, ndis/NdisMCmDispatchIncomingCloseCall, NdisMCmDispatchIncomingCloseCall macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_b5a94c5f-7483-44dd-8167-6e64f52cada6.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	NdisMCmDispatchIncomingCloseCall
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -92,6 +92,7 @@ In the course of normal network operations, an MCM driver calls
 
 However, an MCM driver also can call 
     <b>NdisMCmDispatchIncomingCloseCall</b> if either of the following occur:
+
 <ul>
 <li>
 The MCM driver has notified a client of an incoming call offer. When the miniport driver's 
@@ -111,7 +112,8 @@ Abormal network conditions force the MCM driver to tear down active calls. For e
       transfers on such a broken connection.
 
 </li>
-</ul>After the client calls 
+</ul>
+After the client calls 
     <b>NdisClCloseCall</b> thereby causing the deactivation of the VC, the original creator of the VC is
     responsible for destroying the VC. Either the client calls 
     <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>, which causes NDIS to call
@@ -144,22 +146,38 @@ Only connection-oriented miniport drivers that provide call-management support c
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
-
-<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-
 <a href="..\ndis\nf-ndis-ndismcmdispatchincomingdropparty.md">
    NdisMCmDispatchIncomingDropParty</a>
 
-<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
+
+
 
 <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
 
+
+
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+
+
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+
 
  
 

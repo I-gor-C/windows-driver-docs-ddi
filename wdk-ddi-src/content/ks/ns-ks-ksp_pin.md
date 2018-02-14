@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0be4c4e1-6ea6-4439-841d-088cb1902604
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks/KSP_PIN, KSP_PIN, *PKSP_PIN, PKSP_PIN, PKSP_PIN structure pointer [Streaming Media Devices], ks-struct_02faf16f-fb8d-4f1f-9176-e2c379a36d4e.xml, ks/PKSP_PIN, stream.ksp_pin, KSP_PIN structure [Streaming Media Devices], KSPROPERTY_PIN_FLAGS_ATTRIBUTE_RANGE_AWARE
+ms.keywords: PKSP_PIN structure pointer [Streaming Media Devices], KSP_PIN structure [Streaming Media Devices], ks/PKSP_PIN, *PKSP_PIN, KSP_PIN, stream.ksp_pin, ks-struct_02faf16f-fb8d-4f1f-9176-e2c379a36d4e.xml, KSPROPERTY_PIN_FLAGS_ATTRIBUTE_RANGE_AWARE, ks/KSP_PIN, PKSP_PIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,6 +79,8 @@ Specifies a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> struct
 ## See Also
 
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+
 
  
 

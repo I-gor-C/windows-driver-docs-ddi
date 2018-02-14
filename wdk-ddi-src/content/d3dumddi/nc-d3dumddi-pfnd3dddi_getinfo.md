@@ -83,6 +83,7 @@ The size, in bytes, of the buffer that is supplied by <i>pDevInfoStruct</i>.
 ## Return Value
 
 <i>GetInfo</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -138,9 +139,13 @@ The Direct3D 8 runtime sets the D3DDDIDEVINFOID_VCACHE flag in the <i>DevInfoID<
 
 ## See Also
 
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddidevinfo_vcache.md">D3DDDIDEVINFO_VCACHE</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
 
  
 

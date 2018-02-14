@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 4c1284da-b086-46f3-aeea-0afe6a2f1031
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetSymbolModuleWide, GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3, IDebugSymbols3::GetSymbolModuleWide, debugger.getsymbolmodulewide, dbgeng/IDebugSymbols3::GetSymbolModuleWide, IDebugSymbols3 interface [Windows Debugging], GetSymbolModuleWide method
+ms.keywords: GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSymbolModuleWide, GetSymbolModuleWide, debugger.getsymbolmodulewide, GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetSymbolModuleWide method, dbgeng/IDebugSymbols3::GetSymbolModuleWide, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Receives the location in the target's memory address space of the base of the mo
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>

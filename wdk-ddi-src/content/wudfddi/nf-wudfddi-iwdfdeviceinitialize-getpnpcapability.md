@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 64f15528-e934-4bdd-a9f7-6790eef7c7c5
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: GetPnpCapability method, umdf.iwdfdeviceinitialize_getpnpcapability, IWDFDeviceInitialize interface, GetPnpCapability method, GetPnpCapability method, IWDFDeviceInitialize interface, GetPnpCapability, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, IWDFDeviceInitialize::GetPnpCapability, IWDFDeviceInitialize, wudfddi/IWDFDeviceInitialize::GetPnpCapability, wdf.iwdfdeviceinitialize_getpnpcapability
+ms.keywords: IWDFDeviceInitialize interface, GetPnpCapability method, GetPnpCapability method, IWDFDeviceInitialize interface, GetPnpCapability, IWDFDeviceInitialize, wdf.iwdfdeviceinitialize_getpnpcapability, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, GetPnpCapability method, umdf.iwdfdeviceinitialize_getpnpcapability, IWDFDeviceInitialize::GetPnpCapability, wudfddi/IWDFDeviceInitialize::GetPnpCapability
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -68,6 +68,7 @@ A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAP
 ## Return Value
 
 <b>GetPnpCapability</b> returns one of the following WDF_TRI_STATE-typed values that identifies the state of the PnP capability that is specified in the <i>Capability</i> parameter:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -121,11 +122,17 @@ The capability is set.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556993">IWDFDeviceInitialize::SetPnpCapability</a>
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAPABILITY</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556993">IWDFDeviceInitialize::SetPnpCapability</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: db3d2e34-3d83-423d-b446-2800d53a8220
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.psgetversion, k108_3c73c1e7-3f02-4598-adae-43c378dcfb08.xml, PsGetVersion function [Kernel-Mode Driver Architecture], wdm/PsGetVersion, PsGetVersion
+ms.keywords: k108_3c73c1e7-3f02-4598-adae-43c378dcfb08.xml, kernel.psgetversion, PsGetVersion, PsGetVersion function [Kernel-Mode Driver Architecture], wdm/PsGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,7 @@ Points to a caller-allocated buffer in which this routine returns the current se
 ## Return Value
 
 <b>PsGetVersion</b> returns whether the system is a checked or free build, as follows:
+
 <table>
 <tr>
 <th>Return code</th>

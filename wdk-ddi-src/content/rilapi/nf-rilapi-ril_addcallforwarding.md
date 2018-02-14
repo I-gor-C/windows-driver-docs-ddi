@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 86b08757-bbc0-4f19-8153-c6ecae158cf2
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ril_addcallforwarding, rilapi/RIL_AddCallForwarding, RIL_AddCallForwarding, RIL_AddCallForwarding method [Network Drivers Starting with Windows Vista]
+ms.keywords: RIL_AddCallForwarding, RIL_AddCallForwarding method [Network Drivers Starting with Windows Vista], netvista.ril_addcallforwarding, rilapi/RIL_AddCallForwarding
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

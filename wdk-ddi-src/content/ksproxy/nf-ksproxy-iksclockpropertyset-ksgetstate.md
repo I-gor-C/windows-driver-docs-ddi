@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 153e4f47-ae07-4f1e-9ab5-69ef6565ad5d
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsGetState method [Streaming Media Devices], IKsClockPropertySet interface, ksproxy_d14aea61-913f-44f9-8fc0-08d31b9e8e50.xml, IKsClockPropertySet, stream.iksclockpropertyset_ksgetstate, KsGetState, IKsClockPropertySet interface [Streaming Media Devices], KsGetState method, IKsClockPropertySet::KsGetState, KsGetState method [Streaming Media Devices], ksproxy/IKsClockPropertySet::KsGetState
+ms.keywords: KsGetState method [Streaming Media Devices], IKsClockPropertySet interface, KsGetState method [Streaming Media Devices], KsGetState, ksproxy/IKsClockPropertySet::KsGetState, ksproxy_d14aea61-913f-44f9-8fc0-08d31b9e8e50.xml, stream.iksclockpropertyset_ksgetstate, IKsClockPropertySet::KsGetState, IKsClockPropertySet interface [Streaming Media Devices], KsGetState method, IKsClockPropertySet
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -60,6 +60,7 @@ HRESULT KsGetState(
 `State`
 
 Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumerated type:
+
 <table>
 <tr>
 <th>Value</th>

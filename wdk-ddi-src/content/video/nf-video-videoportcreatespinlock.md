@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: bb5f3b3e-3358-4181-9c4d-1871be1a7b7b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml, VideoPortCreateSpinLock, display.videoportcreatespinlock, video/VideoPortCreateSpinLock, VideoPortCreateSpinLock function [Display Devices]
+ms.keywords: display.videoportcreatespinlock, VideoPortCreateSpinLock function [Display Devices], VideoPortCreateSpinLock, video/VideoPortCreateSpinLock, VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,9 +88,13 @@ This routine must be called before an initial call to <a href="..\video\nf-video
 
 ## See Also
 
+<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+
+
+
 <a href="..\video\nf-video-videoportdeletespinlock.md">VideoPortDeleteSpinLock</a>
 
-<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+
 
  
 

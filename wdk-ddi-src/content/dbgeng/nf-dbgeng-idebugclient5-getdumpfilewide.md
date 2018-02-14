@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 42acd24e-5952-46b3-bb0b-1eb43125fccd
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetDumpFileWide method [Windows Debugging], IDebugClient5 interface, IDebugClient4 interface [Windows Debugging], GetDumpFileWide method, debugger.getdumpfilewide, IDebugClient5::GetDumpFileWide, dbgeng/IDebugClient5::GetDumpFileWide, IDebugClient5, GetDumpFileWide, GetDumpFileWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::GetDumpFileWide, GetDumpFileWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], GetDumpFileWide method, IDebugClient4::GetDumpFileWide
+ms.keywords: IDebugClient4, GetDumpFileWide method [Windows Debugging], IDebugClient5, GetDumpFileWide, debugger.getdumpfilewide, GetDumpFileWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4 interface [Windows Debugging], GetDumpFileWide method, dbgeng/IDebugClient5::GetDumpFileWide, IDebugClient5 interface [Windows Debugging], GetDumpFileWide method, IDebugClient4::GetDumpFileWide, dbgeng/IDebugClient4::GetDumpFileWide, IDebugClient5::GetDumpFileWide, GetDumpFileWide method [Windows Debugging], IDebugClient5 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -91,6 +91,7 @@ Receives the type of the file.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,15 +123,25 @@ For more information about crash dump files, see <a href="https://msdn.microsoft
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547887">GetNumberDumpFiles</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537874">AddDumpInformationFileWide</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+
 
  
 

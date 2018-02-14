@@ -91,6 +91,8 @@ A handle to the display device (graphics context).
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
+
+
  
 
  

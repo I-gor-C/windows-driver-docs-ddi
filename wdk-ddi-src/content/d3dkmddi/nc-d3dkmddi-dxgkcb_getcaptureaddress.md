@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 <b>DxgkCbGetCaptureAddress</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -92,7 +93,8 @@ The allocation handle that is specified in the <b>hAllocation</b> member of the 
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <i>DxgkCbGetCaptureAddress</i> might also return other error codes that are defined in Ntstatus.h.
 
@@ -108,6 +110,8 @@ The allocation handle that is specified in the <b>hAllocation</b> member of the 
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_getcaptureaddress.md">DXGKARGCB_GETCAPTUREADDRESS</a>
+
+
 
  
 

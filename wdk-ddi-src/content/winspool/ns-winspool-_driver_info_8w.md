@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 95f62d57-300a-4179-868b-f14f29c58b4d
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: DRIVER_INFO_8 structure [Print Devices], print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, winspool/PDRIVER_INFO_8, LPDRIVER_INFO_8, PDRIVER_INFO_8 structure pointer [Print Devices], _DRIVER_INFO_8A, winspool/LPDRIVER_INFO_8, winspool/DRIVER_INFO_8, *LPDRIVER_INFO_8A, DRIVER_INFO_8A, DRIVER_INFO_8, LPDRIVER_INFO_8 structure pointer [Print Devices], *PDRIVER_INFO_8A, *LPDRIVER_INFO_8W, print.driver_info_8, PDRIVER_INFO_8, DRIVER_INFO_8W, _DRIVER_INFO_8W, *PDRIVER_INFO_8W
+ms.keywords: PDRIVER_INFO_8, DRIVER_INFO_8 structure [Print Devices], DRIVER_INFO_8A, PDRIVER_INFO_8 structure pointer [Print Devices], LPDRIVER_INFO_8 structure pointer [Print Devices], *PDRIVER_INFO_8A, *PDRIVER_INFO_8W, DRIVER_INFO_8W, print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, winspool/LPDRIVER_INFO_8, *LPDRIVER_INFO_8W, _DRIVER_INFO_8W, winspool/PDRIVER_INFO_8, winspool/DRIVER_INFO_8, print.driver_info_8, *LPDRIVER_INFO_8A, DRIVER_INFO_8, LPDRIVER_INFO_8, _DRIVER_INFO_8A
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DRIVER_INFO_8
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -84,6 +84,7 @@ typedef struct _DRIVER_INFO_8 {
 `cVersion`
 
 This member specifies the operating system version for which the driver was written. Currently it can be the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -113,6 +114,7 @@ The earliest allowed version of any drivers that shipped with Windows and on whi
 
 This member specifies printer driver related properties. Must be zero if using the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183346(v=vs.85).aspx">AddPrinterDriver</a> or <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd183347(v=vs.85).aspx">AddPrinterDriverEx</a> functions with DRIVER_INFO_8. The following table shows the flags that have been defined for the <i>dwPrinterDriverAttributes</i> parameter.
 	  
+
 <table>
 <tr>
 <th>Flag name/value</th>

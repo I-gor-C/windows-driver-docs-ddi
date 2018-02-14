@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 246211E7-89A9-4916-BF6E-5771B911CBA3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/PoFxIssueComponentPerfStateChangeMultiple, PO_FX_FLAG_ASYNC_ONLY, kernel.pofxissuecomponentperfstatechangemultiple, PoFxIssueComponentPerfStateChangeMultiple, PO_FX_FLAG_BLOCKING, PoFxIssueComponentPerfStateChangeMultiple routine [Kernel-Mode Driver Architecture]
+ms.keywords: PoFxIssueComponentPerfStateChangeMultiple routine [Kernel-Mode Driver Architecture], wdm/PoFxIssueComponentPerfStateChangeMultiple, PO_FX_FLAG_BLOCKING, kernel.pofxissuecomponentperfstatechangemultiple, PO_FX_FLAG_ASYNC_ONLY, PoFxIssueComponentPerfStateChangeMultiple
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A handle that represents the registration of the device with PoFx. The device dr
 The flags that modify the behavior of the performance state change operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:
 
 These two flag bits are mutually exclusive. For more information, see Remarks.
+
 <table>
 <tr>
 <th>Value</th>
@@ -151,15 +152,25 @@ Only a single call of the <b>PoFxIssueComponentPerfStateChangeMultiple</b> routi
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechange.md">PoFxIssueComponentPerfStateChange</a>
+<a href="..\wdm\ne-wdm-_po_fx_perf_state_type.md">PO_FX_PERF_STATE_TYPE</a>
+
+
 
 <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
 
+
+
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
+
+
+
+<a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechange.md">PoFxIssueComponentPerfStateChange</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a>
 
-<a href="..\wdm\ne-wdm-_po_fx_perf_state_type.md">PO_FX_PERF_STATE_TYPE</a>
+
 
  
 

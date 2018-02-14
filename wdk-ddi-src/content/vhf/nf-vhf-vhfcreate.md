@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 11A98BBE-2609-4E55-8988-42620EB15281
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hid.vhfcreate, VhfCreate method [Human Input Devices], vhf/VhfCreate, VhfCreate
+ms.keywords: vhf/VhfCreate, VhfCreate, hid.vhfcreate, VhfCreate method [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,6 +92,8 @@ VHF does not invoke any callback functions that are specified in <a href="..\vhf
 ## See Also
 
 <a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+
+
 
  
 

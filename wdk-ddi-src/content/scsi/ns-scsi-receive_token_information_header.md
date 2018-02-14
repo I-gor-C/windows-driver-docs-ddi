@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3D8BF059-2063-499E-B287-41EE184A2264
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: scsi/PRECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER, PRECEIVE_TOKEN_INFORMATION_HEADER, SERVICE_ACTION_POPULATE_TOKEN, SERVICE_ACTION_WRITE_USING_TOKEN, TRANSFER_COUNT_UNITS_GIBIBYTES, storage.receive_token_information_header, TRANSFER_COUNT_UNITS_PEBIBYTES, TRANSFER_COUNT_UNITS_BYTES, TRANSFER_COUNT_UNITS_TEBIBYTES, scsi/RECEIVE_TOKEN_INFORMATION_HEADER, PRECEIVE_TOKEN_INFORMATION_HEADER structure pointer [Storage Devices], TRANSFER_COUNT_UNITS_NUMBER_BLOCKS, *PRECEIVE_TOKEN_INFORMATION_HEADER, TRANSFER_COUNT_UNITS_MEBIBYTES, RECEIVE_TOKEN_INFORMATION_HEADER structure [Storage Devices], TRANSFER_COUNT_UNITS_EXBIBYTES, TRANSFER_COUNT_UNITS_KIBIBYTES
+ms.keywords: TRANSFER_COUNT_UNITS_GIBIBYTES, RECEIVE_TOKEN_INFORMATION_HEADER, *PRECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER structure [Storage Devices], TRANSFER_COUNT_UNITS_PEBIBYTES, TRANSFER_COUNT_UNITS_NUMBER_BLOCKS, SERVICE_ACTION_POPULATE_TOKEN, TRANSFER_COUNT_UNITS_TEBIBYTES, scsi/PRECEIVE_TOKEN_INFORMATION_HEADER, PRECEIVE_TOKEN_INFORMATION_HEADER, PRECEIVE_TOKEN_INFORMATION_HEADER structure pointer [Storage Devices], scsi/RECEIVE_TOKEN_INFORMATION_HEADER, TRANSFER_COUNT_UNITS_MEBIBYTES, TRANSFER_COUNT_UNITS_EXBIBYTES, storage.receive_token_information_header, SERVICE_ACTION_WRITE_USING_TOKEN, TRANSFER_COUNT_UNITS_KIBIBYTES, TRANSFER_COUNT_UNITS_BYTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -90,6 +90,7 @@ The number of commands processed for the current copy operation.
 `OperationStatus`
 
 The current status of the copy operation. The status can be one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -189,6 +190,7 @@ Reserved.
 `ResponseToServiceAction`
 
 A response code indicating which command action the response is for. The service action codes are the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -239,6 +241,7 @@ The length of data transferred in the operation. The unit type in <b>TransferCou
 `TransferCountUnits`
 
 The byte units applied to <i>TransferCount</i>. Each unit expansion is a exponent in base 2. The multiplier value of <b>TRANSFER_COUNT_UNITS_KIBIBYTES</b>, for example, is 1024 and not 1000. The defined units are the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -340,6 +343,8 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 ## See Also
 
 <a href="..\scsi\ns-scsi-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
+
+
 
  
 

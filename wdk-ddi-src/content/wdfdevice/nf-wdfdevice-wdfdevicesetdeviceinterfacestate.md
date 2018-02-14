@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 345003fc-fdc3-4529-bb15-c9e380e77bba
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfdevicesetdeviceinterfacestate, kmdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState method, PFN_WDFDEVICESETDEVICEINTERFACESTATE, WdfDeviceSetDeviceInterfaceState, DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml, wdfdevice/WdfDeviceSetDeviceInterfaceState
+ms.keywords: wdf.wdfdevicesetdeviceinterfacestate, wdfdevice/WdfDeviceSetDeviceInterfaceState, kmdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState method, WdfDeviceSetDeviceInterfaceState, PFN_WDFDEVICESETDEVICEINTERFACESTATE, DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,27 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 For more information about device interfaces and the <b>WdfDeviceSetDeviceInterfaceState</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces">Using Device Interfaces</a>.
 
+
+#### Examples
+
+The following code example disables a driver's COM port interface.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceSetDeviceInterfaceState (
+                                  Device,
+                                  (LPGUID) &amp;GUID_DEVINTERFACE_COMPORT,
+                                  NULL,
+                                  FALSE
+                                  );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -106,9 +127,13 @@ For more information about device interfaces and the <b>WdfDeviceSetDeviceInterf
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
+
 
  
 

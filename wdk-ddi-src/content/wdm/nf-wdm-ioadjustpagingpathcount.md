@@ -91,7 +91,11 @@ This routine can be used for other counters, such as counters for hibernation fi
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550841">IRP_MN_DEVICE_USAGE_NOTIFICATION</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>
+
+
 
  
 

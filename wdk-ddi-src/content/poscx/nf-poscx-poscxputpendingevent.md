@@ -97,6 +97,7 @@ The event attributes.
 ## Return Value
 
 Possible return values are:
+
 <table>
 <tr>
 <td><b>STATUS_SUCCESS</b></td>
@@ -125,6 +126,8 @@ Possible return values are:
 ## See Also
 
 <a href="..\poscx\ne-poscx-_pos_cx_event_attributes.md">POS_CX_EVENT_ATTRIBUTES</a>
+
+
 
  
 

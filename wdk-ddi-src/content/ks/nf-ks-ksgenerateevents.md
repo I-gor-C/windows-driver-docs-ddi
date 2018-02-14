@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3c96012f-8307-417c-be8f-bb466c576669
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsGenerateEvents function [Streaming Media Devices], stream.ksgenerateevents, ks/KsGenerateEvents, avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml, KsGenerateEvents
+ms.keywords: ks/KsGenerateEvents, stream.ksgenerateevents, KsGenerateEvents function [Streaming Media Devices], KsGenerateEvents, avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -106,6 +106,7 @@ Minidrivers typically do not call this function directly and instead use one of 
 An event is generated if it is present in <i>Object's </i>event list and <i>EventId </i>matches the event's ID, <i>EventSet</i> either matches the event's set GUID or is <b>NULL</b>, and <i>CallBack </i>is either <b>NULL</b> or authorizes the match.
 
 <i>CallBack</i> is a caller-specified callback used for additional match determination. It is prototyped as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -115,7 +116,8 @@ An event is generated if it is present in <i>Object's </i>event list and <i>Even
 <pre>BOOLEAN CallBack (IN PVOID Context, IN PKSEVENT_ENTRY EventEntry);</pre>
 </td>
 </tr>
-</table></span></div>AVStream passes the contents of the <b>KsGenerateEvents</b> routine's parameter <i>CallBackContext</i> in this callback's <i>Context</i> parameter. <i>EventEntry</i> is a pointer to a <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure that specifies the event that would be generated. The callback function should return <b>TRUE</b> if this event should be generated.
+</table></span></div>
+AVStream passes the contents of the <b>KsGenerateEvents</b> routine's parameter <i>CallBackContext</i> in this callback's <i>Context</i> parameter. <i>EventEntry</i> is a pointer to a <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure that specifies the event that would be generated. The callback function should return <b>TRUE</b> if this event should be generated.
 
 For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> and <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>.
 
@@ -130,13 +132,21 @@ For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
+
+
+
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
+
+
 
 <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 
-<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
+
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
+
+
 
  
 

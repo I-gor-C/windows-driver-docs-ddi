@@ -7,8 +7,8 @@ old-location: buses\usbfn_notification.htm
 old-project: usbref
 ms.assetid: 84B66823-F357-44DD-A401-79E27FA6B324
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: usbfnbase/PUSBFN_NOTIFICATION, buses.usbfn_notification, PUSBFN_NOTIFICATION, USBFN_NOTIFICATION structure [Buses], _USBFN_NOTIFICATION, usbfnbase/USBFN_NOTIFICATION, PUSBFN_NOTIFICATION structure pointer [Buses], *PUSBFN_NOTIFICATION, USBFN_NOTIFICATION
+ms.date: 2/8/2018
+ms.keywords: buses.usbfn_notification, PUSBFN_NOTIFICATION structure pointer [Buses], USBFN_NOTIFICATION structure [Buses], _USBFN_NOTIFICATION, PUSBFN_NOTIFICATION, *PUSBFN_NOTIFICATION, usbfnbase/PUSBFN_NOTIFICATION, USBFN_NOTIFICATION, usbfnbase/USBFN_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

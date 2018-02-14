@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 26399c62-c17a-40ad-964e-144badc55614
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "*LPRILTDSCDMAMRL, netvista.riltdscdmamrl, RILTDSCDMAMRL, RILTDSCDMAMRL structure [Network Drivers Starting with Windows Vista], rilapitypes/RILTDSCDMAMRL"
+ms.keywords: "*LPRILTDSCDMAMRL, netvista.riltdscdmamrl, rilapitypes/RILTDSCDMAMRL, RILTDSCDMAMRL, RILTDSCDMAMRL structure [Network Drivers Starting with Windows Vista]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	RILTDSCDMAMRL
 product: Windows
 targetos: Windows
-req.typenames: RILTDSCDMAMRL, *LPRILTDSCDMAMRL
+req.typenames: "*LPRILTDSCDMAMRL, RILTDSCDMAMRL"
 req.product: Windows 10 or later.
 ---
 
@@ -110,6 +110,8 @@ Channel number (0...16383).
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+
+
 
  
 

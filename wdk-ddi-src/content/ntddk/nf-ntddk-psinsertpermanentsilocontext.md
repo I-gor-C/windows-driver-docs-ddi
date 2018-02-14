@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ADBAB25B-7646-4E0E-AFD8-18B87A293674
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PsInsertPermanentSiloContext, PsInsertPermanentSiloContext routine [Kernel-Mode Driver Architecture], kernel.psinsertpermanentsilocontext, ntddk/PsInsertPermanentSiloContext
+ms.keywords: PsInsertPermanentSiloContext, kernel.psinsertpermanentsilocontext, ntddk/PsInsertPermanentSiloContext, PsInsertPermanentSiloContext routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsInsertPermanentSiloContext
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,6 +75,7 @@ The object to be inserted, created by the <a href="..\ntddk\nf-ntddk-pscreatesil
 ## Return Value
 
 The following NT status codes are returned.
+
 <table>
 <tr>
 <th>Return code</th>

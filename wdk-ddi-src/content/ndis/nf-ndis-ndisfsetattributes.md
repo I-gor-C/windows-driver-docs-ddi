@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 66e20ac3-e97d-429d-868e-79c04881702b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisFSetAttributes, ndis/NdisFSetAttributes, NdisFSetAttributes function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_67ad6b8c-e7ae-45d7-9213-48e8a2b6c2ff.xml, netvista.ndisfsetattributes
+ms.keywords: netvista.ndisfsetattributes, NdisFSetAttributes, NdisFSetAttributes function [Network Drivers Starting with Windows Vista], ndis/NdisFSetAttributes, filter_ndis_functions_ref_67ad6b8c-e7ae-45d7-9213-48e8a2b6c2ff.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisFSetAttributes
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -81,6 +81,7 @@ A pointer to a filter driver allocated
 ## Return Value
 
 <b>NdisFSetAttributes</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -148,9 +149,15 @@ A filter driver calls
 
 <a href="..\ndis\ns-ndis-_ndis_filter_attributes.md">NDIS_FILTER_ATTRIBUTES</a>
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
 
 <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">FilterSendNetBufferLists</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+
 
  
 

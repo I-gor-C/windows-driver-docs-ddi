@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 03f49658-ec51-4869-bba8-832c6856c4b0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: safestrings_6724eedb-4d8d-490a-aac8-81c5c95ca3df.xml, RtlUnalignedStringCbLengthW, RtlUnalignedStringCbLength, ntstrsafe/RtlUnalignedStringCbLengthW, RtlUnalignedStringCbLengthW function [Kernel-Mode Driver Architecture], kernel.rtlunalignedstringcblength
+ms.keywords: RtlUnalignedStringCbLength, RtlUnalignedStringCbLengthW, ntstrsafe/RtlUnalignedStringCbLengthW, kernel.rtlunalignedstringcblength, safestrings_6724eedb-4d8d-490a-aac8-81c5c95ca3df.xml, RtlUnalignedStringCbLengthW function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RtlUnalignedStringCbLengthW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -76,6 +76,7 @@ Optional. If the caller supplies a non-<b>NULL</b> address pointer, the function
 ## Return Value
 
 <b>RtlUnalignedStringCbLengthW</b> returns one of the following NTSTATUS values. 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,7 +104,8 @@ This <i>error</i> status means the value in <i>psz</i> is <b>NULL</b>, <i>cbMax<
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
@@ -125,6 +127,8 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## See Also
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcblengthw.md">RtlStringCbLength</a>
+
+
 
  
 

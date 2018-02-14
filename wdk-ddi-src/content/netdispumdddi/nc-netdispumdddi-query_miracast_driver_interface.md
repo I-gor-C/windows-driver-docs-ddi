@@ -84,7 +84,9 @@ On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function
 ## Remarks
 
 When the Miracast user-mode driver is loaded, the operating system calls the <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a> function with "QueryMiracastDriverInterface" entered as the function name in the <i>lpProcName</i> parameter.
-<div class="alert"><b>Note</b>  If the Miracast user-mode driver doesn't supply a function with this name, the operating system fails the Miracast display device.</div><div> </div>
+
+<div class="alert"><b>Note</b>  If the Miracast user-mode driver doesn't supply a function with this name, the operating system fails the Miracast display device.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,7 +99,11 @@ When the Miracast user-mode driver is loaded, the operating system calls the <a 
 
 <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a>
 
+
+
 <a href="..\netdispumdddi\ns-netdispumdddi-_miracast_driver_interface.md">MIRACAST_DRIVER_INTERFACE</a>
+
+
 
  
 

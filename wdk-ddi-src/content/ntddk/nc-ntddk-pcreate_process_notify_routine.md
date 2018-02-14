@@ -40,7 +40,7 @@ apiname:
 -	SetCreateProcessNotifyRoutine
 product: Windows
 targetos: Windows
-req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 
@@ -99,6 +99,8 @@ A driver's process-notify routine is also called with <i>Create</i> set to <b>FA
 ## See Also
 
 <b>PsSetCreateProcessNotifyRoutine</b>
+
+
 
  
 

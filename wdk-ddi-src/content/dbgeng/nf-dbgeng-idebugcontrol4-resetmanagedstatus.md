@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 6A9F8963-54F2-4AD7-AB98-C3215E1F7839
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugControl4::ResetManagedStatus, IDebugControl4, ResetManagedStatus method [Windows Debugging], debugger.idebugcontrol4_resetmanagedstatus, IDebugControl4::ResetManagedStatus, ResetManagedStatus method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], ResetManagedStatus method, ResetManagedStatus
+ms.keywords: ResetManagedStatus method [Windows Debugging], dbgeng/IDebugControl4::ResetManagedStatus, ResetManagedStatus method [Windows Debugging], IDebugControl4 interface, debugger.idebugcontrol4_resetmanagedstatus, IDebugControl4::ResetManagedStatus, ResetManagedStatus, IDebugControl4, IDebugControl4 interface [Windows Debugging], ResetManagedStatus method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -66,6 +66,7 @@ Flags for the debugging API.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -82,7 +83,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
     Managed debugging support relies on debugging
     functionality provided by the CLR.
@@ -98,6 +100,8 @@ The method was successful.
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
 
  
 

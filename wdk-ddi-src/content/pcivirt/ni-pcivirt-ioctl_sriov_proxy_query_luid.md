@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SRIOV_PROXY_QUERY_LUID
 product: Windows
 targetos: Windows
-req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+req.typenames: "*PSRIOV_PF_EVENT, SRIOV_PF_EVENT"
 ---
 
 # IOCTL_SRIOV_PROXY_QUERY_LUID IOCTL
@@ -80,6 +80,7 @@ identifier of the physical device.  This request is only required for SR-IOV dev
 Before sending this request, the user mode application must obtain a handle to the PCI Express SR-IOV device by querying for GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.
 
 In this example, the PF driver generates a unique identifier by calling <a href="..\ntddk\nf-ntddk-zwallocatelocallyuniqueid.md">ZwAllocateLocallyUniqueId</a>  and stores it in the device context. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -117,6 +118,8 @@ In this example, the PF driver generates a unique identifier by calling <a href=
 ## See Also
 
 <a href="https://msdn.microsoft.com/8db09aa8-240d-40b6-a28c-77158aff6c39">SRIOV_PROXY_QUERY_LUID_OUTPUT</a>
+
+
 
  
 

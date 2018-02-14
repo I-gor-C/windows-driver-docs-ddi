@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 41f7c240-4e50-4d6c-82aa-902ab05bf715
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hidpi/HidP_SetData, HidP_SetData, hid.hidp_setdata, hidfunc_4b2f18db-e7a2-432d-abd6-51240a0ffc91.xml, HidP_SetData routine [Human Input Devices]
+ms.keywords: HidP_SetData routine [Human Input Devices], HidP_SetData, hidpi/HidP_SetData, hidfunc_4b2f18db-e7a2-432d-abd6-51240a0ffc91.xml, hid.hidp_setdata
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,7 @@ Specifies the size, in bytes, of the HID report located at <i>Report</i>, which 
 <b>HidP_SetData</b> returns HIDP_STATUS_SUCCESS if it successfully sets all the control data specified by <i>DataList</i>.
 
 <b>HidP_SetData</b> returns one of the following status values if one of the input parameters is not valid:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -142,9 +143,11 @@ The collection does not contain a report of the specified type.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 HidP_SetData returns one of the following error values if one of the specified button or usage values could not be set:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -231,21 +234,37 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
+
+
+
 <a href="..\hidpi\ns-hidpi-_hidp_data.md">HIDP_DATA</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_setusages.md">HidP_SetUsages</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
+
+
+<a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>
+
+
+
+<a href="..\hidpi\nf-hidpi-hidp_setusages.md">HidP_SetUsages</a>
+
+
+
 <a href="..\hidpi\nf-hidpi-hidp_unsetusages.md">HidP_UnsetUsages</a>
+
+
 
  
 

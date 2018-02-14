@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 531f5e99-0e04-47dd-86bb-c35aa549c63a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFDeviceObjectGeneralRef_c7135427-9887-44e5-8380-28ebef4174a9.xml, wdfdevice/WdfDeviceGetAlignmentRequirement, WdfDeviceGetAlignmentRequirement method, PFN_WDFDEVICEGETALIGNMENTREQUIREMENT, WdfDeviceGetAlignmentRequirement, kmdf.wdfdevicegetalignmentrequirement, wdf.wdfdevicegetalignmentrequirement
+ms.keywords: wdf.wdfdevicegetalignmentrequirement, wdfdevice/WdfDeviceGetAlignmentRequirement, WdfDeviceGetAlignmentRequirement method, WdfDeviceGetAlignmentRequirement, kmdf.wdfdevicegetalignmentrequirement, PFN_WDFDEVICEGETALIGNMENTREQUIREMENT, DFDeviceObjectGeneralRef_c7135427-9887-44e5-8380-28ebef4174a9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>
+
+
 
  
 

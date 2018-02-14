@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 93dfe9fe-e1af-45db-ab28-fd166f511fcc
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_63930ae0-491f-4916-a24f-7de5c8fa1ad3.xml, KsFilterAcquireControl function [Streaming Media Devices], KsFilterAcquireControl, stream.ksfilteracquirecontrol, ks/KsFilterAcquireControl
+ms.keywords: stream.ksfilteracquirecontrol, avfunc_63930ae0-491f-4916-a24f-7de5c8fa1ad3.xml, ks/KsFilterAcquireControl, KsFilterAcquireControl function [Streaming Media Devices], KsFilterAcquireControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,11 +81,17 @@ This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsA
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+
 
 <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+
+<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
+
+
 
  
 

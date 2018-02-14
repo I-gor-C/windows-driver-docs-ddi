@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b76acae1-3c37-4095-bf8b-1785dc90f378
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: RetrieveContext, IWDFObject::RetrieveContext, RetrieveContext method, IWDFObject interface, umdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext, IWDFObject interface, RetrieveContext method, wdf.iwdfobject_retrievecontext, RetrieveContext method, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, IWDFObject
+ms.keywords: RetrieveContext method, IWDFObject interface, wdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext, umdf.iwdfobject_retrievecontext, IWDFObject interface, RetrieveContext method, IWDFObject, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, RetrieveContext method, IWDFObject::RetrieveContext, RetrieveContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,6 +73,13 @@ A pointer to a buffer that receives a pointer to the previously registered conte
 
 Because the context is not a Component Object Model (COM) interface, the driver must not treat the context as such. For example, the driver cannot call the <b>AddRef</b> method on the context.
 
+
+#### Examples
+
+For a code example of how to use the <b>RetrieveContext</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -85,11 +92,17 @@ Because the context is not a Component Object Model (COM) interface, the driver 
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>
+
+
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
+
 
  
 

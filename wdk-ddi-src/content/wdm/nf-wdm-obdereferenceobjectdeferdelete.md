@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6b20db9e-807d-40f5-844f-f9726e3a854f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture], ObDereferenceObjectDeferDelete, k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml, kernel.obdereferenceobjectdeferdelete, wdm/ObDereferenceObjectDeferDelete
+ms.keywords: wdm/ObDereferenceObjectDeferDelete, ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture], k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml, kernel.obdereferenceobjectdeferdelete, ObDereferenceObjectDeferDelete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,9 @@ Use <b>ObDereferenceObjectDeferDelete</b> for any object when the immediate dele
 For example, such a deadlock can occur if <b>ObDereferenceObject</b> is used to dereference a <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">Kernel Transaction Manager</a> (KTM) object when a higher level driver on the driver stack is holding a lock.
 
 To avoid such deadlocks, use <b>ObDereferenceObjectDeferDelete</b> instead of <b>ObDereferenceObject</b> to dereference KTM objects.
-<div class="alert"><b>Note</b>  For information about object permanence and attributes, see <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>.</div><div> </div>
+
+<div class="alert"><b>Note</b>  For information about object permanence and attributes, see <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,9 +92,13 @@ To avoid such deadlocks, use <b>ObDereferenceObjectDeferDelete</b> instead of <b
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
+
+
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
-<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
+
 
  
 

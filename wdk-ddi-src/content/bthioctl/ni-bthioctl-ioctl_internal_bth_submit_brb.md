@@ -55,6 +55,7 @@ The
       <b>Parameters.Others.Argument1</b> member points to the address an instance of the
       structure that corresponds to the BRB that the profile driver intends to issue. The following list
       describes the structures that correspond to specific BRBs.
+
 <table>
 <tr>
 <th>Bluetooth Request Block (BRB)</th>
@@ -366,6 +367,7 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -471,11 +473,17 @@ These BRBs must be called at IRQL &lt;= PASSIVE_LEVEL.
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
-
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536657">Building and Sending a BRB</a>
+
+
+
+<a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
+
+
 
  
 

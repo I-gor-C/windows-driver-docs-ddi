@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f941bc28-f906-4399-be54-09e2bc12e443
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_SetPresharedKeyForId_IN, structs-iSCSI_610ad061-d9c5-4557-88c0-e7d9a20236a2.xml, PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN, SetPresharedKeyForId_IN structure [Storage Devices], *PSetPresharedKeyForId_IN, storage.setpresharedkeyforid_in, iscsiop/SetPresharedKeyForId_IN, iscsiop/PSetPresharedKeyForId_IN, PSetPresharedKeyForId_IN structure pointer [Storage Devices]"
+ms.keywords: SetPresharedKeyForId_IN structure [Storage Devices], SetPresharedKeyForId_IN, storage.setpresharedkeyforid_in, PSetPresharedKeyForId_IN structure pointer [Storage Devices], *PSetPresharedKeyForId_IN, iscsiop/SetPresharedKeyForId_IN, iscsiop/PSetPresharedKeyForId_IN, _SetPresharedKeyForId_IN, PSetPresharedKeyForId_IN, structs-iSCSI_610ad061-d9c5-4557-88c0-e7d9a20236a2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -72,6 +72,7 @@ The size, in bytes, of the identifier in <b>Id</b><i>.</i>
 `IdType`
 
 The type of identifier to associate with the preshared key. The initiator puts this identifier (ID) in the Internet key exchange (IKE) identification payload to identify itself to the target. The following table describes the possible identification payload types.
+
 <table>
 <tr>
 <th>Identification payload type</th>
@@ -141,11 +142,17 @@ You must implement this method.
 
 ## See Also
 
-<a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_out.md">SetPresharedKeyForId_OUT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
 
+
+
+<a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_out.md">SetPresharedKeyForId_OUT</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+
+
 
  
 

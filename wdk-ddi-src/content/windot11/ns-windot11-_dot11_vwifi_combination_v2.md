@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b30b868d-3012-4bdc-80f4-ffae2ebaa4d6
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, _DOT11_VWIFI_COMBINATION_V2, windot11/PDOT11_VWIFI_COMBINATION_V2, windot11/DOT11_VWIFI_COMBINATION_V2, Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], netvista.dot11_vwifi_combination_v2, PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords: windot11/PDOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], DOT11_VWIFI_COMBINATION_V2, netvista.dot11_vwifi_combination_v2, PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION_V2, windot11/DOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, _DOT11_VWIFI_COMBINATION_V2, Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DOT11_VWIFI_COMBINATION_V2
 product: Windows
 targetos: Windows
-req.typenames: DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2
+req.typenames: "*PDOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2"
 req.product: Windows 10 or later.
 ---
 
@@ -74,8 +74,6 @@ The miniport driver must set the members of
 
 
 
-For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 #### Type
@@ -83,15 +81,20 @@ For more information about these members, see
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 
+
 #### Revision
 
 This member must be set to DOT11_VWIFI_COMBINATION_REVISION_2.
+
 
 
 #### Size
 
 This member must be set to 
        sizeof(DOT11_VWIFI_COMBINATION_V2).
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 `uNumAdhoc`
 
@@ -119,6 +122,7 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 
 <b>No 802.11 Virtual Station
      </b>
+
 <ul>
 <li>
 <b>uNumInfrastructure</b> = 1
@@ -136,8 +140,10 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 <b>uNumVirtualStation</b> = 0
 
 </li>
-</ul><b>One 802.11 Virtual Station
+</ul>
+<b>One 802.11 Virtual Station
      </b>
+
 <ul>
 <li>
 <b>uNumInfrastructure</b> = 1
@@ -166,6 +172,8 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
 
  
 

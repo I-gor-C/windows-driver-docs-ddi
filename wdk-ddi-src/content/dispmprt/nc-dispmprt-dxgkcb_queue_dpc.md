@@ -40,7 +40,7 @@ apiname:
 -	DxgkCbQueueDpc
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -76,6 +76,7 @@ This function queues a DPC object for the display miniport and calls the <a href
 There can only be one callback to this function scheduled per device at any one time. If a callback is already scheduled for a device, a second call to <b>DxgkCbQueueDpc</b> will not have any effect and will return <b>FALSE</b>.
 
 For more information on the use of this function, see these topics:
+
 <ul>
 <li>
 <a href="https://msdn.microsoft.com/3622697a-3989-4756-89d4-c67c81815d49">Submitting a Command Buffer</a>
@@ -95,9 +96,13 @@ For more information on the use of this function, see these topics:
 
 ## See Also
 
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_dpc_routine.md">DxgkDdiDpcRoutine</a>
+
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_queue_dpc.md">DxgkCbQueueDpc</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_dpc_routine.md">DxgkDdiDpcRoutine</a>
+
 
  
 

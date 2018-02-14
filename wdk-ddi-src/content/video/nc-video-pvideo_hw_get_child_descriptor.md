@@ -77,6 +77,7 @@ Is a <a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO
 `VideoChildType`
 
 Pointer to a location in which the miniport driver returns the type of child being enumerated. This member can be one of the following from the VIDEO_CHILD_TYPE enumeration:
+
 <table>
 <tr>
 <th>Value</th>
@@ -148,6 +149,7 @@ Is unused and must be set to zero.
 ## Return Value
 
 <i>HwVidGetVideoChildDescriptor</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -193,6 +195,7 @@ The miniport driver could not enumerate the child device identified in <i>ChildE
 By default, <i>HwVidGetVideoChildDescriptor</i> is not called until after the device is started by <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>. To allow the enumeration of a device's children before the device is started, set the <b>AllowEarlyEnumeration</b> member of <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>. When <b>AllowEarlyEnumeration</b> is set, <i>HwVidGetVideoChildDescriptor</i> can be called at any time.
 
 <i>HwVidGetVideoChildDescriptor</i> should do the following:
+
 <ul>
 <li>
 Determine the type of the child device based on the data supplied in <i>ChildEnumInfo</i>, and return this type in <i>VideoChildType</i>.
@@ -206,7 +209,8 @@ Fill in the buffer to which <i>pChildDescriptor</i> points with the appropriate 
 Write a 32-bit value in <i>UId</i> that uniquely identifies the child device being enumerated. The video port driver will pass this handle back to the miniport driver for operations such as power management.
 
 </li>
-</ul><i>HwVidGetVideoChildDescriptor</i> should be made pageable.
+</ul>
+<i>HwVidGetVideoChildDescriptor</i> should be made pageable.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -218,13 +222,23 @@ Write a 32-bit value in <i>UId</i> that uniquely identifies the child device bei
 
 <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
 
-<a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a>
+
+
+<a href="..\video\nf-video-videoportenumeratechildren.md">VideoPortEnumerateChildren</a>
+
+
 
 <a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
 
+
+
+<a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a>
+
+
+
 <a href="..\video\nc-video-pvideo_hw_power_set.md">HwVidSetPowerState</a>
 
-<a href="..\video\nf-video-videoportenumeratechildren.md">VideoPortEnumerateChildren</a>
+
 
  
 

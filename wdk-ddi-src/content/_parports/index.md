@@ -2,7 +2,7 @@
 UID: TP:parports
 ms.assetid: 38f4cf0c-2fc1-3909-83b7-bf354cf904c1
 ms.author: windowsdriverdev
-ms.date: 01/19/18
+ms.date: 01/18/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,20 +26,20 @@ For the programming guide, see [Parallel Ports](https://docs.microsoft.com/en-us
 
 | Title   | Description   |
 | ---- |:---- |
-| [PDETERMINE_IEEE_MODES callback function](..\parallel\nc-parallel-pdetermine_ieee_modes.md) | The PDETERMINE_IEEE_MODES-typed callback routine determines which IEEE 1284 protocols a parallel device supports. The system-supplied bus driver for parallel ports supplies this routine. |
-| [PNEGOTIATE_IEEE_MODE callback function](..\parallel\nc-parallel-pnegotiate_ieee_mode.md) | The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller. |
-| [PPARALLEL_CLEAR_CHIP_MODE callback function](..\parallel\nc-parallel-pparallel_clear_chip_mode.md) | The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode. |
-| [PPARALLEL_DESELECT_ROUTINE callback function](..\parallel\nc-parallel-pparallel_deselect_routine.md) | The PPARALLEL_DESELECT_ROUTINE-typed callback routine deselects either an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. |
-| [PPARALLEL_FREE_ROUTINE callback function](..\parallel\nc-parallel-pparallel_free_routine.md) | The PPARALLEL_FREE_ROUTINE-typed callback routine frees a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
-| [PPARALLEL_IEEE_FWD_TO_REV callback function](..\parallel\nc-parallel-pparallel_ieee_fwd_to_rev.md) | The PPARALLEL_IEEE_FWD_TO_REV-typed callback routine changes the transfer mode from forward to reverse. The system-supplied bus driver for parallel ports supplies this routine. |
-| [PPARALLEL_IEEE_REV_TO_FWD callback function](..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md) | The PPARALLEL_IEEE_REV_TO_FWD-typed callback routine changes the transfer mode from reverse to forward. The system-supplied bus driver for parallel ports supplies this routine. |
-| [PPARALLEL_QUERY_WAITERS_ROUTINE callback function](..\parallel\nc-parallel-pparallel_query_waiters_routine.md) | The PPARALLEL_QUERY_WAITERS_ROUTINE-typed callback routine returns the number of IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE and IOCTL_INTERNAL_SELECT_DEVICE requests that are queued on the work queue of a parallel port. |
-| [PPARALLEL_READ callback function](..\parallel\nc-parallel-pparallel_read.md) | The PPARALLEL_READ-typed callback routine reads data from a parallel device. The system-supplied bus driver for parallel ports supplies this routine. |
-| [PPARALLEL_SET_CHIP_MODE callback function](..\parallel\nc-parallel-pparallel_set_chip_mode.md) | The PPARALLEL_SET_CHIP_MODE-typed callback routine sets the operating mode of a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
-| [PPARALLEL_TRY_ALLOCATE_ROUTINE callback function](..\parallel\nc-parallel-pparallel_try_allocate_routine.md) | The PPARALLEL_TRY_ALLOCATE_ROUTINE-typed (ISR) callback routine attempts to allocate a parallel port at IRQL = DIRQL. The system-supplied function driver for parallel ports supplies this routine. |
-| [PPARALLEL_TRY_SELECT_ROUTINE callback function](..\parallel\nc-parallel-pparallel_try_select_routine.md) | The PPARALLEL_TRY_SELECT_ROUTINE-typed callback routine selects an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
-| [PPARALLEL_WRITE callback function](..\parallel\nc-parallel-pparallel_write.md) | The PPARALLEL_WRITE-typed callback routine writes data to a parallel device. The system-supplied bus driver for parallel ports supplies this routine. |
-| [PTERMINATE_IEEE_MODE callback function](..\parallel\nc-parallel-pterminate_ieee_mode.md) | The PTERMINATE_IEEE_MODE-typed callback routine terminates the current IEEE operating mode and sets the mode to IEEE 1284-compatible. The system-supplied bus driver for parallel ports supplies this routine. |
+| [PDETERMINE_IEEE_MODES callback](..\parallel\nc-parallel-pdetermine_ieee_modes.md) | The PDETERMINE_IEEE_MODES-typed callback routine determines which IEEE 1284 protocols a parallel device supports. The system-supplied bus driver for parallel ports supplies this routine. |
+| [PNEGOTIATE_IEEE_MODE callback](..\parallel\nc-parallel-pnegotiate_ieee_mode.md) | The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller. |
+| [PPARALLEL_CLEAR_CHIP_MODE callback](..\parallel\nc-parallel-pparallel_clear_chip_mode.md) | The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode. |
+| [PPARALLEL_DESELECT_ROUTINE callback](..\parallel\nc-parallel-pparallel_deselect_routine.md) | The PPARALLEL_DESELECT_ROUTINE-typed callback routine deselects either an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. |
+| [PPARALLEL_FREE_ROUTINE callback](..\parallel\nc-parallel-pparallel_free_routine.md) | The PPARALLEL_FREE_ROUTINE-typed callback routine frees a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
+| [PPARALLEL_IEEE_FWD_TO_REV callback](..\parallel\nc-parallel-pparallel_ieee_fwd_to_rev.md) | The PPARALLEL_IEEE_FWD_TO_REV-typed callback routine changes the transfer mode from forward to reverse. The system-supplied bus driver for parallel ports supplies this routine. |
+| [PPARALLEL_IEEE_REV_TO_FWD callback](..\parallel\nc-parallel-pparallel_ieee_rev_to_fwd.md) | The PPARALLEL_IEEE_REV_TO_FWD-typed callback routine changes the transfer mode from reverse to forward. The system-supplied bus driver for parallel ports supplies this routine. |
+| [PPARALLEL_QUERY_WAITERS_ROUTINE callback](..\parallel\nc-parallel-pparallel_query_waiters_routine.md) | The PPARALLEL_QUERY_WAITERS_ROUTINE-typed callback routine returns the number of IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE and IOCTL_INTERNAL_SELECT_DEVICE requests that are queued on the work queue of a parallel port. |
+| [PPARALLEL_READ callback](..\parallel\nc-parallel-pparallel_read.md) | The PPARALLEL_READ-typed callback routine reads data from a parallel device. The system-supplied bus driver for parallel ports supplies this routine. |
+| [PPARALLEL_SET_CHIP_MODE callback](..\parallel\nc-parallel-pparallel_set_chip_mode.md) | The PPARALLEL_SET_CHIP_MODE-typed callback routine sets the operating mode of a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
+| [PPARALLEL_TRY_ALLOCATE_ROUTINE callback](..\parallel\nc-parallel-pparallel_try_allocate_routine.md) | The PPARALLEL_TRY_ALLOCATE_ROUTINE-typed (ISR) callback routine attempts to allocate a parallel port at IRQL = DIRQL. The system-supplied function driver for parallel ports supplies this routine. |
+| [PPARALLEL_TRY_SELECT_ROUTINE callback](..\parallel\nc-parallel-pparallel_try_select_routine.md) | The PPARALLEL_TRY_SELECT_ROUTINE-typed callback routine selects an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
+| [PPARALLEL_WRITE callback](..\parallel\nc-parallel-pparallel_write.md) | The PPARALLEL_WRITE-typed callback routine writes data to a parallel device. The system-supplied bus driver for parallel ports supplies this routine. |
+| [PTERMINATE_IEEE_MODE callback](..\parallel\nc-parallel-pterminate_ieee_mode.md) | The PTERMINATE_IEEE_MODE-typed callback routine terminates the current IEEE operating mode and sets the mode to IEEE 1284-compatible. The system-supplied bus driver for parallel ports supplies this routine. |
 
 ## Structures
 

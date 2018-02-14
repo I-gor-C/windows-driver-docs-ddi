@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: bc27758a-a793-48a1-a6ab-bd193aa9c61a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisAllocateNetBufferPool, ndis/NdisAllocateNetBufferPool, ndis_netbuf_functions_ref_f12d38a1-161d-4209-95ea-6e66fcbef255.xml, netvista.ndisallocatenetbufferpool, NdisAllocateNetBufferPool function [Network Drivers Starting with Windows Vista]
+ms.keywords: NdisAllocateNetBufferPool, netvista.ndisallocatenetbufferpool, NdisAllocateNetBufferPool function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_f12d38a1-161d-4209-95ea-6e66fcbef255.xml, ndis/NdisAllocateNetBufferPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisAllocateNetBufferPool
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -70,6 +70,7 @@ An NDIS handle that was obtained during caller initialization.
 A pointer to a NET_BUFFER_POOL_PARAMETERS structure that defines the parameters for the pool. The
      structure is defined as follows:
      
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -83,7 +84,9 @@ A pointer to a NET_BUFFER_POOL_PARAMETERS structure that defines the parameters 
 } NET_BUFFER_POOL_PARAMETERS, *PNET_BUFFER_POOL_PARAMETERS;</pre>
 </td>
 </tr>
-</table></span></div>This structure includes the following members:
+</table></span></div>
+This structure includes the following members:
+
 
 
 
@@ -99,6 +102,7 @@ The
        <b>Size</b> member to NDIS_SIZEOF_NET_BUFFER_POOL_PARAMETERS_REVISION_1.
 
 
+
 #### PoolTag
 
 A kernel pool tag that the caller uses when it allocates 
@@ -106,6 +110,7 @@ A kernel pool tag that the caller uses when it allocates
        is a string, delimited by single quotation marks, with up to four characters, usually specified in
        reverse order. The kernel pool tag helps NDIS to identify the owner of the NET_BUFFER structures that
        are allocated from this pool.
+
 
 
 #### DataSize
@@ -138,10 +143,13 @@ Call the following functions to allocate
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
        NdisAllocateNetBufferMdlAndData</a>
 
+
 <div class="alert"><b>Note</b>  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> and 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures must be allocated
     from an NDIS buffer pool. A driver must not allocate and initialize a NET_BUFFER or NET_BUFFER_LIST
-    structure from its private memory pool or the stack.</div><div> </div>You can call 
+    structure from its private memory pool or the stack.</div>
+<div> </div>
+You can call 
     <b>NdisAllocateNetBufferPool</b> and set the 
     <b>DataSize</b> value when creating a NET_BUFFER structure pool. In this case, MDL and data are
     preallocated with each NET_BUFFER structure that the caller allocates from the pool. You must call the 
@@ -169,18 +177,30 @@ Call the
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
 
 <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndisfreenetbufferpool.md">NdisFreeNetBufferPool</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffermdlanddata.md">
    NdisAllocateNetBufferMdlAndData</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
 
  
 

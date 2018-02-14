@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 15D6A09F-2AEC-431F-91F4-D1571DB56E81
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ObCloseHandle, wdm/ObCloseHandle, kernel.obclosehandle, ObCloseHandle routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.obclosehandle, ObCloseHandle routine [Kernel-Mode Driver Architecture], ObCloseHandle, wdm/ObCloseHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ Specifies the previous processor mode of the thread that opened the handle. To c
 ## Return Value
 
 <b>ObCloseHandle</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -121,6 +122,7 @@ Callers of <b>ObCloseHandle</b> should not assume that this routine automaticall
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557758">Object Handles</a>.
 
 <b>ObCloseHandle</b> is not declared in a header file prior to Windows 7. To use this routine in your driver, include the following function declaration in your driver code:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -153,11 +155,19 @@ NTSTATUS
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
+
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
+
+
+
 <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a>
+
+
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
+
 
  
 

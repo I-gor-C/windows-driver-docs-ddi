@@ -53,6 +53,16 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugSymbolGroup.AddSymbol](nf-dbgeng-idebugsymbolgroup-addsymbol.md) | The AddSymbol method adds a symbol to a symbol group. |
+| [dbgeng.IDebugSymbolGroup.ExpandSymbol](nf-dbgeng-idebugsymbolgroup-expandsymbol.md) | The ExpandSymbol method adds or removes the children of a symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup.GetNumberSymbols](nf-dbgeng-idebugsymbolgroup-getnumbersymbols.md) | The GetNumberSymbols method returns the number of symbols that are contained in a symbol group. |
+| [dbgeng.IDebugSymbolGroup.GetSymbolName](nf-dbgeng-idebugsymbolgroup-getsymbolname.md) | The GetSymbolName method returns the name of a symbol in a symbol group. |
+| [dbgeng.IDebugSymbolGroup.GetSymbolParameters](nf-dbgeng-idebugsymbolgroup-getsymbolparameters.md) | The GetSymbolParameters method returns the symbol parameters that describe the specified symbols in a symbol group. |
+| [dbgeng.IDebugSymbolGroup.OutputAsType](nf-dbgeng-idebugsymbolgroup-outputastype.md) | The OutputAsType method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type. |
+| [dbgeng.IDebugSymbolGroup.OutputSymbols](nf-dbgeng-idebugsymbolgroup-outputsymbols.md) | The OutputSymbols method prints the specified symbols to the debugger console. |
+| [dbgeng.IDebugSymbolGroup.RemoveSymbolByIndex](nf-dbgeng-idebugsymbolgroup-removesymbolbyindex.md) | The RemoveSymbolByIndex method removes the specified symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup.RemoveSymbolByName](nf-dbgeng-idebugsymbolgroup-removesymbolbyname.md) | The RemoveSymbolByName method removes the specified symbol from a symbol group. |
+| [dbgeng.IDebugSymbolGroup.WriteSymbol](nf-dbgeng-idebugsymbolgroup-writesymbol.md) | The WriteSymbol methods set the value of the specified symbol. |
 
 ## Remarks
 
@@ -67,6 +77,8 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b2776618-2585-4a7a-9f8f-536f1d28745b
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceSetStaticStopRemove, wdf.wdfdevicesetstaticstopremove, DFDeviceObjectGeneralRef_9874b784-6344-4336-9753-0b172563f981.xml, PFN_WDFDEVICESETSTATICSTOPREMOVE, kmdf.wdfdevicesetstaticstopremove, wdfdevice/WdfDeviceSetStaticStopRemove, WdfDeviceSetStaticStopRemove method
+ms.keywords: wdfdevice/WdfDeviceSetStaticStopRemove, PFN_WDFDEVICESETSTATICSTOPREMOVE, DFDeviceObjectGeneralRef_9874b784-6344-4336-9753-0b172563f981.xml, kmdf.wdfdevicesetstaticstopremove, WdfDeviceSetStaticStopRemove method, wdf.wdfdevicesetstaticstopremove, WdfDeviceSetStaticStopRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,6 +90,25 @@ The driver must match every call to <b>WdfDeviceSetStaticStopRemove</b> with <i>
 Calling <b>WdfDeviceSetStaticStopRemove</b> with <i>Stoppable</i> set to <b>FALSE</b> does not prevent the framework from notifying the driver if the device is unexpectedly removed (surprise-removed).
 
 For more information about how to prevent the operating system from stopping a device, see <a href="https://msdn.microsoft.com/4c8f37b3-7961-4c78-a88b-3eec58155e66">Handling Requests to Stop a Device</a>.
+
+
+#### Examples
+
+The following code example informs the framework that the specified device cannot be stopped and removed.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceSetStaticStopRemove(
+                             device,
+                             FALSE
+                             );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

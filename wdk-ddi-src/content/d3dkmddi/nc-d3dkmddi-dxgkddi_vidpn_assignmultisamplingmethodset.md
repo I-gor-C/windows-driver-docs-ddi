@@ -83,6 +83,7 @@ NTSTATUS DxgkddiVidpnAssignmultisamplingmethodset(
 ## Return Value
 
 The <b>pfnAssignMultisamplingMethodSet</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -132,7 +133,8 @@ The function failed because it was unable to allocate enough memory.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other error codes that are defined in Ntstatus.h.
 
@@ -148,6 +150,8 @@ This function might also return other error codes that are defined in Ntstatus.h
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a>
+
+
 
  
 

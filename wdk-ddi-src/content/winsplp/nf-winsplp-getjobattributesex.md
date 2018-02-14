@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 0715e4d4-665c-42cb-9c74-48c2c558c277
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: spoolfnc_45659d86-d97e-47c5-bbf7-49c990880b52.xml, print.getjobattributesex, GetJobAttributesEx, GetJobAttributesEx function [Print Devices], winsplp/GetJobAttributesEx
+ms.keywords: GetJobAttributesEx function [Print Devices], winsplp/GetJobAttributesEx, GetJobAttributesEx, spoolfnc_45659d86-d97e-47c5-bbf7-49c990880b52.xml, print.getjobattributesex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows
 `dwLevel`
 
 Caller-supplied value that indicates the type of structure pointed to by <i>pAttributeInfo</i>, as indicated in the following table. For more information, see Remarks.
+
 <table>
 <tr>
 <th><i>dwLevel</i> Value</th>
@@ -200,13 +201,21 @@ This function first checks whether the driver supports the attribute level that 
 
 ## See Also
 
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
 
-<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
+
 
 <a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
 
+
+
 <a href="..\winsplp\nf-winsplp-getjobattributes.md">GetJobAttributes</a>
+
+
 
  
 

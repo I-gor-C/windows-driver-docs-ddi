@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 15c02819-bae8-48f5-8782-97823b6907bd
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], *PWWAN_RADIO_STATE, netvista.wwan_radio_state, wwan/PWWAN_RADIO_STATE, _WWAN_RADIO_STATE, PWWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_b1ea0ea1-b23f-4e5c-9528-659e1f6e4162.xml, wwan/WWAN_RADIO_STATE, PWWAN_RADIO_STATE, WWAN_RADIO_STATE
+ms.keywords: WWAN_RADIO_STATE, wwan/PWWAN_RADIO_STATE, wwan/WWAN_RADIO_STATE, WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], PWWAN_RADIO_STATE, PWWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_radio_state, *PWWAN_RADIO_STATE, WwanRef_b1ea0ea1-b23f-4e5c-9528-659e1f6e4162.xml, _WWAN_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -64,6 +64,7 @@ typedef struct _WWAN_RADIO_STATE {
 The hardware radio power state of the device. The MB Service cannot set this state because it is
      read-only. The following table shows the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -96,6 +97,7 @@ The hardware radio is on, or no switch exists to control power to the hardware r
 The software-based radio power state of the device. The MB Service can get and set this state. The
      following table shows the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -131,6 +133,7 @@ Miniport drivers should continue the software-based radio power state across sys
 
 The following table defines the relationship between hardware-based and software-based radio power
     state settings and their effective result.
+
 <table>
 <tr>
 <th>HwRadioState value</th>
@@ -193,7 +196,8 @@ WwanRadioOn
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The miniport driver should send all applicable status indications such as
     NDIS_STATUS_WWAN_CONTEXT_STATE, NDIS_STATUS_WWAN_PACKET_SERVICE, and NDIS_STATUS_WWAN_REGISTER_STATE
@@ -211,9 +215,13 @@ The miniport driver should send all applicable status indications such as
 
 ## See Also
 
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_radio_state.md">NDIS_WWAN_RADIO_STATE</a>
+
+
+
 <a href="..\wwan\ne-wwan-_wwan_radio.md">WWAN_RADIO</a>
 
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_radio_state.md">NDIS_WWAN_RADIO_STATE</a>
+
 
  
 

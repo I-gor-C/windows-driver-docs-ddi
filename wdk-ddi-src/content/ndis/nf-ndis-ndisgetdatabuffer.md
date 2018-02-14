@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 784d4c32-a517-4219-8e22-a998e0e66d69
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisGetDataBuffer function [Network Drivers Starting with Windows Vista], netvista.ndisgetdatabuffer, NdisGetDataBuffer, ndis/NdisGetDataBuffer, ndis_netbuf_functions_ref_b4ffded6-13c9-417d-bb03-a6421f718deb.xml
+ms.keywords: ndis/NdisGetDataBuffer, netvista.ndisgetdatabuffer, NdisGetDataBuffer function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_b4ffded6-13c9-417d-bb03-a6421f718deb.xml, NdisGetDataBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisGetDataBuffer
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -104,6 +104,7 @@ If the
 If the requested data in the buffer is contiguous, the return value is a pointer to a location that
       NDIS provides. If the data is not contiguous, NDIS uses the 
       <i>Storage</i> parameter as follows:
+
 <ul>
 <li>If the 
        <i>Storage</i> parameter is non-<b>NULL</b>, NDIS copies the data to the buffer at 
@@ -111,7 +112,8 @@ If the requested data in the buffer is contiguous, the return value is a pointer
        <i>Storage</i> parameter.</li>
 <li>If the 
        <i>Storage</i> parameter is <b>NULL</b>, the return value is <b>NULL</b>.</li>
-</ul>The return value can also be <b>NULL</b> due to a low resource condition where a data buffer cannot be mapped. This may occur even if the data is contiguous or the <i>Storage</i> parameter is non-<b>NULL</b>.
+</ul>
+The return value can also be <b>NULL</b> due to a low resource condition where a data buffer cannot be mapped. This may occur even if the data is contiguous or the <i>Storage</i> parameter is non-<b>NULL</b>.
 
 ## Remarks
 
@@ -139,7 +141,11 @@ The requested alignment requirement is expressed as a power-of-two multiple plus
 
 <a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
 
+
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
 
  
 

@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitordescriptorsetAcquirefirstdescriptorinfo(
 ## Return Value
 
 The <b>pfnAcquireFirstDescriptorInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

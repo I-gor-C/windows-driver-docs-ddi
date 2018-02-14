@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 3A2CA5FB-0844-4992-9A05-DDF9D7F1BADC
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCx2PioTransmitInitializeTransactionComplete, serports.sercx2piotransmitinitializetransactioncomplete, 2/SerCx2PioTransmitInitializeTransactionComplete, SerCx2PioTransmitInitializeTransactionComplete method [Serial Ports]
+ms.keywords: SerCx2PioTransmitInitializeTransactionComplete method [Serial Ports], 2/SerCx2PioTransmitInitializeTransactionComplete, SerCx2PioTransmitInitializeTransactionComplete, serports.sercx2piotransmitinitializetransactioncomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,9 +93,15 @@ For more information, see <a href="https://msdn.microsoft.com/3BEF9A3D-1FEF-4626
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a>
 
-<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
+
 
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_initialize_transaction.md">EvtSerCx2PioTransmitInitializeTransaction</a>
+
+
+
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
+
+
 
  
 

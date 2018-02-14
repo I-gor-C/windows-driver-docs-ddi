@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b218785c-170e-4a30-99c9-0db8705b7f5d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: scsiprt_27acea07-f416-4fa1-894d-6bb38c020f6b.xml, ScsiPortReadPortBufferUshort routine [Storage Devices], ScsiPortReadPortBufferUshort, srb/ScsiPortReadPortBufferUshort, storage.scsiportreadportbufferushort
+ms.keywords: scsiprt_27acea07-f416-4fa1-894d-6bb38c020f6b.xml, ScsiPortReadPortBufferUshort routine [Storage Devices], ScsiPortReadPortBufferUshort, storage.scsiportreadportbufferushort, srb/ScsiPortReadPortBufferUshort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,8 @@ None
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+
+
 
  
 

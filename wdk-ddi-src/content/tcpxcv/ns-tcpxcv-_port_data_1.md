@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 6d2165a7-ee21-4f7d-a03c-f9bed87a3c7a
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: PORT_DATA_1 structure [Print Devices], print.port_data_1, tcpxcv/PPORT_DATA_1, _PORT_DATA_1, *PPORT_DATA_1, PORT_DATA_1, spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, tcpxcv/PORT_DATA_1, PPORT_DATA_1 structure pointer [Print Devices], PPORT_DATA_1
+ms.keywords: PPORT_DATA_1 structure pointer [Print Devices], spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, _PORT_DATA_1, PPORT_DATA_1, *PPORT_DATA_1, PORT_DATA_1 structure [Print Devices], tcpxcv/PPORT_DATA_1, print.port_data_1, PORT_DATA_1, tcpxcv/PORT_DATA_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -139,6 +139,8 @@ See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TC
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+
+
 
  
 

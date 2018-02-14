@@ -40,7 +40,7 @@ apiname:
 -	SetMarker
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -72,6 +72,7 @@ Returns <b>S_OK</b> or an appropriate error result if the function does not comp
 ## Remarks
 
 If the marker event type from the  <i>Type</i> parameter of the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarkermode.md">SetMarkerMode</a> function is not <b>D3DWDDM1_3DDI_MARKER_TYPE_NONE</b>, the user-mode display driver must perform this procedure with each call to <i>SetMarker</i>:
+
 <ol>
 <li>Increment the value of the <b>APISequenceNumber</b> member of the <a href="..\d3dumddi\ns-d3dumddi-d3dddicb_logumdmarker.md">D3DDDICB_LOGUMDMARKER</a> structure.</li>
 <li>Determine which contexts associated with single-threaded device driver interface (DDI) render calls submitted work with the last call to <i>SetMarker</i>. For each such context:<ol>
@@ -97,6 +98,8 @@ If the marker event type from the  <i>Type</i> parameter of the <a href="..\d3d1
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarkermode.md">SetMarkerMode</a>
+
+
 
  
 

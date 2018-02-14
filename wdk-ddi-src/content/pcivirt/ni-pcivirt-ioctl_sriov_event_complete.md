@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SRIOV_EVENT_COMPLETE
 product: Windows
 targetos: Windows
-req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+req.typenames: "*PSRIOV_PF_EVENT, SRIOV_PF_EVENT"
 ---
 
 # IOCTL_SRIOV_EVENT_COMPLETE IOCTL
@@ -77,6 +77,7 @@ This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IO
 The virtualization stack sends the <b>IOCTL_SRIOV_EVENT_COMPLETE</b> request when the physical function (PF) driver completes the previously sent <a href="https://msdn.microsoft.com/3f2d67e0-abab-40a1-b4a9-cb65e81884e9">IOCTL_SRIOV_NOTIFICATION</a> request. The <b>IOCTL_SRIOV_EVENT_COMPLETE</b> request can be completed
 synchronously.  The stack provides the NTSTATUS code to set for the <a href="https://msdn.microsoft.com/3b40d780-8084-4c19-bb8e-9d1ab3dadc95">SRIOV_PNP_EVENT_COMPLETE</a> is the input buffer. The code indicates the status code o use for completion of the event.
 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -111,7 +112,8 @@ synchronously.  The stack provides the NTSTATUS code to set for the <a href="htt
 </pre>
 </td>
 </tr>
-</table></span></div><div class="code"><span codelanguage=""><table>
+</table></span></div>
+<div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
 </tr>

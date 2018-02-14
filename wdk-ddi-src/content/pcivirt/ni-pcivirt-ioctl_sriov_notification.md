@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SRIOV_NOTIFICATION
 product: Windows
 targetos: Windows
-req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+req.typenames: "*PSRIOV_PF_EVENT, SRIOV_PF_EVENT"
 ---
 
 # IOCTL_SRIOV_NOTIFICATION IOCTL
@@ -89,6 +89,7 @@ The virtualization stack can send the <b>IOCTL_SRIOV_NOTIFICATION</b> request im
 that an event notification has been delivered and must not complete two IOCTL requests for the same event twice.
 
   It is pended by the PF driver until it is canceled by the sender or until the PF driver experiences one of several PnP events, at which point it is completed. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -123,7 +124,8 @@ that an event notification has been delivered and must not complete two IOCTL re
 </pre>
 </td>
 </tr>
-</table></span></div><div class="code"><span codelanguage=""><table>
+</table></span></div>
+<div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
 </tr>

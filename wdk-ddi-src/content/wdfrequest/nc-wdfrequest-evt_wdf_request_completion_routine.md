@@ -40,7 +40,7 @@ apiname:
 -	CompletionRoutine
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG"
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -86,6 +86,7 @@ Driver-supplied context information, which the driver specified in a previous ca
 ## Return Value
 
 None
+
 <h2><a id="ddk_completionroutine_df"></a><a id="DDK_COMPLETIONROUTINE_DF"></a></h2>
 
 ## Remarks
@@ -94,7 +95,61 @@ To register a <i>CompletionRoutine</i> callback function for an I/O request, a d
 
 Note that the completion parameters structure contains valid information only if the driver has formatted the request by calling one of the <b>WdfIoTargetFormat</b><i>Xxx</i> methods. For an example, see <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforread.md">WdfIoTargetFormatRequestForRead</a>.
 
-A KMDF driver's <i>CompletionRoutine</i> can run at IRQL &lt;= DISPATCH_LEVEL regardless of the  <b>ExecutionLevel</b> specified in the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure for the I/O request object.
+A KMDF driver's <i>CompletionRoutine</i> can run at IRQL &lt;= DISPATCH_LEVEL regardless of the  <b>ExecutionLevel</b> specified in the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure for the I/O request object.  
+
+
+#### Examples
+
+The function type is declared in <i>Wdfrequest.h</i>, as follows.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef VOID
+  (EVT_WDF_REQUEST_COMPLETION_ROUTINE)(
+    IN WDFREQUEST  Request,
+    IN WDFIOTARGET  Target,
+    IN PWDF_REQUEST_COMPLETION_PARAMS  Params,
+    IN WDFCONTEXT  Context
+    );
+</pre>
+</td>
+</tr>
+</table></span></div>
+To define a <i>CompletionRoutine</i> callback function that is named <b>MyCompletionRoutine</b>, you must first provide a function declaration that SDV and other verification tools require, as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>EVT_WDF_REQUEST_COMPLETION_ROUTINE  MyCompletionRoutine;</pre>
+</td>
+</tr>
+</table></span></div>
+Then, implement your callback function as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+ MyCompletionRoutine (
+    IN WDFREQUEST  Request,
+    IN WDFIOTARGET  Target,
+    IN PWDF_REQUEST_COMPLETION_PARAMS  Params,
+    IN WDFCONTEXT  Context
+    )
+  {...}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -109,7 +164,11 @@ A KMDF driver's <i>CompletionRoutine</i> can run at IRQL &lt;= DISPATCH_LEVEL re
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
 
+
+
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a>
+
+
 
  
 

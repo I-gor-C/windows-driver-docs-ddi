@@ -40,7 +40,7 @@ apiname:
 -	WskGetNameInfo
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -125,15 +125,18 @@ The following flags are available:
 
 
 
+
 #### NI_DGRAM
 
 Indicates that the service is a datagram service. This flag is necessary for the few services
        that provide different port numbers for UDP and TCP service.
 
 
+
 #### NI_NAMEREQD
 
 Indicates that a host name that cannot be resolved by DNS results in an error.
+
 
 
 #### NI_NOFQDN
@@ -142,11 +145,13 @@ Results in a local host having only its Relative Distinguished Name (RDN) return
        <i>NodeName</i> parameter.
 
 
+
 #### NI_NUMERICHOST
 
 Indicates that the function returns the numeric form of the host name instead of its name, a
        reverse DNS lookup. The numeric form of the host name is also returned if the host name cannot be
        resolved by DNS.
+
 
 
 #### NI_NUMERICSERV
@@ -189,6 +194,7 @@ If this parameter is not <b>NULL</b> and an impersonation token is in effect for
 ## Return Value
 
 <b>WskGetNameInfo</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -274,17 +280,29 @@ The process to which the
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_get_address_info.md">WskGetAddressInfo</a>
+
+
 
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_get_address_info.md">WskGetAddressInfo</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
+
+
 
  
 

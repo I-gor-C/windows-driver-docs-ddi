@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_HID_ACTIVATE_DEVICE
 product: Windows
 targetos: Windows
-req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+req.typenames: "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_HID_ACTIVATE_DEVICE IOCTL
@@ -71,6 +71,7 @@ None.
 
 ### Status Block
 HID minidrivers that carry out the I/O to the device set the following fields of <b>Irp-&gt;IoStatus</b>:
+
 <ul>
 <li>
 <b>Information</b> is set to zero.
@@ -80,7 +81,8 @@ HID minidrivers that carry out the I/O to the device set the following fields of
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
 
 </li>
-</ul>Minidrivers that call other drivers with this IRP to carry out the I/O to their device should ensure that the <b>Information</b> field of the status block is zero and not change the contents of the <b>Status</b> field.
+</ul>
+Minidrivers that call other drivers with this IRP to carry out the I/O to their device should ensure that the <b>Information</b> field of the status block is zero and not change the contents of the <b>Status</b> field.
 
 
 ## Requirements
@@ -91,6 +93,8 @@ HID minidrivers that carry out the I/O to the device set the following fields of
 ## See Also
 
 <a href="..\hidport\ni-hidport-ioctl_hid_deactivate_device.md">IOCTL_HID_DEACTIVATE_DEVICE</a>
+
+
 
  
 

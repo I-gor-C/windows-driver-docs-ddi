@@ -56,6 +56,12 @@ This interface also provides a method that allows a print job to be cancelled.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintJob.get_Id](nf-printerextension-iprintjob-get_id.md) | Gets the print job identifier (ID). |
+| [printerextension.IPrintJob.get_Name](nf-printerextension-iprintjob-get_name.md) | Gets the name of the printer for this print queue. |
+| [printerextension.IPrintJob.get_PrintedPages](nf-printerextension-iprintjob-get_printedpages.md) | Gets the number of pages that have been printed. |
+| [printerextension.IPrintJob.get_Status](nf-printerextension-iprintjob-get_status.md) | Gets the current status of the print job. |
+| [printerextension.IPrintJob.get_SubmissionTime](nf-printerextension-iprintjob-get_submissiontime.md) | Gets the submission time, in the “DATE” format, provided in the user’s local time (not in the UTC format that is provided by the spooler). |
+| [printerextension.IPrintJob.get_TotalPages](nf-printerextension-iprintjob-get_totalpages.md) | Gets the total number of pages that the document contains. |
 | [printerextension.IPrintJob.RequestCancel](nf-printerextension-iprintjob-requestcancel.md) | Requests the cancellation of a print job. |
 
 ## Remarks
@@ -75,7 +81,11 @@ The <b>IPrintJob</b> interface provides a wrapper around select properties of th
 
 <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
 
+
+
 <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a>
+
+
 
  
 

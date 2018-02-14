@@ -8,7 +8,7 @@ old-project: SD
 ms.assetid: 9eec7597-be3a-4811-8786-11de0f9ac3da
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: ntddsd/SD_REQUEST_FUNCTION, ntddsd/SDRF_SET_PROPERTY, sd-structs_db2d511c-e3e2-46e6-9d01-1723c1c8ec7f.xml, SD.sd_request_function, SDRF_GET_PROPERTY, SDRF_DEVICE_COMMAND, SD_REQUEST_FUNCTION enumeration [Buses], ntddsd/SDRF_GET_PROPERTY, ntddsd/SDRF_DEVICE_COMMAND, SDRF_SET_PROPERTY, SD_REQUEST_FUNCTION
+ms.keywords: SD.sd_request_function, SDRF_SET_PROPERTY, SDRF_GET_PROPERTY, SDRF_DEVICE_COMMAND, sd-structs_db2d511c-e3e2-46e6-9d01-1723c1c8ec7f.xml, ntddsd/SDRF_DEVICE_COMMAND, SD_REQUEST_FUNCTION enumeration [Buses], ntddsd/SD_REQUEST_FUNCTION, SD_REQUEST_FUNCTION, ntddsd/SDRF_GET_PROPERTY, ntddsd/SDRF_SET_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -101,9 +101,13 @@ typedef enum  {
 
     ## See Also
 
-        <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
+
+
+<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+
+
 
  
 

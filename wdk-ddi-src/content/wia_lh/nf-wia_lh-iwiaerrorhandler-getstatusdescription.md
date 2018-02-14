@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: c3b5622d-9d51-4008-abb0-c8a60c4a6b16
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.iwiaerrorhandler_getstatusdescription, IWiaErrorHandler, IWiaErrorHandler::GetStatusDescription, IWiaErrorHandler_4bd0cba6-d729-4942-b56a-588af88ef913.xml, IWiaErrorHandler interface [Imaging Devices], GetStatusDescription method, GetStatusDescription method [Imaging Devices], GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface, wia_lh/IWiaErrorHandler::GetStatusDescription, GetStatusDescription
+ms.keywords: IWiaErrorHandler, image.iwiaerrorhandler_getstatusdescription, IWiaErrorHandler interface [Imaging Devices], GetStatusDescription method, GetStatusDescription method [Imaging Devices], IWiaErrorHandler::GetStatusDescription, IWiaErrorHandler_4bd0cba6-d729-4942-b56a-588af88ef913.xml, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface, GetStatusDescription, wia_lh/IWiaErrorHandler::GetStatusDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IWiaErrorHandler.GetStatusDescription
 product: Windows
 targetos: Windows
-req.typenames: "*PBMP_IMAGE_INFO, BMP_IMAGE_INFO"
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -81,6 +81,7 @@ Pointer to a BSTR that receives a description of the status or error encountered
 ## Return Value
 
 Returns a standard COM error code if an error occurs, or one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,7 +129,11 @@ The implementation of <b>IWiaErrorHandler::GetStatusDescription</b> should retur
 
 <a href="..\wia_lh\nn-wia_lh-iwiaerrorhandler.md">IWiaErrorHandler</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543909">IWiaErrorHandler::ReportStatus</a>
+
+
 
  
 

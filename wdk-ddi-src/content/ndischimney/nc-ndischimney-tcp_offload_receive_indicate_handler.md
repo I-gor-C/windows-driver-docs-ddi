@@ -117,6 +117,7 @@ A pointer to a ULONG-typed variable that receives the number of bytes that were 
 The 
      <i>
      ProtocolTcpOffloadReceiveIndicate</i> function can return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -166,6 +167,7 @@ To propagate the indication to the overlying driver or host stack, the intermedi
     NdisTcpOffloadReceiveHandler</a> function. The intermediate driver passes the following parameters to
     the 
     <b>NdisTcpOffloadReceiveHandler</b> function:
+
 <ul>
 <li>
 The 
@@ -197,19 +199,33 @@ The
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NET_BUFFER_LIST</a>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">NdisTcpOffloadReceiveHandler</a>
 
-<a href="..\ndischimney\nf-ndischimney-ndisinitiateoffload.md">NdisInitiateOffload</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceivereturn.md">NdisOffloadTcpReceiveReturn</a>
 
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">NdisTcpOffloadReceiveHandler</a>
+
 
 <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a>
+
+
+
+<a href="..\ndischimney\nf-ndischimney-ndisinitiateoffload.md">NdisInitiateOffload</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
+
+<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpreceivereturn.md">NdisOffloadTcpReceiveReturn</a>
+
+
 
  
 

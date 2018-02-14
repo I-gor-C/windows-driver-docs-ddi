@@ -96,6 +96,8 @@ For more information about the routine declared by this prototype, see <a href="
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557278">HwScsiAdapterState</a>
 
+
+
  
 
  

@@ -99,7 +99,8 @@ Indicates that the function cannot handle the command, or that other implementat
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 All other return values are ignored by the engine.
 
@@ -120,6 +121,8 @@ DebugExtensionCall is called <b>PDEBUG_EXTENSION_CALL</b>   in the Dbgeng.h head
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+
+
 
  
 

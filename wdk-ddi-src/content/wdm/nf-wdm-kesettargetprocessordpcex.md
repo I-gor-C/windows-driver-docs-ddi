@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a21f3304-9181-4027-9a7e-d590037b4b0f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_86dff32b-f370-4233-a3ec-d8fb3cc5b4cc.xml, KeSetTargetProcessorDpcEx routine [Kernel-Mode Driver Architecture], KeSetTargetProcessorDpcEx, wdm/KeSetTargetProcessorDpcEx, kernel.kesettargetprocessordpcex
+ms.keywords: KeSetTargetProcessorDpcEx routine [Kernel-Mode Driver Architecture], wdm/KeSetTargetProcessorDpcEx, kernel.kesettargetprocessordpcex, KeSetTargetProcessorDpcEx, k105_86dff32b-f370-4233-a3ec-d8fb3cc5b4cc.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a caller-allocated <a href="..\miniport\ns-miniport-_processor_numb
 ## Return Value
 
 <b>KeSetTargetProcessorDpcEx</b> returns STATUS_SUCCESS if the call is successful. Otherwise, it returns the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,17 +114,29 @@ For more information about DPC queues, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 
-<a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
 
-<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-
-<a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a>
 
 <a href="..\wdm\nf-wdm-kesettargetprocessordpc.md">KeSetTargetProcessorDpc</a>
 
-<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
+
+
+<a href="..\wdm\nf-wdm-iorequestdpc.md">IoRequestDpc</a>
+
+
+
+<a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
+
+
+
+<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f6c595f2-a493-453a-a744-7ce6577ae29e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: AtaPortGetPhysicalAddress, atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml, storage.ataportgetphysicaladdress, AtaPortGetPhysicalAddress routine [Storage Devices], irb/AtaPortGetPhysicalAddress
+ms.keywords: irb/AtaPortGetPhysicalAddress, storage.ataportgetphysicaladdress, AtaPortGetPhysicalAddress, AtaPortGetPhysicalAddress routine [Storage Devices], atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,8 @@ Returns the number of mapped bytes starting at the returned physical address.
 ## See Also
 
 <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
+
+
 
  
 

@@ -90,6 +90,8 @@ Many NDK requests can be completed asynchronously. Asynchronous request function
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_accept.md">NDK_FN_ACCEPT</a>
 
+
+
  
 
  

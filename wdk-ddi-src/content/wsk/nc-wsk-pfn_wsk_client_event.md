@@ -40,7 +40,7 @@ apiname:
 -	WskClientEvent
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -93,6 +93,7 @@ The length of the additional information that is contained in the buffer that is
 
 A WSK application's 
      <i>WskClientEvent</i> event callback function can return one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -157,7 +158,11 @@ A WSK application's <i>WskClientEvent</i> event callback function must not wait 
 
 <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 
+
+
 <a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlverifyversioninfo, k109_c0301686-a323-499f-ac04-3bc414b016cd.xml, RtlVerifyVersionInfo, RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], wdm/RtlVerifyVersionInfo
+ms.keywords: RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], kernel.rtlverifyversioninfo, wdm/RtlVerifyVersionInfo, k109_c0301686-a323-499f-ac04-3bc414b016cd.xml, RtlVerifyVersionInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -69,6 +69,7 @@ Pointer to an <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW<
 
 Specifies which members of <i>VersionInfo</i> to compare with the corresponding attributes of the currently running version of the operating system. <i>TypeMask</i> is set to a logical OR of one or more of the following values.
                         
+
 <table>
 <tr>
 <th>Value</th>
@@ -160,6 +161,7 @@ VER_PRODUCT_TYPE
 
 Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>ConditionMask</i>, a caller should use the <b>VER_SET_CONDITION</b> macro:
 						  
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -173,7 +175,9 @@ Specifies how to compare each <b>VersionInfo</b> member. To set the value of <i>
         );</pre>
 </td>
 </tr>
-</table></span></div>The value of <i>ConditionMask</i> is created in the following way:
+</table></span></div>
+The value of <i>ConditionMask</i> is created in the following way:
+
 <ul>
 <li>
 Initialize the value of <i>ConditionMask</i> to zero. 
@@ -190,10 +194,13 @@ Set the <i>TypeBitMask</i> and <i>ComparisonType</i> parameters for each call to
 </ul>
 
 
+
+
 #### TypeBitMask
 
 Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i>TypeBitMask</i> can be one of the following values.
         
+
 <table>
 <tr>
 <th>Value</th>
@@ -279,7 +286,9 @@ VER_PRODUCT_TYPE
 
 </td>
 </tr>
-</table> 
+</table>
+ 
+
 
 
 #### ComparisonType
@@ -288,6 +297,7 @@ Specifies the comparison type that <b>RtlVerifyVersionInfo</b> uses to compare t
         
 
 For all values of <i>TypeBitMask</i> other than VER_SUITENAME, <i>ComparisonType</i> is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -343,9 +353,11 @@ The current value must be less than or equal to the specified value.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If <i>TypeBitMask</i> is set to VER_SUITENAME, <i>ComparisonType</i> is set to of one the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -377,6 +389,7 @@ At least one of the specified product suites must be present in the current syst
 ## Return Value
 
 <b>RtlVerifyVersionInfo</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -422,6 +435,7 @@ The specified version does not match the currently running version of the operat
 <b>RtlVerifyVersionInfo</b> enables a driver to easily verify the presence of a required set of operating system attributes. <b>RtlVerifyVersionInfo</b> is the kernel-mode equivalent of the user-mode <b>VerifyVersionInfo</b> function in the Windows SDK. See the example in the Windows SDK that shows how to verify the system version.
 
 Typically, <b>RtlVerifyVersionInfo</b> returns STATUS_SUCCESS only if all comparisons succeed. However, the major version, minor version, and service pack version are tested in a sequential manner in the following way:
+
 <ul>
 <li>
 If the major version exceeds the minimum required, then the minor version and service pack version are not tested. For example, if the current major version is 6.0, a test for a system greater than or equal to version 5.1 service pack 1 succeeds. The minor version and service pack version are not tested.
@@ -435,7 +449,8 @@ If the minor version exceeds the minimum required, then the service pack version
 If the major service pack version exceeds the minimum required, then the minor service pack version is not tested.
 
 </li>
-</ul>To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.
+</ul>
+To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo</b> twice, once to verify a lower bound on the system version and once to verify an upper bound on the system version.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -451,9 +466,15 @@ If the major service pack version exceeds the minimum required, then the minor s
 
 <a href="..\wdm\ns-wdm-_osversioninfow.md">RTL_OSVERSIONINFOW</a>
 
-<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
+
 
 <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
+
+
+
+<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
+
+
 
  
 

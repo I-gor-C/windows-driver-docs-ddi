@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 32c40be2-dee0-4ac7-9f78-a64b9f985f51
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdftimer/WdfTimerStart, wdf.wdftimerstart, DFTimerObjectRef_42b50b58-85f6-4f1b-9824-f1c9ed675371.xml, kmdf.wdftimerstart, WdfTimerStart, WdfTimerStart method
+ms.keywords: wdftimer/WdfTimerStart, WdfTimerStart method, DFTimerObjectRef_42b50b58-85f6-4f1b-9824-f1c9ed675371.xml, kmdf.wdftimerstart, WdfTimerStart, wdf.wdftimerstart
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,10 @@ If the value is negative, the time period is relative to the current system time
 <li>If the value is positive, the time period specifies an absolute time (which is actually relative to January 1, 1601).</li>
 </ul>
 
-<div class="alert"><b>Warning</b>  If you set the <b>UseHighResolutionTimer</b> member of <a href="..\wdftimer\ns-wdftimer-_wdf_timer_config.md">WDF_TIMER_CONFIG</a> to <b>WdfTrue</b>, you must call <b>WdfTimerStart</b> with the <i>DueTime</i> parameter set to a negative value.  Otherwise, the call causes the system to crash.</div><div> </div>Relative times are not affected by any changes to the system time that might occur within the specified time period. Absolute times do reflect system time changes.
+
+<div class="alert"><b>Warning</b>  If you set the <b>UseHighResolutionTimer</b> member of <a href="..\wdftimer\ns-wdftimer-_wdf_timer_config.md">WDF_TIMER_CONFIG</a> to <b>WdfTrue</b>, you must call <b>WdfTimerStart</b> with the <i>DueTime</i> parameter set to a negative value.  Otherwise, the call causes the system to crash.</div>
+<div> </div>
+Relative times are not affected by any changes to the system time that might occur within the specified time period. Absolute times do reflect system time changes.
 
 The framework provides <a href="https://msdn.microsoft.com/E7D5564D-7BAA-412E-959F-3655B963B4C1">time conversion functions</a> that convert time values into system time units.
 
@@ -106,6 +109,27 @@ To stop the timer's clock, the driver can call <a href="..\wdftimer\nf-wdftimer-
 
 For more information about framework timer objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-timers">Using Timers</a>.
 
+
+#### Examples
+
+The following code example starts a timer. The framework will call the timer's <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> callback function after 10 milliseconds. 
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>BOOLEAN inTimerQueue;
+
+inTimerQueue = WdfTimerStart(
+                             timerHandle,
+                             WDF_REL_TIMEOUT_IN_MS(10)
+                             );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -119,13 +143,21 @@ For more information about framework timer objects, see <a href="https://docs.mi
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
+<a href="..\wdftimer\ns-wdftimer-_wdf_timer_config.md">WDF_TIMER_CONFIG</a>
+
+
 
 <a href="..\wdftimer\nf-wdftimer-wdftimerstop.md">WdfTimerStop</a>
 
-<a href="..\wdftimer\ns-wdftimer-_wdf_timer_config.md">WDF_TIMER_CONFIG</a>
+
+
+<a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
+
+
 
 <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
+
+
 
  
 

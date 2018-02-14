@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, storage.ufs_geometry_descriptor, PUFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR, ufs/PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices]
+ms.keywords: "*PUFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], storage.ufs_geometry_descriptor, UFS_GEOMETRY_DESCRIPTOR, ufs/PUFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -97,6 +97,7 @@ Specifies the allocation unit size in number of segments.
 `bDataOrdering`
 
 Specifies if a device supports out-of-order data transfer. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -124,6 +125,7 @@ Specifies the type of the descriptor. This descriptor will have a value of<b> UF
 
 Specifies a device's spare blocks
 resource management policy. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -156,6 +158,7 @@ Specifies the max size of the data-in buffer in units of 512 bytes. The minium s
 `bMaxNumberLU`
 
 Specifies the maximum number of logical unit(s) supported by the UFS (Universal Flash Storage). Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -203,6 +206,7 @@ Protocol Out. Each frame is 256-bytes.
 `bSupportedSecRTypes`
 
 Specifies the supported Secure Removal types. The first 3 bits of the variable are flags that represent different supported Secure Removal types. 
+
 <table>
 <tr>
 <th>Bit</th>
@@ -316,6 +320,7 @@ Specifies the capacity adjustment factor for the non-persistent memory type.
 `wSupportedMemoryTypes`
 
 Specifies the supported memory types in a bitmap.
+
 <table>
 <tr>
 <th>Bit</th>

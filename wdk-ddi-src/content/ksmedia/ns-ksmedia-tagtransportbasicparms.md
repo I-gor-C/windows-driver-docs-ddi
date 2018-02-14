@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 40e305b3-e91c-4227-99e7-dbb939082f54
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: TRANSPORTBASICPARMS, TRANSPORTBASICPARMS structure [Streaming Media Devices], stream.transportbasicparms, PTRANSPORTBASICPARMS structure pointer [Streaming Media Devices], *PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, tagTRANSPORTBASICPARMS, vidcapstruct_5a5cdf6a-56f3-43ad-9bab-e5d406052707.xml, ksmedia/TRANSPORTBASICPARMS, ksmedia/PTRANSPORTBASICPARMS
+ms.keywords: ksmedia/PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS structure [Streaming Media Devices], ksmedia/TRANSPORTBASICPARMS, stream.transportbasicparms, tagTRANSPORTBASICPARMS, vidcapstruct_5a5cdf6a-56f3-43ad-9bab-e5d406052707.xml, *PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS structure pointer [Streaming Media Devices], TRANSPORTBASICPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -108,6 +108,7 @@ Indicates the edit field.
 `EndStopAction`
 
 Specifies the stop action.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -164,6 +165,7 @@ Indicates the preroll amount.
 `RecordFormat`
 
 Indicates the basic record format.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -212,6 +214,7 @@ Indicates the record timecode delay amount.
 `ServoRef`
 
 Specifies the servo ref.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -266,6 +269,7 @@ Indicates the field step count.
 `SetTracking`
 
 Specifies the tracking.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -318,6 +322,7 @@ Indicates whether to enable or disable the onscreen display. Specify <b>TRUE</b>
 `TimeFormat`
 
 Indicates the basic time format.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -378,6 +383,7 @@ Binary coded decimal, representing tracks, minutes, seconds, and frames
 `TimeReference`
 
 Indicates the basic time reference.
+
 <table>
 <tr>
 <th>Flag</th>

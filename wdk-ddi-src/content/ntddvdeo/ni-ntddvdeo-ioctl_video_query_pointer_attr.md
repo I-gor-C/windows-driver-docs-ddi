@@ -80,6 +80,8 @@ If the miniport driver successfully returns the pointer attributes, it sets the 
 
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
+
+
  
 
  

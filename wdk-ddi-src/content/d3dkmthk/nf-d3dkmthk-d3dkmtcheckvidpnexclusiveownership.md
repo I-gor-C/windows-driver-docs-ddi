@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 06333989-177c-4c58-b95a-60313c04fe35
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMTCheckVidPnExclusiveOwnership, d3dkmthk/D3DKMTCheckVidPnExclusiveOwnership, OpenGL_Functions_edc90d51-f7e4-4bb5-be24-1a32b9fb4461.xml, display.d3dkmtcheckvidpnexclusiveownership, D3DKMTCheckVidPnExclusiveOwnership function [Display Devices]
+ms.keywords: PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, OpenGL_Functions_edc90d51-f7e4-4bb5-be24-1a32b9fb4461.xml, D3DKMTCheckVidPnExclusiveOwnership function [Display Devices], display.d3dkmtcheckvidpnexclusiveownership, d3dkmthk/D3DKMTCheckVidPnExclusiveOwnership, D3DKMTCheckVidPnExclusiveOwnership
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTCheckVidPnExclusiveOwnership</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,7 +129,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -145,6 +147,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
+
+
 
  
 

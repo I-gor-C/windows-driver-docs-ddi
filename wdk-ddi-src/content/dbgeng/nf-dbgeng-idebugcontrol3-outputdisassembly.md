@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 2a9944a4-3885-4e83-b20e-040cffcbf85b
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl2 interface [Windows Debugging], OutputDisassembly method, IDebugControl::OutputDisassembly, debugger.outputdisassembly, OutputDisassembly method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], OutputDisassembly method, IDebugControl2::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::OutputDisassembly, IDebugControl3 interface [Windows Debugging], OutputDisassembly method, OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl3::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::OutputDisassembly, IDebugControl_9f2641b6-ca40-4f1f-85e6-911bb0ab82f8.xml, dbgeng/IDebugControl3::OutputDisassembly, IDebugControl3
+ms.keywords: debugger.outputdisassembly, IDebugControl2::OutputDisassembly, IDebugControl_9f2641b6-ca40-4f1f-85e6-911bb0ab82f8.xml, IDebugControl2, IDebugControl3 interface [Windows Debugging], OutputDisassembly method, dbgeng/IDebugControl2::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl3 interface, IDebugControl3::OutputDisassembly, IDebugControl3, OutputDisassembly method [Windows Debugging], IDebugControl2 interface, IDebugControl, OutputDisassembly method [Windows Debugging], dbgeng/IDebugControl3::OutputDisassembly, dbgeng/IDebugControl::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl interface, OutputDisassembly, IDebugControl::OutputDisassembly, IDebugControl2 interface [Windows Debugging], OutputDisassembly method, IDebugControl interface [Windows Debugging], OutputDisassembly method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,6 +73,7 @@ Specifies the location in the target's memory of the instruction to disassemble.
 `Flags`
 
 Specifies the bit-flags that affect the behavior of this method.  The following table lists the bits that can be set.
+
 <table>
 <tr>
 <th>Bit-Flag</th>
@@ -128,6 +129,7 @@ Receives the location in the target's memory of the instruction that follows the
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -161,15 +163,25 @@ For an overview of using assembly in debugger applications, see <a href="https:/
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553216">OutputDisassemblyLines</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541948">Disassemble</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
 
  
 

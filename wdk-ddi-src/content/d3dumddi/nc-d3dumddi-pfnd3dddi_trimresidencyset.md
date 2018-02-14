@@ -86,6 +86,8 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_trimresidencyset.md">D3DDDIARG_TRIMRESIDENCYSET</a>
 
+
+
  
 
  

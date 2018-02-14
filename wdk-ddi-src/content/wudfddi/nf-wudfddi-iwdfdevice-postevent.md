@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3df25c91-d421-48fe-958c-48bce3bc78b8
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFDevice::PostEvent, wdf.iwdfdevice_postevent, umdf.iwdfdevice_postevent, PostEvent, PostEvent method, IWDFDevice interface, UMDFDeviceObjectRef_7ba57249-59f4-4782-8846-717edf86dde1.xml, IWDFDevice, IWDFDevice interface, PostEvent method, wudfddi/IWDFDevice::PostEvent, PostEvent method
+ms.keywords: UMDFDeviceObjectRef_7ba57249-59f4-4782-8846-717edf86dde1.xml, IWDFDevice, IWDFDevice::PostEvent, umdf.iwdfdevice_postevent, PostEvent, IWDFDevice interface, PostEvent method, PostEvent method, wudfddi/IWDFDevice::PostEvent, PostEvent method, IWDFDevice interface, wdf.iwdfdevice_postevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -85,6 +85,7 @@ The maximum size of the event data is slightly less than MAXUSHORT (64 KB). The 
 ## Return Value
 
 <b>PostEvent</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -135,7 +136,8 @@ The <i>EventType</i> parameter is not set to <b>WdfEventBroadcast</b> (1).
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>PostEvent</b> might also return other HRESULT values.
 
@@ -159,11 +161,19 @@ For information about creating device events, see <a href="https://docs.microsof
 
 <a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
 
-<a href="..\wdm\nf-wdm-field_offset.md">FIELD_OFFSET</a>
+
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
+
+
+<a href="..\wdm\nf-wdm-field_offset.md">FIELD_OFFSET</a>
+
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
+
+
 
  
 

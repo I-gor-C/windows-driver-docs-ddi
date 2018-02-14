@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ec6e75e8-f24a-4d76-b6e1-af35b5402f91
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.nmrwaitforproviderderegistercomplete, NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], NmrWaitForProviderDeregisterComplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml, netioddk/NmrWaitForProviderDeregisterComplete
+ms.keywords: NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], netvista.nmrwaitforproviderderegistercomplete, netioddk/NmrWaitForProviderDeregisterComplete, NmrWaitForProviderDeregisterComplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A handle used by the NMR to represent the registration of the provider module. T
 
 The 
      <b>NmrWaitForProviderDeregisterComplete</b> function returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -152,6 +153,8 @@ A provider module typically calls the
 ## See Also
 
 <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
+
+
 
  
 

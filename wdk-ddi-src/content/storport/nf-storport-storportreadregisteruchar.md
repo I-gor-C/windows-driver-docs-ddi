@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortReadRegisterUchar
-title: StorPortReadRegisterUchar function
+title: StorPortReadRegisterUchar macro
 author: windows-driver-content
 description: The StorPortReadRegisterUchar routine reads a value from a specified register address.
 old-location: storage\storportreadregisteruchar.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 1edf800d-f097-4d3f-ae89-1b11e4f82f2d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortReadRegisterUchar, StorPortReadRegisterUchar routine [Storage Devices], storprt_9f2898e2-6b5e-45ae-9162-57c58a3471f7.xml, StorPortReadRegisterUchar, storage.storportreadregisteruchar
+ms.keywords: storprt_9f2898e2-6b5e-45ae-9162-57c58a3471f7.xml, storport/StorPortReadRegisterUchar, StorPortReadRegisterUchar routine [Storage Devices], storage.storportreadregisteruchar, StorPortReadRegisterUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -62,16 +62,16 @@ STORPORT_API UCHAR StorPortReadRegisterUchar(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Register`
 
-Pointer to the register where the data is to be read.
+
 
 
 ## Return Value
 
-<b>StorPortReadRegisterUchar</b> returns an unsigned character of data read from the indicated register address.
+None
 
 ## Remarks
 
@@ -86,9 +86,13 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisteruchar.md">S
 
 ## See Also
 
+<a href="..\srb\nf-srb-scsiportreadregisteruchar.md">ScsiPortReadRegisterUchar</a>
+
+
+
 <a href="..\storport\nf-storport-storportreadregisterbufferuchar.md">StorPortReadRegisterBufferUchar</a>
 
-<a href="..\srb\nf-srb-scsiportreadregisteruchar.md">ScsiPortReadRegisterUchar</a>
+
 
  
 

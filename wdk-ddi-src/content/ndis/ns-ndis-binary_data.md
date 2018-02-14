@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 2d629905-49aa-4b66-83f3-0aecb72b73ea
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis_configuration_ref_50fc50e5-52d2-4e25-a03b-6c581e50fef1.xml, BINARY_DATA, BINARY_DATA structure [Network Drivers Starting with Windows Vista], netvista.binary_data, ndis/BINARY_DATA
+ms.keywords: BINARY_DATA structure [Network Drivers Starting with Windows Vista], netvista.binary_data, BINARY_DATA, ndis_configuration_ref_50fc50e5-52d2-4e25-a03b-6c581e50fef1.xml, ndis/BINARY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,8 @@ The BINARY_DATA structure is used in the
 ## See Also
 
 <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e2a19bb1-631d-4160-9980-f3cbeb0b085a
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: strmini/PHW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK, strclass-struct_4b0da124-b08a-49fe-acbc-9457db500b26.xml, HW_STREAM_REQUEST_BLOCK structure [Streaming Media Devices], strmini/HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK, stream.hw_stream_request_block, _HW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], HW_STREAM_REQUEST_BLOCK
+ms.keywords: PHW_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], HW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK, strclass-struct_4b0da124-b08a-49fe-acbc-9457db500b26.xml, *PHW_STREAM_REQUEST_BLOCK, _HW_STREAM_REQUEST_BLOCK, strmini/PHW_STREAM_REQUEST_BLOCK, stream.hw_stream_request_block, strmini/HW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK structure [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	HW_STREAM_REQUEST_BLOCK
 product: Windows
 targetos: Windows
-req.typenames: "*PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK"
+req.typenames: HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -111,6 +111,7 @@ Specifies the operation to be performed by the minidriver's callback. The class 
 `Flags`
 
 Specifies the type of request. The class driver and the minidriver can use this member to determine which callback the class driver passed this stream request block to.
+
 <table>
 <tr>
 <th>Value</th>
@@ -152,7 +153,8 @@ SRB_HW_FLAGS_DATA_TRANSFER | SRB_HW_FLAGS_STREAM_REQUEST
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 SRB_HW_FLAGS_STREAM_REQUEST bit is set for stream-specific requests (which are passed to the minidriver's <b>StrMiniReceiveStream</b><i>Xxx</i><b>Packet</b> routines). The SRB_HW_FLAGS_DATA_TRANSFER bit is set for data transfer requests (which are passed to the minidriver's
 
@@ -191,6 +193,7 @@ Specifies the number of physical elements pointed to by <b>ScatterGatherBuffer</
 `ScatterGatherBuffer`
 
 Points to an array of KSSCATTER_GATHER structures, of the form:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -203,7 +206,8 @@ Points to an array of KSSCATTER_GATHER structures, of the form:
 } KSSCATTER_GATHER, *PKSSCATTER_GATHER;</pre>
 </td>
 </tr>
-</table></span></div>The array describes a scatter/gather list that can be used by the minidriver to do DMA. The memory does not need to be probed, locked, mapped, or flushed -- the stream class driver performs these for the minidriver.
+</table></span></div>
+The array describes a scatter/gather list that can be used by the minidriver to do DMA. The memory does not need to be probed, locked, mapped, or flushed -- the stream class driver performs these for the minidriver.
 
 `SizeOfThisPacket`
 

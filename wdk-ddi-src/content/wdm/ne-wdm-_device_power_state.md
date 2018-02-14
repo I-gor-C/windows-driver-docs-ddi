@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d3166685-2aec-4874-a5a9-8cc293a96a2c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PDEVICE_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], PowerDeviceD2, sysenum_4f65cc59-f3a2-42ef-a8bb-7a2d178a6be7.xml, PowerDeviceD3, DEVICE_POWER_STATE enumeration [Kernel-Mode Driver Architecture], PDEVICE_POWER_STATE, PowerDeviceD1, wdm/DEVICE_POWER_STATE, wdm/PowerDeviceD3, PowerDeviceUnspecified, PowerDeviceD0, wdm/PowerDeviceD1, wdm/PowerDeviceMaximum, DEVICE_POWER_STATE, PowerDeviceMaximum, wdm/PowerDeviceD0, *PDEVICE_POWER_STATE, kernel.device_power_state, wdm/PowerDeviceUnspecified, wdm/PowerDeviceD2, wdm/PDEVICE_POWER_STATE, _DEVICE_POWER_STATE
+ms.keywords: wdm/PowerDeviceD1, PowerDeviceD2, wdm/PowerDeviceD2, wdm/PDEVICE_POWER_STATE, *PDEVICE_POWER_STATE, DEVICE_POWER_STATE, PowerDeviceUnspecified, PowerDeviceD0, wdm/PowerDeviceD0, wdm/PowerDeviceD3, PDEVICE_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], wdm/PowerDeviceUnspecified, wdm/PowerDeviceMaximum, _DEVICE_POWER_STATE, PowerDeviceMaximum, PowerDeviceD1, kernel.device_power_state, wdm/DEVICE_POWER_STATE, sysenum_4f65cc59-f3a2-42ef-a8bb-7a2d178a6be7.xml, PDEVICE_POWER_STATE, DEVICE_POWER_STATE enumeration [Kernel-Mode Driver Architecture], PowerDeviceD3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Called at PASSIVE_LEVEL.
 topictype:
 -	APIRef
 -	kbSyntax
@@ -40,7 +40,7 @@ apiname:
 -	DEVICE_POWER_STATE
 product: Windows
 targetos: Windows
-req.typenames: DEVICE_POWER_STATE, *PDEVICE_POWER_STATE
+req.typenames: "*PDEVICE_POWER_STATE, DEVICE_POWER_STATE"
 req.product: Windows 10 or later.
 ---
 
@@ -108,6 +108,8 @@ For more information about system power states, see <a href="https://msdn.micros
     ## See Also
 
         <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
+
+
 
  
 

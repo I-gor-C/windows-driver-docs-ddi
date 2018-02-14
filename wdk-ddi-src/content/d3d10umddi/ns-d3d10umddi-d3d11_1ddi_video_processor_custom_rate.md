@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d7ea23de-1d2d-4a76-aa99-0b18bf50654c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, display.d3d11_1ddi_video_processor_custom_rate, D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE structure [Display Devices], display.d3d11_1ddi_video_processor_custom_rate, D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -87,6 +87,8 @@ The <b>CustomRate</b> member gives the rate conversion factor, while the remaini
 ## See Also
 
 <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 4bbcf4d3-e1f9-4e13-ac56-92ffddea1f67
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdevice/WdfDeviceInitSetExclusive, WdfDeviceInitSetExclusive, kmdf.wdfdeviceinitsetexclusive, DFDeviceObjectGeneralRef_fb2fbd3a-e78a-4632-b84f-b3e62a6efc94.xml, PFN_WDFDEVICEINITSETEXCLUSIVE, WdfDeviceInitSetExclusive method, wdf.wdfdeviceinitsetexclusive
+ms.keywords: DFDeviceObjectGeneralRef_fb2fbd3a-e78a-4632-b84f-b3e62a6efc94.xml, wdf.wdfdeviceinitsetexclusive, WdfDeviceInitSetExclusive method, PFN_WDFDEVICEINITSETEXCLUSIVE, WdfDeviceInitSetExclusive, wdfdevice/WdfDeviceInitSetExclusive, kmdf.wdfdeviceinitsetexclusive
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,25 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 
       If you are writing a UMDF driver, you  must modify your driver's INF file or make registry changes to indicate whether the device is exclusive. For more information about using the registry, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563759">Setting Device Object Registry Properties During Installation</a>.
 
+
+#### Examples
+
+The following code example indicates that a device is an exclusive device.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceInitSetExclusive(
+                          DeviceInit,
+                          TRUE
+                          );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,9 +117,13 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 
 ## See Also
 
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
 
  
 

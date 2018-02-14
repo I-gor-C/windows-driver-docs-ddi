@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a8b22839-6a5d-48e2-a0e5-dae811d729ef
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PHYSICAL_COUNTER_RESOURCE_LIST, ntddk/PHYSICAL_COUNTER_RESOURCE_LIST, ntddk/PPHYSICAL_COUNTER_RESOURCE_LIST, _PHYSICAL_COUNTER_RESOURCE_LIST, kernel.physical_counter_resource_list, *PPHYSICAL_COUNTER_RESOURCE_LIST, kstruct_c_17d0a58a-6ac5-4360-a481-d33f0942b521.xml, PPHYSICAL_COUNTER_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], PPHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST structure [Kernel-Mode Driver Architecture]
+ms.keywords: PHYSICAL_COUNTER_RESOURCE_LIST, *PPHYSICAL_COUNTER_RESOURCE_LIST, kstruct_c_17d0a58a-6ac5-4360-a481-d33f0942b521.xml, PPHYSICAL_COUNTER_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], ntddk/PHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], _PHYSICAL_COUNTER_RESOURCE_LIST, kernel.physical_counter_resource_list, ntddk/PPHYSICAL_COUNTER_RESOURCE_LIST, PPHYSICAL_COUNTER_RESOURCE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PHYSICAL_COUNTER_RESOURCE_LIST
 product: Windows
 targetos: Windows
-req.typenames: PHYSICAL_COUNTER_RESOURCE_LIST, *PPHYSICAL_COUNTER_RESOURCE_LIST
+req.typenames: "*PPHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST"
 ---
 
 # _PHYSICAL_COUNTER_RESOURCE_LIST structure
@@ -82,7 +82,11 @@ The <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwa
 
 <a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
 
+
+
 <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
+
+
 
  
 

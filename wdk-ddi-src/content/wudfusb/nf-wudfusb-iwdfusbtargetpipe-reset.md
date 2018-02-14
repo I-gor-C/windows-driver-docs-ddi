@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8d42dd60-a032-4486-87e0-2204e833035b
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.iwdfusbtargetpipe_reset, IWDFUsbTargetPipe interface, Reset method, UMDFUSBref_510f6831-e75f-41b6-9637-7400fe89e4d3.xml, Reset method, IWDFUsbTargetPipe interface, umdf.iwdfusbtargetpipe_reset, IWDFUsbTargetPipe, Reset method, IWDFUsbTargetPipe::Reset, Reset, wudfusb/IWDFUsbTargetPipe::Reset
+ms.keywords: IWDFUsbTargetPipe, UMDFUSBref_510f6831-e75f-41b6-9637-7400fe89e4d3.xml, IWDFUsbTargetPipe::Reset, Reset method, IWDFUsbTargetPipe interface, umdf.iwdfusbtargetpipe_reset, wudfusb/IWDFUsbTargetPipe::Reset, Reset method, Reset, IWDFUsbTargetPipe interface, Reset method, wdf.iwdfusbtargetpipe_reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IWDFUsbTargetPipe.Reset
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -63,6 +63,7 @@ This function has no parameters.
 ## Return Value
 
 <b>Reset</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,7 +126,11 @@ For more information about how <b>Reset</b> works, see the <a href="https://msdn
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a>
 
+
+
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
+
+
 
  
 

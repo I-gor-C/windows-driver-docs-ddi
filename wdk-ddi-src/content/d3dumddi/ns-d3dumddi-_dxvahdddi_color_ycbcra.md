@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e2a624e9-599e-4325-820b-945b3e649323
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DXVAHDDDI_COLOR_YCbCrA structure [Display Devices], _DXVAHDDDI_COLOR_YCbCrA, d3dumddi/DXVAHDDDI_COLOR_YCbCrA, display.dxvahdddi_color_ycbcra, DXVAHDDDI_COLOR_YCbCrA, DXVA2_Structs_28a4ec5c-f8e6-414b-ac91-846e3b0fdbf8.xml
+ms.keywords: DXVAHDDDI_COLOR_YCbCrA, display.dxvahdddi_color_ycbcra, _DXVAHDDDI_COLOR_YCbCrA, DXVA2_Structs_28a4ec5c-f8e6-414b-ac91-846e3b0fdbf8.xml, d3dumddi/DXVAHDDDI_COLOR_YCbCrA, DXVAHDDDI_COLOR_YCbCrA structure [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,6 +89,8 @@ A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>YCbCr</b> member of th
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color.md">DXVAHDDDI_COLOR</a>
+
+
 
  
 

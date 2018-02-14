@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 72D0BEC2-F5D5-4045-AD63-F263993817B0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PepDeviceAccepted, kernel.pep_device_acceptance_type, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepDeviceNotAccepted, pepfx/PepDeviceAcceptedMax, pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceAcceptedMax, PepDeviceAcceptedReserved, pepfx/PepDeviceAcceptedReserved, pepfx/PepDeviceAccepted, _PEP_DEVICE_ACCEPTANCE_TYPE, *PPEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceNotAccepted, PEP_DEVICE_ACCEPTANCE_TYPE
+ms.keywords: PepDeviceAcceptedReserved, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepDeviceAcceptedMax, PepDeviceNotAccepted, PEP_DEVICE_ACCEPTANCE_TYPE, *PPEP_DEVICE_ACCEPTANCE_TYPE, kernel.pep_device_acceptance_type, PepDeviceAccepted, _PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceNotAccepted, pepfx/PepDeviceAccepted, pepfx/PepDeviceAcceptedReserved, PepDeviceAcceptedMax
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -89,6 +89,8 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
     ## See Also
 
         <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
+
+
 
  
 

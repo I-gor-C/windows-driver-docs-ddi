@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: bce932a6-2f73-4d0e-8616-45fd41abb776
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: CreateSymbolicLinkWithReferenceString method, IWDFDevice2 interface, CreateSymbolicLinkWithReferenceString method, IWDFDevice2 interface, CreateSymbolicLinkWithReferenceString method, umdf.iwdfdevice2_createsymboliclinkwithreferencestring, UMDFDeviceObjectRef_40f806fa-5db7-48db-b3c7-0f338947887e.xml, IWDFDevice2::CreateSymbolicLinkWithReferenceString, CreateSymbolicLinkWithReferenceString, wdf.iwdfdevice2_createsymboliclinkwithreferencestring, wudfddi/IWDFDevice2::CreateSymbolicLinkWithReferenceString, IWDFDevice2
+ms.keywords: IWDFDevice2 interface, CreateSymbolicLinkWithReferenceString method, umdf.iwdfdevice2_createsymboliclinkwithreferencestring, UMDFDeviceObjectRef_40f806fa-5db7-48db-b3c7-0f338947887e.xml, CreateSymbolicLinkWithReferenceString method, IWDFDevice2 interface, IWDFDevice2::CreateSymbolicLinkWithReferenceString, CreateSymbolicLinkWithReferenceString method, wdf.iwdfdevice2_createsymboliclinkwithreferencestring, IWDFDevice2, wudfddi/IWDFDevice2::CreateSymbolicLinkWithReferenceString, CreateSymbolicLinkWithReferenceString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,6 +73,7 @@ A pointer to a <b>NULL</b>-terminated character string that Windows appends to t
 ## Return Value
 
 <b>CreateSymbolicLinkWithReferenceString</b> returns S_OK if the operation succeeds. Otherwise, the method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,7 +101,8 @@ The memory allocation failed.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might return one of the other values that Winerror.h contains.
 
@@ -116,6 +118,67 @@ If the device is removed unexpectedly (surprise-removed), the framework removes 
 
 If you do not need to add a reference string to your device's symbolic link name, your driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a> instead of <b>CreateSymbolicLinkWithReferenceString</b>.
 
+
+#### Examples
+
+
+          The following line defines a symbolic link name prefix in the global <b>DosDevices</b> namespace.
+        
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define SYMBOLIC_LINK_NAME_PREFIX   L"\\DosDevices\\Global\\"</pre>
+</td>
+</tr>
+</table></span></div>
+The following code example creates a symbolic name string, obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface, and then calls <b>CreateSymbolicLinkWithReferenceString</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>
+    IWDFDevice2 *pDevice2 = NULL;
+    HRESULT hr;
+
+    //
+    // Create symbolic link name string.
+    //
+    hr = StringCchPrintf(portFullName,
+                         portFullNameLength,
+                         L"%ws%ws",
+                         SYMBOLIC_LINK_NAME_PREFIX,
+                         portName);
+    if (FAILED(hr))
+    {
+        goto Exit;
+    }
+
+    //
+    // Get a pointer to the IWDFDevice2 interface.
+    //
+    hr = pIWDFDevice-&gt;QueryInterface(__uuidof(IWDFDevice2),
+                                     (void**) &amp;pDevice2);
+    if (SUCCEEDED(hr)) 
+    {
+    hr = pDevice2-&gt;CreateSymbolicLinkWithReferenceString(portFullName,
+                                                         portCountString);
+    if (FAILED(hr))
+        {
+            goto Exit;
+        }
+        SAFE_RELEASE(pDevice2);
+    }</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -128,9 +191,13 @@ If you do not need to add a reference string to your device's symbolic link name
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
 
  
 

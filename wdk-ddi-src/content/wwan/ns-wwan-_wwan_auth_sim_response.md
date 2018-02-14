@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: C259CA95-D119-47EB-A32D-9C9E284B6CD4
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "_WWAN_AUTH_SIM_RESPONSE, PWWAN_AUTH_SIM_RESPONSE, wwan/WWAN_AUTH_SIM_RESPONSE, wwan/PWWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE structure [Network Drivers Starting with Windows Vista], PWWAN_AUTH_SIM_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_AUTH_SIM_RESPONSE, netvista.wwan_auth_sim_response"
+ms.keywords: "_WWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE, *PWWAN_AUTH_SIM_RESPONSE, PWWAN_AUTH_SIM_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_SIM_RESPONSE, netvista.wwan_auth_sim_response, WWAN_AUTH_SIM_RESPONSE structure [Network Drivers Starting with Windows Vista], PWWAN_AUTH_SIM_RESPONSE, wwan/WWAN_AUTH_SIM_RESPONSE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -105,6 +105,8 @@ The <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a> stru
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a>
+
+
 
  
 

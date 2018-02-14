@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: AF001441-4031-4E29-B459-1597BFCAEF4C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: "*PPEP_PPM_CST_STATE, PPEP_PPM_CST_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_CST_STATE, PPEP_PPM_CST_STATE, kernel.pep_ppm_cst_state, pepfx/PPEP_PPM_CST_STATE, PEP_PPM_CST_STATE, PEP_PPM_CST_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_CST_STATE"
+ms.keywords: "*PPEP_PPM_CST_STATE, PPEP_PPM_CST_STATE, _PEP_PPM_CST_STATE, PEP_PPM_CST_STATE structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_cst_state, pepfx/PEP_PPM_CST_STATE, PPEP_PPM_CST_STATE structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_CST_STATE, PEP_PPM_CST_STATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -66,6 +66,7 @@ typedef struct _PEP_PPM_CST_STATE {
 `AccessSize`
 
 The register access size (_ASZ) code for this C state. This member specifies the number of bytes to read during an access of the register for this C state. Valid access size codes are shown in the following table.
+
 <table>
 <tr>
 <th>Access size code</th>
@@ -100,6 +101,7 @@ The register address (_ADR) for this C state.
 `AddressSpaceId`
 
 The register address space ID (_ASI) for this C state. This member specifies the address space in which the register for this C state is located. The following IDs are defined for this member.
+
 <table>
 <tr>
 <th>ID</th>
@@ -168,9 +170,13 @@ The values in the <b>PEP_PPM_CST_STATE</b> structure are obtained from the param
 
 ## See Also
 
+<a href="..\pepfx\ns-pepfx-_pep_ppm_cst_states.md">PEP_PPM_CST_STATES</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a>
 
-<a href="..\pepfx\ns-pepfx-_pep_ppm_cst_states.md">PEP_PPM_CST_STATES</a>
+
 
  
 

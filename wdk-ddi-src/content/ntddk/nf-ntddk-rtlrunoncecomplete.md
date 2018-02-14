@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1cdc4fde-2370-4e58-9e67-dec731cdb935
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlRunOnceComplete routine [Kernel-Mode Driver Architecture], k109_00290091-7130-4217-8098-0baa7309223c.xml, ntddk/RtlRunOnceComplete, RtlRunOnceComplete, kernel.rtlrunoncecomplete
+ms.keywords: ntddk/RtlRunOnceComplete, RtlRunOnceComplete routine [Kernel-Mode Driver Architecture], k109_00290091-7130-4217-8098-0baa7309223c.xml, RtlRunOnceComplete, kernel.rtlrunoncecomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	RtlRunOnceComplete
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -70,9 +70,11 @@ Drivers can optionally specify one or more of the following flags:
 
 
 
+
 #### RTL_RUN_ONCE_ASYNC
 
 Operate in asynchronous mode. This mode enables multiple completion attempts to execute in parallel. If this flag is used, subsequent calls to the <b>RtlRunOnceComplete</b> routine will fail unless this flag is also specified.
+
 
 
 #### RTL_RUN_ONCE_INIT_FAILED
@@ -87,6 +89,7 @@ Specifies the initialized data.
 ## Return Value
 
 <b>RtlRunOnceComplete</b> returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -134,15 +137,25 @@ If the caller specified RTL_RUN_ONCE_ASYNC in the <i>Flags</i> parameter and <b>
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
+
+
 
 <a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
+
+
 
 <a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
+
+
+<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+
+
 
  
 

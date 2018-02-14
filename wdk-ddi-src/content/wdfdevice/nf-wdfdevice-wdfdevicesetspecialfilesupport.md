@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 7648c486-181a-45c8-9c4b-e3158428046a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdevice/WdfDeviceSetSpecialFileSupport, WdfDeviceSetSpecialFileSupport method, PFN_WDFDEVICESETSPECIALFILESUPPORT, kmdf.wdfdevicesetspecialfilesupport, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, WdfDeviceSetSpecialFileSupport, wdf.wdfdevicesetspecialfilesupport
+ms.keywords: wdf.wdfdevicesetspecialfilesupport, WdfDeviceSetSpecialFileSupport, WdfDeviceSetSpecialFileSupport method, kmdf.wdfdevicesetspecialfilesupport, PFN_WDFDEVICESETSPECIALFILESUPPORT, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, wdfdevice/WdfDeviceSetSpecialFileSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,6 +90,36 @@ Each driver's support for special files is initially disabled until the driver c
 
 For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
 
+
+#### Examples
+
+The following code example enables support for paging, hibernation, and dump files on a device.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceSetSpecialFileSupport(
+                               device,
+                               WdfSpecialFilePaging,
+                               TRUE
+                               );
+WdfDeviceSetSpecialFileSupport(
+                               device,
+                               WdfSpecialFileHibernation,
+                               TRUE
+                               );
+WdfDeviceSetSpecialFileSupport(
+                               device,
+                               WdfSpecialFileDump,
+                               TRUE
+                               );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -102,9 +132,13 @@ For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999
 
 ## See Also
 
+<a href="..\wdfdevice\ne-wdfdevice-_wdf_special_file_type.md">WDF_SPECIAL_FILE_TYPE</a>
+
+
+
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_special_file_type.md">WDF_SPECIAL_FILE_TYPE</a>
+
 
  
 

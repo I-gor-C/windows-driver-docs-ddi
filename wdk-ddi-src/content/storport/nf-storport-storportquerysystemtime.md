@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 20677d16-136c-47d7-a19b-21731433298e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortQuerySystemTime routine [Storage Devices], storprt_fcad0e23-f796-4cd9-935c-6db56a63d899.xml, StorPortQuerySystemTime, storage.storportquerysystemtime, storport/StorPortQuerySystemTime
+ms.keywords: StorPortQuerySystemTime routine [Storage Devices], StorPortQuerySystemTime, storport/StorPortQuerySystemTime, storprt_fcad0e23-f796-4cd9-935c-6db56a63d899.xml, storage.storportquerysystemtime
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,8 @@ The system time returned in <i>CurrentTime</i> is the number of 100-nanosecond i
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportquerysystemtime.md">ScsiPortQuerySystemTime</a>
+
+
 
  
 

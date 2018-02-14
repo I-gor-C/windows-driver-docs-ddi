@@ -7,8 +7,8 @@ old-location: whea\whea_pcixbus_error_section.htm
 old-project: whea
 ms.assetid: f79071e3-7146-49c4-a730-ee13fde4f0d4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR, ntddk/PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION structure [WHEA Drivers and Applications], *PWHEA_PCIXBUS_ERROR, *PWHEA_PCIXBUS_ERROR_SECTION, whearef_6979fd7e-8c18-443b-b9be-1e78316dcd7d.xml, WHEA_PCIXBUS_ERROR_SECTION, _WHEA_PCIXBUS_ERROR_SECTION, PWHEA_PCIXBUS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], ntddk/WHEA_PCIXBUS_ERROR_SECTION, whea.whea_pcixbus_error_section
+ms.date: 2/8/2018
+ms.keywords: WHEA_PCIXBUS_ERROR_SECTION, ntddk/WHEA_PCIXBUS_ERROR_SECTION, PWHEA_PCIXBUS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], _WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR, WHEA_PCIXBUS_ERROR, ntddk/PWHEA_PCIXBUS_ERROR_SECTION, PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION structure [WHEA Drivers and Applications], whea.whea_pcixbus_error_section, whearef_6979fd7e-8c18-443b-b9be-1e78316dcd7d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,6 +75,7 @@ This member contains valid data only if the <b>ValidBits.BusAddress</b> bit is s
 `BusCommand`
 
 A WHEA_PCIXBUS_COMMAND union that contains the bus command when the error occurred. The WHEA_PCIXBUS_COMMAND union is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -93,7 +94,7 @@ A WHEA_PCIXBUS_COMMAND union that contains the bus command when the error occurr
 </tr>
 </table></span></div>
 
-This member contains valid data only if the <b>ValidBits.BusCommand</b> bit is set.
+
 
 
 #### Command
@@ -101,9 +102,11 @@ This member contains valid data only if the <b>ValidBits.BusCommand</b> bit is s
 The PCI or PCI-X bus command.
 
 
+
 #### PCIXCommand
 
 A single bit that indicates that the command is a PCI-X command.
+
 
 
 #### Reserved
@@ -111,9 +114,12 @@ A single bit that indicates that the command is a PCI-X command.
 Reserved for system use.
 
 
+
 #### AsULONGLONG
 
 A ULONGLONG representation of the contents of the WHEA_PCIXBUS_COMMAND union.
+
+This member contains valid data only if the <b>ValidBits.BusCommand</b> bit is set.
 
 `BusData`
 
@@ -124,6 +130,7 @@ This member contains valid data only if the <b>ValidBits.BusData</b> bit is set.
 `BusId`
 
 A WHEA_PCIXBUS_ID union that identifies the bus where the error occurred. The WHEA_PCIXBUS_ID union is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -141,7 +148,7 @@ A WHEA_PCIXBUS_ID union that identifies the bus where the error occurred. The WH
 </tr>
 </table></span></div>
 
-This member contains valid data only if the <b>ValidBits.BusId</b> bit is set.
+
 
 
 #### BusNumber
@@ -149,14 +156,18 @@ This member contains valid data only if the <b>ValidBits.BusId</b> bit is set.
 The bus number.
 
 
+
 #### BusSegment
 
 The bus segment.
 
 
+
 #### AsUSHORT
 
 A USHORT representation of the contents of the WHEA_PCIXBUS_ID union.
+
+This member contains valid data only if the <b>ValidBits.BusId</b> bit is set.
 
 `CompleterId`
 
@@ -176,7 +187,6 @@ The type of PCI or PCI-X bus error that occurred. Possible values are:
 
 
 
-This member contains valid data only if the <b>ValidBits.ErrorType</b> bit is set.
 
 
 #### PCIXBUS_ERRTYPE_UNKNOWN
@@ -184,9 +194,11 @@ This member contains valid data only if the <b>ValidBits.ErrorType</b> bit is se
 An unknown or platform-specific error.
 
 
+
 #### PCIXBUS_ERRTYPE_DATAPARITY
 
 A data parity error.
+
 
 
 #### PCIXBUS_ERRTYPE_SYSTEM
@@ -194,9 +206,11 @@ A data parity error.
 A system error.
 
 
+
 #### PCIXBUS_ERRTYPE_MASTERABORT
 
 A master abort.
+
 
 
 #### PCIXBUS_ERRTYPE_BUSTIMEOUT
@@ -204,9 +218,11 @@ A master abort.
 A bus timeout, or no device is present.
 
 
+
 #### PCIXBUS_ERRTYPE_MASTERDATAPARITY
 
 A master data parity error.
+
 
 
 #### PCIXBUS_ERRTYPE_ADDRESSPARITY
@@ -214,9 +230,12 @@ A master data parity error.
 An address parity error.
 
 
+
 #### PCIXBUS_ERRTYPE_COMMANDPARITY
 
 A command parity error.
+
+This member contains valid data only if the <b>ValidBits.ErrorType</b> bit is set.
 
 `RequesterId`
 
@@ -251,14 +270,22 @@ The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contai
 
 <a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section_validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
+
 
 <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 
- 
+
+
+<a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section_validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PCIXBUS_ERROR_SECTION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PCIXBUS_ERROR_SECTION structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

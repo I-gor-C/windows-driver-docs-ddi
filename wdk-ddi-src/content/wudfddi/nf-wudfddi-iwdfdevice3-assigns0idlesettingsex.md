@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: D020B8AA-7353-47E1-A111-82BFE6F5F03D
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi/IWDFDevice3::AssignS0IdleSettingsEx, AssignS0IdleSettingsEx method, IWDFDevice3::AssignS0IdleSettingsEx, AssignS0IdleSettingsEx, AssignS0IdleSettingsEx method, IWDFDevice3 interface, umdf.iwdfdevice3_assigns0idlesettingsex, IWDFDevice3 interface, AssignS0IdleSettingsEx method, IWDFDevice3, wdf.iwdfdevice3_assigns0idlesettingsex
+ms.keywords: AssignS0IdleSettingsEx, wdf.iwdfdevice3_assigns0idlesettingsex, wudfddi/IWDFDevice3::AssignS0IdleSettingsEx, IWDFDevice3 interface, AssignS0IdleSettingsEx method, IWDFDevice3::AssignS0IdleSettingsEx, AssignS0IdleSettingsEx method, IWDFDevice3 interface, IWDFDevice3, AssignS0IdleSettingsEx method, umdf.iwdfdevice3_assigns0idlesettingsex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -78,6 +78,48 @@ If your driver calls <b>AssignS0IdleSettingsEx</b> more than once, follow the ru
 
 For more information about idle power-down, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-idle-power-down-in-umdf-drivers">Supporting Idle Power-Down in UMDF-based Drivers</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wudfddi_types\ns-wudfddi_types-_wudf_device_power_policy_idle_settings.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure and sets an idle time-out value of 10 seconds. The example then obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface and calls <b>AssignS0IdleSettingsEx</b>. 
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>IWDFDevice3 *pIWDFDevice3 = NULL;
+HRESULT hr;
+
+WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS  idleSettings;
+
+WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(
+                                           &amp;idleSettings,
+                                           IdleCanWakeFromS0
+                                           );
+idleSettings.IdleTimeout = 10000;
+
+//
+// Get a pointer to the IWDFDevice3 interface.
+//
+
+hr = pIWDFDevice-&gt;QueryInterface(__uuidof(IWDFDevice3),
+                                 (void**) &amp;pIWDFDevice3);
+if (SUCCEEDED(hr)) 
+   {
+    
+   hr = pIWDFDevice3-&gt;AssignS0IdleSettingsEx(&amp;idleSettings
+                                            );
+   }
+...
+
+SAFE_RELEASE(pIWDFDevice3);
+   </pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -90,11 +132,17 @@ For more information about idle power-down, see <a href="https://docs.microsoft.
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigns0idlesettings.md">WdfDeviceAssignS0IdleSettings</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
+
+
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigns0idlesettings.md">WdfDeviceAssignS0IdleSettings</a>
+
 
  
 

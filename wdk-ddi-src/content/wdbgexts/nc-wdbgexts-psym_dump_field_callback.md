@@ -40,7 +40,7 @@ apiname:
 -	PSYM_DUMP_FIELD_CALLBACK
 product: Windows
 targetos: Windows
-req.typenames: "*PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT"
+req.typenames: VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
 req.product: Windows 10 or later.
 ---
 
@@ -89,9 +89,15 @@ If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing 
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 
-<a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
+
 
 <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+
+
+
+<a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
+
+
 
  
 

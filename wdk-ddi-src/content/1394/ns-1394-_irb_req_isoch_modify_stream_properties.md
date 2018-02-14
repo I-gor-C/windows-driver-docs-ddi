@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 06CA5F26-8042-4EAC-A381-A0C6E7023BFD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: 1394/IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IEEE.irb_req_isoch_modify_stream_properties, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure [Buses], _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
+ms.keywords: IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure [Buses], _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, 1394/IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IEEE.irb_req_isoch_modify_stream_properties, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ Specifies the allocated channel.
 `fulSpeed`
 
 Specifies the connection speed to use for communication on the channel.  The possible speed values are SPEED_FLAGS_xxx, where xxx is the (approximate) transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 Mb/sec.
+
 <table>
 <tr>
 <th>Transfer Rate</th>
@@ -105,8 +106,11 @@ SPEED_FLAGS_400
 
 </td>
 </tr>
-</table> 
-<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div><div> </div>
+</table>
+ 
+
+<div class="alert"><b>Note</b>  In Windows 7 and later versions of Windows, you can specify new values higher speed and  greater sized payloads. For more information, see <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">New Flags for Speed and Payload Size</a> and <a href="https://msdn.microsoft.com/5473C6AC-284C-41B1-AA67-75696BE96C24">IEEE 1394 IOCTL Changes</a> in Device Driver Interface (DDI) Changes in Windows 7.</div>
+<div> </div>
 
 `hResource`
 

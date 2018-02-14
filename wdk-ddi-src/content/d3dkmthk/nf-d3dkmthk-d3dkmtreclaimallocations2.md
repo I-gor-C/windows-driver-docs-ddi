@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 0BC49546-ECDE-447D-8F7E-4235D96D293B
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTReclaimAllocations2 function [Display Devices], D3DKMTReclaimAllocations2, display.d3dkmtreclaimallocations2, d3dkmthk/D3DKMTReclaimAllocations2
+ms.keywords: display.d3dkmtreclaimallocations2, D3DKMTReclaimAllocations2, d3dkmthk/D3DKMTReclaimAllocations2, D3DKMTReclaimAllocations2 function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -119,6 +120,8 @@ Parameters were validated and determined to be incorrect.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_reclaimallocations2.md">D3DKMT_RECLAIMALLOCATIONS2</a>
+
+
 
  
 

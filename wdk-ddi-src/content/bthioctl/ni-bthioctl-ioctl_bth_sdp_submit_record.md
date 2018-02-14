@@ -84,6 +84,7 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -142,6 +143,8 @@ The stream passed to the input buffer was invalid.
 ## See Also
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_remove_record.md">IOCTL_BTH_SDP_REMOVE_RECORD</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5CD8E422-8CEE-43E8-9703-520FDBE6BF5E
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: NvCacheTypeWriteThrough, PHYBRID_INFORMATION structure pointer [Storage Devices], *PHYBRID_INFORMATION, NvCacheStatusUnknown, NvCacheTypeWriteBack, NvCacheNone, storage.hybrid_information, NvCacheStatusEnabled, NvCacheTypeUnknown, PHYBRID_INFORMATION, ntddscsi/PHYBRID_INFORMATION, HYBRID_INFORMATION structure [Storage Devices], NvCacheStatusDisabling, ntddscsi/HYBRID_INFORMATION, NvCacheStatusDisabled, _HYBRID_INFORMATION, HYBRID_INFORMATION
+ms.keywords: NvCacheStatusUnknown, storage.hybrid_information, NvCacheTypeWriteBack, ntddscsi/HYBRID_INFORMATION, _HYBRID_INFORMATION, NvCacheTypeWriteThrough, *PHYBRID_INFORMATION, PHYBRID_INFORMATION structure pointer [Storage Devices], NvCacheStatusDisabling, ntddscsi/PHYBRID_INFORMATION, HYBRID_INFORMATION, NvCacheStatusEnabled, NvCacheTypeUnknown, NvCacheNone, NvCacheStatusDisabled, HYBRID_INFORMATION structure [Storage Devices], PHYBRID_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -103,6 +103,7 @@ The default caching type used by the hybrid disk. The possible values are the sa
 `CacheTypeEffective`
 
 The non-volatile caching type currently set for hybrid disk. The effective cache type is one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -169,6 +170,7 @@ The size of this structure. Set to <b>sizeof</b>(HYBRID_INFORMATION).
 `Status`
 
 The status of the hybrid disk cache. This contains one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -230,6 +232,8 @@ The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.
 ## See Also
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_hybrid.md">IOCTL_SCSI_MINIPORT_HYBRID</a>
+
+
 
  
 

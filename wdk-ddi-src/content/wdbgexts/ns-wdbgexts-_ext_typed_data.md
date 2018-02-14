@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 99abb7b6-3e20-4875-b257-c3fc4146e392
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: EXT_TYPED_DATA, _EXT_TYPED_DATA, PEXT_TYPED_DATA structure pointer [Windows Debugging], PEXT_TYPED_DATA, Structures_e4240445-73f9-4f38-8f1b-17035ced15f7.xml, *PEXT_TYPED_DATA, wdbgexts/EXT_TYPED_DATA, EXT_TYPED_DATA structure [Windows Debugging], wdbgexts/PEXT_TYPED_DATA, debugger.ext_typed_data
+ms.keywords: EXT_TYPED_DATA, wdbgexts/EXT_TYPED_DATA, PEXT_TYPED_DATA, EXT_TYPED_DATA structure [Windows Debugging], PEXT_TYPED_DATA structure pointer [Windows Debugging], Structures_e4240445-73f9-4f38-8f1b-17035ced15f7.xml, *PEXT_TYPED_DATA, _EXT_TYPED_DATA, debugger.ext_typed_data, wdbgexts/PEXT_TYPED_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	EXT_TYPED_DATA
 product: Windows
 targetos: Windows
-req.typenames: "*PEXT_TYPED_DATA, EXT_TYPED_DATA"
+req.typenames: EXT_TYPED_DATA, *PEXT_TYPED_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -89,6 +89,7 @@ Set to zero,
 `Flags`
 
 Specifies the bit flags describing the target's memory in which the data resides. If no flags are present, the data is considered to be in virtual memory. One of the following flags may be present:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -222,13 +223,21 @@ This structure can optionally specify additional data--using the members <b>InSt
 
 ## See Also
 
+<a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
 
-<a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>
+
 
 <a href="..\wdbgexts\ne-wdbgexts-_ext_tdop.md">EXT_TDOP</a>
+
+
 
  
 

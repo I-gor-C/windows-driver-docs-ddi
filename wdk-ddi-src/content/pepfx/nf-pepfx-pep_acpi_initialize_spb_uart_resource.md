@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: C1018E89-D3EC-49A0-B02E-254378000378
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: 5, 1, 3, 0, PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE, 6, pepfx/PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE, 2, PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_spb_uart_resource, 4, 7
+ms.keywords: PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE function [Kernel-Mode Driver Architecture], 6, 0, 2, 5, 3, 7, PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE, kernel.pep_acpi_initialize_spb_uart_resource, pepfx/PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE, 1, 4
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PEP_ACPI_INITIALIZE_SPB_UART_RESOURCE
 product: Windows
 targetos: Windows
-req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
+req.typenames: "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
 
@@ -87,6 +87,7 @@ Specifies the stop bits used in the connection.
 `LinesInUse`
 
 Flag indicating the serial lines that are enabled. A value of 1 in the bit positions indicates that the line is enabled.
+
 <table>
 <tr>
 <th>Bit</th>
@@ -181,6 +182,7 @@ Indicates if the most significant bits of data are in the lowest address.
 `Parity`
 
 Specifies the parity of the connection.
+
 <table>
 <tr>
 <th>Value</th>
@@ -303,6 +305,8 @@ This function does not return a value.
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_uart_resource.md">PEP_ACPI_SPB_UART_RESOURCE</a>
+
+
 
  
 

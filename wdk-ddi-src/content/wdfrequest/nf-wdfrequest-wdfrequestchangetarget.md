@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 562e92b4-fe68-4301-af40-f535cc408b9d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFREQUESTCHANGETARGET, DFRequestObjectRef_3d1f75eb-de12-4a8e-8cb8-d5ebe941e70f.xml, kmdf.wdfrequestchangetarget, wdf.wdfrequestchangetarget, WdfRequestChangeTarget, WdfRequestChangeTarget method, wdfrequest/WdfRequestChangeTarget
+ms.keywords: WdfRequestChangeTarget, DFRequestObjectRef_3d1f75eb-de12-4a8e-8cb8-d5ebe941e70f.xml, kmdf.wdfrequestchangetarget, wdf.wdfrequestchangetarget, wdfrequest/WdfRequestChangeTarget, WdfRequestChangeTarget method, PFN_WDFREQUESTCHANGETARGET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A handle to a framework I/O target object.
 ## Return Value
 
 <b>WdfRequestChangeTarget</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,7 +115,8 @@ The request's array of I/O stack locations is not large enough to allow the driv
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -132,6 +134,27 @@ If the driver is sending the request to multiple devices, it calls <a href="..\w
 
 For more information about <b>WdfRequestChangeTarget</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/forwarding-i-o-requests">Forwarding I/O Requests</a>.
 
+
+#### Examples
+
+The following code example verifies that an I/O request can be sent to a specified device's local I/O target.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS  status;
+
+status = WdfRequestChangeTarget(
+                                request,
+                                WdfDeviceGetIoTarget(Device)
+                                );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -147,9 +170,15 @@ For more information about <b>WdfRequestChangeTarget</b>, see <a href="https://d
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
 
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+
+
 
  
 

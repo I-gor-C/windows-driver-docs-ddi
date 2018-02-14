@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 444f7264-6072-4ee2-b3fd-030affa502b7
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugRegisters2::OutputRegisters2, debugger.outputregisters2, IDebugRegisters2 interface [Windows Debugging], OutputRegisters2 method, IDebugRegisters2::OutputRegisters2, OutputRegisters2 method [Windows Debugging], IDebugRegisters2 interface, OutputRegisters2 method [Windows Debugging], IDebugRegisters2, OutputRegisters2, IDebugRegisters_ecc2b40a-622b-4f1f-867b-2eb6b575559d.xml
+ms.keywords: dbgeng/IDebugRegisters2::OutputRegisters2, OutputRegisters2, IDebugRegisters2 interface [Windows Debugging], OutputRegisters2 method, IDebugRegisters_ecc2b40a-622b-4f1f-867b-2eb6b575559d.xml, IDebugRegisters2, IDebugRegisters2::OutputRegisters2, debugger.outputregisters2, OutputRegisters2 method [Windows Debugging], IDebugRegisters2 interface, OutputRegisters2 method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -68,6 +68,7 @@ Specifies which clients should be sent the output of the formatted registers.  S
 Specifies the register source to query.
 
 The possible values are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -110,6 +111,7 @@ Fetch register information from the current scope's register context.
 `Flags`
 
 Specifies which register sets to print.  This can either be DEBUG_REGISTERS_DEFAULT to print commonly used registers, DEBUG_REGISTERS_ALL to print all of the register sets, or a combination of the values listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -151,6 +153,7 @@ Print the floating-point register set.
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -188,7 +191,11 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553242">OutputRegisters</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+
 
  
 

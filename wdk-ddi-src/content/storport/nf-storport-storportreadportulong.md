@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortReadPortUlong
-title: StorPortReadPortUlong function
+title: StorPortReadPortUlong macro
 author: windows-driver-content
 description: The StorPortReadPortUlong routine reads a value from a specified port address.
 old-location: storage\storportreadportulong.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: b04ef64a-cf1f-4de5-acb3-e57687f64719
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortReadPortUlong, storprt_3ef5c577-3d75-4797-b5ce-8f36e4080c47.xml, storport/StorPortReadPortUlong, storage.storportreadportulong, StorPortReadPortUlong routine [Storage Devices]
+ms.keywords: storport/StorPortReadPortUlong, StorPortReadPortUlong, storprt_3ef5c577-3d75-4797-b5ce-8f36e4080c47.xml, storage.storportreadportulong, StorPortReadPortUlong routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -62,16 +62,16 @@ STORPORT_API ULONG StorPortReadPortUlong(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Port`
 
-Pointer to the address from which to read.
+
 
 
 ## Return Value
 
-<b>StorPortReadPortUlong</b> returns a data item of length <b>sizeof</b>(ULONG).
+None
 
 ## Remarks
 
@@ -86,9 +86,13 @@ For more information, see the <a href="..\srb\nf-srb-scsiportreadportulong.md">S
 
 ## See Also
 
+<a href="..\storport\nf-storport-storportreadportulong.md">StorPortReadPortUlong</a>
+
+
+
 <a href="..\srb\nf-srb-scsiportreadportbufferulong.md">ScsiPortReadPortBufferUlong</a>
 
-<a href="..\storport\nf-storport-storportreadportulong.md">StorPortReadPortUlong</a>
+
 
  
 

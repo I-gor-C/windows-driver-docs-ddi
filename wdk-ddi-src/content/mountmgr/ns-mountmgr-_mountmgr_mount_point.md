@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a4142380-1596-49dc-a18d-ac5c3cef73fe
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "*PMOUNTMGR_MOUNT_POINT, mountmgr/PMOUNTMGR_MOUNT_POINT, mountmgr/MOUNTMGR_MOUNT_POINT, storage.mountmgr_mount_point, MOUNTMGR_MOUNT_POINT structure [Storage Devices], MOUNTMGR_MOUNT_POINT, PMOUNTMGR_MOUNT_POINT, structs-mntmgr_88136173-0786-4d4e-80b7-77f523e8d125.xml, PMOUNTMGR_MOUNT_POINT structure pointer [Storage Devices], _MOUNTMGR_MOUNT_POINT"
+ms.keywords: mountmgr/MOUNTMGR_MOUNT_POINT, PMOUNTMGR_MOUNT_POINT structure pointer [Storage Devices], PMOUNTMGR_MOUNT_POINT, _MOUNTMGR_MOUNT_POINT, structs-mntmgr_88136173-0786-4d4e-80b7-77f523e8d125.xml, *PMOUNTMGR_MOUNT_POINT, mountmgr/PMOUNTMGR_MOUNT_POINT, MOUNTMGR_MOUNT_POINT, MOUNTMGR_MOUNT_POINT structure [Storage Devices], storage.mountmgr_mount_point
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	MOUNTMGR_MOUNT_POINT
 product: Windows
 targetos: Windows
-req.typenames: "*PMOUNTMGR_MOUNT_POINT, MOUNTMGR_MOUNT_POINT"
+req.typenames: MOUNTMGR_MOUNT_POINT, *PMOUNTMGR_MOUNT_POINT
 ---
 
 # _MOUNTMGR_MOUNT_POINT structure
@@ -114,6 +114,8 @@ For a discussion of the different between symbolic links, unique IDs, and nonper
 ## See Also
 
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
+
+
 
  
 

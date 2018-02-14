@@ -53,6 +53,17 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugRegisters.GetDescription](nf-dbgeng-idebugregisters-getdescription.md) | The GetDescription method returns the description of a register. |
+| [dbgeng.IDebugRegisters.GetFrameOffset](nf-dbgeng-idebugregisters-getframeoffset.md) | The GetFrameOffset method returns the location of the stack frame for the current function. |
+| [dbgeng.IDebugRegisters.GetIndexByName](nf-dbgeng-idebugregisters-getindexbyname.md) | The GetIndexByName method returns the index of the named register. |
+| [dbgeng.IDebugRegisters.GetInstructionOffset](nf-dbgeng-idebugregisters-getinstructionoffset.md) | The GetInstructionOffset method returns the location of the current thread's current instruction. |
+| [dbgeng.IDebugRegisters.GetNumberRegisters](nf-dbgeng-idebugregisters-getnumberregisters.md) | The GetNumberRegisters method returns the number of registers on the target computer. |
+| [dbgeng.IDebugRegisters.GetStackOffset](nf-dbgeng-idebugregisters-getstackoffset.md) | The GetStackOffset method returns the current thread's current stack location. |
+| [dbgeng.IDebugRegisters.GetValue](nf-dbgeng-idebugregisters-getvalue.md) | The GetValue method gets the value of one of the target's registers. |
+| [dbgeng.IDebugRegisters.GetValues](nf-dbgeng-idebugregisters-getvalues.md) | The GetValues method gets the value of several of the target's registers. |
+| [dbgeng.IDebugRegisters.OutputRegisters](nf-dbgeng-idebugregisters-outputregisters.md) | The OutputRegisters method formats and sends the target's registers to the clients as output. |
+| [dbgeng.IDebugRegisters.SetValue](nf-dbgeng-idebugregisters-setvalue.md) | The SetValue method sets the value of one of the target's registers. |
+| [dbgeng.IDebugRegisters.SetValues](nf-dbgeng-idebugregisters-setvalues.md) | The SetValues method sets the value of several of the target's registers. |
 
 ## Remarks
 
@@ -67,6 +78,8 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+
 
  
 

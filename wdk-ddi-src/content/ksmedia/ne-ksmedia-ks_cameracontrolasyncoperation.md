@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0ca676d9-5047-451a-abbb-2692cc2d69f6
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KS_CAMERACONTROL_ASYNC_START, KS_CAMERACONTROL_ASYNC_STOP, ksmedia/KS_CAMERACONTROL_ASYNC_STOP, ksmedia/KS_CAMERACONTROL_ASYNC_RESET, stream.ks_cameracontrolasyncoperation, ksmedia/KS_CAMERACONTROL_ASYNC_START, KS_CameraControlAsyncOperation, ksmedia/KS_CameraControlAsyncOperation, KS_CAMERACONTROL_ASYNC_RESET, KS_CameraControlAsyncOperation enumeration [Streaming Media Devices]
+ms.keywords: ksmedia/KS_CAMERACONTROL_ASYNC_STOP, ksmedia/KS_CAMERACONTROL_ASYNC_START, ksmedia/KS_CameraControlAsyncOperation, KS_CAMERACONTROL_ASYNC_START, KS_CAMERACONTROL_ASYNC_RESET, KS_CAMERACONTROL_ASYNC_STOP, stream.ks_cameracontrolasyncoperation, ksmedia/KS_CAMERACONTROL_ASYNC_RESET, KS_CameraControlAsyncOperation enumeration [Streaming Media Devices], KS_CameraControlAsyncOperation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -88,6 +88,8 @@ typedef enum  {
     ## See Also
 
         <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>
+
+
 
  
 

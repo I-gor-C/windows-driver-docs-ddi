@@ -74,6 +74,7 @@ A handle associated with the registration of the callback function that is being
 
 The 
      <b>FwpmBfeStateUnsubscribeChanges0</b> function returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -132,6 +133,8 @@ Do not call <b>FwpmBfeStateUnsubscribeChanges0</b> from a callback function that
 
 <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
    FwpmBfeStateSubscribeChanges0</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 91F62BFF-C26A-422A-B138-1E8D9A5146B3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PWWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX, _WWAN_DEVICE_CAPS_EX, wwan/WWAN_DEVICE_CAPS_EX, netvista.wwan_device_caps_ex, wwan/PWWAN_DEVICE_CAPS_EX
+ms.keywords: netvista.wwan_device_caps_ex, WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], *PWWAN_DEVICE_CAPS_EX, PWWAN_DEVICE_CAPS_EX, _WWAN_DEVICE_CAPS_EX, wwan/WWAN_DEVICE_CAPS_EX, PWWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_CAPS_EX, wwan/PWWAN_DEVICE_CAPS_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -136,6 +136,7 @@ A NULL-terminated string that represents the model of the device. This member is
 `WwanAuthAlgoCaps`
 
 A bitmap that represents the types of authentication methods the MB device supports.
+
 <table>
 <tr>
 <th>Value</th>
@@ -188,6 +189,7 @@ The MB device supports the AKA' (AKA Prime) authentication method.
 A bitmap that represents the frequency bands CDMA-based devices support. The following table shows
      the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -393,7 +395,8 @@ The device supports a band other than the bands listed in this table.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide the name of the
      data-class in 
@@ -416,6 +419,7 @@ Miniport drivers that support multi-mode should set this to <b>WwanCellularClass
 A bitmap that represents the control capabilities that the device supports. The following table
      shows the valid WwanControlCaps settings for GSM-based and CDMA-based devices. 
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -525,7 +529,8 @@ This flag indicates that the current home provider supports multiple cellular cl
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Miniport drivers of CDMA-based devices must specify WWAN_CTRL_CAPS_CDMA_MOBILE_IP, or
      WWAN_CTRL_CAPS_CDMA_SIMPLE_IP, or both flags to inform the MB Service about the type of IP that the
@@ -536,6 +541,7 @@ Miniport drivers of CDMA-based devices must specify WWAN_CTRL_CAPS_CDMA_MOBILE_I
 A bitmap that represents the data-class(es) that the device supports. The following table shows
      the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -712,6 +718,7 @@ The type of the device. Miniport drivers must set the device type to be a value 
 A bitmap that represents the frequency bands GSM-based devices support. The following table shows
      the possible values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -834,7 +841,8 @@ The device supports a spectrum other than those listed in this table.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If the miniport driver specifies WWAN_BAND_CLASS_CUSTOM, it should also provide the name of the
      data-class in 
@@ -846,6 +854,7 @@ For more information about these values, see
 `WwanOptionalServiceCaps`
 
 A ULONG structure that represents the Microsoft service extensions the underlying modem supports. It is a 64-bit bitmap structure that whose undefined bits are reserved and must be set to "0." As new service extensions are introduced, the reserved bits will be used to represent the new service extensions.
+
 <table>
 <tr>
 <th>Value</th>
@@ -974,6 +983,7 @@ The class of the Subscriber Identity Module (SIM card). Miniport drivers must se
 A bitmap that represents the type of SMS messages and directional flow that the device supports.
      The following table shows the valid SMS capabilities settings.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -1040,7 +1050,8 @@ The device supports receiving Text-style SMS messages. This flag applies for CDM
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefure, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.
 
@@ -1079,9 +1090,15 @@ For CDMA-based devices, only CDMA-related data services must be specified. For e
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps_ex.md">NDIS_WWAN_DEVICE_CAPS_EX</a>
 
-<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
+
 
 <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
+
+
+
+<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
+
+
 
  
 

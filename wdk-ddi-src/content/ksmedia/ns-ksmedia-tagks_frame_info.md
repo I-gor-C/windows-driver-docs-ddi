@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 7c2ebe5d-ecb0-41d2-a1bb-7e131ea350a7
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: "*PKS_FRAME_INFO, vidcapstruct_1ce3f0b4-3032-4956-83a3-2a92039eb7a0.xml, ksmedia/KS_FRAME_INFO, KS_FRAME_INFO structure [Streaming Media Devices], PKS_FRAME_INFO structure pointer [Streaming Media Devices], stream.ks_frame_info, ksmedia/PKS_FRAME_INFO, tagKS_FRAME_INFO, KS_FRAME_INFO, PKS_FRAME_INFO"
+ms.keywords: PKS_FRAME_INFO structure pointer [Streaming Media Devices], tagKS_FRAME_INFO, *PKS_FRAME_INFO, KS_FRAME_INFO structure [Streaming Media Devices], PKS_FRAME_INFO, vidcapstruct_1ce3f0b4-3032-4956-83a3-2a92039eb7a0.xml, KS_FRAME_INFO, ksmedia/PKS_FRAME_INFO, ksmedia/KS_FRAME_INFO, stream.ks_frame_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KS_FRAME_INFO
 product: Windows
 targetos: Windows
-req.typenames: "*PKS_FRAME_INFO, KS_FRAME_INFO"
+req.typenames: KS_FRAME_INFO, *PKS_FRAME_INFO
 ---
 
 # tagKS_FRAME_INFO structure
@@ -85,6 +85,7 @@ Specifies the number of pictures that were not captured. During capture, the min
 `dwFrameFlags`
 
 Specifies flags indicating additional information about the frame captured. During capture, the minidriver sets this member to one of the following values that are defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -176,6 +177,7 @@ Reserved and should not be used by the minidriver.
 The KS_FRAME_INFO structure provides a way to return information about the frame captured, as well as a way to pass Microsoft DirectDraw handles used when capturing to a DirectDraw surface.
 
 The <b>PictureNumber</b> member count represents the count of the current picture, which is calculated in one of two ways depending on the device:
+
 <ul>
 <li>
 Measure the time since the stream was started and divide by the frame duration. This method is appropriate for devices that do not provide their own clock. For example: 
@@ -187,7 +189,8 @@ Add together the count of frames captured and the count of frame dropped. This m
 
 <pre class="syntax" xml:space="preserve"><code>PictureNumber = FramesCaptured + FramesDropped;</code></pre>
 </li>
-</ul>When calculating <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. 
+</ul>
+When calculating <b>PictureNumber</b> and <b>DropCount</b>, it is important to use the frame duration specified when the stream was opened, which may not necessarily match the rate at which the device is actually producing images. For example, a USB camera may only produce images at 7.5 fps, but a client could open the stream at 8 fps. In this case, all calculations should use the 8 fps number. 
 
 For more information about updating <b>PictureNumber</b> and <b>DropCount</b> see <a href="https://msdn.microsoft.com/0adea8fe-1669-4daf-a858-05e014f00a72">Capturing Video</a>.
 
@@ -199,6 +202,8 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 ## See Also
 
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
+
+
 
  
 

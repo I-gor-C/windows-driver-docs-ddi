@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: fc0668b3-9242-4d30-9dc9-820f6d596d6c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisimgetbindingcontext, ndis/NdisIMGetBindingContext, NdisIMGetBindingContext, intermediate_ref_ef5b6cf4-209a-4e51-be20-2e0e7bcc1ac8.xml, NdisIMGetBindingContext function [Network Drivers Starting with Windows Vista]
+ms.keywords: NdisIMGetBindingContext function [Network Drivers Starting with Windows Vista], intermediate_ref_ef5b6cf4-209a-4e51-be20-2e0e7bcc1ac8.xml, NdisIMGetBindingContext, ndis/NdisIMGetBindingContext, netvista.ndisimgetbindingcontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisIMGetBindingContext
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -108,10 +108,16 @@ All protocol drivers that call
 
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
 
 <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
    NdisIMInitializeDeviceInstanceEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
+
 
  
 

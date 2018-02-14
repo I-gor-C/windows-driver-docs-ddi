@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 112d6f90-33b3-446b-943c-8995e6ec3378
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauFncs_73184286-df53-4272-9fa8-aae1d1fb3dbc.xml, wiauDbgError function [Imaging Devices], wiauDbgError, wiautil/wiauDbgError, image.wiaudbgerror
+ms.keywords: wiauFncs_73184286-df53-4272-9fa8-aae1d1fb3dbc.xml, wiautil/wiauDbgError, wiauDbgError, image.wiaudbgerror, wiauDbgError function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,7 @@ None
 ## Remarks
 
 The <b>wiauDbgError</b> typically is used to display an error message with no data, such as in the following example:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -102,11 +103,19 @@ The <b>wiauDbgError</b> typically is used to display an error message with no da
 
 <a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 
+
+
 <a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
+
+
+
+<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+
+
 
 <a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+
 
  
 

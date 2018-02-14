@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c6cff037-436c-4c7e-85b8-02c9d7827f95
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3d10umddi/D3D10DDI_VERTEX_CACHE_DESC, D3D10DDI_VERTEX_CACHE_DESC structure [Display Devices], D3D10DDI_VERTEX_CACHE_DESC, UMDisplayDriver_Dx10param_Structs_585c3ccc-83c7-4d3b-903d-7eac81a1c21c.xml, display.d3d10ddi_vertex_cache_desc
+ms.keywords: D3D10DDI_VERTEX_CACHE_DESC, d3d10umddi/D3D10DDI_VERTEX_CACHE_DESC, D3D10DDI_VERTEX_CACHE_DESC structure [Display Devices], UMDisplayDriver_Dx10param_Structs_585c3ccc-83c7-4d3b-903d-7eac81a1c21c.xml, display.d3d10ddi_vertex_cache_desc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ typedef struct D3D10DDI_VERTEX_CACHE_DESC {
 `OptMethod`
 
 [out] The method of mesh optimization. The driver can use one of the following values to specify the mesh optimization that it uses.
+
 <table>
 <tr>
 <th>Value</th>
@@ -100,6 +101,7 @@ Vertex-cache-based optimization
 `Pattern`
 
 [out] The bit pattern. The driver must specify the bit pattern as a CACH four-character code (FOURCC) value. The driver can use the following MAKEFOURCC macro to specify the FOURCC value as CACH:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

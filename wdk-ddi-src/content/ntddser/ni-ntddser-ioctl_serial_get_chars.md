@@ -82,9 +82,13 @@ The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.co
 
 ## See Also
 
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
+
+
+
 <a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
+
 
  
 

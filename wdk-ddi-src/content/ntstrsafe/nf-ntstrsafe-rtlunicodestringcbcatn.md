@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 246c2abd-ad07-4910-968c-dbd5fefff5bc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: safestrings_3c51b953-50f8-4fb8-829a-f41951a0a1a8.xml, RtlUnicodeStringCbCatN function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCbCatN, RtlUnicodeStringCbCatN, kernel.rtlunicodestringcbcatn
+ms.keywords: safestrings_3c51b953-50f8-4fb8-829a-f41951a0a1a8.xml, ntstrsafe/RtlUnicodeStringCbCatN, RtlUnicodeStringCbCatN function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcbcatn, RtlUnicodeStringCbCatN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RtlUnicodeStringCbCatN
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -76,6 +76,7 @@ The maximum number of bytes to append to the string that the <i>DestinationStrin
 ## Return Value
 
 <b>RtlUnicodeStringCbCatN</b> returns one of the following NTSTATUS values. 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,16 +115,19 @@ This <i>error</i> status means that the function received an invalid input param
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>RtlUnicodeStringCbCatN</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
+
 <ul>
 <li>The contents of the <b>UNICODE_STRING</b> structure are invalid.</li>
 <li>The destination buffer is already full.</li>
 <li>A buffer pointer is <b>NULL</b>.</li>
 <li>The destination buffer's length is zero, but a nonzero length source string is present.</li>
 <li>The <i>cbToAppend</i> parameter's value is greater than NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).</li>
-</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+</ul>
+For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -146,11 +150,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcchcatn.md">RtlUnicodeStringCchCatN</a>
 
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcbcatnex.md">RtlUnicodeStringCbCatNEx</a>
+
+
 
  
 

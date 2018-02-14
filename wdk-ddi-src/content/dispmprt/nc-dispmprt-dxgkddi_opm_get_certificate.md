@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiOPMGetCertificate
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -83,6 +83,7 @@ A pointer to a buffer that receives the requested certificate if <i>DxgkDdiOPMGe
 ## Return Value
 
 <i>DxgkDdiOPMGetCertificate</i> returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -143,7 +144,8 @@ The display miniport driver's hardware functionality scan (HFS) failed or the di
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other error codes that are defined in Ntstatus.h.
 
@@ -162,11 +164,17 @@ This function might also return other error codes that are defined in Ntstatus.h
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate_size.md">DxgkDdiOPMGetCertificateSize</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_certificate_type.md">DXGKMDT_CERTIFICATE_TYPE</a>
+
+
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_certificate_type.md">DXGKMDT_CERTIFICATE_TYPE</a>
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate_size.md">DxgkDdiOPMGetCertificateSize</a>
+
+
 
  
 

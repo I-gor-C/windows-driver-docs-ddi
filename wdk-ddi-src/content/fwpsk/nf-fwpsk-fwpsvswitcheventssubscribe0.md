@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista], netvista.fwpsvswitcheventssubscribe0, fwpsk/FwpsvSwitchEventsSubscribe0, FwpsvSwitchEventsSubscribe0
+ms.keywords: netvista.fwpsvswitcheventssubscribe0, fwpsk/FwpsvSwitchEventsSubscribe0, FwpsvSwitchEventsSubscribe0, FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,7 @@ A pointer to a variable that contains a unique identifier that WFP assigns to th
 
 The 
      <b>FwpsvSwitchEventsSubscribe0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,9 +145,13 @@ The callout driver must later call
 
 ## See Also
 
+<a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
+
+
+
 <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a>
 
-<a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
+
 
  
 

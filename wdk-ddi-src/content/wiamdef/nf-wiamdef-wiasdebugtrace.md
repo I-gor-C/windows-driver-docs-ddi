@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: db39c7f6-d966-4538-8ee9-d3623995535c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wiasdebugtrace, wiamdef/wiasDebugTrace, wiasDebugTrace, wiasDebugTrace function [Imaging Devices], wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml
+ms.keywords: wiasDebugTrace, wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml, wiamdef/wiasDebugTrace, image.wiasdebugtrace, wiasDebugTrace function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasDebugTrace
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -95,7 +95,11 @@ To enable tracing in free builds, drivers must define the WIAS_DEBUG macro. Trac
 
 <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
 
+
+
 <a href="..\wiamdef\nf-wiamdef-wias_ltrace.md">WIAS_LTRACE</a>
+
+
 
  
 

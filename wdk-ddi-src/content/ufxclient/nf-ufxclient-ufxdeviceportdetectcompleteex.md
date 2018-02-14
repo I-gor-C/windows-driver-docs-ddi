@@ -7,8 +7,8 @@ old-location: buses\ufxdeviceportdetectcompleteex.htm
 old-project: usbref
 ms.assetid: EB3A65B5-EB21-45CA-B26D-F57A28F9F2CB
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: buses.ufxdeviceportdetectcompleteex, UfxDevicePortDetectCompleteEx, UfxDevicePortDetectCompleteEx method [Buses], ufxclient/UfxDevicePortDetectCompleteEx
+ms.date: 2/8/2018
+ms.keywords: buses.ufxdeviceportdetectcompleteex, ufxclient/UfxDevicePortDetectCompleteEx, UfxDevicePortDetectCompleteEx method [Buses], UfxDevicePortDetectCompleteEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,6 +89,7 @@ If the <i>Action</i> parameter is set to <b>UsbfnActionDetectProprietaryCharger<
 
 
 The following snippet shows how a client driver calls <b>UfxDevicePortDetectCompleteEx</b>.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

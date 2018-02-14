@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 080707c5-cf46-4066-a241-684cdae37fee
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMaxGroupCount, netvista.ndismaxgroupcount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml, ndis/NdisMaxGroupCount
+ms.keywords: ndis/NdisMaxGroupCount, netvista.ndismaxgroupcount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], NdisMaxGroupCount, ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisMaxGroupCount
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -86,6 +86,8 @@ To obtain the number of groups that are currently active, call the
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndisactivegroupcount.md">NdisActiveGroupCount</a>
+
+
 
  
 

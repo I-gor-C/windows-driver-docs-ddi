@@ -67,10 +67,12 @@ This function has no parameters.
 <i>DxgkCbEnumHandleChildren</i> returns the graphics subsystem-specific handle to the child allocation that the <i>pData</i> parameter describes. To retrieve the device-specific data for the handle, the display miniport driver must call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a> function.
 
 <i>DxgkCbEnumHandleChildren</i> returns a <b>NULL</b> handle if the child-allocation index that the <b>Index</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_enumhandlechildren.md">DXGKARGCB_ENUMHANDLECHILDREN</a> structure supplies exceeds the number of allocations that are associated with the parent resource. If <i>DxgkCbEnumHandleChildren</i> unexpectedly returns a <b>NULL</b> handle, the Microsoft DirectX graphics kernel subsystem was unable to resolve the handle to the parent resource because, for example, of the following possible reasons:
+
 <ul>
 <li>An invalid handle was received from the user-mode display driver because of a malicious attack or some other bug. </li>
 <li>Allocations had lifetime issues. </li>
-</ul>If a <b>NULL</b> handle is returned unexpectedly, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.
+</ul>
+If a <b>NULL</b> handle is returned unexpectedly, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.
 
 ## Remarks
 
@@ -86,9 +88,13 @@ The display miniport driver can call the <b>DxgkCbEnumHandleChildren</b> functio
 
 ## See Also
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a>
+
+
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_enumhandlechildren.md">DXGKARGCB_ENUMHANDLECHILDREN</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a>
+
 
  
 

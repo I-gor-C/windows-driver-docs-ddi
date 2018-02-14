@@ -73,6 +73,7 @@ A handle to the display device.
 ## Return Value
 
 Returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -127,9 +128,15 @@ The video memory manager or display miniport driver could not complete the opera
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_reclaimallocations.md">D3DDDICB_RECLAIMALLOCATIONS2</a>
 
+
+
 <a href="https://msdn.microsoft.com/AF3DCD16-9F8C-442A-A9A5-9EA2BD1C3B84">pfnReclaimResources</a>
+
+
 
  
 

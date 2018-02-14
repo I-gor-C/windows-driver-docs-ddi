@@ -54,6 +54,12 @@ Exposes the PageImageableSize property of PrintCapabilities. The properties of t
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaPageImageableSize.get_ExtentHeightInMicrons](nf-printerextension-iprintschemapageimageablesize-get_extentheightinmicrons.md) | Gets the vertical distance between the origin and the bounding limit of the canvas application media size. |
+| [printerextension.IPrintSchemaPageImageableSize.get_ExtentWidthInMicrons](nf-printerextension-iprintschemapageimageablesize-get_extentwidthinmicrons.md) | Gets the horizontal distance between the origin and the bounding limit of the application media size. |
+| [printerextension.IPrintSchemaPageImageableSize.get_ImageableSizeHeightInMicrons](nf-printerextension-iprintschemapageimageablesize-get_imageablesizeheightinmicrons.md) | Gets the vertical dimension of the application media size relative to the page orientation. |
+| [printerextension.IPrintSchemaPageImageableSize.get_ImageableSizeWidthInMicrons](nf-printerextension-iprintschemapageimageablesize-get_imageablesizewidthinmicrons.md) | Gets the horizontal dimension of the application media size relative to the page orientation. |
+| [printerextension.IPrintSchemaPageImageableSize.get_OriginHeightInMicrons](nf-printerextension-iprintschemapageimageablesize-get_originheightinmicrons.md) | Gets the vertical origin of the imageable area relative to the application media size. |
+| [printerextension.IPrintSchemaPageImageableSize.get_OriginWidthInMicrons](nf-printerextension-iprintschemapageimageablesize-get_originwidthinmicrons.md) | Gets the horizontal origin of the imageable area relative to the application media size. |
 
 ## Remarks
 

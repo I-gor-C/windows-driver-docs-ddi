@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 830D706A-016C-4637-829F-2014AD1A1309
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IPnpCallbackHardware2::OnPrepareHardware, IPnpCallbackHardware2 interface, OnPrepareHardware method, OnPrepareHardware method, OnPrepareHardware method, IPnpCallbackHardware2 interface, IPnpCallbackHardware2, OnPrepareHardware, wudfddi/IPnpCallbackHardware2::OnPrepareHardware, umdf.ipnpcallbackhardware2_onpreparehardware, wdf.ipnpcallbackhardware2_onpreparehardware
+ms.keywords: OnPrepareHardware method, IPnpCallbackHardware2 interface, OnPrepareHardware method, IPnpCallbackHardware2 interface, OnPrepareHardware method, wdf.ipnpcallbackhardware2_onpreparehardware, IPnpCallbackHardware2, OnPrepareHardware, IPnpCallbackHardware2::OnPrepareHardware, wudfddi/IPnpCallbackHardware2::OnPrepareHardware, umdf.ipnpcallbackhardware2_onpreparehardware
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -88,6 +88,14 @@ The <b>IPnpCallbackHardware2::OnPrepareHardware</b> method differs from the <a h
 
 For information about parsing hardware resources, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources-in-umdf-1-x-drivers">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
+
+
+#### Examples
+
+See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,9 +107,13 @@ For information about parsing hardware resources, see <a href="https://docs.micr
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439739">OnReleaseHardware</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware2.md">IPnpCallbackHardware2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439739">OnReleaseHardware</a>
+
 
  
 

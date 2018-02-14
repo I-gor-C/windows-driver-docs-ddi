@@ -40,7 +40,7 @@ apiname:
 -	RequestCommon
 product: Windows
 targetos: Windows
-req.typenames: "*PVPCI_PNP_ID, VPCI_PNP_ID"
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 
@@ -91,6 +91,8 @@ A PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+
+
 
  
 

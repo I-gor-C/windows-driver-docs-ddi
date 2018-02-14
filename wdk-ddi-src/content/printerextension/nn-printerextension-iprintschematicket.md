@@ -55,10 +55,12 @@ Provides the primary method to access and validate a PrintTicket.
 | Method | Description |
 | ---- |:---- |
 | [printerextension.IPrintSchemaTicket.CommitAsync](nf-printerextension-iprintschematicket-commitasync.md) | Gets an asynchronous PrintTicket commit operation context. |
+| [printerextension.IPrintSchemaTicket.get_JobCopiesAllDocuments](nf-printerextension-iprintschematicket-get_jobcopiesalldocuments.md) | Gets the copy count. |
 | [printerextension.IPrintSchemaTicket.GetCapabilities](nf-printerextension-iprintschematicket-getcapabilities.md) | Gets an IPrintSchemaCapabilities object that represents the printer capabilities based on the current settings of this IPrintSchemaTicket object. |
 | [printerextension.IPrintSchemaTicket.GetFeature](nf-printerextension-iprintschematicket-getfeature.md) | Gets a named feature from the PrintTicket, by name and full namespace URI. |
 | [printerextension.IPrintSchemaTicket.GetFeatureByKeyName](nf-printerextension-iprintschematicket-getfeaturebykeyname.md) | Gets a feature from the PrintTicket based on the specified key name. |
 | [printerextension.IPrintSchemaTicket.NotifyXmlChanged](nf-printerextension-iprintschematicket-notifyxmlchanged.md) | Notifies the print system that the XML DOM object has changed. |
+| [printerextension.IPrintSchemaTicket.put_JobCopiesAllDocuments](nf-printerextension-iprintschematicket-put_jobcopiesalldocuments.md) | Gets the copy count. |
 | [printerextension.IPrintSchemaTicket.ValidateAsync](nf-printerextension-iprintschematicket-validateasync.md) | Gets an asynchronous PrintTicket validation operation context. |
 
 ## Remarks
@@ -74,13 +76,21 @@ To obtain an IXMLDOMDocument2 object for the PrintTicket object, you must first 
 
 ## See Also
 
+<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+
+
+
 <a href="https://msdn.microsoft.com/B1599F21-D6DD-497D-9CD8-6C637ABAA33A">IPrintSchemaAsyncOperationEvent::Completed</a>
 
-<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+
 
 <a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
 
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+
+
+<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+
+
 
  
 

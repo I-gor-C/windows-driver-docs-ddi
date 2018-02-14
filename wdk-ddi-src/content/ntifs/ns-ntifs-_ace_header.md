@@ -7,8 +7,8 @@ old-location: ifsk\ace_header.htm
 old-project: ifsk
 ms.assetid: f5f39310-8b15-4d6b-a985-3f25522a16b1
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: ifsk.ace_header, PACE_HEADER structure pointer [Installable File System Drivers], _ACE_HEADER, *PACE_HEADER, ntifs/ACE_HEADER, securitystructures_a5aba00b-54fc-4356-9dc8-bf3d5dbe7f78.xml, ACE_HEADER structure [Installable File System Drivers], PACE_HEADER, ntifs/PACE_HEADER, ACE_HEADER
+ms.date: 2/7/2018
+ms.keywords: ntifs/ACE_HEADER, ntifs/PACE_HEADER, PACE_HEADER, ifsk.ace_header, ACE_HEADER, *PACE_HEADER, PACE_HEADER structure pointer [Installable File System Drivers], ACE_HEADER structure [Installable File System Drivers], _ACE_HEADER, securitystructures_a5aba00b-54fc-4356-9dc8-bf3d5dbe7f78.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -61,6 +61,7 @@ typedef struct _ACE_HEADER {
 `AceFlags`
 
 Set of ACE type-specific control flags. This member can be a combination of the following values: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -149,6 +150,7 @@ Size, in bytes, of the ACE.
 `AceType`
 
 ACE type. This member can be one of the following values: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -198,20 +200,32 @@ System-alarm ACEs are not currently supported. The <b>AceType</b> member cannot 
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
 
-<a href="..\ntifs\ns-ntifs-_access_denied_ace.md">ACCESS_DENIED_ACE</a>
 
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
-<a href="..\ntifs\ns-ntifs-_system_alarm_ace.md">SYSTEM_ALARM_ACE</a>
+<a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a>
+
+
 
 <a href="..\ntifs\ns-ntifs-_system_audit_ace.md">SYSTEM_AUDIT_ACE</a>
 
- 
+
+
+<a href="..\ntifs\ns-ntifs-_access_denied_ace.md">ACCESS_DENIED_ACE</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_system_alarm_ace.md">SYSTEM_ALARM_ACE</a>
+
+
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACE_HEADER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ACE_HEADER structure%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

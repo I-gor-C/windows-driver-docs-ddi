@@ -7,7 +7,7 @@ old-location: buses\ioctl_internal_usbfn_transfer_out.htm
 old-project: usbref
 ms.assetid: DDC99C5F-B959-44E4-A4A8-1CBA4E9BDA5A
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.ioctl_internal_usbfn_transfer_out, IOCTL_INTERNAL_USBFN_TRANSFER_OUT control code [Buses], IOCTL_INTERNAL_USBFN_TRANSFER_OUT, usbfnioctl/IOCTL_INTERNAL_USBFN_TRANSFER_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,9 @@ The length of the buffer.
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## Remarks

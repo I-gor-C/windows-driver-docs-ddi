@@ -40,7 +40,7 @@ apiname:
 -	ModifyMemoryWindow
 product: Windows
 targetos: Windows
-req.typenames: PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
+req.typenames: "*PPAR_SET_INFORMATION, PAR_SET_INFORMATION"
 ---
 
 
@@ -97,10 +97,11 @@ Specifies the width of bus access to the PCMCIA memory card. <i>BusWidth</i> mus
 
 
 
-If <i>Enable</i> is <b>FALSE</b>, <i>BusWidth</i> is not used.
 
 
 #### PCMCIA_MEMORY_8BIT_ACCESS
+
+If <i>Enable</i> is <b>FALSE</b>, <i>BusWidth</i> is not used.
 
 `IsAttributeMemory`
 
@@ -126,9 +127,13 @@ Callers of this routine must be running at IRQL &lt;= DISPATCH_LEVEL. To maintai
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
+
 
  
 

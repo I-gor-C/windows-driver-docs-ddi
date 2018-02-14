@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: cdc3dd16-6bf2-495c-8df1-aa9c670d1e7a
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: LPD3DHAL_DP2INDEXEDTRIANGLEFAN structure pointer [Display Devices], *LPD3DHAL_DP2INDEXEDTRIANGLEFAN, d3dhal/D3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN structure [Display Devices], d3dstrct_72b499fd-e571-4dbb-a9b8-c2debf754b41.xml, LPD3DHAL_DP2INDEXEDTRIANGLEFAN, display.d3dhal_dp2indexedtrianglefan, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN, _D3DHAL_DP2INDEXEDTRIANGLEFAN
+ms.keywords: d3dstrct_72b499fd-e571-4dbb-a9b8-c2debf754b41.xml, *LPD3DHAL_DP2INDEXEDTRIANGLEFAN, _D3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN structure [Display Devices], d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLEFAN, d3dhal/D3DHAL_DP2INDEXEDTRIANGLEFAN, display.d3dhal_dp2indexedtrianglefan, LPD3DHAL_DP2INDEXEDTRIANGLEFAN, LPD3DHAL_DP2INDEXEDTRIANGLEFAN structure pointer [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ The driver should process a total of (<b>wPrimitiveCount</b> + 2) vertices from 
 A <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a> structure immediately follows the command in the command buffer. The vertex buffer indexes are relative to the vertex buffer offset specified by the <b>dwVertexOffset</b> member of the <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a> structure plus the base offset obtained from the <b>wVStart</b> member of the D3DHAL_DP2STARTVERTEX structure.
 
 The following figure shows a portion of a sample command buffer containing a D3DDP2OP_INDEXEDTRIANGLEFAN command, a D3DHAL_DP2STARTVERTEX offset, and a logical list of D3DHAL_DP2INDEXEDTRIANGLEFAN structures. The driver should process five vertices from the vertex buffer, rendering a fan with three triangles defined by (v[4], v[5], v[7]), (v[5], v[6], v[7]), (v[6], v[9], v[7]).
+
 <img alt="Figure showing a buffer with a D3DDP2OP_INDEXEDTRIANGLEFAN command, a D3DHAL_DP2STARTVERTEX offset, and a list of D3DHAL_DP2INDEXEDTRIANGLEFAN structures" src="images/dp2tfani.png"/>
 
 ## Requirements
@@ -81,13 +82,23 @@ The following figure shows a portion of a sample command buffer containing a D3D
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a>
 
 D3DDP2OP_INDEXEDTRIANGLEFAN
 
+
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
+
+
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a>
+
+
 
  
 

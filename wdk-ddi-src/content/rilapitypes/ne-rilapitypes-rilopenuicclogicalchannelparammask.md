@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: abce79d2-1eca-4d62-af4f-434596bfb718
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapitypes/RIL_PARAM_OULC_SELECTRESPONSE, netvista.rilopenuicclogicalchannelparammask_2, RILOPENUICCLOGICALCHANNELPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_OULC_ALL, RIL_PARAM_OULC_SELECTRESPONSE, RILOPENUICCLOGICALCHANNELPARAMMASK, rilapitypes/RIL_PARAM_OULC_SELECTRESPLENGTH, rilapitypes/RILOPENUICCLOGICALCHANNELPARAMMASK, RIL_PARAM_OULC_ALL, RIL_PARAM_OULC_SELECTRESPLENGTH
+ms.keywords: RILOPENUICCLOGICALCHANNELPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_OULC_SELECTRESPONSE, rilapitypes/RILOPENUICCLOGICALCHANNELPARAMMASK, RIL_PARAM_OULC_SELECTRESPONSE, rilapitypes/RIL_PARAM_OULC_SELECTRESPLENGTH, RILOPENUICCLOGICALCHANNELPARAMMASK, RIL_PARAM_OULC_ALL, netvista.rilopenuicclogicalchannelparammask_2, rilapitypes/RIL_PARAM_OULC_ALL, RIL_PARAM_OULC_SELECTRESPLENGTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

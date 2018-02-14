@@ -1,6 +1,6 @@
 ---
 UID: NF:wdm.RtlCheckBit
-title: RtlCheckBit function
+title: RtlCheckBit macro
 author: windows-driver-content
 description: The RtlCheckBit routine determines whether a particular bit in a given bitmap variable is clear or set.
 old-location: kernel\rtlcheckbit.htm
@@ -8,10 +8,10 @@ old-project: kernel
 ms.assetid: 2c9842de-a256-46ed-84b4-b8a595c01a62
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlcheckbit, wdm/RtlCheckBit, RtlCheckBit, k109_1f4676c1-d031-4a2c-8d74-afa9d3a0ed10.xml, RtlCheckBit routine [Kernel-Mode Driver Architecture]
+ms.keywords: k109_1f4676c1-d031-4a2c-8d74-afa9d3a0ed10.xml, kernel.rtlcheckbit, wdm/RtlCheckBit, RtlCheckBit routine [Kernel-Mode Driver Architecture], RtlCheckBit
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Desktop
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: wdm.h
 req.dll: 
 req.irql: "<= APC_LEVEL (see Remarks section)"
 topictype:
@@ -61,16 +61,16 @@ ULONG RtlCheckBit(
 
 `BitMapHeader`
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine.
+
 
 `BitPosition`
 
-Specifies which bit to check. This is a zero-based value indicating the position of the bit to be tested.
+
 
 
 ## Return Value
 
-<b>RtlCheckBit</b> returns zero if the given bit is clear, or one if the given bit is set.
+None
 
 ## Remarks
 
@@ -82,22 +82,34 @@ Callers of <b>RtlCheckBit</b> must be running at IRQL &lt;= APC_LEVEL if the mem
 | **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** | NtosKrnl.exe |
+| **Library** | wdm.h |
 | **IRQL** | "<= APC_LEVEL (see Remarks section)" |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
 
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
 
-<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
+<a href="..\wdm\nf-wdm-rtlnumberofclearbits.md">RtlNumberOfClearBits</a>
+
+
 
 <a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
 
-<a href="..\wdm\nf-wdm-rtlnumberofclearbits.md">RtlNumberOfClearBits</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+
+
 
  
 

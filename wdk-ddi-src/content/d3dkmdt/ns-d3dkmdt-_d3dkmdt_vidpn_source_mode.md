@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 763db6bb-8991-406d-a1d4-8ad50e32fee1
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMDT_VIDPN_SOURCE_MODE, display.d3dkmdt_vidpn_source_mode, DmStructs_0e8655c2-a85f-411d-a791-4c85e5c7d52c.xml, d3dkmdt/D3DKMDT_VIDPN_SOURCE_MODE, _D3DKMDT_VIDPN_SOURCE_MODE, D3DKMDT_VIDPN_SOURCE_MODE structure [Display Devices]
+ms.keywords: d3dkmdt/D3DKMDT_VIDPN_SOURCE_MODE, D3DKMDT_VIDPN_SOURCE_MODE structure [Display Devices], DmStructs_0e8655c2-a85f-411d-a791-4c85e5c7d52c.xml, _D3DKMDT_VIDPN_SOURCE_MODE, D3DKMDT_VIDPN_SOURCE_MODE, display.d3dkmdt_vidpn_source_mode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -63,18 +63,7 @@ typedef struct _D3DKMDT_VIDPN_SOURCE_MODE {
 
 `Format`
 
-A union that contains information about either the graphics rendering format or the text format in the following members. 
-
-
-
-#### Graphics
-
-A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_graphics_rendering_format.md">D3DKMDT_GRAPHICS_RENDERING_FORMAT</a> structure that contains information about the graphics rendering format (for example, primary surface size and pixel format). This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_GRAPHICS.
-
-
-#### Text
-
-A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_text_rendering_format.md">D3DKMDT_TEXT_RENDERING_FORMAT</a> enumerator that indicates the text format. This member is meaningful only if the <b>Type</b> member is equal to D3DKMDT_RMT_TEXT.
+A union that contains information about either the graphics rendering format or the text format in the following members.
 
 `Id`
 
@@ -97,9 +86,15 @@ For more information about video present sources and VidPN source modes, see <a 
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md">D3DKMDT_VIDPN_TARGET_MODE</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
 
+
+
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
+
+
 
  
 

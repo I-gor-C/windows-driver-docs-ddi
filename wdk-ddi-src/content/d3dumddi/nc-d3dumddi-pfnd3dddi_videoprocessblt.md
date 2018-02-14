@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>VideoProcessBlt</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,7 +115,11 @@ The DirectX VA video processing operation is successfully performed.
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
 
  
 

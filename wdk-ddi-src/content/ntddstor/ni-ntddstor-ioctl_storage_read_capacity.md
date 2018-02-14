@@ -83,6 +83,8 @@ A <b>IOCTL_STORAGE_READ_CAPACITY</b> request returns the disk capacity informati
 
 <a href="..\ntddstor\ns-ntddstor-_storage_read_capacity.md">STORAGE_READ_CAPACITY</a>
 
+
+
  
 
  

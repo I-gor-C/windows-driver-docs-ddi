@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9106CE96-A26F-4358-9668-2C0E331BB793
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtluintptradd, ntintsafe/RtlUIntPtrAdd, RtlUIntPtrAdd, RtlUIntPtrAdd function [Kernel-Mode Driver Architecture]
+ms.keywords: ntintsafe/RtlUIntPtrAdd, RtlUIntPtrAdd, kernel.rtluintptradd, RtlUIntPtrAdd function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ None
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlDWordAdd
 </li>

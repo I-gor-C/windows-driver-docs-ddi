@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 638E4FBE-8F53-4509-BFAE-59C02D2D1C4B
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: EnableDriver, IPrintOemEngine::EnableDriver, IPrintOemEngine, prcomoem/IPrintOemEngine::EnableDriver, EnableDriver method [Print Devices], IPrintOemEngine interface, IPrintOemEngine interface [Print Devices], EnableDriver method, EnableDriver method [Print Devices], print.iprintoemengine_enabledriver
+ms.keywords: IPrintOemEngine, IPrintOemEngine::EnableDriver, EnableDriver method [Print Devices], IPrintOemEngine interface, prcomoem/IPrintOemEngine::EnableDriver, print.iprintoemengine_enabledriver, EnableDriver method [Print Devices], IPrintOemEngine interface [Print Devices], EnableDriver method, EnableDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IPrintOemEngine.EnableDriver
 product: Windows
 targetos: Windows
-req.typenames: "*POEMPTOPTS, OEMPTOPTS"
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -88,6 +88,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\prcomoem\nn-prcomoem-iprintoemengine.md">IPrintOemEngine</a>
+
+
 
  
 

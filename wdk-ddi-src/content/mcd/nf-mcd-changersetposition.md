@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: cab12c57-dd2b-4453-90ed-7f8954e0fe5d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.changersetposition, mcd/ChangerSetPosition, chgrmini_28455ca6-3f1f-40ac-a756-c1f026f35f87.xml, ChangerSetPosition, ChangerSetPosition function [Storage Devices]
+ms.keywords: chgrmini_28455ca6-3f1f-40ac-a756-c1f026f35f87.xml, ChangerSetPosition, mcd/ChangerSetPosition, storage.changersetposition, ChangerSetPosition function [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -108,9 +108,15 @@ The changer class driver checks the input buffer length in the I/O stack locatio
 
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_position.md">, IOCTL_CHANGER_SET_POSITION</a>
 
+
+
 <a href="..\ntddchgr\ns-ntddchgr-_changer_set_position.md">CHANGER_SET_POSITION</a>
 
+
+
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
+
+
 
  
 

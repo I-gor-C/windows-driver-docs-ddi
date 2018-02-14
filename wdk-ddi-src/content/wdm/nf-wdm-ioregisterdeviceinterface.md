@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4d0782c7-0516-4326-9994-7820446f2af6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.ioregisterdeviceinterface, wdm/IoRegisterDeviceInterface, IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], IoRegisterDeviceInterface, k104_4916c641-8510-425d-953f-68ed7a3f8976.xml
+ms.keywords: k104_4916c641-8510-425d-953f-68ed7a3f8976.xml, wdm/IoRegisterDeviceInterface, IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], kernel.ioregisterdeviceinterface, IoRegisterDeviceInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,6 +89,7 @@ The caller is responsible for freeing <i>SymbolicLinkName</i> with <a href="..\w
 ## Return Value
 
 <b>IoRegisterDeviceInterface</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -136,13 +137,21 @@ Callers of <b>IoRegisterDeviceInterface</b> must be running at IRQL = PASSIVE_LE
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+<a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
+
+
 
 <a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>
 
-<a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
+
 
 <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+
+
 
  
 

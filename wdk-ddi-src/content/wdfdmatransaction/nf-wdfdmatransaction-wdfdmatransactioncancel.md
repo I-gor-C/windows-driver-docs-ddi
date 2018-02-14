@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: A0EB188E-D5C7-4C7B-A462-2C3792825FD8
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfdmatransactioncancel, WdfDmaTransactionCancel, WdfDmaTransactionCancel method, PFN_WDFDMATRANSACTIONCANCEL, wdf.wdfdmatransactioncancel, wdfdmatransaction/WdfDmaTransactionCancel
+ms.keywords: kmdf.wdfdmatransactioncancel, wdfdmatransaction/WdfDmaTransactionCancel, PFN_WDFDMATRANSACTIONCANCEL, WdfDmaTransactionCancel, WdfDmaTransactionCancel method, wdf.wdfdmatransactioncancel
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WdfDmaTransactionCancel
 product: Windows
 targetos: Windows
-req.typenames: WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product: Windows 10 or later.
 ---
 
@@ -106,11 +106,17 @@ A driver must request use of DMA version 3 prior to calling  <b>WdfDmaTransactio
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a>
+<a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt_wdf_reserve_dma.md">EvtReserveDma</a>
+
+
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionstopsystemtransfer.md">WdfDmaTransactionStopSystemTransfer</a>
 
-<a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt_wdf_reserve_dma.md">EvtReserveDma</a>
+
+
+<a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a>
+
+
 
  
 

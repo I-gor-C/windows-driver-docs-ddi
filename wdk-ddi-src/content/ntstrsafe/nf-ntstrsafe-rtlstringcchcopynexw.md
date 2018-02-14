@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c53672b7-fbe7-45f7-b3ff-30cfeefa7d52
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: STRSAFE_NO_TRUNCATION, STRSAFE_NULL_ON_FAILURE, kernel.rtlstringcchcopynex, ntstrsafe/RtlStringCchCopyNExW, RtlStringCchCopyNEx, RtlStringCchCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, STRSAFE_IGNORE_NULLS, RtlStringCchCopyNExW, ntstrsafe/RtlStringCchCopyNExA, RtlStringCchCopyNExA, safestrings_60ae1ee7-e0ba-407d-8946-a2928d2b9b32.xml
+ms.keywords: RtlStringCchCopyNExA, STRSAFE_IGNORE_NULLS, kernel.rtlstringcchcopynex, STRSAFE_NULL_ON_FAILURE, ntstrsafe/RtlStringCchCopyNExA, STRSAFE_FILL_BEHIND_NULL, RtlStringCchCopyNEx, ntstrsafe/RtlStringCchCopyNExW, safestrings_60ae1ee7-e0ba-407d-8946-a2928d2b9b32.xml, RtlStringCchCopyNExW, RtlStringCchCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, STRSAFE_FILL_ON_FAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	RtlStringCchCopyNExW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -93,6 +93,7 @@ If the caller supplies a non-<b>NULL</b> address pointer, the function loads the
 `dwFlags`
 
 One or more flags and, optionally, a fill byte. The flags are defined as follows:
+
 <table>
 <tr>
 <th>Value</th>
@@ -154,6 +155,7 @@ If set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the dest
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -215,6 +217,7 @@ Note that these functions behave differently from <b>strncpy</b> in one respect.
 <b>RtlStringCchCopyNExW</b> and <b>RtlStringCchCopyNExA</b> add to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.
 
 Use <b>RtlStringCchCopyNExW</b> to handle Unicode strings and <b>RtlStringCchCopyNExA</b> to handle ANSI strings. The form you  use depends on your data, as shown in the following table.
+
 <table>
 <tr>
 <th>String data type</th>
@@ -249,7 +252,8 @@ L"string"
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.
 
@@ -270,7 +274,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexw.md">RtlStringCbCopyNEx</a>
 
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a>
+
+
 
  
 

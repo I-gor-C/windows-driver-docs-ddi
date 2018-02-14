@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3e0b85f9-b6e4-4d53-b8dc-7f51e0f74be3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportgethighestnodenumber, storport/StorPortGetHighestNodeNumber, StorPortGetHighestNodeNumber, storprt_e9e942e1-6de3-4170-87ec-00660ce9925a.xml, StorPortGetHighestNodeNumber routine [Storage Devices]
+ms.keywords: storprt_e9e942e1-6de3-4170-87ec-00660ce9925a.xml, StorPortGetHighestNodeNumber routine [Storage Devices], storport/StorPortGetHighestNodeNumber, StorPortGetHighestNodeNumber, storage.storportgethighestnodenumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a variable that holds the highest-numbered node.
 ## Return Value
 
 The <b>StorPortGetHighestNodeNumber</b>routine returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>

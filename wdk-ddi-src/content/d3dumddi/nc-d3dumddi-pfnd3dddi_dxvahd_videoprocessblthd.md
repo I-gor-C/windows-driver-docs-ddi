@@ -73,6 +73,7 @@ HRESULT Pfnd3dddiDxvahdVideoprocessblthd(
 ## Return Value
 
 <i>VideoProcessBltHD</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,6 +114,8 @@ The DirectX VA video processing operation is successfully performed.
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_videoprocessblthd.md">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>
+
+
 
  
 

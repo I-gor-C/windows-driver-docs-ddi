@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 29e9fa32-9264-41d7-8ac2-c6a08cab2880
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiamdef/wiasWriteBufToFile, wiasWriteBufToFile, wiasWriteBufToFile function [Imaging Devices], image.wiaswritebuftofile, wiasFncs_9d14f2bd-ceba-491a-808c-9af7cdcc8b6b.xml
+ms.keywords: wiasFncs_9d14f2bd-ceba-491a-808c-9af7cdcc8b6b.xml, wiasWriteBufToFile function [Imaging Devices], wiamdef/wiasWriteBufToFile, wiasWriteBufToFile, image.wiaswritebuftofile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasWriteBufToFile
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -89,9 +89,15 @@ A WIA minidriver uses this function to write a buffer to any type of image file.
 
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftostream.md">wiasWritePageBufToStream</a>
+
 
 <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftostream.md">wiasWritePageBufToStream</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 63DA6329-C673-48A0-8E36-67035E2DB4C9
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddndis/NDIS_ARP_HEADER_FIELD, NDIS_ARP_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisARPHeaderFieldUndefined, ntddndis/NdisARPHeaderFieldOperation, NdisARPHeaderFieldTPA, PNDIS_ARP_HEADER_FIELD, NdisARPHeaderFieldUndefined, ntddndis/NdisARPHeaderFieldTPA, ntddndis/NdisARPHeaderFieldMaximum, NDIS_ARP_HEADER_FIELD, NdisARPHeaderFieldMaximum, NdisARPHeaderFieldOperation, netvista.ndis_arp_header_field, ntddndis/PNDIS_ARP_HEADER_FIELD, ntddndis/NdisARPHeaderFieldSPA, _NDIS_ARP_HEADER_FIELD, PNDIS_ARP_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], NdisARPHeaderFieldSPA, *PNDIS_ARP_HEADER_FIELD
+ms.keywords: netvista.ndis_arp_header_field, ntddndis/NDIS_ARP_HEADER_FIELD, ntddndis/NdisARPHeaderFieldOperation, NDIS_ARP_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], NdisARPHeaderFieldOperation, PNDIS_ARP_HEADER_FIELD, NdisARPHeaderFieldUndefined, NdisARPHeaderFieldTPA, NDIS_ARP_HEADER_FIELD, NdisARPHeaderFieldSPA, PNDIS_ARP_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_ARP_HEADER_FIELD, ntddndis/NdisARPHeaderFieldTPA, ntddndis/NdisARPHeaderFieldMaximum, ntddndis/NdisARPHeaderFieldSPA, NdisARPHeaderFieldMaximum, ntddndis/PNDIS_ARP_HEADER_FIELD, *PNDIS_ARP_HEADER_FIELD, ntddndis/NdisARPHeaderFieldUndefined
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -104,6 +104,8 @@ typedef enum _NDIS_ARP_HEADER_FIELD {
 
         <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
+
+
 
  
 

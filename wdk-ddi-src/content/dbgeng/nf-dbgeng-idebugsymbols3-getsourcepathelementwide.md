@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 724ee7a6-a0ef-440b-a0d4-5eecda77338a
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetSourcePathElementWide method, dbgeng/IDebugSymbols3::GetSourcePathElementWide, GetSourcePathElementWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, debugger.getsourcepathelementwide, IDebugSymbols3::GetSourcePathElementWide, GetSourcePathElementWide method [Windows Debugging], GetSourcePathElementWide
+ms.keywords: GetSourcePathElementWide method [Windows Debugging], IDebugSymbols3 interface, debugger.getsourcepathelementwide, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElementWide method, IDebugSymbols3::GetSourcePathElementWide, dbgeng/IDebugSymbols3::GetSourcePathElementWide, GetSourcePathElementWide, GetSourcePathElementWide method [Windows Debugging], IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,6 +80,7 @@ Receives the size, in characters, of the source path element.
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -124,11 +125,17 @@ For more information about manipulating the source path, see <a href="https://ms
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 
  
 

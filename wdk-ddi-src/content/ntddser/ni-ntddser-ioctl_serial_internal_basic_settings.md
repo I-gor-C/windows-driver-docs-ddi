@@ -84,6 +84,8 @@ The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.co
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_internal_restore_settings.md">IOCTL_SERIAL_INTERNAL_RESTORE_SETTINGS</a>
 
+
+
  
 
  

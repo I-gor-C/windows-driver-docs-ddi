@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: c60f3dd5-2a74-4d7c-8804-35b9dd91dce4
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFREQUESTSETCOMPLETIONROUTINE, wdfrequest/WdfRequestSetCompletionRoutine, WdfRequestSetCompletionRoutine method, kmdf.wdfrequestsetcompletionroutine, DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, WdfRequestSetCompletionRoutine, wdf.wdfrequestsetcompletionroutine
+ms.keywords: kmdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine method, wdfrequest/WdfRequestSetCompletionRoutine, PFN_WDFREQUESTSETCOMPLETIONROUTINE, WdfRequestSetCompletionRoutine, DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, wdf.wdfrequestsetcompletionroutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,6 +90,13 @@ If your driver forwards I/O requests, but if you want your driver to be notified
 
 For more information about <b>WdfRequestSetCompletionRoutine</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
+
+#### Examples
+
+For a code example that uses <b>WdfRequestSetCompletionRoutine</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -104,6 +111,8 @@ For more information about <b>WdfRequestSetCompletionRoutine</b>, see <a href="h
 ## See Also
 
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 48042e9d-ed83-4326-931d-ded753deb1a7
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_4617200d-18b4-4ee2-aa43-92fc5f3a7b66.xml, storport/StorPortGetOriginalMdl, StorPortGetOriginalMdl, StorPortGetOriginalMdl routine [Storage Devices], storage.storportgetoriginalmdl
+ms.keywords: StorPortGetOriginalMdl routine [Storage Devices], storport/StorPortGetOriginalMdl, storprt_4617200d-18b4-4ee2-aa43-92fc5f3a7b66.xml, StorPortGetOriginalMdl, storage.storportgetoriginalmdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A pointer to receive the MDL.
 ## Return Value
 
 StorPortGetOriginalMdl returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -129,11 +130,17 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 
 ## See Also
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
 <a href="..\storport\nf-storport-storportgetsystemaddress.md">StorPortGetSystemAddress</a>
 
+
+
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
+
+<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+
+
 
  
 

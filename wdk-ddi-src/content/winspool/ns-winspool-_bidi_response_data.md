@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 8e56ef0a-c652-4fca-ad87-4a0495c8de2e
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: winspool/PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA structure [Print Devices], PBIDI_RESPONSE_DATA structure pointer [Print Devices], BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, PBIDI_RESPONSE_DATA, print.bidi_response_data, LPBIDI_RESPONSE_DATA structure pointer [Print Devices], winspool/BIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA, spoolfnc_eb6aa91d-8fbc-4079-a8b8-57d5c3ff7abf.xml, _BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, winspool/LPBIDI_RESPONSE_DATA
+ms.keywords: winspool/LPBIDI_RESPONSE_DATA, winspool/PBIDI_RESPONSE_DATA, PBIDI_RESPONSE_DATA, spoolfnc_eb6aa91d-8fbc-4079-a8b8-57d5c3ff7abf.xml, print.bidi_response_data, LPBIDI_RESPONSE_DATA structure pointer [Print Devices], _BIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, winspool/BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA structure [Print Devices], PBIDI_RESPONSE_DATA structure pointer [Print Devices], LPBIDI_RESPONSE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	BIDI_RESPONSE_DATA
 product: Windows
 targetos: Windows
-req.typenames: BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA
+req.typenames: "*LPBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA"
 req.product: Windows 10 or later.
 ---
 
@@ -89,11 +89,17 @@ When the bidi action is BIDI_ACTION_GETALL, the <b>dwReqNumber</b> member holds 
 
 ## See Also
 
-<a href="..\winspool\ns-winspool-_bidi_response_container.md">BIDI_RESPONSE_CONTAINER</a>
+<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
+
+
 
 <a href="..\winsplp\nf-winsplp-routerfreebidiresponsecontainer.md">RouterFreeBidiResponseContainer</a>
 
-<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
+
+
+<a href="..\winspool\ns-winspool-_bidi_response_container.md">BIDI_RESPONSE_CONTAINER</a>
+
+
 
  
 

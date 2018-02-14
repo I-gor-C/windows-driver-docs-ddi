@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: da4074ac-309d-46b9-b630-79d73ed73f36
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmdt/D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE, display.d3dkmdt_pixel_value_access_mode, DmEnums_ac8b4715-9a7c-4698-8f57-e6125f90f75b.xml, D3DKMDT_PVAM_DIRECT, D3DKMDT_PVAM_PRESETPALETTE, D3DKMDT_PVAM_UNINITIALIZED, _D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_PRESETPALETTE, d3dkmdt/D3DKMDT_PVAM_DIRECT, d3dkmdt/D3DKMDT_PVAM_UNINITIALIZED, D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration [Display Devices], d3dkmdt/D3DKMDT_PVAM_SETTABLEPALETTE, D3DKMDT_PVAM_SETTABLEPALETTE
+ms.keywords: "_D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PVAM_DIRECT, D3DKMDT_PVAM_SETTABLEPALETTE, d3dkmdt/D3DKMDT_PVAM_DIRECT, d3dkmdt/D3DKMDT_PVAM_SETTABLEPALETTE, DmEnums_ac8b4715-9a7c-4698-8f57-e6125f90f75b.xml, d3dkmdt/D3DKMDT_PVAM_PRESETPALETTE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration [Display Devices], d3dkmdt/D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PVAM_PRESETPALETTE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_UNINITIALIZED, display.d3dkmdt_pixel_value_access_mode, D3DKMDT_PVAM_UNINITIALIZED"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -94,6 +94,8 @@ typedef enum _D3DKMDT_PIXEL_VALUE_ACCESS_MODE {
     ## See Also
 
         <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
+
+
 
  
 

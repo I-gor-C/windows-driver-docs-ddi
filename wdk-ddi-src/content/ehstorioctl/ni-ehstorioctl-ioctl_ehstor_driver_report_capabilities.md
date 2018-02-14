@@ -69,6 +69,7 @@ None.
 
 ### Status Block
 One of the following values can be returned in the <b>Status</b> field.
+
 <table>
 <tr>
 <th>Status Value</th>
@@ -114,6 +115,8 @@ IOCTL requests supported by a silo driver are included in an array following <a 
 ## See Also
 
 <a href="..\ehstorioctl\ns-ehstorioctl-_silo_driver_capabilities.md">SILO_DRIVER_CAPABILITIES</a>
+
+
 
  
 

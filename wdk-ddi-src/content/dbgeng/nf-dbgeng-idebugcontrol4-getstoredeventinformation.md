@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 94cc33bf-cd44-4892-a4e1-991eb6339cc3
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl4, IDebugControl4::GetStoredEventInformation, IDebugControl4 interface [Windows Debugging], GetStoredEventInformation method, debugger.getstoredeventinformation, IDebugControl_2d615fc9-52f1-4169-9265-430a1ce0f940.xml, GetStoredEventInformation method [Windows Debugging], GetStoredEventInformation, GetStoredEventInformation method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetStoredEventInformation
+ms.keywords: IDebugControl_2d615fc9-52f1-4169-9265-430a1ce0f940.xml, GetStoredEventInformation method [Windows Debugging], IDebugControl4 interface, debugger.getstoredeventinformation, dbgeng/IDebugControl4::GetStoredEventInformation, GetStoredEventInformation, IDebugControl4 interface [Windows Debugging], GetStoredEventInformation method, IDebugControl4, IDebugControl4::GetStoredEventInformation, GetStoredEventInformation method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -105,6 +105,7 @@ Receives the size in bytes of extra information.  If <i>ExtraInformationUsed</i>
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -140,9 +141,13 @@ For more information, see the topic <a href="https://msdn.microsoft.com/library/
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546982">GetLastEventInformation</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
 
  
 

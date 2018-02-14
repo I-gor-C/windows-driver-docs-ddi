@@ -70,6 +70,8 @@ The <b>IPartThumbnail</b> interface is an abstraction for thumbnails in an XPS d
 
 <a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: c1057dcf-2988-460d-b006-f6cf16ec969e
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KSSTREAM_HEADER structure [Streaming Media Devices], *PKSSTREAM_HEADER, PKSSTREAM_HEADER, ks/KSSTREAM_HEADER, KSSTREAM_HEADER, ks-struct_6f951af2-bee6-49ee-9df5-5291b5d00045.xml, PKSSTREAM_HEADER structure pointer [Streaming Media Devices], stream.ksstream_header, ks/PKSSTREAM_HEADER
+ms.keywords: PKSSTREAM_HEADER structure pointer [Streaming Media Devices], ks-struct_6f951af2-bee6-49ee-9df5-5291b5d00045.xml, ks/KSSTREAM_HEADER, KSSTREAM_HEADER structure [Streaming Media Devices], KSSTREAM_HEADER, *PKSSTREAM_HEADER, stream.ksstream_header, ks/PKSSTREAM_HEADER, PKSSTREAM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -83,6 +83,7 @@ Specifies the size of the entire frame. The region within the frame extent is av
 `OptionsFlags`
 
 Specifies a variety of attributes of the data stream. The <b>OptionsFlags</b> member can have the values listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -273,6 +274,7 @@ This structure can be followed in memory by additional information specific to t
 The presentation time is typically in 100-nanosecond units; however, the standard format of this time is based on the data format. You can normalize presentation time by using as a scaling fractional the KSSTREAM_HEADER.PresentationTime.Numerator divided by the KSSTREAM_HEADER.PresentationTime.Denominator .
 
 A conversion should use the numerator first, then the denominator, in order to reduce rounding errors. For example, an audio stream might present the current time as a byte offset in the data stream:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -288,7 +290,8 @@ StreamHdr-&gt;PresentationTime.Time = ByteOffset;
 StreamHdr-&gt;Duration = ByteLength;</pre>
 </td>
 </tr>
-</table></span></div>On an IOCTL_KS_READ_STREAM, portions of the stream header are filled in by the call. Each KSSTREAM_HEADER.DataUsed element contains the actual number of bytes read, which is less than or equal to each KSSTREAM_HEADER.FrameExtent. The pIrp-&gt;IoStatus.Information element contains the total size of the header data to return, which is at least one <b>sizeof</b>(KSSTREAM_HEADER).
+</table></span></div>
+On an IOCTL_KS_READ_STREAM, portions of the stream header are filled in by the call. Each KSSTREAM_HEADER.DataUsed element contains the actual number of bytes read, which is less than or equal to each KSSTREAM_HEADER.FrameExtent. The pIrp-&gt;IoStatus.Information element contains the total size of the header data to return, which is at least one <b>sizeof</b>(KSSTREAM_HEADER).
 
 On an IOCTL_KS_WRITE_STREAM, the member elements must be initialized, and each KSSTREAM_HEADER.DataUsed element contains the number of bytes to write. The actual number of total bytes written is returned in pIrp-&gt;IoStatus.Information. This is less than or equal to the total of all KSSTREAM_HEADER.DataUsed elements in the headers.
 
@@ -302,6 +305,8 @@ If you are using the <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceCloc
 ## See Also
 
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+
+
 
  
 

@@ -53,6 +53,27 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugBreakpoint.AddFlags](nf-dbgeng-idebugbreakpoint-addflags.md) | The AddFlags method adds flags to a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetAdder](nf-dbgeng-idebugbreakpoint-getadder.md) | The GetAdder method returns the client that owns the breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetCommand](nf-dbgeng-idebugbreakpoint-getcommand.md) | The GetCommand method returns the command string that is executed when a breakpoint is triggered. |
+| [dbgeng.IDebugBreakpoint.GetCurrentPassCount](nf-dbgeng-idebugbreakpoint-getcurrentpasscount.md) | The GetCurrentPassCount method returns the remaining number of times that the target must reach the breakpoint location before the breakpoint is triggered. |
+| [dbgeng.IDebugBreakpoint.GetDataParameters](nf-dbgeng-idebugbreakpoint-getdataparameters.md) | The GetDataParameters method returns the parameters for a processor breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetFlags](nf-dbgeng-idebugbreakpoint-getflags.md) | The GetFlags method returns the flags for a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetId](nf-dbgeng-idebugbreakpoint-getid.md) | The GetId method returns a breakpoint ID, which is the engine's unique identifier for a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetMatchThreadId](nf-dbgeng-idebugbreakpoint-getmatchthreadid.md) | The GetMatchThreadId method returns the engine thread ID of the thread that can trigger a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetOffset](nf-dbgeng-idebugbreakpoint-getoffset.md) | The GetOffset method returns the location that triggers a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetOffsetExpression](nf-dbgeng-idebugbreakpoint-getoffsetexpression.md) | The GetOffsetExpression methods return the expression string that evaluates to the location that triggers a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetParameters](nf-dbgeng-idebugbreakpoint-getparameters.md) | The GetParameters method returns the parameters for a breakpoint. |
+| [dbgeng.IDebugBreakpoint.GetPassCount](nf-dbgeng-idebugbreakpoint-getpasscount.md) | The GetPassCount method returns the number of times that the target was originally required to reach the breakpoint location before the breakpoint is triggered. |
+| [dbgeng.IDebugBreakpoint.GetType](nf-dbgeng-idebugbreakpoint-gettype.md) | The GetType method returns the type of the breakpoint and the type of the processor that a breakpoint is set for. |
+| [dbgeng.IDebugBreakpoint.RemoveFlags](nf-dbgeng-idebugbreakpoint-removeflags.md) | The RemoveFlags method removes flags from a breakpoint. |
+| [dbgeng.IDebugBreakpoint.SetCommand](nf-dbgeng-idebugbreakpoint-setcommand.md) | The SetCommand method sets the command that is executed when a breakpoint is triggered. |
+| [dbgeng.IDebugBreakpoint.SetDataParameters](nf-dbgeng-idebugbreakpoint-setdataparameters.md) | The SetDataParameters method sets the parameters for a processor breakpoint. |
+| [dbgeng.IDebugBreakpoint.SetFlags](nf-dbgeng-idebugbreakpoint-setflags.md) | The SetFlags method sets the flags for a breakpoint. |
+| [dbgeng.IDebugBreakpoint.SetMatchThreadId](nf-dbgeng-idebugbreakpoint-setmatchthreadid.md) | The SetMatchThreadId method sets the engine thread ID of the thread that can trigger a breakpoint. |
+| [dbgeng.IDebugBreakpoint.SetOffset](nf-dbgeng-idebugbreakpoint-setoffset.md) | The SetOffset method sets the location that triggers a breakpoint. |
+| [dbgeng.IDebugBreakpoint.SetOffsetExpression](nf-dbgeng-idebugbreakpoint-setoffsetexpression.md) | The SetOffsetExpression methods set an expression string that evaluates to the location that triggers a breakpoint. |
+| [dbgeng.IDebugBreakpoint.SetPassCount](nf-dbgeng-idebugbreakpoint-setpasscount.md) | The SetPassCount method sets the number of times that the target must reach the breakpoint location before the breakpoint is triggered. |
 
 ## Remarks
 
@@ -67,6 +88,8 @@ Although <b>IDebugBreakpoint</b> implements the <b>IUnknown</b> interface, the <
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint2.md">IDebugBreakpoint2</a>
+
+
 
  
 

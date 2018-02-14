@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1007c8ba-c503-4522-aef8-23b89bec3d62
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTOpenAdapterFromLuid, D3DKMTOpenAdapterFromLuid function [Display Devices], d3dkmthk/D3DKMTOpenAdapterFromLuid, display.d3dkmtopenadapterfromluid
+ms.keywords: D3DKMTOpenAdapterFromLuid function [Display Devices], D3DKMTOpenAdapterFromLuid, display.d3dkmtopenadapterfromluid, d3dkmthk/D3DKMTOpenAdapterFromLuid
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,6 +67,7 @@ TBD
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ The mapping was performed successfully.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -112,6 +114,8 @@ This function might also return other NTSTATUS values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_openadapterfromluid.md">D3DKMT_OPENADAPTERFROMLUID</a>
+
+
 
  
 

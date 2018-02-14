@@ -40,7 +40,7 @@ apiname:
 -	CreateVideoProcessorOutputView
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -83,6 +83,7 @@ HRESULT Pfnd3d111DdiCreatevideoprocessoroutputview(
 ## Return Value
 
 <i>CreateVideoProcessorOutputView</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,9 +140,13 @@ When the runtime  calls <i>CreateVideoProcessorOutputView</i>, it passes the han
 
 ## See Also
 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessoroutputviewsize.md">CalcPrivateVideoProcessorOutputViewSize</a>
+
+
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideodecoderoutputview.md">D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessoroutputviewsize.md">CalcPrivateVideoProcessorOutputViewSize</a>
+
 
  
 

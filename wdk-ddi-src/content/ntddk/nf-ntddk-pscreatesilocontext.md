@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 54FD0308-7E40-40C7-BA3A-FF1EFFBE0DB6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PsCreateSiloContext, ntddk/PsCreateSiloContext, kernel.pscreatesilocontext, PsCreateSiloContext routine [Kernel-Mode Driver Architecture]
+ms.keywords: PsCreateSiloContext, kernel.pscreatesilocontext, ntddk/PsCreateSiloContext, PsCreateSiloContext routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsCreateSiloContext
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -85,6 +85,7 @@ A pointer to a caller-allocated variable that receives the address of the newly 
 ## Return Value
 
 The following NT status codes are returned.
+
 <table>
 <tr>
 <th>Return code</th>

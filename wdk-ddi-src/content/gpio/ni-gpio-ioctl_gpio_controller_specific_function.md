@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
 product: Windows
 targetos: Windows
-req.typenames: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
+req.typenames: FWPS_CONNECT_REQUEST0
 ---
 
 # IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION IOCTL
@@ -96,6 +96,8 @@ The peripheral device driver sends this I/O control request to the file object f
 ## See Also
 
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+
+
 
  
 

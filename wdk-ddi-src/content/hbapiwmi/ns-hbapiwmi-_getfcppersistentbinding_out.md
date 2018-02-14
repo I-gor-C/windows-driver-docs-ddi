@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1bb7c529-df26-4173-a098-6a19adf6b569
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_GetFcpPersistentBinding_OUT, structs-Fibre_6deac9e1-fd5f-4bc1-9349-39bc61c4c6bb.xml, hbapiwmi/GetFcpPersistentBinding_OUT, storage.getfcppersistentbinding_out, PGetFcpPersistentBinding_OUT structure pointer [Storage Devices], GetFcpPersistentBinding_OUT, *PGetFcpPersistentBinding_OUT, hbapiwmi/PGetFcpPersistentBinding_OUT, GetFcpPersistentBinding_OUT structure [Storage Devices], PGetFcpPersistentBinding_OUT"
+ms.keywords: storage.getfcppersistentbinding_out, GetFcpPersistentBinding_OUT, PGetFcpPersistentBinding_OUT structure pointer [Storage Devices], PGetFcpPersistentBinding_OUT, _GetFcpPersistentBinding_OUT, structs-Fibre_6deac9e1-fd5f-4bc1-9349-39bc61c4c6bb.xml, GetFcpPersistentBinding_OUT structure [Storage Devices], hbapiwmi/PGetFcpPersistentBinding_OUT, hbapiwmi/GetFcpPersistentBinding_OUT, *PGetFcpPersistentBinding_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	GetFcpPersistentBinding_OUT
 product: Windows
 targetos: Windows
-req.typenames: GetFcpPersistentBinding_OUT, *PGetFcpPersistentBinding_OUT
+req.typenames: "*PGetFcpPersistentBinding_OUT, GetFcpPersistentBinding_OUT"
 ---
 
 # _GetFcpPersistentBinding_OUT structure
@@ -88,6 +88,8 @@ The WMI tool suite generates a declaration of the GetFcpPersistentBinding_OUT st
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFcpPersistentBinding</a>
+
+
 
  
 

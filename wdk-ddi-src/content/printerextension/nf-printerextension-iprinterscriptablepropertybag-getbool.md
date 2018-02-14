@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: EEBB916B-0E7B-4523-BB13-A4758F5491BB
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.iprinterscriptablepropertybag_getbool, GetBool method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag, GetBool, printerextension/IPrinterScriptablePropertyBag::GetBool, IPrinterScriptablePropertyBag::GetBool, IPrinterScriptablePropertyBag interface [Print Devices], GetBool method, GetBool method [Print Devices]
+ms.keywords: IPrinterScriptablePropertyBag interface [Print Devices], GetBool method, GetBool, print.iprinterscriptablepropertybag_getbool, IPrinterScriptablePropertyBag, GetBool method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::GetBool, printerextension/IPrinterScriptablePropertyBag::GetBool, GetBool method [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,6 +87,8 @@ A call to <b>GetBool</b> will throw an exception, if the specified property is n
 ## See Also
 
 <a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+
+
 
  
 

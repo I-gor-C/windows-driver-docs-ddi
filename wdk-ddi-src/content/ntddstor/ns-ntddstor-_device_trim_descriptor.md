@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e36bca55-63d0-41ef-83b9-8f0cfd450323
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.device_trim_descriptor, PDEVICE_TRIM_DESCRIPTOR structure pointer [Storage Devices], DEVICE_TRIM_DESCRIPTOR, PDEVICE_TRIM_DESCRIPTOR, structs-general_eeaa452e-bc49-47ac-9d6f-4a7bbc022b2f.xml, *PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_TRIM_DESCRIPTOR, ntddstor/PDEVICE_TRIM_DESCRIPTOR, _DEVICE_TRIM_DESCRIPTOR
+ms.keywords: PDEVICE_TRIM_DESCRIPTOR, PDEVICE_TRIM_DESCRIPTOR structure pointer [Storage Devices], storage.device_trim_descriptor, _DEVICE_TRIM_DESCRIPTOR, *PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_TRIM_DESCRIPTOR, ntddstor/PDEVICE_TRIM_DESCRIPTOR, structs-general_eeaa452e-bc49-47ac-9d6f-4a7bbc022b2f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DEVICE_TRIM_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: "*PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR"
+req.typenames: DEVICE_TRIM_DESCRIPTOR, *PDEVICE_TRIM_DESCRIPTOR
 ---
 
 # _DEVICE_TRIM_DESCRIPTOR structure
@@ -81,6 +81,8 @@ Storage class drivers issue a device-control request with the I/O control code  
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 47358d69-ef45-4cac-8187-72c354912c4e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: GetItemFlags method [Imaging Devices], wiamindr_lh/IWiaDrvItem::GetItemFlags, IWiaDrvItem, IWiaDrvItem interface [Imaging Devices], GetItemFlags method, GetItemFlags, GetItemFlags method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::GetItemFlags, image.iwiadrvitem_getitemflags, DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml
+ms.keywords: GetItemFlags method [Imaging Devices], GetItemFlags method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem, image.iwiadrvitem_getitemflags, IWiaDrvItem::GetItemFlags, IWiaDrvItem interface [Imaging Devices], GetItemFlags method, wiamindr_lh/IWiaDrvItem::GetItemFlags, DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml, GetItemFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -83,7 +83,11 @@ The method places the current <b>IWiaDrvItem</b> item's flag values in the locat
 
 <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
 
+
+
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+
+
 
  
 

@@ -7,8 +7,8 @@ old-location: buses\_urb_os_feature_descriptor_request.htm
 old-project: usbref
 ms.assetid: 9ff62523-e9e3-4f32-802f-6fee0082d925
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST, buses._urb_os_feature_descriptor_request, _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses], _URB_OS_FEATURE_DESCRIPTOR_REQUEST
+ms.date: 2/8/2018
+ms.keywords: "_URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses], buses._urb_os_feature_descriptor_request, _URB_OS_FEATURE_DESCRIPTOR_REQUEST, usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -101,6 +101,7 @@ Must be set to 0. Page index of the 64K page of the MS OS Feature Descriptor to 
 `Recipient`
 
 Specifies whether the recipient is the USB device or an interface on the USB device.  One of the following values must be specified:
+
 <ul>
 <li>0 indicates that the USB device is the recipient of the request.
 </li>
@@ -159,10 +160,14 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
 
+
+
 <a href="..\usb\ns-usb-_urb.md">URB</a>
 
- 
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_OS_FEATURE_DESCRIPTOR_REQUEST structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_OS_FEATURE_DESCRIPTOR_REQUEST structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

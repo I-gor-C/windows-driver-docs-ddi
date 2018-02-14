@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: E7287A50-2BB8-4D11-AB9B-6E65EEDD698D
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: DEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR structure [Storage Devices], PDEVICE_LB_PROVISIONING_DESCRIPTOR structure pointer [Storage Devices], storage.device_lb_provisioning_descriptor, ntddstor/PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR, _DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR, ntddstor/DEVICE_LB_PROVISIONING_DESCRIPTOR
+ms.keywords: storage.device_lb_provisioning_descriptor, _DEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR structure pointer [Storage Devices], ntddstor/PDEVICE_LB_PROVISIONING_DESCRIPTOR, ntddstor/DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR structure [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ typedef struct _DEVICE_LB_PROVISIONING_DESCRIPTOR {
 `AnchorSupported`
 
 Support for the anchored LBA mapping state.
+
 <table>
 <tr>
 <th>Value</th>
@@ -126,6 +127,7 @@ The size of this structure. This is set to <b>sizeof</b>(DEVICE_LB_PROVISIONING_
 `ThinProvisioningEnabled`
 
 The thin provisioning–enabled status.
+
 <table>
 <tr>
 <th>Value</th>
@@ -158,6 +160,7 @@ Thin provisioning is enabled.
 `ThinProvisioningReadZeros`
 
 Reads to unmapped regions return zeros.
+
 <table>
 <tr>
 <th>Value</th>
@@ -194,6 +197,7 @@ The current value, in blocks, set for unmap granularity alignment on the device.
 `UnmapGranularityAlignmentValid`
 
 The validity of unmap granularity alignment for the device.
+
 <table>
 <tr>
 <th>Value</th>
@@ -244,9 +248,13 @@ If the underlying storage device is a SCSI device, unmapping capability can be q
 
 ## See Also
 
+<a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
+
+
+
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 
-<a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
+
 
  
 

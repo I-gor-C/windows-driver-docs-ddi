@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 0973d8d8-53df-47aa-be65-71045c2e6006
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugRegisters2::GetPseudoIndexByName, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetPseudoIndexByName method, IDebugRegisters2, GetPseudoIndexByName, IDebugRegisters_95580025-4059-4a5b-bd68-d7ebfa20607e.xml, debugger.getpseudoindexbyname, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::GetPseudoIndexByName
+ms.keywords: debugger.getpseudoindexbyname, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters2::GetPseudoIndexByName, IDebugRegisters_95580025-4059-4a5b-bd68-d7ebfa20607e.xml, IDebugRegisters2, GetPseudoIndexByName, dbgeng/IDebugRegisters2::GetPseudoIndexByName, IDebugRegisters2 interface [Windows Debugging], GetPseudoIndexByName method, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Receives the index of the pseudo-register.
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -105,7 +106,11 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548189">GetPseudoDescription</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+
 
  
 

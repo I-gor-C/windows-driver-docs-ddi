@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F35F80E7-E1B6-4219-96AF-687E0014CCB3
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDmaTransactionFreeResources, PFN_WDFDMATRANSACTIONFREERESOURCES, wdfdmatransaction/WdfDmaTransactionFreeResources, wdf.wdfdmatransactionfreeresources, WdfDmaTransactionFreeResources method, kmdf.wdfdmatransactionfreeresources
+ms.keywords: WdfDmaTransactionFreeResources method, WdfDmaTransactionFreeResources, PFN_WDFDMATRANSACTIONFREERESOURCES, wdf.wdfdmatransactionfreeresources, kmdf.wdfdmatransactionfreeresources, wdfdmatransaction/WdfDmaTransactionFreeResources
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WdfDmaTransactionFreeResources
 product: Windows
 targetos: Windows
-req.typenames: WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product: Windows 10 or later.
 ---
 
@@ -97,6 +97,8 @@ For more information about system-mode DMA, see <a href="https://msdn.microsoft.
 ## See Also
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>
+
+
 
  
 

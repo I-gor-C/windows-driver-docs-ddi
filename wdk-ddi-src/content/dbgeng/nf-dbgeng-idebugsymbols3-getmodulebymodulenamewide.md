@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 66ec7c51-3d2c-4a25-a356-4df06ee1b1f5
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols3::GetModuleByModuleNameWide, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, GetModuleByModuleNameWide, debugger.getmodulebymodulenamewide, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide
+ms.keywords: IDebugSymbols3::GetModuleByModuleNameWide, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, GetModuleByModuleNameWide, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface, debugger.getmodulebymodulenamewide, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,6 +80,7 @@ Receives the location in the target's memory address space of the base of the mo
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -124,9 +125,13 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547102">GetModuleByModuleName2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 
  
 

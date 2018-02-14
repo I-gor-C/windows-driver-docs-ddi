@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 804112cf-fc59-4a04-b848-4239b32e35d7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: miniport_logging_ref_e6ca8197-b4f0-4eb9-bfe4-f4b957a124c8.xml, ndis/NdisMCreateLog, NdisMCreateLog, netvista.ndismcreatelog, NdisMCreateLog function [Network Drivers Starting with Windows Vista]
+ms.keywords: miniport_logging_ref_e6ca8197-b4f0-4eb9-bfe4-f4b957a124c8.xml, NdisMCreateLog, netvista.ndismcreatelog, ndis/NdisMCreateLog, NdisMCreateLog function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisMCreateLog
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -81,6 +81,7 @@ Pointer to a caller-supplied variable in which this function returns a handle to
 ## Return Value
 
 <b>NdisMCreateLog</b> can return one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -155,13 +156,21 @@ Whatever size of log file is allocated, subsequent calls to
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
 
-<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
+
 
 <a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: acfd28c9-c6d5-4768-b095-488f174d78c0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsMgmtHandleLogFileFull, kernel.clfsmgmthandlelogfilefull, wdm/ClfsMgmtHandleLogFileFull, Clfs_management_244be38f-f0dc-45db-b0c2-ccdee1290840.xml, ClfsMgmtHandleLogFileFull routine [Kernel-Mode Driver Architecture]
+ms.keywords: Clfs_management_244be38f-f0dc-45db-b0c2-ccdee1290840.xml, ClfsMgmtHandleLogFileFull, ClfsMgmtHandleLogFileFull routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtHandleLogFileFull, kernel.clfsmgmthandlelogfilefull
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,6 +67,7 @@ The client that is requesting CLFS management to make space available in the log
 ## Return Value
 
 The <b>ClfsMgmtHandleLogFileFull</b> routine returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -151,7 +152,11 @@ If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_LOG_FULL_HANDLER_
 If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_SUCCESS, the call completed synchronously, and the client's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function will not be invoked.
 
 If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_PENDING, then CLFS management is in the process of trying to free space in the log, and will call the client's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function when the log file full condition has been handled. If the log is pinned, CLFS management will call the client's <i>ClfsLogGrowthCompleteCallback</i> function with the <i>LogIsPinned</i> parameter set to <b>TRUE</b> before the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_PENDING.
-<div class="alert"><b>Important</b>    It is possible that the client's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function could be called before the call to <b>ClfsMgmtHandleLogFileFull</b> returns.</div><div> </div><div class="alert"><b>Important</b>    If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_PENDING, you should not call the <b>ClfsMgmtHandleLogFileFull</b> routine again for this client until the client's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function has been called.</div><div> </div>
+
+<div class="alert"><b>Important</b>    It is possible that the client's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function could be called before the call to <b>ClfsMgmtHandleLogFileFull</b> returns.</div>
+<div> </div>
+<div class="alert"><b>Important</b>    If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_PENDING, you should not call the <b>ClfsMgmtHandleLogFileFull</b> routine again for this client until the client's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function has been called.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -165,11 +170,17 @@ If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_PENDING, then CLF
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a>
-
 <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
 
+
+
+<a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a>
+
+
+
 <a href="..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md">ClfsAdvanceTailCallback</a>
+
+
 
  
 

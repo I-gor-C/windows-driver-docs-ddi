@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b339d6aa-71e1-4835-8ef2-a84594166bb1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IO_STACK_LOCATION, IO_STACK_LOCATION structure [Kernel-Mode Driver Architecture], PIO_STACK_LOCATION, _IO_STACK_LOCATION, wdm/PIO_STACK_LOCATION, PIO_STACK_LOCATION structure pointer [Kernel-Mode Driver Architecture], kernel.io_stack_location, *PIO_STACK_LOCATION, kstruct_b_8fcba8ca-d004-4800-87d1-d5c7714a494b.xml, wdm/IO_STACK_LOCATION
+ms.keywords: IO_STACK_LOCATION, PIO_STACK_LOCATION structure pointer [Kernel-Mode Driver Architecture], IO_STACK_LOCATION structure [Kernel-Mode Driver Architecture], *PIO_STACK_LOCATION, wdm/PIO_STACK_LOCATION, wdm/IO_STACK_LOCATION, kstruct_b_8fcba8ca-d004-4800-87d1-d5c7714a494b.xml, kernel.io_stack_location, PIO_STACK_LOCATION, _IO_STACK_LOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	IO_STACK_LOCATION
 product: Windows
 targetos: Windows
-req.typenames: "*PIO_STACK_LOCATION, IO_STACK_LOCATION"
+req.typenames: IO_STACK_LOCATION, *PIO_STACK_LOCATION
 req.product: Windows 10 or later.
 ---
 
@@ -288,6 +288,7 @@ A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure
 Request-type-specific values used almost exclusively by file system drivers. Removable-media device drivers check whether this member is set with SL_OVERRIDE_VERIFY_VOLUME for read requests to determine whether to continue the read operation even if the device object's <b>Flags</b> is set with DO_VERIFY_VOLUME. Intermediate drivers layered over a removable-media device driver must copy this member into the I/O stack location of the next-lower driver in all incoming <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> requests.
 
 Possible flag values include:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -343,7 +344,8 @@ This hints the driver to perform READ/WRITE operations at a guaranteed speed for
 <td>The persistent memory mapping of the bytes in the write request
  cannot change while handling this write request. <b>This flag is valid only with a persistent memory device and IRP_MJ_WRITE.</b></td>
 </tr>
-</table> 
+</table>
+ 
 
 
 <div class="alert"><b>Note</b>  (For persistent memory devices) One of the reasons for remapping (modifying the physical address of a given LBA) on persistent memory
@@ -366,6 +368,7 @@ A subfunction code for <b>MajorFunction</b>. The PnP manager, the power manager,
 `Parameters`
 
 A union that depends on the major and minor IRP function code values contained in <b>MajorFunction</b> and <b>MinorFunction</b>. The following table shows which IRPs use the individual members of the <b>Parameters</b> union.
+
 <table>
 <tr>
 <th>Member name</th>
@@ -514,7 +517,8 @@ A union that depends on the major and minor IRP function code values contained i
 <td><b>Others</b></td>
 <td>Driver-specific IRPs</td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>.
 
@@ -538,23 +542,41 @@ In some cases, a higher-level driver layered over a mass-storage device driver i
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-
-<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
-
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>
 
-<a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
+
+
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
+
+
+
+<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
+
+
+
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+
+
 
 <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>
+
+
+
 <a href="..\wdm\nf-wdm-iocopycurrentirpstacklocationtonext.md">IoCopyCurrentIrpStackLocationToNext</a>
+
+
+
+<a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a>
+
+
 
  
 

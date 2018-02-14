@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 652B92C2-EF04-482A-BB57-9F64F947EE4F
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: OnReleaseHardware method, wdf.ipnpcallbackhardware2_onreleasehardware, IPnpCallbackHardware2, IPnpCallbackHardware2::OnReleaseHardware, umdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, IPnpCallbackHardware2 interface, OnReleaseHardware method
+ms.keywords: wdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, OnReleaseHardware method, OnReleaseHardware method, IPnpCallbackHardware2 interface, umdf.ipnpcallbackhardware2_onreleasehardware, IPnpCallbackHardware2, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -85,6 +85,14 @@ For information about deleting an interrupt object, see <a href="https://msdn.mi
 
 For information about parsing hardware resources, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources-in-umdf-1-x-drivers">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
+
+
+#### Examples
+
+See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -96,9 +104,13 @@ For information about parsing hardware resources, see <a href="https://docs.micr
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware2.md">IPnpCallbackHardware2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a>
+
 
  
 

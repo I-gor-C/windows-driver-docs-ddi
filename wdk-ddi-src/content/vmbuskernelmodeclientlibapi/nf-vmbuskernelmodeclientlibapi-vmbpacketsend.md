@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: EBB981CB-0107-497A-B6E6-9271E22A8D5F
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbpacketsend, VmbPacketSend, VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VmbPacketSend function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, vmbuskernelmodeclientlibapi/VmbPacketSend
+ms.keywords: VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VmbPacketSend function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, netvista.vmbpacketsend, vmbuskernelmodeclientlibapi/VmbPacketSend, VmbPacketSend
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbPacketSend
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -86,6 +86,7 @@ An MDL that describes a data buffer associated with     the packet.
 `Flags`
 
 Flags. The following are pertinent flags:
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,9 +141,15 @@ For information on other ways to send packets, see the <a href="..\vmbuskernelmo
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a>
 
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>
 
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsendsynchronousrequest.md">VmbChannelSendSynchronousRequest</a>
+
+
 
  
 

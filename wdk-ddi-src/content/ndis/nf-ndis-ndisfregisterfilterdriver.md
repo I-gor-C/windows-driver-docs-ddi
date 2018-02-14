@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, netvista.ndisfregisterfilterdriver, NdisFRegisterFilterDriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], ndis/NdisFRegisterFilterDriver
+ms.keywords: netvista.ndisfregisterfilterdriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], NdisFRegisterFilterDriver, filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, ndis/NdisFRegisterFilterDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisFRegisterFilterDriver
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -95,6 +95,7 @@ A pointer to a handle variable. If the call to
 
 <b>
     NdisFRegisterFilterDriver</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -230,19 +231,31 @@ Filter drivers call the
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+
+
+<a href="https://msdn.microsoft.com/e24b18b5-76d3-4d56-bf60-0dea91ba014e">Initializing a Filter Driver</a>
+
+
+
 <a href="..\ndis\ns-ndis-_ndis_filter_driver_characteristics.md">
    NDIS_FILTER_DRIVER_CHARACTERISTICS</a>
 
-<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
+
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548813">DriverEntry of NDIS Filter
    Drivers</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">NdisFDeregisterFilterDriver</a>
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
-<a href="https://msdn.microsoft.com/e24b18b5-76d3-4d56-bf60-0dea91ba014e">Initializing a Filter Driver</a>
 
  
 

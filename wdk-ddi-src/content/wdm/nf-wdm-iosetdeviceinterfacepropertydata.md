@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 346F6FEC-7E06-4DF0-A304-88BD830C591B
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoSetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], IoSetDeviceInterfacePropertyData, kernel.iosetdeviceinterfacepropertydata, wdm/IoSetDeviceInterfacePropertyData
+ms.keywords: IoSetDeviceInterfacePropertyData, kernel.iosetdeviceinterfacepropertydata, IoSetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], wdm/IoSetDeviceInterfacePropertyData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,7 @@ A pointer to the device interface property data. Set this parameter to <b>NULL</
 ## Return Value
 
 <b>IoSetDeviceInterfacePropertyData</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -145,11 +146,17 @@ Callers of <b>IoSetDeviceInterfacePropertyData</b> must be running at IRQL &lt;=
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
+
+
 
 <a href="..\wdm\nf-wdm-iogetdeviceinterfacepropertydata.md">IoGetDeviceInterfacePropertyData</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
+
+
 
  
 

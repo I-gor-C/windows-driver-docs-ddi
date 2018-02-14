@@ -40,7 +40,7 @@ apiname:
 -	DxgkCbMapMemory
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -93,6 +93,7 @@ A <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> enumer
 `*VirtualAddress`
 
 A pointer to a variable that receives the address of the beginning of the mapped range. The way that the mapped range is accessed depends on the values of <i>InIoSpace</i> and <i>MapToUserMode</i>. The following table summarizes the different ways that the mapped range is accessed.
+
 <table>
 <tr>
 <td></td>
@@ -131,6 +132,8 @@ The PHYSICAL_ADDRESS data type is defined in <i>Ntdef.h</i>.
 ## See Also
 
 <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
+
+
 
  
 

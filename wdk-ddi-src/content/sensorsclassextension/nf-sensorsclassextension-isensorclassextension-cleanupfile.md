@@ -7,8 +7,8 @@ old-location: sensors\isensorclassextension_cleanupfile.htm
 old-project: sensors
 ms.assetid: eeade123-fb83-478f-99e3-e79bbbb1919b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: CleanupFile, ISensorClassExtension, ISensorClassExtension::CleanupFile, sensors.isensorclassextension_cleanupfile, CleanupFile method [Sensor Devices]
+ms.date: 2/8/2018
+ms.keywords: ISensorClassExtension::CleanupFile, ISensorClassExtension, CleanupFile method [Sensor Devices], CleanupFile, sensors.isensorclassextension_cleanupfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -67,6 +67,7 @@ Pointer to an IWDFFile interface that represents the file object for the applica
 ## Return Value
 
 This method returns an HRESULT. Possible values include, but are not limited to, one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: ab1fb259-edcb-4e19-9afb-18aa6688764a
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: ReadPort, print.readport, spoolfnc_f4b817ce-afeb-4d3f-b8ce-e060b8de8143.xml, winsplp/ReadPort, ReadPort function [Print Devices]
+ms.keywords: spoolfnc_f4b817ce-afeb-4d3f-b8ce-e060b8de8143.xml, ReadPort function [Print Devices], print.readport, winsplp/ReadPort, ReadPort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -113,15 +113,25 @@ It is acceptable for a language monitor to call a port monitor's <code>ReadPort<
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a>
-
 <a href="..\winsplp\nf-winsplp-openport.md">OpenPort</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548742">EndDocPort</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550506">GetPrinterDataFromPort</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559596">OpenPortEx</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562710">StartDocPort</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548742">EndDocPort</a>
+
+
 
  
 

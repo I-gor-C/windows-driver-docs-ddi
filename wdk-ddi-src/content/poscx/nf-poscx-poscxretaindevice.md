@@ -71,6 +71,7 @@ A handle to a framework request object that represents the request. This request
 ## Return Value
 
 Possible return values are:
+
 <table>
 <tr>
 <td><b>STATUS_SUCCESS</b></td>

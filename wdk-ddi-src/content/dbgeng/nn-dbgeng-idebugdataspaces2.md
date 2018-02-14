@@ -53,7 +53,32 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugDataSpaces2.CheckLowMemory](nf-dbgeng-idebugdataspaces2-checklowmemory.md) | The CheckLowMemory method checks for memory corruption in the low 4 GB of memory. |
+| [dbgeng.IDebugDataSpaces2.FillPhysical](nf-dbgeng-idebugdataspaces2-fillphysical.md) | The FillPhysical method writes a pattern of bytes to the target's physical memory. The pattern is written repeatedly until the specified memory range is filled. |
+| [dbgeng.IDebugDataSpaces2.FillVirtual](nf-dbgeng-idebugdataspaces2-fillvirtual.md) | The FillVirtual method writes a pattern of bytes to the target's virtual memory. The pattern is written repeatedly until the specified memory range is filled. |
+| [dbgeng.IDebugDataSpaces2.GetVirtualTranslationPhysicalOffsets](nf-dbgeng-idebugdataspaces2-getvirtualtranslationphysicaloffsets.md) | The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy. |
 | [dbgeng.IDebugDataSpaces2.QueryVirtual](nf-dbgeng-idebugdataspaces2-queryvirtual.md) | The QueryVirtual method provides information about the specified pages in the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces2.ReadBusData](nf-dbgeng-idebugdataspaces2-readbusdata.md) | The ReadBusData method reads data from a system bus. |
+| [dbgeng.IDebugDataSpaces2.ReadControl](nf-dbgeng-idebugdataspaces2-readcontrol.md) | The ReadControl method reads implementation-specific system data. |
+| [dbgeng.IDebugDataSpaces2.ReadDebuggerData](nf-dbgeng-idebugdataspaces2-readdebuggerdata.md) | The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session. |
+| [dbgeng.IDebugDataSpaces2.ReadHandleData](nf-dbgeng-idebugdataspaces2-readhandledata.md) | The ReadHandleData method retrieves information about a system object specified by a system handle. |
+| [dbgeng.IDebugDataSpaces2.ReadIo](nf-dbgeng-idebugdataspaces2-readio.md) | The ReadIo method reads from the system and bus I/O memory. |
+| [dbgeng.IDebugDataSpaces2.ReadMsr](nf-dbgeng-idebugdataspaces2-readmsr.md) | The ReadMsr method reads a specified Model-Specific Register (MSR). |
+| [dbgeng.IDebugDataSpaces2.ReadPhysical](nf-dbgeng-idebugdataspaces2-readphysical.md) | The ReadPhysical method reads the target's memory from the specified physical address. |
+| [dbgeng.IDebugDataSpaces2.ReadPointersVirtual](nf-dbgeng-idebugdataspaces2-readpointersvirtual.md) | The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces2.ReadProcessorSystemData](nf-dbgeng-idebugdataspaces2-readprocessorsystemdata.md) | The ReadProcessorSystemData method returns data about the specified processor. |
+| [dbgeng.IDebugDataSpaces2.ReadVirtual](nf-dbgeng-idebugdataspaces2-readvirtual.md) | The ReadVirtual method reads memory from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces2.ReadVirtualUncached](nf-dbgeng-idebugdataspaces2-readvirtualuncached.md) | The ReadVirtualUncached method reads memory from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces2.SearchVirtual](nf-dbgeng-idebugdataspaces2-searchvirtual.md) | The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes. |
+| [dbgeng.IDebugDataSpaces2.VirtualToPhysical](nf-dbgeng-idebugdataspaces2-virtualtophysical.md) | The VirtualToPhysical method translates a location in the target's virtual address space into a physical memory address. |
+| [dbgeng.IDebugDataSpaces2.WriteBusData](nf-dbgeng-idebugdataspaces2-writebusdata.md) | The WriteBusData method writes data to a system bus. |
+| [dbgeng.IDebugDataSpaces2.WriteControl](nf-dbgeng-idebugdataspaces2-writecontrol.md) | The WriteControl method writes implementation-specific system data. |
+| [dbgeng.IDebugDataSpaces2.WriteIo](nf-dbgeng-idebugdataspaces2-writeio.md) | The WriteIo method writes to the system and bus I/O memory. |
+| [dbgeng.IDebugDataSpaces2.WriteMsr](nf-dbgeng-idebugdataspaces2-writemsr.md) | The WriteMsr method writes a value to the specified Model-Specific Register (MSR). |
+| [dbgeng.IDebugDataSpaces2.WritePhysical](nf-dbgeng-idebugdataspaces2-writephysical.md) | The WritePhysical method writes data to the specified physical address in the target's memory. |
+| [dbgeng.IDebugDataSpaces2.WritePointersVirtual](nf-dbgeng-idebugdataspaces2-writepointersvirtual.md) | The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces2.WriteVirtual](nf-dbgeng-idebugdataspaces2-writevirtual.md) | The WriteVirtual method writes data to the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces2.WriteVirtualUncached](nf-dbgeng-idebugdataspaces2-writevirtualuncached.md) | The WriteVirtualUncached method writes data to the target's virtual address space. |
 
 ## Remarks
 
@@ -67,11 +92,17 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces.md">IDebugDataSpaces</a>
+
+
 
  
 

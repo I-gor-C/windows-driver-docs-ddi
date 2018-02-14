@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTMGR_CREATE_POINT
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_CREATE_POINT IOCTL
@@ -146,6 +146,8 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_CREATE_POINT_INP
 ## See Also
 
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_create_point_input.md">MOUNTMGR_CREATE_POINT_INPUT</a>
+
+
 
  
 

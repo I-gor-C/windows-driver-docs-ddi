@@ -72,7 +72,9 @@ The <b>IOCTL_STORAGE_GET_PHYSICAL_ELEMENT_STATUS</b>
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## Remarks
@@ -98,11 +100,17 @@ To perform this operation, call the <a href="https://msdn.microsoft.com/1d35c087
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/A0876712-4D9B-4A97-8E94-AA570A71C53D">PHYSICAL_ELEMENT_STATUS_REQUEST</a>
-
 <a href="https://msdn.microsoft.com/5E2AB36E-5A5C-4253-9791-A5CC157F15E3">PHYSICAL_ELEMENT_STATUS</a>
 
+
+
 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/A0876712-4D9B-4A97-8E94-AA570A71C53D">PHYSICAL_ELEMENT_STATUS_REQUEST</a>
+
+
 
  
 

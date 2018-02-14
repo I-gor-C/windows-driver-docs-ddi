@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 3975bc55-15e3-45ca-82df-76c5ed3b0086
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: ReloadWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::ReloadWide, IDebugSymbols3::ReloadWide, IDebugSymbols3 interface [Windows Debugging], ReloadWide method, debugger.reloadwide, ReloadWide, IDebugSymbols3, ReloadWide method [Windows Debugging]
+ms.keywords: ReloadWide method [Windows Debugging], IDebugSymbols3 interface, ReloadWide method [Windows Debugging], ReloadWide, debugger.reloadwide, IDebugSymbols3::ReloadWide, dbgeng/IDebugSymbols3::ReloadWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], ReloadWide method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,7 +80,8 @@ The method was successful
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -99,9 +100,13 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564805">.reload (Reload Module)</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 
  
 

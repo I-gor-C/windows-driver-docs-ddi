@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0B7FC33E-A417-48E4-99CC-D1FFC340A405
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storage_protocol_command, *PSTORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND structure pointer [Storage Devices], ntddstor/STORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND structure [Storage Devices], ntddstor/PSTORAGE_PROTOCOL_COMMAND, _STORAGE_PROTOCOL_COMMAND
+ms.keywords: storage.storage_protocol_command, STORAGE_PROTOCOL_COMMAND, _STORAGE_PROTOCOL_COMMAND, ntddstor/PSTORAGE_PROTOCOL_COMMAND, ntddstor/STORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND structure [Storage Devices], PSTORAGE_PROTOCOL_COMMAND, *PSTORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND structure pointer [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -121,6 +121,7 @@ The return data. This is optionally set. Some protocols such as NVMe, may return
 `Flags`
 
 Flags set for this request. The following are valid flags.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -151,6 +152,7 @@ Reserved for future use.
 `ReturnStatus`
 
 The status of the request made to the storage device. In Windows 10, possible values include: 
+
 <table>
 <tr>
 <th>Status value</th>
@@ -212,6 +214,8 @@ The version of this structure. This should be set to <b>STORAGE_PROTOCOL_STRUCTU
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_protocol_command.md">IOCTL_STORAGE_PROTOCOL_COMMAND</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 5a2bb69c-b10a-41bb-a92a-de7add3ca2c5
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: video/VideoPortGetVgaStatus, VideoPortGetVgaStatus function [Display Devices], VideoPortGetVgaStatus, display.videoportgetvgastatus, VideoPort_Functions_f3e43fe4-2e50-48d4-b185-f44e2a2adb31.xml
+ms.keywords: display.videoportgetvgastatus, video/VideoPortGetVgaStatus, VideoPortGetVgaStatus function [Display Devices], VideoPort_Functions_f3e43fe4-2e50-48d4-b185-f44e2a2adb31.xml, VideoPortGetVgaStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ Pointer to the resulting VGA status. A value of zero (0) indicates that VGA is n
 ## Return Value
 
 <b>VideoPortGetVgaStatus</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 4b720076-161f-47b4-b410-f9554e502a53
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: OpenGL_Functions_742fb584-0b9d-4650-a0a6-64f3e3f55dff.xml, D3DKMTSetDisplayPrivateDriverFormat function [Display Devices], D3DKMTSetDisplayPrivateDriverFormat, d3dkmthk/D3DKMTSetDisplayPrivateDriverFormat, display.d3dkmtsetdisplayprivatedriverformat
+ms.keywords: D3DKMTSetDisplayPrivateDriverFormat function [Display Devices], d3dkmthk/D3DKMTSetDisplayPrivateDriverFormat, D3DKMTSetDisplayPrivateDriverFormat, OpenGL_Functions_742fb584-0b9d-4650-a0a6-64f3e3f55dff.xml, display.d3dkmtsetdisplayprivatedriverformat
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTSetDisplayPrivateDriverFormat</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,7 +140,8 @@ The display miniport driver could not change the private-format attribute of the
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -155,9 +157,13 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setdisplayprivatedriverformat.md">DxgkDdiSetDisplayPrivateDriverFormat</a>
+
+
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplayprivatedriverformat.md">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setdisplayprivatedriverformat.md">DxgkDdiSetDisplayPrivateDriverFormat</a>
+
 
  
 

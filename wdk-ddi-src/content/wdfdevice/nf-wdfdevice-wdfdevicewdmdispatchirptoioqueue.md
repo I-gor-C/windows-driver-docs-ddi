@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5D1B228D-81D9-47FE-8CF2-41AAD9148667
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfdevicewdmforwardirptoioqueue, kmdf.wdfdevicewdmdispatchirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue method, wdf.wdfdevicewdmdispatchirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue, wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue
+ms.keywords: wdf.wdfdevicewdmdispatchirptoioqueue, kmdf.wdfdevicewdmforwardirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue, kmdf.wdfdevicewdmdispatchirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue method, wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -112,9 +112,13 @@ If the driver calls <b>WdfDeviceWdmDispatchIrpToIoQueue</b> from within a <a hre
 
 ## See Also
 
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
+
+
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
+
 
  
 

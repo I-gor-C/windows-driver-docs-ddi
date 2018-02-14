@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 786934f5-b0ec-4ee9-8bf0-f32b64295b96
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDI_SYNCHRONIZATIONOBJECTINFO structure [Display Devices], D3DDDI_SYNCHRONIZATIONOBJECTINFO, display.d3dddi_synchronizationobjectinfo, _D3DDDI_SYNCHRONIZATIONOBJECTINFO, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3D_other_Structs_86538364-14f8-4e40-bf0e-2e9f836729b8.xml
+ms.keywords: D3DDDI_SYNCHRONIZATIONOBJECTINFO, display.d3dddi_synchronizationobjectinfo, D3D_other_Structs_86538364-14f8-4e40-bf0e-2e9f836729b8.xml, D3DDDI_SYNCHRONIZATIONOBJECTINFO structure [Display Devices], _D3DDDI_SYNCHRONIZATIONOBJECTINFO, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -83,7 +83,11 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createsynchronizationobject.md">D3DDDICB_CREATESYNCHRONIZATIONOBJECT</a>
 
+
+
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_synchronizationobject_type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
+
+
 
  
 

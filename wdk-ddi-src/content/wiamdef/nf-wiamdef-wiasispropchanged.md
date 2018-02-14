@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 4b8f140c-ca4f-48fd-bee4-35d5a7beea52
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasIsPropChanged, wiasFncs_11e49124-0147-4140-ba56-879ae3fcbf46.xml, image.wiasispropchanged, wiasIsPropChanged function [Imaging Devices], wiamdef/wiasIsPropChanged
+ms.keywords: wiasIsPropChanged, wiasIsPropChanged function [Imaging Devices], image.wiasispropchanged, wiasFncs_11e49124-0147-4140-ba56-879ae3fcbf46.xml, wiamdef/wiasIsPropChanged
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasIsPropChanged
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -92,15 +92,25 @@ This function determines whether a property is being changed by looking at the <
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluestr.md">wiasGetChangedValueStr</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
+
+
 
 <a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluelong.md">wiasGetChangedValueLong</a>
 
+
+
 <a href="..\wiamdef\nf-wiamdef-wiasgetchangedvalueguid.md">wiasGetChangedValueGuid</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
+
+
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+
+
 
  
 

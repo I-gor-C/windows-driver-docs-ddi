@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8083af10-1b35-4600-b409-e895d35f7ccc
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdevice/WdfWdmDeviceGetWdfDeviceHandle, WdfWdmDeviceGetWdfDeviceHandle method, DFDeviceObjectGeneralRef_0b05680a-5252-4932-802d-ee24a0092116.xml, kmdf.wdfwdmdevicegetwdfdevicehandle, WdfWdmDeviceGetWdfDeviceHandle, PFN_WDFWDMDEVICEGETWDFDEVICEHANDLE, wdf.wdfwdmdevicegetwdfdevicehandle
+ms.keywords: WdfWdmDeviceGetWdfDeviceHandle, kmdf.wdfwdmdevicegetwdfdevicehandle, WdfWdmDeviceGetWdfDeviceHandle method, PFN_WDFWDMDEVICEGETWDFDEVICEHANDLE, DFDeviceObjectGeneralRef_0b05680a-5252-4932-802d-ee24a0092116.xml, wdfdevice/WdfWdmDeviceGetWdfDeviceHandle, wdf.wdfwdmdevicegetwdfdevicehandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,24 @@ If the specified WDM device object is valid, <b>WdfWdmDeviceGetWdfDeviceHandle</
 
 The WDM DEVICE_OBJECT structure that the driver specifies for the <i>DeviceObject</i> parameter must represent a device object that the calling driver created. For example, the structure cannot represent any of the WDM device objects that the driver specified in a previous call to <a href="..\wdfminiport\nf-wdfminiport-wdfdeviceminiportcreate.md">WdfDeviceMiniportCreate</a>.
 
+
+#### Examples
+
+The following code example obtains a handle to the framework device object that is associated with a WDM device object that the calling driver created.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDFDEVICE  device;
+
+device = WdfWdmDeviceGetWdfDeviceHandle(pWdmDeviceObject);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,6 +105,8 @@ The WDM DEVICE_OBJECT structure that the driver specifies for the <i>DeviceObjec
 ## See Also
 
 <a href="..\wdfminiport\nf-wdfminiport-wdfdeviceminiportcreate.md">WdfDeviceMiniportCreate</a>
+
+
 
  
 

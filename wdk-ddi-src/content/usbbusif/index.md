@@ -22,6 +22,11 @@ usbbusif.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
+| [PUSB_BUSIFFN_GETUSBDI_VERSION](nc-usbbusif-pusb_busiffn_getusbdi_version.md) | The GetUSBDIVersion routine returns the USB interface version number and the version number of the USB specification that defines the interface, along with information about host controller capabilities. |
+| [PUSB_BUSIFFN_IS_DEVICE_HIGH_SPEED](nc-usbbusif-pusb_busiffn_is_device_high_speed.md) | The USB_BUSIFFN_IS_DEVICE_HIGH_SPEED routine returns TRUE if the device is operating at high speed. |
+| [PUSB_BUSIFFN_QUERY_BUS_INFORMATION](nc-usbbusif-pusb_busiffn_query_bus_information.md) | The QueryBusInformation routine gets information about the bus. |
+| [PUSB_BUSIFFN_QUERY_BUS_TIME](nc-usbbusif-pusb_busiffn_query_bus_time.md) | The QueryBusTime function gets the current 32-bit USB frame number. |
+| [PUSB_BUSIFFN_QUERY_CONTROLLER_TYPE](nc-usbbusif-pusb_busiffn_query_controller_type.md) | The QueryControllerType routine gets information about the USB host controller to which the USB device is attached. |
 | [USBC_START_DEVICE_CALLBACK](nc-usbbusif-usbc_start_device_callback.md) | The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device. |
 
 

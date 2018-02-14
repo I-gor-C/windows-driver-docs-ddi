@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: d9bcbad5-ce2c-4968-9544-4fb024b1e933
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.changeradditionalextensionsize, mcd/ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize function [Storage Devices], ChangerAdditionalExtensionSize, chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml
+ms.keywords: ChangerAdditionalExtensionSize function [Storage Devices], mcd/ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize, chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml, storage.changeradditionalextensionsize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,8 @@ The device-specific information stored by a changer miniclass driver is determin
 ## See Also
 
 <a href="..\mcd\nf-mcd-changerinitialize.md">ChangerInitialize</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 69A8792B-954E-49AF-A306-25B94183E58A
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: "_PEP_PPM_QUERY_LP_SETTINGS, PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_LP_SETTINGS structure pointer [Kernel-Mode Driver Architecture], kernel.pep_ppm_query_lp_settings, pep_x/PEP_PPM_QUERY_LP_SETTINGS, *PPEP_PPM_QUERY_LP_SETTINGS, pep_x/PPEP_PPM_QUERY_LP_SETTINGS"
+ms.keywords: PPEP_PPM_QUERY_LP_SETTINGS structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_LP_SETTINGS structure [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_LP_SETTINGS, PPEP_PPM_QUERY_LP_SETTINGS, kernel.pep_ppm_query_lp_settings, pep_x/PEP_PPM_QUERY_LP_SETTINGS, *PPEP_PPM_QUERY_LP_SETTINGS, pep_x/PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -74,6 +74,8 @@ The PEP can provide settings for certain key power scenarios such as full-screen
 ## See Also
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt629122">PEP_NOTIFY_PPM_QUERY_LP_SETTINGS</a>
+
+
 
  
 

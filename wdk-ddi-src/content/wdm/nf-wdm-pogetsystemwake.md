@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f2e6bcd6-ed6b-4c88-af96-768284bddb24
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pogetsystemwake, portn_0762df5c-0956-4561-9984-83c680bdd764.xml, PoGetSystemWake, PoGetSystemWake routine [Kernel-Mode Driver Architecture], wdm/PoGetSystemWake
+ms.keywords: PoGetSystemWake routine [Kernel-Mode Driver Architecture], kernel.pogetsystemwake, portn_0762df5c-0956-4561-9984-83c680bdd764.xml, wdm/PoGetSystemWake, PoGetSystemWake
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -66,6 +66,7 @@ A pointer to an IRP.
 ## Return Value
 
 <b>PoGetSystemWake</b> returns one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -116,6 +117,8 @@ It is possible that several IRPs are causing the system to wake. In this case, <
 ## See Also
 
 <a href="..\wdm\nf-wdm-posetsystemwake.md">PoSetSystemWake</a>
+
+
 
  
 

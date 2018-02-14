@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 989ecf50-18c4-4977-b845-b3fea0cade47
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "*PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], tcpip_offload_ref_2ce657f6-a894-420b-bcb0-310819237c5b.xml, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_tcp_ip_checksum_net_buffer_list_info, _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO"
+ms.keywords: ndis/PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, tcpip_offload_ref_2ce657f6-a894-420b-bcb0-310819237c5b.xml, ndis/NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, netvista.ndis_tcp_ip_checksum_net_buffer_list_info, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -111,7 +111,10 @@ Before indicating up a receive TCP/IP packet on which it performs checksum tasks
     sets the appropriate 
     Xxx<b>ChecksumFailed</b> or 
     Xxx<b>ChecksumSucceeded</b> flags in the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure.
-<div class="alert"><b>Note</b>  Checksum offload is disabled until the miniport receives <a href="https://msdn.microsoft.com/library/windows/hardware/ff569762">OID_OFFLOAD_ENCAPSULATION</a>. After it receives this OID, the miniport is then permitted to start validating the checksums on some received packets. The miniport is not required to validate the checksum on every packet; if both the Xxx<b>ChecksumFailed</b> and Xxx<b>ChecksumSucceeded</b> flags are clear, the OS will fall back to validating the checksum in software.</div><div> </div>To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driver should call the 
+
+<div class="alert"><b>Note</b>  Checksum offload is disabled until the miniport receives <a href="https://msdn.microsoft.com/library/windows/hardware/ff569762">OID_OFFLOAD_ENCAPSULATION</a>. After it receives this OID, the miniport is then permitted to start validating the checksums on some received packets. The miniport is not required to validate the checksum on every packet; if both the Xxx<b>ChecksumFailed</b> and Xxx<b>ChecksumSucceeded</b> flags are clear, the OS will fall back to validating the checksum in software.</div>
+<div> </div>
+To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driver should call the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro with an 
     <i>_Id</i> of 
     <b>TcpIpChecksumNetBufferListInfo</b>.
@@ -126,9 +129,15 @@ Before indicating up a receive TCP/IP packet on which it performs checksum tasks
 
 <a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>
 
+
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
+
 
  
 

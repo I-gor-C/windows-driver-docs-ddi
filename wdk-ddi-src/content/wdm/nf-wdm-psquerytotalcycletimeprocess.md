@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4DA34F96-A69A-46BE-B3D8-D542794052DE
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess, kernel.psquerytotalcycletimeprocess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture]
+ms.keywords: PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture], wdm/PsQueryTotalCycleTimeProcess, kernel.psquerytotalcycletimeprocess
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,6 +89,8 @@ This routine uses the time stamp counter to get the number of processor clock cy
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544273">EPROCESS</a>
+
+
 
  
 

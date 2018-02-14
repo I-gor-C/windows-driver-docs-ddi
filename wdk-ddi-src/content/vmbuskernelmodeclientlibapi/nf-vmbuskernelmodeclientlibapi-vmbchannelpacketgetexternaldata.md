@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 844AB898-E6F0-4C75-9364-1BE31AAB88E7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbchannelpacketgetexternaldata, VmbChannelPacketGetExternalData function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelPacketGetExternalData, VmbChannelPacketGetExternalData
+ms.keywords: VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelPacketGetExternalData, VmbChannelPacketGetExternalData, VmbChannelPacketGetExternalData function [Network Drivers Starting with Windows Vista], netvista.vmbchannelpacketgetexternaldata
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelPacketGetExternalData
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -72,6 +72,7 @@ once processing is finished.
 `Flags`
 
 Flags that control how the MDL is mapped. The possible flag values are: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -132,13 +133,23 @@ An alternative to using a virtual address would be to just pass the MDL on down 
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpacketcomplete.md">VmbChannelPacketComplete</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
 
 <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
+
+
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+
+
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+
 
  
 

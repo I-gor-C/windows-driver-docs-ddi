@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: F3DA4CBB-5749-4E7D-828F-398714575173
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: VhfStart method [Human Input Devices], VhfStart, hid.vhfstart, vhf/VhfStart
+ms.keywords: vhf/VhfStart, hid.vhfstart, VhfStart, VhfStart method [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

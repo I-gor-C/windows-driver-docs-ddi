@@ -95,6 +95,8 @@ This callback function does not return a value.
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_predication_op.md">D3D12DDI_PREDICATION_OP</a>
 
+
+
  
 
  

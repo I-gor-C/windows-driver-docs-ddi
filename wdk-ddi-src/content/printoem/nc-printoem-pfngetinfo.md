@@ -97,6 +97,7 @@ The <b>UNIFONTOBJ_GetInfo</b> callback function allows a <a href="https://msdn.m
 A rendering plug-in receives the <b>UNIFONTOBJ_GetInfo</b> function's address in the <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure that is passed to the font customization methods.
 
 The type of information returned by the function is dependent on the input arguments. The caller supplies values for <i>dwInfoID</i>, <i>pData</i>, and <i>dwDataSize</i> to indicate the type of information wanted. The following table summarizes the types of information returned. For more information, see the structure descriptions.
+
 <table>
 <tr>
 <th><i>pData</i> Structure</th>
@@ -174,7 +175,8 @@ The current value for one or more of Unidrv's <a href="https://msdn.microsoft.co
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If the buffer described by <i>pData</i> and <i>dwDataSize</i> is too small to receive the structure indicated by <i>dwInfoID</i>, the function loads the required buffer size into the location pointed by <i>pcbNeeded</i> and returns <b>FALSE</b>.
 

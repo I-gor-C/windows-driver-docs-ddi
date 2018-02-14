@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5D76C266-875A-40AC-9B26-F17978971783
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ufs/PUFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR, ufs/UFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR structure [Storage Devices], *PUFS_UNIT_DESCRIPTOR, storage.ufs_unit_descriptor, UFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR structure pointer [Storage Devices]
+ms.keywords: ufs/PUFS_UNIT_DESCRIPTOR, storage.ufs_unit_descriptor, *PUFS_UNIT_DESCRIPTOR, ufs/UFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR structure [Storage Devices], PUFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR structure pointer [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -108,6 +108,7 @@ Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
 `bLUWriteProtect`
 
 Specifies if the logical unit is write-protected. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -138,6 +139,7 @@ Specifies the provisioning type.
 `bPSASensitive`
 
 Specifies if the logical unit is sensitive to soldering. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -184,9 +186,13 @@ Specifies the number of contexts to be supported in each logical unit.
 
 ## See Also
 
+<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
+
+
+
 <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
+
 
  
 

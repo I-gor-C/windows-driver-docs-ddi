@@ -76,6 +76,7 @@ The number of bytes that are encrypted at the start of the buffer.
 Because the buffer's encrypted portion is specified in bytes, an application must ensure that the encrypted blocks match the GPU's crypto-block alignment.
 
 The following examples show how the runtime can partition a buffer's encryption.
+
 <ol>
 <li>The following values encrypt the first 100 bytes of the buffer and skip the remaining buffer data:<ul>
 <li><b>NumEncryptedBytesAtBeginning</b> = 100;</li>

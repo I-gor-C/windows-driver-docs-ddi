@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 8aa5a8a6-2024-4b3e-a500-5a484d937a62
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_0db1ab5c-a2a5-4362-84e0-493a5cebc2d3.xml, storage.storportacquiremsispinlock, StorPortAcquireMSISpinLock, StorPortAcquireMSISpinLock routine [Storage Devices], storport/StorPortAcquireMSISpinLock
+ms.keywords: storprt_0db1ab5c-a2a5-4362-84e0-493a5cebc2d3.xml, storage.storportacquiremsispinlock, StorPortAcquireMSISpinLock routine [Storage Devices], StorPortAcquireMSISpinLock, storport/StorPortAcquireMSISpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A pointer to the storage for the original IRQL value to be used in a subsequent 
 ## Return Value
 
 <b>StorPortAcquireMSISpinLock</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -133,11 +134,17 @@ When a miniport needs to synchronize with all messages, it can use one call to <
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
-
 <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
+
+
+<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
+
+
+
 <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
+
+
 
  
 

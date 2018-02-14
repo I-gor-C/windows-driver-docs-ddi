@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ff9f959b-6901-43b8-b335-c0286136b747
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "*PFEATURE_DATA_MICROCODE_UPDATE, ntddmmc/FEATURE_DATA_MICROCODE_UPDATE, PFEATURE_DATA_MICROCODE_UPDATE, PFEATURE_DATA_MICROCODE_UPDATE structure pointer [Storage Devices], structs-CD-ROM_e2dbda29-d727-4736-93bd-0e115b9d7948.xml, ntddmmc/PFEATURE_DATA_MICROCODE_UPDATE, _FEATURE_DATA_MICROCODE_UPDATE, FEATURE_DATA_MICROCODE_UPDATE, FEATURE_DATA_MICROCODE_UPDATE structure [Storage Devices], storage.feature_data_microcode_update"
+ms.keywords: storage.feature_data_microcode_update, PFEATURE_DATA_MICROCODE_UPDATE structure pointer [Storage Devices], structs-CD-ROM_e2dbda29-d727-4736-93bd-0e115b9d7948.xml, *PFEATURE_DATA_MICROCODE_UPDATE, _FEATURE_DATA_MICROCODE_UPDATE, FEATURE_DATA_MICROCODE_UPDATE, PFEATURE_DATA_MICROCODE_UPDATE, ntddmmc/FEATURE_DATA_MICROCODE_UPDATE, ntddmmc/PFEATURE_DATA_MICROCODE_UPDATE, FEATURE_DATA_MICROCODE_UPDATE structure [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -87,9 +87,13 @@ When queried, devices supporting this feature must return the information indica
 
 ## See Also
 
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
+
+
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
 
  
 

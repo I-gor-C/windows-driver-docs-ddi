@@ -71,6 +71,7 @@ A pointer to the controller extension.
 
 One of five actions that the miniport driver must perform as defined in the following table.
   
+
 <table>
 <tr>
 <th>ControlAction</th>
@@ -171,6 +172,8 @@ The port driver guarantees that there is no outstanding I/O on the adapter befor
 ## See Also
 
 <a href="..\irb\ns-irb-_ide_controller_configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: d0cd2867-783c-4a41-a819-e919d4ffc1e3
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: POPTPARAM structure pointer [Print Devices], cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, *POPTPARAM, print.optparam, POPTPARAM, _OPTPARAM, OPTPARAM structure [Print Devices], OPTPARAM, compstui/OPTPARAM, compstui/POPTPARAM
+ms.keywords: POPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, compstui/OPTPARAM, OPTPARAM structure [Print Devices], *POPTPARAM, OPTPARAM, _OPTPARAM, print.optparam, compstui/POPTPARAM, POPTPARAM structure pointer [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -78,17 +78,6 @@ Optional bit flags that modify the parameter's characteristics. The following fl
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 #### OPTPF_DISABLED
 
 If set, the parameter is not user-selectable. Can be used with the following option types:
@@ -110,6 +99,9 @@ If set, the parameter is not user-selectable. Can be used with the following opt
 
 
 
+
+
+
 #### OPTPF_HIDE
 
 If set, the parameter not displayed in the treeview. Can be used with the following option types:
@@ -127,6 +119,9 @@ If set, the parameter not displayed in the treeview. Can be used with the follow
 
 
 
+
+
+
 #### OPTPF_ICONID_AS_HICON
 
 If set, the <b>IconID</b> member contains an icon handle.
@@ -134,9 +129,15 @@ If set, the <b>IconID</b> member contains an icon handle.
 If not set, the <b>IconID</b> member contains an icon resource identifier.
 
 
+
+
+
 #### OPTPF_OVERLAY_NO_ICON
 
 If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>IconID</b> member.
+
+
+
 
 
 #### OPTPF_OVERLAY_STOP_ICON
@@ -144,9 +145,15 @@ If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>
 If set, CPSUI overlays the IDI_CPSUI_STOP icon onto the icon identified by the <b>IconID</b> member.
 
 
+
+
+
 #### OPTPF_OVERLAY_WARNING_ICON
 
 If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon identified by the <b>IconID</b> member.
+
+
+
 
 
 #### OPTPF_USE_HDLGTEMPLATE

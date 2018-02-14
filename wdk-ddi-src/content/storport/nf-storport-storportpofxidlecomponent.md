@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: DF329B68-3995-4B38-8208-4C779B0626A6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportpofxidlecomponent, StorPortPoFxIdleComponent, storport/StorPortPoFxIdleComponent, StorPortPoFxIdleComponent routine [Storage Devices]
+ms.keywords: storage.storportpofxidlecomponent, StorPortPoFxIdleComponent, StorPortPoFxIdleComponent routine [Storage Devices], storport/StorPortPoFxIdleComponent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ Not used. Set to 0.
 ## Return Value
 
 The <b>StorPortPoFxIdleComponent</b> routine returns one of these status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -189,11 +190,17 @@ Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous ca
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
+
+
 
 <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 
-<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
+
+
+<a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
+
+
 
  
 

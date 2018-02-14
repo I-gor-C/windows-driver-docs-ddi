@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisGetVersion function [Network Drivers Starting with Windows Vista], NdisGetVersion, netvista.ndisgetversion, ndis_configuration_ref_fcdf5ece-888e-4f1a-b855-367cbe4c68fe.xml, ndis/NdisGetVersion
+ms.keywords: ndis/NdisGetVersion, NdisGetVersion, ndis_configuration_ref_fcdf5ece-888e-4f1a-b855-367cbe4c68fe.xml, NdisGetVersion function [Network Drivers Starting with Windows Vista], netvista.ndisgetversion
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisGetVersion
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 

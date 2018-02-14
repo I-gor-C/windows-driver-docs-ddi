@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 514a5b40-c9ba-4ed1-871d-fd6ffde583a6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: STRSAFE_NULL_ON_FAILURE, safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml, kernel.rtlstringcbprintfex, STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, STRSAFE_IGNORE_NULLS, RtlStringCbPrintfExW, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], RtlStringCbPrintfExA, ntstrsafe/RtlStringCbPrintfExW, ntstrsafe/RtlStringCbPrintfExA, STRSAFE_NO_TRUNCATION, RtlStringCbPrintfEx
+ms.keywords: RtlStringCbPrintfExA, ntstrsafe/RtlStringCbPrintfExW, RtlStringCbPrintfExW, STRSAFE_NULL_ON_FAILURE, STRSAFE_IGNORE_NULLS, RtlStringCbPrintfEx, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbprintfex, safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml, ntstrsafe/RtlStringCbPrintfExA, STRSAFE_NO_TRUNCATION, STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	RtlStringCbPrintfExW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -91,6 +91,7 @@ If the caller supplies a non-<b>NULL</b> address pointer, the function loads the
 `dwFlags`
 
 One or more flags and, optionally, a fill byte. The flags are defined as follows:
+
 <table>
 <tr>
 <th>Value</th>
@@ -160,6 +161,7 @@ A pointer to a null-terminated text string that contains <b>printf</b>-styled <a
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -213,6 +215,7 @@ The function returns the STATUS_INVALID_PARAMETER value when:
 ## Remarks
 
 <b>RtlStringCbPrintfExW</b> and <b>RtlStringCbPrintfExA</b> should be used instead of the following functions: 
+
 <ul>
 <li>
 <b>sprintf</b>
@@ -230,11 +233,13 @@ _<b>snprintf</b>
 _<b>snwprintf</b>
 
 </li>
-</ul>All of these functions accept a format string and a list of arguments, interpret them, and create a formatted string. The size, in bytes, of the destination buffer is provided to <b>RtlStringCbPrintfExW</b> and <b>RtlStringCbPrintfExA</b> to ensure that they do not write past the end of the buffer.
+</ul>
+All of these functions accept a format string and a list of arguments, interpret them, and create a formatted string. The size, in bytes, of the destination buffer is provided to <b>RtlStringCbPrintfExW</b> and <b>RtlStringCbPrintfExA</b> to ensure that they do not write past the end of the buffer.
 
 <b>RtlStringCbPrintfExW</b> and <b>RtlStringCbPrintfExA</b> add to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfw.md">RtlStringCbPrintf</a> by returning a pointer to the end of the destination string, as well as the number of bytes left unused in that string. Flags can be passed to the function for additional control.
 
 Use <b>RtlStringCbPrintfExW</b> to handle Unicode strings and <b>RtlStringCbPrintfExA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.
+
 <table>
 <tr>
 <th>String data type</th>
@@ -269,7 +274,8 @@ L"string"
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If <i>pszDest</i> and <i>pszFormat </i>point to overlapping strings or if any argument strings overlap, the behavior of the function is undefined.
 
@@ -288,11 +294,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfexw.md">RtlStringCchPrintfEx</a>
 
+
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
+
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfexw.md">RtlStringCbVPrintfEx</a>
+
+
 
  
 

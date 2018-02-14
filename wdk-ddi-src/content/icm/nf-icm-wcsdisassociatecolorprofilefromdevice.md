@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: d2ab6fe4-131a-4952-864c-7135026cb25c
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: WcsDisassociateColorProfileFromDevice function [Print Devices], icm/WcsDisassociateColorProfileFromDevice, print.wcsdisassociatecolorprofilefromdevice, WcsDisassociateColorProfileFromDevice, colorfnc_d8888a37-8a72-41a4-8ca6-29326634d9b2.xml
+ms.keywords: colorfnc_d8888a37-8a72-41a4-8ca6-29326634d9b2.xml, WcsDisassociateColorProfileFromDevice, WcsDisassociateColorProfileFromDevice function [Print Devices], icm/WcsDisassociateColorProfileFromDevice, print.wcsdisassociatecolorprofilefromdevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -100,6 +100,8 @@ This function is executable in Least-Privileged User Account (LUA) context if <i
 ## See Also
 
 <a href="..\icm\nf-icm-wcsassociatecolorprofilewithdevice.md">WcsAssociateColorProfileWithDevice</a>
+
+
 
  
 

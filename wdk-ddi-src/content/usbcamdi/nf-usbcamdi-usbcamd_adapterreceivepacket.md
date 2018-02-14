@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 12a5ca64-7187-4a70-83ca-0ade6a8b1343
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: stream.usbcamd_adapterreceivepacket, usbcamdi/USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket function [Streaming Media Devices], USBCAMD_AdapterReceivePacket, usbcmdpr_ad9c24d0-76a2-43a4-9634-a70e9260d907.xml
+ms.keywords: usbcmdpr_ad9c24d0-76a2-43a4-9634-a70e9260d907.xml, usbcamdi/USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket function [Streaming Media Devices], stream.usbcamd_adapterreceivepacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	USBCAMD_AdapterReceivePacket
 product: Windows
 targetos: Windows
-req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -100,7 +100,11 @@ This function can also be used by the minidriver to retrieve the device context 
 
 <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md">USBCAMD_DEVICE_DATA</a>
 
+
+
 <a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a>
+
+
 
  
 

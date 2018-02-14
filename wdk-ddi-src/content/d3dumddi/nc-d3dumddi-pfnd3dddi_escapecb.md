@@ -73,6 +73,7 @@ A handle to the graphics adapter object.
 ## Return Value
 
 <b>pfnEscapeCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,7 +129,8 @@ Information was successfully shared.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
@@ -147,11 +149,17 @@ A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous infor
 
 ## See Also
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+
+
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ESCAPE</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: c87a8368-3804-4a07-92c8-65a453d0808f
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFDeviceObjectGeneralRef_9c2c2390-3dcc-40f4-ba43-16c8988dbfae.xml, wdfdevice/WdfDeviceInitSetDeviceClass, WdfDeviceInitSetDeviceClass, kmdf.wdfdeviceinitsetdeviceclass, wdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass method
+ms.keywords: DFDeviceObjectGeneralRef_9c2c2390-3dcc-40f4-ba43-16c8988dbfae.xml, wdf.wdfdeviceinitsetdeviceclass, wdfdevice/WdfDeviceInitSetDeviceClass, WdfDeviceInitSetDeviceClass, kmdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -69,7 +69,9 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff54
 `DeviceClassGuid`
 
 Pointer to a GUID that identifies a section of the registry containing possible overrides for the <i>DefaultSDDLString</i>, <i>DeviceType</i>, <i>DeviceCharacteristics</i>, and <i>Exclusive</i> parameters.
-<div class="alert"><b>Note</b>    You should always specify a custom class GUID. You should not specify an existing class GUID. If you specify an existing class GUID, other drivers that attempt to specify that existing class GUID might fail to install or might install with incorrect security settings.</div><div> </div>
+
+<div class="alert"><b>Note</b>    You should always specify a custom class GUID. You should not specify an existing class GUID. If you specify an existing class GUID, other drivers that attempt to specify that existing class GUID might fail to install or might install with incorrect security settings.</div>
+<div> </div>
 
 
 ## Return Value
@@ -87,6 +89,29 @@ For more information about using the registry, see <a href="https://msdn.microso
 If a driver calls <b>WdfDeviceInitSetDeviceClass</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
 
 For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
+
+
+#### Examples
+
+The following code example sets a device's setup class to the system device class.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>DEFINE_GUID(GUID_DEVCLASS_MYUNIQUEID,
+0xf149fe88, 0x f6cc, 0x47e3, 0x85, 0x94, 0xe2, 0xaa, 0xb6, 0xe0, 0x3b, 0xdf);
+
+WdfDeviceInitSetDeviceClass(
+                            DeviceInit,
+                            &amp;GUID_DEVCLASS_MYUNIQUEID
+                            );
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

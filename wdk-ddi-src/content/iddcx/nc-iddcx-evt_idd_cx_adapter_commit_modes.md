@@ -77,9 +77,11 @@ Input arguments used by <b>EVT_IDD_CX_ADAPTER_COMMIT_MODES</b>.
 ## Remarks
 
 The OS always provides the IDDCX_PATH for every connected monitor even if it is not active and indicates which paths have changed.  If a path is marked  inactive, then the whole display pipeline for that path will be powered off and no signal will be sent to the monitor.
+
 <div class="alert"><b>Note</b>  <p class="note">When a new path is committed, the driver should program the display pipeline to display a black image until the first frame is ready to be displayed. To achieve this, WDDM visibility should be off until the first frame is ready to be displayed, then the visibility should be turned on.
 
-</div><div> </div>
+</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

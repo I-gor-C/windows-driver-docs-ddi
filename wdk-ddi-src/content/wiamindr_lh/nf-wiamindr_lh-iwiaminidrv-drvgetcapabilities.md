@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 946a6ea7-5818-4959-adf2-3568c1b64b1a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, IWiaMiniDrv, drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetcapabilities
+ms.keywords: drvGetCapabilities, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, image.iwiaminidrv_drvgetcapabilities, IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -105,11 +105,17 @@ The <i>Wiadef.h</i> header lists several predefined commands and events.
 
 ## See Also
 
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+
+
 
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_dev_cap_drv.md">WIA_DEV_CAP_DRV</a>
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ff387b49-fecb-41d0-aac5-0a83eb8835d6
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsReferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsReferenceNetBufferList0, wfp_ref_2_funct_3_fwps_R-Z_87b01939-7e75-4049-ae3a-07db074a3e62.xml, FwpsReferenceNetBufferList0, netvista.fwpsreferencenetbufferlist0
+ms.keywords: FwpsReferenceNetBufferList0, FwpsReferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], netvista.fwpsreferencenetbufferlist0, fwpsk/FwpsReferenceNetBufferList0, wfp_ref_2_funct_3_fwps_R-Z_87b01939-7e75-4049-ae3a-07db074a3e62.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,7 +101,9 @@ For example, when a callout driver performs packet reassembly, it increments the
 A callout driver must call the 
     <a href="..\fwpsk\nf-fwpsk-fwpsdereferencenetbufferlist0.md">FwpsDereferenceNetBufferList0</a> function for the NET_BUFFER_LIST structure after the callout driver
     has finished referencing the structure.
-<h3><a id="Guidelines_for_Managing_Referenced_Packets"></a><a id="guidelines_for_managing_referenced_packets"></a><a id="GUIDELINES_FOR_MANAGING_REFERENCED_PACKETS"></a>Guidelines for Managing Referenced Packets</h3>A callout driver must not hold referenced packets indefinitely. A referenced packet can interfere
+
+<h3><a id="Guidelines_for_Managing_Referenced_Packets"></a><a id="guidelines_for_managing_referenced_packets"></a><a id="GUIDELINES_FOR_MANAGING_REFERENCED_PACKETS"></a>Guidelines for Managing Referenced Packets</h3>
+A callout driver must not hold referenced packets indefinitely. A referenced packet can interfere
      with power management operations on an idle computer.
 
 The intended use for referenced packets in WFP is to get clarification from a user-mode application
@@ -126,12 +128,18 @@ Callout drivers should always return held packets as quickly as possible.
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
+
 
 <a href="..\fwpsk\nf-fwpsk-fwpsdereferencenetbufferlist0.md">
    FwpsDereferenceNetBufferList0</a>
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 4eb909fe-7ba2-4208-b713-54252022a5cf
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: tagKS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2, PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2, vidcapstruct_c789f606-9b19-42b0-8492-3b945141c274.xml, PKS_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], stream.ks_videoinfoheader2, ksmedia/KS_VIDEOINFOHEADER2, ksmedia/PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2 structure [Streaming Media Devices]
+ms.keywords: PKS_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2, ksmedia/PKS_VIDEOINFOHEADER2, tagKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2 structure [Streaming Media Devices], vidcapstruct_c789f606-9b19-42b0-8492-3b945141c274.xml, stream.ks_videoinfoheader2, PKS_VIDEOINFOHEADER2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KS_VIDEOINFOHEADER2
 product: Windows
 targetos: Windows
-req.typenames: KS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2
+req.typenames: "*PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2"
 ---
 
 # tagKS_VIDEOINFOHEADER2 structure
@@ -93,6 +93,7 @@ Specifies a KSCOPYPROTECTRestrictDuplication value (0x00000001) to indicate if d
 `dwInterlaceFlags`
 
 Specifies interlace information. Undefined flags must be set to zero, or the connection may be rejected. This member can be set to one or more (logical OR) values that are defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -272,11 +273,17 @@ If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> memb
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
-
 <a href="..\ksmedia\ns-ksmedia-tagks_datarange_video2.md">KS_DATARANGE_VIDEO2</a>
 
+
+
+<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
+
+
+
 <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+
+
 
  
 

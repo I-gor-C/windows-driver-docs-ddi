@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 39e9b596-7726-439c-8ad9-a987fdfd3860
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: SpoolerCopyFileEvent, SpoolerCopyFileEvent function [Print Devices], print.spoolercopyfileevent, winsplp/SpoolerCopyFileEvent, poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml
+ms.keywords: winsplp/SpoolerCopyFileEvent, SpoolerCopyFileEvent function [Print Devices], print.spoolercopyfileevent, poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml, SpoolerCopyFileEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ Caller-supplied pointer to a string representing a subkey under the printer's <b
 `dwCopyFileEvent`
 
 Caller-supplied flag that identifies the event being reported. Valid flag values are contained in the following table.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -173,6 +174,8 @@ If <i>dwCopyFileEvent</i> is COPYFILE_EVENT_ADD_PRINTER_CONNECTION or COPYFILE_E
 ## See Also
 
 <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>
+
+
 
  
 

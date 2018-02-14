@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 692e58b5-74ea-48f3-a9c2-81953b7d600d
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: WdbgExts_Ref_33e7f185-3831-439b-9e92-8d942627f66b.xml, DBGKD_GET_VERSION64, PDBGKD_GET_VERSION64, debugger.ig_get_kernel_version, _DBGKD_GET_VERSION64, DBGKD_GET_VERSION64 structure [Windows Debugging], PDBGKD_GET_VERSION64 structure pointer [Windows Debugging], *PDBGKD_GET_VERSION64, wdbgexts/PDBGKD_GET_VERSION64, wdbgexts/DBGKD_GET_VERSION64
+ms.keywords: PDBGKD_GET_VERSION64, wdbgexts/PDBGKD_GET_VERSION64, debugger.ig_get_kernel_version, PDBGKD_GET_VERSION64 structure pointer [Windows Debugging], WdbgExts_Ref_33e7f185-3831-439b-9e92-8d942627f66b.xml, *PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64 structure [Windows Debugging], wdbgexts/DBGKD_GET_VERSION64, _DBGKD_GET_VERSION64, DBGKD_GET_VERSION64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,6 +77,7 @@ Receives the value of the kernel variable <b>KdDebuggerDataBlock</b>.  This a po
 `Flags`
 
 Receives a set of bit flags for the current debugging session.  The following flags can be present.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -155,6 +156,7 @@ Receives the base address of the kernel image.
 `MachineType`
 
 Receives the type of the target's processor.  Possible processor types are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -243,6 +245,7 @@ Receives the value of the kernel variable <b>PsLoadedModuleList</b>.
 `Simulation`
 
 Receives an indication if the target is in simulated execution.  Possible values are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -288,7 +291,11 @@ This operation is only available in kernel-mode debugging.
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 
+
+
 <a href="..\wdbgexts\nf-wdbgexts-getdebuggerdata.md">GetDebuggerData</a>
+
+
 
  
 

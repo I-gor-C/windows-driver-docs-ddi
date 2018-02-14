@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f61bef13-d9b5-4e6a-8657-995a1fcbf7b1
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfInterruptSetPolicy, wdf.wdfinterruptsetpolicy, wdfinterrupt/WdfInterruptSetPolicy, kmdf.wdfinterruptsetpolicy, DFInterruptObjectRef_86b7a562-3aee-4c0b-9a68-f98a2b76588f.xml, WdfInterruptSetPolicy method, PFN_WDFINTERRUPTSETPOLICY
+ms.keywords: wdfinterrupt/WdfInterruptSetPolicy, PFN_WDFINTERRUPTSETPOLICY, WdfInterruptSetPolicy, wdf.wdfinterruptsetpolicy, DFInterruptObjectRef_86b7a562-3aee-4c0b-9a68-f98a2b76588f.xml, WdfInterruptSetPolicy method, kmdf.wdfinterruptsetpolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,6 +103,29 @@ If your driver creates interrupts in <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://msdn.microsoft.com/08460510-6e5f-4c02-8086-9caa9b4b4c2d">Handling Hardware Interrupts</a>.
 
+
+#### Examples
+
+The following code example assigns a device interrupt to processor 0, with normal priority.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define AFFINITY_MASK(n) ((ULONG_PTR)1 &lt;&lt; (n))
+
+WdfInterruptSetPolicy(
+                      Interrupt,
+                      WdfIrqPolicySpecifiedProcessors,
+                      WdfIrqPriorityNormal,
+                      AFFINITY_MASK(0)
+                      );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -116,11 +139,17 @@ For more information about handling interrupts in framework-based drivers, see <
 
 ## See Also
 
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>
+
+
+
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+
 
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptcreate.md">WdfInterruptCreate</a>
 
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>
+
 
  
 

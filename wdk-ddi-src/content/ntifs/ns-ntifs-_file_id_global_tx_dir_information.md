@@ -7,8 +7,8 @@ old-location: ifsk\file_id_global_tx_dir_information.htm
 old-project: ifsk
 ms.assetid: 4c4a0458-8ab3-4ef0-b455-c7a70737f322
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: "*PFILE_ID_GLOBAL_TX_DIR_INFORMATION, _FILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/PFILE_ID_GLOBAL_TX_DIR_INFORMATION, ifsk.file_id_global_tx_dir_information, PFILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION structure pointer [Installable File System Drivers], FILE_ID_GLOBAL_TX_DIR_INFORMATION structure [Installable File System Drivers], ntifs/FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION"
+ms.date: 2/7/2018
+ms.keywords: "_FILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/FILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/PFILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION structure pointer [Installable File System Drivers], FILE_ID_GLOBAL_TX_DIR_INFORMATION structure [Installable File System Drivers], *PFILE_ID_GLOBAL_TX_DIR_INFORMATION, ifsk.file_id_global_tx_dir_information, PFILE_ID_GLOBAL_TX_DIR_INFORMATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	FILE_ID_GLOBAL_TX_DIR_INFORMATION
 product: Windows
 targetos: Windows
-req.typenames: "*PFILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION"
+req.typenames: FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION
 ---
 
 # _FILE_ID_GLOBAL_TX_DIR_INFORMATION structure
@@ -138,7 +138,9 @@ The byte offset of the file within the parent directory. For file systems in whi
 
 A sequence of Unicode characters containing the file name. 
 
-<div class="alert"><b>Note</b>  Use <b>FileNameLength</b> to determine the length of the file name rather than assuming the presence of a trailing null delimiter.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Use <b>FileNameLength</b> to determine the length of the file name rather than assuming the presence of a trailing null delimiter.</div>
+<div> </div>
 
 `FileNameLength`
 
@@ -163,6 +165,7 @@ The byte offset from the beginning of this entry, at which the next FILE_ID_FULL
 `TxInfoFlags`
 
 A bitwise OR of zero or more of the following values. 
+
 <table>
 <tr>
 <th>Value </th>
@@ -188,7 +191,8 @@ The transaction's ID must be contained in the <b>LockingTransactionId</b> member
 </td>
 <td>The file is visible to transacted enumerators of the directory other than the one whose transaction ID is in the <b>LockingTransactionId</b> member, and it is visible to non-transacted enumerators of the directory.</td>
 </tr>
-</table> 
+</table>
+ 
 
 If the FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED flag is not set, the other flags must not be set. If flags other than FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED are set, the FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED flag must be set.
 

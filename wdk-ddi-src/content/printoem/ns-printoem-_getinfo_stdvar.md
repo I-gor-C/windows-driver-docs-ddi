@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 9f2ae88c-34a4-46b3-9571-5f2f023b7d6b
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: PGETINFO_STDVAR, print.getinfo_stdvar, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, GETINFO_STDVAR structure [Print Devices], GETINFO_STDVAR, *PGETINFO_STDVAR, _GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], printoem/GETINFO_STDVAR, printoem/PGETINFO_STDVAR
+ms.keywords: GETINFO_STDVAR structure [Print Devices], GETINFO_STDVAR, printoem/PGETINFO_STDVAR, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, *PGETINFO_STDVAR, printoem/GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], PGETINFO_STDVAR, _GETINFO_STDVAR, print.getinfo_stdvar
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,9 +75,11 @@ Specifies the size, in bytes, of the GETINFO_STDVAR structure. Supplied by the <
 Is an array specifying standard variable indexes and values. Each array element contains two members: a <b>dwStdVarID</b> member and an <b>lStdVariable</b> member.
 
 
+
 #### dwStdVarID
 
 Specifies the <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a> for which a value should be returned. Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller. Valid values are contained in the following table.
+
 <table>
 <tr>
 <th>Identifier</th>
@@ -223,9 +225,11 @@ FNT_INFO_TEXTYRES
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.
+
 
 
 #### lStdVariable
@@ -245,6 +249,8 @@ For more information about <a href="https://msdn.microsoft.com/d3f85c0f-7387-430
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+
+
 
  
 

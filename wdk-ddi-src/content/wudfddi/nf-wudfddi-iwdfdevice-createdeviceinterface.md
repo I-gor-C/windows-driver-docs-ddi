@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0a88cbb6-66be-4ef7-93da-27d7ce169779
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: CreateDeviceInterface method, IWDFDevice interface, wudfddi/IWDFDevice::CreateDeviceInterface, IWDFDevice::CreateDeviceInterface, IWDFDevice interface, CreateDeviceInterface method, IWDFDevice, UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, CreateDeviceInterface, umdf.iwdfdevice_createdeviceinterface, CreateDeviceInterface method, wdf.iwdfdevice_createdeviceinterface
+ms.keywords: wudfddi/IWDFDevice::CreateDeviceInterface, CreateDeviceInterface method, IWDFDevice, IWDFDevice interface, CreateDeviceInterface method, CreateDeviceInterface, IWDFDevice::CreateDeviceInterface, CreateDeviceInterface method, IWDFDevice interface, wdf.iwdfdevice_createdeviceinterface, UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, umdf.iwdfdevice_createdeviceinterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -82,6 +82,36 @@ If <b>CreateDeviceInterface</b> succeeds, the initial state of the interface is 
 
 For more information about device interfaces, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF-based Drivers</a>.
 
+
+#### Examples
+
+The following code example shows how to create a device interface instance. In this example, the driver explicitly calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557006">IWDFDevice::AssignDeviceInterfaceState</a> to enable the interface.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    //
+    // Create the device interface.
+    //
+    HRESULT hr;
+    if (S_OK == hr) {
+        hr = m_FxDevice-&gt;CreateDeviceInterface(
+                         &amp;GUID_DEVINTERFACE_OSRUSBFX2,
+                         NULL);
+    }
+    if (S_OK == hr) {
+        hr = m_FxDevice-&gt;AssignDeviceInterfaceState(
+                        &amp;GUID_DEVINTERFACE_OSRUSBFX2,
+                        NULL,
+                        TRUE);
+    }</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,9 +124,13 @@ For more information about device interfaces, see <a href="https://docs.microsof
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557006">IWDFDevice::AssignDeviceInterfaceState</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557006">IWDFDevice::AssignDeviceInterfaceState</a>
+
 
  
 

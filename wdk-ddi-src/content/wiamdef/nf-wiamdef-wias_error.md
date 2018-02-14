@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: e439f130-1b99-4f46-ace5-3456c09a5f67
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WIAS_ERROR, wiamdef/WIAS_ERROR, IWiaLog_5b3e0d61-e0e5-4385-8256-943e437cee9d.xml, WIAS_ERROR macro [Imaging Devices], image.wias_error
+ms.keywords: WIAS_ERROR macro [Imaging Devices], image.wias_error, wiamdef/WIAS_ERROR, WIAS_ERROR, IWiaLog_5b3e0d61-e0e5-4385-8256-943e437cee9d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	WIAS_ERROR
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -75,6 +75,7 @@ This macro is the recommended way to implement error logging on Windows Vista, b
 To enable tracing in free builds, drivers must define the WIA_DEBUG macro by adding <code>#define WIA_DEBUG</code> before including any of the WIA headers. Tracing is enabled by default in checked and debug builds of the operating system.
 
 The following is an example of how the macro can be used:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -84,7 +85,8 @@ The following is an example of how the macro can be used:
 <pre>WIAS_ERROR((g_hInst, "Failed to read (%ws) entry under %ws section of device registry",REG_ENTRY_STORAGEPATH,REG_ENTRY_DEVICEDATA));</pre>
 </td>
 </tr>
-</table></span></div>This code snippet was taken from <i>Wiadriver.cpp</i>, which is included with the WDK.
+</table></span></div>
+This code snippet was taken from <i>Wiadriver.cpp</i>, which is included with the WDK.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,11 +98,17 @@ The following is an example of how the macro can be used:
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
-
 <a href="..\wiamdef\nf-wiamdef-wias_hresult.md">WIAS_HRESULT</a>
 
+
+
+<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
+
+
+
 <a href="..\wiamdef\nf-wiamdef-wias_assert.md">WIAS_ASSERT</a>
+
+
 
  
 

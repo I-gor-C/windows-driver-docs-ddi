@@ -75,6 +75,7 @@ To get extended error information, call <a href="http://go.microsoft.com/fwlink/
 ## Remarks
 <h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
 
+
 The client must successfully call <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_claim_device.md">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a> before using this IOCTL.
 
 ## Requirements

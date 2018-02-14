@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 47aacc23-f7d1-4c14-9541-3207debef327
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisUnbindAdapter, NdisUnbindAdapter function [Network Drivers Starting with Windows Vista], NdisUnbindAdapter, netvista.ndisunbindadapter, protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml
+ms.keywords: NdisUnbindAdapter function [Network Drivers Starting with Windows Vista], protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml, NdisUnbindAdapter, netvista.ndisunbindadapter, ndis/NdisUnbindAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisUnbindAdapter
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -70,6 +70,7 @@ A handle that the protocol driver obtained from a call to the
 ## Return Value
 
 <b>NdisUnbindAdapter</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -112,9 +113,11 @@ Before the call to
     <b>NdisUnbindAdapter</b> returns, NDIS can already have closed the binding. Therefore, after the call
     returns, the caller must not assume that the handle it passed to the 
     <i>NdisBindingHandle</i> parameter is still valid.
+
 <div class="alert"><b>Note</b>  NDIS might not call 
     <i>ProtocolUnbindAdapterEx</i> even if 
-    <b>NdisUnbindAdapter</b> returns NDIS_STATUS_SUCCESS.</div><div> </div>
+    <b>NdisUnbindAdapter</b> returns NDIS_STATUS_SUCCESS.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -130,9 +133,15 @@ Before the call to
 
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
+
+
 <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d8f3d743-acc1-4884-b0ec-a6cea5d8e437
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoResourceListGetCount method, wdfresource/WdfIoResourceListGetCount, DFResourceObjectRef_19542c4c-aed9-412b-83c7-38209836a679.xml, PFN_WDFIORESOURCELISTGETCOUNT, kmdf.wdfioresourcelistgetcount, WdfIoResourceListGetCount, wdf.wdfioresourcelistgetcount
+ms.keywords: WdfIoResourceListGetCount method, kmdf.wdfioresourcelistgetcount, wdfresource/WdfIoResourceListGetCount, wdf.wdfioresourcelistgetcount, WdfIoResourceListGetCount, PFN_WDFIORESOURCELISTGETCOUNT, DFResourceObjectRef_19542c4c-aed9-412b-83c7-38209836a679.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,13 @@ A system bug check occurs if the driver supplies an invalid object handle.
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
+
+#### Examples
+
+For a code example that uses <b>WdfIoResourceListGetCount</b>, see <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,6 +96,8 @@ For more information about resource requirements lists and logical configuration
 ## See Also
 
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>
+
+
 
  
 

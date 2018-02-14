@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, OnRemoteInterfaceRemoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, IRemoteInterfaceCallbackRemoval, OnRemoteInterfaceRemoval method, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method
+ms.keywords: IRemoteInterfaceCallbackRemoval, OnRemoteInterfaceRemoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -88,11 +88,17 @@ For more information about a driver's <b>OnRemoteInterfaceRemoval</b> event call
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
+
+
+<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
+
+
 
  
 

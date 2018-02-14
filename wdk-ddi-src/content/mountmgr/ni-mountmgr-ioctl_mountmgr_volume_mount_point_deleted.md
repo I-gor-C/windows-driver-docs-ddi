@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED IOCTL
@@ -83,6 +83,8 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_VOLUME_MOUNT_POI
 ## See Also
 
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_volume_mount_point.md">MOUNTMGR_VOLUME_MOUNT_POINT</a>
+
+
 
  
 

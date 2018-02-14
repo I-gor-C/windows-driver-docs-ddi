@@ -54,6 +54,10 @@ Represents the context for the activation of a UWP device app for printers.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrinterExtensionContext.get_DriverProperties](nf-printerextension-iprinterextensioncontext-get_driverproperties.md) | Gets the driver property bag. |
+| [printerextension.IPrinterExtensionContext.get_PrinterQueue](nf-printerextension-iprinterextensioncontext-get_printerqueue.md) | Gets the queue for the printer. |
+| [printerextension.IPrinterExtensionContext.get_PrintSchemaTicket](nf-printerextension-iprinterextensioncontext-get_printschematicket.md) | Gets the print ticket that is appropriate for the queue and the activation. |
+| [printerextension.IPrinterExtensionContext.get_UserProperties](nf-printerextension-iprinterextensioncontext-get_userproperties.md) | Gets the user property bag for this app. |
 
 ## Remarks
 
@@ -68,15 +72,25 @@ Represents the context for the activation of a UWP device app for printers.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/5E3DC6C7-E370-4120-81B7-2093812AD009">IPrinterExtensionContextCollection::GetAt</a>
-
 <a href="https://msdn.microsoft.com/F2279727-168D-451B-8EDB-8A4A36ACA08F">IPrinterExtensionContextCollection::Count</a>
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
+
+
+<a href="https://msdn.microsoft.com/5E3DC6C7-E370-4120-81B7-2093812AD009">IPrinterExtensionContextCollection::GetAt</a>
+
+
 
 <a href="https://msdn.microsoft.com/4E20303A-BEB3-4928-BA5A-356D978FA2BE">V4 Printer Driver Property Bags</a>
 
+
+
 <a href="https://msdn.microsoft.com/947063C6-563A-4BB7-918E-479941B4583F">IPrinterExtensionEvent::OnPrinterQueuesEnumerated</a>
+
+
+
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
+
+
 
  
 

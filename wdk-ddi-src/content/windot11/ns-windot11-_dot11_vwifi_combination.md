@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 05be98a8-dad2-4539-b725-e898db19a789
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: DOT11_VWIFI_COMBINATION, netvista.dot11_vwifi_combination, windot11/PDOT11_VWIFI_COMBINATION, windot11/DOT11_VWIFI_COMBINATION, Native_802.11_data_types_6b9469d7-deb2-4681-8f03-5ff6137946b4.xml, *PDOT11_VWIFI_COMBINATION, PDOT11_VWIFI_COMBINATION, _DOT11_VWIFI_COMBINATION, PDOT11_VWIFI_COMBINATION structure pointer [Network Drivers Starting with Windows Vista], DOT11_VWIFI_COMBINATION structure [Network Drivers Starting with Windows Vista]
+ms.keywords: DOT11_VWIFI_COMBINATION, DOT11_VWIFI_COMBINATION structure [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION, windot11/PDOT11_VWIFI_COMBINATION, _DOT11_VWIFI_COMBINATION, Native_802.11_data_types_6b9469d7-deb2-4681-8f03-5ff6137946b4.xml, windot11/DOT11_VWIFI_COMBINATION, netvista.dot11_vwifi_combination, PDOT11_VWIFI_COMBINATION, PDOT11_VWIFI_COMBINATION structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -73,8 +73,6 @@ The miniport driver must set the members of
 
 
 
-For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 #### Type
@@ -82,15 +80,20 @@ For more information about these members, see
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 
+
 #### Revision
 
 This member must be set to DOT11_VWIFI_COMBINATION_REVISION_1.
+
 
 
 #### Size
 
 This member must be set to 
        sizeof(DOT11_VWIFI_COMBINATION).
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 `uNumAdhoc`
 
@@ -110,6 +113,7 @@ The number of Soft AP Stations supported. For more information, see the followin
 ## Remarks
 Starting with Windows 7, the 802.11 miniport driver must only report one or more of the following
     combination of member values.
+
 <ul>
 <li>
 <b>uNumInfrastructure</b> = 1
@@ -134,6 +138,8 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
 
  
 

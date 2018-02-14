@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 7ec30c51-5e07-496b-96af-8eafb564d98d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, umdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo, UMDFDeviceObjectRef_87fc0596-4d08-4c55-88b0-e2ad9d085745.xml, OnSelfManagedIoSuspend method, OnSelfManagedIoSuspend, OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo interface
+ms.keywords: IPnpCallbackSelfManagedIo, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, UMDFDeviceObjectRef_87fc0596-4d08-4c55-88b0-e2ad9d085745.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoSuspend, OnSelfManagedIoSuspend method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,11 +87,17 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.md">IPnpCallbackSelfManagedIo</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+
 
  
 

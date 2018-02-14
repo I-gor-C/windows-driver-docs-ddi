@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 8ab1365a-99bd-47b3-bf3d-8f70b4a7028a
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: bthddi/_BRB_L2CA_ACL_TRANSFER, bltooth._brb_l2ca_acl_transfer, bth_structs_5dfd1186-d8a1-4ec5-9ce8-028d462fcb21.xml, _BRB_L2CA_ACL_TRANSFER, _BRB_L2CA_ACL_TRANSFER structure [Bluetooth Devices]
+ms.keywords: bth_structs_5dfd1186-d8a1-4ec5-9ce8-028d462fcb21.xml, bltooth._brb_l2ca_acl_transfer, _BRB_L2CA_ACL_TRANSFER, bthddi/_BRB_L2CA_ACL_TRANSFER, _BRB_L2CA_ACL_TRANSFER structure [Bluetooth Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -108,6 +108,7 @@ The duration, in milliseconds, before the read action is canceled and any data c
 A combination of flags that specifies the basic behavior of the interface. Multiple flags can be
      set at the same time. Valid flag values are described in the following table:
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -188,14 +189,22 @@ If the ACL_TRANSFER_TIMEOUT flag is set in the
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536613">BRB_L2CA_ACL_TRANSFER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
+
+
 
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536613">BRB_L2CA_ACL_TRANSFER</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
    BRB_L2CA_OPEN_CHANNEL_RESPONSE</a>
+
+
 
  
 

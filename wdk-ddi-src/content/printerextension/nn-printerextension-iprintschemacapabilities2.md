@@ -71,6 +71,8 @@ The <b>IPrintSchemaCapabilities2</b> interface represents an extension to the <a
 
 <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
 
+
+
  
 
  

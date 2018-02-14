@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c575bd3f-6790-4815-b7c7-8ee16a9cac17
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/ObReferenceObjectByPointer, kernel.obreferenceobjectbypointer, ObReferenceObjectByPointer routine [Kernel-Mode Driver Architecture], k107_2846f148-4ad5-472a-aa74-4f03c5251aee.xml, ObReferenceObjectByPointer
+ms.keywords: ObReferenceObjectByPointer routine [Kernel-Mode Driver Architecture], wdm/ObReferenceObjectByPointer, ObReferenceObjectByPointer, k107_2846f148-4ad5-472a-aa74-4f03c5251aee.xml, kernel.obreferenceobjectbypointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,7 +72,10 @@ Specifies a mask representing the requested access to the object.
 `ObjectType`
 
 Pointer to the object type. <i>ObjectType</i> can be <b>*ExEventObjectType</b>, <b>*ExSemaphoreObjectType</b>, <b>*IoFileObjectType</b>, <b>*PsProcessType</b>, <b>*PsThreadType</b>, <b>*SeTokenObjectType</b>, <b>*TmEnlistmentObjectType</b>, <b>*TmResourceManagerObjectType</b>, <b>*TmTransactionManagerObjectType</b>, or <b>*TmTransactionObjectType</b>. 
-<div class="alert"><b>Note</b>    The <b>SeTokenObjectType</b> object type is supported in Windows XP and later versions of Windows.</div><div> </div>This parameter can also be <b>NULL</b> if <i>AccessMode</i> is <b>KernelMode</b>.
+
+<div class="alert"><b>Note</b>    The <b>SeTokenObjectType</b> object type is supported in Windows XP and later versions of Windows.</div>
+<div> </div>
+This parameter can also be <b>NULL</b> if <i>AccessMode</i> is <b>KernelMode</b>.
 
 `AccessMode`
 
@@ -100,13 +103,21 @@ Calling this routine prevents the object from being deleted, possibly by another
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+
+
+<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
+
+
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
 
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
-<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
+
 
  
 

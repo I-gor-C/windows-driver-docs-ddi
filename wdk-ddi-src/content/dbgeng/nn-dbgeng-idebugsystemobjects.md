@@ -53,7 +53,35 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugSystemObjects.GetCurrentProcessHandle](nf-dbgeng-idebugsystemobjects-getcurrentprocesshandle.md) | The GetCurrentProcessHandle function returns the system handle for the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentProcessDataOffset](nf-dbgeng-idebugsystemobjects-getcurrentprocessdataoffset.md) | The GetCurrentProcessDataOffset method returns the location of the system data structure describing the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentProcessExecutableName](nf-dbgeng-idebugsystemobjects-getcurrentprocessexecutablename.md) | The GetCurrentProcessExecutableName method returns the name of executable file loaded in the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentProcessHandle](nf-dbgeng-idebugsystemobjects-getcurrentprocesshandle.md) | The GetCurrentProcessHandle method returns the system handle for the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentProcessId](nf-dbgeng-idebugsystemobjects-getcurrentprocessid.md) | The GetCurrentProcessId method returns the engine process ID for the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentProcessPeb](nf-dbgeng-idebugsystemobjects-getcurrentprocesspeb.md) | The GetCurrentProcessPeb method returns the process environment block (PEB) of the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentProcessSystemId](nf-dbgeng-idebugsystemobjects-getcurrentprocesssystemid.md) | The GetCurrentProcessSystemId method returns the system process ID of the current process. |
+| [dbgeng.IDebugSystemObjects.GetCurrentThreadDataOffset](nf-dbgeng-idebugsystemobjects-getcurrentthreaddataoffset.md) | The GetCurrentThreadDataOffset method returns the location of the system data structure for the current thread. |
+| [dbgeng.IDebugSystemObjects.GetCurrentThreadHandle](nf-dbgeng-idebugsystemobjects-getcurrentthreadhandle.md) | The GetCurrentThreadHandle method returns the system handle for the current thread. |
+| [dbgeng.IDebugSystemObjects.GetCurrentThreadId](nf-dbgeng-idebugsystemobjects-getcurrentthreadid.md) | The GetCurrentThreadId method returns the engine thread ID for the current thread. |
+| [dbgeng.IDebugSystemObjects.GetCurrentThreadSystemId](nf-dbgeng-idebugsystemobjects-getcurrentthreadsystemid.md) | The GetCurrentThreadSystemId method returns the system thread ID of the current thread. |
+| [dbgeng.IDebugSystemObjects.GetCurrentThreadTeb](nf-dbgeng-idebugsystemobjects-getcurrentthreadteb.md) | The GetCurrentThreadTeb method returns the location of the thread environment block (TEB) for the current thread. |
+| [dbgeng.IDebugSystemObjects.GetEventProcess](nf-dbgeng-idebugsystemobjects-geteventprocess.md) | The GetEventProcess method returns the engine process ID for the process on which the last event occurred. |
+| [dbgeng.IDebugSystemObjects.GetEventThread](nf-dbgeng-idebugsystemobjects-geteventthread.md) | The GetEventThread method returns the engine thread ID for the thread on which the last event occurred. |
+| [dbgeng.IDebugSystemObjects.GetNumberProcesses](nf-dbgeng-idebugsystemobjects-getnumberprocesses.md) | The GetNumberProcesses method returns the number of processes for the current target. |
+| [dbgeng.IDebugSystemObjects.GetNumberThreads](nf-dbgeng-idebugsystemobjects-getnumberthreads.md) | The GetNumberThreads method returns the number of threads in the current process. |
+| [dbgeng.IDebugSystemObjects.GetProcessIdByDataOffset](nf-dbgeng-idebugsystemobjects-getprocessidbydataoffset.md) | The GetProcessIdByDataOffset method returns the engine process ID for the specified process. The process is specified by its data offset. |
+| [dbgeng.IDebugSystemObjects.GetProcessIdByHandle](nf-dbgeng-idebugsystemobjects-getprocessidbyhandle.md) | The GetProcessIdByHandle method returns the engine process ID for the specified process. The process is specified by its system handle. |
+| [dbgeng.IDebugSystemObjects.GetProcessIdByPeb](nf-dbgeng-idebugsystemobjects-getprocessidbypeb.md) | The GetProcessIdByPeb method returns the engine process ID for the specified process. The process is specified by its process environment block (PEB). |
+| [dbgeng.IDebugSystemObjects.GetProcessIdBySystemId](nf-dbgeng-idebugsystemobjects-getprocessidbysystemid.md) | The GetProcessIdBySystemId method returns the engine process ID for a process specified by its system process ID. |
+| [dbgeng.IDebugSystemObjects.GetProcessIdsByIndex](nf-dbgeng-idebugsystemobjects-getprocessidsbyindex.md) | The GetProcessIdsByIndex method returns the engine process ID and system process ID for the specified processes in the current target. |
+| [dbgeng.IDebugSystemObjects.GetThreadIdByDataOffset](nf-dbgeng-idebugsystemobjects-getthreadidbydataoffset.md) | The GetThreadIdByDataOffset method returns the engine thread ID for the specified thread. The thread is specified by its system data structure. |
+| [dbgeng.IDebugSystemObjects.GetThreadIdByHandle](nf-dbgeng-idebugsystemobjects-getthreadidbyhandle.md) | The GetThreadIdByHandle method returns the engine thread ID for the specified thread. The thread is specified by its system handle. |
+| [dbgeng.IDebugSystemObjects.GetThreadIdByProcessor](nf-dbgeng-idebugsystemobjects-getthreadidbyprocessor.md) | The GetThreadIdByProcessor method returns the engine thread ID for the kernel-modevirtual thread corresponding to the specified processor. |
+| [dbgeng.IDebugSystemObjects.GetThreadIdBySystemId](nf-dbgeng-idebugsystemobjects-getthreadidbysystemid.md) | The GetThreadIdBySystemId method returns the engine thread ID for the specified thread. The thread is specified by its system thread ID. |
+| [dbgeng.IDebugSystemObjects.GetThreadIdByTeb](nf-dbgeng-idebugsystemobjects-getthreadidbyteb.md) | The GetThreadIdByTeb method returns the engine thread ID of the specified thread. The thread is specified by its thread environment block (TEB). |
+| [dbgeng.IDebugSystemObjects.GetThreadIdsByIndex](nf-dbgeng-idebugsystemobjects-getthreadidsbyindex.md) | The GetThreadIdsByIndex method returns the engine and system thread IDs for the specified threads in the current process. |
+| [dbgeng.IDebugSystemObjects.GetTotalNumberThreads](nf-dbgeng-idebugsystemobjects-gettotalnumberthreads.md) | The GetTotalNumberThreads method returns the total number of threads for all the processes in the current target, in addition to the largest number of threads in any process for the current target. |
+| [dbgeng.IDebugSystemObjects.SetCurrentProcessId](nf-dbgeng-idebugsystemobjects-setcurrentprocessid.md) | The SetCurrentProcessId method makes the specified process the current process. |
+| [dbgeng.IDebugSystemObjects.SetCurrentThreadId](nf-dbgeng-idebugsystemobjects-setcurrentthreadid.md) | The SetCurrentThreadId method makes the specified thread the current thread. |
 
 ## Remarks
 
@@ -67,11 +95,17 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects2.md">IDebugSystemObjects2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects4.md">IDebugSystemObjects4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects2.md">IDebugSystemObjects2</a>
+
+
 
  
 

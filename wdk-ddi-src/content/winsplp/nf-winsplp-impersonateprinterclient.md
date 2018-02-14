@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 8e110b2a-9d13-4e2e-8f27-5a48d838fb3c
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.impersonateprinterclient, winsplp/ImpersonatePrinterClient, spoolfnc_2eb48193-850d-43dc-8e9b-025c8187c49e.xml, ImpersonatePrinterClient, ImpersonatePrinterClient function [Print Devices]
+ms.keywords: print.impersonateprinterclient, ImpersonatePrinterClient, winsplp/ImpersonatePrinterClient, ImpersonatePrinterClient function [Print Devices], spoolfnc_2eb48193-850d-43dc-8e9b-025c8187c49e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,8 @@ This function must be called after a successful call to <a href="..\winsplp\nf-w
 ## See Also
 
 <a href="..\winsplp\nf-winsplp-reverttoprinterself.md">RevertToPrinterSelf</a>
+
+
 
  
 

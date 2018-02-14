@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e5df165c-3d85-42b9-affe-3dcc7c46aa0b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTReleaseKeyedMutex2, PFND3DKMT_RELEASEKEYEDMUTEX2, d3dkmthk/D3DKMTReleaseKeyedMutex2, D3DKMTReleaseKeyedMutex2 function [Display Devices], display.d3dkmtreleasekeyedmutex2
+ms.keywords: display.d3dkmtreleasekeyedmutex2, PFND3DKMT_RELEASEKEYEDMUTEX2, d3dkmthk/D3DKMTReleaseKeyedMutex2, D3DKMTReleaseKeyedMutex2, D3DKMTReleaseKeyedMutex2 function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -115,7 +116,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -138,7 +140,11 @@ This function might also return other NTSTATUS values.
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex.md">D3DKMTReleaseKeyedMutex</a>
 
+
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_releasekeyedmutex2.md">D3DKMT_RELEASEKEYEDMUTEX2</a>
+
+
 
  
 

@@ -7,8 +7,8 @@ old-location: buses\usbd_unregister.htm
 old-project: usbref
 ms.assetid: 6876E96D-E249-4B7C-A496-27E3F4A7F7E2
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: usbdlib/USBD_CloseHandle, USBD_CloseHandle routine [Buses], buses.usbd_unregister, USBD_CloseHandle
+ms.date: 2/8/2018
+ms.keywords: buses.usbd_unregister, usbdlib/USBD_CloseHandle, USBD_CloseHandle routine [Buses], USBD_CloseHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,10 +85,14 @@ A client driver should call <b>USBD_CloseHandle</b> in the driver's routine that
 
 <a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
 
- 
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_CloseHandle routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_CloseHandle routine%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

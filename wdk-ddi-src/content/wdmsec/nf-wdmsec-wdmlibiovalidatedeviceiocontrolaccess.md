@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: F986A431-A70D-4488-A792-F37128902C7E
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdmsec/WdmlibIoValidateDeviceIoControlAccess, wdmsec/IoValidateDeviceIoControlAccess, FILE_WRITE_ACCESS, FILE_READ_ACCESS, WdmlibIoValidateDeviceIoControlAccess, IoValidateDeviceIoControlAccess, kernel.wdmlibiovalidatedeviceiocontrolaccess, WdmlibIoValidateDeviceIoControlAccess function [Kernel-Mode Driver Architecture]
+ms.keywords: IoValidateDeviceIoControlAccess, wdmsec/WdmlibIoValidateDeviceIoControlAccess, wdmsec/IoValidateDeviceIoControlAccess, kernel.wdmlibiovalidatedeviceiocontrolaccess, FILE_READ_ACCESS, WdmlibIoValidateDeviceIoControlAccess, WdmlibIoValidateDeviceIoControlAccess function [Kernel-Mode Driver Architecture], FILE_WRITE_ACCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,6 +67,7 @@ Specifies the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> on which to perform the ac
 `RequiredAccess`
 
 Specifies the type of access to the device object that the request sender must have. The caller can specify one or more of the following flags.
+
 <table>
 <tr>
 <th>Value</th>
@@ -98,6 +99,7 @@ The request sender must have write access to the device object.
 ## Return Value
 
 <b>WdmlibIoValidateDeviceIoControlAccess</b> returns an NTSTATUS value. Possible return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -160,6 +162,8 @@ The access checks are only performed if the <b>RequestorMode</b> member of the <
 ## See Also
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
+
 
  
 

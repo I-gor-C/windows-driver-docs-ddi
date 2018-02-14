@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortReadPortBufferUshort
-title: StorPortReadPortBufferUshort function
+title: StorPortReadPortBufferUshort macro
 author: windows-driver-content
 description: The StorPortReadPortBufferUshort routine reads a value from a specified port address.
 old-location: storage\storportreadportbufferushort.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 7b45811c-4e5f-4344-b0b3-15d36b912b5b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortReadPortBufferUshort, storage.storportreadportbufferushort, StorPortReadPortBufferUshort routine [Storage Devices], StorPortReadPortBufferUshort, storprt_8bb9a625-864a-4566-a570-87425b6bc9af.xml
+ms.keywords: storage.storportreadportbufferushort, StorPortReadPortBufferUshort, storport/StorPortReadPortBufferUshort, storprt_8bb9a625-864a-4566-a570-87425b6bc9af.xml, StorPortReadPortBufferUshort routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -64,19 +64,19 @@ STORPORT_API VOID StorPortReadPortBufferUshort(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Port`
 
-Pointer to the address from which to read.
+
 
 `Buffer`
 
-Pointer to the buffer that receives the data that is read.
+
 
 `Count`
 
-Number of data items to be read. Each data item has a size of <b>sizeof</b>(USHORT).
+
 
 
 ## Return Value
@@ -98,7 +98,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadportbufferushort.md
 
 <a href="..\srb\nf-srb-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>
 
+
+
 <a href="..\storport\nf-storport-storportreadportushort.md">StorPortReadPortUshort</a>
+
+
 
  
 

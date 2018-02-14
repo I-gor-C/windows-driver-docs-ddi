@@ -69,6 +69,7 @@ The length of a <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_pa
 
 ### Status Block
 The <b>Information</b> field contains the number of bytes returned in the output buffer. One of the following values can be returned in the <b>Status</b> field. 
+
 <table>
 <tr>
 <th>Status Value</th>
@@ -119,9 +120,13 @@ A driver or application can query for the necessary output buffer size by settin
 
 ## See Also
 
+<b>ENUMERATE_BANDS_PARAMETERS</b>
+
+
+
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">BAND_TABLE</a>
 
-<b>ENUMERATE_BANDS_PARAMETERS</b>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e28dd810-d86f-479f-b049-63a626ed432f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: STRSAFE_NO_TRUNCATION, safestrings_e2c4ac8d-ac84-4a99-84b3-51b54a508a0a.xml, STRSAFE_NULL_ON_FAILURE, RtlStringCchVPrintfExW, ntstrsafe/RtlStringCchVPrintfExA, STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, RtlStringCchVPrintfExA, STRSAFE_IGNORE_NULLS, RtlStringCchVPrintfExW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchVPrintfExW, RtlStringCchVPrintfEx, kernel.rtlstringcchvprintfex
+ms.keywords: RtlStringCchVPrintfExA, ntstrsafe/RtlStringCchVPrintfExW, RtlStringCchVPrintfExW, ntstrsafe/RtlStringCchVPrintfExA, kernel.rtlstringcchvprintfex, STRSAFE_IGNORE_NULLS, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, safestrings_e2c4ac8d-ac84-4a99-84b3-51b54a508a0a.xml, RtlStringCchVPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, RtlStringCchVPrintfEx, STRSAFE_FILL_ON_FAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	RtlStringCchVPrintfExW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -85,6 +85,7 @@ If the caller supplies a non-<b>NULL</b> address pointer, the function loads the
 `dwFlags`
 
 One or more flags and, optionally, a fill byte. The flags are defined as follows.
+
 <table>
 <tr>
 <th>Value</th>
@@ -154,6 +155,7 @@ A <b>va_list</b>-typed argument list. Arguments contained in the argument list w
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -207,6 +209,7 @@ The function returns the STATUS_INVALID_PARAMETER value when:
 ## Remarks
 
 <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> should be used instead of the following functions: 
+
 <ul>
 <li>
 <b>vsprintf</b>
@@ -224,13 +227,15 @@ _<b>vsnprintf</b>
 _<b>vsnwprintf</b>
 
 </li>
-</ul>All of these functions accept a format string and its arguments, provided as a <b>va_list</b>-typed argument list, and return a formatted string. <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> receive the size, in characters, of the destination buffer to ensure that they do not write past the end of the buffer.
+</ul>
+All of these functions accept a format string and its arguments, provided as a <b>va_list</b>-typed argument list, and return a formatted string. <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> receive the size, in characters, of the destination buffer to ensure that they do not write past the end of the buffer.
 
 <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> add to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfw.md">RtlStringCchVPrintf</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.
 
 For more information about <b>va_list</b>-typed argument lists, see the Microsoft Windows SDK documentation.
 
 Use <b>RtlStringCchVPrintfExW</b> to handle Unicode strings and <b>RtlStringCchVPrintfExA</b> to handle ANSI strings. The form you use depends on your data.
+
 <table>
 <tr>
 <th>String data type</th>
@@ -265,7 +270,8 @@ L"string"
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If  <i>pszDest</i> and <i>pszFormat</i> point to overlapping strings or if any argument strings overlap, the behavior of the function is undefined.
 
@@ -286,9 +292,15 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfexw.md">RtlStringCchPrintfEx</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfexw.md">RtlStringCbVPrintfEx</a>
+
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfw.md">RtlStringCchVPrintf</a>
+
+
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfexw.md">RtlStringCbVPrintfEx</a>
+
+
 
  
 

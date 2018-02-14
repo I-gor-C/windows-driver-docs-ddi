@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: a32226bf-4be9-4d0b-8fe9-3ff48a43ca07
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.getsystemversionstring, IDebugControl4 interface [Windows Debugging], GetSystemVersionString method, dbgeng/IDebugControl4::GetSystemVersionString, IDebugControl4, IDebugControl4::GetSystemVersionString, GetSystemVersionString method [Windows Debugging], IDebugControl4 interface, IDebugControl_4adaed37-7034-4c64-9064-466706a2951e.xml, GetSystemVersionString method [Windows Debugging], GetSystemVersionString
+ms.keywords: dbgeng/IDebugControl4::GetSystemVersionString, debugger.getsystemversionstring, IDebugControl_4adaed37-7034-4c64-9064-466706a2951e.xml, GetSystemVersionString, IDebugControl4::GetSystemVersionString, IDebugControl4 interface [Windows Debugging], GetSystemVersionString method, IDebugControl4, GetSystemVersionString method [Windows Debugging], IDebugControl4 interface, GetSystemVersionString method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -63,6 +63,7 @@ HRESULT GetSystemVersionString(
 `Which`
 
 Specifies which version string to return.  The possible values are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -106,6 +107,7 @@ Receives the size, in characters, of the string that identifies the build.  If <
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -150,9 +152,15 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549234">GetSystemVersion</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549258">GetSystemVersionValues</a>
+
+
 
  
 

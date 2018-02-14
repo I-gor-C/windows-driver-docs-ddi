@@ -71,6 +71,7 @@ The size, in bytes, of the preparsed data structure is obtained using <a href=".
 
 ### Status Block
 The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
+
 <ul>
 <li>
 <b>Information</b> is set to size, in bytes, of the preparesed data.
@@ -84,6 +85,7 @@ The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
 
 ## Remarks
 The <b>_HIDP_PREPARSED_DATA</b> structure contains a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection's</a> <a href="https://msdn.microsoft.com/50ac2877-4c45-4d55-b5cc-013486892fbf">preparsed data</a>.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -94,7 +96,8 @@ The <b>_HIDP_PREPARSED_DATA</b> structure contains a <a href="https://msdn.micro
 </pre>
 </td>
 </tr>
-</table></span></div>A user-mode application calls <a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a> to obtain a top-level collection's preparsed data in a variable length _HIDP_PREPARSED_DATA structure.
+</table></span></div>
+A user-mode application calls <a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a> to obtain a top-level collection's preparsed data in a variable length _HIDP_PREPARSED_DATA structure.
 
 A kernel-mode driver uses an <b>IOCTL_HID_GET_COLLECTION_DESCRIPTOR</b> request to obtain a pointer to a top-level collection's preparsed data.
 
@@ -107,9 +110,13 @@ The internal structure of a _HIDP_PREPARSED_DATA structure is reserved for inter
 
 ## See Also
 
+<a href="..\hidsdi\nf-hidsdi-hidd_freepreparseddata.md">HidD_FreePreparsedData</a>
+
+
+
 <a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>
 
-<a href="..\hidsdi\nf-hidsdi-hidd_freepreparseddata.md">HidD_FreePreparsedData</a>
+
 
  
 

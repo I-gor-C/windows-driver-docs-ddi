@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: e821f738-3712-49c2-9026-ff6ddc0381a6
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFDevice2 interface, ResumeIdle method, ResumeIdle method, ResumeIdle, wudfddi/IWDFDevice2::ResumeIdle, ResumeIdle method, IWDFDevice2 interface, UMDFDeviceObjectRef_2c3c90d0-ac7d-44ac-b643-7dd6abd8ac67.xml, IWDFDevice2::ResumeIdle, wdf.iwdfdevice2_resumeidle, umdf.iwdfdevice2_resumeidle, IWDFDevice2
+ms.keywords: umdf.iwdfdevice2_resumeidle, ResumeIdle, wdf.iwdfdevice2_resumeidle, ResumeIdle method, wudfddi/IWDFDevice2::ResumeIdle, UMDFDeviceObjectRef_2c3c90d0-ac7d-44ac-b643-7dd6abd8ac67.xml, ResumeIdle method, IWDFDevice2 interface, IWDFDevice2, IWDFDevice2::ResumeIdle, IWDFDevice2 interface, ResumeIdle method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,35 @@ Every call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556
 
 For more information about <a href="https://msdn.microsoft.com/1a4907c9-8e3b-4fb6-a7d4-89985e470e48">StopIdle</a> and <b>ResumeIdle</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-idle-power-down-in-umdf-drivers">Supporting Idle Power-Down in UMDF-based Drivers</a>.
 
+
+#### Examples
+
+The following code example obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface and then calls <b>ResumeIdle</b>. 
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    IWDFDevice2 *pIWDFDevice2 = NULL;
+    HRESULT hr;
+
+    //
+    // Get a pointer to the IWDFDevice2 interface.
+    //
+    hr = pIWDFDevice-&gt;QueryInterface(__uuidof(IWDFDevice2),
+                                     (void**) &amp;pIWDFDevice2);
+    if (SUCCEEDED(hr)) 
+    {
+    pIWDFDevice2-&gt;ResumeIdle();
+    }
+...
+    SAFE_RELEASE(pIWDFDevice2);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -84,7 +113,11 @@ For more information about <a href="https://msdn.microsoft.com/1a4907c9-8e3b-4fb
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556948">IWDFDevice2::StopIdle</a>
+
+
 
  
 

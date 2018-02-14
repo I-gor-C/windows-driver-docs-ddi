@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 426ff4f4-7924-4115-9f66-b4152e2ba5bb
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, netvista.ndisallocatecloneoidrequest, ndis/NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista]
+ms.keywords: ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, NdisAllocateCloneOidRequest, ndis/NdisAllocateCloneOidRequest, netvista.ndisallocatecloneoidrequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisAllocateCloneOidRequest
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -86,6 +86,7 @@ TBD
 ## Return Value
 
 <b>NdisAllocateClonedRequest</b> can return one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -169,9 +170,13 @@ The driver must subsequently call the
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisfreecloneoidrequest.md">NdisFreeCloneOidRequest</a>
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
 
  
 

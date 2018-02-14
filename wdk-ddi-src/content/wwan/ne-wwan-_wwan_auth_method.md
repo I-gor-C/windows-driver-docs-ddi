@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: D24D8C90-8F65-42BC-8FBC-308ECC4A73C9
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wwan/WwanAuthSim, WWAN_AUTH_METHOD enumeration [Network Drivers Starting with Windows Vista], WwanAuthMethodMax, netvista.wwan_auth_method, wwan/WwanAuthAka, *PWWAN_AUTH_METHOD, wwan/WWAN_AUTH_METHOD, WwanAuthSim, WwanAuthAka, WwanAuthAkaPrime, WWAN_AUTH_METHOD, wwan/WwanAuthAkaPrime, wwan/WwanAuthMethodMax, _WWAN_AUTH_METHOD
+ms.keywords: WwanAuthAka, wwan/WWAN_AUTH_METHOD, WwanAuthMethodMax, WWAN_AUTH_METHOD enumeration [Network Drivers Starting with Windows Vista], WWAN_AUTH_METHOD, *PWWAN_AUTH_METHOD, wwan/WwanAuthAkaPrime, netvista.wwan_auth_method, WwanAuthAkaPrime, WwanAuthSim, wwan/WwanAuthMethodMax, wwan/WwanAuthSim, _WWAN_AUTH_METHOD, wwan/WwanAuthAka
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -40,7 +40,7 @@ apiname:
 -	WWAN_AUTH_METHOD
 product: Windows
 targetos: Windows
-req.typenames: WWAN_AUTH_METHOD, *PWWAN_AUTH_METHOD
+req.typenames: "*PWWAN_AUTH_METHOD, WWAN_AUTH_METHOD"
 req.product: Windows 10 or later.
 ---
 
@@ -96,7 +96,11 @@ typedef enum _WWAN_AUTH_METHOD {
 
         <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a>
 
+
+
 <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a>
+
+
 
  
 

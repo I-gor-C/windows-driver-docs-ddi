@@ -40,7 +40,7 @@ apiname:
 -	EvtPosCxDeviceRemoteRelease
 product: Windows
 targetos: Windows
-req.typenames: PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
+req.typenames: "*PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR"
 req.product: Windows 10 or later.
 ---
 
@@ -93,6 +93,8 @@ If the driver is unable to complete the remote release transaction, it should re
 ## See Also
 
 <a href="..\poscx\nc-poscx-evt_pos_cx_device_remote_claim.md">EVT_POS_CX_DEVICE_REMOTE_CLAIM</a>
+
+
 
  
 

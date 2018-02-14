@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 2ca1fdbe-efd3-4607-aab1-751e6d5d025b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndis_pm_wol_pattern, ntddndis/NDIS_PM_WOL_PATTERN, _NDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN, NDIS_PM_WOL_PATTERN structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PM_WOL_PATTERN, miniport_power_management_ref_ce048c91-111a-406d-8dc9-958394bc78cd.xml, NDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PM_WOL_PATTERN
+ms.keywords: ntddndis/PNDIS_PM_WOL_PATTERN, ntddndis/NDIS_PM_WOL_PATTERN, _NDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_pm_wol_pattern, NDIS_PM_WOL_PATTERN structure [Network Drivers Starting with Windows Vista], *PNDIS_PM_WOL_PATTERN, miniport_power_management_ref_ce048c91-111a-406d-8dc9-958394bc78cd.xml, NDIS_PM_WOL_PATTERN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -111,11 +111,13 @@ The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJ
 
 
 
+
 #### NDIS_PM_WOL_PATTERN_REVISION_2
 
 Revisions made to  the <a href="..\ntddndis\ne-ntddndis-_ndis_pm_wol_packet.md">NDIS_PM_WOL_PACKET</a> enumeration for NDIS 6.30.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_WOL_PATTERN_REVISION_2.
+
 
 
 #### NDIS_PM_WOL_PATTERN_REVISION_1
@@ -152,14 +154,17 @@ A ULONG value that contains the priority of the WOL pattern. If an overlying dri
 
 
 
+
 #### NDIS_PM_WOL_PRIORITY_LOWEST
 
 Specifies the lowest priority WOL pattern.
 
 
+
 #### NDIS_PM_WOL_PRIORITY_NORMAL
 
 Specifies a normal priority WOL pattern.
+
 
 
 #### NDIS_PM_WOL_PRIORITY_HIGHEST
@@ -217,15 +222,25 @@ The upper layer driver sets the NDIS_PM_WOL_IPV4_DEST_ADDR_WILDCARD_ENABLED and
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569772">OID_PM_WOL_PATTERN_LIST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a>
+
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a>
+
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
+
 <a href="..\ntddndis\ne-ntddndis-_ndis_pm_wol_packet.md">NDIS_PM_WOL_PACKET</a>
+
+
 
  
 

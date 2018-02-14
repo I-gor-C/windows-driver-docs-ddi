@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8d798afe-dc75-4cd0-aad7-1f9824bdcf00
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dumddi/DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFunc_709, DXVADDI_VideoTransFunc_Unknown, d3dumddi/DXVADDI_VideoTransFunc_709, _DXVADDI_VIDEOTRANSFERFUNCTION, display.dxvaddi_videotransferfunction, d3dumddi/DXVADDI_VideoTransFunc_22, DXVA2_Structs_a6fcb795-da10-4824-99b3-5f75a50a17ce.xml, d3dumddi/DXVADDI_VideoTransFunc_18, DXVADDI_VideoTransFunc_18, DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFunc_20, DXVADDI_VideoTransFunc_240M, DXVADDI_VideoTransFuncMask, DXVADDI_VideoTransFunc_22, d3dumddi/DXVADDI_VideoTransFunc_20, d3dumddi/DXVADDI_VideoTransFunc_Unknown, d3dumddi/DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VideoTransFunc_28, DXVADDI_VideoTransFunc_28, DXVADDI_VIDEOTRANSFERFUNCTION enumeration [Display Devices], d3dumddi/DXVADDI_VideoTransFunc_sRGB, d3dumddi/DXVADDI_VideoTransFuncMask, DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VideoTransFunc_240M, DXVADDI_VideoTransFunc_sRGB
+ms.keywords: DXVADDI_VideoTransFunc_22, d3dumddi/DXVADDI_VideoTransFunc_28, d3dumddi/DXVADDI_VideoTransFuncMask, DXVADDI_VideoTransFunc_18, _DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VIDEOTRANSFERFUNCTION, DXVADDI_VideoTransFuncMask, d3dumddi/DXVADDI_VideoTransFunc_sRGB, DXVADDI_VIDEOTRANSFERFUNCTION enumeration [Display Devices], DXVA2_Structs_a6fcb795-da10-4824-99b3-5f75a50a17ce.xml, DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFunc_sRGB, d3dumddi/DXVADDI_VideoTransFunc_20, d3dumddi/DXVADDI_VideoTransFunc_240M, d3dumddi/DXVADDI_VideoTransFunc_Unknown, d3dumddi/DXVADDI_VideoTransFunc_18, d3dumddi/DXVADDI_VideoTransFunc_22, DXVADDI_VideoTransFunc_20, DXVADDI_VideoTransFunc_28, DXVADDI_VideoTransFunc_240M, DXVADDI_VideoTransFunc_Unknown, d3dumddi/DXVADDI_VideoTransFunc_10, DXVADDI_VIDEOTRANSFERFUNCTION, display.dxvaddi_videotransferfunction, d3dumddi/DXVADDI_VideoTransFunc_709, DXVADDI_VideoTransFunc_709
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -130,6 +130,7 @@ The BT709, SMPTE296M, SMPTE170M, BT470, and SMPTE274M primaries (that is, the DX
 DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.
 
 The following constants can also be used for gamma function:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -153,7 +154,11 @@ The following constants can also be used for gamma function:
 
         <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 
+
+
 <a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
+
+
 
  
 

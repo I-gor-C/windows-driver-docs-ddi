@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 0c91abd0-5e49-4e23-a50f-9d1dacf9d868
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: SendRecv method [Print Devices], IBidiSpl interface [Print Devices], SendRecv method, gdi.ibidispl_ibidispl__sendrecv, IBidiSpl::SendRecv, SendRecv method [Print Devices], IBidiSpl interface, bidispl/IBidiSpl::SendRecv, IBidiSpl, print.ibidispl_ibidispl__sendrecv, _win32_IBidiSpl_SendRecv, SendRecv
+ms.keywords: IBidiSpl, SendRecv, _win32_IBidiSpl_SendRecv, SendRecv method [Print Devices], IBidiSpl interface, print.ibidispl_ibidispl__sendrecv, gdi.ibidispl_ibidispl__sendrecv, IBidiSpl::SendRecv, IBidiSpl interface [Print Devices], SendRecv method, bidispl/IBidiSpl::SendRecv, SendRecv method [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IBidiSpl.SendRecv
 product: Windows
 targetos: Windows
-req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
@@ -61,6 +61,7 @@ HRESULT SendRecv(
 `pszAction`
 
 A pointer to a NULL-terminated string that specifies the action for this bidi request. It can be one of the following constants.
+
 <table>
 <tr>
 <th>Constant</th>
@@ -102,6 +103,7 @@ A pointer to a single bidi request.
 ## Return Value
 
 The method returns one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,7 +142,8 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Note that the <b>HRESULT</b> may contain a system error code defined in <a href="https://msdn.microsoft.com/e273f5eb-e4f4-4aa7-9ed9-b418eebc6144">Bidi Error Codes</a>.
 
@@ -158,11 +161,17 @@ The BIDI_ACTION_* values are case insensitive strings.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
-
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
+
+
 <a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+
 
  
 

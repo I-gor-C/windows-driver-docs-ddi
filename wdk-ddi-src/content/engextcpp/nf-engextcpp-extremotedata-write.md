@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 970c725b-4ea0-42b7-a373-83cb463cd80d
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: ExtRemoteData, ExtRemoteData::Write, Write, ExtRemoteData class [Windows Debugging], Write method, EngExtCpp_Ref_1288bed4-2f61-4af4-a226-5157a0622f42.xml, Write method [Windows Debugging], ExtRemoteData class, Write method [Windows Debugging], debugger.extremotedata_write
+ms.keywords: ExtRemoteData, ExtRemoteData::Write, Write method [Windows Debugging], ExtRemoteData class, ExtRemoteData class [Windows Debugging], Write method, EngExtCpp_Ref_1288bed4-2f61-4af4-a226-5157a0622f42.xml, Write, debugger.extremotedata_write, Write method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	ExtRemoteData.Write
 product: Windows
 targetos: Windows
-req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames: "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
 ---
 
 
@@ -66,6 +66,7 @@ This method does not return a value.
 This method can be used to reset the region of memory on the target to the currently cached value that was previously read from the target.
 
 It is also possible to directly set the value cached by the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object, for example:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -90,7 +91,11 @@ ext_remote_data.Write();</pre>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544083">ExtRemoteData::Read</a>
 
+
+
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+
+
 
  
 

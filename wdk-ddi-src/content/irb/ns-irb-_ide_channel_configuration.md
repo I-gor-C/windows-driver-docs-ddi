@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1ca9a198-ac6b-4837-9503-68eb7ca36527
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: irb/IDE_CHANNEL_CONFIGURATION, structs-ATA_79456267-9b2d-4f9a-beff-e44915bda026.xml, irb/PIDE_CHANNEL_CONFIGURATION, PIDE_CHANNEL_CONFIGURATION, *PIDE_CHANNEL_CONFIGURATION, PIDE_CHANNEL_CONFIGURATION structure pointer [Storage Devices], storage.ide_channel_configuration, IDE_CHANNEL_CONFIGURATION, _IDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION structure [Storage Devices]
+ms.keywords: PIDE_CHANNEL_CONFIGURATION, storage.ide_channel_configuration, irb/IDE_CHANNEL_CONFIGURATION, _IDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION, structs-ATA_79456267-9b2d-4f9a-beff-e44915bda026.xml, *PIDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION structure [Storage Devices], PIDE_CHANNEL_CONFIGURATION structure pointer [Storage Devices], irb/PIDE_CHANNEL_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -73,6 +73,7 @@ typedef struct _IDE_CHANNEL_CONFIGURATION {
 `ChannelMode`
 
 The port driver sets this field to inform the ATA miniport which mode it is running at. There are three possible modes:
+
 <table>
 <tr>
 <th>Mode</th>

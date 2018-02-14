@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml, NdisCoGetTapiCallId, NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista], ndis/NdisCoGetTapiCallId, netvista.ndiscogettapicallid
+ms.keywords: NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista], NdisCoGetTapiCallId, ndis/NdisCoGetTapiCallId, netvista.ndiscogettapicallid, condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisCoGetTapiCallId
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -76,6 +76,7 @@ Pointer to a caller-allocated buffer that receives a data structure of type VAR_
 ## Return Value
 
 Returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -153,10 +154,14 @@ For more information about the VAR_STRING structure, see
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
 <a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
    NdisClGetProtocolVcContextFromTapiCallId</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+
 
  
 

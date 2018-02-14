@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 56e147ea-497b-4691-8a62-8165828b1f36
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.getsymbolvaluetextwide, GetSymbolValueTextWide method [Windows Debugging], GetSymbolValueTextWide method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueTextWide method, IDebugSymbolGroup2::GetSymbolValueTextWide, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup2::GetSymbolValueTextWide, GetSymbolValueTextWide
+ms.keywords: GetSymbolValueTextWide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueTextWide method, IDebugSymbolGroup2::GetSymbolValueTextWide, debugger.getsymbolvaluetextwide, GetSymbolValueTextWide method [Windows Debugging], dbgeng/IDebugSymbolGroup2::GetSymbolValueTextWide, IDebugSymbolGroup2, GetSymbolValueTextWide method [Windows Debugging], IDebugSymbolGroup2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -106,7 +106,8 @@ The method was successful.  However, the value of the symbol would not fit in th
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -125,11 +126,17 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561457">WriteSymbol</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
+
 
  
 

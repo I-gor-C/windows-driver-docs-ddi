@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 3fc01bc5-05eb-482f-b625-67061d26915a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/MmMapLockedPagesWithReservedMapping, MmMapLockedPagesWithReservedMapping, kernel.mmmaplockedpageswithreservedmapping, k106_32161803-dd44-4a5f-a5c0-da6b1a78982c.xml, MmMapLockedPagesWithReservedMapping routine [Kernel-Mode Driver Architecture]
+ms.keywords: k106_32161803-dd44-4a5f-a5c0-da6b1a78982c.xml, kernel.mmmaplockedpageswithreservedmapping, wdm/MmMapLockedPagesWithReservedMapping, MmMapLockedPagesWithReservedMapping, MmMapLockedPagesWithReservedMapping routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,7 @@ Specifies the <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYP
 ## Remarks
 
 The caller can use <b>MmMapLockedPagesWithReservedMapping</b> to map a subrange of the virtual memory range reserved by <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a> as follows: 
+
 <ol>
 <li>
 Use <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a> to allocate an MDL. The returned MDL is built using the specified starting address and size of the subrange of the virtual memory range to map. 
@@ -98,7 +99,8 @@ Use <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a> to lo
 Use <b>MmMapLockedPagesWithReservedMapping</b> to actually map the virtual memory to the physical memory that was locked down in step 2. Note that the virtual address returned by this function does include the byte offset that the MDL specifies. However, the <b>MappedSystemVa</b> field of the MDL that is set by this function does <u>not</u> include the byte offset. 
 
 </li>
-</ol>Once the caller does not need to access the memory, it unmaps the memory with <a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>. The caller can map and unmap the memory buffer as needed, and must unmap it prior to freeing the mapping range with <a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>. 
+</ol>
+Once the caller does not need to access the memory, it unmaps the memory with <a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>. The caller can map and unmap the memory buffer as needed, and must unmap it prior to freeing the mapping range with <a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>. 
 
 Note that the <i>MappingAddress</i> parameter specifies the beginning of the range of memory previously reserved by the caller, <u>not</u> the beginning of the memory subrange to be mapped. The caller specifies the starting address and length of the buffer when it allocates the MDL with <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>. The buffer must fit inside the reserved memory range, but it can be a strict subset.
 
@@ -117,21 +119,37 @@ The routine uses the <i>CacheType</i> parameter only if the pages that are descr
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
-
-<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
-
 <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
+
+
+<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
+
+
 
 <a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
+
+
 
 <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
 
+
+
+<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+
+
 <a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
+
+
 
  
 

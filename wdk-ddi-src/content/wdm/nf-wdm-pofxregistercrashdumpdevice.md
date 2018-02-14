@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 3237B68F-838A-4443-89FD-DC7815EAB403
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pofxregistercrashdumpdevice, PoFxRegisterCrashdumpDevice, PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], wdm/PoFxRegisterCrashdumpDevice
+ms.keywords: wdm/PoFxRegisterCrashdumpDevice, PoFxRegisterCrashdumpDevice, PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercrashdumpdevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,6 +67,7 @@ A handle that represents the registration of the crash-dump device with the Wind
 ## Return Value
 
 <b>PoFxRegisterCrashdumpDevice</b> returns STATUS_SUCCESS if the routine successfully registers the crash-dump device. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return value</th>
@@ -121,7 +122,11 @@ For more information about crash dumps, see <a href="https://msdn.microsoft.com/
 
 <a href="..\wdm\nf-wdm-pofxpoweroncrashdumpdevice.md">PoFxPowerOnCrashdumpDevice</a>
 
+
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
+
 
  
 

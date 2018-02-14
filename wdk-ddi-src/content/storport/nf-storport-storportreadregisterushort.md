@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortReadRegisterUshort
-title: StorPortReadRegisterUshort function
+title: StorPortReadRegisterUshort macro
 author: windows-driver-content
 description: The StorPortReadRegisterUshort routine reads a value from a specified register address.
 old-location: storage\storportreadregisterushort.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 11659e7d-db54-401c-a179-75cc5d411b55
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortReadRegisterUshort routine [Storage Devices], storprt_f477688d-54cb-4cb6-b713-0e70cfbf2139.xml, StorPortReadRegisterUshort, storage.storportreadregisterushort, storport/StorPortReadRegisterUshort
+ms.keywords: storage.storportreadregisterushort, StorPortReadRegisterUshort routine [Storage Devices], storprt_f477688d-54cb-4cb6-b713-0e70cfbf2139.xml, StorPortReadRegisterUshort, storport/StorPortReadRegisterUshort
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -62,16 +62,16 @@ STORPORT_API USHORT StorPortReadRegisterUshort(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Register`
 
-Pointer to the register where the data is to be read.
+
 
 
 ## Return Value
 
-<b>StorPortReadRegisterUshort</b> returns an unsigned character of data read from the indicated register address.
+None
 
 ## Remarks
 
@@ -88,7 +88,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterushort.md">
 
 <a href="..\storport\nf-storport-storportreadregisterbufferushort.md">StorPortReadRegisterBufferUshort</a>
 
+
+
 <a href="..\srb\nf-srb-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>
+
+
 
  
 

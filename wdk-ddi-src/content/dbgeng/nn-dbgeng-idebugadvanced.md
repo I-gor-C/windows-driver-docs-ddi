@@ -53,6 +53,8 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugAdvanced.GetThreadContext](nf-dbgeng-idebugadvanced-getthreadcontext.md) | The GetThreadContext method returns the current thread context. |
+| [dbgeng.IDebugAdvanced.SetThreadContext](nf-dbgeng-idebugadvanced-setthreadcontext.md) | The SetThreadContext method sets the current thread context. |
 
 ## Remarks
 
@@ -66,9 +68,13 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
 
  
 

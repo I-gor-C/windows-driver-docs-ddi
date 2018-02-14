@@ -79,6 +79,7 @@ Pointer to a <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_
 ## Return Value
 
 <i>HwVidGetPowerState</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,9 +129,15 @@ This function must not return the current power state of the device.
 
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
 
+
+
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a>
 
+
+
 <a href="..\video\nc-video-pvideo_hw_power_set.md">HwVidSetPowerState</a>
+
+
 
  
 

@@ -51,6 +51,7 @@ This <b>IOCTL_EHSTOR_BANDMGMT_ACTIVATE</b> request is sent to activate the secur
 
 ### Input Buffer
 The input buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an  <b>ACTIVATE_REVERT_PARAMETERS</b>  structure. <b>ACTIVATE_REVERT_PARAMETERS</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -67,7 +68,9 @@ The input buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an  <b>AC
 </tr>
 </table></span></div>
 
+
 Following <b>ACTIVATE_REVERT_PARAMETERS</b> in the system buffer is an <b>AUTH_KEY</b> structure. This holds the key data bytes for the authentication key. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -100,6 +103,7 @@ None.
 
 ### Status Block
 One of the following values can be returned in the <b>Status</b> field.
+
 <table>
 <tr>
 <th>Status Value</th>
@@ -159,9 +163,13 @@ enabled. A REG_DWORD value of 0 allows security activation on the storage device
 
 ## See Also
 
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_query_capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
+
+
+
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_revert.md">IOCTL_EHSTOR_BANDMGMT_REVERT</a>
 
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_query_capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
+
 
  
 

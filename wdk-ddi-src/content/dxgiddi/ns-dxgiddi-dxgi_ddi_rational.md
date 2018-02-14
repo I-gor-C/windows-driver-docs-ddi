@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3a1ebeb8-4a0e-4a1f-9039-13ca8e375e5e
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DXGI_DDI_RATIONAL structure [Display Devices], dxgiddi/DXGI_DDI_RATIONAL, UMDisplayDriver_Dx10param_Structs_ef68ce24-ab05-45db-9b37-02367bbba7f4.xml, display.dxgi_ddi_rational, DXGI_DDI_RATIONAL
+ms.keywords: UMDisplayDriver_Dx10param_Structs_ef68ce24-ab05-45db-9b37-02367bbba7f4.xml, DXGI_DDI_RATIONAL, DXGI_DDI_RATIONAL structure [Display Devices], display.dxgi_ddi_rational, dxgiddi/DXGI_DDI_RATIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,6 +79,8 @@ For a rational number with a finite fractional sequence, use a denominator of th
 ## See Also
 
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
+
+
 
  
 

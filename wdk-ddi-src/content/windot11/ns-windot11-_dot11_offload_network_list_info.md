@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 0FB1D72F-B183-408A-BB84-A9D54B6C276F
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "_DOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO structure [Network Drivers Starting with Windows Vista], DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/DOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_offload_network_list_info, windot11/PDOT11_OFFLOAD_NETWORK_LIST_INFO"
+ms.keywords: netvista.dot11_offload_network_list_info, *PDOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/DOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/PDOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], DOT11_OFFLOAD_NETWORK_LIST_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_OFFLOAD_NETWORK_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DOT11_OFFLOAD_NETWORK_LIST_INFO
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO"
+req.typenames: DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -74,6 +74,7 @@ Fast scan period, in seconds. When the NIC receives the offload list, it should 
 `Header`
 
 The type, revision, and size of the DOT11_OFFLOAD_NETWORK_LIST_INFO structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -104,6 +105,7 @@ Slow scan period, in seconds.   After the <b>FastScanPeriod</b> expires, the NIC
 `ulFlags`
 
 Bit flags to specify extra attributes of this NLO from the following table:
+
 <table>
 <tr>
 <th>Value</th>

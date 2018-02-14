@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 4f868e88-ef5c-4fad-be53-2b5116a6385b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, ks/KsFilterReleaseControl, KsFilterReleaseControl function [Streaming Media Devices], KsFilterReleaseControl, stream.ksfilterreleasecontrol
+ms.keywords: KsFilterReleaseControl function [Streaming Media Devices], ks/KsFilterReleaseControl, KsFilterReleaseControl, stream.ksfilterreleasecontrol, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,11 @@ For a description of the filter control mutex, see <a href="https://msdn.microso
 
 <a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
 
+
+
 <a href="..\ks\nf-ks-ksfilteracquirecontrol.md">KsFilterAcquireControl</a>
+
+
 
  
 

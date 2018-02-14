@@ -73,6 +73,7 @@ A pointer to a DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure tha
 ## Return Value
 
 DXGKDDI_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 returns the following values:
+
 <table>
 <tr>
 <th>Return code</th>

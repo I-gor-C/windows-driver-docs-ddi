@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 4aaef251-7387-4e42-a7ae-e08120fc95ff
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, wudfddi/IWDFRemoteTarget::Stop, umdf.iwdfremotetarget_stop, IWDFRemoteTarget interface, Stop method, Stop method, IWDFRemoteTarget, IWDFRemoteTarget::Stop, Stop method, IWDFRemoteTarget interface, Stop, wdf.iwdfremotetarget_stop
+ms.keywords: umdf.iwdfremotetarget_stop, Stop method, UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, IWDFRemoteTarget interface, Stop method, Stop, wudfddi/IWDFRemoteTarget::Stop, wdf.iwdfremotetarget_stop, IWDFRemoteTarget, Stop method, IWDFRemoteTarget interface, IWDFRemoteTarget::Stop
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -75,6 +75,22 @@ If your driver can detect recoverable errors on a remote I/O target, you might w
 
 For more information about <b>Stop</b>, and how to use remote I/O targets in UMDF-based drivers, see <a href="https://msdn.microsoft.com/479487b2-5ce5-4522-b195-58ee50d210b6">Controlling a General I/O Target's State in UMDF</a>.
 
+
+#### Examples
+
+The following code example stops a remote I/O target.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>RemoteTarget-&gt;Stop();</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,9 +103,13 @@ For more information about <b>Stop</b>, and how to use remote I/O targets in UMD
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560280">IWDFRemoteTarget::Start</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560280">IWDFRemoteTarget::Start</a>
+
 
  
 

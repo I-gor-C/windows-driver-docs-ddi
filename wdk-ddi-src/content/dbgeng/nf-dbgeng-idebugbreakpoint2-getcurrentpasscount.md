@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: ff9b9988-6790-48d1-8423-60c63b0a90cf
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint::GetCurrentPassCount, IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, IDebugBreakpoint2, debugger.getcurrentpasscount, GetCurrentPassCount method [Windows Debugging], GetCurrentPassCount, dbgeng/IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface
+ms.keywords: ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, GetCurrentPassCount, dbgeng/IDebugBreakpoint2::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2, debugger.getcurrentpasscount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method, IDebugBreakpoint, dbgeng/IDebugBreakpoint::GetCurrentPassCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,7 +81,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

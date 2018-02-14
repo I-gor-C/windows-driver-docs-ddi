@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 14cde545-e9bb-4b96-ba10-a63595e8a107
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: MEMORY_CACHING_TYPE, MmNonCachedUnordered, MEMORY_CACHING_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/MmNonCached, wdm/MmWriteCombined, wdm/MmHardwareCoherentCached, wdm/MmNonCachedUnordered, MmWriteCombined, MmHardwareCoherentCached, wdm/MmUSWCCached, wdm/MmMaximumCacheType, MmMaximumCacheType, sysenum_8e18fde8-a812-4d6a-a203-1c87d4d825cf.xml, _MEMORY_CACHING_TYPE, kernel.memory_caching_type, MmCached, wdm/MEMORY_CACHING_TYPE, MmNonCached, wdm/MmCached, MmUSWCCached
+ms.keywords: MmCached, wdm/MmNonCached, MmNonCached, wdm/MmUSWCCached, wdm/MmMaximumCacheType, wdm/MEMORY_CACHING_TYPE, sysenum_8e18fde8-a812-4d6a-a203-1c87d4d825cf.xml, wdm/MmCached, MmHardwareCoherentCached, MEMORY_CACHING_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/MmHardwareCoherentCached, MmUSWCCached, wdm/MmNonCachedUnordered, _MEMORY_CACHING_TYPE, MmWriteCombined, MmNonCachedUnordered, wdm/MmWriteCombined, MmMaximumCacheType, MEMORY_CACHING_TYPE, kernel.memory_caching_type
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Called at PASSIVE_LEVEL.
 topictype:
 -	APIRef
 -	kbSyntax
@@ -119,13 +119,23 @@ typedef enum _MEMORY_CACHING_TYPE {
 
         <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
+
+
 <a href="..\wdm\nf-wdm-mmfreecontiguousmemoryspecifycache.md">MmFreeContiguousMemorySpecifyCache</a>
 
-<a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
+
 
 <a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
 
+
+
+<a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
+
+
+
 <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>
+
+
 
  
 

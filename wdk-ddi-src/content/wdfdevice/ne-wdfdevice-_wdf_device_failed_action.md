@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 260fdda5-bc97-4522-96ca-1c29d41e8542
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceFailedNoRestart, WdfDeviceFailedUndefined, WDF_DEVICE_FAILED_ACTION enumeration, wdfdevice/WdfDeviceFailedAttemptRestart, wdfdevice/WdfDeviceFailedNoRestart, wdfdevice/WdfDeviceFailedUndefined, wdf.wdf_device_failed_action, WdfDeviceFailedAttemptRestart, DFDeviceObjectGeneralRef_f23e41aa-e37c-45d0-b83b-0ee86eb24aba.xml, kmdf.wdf_device_failed_action, _WDF_DEVICE_FAILED_ACTION, WDF_DEVICE_FAILED_ACTION, wdfdevice/WDF_DEVICE_FAILED_ACTION
+ms.keywords: wdfdevice/WdfDeviceFailedAttemptRestart, WDF_DEVICE_FAILED_ACTION, wdf.wdf_device_failed_action, WdfDeviceFailedAttemptRestart, kmdf.wdf_device_failed_action, _WDF_DEVICE_FAILED_ACTION, wdfdevice/WDF_DEVICE_FAILED_ACTION, WDF_DEVICE_FAILED_ACTION enumeration, wdfdevice/WdfDeviceFailedUndefined, WdfDeviceFailedNoRestart, WdfDeviceFailedUndefined, DFDeviceObjectGeneralRef_f23e41aa-e37c-45d0-b83b-0ee86eb24aba.xml, wdfdevice/WdfDeviceFailedNoRestart
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -96,6 +96,8 @@ For information about specifying <b>WdfDeviceFailedAttemptRestart</b> in a UMDF 
     ## See Also
 
         <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>
+
+
 
  
 

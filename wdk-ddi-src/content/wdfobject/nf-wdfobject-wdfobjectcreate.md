@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: fd56c529-c7ad-4fc4-8fcc-950a1e8e21e5
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFGenObjectRef_6d84af32-c9c6-4327-be42-cda437dc80a1.xml, kmdf.wdfobjectcreate, WdfObjectCreate method, wdf.wdfobjectcreate, WdfObjectCreate, wdfobject/WdfObjectCreate, PFN_WDFOBJECTCREATE
+ms.keywords: PFN_WDFOBJECTCREATE, wdf.wdfobjectcreate, kmdf.wdfobjectcreate, wdfobject/WdfObjectCreate, DFGenObjectRef_6d84af32-c9c6-4327-be42-cda437dc80a1.xml, WdfObjectCreate method, WdfObjectCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,29 @@ By default, the new general framework object's parent is the framework driver ob
 
 For more information about the <b>WdfObjectCreate</b> method, see <a href="https://msdn.microsoft.com/d3356d3f-8110-44dd-b4a2-36265f5a1714">Using General Framework Objects</a>.
 
+
+#### Examples
+
+The following code example initializes an WDF_OBJECT_ATTRIBUTES structure and creates a general framework object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_OBJECT_ATTRIBUTES  Attributes;
+WDFOBJECT  Object;
+
+WDF_OBJECT_ATTRIBUTES_INIT(&amp;Attributes);
+status = WdfObjectCreate(
+                         &amp;Attributes,
+                         &amp;Object
+                         );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,13 +121,21 @@ For more information about the <b>WdfObjectCreate</b> method, see <a href="https
 
 ## See Also
 
+<a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
+
+
+
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 
-<a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
+
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
 
  
 

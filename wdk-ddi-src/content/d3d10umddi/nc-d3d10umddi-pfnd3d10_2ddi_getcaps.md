@@ -40,7 +40,7 @@ apiname:
 -	GetCaps
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -73,6 +73,7 @@ HRESULT Pfnd3d102DdiGetcaps(
 ## Return Value
 
 <i>GetCaps(D3D10_2)</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,7 +118,11 @@ The data that is returned by the <i>GetCaps(D3D10_2)</i> function in the <b>pDat
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_2ddiarg_getcaps.md">D3D10_2DDIARG_GETCAPS</a>
 
+
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_2ddi_adapterfuncs.md">D3D10_2DDI_ADAPTERFUNCS</a>
+
+
 
  
 

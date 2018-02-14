@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 414950c6-b082-4ea9-bba4-f3d12b4d2a9e
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfrequest/WdfRequestWdmGetIrp, WdfRequestWdmGetIrp method, kmdf.wdfrequestwdmgetirp, wdf.wdfrequestwdmgetirp, WdfRequestWdmGetIrp, DFRequestObjectRef_2f8bba17-817e-4edb-98f2-bd56eb3e34ac.xml, PFN_WDFREQUESTWDMGETIRP
+ms.keywords: WdfRequestWdmGetIrp, wdf.wdfrequestwdmgetirp, PFN_WDFREQUESTWDMGETIRP, kmdf.wdfrequestwdmgetirp, DFRequestObjectRef_2f8bba17-817e-4edb-98f2-bd56eb3e34ac.xml, WdfRequestWdmGetIrp method, wdfrequest/WdfRequestWdmGetIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,37 @@ The driver must not access a request's IRP structure after <a href="https://docs
 
 For more information about <b>WdfRequestWdmGetIrp</b>, see <a href="https://msdn.microsoft.com/a686ea00-6987-480a-a4ce-892e1efbed87">Obtaining Information About an I/O Request</a>.
 
+
+#### Examples
+
+The following code example is part of an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a> callback function that obtains the WDM IRP that is associated with an I/O request and then calls <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> to obtain the next-lower driver's I/O stack location.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+MyEvtIoDeviceControl(
+    IN WDFQUEUE  Queue,
+    IN WDFREQUEST  Request,
+    IN size_t  OutputBufferLength,
+    IN size_t  InputBufferLength,
+    IN ULONG  IoControlCode
+    )
+{
+    PIRP  irp = NULL;
+    PIO_STACK_LOCATION  nextStack;
+...
+    irp = WdfRequestWdmGetIrp(Request);
+    nextStack = IoGetNextIrpStackLocation(irp);
+...
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,6 +122,8 @@ For more information about <b>WdfRequestWdmGetIrp</b>, see <a href="https://msdn
 ## See Also
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+
+
 
  
 

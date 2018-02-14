@@ -7,8 +7,8 @@ old-location: sensors\sensor_controller_config.htm
 old-project: sensors
 ms.assetid: EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: sensorscx/SENSOR_CONTROLLER_CONFIG, sensorscx/PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], sensors.sensor_controller_config, SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], PSENSOR_CONTROLLER_CONFIG, _SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
+ms.date: 2/8/2018
+ms.keywords: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, _SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], sensors.sensor_controller_config, PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], sensorscx/PSENSOR_CONTROLLER_CONFIG, sensorscx/SENSOR_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -135,9 +135,11 @@ This callback function handles IOCTLs outside of the class extension.<div class=
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
+
 
 
 
@@ -147,6 +149,7 @@ A reference to a sensor object.
 A handle to a framework request object that represents the I/O request.
 
 
+
 #### OutputBufferLength
 
 The length of the output buffer (in bytes).
@@ -154,9 +157,11 @@ The length of the output buffer (in bytes).
 
 
 
+
 #### InputBufferLength
 
 The length of the input buffer (in bytes).
+
 
 
 
@@ -186,9 +191,11 @@ This callback function returns the properties of a given data field associated w
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
+
 
 
 
@@ -198,9 +205,11 @@ A reference to a sensor object.
 A reference to a data field.
 
 
+
 #### pProperties
 
 A list of properties associated with the pDataField.
+
 
 
 #### pSize
@@ -218,9 +227,11 @@ This callback function returns the data interval for a specified sensor.
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
+
 
 
 
@@ -241,6 +252,7 @@ This callback function returns the thresholds that are associated with a sensor.
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
@@ -248,9 +260,11 @@ A reference to a sensor object.
 
 
 
+
 #### pThresholds
 
 A list of threshold properties and their values associated with the sensor.
+
 
 
 #### pSize
@@ -269,6 +283,7 @@ This callback function returns the properties for a given sensor.
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
@@ -276,9 +291,11 @@ A reference to a sensor object.
 
 
 
+
 #### pProperties
 
 A list of properties and their values for the specified sensor.
+
 
 
 #### pSize
@@ -297,14 +314,17 @@ This callback function returns a list of data fields supported by the specified 
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
 
 
+
 #### pDataFields
 
 A list of data fields that are supported by the given sensor.
+
 
 
 #### pSize
@@ -324,9 +344,11 @@ typedef EVT_SENSOR_DRIVER_SET_BATCH_LATENCY *PFN_SENSOR_DRIVER_SET_BATCH_LATENCY
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
+
 
 
 #### BatchLatencyMs
@@ -344,9 +366,11 @@ This callback function sets the data interval for a specified sensor.
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
+
 
 
 
@@ -366,9 +390,11 @@ This callback function stops the sensor.
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
+
 
 
 
@@ -384,6 +410,7 @@ This callback function starts the sensor based on the default properties specifi
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_START_SENSOR(
     _In_ SENSOROBJECT Sensor);</pre>
+
 
 
 
@@ -413,6 +440,7 @@ This callback function stops the sensor.
 
 
 
+
 #### Sensor
 
 A reference to a sensor object.
@@ -431,6 +459,7 @@ The allocated size of this structure (in bytes).
 
 ## Remarks
 This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
+
 <ul>
 <li>EvtSensorStart</li>
 <li>EvtSensorStop</li>
@@ -441,7 +470,8 @@ This structure is given to the class extension using the <a href="..\sensorscx\n
 <li>EvtSensorGetDataThresholds</li>
 <li>EvtSensorSetDataThresholds</li>
 <li>EvtSensorGetProperties</li>
-</ul>Each function returns STATUS_SUCCESS when completed successfully.
+</ul>
+Each function returns STATUS_SUCCESS when completed successfully.
 
 <div class="alert"><b>Note</b>  The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.
 

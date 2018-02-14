@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>pfnUpdateOverlayCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,7 +123,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
@@ -138,7 +140,11 @@ This function might also return other HRESULT values.
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_updateoverlay.md">D3DDDICB_UPDATEOVERLAY</a>
+
+
 
  
 

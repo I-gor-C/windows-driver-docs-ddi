@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 141830de-e113-4f42-91f8-8f1cdbf3e32c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: condis_call_manager_ref_3d365bcf-91cc-4724-a4af-77e9bea6fe0c.xml, netvista.ndiscmdeactivatevc, NdisCmDeactivateVc function [Network Drivers Starting with Windows Vista], NdisCmDeactivateVc, ndis/NdisCmDeactivateVc
+ms.keywords: NdisCmDeactivateVc function [Network Drivers Starting with Windows Vista], NdisCmDeactivateVc, condis_call_manager_ref_3d365bcf-91cc-4724-a4af-77e9bea6fe0c.xml, netvista.ndiscmdeactivatevc, ndis/NdisCmDeactivateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisCmDeactivateVc
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -95,6 +95,7 @@ The
     <i>NdisVcHandle</i> passed to 
     <b>NdisCmDeactivateVc</b> remains valid after VC deactivation is completed. The deactivation of any VC
     allows its creator to reinitialize the VC for reuse:
+
 <ul>
 <li>
 Following VC deactivation and the closing of the call, a client can reuse a VC that it originally
@@ -109,7 +110,8 @@ Following VC deactivation and the closing of the call, a CM can reuse a VC that 
       NdisCmDispatchIncomingCall</a>.
 
 </li>
-</ul>The creator of a particular VC that will not be reused calls 
+</ul>
+The creator of a particular VC that will not be reused calls 
     <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a> to destroy that VC.
 
 Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
@@ -129,22 +131,38 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+
+
+
+<a href="..\ndis\nc-ndis-protocol_cm_close_call.md">ProtocolCmCloseCall</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+
+
 
 <a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
    ProtocolCmDeactivateVcComplete</a>
 
+
+
 <a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
 
-<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_close_call.md">ProtocolCmCloseCall</a>
-
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
  
 

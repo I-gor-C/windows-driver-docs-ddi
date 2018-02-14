@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 10d77823-fcaa-43c3-b55e-74f2da97ecf0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetCurrentProcessorNumber routine [Storage Devices], storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml, storport/StorPortGetCurrentProcessorNumber, storage.storportgetcurrentprocessornumber, StorPortGetCurrentProcessorNumber
+ms.keywords: storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml, StorPortGetCurrentProcessorNumber routine [Storage Devices], storage.storportgetcurrentprocessornumber, storport/StorPortGetCurrentProcessorNumber, StorPortGetCurrentProcessorNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a processor number structure that holds the return data.
 ## Return Value
 
 The <b>StorPortGetCurrentProcessorNumber</b> routine returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>

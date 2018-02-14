@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 13F8A151-F28A-4A0F-B143-F3DB2197A36B
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: RequestCancel, print.iprintjob_requestcancel, printerextension/IPrintJob::RequestCancel, RequestCancel method [Print Devices], IPrintJob interface, IPrintJob::RequestCancel, IPrintJob, RequestCancel method [Print Devices], IPrintJob interface [Print Devices], RequestCancel method
+ms.keywords: RequestCancel method [Print Devices], RequestCancel, IPrintJob interface [Print Devices], RequestCancel method, IPrintJob, print.iprintjob_requestcancel, printerextension/IPrintJob::RequestCancel, IPrintJob::RequestCancel, RequestCancel method [Print Devices], IPrintJob interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -79,6 +79,8 @@ The <b>RequestCancel</b> method does not wait for the cancellation of a print jo
 ## See Also
 
 <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+
+
 
  
 

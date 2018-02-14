@@ -1,6 +1,6 @@
 ---
 UID: NF:wdm.RtlUshortByteSwap
-title: RtlUshortByteSwap function
+title: RtlUshortByteSwap macro
 author: windows-driver-content
 description: The RtlUshortByteSwap routine reverses the ordering of the two bytes in a 16-bit unsigned integer value.
 old-location: kernel\rtlushortbyteswap.htm
@@ -8,10 +8,10 @@ old-project: kernel
 ms.assetid: 83f6a599-0b35-4a02-b20f-80abcc6eae4f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlUshortByteSwap routine [Kernel-Mode Driver Architecture], RtlUshortByteSwap, wdm/RtlUshortByteSwap, kernel.rtlushortbyteswap, k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml
+ms.keywords: k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml, RtlUshortByteSwap, wdm/RtlUshortByteSwap, RtlUshortByteSwap routine [Kernel-Mode Driver Architecture], kernel.rtlushortbyteswap
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
@@ -60,12 +60,12 @@ USHORT RtlUshortByteSwap(
 
 `Source`
 
-A USHORT value to convert to a byte-swapped version.
+
 
 
 ## Return Value
 
-The byte-swapped version of the <i>Source</i> input parameter value.
+None
 
 ## Remarks
 
@@ -91,7 +91,11 @@ To reverse the ordering of bytes in a ULONG value, use the <a href="..\wdm\nf-wd
 
 <a href="..\wdm\nf-wdm-rtlulonglongbyteswap.md">RtlUlonglongByteSwap</a>
 
+
+
 <a href="..\wdm\nf-wdm-rtlulongbyteswap.md">RtlUlongByteSwap</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: DF9CA4A8-4B2A-4DED-9514-422AC5E0940D
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: poscx/PosCxPutPendingEventMemory, PosCxPutPendingEventMemory function, PosCxPutPendingEventMemory, pos.poscxputpendingeventmemory
+ms.keywords: pos.poscxputpendingeventmemory, PosCxPutPendingEventMemory, poscx/PosCxPutPendingEventMemory, PosCxPutPendingEventMemory function
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ The event attributes.
 ## Return Value
 
 Possible return values are:
+
 <table>
 <tr>
 <td><b>STATUS_SUCCESS</b></td>
@@ -118,6 +119,8 @@ Possible return values are:
 ## See Also
 
 <a href="..\poscx\ne-poscx-_pos_cx_event_attributes.md">POS_CX_EVENT_ATTRIBUTES</a>
+
+
 
  
 

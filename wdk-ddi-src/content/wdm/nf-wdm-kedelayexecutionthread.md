@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: fe8dc704-3baf-4955-85fe-bba19181dbbf
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], wdm/KeDelayExecutionThread, kernel.kedelayexecutionthread, KeDelayExecutionThread, k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml
+ms.keywords: wdm/KeDelayExecutionThread, k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml, KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], KeDelayExecutionThread, kernel.kedelayexecutionthread
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ Specifies the absolute or relative time, in units of 100 nanoseconds, for which 
 ## Return Value
 
 <b>KeDelayExecutionThread</b> returns one of the following values that describes how the delay was completed:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,7 +115,8 @@ A user-mode APC was delivered before the specified <i>Interval </i>expired.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Note that the NT_SUCCESS macro recognizes all of these status values as "success" values.
 
@@ -150,6 +152,8 @@ Expiration times are measured relative to the system clock, and the accuracy wit
 ## See Also
 
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
+
+
 
  
 

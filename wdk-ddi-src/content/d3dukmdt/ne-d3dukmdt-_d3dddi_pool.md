@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: b3f34183-7595-47b6-a2f1-c32650734a04
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3D_other_Structs_859cbea4-6000-4906-a3f4-3ff6ea4caa7b.xml, D3DDDIPOOL_NONLOCALVIDMEM, _D3DDDI_POOL, D3DDDI_POOL, D3DDDIPOOL_LOCALVIDMEM, d3dukmdt/D3DDDIPOOL_NONLOCALVIDMEM, d3dukmdt/D3DDDIPOOL_STAGINGMEM, display.d3dddi_pool, d3dukmdt/D3DDDIPOOL_SYSTEMMEM, D3DDDI_POOL enumeration [Display Devices], D3DDDIPOOL_VIDEOMEMORY, D3DDDIPOOL_SYSTEMMEM, d3dukmdt/D3DDDI_POOL, D3DDDIPOOL_STAGINGMEM, d3dukmdt/D3DDDIPOOL_VIDEOMEMORY, d3dukmdt/D3DDDIPOOL_LOCALVIDMEM
+ms.keywords: d3dukmdt/D3DDDIPOOL_SYSTEMMEM, D3DDDIPOOL_STAGINGMEM, d3dukmdt/D3DDDI_POOL, d3dukmdt/D3DDDIPOOL_STAGINGMEM, D3DDDIPOOL_LOCALVIDMEM, D3DDDI_POOL enumeration [Display Devices], d3dukmdt/D3DDDIPOOL_VIDEOMEMORY, _D3DDDI_POOL, d3dukmdt/D3DDDIPOOL_NONLOCALVIDMEM, display.d3dddi_pool, D3DDDIPOOL_VIDEOMEMORY, D3DDDIPOOL_SYSTEMMEM, d3dukmdt/D3DDDIPOOL_LOCALVIDMEM, D3D_other_Structs_859cbea4-6000-4906-a3f4-3ff6ea4caa7b.xml, D3DDDIPOOL_NONLOCALVIDMEM, D3DDDI_POOL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -106,6 +106,8 @@ Note that the D3DDDIPOOL_LOCALVIDMEM and D3DDDIPOOL_NONLOCALVIDMEM values are pr
     ## See Also
 
         <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
+
+
 
  
 

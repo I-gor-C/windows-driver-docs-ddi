@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: b77de459-b5ac-4752-89eb-f24fdde36134
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: ComOther_936851e7-6a8b-4b42-b339-9c8aa096d684.xml, IDebugSymbolGroup2 interface [Windows Debugging], AddSymbol method, IDebugSymbolGroup2, AddSymbol, IDebugSymbolGroup interface [Windows Debugging], AddSymbol method, AddSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::AddSymbol, AddSymbol method [Windows Debugging], debugger.addsymbol, IDebugSymbolGroup2::AddSymbol, IDebugSymbolGroup::AddSymbol, AddSymbol method [Windows Debugging], IDebugSymbolGroup interface, dbgeng/IDebugSymbolGroup::AddSymbol
+ms.keywords: ComOther_936851e7-6a8b-4b42-b339-9c8aa096d684.xml, IDebugSymbolGroup, debugger.addsymbol, AddSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, AddSymbol, IDebugSymbolGroup2::AddSymbol, IDebugSymbolGroup2, IDebugSymbolGroup::AddSymbol, AddSymbol method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup interface [Windows Debugging], AddSymbol method, dbgeng/IDebugSymbolGroup::AddSymbol, AddSymbol method [Windows Debugging], dbgeng/IDebugSymbolGroup2::AddSymbol, IDebugSymbolGroup2 interface [Windows Debugging], AddSymbol method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -88,7 +88,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -109,15 +110,25 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554510">RemoveSymbolByIndex</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554518">RemoveSymbolByName</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554518">RemoveSymbolByName</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
+
 
  
 

@@ -84,6 +84,8 @@ The HID class driver sets the <b>Status</b> field of <b>Irp-&gt;IoStatus</b> to 
 
 <a href="..\hidclass\ni-hidclass-ioctl_hid_disable_secure_read.md">IOCTL_HID_DISABLE_SECURE_READ</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b10c5a4b-fb43-4880-9641-ff2dcf0e5cb3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisallocatenetbuffer, ndis/NdisAllocateNetBuffer, ndis_netbuf_functions_ref_2c90427d-c174-48fa-b588-d48e5c099331.xml, NdisAllocateNetBuffer, NdisAllocateNetBuffer function [Network Drivers Starting with Windows Vista]
+ms.keywords: ndis/NdisAllocateNetBuffer, ndis_netbuf_functions_ref_2c90427d-c174-48fa-b588-d48e5c099331.xml, NdisAllocateNetBuffer function [Network Drivers Starting with Windows Vista], netvista.ndisallocatenetbuffer, NdisAllocateNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisAllocateNetBuffer
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -103,10 +103,13 @@ Call
     <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a> to free a 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure that was allocated from a
     <b>NET_BUFFER</b> structure pool.
+
 <div class="alert"><b>Note</b>  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> and 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures must be allocated
     from an NDIS buffer pool. A driver must not allocate and initialize a <b>NET_BUFFER</b> or <b>NET_BUFFER_LIST</b>
-    structure from its private memory pool or the stack.</div><div> </div>The preallocated <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
+    structure from its private memory pool or the stack.</div>
+<div> </div>
+The preallocated <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
     <b>NET_BUFFER</b>, but the 
     <i>DataOffset</i>, 
     <i>DataLength</i>, 
@@ -123,6 +126,7 @@ For example, if the original MDL chain contains <i>X</i>
 <i>DataOffset</i>. If 
     <i>CurrentMdl</i> starts with the third MDL (<i>M'</i>) in the new MDL chain, 
     <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -152,11 +156,19 @@ NET_BUFFER_CURRENT_MDL_OFFSET(_NB) = Z';</pre>
 
 <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: E5FE5EDB-D11D-4EF7-9CEA-CF059398A063
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtllonglongmult, RtlLongLongMult, ntintsafe/RtlLongLongMult, RtlLongLongMult function [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.rtllonglongmult, RtlLongLongMult function [Kernel-Mode Driver Architecture], RtlLongLongMult, ntintsafe/RtlLongLongMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ None
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlIntPtrMult
 </li>

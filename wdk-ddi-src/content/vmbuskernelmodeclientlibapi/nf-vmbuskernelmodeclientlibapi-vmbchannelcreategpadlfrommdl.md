@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6C63E250-1A11-45E8-B535-263806DA4A33
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelCreateGpadlFromMdl, netvista.vmbchannelcreategpadlfrommdl, VmbChannelCreateGpadlFromMdl, VmbChannelCreateGpadlFromMdl function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_GPADL_READ_ONLY
+ms.keywords: netvista.vmbchannelcreategpadlfrommdl, VmbChannelCreateGpadlFromMdl function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_GPADL_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelCreateGpadlFromMdl, VmbChannelCreateGpadlFromMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelCreateGpadlFromMdl
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -74,6 +74,7 @@ A handle for a channel.
 `Flags`
 
 Flags. The possible values are the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -135,9 +136,13 @@ the GPADL description to the opposite endpoint and received confirmation.
 
 ## See Also
 
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelmapgpadl.md">VmbChannelMapGpadl</a>
+
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldeletegpadl.md">VmbChannelDeleteGpadl</a>
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelmapgpadl.md">VmbChannelMapGpadl</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 49584600-e470-4be8-9111-3e890a9fedfd
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDevStateIsNP, wdfdevice/WdfDevStateIsNP, wdf.wdfdevstateisnp, PFN_WDFDEVSTATEISNP, kmdf.wdfdevstateisnp, WdfDevStateIsNP method, DFDeviceObjectGeneralRef_ed6dd7ac-b5e3-49b2-a4d8-08e4e9377321.xml
+ms.keywords: wdf.wdfdevstateisnp, wdfdevice/WdfDevStateIsNP, PFN_WDFDEVSTATEISNP, DFDeviceObjectGeneralRef_ed6dd7ac-b5e3-49b2-a4d8-08e4e9377321.xml, kmdf.wdfdevstateisnp, WdfDevStateIsNP, WdfDevStateIsNP method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,25 @@ If the calling driver is currently nonpageable, the <b>WdfDevStateIsNP</b> metho
 
 ## Remarks
 
-To obtain the current state of the framework's power state machine, a driver can call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a> from within a PnP or power callback function. To obtain the current state of the framework's power policy state machine, a driver can call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> from within a power policy callback function. After the driver has called <b>WdfDeviceGetDevicePowerState</b> or <b>WdfDeviceGetDevicePowerPolicyState</b>, it can call <b>WdfDevStateIsNP</b> to determine if the returned state represents a pageable or nonpageable state. If the framework's state machine is in a nonpageable state, the driver is not pageable and must not perform any operations that might cause the operating system to access the paging file. Such operations include accessing files, the registry, or paged pool.
+To obtain the current state of the framework's power state machine, a driver can call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a> from within a PnP or power callback function. To obtain the current state of the framework's power policy state machine, a driver can call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> from within a power policy callback function. After the driver has called <b>WdfDeviceGetDevicePowerState</b> or <b>WdfDeviceGetDevicePowerPolicyState</b>, it can call <b>WdfDevStateIsNP</b> to determine if the returned state represents a pageable or nonpageable state. If the framework's state machine is in a nonpageable state, the driver is not pageable and must not perform any operations that might cause the operating system to access the paging file. Such operations include accessing files, the registry, or paged pool. 
+
+
+#### Examples
+
+The following code example sets the <b>nonpageable</b> value to <b>TRUE</b> if the framework's power state machine is currently in a nonpageable state.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>BOOLEAN nonpageable;
+
+nonpageable = WdfDevStateIsNP(WdfDeviceGetDevicePowerState(device));</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,7 +108,11 @@ To obtain the current state of the framework's power state machine, a driver can
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowernotpageable.md">WdfDeviceInitSetPowerNotPageable</a>
 
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowerpageable.md">WdfDeviceInitSetPowerPageable</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: d8d14818-4b84-4c65-a29e-2cd97e8bfbe9
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: srb/ScsiPortGetDeviceBase, ScsiPortGetDeviceBase routine [Storage Devices], scsiprt_2924bfb1-e5a0-4533-afd7-65d2d7962b46.xml, storage.scsiportgetdevicebase, ScsiPortGetDeviceBase
+ms.keywords: ScsiPortGetDeviceBase, storage.scsiportgetdevicebase, srb/ScsiPortGetDeviceBase, scsiprt_2924bfb1-e5a0-4533-afd7-65d2d7962b46.xml, ScsiPortGetDeviceBase routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -107,6 +107,7 @@ Every miniport driver must use system-space logical range addresses, mapped by <
 <b>ScsiPortGetDeviceBase</b> can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver  routines will result in system failure or in incorrect operation for the caller.
 
 Follow these guidelines for calling <b>ScsiPortGetDeviceBase</b>:
+
 <ul>
 <li>
 If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default bus-relative access ranges or values returned by <b>ScsiPortGetBusData</b>, it should call <a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a> before attempting to call <b>ScsiPortGetDeviceBase</b>.
@@ -116,9 +117,11 @@ If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default b
 If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the miniport driver supports, it must call <b>ScsiPortFreeDeviceBase</b> to release the mapping(s) it set up to communicate with that HBA.
 
 </li>
-</ul>The logical address returned by <b>ScsiPortGetDeviceBase</b> should be used for all subsequent references made to the hardware but should <i>not</i> be added to any <b>AccessRanges</b> specification in the PORT_CONFIGURATION_INFORMATION. Miniport driver writers should make no assumptions about how many bits are used in the logical base address returned by <b>ScsiPortGetDeviceBase</b>.
+</ul>
+The logical address returned by <b>ScsiPortGetDeviceBase</b> should be used for all subsequent references made to the hardware but should <i>not</i> be added to any <b>AccessRanges</b> specification in the PORT_CONFIGURATION_INFORMATION. Miniport driver writers should make no assumptions about how many bits are used in the logical base address returned by <b>ScsiPortGetDeviceBase</b>.
 
 <b>ScsiPortGetDeviceBase</b> uses <b>SCSI_PHYSICAL_ADDRESS</b> to represent bus-relative addresses.
+
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
 <th>C++</th>
@@ -129,8 +132,11 @@ If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the
 </pre>
 </td>
 </tr>
-</table></span></div>The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address. 
-<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
+</table></span></div>
+The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that SCSI miniport drivers use to represent either a physical addresses or a bus-relative address. 
+
+<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -141,17 +147,29 @@ If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
 <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 
-<a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
+
+
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 
+
+
 <a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
 
+
+
+<a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
+
+
+
 <a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
+
+
 
  
 

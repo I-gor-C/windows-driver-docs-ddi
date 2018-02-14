@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3223a1bb-ab6c-45d7-9f9a-367a3aa7d465
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsMapModuleName function [Streaming Media Devices], KsMapModuleName, ks/KsMapModuleName, ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, stream.ksmapmodulename
+ms.keywords: stream.ksmapmodulename, ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, KsMapModuleName function [Streaming Media Devices], ks/KsMapModuleName, KsMapModuleName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,6 +98,8 @@ Pointer to a location into which the function returns the value type of the spec
 ## See Also
 
 <a href="..\ks\nf-ks-ksgetimagenameandresourceid.md">KsGetImageNameAndResourceId</a>
+
+
 
  
 

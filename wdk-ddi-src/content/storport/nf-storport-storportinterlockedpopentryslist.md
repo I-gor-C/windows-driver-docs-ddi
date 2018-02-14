@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9DA0A057-1472-4B42-9149-A961F7D84B2E
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortInterlockedPopEntrySList, StorPortInterlockedPopEntrySList, StorPortInterlockedPopEntrySList routine [Storage Devices], storage.storportinterlockedpopentryslist
+ms.keywords: storage.storportinterlockedpopentryslist, StorPortInterlockedPopEntrySList, StorPortInterlockedPopEntrySList routine [Storage Devices], storport/StorPortInterlockedPopEntrySList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,7 @@ A pointer to a list entry pointer. The value returned is a pointer to  the item 
 ## Return Value
 
 <b>StorPortInterlockedPopEntrySList</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -137,11 +138,19 @@ The <b>StorPortInterlockedPopEntrySList</b> will also return <b>STATUS_SUCCESS</
 
 <a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
 
+
+
+<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
+
+
+
 <a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
+
+
 
 <a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
-<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
+
 
  
 

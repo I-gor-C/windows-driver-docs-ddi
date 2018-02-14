@@ -40,7 +40,7 @@ apiname:
 -	AgpSetRate
 product: Windows
 targetos: Windows
-req.typenames: "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -69,6 +69,7 @@ Pointer to the miniport driver's device extension.
 `AgpRate`
 
 Specifies the transfer rate to be set. This value can be one of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,6 +141,8 @@ The <b>AgpSetRate</b> function can be used to change an AGP chipset's data trans
 ## See Also
 
 <a href="..\video\ns-video-_video_port_agp_interface_2.md">VIDEO_PORT_AGP_INTERFACE_2</a>
+
+
 
  
 

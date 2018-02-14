@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 45CCCD97-94FD-457B-8315-06DC701B22A2
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: serports.sercx2customreceivetransactioncleanupcomplete, SerCx2CustomReceiveTransactionCleanupComplete, SerCx2CustomReceiveTransactionCleanupComplete method [Serial Ports], 2/SerCx2CustomReceiveTransactionCleanupComplete
+ms.keywords: SerCx2CustomReceiveTransactionCleanupComplete method [Serial Ports], SerCx2CustomReceiveTransactionCleanupComplete, serports.sercx2customreceivetransactioncleanupcomplete, 2/SerCx2CustomReceiveTransactionCleanupComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,11 +86,17 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
-
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_cleanup.md">EvtSerCx2CustomReceiveTransactionCleanup</a>
 
+
+
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
+
+
 
  
 

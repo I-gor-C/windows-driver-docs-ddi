@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 63cfb3f2-5240-4cb6-9c23-8cdb363f62a8
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.setoffsetexpression, IDebugBreakpoint::SetOffsetExpression, dbgeng/IDebugBreakpoint2::SetOffsetExpression, IDebugBreakpoint2, ComOther_d34036ae-b160-4b24-86d0-ebd2bd8408ea.xml, SetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], SetOffsetExpression method, SetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, SetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2::SetOffsetExpression, IDebugBreakpoint interface [Windows Debugging], SetOffsetExpression method, dbgeng/IDebugBreakpoint::SetOffsetExpression, SetOffsetExpression
+ms.keywords: SetOffsetExpression, IDebugBreakpoint interface [Windows Debugging], SetOffsetExpression method, IDebugBreakpoint2, dbgeng/IDebugBreakpoint::SetOffsetExpression, IDebugBreakpoint2::SetOffsetExpression, IDebugBreakpoint, ComOther_d34036ae-b160-4b24-86d0-ebd2bd8408ea.xml, SetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, debugger.setoffsetexpression, SetOffsetExpression method [Windows Debugging], SetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetOffsetExpression, IDebugBreakpoint2 interface [Windows Debugging], SetOffsetExpression method, IDebugBreakpoint::SetOffsetExpression
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,7 +81,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

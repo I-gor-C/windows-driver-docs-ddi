@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c4261a83-3c91-4bc1-93bf-d2d04c324e94
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.zwqueryeafile, ZwQueryEaFile routine [Kernel-Mode Driver Architecture], ZwQueryEaFile, ntifs/ZwQueryEaFile
+ms.keywords: ZwQueryEaFile, kernel.zwqueryeafile, ntifs/ZwQueryEaFile, ZwQueryEaFile routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -122,6 +122,7 @@ Set to <b>TRUE</b> if
 <b>ZwQueryEaFile</b> returns 
       <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value such as 
       the following:
+
 <table>
 <tr>
 <th>Return value</th>
@@ -179,9 +180,15 @@ The <i>EaList</i> parameter is not formatted correctly. This is an error code.
 
 <a href="..\ntifs\nf-ntifs-zwseteafile.md">ZwSetEaFile</a>
 
+
+
 <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
 
+
+
 <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md">FILE_GET_EA_INFORMATION</a>
+
+
 
  
 

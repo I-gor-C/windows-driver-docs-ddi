@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: d845777c-1bc9-4ab3-9bfc-211f2231971e
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: CreateThread method [Windows Debugging], IDebugEventCallbacksWide interface, dbgeng/IDebugEventCallbacksWide::CreateThread, CreateThread method [Windows Debugging], IDebugEventCallbacksWide interface [Windows Debugging], CreateThread method, CreateThread, debugger.idebugeventcallbackswide_createthread, IDebugEventCallbacksWide::CreateThread, IDebugEventCallbacksWide
+ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging], CreateThread method, CreateThread method [Windows Debugging], debugger.idebugeventcallbackswide_createthread, dbgeng/IDebugEventCallbacksWide::CreateThread, CreateThread, IDebugEventCallbacksWide::CreateThread, CreateThread method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method

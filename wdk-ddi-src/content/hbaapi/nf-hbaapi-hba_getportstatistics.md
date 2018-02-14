@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 282eccaf-7cb9-4675-9cc3-9261ed1322ca
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: fibreHBA_rtns_cd33c55b-4c61-4353-ba28-8497e09b49dd.xml, HBA_GetPortStatistics, storage.hba_getportstatistics, hbaapi/HBA_GetPortStatistics, HBA_GetPortStatistics routine [Storage Devices]
+ms.keywords: storage.hba_getportstatistics, hbaapi/HBA_GetPortStatistics, HBA_GetPortStatistics routine [Storage Devices], fibreHBA_rtns_cd33c55b-4c61-4353-ba28-8497e09b49dd.xml, HBA_GetPortStatistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,6 +75,7 @@ TBD
 ## Return Value
 
 The <b>HBA_GetPortStatistics</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetPortStatistics</b> returns one of the following qualifiers.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,9 +118,15 @@ Returned if an unspecified error occurred that prevented the retrieval of the st
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+
+
 <a href="..\hbaapi\ns-hbaapi-hba_portstatistics.md">HBA_PortStatistics</a>
 
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+
 
  
 

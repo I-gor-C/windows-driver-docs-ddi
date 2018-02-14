@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pofxregistercoredevice, PoFxRegisterCoreDevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], pepfx/PoFxRegisterCoreDevice
+ms.keywords: kernel.pofxregistercoredevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	PoFxRegisterCoreDevice
 product: Windows
 targetos: Windows
-req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
+req.typenames: "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
 
@@ -76,6 +76,7 @@ A pointer to a location to which the routine writes a POHANDLE value. This handl
 ## Return Value
 
 <b>PoFxRegisterCoreDevice</b> returns STATUS_SUCCESS if the call successfully registers the PEP. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return value</th>
@@ -126,7 +127,11 @@ The <b>PoFxRegisterCoreDevice</b> routine should be called at IRQL = PASSIVE_LEV
 
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
+
+
 <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
+
+
 
  
 

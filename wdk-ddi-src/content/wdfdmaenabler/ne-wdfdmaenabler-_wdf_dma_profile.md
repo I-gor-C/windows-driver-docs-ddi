@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a2672bca-5c2e-423d-9ba0-fad610170e88
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDmaProfilePacket64, WdfDmaProfileSystem, WdfDmaProfileScatterGatherDuplex, wdfdmaenabler/WdfDmaProfilePacket, wdfdmaenabler/WDF_DMA_PROFILE, wdfdmaenabler/WdfDmaProfilePacket64, wdfdmaenabler/WdfDmaProfileSystem, _WDF_DMA_PROFILE, wdfdmaenabler/WdfDmaProfileScatterGather, wdfdmaenabler/WdfDmaProfileInvalid, wdfdmaenabler/WdfDmaProfileSystemDuplex, WDF_DMA_PROFILE, kmdf.wdf_dma_profile, wdfdmaenabler/WdfDmaProfileScatterGatherDuplex, WdfDmaProfileSystemDuplex, WdfDmaProfilePacket, wdfdmaenabler/WdfDmaProfileScatterGather64Duplex, wdf.wdf_dma_profile, DFDmaObjectRef_24cd95b0-ec51-4af4-a507-04f9a91276cf.xml, WdfDmaProfileScatterGather64, WdfDmaProfileScatterGather, wdfdmaenabler/WdfDmaProfileScatterGather64, WdfDmaProfileScatterGather64Duplex, WDF_DMA_PROFILE enumeration, WdfDmaProfileInvalid
+ms.keywords: wdfdmaenabler/WdfDmaProfilePacket64, kmdf.wdf_dma_profile, wdfdmaenabler/WdfDmaProfileInvalid, _WDF_DMA_PROFILE, WdfDmaProfileScatterGather64, WdfDmaProfileSystemDuplex, wdfdmaenabler/WdfDmaProfilePacket, WdfDmaProfileScatterGather, WdfDmaProfileInvalid, WDF_DMA_PROFILE enumeration, wdfdmaenabler/WdfDmaProfileScatterGather64Duplex, wdfdmaenabler/WdfDmaProfileSystemDuplex, wdf.wdf_dma_profile, wdfdmaenabler/WdfDmaProfileScatterGather64, WDF_DMA_PROFILE, wdfdmaenabler/WDF_DMA_PROFILE, wdfdmaenabler/WdfDmaProfileScatterGatherDuplex, WdfDmaProfileScatterGather64Duplex, WdfDmaProfilePacket64, wdfdmaenabler/WdfDmaProfileSystem, WdfDmaProfilePacket, WdfDmaProfileScatterGatherDuplex, wdfdmaenabler/WdfDmaProfileScatterGather, WdfDmaProfileSystem, DFDmaObjectRef_24cd95b0-ec51-4af4-a507-04f9a91276cf.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -131,6 +131,8 @@ Kernel-Mode Driver Framework (KMDF) miniport drivers such as NDIS miniport drive
     ## See Also
 
         <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
+
+
 
  
 

@@ -80,6 +80,8 @@ The <b>Information</b> field is set to the size, in bytes, of the returned data.
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
 
+
+
  
 
  

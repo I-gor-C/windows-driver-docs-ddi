@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c17760c4-6f75-41e8-84a5-f13e26735af5
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], RILPOSITIONINFOUMTS, *LPRILPOSITIONINFOUMTS, rilapitypes/RILPOSITIONINFOUMTS, netvista.rilpositioninfoumts
+ms.keywords: netvista.rilpositioninfoumts, RILPOSITIONINFOUMTS, *LPRILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPOSITIONINFOUMTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -130,6 +130,8 @@ UTRA Absolute Radio Frequency Channel Number for serving cell (0...16383)
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+
+
 
  
 

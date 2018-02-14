@@ -79,6 +79,7 @@ The size, in bytes, of the address buffer for input, and the size, in bytes, of 
 
 The 
      <i>NdkGetSharedEndpointLocalAddress</i> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -134,6 +135,8 @@ An error occurred.
 ## See Also
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
+
+
 
  
 

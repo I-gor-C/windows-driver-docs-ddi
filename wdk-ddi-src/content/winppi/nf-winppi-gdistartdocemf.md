@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: aca4534a-871e-4d86-b329-cb4f84611a29
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.gdistartdocemf, winppi/GdiStartDocEMF, GdiStartDocEMF function [Print Devices], gdifnc_11790088-e5fa-4817-a7d7-79c654814062.xml, GdiStartDocEMF
+ms.keywords: GdiStartDocEMF function [Print Devices], gdifnc_11790088-e5fa-4817-a7d7-79c654814062.xml, GdiStartDocEMF, print.gdistartdocemf, winppi/GdiStartDocEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -42,7 +42,7 @@ apiname:
 -	GdiStartDocEMF
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -97,6 +97,8 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## See Also
 
 <a href="..\winppi\nf-winppi-gdienddocemf.md">GdiEndDocEMF</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: f813171d-1c7d-4f75-850f-225ea166ff5c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTGetDisplayModeList, d3dkmthk/D3DKMTGetDisplayModeList, OpenGL_Functions_a132bdb6-955b-4af3-a928-f834f5fdf440.xml, D3DKMTGetDisplayModeList function [Display Devices], display.d3dkmtgetdisplaymodelist
+ms.keywords: OpenGL_Functions_a132bdb6-955b-4af3-a928-f834f5fdf440.xml, d3dkmthk/D3DKMTGetDisplayModeList, display.d3dkmtgetdisplaymodelist, D3DKMTGetDisplayModeList, D3DKMTGetDisplayModeList function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 <b>D3DKMTGetDisplayModeList</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,7 +126,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -142,6 +144,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdisplaymodelist.md">D3DKMT_GETDISPLAYMODELIST</a>
+
+
 
  
 

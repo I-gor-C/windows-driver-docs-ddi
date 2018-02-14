@@ -89,6 +89,8 @@ The <b>Status</b> member is set to STATUS_SUCCESS.
 
 <a href="..\ntddvol\ni-ntddvol-ioctl_volume_offline.md">IOCTL_VOLUME_OFFLINE</a>
 
+
+
  
 
  

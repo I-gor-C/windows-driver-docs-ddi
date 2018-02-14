@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 7902877c-4991-48ae-9285-82949f898af2
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: ATTRIBUTE_INFO_1 structure [Print Devices], *PATTRIBUTE_INFO_1, _ATTRIBUTE_INFO_1, PATTRIBUTE_INFO_1, ATTRIBUTE_INFO_1, print_interface-graphics_6c838297-1acb-4d8f-aa5d-beab06a6d3d2.xml, PATTRIBUTE_INFO_1 structure pointer [Print Devices], print.attribute_info_1, winddiui/PATTRIBUTE_INFO_1, winddiui/ATTRIBUTE_INFO_1
+ms.keywords: print.attribute_info_1, winddiui/ATTRIBUTE_INFO_1, ATTRIBUTE_INFO_1 structure [Print Devices], _ATTRIBUTE_INFO_1, print_interface-graphics_6c838297-1acb-4d8f-aa5d-beab06a6d3d2.xml, PATTRIBUTE_INFO_1, winddiui/PATTRIBUTE_INFO_1, PATTRIBUTE_INFO_1 structure pointer [Print Devices], *PATTRIBUTE_INFO_1, ATTRIBUTE_INFO_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -86,6 +86,7 @@ Number of document pages to be placed on one side of a physical page, as request
 `dwJobPageOrderFlags`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -126,6 +127,7 @@ Pages should be printed in reverse order: last page, next-to-last page, and so o
 `dwNupBorderFlags`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -170,6 +172,8 @@ The print processor uses <b>dwJobNumberOfCopies</b> and <b>dwDrvNumberOfCopies</
 ## See Also
 
 <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
+
+
 
  
 

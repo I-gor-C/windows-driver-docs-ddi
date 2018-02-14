@@ -93,6 +93,7 @@ For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.
 
 ### Input / Output Buffer
 <b>Parameters-&gt;Others.Argument1</b> points to either an AVC_COMMAND_IRB structure or AVC_MULTIFUNC_IRB structure. Both structures contain an AVC_IRB structure as a header, as illustrated in the following example:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -107,7 +108,8 @@ For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.
 } AVC_COMMAND_IRB, *PAVC_COMMAND_IRB;</pre>
 </td>
 </tr>
-</table></span></div><div class="code"><span codelanguage=""><table>
+</table></span></div>
+<div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
 </tr>
@@ -121,7 +123,8 @@ For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;</pre>
 </td>
 </tr>
-</table></span></div>The AVC_IRB structure contains a single <b>Function</b> member. This member must be set to the desired function code from the AVC_FUNCTION enumeration.
+</table></span></div>
+The AVC_IRB structure contains a single <b>Function</b> member. This member must be set to the desired function code from the AVC_FUNCTION enumeration.
 
 The AVC_MULTIFUNC_IRB structure contains a union member that specifies the function I/O request block type-specific parameters for the function code. The parameters and their meanings are documented with each function code.
 
@@ -143,19 +146,33 @@ Most AV/C functions must be called IRQL = PASSIVE_LEVEL. A few may be called at 
 
 ## See Also
 
-<a href="..\avc\ni-avc-ioctl_avc_bus_reset.md">IOCTL_AVC_BUS_RESET</a>
+<a href="..\avc\ne-avc-_tagavc_function.md">AVC_FUNCTION</a>
 
-<a href="..\avc\ns-avc-_avc_command_irb.md">AVC_COMMAND_IRB</a>
+
 
 <a href="..\avc\ns-avc-_avc_multifunc_irb.md">AVC_MULTIFUNC_IRB</a>
 
-<a href="..\avc\ne-avc-_tagavc_function.md">AVC_FUNCTION</a>
+
 
 <a href="..\avc\ni-avc-ioctl_avc_update_virtual_subunit_info.md">IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO</a>
 
+
+
 <a href="..\avc\ns-avc-_avc_irb.md">AVC_IRB</a>
 
+
+
 <a href="..\avc\ni-avc-ioctl_avc_remove_virtual_subunit_info.md">IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO</a>
+
+
+
+<a href="..\avc\ni-avc-ioctl_avc_bus_reset.md">IOCTL_AVC_BUS_RESET</a>
+
+
+
+<a href="..\avc\ns-avc-_avc_command_irb.md">AVC_COMMAND_IRB</a>
+
+
 
  
 

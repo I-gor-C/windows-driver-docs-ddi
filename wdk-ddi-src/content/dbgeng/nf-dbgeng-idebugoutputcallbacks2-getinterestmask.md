@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: BA710D92-63F4-4B4B-868A-58074FC052E9
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugOutputCallbacks2, debugger.idebugoutputcallbacks2_getinterestmask, DEBUG_OUTCBI_DML, IDebugOutputCallbacks2 interface [Windows Debugging], GetInterestMask method, DEBUG_OUTCBI_TEXT, dbgeng/IDebugOutputCallbacks2::GetInterestMask, GetInterestMask, DEBUG_OUTCBI_EXPLICIT_FLUSH, IDebugOutputCallbacks2::GetInterestMask, DEBUG_OUTCBI_ANY_FORMAT, GetInterestMask method [Windows Debugging], GetInterestMask method [Windows Debugging], IDebugOutputCallbacks2 interface
+ms.keywords: IDebugOutputCallbacks2, IDebugOutputCallbacks2 interface [Windows Debugging], GetInterestMask method, GetInterestMask method [Windows Debugging], dbgeng/IDebugOutputCallbacks2::GetInterestMask, DEBUG_OUTCBI_EXPLICIT_FLUSH, IDebugOutputCallbacks2::GetInterestMask, DEBUG_OUTCBI_DML, GetInterestMask, DEBUG_OUTCBI_TEXT, DEBUG_OUTCBI_ANY_FORMAT, GetInterestMask method [Windows Debugging], IDebugOutputCallbacks2 interface, debugger.idebugoutputcallbacks2_getinterestmask
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -60,6 +60,7 @@ HRESULT GetInterestMask(
 `Mask`
 
 The type of output notification to receive. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -132,6 +133,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks2.md">IDebugOutputCallbacks2</a>
+
+
 
  
 

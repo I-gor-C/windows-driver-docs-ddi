@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d70d9fed-22fd-4bcf-a4bf-fbd941559529
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfioresourcerequirementslistinsertioreslist, WdfIoResourceRequirementsListInsertIoResList, WdfIoResourceRequirementsListInsertIoResList method, DFResourceObjectRef_193f75e1-39a1-4a93-947b-550e7ad99494.xml, wdf.wdfioresourcerequirementslistinsertioreslist, PFN_WDFIORESOURCEREQUIREMENTSLISTINSERTIORESLIST, wdfresource/WdfIoResourceRequirementsListInsertIoResList
+ms.keywords: wdf.wdfioresourcerequirementslistinsertioreslist, kmdf.wdfioresourcerequirementslistinsertioreslist, DFResourceObjectRef_193f75e1-39a1-4a93-947b-550e7ad99494.xml, WdfIoResourceRequirementsListInsertIoResList method, wdfresource/WdfIoResourceRequirementsListInsertIoResList, PFN_WDFIORESOURCEREQUIREMENTSLISTINSERTIORESLIST, WdfIoResourceRequirementsListInsertIoResList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,7 @@ A zero-based value that is used as an index into the set of logical configuratio
 ## Return Value
 
 <b>WdfIoResourceRequirementsListInsertIoResList</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,7 +129,8 @@ The specified value for the <i>Index</i> parameter was too large.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 A system bug check occurs if the driver supplies an invalid object handle.
 
@@ -139,6 +141,66 @@ The <b>WdfIoResourceRequirementsListInsertIoResList</b> method inserts the logic
 To add a logical configuration to the end of a resource requirements list, use WDF_INSERT_AT_END or the return value from <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetcount.md">WdfIoResourceRequirementsListGetCount</a> as the <i>Index</i> value. Alternatively, use the <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistappendioreslist.md">WdfIoResourceRequirementsListAppendIoResList</a> method.
 
 For more information about resource requirements lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
+
+
+#### Examples
+
+The following code example shows how an <a href="..\wdfpdo\nc-wdfpdo-evt_wdf_device_resource_requirements_query.md">EvtDeviceResourceRequirementsQuery</a> callback function can create two empty logical configurations and add them to a resource requirements list.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+Example_EvtDeviceResourceRequirementsQuery(
+    IN WDFDEVICE Device,
+    IN WDFIORESREQLIST RequirementsList
+    )
+{
+    NTSTATUS  status;
+    WDFIORESLIST  logConfig1;
+    WDFIORESLIST  logConfig2;
+
+    status = WdfIoResourceListCreate(
+                                     RequirementsList,
+                                     WDF_NO_OBJECT_ATTRIBUTES,
+                                     &amp;logConfig1
+                                     );
+    if (!NT_SUCCESS(status)) {
+        return status;
+    }
+
+    status = WdfIoResourceRequirementsListAppendIoResList(
+                                             RequirementsList,
+                                             logConfig1
+                                             );
+    if (!NT_SUCCESS(status)) {
+        return status;
+    }
+
+    status = WdfIoResourceListCreate(
+                                     RequirementsList,
+                                     WDF_NO_OBJECT_ATTRIBUTES,
+                                     &amp;logConfig2
+                                     );
+    if (!NT_SUCCESS(status)) {
+        return status;
+    }
+    status = WdfIoResourceRequirementsListInsertIoResList(
+                                             RequirementsList,
+                                             logConfig2,
+                                             WDF_INSERT_AT_END
+                                             );
+    if (!NT_SUCCESS(status)) {
+        return status;
+    }
+...
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -152,9 +214,13 @@ For more information about resource requirements lists, see <a href="https://doc
 
 ## See Also
 
+<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistcreate.md">WdfIoResourceListCreate</a>
+
+
+
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistappendioreslist.md">WdfIoResourceRequirementsListAppendIoResList</a>
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistcreate.md">WdfIoResourceListCreate</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: C549B9C7-221D-4DD8-9D8D-24BC729099C7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbConvertVmbusHandleToKernelHandle, netvista.vmbconvertvmbushandletokernelhandle, vmbuskernelmodeclientlibapi/VmbConvertVmbusHandleToKernelHandle, VmbConvertVmbusHandleToKernelHandle function [Network Drivers Starting with Windows Vista]
+ms.keywords: vmbuskernelmodeclientlibapi/VmbConvertVmbusHandleToKernelHandle, VmbConvertVmbusHandleToKernelHandle function [Network Drivers Starting with Windows Vista], VmbConvertVmbusHandleToKernelHandle, netvista.vmbconvertvmbushandletokernelhandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	VmbConvertVmbusHandleToKernelHandle
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -100,6 +100,8 @@ the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbse
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetvmbushandle.md">VmbServerChannelInitSetVmbusHandle</a>
+
+
 
  
 

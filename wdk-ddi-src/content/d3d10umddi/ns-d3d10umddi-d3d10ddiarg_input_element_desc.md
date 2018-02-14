@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: cc052b73-8837-4756-a192-620dcd5cacb5
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3d10ddiarg_input_element_desc, D3D10DDIARG_INPUT_ELEMENT_DESC structure [Display Devices], UMDisplayDriver_Dx10param_Structs_c640f88f-3031-4412-a9bc-a8058cf8dab0.xml, D3D10DDIARG_INPUT_ELEMENT_DESC, d3d10umddi/D3D10DDIARG_INPUT_ELEMENT_DESC
+ms.keywords: display.d3d10ddiarg_input_element_desc, D3D10DDIARG_INPUT_ELEMENT_DESC structure [Display Devices], D3D10DDIARG_INPUT_ELEMENT_DESC, UMDisplayDriver_Dx10param_Structs_c640f88f-3031-4412-a9bc-a8058cf8dab0.xml, d3d10umddi/D3D10DDIARG_INPUT_ELEMENT_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,6 +80,7 @@ typedef struct D3D10DDIARG_INPUT_ELEMENT_DESC {
 `InputSlotClass`
 
 [in] A value that specifies the type of element. This member must be set to one of the following values from the D3D10_DDI_INPUT_CLASSIFICATION enumeration.
+
 <table>
 <tr>
 <th>Value</th>
@@ -121,6 +122,8 @@ D3D10_DDI_INPUT_PER_INSTANCE_DATA (1)
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createelementlayout.md">D3D10DDIARG_CREATEELEMENTLAYOUT</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 87b123ff-0188-4d45-b455-d1ec9def4d63
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: safestrings_1c916f4b-b084-4587-a867-998b789bd2fa.xml, RtlStringCbCopyUnicodeString function [Kernel-Mode Driver Architecture], RtlStringCbCopyUnicodeString, kernel.rtlstringcbcopyunicodestring, ntstrsafe/RtlStringCbCopyUnicodeString
+ms.keywords: safestrings_1c916f4b-b084-4587-a867-998b789bd2fa.xml, RtlStringCbCopyUnicodeString, RtlStringCbCopyUnicodeString function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcopyunicodestring, ntstrsafe/RtlStringCbCopyUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RtlStringCbCopyUnicodeString
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -76,6 +76,7 @@ A pointer to a <b>UNICODE_STRING</b> structure that contains the string to be co
 ## Return Value
 
 <b>RtlStringCbCopyUnicodeString</b> returns one of the following NTSTATUS values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,16 +115,19 @@ This <i>error</i> status means that the function received an invalid input param
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>RtlStringCbCopyUnicodeString</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
+
 <ul>
 <li>The contents of the <b>UNICODE_STRING</b> structure are invalid.</li>
 <li>The value in <i>cbDest</i> is larger than the maximum buffer size.</li>
 <li>The destination buffer (which <i>pszDest</i> points to) is already full.</li>
 <li>A buffer pointer is <b>NULL</b>.</li>
 <li>The destination buffer's length is zero, but a nonzero length source string is present.</li>
-</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+</ul>
+For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -146,11 +150,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyunicodestring.md">RtlStringCchCopyUnicodeString</a>
 
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyunicodestringex.md">RtlStringCbCopyUnicodeStringEx</a>
+
+
 
  
 

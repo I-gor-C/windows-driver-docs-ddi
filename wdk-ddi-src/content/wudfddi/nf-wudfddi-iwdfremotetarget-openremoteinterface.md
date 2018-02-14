@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5d278cde-3ebe-4fee-86fd-1ec4e79bd837
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: OpenRemoteInterface, OpenRemoteInterface method, IWDFRemoteTarget, OpenRemoteInterface method, IWDFRemoteTarget interface, wudfddi/IWDFRemoteTarget::OpenRemoteInterface, umdf.iwdfremotetarget_openremoteinterface, wdf.iwdfremotetarget_openremoteinterface, IWDFRemoteTarget interface, OpenRemoteInterface method, UMDFIoTargetObjectRef_e8287a4e-9f63-40e6-9a85-fb881a27d292.xml, IWDFRemoteTarget::OpenRemoteInterface
+ms.keywords: IWDFRemoteTarget::OpenRemoteInterface, UMDFIoTargetObjectRef_e8287a4e-9f63-40e6-9a85-fb881a27d292.xml, umdf.iwdfremotetarget_openremoteinterface, wudfddi/IWDFRemoteTarget::OpenRemoteInterface, OpenRemoteInterface method, IWDFRemoteTarget interface, OpenRemoteInterface method, OpenRemoteInterface, IWDFRemoteTarget, wdf.iwdfremotetarget_openremoteinterface, IWDFRemoteTarget interface, OpenRemoteInterface method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -83,6 +83,7 @@ A pointer to a caller-allocated <a href="..\wudfddi\ns-wudfddi-_umdf_io_target_o
 ## Return Value
 
 <b>OpenRemoteInterface</b> returns S_OK if the operation succeeds. Otherwise, the method might return the following value:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -99,7 +100,8 @@ The framework's attempt to allocate memory failed.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might return one of the other values that Winerror.h contains.
 
@@ -115,6 +117,46 @@ The device interface must be accessible by the account that loaded the UMDF-base
 
 For more information about <b>OpenRemoteInterface</b> and how to use device interfaces in UMDF-based drivers, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF-based Drivers</a>.
 
+
+#### Examples
+
+The following code example shows how an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function can create a remote interface and remote target objects for a device interface and then open the interface for I/O operations.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>void 
+STDMETHODCALLTYPE
+CMyDevice::OnRemoteInterfaceArrival(
+    __in IWDFRemoteInterfaceInitialize * FxRemoteInterfaceInit
+    )
+...
+    HRESULT hr;
+    CComPtr&lt;IWDFRemoteInterface&gt; fxRemoteInterface;
+    CComPtr&lt;IWDFRemoteTarget&gt; m_FxTarget;
+
+    hr = m_FxDevice-&gt;CreateRemoteInterface(FxRemoteInterfaceInit, 
+                                           NULL, 
+                                           &amp;fxRemoteInterface);
+    if (FAILED(hr)) goto Error;
+    hr = FxDevice-&gt;CreateRemoteTarget(unknown,
+                                      fxRemoteInterface,
+                                      &amp;m_FxTarget);
+    if (FAILED(hr)) goto Error;
+    hr = m_FxTarget-&gt;OpenRemoteInterface(fxRemoteInterface, 
+                                         NULL,
+                                         GENERIC_READ | GENERIC_WRITE,
+                                         NULL);
+...
+Error:
+...</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -127,9 +169,13 @@ For more information about <b>OpenRemoteInterface</b> and how to use device inte
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
+
 
  
 

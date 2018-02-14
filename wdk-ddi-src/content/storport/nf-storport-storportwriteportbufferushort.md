@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortWritePortBufferUshort
-title: StorPortWritePortBufferUshort function
+title: StorPortWritePortBufferUshort macro
 author: windows-driver-content
 description: The StorPortWritePortBufferUshort routine writes a value to a specified register address.
 old-location: storage\storportwriteportbufferushort.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: e7b7718b-0c03-4114-8402-9657c49230ad
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_831acb6e-3529-4e20-897d-e2765b6f7f53.xml, storport/StorPortWritePortBufferUshort, storage.storportwriteportbufferushort, StorPortWritePortBufferUshort, StorPortWritePortBufferUshort routine [Storage Devices]
+ms.keywords: storprt_831acb6e-3529-4e20-897d-e2765b6f7f53.xml, StorPortWritePortBufferUshort, StorPortWritePortBufferUshort routine [Storage Devices], storage.storportwriteportbufferushort, storport/StorPortWritePortBufferUshort
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -64,19 +64,19 @@ STORPORT_API VOID StorPortWritePortBufferUshort(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Port`
 
-Contains the address of the port to be written to.
+
 
 `Buffer`
 
-Pointer to the buffer containing the data to be written.
+
 
 `Count`
 
-Contains the number of data items of size <b>sizeof</b>(USHORT) to be written.
+
 
 
 ## Return Value
@@ -98,7 +98,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportbufferushort.m
 
 <a href="..\srb\nf-srb-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>
 
+
+
 <a href="..\storport\nf-storport-storportwriteportushort.md">StorPortWritePortUshort</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
 product: Windows
 targetos: Windows
-req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+req.typenames: "*PSRIOV_PF_EVENT, SRIOV_PF_EVENT"
 ---
 
 # IOCTL_SRIOV_MITIGATED_RANGE_UPDATE IOCTL

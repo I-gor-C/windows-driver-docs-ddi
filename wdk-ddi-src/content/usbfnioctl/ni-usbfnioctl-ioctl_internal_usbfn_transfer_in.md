@@ -7,7 +7,7 @@ old-location: buses\_ioctl_internal_usbfn_transfer_in.htm
 old-project: usbref
 ms.assetid: 53F895F8-596D-464C-866E-67028CF644E4
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses._ioctl_internal_usbfn_transfer_in, IOCTL_INTERNAL_USBFN_TRANSFER_IN control code [Buses], IOCTL_INTERNAL_USBFN_TRANSFER_IN, usbfnioctl/IOCTL_INTERNAL_USBFN_TRANSFER_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices

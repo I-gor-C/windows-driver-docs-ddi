@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8bf66149-c2d1-4a81-9c61-8504d2652877
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlUnicodeStringCchCopyN function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCchCopyN, RtlUnicodeStringCchCopyN, safestrings_3a628b71-7686-45ef-8217-6501cd3c3eed.xml, kernel.rtlunicodestringcchcopyn
+ms.keywords: safestrings_3a628b71-7686-45ef-8217-6501cd3c3eed.xml, RtlUnicodeStringCchCopyN function [Kernel-Mode Driver Architecture], RtlUnicodeStringCchCopyN, kernel.rtlunicodestringcchcopyn, ntstrsafe/RtlUnicodeStringCchCopyN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RtlUnicodeStringCchCopyN
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -76,6 +76,7 @@ The number of characters to be copied from the source to the destination.
 ## Return Value
 
 <b>RtlUnicodeStringCchCopyN</b> returns one of the following NTSTATUS values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,16 +115,19 @@ This <i>error</i> status means that the function received an invalid input param
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>RtlUnicodeStringCchCopyN</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
+
 <ul>
 <li>The contents of the <b>UNICODE_STRING</b> structure are invalid.</li>
 <li>The destination buffer is already full.</li>
 <li>A buffer pointer is <b>NULL</b>.</li>
 <li>The destination buffer's length is zero, but a nonzero length source string is present.</li>
 <li>The <i>cchToCopy</i> parameter's value is greater than NTSTRSAFE_UNICODE_STRING_MAX_CCH.</li>
-</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+</ul>
+For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -148,9 +152,15 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcchcopyn.md">RtlUnicodeStringCchCopyN</a>
 
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcchcopynex.md">RtlUnicodeStringCchCopyNEx</a>
+
+
 
  
 

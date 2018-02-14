@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: fd1d0cf5-2ee2-44d8-945f-492af57c3990
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: LPDXVA_SliceInfo structure pointer [Display Devices], DXVA_SliceInfo, DXVA_SliceInfo structure [Display Devices], dxva/LPDXVA_SliceInfo, _DXVA_SliceInfo, dxvaref_04736e26-0c58-4e92-9f45-1675565c9f55.xml, LPDXVA_SliceInfo, *LPDXVA_SliceInfo, display.dxva_sliceinfo, dxva/DXVA_SliceInfo
+ms.keywords: LPDXVA_SliceInfo, DXVA_SliceInfo, LPDXVA_SliceInfo structure pointer [Display Devices], DXVA_SliceInfo structure [Display Devices], display.dxva_sliceinfo, dxvaref_04736e26-0c58-4e92-9f45-1675565c9f55.xml, dxva/DXVA_SliceInfo, _DXVA_SliceInfo, *LPDXVA_SliceInfo, dxva/LPDXVA_SliceInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DXVA_SliceInfo
 product: Windows
 targetos: Windows
-req.typenames: DXVA_SliceInfo, *LPDXVA_SliceInfo
+req.typenames: "*LPDXVA_SliceInfo, DXVA_SliceInfo"
 ---
 
 # _DXVA_SliceInfo structure
@@ -84,6 +84,7 @@ Specifies the location of the first byte containing data for the slice (for exam
 `wBadSliceChopping`
 
 Specifies the location of data within a slice for a corresponding bitstream data buffer. If zero, indicates that all bits for the slice are in the bitstream data buffer. If nonzero, indicates what part of the bits for the slice are missing from the corresponding bitstream data buffer as follows.
+
 <table>
 <tr>
 <th>Value</th>
@@ -119,8 +120,11 @@ The bits for the start of the slice are not within the corresponding bitstream d
 
 </td>
 </tr>
-</table> 
-<div class="alert"><b>Note</b>    Nonzero values of <b>wBadSliceChopping</b> should generally be avoided by the host software decoder.</div><div> </div>
+</table>
+ 
+
+<div class="alert"><b>Note</b>    Nonzero values of <b>wBadSliceChopping</b> should generally be avoided by the host software decoder.</div>
+<div> </div>
 
 `wHorizontalPosition`
 
@@ -155,6 +159,8 @@ In H.261 bitstreams, a GOB is considered a slice. In H.263 bitstreams, a sequenc
 ## See Also
 
 <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
+
+
 
  
 

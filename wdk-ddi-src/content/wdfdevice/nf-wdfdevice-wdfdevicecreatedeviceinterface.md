@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: cdfe1932-ee3d-41ea-8d7b-85c17c0f1722
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFDeviceObjectGeneralRef_467c4866-4ba7-4450-9aec-e63c3172d604.xml, WdfDeviceCreateDeviceInterface method, wdfdevice/WdfDeviceCreateDeviceInterface, WdfDeviceCreateDeviceInterface, kmdf.wdfdevicecreatedeviceinterface, wdf.wdfdevicecreatedeviceinterface
+ms.keywords: WdfDeviceCreateDeviceInterface, WdfDeviceCreateDeviceInterface method, kmdf.wdfdevicecreatedeviceinterface, wdfdevice/WdfDeviceCreateDeviceInterface, DFDeviceObjectGeneralRef_467c4866-4ba7-4450-9aec-e63c3172d604.xml, wdf.wdfdevicecreatedeviceinterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -94,6 +94,28 @@ Drivers can use the <i>ReferenceString</i> parameter to differentiate different 
 
 For more information about device interfaces and the <b>WdfDeviceCreateDeviceInterface</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces">Using Device Interfaces</a>.
 
+
+#### Examples
+
+The following example registers the COM port interface class for a device.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS  status;
+
+status = WdfDeviceCreateDeviceInterface(
+                                        Device,
+                                        (LPGUID) &amp;GUID_DEVINTERFACE_COMPORT,
+                                        NULL
+                                        );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -107,9 +129,13 @@ For more information about device interfaces and the <b>WdfDeviceCreateDeviceInt
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
+
 
  
 

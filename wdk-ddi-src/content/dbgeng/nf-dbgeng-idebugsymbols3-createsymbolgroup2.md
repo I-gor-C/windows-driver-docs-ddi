@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 42ddf77a-14c8-4d6a-98a2-b0c67836990d
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: CreateSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::CreateSymbolGroup2, CreateSymbolGroup2 method [Windows Debugging], IDebugSymbols3::CreateSymbolGroup2, IDebugSymbols3, debugger.createsymbolgroup2, CreateSymbolGroup2, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup2 method
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup2 method, debugger.createsymbolgroup2, dbgeng/IDebugSymbols3::CreateSymbolGroup2, CreateSymbolGroup2 method [Windows Debugging], IDebugSymbols3::CreateSymbolGroup2, CreateSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, CreateSymbolGroup2, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,7 +80,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -101,11 +102,17 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/b77de459-b5ac-4752-89eb-f24fdde36134">IDebugSymbolGroup::AddSymbol</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+
+
+<a href="https://msdn.microsoft.com/b77de459-b5ac-4752-89eb-f24fdde36134">IDebugSymbolGroup::AddSymbol</a>
+
+
 
  
 

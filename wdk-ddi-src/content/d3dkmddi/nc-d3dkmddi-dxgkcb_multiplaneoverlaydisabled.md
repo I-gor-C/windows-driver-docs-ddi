@@ -73,6 +73,7 @@ Indicates the VidPnSourceId on which the current multiplane overlay hardware con
 ## Return Value
 
 DXGKCB_MULTIPLANEOVERLAYDISABLED returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -99,6 +100,7 @@ This callback can only be called at passive level.
 
 
 This callback can be used in the following scenarios:
+
 
 
 <ul>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 43d30c99-9f9e-4516-8c50-e096f760a774
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ScsiPortGetBusData routine [Storage Devices], ScsiPortGetBusData, scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml, storage.scsiportgetbusdata, srb/ScsiPortGetBusData
+ms.keywords: storage.scsiportgetbusdata, ScsiPortGetBusData, ScsiPortGetBusData routine [Storage Devices], srb/ScsiPortGetBusData, scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,6 +95,7 @@ Specifies the maximum number of bytes to return at <i>Buffer</i>, or zero if the
 ## Return Value
 
 <b>ScsiPortGetBusData</b> returns the number of bytes of configuration information it stored in the buffer. When the input BusDataType is PCIConfiguration, ScsiPortGetBusData can return either of the following values to indicate an error.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -141,11 +142,19 @@ Configuration data returned by <b>ScsiPortGetBusData</b> is valid only until the
 
 <a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
 
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
+
 
 <a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
+
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
+
 
  
 

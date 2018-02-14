@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6F7DE233-D002-4927-80FC-307A3A33653A
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_STORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], storage.storage_lb_provisioning_map_resources, LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED, STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN"
+ms.keywords: LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN, _STORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, storage.storage_lb_provisioning_map_resources, STORAGE_LB_PROVISIONING_MAP_RESOURCES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	STORAGE_LB_PROVISIONING_MAP_RESOURCES
 product: Windows
 targetos: Windows
-req.typenames: "*PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES"
+req.typenames: STORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES
 ---
 
 # _STORAGE_LB_PROVISIONING_MAP_RESOURCES structure
@@ -74,6 +74,7 @@ The count, in bytes, of the available mapping resources for a disk.
 `AvailableMappingResourcesScope`
 
 Resources scope available to a LUN or a LUN pool.
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,6 +118,7 @@ Mapping resources dedicated to a LUN pool.
 `AvailableMappingResourcesValid`
 
 The validity of the <b>AvailableMappingResources</b> member.
+
 <table>
 <tr>
 <th>Value</th>
@@ -173,6 +175,7 @@ The count, in bytes, of the used mapping resources for a disk.
 `UsedMappingResourcesScope`
 
 Resources scope used by a LUN or LUN pool.
+
 <table>
 <tr>
 <th>Value</th>
@@ -216,6 +219,7 @@ Mapping resources dedicated to a LUN pool.
 `UsedMappingResourcesValid`
 
 The validity of the <b>UsedMappingResources</b> member.
+
 <table>
 <tr>
 <th>Value</th>
@@ -265,6 +269,8 @@ Resource counts are in bytes instead of totals of blocks or slabs.
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_lb_provisioning_map_resources.md"> IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES</a>
+
+
 
  
 

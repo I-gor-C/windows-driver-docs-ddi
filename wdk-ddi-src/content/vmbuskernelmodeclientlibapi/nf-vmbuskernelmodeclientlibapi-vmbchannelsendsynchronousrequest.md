@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 312DED8E-570E-4DEC-B084-36894970F49F
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelSendSynchronousRequest, VmbChannelSendSynchronousRequest, netvista.vmbchannelsendsynchronousrequest, VmbChannelSendSynchronousRequest function [Network Drivers Starting with Windows Vista]
+ms.keywords: VmbChannelSendSynchronousRequest, netvista.vmbchannelsendsynchronousrequest, VmbChannelSendSynchronousRequest function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelSendSynchronousRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelSendSynchronousRequest
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -178,6 +178,8 @@ this if <code>*Timeout == 0</code> and the <b>VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR
 ## See Also
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+
+
 
  
 

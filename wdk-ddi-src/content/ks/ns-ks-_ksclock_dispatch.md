@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: cc9b7049-7b43-4c66-9d08-93af22d92540
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks/PKSCLOCK_DISPATCH, PKSCLOCK_DISPATCH structure pointer [Streaming Media Devices], KSCLOCK_DISPATCH, ks/KSCLOCK_DISPATCH, _KSCLOCK_DISPATCH, *PKSCLOCK_DISPATCH, PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH structure [Streaming Media Devices], avstruct_5015e5e6-b0c5-4eb9-9e04-8631e732f8be.xml, stream.ksclock_dispatch
+ms.keywords: avstruct_5015e5e6-b0c5-4eb9-9e04-8631e732f8be.xml, KSCLOCK_DISPATCH, KSCLOCK_DISPATCH structure [Streaming Media Devices], stream.ksclock_dispatch, PKSCLOCK_DISPATCH structure pointer [Streaming Media Devices], _KSCLOCK_DISPATCH, *PKSCLOCK_DISPATCH, ks/PKSCLOCK_DISPATCH, PKSCLOCK_DISPATCH, ks/KSCLOCK_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -68,17 +68,29 @@ typedef struct _KSCLOCK_DISPATCH {
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
+
+
 <a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
 
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
 
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
+
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
+
+
 
  
 

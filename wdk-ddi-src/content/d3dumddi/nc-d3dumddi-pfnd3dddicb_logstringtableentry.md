@@ -91,6 +91,8 @@ Returns <b>S_OK</b> or an appropriate error result if the function does not comp
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_logstringtable.md">LogMarkerStringTable</a>
 
+
+
  
 
  

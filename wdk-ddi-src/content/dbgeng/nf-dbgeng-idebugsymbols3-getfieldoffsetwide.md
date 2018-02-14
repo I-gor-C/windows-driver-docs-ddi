@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 4a9b90dd-72b2-4625-8b73-bc0dca6ba905
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols3::GetFieldOffsetWide, debugger.getfieldoffsetwide, dbgeng/IDebugSymbols3::GetFieldOffsetWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetFieldOffsetWide method, GetFieldOffsetWide method [Windows Debugging], GetFieldOffsetWide, GetFieldOffsetWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords: GetFieldOffsetWide method [Windows Debugging], GetFieldOffsetWide, GetFieldOffsetWide method [Windows Debugging], IDebugSymbols3 interface, debugger.getfieldoffsetwide, IDebugSymbols3 interface [Windows Debugging], GetFieldOffsetWide method, dbgeng/IDebugSymbols3::GetFieldOffsetWide, IDebugSymbols3::GetFieldOffsetWide, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,6 +80,7 @@ Receives the offset of the specified field from the base memory location of an i
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>

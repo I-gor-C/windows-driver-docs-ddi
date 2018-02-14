@@ -81,6 +81,8 @@ The <b>Information</b> field is set to the size, in bytes, of the returned data.
 
 <a href="..\ntdddisk\ns-ntdddisk-_get_length_information.md">GET_LENGTH_INFORMATION</a>
 
+
+
  
 
  

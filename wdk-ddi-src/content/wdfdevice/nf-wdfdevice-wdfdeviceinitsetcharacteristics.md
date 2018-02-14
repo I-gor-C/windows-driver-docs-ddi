@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 2937d9f1-f838-4ec4-972d-21ff43097590
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceInitSetCharacteristics, kmdf.wdfdeviceinitsetcharacteristics, PFN_WDFDEVICEINITSETCHARACTERISTICS, DFDeviceObjectGeneralRef_7dd76de2-8621-45ed-a309-c958ac1c365d.xml, wdf.wdfdeviceinitsetcharacteristics, WdfDeviceInitSetCharacteristics method, wdfdevice/WdfDeviceInitSetCharacteristics
+ms.keywords: WdfDeviceInitSetCharacteristics method, DFDeviceObjectGeneralRef_7dd76de2-8621-45ed-a309-c958ac1c365d.xml, kmdf.wdfdeviceinitsetcharacteristics, wdf.wdfdeviceinitsetcharacteristics, WdfDeviceInitSetCharacteristics, wdfdevice/WdfDeviceInitSetCharacteristics, PFN_WDFDEVICEINITSETCHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,6 +90,26 @@ The framework always sets the FILE_DEVICE_SECURE_OPEN characteristic, so your dr
 
 Each call to <b>WdfDeviceInitSetCharacteristics</b> overwrites the settings of any previous call.
 
+
+#### Examples
+
+The following code example indicates that a device is a floppy disk.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceInitSetCharacteristics(
+                                DeviceInit,
+                                FILE_FLOPPY_DISKETTE,
+                                FALSE
+                                );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -103,6 +123,8 @@ Each call to <b>WdfDeviceInitSetCharacteristics</b> overwrites the settings of a
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetcharacteristics.md">WdfDeviceSetCharacteristics</a>
+
+
 
  
 

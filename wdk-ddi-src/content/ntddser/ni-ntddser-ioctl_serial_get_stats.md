@@ -82,7 +82,11 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 
 <a href="..\ntddser\ns-ntddser-_serialperf_stats.md">SERIALPERF_STATS</a>
 
+
+
 <a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a>
+
+
 
  
 

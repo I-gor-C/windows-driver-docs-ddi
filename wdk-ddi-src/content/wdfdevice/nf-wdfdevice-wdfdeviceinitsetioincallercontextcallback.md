@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f0104e8b-9a2f-4f52-a431-bec7de3be968
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfdeviceinitsetioincallercontextcallback, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml, WdfDeviceInitSetIoInCallerContextCallback method, WdfDeviceInitSetIoInCallerContextCallback, wdfdevice/WdfDeviceInitSetIoInCallerContextCallback, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, wdf.wdfdeviceinitsetioincallercontextcallback
+ms.keywords: wdf.wdfdeviceinitsetioincallercontextcallback, wdfdevice/WdfDeviceInitSetIoInCallerContextCallback, WdfDeviceInitSetIoInCallerContextCallback, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, WdfDeviceInitSetIoInCallerContextCallback method, kmdf.wdfdeviceinitsetioincallercontextcallback, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,25 @@ If a driver calls <b>WdfDeviceInitSetIoInCallerContextCallback</b>, it must do s
 
 For more information about the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> event callback function, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Intercepting an I/O Request before it is Queued</a>.
 
+
+#### Examples
+
+The following code example registers a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> event callback function.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceInitSetIoInCallerContextCallback(
+                                          DeviceInit, 
+                                          MyEvtIoInCallerContext
+                                          );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,6 +113,8 @@ For more information about the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_
 ## See Also
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
+
+
 
  
 

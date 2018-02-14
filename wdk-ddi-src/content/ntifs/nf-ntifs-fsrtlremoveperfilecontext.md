@@ -7,8 +7,8 @@ old-location: ifsk\fsrtlremoveperfilecontext.htm
 old-project: ifsk
 ms.assetid: 1a4b6759-84d9-4731-8920-ef6ea1e51102
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FsRtlRemovePerFileContext routine [Installable File System Drivers], ntifs/FsRtlRemovePerFileContext, fsrtlref_90f829b2-a8ed-44fd-adb3-61c57f5f9aad.xml, FsRtlRemovePerFileContext, ifsk.fsrtlremoveperfilecontext
+ms.date: 2/7/2018
+ms.keywords: fsrtlref_90f829b2-a8ed-44fd-adb3-61c57f5f9aad.xml, FsRtlRemovePerFileContext, ntifs/FsRtlRemovePerFileContext, FsRtlRemovePerFileContext routine [Installable File System Drivers], ifsk.fsrtlremoveperfilecontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,7 @@ A pointer to the first <a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FS
 The file system filter driver must free the memory that is used for this context information after the <a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a> has been removed.
 
 Use this routine for your drivers to remove contexts only when the driver must discard per-file context information while the file is still open. Contexts are removed when a file is closed by using <a href="..\ntifs\nf-ntifs-fsrtlteardownperfilecontexts.md">FsRtlTeardownPerFileContexts</a>.
+
 <div class="alert"><b>Note</b>  <ul>
 <li>
 Do not use this routine inside your <i>FreeCallback</i> routine. The file system removes contexts from the list before that routine is called.
@@ -93,7 +94,8 @@ Do not use this routine inside your IRP_CLOSE handler. You will not be notified 
 
 </li>
 </ul>
-</div><div> </div>
+</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,18 +109,28 @@ Do not use this routine inside your IRP_CLOSE handler. You will not be notified 
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
-
 <a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a>
 
-<a href="..\ntifs\nf-ntifs-fsrtlinsertperfilecontext.md">FsRtlInsertPerFileContext</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546051">FsRtlGetPerFileContextPointer</a>
 
+
+
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
+
+
+
 <a href="https://msdn.microsoft.com/6be3ff10-47e4-47f5-8f15-88a80a16f451">Tracking Per-File Context in a Legacy File System Filter Driver</a>
 
- 
+
+
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperfilecontext.md">FsRtlInsertPerFileContext</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlRemovePerFileContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlRemovePerFileContext routine%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 07de1b64-bafb-4b5b-8ef3-24b87ae0c273
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfUsbInterfaceGetNumSettings, kmdf.wdfusbinterfacegetnumsettings, WdfUsbInterfaceGetNumSettings method, wdf.wdfusbinterfacegetnumsettings, wdfusb/WdfUsbInterfaceGetNumSettings, DFUsbRef_5515a8bf-1a43-434c-9806-75393a17fdf5.xml
+ms.keywords: WdfUsbInterfaceGetNumSettings, wdfusb/WdfUsbInterfaceGetNumSettings, kmdf.wdfusbinterfacegetnumsettings, DFUsbRef_5515a8bf-1a43-434c-9806-75393a17fdf5.xml, wdf.wdfusbinterfacegetnumsettings, WdfUsbInterfaceGetNumSettings method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfUsbInterfaceGetNumSettings
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -80,6 +80,24 @@ Your driver can call <b>WdfUsbInterfaceGetNumSettings</b> after it has called <a
 
 For more information about the <b>WdfUsbInterfaceGetNumSettings</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
+
+#### Examples
+
+The following code example obtains the number of alternate settings that are available for a specified USB interface.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>BYTE altSettings;
+
+altSettings = WdfUsbInterfaceGetNumSettings(UsbInterface);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,11 +111,17 @@ For more information about the <b>WdfUsbInterfaceGetNumSettings</b> method and U
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+
+
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 300cdd3b-0c12-45e3-ae45-c26084f3ec12
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_68224d09-0ef9-4231-af5f-c6f8761889dd.xml, KeReleaseSpinLock, kernel.kereleasespinlock, wdm/KeReleaseSpinLock, KeReleaseSpinLock routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/KeReleaseSpinLock, KeReleaseSpinLock routine [Kernel-Mode Driver Architecture], kernel.kereleasespinlock, KeReleaseSpinLock, k105_68224d09-0ef9-4231-af5f-c6f8761889dd.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -95,7 +95,11 @@ Callers of this routine are running at IRQL = DISPATCH_LEVEL. On return from <b>
 
 <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 
+
+
 <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
+
+
 
  
 

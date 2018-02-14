@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 6b622b61-ec39-4ffb-b744-2b33ac560af6
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTWaitForSynchronizationObject, D3DKMTWaitForSynchronizationObject function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObject, OpenGL_Functions_bdec46cd-1e3b-427f-8c65-df2d31171bc5.xml, display.d3dkmtwaitforsynchronizationobject
+ms.keywords: D3DKMTWaitForSynchronizationObject, OpenGL_Functions_bdec46cd-1e3b-427f-8c65-df2d31171bc5.xml, display.d3dkmtwaitforsynchronizationobject, D3DKMTWaitForSynchronizationObject function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTWaitForSynchronizationObject</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -106,7 +107,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -123,6 +125,8 @@ This function might also return other NTSTATUS values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobject.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a>
+
+
 
  
 

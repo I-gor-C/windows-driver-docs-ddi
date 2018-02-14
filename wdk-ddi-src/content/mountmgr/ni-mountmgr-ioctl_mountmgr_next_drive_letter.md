@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER IOCTL
@@ -81,6 +81,8 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_DRIVE_LETTER_TAR
 ## See Also
 
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_drive_letter_target.md">MOUNTMGR_DRIVE_LETTER_TARGET</a>
+
+
 
  
 

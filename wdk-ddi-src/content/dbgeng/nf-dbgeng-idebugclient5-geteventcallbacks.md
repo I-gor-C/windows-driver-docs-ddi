@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: b67edb7a-2e74-4b7b-bbfb-5886e89a10a5
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetEventCallbacks, dbgeng/IDebugClient3::GetEventCallbacks, dbgeng/IDebugClient::GetEventCallbacks, GetEventCallbacks method [Windows Debugging], IDebugClient4 interface, IDebugClient5 interface [Windows Debugging], GetEventCallbacks method, IDebugClient::GetEventCallbacks, IDebugClient4 interface [Windows Debugging], GetEventCallbacks method, dbgeng/IDebugClient2::GetEventCallbacks, IDebugClient5, debugger.geteventcallbacks, dbgeng/IDebugClient5::GetEventCallbacks, GetEventCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient2::GetEventCallbacks, IDebugClient interface [Windows Debugging], GetEventCallbacks method, dbgeng/IDebugClient4::GetEventCallbacks, IDebugClient_81e23179-deb3-4c14-ae9e-b0c0a1d48f00.xml, GetEventCallbacks method [Windows Debugging], IDebugClient3 interface, IDebugClient3 interface [Windows Debugging], GetEventCallbacks method, GetEventCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetEventCallbacks, IDebugClient2 interface [Windows Debugging], GetEventCallbacks method, IDebugClient3::GetEventCallbacks, GetEventCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient4::GetEventCallbacks, GetEventCallbacks method [Windows Debugging]
+ms.keywords: GetEventCallbacks method [Windows Debugging], IDebugClient5 interface [Windows Debugging], GetEventCallbacks method, dbgeng/IDebugClient4::GetEventCallbacks, dbgeng/IDebugClient2::GetEventCallbacks, GetEventCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient5, debugger.geteventcallbacks, IDebugClient::GetEventCallbacks, dbgeng/IDebugClient::GetEventCallbacks, GetEventCallbacks method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::GetEventCallbacks, IDebugClient interface [Windows Debugging], GetEventCallbacks method, GetEventCallbacks method [Windows Debugging], IDebugClient4 interface, IDebugClient3::GetEventCallbacks, GetEventCallbacks method [Windows Debugging], IDebugClient3 interface, IDebugClient2::GetEventCallbacks, IDebugClient_81e23179-deb3-4c14-ae9e-b0c0a1d48f00.xml, IDebugClient2, dbgeng/IDebugClient3::GetEventCallbacks, IDebugClient5::GetEventCallbacks, IDebugClient4, IDebugClient3, GetEventCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient4::GetEventCallbacks, IDebugClient, GetEventCallbacks, IDebugClient3 interface [Windows Debugging], GetEventCallbacks method, IDebugClient4 interface [Windows Debugging], GetEventCallbacks method, IDebugClient2 interface [Windows Debugging], GetEventCallbacks method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -69,6 +69,7 @@ Receives an interface pointer to the event callbacks object registered with this
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -106,19 +107,33 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+
 
  
 

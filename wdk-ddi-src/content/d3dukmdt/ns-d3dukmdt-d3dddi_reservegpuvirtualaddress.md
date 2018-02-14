@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 89E8FCC6-B618-4D7E-B1E6-59E85261BE3C
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dddi_reservegpuvirtualaddress, D3DDDI_RESERVEGPUVIRTUALADDRESS structure [Display Devices], D3DDDI_RESERVEGPUVIRTUALADDRESS, d3dukmdt/D3DDDI_RESERVEGPUVIRTUALADDRESS
+ms.keywords: D3DDDI_RESERVEGPUVIRTUALADDRESS structure [Display Devices], D3DDDI_RESERVEGPUVIRTUALADDRESS, d3dukmdt/D3DDDI_RESERVEGPUVIRTUALADDRESS, display.d3dddi_reservegpuvirtualaddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -119,6 +119,8 @@ Specify the size of the range to reserve in bytes. Must be a multiple of 64KB.
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
+
+
 
  
 

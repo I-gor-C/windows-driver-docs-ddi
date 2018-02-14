@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
 product: Windows
 targetos: Windows
-req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.typenames: ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ---
 
 # IOCTL_MOUNTDEV_QUERY_UNIQUE_ID IOCTL
@@ -80,7 +80,11 @@ The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-moun
 
 <a href="..\mountdev\ns-mountdev-_mountdev_unique_id.md">MOUNTDEV_UNIQUE_ID</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
+
+
 
  
 

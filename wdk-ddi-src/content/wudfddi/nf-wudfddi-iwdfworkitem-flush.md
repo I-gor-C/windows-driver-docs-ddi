@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: AB79C2AE-0696-4EEC-9FC0-8A458CF19B82
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi/IWDFWorkItem::Flush, IWDFWorkItem interface, Flush method, Flush, wdf.iwdfworkitem_flush, IWDFWorkItem::Flush, IWDFWorkItem, Flush method, IWDFWorkItem interface, Flush method, umdf.iwdfworkitem_flush
+ms.keywords: IWDFWorkItem, Flush method, Flush method, IWDFWorkItem interface, IWDFWorkItem::Flush, IWDFWorkItem interface, Flush method, wudfddi/IWDFWorkItem::Flush, umdf.iwdfworkitem_flush, Flush, wdf.iwdfworkitem_flush
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -82,9 +82,13 @@ For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
+
+
+
 <a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
+
 
  
 

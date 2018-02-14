@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 62BE93C6-8E1C-4430-BB07-C25E8D4076B0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: STOR_DEVICE_CAPABILITIES, storport/STOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES, storport/PSTOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES structure [Storage Devices], PSTOR_DEVICE_CAPABILITIES structure pointer [Storage Devices], *PSTOR_DEVICE_CAPABILITIES, storage.stor_device_capabilities, _STOR_DEVICE_CAPABILITIES
+ms.keywords: storage.stor_device_capabilities, storport/STOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES structure [Storage Devices], _STOR_DEVICE_CAPABILITIES, storport/PSTOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES, *PSTOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES structure pointer [Storage Devices], STOR_DEVICE_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -127,11 +127,17 @@ Starting with Windows 8, miniports should use the <a href="..\storport\ns-storp
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
-
 <a href="..\storport\ns-storport-_stor_device_capabilities_ex.md">STOR_DEVICE_CAPABILITIES_EX</a>
 
+
+
 <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a>
+
+
+
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
+
+
 
  
 

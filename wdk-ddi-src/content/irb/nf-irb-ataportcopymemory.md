@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f5e449f8-9ff9-4d3d-9a62-3e985b57bd50
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: atartns_7aa7f4e2-4c74-403e-bbdf-795973a9846b.xml, AtaPortCopyMemory routine [Storage Devices], AtaPortCopyMemory, storage.ataportcopymemory, irb/AtaPortCopyMemory
+ms.keywords: irb/AtaPortCopyMemory, AtaPortCopyMemory, storage.ataportcopymemory, atartns_7aa7f4e2-4c74-403e-bbdf-795973a9846b.xml, AtaPortCopyMemory routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

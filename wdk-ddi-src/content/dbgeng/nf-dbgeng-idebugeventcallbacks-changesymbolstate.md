@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5383bd49-df44-48dd-8385-c782a1b1f80a
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugEventCallbacks::ChangeSymbolState, IDebugEventCallbacks, debugger.idebugeventcallbacks_changesymbolstate, ChangeSymbolState, ChangeSymbolState method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging], ChangeSymbolState method, IDebugEventCallbacks::ChangeSymbolState, ComCallbacks_693f0465-088e-4f3d-a8a4-89e8803d0227.xml, ChangeSymbolState method [Windows Debugging]
+ms.keywords: IDebugEventCallbacks::ChangeSymbolState, dbgeng/IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState, IDebugEventCallbacks interface [Windows Debugging], ChangeSymbolState method, IDebugEventCallbacks, debugger.idebugeventcallbacks_changesymbolstate, ChangeSymbolState method [Windows Debugging], ComCallbacks_693f0465-088e-4f3d-a8a4-89e8803d0227.xml, ChangeSymbolState method [Windows Debugging], IDebugEventCallbacks interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -61,6 +61,7 @@ HRESULT ChangeSymbolState(
 `Flags`
 
 Specifies a bit-set indicating the nature of the change to the symbol state.  The following bit flags might be set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -135,9 +136,11 @@ Provides additional information about the change to the symbol state.   If more 
 
 
 
+
 #### DEBUG_CSS_LOADS
 
 The value of <i>Argument</i> is the base location (in the target's memory address space) of the module image that the engine loaded symbols for.
+
 
 
 #### DEBUG_CSS_UNLOADS
@@ -145,9 +148,11 @@ The value of <i>Argument</i> is the base location (in the target's memory addres
 The value of <i>Argument</i> is the base location (in the target's memory address space) of the module image that the engine unloaded symbols for.  If the engine unloaded symbols for more than one image, the value of <i>Argument</i> is zero.
 
 
+
 #### DEBUG_CSS_SCOPE
 
 The value of <i>Argument</i> is zero.
+
 
 
 #### DEBUG_CSS_PATHS
@@ -155,9 +160,11 @@ The value of <i>Argument</i> is zero.
 The value of <i>Argument</i> is zero.
 
 
+
 #### DEBUG_CSS_SYMBOL_OPTIONS
 
 The value of <i>Argument</i> is the symbol options.
+
 
 
 #### DEBUG_CSS_TYPE_OPTIONS

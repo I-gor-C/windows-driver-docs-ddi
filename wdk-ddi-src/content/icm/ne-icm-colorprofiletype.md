@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 756ba822-ace2-4893-a989-9d355434e57c
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: colorfnc_409d0d83-91ea-408a-8970-4de6e9cf94eb.xml, icm/CPT_CAMP, print.colorprofiletype, COLORPROFILETYPE enumeration [Print Devices], CPT_DMP, *PCOLORPROFILETYPE, icm/CPT_DMP, COLORPROFILETYPE, CPT_ICC, CPT_CAMP, CPT_GMMP, icm/CPT_GMMP, icm/CPT_ICC, icm/COLORPROFILETYPE
+ms.keywords: icm/CPT_GMMP, icm/COLORPROFILETYPE, colorfnc_409d0d83-91ea-408a-8970-4de6e9cf94eb.xml, CPT_GMMP, *PCOLORPROFILETYPE, CPT_DMP, CPT_ICC, icm/CPT_DMP, icm/CPT_CAMP, COLORPROFILETYPE, CPT_CAMP, COLORPROFILETYPE enumeration [Print Devices], print.colorprofiletype, icm/CPT_ICC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -84,6 +84,7 @@ typedef enum  {
     ## Remarks
 
         The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers to this enumeration:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -104,6 +105,8 @@ typedef enum  {
     ## See Also
 
         <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
+
+
 
  
 

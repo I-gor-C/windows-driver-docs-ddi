@@ -40,7 +40,7 @@ apiname:
 -	DxgkCbUnmapMemory
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -86,6 +86,8 @@ The beginning address of the range to be unmapped. This address can be a virtual
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_map_memory.md">DxgkCbMapMemory</a>
+
+
 
  
 

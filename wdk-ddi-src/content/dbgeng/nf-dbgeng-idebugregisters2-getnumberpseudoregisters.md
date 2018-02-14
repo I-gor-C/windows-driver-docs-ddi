@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5a71a8e9-323e-4f14-8c97-d6ce4e9bfe65
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugRegisters2::GetNumberPseudoRegisters, IDebugRegisters_e12950ac-f9b2-4ed2-9ce1-bc3088b65ef1.xml, IDebugRegisters2 interface [Windows Debugging], GetNumberPseudoRegisters method, GetNumberPseudoRegisters method [Windows Debugging], IDebugRegisters2 interface, debugger.getnumberpseudoregisters, IDebugRegisters2, GetNumberPseudoRegisters, GetNumberPseudoRegisters method [Windows Debugging], IDebugRegisters2::GetNumberPseudoRegisters
+ms.keywords: debugger.getnumberpseudoregisters, GetNumberPseudoRegisters method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_e12950ac-f9b2-4ed2-9ce1-bc3088b65ef1.xml, IDebugRegisters2::GetNumberPseudoRegisters, IDebugRegisters2, GetNumberPseudoRegisters, GetNumberPseudoRegisters method [Windows Debugging], dbgeng/IDebugRegisters2::GetNumberPseudoRegisters, IDebugRegisters2 interface [Windows Debugging], GetNumberPseudoRegisters method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -65,6 +65,7 @@ Receives the number of pseudo-registers that are maintained by the debugger engi
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>

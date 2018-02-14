@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 2e076f2f-59e3-43ca-b83e-3079bbf41df3
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFIOTARGETGETDEVICE, WdfIoTargetGetDevice method, wdfiotarget/WdfIoTargetGetDevice, WdfIoTargetGetDevice, kmdf.wdfiotargetgetdevice, wdf.wdfiotargetgetdevice, DFIOTargetRef_796e5254-23b4-4ed1-b02b-66c5c8560769.xml
+ms.keywords: WdfIoTargetGetDevice method, PFN_WDFIOTARGETGETDEVICE, WdfIoTargetGetDevice, wdf.wdfiotargetgetdevice, kmdf.wdfiotargetgetdevice, DFIOTargetRef_796e5254-23b4-4ed1-b02b-66c5c8560769.xml, wdfiotarget/WdfIoTargetGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,31 @@ For more information about <b>WdfIoTargetGetDevice</b>, see <a href="https://msd
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
+
+#### Examples
+
+The following code example is shows how an <a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_query_remove.md">EvtIoTargetQueryRemove</a> callback function can call <b>WdfIoTargetGetDevice</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+MyEvtIoTargetQueryRemove(
+    WDFIOTARGET IoTarget
+)
+{
+WDFDEVICE device;
+...
+device = WdfIoTargetGetDevice(IoTarget);
+...
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -95,9 +120,15 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetiotarget.md">WdfUsbTargetDeviceGetIoTarget</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+
 
  
 

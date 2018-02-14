@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D05EDC76-7A3E-4A9F-8950-8E54CDD16016
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlLongToULongPtr function [Kernel-Mode Driver Architecture], kernel.rtllongtoulongptr, ntintsafe/RtlLongToULongPtr, RtlLongToULongPtr
+ms.keywords: kernel.rtllongtoulongptr, ntintsafe/RtlLongToULongPtr, RtlLongToULongPtr function [Kernel-Mode Driver Architecture], RtlLongToULongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlLongToDWordPtr
 </li>

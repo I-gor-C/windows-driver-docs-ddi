@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a9b0ca27-dc46-4f9b-a3f9-51bbd759afc1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_42ed98f0-34b1-45d9-981e-e3e62411ad70.xml, IoFreeController, ntddk/IoFreeController, kernel.iofreecontroller, IoFreeController routine [Kernel-Mode Driver Architecture]
+ms.keywords: IoFreeController routine [Kernel-Mode Driver Architecture], kernel.iofreecontroller, ntddk/IoFreeController, k104_42ed98f0-34b1-45d9-981e-e3e62411ad70.xml, IoFreeController
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	IoFreeController
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -85,9 +85,15 @@ The connection between the current target device object and the controller objec
 
 <a href="..\ntddk\nf-ntddk-iocreatecontroller.md">IoCreateController</a>
 
+
+
 <a href="..\ntddk\nf-ntddk-ioallocatecontroller.md">IoAllocateController</a>
 
+
+
 <a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 55b2d603-f3ac-4a7a-91f5-83d908d1e14b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportregisterbugcheckcallback, VideoPortRegisterBugcheckCallback, VideoPortRegisterBugcheckCallback function [Display Devices], VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, video/VideoPortRegisterBugcheckCallback
+ms.keywords: VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, VideoPortRegisterBugcheckCallback function [Display Devices], VideoPortRegisterBugcheckCallback, video/VideoPortRegisterBugcheckCallback, display.videoportregisterbugcheckcallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -109,6 +109,8 @@ For more information, see <a href="https://msdn.microsoft.com/181fd4f2-feed-4759
 ## See Also
 
 <a href="..\video\nc-video-pvideo_bugcheck_callback.md">HwVidBugcheckCallback</a>
+
+
 
  
 

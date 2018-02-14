@@ -7,8 +7,8 @@ old-location: buses\ufxendpointcreate.htm
 old-project: usbref
 ms.assetid: 060CADB7-AAC9-401A-9198-FC306CE74A34
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: UfxEndpointCreate method [Buses], buses.ufxendpointcreate, UfxEndpointCreate, ufxclient/UfxEndpointCreate
+ms.date: 2/8/2018
+ms.keywords: UfxEndpointCreate method [Buses], buses.ufxendpointcreate, ufxclient/UfxEndpointCreate, UfxEndpointCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,6 +105,7 @@ If the operation is successful, the method returns STATUS_SUCCESS, or another st
 ## Remarks
 
 The transfer queue handles the following IOCTLs related to endpoint transfers:
+
 <ul>
 <li>
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_control_status_handshake_in.md">IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN</a>
@@ -122,7 +123,9 @@ The transfer queue handles the following IOCTLs related to endpoint transfers:
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_transfer_out.md">IOCTL_INTERNAL_USBFN_TRANSFER_OUT</a>
 </li>
 </ul>
+
 The command queue will handle the following IOCTLs:
+
 <ul>
 <li>
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_get_pipe_state.md">IOCTL_INTERNAL_USBFN_GET_PIPE_STATE</a>
@@ -133,7 +136,9 @@ The command queue will handle the following IOCTLs:
 <li>
 <a href="..\ufxbase\ni-ufxbase-ioctl_internal_usbfn_descriptor_update.md">IOCTL_INTERNAL_USBFN_DESCRIPTOR_UPDATE</a>
 </li>
-</ul>The following example shows how to create a UFXENDPOINT object and initialize its context.
+</ul>
+The following example shows how to create a UFXENDPOINT object and initialize its context.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0A09990B-DAB9-41D3-80BF-38CD6AF39625
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdevice/WdfDeviceQueryInterfaceProperty, WdfDeviceQueryInterfaceProperty method, WdfDeviceQueryInterfaceProperty, wdf.wdfdevicequeryinterfaceproperty, PFN_WDFDEVICEQUERYINTERFACEPROPERTY
+ms.keywords: wdf.wdfdevicequeryinterfaceproperty, WdfDeviceQueryInterfaceProperty, wdfdevice/WdfDeviceQueryInterfaceProperty, PFN_WDFDEVICEQUERYINTERFACEPROPERTY, WdfDeviceQueryInterfaceProperty method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,7 @@ A pointer to a <b>DEVPROPTYPE</b>-typed variable that identifies the type of pro
 ## Return Value
 
 If the <b>WdfDeviceQueryInterfaceProperty</b> method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -120,7 +121,8 @@ The specified parameter value is invalid.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -147,11 +149,19 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 
 <a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
+
+
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
+
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
+
+
 
  
 

@@ -74,6 +74,7 @@ Size of the output buffer.
 ## Remarks
 <h3><a id="ddk_ioctl_wait_on_device_event_si"></a><a id="DDK_IOCTL_WAIT_ON_DEVICE_EVENT_SI"></a>DeviceIoControl Parameters</h3>
 
+
 When the <b>DeviceloControl</b> function is called with the IOCTL_WAIT_ON_DEVICE_EVENT control code, the caller must specify a buffer pointer as the function's <i>lpOutBuffer</i> parameter. The buffer must be large enough to hold the largest packet the device can send on its interrupt pipe.
 
 The type and size of information returned are device-specific. For example, a still image device might issue an interrupt when a user presses one of its buttons, and the return packet might indicate which button was pressed.

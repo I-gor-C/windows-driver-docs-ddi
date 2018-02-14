@@ -7,7 +7,7 @@ old-location: buses\ioctl_internal_usbfn_get_pipe_state.htm
 old-project: usbref
 ms.assetid: CFBFC5E4-852C-4287-A85E-2EF3C89FE474
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.ioctl_internal_usbfn_get_pipe_state, IOCTL_INTERNAL_USBFN_GET_PIPE_STATE control code [Buses], IOCTL_INTERNAL_USBFN_GET_PIPE_STATE, usbfnioctl/IOCTL_INTERNAL_USBFN_GET_PIPE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices

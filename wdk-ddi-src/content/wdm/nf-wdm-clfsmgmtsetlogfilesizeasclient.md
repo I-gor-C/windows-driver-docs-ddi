@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: C049A6BE-6E2B-46F2-B7CF-316E4CDB35E4
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsMgmtSetLogFileSizeAsClient, wdm/ClfsMgmtSetLogFileSizeAsClient, ClfsMgmtSetLogFileSizeAsClient routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtsetlogfilesizeasclient_
+ms.keywords: ClfsMgmtSetLogFileSizeAsClient routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtsetlogfilesizeasclient_, ClfsMgmtSetLogFileSizeAsClient, wdm/ClfsMgmtSetLogFileSizeAsClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,6 +92,7 @@ Not used.
 ## Return Value
 
 The <b>ClfsMgmtSetLogFileSizeAsClient</b> routine returns an NTSTATUS value.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -163,7 +164,8 @@ A policy on the specified log   prevented the operation from completing. This ma
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -180,6 +182,8 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541830">CLFS Management Library Routines</a>
+
+
 
  
 

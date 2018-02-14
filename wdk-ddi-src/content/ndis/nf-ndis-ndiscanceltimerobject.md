@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b66652b7-2e02-49f5-a7e3-60ff35363a19
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndiscanceltimerobject, NdisCancelTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_39b68ae4-4fd7-4609-aebc-e2be21bead04.xml, ndis/NdisCancelTimerObject, NdisCancelTimerObject
+ms.keywords: netvista.ndiscanceltimerobject, ndis_timer_ref_39b68ae4-4fd7-4609-aebc-e2be21bead04.xml, NdisCancelTimerObject function [Network Drivers Starting with Windows Vista], ndis/NdisCancelTimerObject, NdisCancelTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisCancelTimerObject
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -87,6 +87,7 @@ NDIS drivers should call
 If a nonzero value was specified in the 
     <i>MillisecondsPeriod</i> parameter of the 
     <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function, the timer is known as a <i>periodic timer</i>. If a zero value was specified in the <i>MillisecondsPeriod</i> parameter, the timer is known as a <i>one-shot timer</i>. The following points apply to canceling both types of timers:
+
 <ul>
 <li>
 If  the caller of
@@ -118,11 +119,17 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
-
 <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 
+
+
+<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
+
+
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID: NF:ndis.NdisMResetComplete
-title: NdisMResetComplete function
+title: NdisMResetComplete macro
 author: windows-driver-content
 description: The NdisMResetComplete function returns the final status of a reset request for which the miniport driver previously returned NDIS_STATUS_PENDING.
 old-location: netvista\ndismresetcomplete.htm
@@ -8,10 +8,10 @@ old-project: netvista
 ms.assetid: 3da12a14-a90a-46a6-b67e-55044fdc3ca1
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: miniport_ndis_functions_ref_cea3e0dd-c6cb-49a7-86e3-68b779a355d2.xml, ndis/NdisMResetComplete, netvista.ndismresetcomplete, NdisMResetComplete function [Network Drivers Starting with Windows Vista], NdisMResetComplete
+ms.keywords: NdisMResetComplete function [Network Drivers Starting with Windows Vista], miniport_ndis_functions_ref_cea3e0dd-c6cb-49a7-86e3-68b779a355d2.xml, netvista.ndismresetcomplete, NdisMResetComplete, ndis/NdisMResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Universal
@@ -41,7 +41,7 @@ apiname:
 -	NdisMResetComplete
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -64,28 +64,15 @@ VOID NdisMResetComplete(
 
 `MiniportAdapterHandle`
 
-The miniport adapter handle that NDIS originally passed to the 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
+
 
 `Status`
 
-The final status of the reset operation just completed
+
 
 `AddressingReset`
 
-A Boolean value that is <b>TRUE</b> if NDIS is responsible for restoring the settings for multicast
-     addresses, packet filters, and task offload information. In this case, the miniport driver is
-     responsible for restoring the rest of the configuration settings for the network interface card (NIC)
-     referenced by 
-     <i>MiniportAdapterHandle</i> . 
-     
 
-If 
-     <i>AddressingReset</i> is <b>FALSE</b>, the miniport driver is responsible for restoring all of the
-     configuration settings for the NIC.
-
-For more information, see 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff546572">Hardware Reset</a>.
 
 
 ## Return Value
@@ -130,9 +117,15 @@ In NDIS 6.0 and later, callers of
 
 <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
 
-<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
+
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
+
+
 
  
 

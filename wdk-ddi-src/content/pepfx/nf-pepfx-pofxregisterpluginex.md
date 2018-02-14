@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 68753690-A6DC-46BE-9981-F395B98C3245
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PoFxRegisterPluginEx, PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], pepfx/PoFxRegisterPluginEx, kernel.pofxregisterpluginex
+ms.keywords: pepfx/PoFxRegisterPluginEx, PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], PoFxRegisterPluginEx, kernel.pofxregisterpluginex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	PoFxRegisterPluginEx
 product: Windows
 targetos: Windows
-req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
+req.typenames: "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
 
@@ -67,6 +67,7 @@ A pointer to a <a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</
 `Flags`
 
 A set of flag bits for configuring the PEP interface. Set this member to zero or to the following value.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -86,6 +87,7 @@ A pointer to a <a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">
 ## Return Value
 
 <b>PoFxRegisterPluginEx</b> returns STATUS_SUCCESS if the call successfully registers the PEP. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return value</th>
@@ -147,11 +149,17 @@ The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.
 
 ## See Also
 
-<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
+
+
 
 <a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a>
 
-<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
+
+
+<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+
+
 
  
 

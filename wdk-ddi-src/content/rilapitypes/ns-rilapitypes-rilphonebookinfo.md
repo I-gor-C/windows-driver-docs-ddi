@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: bd302343-c9e3-4d1d-b991-ac19fbdb2da3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RILPHONEBOOKINFO structure [Network Drivers Starting with Windows Vista], *LPRILPHONEBOOKINFO, RILPHONEBOOKINFO, netvista.rilphonebookinfo_2, rilapitypes/RILPHONEBOOKINFO
+ms.keywords: netvista.rilphonebookinfo_2, rilapitypes/RILPHONEBOOKINFO, RILPHONEBOOKINFO, RILPHONEBOOKINFO structure [Network Drivers Starting with Windows Vista], *LPRILPHONEBOOKINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	RILPHONEBOOKINFO
 product: Windows
 targetos: Windows
-req.typenames: RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
+req.typenames: "*LPRILPHONEBOOKINFO, RILPHONEBOOKINFO"
 req.product: Windows 10 or later.
 ---
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTDEV_QUERY_DEVICE_NAME IOCTL
@@ -83,6 +83,8 @@ If the output buffer is too small to hold the device name, the mount manager cli
 ## See Also
 
 <a href="..\mountmgr\ns-mountmgr-_mountdev_name.md">MOUNTDEV_NAME</a>
+
+
 
  
 

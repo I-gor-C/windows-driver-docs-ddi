@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorsourcemodesetAcquirepreferredmodeinfo(
 ## Return Value
 
 The <b>pfnAcquirePreferredModeInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

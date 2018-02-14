@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4b6d6791-6c13-49ee-a588-a0ed514279b2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/ZwRollbackComplete, ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml, wdm/NtRollbackComplete, NtRollbackComplete, kernel.zwrollbackcomplete, ZwRollbackComplete, ZwRollbackComplete routine [Kernel-Mode Driver Architecture]
+ms.keywords: NtRollbackComplete, kernel.zwrollbackcomplete, ZwRollbackComplete, wdm/NtRollbackComplete, wdm/ZwRollbackComplete, ZwRollbackComplete routine [Kernel-Mode Driver Architecture], ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>ZwRollbackComplete</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -121,7 +122,8 @@ The caller does not have appropriate access to the enlistment object.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -148,13 +150,21 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
+<a href="..\wdm\nf-wdm-tmrollbackcomplete.md">TmRollbackComplete</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
 
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 
-<a href="..\wdm\nf-wdm-tmrollbackcomplete.md">TmRollbackComplete</a>
+
 
  
 

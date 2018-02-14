@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 660ed1ad-3aad-44a9-9523-e167f84fe9d5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_6431ed7a-35b6-4c48-8477-390c4c31220c.xml, kernel.iowmiqueryalldatamultiple, wdm/IoWMIQueryAllDataMultiple, IoWMIQueryAllDataMultiple, IoWMIQueryAllDataMultiple routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/IoWMIQueryAllDataMultiple, k104_6431ed7a-35b6-4c48-8477-390c4c31220c.xml, IoWMIQueryAllDataMultiple routine [Kernel-Mode Driver Architecture], IoWMIQueryAllDataMultiple, kernel.iowmiqueryalldatamultiple
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ Pointer to the buffer where the routine returns the WMI data. The routine return
 ## Return Value
 
 The routine returns an NTSTATUS code. Possible return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -132,9 +133,15 @@ To query a single WMI class, use <a href="..\wdm\nf-wdm-iowmiqueryalldata.md">Io
 
 <a href="..\wdm\nf-wdm-iowmiqueryalldata.md">IoWMIQueryAllData</a>
 
+
+
 <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: b912449b-45d1-473d-aa14-b3f3ffbfefff
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDI_ADAPTERCALLBACKS, D3D_other_Structs_6919397d-68ab-4ada-9f39-bf08bc0ac9ae.xml, _D3DDDI_ADAPTERCALLBACKS, d3dumddi/D3DDDI_ADAPTERCALLBACKS, D3DDDI_ADAPTERCALLBACKS structure [Display Devices], display.d3dddi_adaptercallbacks
+ms.keywords: display.d3dddi_adaptercallbacks, D3D_other_Structs_6919397d-68ab-4ada-9f39-bf08bc0ac9ae.xml, d3dumddi/D3DDDI_ADAPTERCALLBACKS, D3DDDI_ADAPTERCALLBACKS structure [Display Devices], D3DDDI_ADAPTERCALLBACKS, _D3DDDI_ADAPTERCALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -67,6 +67,7 @@ A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.m
 
 ## Remarks
 The following code example demonstrates the function declarations for the functions that the members of D3DDDI_ADAPTERCALLBACKS point to.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -87,13 +88,21 @@ typedef HRESULT (APIENTRY CALLBACK *PFND3DDDI_GETMULTISAMPLEMETHODLISTCB)(HANDLE
 
 ## See Also
 
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_openadapter.md">OpenAdapter</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_openadapter.md">D3DDDIARG_OPENADAPTER</a>
+
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getmultisamplemethodlistcb.md">pfnGetMultisampleMethodListCb</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_openadapter.md">OpenAdapter</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a>
 
  
 

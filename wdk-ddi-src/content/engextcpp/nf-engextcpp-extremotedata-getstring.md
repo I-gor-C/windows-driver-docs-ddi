@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: ff0aa7a7-1efd-4d55-8865-f36c039b27a1
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.extremotedata_getstring, ExtRemoteData, GetString method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetString method, EngExtCpp_Ref_0e8b8a7f-d6d4-4262-a1ed-5829a83ec80d.xml, GetString method [Windows Debugging], ExtRemoteData class, GetString, ExtRemoteData::GetString
+ms.keywords: ExtRemoteData::GetString, GetString, ExtRemoteData, EngExtCpp_Ref_0e8b8a7f-d6d4-4262-a1ed-5829a83ec80d.xml, GetString method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getstring, GetString method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetString method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	ExtRemoteData.GetString
 product: Windows
 targetos: Windows
-req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames: "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
 ---
 
 
@@ -63,7 +63,9 @@ PTSTR GetString(
 `Buffer`
 
 Receives the null-terminated string read from the target.  The type of <i>Buffer</i> must be the same as the type of the string on the target.  If the string is a Unicode string, the type of <i>Buffer</i> must be PWSTR.  If the string is a multibyte string, the type of <i>Buffer</i> must be PSTR.
-<div class="alert"><b>Note</b>   the remainder of the <i>Buffer</i> buffer, after the string, can be overwritten by this method.</div><div> </div>
+
+<div class="alert"><b>Note</b>   the remainder of the <i>Buffer</i> buffer, after the string, can be overwritten by this method.</div>
+<div> </div>
 
 `BufferChars`
 
@@ -101,7 +103,11 @@ This method can only be used if the region represented by the <a href="..\engext
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544088">ExtRemoteData::ReadBuffer</a>
 
+
+
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+
+
 
  
 

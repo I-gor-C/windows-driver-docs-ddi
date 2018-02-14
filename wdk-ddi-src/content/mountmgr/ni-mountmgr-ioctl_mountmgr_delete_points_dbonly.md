@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTMGR_DELETE_POINTS_DBONLY
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_DELETE_POINTS_DBONLY IOCTL
@@ -81,6 +81,8 @@ See <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNT
 ## See Also
 
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNTMGR_QUERY_POINTS</a>
+
+
 
  
 

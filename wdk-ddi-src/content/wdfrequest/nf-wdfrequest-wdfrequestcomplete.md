@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: cb5bfd4f-e45a-4894-acb4-0ece2de91510
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFRequestObjectRef_e723fb4c-f8f2-4eb9-9152-7f7ac74329df.xml, wdfrequest/WdfRequestComplete, WdfRequestComplete, PFN_WDFREQUESTCOMPLETE, wdf.wdfrequestcomplete, kmdf.wdfrequestcomplete, WdfRequestComplete method
+ms.keywords: kmdf.wdfrequestcomplete, DFRequestObjectRef_e723fb4c-f8f2-4eb9-9152-7f7ac74329df.xml, wdfrequest/WdfRequestComplete, WdfRequestComplete method, WdfRequestComplete, PFN_WDFREQUESTCOMPLETE, wdf.wdfrequestcomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,14 +75,17 @@ An <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTS
 
 
 
+
 #### STATUS_SUCCESS
 
 The driver is successfully completing the request.
 
 
+
 #### STATUS_CANCELLED
 
 The driver is canceling the request.
+
 
 
 #### STATUS_UNSUCCESSFUL
@@ -112,6 +115,59 @@ When your driver calls <b>WdfRequestComplete</b>, the framework supplies a defau
 
 For more information about calling <b>WdfRequestComplete</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
+
+#### Examples
+
+The following code example is a section of a request handler. The request handler accepts only read and write requests, and it completes a each request with an error status if the request type is not read or write.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+MyEvtIoDefault(
+    IN WDFQUEUE  Queue,
+    IN WDFREQUEST  Request
+    )
+{
+    WDF_REQUEST_PARAMETERS  params;
+    WDF_DMA_DIRECTION  direction;
+
+...
+    WDF_REQUEST_PARAMETERS_INIT(&amp;params);
+
+    WdfRequestGetParameters(
+                            Request,
+                            &amp;params
+                            );
+
+    //
+    // Validate and gather parameters.
+    //
+    switch (params.Type) {
+        case WdfRequestTypeRead:
+            length = params.Parameters.Read.Length;
+            direction = WdfDmaDirectionReadFromDevice;
+            break;
+        case WdfRequestTypeWrite:
+            length = params.Parameters.Write.Length;
+            direction = WdfDmaDirectionWriteToDevice;
+            break;
+        default:
+            WdfRequestComplete(
+                               Request,
+                               STATUS_INVALID_DEVICE_REQUEST
+                               );
+            return;
+    }
+...
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -125,17 +181,29 @@ For more information about calling <b>WdfRequestComplete</b>, see <a href="https
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithpriorityboost.md">WdfRequestCompleteWithPriorityBoost</a>
 
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a>
+
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithpriorityboost.md">WdfRequestCompleteWithPriorityBoost</a>
+
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
+
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetstatus.md">WdfRequestGetStatus</a>
+
+
 
  
 

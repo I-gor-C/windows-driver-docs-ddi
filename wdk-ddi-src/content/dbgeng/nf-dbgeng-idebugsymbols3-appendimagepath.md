@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: faafc6d0-f311-46c1-87c1-8b0ea20984db
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugSymbols3::AppendImagePath, IDebugSymbols_ea3dc04a-42d9-4457-830d-5544f50c5a97.xml, dbgeng/IDebugSymbols2::AppendImagePath, IDebugSymbols::AppendImagePath, dbgeng/IDebugSymbols::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AppendImagePath method, IDebugSymbols3::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3, IDebugSymbols interface [Windows Debugging], AppendImagePath method, IDebugSymbols2 interface [Windows Debugging], AppendImagePath method, IDebugSymbols2::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols2 interface, debugger.appendimagepath, AppendImagePath method [Windows Debugging], IDebugSymbols3 interface, AppendImagePath
+ms.keywords: AppendImagePath method [Windows Debugging], IDebugSymbols3 interface, debugger.appendimagepath, dbgeng/IDebugSymbols2::AppendImagePath, IDebugSymbols interface [Windows Debugging], AppendImagePath method, AppendImagePath, IDebugSymbols3 interface [Windows Debugging], AppendImagePath method, IDebugSymbols_ea3dc04a-42d9-4457-830d-5544f50c5a97.xml, AppendImagePath method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], AppendImagePath method, IDebugSymbols2::AppendImagePath, dbgeng/IDebugSymbols::AppendImagePath, IDebugSymbols::AppendImagePath, dbgeng/IDebugSymbols3::AppendImagePath, IDebugSymbols, IDebugSymbols2, IDebugSymbols3::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols interface, AppendImagePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -82,7 +82,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -101,15 +102,25 @@ The executable image path can consist of several directories separated by semico
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546851">GetImagePath</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556708">SetImagePath</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556708">SetImagePath</a>
+
+
 
  
 

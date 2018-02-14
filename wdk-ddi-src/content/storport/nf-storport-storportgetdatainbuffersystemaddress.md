@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3FA48004-E96A-4ED7-935F-B7F58A74FB1F
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetDataInBufferSystemAddress, storport/StorPortGetDataInBufferSystemAddress, StorPortGetDataInBufferSystemAddress routine [Storage Devices], storage.storportgetdatainbuffersystemaddress
+ms.keywords: storport/StorPortGetDataInBufferSystemAddress, StorPortGetDataInBufferSystemAddress, storage.storportgetdatainbuffersystemaddress, StorPortGetDataInBufferSystemAddress routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,6 +77,7 @@ A pointer to  a an  address  value to receive the system address for the input d
 ## Return Value
 
 A status value indicating the result of the notification. This can be one of these values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -140,9 +141,13 @@ A system address can not be assigned.
 
 ## See Also
 
+<a href="..\storport\nf-storport-storportgetdatainbuffermdl.md">StorPortGetDataInBufferMdl</a>
+
+
+
 <a href="..\storport\nf-storport-storportgetdatainbufferscattergatherlist.md">StorPortGetDataInBufferScatterGatherList</a>
 
-<a href="..\storport\nf-storport-storportgetdatainbuffermdl.md">StorPortGetDataInBufferMdl</a>
+
 
  
 

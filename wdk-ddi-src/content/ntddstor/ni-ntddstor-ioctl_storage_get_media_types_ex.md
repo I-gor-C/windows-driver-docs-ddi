@@ -78,9 +78,13 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 ## See Also
 
+<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
+
+
+
 <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
 
-<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
+
 
  
 

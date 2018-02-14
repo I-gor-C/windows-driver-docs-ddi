@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortStateChangeDetected, STATE_CHANGE_TARGET, StorPortStateChangeDetected, ATTRIBUTE_VM_PASSTHROUGH_LUN, STATE_CHANGE_BUS, STATE_CHANGE_LUN, storage.storportstatechangedetected, StorPortStateChangeDetected routine [Storage Devices]
+ms.keywords: StorPortStateChangeDetected, STATE_CHANGE_BUS, ATTRIBUTE_VM_PASSTHROUGH_LUN, StorPortStateChangeDetected routine [Storage Devices], STATE_CHANGE_TARGET, STATE_CHANGE_LUN, storage.storportstatechangedetected, storport/StorPortStateChangeDetected
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,6 +70,7 @@ A pointer to the hardware device extension. This is a per-HBA storage area that 
 `ChangedEntity`
 
 Flags indicating the entities whose state has changed. This is a bitwise <b>OR</b> combination of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,6 +118,7 @@ The address of the entity with the state change. <i>Address</i> value cannot cha
 `Attributes`
 
 Attributes associated with the entity. These are a bitwise <b>OR</b> combination of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -146,6 +148,7 @@ A miniport-supplied context value that is included when the routine set in <i>Hw
 ## Return Value
 
 A status value indicating the result of the notification. This can be one of these values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -206,6 +209,8 @@ If multiple flags are specified in <i>ChangedEntity</i>, the  flag with greater 
 ## See Also
 
 <a href="..\storport\nc-storport-hw_state_change.md">HwStorStateChange</a>
+
+
 
  
 

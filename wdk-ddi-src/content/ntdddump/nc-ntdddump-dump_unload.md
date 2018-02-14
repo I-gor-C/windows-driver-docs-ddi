@@ -40,7 +40,7 @@ apiname:
 -	Dump_Unload
 product: Windows
 targetos: Windows
-req.typenames: "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
+req.typenames: VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 
@@ -80,6 +80,8 @@ If the routine succeeds, it must return STATUS_SUCCESS. Otherwise, it must retur
 ## See Also
 
 <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
+
+
 
  
 

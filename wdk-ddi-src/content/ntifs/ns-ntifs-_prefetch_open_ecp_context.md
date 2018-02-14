@@ -7,8 +7,8 @@ old-location: ifsk\prefetch_open_ecp_context.htm
 old-project: ifsk
 ms.assetid: 199a3003-a7dd-48a3-aa76-550332be26f3
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: PREFETCH_OPEN_ECP_CONTEXT, ECP_Structures_bd946e05-ef42-4fcc-93f8-bf96b6440817.xml, _PREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT structure [Installable File System Drivers], ntifs/PPREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT, PPREFETCH_OPEN_ECP_CONTEXT, PPREFETCH_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], ifsk.prefetch_open_ecp_context, ntifs/PREFETCH_OPEN_ECP_CONTEXT
+ms.date: 2/7/2018
+ms.keywords: "_PREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT, ntifs/PPREFETCH_OPEN_ECP_CONTEXT, ntifs/PREFETCH_OPEN_ECP_CONTEXT, ifsk.prefetch_open_ecp_context, ECP_Structures_bd946e05-ef42-4fcc-93f8-bf96b6440817.xml, PPREFETCH_OPEN_ECP_CONTEXT, PPREFETCH_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], PREFETCH_OPEN_ECP_CONTEXT structure [Installable File System Drivers], PREFETCH_OPEN_ECP_CONTEXT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PREFETCH_OPEN_ECP_CONTEXT
 product: Windows
 targetos: Windows
-req.typenames: PREFETCH_OPEN_ECP_CONTEXT, *PPREFETCH_OPEN_ECP_CONTEXT
+req.typenames: "*PPREFETCH_OPEN_ECP_CONTEXT, PREFETCH_OPEN_ECP_CONTEXT"
 ---
 
 # _PREFETCH_OPEN_ECP_CONTEXT structure
@@ -70,6 +70,7 @@ The memory manager can cache the prefetcher file object. The memory manager can 
 When a file system filter driver determines that a cleanup operation occurred on a prefetcher file object, the file system filter driver should no longer consider that file object to be prefetcher-opened.
 
 The following are common operations that the prefetcher performs (however, in these operations, the prefetcher never changes file contents):
+
 <ul>
 <li>
 Volume open and close
@@ -95,7 +96,9 @@ Create image and data section
 Perform asynchronous paging I/O
 
 </li>
-</ul>To avoid inducing a possible deadlock situation, a file system filter driver should:
+</ul>
+To avoid inducing a possible deadlock situation, a file system filter driver should:
+
 <ul>
 <li>
 Never block any prefetcher operations.
@@ -105,7 +108,8 @@ Never block any prefetcher operations.
 Pass prefetcher operations through without issuing other file system requests. 
 
 </li>
-</ul>For any application or driver to access any of the data that is being prefetched, it must open its own handle to the file or create a section or both.
+</ul>
+For any application or driver to access any of the data that is being prefetched, it must open its own handle to the file or create a section or both.
 
 For information about how to use ECPs to associate additional information with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> operation on a file, see <a href="https://msdn.microsoft.com/e32aeec6-1a0a-4d21-8358-89d9fc0a15eb">Using Extra Create Parameters with an IRP_MJ_CREATE Operation</a>. 
 

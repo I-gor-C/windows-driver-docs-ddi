@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: f9522de0-54cd-4afd-b8cd-06f229ac1325
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTQueryAllocationResidency, D3DKMTQueryAllocationResidency function [Display Devices], display.d3dkmtqueryallocationresidency, D3DKMTQueryAllocationResidency, OpenGL_Functions_4efd6e87-91b6-4cf2-8691-0463a9ab218a.xml
+ms.keywords: display.d3dkmtqueryallocationresidency, d3dkmthk/D3DKMTQueryAllocationResidency, OpenGL_Functions_4efd6e87-91b6-4cf2-8691-0463a9ab218a.xml, D3DKMTQueryAllocationResidency, D3DKMTQueryAllocationResidency function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTQueryAllocationResidency</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -106,7 +107,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -123,6 +125,8 @@ This function might also return other NTSTATUS values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryallocationresidency.md">D3DKMT_QUERYALLOCATIONRESIDENCY</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 06635207-39fd-4ef9-b388-25513f8194fe
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDIDEVINFO_VCACHE structure [Display Devices], D3D_other_Structs_e212d960-07ba-4887-8b31-76ad54a7ae03.xml, display.d3dddidevinfo_vcache, d3dumddi/D3DDDIDEVINFO_VCACHE, _D3DDDIDEVINFO_VCACHE, D3DDDIDEVINFO_VCACHE
+ms.keywords: D3DDDIDEVINFO_VCACHE structure [Display Devices], D3D_other_Structs_e212d960-07ba-4887-8b31-76ad54a7ae03.xml, d3dumddi/D3DDDIDEVINFO_VCACHE, display.d3dddidevinfo_vcache, D3DDDIDEVINFO_VCACHE, _D3DDDIDEVINFO_VCACHE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ typedef struct _D3DDDIDEVINFO_VCACHE {
 `OptMethod`
 
 [out] The method of mesh optimization. The driver can use one of the following values to specify the mesh optimization that it uses.
+
 <table>
 <tr>
 <th>Value</th>
@@ -100,6 +101,7 @@ Vertex-cache-based optimization
 `Pattern`
 
 [out] The bit pattern. The driver must specify the bit pattern as a CACH four-character code (FOURCC) value. The driver can use the following MAKEFOURCC macro to specify the FOURCC value as CACH:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -124,17 +126,29 @@ Vertex-cache-based optimization
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getquerydata.md">D3DDDIARG_GETQUERYDATA</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getinfo.md">GetInfo</a>
+
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getquerydata.md">GetQueryData</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createquery.md">D3DDDIARG_CREATEQUERY</a>
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getinfo.md">GetInfo</a>
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createquery.md">D3DDDIARG_CREATEQUERY</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getquerydata.md">D3DDDIARG_GETQUERYDATA</a>
+
+
 
  
 

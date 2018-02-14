@@ -73,6 +73,7 @@ A handle to a display device (graphics context).
 ## Return Value
 
 <b>pfnPresentCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -111,7 +112,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
@@ -123,6 +125,40 @@ The user-mode display driver sets the <b>hContext</b> member of the <a href="..\
 
 <b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnPresentCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.
 
+
+
+
+#### Examples
+
+The following code example shows how to color-fill a destination surface.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    HRESULT hr=S_OK;
+    // A color-fill request that does not have a source surface
+    D3DDDICB_PRESENT    PresentCBData = {0};
+
+    PresentCBData.hContext = m_sContexts[MULTI_ENGINE_NODE_3D].hContext;
+    PresentCBData.hSrcAllocation = NULL;
+
+    if (pPresent-&gt;hDstResource) {
+        DWORD   dwDstSurf = ((DWORD)(DWORD_PTR)pPresent-&gt;hDstResource) + pPresent-&gt;DstSubResourceIndex;
+        _ASSERT(dwDstSurf &lt; m_RTbl.Size());
+        m_RTbl[dwDstSurf].m_qwBatch = m_qwBatch;
+        PresentCBData.hDstAllocation = R200GetSurfaceAllocHandle(m_pR200Ctx, dwDstSurf);
+    }
+
+    hr = m_d3dCallbacks.pfnPresentCb(m_hD3D, &amp;PresentCBData);
+
+    return hr;</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -132,15 +168,25 @@ The user-mode display driver sets the <b>hContext</b> member of the <a href="..\
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
-
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_present.md">D3DDDICB_PRESENT</a>
+
+
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+
+
+<a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+
+
 
  
 

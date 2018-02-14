@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: f5e06ff3-98ba-4443-8ea6-c32b063cd478
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_47b202e0-2a8b-4fb0-9cf2-b4ef3ddb9ff4.xml, VideoPortLockPages, video/VideoPortLockPages, display.videoportlockpages, VideoPortLockPages function [Display Devices]
+ms.keywords: VideoPortLockPages function [Display Devices], VideoPort_Functions_47b202e0-2a8b-4fb0-9cf2-b4ef3ddb9ff4.xml, video/VideoPortLockPages, display.videoportlockpages, VideoPortLockPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,7 @@ Pointer to an event that is to be set by the miniport driver, or <b>NULL</b>. Th
 `DmaFlags`
 
 Specifies the action to be performed. This parameter must be one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -143,6 +144,8 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## See Also
 
 <a href="..\video\nf-video-videoportlockbuffer.md">VideoPortLockBuffer</a>
+
+
 
  
 

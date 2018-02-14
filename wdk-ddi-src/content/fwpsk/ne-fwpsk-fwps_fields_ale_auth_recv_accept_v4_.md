@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8df0b735-26af-4ae3-a8bb-928f4f6068a2
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_APP_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_FLAGS, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_NEXTHOP_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SIO_FIREWALL_SYSTEM_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_USER_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_SUB_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_USER_ID, netvista.fwps_fields_ale_auth_recv_accept_v4, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_TUNNEL_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_SUB_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_QUARANTINE_EPOCH, FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_MAX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SIO_FIREWALL_SYSTEM_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_MACHINE_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_MACHINE_ID, FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_FLAGS, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_ICMP_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_PROFILE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_QUARANTINE_EPOCH, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NAP_CONTEXT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_PACKAGE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_REAUTHORIZE_REASON, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_ICMP_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_REAUTHORIZE_REASON, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_USER_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SUB_INTERFACE_INDEX, wfp_ref_5_const_3_data_fields_3a116070-78b0-4daf-be10-314d4ec331fd.xml, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_MAX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_PORT, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NAP_CONTEXT, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_NEXTHOP_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_PROFILE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_CURRENT_PROFILE_ID, FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_PROTOCOL, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_PORT
+ms.keywords: fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_REAUTHORIZE_REASON, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_FLAGS, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SIO_FIREWALL_SYSTEM_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NAP_CONTEXT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_NEXTHOP_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_TUNNEL_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_MACHINE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_PROTOCOL, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_REAUTHORIZE_REASON, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_MAX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_FLAGS, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_MAX, FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_USER_ID, FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_USER_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_TUNNEL_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NAP_CONTEXT, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_TUNNEL_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_ICMP_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_MACHINE_ID, wfp_ref_5_const_3_data_fields_3a116070-78b0-4daf-be10-314d4ec331fd.xml, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_TYPE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_NEXTHOP_INTERFACE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_PROFILE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_QUARANTINE_EPOCH, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_PROTOCOL, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_REMOTE_USER_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SIO_FIREWALL_SYSTEM_PORT, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_PROFILE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_ICMP_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_TUNNEL_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_SUB_INTERFACE_INDEX, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_PACKAGE_ID, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_INDEX, netvista.fwps_fields_ale_auth_recv_accept_v4, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_QUARANTINE_EPOCH, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_NEXTHOP_INTERFACE_TYPE, FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -106,7 +106,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                 <tr>
                     <td>FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ALE_PACKAGE_ID</td>
                     <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -133,8 +135,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ARRIVAL_INTERFACE_INDEX</td>
                     <td>The index of the arrival network interface, as enumerated by the network stack.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -143,8 +147,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
      (IANA). For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -154,8 +160,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
      by the IANA. For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -188,7 +196,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>The current profile identifier (network category) of the network interface. The possible network
      category values are: public (1), private (2), or domain (3).
      
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -207,7 +217,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_INTERFACE_QUARANTINE_EPOCH</td>
                     <td>The time that has passed since the last media state change occurred for the network interface.
      
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -221,8 +233,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_IP_ARRIVAL_INTERFACE</td>
                     <td>The LUID for the network interface that is associated with the arrival IP address.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -252,8 +266,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>The LUID for the network interface that is the next interface for the forwarding of the outbound
      packet.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -287,8 +303,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>The index of the network interface that will be used to continue forwarding of the outbound
      packet, as enumerated by the network stack.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -297,8 +315,10 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
      as defined by the Internet Assigned Numbers Authority (IANA). For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -306,7 +326,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>The index of the logical network interface that will be used to continue forwarding of the
      outbound packet, as enumerated by the network stack.
      
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -317,15 +339,19 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
      by the IANA. For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.
      
+
 <div class="alert"><b>Note</b>  Supported in Windows Server 2008, Windows Vista SP1, and later versions of
-     Windows.</div><div> </div></td>
+     Windows.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_ALE_AUTH_RECV_ACCEPT_V4_ORIGINAL_ICMP_TYPE</td>
                     <td>The original ICMP type for an exchange. The ICMP type field, as specified in RFC 792.
      
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -333,7 +359,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
                     <td>The original profile identifier (network category) of the network interface. The possible network
      category values are: public (1), private (2), or domain (3).
      
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -343,7 +371,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
      the Filtering Condition Reauthorization Flag of the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a> topic.
      
-<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -375,6 +405,7 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4_ {
 The following macros in 
     <i>Fwpsk.h</i> are defined with FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V4 enumeration
     values:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -410,7 +441,8 @@ The following macros in
 </pre>
 </td>
 </tr>
-</table></span></div>These macros are used to access the following IPV4 data fields:
+</table></span></div>
+These macros are used to access the following IPV4 data fields:
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -422,7 +454,11 @@ The following macros in
 
         <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+
+
 
  
 

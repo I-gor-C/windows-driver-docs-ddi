@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 7BC76F62-CA51-4C3F-BBF0-0B192EE871E6
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCxRetrieveReceiveMdl, SerCxRetrieveReceiveMdl method [Serial Ports], serports.sercxretrievereceivemdl, 1/SerCxRetrieveReceiveMdl
+ms.keywords: SerCxRetrieveReceiveMdl, serports.sercxretrievereceivemdl, SerCxRetrieveReceiveMdl method [Serial Ports], 1/SerCxRetrieveReceiveMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a location into which the method writes a pointer to the MDL.
 ## Return Value
 
 <b>SerCxRetrieveReceiveMdl</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,6 +114,8 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 ## See Also
 
 <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
+
+
 
  
 

@@ -89,6 +89,8 @@ This function is free-threaded.
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddicb_logstringtableentry.md">LogMarkerStringTableEntry</a>
 
+
+
  
 
  

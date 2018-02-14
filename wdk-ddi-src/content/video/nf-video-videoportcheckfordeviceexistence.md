@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortCheckForDeviceExistence function [Display Devices], VideoPortCheckForDeviceExistence, VideoPort_Functions_3cb7198b-a2fe-423c-b0f3-11a154d087af.xml, video/VideoPortCheckForDeviceExistence, display.videoportcheckfordeviceexistence
+ms.keywords: VideoPort_Functions_3cb7198b-a2fe-423c-b0f3-11a154d087af.xml, video/VideoPortCheckForDeviceExistence, VideoPortCheckForDeviceExistence function [Display Devices], VideoPortCheckForDeviceExistence, display.videoportcheckfordeviceexistence
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,6 +91,7 @@ Specifies the subsystem ID.
 `Flags`
 
 Is a set of flags that determine whether the <i>RevisionID</i> and <i>SubSystemID</i> parameters should be used in checking for the new device. This parameter can be the logical OR of the following values:
+
 <table>
 <tr>
 <th>Value</th>

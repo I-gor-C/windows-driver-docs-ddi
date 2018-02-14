@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 61fb66b9-afd7-4ec4-bbbb-66a287398484
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: PDLGPAGE, *PDLGPAGE, DLGPAGE structure [Print Devices], print.dlgpage, compstui/DLGPAGE, cpsuifnc_5054b61d-a4fc-4017-a491-4d753ce3e137.xml, compstui/PDLGPAGE, PDLGPAGE structure pointer [Print Devices], _DLGPAGE, DLGPAGE
+ms.keywords: cpsuifnc_5054b61d-a4fc-4017-a491-4d753ce3e137.xml, compstui/PDLGPAGE, DLGPAGE, print.dlgpage, PDLGPAGE, DLGPAGE structure [Print Devices], compstui/DLGPAGE, *PDLGPAGE, _DLGPAGE, PDLGPAGE structure pointer [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DLGPAGE
 product: Windows
 targetos: Windows
-req.typenames: DLGPAGE, *PDLGPAGE
+req.typenames: "*PDLGPAGE, DLGPAGE"
 ---
 
 # _DLGPAGE structure
@@ -79,6 +79,7 @@ Optional, caller-supplied DLGPROC-typed pointer to a dialog box procedure, used 
 `Flags`
 
 Caller-supplied bit flags, as described in the following table.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -113,6 +114,7 @@ If not set, <b>DlgTemplateID</b> contains a template resource identifier.
 `IconID`
 
 Caller-supplied, can be one of the following:
+
 <ul>
 <li>
 An icon resource identifier. This can be application-defined, or it can be one of the CPSUI-supplied, IDI_CPSUI-prefixed icon resource identifiers.
@@ -122,7 +124,8 @@ An icon resource identifier. This can be application-defined, or it can be one o
 An icon handle. If a handle is specified, DPF_ICONID_AS_HICON must be set in the <b>Flags</b> member.
 
 </li>
-</ul>The specified icon is displayed on the page tab. If this value is zero, an icon is not displayed.
+</ul>
+The specified icon is displayed on the page tab. If this value is zero, an icon is not displayed.
 
 `pTabName`
 

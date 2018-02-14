@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: da2d2b10-c02a-4786-9658-957271e9ba58
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hid.hidd_setnuminputbuffers, HidD_SetNumInputBuffers routine [Human Input Devices], hidfunc_d091d988-7b9d-44ef-ae48-e00af69c12f5.xml, hidsdi/HidD_SetNumInputBuffers, HidD_SetNumInputBuffers
+ms.keywords: hidsdi/HidD_SetNumInputBuffers, hidfunc_d091d988-7b9d-44ef-ae48-e00af69c12f5.xml, hid.hidd_setnuminputbuffers, HidD_SetNumInputBuffers routine [Human Input Devices], HidD_SetNumInputBuffers
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	HidD_SetNumInputBuffers
 product: Windows
 targetos: Windows
-req.typenames: HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 
@@ -90,9 +90,13 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="..\hidclass\ni-hidclass-ioctl_set_num_device_input_buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
+
+
+
 <a href="..\hidsdi\nf-hidsdi-hidd_getnuminputbuffers.md">HidD_GetNumInputBuffers</a>
 
-<a href="..\hidclass\ni-hidclass-ioctl_set_num_device_input_buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
+
 
  
 

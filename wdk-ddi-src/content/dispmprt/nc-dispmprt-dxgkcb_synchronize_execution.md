@@ -40,7 +40,7 @@ apiname:
 -	DxgkCbSynchronizeExecution
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -71,6 +71,7 @@ A handle that represents a display adapter. The display miniport driver previous
 `SynchronizeRoutine`
 
 A pointer to a function, implemented by the display miniport driver, that will be synchronized with <i>DxgkDdiInterruptRoutine</i>. The function must conform to the following prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -98,6 +99,7 @@ A pointer to a Boolean variable that receives the return value of <i>Synchronize
 ## Return Value
 
 <b>DxgkCbSynchronizeExecution</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -151,7 +153,11 @@ The function was unable to synchronize execution, possibly because the interrupt
 
 <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
 
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_interrupt_routine.md">DxgkDdiInterruptRoutine</a>
+
+
 
  
 

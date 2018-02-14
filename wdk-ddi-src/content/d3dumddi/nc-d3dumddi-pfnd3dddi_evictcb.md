@@ -89,6 +89,8 @@ Once the eviction request is queued, it is illegal to access the underlying allo
 
 <a href="..\d3dumddi\ns-d3dumddi-d3dddicb_evict.md">D3DDDICB_EVICT</a>
 
+
+
  
 
  

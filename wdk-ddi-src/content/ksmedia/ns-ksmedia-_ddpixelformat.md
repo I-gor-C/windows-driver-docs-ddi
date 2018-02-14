@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: bbc26c03-c154-4b1e-883e-2942b59ded02
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "*LPDDPIXELFORMAT, display.ddpixelformat, _DDPIXELFORMAT, ksmedia/DDPIXELFORMAT, DDPIXELFORMAT, LPDDPIXELFORMAT, ddstrcts_861a4798-418e-492a-b4cb-c4f1ce794a71.xml, LPDDPIXELFORMAT structure pointer [Display Devices], DDPIXELFORMAT structure [Display Devices], ksmedia/LPDDPIXELFORMAT"
+ms.keywords: "_DDPIXELFORMAT, ddstrcts_861a4798-418e-492a-b4cb-c4f1ce794a71.xml, LPDDPIXELFORMAT, LPDDPIXELFORMAT structure pointer [Display Devices], *LPDDPIXELFORMAT, ksmedia/DDPIXELFORMAT, display.ddpixelformat, DDPIXELFORMAT structure [Display Devices], ksmedia/LPDDPIXELFORMAT, DDPIXELFORMAT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DDPIXELFORMAT
 product: Windows
 targetos: Windows
-req.typenames: DDPIXELFORMAT, *LPDDPIXELFORMAT
+req.typenames: "*LPDDPIXELFORMAT, DDPIXELFORMAT"
 ---
 
 # _DDPIXELFORMAT structure
@@ -99,6 +99,7 @@ typedef struct _DDPIXELFORMAT {
 `dwFlags`
 
 Indicates a set of flags that specify optional control flags. This member is a bitwise OR of any of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -338,6 +339,7 @@ Specifies the size in bytes of the DDPIXELFORMAT structure. The driver must init
 
 ## Remarks
 The DirectX 8.0 and later runtime imposes the following rules on the operation (op) list:
+
 <ul>
 <li>
 Only one Endian-ness (big or little) for any DS format is allowed, for example D15S1 or S1D15, not both independent of other bits.
@@ -355,13 +357,15 @@ A list should not contain any alpha formats with D3DFORMAT_OP_DISPLAYMODE or D3D
 The D3DFORMAT_OP_3DACCELLERATION flag can only be set when the D3DFORMAT_OP_DISPLAYMODE flag is also set.
 
 </li>
-</ul>If the driver supports a lockable D16, it should report D3DFMT_D16_LOCKABLE in the op list; otherwise, it should report D3DFMT_D16.
+</ul>
+If the driver supports a lockable D16, it should report D3DFMT_D16_LOCKABLE in the op list; otherwise, it should report D3DFMT_D16.
 
 Drivers supporting multisampling must fill in the <b>MultiSampleCaps</b> in the Depth/Stencil formats for which multisampling can be supported. This allows the runtime to detect if a driver supports multisampling for combinations of render target and Z buffer formats. For additional information about the restrictions related to stretch blt multisampling, see the description of D3DPRASTERCAPS_STRETCHBLTMULTISAMPLE cap in the rastercaps contained in the D3DCAPS8 structure in the SDK documentation.
 
 The enumerated type D3DMULTISAMPLE_TYPE defined in <i>d3d8types.h</i> is used when setting the bits in <b>wFlipMSTypes</b> and <b>wBltMSTypes</b>. To specify support for a specific number of samples per pixel, simply logically shift 1 by the appropriate value from the D3DMULTISAMPLE_TYPE enumerated type less 1 and OR this into the appropriate field (<b>wFlipMSTypes</b> and <b>wBltMSTypes</b>).
 
 For example, if the driver supports both two and four samples per pixel when flipping (fullscreen mode) and four samples per pixel when blitting (windowed mode) on X8R8G8B8 surface the following entry would be reported in the surface format list.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -380,7 +384,8 @@ ddpf.MultiSampleCaps.wFlipMSTypes = (1 &lt;&lt; (D3DMULTISAMPLE_4_SAMPLES âˆ�
 ddpf.MultiSampleCaps.wBltMSTypes = (1 &lt;&lt; (D3DMULTISAMPLE_4_SAMPLES âˆ’ 1));</pre>
 </td>
 </tr>
-</table></span></div>It is not necessary to specify 1 &lt;&lt; (D3DMULTISAMPLE_NONE - 1) when reporting formats. It is assumed that any format reported can also be used without multisampling. If the hardware supports multisample rendering with a z-buffer the z-buffer formats reported should also include the supported samples-per-pixels.
+</table></span></div>
+It is not necessary to specify 1 &lt;&lt; (D3DMULTISAMPLE_NONE - 1) when reporting formats. It is assumed that any format reported can also be used without multisampling. If the hardware supports multisample rendering with a z-buffer the z-buffer formats reported should also include the supported samples-per-pixels.
 
 ## Requirements
 | &nbsp; | &nbsp; |

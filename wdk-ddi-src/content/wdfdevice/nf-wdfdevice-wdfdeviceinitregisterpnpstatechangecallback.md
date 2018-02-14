@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a14b790a-28d7-4fb8-823f-f37f05e7529f
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceInitRegisterPnpStateChangeCallback method, kmdf.wdfdeviceinitregisterpnpstatechangecallback, WdfDeviceInitRegisterPnpStateChangeCallback, DFDeviceObjectGeneralRef_51127783-092b-409d-85ad-e502760b62e7.xml, wdfdevice/WdfDeviceInitRegisterPnpStateChangeCallback, PFN_WDFDEVICEINITREGISTERPNPSTATECHANGECALLBACK, wdf.wdfdeviceinitregisterpnpstatechangecallback
+ms.keywords: wdf.wdfdeviceinitregisterpnpstatechangecallback, DFDeviceObjectGeneralRef_51127783-092b-409d-85ad-e502760b62e7.xml, WdfDeviceInitRegisterPnpStateChangeCallback method, WdfDeviceInitRegisterPnpStateChangeCallback, wdfdevice/WdfDeviceInitRegisterPnpStateChangeCallback, PFN_WDFDEVICEINITREGISTERPNPSTATECHANGECALLBACK, kmdf.wdfdeviceinitregisterpnpstatechangecallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,7 @@ An ORed combination of <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notificatio
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceInitRegisterPnpStateChangeCallback</b> returns STATUS_SUCCESS. Additional return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -119,6 +120,27 @@ If your driver calls <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, it must
 
 For more information about <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, see <a href="https://msdn.microsoft.com/5ef307c6-0310-4a83-a63f-3a6d96782013">State Machines in the Framework</a>.
 
+
+#### Examples
+
+The following code example registers an event callback function that the framework will call when the device's Plug and Play state machine changes state.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>status = WdfDeviceInitRegisterPnpStateChangeCallback(
+                                                     DeviceInit,
+                                                     WdfDevStatePnpEjectFailed,
+                                                     MyDrvPnPStateChangeCallback,
+                                                     StateNotificationAllStates
+                                                     );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -131,13 +153,21 @@ For more information about <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, s
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a>
+<a href="..\wdfdevice\ne-wdfdevice-_wdf_device_pnp_state.md">WDF_DEVICE_PNP_STATE</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
 
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a>
+
+
+
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_device_pnp_state.md">WDF_DEVICE_PNP_STATE</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d68d6e50-1373-43bc-a22b-dd9db47614c8
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.dxva_coppsetprotectionlevelcmddata, _DXVA_COPPSetProtectionLevelCmdData, dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], dxva/DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData
+ms.keywords: "_DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], display.dxva_coppsetprotectionlevelcmddata, dxva/DXVA_COPPSetProtectionLevelCmdData, dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ Specifies additional 32-bit data for the protection type in <b>ProtType</b>. Not
 `ProtLevel`
 
 Specifies the protection level to set for the protection type in <b>ProtType</b> or COPP_NoProtectionLevelAvailable (-1) if no protection level is available.
+
 <ul>
 <li>For COPP_ProtectionType_ACP, specifies one of the following values from the <b>COPP_ACP_Protection_Level</b> enumerated type:<ul>
 <li>COPP_ACP_Level0 or COPP_ACP_LevelMin (0)</li>
@@ -98,6 +99,7 @@ Specifies the protection level to set for the protection type in <b>ProtType</b>
 `ProtType`
 
 Specifies one of the following protection types to set on the physical connector associated with a COPP device:
+
 <ul>
 <li>
 COPP_ProtectionType_None (0x00)
@@ -126,9 +128,13 @@ COPP_ProtectionType_CGMSA (0x04)
 
 ## See Also
 
+<a href="..\dxva\ns-dxva-_dxva_coppcommand.md">DXVA_COPPCommand</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppcommand.md">DXVA_COPPCommand</a>
+
 
  
 

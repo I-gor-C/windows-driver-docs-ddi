@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a78655b3-3ca3-4632-9ac4-3efae6b10a0c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3D11_1_DDI_RASTERIZER_DESC, d3d10umddi/D3D11_1_DDI_RASTERIZER_DESC, D3D11_1_DDI_RASTERIZER_DESC structure [Display Devices], display.d3d11_1_ddi_rasterizer_desc
+ms.keywords: display.d3d11_1_ddi_rasterizer_desc, D3D11_1_DDI_RASTERIZER_DESC structure [Display Devices], D3D11_1_DDI_RASTERIZER_DESC, d3d10umddi/D3D11_1_DDI_RASTERIZER_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -73,6 +73,7 @@ typedef struct D3D11_1_DDI_RASTERIZER_DESC {
 `CullMode`
 
 [in] A value that specifies how back-facing triangles are culled, if at all. This member must be set to one of the following values from the D3D10_DDI_CULL_MODE enumeration.
+
 <table>
 <tr>
 <th>Value</th>
@@ -125,6 +126,7 @@ Cull back faces.
 `FillMode`
 
 [in] A value that specifies the fill mode for primitives. This member must be set to one of the following values from the D3D10_DDI_FILL_MODE enumeration.
+
 <table>
 <tr>
 <th>Value</th>

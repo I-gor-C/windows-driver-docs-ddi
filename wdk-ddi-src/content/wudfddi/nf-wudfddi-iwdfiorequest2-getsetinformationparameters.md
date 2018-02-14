@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 44872d92-4a71-4cc7-9f7c-c95477ac3264
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.iwdfiorequest2_getsetinformationparameters, wudfddi/IWDFIoRequest2::GetSetInformationParameters, UMDFRequestObjectRef_ed4dd211-1a7c-4ca3-9450-ab4320ece88d.xml, umdf.iwdfiorequest2_getsetinformationparameters, IWDFIoRequest2 interface, GetSetInformationParameters method, GetSetInformationParameters method, IWDFIoRequest2, IWDFIoRequest2::GetSetInformationParameters, GetSetInformationParameters, GetSetInformationParameters method, IWDFIoRequest2 interface
+ms.keywords: wdf.iwdfiorequest2_getsetinformationparameters, IWDFIoRequest2, GetSetInformationParameters, umdf.iwdfiorequest2_getsetinformationparameters, UMDFRequestObjectRef_ed4dd211-1a7c-4ca3-9450-ab4320ece88d.xml, IWDFIoRequest2 interface, GetSetInformationParameters method, GetSetInformationParameters method, IWDFIoRequest2::GetSetInformationParameters, GetSetInformationParameters method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::GetSetInformationParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -63,7 +63,7 @@ void GetSetInformationParameters(
 
 `pInformationClass`
 
-A pointer to a driver-allocated variable that receives a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.
+A pointer to a driver-allocated variable that receives a <a href="..\wdffileobject\ne-wdffileobject-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.
 
 `pSizeInBytes`
 
@@ -80,6 +80,81 @@ Your driver can call <b>GetSetInformationParameters</b> to obtain the parameters
 
 Your driver must verify that the specified buffer size is large enough to contain the file information that the driver must set.
 
+
+#### Examples
+
+The following code example is part of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. If the callback function receives a set information request, it retrieves the request's parameters. If the driver supports the specified type of information, it copies the information from the request's input buffer.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>void
+CMyQueue::OnDefaultIoHandler(
+    IWDFIoQueue*  pQueue,
+    IWDFIoRequest*  pRequest
+    )
+{
+    HRESULT hr;
+    WDF_FILE_INFORMATION_CLASS infoClass;
+    SIZE_T bufSize;
+    PFILE_BASIC_INFORMATION buffer;
+
+ if (WdfRequestQueryInformation==pRequest-&gt;GetType())
+    {
+        //
+        // Declare an IWDFIoRequest2 interface pointer and obtain the
+        // IWDFIoRequest2 interface from the IWDFIoRequest interface.
+        //
+        CComQIPtr&lt;IWDFIoRequest2&gt; r2 = pRequest;
+        // 
+        // Get the I/O request's parameters.
+        // 
+        r2-&gt;GetSetInformationParameters(&amp;infoClass,
+                                        &amp;bufSize);
+        // 
+        // This driver supports only FileBasicInformation.
+        // 
+        if (infoClass != FileBasicInformation)
+        {
+            hr = HRESULT_FROM_NT(STATUS_NOT_SUPPORTED);
+            goto exit;
+        }
+        // 
+        // Validate buffer size.
+        // 
+        if (bufferCb != sizeof(FILE_BASIC_INFORMATION))
+        {
+            hr = HRESULT_FROM_NT(STATUS_BUFFER_TOO_SMALL);
+            goto exit;
+        }
+        // 
+        // Get input buffer.
+        // 
+ hr = r2-&gt;RetrieveInputBuffer(sizeof(FILE_BASIC_INFORMATION), 
+                              (PVOID*) &amp;buffer,
+                              &amp;bufferCb);
+ if (SUCCEEDED(hr))
+        {
+            // 
+            // Copy file information from input buffer.
+            // 
+            CopyMemory(&amp;g_FileInfo,
+                       buffer,
+                       sizeof(FILE_BASIC_INFORMATION));
+        }
+ ...
+    }
+...
+exit:
+...
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -92,9 +167,13 @@ Your driver must verify that the specified buffer size is large enough to contai
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a>
+
 
  
 

@@ -80,6 +80,8 @@ If the miniport driver successfully saves the adapter state, it sets the <b>Info
 
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
+
+
  
 
  

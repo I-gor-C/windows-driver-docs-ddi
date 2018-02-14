@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 9b543d5d-ed6d-4440-b5ad-aefca69dd489
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi/IWDFObject::AssignContext, IWDFObject::AssignContext, AssignContext, AssignContext method, AssignContext method, IWDFObject interface, umdf.iwdfobject_assigncontext, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml, wdf.iwdfobject_assigncontext, IWDFObject interface, AssignContext method, IWDFObject
+ms.keywords: wudfddi/IWDFObject::AssignContext, wdf.iwdfobject_assigncontext, IWDFObject::AssignContext, AssignContext method, IWDFObject interface, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml, AssignContext method, IWDFObject, umdf.iwdfobject_assigncontext, AssignContext, IWDFObject interface, AssignContext method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,6 +86,13 @@ Because the context is not a Component Object Model (COM) interface, the driver 
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a> method can be used to retrieve the context that was previously registered through <b>AssignContext</b>.
 
+
+#### Examples
+
+For a code example of how to use the <b>AssignContext</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,13 +105,21 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFO
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 
-<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
 
  
 

@@ -82,6 +82,8 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 <a href="..\ntddstor\ns-ntddstor-_storage_bus_reset_request.md">STORAGE_BUS_RESET_REQUEST</a>
 
+
+
  
 
  

@@ -7,7 +7,7 @@ old-location: buses\_ioctl_internal_usbfn_control_status_handshake_in.htm
 old-project: usbref
 ms.assetid: 5839C1A8-6638-4A42-B7C1-168071C99800
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses._ioctl_internal_usbfn_control_status_handshake_in, IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN control code [Buses], IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN, usbfnioctl/IOCTL_INTERNAL_USBFN_CONTROL_STATUS_HANDSHAKE_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices

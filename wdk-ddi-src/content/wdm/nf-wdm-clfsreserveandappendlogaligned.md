@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4502c9bd-d03c-4f29-b46e-ba4532b838bb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.clfsreserveandappendlogaligned, wdm/ClfsReserveAndAppendLogAligned, ClfsReserveAndAppendLogAligned, ClfsReserveAndAppendLogAligned routine [Kernel-Mode Driver Architecture], Clfs_aef34ba7-9276-41a4-8136-b20ae8e8531d.xml
+ms.keywords: kernel.clfsreserveandappendlogaligned, ClfsReserveAndAppendLogAligned routine [Kernel-Mode Driver Architecture], wdm/ClfsReserveAndAppendLogAligned, ClfsReserveAndAppendLogAligned, Clfs_aef34ba7-9276-41a4-8136-b20ae8e8531d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,6 +103,7 @@ A pointer to an array of LONGLONG-typed variables. The caller sets each element 
 `fFlags`
 
 This parameter can be any combination of the following flags.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -152,6 +153,7 @@ A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that r
 ## Remarks
 
 The <b>ClfsReserveAndAppendLogAligned</b> routine changes its fundamental behavior based on the presence of optional parameters and the state of the CLFS_USE_RESERVATION flag. The following table summarizes common scenarios.
+
 <table>
 <tr>
 <th>Parameter and flag values</th>
@@ -231,7 +233,8 @@ Appends a record to the marshalling area by reserving new space. Also reserves s
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.
 
@@ -247,13 +250,21 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
+
+
 <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 
-<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
 
 <a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
 
+
+
 <a href="..\wdm\nf-wdm-clfsreserveandappendlog.md">ClfsReserveAndAppendLog</a>
+
+
 
  
 

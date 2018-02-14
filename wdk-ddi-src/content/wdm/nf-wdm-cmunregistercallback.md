@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6e291139-d7d3-4927-ad01-b09bddb0b945
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: CmUnRegisterCallback routine [Kernel-Mode Driver Architecture], kernel.cmunregistercallback, ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml, CmUnRegisterCallback, wdm/CmUnRegisterCallback
+ms.keywords: ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml, wdm/CmUnRegisterCallback, kernel.cmunregistercallback, CmUnRegisterCallback, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,10 @@ A LARGE_INTEGER value that identifies the callback routine to unregister. <b>CmR
 ## Remarks
 
 A driver that calls <b>CmRegisterCallback</b> or <b>CmRegisterCallbackEx</b> should call <b>CmUnRegisterCallback</b> before the driver is unloaded. 
-<div class="alert"><b>Note</b>  A driver must not call <b>CmRegisterCallback</b> from its implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine. That call will result in a deadlock.</div><div> </div>For more information about <b>CmUnRegisterCallback</b> and filtering registry operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
+
+<div class="alert"><b>Note</b>  A driver must not call <b>CmRegisterCallback</b> from its implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine. That call will result in a deadlock.</div>
+<div> </div>
+For more information about <b>CmUnRegisterCallback</b> and filtering registry operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,11 +88,17 @@ A driver that calls <b>CmRegisterCallback</b> or <b>CmRegisterCallbackEx</b> sho
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+
+
+
 <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+
 
  
 

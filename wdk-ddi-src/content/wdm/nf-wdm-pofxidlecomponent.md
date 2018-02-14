@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 07282994-5E04-432D-85A6-4677DB2DA84A
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PoFxIdleComponent, wdm/PoFxIdleComponent, kernel.pofxidlecomponent, PoFxIdleComponent routine [Kernel-Mode Driver Architecture]
+ms.keywords: PoFxIdleComponent, kernel.pofxidlecomponent, wdm/PoFxIdleComponent, PoFxIdleComponent routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,10 +71,12 @@ The index that identifies the component. This parameter is an index into the <b>
 `Flags`
 
 The flags for the idle operation. Set this member to zero or to one of the following flag <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn939769">PO_FX_FLAG_XXX</a> bits:
+
 <ul>
 <li><b>PO_FX_FLAG_BLOCKING</b></li>
 <li><b>PO_FX_FLAG_ASYNC_ONLY</b></li>
-</ul>These two flag bits are mutually exclusive. For more information, see Remarks.
+</ul>
+These two flag bits are mutually exclusive. For more information, see Remarks.
 
 
 ## Return Value
@@ -107,15 +109,25 @@ The driver can set <i>Flags</i> = 0 to indicate that it does not care whether th
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn939769">PO_FX_FLAG_XXX</a>
+
+
 
 <a href="..\wdm\nf-wdm-pofxactivatecomponent.md">PoFxActivateComponent</a>
 
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
 
 <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>
+
 
  
 

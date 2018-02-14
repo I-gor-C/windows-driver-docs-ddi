@@ -84,15 +84,15 @@ Reserved member when used by one of the Storport driver's miniport drivers. With
 
 `ConfigInfo`
 
-#### 
+##### 
 
 
 
-#### 
+##### 
 
 
 
-####
+#####
 
 `Again`
 
@@ -102,6 +102,7 @@ Reserved member when used by one of the Storport driver's miniport drivers. With
 ## Return Value
 
 The routine declared by this prototype must return one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -171,7 +172,11 @@ For more information about the Storport driver's version of the routine associat
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	OnInterruptEnable
 product: Windows
 targetos: Windows
-req.typenames: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+req.typenames: "*PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS"
 req.product: Windows 10 or later.
 ---
 
@@ -94,6 +94,62 @@ After calling the <i>OnInterruptEnable</i> callback function, the framework call
 
 For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
 
+
+#### Examples
+
+The function type is declared in <i>Wudfinterrupt.h</i>, as follows.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef
+__drv_functionClass(WUDF_INTERRUPT_ENABLE)
+HRESULT
+WUDF_INTERRUPT_ENABLE(
+    _In_
+    IWDFInterrupt* Interrupt,
+    _In_
+    IWDFDevice* AssociatedDevice
+    );
+
+typedef WUDF_INTERRUPT_ENABLE *PFN_WUDF_INTERRUPT_ENABLE;</pre>
+</td>
+</tr>
+</table></span></div>
+To define an <i>OnInterruptEnable</i> callback function that is named <i>MyInterruptEnable</i>, you must first provide a function declaration that SDV and other verification tools require, as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WUDF_INTERRUPT_ENABLE  MyInterruptEnable;</pre>
+</td>
+</tr>
+</table></span></div>
+Then, implement your callback function as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>HRESULT
+  MyInterruptEnable (
+    IN IWDFInterrupt* pInterrupt,
+    IN IWDFDevice*  pAssociatedDevice
+    )
+  {…}
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -104,11 +160,17 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 
 ## See Also
 
+<a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
+
+
+
 <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interrupt_disable.md">OnInterruptDisable</a>
+
+
 
 <a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice::CreateInterrupt</a>
 
-<a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
+
 
  
 

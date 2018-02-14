@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 71C4E02F-B58A-46BA-A6A7-133D6CAF2A85
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi/IWDFInterrupt::GetDevice, GetDevice method, IWDFInterrupt interface, IWDFInterrupt, wdf.iwdfinterrupt_getdevice, IWDFInterrupt interface, GetDevice method, IWDFInterrupt::GetDevice, umdf.iwdfinterrupt_getdevice, GetDevice method, GetDevice
+ms.keywords: IWDFInterrupt::GetDevice, IWDFInterrupt, umdf.iwdfinterrupt_getdevice, wudfddi/IWDFInterrupt::GetDevice, IWDFInterrupt interface, GetDevice method, GetDevice, wdf.iwdfinterrupt_getdevice, GetDevice method, GetDevice method, IWDFInterrupt interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,6 +81,8 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 ## See Also
 
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+
+
 
  
 

@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_endpoint_reset.htm
 old-project: usbref
 ms.assetid: 927fdd48-416e-4e8f-a29c-c2799952197e
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.evt_ucx_endpoint_reset, EvtUcxEndpointReset callback function [Buses], EvtUcxEndpointReset, EVT_UCX_ENDPOINT_RESET, EVT_UCX_ENDPOINT_RESET, ucxendpoint/EvtUcxEndpointReset, PEVT_UCX_ENDPOINT_RESET callback function pointer [Buses], PEVT_UCX_ENDPOINT_RESET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,6 +87,34 @@ The UCX client driver registers this callback function with the USB host control
 
 The client driver returns completion status in the WDFREQUEST, which it might complete
     asynchronously.
+
+
+#### Examples
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+Endpoint_EvtUcxEndpointReset(
+    UCXCONTROLLER   UcxController,
+    UCXENDPOINT     UcxEndpoint,
+    WDFREQUEST      Request
+)
+
+{
+    UNREFERENCED_PARAMETER(UcxController);
+    UNREFERENCED_PARAMETER(UcxEndpoint);
+
+    DbgTrace(TL_INFO, Endpoint, "Endpoint_EvtUcxEndpointReset");
+
+    WdfRequestComplete(Request, STATUS_SUCCESS);
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

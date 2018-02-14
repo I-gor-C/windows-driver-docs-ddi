@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 4A5413AD-A2EB-4772-89BF-867C30E0CD10
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DXGK_MIRACAST_CHUNK_INFO, DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_INFO, display.dxgk_miracast_chunk_info
+ms.keywords: DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_INFO, DXGK_MIRACAST_CHUNK_INFO, display.dxgk_miracast_chunk_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -86,7 +86,11 @@ The time, in microseconds, that it took to process this chunk.
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_dxgk_miracast_chunk_type.md">DXGK_MIRACAST_CHUNK_TYPE</a>
 
+
+
 <a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_id.md">DXGK_MIRACAST_CHUNK_ID</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5e257b72-fe16-49a0-9232-9c791a88e903
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], wdm/IoGetRemainingStackSize, IoGetRemainingStackSize, k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, kernel.iogetremainingstacksize
+ms.keywords: IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], wdm/IoGetRemainingStackSize, kernel.iogetremainingstacksize, IoGetRemainingStackSize, k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,11 @@ For Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows, call
 
 <a href="..\wdm\nf-wdm-iogetstacklimits.md">IoGetStackLimits</a>
 
+
+
 <a href="..\wdm\nf-wdm-iogetinitialstack.md">IoGetInitialStack</a>
+
+
 
  
 

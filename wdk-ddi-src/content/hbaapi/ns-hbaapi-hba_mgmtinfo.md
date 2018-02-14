@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a4ccb122-ae90-4b06-a40d-21f131add99b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_MGMTINFO structure [Storage Devices], *PHBA_MGMTINFO, storage.hba_mgmtinfo, hbaapi/HBA_MgmtInfo, HBA_MgmtInfo, HBA_MgmtInfo structure [Storage Devices], hbaapi/PHBA_MGMTINFO, HBA_MGMTINFO, structs-Fibre_d7bcdc56-a999-4d0b-b7f0-88fe53b349b1.xml, PHBA_MGMTINFO, PHBA_MGMTINFO structure pointer [Storage Devices]
+ms.keywords: hbaapi/HBA_MgmtInfo, HBA_MgmtInfo structure [Storage Devices], structs-Fibre_d7bcdc56-a999-4d0b-b7f0-88fe53b349b1.xml, hbaapi/PHBA_MGMTINFO, HBA_MgmtInfo, PHBA_MGMTINFO structure pointer [Storage Devices], HBA_MGMTINFO, HBA_MGMTINFO structure [Storage Devices], *PHBA_MGMTINFO, storage.hba_mgmtinfo, PHBA_MGMTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	HBA_MGMTINFO
 product: Windows
 targetos: Windows
-req.typenames: "*PHBA_MGMTINFO, HBA_MGMTINFO"
+req.typenames: HBA_MGMTINFO, *PHBA_MGMTINFO
 ---
 
 # HBA_MgmtInfo structure
@@ -108,9 +108,13 @@ Contains a 64 bit world-wide name (WWN) that uniquely identifies the primary fib
 
 ## See Also
 
+<a href="..\hbaapi\nf-hbaapi-hba_getrnidmgmtinfo.md">HBA_GetRNIDMgmtInfo</a>
+
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_setrnidmgmtinfo.md">HBA_SetRNIDMgmtInfo</a>
 
-<a href="..\hbaapi\nf-hbaapi-hba_getrnidmgmtinfo.md">HBA_GetRNIDMgmtInfo</a>
+
 
  
 

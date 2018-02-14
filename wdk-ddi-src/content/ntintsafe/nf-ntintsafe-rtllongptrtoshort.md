@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 934967A0-9CEF-4377-9505-EE4C4E9AF706
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlLongPtrToShort function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoshort, ntintsafe/RtlLongPtrToShort, RtlLongPtrToShort
+ms.keywords: ntintsafe/RtlLongPtrToShort, kernel.rtllongptrtoshort, RtlLongPtrToShort, RtlLongPtrToShort function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>
 RtlLongPtrToInt16

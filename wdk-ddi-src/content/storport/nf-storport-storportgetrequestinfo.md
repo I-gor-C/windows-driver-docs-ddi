@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3B0A25E8-6DBC-4AA9-A0D0-DDB36B402F43
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortGetRequestInfo, StorPortGetRequestInfo, StorPortGetRequestInfo routine [Storage Devices], storage.storportgetrequestinfo
+ms.keywords: storport/StorPortGetRequestInfo, StorPortGetRequestInfo routine [Storage Devices], storage.storportgetrequestinfo, StorPortGetRequestInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A pointer to a caller-supplied <a href="..\storport\ns-storport-_stor_request_in
 ## Return Value
 
 The <b>StorPortGetRequestInfo</b> routine returns one of these status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -132,6 +133,8 @@ The caller of <b>StorPortGetRequestInfo</b> must set the <b>Version</b> member o
 ## See Also
 
 <a href="..\storport\ns-storport-_stor_request_info_v1.md">STOR_REQUEST_INFO</a>
+
+
 
  
 

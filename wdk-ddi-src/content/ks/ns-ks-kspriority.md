@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3bbef5f6-f859-4528-b044-baf8f99c2c2f
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSPRIORITY, ks-struct_08294311-6f72-4888-bfb8-b4598e1fc9bd.xml, stream.kspriority, KSPRIORITY structure [Streaming Media Devices], PKSPRIORITY structure pointer [Streaming Media Devices], *PKSPRIORITY, ks/PKSPRIORITY, ks/KSPRIORITY, KSPRIORITY
+ms.keywords: PKSPRIORITY structure pointer [Streaming Media Devices], ks-struct_08294311-6f72-4888-bfb8-b4598e1fc9bd.xml, *PKSPRIORITY, PKSPRIORITY, stream.kspriority, KSPRIORITY structure [Streaming Media Devices], ks/PKSPRIORITY, ks/KSPRIORITY, KSPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSPRIORITY
 product: Windows
 targetos: Windows
-req.typenames: KSPRIORITY, *PKSPRIORITY
+req.typenames: "*PKSPRIORITY, KSPRIORITY"
 ---
 
 # KSPRIORITY structure
@@ -60,6 +60,7 @@ typedef struct {
 `PriorityClass`
 
 Specifies a number ranging from 1 to 0xFFFFFFFF, where 1 is least priority and 0xFFFFFFFF is the highest priority. Zero is reserved for future use. When setting a class value, 0xFFFFFFFF is used to indicate exclusive access to the resources consumed by the pin. Possible values are listed in the following table.
+
 <table>
 <tr>
 <th>PriorityClass</th>
@@ -125,7 +126,11 @@ If the removal of resources by a higher priority client causes the filter pin to
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a>
 
+
+
 <a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
+
+
 
  
 

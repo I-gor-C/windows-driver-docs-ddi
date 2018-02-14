@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 167bb0f3-a484-443b-8bc4-bb2bbcecc19a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfRequestGetCompletionParams, wdf.wdfrequestgetcompletionparams, PFN_WDFREQUESTGETCOMPLETIONPARAMS, WdfRequestGetCompletionParams method, kmdf.wdfrequestgetcompletionparams, DFRequestObjectRef_032fe29a-4000-4d97-92fb-50462d2c1bea.xml, wdfrequest/WdfRequestGetCompletionParams
+ms.keywords: kmdf.wdfrequestgetcompletionparams, WdfRequestGetCompletionParams method, DFRequestObjectRef_032fe29a-4000-4d97-92fb-50462d2c1bea.xml, wdfrequest/WdfRequestGetCompletionParams, WdfRequestGetCompletionParams, PFN_WDFREQUESTGETCOMPLETIONPARAMS, wdf.wdfrequestgetcompletionparams
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,28 @@ If a driver sends an I/O request asynchronously, it typically calls this method 
 
 For more information about <b>WdfRequestGetCompletionParams</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structure and then calls <b>WdfRequestGetCompletionParams</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_REQUEST_COMPLETION_PARAMS completionParams;
+
+WDF_REQUEST_COMPLETION_PARAMS_INIT(&amp;completionParams);
+WdfRequestGetCompletionParams(
+                              request,
+                              &amp;completionParams
+                              );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -108,9 +130,15 @@ For more information about <b>WdfRequestGetCompletionParams</b>, see <a href="ht
 
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
+
 
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a>
+
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
+
+
 
  
 

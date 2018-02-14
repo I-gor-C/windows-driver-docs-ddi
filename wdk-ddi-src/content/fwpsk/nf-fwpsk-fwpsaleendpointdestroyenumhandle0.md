@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 45ec429e-d324-40c9-bedc-acd75ccb160e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsAleEndpointDestroyEnumHandle0, fwpsk/FwpsAleEndpointDestroyEnumHandle0, netvista.fwpsaleendpointdestroyenumhandle0, FwpsAleEndpointDestroyEnumHandle0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_3230abaf-8185-43b4-b46f-b1c1688ede2d.xml
+ms.keywords: FwpsAleEndpointDestroyEnumHandle0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_3230abaf-8185-43b4-b46f-b1c1688ede2d.xml, netvista.fwpsaleendpointdestroyenumhandle0, FwpsAleEndpointDestroyEnumHandle0, fwpsk/FwpsAleEndpointDestroyEnumHandle0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ The enumeration handle created by a previous call to
 
 The 
      <b>FwpsAleEndpointDestroyEnumHandle0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,6 +129,8 @@ When endpoint enumeration is complete, the enumeration handle must be destroyed 
 
 <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointcreateenumhandle0.md">
      FwpsAleEndpointCreateEnumHandle0</a>
+
+
 
  
 

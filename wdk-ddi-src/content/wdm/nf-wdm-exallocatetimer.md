@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4FCFC48A-97BC-48E0-BBA7-F9E8B8A7588A
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ExAllocateTimer routine [Kernel-Mode Driver Architecture], wdm/ExAllocateTimer, ExAllocateTimer, kernel.exallocatetimer
+ms.keywords: wdm/ExAllocateTimer, kernel.exallocatetimer, ExAllocateTimer, ExAllocateTimer routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A context value for the callback routine pointed to by the <i>Callback</i> param
 `Attributes`
 
 The timer attributes. Set this parameter to zero or to the bitwise-OR of one or more of the following timer flag bits.
+
 <table>
 <tr>
 <th>Timer flag bit</th>
@@ -89,7 +90,8 @@ The timer attributes. Set this parameter to zero or to the bitwise-OR of one or 
 <td>EX_TIMER_NOTIFICATION</td>
 <td>Notification timer. Make the timer a notification timer instead of a synchronization timer. If this flag is not set, the timer is a synchronization timer.</td>
 </tr>
-</table> 
+</table>
+ 
 
 The EX_TIMER_NOTIFICATION flag bit can be set regardless of what other flag bits are set.
 
@@ -129,15 +131,25 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/exxxxtimer-routines-and-ex-timer-objects">EX_TIMER</a>
+<a href="..\wdm\nf-wdm-excanceltimer.md">ExCancelTimer</a>
 
-<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a>
 
 <a href="..\wdm\nf-wdm-exsettimer.md">ExSetTimer</a>
 
-<a href="..\wdm\nf-wdm-excanceltimer.md">ExCancelTimer</a>
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/exxxxtimer-routines-and-ex-timer-objects">EX_TIMER</a>
+
+
+
+<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a>
+
+
 
  
 

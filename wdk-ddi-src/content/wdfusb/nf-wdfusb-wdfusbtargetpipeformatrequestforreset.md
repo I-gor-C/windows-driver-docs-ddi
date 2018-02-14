@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 10f5296c-6be2-4f88-952b-b23e518b844a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfUsbTargetPipeFormatRequestForReset, wdf.wdfusbtargetpipeformatrequestforreset, wdfusb/WdfUsbTargetPipeFormatRequestForReset, DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, kmdf.wdfusbtargetpipeformatrequestforreset, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET, WdfUsbTargetPipeFormatRequestForReset method
+ms.keywords: kmdf.wdfusbtargetpipeformatrequestforreset, wdfusb/WdfUsbTargetPipeFormatRequestForReset, wdf.wdfusbtargetpipeformatrequestforreset, DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET, WdfUsbTargetPipeFormatRequestForReset method, WdfUsbTargetPipeFormatRequestForReset
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfUsbTargetPipeFormatRequestForReset
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -76,6 +76,7 @@ A handle to a framework request object. For more information, see the following 
 ## Return Value
 
 <b>WdfUsbTargetPipeFormatRequestForReset</b> returns the USB I/O target's completion status value if the operation succeeds. Otherwise, this method can return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -114,7 +115,8 @@ The I/O request packet (<a href="..\wdm\ns-wdm-_irp.md">IRP</a>) that the <i>Req
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -142,6 +144,52 @@ For information about obtaining status information after an I/O request complete
 
 For more information about the <b>WdfUsbTargetPipeFormatRequestForReset</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
+
+#### Examples
+
+The following code example formats a reset request for a USB pipe, registers a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, and sends the request.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>status = WdfUsbTargetPipeFormatRequestForReset(
+                                               pipe,
+                                               Request
+                                               );
+if (!NT_SUCCESS(status)) {
+    goto Exit;
+}
+
+WdfRequestSetCompletionRoutine(
+                               Request,
+                               AbortCompletionRoutine,
+                               pipe
+                               );
+
+if (WdfRequestSend(
+                   Request,
+                   WdfUsbTargetPipeGetIoTarget(pipe),
+                   WDF_NO_SEND_OPTIONS
+                   ) == FALSE) {
+    status = WdfRequestGetStatus(Request);
+    goto Exit;
+}
+Exit:
+if (!NT_SUCCESS(status)) {
+    WdfRequestCompleteWithInformation(
+                                      Request,
+                                      status,
+                                      0
+                                      );
+}
+return;</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -155,9 +203,13 @@ For more information about the <b>WdfUsbTargetPipeFormatRequestForReset</b> meth
 
 ## See Also
 
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+
 
  
 

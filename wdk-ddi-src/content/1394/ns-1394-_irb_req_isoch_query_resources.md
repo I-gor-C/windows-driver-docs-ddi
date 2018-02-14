@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: B9CDFB62-32CF-497A-BF0F-1E4FBCA36E82
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: IRB_REQ_ISOCH_QUERY_RESOURCES structure [Buses], IRB_REQ_ISOCH_QUERY_RESOURCES, _IRB_REQ_ISOCH_QUERY_RESOURCES, 1394/IRB_REQ_ISOCH_QUERY_RESOURCES, IEEE.irb_req_isoch_query_resources
+ms.keywords: IRB_REQ_ISOCH_QUERY_RESOURCES, IRB_REQ_ISOCH_QUERY_RESOURCES structure [Buses], _IRB_REQ_ISOCH_QUERY_RESOURCES, IEEE.irb_req_isoch_query_resources, 1394/IRB_REQ_ISOCH_QUERY_RESOURCES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -71,6 +71,7 @@ On success, points to a bitmap of available channels.
 `fulSpeed`
 
 Specifies the speed flag to use in allocating bandwidth. The possible speed values are SPEED_FLAGS_xxx, where xxx is the approximate transfer rate in megabits per second. Existing hardware supports transfer rates of 100, 200, and 400 MBps.
+
 <table>
 <tr>
 <th>Transfer Rate</th>

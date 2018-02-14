@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 5053b027-61a9-463a-967c-9e9ff1673b1c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: biometric_ref_1e5e4af7-36a5-414b-8c26-7a266c38272c.xml, biometric.winbio_bir_header, PWINBIO_BIR_HEADER, winbio_types/WINBIO_BIR_HEADER, winbio_types/PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER structure [Biometric Devices], _WINBIO_BIR_HEADER, PWINBIO_BIR_HEADER structure pointer [Biometric Devices], *PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER
+ms.keywords: PWINBIO_BIR_HEADER structure pointer [Biometric Devices], biometric_ref_1e5e4af7-36a5-414b-8c26-7a266c38272c.xml, biometric.winbio_bir_header, WINBIO_BIR_HEADER, winbio_types/PWINBIO_BIR_HEADER, PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER structure [Biometric Devices], *PWINBIO_BIR_HEADER, winbio_types/WINBIO_BIR_HEADER, _WINBIO_BIR_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -90,6 +90,7 @@ A structure of type WINBIO_BIR_QUALITY that specifies the biometric data quality
 -1  Quality measurements are supported by the BIR creator, but no value is set in the BIR.
 
 -2  Quality measurements are not supported by the BIR creator.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -106,6 +107,7 @@ A structure of type WINBIO_BIR_QUALITY that specifies the biometric data quality
 A structure of type WINBIO_BIR_VERSION that specifies the CBEFF header version.
 
 Versions are represented as 8-bit values of the form: 0x<i>NM</i>, where <i>N</i> is the major version and <i>M</i> is the minor version.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -158,7 +160,11 @@ You can find more information about the fields of the standard biometric header 
 
 <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a>
 
+
+
 <a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a>
+
+
 
  
 

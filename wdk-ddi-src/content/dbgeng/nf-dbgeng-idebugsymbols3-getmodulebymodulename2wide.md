@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 49e27e24-d38a-4a22-a92f-33a384437250
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.getmodulebymodulename2wide, GetModuleByModuleName2Wide method [Windows Debugging], IDebugSymbols3 interface, GetModuleByModuleName2Wide, GetModuleByModuleName2Wide method [Windows Debugging], IDebugSymbols3, IDebugSymbols3::GetModuleByModuleName2Wide, dbgeng/IDebugSymbols3::GetModuleByModuleName2Wide, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2Wide method
+ms.keywords: dbgeng/IDebugSymbols3::GetModuleByModuleName2Wide, GetModuleByModuleName2Wide method [Windows Debugging], GetModuleByModuleName2Wide, GetModuleByModuleName2Wide method [Windows Debugging], IDebugSymbols3 interface, debugger.getmodulebymodulename2wide, IDebugSymbols3::GetModuleByModuleName2Wide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2Wide method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -72,6 +72,7 @@ Specifies the index to start searching from.
 `Flags`
 
 Specifies a bit-set containing options used when searching for the module with the specified name.  <i>Flags</i> may contain the following bit-flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -111,6 +112,7 @@ Receives the location in the target's memory address space of the base of the mo
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -157,7 +159,11 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547095">GetModuleByModuleName</a>
+
+
 
  
 

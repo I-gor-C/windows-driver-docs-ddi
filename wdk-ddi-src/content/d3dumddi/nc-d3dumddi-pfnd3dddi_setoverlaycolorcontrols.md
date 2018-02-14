@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>SetOverlayColorControls</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,9 +129,13 @@ The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is 
 
 ## See Also
 
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
 
  
 

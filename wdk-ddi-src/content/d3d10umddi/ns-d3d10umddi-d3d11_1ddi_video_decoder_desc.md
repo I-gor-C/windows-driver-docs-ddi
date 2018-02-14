@@ -86,6 +86,8 @@ The width of the video frame, in pixels.
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideodecoderprofile.md">GetVideoDecoderProfile</a>
 
+
+
  
 
  

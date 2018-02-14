@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: e0122858-0c9d-4aa8-a394-89d65fb98fda
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, print.gdiplaypageemf, winppi/GdiPlayPageEMF, GdiPlayPageEMF, GdiPlayPageEMF function [Print Devices]
+ms.keywords: GdiPlayPageEMF, gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, GdiPlayPageEMF function [Print Devices], print.gdiplaypageemf, winppi/GdiPlayPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -42,7 +42,7 @@ apiname:
 -	GdiPlayPageEMF
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -112,6 +112,8 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## See Also
 
 <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
+
+
 
  
 

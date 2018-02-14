@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SCSI_PASS_THROUGH_EX
 product: Windows
 targetos: Windows
-req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames: "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # IOCTL_SCSI_PASS_THROUGH_EX IOCTL
@@ -116,6 +116,8 @@ In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request, the underlying s
 ## See Also
 
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
+
+
 
  
 

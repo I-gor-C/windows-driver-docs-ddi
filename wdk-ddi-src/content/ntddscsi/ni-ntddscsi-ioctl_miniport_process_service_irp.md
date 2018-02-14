@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MINIPORT_PROCESS_SERVICE_IRP
 product: Windows
 targetos: Windows
-req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames: "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # IOCTL_MINIPORT_PROCESS_SERVICE_IRP IOCTL
@@ -79,6 +79,8 @@ The <b>Information</b> field contains the number of bytes returned in the output
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
+
+
 
  
 

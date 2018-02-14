@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: A5925EE4-768C-421A-9813-015513751A91
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_DEVICE_POWER_DESCRIPTOR, PDEVICE_POWER_DESCRIPTOR, DEVICE_POWER_DESCRIPTOR, *PDEVICE_POWER_DESCRIPTOR, ntddstor/DEVICE_POWER_DESCRIPTOR, PDEVICE_POWER_DESCRIPTOR structure pointer [Storage Devices], storage.device_power_descriptor, DEVICE_POWER_DESCRIPTOR structure [Storage Devices], ntddstor/PDEVICE_POWER_DESCRIPTOR"
+ms.keywords: PDEVICE_POWER_DESCRIPTOR structure pointer [Storage Devices], *PDEVICE_POWER_DESCRIPTOR, ntddstor/PDEVICE_POWER_DESCRIPTOR, ntddstor/DEVICE_POWER_DESCRIPTOR, _DEVICE_POWER_DESCRIPTOR, PDEVICE_POWER_DESCRIPTOR, storage.device_power_descriptor, DEVICE_POWER_DESCRIPTOR, DEVICE_POWER_DESCRIPTOR structure [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -122,6 +122,8 @@ Contains the size of this structure, in bytes. The value of this member will cha
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+
+
 
  
 

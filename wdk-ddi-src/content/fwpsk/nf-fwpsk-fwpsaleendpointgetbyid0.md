@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: fa9a5078-d254-4b4a-bbfb-256491beff5f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: fwpsk/FwpsAleEndpointGetById0, FwpsAleEndpointGetById0 function [Network Drivers Starting with Windows Vista], FwpsAleEndpointGetById0, netvista.fwpsaleendpointgetbyid0, wfp_ref_2_funct_3_fwps_A-B_3feb07cf-ae5a-4412-a51a-8e4d4d65c31d.xml
+ms.keywords: netvista.fwpsaleendpointgetbyid0, wfp_ref_2_funct_3_fwps_A-B_3feb07cf-ae5a-4412-a51a-8e4d4d65c31d.xml, fwpsk/FwpsAleEndpointGetById0, FwpsAleEndpointGetById0, FwpsAleEndpointGetById0 function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,7 @@ A pointer to an
 
 The 
      <b>FwpsAleEndpointGetById0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,13 +126,19 @@ An error occurred.
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
-   FwpsAleEndpointGetSecurityInfo0</a>
-
 <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointsetsecurityinfo0.md">
    FwpsAleEndpointSetSecurityInfo0</a>
 
+
+
 <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
+   FwpsAleEndpointGetSecurityInfo0</a>
+
+
 
  
 

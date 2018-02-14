@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 29EF6C90-E25F-4E03-8834-EC2546B670AA
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTOpenSyncObjectNtHandleFromName function [Display Devices], d3dkmthk/D3DKMTOpenSyncObjectNtHandleFromName, display.d3dkmtopensyncobjectnthandlefromname, D3DKMTOpenSyncObjectNtHandleFromName
+ms.keywords: display.d3dkmtopensyncobjectnthandlefromname, D3DKMTOpenSyncObjectNtHandleFromName function [Display Devices], D3DKMTOpenSyncObjectNtHandleFromName, d3dkmthk/D3DKMTOpenSyncObjectNtHandleFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -64,6 +64,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -92,7 +93,8 @@ The operation was performed successfully.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -109,6 +111,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopennthandlefromname.md">D3DKMTOpenNtHandleFromName</a>
+
+
 
  
 

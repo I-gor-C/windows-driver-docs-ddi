@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 572477c7-8588-415e-b66f-adab977ab373
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntifs/NtQueryQuotaInformationFile, NtQueryQuotaInformationFile, ZwQueryQuotaInformationFile routine [Kernel-Mode Driver Architecture], ZwQueryQuotaInformationFile, kernel.zwqueryquotainformationfile, k111_226a807c-d14d-403f-bbef-f5b4e6491039.xml, ntifs/ZwQueryQuotaInformationFile
+ms.keywords: ZwQueryQuotaInformationFile routine [Kernel-Mode Driver Architecture], NtQueryQuotaInformationFile, ntifs/NtQueryQuotaInformationFile, ZwQueryQuotaInformationFile, kernel.zwqueryquotainformationfile, k111_226a807c-d14d-403f-bbef-f5b4e6491039.xml, ntifs/ZwQueryQuotaInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -106,6 +106,7 @@ A Boolean value that indicates whether the scan of the quota information is to b
 ## Return Value
 
 The <b>ZwQueryQuotaInformationFile</b> routine returns STATUS_SUCCESS if at least one <a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a> structure is returned in the <i>Buffer</i> parameter or an appropriate NTSTATUS value such as one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -164,7 +165,10 @@ The amount of information returned by <b>ZwQueryQuotaInformationFile</b> is base
 A call to <b>ZwQueryQuotaInformationFile</b> will result in an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a> request being sent to the device object that is associated with the file object whose handle is stored in the <i>FileHandle</i> parameter.
 
 If the underlying file system does not support quota information (FAT and CDFS file systems, for example), <b>ZwQueryQuotaInformationFile</b> will fail returning STATUS_INVALID_DEVICE_REQUEST.
-<div class="alert"><b>Note</b>  If the call to the <b>ZwQueryQuotaInformationFile</b> function occurs in user mode, you should use the name "<b>NtQueryQuotaInformationFile</b>" instead of "<b>ZwQueryQuotaInformationFile</b>".</div><div> </div>For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
+
+<div class="alert"><b>Note</b>  If the call to the <b>ZwQueryQuotaInformationFile</b> function occurs in user mode, you should use the name "<b>NtQueryQuotaInformationFile</b>" instead of "<b>ZwQueryQuotaInformationFile</b>".</div>
+<div> </div>
+For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -179,21 +183,37 @@ If the underlying file system does not support quota information (FAT and CDFS f
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
 
 <a href="..\ntifs\nf-ntifs-zwsetquotainformationfile.md">ZwSetQuotaInformationFile</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
 
-<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
+
 
 <a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+
+
+
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+
+
 
  
 

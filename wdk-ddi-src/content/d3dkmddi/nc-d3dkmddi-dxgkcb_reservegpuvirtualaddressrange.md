@@ -90,9 +90,13 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the e
 
 ## See Also
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_reservegpuvirtualaddressrange.md">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a>
+
+
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_reservegpuvirtualaddressrange.md">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a>
+
 
  
 

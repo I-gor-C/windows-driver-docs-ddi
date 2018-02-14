@@ -40,7 +40,7 @@ apiname:
 -	CalcPrivateDeviceSize
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -85,6 +85,8 @@ SIZE_T Pfnd3d10ddiCalcprivatedevicesize(
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_calcprivatedevicesize.md">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a>
+
+
 
  
 

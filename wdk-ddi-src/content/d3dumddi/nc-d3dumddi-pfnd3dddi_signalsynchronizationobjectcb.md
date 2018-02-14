@@ -73,6 +73,7 @@ A handle to a display device (that is, the graphics context).
 ## Return Value
 
 <b>pfnSignalSynchronizationObjectCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,13 +101,53 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
 ## Remarks
 
 <b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSignalSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.
+
+
+
+
+#### Examples
+
+The following code example shows how to insert a signal on synchronization objects.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>HRESULT CD3DContext::SyncEngines(DWORD dwEngineReleasingControl, DWORD dwEngineAcquiringControl) {
+    HRESULT hr;
+    D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT   sWaitObject;
+    D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT    sSignalObject;
+
+    sSignalObject.hContext = m_sContexts[dwEngineReleasingControl].hContext;
+    sSignalObject.ObjectCount = 1;
+    sSignalObject.ObjectHandleArray[0] = m_hEngineSyncObject;
+    hr = m_d3dCallbacks.pfnSignalSynchronizationObjectCb(m_hD3D, &amp;sSignalObject);
+    if (FAILED(hr)) {
+        DBG_BREAK;
+        return hr;
+    }
+    sWaitObject.hContext = m_sContexts[dwEngineAcquiringControl].hContext;
+    sWaitObject.ObjectCount = 1;
+    sWaitObject.ObjectHandleArray[0] = m_hEngineSyncObject;
+    hr = m_d3dCallbacks.pfnWaitForSynchronizationObjectCb(m_hD3D, &amp;sWaitObject);
+    if (FAILED(hr)) {
+        DBG_BREAK;        
+    }
+    return hr;
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -118,6 +159,8 @@ This function might also return other HRESULT values.
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_signalsynchronizationobject.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
+
+
 
  
 

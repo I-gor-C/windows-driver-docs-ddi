@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1b8fc764-023f-4aa0-b610-2394a48efc02
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTSignalSynchronizationObject, OpenGL_Functions_183a6489-8a99-4dd3-a697-04db44b229c9.xml, display.d3dkmtsignalsynchronizationobject, D3DKMTSignalSynchronizationObject function [Display Devices], d3dkmthk/D3DKMTSignalSynchronizationObject
+ms.keywords: display.d3dkmtsignalsynchronizationobject, D3DKMTSignalSynchronizationObject function [Display Devices], d3dkmthk/D3DKMTSignalSynchronizationObject, OpenGL_Functions_183a6489-8a99-4dd3-a697-04db44b229c9.xml, D3DKMTSignalSynchronizationObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTSignalSynchronizationObject</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -106,7 +107,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -123,6 +125,8 @@ This function might also return other NTSTATUS values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_signalsynchronizationobject.md">D3DKMT_SIGNALSYNCHRONIZATIONOBJECT</a>
+
+
 
  
 

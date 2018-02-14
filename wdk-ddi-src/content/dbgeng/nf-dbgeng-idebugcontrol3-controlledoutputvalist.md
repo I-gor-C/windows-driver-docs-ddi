@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5fd3c915-77e0-4f81-9131-0eaf9d3493a3
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl2 interface [Windows Debugging], ControlledOutputVaList method, IDebugControl2::ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl3 interface, IDebugControl3::ControlledOutputVaList, IDebugControl_2ea55393-9577-4639-ac83-5cefb584ff3b.xml, IDebugControl3 interface [Windows Debugging], ControlledOutputVaList method, IDebugControl interface [Windows Debugging], ControlledOutputVaList method, dbgeng/IDebugControl2::ControlledOutputVaList, dbgeng/IDebugControl3::ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl2 interface, ControlledOutputVaList method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::ControlledOutputVaList, IDebugControl::ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl3, debugger.controlledoutputvalist, ControlledOutputVaList
+ms.keywords: IDebugControl2, ControlledOutputVaList method [Windows Debugging], IDebugControl2 interface [Windows Debugging], ControlledOutputVaList method, IDebugControl3 interface [Windows Debugging], ControlledOutputVaList method, IDebugControl_2ea55393-9577-4639-ac83-5cefb584ff3b.xml, dbgeng/IDebugControl2::ControlledOutputVaList, IDebugControl::ControlledOutputVaList, debugger.controlledoutputvalist, dbgeng/IDebugControl3::ControlledOutputVaList, IDebugControl3, IDebugControl interface [Windows Debugging], ControlledOutputVaList method, ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::ControlledOutputVaList, IDebugControl, IDebugControl3::ControlledOutputVaList, IDebugControl2::ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl3 interface, ControlledOutputVaList method [Windows Debugging], IDebugControl interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -75,6 +75,7 @@ Specifies the output-type bit field.  See <a href="https://msdn.microsoft.com/li
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It might not have any modifiers, and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
+
 <table>
 <tr>
 <th>Character</th>
@@ -244,11 +245,13 @@ String that contains the name of the specified symbol (and displacement, if any)
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The %Y format specifier can be used to support the Debugger Markup Language (DML). For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt613235">Customizing Debugger Output Using DML</a>.
 
 The following table summarizes the use of the %Y format specifier.
+
 <table>
 <tr>
 <td>Character</td>
@@ -340,9 +343,11 @@ ULONG64
 <td>Debugger formatted pointer</td>
 <td>	Address as source line information.</td>
 </tr>
-</table> 
+</table>
+ 
 
 This code snippet illustrates the use of the  %Y format specifier.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -381,7 +386,9 @@ This code snippet illustrates the use of the  %Y format specifier.
 </pre>
 </td>
 </tr>
-</table></span></div>This sample code would generate the following output.
+</table></span></div>
+This sample code would generate the following output.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -431,7 +438,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -450,17 +458,29 @@ The macros <b>va_list</b>, <b>va_start</b>, and <b>va_end</b> are defined in Std
 
 ## See Also
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553280">OutputVaList</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
+
+
+
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
 
  
 

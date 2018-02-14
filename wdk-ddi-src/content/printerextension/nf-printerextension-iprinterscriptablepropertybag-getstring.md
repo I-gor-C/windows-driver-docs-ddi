@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: FA14B81D-0B51-4C07-96BC-38CAABED735A
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getstring, GetString method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetString, GetString method [Print Devices], IPrinterScriptablePropertyBag interface, GetString, IPrinterScriptablePropertyBag::GetString, IPrinterScriptablePropertyBag interface [Print Devices], GetString method
+ms.keywords: GetString, GetString method [Print Devices], IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag::GetString, printerextension/IPrinterScriptablePropertyBag::GetString, IPrinterScriptablePropertyBag interface [Print Devices], GetString method, GetString method [Print Devices], IPrinterScriptablePropertyBag interface, print.iprinterscriptablepropertybag_getstring
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,6 +87,8 @@ A call to <b>GetString</b> will throw an exception, if the specified property is
 ## See Also
 
 <a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+
+
 
  
 

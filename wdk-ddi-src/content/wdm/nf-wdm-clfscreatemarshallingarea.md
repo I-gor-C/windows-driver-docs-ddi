@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c841d8fb-fa42-4ce5-aedb-c7c13bcc2ba7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsCreateMarshallingArea, Clfs_7b5e3208-8dfb-4fbf-b2a9-77ecc5765df6.xml, wdm/ClfsCreateMarshallingArea, kernel.clfscreatemarshallingarea, ClfsCreateMarshallingArea routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/ClfsCreateMarshallingArea, Clfs_7b5e3208-8dfb-4fbf-b2a9-77ecc5765df6.xml, ClfsCreateMarshallingArea routine [Kernel-Mode Driver Architecture], kernel.clfscreatemarshallingarea, ClfsCreateMarshallingArea
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,6 +77,7 @@ A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> value that specifies the t
 `pfnAllocBuffer`
 
 Either <b>NULL</b> or a pointer to a caller-supplied function that allocates a log I/O block for the marshalling area. The allocation function has the following prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -91,11 +92,13 @@ Either <b>NULL</b> or a pointer to a caller-supplied function that allocates a l
     );</pre>
 </td>
 </tr>
-</table></span></div>The return value of the allocation function is a pointer to the newly allocated log I/O block.
+</table></span></div>
+The return value of the allocation function is a pointer to the newly allocated log I/O block.
 
 `pfnFreeBuffer`
 
 Either <b>NULL</b> or a pointer to a caller-supplied function that frees a log I/O block that was previously allocated by <i>pfnAllocBuffer</i>. The function has the following prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -151,17 +154,29 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
-<a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
 
-<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
-
-<a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
 
 <a href="..\wdm\nf-wdm-clfsdeletemarshallingarea.md">ClfsDeleteMarshallingArea</a>
 
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
+
+
+<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
+
+
+
+<a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
+
+
 
  
 

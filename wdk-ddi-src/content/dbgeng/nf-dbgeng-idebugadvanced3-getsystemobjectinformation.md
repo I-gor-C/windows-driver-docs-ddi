@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 7e95a16e-e62d-49df-9889-fab0a85f9cbc
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugAdvanced2 interface [Windows Debugging], GetSystemObjectInformation method, IDebugAdvanced3, GetSystemObjectInformation, IDebugAdvanced_a1f6b5cc-0b56-417f-b515-45c999499ba7.xml, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced3::GetSystemObjectInformation, debugger.getsystemobjectinformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2::GetSystemObjectInformation, dbgeng/IDebugAdvanced2::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface, dbgeng/IDebugAdvanced3::GetSystemObjectInformation, IDebugAdvanced3 interface [Windows Debugging], GetSystemObjectInformation method
+ms.keywords: dbgeng/IDebugAdvanced2::GetSystemObjectInformation, IDebugAdvanced_a1f6b5cc-0b56-417f-b515-45c999499ba7.xml, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3, IDebugAdvanced3::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced2 interface [Windows Debugging], GetSystemObjectInformation method, IDebugAdvanced2::GetSystemObjectInformation, dbgeng/IDebugAdvanced3::GetSystemObjectInformation, IDebugAdvanced2, debugger.getsystemobjectinformation, GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging], GetSystemObjectInformation method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -66,6 +66,7 @@ HRESULT GetSystemObjectInformation(
 `Which`
 
 Specifies the type of object and the type of information to return about that object.  <i>Which</i> can take the following value.
+
 <table>
 <tr>
 <th>Value</th>
@@ -90,6 +91,7 @@ Specifies a 64-bit argument.  This parameter has the following interpretations d
 
 
 
+
 #### DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
 
 Not used.
@@ -101,6 +103,7 @@ Specifies a 32-bit argument.  This parameter has the following interpretations d
 
 
 
+
 #### DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
 
 The engine thread ID of the desired thread.
@@ -108,6 +111,7 @@ The engine thread ID of the desired thread.
 `Buffer`
 
 Receives the requested information.  The type of data returned in <i>Buffer</i> depends on the value of <i>Which</i>.
+
 <table>
 <tr>
 <th>Value</th>
@@ -139,6 +143,7 @@ Receives the size of the information that is returned.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -178,11 +183,17 @@ The method was successful. However, the information would not fit in the buffer 
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects.md">IDebugSystemObjects</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
 
  
 

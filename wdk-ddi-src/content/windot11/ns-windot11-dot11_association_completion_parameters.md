@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 770962e3-0339-46f8-a789-7c9bbf9e058f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: Native_802.11_data_types_54cece34-410b-4c18-8657-47db6cab5518.xml, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS, netvista.dot11_association_completion_parameters, windot11/DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, windot11/PDOT11_ASSOCIATION_COMPLETION_PARAMETERS
+ms.keywords: DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_ASSOCIATION_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS, windot11/PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, windot11/DOT11_ASSOCIATION_COMPLETION_PARAMETERS, netvista.dot11_association_completion_parameters, Native_802.11_data_types_54cece34-410b-4c18-8657-47db6cab5518.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DOT11_ASSOCIATION_COMPLETION_PARAMETERS
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS"
+req.typenames: DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -108,6 +108,7 @@ A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station h
 
 A miniport driver must set the 
      <b>bFourAddressSupported</b> member to <b>FALSE</b> if any of the following are true:
+
 <ul>
 <li>
 The IEEE 802.11 
@@ -136,6 +137,7 @@ A Boolean value that, if set to <b>TRUE</b>, specifies that the 802.11 station h
 
 The miniport driver must set 
      <b>bPortAuthorized</b> to <b>FALSE</b> if any of the following are true:
+
 <ul>
 <li>
 The 802.11 station does not perform port authorization.
@@ -146,7 +148,8 @@ The
        <b>uStatus</b> member is not set to DOT11_ASSOCIATION_STATUS_SUCCESS.
 
 </li>
-</ul>For more information about port authorization, see 
+</ul>
+For more information about port authorization, see 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/port-based-network-access">Port-Based Network
      Access</a>.
 
@@ -186,15 +189,13 @@ The
      values:
 
 
-<div class="alert"><b>Note</b>  The miniport driver must set 
-     <b>DSInfo</b> to 
-     <b>DOT11_DS_UNKNOWN</b> if the 
-     <b>dot11DesiredBSSType</b> MIB object is set to 
-     <b>dot11_BSS_type_independent</b>.</div><div> </div>
+
+
 
 #### DOT11_DS_CHANGED
 
 The 802.11 station has connected to a new DS after the association operation.
+
 
 
 #### DOT11_DS_UNCHANGED
@@ -202,10 +203,18 @@ The 802.11 station has connected to a new DS after the association operation.
 The 802.11 station is connected to the same DS from the association operation.
 
 
+
 #### DOT11_DS_UNKNOWN
 
 The miniport driver cannot determine whether the DS has changed after the association
        operation.
+
+<div class="alert"><b>Note</b>  The miniport driver must set 
+     <b>DSInfo</b> to 
+     <b>DOT11_DS_UNKNOWN</b> if the 
+     <b>dot11DesiredBSSType</b> MIB object is set to 
+     <b>dot11_BSS_type_independent</b>.</div>
+<div> </div>
 
 `Header`
 
@@ -219,8 +228,6 @@ The miniport driver must set the members of
 
 
 
-For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 #### Type
@@ -228,15 +235,20 @@ For more information about these members, see
 This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 
+
 #### Revision
 
 This member must be set to DOT11_ASSOCIATION_COMPLETION_PARAMETERS_REVISION_1.
+
 
 
 #### Size
 
 This member must be set to 
        <code>sizeof(DOT11_ASSOCIATION_COMPLETION_PARAMETERS)</code>.
+
+For more information about these members, see 
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 `MacAddr`
 
@@ -268,6 +280,7 @@ The Extensible Station (ExtSTA) msDot11ActivePhyList MIB object also references 
       For more information about this MIB object, see OID_DOT11_ACTIVE_PHY_LIST.
 
 Entries in the active PHY list can be one of the following values:
+
 <ul>
 <li>
 A PHY ID that is specified by the ExtSTA 
@@ -282,7 +295,8 @@ DOT11_PHY_ID_ANY. The miniport driver can set an entry to this value if the
         entry in the active PHY list.
 
 </li>
-</ul>The offset of the active PHY list is relative to the start of the buffer that contains the
+</ul>
+The offset of the active PHY list is relative to the start of the buffer that contains the
       DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure.
 
 The miniport driver must set the 
@@ -313,6 +327,7 @@ This offset is relative to the start of the buffer that contains the
 The Association Request frame that is returned by the miniport driver depends on the setting of the
       IEEE 802.11 
       <b>dot11DesiredBSSType</b> MIB object:
+
 <ul>
 <li>
 If the 
@@ -331,7 +346,8 @@ If the
         <b>uAssocReqOffset</b> member to zero.
 
 </li>
-</ul>The miniport driver must set the 
+</ul>
+The miniport driver must set the 
       <b>uAssocReqOffset</b> and 
       <b>uAssocReqSize</b> members to zero if it was unable to send a request frame during the association
       operation. For example, if the AP failed the 802.11 Authentication frame that was sent by the 802.11
@@ -361,6 +377,7 @@ This offset is relative to the start of the buffer, which contains the
 The association response frame that is returned by the miniport driver depends on the setting of the
       IEEE 802.11 
       <b>dot11DesiredBSSType</b> MIB object:
+
 <ul>
 <li>
 If the 
@@ -379,7 +396,8 @@ If the
         <b>uAssocRespOffset</b> member to zero.
 
 </li>
-</ul>The miniport driver must set the 
+</ul>
+The miniport driver must set the 
       <b>uAssocRespOffset</b> and 
       <b>uAssocRespSize</b> members to zero if it did not receive a response frame during the association
       operation.
@@ -403,11 +421,13 @@ The offset of the last received 802.11 Beacon or Probe Response frames. The mini
 
 This offset is relative to the start of the buffer, which contains the
       DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure.
+
 <div class="alert"><b>Note</b>  If the authentication algorithm used on the association was Wi-Fi Protected
       Access (WPA) or IEEE 802.11i Robust Security Network Association (RSNA), the miniport driver must
       always return the last received 802.11 Beacon frame and must not set the 
       <b>uBeaconOffset</b> and 
-      <b>uBeaconSize</b> members to zero.</div><div> </div>
+      <b>uBeaconSize</b> members to zero.</div>
+<div> </div>
 
 `uBeaconSize`
 
@@ -424,9 +444,11 @@ A flag that specifies the quality of service (QoS) protocol that is currently ac
 
 
 
+
 #### DOT11_QOS_PROTOCOL_FLAG_WMM
 
 The NIC is using the 802.11 WMM QoS protocol.
+
 
 
 #### DOT11_QOS_PROTOCOL_FLAG_11E
@@ -495,6 +517,7 @@ The completion status of the association operation, as specified by a value defi
 The miniport driver must set the 
     <b>uEncapTableOffset</b> and 
     <b>uEncapTableSize</b> members to zero if any of the following are true:
+
 <ul>
 <li>
 The BSS association does not require changes to the operating system's default list of EtherType
@@ -512,7 +535,8 @@ The Extensible Station (ExtSTA)
       <b>dot11_BSS_type_independent</b>.
 
 </li>
-</ul>For more information about the IEEE 802.11 
+</ul>
+For more information about the IEEE 802.11 
     <b>dot11DesiredBSSType</b> MIB object, see 
     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bss-type">OID_DOT11_DESIRED_BSS_TYPE</a>.
 
@@ -529,28 +553,50 @@ Management Frame Protection is negotiated when an access point (AP) and STA set 
 
 ## See Also
 
-<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a>
 
-<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-active-phy-list">OID_DOT11_ACTIVE_PHY_LIST</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
    NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a>
 
+
+
 <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 
-<a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
+
+
 
 OID_DOT11_DESIRED_BSS_TYPE
 
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-active-phy-list">OID_DOT11_ACTIVE_PHY_LIST</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>
+
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
+
 <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
+
+
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
+
+
 
  
 

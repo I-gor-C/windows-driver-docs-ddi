@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ad91208e-e57a-4b80-b1a1-13b9f7eb1119
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: OnReaderFailure method, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, IUsbTargetPipeContinuousReaderCallbackReadersFailed, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, UMDFUSBref_01c8b9de-ab85-4cc6-abec-238dcda2b1e8.xml, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method, OnReaderFailure method, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, OnReaderFailure, wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure
+ms.keywords: IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, OnReaderFailure method, UMDFUSBref_01c8b9de-ab85-4cc6-abec-238dcda2b1e8.xml, IUsbTargetPipeContinuousReaderCallbackReadersFailed, OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, OnReaderFailure method, OnReaderFailure method, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -101,9 +101,13 @@ For more information about the <b>OnReaderFailure</b> callback function and USB 
 
 ## See Also
 
+<a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556910">IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion</a>
 
-<a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a>
+
 
  
 

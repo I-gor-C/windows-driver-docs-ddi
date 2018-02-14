@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: B8413B02-32A6-40AE-9DD2-C25AD2D2D45C
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportallocatehostmemorybuffer, storport/StorPortAllocateHostMemoryBuffer, StorPortAllocateHostMemoryBuffer, StorPortAllocateHostMemoryBuffer routine [Storage Devices]
+ms.keywords: StorPortAllocateHostMemoryBuffer routine [Storage Devices], storport/StorPortAllocateHostMemoryBuffer, StorPortAllocateHostMemoryBuffer, storage.storportallocatehostmemorybuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -114,7 +114,9 @@ The highest physical address that is valid for the allocation. For example, if t
 `BoundaryAddressMultiple`
 
 The physical address multiple that this allocation must not cross.
-<div class="alert"><b>Note</b>  This parameter is currently not used and must be set to 0.</div><div> </div>
+
+<div class="alert"><b>Note</b>  This parameter is currently not used and must be set to 0.</div>
+<div> </div>
 
 `PhysicalAddressRanges`
 
@@ -131,6 +133,7 @@ The number of entries in <b>PhysicalAddressRanges</b>. This function will update
 ## Return Value
 
 <b>StorPortAllocateHostMemoryBuffer</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -186,6 +189,8 @@ The caller should subsequently call <a href="https://msdn.microsoft.com/686D141E
 ## See Also
 
 <a href="https://msdn.microsoft.com/686D141E-E6EA-4BB6-8556-0ECAC592E8F0">StorPortFreeHostMemoryBuffer</a>
+
+
 
  
 

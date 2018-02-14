@@ -7,7 +7,7 @@ old-location: buses\ioctl_internal_usb_req_global_suspend.htm
 old-project: usbref
 ms.assetid: e724ae02-642d-464c-b1d2-e43a657b4e9c
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.ioctl_internal_usb_req_global_suspend, IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND control code [Buses], IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND, usbioctl/IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,9 @@ The <b>IOCTL_INTERNAL_USB_REQ_GLOBAL_SUSPEND</b> IOCTL is used by the USB hub dr
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 

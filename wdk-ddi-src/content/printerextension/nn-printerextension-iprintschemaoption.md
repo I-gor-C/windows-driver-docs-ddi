@@ -54,6 +54,8 @@ Exposes a Print Schema Option object.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaOption.get_Constrained](nf-printerextension-iprintschemaoption-get_constrained.md) | Gets the constraint setting type for the schema option. |
+| [printerextension.IPrintSchemaOption.get_Selected](nf-printerextension-iprintschemaoption-get_selected.md) | Indicates whether this option is selected. |
 | [printerextension.IPrintSchemaOption.GetPropertyValue](nf-printerextension-iprintschemaoption-getpropertyvalue.md) | Gets the XML node for the &#0034;value&#0034; child element of a &#0034;Property&#0034; or a &#0034;ScoredProperty&#0034; element with the given name. |
 
 ## Remarks
@@ -69,15 +71,25 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md">IPrintSchemaPageMediaSizeOption</a>
-
 <a href="https://msdn.microsoft.com/C9C4E085-1F2A-4610-AF2A-8F87E5CE7BCA">IPrintSchemaFeature::GetOption</a>
 
-<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+
 
 <a href="..\printerextension\nn-printerextension-iprintschemaoptioncollection.md">IPrintSchemaOptionCollection</a>
 
+
+
+<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+
+
+
+<a href="..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md">IPrintSchemaPageMediaSizeOption</a>
+
+
+
 <a href="https://msdn.microsoft.com/C22BC037-05D2-4F44-8704-D1D56909B603">IPrintSchemaFeature::SelectedOption</a>
+
+
 
  
 

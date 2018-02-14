@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: be3f965b-69fe-4d5e-b1b6-3a370603cd7b
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFIoRequest::GetInputMemory, UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, IWDFIoRequest, IWDFIoRequest interface, GetInputMemory method, GetInputMemory method, wudfddi/IWDFIoRequest::GetInputMemory, GetInputMemory, GetInputMemory method, IWDFIoRequest interface, umdf.iwdfiorequest_getinputmemory, wdf.iwdfiorequest_getinputmemory
+ms.keywords: UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, GetInputMemory method, wudfddi/IWDFIoRequest::GetInputMemory, IWDFIoRequest interface, GetInputMemory method, GetInputMemory, wdf.iwdfiorequest_getinputmemory, IWDFIoRequest, umdf.iwdfiorequest_getinputmemory, GetInputMemory method, IWDFIoRequest interface, IWDFIoRequest::GetInputMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,6 +81,13 @@ UMDF creates an I/O request's memory objects when it receives the I/O request, b
 
 For more information about accessing an I/O request's data buffers, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in UMDF-Based Drivers</a>.
 
+
+#### Examples
+
+For a code example of how to use the <b>GetInputMemory</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,13 +100,21 @@ For more information about accessing an I/O request's data buffers, see <a href=
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
+<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560152">IWDFMemory::GetDataBuffer</a>
+
+
 
  
 

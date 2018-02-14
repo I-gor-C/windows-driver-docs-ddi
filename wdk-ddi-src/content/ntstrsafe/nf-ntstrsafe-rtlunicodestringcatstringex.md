@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 34d3ce07-9048-4930-a384-4263a2a556e4
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntstrsafe/RtlUnicodeStringCatStringEx, RtlUnicodeStringCatStringEx, safestrings_7ca374c5-13a0-4fe6-ab53-7770bc8ef9c3.xml, RtlUnicodeStringCatStringEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcatstringex
+ms.keywords: safestrings_7ca374c5-13a0-4fe6-ab53-7770bc8ef9c3.xml, RtlUnicodeStringCatStringEx, RtlUnicodeStringCatStringEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcatstringex, ntstrsafe/RtlUnicodeStringCatStringEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RtlUnicodeStringCatStringEx
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -80,9 +80,11 @@ One or more flags and, optionally, a fill byte. The flags are defined as follows
 
 
 
+
 #### STRSAFE_FILL_BEHIND
 
 If this flag is set and the function succeeds, the low byte of <i>dwFlags</i> is used to fill the portion of the destination buffer that follows the last character in the string.
+
 
 
 #### STRSAFE_IGNORE_NULLS
@@ -90,9 +92,11 @@ If this flag is set and the function succeeds, the low byte of <i>dwFlags</i> is
 If this flag is set, the source or destination pointer, or both, can be <b>NULL</b>. <b>RtlUnicodeStringCatStringEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied. <b>NULL</b> destination buffer pointers cannot receive nonempty strings.
 
 
+
 #### STRSAFE_FILL_ON_FAILURE
 
 If this flag is set and the function fails, the low byte of <i>dwFlags</i> is used to fill the entire destination buffer. This operation overwrites any preexisting buffer contents.
+
 
 
 #### STRSAFE_NULL_ON_FAILURE
@@ -100,9 +104,11 @@ If this flag is set and the function fails, the low byte of <i>dwFlags</i> is us
 If this flag is set and the function fails, the destination buffer is set to an empty string (TEXT("")). This operation overwrites any preexisting buffer contents.
 
 
+
 #### STRSAFE_NO_TRUNCATION
 
 If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the destination buffer are not modified.
+
 
 
 #### STRSAFE_ZERO_LENGTH_ON_FAILURE
@@ -113,6 +119,7 @@ If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the destina
 ## Return Value
 
 <b>RtlUnicodeStringCatStringEx</b> returns one of the following NTSTATUS values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -151,9 +158,11 @@ This <i>error</i> status means that the function received an invalid input param
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>RtlUnicodeStringCatStringEx</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
+
 <ul>
 <li>The contents of a <b>UNICODE_STRING</b> structure are invalid.</li>
 <li>An invalid flag is specified in <i>dwFlags</i>.</li>
@@ -161,7 +170,8 @@ This <i>error</i> status means that the function received an invalid input param
 <li>A buffer pointer is <b>NULL</b> and the STRSAFE_IGNORE_NULLS flag is not specified in <i>dwFlags</i>.</li>
 <li>The destination buffer pointer is <b>NULL</b>, but the buffer size is not zero.</li>
 <li>The destination buffer pointer is <b>NULL</b>, or its length is zero, but a nonzero length source string is present.</li>
-</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+</ul>
+For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -186,9 +196,13 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstring.md">RtlUnicodeStringCatString</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstring.md">RtlUnicodeStringCatString</a>
+
 
  
 

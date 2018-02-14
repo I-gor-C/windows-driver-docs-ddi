@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_PAR_QUERY_DEVICE_ID
 product: Windows
 targetos: Windows
-req.typenames: OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_DEVICE_ID IOCTL
@@ -81,6 +81,8 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 ## See Also
 
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id_size.md">IOCTL_PAR_QUERY_DEVICE_ID_SIZE</a>
+
+
 
  
 

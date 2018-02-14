@@ -40,7 +40,7 @@ apiname:
 -	AgpFreePhysical
 product: Windows
 targetos: Windows
-req.typenames: "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -101,7 +101,11 @@ When a miniport driver calls <b>AgpFreePhysical</b>, <b>Pages</b> pages of physi
 
 <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a>
 
+
+
 <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a>
+
+
 
  
 

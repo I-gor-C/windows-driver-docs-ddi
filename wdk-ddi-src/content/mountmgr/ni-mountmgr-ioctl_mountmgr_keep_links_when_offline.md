@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE IOCTL
@@ -83,6 +83,8 @@ The input buffer size, indicated by <b>InputBufferLength</b>, must be large enou
 ## See Also
 
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_target_name.md">MOUNTMGR_TARGET_NAME</a>
+
+
 
  
 

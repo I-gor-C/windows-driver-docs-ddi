@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 47F535C0-57C7-407B-B47B-188EB6434F2E
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IPrinterPropertyBag, GetWriteStream, GetWriteStream method [Print Devices], printerextension/IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], IPrinterPropertyBag interface, print.iprinterpropertybag_getwritestream, IPrinterPropertyBag::GetWriteStream, IPrinterPropertyBag interface [Print Devices], GetWriteStream method
+ms.keywords: GetWriteStream, printerextension/IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], print.iprinterpropertybag_getwritestream, IPrinterPropertyBag, IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag interface [Print Devices], GetWriteStream method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,6 +86,8 @@ This method does not work with non-stream properties.
 ## See Also
 
 <a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+
+
 
  
 

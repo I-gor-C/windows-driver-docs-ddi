@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 7e564512-ff57-4bce-93c1-76e6034ec061
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: pmi/PPMI_CAPABILITIES, PMI_CAPABILITIES structure [Power Metering and Budgeting Devices], PowerMeterRef_14d27676-6523-4aca-8ce7-c6c3e8794171.xml, PPMI_CAPABILITIES, pmi/PMI_CAPABILITIES, powermeter.pmi_capabilities, *PPMI_CAPABILITIES, PPMI_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], _PMI_CAPABILITIES, PMI_CAPABILITIES
+ms.keywords: pmi/PPMI_CAPABILITIES, PPMI_CAPABILITIES, pmi/PMI_CAPABILITIES, PowerMeterRef_14d27676-6523-4aca-8ce7-c6c3e8794171.xml, PMI_CAPABILITIES structure [Power Metering and Budgeting Devices], _PMI_CAPABILITIES, PMI_CAPABILITIES, PPMI_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], *PPMI_CAPABILITIES, powermeter.pmi_capabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PMI_CAPABILITIES
 product: Windows
 targetos: Windows
-req.typenames: PMI_CAPABILITIES, *PPMI_CAPABILITIES
+req.typenames: "*PPMI_CAPABILITIES, PMI_CAPABILITIES"
 ---
 
 # _PMI_CAPABILITIES structure
@@ -86,6 +86,7 @@ The PMI capability information is returned through an <a href="..\pmi\ni-pmi-ioc
 If the IOCTL query request completes successfully, the request returns a PMI_CAPABILITIES structure. The <b>Capabilities</b> member of this structure contains data formatted as the requested PMI capabilities structure.
 
 For example, if an IOCTL query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> is made with the input data set to <b>PmiReportedCapabilities</b> and the request completes successfully, the request returns a PMI_CAPABILITIES structure with its members set to the following values:
+
 <ul>
 <li>
 The <b>CapabilitiesType</b> member is set to <b>PmiReportedCapabilities</b>.
@@ -105,13 +106,21 @@ The <b>Capabilities</b> member contains data that is formatted as a <a href="..\
 
 ## See Also
 
-<a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
-
 <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+
+
 
 <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
 
+
+
+<a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
+
+
+
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+
+
 
  
 

@@ -74,6 +74,7 @@ Contains an enumerator value of type <a href="..\irb\ne-irb-ide_control_action.m
 `Parameters`
 
 A pointer to a buffer that contains the parameters that are associated with the control action. This parameter can have one of the values in the following table.
+
 <table>
 <tr>
 <th>Control action</th>
@@ -118,6 +119,7 @@ Indicates that there is a vendor defined power event coming.
 ## Remarks
 
 The port driver makes sure that there is no outstanding I/O on the channel before it invokes this routine. The miniport driver can have its own power policy methods when the system enters a different power state. In order to achieve this, the miniport driver needs to do the following:
+
 <ul>
 <li>
 Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="https://msdn.microsoft.com/0231ba90-5de4-4f5a-83bb-0f73be4b23ae">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.
@@ -150,6 +152,8 @@ After vendor-defined power management is registered, the miniport driver will be
 ## See Also
 
 <a href="..\irb\nf-irb-ataportgetuncachedextension.md">AtaPortGetUncachedExtension</a>
+
+
 
  
 

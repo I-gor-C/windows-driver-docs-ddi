@@ -80,7 +80,9 @@ The height (in the <i>y</i>-direction) of the tiled region. Used for 2-D and 3-D
 `NumTiles`
 
 The number of tiles within the tiled region.
-<div class="alert"><b>Note</b>  <b>NumTiles</b> must equal <b>Width</b> * <b>Height</b> * <b>Depth</b>.</div><div> </div>
+
+<div class="alert"><b>Note</b>  <b>NumTiles</b> must equal <b>Width</b> * <b>Height</b> * <b>Depth</b>.</div>
+<div> </div>
 
 `Width`
 

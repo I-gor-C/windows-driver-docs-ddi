@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: ff22498e-404f-42f6-82fd-f0178f6c7789
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GdiDeleteSpoolFileHandle, gdifnc_76c1c0cf-2a48-44eb-9b48-1d0a5bf4548b.xml, winppi/GdiDeleteSpoolFileHandle, GdiDeleteSpoolFileHandle function [Print Devices], print.gdideletespoolfilehandle
+ms.keywords: GdiDeleteSpoolFileHandle, print.gdideletespoolfilehandle, GdiDeleteSpoolFileHandle function [Print Devices], winppi/GdiDeleteSpoolFileHandle, gdifnc_76c1c0cf-2a48-44eb-9b48-1d0a5bf4548b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -42,7 +42,7 @@ apiname:
 -	GdiDeleteSpoolFileHandle
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -88,6 +88,8 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## See Also
 
 <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>
+
+
 
  
 

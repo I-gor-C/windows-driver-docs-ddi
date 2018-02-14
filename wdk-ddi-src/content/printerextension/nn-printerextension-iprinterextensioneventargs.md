@@ -54,6 +54,13 @@ Represents the context for the desktop printer extension activation.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrinterExtensionEventArgs.get_BidiNotification](nf-printerextension-iprinterextensioneventargs-get_bidinotification.md) | Gets the text of the bidirectional communication (Bidi) notification, if applicable. |
+| [printerextension.IPrinterExtensionEventArgs.get_DetailedReasonId](nf-printerextension-iprinterextensioneventargs-get_detailedreasonid.md) | Gets a more detailed activation reason than what can be retrieved from ReasonId. |
+| [printerextension.IPrinterExtensionEventArgs.get_ReasonId](nf-printerextension-iprinterextensioneventargs-get_reasonid.md) | Gets the reason why the printer extension was activated. |
+| [printerextension.IPrinterExtensionEventArgs.get_Request](nf-printerextension-iprinterextensioneventargs-get_request.md) | Gets the IPrinterExtensionRequest object for the current event. |
+| [printerextension.IPrinterExtensionEventArgs.get_SourceApplication](nf-printerextension-iprinterextensioneventargs-get_sourceapplication.md) | Gets the name of the application that invoked the printer extension. |
+| [printerextension.IPrinterExtensionEventArgs.get_WindowModal](nf-printerextension-iprinterextensioneventargs-get_windowmodal.md) | Gets the run mode parameter that determines whether or not the printer extension should be run as modal. |
+| [printerextension.IPrinterExtensionEventArgs.get_WindowParent](nf-printerextension-iprinterextensioneventargs-get_windowparent.md) | Gets the handle of the parent window. |
 
 ## Remarks
 
@@ -68,9 +75,13 @@ Represents the context for the desktop printer extension activation.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4E20303A-BEB3-4928-BA5A-356D978FA2BE">V4 Printer Driver Property Bags</a>
+
+
+
 <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
 
-<a href="https://msdn.microsoft.com/4E20303A-BEB3-4928-BA5A-356D978FA2BE">V4 Printer Driver Property Bags</a>
+
 
  
 

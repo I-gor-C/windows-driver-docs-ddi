@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 265912e2-2076-4435-811f-70a3dd1a0bd7
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dddiarg_setpalette, D3DDDIARG_SETPALETTE structure [Display Devices], d3dumddi/D3DDDIARG_SETPALETTE, UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, _D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE
+ms.keywords: UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, display.d3dddiarg_setpalette, d3dumddi/D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE, _D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE structure [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -65,6 +65,7 @@ typedef struct _D3DDDIARG_SETPALETTE {
 `PaletteFlags`
 
 [in] A valid bitwise OR of the following flags that specify the attributes of the palette.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -118,6 +119,8 @@ The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpal
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpalette.md">SetPalette</a>
+
+
 
  
 

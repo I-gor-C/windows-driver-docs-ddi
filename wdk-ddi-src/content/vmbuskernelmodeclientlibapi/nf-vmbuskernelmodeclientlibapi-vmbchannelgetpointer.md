@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelGetPointer
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -84,6 +84,8 @@ The value previously saved by using <a href="..\vmbuskernelmodeclientlibapi\nf-v
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsetpointer.md">VmbPacketSetPointer</a>
+
+
 
  
 

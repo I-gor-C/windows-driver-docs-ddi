@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5110C452-53E6-401A-9D14-EBD95D3F8BE2
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFDEVICEASSIGNPROPERTY, WdfDeviceAssignProperty method, WdfDeviceAssignProperty, wdfdevice/WdfDeviceAssignProperty, wdf.wdfdeviceassignproperty
+ms.keywords: wdf.wdfdeviceassignproperty, PFN_WDFDEVICEASSIGNPROPERTY, WdfDeviceAssignProperty method, WdfDeviceAssignProperty, wdfdevice/WdfDeviceAssignProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,6 +91,7 @@ A pointer to a caller-allocated buffer that contains the device property data. S
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceAssignProperty</b> returns STATUS_SUCCESS. Additional return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -107,7 +108,8 @@ One of the parameters is incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -132,6 +134,8 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
+
+
 
  
 

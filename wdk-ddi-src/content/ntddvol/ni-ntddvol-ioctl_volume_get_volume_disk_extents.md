@@ -69,6 +69,7 @@ The length of a VOLUME_DISK_EXTENTS structure.
 
 ### Status Block
 The driver sets <b>Irp-&gt;IoStatus.Information</b> and the <b>Status</b> field as follows:
+
 <ul>
 <li>
 If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is &lt; <b>sizeof</b>(VOLUME_DISK_EXTENTS), the driver sets <b>Irp-&gt;IoStatus.Information</b> to zero and returns STATUS_INVALID_PARAMETER.
@@ -93,9 +94,13 @@ If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for a
 
 ## See Also
 
+<a href="..\ntddvol\ns-ntddvol-_disk_extent.md">DISK_EXTENT</a>
+
+
+
 <a href="..\ntddvol\ns-ntddvol-_volume_disk_extents.md">VOLUME_DISK_EXTENTS</a>
 
-<a href="..\ntddvol\ns-ntddvol-_disk_extent.md">DISK_EXTENT</a>
+
 
  
 

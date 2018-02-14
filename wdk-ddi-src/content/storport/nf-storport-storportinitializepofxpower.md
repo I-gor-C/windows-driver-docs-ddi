@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 154EAF9B-4B30-4124-B31D-6C7D09B52674
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortInitializePoFxPower, StorPortInitializePoFxPower, StorPortInitializePoFxPower routine [Storage Devices], storage.storportinitializepofxpower
+ms.keywords: StorPortInitializePoFxPower routine [Storage Devices], storage.storportinitializepofxpower, storport/StorPortInitializePoFxPower, StorPortInitializePoFxPower
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ A pointer to a <b>BOOLEAN</b> value which the Storport driver will set to indica
 ## Return Value
 
 The <b>StorPortInitializePoFxPower</b> routine returns one of these status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -165,6 +166,8 @@ If the <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b> flag is set in the <b>Flags</
 ## See Also
 
 <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
+
+
 
  
 

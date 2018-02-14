@@ -71,6 +71,7 @@ None.
 
 ### Status Block
 One of the following values may be returned in the <b>Status</b> field: 
+
 <table>
 <tr>
 <th>Status Value</th>
@@ -114,6 +115,8 @@ Metadata can also be erased by using this IOCTL. To erase metadata for a band, s
 ## See Also
 
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_set_band_metadata_parameters.md">SET_BAND_METADATA_PARAMETERS</a>
+
+
 
  
 

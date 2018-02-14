@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: ff51d0d1-47f1-4df6-b671-d74f791d778b
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugSymbols::GetModuleByOffset, IDebugSymbols::GetModuleByOffset, IDebugSymbols interface [Windows Debugging], GetModuleByOffset method, IDebugSymbols2::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_2f5375ce-a9f1-4e86-ab82-7f35edc716c2.xml, GetModuleByOffset method [Windows Debugging], IDebugSymbols2 interface, GetModuleByOffset method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset method, dbgeng/IDebugSymbols3::GetModuleByOffset, IDebugSymbols3, GetModuleByOffset method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetModuleByOffset method, GetModuleByOffset, dbgeng/IDebugSymbols2::GetModuleByOffset, IDebugSymbols3::GetModuleByOffset, debugger.getmodulebyoffset
+ms.keywords: IDebugSymbols2::GetModuleByOffset, dbgeng/IDebugSymbols3::GetModuleByOffset, GetModuleByOffset, debugger.getmodulebyoffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::GetModuleByOffset, IDebugSymbols3::GetModuleByOffset, dbgeng/IDebugSymbols2::GetModuleByOffset, IDebugSymbols interface [Windows Debugging], GetModuleByOffset method, IDebugSymbols3, GetModuleByOffset method [Windows Debugging], GetModuleByOffset method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::GetModuleByOffset, IDebugSymbols2, IDebugSymbols2 interface [Windows Debugging], GetModuleByOffset method, IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset method, IDebugSymbols_2f5375ce-a9f1-4e86-ab82-7f35edc716c2.xml, IDebugSymbols, GetModuleByOffset method [Windows Debugging], IDebugSymbols2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -82,6 +82,7 @@ Receives the location in the target's memory address space of the base of the mo
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -115,15 +116,25 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547138">GetModuleByOffset2</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547138">GetModuleByOffset2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547080">GetModuleByIndex</a>
+
+
 
  
 

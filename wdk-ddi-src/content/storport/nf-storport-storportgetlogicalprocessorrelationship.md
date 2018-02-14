@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 32b92771-7f23-492c-a3b0-b10032c9f80a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetLogicalProcessorRelationship routine [Storage Devices], StorPortGetLogicalProcessorRelationship, storage.storportgetlogicalprocessorrelationship, storport/StorPortGetLogicalProcessorRelationship, storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml
+ms.keywords: storport/StorPortGetLogicalProcessorRelationship, storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml, StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storage.storportgetlogicalprocessorrelationship
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ A pointer to the length of the information buffer, in bytes. Upon return, this v
 ## Return Value
 
 The <b>StorPortGetLogicalProcessorRelationship</b>routine returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>

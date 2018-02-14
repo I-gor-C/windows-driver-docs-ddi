@@ -100,9 +100,11 @@ As one of the following values, the type of disconnect that the offload target m
 
 
 
+
 #### TCP_DISCONNECT_ABORTIVE_CLOSE
 
 The offload target must perform an abortive disconnect by sending an RST segment.
+
 
 
 #### TCP_DISCONNECT_GRACEFUL_CLOSE
@@ -131,8 +133,11 @@ If
     <i>Flags</i> is set to 
     <b>TCP_DISCONNECT_ABORTIVE_CLOSE</b>, the offload target performs an abortive disconnect by sending an
     RST segment on the specified TCP connection.
+
 <div class="alert"><b>Note</b>  This is the only instance in which an offload target can send an RST
-    segment.</div><div> </div>Before calling the 
+    segment.</div>
+<div> </div>
+Before calling the 
     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
     NdisTcpOffloadDisconnectComplete</a> function to complete the abortive disconnect, the offload target
     must complete all outstanding send requests on the connection with a status value of
@@ -177,6 +182,7 @@ From the perspective of the offload target, sending a FIN segment closes the sen
     connection. Sending a FIN segment, however, does not close the receive half of the connection. The remote
     host terminates the receive half of the connection by sending either of the following to the offload
     target:
+
 <ul>
 <li>
 A FIN segment, which requests a graceful disconnect.
@@ -186,7 +192,8 @@ A FIN segment, which requests a graceful disconnect.
 An RST segment, which requests an abortive disconnect.
 
 </li>
-</ul>After sending a FIN segment, the offload target can receive segments on the connection until the
+</ul>
+After sending a FIN segment, the offload target can receive segments on the connection until the
     remote host initiates a graceful or abortive disconnect or until the local host terminates the offload of
     the connection or initiates an abortive disconnect.
 
@@ -218,27 +225,47 @@ The offload target must not free resources for the connection on which it has is
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
-   NdisAdvanceNetBufferDataStart</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
 
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
    NdisTcpOffloadDisconnectComplete</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
 
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
+
+
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
+
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+   NdisAdvanceNetBufferDataStart</a>
+
+
 
  
 

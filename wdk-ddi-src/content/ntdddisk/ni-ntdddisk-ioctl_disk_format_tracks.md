@@ -80,6 +80,8 @@ The <b>Information</b> field is set to the size of the returned bad-track array 
 
 <a href="..\ntdddisk\ns-ntdddisk-_format_parameters.md">FORMAT_PARAMETERS</a>
 
+
+
  
 
  

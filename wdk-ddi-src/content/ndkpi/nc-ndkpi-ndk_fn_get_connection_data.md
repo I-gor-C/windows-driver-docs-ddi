@@ -83,12 +83,15 @@ A pointer to private data that is returned.
 `*pPrivateDataLength`
 
 The length, in bytes, of the private data that is provided in the <i>pPrivateData</i> parameter.
-<div class="alert"><b>Note</b>  The output value does not indicate the actual length of private data stored in the buffer. NDK consumers must negotiate the format and length of the actual private data. For more information about private data, see the Remarks section.</div><div> </div>
+
+<div class="alert"><b>Note</b>  The output value does not indicate the actual length of private data stored in the buffer. NDK consumers must negotiate the format and length of the actual private data. For more information about private data, see the Remarks section.</div>
+<div> </div>
 
 
 ## Return Value
 
 The <i>NdkGetConnectionData</i> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,8 +142,11 @@ To access the private data and effective IRD and ORD values from the passive sid
 
 
 If  the <i>pPrivateData</i> parameter  is NULL and <i>*pPrivateDataLength</i> is zero, an NDK provider must return STATUS_SUCCESS and store the required private data buffer size (<i>RDS</i>) in <i>*pPrivateDataLength</i>. 
+
 <div class="alert"><b>Note</b>  The <i>required private data buffer size</i> (<i>RDS</i>) does not  indicate that the peer has sent that much private data. The  NDK consumer must, on both ends, have a common scheme to allow the receiving end to determine if  there is any private data or not in the private data buffer. The <i>RDS</i> might be different for each connection. 
-</div><div> </div>If <i>pPrivateData</i> is NULL and <i>*pPrivateDataLength</i> is greater than zero, this is an invalid request. A consumer must never do this.
+</div>
+<div> </div>
+If <i>pPrivateData</i> is NULL and <i>*pPrivateDataLength</i> is greater than zero, this is an invalid request. A consumer must never do this.
 
 
 If <i>pPrivateData</i> is not NULL, the provider must copy the private data to the buffer at  <i>pPrivateData</i> up to the smaller of <i>*pPrivateDataLength</i> or <i>RDS</i> in  bytes. 
@@ -159,7 +165,11 @@ If <i>*pPrivateDataLength</i> is greater than or equal to <i>RDS</i>, the provid
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
 
+
+
 <a href="..\ndkpi\ns-ndkpi-_ndk_connector_dispatch.md">NDK_CONNECTOR_DISPATCH</a>
+
+
 
  
 

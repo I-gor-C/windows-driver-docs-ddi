@@ -82,6 +82,7 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -123,6 +124,8 @@ The IOCTL_BTH_GET_RADIO_INFO IOCTL returns similar information as the IOCTL_BTH_
 ## See Also
 
 <a href="..\bthioctl\ns-bthioctl-_bth_radio_info.md">BTH_RADIO_INFO</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: e3131dde-95fc-447c-9451-5c8af074ed24
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfiotargetwdmgettargetfileobject, wdf.wdfiotargetwdmgettargetfileobject, WdfIoTargetWdmGetTargetFileObject method, DFIOTargetRef_b6639c60-55f2-40be-a678-c7cf56a8e28f.xml, wdfiotarget/WdfIoTargetWdmGetTargetFileObject, WdfIoTargetWdmGetTargetFileObject
+ms.keywords: wdfiotarget/WdfIoTargetWdmGetTargetFileObject, WdfIoTargetWdmGetTargetFileObject method, wdf.wdfiotargetwdmgettargetfileobject, kmdf.wdfiotargetwdmgettargetfileobject, WdfIoTargetWdmGetTargetFileObject, DFIOTargetRef_b6639c60-55f2-40be-a678-c7cf56a8e28f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,24 @@ For more information about <b>WdfIoTargetWdmGetTargetFileObject</b>, see <a href
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
+
+#### Examples
+
+The following code example obtains a pointer to the WDM file object that is associated with a remote I/O target.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PFILE_OBJECT pfileObject;
+
+pfileObject = WdfIoTargetWdmGetTargetFileObject(IoTarget);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,13 +112,21 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetdeviceobject.md">WdfIoTargetWdmGetTargetDeviceObject</a>
+
+
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfilehandle.md">WdfIoTargetWdmGetTargetFileHandle</a>
 
+
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetdeviceobject.md">WdfIoTargetWdmGetTargetDeviceObject</a>
+
+
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+
+
 
  
 

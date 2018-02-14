@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e6823b9c-9717-49ab-8e67-c1d522774826
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportallocatepool, storprt_4ede181d-6ccf-47af-974d-b0daaa6e723a.xml, StorPortAllocatePool routine [Storage Devices], StorPortAllocatePool, storport/StorPortAllocatePool
+ms.keywords: storprt_4ede181d-6ccf-47af-974d-b0daaa6e723a.xml, storport/StorPortAllocatePool, StorPortAllocatePool, StorPortAllocatePool routine [Storage Devices], storage.storportallocatepool
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ A pointer to the address of the allocated memory block or <b>NULL</b> if not suc
 ## Return Value
 
 StorPortAllocatePool returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>

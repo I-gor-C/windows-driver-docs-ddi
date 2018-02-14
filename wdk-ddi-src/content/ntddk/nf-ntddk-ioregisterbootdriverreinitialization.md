@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: af1c1f4b-7710-4cf7-9596-32d11db98abb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, IoRegisterBootDriverReinitialization, ntddk/IoRegisterBootDriverReinitialization, kernel.ioregisterbootdriverreinitialization, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture]
+ms.keywords: IoRegisterBootDriverReinitialization, k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture], ntddk/IoRegisterBootDriverReinitialization, kernel.ioregisterbootdriverreinitialization
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	IoRegisterBootDriverReinitialization
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -99,11 +99,17 @@ The <i>DriverEntry</i> routine can call <b>IoRegisterBootDriverReinitialization<
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+
+
 <a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a>
+
+
 
 <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a>
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
 
  
 

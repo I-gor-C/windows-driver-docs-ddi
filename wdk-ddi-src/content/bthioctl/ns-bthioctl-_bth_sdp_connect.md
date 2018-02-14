@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 328dca02-9276-4a3d-acac-e00721863243
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: BTH_SDP_CONNECT structure [Bluetooth Devices], PBTH_SDP_CONNECT, bth_structs_5502fd7e-54f1-46dd-a441-68103d439c27.xml, BTH_SDP_CONNECT, *PBTH_SDP_CONNECT, _BTH_SDP_CONNECT, bthioctl/PBTH_SDP_CONNECT, bthioctl/BTH_SDP_CONNECT, PBTH_SDP_CONNECT structure pointer [Bluetooth Devices], bltooth.bth_sdp_connect
+ms.keywords: BTH_SDP_CONNECT, _BTH_SDP_CONNECT, bltooth.bth_sdp_connect, bthioctl/BTH_SDP_CONNECT, *PBTH_SDP_CONNECT, bthioctl/PBTH_SDP_CONNECT, bth_structs_5502fd7e-54f1-46dd-a441-68103d439c27.xml, BTH_SDP_CONNECT structure [Bluetooth Devices], PBTH_SDP_CONNECT structure pointer [Bluetooth Devices], PBTH_SDP_CONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	BTH_SDP_CONNECT
 product: Windows
 targetos: Windows
-req.typenames: "*PBTH_SDP_CONNECT, BTH_SDP_CONNECT"
+req.typenames: BTH_SDP_CONNECT, *PBTH_SDP_CONNECT
 ---
 
 # _BTH_SDP_CONNECT structure
@@ -72,6 +72,7 @@ The address of the remote SDP server that the local system connects to. This add
 A flag or combination of flags that determines how to handle the connection request. Valid flag
      values are listed in the following table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -120,6 +121,8 @@ The timeout, in seconds, for requests to the SDP connection handle that is retur
 ## See Also
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+
+
 
  
 

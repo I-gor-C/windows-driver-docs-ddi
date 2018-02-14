@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: d5378b35-da27-419f-a161-0c542aa4a9f9
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging], CreateProcess method, debugger.idebugeventcallbackswide_createprocess, CreateProcess method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide::CreateProcess, dbgeng/IDebugEventCallbacksWide::CreateProcess, CreateProcess, IDebugEventCallbacksWide, CreateProcess method [Windows Debugging]
+ms.keywords: debugger.idebugeventcallbackswide_createprocess, IDebugEventCallbacksWide::CreateProcess, IDebugEventCallbacksWide interface [Windows Debugging], CreateProcess method, CreateProcess method [Windows Debugging], dbgeng/IDebugEventCallbacksWide::CreateProcess, CreateProcess, IDebugEventCallbacksWide, CreateProcess method [Windows Debugging], IDebugEventCallbacksWide interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method

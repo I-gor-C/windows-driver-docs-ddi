@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e88c89fb-c308-4c6d-a67d-c8f98d539a43
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_cc608a62-f747-4d8c-a4f8-b6df51a4d5dd.xml, wdm/KeReadStateSemaphore, kernel.kereadstatesemaphore, KeReadStateSemaphore, KeReadStateSemaphore routine [Kernel-Mode Driver Architecture]
+ms.keywords: KeReadStateSemaphore, k105_cc608a62-f747-4d8c-a4f8-b6df51a4d5dd.xml, kernel.kereadstatesemaphore, wdm/KeReadStateSemaphore, KeReadStateSemaphore routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,11 +86,17 @@ For more information about semaphore objects, see <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
-
 <a href="..\wdm\nf-wdm-kereleasesemaphore.md">KeReleaseSemaphore</a>
 
+
+
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+
+
+
+<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
+
+
 
  
 

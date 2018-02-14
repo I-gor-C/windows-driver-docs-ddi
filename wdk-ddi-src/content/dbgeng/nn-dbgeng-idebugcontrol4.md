@@ -73,6 +73,7 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 | [dbgeng.IDebugControl4.GetEventFilterTextWide](nf-dbgeng-idebugcontrol4-geteventfiltertextwide.md) | The GetEventFilterTextWide method returns a short description of an event for a specific filter. |
 | [dbgeng.IDebugControl4.GetEventIndexDescriptionWide](nf-dbgeng-idebugcontrol4-geteventindexdescriptionwide.md) | The GetEventIndexDescriptionWide method describes the specified event in a static list of events for the current target. |
 | [dbgeng.IDebugControl4.GetExceptionFilterSecondCommand](nf-dbgeng-idebugcontrol4-getexceptionfiltersecondcommand.md) | The GetExceptionFilterSecondCommandWide method returns the command that will be executed by the debugger engine upon the second chance of a specified exception. |
+| [dbgeng.IDebugControl4.GetExceptionFilterSecondCommandWide](nf-dbgeng-idebugcontrol4-getexceptionfiltersecondcommandwide.md) | The GetExceptionFilterSecondCommandWide method returns the command that will be executed by the debugger engine upon the second chance of a specified exception. |
 | [dbgeng.IDebugControl4.GetExpressionSyntaxNamesWide](nf-dbgeng-idebugcontrol4-getexpressionsyntaxnameswide.md) | The GetExpressionSyntaxNamesWide method returns the full and abbreviated names of an expression syntax. |
 | [dbgeng.IDebugControl4.GetExtensionByPathWide](nf-dbgeng-idebugcontrol4-getextensionbypathwide.md) | The GetExtensionByPathWide method returns the handle for an already loaded extension library. |
 | [dbgeng.IDebugControl4.GetExtensionFunctionWide](nf-dbgeng-idebugcontrol4-getextensionfunctionwide.md) | The GetExtensionFunctionWide method returns a pointer to an extension function from an extension library. |
@@ -122,11 +123,17 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
 
  
 

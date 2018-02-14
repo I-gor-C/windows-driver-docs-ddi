@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 932953c3-828f-4dcd-918e-5b3b5d8def1c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortReleaseDeviceLock, VideoPortReleaseDeviceLock function [Display Devices], video/VideoPortReleaseDeviceLock, VideoPort_Functions_509d905b-a70f-4932-975f-62d4c90c77b9.xml, display.videoportreleasedevicelock
+ms.keywords: VideoPortReleaseDeviceLock function [Display Devices], VideoPort_Functions_509d905b-a70f-4932-975f-62d4c90c77b9.xml, VideoPortReleaseDeviceLock, display.videoportreleasedevicelock, video/VideoPortReleaseDeviceLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,9 +85,13 @@ The miniport driver should call <b>VideoPortReleaseDeviceLock</b> to release the
 
 ## See Also
 
+<a href="..\video\nf-video-videoportacquiredevicelock.md">VideoPortAcquireDeviceLock</a>
+
+
+
 <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>
 
-<a href="..\video\nf-video-videoportacquiredevicelock.md">VideoPortAcquireDeviceLock</a>
+
 
  
 

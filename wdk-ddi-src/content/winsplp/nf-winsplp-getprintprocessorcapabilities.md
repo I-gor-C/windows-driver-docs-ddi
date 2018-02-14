@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 81aacb41-cba7-4bd0-aded-919a4df0b934
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GetPrintProcessorCapabilities, GetPrintProcessorCapabilities function [Print Devices], winsplp/GetPrintProcessorCapabilities, spoolfnc_4ca0ae34-060f-4144-91de-a2556d1b5261.xml, print.getprintprocessorcapabilities
+ms.keywords: print.getprintprocessorcapabilities, GetPrintProcessorCapabilities function [Print Devices], spoolfnc_4ca0ae34-060f-4144-91de-a2556d1b5261.xml, winsplp/GetPrintProcessorCapabilities, GetPrintProcessorCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,9 @@ Caller-supplied pointer to a PRINTPROCESSOR_CAPS_1 or PRINTPROCESSOR_CAPS_2 stru
 Caller-supplied value that represents the size of the buffer pointed to by <i>pData</i>.
 
 If the value is less than sizeof(PRINTPROCESSOR_CAPS_1), this function should supply a value that is equal to sizeof(PRINTPROCESSOR_CAPS_1) or sizeof(PRINTPROCESSOR_CAPS_2), depending on which structure is supported by the print processor.
-<div class="alert"><b>Note</b>    If the value is less than sizeof(PRINTPROCESSOR_CAPS_1), the winprint print processor will supply a value of sizeof(PRINTPROCESSOR_CAPS_2) for Windows Vista operating systems, or sizeof(PRINTPROCESSOR_CAPS_1) for earlier operating system versions.</div><div> </div>
+
+<div class="alert"><b>Note</b>    If the value is less than sizeof(PRINTPROCESSOR_CAPS_1), the winprint print processor will supply a value of sizeof(PRINTPROCESSOR_CAPS_2) for Windows Vista operating systems, or sizeof(PRINTPROCESSOR_CAPS_1) for earlier operating system versions.</div>
+<div> </div>
 
 `pcbNeeded`
 

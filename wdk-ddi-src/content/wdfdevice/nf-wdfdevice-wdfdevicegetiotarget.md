@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a0749324-8b4e-4b82-8c51-b1b8883d521e
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdevice/WdfDeviceGetIoTarget, PFN_WDFDEVICEGETIOTARGET, DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, WdfDeviceGetIoTarget method, wdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget, kmdf.wdfdevicegetiotarget
+ms.keywords: WdfDeviceGetIoTarget method, PFN_WDFDEVICEGETIOTARGET, DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, wdfdevice/WdfDeviceGetIoTarget, wdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget, kmdf.wdfdevicegetiotarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,24 @@ When a UMDF driver sends a driver-created request to a local I/O target, the req
  To do so, call the <a href="..\wdfiotarget\nf-wdfiotarget-wdf_io_target_open_params_init_open_by_file.md">WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE</a> function before calling <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>.
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
+
+
+#### Examples
+
+The following code example obtains a handle to a specified device's local I/O target.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDFIOTARGET  ioTargetHandle;
+
+ioTargetHandle = WdfDeviceGetIoTarget(device);</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

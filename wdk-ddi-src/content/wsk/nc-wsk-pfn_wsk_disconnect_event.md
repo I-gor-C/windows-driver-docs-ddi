@@ -40,7 +40,7 @@ apiname:
 -	WskDisconnectEvent
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -69,6 +69,7 @@ NTSTATUS PfnWskDisconnectEvent(
 A pointer to the socket context for the connection-oriented socket that has been disconnected. The
      WSK application provided this pointer to the WSK subsystem in one of the following ways:
      
+
 <ul>
 <li>
 It called the 
@@ -103,10 +104,12 @@ A ULONG value that contains a bitwise OR of a combination of the following flags
 
 
 
+
 #### WSK_FLAG_ABORTIVE
 
 The remote application performed an abortive disconnect of the socket. If this flag is not set,
        the remote application performed a graceful disconnect of the socket.
+
 
 
 #### WSK_FLAG_AT_DISPATCH_LEVEL
@@ -156,24 +159,42 @@ A WSK application's <i>WskDisconnectEvent</i> event callback function must not w
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+
+
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+
+
+
 <a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
    WSK_CLIENT_CONNECTION_DISPATCH</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e154c9d5-a131-47db-b0fa-d51154637c56
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsLsnEqual, wdm/ClfsLsnEqual, kernel.clfslsnequal, ClfsLsnEqual routine [Kernel-Mode Driver Architecture], Clfs_09dba2f1-3508-488d-b663-8ba0806b9d31.xml
+ms.keywords: Clfs_09dba2f1-3508-488d-b663-8ba0806b9d31.xml, ClfsLsnEqual, ClfsLsnEqual routine [Kernel-Mode Driver Architecture], wdm/ClfsLsnEqual, kernel.clfslsnequal
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,9 +95,15 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 <a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
 
-<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+
 
 <a href="..\wdm\nf-wdm-clfslsnnull.md">ClfsLsnNull</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+
+
 
  
 

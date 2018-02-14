@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: b07cd86b-a980-478b-832b-484a1b0ca981
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_c7f29624-d08d-437f-8b03-6f6f3b1f27b9.xml, display.videoportwriteportbufferuchar, video/VideoPortWritePortBufferUchar, VideoPortWritePortBufferUchar function [Display Devices], VideoPortWritePortBufferUchar
+ms.keywords: VideoPortWritePortBufferUchar function [Display Devices], VideoPortWritePortBufferUchar, video/VideoPortWritePortBufferUchar, display.videoportwriteportbufferuchar, VideoPort_Functions_c7f29624-d08d-437f-8b03-6f6f3b1f27b9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,8 @@ Callers of <b>VideoPortWritePortBufferUchar</b> can be running at any IRQL, prov
 ## See Also
 
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
+
 
  
 

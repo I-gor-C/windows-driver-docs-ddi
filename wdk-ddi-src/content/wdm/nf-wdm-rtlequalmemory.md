@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 43695fa9-32e1-4bd5-b146-88d6d03fe9fb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlEqualMemory routine [Kernel-Mode Driver Architecture], wdm/RtlEqualMemory, kernel.rtlequalmemory, RtlEqualMemory, k109_a75dfbc8-12af-4f95-9ba0-b7752b796e55.xml
+ms.keywords: RtlEqualMemory routine [Kernel-Mode Driver Architecture], kernel.rtlequalmemory, RtlEqualMemory, k109_a75dfbc8-12af-4f95-9ba0-b7752b796e55.xml, wdm/RtlEqualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -95,6 +95,8 @@ Callers of <b>RtlEqualMemory</b> can be running at any IRQL if both blocks of me
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlcomparememory.md">RtlCompareMemory</a>
+
+
 
  
 

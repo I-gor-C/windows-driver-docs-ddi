@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0b11d913-f488-4237-85e3-4469eefc0b91
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFDevice2::CreateRemoteTarget, CreateRemoteTarget method, IWDFDevice2 interface, wudfddi/IWDFDevice2::CreateRemoteTarget, umdf.iwdfdevice2_createremotetarget, IWDFDevice2, CreateRemoteTarget method, wdf.iwdfdevice2_createremotetarget, CreateRemoteTarget, IWDFDevice2 interface, CreateRemoteTarget method, UMDFDeviceObjectRef_877f2d10-92a7-4e04-b07e-683b728c691a.xml
+ms.keywords: CreateRemoteTarget method, wdf.iwdfdevice2_createremotetarget, CreateRemoteTarget method, IWDFDevice2 interface, wudfddi/IWDFDevice2::CreateRemoteTarget, umdf.iwdfdevice2_createremotetarget, CreateRemoteTarget, IWDFDevice2 interface, CreateRemoteTarget method, UMDFDeviceObjectRef_877f2d10-92a7-4e04-b07e-683b728c691a.xml, IWDFDevice2, IWDFDevice2::CreateRemoteTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -78,6 +78,7 @@ A pointer to a location that receives a pointer to the <a href="..\wudfddi\nn-wu
 ## Return Value
 
 <b>CreateRemoteTarget</b> returns S_OK if the operation succeeds. Otherwise, the method might return the following value:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -105,7 +106,8 @@ The <i>pParentObject</i> parameter did not specify the device object that provid
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might return one of the other values that Winerror.h contains.
 
@@ -116,6 +118,13 @@ After your driver has called <b>CreateRemoteTarget</b>, the driver can open the 
 If the driver uses the <i>pParentObject</i> parameter to specify a parent object, the parent object can be the device object that provides the <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a> interface, or it can be any object whose chain of parents leads to that device object. The framework will delete the remote target object when it (or the driver) deletes the device object.
 
 For more information about remote I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">Using I/O Targets in UMDF</a>.
+
+
+#### Examples
+
+For code examples that use <b>CreateRemoteTarget</b>, see the code examples at <a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>.
+
+<div class="code"></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -129,11 +138,17 @@ For more information about remote I/O targets, see <a href="https://docs.microso
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
+
+
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: d3d59dca-7214-493c-bb70-4391696fe017
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSPROPERTY_DESCRIPTION, *PKSPROPERTY_DESCRIPTION, KSPROPERTY_DESCRIPTION structure [Streaming Media Devices], ks/PKSPROPERTY_DESCRIPTION, ks/KSPROPERTY_DESCRIPTION, ks-struct_37ee8090-f90e-40a9-8731-3521d1d3a157.xml, PKSPROPERTY_DESCRIPTION structure pointer [Streaming Media Devices], stream.ksproperty_description, KSPROPERTY_DESCRIPTION
+ms.keywords: KSPROPERTY_DESCRIPTION, PKSPROPERTY_DESCRIPTION, ks/KSPROPERTY_DESCRIPTION, stream.ksproperty_description, *PKSPROPERTY_DESCRIPTION, ks-struct_37ee8090-f90e-40a9-8731-3521d1d3a157.xml, KSPROPERTY_DESCRIPTION structure [Streaming Media Devices], PKSPROPERTY_DESCRIPTION structure pointer [Streaming Media Devices], ks/PKSPROPERTY_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSPROPERTY_DESCRIPTION
 product: Windows
 targetos: Windows
-req.typenames: KSPROPERTY_DESCRIPTION, *PKSPROPERTY_DESCRIPTION
+req.typenames: "*PKSPROPERTY_DESCRIPTION, KSPROPERTY_DESCRIPTION"
 ---
 
 # KSPROPERTY_DESCRIPTION structure
@@ -96,13 +96,21 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
-
 <a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
+
+
 
 <a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
 
+
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a>
+
+
+
+<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5a00f401-89e5-4863-ab14-a8ab7eec1869
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.ig_dump_symbol_info, WdbgExts_Ref_22e264c9-ed41-4257-a192-7b3f6d4ffdea.xml, *PSYM_DUMP_PARAM, wdbgexts/SYM_DUMP_PARAM, _SYM_DUMP_PARAM, SYM_DUMP_PARAM, SYM_DUMP_PARAM structure [Windows Debugging], wdbgexts/PSYM_DUMP_PARAM, PSYM_DUMP_PARAM structure pointer [Windows Debugging], PSYM_DUMP_PARAM
+ms.keywords: wdbgexts/PSYM_DUMP_PARAM, PSYM_DUMP_PARAM structure pointer [Windows Debugging], *PSYM_DUMP_PARAM, wdbgexts/SYM_DUMP_PARAM, SYM_DUMP_PARAM structure [Windows Debugging], debugger.ig_dump_symbol_info, WdbgExts_Ref_22e264c9-ed41-4257-a192-7b3f6d4ffdea.xml, _SYM_DUMP_PARAM, SYM_DUMP_PARAM, PSYM_DUMP_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -157,9 +157,12 @@ This <b>Ioctl</b> operation looks up the module information for the symbol, load
 If <b>nFields</b> is zero and DBG_DUMP_CALL_FOR_EACH is set in <b>Options</b>, the callback function specified in <b>CallbackRoutine</b> is called for every field in the symbol.
 
 If <b>nFields</b> is non-zero and DBG_DUMP_CALL_FOR_EACH is set in <b>Options</b>, callbacks are only made for those fields matching the <b>fName</b> member of one of the <b>Fields</b> elements.  If a field matches a <b>fName</b> member and the <b>fieldCallBack</b> member is not <b>NULL</b>, the callback function in  <b>fieldCallBack</b> is called; if it is <b>NULL</b>, the callback function in <b>CallbackRoutine</b> is called instead.
-<h3><a id="ddk_dbg_dump_xxx_dbx"></a><a id="DDK_DBG_DUMP_XXX_DBX"></a></h3>The DBG_DUMP_<i>XXX</i> bit flags are used by the <b>Options</b> member of the SYM_DUMP_PARAM structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation.
+
+<h3><a id="ddk_dbg_dump_xxx_dbx"></a><a id="DDK_DBG_DUMP_XXX_DBX"></a></h3>
+The DBG_DUMP_<i>XXX</i> bit flags are used by the <b>Options</b> member of the SYM_DUMP_PARAM structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation.
 
 The following flags can be present.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -315,12 +318,16 @@ Recurse through nested structures; but do not follow pointers.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 In addition, the result of the macro DBG_DUMP_RECUR_LEVEL(<i>Level</i>) can be added to the bit-set to specify how deep into structures to recurse.  <i>Level</i> can be a number between 0 and 15.
-<h3><a id="ddk_dbg_dump_field_xxx_dbx"></a><a id="DDK_DBG_DUMP_FIELD_XXX_DBX"></a></h3>The DBG_DUMP_FIELD_<i>XXX</i> bit flags are used by the <b>fOptions</b> member of the <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation.
+
+<h3><a id="ddk_dbg_dump_field_xxx_dbx"></a><a id="DDK_DBG_DUMP_FIELD_XXX_DBX"></a></h3>
+The DBG_DUMP_FIELD_<i>XXX</i> bit flags are used by the <b>fOptions</b> member of the <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> structure to control the behavior of the <b>IG_DUMP_SYMBOL_INFO</b><a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation.
 
 The following flags can be present.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -428,7 +435,8 @@ If the member is a pointer, it is printed as a string, ANSI string , WCHAR strin
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 In addition, the result of the macro DBG_DUMP_RECUR_LEVEL(<i>Level</i>) can be added to the bit-set to specify how deep into structures to recurse.  <i>Level</i> can be a number between 0 and 15.
 
@@ -441,11 +449,19 @@ In addition, the result of the macro DBG_DUMP_RECUR_LEVEL(<i>Level</i>) can be a
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 
-<a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540433">DBG_DUMP_XXX</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550910">IG_DUMP_SYMBOL_INFO Error Codes</a>
+
+
+
+<a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
+
+
 
  
 

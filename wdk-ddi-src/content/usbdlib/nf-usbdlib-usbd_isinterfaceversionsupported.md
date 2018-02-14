@@ -7,8 +7,8 @@ old-location: buses\usbd_isusbdinterfaceversionsupported.htm
 old-project: usbref
 ms.assetid: AEA5B6AA-8EEA-4D82-9991-1DE32BAE7DCE
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: USBD_IsInterfaceVersionSupported routine [Buses], USBD_IsInterfaceVersionSupported, usbdlib/USBD_IsInterfaceVersionSupported, buses.usbd_isusbdinterfaceversionsupported
+ms.date: 2/8/2018
+ms.keywords: buses.usbd_isusbdinterfaceversionsupported, USBD_IsInterfaceVersionSupported routine [Buses], usbdlib/USBD_IsInterfaceVersionSupported, USBD_IsInterfaceVersionSupported
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorReleasemonitorsourcemodeset(
 ## Return Value
 
 The <b>pfnReleaseMonitorSourceModeSet</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -111,7 +112,8 @@ The handle supplied in <i>hMonitorSourceModeSet</i> was invalid.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other error codes that are defined in <i>Ntstatus.h</i>.
 
@@ -132,6 +134,8 @@ This function is also available in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_mo
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitor_interface_v2.md">DXGK_MONITOR_INTERFACE_V2</a>
+
+
 
  
 

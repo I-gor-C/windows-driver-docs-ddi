@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 The <i>GetPitch</i> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,11 +118,17 @@ The surface for which the <i>GetPitch</i> function returns the pitch can be non-
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getpitch.md">D3DDDIARG_GETPITCH</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_encryptionblt.md">EncryptionBlt</a>
 
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getpitch.md">D3DDDIARG_GETPITCH</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decryptionblt.md">DecryptionBlt</a>
+
+
 
  
 

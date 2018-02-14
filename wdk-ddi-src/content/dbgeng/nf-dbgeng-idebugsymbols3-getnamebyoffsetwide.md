@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 45a041c9-029a-4fa1-91c6-562e56a30b3e
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetNameByOffsetWide method, dbgeng/IDebugSymbols3::GetNameByOffsetWide, debugger.getnamebyoffsetwide, GetNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetNameByOffsetWide, GetNameByOffsetWide method [Windows Debugging], IDebugSymbols3, GetNameByOffsetWide
+ms.keywords: GetNameByOffsetWide method [Windows Debugging], IDebugSymbols3, dbgeng/IDebugSymbols3::GetNameByOffsetWide, GetNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, GetNameByOffsetWide, debugger.getnamebyoffsetwide, IDebugSymbols3 interface [Windows Debugging], GetNameByOffsetWide method, IDebugSymbols3::GetNameByOffsetWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -85,6 +85,7 @@ Receives the difference between the value of <i>Offset</i> and the base location
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -138,11 +139,17 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547204">GetNearNameByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548035">GetOffsetByName</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548035">GetOffsetByName</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547204">GetNearNameByOffset</a>
+
+
 
  
 

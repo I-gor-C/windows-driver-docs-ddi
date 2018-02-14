@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 437DC9C5-CE73-45E8-AC4A-CFF9249809AD
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelInitSetProcessPacketCallbacks, netvista.vmbchannelinitsetprocesspacketcallbacks, VmbChannelInitSetProcessPacketCallbacks function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelInitSetProcessPacketCallbacks
+ms.keywords: netvista.vmbchannelinitsetprocesspacketcallbacks, vmbuskernelmodeclientlibapi/VmbChannelInitSetProcessPacketCallbacks, VmbChannelInitSetProcessPacketCallbacks function [Network Drivers Starting with Windows Vista], VmbChannelInitSetProcessPacketCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelInitSetProcessPacketCallbacks
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -80,6 +80,7 @@ A callback function to call     when processing of a batch of packets has been c
 ## Return Value
 
 returns one of the following status values: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -132,7 +133,11 @@ after the last invocation of <b>ProcessPacketCallback</b> in a single batch.
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelinitsetprocesspacketcallbacks.md">ProcessPacketCallback</a>
 
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_processing_complete.md">EvtVmbChannelProcessingComplete</a>
+
+
 
  
 

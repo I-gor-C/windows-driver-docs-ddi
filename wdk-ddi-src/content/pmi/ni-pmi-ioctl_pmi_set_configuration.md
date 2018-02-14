@@ -76,7 +76,9 @@ The <b>Status</b> member is set to one of the following values:
 The <b>IOCTL_PMI_SET_CONFIGURATION</b> request sets the configuration parameters for the power meter. The <b>AssociatedIrp.SystemBuffer</b> member of the IRP references a buffer that contains a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure. The <b>ConfigurationType</b> member of this structure contains information about the type of PMI configuration data to set in the power meter.
 
 Only PMI configuration data that the power meter supports with read/write permissions can be changed by using a set request of <b>IOCTL_PMI_SET_CONFIGURATION</b>. A set request of <b>IOCTL_PMI_SET_CONFIGURATION</b> to change read-only PMI configuration data will fail, and the data will not be changed on the power meter.
-<div class="alert"><b>Note</b>  Beginning with Windows 7 and Windows Server 2008 R2, the power meter can also support read/write permissions to its budgeting information. For more information, see <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Beginning with Windows 7 and Windows Server 2008 R2, the power meter can also support read/write permissions to its budgeting information. For more information, see <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,11 +90,19 @@ Only PMI configuration data that the power meter supports with read/write permis
 
 <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 
+
+
 <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
+
+
 
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 
+
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
+
 
  
 

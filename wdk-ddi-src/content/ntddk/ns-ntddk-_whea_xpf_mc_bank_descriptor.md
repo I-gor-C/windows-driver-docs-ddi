@@ -7,8 +7,8 @@ old-location: whea\whea_xpf_mc_bank_descriptor.htm
 old-project: whea
 ms.assetid: e5360f75-53cf-4025-9a1c-665c098329dd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: ntddk/PWHEA_XPF_MC_BANK_DESCRIPTOR, PWHEA_XPF_MC_BANK_DESCRIPTOR, whearef_9f1970bd-6dbf-4104-9525-2018ab2f766e.xml, ntddk/WHEA_XPF_MC_BANK_DESCRIPTOR, whea.whea_xpf_mc_bank_descriptor, WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR structure [WHEA Drivers and Applications], PWHEA_XPF_MC_BANK_DESCRIPTOR structure pointer [WHEA Drivers and Applications], _WHEA_XPF_MC_BANK_DESCRIPTOR
+ms.date: 2/8/2018
+ms.keywords: ntddk/PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR, _WHEA_XPF_MC_BANK_DESCRIPTOR, whearef_9f1970bd-6dbf-4104-9525-2018ab2f766e.xml, PWHEA_XPF_MC_BANK_DESCRIPTOR, whea.whea_xpf_mc_bank_descriptor, PWHEA_XPF_MC_BANK_DESCRIPTOR structure pointer [WHEA Drivers and Applications], ntddk/WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR structure [WHEA Drivers and Applications]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	WHEA_XPF_MC_BANK_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR
+req.typenames: "*PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR"
 ---
 
 # _WHEA_XPF_MC_BANK_DESCRIPTOR structure
@@ -87,6 +87,7 @@ The model-specific register address of the register bank's IA32_MCi_CTL register
 `Flags`
 
 An XPF_MC_BANK_FLAGS union that indicates which of the members of the WHEA_XPF_MC_BANK_DESCRIPTOR structure can be written to by the operating system. The XPF_MC_BANK_FLAGS union is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -106,9 +107,12 @@ An XPF_MC_BANK_FLAGS union that indicates which of the members of the WHEA_XPF_M
 </table></span></div>
 
 
+
+
 #### ClearOnInitializationRW
 
 A single bit that indicates that the operating system can write to the <b>ClearOnInitialization</b> member of the WHEA_XPF_MC_BANK_DESCRIPTOR structure.
+
 
 
 #### ControlDataRW
@@ -116,9 +120,11 @@ A single bit that indicates that the operating system can write to the <b>ClearO
 A single bit that indicates that the operating system can write to the <b>ControlData</b> member of the WHEA_XPF_MC_BANK_DESCRIPTOR structure.
 
 
+
 #### Reserved
 
 Reserved for system use.
+
 
 
 #### AsUCHAR
@@ -136,14 +142,17 @@ The format of the data in the register bank's status register. Possible values a
 
 
 
+
 #### WHEA_XPF_MC_BANK_STATUSFORMAT_IA32MCA
 
 IA32 machine check architecture.
 
 
+
 #### WHEA_XPF_MC_BANK_STATUSFORMAT_Intel64MCA
 
 Intel64 machine check architecture.
+
 
 
 #### WHEA_XPF_MC_BANK_STATUSFORMAT_AMD64MCA
@@ -165,12 +174,16 @@ An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
 
- 
+
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_XPF_MC_BANK_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_XPF_MC_BANK_DESCRIPTOR structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

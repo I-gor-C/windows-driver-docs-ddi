@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: 9615915C-B729-4702-BF41-D5068B43A729
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PosCxReleaseDevice, poscx/PosCxReleaseDevice, PosCxReleaseDevice function, pos.poscxreleasedevice
+ms.keywords: PosCxReleaseDevice function, PosCxReleaseDevice, pos.poscxreleasedevice, poscx/PosCxReleaseDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,6 +73,7 @@ A handle to a framework file object that identifies the caller.
 ## Return Value
 
 Possible return values are:
+
 <table>
 <tr>
 <td><b>STATUS_SUCCESS</b></td>
@@ -103,6 +104,8 @@ Possible return values are:
 ## See Also
 
 <a href="..\poscx\nf-poscx-poscxclaimdevice.md">PosCxClaimDevice</a>
+
+
 
  
 

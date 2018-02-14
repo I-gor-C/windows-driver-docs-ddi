@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>FinishSessionKeyRefresh</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -119,11 +120,17 @@ When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> 
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_startsessionkeyrefresh.md">StartSessionKeyRefresh</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
+
+
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh.md">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_startsessionkeyrefresh.md">StartSessionKeyRefresh</a>
+
+
 
  
 

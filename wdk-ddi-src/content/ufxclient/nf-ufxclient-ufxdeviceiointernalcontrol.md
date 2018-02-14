@@ -7,8 +7,8 @@ old-location: buses\ufxdeviceiointernalcontrol.htm
 old-project: usbref
 ms.assetid: 0AD4316E-67E7-4810-86DA-5DEB5C4E6DE6
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: UfxDeviceIoInternalControl, buses.ufxdeviceiointernalcontrol, UfxDeviceIoInternalControl method [Buses], ufxclient/UfxDeviceIoInternalControl
+ms.date: 2/8/2018
+ms.keywords: UfxDeviceIoInternalControl, ufxclient/UfxDeviceIoInternalControl, buses.ufxdeviceiointernalcontrol, UfxDeviceIoInternalControl method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,6 +90,7 @@ None
 ## Remarks
 
 The client driver calls <b>UfxDeviceIoInternalControl</b> to forward internal IOCTLs that it receives in its <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_internal_device_control.md">EvtIoInternalDeviceControl</a> callback function to UFX.  The following example shows how:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 0098aa2c-4ee4-49e4-a480-2402e771742f
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugSymbols3::GetTypeNameWide, IDebugSymbols3::GetTypeNameWide, IDebugSymbols3 interface [Windows Debugging], GetTypeNameWide method, IDebugSymbols3, GetTypeNameWide, debugger.gettypenamewide, GetTypeNameWide method [Windows Debugging], IDebugSymbols3 interface, GetTypeNameWide method [Windows Debugging]
+ms.keywords: debugger.gettypenamewide, dbgeng/IDebugSymbols3::GetTypeNameWide, GetTypeNameWide, GetTypeNameWide method [Windows Debugging], IDebugSymbols3::GetTypeNameWide, GetTypeNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetTypeNameWide method, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -85,6 +85,7 @@ Receives the size in characters of the type's name.  If <i>NameSize</i> is <b>NU
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -140,7 +141,11 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="..\wdbgexts\nf-wdbgexts-gettypesize.md">GetTypeSize</a>
+
+
+<a href="..\dbgeng\nf-dbgeng-idebugsymbols-gettypesize.md">GetTypeSize</a>
+
+
 
  
 

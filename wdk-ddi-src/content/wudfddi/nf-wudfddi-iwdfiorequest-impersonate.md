@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: beb630e7-9667-4bc2-bf35-69db6cf0b104
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi/IWDFIoRequest::Impersonate, umdf.iwdfiorequest_impersonate, IWDFIoRequest, Impersonate method, Impersonate method, IWDFIoRequest interface, IWDFIoRequest::Impersonate, UMDFRequestObjectRef_a5f40359-edc8-42e1-a63d-99390abeba86.xml, wdf.iwdfiorequest_impersonate, IWDFIoRequest interface, Impersonate method, Impersonate
+ms.keywords: Impersonate method, IWDFIoRequest interface, Impersonate method, wudfddi/IWDFIoRequest::Impersonate, umdf.iwdfiorequest_impersonate, IWDFIoRequest::Impersonate, UMDFRequestObjectRef_a5f40359-edc8-42e1-a63d-99390abeba86.xml, Impersonate, Impersonate method, IWDFIoRequest interface, wdf.iwdfiorequest_impersonate, IWDFIoRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -95,13 +95,21 @@ For information about how UMDF and UMDF drivers handle impersonation, see <a hre
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
+
+
 
 <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554916">IImpersonateCallback::OnImpersonate</a>
+
+
 
  
 

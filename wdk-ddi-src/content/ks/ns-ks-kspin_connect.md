@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 62ce7a36-87ce-40d1-bdd4-8a4f4bc60b00
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSPIN_CONNECT, ks/KSPIN_CONNECT, KSPIN_CONNECT structure [Streaming Media Devices], KSPIN_CONNECT, stream.kspin_connect, ks/PKSPIN_CONNECT, PKSPIN_CONNECT structure pointer [Streaming Media Devices], ks-struct_07642f18-c766-4649-b97a-12582aa0fffb.xml, *PKSPIN_CONNECT
+ms.keywords: ks/KSPIN_CONNECT, KSPIN_CONNECT, stream.kspin_connect, KSPIN_CONNECT structure [Streaming Media Devices], ks/PKSPIN_CONNECT, *PKSPIN_CONNECT, PKSPIN_CONNECT structure pointer [Streaming Media Devices], ks-struct_07642f18-c766-4649-b97a-12582aa0fffb.xml, PKSPIN_CONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSPIN_CONNECT
 product: Windows
 targetos: Windows
-req.typenames: "*PKSPIN_CONNECT, KSPIN_CONNECT"
+req.typenames: KSPIN_CONNECT, *PKSPIN_CONNECT
 ---
 
 # KSPIN_CONNECT structure
@@ -90,11 +90,17 @@ If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instr
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a>
 
+
+
+<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
+
+
+
 <a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
+
+
 
  
 

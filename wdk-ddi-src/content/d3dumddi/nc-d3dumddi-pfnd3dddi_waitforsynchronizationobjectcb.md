@@ -73,6 +73,7 @@ A handle to a display device (that is, the graphics context).
 ## Return Value
 
 <b>pfnWaitForSynchronizationObjectCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,7 +101,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
@@ -122,6 +124,8 @@ For a code example of how to use the <b>pfnWaitForSynchronizationObjectCb</b> fu
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_waitforsynchronizationobject.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a>
+
+
 
  
 

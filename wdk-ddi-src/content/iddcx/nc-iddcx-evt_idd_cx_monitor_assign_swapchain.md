@@ -80,7 +80,8 @@ Input arguments used by <b>EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</b>.
         The format of the surfaces will be one of the formats supported by the driver, but the format of each acquired buffer may
         change between the formats supported from frame to frame. The driver should check the format of each buffer acquired.
 
-</div><div> </div>
+</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

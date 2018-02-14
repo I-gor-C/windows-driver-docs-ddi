@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: a9f229cd-33ca-42b5-bae6-3f367e5f1e84
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hid.hidp_setusages, hidfunc_4d0213bb-2715-446b-bdaf-f82be3cbc11b.xml, hidpi/HidP_SetUsages, HidP_SetUsages, HidP_SetUsages routine [Human Input Devices]
+ms.keywords: HidP_SetUsages, HidP_SetUsages routine [Human Input Devices], hidpi/HidP_SetUsages, hid.hidp_setusages, hidfunc_4d0213bb-2715-446b-bdaf-f82be3cbc11b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,6 +101,7 @@ Specifies the size, in bytes, of the report located at <i>Report</i>, which must
 ## Return Value
 
 <b>HidP_SetUsages</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -204,15 +205,27 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
+
+
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+
+
+<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
+
+
+
 <a href="..\hidpi\nf-hidpi-hidp_unsetusages.md">HidP_UnsetUsages</a>
+
+
 
  
 

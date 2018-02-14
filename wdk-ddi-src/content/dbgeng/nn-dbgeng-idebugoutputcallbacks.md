@@ -69,6 +69,8 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbackswide.md">IDebugOutputCallbacksWide</a>
 
+
+
  
 
  

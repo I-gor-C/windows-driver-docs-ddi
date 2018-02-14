@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7cb249d3-b39f-4b6b-8023-bb0c0ef8f9e1
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_ResetModem, netvista.ril_resetmodem, RIL_ResetModem method [Network Drivers Starting with Windows Vista], RIL_ResetModem
+ms.keywords: netvista.ril_resetmodem, RIL_ResetModem, rilapi/RIL_ResetModem, RIL_ResetModem method [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

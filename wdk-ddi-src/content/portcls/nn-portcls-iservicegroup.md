@@ -7,7 +7,7 @@ old-location: audio\iservicegroup.htm
 old-project: audio
 ms.assetid: eef2741e-e1a3-471b-a756-d89990929738
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 2/8/2018
 ms.keywords: audio.iservicegroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, IServiceGroup, portcls/IServiceGroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,6 +59,7 @@ Port drivers typically use service group objects to demultiplex requests for int
 | [portcls.IServiceGroup.CancelDelayedService](nf-portcls-iservicegroup-canceldelayedservice.md) | The CancelDelayedService method cancels the previously requested delayed service. |
 | [portcls.IServiceGroup.RemoveMember](nf-portcls-iservicegroup-removemember.md) | The RemoveMember method removes the specified member from the service group. |
 | [portcls.IServiceGroup.RequestDelayedService](nf-portcls-iservicegroup-requestdelayedservice.md) | The RequestDelayedService method requests service after the specified delay. |
+| [portcls.IServiceGroup.RequestService](nf-portcls-iservicegroup-requestservice.md) | TBD |
 | [portcls.IServiceGroup.SupportDelayedService](nf-portcls-iservicegroup-supportdelayedservice.md) | The SupportDelayedService method indicates that the service group should prepare to support delayed service. |
 
 ## Remarks

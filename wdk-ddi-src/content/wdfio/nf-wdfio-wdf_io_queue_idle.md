@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 9ad3be79-13ca-4bcb-b686-09e7563610f9
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdf_io_queue_idle, wdfio/WDF_IO_QUEUE_IDLE, WDF_IO_QUEUE_IDLE, wdf.wdf_io_queue_idle, WDF_IO_QUEUE_IDLE function, DFQueueObjectRef_f836bf9d-8d2c-48db-92cd-fbcef2a0faf6.xml
+ms.keywords: WDF_IO_QUEUE_IDLE function, wdf.wdf_io_queue_idle, WDF_IO_QUEUE_IDLE, DFQueueObjectRef_f836bf9d-8d2c-48db-92cd-fbcef2a0faf6.xml, wdfio/WDF_IO_QUEUE_IDLE, kmdf.wdf_io_queue_idle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,34 @@ Your driver can call <b>WDF_IO_QUEUE_IDLE</b> after it has called <a href="..\wd
 
 For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
 
+
+#### Examples
+
+The following code example is a routine that returns <b>TRUE</b> if a specified I/O queue is idle.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>BOOLEAN
+IsQueueIdle(
+    IN WDFQUEUE Queue
+    )
+{
+    WDF_IO_QUEUE_STATE queueStatus;
+    queueStatus = WdfIoQueueGetState(
+                                     Queue,
+                                     NULL,
+                                     NULL
+                                     );
+    return (WDF_IO_QUEUE_IDLE(queueStatus)) ? TRUE : FALSE;
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,13 +117,21 @@ For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wu
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
+
+
 
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
+
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
+
+
 
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>
+
+
 
  
 

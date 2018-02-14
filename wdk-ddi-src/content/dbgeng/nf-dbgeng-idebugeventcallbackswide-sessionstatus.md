@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: cc3ed4ef-5e2d-4865-8d6f-b140d6b5d7af
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging], SessionStatus method, debugger.idebugeventcallbackswide_sessionstatus, SessionStatus, dbgeng/IDebugEventCallbacksWide::SessionStatus, IDebugEventCallbacksWide, SessionStatus method [Windows Debugging], IDebugEventCallbacksWide::SessionStatus, SessionStatus method [Windows Debugging], IDebugEventCallbacksWide interface
+ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging], SessionStatus method, SessionStatus, SessionStatus method [Windows Debugging], IDebugEventCallbacksWide interface, SessionStatus method [Windows Debugging], dbgeng/IDebugEventCallbacksWide::SessionStatus, IDebugEventCallbacksWide::SessionStatus, debugger.idebugeventcallbackswide_sessionstatus, IDebugEventCallbacksWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -60,6 +60,7 @@ HRESULT SessionStatus(
 `Status`
 
 Specifies the new status of the debugger session.  The following table describes the possible values.
+
 <table>
 <tr>
 <th>Value</th>

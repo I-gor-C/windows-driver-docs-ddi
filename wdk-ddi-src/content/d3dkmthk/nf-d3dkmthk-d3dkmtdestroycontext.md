@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 33c10139-7a9a-41b1-a3c4-e3692be9a34a
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTDestroyContext, display.d3dkmtdestroycontext, D3DKMTDestroyContext, OpenGL_Functions_f7a43a18-cb8c-4b76-8123-d5eeda18d6cb.xml, D3DKMTDestroyContext function [Display Devices]
+ms.keywords: D3DKMTDestroyContext function [Display Devices], d3dkmthk/D3DKMTDestroyContext, OpenGL_Functions_f7a43a18-cb8c-4b76-8123-d5eeda18d6cb.xml, D3DKMTDestroyContext, display.d3dkmtdestroycontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTDestroyContext</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -112,6 +114,8 @@ This function might also return other NTSTATUS values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroycontext.md">D3DKMT_DESTROYCONTEXT</a>
+
+
 
  
 

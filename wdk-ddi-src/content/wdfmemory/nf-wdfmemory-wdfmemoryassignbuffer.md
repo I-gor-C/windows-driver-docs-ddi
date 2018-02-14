@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f57fe6ac-87ad-4db8-a715-816885b87d68
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml, WdfMemoryAssignBuffer method, WdfMemoryAssignBuffer, PFN_WDFMEMORYASSIGNBUFFER, kmdf.wdfmemoryassignbuffer, wdfmemory/WdfMemoryAssignBuffer, wdf.wdfmemoryassignbuffer
+ms.keywords: PFN_WDFMEMORYASSIGNBUFFER, wdfmemory/WdfMemoryAssignBuffer, kmdf.wdfmemoryassignbuffer, wdf.wdfmemoryassignbuffer, WdfMemoryAssignBuffer method, WdfMemoryAssignBuffer, DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ The nonzero size, in bytes, of the buffer that <i>Buffer</i> points to.
 ## Return Value
 
 <b>WdfMemoryAssignBuffer</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -97,7 +98,8 @@ An invalid parameter was detected.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -110,6 +112,37 @@ The method can assign a buffer to a memory object that <a href="..\wdfmemory\nf-
 The buffer that the <i>Buffer</i> parameter points to can be allocated from the pageable or non-pageable memory pool. If the driver allocates the buffer from the pageable pool, or if the buffer is from pageable pool because it came from a user-mode application, the driver must access the buffer only at IRQL &lt; DISPATCH_LEVEL. (Note that the driver's <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> and <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a> callback functions, if provided, can be called at IRQL &lt;= DISPATCH_LEVEL.)
 
 For more information about framework memory objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
+
+
+#### Examples
+
+The following code example allocates a buffer and then assigns the buffer to a framework memory object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PVOID  pNewBuffer = NULL;
+
+pNewBuffer = ExAllocatePoolWithTag(
+                                   NonPagedPool,
+                                   NEW_BUFFER_SIZE,
+                                   MY_DRIVER_TAG
+                                   );
+if (pNewBuffer == NULL){
+    goto Error;
+}
+
+status = WdfMemoryAssignBuffer(
+                               memHandle,
+                               pNewBuffer,
+                               NEW_BUFFER_SIZE
+                               );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -126,7 +159,11 @@ For more information about framework memory objects, see <a href="https://docs.m
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatepreallocated.md">WdfMemoryCreatePreallocated</a>
 
+
+
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 59C1BBEF-ECC8-4852-B2E2-75751B5B25B2
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IEEE.irb_req_set_local_host_properties, 1394/IRB_REQ_SET_LOCAL_HOST_PROPERTIES, _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure [Buses]
+ms.keywords: 1394/IRB_REQ_SET_LOCAL_HOST_PROPERTIES, _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IEEE.irb_req_set_local_host_properties, IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,6 +60,7 @@ typedef struct _IRB_REQ_SET_LOCAL_HOST_PROPERTIES {
 `Information`
 
 Points to an information block to be filled in. The information returned depends on the value in <b>u.SetLocalHostProperties.nLevel</b>. Each block has its own particular structure.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -90,6 +91,7 @@ SET_LOCAL_HOST_PROPS3
 `nLevel`
 
 Specifies what level of information is desired from this call. The following flags are provided.  
+
 <table>
 <tr>
 <th>Flag</th>

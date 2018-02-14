@@ -91,6 +91,8 @@ For user-mode display drivers that support pixel shaders before version 2.0, the
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: C6289E38-281A-46A2-8E28-138A20BF6684
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GetFontRestriction method [Print Devices], IPartFont2 interface [Print Devices], GetFontRestriction method, GetFontRestriction, print.ipartfont2_getfontrestriction, filterpipeline/IPartFont2::GetFontRestriction, IPartFont2, GetFontRestriction method [Print Devices], IPartFont2 interface, IPartFont2::GetFontRestriction
+ms.keywords: print.ipartfont2_getfontrestriction, IPartFont2, IPartFont2::GetFontRestriction, GetFontRestriction method [Print Devices], filterpipeline/IPartFont2::GetFontRestriction, IPartFont2 interface [Print Devices], GetFontRestriction method, GetFontRestriction, GetFontRestriction method [Print Devices], IPartFont2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -77,6 +77,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\filterpipeline\nn-filterpipeline-ipartfont2.md">IPartFont2</a>
+
+
 
  
 

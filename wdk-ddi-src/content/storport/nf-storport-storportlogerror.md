@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f653e6bf-e99b-4aa2-aa54-d7482d326720
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortLogError, storport/StorPortLogError, storage.storportlogerror, StorPortLogError routine [Storage Devices], storprt_0eb9851c-bfce-49aa-a22b-3d16a72b3dde.xml
+ms.keywords: storprt_0eb9851c-bfce-49aa-a22b-3d16a72b3dde.xml, StorPortLogError, storage.storportlogerror, storport/StorPortLogError, StorPortLogError routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,6 +88,7 @@ Identifies the logical unit number of the target device.
 `ErrorCode`
 
 Specifies an error code indicating one of the following values as the type of error.
+
 <table>
 <tr>
 <th>Value</th>
@@ -220,13 +221,21 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 
 ## See Also
 
+<a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>
+
+
+
 <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a>
+
+
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
 
 <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
-<a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
  
 

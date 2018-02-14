@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorfrequencyrangesetAcquirefirstfrequencyrangeinfo(
 ## Return Value
 
 The <b>pfnAcquireFirstFrequencyRangeInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,7 +123,8 @@ The handle supplied in <i>hMonitorFrequencyRangeSet</i> was invalid.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other error codes defined in <i>Ntstatus.h</i>.
 

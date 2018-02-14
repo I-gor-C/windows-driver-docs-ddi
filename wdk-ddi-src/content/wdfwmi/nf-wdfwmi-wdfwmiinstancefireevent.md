@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 7bef79ab-78d6-47b6-a3f4-d9733ffcb53d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFWMIINSTANCEFIREEVENT, WdfWmiInstanceFireEvent method, wdf.wdfwmiinstancefireevent, kmdf.wdfwmiinstancefireevent, DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml, wdfwmi/WdfWmiInstanceFireEvent, WdfWmiInstanceFireEvent
+ms.keywords: DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml, wdf.wdfwmiinstancefireevent, WdfWmiInstanceFireEvent method, wdfwmi/WdfWmiInstanceFireEvent, PFN_WDFWMIINSTANCEFIREEVENT, WdfWmiInstanceFireEvent, kmdf.wdfwmiinstancefireevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,7 @@ A pointer to the event data, or <b>NULL</b> if there is no event data.
 ## Return Value
 
 <b>WdfWmiInstanceFireEvent</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,7 +118,8 @@ The event data buffer was too large.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -131,6 +133,29 @@ The driver should place its event-specific data, if any, in the buffer that the 
 
 For more information about the <b>WdfWmiInstanceFireEvent</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-wmi-in-kmdf-drivers">Supporting WMI in Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example sends a WMI event to WMI clients. 
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>MY_WMI_EVENT_DATA eventData;
+NTSTATUS  status;
+
+status = WdfWmiInstanceFireEvent(
+                                 WmiInstance,
+                                 sizeof(eventData),
+                                 (PVOID)&amp;eventData
+                                 );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -143,11 +168,17 @@ For more information about the <b>WdfWmiInstanceFireEvent</b> method, see <a hre
 
 ## See Also
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
-
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
 
+
+
 <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+
+
+
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
+
+
 
  
 

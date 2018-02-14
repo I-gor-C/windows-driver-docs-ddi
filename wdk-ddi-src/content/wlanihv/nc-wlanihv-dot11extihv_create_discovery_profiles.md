@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtIhvCreateDiscoveryProfiles
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -98,8 +98,10 @@ A pointer to a
      scan operation, see 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-scan-operations">Native 802.11 Scan Operations</a>.
      
+
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
-     service set (BSS) networks.</div><div> </div>
+     service set (BSS) networks.</div>
+<div> </div>
 
 `pIhvDiscoveryProfileList`
 
@@ -131,6 +133,7 @@ After the WLAN adapter completes a scan operation, the operating system might ca
 When 
     <i>Dot11ExtIhvCreateDiscoveryProfiles</i> is called, the IHV Extensions DLL must follow these
     guidelines.
+
 <ul>
 <li>
 If the IHV Extensions DLL can return profile fragments that can be used to connect to the BSS
@@ -162,7 +165,8 @@ An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_COD
 </li>
 </ul>
 </li>
-</ul>For more information about creating discovery profiles, see 
+</ul>
+For more information about creating discovery profiles, see 
     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/creating-network-profile-extensions">Creating Network Profile
     Extensions</a>.
 
@@ -175,18 +179,30 @@ An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_COD
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
 <a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
 
-<a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
 
-<a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md">
    DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</a>
 
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
+
+
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
+
+
+
+<a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
+
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
+
+
 
  
 

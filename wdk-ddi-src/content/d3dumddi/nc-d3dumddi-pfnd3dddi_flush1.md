@@ -86,6 +86,8 @@ If this routine succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HR
 
 <a href="..\d3dumddi\ne-d3dumddi-d3dddi_flush_flags.md">D3DDDI_FLUSH_FLAGS</a>
 
+
+
  
 
  

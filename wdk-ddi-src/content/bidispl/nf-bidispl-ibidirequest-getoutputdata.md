@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 0757dbc2-850b-4267-9339-b87591f85767
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: BIDI_TEXT, BIDI_NULL, BIDI_FLOAT, BIDI_STRING, IBidiRequest, BIDI_BOOL, GetOutputData, _win32_IBidiRequest_GetOutputData, BIDI_INT, BIDI_ENUM, GetOutputData method [Print Devices], IBidiRequest::GetOutputData, print.ibidirequest_ibidirequest__getoutputdata, bidispl/IBidiRequest::GetOutputData, BIDI_BLOB, GetOutputData method [Print Devices], IBidiRequest interface, gdi.ibidirequest_ibidirequest__getoutputdata, IBidiRequest interface [Print Devices], GetOutputData method
+ms.keywords: bidispl/IBidiRequest::GetOutputData, BIDI_BLOB, GetOutputData, BIDI_INT, GetOutputData method [Print Devices], IBidiRequest interface, IBidiRequest::GetOutputData, BIDI_TEXT, IBidiRequest interface [Print Devices], GetOutputData method, print.ibidirequest_ibidirequest__getoutputdata, GetOutputData method [Print Devices], BIDI_NULL, BIDI_BOOL, BIDI_STRING, BIDI_FLOAT, gdi.ibidirequest_ibidirequest__getoutputdata, IBidiRequest, _win32_IBidiRequest_GetOutputData, BIDI_ENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IBidiRequest.GetOutputData
 product: Windows
 targetos: Windows
-req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
@@ -72,6 +72,7 @@ A pointer to a NULL-terminated string that receives the schema string. The calle
 `pdwType`
 
 A pointer to a variable that receives the type of the output data. This parameter can be one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -171,6 +172,7 @@ A pointer to a variable that receives the size of the byte array specified by **
 ## Return Value
 
 The method returns one of the following values. For more information about COM error codes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544310">Error Handling</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -239,13 +241,21 @@ If an application calls <b>GetOutputData</b> with the same index twice, the inte
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
-
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
+
+
+
+<a href="https://msdn.microsoft.com/4c857ff4-02c1-487b-bdb0-44d62a4cf4a1">GetEnumCount</a>
+
+
 
 <a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
-<a href="https://msdn.microsoft.com/4c857ff4-02c1-487b-bdb0-44d62a4cf4a1">GetEnumCount</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+
 
  
 

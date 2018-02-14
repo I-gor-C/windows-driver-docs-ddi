@@ -70,6 +70,8 @@ The <b>IPartImage</b> interface is the abstraction for images in an XPS document
 
 <a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
 
+
+
  
 
  

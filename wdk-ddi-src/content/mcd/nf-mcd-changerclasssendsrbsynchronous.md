@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6765d7d5-528f-42c5-98c3-0484608a020b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous routine [Storage Devices], mcd/ChangerClassSendSrbSynchronous, storage.changerclasssendsrbsynchronous
+ms.keywords: mcd/ChangerClassSendSrbSynchronous, chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, storage.changerclasssendsrbsynchronous, ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,6 +105,8 @@ If the IRP fails and the sense request data indicates that the IRP should be ret
 ## See Also
 
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
 
  
 

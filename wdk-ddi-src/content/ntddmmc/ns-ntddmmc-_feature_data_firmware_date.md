@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1f6c6a37-9510-47bc-b507-b3fd7477b432
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ntddmmc/FEATURE_DATA_FIRMWARE_DATE, _FEATURE_DATA_FIRMWARE_DATE, *PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE, structs-CD-ROM_5e7edafb-823d-4e78-a601-a8f29c62ee4e.xml, FEATURE_DATA_FIRMWARE_DATE structure [Storage Devices], PFEATURE_DATA_FIRMWARE_DATE structure pointer [Storage Devices], storage.feature_data_firmware_date, FEATURE_DATA_FIRMWARE_DATE, ntddmmc/PFEATURE_DATA_FIRMWARE_DATE
+ms.keywords: ntddmmc/PFEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE structure [Storage Devices], ntddmmc/FEATURE_DATA_FIRMWARE_DATE, *PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE structure pointer [Storage Devices], _FEATURE_DATA_FIRMWARE_DATE, storage.feature_data_firmware_date, structs-CD-ROM_5e7edafb-823d-4e78-a601-a8f29c62ee4e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -106,6 +106,8 @@ The structure holds the date information associated with the feature named "Firm
 ## See Also
 
 <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
+
 
  
 

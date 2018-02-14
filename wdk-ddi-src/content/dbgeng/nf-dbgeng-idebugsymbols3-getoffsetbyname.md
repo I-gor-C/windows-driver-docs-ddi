@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: b6915215-3654-446b-b30d-b891f439a379
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.getoffsetbyname, GetOffsetByName method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols::GetOffsetByName, IDebugSymbols2 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols2::GetOffsetByName, dbgeng/IDebugSymbols2::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols::GetOffsetByName, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, IDebugSymbols3, GetOffsetByName method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetOffsetByName method, IDebugSymbols3::GetOffsetByName, GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols3::GetOffsetByName, IDebugSymbols3 interface [Windows Debugging], GetOffsetByName method
+ms.keywords: IDebugSymbols interface [Windows Debugging], GetOffsetByName method, IDebugSymbols2 interface [Windows Debugging], GetOffsetByName method, GetOffsetByName method [Windows Debugging], IDebugSymbols3 interface, GetOffsetByName method [Windows Debugging], GetOffsetByName, IDebugSymbols::GetOffsetByName, dbgeng/IDebugSymbols::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, debugger.getoffsetbyname, IDebugSymbols3::GetOffsetByName, IDebugSymbols2, IDebugSymbols, IDebugSymbols2::GetOffsetByName, dbgeng/IDebugSymbols2::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols3::GetOffsetByName, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -72,6 +72,7 @@ Receives the location in the target's memory address space of the base of the sy
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -133,11 +134,19 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
  
 

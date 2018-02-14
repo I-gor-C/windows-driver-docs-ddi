@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortLogTelemetry routine [Storage Devices], storage.storportlogtelemetry, StorPortLogTelemetry, storport/StorPortLogTelemetry
+ms.keywords: StorPortLogTelemetry routine [Storage Devices], StorPortLogTelemetry, storport/StorPortLogTelemetry, storage.storportlogtelemetry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ Pointer to the <a href="..\storport\ns-storport-_storport_telemetry_event.md">ST
 ## Return Value
 
 <b>StorPortLogTelemetry </b>returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -145,6 +146,8 @@ If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event
 ## See Also
 
 <a href="..\storport\ns-storport-_storport_telemetry_event.md">STORPORT_TELEMETRY_EVENT</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 07b5d7ed-fc4c-45e5-8748-2630c91d912a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfdevicesetcharacteristics, kmdf.wdfdevicesetcharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, wdfdevice/WdfDeviceSetCharacteristics, PFN_WDFDEVICESETCHARACTERISTICS, WdfDeviceSetCharacteristics, WdfDeviceSetCharacteristics method
+ms.keywords: PFN_WDFDEVICESETCHARACTERISTICS, WdfDeviceSetCharacteristics method, wdfdevice/WdfDeviceSetCharacteristics, WdfDeviceSetCharacteristics, kmdf.wdfdevicesetcharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, wdf.wdfdevicesetcharacteristics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,25 @@ You should set device characteristics by calling the <a href="..\wdfdevice\nf-wd
 
 Each call to <b>WdfDeviceSetCharacteristics</b> overwrites the settings of any previous call.
 
+
+#### Examples
+
+The following code example sets the FILE_REMOVABLE_MEDIA characteristic for a specified device.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceSetCharacteristics(
+                            Device,
+                            FILE_REMOVABLE_MEDIA
+                            );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -95,9 +114,13 @@ Each call to <b>WdfDeviceSetCharacteristics</b> overwrites the settings of any p
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetcharacteristics.md">WdfDeviceGetCharacteristics</a>
+
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetcharacteristics.md">WdfDeviceGetCharacteristics</a>
+
 
  
 

@@ -80,6 +80,8 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field can be set 
 
 <a href="..\ntdddisk\ns-ntdddisk-_reassign_blocks.md">REASSIGN_BLOCKS</a>
 
+
+
  
 
  

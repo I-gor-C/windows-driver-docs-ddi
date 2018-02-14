@@ -73,6 +73,7 @@ NTSTATUS DxgkddiVidpntopologyGetnumpaths(
 ## Return Value
 
 The <b>pfnGetNumPaths</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,6 +118,8 @@ The D3DKMDT_HVIDPNTOPOLOGY data type is defined in <i>D3dkmdt.h</i>.
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpathsfromsource.md">pfnGetNumPathsFromSource</a>
+
+
 
  
 

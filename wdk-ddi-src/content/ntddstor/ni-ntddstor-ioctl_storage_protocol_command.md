@@ -81,6 +81,8 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 <a href="..\ntddstor\ns-ntddstor-_storage_protocol_command.md">STORAGE_PROTOCOL_COMMAND</a>
 
+
+
  
 
  

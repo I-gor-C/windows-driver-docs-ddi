@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 938eacb5-7939-43ed-a854-046708fc9c79
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.idebugeventcallbackswide_systemerror, SystemError method [Windows Debugging], SystemError, IDebugEventCallbacksWide::SystemError, dbgeng/IDebugEventCallbacksWide::SystemError, SystemError method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide, IDebugEventCallbacksWide interface [Windows Debugging], SystemError method
+ms.keywords: SystemError method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging], SystemError method, debugger.idebugeventcallbackswide_systemerror, dbgeng/IDebugEventCallbacksWide::SystemError, SystemError method [Windows Debugging], IDebugEventCallbacksWide::SystemError, SystemError, IDebugEventCallbacksWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method

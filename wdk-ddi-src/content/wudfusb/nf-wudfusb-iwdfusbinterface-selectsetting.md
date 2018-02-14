@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: c47b025b-1be9-4fdc-965a-a9a82a394177
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: SelectSetting method, IWDFUsbInterface interface, IWDFUsbInterface, wdf.iwdfusbinterface_selectsetting, SelectSetting, SelectSetting method, IWDFUsbInterface::SelectSetting, umdf.iwdfusbinterface_selectsetting, IWDFUsbInterface interface, SelectSetting method, UMDFUSBref_2de47773-a511-42e2-b6bb-289cc5fbebb6.xml, wudfusb/IWDFUsbInterface::SelectSetting
+ms.keywords: SelectSetting method, IWDFUsbInterface interface, IWDFUsbInterface interface, SelectSetting method, umdf.iwdfusbinterface_selectsetting, wdf.iwdfusbinterface_selectsetting, IWDFUsbInterface, wudfusb/IWDFUsbInterface::SelectSetting, SelectSetting, UMDFUSBref_2de47773-a511-42e2-b6bb-289cc5fbebb6.xml, SelectSetting method, IWDFUsbInterface::SelectSetting
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IWDFUsbInterface.SelectSetting
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -68,6 +68,7 @@ The setting to select on the USB interface.
 ## Return Value
 
 <b>SelectSetting</b> returns one of the following values: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -116,6 +117,13 @@ The framework automatically selects configuration zero, its interface zero, and 
 
 For more info <a href="https://msdn.microsoft.com/library/windows/hardware/ff539242">USB Configuration Descriptors</a>
 
+
+
+#### Examples
+
+<pre class="syntax" xml:space="preserve"><code>
+hr = pIWDFUsbInterface-&gt;SelectSetting(SettingNumber);</code></pre>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -129,6 +137,8 @@ For more info <a href="https://msdn.microsoft.com/library/windows/hardware/ff539
 ## See Also
 
 <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
+
+
 
  
 

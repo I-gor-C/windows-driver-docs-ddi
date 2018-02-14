@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7b7fed83-dcf8-466d-8bd7-42a5ed15cced
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.fwpsaleendpointsetsecurityinfo0, FwpsAleEndpointSetSecurityInfo0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointSetSecurityInfo0, FwpsAleEndpointSetSecurityInfo0, wfp_ref_2_funct_3_fwps_A-B_7999c73b-ee7d-4a54-b279-8a691a99d94d.xml
+ms.keywords: FwpsAleEndpointSetSecurityInfo0, fwpsk/FwpsAleEndpointSetSecurityInfo0, wfp_ref_2_funct_3_fwps_A-B_7999c73b-ee7d-4a54-b279-8a691a99d94d.xml, netvista.fwpsaleendpointsetsecurityinfo0, FwpsAleEndpointSetSecurityInfo0 function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,6 +99,7 @@ The system access control list.
 
 The 
      <b>FwpsAleEndpointSetSecurityInfo0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -140,12 +141,18 @@ An error occurred.
 
 ## See Also
 
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetbyid0.md">FwpsAleEndpointGetById0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
+
+
+
 <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
    FwpsAleEndpointGetSecurityInfo0</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetbyid0.md">FwpsAleEndpointGetById0</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 06b52af0-c2d3-444e-8714-4fce4181dddc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmallocatepagesformdl, MmAllocatePagesForMdl, MmAllocatePagesForMdl routine [Kernel-Mode Driver Architecture], k106_bb9bac91-62a6-45f8-9133-0d23eda07b1e.xml, wdm/MmAllocatePagesForMdl
+ms.keywords: wdm/MmAllocatePagesForMdl, kernel.mmallocatepagesformdl, MmAllocatePagesForMdl, MmAllocatePagesForMdl routine [Kernel-Mode Driver Architecture], k106_bb9bac91-62a6-45f8-9133-0d23eda07b1e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ Specifies the total number of bytes to allocate for the MDL.
 ## Return Value
 
 <b>MmAllocatePagesForMdl</b> returns one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,13 +140,21 @@ In Windows 2000 and later versions of Windows, the maximum amount of memory that
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a>
 
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+
 
 <a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
 
-<a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a>
+
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+
+
 
  
 

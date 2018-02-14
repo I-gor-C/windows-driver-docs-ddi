@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorfrequencyrangesetGetnumfrequencyranges(
 ## Return Value
 
 The <b>pfnGetNumFrequencyRanges</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

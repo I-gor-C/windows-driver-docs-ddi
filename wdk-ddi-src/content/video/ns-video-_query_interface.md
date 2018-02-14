@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 0d813870-10bd-4b41-9f36-1cb45c462697
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: QUERY_INTERFACE structure [Display Devices], video/QUERY_INTERFACE, _QUERY_INTERFACE, QUERY_INTERFACE, display.query_interface, PQUERY_INTERFACE, *PQUERY_INTERFACE, video/PQUERY_INTERFACE, Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, PQUERY_INTERFACE structure pointer [Display Devices]
+ms.keywords: "_QUERY_INTERFACE, QUERY_INTERFACE, PQUERY_INTERFACE, *PQUERY_INTERFACE, video/PQUERY_INTERFACE, PQUERY_INTERFACE structure pointer [Display Devices], Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, display.query_interface, video/QUERY_INTERFACE, QUERY_INTERFACE structure [Display Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	QUERY_INTERFACE
 product: Windows
 targetos: Windows
-req.typenames: QUERY_INTERFACE, *PQUERY_INTERFACE
+req.typenames: "*PQUERY_INTERFACE, QUERY_INTERFACE"
 req.product: Windows 10 or later.
 ---
 
@@ -100,6 +100,8 @@ The <i>QueryInterface</i> parameter of the video miniport driver's <a href="..\v
 ## See Also
 
 <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: bab79fb6-1bb0-48ec-9d60-fcb6e679b758
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.openprintprocessor, winsplp/OpenPrintProcessor, OpenPrintProcessor function [Print Devices], spoolfnc_b8a185f0-4289-49bb-bb98-b6f54b66fa70.xml, OpenPrintProcessor
+ms.keywords: OpenPrintProcessor function [Print Devices], winsplp/OpenPrintProcessor, spoolfnc_b8a185f0-4289-49bb-bb98-b6f54b66fa70.xml, OpenPrintProcessor, print.openprintprocessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,11 +90,19 @@ The function must return a handle. Typically, the handle is a pointer to an inte
 
 <a href="..\winsplp\ns-winsplp-_printprocessoropendata.md">PRINTPROCESSOROPENDATA</a>
 
+
+
 <a href="..\winsplp\nf-winsplp-closeprintprocessor.md">ClosePrintProcessor</a>
+
+
 
 <a href="..\winsplp\nf-winsplp-controlprintprocessor.md">ControlPrintProcessor</a>
 
+
+
 <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>
+
+
 
  
 

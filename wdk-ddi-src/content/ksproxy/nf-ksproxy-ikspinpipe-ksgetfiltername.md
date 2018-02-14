@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: A009B276-AF91-4FDD-AB81-6992311B3744
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: IKsPinPipe interface [Streaming Media Devices], KsGetFilterName method, KsGetFilterName, KsGetFilterName method [Streaming Media Devices], stream.ikspinpipe_ksgetfiltername, IKsPinPipe::KsGetFilterName, ksproxy/IKsPinPipe::KsGetFilterName, KsGetFilterName method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe
+ms.keywords: IKsPinPipe::KsGetFilterName, stream.ikspinpipe_ksgetfiltername, KsGetFilterName, IKsPinPipe interface [Streaming Media Devices], KsGetFilterName method, KsGetFilterName method [Streaming Media Devices], KsGetFilterName method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsGetFilterName, IKsPinPipe
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -76,6 +76,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\ksproxy\nn-ksproxy-ikspinpipe.md">IKsPinPipe</a>
+
+
 
  
 

@@ -7,8 +7,8 @@ old-location: whea\whea_processor_generic_error_section.htm
 old-project: whea
 ms.assetid: d1ac2ca0-ad08-4149-b489-53807f308fc0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: GENPROC_PROCTYPE_IPF, WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_GENERIC_PROCESSOR_ERROR, whearef_589ac6c8-3889-4033-8776-0d8f402d1f69.xml, WHEA_GENERIC_PROCESSOR_ERROR, GENPROC_FLAGS_PRECISEIP, GENPROC_PROCERRTYPE_UNKNOWN, GENPROC_PROCERRTYPE_BUS, _WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_OP_DATAWRITE, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCERRTYPE_MAE, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION structure pointer [WHEA Drivers and Applications], GENPROC_FLAGS_RESTARTABLE, GENPROC_PROCERRTYPE_TLB, GENPROC_FLAGS_CORRECTED, whea.whea_processor_generic_error_section, GENPROC_OP_INSTRUCTIONEXE, GENPROC_OP_DATAREAD, GENPROC_PROCISA_X86, GENPROC_PROCERRTYPE_CACHE, GENPROC_PROCTYPE_XPF, GENPROC_PROCISA_IPF, WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCISA_X64, GENPROC_FLAGS_OVERFLOW, GENPROC_OP_GENERIC
+ms.date: 2/8/2018
+ms.keywords: GENPROC_PROCERRTYPE_BUS, GENPROC_PROCISA_IPF, WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure [WHEA Drivers and Applications], GENPROC_FLAGS_CORRECTED, whea.whea_processor_generic_error_section, GENPROC_PROCISA_X64, GENPROC_PROCERRTYPE_MAE, GENPROC_FLAGS_PRECISEIP, ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCTYPE_IPF, GENPROC_OP_DATAREAD, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION structure pointer [WHEA Drivers and Applications], GENPROC_OP_GENERIC, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_OP_INSTRUCTIONEXE, GENPROC_OP_DATAWRITE, GENPROC_PROCERRTYPE_CACHE, whearef_589ac6c8-3889-4033-8776-0d8f402d1f69.xml, WHEA_GENERIC_PROCESSOR_ERROR, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_FLAGS_RESTARTABLE, *PWHEA_GENERIC_PROCESSOR_ERROR, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCERRTYPE_TLB, _WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCISA_X86, GENPROC_PROCTYPE_XPF, GENPROC_FLAGS_OVERFLOW, GENPROC_PROCERRTYPE_UNKNOWN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,6 +75,7 @@ typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION {
 `CPUBrandString`
 
 The CPU brand string.
+
 <ul>
 <li>For x86 and x64 processors, this member contains the result of executing the CPUID instruction with EAX 
         set to 0x80000002 on input, followed by executing the CPUID instruction with EAX set to 0x80000003 on input. 
@@ -82,17 +83,20 @@ The CPU brand string.
         <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.</li>
 <li>For Itanium processors, this member contains the result of executing the 
         <b>PAL_BRAND_INFO</b> procedure.</li>
-</ul>This member contains valid data only if the <b>CpuBrandString</b> bit of the 
+</ul>
+This member contains valid data only if the <b>CpuBrandString</b> bit of the 
        <b>ValidBits</b> member is set.
 
 `CPUVersion`
 
 The CPU version, which includes the family, model, and stepping information.
+
 <ul>
 <li>For x86 and x64 processors, this member contains a 
         <a href="..\ntddk\ns-ntddk-_whea_processor_family_info.md">WHEA_PROCESSOR_FAMILY_INFO</a> union.</li>
 <li>For Itanium processors, this member contains the data provided in CPUID Register 3.</li>
-</ul>This member contains valid data only if the <b>CPUVersion</b> bit of the 
+</ul>
+This member contains valid data only if the <b>CPUVersion</b> bit of the 
        <b>ValidBits</b> member is set.
 
 `ErrorType`
@@ -101,6 +105,7 @@ The type of error that occurred.
 
 This member contains valid data only if the <b>ErrorType</b> bit of the 
        <b>ValidBits</b> member is set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -164,6 +169,7 @@ A bit-wise OR'ed combination of flags that provides additional information about
 
 This member contains valid data only if the <b>Flags</b> bit of the 
        <b>ValidBits</b> member is set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -226,6 +232,7 @@ The instruction set that was executing when the error occurred.
 
 This member contains valid data only if the <b>InstructionSet</b> bit of the 
        <b>ValidBits</b> member is set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -276,6 +283,7 @@ The type of operation that was executing when the error occurred.
 
 This member contains valid data only if the <b>Operation</b> bit of the 
        <b>ValidBits</b> member is set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -326,11 +334,13 @@ Instruction execution
 `ProcessorId`
 
 An identifier that uniquely identifies the logical processor in the system.
+
 <ul>
 <li>For x86 and x64 processors, this member contains the value programmed into the local APIC ID 
         register.</li>
 <li>For Itanium processors, this member contains the value programmed into the LID register.</li>
-</ul>This member contains valid data only if the <b>ProcessorId</b> bit of the 
+</ul>
+This member contains valid data only if the <b>ProcessorId</b> bit of the 
        <b>ValidBits</b> member is set.
 
 `ProcessorType`
@@ -339,6 +349,7 @@ The processor architecture of the processor.
 
 This member contains valid data only if the 
        <b>ProcessorType</b> bit of the <b>ValidBits</b> member is set.
+
 <table>
 <tr>
 <th>Value</th>
@@ -415,16 +426,24 @@ The
 
 ## See Also
 
+<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
+
+
+
 <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 
+
+
 <a href="..\ntddk\ns-ntddk-_whea_processor_family_info.md">WHEA_PROCESSOR_FAMILY_INFO</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section_validbits.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS</a>
+
 
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

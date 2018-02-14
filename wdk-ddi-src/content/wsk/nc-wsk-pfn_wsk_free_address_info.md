@@ -40,7 +40,7 @@ apiname:
 -	WskFreeAddressInfo
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -85,10 +85,12 @@ void PfnWskFreeAddressInfo(
 The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header file. It is identical to the 
      <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
+
 <div class="alert"><b>Important</b>  The 
      Ws2def.h header file is automatically included in 
      Wsk.h. Do not use 
-     Ws2def.h directly.</div><div> </div>
+     Ws2def.h directly.</div>
+<div> </div>
 
 
 ## Return Value
@@ -106,11 +108,17 @@ None
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_get_address_info.md">WskGetAddressInfo</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
+
+
+
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+
+
 
  
 

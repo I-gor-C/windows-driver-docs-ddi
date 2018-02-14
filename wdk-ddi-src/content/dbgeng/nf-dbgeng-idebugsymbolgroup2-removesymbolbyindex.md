@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 1903d454-02d1-4528-9b8f-3c2eab8c6a6a
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: RemoveSymbolByIndex method [Windows Debugging], dbgeng/IDebugSymbolGroup::RemoveSymbolByIndex, dbgeng/IDebugSymbolGroup2::RemoveSymbolByIndex, IDebugSymbolGroup2, ComOther_d532b37e-11c9-4cff-a619-0b9dffef0af1.xml, RemoveSymbolByIndex, debugger.removesymbolbyindex, IDebugSymbolGroup interface [Windows Debugging], RemoveSymbolByIndex method, RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2::RemoveSymbolByIndex, RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup::RemoveSymbolByIndex, IDebugSymbolGroup2 interface [Windows Debugging], RemoveSymbolByIndex method
+ms.keywords: RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup interface [Windows Debugging], RemoveSymbolByIndex method, dbgeng/IDebugSymbolGroup2::RemoveSymbolByIndex, IDebugSymbolGroup, IDebugSymbolGroup2::RemoveSymbolByIndex, IDebugSymbolGroup2 interface [Windows Debugging], RemoveSymbolByIndex method, RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup interface, dbgeng/IDebugSymbolGroup::RemoveSymbolByIndex, ComOther_d532b37e-11c9-4cff-a619-0b9dffef0af1.xml, IDebugSymbolGroup::RemoveSymbolByIndex, debugger.removesymbolbyindex, RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup2, RemoveSymbolByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -66,6 +66,7 @@ The index of the symbol to remove. The index of a symbol is an identification nu
 ## Return Value
 
 <b>RemoveSymbolByIndex</b> might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -82,7 +83,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -101,15 +103,25 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537925">AddSymbol</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554518">RemoveSymbolByName</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
+
 
  
 

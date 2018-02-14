@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6927bcdf-e2b5-4a60-8f71-a977f3a1c120
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisifaddifstackentry, ndis/NdisIfAddIfStackEntry, NdisIfAddIfStackEntry, NdisIfAddIfStackEntry function [Network Drivers Starting with Windows Vista], net_if_functions_ref_3e652431-fb28-4382-957a-3c532951e847.xml
+ms.keywords: ndis/NdisIfAddIfStackEntry, net_if_functions_ref_3e652431-fb28-4382-957a-3c532951e847.xml, NdisIfAddIfStackEntry function [Network Drivers Starting with Windows Vista], netvista.ndisifaddifstackentry, NdisIfAddIfStackEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisIfAddIfStackEntry
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -75,6 +75,7 @@ The network interface index for the interface that should be lower in the interf
 ## Return Value
 
 <b>NdisIfAddIfStackEntry</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -151,6 +152,8 @@ Any driver that can provide the information about the stack order relationship b
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndisifdeleteifstackentry.md">NdisIfDeleteIfStackEntry</a>
+
+
 
  
 

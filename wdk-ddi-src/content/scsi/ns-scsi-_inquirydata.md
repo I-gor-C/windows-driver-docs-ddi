@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2389fb1e-b16a-4d0a-b347-8b8a0f1cf061
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "*PINQUIRYDATA, scsi/INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, storage.inquirydata, INQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], _INQUIRYDATA, PINQUIRYDATA"
+ms.keywords: scsi/INQUIRYDATA, PINQUIRYDATA, INQUIRYDATA, storage.inquirydata, scsi/PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, INQUIRYDATA structure [Storage Devices], *PINQUIRYDATA, _INQUIRYDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	INQUIRYDATA
 product: Windows
 targetos: Windows
-req.typenames: "*PINQUIRYDATA, INQUIRYDATA"
+req.typenames: INQUIRYDATA, *PINQUIRYDATA
 req.product: Windows 10 or later.
 ---
 
@@ -119,6 +119,7 @@ Specifies the device type modifier, if any, as defined by SCSI. If no device typ
 `DeviceTypeQualifier`
 
 Indicates whether the device is present or not. The values that this member can take are as follows:
+
 <table>
 <tr>
 <th>Value</th>
@@ -250,7 +251,11 @@ Indicates, when set to one, that the target supports 32-bit wide data transfers.
 
 <a href="..\minitape\nc-minitape-tape_verify_inquiry_routine.md">TapeMiniVerifyInquiry</a>
 
+
+
 <a href="..\minitape\nc-minitape-tape_extension_init_routine.md">TapeMiniExtensionInit</a>
+
+
 
  
 

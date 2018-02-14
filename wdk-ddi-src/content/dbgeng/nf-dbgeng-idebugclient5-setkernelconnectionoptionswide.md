@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: aea5651f-b361-4253-bf51-bd320408bdab
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugClient5::SetKernelConnectionOptionsWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], SetKernelConnectionOptionsWide method, SetKernelConnectionOptionsWide, debugger.setkernelconnectionoptionswide, dbgeng/IDebugClient5::SetKernelConnectionOptionsWide, SetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface, SetKernelConnectionOptionsWide method [Windows Debugging]
+ms.keywords: dbgeng/IDebugClient5::SetKernelConnectionOptionsWide, SetKernelConnectionOptionsWide, IDebugClient5, SetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], SetKernelConnectionOptionsWide method, debugger.setkernelconnectionoptionswide, SetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::SetKernelConnectionOptionsWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -60,6 +60,7 @@ HRESULT SetKernelConnectionOptionsWide(
 `Options`
 
 Specifies the connection options to update.  The possible values are:
+
 <table>
 <tr>
 <th>Value</th>
@@ -91,6 +92,7 @@ For kernel connections through a COM port, cycle through the supported baud rate
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -137,7 +139,11 @@ For more information about connecting to live kernel-mode targets, see <a href="
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538145">AttachKernel</a>
+
+
 
  
 

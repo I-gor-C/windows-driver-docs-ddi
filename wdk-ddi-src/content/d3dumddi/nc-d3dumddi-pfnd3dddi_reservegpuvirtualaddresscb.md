@@ -91,6 +91,8 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_reservegpuvirtualaddress.md">D3DDDI_RESERVEGPUVIRTUALADDRESS</a>
 
+
+
  
 
  

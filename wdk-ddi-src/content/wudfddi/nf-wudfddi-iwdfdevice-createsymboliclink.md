@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 15984217-e789-457c-b20f-c3d51741f5d3
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: umdf.iwdfdevice_createsymboliclink, UMDFDeviceObjectRef_20b93e0a-a676-44f7-bbd0-d2749dd7a0b8.xml, CreateSymbolicLink, wdf.iwdfdevice_createsymboliclink, wudfddi/IWDFDevice::CreateSymbolicLink, IWDFDevice interface, CreateSymbolicLink method, IWDFDevice, CreateSymbolicLink method, CreateSymbolicLink method, IWDFDevice interface, IWDFDevice::CreateSymbolicLink
+ms.keywords: IWDFDevice::CreateSymbolicLink, CreateSymbolicLink method, wdf.iwdfdevice_createsymboliclink, wudfddi/IWDFDevice::CreateSymbolicLink, IWDFDevice, CreateSymbolicLink, UMDFDeviceObjectRef_20b93e0a-a676-44f7-bbd0-d2749dd7a0b8.xml, umdf.iwdfdevice_createsymboliclink, CreateSymbolicLink method, IWDFDevice interface, IWDFDevice interface, CreateSymbolicLink method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,9 +87,13 @@ For an example usage of this method, see the <a href="http://go.microsoft.com/fw
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556932">IWDFDevice2::CreateSymbolicLinkWithReferenceString</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
 
  
 

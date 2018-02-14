@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 0c0dca35-3590-4c24-a2a7-8dd0378c525f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: NOTIFICATION_INFO, 1394/NOTIFICATION_INFO, *PNOTIFICATION_INFO, NOTIFICATION_INFO_W2K, NOTIFICATION_INFO structure [Buses], _NOTIFICATION_INFO_W2K, PNOTIFICATION_INFO structure pointer [Buses], 1394stct_db1356d4-c42d-46a4-bbc4-ed8452dc2212.xml, IEEE.notification_info, *PNOTIFICATION_INFO_W2K, PNOTIFICATION_INFO, 1394/PNOTIFICATION_INFO
+ms.keywords: NOTIFICATION_INFO, 1394/PNOTIFICATION_INFO, 1394stct_db1356d4-c42d-46a4-bbc4-ed8452dc2212.xml, *PNOTIFICATION_INFO_W2K, NOTIFICATION_INFO_W2K, PNOTIFICATION_INFO structure pointer [Buses], PNOTIFICATION_INFO, *PNOTIFICATION_INFO, _NOTIFICATION_INFO_W2K, NOTIFICATION_INFO structure [Buses], 1394/NOTIFICATION_INFO, IEEE.notification_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,11 +80,13 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff53
 `fulNotificationOptions`
 
 Specifies which type of event triggered the bus driver to call the notification routine. The possible events the bus driver can return are the following:
+
 <ul>
 <li> NOTIFY_FLAGS_AFTER_READ</li>
 <li> NOTIFY_FLAGS_AFTER_WRITE</li>
 <li> NOTIFY_FLAGS_AFTER_LOCK</li>
-</ul>This member is only used when <b>Mdl</b> is non-<b>NULL</b>.
+</ul>
+This member is only used when <b>Mdl</b> is non-<b>NULL</b>.
 
 `Mdl`
 
@@ -135,6 +137,8 @@ If the device driver is using a linked list of ADDRESS_FIFO's as the backing sto
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+
+
 
  
 

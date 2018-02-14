@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: f6d2034a-0906-42ea-a4bd-9cdb1b36c5cf
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: FindFirstPrinterChangeNotification, FindFirstPrinterChangeNotification function [Print Devices], spoolfnc_cf13c78b-91e2-4d6e-b7be-fda42b3e7588.xml, print.findfirstprinterchangenotification, winspool/FindFirstPrinterChangeNotification
+ms.keywords: FindFirstPrinterChangeNotification function [Print Devices], spoolfnc_cf13c78b-91e2-4d6e-b7be-fda42b3e7588.xml, print.findfirstprinterchangenotification, winspool/FindFirstPrinterChangeNotification, FindFirstPrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -111,11 +111,17 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 
 ## See Also
 
+<a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a>
+
+
+
 <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
 
-<a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: eba881f8-e946-44a8-9624-37f63471fb65
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: net_if_functions_ref_040908da-c299-4265-9639-f2e65776f26b.xml, NdisIfFreeNetLuidIndex function [Network Drivers Starting with Windows Vista], NdisIfFreeNetLuidIndex, ndis/NdisIfFreeNetLuidIndex, netvista.ndisiffreenetluidindex
+ms.keywords: netvista.ndisiffreenetluidindex, NdisIfFreeNetLuidIndex function [Network Drivers Starting with Windows Vista], net_if_functions_ref_040908da-c299-4265-9639-f2e65776f26b.xml, ndis/NdisIfFreeNetLuidIndex, NdisIfFreeNetLuidIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisIfFreeNetLuidIndex
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -77,6 +77,7 @@ The NET_LUID index value that NDIS should free. This index was allocated in a pr
 ## Return Value
 
 <b>NdisIfFreeNetLuidIndex</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -106,7 +107,8 @@ The operation completed successfully.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If the call to 
      <b>NdisIfFreeNetLuidIndex</b> fails, the
@@ -145,7 +147,11 @@ The provider should not use the freed NET_LUID index or the associated NET_LUID 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">NdisIfAllocateNetLuidIndex</a>
+
+
 
  
 

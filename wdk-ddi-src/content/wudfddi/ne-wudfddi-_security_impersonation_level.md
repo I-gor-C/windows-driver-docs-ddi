@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5c325c16-6bc6-4eae-a58c-234d11616780
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: SecurityDelegation, umdf.security_impersonation_level, SecurityAnonymous, wudfddi/SecurityAnonymous, SECURITY_IMPERSONATION_LEVEL, wudfddi/SECURITY_IMPERSONATION_LEVEL, wdf.security_impersonation_level, SecurityImpersonation, SECURITY_IMPERSONATION_LEVEL enumeration, wudfddi/SecurityIdentification, wudfddi/SecurityDelegation, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, _SECURITY_IMPERSONATION_LEVEL, wudfddi/SecurityImpersonation, SecurityIdentification
+ms.keywords: SECURITY_IMPERSONATION_LEVEL enumeration, _SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, SecurityIdentification, wudfddi/SecurityIdentification, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, wudfddi/SecurityDelegation, SecurityAnonymous, wudfddi/SecurityImpersonation, wudfddi/SecurityAnonymous, umdf.security_impersonation_level, SecurityDelegation, wudfddi/SECURITY_IMPERSONATION_LEVEL, SecurityImpersonation, wdf.security_impersonation_level
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -100,6 +100,8 @@ For more information about the security impersonation levels, see the <b>SECURIT
     ## See Also
 
         <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
+
+
 
  
 

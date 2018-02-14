@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8ece6a3f-2f25-4143-8f0e-c65c02794cc4
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfInterruptDisable, wdf.wdfinterruptdisable, kmdf.wdfinterruptdisable, PFN_WDFINTERRUPTDISABLE, wdfinterrupt/WdfInterruptDisable, WdfInterruptDisable method, DFInterruptObjectRef_05ca577a-87b3-419a-a3f8-ee57b0765701.xml
+ms.keywords: PFN_WDFINTERRUPTDISABLE, DFInterruptObjectRef_05ca577a-87b3-419a-a3f8-ee57b0765701.xml, kmdf.wdfinterruptdisable, wdf.wdfinterruptdisable, WdfInterruptDisable, wdfinterrupt/WdfInterruptDisable, WdfInterruptDisable method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,22 @@ Do not call <b>WdfInterruptDisable</b> from an arbitrary thread context,  such a
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://msdn.microsoft.com/08460510-6e5f-4c02-8086-9caa9b4b4c2d">Handling Hardware Interrupts</a>.
 
+
+#### Examples
+
+The following code example disables the device interrupt that is associated with a specified interrupt object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfInterruptDisable(Interrupt);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,9 +113,13 @@ For more information about handling interrupts in framework-based drivers, see <
 
 ## See Also
 
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_disable.md">EvtInterruptDisable</a>
+
+
+
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptenable.md">WdfInterruptEnable</a>
 
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_disable.md">EvtInterruptDisable</a>
+
 
  
 

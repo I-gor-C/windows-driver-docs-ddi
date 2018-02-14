@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 9F9AA4C1-A202-4AF8-8E1D-F7E56C08A2C1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GPIO_ENABLE_INTERRUPT_PARAMETERS structure [Parallel Ports], PGPIO_ENABLE_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], gpioclx/GPIO_ENABLE_INTERRUPT_PARAMETERS, gpioclx/PGPIO_ENABLE_INTERRUPT_PARAMETERS, PGPIO_ENABLE_INTERRUPT_PARAMETERS, _GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO.gpio_enable_interrupt_parameters, GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS
+ms.keywords: PGPIO_ENABLE_INTERRUPT_PARAMETERS, _GPIO_ENABLE_INTERRUPT_PARAMETERS, PGPIO_ENABLE_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS structure [Parallel Ports], *PGPIO_ENABLE_INTERRUPT_PARAMETERS, gpioclx/PGPIO_ENABLE_INTERRUPT_PARAMETERS, gpioclx/GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO.gpio_enable_interrupt_parameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,10 +79,12 @@ A set of flags that control the configuration of the GPIO pins. No flags are cur
 `InterruptMode`
 
 Whether the interrupt request from this GPIO pin is level-sensitive or edge-triggered. This member is set to one of the following values:
+
 <ul>
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
-</ul>For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>.
+</ul>
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>.
 
 `PinNumber`
 
@@ -91,23 +93,27 @@ The bank-relative pin number. If N is the number pins in this bank, <i>PinNumber
 `Polarity`
 
 Whether the interrupt line from this GPIO pin is active-high or active-low. This member is set to one of the following values:
+
 <ul>
 <li><b>InterruptActiveHigh</b></li>
 <li><b>InterruptRisingEdge</b></li>
 <li><b>InterruptActiveLow</b></li>
 <li><b>InterruptFallingEdge</b></li>
 <li><b>InterruptActiveBoth</b></li>
-</ul>For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>.
+</ul>
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>.
 
 `PullConfiguration`
 
 Whether this GPIO pin is pulled up or pulled down. This member is typically set to one of the following system-defined constants:
+
 <ul>
 <li><b>GPIO_PIN_PULL_CONFIGURATION_PULLDEFAULT</b></li>
 <li><b>GPIO_PIN_PULL_CONFIGURATION_PULLUP</b></li>
 <li><b>GPIO_PIN_PULL_CONFIGURATION_PULLDOWN</b></li>
 <li><b>GPIO_PIN_PULL_CONFIGURATION_PULLNONE</b></li>
-</ul>If none of these constants appropriately describes the pin configuration, this member can be set to a vendor-defined constant in the range 128-255. For more information about these constants, see <a href="https://msdn.microsoft.com/B8091F53-C9B7-4A22-BDE3-4156370ABA83">GPIO_PIN_PULL_CONFIGURATION</a>.
+</ul>
+If none of these constants appropriately describes the pin configuration, this member can be set to a vendor-defined constant in the range 128-255. For more information about these constants, see <a href="https://msdn.microsoft.com/B8091F53-C9B7-4A22-BDE3-4156370ABA83">GPIO_PIN_PULL_CONFIGURATION</a>.
 
 `VendorData`
 
@@ -145,17 +151,29 @@ If none of the system-defined <b>GPIO_PIN_PULL_CONFIGURATION_<i>XXX</i></b> cons
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439377">CLIENT_EnableInterrupt</a>
 
+
+
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
+
+
+
+<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439435">CLIENT_UnmaskInterrupt</a>
 
-<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
+
 
  
 

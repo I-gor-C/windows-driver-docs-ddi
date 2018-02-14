@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 37cf1552-2cbe-4b80-b220-cfa853674e1b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: AtaPortRequestPowerStateChange, storage.ataportrequestpowerstatechange, irb/AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices]
+ms.keywords: storage.ataportrequestpowerstatechange, AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,9 @@ None
 ## Remarks
 
 The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver might have to initiate a power state change, such as when a hot-plug operation occurs. 
-<div class="alert"><b>Note</b>   The practice of doing idle detection from an ATA miniport driver is discouraged. </div><div> </div>
+
+<div class="alert"><b>Note</b>   The practice of doing idle detection from an ATA miniport driver is discouraged. </div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,6 +99,8 @@ The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver
 ## See Also
 
 <a href="..\irb\ne-irb-ide_power_state.md">IDE_POWER_STATE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a4fa3093-a328-4d90-bc51-0e7a6db1ed58
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBAFCPID structure [Storage Devices], storage.hbafcpid, hbapiwmi/HBAFCPID, HBAFCPID, PHBAFCPID, _HBAFCPID, structs-Fibre_d993c5b6-2b58-4fae-981a-8096cd9c9bd0.xml, PHBAFCPID structure pointer [Storage Devices], *PHBAFCPID, hbapiwmi/PHBAFCPID
+ms.keywords: HBAFCPID structure [Storage Devices], *PHBAFCPID, _HBAFCPID, hbapiwmi/PHBAFCPID, HBAFCPID, PHBAFCPID structure pointer [Storage Devices], structs-Fibre_d993c5b6-2b58-4fae-981a-8096cd9c9bd0.xml, hbapiwmi/HBAFCPID, storage.hbafcpid, PHBAFCPID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,7 +89,11 @@ For more information about the fibre channel protocol (FCP), see the T11 committ
 
 <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>
 
+
+
 <a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
+
+
 
  
 

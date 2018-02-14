@@ -53,6 +53,7 @@ The generic storage class driver (<i>classpnp.sys</i>) exposes an I/O control (I
 The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
 
 PR_OUT.ServiceAction can be one of the following:
+
 <ul>
 <li>
 RESERVATION_ACTION_REGISTER
@@ -82,7 +83,9 @@ RESERVATION_ACTION_PREEMPT_ABORT
 RESERVATION_ACTION_REGISTER_IGNORE_EXISTING
 
 </li>
-</ul>PR_OUT.Scope can be one of the following:
+</ul>
+PR_OUT.Scope can be one of the following:
+
 <ul>
 <li>
 RESERVATION_SCOPE_LU
@@ -92,7 +95,9 @@ RESERVATION_SCOPE_LU
 RESERVATION_SCOPE_ELEMENT
 
 </li>
-</ul>PR_OUT.Type can be one of the following:
+</ul>
+PR_OUT.Type can be one of the following:
+
 <ul>
 <li>
 RESERVATION_TYPE_WRITE_EXCLUSIVE
@@ -110,7 +115,8 @@ RESERVATION_TYPE_WRITE_EXCLUSIVE_REGISTRANTS
 RESERVATION_TYPE_EXCLUSIVE_REGISTRANTS
 
 </li>
-</ul>PR_OUT.ParameterList is used to hold the <a href="..\storport\ns-storport-pro_parameter_list.md">PRO_PARAMETER_LIST</a> structure. This structure is required and must be contiguous with the rest of the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
+</ul>
+PR_OUT.ParameterList is used to hold the <a href="..\storport\ns-storport-pro_parameter_list.md">PRO_PARAMETER_LIST</a> structure. This structure is required and must be contiguous with the rest of the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
 
 ### Input Buffer Length
 The length of a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.

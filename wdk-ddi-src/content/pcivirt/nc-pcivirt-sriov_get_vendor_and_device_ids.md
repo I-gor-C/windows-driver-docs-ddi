@@ -40,7 +40,7 @@ apiname:
 -	*PSRIOV_GET_VENDOR_AND_DEVICE_IDS
 product: Windows
 targetos: Windows
-req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+req.typenames: "*PPARCLASS_INFORMATION, PARCLASS_INFORMATION"
 ---
 
 
@@ -93,6 +93,7 @@ The PCI Express SR-IOV Specification requires that all VFs have the same Vendor 
 The PF driver registers its implementation by setting the <b>GetVendorAndDevice</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
 Here is an example implementation of this callback function. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

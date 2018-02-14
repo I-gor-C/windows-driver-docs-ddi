@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfusbtargetdevicequeryusbcapability, kmdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability method, WdfUsbTargetDeviceQueryUsbCapability, PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY, wdfusb/WdfUsbTargetDeviceQueryUsbCapability
+ms.keywords: wdfusb/WdfUsbTargetDeviceQueryUsbCapability, kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method, PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfUsbTargetDeviceQueryUsbCapability
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -75,6 +75,7 @@ A handle to a USB device object.
 `CapabilityType`
 
 A pointer to a GUID that represents the capability about which the client driver wants to retrieve information. The possible  <i>PGUID</i>  values are  as follows:
+
 <ul>
 <li>GUID_USB_CAPABILITY_CHAINED_MDLS</li>
 <li>GUID_USB_CAPABILITY_STATIC_STREAMS</li>
@@ -84,7 +85,8 @@ A pointer to a GUID that represents the capability about which the client driver
 </li>
 <li>GUID_USB_CAPABILITY_DEVICE_CONNECTION_HIGH_SPEED_COMPATIBLE</li>
 <li>GUID_USB_CAPABILITY_DEVICE_CONNECTION_SUPER_SPEED_COMPATIBLE</li>
-</ul>See more information in Remarks.
+</ul>
+See more information in Remarks.
 
 `CapabilityBufferLength`
 
@@ -103,6 +105,7 @@ A pointer to a location containing the size, in bytes, of the returned capabilit
 ## Return Value
 
 <b>WdfUsbTargetDeviceQueryUsbCapability</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -167,7 +170,8 @@ The specified capability is not supported by the host controller hardware.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -178,6 +182,7 @@ Before calling <b>WdfUsbTargetDeviceQueryUsbCapability</b>, the driver must call
 <b>WdfUsbTargetDeviceQueryUsbCapability</b> must be called after the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> callback function has been called. 
 
 The following table describes the USB-specific capabilities that a KMDF-based USB client driver can query through a <b>WdfUsbTargetDeviceQueryUsbCapability</b> call. 
+
 <table>
 <tr>
 <th>Capability GUID</th>
@@ -262,7 +267,11 @@ This GUID applies to KMDF and UMDF drivers.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
 
+
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>
+
+
 
  
 

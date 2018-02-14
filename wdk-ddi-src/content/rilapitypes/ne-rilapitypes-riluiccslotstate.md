@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: e88c6e79-c1a0-4ff9-ac00-f8f367aaa7c4
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_UICCSLOT_NOT_READY, rilapitypes/RILUICCSLOTSTATE, RILUICCSLOTSTATE, rilapitypes/RIL_UICCSLOT_OFF, RIL_UICCSLOT_EMPTY, netvista.riluiccslotstate, rilapitypes/RIL_UICCSLOT_EMPTY, rilapitypes/RIL_UICCSLOT_NOT_READY, RIL_UICCSLOT_ACTIVE, RIL_UICCSLOT_ERROR, rilapitypes/RIL_UICCSLOT_ERROR, RILUICCSLOTSTATE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_UICCSLOT_ACTIVE, RIL_UICCSLOT_OFF_EMPTY, RIL_UICCSLOT_OFF, rilapitypes/RIL_UICCSLOT_OFF_EMPTY
+ms.keywords: rilapitypes/RIL_UICCSLOT_OFF, RIL_UICCSLOT_OFF, rilapitypes/RIL_UICCSLOT_ERROR, RILUICCSLOTSTATE, RIL_UICCSLOT_EMPTY, rilapitypes/RIL_UICCSLOT_ACTIVE, RIL_UICCSLOT_NOT_READY, rilapitypes/RIL_UICCSLOT_NOT_READY, RIL_UICCSLOT_ACTIVE, rilapitypes/RILUICCSLOTSTATE, RIL_UICCSLOT_ERROR, rilapitypes/RIL_UICCSLOT_OFF_EMPTY, rilapitypes/RIL_UICCSLOT_EMPTY, RILUICCSLOTSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCSLOT_OFF_EMPTY, netvista.riluiccslotstate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -109,6 +109,8 @@ enum RILUICCSLOTSTATE {
     ## See Also
 
         <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+
+
 
  
 

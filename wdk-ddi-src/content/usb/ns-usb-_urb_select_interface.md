@@ -7,8 +7,8 @@ old-location: buses\_urb_select_interface.htm
 old-project: usbref
 ms.assetid: 48f80c80-49af-4cda-961b-8967e8d4897a
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: usb/_URB_SELECT_INTERFACE, buses._urb_select_interface, usbstrct_c23c108d-422b-4dee-a1de-a5e341fc1800.xml, _URB_SELECT_INTERFACE structure [Buses], _URB_SELECT_INTERFACE
+ms.date: 2/8/2018
+ms.keywords: "_URB_SELECT_INTERFACE, usbstrct_c23c108d-422b-4dee-a1de-a5e341fc1800.xml, _URB_SELECT_INTERFACE structure [Buses], buses._urb_select_interface, usb/_URB_SELECT_INTERFACE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,18 +89,28 @@ The <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORM
 
 ## See Also
 
-<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 
-<a href="https://msdn.microsoft.com/710b4f96-eeee-4313-b068-b2f2e718f8d2">Configuring USB Devices</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
+
+
+<a href="https://msdn.microsoft.com/710b4f96-eeee-4313-b068-b2f2e718f8d2">Configuring USB Devices</a>
+
+
+
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+
+
+
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+
 
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_SELECT_INTERFACE structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_SELECT_INTERFACE structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

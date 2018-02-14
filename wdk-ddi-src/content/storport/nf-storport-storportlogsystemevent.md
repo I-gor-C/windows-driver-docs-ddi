@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 720245ff-8c97-4b8d-8406-f6b712fa74c9
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportlogsystemevent, StorPortLogSystemEvent routine [Storage Devices], storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml, StorPortLogSystemEvent, storport/StorPortLogSystemEvent
+ms.keywords: storage.storportlogsystemevent, StorPortLogSystemEvent, storport/StorPortLogSystemEvent, storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml, StorPortLogSystemEvent routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -174,6 +174,8 @@ To understand how you may use custom error codes to best advantage, see  <a href
 ## See Also
 
 <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a>
+
+
 
  
 

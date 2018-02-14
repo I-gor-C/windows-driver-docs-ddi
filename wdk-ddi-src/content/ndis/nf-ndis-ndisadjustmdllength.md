@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d52d985c-3ebc-45a0-8073-ac26c77441c9
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisAdjustMdlLength, NdisAdjustMdlLength, netvista.ndisadjustmdllength, NdisAdjustMdlLength macro [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_babeb674-269d-4efc-add1-635666fd7863.xml
+ms.keywords: ndis_netbuf_functions_ref_babeb674-269d-4efc-add1-635666fd7863.xml, NdisAdjustMdlLength macro [Network Drivers Starting with Windows Vista], netvista.ndisadjustmdllength, NdisAdjustMdlLength, ndis/NdisAdjustMdlLength
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	NdisAdjustMdlLength
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -115,7 +115,11 @@ Callers of
 
 <a href="..\ndis\nf-ndis-ndisallocatemdl.md">NdisAllocateMdl</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndisfreemdl.md">NdisFreeMdl</a>
+
+
 
  
 

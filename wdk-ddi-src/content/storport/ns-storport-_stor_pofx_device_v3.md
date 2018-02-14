@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 49B03A5F-9F96-4F0B-AC52-ADBDC8ED03B2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE, PSTOR_POFX_DEVICE_V3 structure pointer [Storage Devices], STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT, storage.stor_pofx_device_v3, storport/PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3 structure [Storage Devices], STOR_POFX_DEVICE_FLAG_NO_D0, STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT, STOR_POFX_DEVICE_FLAG_NO_D3, STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD, _STOR_POFX_DEVICE_V3, *PSTOR_POFX_DEVICE_V3, storport/STOR_POFX_DEVICE_V2, STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION
+ms.keywords: STOR_POFX_DEVICE_FLAG_NO_UNIT_REGISTRATION, _STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3 structure [Storage Devices], PSTOR_POFX_DEVICE_V3 structure pointer [Storage Devices], storport/PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_IDLE_TIMEOUT, storage.stor_pofx_device_v3, STOR_POFX_DEVICE_FLAG_NO_DUMP_ACTIVE, *PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_ADAPTIVE_D3_IDLE_TIMEOUT, STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD, STOR_POFX_DEVICE_FLAG_NO_D3, storport/STOR_POFX_DEVICE_V2, PSTOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_V3, STOR_POFX_DEVICE_FLAG_NO_D0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,6 +80,7 @@ The device power state capabilities flags. The miniport sets one or more of the 
 
 
 <b>Flags</b> is a bitwise OR combination of the following.
+
 
 
 <table>
@@ -188,15 +189,25 @@ The component for the storage device identified by its <b>Components</b> array i
 
 ## See Also
 
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
+
+
+
 <a href="..\wdm\ns-wdm-_po_fx_component_v2.md">STOR_POFX_COMPONENT</a>
+
+
+
+<a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a>
+
+
 
 <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 
+
+
 <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
 
-<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 
-<a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a>
 
  
 

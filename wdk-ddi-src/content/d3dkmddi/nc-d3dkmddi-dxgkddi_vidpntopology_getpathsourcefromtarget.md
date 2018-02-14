@@ -78,6 +78,7 @@ NTSTATUS DxgkddiVidpntopologyGetpathsourcefromtarget(
 ## Return Value
 
 The <b>pfnGetPathSourceFromTarget</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -141,6 +142,8 @@ The D3DDDI_VIDEO_PRESENT_SOURCE_ID D3DDDI_VIDEO_PRESENT_TARGET_ID data types are
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_enumpathtargetsfromsource.md">pfnEnumPathTargetsFromSource</a>
+
+
 
  
 

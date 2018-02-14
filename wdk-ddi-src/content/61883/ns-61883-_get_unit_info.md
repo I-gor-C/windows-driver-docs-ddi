@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2FE13A53-5B88-40B8-B129-8DD141F1B160
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: PGET_UNIT_INFO, GET_UNIT_INFO structure [Buses], _GET_UNIT_INFO, IEEE.get_unit_info, 61883/GET_UNIT_INFO, *PGET_UNIT_INFO, 61883/PGET_UNIT_INFO, PGET_UNIT_INFO structure pointer [Buses], GET_UNIT_INFO
+ms.keywords: IEEE.get_unit_info, GET_UNIT_INFO structure [Buses], _GET_UNIT_INFO, *PGET_UNIT_INFO, GET_UNIT_INFO, 61883/PGET_UNIT_INFO, PGET_UNIT_INFO structure pointer [Buses], 61883/GET_UNIT_INFO, PGET_UNIT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,6 +60,7 @@ typedef struct _GET_UNIT_INFO {
 `Information`
 
 In input, a pointer to information supplied by the protocol driver about the device. 
+
 <table>
 <tr>
 <th>Value of nLevel</th>
@@ -154,6 +155,8 @@ GET_UNIT_DIAG_LEVEL
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
+
+
 
  
 

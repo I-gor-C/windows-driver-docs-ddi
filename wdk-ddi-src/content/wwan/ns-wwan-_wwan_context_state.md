@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 0b2a2a94-6c1a-439f-8d54-cc43e79b3b15
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wwan/WWAN_CONTEXT_STATE, *PWWAN_CONTEXT_STATE, wwan/PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE, PWWAN_CONTEXT_STATE, WwanRef_ff03afab-0fc4-4469-8a2d-f5d2a770f08d.xml, _WWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], netvista.wwan_context_state, PWWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords: PWWAN_CONTEXT_STATE, netvista.wwan_context_state, wwan/PWWAN_CONTEXT_STATE, *PWWAN_CONTEXT_STATE, wwan/WWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WWAN_CONTEXT_STATE, WwanRef_ff03afab-0fc4-4469-8a2d-f5d2a770f08d.xml, _WWAN_CONTEXT_STATE, PWWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -86,6 +86,7 @@ A network-specific error. The following table shows the connection failure value
      the 
      <i>3GPP TS 24.008 Specification</i>.
      
+
 <table>
 <tr>
 <th>3GPP 24.008 cause code</th>
@@ -184,6 +185,7 @@ The current voice call state of the device.
 
 The following points provide guidelines on returning network specific error in different
     scenarios:
+
 <ul>
 <li>
 If a set request fails, miniport drivers should return the network specific error code. In this
@@ -201,7 +203,8 @@ Whenever the device context activation state changes because of network initiate
       <b>uNwError</b> member to the network specific error code.
 
 </li>
-</ul>Miniport drivers can provide additional error codes as defined by the GSM standards specification of
+</ul>
+Miniport drivers can provide additional error codes as defined by the GSM standards specification of
     context activation error codes returned by the network. For example, miniport drivers can communicate the
     3GPP specification TS 24.008 context activation error codes, such as error code 8 (Operator determined
     barring), to the MB Service through the 
@@ -222,9 +225,15 @@ In case of response to the NDIS_WWAN_SET_CONTEXT_STATE, use this member to provi
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_context_state.md">NDIS_WWAN_CONTEXT_STATE</a>
 
-<a href="..\wwan\ne-wwan-_wwan_activation_state.md">WWAN_ACTIVATION_STATE</a>
+
 
 <a href="..\wwan\ne-wwan-_wwan_voice_call_state.md">WWAN_VOICE_CALL_STATE</a>
+
+
+
+<a href="..\wwan\ne-wwan-_wwan_activation_state.md">WWAN_ACTIVATION_STATE</a>
+
+
 
  
 

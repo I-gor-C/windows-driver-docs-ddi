@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorsourcemodesetCreatenewmodeinfo(
 ## Return Value
 
 The <b>pfnCreateNewModeInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -105,6 +106,7 @@ The function failed because it was unable to allocate enough memory.
 ## Remarks
 
 After you call <b>pfnCreateNewModeInfo</b> to obtain a D3DKMDT_MONITOR SOURCE_MODE structure, you must do one, but not both, of the following:
+
 <ul>
 <li>
 Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_addmode.md">pfnAddMode</a>.

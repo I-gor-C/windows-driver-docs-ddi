@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: f0aeb4ad-17a6-43bb-87bf-0c6766a6ad39
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: bth_structs_2e4ed482-af73-4ca6-997c-53005c4fafc2.xml, _BRB_SCO_TRANSFER, _BRB_SCO_TRANSFER structure [Bluetooth Devices], bthddi/_BRB_SCO_TRANSFER, bltooth._brb_sco_transfer
+ms.keywords: "_BRB_SCO_TRANSFER, bth_structs_2e4ed482-af73-4ca6-997c-53005c4fafc2.xml, bltooth._brb_sco_transfer, _BRB_SCO_TRANSFER structure [Bluetooth Devices], bthddi/_BRB_SCO_TRANSFER"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -109,6 +109,7 @@ A
 Flags that specify the basic behavior of the BRB. Valid flag values are listed in the following
      table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -164,13 +165,21 @@ If both
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536629">BRB_SCO_TRANSFER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a>
+
 
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
+
+
 <a href="https://social.msdn.microsoft.com/Forums/en-US/0a9a4323-d046-4d27-9d22-4974dbab30a4/windows-bluetooth-sco-brbscoopenchannelresponse?forum=wdk">BRB_SCO_OPEN_CHANNEL_RESPONSE</a>
+
+
 
  
 

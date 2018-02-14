@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 81B87CA6-01D8-4D54-87A6-6311260C06CB
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntintsafe/RtlLongLongToUInt, kernel.rtllonglongtouint, RtlLongLongToUInt, RtlLongLongToUInt function [Kernel-Mode Driver Architecture]
+ms.keywords: RtlLongLongToUInt, kernel.rtllonglongtouint, RtlLongLongToUInt function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongToUInt
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlIntPtrToUInt
 </li>

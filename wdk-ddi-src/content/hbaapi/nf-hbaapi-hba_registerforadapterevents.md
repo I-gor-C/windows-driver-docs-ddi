@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b5e671dc-0583-4e5f-b537-3257b3f25479
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_RegisterForAdapterEvents, hbaapi/HBA_RegisterForAdapterEvents, HBA_RegisterForAdapterEvents routine [Storage Devices], fibreHBA_rtns_8ab64c5b-ffac-4e2a-90db-5f3cbc640f14.xml, storage.hba_registerforadapterevents
+ms.keywords: hbaapi/HBA_RegisterForAdapterEvents, storage.hba_registerforadapterevents, HBA_RegisterForAdapterEvents routine [Storage Devices], fibreHBA_rtns_8ab64c5b-ffac-4e2a-90db-5f3cbc640f14.xml, HBA_RegisterForAdapterEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,7 @@ TBD
 ## Return Value
 
 The <b>HBA_RegisterForAdapterEvents</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, this member should have one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -127,11 +128,19 @@ If the configuration of the HBA referenced by <i>handle </i>is changed, the call
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a>
+
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+
+
 
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a>
+
 
  
 

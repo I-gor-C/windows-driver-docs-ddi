@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9a21495e-8a4d-4177-a2c5-b6a928d86fd9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeEnterGuardedRegion, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture], kernel.keenterguardedregion, k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml, wdm/KeEnterGuardedRegion
+ms.keywords: kernel.keenterguardedregion, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture], k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml, KeEnterGuardedRegion, wdm/KeEnterGuardedRegion
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	KeEnterGuardedRegion
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -81,6 +81,8 @@ For more information about guarded regions, see <a href="https://msdn.microsoft.
 ## See Also
 
 <a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+
+
 
  
 

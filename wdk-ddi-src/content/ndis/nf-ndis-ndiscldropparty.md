@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: f5d04730-a7eb-4670-9b47-f8c52267aea8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisClDropParty, ndis/NdisClDropParty, condis_client_ref_a86ff56b-e523-4d1b-a3ef-60ec953514c6.xml, NdisClDropParty function [Network Drivers Starting with Windows Vista], netvista.ndiscldropparty
+ms.keywords: condis_client_ref_a86ff56b-e523-4d1b-a3ef-60ec953514c6.xml, NdisClDropParty, NdisClDropParty function [Network Drivers Starting with Windows Vista], ndis/NdisClDropParty, netvista.ndiscldropparty
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisClDropParty
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -93,6 +93,7 @@ When
 
 Clients usually call 
     <b>NdisClDropParty</b> in either of the following circumstances:
+
 <ul>
 <li>
 From the 
@@ -116,7 +117,8 @@ For such a client-initiated close of its own multipoint call, the client must ca
       <b>NdisClDropParty</b> one or more times to drop every other remaining party on the multipoint VC.
 
 </li>
-</ul>A client's call to 
+</ul>
+A client's call to 
     <b>NdisClDropParty</b> causes NDIS to call the 
     <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a> function of the
     call manager that shares the same 
@@ -171,19 +173,33 @@ The caller of
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
-
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
 <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 
-<a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a>
+
+
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
+
+
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
+
+
+
+<a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
+
+
+<a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a>
+
+
 
  
 

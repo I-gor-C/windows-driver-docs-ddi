@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 3b0f4fc9-58fd-46ba-be17-2e1b36b16caa
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/IoGetPagingIoPriority, IoGetPagingIoPriority, IoGetPagingIoPriority routine [Kernel-Mode Driver Architecture], kernel.iogetpagingiopriority, k104_cde35790-d059-44bb-85c5-abde7cb36319.xml
+ms.keywords: IoGetPagingIoPriority routine [Kernel-Mode Driver Architecture], IoGetPagingIoPriority, wdm/IoGetPagingIoPriority, kernel.iogetpagingiopriority, k104_cde35790-d059-44bb-85c5-abde7cb36319.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	IoGetPagingIoPriority
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -83,6 +83,8 @@ For I/O requests that causing paging, the system associates an <b>IO_PAGING_PRIO
 ## See Also
 
 <a href="..\wdm\ne-wdm-_io_paging_priority.md">IO_PAGING_PRIORITY</a>
+
+
 
  
 

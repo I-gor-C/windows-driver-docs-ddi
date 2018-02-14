@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6B99D78A-B582-4114-9472-D01D39FDD4C9
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortInterlockedRemoveHeadList, StorPortInterlockedRemoveHeadList routine [Storage Devices], StorPortInterlockedRemoveHeadList, storage.storportinterlockedremoveheadlist
+ms.keywords: storage.storportinterlockedremoveheadlist, StorPortInterlockedRemoveHeadList routine [Storage Devices], storport/StorPortInterlockedRemoveHeadList, StorPortInterlockedRemoveHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,7 @@ A pointer to a <b>STOR_KSPIN_LOCK</b> structure that serves as the spin lock use
 ## Return Value
 
 <b>StorPortInterlockedRemoveHeadList</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -135,15 +136,25 @@ A pointer in <i>ListHead</i> or <i>Result</i> is <b>NULL</b>.
 
 ## See Also
 
+<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
+
+
+
 <a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
 
-<a href="..\storport\nf-storport-storportinterlockedremoveheadlist.md">StorPortInterlockedRemoveHeadList</a>
+
 
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
-<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
+
+
+<a href="..\storport\nf-storport-storportinterlockedremoveheadlist.md">StorPortInterlockedRemoveHeadList</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790427">StorPortInitializeSpinLock</a>
+
+
 
  
 

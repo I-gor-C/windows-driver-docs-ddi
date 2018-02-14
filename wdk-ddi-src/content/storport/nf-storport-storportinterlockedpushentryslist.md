@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 74C32E55-79C6-449A-AFA3-27858CF4EA6B
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortInterlockedPushEntrySList routine [Storage Devices], StorPortInterlockedPushEntrySList, storport/StorPortInterlockedPushEntrySList, storage.storportinterlockedpushentryslist
+ms.keywords: storage.storportinterlockedpushentryslist, StorPortInterlockedPushEntrySList, StorPortInterlockedPushEntrySList routine [Storage Devices], storport/StorPortInterlockedPushEntrySList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ A pointer to a list entry pointer. The value returned is a pointer to  the previ
 ## Return Value
 
 <b>StorPortInterlockedPushEntrySList</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -138,11 +139,19 @@ When allocated by the caller,  the <b>STOR_SLIST_ENTRY</b> structure pointed to 
 
 <a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
 
-<a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
+
 
 <a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
 
+
+
 <a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
+
+
+
+<a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
+
+
 
  
 

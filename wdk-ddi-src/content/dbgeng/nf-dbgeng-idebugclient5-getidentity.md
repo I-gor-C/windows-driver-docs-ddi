@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 1d4e7c69-bc32-43f6-b45b-fcee2e04dc26
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetIdentity method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], GetIdentity method, IDebugClient4 interface [Windows Debugging], GetIdentity method, IDebugClient_7c54bffa-5190-49f5-919d-16bfb851ae36.xml, GetIdentity method [Windows Debugging], IDebugClient2 interface [Windows Debugging], GetIdentity method, dbgeng/IDebugClient4::GetIdentity, dbgeng/IDebugClient5::GetIdentity, IDebugClient5, GetIdentity method [Windows Debugging], IDebugClient4 interface, IDebugClient interface [Windows Debugging], GetIdentity method, GetIdentity, debugger.getidentity, GetIdentity method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::GetIdentity, dbgeng/IDebugClient3::GetIdentity, IDebugClient4::GetIdentity, IDebugClient3 interface [Windows Debugging], GetIdentity method, IDebugClient2::GetIdentity, dbgeng/IDebugClient2::GetIdentity, IDebugClient3::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient interface, IDebugClient::GetIdentity
+ms.keywords: IDebugClient5, IDebugClient5 interface [Windows Debugging], GetIdentity method, GetIdentity method [Windows Debugging], IDebugClient5 interface, IDebugClient_7c54bffa-5190-49f5-919d-16bfb851ae36.xml, GetIdentity method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient5::GetIdentity, IDebugClient2::GetIdentity, IDebugClient5::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient2::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient3 interface, GetIdentity, GetIdentity method [Windows Debugging], IDebugClient2 interface, IDebugClient interface [Windows Debugging], GetIdentity method, IDebugClient2, IDebugClient2 interface [Windows Debugging], GetIdentity method, IDebugClient3::GetIdentity, IDebugClient4, dbgeng/IDebugClient::GetIdentity, IDebugClient::GetIdentity, IDebugClient3, IDebugClient4::GetIdentity, IDebugClient, IDebugClient3 interface [Windows Debugging], GetIdentity method, debugger.getidentity, GetIdentity method [Windows Debugging], dbgeng/IDebugClient3::GetIdentity, dbgeng/IDebugClient4::GetIdentity, IDebugClient4 interface [Windows Debugging], GetIdentity method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -79,6 +79,7 @@ Receives the size of the string. If <i>IdentitySize</i> is <b>NULL</b>, this inf
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -123,17 +124,29 @@ For more information about client objects, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553219">OutputIdentity</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553219">OutputIdentity</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+
 
  
 

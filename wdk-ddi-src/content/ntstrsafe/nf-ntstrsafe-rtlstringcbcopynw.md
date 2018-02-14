@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d64fb3e6-fba1-4383-bdb0-a63dc7c16033
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntstrsafe/RtlStringCbCopyNW, kernel.rtlstringcbcopyn, RtlStringCbCopyN, RtlStringCbCopyNW function [Kernel-Mode Driver Architecture], RtlStringCbCopyNA, RtlStringCbCopyNW, ntstrsafe/RtlStringCbCopyNA, safestrings_a3f7f7a8-b4a1-4c7c-b384-2243b3c97a4e.xml
+ms.keywords: kernel.rtlstringcbcopyn, RtlStringCbCopyNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCopyNA, RtlStringCbCopyN, RtlStringCbCopyNW, RtlStringCbCopyNA, safestrings_a3f7f7a8-b4a1-4c7c-b384-2243b3c97a4e.xml, ntstrsafe/RtlStringCbCopyNW
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	RtlStringCbCopyNW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -87,6 +87,7 @@ TBD
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -142,6 +143,7 @@ The function returns the STATUS_INVALID_PARAMETER value when:
 <b>RtlStringCbCopyN</b> copies a given number of bytes from a source string. The size, in bytes, of the destination buffer is provided to the function to ensure that <b>RtlStringCbCopyN</b> does not write past the end of this buffer.
 
 Use <b>RtlStringCbCopyNW</b> to handle Unicode strings and <b>RtlStringCbCopyNA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.
+
 <table>
 <tr>
 <th>String data type</th>
@@ -176,7 +178,8 @@ L"string"
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.
 
@@ -195,11 +198,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyw.md">RtlStringCbCopy</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexw.md">RtlStringCbCopyNEx</a>
 
+
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyw.md">RtlStringCbCopy</a>
+
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a>
+
+
 
  
 

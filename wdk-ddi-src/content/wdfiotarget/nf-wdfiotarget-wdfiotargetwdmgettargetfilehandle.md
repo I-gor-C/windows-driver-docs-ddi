@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3312e6ca-bf2c-4a53-bd86-d36d708ed596
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoTargetWdmGetTargetFileHandle, WdfIoTargetWdmGetTargetFileHandle method, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, wdfiotarget/WdfIoTargetWdmGetTargetFileHandle, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, kmdf.wdfiotargetwdmgettargetfilehandle, wdf.wdfiotargetwdmgettargetfilehandle
+ms.keywords: WdfIoTargetWdmGetTargetFileHandle method, wdf.wdfiotargetwdmgettargetfilehandle, kmdf.wdfiotargetwdmgettargetfilehandle, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, WdfIoTargetWdmGetTargetFileHandle, wdfiotarget/WdfIoTargetWdmGetTargetFileHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,6 +88,76 @@ For more information about <b>WdfIoTargetWdmGetTargetFileHandle</b>, see <a href
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
+
+#### Examples
+
+The following code example obtains a handle to the file that is associated with a specified remote I/O target.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>HANDLE h;
+
+h = WdfIoTargetWdmGetTargetFileHandle(IoTarget);</pre>
+</td>
+</tr>
+</table></span></div>
+A legacy UMDF driver (version 1.<i>x</i>)  calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff558841">IWDFDevice::RetrieveDeviceName</a> to get the name of the underlying kernel-mode device and then open a handle to it with <b>CreateFile</b>. The driver then sends I/O directly to the device using <b>DeviceIoControl</b>.
+
+Starting in UMDF 2.15, the driver opens the local I/O target by file and retrieves its handle. The framework opens and closes the file handle. The file handle remains valid within the contract of <b>WdfIoTargetWdmGetTargetFileHandle</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS status;
+
+WDF_IO_TARGET_OPEN_PARAMS params;
+
+WDFIOTARGET ioTarget = NULL;
+
+HANDLE handle = NULL;
+
+status = WdfIoTargetCreate(Device, &amp;attr, &amp;ioTarget);
+
+if (!NT_SUCCESS(status)) {
+
+    // error handling
+
+}
+
+WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE(&amp;params, NULL);
+
+status = WdfIoTargetOpen(ioTarget, &amp;params);
+
+if (!NT_SUCCESS(status)) {
+
+    // error handling
+
+}
+
+handle = WdfIoTargetWdmGetTargetFileHandle(ioTarget);
+
+if (handle == NULL) {
+
+    // error handling
+
+}
+
+if (ioTarget != NULL) {
+    WdfIoTargetClose(ioTarget);
+}
+// You can now call DeviceIoControl(handle, ...) etc.
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -101,9 +171,13 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 ## See Also
 
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
+
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfileobject.md">WdfIoTargetWdmGetTargetFileObject</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
 
  
 

@@ -7,7 +7,7 @@ old-location: audio\iminiportaudiosignalprocessing.htm
 old-project: audio
 ms.assetid: 6C520509-347F-4E01-95C4-0D3306031E51
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 2/8/2018
 ms.keywords: audio.iminiportaudiosignalprocessing, IMiniportAudioSignalProcessing interface [Audio Devices], IMiniportAudioSignalProcessing interface [Audio Devices], described, IMiniportAudioSignalProcessing, portcls/IMiniportAudioSignalProcessing
 ms.prod: windows-hardware
 ms.technology: windows-devices

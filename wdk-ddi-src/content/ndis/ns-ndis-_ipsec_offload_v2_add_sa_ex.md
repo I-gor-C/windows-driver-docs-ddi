@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ecb2ae2e-d57d-4192-965b-2ac9b16debf3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ipsec_offload_v2_add_sa_ex, ndis/PIPSEC_OFFLOAD_V2_ADD_SA_EX, ndis/IPSEC_OFFLOAD_V2_ADD_SA_EX, PIPSEC_OFFLOAD_V2_ADD_SA_EX structure pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_ADD_SA_EX, *PIPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX, PIPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX structure [Network Drivers Starting with Windows Vista]
+ms.keywords: ndis/PIPSEC_OFFLOAD_V2_ADD_SA_EX, _IPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX, PIPSEC_OFFLOAD_V2_ADD_SA_EX structure pointer [Network Drivers Starting with Windows Vista], *PIPSEC_OFFLOAD_V2_ADD_SA_EX, IPSEC_OFFLOAD_V2_ADD_SA_EX structure [Network Drivers Starting with Windows Vista], netvista.ipsec_offload_v2_add_sa_ex, PIPSEC_OFFLOAD_V2_ADD_SA_EX, ndis/IPSEC_OFFLOAD_V2_ADD_SA_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -88,10 +88,12 @@ A bitmask that indicates whether the SA that is being added is an inbound or out
 
 
 
-
 #### IPSEC_OFFLOAD_V2_IPv6
 
 If this flag is set, the addresses are IPv6. Otherwise, the addresses are IPv4
+
+
+
 
 
 #### IPSEC_OFFLOAD_V2_INBOUND
@@ -131,6 +133,7 @@ The offset, in bytes, from the beginning of the IPSEC_OFFLOAD_V2_ADD_SA_EX struc
 
 The number of IPsec extension headers. This member can be one of the following values.
      
+
 <table>
 <tr>
 <th>Type of security</th>
@@ -242,14 +245,17 @@ The UDP ESP encapsulation type. This member can be one or more of the following 
 
 
 
+
 #### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_NONE
 
 No UDP encapsulation is used.
 
 
+
 #### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT
 
 An ESP-encapsulated transport-mode packet is encapsulated by UDP.
+
 
 
 #### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TUNNEL
@@ -258,10 +264,12 @@ The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode port
        packet is not UDP-encapsulated and is not ESP-protected.
 
 
+
 #### IPSEC_OFFLOAD_V2_TRANSPORT_OVER_UDP_ESP_ENCAPSULATION_TUNNEL
 
 The tunnel-mode portion of a packet is UDP-encapsulated. The transport-mode portion of a packet
        is not UDP-encapsulated but is ESP-protected.
+
 
 
 #### IPSEC_OFFLOAD_V2_UDP_ESP_ENCAPSULATION_TRANSPORT_OVER_TUNNEL
@@ -304,24 +312,40 @@ This structure is nearly identical to the previous version,
 <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
 
-<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">
-   NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
 
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX</a>
 
 <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
    IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a>
 
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
+
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">
+   NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
+
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
+
 <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_tunnel_net_buffer_list_info.md">
    NDIS_IPSEC_OFFLOAD_V2_TUNNEL_NET_BUFFER_LIST_INFO</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>
+
+
 
  
 

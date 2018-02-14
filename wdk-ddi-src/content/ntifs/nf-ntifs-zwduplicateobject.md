@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9a922379-b439-4f94-9eb1-7c229318382c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: NtDuplicateObject, ntifs/ZwDuplicateObject, ZwDuplicateObject, kernel.zwduplicateobject, ntifs/NtDuplicateObject, ZwDuplicateObject routine [Kernel-Mode Driver Architecture]
+ms.keywords: ZwDuplicateObject routine [Kernel-Mode Driver Architecture], ntifs/NtDuplicateObject, ntifs/ZwDuplicateObject, ZwDuplicateObject, kernel.zwduplicateobject, NtDuplicateObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,6 +92,7 @@ A ULONG that specifies the desired attributes for the new handle. For more infor
 `Options`
 
 A set of flags to control the behavior of the duplication operation. Set this parameter to zero or to the bitwise OR of one or more of the following flags.
+
 <table>
 <tr>
 <th>Flag name</th>
@@ -137,11 +138,17 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
 
 <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
 
  
 

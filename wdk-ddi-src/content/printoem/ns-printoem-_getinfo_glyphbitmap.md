@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 6a5887fd-0269-4cd1-acf1-f7242016d993
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: PGETINFO_GLYPHBITMAP structure pointer [Print Devices], print_unidrv-pscript_rendering_56355138-13b0-4e8b-8132-f7c017105ab3.xml, PGETINFO_GLYPHBITMAP, *PGETINFO_GLYPHBITMAP, printoem/GETINFO_GLYPHBITMAP, printoem/PGETINFO_GLYPHBITMAP, _GETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP structure [Print Devices], GETINFO_GLYPHBITMAP, print.getinfo_glyphbitmap
+ms.keywords: GETINFO_GLYPHBITMAP structure [Print Devices], print_unidrv-pscript_rendering_56355138-13b0-4e8b-8132-f7c017105ab3.xml, printoem/PGETINFO_GLYPHBITMAP, print.getinfo_glyphbitmap, *PGETINFO_GLYPHBITMAP, _GETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP, PGETINFO_GLYPHBITMAP structure pointer [Print Devices], PGETINFO_GLYPHBITMAP, printoem/GETINFO_GLYPHBITMAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	GETINFO_GLYPHBITMAP
 product: Windows
 targetos: Windows
-req.typenames: GETINFO_GLYPHBITMAP, *PGETINFO_GLYPHBITMAP
+req.typenames: "*PGETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP"
 req.product: Windows 10 or later.
 ---
 
@@ -83,11 +83,17 @@ The value that a rendering plug-in specifies for the <b>hGlyph</b> member must h
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566819">GLYPHDATA</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554241">IPrintOemUni::DownloadCharGlyph</a>
+
+
 
  
 

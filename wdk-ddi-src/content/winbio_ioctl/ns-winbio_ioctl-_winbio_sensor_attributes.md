@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: edfd5b49-f658-46c7-a3f3-221afb35abb7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: PWINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, _WINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices], biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, WINBIO_SENSOR_ATTRIBUTES, biometric.winbio_sensor_attributes, WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices]
+ms.keywords: "_WINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, biometric.winbio_sensor_attributes, winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices], PWINBIO_SENSOR_ATTRIBUTES, biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, *PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -73,6 +73,7 @@ typedef struct _WINBIO_SENSOR_ATTRIBUTES {
 A WINBIO_CAPABILITIES subtype, which indicates which capabilities are supported by the device. 
 
 WINBIO_CAPABILITIES can contain the values in the following table.
+
 <table>
 <tr>
 <th>
@@ -223,6 +224,7 @@ A DWORD value that indicates the total size of the payload, including the fixed 
 A WINBIO_BIOMETRIC_SENSOR_SUBTYPE subtype that contains additional information about the sensor.  For example, this member could specify whether the sensor requires the user to simply touch the sensor or swipe a finger over the sensor.
 
 WINBIO_BIOMETRIC_SENSOR_SUBTYPE can contain the values in the following table.
+
 <table>
 <tr>
 <th>
@@ -277,6 +279,7 @@ The number of formats that are supported by the driver and device.  There must b
 `WinBioHresult`
 
 An HRESULT value that indicates containing status detail of the I/O operation.   The following table includes possible values.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -318,6 +321,8 @@ A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md"
 ## See Also
 
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_attributes.md">IOCTL_BIOMETRIC_GET_ATTRIBUTES</a>
+
+
 
  
 

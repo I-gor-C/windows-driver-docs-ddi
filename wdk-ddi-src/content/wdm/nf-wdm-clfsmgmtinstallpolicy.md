@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 0a492a86-e732-4302-b35d-9b2a5eb05445
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsMgmtInstallPolicy, Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, wdm/ClfsMgmtInstallPolicy, kernel.clfsmgmtinstallpolicy, ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/ClfsMgmtInstallPolicy, ClfsMgmtInstallPolicy, Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, kernel.clfsmgmtinstallpolicy, ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,6 +77,7 @@ The length, in bytes, of the structure pointed to by the <i>Policy</i> parameter
 ## Return Value
 
 The <b>ClfsMgmtInstallPolicy</b> routine returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -184,7 +185,8 @@ There is insufficient memory to complete the operation.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS Values</a>.
 
@@ -209,6 +211,8 @@ The log policy that is installed applies to the physical log, even if the <i>Log
 ## See Also
 
 <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
+
+
 
  
 

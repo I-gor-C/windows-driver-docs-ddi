@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 91f559cc-c84b-450d-b52c-8289e976f991
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTCreateDevice function [Display Devices], D3DKMTCreateDevice, OpenGL_Functions_09099f43-bae3-4859-9465-434915af774a.xml, PFND3DKMT_CREATEDEVICE, d3dkmthk/D3DKMTCreateDevice, display.d3dkmtcreatedevice
+ms.keywords: display.d3dkmtcreatedevice, D3DKMTCreateDevice function [Display Devices], d3dkmthk/D3DKMTCreateDevice, D3DKMTCreateDevice, OpenGL_Functions_09099f43-bae3-4859-9465-434915af774a.xml, PFND3DKMT_CREATEDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 <b>D3DKMTCreateDevice</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -115,7 +116,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -132,6 +134,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createdevice.md">D3DKMT_CREATEDEVICE</a>
+
+
 
  
 

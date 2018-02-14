@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: CDB72C6A-43E5-463B-97E5-44D22214C071
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.idebugsymbols3_getsourceentrystringwide, GetSourceEntryStringWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSourceEntryStringWide, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryStringWide method, dbgeng/IDebugSymbols3::GetSourceEntryStringWide, IDebugSymbols3, GetSourceEntryStringWide, GetSourceEntryStringWide method [Windows Debugging]
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetSourceEntryStringWide method, GetSourceEntryStringWide, debugger.idebugsymbols3_getsourceentrystringwide, GetSourceEntryStringWide method [Windows Debugging], dbgeng/IDebugSymbols3::GetSourceEntryStringWide, IDebugSymbols3, IDebugSymbols3::GetSourceEntryStringWide, GetSourceEntryStringWide method [Windows Debugging], IDebugSymbols3 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -99,6 +99,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
  
 

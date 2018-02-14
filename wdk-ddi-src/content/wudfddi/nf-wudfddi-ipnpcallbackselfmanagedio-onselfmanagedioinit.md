@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 41b12fef-dbc7-4b91-a2d3-9fb1aafff237
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo interface, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, umdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo, OnSelfManagedIoInit, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, UMDFDeviceObjectRef_17a86796-71ff-4ca3-897b-da7780614f24.xml, wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit
+ms.keywords: IPnpCallbackSelfManagedIo, UMDFDeviceObjectRef_17a86796-71ff-4ca3-897b-da7780614f24.xml, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoInit, OnSelfManagedIoInit method, wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoInit method, umdf.ipnpcallbackselfmanagedio_onselfmanagedioinit
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,11 +87,17 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.md">IPnpCallbackSelfManagedIo</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+
 
  
 

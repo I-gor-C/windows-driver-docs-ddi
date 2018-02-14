@@ -7,8 +7,8 @@ old-location: sensors\isensordriver_ongetproperties.htm
 old-project: sensors
 ms.assetid: 8c7f378c-b4e6-4074-8b6a-571068b5ab80
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: ISensorDriver::OnGetProperties, sensors.isensordriver_ongetproperties, ISensorDriver, OnGetProperties method [Sensor Devices], OnGetProperties
+ms.date: 2/8/2018
+ms.keywords: OnGetProperties, OnGetProperties method [Sensor Devices], ISensorDriver, sensors.isensordriver_ongetproperties, ISensorDriver::OnGetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -88,6 +88,7 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 Properties describe the sensor device, as opposed to data fields, which contain sensor-generated data. Platform-defined properties are defined in sensors.h.
 
 Applications can access some sensor property information before the user grants permission for the sensor. These items are limited to the following IDs defined in sensors.h:
+
 <ul>
 <li>
 Any <b>PROPERTYKEY</b> that starts with "SENSOR_PROPERTY_".
@@ -97,7 +98,8 @@ Any <b>PROPERTYKEY</b> that starts with "SENSOR_PROPERTY_".
 Any category <b>GUID</b> that starts with "SENSOR_CATEGORY_".
 
 </li>
-</ul>Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned in this collection must contain values for the required properties, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a> reference section.
+</ul>
+Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> object returned in this collection must contain values for the required properties, as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a> reference section.
 
 The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.
 

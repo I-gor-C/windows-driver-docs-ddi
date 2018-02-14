@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c3f5cc8e-a600-4ca1-8745-d74943feb2c7
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.enum_pdo_entry, ehstorioctl/ENUM_PDO_ENTRY, ENUM_PDO_ENTRY structure [Storage Devices], _ENUM_PDO_ENTRY, ehstorioctl/PENUM_PDO_ENTRY, PENUM_PDO_ENTRY structure pointer [Storage Devices], ENUM_PDO_ENTRY, PENUM_PDO_ENTRY, *PENUM_PDO_ENTRY, structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml
+ms.keywords: ehstorioctl/ENUM_PDO_ENTRY, PENUM_PDO_ENTRY structure pointer [Storage Devices], _ENUM_PDO_ENTRY, ENUM_PDO_ENTRY structure [Storage Devices], storage.enum_pdo_entry, PENUM_PDO_ENTRY, ENUM_PDO_ENTRY, structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml, *PENUM_PDO_ENTRY, ehstorioctl/PENUM_PDO_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	ENUM_PDO_ENTRY
 product: Windows
 targetos: Windows
-req.typenames: "*PENUM_PDO_ENTRY, ENUM_PDO_ENTRY"
+req.typenames: ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY
 ---
 
 # _ENUM_PDO_ENTRY structure
@@ -109,6 +109,8 @@ The string contained in this member is the device instance path in a form suitab
 ## See Also
 
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
+
+
 
  
 

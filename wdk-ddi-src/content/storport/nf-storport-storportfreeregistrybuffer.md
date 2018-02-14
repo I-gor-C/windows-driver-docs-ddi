@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 19e6bf4a-8951-44a6-ac04-f286d8979e40
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortFreeRegistryBuffer routine [Storage Devices], StorPortFreeRegistryBuffer, storage.storportfreeregistrybuffer, storport/StorPortFreeRegistryBuffer, storprt_a81ec7f6-e78c-4bf0-9289-2a833623664d.xml
+ms.keywords: storage.storportfreeregistrybuffer, StorPortFreeRegistryBuffer, storprt_a81ec7f6-e78c-4bf0-9289-2a833623664d.xml, StorPortFreeRegistryBuffer routine [Storage Devices], storport/StorPortFreeRegistryBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,6 +87,8 @@ The <b>StorPortFreeRegistryBuffer</b> routine frees the buffer that was allocate
 ## See Also
 
 <a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>
+
+
 
  
 

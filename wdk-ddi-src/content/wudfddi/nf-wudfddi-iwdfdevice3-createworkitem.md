@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: B34EABF4-C659-4DB4-AEC6-94F544D79221
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi/IWDFDevice3::CreateWorkItem, IWDFDevice3 interface, CreateWorkItem method, umdf.iwdfdevice3_createworkitem, IWDFDevice3, wdf.iwdfdevice3_createworkitem, CreateWorkItem method, IWDFDevice3::CreateWorkItem, CreateWorkItem, CreateWorkItem method, IWDFDevice3 interface
+ms.keywords: IWDFDevice3 interface, CreateWorkItem method, CreateWorkItem method, wdf.iwdfdevice3_createworkitem, IWDFDevice3::CreateWorkItem, IWDFDevice3, CreateWorkItem method, IWDFDevice3 interface, wudfddi/IWDFDevice3::CreateWorkItem, umdf.iwdfdevice3_createworkitem, CreateWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -85,6 +85,26 @@ If you specify a parent object, the framework automatically deletes the work-ite
 
 For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF-9CC2-7215423E6D35">Using Work Items</a>.
 
+
+#### Examples
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WUDF_WORKITEM_CONFIG config;
+        
+WUDF_WORKITEM_CONFIG_INIT(&amp;config, OnWorkItem); 
+hr = m_IWdfDevice3-&gt;CreateWorkItem(&amp;config,
+                                   m_IWdfDevice3,   
+                                   &amp;m_WorkItem);
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,15 +117,25 @@ For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF
 
 ## See Also
 
-<a href="..\wudfworkitem\nf-wudfworkitem-wudf_workitem_config_init.md">WUDF_WORKITEM_CONFIG_INIT</a>
-
 <a href="..\wudfworkitem\ns-wudfworkitem-_wudf_workitem_config.md">WUDF_WORKITEM_CONFIG</a>
+
+
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
+
 
 <a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a>
+
+
+
+<a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
+
+
+
+<a href="..\wudfworkitem\nf-wudfworkitem-wudf_workitem_config_init.md">WUDF_WORKITEM_CONFIG_INIT</a>
+
+
 
  
 

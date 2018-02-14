@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: C3E9B4D6-A1BB-425E-A131-D93C3219D28B
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function, wdf.wdf_dma_system_profile_config_init, kmdf.wdf_dma_system_profile_config_init
+ms.keywords: WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, wdf.wdf_dma_system_profile_config_init, kmdf.wdf_dma_system_profile_config_init, WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -94,6 +94,13 @@ Depending on the System on a Chip (SoC) design, the <i>Address</i> parameter mig
 
  For more information about creating a system-mode DMA enabler, see <a href="https://msdn.microsoft.com/CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6">Supporting System-Mode DMA</a>.
 
+
+#### Examples
+
+For a code example that uses <b>WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</b>, see <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -105,11 +112,17 @@ Depending on the System on a Chip (SoC) design, the <i>Address</i> parameter mig
 
 ## See Also
 
-<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_system_profile_config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
-
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
+
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a>
+
+
+
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_system_profile_config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
+
+
 
  
 

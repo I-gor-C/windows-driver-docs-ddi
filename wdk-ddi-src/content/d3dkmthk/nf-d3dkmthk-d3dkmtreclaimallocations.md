@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3bfb2a82-9451-4365-b113-6311c3f13fe6
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtreclaimallocations, D3DKMTReclaimAllocations, PFND3DKMT_RECLAIMALLOCATIONS, D3DKMTReclaimAllocations function [Display Devices], d3dkmthk/D3DKMTReclaimAllocations
+ms.keywords: display.d3dkmtreclaimallocations, D3DKMTReclaimAllocations, d3dkmthk/D3DKMTReclaimAllocations, PFND3DKMT_RECLAIMALLOCATIONS, D3DKMTReclaimAllocations function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,7 +123,11 @@ Parameters were validated and determined to be incorrect.
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_reclaimallocations.md">D3DKMT_RECLAIMALLOCATIONS</a>
 
+
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>
+
+
 
  
 

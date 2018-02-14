@@ -69,11 +69,14 @@ This IOCTL is not handled by video miniport drivers. It is handled entirely by t
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## Remarks
-<div class="alert"><b>Note</b>    This IOCTL is obsolete in Windows Vista.</div><div> </div>
+<div class="alert"><b>Note</b>    This IOCTL is obsolete in Windows Vista.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

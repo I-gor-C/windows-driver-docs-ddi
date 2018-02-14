@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8f52557f-b65d-479d-aab4-1e4f7298c8f9
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFDMATRANSACTIONEXECUTE, WdfDmaTransactionExecute method, DFDmaObjectRef_012a66e9-0ed7-458f-9068-c7d2ce58d86a.xml, wdf.wdfdmatransactionexecute, wdfdmatransaction/WdfDmaTransactionExecute, WdfDmaTransactionExecute, kmdf.wdfdmatransactionexecute
+ms.keywords: PFN_WDFDMATRANSACTIONEXECUTE, kmdf.wdfdmatransactionexecute, wdfdmatransaction/WdfDmaTransactionExecute, WdfDmaTransactionExecute method, DFDmaObjectRef_012a66e9-0ed7-458f-9068-c7d2ce58d86a.xml, WdfDmaTransactionExecute, wdf.wdfdmatransactionexecute
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WdfDmaTransactionExecute
 product: Windows
 targetos: Windows
-req.typenames: WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product: Windows 10 or later.
 ---
 
@@ -74,6 +74,7 @@ Driver-defined context information. The framework passes the value specified for
 ## Return Value
 
 <b>WdfDmaTransactionExecute</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -123,7 +124,8 @@ The number of scatter/gather elements that the operating system needed to handle
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -156,6 +158,85 @@ The driver can call <b>WdfDmaTransactionExecute</b> in a non-blocking manner if 
 
 For more information about DMA transactions, see <a href="https://msdn.microsoft.com/fa26ef08-01c0-4502-9cb3-865000242e4a">Starting a DMA Transaction</a>.
 
+
+#### Examples
+
+The following code example is from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers">PCIDRV</a> sample driver. This example creates and initializes a DMA transfer and begins its execution.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+NICInitiateDmaTransfer(
+    IN PFDO_DATA  FdoData,
+    IN WDFREQUEST  Request
+    )
+{
+    WDFDMATRANSACTION  dmaTransaction;
+    NTSTATUS  status;
+    BOOLEAN  bCreated = FALSE;
+ 
+    do {
+        status = WdfDmaTransactionCreate(
+                                         FdoData-&gt;WdfDmaEnabler,
+                                         WDF_NO_OBJECT_ATTRIBUTES,
+                                         &amp;dmaTransaction
+                                         );
+        if(!NT_SUCCESS(status)) {
+            TraceEvents(TRACE_LEVEL_ERROR, DBG_WRITE, 
+                        "WdfDmaTransactionCreate failed %X\n", status);
+            break;
+        }
+
+        bCreated = TRUE;
+
+        status = WdfDmaTransactionInitializeUsingRequest( 
+                                     dmaTransaction,
+                                     Request,
+                                     NICEvtProgramDmaFunction,
+                                     WdfDmaDirectionWriteToDevice
+                                     );
+        if(!NT_SUCCESS(status)) {
+            TraceEvents(
+                        TRACE_LEVEL_ERROR,
+                        DBG_WRITE, 
+                        "WdfDmaTransactionInitalizeUsingRequest failed %X\n", 
+                        status
+                        );
+            break;
+        }
+
+        status = WdfDmaTransactionExecute(
+                                          dmaTransaction,
+                                          dmaTransaction
+                                          );
+
+        if(!NT_SUCCESS(status)) {
+            TraceEvents(
+                        TRACE_LEVEL_ERROR,
+                        DBG_WRITE, 
+                        "WdfDmaTransactionExecute failed %X\n",
+                        status
+                        );
+            break;
+        }
+    } while (FALSE);
+
+    if(!NT_SUCCESS(status)){
+ 
+        if(bCreated) {
+            WdfObjectDelete(dmaTransaction);
+        }
+    }
+    return status;
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -168,23 +249,41 @@ For more information about DMA transactions, see <a href="https://msdn.microsoft
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetimmediateexecution.md">WdfDmaTransactionSetImmediateExecution</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
+
+
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength.md">WdfDmaTransactionDmaCompletedWithLength</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedfinal.md">WdfDmaTransactionDmaCompletedFinal</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md">WdfDmaEnablerSetMaximumScatterGatherElements</a>
+
+
 
 <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a>
 
+
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength.md">WdfDmaTransactionDmaCompletedWithLength</a>
+
+
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetimmediateexecution.md">WdfDmaTransactionSetImmediateExecution</a>
+
+
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
+
+
+
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md">WdfDmaEnablerSetMaximumScatterGatherElements</a>
+
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedfinal.md">WdfDmaTransactionDmaCompletedFinal</a>
+
+
 
  
 

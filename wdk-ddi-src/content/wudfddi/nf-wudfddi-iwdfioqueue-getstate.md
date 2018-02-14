@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 42dc9bbe-b00d-4187-ab07-0c268a061298
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFIoQueue, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml, umdf.iwdfioqueue_getstate, GetState method, GetState, wudfddi/IWDFIoQueue::GetState, wdf.iwdfioqueue_getstate, IWDFIoQueue interface, GetState method, GetState method, IWDFIoQueue interface, IWDFIoQueue::GetState
+ms.keywords: IWDFIoQueue interface, GetState method, IWDFIoQueue::GetState, umdf.iwdfioqueue_getstate, wudfddi/IWDFIoQueue::GetState, GetState method, IWDFIoQueue interface, IWDFIoQueue, wdf.iwdfioqueue_getstate, GetState, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml, GetState method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -90,9 +90,13 @@ The total number of requests that are associated with the I/O queue is the sum o
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
 
  
 

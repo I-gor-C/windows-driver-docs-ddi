@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CreateOverlay</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -152,7 +153,11 @@ Overlays are independent from the resources that are displayed by using the over
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createoverlay.md">D3DDDIARG_CREATEOVERLAY</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
 
  
 

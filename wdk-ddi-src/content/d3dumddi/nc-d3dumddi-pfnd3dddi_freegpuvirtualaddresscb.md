@@ -94,11 +94,19 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_deallocatecb.md">pfnDeallocateCb</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_freegpuvirtualaddress.md">D3DDDICB_FREEGPUVIRTUALADDRESS</a>
+
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>
 
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
+
+
 
  
 

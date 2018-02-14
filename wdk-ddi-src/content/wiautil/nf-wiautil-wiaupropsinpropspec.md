@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: c376297a-11a6-4e9f-b551-36a573cdb7e0
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiautil/wiauPropsInPropSpec, image.wiaupropsinpropspec, wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml, wiauPropsInPropSpec function [Imaging Devices], wiauPropsInPropSpec
+ms.keywords: wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml, wiauPropsInPropSpec, wiauPropsInPropSpec function [Imaging Devices], image.wiaupropsinpropspec, wiautil/wiauPropsInPropSpec
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,6 +97,8 @@ The <b>wiauPropsInPropSpec</b> function finds one or more property specification
 ## See Also
 
 <a href="..\wiautil\nf-wiautil-wiaupropinpropspec.md">wiauPropInPropSpec</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 05c82973-86f9-44f9-8df2-1fc84c8be975
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSPIN_DESCRIPTOR_EX structure pointer [Streaming Media Devices], KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE, KSPIN_FLAG_DO_NOT_USE_STANDARD_TRANSPORT, KSPIN_FLAG_IMPLEMENT_CLOCK, KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING, stream.kspin_descriptor_ex, KSPIN_FLAG_INITIATE_PROCESSING_ON_EVERY_ARRIVAL, KSPIN_FLAG_HYPERCRITICAL_PROCESSING, KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_USE_STANDARD_TRANSPORT, KSPIN_FLAG_FIXED_FORMAT, KSPIN_FLAG_GENERATE_MAPPINGS, KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY, ks/KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_FRAMES_NOT_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_DISTINCT_TRAILING_EDGE, KSPIN_FLAG_SOME_FRAMES_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_SPLITTER, KSPIN_FLAG_DENY_USERMODE_ACCESS, *PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_ASYNCHRONOUS_PROCESSING, KSPIN_FLAG_CRITICAL_PROCESSING, avstruct_6a73afe1-d131-47fc-877b-1abff4a75833.xml, KSPIN_DESCRIPTOR_EX structure [Streaming Media Devices], KSPIN_FLAG_DISPATCH_LEVEL_PROCESSING, _KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_GENERATE_EOS_EVENTS, KSPIN_FLAG_ENFORCE_FIFO, PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_RENDERER, ks/PKSPIN_DESCRIPTOR_EX
+ms.keywords: KSPIN_FLAG_FRAMES_NOT_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_USE_STANDARD_TRANSPORT, KSPIN_FLAG_DO_NOT_USE_STANDARD_TRANSPORT, KSPIN_FLAG_INITIATE_PROCESSING_ON_EVERY_ARRIVAL, KSPIN_FLAG_GENERATE_MAPPINGS, KSPIN_FLAG_HYPERCRITICAL_PROCESSING, KSPIN_FLAG_RENDERER, KSPIN_FLAG_ENFORCE_FIFO, ks/PKSPIN_DESCRIPTOR_EX, ks/KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE, KSPIN_FLAG_DENY_USERMODE_ACCESS, KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_ASYNCHRONOUS_PROCESSING, _KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY, avstruct_6a73afe1-d131-47fc-877b-1abff4a75833.xml, *PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DISPATCH_LEVEL_PROCESSING, KSPIN_DESCRIPTOR_EX structure [Streaming Media Devices], KSPIN_FLAG_FIXED_FORMAT, KSPIN_FLAG_GENERATE_EOS_EVENTS, KSPIN_FLAG_SPLITTER, KSPIN_FLAG_IMPLEMENT_CLOCK, KSPIN_FLAG_DISTINCT_TRAILING_EDGE, PKSPIN_DESCRIPTOR_EX structure pointer [Streaming Media Devices], KSPIN_FLAG_CRITICAL_PROCESSING, stream.kspin_descriptor_ex, KSPIN_FLAG_SOME_FRAMES_REQUIRED_FOR_PROCESSING, PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSPIN_DESCRIPTOR_EX
 product: Windows
 targetos: Windows
-req.typenames: KSPIN_DESCRIPTOR_EX, *PKSPIN_DESCRIPTOR_EX
+req.typenames: "*PKSPIN_DESCRIPTOR_EX, KSPIN_DESCRIPTOR_EX"
 ---
 
 # _KSPIN_DESCRIPTOR_EX structure
@@ -64,7 +64,9 @@ typedef struct _KSPIN_DESCRIPTOR_EX {
 
 
 ## Remarks
-<div class="alert"><b>Note</b>    AMCap and Blink might not be able to find tuner and crossbar interfaces on your AVStream driver if the <b>InstancesNecessary</b> member of KSPIN_DESCRIPTOR_EX is set to zero for the analog video input pin. To fix this problem, set <b>InstancesNecessary</b> for this pin to one.</div><div> </div>Note that the allocator framing requirements of your pin may be ignored despite the fact that your allocator framing specifies that alignment or size is absolutely required to be a certain value. If your kernel-mode driver is connected to an upstream user-mode filter that allocates for it and the particular upstream filter's allocator does not understand framing requirements, this can happen (current particular examples include the MPEG-2 splitter).
+<div class="alert"><b>Note</b>    AMCap and Blink might not be able to find tuner and crossbar interfaces on your AVStream driver if the <b>InstancesNecessary</b> member of KSPIN_DESCRIPTOR_EX is set to zero for the analog video input pin. To fix this problem, set <b>InstancesNecessary</b> for this pin to one.</div>
+<div> </div>
+Note that the allocator framing requirements of your pin may be ignored despite the fact that your allocator framing specifies that alignment or size is absolutely required to be a certain value. If your kernel-mode driver is connected to an upstream user-mode filter that allocates for it and the particular upstream filter's allocator does not understand framing requirements, this can happen (current particular examples include the MPEG-2 splitter).
 
 Furthermore, if you specify KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING and the pin uses the standard transport mechanism, you must have a processing object. This means there must be some process dispatch provided (either at the filter level or at the pin level); even if this function is never called, it must be provided in this circumstance.
 
@@ -81,11 +83,19 @@ Furthermore, if you specify KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING and the pin us
 
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
 
-<a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>
+
 
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 
+
+
+<a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>
+
+
+
 <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a>
+
+
 
  
 

@@ -86,6 +86,8 @@ If the request succeeds, the HID class driver sets the <b>Status</b> field of <b
 
 <a href="..\hidsdi\nf-hidsdi-hidd_getnuminputbuffers.md">HidD_GetNumInputBuffers</a>
 
+
+
  
 
  

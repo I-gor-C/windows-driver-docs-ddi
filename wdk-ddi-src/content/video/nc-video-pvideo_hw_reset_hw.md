@@ -104,15 +104,25 @@ If <i>HwVidResetHw</i> cannot change the mode of the adapter by simply programmi
 
 ## See Also
 
-<a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a>
 
-<a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>
+
+
 
 <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>
 
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>
+
+<a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
+
+
+
+<a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
+
+
 
  
 

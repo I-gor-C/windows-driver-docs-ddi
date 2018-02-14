@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 55cbef36-dea7-4f7c-ac43-fb819b61a858
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ntddmmc/PFEATURE_DATA_DVD_PLUS_RW, structs-CD-ROM_8b49bf86-5e1a-42a3-9bb6-ba6afca60375.xml, *PFEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW structure [Storage Devices], FEATURE_DATA_DVD_PLUS_RW, PFEATURE_DATA_DVD_PLUS_RW structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_DVD_PLUS_RW, PFEATURE_DATA_DVD_PLUS_RW, storage.feature_data_dvd_plus_rw, _FEATURE_DATA_DVD_PLUS_RW
+ms.keywords: FEATURE_DATA_DVD_PLUS_RW structure [Storage Devices], storage.feature_data_dvd_plus_rw, PFEATURE_DATA_DVD_PLUS_RW, ntddmmc/PFEATURE_DATA_DVD_PLUS_RW, *PFEATURE_DATA_DVD_PLUS_RW, _FEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW, ntddmmc/FEATURE_DATA_DVD_PLUS_RW, PFEATURE_DATA_DVD_PLUS_RW structure pointer [Storage Devices], structs-CD-ROM_8b49bf86-5e1a-42a3-9bb6-ba6afca60375.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -100,9 +100,13 @@ This structure holds data for the feature named "DVD+RW" by the <i>SCSI Multimed
 
 ## See Also
 
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
+
+
 <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: F9E69501-4889-4A1B-8942-C6D4406474DE
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetPfns routine [Storage Devices], StorPortGetPfns, storport/StorPortGetPfns, storage.storportgetpfns
+ms.keywords: StorPortGetPfns, storport/StorPortGetPfns, storage.storportgetpfns, StorPortGetPfns routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,6 +95,7 @@ Specifies the byte offset within the initial page of the buffer described by the
 ## Return Value
 
 <b>StorPortGetPfns</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -150,11 +151,17 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj553718">StorPortGetDataInBufferMdl</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567093">StorPortGetOriginalMdl</a>
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj553718">StorPortGetDataInBufferMdl</a>
+
+
 
  
 

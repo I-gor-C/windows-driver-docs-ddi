@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: d829b203-8b7f-4504-a9ac-da1f91b3bbd6
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hidfunc_cbcd531f-dc4d-4a27-96bd-bfa3589af9a7.xml, HidP_GetLinkCollectionNodes routine [Human Input Devices], hid.hidp_getlinkcollectionnodes, hidpi/HidP_GetLinkCollectionNodes, HidP_GetLinkCollectionNodes
+ms.keywords: hidpi/HidP_GetLinkCollectionNodes, hidfunc_cbcd531f-dc4d-4a27-96bd-bfa3589af9a7.xml, HidP_GetLinkCollectionNodes, hid.hidp_getlinkcollectionnodes, HidP_GetLinkCollectionNodes routine [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ Pointer to the preparsed data of the top-level collection for which this routine
 ## Return Value
 
 <b>HidP_GetLinkCollectionNodes</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -124,13 +125,21 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
-<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
+
 
 <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
+
+
+
+<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
+
+
 
  
 

@@ -89,6 +89,8 @@ After setting the vertex shader declaration, all of the drawing operations use t
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
+
+
  
 
  

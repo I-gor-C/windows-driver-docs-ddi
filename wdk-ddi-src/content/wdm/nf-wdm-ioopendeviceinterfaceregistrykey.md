@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d9ca4b9d-dacc-4164-9198-a71a771b145b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoOpenDeviceInterfaceRegistryKey, k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, wdm/IoOpenDeviceInterfaceRegistryKey, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], kernel.ioopendeviceinterfaceregistrykey
+ms.keywords: IoOpenDeviceInterfaceRegistryKey, wdm/IoOpenDeviceInterfaceRegistryKey, kernel.ioopendeviceinterfaceregistrykey, k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ Pointer to a returned handle to the requested registry key if the call is succes
 ## Return Value
 
 <b>IoOpenDeviceInterfaceRegistryKey</b> returns STATUS_SUCCESS if the call was successful. Possible error return values include the following.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,13 +140,23 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 
 <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 
 <a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
 
 <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+
 
  
 

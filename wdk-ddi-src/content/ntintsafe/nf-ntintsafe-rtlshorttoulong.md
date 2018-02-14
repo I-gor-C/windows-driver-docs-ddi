@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: A69F7F0E-3A71-4F29-9B56-A9B34D112F6C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlShortToULong, kernel.rtlshorttoulong, ntintsafe/RtlShortToULong, RtlShortToULong function [Kernel-Mode Driver Architecture]
+ms.keywords: ntintsafe/RtlShortToULong, RtlShortToULong, RtlShortToULong function [Kernel-Mode Driver Architecture], kernel.rtlshorttoulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlShortToDWord
 </li>

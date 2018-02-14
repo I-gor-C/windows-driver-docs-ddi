@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2c8cb6bb-eb6b-4a2f-8d00-efb309273536
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_sendrpl, hbaapi/HBA_SendRPL, HBA_SendRPL, HBA_SendRPL routine [Storage Devices], fibreHBA_rtns_1b67cd99-3e8b-4667-a795-a3391b73e62c.xml
+ms.keywords: storage.hba_sendrpl, hbaapi/HBA_SendRPL, fibreHBA_rtns_1b67cd99-3e8b-4667-a795-a3391b73e62c.xml, HBA_SendRPL routine [Storage Devices], HBA_SendRPL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,6 +95,7 @@ TBD
 ## Return Value
 
 The <b>HBA_SendRPL</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendRPL</b> returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -159,7 +160,11 @@ Returned if an unspecified error occurred that prevented the execution of the RP
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+
 
  
 

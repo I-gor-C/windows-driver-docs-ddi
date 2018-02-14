@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: fcf2409a-aedf-4de3-ad17-7edbc810f7be
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugRegisters2::GetPseudoDescriptionWide, debugger.getpseudodescriptionwide, GetPseudoDescriptionWide method [Windows Debugging], GetPseudoDescriptionWide method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2, GetPseudoDescriptionWide, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescriptionWide method, dbgeng/IDebugRegisters2::GetPseudoDescriptionWide
+ms.keywords: IDebugRegisters2 interface [Windows Debugging], GetPseudoDescriptionWide method, IDebugRegisters2::GetPseudoDescriptionWide, GetPseudoDescriptionWide, dbgeng/IDebugRegisters2::GetPseudoDescriptionWide, GetPseudoDescriptionWide method [Windows Debugging], IDebugRegisters2, GetPseudoDescriptionWide method [Windows Debugging], IDebugRegisters2 interface, debugger.getpseudodescriptionwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -90,6 +90,7 @@ Receives the type ID of the type within the module returned in <i>TypeModule</i>
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -134,11 +135,17 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548206">GetPseudoIndexByName</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547957">GetNumberPseudoRegisters</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548206">GetPseudoIndexByName</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+
 
  
 

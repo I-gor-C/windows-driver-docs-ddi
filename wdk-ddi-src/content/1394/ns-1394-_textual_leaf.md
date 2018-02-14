@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 883c561c-0d1b-4a6c-946e-8ca567b12c9a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: IEEE.textual_leaf, TEXTUAL_LEAF structure [Buses], PTEXTUAL_LEAF structure pointer [Buses], PTEXTUAL_LEAF, _TEXTUAL_LEAF, 1394/TEXTUAL_LEAF, 1394/PTEXTUAL_LEAF, TEXTUAL_LEAF, *PTEXTUAL_LEAF, 1394stct_b63840e2-0a05-49e9-a533-9575f46af648.xml
+ms.keywords: PTEXTUAL_LEAF structure pointer [Buses], TEXTUAL_LEAF, _TEXTUAL_LEAF, PTEXTUAL_LEAF, IEEE.textual_leaf, 1394/PTEXTUAL_LEAF, *PTEXTUAL_LEAF, TEXTUAL_LEAF structure [Buses], 1394stct_b63840e2-0a05-49e9-a533-9575f46af648.xml, 1394/TEXTUAL_LEAF
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,6 +89,8 @@ Specifies which specification describes the meaning of the <b>TL_Language_ID</b>
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
+
+
 
  
 

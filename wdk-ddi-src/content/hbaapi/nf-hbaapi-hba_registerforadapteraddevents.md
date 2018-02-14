@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7395ccb8-2608-46ae-a378-987bd757761b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: hbaapi/HBA_RegisterForAdapterAddEvents, fibreHBA_rtns_d44e8303-9d14-4f36-830e-bca76a494dfd.xml, HBA_RegisterForAdapterAddEvents, HBA_RegisterForAdapterAddEvents routine [Storage Devices], storage.hba_registerforadapteraddevents
+ms.keywords: storage.hba_registerforadapteraddevents, HBA_RegisterForAdapterAddEvents, fibreHBA_rtns_d44e8303-9d14-4f36-830e-bca76a494dfd.xml, hbaapi/HBA_RegisterForAdapterAddEvents, HBA_RegisterForAdapterAddEvents routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,6 +75,7 @@ TBD
 ## Return Value
 
 The <b>HBA_RegisterForAdapterAddEvents</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, this member should have one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -120,9 +121,15 @@ When a new adapter is added to the system, an event of type HBA_EVENT_ADAPTER_AD
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a>
+
+
+
+<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+
+
 
  
 

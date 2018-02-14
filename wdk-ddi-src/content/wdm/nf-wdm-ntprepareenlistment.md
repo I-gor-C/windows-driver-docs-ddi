@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1597f27d-8d1e-445e-bc68-b7c151fd19d5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.zwprepareenlistment, ktm_ref_2da2ab5a-1353-4598-9413-35f6bfc8ee31.xml, wdm/NtPrepareEnlistment, NtPrepareEnlistment, ZwPrepareEnlistment routine [Kernel-Mode Driver Architecture], ZwPrepareEnlistment, wdm/ZwPrepareEnlistment
+ms.keywords: ZwPrepareEnlistment routine [Kernel-Mode Driver Architecture], ktm_ref_2da2ab5a-1353-4598-9413-35f6bfc8ee31.xml, ZwPrepareEnlistment, NtPrepareEnlistment, wdm/NtPrepareEnlistment, wdm/ZwPrepareEnlistment, kernel.zwprepareenlistment
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>ZwPrepareEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -143,7 +144,8 @@ The enlistment's transaction is not in a state that allows it to enter the prepa
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -174,13 +176,21 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
 
 <a href="..\wdm\nf-wdm-tmprepareenlistment.md">TmPrepareEnlistment</a>
 
+
+
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
+
 
  
 

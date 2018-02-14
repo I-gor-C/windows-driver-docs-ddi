@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D4C0009D-A9D0-4870-86C5-60DC9B5892BC
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PEP_ACPI_SPB_RESOURCE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_SPB_RESOURCE, 0 - Slave mode, pepfx/PEP_ACPI_SPB_RESOURCE, _PEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE, 1 - Consumer/producer mode, *PPEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE structure pointer [Kernel-Mode Driver Architecture], 2 to 7 - Reserved, kernel.pep_acpi_spb_resource, PPEP_ACPI_SPB_RESOURCE
+ms.keywords: "*PPEP_ACPI_SPB_RESOURCE, 1 - Consumer/producer mode, pepfx/PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE structure pointer [Kernel-Mode Driver Architecture], 2 to 7 - Reserved, PEP_ACPI_SPB_RESOURCE, 0 - Slave mode, _PEP_ACPI_SPB_RESOURCE, kernel.pep_acpi_spb_resource, pepfx/PEP_ACPI_SPB_RESOURCE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -84,6 +84,7 @@ A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE<
 `TypeSpecificFlags`
 
 Specifies the bit flags that are common to all serial bus connection types.
+
 <table>
 <tr>
 <th>Bit(s)</th>

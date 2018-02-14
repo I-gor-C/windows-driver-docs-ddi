@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 54e4d3b9-db9d-4844-938f-c8ca8819d182
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: ReadDebuggerData method [Windows Debugging], ReadDebuggerData method [Windows Debugging], IDebugDataSpaces3 interface, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadDebuggerData method, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces3::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces3 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces3::ReadDebuggerData, IDebugDataSpaces2::ReadDebuggerData, IDebugDataSpaces_618b8518-3e32-4518-8e4b-38f66484d554.xml, IDebugDataSpaces::ReadDebuggerData, dbgeng/IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces2 interface [Windows Debugging], ReadDebuggerData method, dbgeng/IDebugDataSpaces::ReadDebuggerData, debugger.readdebuggerdata, IDebugDataSpaces4, ReadDebuggerData, IDebugDataSpaces interface [Windows Debugging], ReadDebuggerData method, dbgeng/IDebugDataSpaces2::ReadDebuggerData
+ms.keywords: ReadDebuggerData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces2::ReadDebuggerData, dbgeng/IDebugDataSpaces2::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces, ReadDebuggerData, dbgeng/IDebugDataSpaces3::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_618b8518-3e32-4518-8e4b-38f66484d554.xml, dbgeng/IDebugDataSpaces::ReadDebuggerData, IDebugDataSpaces2 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces4::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces3, IDebugDataSpaces3::ReadDebuggerData, debugger.readdebuggerdata, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces::ReadDebuggerData, IDebugDataSpaces interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces3 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -66,6 +66,7 @@ HRESULT ReadDebuggerData(
 `Index`
 
 Specifies the index of the data to retrieve.  The following values are valid:
+
 <table>
 <tr>
 <th>Value</th>
@@ -1005,9 +1006,11 @@ Returns the status of the writer of the dump file.  This value is operating syst
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The following values are valid for Windows XP and later versions of Windows:
+
 <table>
 <tr>
 <th>Value</th>
@@ -1252,9 +1255,11 @@ ULONG64
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The following values are valid for Windows Server 2003 and later versions of Windows:
+
 <table>
 <tr>
 <th>Value</th>
@@ -1634,7 +1639,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 

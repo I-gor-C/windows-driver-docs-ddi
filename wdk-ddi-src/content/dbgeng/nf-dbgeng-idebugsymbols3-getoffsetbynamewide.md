@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 576193fc-756f-40fb-abdd-65c088687cb5
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetOffsetByNameWide, IDebugSymbols3 interface [Windows Debugging], GetOffsetByNameWide method, dbgeng/IDebugSymbols3::GetOffsetByNameWide, debugger.getoffsetbynamewide, GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3::GetOffsetByNameWide
+ms.keywords: GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetOffsetByNameWide, GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3::GetOffsetByNameWide, GetOffsetByNameWide, IDebugSymbols3 interface [Windows Debugging], GetOffsetByNameWide method, IDebugSymbols3, debugger.getoffsetbynamewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Receives the location in the target's memory address space of the base of the sy
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -129,9 +130,13 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 
  
 

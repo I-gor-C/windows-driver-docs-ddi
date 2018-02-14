@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0cfe3674-2261-44f5-a916-fb786bb25fe5
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks/KSEVENT_SET, ks-struct_f3a678ec-93b4-4b60-959a-ca750b4ac4c2.xml, KSEVENT_SET structure [Streaming Media Devices], KSEVENT_SET, *PKSEVENT_SET, PKSEVENT_SET structure pointer [Streaming Media Devices], PKSEVENT_SET, ks/PKSEVENT_SET, stream.ksevent_set
+ms.keywords: ks/PKSEVENT_SET, KSEVENT_SET structure [Streaming Media Devices], *PKSEVENT_SET, ks/KSEVENT_SET, KSEVENT_SET, stream.ksevent_set, ks-struct_f3a678ec-93b4-4b60-959a-ca750b4ac4c2.xml, PKSEVENT_SET, PKSEVENT_SET structure pointer [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,8 @@ Microsoft provides several system-defined kernel streaming event set GUIDs. Mini
 ## See Also
 
 <a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+
+
 
  
 

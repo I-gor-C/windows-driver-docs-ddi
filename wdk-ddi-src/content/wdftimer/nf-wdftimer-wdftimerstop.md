@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 394593f5-92eb-4f84-adbe-67e0e5320ff0
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdftimerstop, wdf.wdftimerstop, WdfTimerStop method, wdftimer/WdfTimerStop, WdfTimerStop, DFTimerObjectRef_6b433db6-e7a0-4521-961d-56c3de8a97ad.xml
+ms.keywords: kmdf.wdftimerstop, wdf.wdftimerstop, WdfTimerStop method, WdfTimerStop, wdftimer/WdfTimerStop, DFTimerObjectRef_6b433db6-e7a0-4521-961d-56c3de8a97ad.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,25 @@ Do not call <b>WdfTimerStop</b> from inside <a href="https://msdn.microsoft.com/
 
 For more information about framework timer objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-timers">Using Timers</a>.
 
+
+#### Examples
+
+The following code example stops a specified timer and waits for all of the driver's queued DPCs to execute.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfTimerStop(
+             timerHandle,
+             TRUE
+             );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -108,9 +127,15 @@ For more information about framework timer objects, see <a href="https://docs.mi
 
 <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
 
+
+
 <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
 
+
+
 <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
+
+
 
  
 

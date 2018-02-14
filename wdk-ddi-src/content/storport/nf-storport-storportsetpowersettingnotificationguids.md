@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: Adaptive Setting, storage.storportsetpowersettingnotificationguids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], HIPM/DIPM Setting, storport/StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids
+ms.keywords: StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], Adaptive Setting, storage.storportsetpowersettingnotificationguids, HIPM/DIPM Setting, storport/StorPortSetPowerSettingNotificationGuids
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,12 +72,12 @@ The number of GUIDs in the <i>Guid</i> array.
 
 An array of power setting GUIDs to register for notification. A typical use for registering these GUIDs is for SATA miniports to receive notifications for AHCI Link Power Management setting changes. The  AHCI Link Power Management settings defined by the Microsoft AHCI StorPort miniport driver are the following.
 
-Other miniports may define and register their own power setting GUIDs.
 
 
 #### HIPM/DIPM Setting (0b2d69d7-a2a1-449c-9680-f91c70521c60)
 
 Configures the link power management mode for disk and storage devices that are attached to the system through an AHCI interface.
+
 <table>
 <tr>
 <th>Index</th>
@@ -99,12 +99,15 @@ Configures the link power management mode for disk and storage devices that are 
 <td>HIPM and DIPM</td>
 <td>HIPM and Device-Initiated Power Management (DIPM) are used.</td>
 </tr>
-</table> 
+</table>
+ 
+
 
 
 #### Adaptive Setting (dab60367-53fe-4fbc-825e-521d069d2456)
 
 The period of AHCI link idle time before the link is put into a slumber state when HIPM or DIPM is enabled.
+
 <table>
 <tr>
 <th>Value</th>
@@ -123,11 +126,15 @@ The period of AHCI link idle time before the link is put into a slumber state wh
 <td>Maximum value in milliseconds (5 minutes).</td>
 </tr>
 </table>
+ 
+
+Other miniports may define and register their own power setting GUIDs.
 
 
 ## Return Value
 
 The <b>StorPortSetPowerSettingNotificationGuids</b> routine returns one of these status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -178,7 +185,11 @@ The AHCI Link Power management settings are part of the Disk Settings subgroup (
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
+
+
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+
+
 
  
 

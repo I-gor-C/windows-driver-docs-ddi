@@ -82,6 +82,8 @@ The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.co
 
 <a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>
 
+
+
  
 
  

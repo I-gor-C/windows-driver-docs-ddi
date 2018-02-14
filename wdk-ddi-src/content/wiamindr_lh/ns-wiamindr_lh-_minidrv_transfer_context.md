@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 26583873-4f84-4254-86c1-2063df85000c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.minidrv_transfer_context, wiastrct_36e477d2-73a8-41b7-af46-82fb7c6f0bca.xml, wiamindr_lh/MINIDRV_TRANSFER_CONTEXT, PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT structure [Imaging Devices], wiamindr_lh/PMINIDRV_TRANSFER_CONTEXT, _MINIDRV_TRANSFER_CONTEXT, PMINIDRV_TRANSFER_CONTEXT structure pointer [Imaging Devices], *PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT
+ms.keywords: wiamindr_lh/MINIDRV_TRANSFER_CONTEXT, *PMINIDRV_TRANSFER_CONTEXT, wiamindr_lh/PMINIDRV_TRANSFER_CONTEXT, _MINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT structure [Imaging Devices], wiastrct_36e477d2-73a8-41b7-af46-82fb7c6f0bca.xml, PMINIDRV_TRANSFER_CONTEXT, PMINIDRV_TRANSFER_CONTEXT structure pointer [Imaging Devices], image.minidrv_transfer_context, MINIDRV_TRANSFER_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	MINIDRV_TRANSFER_CONTEXT
 product: Windows
 targetos: Windows
-req.typenames: MINIDRV_TRANSFER_CONTEXT, *PMINIDRV_TRANSFER_CONTEXT
+req.typenames: "*PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT"
 req.product: Windows 10 or later.
 ---
 
@@ -203,6 +203,7 @@ Because the WIA service currently uses only the TYMED_FILE and TYMED_CALLBACK co
 The <b>hFile</b> member is reserved for use solely by the WIA service. Rather than using this member for file transfers, the minidriver should instead write the data to a buffer, and then call <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a> to complete the file transfer.
 
 The minidriver obtains values from specific common or scanner item properties to set the members shown in the following table:
+
 <table>
 <tr>
 <th rowspan="2">Member</th>
@@ -307,11 +308,13 @@ The minidriver obtains values from specific common or scanner item properties to
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Usually, the minidriver sets the preceding structure members directly from the values of the item properties. An application or the minidriver will have set the item properties earlier. The WIA service fills in its service context, using the property values. The driver can use the values stored in this context for quick reference.
 
 The WIA service sets the following structure members:
+
 <ul>
 <li>
 <b>hFile</b>
@@ -325,7 +328,9 @@ The WIA service sets the following structure members:
 <b>bClassDrvAllocBuf</b>
 
 </li>
-</ul>Either the minidriver or the <a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a> service library function sets the following structure members:
+</ul>
+Either the minidriver or the <a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a> service library function sets the following structure members:
+
 <ul>
 <li>
 <b>lImageSize</b>
@@ -343,7 +348,9 @@ The WIA service sets the following structure members:
 <b>cbWidthInBytes</b>
 
 </li>
-</ul>The following members of this structure are used in data transfer callbacks. The WIA service or the minidriver sets these members. In several cases, the value stored in <b>bClassDrvAllocBuf</b> determines whether the WIA service or the minidriver sets the member.
+</ul>
+The following members of this structure are used in data transfer callbacks. The WIA service or the minidriver sets these members. In several cases, the value stored in <b>bClassDrvAllocBuf</b> determines whether the WIA service or the minidriver sets the member.
+
 <table>
 <tr>
 <th>Member</th>
@@ -451,13 +458,21 @@ WIA service
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543946">IWiaMiniDrvCallBack::MiniDrvCallback</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>
+
+
 
 <a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543946">IWiaMiniDrvCallBack::MiniDrvCallback</a>
+
+
 
  
 

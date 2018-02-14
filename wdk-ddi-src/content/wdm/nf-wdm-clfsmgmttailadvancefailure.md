@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 21a2f593-716a-434a-922c-23544ddb0122
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsMgmtTailAdvanceFailure, wdm/ClfsMgmtTailAdvanceFailure, Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml, kernel.clfsmgmttailadvancefailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.clfsmgmttailadvancefailure, ClfsMgmtTailAdvanceFailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtTailAdvanceFailure, Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A value that indicates why the log's tail could not be advanced.
 ## Return Value
 
 The <b>ClfsMgmtTailAdvanceFailure</b> routine returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -131,6 +132,8 @@ The value of the <i>Reason</i> parameter is passed back to the client as the val
 ## See Also
 
 <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
+
+
 
  
 

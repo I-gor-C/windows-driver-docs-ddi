@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8e3126df-d081-4545-a5db-8637ee27f15b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "_STATUS_BLOCK, PSTATUS_BLOCK structure pointer [Display Devices], display.status_block, Video_Structs_90f8dc6a-a666-4976-bc71-edf43b31b6e4.xml, video/PSTATUS_BLOCK, STATUS_BLOCK, *PSTATUS_BLOCK, PSTATUS_BLOCK, STATUS_BLOCK structure [Display Devices], video/STATUS_BLOCK"
+ms.keywords: video/STATUS_BLOCK, STATUS_BLOCK, STATUS_BLOCK structure [Display Devices], Video_Structs_90f8dc6a-a666-4976-bc71-edf43b31b6e4.xml, *PSTATUS_BLOCK, PSTATUS_BLOCK structure pointer [Display Devices], display.status_block, PSTATUS_BLOCK, _STATUS_BLOCK, video/PSTATUS_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,7 +75,11 @@ Supplies additional information about the completed operation. The meaning of th
 
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
 
+
+
 <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
+
+
 
  
 

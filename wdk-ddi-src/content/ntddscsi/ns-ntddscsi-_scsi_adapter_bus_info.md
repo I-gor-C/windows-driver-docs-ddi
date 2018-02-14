@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 786d6813-a9f3-437e-9b41-d69e0fce9a4c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_SCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO, ntddscsi/PSCSI_ADAPTER_BUS_INFO, structs-scsibus_f21bd933-bcbc-48b5-8904-845712ce226f.xml, *PSCSI_ADAPTER_BUS_INFO, ntddscsi/SCSI_ADAPTER_BUS_INFO, PSCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO structure [Storage Devices], PSCSI_ADAPTER_BUS_INFO structure pointer [Storage Devices], storage.scsi_adapter_bus_info"
+ms.keywords: PSCSI_ADAPTER_BUS_INFO, ntddscsi/SCSI_ADAPTER_BUS_INFO, structs-scsibus_f21bd933-bcbc-48b5-8904-845712ce226f.xml, SCSI_ADAPTER_BUS_INFO structure [Storage Devices], PSCSI_ADAPTER_BUS_INFO structure pointer [Storage Devices], storage.scsi_adapter_bus_info, *PSCSI_ADAPTER_BUS_INFO, _SCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO, ntddscsi/PSCSI_ADAPTER_BUS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,6 +76,7 @@ Immediately following the array in <b>BusData</b> is the inquiry data for all of
 The inquiry data for each SCSI bus includes information about all of the logical units on that bus. Each logical unit's inquiry data is formatted in a structure of type <a href="..\ntddscsi\ns-ntddscsi-_scsi_inquiry_data.md">SCSI_INQUIRY_DATA</a>, and all of the SCSI_INQUIRY_DATA structures for a particular bus are linked together by the <b>NextInquiryDataOffset</b> member. There will be a separate list for each SCSI bus, and the <b>NextInquiryDataOffset</b> member of the last structure in each list contains a value of zero. 
 
 The following pseudocode example illustrates how to step through the SCSI buses on an HBA, and the logical units for each bus, reading and printing the inquiry data for each logical unit:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -115,7 +116,8 @@ PrintInquiryData(PCHAR  DataBuffer)
 }</pre>
 </td>
 </tr>
-</table></span></div>You must use <b>NextInquiryDataOffset</b> member to locate the inquiry data for next logical unit. Do not try to do this by pointer arithmetic. The positioning of each SCSI_INQUIRY_DATA structure is potentially different for each HBA miniport driver, because it depends on data alignment requirements.
+</table></span></div>
+You must use <b>NextInquiryDataOffset</b> member to locate the inquiry data for next logical unit. Do not try to do this by pointer arithmetic. The positioning of each SCSI_INQUIRY_DATA structure is potentially different for each HBA miniport driver, because it depends on data alignment requirements.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -124,11 +126,17 @@ PrintInquiryData(PCHAR  DataBuffer)
 
 ## See Also
 
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_inquiry_data.md">SCSI_INQUIRY_DATA</a>
+
+
+
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_bus_data.md">SCSI_BUS_DATA</a>
+
+
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_inquiry_data.md">IOCTL_SCSI_GET_INQUIRY_DATA</a>
 
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_inquiry_data.md">SCSI_INQUIRY_DATA</a>
+
 
  
 

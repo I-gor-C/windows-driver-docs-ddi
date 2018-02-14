@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: E7F9F8EF-3FDC-41D9-BB89-9EB93ED1A504
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pep_acpi_initialize_ioport_resource, pepfx/PEP_ACPI_INITIALIZE_IOPORT_RESOURCE, PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function [Kernel-Mode Driver Architecture], PEP_ACPI_INITIALIZE_IOPORT_RESOURCE
+ms.keywords: pepfx/PEP_ACPI_INITIALIZE_IOPORT_RESOURCE, kernel.pep_acpi_initialize_ioport_resource, PEP_ACPI_INITIALIZE_IOPORT_RESOURCE, PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PEP_ACPI_INITIALIZE_IOPORT_RESOURCE
 product: Windows
 targetos: Windows
-req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
+req.typenames: "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
 
@@ -105,6 +105,8 @@ This function does not return a value.
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_io_memory_resource.md">PEP_ACPI_IO_MEMORY_RESOURCE</a>
+
+
 
  
 

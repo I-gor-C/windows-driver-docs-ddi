@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 0bfb5119-2034-4e63-9fbe-e2ff42a352d6
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: spoolfnc_db4ec1e7-1368-4695-bae0-91fd5dcd8a1a.xml, *PMONITOR2, winsplp/PMONITOR2, winsplp/LPMONITOR2, PMONITOR2 structure pointer [Print Devices], MONITOR2 structure [Print Devices], LPMONITOR2, _MONITOR2, *LPMONITOR2, PMONITOR2, winsplp/MONITOR2, MONITOR2, print.monitor2, LPMONITOR2 structure pointer [Print Devices]
+ms.keywords: LPMONITOR2, winsplp/PMONITOR2, _MONITOR2, winsplp/MONITOR2, *PMONITOR2, MONITOR2, MONITOR2 structure [Print Devices], winsplp/LPMONITOR2, PMONITOR2 structure pointer [Print Devices], PMONITOR2, *LPMONITOR2, LPMONITOR2 structure pointer [Print Devices], spoolfnc_db4ec1e7-1368-4695-bae0-91fd5dcd8a1a.xml, print.monitor2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	MONITOR2
 product: Windows
 targetos: Windows
-req.typenames: "*PMONITOR2, *LPMONITOR2, MONITOR2"
+req.typenames: "*LPMONITOR2, MONITOR2, *PMONITOR2"
 req.product: Windows 10 or later.
 ---
 
@@ -255,7 +255,11 @@ If a function is not defined, its pointer must be <b>NULL</b>.
 
 <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
 
+
+
 <a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a>
+
+
 
  
 

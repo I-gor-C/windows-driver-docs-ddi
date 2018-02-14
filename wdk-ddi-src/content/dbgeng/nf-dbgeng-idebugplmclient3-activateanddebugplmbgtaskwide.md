@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 77358032-1777-46F4-BF16-5DFFAC15E672
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugPlmClient3 interface [Windows Debugging], ActivateAndDebugPlmBgTaskWide method, dbgeng/IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, ActivateAndDebugPlmBgTaskWide method [Windows Debugging], ActivateAndDebugPlmBgTaskWide method [Windows Debugging], IDebugPlmClient3 interface, ActivateAndDebugPlmBgTaskWide, debugger.idebugplmclient3_activateanddebugplmbgtaskwide, IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, IDebugPlmClient3
+ms.keywords: IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, IDebugPlmClient3, debugger.idebugplmclient3_activateanddebugplmbgtaskwide, dbgeng/IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, IDebugPlmClient3 interface [Windows Debugging], ActivateAndDebugPlmBgTaskWide method, ActivateAndDebugPlmBgTaskWide method [Windows Debugging], ActivateAndDebugPlmBgTaskWide method [Windows Debugging], IDebugPlmClient3 interface, ActivateAndDebugPlmBgTaskWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -89,6 +89,8 @@ If a debugger session is not already started, this method starts one.
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugplmclient3.md">IDebugPlmClient3</a>
+
+
 
  
 

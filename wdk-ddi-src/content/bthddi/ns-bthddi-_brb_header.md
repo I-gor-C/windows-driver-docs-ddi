@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c6da4cc9-294b-4cb7-80c8-8adee8d4c40b
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: BRB_HEADER structure [Bluetooth Devices], bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, _BRB_HEADER, bthddi/BRB_HEADER, bltooth.brb_header, BRB_HEADER
+ms.keywords: bthddi/BRB_HEADER, bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, _BRB_HEADER, BRB_HEADER, BRB_HEADER structure [Bluetooth Devices], bltooth.brb_header
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,6 +76,7 @@ For internal use only. Do not use.
 The Bluetooth status code (BTSTATUS) that corresponds to the NTSTATUS code that is passed in the 
      <b>Status</b> member. Possible values include:
      
+
 <ul>
 <li>BTH_ERROR_SUCCESS</li>
 <li>BTH_ERROR_ACL_CONNECTION_ALREADY_EXISTS</li>
@@ -158,6 +159,7 @@ The Bluetooth request block type. The
      <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
      member.Possible values include:
      
+
 <ul>
 <li>BRB_HCI_GET_LOCAL_BD_ADDR</li>
 <li>BRB_L2CA_REGISTER_SERVER</li>
@@ -207,9 +209,15 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
 
 <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
 
-<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+
 
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
+
+
+
+<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+
+
 
  
 

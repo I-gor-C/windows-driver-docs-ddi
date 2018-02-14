@@ -86,7 +86,11 @@ The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.co
 
 <a href="..\ntddser\ns-ntddser-_serial_handflow.md">SERIAL_HANDFLOW</a>
 
+
+
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a>
+
+
 
  
 

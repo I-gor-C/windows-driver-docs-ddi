@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 7e7778ba-cf4f-44e8-91ce-c53458d3db9a
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KSM_BDA_PIN structure [Streaming Media Devices], KSM_BDA_PIN, bdamedia/PKSM_BDA_PIN, PKSM_BDA_PIN, stream.ksm_bda_pin, PKSM_BDA_PIN structure pointer [Streaming Media Devices], bdaref_190ab329-704e-472a-926c-1aa04d4b6df5.xml, _KSM_BDA_PIN, *PKSM_BDA_PIN, bdamedia/KSM_BDA_PIN
+ms.keywords: KSM_BDA_PIN, PKSM_BDA_PIN structure pointer [Streaming Media Devices], PKSM_BDA_PIN, _KSM_BDA_PIN, bdamedia/KSM_BDA_PIN, bdamedia/PKSM_BDA_PIN, *PKSM_BDA_PIN, stream.ksm_bda_pin, bdaref_190ab329-704e-472a-926c-1aa04d4b6df5.xml, KSM_BDA_PIN structure [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -78,6 +78,8 @@ Reserved.
 ## See Also
 
 <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
+
 
  
 

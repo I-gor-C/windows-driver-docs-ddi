@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 5ED8DC18-75B8-40EB-B7D2-6F8597BCEBF9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB.spb_transfer_list_entry_init_non_paged, spb/SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED, SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED function [Buses], SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED
+ms.keywords: SPB.spb_transfer_list_entry_init_non_paged, SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED, spb/SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED, SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED function [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,11 +98,17 @@ This initialization function returns an unnamed local variable of type <b>SPB_TR
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406216">SPB_TRANSFER_BUFFER_FORMAT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406217">SPB_TRANSFER_BUFFER_LIST_ENTRY</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406216">SPB_TRANSFER_BUFFER_FORMAT</a>
+
+
 
  
 

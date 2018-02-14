@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 5e1b37f2-f567-4c03-b0f4-cc1dbd568907
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSPROPERTY_TUNER_STATUS_S, vidcapstruct_a36247d8-99d7-4dad-8632-5feb685616d6.xml, *PKSPROPERTY_TUNER_STATUS_S, KSPROPERTY_TUNER_STATUS_S, ksmedia/KSPROPERTY_TUNER_STATUS_S, PKSPROPERTY_TUNER_STATUS_S structure pointer [Streaming Media Devices], KSPROPERTY_TUNER_STATUS_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_STATUS_S, stream.ksproperty_tuner_status_s
+ms.keywords: KSPROPERTY_TUNER_STATUS_S, KSPROPERTY_TUNER_STATUS_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_STATUS_S, PKSPROPERTY_TUNER_STATUS_S, ksmedia/PKSPROPERTY_TUNER_STATUS_S, *PKSPROPERTY_TUNER_STATUS_S, stream.ksproperty_tuner_status_s, vidcapstruct_a36247d8-99d7-4dad-8632-5feb685616d6.xml, PKSPROPERTY_TUNER_STATUS_S structure pointer [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSPROPERTY_TUNER_STATUS_S
 product: Windows
 targetos: Windows
-req.typenames: KSPROPERTY_TUNER_STATUS_S, *PKSPROPERTY_TUNER_STATUS_S
+req.typenames: "*PKSPROPERTY_TUNER_STATUS_S, KSPROPERTY_TUNER_STATUS_S"
 ---
 
 # KSPROPERTY_TUNER_STATUS_S structure
@@ -71,6 +71,7 @@ Specifies the current tuner frequency. This value is in hertz (Hz).
 `PLLOffset`
 
 Specifies the phase locked loop (PLL) offset in multiples of the tuning granularity. This is used if the tuner strategy is KS_TUNER_STRATEGY_PLL. If the tuner strategy is not KS_TUNER_STRATEGY_PLL, this value has no meaning. The following table demonstrates the value to be returned by the minidriver for various tuning conditions, assuming the tuning granularity is 62.5kHz:
+
 <table>
 <tr>
 <th>Frequency Offset</th>
@@ -135,6 +136,7 @@ Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPER
 `SignalStrength`
 
 Specifies the amplitude of the signal. This is used if the tuner strategy is KS_TUNER_STRATEGY_SIGNAL_STRENGTH. Regardless of the tuning strategy supported by the minidriver, the valid values for this member are:
+
 <table>
 <tr>
 <th>Value</th>
@@ -182,11 +184,17 @@ For more information about the <b>PLLOffset</b> and <b>SignalStrength</b> member
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565921">KSPROPERTY_TUNER_STATUS</a>
-
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565921">KSPROPERTY_TUNER_STATUS</a>
+
+
 
  
 

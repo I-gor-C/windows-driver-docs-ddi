@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 75417373-AA1B-4297-863A-00EA97069573
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols3 interface [Windows Debugging], SetScopeFromJitDebugInfo method, SetScopeFromJitDebugInfo, IDebugSymbols3, SetScopeFromJitDebugInfo method [Windows Debugging], IDebugSymbols3 interface, SetScopeFromJitDebugInfo method [Windows Debugging], IDebugSymbols3::SetScopeFromJitDebugInfo, dbgeng/IDebugSymbols3::SetScopeFromJitDebugInfo, debugger.idebugsymbols3_setscopefromjitdebuginfo
+ms.keywords: SetScopeFromJitDebugInfo, SetScopeFromJitDebugInfo method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetScopeFromJitDebugInfo, IDebugSymbols3, debugger.idebugsymbols3_setscopefromjitdebuginfo, IDebugSymbols3::SetScopeFromJitDebugInfo, SetScopeFromJitDebugInfo method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], SetScopeFromJitDebugInfo method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -88,6 +88,8 @@ This method is equivalent to '.jdinfo' command.
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
  
 

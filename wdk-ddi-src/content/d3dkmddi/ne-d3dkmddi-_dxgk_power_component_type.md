@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: fe732082-5aa1-4265-a76a-bd2e5b733557
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "_DXGK_POWER_COMPONENT_TYPE, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR, d3dkmddi/DXGK_POWER_COMPONENT_ENGINE, DXGK_POWER_COMPONENT_ENGINE, d3dkmddi/DXGK_POWER_COMPONENT_MAX, d3dkmddi/DXGK_POWER_COMPONENT_OTHER, DXGK_POWER_COMPONENT_MONITOR, DXGK_POWER_COMPONENT_MAX, DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_MONITOR_REFRESH, DXGK_POWER_COMPONENT_OTHER, display.dxgk_power_component_type, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR_REFRESH, d3dkmddi/DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_TYPE enumeration [Display Devices]"
+ms.keywords: DXGK_POWER_COMPONENT_MONITOR, DXGK_POWER_COMPONENT_ENGINE, DXGK_POWER_COMPONENT_TYPE enumeration [Display Devices], d3dkmddi/DXGK_POWER_COMPONENT_MONITOR_REFRESH, DXGK_POWER_COMPONENT_MAX, d3dkmddi/DXGK_POWER_COMPONENT_MAX, d3dkmddi/DXGK_POWER_COMPONENT_ENGINE, d3dkmddi/DXGK_POWER_COMPONENT_TYPE, d3dkmddi/DXGK_POWER_COMPONENT_OTHER, _DXGK_POWER_COMPONENT_TYPE, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR, display.dxgk_power_component_type, DXGK_POWER_COMPONENT_OTHER, DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_MONITOR_REFRESH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -69,7 +69,9 @@ typedef enum _DXGK_POWER_COMPONENT_TYPE {
                 <tr>
                     <td>DXGK_POWER_COMPONENT_ENGINE</td>
                     <td>Indicates that the component is a  GPU engine.
-<div class="alert"><b>Note</b>  An engine can have only one power component assigned.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  An engine can have only one power component assigned.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>

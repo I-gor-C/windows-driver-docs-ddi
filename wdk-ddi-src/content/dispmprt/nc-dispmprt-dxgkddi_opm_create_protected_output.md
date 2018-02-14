@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiOPMCreateProtectedOutput
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -86,6 +86,7 @@ If <i>DxgkDdiOPMCreateProtectedOutput</i> fails, the value of the variable is un
 ## Return Value
 
 <i>DxgkDdiOPMCreateProtectedOutput</i> returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -161,15 +162,20 @@ The display miniport driver informs the operating system on how the frame buffer
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other error codes that are defined in Ntstatus.h.
 
 ## Remarks
 
 The following figure shows how the display miniport driver typically implements spanning mode.
-<img alt="Diagram illustrating spanning mode" src="images/opm_span.png"/>The following figure shows how the display miniport driver typically implements theater mode.
-<img alt="Diagram illustrating theater mode" src="images/opm_theater.png"/><i>DxgkDdiOPMCreateProtectedOutput</i> should be made pageable.
+
+<img alt="Diagram illustrating spanning mode" src="images/opm_span.png"/>
+The following figure shows how the display miniport driver typically implements theater mode.
+
+<img alt="Diagram illustrating theater mode" src="images/opm_theater.png"/>
+<i>DxgkDdiOPMCreateProtectedOutput</i> should be made pageable.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -180,21 +186,37 @@ The following figure shows how the display miniport driver typically implements 
 
 ## See Also
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_video_output_semantics.md">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_random_number.md">DxgkDdiOPMGetRandomNumber</a>
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
+
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMDestroyProtectedOutput</a>
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_random_number.md">DxgkDdiOPMGetRandomNumber</a>
+
+
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
+
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMDestroyProtectedOutput</a>
+
+
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_video_output_semantics.md">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>
+
+
 
  
 

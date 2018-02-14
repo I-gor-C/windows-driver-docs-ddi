@@ -73,6 +73,7 @@ HRESULT Pfnd3dddiDxvahdGetvideoprocessbltstateprivate(
 ## Return Value
 
 The <i>GetVideoProcessBltStatePrivate</i> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,6 +114,8 @@ The bitblt state data is successfully retrieved.
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_getvideoprocessbltstateprivate.md">D3DDDIARG_DXVAHD_GETVIDEOPROCESSBLTSTATEPRIVATE</a>
+
+
 
  
 

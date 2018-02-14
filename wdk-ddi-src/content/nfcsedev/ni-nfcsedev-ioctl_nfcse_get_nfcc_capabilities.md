@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_NFCSE_GET_NFCC_CAPABILITIES
 product: Windows
 targetos: Windows
-req.typenames: "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_GET_NFCC_CAPABILITIES IOCTL
@@ -70,6 +70,7 @@ sizeof(SECURE_ELEMENT_NFCC_CAPABILITIES)
 
 ### Status Block
 <b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+
 <table>
 <tr>
 <th>Return Code</th>

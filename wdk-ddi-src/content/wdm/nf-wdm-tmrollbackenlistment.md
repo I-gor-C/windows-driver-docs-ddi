@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1f089f2c-73e2-4c77-a398-0d369aafdf3a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/TmRollbackEnlistment, kernel.tmrollbackenlistment, ktm_ref_adca7b83-77e1-4c1d-9ed8-aac2c713d43c.xml, TmRollbackEnlistment routine [Kernel-Mode Driver Architecture], TmRollbackEnlistment
+ms.keywords: TmRollbackEnlistment routine [Kernel-Mode Driver Architecture], ktm_ref_adca7b83-77e1-4c1d-9ed8-aac2c713d43c.xml, wdm/TmRollbackEnlistment, kernel.tmrollbackenlistment, TmRollbackEnlistment
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,6 +73,7 @@ A pointer to a <a href="https://msdn.microsoft.com/de01b0f1-86b1-4e7d-af22-84dbb
 ## Return Value
 
 <b>TmRollbackEnlistment</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return the following value: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -89,7 +90,8 @@ The enlistment cannot be rolled back.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -111,17 +113,29 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-
 <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
+
 
 <a href="..\wdm\nf-wdm-zwrollbackenlistment.md">ZwRollbackEnlistment</a>
 
+
+
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
+
+
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+
+
 
  
 

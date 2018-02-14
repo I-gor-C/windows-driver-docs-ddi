@@ -7,8 +7,8 @@ old-location: audio\hdaudio_codec_response.htm
 old-project: audio
 ms.assetid: 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], hdaudio/HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE structure [Audio Devices], aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml, PHDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE, _HDAUDIO_CODEC_RESPONSE, hdaudio/PHDAUDIO_CODEC_RESPONSE, audio.hdaudio_codec_response, HDAUDIO_CODEC_RESPONSE
+ms.date: 2/8/2018
+ms.keywords: hdaudio/HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE, aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml, PHDAUDIO_CODEC_RESPONSE, _HDAUDIO_CODEC_RESPONSE, hdaudio/PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], HDAUDIO_CODEC_RESPONSE structure [Audio Devices], audio.hdaudio_codec_response, *PHDAUDIO_CODEC_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,7 @@ The callback for the <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md"
 Most members of this structure contain hardware-generated values that the bus driver copies directly from the corresponding RIRB entry. The two exceptions are the values of the <b>IsValid</b> and <b>HasFifoOverrun</b> members, which the bus driver software writes to the structure to indicate the error status of the response. For information about the RIRB entry format, see the Intel High Definition Audio Specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=42508">Intel HD Audio</a> website.
 
 If <b>IsValid</b>=0, one of the following has occurred:
+
 <ul>
 <li>
 If <b>HasFifoOverrun</b>=1, the RIRB FIFO overflowed.
@@ -90,7 +91,8 @@ If <b>HasFifoOverrun</b>=1, the RIRB FIFO overflowed.
 If <b>HasFifoOverrun</b>=0, the codec failed to respond.
 
 </li>
-</ul>The unnamed 25-bitfield between the <b>UnsolicitedResponse</b> and <b>HasFifoOverrun</b> members is reserved for future expansion. The HD Audio bus controller currently writes zeros to this field.
+</ul>
+The unnamed 25-bitfield between the <b>UnsolicitedResponse</b> and <b>HasFifoOverrun</b> members is reserved for future expansion. The HD Audio bus controller currently writes zeros to this field.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,14 +101,20 @@ If <b>HasFifoOverrun</b>=0, the codec failed to respond.
 
 ## See Also
 
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a>
+
+
+
 <a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a>
+
+
 
 <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
 
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a>
+
 
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_CODEC_RESPONSE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20HDAUDIO_CODEC_RESPONSE structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

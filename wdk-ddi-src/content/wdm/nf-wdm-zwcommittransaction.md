@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 145646f3-ff90-41d6-bf76-947cdf93b489
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.zwcommittransaction, ktm_ref_bb49aa00-dbb3-4533-83c1-1cfc56073d8a.xml, NtCommitTransaction, ZwCommitTransaction, wdm/ZwCommitTransaction, wdm/NtCommitTransaction, ZwCommitTransaction routine [Kernel-Mode Driver Architecture]
+ms.keywords: ZwCommitTransaction, ZwCommitTransaction routine [Kernel-Mode Driver Architecture], wdm/ZwCommitTransaction, NtCommitTransaction, ktm_ref_bb49aa00-dbb3-4533-83c1-1cfc56073d8a.xml, wdm/NtCommitTransaction, kernel.zwcommittransaction
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A Boolean value that the caller sets to <b>TRUE</b> for synchronous operation or
 ## Return Value
 
 <b>ZwCommitTransaction</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -167,7 +168,8 @@ Commit notifications have been queued to resource managers, and the caller speci
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -192,13 +194,21 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
 
 <a href="..\wdm\nf-wdm-tmcommittransaction.md">TmCommitTransaction</a>
 
+
+
 <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
+
+
 
  
 

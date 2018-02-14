@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: C7442A59-6D7C-4551-B0E4-F1E8A5BEB4B7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SERCX_CONFIG_INIT, 1/SERCX_CONFIG_INIT, serports.sercx_config_init, SERCX_CONFIG_INIT function [Serial Ports]
+ms.keywords: SERCX_CONFIG_INIT, SERCX_CONFIG_INIT function [Serial Ports], 1/SERCX_CONFIG_INIT, serports.sercx_config_init
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,8 @@ None.
 ## See Also
 
 <a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a>
+
+
 
  
 

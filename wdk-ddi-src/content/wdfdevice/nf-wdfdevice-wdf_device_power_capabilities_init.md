@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 1a4b2708-efe2-47c0-b5b7-4e56f33e0266
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WDF_DEVICE_POWER_CAPABILITIES_INIT, kmdf.wdf_device_power_capabilities_init, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES_INIT, wdf.wdf_device_power_capabilities_init, DFDeviceObjectGeneralRef_888be612-b20f-427f-a098-e6b0f73f8704.xml, WDF_DEVICE_POWER_CAPABILITIES_INIT function
+ms.keywords: DFDeviceObjectGeneralRef_888be612-b20f-427f-a098-e6b0f73f8704.xml, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES_INIT, kmdf.wdf_device_power_capabilities_init, WDF_DEVICE_POWER_CAPABILITIES_INIT function, WDF_DEVICE_POWER_CAPABILITIES_INIT, wdf.wdf_device_power_capabilities_init
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ None
 ## Remarks
 
 The <b>WDF_DEVICE_POWER_CAPABILITIES_INIT</b> function zeros the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_capabilities.md">WDF_DEVICE_POWER_CAPABILITIES</a> structure and sets the structure's <b>Size</b> member. Then, it does the following:
+
 <ul>
 <li>
 Sets the <b>DeviceD1</b> and <b>DeviceD2</b> members to <b>WdfUseDefault</b>.
@@ -97,7 +98,8 @@ Sets the <b>D1Latency</b>, <b>D2Latency</b>, and <b>D3Latency</b> members to -1.
 Sets the <b>IdealDxStateForSx</b> member to <b>PowerDeviceMaximum</b>.
 
 </li>
-</ul>For a code example that uses <b>WDF_DEVICE_POWER_CAPABILITIES_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>.
+</ul>
+For a code example that uses <b>WDF_DEVICE_POWER_CAPABILITIES_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,6 +113,8 @@ Sets the <b>IdealDxStateForSx</b> member to <b>PowerDeviceMaximum</b>.
 ## See Also
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_capabilities.md">WDF_DEVICE_POWER_CAPABILITIES</a>
+
+
 
  
 

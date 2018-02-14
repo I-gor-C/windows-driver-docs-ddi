@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtIhvProcessSessionChange
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -68,6 +68,7 @@ DWORD Dot11extihvProcessSessionChange(
 
 The type of event. This parameter can have one of the following values.
      
+
 <table>
 <tr>
 <th>Value</th>

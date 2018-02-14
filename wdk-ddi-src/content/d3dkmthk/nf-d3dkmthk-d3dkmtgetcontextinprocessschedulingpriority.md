@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e2a662b6-6a16-4e63-b5a8-5701a7180f60
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTGetContextInProcessSchedulingPriority, D3DKMTGetContextInProcessSchedulingPriority, display.d3dkmtgetcontextinprocessschedulingpriority, D3DKMTGetContextInProcessSchedulingPriority function [Display Devices]
+ms.keywords: display.d3dkmtgetcontextinprocessschedulingpriority, D3DKMTGetContextInProcessSchedulingPriority, D3DKMTGetContextInProcessSchedulingPriority function [Display Devices], d3dkmthk/D3DKMTGetContextInProcessSchedulingPriority
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -62,6 +62,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -89,7 +90,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -104,9 +106,13 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getcontextinprocessschedulingpriority.md">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
+
+
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetcontextinprocessschedulingpriority.md">D3DKMTSetContextInProcessSchedulingPriority</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getcontextinprocessschedulingpriority.md">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
+
 
  
 

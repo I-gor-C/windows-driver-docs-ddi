@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_NFP_GET_MAX_MESSAGE_BYTES
 product: Windows
 targetos: Windows
-req.typenames: "*PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO"
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_GET_MAX_MESSAGE_BYTES IOCTL
@@ -69,7 +69,9 @@ One <b>INT32</b> value that defines the maximum message size supported by the pr
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## Remarks
@@ -102,9 +104,13 @@ When this IOCTL is received, the driver MUST copy the maximum message size into 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
+
+
+
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) overall design guide</a>
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: dc68f6d8-a2d5-4940-a708-fe761c3a8a0d
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KSDEVICE_DESCRIPTOR structure [Streaming Media Devices], avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml, _KSDEVICE_DESCRIPTOR, ks/PKSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR, ks/KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR, stream.ksdevice_descriptor, PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], KSDEVICE_DESCRIPTOR
+ms.keywords: PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR, stream.ksdevice_descriptor, ks/KSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR structure [Streaming Media Devices], _KSDEVICE_DESCRIPTOR, ks/PKSDEVICE_DESCRIPTOR, avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSDEVICE_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: "*PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR"
+req.typenames: KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR
 ---
 
 # _KSDEVICE_DESCRIPTOR structure
@@ -75,15 +75,25 @@ Similarly, using an earlier version descriptor on later versions of AVStream cau
 
 ## See Also
 
+<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
+
+
+
 <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
 
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+
 
 <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
 
-<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
+
 
 <a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
+
+
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+
+
 
  
 

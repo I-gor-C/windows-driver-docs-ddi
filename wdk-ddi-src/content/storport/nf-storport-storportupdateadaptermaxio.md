@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: BB18925D-ACFA-426D-ADD3-33C1D8A99396
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortUpdateAdapterMaxIO function [Storage Devices], storport/StorPortUpdateAdapterMaxIO, storage.storportupdateadaptermaxio, StorPortUpdateAdapterMaxIO
+ms.keywords: StorPortUpdateAdapterMaxIO, storport/StorPortUpdateAdapterMaxIO, StorPortUpdateAdapterMaxIO function [Storage Devices], storage.storportupdateadaptermaxio
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,6 +73,7 @@ Maximum IO's supported by the adapter.
 ## Return Value
 
 This function returns of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -108,6 +109,8 @@ This function returns of the following values.
 ## See Also
 
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HwInitialize</a>
+
+
 
  
 

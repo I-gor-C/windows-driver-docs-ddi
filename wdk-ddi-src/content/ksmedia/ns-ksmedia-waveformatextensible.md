@@ -7,8 +7,8 @@ old-location: audio\waveformatextensible.htm
 old-project: audio
 ms.assetid: 54bcb18e-df4b-471c-b121-4db75ce5c49b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: audio.waveformatextensible, ksmedia/PWAVEFORMATEXTENSIBLE, ksmedia/WAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE structure [Audio Devices], *PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE, aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices]
+ms.date: 2/8/2018
+ms.keywords: audio.waveformatextensible, WAVEFORMATEXTENSIBLE, ksmedia/PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices], WAVEFORMATEXTENSIBLE structure [Audio Devices], aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, ksmedia/WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	WAVEFORMATEXTENSIBLE
 product: Windows
 targetos: Windows
-req.typenames: "*PWAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE"
+req.typenames: WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE
 ---
 
 # WAVEFORMATEXTENSIBLE structure
@@ -87,6 +87,7 @@ Frequently, the <b>wValidBitsPerSample</b> member, which specifies the sample pr
 Sample containers begin and end on byte boundaries, and the value of <b>Format</b>.<b>wBitsPerSample</b> should always be a multiple of eight. Also, the value of <b>wValidBitsPerSample</b> should never exceed that of <b>Format</b>.<b>wBitsPerSample</b>. Drivers should reject wave formats that violate these rules.
 
 The WAVEFORMATEXTENSIBLE structure's <b>dwChannelMask</b> member contains a mask indicating which channels are present in the multichannel stream. The least-significant bit represents the front-left speaker, the next bit corresponds to the front-right speaker, and so on. The following flag bits are defined in the header file Ksmedia.h.
+
 <table>
 <tr>
 <th>Speaker position</th>
@@ -272,7 +273,8 @@ SPEAKER_TOP_BACK_RIGHT
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The channels that are specified in <b>dwChannelMask</b> should be present in the order shown in the preceding table, beginning at the top.
 
@@ -313,6 +315,7 @@ Before WAVEFORMATEXTENSIBLE was introduced in Windows 98 Second Edition, WAVEFOR
 With WAVEFORMATEXTENSIBLE, registering formats is no longer necessary. Vendors can independently assign <b>SubFormat</b> GUIDs to their new formats as needed. However, Microsoft lists some of the more popular <b>SubFormat</b> GUIDs in public header file Ksmedia.h. Before defining a new <b>SubFormat</b> GUID, vendors should check the list of KSDATAFORMAT_SUBTYPE_<i>Xxx</i> constants in Ksmedia.h to see if an appropriate GUID has already been defined for a particular format.
 
 For backward compatibility, any wave format that can be specified by a stand-alone WAVEFORMATEX structure can also be defined by a WAVEFORMATEXTENSIBLE structure. Thus, every format tag in Mmreg.h has a corresponding <b>SubFormat</b> GUID. The following table shows some typical format tags and their corresponding <b>SubFormat</b> GUIDs.
+
 <table>
 <tr>
 <th>Format tag</th>
@@ -378,7 +381,8 @@ KSDATAFORMAT_SUBTYPE_ADPCM
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information, see <a href="https://msdn.microsoft.com/299ad5d3-df62-41cf-a18f-daa83cc60ef3">Converting Between Format Tags and Subformat GUIDs</a>.
 
@@ -391,12 +395,16 @@ Because WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX, it can desc
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksaudio_channel_config.md">KSAUDIO_CHANNEL_CONFIG</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>
 
- 
+
+
+<a href="..\ksmedia\ns-ksmedia-ksaudio_channel_config.md">KSAUDIO_CHANNEL_CONFIG</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20WAVEFORMATEXTENSIBLE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20WAVEFORMATEXTENSIBLE structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

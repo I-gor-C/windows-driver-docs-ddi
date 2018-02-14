@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: c7bbba08-e9d0-4f78-93d8-e451e4dc2573
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: HwNProcessAddDevicePreDeviceCreate, hwnclx/HwNProcessAddDevicePreDeviceCreate, HwNProcessAddDevicePreDeviceCreate function, gpiobtn.hwnprocessadddevicepredevicecreate
+ms.keywords: HwNProcessAddDevicePreDeviceCreate function, HwNProcessAddDevicePreDeviceCreate, gpiobtn.hwnprocessadddevicepredevicecreate, hwnclx/HwNProcessAddDevicePreDeviceCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	HwNProcessAddDevicePreDeviceCreate
 product: Windows
 targetos: Windows
-req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
+req.typenames: "*PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX"
 ---
 
 
@@ -89,9 +89,13 @@ Returns STATUS_SUCCESS if function succeeds. Returns STATUS_INVALID_PARAMETER if
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
+
+
 <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
 
  
 

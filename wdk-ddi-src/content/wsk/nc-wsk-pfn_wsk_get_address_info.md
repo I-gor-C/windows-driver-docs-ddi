@@ -40,7 +40,7 @@ apiname:
 -	WskGetAddressInfo
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -113,25 +113,32 @@ NTSTATUS PfnWskGetAddressInfo(
 The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header. It is identical to the  
      <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
+
 <div class="alert"><b>Important</b>  The 
      Ws2def.h header file is automatically included in 
      Wsk.h. Do not use 
-     Ws2def.h directly.</div><div> </div>
+     Ws2def.h directly.</div>
+<div> </div>
 
 `*Result`
 
 [out] A pointer to a caller-allocated buffer that receives a linked list of one or more
      <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structures that represent response information about the host.
      
+
 <div class="alert"><b>Note</b>  The caller must call the 
      <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a> function to free
-     this pointer.</div><div> </div>The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
+     this pointer.</div>
+<div> </div>
+The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header. It is identical to the 
      <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
+
 <div class="alert"><b>Important</b>  The 
      Ws2def.h header file is automatically included in 
      Wsk.h. Do not use 
-     Ws2def.h directly.</div><div> </div>
+     Ws2def.h directly.</div>
+<div> </div>
 
 `OwningProcess`
 
@@ -167,6 +174,7 @@ If this parameter is not <b>NULL</b> and an impersonation token is in effect for
 ## Return Value
 
 <b>WskGetAddressInfo</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -252,13 +260,21 @@ The process to which the
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a>
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
 
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 74bfe9fb-f751-46a6-a95b-f715ebedd2ec
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/MmIsDriverVerifying, k106_50d610e1-b3ae-41c5-a696-13ab0cf314b6.xml, MmIsDriverVerifying, kernel.mmisdriververifying, MmIsDriverVerifying routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/MmIsDriverVerifying, MmIsDriverVerifying, kernel.mmisdriververifying, k106_50d610e1-b3ae-41c5-a696-13ab0cf314b6.xml, MmIsDriverVerifying routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,11 +89,17 @@ For example, if driver A has an import table through which it calls one or more 
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+
+
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+
+
 
 <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md">MmIsDriverVerifyingByAddress</a>
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
 
  
 

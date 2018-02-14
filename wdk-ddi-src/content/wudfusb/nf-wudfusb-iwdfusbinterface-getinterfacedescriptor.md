@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ae4cffc8-65db-452c-9b85-19752c32c421
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFUsbInterface, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor, GetInterfaceDescriptor, UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, IWDFUsbInterface::GetInterfaceDescriptor, umdf.iwdfusbinterface_getinterfacedescriptor, wdf.iwdfusbinterface_getinterfacedescriptor, IWDFUsbInterface interface, GetInterfaceDescriptor method, GetInterfaceDescriptor method, IWDFUsbInterface interface, GetInterfaceDescriptor method
+ms.keywords: UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, GetInterfaceDescriptor, IWDFUsbInterface interface, GetInterfaceDescriptor method, umdf.iwdfusbinterface_getinterfacedescriptor, IWDFUsbInterface, wdf.iwdfusbinterface_getinterfacedescriptor, IWDFUsbInterface::GetInterfaceDescriptor, GetInterfaceDescriptor method, GetInterfaceDescriptor method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IWDFUsbInterface.GetInterfaceDescriptor
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -87,9 +87,13 @@ For a code example of how to use the <b>GetInterfaceDescriptor</b> method, see <
 
 ## See Also
 
+<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560381">IWDFUsbTargetDevice::RetrieveUsbInterface</a>
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	*PSRIOV_QUERY_PROBED_BARS
 product: Windows
 targetos: Windows
-req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+req.typenames: "*PPARCLASS_INFORMATION, PARCLASS_INFORMATION"
 ---
 
 

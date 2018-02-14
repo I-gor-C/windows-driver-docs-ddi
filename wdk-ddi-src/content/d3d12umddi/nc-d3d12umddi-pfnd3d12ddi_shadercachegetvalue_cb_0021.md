@@ -113,6 +113,8 @@ Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a>
 
+
+
  
 
  

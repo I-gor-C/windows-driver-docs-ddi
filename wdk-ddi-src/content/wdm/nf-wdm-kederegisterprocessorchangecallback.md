@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 69b0f360-dfe5-4e1f-bdcb-0f908ed129a7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeDeregisterProcessorChangeCallback routine [Kernel-Mode Driver Architecture], k105_d3e135a0-4eca-4879-97cc-946ad22693db.xml, kernel.kederegisterprocessorchangecallback, KeDeregisterProcessorChangeCallback, wdm/KeDeregisterProcessorChangeCallback
+ms.keywords: kernel.kederegisterprocessorchangecallback, KeDeregisterProcessorChangeCallback routine [Kernel-Mode Driver Architecture], k105_d3e135a0-4eca-4879-97cc-946ad22693db.xml, wdm/KeDeregisterProcessorChangeCallback, KeDeregisterProcessorChangeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,8 @@ A device driver calls the <a href="..\wdm\nf-wdm-keregisterprocessorchangecallba
 ## See Also
 
 <a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
+
+
 
  
 

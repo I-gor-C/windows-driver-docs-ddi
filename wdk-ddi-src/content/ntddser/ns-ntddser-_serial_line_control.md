@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 2D11187E-B21B-4211-BAC0-248B93BAB6D5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: "*PSERIAL_LINE_CONTROL, ntddser/PSERIAL_LINE_CONTROL, serports.serial_line_control, PSERIAL_LINE_CONTROL structure pointer [Serial Ports], ntddser/SERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL structure [Serial Ports], PSERIAL_LINE_CONTROL, _SERIAL_LINE_CONTROL"
+ms.keywords: ntddser/SERIAL_LINE_CONTROL, *PSERIAL_LINE_CONTROL, _SERIAL_LINE_CONTROL, serports.serial_line_control, PSERIAL_LINE_CONTROL structure pointer [Serial Ports], ntddser/PSERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL structure [Serial Ports], SERIAL_LINE_CONTROL, PSERIAL_LINE_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -61,6 +61,7 @@ typedef struct _SERIAL_LINE_CONTROL {
 `Parity`
 
 The type of parity checking used for each character that is transmitted or received. This member is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -91,6 +92,7 @@ The type of parity checking used for each character that is transmitted or recei
 `StopBits`
 
 The number of stop bits used at the end of each character that is transmitted or received. This member is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -126,7 +128,11 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_li
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_line_control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a>
 
+
+
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
+
+
 
  
 

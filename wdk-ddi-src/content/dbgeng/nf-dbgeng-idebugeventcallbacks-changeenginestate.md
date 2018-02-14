@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 42ad993a-b12e-49ff-8a1f-f62e2ab968d3
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: ChangeEngineState method [Windows Debugging], IDebugEventCallbacks, IDebugEventCallbacks::ChangeEngineState, IDebugEventCallbacks interface [Windows Debugging], ChangeEngineState method, dbgeng/IDebugEventCallbacks::ChangeEngineState, ComCallbacks_fafc4238-0565-410b-9e00-1cbce74737f4.xml, ChangeEngineState method [Windows Debugging], IDebugEventCallbacks interface, debugger.idebugeventcallbacks_changeenginestate, ChangeEngineState
+ms.keywords: ChangeEngineState method [Windows Debugging], dbgeng/IDebugEventCallbacks::ChangeEngineState, ChangeEngineState, IDebugEventCallbacks, ComCallbacks_fafc4238-0565-410b-9e00-1cbce74737f4.xml, ChangeEngineState method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks::ChangeEngineState, IDebugEventCallbacks interface [Windows Debugging], ChangeEngineState method, debugger.idebugeventcallbacks_changeenginestate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -61,6 +61,7 @@ HRESULT ChangeEngineState(
 `Flags`
 
 Specifies a bit-set indicating the type of changes that occurred in the engine's state.  The following bit flags might be set:
+
 <table>
 <tr>
 <th>Value</th>
@@ -225,9 +226,11 @@ Provides additional information about the change to the engine's state.  If more
 
 
 
+
 #### DEBUG_CES_CURRENT_THREAD
 
 The value of <i>Argument</i> is the current engine thread ID or--if there is no current thread--DEBUG_ANY_ID.  For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
+
 
 
 #### DEBUG_CES_EFFECTIVE_PROCESSOR
@@ -235,9 +238,11 @@ The value of <i>Argument</i> is the current engine thread ID or--if there is no 
 The value of <i>Argument</i> is the type of the effective processor.
 
 
+
 #### DEBUG_CES_BREAKPOINTS
 
 The value of <i>Argument</i> is the breakpoint ID of the breakpoint that was changed or--if more than one breakpoint was changed--DEBUG_ANY_ID.  For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.
+
 
 
 #### DEBUG_CES_CODE_LEVEL
@@ -245,9 +250,11 @@ The value of <i>Argument</i> is the breakpoint ID of the breakpoint that was cha
 The value of <i>Argument</i> is the code interpretation level.
 
 
+
 #### DEBUG_CES_EXECUTION_STATUS
 
 The value of <i>Argument</i> is the execution status (as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> topic) possibly combined with the bit flag DEBUG_STATUS_INSIDE_WAIT. DEBUG_STATUS_INSIDE_WAIT is set when a <b>WaitForEvent</b> call is pending. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.
+
 
 
 #### DEBUG_CES_ENGINE_OPTIONS
@@ -255,9 +262,11 @@ The value of <i>Argument</i> is the execution status (as described in the <a hre
 The value of <i>Argument</i> is the engine options. 
 
 
+
 #### DEBUG_CES_LOG_FILE
 
 The value of <i>Argument</i> is <b>TRUE</b> if the log file was opened and <b>FALSE</b> if the log file was closed.
+
 
 
 #### DEBUG_CES_RADIX
@@ -265,9 +274,11 @@ The value of <i>Argument</i> is <b>TRUE</b> if the log file was opened and <b>FA
 The value of <i>Argument</i> is the default radix.
 
 
+
 #### DEBUG_CES_EVENT_FILTERS
 
 The value of <i>Argument</i> is the index of the event filter that was changed or--if more than one event filter was changed--DEBUG_ANY_ID.
+
 
 
 #### DEBUG_CES_PROCESS_OPTIONS
@@ -275,9 +286,11 @@ The value of <i>Argument</i> is the index of the event filter that was changed o
 The value of <i>Argument</i> is the process options for the current process.
 
 
+
 #### DEBUG_CES_EXTENSIONS
 
 The value of <i>Argument</i> is zero.
+
 
 
 #### DEBUG_CES_SYSTEMS
@@ -285,14 +298,17 @@ The value of <i>Argument</i> is zero.
 The value of <i>Argument</i> is the target ID of the target that was added or--if a target was removed--DEBUG_ANY_ID.
 
 
+
 #### DEBUG_CES_ASSEMBLE_OPTIONS
 
 The value of <i>Argument</i> is the assemble options.
 
 
+
 #### DEBUG_CES_EXPRESSION_SYNTAX
 
 The value of <i>Argument</i> is the default expression syntax.
+
 
 
 #### DEBUG_CES_TEXT_REPLACEMENTS

@@ -40,7 +40,7 @@ apiname:
 -	ComponentCriticalTransitionCallback
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -107,6 +107,8 @@ A PEP can call this routine at IRQL TBD.
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
+
+
 
  
 

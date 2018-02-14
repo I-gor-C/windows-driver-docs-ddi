@@ -103,6 +103,8 @@ The resources returned by <i>HwVidLegacyResources </i> are added to the list of 
 
 <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 
+
+
  
 
  

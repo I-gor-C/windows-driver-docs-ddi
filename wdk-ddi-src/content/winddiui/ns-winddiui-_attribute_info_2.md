@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: c5bb9943-ee5b-4128-9e5f-438971119e3a
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.attribute_info_2, PATTRIBUTE_INFO_2 structure pointer [Print Devices], ATTRIBUTE_INFO_2 structure [Print Devices], print_interface-graphics_681158ae-a9ad-40f6-a3de-c82cda7156e0.xml, _ATTRIBUTE_INFO_2, winddiui/PATTRIBUTE_INFO_2, *PATTRIBUTE_INFO_2, PATTRIBUTE_INFO_2, winddiui/ATTRIBUTE_INFO_2, ATTRIBUTE_INFO_2
+ms.keywords: ATTRIBUTE_INFO_2 structure [Print Devices], _ATTRIBUTE_INFO_2, print_interface-graphics_681158ae-a9ad-40f6-a3de-c82cda7156e0.xml, print.attribute_info_2, winddiui/PATTRIBUTE_INFO_2, winddiui/ATTRIBUTE_INFO_2, PATTRIBUTE_INFO_2 structure pointer [Print Devices], *PATTRIBUTE_INFO_2, ATTRIBUTE_INFO_2, PATTRIBUTE_INFO_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -67,6 +67,7 @@ typedef struct _ATTRIBUTE_INFO_2 {
 `dwColorOptimization`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -117,6 +118,7 @@ Number of document pages to be placed on one side of a physical page, as request
 `dwJobPageOrderFlags`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -157,6 +159,7 @@ Pages should be printed in reverse order: last page, next-to-last page, and so o
 `dwNupBorderFlags`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -200,9 +203,15 @@ For more information about other structure members, see <a href="..\winddiui\ns-
 
 <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
 
+
+
 <a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>
 
+
+
 <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
+
+
 
  
 

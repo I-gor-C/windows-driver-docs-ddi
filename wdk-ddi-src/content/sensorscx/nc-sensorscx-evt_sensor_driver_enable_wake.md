@@ -7,7 +7,7 @@ old-location: sensors\evt_sensor_driver_enable_wake.htm
 old-project: sensors
 ms.assetid: 969E08D1-0D4A-4FED-9722-4EDA067C522C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 2/8/2018
 ms.keywords: sensors.evt_sensor_driver_enable_wake, EVT_SENSOR_DRIVER_ENABLE_WAKE callback function [Sensor Devices], EVT_SENSOR_DRIVER_ENABLE_WAKE, sensorscx/EVT_SENSOR_DRIVER_ENABLE_WAKE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,9 @@ A reference to the sensor object
 ## Return Value
 
 This function returns STATUS_SUCCESS when completed successfully.
-<div class="alert"><b>Note</b>  The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.</div><div> </div>
+
+<div class="alert"><b>Note</b>  The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.</div>
+<div> </div>
 
 ## Remarks
 

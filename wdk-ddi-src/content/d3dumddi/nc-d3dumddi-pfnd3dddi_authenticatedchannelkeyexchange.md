@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>AuthenticatedChannelKeyExchange</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -119,6 +120,8 @@ The driver decrypts this secret key and uses the secret key in calls to the driv
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_authenticatedchannelkeyexchange.md">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 1bc6eed2-c6bd-448f-8f78-630cca4cd29a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFIoRequest interface, GetCreateParameters method, wdf.iwdfiorequest_getcreateparameters, IWDFIoRequest, umdf.iwdfiorequest_getcreateparameters, GetCreateParameters method, GetCreateParameters method, IWDFIoRequest interface, IWDFIoRequest::GetCreateParameters, wudfddi/IWDFIoRequest::GetCreateParameters, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, GetCreateParameters
+ms.keywords: GetCreateParameters method, IWDFIoRequest interface, umdf.iwdfiorequest_getcreateparameters, IWDFIoRequest interface, GetCreateParameters method, GetCreateParameters, IWDFIoRequest::GetCreateParameters, wdf.iwdfiorequest_getcreateparameters, wudfddi/IWDFIoRequest::GetCreateParameters, GetCreateParameters method, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, IWDFIoRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -105,9 +105,13 @@ Although the driver can optionally specify <b>NULL</b> for each of the <i>pOptio
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
 
  
 

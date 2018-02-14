@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9c86c753-dddf-488d-b332-4b79602c454a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: hbaapi/HBA_GetFC4Statistics, HBA_GetFC4Statistics routine [Storage Devices], HBA_GetFC4Statistics, storage.hba_getfc4statistics, fibreHBA_rtns_483a1f57-5e5b-4919-a61b-5853ffb5be6f.xml
+ms.keywords: storage.hba_getfc4statistics, HBA_GetFC4Statistics routine [Storage Devices], HBA_GetFC4Statistics, fibreHBA_rtns_483a1f57-5e5b-4919-a61b-5853ffb5be6f.xml, hbaapi/HBA_GetFC4Statistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,7 @@ TBD
 ## Return Value
 
 The <b>HBA_GetFC4Statistics</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_GetFC4Statistics</b> returns one of the following qualifiers.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -136,9 +137,15 @@ Statistics counters in <a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
 
 <a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC4Statistics</a>
+
+
+
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+
 
  
 

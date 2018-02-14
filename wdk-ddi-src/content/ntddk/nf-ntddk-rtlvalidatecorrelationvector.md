@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a73ab33b-3e8c-43d8-8547-1483bcd2af52
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlvalidatecorrelationvector, ntddk/RtlValidateCorrelationVector, RtlValidateCorrelationVector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.rtlvalidatecorrelationvector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture], RtlValidateCorrelationVector, ntddk/RtlValidateCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	RtlValidateCorrelationVector
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 Returns an NTSTATUS value that indicates the success of failure of the operation. 
+
 <table>
 <tr>
 <th>Return code</th>

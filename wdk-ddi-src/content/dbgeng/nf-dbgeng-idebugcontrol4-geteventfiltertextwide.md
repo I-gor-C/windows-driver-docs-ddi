@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 76b0d865-a620-4ced-904c-d1d613dbadd1
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl4, dbgeng/IDebugControl4::GetEventFilterTextWide, IDebugControl4 interface [Windows Debugging], GetEventFilterTextWide method, IDebugControl4::GetEventFilterTextWide, GetEventFilterTextWide, debugger.geteventfiltertextwide, GetEventFilterTextWide method [Windows Debugging], IDebugControl4 interface, GetEventFilterTextWide method [Windows Debugging]
+ms.keywords: GetEventFilterTextWide method [Windows Debugging], IDebugControl4 interface, GetEventFilterTextWide, IDebugControl4 interface [Windows Debugging], GetEventFilterTextWide method, dbgeng/IDebugControl4::GetEventFilterTextWide, GetEventFilterTextWide method [Windows Debugging], debugger.geteventfiltertextwide, IDebugControl4::GetEventFilterTextWide, IDebugControl4
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,6 +80,7 @@ Receives the size of the event description.  If <i>TextSize</i> is <b>NULL</b>, 
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -124,9 +125,15 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
 
+
+
 <a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
 
  
 

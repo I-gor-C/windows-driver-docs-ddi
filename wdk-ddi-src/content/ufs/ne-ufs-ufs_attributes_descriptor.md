@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ufs/UFS_bDeviceFFUStatus, UFS_Reserved02, ufs/UFS_bPSAState, UFS_bOutOfOrderDataEn, UFS_dPSADataSize, UFS_wContextConf, ufs/UFS_bActiveICCLevel, ufs/UFS_bMaxDataInSize, UFS_bMaxDataInSize, UFS_bCurrentPowerMode, storage.ufs_attributes_descriptor, ufs/UFS_dDynCapNeeded, ufs/UFS_bCurrentPowerMode, ufs/UFS_bMaxDataOutSize, UFS_ATTRIBUTES_DESCRIPTOR enumeration [Storage Devices], ufs/UFS_wContextConf, ufs/UFS_Reserved02, ufs/UFS_ATTRIBUTES_DESCRIPTOR, UFS_bActiveICCLevel, UFS_wExceptionEventControl, UFS_bBackgroundOpStatus, UFS_bRefClkFreq, ufs/UFS_bPurgeStatus, ufs/UFS_bBootLunEn, UFS_bMaxNumOfRTT, UFS_wExceptionEventStatus, ufs/UFS_wExceptionEventControl, ufs/UFS_Reserved03, ufs/UFS_dSecondsPassed, UFS_bPSAState, UFS_bMaxDataOutSize, ufs/UFS_bConfigDescrLock, UFS_Reserved01, UFS_Reserved03, UFS_ATTRIBUTES_DESCRIPTOR, UFS_dDynCapNeeded, ufs/UFS_bRefClkFreq, UFS_bPurgeStatus, UFS_bBootLunEn, ufs/UFS_Obsolete, ufs/UFS_bOutOfOrderDataEn, ufs/UFS_bMaxNumOfRTT, ufs/UFS_Reserved01, ufs/UFS_dPSADataSize, UFS_dSecondsPassed, ufs/UFS_bBackgroundOpStatus, UFS_Obsolete, UFS_bDeviceFFUStatus, ufs/UFS_wExceptionEventStatus, UFS_bConfigDescrLock
+ms.keywords: ufs/UFS_Reserved01, ufs/UFS_ATTRIBUTES_DESCRIPTOR, ufs/UFS_dDynCapNeeded, UFS_bBootLunEn, UFS_bCurrentPowerMode, ufs/UFS_bMaxDataOutSize, storage.ufs_attributes_descriptor, ufs/UFS_dSecondsPassed, UFS_wExceptionEventControl, UFS_Reserved02, UFS_dDynCapNeeded, UFS_bBackgroundOpStatus, UFS_Reserved01, ufs/UFS_bActiveICCLevel, UFS_wContextConf, ufs/UFS_bBootLunEn, UFS_bMaxDataOutSize, UFS_bPurgeStatus, ufs/UFS_bBackgroundOpStatus, UFS_bOutOfOrderDataEn, UFS_dSecondsPassed, ufs/UFS_bDeviceFFUStatus, UFS_bMaxNumOfRTT, UFS_wExceptionEventStatus, ufs/UFS_bMaxDataInSize, ufs/UFS_bConfigDescrLock, ufs/UFS_dPSADataSize, UFS_ATTRIBUTES_DESCRIPTOR enumeration [Storage Devices], ufs/UFS_bCurrentPowerMode, UFS_bConfigDescrLock, UFS_bActiveICCLevel, ufs/UFS_bPurgeStatus, ufs/UFS_wExceptionEventStatus, ufs/UFS_wExceptionEventControl, ufs/UFS_Obsolete, UFS_bDeviceFFUStatus, UFS_ATTRIBUTES_DESCRIPTOR, UFS_bPSAState, UFS_Reserved03, ufs/UFS_Reserved02, ufs/UFS_Reserved03, ufs/UFS_bOutOfOrderDataEn, ufs/UFS_wContextConf, ufs/UFS_bMaxNumOfRTT, UFS_bMaxDataInSize, UFS_bRefClkFreq, UFS_Obsolete, ufs/UFS_bRefClkFreq, UFS_dPSADataSize, ufs/UFS_bPSAState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -90,6 +90,7 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
                 <tr>
                     <td>UFS_bBackgroundOpStatus</td>
                     <td>Specifies if the device has a need for background operations. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -127,6 +128,7 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
                 <tr>
                     <td>UFS_bCurrentPowerMode</td>
                     <td>Indicates the current power mode. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -170,6 +172,7 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
                 <tr>
                     <td>UFS_bDeviceFFUStatus</td>
                     <td>Specifies the Device Field Firmware Update (FFU) status.
+
 <table>
 <tr>
 <th>Value</th>
@@ -235,6 +238,7 @@ enabled</td>
                 <tr>
                     <td>UFS_bPSAState</td>
                     <td>Specifies the current Product State Awareness (PSA) State.
+
 <table>
 <tr>
 <th>Value</th>
@@ -280,6 +284,7 @@ is locked after it is in
                 <tr>
                     <td>UFS_bRefClkFreq</td>
                     <td>Specifies the reference clock frequency value.
+
 <table>
 <tr>
 <th>Value</th>
@@ -360,6 +365,7 @@ the RESPONSE UPIU.</td>
 relevant event has occurred
 (regardless of the
 <b>UFS_wExceptionEventControl</b> status). Contains the following bits:
+
 <table>
 <tr>
 <th>Bit</th>
@@ -403,25 +409,45 @@ microcode activation event occurs.
 
     ## See Also
 
-        <a href="..\ufs\ns-ufs-ufs_device_descriptor.md">UFS_DEVICE_DESCRIPTOR</a>
+        <a href="..\ufs\ns-ufs-_ufs_string_descriptor.md">UFS_STRING_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_unit_descriptor.md">UFS_UNIT_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_device_health_descriptor.md">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
 
 <a href="..\ufs\ns-ufs-ufs_config_descriptor.md">UFS_CONFIG_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_interconnect_descriptor.md">UFS_INTERCONNECT_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_power_descriptor.md">UFS_POWER_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
+
+
 
 <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
 
+
+
+<a href="..\ufs\ns-ufs-ufs_device_descriptor.md">UFS_DEVICE_DESCRIPTOR</a>
+
+
+
+<a href="..\ufs\ns-ufs-ufs_unit_descriptor.md">UFS_UNIT_DESCRIPTOR</a>
+
+
+
+<a href="..\ufs\ns-ufs-ufs_device_health_descriptor.md">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
+
+
+
+<a href="..\ufs\ns-ufs-ufs_interconnect_descriptor.md">UFS_INTERCONNECT_DESCRIPTOR</a>
+
+
+
 <a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-_ufs_string_descriptor.md">UFS_STRING_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-ufs_power_descriptor.md">UFS_POWER_DESCRIPTOR</a>
+
+
 
  
 

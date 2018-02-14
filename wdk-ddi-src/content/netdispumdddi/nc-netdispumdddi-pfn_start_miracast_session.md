@@ -72,7 +72,9 @@ The operating system obtained the context when it called the Miracast user-mode 
 `MiracastRTSPSocket`
 
 The operating system-supplied network socket handle of the Real Time Streaming Protocol (RTSP). 
-<div class="alert"><b>Note</b>  The Miracast user-mode driver should not close this socket. When the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a> function is called, the operating system will close this socket.</div><div> </div>
+
+<div class="alert"><b>Note</b>  The Miracast user-mode driver should not close this socket. When the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a> function is called, the operating system will close this socket.</div>
+<div> </div>
 
 `*pWfdConnectionStats`
 
@@ -86,6 +88,7 @@ A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast_session_info.
 ## Return Value
 
 On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function returns an error code defined in the Ntstatus.h header, including the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -110,6 +113,13 @@ When this function is called, the Miracast user-mode driver should start communi
 
 The driver should also set the value of these members of <a href="..\netdispumdddi\ns-netdispumdddi-miracast_session_info.md">MIRACAST_SESSION_INFO</a> pointed to by <i>pSessionInfo</i> in these cases:
 
+
+
+
+#### Thread Safety
+
+The operating system guarantees that only one of the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>, <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>, <i>StartMiracastSession</i>, and <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a> functions is called at a time.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -119,15 +129,25 @@ The driver should also set the value of these members of <a href="..\netdispumdd
 
 ## See Also
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast_wfd_connection_stats.md">MIRACAST_WFD_CONNECTION_STATS</a>
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+
 
 <a href="..\netdispumdddi\ns-netdispumdddi-miracast_session_info.md">MIRACAST_SESSION_INFO</a>
 
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_wfd_connection_stats.md">MIRACAST_WFD_CONNECTION_STATS</a>
+
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
+
+
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+
+
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
+
+
 
  
 

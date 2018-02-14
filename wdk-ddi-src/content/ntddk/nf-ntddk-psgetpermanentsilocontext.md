@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: C1AEFC8F-6488-4582-9835-DAD07D4ACB17
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PsGetPermanentSiloContext, PsGetPermanentSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsGetPermanentSiloContext, kernel.psgetpermanentsilocontext
+ms.keywords: ntddk/PsGetPermanentSiloContext, PsGetPermanentSiloContext, PsGetPermanentSiloContext routine [Kernel-Mode Driver Architecture], kernel.psgetpermanentsilocontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsGetPermanentSiloContext
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,6 +75,7 @@ A pointer to a caller-allocated variable that receives the address of the existi
 ## Return Value
 
 The following NT status codes are returned.
+
 <table>
 <tr>
 <th>Return code</th>

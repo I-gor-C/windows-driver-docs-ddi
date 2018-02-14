@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b185b1ca-6fd9-4508-b001-d1853f2948c2
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFCOLLECTIONCREATE, DFCollectionObjectRef_0c567e7a-209b-4ac2-a721-0c2ee4122aaa.xml, WdfCollectionCreate, kmdf.wdfcollectioncreate, WdfCollectionCreate method, wdf.wdfcollectioncreate, wdfcollection/WdfCollectionCreate
+ms.keywords: wdfcollection/WdfCollectionCreate, WdfCollectionCreate, kmdf.wdfcollectioncreate, wdf.wdfcollectioncreate, PFN_WDFCOLLECTIONCREATE, WdfCollectionCreate method, DFCollectionObjectRef_0c567e7a-209b-4ac2-a721-0c2ee4122aaa.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfCollectionCreate
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.typenames: WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -76,6 +76,7 @@ A pointer to a location that receives a handle to the new collection object.
 ## Return Value
 
 <b>WdfCollectionCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,7 +104,8 @@ A collection object could not be allocated.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -114,6 +116,13 @@ After calling <b>WdfCollectionCreate</b> to create a framework collection object
 By default, the new collection object's parent is the framework driver object that the <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> method created. You can use the <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure to specify a different parent. The framework deletes the collection object when it deletes the parent object. If your driver does not change the default parent, the driver should delete the collection object when it has finished using the object; otherwise, the object will remain until the I/O manager unloads your driver. 
 
 For more information about object collections, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/framework-object-collections">Framework Object Collections</a>.
+
+
+#### Examples
+
+For a code example that uses <b>WdfCollectionCreate</b>, see <a href="..\wdfcollection\nf-wdfcollection-wdfcollectionadd.md">WdfCollectionAdd</a>.
+
+<div class="code"></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -128,13 +137,21 @@ For more information about object collections, see <a href="https://docs.microso
 
 ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremove.md">WdfCollectionRemove</a>
+
+
 
 <a href="..\wdfcollection\nf-wdfcollection-wdfcollectionadd.md">WdfCollectionAdd</a>
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremove.md">WdfCollectionRemove</a>
+
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
 
  
 

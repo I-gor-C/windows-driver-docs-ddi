@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2878b36e-3850-4af8-aeca-9c5d2da717f9
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3d11_1ddi_video_processor_color_space, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure [Display Devices]
+ms.keywords: d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, display.d3d11_1ddi_video_processor_color_space, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,6 +80,7 @@ Reserved for system use. Set to zero.
 Specifies the RGB color range. The default state value is 0 (full range).
 
 
+
 <table>
 <tr>
 <th>Value</th>
@@ -112,6 +113,7 @@ Limited range (16-235)
 `Usage`
 
 Specifies whether the output is intended for playback or video processing (such as editing or authoring). The device can optimize the processing based on the type. The default state value is 0 (playback). 
+
 
 
 <table>
@@ -148,6 +150,7 @@ Video processing
 Specifies the YCbCr transfer matrix. The default state value is 0 (BT.601).
 
 
+
 <table>
 <tr>
 <th>Value</th>
@@ -180,6 +183,7 @@ ITU-R BT.709
 `YCbCr_xvYCC`
 
 Specifies whether the output uses conventional YCbCr or extended YCbCr (xvYCC). The default state value is zero (conventional YCbCr).
+
 
 
 <table>
@@ -221,6 +225,8 @@ Extended YCbCr (xvYCC)
 ## See Also
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range.md">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a>
+
+
 
  
 

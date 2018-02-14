@@ -78,9 +78,13 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 ## See Also
 
+<a href="..\ntddtape\ns-ntddtape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a>
+
+
+
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
 
-<a href="..\ntddtape\ns-ntddtape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a>
+
 
  
 

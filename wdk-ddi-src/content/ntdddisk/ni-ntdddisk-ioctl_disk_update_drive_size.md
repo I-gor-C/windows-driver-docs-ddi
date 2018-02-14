@@ -82,6 +82,8 @@ The device driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
 
+
+
  
 
  

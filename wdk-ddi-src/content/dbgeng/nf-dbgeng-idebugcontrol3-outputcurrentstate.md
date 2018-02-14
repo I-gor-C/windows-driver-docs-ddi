@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 3d176438-5551-48a4-b757-81c14d84c075
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: OutputCurrentState method [Windows Debugging], IDebugControl2 interface, OutputCurrentState, IDebugControl interface [Windows Debugging], OutputCurrentState method, OutputCurrentState method [Windows Debugging], debugger.outputcurrentstate, IDebugControl::OutputCurrentState, IDebugControl_1a038e3b-1bf3-47d0-8e40-b2ebc3506308.xml, IDebugControl2 interface [Windows Debugging], OutputCurrentState method, IDebugControl3 interface [Windows Debugging], OutputCurrentState method, dbgeng/IDebugControl2::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::OutputCurrentState, IDebugControl2::OutputCurrentState, dbgeng/IDebugControl3::OutputCurrentState, IDebugControl3, IDebugControl3::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl interface
+ms.keywords: IDebugControl_1a038e3b-1bf3-47d0-8e40-b2ebc3506308.xml, IDebugControl2, IDebugControl2 interface [Windows Debugging], OutputCurrentState method, IDebugControl3::OutputCurrentState, IDebugControl3, IDebugControl interface [Windows Debugging], OutputCurrentState method, dbgeng/IDebugControl::OutputCurrentState, IDebugControl, OutputCurrentState method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputCurrentState, IDebugControl::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl3 interface, debugger.outputcurrentstate, OutputCurrentState, dbgeng/IDebugControl2::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::OutputCurrentState, IDebugControl3 interface [Windows Debugging], OutputCurrentState method, OutputCurrentState method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -67,6 +67,7 @@ Specifies which clients to send the output to.  For possible values see <a href=
 `Flags`
 
 Specifies the bit set that determines the information to print to the debugger console.  <i>Flags</i> can be any combination of values from the following table.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -112,7 +113,8 @@ File name and line number of the source corresponding to the current instruction
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Alternatively, <i>Flags</i> can be set to DEBUG_CURRENT_DEFAULT.  This value includes all of the above flags.
 
@@ -120,6 +122,7 @@ Alternatively, <i>Flags</i> can be set to DEBUG_CURRENT_DEFAULT.  This value inc
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>

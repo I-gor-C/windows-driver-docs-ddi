@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 93593979-fe5f-48de-9c98-92acd43ec750
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ObRegisterCallbacks, wdm/ObRegisterCallbacks, kernel.obregistercallbacks, k107_e5976812-0590-42f5-836c-85f9d262f19f.xml, ObRegisterCallbacks routine [Kernel-Mode Driver Architecture]
+ms.keywords: ObRegisterCallbacks, kernel.obregistercallbacks, ObRegisterCallbacks routine [Kernel-Mode Driver Architecture], wdm/ObRegisterCallbacks, k107_e5976812-0590-42f5-836c-85f9d262f19f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a variable that receives a value that identifies the set of registe
 ## Return Value
 
 <b>ObRegisterCallbacks</b> returns an NTSTATUS value. This routine might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -149,9 +150,13 @@ A driver must unregister all callback routines before it unloads. You can unregi
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a>
+
+
+
 <a href="..\wdm\ns-wdm-_ob_callback_registration.md">OB_CALLBACK_REGISTRATION</a>
 
-<a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a>
+
 
  
 

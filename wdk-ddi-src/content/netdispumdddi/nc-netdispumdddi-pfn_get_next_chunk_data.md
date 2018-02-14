@@ -120,6 +120,7 @@ This function is optional. The user-mode display driver should only call it if t
 The user-mode display driver can use the sizes of the <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_data.md">MIRACAST_CHUNK_DATA</a> structure and the <b>MIRACAST_CHUNK_DATA</b>.<b>PrivateDriverData</b> member to compute the size of a chunk and hence how to move from chunk to chunk in the returned buffer.
 
 In a call to this function, as many available packets as can fit will be placed sequentially in the supplied buffer. This code snippet shows how to calculate the size of each packet:
+
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
 <th>C++</th>
@@ -133,6 +134,10 @@ In a call to this function, as many available packets as can fit will be placed 
 </tr>
 </table></span></div>
 
+#### Thread Safety
+
+Only one thread should call this function at a time. Otherwise it's unpredictable which call would receive chunk info and which call would fail.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -144,9 +149,15 @@ In a call to this function, as many available packets as can fit will be placed 
 
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
 
+
+
 <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_data.md">MIRACAST_CHUNK_DATA</a>
 
+
+
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
+
+
 
  
 

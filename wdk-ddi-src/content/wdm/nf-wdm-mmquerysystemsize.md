@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ca4b3154-e1a1-44d1-b085-9cb5d5ed1a4a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k106_9456af05-c1ea-43b0-a342-bc88a8de874b.xml, MmQuerySystemSize, kernel.mmquerysystemsize, wdm/MmQuerySystemSize, MmQuerySystemSize routine [Kernel-Mode Driver Architecture]
+ms.keywords: MmQuerySystemSize, wdm/MmQuerySystemSize, kernel.mmquerysystemsize, MmQuerySystemSize routine [Kernel-Mode Driver Architecture], k106_9456af05-c1ea-43b0-a342-bc88a8de874b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,8 @@ This routine can be called during driver initialization to determine how much me
 ## See Also
 
 <a href="..\ntddk\nf-ntddk-mmisthisanntassystem.md">MmIsThisAnNtAsSystem</a>
+
+
 
  
 

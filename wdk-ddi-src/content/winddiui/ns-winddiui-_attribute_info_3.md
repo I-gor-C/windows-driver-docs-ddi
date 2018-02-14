@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: a9299c25-4210-4161-bfd6-8a13113b93e1
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.attribute_info_3, PATTRIBUTE_INFO_3 structure pointer [Print Devices], winddiui/PATTRIBUTE_INFO_3, print_interface-graphics_473dca69-31fc-410d-a9d6-cfa5241f2c5b.xml, _ATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3, winddiui/ATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3 structure [Print Devices]
+ms.keywords: winddiui/ATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3, winddiui/PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3 structure [Print Devices], ATTRIBUTE_INFO_3, print_interface-graphics_473dca69-31fc-410d-a9d6-cfa5241f2c5b.xml, _ATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3 structure pointer [Print Devices], *PATTRIBUTE_INFO_3, print.attribute_info_3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	ATTRIBUTE_INFO_3
 product: Windows
 targetos: Windows
-req.typenames: ATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3
+req.typenames: "*PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3"
 req.product: Windows 10 or later.
 ---
 
@@ -77,6 +77,7 @@ Value to be used instead of the <b>dmYResolution</b> member of the print job's D
 `dwColorOptimization`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -127,6 +128,7 @@ Number of document pages to be placed on one side of a physical page, as request
 `dwJobPageOrderFlags`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -167,6 +169,7 @@ Pages should be printed in reverse order: last page, next-to-last page, and so o
 `dwNupBorderFlags`
 
 One of the following bit flag values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -212,13 +215,23 @@ For information about other ATTRIBUTE_INFO_3 structure members, see <a href="..\
 
 <a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
 
+
+
 <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
+
+
 
 <a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>
 
-<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
+
 
 <a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
+
+
+
+<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
+
+
 
  
 

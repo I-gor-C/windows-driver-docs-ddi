@@ -40,7 +40,7 @@ apiname:
 -	*PMM_MDL_ROUTINE
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -89,6 +89,8 @@ This callback function does not return a value.
 ## See Also
 
 <a href="..\wdm\nf-wdm-mmmapmdl.md">MmMapMdl</a>
+
+
 
  
 

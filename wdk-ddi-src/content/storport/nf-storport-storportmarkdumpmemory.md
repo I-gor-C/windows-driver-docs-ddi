@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: DE17FF55-A573-41FE-8979-1DB32AD5B7C0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS, StorPortMarkDumpMemory routine [Storage Devices], storage.storportmarkdumpmemory, StorPortMarkDumpMemory, storport/StorPortMarkDumpMemory
+ms.keywords: StorPortMarkDumpMemory, MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS, StorPortMarkDumpMemory routine [Storage Devices], storport/StorPortMarkDumpMemory, storage.storportmarkdumpmemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ The length of the marked memory range.
 `Flags`
 
 Dump memory marking flags. The <i>Flags</i> parameter must be 0 or contain only the following value.
+
 <table>
 <tr>
 <th>Value</th>
@@ -97,6 +98,7 @@ The address provided in <i>Address</i> is a physical address and not a system vi
 ## Return Value
 
 <b>StorPortMarkDumpMemory</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>

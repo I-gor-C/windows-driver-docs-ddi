@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_endpoint_static_streams_add.htm
 old-project: usbref
 ms.assetid: 76f94f19-894a-47af-a407-8e14263f1143
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.evt_ucx_endpoint_static_streams_add, EvtUcxEndpointStaticStreamsAdd callback function [Buses], EvtUcxEndpointStaticStreamsAdd, EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD, EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD, ucxendpoint/EvtUcxEndpointStaticStreamsAdd, PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD callback function pointer [Buses], PEVT_UCX_ENDPOINT_STATIC_STREAMS_ADD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,6 +92,53 @@ This callback function creates a UCX static streams object by calling the <a hre
 
 A static streams object is not enabled
     until UCX calls the client driver's <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.
+
+
+#### Examples
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+Endpoint_EvtEndpointStaticStreamsAdd(
+    UCXENDPOINT         UcxEndpoint,
+    ULONG               NumberOfStreams,
+    PUCXSSTREAMS_INIT   UcxStaticStreamsInit
+    )
+{
+    NTSTATUS                    status;
+    WDF_OBJECT_ATTRIBUTES       wdfAttributes;
+    UCXSSTREAMS                 ucxStaticStreams;
+    STREAM_INFO                 streamInfo;
+    ULONG                       streamId;
+
+    TRY {
+
+        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;wdfAttributes, STATIC_STREAMS_CONTEXT);
+
+        status = UcxStaticStreamsCreate(UcxEndpoint,
+                                        &amp;UcxStaticStreamsInit,
+                                        &amp;wdfAttributes,
+                                        &amp;ucxStaticStreams);
+        // … error handling …
+
+        for (i = 0, streamId = 1; i &lt; NumberOfStreams; i += 1, streamId += 1) {
+
+            // … create WDF queue …
+
+            STREAM_INFO_INIT(&amp;streamInfo,
+                             wdfQueue,
+                             streamId);
+
+            UcxStaticStreamsSetStreamInfo(ucxStaticStreams, &amp;streamInfo);
+        }
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

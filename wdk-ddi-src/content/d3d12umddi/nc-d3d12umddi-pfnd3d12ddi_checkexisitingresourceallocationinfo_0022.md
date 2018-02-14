@@ -93,6 +93,8 @@ This callback function is part of a two step process of resource creation. After
 
 <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_checkresourceallocationinfo_0022.md">pfnCheckResourceAllocationInfo</a>
 
+
+
  
 
  

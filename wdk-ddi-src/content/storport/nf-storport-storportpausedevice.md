@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b656882a-1cc7-45e8-bda4-c1450b599b4b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_5506e943-789f-49d7-a9bc-c837fcd1bba2.xml, StorPortPauseDevice routine [Storage Devices], StorPortPauseDevice, storage.storportpausedevice, storport/StorPortPauseDevice
+ms.keywords: storport/StorPortPauseDevice, storage.storportpausedevice, StorPortPauseDevice, storprt_5506e943-789f-49d7-a9bc-c837fcd1bba2.xml, StorPortPauseDevice routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,6 +102,8 @@ When the time-out expires, I/O requests to the device will be resumed.
 ## See Also
 
 <a href="..\storport\nf-storport-storportresumedevice.md">StorPortResumeDevice</a>
+
+
 
  
 

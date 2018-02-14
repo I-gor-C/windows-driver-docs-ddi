@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e982200c-f30c-423e-bd85-03365850c996
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/PsSetCreateProcessNotifyRoutineEx, PsSetCreateProcessNotifyRoutineEx, k108_b68156fb-55d5-4192-a4d0-d74603647f42.xml, PsSetCreateProcessNotifyRoutineEx routine [Kernel-Mode Driver Architecture], kernel.pssetcreateprocessnotifyroutineex
+ms.keywords: PsSetCreateProcessNotifyRoutineEx routine [Kernel-Mode Driver Architecture], PsSetCreateProcessNotifyRoutineEx, ntddk/PsSetCreateProcessNotifyRoutineEx, kernel.pssetcreateprocessnotifyroutineex, k108_b68156fb-55d5-4192-a4d0-d74603647f42.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsSetCreateProcessNotifyRoutineEx
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -70,6 +70,7 @@ A Boolean value that specifies whether <b>PsSetCreateProcessNotifyRoutineEx</b> 
 ## Return Value
 
 <b>PsSetCreateProcessNotifyRoutineEx</b> returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -133,9 +134,15 @@ The operating system calls the driver's process-notify routine at PASSIVE_LEVEL 
 
 <a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine_ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
 
-<a href="..\ntddk\ns-ntddk-_ps_create_notify_info.md">PS_CREATE_NOTIFY_INFO</a>
+
 
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
+
+
+
+<a href="..\ntddk\ns-ntddk-_ps_create_notify_info.md">PS_CREATE_NOTIFY_INFO</a>
+
+
 
  
 

@@ -7,7 +7,7 @@ old-location: ifsk\fltenumerateinstanceinformationbydeviceobject.htm
 old-project: ifsk
 ms.assetid: 3E7754A3-3A7A-4036-B524-CBA40EF22048
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
+ms.date: 2/7/2018
 ms.keywords: FltEnumerateInstanceInformationByDeviceObject routine [Installable File System Drivers], fltkernel/FltEnumerateInstanceInformationByDeviceObject, FltEnumerateInstanceInformationByDeviceObject, ifsk.fltenumerateinstanceinformationbydeviceobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,6 +74,7 @@ Zero-based index of the minifilter driver instance or legacy filter driver for w
 `InformationClass`
 
 Type of information to be returned for the minifilter driver instance or legacy filter driver. This parameter can have one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -137,6 +138,7 @@ Pointer to a caller-allocated variable that receives the number of bytes returne
 ## Return Value
 
 <b>FltEnumerateInstanceInformationByDeviceObject</b> returns <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value, such as one of the following: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -231,14 +233,20 @@ This routine will return both legacy filter driver information and minifilter dr
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolumename.md">FltEnumerateInstanceInformationByVolumeName</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
+
+
 
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
+
+
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolumename.md">FltEnumerateInstanceInformationByVolumeName</a>
+
+
 
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByDeviceObject routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByDeviceObject routine%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

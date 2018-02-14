@@ -53,6 +53,13 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugAdvanced2.FindSourceFileAndToken](nf-dbgeng-idebugadvanced2-findsourcefileandtoken.md) | The FindSourceFileAndToken method returns the filename of a source file on the source path or return the value of a variable associated with a file token. |
+| [dbgeng.IDebugAdvanced2.GetSourceFileInformation](nf-dbgeng-idebugadvanced2-getsourcefileinformation.md) | The GetSourceFileInformation method returns specified information about a source file. |
+| [dbgeng.IDebugAdvanced2.GetSymbolInformation](nf-dbgeng-idebugadvanced2-getsymbolinformation.md) | The GetSymbolInformation method returns specified information about a symbol. |
+| [dbgeng.IDebugAdvanced2.GetSystemObjectInformation](nf-dbgeng-idebugadvanced2-getsystemobjectinformation.md) | The GetSystemObjectInformation method returns information about operating system objects on the target. |
+| [dbgeng.IDebugAdvanced2.GetThreadContext](nf-dbgeng-idebugadvanced2-getthreadcontext.md) | The GetThreadContext method returns the current thread context. |
+| [dbgeng.IDebugAdvanced2.Request](nf-dbgeng-idebugadvanced2-request.md) | The Request method performs a variety of different operations. |
+| [dbgeng.IDebugAdvanced2.SetThreadContext](nf-dbgeng-idebugadvanced2-setthreadcontext.md) | The SetThreadContext method sets the current thread context. |
 
 ## Remarks
 
@@ -66,9 +73,13 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced.md">IDebugAdvanced</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
 
  
 

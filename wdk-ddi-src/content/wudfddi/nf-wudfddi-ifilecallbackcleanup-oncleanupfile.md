@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: e6dd18f4-725f-4611-ad70-029654cf4375
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: umdf.ifilecallbackcleanup_oncleanupfile, wdf.ifilecallbackcleanup_oncleanupfile, OnCleanupFile method, IFileCallbackCleanup, OnCleanupFile method, IFileCallbackCleanup interface, IFileCallbackCleanup interface, OnCleanupFile method, IFileCallbackCleanup::OnCleanupFile, OnCleanupFile, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, wudfddi/IFileCallbackCleanup::OnCleanupFile
+ms.keywords: wdf.ifilecallbackcleanup_oncleanupfile, wudfddi/IFileCallbackCleanup::OnCleanupFile, IFileCallbackCleanup interface, OnCleanupFile method, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, OnCleanupFile method, IFileCallbackCleanup interface, OnCleanupFile method, umdf.ifilecallbackcleanup_oncleanupfile, IFileCallbackCleanup::OnCleanupFile, IFileCallbackCleanup, OnCleanupFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,11 +86,17 @@ For information about when the framework calls <b>OnCleanupFile</b>, see <a href
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-ifilecallbackcleanup.md">IFileCallbackCleanup</a>
+
+
 
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+
 
  
 

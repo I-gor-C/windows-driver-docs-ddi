@@ -91,6 +91,8 @@ The <b><i>AtaControllerTransferModeSelect</i></b> miniport driver routine must s
 
 <a href="..\irb\ns-irb-_ide_transfer_mode_parameters.md">IDE_TRANSFER_MODE_PARAMETERS</a>
 
+
+
  
 
  

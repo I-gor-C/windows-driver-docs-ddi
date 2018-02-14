@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 2bc0cd81-db9b-4646-838b-0e66c0667202
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.getscopesymbolgroup2, dbgeng/IDebugSymbols3::GetScopeSymbolGroup2, GetScopeSymbolGroup2, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup2 method, GetScopeSymbolGroup2 method [Windows Debugging], IDebugSymbols3, GetScopeSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetScopeSymbolGroup2
+ms.keywords: GetScopeSymbolGroup2 method [Windows Debugging], debugger.getscopesymbolgroup2, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup2 method, dbgeng/IDebugSymbols3::GetScopeSymbolGroup2, GetScopeSymbolGroup2, GetScopeSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetScopeSymbolGroup2, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -62,6 +62,7 @@ HRESULT GetScopeSymbolGroup2(
 `Flags`
 
 Specifies a bit-set used to determine which symbols to include in the symbol group.  To include all symbols, set <i>Flags</i> to DEBUG_SCOPE_GROUP_ALL.  The following bit-flags determine which symbols are included.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -101,6 +102,7 @@ Receives the symbol group interface object for the current scope.  For details o
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -134,11 +136,17 @@ For more information about scopes and symbol groups, see <a href="https://msdn.m
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548270">GetScope</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+
 
  
 

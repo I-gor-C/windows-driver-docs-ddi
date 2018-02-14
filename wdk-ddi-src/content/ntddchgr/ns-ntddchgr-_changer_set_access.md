@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 4349d772-89c6-4201-9d9d-2e0590d61424
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.changer_set_access, _CHANGER_SET_ACCESS, *PCHANGER_SET_ACCESS, ntddchgr/CHANGER_SET_ACCESS, ntddchgr/PCHANGER_SET_ACCESS, CHANGER_SET_ACCESS, PCHANGER_SET_ACCESS, PCHANGER_SET_ACCESS structure pointer [Storage Devices], structs-changer_01f5a159-3d46-4400-8eae-87367e81ed72.xml, CHANGER_SET_ACCESS structure [Storage Devices]
+ms.keywords: PCHANGER_SET_ACCESS, *PCHANGER_SET_ACCESS, CHANGER_SET_ACCESS, PCHANGER_SET_ACCESS structure pointer [Storage Devices], ntddchgr/CHANGER_SET_ACCESS, ntddchgr/PCHANGER_SET_ACCESS, storage.changer_set_access, structs-changer_01f5a159-3d46-4400-8eae-87367e81ed72.xml, _CHANGER_SET_ACCESS, CHANGER_SET_ACCESS structure [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	CHANGER_SET_ACCESS
 product: Windows
 targetos: Windows
-req.typenames: CHANGER_SET_ACCESS, *PCHANGER_SET_ACCESS
+req.typenames: "*PCHANGER_SET_ACCESS, CHANGER_SET_ACCESS"
 ---
 
 # _CHANGER_SET_ACCESS structure
@@ -64,9 +64,11 @@ Specifies the operation to perform on the element. The <b>Features0</b> member o
 
 
 
+
 #### LOCK_ELEMENT
 
 Lock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.
+
 
 
 #### UNLOCK_ELEMENT
@@ -74,9 +76,11 @@ Lock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.
 Unlock the door, IEport, or keypad. Valid only if CHANGER_LOCK_UNLOCK is set.
 
 
+
 #### EXTEND_IEPORT
 
 Extend the IEport. Valid only if CHANGER_OPEN_IEPORT is set.
+
 
 
 #### RETRACT_IEPORT
@@ -99,11 +103,19 @@ Contains a <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT
 
 <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
 
-<a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
+
 
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 
+
+
+<a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
+
+
+
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_access.md">IOCTL_CHANGER_SET_ACCESS</a>
+
+
 
  
 

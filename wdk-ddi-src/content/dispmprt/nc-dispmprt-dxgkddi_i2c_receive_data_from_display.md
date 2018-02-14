@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiI2CReceiveDataFromDisplay
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -80,6 +80,7 @@ The address of the I2C device from which data will be received.
 `Flags`
 
 A value that specifies whether the length of the data is supplied as part of the data transmitted by the I2C device. This parameter must be set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -119,6 +120,7 @@ A pointer to a buffer that receives the data. The buffer can be in paged memory.
 ## Return Value
 
 <i>DxgkDdiI2CReceiveDataFromDisplay</i>returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in <i>Ntstatus.h</i>. The following list gives some of the possible error codes that can be returned.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -210,6 +212,8 @@ If the display adapter supports HDCP, <i>DxgkDdiI2CReceiveDataFromDisplay</i> mu
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 32d36b6d-9887-43ac-9314-fc682705131e
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl3::GetLogMask, dbgeng/IDebugControl3::GetLogMask, GetLogMask method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], dbgeng/IDebugControl::GetLogMask, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, GetLogMask, GetLogMask method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetLogMask method, IDebugControl::GetLogMask, IDebugControl2::GetLogMask, IDebugControl2 interface [Windows Debugging], GetLogMask method, dbgeng/IDebugControl2::GetLogMask, debugger.getlogmask, IDebugControl3, GetLogMask method [Windows Debugging], IDebugControl3 interface
+ms.keywords: IDebugControl2, dbgeng/IDebugControl::GetLogMask, IDebugControl interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], IDebugControl2::GetLogMask, IDebugControl2 interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetLogMask, dbgeng/IDebugControl3::GetLogMask, IDebugControl3::GetLogMask, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, IDebugControl3, IDebugControl, GetLogMask method [Windows Debugging], IDebugControl interface, GetLogMask method [Windows Debugging], IDebugControl3 interface, GetLogMask, debugger.getlogmask, IDebugControl3 interface [Windows Debugging], GetLogMask method, IDebugControl::GetLogMask
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -67,6 +67,7 @@ Receives the output mask for the log file.  See <a href="https://msdn.microsoft.
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -98,15 +99,25 @@ For more information about log files, see <a href="https://msdn.microsoft.com/li
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556734">SetLogMask</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: F175ED42-3DB6-4568-96CA-EFC283B14887
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortPoFxSetComponentLatency, StorPortPoFxSetComponentLatency routine [Storage Devices], storage.storportpofxsetcomponentlatency, StorPortPoFxSetComponentLatency
+ms.keywords: StorPortPoFxSetComponentLatency, storport/StorPortPoFxSetComponentLatency, storage.storportpofxsetcomponentlatency, StorPortPoFxSetComponentLatency routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ The time, in units of 100 nanoseconds, that the storage device component can tol
 ## Return Value
 
 The <b>StorPortPoFxSetComponentLatency</b> routine returns one of these status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -157,6 +158,8 @@ The current IRQL &gt; DISPATCH_LEVEL.
 ## See Also
 
 <a href="..\wdm\nf-wdm-pofxsetcomponentlatency.md">PoFxSetComponentLatency</a>
+
+
 
  
 

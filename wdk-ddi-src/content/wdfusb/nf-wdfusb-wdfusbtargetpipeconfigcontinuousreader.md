@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 56ed3c4f-bcfa-417d-a276-9934e3bc1666
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfusb/WdfUsbTargetPipeConfigContinuousReader, WdfUsbTargetPipeConfigContinuousReader method, PFN_WDFUSBTARGETPIPECONFIGCONTINUOUSREADER, wdf.wdfusbtargetpipeconfigcontinuousreader, kmdf.wdfusbtargetpipeconfigcontinuousreader, DFUsbRef_80432bbe-cb71-4bd1-9c0b-a71ea1f5c809.xml, WdfUsbTargetPipeConfigContinuousReader
+ms.keywords: WdfUsbTargetPipeConfigContinuousReader method, wdf.wdfusbtargetpipeconfigcontinuousreader, WdfUsbTargetPipeConfigContinuousReader, DFUsbRef_80432bbe-cb71-4bd1-9c0b-a71ea1f5c809.xml, kmdf.wdfusbtargetpipeconfigcontinuousreader, PFN_WDFUSBTARGETPIPECONFIGCONTINUOUSREADER, wdfusb/WdfUsbTargetPipeConfigContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfUsbTargetPipeConfigContinuousReader
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -76,6 +76,7 @@ A pointer to a caller-allocated <a href="..\wdfusb\ns-wdfusb-_wdf_usb_continuous
 ## Return Value
 
 <b>WdfUsbTargetPipeConfigContinuousReader</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method can return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -147,7 +148,8 @@ The size of the read buffer was not a multiple of the pipe's maximum packet size
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For a list of other return values that the <b>WdfUsbTargetPipeConfigContinuousReader</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -173,6 +175,34 @@ The framework sets the USBD_SHORT_TRANSFER_OK flag in its internal <a href="..\u
 
 For more information about the <b>WdfUsbTargetPipeConfigContinuousReader</b> method and USB I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/working-with-usb-pipes">Reading from a Pipe</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wdfusb\ns-wdfusb-_wdf_usb_continuous_reader_config.md">WDF_USB_CONTINUOUS_READER_CONFIG</a> structure and calls <b>WdfUsbTargetPipeConfigContinuousReader</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_USB_CONTINUOUS_READER_CONFIG  contReaderConfig;
+NTSTATUS  status;
+
+WDF_USB_CONTINUOUS_READER_CONFIG_INIT(
+                                      &amp;contReaderConfig,
+                                      OsrFxEvtUsbInterruptPipeReadComplete,
+                                      DeviceContext,
+                                      sizeof(UCHAR)
+                                      );
+status = WdfUsbTargetPipeConfigContinuousReader(
+                                      Pipe,
+                                      &amp;contReaderConfig
+                                      );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -186,27 +216,49 @@ For more information about the <b>WdfUsbTargetPipeConfigContinuousReader</b> met
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
-
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
-
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
-
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
-
 <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a>
+
+
 
 <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_reader_completion_routine.md">EvtUsbTargetPipeReadComplete</a>
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_continuous_reader_config.md">WDF_USB_CONTINUOUS_READER_CONFIG</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
+
+
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
+
+
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_continuous_reader_config_init.md">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
+
+
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
+
+
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+
+
+
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_continuous_reader_config.md">WDF_USB_CONTINUOUS_READER_CONFIG</a>
+
+
 
  
 

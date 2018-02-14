@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 25d6dc68-8cd3-4f8c-ad0d-361b4f6c4cf6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: STRSAFE_NULL_ON_FAILURE, kernel.rtlstringcbcopynex, safestrings_868bd7e8-88d5-4c41-ba40-ca7934ff86c8.xml, STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, RtlStringCbCopyNEx, STRSAFE_IGNORE_NULLS, ntstrsafe/RtlStringCbCopyNExA, STRSAFE_NO_TRUNCATION, ntstrsafe/RtlStringCbCopyNExW, RtlStringCbCopyNExW function [Kernel-Mode Driver Architecture], RtlStringCbCopyNExA, RtlStringCbCopyNExW
+ms.keywords: RtlStringCbCopyNExW, safestrings_868bd7e8-88d5-4c41-ba40-ca7934ff86c8.xml, kernel.rtlstringcbcopynex, STRSAFE_IGNORE_NULLS, STRSAFE_NULL_ON_FAILURE, RtlStringCbCopyNExA, ntstrsafe/RtlStringCbCopyNExA, ntstrsafe/RtlStringCbCopyNExW, RtlStringCbCopyNEx, RtlStringCbCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	RtlStringCbCopyNExW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -99,6 +99,7 @@ If the caller supplies a non-<b>NULL</b> address pointer, the function loads the
 `dwFlags`
 
 One or more flags and, optionally, a fill byte. The flags are defined as follows: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -160,6 +161,7 @@ If set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the dest
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -219,6 +221,7 @@ The size, in bytes, of the destination buffer is provided to <b>RtlStringCbCopyN
 <b>RtlStringCbCopyNEx</b> adds to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a> by returning a pointer to the end of the destination string as well as the number of bytes left unused in that string. Flags may also be passed to the function for additional control.
 
 Use <b>RtlStringCbCopyNExW</b> to handle Unicode strings and <b>RtlStringCbCopyNExA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.
+
 <table>
 <tr>
 <th>String data type</th>
@@ -253,7 +256,8 @@ L"string"
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.
 
@@ -272,9 +276,13 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a>
+
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexw.md">RtlStringCchCopyNEx</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a>
+
 
  
 

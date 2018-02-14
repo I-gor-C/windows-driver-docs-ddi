@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: fdbb5d74-25d5-4920-849c-8d4adce1d216
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlUnicodeToUTF8N, k109_8c33089a-9b47-4c33-9468-56a16caea229.xml, RtlUnicodeToUTF8N routine [Kernel-Mode Driver Architecture], kernel.rtlunicodetoutf8n, wdm/RtlUnicodeToUTF8N
+ms.keywords: kernel.rtlunicodetoutf8n, wdm/RtlUnicodeToUTF8N, RtlUnicodeToUTF8N routine [Kernel-Mode Driver Architecture], RtlUnicodeToUTF8N, k109_8c33089a-9b47-4c33-9468-56a16caea229.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ Specifies the number of bytes in the Unicode source string that the <i>UnicodeSt
 ## Return Value
 
 <b>RtlUnicodeToUTF8N</b> returns STATUS_SUCCESS if the call is successful and all Unicode character codes in the input string were converted to the corresponding UTF-8 character codes in the output string. It returns STATUS_SOME_NOT_MAPPED if the call is successful but one or more input characters were invalid and were replaced by the Unicode replacement character, U+FFFD, before they were converted to UTF-8. Possible error return values include the following error codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -166,6 +167,8 @@ You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to per
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlutf8tounicoden.md">RtlUTF8ToUnicodeN</a>
+
+
 
  
 

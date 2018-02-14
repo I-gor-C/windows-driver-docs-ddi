@@ -40,7 +40,7 @@ apiname:
 -	CopyNetBufferListInfo
 product: Windows
 targetos: Windows
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+req.typenames: "*LPVIDEO_STREAM_INIT_PARMS, VIDEO_STREAM_INIT_PARMS"
 ---
 
 
@@ -91,6 +91,7 @@ If the call succeeds, the function returns NDIS_STATUS_SUCCESS. Otherwise, it re
 ## Remarks
 
 The extensible switch extension calls the <i>CopyNetBufferListInfo</i> function to copy the OOB data from a source packet to a destination packet. This data includes the following:
+
 <ul>
 <li>
 The data from the <b>NetBufferListInfo</b> array of the source packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
@@ -106,7 +107,9 @@ The data for the extensible switch destination ports from the source packet's ex
 <div class="alert"><b>Note</b>  This data is only copied if the NDIS_SWITCH_COPY_NBL_INFO_FLAGS_PRESERVE_DESTINATIONS flag is specified.</div>
 <div> </div>
 </li>
-</ul>Before the extension calls <i>CopyNetBufferListInfo</i>, it must prepare the destination packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure by following these steps:
+</ul>
+Before the extension calls <i>CopyNetBufferListInfo</i>, it must prepare the destination packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure by following these steps:
+
 <ol>
 <li>
 The extension must first initialize a <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure for the destination packet that is derived from the source packet's  <b>NET_BUFFER_LIST</b> structure. 
@@ -115,7 +118,9 @@ For example, the extension can call <a href="..\ndis\nf-ndis-ndisallocateclonene
 
 </li>
 <li>The extension must call the <a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a>  function to allocate the extensible switch forwarding context for the destination packet. This data is used to store the OOB extensible switch forwarding information, such as a packet's source and destination ports.</li>
-</ol><div class="alert"><b>Note</b>  If the extension is creating or cloning the source packet, the extension must have previously called the <a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a> function for the packet. Source packets that the extension filters through the extensible switch driver stack already contain an allocated extensible switch forwarding context.</div><div> </div>
+</ol>
+<div class="alert"><b>Note</b>  If the extension is creating or cloning the source packet, the extension must have previously called the <a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a> function for the packet. Source packets that the extension filters through the extensible switch driver stack already contain an allocated extensible switch forwarding context.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -127,19 +132,33 @@ For example, the extension can call <a href="..\ndis\nf-ndis-ndisallocateclonene
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\ndis\nf-ndis-ndisallocatefragmentnetbufferlist.md">NdisAllocateFragmentNetBufferList</a>
-
-<a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a>
 
 <a href="..\ndis\ns-ndis-_ndis_switch_forwarding_detail_net_buffer_list_info.md">NDIS_SWITCH_FORWARDING_DETAIL_NET_BUFFER_LIST_INFO</a>
 
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisallocatefragmentnetbufferlist.md">NdisAllocateFragmentNetBufferList</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">NdisAllocateCloneNetBufferList</a>
 
+
+
 <b></b>
+
+
 
  
 

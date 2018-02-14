@@ -106,6 +106,8 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_eject_media.md">IOCTL_STORAGE_EJECT_MEDIA</a>
 
+
+
  
 
  

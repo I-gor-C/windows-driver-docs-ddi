@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 359b1096-f987-4884-ab67-2290bf5196b5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortCompleteServiceIrp routine [Storage Devices], storage.storportcompleteserviceirp, storport/StorPortCompleteServiceIrp, storprt_439990ea-8133-4114-b417-1c88e53cce14.xml, StorPortCompleteServiceIrp
+ms.keywords: storage.storportcompleteserviceirp, storprt_439990ea-8133-4114-b417-1c88e53cce14.xml, storport/StorPortCompleteServiceIrp, StorPortCompleteServiceIrp routine [Storage Devices], StorPortCompleteServiceIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to the I/O request.
 ## Return Value
 
 <b>StorPortCompleteServiceIrp</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,6 +126,8 @@ The Storport virtual miniport driver's <a href="https://msdn.microsoft.com/libra
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
+
+
 
  
 

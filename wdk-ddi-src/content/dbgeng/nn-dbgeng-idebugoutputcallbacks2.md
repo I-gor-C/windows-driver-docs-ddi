@@ -79,9 +79,15 @@ The basic <a href="https://msdn.microsoft.com/library/windows/hardware/ff550815"
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556751">SetOutputCallbacks</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbackswide.md">IDebugOutputCallbacksWide</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8c427880-f809-4b58-8f69-d81a273d705c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dstrct_6bd570c2-bccf-4c1c-8bfb-ff20d77b7201.xml, DD_GETADAPTERGROUPDATA, d3dhal/DD_GETADAPTERGROUPDATA, _DD_GETADAPTERGROUPDATA, display.dd_getadaptergroupdata, DD_GETADAPTERGROUPDATA structure [Display Devices]
+ms.keywords: display.dd_getadaptergroupdata, DD_GETADAPTERGROUPDATA structure [Display Devices], _DD_GETADAPTERGROUPDATA, d3dhal/DD_GETADAPTERGROUPDATA, DD_GETADAPTERGROUPDATA, d3dstrct_6bd570c2-bccf-4c1c-8bfb-ff20d77b7201.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -90,9 +90,13 @@ The identifier in <b>ulUniqueAdapterGroupId</b> must be unique across drivers, i
 
 ## See Also
 
+<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
 
-<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 363e4044-e835-43e6-96ce-0fdccdd7fb52
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dhal/D3DDEVICEDESC_V1, display.d3ddevicedesc_v1, _D3DDeviceDesc_V1, D3DDEVICEDESC_V1, LPD3DDEVICEDESC_V1 structure pointer [Display Devices], d3dstrct_111d5153-fb7f-4c2b-acc5-65818723e263.xml, d3dhal/LPD3DDEVICEDESC_V1, D3DDEVICEDESC_V1 structure [Display Devices], *LPD3DDEVICEDESC_V1, LPD3DDEVICEDESC_V1
+ms.keywords: display.d3ddevicedesc_v1, D3DDEVICEDESC_V1, d3dhal/LPD3DDEVICEDESC_V1, d3dhal/D3DDEVICEDESC_V1, D3DDEVICEDESC_V1 structure [Display Devices], _D3DDeviceDesc_V1, LPD3DDEVICEDESC_V1, LPD3DDEVICEDESC_V1 structure pointer [Display Devices], d3dstrct_111d5153-fb7f-4c2b-acc5-65818723e263.xml, *LPD3DDEVICEDESC_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	D3DDEVICEDESC_V1
 product: Windows
 targetos: Windows
-req.typenames: "*LPD3DDEVICEDESC_V1, D3DDEVICEDESC_V1"
+req.typenames: D3DDEVICEDESC_V1, *LPD3DDEVICEDESC_V1
 ---
 
 # _D3DDeviceDesc_V1 structure
@@ -98,6 +98,7 @@ Specifies a D3DTRANSFORMCAPS structure that specifies the transformation capabil
 `dwDevCaps`
 
 Identifies the capabilities of the device. This member can be a bitwise OR of any of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -311,6 +312,7 @@ Specifies the device's z-buffer bit-depth. This member can be a bitwise OR of th
 `dwFlags`
 
 Identifies the members of this structure that contain valid data. This member can be a bitwise OR of any of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -438,7 +440,7 @@ Must be set to zero.
 
 
 
-#### 
+##### 
 
 
 
@@ -446,7 +448,7 @@ Must be set to zero.
 
 
 
-####
+######
 
 `dwSize`
 
@@ -466,19 +468,33 @@ The Direct3D runtime constructs the application-level D3DDEVICEDESC7 structure (
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
-
 <a href="..\d3dcaps\ns-d3dcaps-_d3dlightingcaps.md">D3DLIGHTINGCAPS</a>
+
+
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_globaldriverdata.md">D3DHAL_GLOBALDRIVERDATA</a>
 
+
+
 <a href="https://msdn.microsoft.com/89a22163-a678-4c72-932a-ae4d17922e0b">DdGetDriverInfo</a>
 
-<a href="..\d3dcaps\ns-d3dcaps-_d3dprimcaps.md">D3DPRIMCAPS</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
+
+
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
+
+
+
+<a href="..\d3dcaps\ns-d3dcaps-_d3dprimcaps.md">D3DPRIMCAPS</a>
+
+
 
  
 

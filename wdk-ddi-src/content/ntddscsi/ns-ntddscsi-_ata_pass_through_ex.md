@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 76d8f5be-0011-4a7c-ac21-7115ad7e1155
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ATA_PASS_THROUGH_EX, _ATA_PASS_THROUGH_EX, ATA_PASS_THROUGH_EX structure [Storage Devices], storage.ata_pass_through_ex, ntddscsi/PATA_PASS_THROUGH_EX, ntddscsi/ATA_PASS_THROUGH_EX, *PATA_PASS_THROUGH_EX, PATA_PASS_THROUGH_EX structure pointer [Storage Devices], structs-IDE_72cc1a49-a438-40cb-b4b5-8ec7c87669f8.xml, PATA_PASS_THROUGH_EX
+ms.keywords: ntddscsi/PATA_PASS_THROUGH_EX, ATA_PASS_THROUGH_EX structure [Storage Devices], PATA_PASS_THROUGH_EX structure pointer [Storage Devices], PATA_PASS_THROUGH_EX, structs-IDE_72cc1a49-a438-40cb-b4b5-8ec7c87669f8.xml, _ATA_PASS_THROUGH_EX, ntddscsi/ATA_PASS_THROUGH_EX, ATA_PASS_THROUGH_EX, *PATA_PASS_THROUGH_EX, storage.ata_pass_through_ex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ typedef struct _ATA_PASS_THROUGH_EX {
 `AtaFlags`
 
 Indicates the direction of data transfer and specifies the kind of operation to be performed. The value of this member must be some combination of the following flags:
+
 <table>
 <tr>
 <th>ATA flags</th>
@@ -140,6 +141,7 @@ Read single sector only.
 `CurrentTaskFile`
 
 Specifies the content of the task file register on both input and output. On input, the array values in <b>CurrentTaskFile</b> map to the task file input registers in the following manner.
+
 <table>
 <tr>
 <th>Byte</th>
@@ -225,9 +227,11 @@ Reserved
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 When <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a> completes, the port driver updates <b>CurrentTaskFile</b> with the values that are present in the device's output registers at the completion of the embedded command. The array values in <b>CurrentTaskFile</b> correspond to the following task file output registers.
+
 <table>
 <tr>
 <th>Byte</th>
@@ -365,11 +369,17 @@ Indicates the number of seconds that are allowed for the request to execute befo
 
 ## See Also
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a>
-
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through_direct.md">IOCTL_ATA_PASS_THROUGH_DIRECT</a>
 
+
+
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_ata_pass_through.md">IOCTL_ATA_PASS_THROUGH</a>
+
+
+
 <a href="..\ntddscsi\ns-ntddscsi-_ata_pass_through_direct.md">ATA_PASS_THROUGH_DIRECT</a>
+
+
 
  
 

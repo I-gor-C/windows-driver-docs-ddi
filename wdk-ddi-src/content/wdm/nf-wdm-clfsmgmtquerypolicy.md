@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c9cc9124-ee15-40df-b149-a9f3b26d7c24
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtquerypolicy, wdm/ClfsMgmtQueryPolicy, Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml, ClfsMgmtQueryPolicy
+ms.keywords: kernel.clfsmgmtquerypolicy, ClfsMgmtQueryPolicy, ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml, wdm/ClfsMgmtQueryPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,7 @@ The length of the <i>Policy</i> parameter.
 ## Return Value
 
 The <b>ClfsMgmtQueryPolicy</b> routine returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -164,7 +165,8 @@ No policy of this type has been registered for the log file.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This routine might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS Values</a>.
 
@@ -183,7 +185,11 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 
 <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a>
 
+
+
 <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
+
+
 
  
 

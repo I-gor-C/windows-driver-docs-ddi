@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e527a659-7ed5-4262-bed2-3bab58919401
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsDeliver method [Streaming Media Devices], IKsPin interface [Streaming Media Devices], KsDeliver method, ksproxy/IKsPin::KsDeliver, IKsPin, KsDeliver, stream.ikspin_ksdeliver, KsDeliver method [Streaming Media Devices], IKsPin interface, IKsPin::KsDeliver, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml
+ms.keywords: IKsPin interface [Streaming Media Devices], KsDeliver method, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml, KsDeliver method [Streaming Media Devices], IKsPin interface, IKsPin, stream.ikspin_ksdeliver, KsDeliver method [Streaming Media Devices], ksproxy/IKsPin::KsDeliver, KsDeliver, IKsPin::KsDeliver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -112,9 +112,13 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559862">IKsInterfaceHandler::KsCompleteIo</a>
+
+
+
 <a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559862">IKsInterfaceHandler::KsCompleteIo</a>
+
 
  
 

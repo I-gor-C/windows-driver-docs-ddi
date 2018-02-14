@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 61173af4-5b6f-47e9-b236-6b45bcd83a9f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndis_wwan_radio_state, *PNDIS_WWAN_RADIO_STATE, WwanRef_24973f17-426f-492f-ac5e-1f2651dcebd1.xml, PNDIS_WWAN_RADIO_STATE, ndiswwan/PNDIS_WWAN_RADIO_STATE, _NDIS_WWAN_RADIO_STATE, ndiswwan/NDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords: ndiswwan/PNDIS_WWAN_RADIO_STATE, netvista.ndis_wwan_radio_state, PNDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE, *PNDIS_WWAN_RADIO_STATE, ndiswwan/NDIS_WWAN_RADIO_STATE, WwanRef_24973f17-426f-492f-ac5e-1f2651dcebd1.xml, _NDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	NDIS_WWAN_RADIO_STATE
 product: Windows
 targetos: Windows
-req.typenames: NDIS_WWAN_RADIO_STATE, *PNDIS_WWAN_RADIO_STATE
+req.typenames: "*PNDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE"
 ---
 
 # _NDIS_WWAN_RADIO_STATE structure
@@ -67,6 +67,7 @@ The header with type, revision, and size information about the NDIS_WWAN_RADIO_S
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -102,7 +103,8 @@ sizeof(NDIS_WWAN_RADIO_STATE)
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
@@ -118,6 +120,7 @@ A formatted
 The status of the radio state operation. The following table shows the possible values for this
      member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -184,9 +187,13 @@ Miniport drivers can set the
 
 ## See Also
 
+<a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
+
+
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
+
 
  
 

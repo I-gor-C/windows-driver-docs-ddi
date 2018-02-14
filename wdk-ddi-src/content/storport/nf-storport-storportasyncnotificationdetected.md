@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, storage.storportasyncnotificationdetected, StorPortAsyncNotificationDetected, RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, storport/StorPortAsyncNotificationDetected, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, StorPortAsyncNotificationDetected routine [Storage Devices]
+ms.keywords: StorPortAsyncNotificationDetected, RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, storage.storportasyncnotificationdetected, RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, StorPortAsyncNotificationDetected routine [Storage Devices], storport/StorPortAsyncNotificationDetected, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,7 @@ The status notifications to indicate to Storport.
 The Flags parameter contains a bitwise OR combination of status notifications. All status values can be set with the single <b>RAID_ASYNC_NOTIFY_SUPPORTED_FLAGS</b> value.
 
 
+
 <table>
 <tr>
 <th>Value</th>
@@ -119,6 +120,7 @@ Notify Storport that an operational role of the storage device has changed.
 ## Return Value
 
 A status value indicating the result of the notification. This can be one of these values:
+
 <table>
 <tr>
 <th>Return code</th>

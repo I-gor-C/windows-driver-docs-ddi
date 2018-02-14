@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 07317157-1222-4b34-89f4-d546818e9851
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFIoRequest::ForwardToIoQueue, IWDFIoRequest interface, ForwardToIoQueue method, IWDFIoRequest, umdf.iwdfiorequest_forwardtoioqueue, ForwardToIoQueue, ForwardToIoQueue method, IWDFIoRequest interface, ForwardToIoQueue method, wudfddi/IWDFIoRequest::ForwardToIoQueue, wdf.iwdfiorequest_forwardtoioqueue, UMDFRequestObjectRef_ae3c7113-1fac-4742-b53b-8230bf78b61a.xml
+ms.keywords: ForwardToIoQueue method, IWDFIoRequest interface, IWDFIoRequest interface, ForwardToIoQueue method, ForwardToIoQueue, IWDFIoRequest::ForwardToIoQueue, umdf.iwdfiorequest_forwardtoioqueue, wdf.iwdfiorequest_forwardtoioqueue, ForwardToIoQueue method, wudfddi/IWDFIoRequest::ForwardToIoQueue, IWDFIoRequest, UMDFRequestObjectRef_ae3c7113-1fac-4742-b53b-8230bf78b61a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,6 +81,33 @@ Also, the <b>ForwardToIoQueue</b> method cannot requeue a request that the drive
 
 The request cannot be cancelable. If the driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a> method to make the request cancelable, the driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a> method before calling <b>ForwardToIoQueue</b>.
 
+
+#### Examples
+
+The following code example shows how to forward a request to another queue if the request's buffer is insufficient to hold the required information.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>HRESULT hr;
+ if (OutputBufferSizeInBytes &lt; sizeof(SWITCH_STATE)) {
+    hr = HRESULT_FROM_NT(ERROR_INSUFFICIENT_BUFFER);
+ }
+ else {
+     hr = FxRequest-&gt;ForwardToIoQueue(
+                          m_Device-&gt;GetSwitchChangeQueue()
+                          );
+     if (SUCCEEDED(hr)) {
+         completeRequest = false;
+     }
+  }</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,15 +120,25 @@ The request cannot be cancelable. If the driver previously called the <a href="h
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
+
+
+
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
 
  
 

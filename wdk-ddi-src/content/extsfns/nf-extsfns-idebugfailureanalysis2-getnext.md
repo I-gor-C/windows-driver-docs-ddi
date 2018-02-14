@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 935E4BAD-2B4E-44DD-8AE6-A0FD1FE9F2BF
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugFailureAnalysis2::GetNext, GetNext, extsfns/IDebugFailureAnalysis2::GetNext, GetNext method [Windows Debugging], debugger.idebugfailureanalysis2_getnext, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, IDebugFailureAnalysis2, GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface
+ms.keywords: GetNext, debugger.idebugfailureanalysis2_getnext, IDebugFailureAnalysis2::GetNext, extsfns/IDebugFailureAnalysis2::GetNext, GetNext method [Windows Debugging], GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, IDebugFailureAnalysis2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,6 +87,7 @@ Tags are defined in extsfns.h as values of the <a href="..\extsfns\ne-extsfns-_d
 <code>entry-&gt;Tag &amp; 0xFFFFFF00 == 0x400</code>
 
 The following code snippet shows a portion of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration.
+
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
 <th>C++</th>
@@ -111,6 +112,79 @@ DEBUG_FLR_FILE_LINE,
 </tr>
 </table></span></div>
 
+#### Examples
+
+<b>Example 1</b>
+
+The following example shows how to find all failure analysis entries that have a tag equal to <b>DEBUG_FLR_MANAGED_EXCEPTION_OBJECT</b>. Assume <code>pAnalysis</code> is a pointer to an <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.
+
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>FA_ENTRY entry = pAnalysis-&gt;Get(DEBUG_FLR_MANAGED_EXCEPTION_OBJECT);
+
+while(NULL != entry)
+{
+   // Do something with the entry.
+
+   entry = pAnalysis-&gt;GetNext(DEBUG_FLR_MANAGED_EXCEPTION_OBJECT, DEBUG_FLR_MASK_ALL);
+}</pre>
+</td>
+</tr>
+</table></span></div>
+<b>Example 2</b>
+
+The following example shows how to find all FA entries that have tags in the Pool group. Recall the tags in the Pool group have values in the range 0x400, 0x401, ... 0x406. Assume <code>pAnalysis</code> is a pointer to an <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.
+
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>FA_ENTRY entry = pAnalysis-&gt;GetNext(NULL, (FA_TAG)0x400, (FA_TAG)0xFFFFFF00);
+
+while(NULL != entry)
+{
+   // Do something with the entry.
+
+   entry = pAnalysis-&gt;GetNext(entry, (FA_TAG)0x400, (FA_TAG)0xFFFFFF00);
+}</pre>
+</td>
+</tr>
+</table></span></div>
+<b>Example 3</b>
+
+You can create your own custom tags in the range 0xA0000001 through 0xAFFFFFFF.
+
+The following example shows how to find all failure analysis entries that have custom tags. In other words, the code finds all entries with tags that satisfy this condition:
+
+<code>entry-&gt;Tag &amp; 0xF0000000 == 0xA0000000</code>
+
+Entries that have tags 0xA0000001, 0xA0000002, ... 0xAFFFFFF satisfy the condition. 
+
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>
+FA_ENTRY entry = pAnalysis-&gt;GetNext(NULL, (FA_TAG)0xA0000000, (FA_TAG)0xF0000000);
+
+while(NULL != entry)
+{
+   // Do something with the Entry
+
+   entry = pAnalysis-&gt;GetNext(entry, (FA_TAG)0xA0000000, (FA_TAG)0xF0000000);
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -120,15 +194,25 @@ DEBUG_FLR_FILE_LINE,
 
 ## See Also
 
-<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
-
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
+
+
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj983422">NextEntry</a>
 
-<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
+
+
+
+<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
+
+
 
  
 

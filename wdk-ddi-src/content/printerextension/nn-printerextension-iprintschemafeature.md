@@ -54,7 +54,11 @@ Exposes a Print Schema Feature element.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaFeature.get_DisplayUI](nf-printerextension-iprintschemafeature-get_displayui.md) | Gets the setting that indicates whether or not to show the print UI. |
+| [printerextension.IPrintSchemaFeature.get_SelectedOption](nf-printerextension-iprintschemafeature-get_selectedoption.md) | Changes the selected option of the Print Schema Feature element to the specified IPrintSchemaOption element. |
+| [printerextension.IPrintSchemaFeature.get_SelectionType](nf-printerextension-iprintschemafeature-get_selectiontype.md) | Gets the selection type of the Feature. |
 | [printerextension.IPrintSchemaFeature.GetOption](nf-printerextension-iprintschemafeature-getoption.md) | Gets the option with the given name. |
+| [printerextension.IPrintSchemaFeature.put_SelectedOption](nf-printerextension-iprintschemafeature-put_selectedoption.md) | Changes the selected option of the Print Schema Feature element to the specified IPrintSchemaOption element. |
 
 ## Remarks
 
@@ -69,13 +73,21 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/3BD7B8D6-B06F-492F-A73E-DA0799387B2A">IPrintSchemaTicket::GetFeatureByKeyName</a>
+
+
+
 <a href="https://msdn.microsoft.com/AC6434F5-0892-4426-98BB-BC02AD17917B">IPrintSchemaCapabilities::GetFeature</a>
+
+
 
 <a href="https://msdn.microsoft.com/2E65BDF2-9539-402B-AF19-8CBC84F9C018">IPrintSchemaTicket::GetFeature</a>
 
-<a href="https://msdn.microsoft.com/3BD7B8D6-B06F-492F-A73E-DA0799387B2A">IPrintSchemaTicket::GetFeatureByKeyName</a>
+
 
 <a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: B964B836-68C1-4254-963C-8D46ACE64107
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pofxactivatecomponent, PO_FX_FLAG_ASYNC_ONLY, PoFxActivateComponent routine [Kernel-Mode Driver Architecture], PO_FX_FLAG_BLOCKING, wdm/PoFxActivateComponent, PoFxActivateComponent
+ms.keywords: wdm/PoFxActivateComponent, PoFxActivateComponent, kernel.pofxactivatecomponent, PO_FX_FLAG_BLOCKING, PO_FX_FLAG_ASYNC_ONLY, PoFxActivateComponent routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,6 +73,7 @@ The index that identifies the component. This parameter is an index into the <b>
 The flags for the activation operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:
 
 These two flag bits are mutually exclusive. For more information, see Remarks.
+
 <table>
 <tr>
 <th>Value</th>
@@ -143,13 +144,23 @@ PoFx notifies the driver when a transition between the active condition and idle
 
 <a href="..\wdm\nf-wdm-pofxidlecomponent.md">PoFxIdleComponent</a>
 
+
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>
 
-<a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a>
+
+
+
+<a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
+
+
 
  
 

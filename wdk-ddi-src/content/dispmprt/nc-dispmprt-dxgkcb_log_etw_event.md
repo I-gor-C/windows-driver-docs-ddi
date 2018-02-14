@@ -40,7 +40,7 @@ apiname:
 -	DxgkCbLogEtwEvent
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -92,6 +92,35 @@ To enable or disable event logging, call the <a href="..\dispmprt\nc-dispmprt-dx
 
 If <i>EventBufferSize</i> is less than or equal to 256, <i>DxgkCbLogEtwEvent</i> can be called an any IRQL. If <i>EventBufferSize</i> is greater than 256, <i>DxgkCbLogEtwEvent</i> must be called at IRQL = PASSIVE_LEVEL.
 
+
+#### Examples
+
+The following code example shows how to log an event with the event logger.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>// {A7BF27A0-7401-4733-9FED-FDB51067FECC}
+DEFINE_GUID(R200_DUMMY_LOGGING,
+0xa7bf27a0, 0x7401, 0x4733, 0x9f, 0xed, 0xfd, 0xb5, 0x10, 0x67, 0xfe, 0xcc);
+
+VOID
+DummyTrace(
+    HW_DEVICE_EXTENSION* Adapter
+    )
+{
+    Adapter-&gt;ddiCallback.DxgkCbLogEtwEvent(&amp;R200_DUMMY_LOGGING,
+  EVENT_TRACE_TYPE_INFO,
+  0,
+  NULL);
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -103,6 +132,8 @@ If <i>EventBufferSize</i> is less than or equal to 256, <i>DxgkCbLogEtwEvent</i>
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_control_etw_logging.md">DxgkDdiControlEtwLogging</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f83a9a57-be44-4aa0-bb2e-740f48d82e06
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmbuildmdlfornonpagedpool, MmBuildMdlForNonPagedPool routine [Kernel-Mode Driver Architecture], wdm/MmBuildMdlForNonPagedPool, MmBuildMdlForNonPagedPool, k106_58d8437c-b6da-4b88-85a4-300392fb58f9.xml
+ms.keywords: MmBuildMdlForNonPagedPool routine [Kernel-Mode Driver Architecture], k106_58d8437c-b6da-4b88-85a4-300392fb58f9.xml, MmBuildMdlForNonPagedPool, wdm/MmBuildMdlForNonPagedPool, kernel.mmbuildmdlfornonpagedpool
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,17 +93,31 @@ A driver can use the <b>MmMapLockedPagesSpecifyCache</b> routine to map an MDL t
 
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
-<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
+
 
 <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
 
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
+
+
+
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
+
+
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+
 
  
 

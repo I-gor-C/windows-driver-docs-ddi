@@ -73,6 +73,7 @@ NTSTATUS DxgkddiControlinterrupt2(
 ## Return Value
 
 <i>DxgkDdi_ControlInterrupt2</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

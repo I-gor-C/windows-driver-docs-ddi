@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: E805581C-8DFF-4690-8BBF-6037A707F58C
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: windot11/DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, netvista.dot11_provision_discovery_request_send_complete_parameters, _DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS
+ms.keywords: DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, windot11/DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, netvista.dot11_provision_discovery_request_send_complete_parameters, *PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS"
+req.typenames: DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -70,6 +70,7 @@ The dialog token used for the provision discovery request packet. This token mus
 `Header`
 
 The type, revision, and size of the <b>DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -118,9 +119,13 @@ The offset, in bytes,  of the array of additional information elements (IEs) tha
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439783">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE</a>
+
+
+
 <a href="https://msdn.microsoft.com/69490609-60CB-426F-8ED7-F8B35CDFCE2A">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439783">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE</a>
+
 
  
 

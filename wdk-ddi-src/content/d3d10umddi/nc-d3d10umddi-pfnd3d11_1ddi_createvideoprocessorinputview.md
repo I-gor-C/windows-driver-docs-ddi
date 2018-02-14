@@ -40,7 +40,7 @@ apiname:
 -	CreateVideoProcessorInputView
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -83,6 +83,7 @@ HRESULT Pfnd3d111DdiCreatevideoprocessorinputview(
 ## Return Value
 
 <b>CreateVideoProcessorInputView</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -152,7 +153,11 @@ When the runtime  calls <i>CreateVideoProcessorInputView</i>, it passes the hand
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessorinputviewsize.md">CalcPrivateVideoProcessorInputViewSize</a>
 
+
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessorinputview.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORINPUTVIEW</a>
+
+
 
  
 

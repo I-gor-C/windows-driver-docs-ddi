@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: C6C693CC-D9C0-4EE8-9F8C-07D8665C673D
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: GUID, ks/KsAcquireCachedMdl, stream.ksacquirecachedmdl, KsAcquireCachedMdl, PVOID, KsAcquireCachedMdl function [Streaming Media Devices]
+ms.keywords: KsAcquireCachedMdl, PVOID, ks/KsAcquireCachedMdl, KsAcquireCachedMdl function [Streaming Media Devices], stream.ksacquirecachedmdl, GUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,7 @@ The GUID extracted from the <b>MFSampleExtension_MDLCacheCookie</b> attribute it
 `CancelRoutine`
 
 Cancel routine, a callback function supplied by the Avstream miniport driver. This function is called when the state of the pin generating the sample is going to STOP state.  The signature of the cancel routine is as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -92,9 +93,11 @@ VOID
 </tr>
 </table></span></div>
 
+
 #### GUID
 
 GUID passed in the <b>KsAcquireCachedMdl</b> function by the Avstream miniport driver.
+
 
 
 #### PVOID

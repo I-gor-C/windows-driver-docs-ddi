@@ -72,10 +72,12 @@ D3DKMT_HANDLE DxgkcbGethandleparent(
 If <i>DxgkCbGetHandleParent</i> returns a <b>NULL</b> handle, the DirectX graphics kernel subsystem was unable to resolve the handle to the parent resource because, for example, of the following possible reasons:
 
 
+
 <ul>
 <li>An invalid handle was received from the user-mode display driver because of a malicious attack or some other bug.</li>
 <li>Allocations had lifetime issues. </li>
-</ul>If a <b>NULL</b> handle is returned, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.
+</ul>
+If a <b>NULL</b> handle is returned, the display miniport driver should fail its currently running DDI function with STATUS_INVALID_HANDLE.
 
 ## Remarks
 

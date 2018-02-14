@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7B58F050-2AF4-4BD5-95AB-254BCAA865F6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ntddstor/PSTORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY, ntddstor/STORAGE_HW_FIRMWARE_INFO_QUERY, PSTORAGE_HW_FIRMWARE_INFO_QUERY structure pointer [Storage Devices], storage.storage_hw_firmware_info_query, STORAGE_HW_FIRMWARE_INFO_QUERY structure [Storage Devices], *PSTORAGE_HW_FIRMWARE_INFO_QUERY, PSTORAGE_HW_FIRMWARE_INFO_QUERY, _STORAGE_HW_FIRMWARE_INFO_QUERY
+ms.keywords: STORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY structure [Storage Devices], ntddstor/PSTORAGE_HW_FIRMWARE_INFO_QUERY, PSTORAGE_HW_FIRMWARE_INFO_QUERY structure pointer [Storage Devices], *PSTORAGE_HW_FIRMWARE_INFO_QUERY, ntddstor/STORAGE_HW_FIRMWARE_INFO_QUERY, PSTORAGE_HW_FIRMWARE_INFO_QUERY, _STORAGE_HW_FIRMWARE_INFO_QUERY, storage.storage_hw_firmware_info_query
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	STORAGE_HW_FIRMWARE_INFO_QUERY
 product: Windows
 targetos: Windows
-req.typenames: STORAGE_HW_FIRMWARE_INFO_QUERY, *PSTORAGE_HW_FIRMWARE_INFO_QUERY
+req.typenames: "*PSTORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY"
 ---
 
 # _STORAGE_HW_FIRMWARE_INFO_QUERY structure
@@ -62,6 +62,7 @@ typedef struct _STORAGE_HW_FIRMWARE_INFO_QUERY {
 `Flags`
 
 The flags associated with the query. The following are flags that can be set in this member.
+
 <table>
 <tr>
 <th>Flag</th>

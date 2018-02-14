@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: D72D6C06-DD6A-4051-9AD0-FD1E240C164A
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dumddi/D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, display.d3dddiarg_checkpresentdurationsupport, D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices]
+ms.keywords: d3dumddi/D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices], D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, display.d3dddiarg_checkpresentdurationsupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -95,6 +95,8 @@ The difference between <b>DesiredPresentDuration</b> and <b>ClosestSmallerDurati
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkpresentdurationsupport.md">CheckPresentDurationSupport</a>
+
+
 
  
 

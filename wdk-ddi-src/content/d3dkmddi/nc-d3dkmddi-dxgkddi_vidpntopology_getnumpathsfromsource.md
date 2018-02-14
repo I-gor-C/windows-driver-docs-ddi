@@ -78,6 +78,7 @@ NTSTATUS DxgkddiVidpntopologyGetnumpathsfromsource(
 ## Return Value
 
 The <b>pfnGetNumPathsFromSource</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,6 +140,8 @@ The D3DDDI_VIDEO_PRESENT_SOURCE_ID data type is defined in <i>D3dukmdt.h</i>.
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_getnumpaths.md">pfnGetNumPaths</a>
+
+
 
  
 

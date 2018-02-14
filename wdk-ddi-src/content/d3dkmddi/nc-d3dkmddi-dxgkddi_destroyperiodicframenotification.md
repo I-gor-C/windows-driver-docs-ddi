@@ -68,6 +68,7 @@ A structure of type <i>PDXGKARG_DESTROYPERIODICFRAMENOTIFICATION</i> containing 
 ## Return Value
 
 DXGKDDI_DESTROYPERIODICFRAMENOTIFICATION returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

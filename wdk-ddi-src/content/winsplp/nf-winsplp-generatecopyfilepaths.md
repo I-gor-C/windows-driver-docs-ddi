@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 61274493-1ec4-483b-85fa-f6087cf0631e
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GenerateCopyFilePaths, poprfnc_35a0e3c2-1841-4e84-b980-c3b13592c854.xml, print.generatecopyfilepaths, winsplp/GenerateCopyFilePaths, GenerateCopyFilePaths function [Print Devices]
+ms.keywords: GenerateCopyFilePaths, winsplp/GenerateCopyFilePaths, poprfnc_35a0e3c2-1841-4e84-b980-c3b13592c854.xml, GenerateCopyFilePaths function [Print Devices], print.generatecopyfilepaths
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,6 +95,7 @@ Caller-supplied address containing the length of the buffer pointed to by <i>psz
 `pszTargetDir`
 
 For input, receives a caller-supplied pointer to a string representing the client directory path to which files are to be copied. The following rules apply:
+
 <ul>
 <li>
 When the function is called on the server, this path is relative to PRINT$.
@@ -104,7 +105,8 @@ When the function is called on the server, this path is relative to PRINT$.
 When the function is called on the client, the string contains a complete path.
 
 </li>
-</ul>For output, the function can modify this string.
+</ul>
+For output, the function can modify this string.
 
 `pcchTargetDirSize`
 
@@ -117,9 +119,11 @@ Caller-supplied flag. Can be one of the following:
 
 
 
+
 #### COPYFILE_FLAG_CLIENT_SPOOLER
 
 Indicates the function is being called by the client's spooler.
+
 
 
 #### COPYFILE_FLAG_SERVER_SPOOLER
@@ -154,6 +158,8 @@ If no modifications to the source or destination directories are needed, the fun
 ## See Also
 
 <a href="..\winsplp\nf-winsplp-spoolercopyfileevent.md">SpoolerCopyFileEvent</a>
+
+
 
  
 

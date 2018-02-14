@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 89fc8319-64ec-4e9d-8863-e5140e9f7a44
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dhal_dp2settexlod, _D3DHAL_DP2SETTEXLOD, *LPD3DHAL_DP2SETTEXLOD, D3DHAL_DP2SETTEXLOD, d3dstrct_8b7c348f-b058-4cd8-ac49-788765e4fa15.xml, d3dhal/D3DHAL_DP2SETTEXLOD, D3DHAL_DP2SETTEXLOD structure [Display Devices]
+ms.keywords: d3dstrct_8b7c348f-b058-4cd8-ac49-788765e4fa15.xml, _D3DHAL_DP2SETTEXLOD, d3dhal/D3DHAL_DP2SETTEXLOD, D3DHAL_DP2SETTEXLOD, display.d3dhal_dp2settexlod, D3DHAL_DP2SETTEXLOD structure [Display Devices], *LPD3DHAL_DP2SETTEXLOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,7 +77,11 @@ Used only for driver-managed textures. This structure contains a surface handle 
 
 D3DDP2OP_SETTEXLOD
 
+
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+
 
  
 

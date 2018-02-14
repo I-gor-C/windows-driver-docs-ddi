@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e5dc54a6-e26a-455b-9990-92f5cfece923
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: stream.iksdevicefunctions_registeradapterobjectex, RegisterAdapterObjectEx method [Streaming Media Devices], RegisterAdapterObjectEx, ks/IKsDeviceFunctions::RegisterAdapterObjectEx, RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions interface, avintfc_ffa27a2d-8330-498f-bec2-dbde3c665671.xml, IKsDeviceFunctions, IKsDeviceFunctions::RegisterAdapterObjectEx, IKsDeviceFunctions interface [Streaming Media Devices], RegisterAdapterObjectEx method
+ms.keywords: RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions, ks/IKsDeviceFunctions::RegisterAdapterObjectEx, IKsDeviceFunctions::RegisterAdapterObjectEx, IKsDeviceFunctions interface [Streaming Media Devices], RegisterAdapterObjectEx method, avintfc_ffa27a2d-8330-498f-bec2-dbde3c665671.xml, RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions interface, stream.iksdevicefunctions_registeradapterobjectex, RegisterAdapterObjectEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -63,7 +63,7 @@ NTSTATUS RegisterAdapterObjectEx(
 
 `AdapterObject`
 
-Pointer to the ADAPTER_OBJECT for the device. Must be acquired through <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> before calling <b>RegisterAdapterObjectEx</b>.
+Pointer to the ADAPTER_OBJECT for the device. Must be acquired through <a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a> before calling <b>RegisterAdapterObjectEx</b>.
 
 `DeviceDescription`
 
@@ -103,6 +103,8 @@ Also see <a href="https://msdn.microsoft.com/1173a83f-8d9e-4678-bfb5-f2fb91e827b
 ## See Also
 
 <a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>
+
+
 
  
 

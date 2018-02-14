@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 07fc3ae1-325a-4e50-a83d-9e70a8d63aaa
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_e3257473-eeae-4912-b3e1-8dd5ceb7430e.xml, kernel.ioallocateerrorlogentry, IoAllocateErrorLogEntry, IoAllocateErrorLogEntry routine [Kernel-Mode Driver Architecture], wdm/IoAllocateErrorLogEntry
+ms.keywords: IoAllocateErrorLogEntry routine [Kernel-Mode Driver Architecture], IoAllocateErrorLogEntry, kernel.ioallocateerrorlogentry, wdm/IoAllocateErrorLogEntry, k104_e3257473-eeae-4912-b3e1-8dd5ceb7430e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -66,7 +66,9 @@ Pointer to a device object representing the device on which an I/O error occurre
 `EntrySize`
 
 Specifies the size, in bytes, of the error log entry to be allocated. This value cannot exceed ERROR_LOG_MAXIMUM_SIZE. 
-<div class="alert"><b>Warning</b>  <i>EntrySize</i> is a UCHAR value. If you specify a larger value, the compiler will silently truncate that value to a (wrong) UCHAR. </div><div> </div>
+
+<div class="alert"><b>Warning</b>  <i>EntrySize</i> is a UCHAR value. If you specify a larger value, the compiler will silently truncate that value to a (wrong) UCHAR. </div>
+<div> </div>
 
 
 ## Return Value
@@ -75,7 +77,7 @@ Specifies the size, in bytes, of the error log entry to be allocated. This value
 
 ## Remarks
 
-The driver must first fill in the packet with information about the error, then call <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> to post the entry to the error log. The error log entry buffer is automatically freed once the log entry is recorded. Entry buffers that are not going to be written to the log can be freed by using <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>.
+The driver must first fill in the packet with information about the error, then call <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> to post the entry to the error log. The error log entry buffer is automatically freed once the log entry is recorded. Entry buffers that are not going to be written to the log can be freed by using <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>.
 
 An error log entry consists of a variable-length <a href="..\wdm\ns-wdm-_io_error_log_packet.md">IO_ERROR_LOG_PACKET</a> structure, possibly followed by one or more zero-counted Unicode strings. The Event Viewer inserts these strings into the error message it displays for the entry. <b>IO_ERROR_LOG_PACKET</b> contains one variable-length member, the <b>DumpData</b> member. Thus, the value for <i>EntrySize</i> must be <b>sizeof</b>(<b>IO_ERROR_LOG_PACKET</b>) + size of the <b>DumpData</b> member + combined size of any driver-supplied insertion strings.
 
@@ -97,9 +99,15 @@ Drivers must not treat <b>IoAllocateErrorLogEntry</b> returning <b>NULL</b> as a
 
 <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>
 
+
+
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+
+
+
 <a href="..\wdm\ns-wdm-_io_error_log_packet.md">IO_ERROR_LOG_PACKET</a>
 
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+
 
  
 

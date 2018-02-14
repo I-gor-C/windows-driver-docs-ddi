@@ -40,7 +40,7 @@ apiname:
 -	PowerOnDumpDeviceCallback
 product: Windows
 targetos: Windows
-req.typenames: "*PVPCI_PNP_ID, VPCI_PNP_ID"
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 
@@ -89,7 +89,11 @@ The <i>PowerOnDumpDeviceCallback</i> routine is called at IRQL = HIGH_LEVEL with
 
 <a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
 
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_CRASHDUMP_DEVICE</a>
+
+
 
  
 

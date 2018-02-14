@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: E536B66D-EAF2-4377-8452-7D37A277E7C8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbchannelsetpointer, VmbChannelSetPointer, VmbChannelSetPointer function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelSetPointer
+ms.keywords: VmbChannelSetPointer, VmbChannelSetPointer function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsetpointer, vmbuskernelmodeclientlibapi/VmbChannelSetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbChannelSetPointer
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -93,6 +93,8 @@ This is intended to be a more efficient way for a client driver to retrieve clie
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelgetpointer.md">VmbChannelGetPointer</a>
+
+
 
  
 

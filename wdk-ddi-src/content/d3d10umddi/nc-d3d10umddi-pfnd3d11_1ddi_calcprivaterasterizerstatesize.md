@@ -40,7 +40,7 @@ apiname:
 -	CalcPrivateRasterizerStateSize(D3D11_1)
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -85,6 +85,8 @@ The size of the memory region that the driver requires for creating a rasterizer
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1_ddi_rasterizer_desc.md">D3D11_1_DDI_RASTERIZER_DESC</a>
+
+
 
  
 

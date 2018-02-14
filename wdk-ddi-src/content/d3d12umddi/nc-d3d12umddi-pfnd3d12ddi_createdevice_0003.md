@@ -73,6 +73,7 @@ HRESULT Pfnd3d12ddiCreatedevice0003(
 ## Return Value
 
 PFND3D12DDI_CREATEDEVICE_0003 returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

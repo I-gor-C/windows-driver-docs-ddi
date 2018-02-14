@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 235ec93e-5b3c-4a19-876f-f668271a56a5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.kequerygroupaffinity, wdm/KeQueryGroupAffinity, KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture], k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml
+ms.keywords: KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture], k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, wdm/KeQueryGroupAffinity, kernel.kequerygroupaffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	KeQueryGroupAffinity
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -82,9 +82,13 @@ A related routine, <a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryAct
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryActiveProcessors</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 
-<a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryActiveProcessors</a>
+
 
  
 

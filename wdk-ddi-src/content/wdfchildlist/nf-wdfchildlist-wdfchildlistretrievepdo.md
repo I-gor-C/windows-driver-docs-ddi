@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8e6042e4-b004-4250-b208-b0614d2d11fd
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfChildListRetrievePdo method, wdf.wdfchildlistretrievepdo, kmdf.wdfchildlistretrievepdo, DFDeviceObjectChildListRef_d61bfe9b-d201-48ae-89f4-4e1566c0a396.xml, wdfchildlist/WdfChildListRetrievePdo, PFN_WDFCHILDLISTRETRIEVEPDO, WdfChildListRetrievePdo
+ms.keywords: kmdf.wdfchildlistretrievepdo, wdf.wdfchildlistretrievepdo, PFN_WDFCHILDLISTRETRIEVEPDO, wdfchildlist/WdfChildListRetrievePdo, WdfChildListRetrievePdo, DFDeviceObjectChildListRef_d61bfe9b-d201-48ae-89f4-4e1566c0a396.xml, WdfChildListRetrievePdo method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,41 @@ The <b>WdfChildListRetrievePdo</b> method traverses the specified child list, lo
 
 For more information about child lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
 
+
+#### Examples
+
+The following code example searches a child list to find a child device whose identification description contains a specified serial number, and it obtains a handle to the device object that represents the child device.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PDO_IDENTIFICATION_DESCRIPTION  description;
+WDF_CHILD_RETRIEVE_INFO  info;
+WDFDEVICE  hChild;
+
+WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT(
+                                                 &amp;description.Header,
+                                                 sizeof(description)
+                                                 );
+
+description.SerialNo = DeviceSerialNumber;
+
+WDF_CHILD_RETRIEVE_INFO_INIT(
+                             &amp;info,
+                             &amp;description.Header
+                             );
+
+hChild = WdfChildListRetrievePdo(
+                                 list,
+                                 &amp;info
+                                 );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,9 +134,15 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_retrieve_info_init.md">WDF_CHILD_RETRIEVE_INFO_INIT</a>
+
 
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a>
+
+
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_retrieve_info_init.md">WDF_CHILD_RETRIEVE_INFO_INIT</a>
+
+
 
  
 

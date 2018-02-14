@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: bc39e3ae-6899-423d-be1d-b3322efface8
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfusb/WdfUsbInterfaceGetInterfaceNumber, DFUsbRef_035fbae3-67d4-4df6-8718-30851a0d60ca.xml, WdfUsbInterfaceGetInterfaceNumber, PFN_WDFUSBINTERFACEGETINTERFACENUMBER, kmdf.wdfusbinterfacegetinterfacenumber, WdfUsbInterfaceGetInterfaceNumber method, wdf.wdfusbinterfacegetinterfacenumber
+ms.keywords: wdf.wdfusbinterfacegetinterfacenumber, WdfUsbInterfaceGetInterfaceNumber, wdfusb/WdfUsbInterfaceGetInterfaceNumber, PFN_WDFUSBINTERFACEGETINTERFACENUMBER, kmdf.wdfusbinterfacegetinterfacenumber, DFUsbRef_035fbae3-67d4-4df6-8718-30851a0d60ca.xml, WdfUsbInterfaceGetInterfaceNumber method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfUsbInterfaceGetInterfaceNumber
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -80,6 +80,24 @@ For more information about interface numbers, see the USB specification.
 
 For more information about the <b>WdfUsbInterfaceGetInterfaceNumber</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
+
+#### Examples
+
+The following code example obtains the interface number of a specified USB interface object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>BYTE interfaceNumber; 
+
+interfaceNumber = WdfUsbInterfaceGetInterfaceNumber(UsbInterface);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,6 +112,8 @@ For more information about the <b>WdfUsbInterfaceGetInterfaceNumber</b> method a
 ## See Also
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5E870D10-A03B-4CD8-A2DD-54A6AB527DB2
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList, GetDescriptor, GetDescriptor method, IWDFCmResourceList interface, wudfddi/IWDFCmResourceList::GetDescriptor, umdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList interface, GetDescriptor method, GetDescriptor method, IWDFCmResourceList::GetDescriptor
+ms.keywords: umdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList::GetDescriptor, wdf.iwdfcmresourcelist_getdescriptor, GetDescriptor, IWDFCmResourceList interface, GetDescriptor method, IWDFCmResourceList, GetDescriptor method, wudfddi/IWDFCmResourceList::GetDescriptor, GetDescriptor method, IWDFCmResourceList interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -78,6 +78,13 @@ The <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOUR
 
 For more information about parsing hardware resources, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources-in-umdf-1-x-drivers">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
+
+#### Examples
+
+See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,6 +98,8 @@ For more information about parsing hardware resources, see <a href="https://docs
 ## See Also
 
 <a href="..\wudfddi\nn-wudfddi-iwdfcmresourcelist.md">IWDFCmResourceList</a>
+
+
 
  
 

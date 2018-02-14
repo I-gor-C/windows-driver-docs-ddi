@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 3f7b704f-be73-459a-bb5a-bbe649751900
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugBreakpoint interface [Windows Debugging], GetCommand method, GetCommand method [Windows Debugging], GetCommand method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2 interface [Windows Debugging], GetCommand method, GetCommand, IDebugBreakpoint2, debugger.getcommand, GetCommand method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint::GetCommand, dbgeng/IDebugBreakpoint::GetCommand, ComOther_4bb08d44-5a99-4177-b8a4-8926f1e45dcf.xml, IDebugBreakpoint2::GetCommand, dbgeng/IDebugBreakpoint2::GetCommand
+ms.keywords: GetCommand method [Windows Debugging], IDebugBreakpoint2 interface, GetCommand method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint2::GetCommand, GetCommand method [Windows Debugging], IDebugBreakpoint2, IDebugBreakpoint::GetCommand, debugger.getcommand, IDebugBreakpoint, dbgeng/IDebugBreakpoint::GetCommand, ComOther_4bb08d44-5a99-4177-b8a4-8926f1e45dcf.xml, GetCommand, IDebugBreakpoint2::GetCommand, IDebugBreakpoint interface [Windows Debugging], GetCommand method, IDebugBreakpoint2 interface [Windows Debugging], GetCommand method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -102,7 +102,8 @@ The method was successful, but the buffer was not large enough to hold the comma
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

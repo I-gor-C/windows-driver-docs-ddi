@@ -40,7 +40,7 @@ apiname:
 -	AcceptProcessorNotification
 product: Windows
 targetos: Windows
-req.typenames: "*PVPCI_PNP_ID, VPCI_PNP_ID"
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 
@@ -97,9 +97,15 @@ The IRQL at which the PEP's <i>AcceptProcessorNotification</i> routine is called
 
 <a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
 
-<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+
 
 <a href="..\pepfx\nf-pepfx-pofxregisterpluginex.md">PoFxRegisterPluginEx</a>
+
+
+
+<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+
+
 
  
 

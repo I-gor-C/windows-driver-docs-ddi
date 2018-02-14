@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 7f501e5c-13dd-418d-9b9f-f984aed45cc0
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfusb/WdfUsbTargetDeviceWdmGetConfigurationHandle, WdfUsbTargetDeviceWdmGetConfigurationHandle, kmdf.wdfusbtargetdevicewdmgetconfigurationhandle, PFN_WDFUSBTARGETDEVICEWDMGETCONFIGURATIONHANDLE, DFUsbRef_503d3873-7148-4084-b56e-199b7437511b.xml, WdfUsbTargetDeviceWdmGetConfigurationHandle method, wdf.wdfusbtargetdevicewdmgetconfigurationhandle
+ms.keywords: WdfUsbTargetDeviceWdmGetConfigurationHandle method, wdf.wdfusbtargetdevicewdmgetconfigurationhandle, wdfusb/WdfUsbTargetDeviceWdmGetConfigurationHandle, WdfUsbTargetDeviceWdmGetConfigurationHandle, kmdf.wdfusbtargetdevicewdmgetconfigurationhandle, DFUsbRef_503d3873-7148-4084-b56e-199b7437511b.xml, PFN_WDFUSBTARGETDEVICEWDMGETCONFIGURATIONHANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WdfUsbTargetDeviceWdmGetConfigurationHandle
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -80,6 +80,24 @@ The driver can call <b>WdfUsbTargetDeviceWdmGetConfigurationHandle</b> after it 
 
 For more information about the <b>WdfUsbTargetDeviceWdmGetConfigurationHandle</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
+
+#### Examples
+
+The following code example obtains a handle to the current configuration of a specified USB device.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>USBD_CONFIGURATION_HANDLE deviceConfigHdl;
+
+deviceConfigHdl = WdfUsbTargetDeviceWdmGetConfigurationHandle(UsbDevice);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -92,11 +110,17 @@ For more information about the <b>WdfUsbTargetDeviceWdmGetConfigurationHandle</b
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_select_interface.md">_URB_SELECT_INTERFACE</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+<a href="..\usb\ns-usb-_urb_select_interface.md">_URB_SELECT_INTERFACE</a>
+
+
 
  
 

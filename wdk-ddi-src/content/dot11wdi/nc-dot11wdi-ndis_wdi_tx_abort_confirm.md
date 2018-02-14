@@ -40,7 +40,7 @@ apiname:
 -	NdisWdiTxAbortConfirm
 product: Windows
 targetos: Windows
-req.typenames: SYNTH_STATS, *PSYNTH_STATS
+req.typenames: "*PSYNTH_STATS, SYNTH_STATS"
 ---
 
 
@@ -82,6 +82,8 @@ This callback function does not return a value.
 ## See Also
 
 <a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
+
+
 
  
 

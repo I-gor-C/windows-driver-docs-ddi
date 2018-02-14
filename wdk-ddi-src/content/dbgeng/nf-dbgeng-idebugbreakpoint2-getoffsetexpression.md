@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 9fbdfa42-7231-4281-ba19-a33e854cd801
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpression method, IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2, debugger.getoffsetexpression, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetOffsetExpression, GetOffsetExpression, dbgeng/IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2::GetOffsetExpression, ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface [Windows Debugging], GetOffsetExpression method
+ms.keywords: GetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2::GetOffsetExpression, debugger.getoffsetexpression, IDebugBreakpoint interface [Windows Debugging], GetOffsetExpression method, dbgeng/IDebugBreakpoint::GetOffsetExpression, dbgeng/IDebugBreakpoint2::GetOffsetExpression, ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint, IDebugBreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpression method, IDebugBreakpoint::GetOffsetExpression, GetOffsetExpression method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -102,7 +102,8 @@ The method was successful, but the buffer was not large enough to hold the expre
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

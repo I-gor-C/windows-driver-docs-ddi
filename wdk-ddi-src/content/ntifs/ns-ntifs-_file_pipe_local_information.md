@@ -7,8 +7,8 @@ old-location: ifsk\file_pipe_local_information.htm
 old-project: ifsk
 ms.assetid: 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: FILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, ntifs/PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], PFILE_PIPE_LOCAL_INFORMATION, ntifs/FILE_PIPE_LOCAL_INFORMATION, _FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers], *PFILE_PIPE_LOCAL_INFORMATION
+ms.date: 2/7/2018
+ms.keywords: FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION, ntifs/PFILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, ntifs/FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers], _FILE_PIPE_LOCAL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	FILE_PIPE_LOCAL_INFORMATION
 product: Windows
 targetos: Windows
-req.typenames: "*PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION"
+req.typenames: FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
 ---
 
 # _FILE_PIPE_LOCAL_INFORMATION structure
@@ -81,6 +81,7 @@ The maximum number of instances that can be created for this pipe. The first ins
 
 One of the following named pipe configurations.
 
+
 <table>
 <tr>
 <th>Value </th>
@@ -109,6 +110,7 @@ One of the following named pipe configurations.
 `NamedPipeEnd`
 
 The type of the named pipe end, which specifies whether this is the client or the server side of a named pipe.
+
 <table>
 <tr>
 <th>Value </th>
@@ -129,6 +131,7 @@ The type of the named pipe end, which specifies whether this is the client or th
 `NamedPipeState`
 
 The connection status for the named pipe. This state has one of the following values.
+
 <table>
 <tr>
 <th>Value </th>
@@ -160,6 +163,7 @@ The connection status for the named pipe. This state has one of the following va
 `NamedPipeType`
 
 One of the following named pipe types. 
+
 <table>
 <tr>
 <th>Value </th>

@@ -81,6 +81,8 @@ The <b>Information</b> field is set to <b>sizeof</b>(DISK_PERFORMANCE) when the 
 
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_performance_off.md">IOCTL_DISK_PERFORMANCE_OFF</a>
 
+
+
  
 
  

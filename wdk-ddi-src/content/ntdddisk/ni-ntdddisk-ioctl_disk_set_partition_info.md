@@ -80,6 +80,8 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field can be set 
 
 <a href="..\ntdddisk\ns-ntdddisk-_set_partition_information.md">SET_PARTITION_INFORMATION</a>
 
+
+
  
 
  

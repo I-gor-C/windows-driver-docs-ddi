@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiI2CTransmitDataToDisplay
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -88,6 +88,7 @@ The length, in bytes, of the data to be transmitted. This parameter must be betw
 ## Return Value
 
 <i>DxgkDdiI2CTransmitDataToDisplay</i> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes defined in Ntstatus.h. The following list gives some of the possible error codes that can be returned.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -166,6 +167,8 @@ If the display adapter supports HDCP, the <i>DxgkDdiI2CTransmitDataToDisplay</i>
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_receive_data_from_display.md">DxgkDdiI2CReceiveDataFromDisplay</a>
+
+
 
  
 

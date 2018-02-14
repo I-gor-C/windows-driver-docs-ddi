@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: EEAB636B-5565-4C2A-9EC7-4DC63EBB286F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: AuxKlibEnumerateSystemFirmwareTables, kernel.auxklibenumeratesystemfirmwaretables, aux_klib/AuxKlibEnumerateSystemFirmwareTables, AuxKlibEnumerateSystemFirmwareTables routine [Kernel-Mode Driver Architecture]
+ms.keywords: aux_klib/AuxKlibEnumerateSystemFirmwareTables, AuxKlibEnumerateSystemFirmwareTables routine [Kernel-Mode Driver Architecture], AuxKlibEnumerateSystemFirmwareTables, kernel.auxklibenumeratesystemfirmwaretables
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -64,6 +64,7 @@ NTSTATUS AuxKlibEnumerateSystemFirmwareTables(
 `FirmwareTableProviderSignature`
 
 The identifier of the firmware table provider to which the query is to be directed. This parameter can be one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,6 +118,7 @@ A pointer to a location to which the routine writes the number of bytes of data 
 ## Return Value
 
 <b>AuxKlibEnumerateSystemFirmwareTables</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -177,9 +179,15 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 
 <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a>
 
+
+
 <a href="..\aux_klib\nf-aux_klib-auxklibgetsystemfirmwaretable.md">AuxKlibGetSystemFirmwareTable</a>
+
+
 
  
 

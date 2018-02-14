@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 26de5890-edef-4e38-834a-9823327a74c2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlextendcorrelationvector, ntddk/RtlExtendCorrelationVector, RtlExtendCorrelationVector, RtlExtendCorrelationVector function [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.rtlextendcorrelationvector, RtlExtendCorrelationVector, ntddk/RtlExtendCorrelationVector, RtlExtendCorrelationVector function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	RtlExtendCorrelationVector
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -67,6 +67,7 @@ A pointer to a  <a href="..\ntddk\ns-ntddk-correlation_vector.md">CORRELATION_VE
 ## Return Value
 
 Returns an NTSTATUS value that indicates the success of failure of the operation. 
+
 <table>
 <tr>
 <th>Return code</th>

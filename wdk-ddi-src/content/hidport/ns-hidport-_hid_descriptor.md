@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 80a6a5d8-b13a-418d-a4bd-941d3a913c1e
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: PHID_DESCRIPTOR, _HID_DESCRIPTOR, hidport/HID_DEVICE_ATTRIBUTES, HID_DESCRIPTOR structure [Human Input Devices], hidstrct_07b2c0af-449d-484e-8aa8-9d7e3909d113.xml, hidport/PHID_DESCRIPTOR, PHID_DESCRIPTOR structure pointer [Human Input Devices], HID_DESCRIPTOR, hid.hid_descriptor, *PHID_DESCRIPTOR
+ms.keywords: "_HID_DESCRIPTOR, PHID_DESCRIPTOR, hidport/PHID_DESCRIPTOR, HID_DESCRIPTOR structure [Human Input Devices], hidstrct_07b2c0af-449d-484e-8aa8-9d7e3909d113.xml, HID_DESCRIPTOR, *PHID_DESCRIPTOR, hidport/HID_DEVICE_ATTRIBUTES, PHID_DESCRIPTOR structure pointer [Human Input Devices], hid.hid_descriptor"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	HID_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: HID_DESCRIPTOR, *PHID_DESCRIPTOR
+req.typenames: "*PHID_DESCRIPTOR, HID_DESCRIPTOR"
 ---
 
 # _HID_DESCRIPTOR structure
@@ -105,6 +105,8 @@ For information about HID descriptors, see the Universal Serial Bus (USB) standa
 ## See Also
 
 <a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 896209d0-d545-495b-b743-98c0b9d976ff
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PPTP_VENDOR_DATA_IN, image.ptp_vendor_data_in, ptpusd/PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN, ptpusd/PPTP_VENDOR_DATA_IN, wiastrct_b0ebb671-78d9-4224-8bde-893fb0afc9f8.xml, _PTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN structure pointer [Imaging Devices], PTP_VENDOR_DATA_IN structure [Imaging Devices]
+ms.keywords: ptpusd/PTP_VENDOR_DATA_IN, ptpusd/PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN structure [Imaging Devices], wiastrct_b0ebb671-78d9-4224-8bde-893fb0afc9f8.xml, image.ptp_vendor_data_in, PTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN structure pointer [Imaging Devices], _PTP_VENDOR_DATA_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -66,6 +66,7 @@ typedef struct _PTP_VENDOR_DATA_IN {
 `NextPhase`
 
 Indicates whether to read data from the device, write data to the device, or neither. This member can be set to one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -141,6 +142,8 @@ For more information about the opcodes used in the <b>OpCode</b> member, see PIM
 ## See Also
 
 <a href="..\ptpusd\ns-ptpusd-_ptp_vendor_data_out.md">PTP_VENDOR_DATA_OUT</a>
+
+
 
  
 

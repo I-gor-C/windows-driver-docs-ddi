@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 375158e7-3fb5-4e49-a7cf-ee9a1e5c07ca
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_2c3a3aa1-4ef4-4b7f-8cdf-b658a1128c35.xml, VideoPortReleaseSpinLockFromDpcLevel, video/VideoPortReleaseSpinLockFromDpcLevel, VideoPortReleaseSpinLockFromDpcLevel function [Display Devices], display.videoportreleasespinlockfromdpclevel
+ms.keywords: VideoPortReleaseSpinLockFromDpcLevel, video/VideoPortReleaseSpinLockFromDpcLevel, VideoPort_Functions_2c3a3aa1-4ef4-4b7f-8cdf-b658a1128c35.xml, display.videoportreleasespinlockfromdpclevel, VideoPortReleaseSpinLockFromDpcLevel function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,9 +90,13 @@ It is an error to call <b>VideoPortReleaseSpinLockFromDpcLevel</b> if the given 
 
 ## See Also
 
+<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+
+
+
 <a href="..\video\nf-video-videoportacquirespinlockatdpclevel.md">VideoPortAcquireSpinLockAtDpcLevel</a>
 
-<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+
 
  
 

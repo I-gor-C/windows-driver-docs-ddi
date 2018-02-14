@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>pfnCreateOverlayCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,13 +123,15 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
 ## Remarks
 
 The <b>pfnCreateOverlayCb</b> function returns a handle to the newly created kernel-mode overlay object in the <b>hKernelOverlay</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createoverlay.md">D3DDDICB_CREATEOVERLAY</a> structure that is pointed to by <i>pData</i>. The user-mode display driver passes this handle in calls to the following functions:
+
 <ul>
 <li>
 
@@ -148,7 +151,9 @@ The <b>pfnCreateOverlayCb</b> function returns a handle to the newly created ker
 
 
 </li>
-</ul>The following code example shows how to create an overlay object.
+</ul>
+The following code example shows how to create an overlay object.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -204,15 +209,25 @@ HRESULT CD3DContext::CreateOverlay(D3DDDIARG_CREATEOVERLAY* pCreateOverlay) {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flipoverlaycb.md">pfnFlipOverlayCb</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyoverlaycb.md">pfnDestroyOverlayCb</a>
+
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updateoverlaycb.md">pfnUpdateOverlayCb</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flipoverlaycb.md">pfnFlipOverlayCb</a>
+
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createoverlay.md">D3DDDICB_CREATEOVERLAY</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyoverlaycb.md">pfnDestroyOverlayCb</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
+
+
 
  
 

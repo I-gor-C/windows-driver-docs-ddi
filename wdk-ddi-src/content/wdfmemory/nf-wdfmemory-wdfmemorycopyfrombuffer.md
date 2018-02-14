@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 702d5239-48cd-4c11-90bc-a86ab27b8cfe
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfMemoryCopyFromBuffer method, PFN_WDFMEMORYCOPYFROMBUFFER, WdfMemoryCopyFromBuffer, wdf.wdfmemorycopyfrombuffer, kmdf.wdfmemorycopyfrombuffer, DFMemoryObjectRef_5e7dd10c-6902-4965-b868-8f3ba25d4fbc.xml, wdfmemory/WdfMemoryCopyFromBuffer
+ms.keywords: PFN_WDFMEMORYCOPYFROMBUFFER, wdf.wdfmemorycopyfrombuffer, kmdf.wdfmemorycopyfrombuffer, wdfmemory/WdfMemoryCopyFromBuffer, WdfMemoryCopyFromBuffer, WdfMemoryCopyFromBuffer method, DFMemoryObjectRef_5e7dd10c-6902-4965-b868-8f3ba25d4fbc.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ The number of bytes to copy from the source buffer to the destination buffer. Th
 ## Return Value
 
 <b>WdfMemoryCopyFromBuffer</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -124,7 +125,8 @@ The size of the destination buffer that the <i>DestinationOffset</i> parameter s
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -137,6 +139,40 @@ The framework verifies that the destination buffer is large enough to receive th
 For more information about framework memory objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
 
 If the source or destination buffer was allocated from the pageable memory pool, the <b>WdfMemoryCopyFromBuffer</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at any IRQL.
+
+
+#### Examples
+
+The following code example obtains a handle to the framework memory object that represents an I/O request's output buffer, and then it copies the contents of another buffer into the I/O request's output buffer.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDFMEMORY  memoryBuffer;
+NTSTATUS  status;
+
+status = WdfRequestRetrieveOutputMemory(
+                                        Request,
+                                        &amp;memoryBuffer
+                                        );
+if (!NT_SUCCESS(status)) {
+    goto Error;
+}
+status = WdfMemoryCopyFromBuffer(
+                                 memoryBuffer,
+                                 0,
+                                 deviceContext-&gt;Buffer,
+                                 Length
+                                 );
+if (!NT_SUCCESS(status)) {
+    goto Error;
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -153,7 +189,11 @@ If the source or destination buffer was allocated from the pageable memory pool,
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycopytobuffer.md">WdfMemoryCopyToBuffer</a>
 
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a>
+
+
 
  
 

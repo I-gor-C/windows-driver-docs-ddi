@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 60538544-6baf-4d23-a65f-5c5e82bd6f11
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugBreakpoint interface [Windows Debugging], RemoveFlags method, RemoveFlags, dbgeng/IDebugBreakpoint::RemoveFlags, IDebugBreakpoint2 interface [Windows Debugging], RemoveFlags method, RemoveFlags method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2, RemoveFlags method [Windows Debugging], IDebugBreakpoint::RemoveFlags, RemoveFlags method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::RemoveFlags, debugger.removeflags, IDebugBreakpoint2::RemoveFlags, ComOther_15793582-5533-4f63-8278-9556b160e6d2.xml
+ms.keywords: dbgeng/IDebugBreakpoint2::RemoveFlags, RemoveFlags method [Windows Debugging], IDebugBreakpoint interface, RemoveFlags, RemoveFlags method [Windows Debugging], RemoveFlags method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], RemoveFlags method, IDebugBreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], RemoveFlags method, IDebugBreakpoint, IDebugBreakpoint2::RemoveFlags, dbgeng/IDebugBreakpoint::RemoveFlags, debugger.removeflags, ComOther_15793582-5533-4f63-8278-9556b160e6d2.xml, IDebugBreakpoint::RemoveFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -66,6 +66,7 @@ Flags to remove from the breakpoint.  <i>Flags</i> is a bit field. The new value
 ## Return Value
 
 <b>RemoveFlags</b> might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -82,7 +83,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

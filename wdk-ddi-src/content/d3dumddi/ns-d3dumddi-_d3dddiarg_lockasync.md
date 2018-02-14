@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: dfe2ab95-e494-430d-81c7-8f209a37024f
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDIARG_LOCKASYNC structure [Display Devices], d3dumddi/D3DDDIARG_LOCKASYNC, _D3DDDIARG_LOCKASYNC, D3DDDIARG_LOCKASYNC, UMDisplayDriver_param_Structs_24593944-e4ac-4650-82d5-c5fc26a6a770.xml, display.d3dddiarg_lockasync
+ms.keywords: D3DDDIARG_LOCKASYNC, UMDisplayDriver_param_Structs_24593944-e4ac-4650-82d5-c5fc26a6a770.xml, d3dumddi/D3DDDIARG_LOCKASYNC, _D3DDDIARG_LOCKASYNC, display.d3dddiarg_lockasync, D3DDDIARG_LOCKASYNC structure [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -73,7 +73,9 @@ typedef struct _D3DDDIARG_LOCKASYNC {
 `Flags`
 
 [in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to lock the resource. 
-<div class="alert"><b>Note</b>    Some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</div><div> </div>
+
+<div class="alert"><b>Note</b>    Some flags are mutually exclusive with other flags. For more information, see the following Remarks section.</div>
+<div> </div>
 
 `GpuVirtualAddress`
 
@@ -107,6 +109,7 @@ This member is available beginning with Windows 7.
 
 ## Remarks
 The members of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a> structure that the <b>Flags</b> member specifies must adhere to the following rules:
+
 <ul>
 <li>
 The <b>NoOverwrite</b> bit-field flag must not be simultaneously set with the <b>Discard</b> bit-field flag.
@@ -126,11 +129,17 @@ Only one of the <b>RangeValid</b>, <b>AreaValid</b>, and <b>BoxValid</b> bit-fie
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a>
+
+
 
  
 

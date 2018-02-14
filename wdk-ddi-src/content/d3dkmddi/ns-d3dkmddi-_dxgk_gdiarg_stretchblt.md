@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 11988e4c-9f4b-44cc-bc09-ff6da62f3904
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: BLACKONWHITE, DXGK_GDIARG_STRETCHBLT, DXGK_GDIARG_STRETCHBLT structure [Display Devices], d3dkmddi/DXGK_GDIARG_STRETCHBLT, WHITEONBLACK, display.dxgk_gdiarg_stretchblt, _DXGK_GDIARG_STRETCHBLT, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml
+ms.keywords: display.dxgk_gdiarg_stretchblt, BLACKONWHITE, d3dkmddi/DXGK_GDIARG_STRETCHBLT, WHITEONBLACK, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, DXGK_GDIARG_STRETCHBLT structure [Display Devices], _DXGK_GDIARG_STRETCHBLT, DXGK_GDIARG_STRETCHBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -114,10 +114,12 @@ The x and y stretch ratios are computed respectively as the ratios of the x and 
 The HALFTONE mode and STRETCH_HALFTONE modes that are defined in <i>Wingdi.h</i> will never be set in the <b>Mode</b> member. The COLORONCOLOR mode can be set in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a> and <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a> structures.
 
 When sub-rectangles are transformed to the source surface space, the result is guaranteed to be within the source surface. The transformation of a sub-rectangle's coordinates in the destination surface to coordinates  in the source surface is defined by the following formulas, where
+
 <ul>
 <li>(Xd, Yd) is a point inside the sub-rectangle</li>
 <li>(Xs, Ys) is a point inside the source rectangle</li>
-</ul><pre class="syntax" xml:space="preserve"><code>float Ws = SrcRect.right â€“ SrcRect.left;
+</ul>
+<pre class="syntax" xml:space="preserve"><code>float Ws = SrcRect.right â€“ SrcRect.left;
 float Wd = DstRect.right â€“ DstRect.left;
 int Xs = round((Xd â€“ DstRect.left + 0.5) * Ws/Wd + SrcRect.left â€“ 0.5)
 OR
@@ -137,13 +139,21 @@ int Ys = truncate((Yd â€“ DstRect.top + 0.5) * Hs/Hd + SrcRect.top)</code><
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
+
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
+
+
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
+
+
 
  
 

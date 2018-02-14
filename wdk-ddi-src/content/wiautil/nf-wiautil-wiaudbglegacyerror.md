@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: c2a9bd35-ce3a-4640-9982-b470e98b4692
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauDbgLegacyError, wiauDbgLegacyError function [Imaging Devices], wiauFncs_03e81269-0a09-42c4-8d0d-1f808e6ef69e.xml, image.wiaudbglegacyerror, wiautil/wiauDbgLegacyError
+ms.keywords: wiauFncs_03e81269-0a09-42c4-8d0d-1f808e6ef69e.xml, wiauDbgLegacyError function [Imaging Devices], wiautil/wiauDbgLegacyError, image.wiaudbglegacyerror, wiauDbgLegacyError
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,8 @@ The <b>wiauDbgLegacyError</b> function is identical to the <a href="..\wiautil\n
 ## See Also
 
 <a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
+
+
 
  
 

@@ -89,6 +89,8 @@ The <b>DestroyVideoProcessor</b> function notifies the driver to destroy the han
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor.md">CreateVideoProcessor</a>
 
+
+
  
 
  

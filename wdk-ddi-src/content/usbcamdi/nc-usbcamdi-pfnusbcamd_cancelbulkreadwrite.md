@@ -40,7 +40,7 @@ apiname:
 -	USBCAMD_CancelBulkReadWrite
 product: Windows
 targetos: Windows
-req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -74,6 +74,7 @@ Specifies the index of the bulk pipe to cancel the read or write request.
 ## Return Value
 
 <b>USBCAMD_CancelBulkReadWrite</b> returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -112,6 +113,8 @@ The current IRQL &gt;= DISPATCH_LEVEL.
 ## See Also
 
 <a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
+
+
 
  
 

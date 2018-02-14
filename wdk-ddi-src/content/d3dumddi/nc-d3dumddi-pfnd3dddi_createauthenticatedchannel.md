@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CreateAuthenticatedChannel</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -130,6 +131,8 @@ The driver must keep track of the display device (<i>hDevice</i>) that was used 
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a>
+
+
 
  
 

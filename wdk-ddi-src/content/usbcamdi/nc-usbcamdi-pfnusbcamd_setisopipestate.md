@@ -40,7 +40,7 @@ apiname:
 -	USBCAMD_SetIsoPipeState
 product: Windows
 targetos: Windows
-req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -69,6 +69,7 @@ Pointer to device-specific context.
 `PipeStateFlags`
 
 Specifies the isochronous pipe state. This argument should be set to either of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -100,6 +101,7 @@ This flags indicates to start streaming.
 ## Return Value
 
 <b>USBCAMD_SetIsoPipeState</b> returns STATUS_SUCCESS if the call was successful. Other possible error codes include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -159,6 +161,8 @@ Using this function does not enable you to change the alternate setting within t
 ## See Also
 
 <a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
+
+
 
  
 

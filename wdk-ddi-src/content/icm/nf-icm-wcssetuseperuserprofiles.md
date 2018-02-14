@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: e14f944f-67fe-4eb8-85b2-9ba262e2e549
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: icm/WcsSetUsePerUserProfiles, WcsSetUsePerUserProfiles function [Print Devices], print.wcssetuseperuserprofiles, colorfnc_e56a2693-0dec-4b5a-96be-2934ec336d2b.xml, WcsSetUsePerUserProfiles
+ms.keywords: print.wcssetuseperuserprofiles, colorfnc_e56a2693-0dec-4b5a-96be-2934ec336d2b.xml, icm/WcsSetUsePerUserProfiles, WcsSetUsePerUserProfiles, WcsSetUsePerUserProfiles function [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,14 +70,17 @@ A flag value that specifies the class of the device. This parameter must take on
 
 
 
+
 #### CLASS_MONITOR
 
 Specifies a display device.
 
 
+
 #### CLASS_PRINTER
 
 Specifies a printer.
+
 
 
 #### CLASS_SCANNER
@@ -111,6 +114,8 @@ This function is executable in Least-Privileged User Account (LUA) context.
 ## See Also
 
 <a href="..\icm\nf-icm-wcsgetuseperuserprofiles.md">WcsGetUsePerUserProfiles</a>
+
+
 
  
 

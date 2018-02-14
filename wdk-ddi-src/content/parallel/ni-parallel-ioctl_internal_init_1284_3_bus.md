@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_INTERNAL_INIT_1284_3_BUS
 product: Windows
 targetos: Windows
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+req.typenames: "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 # IOCTL_INTERNAL_INIT_1284_3_BUS IOCTL
@@ -85,7 +85,11 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 <a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
 
+
+
 <a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+
+
 
  
 

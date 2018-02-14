@@ -81,6 +81,7 @@ A user-mode display driver for a device that supports vertex shader version 3.0 
 After the stream's frequency divisor is set--for example, to 2--the driver must fetch data from the stream and pass this data into applicable input vertex registers every 2 vertices. This divisor affects each element in the stream. 
 
 The driver uses the frequency divisor to compute the vertex offset into the vertex buffer according to the following formula: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -90,7 +91,9 @@ The driver uses the frequency divisor to compute the vertex offset into the vert
 <pre>VertexOffset = ((VertexIndex / Divider) * StreamStride) + StreamOffset </pre>
 </td>
 </tr>
-</table></span></div>For each vertex stream that is used, if the driver receives a start-vertex value during a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawprimitive.md">DrawPrimitive</a> function, the driver also divides this start-vertex value by the frequency divisor and factors the result in the formula. This start-vertex value is provided in the <b>VStart</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a> structure. The following formula includes the start-vertex value: 
+</table></span></div>
+For each vertex stream that is used, if the driver receives a start-vertex value during a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawprimitive.md">DrawPrimitive</a> function, the driver also divides this start-vertex value by the frequency divisor and factors the result in the formula. This start-vertex value is provided in the <b>VStart</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a> structure. The following formula includes the start-vertex value: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -101,7 +104,8 @@ The driver uses the frequency divisor to compute the vertex offset into the vert
        ((VertexIndex / Divider) * StreamStride) + StreamOffset </pre>
 </td>
 </tr>
-</table></span></div>Note that the preceding formulas use integer division. 
+</table></span></div>
+Note that the preceding formulas use integer division. 
 
 The driver ignores the setting of a stream's frequency divisor either for indexed primitives or if the driver supports only a vertex shader model that is earlier than version 3.0 (including fixed function).
 
@@ -116,11 +120,19 @@ The driver ignores the setting of a stream's frequency divisor either for indexe
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawprimitive.md">D3DDDIARG_DRAWPRIMITIVE</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawprimitive.md">DrawPrimitive</a>
+
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawprimitive.md">DrawPrimitive</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setstreamsourcefreq.md">D3DDDIARG_SETSTREAMSOURCEFREQ</a>
+
+
 
  
 

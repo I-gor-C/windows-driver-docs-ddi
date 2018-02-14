@@ -73,6 +73,7 @@ Identifies the adapter containing the overlay hardware.
 ## Return Value
 
 DXGKDDI_GETPOSTCOMPOSITIONCAPS returns the following values:
+
 <table>
 <tr>
 <th>Return code</th>

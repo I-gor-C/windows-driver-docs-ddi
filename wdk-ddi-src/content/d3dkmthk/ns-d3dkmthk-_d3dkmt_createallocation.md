@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3e698027-23f8-4765-a4ac-955cd4b24a70
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMT_CREATEALLOCATION, D3DKMT_CREATEALLOCATION, _D3DKMT_CREATEALLOCATION, D3DKMT_CREATEALLOCATION structure [Display Devices], display.d3dkmt_createallocation, OpenGL_Structs_983d37f8-47ad-40ea-b3da-2a211e9f0967.xml
+ms.keywords: d3dkmthk/D3DKMT_CREATEALLOCATION, OpenGL_Structs_983d37f8-47ad-40ea-b3da-2a211e9f0967.xml, D3DKMT_CREATEALLOCATION, D3DKMT_CREATEALLOCATION structure [Display Devices], _D3DKMT_CREATEALLOCATION, display.d3dkmt_createallocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,7 +75,9 @@ typedef struct _D3DKMT_CREATEALLOCATION {
 `Flags`
 
 [in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a> structure that identifies  attributes for creating the allocation, in bit-field flags.
-<div class="alert"><b>Note</b>  If  you set the <b>CreateShared</b> bit-field flag in <b>Flags</b>, you must also set the <b>CreateResource</b> bit-field flag.</div><div> </div>
+
+<div class="alert"><b>Note</b>  If  you set the <b>CreateShared</b> bit-field flag in <b>Flags</b>, you must also set the <b>CreateResource</b> bit-field flag.</div>
+<div> </div>
 
 `hDevice`
 
@@ -123,11 +125,17 @@ When the <b>CreateResource</b> bit-field flag is set in the <b>Flags</b> member,
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a>
 
+
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
+
+
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a>
+
+
 
  
 

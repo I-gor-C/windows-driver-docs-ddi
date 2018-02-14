@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 043c15dc-ebd7-4d91-8f65-d89d6064cc7c
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfInterruptSetExtendedPolicy, PFN_WDFINTERRUPTSETEXTENDEDPOLICY, wdf.wdfinterruptsetextendedpolicy, DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, kmdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy method, wdfinterrupt/WdfInterruptSetExtendedPolicy
+ms.keywords: PFN_WDFINTERRUPTSETEXTENDEDPOLICY, kmdf.wdfinterruptsetextendedpolicy, DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, WdfInterruptSetExtendedPolicy method, wdfinterrupt/WdfInterruptSetExtendedPolicy, WdfInterruptSetExtendedPolicy, wdf.wdfinterruptsetextendedpolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,6 +97,35 @@ If your driver creates interrupts in <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://msdn.microsoft.com/08460510-6e5f-4c02-8086-9caa9b4b4c2d">Handling Hardware Interrupts</a>.
 
+
+#### Examples
+
+The following code example calls <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a> to initialize a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure; sets values for the policy, priority, and target processor set; and calls <b>WdfInterruptSetExtendedPolicy</b>. The example sets normal priority for the interrupt and assigns the interrupt to processor 0 in processor group 2. 
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>#define AFFINITY_MASK(n) ((ULONG_PTR)1 &lt;&lt; (n))
+
+WDF_INTERRUPT_EXTENDED_POLICY myExtendedPolicy;
+
+WDF_INTERRUPT_EXTENDED_POLICY_INIT(&amp;myExtendedPolicy);
+myExtendedPolicy.Policy = WdfIrqPolicySpecifiedProcessors;
+myExtendedPolicy.Priority = WdfIrqPriorityNormal;
+myExtendedPolicy.TargetProcessorSetAndGroup.Mask = AFFINITY_MASK(0);
+myExtendedPolicy.TargetProcessorSetAndGroup.Group = 2;
+
+WdfInterruptSetExtendedPolicy(
+                              Interrupt,
+                              &amp;myExtendedPolicy
+ );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -111,6 +140,8 @@ For more information about handling interrupts in framework-based drivers, see <
 ## See Also
 
 <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2517b7a9-76f5-46f6-9225-18081cd1d357
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dddiarg_createvertexshaderfunc, D3DDDIARG_CREATEVERTEXSHADERFUNC, UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices]
+ms.keywords: UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], display.d3dddiarg_createvertexshaderfunc, _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC, d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,6 +77,8 @@ For more information about programming shader assemblers, see <a href="https://m
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvertexshaderfunc.md">CreateVertexShaderFunc</a>
+
+
 
  
 

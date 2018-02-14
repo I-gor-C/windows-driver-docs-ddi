@@ -73,6 +73,7 @@ A handle to a display device (that is, the graphics context).
 ## Return Value
 
 <b>pfnDestroySynchronizationObjectCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,7 +101,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other HRESULT values.
 
@@ -114,9 +116,13 @@ This function might also return other HRESULT values.
 
 ## See Also
 
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_destroysynchronizationobject.md">D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_destroysynchronizationobject.md">D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT</a>
+
 
  
 

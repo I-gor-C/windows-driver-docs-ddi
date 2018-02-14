@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: f9dc5379-0efa-4743-9460-bfb16945768b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasFncs_932e688a-da37-4a53-91ff-f0c0abca4f98.xml, wiasPrintDebugHResult, wiasPrintDebugHResult function [Imaging Devices], image.wiasprintdebughresult, wiamdef/wiasPrintDebugHResult
+ms.keywords: wiasPrintDebugHResult function [Imaging Devices], image.wiasprintdebughresult, wiasPrintDebugHResult, wiamdef/wiasPrintDebugHResult, wiasFncs_932e688a-da37-4a53-91ff-f0c0abca4f98.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasPrintDebugHResult
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -87,6 +87,8 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wias_lhresult.md">WIAS_LHRESULT</a>
+
+
 
  
 

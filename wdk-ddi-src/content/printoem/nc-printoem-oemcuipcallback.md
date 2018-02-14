@@ -88,6 +88,7 @@ The CPSUICBPARAM structure's <b>pOptItem</b> and <b>pCurItem</b> members identif
 When a callback function is called, it must determine if any of its customized OPTITEM structures are affected by the specified <b>Reason</b> value. If they are, the function should process the affected options and return one of the CPSUI_ACTION-prefixed return values described for the <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a> function type. Otherwise it should return CPSUICB_ACTION_NONE.
 
 The following additional rules apply to callback function return values:
+
 <ul>
 <li>
 If <b>Reason</b> contains CPSUICB_REASON_APPLYNOW, then the callback must return either CPSUICB_ACTION_ITEMS_APPLIED or CPSUICB_ACTION_NO_APPLY_EXIT. In the latter case, the printer driver interface immediately returns to CPSUI without calling any other user interface plug-in's callback function.

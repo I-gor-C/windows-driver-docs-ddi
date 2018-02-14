@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 02ab63fe-0c59-480c-a333-a9b14d83ad68
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols_b750f895-6583-49a6-be03-c373f89808a7.xml, GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntriesByLine method [Windows Debugging], debugger.getsourceentriesbyline, IDebugSymbols3::GetSourceEntriesByLine, dbgeng/IDebugSymbols3::GetSourceEntriesByLine, GetSourceEntriesByLine, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByLine method
+ms.keywords: dbgeng/IDebugSymbols3::GetSourceEntriesByLine, IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByLine method, GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols_b750f895-6583-49a6-be03-c373f89808a7.xml, IDebugSymbols3::GetSourceEntriesByLine, debugger.getsourceentriesbyline, GetSourceEntriesByLine, GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,6 +73,7 @@ Specifies the source file.  The symbols for each module in the target are querie
 `Flags`
 
 Specifies bit flags that control the behavior of this method.  <i>Flags</i> can be any combination of values from the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -120,7 +121,8 @@ Only return at most one result.  If DEBUG_GSEL_ALLOW_LOWER or DEBUG_GSEL_ALLOW_H
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 To use the default set of flags, set <i>Flags</i> to DEBUG_GSEL_DEFAULT.  This has all the flags in the previous table turned off.
 
@@ -140,6 +142,7 @@ Specifies the number of entries in the <i>Entries</i> array.
 ## Return Value
 
 These methods can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -195,11 +198,17 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548339">GetSourceFileLineOffsets</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548339">GetSourceFileLineOffsets</a>
+
+
+
 <a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
+
+
 
  
 

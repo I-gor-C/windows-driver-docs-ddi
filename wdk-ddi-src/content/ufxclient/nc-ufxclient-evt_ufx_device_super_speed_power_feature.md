@@ -7,7 +7,7 @@ old-location: buses\evt_ufx_device_super_speed_power_feature.htm
 old-project: usbref
 ms.assetid: 5A2B787B-13B8-48E9-B53E-7F6409820B88
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.evt_ufx_device_super_speed_power_feature, EvtUfxDeviceSuperSpeedPowerFeature callback function [Buses], EvtUfxDeviceSuperSpeedPowerFeature, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, ufxclient/EvtUfxDeviceSuperSpeedPowerFeature, PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function pointer [Buses], PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,6 +88,77 @@ This event callback is only required for controllers that support SuperSpeed ope
 
 The client driver indicates completion of this event by calling the <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a> method.
 
+
+#### Examples
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>
+EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE UfxDevice_EvtDeviceSuperSpeedPowerFeature;
+
+VOID
+UfxDevice_EvtDeviceSuperSpeedPowerFeature (
+    _In_ UFXDEVICE Device,
+    _In_ USHORT Feature,
+    _In_ BOOLEAN Set
+    )
+/*++
+
+Routine Description:
+
+    EvtDeviceSuperSpeedPowerFeature handler for the UFXDEVICE object.
+    
+    Handles a set or clear U1/U2 request from the host.  
+
+Arguments:
+
+    UfxDevice - UFXDEVICE object representing the device.
+
+    Feature - Indicates the feature being set or cleared.  Either U1 or U2 enable.
+
+    Set - Indicates if the feature should be set or cleared
+    
+--*/
+{
+    TraceEntry();
+
+    if (Feature == USB_FEATURE_U1_ENABLE) {
+        if (Set == TRUE) {
+            //
+            // #### TODO: Insert code to initiate U1  ####
+            //
+        } else {
+            //
+            // #### TODO: Insert code to exit U1 ####
+            //
+        }
+    } else if (Feature == USB_FEATURE_U2_ENABLE) {
+        if (Set == TRUE) {
+            //
+            // #### TODO: Insert code to initiate U2 ####
+            //
+        } else {
+            //
+            // #### TODO: Insert code to exit U2 ####
+            //
+        }
+    } else {
+        NT_ASSERT(FALSE);
+    }
+
+    UfxDeviceEventComplete(Device, STATUS_SUCCESS);
+    TraceExit();
+}
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -101,10 +172,14 @@ The client driver indicates completion of this event by calling the <a href="..\
 
 <a href="..\ufxclient\nf-ufxclient-ufxdeviceeventcomplete.md">UfxDeviceEventComplete</a>
 
+
+
 <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>
 
- 
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

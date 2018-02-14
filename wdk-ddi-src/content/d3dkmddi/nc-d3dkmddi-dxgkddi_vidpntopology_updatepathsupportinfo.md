@@ -73,6 +73,7 @@ NTSTATUS DxgkddiVidpntopologyUpdatepathsupportinfo(
 ## Return Value
 
 The <b>pfnUpdatePathSupportInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

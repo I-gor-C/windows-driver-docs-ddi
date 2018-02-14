@@ -79,7 +79,11 @@ For more information about <b>CoCreateInstance</b>, see the Microsoft Windows SD
 
 <a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
 
+
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
+
+
 
  
 

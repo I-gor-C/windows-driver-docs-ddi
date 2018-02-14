@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: CCC429B7-88BB-4DC3-86BC-6A5FCD405A5D
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorIoPriorityNormal, StorIoPriorityLow, PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], REQUEST_INFO_SEQUENTIAL_IO_FLAG, StorIoPriorityHigh, REQUEST_INFO_PAGING_IO_FLAG, storage.stor_request_info, REQUEST_INFO_WRITE_THROUGH_FLAG, StorIoPriorityCritical, _STOR_REQUEST_INFO_V1 structure [Storage Devices], storport/PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1, _STOR_REQUEST_INFO_V1, storport/_STOR_REQUEST_INFO_V1, PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1 structure [Storage Devices], REQUEST_INFO_TEMPORARY_FLAG, *PSTOR_REQUEST_INFO_V1, StorIoPriorityVeryLow, REQUEST_INFO_NO_CACHE_FLAG
+ms.keywords: storport/_STOR_REQUEST_INFO_V1, PSTOR_REQUEST_INFO_V1, REQUEST_INFO_NO_CACHE_FLAG, StorIoPriorityHigh, StorIoPriorityVeryLow, REQUEST_INFO_PAGING_IO_FLAG, REQUEST_INFO_TEMPORARY_FLAG, STOR_REQUEST_INFO_V1 structure [Storage Devices], StorIoPriorityLow, REQUEST_INFO_SEQUENTIAL_IO_FLAG, _STOR_REQUEST_INFO_V1 structure [Storage Devices], PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], REQUEST_INFO_WRITE_THROUGH_FLAG, StorIoPriorityNormal, *PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1, StorIoPriorityCritical, storport/PSTOR_REQUEST_INFO_V1, storage.stor_request_info, _STOR_REQUEST_INFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -68,6 +68,7 @@ typedef struct _STOR_REQUEST_INFO_V1 {
 `Flags`
 
 Flags set for handling the request. May be a combination of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,6 +141,7 @@ The length of the data in this request.
 `PriorityHint`
 
 The priority hint set for the IO request.
+
 <table>
 <tr>
 <th>Value</th>
@@ -226,6 +228,8 @@ The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPo
 ## See Also
 
 <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a>
+
+
 
  
 

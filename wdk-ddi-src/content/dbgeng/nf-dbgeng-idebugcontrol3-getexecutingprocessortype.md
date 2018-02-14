@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 62d0397b-da20-414e-accf-656749a771f6
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetExecutingProcessorType method [Windows Debugging], GetExecutingProcessorType method [Windows Debugging], IDebugControl interface, IDebugControl::GetExecutingProcessorType, GetExecutingProcessorType method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetExecutingProcessorType, GetExecutingProcessorType, IDebugControl_b2aad495-5a68-4888-bedb-da76edbfbe7a.xml, dbgeng/IDebugControl2::GetExecutingProcessorType, debugger.getexecutingprocessortype, IDebugControl2 interface [Windows Debugging], GetExecutingProcessorType method, GetExecutingProcessorType method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetExecutingProcessorType, IDebugControl3 interface [Windows Debugging], GetExecutingProcessorType method, IDebugControl3, dbgeng/IDebugControl::GetExecutingProcessorType, dbgeng/IDebugControl3::GetExecutingProcessorType, IDebugControl interface [Windows Debugging], GetExecutingProcessorType method
+ms.keywords: IDebugControl2::GetExecutingProcessorType, GetExecutingProcessorType method [Windows Debugging], IDebugControl2, IDebugControl::GetExecutingProcessorType, GetExecutingProcessorType, IDebugControl interface [Windows Debugging], GetExecutingProcessorType method, IDebugControl_b2aad495-5a68-4888-bedb-da76edbfbe7a.xml, IDebugControl3::GetExecutingProcessorType, GetExecutingProcessorType method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetExecutingProcessorType method, GetExecutingProcessorType method [Windows Debugging], IDebugControl interface, IDebugControl, dbgeng/IDebugControl::GetExecutingProcessorType, dbgeng/IDebugControl2::GetExecutingProcessorType, debugger.getexecutingprocessortype, IDebugControl2 interface [Windows Debugging], GetExecutingProcessorType method, dbgeng/IDebugControl3::GetExecutingProcessorType, GetExecutingProcessorType method [Windows Debugging], IDebugControl2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -67,6 +67,7 @@ Receives the processor type.  See <a href="https://msdn.microsoft.com/library/wi
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -98,13 +99,21 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545572">GetActualProcessorType</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545572">GetActualProcessorType</a>
+
 
  
 

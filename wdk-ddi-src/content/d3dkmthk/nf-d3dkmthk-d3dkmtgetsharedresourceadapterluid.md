@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 880bf5bd-eadc-480f-a10c-f6d57f670857
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtgetsharedresourceadapterluid, D3DKMTGetSharedResourceAdapterLuid function [Display Devices], d3dkmthk/D3DKMTGetSharedResourceAdapterLuid, D3DKMTGetSharedResourceAdapterLuid
+ms.keywords: D3DKMTGetSharedResourceAdapterLuid function [Display Devices], d3dkmthk/D3DKMTGetSharedResourceAdapterLuid, display.d3dkmtgetsharedresourceadapterluid, D3DKMTGetSharedResourceAdapterLuid
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -92,7 +93,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -109,6 +111,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getsharedresourceadapterluid.md">D3DKMT_GETSHAREDRESOURCEADAPTERLUID</a>
+
+
 
  
 

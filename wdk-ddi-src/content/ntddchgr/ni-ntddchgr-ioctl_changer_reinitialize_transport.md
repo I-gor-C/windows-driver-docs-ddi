@@ -80,6 +80,8 @@ The <b>Information</b> field is set to <b>sizeof</b>(CHANGER_ELEMENT). The <b>St
 
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 
+
+
  
 
  

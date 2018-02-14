@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: c5757dbb-16bf-46f9-836f-5a94089bbb1e
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetInstructionOffset2 method [Windows Debugging], IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, IDebugRegisters2::GetInstructionOffset2, GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset2 method, dbgeng/IDebugRegisters2::GetInstructionOffset2, debugger.getinstructionoffset2
+ms.keywords: IDebugRegisters2::GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], GetInstructionOffset2, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset2 method, GetInstructionOffset2 method [Windows Debugging], IDebugRegisters2 interface, debugger.getinstructionoffset2, IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, dbgeng/IDebugRegisters2::GetInstructionOffset2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -63,6 +63,7 @@ HRESULT GetInstructionOffset2(
 Specifies the register source to query.
 
 The possible values are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -110,6 +111,7 @@ Receives the location in the process's virtual address space of the current inst
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -145,9 +147,13 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546916">GetInstructionOffset</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546916">GetInstructionOffset</a>
+
 
  
 

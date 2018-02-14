@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>DepthFill</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -118,7 +119,11 @@ DirectX version 7.0 and earlier runtimes call the <b>DepthFill</b> function to f
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_depthfill.md">D3DDDIARG_DEPTHFILL</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
 
  
 

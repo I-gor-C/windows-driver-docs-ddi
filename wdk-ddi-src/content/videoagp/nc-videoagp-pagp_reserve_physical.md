@@ -40,7 +40,7 @@ apiname:
 -	AgpReservePhysical
 product: Windows
 targetos: Windows
-req.typenames: "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -75,6 +75,7 @@ Specifies the number of pages that the video port driver should reserve.
 `Caching`
 
 Specifies the type of caching that the system should use. This parameter can be set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -143,11 +144,17 @@ The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp_release_ph
 
 ## See Also
 
+<a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a>
+
+
+
 <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a>
+
+
 
 <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a>
 
-<a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a>
+
 
  
 

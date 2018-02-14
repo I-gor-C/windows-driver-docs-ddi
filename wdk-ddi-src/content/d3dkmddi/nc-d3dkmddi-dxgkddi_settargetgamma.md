@@ -74,7 +74,9 @@ A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_settargetgamma.md">DXGK
 ## Return Value
 
 If this routine succeeds, it returns STATUS_SUCCESS. 
-<div class="alert"><b>Note</b>  WDDM 2.2 has cap bits for each type of supported gamma ramp so unsupported types will be skipped by the OS. Therefore, if the type is supported there should be no reason to fail the call other than unavoidable failures like monitor unplug.</div><div> </div>
+
+<div class="alert"><b>Note</b>  WDDM 2.2 has cap bits for each type of supported gamma ramp so unsupported types will be skipped by the OS. Therefore, if the type is supported there should be no reason to fail the call other than unavoidable failures like monitor unplug.</div>
+<div> </div>
 
 ## Remarks
 

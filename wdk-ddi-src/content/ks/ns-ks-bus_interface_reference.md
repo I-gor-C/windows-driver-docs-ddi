@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 17c2c46c-ff79-4c80-82c9-c49b18426789
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], BUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, ks/BUS_INTERFACE_REFERENCE, ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, stream.bus_interface_reference, BUS_INTERFACE_REFERENCE structure [Streaming Media Devices], PBUS_INTERFACE_REFERENCE
+ms.keywords: BUS_INTERFACE_REFERENCE, ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, *PBUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, stream.bus_interface_reference, PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], PBUS_INTERFACE_REFERENCE, ks/BUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE structure [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,6 +77,7 @@ Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows
 
 ## Remarks
 A driver obtains a BUS_INTERFACE_REFERENCE interface by creating and sending an IRP_MJ_PNP request that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> minor function code. To do this, the driver should:
+
 <ul>
 <li>
 Allocate and zero-fill a BUS_INTERFACE_REFERENCE structure from the paged memory pool.

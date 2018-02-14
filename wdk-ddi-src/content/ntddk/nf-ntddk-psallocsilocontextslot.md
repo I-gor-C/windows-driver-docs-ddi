@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 835446D1-EB41-47BC-AA0F-54A9C029EFFE
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/PsAllocSiloContextSlot, PsAllocSiloContextSlot, kernel.psallocsilocontextslot, PsAllocSiloContextSlot routine [Kernel-Mode Driver Architecture]
+ms.keywords: PsAllocSiloContextSlot routine [Kernel-Mode Driver Architecture], kernel.psallocsilocontextslot, ntddk/PsAllocSiloContextSlot, PsAllocSiloContextSlot
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsAllocSiloContextSlot
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -61,7 +61,9 @@ NTSTATUS PsAllocSiloContextSlot(
 `Reserved`
 
 This parameter is reserved for future use and <b>must be set to zero</b>. 
-<div class="alert"><b>Warning</b>  Setting <i>Reserved</i> to a non-zero value causes the system to execute an <b>ASSERT</b> on a checked build.</div><div> </div>
+
+<div class="alert"><b>Warning</b>  Setting <i>Reserved</i> to a non-zero value causes the system to execute an <b>ASSERT</b> on a checked build.</div>
+<div> </div>
 
 `ReturnedContextSlot`
 
@@ -71,6 +73,7 @@ A pointer to a caller-allocated variable that receives the newly allocated slot 
 ## Return Value
 
 The following NT status codes are returned.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -115,6 +118,8 @@ Use of this API is uncommon because all silo monitors are assigned a storage slo
 ## See Also
 
 <a href="..\ntddk\nf-ntddk-psfreesilocontextslot.md">PsFreeSiloContextSlot</a>
+
+
 
  
 

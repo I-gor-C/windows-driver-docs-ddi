@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5ef00c92-7b32-473a-8401-4c02e864c181
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugDataSpaces_c434b12b-78ff-4f6a-ac69-6069dd273ba8.xml, IDebugDataSpaces4 interface [Windows Debugging], GetOffsetInformation method, GetOffsetInformation method [Windows Debugging], IDebugDataSpaces4 interface, GetOffsetInformation method [Windows Debugging], dbgeng/IDebugDataSpaces4::GetOffsetInformation, debugger.getoffsetinformation, IDebugDataSpaces4::GetOffsetInformation, GetOffsetInformation, IDebugDataSpaces4
+ms.keywords: IDebugDataSpaces4::GetOffsetInformation, GetOffsetInformation method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_c434b12b-78ff-4f6a-ac69-6069dd273ba8.xml, debugger.getoffsetinformation, dbgeng/IDebugDataSpaces4::GetOffsetInformation, GetOffsetInformation method [Windows Debugging], GetOffsetInformation, IDebugDataSpaces4 interface [Windows Debugging], GetOffsetInformation method, IDebugDataSpaces4
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,9 +73,11 @@ Specifies which information about the data is being queried.  This determines th
 
 
 
+
 #### DEBUG_OFFSINFO_VIRTUAL_SOURCE
 
 Returns the source of the target's virtual memory at <i>Offset</i>.  This is where the debugger engine reads the memory from.  <i>Space</i> must be set to DEBUG_DATA_SPACE_VIRTUAL.  A ULONG is returned to <i>Buffer</i>.  This ULONG can take the values listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -135,6 +137,7 @@ Receives the size, in bytes, of the information that is returned.  If <i>InfoSiz
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>

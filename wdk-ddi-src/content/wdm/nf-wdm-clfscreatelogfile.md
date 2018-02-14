@@ -86,6 +86,7 @@ If the stream is (or is to become) one of the streams of a multiplexed log, the 
 If you want to create a multiplexed log that has no streams for the moment, use a name of the form log:<i>physical log name</i>::, where <i>physical log name</i> is the path name, on the underlying file system, of the physical log to be created.
 
 The following list gives some examples of valid names.
+
 <ul>
 <li>
 "Log:c:\myLog" creates or opens a dedicated log and its one stream.
@@ -104,6 +105,7 @@ The following list gives some examples of valid names.
 `fDesiredAccess`
 
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that supplies the type of access the client will have (by using the pointer returned in <i>pplfoLog</i>) to the stream. If this parameter is zero, clients can query the stream for its attributes, but cannot read from or write to the stream. This parameter can be zero or any combination of the following flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -144,6 +146,7 @@ The client can mark the stream for deletion.
 `dwShareMode`
 
 The sharing mode of the stream, which can be zero (not shared) or any combination of the following flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -188,6 +191,7 @@ A pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESC
 `fCreateDisposition`
 
 The action to take that depends on whether the stream already exists. This parameter must be set to one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -228,6 +232,7 @@ Open an existing stream. Create the stream if it does not already exist.
 `fCreateOptions`
 
 A set of flags that specify options to apply when creating or opening the stream. This parameter can be zero or a compatible combination of the following flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -275,6 +280,7 @@ FILE_ATTRIBUTE_NORMAL or FILE_ATTRIBUTE_READONLY.
 
 A hint about the relationship between CLFS and the component creating or opening the stream. This parameter must be set to one of the following values:
 	 
+
 <table>
 <tr>
 <th>Value</th>
@@ -365,13 +371,21 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsdeletelogfile.md">ClfsDeleteLogFile</a>
+<a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>
 
-<a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
+
 
 <a href="..\wdm\nf-wdm-clfsdeletelogbypointer.md">ClfsDeleteLogByPointer</a>
 
-<a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>
+
+
+<a href="..\wdm\nf-wdm-clfsdeletelogfile.md">ClfsDeleteLogFile</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
+
+
 
  
 

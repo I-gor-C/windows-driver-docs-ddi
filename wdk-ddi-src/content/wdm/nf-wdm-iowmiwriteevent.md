@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6b98861c-b108-4b07-b494-e3647d03de4c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoWMIWriteEvent, kernel.iowmiwriteevent, k104_ec484b7e-1653-4054-8a54-021a94303ec4.xml, IoWMIWriteEvent routine [Kernel-Mode Driver Architecture], wdm/IoWMIWriteEvent
+ms.keywords: IoWMIWriteEvent routine [Kernel-Mode Driver Architecture], wdm/IoWMIWriteEvent, IoWMIWriteEvent, k104_ec484b7e-1653-4054-8a54-021a94303ec4.xml, kernel.iowmiwriteevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -66,6 +66,7 @@ Pointer to a <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_IT
 ## Return Value
 
 <b>IoWMIWriteEvent</b> returns a status code from the following list:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -139,7 +140,11 @@ Callers of this routine must be running at IRQL &lt;= APC_LEVEL, with one except
 
 <a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWmiDeviceObjectToProviderId</a>
 
+
+
 <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
+
+
 
  
 

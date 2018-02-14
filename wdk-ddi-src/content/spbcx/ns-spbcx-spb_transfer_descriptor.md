@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 3D370646-3879-4415-8D80-04D0B23839B0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: PSPB_TRANSFER_DESCRIPTOR structure pointer [Buses], spbcx/SPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR structure [Buses], spbcx/PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR, PSPB_TRANSFER_DESCRIPTOR, SPB.spb_transfer_descriptor
+ms.keywords: SPB.spb_transfer_descriptor, SPB_TRANSFER_DESCRIPTOR, spbcx/PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR structure [Buses], PSPB_TRANSFER_DESCRIPTOR, PSPB_TRANSFER_DESCRIPTOR structure pointer [Buses], spbcx/SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	SPB_TRANSFER_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR
+req.typenames: "*PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR"
 req.product: Windows 10 or later.
 ---
 
@@ -67,6 +67,7 @@ An optional delay, in microseconds, before this transfer begins. For more inform
 `Direction`
 
 The direction of the transfer.  This member is set to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a> enumeration values:
+
 <ul>
 <li><b>SpbTransferDirectionFromDevice</b></li>
 <li><b>SpbTransferDirectionToDevice</b></li>
@@ -93,11 +94,17 @@ The <b>DelayInUs</b> member specifies a delay before the start of the transfer. 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
+
+
 
  
 

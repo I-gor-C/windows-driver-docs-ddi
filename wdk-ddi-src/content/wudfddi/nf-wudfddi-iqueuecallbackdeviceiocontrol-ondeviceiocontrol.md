@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ed0eac1a-8e41-44c3-a538-9ec48492425f
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: umdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, OnDeviceIoControl, OnDeviceIoControl method, UMDFQueueObjectRef_2dd692cd-27fb-41fc-ab9d-2bb9db9b32bb.xml, IQueueCallbackDeviceIoControl, wudfddi/IQueueCallbackDeviceIoControl::OnDeviceIoControl, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl method, OnDeviceIoControl method, IQueueCallbackDeviceIoControl interface, IQueueCallbackDeviceIoControl::OnDeviceIoControl, wdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol
+ms.keywords: OnDeviceIoControl, wudfddi/IQueueCallbackDeviceIoControl::OnDeviceIoControl, UMDFQueueObjectRef_2dd692cd-27fb-41fc-ab9d-2bb9db9b32bb.xml, OnDeviceIoControl method, IQueueCallbackDeviceIoControl interface, IQueueCallbackDeviceIoControl::OnDeviceIoControl, IQueueCallbackDeviceIoControl, wdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, umdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, OnDeviceIoControl method, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -110,15 +110,25 @@ The driver can call the <a href="https://msdn.microsoft.com/library/windows/hard
 
 ## See Also
 
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+
+
+
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+
 
 <a href="..\wudfddi\nn-wudfddi-iqueuecallbackdeviceiocontrol.md">IQueueCallbackDeviceIoControl</a>
 
+
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 
  
 

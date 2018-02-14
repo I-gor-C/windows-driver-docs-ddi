@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: fba29b92-5735-4050-b690-3c25e4f57cd1
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisresetevent, NdisResetEvent function [Network Drivers Starting with Windows Vista], ndis_event_ref_2970c5ca-b236-41e4-b156-c283f4f637f9.xml, ndis/NdisResetEvent, NdisResetEvent
+ms.keywords: NdisResetEvent function [Network Drivers Starting with Windows Vista], ndis/NdisResetEvent, netvista.ndisresetevent, ndis_event_ref_2970c5ca-b236-41e4-b156-c283f4f637f9.xml, NdisResetEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisResetEvent
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -94,11 +94,17 @@ When an event is set to the
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
-
 <a href="..\ndis\nf-ndis-ndissetevent.md">NdisSetEvent</a>
 
+
+
+<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisinitializeevent.md">NdisInitializeEvent</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3d649cc5-6512-432c-9bd9-60e18507a873
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfRequestReuse, WdfRequestReuse method, wdf.wdfrequestreuse, wdfrequest/WdfRequestReuse, PFN_WDFREQUESTREUSE, DFRequestObjectRef_8815216b-4632-4cc8-8afd-c4b1412ddbad.xml, kmdf.wdfrequestreuse
+ms.keywords: DFRequestObjectRef_8815216b-4632-4cc8-8afd-c4b1412ddbad.xml, kmdf.wdfrequestreuse, WdfRequestReuse method, wdf.wdfrequestreuse, wdfrequest/WdfRequestReuse, WdfRequestReuse, PFN_WDFREQUESTREUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest-_wdf_reques
 ## Return Value
 
 <b>WdfRequestReuse</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,7 +104,8 @@ The driver supplied an IRP in the <a href="..\wdfrequest\ns-wdfrequest-_wdf_requ
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -116,6 +118,45 @@ A driver can reuse a request object after the original request has been complete
 If you want the reused request to have a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, the driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a> after calling <b>WdfRequestReuse</b>.
 
 For more information about <b>WdfRequestReuse</b>, see <a href="https://msdn.microsoft.com/9e3090a9-62d0-48b3-9f3b-7171dc6d2766">Reusing Framework Request Objects</a>.
+
+
+#### Examples
+
+The following code example is part of a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function that calls <b>WdfRequestReuse</b> so that the driver can reuse a driver-allocated request.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+MyRequestCompletionRoutine(
+    IN WDFREQUEST  Request,
+    IN WDFIOTARGET  Target,
+    PWDF_REQUEST_COMPLETION_PARAMS  CompletionParams,
+    IN WDFCONTEXT  Context
+    )
+{
+    WDF_REQUEST_REUSE_PARAMS  params;
+    NTSTATUS  status;
+...
+    WDF_REQUEST_REUSE_PARAMS_INIT(
+                                  &amp;params,
+                                  WDF_REQUEST_REUSE_NO_FLAGS,
+                                  STATUS_SUCCESS
+                                  );
+
+    status = WdfRequestReuse(
+                             Request,
+                             &amp;params
+                             );
+    ASSERT(NT_SUCCESS(status));
+...
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -130,17 +171,29 @@ For more information about <b>WdfRequestReuse</b>, see <a href="https://msdn.mic
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_init.md">WDF_REQUEST_REUSE_PARAMS_INIT</a>
-
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
 
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
 
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_init.md">WDF_REQUEST_REUSE_PARAMS_INIT</a>
+
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
+
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
+
+
 
  
 

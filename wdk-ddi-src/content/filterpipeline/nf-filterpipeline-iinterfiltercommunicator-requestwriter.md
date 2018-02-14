@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 1f0684f0-e15e-491f-ba09-314f831d7ba9
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: RequestWriter method [Print Devices], IInterFilterCommunicator interface, IInterFilterCommunicator interface [Print Devices], RequestWriter method, filterpipeline/IInterFilterCommunicator::RequestWriter, IInterFilterCommunicator, RequestWriter, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, print.iinterfiltercommunicator_requestwriter, RequestWriter method [Print Devices], IInterFilterCommunicator::RequestWriter
+ms.keywords: RequestWriter method [Print Devices], IInterFilterCommunicator interface, RequestWriter, IInterFilterCommunicator::RequestWriter, print.iinterfiltercommunicator_requestwriter, filterpipeline/IInterFilterCommunicator::RequestWriter, IInterFilterCommunicator, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, IInterFilterCommunicator interface [Print Devices], RequestWriter method, RequestWriter method [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,7 +81,11 @@ The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a hr
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554291">IPrintPipelineFilter::InitializeFilter</a>
 
+
+
 <a href="..\filterpipeline\nn-filterpipeline-iinterfiltercommunicator.md">IInterFilterCommunicator</a>
+
+
 
  
 

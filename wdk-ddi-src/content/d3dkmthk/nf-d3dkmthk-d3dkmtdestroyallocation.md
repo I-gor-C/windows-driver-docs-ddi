@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 249ca05c-406d-4d47-a266-222f7be1a883
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtdestroyallocation, D3DKMTDestroyAllocation function [Display Devices], d3dkmthk/D3DKMTDestroyAllocation, OpenGL_Functions_ecc5579c-3b0a-4c2c-9978-9f2591444c03.xml, D3DKMTDestroyAllocation
+ms.keywords: OpenGL_Functions_ecc5579c-3b0a-4c2c-9978-9f2591444c03.xml, D3DKMTDestroyAllocation function [Display Devices], display.d3dkmtdestroyallocation, D3DKMTDestroyAllocation, d3dkmthk/D3DKMTDestroyAllocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTDestroyAllocation</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -112,6 +114,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroyallocation.md">D3DKMT_DESTROYALLOCATION</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: C31681A0-17C6-4255-9068-7486A2101AB7
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, print.ixpsrasterizationfactory2_createrasterizer, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer, IXpsRasterizationFactory2
+ms.keywords: print.ixpsrasterizationfactory2_createrasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer, IXpsRasterizationFactory2::CreateRasterizer, IXpsRasterizationFactory2, CreateRasterizer method [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,6 +80,7 @@ HRESULT CreateRasterizer(
 `nonTextRenderingMode`
 
 Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md">XPSRAS_RENDERING_MODE</a> enumeration values:
+
 <ul>
 <li>
 XPSRAS_RENDERING_MODE_ANTIALIASED
@@ -94,6 +95,7 @@ XPSRAS_RENDERING_MODE_ALIASED
 `textRenderingMode`
 
 Rendering mode for text in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following XPSRAS_RENDERING_MODE enumeration values:
+
 <ul>
 <li>
 XPSRAS_RENDERING_MODE_ANTIALIASED
@@ -108,6 +110,7 @@ XPSRAS_RENDERING_MODE_ALIASED
 `pixelFormat`
 
 Allows a caller to select the pixel format used by the IWICBitmap returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a>. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0003_0001.md">XPSRAS_PIXEL_FORMAT</a> enumeration values:
+
 <ul>
 <li>
 XPSRAS_PIXEL_FORMAT_32BPP_PBGRA_UINT_SRGB
@@ -126,6 +129,7 @@ XPSRAS_PIXEL_FORMAT_128BPP_PRGBA_FLOAT_SCRGB
 `backgroundColor`
 
 Allows a caller to select background color. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0004_0001.md">XPSRAS_BACKGROUND_COLOR</a> enumeration values:
+
 <ul>
 <li>
 XPSRAS_BACKGROUND_COLOR_TRANSPARENT
@@ -135,7 +139,8 @@ XPSRAS_BACKGROUND_COLOR_TRANSPARENT
 XPSRAS_BACKGROUND_COLOR_OPAQUE
 
 </li>
-</ul>The default background color is XPSRAS_BACKGROUND_COLOR_TRANSPARENT.
+</ul>
+The default background color is XPSRAS_BACKGROUND_COLOR_TRANSPARENT.
 
 `ppIXpsRasterizer`
 
@@ -158,6 +163,8 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HRE
 ## See Also
 
 <a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizationfactory2.md">IXpsRasterizationFactory2</a>
+
+
 
  
 

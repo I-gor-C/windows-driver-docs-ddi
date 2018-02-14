@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 76387681-cac6-4c35-9095-28942a856c30
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl3 interface [Windows Debugging], GetNearInstruction method, dbgeng/IDebugControl::GetNearInstruction, IDebugControl_2c12e1fe-0f9b-45d6-9ff4-477bc42b2275.xml, dbgeng/IDebugControl3::GetNearInstruction, GetNearInstruction method [Windows Debugging], GetNearInstruction, IDebugControl interface [Windows Debugging], GetNearInstruction method, GetNearInstruction method [Windows Debugging], IDebugControl interface, IDebugControl::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetNearInstruction method, IDebugControl3::GetNearInstruction, debugger.getnearinstruction, dbgeng/IDebugControl2::GetNearInstruction, IDebugControl3, IDebugControl2::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl3 interface
+ms.keywords: IDebugControl3 interface [Windows Debugging], GetNearInstruction method, IDebugControl2, IDebugControl_2c12e1fe-0f9b-45d6-9ff4-477bc42b2275.xml, GetNearInstruction method [Windows Debugging], IDebugControl interface, IDebugControl::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl3 interface, GetNearInstruction, IDebugControl3, debugger.getnearinstruction, IDebugControl, dbgeng/IDebugControl::GetNearInstruction, IDebugControl2 interface [Windows Debugging], GetNearInstruction method, IDebugControl2::GetNearInstruction, IDebugControl3::GetNearInstruction, dbgeng/IDebugControl3::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl interface [Windows Debugging], GetNearInstruction method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -77,6 +77,7 @@ Receives the location in the process's virtual address space of the instruction 
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1bd5c22e-c4c1-4b0a-b5ed-76e17cbe1aee
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "_D3DDDIARG_SETTRANSFORM, D3DDDIARG_SETTRANSFORM, display.d3dddiarg_settransform, d3dumddi/D3DDDIARG_SETTRANSFORM, UMDisplayDriver_param_Structs_719de83f-0830-4b1a-aa72-e3f58553c733.xml, D3DDDIARG_SETTRANSFORM structure [Display Devices]"
+ms.keywords: D3DDDIARG_SETTRANSFORM structure [Display Devices], _D3DDDIARG_SETTRANSFORM, UMDisplayDriver_param_Structs_719de83f-0830-4b1a-aa72-e3f58553c733.xml, D3DDDIARG_SETTRANSFORM, display.d3dddiarg_settransform, d3dumddi/D3DDDIARG_SETTRANSFORM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -64,6 +64,7 @@ typedef struct _D3DDDIARG_SETTRANSFORM {
 `TransformType`
 
 [in] A D3DTRANSFORMSTATETYPE-typed value that indicates the type of transform to set up. This member can be one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -113,6 +114,8 @@ The Microsoft Direct3D runtime uses D3DDDIARG_SETTRANSFORM in a call to the user
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settransform.md">SetTransform</a>
+
+
 
  
 

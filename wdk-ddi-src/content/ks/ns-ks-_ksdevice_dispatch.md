@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, PKSDEVICE_DISPATCH, ks/PKSDEVICE_DISPATCH, stream.ksdevice_dispatch, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices], _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices], avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, *PKSDEVICE_DISPATCH
+ms.keywords: ks/PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, _KSDEVICE_DISPATCH, stream.ksdevice_dispatch, PKSDEVICE_DISPATCH, KSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices], KSDEVICE_DISPATCH structure [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,8 @@ In describing a device with the <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KS
 ## See Also
 
 <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
+
+
 
  
 

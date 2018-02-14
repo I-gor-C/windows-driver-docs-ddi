@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1C34237E-D4AF-4F12-9FF2-9382BADCC9D3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoCheckLinkShareAccess function [Kernel-Mode Driver Architecture], IoCheckLinkShareAccess, kernel.iochecklinkshareaccess, wdm/IoCheckLinkShareAccess
+ms.keywords: IoCheckLinkShareAccess function [Kernel-Mode Driver Architecture], kernel.iochecklinkshareaccess, IoCheckLinkShareAccess, wdm/IoCheckLinkShareAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -121,13 +121,21 @@ The <i>ShareAccess</i> parameter must be locked against other accesses
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549503">I/O Manager Routines</a>
+<a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
 
-<a href="..\wdm\nf-wdm-ioremovelinkshareaccess.md">IoRemoveLinkShareAccess</a>
+
 
 <a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
 
-<a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
+
+
+<a href="..\wdm\nf-wdm-ioremovelinkshareaccess.md">IoRemoveLinkShareAccess</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549503">I/O Manager Routines</a>
+
+
 
  
 

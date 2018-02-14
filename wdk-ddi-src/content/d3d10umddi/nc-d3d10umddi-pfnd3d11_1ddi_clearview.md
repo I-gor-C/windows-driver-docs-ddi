@@ -40,7 +40,7 @@ apiname:
 -	ClearView
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -109,12 +109,14 @@ The driver should convert and clamp color values to the destination format as ap
 If the format is integer, such as <a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT_R8G8B8A8_UINT</a>, take inputs as integral floats. Therefore, 235.0f maps to 235 (rounds to zero, out of range/INF values clamp to target range, and NaN to zero).
 
 Here are the color mappings:
+
 <ul>
 <li>Color[0]: R (or Y for video)</li>
 <li>Color[1]: G (or U/Cb for video)</li>
 <li>Color[2]: B (or V/Cr for video)</li>
 <li>Color[3]: A</li>
-</ul>For video views with YUV or YCbBr formats, <i>ClearView</i> does not convert color values. In situations where the format name does not indicate _UNORM,  _UINT, and so on, <i>ClearView</i> assumes _UINT. Therefore, 235.0f maps to 235 (rounds to zero, out of range/INF values clamp to target range, and NaN to zero).
+</ul>
+For video views with YUV or YCbBr formats, <i>ClearView</i> does not convert color values. In situations where the format name does not indicate _UNORM,  _UINT, and so on, <i>ClearView</i> assumes _UINT. Therefore, 235.0f maps to 235 (rounds to zero, out of range/INF values clamp to target range, and NaN to zero).
 
 For Microsoft Direct3D views of the subsampled RTV or UAV video surfaces, note that the dimensions of the view are based on how many pixels are in the view format rather than the underlying logical number of video pixels.  For example suppose the surface has format YUY2 with dimension 1920 by 1080 pixels and an RTV uses the format <a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT_R8G8B8A8_UINT</a>.  The view appears to Direct3D as having 1920/2 = 960 <b>R8G8B8A8</b> pixels in the horizontal direction.  So any rectangles passed into <i>ClearView</i> are interpreted in this space.  Furthermore, the clear value is taken for all 4 components, <b>R8G8B8A8</b>, as if it is no different from a true <b>R8G8B8A8</b> surface.  In this case, R, G, B, and A do not mean standard RGBA color values; instead, they identify a location in memory, and the caller is responsible for understanding what it means to put data into that location in the context of a video surface.
 
@@ -122,6 +124,7 @@ However, video views of a video surface (such as views provided to the <a href="
 
 
     The <b>D3D10_DDI_RECT</b> structure is defined as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -142,11 +145,17 @@ However, video views of a video surface (such as views provided to the <a href="
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
+
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_handletype.md">D3D11DDI_HANDLETYPE</a>
+
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoderoutputview.md">CreateVideoDecoderOutputView</a>
+
+
 
  
 

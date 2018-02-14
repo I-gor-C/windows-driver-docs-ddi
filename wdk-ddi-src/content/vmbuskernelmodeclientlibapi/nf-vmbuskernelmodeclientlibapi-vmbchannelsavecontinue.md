@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 57266CAE-C069-4379-92FD-0F93FECC6EB5
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelSaveContinue, VmbChannelSaveContinue function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsavecontinue, vmbuskernelmodeclientlibapi/VmbChannelSaveContinue
+ms.keywords: VmbChannelSaveContinue function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelSaveContinue, VmbChannelSaveContinue, netvista.vmbchannelsavecontinue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	VmbChannelSaveContinue
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -92,6 +92,7 @@ call.
 ## Return Value
 
 <b>VmbChannelSaveContinue</b> returns the following values: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -155,6 +156,8 @@ If the caller did not allocate enough space in advance, multiple calls may be ne
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsavebegin.md">VmbChannelSaveBegin</a>
+
+
 
  
 

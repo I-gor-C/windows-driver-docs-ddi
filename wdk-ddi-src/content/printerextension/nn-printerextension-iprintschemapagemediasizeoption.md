@@ -54,6 +54,8 @@ Exposes a Print Schema PageMediaSize Option element.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaPageMediaSizeOption.get_HeightInMicrons](nf-printerextension-iprintschemapagemediasizeoption-get_heightinmicrons.md) | Gets the height of the page in microns. |
+| [printerextension.IPrintSchemaPageMediaSizeOption.get_WidthInMicrons](nf-printerextension-iprintschemapagemediasizeoption-get_widthinmicrons.md) | Gets the width of the page in microns. |
 
 ## Remarks
 
@@ -69,6 +71,8 @@ Exposes a Print Schema PageMediaSize Option element.
 ## See Also
 
 <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+
+
 
  
 

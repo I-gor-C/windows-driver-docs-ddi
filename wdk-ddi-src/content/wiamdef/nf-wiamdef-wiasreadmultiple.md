@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 814642f7-24df-4d64-bc2b-d76d84b2a6d3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasFncs_c6d42143-4cd8-4f9a-bbf4-aec0ce2c0615.xml, wiamdef/wiasReadMultiple, wiasReadMultiple function [Imaging Devices], image.wiasreadmultiple, wiasReadMultiple
+ms.keywords: wiasReadMultiple, image.wiasreadmultiple, wiasReadMultiple function [Imaging Devices], wiasFncs_c6d42143-4cd8-4f9a-bbf4-aec0ce2c0615.xml, wiamdef/wiasReadMultiple
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasReadMultiple
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -105,6 +105,8 @@ PROPSPEC, PROPVARIANT, <b>PropVariantClear</b>, and <b>IPropertyStorage::ReadMul
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: b5c3a750-7ccb-42ab-9648-17c43e390ec8
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dumddi/D3DDDIARG_DRAWPRIMITIVE, D3DDDIARG_DRAWPRIMITIVE structure [Display Devices], D3DDDIARG_DRAWPRIMITIVE, UMDisplayDriver_param_Structs_19d7b078-8ea3-4b3a-982a-1163643df142.xml, display.d3dddiarg_drawprimitive, _D3DDDIARG_DRAWPRIMITIVE
+ms.keywords: display.d3dddiarg_drawprimitive, _D3DDDIARG_DRAWPRIMITIVE, D3DDDIARG_DRAWPRIMITIVE, UMDisplayDriver_param_Structs_19d7b078-8ea3-4b3a-982a-1163643df142.xml, D3DDDIARG_DRAWPRIMITIVE structure [Display Devices], d3dumddi/D3DDDIARG_DRAWPRIMITIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -84,6 +84,8 @@ When the runtime specifies triangle-edge flags in the value that is pointed to b
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_drawprimitive.md">DrawPrimitive</a>
+
+
 
  
 

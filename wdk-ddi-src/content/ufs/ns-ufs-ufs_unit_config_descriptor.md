@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 09CBAD0A-CBDC-464E-908C-BF142D515969
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PUFS_UNIT_CONFIG_DESCRIPTOR structure pointer [Storage Devices], UFS_UNIT_CONFIG_DESCRIPTOR, ufs/UFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR structure [Storage Devices], ufs/PUFS_UNIT_CONFIG_DESCRIPTOR, storage.ufs_unit_config_descriptor, *PUFS_UNIT_CONFIG_DESCRIPTOR, PUFS_UNIT_CONFIG_DESCRIPTOR
+ms.keywords: "*PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR, ufs/PUFS_UNIT_CONFIG_DESCRIPTOR, PUFS_UNIT_CONFIG_DESCRIPTOR, ufs/UFS_UNIT_CONFIG_DESCRIPTOR, PUFS_UNIT_CONFIG_DESCRIPTOR structure pointer [Storage Devices], UFS_UNIT_CONFIG_DESCRIPTOR structure [Storage Devices], storage.ufs_unit_config_descriptor"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	UFS_UNIT_CONFIG_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR
+req.typenames: "*PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR"
 req.product: Windows 10 or later.
 ---
 
@@ -75,6 +75,7 @@ Specifies if the logical unit is a bootable logical unit.
 <b>bDataReliability</b> defines the device behavior
 when a power failure occurs during a write
 operation to the logical unit:
+
 <table>
 <tr>
 <th>Value</th>
@@ -113,6 +114,7 @@ Specifies if the Logical Unit is write protected.
 `bMemoryType`
 
 Specifies the Memory type of the device.
+
 <table>
 <tr>
 <th>Value</th>
@@ -155,6 +157,7 @@ Specifies the Memory type of the device.
 `bProvisioningType`
 
 Specifies the provisioning type.
+
 <table>
 <tr>
 <th>Value</th>

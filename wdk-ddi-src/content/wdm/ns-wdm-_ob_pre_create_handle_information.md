@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 50fd7666-cdec-4bdb-b350-2c2222124020
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/POB_PRE_CREATE_HANDLE_INFORMATION, wdm/OB_PRE_CREATE_HANDLE_INFORMATION, *POB_PRE_CREATE_HANDLE_INFORMATION, POB_PRE_CREATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.ob_pre_create_handle_information, OB_PRE_CREATE_HANDLE_INFORMATION, _OB_PRE_CREATE_HANDLE_INFORMATION, OB_PRE_CREATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_c_e7efa519-bfcd-4f16-9723-294f061bea51.xml, POB_PRE_CREATE_HANDLE_INFORMATION
+ms.keywords: "_OB_PRE_CREATE_HANDLE_INFORMATION, wdm/POB_PRE_CREATE_HANDLE_INFORMATION, OB_PRE_CREATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_c_e7efa519-bfcd-4f16-9723-294f061bea51.xml, OB_PRE_CREATE_HANDLE_INFORMATION, kernel.ob_pre_create_handle_information, wdm/OB_PRE_CREATE_HANDLE_INFORMATION, POB_PRE_CREATE_HANDLE_INFORMATION, *POB_PRE_CREATE_HANDLE_INFORMATION, POB_PRE_CREATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -63,6 +63,7 @@ typedef struct _OB_PRE_CREATE_HANDLE_INFORMATION {
 An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that specifies the access rights to grant for the handle. By default, this member equals <i>OriginalDesiredAccess</i>, but the <i>ObjectPreCallback</i> routine can modify this value to restrict the access that is granted.
 
 Drivers can use the following flags for handles to processes:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -158,9 +159,11 @@ Write to the address space of the process, such as by calling the user-mode <b>W
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Drivers can use the following flags for handles to threads:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -263,9 +266,13 @@ You can never add access rights beyond what is specified in the <b>DesiredAccess
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 
  
 

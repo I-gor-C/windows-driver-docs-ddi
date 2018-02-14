@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 3487addb-e196-4295-95fc-0590802e766a
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl4, IDebugControl4::GetBreakpointByIndex2, IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method, GetBreakpointByIndex2 method [Windows Debugging], dbgeng/IDebugControl4::GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, debugger.getbreakpointbyindex2, GetBreakpointByIndex2
+ms.keywords: GetBreakpointByIndex2 method [Windows Debugging], dbgeng/IDebugControl4::GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, IDebugControl4, GetBreakpointByIndex2, IDebugControl4::GetBreakpointByIndex2, IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method, debugger.getbreakpointbyindex2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Receives the returned breakpoint.
 ## Return Value
 
 This method can also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -112,9 +113,13 @@ The index and returned breakpoint are specific to the current process.  The same
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547880">GetNumberBreakpoints</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
 
  
 

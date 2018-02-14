@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: b21c3ee1-13e8-4796-af45-6ba60e84df4e
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: PPROPSHEETUI_INFO structure pointer [Print Devices], compstui/PROPSHEETUI_INFO, PROPSHEETUI_INFO structure [Print Devices], cpsuifnc_0afe9ac8-ca1f-4984-acc5-04a8955b4b30.xml, PROPSHEETUI_INFO, PPROPSHEETUI_INFO, compstui/PPROPSHEETUI_INFO, print.propsheetui_info, _PROPSHEETUI_INFO, *PPROPSHEETUI_INFO
+ms.keywords: PROPSHEETUI_INFO structure [Print Devices], PPROPSHEETUI_INFO structure pointer [Print Devices], cpsuifnc_0afe9ac8-ca1f-4984-acc5-04a8955b4b30.xml, PROPSHEETUI_INFO, print.propsheetui_info, _PROPSHEETUI_INFO, PPROPSHEETUI_INFO, compstui/PPROPSHEETUI_INFO, *PPROPSHEETUI_INFO, compstui/PROPSHEETUI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -71,6 +71,7 @@ CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO structure.
 `Flags`
 
 CPSUI-supplied bit flags. The following flag is defined:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -105,6 +106,7 @@ Address of CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/
 `Reason`
 
 CPSUI-supplied constant specifying the action to be performed on the property sheet by the <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function to which the PROPSHEETUI_INFO structure was passed. One of the following constants will be supplied:
+
 <ul>
 <li>
 PROPSHEETUI_REASON_DESTROY
@@ -126,7 +128,8 @@ PROPSHEETUI_REASON_INIT
 PROPSHEETUI_REASON_SET_RESULT
 
 </li>
-</ul>For information about the meaning of each constant, see the Remarks section of the <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> description.
+</ul>
+For information about the meaning of each constant, see the Remarks section of the <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> description.
 
 `Result`
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d8d68231-017a-42fc-ad09-8e7f5cc743d3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], *PVPCI_READ_BLOCK_INPUT, _VPCI_READ_BLOCK_INPUT, vpci/PVPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT, vpci/VPCI_READ_BLOCK_INPUT, kernel.vpci_read_block_input, PVPCI_READ_BLOCK_INPUT
+ms.keywords: VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], vpci/VPCI_READ_BLOCK_INPUT, *PVPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], kernel.vpci_read_block_input, PVPCI_READ_BLOCK_INPUT, vpci/PVPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT, _VPCI_READ_BLOCK_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -70,6 +70,7 @@ The size, in bytes, of the buffer that receives the block.
 
 ## Remarks
 A VF configuration block is used for backchannel communication between the drivers of the PCIe PF and a VF on a device that supports the SR-IOV interface. Data from a VF configuration block can be exchanged between the following drivers:
+
 <ul>
 <li>
 The VF driver, which runs in the guest operating system. This operating system runs within a Hyper-V child partition.
@@ -81,7 +82,9 @@ The PF driver, which runs in the management operating system.
 This operating system runs within the Hyper-V parent partition.
 
 </li>
-</ul><div class="alert"><b>Note</b>  The  usage of the VF configuration block and the format of its configuration data are defined by the  independent hardware vendor (IHV) of the device. The configuration data is used only by the drivers of the PF and VF.</div><div> </div>
+</ul>
+<div class="alert"><b>Note</b>  The  usage of the VF configuration block and the format of its configuration data are defined by the  independent hardware vendor (IHV) of the device. The configuration data is used only by the drivers of the PF and VF.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,7 +95,11 @@ This operating system runs within the Hyper-V parent partition.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439304">IOCTL_VPCI_READ_BLOCK</a>
 
+
+
 <b></b>
+
+
 
  
 

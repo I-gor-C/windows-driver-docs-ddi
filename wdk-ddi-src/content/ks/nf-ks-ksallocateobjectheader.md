@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 18f5ea44-3f70-4c26-beb3-2f03568df03b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks/KsAllocateObjectHeader, stream.ksallocateobjectheader, KsAllocateObjectHeader, KsAllocateObjectHeader function [Streaming Media Devices], ksfunc_0ab53e6c-a934-4c4a-9377-c81ec37833f6.xml
+ms.keywords: KsAllocateObjectHeader, ksfunc_0ab53e6c-a934-4c4a-9377-c81ec37833f6.xml, stream.ksallocateobjectheader, KsAllocateObjectHeader function [Streaming Media Devices], ks/KsAllocateObjectHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -114,6 +114,7 @@ If subobjects exist for a given device, the driver must, before calling
      <b>KsAllocateObjectHeader</b>, allocate a buffer of either paged or nonpaged memory of 
      sufficient size to hold a <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a> 
      structure for each subobject. For example:
+
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
 <th>C++</th>
@@ -129,7 +130,8 @@ createBuffer = (PKSOBJECT_CREATE_ITEM)
  </pre>
 </td>
 </tr>
-</table></span></div>Drivers must not free the memory allocated for the subobject 
+</table></span></div>
+Drivers must not free the memory allocated for the subobject 
      <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a> list until after calling 
      <b>KsFreeDeviceHeader</b>. Failure to do so can result in a bug check condition.
 
@@ -145,9 +147,15 @@ createBuffer = (PKSOBJECT_CREATE_ITEM)
 
 <a href="..\ks\nf-ks-ksfreeobjectheader.md">KsFreeObjectHeader</a>
 
-<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+
 
 <a href="..\ks\nf-ks-ksfreedeviceheader.md">KsFreeDeviceHeader</a>
+
+
+
+<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+
+
 
  
 

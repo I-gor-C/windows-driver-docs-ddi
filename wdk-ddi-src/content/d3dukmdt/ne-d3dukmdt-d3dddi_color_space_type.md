@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 0A26F0AC-2D00-4847-96ED-3232A067F7CC
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601, D3DDDI_COLOR_SPACE_CUSTOM, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_TYPE, d3dukmdt/DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020, D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601, D3DDDI_COLOR_SPACE_TYPE, d3dukmdt/D3DDDI_COLOR_SPACE_CUSTOM, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601, D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709, D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020, DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709, d3dukmdt/D3DDDI_COLOR_SPACE_RESERVED, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601, D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020, d3dukmdt/DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020, display.d3dddi_color_space_type, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020, D3DDDI_COLOR_SPACE_RESERVED, D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020, D3DDDI_COLOR_SPACE_TYPE enumeration [Display Devices], D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709, DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020
+ms.keywords: D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709, d3dukmdt/D3DDDI_COLOR_SPACE_TYPE, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P2020, DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020, D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709, d3dukmdt/DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601, D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020, D3DDDI_COLOR_SPACE_RGB_FULL_G10_NONE_P709, D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709, DD3DDDI_COLOR_SPACE_YCBCR_FULL_GHLG_TOPLEFT_P2020, D3DDDI_COLOR_SPACE_CUSTOM, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P709, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_NONE_P709_X601, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601, d3dukmdt/DD3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RESERVED, D3DDDI_COLOR_SPACE_TYPE, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_FULL_G22_NONE_P709, D3DDDI_COLOR_SPACE_TYPE enumeration [Display Devices], d3dukmdt/D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P709, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P709, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_RGB_FULL_G2084_NONE_P2020, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_TOPLEFT_P2020, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_TOPLEFT_P2020, D3DDDI_COLOR_SPACE_RGB_STUDIO_G2084_NONE_P2020, display.d3dddi_color_space_type, d3dukmdt/D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G2084_LEFT_P2020, D3DDDI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020, d3dukmdt/D3DDDI_COLOR_SPACE_CUSTOM, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_G22_LEFT_P601, D3DDDI_COLOR_SPACE_RESERVED, D3DDDI_COLOR_SPACE_YCBCR_FULL_G22_LEFT_P601, D3DDDI_COLOR_SPACE_YCBCR_STUDIO_GHLG_TOPLEFT_P2020
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -114,7 +114,8 @@ typedef enum D3DDDI_COLOR_SPACE_TYPE {
 <td>Primaries</td>
 <td>BT.709</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is the standard definition for <i>scRGB</i>.
 
@@ -185,7 +186,8 @@ This is usually used with 16 bit integer, 16 bit floating point, and 32 bit floa
 <td>Primaries</td>
 <td>BT.709</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is the standard definition for <i>sRGB</i>.
 
@@ -254,7 +256,8 @@ This is usually used with 8 bit and 10 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.2020</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is usually used with 10, 12, or 16 bit color channels.</td>
                 </tr>
@@ -286,7 +289,8 @@ This is usually used with 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.709</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is the standard definition for <i>ITU-R Recommendation BT.709</i>.  Note that due to the inclusion of a linear segment, the transfer curve looks similar to a pure exponential gamma of 1.9. 
 
@@ -332,7 +336,8 @@ This is usually used with 8 bit and 10 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.2020</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is usually used with 10, 12, or 16 bit color channels.</td>
                 </tr>
@@ -364,7 +369,8 @@ This is usually used with 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.601</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is sometimes used for <i>H.264</i> camera capture.
 
@@ -400,7 +406,8 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.709</td>
 </tr>
-</table> 
+</table>
+ 
 
 This is sometimes used for <i>H.264</i> camera capture.
 
@@ -440,7 +447,8 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
 <td>Transfer Matrix</td>
 <td>BT.601</td>
 </tr>
-</table> 
+</table>
+ 
 
 This definition is commonly used for <i>JPG</i>.
 
@@ -541,7 +549,8 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.2020</td>
 </tr>
-</table> 
+</table>
+ 
 
 This definition may be used by <i>HEVC</i>.
 
@@ -577,7 +586,8 @@ This is usually used with 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.601</td>
 </tr>
-</table> 
+</table>
+ 
 
 This definition is commonly used for <i>MPEG2</i>.
 
@@ -613,7 +623,8 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.709</td>
 </tr>
-</table> 
+</table>
+ 
 
 This definition is commonly used for <i>H.264</i> and <i>HEVC</i>.
 
@@ -694,7 +705,8 @@ This is usually used with 8, 10, 12, or 16 bit color channels.</td>
 <td>Primaries</td>
 <td>BT.2020</td>
 </tr>
-</table> 
+</table>
+ 
 
 This colorspace can be used as an input to the video processor DDIs, but will never be used to scan out.</td>
                 </tr>

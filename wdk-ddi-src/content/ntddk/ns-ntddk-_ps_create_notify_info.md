@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 66fade6b-b1c1-477c-bd44-2809d02271f2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO structure [Kernel-Mode Driver Architecture], kstruct_c_489ee208-518d-41f1-af90-a8873f3e7fb0.xml, ntddk/PS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO structure pointer [Kernel-Mode Driver Architecture], PPS_CREATE_NOTIFY_INFO, _PS_CREATE_NOTIFY_INFO, kernel.ps_create_notify_info, PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO
+ms.keywords: ntddk/PPS_CREATE_NOTIFY_INFO, _PS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO structure [Kernel-Mode Driver Architecture], PS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO structure pointer [Kernel-Mode Driver Architecture], kernel.ps_create_notify_info, ntddk/PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO, kstruct_c_489ee208-518d-41f1-af90-a8873f3e7fb0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PS_CREATE_NOTIFY_INFO
 product: Windows
 targetos: Windows
-req.typenames: "*PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO"
+req.typenames: PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO
 ---
 
 # _PS_CREATE_NOTIFY_INFO structure
@@ -77,9 +77,11 @@ typedef struct _PS_CREATE_NOTIFY_INFO {
 `CommandLine`
 
 A pointer to a <b>UNICODE_STRING</b> string that holds the command that is used to execute the process. If the command is not available, <b>CommandLine</b> is <b>NULL</b>.
+
 <div class="alert"><b>Note</b>  <p class="note">If <b>IsSubsystemProcess</b> is TRUE, this value maybe NULL. 
 
-</div><div> </div>
+</div>
+<div> </div>
 
 `CreatingThreadId`
 
@@ -92,16 +94,20 @@ The NTSTATUS value to return for the process-creation operation. Drivers can cha
 `FileObject`
 
 A pointer to the file object for the process executable file. 
+
 <div class="alert"><b>Note</b>  <p class="note">If <b>IsSubsystemProcess</b> is TRUE, this value may be NULL. 
 
-</div><div> </div>
+</div>
+<div> </div>
 
 `ImageFileName`
 
 A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> string that holds the file name of the executable. If the <b>FileOpenNameAvailable</b> member is <b>TRUE</b>, the string specifies the exact file name that is used to open the executable file. If <b>FileOpenNameAvailable</b> is <b>FALSE</b>, the operating system might provide only a partial name.
+
 <div class="alert"><b>Note</b>  <p class="note">If <b>IsSubsystemProcess</b> is TRUE, this value maybe NULL. 
 
-</div><div> </div>
+</div>
+<div> </div>
 
 `ParentProcessId`
 
@@ -120,11 +126,17 @@ The size, in bytes, of this structure. The operating system uses this size to in
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex.md">PsSetCreateProcessNotifyRoutineEx</a>
 
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff559951">CreateProcessNotifyEx</a>
+
+
 
  
 

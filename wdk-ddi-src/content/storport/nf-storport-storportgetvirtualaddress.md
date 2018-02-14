@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b7091dea-8a29-4ad3-a478-29bc28fd57ef
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetVirtualAddress, storage.storportgetvirtualaddress, StorPortGetVirtualAddress routine [Storage Devices], storprt_5245f704-dce0-4683-8510-064ccbb4158c.xml, storport/StorPortGetVirtualAddress
+ms.keywords: storage.storportgetvirtualaddress, storport/StorPortGetVirtualAddress, StorPortGetVirtualAddress routine [Storage Devices], storprt_5245f704-dce0-4683-8510-064ccbb4158c.xml, StorPortGetVirtualAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,7 @@ Specifies the physical address to be mapped. This value must have been returned 
 The physical address must be an address that is obtained through a call to <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a>.
 
 <b>StorPortGetVirtualAddress</b> uses <b>STOR_PHYSICAL_ADDRESS</b> to represent physical addresses.
+
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
 <th>C++</th>
@@ -88,7 +89,8 @@ The physical address must be an address that is obtained through a call to <a hr
 </pre>
 </td>
 </tr>
-</table></span></div>The <b>STOR_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that Storport miniport drivers use to represent either a physical addresses or a bus-relative address.
+</table></span></div>
+The <b>STOR_PHYSICAL_ADDRESS</b> type is an operating system-independent data type that Storport miniport drivers use to represent either a physical addresses or a bus-relative address.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,6 +102,8 @@ The physical address must be an address that is obtained through a call to <a hr
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportgetvirtualaddress.md">ScsiPortGetVirtualAddress</a>
+
+
 
  
 

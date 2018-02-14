@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortWriteRegisterBufferUchar
-title: StorPortWriteRegisterBufferUchar function
+title: StorPortWriteRegisterBufferUchar macro
 author: windows-driver-content
 description: The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.
 old-location: storage\storportwriteregisterbufferuchar.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: af8126cd-e931-4106-b543-9c84ee110901
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortWriteRegisterBufferUchar, storage.storportwriteregisterbufferuchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar routine [Storage Devices]
+ms.keywords: StorPortWriteRegisterBufferUchar routine [Storage Devices], storage.storportwriteregisterbufferuchar, storport/StorPortWriteRegisterBufferUchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, StorPortWriteRegisterBufferUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -63,19 +63,19 @@ VOID StorPortWriteRegisterBufferUchar(
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+
 
 `Register`
 
-Pointer to a buffer containing the data to be written.
+
 
 `Buffer`
 
-TBD
+
 
 `Count`
 
-Specifies the number of bytes to be transferred to the HBA.
+
 
 
 ## Return Value
@@ -93,6 +93,8 @@ None
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportwriteregisterbufferuchar.md">ScsiPortWriteRegisterBufferUchar</a>
+
+
 
  
 

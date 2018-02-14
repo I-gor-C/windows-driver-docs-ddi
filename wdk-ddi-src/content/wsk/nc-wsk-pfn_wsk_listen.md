@@ -40,7 +40,7 @@ apiname:
 -	WskListen
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -79,6 +79,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 ## Return Value
 
 <b>WskListen</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -149,15 +150,25 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 
 ## See Also
 
+<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+
+
+
 <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+
 
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
+
+
 <a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 
+
+
 <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+
+
 
  
 

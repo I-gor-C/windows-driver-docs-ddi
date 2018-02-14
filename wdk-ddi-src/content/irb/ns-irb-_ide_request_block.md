@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.ide_request_block, PIDE_REQUEST_BLOCK, _IDE_REQUEST_BLOCK, structs-ATA_d1c6164f-8964-4e37-a9d4-9948215ed7cc.xml, *PIDE_REQUEST_BLOCK, PIDE_REQUEST_BLOCK structure pointer [Storage Devices], irb/IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK structure [Storage Devices], irb/PIDE_REQUEST_BLOCK
+ms.keywords: IDE_REQUEST_BLOCK structure [Storage Devices], IDE_REQUEST_BLOCK, storage.ide_request_block, irb/PIDE_REQUEST_BLOCK, PIDE_REQUEST_BLOCK, _IDE_REQUEST_BLOCK, irb/IDE_REQUEST_BLOCK, structs-ATA_d1c6164f-8964-4e37-a9d4-9948215ed7cc.xml, PIDE_REQUEST_BLOCK structure pointer [Storage Devices], *PIDE_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -109,6 +109,7 @@ Contains the length in bytes of the data buffer that contains data to be transfe
 `Function`
 
 Specifies the category that the request belongs to. The table below describes the classification of the I/O requests.
+
 <table>
 <tr>
 <td>
@@ -193,6 +194,7 @@ Pointer to the per-request extension allocated by the port driver.
 `IrbFlags`
 
 Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.
+
 <table>
 <tr>
 <td>
@@ -309,6 +311,7 @@ Indicates that this IRB is to be processed as soon as possible, before non-high-
 `IrbStatus`
 
 The miniport must set this member to indicates the status of the specified operation. The table below describes the various <b>IrbStatus</b> values and their meaning.
+
 <table>
 <tr>
 <td>
@@ -474,13 +477,21 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
+<a href="..\irb\ns-irb-_ide_task_file.md">IDE_TASK_FILE</a>
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
 
-<a href="..\irb\ns-irb-_ide_task_file.md">IDE_TASK_FILE</a>
+
+
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
+
+
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
 
  
 

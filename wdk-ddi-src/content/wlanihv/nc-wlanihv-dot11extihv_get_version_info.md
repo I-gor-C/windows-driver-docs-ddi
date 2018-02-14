@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtIhvGetVersionInfo
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -91,6 +91,7 @@ Unlike other IHV Extensibility and Handler functions, whose addresses are resolv
     calling the 
     <b>GetProcAddress</b> function. As a result, the developer of the IHV Extensions DLL must follow these
     guidelines.
+
 <ul>
 <li>
 The DLL must implement a function named Dot11ExtIhvGetVersionInfo, which has the format that is
@@ -104,7 +105,8 @@ The
       <i>Dot11ExtIhvGetVersionInfo</i> function.
 
 </li>
-</ul>For more information about 
+</ul>
+For more information about 
     <b>GetProcAddress</b>, refer to the Microsoft Windows SDK documentation.
 
 ## Requirements
@@ -116,9 +118,13 @@ The
 
 ## See Also
 
+<a href="..\wlanihv\ns-wlanihv-_dot11_ihv_version_info.md">DOT11_IHV_VERSION_INFO</a>
+
+
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_service.md">Dot11ExtIhvInitService</a>
 
-<a href="..\wlanihv\ns-wlanihv-_dot11_ihv_version_info.md">DOT11_IHV_VERSION_INFO</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5AD76955-A44C-4231-9394-0B6595CFB33D
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.exgetfirmwareenvironmentvariable, ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], wdm/ExGetFirmwareEnvironmentVariable, ExGetFirmwareEnvironmentVariable
+ms.keywords: kernel.exgetfirmwareenvironmentvariable, ExGetFirmwareEnvironmentVariable, ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], wdm/ExGetFirmwareEnvironmentVariable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ A pointer to a location to which the routine writes the attributes of the specif
 ## Return Value
 
 <b>ExGetFirmwareEnvironmentVariable</b> returns STATUS_SUCCESS if it is successful. Possible return values include the following error status codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -172,6 +173,7 @@ Firmware environment variables are not supported on a legacy BIOS-based platform
 for the <i>VendorGuid</i> parameter. On a legacy BIOS-based platform, or on a platform that supports both legacy BIOS and UEFI but in which Windows was installed using the legacy BIOS, the function will fail with STATUS_NOT_IMPLEMENTED. On a UEFI-based platform, the function will fail with an error specific to the firmware, such as STATUS_VARIABLE_NOT_FOUND, to indicate that the dummy GUID namespace does not exist.
 
 If the caller specifies a non-NULL <i>Attributes</i> parameter, the routine writes the attributes of the specified system firmware environment variable to the location pointed to by <i>Attributes</i>. Version 2.3.1 of the UEFI specification defines the following attributes for firmware environment variables.
+
 <table>
 <tr>
 <th>Variable name</th>
@@ -205,7 +207,8 @@ If the caller specifies a non-NULL <i>Attributes</i> parameter, the routine writ
 <td>EFI_VARIABLE_APPEND_WRITE</td>
 <td>0x00000040</td>
 </tr>
-</table> 
+</table>
+ 
 
 These attribute values are defined as flag bits. The value written to the ULONG variable pointed to by <i>Attributes</i> is either zero or the bitwise OR of one or more attributes in the preceding table. For more information, see the UEFI specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=183072">UEFI</a> website.
 
@@ -225,11 +228,17 @@ If you create a backup datastore, you can use this function to save all the boot
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="https://msdn.microsoft.com/18e74e54-ecfe-46bf-8c9d-9eb16d22f3ba">GetFirmwareEnvironmentVariable</a>
 
+
+
 <a href="..\wdm\nf-wdm-exsetfirmwareenvironmentvariable.md">ExSetFirmwareEnvironmentVariable</a>
+
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
 
  
 

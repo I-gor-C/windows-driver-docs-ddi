@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: ea8ba463-e8dd-4952-bcad-6fe565fe3292
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dstrct_98470d9f-b4ed-49ee-9c0f-34c991916de3.xml, d3dcaps/D3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS, *LPD3DLIGHTINGCAPS, d3dcaps/LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS structure [Display Devices], display.d3dlightingcaps, LPD3DLIGHTINGCAPS structure pointer [Display Devices], _D3DLIGHTINGCAPS
+ms.keywords: LPD3DLIGHTINGCAPS, d3dcaps/LPD3DLIGHTINGCAPS, display.d3dlightingcaps, _D3DLIGHTINGCAPS, d3dstrct_98470d9f-b4ed-49ee-9c0f-34c991916de3.xml, D3DLIGHTINGCAPS structure [Display Devices], d3dcaps/D3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS structure pointer [Display Devices], *LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	D3DLIGHTINGCAPS
 product: Windows
 targetos: Windows
-req.typenames: D3DLIGHTINGCAPS, *LPD3DLIGHTINGCAPS
+req.typenames: "*LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS"
 ---
 
 # _D3DLIGHTINGCAPS structure
@@ -68,6 +68,7 @@ Specifies flags describing the capabilities of the lighting module. The followin
   
   
   
+
 <table>
 <tr>
 <th>Value</th>
@@ -100,6 +101,7 @@ Specifies flags describing the capabilities of the lighting module. The followin
 `dwLightingModel`
 
 Specifies flags indicating whether the lighting model is RGB or monochrome. The following flags are defined: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -138,6 +140,8 @@ This structure is a member of the <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1
 ## See Also
 
 <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a>
+
+
 
  
 

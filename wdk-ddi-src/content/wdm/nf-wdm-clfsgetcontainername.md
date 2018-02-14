@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 727b2e29-9e2d-4386-a30b-5727e1261fad
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsGetContainerName routine [Kernel-Mode Driver Architecture], Clfs_dce31248-386b-4f6d-8e88-55ef9d70fe84.xml, ClfsGetContainerName, kernel.clfsgetcontainername, wdm/ClfsGetContainerName
+ms.keywords: ClfsGetContainerName routine [Kernel-Mode Driver Architecture], wdm/ClfsGetContainerName, Clfs_dce31248-386b-4f6d-8e88-55ef9d70fe84.xml, ClfsGetContainerName, kernel.clfsgetcontainername
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,7 @@ A pointer to a ULONG-typed variable that receives the actual length, in Unicode 
 ## Return Value
 
 <b>ClfsGetContainerName</b> returns one of the status codes defined in Ntstatus.h. The following table gives the meanings of various return values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -138,9 +139,13 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+
+
+
 <a href="..\wdm\nf-wdm-clfsremovelogcontainer.md">ClfsRemoveLogContainer</a>
 
-<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+
 
  
 

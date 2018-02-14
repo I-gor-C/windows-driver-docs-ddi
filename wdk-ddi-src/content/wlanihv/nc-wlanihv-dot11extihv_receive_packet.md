@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtIhvReceivePacket
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -93,6 +93,7 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 
 The operating system calls the 
     <i>Dot11ExtIhvReceivePacket</i> function when the following occur:
+
 <ul>
 <li>
 The WLAN adapter receives a packet and the Native 802.11 miniport driver, which manages the adapter,
@@ -106,8 +107,10 @@ The packet's IEEE EtherType matches an entry in the list of EtherTypes specified
       Dot11ExtSetEtherTypeHandling</a> function.
 
 </li>
-</ul>The buffer pointed to by 
+</ul>
+The buffer pointed to by 
     <i>pvPacket</i> should contain the following packet data, specified in network byte order:
+
 <ul>
 <li>
 MAC address of destination (6 bytes), formatted according to the guidelines discussed in 
@@ -137,7 +140,11 @@ Payload
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">Dot11ExtSetEtherTypeHandling</a>
 
+
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
+
 
  
 

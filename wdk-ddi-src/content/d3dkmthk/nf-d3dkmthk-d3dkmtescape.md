@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 60b105df-2085-40bc-9d95-0f6b317a565e
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: OpenGL_Functions_ad391641-4fb5-425a-839f-7b257f26849a.xml, d3dkmthk/D3DKMTEscape, display.d3dkmtescape, D3DKMTEscape function [Display Devices], D3DKMTEscape
+ms.keywords: display.d3dkmtescape, OpenGL_Functions_ad391641-4fb5-425a-839f-7b257f26849a.xml, d3dkmthk/D3DKMTEscape, D3DKMTEscape function [Display Devices], D3DKMTEscape
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTEscape</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -142,7 +143,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -164,6 +166,8 @@ Hardware vendors can use <b>D3DKMTEscape</b> in their OpenGL ICDs as an extensio
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
+
+
 
  
 

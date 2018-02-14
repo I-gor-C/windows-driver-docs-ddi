@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 56B9C623-2038-4DD3-AA1B-D9A6E47E06C1
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbPacketGetPointer, VmbPacketGetPointer function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbPacketGetPointer, netvista.vmbpacketgetpointer
+ms.keywords: VmbPacketGetPointer function [Network Drivers Starting with Windows Vista], VmbPacketGetPointer, netvista.vmbpacketgetpointer, vmbuskernelmodeclientlibapi/VmbPacketGetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbPacketGetPointer
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -85,6 +85,8 @@ The handle of a packet object.
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsetpointer.md">VmbPacketSetPointer</a>
+
+
 
  
 

@@ -76,6 +76,8 @@ typedef struct D3DDDIARG_COPYFLAGS {
 
 <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_updatesubresourceup.md">D3DDDIARG_UPDATESUBRESOURCEUP</a>
 
+
+
  
 
  

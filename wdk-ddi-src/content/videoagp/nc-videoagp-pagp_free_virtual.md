@@ -40,7 +40,7 @@ apiname:
 -	AgpFreeVirtual
 product: Windows
 targetos: Windows
-req.typenames: "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -102,6 +102,8 @@ A call to <b>AgpFreeVirtual</b> must be paired with a previous call to <a href="
 ## See Also
 
 <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a>
+
+
 
  
 

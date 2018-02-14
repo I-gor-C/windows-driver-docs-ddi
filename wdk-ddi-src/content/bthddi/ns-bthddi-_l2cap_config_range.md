@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 95f288ea-a32a-478f-870b-5aa6ff1edf44
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: PL2CAP_CONFIG_RANGE, _L2CAP_CONFIG_RANGE, bthddi/PL2CAP_CONFIG_RANGE, L2CAP_CONFIG_RANGE, L2CAP_CONFIG_RANGE structure [Bluetooth Devices], bthddi/L2CAP_CONFIG_RANGE, bth_structs_86178813-5f20-4c58-8d70-c863217350b3.xml, *PL2CAP_CONFIG_RANGE, bltooth.l2cap_config_range, PL2CAP_CONFIG_RANGE structure pointer [Bluetooth Devices]
+ms.keywords: bth_structs_86178813-5f20-4c58-8d70-c863217350b3.xml, L2CAP_CONFIG_RANGE, bthddi/L2CAP_CONFIG_RANGE, PL2CAP_CONFIG_RANGE, PL2CAP_CONFIG_RANGE structure pointer [Bluetooth Devices], bthddi/PL2CAP_CONFIG_RANGE, L2CAP_CONFIG_RANGE structure [Bluetooth Devices], *PL2CAP_CONFIG_RANGE, bltooth.l2cap_config_range, _L2CAP_CONFIG_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	L2CAP_CONFIG_RANGE
 product: Windows
 targetos: Windows
-req.typenames: L2CAP_CONFIG_RANGE, *PL2CAP_CONFIG_RANGE
+req.typenames: "*PL2CAP_CONFIG_RANGE, L2CAP_CONFIG_RANGE"
 ---
 
 # _L2CAP_CONFIG_RANGE structure
@@ -103,9 +103,13 @@ A profile driver negotiates these values separately from the flush timeout setti
 
 ## See Also
 
+<a href="..\bthddi\ns-bthddi-_l2cap_config_value_range.md">L2CAP_CONFIG_VALUE_RANGE</a>
+
+
+
 <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
 
-<a href="..\bthddi\ns-bthddi-_l2cap_config_value_range.md">L2CAP_CONFIG_VALUE_RANGE</a>
+
 
  
 

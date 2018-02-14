@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 48d54092-d055-449c-a409-829213db2989
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisOpenFile, netvista.ndisopenfile, NdisOpenFile, ndis_file_ref_0931368e-111b-4b25-a42d-12d0cc5d9d44.xml, NdisOpenFile function [Network Drivers Starting with Windows Vista]
+ms.keywords: netvista.ndisopenfile, ndis/NdisOpenFile, NdisOpenFile function [Network Drivers Starting with Windows Vista], ndis_file_ref_0931368e-111b-4b25-a42d-12d0cc5d9d44.xml, NdisOpenFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisOpenFile
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -72,11 +72,13 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
+
 #### NDIS_STATUS_SUCCESS
 
 The handle at 
        <i>FileHandle</i> is valid for a subsequent call to 
        <b>NdisMapFile</b>.
+
 
 
 #### NDIS_STATUS_FILE_NOT_FOUND
@@ -85,10 +87,12 @@ The given string at
        <i>FileName</i> did not specify a name found in the system object namespace.
 
 
+
 #### NDIS_STATUS_RESOURCES
 
 NDIS could not allocate the resources it needed to open the file and allocate a buffer for the
        file contents.
+
 
 
 #### NDIS_STATUS_ERROR_READING_FILE
@@ -156,15 +160,25 @@ When
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+
+
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
 
-<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
 
  
 

@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorfrequencyrangesetReleasefrequencyrangeinfo(
 ## Return Value
 
 The <b>pfnAcquireNextFrequencyRangeInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

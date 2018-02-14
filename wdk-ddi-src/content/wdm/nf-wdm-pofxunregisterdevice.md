@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: FC4B1B4D-31D8-4E63-A3A5-07A1099997A8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/PoFxUnregisterDevice, kernel.pofxunregisterdevice, PoFxUnregisterDevice, PoFxUnregisterDevice routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.pofxunregisterdevice, PoFxUnregisterDevice, wdm/PoFxUnregisterDevice, PoFxUnregisterDevice routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,11 +87,17 @@ A device driver that calls this routine must previously have called the <a href=
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
-
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
+
+
 
  
 

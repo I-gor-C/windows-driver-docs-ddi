@@ -88,6 +88,7 @@ The size, in bytes, of data that <i>Data</i> points to. Zero is a valid size val
 ## Return Value
 
 If the operation succeeds, <b>WdfDevicePostEvent</b> returns STATUS_SUCCESS. Additional return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -105,7 +106,8 @@ If the operation succeeds, <b>WdfDevicePostEvent</b> returns STATUS_SUCCESS. Add
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -132,7 +134,11 @@ When the driver calls <b>WdfDevicePostEvent</b> to notify the requesting applica
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558835">IWDFDevice::PostEvent</a>
 
+
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_event_type.md">WDF_EVENT_TYPE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 2854fa05-61a9-4515-9dc1-463f160ae89a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfSpinLockCreate, PFN_WDFSPINLOCKCREATE, WdfSpinLockCreate method, wdf.wdfspinlockcreate, kmdf.wdfspinlockcreate, wdfsync/WdfSpinLockCreate, DFSynchroRef_6e5f9884-82a8-4c1e-a039-9e01f4f3d0f1.xml
+ms.keywords: kmdf.wdfspinlockcreate, wdf.wdfspinlockcreate, PFN_WDFSPINLOCKCREATE, DFSynchroRef_6e5f9884-82a8-4c1e-a039-9e01f4f3d0f1.xml, WdfSpinLockCreate method, WdfSpinLockCreate, wdfsync/WdfSpinLockCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,6 +89,30 @@ By default, the new spin-lock object's parent is the framework driver object tha
 
 For more information about spin locks, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/synchronization-techniques-for-wdf-drivers">Synchronization Techniques for Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>, specifies that the spin lock's parent object will be a device object, and calls <b>WdfSpinLockCreate</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_OBJECT_ATTRIBUTES attributes;
+WDFSPINLOCK lockHandle;
+
+WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+attributes.ParentObject = Device;
+status = WdfSpinLockCreate(
+                           &amp;attributes,
+                           &amp;lockHandle
+                           );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -102,13 +126,21 @@ For more information about spin locks, see <a href="https://docs.microsoft.com/e
 
 ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550044">WdfSpinLockRelease</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550040">WdfSpinLockAcquire</a>
 
+
+
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
 
  
 

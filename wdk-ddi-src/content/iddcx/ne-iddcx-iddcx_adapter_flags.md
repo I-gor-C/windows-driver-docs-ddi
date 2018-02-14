@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 832ca4fe-1040-4f07-8c84-f576e5ce6423
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: iddcx/IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE, iddcx/IDDCX_ADAPTER_FLAGS, IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE, iddcx/IDDCX_ADAPTER_FLAGS_NONE, IDDCX_ADAPTER_FLAGS, IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS, iddcx/IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS, IDDCX_ADAPTER_FLAGS_NONE, IDDCX_ADAPTER_FLAGS enumeration [Display Devices], display.iddcx_adapter_flags
+ms.keywords: iddcx/IDDCX_ADAPTER_FLAGS, IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE, IDDCX_ADAPTER_FLAGS_NONE, display.iddcx_adapter_flags, iddcx/IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE, iddcx/IDDCX_ADAPTER_FLAGS_NONE, IDDCX_ADAPTER_FLAGS, iddcx/IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS, IDDCX_ADAPTER_FLAGS enumeration [Display Devices], IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -72,7 +72,9 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
                 <tr>
                     <td>IDDCX_ADAPTER_FLAGS_USE_SMALLEST_MODE</td>
                     <td>Indicates to the OS that the smallest possible desktop surface size should be used when the desktop mode is changed. Typically a solution that has a large processing overhead or limited transmission bandwidth uses this flag to reduce the desktop image size in order to process as much as possible. 
-<div class="alert"><b>Note</b>  Setting this flag results in a mode change each time the desktop resolution is changed.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Setting this flag results in a mode change each time the desktop resolution is changed.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>

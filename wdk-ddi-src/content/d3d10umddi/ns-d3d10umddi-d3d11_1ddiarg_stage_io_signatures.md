@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c7da4303-2ba4-4ac3-ad24-4ff25bb5466d
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3d10umddi/D3D11_1DDIARG_STAGE_IO_SIGNATURES, D3D11_1DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], display.d3d11_1ddiarg_stage_io_signatures, D3D11_1DDIARG_STAGE_IO_SIGNATURES
+ms.keywords: d3d10umddi/D3D11_1DDIARG_STAGE_IO_SIGNATURES, D3D11_1DDIARG_STAGE_IO_SIGNATURES, D3D11_1DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], display.d3d11_1ddiarg_stage_io_signatures
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -85,6 +85,8 @@ The declarations within the shader code itself also show which registers are act
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_signature_entry.md">D3D11_1DDIARG_SIGNATURE_ENTRY</a>
+
+
 
  
 

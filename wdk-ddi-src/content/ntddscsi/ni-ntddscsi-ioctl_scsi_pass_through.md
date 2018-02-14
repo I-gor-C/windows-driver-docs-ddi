@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SCSI_PASS_THROUGH
 product: Windows
 targetos: Windows
-req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames: "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # IOCTL_SCSI_PASS_THROUGH IOCTL
@@ -119,6 +119,8 @@ The <b>Information</b> field is set to the number of bytes returned in the outpu
 ## See Also
 
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through.md">SCSI_PASS_THROUGH</a>
+
+
 
  
 

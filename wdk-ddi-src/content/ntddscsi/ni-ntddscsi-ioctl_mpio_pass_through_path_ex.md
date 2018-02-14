@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MPIO_PASS_THROUGH_PATH_EX
 product: Windows
 targetos: Windows
-req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames: "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # IOCTL_MPIO_PASS_THROUGH_PATH_EX IOCTL
@@ -111,9 +111,13 @@ The <b>Information</b> field is set to the number of bytes returned in the outpu
 
 ## See Also
 
+<a href="..\ntddscsi\ns-ntddscsi-_mpio_pass_through_path_ex.md">MPIO_PASS_THROUGH_PATH_EX</a>
+
+
+
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
 
-<a href="..\ntddscsi\ns-ntddscsi-_mpio_pass_through_path_ex.md">MPIO_PASS_THROUGH_PATH_EX</a>
+
 
  
 

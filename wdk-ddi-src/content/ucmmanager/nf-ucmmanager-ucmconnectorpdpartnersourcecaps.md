@@ -7,8 +7,8 @@ old-location: buses\ucmconnectorpdportpartnersourcecaps.htm
 old-project: usbref
 ms.assetid: 282E12E2-F16F-4399-BC8C-78BD64F05F13
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: ucmmanager/UcmConnectorPdPartnerSourceCaps, UcmConnectorPdPartnerSourceCaps method [Buses], buses.ucmconnectorpdportpartnersourcecaps, UcmConnectorPdPartnerSourceCaps
+ms.date: 2/8/2018
+ms.keywords: UcmConnectorPdPartnerSourceCaps, UcmConnectorPdPartnerSourceCaps method [Buses], buses.ucmconnectorpdportpartnersourcecaps, ucmmanager/UcmConnectorPdPartnerSourceCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,39 @@ When using a Type-C connector for charging by using the power delivery (PD) mech
 
 If the partner connector is the power sink, the local connector port must query for the latest capabilities.
 
+
+
+#### Examples
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>        UCM_PD_POWER_DATA_OBJECT Pdos[1];
+
+        UCM_PD_POWER_DATA_OBJECT_INIT_FIXED(&amp;Pdos[0]);
+
+        Pdos[0].FixedSupplyPdo.VoltageIn50mV = 100;         // 5V
+        Pdos[0].FixedSupplyPdo.MaximumCurrentIn10mA = 150;  // 1.5 A
+
+        status = UcmConnectorPdPartnerSourceCaps(
+            Connector,
+            Pdos,
+            ARRAYSIZE(Pdos));
+        if (!NT_SUCCESS(status))
+        {
+            TRACE_ERROR(
+                "UcmConnectorPdPartnerSourceCaps() failed with %!STATUS!.",
+                status);
+            goto Exit;
+        }
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,8 +132,10 @@ If the partner connector is the power sink, the local connector port must query 
 
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 
- 
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UcmConnectorPdPartnerSourceCaps method%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UcmConnectorPdPartnerSourceCaps method%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

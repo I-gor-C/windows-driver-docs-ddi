@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: d2349c45-eb88-4584-bbdd-b7c46601a1bc
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: hbaapi/HBA_SendRLS, HBA_SendRLS routine [Storage Devices], HBA_SendRLS, fibreHBA_rtns_8a7d150c-eeba-4850-9a93-7a48096d6f22.xml, storage.hba_sendrls
+ms.keywords: HBA_SendRLS, hbaapi/HBA_SendRLS, fibreHBA_rtns_8a7d150c-eeba-4850-9a93-7a48096d6f22.xml, storage.hba_sendrls, HBA_SendRLS routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,7 @@ Indicates the size, in bytes, of the buffer at <i>pRspBuffer</i>. A size of 28 b
 ## Return Value
 
 The <b>HBA_SendRLS</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SendRLS</b> returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -149,7 +150,11 @@ Returned if an unspecified error occurred that prevented the execution of the RL
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+
 
  
 

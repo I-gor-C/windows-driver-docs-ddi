@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 7fb70431-db09-470b-b795-826aba3a8b77
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: GetResolution method [Streaming Media Devices], GetResolution, avintfc_941baf81-e369-45bc-a798-15270a6d8a29.xml, IKsReferenceClock::GetResolution, GetResolution method [Streaming Media Devices], IKsReferenceClock interface, stream.iksreferenceclock_getresolution, IKsReferenceClock, IKsReferenceClock interface [Streaming Media Devices], GetResolution method, ks/IKsReferenceClock::GetResolution
+ms.keywords: IKsReferenceClock, GetResolution method [Streaming Media Devices], IKsReferenceClock interface, GetResolution method [Streaming Media Devices], IKsReferenceClock::GetResolution, avintfc_941baf81-e369-45bc-a798-15270a6d8a29.xml, IKsReferenceClock interface [Streaming Media Devices], GetResolution method, ks/IKsReferenceClock::GetResolution, GetResolution, stream.iksreferenceclock_getresolution
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,6 +86,8 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 ## See Also
 
 <a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
+
+
 
  
 

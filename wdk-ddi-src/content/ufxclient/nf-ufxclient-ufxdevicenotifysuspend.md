@@ -7,8 +7,8 @@ old-location: buses\ufxdevicenotifysuspend.htm
 old-project: usbref
 ms.assetid: 80786A5A-E585-4092-814F-B940DD6967C6
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: UfxDeviceNotifySuspend, UfxDeviceNotifySuspend method [Buses], ufxclient/UfxDeviceNotifySuspend, buses.ufxdevicenotifysuspend
+ms.date: 2/8/2018
+ms.keywords: buses.ufxdevicenotifysuspend, UfxDeviceNotifySuspend, ufxclient/UfxDeviceNotifySuspend, UfxDeviceNotifySuspend method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ This method does not return a value.
 The client driver calls <b>UfxDeviceNotifySuspend</b> when it receives a bus suspend event. The default endpoint should be reset on a bus suspend.  The device should move to a low power mode.
 
 The client driver typically calls <b>UfxDeviceNotifySuspend</b> from its <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a> callback function.  The following example shows how to handle a suspend event.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>

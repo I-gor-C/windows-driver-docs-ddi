@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0d290872-0944-4599-9deb-9a4f7b2df0e5
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: "*PKSPIN, ks/KSPIN, ks/PKSPIN, KSPIN structure [Streaming Media Devices], KSPIN, PKSPIN, stream.kspin, PKSPIN structure pointer [Streaming Media Devices], avstruct_9453feff-ba40-4f54-bdb6-07f4f31548aa.xml, _KSPIN"
+ms.keywords: ks/KSPIN, ks/PKSPIN, avstruct_9453feff-ba40-4f54-bdb6-07f4f31548aa.xml, KSPIN, KSPIN structure [Streaming Media Devices], PKSPIN, *PKSPIN, _KSPIN, PKSPIN structure pointer [Streaming Media Devices], stream.kspin
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSPIN
 product: Windows
 targetos: Windows
-req.typenames: KSPIN, *PKSPIN
+req.typenames: "*PKSPIN, KSPIN"
 ---
 
 # _KSPIN structure
@@ -88,15 +88,25 @@ Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d
 
 ## See Also
 
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+
+
+
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
 
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 
 <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 
+
+
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+
+
 <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
+
+
 
  
 

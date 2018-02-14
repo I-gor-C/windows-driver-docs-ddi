@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 99330348-bcc2-4a89-96f8-e1b67d9ebe25
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/PoRequestPowerIrp, PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], kernel.porequestpowerirp, PoRequestPowerIrp, portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml
+ms.keywords: PoRequestPowerIrp, portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml, PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], kernel.porequestpowerirp, wdm/PoRequestPowerIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,6 +93,7 @@ A pointer to a caller-supplied variable in which <b>PoRequestPowerIrp</b> return
 ## Return Value
 
 <b>PoRequestPowerIrp</b> returns one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -160,23 +161,41 @@ Drivers can use the returned <i>Irp</i> to cancel an <b>IRP_MN_WAIT_WAKE</b> IRP
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
 
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff961906">PowerCompletion</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
+
+
+
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff961906">PowerCompletion</a>
+
+
+
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551644">IRP_MN_POWER_SEQUENCE</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
+
 
  
 

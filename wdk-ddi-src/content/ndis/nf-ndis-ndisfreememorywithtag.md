@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c9010a08-3c62-481a-8545-253d7b24b1ac
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisFreeMemoryWithTag function [Network Drivers Starting with Windows Vista], NdisFreeMemoryWithTag, ndis_shared_memory_ref_2a68decc-2cef-4606-9679-c29c0e5362a2.xml, ndis/NdisFreeMemoryWithTag, netvista.ndisfreememorywithtag
+ms.keywords: ndis/NdisFreeMemoryWithTag, NdisFreeMemoryWithTag function [Network Drivers Starting with Windows Vista], netvista.ndisfreememorywithtag, NdisFreeMemoryWithTag, ndis_shared_memory_ref_2a68decc-2cef-4606-9679-c29c0e5362a2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisFreeMemoryWithTag
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -83,6 +83,7 @@ Because noncached memory and contiguous memory are seldom released until the all
     driver is unloading, a caller of 
     <b>NdisFreeMemoryWithTag</b> usually is running at IRQL = PASSIVE_LEVEL for these types of de-allocations.
     In any case:
+
 <ul>
 <li>
 When a caller of 
@@ -115,6 +116,8 @@ When a caller of
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550767">NdisAllocateMemoryWithTag</a>
+
+
 
  
 

@@ -80,6 +80,8 @@ I/O status is identical to the I/O status for <a href="..\ntddstor\ni-ntddstor-i
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>
 
+
+
  
 
  

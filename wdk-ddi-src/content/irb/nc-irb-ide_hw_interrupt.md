@@ -77,6 +77,7 @@ The <b><i>IdeHwInterrupt</i></b> routine completes interrupt-driven I/O operatio
 If the indicated channel did not generate the interrupt, the miniport driver should make a second (recursive) call to the <b><i>IdeHwInterrupt</i></b> routine to handle interrupts that are intended for the controller's other channel.
 
 If the miniport driver requires a large amount of time to process the interrupt, it must follow these steps:
+
 <ol>
 <li>
 Dismiss the interrupt on the HBA.
@@ -98,7 +99,9 @@ Complete additional processing in the worker routine.
 Enable interrupts on the channel.
 
 </li>
-</ol>The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:
+</ol>
+The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:
+
 <ul>
 <li>
 
@@ -112,7 +115,8 @@ Enable interrupts on the channel.
 
 
 </li>
-</ul>However, the miniport driver can request a worker routine and make calls in the worker routine.
+</ul>
+However, the miniport driver can request a worker routine and make calls in the worker routine.
 
 The worker routine must clear the interrupt on the HBA before it returns <b>TRUE</b>.
 
@@ -126,9 +130,15 @@ The worker routine must clear the interrupt on the HBA before it returns <b>TRUE
 
 <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
 
-<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
+
 
 <a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
+
+
+
+<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
+
+
 
  
 

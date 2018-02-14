@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: ad376a6f-b8e3-40ba-9b00-df1410c1293c
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.readphysical2, IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical2 method, ReadPhysical2 method [Windows Debugging], ReadPhysical2, IDebugDataSpaces_b7eb9d7f-98a3-4be4-a264-68d9ac1eaea7.xml, IDebugDataSpaces4::ReadPhysical2, IDebugDataSpaces4, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::ReadPhysical2
+ms.keywords: debugger.readphysical2, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces_b7eb9d7f-98a3-4be4-a264-68d9ac1eaea7.xml, IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical2 method, ReadPhysical2, IDebugDataSpaces4::ReadPhysical2, dbgeng/IDebugDataSpaces4::ReadPhysical2, ReadPhysical2 method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -68,6 +68,7 @@ Specifies the physical address of the memory to read.
 `Flags`
 
 Specifies the properties of the physical memory to be read.  This must match the way the physical memory was advertised to the operating system on the target.  Possible values are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -146,7 +147,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -167,9 +169,15 @@ The flags DEBUG_PHYSICAL_CACHED, DEBUG_PHYSICAL_UNCACHED, and DEBUG_PHYSICAL_WRI
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561441">WritePhysical2</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554313">ReadPhysical</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: bb1ef5f0-ccf3-487b-99e6-9ec733c7cd63
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortCreateEvent function [Display Devices], display.videoportcreateevent, video/VideoPortCreateEvent, VideoPortCreateEvent, VideoPort_Functions_29412925-5117-4759-b4ea-b4adb4358a8c.xml
+ms.keywords: VideoPort_Functions_29412925-5117-4759-b4ea-b4adb4358a8c.xml, VideoPortCreateEvent, display.videoportcreateevent, video/VideoPortCreateEvent, VideoPortCreateEvent function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ Pointer to the miniport driver's device extension.
 `EventFlag`
 
 Specifies the event type and initial event state. This can be an ORed combination of the following flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -127,6 +128,8 @@ When a notification event is set to the signaled state, all threads that were wa
 ## See Also
 
 <a href="..\video\nf-video-videoportdeleteevent.md">VideoPortDeleteEvent</a>
+
+
 
  
 

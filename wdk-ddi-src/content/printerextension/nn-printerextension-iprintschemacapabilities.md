@@ -54,6 +54,9 @@ Provides the primary method to access PrintCapabilities.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaCapabilities.get_JobCopiesAllDocumentsMaxValue](nf-printerextension-iprintschemacapabilities-get_jobcopiesalldocumentsmaxvalue.md) | Gets the JobCopiesAllDocuments parameter maximum value. |
+| [printerextension.IPrintSchemaCapabilities.get_JobCopiesAllDocumentsMinValue](nf-printerextension-iprintschemacapabilities-get_jobcopiesalldocumentsminvalue.md) | Gets the JobCopiesAllDocuments parameter minimum value. |
+| [printerextension.IPrintSchemaCapabilities.get_PageImageableSize](nf-printerextension-iprintschemacapabilities-get_pageimageablesize.md) | Gets the imageable area information of the printer. |
 | [printerextension.IPrintSchemaCapabilities.GetFeature](nf-printerextension-iprintschemacapabilities-getfeature.md) | Gets a named feature from the PrintCapabilities, by name and full namespace URI. |
 | [printerextension.IPrintSchemaCapabilities.GetFeatureByKeyName](nf-printerextension-iprintschemacapabilities-getfeaturebykeyname.md) | Gets a feature from the PrintCapabilities based on a given key name. |
 | [printerextension.IPrintSchemaCapabilities.GetOptions](nf-printerextension-iprintschemacapabilities-getoptions.md) | Gets all the options of a feature. |
@@ -72,17 +75,29 @@ To obtain an IXMLDOMDocument2 object for the PrintCapabilities object, you must 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/5556BD5E-6489-4CCF-8C62-DDA53AD9F368">IPrintSchemaTicket_GetCapabilities</a>
-
-<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/br259124">Developing v4 print drivers</a>
-
 <a href="https://msdn.microsoft.com/5C587AF2-C51E-4728-A214-7FC1F8A6E445">V4 Printer Driver Localization</a>
 
-<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
+
+
+<a href="https://msdn.microsoft.com/5556BD5E-6489-4CCF-8C62-DDA53AD9F368">IPrintSchemaTicket_GetCapabilities</a>
+
+
 
 <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
+
+
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/br259124">Developing v4 print drivers</a>
+
+
+
 <a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+
+
+
+<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 16f13973-c1c1-4123-8fa4-20187ec2c204
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortRegistryRead, storprt_6eafcbbc-b767-45b3-97d6-86e591a29a19.xml, storport/StorPortRegistryRead, StorPortRegistryRead routine [Storage Devices], storage.storportregistryread
+ms.keywords: storage.storportregistryread, storport/StorPortRegistryRead, storprt_6eafcbbc-b767-45b3-97d6-86e591a29a19.xml, StorPortRegistryRead, StorPortRegistryRead routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,7 @@ Indicates, when nonzero, that the port driver reads the contents of the registry
 `Type`
 
 Indicates the data type of registry value. This parameter must have one of the values in the following table.
+
 <table>
 <tr>
 <th>Registry value data type</th>
@@ -260,7 +261,11 @@ The buffer used in this routine is allocated by calling <a href="..\storport\nf-
 
 <a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>
 
+
+
 <a href="..\storport\nf-storport-storportfreeregistrybuffer.md">StorPortFreeRegistryBuffer</a>
+
+
 
  
 

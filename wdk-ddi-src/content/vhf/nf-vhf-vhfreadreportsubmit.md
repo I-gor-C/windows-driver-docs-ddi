@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: DCC4EB4C-B9A0-4E25-B3BD-4CAB07022A7B
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hid.vhfreadreportsubmit, VhfReadReportSubmit method [Human Input Devices], vhf/VhfReadReportSubmit, VhfReadReportSubmit
+ms.keywords: VhfReadReportSubmit method [Human Input Devices], hid.vhfreadreportsubmit, vhf/VhfReadReportSubmit, VhfReadReportSubmit
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,6 +92,8 @@ If the HID source driver does not implement the <a href="..\vhf\nc-vhf-evt_vhf_r
 ## See Also
 
 <a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+
+
 
  
 

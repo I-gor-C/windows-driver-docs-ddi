@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: ed77fddf-c23c-4522-a2c4-875f07d249fb
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.writesymbolwide, dbgeng/IDebugSymbolGroup2::WriteSymbolWide, IDebugSymbolGroup2::WriteSymbolWide, IDebugSymbolGroup2, WriteSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface, WriteSymbolWide method [Windows Debugging], WriteSymbolWide, IDebugSymbolGroup2 interface [Windows Debugging], WriteSymbolWide method
+ms.keywords: dbgeng/IDebugSymbolGroup2::WriteSymbolWide, IDebugSymbolGroup2::WriteSymbolWide, debugger.writesymbolwide, WriteSymbolWide, WriteSymbolWide method [Windows Debugging], WriteSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging], WriteSymbolWide method, IDebugSymbolGroup2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -85,7 +85,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -106,9 +107,15 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0c551de0-970a-4733-b904-27c40cf7b42f
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFCHILDLISTRETRIEVEADDRESSDESCRIPTION, wdf.wdfchildlistretrieveaddressdescription, WdfChildListRetrieveAddressDescription, WdfChildListRetrieveAddressDescription method, wdfchildlist/WdfChildListRetrieveAddressDescription, DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, kmdf.wdfchildlistretrieveaddressdescription
+ms.keywords: DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, kmdf.wdfchildlistretrieveaddressdescription, PFN_WDFCHILDLISTRETRIEVEADDRESSDESCRIPTION, WdfChildListRetrieveAddressDescription method, wdf.wdfchildlistretrieveaddressdescription, WdfChildListRetrieveAddressDescription, wdfchildlist/WdfChildListRetrieveAddressDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,7 @@ A pointer to a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_descr
 ## Return Value
 
 <b>WdfChildListRetrieveAddressDescription</b> returns STATUS_SUCCESS, or another status value for which <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS(status)</a> equals <b>TRUE</b>, if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,7 +118,8 @@ The child list did not contain address descriptions, or the size of the address 
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -128,6 +130,42 @@ A system bug check occurs if the driver supplies an invalid object handle.
 ## Remarks
 
 For more information about child lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dynamic-enumeration">Dynamic Enumeration</a>.
+
+
+#### Examples
+
+The following code example searches a child list for a child device whose identification description contains the value that is specified by <b>SomeValue</b>. If <b>WdfChildListRetrieveAddressDescription</b> locates the device, it retrieves the device's address description.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>MY_IDENTIFICATION_DESCRIPTION  id;
+MY_ADDRESS_DESCRIPTION  addrDescrip;
+
+WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT(
+                                                 &amp;id.Header,
+                                                 sizeof(id)
+                                                 );
+WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT(
+                                          &amp;addrDescrip.Header,
+                                          sizeof(addrDescrip)
+                                          );
+
+id.DeviceIdentifier = SomeValue;
+status = WdfChildListRetrieveAddressDescription(
+                                                list,
+                                                &amp;idDescrip.Header,
+                                                &amp;addrDescrip.Header
+                                                );
+if (!NT_SUCCESS(status) {
+    return status;
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -141,13 +179,21 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 
 ## See Also
 
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_description_header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_address_description_header_init.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT</a>
+
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
 
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
+
+
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_description_header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
+
+
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_address_description_header_init.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT</a>
+
+
 
  
 

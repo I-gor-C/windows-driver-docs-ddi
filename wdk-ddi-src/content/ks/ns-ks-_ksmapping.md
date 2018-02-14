@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 9a5149dc-5506-4100-80fc-7cd17585d2af
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSMAPPING structure pointer [Streaming Media Devices], ks/KSMAPPING, _KSMAPPING, ks/PKSMAPPING, KSMAPPING structure [Streaming Media Devices], PKSMAPPING, stream.ksmapping, KSMAPPING, *PKSMAPPING, avstruct_65f80fd5-14a6-431b-a1b6-e6c3d18302d3.xml
+ms.keywords: KSMAPPING structure [Streaming Media Devices], stream.ksmapping, PKSMAPPING, ks/PKSMAPPING, *PKSMAPPING, ks/KSMAPPING, avstruct_65f80fd5-14a6-431b-a1b6-e6c3d18302d3.xml, KSMAPPING, _KSMAPPING, PKSMAPPING structure pointer [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSMAPPING
 product: Windows
 targetos: Windows
-req.typenames: KSMAPPING, *PKSMAPPING
+req.typenames: "*PKSMAPPING, KSMAPPING"
 ---
 
 # _KSMAPPING structure
@@ -69,9 +69,13 @@ In order for minidrivers to use this structure within the stream pointer offsets
 
 ## See Also
 
+<a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>
+
+
+
 <a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>
 
-<a href="..\ks\nf-ks-ksdeviceregisteradapterobject.md">KsDeviceRegisterAdapterObject</a>
+
 
  
 

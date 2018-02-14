@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: dcbfa8d2-c2ea-43ae-9d77-ce95a430a514
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ntdddisk/GETVERSIONINPARAMS, LPGETVERSIONINPARAMS structure pointer [Storage Devices], *PGETVERSIONINPARAMS, PGETVERSIONINPARAMS structure pointer [Storage Devices], ntdddisk/PGETVERSIONINPARAMS, GETVERSIONINPARAMS, LPGETVERSIONINPARAMS, _GETVERSIONINPARAMS, structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, *LPGETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, storage.getversioninparams, PGETVERSIONINPARAMS, GETVERSIONINPARAMS structure [Storage Devices]
+ms.keywords: LPGETVERSIONINPARAMS, GETVERSIONINPARAMS, structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, ntdddisk/PGETVERSIONINPARAMS, PGETVERSIONINPARAMS, PGETVERSIONINPARAMS structure pointer [Storage Devices], storage.getversioninparams, _GETVERSIONINPARAMS, *PGETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, GETVERSIONINPARAMS structure [Storage Devices], ntdddisk/GETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, LPGETVERSIONINPARAMS structure pointer [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	GETVERSIONINPARAMS
 product: Windows
 targetos: Windows
-req.typenames: "*LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, GETVERSIONINPARAMS"
+req.typenames: "*PGETVERSIONINPARAMS, GETVERSIONINPARAMS, *LPGETVERSIONINPARAMS"
 ---
 
 # _GETVERSIONINPARAMS structure
@@ -64,6 +64,7 @@ typedef struct _GETVERSIONINPARAMS {
 `bIDEDeviceMap`
 
 Contains the bitmap. The following table explains the meaning of the bitmap:
+
 <table>
 <tr>
 <th>Bitmap Flags</th>
@@ -170,6 +171,7 @@ Reserved.
 `fCapabilities`
 
 Contains the bitmask of driver capabilities. 
+
 <table>
 <tr>
 <th>Bitmask Flags</th>
@@ -216,6 +218,8 @@ The device supports SMART commands.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566202">SMART_GET_VERSION</a>
+
+
 
  
 

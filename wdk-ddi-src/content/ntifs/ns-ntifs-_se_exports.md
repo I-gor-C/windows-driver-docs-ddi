@@ -7,8 +7,8 @@ old-location: ifsk\seexports.htm
 old-project: ifsk
 ms.assetid: e6c398b4-f38f-4819-96f9-cefc3a728dbc
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: SeExports, *PSE_EXPORTS, SeExports structure [Installable File System Drivers], ifsk.seexports, ntifs/SeExports, PSE_EXPORTS structure pointer [Installable File System Drivers], securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml, SE_EXPORTS structure [Installable File System Drivers], SE_EXPORTS, ntifs/PSE_EXPORTS, PSE_EXPORTS, _SE_EXPORTS
+ms.date: 2/7/2018
+ms.keywords: PSE_EXPORTS structure pointer [Installable File System Drivers], SeExports, ntifs/PSE_EXPORTS, SE_EXPORTS, SE_EXPORTS structure [Installable File System Drivers], PSE_EXPORTS, ifsk.seexports, securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml, *PSE_EXPORTS, _SE_EXPORTS, ntifs/SeExports, SeExports structure [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -156,7 +156,9 @@ The SID that matches built-in user accounts.
 `SeAllAppPackagesSid`
 
 The SID for a group that represents all application packages. 
-<div class="alert"><b>Note</b>  Available in Windows 8 and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows 8 and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeAnonymousLogonSid`
 
@@ -181,6 +183,7 @@ The SID that matches any authenticated user.
 `SeBackupPrivilege`
 
 The privilege that is required to perform backup operations. This privilege allows the user to circumvent file and directory permissions to back up the system. This privilege causes the system to grant all read access control to any file, regardless of the access control list (ACL) specified for the file. Any access request other than read is still evaluated with the ACL. This privilege is required by the user-mode <a href="https://msdn.microsoft.com/da80f40d-0099-4748-94ca-5d3b001e633e">RegSaveKey</a> and <a href="https://msdn.microsoft.com/f93b4162-cac4-42f7-bfd4-9e23fff80a03">RegSaveKeyEx</a> routines. The following access rights are granted if this privilege is held:
+
 <ul>
 <li>
 READ_CONTROL 
@@ -198,7 +201,8 @@ FILE_GENERIC_READ
 FILE_TRAVERSE
 
 </li>
-</ul>User-mode applications represent this privilege as the following user-right string: "Back up files and directories".
+</ul>
+User-mode applications represent this privilege as the following user-right string: "Back up files and directories".
 
 `SeBatchSid`
 
@@ -231,7 +235,9 @@ User-mode applications represent this privilege as the following user-right stri
 `SeCreateSymbolicLinkPrivilege`
 
 The SID that matches the IUSR built-in account and the IIS_IUSRS built-in group.
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeCreateTokenPrivilege`
 
@@ -268,7 +274,9 @@ The privilege that is required to enable computer and user accounts to be truste
 `SeHighMandatorySid`
 
 The SID for a high integrity level. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeImpersonatePrivilege`
 
@@ -295,7 +303,9 @@ The privilege that is required to allocate more memory for applications that run
 
 User-mode applications represent this privilege as the following user-right string: "Increase a process working set".
 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeInteractiveSid`
 
@@ -304,7 +314,9 @@ The SID for an interactive account. This SID is added to the process of a token 
 `SeIUserSid`
 
 The SID for an untrusted integrity level. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeLoadDriverPrivilege`
 
@@ -317,6 +329,7 @@ User-mode applications represent this privilege as the following user-right stri
 The SID that matches the LocalService account, a predefined local account. The LocalService account has minimum privileges on the local computer and presents anonymous credentials on the network. The name of the account in all locales is "NT AUTHORITY\LocalService". This account does not have a password. The LocalService account has its own subkey under the HKEY_USERS registry key. Therefore, the HKEY_CURRENT_USER registry key is associated with the LocalService account.
 
 The LocalService account has the following privileges:
+
 <ul>
 <li>
 SE_AUDIT_NAME 
@@ -330,7 +343,8 @@ SE_CHANGE_NOTIFY_NAME
 SE_UNDOCK_NAME 
 
 </li>
-</ul>Any privileges assigned to users and authenticated users 
+</ul>
+Any privileges assigned to users and authenticated users 
 
 The LocalService account is available on the Microsoft Windows XP and later operating systems.
 
@@ -345,6 +359,7 @@ The SID that matches the LocalSystem account, a predefined local account used by
 A service that runs in the context of the LocalSystem account inherits the security context of the Service Control Manager. The account is not associated with any logged-on user account. 
 
 The LocalSystem account has the following privileges:
+
 <ul>
 <li>
 SE_ASSIGNPRIMARYTOKEN_NAME 
@@ -434,7 +449,8 @@ SE_TCB_NAME
 SE_UNDOCK_NAME 
 
 </li>
-</ul>Most services do not need such a high privilege level. If your service does not need these privileges, and it is not an interactive service, consider using the LocalService account or the NetworkService account.
+</ul>
+Most services do not need such a high privilege level. If your service does not need these privileges, and it is not an interactive service, consider using the LocalService account or the NetworkService account.
 
 `SeLockMemoryPrivilege`
 
@@ -445,7 +461,9 @@ User-mode applications represent this privilege as the following user-right stri
 `SeLowMandatorySid`
 
 The SID for a low integrity level. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeManageVolumePrivilege`
 
@@ -454,7 +472,9 @@ The privilege that is required to allow a non-administrative or remote user to m
 `SeMediumMandatorySid`
 
 The SID for a medium integrity level. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeNetworkServiceSid`
 
@@ -465,6 +485,7 @@ A service that runs in the context of the NetworkService account presents the co
 The NetworkService account has its own subkey under the HKEY_USERS registry key. Therefore, the HKEY_CURRENT_USER registry key is associated with the NetworkService account.
 
 The NetworkService account has the following privileges:
+
 <ul>
 <li>
 SE_AUDIT_NAME 
@@ -478,7 +499,8 @@ SE_CHANGE_NOTIFY_NAME
 SE_UNDOCK_NAME
 
 </li>
-</ul>Any privileges assigned to users and authenticated users 
+</ul>
+Any privileges assigned to users and authenticated users 
 
 The NetworkService account is available on Windows XP and later.
 
@@ -497,7 +519,9 @@ The null SID.
 `SeOwnerRightsSid`
 
 The SID for a group that represents the current owner of the object. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeProfileSingleProcessPrivilege`
 
@@ -512,7 +536,9 @@ The privilege that is required to modify the mandatory integrity level of an obj
 
 User-mode applications represent this privilege as the following user-right string: "Modify an object label".
 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeRemoteShutdownPrivilege`
 
@@ -523,6 +549,7 @@ User-mode applications represent this privilege as the following user-right stri
 `SeRestorePrivilege`
 
 The privilege that is required to perform restore operations. This privilege allows a user to circumvent file and directory permissions when restoring backed-up files and directories and to set any valid security principal as the owner of an object. This privilege causes the system to grant all write access control to any file, regardless of the ACL specified for the file. Any access request other than write is still evaluated with the ACL. Additionally, this privilege enables you to set any valid user or group SID as the owner of a file. This privilege is required by the user-mode <a href="https://msdn.microsoft.com/536395aa-03ba-430d-a66d-fcabdc9dfe22">RegLoadKey</a> and <a href="https://msdn.microsoft.com/73b4b6a9-4acb-4247-bd7f-82024ba3e14a">RegUnLoadKey</a> routines that add or remove a hive from the registry. The following access rights are granted if this privilege is held:
+
 <ul>
 <li>
 WRITE_DAC 
@@ -552,7 +579,8 @@ FILE_ADD_SUBDIRECTORY
 DELETE
 
 </li>
-</ul>User-mode applications represent this privilege as the following user-right string: "Restore files and directories".
+</ul>
+User-mode applications represent this privilege as the following user-right string: "Restore files and directories".
 
 `SeRestrictedSid`
 
@@ -583,7 +611,9 @@ User-mode applications represent this privilege as the following user-right stri
 `SeSystemMandatorySid`
 
 The SID for a system integrity level. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeSystemProfilePrivilege`
 
@@ -616,7 +646,9 @@ The privilege that is required to adjust the time zone associated with the compu
 
 
 User-mode applications represent this privilege as the following user-right string: "Change the time zone".
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeTrustedCredManAccessPrivilege`
 
@@ -625,7 +657,9 @@ The privilege that is required to access Credential Manager as a trusted caller.
 
 User-mode applications represent this privilege as the following user-right string: "Access Credential Manager as a trusted caller".
 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeTrustedInstallerSid`
 
@@ -642,7 +676,9 @@ The privilege that is required to read unsolicited input from a terminal device.
 `SeUntrustedMandatorySid`
 
 The SID for an untrusted integrity level. 
-<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Available in Windows Vista and later versions of the Windows operating system.</div>
+<div> </div>
 
 `SeUserModeDriversSid`
 
@@ -664,10 +700,14 @@ The SID that matches everyone.
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
+
+
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 
- 
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeExports structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeExports structure%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

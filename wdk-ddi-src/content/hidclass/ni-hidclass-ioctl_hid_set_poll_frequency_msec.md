@@ -90,6 +90,8 @@ The HID class driver sets the <b>Status</b> member of <b>Irp-&gt;IoStatus</b> to
 
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_poll_frequency_msec.md">IOCTL_HID_GET_POLL_FREQUENCY_MSEC</a>
 
+
+
  
 
  

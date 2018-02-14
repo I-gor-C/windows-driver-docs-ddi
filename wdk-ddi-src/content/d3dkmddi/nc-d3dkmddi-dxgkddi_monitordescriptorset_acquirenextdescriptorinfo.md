@@ -78,6 +78,7 @@ NTSTATUS DxgkddiMonitordescriptorsetAcquirenextdescriptorinfo(
 ## Return Value
 
 The <b>pfnAcquireNextDescriptorInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

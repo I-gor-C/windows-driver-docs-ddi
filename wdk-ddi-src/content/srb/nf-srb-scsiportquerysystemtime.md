@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6f6afe6d-8f57-4c08-97ea-b327622a4e39
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: scsiprt_033d0cc3-e930-448b-a13e-b140829d2b7d.xml, storage.scsiportquerysystemtime, srb/ScsiPortQuerySystemTime, ScsiPortQuerySystemTime routine [Storage Devices], ScsiPortQuerySystemTime
+ms.keywords: ScsiPortQuerySystemTime routine [Storage Devices], storage.scsiportquerysystemtime, srb/ScsiPortQuerySystemTime, scsiprt_033d0cc3-e930-448b-a13e-b140829d2b7d.xml, ScsiPortQuerySystemTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

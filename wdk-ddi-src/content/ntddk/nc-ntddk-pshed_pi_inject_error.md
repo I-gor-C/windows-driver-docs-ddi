@@ -7,7 +7,7 @@ old-location: whea\injecterror.htm
 old-project: whea
 ms.assetid: efd2658b-875e-4589-9ba0-42232e070b91
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 2/8/2018
 ms.keywords: whea.injecterror, InjectError callback function [WHEA Drivers and Applications], InjectError, PSHED_PI_INJECT_ERROR, PSHED_PI_INJECT_ERROR, ntddk/InjectError, whearef_377f07ab-4ea0-4982-8298-c7139b4bfdc7.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ apiname:
 -	InjectError
 product: Windows
 targetos: Windows
-req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 
@@ -76,9 +76,11 @@ The type of error to be injected into the hardware platform. Possible values are
 
 
 
+
 #### INJECT_ERRTYPE_PROCESSOR_CORRECTABLE
 
 A correctable processor error.
+
 
 
 #### INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLENONFATAL
@@ -86,9 +88,11 @@ A correctable processor error.
 An uncorrectable nonfatal processor error.
 
 
+
 #### INJECT_ERRTYPE_PROCESSOR_UNCORRECTABLEFATAL
 
 An uncorrectable fatal processor error.
+
 
 
 #### INJECT_ERRTYPE_MEMORY_CORRECTABLE
@@ -96,9 +100,11 @@ An uncorrectable fatal processor error.
 A correctable memory error.
 
 
+
 #### INJECT_ERRTYPE_MEMORY_UNCORRECTABLENONFATAL
 
 An uncorrectable nonfatal memory error.
+
 
 
 #### INJECT_ERRTYPE_MEMORY_UNCORRECTABLEFATAL
@@ -106,9 +112,11 @@ An uncorrectable nonfatal memory error.
 An uncorrectable fatal memory error.
 
 
+
 #### INJECT_ERRTYPE_PCIEXPRESS_CORRECTABLE
 
 A correctable PCI Express error.
+
 
 
 #### INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLENONFATAL
@@ -116,9 +124,11 @@ A correctable PCI Express error.
 An uncorrectable nonfatal PCI Express error.
 
 
+
 #### INJECT_ERRTYPE_PCIEXPRESS_UNCORRECTABLEFATAL
 
 An uncorrectable fatal PCI Express error.
+
 
 
 #### INJECT_ERRTYPE_PLATFORM_CORRECTABLE
@@ -126,9 +136,11 @@ An uncorrectable fatal PCI Express error.
 A correctable platform error.
 
 
+
 #### INJECT_ERRTYPE_PLATFORM_UNCORRECTABLENONFATAL
 
 An uncorrectable nonfatal platform error.
+
 
 
 #### INJECT_ERRTYPE_PLATFORM_UNCORRECTABLEFATAL
@@ -155,6 +167,7 @@ A generic parameter that contains additional data that is passed by the WHEA man
 ## Return Value
 
 A PSHED plug-in's <i>InjectError</i> callback function returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -204,14 +217,20 @@ The WHEA management application that is injecting the error can pass additional 
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+<a href="..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md">GetInjectionCapabilities</a>
+
+
 
 <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md">GetInjectionCapabilities</a>
+
+
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
+
 
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20PSHED_PI_INJECT_ERROR callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20PSHED_PI_INJECT_ERROR callback function%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

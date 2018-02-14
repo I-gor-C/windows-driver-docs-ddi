@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 97bcd205-ffc0-4645-87d4-659651ed579a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/RtlWriteRegistryValue, k109_e0c16f81-5256-472b-9270-fe48d6a49893.xml, kernel.rtlwriteregistryvalue, RtlWriteRegistryValue routine [Kernel-Mode Driver Architecture], RtlWriteRegistryValue
+ms.keywords: wdm/RtlWriteRegistryValue, RtlWriteRegistryValue routine [Kernel-Mode Driver Architecture], k109_e0c16f81-5256-472b-9270-fe48d6a49893.xml, RtlWriteRegistryValue, kernel.rtlwriteregistryvalue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -66,6 +66,7 @@ NTSTATUS RtlWriteRegistryValue(
 `RelativeTo`
 
 Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined path as one of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -194,19 +195,33 @@ If the specified key does not exist, the routine attempts to create the key. For
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 
-<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
 
-<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
-<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
 
 <a href="..\wdm\nf-wdm-rtlcreateregistrykey.md">RtlCreateRegistryKey</a>
 
+
+
+<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
+
 
  
 

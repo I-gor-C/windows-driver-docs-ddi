@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: FCE1DE7B-CDFE-4533-90E7-A400EC236007
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ntddstor/PSTORAGE_HW_FIRMWARE_ACTIVATE, PSTORAGE_HW_FIRMWARE_ACTIVATE structure pointer [Storage Devices], STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE, storage.storage_hw_firmware_activate, _STORAGE_HW_FIRMWARE_ACTIVATE, PSTORAGE_HW_FIRMWARE_ACTIVATE, ntddstor/STORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE structure [Storage Devices]
+ms.keywords: "*PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE structure [Storage Devices], _STORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, storage.storage_hw_firmware_activate, PSTORAGE_HW_FIRMWARE_ACTIVATE, PSTORAGE_HW_FIRMWARE_ACTIVATE structure pointer [Storage Devices], ntddstor/STORAGE_HW_FIRMWARE_ACTIVATE, ntddstor/PSTORAGE_HW_FIRMWARE_ACTIVATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -63,6 +63,7 @@ typedef struct _STORAGE_HW_FIRMWARE_ACTIVATE {
 `Flags`
 
 The flags associated with the activation request. The following are valid flags that can be set in this member.
+
 <table>
 <tr>
 <th>Flag</th>

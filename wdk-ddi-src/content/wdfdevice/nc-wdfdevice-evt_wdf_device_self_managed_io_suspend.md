@@ -83,6 +83,7 @@ For more information about this callback function's return values, see <a href="
 To register an <i>EvtDeviceSelfManagedIoSuspend</i> callback function, a driver must call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a>. 
 
 If the driver has registered an <i>EvtDeviceSelfManagedIoSuspend</i> callback function, the framework calls it for one of the following reasons:
+
 <ul>
 <li>
 The device is about to enter a low-power state.
@@ -96,7 +97,8 @@ The device is being removed or was surprise-removed.
 The Plug and Play manager is about to redistribute the system's hardware resources among system's attached devices.
 
 </li>
-</ul>Because you do not know which of these events causes the framework to call your driver, you must assume that the device might return to its working (D0) state.
+</ul>
+Because you do not know which of these events causes the framework to call your driver, you must assume that the device might return to its working (D0) state.
 
 If the device is about to enter a low-power state, the framework calls the driver's <i>EvtDeviceSelfManagedIoSuspend</i> callback function before it calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> callback function.
 
@@ -107,6 +109,42 @@ The <i>EvtDeviceSelfManagedIoSuspend</i> callback function must do whatever is n
 For more information about when the framework calls this callback function, see <a href="https://msdn.microsoft.com/9175ce95-196d-44bd-b31c-88386fa0d3d3">PnP and Power Management Scenarios</a>.
 
 For more information about drivers that provide this callback function, see <a href="https://msdn.microsoft.com/539b3618-44bb-41fd-a9f2-ed6a377c94e2">Using Self-Managed I/O</a>.
+
+
+#### Examples
+
+To define an <i>EvtDeviceSelfManagedIoSuspend</i> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
+
+For example, to define an <i>EvtDeviceSelfManagedIoSuspend</i> callback function that is named <i>MyDeviceSelfManagedIoSuspend</i>, use the <b>EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND</b> type as shown in this code example:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND  MyDeviceSelfManagedIoSuspend;</pre>
+</td>
+</tr>
+</table></span></div>
+Then, implement your callback function as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>_Use_decl_annotations_
+NTSTATUS
+ MyDeviceSelfManagedIoSuspend (
+    WDFDEVICE  Device
+    )
+  {...}</pre>
+</td>
+</tr>
+</table></span></div>
+The <b>EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND</b> function type is defined in the Wdfdevice.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-US/library/c0aa268d-6fa3-4ced-a8c6-f7652b152e61">Annotating Function Behavior</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -119,13 +157,21 @@ For more information about drivers that provide this callback function, see <a h
 
 ## See Also
 
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a>
+
+
+
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_restart.md">EvtDeviceSelfManagedIoRestart</a>
+
+
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_flush.md">EvtDeviceSelfManagedIoFlush</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a>
+
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_cleanup.md">EvtDeviceSelfManagedIoCleanup</a>
+
+
 
  
 

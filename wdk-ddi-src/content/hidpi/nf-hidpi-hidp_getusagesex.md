@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: c799ecb6-3024-491c-90d5-70e1d21b1baf
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: HidP_GetUsagesEx, hidfunc_2a2a6e4a-c966-43d7-8159-115bb6f2376c.xml, hidpi/HidP_GetUsagesEx, hid.hidp_getusagesex, HidP_GetUsagesEx routine [Human Input Devices]
+ms.keywords: HidP_GetUsagesEx, hid.hidp_getusagesex, hidpi/HidP_GetUsagesEx, hidfunc_2a2a6e4a-c966-43d7-8159-115bb6f2376c.xml, HidP_GetUsagesEx routine [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,7 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 ## Return Value
 
 <b>HidP_GetUsagesEx</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -188,25 +189,45 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
+
+
+
+<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
+
+
 
 <a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
+
 
 <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 
+
+
 <a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
 
-<a href="..\hidpi\ns-hidpi-_usage_and_page.md">USAGE_AND_PAGE</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
+
+
 <a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
+
+
+<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
+
+
+
+<a href="..\hidpi\ns-hidpi-_usage_and_page.md">USAGE_AND_PAGE</a>
+
+
 
  
 

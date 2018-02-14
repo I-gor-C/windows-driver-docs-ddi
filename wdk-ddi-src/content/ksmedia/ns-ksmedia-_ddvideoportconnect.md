@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 54c1bb05-37a8-4841-808b-2eb9d1ecd7a3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.ddvideoportconnect, DDVIDEOPORTCONNECT, ddstrcts_38f986ec-9ee1-438c-8b1f-2d07ebb06e87.xml, DDVIDEOPORTCONNECT structure [Display Devices], *LPDDVIDEOPORTCONNECT, ksmedia/DDVIDEOPORTCONNECT, _DDVIDEOPORTCONNECT
+ms.keywords: ddstrcts_38f986ec-9ee1-438c-8b1f-2d07ebb06e87.xml, display.ddvideoportconnect, DDVIDEOPORTCONNECT structure [Display Devices], ksmedia/DDVIDEOPORTCONNECT, DDVIDEOPORTCONNECT, _DDVIDEOPORTCONNECT, *LPDDVIDEOPORTCONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DDVIDEOPORTCONNECT
 product: Windows
 targetos: Windows
-req.typenames: DDVIDEOPORTCONNECT, *LPDDVIDEOPORTCONNECT
+req.typenames: "*LPDDVIDEOPORTCONNECT, DDVIDEOPORTCONNECT"
 ---
 
 # _DDVIDEOPORTCONNECT structure
@@ -63,6 +63,7 @@ typedef struct _DDVIDEOPORTCONNECT {
 `dwFlags`
 
 Specifies a set of flags that identify the capabilities of the hardware video port connection. This member can be a bitwise OR of any of the following flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -165,6 +166,7 @@ Specifies the size in bytes of the DDVIDEOPORTCONNECT structure.
 `guidTypeID`
 
 Specifies a GUID that describes the synchronization characteristics of the hardware video port. The following port types are predefined:
+
 <table>
 <tr>
 <th>Port Type</th>
@@ -254,7 +256,11 @@ The driver's <a href="https://msdn.microsoft.com/b6be5f94-6d4d-4f7a-a8d9-15bfc7a
 
 <a href="https://msdn.microsoft.com/b6be5f94-6d4d-4f7a-a8d9-15bfc7a15d3b">DdVideoPortGetConnectInfo</a>
 
+
+
 <a href="https://msdn.microsoft.com/742c7af2-0611-4cca-b18c-e14b18068d7e">DdVideoPortCanCreate</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 844d6aed-2ca2-45ef-bd53-54344dbdadbf
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, display.d3dddi_bltflags, _D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS structure [Display Devices]
+ms.keywords: "_D3DDDI_BLTFLAGS, D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS, display.d3dddi_bltflags, D3DDDI_BLTFLAGS structure [Display Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,7 @@ typedef struct _D3DDDI_BLTFLAGS {
 
 ## Remarks
 The <b>BeginPresentToDwm</b>, <b>ContinuePresentToDwm</b>, and <b>EndPresentToDwm</b> bit-field flags inform the user-mode display driver about the time when the Direct3D runtime performs parts of a DWM present operation.  Because DWM present operations can occur in multiple steps, the Direct3D runtime uses these flags to mark the steps in a sequence of bitblts. For example:  
+
 <ul>
 <li>If the present operation consists of one bitblt, the bitblt is marked as follows:<ul>
 <li><b>BeginPresentToDwm</b> = <b>TRUE</b>;</li>
@@ -136,7 +137,11 @@ The <b>BeginPresentToDwm</b>, <b>ContinuePresentToDwm</b>, and <b>EndPresentToDw
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_blt.md">D3DDDIARG_BLT</a>
 
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
+
+
 
  
 

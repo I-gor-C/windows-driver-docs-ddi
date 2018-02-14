@@ -99,7 +99,8 @@ The value of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_getresourcepresentprivated
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may return other <b>HRESULT</b> values.
 

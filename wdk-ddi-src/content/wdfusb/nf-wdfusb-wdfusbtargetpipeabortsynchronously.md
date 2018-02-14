@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 57d0969f-bc30-4235-93a5-dda51e15b4fc
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFUsbRef_faea6716-3bb7-4f1f-93ce-36fe26bc7875.xml, WdfUsbTargetPipeAbortSynchronously, kmdf.wdfusbtargetpipeabortsynchronously, WdfUsbTargetPipeAbortSynchronously method, wdf.wdfusbtargetpipeabortsynchronously, wdfusb/WdfUsbTargetPipeAbortSynchronously, PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY
+ms.keywords: DFUsbRef_faea6716-3bb7-4f1f-93ce-36fe26bc7875.xml, WdfUsbTargetPipeAbortSynchronously, kmdf.wdfusbtargetpipeabortsynchronously, wdfusb/WdfUsbTargetPipeAbortSynchronously, wdf.wdfusbtargetpipeabortsynchronously, PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY, WdfUsbTargetPipeAbortSynchronously method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfUsbTargetPipeAbortSynchronously
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -81,6 +81,7 @@ A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest-_wdf_reques
 ## Return Value
 
 <b>WdfUsbTargetPipeAbortSynchronously</b> returns the I/O target's completion status value if the operation succeeds. Otherwise, this method can return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -141,7 +142,8 @@ The driver supplied a time-out value and the request did not complete within the
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -160,6 +162,7 @@ You can forward an I/O request that your driver received in an I/O queue, or you
 To forward an I/O request that your driver received in an I/O queue, specify the received request's handle for the <b>WdfUsbTargetPipeAbortSynchronously</b> method's <i>Request</i> parameter.
 
 To create and send a new request, either supply a <b>NULL</b> request handle for the <i>Request</i> parameter, or create a new request object and supply its handle:
+
 <ul>
 <li>
 If you supply a <b>NULL</b> request handle, the framework uses an internal request object. This technique is simple to use, but the driver cannot cancel the request.
@@ -169,11 +172,55 @@ If you supply a <b>NULL</b> request handle, the framework uses an internal reque
 If you call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a> to create one or more request objects, you can reuse these request objects by calling <a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>. This technique enables your driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function to preallocate request objects for a device. Additionally, another driver thread can call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a> to cancel the request, if necessary.
 
 </li>
-</ul>Your driver can specify a non-<b>NULL</b> <i>RequestOptions</i> parameter, whether the driver provides a non-<b>NULL</b> or a <b>NULL</b> <i>Request</i> parameter. You can, for example, use the <i>RequestOptions</i> parameter to specify a time-out value. 
+</ul>
+Your driver can specify a non-<b>NULL</b> <i>RequestOptions</i> parameter, whether the driver provides a non-<b>NULL</b> or a <b>NULL</b> <i>Request</i> parameter. You can, for example, use the <i>RequestOptions</i> parameter to specify a time-out value. 
 
 For information about obtaining status information after an I/O request completes, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Obtaining Completion Information</a>.
 
 For more information about the <b>WdfUsbTargetPipeAbortSynchronously</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
+
+
+#### Examples
+
+The following code example sends abort requests to all of the pipes that are configured for a USB device's interface.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>UCHAR  i;
+ULONG  count;
+NTSTATUS  status;
+PDEVICE_CONTEXT  pDevContext;
+
+pDevContext = GetDeviceContext(Device);
+
+count = WdfUsbInterfaceGetNumConfiguredPipes(
+                                             pDevContext-&gt;UsbInterface
+                                             );
+
+for (i = 0; i &lt; count; i++) {
+    WDFUSBPIPE pipe;
+
+    pipe = WdfUsbInterfaceGetConfiguredPipe(
+                                            pDevContext-&gt;UsbInterface,
+                                            i,
+                                            NULL
+                                            );
+    status = WdfUsbTargetPipeAbortSynchronously(
+                                                pipe,
+                                                WDF_NO_HANDLE,
+                                                NULL
+                                                );
+    if (!NT_SUCCESS(status)) {
+        break;
+    }
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -188,9 +235,13 @@ For more information about the <b>WdfUsbTargetPipeAbortSynchronously</b> method 
 
 ## See Also
 
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpiperesetsynchronously.md">WdfUsbTargetPipeResetSynchronously</a>
+
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpiperesetsynchronously.md">WdfUsbTargetPipeResetSynchronously</a>
+
 
  
 

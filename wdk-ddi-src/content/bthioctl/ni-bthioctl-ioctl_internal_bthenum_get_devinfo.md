@@ -80,6 +80,7 @@ If the request is successful, the
 
 The 
       <b>Status</b> member is set to one of the values in the following table.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -118,6 +119,8 @@ The output buffer was sized incorrectly.
 ## See Also
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: a911fab9-516f-4ac5-ae33-1b6e218f9349
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: PACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER_V1 structure [ACPI Devices], acpi-meth-eval-ref_fda162bd-f908-46bf-a5a9-66daeb6b6aaf.xml, PACPI_EVAL_INPUT_BUFFER_V1 structure pointer [ACPI Devices], *PACPI_EVAL_INPUT_BUFFER, acpiioct/ACPI_EVAL_INPUT_BUFFER_V1, _ACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER, acpiioct/PACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER_V1, acpi.acpi_eval_input_buffer
+ms.keywords: acpiioct/ACPI_EVAL_INPUT_BUFFER_V1, acpi-meth-eval-ref_fda162bd-f908-46bf-a5a9-66daeb6b6aaf.xml, _ACPI_EVAL_INPUT_BUFFER_V1, PACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER_V1 structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_V1 structure pointer [ACPI Devices], acpi.acpi_eval_input_buffer, acpiioct/PACPI_EVAL_INPUT_BUFFER_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	ACPI_EVAL_INPUT_BUFFER_V1
 product: Windows
 targetos: Windows
-req.typenames: "*PACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER, *PACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER_V1"
+req.typenames: "*PACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER, *PACPI_EVAL_INPUT_BUFFER_V1"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_V1 structure
@@ -70,6 +70,7 @@ The signature of an input buffer that does not include an argument, which must b
 
 ## Remarks
 If a device supports a control method named 'ABCD' that does not take an input argument, a driver for the device can evaluate the method by sending an IOCTL_ACPI_EVAL_METHOD request or an IOCTL_ACPI_ASYNC_EVAL_METHOD request to the device and setting the members of the input ACPI_EVAL_INPUT_BUFFER structure as follows:
+
 <ul>
 <li>
 Set <b>Signature</b> to ACPI_EVAL_INPUT_BUFFER_SIGNATURE.
@@ -79,7 +80,8 @@ Set <b>Signature</b> to ACPI_EVAL_INPUT_BUFFER_SIGNATURE.
 Set <b>MethodName</b> to 'ABCD' or <b>MethodNameAsUlong</b> to (ULONG)('DCBA').
 
 </li>
-</ul>For more information about how to use this structure, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods">Evaluating ACPI Control Methods</a>.
+</ul>
+For more information about how to use this structure, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods">Evaluating ACPI Control Methods</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,9 +91,13 @@ Set <b>MethodName</b> to 'ABCD' or <b>MethodNameAsUlong</b> to (ULONG)('DCBA').
 
 ## See Also
 
+<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_eval_method.md">IOCTL_ACPI_EVAL_METHOD</a>
+
+
+
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
 
-<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_eval_method.md">IOCTL_ACPI_EVAL_METHOD</a>
+
 
  
 

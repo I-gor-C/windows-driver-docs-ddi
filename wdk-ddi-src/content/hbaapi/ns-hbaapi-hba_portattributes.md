@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7628c68b-b851-4b41-a86b-aa54e7cd6ddf
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_PORTATTRIBUTES structure [Storage Devices], hbaapi/PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES, structs-Fibre_86dd88a9-06cc-4e24-a665-f4fa240795fb.xml, *PHBA_PORTATTRIBUTES, HBA_PortAttributes, hbaapi/HBA_PortAttributes, storage.hba_portattributes, PHBA_PORTATTRIBUTES structure pointer [Storage Devices], HBA_PortAttributes structure [Storage Devices], PHBA_PORTATTRIBUTES
+ms.keywords: structs-Fibre_86dd88a9-06cc-4e24-a665-f4fa240795fb.xml, HBA_PORTATTRIBUTES structure [Storage Devices], hbaapi/HBA_PortAttributes, hbaapi/PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES, storage.hba_portattributes, *PHBA_PORTATTRIBUTES, PHBA_PORTATTRIBUTES, PHBA_PORTATTRIBUTES structure pointer [Storage Devices], HBA_PortAttributes structure [Storage Devices], HBA_PortAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -101,6 +101,7 @@ Indicates the maximum frame size, in bytes, that is supported by <b>PortWWN</b>.
 `PortSpeed`
 
 Indicates the signaling bit rates at which <b>PortWWN</b> is currently operating. This member must have one of the following values: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -171,6 +172,7 @@ The speed at which the port will operate has not yet been established.
 `PortState`
 
 Contains the state of the port indicated by <b>PortWWN</b>. This member must have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -277,6 +279,7 @@ Contains the symbolic name of the port.
 `PortType`
 
 Indicates the port type. This member must have one of the following values: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -410,7 +413,11 @@ The HBA_PortAttributes structure serves a purpose very similar to the MSFC_HBAPo
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
 
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_getportattributesbywwn.md">HBA_GetPortAttributesByWWN</a>
+
+
 
  
 

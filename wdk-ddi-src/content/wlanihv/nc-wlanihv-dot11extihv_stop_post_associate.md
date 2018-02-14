@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtIhvStopPostAssociate
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -81,8 +81,10 @@ A pointer to a
      contains the media access control (MAC) of the access point (AP) with which the IHV Extensions DLL
      initiated a post-association operation.
      
+
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
-     service set (BSS) networks.</div><div> </div>
+     service set (BSS) networks.</div>
+<div> </div>
 
 `dot11AssocStatus`
 
@@ -102,6 +104,7 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 The operating system calls the 
     <i>Dot11ExtIhvStopPostAssociate</i> function to cancel the post-association operation whenever one of the
     following occurs.
+
 <ul>
 <li>
 The WLAN adapter completes a disassociation operation with the AP. In this situation, the Native
@@ -119,7 +122,8 @@ The WLAN adapter is disabled or removed. In this situation, the operating system
       Dot11ExtIhvDeinitAdapter</a> function.
 
 </li>
-</ul>The operating system calls the 
+</ul>
+The operating system calls the 
     <i>Dot11ExtIhvStopPostAssociate</i> function to notify the IHV Extensions DLL that the data port created
     for the association is down. The operating system calls this function regardless of whether the DLL has
     completed the post-association operation through a call to 
@@ -138,19 +142,31 @@ For more information about the post-association operation, see
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-disassociation">
-   NDIS_STATUS_DOT11_DISASSOCIATION</a>
-
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">Dot11ExtIhvDeinitAdapter</a>
-
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
    Dot11ExtIhvPerformPostAssociate</a>
 
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-disassociation">
+   NDIS_STATUS_DOT11_DISASSOCIATION</a>
+
+
+
 <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">Dot11ExtIhvDeinitAdapter</a>
+
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8cbf75c4-d54c-45e0-9abb-bef8e76fb9fe
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfrequestisreserved, wdfrequest/WdfRequestIsReserved, kmdf.wdfrequestisreserved, DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, WdfRequestIsReserved method, PFN_WDFREQUESTISRESERVED, WdfRequestIsReserved
+ms.keywords: PFN_WDFREQUESTISRESERVED, WdfRequestIsReserved method, WdfRequestIsReserved, wdf.wdfrequestisreserved, kmdf.wdfrequestisreserved, wdfrequest/WdfRequestIsReserved, DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,38 @@ A handle to a framework request object.
 
 For more information about the <b>WdfRequestIsReserved</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/guaranteeing-forward-progress-of-i-o-operations">Guaranteeing Forward Progress of I/O Operations</a>.
 
+
+#### Examples
+
+The following code example determines whether a request object that a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a> callback function has received is one that the driver created for low-memory situations.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+  MyIoRead (
+    IN WDFQUEUE  Queue,
+    IN WDFREQUEST  Request,
+    IN size_t  Length
+    )
+  {...
+  if (WdfRequestIsReserved(Request)) {
+  // Low memory situation exists.
+  ...
+  }
+  else {
+  // Low memory situation does not exist.
+  ...
+  }
+
+  ...}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -87,6 +119,8 @@ For more information about the <b>WdfRequestIsReserved</b> method, see <a href="
 ## See Also
 
 <a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
+
+
 
  
 

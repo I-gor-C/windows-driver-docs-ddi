@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f36beac8-e4fb-49ce-b49d-a1a8f32f19a5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ObReferenceObjectByHandleWithTag, kernel.obreferenceobjectbyhandlewithtag, ObReferenceObjectByHandleWithTag routine [Kernel-Mode Driver Architecture], wdm/ObReferenceObjectByHandleWithTag, k107_431c6c60-e2bd-4d90-9054-b950195bbec3.xml
+ms.keywords: wdm/ObReferenceObjectByHandleWithTag, kernel.obreferenceobjectbyhandlewithtag, k107_431c6c60-e2bd-4d90-9054-b950195bbec3.xml, ObReferenceObjectByHandleWithTag, ObReferenceObjectByHandleWithTag routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,6 +87,7 @@ Specifies a four-byte, custom tag value. For more information, see the following
 `Object`
 
 A pointer to a variable into which the routine writes a pointer to the object. The following table lists the <i>Object</i> pointer types that are designated by the possible <i>ObjectType</i> parameter values.
+
 <table>
 <tr>
 <th><i>ObjectType</i> parameter</th>
@@ -192,7 +193,8 @@ PKTRANSACTION
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The structures that the pointer types reference are opaque, and drivers cannot access the structure members. Because the structures are opaque, PEPROCESS is equivalent to PKPROCESS, and PETHREAD is equivalent to PKTHREAD.
 
@@ -204,6 +206,7 @@ Drivers set this parameter to <b>NULL</b>.
 ## Return Value
 
 <b>ObReferenceObjectByHandleWithTag</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -273,17 +276,29 @@ To view an object reference trace in the <a href="http://go.microsoft.com/fwlink
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+<a href="..\wdm\nf-wdm-obdereferenceobjectdeferdeletewithtag.md">ObDereferenceObjectDeferDeleteWithTag</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558675">OBJECT_TYPE</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
+
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
+
+
 <a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
 
-<a href="..\wdm\nf-wdm-obdereferenceobjectdeferdeletewithtag.md">ObDereferenceObjectDeferDeleteWithTag</a>
+
 
  
 

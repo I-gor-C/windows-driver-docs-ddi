@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f915294f-457f-4913-b4b0-e94e1806a06d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: GetState method, IWDFIoTargetStateManagement interface, IWDFIoTargetStateManagement::GetState, GetState method, umdf.iwdfiotargetstatemanagement_getstate, GetState, wdf.iwdfiotargetstatemanagement_getstate, wudfddi/IWDFIoTargetStateManagement::GetState, IWDFIoTargetStateManagement, IWDFIoTargetStateManagement interface, GetState method, UMDFIoTargetObjectRef_0a52ff77-9947-49a1-958a-ffe6e61ec169.xml
+ms.keywords: IWDFIoTargetStateManagement interface, GetState method, wudfddi/IWDFIoTargetStateManagement::GetState, GetState method, IWDFIoTargetStateManagement interface, UMDFIoTargetObjectRef_0a52ff77-9947-49a1-958a-ffe6e61ec169.xml, GetState, IWDFIoTargetStateManagement::GetState, wdf.iwdfiotargetstatemanagement_getstate, GetState method, IWDFIoTargetStateManagement, umdf.iwdfiotargetstatemanagement_getstate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -62,7 +62,7 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.
+<b>GetState</b> returns a <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>-typed value that identifies the state of the I/O target.
 
 ## Remarks
 
@@ -71,6 +71,28 @@ For more information about <b>GetState</b>, see <a href="https://msdn.microsoft.
 
 
 For more information about I/O targets, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">Using I/O Targets</a>.
+
+
+
+
+#### Examples
+
+The following code example determines whether a local I/O target is stopped.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    if (m_pIoTargetInterruptPipeStateMgmt-&gt;GetState() == WdfIoTargetStopped)
+    {
+    ...
+    }
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,7 +108,11 @@ For more information about I/O targets, see <a href="https://docs.microsoft.com/
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560265">IWDFRemoteTarget::GetState</a>
 
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
+
+
 
  
 

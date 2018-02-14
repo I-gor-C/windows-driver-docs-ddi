@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SCSI_RESCAN_BUS
 product: Windows
 targetos: Windows
-req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames: "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # IOCTL_SCSI_RESCAN_BUS IOCTL
@@ -86,6 +86,8 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field indicates t
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+
+
 
  
 

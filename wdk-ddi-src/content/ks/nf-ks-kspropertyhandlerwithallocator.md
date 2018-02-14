@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: b7e52667-b4ef-4807-867c-37b80af03b6b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsPropertyHandlerWithAllocator function [Streaming Media Devices], stream.kspropertyhandlerwithallocator, ks/KsPropertyHandlerWithAllocator, ksfunc_bad2a764-641a-4f28-a7e6-7d9a03d300f3.xml, KsPropertyHandlerWithAllocator
+ms.keywords: ks/KsPropertyHandlerWithAllocator, ksfunc_bad2a764-641a-4f28-a7e6-7d9a03d300f3.xml, KsPropertyHandlerWithAllocator function [Streaming Media Devices], stream.kspropertyhandlerwithallocator, KsPropertyHandlerWithAllocator
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,9 +101,13 @@ On 64-bit platforms, if the <i>PropertyItemSize</i> parameter is not a multiple 
 
 ## See Also
 
+<a href="..\ks\nf-ks-ksfastpropertyhandler.md">KsFastPropertyHandler</a>
+
+
+
 <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a>
 
-<a href="..\ks\nf-ks-ksfastpropertyhandler.md">KsFastPropertyHandler</a>
+
 
  
 

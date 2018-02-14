@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 521928f8-6434-443a-83f0-7e8e00c756b5
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml, HidRegisterMinidriver, hid.hidregisterminidriver, hidport/HidRegisterMinidriver, HidRegisterMinidriver routine [Human Input Devices]
+ms.keywords: hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml, HidRegisterMinidriver, hidport/HidRegisterMinidriver, HidRegisterMinidriver routine [Human Input Devices], hid.hidregisterminidriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	HidRegisterMinidriver
 product: Windows
 targetos: Windows
-req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+req.typenames: "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 
@@ -66,6 +66,7 @@ Pointer to a caller-allocated buffer that contains an initialized <a href="..\hi
 ## Return Value
 
 <b>HidRegisterMinidriver</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -124,6 +125,8 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## See Also
 
 <a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a>
+
+
 
  
 

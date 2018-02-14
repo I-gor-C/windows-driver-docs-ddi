@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 911a7089-d4ac-4da0-8be6-a3a36567635c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiautil/wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml, wiauDbgLegacyTrace2, image.wiaudbglegacytrace2, wiauDbgLegacyTrace2 function [Imaging Devices]
+ms.keywords: image.wiaudbglegacytrace2, wiauDbgLegacyTrace2 function [Imaging Devices], wiautil/wiauDbgLegacyTrace2, wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,6 +91,8 @@ The <b>wiauDbgLegacyTrace2</b> function is identical to the <a href="..\wiautil\
 ## See Also
 
 <a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+
+
 
  
 

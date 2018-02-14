@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8d991192-2df8-4b4d-a4c5-df5091492e67
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iocancelirp, k104_b43eae94-7d4e-4649-b56c-498285b5033f.xml, IoCancelIrp, wdm/IoCancelIrp, IoCancelIrp routine [Kernel-Mode Driver Architecture]
+ms.keywords: IoCancelIrp routine [Kernel-Mode Driver Architecture], kernel.iocancelirp, k104_b43eae94-7d4e-4649-b56c-498285b5033f.xml, wdm/IoCancelIrp, IoCancelIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,6 +91,8 @@ An intermediate driver should not arbitrarily call <b>IoCancelIrp</b> unless tha
 ## See Also
 
 <a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a>
+
+
 
  
 

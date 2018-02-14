@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8f218b63-304e-4f25-88d8-ea1326c613ee
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtcheckmonitorpowerstate, D3DKMTCheckMonitorPowerState function [Display Devices], OpenGL_Functions_d05a2b63-fe81-45f0-908d-94043416b1d0.xml, D3DKMTCheckMonitorPowerState, d3dkmthk/D3DKMTCheckMonitorPowerState, PFND3DKMT_CHECKMONITORPOWERSTATE
+ms.keywords: OpenGL_Functions_d05a2b63-fe81-45f0-908d-94043416b1d0.xml, D3DKMTCheckMonitorPowerState function [Display Devices], display.d3dkmtcheckmonitorpowerstate, d3dkmthk/D3DKMTCheckMonitorPowerState, PFND3DKMT_CHECKMONITORPOWERSTATE, D3DKMTCheckMonitorPowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTCheckMonitorPowerState</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -112,6 +114,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a>
+
+
 
  
 

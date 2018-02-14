@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: D1703D6F-A453-4E3E-8705-344469D61412
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PSET_BAND_SECURITY_PARAMETERS structure pointer [Storage Devices], SET_BAND_SECURITY_PARAMETERS, SETBANDSEC_AUTHKEY_CACHING_ENABLED, ehstorbandmgmt/SET_BAND_SECURITY_PARAMETERS, storage.set_band_security_parameters, *PSET_BAND_SECURITY_PARAMETERS, PSET_BAND_SECURITY_PARAMETERS, _SET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/PSET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS structure [Storage Devices]
+ms.keywords: storage.set_band_security_parameters, PSET_BAND_SECURITY_PARAMETERS structure pointer [Storage Devices], PSET_BAND_SECURITY_PARAMETERS, SETBANDSEC_AUTHKEY_CACHING_ENABLED, SET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS structure [Storage Devices], *PSET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/SET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/PSET_BAND_SECURITY_PARAMETERS, _SET_BAND_SECURITY_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	SET_BAND_SECURITY_PARAMETERS
 product: Windows
 targetos: Windows
-req.typenames: "*PSET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS"
+req.typenames: SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS
 ---
 
 # _SET_BAND_SECURITY_PARAMETERS structure
@@ -77,6 +77,7 @@ The starting byte location on the storage device to begin a band search. An atte
 `CurrentAuthKeyOffset`
 
 The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the current authentication key for the band. This authentication key is required and must be present following this structure. The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -92,7 +93,7 @@ The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the current a
 </tr>
 </table></span></div>
 
-To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.
+
 
 
 #### KeySize
@@ -100,13 +101,17 @@ To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> 
 The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.
 
 
+
 #### Key
 
 A variable-length byte array containing the key data.
 
+To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.
+
 `Flags`
 
 Security parameter flags. This value is a bitwise OR combination of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -127,6 +132,7 @@ The new authentication key can be cached to automate some band operations.
 `NewAuthKeyOffset`
 
 The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the new authentication key for the band.  The offset is from the beginning of <b>SET_BAND_SECURITY_PARAMETERS</b>. <b>AUTH_KEY</b> is declared in <i>ehstorbandmgmt.h</i> as the following.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -142,7 +148,7 @@ The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the new authe
 </tr>
 </table></span></div>
 
-To assign a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>. If <b>NewAuthKeyOffset</b> == <b>CurrentAuthKeyOffset</b>, the authentication key for the band is left unchanged.
+
 
 
 #### KeySize
@@ -150,9 +156,12 @@ To assign a default authentication key to the band, set   <b>AuthKeyOffset</b> =
 The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.
 
 
+
 #### Key
 
 A variable-length byte array that contains the key data.
+
+To assign a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>. If <b>NewAuthKeyOffset</b> == <b>CurrentAuthKeyOffset</b>, the authentication key for the band is left unchanged.
 
 `Reserved`
 
@@ -181,9 +190,15 @@ The <b>CryptoAlgoIdType</b> and <b>CryptoAlgoOidString</b> members of the <a hre
 
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
 
+
+
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_location_info.md">BAND_LOCATION_INFO</a>
 
+
+
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_location.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION</a>
+
+
 
  
 

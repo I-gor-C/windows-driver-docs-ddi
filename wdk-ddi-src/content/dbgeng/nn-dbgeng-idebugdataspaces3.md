@@ -53,6 +53,36 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 | Method | Description |
 | ---- |:---- |
+| [dbgeng.IDebugDataSpaces3.CheckLowMemory](nf-dbgeng-idebugdataspaces3-checklowmemory.md) | The CheckLowMemory method checks for memory corruption in the low 4 GB of memory. |
+| [dbgeng.IDebugDataSpaces3.EndEnumTagged](nf-dbgeng-idebugdataspaces3-endenumtagged.md) | The EndEnumTagged method releases the resources used by the specified enumeration. |
+| [dbgeng.IDebugDataSpaces3.FillPhysical](nf-dbgeng-idebugdataspaces3-fillphysical.md) | The FillPhysical method writes a pattern of bytes to the target's physical memory. The pattern is written repeatedly until the specified memory range is filled. |
+| [dbgeng.IDebugDataSpaces3.FillVirtual](nf-dbgeng-idebugdataspaces3-fillvirtual.md) | The FillVirtual method writes a pattern of bytes to the target's virtual memory. The pattern is written repeatedly until the specified memory range is filled. |
+| [dbgeng.IDebugDataSpaces3.GetNextTagged](nf-dbgeng-idebugdataspaces3-getnexttagged.md) | The GetNextTagged method returns the GUID for the next block of tagged data in the enumeration. |
+| [dbgeng.IDebugDataSpaces3.GetVirtualTranslationPhysicalOffsets](nf-dbgeng-idebugdataspaces3-getvirtualtranslationphysicaloffsets.md) | The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy. |
+| [dbgeng.IDebugDataSpaces3.ReadBusData](nf-dbgeng-idebugdataspaces3-readbusdata.md) | The ReadBusData method reads data from a system bus. |
+| [dbgeng.IDebugDataSpaces3.ReadControl](nf-dbgeng-idebugdataspaces3-readcontrol.md) | The ReadControl method reads implementation-specific system data. |
+| [dbgeng.IDebugDataSpaces3.ReadDebuggerData](nf-dbgeng-idebugdataspaces3-readdebuggerdata.md) | The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session. |
+| [dbgeng.IDebugDataSpaces3.ReadHandleData](nf-dbgeng-idebugdataspaces3-readhandledata.md) | The ReadHandleData method retrieves information about a system object specified by a system handle. |
+| [dbgeng.IDebugDataSpaces3.ReadImageNtHeaders](nf-dbgeng-idebugdataspaces3-readimagentheaders.md) | The ReadImageNtHeaders method returns the NT headers for the specified image loaded in the target. |
+| [dbgeng.IDebugDataSpaces3.ReadIo](nf-dbgeng-idebugdataspaces3-readio.md) | The ReadIo method reads from the system and bus I/O memory. |
+| [dbgeng.IDebugDataSpaces3.ReadMsr](nf-dbgeng-idebugdataspaces3-readmsr.md) | The ReadMsr method reads a specified Model-Specific Register (MSR). |
+| [dbgeng.IDebugDataSpaces3.ReadPhysical](nf-dbgeng-idebugdataspaces3-readphysical.md) | The ReadPhysical method reads the target's memory from the specified physical address. |
+| [dbgeng.IDebugDataSpaces3.ReadPointersVirtual](nf-dbgeng-idebugdataspaces3-readpointersvirtual.md) | The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces3.ReadProcessorSystemData](nf-dbgeng-idebugdataspaces3-readprocessorsystemdata.md) | The ReadProcessorSystemData method returns data about the specified processor. |
+| [dbgeng.IDebugDataSpaces3.ReadTagged](nf-dbgeng-idebugdataspaces3-readtagged.md) | The ReadTagged method reads the tagged data that might be associated with a debugger session. |
+| [dbgeng.IDebugDataSpaces3.ReadVirtual](nf-dbgeng-idebugdataspaces3-readvirtual.md) | The ReadVirtual method reads memory from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces3.ReadVirtualUncached](nf-dbgeng-idebugdataspaces3-readvirtualuncached.md) | The ReadVirtualUncached method reads memory from the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces3.SearchVirtual](nf-dbgeng-idebugdataspaces3-searchvirtual.md) | The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes. |
+| [dbgeng.IDebugDataSpaces3.StartEnumTagged](nf-dbgeng-idebugdataspaces3-startenumtagged.md) | The StartEnumTagged method initializes a enumeration over the tagged data associated with a debugger session. |
+| [dbgeng.IDebugDataSpaces3.VirtualToPhysical](nf-dbgeng-idebugdataspaces3-virtualtophysical.md) | The VirtualToPhysical method translates a location in the target's virtual address space into a physical memory address. |
+| [dbgeng.IDebugDataSpaces3.WriteBusData](nf-dbgeng-idebugdataspaces3-writebusdata.md) | The WriteBusData method writes data to a system bus. |
+| [dbgeng.IDebugDataSpaces3.WriteControl](nf-dbgeng-idebugdataspaces3-writecontrol.md) | The WriteControl method writes implementation-specific system data. |
+| [dbgeng.IDebugDataSpaces3.WriteIo](nf-dbgeng-idebugdataspaces3-writeio.md) | The WriteIo method writes to the system and bus I/O memory. |
+| [dbgeng.IDebugDataSpaces3.WriteMsr](nf-dbgeng-idebugdataspaces3-writemsr.md) | The WriteMsr method writes a value to the specified Model-Specific Register (MSR). |
+| [dbgeng.IDebugDataSpaces3.WritePhysical](nf-dbgeng-idebugdataspaces3-writephysical.md) | The WritePhysical method writes data to the specified physical address in the target's memory. |
+| [dbgeng.IDebugDataSpaces3.WritePointersVirtual](nf-dbgeng-idebugdataspaces3-writepointersvirtual.md) | The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces3.WriteVirtual](nf-dbgeng-idebugdataspaces3-writevirtual.md) | The WriteVirtual method writes data to the target's virtual address space. |
+| [dbgeng.IDebugDataSpaces3.WriteVirtualUncached](nf-dbgeng-idebugdataspaces3-writevirtualuncached.md) | The WriteVirtualUncached method writes data to the target's virtual address space. |
 
 ## Remarks
 
@@ -66,11 +96,17 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces.md">IDebugDataSpaces</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
+
+
 
  
 

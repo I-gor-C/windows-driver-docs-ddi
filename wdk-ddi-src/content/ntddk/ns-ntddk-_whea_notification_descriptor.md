@@ -7,8 +7,8 @@ old-location: whea\whea_notification_descriptor.htm
 old-project: whea
 ms.assetid: 5b228bb8-dd31-484d-b87a-ec7fed433a4a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: ntddk/WHEA_NOTIFICATION_DESCRIPTOR, whearef_c2a5ab66-2598-447b-8f5b-d6398c55ff1a.xml, ErrorThresholdRW, WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_NMI, SwitchToPollingWindowRW, Reserved, WHEA_NOTIFICATION_DESCRIPTOR structure [WHEA Drivers and Applications], WHEA_NOTIFICATION_TYPE_SCI, WHEA_NOTIFICATION_TYPE_POLLED, AsUSHORT, ErrorThresholdWindowRW, PollIntervalRW, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT, _WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT, whea.whea_notification_descriptor, SwitchToPollingThresholdRW
+ms.date: 2/8/2018
+ms.keywords: AsUSHORT, ntddk/WHEA_NOTIFICATION_DESCRIPTOR, Reserved, ErrorThresholdWindowRW, _WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT, SwitchToPollingThresholdRW, ErrorThresholdRW, WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT, whearef_c2a5ab66-2598-447b-8f5b-d6398c55ff1a.xml, whea.whea_notification_descriptor, WHEA_NOTIFICATION_TYPE_SCI, PollIntervalRW, WHEA_NOTIFICATION_TYPE_POLLED, *PWHEA_NOTIFICATION_DESCRIPTOR, SwitchToPollingWindowRW, WHEA_NOTIFICATION_TYPE_NMI, WHEA_NOTIFICATION_DESCRIPTOR structure [WHEA Drivers and Applications]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	WHEA_NOTIFICATION_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: WHEA_NOTIFICATION_DESCRIPTOR, *PWHEA_NOTIFICATION_DESCRIPTOR
+req.typenames: "*PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR"
 ---
 
 # _WHEA_NOTIFICATION_DESCRIPTOR structure
@@ -98,6 +98,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
 `Flags`
 
 A WHEA_NOTIFICATION_FLAGS union that indicates which of the members of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure can be written to by the operating system. The WHEA_NOTIFICATION_FLAGS union is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -117,7 +118,8 @@ A WHEA_NOTIFICATION_FLAGS union that indicates which of the members of the <b>WH
 } WHEA_NOTIFICATION_FLAGS, *PWHEA_NOTIFICATION_FLAGS</pre>
 </td>
 </tr>
-</table></span></div><table>
+</table></span></div>
+<table>
 <tr>
 <th>Value</th>
 <th>Meaning</th>
@@ -201,6 +203,7 @@ The size, in bytes, of the <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure.
 `Type`
 
 The type of notification mechanism that is used by the error source. This can be one of the following possible values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -273,12 +276,16 @@ A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="..\ntd
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
 
- 
+
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_NOTIFICATION_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_NOTIFICATION_DESCRIPTOR structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -40,7 +40,7 @@ apiname:
 -	CmpMonitorRoutine
 product: Windows
 targetos: Windows
-req.typenames: TOPOLOGY_MAP, *PTOPOLOGY_MAP
+req.typenames: "*PTOPOLOGY_MAP, TOPOLOGY_MAP"
 ---
 
 
@@ -79,6 +79,8 @@ This callback does not return a value.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
+
+
 
  
 

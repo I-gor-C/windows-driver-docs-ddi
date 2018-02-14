@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: D77F5755-75B0-48E6-BC5C-565022F884E1
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetNameByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface, GetNameByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContextWide method, dbgeng/IDebugSymbols4::GetNameByInlineContextWide, IDebugSymbols4::GetNameByInlineContextWide, GetNameByInlineContextWide, IDebugSymbols4, debugger.idebugsymbols4_getnamebyinlinecontextwide
+ms.keywords: dbgeng/IDebugSymbols4::GetNameByInlineContextWide, IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContextWide method, IDebugSymbols4, GetNameByInlineContextWide, debugger.idebugsymbols4_getnamebyinlinecontextwide, GetNameByInlineContextWide method [Windows Debugging], GetNameByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4::GetNameByInlineContextWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -102,6 +102,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+
+
 
  
 

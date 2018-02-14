@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3ea9a473-606d-4021-89af-5f895020d054
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ksfunc_b12751b9-b486-4b57-809b-1f3daa8a1c30.xml, KsDispatchSpecificProperty function [Streaming Media Devices], ks/KsDispatchSpecificProperty, stream.ksdispatchspecificproperty, KsDispatchSpecificProperty
+ms.keywords: KsDispatchSpecificProperty function [Streaming Media Devices], KsDispatchSpecificProperty, stream.ksdispatchspecificproperty, ks/KsDispatchSpecificProperty, ksfunc_b12751b9-b486-4b57-809b-1f3daa8a1c30.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,8 @@ The <b>KsDispatchSpecificProperty</b> function is intended for additional proces
 ## See Also
 
 <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a>
+
+
 
  
 

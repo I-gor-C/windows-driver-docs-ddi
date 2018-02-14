@@ -73,6 +73,7 @@ NTSTATUS DxgkddiVidpntargetmodesetPinmode(
 ## Return Value
 
 The <b>pfnPinMode</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

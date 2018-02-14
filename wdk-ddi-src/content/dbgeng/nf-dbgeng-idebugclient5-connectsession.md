@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 4531bf2f-ef3b-4d4f-b922-3a01a9468ac9
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugClient5::ConnectSession, debugger.connectsession, IDebugClient3 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient3::ConnectSession, dbgeng/IDebugClient2::ConnectSession, IDebugClient5, IDebugClient::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], ConnectSession method, ConnectSession, ConnectSession method [Windows Debugging], IDebugClient interface, ConnectSession method [Windows Debugging], IDebugClient3 interface, ConnectSession method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::ConnectSession, IDebugClient interface [Windows Debugging], ConnectSession method, ConnectSession method [Windows Debugging], IDebugClient5 interface, IDebugClient3::ConnectSession, IDebugClient4::ConnectSession, IDebugClient5::ConnectSession, IDebugClient2::ConnectSession, IDebugClient4 interface [Windows Debugging], ConnectSession method, IDebugClient_b6ec9f48-f400-4a91-bf23-dc40dd702a15.xml, ConnectSession method [Windows Debugging], IDebugClient2 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient::ConnectSession
+ms.keywords: ConnectSession method [Windows Debugging], IDebugClient3 interface, IDebugClient5 interface [Windows Debugging], ConnectSession method, IDebugClient5, ConnectSession method [Windows Debugging], IDebugClient5 interface, IDebugClient interface [Windows Debugging], ConnectSession method, IDebugClient4 interface [Windows Debugging], ConnectSession method, IDebugClient3 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient4::ConnectSession, IDebugClient_b6ec9f48-f400-4a91-bf23-dc40dd702a15.xml, dbgeng/IDebugClient2::ConnectSession, IDebugClient::ConnectSession, dbgeng/IDebugClient5::ConnectSession, debugger.connectsession, ConnectSession method [Windows Debugging], IDebugClient5::ConnectSession, IDebugClient4::ConnectSession, dbgeng/IDebugClient3::ConnectSession, IDebugClient2, ConnectSession method [Windows Debugging], IDebugClient interface, IDebugClient2::ConnectSession, IDebugClient4, ConnectSession method [Windows Debugging], IDebugClient2 interface, IDebugClient3, ConnectSession, IDebugClient2 interface [Windows Debugging], ConnectSession method, IDebugClient, IDebugClient3::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient::ConnectSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -65,6 +65,7 @@ HRESULT ConnectSession(
 `Flags`
 
 Specifies a bit-set of option flags for connecting to the session.  The possible values of these flags are:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -100,6 +101,7 @@ Specifies the maximum number of characters from the session's history to send to
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -135,21 +137,37 @@ For more information about debugging clients, see Debugging Server and Debugging
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553247">OutputServers</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558813">StartServer</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+
+
 
 <a href="..\dbgeng\nf-dbgeng-debugconnect.md">DebugConnect</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558813">StartServer</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+
 
  
 

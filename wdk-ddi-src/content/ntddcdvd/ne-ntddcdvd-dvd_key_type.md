@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ec080043-a147-4002-8d0c-ed383182ec40
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: DvdGetRpcKey, DvdBusKey2, DvdInvalidateAGID, DvdBusKey1, DVD_KEY_TYPE enumeration [Storage Devices], ntddcdvd/DvdSetRpcKey, ntddcdvd/DvdGetRpcKey, storage.dvd_key_type, DvdSetRpcKey, DvdDiskKey, DvdChallengeKey, ntddcdvd/DvdChallengeKey, ntddcdvd/DvdAsf, ntddcdvd/DvdInvalidateAGID, DvdAsf, DVD_KEY_TYPE, ntddcdvd/DvdTitleKey, DvdTitleKey, ntddcdvd/DvdDiskKey, structs-DVD_922c1979-c628-441b-b8e9-5818f6ed737d.xml, ntddcdvd/DvdBusKey2, ntddcdvd/DvdBusKey1, ntddcdvd/DVD_KEY_TYPE
+ms.keywords: storage.dvd_key_type, ntddcdvd/DvdChallengeKey, DvdGetRpcKey, ntddcdvd/DvdInvalidateAGID, DvdBusKey1, structs-DVD_922c1979-c628-441b-b8e9-5818f6ed737d.xml, DvdChallengeKey, ntddcdvd/DvdGetRpcKey, DvdSetRpcKey, ntddcdvd/DvdSetRpcKey, ntddcdvd/DvdAsf, DvdTitleKey, DvdDiskKey, DVD_KEY_TYPE enumeration [Storage Devices], ntddcdvd/DvdBusKey1, ntddcdvd/DvdDiskKey, DvdBusKey2, ntddcdvd/DvdTitleKey, DVD_KEY_TYPE, ntddcdvd/DVD_KEY_TYPE, DvdInvalidateAGID, DvdAsf, ntddcdvd/DvdBusKey2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -124,11 +124,17 @@ Drivers can issue a report key command to retrieve key data by means of an <a hr
 
     ## See Also
 
-        <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_send_key.md">IOCTL_DVD_SEND_KEY</a>
+        <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_PROTECT_KEY</a>
+
+
 
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_key.md">IOCTL_DVD_READ_KEY</a>
 
-<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_copy_protect_key.md">DVD_COPY_PROTECT_KEY</a>
+
+
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_send_key.md">IOCTL_DVD_SEND_KEY</a>
+
+
 
  
 

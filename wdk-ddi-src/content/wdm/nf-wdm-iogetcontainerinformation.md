@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 34612bc5-bed5-4645-8619-64ae2a603d1e
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoGetContainerInformation routine [Kernel-Mode Driver Architecture], kernel.iogetcontainerinformation, IoGetContainerInformation, k104_f139cf99-fd05-4f89-ac6e-ac9c88cc97b4.xml, wdm/IoGetContainerInformation
+ms.keywords: kernel.iogetcontainerinformation, IoGetContainerInformation routine [Kernel-Mode Driver Architecture], wdm/IoGetContainerInformation, IoGetContainerInformation, k104_f139cf99-fd05-4f89-ac6e-ac9c88cc97b4.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -64,12 +64,14 @@ NTSTATUS IoGetContainerInformation(
 `InformationClass`
 
 Specifies the class of events for which the caller (driver) requests information. Set this parameter to the following <a href="..\wdm\ne-wdm-_io_container_information_class.md">IO_CONTAINER_INFORMATION_CLASS</a> enumeration value:
+
 <ul>
 <li>
 <b>IoSessionStateInformation</b>
 
 </li>
-</ul>For more information, see the following Remarks section.
+</ul>
+For more information, see the following Remarks section.
 
 `ContainerObject`
 
@@ -87,6 +89,7 @@ The size, in bytes, of the buffer pointed to by <i>Buffer</i>. For <i>Informatio
 ## Return Value
 
 <b>IoGetContainerInformation</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -143,11 +146,17 @@ This routine can potentially support queries for a variety of information classe
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_session_state_information.md">IO_SESSION_STATE_INFORMATION</a>
-
 <a href="..\wdm\ne-wdm-_io_container_information_class.md">IO_CONTAINER_INFORMATION_CLASS</a>
 
+
+
+<a href="..\wdm\ns-wdm-_io_session_state_information.md">IO_SESSION_STATE_INFORMATION</a>
+
+
+
 <a href="..\wdm\ne-wdm-_io_container_notification_class.md">IO_CONTAINER_NOTIFICATION_CLASS</a>
+
+
 
  
 

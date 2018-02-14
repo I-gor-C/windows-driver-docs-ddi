@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5b125041-969e-49bb-96d5-b40cc7285315
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetTextMacroWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetTextMacroWide method, IDebugControl4::GetTextMacroWide, dbgeng/IDebugControl4::GetTextMacroWide, IDebugControl4, GetTextMacroWide method [Windows Debugging], GetTextMacroWide, debugger.gettextmacrowide
+ms.keywords: IDebugControl4::GetTextMacroWide, debugger.gettextmacrowide, dbgeng/IDebugControl4::GetTextMacroWide, IDebugControl4, GetTextMacroWide method [Windows Debugging], IDebugControl4 interface, GetTextMacroWide method [Windows Debugging], GetTextMacroWide, IDebugControl4 interface [Windows Debugging], GetTextMacroWide method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -80,6 +80,7 @@ Receives the size, in characters, of the value of the alias.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,15 +114,25 @@ For an overview of aliases used by the <a href="https://msdn.microsoft.com/fa52a
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549280">GetTextReplacement</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549280">GetTextReplacement</a>
+
+
 
  
 

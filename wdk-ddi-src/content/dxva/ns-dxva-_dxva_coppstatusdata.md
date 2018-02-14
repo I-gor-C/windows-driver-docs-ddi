@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: f459cfa7-9fda-4b46-9fc9-05bdc9e5c964
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "_DXVA_COPPStatusData, dxva/DXVA_COPPStatusData, dxvaref_76d7144b-c4a7-4530-bf35-be9b9955c9d6.xml, display.dxva_coppstatusdata, DXVA_COPPStatusData, DXVA_COPPStatusData structure [Display Devices]"
+ms.keywords: DXVA_COPPStatusData, DXVA_COPPStatusData structure [Display Devices], _DXVA_COPPStatusData, dxva/DXVA_COPPStatusData, display.dxva_coppstatusdata, dxvaref_76d7144b-c4a7-4530-bf35-be9b9955c9d6.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -67,9 +67,11 @@ Specifies 32-bit status data that is returned from one of the following requests
 
 
 
+
 #### DXVA_COPPQueryProtectionType
 
 Returns a valid ORed combination of the following values that indicate the available types of protection mechanisms on the physical connector associated with a COPP device: 
+
 <ul>
 <li>
 COPP_ProtectionType_Unknown (0x80000000)
@@ -93,9 +95,11 @@ COPP_ProtectionType_CGMSA (0x04)
 </li>
 </ul>
 
+
 #### DXVA_COPPQueryConnectorType
 
 Returns one of the following values from the <b>COPP_ConnectorType</b> enumeration type that identifies the type of physical connector the video session uses:
+
 <ul>
 <li>
 COPP_ConnectorType_Unknown (-1)
@@ -137,12 +141,15 @@ COPP_ConnectorType_TMDS (7)
 COPP_ConnectorType_D_JPN (8)
 
 </li>
-</ul>The COPP_ConnectorType_Internal (0x80000000) value is only combined with one of the preceding connector-type values to indicate that the connection between the graphics adapter and display monitor is permanent and not accessible from the outside of a non-user-serviceable enclosure.
+</ul>
+The COPP_ConnectorType_Internal (0x80000000) value is only combined with one of the preceding connector-type values to indicate that the connection between the graphics adapter and display monitor is permanent and not accessible from the outside of a non-user-serviceable enclosure.
+
 
 
 #### DXVA_COPPQueryLocalProtectionLevel
 
 Returns the currently set protection level for the video session. The protection-level value depends on the protection type specified in the <b>StatusData</b> member of the <a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a> structure. For possible protection levels, see the <b>ProtLevel</b> member of the <a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a> structure. 
+
 
 
 #### DXVA_COPPQueryGlobalProtectionLevel
@@ -152,9 +159,11 @@ Returns the currently set protection level for the physical connector. The level
 The protection-level value depends on the protection type specified in the <b>StatusData</b> member of the <a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a> structure. For possible protection levels, see the <b>ProtLevel</b> member of the <a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a> structure. 
 
 
+
 #### DXVA_COPPQueryBusData
 
 Returns one of the following values from the <b>COPP_BusType</b> enumeration type that identifies the type of bus used by the graphics hardware associated with a COPP device:
+
 <ul>
 <li>
 COPP_BusType_Unknown (0)
@@ -176,11 +185,13 @@ COPP_BusType_PCIExpress (3)
 COPP_BusType_AGP (4)
 
 </li>
-</ul>The COPP_BusType_Integrated (0x80000000) value can only be combined with one of the preceding bus-type values when none of the command and status interface signals between the graphics adapter and other subsystems are available on an expansion bus that uses a publicly available specification and standard connector type. Memory buses are excluded from this definition.
+</ul>
+The COPP_BusType_Integrated (0x80000000) value can only be combined with one of the preceding bus-type values when none of the command and status interface signals between the graphics adapter and other subsystems are available on an expansion bus that uses a publicly available specification and standard connector type. Memory buses are excluded from this definition.
 
 `dwFlags`
 
 Specifies additional status information that might be relevant to the calling application. The display driver should set <b>dwFlags</b> to the COPP_StatusNormal (0x00) value from the <b>COPP_StatusFlags</b> enumeration type or to a valid ORed combination of the following COPP_StatusFlags:
+
 <ul>
 <li>
 COPP_LinkLost (0x01)
@@ -217,11 +228,19 @@ The display driver returns status information through the <i>pOutput</i> paramet
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
+
+
+<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
+
+
 
 <a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
+
+
+<a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
+
+
 
  
 

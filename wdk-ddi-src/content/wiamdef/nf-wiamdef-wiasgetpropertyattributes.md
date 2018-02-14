@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: b12ff158-73e7-4fdf-b7b1-2969d161ed93
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasFncs_d1a6ee77-54bc-400f-a670-e39889c71835.xml, wiamdef/wiasGetPropertyAttributes, image.wiasgetpropertyattributes, wiasGetPropertyAttributes function [Imaging Devices], wiasGetPropertyAttributes
+ms.keywords: wiamdef/wiasGetPropertyAttributes, wiasGetPropertyAttributes, wiasGetPropertyAttributes function [Imaging Devices], image.wiasgetpropertyattributes, wiasFncs_d1a6ee77-54bc-400f-a670-e39889c71835.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasGetPropertyAttributes
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -96,6 +96,7 @@ One or more of the WIA_PROP_Xxx property attributes and access flags can be retu
 If the property has a range of valid values, the values can be determined through the <i>pPropVar </i>parameter upon completion of this function. The <i>pPropVar </i>parameter specifies an array of PROPVARIANT structures.
 
 Valid integer and floating-point values in a range are accessed using the following index constants.
+
 <table>
 <tr>
 <th>Valid Value Index</th>
@@ -141,9 +142,11 @@ Increment value
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Valid list values are accessed using the following index constants.
+
 <table>
 <tr>
 <th>Valid Value Index</th>
@@ -179,9 +182,11 @@ Index to first valid value
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Valid bitwise flag values are accessed using the following index constants.
+
 <table>
 <tr>
 <th>Valid Value Index</th>
@@ -207,7 +212,8 @@ All valid flags are joined together by an OR operator
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The PROPSPEC and PROPVARIANT structures are defined in the Microsoft Windows SDK documentation.
 

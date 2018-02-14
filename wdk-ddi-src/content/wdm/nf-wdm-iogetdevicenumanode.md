@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a36e9d57-c820-43db-a6e0-e935bffca254
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode, kernel.iogetdevicenumanode, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceNumaNode
+ms.keywords: kernel.iogetdevicenumanode, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceNumaNode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a location into which the routine writes the node number, if the no
 ## Return Value
 
 <b>IoGetDeviceNumaNode</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -127,7 +128,11 @@ If a system does not have a NUMA architecture, the routine writes zero to the lo
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
+
+
 <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+
+
 
  
 

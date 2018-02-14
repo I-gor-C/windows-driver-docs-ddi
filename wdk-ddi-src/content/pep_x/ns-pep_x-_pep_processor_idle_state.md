@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 10CAB3CA-83BF-421B-81F5-2B42790B8928
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_IDLE_STATE, pep_x/PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE, PPEP_PROCESSOR_IDLE_STATE, PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_IDLE_STATE, pep_x/PEP_PROCESSOR_IDLE_STATE, kernel.pep_processor_idle_state
+ms.keywords: PPEP_PROCESSOR_IDLE_STATE, _PEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE, pep_x/PEP_PROCESSOR_IDLE_STATE, pep_x/PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_IDLE_STATE, kernel.pep_processor_idle_state, PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,6 +77,8 @@ The <b>IdleStates</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_query_id
 ## See Also
 
 <a href="..\pep_x\ns-pep_x-_pep_ppm_query_idle_states.md">PEP_PPM_QUERY_IDLE_STATES</a>
+
+
 
  
 

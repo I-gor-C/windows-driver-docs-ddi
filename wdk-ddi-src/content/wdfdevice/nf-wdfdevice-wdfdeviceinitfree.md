@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 61540bd2-8496-4972-854c-968b53c90788
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceInitFree method, wdf.wdfdeviceinitfree, PFN_WDFDEVICEINITFREE, WdfDeviceInitFree, wdfdevice/WdfDeviceInitFree, kmdf.wdfdeviceinitfree, DFDeviceObjectGeneralRef_c2bdf168-0e3f-40c9-9e88-77faf7241bcb.xml
+ms.keywords: WdfDeviceInitFree, kmdf.wdfdeviceinitfree, PFN_WDFDEVICEINITFREE, DFDeviceObjectGeneralRef_c2bdf168-0e3f-40c9-9e88-77faf7241bcb.xml, wdfdevice/WdfDeviceInitFree, wdf.wdfdeviceinitfree, WdfDeviceInitFree method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,32 @@ Your driver does not need to call <b>WdfDeviceInitFree</b> if it received the WD
 
 For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
+
+#### Examples
+
+The following code example calls <b>WdfDeviceInitFree</b> if a call to <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassignrawdevice.md">WdfPdoInitAssignRawDevice</a> fails.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS  status;
+
+status = WdfPdoInitAssignRawDevice(
+                                   pDeviceInit,
+                                   &amp;GUID_DEVCLASS_KEYBOARD
+                                   );
+if (!NT_SUCCESS(status)) {
+    WdfDeviceInitFree(pDeviceInit);
+    pDeviceInit = NULL;
+    return STATUS;
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -93,6 +119,8 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
+
 
  
 

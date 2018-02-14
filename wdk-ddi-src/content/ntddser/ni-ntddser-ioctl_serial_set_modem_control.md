@@ -88,6 +88,8 @@ For an example layout of an MCR, see the definition of the MCR bits (SERIAL_MCR_
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_modem_control.md">IOCTL_SERIAL_GET_MODEM_CONTROL</a>
 
+
+
  
 
  

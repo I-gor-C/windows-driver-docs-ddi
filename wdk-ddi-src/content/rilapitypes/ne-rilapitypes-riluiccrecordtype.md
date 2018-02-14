@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 962970e2-1861-4872-b0f3-db307f36d5d8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RILUICCRECORDTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCRECORDTYPE_LINEAR, rilapitypes/RIL_UICCRECORDTYPE_LINEAR, rilapitypes/RIL_UICCRECORDTYPE_BERTLV, rilapitypes/RIL_UICCRECORDTYPE_TRANSPARENT, RILUICCRECORDTYPE, netvista.riluiccrecordtype, RIL_UICCRECORDTYPE_UNKNOWN, RIL_UICCRECORDTYPE_CYCLIC, RIL_UICCRECORDTYPE_MASTER, RIL_UICCRECORDTYPE_BERTLV, rilapitypes/RILUICCRECORDTYPE, RIL_UICCRECORDTYPE_TRANSPARENT, rilapitypes/RIL_UICCRECORDTYPE_MASTER, rilapitypes/RIL_UICCRECORDTYPE_CYCLIC, rilapitypes/RIL_UICCRECORDTYPE_UNKNOWN
+ms.keywords: RILUICCRECORDTYPE enumeration [Network Drivers Starting with Windows Vista], netvista.riluiccrecordtype, RIL_UICCRECORDTYPE_TRANSPARENT, rilapitypes/RIL_UICCRECORDTYPE_TRANSPARENT, rilapitypes/RIL_UICCRECORDTYPE_LINEAR, RILUICCRECORDTYPE, RIL_UICCRECORDTYPE_CYCLIC, RIL_UICCRECORDTYPE_LINEAR, rilapitypes/RIL_UICCRECORDTYPE_MASTER, rilapitypes/RILUICCRECORDTYPE, rilapitypes/RIL_UICCRECORDTYPE_UNKNOWN, RIL_UICCRECORDTYPE_MASTER, rilapitypes/RIL_UICCRECORDTYPE_CYCLIC, rilapitypes/RIL_UICCRECORDTYPE_BERTLV, RIL_UICCRECORDTYPE_UNKNOWN, RIL_UICCRECORDTYPE_BERTLV
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -114,6 +114,8 @@ enum RILUICCRECORDTYPE {
     ## See Also
 
         <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+
+
 
  
 

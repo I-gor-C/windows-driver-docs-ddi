@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: F9FCB214-D56A-4BCC-BB7A-40833836D333
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlLongLongToShort function [Kernel-Mode Driver Architecture], kernel.rtllonglongtoshort, ntintsafe/RtlLongLongToShort, RtlLongLongToShort
+ms.keywords: ntintsafe/RtlLongLongToShort, kernel.rtllonglongtoshort, RtlLongLongToShort function [Kernel-Mode Driver Architecture], RtlLongLongToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>
 RtlLongLongToInt16

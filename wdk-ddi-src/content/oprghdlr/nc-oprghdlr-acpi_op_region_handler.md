@@ -40,7 +40,7 @@ apiname:
 -	AcpiOpRegionHandler
 product: Windows
 targetos: Windows
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+req.typenames: "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 
@@ -70,6 +70,7 @@ NTSTATUS AcpiOpRegionHandler(
 `AccessType`
 
 Specifies one of the following access types.
+
 <table>
 <tr>
 <th>Access Type</th>
@@ -129,6 +130,7 @@ Reserved for internal use.
 ## Return Value
 
 Returns one of the following status values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -190,7 +192,11 @@ For detailed information about constraints on operation regions, see the <a href
 
 <a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
 
+
+
 <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
+
+
 
  
 

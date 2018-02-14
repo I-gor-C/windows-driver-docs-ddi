@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_ACPI_ENUM_CHILDREN
 product: Windows
 targetos: Windows
-req.typenames: "*PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS"
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_ENUM_CHILDREN IOCTL
@@ -51,6 +51,7 @@ The IOCTL_ACPI_ENUM_CHILDREN device control request can be used to enumerate the
 
 ### Input Buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
+
 <ul>
 <li>
 <i>IoControlCode</i> is set to IOCTL_ACPI_ENUM_CHILDREN.
@@ -87,6 +88,7 @@ Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
 
 ### Output Buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:
+
 <ul>
 <li>
 <i>OutputBuffer</i> supplies a pointer to a variable-length <a href="..\acpiioct\ns-acpiioct-_acpi_enum_children_output_buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a> structure in which the ACPI driver returns the path and name of the enumerated child devices.
@@ -133,11 +135,17 @@ IOCTL_ACPI_ENUM_CHILDREN can be used only at IRQL&lt; DISPATCH_LEVEL.
 
 ## See Also
 
-<a href="..\acpiioct\ns-acpiioct-_acpi_enum_children_output_buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
-
 <a href="..\acpiioct\ns-acpiioct-_acpi_enum_child.md">ACPI_ENUM_CHILD</a>
 
+
+
 <a href="..\acpiioct\ns-acpiioct-_acpi_enum_children_input_buffer.md">ACPI_ENUM_CHILDREN_INPUT_BUFFER</a>
+
+
+
+<a href="..\acpiioct\ns-acpiioct-_acpi_enum_children_output_buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
+
+
 
  
 

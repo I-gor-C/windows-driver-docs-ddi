@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2dddd012-9a13-49e4-9392-300938e78609
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: irb/AtaPortCompleteRequest, storage.ataportcompleterequest, AtaPortCompleteRequest, atartns_6ed3a9ca-b9b8-4d2f-a2f2-5a57db2071f8.xml, AtaPortCompleteRequest routine [Storage Devices]
+ms.keywords: irb/AtaPortCompleteRequest, AtaPortCompleteRequest, AtaPortCompleteRequest routine [Storage Devices], atartns_6ed3a9ca-b9b8-4d2f-a2f2-5a57db2071f8.xml, storage.ataportcompleterequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,6 +89,8 @@ The miniport driver uses this routine to indicate to the port driver that the IR
 ## See Also
 
 <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
+
+
 
  
 

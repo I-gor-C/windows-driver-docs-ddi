@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1C66E50F-3BD7-4038-9FDF-2F2B712D9B5E
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/PsAttachSiloToCurrentThread, PsAttachSiloToCurrentThread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], kernel.psattachsilotocurrentthread
+ms.keywords: ntddk/PsAttachSiloToCurrentThread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], PsAttachSiloToCurrentThread, kernel.psattachsilotocurrentthread
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsAttachSiloToCurrentThread
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -72,6 +72,24 @@ The specified <i>Silo</i> is attached to the current thread so that it becomes t
 
 The thread then operates within the namespace of the attached silo until <a href="..\ntddk\nf-ntddk-psdetachsilofromcurrentthread.md">PsDetachSiloFromCurrentThread</a> is called.
 
+
+#### Examples
+
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>PESILO PreviousSilo = PsAttachSiloToCurrentThread();
+
+// Do work within the silo context
+
+PsDetachSiloFromCurrentThread(PreviousSilo);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -83,6 +101,8 @@ The thread then operates within the namespace of the attached silo until <a href
 ## See Also
 
 <a href="..\ntddk\nf-ntddk-psdetachsilofromcurrentthread.md">PsDetachSiloFromCurrentThread</a>
+
+
 
  
 

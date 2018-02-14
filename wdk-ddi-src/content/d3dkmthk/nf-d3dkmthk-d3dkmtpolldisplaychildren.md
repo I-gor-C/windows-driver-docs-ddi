@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 463831c1-d9b2-404d-91f3-78f495668fdf
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTPollDisplayChildren function [Display Devices], display.d3dkmtpolldisplaychildren, OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, D3DKMTPollDisplayChildren, d3dkmthk/D3DKMTPollDisplayChildren
+ms.keywords: OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, D3DKMTPollDisplayChildren, display.d3dkmtpolldisplaychildren, d3dkmthk/D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTPollDisplayChildren</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ The graphics adapter was stopped.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -117,6 +119,8 @@ New child devices are enumerated to the Plug and Play (PnP) manager when PnP det
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a>
+
+
 
  
 

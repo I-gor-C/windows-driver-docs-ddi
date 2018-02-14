@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ecfce692-7dac-4f55-8a8a-1f51c27cce41
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceSetBusInformationForChildren, wdf.wdfdevicesetbusinformationforchildren, wdfdevice/WdfDeviceSetBusInformationForChildren, WdfDeviceSetBusInformationForChildren method, PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml, kmdf.wdfdevicesetbusinformationforchildren
+ms.keywords: DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml, WdfDeviceSetBusInformationForChildren, wdf.wdfdevicesetbusinformationforchildren, kmdf.wdfdevicesetbusinformationforchildren, WdfDeviceSetBusInformationForChildren method, PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, wdfdevice/WdfDeviceSetBusInformationForChildren
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,31 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 Child devices can obtain the information that <b>WdfDeviceSetBusInformationForChildren</b> supplies by calling <a href="..\wdffdo\nf-wdffdo-wdffdoinitqueryproperty.md">WdfFdoInitQueryProperty</a> or <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>.
 
+
+#### Examples
+
+The following code example initializes a PNP_BUS_INFORMATION structure and then calls <b>WdfDeviceSetBusInformationForChildren</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PNP_BUS_INFORMATION  busInfo;
+
+busInfo.BusTypeGuid = GUID_DEVCLASS_TOASTER;
+busInfo.LegacyBusType = PNPBus;
+busInfo.BusNumber = 0;
+
+WdfDeviceSetBusInformationForChildren(
+                                      device,
+                                      &amp;busInfo
+                                      );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,6 +119,8 @@ Child devices can obtain the information that <b>WdfDeviceSetBusInformationForCh
 ## See Also
 
 <a href="..\wdm\ns-wdm-_pnp_bus_information.md">PNP_BUS_INFORMATION</a>
+
+
 
  
 

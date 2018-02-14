@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 6d7b5e2f-a7c3-46ee-a03a-f80f8e1ada07
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: video/VideoPortWriteRegisterUlong, VideoPort_Functions_18ff4439-1c87-44fe-b695-3903b0093e55.xml, display.videoportwriteregisterulong, VideoPortWriteRegisterUlong, VideoPortWriteRegisterUlong function [Display Devices]
+ms.keywords: VideoPortWriteRegisterUlong, VideoPort_Functions_18ff4439-1c87-44fe-b695-3903b0093e55.xml, display.videoportwriteregisterulong, VideoPortWriteRegisterUlong function [Display Devices], video/VideoPortWriteRegisterUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,6 +91,8 @@ Callers of <b>VideoPortWriteRegisterUlong</b> can be running at any IRQL, provid
 ## See Also
 
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
+
 
  
 

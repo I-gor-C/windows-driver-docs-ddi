@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c02f53d9-7cf2-4420-9aea-4dba916be786
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtcreatedcfrommemory, D3DKMTCreateDCFromMemory, PFND3DKMT_CREATEDCFROMMEMORY, D3DKMTCreateDCFromMemory function [Display Devices], OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml, d3dkmthk/D3DKMTCreateDCFromMemory
+ms.keywords: D3DKMTCreateDCFromMemory, display.d3dkmtcreatedcfrommemory, d3dkmthk/D3DKMTCreateDCFromMemory, PFND3DKMT_CREATEDCFROMMEMORY, D3DKMTCreateDCFromMemory function [Display Devices], OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 <b>D3DKMTCreateDCFromMemory</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -92,7 +93,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -114,6 +116,8 @@ During the execution of the <b>D3DKMTCreateDCFromMemory</b> function, the kernel
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createdcfrommemory.md">D3DKMT_CREATEDCFROMMEMORY</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: e780be4b-ac62-43c2-9767-7745ff1c7dbb
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetLineByOffsetWide method [Windows Debugging], GetLineByOffsetWide, IDebugSymbols3::GetLineByOffsetWide, dbgeng/IDebugSymbols3::GetLineByOffsetWide, GetLineByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, debugger.getlinebyoffsetwide, IDebugSymbols3 interface [Windows Debugging], GetLineByOffsetWide method
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetLineByOffsetWide method, debugger.getlinebyoffsetwide, GetLineByOffsetWide method [Windows Debugging], IDebugSymbols3::GetLineByOffsetWide, GetLineByOffsetWide, dbgeng/IDebugSymbols3::GetLineByOffsetWide, GetLineByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -90,6 +90,7 @@ Receives the difference between the location specified in <i>Offset</i> and the 
 ## Return Value
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -134,7 +135,11 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548022">GetOffsetByLine</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 81aa5707-b614-429b-bd8e-0204eec74e0f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.netdmaisr, netdma/NetDmaIsr, NetDmaIsr function [Network Drivers Starting with Windows Vista], NetDmaIsr, netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml
+ms.keywords: netvista.netdmaisr, netdma/NetDmaIsr, netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml, NetDmaIsr function [Network Drivers Starting with Windows Vista], NetDmaIsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	NetDmaIsr
 product: Windows
 targetos: Windows
-req.typenames: "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
@@ -95,8 +95,11 @@ If the NET_DMA_INTERRUPT_ON_COMPLETION flag in the
     <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a> structure is set, the
     DMA engine should generate an interrupt for the DMA channel after it processes the DMA descriptor. When
     this flag is cleared, the DMA engine does not generate an interrupt.
+
 <div class="alert"><b>Note</b>  When the ISR is called, the current DMA descriptor might already be different from
-    the descriptor that triggered the interrupt.</div><div> </div>A DMA provider driver should do as little work as possible in its ISR handler. The driver should defer
+    the descriptor that triggered the interrupt.</div>
+<div> </div>
+A DMA provider driver should do as little work as possible in its ISR handler. The driver should defer
     I/O operations to the interrupt DPC handler.
 
 ## Requirements
@@ -110,9 +113,13 @@ If the NET_DMA_INTERRUPT_ON_COMPLETION flag in the
 
 ## See Also
 
+<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
+
+
+
 <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a>
 
-<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
+
 
  
 

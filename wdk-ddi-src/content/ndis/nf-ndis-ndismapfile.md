@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 965bb4c7-826d-425b-b10d-2d5a29ca0f91
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisMapFile, NdisMapFile, VOID, ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, NdisMapFile function [Network Drivers Starting with Windows Vista], netvista.ndismapfile
+ms.keywords: ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, NdisMapFile function [Network Drivers Starting with Windows Vista], ndis/NdisMapFile, VOID, netvista.ndismapfile, NdisMapFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisMapFile
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -71,10 +71,12 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
+
 #### NDIS_STATUS_SUCCESS
 
 The caller has exclusive access to the file contents until the 
        <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a> function is called.
+
 
 
 #### NDIS_STATUS_ALREADY_MAPPED
@@ -126,13 +128,21 @@ A miniport driver can call
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
 
-<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
+
+
 
  
 

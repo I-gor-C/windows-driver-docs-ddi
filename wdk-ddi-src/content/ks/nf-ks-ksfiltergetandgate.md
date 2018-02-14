@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: b5f7c4ed-0596-4e88-b987-fd454e4b4971
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks/KsFilterGetAndGate, stream.ksfiltergetandgate, KsFilterGetAndGate, KsFilterGetAndGate function [Streaming Media Devices], avfunc_58886874-f3f3-4e2d-a69c-e85260dcc702.xml
+ms.keywords: stream.ksfiltergetandgate, KsFilterGetAndGate function [Streaming Media Devices], KsFilterGetAndGate, ks/KsFilterGetAndGate, avfunc_58886874-f3f3-4e2d-a69c-e85260dcc702.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,17 +81,29 @@ A minidriver can use AND gates on a filter as a processing control mechanism for
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
+<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 
-<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
+
 
 <a href="..\ks\nf-ks-kspinattachandgate.md">KsPinAttachAndGate</a>
 
-<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
+
+
+<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
+
+
+
+<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
+
+
 
 <a href="..\ks\nf-ks-ksgatecapturethreshold.md">KsGateCaptureThreshold</a>
 
-<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
+
+
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
+
+
 
  
 

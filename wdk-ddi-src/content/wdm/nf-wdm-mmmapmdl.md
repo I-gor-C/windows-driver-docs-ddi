@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmmapmdl, MmMapMdl, wdm/MmMapMdl, MmMapMdl function [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/MmMapMdl, MmMapMdl function [Kernel-Mode Driver Architecture], MmMapMdl, kernel.mmmapmdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,6 +97,8 @@ If the callback function pointed to by <i>DriverRoutine</i> was invoked, this fu
 ## See Also
 
 <a href="..\wdm\nc-wdm-mm_mdl_routine.md">MM_MDL_ROUTINE</a>
+
+
 
  
 

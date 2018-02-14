@@ -93,6 +93,8 @@ The driver can call this callback at either passive level or at dispatch level.
 
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_hardware_content_protection_teardown_flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a>
 
+
+
  
 
  

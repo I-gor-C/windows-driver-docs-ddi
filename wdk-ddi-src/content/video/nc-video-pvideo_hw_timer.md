@@ -92,7 +92,11 @@ Note that the <i>HwVidTimer</i> function <i>must not</i> disable the timer with 
 
 <a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>
 
+
+
 <a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
+
+
 
  
 

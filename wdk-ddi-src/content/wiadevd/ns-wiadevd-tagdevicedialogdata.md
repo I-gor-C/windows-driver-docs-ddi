@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 8ddd3ad7-fa97-45a4-a124-ceccdfb93f7f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: DEVICEDIALOGDATA, UIExt_58107635-73eb-474c-83a6-c46b7ea27dc2.xml, LPDEVICEDIALOGDATA, wiadevd/LPDEVICEDIALOGDATA, image.devicedialogdata, tagDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, DEVICEDIALOGDATA structure [Imaging Devices], PDEVICEDIALOGDATA, *PDEVICEDIALOGDATA, wiadevd/PDEVICEDIALOGDATA, wiadevd/DEVICEDIALOGDATA, PDEVICEDIALOGDATA structure pointer [Imaging Devices], LPDEVICEDIALOGDATA structure pointer [Imaging Devices]
+ms.keywords: PDEVICEDIALOGDATA structure pointer [Imaging Devices], wiadevd/PDEVICEDIALOGDATA, LPDEVICEDIALOGDATA, wiadevd/DEVICEDIALOGDATA, DEVICEDIALOGDATA, DEVICEDIALOGDATA structure [Imaging Devices], PDEVICEDIALOGDATA, UIExt_58107635-73eb-474c-83a6-c46b7ea27dc2.xml, LPDEVICEDIALOGDATA structure pointer [Imaging Devices], *PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, tagDEVICEDIALOGDATA, image.devicedialogdata, wiadevd/LPDEVICEDIALOGDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DEVICEDIALOGDATA
 product: Windows
 targetos: Windows
-req.typenames: DEVICEDIALOGDATA, *PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA
+req.typenames: "*PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, DEVICEDIALOGDATA"
 req.product: Windows 10 or later.
 ---
 
@@ -107,6 +107,8 @@ The <b>IWiaPropertyStorage</b> interface is used to access information about the
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545069">IWiaUIExtension::DeviceDialog</a>
+
+
 
  
 

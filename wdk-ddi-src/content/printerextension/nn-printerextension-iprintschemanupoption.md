@@ -54,6 +54,7 @@ Exposes a Print Schema NUp Option element.
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaNUpOption.get_PagesPerSheet](nf-printerextension-iprintschemanupoption-get_pagespersheet.md) | Gets the number of pages per sheet. |
 
 ## Remarks
 

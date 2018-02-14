@@ -78,7 +78,10 @@ If the provider does not support the consumer-specified major version, the provi
 If the provider supports the consumer-specified major version and the specified minor version is less than or equal to the highest minor version that the provider supports, the provider must succeed the request and use the highest minor version that     the provider supports.
 
  For example, if the consumer requests version 1.0, and the provider supports 1.1, the provider must report version  1.1  in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure and  NDK object headers. 
-<div class="alert"><b>Note</b>  Higher minor versions at the provider are always fully backward-compatible with (that is, a superset of) lower minor versions. </div><div> </div>If the provider supports the consumer-specified major version and the specified minor version is greater than the highest minor version that the provider supports, the provider must fail the request with NDIS_STATUS_BAD_VERSION.
+
+<div class="alert"><b>Note</b>  Higher minor versions at the provider are always fully backward-compatible with (that is, a superset of) lower minor versions. </div>
+<div> </div>
+If the provider supports the consumer-specified major version and the specified minor version is greater than the highest minor version that the provider supports, the provider must fail the request with NDIS_STATUS_BAD_VERSION.
 
 `**ppNdkAdapter`
 
@@ -88,6 +91,7 @@ If the provider supports the consumer-specified major version and the specified 
 ## Return Value
 
 <i>OPEN_NDK_ADAPTER_HANDLER</i> can return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -157,15 +161,27 @@ The miniport driver calls the <a href="..\ndisndk\nc-ndisndk-close_ndk_adapter_h
 
 <a href="..\ndisndk\nc-ndisndk-close_ndk_adapter_handler.md">CLOSE_NDK_ADAPTER_HANDLER</a>
 
-<a href="..\ndisndk\ns-ndisndk-_ndis_open_ndk_adapter_parameters.md">NDIS_OPEN_NDK_ADAPTER_PARAMETERS</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_adapter_dispatch.md">NDK_ADAPTER_DISPATCH</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
+
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a>
+
+
+
+<a href="..\ndisndk\ns-ndisndk-_ndis_open_ndk_adapter_parameters.md">NDIS_OPEN_NDK_ADAPTER_PARAMETERS</a>
+
+
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_adapter_dispatch.md">NDK_ADAPTER_DISPATCH</a>
+
+
 
  
 

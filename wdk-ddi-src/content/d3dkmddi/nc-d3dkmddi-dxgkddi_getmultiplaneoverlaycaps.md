@@ -73,6 +73,7 @@ A pointer to a DXGKARG_GETMULTIPLANEOVERLAYCAPS structure that receives the driv
 ## Return Value
 
 DXGKDDI_GETMULTIPLANEOVERLAYCAPS returns the following values:
+
 <table>
 <tr>
 <th>Return code</th>

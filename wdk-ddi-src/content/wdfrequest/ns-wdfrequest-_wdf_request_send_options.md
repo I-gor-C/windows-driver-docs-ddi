@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0d561e0f-ca7e-44ed-9025-1a6513e4cd28
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfrequest/WDF_REQUEST_SEND_OPTIONS, DFRequestObjectRef_3fc871af-dae6-454f-8ff8-35a8b0c5ae9a.xml, PWDF_REQUEST_SEND_OPTIONS structure pointer, wdfrequest/PWDF_REQUEST_SEND_OPTIONS, PWDF_REQUEST_SEND_OPTIONS, _WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS, kmdf.wdf_request_send_options, WDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS structure, wdf.wdf_request_send_options
+ms.keywords: kmdf.wdf_request_send_options, WDF_REQUEST_SEND_OPTIONS structure, WDF_REQUEST_SEND_OPTIONS, wdfrequest/PWDF_REQUEST_SEND_OPTIONS, wdfrequest/WDF_REQUEST_SEND_OPTIONS, PWDF_REQUEST_SEND_OPTIONS structure pointer, PWDF_REQUEST_SEND_OPTIONS, DFRequestObjectRef_3fc871af-dae6-454f-8ff8-35a8b0c5ae9a.xml, *PWDF_REQUEST_SEND_OPTIONS, wdf.wdf_request_send_options, _WDF_REQUEST_SEND_OPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -72,6 +72,7 @@ The size, in bytes, of this structure.
 `Timeout`
 
 A time-out value, in system time units (100-nanosecond intervals). If the driver has set the WDF_REQUEST_SEND_OPTION_TIMEOUT flag, the framework cancels the associated I/O request if it is not completed within the specified time-out period. The time-out value can be negative, positive, or zero, as follows:
+
 <ul>
 <li>
 If the value is negative, the expiration time is relative to the current system time.
@@ -85,7 +86,8 @@ If the value is positive, the expiration time is specified as an absolute time (
 If the value is zero, the framework does not time out the request.
 
 </li>
-</ul>Relative expiration times are not affected by any changes to the system time that might occur within the specified time-out period. Absolute expiration times do reflect system time changes.
+</ul>
+Relative expiration times are not affected by any changes to the system time that might occur within the specified time-out period. Absolute expiration times do reflect system time changes.
 
 The framework provides <a href="https://msdn.microsoft.com/E7D5564D-7BAA-412E-959F-3655B963B4C1">time conversion functions</a> that convert time values into system time units.
 
@@ -105,13 +107,21 @@ If the driver is sending the request synchronously, we recommend that the driver
 
 ## See Also
 
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_send_options_flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>
+
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_send_options_set_timeout.md">WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT</a>
+
+
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_send_options_init.md">WDF_REQUEST_SEND_OPTIONS_INIT</a>
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_send_options_flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>
+
 
  
 

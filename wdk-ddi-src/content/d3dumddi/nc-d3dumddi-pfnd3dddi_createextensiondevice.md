@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CreateExtensionDevice</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,9 +114,13 @@ The extension device is successfully created.
 
 ## See Also
 
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyextensiondevice.md">DestroyExtensionDevice</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createextensiondevice.md">D3DDDIARG_CREATEEXTENSIONDEVICE</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyextensiondevice.md">DestroyExtensionDevice</a>
+
 
  
 

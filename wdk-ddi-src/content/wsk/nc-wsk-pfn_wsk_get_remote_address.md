@@ -40,7 +40,7 @@ apiname:
 -	WskGetRemoteAddress
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -94,6 +94,7 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 ## Return Value
 
 <b>WskGetRemoteAddress</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -170,6 +171,7 @@ A WSK application can call the
     <b>WskGetRemoteAddress</b> function only on a connection-oriented or stream socket that has been connected to a
     remote transport address. A stream socket is connected to a remote transport address by calling the <a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a> function. A connection-oriented socket is connected to a remote transport address in one
     of the following ways:
+
 <ul>
 <li>
 The WSK application calls the 
@@ -186,7 +188,8 @@ The WSK subsystem connects the socket when the WSK application accepts an incomi
       request on a listening socket.
 
 </li>
-</ul>If the 
+</ul>
+If the 
     <b>WskGetRemoteAddress</b> function returns STATUS_PENDING, the buffer that is pointed to by the 
     <i>RemoteAddress</i> parameter must remain valid until the IRP is completed. If the WSK application
     allocated the buffer with one of the 
@@ -205,28 +208,50 @@ The WSK subsystem connects the socket when the WSK application accepts an incomi
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_get_local_address.md">WskGetLocalAddress</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+
+
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_get_local_address.md">WskGetLocalAddress</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
+
+
+
 <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+
+
 
  
 

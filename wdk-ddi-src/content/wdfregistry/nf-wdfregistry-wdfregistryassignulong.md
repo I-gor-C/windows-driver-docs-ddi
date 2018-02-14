@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a5a160a7-3408-4d26-83c8-2f5a7b6acaf1
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfregistry/WdfRegistryAssignULong, PFN_WDFREGISTRYASSIGNULONG, WdfRegistryAssignULong method, DFRegKeyObjectRef_2f35ea01-ade1-4bf1-a55b-6613021fcd04.xml, kmdf.wdfregistryassignulong, WdfRegistryAssignULong, wdf.wdfregistryassignulong
+ms.keywords: PFN_WDFREGISTRYASSIGNULONG, kmdf.wdfregistryassignulong, DFRegKeyObjectRef_2f35ea01-ade1-4bf1-a55b-6613021fcd04.xml, WdfRegistryAssignULong method, WdfRegistryAssignULong, wdf.wdfregistryassignulong, wdfregistry/WdfRegistryAssignULong
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfRegistryAssignULong
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG"
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -81,6 +81,7 @@ A ULONG value that will be assigned to the value name that <i>ValueName</i> spec
 ## Return Value
 
 <b>WdfRegistryAssignULong</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -120,7 +121,8 @@ The driver did not open the registry key with KEY_SET_VALUE access.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -133,6 +135,33 @@ If the value name that the <i>ValueName</i> parameter specifies already exists, 
 The framework sets the value's data type to REG_DWORD.
 
 For more information about registry-key objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
+
+
+#### Examples
+
+The following code example assigns the constant MY_VALUE to the <b>ValueName</b> value, under a specified registry key.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>UNICODE_STRING valueName;
+NTSTATUS status;
+
+RtlInitUnicodeString(
+                     &amp;valueName,
+                     L"ValueName"
+                     );
+status = WdfRegistryAssignULong(
+                                Key,
+                                &amp;valueName,
+                                MY_VALUE
+                                );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -147,17 +176,29 @@ For more information about registry-key objects, see <a href="https://docs.micro
 
 ## See Also
 
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignstring.md">WdfRegistryAssignString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignunicodestring.md">WdfRegistryAssignUnicodeString</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmultistring.md">WdfRegistryAssignMultiString</a>
 
 <a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmemory.md">WdfRegistryAssignMemory</a>
 
+
+
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignstring.md">WdfRegistryAssignString</a>
+
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmultistring.md">WdfRegistryAssignMultiString</a>
+
+
+
 <a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignvalue.md">WdfRegistryAssignValue</a>
 
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignunicodestring.md">WdfRegistryAssignUnicodeString</a>
+
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortWritePortUlong
-title: StorPortWritePortUlong function
+title: StorPortWritePortUlong macro
 author: windows-driver-content
 description: The StorPortWritePortUlong routine writes a value to a specified register address.
 old-location: storage\storportwriteportulong.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 7c6d61c6-40e5-46fd-8c18-1f9d89c58515
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_4f568f62-adb7-4176-9229-e2af5d4453cb.xml, StorPortWritePortUlong, storport/StorPortWritePortUlong, StorPortWritePortUlong routine [Storage Devices], storage.storportwriteportulong
+ms.keywords: StorPortWritePortUlong routine [Storage Devices], storport/StorPortWritePortUlong, storage.storportwriteportulong, StorPortWritePortUlong, storprt_4f568f62-adb7-4176-9229-e2af5d4453cb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -63,15 +63,15 @@ STORPORT_API VOID StorPortWritePortUlong(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Port`
 
-Contains the address of the port to be written to.
+
 
 `Value`
 
-Contains the value to be written.
+
 
 
 ## Return Value
@@ -93,7 +93,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportulong.md">Scsi
 
 <a href="..\srb\nf-srb-scsiportwriteportulong.md">ScsiPortWritePortUlong</a>
 
+
+
 <a href="..\storport\nf-storport-storportwriteportbufferulong.md">StorPortWritePortBufferUlong</a>
+
+
 
  
 

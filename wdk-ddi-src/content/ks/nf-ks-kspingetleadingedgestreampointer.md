@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 05615730-dbeb-496a-b4a8-a16830b31586
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ks/KsPinGetLeadingEdgeStreamPointer, KsPinGetLeadingEdgeStreamPointer, stream.kspingetleadingedgestreampointer, avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml, KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices]
+ms.keywords: avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml, ks/KsPinGetLeadingEdgeStreamPointer, KsPinGetLeadingEdgeStreamPointer, stream.kspingetleadingedgestreampointer, KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,11 +70,13 @@ This parameter specifies how to acquire the leading edge stream pointer. Can be 
 
 
 
+
 #### KSSTREAM_POINTER_STATE_UNLOCKED
 
 Acquire the leading edge stream pointer regardless of whether it references a data frame or not. 
 
 No attempts can be made to access any data associated with the pointer until the pointer is locked. Also note that frames associated with an unlocked stream pointer can be canceled.
+
 
 
 #### KSSTREAM_POINTER_STATE_LOCKED
@@ -101,19 +103,33 @@ Filters that implement <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a8
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
-
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
-
 <a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 
-<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 
 <a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 
+
+
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+
+
+
 <a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
+
+
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+
+
+
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
+
+
+
+<a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
+
+
 
  
 

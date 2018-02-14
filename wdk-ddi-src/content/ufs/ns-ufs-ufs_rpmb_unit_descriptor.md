@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 19A066BD-1099-475C-BF81-F1BE7C7778E5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: UFS_RPMB_UNIT_DESCRIPTOR, ufs/PUFS_RPMB_UNIT_DESCRIPTOR, PUFS_RPMB_UNIT_DESCRIPTOR structure pointer [Storage Devices], storage.ufs_rpmb_unit_descriptor, ufs/UFS_RPMB_UNIT_DESCRIPTOR, *PUFS_RPMB_UNIT_DESCRIPTOR, PUFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR structure [Storage Devices]
+ms.keywords: storage.ufs_rpmb_unit_descriptor, UFS_RPMB_UNIT_DESCRIPTOR structure [Storage Devices], PUFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR, *PUFS_RPMB_UNIT_DESCRIPTOR, ufs/UFS_RPMB_UNIT_DESCRIPTOR, ufs/PUFS_RPMB_UNIT_DESCRIPTOR, PUFS_RPMB_UNIT_DESCRIPTOR structure pointer [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -99,6 +99,7 @@ Specifies the logical unit queue depth. Can be any value from 0x00 to 0xff.
 `bLUWriteProtect`
 
 Specifies if the logical unit is write-protected. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -129,6 +130,7 @@ Specifies the provisioning type.
 `bPSASensitive`
 
 Specifies if the logical unit is sensitive to soldering. Contains one of the following values:
+
 <table>
 <tr>
 <th>Value</th>

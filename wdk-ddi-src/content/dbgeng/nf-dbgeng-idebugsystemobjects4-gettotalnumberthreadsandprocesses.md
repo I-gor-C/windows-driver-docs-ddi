@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 452dc67b-1938-4757-99bd-507a32d9a71a
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.gettotalnumberthreadsandprocesses, dbgeng/IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, dbgeng/IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4, GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects_503ce0cc-8781-4a45-aa59-727b41aaf23b.xml
+ms.keywords: IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4, dbgeng/IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, GetTotalNumberThreadsAndProcesses method [Windows Debugging], GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects3 interface, debugger.gettotalnumberthreadsandprocesses, IDebugSystemObjects3, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects_503ce0cc-8781-4a45-aa59-727b41aaf23b.xml, IDebugSystemObjects3 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, dbgeng/IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,6 +86,7 @@ Receives the largest number of processes in any target.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,11 +118,17 @@ If no target is found, all the values are set to zero.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects4.md">IDebugSystemObjects4</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>
+
 
  
 

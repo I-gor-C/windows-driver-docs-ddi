@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d882a13e-cc07-4e82-857e-499bc397517e
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dumddi/DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA, _DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA, DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA structure [Display Devices], DXVA2_Structs_f5928683-1553-42e0-a36e-86ff64301b45.xml, DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA, display.dxvahdddi_stream_state_private_ivtc_data
+ms.keywords: "_DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA, DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA, DXVA2_Structs_f5928683-1553-42e0-a36e-86ff64301b45.xml, DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA, display.dxvahdddi_stream_state_private_ivtc_data"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -74,6 +74,7 @@ typedef struct _DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC_DATA {
 `ITelecineFlags`
 
 [out] One of the following DXVAHDDDI_ITELECINE_CAPS enumeration values that indicates the telecine type that the driver detected while reversing the telecined frames.
+
 <table>
 <tr>
 <th>Value</th>
@@ -187,6 +188,7 @@ The DXVAHDDDI_STREAM_STATE_PRIVATE_IVTC GUID is set in the <b>Guid</b> member of
 When an application de-interlaces an interlaced stream, the driver might inverse the telecined frames. If the driver supports inverse telecine statistics, the application can query the statistics data.
 
 The playback application can dynamically switch the frame rate converter as described in the following scenario:
+
 <ul>
 <li>
 The application enables the inverse telecine statistics. 
@@ -204,7 +206,8 @@ At some point, the application queries the statistics and determines the streams
 The application enables the custom frame rate in order to output the frames at the original content frame rate (for example, 60i -&gt; 24p). 
 
 </li>
-</ul>The application continues to query the statistics to determine if the frames are changed (for example, progressive or interlaced).
+</ul>
+The application continues to query the statistics to determine if the frames are changed (for example, progressive or interlaced).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -215,6 +218,8 @@ The application enables the custom frame rate in order to output the frames at t
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: BEF37F32-036D-4381-93B3-C159ABCFC3F9
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddndis/NdisSwitchPortStateCreated, ntddndis/NdisSwitchPortStateDeleted, NdisSwitchPortStateUnknown, netvista.ndis_switch_port_state, NdisSwitchPortStateDeleted, NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateTeardown, NdisSwitchPortStateTeardown, _NDIS_SWITCH_PORT_STATE, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchPortStateCreated, ntddndis/NdisSwitchPortStateUnknown, ntddndis/NDIS_SWITCH_PORT_STATE
+ms.keywords: NdisSwitchPortStateTeardown, NDIS_SWITCH_PORT_STATE, NdisSwitchPortStateCreated, ntddndis/NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateCreated, netvista.ndis_switch_port_state, ntddndis/NdisSwitchPortStateDeleted, ntddndis/NdisSwitchPortStateTeardown, NdisSwitchPortStateDeleted, NdisSwitchPortStateUnknown, _NDIS_SWITCH_PORT_STATE, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisSwitchPortStateUnknown
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -98,7 +98,11 @@ For more information about extensible switch port states, see <a href="https://m
 
         <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a>
 
+
+
 <b></b>
+
+
 
  
 

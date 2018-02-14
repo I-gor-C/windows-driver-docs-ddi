@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_CDROM_READ_TOC
 product: Windows
 targetos: Windows
-req.typenames: "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_READ_TOC IOCTL
@@ -85,6 +85,8 @@ Client applications should use the <i>Media Control Interface (MCI) API</i> rath
 ## See Also
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
+
+
 
  
 

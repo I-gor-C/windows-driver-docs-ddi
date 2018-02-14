@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: ced1d848-fb6e-4207-bdb0-29ca82249d06
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PKSPROPERTY_CAMERACONTROL_NODE_S, PKSPROPERTY_CAMERACONTROL_NODE_S structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_NODE_S, KSPROPERTY_CAMERACONTROL_NODE_S structure [Streaming Media Devices], stream.ksproperty_cameracontrol_node_s, KSPROPERTY_CAMERACONTROL_NODE_S, vidcapstruct_fbe0c251-5c32-49b7-978c-67b52c920613.xml, ksmedia/KSPROPERTY_CAMERACONTROL_NODE_S
+ms.keywords: vidcapstruct_fbe0c251-5c32-49b7-978c-67b52c920613.xml, PKSPROPERTY_CAMERACONTROL_NODE_S structure pointer [Streaming Media Devices], stream.ksproperty_cameracontrol_node_s, KSPROPERTY_CAMERACONTROL_NODE_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_NODE_S, ksmedia/PKSPROPERTY_CAMERACONTROL_NODE_S, KSPROPERTY_CAMERACONTROL_NODE_S, PKSPROPERTY_CAMERACONTROL_NODE_S
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -62,6 +62,7 @@ typedef struct {
 `Capabilities`
 
 Indicates the minidriver's camera control capabilities for the specified property. This member is read-only. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -112,6 +113,7 @@ Indicates that the device settings are in relative values.
 `Flags`
 
 Indicates, for Get requests, the current setting for the specified property from the values listed below. Indicates, for Set requests, the desired setting for the specified property from the values listed below. This member can be set to one of the following values that are defined in <i>ksmedia.h</i>:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -179,9 +181,15 @@ See related information about the <a href="https://msdn.microsoft.com/84b5302d-c
 
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s.md">KSPROPERTY_CAMERACONTROL_S</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567802">PROPSETID_VIDCAP_CAMERACONTROL</a>
+
+
+
+<a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s.md">KSPROPERTY_CAMERACONTROL_S</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0c4fbe80-03f2-4ee0-b766-c1ccaa8e83c2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_SetRNIDMgmtInfo routine [Storage Devices], HBA_SetRNIDMgmtInfo, hbaapi/HBA_SetRNIDMgmtInfo, storage.hba_setrnidmgmtinfo, fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml
+ms.keywords: HBA_SetRNIDMgmtInfo, hbaapi/HBA_SetRNIDMgmtInfo, storage.hba_setrnidmgmtinfo, fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, HBA_SetRNIDMgmtInfo routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,6 +70,7 @@ TBD
 ## Return Value
 
 The <b>HBA_SetRNIDMgmtInfo</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_SetRNIDMgmtInfo</b> returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -112,7 +113,11 @@ Returned if an unspecified error occurred that prevented the routine from progra
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+
 
  
 

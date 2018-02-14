@@ -78,11 +78,17 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 ## See Also
 
-<a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
+<a href="..\ntddtape\ns-ntddtape-_tape_get_media_parameters.md">TAPE_GET_MEDIA_PARAMETERS</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>
 
-<a href="..\ntddtape\ns-ntddtape-_tape_get_media_parameters.md">TAPE_GET_MEDIA_PARAMETERS</a>
+
+
+<a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
+
+
 
  
 

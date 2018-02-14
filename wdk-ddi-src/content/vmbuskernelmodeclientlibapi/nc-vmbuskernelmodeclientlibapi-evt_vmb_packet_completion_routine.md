@@ -40,7 +40,7 @@ apiname:
 -	PFN_VMB_PACKET_COMPLETION_ROUTINE
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -107,7 +107,11 @@ If not, the outgoing packet was successfully placed into the ring buffer.
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsetcompletionroutine.md">VmbPacketSetCompletionRoutine</a>
 
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketallocate.md">VmbPacketAllocate</a>
+
+
 
  
 

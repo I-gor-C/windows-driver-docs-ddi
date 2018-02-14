@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 4140a6c6-60e8-41ec-8de0-cfb56e757e34
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wiassetitempropnames, wiasSetItemPropNames, wiasSetItemPropNames function [Imaging Devices], wiamdef/wiasSetItemPropNames, wiasFncs_e8f17c14-47a7-42bc-ad85-cdd52ecbab79.xml
+ms.keywords: wiasSetItemPropNames, wiamdef/wiasSetItemPropNames, wiasSetItemPropNames function [Imaging Devices], wiasFncs_e8f17c14-47a7-42bc-ad85-cdd52ecbab79.xml, image.wiassetitempropnames
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasSetItemPropNames
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -98,6 +98,8 @@ Minidrivers typically use this function when initializing item properties. The o
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
+
+
 
  
 

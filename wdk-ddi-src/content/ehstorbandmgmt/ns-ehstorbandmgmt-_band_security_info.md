@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 310F996F-F350-4F25-BC8A-386513908557
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_BAND_SECURITY_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], BAND_SECURITY_INFO, ehstorbandmgmt/BAND_SECURITY_INFO, PBAND_LOCATION_INFO, storage.band_security_info, ehstorbandmgmt/PBAND_LOCATION_INFO, *PBAND_SECURITY_INFO, BAND_SECURITY_INFO structure [Storage Devices], BAND_LOCATION_INFO, BAND_LOCATION_INFO structure [Storage Devices]"
+ms.keywords: BAND_SECURITY_INFO, BAND_LOCATION_INFO, ehstorbandmgmt/BAND_SECURITY_INFO, ehstorbandmgmt/PBAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], PBAND_LOCATION_INFO, *PBAND_SECURITY_INFO, BAND_LOCATION_INFO structure [Storage Devices], _BAND_SECURITY_INFO, BAND_SECURITY_INFO structure [Storage Devices], storage.band_security_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	BAND_LOCATION_INFO
 product: Windows
 targetos: Windows
-req.typenames: BAND_SECURITY_INFO, *PBAND_SECURITY_INFO
+req.typenames: "*PBAND_SECURITY_INFO, BAND_SECURITY_INFO"
 ---
 
 # _BAND_SECURITY_INFO structure
@@ -89,6 +89,7 @@ Whether the band is accessible for writing and how a write lock is affected by a
 
 ## Remarks
 Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indicate locking state and lock persistence. Their values are one of the following.
+
 <table>
 <tr>
 <th>Lock State</th>
@@ -110,9 +111,11 @@ Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indica
 <td>PERSISTENT_LOCK</td>
 <td>The device is locked and remains locked during power reset.</td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>CryptoAlgoOidString</b>  specifies the data encryption algorithm only if <b>ENUMBANDS_REPORT_CRYPTO_ALGO</b> is set in the <b>Flags</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a> in an <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a> request. Otherwise, both <b>CryptoAlgoOidString.Offset</b> and <b>CryptoAlgoOidString.Length</b> are set to 0. The following are possible encryption algorithm OID strings returned for <b>CryptoAlgoOidString</b>.
+
 <table>
 <tr>
 <th>Algorithm</th>
@@ -158,7 +161,8 @@ Both <b>Readlock</b> and <b>Writelock</b> are <b>LOCKSTATE</b> values and indica
 <td>AES256-XTS</td>
 <td>1.3.111.2.1619.0.1.2</td>
 </tr>
-</table> 
+</table>
+ 
 
 When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoIdType</b> and <b>CryptoAlgoOidString</b> are not used and must be set to 0.
 
@@ -172,11 +176,19 @@ When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoI
 
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
 
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
+
 
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
 
+
+
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
+
+
+
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band.md">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
+
+
 
  
 

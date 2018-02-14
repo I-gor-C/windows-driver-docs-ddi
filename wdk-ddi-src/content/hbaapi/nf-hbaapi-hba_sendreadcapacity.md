@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 642a085f-03d4-438a-8584-c1f420161e94
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_sendreadcapacity, hbaapi/HBA_SendReadCapacity, HBA_SendReadCapacity, HBA_SendReadCapacity routine [Storage Devices], fibreHBA_rtns_0defc2d1-5d08-4d31-981e-09dbb0d700a7.xml
+ms.keywords: HBA_SendReadCapacity, storage.hba_sendreadcapacity, fibreHBA_rtns_0defc2d1-5d08-4d31-981e-09dbb0d700a7.xml, hbaapi/HBA_SendReadCapacity, HBA_SendReadCapacity routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,6 +95,7 @@ On input, indicates on input the size, in bytes, of the buffer at <i>pSenseBuffe
 ## Return Value
 
 The <b>HBA_ScsiReadCapacity</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiReadCapacity</b> returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -181,7 +182,11 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 830460f8-4cd6-4a52-ac32-004dc4a204e3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddndis/NdisHypervisorPartitionTypeUnknown, ntddndis/NdisHypervisorPartitionTypeMsHvParent, NDIS_HYPERVISOR_PARTITION_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisHypervisorPartitionMsHvChild, *PNDIS_HYPERVISOR_PARTITION_TYPE, NDIS_HYPERVISOR_PARTITION_TYPE, NdisHypervisorPartitionTypeUnknown, _NDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NDIS_HYPERVISOR_PARTITION_TYPE, NdisHypervisorPartitionTypeMsHvParent, PNDIS_HYPERVISOR_PARTITION_TYPE, NdisHypervisorPartitionTypeMax, virtual_machine_queue_ref_582bebe7-e184-4460-8437-b81bcd6dbf8b.xml, PNDIS_HYPERVISOR_PARTITION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], netvista.ndis_hypervisor_partition_type, ntddndis/NdisHypervisorPartitionTypeMax, ntddndis/PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionMsHvChild
+ms.keywords: ntddndis/NdisHypervisorPartitionMsHvChild, ntddndis/NDIS_HYPERVISOR_PARTITION_TYPE, NDIS_HYPERVISOR_PARTITION_TYPE, PNDIS_HYPERVISOR_PARTITION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisHypervisorPartitionTypeUnknown, virtual_machine_queue_ref_582bebe7-e184-4460-8437-b81bcd6dbf8b.xml, ntddndis/NdisHypervisorPartitionTypeMsHvParent, ntddndis/PNDIS_HYPERVISOR_PARTITION_TYPE, NdisHypervisorPartitionTypeMax, *PNDIS_HYPERVISOR_PARTITION_TYPE, NDIS_HYPERVISOR_PARTITION_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisHypervisorPartitionTypeMsHvParent, NdisHypervisorPartitionMsHvChild, netvista.ndis_hypervisor_partition_type, PNDIS_HYPERVISOR_PARTITION_TYPE, NdisHypervisorPartitionTypeUnknown, ntddndis/NdisHypervisorPartitionTypeMax, _NDIS_HYPERVISOR_PARTITION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -86,7 +86,9 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
                 <tr>
                     <td>NdisHypervisorPartitionTypeUnknown</td>
                     <td>The partition type that is running on the hypervisor is not known.
-<div class="alert"><b>Note</b>  This enumeration value is used to identify a partition type for a third-party hypervisor.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  This enumeration value is used to identify a partition type for a third-party hypervisor.</div>
+<div> </div></td>
                 </tr>
 </table>
 
@@ -103,6 +105,8 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
     ## See Also
 
         <a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
+
+
 
  
 

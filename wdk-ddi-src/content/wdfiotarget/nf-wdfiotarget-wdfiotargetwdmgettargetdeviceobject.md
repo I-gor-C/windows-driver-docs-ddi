@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 199c2fd6-ecff-4b72-b55d-086687989485
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoTargetWdmGetTargetDeviceObject, WdfIoTargetWdmGetTargetDeviceObject method, wdfiotarget/WdfIoTargetWdmGetTargetDeviceObject, wdf.wdfiotargetwdmgettargetdeviceobject, kmdf.wdfiotargetwdmgettargetdeviceobject, DFIOTargetRef_82d5005b-ced0-4ae5-8a73-8714d2895ead.xml
+ms.keywords: WdfIoTargetWdmGetTargetDeviceObject method, wdfiotarget/WdfIoTargetWdmGetTargetDeviceObject, DFIOTargetRef_82d5005b-ced0-4ae5-8a73-8714d2895ead.xml, WdfIoTargetWdmGetTargetDeviceObject, kmdf.wdfiotargetwdmgettargetdeviceobject, wdf.wdfiotargetwdmgettargetdeviceobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,26 @@ For more information about <b>WdfIoTargetWdmGetTargetDeviceObject</b>, see <a hr
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
+
+#### Examples
+
+The following code example checks an I/O target's WDM DEVICE_OBJECT structure to verify that the target supports direct I/O operations.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>if (!((WdfIoTargetWdmGetTargetDeviceObject(Adapter-&gt;IoTarget))-&gt;Flags
+ &amp; DO_DIRECT_IO)) {
+    ASSERTMSG("Target device doesn't support direct I/O\n", FALSE);
+    return STATUS_INVALID_DEVICE_REQUEST;
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -96,15 +116,25 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfilehandle.md">WdfIoTargetWdmGetTargetFileHandle</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfileobject.md">WdfIoTargetWdmGetTargetFileObject</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfilehandle.md">WdfIoTargetWdmGetTargetFileHandle</a>
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
+
 
  
 

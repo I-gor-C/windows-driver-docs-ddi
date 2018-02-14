@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 963c809f-da89-4f27-ba8b-3de8cdcec179
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: winppi/GdiStartPageEMF, gdifnc_fbb09921-04b5-49e2-b8a7-fe23657a0f4f.xml, GdiStartPageEMF, GdiStartPageEMF function [Print Devices], print.gdistartpageemf
+ms.keywords: GdiStartPageEMF, winppi/GdiStartPageEMF, GdiStartPageEMF function [Print Devices], print.gdistartpageemf, gdifnc_fbb09921-04b5-49e2-b8a7-fe23657a0f4f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -42,7 +42,7 @@ apiname:
 -	GdiStartPageEMF
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -88,6 +88,8 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## See Also
 
 <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
+
+
 
  
 

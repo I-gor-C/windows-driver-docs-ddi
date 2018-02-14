@@ -80,6 +80,8 @@ The miniport driver does not set the <b>Information</b> member of the <a href=".
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_set_pointer_attr.md">IOCTL_VIDEO_SET_POINTER_ATTR</a>
 
+
+
  
 
  

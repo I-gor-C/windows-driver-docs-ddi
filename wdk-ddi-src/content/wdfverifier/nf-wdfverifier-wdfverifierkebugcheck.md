@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3fa8ea3d-cca0-402d-a3a8-1281ad4231d4
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfverifierkebugcheck, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, WdfVerifierKeBugCheck, WdfVerifierKeBugCheck function, wdfverifier/WdfVerifierKeBugCheck, wdf.wdfverifierkebugcheck
+ms.keywords: WdfVerifierKeBugCheck function, wdfverifier/WdfVerifierKeBugCheck, kmdf.wdfverifierkebugcheck, WdfVerifierKeBugCheck, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, wdf.wdfverifierkebugcheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfVerifierKeBugCheck
 product: Windows
 targetos: Windows
-req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.typenames: "*PWDF_USB_REQUEST_COMPLETION_PARAMS, WDF_USB_REQUEST_COMPLETION_PARAMS"
 req.product: Windows 10 or later.
 ---
 
@@ -100,6 +100,28 @@ If your  User-Mode Driver Framework (UMDF) driver (version 2.0 or later) calls <
 
 For more information about debugging your driver, see <a href="https://msdn.microsoft.com/e648a7c9-0fdc-477e-b1cd-bec5dd8f5386">Debugging WDF Drivers</a>.
 
+
+#### Examples
+
+The following code example creates a bug check that uses the <a href="https://msdn.microsoft.com/bc60b4b3-aded-4c67-bbaa-aad1b6b38d30">MULTIPLE_IRP_COMPLETE_REQUESTS</a> bug check code.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfVerifierKeBugCheck(
+                      MULTIPLE_IRP_COMPLETE_REQUESTS,
+                      (ULONG_PTR) irp,
+                      (ULONG_PTR) srb,
+                      0,
+                      0
+                      );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -114,6 +136,8 @@ For more information about debugging your driver, see <a href="https://msdn.micr
 ## See Also
 
 <a href="..\wdfverifier\nf-wdfverifier-wdfverifierdbgbreakpoint.md">WdfVerifierDbgBreakPoint</a>
+
+
 
  
 

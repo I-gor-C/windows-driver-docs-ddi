@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 5795a1d1-0e13-4f9f-b2f2-37bbd71bde7a
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: RegisterOpRegionHandler, acpi.registeropregionhandler, RegisterOpRegionHandler routine [ACPI Devices], oprghdlr/RegisterOpRegionHandler, opregref_9742e50b-613d-4191-b0a2-6d1b0f365494.xml
+ms.keywords: acpi.registeropregionhandler, oprghdlr/RegisterOpRegionHandler, opregref_9742e50b-613d-4191-b0a2-6d1b0f365494.xml, RegisterOpRegionHandler routine [ACPI Devices], RegisterOpRegionHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RegisterOpRegionHandler
 product: Windows
 targetos: Windows
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+req.typenames: "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 
@@ -75,6 +75,7 @@ Specifies ACPI_OPREGION_ACCESS_AS_COOKED.
 `RegionSpace`
 
 Specifies one of the following types of region space.
+
 <table>
 <tr>
 <th>Region Space Identifier</th>
@@ -182,6 +183,7 @@ Pointer to caller-allocated buffer that, on output, contains a pointer to the op
 ## Return Value
 
 Returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -251,7 +253,11 @@ For more information about operation regions, see <a href="https://msdn.microsof
 
 <a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
 
+
+
 <a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>
+
+
 
  
 

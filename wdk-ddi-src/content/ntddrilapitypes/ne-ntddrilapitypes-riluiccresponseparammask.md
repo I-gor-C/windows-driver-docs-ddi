@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 2a87655f-8c8c-48c7-982e-dcb70ca600fb
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddrilapitypes/RIL_PARAM_SR_ALL, RIL_PARAM_SR_STATUSWORD2, ntddrilapitypes/RIL_PARAM_SR_STATUSWORD2, RIL_PARAM_SR_RESPONSE, ntddrilapitypes/RIL_PARAM_SR_RESPONSE, RIL_PARAM_SR_ALL, RILUICCRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_SR_RESPONSESIZE, RILUICCRESPONSEPARAMMASK, ntddrilapitypes/RILUICCRESPONSEPARAMMASK, ntddrilapitypes/RIL_PARAM_SR_RESPONSESIZE, netvista.riluiccresponseparammask
+ms.keywords: RIL_PARAM_SR_STATUSWORD2, RIL_PARAM_SR_ALL, RILUICCRESPONSEPARAMMASK, ntddrilapitypes/RILUICCRESPONSEPARAMMASK, ntddrilapitypes/RIL_PARAM_SR_RESPONSESIZE, ntddrilapitypes/RIL_PARAM_SR_STATUSWORD2, ntddrilapitypes/RIL_PARAM_SR_RESPONSE, netvista.riluiccresponseparammask, RIL_PARAM_SR_RESPONSESIZE, ntddrilapitypes/RIL_PARAM_SR_ALL, RIL_PARAM_SR_RESPONSE, RILUICCRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum

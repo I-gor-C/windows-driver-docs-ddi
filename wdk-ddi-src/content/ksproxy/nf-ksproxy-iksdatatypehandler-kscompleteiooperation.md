@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 46a58007-16bf-422b-8408-30a7b65dbee6
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ksproxy_04136093-03d0-4490-bf5c-5e83bddc23c7.xml, IKsDataTypeHandler, KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler::KsCompleteIoOperation, ksproxy/IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler interface [Streaming Media Devices], KsCompleteIoOperation method, KsCompleteIoOperation, stream.iksdatatypehandler_kscompleteiooperation
+ms.keywords: ksproxy/IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface, ksproxy_04136093-03d0-4490-bf5c-5e83bddc23c7.xml, KsCompleteIoOperation, stream.iksdatatypehandler_kscompleteiooperation, IKsDataTypeHandler::KsCompleteIoOperation, IKsDataTypeHandler, IKsDataTypeHandler interface [Streaming Media Devices], KsCompleteIoOperation method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -71,6 +71,7 @@ Pointer to a buffer that contains the extended header information.
 `IoOperation`
 
 Value that specifies the type of I/O operation. This value can be one of the following values from the KSIOOPERATION enumerated type:
+
 <table>
 <tr>
 <th>Value</th>
@@ -123,6 +124,8 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
+
+
 
  
 

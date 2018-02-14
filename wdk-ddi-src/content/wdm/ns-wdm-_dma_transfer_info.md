@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1CD5CE6F-5179-40D5-BCD9-3587914C8139
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/DMA_TRANSFER_INFO, DMA_TRANSFER_INFO structure [Kernel-Mode Driver Architecture], wdm/PDMA_TRANSFER_INFO, kernel.dma_transfer_info, _DMA_TRANSFER_INFO, PDMA_TRANSFER_INFO, PDMA_TRANSFER_INFO structure pointer [Kernel-Mode Driver Architecture], DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO
+ms.keywords: wdm/DMA_TRANSFER_INFO, _DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO, PDMA_TRANSFER_INFO, DMA_TRANSFER_INFO, wdm/PDMA_TRANSFER_INFO, kernel.dma_transfer_info, DMA_TRANSFER_INFO structure [Kernel-Mode Driver Architecture], PDMA_TRANSFER_INFO structure pointer [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -77,9 +77,13 @@ The unnamed union in this structure contains a <b>DMA_TRANSFER_INFO_<i>XXX</i></
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>
+
+
+
 <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetDmaTransferInfo</a>
 
-<a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>
+
 
  
 

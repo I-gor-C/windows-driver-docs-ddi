@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ca46be9e-31f6-4118-8958-4eb2c8450e8c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlfreeansistring, RtlFreeAnsiString, wdm/RtlFreeAnsiString, k109_0213924f-caca-4411-b5cc-d93282f01948.xml, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture]
+ms.keywords: k109_0213924f-caca-4411-b5cc-d93282f01948.xml, kernel.rtlfreeansistring, RtlFreeAnsiString, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture], wdm/RtlFreeAnsiString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,8 @@ This routine does not release the Unicode string buffer passed to <b>RtlUnicodeS
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
+
+
 
  
 

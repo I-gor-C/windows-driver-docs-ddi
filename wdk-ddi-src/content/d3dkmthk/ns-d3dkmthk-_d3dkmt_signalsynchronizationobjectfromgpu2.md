@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3F9A7BBE-BFC2-47B9-856A-0B6930717A36
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, display.d3dkmt_signalsynchronizationobjectfromgpu2, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 structure [Display Devices]
+ms.keywords: display.d3dkmt_signalsynchronizationobjectfromgpu2, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 structure [Display Devices], D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -96,6 +96,8 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 {
 ## See Also
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromgpu2.md">D3DKMTSignalSynchronizationObjectFromGpu2</a>
+
+
 
  
 

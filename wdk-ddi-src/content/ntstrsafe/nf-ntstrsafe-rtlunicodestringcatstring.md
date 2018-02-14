@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d8e96d49-e4f5-468c-bdce-fbfaa8428eb7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlUnicodeStringCatString, safestrings_28fc9345-6d09-492c-bda5-94216a260965.xml, RtlUnicodeStringCatString function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcatstring, ntstrsafe/RtlUnicodeStringCatString
+ms.keywords: RtlUnicodeStringCatString function [Kernel-Mode Driver Architecture], RtlUnicodeStringCatString, safestrings_28fc9345-6d09-492c-bda5-94216a260965.xml, kernel.rtlunicodestringcatstring, ntstrsafe/RtlUnicodeStringCatString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	RtlUnicodeStringCatString
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -71,6 +71,7 @@ A pointer to a null-terminated string. This string will be concatenated to the e
 ## Return Value
 
 <b>RtlUnicodeStringCatString</b> returns one of the following NTSTATUS values. 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -109,15 +110,18 @@ This <i>error</i> status means that the function received an invalid input param
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>RtlUnicodeStringCatString</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
+
 <ul>
 <li>The contents of the <b>UNICODE_STRING</b> structure are invalid.</li>
 <li>The destination buffer is already full.</li>
 <li>A buffer pointer is <b>NULL</b>.</li>
 <li>The destination buffer's length is zero, but a nonzero length source string is present.</li>
-</ul>For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+</ul>
+For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
 
 ## Remarks
 
@@ -140,9 +144,13 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstringex.md">RtlUnicodeStringCatStringEx</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstringex.md">RtlUnicodeStringCatStringEx</a>
+
 
  
 

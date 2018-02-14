@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 21298d5b-e99f-470f-a352-65da2d91b81e
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.podeletepowerrequest, wdm/PoDeletePowerRequest, portn_a0e21464-039d-4619-b9d5-f67bf2d7273b.xml, PoDeletePowerRequest routine [Kernel-Mode Driver Architecture], PoDeletePowerRequest
+ms.keywords: kernel.podeletepowerrequest, PoDeletePowerRequest, wdm/PoDeletePowerRequest, portn_a0e21464-039d-4619-b9d5-f67bf2d7273b.xml, PoDeletePowerRequest routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -59,7 +59,7 @@ VOID PoDeletePowerRequest(
 
 `PowerRequest`
 
-A pointer to a power request object that was created by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
+A pointer to a power request object that was created by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
 
 
 ## Return Value
@@ -82,7 +82,9 @@ The driver must delete the power request object before it deletes the device obj
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+
+
 
  
 

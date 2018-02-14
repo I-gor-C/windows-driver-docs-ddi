@@ -40,7 +40,7 @@ apiname:
 -	SetLoadImageNotifyRoutine
 product: Windows
 targetos: Windows
-req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 
@@ -105,11 +105,17 @@ When the main executable image for a newly created process is loaded, the load-i
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>
+<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+
+
 
 <a href="..\ntddk\ns-ntddk-_image_info.md">IMAGE_INFO</a>
 
-<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+
+
+<a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>
+
+
 
  
 

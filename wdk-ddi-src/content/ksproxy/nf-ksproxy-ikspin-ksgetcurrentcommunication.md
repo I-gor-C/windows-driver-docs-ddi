@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3fca9bf5-5430-4877-846e-e796e54991a2
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsGetCurrentCommunication, ksproxy/IKsPin::KsGetCurrentCommunication, IKsPin interface [Streaming Media Devices], KsGetCurrentCommunication method, IKsPin, ksproxy_2619bbb1-bc7d-4a69-99fb-2e35a36c4f02.xml, KsGetCurrentCommunication method [Streaming Media Devices], IKsPin::KsGetCurrentCommunication, stream.ikspin_ksgetcurrentcommunication, KsGetCurrentCommunication method [Streaming Media Devices], IKsPin interface
+ms.keywords: ksproxy/IKsPin::KsGetCurrentCommunication, KsGetCurrentCommunication method [Streaming Media Devices], IKsPin interface, IKsPin, KsGetCurrentCommunication, KsGetCurrentCommunication method [Streaming Media Devices], IKsPin::KsGetCurrentCommunication, IKsPin interface [Streaming Media Devices], KsGetCurrentCommunication method, stream.ikspin_ksgetcurrentcommunication, ksproxy_2619bbb1-bc7d-4a69-99fb-2e35a36c4f02.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -62,6 +62,7 @@ HRESULT KsGetCurrentCommunication(
 `Communication`
 
 Pointer to a variable that receives one of the following values from the KSPIN_COMMUNICATION enumerated type describing the current communication direction for a pin: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -147,11 +148,17 @@ The current communication direction, interface, and medium of a pin are a subset
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
-
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
 
+
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
+
+
 
  
 

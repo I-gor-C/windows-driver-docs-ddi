@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 2837C3BE-71EB-4949-AB46-5333CF4575A8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCxInitialize method [Serial Ports], 1/SerCxInitialize, serports.sercxinitialize, SerCxInitialize
+ms.keywords: SerCxInitialize method [Serial Ports], SerCxInitialize, serports.sercxinitialize, 1/SerCxInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a caller-allocated <a href="..\sercx\ns-sercx-_sercx_config.md">SER
 ## Return Value
 
 <b>SerCxInitialize</b> returns STATUS_SUCCESS if it is successful. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -121,11 +122,17 @@ This routine must be called before committing the device (returning from <a href
 
 ## See Also
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
 <a href="..\sercx\nf-sercx-sercx_config_init.md">SERCX_CONFIG_INIT</a>
 
+
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+
+
 <a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a>
+
+
 
  
 

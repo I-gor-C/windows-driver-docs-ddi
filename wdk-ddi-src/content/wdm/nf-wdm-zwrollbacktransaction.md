@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 865349bd-400d-4acf-a2f7-33da128702be
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/NtRollbackTransaction, ZwRollbackTransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture], ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, wdm/ZwRollbackTransaction, NtRollbackTransaction, kernel.zwrollbacktransaction
+ms.keywords: wdm/ZwRollbackTransaction, wdm/NtRollbackTransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture], ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, kernel.zwrollbacktransaction, ZwRollbackTransaction, NtRollbackTransaction
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A Boolean value that the caller sets to <b>TRUE</b> for synchronous operation or
 ## Return Value
 
 <b>ZwRollbackTransaction</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -143,7 +144,8 @@ Rollback notifications have been queued to resource managers, and the caller spe
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -168,15 +170,25 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
+
+
+
 <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 
-<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
+
 
 <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
+
+<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
+
+
 
  
 

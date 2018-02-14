@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8B03835A-98EE-4157-BD05-C52D01EE5F5E
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsInjectMacSendAsync0, FwpsInjectMacReceiveAsync0, FwpsInjectMacSendAsync0 function [Network Drivers Starting with Windows Vista], netvista.fwpsinjectmacreceiveasync0, fwpsk/FwpsInjectMacSendAsync0
+ms.keywords: FwpsInjectMacSendAsync0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsInjectMacSendAsync0, FwpsInjectMacSendAsync0, netvista.fwpsinjectmacreceiveasync0, FwpsInjectMacReceiveAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,9 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
 `injectionHandle`
 
 An injection handle that was previously obtained by a call to  the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to FWPS_INJECTION_TYPE_L2. 
-<div class="alert"><b>Note</b>  Set the <i>addressFamily</i> parameter of the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function to AF_UNSPEC.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Set the <i>addressFamily</i> parameter of the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function to AF_UNSPEC.</div>
+<div> </div>
 
 `injectionContext`
 
@@ -124,6 +126,7 @@ A pointer to a callout driver–provided context that is passed to the callout f
 
 The 
      <b>FwpsInjectMacReceiveAsync0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -215,22 +218,36 @@ Injected frames could get classified again if the packets match the same filter 
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-<a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">
-     FwpsAllocateNetBufferAndNetBufferList0</a>
-
-<a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a>
-
 <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
-       FwpsInjectionHandleCreate0</a>
+
 
 <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
      FwpsAllocateCloneNetBufferList0</a>
 
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
+       FwpsInjectionHandleCreate0</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">
+     FwpsAllocateNetBufferAndNetBufferList0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a>
+
+
 
  
 

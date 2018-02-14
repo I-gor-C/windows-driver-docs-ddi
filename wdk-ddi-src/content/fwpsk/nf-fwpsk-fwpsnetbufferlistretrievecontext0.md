@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 482cec75-8a21-4988-b869-639d019f9460
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: fwpsk/FwpsNetBufferListRetrieveContext0, netvista.fwpsnetbufferlistretrievecontext0, FwpsNetBufferListRetrieveContext0, FwpsNetBufferListRetrieveContext0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_63312511-d342-4705-86d9-844c59f42fe3.xml
+ms.keywords: fwpsk/FwpsNetBufferListRetrieveContext0, netvista.fwpsnetbufferlistretrievecontext0, wfp_ref_2_funct_3_fwps_J-Q_63312511-d342-4705-86d9-844c59f42fe3.xml, FwpsNetBufferListRetrieveContext0 function [Network Drivers Starting with Windows Vista], FwpsNetBufferListRetrieveContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,6 +97,7 @@ The context assigned to the packet by the callout driver in the initial call to
 
 The 
      <b>FwpsNetBufferListRetrieveContext0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -146,16 +147,24 @@ You can also use this function to remove the context association by setting the
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
    FwpsNetBufferListRemoveContext0</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
+   FwpsNetBufferListAssociateContext0</a>
+
+
 
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
    FwpsNetBufferListGetTagForContext0</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
-   FwpsNetBufferListAssociateContext0</a>
+
 
  
 

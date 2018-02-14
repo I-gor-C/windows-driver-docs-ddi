@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2A2C1478-0512-4F84-90B9-B9C62B5D44DA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: CMP_CONNECT_VER2 structure, IEEE.cmp_connect_ver2, PCMP_CONNECT_VER2 structure pointer, 61883/CMP_CONNECT_VER2, *PCMP_CONNECT, CMP_CONNECT_VER2, *PCMP_CONNECT_VER2, PCMP_CONNECT_VER2, _CMP_CONNECT_VER2, CMP_CONNECT, 61883/PCMP_CONNECT_VER2
+ms.keywords: 61883/PCMP_CONNECT_VER2, CMP_CONNECT, 61883/CMP_CONNECT_VER2, CMP_CONNECT_VER2, CMP_CONNECT_VER2 structure, *PCMP_CONNECT_VER2, _CMP_CONNECT_VER2, *PCMP_CONNECT, PCMP_CONNECT_VER2 structure pointer, IEEE.cmp_connect_ver2, PCMP_CONNECT_VER2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -87,9 +87,11 @@ The type of connection to make. Can be one of the following:
 
 
 
+
 #### CMP_Broadcast
 
 A broadcast connection.  
+
 
 
 #### CMP_PointToPoint
@@ -111,6 +113,8 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
+
+
 
  
 

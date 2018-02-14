@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 45450486-3264-4fc8-8051-f7c48997e3dd
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportallocatemdl, StorPortAllocateMdl, StorPortAllocateMdl routine [Storage Devices], storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml, storport/StorPortAllocateMdl
+ms.keywords: StorPortAllocateMdl, storport/StorPortAllocateMdl, storage.storportallocatemdl, StorPortAllocateMdl routine [Storage Devices], storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ A pointer to receive the allocated MDL.
 ## Return Value
 
 StorPortAllocateMdl returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>

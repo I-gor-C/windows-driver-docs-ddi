@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5A52543B-F0EA-4318-A66F-F9FA60FF94F5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pofxregistercomponentperfstates, PoFxRegisterComponentPerfStates routine [Kernel-Mode Driver Architecture], PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES, wdm/PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_PEP_OPTIONAL, PO_FX_FLAG_PERF_QUERY_ON_F0, PoFxRegisterComponentPerfStates
+ms.keywords: PO_FX_FLAG_PERF_QUERY_ON_F0, wdm/PoFxRegisterComponentPerfStates, PoFxRegisterComponentPerfStates routine [Kernel-Mode Driver Architecture], PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_PEP_OPTIONAL, PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES, kernel.pofxregistercomponentperfstates
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,7 @@ The index that identifies the component whose performance states will be managed
 `Flags`
 
 The flags that modify the behavior of the performance state registration. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_PERF_<i>XXX</i></b> bits:
+
 <table>
 <tr>
 <th>Value</th>
@@ -132,6 +133,7 @@ The memory allocated for this parameter is managed by PoFx, and the driver shoul
 ## Return Value
 
 <b>PoFxRegisterComponentPerfStates</b> returns <b>STATUS_SUCCESS</b> if PoFx accepts the device's registration of performance states. If any of the necessary information is not provided or incorrect, registration will fail with a return code other than <b>STATUS_SUCCESS</b>. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -164,6 +166,7 @@ Both <i>InputStateInfo</i> and <i>OutputStateInfo</i> are NULL or both of these 
 ## Remarks
 
 Either the driver or the platform extension plug-in (PEP) may provide information about the performance states supported by each component:
+
 <ul>
 <li>
 If the driver provides performance state information, the driver must set the <i>InputStateInfo</i> parameter to a pointer to a <a href="..\wdm\ns-wdm-_po_fx_component_perf_info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that contains the performance state information. Otherwise, the driver must set this parameter to NULL.
@@ -173,7 +176,8 @@ If the driver provides performance state information, the driver must set the <i
 If the PEP provides performance state information, the driver must set the <i>OutputStateInfo</i> parameter to a valid pointer to a <a href="..\wdm\ns-wdm-_po_fx_component_perf_info.md">PO_FX_COMPONENT_PERF_INFO</a> structure that receives the performance state information. Otherwise, the driver must set this parameter to NULL.
 
 </li>
-</ul>If the PEP does not support performance states, the driver may register for performance state support with PoFx for logging purposes only. 
+</ul>
+If the PEP does not support performance states, the driver may register for performance state support with PoFx for logging purposes only. 
 
 If the driver registers for performance state support for logging purposes only, or if the driver  can function correctly with or without PEP support for performance state management, the driver must set the <b>PO_FX_FLAG_PERF_PEP_OPTIONAL</b> flag in the <i>Flags</i> parameter. If the flag is set, the registration call will succeed even if the PEP does not provide support for performance states.
 
@@ -193,11 +197,19 @@ If the driver requires the PEP to provide performance state information, the dri
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a>
 
-<a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
+
 
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 
+
+
 <a href="..\wdm\ns-wdm-_po_fx_component_perf_info.md">PO_FX_COMPONENT_PERF_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
+
+
 
  
 

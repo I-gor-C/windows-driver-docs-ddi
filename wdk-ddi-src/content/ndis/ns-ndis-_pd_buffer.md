@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PD_BUFFER structure [Network Drivers Starting with Windows Vista], PPD_BUFFER, netvista.pd_buffer, _PD_BUFFER, PPD_BUFFER structure pointer [Network Drivers Starting with Windows Vista], ndis/PPD_BUFFER, ndis/PD_BUFFER, PD_BUFFER
+ms.keywords: netvista.pd_buffer, ndis/PD_BUFFER, PD_BUFFER structure [Network Drivers Starting with Windows Vista], PPD_BUFFER structure pointer [Network Drivers Starting with Windows Vista], PD_BUFFER, PPD_BUFFER, _PD_BUFFER, ndis/PPD_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -128,6 +128,7 @@ typedef struct _PD_BUFFER {
 `Attributes`
 
 The attributes must never be modified by the provider. The table below lists attributes that this <b>PD_BUFFER</b> structure can have.
+
 <table>
 <tr>
 <th>Attribute</th>
@@ -175,6 +176,7 @@ This field denotes where the packet starts relative to the original starting add
 `Flags`
 
 The following table lists flags that this <b>PD_BUFFER</b> structure can have.
+
 <table>
 <tr>
 <th>Flag</th>

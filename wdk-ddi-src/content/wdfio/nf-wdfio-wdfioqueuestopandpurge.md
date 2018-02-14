@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3A9CF1BD-77F1-4F4C-AEB5-0E77B67C45D3
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfioqueuestopandpurge, kmdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge method, PFN_WDFIOQUEUESTOPANDPURGE, wdfio/WdfIoQueueStopAndPurge, WdfIoQueueStopAndPurge
+ms.keywords: wdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge, PFN_WDFIOQUEUESTOPANDPURGE, WdfIoQueueStopAndPurge method, wdfio/WdfIoQueueStopAndPurge, kmdf.wdfioqueuestopandpurge
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,6 +102,30 @@ In contrast, <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a> 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+
+#### Examples
+
+The following code example stops and purges a specified I/O queue. After all requests that were delivered to the driver have been completed or canceled, the framework calls a driver's EvtIoQueueStateStopAndPurge function.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDFCONTEXT stopandpurgeContext;
+
+stopandpurgeContext = &amp;myContext;
+
+WdfIoQueueStopAndPurge(
+               queue,
+               EvtIoQueueStateStopAndPurge,
+               stopandpurgeContext
+               );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -115,13 +139,21 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a>
+
+
 
 <a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurgesynchronously.md">WdfIoQueueStopAndPurgeSynchronously</a>
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a>
+
 
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+
+
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
+
+
 
  
 

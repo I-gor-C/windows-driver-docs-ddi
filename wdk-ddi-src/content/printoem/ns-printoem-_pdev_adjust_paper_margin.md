@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: f44a0a42-1fa1-4dd2-bd9f-74b0d0ed823e
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.pdev_adjust_paper_margin, print_unidrv-pscript_rendering_09d49312-b306-40c0-ad25-bc3669e8eedd.xml, printoem/PDEV_ADJUST_PAPER_MARGIN, PDEV_ADJUST_PAPER_MARGIN, PDEV_ADJUST_PAPER_MARGIN structure [Print Devices], _PDEV_ADJUST_PAPER_MARGIN
+ms.keywords: printoem/PDEV_ADJUST_PAPER_MARGIN, PDEV_ADJUST_PAPER_MARGIN structure [Print Devices], print.pdev_adjust_paper_margin, print_unidrv-pscript_rendering_09d49312-b306-40c0-ad25-bc3669e8eedd.xml, PDEV_ADJUST_PAPER_MARGIN, _PDEV_ADJUST_PAPER_MARGIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,7 +75,11 @@ The <i>pBuf</i> parameter of the <a href="https://msdn.microsoft.com/library/win
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+
+
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID: NF:wiautil.wiauDbgHelper
-title: wiauDbgHelper function
+title: wiauDbgHelper macro
 author: windows-driver-content
 description: The wiauDbgHelper function formats a message and writes it to a log file, or debugger, or both.
 old-location: image\wiaudbghelper.htm
@@ -8,10 +8,10 @@ old-project: image
 ms.assetid: 5be1ede7-13a0-4ef4-93bd-8a1adc5baa9e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wiaudbghelper, wiautil/wiauDbgHelper, wiauDbgHelper function [Imaging Devices], wiauFncs_be2f3b11-e1a0-4728-856e-ce686344f166.xml, wiauDbgHelper
+ms.keywords: wiauDbgHelper, wiautil/wiauDbgHelper, wiauDbgHelper function [Imaging Devices], image.wiaudbghelper, wiauFncs_be2f3b11-e1a0-4728-856e-ce686344f166.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: wiautil.h
 req.include-header: Wiautil.h
 req.target-type: Desktop
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: wiautil.h
 req.dll: 
 req.irql: 
 topictype:
@@ -63,19 +63,19 @@ void __stdcall wiauDbgHelper(
 
 `prefix`
 
-Pointer to a string containing a prefix (such as "ERROR " or "WARN ") associated with the message.
+
 
 `fname`
 
-Pointer to a string containing the name of the function or method into which the call to <b>wiauDbgHelper</b> is inserted.
+
 
 `fmt`
 
-Pointer to a string that controls how an item or items in a variable argument list is to be formatted.
+
 
 `marker`
 
-Marks the beginning of a variable argument list.
+
 
 
 ## Return Value
@@ -92,19 +92,29 @@ The <b>wiauDbgHelper</b> function is a general-purpose function that is used int
 | **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** | NtosKrnl.exe |
+| **Library** | wiautil.h |
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
-
 <a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+
+
+<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
+
+
+
+<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+
+
 
 <a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
 
-<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
+
+
+<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTMGR_CHANGE_NOTIFY
 product: Windows
 targetos: Windows
-req.typenames: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_CHANGE_NOTIFY IOCTL
@@ -93,6 +93,8 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_CHANGE_NOTIFY_IN
 ## See Also
 
 <a href="..\mountmgr\ns-mountmgr-_mountmgr_change_notify_info.md">MOUNTMGR_CHANGE_NOTIFY_INFO</a>
+
+
 
  
 

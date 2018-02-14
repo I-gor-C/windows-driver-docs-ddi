@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: fb570110-a0a5-4a95-9a26-c4e4ada309b2
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetNumberEvents method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetNumberEvents, dbgeng/IDebugControl3::GetNumberEvents, GetNumberEvents, GetNumberEvents method [Windows Debugging], IDebugControl3 interface [Windows Debugging], GetNumberEvents method, IDebugControl_520cbec0-e8b3-49d1-9938-a8f496585758.xml, IDebugControl3, debugger.getnumberevents
+ms.keywords: GetNumberEvents method [Windows Debugging], IDebugControl3 interface, GetNumberEvents, IDebugControl3, IDebugControl3::GetNumberEvents, debugger.getnumberevents, GetNumberEvents method [Windows Debugging], dbgeng/IDebugControl3::GetNumberEvents, IDebugControl_520cbec0-e8b3-49d1-9938-a8f496585758.xml, IDebugControl3 interface [Windows Debugging], GetNumberEvents method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -65,6 +65,7 @@ Receives the number of events stored in the target.  If the target offers multip
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -111,11 +112,17 @@ For more information, see the topic <a href="https://msdn.microsoft.com/library/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556737">SetNextEventIndex</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556737">SetNextEventIndex</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
+
+
 
  
 

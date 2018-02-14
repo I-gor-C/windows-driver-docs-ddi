@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: AFDB4DB4-3C63-44A0-88D7-C8047ECB2261
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.idebugsymbols4_getlinebyinlinecontext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4, IDebugSymbols4::GetLineByInlineContext, GetLineByInlineContext, dbgeng/IDebugSymbols4::GetLineByInlineContext
+ms.keywords: IDebugSymbols4::GetLineByInlineContext, IDebugSymbols4, GetLineByInlineContext, dbgeng/IDebugSymbols4::GetLineByInlineContext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, debugger.idebugsymbols4_getlinebyinlinecontext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -107,6 +107,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+
+
 
  
 

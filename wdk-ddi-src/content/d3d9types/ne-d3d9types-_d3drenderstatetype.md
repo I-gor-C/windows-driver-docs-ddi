@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 82978b22-1538-4da0-bcf2-c4c52d2e3429
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3drenderstatetype, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, D3DRENDERSTATETYPE, D3DRS_DELETERTPATCH, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRENDERSTATE_SCENECAPTURE, d3d9types/D3DRENDERSTATE_SCENECAPTURE, D3DRS_MAXVERTEXSHADERINST, D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXVERTEXSHADERINST, _D3DRENDERSTATETYPE, d3d9types/, D3DRS_MAXPIXELSHADERINST, enumeration [Display Devices], d3d9types/D3DRS_DELETERTPATCH
+ms.keywords: D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRS_MAXPIXELSHADERINST, D3DRENDERSTATE_SCENECAPTURE, display.d3drenderstatetype, d3d9types/D3DRS_DELETERTPATCH, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, d3d9types/D3DRENDERSTATE_SCENECAPTURE, D3DRENDERSTATETYPE, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRS_DELETERTPATCH, D3DRS_MAXVERTEXSHADERINST, d3d9types/, d3d9types/D3DRS_MAXVERTEXSHADERINST, enumeration [Display Devices], _D3DRENDERSTATETYPE, D3DRS_MAXPIXELSHADERINST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -589,6 +589,7 @@ enum  {
         The driver uses these render states when it performs graphics rendering. Only render states that are specific to drivers are included in the Windows Driver Kit (WDK) documentation. The render states accessible to DirectX applications are included in the DirectX SDK documentation. These application-level render states include such characteristics as whether alpha blending is enabled, whether dithering is enabled, whether Direct3D lighting is used, and the type of shading to be used. 
 
 To update a particular render state, Direct3D stores information about the render state, and then calls the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback routine. The information provided to the driver enables it to:
+
 <ul>
 <li>
 Determine that it should update one or more render states.
@@ -598,14 +599,17 @@ Determine that it should update one or more render states.
 Identify which render states to update, and what the new render state values should be.
 
 </li>
-</ul>Note that for certain render states to be honored, the driver must have previously set capability flags in the relevant member of the D3DPRIMCAPS structure.
+</ul>
+Note that for certain render states to be honored, the driver must have previously set capability flags in the relevant member of the D3DPRIMCAPS structure.
 
 In order to indicate a specific render state update, Direct3D inserts a <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure into the command buffer, setting the <b>bCommand</b> member of this structure to D3DDP2OP_RENDERSTATE (see the description for D3DDP2OP_RENDERSTATE in <a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>), and setting the <b>wStateCount</b> member of the same structure to the number of render states to be updated.
 
 Immediately following the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure, Direct3D inserts one <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2renderstate.md">D3DHAL_DP2RENDERSTATE</a> structure into the command buffer for each render state to be updated. The <b>RenderState</b> member of this structure identifies the render state to be changed; the new value of this render state is specified in either the <b>dwState</b> member (for DWORD values) or the <b>fState</b> member (for D3DVALUE values).
 
 The following figure shows a portion of the command buffer containing a D3DDP2OP_RENDERSTATE command and two D3DHAL_DP2RENDERSTATE structures. The first of the three structures indicates that two render states are to be updated. The second structure indicates that the D3DRENDERSTATE_FILLMODE render state is to be changed to D3DFILL_SOLID. The third structure indicates that the D3DRENDERSTATE_SHADEMODE render state should be updated to D3DSHADE_GOURAUD.
-<img alt="Figure showing a command buffer with a D3DDP2OP_RENDERSTATE command and two D3DHAL_DP2RENDERSTATE structures" src="images/dp2rs.png"/><b>
+
+<img alt="Figure showing a command buffer with a D3DDP2OP_RENDERSTATE command and two D3DHAL_DP2RENDERSTATE structures" src="images/dp2rs.png"/>
+<b>
      Additional Notes</b>
 
 See the D3DTEXTURESTAGESTATETYPE, D3DTEXTUREOP, and D3DTEXTUREFILTER enumerated types in the DirectX SDK documentation for complete listings of all of the enabled render state types.

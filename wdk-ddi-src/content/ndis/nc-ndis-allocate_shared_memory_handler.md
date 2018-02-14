@@ -40,7 +40,7 @@ apiname:
 -	NetAllocateSharedMemory
 product: Windows
 targetos: Windows
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+req.typenames: "*LPVIDEO_STREAM_INIT_PARMS, VIDEO_STREAM_INIT_PARMS"
 ---
 
 
@@ -88,6 +88,7 @@ A pointer to a handle for a shared memory context area. The shared memory provid
 ## Return Value
 
 <i>NetAllocateSharedMemory</i> can return the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -161,12 +162,18 @@ The shared memory provider specified the entry point (ALLOCATE_SHARED_MEMORY_HAN
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
+   NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
+
+
 
 <a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
 
-<a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
-   NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a>
+
 
  
 

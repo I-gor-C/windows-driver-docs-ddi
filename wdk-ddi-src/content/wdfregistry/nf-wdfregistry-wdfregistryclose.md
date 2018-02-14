@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: c97fe47d-bd6b-45d7-936b-3b46554e5093
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfregistry/WdfRegistryClose, DFRegKeyObjectRef_31a198b2-e149-4fd4-951a-5fd03cf06555.xml, wdf.wdfregistryclose, WdfRegistryClose method, kmdf.wdfregistryclose, PFN_WDFREGISTRYCLOSE, WdfRegistryClose
+ms.keywords: wdfregistry/WdfRegistryClose, kmdf.wdfregistryclose, PFN_WDFREGISTRYCLOSE, WdfRegistryClose method, WdfRegistryClose, DFRegKeyObjectRef_31a198b2-e149-4fd4-951a-5fd03cf06555.xml, wdf.wdfregistryclose
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfRegistryClose
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG"
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -80,6 +80,22 @@ After your driver has finished accessing a registry key, it must call <b>WdfRegi
 
 For more information about registry-key objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example closes a registry key and deletes the registry-key object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfRegistryClose(Key);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,6 +110,8 @@ For more information about registry-key objects, see <a href="https://docs.micro
 ## See Also
 
 <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
+
+
 
  
 

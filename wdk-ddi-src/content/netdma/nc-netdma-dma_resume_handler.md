@@ -76,6 +76,7 @@ A pointer that identifies a DMA channel's context area. The DMA provider returne
 ## Return Value
 
 <i>ProviderResumeDma</i> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -132,9 +133,13 @@ NetDMA calls
 
 ## See Also
 
+<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
+
+
+
 <a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a>
 
-<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
+
 
  
 

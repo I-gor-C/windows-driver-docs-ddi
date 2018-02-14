@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: E076E9E6-FA7E-4F46-88B4-D3971E62DE1A
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTFreeGpuVirtualAddress function [Display Devices], D3DKMTFreeGpuVirtualAddress, display.d3dkmtfreegpuvirtualaddress, d3dkmthk/D3DKMTFreeGpuVirtualAddress
+ms.keywords: D3DKMTFreeGpuVirtualAddress function [Display Devices], D3DKMTFreeGpuVirtualAddress, d3dkmthk/D3DKMTFreeGpuVirtualAddress, display.d3dkmtfreegpuvirtualaddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -94,7 +94,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -115,9 +116,15 @@ The freed virtual address should not be accessed immediately after the call. If 
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdategpuvirtualaddress.md">UpdateGpuVirtualAddress</a>
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmapgpuvirtualaddress.md">MapGpuVirtualAddress</a>
+
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_freegpuvirtualaddress.md">D3DKMT_FREEGPUVIRTUALADDRESS</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmapgpuvirtualaddress.md">MapGpuVirtualAddress</a>
+
+
 
  
 

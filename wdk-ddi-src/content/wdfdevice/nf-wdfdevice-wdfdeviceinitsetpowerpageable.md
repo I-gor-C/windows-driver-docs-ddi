@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3a216c35-f6b7-483f-a330-d0a66edb9205
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceInitSetPowerPageable, DFDeviceObjectGeneralRef_704347eb-35c6-4735-bd2a-e6a988ff2896.xml, kmdf.wdfdeviceinitsetpowerpageable, wdf.wdfdeviceinitsetpowerpageable, wdfdevice/WdfDeviceInitSetPowerPageable, WdfDeviceInitSetPowerPageable method, PFN_WDFDEVICEINITSETPOWERPAGEABLE
+ms.keywords: wdf.wdfdeviceinitsetpowerpageable, WdfDeviceInitSetPowerPageable, DFDeviceObjectGeneralRef_704347eb-35c6-4735-bd2a-e6a988ff2896.xml, PFN_WDFDEVICEINITSETPOWERPAGEABLE, WdfDeviceInitSetPowerPageable method, kmdf.wdfdeviceinitsetpowerpageable, wdfdevice/WdfDeviceInitSetPowerPageable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,22 @@ Your driver must call <b>WdfDeviceInitSetPowerPageable</b> before it calls <a hr
 
 For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
+
+#### Examples
+
+The following code example informs the power manager that a driver must be able to access pageable data while the system is transitioning between a sleeping state and the working (S0) state.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceInitSetPowerPageable(DeviceInit);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,6 +115,8 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowernotpageable.md">WdfDeviceInitSetPowerNotPageable</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 0c77ad1a-218d-4857-a07c-f5d542d070d7
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols2::GetSymbolTypeId, IDebugSymbols3 interface [Windows Debugging], GetSymbolTypeId method, IDebugSymbols::GetSymbolTypeId, GetSymbolTypeId method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetSymbolTypeId, IDebugSymbols_c62a5150-7e20-4217-8fb8-667cbd93042a.xml, IDebugSymbols2 interface [Windows Debugging], GetSymbolTypeId method, dbgeng/IDebugSymbols2::GetSymbolTypeId, GetSymbolTypeId method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetSymbolTypeId method, IDebugSymbols3, GetSymbolTypeId, IDebugSymbols3::GetSymbolTypeId, GetSymbolTypeId method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::GetSymbolTypeId, debugger.getsymboltypeid, GetSymbolTypeId method [Windows Debugging], IDebugSymbols interface
+ms.keywords: dbgeng/IDebugSymbols::GetSymbolTypeId, GetSymbolTypeId, IDebugSymbols_c62a5150-7e20-4217-8fb8-667cbd93042a.xml, dbgeng/IDebugSymbols2::GetSymbolTypeId, GetSymbolTypeId method [Windows Debugging], IDebugSymbols interface, IDebugSymbols::GetSymbolTypeId, debugger.getsymboltypeid, GetSymbolTypeId method [Windows Debugging], GetSymbolTypeId method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetSymbolTypeId method, dbgeng/IDebugSymbols3::GetSymbolTypeId, GetSymbolTypeId method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2 interface [Windows Debugging], GetSymbolTypeId method, IDebugSymbols2, IDebugSymbols, IDebugSymbols3::GetSymbolTypeId, IDebugSymbols interface [Windows Debugging], GetSymbolTypeId method, IDebugSymbols2::GetSymbolTypeId, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -77,6 +77,7 @@ Receives the base address of the module containing the symbol.  For more informa
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -110,15 +111,25 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549173">GetSymbolTypeId</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549376">GetTypeId</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549173">GetSymbolTypeId</a>
+
+
 
  
 

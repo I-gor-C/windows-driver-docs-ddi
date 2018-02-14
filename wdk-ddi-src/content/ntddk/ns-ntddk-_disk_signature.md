@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f3fdb436-53b6-4fb3-8746-1f852f7d928a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, ntddk/DISK_SIGNATURE, ntddk/PDISK_SIGNATURE, _DISK_SIGNATURE, *PDISK_SIGNATURE, DISK_SIGNATURE, PDISK_SIGNATURE structure pointer [Storage Devices], PDISK_SIGNATURE, storage.disk_signature, DISK_SIGNATURE structure [Storage Devices]
+ms.keywords: DISK_SIGNATURE structure [Storage Devices], ntddk/DISK_SIGNATURE, storage.disk_signature, structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, _DISK_SIGNATURE, PDISK_SIGNATURE structure pointer [Storage Devices], PDISK_SIGNATURE, *PDISK_SIGNATURE, ntddk/PDISK_SIGNATURE, DISK_SIGNATURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DISK_SIGNATURE
 product: Windows
 targetos: Windows
-req.typenames: "*PDISK_SIGNATURE, DISK_SIGNATURE"
+req.typenames: DISK_SIGNATURE, *PDISK_SIGNATURE
 ---
 
 # _DISK_SIGNATURE structure
@@ -79,6 +79,8 @@ Specifies the type of partition.  See <a href="https://msdn.microsoft.com/librar
 ## See Also
 
 <a href="..\ntddk\nf-ntddk-ioreaddisksignature.md">IoReadDiskSignature</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: fc67afc9-7542-4fca-bfc7-4b03b9d39735
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFIORESOURCELISTREMOVE, DFResourceObjectRef_c8550890-69b9-493b-83d5-8a160eb85b8a.xml, kmdf.wdfioresourcelistremove, WdfIoResourceListRemove, WdfIoResourceListRemove method, wdfresource/WdfIoResourceListRemove, wdf.wdfioresourcelistremove
+ms.keywords: wdf.wdfioresourcelistremove, WdfIoResourceListRemove, kmdf.wdfioresourcelistremove, PFN_WDFIORESOURCELISTREMOVE, WdfIoResourceListRemove method, DFResourceObjectRef_c8550890-69b9-493b-83d5-8a160eb85b8a.xml, wdfresource/WdfIoResourceListRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,25 @@ When <b>WdfIoResourceListRemove</b> removes the resource descriptor that has the
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example removes the first resource descriptor from a logical configuration.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfIoResourceListRemove(
+                        Reslist,
+                        0
+                        );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -98,6 +117,8 @@ For more information about resource requirements lists and logical configuration
 ## See Also
 
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcelistremovebydescriptor.md">WdfIoResourceListRemoveByDescriptor</a>
+
+
 
  
 

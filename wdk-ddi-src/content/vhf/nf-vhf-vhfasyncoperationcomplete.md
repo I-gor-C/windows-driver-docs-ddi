@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: F28E6FC0-C2FE-4119-82D9-C38289340D3D
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: VhfAsyncOperationComplete, VhfAsyncOperationComplete method [Human Input Devices], vhf/VhfAsyncOperationComplete, hid._vhfasyncoperationcomplete
+ms.keywords: VhfAsyncOperationComplete, vhf/VhfAsyncOperationComplete, hid._vhfasyncoperationcomplete, VhfAsyncOperationComplete method [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,6 +88,8 @@ The HID source driver can call  from the event callback or at a later time after
 ## See Also
 
 <a href="https://msdn.microsoft.com/26964963-792F-4529-B4FC-110BF5C65B35">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 2546303a-53c3-4c6b-a230-eb1ebd74cb76
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDmaEnablerWdmGetDmaAdapter, kmdf.wdfdmaenablerwdmgetdmaadapter, wdf.wdfdmaenablerwdmgetdmaadapter, PFN_WDFDMAENABLERWDMGETDMAADAPTER, WdfDmaEnablerWdmGetDmaAdapter method, wdfdmaenabler/WdfDmaEnablerWdmGetDmaAdapter, DFDmaObjectRef_9ed5be1b-56fd-4305-8aad-0ebb0856e34a.xml
+ms.keywords: WdfDmaEnablerWdmGetDmaAdapter method, PFN_WDFDMAENABLERWDMGETDMAADAPTER, kmdf.wdfdmaenablerwdmgetdmaadapter, wdf.wdfdmaenablerwdmgetdmaadapter, WdfDmaEnablerWdmGetDmaAdapter, DFDmaObjectRef_9ed5be1b-56fd-4305-8aad-0ebb0856e34a.xml, wdfdmaenabler/WdfDmaEnablerWdmGetDmaAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,49 @@ If your driver specified a duplex profile when it called <a href="..\wdfdmaenabl
 
 The pointer that <b>WdfDmaEnablerWdmGetDmaAdapter</b> returns is valid until the DMA enabler object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> function for the DMA enabler object, the pointer is valid until the callback function returns.
 
+
+#### Examples
+
+The following code example creates a DMA enabler object and then obtains pointers to the WDM <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structures that the framework creates for read and write operations.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS  status = STATUS_SUCCESS;
+WDF_DMA_ENABLER_CONFIG  dmaConfig;
+WDFDMAENABLER  dmaEnabler;
+PDMA_ADAPTER  readAdapter, writeAdapter;
+
+WDF_DMA_ENABLER_CONFIG_INIT(
+                            &amp;dmaConfig,
+                            WdfDmaProfileScatterGatherDuplex,
+                            maxLength
+                            );
+status = WdfDmaEnablerCreate(
+                             Device,
+                             &amp;dmaConfig,
+                             WDF_NO_OBJECT_ATTRIBUTES,
+                             &amp;dmaEnabler
+                             );
+if (!NT_SUCCESS (status)) {
+    return status;
+}
+
+readAdapter = WdfDmaEnablerWdmGetDmaAdapter(
+                                            dmaEnabler,
+                                            WdfDmaDirectionReadFromDevice
+                                            );
+writeAdapter = WdfDmaEnablerWdmGetDmaAdapter(
+                                             dmaEnabler,
+                                             WdfDmaDirectionWriteToDevice
+                                             );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -99,9 +142,15 @@ The pointer that <b>WdfDmaEnablerWdmGetDmaAdapter</b> returns is valid until the
 
 <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
+
 
 <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+
+
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
+
+
 
  
 

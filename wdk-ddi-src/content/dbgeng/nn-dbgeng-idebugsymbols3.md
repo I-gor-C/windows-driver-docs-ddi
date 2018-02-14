@@ -201,7 +201,11 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
 
  
 

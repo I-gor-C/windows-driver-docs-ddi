@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortWriteRegisterUchar
-title: StorPortWriteRegisterUchar function
+title: StorPortWriteRegisterUchar macro
 author: windows-driver-content
 description: The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address.
 old-location: storage\storportwriteregisteruchar.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 731ae55e-8cfb-4b76-b811-dbdabd8dd067
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortWriteRegisterUchar, storport/StorPortWriteRegisterUchar, storprt_5c7a4209-e917-4a68-94f7-7b3b3fcc634e.xml, StorPortWriteRegisterUchar routine [Storage Devices], storage.storportwriteregisteruchar
+ms.keywords: storport/StorPortWriteRegisterUchar, StorPortWriteRegisterUchar, StorPortWriteRegisterUchar routine [Storage Devices], storage.storportwriteregisteruchar, storprt_5c7a4209-e917-4a68-94f7-7b3b3fcc634e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -63,15 +63,15 @@ STORPORT_API VOID StorPortWriteRegisterUchar(
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+
 
 `Register`
 
-Pointer to the register. The given <i>Register</i> must be in a mapped memory space range returned by <a href="..\storport\nf-storport-storportgetdevicebase.md">StorPortGetDeviceBase</a>.
+
 
 `Value`
 
-Specifies the value to be written to the HBA's register.
+
 
 
 ## Return Value
@@ -89,6 +89,8 @@ None
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportwriteregisterbufferushort.md">ScsiPortWriteRegisterBufferUshort</a>
+
+
 
  
 

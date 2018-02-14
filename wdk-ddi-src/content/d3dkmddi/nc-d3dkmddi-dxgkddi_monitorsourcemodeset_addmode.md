@@ -73,6 +73,7 @@ NTSTATUS DxgkddiMonitorsourcemodesetAddmode(
 ## Return Value
 
 The <b>pfnAddMode</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -205,6 +206,8 @@ If <i>pMonitorSourceModeInfo</i>-&gt;<b>Preference</b> is equal to D3DKMDT_MP_PR
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_createnewmodeinfo.md">pfnCreateNewModeInfo</a>
+
+
 
  
 

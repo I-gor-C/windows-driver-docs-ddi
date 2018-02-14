@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 17f5d8bf-a3e7-4ff5-9019-24c66875b786
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: printoem/PSIMULATE_CAPS_1, print_interface-graphics_cb1ba0de-be04-4b11-a746-97fd3f2bc213.xml, SIMULATE_CAPS_1 structure [Print Devices], print.simulate_caps_1, PSIMULATE_CAPS_1, _SIMULATE_CAPS_1, SIMULATE_CAPS_1, *PSIMULATE_CAPS_1, printoem/SIMULATE_CAPS_1, PSIMULATE_CAPS_1 structure pointer [Print Devices]
+ms.keywords: printoem/SIMULATE_CAPS_1, PSIMULATE_CAPS_1 structure pointer [Print Devices], PSIMULATE_CAPS_1, print_interface-graphics_cb1ba0de-be04-4b11-a746-97fd3f2bc213.xml, SIMULATE_CAPS_1 structure [Print Devices], printoem/PSIMULATE_CAPS_1, _SIMULATE_CAPS_1, *PSIMULATE_CAPS_1, print.simulate_caps_1, SIMULATE_CAPS_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,6 +80,7 @@ Is a bitmask representing the various numbers of document pages the printer can 
 `dwPageOrderFlags`
 
 Specifies the order in which pages will be printed. This member can be set to one of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -128,6 +129,8 @@ The <b>IPrintCoreUI2::QuerySimulationSupport</b> method uses this structure to r
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553074">IPrintCoreUI2::QuerySimulationSupport</a>
+
+
 
  
 

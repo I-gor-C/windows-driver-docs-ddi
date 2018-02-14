@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportiscurrentosinstallationupgrade, StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices], storport/StorPortIsCurrentOsInstallationUpgrade, StorPortIsCurrentOsInstallationUpgrade
+ms.keywords: StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices], StorPortIsCurrentOsInstallationUpgrade, storport/StorPortIsCurrentOsInstallationUpgrade, storage.storportiscurrentosinstallationupgrade
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ The value pointed to by <i>Upgraded</i> is set to <b>TRUE</b> if the current ope
 ## Return Value
 
 The <b>StorPortIsCurrentOsInstallationUpgrade</b> routine returns one of these status codes:
+
 <table>
 <tr>
 <th>Return code</th>

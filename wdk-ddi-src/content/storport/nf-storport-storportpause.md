@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 304df6fb-8586-454a-a89a-24ac8848d3a1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortPause routine [Storage Devices], StorPortPause, storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, storport/StorPortPause, storage.storportpause
+ms.keywords: storport/StorPortPause, storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, StorPortPause, storage.storportpause, StorPortPause routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,6 +87,8 @@ All requests to the adapter are held until the time-out expires or the device re
 ## See Also
 
 <a href="..\storport\nf-storport-storportresume.md">StorPortResume</a>
+
+
 
  
 

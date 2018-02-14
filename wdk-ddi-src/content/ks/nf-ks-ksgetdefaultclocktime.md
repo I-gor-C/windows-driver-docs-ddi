@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 9689b9f8-e5ae-4689-90b1-6d029408f876
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsGetDefaultClockTime function [Streaming Media Devices], ksfunc_16bfafe4-e317-48e9-841f-f642eb1fb8d3.xml, stream.ksgetdefaultclocktime, KsGetDefaultClockTime, ks/KsGetDefaultClockTime
+ms.keywords: ks/KsGetDefaultClockTime, KsGetDefaultClockTime, KsGetDefaultClockTime function [Streaming Media Devices], stream.ksgetdefaultclocktime, ksfunc_16bfafe4-e317-48e9-841f-f642eb1fb8d3.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,8 @@ The <b>KsGetDefaultClockTime</b> function returns the current clock time.
 ## See Also
 
 <a href="..\ks\nf-ks-kssetdefaultclocktime.md">KsSetDefaultClockTime</a>
+
+
 
  
 

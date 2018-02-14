@@ -56,6 +56,11 @@ For more information about the four data types that you can use with the &lt;psf
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaParameterDefinition.get_DataType](nf-printerextension-iprintschemaparameterdefinition-get_datatype.md) | The DataType property gets the PrintSchemaParameterDataType enumerated value that indicates the expected data type for the Print Schema parameter. |
+| [printerextension.IPrintSchemaParameterDefinition.get_RangeMax](nf-printerextension-iprintschemaparameterdefinition-get_rangemax.md) | The RangeMax property gets the maximum value of the allowed data range. |
+| [printerextension.IPrintSchemaParameterDefinition.get_RangeMin](nf-printerextension-iprintschemaparameterdefinition-get_rangemin.md) | The RangeMin property gets the minimum value of the allowed data range. |
+| [printerextension.IPrintSchemaParameterDefinition.get_UnitType](nf-printerextension-iprintschemaparameterdefinition-get_unittype.md) | The UnitType property gets the unit type. |
+| [printerextension.IPrintSchemaParameterDefinition.get_UserInputRequired](nf-printerextension-iprintschemaparameterdefinition-get_userinputrequired.md) | The UserInputRequired property gets the Boolean value that indicates whether or not a user input value is required for the Print Schema parameter. |
 
 ## Remarks
 
@@ -72,7 +77,11 @@ For more information about the four data types that you can use with the &lt;psf
 
 <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463385.aspx">Print Schema Specification</a>
 
+
+
 <a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+
+
 
  
 

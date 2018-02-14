@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: C1B3FA0C-65B8-4CE1-B8F5-650DF54C9E1E
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbpacketsendwithexternalmdl, VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, vmbuskernelmodeclientlibapi/VmbPacketSendWithExternalMdl, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, VMBUS_CHANNEL_FORMAT_FLAG_FORCE_MDL_LENGTH, VmbPacketSendWithExternalMdl, VmbPacketSendWithExternalMdl function [Network Drivers Starting with Windows Vista]
+ms.keywords: VmbPacketSendWithExternalMdl, VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_FORCE_MDL_LENGTH, VmbPacketSendWithExternalMdl function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, netvista.vmbpacketsendwithexternalmdl, vmbuskernelmodeclientlibapi/VmbPacketSendWithExternalMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	VmbPacketSendWithExternalMdl
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -98,6 +98,7 @@ The length of the sub-buffer to send. Use 0 for the entire     MDL.
 `Flags`
 
 Flags. The following are pertinent flags:
+
 
 <table>
 <tr>
@@ -167,6 +168,8 @@ This function differs from the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbusk
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>
+
+
 
  
 

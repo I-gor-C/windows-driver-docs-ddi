@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 24254e56-c7f5-4424-98b5-3b99bf210d5b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsCalloutUnregisterByKey0 function [Network Drivers Starting with Windows Vista], netvista.fwpscalloutunregisterbykey0, fwpsk/FwpsCalloutUnregisterByKey0, wfp_ref_2_funct_3_fwps_C_e5a98dbf-23ee-4383-96d5-d8ce8a85614e.xml, FwpsCalloutUnregisterByKey0
+ms.keywords: wfp_ref_2_funct_3_fwps_C_e5a98dbf-23ee-4383-96d5-d8ce8a85614e.xml, FwpsCalloutUnregisterByKey0 function [Network Drivers Starting with Windows Vista], netvista.fwpscalloutunregisterbykey0, FwpsCalloutUnregisterByKey0, fwpsk/FwpsCalloutUnregisterByKey0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,7 @@ A pointer to a GUID that uniquely identifies the callout that is being unregiste
 
 The 
      <b>FwpsCalloutUnregisterByKey0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -168,15 +169,25 @@ A callout driver cannot be unloaded until all of the callouts that were previous
 
 ## See Also
 
+<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
+
+
+
 <a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
+
+
 
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutunregisterbyid0.md">FwpsCalloutUnregisterById0</a>
 
+
+
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 
  
 

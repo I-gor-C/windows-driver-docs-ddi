@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CreateCryptoSession</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,7 +145,11 @@ The driver must keep track of the display device (<b>hDevice</b>) that was used 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a>
 
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_cryptosessionkeyexchange.md">CryptoSessionKeyExchange</a>
+
+
 
  
 

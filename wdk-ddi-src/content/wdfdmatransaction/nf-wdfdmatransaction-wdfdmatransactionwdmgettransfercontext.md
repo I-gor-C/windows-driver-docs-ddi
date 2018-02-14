@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: EB156381-FC0E-40A3-A4AF-341AE70B97FF
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext, kmdf.wdfdmatransactionwdmgettransfercontext, wdf.wdfdmatransactionwdmgettransfercontext, WdfDmaTransactionWdmGetTransferContext, PFN_WDFDMATRANSACTIONWDMGETTRANSFERCONTEXT, WdfDmaTransactionWdmGetTransferContext method
+ms.keywords: wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext, kmdf.wdfdmatransactionwdmgettransfercontext, PFN_WDFDMATRANSACTIONWDMGETTRANSFERCONTEXT, wdf.wdfdmatransactionwdmgettransfercontext, WdfDmaTransactionWdmGetTransferContext method, WdfDmaTransactionWdmGetTransferContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WdfDmaTransactionWdmGetTransferContext
 product: Windows
 targetos: Windows
-req.typenames: WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product: Windows 10 or later.
 ---
 
@@ -78,6 +78,7 @@ The DMA transfer context for a transaction is allocated when the driver creates 
 <b>WdfDmaTransactionWdmGetTransferContext</b> must be used with a DMA enabler that uses DMA version 3. To select version 3, set the <b>WdmDmaVersionOverride</b> member of <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> to 3.
 
 Your driver can use the DMA transfer context to call the following WDM DMA library routines directly:
+
 <ul>
 <li>
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
@@ -94,7 +95,8 @@ Your driver can use the DMA transfer context to call the following WDM DMA libra
 <li>
 <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
 </li>
-</ul>You must initialize the DMA transaction before calling <b>WdfDmaTransactionWdmGetTransferContext</b>.
+</ul>
+You must initialize the DMA transaction before calling <b>WdfDmaTransactionWdmGetTransferContext</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,6 +112,8 @@ Your driver can use the DMA transfer context to call the following WDM DMA libra
 ## See Also
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
+
 
  
 

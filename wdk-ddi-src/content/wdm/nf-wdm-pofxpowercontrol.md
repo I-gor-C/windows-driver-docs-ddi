@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: B821AF54-AF2C-4E19-BC70-2E0A8F172D93
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pofxpowercontrol, PoFxPowerControl, wdm/PoFxPowerControl, PoFxPowerControl routine [Kernel-Mode Driver Architecture]
+ms.keywords: PoFxPowerControl, wdm/PoFxPowerControl, PoFxPowerControl routine [Kernel-Mode Driver Architecture], kernel.pofxpowercontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,7 @@ A pointer to a location into which the routine writes the number of bytes of dat
 ## Return Value
 
 <b>PoFxPowerControl</b> returns <b>STATUS_SUCCESS</b> if the requested operation succeeds. Possible error return values include the following status code.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -147,7 +148,11 @@ PoFx delegates the handling of all power control requests to the power engine pl
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
 
+
+
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
+
 
  
 

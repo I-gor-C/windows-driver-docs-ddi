@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5dee3b70-9c8d-420d-86f9-9795b4d8b1e8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: Clfs_management_6a802f4a-8157-42c8-8eda-740a1207714a.xml, wdm/ClfsMgmtDeregisterManagedClient, ClfsMgmtDeregisterManagedClient routine [Kernel-Mode Driver Architecture], ClfsMgmtDeregisterManagedClient, kernel.clfsmgmtderegistermanagedclient
+ms.keywords: Clfs_management_6a802f4a-8157-42c8-8eda-740a1207714a.xml, kernel.clfsmgmtderegistermanagedclient, ClfsMgmtDeregisterManagedClient, ClfsMgmtDeregisterManagedClient routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtDeregisterManagedClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,6 +67,7 @@ TBD
 ## Return Value
 
 The <b>ClfsMgmtDeregisterManagedClient</b> routine returns one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -135,6 +136,8 @@ After calling the <b>ClfsMgmtDeregisterManagedClient</b> routine, a client's cal
 ## See Also
 
 <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
+
+
 
  
 

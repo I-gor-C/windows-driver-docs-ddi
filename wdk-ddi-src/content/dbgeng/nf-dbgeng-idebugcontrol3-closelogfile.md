@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 86ae188b-379c-474e-9f21-60286af19656
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl2 interface [Windows Debugging], CloseLogFile method, dbgeng/IDebugControl3::CloseLogFile, debugger.closelogfile, CloseLogFile method [Windows Debugging], dbgeng/IDebugControl::CloseLogFile, IDebugControl2::CloseLogFile, IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, IDebugControl3 interface [Windows Debugging], CloseLogFile method, IDebugControl interface [Windows Debugging], CloseLogFile method, CloseLogFile method [Windows Debugging], IDebugControl interface, CloseLogFile, IDebugControl::CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl2 interface, CloseLogFile method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::CloseLogFile, IDebugControl3::CloseLogFile, IDebugControl3
+ms.keywords: IDebugControl2, CloseLogFile method [Windows Debugging], IDebugControl3 interface, IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, IDebugControl interface [Windows Debugging], CloseLogFile method, CloseLogFile method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], CloseLogFile method, IDebugControl::CloseLogFile, IDebugControl2 interface [Windows Debugging], CloseLogFile method, dbgeng/IDebugControl2::CloseLogFile, IDebugControl3, dbgeng/IDebugControl::CloseLogFile, IDebugControl3::CloseLogFile, IDebugControl, dbgeng/IDebugControl3::CloseLogFile, CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl2 interface, debugger.closelogfile, IDebugControl2::CloseLogFile, CloseLogFile method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -77,7 +77,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -96,21 +97,37 @@ For more about log files, see <a href="https://msdn.microsoft.com/library/window
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553154">OpenLogFile</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547025">GetLogFile2</a>
-
 <a href="https://msdn.microsoft.com/730cfab3-5529-4054-ba62-8a780572603d">.logclose</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547016">GetLogFile</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553154">OpenLogFile</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547025">GetLogFile2</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
+
 
  
 

@@ -78,6 +78,7 @@ NTSTATUS DxgkddiVidpntopologyRemovepath(
 ## Return Value
 
 The <b>pfnRemovePath</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

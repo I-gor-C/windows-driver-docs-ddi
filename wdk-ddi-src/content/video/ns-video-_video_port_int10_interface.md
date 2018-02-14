@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 551b2255-c221-4a95-a812-dec34f09438b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "*PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE structure [Display Devices], PVIDEO_PORT_INT10_INTERFACE structure pointer [Display Devices], PVIDEO_PORT_INT10_INTERFACE, _VIDEO_PORT_INT10_INTERFACE, video/PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE, Video_Structs_b0f9d9fa-c989-4989-9f63-deb0ca211144.xml, video/VIDEO_PORT_INT10_INTERFACE, display.video_port_int10_interface"
+ms.keywords: Video_Structs_b0f9d9fa-c989-4989-9f63-deb0ca211144.xml, video/VIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE structure [Display Devices], _VIDEO_PORT_INT10_INTERFACE, display.video_port_int10_interface, video/PVIDEO_PORT_INT10_INTERFACE, PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE, PVIDEO_PORT_INT10_INTERFACE structure pointer [Display Devices], *PVIDEO_PORT_INT10_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -117,6 +117,8 @@ PnP video miniport drivers that intend to make BIOS calls should fill in the <b>
 ## See Also
 
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
+
+
 
  
 

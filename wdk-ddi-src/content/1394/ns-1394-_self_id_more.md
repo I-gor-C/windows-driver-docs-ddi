@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: d3c164a6-4830-4f1f-9fa5-5cd61e796e31
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SELF_ID_MORE structure [Buses], _SELF_ID_MORE, IEEE.self_id_more, PSELF_ID_MORE, SELF_ID_MORE, 1394/SELF_ID_MORE, 1394stct_cbfa017d-065b-45ce-ae08-6a6589c6b477.xml, *PSELF_ID_MORE, PSELF_ID_MORE structure pointer [Buses], 1394/PSELF_ID_MORE
+ms.keywords: SELF_ID_MORE structure [Buses], PSELF_ID_MORE, 1394/SELF_ID_MORE, IEEE.self_id_more, _SELF_ID_MORE, *PSELF_ID_MORE, 1394/PSELF_ID_MORE, SELF_ID_MORE, PSELF_ID_MORE structure pointer [Buses], 1394stct_cbfa017d-065b-45ce-ae08-6a6589c6b477.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	SELF_ID_MORE
 product: Windows
 targetos: Windows
-req.typenames: "*PSELF_ID_MORE, SELF_ID_MORE"
+req.typenames: SELF_ID_MORE, *PSELF_ID_MORE
 ---
 
 # _SELF_ID_MORE structure
@@ -221,6 +221,8 @@ This structure corresponds to self ID packet 1, as described in the <i>P1394a</i
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538877">TOPOLOGY_MAP</a>
+
+
 
  
 

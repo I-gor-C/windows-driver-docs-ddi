@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6009d11b-4f44-4591-bcb8-66e0c42d5689
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_ACCESS_RANGE, PACCESS_RANGE structure pointer [Storage Devices], srb/ACCESS_RANGE, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml, storage.access_range, ACCESS_RANGE, PACCESS_RANGE, srb/PACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], *PACCESS_RANGE"
+ms.keywords: ACCESS_RANGE, srb/PACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], *PACCESS_RANGE, PACCESS_RANGE structure pointer [Storage Devices], storage.access_range, _ACCESS_RANGE, PACCESS_RANGE, srb/ACCESS_RANGE, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -92,17 +92,29 @@ The corresponding base logical address returned by <b>ScsiPortGetDeviceBase</b> 
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
-<a href="..\srb\nf-srb-scsiportconvertulongtophysicaladdress.md">ScsiPortConvertUlongToPhysicalAddress</a>
-
 <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
 
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 
+
+
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
+
+
 <a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
+
+
+
+<a href="..\srb\nf-srb-scsiportconvertulongtophysicaladdress.md">ScsiPortConvertUlongToPhysicalAddress</a>
+
+
 
  
 

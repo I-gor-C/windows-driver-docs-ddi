@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: F566E078-9446-49E1-9325-AF65F3ABB6B9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE, PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE function [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE, kernel.pep_acpi_initialize_extended_memory_resource
+ms.keywords: PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE function [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE, kernel.pep_acpi_initialize_extended_memory_resource, PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE
 product: Windows
 targetos: Windows
-req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
+req.typenames: "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
 ---
 
 
@@ -93,6 +93,7 @@ When set, indicates that the maximum address is fixed.
 `Cacheable`
 
 The caching flag for the resource.
+
 <table>
 <tr>
 <th>Value</th>
@@ -180,6 +181,7 @@ The name of the resource descriptor.
 `MemoryRangeType`
 
 This parameter identifies the type of memory range provided by this resource.
+
 <table>
 <tr>
 <th>Value</th>
@@ -262,6 +264,8 @@ This function does not return a value.
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a>
+
+
 
  
 

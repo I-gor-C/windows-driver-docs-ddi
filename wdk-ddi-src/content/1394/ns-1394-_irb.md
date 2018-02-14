@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 456712c9-720c-436c-b1db-a6d53c358e22
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: "*PIRB, IRB, PIRB, 1394stct_84bb3968-39fc-4b3b-90cb-a4e917b8310a.xml, IEEE.irb, _IRB, IRB structure [Buses], 1394/PIRB, PIRB structure pointer [Buses], 1394/IRB"
+ms.keywords: IRB, 1394/PIRB, 1394stct_84bb3968-39fc-4b3b-90cb-a4e917b8310a.xml, IRB structure [Buses], PIRB structure pointer [Buses], IEEE.irb, PIRB, _IRB, 1394/IRB, *PIRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	IRB
 product: Windows
 targetos: Windows
-req.typenames: "*PIRB, IRB"
+req.typenames: IRB, *PIRB
 ---
 
 # _IRB structure
@@ -79,6 +79,7 @@ Reserved.
 `u`
 
 Specifies a union of structures, one for each value of <b>FunctionNumber</b>. The applicable submembers of <b>u</b> for each request are described with each request type in <a href="https://msdn.microsoft.com/library/windows/hardware/ff537211">IEEE 1394 Bus I/O Requests</a>.
+
 <table>
 <tr>
 <th>FunctionNumber</th>
@@ -223,6 +224,8 @@ The <b>Parameters-&gt;Others.Arguments1</b> member of an <a href="https://msdn.m
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537232">IOCTL_1394_CLASS</a>
+
+
 
  
 

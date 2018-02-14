@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_endpoint_static_streams_disable.htm
 old-project: usbref
 ms.assetid: 79da55ac-61de-40cc-b25b-421f7637a9fe
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.evt_ucx_endpoint_static_streams_disable, EvtUcxEndpointStaticStreamsDisable callback function [Buses], EvtUcxEndpointStaticStreamsDisable, EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE, EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE, ucxendpoint/EvtUcxEndpointStaticStreamsDisable, PEVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE callback function pointer [Buses], PEVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,6 +87,34 @@ The UCX client driver registers this callback function with the USB host control
 
 The client driver returns completion status in <i>Request</i> and in the USBD_STATUS
     in the URB header.  The driver can complete the WDFREQUEST asynchronously.
+
+
+#### Examples
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+Endpoint_EvtUcxEndpointStaticStreamsDisable(
+    UCXENDPOINT     UcxEndpoint,
+    UCXSSTREAMS     UcxStaticStreams,
+    WDFREQUEST      Request
+)
+
+{
+    UNREFERENCED_PARAMETER(UcxEndpoint);
+    UNREFERENCED_PARAMETER(UcxStaticStreams);
+
+    DbgTrace(TL_INFO, Endpoint, "Endpoint_EvtUcxEndpointStaticStreamsDisable");
+
+    WdfRequestComplete(Request, STATUS_SUCCESS);
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

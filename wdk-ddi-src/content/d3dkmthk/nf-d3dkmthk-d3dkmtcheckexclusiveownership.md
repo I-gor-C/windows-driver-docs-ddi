@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1695abc2-13ef-4168-b3f5-e9e8be55c5f0
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTCheckExclusiveOwnership function [Display Devices], OpenGL_Functions_f5c7a3e5-651c-48f0-b58c-4a6571c10a61.xml, d3dkmthk/D3DKMTCheckExclusiveOwnership, PFND3DKMT_CHECKEXCLUSIVEOWNERSHIP, display.d3dkmtcheckexclusiveownership, D3DKMTCheckExclusiveOwnership
+ms.keywords: OpenGL_Functions_f5c7a3e5-651c-48f0-b58c-4a6571c10a61.xml, D3DKMTCheckExclusiveOwnership function [Display Devices], D3DKMTCheckExclusiveOwnership, display.d3dkmtcheckexclusiveownership, PFND3DKMT_CHECKEXCLUSIVEOWNERSHIP, d3dkmthk/D3DKMTCheckExclusiveOwnership
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,9 +81,13 @@ For a description of ownership levels of video present sources, see the <a href=
 
 ## See Also
 
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner.md">D3DKMTSetVidPnSourceOwner</a>
+
+
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setvidpnsourceowner.md">D3DKMT_SETVIDPNSOURCEOWNER</a>
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner.md">D3DKMTSetVidPnSourceOwner</a>
+
 
  
 

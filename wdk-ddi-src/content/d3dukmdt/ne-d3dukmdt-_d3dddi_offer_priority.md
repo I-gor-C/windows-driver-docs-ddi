@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2e43f782-c89c-4926-83db-efe737544065
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dddi_offer_priority, D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY_NORMAL, D3DDDI_OFFER_PRIORITY_LOW, D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, _D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, D3DDDI_OFFER_PRIORITY_NONE, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], d3dukmdt/D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW, D3DDDI_OFFER_PRIORITY_AUTO
+ms.keywords: d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, D3DDDI_OFFER_PRIORITY_AUTO, d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH, D3DDDI_OFFER_PRIORITY_NONE, d3dukmdt/D3DDDI_OFFER_PRIORITY, display.d3dddi_offer_priority, D3DDDI_OFFER_PRIORITY_NORMAL, D3DDDI_OFFER_PRIORITY_LOW, d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, _D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -79,7 +79,9 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
                 <tr>
                     <td>D3DDDI_OFFER_PRIORITY_NONE</td>
                     <td>The allocation should not be offered.
-<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -99,7 +101,11 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 
         <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
+
+
 
  
 

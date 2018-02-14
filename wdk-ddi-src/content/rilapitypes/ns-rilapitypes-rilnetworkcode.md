@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b0fa761c-8e28-4067-ae9e-d39e2853fb05
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RILNETWORKCODE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILNETWORKCODE, *LPRILNETWORKCODE, netvista.rilnetworkcode, RILNETWORKCODE
+ms.keywords: "*LPRILNETWORKCODE, rilapitypes/RILNETWORKCODE, RILNETWORKCODE structure [Network Drivers Starting with Windows Vista], RILNETWORKCODE, netvista.rilnetworkcode"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -105,6 +105,8 @@ System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+
+
 
  
 

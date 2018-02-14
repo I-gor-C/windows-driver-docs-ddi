@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 58a0cc96-7180-4823-a4af-bf2d5fa49474
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "_SCANINFO, wiamicro/PSCANINFO, MicroDrv_42f31c58-206a-468e-98ff-794c69b82457.xml, *PSCANINFO, PSCANINFO, SCANINFO, image.scaninfo, wiamicro/SCANINFO, SCANINFO structure [Imaging Devices], PSCANINFO structure pointer [Imaging Devices]"
+ms.keywords: PSCANINFO structure pointer [Imaging Devices], MicroDrv_42f31c58-206a-468e-98ff-794c69b82457.xml, image.scaninfo, wiamicro/SCANINFO, PSCANINFO, SCANINFO structure [Imaging Devices], _SCANINFO, *PSCANINFO, SCANINFO, wiamicro/PSCANINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -95,6 +95,7 @@ typedef struct _SCANINFO {
 `ADF`
 
 Indicates whether the scanner supports an automatic document feeder (ADF). This member can be one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -179,6 +180,7 @@ Specifies the contrast range values of the scanner.
 `DataType`
 
 Specifies the current data type set of the current image. This member can be set to one of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -341,6 +343,7 @@ Specifies a mask value of supported compression types. A value of zero indicates
 `SupportedDataTypes`
 
 Specifies a mask value of supported data types. A value of zero indicates that no data types are supported. This member can be the bitwise OR of the following.
+
 <table>
 <tr>
 <th>Value</th>
@@ -423,7 +426,11 @@ This structure is used as a parameter in the microdriver's <a href="..\wiamicro\
 
 <a href="..\wiamicro\nf-wiamicro-setpixelwindow.md">SetPixelWindow</a>
 
+
+
 <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a>
+
+
 
  
 

@@ -80,6 +80,7 @@ Pointer to a <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_
 Every video miniport driver must have a <i>HwVidStartIO</i> function.
 
 The video port driver calls <i>HwVidStartIO</i> in response to each GDI <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a> request, which originates in the corresponding display driver. When <i>HwVidStartIO</i> is called, the miniport driver owns the input video request packet until it completes the requested operation. <i>HwVidStartIO</i> must do the following:
+
 <ol>
 <li>
 Look at the <b>IoControlCode</b> member of the <a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a> to determine the operation being requested by the display driver.
@@ -97,7 +98,8 @@ Satisfy the request.
 Set the <b>Status</b> and <b>Information</b> members in the <a href="https://msdn.microsoft.com/a1de1905-09f3-4689-ace9-06690a1f930a">VRP</a> and return <b>TRUE</b>.
 
 </li>
-</ol>The system video port driver serializes all requests. A miniport driver need not perform any serialization of its own unless it has a <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> function.
+</ol>
+The system video port driver serializes all requests. A miniport driver need not perform any serialization of its own unless it has a <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> function.
 
 However, every miniport driver's <i>HwVidStartIO</i> function must complete each requested operation or set an appropriate error in the VRP's <b>StatusBlock</b> before it returns control.
 
@@ -113,9 +115,15 @@ However, every miniport driver's <i>HwVidStartIO</i> function must complete each
 
 <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
 
+
+
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
+
+
 
  
 

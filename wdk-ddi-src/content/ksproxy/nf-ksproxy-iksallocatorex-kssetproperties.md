@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 17145801-5EE4-4022-997A-03B14C794D2F
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ksproxy/IKsAllocatorEx::KsSetProperties, IKsAllocatorEx interface [Streaming Media Devices], KsSetProperties method, IKsAllocatorEx, KsSetProperties method [Streaming Media Devices], IKsAllocatorEx::KsSetProperties, KsSetProperties method [Streaming Media Devices], IKsAllocatorEx interface, stream.iksallocatorex_kssetproperties, KsSetProperties
+ms.keywords: ksproxy/IKsAllocatorEx::KsSetProperties, stream.iksallocatorex_kssetproperties, KsSetProperties method [Streaming Media Devices], IKsAllocatorEx interface, IKsAllocatorEx, IKsAllocatorEx::KsSetProperties, IKsAllocatorEx interface [Streaming Media Devices], KsSetProperties method, KsSetProperties, KsSetProperties method [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -76,6 +76,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\ksproxy\nn-ksproxy-iksallocatorex.md">IKsAllocatorEx</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6b0b995a-61db-4bdf-a896-74d91bd192e7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WskReleaseProviderNPI, wskref_1ed7116e-c3a0-41dd-9d19-aa2f44eae257.xml, wsk/WskReleaseProviderNPI, netvista.wskreleaseprovidernpi, WskReleaseProviderNPI function [Network Drivers Starting with Windows Vista]
+ms.keywords: wskref_1ed7116e-c3a0-41dd-9d19-aa2f44eae257.xml, netvista.wskreleaseprovidernpi, WskReleaseProviderNPI, WskReleaseProviderNPI function [Network Drivers Starting with Windows Vista], wsk/WskReleaseProviderNPI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WskReleaseProviderNPI
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -96,7 +96,11 @@ For each call to
 
 <a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
 
+
+
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+
+
 
  
 

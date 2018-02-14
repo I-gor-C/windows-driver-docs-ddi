@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortReadRegisterBufferUlong
-title: StorPortReadRegisterBufferUlong function
+title: StorPortReadRegisterBufferUlong macro
 author: windows-driver-content
 description: The StorPortReadRegisterBufferUlong routine reads a value from a specified register address.
 old-location: storage\storportreadregisterbufferulong.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 069defee-6295-4492-b0bb-135c476c79aa
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortReadRegisterBufferUlong, storage.storportreadregisterbufferulong, StorPortReadRegisterBufferUlong routine [Storage Devices], storprt_18f8816c-5e0f-4139-829d-d9de65d63529.xml, storport/StorPortReadRegisterBufferUlong
+ms.keywords: storprt_18f8816c-5e0f-4139-829d-d9de65d63529.xml, StorPortReadRegisterBufferUlong, storport/StorPortReadRegisterBufferUlong, storage.storportreadregisterbufferulong, StorPortReadRegisterBufferUlong routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -64,19 +64,19 @@ STORPORT_API VOID StorPortReadRegisterBufferUlong(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Register`
 
-Pointer to the register where the data is to be read.
+
 
 `Buffer`
 
-Pointer to the buffer that receives the data that is read.
+
 
 `Count`
 
-Specifies the number of data items to be read. Each data item has a size of <b>sizeof</b>(ULONG).
+
 
 
 ## Return Value
@@ -98,7 +98,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferulong
 
 <a href="..\storport\nf-storport-storportreadregisterulong.md">StorPortReadRegisterUlong</a>
 
+
+
 <a href="..\srb\nf-srb-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>
+
+
 
  
 

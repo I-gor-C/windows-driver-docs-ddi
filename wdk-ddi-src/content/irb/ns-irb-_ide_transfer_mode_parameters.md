@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 66e6efd0-6651-4c87-94ba-d9d3b9191339
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PIDE_TRANSFER_MODE_PARAMETERS, *PIDE_TRANSFER_MODE_PARAMETERS, _IDE_TRANSFER_MODE_PARAMETERS, IDE_TRANSFER_MODE_PARAMETERS structure [Storage Devices], irb/PIDE_TRANSFER_MODE_PARAMETERS, structs-ATA_41b44f2c-8685-45fe-8c56-2a9a648782b4.xml, IDE_TRANSFER_MODE_PARAMETERS, storage.ide_transfer_mode_parameters, PIDE_TRANSFER_MODE_PARAMETERS structure pointer [Storage Devices], irb/IDE_TRANSFER_MODE_PARAMETERS
+ms.keywords: irb/PIDE_TRANSFER_MODE_PARAMETERS, _IDE_TRANSFER_MODE_PARAMETERS, storage.ide_transfer_mode_parameters, irb/IDE_TRANSFER_MODE_PARAMETERS, PIDE_TRANSFER_MODE_PARAMETERS, structs-ATA_41b44f2c-8685-45fe-8c56-2a9a648782b4.xml, IDE_TRANSFER_MODE_PARAMETERS structure [Storage Devices], *PIDE_TRANSFER_MODE_PARAMETERS, IDE_TRANSFER_MODE_PARAMETERS, PIDE_TRANSFER_MODE_PARAMETERS structure pointer [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -140,7 +140,11 @@ Member arrays <b>DeviceTransferModeSupported</b>, <b>DeviceTransferModeCurrent</
 
 <a href="..\irb\ne-irb-ide_device_type.md">IDE_DEVICE_TYPE</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550143">AtaControllerTransferModeSelect</a>
+
+
 
  
 

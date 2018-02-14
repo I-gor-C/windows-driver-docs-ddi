@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: cc43f704-e1f8-4d62-8cdf-11575ec0b473
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsProperty method [Streaming Media Devices], IKsControl interface, ksproxy_463b7e97-4356-4d2e-b005-6f81219bda64.xml, IKsControl, IKsControl::KsProperty, KsProperty method [Streaming Media Devices], KsProperty, stream.ikscontrol_ksproperty, IKsControl interface [Streaming Media Devices], KsProperty method, ksproxy/IKsControl::KsProperty
+ms.keywords: IKsControl interface [Streaming Media Devices], KsProperty method, IKsControl, KsProperty, KsProperty method [Streaming Media Devices], IKsControl interface, stream.ikscontrol_ksproperty, IKsControl::KsProperty, ksproxy/IKsControl::KsProperty, ksproxy_463b7e97-4356-4d2e-b005-6f81219bda64.xml, KsProperty method [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -99,9 +99,13 @@ To determine the buffer size that is required for a specific property request, y
 
 ## See Also
 
+<a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a>
+
+
+
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a>
+
 
  
 

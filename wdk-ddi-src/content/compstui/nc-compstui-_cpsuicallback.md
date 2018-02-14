@@ -40,7 +40,7 @@ apiname:
 -	_CPSUICALLBACK
 product: Windows
 targetos: Windows
-req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+req.typenames: "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
 
@@ -68,6 +68,7 @@ LONG Cpsuicallback(
 ## Return Value
 
 A _CPSUICALLBACK-typed callback function must return one of the values listed in the following table. Each value indicates an action that CPSUI should perform.
+
 <table>
 <tr>
 <th>Return code</th>

@@ -78,6 +78,7 @@ NTSTATUS DxgkddiVidpnGettopology(
 ## Return Value
 
 The <b>pfnGetTopology</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -123,9 +124,13 @@ The lifetime of the DXGK_VIDPNTOPOLOGY_INTERFACE structure returned in <i>ppVidP
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPN Topology Interface</a>
+
+
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpntopology_interface.md">DXGK_VIDPNTOPOLOGY_INTERFACE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPN Topology Interface</a>
+
 
  
 

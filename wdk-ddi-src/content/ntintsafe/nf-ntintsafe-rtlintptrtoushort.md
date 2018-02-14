@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7B563FDF-2535-40DD-9370-6607F3ED59F2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlintptrtoushort, RtlIntPtrToUShort, RtlIntPtrToUShort function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntPtrToUShort
+ms.keywords: kernel.rtlintptrtoushort, ntintsafe/RtlIntPtrToUShort, RtlIntPtrToUShort, RtlIntPtrToUShort function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlIntPtrToUInt16
 </li>

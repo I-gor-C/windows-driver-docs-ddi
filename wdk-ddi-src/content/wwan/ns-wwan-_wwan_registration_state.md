@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 72a41403-9e22-4212-955a-16e243f7af1d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wwan/WWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE structure [Network Drivers Starting with Windows Vista], PWWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE, wwan/PWWAN_REGISTRATION_STATE, netvista.wwan_registration_state, WwanRef_ff7f3a8a-853b-43e3-95fb-ed4320806ad2.xml, PWWAN_REGISTRATION_STATE structure pointer [Network Drivers Starting with Windows Vista], _WWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE
+ms.keywords: wwan/PWWAN_REGISTRATION_STATE, wwan/WWAN_REGISTRATION_STATE, netvista.wwan_registration_state, PWWAN_REGISTRATION_STATE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE structure [Network Drivers Starting with Windows Vista], _WWAN_REGISTRATION_STATE, WwanRef_ff7f3a8a-853b-43e3-95fb-ed4320806ad2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -150,6 +150,7 @@ A network specific error, in the event of a registration failure. For more infor
 `WwanRegFlags`
 
 Registration flags.
+
 <table>
 <tr>
 <th>Value</th>
@@ -199,6 +200,7 @@ Iindicates that the MB device manages its own packet context. The MB Service wil
 
 The following points provide guidelines on returning network specific error in different
     scenarios:
+
 <ul>
 <li>
 If network registration fails because of network specific error, miniport drivers should return the
@@ -225,7 +227,8 @@ Whenever the device registration state changes because the network de-registers 
       <b>uNwError</b> member to the network specific error code.
 
 </li>
-</ul>To return a network specific error when processing OID_WWAN_REGISTER_STATE requests, miniport drivers
+</ul>
+To return a network specific error when processing OID_WWAN_REGISTER_STATE requests, miniport drivers
     should set the 
     <b>uStatus</b> member of the NDIS_WWAN_REGISTRATION_STATE structure to WWAN_STATUS_FAILURE and set the 
     <b>uNwError</b> member to the network specific error code.
@@ -250,11 +253,17 @@ Miniport drivers connected to a multi-mode network should indicate the cellular 
 
 ## See Also
 
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_registration_state.md">NDIS_WWAN_REGISTRATION_STATE</a>
-
 <a href="..\wwan\ne-wwan-_wwan_register_mode.md">WWAN_REGISTER_MODE</a>
 
+
+
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_registration_state.md">NDIS_WWAN_REGISTRATION_STATE</a>
+
+
+
 <a href="..\wwan\ne-wwan-_wwan_register_state.md">WWAN_REGISTER_STATE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5c918f44-1ee7-4666-b83a-e13ce02e26db
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugControl4::AddExtensionWide, IDebugControl4, AddExtensionWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], AddExtensionWide method, AddExtensionWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::AddExtensionWide, AddExtensionWide, debugger.addextensionwide
+ms.keywords: AddExtensionWide method [Windows Debugging], IDebugControl4 interface, AddExtensionWide method [Windows Debugging], AddExtensionWide, IDebugControl4::AddExtensionWide, debugger.addextensionwide, dbgeng/IDebugControl4::AddExtensionWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], AddExtensionWide method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -90,7 +90,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -113,9 +114,15 @@ For more information on using extension libraries, see <a href="https://msdn.mic
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546717">GetExtensionByPath</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554497">RemoveExtension</a>
+
+
 
  
 

@@ -51,6 +51,7 @@ The <b>IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</b> request is sent by silo drivers a
 
 ### Input Buffer
 The input buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an <b> ACT_QUEUE_STATE</b>  structure. <b>ACT_QUEUE_STATE</b> is declared in <i>ehstorioctl.h</i> as the following.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -82,6 +83,7 @@ None.
 
 ### Status Block
 One of the following values can be returned in the <b>Status</b> field.
+
 <table>
 <tr>
 <th>Status Value</th>
@@ -115,6 +117,8 @@ To prevent abuse of  the <b>IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</b> request by a
 ## See Also
 
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_get_queue_state.md">IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE</a>
+
+
 
  
 

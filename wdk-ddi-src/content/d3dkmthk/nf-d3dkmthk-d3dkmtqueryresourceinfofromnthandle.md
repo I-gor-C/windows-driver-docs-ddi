@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 7a433aaf-3215-4d11-8989-2d7bdc7f7499
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtqueryresourceinfofromnthandle, PFND3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, d3dkmthk/D3DKMTQueryResourceInfoFromNtHandle, D3DKMTQueryResourceInfoFromNtHandle function [Display Devices], D3DKMTQueryResourceInfoFromNtHandle
+ms.keywords: d3dkmthk/D3DKMTQueryResourceInfoFromNtHandle, PFND3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, D3DKMTQueryResourceInfoFromNtHandle, display.d3dkmtqueryresourceinfofromnthandle, D3DKMTQueryResourceInfoFromNtHandle function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -93,7 +94,8 @@ The mapping was performed successfully.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -111,7 +113,11 @@ This function might also return other NTSTATUS values.
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a>
 
+
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryresourceinfofromnthandle.md">D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE</a>
+
+
 
  
 

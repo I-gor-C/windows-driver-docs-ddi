@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>ConfigureAuthenticatedChannel</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,6 +126,8 @@ Except for those situations in which the application incorrectly specifies an ou
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_configureauthenicatedchannel.md">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a>
+
+
 
  
 

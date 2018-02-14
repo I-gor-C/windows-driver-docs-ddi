@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 50e31ff1-07f2-4781-81f2-8db6e3cf9cc6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: "_CLFS_MGMT_POLICY_TYPE, ClfsMgmtPolicyLogTail, CLFS_MGMT_POLICY_TYPE enumeration [Kernel-Mode Driver Architecture], ClfsMgmtPolicyAutoGrow, wdm/ClfsMgmtPolicyNewContainerPrefix, wdm/ClfsMgmtPolicyNewContainerExtension, wdm/ClfsMgmtPolicyInvalid, wdm/ClfsMgmtPolicyNewContainerSuffix, *PCLFS_MGMT_POLICY_TYPE, ClfsMgmtPolicyNewContainerSize, sysenum_bae8275b-5f70-40fb-ae14-f803eaeb0a42.xml, wdm/ClfsMgmtPolicyMinimumSize, wdm/ClfsMgmtPolicyAutoShrink, wdm/CLFS_MGMT_POLICY_TYPE, wdm/ClfsMgmtPolicyAutoGrow, PCLFS_MGMT_POLICY_TYPE enumeration pointer [Kernel-Mode Driver Architecture], ClfsMgmtPolicyMinimumSize, wdm/PCLFS_MGMT_POLICY_TYPE, ClfsMgmtPolicyNewContainerPrefix, ClfsMgmtPolicyNewContainerExtension, ClfsMgmtPolicyGrowthRate, ClfsMgmtPolicyMaximumSize, ClfsMgmtPolicyNewContainerSuffix, ClfsMgmtPolicyAutoShrink, CLFS_MGMT_POLICY_TYPE, ClfsMgmtPolicyInvalid, wdm/ClfsMgmtPolicyNewContainerSize, wdm/ClfsMgmtPolicyMaximumSize, kernel.clfs_mgmt_policy_type, PCLFS_MGMT_POLICY_TYPE, wdm/ClfsMgmtPolicyLogTail, wdm/ClfsMgmtPolicyGrowthRate"
+ms.keywords: wdm/PCLFS_MGMT_POLICY_TYPE, wdm/ClfsMgmtPolicyNewContainerSuffix, ClfsMgmtPolicyGrowthRate, *PCLFS_MGMT_POLICY_TYPE, sysenum_bae8275b-5f70-40fb-ae14-f803eaeb0a42.xml, CLFS_MGMT_POLICY_TYPE, wdm/ClfsMgmtPolicyLogTail, ClfsMgmtPolicyLogTail, ClfsMgmtPolicyNewContainerExtension, kernel.clfs_mgmt_policy_type, wdm/ClfsMgmtPolicyNewContainerExtension, wdm/ClfsMgmtPolicyInvalid, _CLFS_MGMT_POLICY_TYPE, ClfsMgmtPolicyNewContainerSuffix, wdm/CLFS_MGMT_POLICY_TYPE, CLFS_MGMT_POLICY_TYPE enumeration [Kernel-Mode Driver Architecture], PCLFS_MGMT_POLICY_TYPE, ClfsMgmtPolicyMinimumSize, ClfsMgmtPolicyMaximumSize, wdm/ClfsMgmtPolicyNewContainerPrefix, ClfsMgmtPolicyAutoGrow, wdm/ClfsMgmtPolicyAutoShrink, wdm/ClfsMgmtPolicyNewContainerSize, wdm/ClfsMgmtPolicyAutoGrow, ClfsMgmtPolicyAutoShrink, wdm/ClfsMgmtPolicyMinimumSize, ClfsMgmtPolicyNewContainerPrefix, wdm/ClfsMgmtPolicyGrowthRate, ClfsMgmtPolicyNewContainerSize, ClfsMgmtPolicyInvalid, wdm/ClfsMgmtPolicyMaximumSize, PCLFS_MGMT_POLICY_TYPE enumeration pointer [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Called at PASSIVE_LEVEL.
 topictype:
 -	APIRef
 -	kbSyntax
@@ -136,6 +136,8 @@ typedef enum _CLFS_MGMT_POLICY_TYPE {
     ## See Also
 
         <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
+
+
 
  
 

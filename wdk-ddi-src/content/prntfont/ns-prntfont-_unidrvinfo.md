@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: f57514ed-33b2-4895-aaba-5866b6fc01d2
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: "_UNIDRVINFO, print.unidrvinfo, prntfont/UNIDRVINFO, PUNIDRVINFO, print_unidrv-pscript_fonts_b956aa02-1966-47c6-aec1-8ef8b98f4e57.xml, UNIDRVINFO, UNIDRVINFO structure [Print Devices], prntfont/PUNIDRVINFO, PUNIDRVINFO structure pointer [Print Devices], *PUNIDRVINFO"
+ms.keywords: prntfont/PUNIDRVINFO, PUNIDRVINFO, _UNIDRVINFO, *PUNIDRVINFO, prntfont/UNIDRVINFO, print.unidrvinfo, UNIDRVINFO, UNIDRVINFO structure [Print Devices], print_unidrv-pscript_fonts_b956aa02-1966-47c6-aec1-8ef8b98f4e57.xml, PUNIDRVINFO structure pointer [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	UNIDRVINFO
 product: Windows
 targetos: Windows
-req.typenames: UNIDRVINFO, *PUNIDRVINFO
+req.typenames: "*PUNIDRVINFO, UNIDRVINFO"
 req.product: Windows 10 or later.
 ---
 
@@ -76,6 +76,7 @@ Specifies the size, in bytes, of the UNIDRVINFO structure.
 `fCaps`
 
 Contains one or more bit flags identifying limitations on the capabilities provided by a device font. The following flags are defined:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -158,6 +159,7 @@ Unidrv must send a carriage return command after each line of text.
 `flGenFlags`
 
 Contains one or more bit flags describing font characteristics. The following flags are defined:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -226,6 +228,7 @@ Not used.
 `wType`
 
 Contains an integer constant describing the font type. The following constants are defined: 
+
 <table>
 <tr>
 <th>Constant</th>
@@ -312,6 +315,8 @@ A .ufm (Unidrv Font Metrics) file's UNIDRVINFO structure is accessed by a pointe
 ## See Also
 
 <a href="..\prntfont\ns-prntfont-_invoc.md">INVOC</a>
+
+
 
  
 

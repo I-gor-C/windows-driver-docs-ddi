@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: ba0f5820-08eb-40c7-9593-7434ee0e29c6
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: XcvOpenPort, winsplp/XcvOpenPort, spoolfnc_d2e14d20-1b34-49f5-a627-7b08ccc79ccf.xml, XcvOpenPort function [Print Devices], print.xcvopenport
+ms.keywords: print.xcvopenport, XcvOpenPort function [Print Devices], winsplp/XcvOpenPort, XcvOpenPort, spoolfnc_d2e14d20-1b34-49f5-a627-7b08ccc79ccf.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,11 +99,19 @@ The function should save the granted access mask. Later, when the server DLL's <
 
 <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
 
+
+
+<a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a>
+
+
+
 <a href="..\winsplp\nf-winsplp-addportui.md">AddPortUI</a>
+
+
 
 <a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a>
 
-<a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a>
+
 
  
 

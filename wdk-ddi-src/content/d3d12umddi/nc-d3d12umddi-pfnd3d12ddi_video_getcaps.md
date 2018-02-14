@@ -81,6 +81,7 @@ Access this function though the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_vi
 The following list describes the mapping of D3D12DDICAPS_TYPE_VIDEO_0010 type to the meaning of the pInfo, pData, and DataSize parameters.
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_SUPPORT
+
 <table>
 <tr>
 <th>Member</th>
@@ -98,9 +99,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_SUPPORT
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_SUPPORT_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILES
+
 <table>
 <tr>
 <th>Member</th>
@@ -118,9 +121,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILES
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_PROFILES_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_FORMATS 
+
 <table>
 <tr>
 <th>Member</th>
@@ -138,9 +143,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_FORMATS
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_FORMATS_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_CONVERSION_SUPPORT 
+
 <table>
 <tr>
 <th>Member</th>
@@ -158,9 +165,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_CONVERSION_SUPPORT
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES
+
 <table>
 <tr>
 <th>Member</th>
@@ -178,9 +187,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_PROCESS_SUPPORT 
+
 <table>
 <tr>
 <th>Member</th>
@@ -198,9 +209,11 @@ D3D12DDICAPS_TYPE_VIDEO_PROCESS_SUPPORT
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_PROCESS_MAX_INPUT_STREAMS 
+
 <table>
 <tr>
 <th>Member</th>
@@ -218,9 +231,11 @@ D3D12DDICAPS_TYPE_VIDEO_PROCESS_MAX_INPUT_STREAMS
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_PROCESS_MAX_INPUT_STREAMS_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_PROCESS_REFERENCE_INFO 
+
 <table>
 <tr>
 <th>Member</th>
@@ -238,9 +253,11 @@ D3D12DDICAPS_TYPE_VIDEO_PROCESS_REFERENCE_INFO
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_PROCESS_REFERENCE_INFO_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_0032_DECODER_HEAP_SIZE
+
 <table>
 <tr>
 <th>Member</th>
@@ -258,9 +275,11 @@ D3D12DDICAPS_TYPE_VIDEO_0032_DECODER_HEAP_SIZE
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_COUNT
+
 <table>
 <tr>
 <th>Member</th>
@@ -278,9 +297,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_COUNT
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_PROFILE_COUNT_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_FORMAT_COUNT
+
 <table>
 <tr>
 <th>Member</th>
@@ -298,9 +319,11 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_PROFILE_FORMAT_COUNT
 <td>DataSize</td>
 <td>sizeof(D3D12DDI_VIDEO_DECODE_PROFILE_FORMAT_COUNT_DATA)</td>
 </tr>
-</table> 
+</table>
+ 
 
 D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT
+
 <table>
 <tr>
 <th>Member</th>
@@ -329,6 +352,8 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT
 ## See Also
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_support_data_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a>
+
+
 
  
 

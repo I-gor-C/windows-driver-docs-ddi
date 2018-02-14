@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista._dot11_wfd_additional_ie, DOT11_WFD_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], DOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE, _DOT11_WFD_ADDITIONAL_IE, windot11/ DOT11_WFD_ADDITIONAL_IE, windot11/PDOT11_WFD_ADDITIONAL_IE
+ms.keywords: "*PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_WFD_ADDITIONAL_IE, windot11/ DOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], netvista._dot11_wfd_additional_ie, PDOT11_WFD_ADDITIONAL_IE, _DOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DOT11_WFD_ADDITIONAL_IE
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE"
+req.typenames: DOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE
 req.product: Windows 10 or later.
 ---
 
@@ -66,6 +66,7 @@ typedef struct _DOT11_WFD_ADDITIONAL_IE {
 `Header`
 
 Specifies the type, revision and size of the <b>DOT11_WFD_ADDITIONAL_IE</b> structure. The required settings for the members of <b>Header</b> are the following:
+
 <table>
 <tr>
 <th>Member</th>

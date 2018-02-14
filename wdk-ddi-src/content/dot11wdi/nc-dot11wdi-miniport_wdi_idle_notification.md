@@ -40,7 +40,7 @@ apiname:
 -	MiniportWdiIdleNotification
 product: Windows
 targetos: Windows
-req.typenames: SYNTH_STATS, *PSYNTH_STATS
+req.typenames: "*PSYNTH_STATS, SYNTH_STATS"
 ---
 
 
@@ -79,6 +79,7 @@ For more information about the ForceIdle parameter, see the Remarks section.
 ## Return Value
 
 MiniportWdiIdleNotification can return any of the following return values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -137,7 +138,11 @@ The miniport driver could not issue a bus-specific IRP successfully.
 
 <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 
+
+
 <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notification_complete.md">NdisWdiIdleNotificationComplete</a>
+
+
 
  
 

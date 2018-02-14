@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 08c87f1f-ea50-4521-80a2-67369fc6598a
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DXVA_COPPCommand structure [Display Devices], dxva/LPDXVA_COPPCommand, display.dxva_coppcommand, DXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml, _DXVA_COPPCommand, LPDXVA_COPPCommand, *LPDXVA_COPPCommand, dxva/DXVA_COPPCommand, LPDXVA_COPPCommand structure pointer [Display Devices]
+ms.keywords: DXVA_COPPCommand structure [Display Devices], LPDXVA_COPPCommand structure pointer [Display Devices], dxva/DXVA_COPPCommand, display.dxva_coppcommand, DXVA_COPPCommand, *LPDXVA_COPPCommand, dxva/LPDXVA_COPPCommand, LPDXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml, _DXVA_COPPCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,11 +79,13 @@ Specifies the GUID that identifies the command. The following GUIDs are supporte
 
 
 
+
 #### DXVA_COPPSetProtectionLevel
 
 Sets the protection type and level on the physical connector associated with the COPP device.
 
 The DXVA_COPPSetProtectionLevel GUID is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -96,11 +98,13 @@ The DXVA_COPPSetProtectionLevel GUID is defined as follows:
 </tr>
 </table></span></div>
 
+
 #### DXVA_COPPSetSignaling
 
 An instruction about how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device.
 
 The DXVA_COPPSetSignaling GUID is defined as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -130,15 +134,25 @@ For a DXVA_COPPSetSignaling command, the signaling information is supplied by ca
 
 ## See Also
 
+<a href="..\dxva\ns-dxva-_dxva_coppsetsignalingcmddata.md">DXVA_COPPSetSignalingCmdData</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
+
+
 
 <a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppsetsignalingcmddata.md">DXVA_COPPSetSignalingCmdData</a>
+
 
 <a href="..\dxva\ns-dxva-_dxva_coppsignature.md">DXVA_COPPSignature</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540421">COPPSequenceStart</a>
+
+
 
  
 

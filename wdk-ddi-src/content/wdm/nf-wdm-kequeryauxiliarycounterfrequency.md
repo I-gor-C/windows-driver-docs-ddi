@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: E7F9549D-F222-42BF-B82B-B0DA0F6BC60F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeQueryAuxiliaryCounterFrequency, KeQueryAuxiliaryCounterFrequency routine [Kernel-Mode Driver Architecture], kernel.kequeryauxiliarycounterfrequency, wdm/KeQueryAuxiliaryCounterFrequency
+ms.keywords: wdm/KeQueryAuxiliaryCounterFrequency, KeQueryAuxiliaryCounterFrequency, KeQueryAuxiliaryCounterFrequency routine [Kernel-Mode Driver Architecture], kernel.kequeryauxiliarycounterfrequency
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -66,6 +66,7 @@ A pointer to a variable to which <b>KeQueryAuxiliaryCounterFrequency</b> writes 
 ## Return Value
 
 <b>KeQueryAuxiliaryCounterFrequency</b> can return one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -111,9 +112,13 @@ Call this routine to programmatically determine whether auxiliary counter is sup
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keconvertauxiliarycountertoperformancecounter.md">KeConvertAuxiliaryCounterToPerformanceCounter</a>
+
+
+
 <a href="..\wdm\nf-wdm-keconvertperformancecountertoauxiliarycounter.md">KeConvertPerformanceCounterToAuxiliaryCounter</a>
 
-<a href="..\wdm\nf-wdm-keconvertauxiliarycountertoperformancecounter.md">KeConvertAuxiliaryCounterToPerformanceCounter</a>
+
 
  
 

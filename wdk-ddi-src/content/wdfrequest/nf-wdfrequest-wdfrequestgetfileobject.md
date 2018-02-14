@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfrequest/WdfRequestGetFileObject, DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject, wdf.wdfrequestgetfileobject, WdfRequestGetFileObject method, PFN_WDFREQUESTGETFILEOBJECT, kmdf.wdfrequestgetfileobject
+ms.keywords: wdfrequest/WdfRequestGetFileObject, DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject method, wdf.wdfrequestgetfileobject, kmdf.wdfrequestgetfileobject, PFN_WDFREQUESTGETFILEOBJECT, WdfRequestGetFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,6 +77,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Remarks
 
 The <b>WdfRequestGetFileObject</b> method returns <b>NULL</b> if either:
+
 <ul>
 <li>
 Your driver has not called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a> and specified a <a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WDF_FILEOBJECT_CLASS</a> value that causes the framework to create file objects.
@@ -86,7 +87,36 @@ Your driver has not called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfi
 Another driver sent a read, write, or I/O control request to your driver without first sending a request type of <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WdfRequestTypeCreate</a>.
 
 </li>
-</ul>For more information about <b>WdfRequestGetFileObject</b> and framework file objects, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
+</ul>
+For more information about <b>WdfRequestGetFileObject</b> and framework file objects, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
+
+
+#### Examples
+
+The following code example obtains an I/O request's file object and then calls a driver-defined routine that obtains a pointer to the file object's context space.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+MyEvtIoWrite(
+    IN WDFQUEUE  Queue,
+    IN WDFREQUEST  Request,
+    IN size_t  Length
+    )
+{
+    WDFFILEOBJECT  fileObject;
+    PFILE_OPEN_CONTEXT  pOpenContext;
+
+    fileObject = WdfRequestGetFileObject(Request);
+    pOpenContext = GetFileObjectContext(fileObject)-&gt;OpenContext;
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,7 +133,11 @@ Another driver sent a read, write, or I/O control request to your driver without
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a>
 
+
+
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WDF_FILEOBJECT_CLASS</a>
+
+
 
  
 

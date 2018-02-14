@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 656a0c58-dd12-4417-a781-464d1670592c
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfFdoInitSetDefaultChildListConfig method, wdffdo/WdfFdoInitSetDefaultChildListConfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, wdf.wdffdoinitsetdefaultchildlistconfig, kmdf.wdffdoinitsetdefaultchildlistconfig, WdfFdoInitSetDefaultChildListConfig, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml
+ms.keywords: WdfFdoInitSetDefaultChildListConfig method, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, wdf.wdffdoinitsetdefaultchildlistconfig, kmdf.wdffdoinitsetdefaultchildlistconfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, WdfFdoInitSetDefaultChildListConfig, wdffdo/WdfFdoInitSetDefaultChildListConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WdfFdoInitSetDefaultChildListConfig
 product: Windows
 targetos: Windows
-req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.typenames: "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
 req.product: Windows 10 or later.
 ---
 
@@ -86,6 +86,37 @@ A bus driver must call <b>WdfFdoInitSetDefaultChildListConfig</b> before calling
 
 For more information about the <b>WdfFdoInitSetDefaultChildListConfig</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus">Enumerating the Devices on a Bus</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_config.md">WDF_CHILD_LIST_CONFIG</a> structure and then calls <b>WdfFdoInitSetDefaultChildListConfig</b>. 
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_CHILD_LIST_CONFIG  config;
+
+WDF_CHILD_LIST_CONFIG_INIT(
+                           &amp;config,
+ sizeof(MY_IDENTIFICATION_DESCRIPTION),
+                           My_EvtDeviceListCreatePdo
+                           );
+config.EvtChildListIdentificationDescriptionDuplicate = My_EvtChildListIdentificationDescriptionDuplicate;
+config.EvtChildListIdentificationDescriptionCompare = My_EvtChildListIdentificationDescriptionCompare;
+config.EvtChildListIdentificationDescriptionCleanup = My_EvtChildListIdentificationDescriptionCleanup;
+
+WdfFdoInitSetDefaultChildListConfig(
+                                    DeviceInit,
+                                    &amp;config,
+                                    WDF_NO_OBJECT_ATTRIBUTES
+                                    );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -100,7 +131,11 @@ For more information about the <b>WdfFdoInitSetDefaultChildListConfig</b> method
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_config_init.md">WDF_CHILD_LIST_CONFIG_INIT</a>
 
+
+
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>
+
+
 
  
 

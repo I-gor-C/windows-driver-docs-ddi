@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS
 product: Windows
 targetos: Windows
-req.typenames: "*PBMP_IMAGE_INFO, BMP_IMAGE_INFO"
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -72,6 +72,7 @@ The smallest valid output buffer size is the size of DWORD.  If the driver recei
 Indicates whether the DeviceIoControl call to the driver completed and the OUT payload is valid.
 
 The <b>Status</b> member is set to one of the values in the following table.
+
 <table>
 <tr>
 <th>Status value</th>
@@ -133,6 +134,7 @@ Any other failure that prevents the payload from being filled in.
 The algorithms are specified by using NULL-terminated UTF-8 encoded strings.  The algorithm identifier "OID" strings are defined in <a href="http://go.microsoft.com/fwlink/p/?linkid=133011">RFC 3279 </a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=133012">RFC 3278 </a><u>.</u>
 
 Here are examples of OID strings for hash algorithms.
+
 <table>
 <tr>
 <th>
@@ -182,7 +184,8 @@ SHA-512
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS must be implemented if the device supports WINBIO_CAPABILITY_SECURE_STORAGE.  The device must support at least SHA-1 ("1.3.14.3.2.26") to be used for storing WinBio templates.
 

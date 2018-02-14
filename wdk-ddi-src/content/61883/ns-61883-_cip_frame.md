@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: ac9efa58-fd38-43f2-85e6-577d58735847
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: CIP_FRAME structure [Buses], PCIP_FRAME structure pointer [Buses], CIP_FRAME, 61883/CIP_FRAME, IEEE.cip_frame, PCIP_FRAME, _CIP_FRAME, 61883/PCIP_FRAME, 61883_structures_1fd796fa-88d2-4dc4-a440-89bf50b81ae8.xml, *PCIP_FRAME
+ms.keywords: "*PCIP_FRAME, _CIP_FRAME, 61883_structures_1fd796fa-88d2-4dc4-a440-89bf50b81ae8.xml, 61883/PCIP_FRAME, CIP_FRAME, 61883/CIP_FRAME, PCIP_FRAME, IEEE.cip_frame, PCIP_FRAME structure pointer [Buses], CIP_FRAME structure [Buses]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,17 +80,6 @@ For packets to be received, <b>Flags</b> can be one of the following:
 
 
 
-For packets to be received, CIP_VALIDATE_XXX can be combined with either or both of the following:
-
-
-
-For packets to be transmitted, <b>Flags</b> can be one of the following:
-
-
-
-For packets to be transmitted or received, <b>Flags</b> can also be set with the following:
-
-
 
 
 #### CIP_VALIDATE_FIRST_SOURCE
@@ -98,9 +87,15 @@ For packets to be transmitted or received, <b>Flags</b> can also be set with the
 Instructs the IEC-61883 protocol driver to call the client-driver-supplied function at <b>pfnValidate</b> to validate only the first source packet.
 
 
+
 #### CIP_VALIDATE_ALL_SOURCE
 
 Instructs the IEC-61883 protocol driver to call the client-driver-supplied function at <b>pfnValidate</b> to validate all source packets.
+
+For packets to be received, CIP_VALIDATE_XXX can be combined with either or both of the following:
+
+
+
 
 
 #### CIP_STRIP_SOURCE_HEADER
@@ -108,9 +103,15 @@ Instructs the IEC-61883 protocol driver to call the client-driver-supplied funct
 Instructs the protocol driver to strip the source header packet within a source packet.
 
 
+
 #### CIP_USE_SOURCE_HEADER_TIMESTAMP
 
 Instructs the protocol driver to timestamp the frame with the timestamp found within the source header packet.
+
+For packets to be transmitted, <b>Flags</b> can be one of the following:
+
+
+
 
 
 #### CIP_DV_STYLE_SYT
@@ -118,9 +119,15 @@ Instructs the protocol driver to timestamp the frame with the timestamp found wi
 The value at <b>TimeStamp</b> is formatted for data transmission to digital video devices (SD-DVCR, HD-DVCR, or SDL-DVCR).
 
 
+
 #### CIP_AUDIO_STYLE_SYT
 
 The value at <b>TimeStamp</b> is formatted for audio and music data transmission to audio devices.
+
+For packets to be transmitted or received, <b>Flags</b> can also be set with the following:
+
+
+
 
 
 #### CIP_RESET_FRAME_ON_DISCONTINUITY
@@ -140,6 +147,7 @@ Points to the beginning of a caller-allocated data buffer to be transmitted or r
 Points to a caller-supplied function to be called by the protocol driver when the requested frame is completed. The protocol driver calls this function at IRQL = DISPATCH_LEVEL.
 
 This function uses the following prototype:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -155,11 +163,14 @@ This function uses the following prototype:
 </table></span></div>
 
 
-####
+
+
+#####
 
 `pfnValidate`
 
 Points to a caller-supplied function to validate a source packet. This function uses the following prototype: The parameter <b>ValidateInfo</b> must point to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537048">CIP_VALIDATE_INFO</a> structure that contains information about the frame. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -204,9 +215,13 @@ Points to an optional caller-defined context for the function at <b>pfnValidate<
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 20ee0633-a743-46e8-a094-37099b8e4427
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortCompleteRequest, storprt_c91d5dfe-31de-4804-a0be-c2bab228fbb9.xml, storport/StorPortCompleteRequest, StorPortCompleteRequest routine [Storage Devices], storage.storportcompleterequest
+ms.keywords: storage.storportcompleterequest, storprt_c91d5dfe-31de-4804-a0be-c2bab228fbb9.xml, StorPortCompleteRequest, storport/StorPortCompleteRequest, StorPortCompleteRequest routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,6 +103,8 @@ We do not recommend that writers of Storport miniport drivers use this particula
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
+
+
 
  
 

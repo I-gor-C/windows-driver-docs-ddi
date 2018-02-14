@@ -2,7 +2,7 @@
 UID: TP:nfpdrivers
 ms.assetid: e2a2f925-0a75-3b74-b121-38dab2d236ad
 ms.author: windowsdriverdev
-ms.date: 01/19/18
+ms.date: 01/18/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,9 +45,9 @@ For the programming guide, see [Near field communications (NFC)](===404===https:
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_NFC_CX_DEVICE_IO_CONTROL function](..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md) | Called by the NFC CX to send an unhandled IOCTL to the client driver. |
-| [EVT_NFC_CX_SEQUENCE_HANDLER function](..\nfccx\nc-nfccx-evt_nfc_cx_sequence_handler.md) | Called by the NFC CX to notify the client driver to handle the specific registered sequence. |
-| [EVT_NFC_CX_WRITE_NCI_PACKET function](..\nfccx\nc-nfccx-evt_nfc_cx_write_nci_packet.md) | Called by the NFC CX to send a write packet to the client driver. |
+| [EVT_NFC_CX_DEVICE_IO_CONTROL callback](..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md) | Called by the NFC CX to send an unhandled IOCTL to the client driver. |
+| [EVT_NFC_CX_SEQUENCE_HANDLER callback](..\nfccx\nc-nfccx-evt_nfc_cx_sequence_handler.md) | Called by the NFC CX to notify the client driver to handle the specific registered sequence. |
+| [EVT_NFC_CX_WRITE_NCI_PACKET callback](..\nfccx\nc-nfccx-evt_nfc_cx_write_nci_packet.md) | Called by the NFC CX to send a write packet to the client driver. |
 
 ## Structures
 
@@ -79,20 +79,20 @@ For the programming guide, see [Near field communications (NFC)](===404===https:
 
 | Title   | Description   |
 | ---- |:---- |
-| [_NFC_CX_CE_MODE_CONFIG Enumeration](..\nfccx\ne-nfccx-_nfc_cx_ce_mode_config.md) | This enumeration specifies CE listening mode flags. |
-| [_NFC_CX_DEVICE_MODE Enumeration](..\nfccx\ne-nfccx-_nfc_cx_device_mode.md) | Specifies device mode flags. |
-| [_NFC_CX_DRIVER_FLAGS Enumeration](..\nfccx\ne-nfccx-_nfc_cx_driver_flags.md) | Specifies run-time driver flags. |
-| [_NFC_CX_HOST_ACTION Enumeration](..\nfccx\ne-nfccx-_nfc_cx_host_action.md) | The NFC_CX_HOST_ACTION enumeration specifies host actions. |
-| [_NFC_CX_NFCIP_MODE_CONFIG Enumeration](..\nfccx\ne-nfccx-_nfc_cx_nfcip_mode_config.md) | The NFC_CX_NFCIP_MODE_CONFIG enumeration specifies the NFC-IP initiator mode. |
-| [_NFC_CX_NFCIP_TGT_MODE_CONFIG Enumeration](..\nfccx\ne-nfccx-_nfc_cx_nfcip_tgt_mode_config.md) | The NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration specifies NFC-IP target mode. |
-| [_NFC_CX_POLL_BAILOUT_CONFIG Enumeration](..\nfccx\ne-nfccx-_nfc_cx_poll_bailout_config.md) | The NFC_CX_POLL_BAILOUT_CONFIG enumeration specifies poll mode bail out. |
-| [_NFC_CX_POLL_MODE_CONFIG Enumeration](..\nfccx\ne-nfccx-_nfc_cx_poll_mode_config.md) | The NFC_CX_POLL_MODE_CONFIG enumeration specifies poll mode. |
-| [_NFC_CX_SEQUENCE Enumeration](..\nfccx\ne-nfccx-_nfc_cx_sequence.md) | The NFC_CX_SEQUENCE enumeration specifies sequences. |
-| [_NFC_CX_TRANSPORT_TYPE Enumeration](..\nfccx\ne-nfccx-_nfc_cx_transport_type.md) | The NFC_CX_TRANSPORT_TYPE enumeration specifies transport types. |
-| [_SECURE_ELEMENT_CARD_EMULATION_MODE Enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_card_emulation_mode.md) | This enumeration indicates the card emulation mode of a secure element. |
-| [_SECURE_ELEMENT_EVENT_TYPE Enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_event_type.md) | Indicates the type of secure element events. |
-| [_SECURE_ELEMENT_ROUTING_TYPE Enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_routing_type.md) | SECURE_ELEMENT_ROUTING_TYPE is a member of SECURE_ELEMENT_ROUTING_TABLE_ENTRY. |
-| [_SECURE_ELEMENT_TYPE Enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_type.md) | Indicates the type of a secure element. |
+| [_NFC_CX_CE_MODE_CONFIG enumeration](..\nfccx\ne-nfccx-_nfc_cx_ce_mode_config.md) | This enumeration specifies CE listening mode flags. |
+| [_NFC_CX_DEVICE_MODE enumeration](..\nfccx\ne-nfccx-_nfc_cx_device_mode.md) | Specifies device mode flags. |
+| [_NFC_CX_DRIVER_FLAGS enumeration](..\nfccx\ne-nfccx-_nfc_cx_driver_flags.md) | Specifies run-time driver flags. |
+| [_NFC_CX_HOST_ACTION enumeration](..\nfccx\ne-nfccx-_nfc_cx_host_action.md) | The NFC_CX_HOST_ACTION enumeration specifies host actions. |
+| [_NFC_CX_NFCIP_MODE_CONFIG enumeration](..\nfccx\ne-nfccx-_nfc_cx_nfcip_mode_config.md) | The NFC_CX_NFCIP_MODE_CONFIG enumeration specifies the NFC-IP initiator mode. |
+| [_NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration](..\nfccx\ne-nfccx-_nfc_cx_nfcip_tgt_mode_config.md) | The NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration specifies NFC-IP target mode. |
+| [_NFC_CX_POLL_BAILOUT_CONFIG enumeration](..\nfccx\ne-nfccx-_nfc_cx_poll_bailout_config.md) | The NFC_CX_POLL_BAILOUT_CONFIG enumeration specifies poll mode bail out. |
+| [_NFC_CX_POLL_MODE_CONFIG enumeration](..\nfccx\ne-nfccx-_nfc_cx_poll_mode_config.md) | The NFC_CX_POLL_MODE_CONFIG enumeration specifies poll mode. |
+| [_NFC_CX_SEQUENCE enumeration](..\nfccx\ne-nfccx-_nfc_cx_sequence.md) | The NFC_CX_SEQUENCE enumeration specifies sequences. |
+| [_NFC_CX_TRANSPORT_TYPE enumeration](..\nfccx\ne-nfccx-_nfc_cx_transport_type.md) | The NFC_CX_TRANSPORT_TYPE enumeration specifies transport types. |
+| [_SECURE_ELEMENT_CARD_EMULATION_MODE enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_card_emulation_mode.md) | This enumeration indicates the card emulation mode of a secure element. |
+| [_SECURE_ELEMENT_EVENT_TYPE enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_event_type.md) | Indicates the type of secure element events. |
+| [_SECURE_ELEMENT_ROUTING_TYPE enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_routing_type.md) | SECURE_ELEMENT_ROUTING_TYPE is a member of SECURE_ELEMENT_ROUTING_TABLE_ENTRY. |
+| [_SECURE_ELEMENT_TYPE enumeration](..\nfcsedev\ne-nfcsedev-_secure_element_type.md) | Indicates the type of a secure element. |
 
 ## I/O control codes
 

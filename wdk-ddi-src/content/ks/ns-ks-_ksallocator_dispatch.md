@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 6e6e6dde-3b41-44a7-b51d-1b1f06db0853
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KSALLOCATOR_DISPATCH structure [Streaming Media Devices], PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], ks/PKSALLOCATOR_DISPATCH, KSALLOCATOR_DISPATCH, avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml, ks/KSALLOCATOR_DISPATCH, stream.ksallocator_dispatch, PKSALLOCATOR_DISPATCH, _KSALLOCATOR_DISPATCH, *PKSALLOCATOR_DISPATCH
+ms.keywords: KSALLOCATOR_DISPATCH, *PKSALLOCATOR_DISPATCH, ks/KSALLOCATOR_DISPATCH, avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml, _KSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], KSALLOCATOR_DISPATCH structure [Streaming Media Devices], ks/PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH, stream.ksallocator_dispatch
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSALLOCATOR_DISPATCH
 product: Windows
 targetos: Windows
-req.typenames: KSALLOCATOR_DISPATCH, *PKSALLOCATOR_DISPATCH
+req.typenames: "*PKSALLOCATOR_DISPATCH, KSALLOCATOR_DISPATCH"
 ---
 
 # _KSALLOCATOR_DISPATCH structure
@@ -71,6 +71,8 @@ By providing a pointer to a KSALLOCATOR_DISPATCH structure in the relevant <a hr
 ## See Also
 
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+
 
  
 

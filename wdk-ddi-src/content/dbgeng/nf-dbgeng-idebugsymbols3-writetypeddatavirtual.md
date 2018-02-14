@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: c7a3854b-2405-4e20-8c6c-4e0c0d43987e
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugSymbols2::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols::WriteTypedDataVirtual, debugger.writetypeddatavirtual, IDebugSymbols2 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3::WriteTypedDataVirtual, IDebugSymbols_51186c12-dc2b-4906-a8fa-9e0f4a960135.xml, IDebugSymbols3, dbgeng/IDebugSymbols::WriteTypedDataVirtual, IDebugSymbols2::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], dbgeng/IDebugSymbols3::WriteTypedDataVirtual, IDebugSymbols3 interface [Windows Debugging], WriteTypedDataVirtual method
+ms.keywords: IDebugSymbols::WriteTypedDataVirtual, WriteTypedDataVirtual, IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], WriteTypedDataVirtual method, dbgeng/IDebugSymbols::WriteTypedDataVirtual, dbgeng/IDebugSymbols2::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols3 interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols, IDebugSymbols2, IDebugSymbols2::WriteTypedDataVirtual, debugger.writetypeddatavirtual, IDebugSymbols_51186c12-dc2b-4906-a8fa-9e0f4a960135.xml, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -92,6 +92,7 @@ Receives the number of bytes that were written.  If <i>BytesWritten</i> is <b>NU
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>

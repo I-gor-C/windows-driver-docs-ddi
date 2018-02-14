@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 1af0c877-e634-474e-9b4d-a28991fb3f66
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: PCI_EXPRESS_ROOT_ERROR_STATUS, *PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI.pci_express_root_error_status, wdm/PPCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS, wdm/PCI_EXPRESS_ROOT_ERROR_STATUS, pci_struct_8b730780-dc4a-4873-8efd-fb6df47f7c8f.xml, PPCI_EXPRESS_ROOT_ERROR_STATUS union pointer [Buses], PCI_EXPRESS_ROOT_ERROR_STATUS union [Buses], _PCI_EXPRESS_ROOT_ERROR_STATUS
+ms.keywords: "*PPCI_EXPRESS_ROOT_ERROR_STATUS, wdm/PCI_EXPRESS_ROOT_ERROR_STATUS, pci_struct_8b730780-dc4a-4873-8efd-fb6df47f7c8f.xml, wdm/PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI.pci_express_root_error_status, _PCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS union pointer [Buses], PCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI_EXPRESS_ROOT_ERROR_STATUS union [Buses]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,6 +89,8 @@ A PCI_EXPRESS_ROOT_ERROR_STATUS structure is contained in the <a href="https://m
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+
+
 
  
 

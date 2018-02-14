@@ -80,6 +80,8 @@ The miniport driver does not set the <b>Information</b> member of the <a href=".
 
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode.md">VIDEO_MODE</a>
 
+
+
  
 
  

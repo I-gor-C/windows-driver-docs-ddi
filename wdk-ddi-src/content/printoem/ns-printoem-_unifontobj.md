@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: ff3ecef2-abf2-4ecb-b4af-81e6c6d8fb4c
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print_unidrv-pscript_rendering_05a25ef3-5ce2-43f5-ae35-790691bda143.xml, UNIFONTOBJ structure [Print Devices], *PUNIFONTOBJ, print.unifontobj, printoem/PUNIFONTOBJ, _UNIFONTOBJ, UNIFONTOBJ, printoem/UNIFONTOBJ, PUNIFONTOBJ, PUNIFONTOBJ structure pointer [Print Devices]
+ms.keywords: printoem/UNIFONTOBJ, UNIFONTOBJ, PUNIFONTOBJ structure pointer [Print Devices], PUNIFONTOBJ, print_unidrv-pscript_rendering_05a25ef3-5ce2-43f5-ae35-790691bda143.xml, UNIFONTOBJ structure [Print Devices], _UNIFONTOBJ, *PUNIFONTOBJ, print.unifontobj, printoem/PUNIFONTOBJ
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	UNIFONTOBJ
 product: Windows
 targetos: Windows
-req.typenames: "*PUNIFONTOBJ, UNIFONTOBJ"
+req.typenames: UNIFONTOBJ, *PUNIFONTOBJ
 req.product: Windows 10 or later.
 ---
 
@@ -63,6 +63,7 @@ typedef struct _UNIFONTOBJ {
 `dwFlags`
 
 Is a set of Unidrv-supplied bit flags. Flag definitions are as follows:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -166,7 +167,11 @@ Specifies a resource identifier for an RC_UFM resource contained in a Unidrv min
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
+
+
 
  
 

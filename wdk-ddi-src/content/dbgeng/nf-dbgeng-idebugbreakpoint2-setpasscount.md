@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: a95f7a8d-7e0d-4971-9683-f83600030337
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.setpasscount, IDebugBreakpoint2 interface [Windows Debugging], SetPassCount method, SetPassCount method [Windows Debugging], dbgeng/IDebugBreakpoint2::SetPassCount, IDebugBreakpoint2::SetPassCount, IDebugBreakpoint::SetPassCount, IDebugBreakpoint2, SetPassCount, SetPassCount method [Windows Debugging], IDebugBreakpoint interface, ComOther_8398fd11-1821-4adb-b8be-4e207b616169.xml, dbgeng/IDebugBreakpoint::SetPassCount, IDebugBreakpoint interface [Windows Debugging], SetPassCount method, SetPassCount method [Windows Debugging], IDebugBreakpoint2 interface
+ms.keywords: SetPassCount, IDebugBreakpoint::SetPassCount, dbgeng/IDebugBreakpoint::SetPassCount, debugger.setpasscount, dbgeng/IDebugBreakpoint2::SetPassCount, IDebugBreakpoint2::SetPassCount, ComOther_8398fd11-1821-4adb-b8be-4e207b616169.xml, IDebugBreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], SetPassCount method, IDebugBreakpoint, SetPassCount method [Windows Debugging], IDebugBreakpoint2 interface, SetPassCount method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint interface [Windows Debugging], SetPassCount method, SetPassCount method [Windows Debugging]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,7 +81,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

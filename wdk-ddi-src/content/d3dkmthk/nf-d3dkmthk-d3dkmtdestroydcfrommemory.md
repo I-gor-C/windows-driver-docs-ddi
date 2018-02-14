@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1c34db7b-6153-40ec-9a9f-72b9c04c9f12
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtdestroydcfrommemory, d3dkmthk/D3DKMTDestroyDCFromMemory, OpenGL_Functions_2c70707b-7052-4f5f-8715-e2e61a7ab267.xml, D3DKMTDestroyDCFromMemory function [Display Devices], D3DKMTDestroyDCFromMemory
+ms.keywords: OpenGL_Functions_2c70707b-7052-4f5f-8715-e2e61a7ab267.xml, d3dkmthk/D3DKMTDestroyDCFromMemory, display.d3dkmtdestroydcfrommemory, D3DKMTDestroyDCFromMemory function [Display Devices], D3DKMTDestroyDCFromMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTDestroyDCFromMemory</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -112,6 +114,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroydcfrommemory.md">D3DKMT_DESTROYDCFROMMEMORY</a>
+
+
 
  
 

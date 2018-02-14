@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f5bb3af4-c687-47ad-88ce-d56067c78d6d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfworkitemcreate, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, wdfworkitem/WdfWorkItemCreate, wdf.wdfworkitemcreate, WdfWorkItemCreate, WdfWorkItemCreate method, PFN_WDFWORKITEMCREATE
+ms.keywords: wdfworkitem/WdfWorkItemCreate, wdf.wdfworkitemcreate, kmdf.wdfworkitemcreate, WdfWorkItemCreate, PFN_WDFWORKITEMCREATE, WdfWorkItemCreate method, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	WdfWorkItemCreate
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+req.typenames: WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -81,6 +81,7 @@ A pointer to a variable that receives a handle to the new work-item object.
 ## Return Value
 
 <b>WdfWorkItemCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -159,6 +160,47 @@ If your driver provides <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_contex
 
 For more information about work items, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-framework-work-items">Using Framework Work Items</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure, initializes a <a href="..\wdfworkitem\ns-wdfworkitem-_wdf_workitem_config.md">WDF_WORKITEM_CONFIG</a> structure, and calls <b>WdfWorkItemCreate</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS  status = STATUS_SUCCESS;
+PWORKER_ITEM_CONTEXT  context;
+WDF_OBJECT_ATTRIBUTES  attributes;
+WDF_WORKITEM_CONFIG  workitemConfig;
+WDFWORKITEM  hWorkItem;
+
+WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
+                                       &amp;attributes,
+                                       WORKER_ITEM_CONTEXT
+                                       );
+attributes.ParentObject = FdoData-&gt;WdfDevice;
+
+WDF_WORKITEM_CONFIG_INIT(
+                         &amp;workitemConfig,
+                         CallbackFunction
+                         );
+
+status = WdfWorkItemCreate(
+                            &amp;workitemConfig,
+                            &amp;attributes,
+                            &amp;hWorkItem
+                            );
+if (!NT_SUCCESS(status)) {
+    return status;
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -173,6 +215,8 @@ For more information about work items, see <a href="https://docs.microsoft.com/e
 ## See Also
 
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemenqueue.md">WdfWorkItemEnqueue</a>
+
+
 
  
 

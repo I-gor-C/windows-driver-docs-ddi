@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 178b635c-0916-44f5-87a3-a2766601dcab
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: OEMCUIPPARAM structure [Print Devices], *POEMCUIPPARAM, printoem/OEMCUIPPARAM, print.oemcuipparam, OEMCUIPPARAM, print_unidrv-pscript_ui_6ea92d10-0152-4bb2-a79b-0f6c29507e8c.xml, _OEMCUIPPARAM
+ms.keywords: OEMCUIPPARAM structure [Print Devices], _OEMCUIPPARAM, OEMCUIPPARAM, printoem/OEMCUIPPARAM, print_unidrv-pscript_ui_6ea92d10-0152-4bb2-a79b-0f6c29507e8c.xml, print.oemcuipparam, *POEMCUIPPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	OEMCUIPPARAM
 product: Windows
 targetos: Windows
-req.typenames: OEMCUIPPARAM, *POEMCUIPPARAM
+req.typenames: "*POEMCUIPPARAM, OEMCUIPPARAM"
 req.product: Windows 10 or later.
 ---
 
@@ -92,6 +92,7 @@ The first time the <b>IPrintOemUI::CommonUIProp</b> method is called, the caller
 Contains the contents of the <b>fMode</b> member of the <a href="..\winddiui\ns-winddiui-_documentpropertyheader.md">DOCUMENTPROPERTYHEADER</a> structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.
 
 
+
 #### For calls to IPrintOemUI::CommonUIProp with its dwMode parameter set to OEMCUIP_PRNPROP:
 
 Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.
@@ -123,6 +124,7 @@ Pointer to the user interface plug-in's private DEVMODEW members. Valid only if 
 `pOEMOptItems`
 
 Pointer to an array of OPTITEM structures. Supplied by <b>IPrintOemUI::CommonUIProp</b> caller. The second time the <b>IPrintOemUI::CommonUIProp</b> method is called, it must place OPTITEM structures defined by the user interface plug-in in this array, and it must place the structure count in <b>cOEMOptItems</b>. For each OPTITEM structure placed in the array, you must do the following:
+
 <ul>
 <li>
 Set the OPTITEM structure's <b>DMPubID</b> member either to one of the predefined values or to a value greater than DMPUB_USER. If you use any predefined values, you must search through the entire OPTITEM array for structures already containing those values, and you must set their OPTIF_HIDE flags.
@@ -132,7 +134,8 @@ Set the OPTITEM structure's <b>DMPubID</b> member either to one of the predefine
 Allocate space for OPTTYPES and OPTPARAMS structures by calling the Windows SDK <b>HeapAlloc</b> function, using the handle contained in the OEMCUIPPARAM structure's <b>hOEMHeap</b> member. The printer driver deallocates this space when it is no longer needed.
 
 </li>
-</ul>Not valid the first time <b>IPrintOemUI::CommonUIProp</b> is called.
+</ul>
+Not valid the first time <b>IPrintOemUI::CommonUIProp</b> is called.
 
 `poemuiobj`
 

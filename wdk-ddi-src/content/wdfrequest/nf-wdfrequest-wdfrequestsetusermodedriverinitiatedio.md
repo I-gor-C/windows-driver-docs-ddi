@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F477ABEA-5E29-4934-995C-D7FB1EF87A5B
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfRequestSetUserModeDriverInitiatedIo method, wdf.wdfrequestsetusermodedriverinitiatedio, PFN_WDFREQUESTSETUSERMODEDRIVERINITIATEDIO, WdfRequestSetUserModeDriverInitiatedIo, wdfrequest/WdfRequestSetUserModeDriverInitiatedIo
+ms.keywords: WdfRequestSetUserModeDriverInitiatedIo, wdfrequest/WdfRequestSetUserModeDriverInitiatedIo, PFN_WDFREQUESTSETUSERMODEDRIVERINITIATEDIO, wdf.wdfrequestsetusermodedriverinitiatedio, WdfRequestSetUserModeDriverInitiatedIo method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,6 +102,8 @@ Requests that the driver created on its own are already marked as having origina
 ## See Also
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetusermodedriverinitiatedio.md">WdfRequestGetUserModeDriverInitiatedIo</a>
+
+
 
  
 

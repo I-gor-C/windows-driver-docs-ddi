@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 23DC5EB1-E606-499D-B78A-AFF95E6B00A3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu, D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], display.d3dkmtsignalsynchronizationobjectfromcpu, D3DKMTSignalSynchronizationObjectFromCpu
+ms.keywords: D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], display.d3dkmtsignalsynchronizationobjectfromcpu, D3DKMTSignalSynchronizationObjectFromCpu, d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTSignalSynchronizationObjectFromCpu</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -84,7 +85,8 @@ The operation was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other values.
 
@@ -93,8 +95,10 @@ This function might also return other values.
 When a monitored fence object is signaled by the CPU, the graphics kernel will update the fence memory location with the signaled value, so it becomes immediately visible to any user mode reader as well as immediately un-wait any satisfied waiters.
 However, the caller cannot assume that the signal operation will be completed upon the return from this function. Instead, the caller should use appropriate Wait functions to check for signal completion.
 
+
 <div class="alert"><b>Note</b>  A signal from a graphics processing unit (GPU) call is not provided. Instead, a driver can signal a new fence value by inserting a GPU write command for <b>FenceValueGPUVirtualAddress</b> into a command buffer.
-</div><div> </div>
+</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: a7ebe58d-8e87-437f-b556-408610fa654e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WwanRef_5468242f-eb44-4ece-92a2-02524eb0d196.xml, netvista.wwan_sms_status, wwan/WWAN_SMS_STATUS, WWAN_SMS_STATUS, _WWAN_SMS_STATUS, PWWAN_SMS_STATUS, wwan/PWWAN_SMS_STATUS, *PWWAN_SMS_STATUS, WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords: WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_STATUS, WwanRef_5468242f-eb44-4ece-92a2-02524eb0d196.xml, *PWWAN_SMS_STATUS, wwan/PWWAN_SMS_STATUS, wwan/WWAN_SMS_STATUS, netvista.wwan_sms_status, _WWAN_SMS_STATUS, PWWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista], WWAN_SMS_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,6 +76,7 @@ If the
 A bitmap of flags that represent the status of the message store on the MB device. The values for 
      <b>uFlag</b> are defined in the following table.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -111,7 +112,8 @@ A new, non-Class 0 (flash/alert) message has arrived.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Miniport drivers should not set or clear any flag until a change of state occurs. For example, the
      WWAN_SMS_FLAG_MESSAGE_STORE_FULL flag must remain set until the miniport driver completely processes a
@@ -132,6 +134,8 @@ Miniport drivers must send an unsolicited event to the MB Service whenever a fla
 ## See Also
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_sms_status.md">NDIS_WWAN_SMS_STATUS</a>
+
+
 
  
 

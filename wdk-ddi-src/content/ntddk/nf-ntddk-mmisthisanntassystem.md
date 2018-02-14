@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e9daafb1-16ec-4ffe-b863-6f07c4b2a9b7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: MmIsThisAnNtAsSystem, MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture], kernel.mmisthisanntassystem, k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, ntddk/MmIsThisAnNtAsSystem
+ms.keywords: k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture], MmIsThisAnNtAsSystem, kernel.mmisthisanntassystem, ntddk/MmIsThisAnNtAsSystem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	MmIsThisAnNtAsSystem
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -80,6 +80,8 @@ Drivers can use this routine during initialization, along with <b>MmQuerySystemS
 ## See Also
 
 <a href="..\wdm\nf-wdm-mmquerysystemsize.md">MmQuerySystemSize</a>
+
+
 
  
 

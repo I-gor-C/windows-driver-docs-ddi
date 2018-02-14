@@ -40,7 +40,7 @@ apiname:
 -	PPARALLEL_READ
 product: Windows
 targetos: Windows
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+req.typenames: "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 
@@ -134,7 +134,11 @@ The PPARALLEL_READ callback runs in the caller's thread at the IRQL of the calle
 
 <a href="..\parallel\nc-parallel-pparallel_write.md">PPARALLEL_WRITE</a>
 
+
+
 <a href="..\parallel\ni-parallel-ioctl_internal_lock_port.md">IOCTL_INTERNAL_LOCK_PORT</a>
+
+
 
  
 

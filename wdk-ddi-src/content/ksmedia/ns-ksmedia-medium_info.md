@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 1dd7415d-bfbc-4dea-bac9-bc5b8531a47f
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: stream.medium_info, ksmedia/PMEDIUM_INFO, PMEDIUM_INFO structure pointer [Streaming Media Devices], PMEDIUM_INFO, *PMEDIUM_INFO, vidcapstruct_f83c29e1-51a8-4784-a785-4e5dc9956634.xml, MEDIUM_INFO, MEDIUM_INFO structure [Streaming Media Devices], ksmedia/MEDIUM_INFO
+ms.keywords: PMEDIUM_INFO, ksmedia/MEDIUM_INFO, vidcapstruct_f83c29e1-51a8-4784-a785-4e5dc9956634.xml, stream.medium_info, ksmedia/PMEDIUM_INFO, PMEDIUM_INFO structure pointer [Streaming Media Devices], *PMEDIUM_INFO, MEDIUM_INFO, MEDIUM_INFO structure [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -65,6 +65,7 @@ Specifies if media is present in the external device. <b>TRUE</b> if media is lo
 `MediaType`
 
 Indicates the type of the media loaded in an external device.
+
 <table>
 <tr>
 <th>Flag</th>

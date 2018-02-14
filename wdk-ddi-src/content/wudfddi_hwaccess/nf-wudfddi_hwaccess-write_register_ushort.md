@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F41E7DD6-336C-477D-87AD-0151A523DD0A
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi_hwaccess/WRITE_REGISTER_USHORT, wdf.write_register_ushort, WRITE_REGISTER_USHORT function, umdf.write_register_ushort, WRITE_REGISTER_USHORT
+ms.keywords: WRITE_REGISTER_USHORT function, WRITE_REGISTER_USHORT, umdf.write_register_ushort, wdf.write_register_ushort, wudfddi_hwaccess/WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

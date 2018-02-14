@@ -80,6 +80,8 @@ The <b>Information</b> field is set to the size, in bytes, of the returned infor
 
 <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 4032ec5c-c98a-44f9-9c74-dc5ada308d33
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: ksmedia/PDEVCAPS, tagDEVCAPS, *PDEVCAPS, PDEVCAPS, DEVCAPS, vidcapstruct_61cce92e-4f74-48ff-ae84-72579136a64f.xml, stream.devcaps, DEVCAPS structure [Streaming Media Devices], PDEVCAPS structure pointer [Streaming Media Devices], ksmedia/DEVCAPS
+ms.keywords: DEVCAPS structure [Streaming Media Devices], *PDEVCAPS, vidcapstruct_61cce92e-4f74-48ff-ae84-72579136a64f.xml, tagDEVCAPS, PDEVCAPS structure pointer [Streaming Media Devices], DEVCAPS, ksmedia/PDEVCAPS, ksmedia/DEVCAPS, stream.devcaps, PDEVCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -117,6 +117,7 @@ Specifies if the external device can read to a control track (nontimecode) targe
 `DeviceType`
 
 Specifies the type of the external device. See Remarks.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -211,6 +212,7 @@ Specifies the external device's preroll time in the current time format.
 `SeekType`
 
 Specifies the type of seeking the external device is capable of. For example:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -288,7 +290,11 @@ The <b>DeviceType</b> member can be used by an application to detect the device 
 
 <a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a>
 
+
+
 <a href="..\ksmedia\ns-ksmedia-ksproperty_extdevice_s.md">KSPROPERTY_EXTDEVICE_S</a>
+
+
 
  
 

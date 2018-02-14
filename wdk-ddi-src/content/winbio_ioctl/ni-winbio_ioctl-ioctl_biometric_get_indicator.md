@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_BIOMETRIC_GET_INDICATOR
 product: Windows
 targetos: Windows
-req.typenames: "*PBMP_IMAGE_INFO, BMP_IMAGE_INFO"
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -72,6 +72,7 @@ The smallest valid output buffer size is the size of DWORD.  If the driver recei
 Indicates whether the DeviceIoControl call to the driver completed and the OUT payload is valid.
 
 The <b>Status</b> member is set to one of the values in the following table.
+
 <table>
 <tr>
 <th>Status value</th>

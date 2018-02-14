@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 08960797-4846-46D4-8DD9-3A935EAD7D48
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/MmAllocateContiguousNodeMemory, MmAllocateContiguousNodeMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousnodememory, MmAllocateContiguousNodeMemory
+ms.keywords: kernel.mmallocatecontiguousnodememory, wdm/MmAllocateContiguousNodeMemory, MmAllocateContiguousNodeMemory routine [Kernel-Mode Driver Architecture], MmAllocateContiguousNodeMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,7 @@ The physical address multiple that the allocated buffer must not cross. A physic
 `Protect`
 
 Flag bits that specify the protection to use for the allocated memory. The caller must set one (but not both) of the following flag bits in the <i>Protect</i> parameter.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -95,9 +96,11 @@ Flag bits that specify the protection to use for the allocated memory. The calle
 <td>PAGE_EXECUTE_READWRITE</td>
 <td>Allocate read/write memory that is executable. This flag bit should be set only if the caller requires the ability to execute instructions in the allocated memory.</td>
 </tr>
-</table> 
+</table>
+ 
 
 In addition, the caller can set one (but not both) of the following optional flag bits in the <i>Protect</i> parameter.
+
 <table>
 <tr>
 <th>Flag bit</th>
@@ -111,7 +114,8 @@ In addition, the caller can set one (but not both) of the following optional fla
 <td>PAGE_WRITECOMBINE</td>
 <td>Allocate write-combined memory. This flag bit is similar in effect to calling <b>MmAllocateContiguousMemorySpecifyCache</b> with <i>CacheType</i> set to <b>MmWriteCombined</b>.</td>
 </tr>
-</table> 
+</table>
+ 
 
 If neither PAGE_NOCACHE nor PAGE_WRITECOMBINE is specified, the allocated memory is fully cached. In this case, the effect is similar to calling <b>MmAllocateContiguousMemorySpecifyCache</b> with <i>CacheType</i> set to <b>MmCached</b>.
 
@@ -139,7 +143,9 @@ Memory allocated by <b>MmAllocateContiguousNodeMemory</b> must be freed when the
 <b>MmAllocateContiguousNodeMemory</b> is similar to the <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a> routine. Unlike <b>MmAllocateContiguousMemorySpecifyCacheNode</b>, <b>MmAllocateContiguousNodeMemory</b> can be used to allocate no-execute (NX) memory. As a best practice, a driver should allocate NX memory unless the driver explicitly requires the ability to execute instructions in the allocated memory. By allocating NX memory, a driver improves security by preventing malicious software from executing instructions in this memory. Memory allocated by the <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>, <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>, and <b>MmAllocateContiguousMemorySpecifyCacheNode</b> routines is always executable.
 
 If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter, the physical address range of the allocated memory block will not cross an address boundary that is an integer multiple of this value. A driver should set this parameter to zero unless a nonzero value is required to work around a hardware limitation. For example, if a device cannot transfer data across 16-megabyte physical boundaries, the driver should specify a value of 0x1000000 for this parameter to ensure that the addresses that the device sees do not wrap around at a 16-megabyte boundary.
-<div class="alert"><b>Note</b>  Memory that <b>MmAllocateContiguousNodeMemory</b> allocates is uninitialized. A kernel-mode driver must first zero this memory if it is going to make it visible to user-mode software (to avoid leaking potentially privileged contents).</div><div> </div>
+
+<div class="alert"><b>Note</b>  Memory that <b>MmAllocateContiguousNodeMemory</b> allocates is uninitialized. A kernel-mode driver must first zero this memory if it is going to make it visible to user-mode software (to avoid leaking potentially privileged contents).</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -155,13 +161,23 @@ If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter,
 
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
 
-<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
+
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a>
+
+
 
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a>
+
+
+<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_HID_GET_REPORT_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+req.typenames: "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
 ---
 
 # IOCTL_HID_GET_REPORT_DESCRIPTOR IOCTL
@@ -71,6 +71,7 @@ The size of the report descriptor.
 
 ### Status Block
 HID minidrivers that carry out the I/O to the device set the following fields of <b>Irp-&gt;IoStatus</b>:
+
 <ul>
 <li>
 <b>Information</b> is set to the number of bytes transferred from the device.
@@ -80,7 +81,8 @@ HID minidrivers that carry out the I/O to the device set the following fields of
 <b>Status</b> is set to STATUS_SUCCESS if the transfer completed without error. Otherwise, it is set to an appropriate NTSTATUS error code.
 
 </li>
-</ul>HID minidrivers that call other drivers with this IOCTL to carry out the I/O to their device, should ensure that the <b>Information</b> field of the status block is correct and not change the contents of the <b>Status</b> field.
+</ul>
+HID minidrivers that call other drivers with this IOCTL to carry out the I/O to their device, should ensure that the <b>Information</b> field of the status block is correct and not change the contents of the <b>Status</b> field.
 
 
 ## Requirements
@@ -92,7 +94,11 @@ HID minidrivers that carry out the I/O to the device set the following fields of
 
 <a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
 
+
+
 <a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
+
+
 
  
 

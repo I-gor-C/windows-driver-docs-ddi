@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: F75E182D-90FA-4597-95E0-60A6326CF68D
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: printerextension/IPrinterPropertyBag::GetBytes, IPrinterPropertyBag interface [Print Devices], GetBytes method, GetBytes, GetBytes method [Print Devices], IPrinterPropertyBag interface, print.iprinterpropertybag_getbytes, IPrinterPropertyBag::GetBytes, GetBytes method [Print Devices], IPrinterPropertyBag
+ms.keywords: print.iprinterpropertybag_getbytes, IPrinterPropertyBag::GetBytes, printerextension/IPrinterPropertyBag::GetBytes, IPrinterPropertyBag, IPrinterPropertyBag interface [Print Devices], GetBytes method, GetBytes method [Print Devices], IPrinterPropertyBag interface, GetBytes, GetBytes method [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -90,6 +90,8 @@ This method returns an <b>HRESULT</b> value.
 ## See Also
 
 <a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+
+
 
  
 

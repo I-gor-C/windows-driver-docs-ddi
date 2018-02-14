@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 3d387fe9-a7cc-4034-b31e-ba1359db2ae1
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddndis/PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO, _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, virtual_machine_queue_ref_deaf4f73-294d-4e7b-8c94-65d05b461cfe.xml, netvista.ndis_receive_filter_field_parameters
+ms.keywords: PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, netvista.ndis_receive_filter_field_parameters, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO, virtual_machine_queue_ref_deaf4f73-294d-4e7b-8c94-65d05b461cfe.xml, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2, ntddndis/PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 product: Windows
 targetos: Windows
-req.typenames: NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
+req.typenames: "*PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure
@@ -126,6 +126,7 @@ A bitwise OR of flags. The following flags are valid for the
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">
      OID_RECEIVE_FILTER_SET_FILTER</a> OID.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -176,6 +177,7 @@ The
 
 To indicate the version of the <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure, the driver sets the 
      <b>Revision</b> member to one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -241,6 +243,7 @@ The <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure specifies the filter t
     NDIS_RECEIVE_FILTER_PARAMETERS</a> structure.
 
 The following table describes how the network adapter uses the <b>ReceiveFilterTest</b>, <b>FieldValue</b>, and <b>ResultValue</b> members to perform a filter test on the specified header field value of a received packet.
+
 <table>
 <tr>
 <th><b>ReceiveFilterTest</b> value</th>
@@ -258,9 +261,14 @@ The following table describes how the network adapter uses the <b>ReceiveFilterT
 <td>NdisReceiveFilterTestNotEqual</td>
 <td>(&lt;<i>header field value</i>&gt; != <b>FieldValue</b>)</td>
 </tr>
-</table> 
-<div class="alert"><b>Note</b>  All the multibyte field and result values, such as the <b>FieldShortValue</b> and <b>ResultLong64Value</b> members, must be specified in network byte order (<i>big-endian</i>) format.</div><div> </div>If the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is no VLAN identifier filter that was configured by an OID set request of
+</table>
+ 
+
+<div class="alert"><b>Note</b>  All the multibyte field and result values, such as the <b>FieldShortValue</b> and <b>ResultLong64Value</b> members, must be specified in network byte order (<i>big-endian</i>) format.</div>
+<div> </div>
+If the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is no VLAN identifier filter that was configured by an OID set request of
        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>, the miniport driver must do one of the following:
+
 <ul>
 <li>
 For NDIS 6.20, the miniport driver must return a failed status for the
@@ -282,8 +290,10 @@ The miniport driver  must configure the network adapter  to inspect and filter t
 </li>
 </ul>
 </li>
-</ul>Starting with NDIS 6.30, if the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is a non-zero VLAN identifier filter that was configured by an OID set request of
+</ul>
+Starting with NDIS 6.30, if the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is a non-zero VLAN identifier filter that was configured by an OID set request of
        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>, the miniport driver must do the following:
+
 <ul>
 <li>
 The miniport driver must configure the network adapter  to inspect and filter the specified MAC address and VLAN identifier fields. 
@@ -301,28 +311,50 @@ If a VLAN tag is present in the received packet, the network adapter must remove
 
 ## See Also
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_receive_filter_test.md">NDIS_RECEIVE_FILTER_TEST</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_frame_header.md">NDIS_FRAME_HEADER</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_udp_header_field.md">NDIS_UDP_HEADER_FIELD</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<a href="..\ntddndis\ne-ntddndis-_ndis_arp_header_field.md">NDIS_ARP_HEADER_FIELD</a>
-
-<a href="..\ntddndis\ne-ntddndis-_ndis_mac_packet_type.md">NDIS_MAC_PACKET_TYPE</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
    NDIS_RECEIVE_FILTER_PARAMETERS</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_ipv4_header_field.md">NDIS_IPV4_HEADER_FIELD</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_frame_header.md">NDIS_FRAME_HEADER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+
+
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_ipv6_header_field.md">NDIS_IPV6_HEADER_FIELD</a>
 
+
+
 <a href="..\ntddndis\ne-ntddndis-_ndis_mac_header_field.md">NDIS_MAC_HEADER_FIELD</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_receive_filter_test.md">NDIS_RECEIVE_FILTER_TEST</a>
+
+
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_udp_header_field.md">NDIS_UDP_HEADER_FIELD</a>
+
+
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_mac_packet_type.md">NDIS_MAC_PACKET_TYPE</a>
+
+
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_arp_header_field.md">NDIS_ARP_HEADER_FIELD</a>
+
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_ipv4_header_field.md">NDIS_IPV4_HEADER_FIELD</a>
+
+
 
  
 

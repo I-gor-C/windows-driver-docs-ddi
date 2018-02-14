@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 08452b54-158f-4dca-86d8-34cc3f96bc62
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl_3d11665a-ec78-4742-8195-2798601814e9.xml, AddBreakpoint method [Windows Debugging], AddBreakpoint method [Windows Debugging], IDebugControl interface, IDebugControl2::AddBreakpoint, AddBreakpoint method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::AddBreakpoint, dbgeng/IDebugControl3::AddBreakpoint, AddBreakpoint method [Windows Debugging], IDebugControl2 interface, AddBreakpoint, IDebugControl::AddBreakpoint, dbgeng/IDebugControl::AddBreakpoint, IDebugControl3::AddBreakpoint, IDebugControl2 interface [Windows Debugging], AddBreakpoint method, IDebugControl interface [Windows Debugging], AddBreakpoint method, debugger.addbreakpoint, IDebugControl3 interface [Windows Debugging], AddBreakpoint method, IDebugControl3
+ms.keywords: AddBreakpoint method [Windows Debugging], AddBreakpoint method [Windows Debugging], IDebugControl3 interface, IDebugControl2, IDebugControl_3d11665a-ec78-4742-8195-2798601814e9.xml, IDebugControl interface [Windows Debugging], AddBreakpoint method, AddBreakpoint method [Windows Debugging], IDebugControl2 interface, IDebugControl3, debugger.addbreakpoint, AddBreakpoint method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::AddBreakpoint, dbgeng/IDebugControl3::AddBreakpoint, IDebugControl3::AddBreakpoint, IDebugControl3 interface [Windows Debugging], AddBreakpoint method, IDebugControl, AddBreakpoint, IDebugControl2::AddBreakpoint, IDebugControl::AddBreakpoint, dbgeng/IDebugControl2::AddBreakpoint, IDebugControl2 interface [Windows Debugging], AddBreakpoint method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -64,6 +64,7 @@ HRESULT AddBreakpoint(
 `Type`
 
 Specifies the breakpoint type of the new breakpoint.  This can be either of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -129,7 +130,8 @@ The breakpoint couldn't be created with the desired ID or the value of <i>Type</
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method may also return other error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 
@@ -140,7 +142,9 @@ If <i>DesiredId</i> is not DEBUG_ANY_ID and another breakpoint already uses the 
 Breakpoints are created empty and disabled.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a> for details on configuring and enabling the breakpoint.
 
 The client is saved as the adder of the new breakpoint. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545576">GetAdder</a>. 
-<div class="alert"><b>Note</b>    Even though <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a> extends the COM interface <b>IUnknown</b>, the lifetime of the breakpoint is not controlled using the <b>IUnknown</b> interface.  Instead, the breakpoint is deleted after <a href="https://msdn.microsoft.com/library/windows/hardware/ff554487">RemoveBreakpoint</a> is called.</div><div> </div>
+
+<div class="alert"><b>Note</b>    Even though <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a> extends the COM interface <b>IUnknown</b>, the lifetime of the breakpoint is not controlled using the <b>IUnknown</b> interface.  Instead, the breakpoint is deleted after <a href="https://msdn.microsoft.com/library/windows/hardware/ff554487">RemoveBreakpoint</a> is called.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -153,17 +157,31 @@ The client is saved as the adder of the new breakpoint. See <a href="https://msd
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554487">RemoveBreakpoint</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
 
  
 

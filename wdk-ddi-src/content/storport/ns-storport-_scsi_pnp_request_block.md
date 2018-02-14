@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0627065b-62c2-4df8-973c-b4fb5811296e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "_SCSI_PNP_REQUEST_BLOCK, StorStopDevice, StorFilterResourceRequirements, storage.scsi_pnp_request_block, StorStartDevice, SCSI_PNP_REQUEST_BLOCK, structs-storport_d08ea849-f1d6-4584-b6a4-df7127f6873d.xml, SCSI_PNP_REQUEST_BLOCK structure [Storage Devices], PSCSI_PNP_REQUEST_BLOCK structure pointer [Storage Devices], StorQueryResourceRequirements, storport/SCSI_PNP_REQUEST_BLOCK, PSCSI_PNP_REQUEST_BLOCK, storport/PSCSI_PNP_REQUEST_BLOCK, *PSCSI_PNP_REQUEST_BLOCK, StorRemoveDevice, StorSupriseRemoval, StorQueryCapabilities"
+ms.keywords: StorQueryCapabilities, StorRemoveDevice, SCSI_PNP_REQUEST_BLOCK structure [Storage Devices], storport/SCSI_PNP_REQUEST_BLOCK, storage.scsi_pnp_request_block, PSCSI_PNP_REQUEST_BLOCK, _SCSI_PNP_REQUEST_BLOCK, structs-storport_d08ea849-f1d6-4584-b6a4-df7127f6873d.xml, PSCSI_PNP_REQUEST_BLOCK structure pointer [Storage Devices], StorFilterResourceRequirements, StorStopDevice, *PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK, StorSupriseRemoval, StorQueryResourceRequirements, storport/PSCSI_PNP_REQUEST_BLOCK, StorStartDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -117,6 +117,7 @@ The SCSI port or bus identifier for the request. This value is zero based.
 `PnPAction`
 
 The plug and play action to perform. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -253,11 +254,17 @@ The Storport driver calls <a href="..\storport\nc-storport-hw_buildio.md">HwStor
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
-
 <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 
+
+
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
+
+<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
+
+
 
  
 

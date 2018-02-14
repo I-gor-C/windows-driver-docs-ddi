@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2b183911-0c4d-4b67-834d-e876d22c99af
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsLsnCreate, wdm/ClfsLsnCreate, kernel.clfslsncreate, ClfsLsnCreate routine [Kernel-Mode Driver Architecture], Clfs_5eea5630-3db0-45bb-8e16-c9e69081f972.xml
+ms.keywords: ClfsLsnCreate routine [Kernel-Mode Driver Architecture], wdm/ClfsLsnCreate, ClfsLsnCreate, kernel.clfslsncreate, Clfs_5eea5630-3db0-45bb-8e16-c9e69081f972.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,9 +98,15 @@ systems.
 
 <a href="..\wdm\nf-wdm-clfslsnblockoffset.md">ClfsLsnBlockOffset</a>
 
+
+
 <a href="..\wdm\nf-wdm-clfslsncontainer.md">ClfsLsnContainer</a>
 
+
+
 <a href="..\wdm\nf-wdm-clfslsnrecordsequence.md">ClfsLsnRecordSequence</a>
+
+
 
  
 

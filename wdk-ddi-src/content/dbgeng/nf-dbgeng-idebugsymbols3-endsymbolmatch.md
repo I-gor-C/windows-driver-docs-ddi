@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 02cc9db2-173a-4d5d-a465-098391336100
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: EndSymbolMatch method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::EndSymbolMatch, IDebugSymbols interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols3::EndSymbolMatch, IDebugSymbols2::EndSymbolMatch, IDebugSymbols_1661cc8a-ad5c-4cd3-83fe-f829bd07e453.xml, IDebugSymbols::EndSymbolMatch, dbgeng/IDebugSymbols3::EndSymbolMatch, dbgeng/IDebugSymbols2::EndSymbolMatch, EndSymbolMatch, IDebugSymbols3 interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols3, debugger.endsymbolmatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], EndSymbolMatch method, EndSymbolMatch method [Windows Debugging], EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords: IDebugSymbols2 interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols interface [Windows Debugging], EndSymbolMatch method, EndSymbolMatch method [Windows Debugging], EndSymbolMatch, IDebugSymbols3, dbgeng/IDebugSymbols2::EndSymbolMatch, debugger.endsymbolmatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::EndSymbolMatch, IDebugSymbols2::EndSymbolMatch, IDebugSymbols3 interface [Windows Debugging], EndSymbolMatch method, dbgeng/IDebugSymbols::EndSymbolMatch, IDebugSymbols2, IDebugSymbols, IDebugSymbols::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols interface, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::EndSymbolMatch, IDebugSymbols_1661cc8a-ad5c-4cd3-83fe-f829bd07e453.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -67,6 +67,7 @@ Specifies the handle returned by <a href="https://msdn.microsoft.com/library/win
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,15 +101,25 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
+
+
 
  
 

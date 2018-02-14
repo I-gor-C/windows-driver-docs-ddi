@@ -7,8 +7,8 @@ old-location: ifsk\fsrtlallocatepoolwithtag.htm
 old-project: ifsk
 ms.assetid: a9ea59d1-1d51-4332-b497-7d2b7f39e686
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml, ntifs/FsRtlAllocatePoolWithTag, ifsk.fsrtlallocatepoolwithtag, FsRtlAllocatePoolWithTag routine [Installable File System Drivers], FsRtlAllocatePoolWithTag
+ms.date: 2/7/2018
+ms.keywords: FsRtlAllocatePoolWithTag routine [Installable File System Drivers], fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml, FsRtlAllocatePoolWithTag, ifsk.fsrtlallocatepoolwithtag, ntifs/FsRtlAllocatePoolWithTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -71,7 +71,9 @@ Type of pool to allocate. One of the following:
 <li><b>PagedPoolCacheAligned</b></li>
 </ul>
 
-<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div><div> </div>
+
+<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div>
+<div> </div>
 
 `NumberOfBytes`
 
@@ -107,12 +109,16 @@ Callers of <b>FsRtlAllocatePoolWithTag</b> must be running at IRQL &lt;= DISPATC
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-
 <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
- 
+
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocatePoolWithTag routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocatePoolWithTag routine%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

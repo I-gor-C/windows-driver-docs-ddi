@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 21a2fa9c-24c1-4964-aaa7-96ac86b8c078
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoTargetCreate method, kmdf.wdfiotargetcreate, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, WdfIoTargetCreate, wdf.wdfiotargetcreate, PFN_WDFIOTARGETCREATE, wdfiotarget/WdfIoTargetCreate
+ms.keywords: kmdf.wdfiotargetcreate, WdfIoTargetCreate, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, wdf.wdfiotargetcreate, wdfiotarget/WdfIoTargetCreate, WdfIoTargetCreate method, PFN_WDFIOTARGETCREATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ A pointer to a location that receives a handle to an I/O target object.
 ## Return Value
 
 <b>WdfIoTargetCreate</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -119,7 +120,8 @@ The <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_ob
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For a list of other return values that WdfIoTargetCreate can return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -139,6 +141,13 @@ If your driver provides <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_contex
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
+
+#### Examples
+
+For a code example that uses <b>WdfIoTargetCreate</b>, see <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -154,7 +163,11 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
 
+
+
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
 
  
 

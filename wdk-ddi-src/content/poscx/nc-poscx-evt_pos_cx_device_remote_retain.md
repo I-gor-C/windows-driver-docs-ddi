@@ -40,7 +40,7 @@ apiname:
 -	EvtPosCxDeviceRemoteRetain
 product: Windows
 targetos: Windows
-req.typenames: PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
+req.typenames: "*PPCFILTER_DESCRIPTOR, PCFILTER_DESCRIPTOR"
 req.product: Windows 10 or later.
 ---
 

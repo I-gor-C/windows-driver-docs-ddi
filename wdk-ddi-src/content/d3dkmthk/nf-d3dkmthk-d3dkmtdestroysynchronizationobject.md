@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 38e77d21-a386-4de8-8d1c-db48434828c6
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTDestroySynchronizationObject function [Display Devices], OpenGL_Functions_181e72ed-9dd7-4b4c-b6e6-9231a2603f20.xml, D3DKMTDestroySynchronizationObject, d3dkmthk/D3DKMTDestroySynchronizationObject, display.d3dkmtdestroysynchronizationobject
+ms.keywords: OpenGL_Functions_181e72ed-9dd7-4b4c-b6e6-9231a2603f20.xml, D3DKMTDestroySynchronizationObject, display.d3dkmtdestroysynchronizationobject, d3dkmthk/D3DKMTDestroySynchronizationObject, D3DKMTDestroySynchronizationObject function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTDestroySynchronizationObject</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -112,6 +114,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroysynchronizationobject.md">D3DKMT_DESTROYSYNCHRONIZATIONOBJECT</a>
+
+
 
  
 

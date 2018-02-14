@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 214AFAD3-B211-4D66-8CFC-58F8EB407B83
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PNDIS_WWAN_GET_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_get_slot_info_status, NDIS_WWAN_GET_SLOT_INFO, *PNDIS_WWAN_GET_SLOT_INFO, ndiswwan/NDIS_WWAN_GET_SLOT_INFO, PNDIS_WWAN_GET_SLOT_INFO, _NDIS_WWAN_GET_SLOT_INFO
+ms.keywords: PNDIS_WWAN_GET_SLOT_INFO, PNDIS_WWAN_GET_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_GET_SLOT_INFO, ndiswwan/NDIS_WWAN_GET_SLOT_INFO, _NDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_GET_SLOT_INFO, netvista.ndis_wwan_get_slot_info_status, *PNDIS_WWAN_GET_SLOT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -69,6 +69,7 @@ The header with type, revision, and size information about the <b>NDIS_WWAN_GET_
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -104,7 +105,8 @@ sizeof(NDIS_WWAN_GET_SLOT_INFO)
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
@@ -118,9 +120,13 @@ For more information about these members, see
 
 ## See Also
 
+<a href="..\wwan\ns-wwan-_wwan_get_slot_info.md">WWAN_GET_SLOT_INFO</a>
+
+
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="..\wwan\ns-wwan-_wwan_get_slot_info.md">WWAN_GET_SLOT_INFO</a>
+
 
  
 

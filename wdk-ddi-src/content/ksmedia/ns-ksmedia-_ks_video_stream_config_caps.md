@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: a8089653-a14b-4542-bf20-b1b596b1b4ea
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KS_VIDEO_STREAM_CONFIG_CAPS structure [Streaming Media Devices], ksmedia/KS_VIDEO_STREAM_CONFIG_CAPS, vidcapstruct_43cae18b-0430-4a1e-9bac-7de2e32388a6.xml, *PKS_VIDEO_STREAM_CONFIG_CAPS, PKS_VIDEO_STREAM_CONFIG_CAPS, stream.ks_video_stream_config_caps, PKS_VIDEO_STREAM_CONFIG_CAPS structure pointer [Streaming Media Devices], ksmedia/PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS, _KS_VIDEO_STREAM_CONFIG_CAPS
+ms.keywords: vidcapstruct_43cae18b-0430-4a1e-9bac-7de2e32388a6.xml, KS_VIDEO_STREAM_CONFIG_CAPS, stream.ks_video_stream_config_caps, _KS_VIDEO_STREAM_CONFIG_CAPS, ksmedia/PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS structure [Streaming Media Devices], PKS_VIDEO_STREAM_CONFIG_CAPS structure pointer [Streaming Media Devices], *PKS_VIDEO_STREAM_CONFIG_CAPS, ksmedia/KS_VIDEO_STREAM_CONFIG_CAPS, PKS_VIDEO_STREAM_CONFIG_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KS_VIDEO_STREAM_CONFIG_CAPS
 product: Windows
 targetos: Windows
-req.typenames: "*PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS"
+req.typenames: KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS
 ---
 
 # _KS_VIDEO_STREAM_CONFIG_CAPS structure
@@ -157,6 +157,7 @@ Specifies the granularity of the output bitmap height.
 `ShrinkTapsX`
 
 Specifies one of the following values to indicate how well the filter can shrink the image's width.
+
 <table>
 <tr>
 <th>Value</th>
@@ -207,6 +208,7 @@ The filter uses a higher-order (smoother) form of interpolation.
 `ShrinkTapsY`
 
 Specifies one of the following values to indicate how well the filter can shrink the image's height.
+
 <table>
 <tr>
 <th>Value</th>
@@ -257,6 +259,7 @@ The filter uses a higher-order (smoother) form of interpolation.
 `StretchTapsX`
 
 Specifies one of the following values to indicate how well the filter can stretch the image's width.
+
 <table>
 <tr>
 <th>Value</th>
@@ -307,6 +310,7 @@ The filter uses a higher-order (smoother) form of interpolation.
 `StretchTapsY`
 
 Specifies one of the following values to indicate how well the filter can stretch the image's height.
+
 <table>
 <tr>
 <th>Value</th>
@@ -374,6 +378,7 @@ It is important to understand the relationships between the members of this stru
 These values indicate that valid cropping sizes begin at <b>MinCroppingSize</b> and increase in steps in the <i>x</i>-direction by<b> CropGranularityX</b> and in the <i>y</i>-direction by <b>CropGranularityY</b>. In this case, the <i>x</i>-value can be anywhere from 160 to 320 pixels, in steps of four, and the <i>y</i>-value can be anywhere from 120 to 240 pixels in steps of eight. 
 
 In the example scenario, a few of the valid sizes are: 
+
 <ul>
 <li>
 160 × 120, 164 × 120, 168 × 120, 172 × 120, and so on. 
@@ -387,9 +392,11 @@ In the example scenario, a few of the valid sizes are:
 160 × 136, 164 × 136, 168 × 136, 172 × 136, and so on. 
 
 </li>
-</ul><b>CropAlignX</b> and <b>CropAlignY</b> indicate where the cropping rectangle can be located inside the input size rectangle. Given a 160 × 120 cropping rectangle and a value of 2 for <b>CropAlignX</b> and a value of 4 for <b>CropAlignY</b>, 
+</ul>
+<b>CropAlignX</b> and <b>CropAlignY</b> indicate where the cropping rectangle can be located inside the input size rectangle. Given a 160 × 120 cropping rectangle and a value of 2 for <b>CropAlignX</b> and a value of 4 for <b>CropAlignY</b>, 
 
 some of the valid values for the <b>rcSource</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure would be: 
+
 <ul>
 <li>
 (0, 0, 160, 120) 
@@ -407,7 +414,8 @@ some of the valid values for the <b>rcSource</b> member of the <a href="..\ksmed
 (2, 8, 162, 128) 
 
 </li>
-</ul>For a 320 × 240 cropping rectangle and the same cropping alignment values, (2, 4, 322, 244) is one example of the many valid rectangles. 
+</ul>
+For a 320 × 240 cropping rectangle and the same cropping alignment values, (2, 4, 322, 244) is one example of the many valid rectangles. 
 
 The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>CropGranularityY</b>, <b>CropAlignX</b>, and <b>CropAlignY</b> members discussed above work together to specify which values of <b>rcSource</b> are valid for the KS_VIDEOINFOHEADER structure that describes the output pin's media type. The remaining structure members (<b>MinOutputSize</b>, <b>MaxOutputSize</b>, <b>OutputGranularityX</b>, and <b>OutputGranularityY</b>) describe the <b>biWidth</b> and <b>biHeight</b> members of the <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure, which is contained in the pin's media type KS_VIDEOINFOHEADER structure.
 
@@ -418,11 +426,17 @@ The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>
 
 ## See Also
 
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+
+
+
 <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
+
+
 
 <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
 
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+
 
  
 

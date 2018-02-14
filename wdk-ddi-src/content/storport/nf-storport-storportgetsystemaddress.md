@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 28bb26bd-7259-4664-8092-6b9a917c1a91
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortGetSystemAddress, StorPortGetSystemAddress routine [Storage Devices], storage.storportgetsystemaddress, storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml, StorPortGetSystemAddress
+ms.keywords: storport/StorPortGetSystemAddress, StorPortGetSystemAddress routine [Storage Devices], storage.storportgetsystemaddress, StorPortGetSystemAddress, storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A pointer to receive the virtual address of the data buffer.
 ## Return Value
 
 StorPortGetSystemAddress returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -159,9 +160,13 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 
 ## See Also
 
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
+
 <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
 
  
 

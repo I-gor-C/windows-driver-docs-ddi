@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 7B62C0B0-F90A-41B1-B903-5C9F905F4A08
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB.spbdeviceinitconfig, spbcx/SpbDeviceInitConfig, SpbDeviceInitConfig, SpbDeviceInitConfig method [Buses]
+ms.keywords: SpbDeviceInitConfig, SPB.spbdeviceinitconfig, spbcx/SpbDeviceInitConfig, SpbDeviceInitConfig method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	SpbDeviceInitConfig
 product: Windows
 targetos: Windows
-req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.typenames: "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -67,6 +67,7 @@ A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff
 ## Return Value
 
 <b>SpbDeviceInitConfig</b> returns STATUS_SUCCESS if the call is successful.  Possible return values include the following error code.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -89,6 +90,46 @@ Cannot allocate the required system resources.
 
 This method associates the configuration information for SpbCx with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure for the device object (PDO or FDO) that is to be created. Your driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback routine should call <b>SpbDeviceInitConfig</b> before it calls the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> method to create the device object.
 
+
+#### Examples
+
+The following code example shows how to use the <b>SpbDeviceInitConfig</b> method to associate the SpbCx framework extension's configuration information with the <b>WDFDEVICE_INIT</b> structure.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>//
+// FxDeviceInit is a pointer to a WDFDEVICE_INIT structure that comes as a
+// parameter for an EvtDriverDeviceAdd handler, or from WdfPdoInitAllocate.
+//
+
+status = SpbDeviceInitConfig(FxDeviceInit);
+
+if (!NT_SUCCESS(status))
+{
+    return status;
+}
+
+// 
+// Set WDF and SpbCx device-level configuration options.
+//
+
+...
+
+//
+// Call WdfDeviceCreate
+//
+
+status = WdfDeviceCreate(&amp;FxDeviceInit,...);
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -102,11 +143,19 @@ This method associates the configuration information for SpbCx with the <a href=
 
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitallocate.md">WdfPdoInitAllocate</a>
 
+
+
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
 
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
+
 
  
 

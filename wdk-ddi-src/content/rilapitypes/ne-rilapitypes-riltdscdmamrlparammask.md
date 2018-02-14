@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d2cc4c39-b96e-4078-bfea-2e06a07e938e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_PARAM_TDSCDMAMRL_LAC, rilapitypes/RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLPARAM, rilapitypes/RIL_PARAM_TDSCDMAMRL_UARFCN, rilapitypes/RIL_PARAM_TDSCDMAMRL_RSCP, RIL_PARAM_TDSCDMAMRL_PATHLOSS, RIL_PARAM_TDSCDMAMRL_CELLPARAM, RIL_PARAM_TDSCDMAMRL_MNC, rilapitypes/RIL_PARAM_TDSCDMAMRL_PATHLOSS, RILTDSCDMAMRLPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_TDSCDMAMRL_MCC, RIL_PARAM_TDSCDMAMRL_UARFCN, rilapitypes/RIL_PARAM_TDSCDMAMRL_ALL, rilapitypes/RIL_PARAM_TDSCDMAMRL_LAC, rilapitypes/RIL_PARAM_TDSCDMAMRL_MNC, RIL_PARAM_TDSCDMAMRL_CELLID, RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLID, rilapitypes/RIL_PARAM_TDSCDMAMRL_MCC, netvista.riltdscdmamrlparammask, RIL_PARAM_TDSCDMAMRL_RSCP, RIL_PARAM_TDSCDMAMRL_ALL
+ms.keywords: RILTDSCDMAMRLPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLPARAM, RIL_PARAM_TDSCDMAMRL_UARFCN, RIL_PARAM_TDSCDMAMRL_ALL, rilapitypes/RIL_PARAM_TDSCDMAMRL_RSCP, rilapitypes/RIL_PARAM_TDSCDMAMRL_PATHLOSS, netvista.riltdscdmamrlparammask, RIL_PARAM_TDSCDMAMRL_CELLPARAM, RIL_PARAM_TDSCDMAMRL_MCC, rilapitypes/RIL_PARAM_TDSCDMAMRL_UARFCN, RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_ALL, rilapitypes/RIL_PARAM_TDSCDMAMRL_LAC, rilapitypes/RIL_PARAM_TDSCDMAMRL_MNC, RIL_PARAM_TDSCDMAMRL_CELLID, RIL_PARAM_TDSCDMAMRL_RSCP, rilapitypes/RILTDSCDMAMRLPARAMMASK, RIL_PARAM_TDSCDMAMRL_PATHLOSS, RIL_PARAM_TDSCDMAMRL_MNC, rilapitypes/RIL_PARAM_TDSCDMAMRL_MCC, RIL_PARAM_TDSCDMAMRL_LAC, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -118,6 +118,7 @@ enum RILTDSCDMAMRLPARAMMASK {
         Networks will vary, but the following table summarizes which items are returned for typical TD-SCDMA networks. 
 
 <b>Serving network</b>
+
 <table>
 <tr>
 <th>Entry</th>
@@ -287,9 +288,11 @@ Path loss of serving cell in dBs
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>TD-SCDMA neighbors</b> (subject to availability from network)
+
 <table>
 <tr>
 <th>Entry</th>
@@ -469,6 +472,8 @@ No
     ## See Also
 
         <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+
+
 
  
 

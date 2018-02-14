@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: 69de1551-e41f-4d18-89db-28d190676922
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: HwNRegisterClient function, HwNRegisterClient, gpiobtn.hwnregisterclient, hwnclx/HwNRegisterClient
+ms.keywords: gpiobtn.hwnregisterclient, hwnclx/HwNRegisterClient, HwNRegisterClient function, HwNRegisterClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	HwNRegisterClient
 product: Windows
 targetos: Windows
-req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
+req.typenames: "*PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX"
 ---
 
 
@@ -89,9 +89,13 @@ Returns STATUS_SUCCESS if function succeeds. Returns STATUS_INVALID_PARAMETER if
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
+
+
 <a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: e8f91713-ea1d-4262-bc0b-dd4e39d1c2c3
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugClient5::OutputIdentityWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], OutputIdentityWide method, OutputIdentityWide method [Windows Debugging], IDebugClient5 interface, debugger.outputidentitywide, OutputIdentityWide method [Windows Debugging], OutputIdentityWide, IDebugClient5::OutputIdentityWide
+ms.keywords: OutputIdentityWide, IDebugClient5, OutputIdentityWide method [Windows Debugging], IDebugClient5 interface, debugger.outputidentitywide, OutputIdentityWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], OutputIdentityWide method, IDebugClient5::OutputIdentityWide, dbgeng/IDebugClient5::OutputIdentityWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -75,6 +75,7 @@ Specifies a format string similar to the <b>printf</b> format string.  However, 
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -110,7 +111,11 @@ For more information about client objects, see <a href="https://msdn.microsoft.c
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546831">GetIdentity</a>
+
+
 
  
 

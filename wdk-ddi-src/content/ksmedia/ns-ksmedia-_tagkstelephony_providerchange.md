@@ -7,8 +7,8 @@ old-location: audio\kstelephony_providerchange.htm
 old-project: audio
 ms.assetid: 07928837-321C-4501-BDFF-4611BF6912F6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: ksmedia/PKSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE, audio.kstelephony_providerchange, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices], _tagKSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, ksmedia/KSTELEPHONY_PROVIDERCHANGE
+ms.date: 2/8/2018
+ms.keywords: PKSTELEPHONY_PROVIDERCHANGE, audio.kstelephony_providerchange, *PKSTELEPHONY_PROVIDERCHANGE, ksmedia/PKSTELEPHONY_PROVIDERCHANGE, ksmedia/KSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices], KSTELEPHONY_PROVIDERCHANGE, _tagKSTELEPHONY_PROVIDERCHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	KSTELEPHONY_PROVIDERCHANGE
 product: Windows
 targetos: Windows
-req.typenames: KSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
+req.typenames: "*PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE"
 ---
 
 # _tagKSTELEPHONY_PROVIDERCHANGE structure

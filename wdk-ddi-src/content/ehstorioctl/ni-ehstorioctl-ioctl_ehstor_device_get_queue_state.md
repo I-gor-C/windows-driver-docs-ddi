@@ -57,6 +57,7 @@ None.
 
 ### Output Buffer
 The output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an <b> ACT_QUEUE_STATE</b>  structure. <b>ACT_QUEUE_STATE</b> is declared in <i>ehstorioctl.h</i> as the following.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -82,6 +83,7 @@ The length of an <b> ACT_QUEUE_STATE</b>  structure.
 
 ### Status Block
 One of the following values can be returned in the <b>Status</b> field.
+
 <table>
 <tr>
 <th>Status Value</th>
@@ -107,6 +109,8 @@ One of the following values can be returned in the <b>Status</b> field.
 ## See Also
 
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_set_queue_state.md">IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: SD
 ms.assetid: a788cd28-81a7-4b8c-b9c5-76dd2b1cd0f3
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: ntddsd/SdBusOpenInterface, sd-rtns_44707c61-dadc-4151-b06a-8df3def56ab9.xml, SD.sdbusopeninterface, SdBusOpenInterface function [Buses], SdBusOpenInterface
+ms.keywords: SdBusOpenInterface, ntddsd/SdBusOpenInterface, SdBusOpenInterface function [Buses], SD.sdbusopeninterface, sd-rtns_44707c61-dadc-4151-b06a-8df3def56ab9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,11 @@ SD card drivers must call this routine to establish communication with the bus d
 
 <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+
+
 
  
 

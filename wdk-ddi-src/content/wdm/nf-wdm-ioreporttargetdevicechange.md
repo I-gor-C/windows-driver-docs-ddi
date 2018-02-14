@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b0107cb1-4828-4ede-813e-934b929c9874
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], IoReportTargetDeviceChange, kernel.ioreporttargetdevicechange, wdm/IoReportTargetDeviceChange
+ms.keywords: IoReportTargetDeviceChange, k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], kernel.ioreporttargetdevicechange, wdm/IoReportTargetDeviceChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,6 +75,7 @@ The PnP manager fills in the <i>NotificationStructure</i>.<b>FileObject</b> fiel
 ## Return Value
 
 <b>IoReportTargetDeviceChange</b> returns STATUS_SUCCESS or an appropriate error status. Possible error status values include the following.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,9 +123,13 @@ Callers of <b>IoReportTargetDeviceChange</b> must be running at IRQL = PASSIVE_L
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
+
+
+
 <a href="..\wdm\nf-wdm-ioreporttargetdevicechangeasynchronous.md">IoReportTargetDeviceChangeAsynchronous</a>
 
-<a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
+
 
  
 

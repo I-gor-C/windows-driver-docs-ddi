@@ -40,7 +40,7 @@ apiname:
 -	SdBusCallbackRoutine
 product: Windows
 targetos: Windows
-req.typenames: "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+req.typenames: STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ---
 
 
@@ -89,6 +89,8 @@ The bus driver calls the SD card driver's callback routine whenever the card ind
 ## See Also
 
 <a href="https://msdn.microsoft.com/d407131e-5dda-4d50-b09a-0f937774eefb">SDBUS_INTERFACE_PARAMETERS</a>
+
+
 
  
 

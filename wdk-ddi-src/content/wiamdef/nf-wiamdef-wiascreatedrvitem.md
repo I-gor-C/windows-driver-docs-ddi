@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: bc91133a-ae6a-447a-8519-65fbe2929521
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasCreateDrvItem, wiasFncs_9bede31d-0ac0-4cc7-bdd5-7734e5f82dfc.xml, wiasCreateDrvItem function [Imaging Devices], wiamdef/wiasCreateDrvItem, image.wiascreatedrvitem
+ms.keywords: wiasFncs_9bede31d-0ac0-4cc7-bdd5-7734e5f82dfc.xml, image.wiascreatedrvitem, wiamdef/wiasCreateDrvItem, wiasCreateDrvItem, wiasCreateDrvItem function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasCreateDrvItem
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -113,6 +113,8 @@ This function creates and initializes an <a href="https://msdn.microsoft.com/1be
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiascreatechildappitem.md">wiasCreateChildAppItem</a>
+
+
 
  
 

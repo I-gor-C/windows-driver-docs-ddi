@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 77ad073e-5dac-4d89-869e-547e1aec25da
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: Clfs_e258803f-9e95-4601-9b4e-2d775836864b.xml, ClfsLsnGreater, kernel.clfslsngreater, ClfsLsnGreater routine [Kernel-Mode Driver Architecture], wdm/ClfsLsnGreater
+ms.keywords: ClfsLsnGreater routine [Kernel-Mode Driver Architecture], ClfsLsnGreater, kernel.clfslsngreater, wdm/ClfsLsnGreater, Clfs_e258803f-9e95-4601-9b4e-2d775836864b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,9 +95,15 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 <a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>
 
-<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+
 
 <a href="..\wdm\nf-wdm-clfslsnnull.md">ClfsLsnNull</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+
+
 
  
 

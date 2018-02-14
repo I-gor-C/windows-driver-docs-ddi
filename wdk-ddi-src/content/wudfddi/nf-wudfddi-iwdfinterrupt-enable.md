@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 605C58C2-9A4F-4185-BB5C-95C9F5180C05
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFInterrupt interface, Enable method, IWDFInterrupt, Enable, IWDFInterrupt::Enable, umdf.iwdfinterrupt_enable, wdf.iwdfinterrupt_enable, Enable method, IWDFInterrupt interface, Enable method, wudfddi/IWDFInterrupt::Enable
+ms.keywords: IWDFInterrupt, Enable method, Enable method, IWDFInterrupt interface, IWDFInterrupt interface, Enable method, IWDFInterrupt::Enable, wudfddi/IWDFInterrupt::Enable, umdf.iwdfinterrupt_enable, wdf.iwdfinterrupt_enable, Enable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -72,6 +72,22 @@ Most UMDF drivers do not need to call <b>IWDFInterrupt::Enable</b>, because the 
 
 For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
 
+
+#### Examples
+
+The following code example enables the device interrupt that is associated with a specified interrupt object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>pIWdfInterrupt-&gt;Enable();</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -86,7 +102,11 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
 
+
+
 <a href="https://msdn.microsoft.com/D87C868D-9538-4752-AEBD-2A15E53628CF">IWDFInterrupt::Disable</a>
+
+
 
  
 

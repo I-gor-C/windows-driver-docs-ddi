@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6B2B0A88-9F63-4A68-894B-38424FBE161E
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: dot11wdi/NdisMDeregisterWdiMiniportDriver, netvista.ndismderegisterwdiminiportdriver, NdisMDeregisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista], NdisMDeregisterWdiMiniportDriver
+ms.keywords: NdisMDeregisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista], dot11wdi/NdisMDeregisterWdiMiniportDriver, netvista.ndismderegisterwdiminiportdriver, NdisMDeregisterWdiMiniportDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,6 +80,8 @@ This function does not return a value.
 ## See Also
 
 <a href="..\dot11wdi\nf-dot11wdi-ndismregisterwdiminiportdriver.md">NdisMRegisterWdiMiniportDriver</a>
+
+
 
  
 

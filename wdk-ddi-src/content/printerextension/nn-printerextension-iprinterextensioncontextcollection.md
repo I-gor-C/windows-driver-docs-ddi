@@ -54,6 +54,7 @@ Exposes a collection of <a href="..\printerextension\nn-printerextension-iprinte
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrinterExtensionContextCollection.get_Count](nf-printerextension-iprinterextensioncontextcollection-get_count.md) | Gets a count of the number of IPrinterExtensionContext objects in the collection. |
 | [printerextension.IPrinterExtensionContextCollection.GetAt](nf-printerextension-iprinterextensioncontextcollection-getat.md) | Gets a pointer to an IPrinterExtensionContext object. |
 
 ## Remarks
@@ -69,11 +70,17 @@ Exposes a collection of <a href="..\printerextension\nn-printerextension-iprinte
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+<a href="https://msdn.microsoft.com/947063C6-563A-4BB7-918E-479941B4583F">IPrinterExtensionEvent::OnPrinterQueuesEnumerated</a>
+
+
 
 <a href="https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</a>
 
-<a href="https://msdn.microsoft.com/947063C6-563A-4BB7-918E-479941B4583F">IPrinterExtensionEvent::OnPrinterQueuesEnumerated</a>
+
+
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+
+
 
  
 

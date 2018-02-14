@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3ccbbf07-7d8d-423a-b50d-d202e1cb7ab2
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsFreeEventList function [Streaming Media Devices], stream.ksfreeeventlist, ksfunc_b9315995-1d55-4edc-97b4-4fb6ad5631a2.xml, KsFreeEventList, ks/KsFreeEventList
+ms.keywords: ksfunc_b9315995-1d55-4edc-97b4-4fb6ad5631a2.xml, ks/KsFreeEventList, stream.ksfreeeventlist, KsFreeEventList function [Streaming Media Devices], KsFreeEventList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,8 @@ The <b>KsFreeEventList</b> function calls the remove handler, and then it calls 
 ## See Also
 
 <a href="..\ks\nf-ks-ksdiscardevent.md">KsDiscardEvent</a>
+
+
 
  
 

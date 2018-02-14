@@ -1,6 +1,6 @@
 ---
 UID: NF:storport.StorPortWritePortUchar
-title: StorPortWritePortUchar function
+title: StorPortWritePortUchar macro
 author: windows-driver-content
 description: The StorPortWritePortUchar routine writes a value to a specified register address.
 old-location: storage\storportwriteportuchar.htm
@@ -8,10 +8,10 @@ old-project: storage
 ms.assetid: 421bd075-e919-4389-af38-e0dd686f7c05
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_602c6d78-179c-4eaa-8131-ec2be13b2050.xml, StorPortWritePortUchar, storport/StorPortWritePortUchar, StorPortWritePortUchar routine [Storage Devices], storage.storportwriteportuchar
+ms.keywords: StorPortWritePortUchar routine [Storage Devices], storage.storportwriteportuchar, StorPortWritePortUchar, storprt_602c6d78-179c-4eaa-8131-ec2be13b2050.xml, storport/StorPortWritePortUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -63,15 +63,15 @@ STORPORT_API VOID StorPortWritePortUchar(
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension.
+
 
 `Port`
 
-Contains the address of the port to be written to.
+
 
 `Value`
 
-Contains the value to be written.
+
 
 
 ## Return Value
@@ -93,7 +93,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportuchar.md">Scsi
 
 <a href="..\storport\nf-storport-storportwriteportbufferuchar.md">StorPortWritePortBufferUchar</a>
 
+
+
 <a href="..\srb\nf-srb-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>
+
+
 
  
 

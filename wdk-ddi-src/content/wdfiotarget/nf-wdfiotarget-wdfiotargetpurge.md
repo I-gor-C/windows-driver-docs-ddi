@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: C79492C5-3872-4ED9-9AD7-ABE5C5732D41
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoTargetPurge method, kmdf.wdfiotargetpurge, wdfiotarget/WdfIoTargetPurge, WdfIoTargetPurge, wdf.wdfiotargetpurge
+ms.keywords: wdfiotarget/WdfIoTargetPurge, kmdf.wdfiotargetpurge, WdfIoTargetPurge method, WdfIoTargetPurge, wdf.wdfiotargetpurge
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -108,6 +108,37 @@ For more information about I/O target states, see <a href="https://msdn.microsof
 
 For more information about I/O targets, see <a href="https://msdn.microsoft.com/77fd1b64-c3a9-4e12-ac69-0e3725695795">Using I/O Targets</a>.
 
+
+#### Examples
+
+The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a> callback function can call <b>WdfIoTargetPurge</b>, if the driver uses a continuous reader for a USB pipe.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+MyEvtDeviceD0Exit(
+    IN  WDFDEVICE Device,
+    IN  WDF_POWER_DEVICE_STATE TargetState
+)
+{
+    PDEVICE_CONTEXT  pDeviceContext;
+    pDeviceContext = GetMyDeviceContext(Device);
+
+    WdfIoTargetPurge(
+                    WdfUsbTargetPipeGetIoTarget(pDeviceContext-&gt;InterruptPipe),
+                    WdfIoTargetPurgeIoAndWait
+                    );
+
+    return STATUS_SUCCESS;
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -121,15 +152,25 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
+
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
 
+
+
 <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_purge_io_action.md">WDF_IO_TARGET_PURGE_IO_ACTION</a>
+
+
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
+
+
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
+
 
  
 

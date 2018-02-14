@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: cb1fc590-3d3a-4b06-b467-28c3adb43706
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFMEMORYCOPYTOBUFFER, wdf.wdfmemorycopytobuffer, WdfMemoryCopyToBuffer method, DFMemoryObjectRef_8668c3aa-f5f0-4a1a-9290-27cf78fbcd24.xml, WdfMemoryCopyToBuffer, kmdf.wdfmemorycopytobuffer, wdfmemory/WdfMemoryCopyToBuffer
+ms.keywords: WdfMemoryCopyToBuffer, DFMemoryObjectRef_8668c3aa-f5f0-4a1a-9290-27cf78fbcd24.xml, wdfmemory/WdfMemoryCopyToBuffer, wdf.wdfmemorycopytobuffer, WdfMemoryCopyToBuffer method, kmdf.wdfmemorycopytobuffer, PFN_WDFMEMORYCOPYTOBUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ The number of bytes to copy from the source buffer to the destination buffer. Th
 ## Return Value
 
 <b>WdfMemoryCopyToBuffer</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,7 +114,8 @@ The byte offset that the <i>SourceOffset</i> parameter specified was too large, 
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -126,6 +128,40 @@ The framework does not allow the driver to copy more bytes than the source buffe
 For more information about framework memory objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
 
 If the source or destination buffer was allocated from the pageable memory pool, the <b>WdfMemoryCopyToBuffer</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at any IRQL.
+
+
+#### Examples
+
+The following code example allocates a new buffer and copies the contents of a memory object's buffer into the new buffer.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PVOID  pOutputBuffer = NULL;
+NTSTATUS  status = STATUS_SUCCESS;
+
+pOutputBuffer = ExAllocatePoolWithTag(
+                                      NonPagedPool,
+                                      MY_BUFFER_LENGTH,
+                                      MY_POOL_TAG
+                                      );
+if (pOutputBuffer != NULL){
+    status = WdfMemoryCopyToBuffer(
+                                   outputMemoryHandle,
+                                   0,
+                                   pOutputBuffer,
+                                   MY_BUFFER_LENGTH
+                                   );
+}
+else{
+    status = STATUS_INSUFFICIENT_RESOURCES;
+}</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -141,6 +177,8 @@ If the source or destination buffer was allocated from the pageable memory pool,
 ## See Also
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycopyfrombuffer.md">WdfMemoryCopyFromBuffer</a>
+
+
 
  
 

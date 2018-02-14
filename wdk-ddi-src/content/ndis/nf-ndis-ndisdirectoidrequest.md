@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 771e5761-beea-4a31-9ebe-d65e9157f1f4
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisDirectOidRequest, ndis/NdisDirectOidRequest, NdisDirectOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_direct_ref_3a98c424-2d24-4841-87a7-e782d4e6c79d.xml, netvista.ndisdirectoidrequest
+ms.keywords: NdisDirectOidRequest, ndis/NdisDirectOidRequest, ndis_request_direct_ref_3a98c424-2d24-4841-87a7-e782d4e6c79d.xml, netvista.ndisdirectoidrequest, NdisDirectOidRequest function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisDirectOidRequest
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -78,6 +78,7 @@ A pointer to an
 
 The underlying driver determines which NDIS_STATUS_<i>XXX</i> code 
      <b>NdisDirectOidRequest</b> returns, but it is usually one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -275,7 +276,9 @@ A driver that calls
 The direct OID request interface is similar to the general OID request interface. For more information
     about issuing general requests, see 
     <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>.
-<div class="alert"><b>Note</b>  Although Direct OID requests are not generally serialized, NDIS itself may still pend a request with NDIS_STATUS_PENDING and queue the request for later completion. For example, NDIS may pend and queue a Direct OID request sent to a selective suspend miniport that is currently in a low power state. Protocols and filters must be prepared to handle an NDIS_STATUS_PENDING code, even if the underlying miniport would complete the request synchronously.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Although Direct OID requests are not generally serialized, NDIS itself may still pend a request with NDIS_STATUS_PENDING and queue the request for later completion. For example, NDIS may pend and queue a Direct OID request sent to a selective suspend miniport that is currently in a low power state. Protocols and filters must be prepared to handle an NDIS_STATUS_PENDING code, even if the underlying miniport would complete the request synchronously.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -288,25 +291,41 @@ The direct OID request interface is similar to the general OID request interface
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-<a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
-   ProtocolDirectOidRequestComplete</a>
-
-<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
-
-<a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-update-sa">
    OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
+
+
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
    OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
 
+
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
    OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
 
+
+
+<a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a>
+
+
+
+<a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
+   ProtocolDirectOidRequestComplete</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: d15bf48e-132d-4f89-8f19-64f57deed500
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiamdef/wiasGetContextFromName, wiasGetContextFromName function [Imaging Devices], wiasGetContextFromName, image.wiasgetcontextfromname, wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml
+ms.keywords: image.wiasgetcontextfromname, wiasGetContextFromName, wiasGetContextFromName function [Imaging Devices], wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml, wiamdef/wiasGetContextFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasGetContextFromName
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -100,6 +100,8 @@ This function should be used by minidrivers when they need to move from one appl
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 93a1efce-5f93-4a09-aa61-ffbd3d619176
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugSymbols2::GetSourcePath, dbgeng/IDebugSymbols::GetSourcePath, IDebugSymbols_cbdf5e16-41ba-4134-b41b-81164dfc07a0.xml, IDebugSymbols3 interface [Windows Debugging], GetSourcePath method, GetSourcePath method [Windows Debugging], IDebugSymbols3 interface, GetSourcePath, dbgeng/IDebugSymbols3::GetSourcePath, GetSourcePath method [Windows Debugging], IDebugSymbols2 interface, GetSourcePath method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetSourcePath method, IDebugSymbols2::GetSourcePath, IDebugSymbols3::GetSourcePath, IDebugSymbols3, GetSourcePath method [Windows Debugging], IDebugSymbols interface, debugger.getsourcepath, IDebugSymbols::GetSourcePath, IDebugSymbols2 interface [Windows Debugging], GetSourcePath method
+ms.keywords: GetSourcePath method [Windows Debugging], IDebugSymbols3 interface, GetSourcePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetSourcePath method, dbgeng/IDebugSymbols::GetSourcePath, GetSourcePath method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2::GetSourcePath, dbgeng/IDebugSymbols2::GetSourcePath, IDebugSymbols_cbdf5e16-41ba-4134-b41b-81164dfc07a0.xml, IDebugSymbols3, GetSourcePath method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetSourcePath method, GetSourcePath, IDebugSymbols, IDebugSymbols2, IDebugSymbols3 interface [Windows Debugging], GetSourcePath method, IDebugSymbols3::GetSourcePath, dbgeng/IDebugSymbols3::GetSourcePath, debugger.getsourcepath, IDebugSymbols::GetSourcePath
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -77,6 +77,7 @@ Receives the size, in characters, of the source path.
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -121,17 +122,29 @@ For more information about manipulating the source path, see <a href="https://ms
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548367">GetSourcePathElement</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548367">GetSourcePathElement</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556781">SetSourcePath</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
+
+
 
  
 

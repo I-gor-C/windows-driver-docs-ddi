@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: eb3d8e2a-20f6-41fc-a220-de93eb83f359
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: tagWNODE_TOO_SMALL, kstruct_d_dcabaeb1-21d1-4cbe-a3ea-c6022e57e4b9.xml, WNODE_TOO_SMALL, wmistr/PWNODE_TOO_SMALL, PWNODE_TOO_SMALL structure pointer [Kernel-Mode Driver Architecture], WNODE_TOO_SMALL structure [Kernel-Mode Driver Architecture], kernel.wnode_too_small, wmistr/WNODE_TOO_SMALL, *PWNODE_TOO_SMALL, PWNODE_TOO_SMALL
+ms.keywords: kernel.wnode_too_small, WNODE_TOO_SMALL structure [Kernel-Mode Driver Architecture], tagWNODE_TOO_SMALL, *PWNODE_TOO_SMALL, WNODE_TOO_SMALL, wmistr/PWNODE_TOO_SMALL, kstruct_d_dcabaeb1-21d1-4cbe-a3ea-c6022e57e4b9.xml, PWNODE_TOO_SMALL structure pointer [Kernel-Mode Driver Architecture], PWNODE_TOO_SMALL, wmistr/WNODE_TOO_SMALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,8 @@ When the buffer for a WMI request is too small to receive all of the data to be 
 ## See Also
 
 <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
+
+
 
  
 

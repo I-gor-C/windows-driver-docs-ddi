@@ -91,6 +91,7 @@ This callback function does not return a value.
 Here is the definition of the  keyboard class service callback routine.
 
 Kbdclass uses an <a href="..\kbdmou\ni-kbdmou-ioctl_internal_keyboard_connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request to connect its class service callback to a keyboard device. In this call, the driver sets  its implementation in a <a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA</a> structure.
+
 <pre class="syntax" xml:space="preserve"><code>
 /*
 DeviceObject [in] 
@@ -112,7 +113,8 @@ VOID KeyboardClassServiceCallback(
   _In_    PKEYBOARD_INPUT_DATA InputDataEnd,
   _Inout_ PULONG               InputDataConsumed
 );
-</code></pre><b>KeyboardClassServiceCallback</b> transfers input data from the input buffer of the device to the class data queue. This routine is called by the ISR dispatch completion routine of the function driver.
+</code></pre>
+<b>KeyboardClassServiceCallback</b> transfers input data from the input buffer of the device to the class data queue. This routine is called by the ISR dispatch completion routine of the function driver.
 
 <b>KeyboardClassServiceCallback</b> can be supplemented by a filter service callback that is provided by an upper-level keyboard filter driver. A filter service callback filters the keyboard data that is transferred to the class data queue. For example, the filter service callback can delete, transform, or insert data. <a href="http://go.microsoft.com/fwlink/p/?linkid=256125">Kbfiltr</a>, the sample filter driver in code gallery, includes <b>KbFilter_ServiceCallback</b>, which is a template for a keyboard filter service callback.
 
@@ -159,11 +161,17 @@ VOID MouseClassServiceCallback(
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a>
+
+
 
 <a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a>
+
 
  
 

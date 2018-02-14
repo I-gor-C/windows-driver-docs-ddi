@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: EAFC6B53-98E9-46A4-9D45-56B0A32993B1
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceOpenDevicemapKey method, WdfDeviceOpenDevicemapKey, wdfdevice/WdfDeviceOpenDevicemapKey, wdf.wdfdeviceopendevicemapkey
+ms.keywords: WdfDeviceOpenDevicemapKey, WdfDeviceOpenDevicemapKey method, wdfdevice/WdfDeviceOpenDevicemapKey, wdf.wdfdeviceopendevicemapkey
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,6 +95,7 @@ A pointer to a location that receives a handle to the new registry-key object.  
 ## Return Value
 
 <b>WdfDeviceOpenDevicemapKey</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -145,7 +146,8 @@ The specified registry key does not exist.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For a list of other return values that the <b>WdfDeviceOpenDevicemapKey</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -175,9 +177,13 @@ For more information about the registry, hardware and software keys, and registr
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>
+
+
+
 <a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndiscopyfromnetbuffertonetbuffer, NdisCopyFromNetBufferToNetBuffer function [Network Drivers Starting with Windows Vista], NdisCopyFromNetBufferToNetBuffer, ndis/NdisCopyFromNetBufferToNetBuffer, ndis_netbuf_functions_ref_28d10afe-d78a-49ef-8c9c-f90b87d4eeb1.xml
+ms.keywords: ndis/NdisCopyFromNetBufferToNetBuffer, NdisCopyFromNetBufferToNetBuffer, NdisCopyFromNetBufferToNetBuffer function [Network Drivers Starting with Windows Vista], netvista.ndiscopyfromnetbuffertonetbuffer, ndis_netbuf_functions_ref_28d10afe-d78a-49ef-8c9c-f90b87d4eeb1.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisCopyFromNetBufferToNetBuffer
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -100,6 +100,7 @@ A pointer to the caller-supplied variable in which this function returns the num
 ## Return Value
 
 <b>NdisCopyFromNetBufferToNetBuffer</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -179,6 +180,8 @@ NDIS uses the offsets in the
 ## See Also
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 68523004-c9f5-4038-985e-702d929cdf04
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WDF_ALIGN_SIZE_UP, kmdf.wdf_align_size_up, WDF_ALIGN_SIZE_UP function, wdf.wdf_align_size_up, DFMemoryObjectRef_48452ee1-3939-48ba-a485-4d503ee052f3.xml, wdfcore/WDF_ALIGN_SIZE_UP
+ms.keywords: wdfcore/WDF_ALIGN_SIZE_UP, WDF_ALIGN_SIZE_UP function, wdf.wdf_align_size_up, kmdf.wdf_align_size_up, WDF_ALIGN_SIZE_UP, DFMemoryObjectRef_48452ee1-3939-48ba-a485-4d503ee052f3.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,28 @@ Drivers can use <b>WDF_ALIGN_SIZE_UP</b> or <a href="..\wdfcore\nf-wdfcore-wdf_a
 
 If the value of either input parameter is too large, arithmetic overflow causes <b>WDF_ALIGN_SIZE_UP</b> to return an invalid value that is smaller than <i>Length</i>. Your code should test for this condition.
 
+
+#### Examples
+
+The following code example receives a buffer size and returns the size (either the current size or the next-higher size) that aligns to a DWORD address boundary.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>bufferSizeAligned = WDF_ALIGN_SIZE_UP(bufferSize,
+                                      sizeof(DWORD));
+if (bufferSizeAligned &lt; bufferSize)
+{
+    // Buffer too large.
+    ...
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -94,6 +116,8 @@ If the value of either input parameter is too large, arithmetic overflow causes 
 ## See Also
 
 <a href="..\wdfcore\nf-wdfcore-wdf_align_size_down.md">WDF_ALIGN_SIZE_DOWN</a>
+
+
 
  
 

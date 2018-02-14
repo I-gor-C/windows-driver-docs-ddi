@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a4e6f0aa-bf96-4274-9a1d-f37dc7bd96fd
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfrequestprobeandlockuserbufferforwrite, wdf.wdfrequestprobeandlockuserbufferforwrite, DFRequestObjectRef_8a3643bf-a6b6-4e22-baa8-bfb8a5716af6.xml, wdfrequest/WdfRequestProbeAndLockUserBufferForWrite, WdfRequestProbeAndLockUserBufferForWrite, WdfRequestProbeAndLockUserBufferForWrite method, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORWRITE
+ms.keywords: WdfRequestProbeAndLockUserBufferForWrite method, DFRequestObjectRef_8a3643bf-a6b6-4e22-baa8-bfb8a5716af6.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORWRITE, wdf.wdfrequestprobeandlockuserbufferforwrite, wdfrequest/WdfRequestProbeAndLockUserBufferForWrite, WdfRequestProbeAndLockUserBufferForWrite, kmdf.wdfrequestprobeandlockuserbufferforwrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,7 @@ A pointer to a location that receives a handle to a framework memory object that
 ## Return Value
 
 <b>WdfRequestProbeAndLockUserBufferForWrite</b>  returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,7 +145,8 @@ There is insufficient memory to complete the operation.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -167,6 +169,13 @@ If <b>WdfRequestProbeAndLockUserBufferForWrite</b> returns STATUS_SUCCESS, the d
 
 For more information about <b>WdfRequestProbeAndLockUserBufferForWrite</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in Framework-Based Drivers</a>.
 
+
+#### Examples
+
+For a code example that uses <b>WdfRequestProbeAndLockUserBufferForWrite</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforread.md">WdfRequestProbeAndLockUserBufferForRead</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -181,9 +190,15 @@ For more information about <b>WdfRequestProbeAndLockUserBufferForWrite</b>, see 
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuseroutputbuffer.md">WdfRequestRetrieveUnsafeUserOutputBuffer</a>
 
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforread.md">WdfRequestProbeAndLockUserBufferForRead</a>
+
+
+
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+
+
 
  
 

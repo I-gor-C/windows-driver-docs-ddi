@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 150B1ED3-572A-4986-BED6-628ED6C54CCF
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortInitializeSpinlock, storport/StorPortInitializeSpinlock, storage.storportinitializespinlock, StorPortInitializeSpinlock routine [Storage Devices]
+ms.keywords: StorPortInitializeSpinlock routine [Storage Devices], storage.storportinitializespinlock, StorPortInitializeSpinlock, storport/StorPortInitializeSpinlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,6 +73,7 @@ Pointer to a spin lock of type <b>STOR_KSPIN_LOCK</b>, for which the caller must
 ## Return Value
 
 <b>StorPortInitializeSpinlock</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,13 +129,21 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
+<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>
 
-<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
 
-<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
+
+
+<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
+
+
 
  
 

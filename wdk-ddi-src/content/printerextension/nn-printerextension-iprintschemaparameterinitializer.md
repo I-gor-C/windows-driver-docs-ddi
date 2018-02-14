@@ -56,6 +56,8 @@ For more information about the four data types that you can use with the &lt;psf
 
 | Method | Description |
 | ---- |:---- |
+| [printerextension.IPrintSchemaParameterInitializer.get_Value](nf-printerextension-iprintschemaparameterinitializer-get_value.md) | The Value (get_Value) property gets the current value of the IPrintSchemaParameterInitializer object. |
+| [printerextension.IPrintSchemaParameterInitializer.put_Value](nf-printerextension-iprintschemaparameterinitializer-put_value.md) | The Value (get_Value) property gets the current value of the IPrintSchemaParameterInitializer object. |
 
 ## Remarks
 
@@ -72,9 +74,15 @@ For more information about the four data types that you can use with the &lt;psf
 
 <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463385.aspx">Print Schema Specification</a>
 
-<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+
 
 <a href="https://msdn.microsoft.com/E5403359-A757-4530-B17B-C80E8A45AA92">IPrintSchematicket2::GetParameterInitializer</a>
+
+
+
+<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+
+
 
  
 

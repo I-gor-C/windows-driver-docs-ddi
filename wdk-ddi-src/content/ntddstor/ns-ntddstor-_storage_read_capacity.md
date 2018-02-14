@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 891F04C5-277B-4197-942E-68ED21019950
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: STORAGE_READ_CAPACITY structure [Storage Devices], STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY, ntddstor/PSTORAGE_READ_CAPACITY, storage.storage_read_capacity, PSTORAGE_READ_CAPACITY structure pointer [Storage Devices], ntddstor/STORAGE_READ_CAPACITY, _STORAGE_READ_CAPACITY
+ms.keywords: "_STORAGE_READ_CAPACITY, ntddstor/PSTORAGE_READ_CAPACITY, storage.storage_read_capacity, STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY structure pointer [Storage Devices], PSTORAGE_READ_CAPACITY, ntddstor/STORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY structure [Storage Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -90,6 +90,8 @@ The version of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).
 ## See Also
 
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_read_capacity.md">IOCTL_STORAGE_READ_CAPACITIY</a>
+
+
 
  
 

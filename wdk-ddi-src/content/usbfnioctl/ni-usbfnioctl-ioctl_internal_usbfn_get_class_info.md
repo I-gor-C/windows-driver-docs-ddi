@@ -7,7 +7,7 @@ old-location: buses\ioctl_internal_usbfn_get_class_info.htm
 old-project: usbref
 ms.assetid: 870D7D8C-B2FE-487A-9098-C004E6C7E159
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.ioctl_internal_usbfn_get_class_info, IOCTL_INTERNAL_USBFN_GET_CLASS_INFO control code [Buses], IOCTL_INTERNAL_USBFN_GET_CLASS_INFO, usbfnioctl/IOCTL_INTERNAL_USBFN_GET_CLASS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices

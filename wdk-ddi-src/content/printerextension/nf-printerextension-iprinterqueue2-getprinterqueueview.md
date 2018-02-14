@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: C565288C-B014-4A92-9F50-1641EAA30D22
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method, printerextension/IPrinterQueue2::GetPrinterQueueView, GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, print.iprinterqueue2_getprinterqueueview, IPrinterQueue2::GetPrinterQueueView, GetPrinterQueueView, IPrinterQueue2
+ms.keywords: IPrinterQueue2, GetPrinterQueueView method [Print Devices], GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method, GetPrinterQueueView, printerextension/IPrinterQueue2::GetPrinterQueueView, print.iprinterqueue2_getprinterqueueview, IPrinterQueue2::GetPrinterQueueView
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -99,7 +99,9 @@ Otherwise, if a call to <b>GetPrinterQueueView</b> results in an error condition
 
 Only one <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a> object can be retrieved per <a href="..\printerextension\nn-printerextension-iprinterqueue2.md">IPrinterQueue2</a> object.
 However it is possible to move around the single view that you retrieve. In other words, it is possible to  change the positions of the monitored jobs by invoking <a href="https://msdn.microsoft.com/DB3C0439-EB82-4E49-8FEA-003C1B4A9EE0">IPrinterQueueView::SetViewRange</a>.
-<div class="alert"><b>Note</b>  There is work underway to implement a cap on the maximum size of the printer queue view.</div><div> </div>
+
+<div class="alert"><b>Note</b>  There is work underway to implement a cap on the maximum size of the printer queue view.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,7 +115,11 @@ However it is possible to move around the single view that you retrieve. In othe
 
 <a href="..\printerextension\nn-printerextension-iprinterqueue2.md">IPrinterQueue2</a>
 
+
+
 <a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a>
+
+
 
  
 

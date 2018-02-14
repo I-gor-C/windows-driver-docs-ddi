@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 148c463c-a18b-4f24-b3dc-af74c3de97b7
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], print.propsheetui_info_header, PPROPSHEETUI_INFO_HEADER, cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, compstui/PROPSHEETUI_INFO_HEADER, _PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER, compstui/PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices]
+ms.keywords: print.propsheetui_info_header, compstui/PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices], PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], PPROPSHEETUI_INFO_HEADER, cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, *PPROPSHEETUI_INFO_HEADER, _PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, compstui/PPROPSHEETUI_INFO_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,6 +75,7 @@ CPSUI-supplied size, in bytes, of the PROPSHEETUI_INFO_HEADER structure.
 `Flags`
 
 Optional, application-specified bit flags that modify the property sheet page's appearance. The flags listed in the following table can be used in any combination.
+
 <table>
 <tr>
 <th>Flag</th>

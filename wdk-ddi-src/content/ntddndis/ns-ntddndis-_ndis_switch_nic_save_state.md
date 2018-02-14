@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: FBC2EE79-9D36-4CA9-A7BC-9C422DE51B13
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE, netvista.ndis_switch_nic_save_state, *PNDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_SAVE_STATE
+ms.keywords: PNDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, _NDIS_SWITCH_NIC_SAVE_STATE, netvista.ndis_switch_nic_save_state
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,7 +75,9 @@ A GUID value that identifies the extensible switch extension.
 `FeatureClassId`
 
 A GUID value that contains the identifier of the feature class related to the saved data. A feature class identifier is defined by the extension to uniquely identify components of its run-time data.
-<div class="alert"><b>Note</b>  This member is optional. The extensible switch extension must set this member to 0 if the saved data has no feature class.</div><div> </div>
+
+<div class="alert"><b>Note</b>  This member is optional. The extensible switch extension must set this member to 0 if the saved data has no feature class.</div>
+<div> </div>
 
 `Flags`
 
@@ -86,6 +88,7 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 The type, revision, and size of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
 
 
 
@@ -111,7 +114,9 @@ A USHORT value that contains the offset from the start of the structure to the r
 `SaveDataSize`
 
 A USHORT value that specified the size, in bytes, of the data that is contained in the <b>SaveData</b> member.
-<div class="alert"><b>Note</b>  This value must be less than or equal to NDIS_SWITCH_NIC_SAVE_STATE_MAX_DATA_SIZE.</div><div> </div>
+
+<div class="alert"><b>Note</b>  This value must be less than or equal to NDIS_SWITCH_NIC_SAVE_STATE_MAX_DATA_SIZE.</div>
+<div> </div>
 
 `SaveDataSizeOverflow`
 
@@ -119,6 +124,7 @@ A USHORT value that specified the size, in bytes, of the data that is contained 
 
 ## Remarks
 The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure is used in the following OID requests: 
+
 <ul>
 <li>
 
@@ -144,9 +150,12 @@ The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure is used in the following OID req
 
 
 </li>
-</ul><div class="alert"><b>Note</b>  The NDIS_SWITCH_EXTENSION_FRIENDLYNAME data type is type-defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451419">IF_COUNTED_STRING</a> structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the <b>Length</b> member of this structure. If the string is null-terminated, the <b>Length</b> member must not include the terminating null character. 
+</ul>
+<div class="alert"><b>Note</b>  The NDIS_SWITCH_EXTENSION_FRIENDLYNAME data type is type-defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451419">IF_COUNTED_STRING</a> structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the <b>Length</b> member of this structure. If the string is null-terminated, the <b>Length</b> member must not include the terminating null character. 
 
-</div><div> </div>For more information on how to save or restore run-time port information, see <a href="https://msdn.microsoft.com/08A353F5-D8CB-4645-9337-8169D302F6F2">Managing Hyper-V Extensible Switch Run-Time Data</a>.
+</div>
+<div> </div>
+For more information on how to save or restore run-time port information, see <a href="https://msdn.microsoft.com/08A353F5-D8CB-4645-9337-8169D302F6F2">Managing Hyper-V Extensible Switch Run-Time Data</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -158,15 +167,27 @@ The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure is used in the following OID req
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451419">IF_COUNTED_STRING</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598268">OID_SWITCH_NIC_SAVE</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598269">OID_SWITCH_NIC_SAVE_COMPLETE</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598267">OID_SWITCH_NIC_RESTORE</a>
 
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
+
 <b></b>
+
+
 
  
 

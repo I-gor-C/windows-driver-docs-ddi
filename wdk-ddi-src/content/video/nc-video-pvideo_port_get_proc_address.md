@@ -93,6 +93,8 @@ The <b>VideoPortGetProcAddress</b> member of the <a href="..\video\ns-video-_vid
 
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: sdpnode/PSDP_NODE, _SDP_NODE, PSDP_NODE structure pointer [Bluetooth Devices], SDP_NODE, SDP_NODE structure [Bluetooth Devices], bltooth.sdp_node, sdpnode/SDP_NODE, PSDP_NODE, *PSDP_NODE, bth_structs_30367149-bffb-4ff9-a6d8-2f73c5198874.xml
+ms.keywords: "_SDP_NODE, bth_structs_30367149-bffb-4ff9-a6d8-2f73c5198874.xml, SDP_NODE structure [Bluetooth Devices], PSDP_NODE, bltooth.sdp_node, SDP_NODE, sdpnode/PSDP_NODE, sdpnode/SDP_NODE, PSDP_NODE structure pointer [Bluetooth Devices], *PSDP_NODE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -104,11 +104,17 @@ The header specifies the type of data. Driver developers can access links to pee
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
-
 <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
+
+
+
 <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
+
+
 
  
 

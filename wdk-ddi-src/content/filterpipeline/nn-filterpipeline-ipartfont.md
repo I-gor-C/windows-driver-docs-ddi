@@ -71,6 +71,8 @@ The <b>IPartFont</b> interface is the abstraction for fonts in a part.
 
 <a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
 
+
+
  
 
  

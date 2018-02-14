@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7470af45-3ebe-44d4-8066-62a69636c20e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PSCSI_PASS_THROUGH structure pointer [Storage Devices], storage.scsi_pass_through, ntddscsi/PSCSI_PASS_THROUGH, structs-scsibus_6d017ae1-d61d-49b8-bfaf-b6b15341732b.xml, *PSCSI_PASS_THROUGH, PSCSI_PASS_THROUGH, SCSI_PASS_THROUGH, _SCSI_PASS_THROUGH, ntddscsi/SCSI_PASS_THROUGH, SCSI_PASS_THROUGH structure [Storage Devices]
+ms.keywords: structs-scsibus_6d017ae1-d61d-49b8-bfaf-b6b15341732b.xml, storage.scsi_pass_through, ntddscsi/PSCSI_PASS_THROUGH, SCSI_PASS_THROUGH, PSCSI_PASS_THROUGH, ntddscsi/SCSI_PASS_THROUGH, PSCSI_PASS_THROUGH structure pointer [Storage Devices], _SCSI_PASS_THROUGH, *PSCSI_PASS_THROUGH, SCSI_PASS_THROUGH structure [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -83,11 +83,11 @@ Contains an offset from the beginning of this structure to the data buffer. The 
 
 `DataIn`
 
-####  This field must have one of three values:
+#####  This field must have one of three values:
 
 
 
-####
+#######
 
 `DataTransferLength`
 
@@ -137,13 +137,21 @@ The members of SCSI_PASS_THROUGH correspond roughly to the members of a <a href=
 
 ## See Also
 
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
+
+
+
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
+
+
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
 
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
  
 

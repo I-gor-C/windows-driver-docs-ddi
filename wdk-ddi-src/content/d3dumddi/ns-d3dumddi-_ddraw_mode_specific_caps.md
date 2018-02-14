@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 4434e2cb-af36-446b-b84e-f303ba315cd3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DDRAW_MODE_SPECIFIC_CAPS, display.ddraw_mode_specific_caps, _DDRAW_MODE_SPECIFIC_CAPS, D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices]
+ms.keywords: "_DDRAW_MODE_SPECIFIC_CAPS, D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, display.ddraw_mode_specific_caps, DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -65,6 +65,7 @@ typedef struct _DDRAW_MODE_SPECIFIC_CAPS {
 `Caps`
 
 [out] A valid bitwise OR of the following general capability bits that the driver supports.
+
 <table>
 <tr>
 <th>Capability bit</th>
@@ -145,6 +146,7 @@ The driver supports color-control settings for an overlay. For information about
 `CKeyCaps`
 
 [out] A valid bitwise OR of the following color key capability bits that the driver supports.
+
 <table>
 <tr>
 <th>Capability bit</th>
@@ -215,6 +217,7 @@ Overlaying operations that use the color key for the source with this overlay su
 `FxCaps`
 
 [out] A valid bitwise OR of the following effects capability bits that the driver supports.
+
 <table>
 <tr>
 <th>Capability bit</th>
@@ -321,9 +324,15 @@ Capabilities can change between heads of a multiple-headed graphics card and can
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
 
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
+
 
  
 

@@ -75,6 +75,8 @@ A filter uses the <b>IFixedPage</b> interface to work with fixed pages in an XPS
 
 <a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 841f3885-509a-457e-854d-e8ead657de54
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.fwpsredirecthandlecreate0, fwpsk/FwpsRedirectHandleCreate0, FwpsRedirectHandleCreate0 function [Network Drivers Starting with Windows Vista], FwpsRedirectHandleCreate0
+ms.keywords: FwpsRedirectHandleCreate0, fwpsk/FwpsRedirectHandleCreate0, netvista.fwpsredirecthandlecreate0, FwpsRedirectHandleCreate0 function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,7 @@ A pointer to the variable that receives the handle.
 
 The 
      <b>FwpsRedirectHandleCreate0</b> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -117,7 +118,6 @@ For more information about redirection, see <a href="https://docs.microsoft.com/
 Your callout driver should call <b>FwpsRedirectHandleCreate0</b> once and cache the handle so that it can reuse the handle.
 
 Before an Application Layer Enforcement (ALE) connect redirection callout can redirect connections to a local process, it must  obtain a redirect handle with the <b>FwpsRedirectHandleCreate0</b> function and put the handle in the <a href="..\fwpsk\ns-fwpsk-_fwps_connect_request0.md">FWPS_CONNECT_REQUEST0</a> structure. The callout modifies the structure in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> for the ALE connect redirect layers.
-    
 
 After a callout driver has finished using a redirect handle, it must call the <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandledestroy0.md">FwpsRedirectHandleDestroy0</a> function to destroy the handle.
 
@@ -132,11 +132,17 @@ After a callout driver has finished using a redirect handle, it must call the <a
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsredirecthandledestroy0.md">FwpsRedirectHandleDestroy0</a>
-
 <a href="..\fwpsk\ns-fwpsk-_fwps_connect_request0.md">FWPS_CONNECT_REQUEST0</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsredirecthandledestroy0.md">FwpsRedirectHandleDestroy0</a>
+
+
 
  
 

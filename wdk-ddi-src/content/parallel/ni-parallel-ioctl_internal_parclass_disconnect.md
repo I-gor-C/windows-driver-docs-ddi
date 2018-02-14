@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_INTERNAL_PARCLASS_DISCONNECT
 product: Windows
 targetos: Windows
-req.typenames: RILGBATOKEN, *LPRILGBATOKEN
+req.typenames: "*LPRILGBATOKEN, RILGBATOKEN"
 ---
 
 # IOCTL_INTERNAL_PARCLASS_DISCONNECT IOCTL
@@ -83,6 +83,8 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 ## See Also
 
 <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a>
+
+
 
  
 

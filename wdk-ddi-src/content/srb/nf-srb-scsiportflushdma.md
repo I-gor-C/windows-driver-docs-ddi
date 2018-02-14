@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9cf4286b-1ff7-4113-a2dc-d8813c633dd6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ScsiPortFlushDma, ScsiPortFlushDma routine [Storage Devices], scsiprt_3c2fc1a8-0f37-4735-a9b8-dcec220ee5bf.xml, srb/ScsiPortFlushDma, storage.scsiportflushdma
+ms.keywords: storage.scsiportflushdma, ScsiPortFlushDma, srb/ScsiPortFlushDma, scsiprt_3c2fc1a8-0f37-4735-a9b8-dcec220ee5bf.xml, ScsiPortFlushDma routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,7 +88,11 @@ Only miniport drivers of subordinate HBAs that use a system DMA controller call 
 
 <a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
+
+
 
  
 

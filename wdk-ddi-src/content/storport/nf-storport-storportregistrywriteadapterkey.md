@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: D995FB36-177A-44BF-9326-EB2820DB0962
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortRegistryWriteAdapterKey, storage.storportregistrywriteadapterkey, StorPortRegistryWriteAdapterKey routine [Storage Devices], StorPortRegistryWriteAdapterKey
+ms.keywords: StorPortRegistryWriteAdapterKey, StorPortRegistryWriteAdapterKey routine [Storage Devices], storport/StorPortRegistryWriteAdapterKey, storage.storportregistrywriteadapterkey
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,6 +79,7 @@ The name of the Value under the key.
 `ValueType`
 
 One of the following registry data types.
+
 <table>
 <tr>
 <th>Type</th>
@@ -241,6 +242,8 @@ Returns STOR_STATUS_SUCCESS when the operation is successful, otherwise the appr
 ## See Also
 
 <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+
+
 
  
 

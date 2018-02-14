@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 1722e6f6-7509-4ae1-b394-3c69f4596e6d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoResourceListGetDescriptor, WdfIoResourceListGetDescriptor method, wdf.wdfioresourcelistgetdescriptor, wdfresource/WdfIoResourceListGetDescriptor, DFResourceObjectRef_6cb56ab5-abf5-4915-a48f-a3c91d657806.xml, kmdf.wdfioresourcelistgetdescriptor, PFN_WDFIORESOURCELISTGETDESCRIPTOR
+ms.keywords: WdfIoResourceListGetDescriptor, wdf.wdfioresourcelistgetdescriptor, DFResourceObjectRef_6cb56ab5-abf5-4915-a48f-a3c91d657806.xml, kmdf.wdfioresourcelistgetdescriptor, PFN_WDFIORESOURCELISTGETDESCRIPTOR, WdfIoResourceListGetDescriptor method, wdfresource/WdfIoResourceListGetDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,13 @@ Your driver cannot modify the contents of the <a href="..\wdm\ns-wdm-_io_resourc
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
+
+#### Examples
+
+For a code example that uses <b>WdfIoResourceListGetDescriptor</b>, see <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,7 +104,11 @@ For more information about resource requirements lists and logical configuration
 
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcelistupdatedescriptor.md">WdfIoResourceListUpdateDescriptor</a>
 
+
+
 <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
+
 
  
 

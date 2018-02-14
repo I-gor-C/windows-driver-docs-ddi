@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: bc01b363-71e9-4c50-ad14-a101abbfe6ec
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: printoem/GETINFO_GLYPHWIDTH, PGETINFO_GLYPHWIDTH structure pointer [Print Devices], PGETINFO_GLYPHWIDTH, printoem/PGETINFO_GLYPHWIDTH, GETINFO_GLYPHWIDTH structure [Print Devices], _GETINFO_GLYPHWIDTH, GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH, print_unidrv-pscript_rendering_d4e07803-7342-4550-90fd-1ee8669934f0.xml, print.getinfo_glyphwidth
+ms.keywords: print.getinfo_glyphwidth, PGETINFO_GLYPHWIDTH, print_unidrv-pscript_rendering_d4e07803-7342-4550-90fd-1ee8669934f0.xml, GETINFO_GLYPHWIDTH structure [Print Devices], _GETINFO_GLYPHWIDTH, printoem/GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH, printoem/PGETINFO_GLYPHWIDTH, GETINFO_GLYPHWIDTH, PGETINFO_GLYPHWIDTH structure pointer [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	GETINFO_GLYPHWIDTH
 product: Windows
 targetos: Windows
-req.typenames: "*PGETINFO_GLYPHWIDTH, GETINFO_GLYPHWIDTH"
+req.typenames: GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH
 req.product: Windows 10 or later.
 ---
 
@@ -98,6 +98,8 @@ To obtain the width of a set of glyphs, a rendering plug-in can supply the addre
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 2305ffbd-22c8-4f63-bbe4-fd297bf98e39
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PCI.pci_express_pme_requestor_id, *PPCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID
+ms.keywords: PPCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, PCI.pci_express_pme_requestor_id, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID, pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml, *PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PCI_EXPRESS_PME_REQUESTOR_ID
 product: Windows
 targetos: Windows
-req.typenames: PCI_EXPRESS_PME_REQUESTOR_ID, *PPCI_EXPRESS_PME_REQUESTOR_ID
+req.typenames: "*PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID"
 ---
 
 # _PCI_EXPRESS_PME_REQUESTOR_ID structure
@@ -82,6 +82,8 @@ A PCI_EXPRESS_PME_REQUESTOR_ID structure is contained in the <b>PMERequestorId</
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537477">PCI_EXPRESS_ROOT_STATUS_REGISTER</a>
+
+
 
  
 

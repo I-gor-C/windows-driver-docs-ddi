@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: c16a2f3c-a5be-4132-920a-b81f67c5ea02
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: AVCSTRM_OPEN_STRUCT structure [Streaming Media Devices], PAVCSTRM_OPEN_STRUCT, avcstrm/PAVCSTRM_OPEN_STRUCT, avcsref_6ed25af3-808f-4b20-88c8-e7d2cca25494.xml, AVCSTRM_OPEN_STRUCT, _AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT, avcstrm/AVCSTRM_OPEN_STRUCT, PAVCSTRM_OPEN_STRUCT structure pointer [Streaming Media Devices], stream.avcstrm_open_struct
+ms.keywords: AVCSTRM_OPEN_STRUCT, avcstrm/PAVCSTRM_OPEN_STRUCT, stream.avcstrm_open_struct, AVCSTRM_OPEN_STRUCT structure [Streaming Media Devices], _AVCSTRM_OPEN_STRUCT, PAVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT, avcsref_6ed25af3-808f-4b20-88c8-e7d2cca25494.xml, PAVCSTRM_OPEN_STRUCT structure pointer [Streaming Media Devices], avcstrm/AVCSTRM_OPEN_STRUCT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	AVCSTRM_OPEN_STRUCT
 product: Windows
 targetos: Windows
-req.typenames: AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT
+req.typenames: "*PAVCSTRM_OPEN_STRUCT, AVCSTRM_OPEN_STRUCT"
 ---
 
 # _AVCSTRM_OPEN_STRUCT structure
@@ -87,9 +87,13 @@ This value can then be used in subsequent <i>avcstrm.sys</i> operations by placi
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
+
+
+
 <a href="..\avcstrm\ns-avcstrm-_avcstrm_format_info.md">AVCSTRM_FORMAT_INFO</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
+
 
  
 

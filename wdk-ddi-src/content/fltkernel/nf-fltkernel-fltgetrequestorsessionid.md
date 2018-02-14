@@ -7,8 +7,8 @@ old-location: ifsk\fltgetrequestorsessionid.htm
 old-project: ifsk
 ms.assetid: 6a0eb588-fe64-4f36-8648-8e006e16704e
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: ifsk.fltgetrequestorsessionid, fltkernel/FltGetRequestorSessionId, FltGetRequestorSessionId, FltGetRequestorSessionId routine [Installable File System Drivers]
+ms.date: 2/7/2018
+ms.keywords: fltkernel/FltGetRequestorSessionId, FltGetRequestorSessionId, ifsk.fltgetrequestorsessionid, FltGetRequestorSessionId routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

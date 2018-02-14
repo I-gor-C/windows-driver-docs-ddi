@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 976b812e-deb2-445f-b69d-e00d10c6e5d8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: pmi/PMI_CONFIGURATION, pmi/PPMI_CONFIGURATION, PPMI_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], powermeter.pmi_configuration, PMI_CONFIGURATION structure [Power Metering and Budgeting Devices], *PPMI_CONFIGURATION, PPMI_CONFIGURATION, _PMI_CONFIGURATION, PMI_CONFIGURATION, PowerMeterRef_f3279ebc-cd57-40e8-8571-a7d0d6bf3edc.xml
+ms.keywords: powermeter.pmi_configuration, pmi/PPMI_CONFIGURATION, PPMI_CONFIGURATION, _PMI_CONFIGURATION, *PPMI_CONFIGURATION, PowerMeterRef_f3279ebc-cd57-40e8-8571-a7d0d6bf3edc.xml, pmi/PMI_CONFIGURATION, PPMI_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PMI_CONFIGURATION, PMI_CONFIGURATION structure [Power Metering and Budgeting Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	PMI_CONFIGURATION
 product: Windows
 targetos: Windows
-req.typenames: PMI_CONFIGURATION, *PPMI_CONFIGURATION
+req.typenames: "*PPMI_CONFIGURATION, PMI_CONFIGURATION"
 ---
 
 # _PMI_CONFIGURATION structure
@@ -87,6 +87,7 @@ The PMI configuration information is returned through an <a href="..\pmi\ni-pmi-
 If the IOCTL query request completes successfully, the request returns a PMI_CONFIGURATION structure. The <b>Configuration</b> member of this structure contains data that is formatted as the requested PMI configuration structure.
 
 For example, if an IOCTL query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> is made with the input data set to <b>PmiBudgetingConfiguration</b> and the request completes successfully, the request returns a PMI_CONFIGURATION structure with its members set to the following values:
+
 <ul>
 <li>
 The <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.
@@ -106,15 +107,25 @@ The <b>Configuration</b> member contains data that is  formatted as a <a href=".
 
 ## See Also
 
+<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
+
+
+
 <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
 
-<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
 
 <a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
 
+
+
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
+
+
+
 <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8ea84934-63a7-40bf-8523-ccd2b9e5aceb
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: OpenGL_Functions_396da637-bbc6-478c-8ec9-534d82691c45.xml, D3DKMTGetDeviceState function [Display Devices], d3dkmthk/D3DKMTGetDeviceState, D3DKMTGetDeviceState, display.d3dkmtgetdevicestate
+ms.keywords: D3DKMTGetDeviceState, display.d3dkmtgetdevicestate, d3dkmthk/D3DKMTGetDeviceState, OpenGL_Functions_396da637-bbc6-478c-8ec9-534d82691c45.xml, D3DKMTGetDeviceState function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 <b>D3DKMTGetDeviceState</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,7 +104,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -120,6 +122,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
+
+
 
  
 

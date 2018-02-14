@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2f5338a9-2a53-4fee-af6a-8a052ef8c423
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.dxgkargcb_createcontextallocation, *INOUT_PDXGKARGCB_CREATECONTEXTALLOCATION, DXGKARGCB_CREATECONTEXTALLOCATION, _DXGKARGCB_CREATECONTEXTALLOCATION, d3dkmddi/DXGKARGCB_CREATECONTEXTALLOCATION, DXGKARGCB_CREATECONTEXTALLOCATION structure [Display Devices]
+ms.keywords: "*INOUT_PDXGKARGCB_CREATECONTEXTALLOCATION, display.dxgkargcb_createcontextallocation, d3dkmddi/DXGKARGCB_CREATECONTEXTALLOCATION, _DXGKARGCB_CREATECONTEXTALLOCATION, DXGKARGCB_CREATECONTEXTALLOCATION structure [Display Devices], DXGKARGCB_CREATECONTEXTALLOCATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -99,12 +99,16 @@ typedef struct _DXGKARGCB_CREATECONTEXTALLOCATION {
                                                                 the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a> function.
 
 If <b>ContextAllocationFlags.SharedAcrossContexts</b> is set to a value of 1, this member should be set to <b>NULL</b>.
-<div class="alert"><b>Note</b>  The member is also set to <b>NULL</b> for a system context.</div><div> </div>
+
+<div class="alert"><b>Note</b>  The member is also set to <b>NULL</b> for a system context.</div>
+<div> </div>
 
 `hDevice`
 
 [in] A handle to the display device that was originally passed by the DirectX graphics subsystem to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a> function.
-<div class="alert"><b>Note</b>  The member is set to <b>NULL</b> for a system device.</div><div> </div>
+
+<div class="alert"><b>Note</b>  The member is set to <b>NULL</b> for a system device.</div>
+<div> </div>
 
 `hDriverAllocation`
 
@@ -141,15 +145,25 @@ The display miniport driver calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_create
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
+
+
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextallocationflags.md">DXGK_CREATECONTEXTALLOCATIONFLAGS</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
+
+
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
+
+
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a>
+
+
 
  
 

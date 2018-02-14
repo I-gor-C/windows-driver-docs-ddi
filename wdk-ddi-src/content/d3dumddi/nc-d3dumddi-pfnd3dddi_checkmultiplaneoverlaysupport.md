@@ -86,6 +86,8 @@ If this routine succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HR
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_checkmultiplaneoverlaysupport.md">D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT</a>
 
+
+
  
 
  

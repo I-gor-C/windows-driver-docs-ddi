@@ -1,6 +1,6 @@
 ---
 UID: NF:wdm.ExInterlockedFlushSList
-title: ExInterlockedFlushSList function
+title: ExInterlockedFlushSList macro
 author: windows-driver-content
 description: The ExInterlockedFlushSList routine atomically removes all entries from a sequenced singly linked list.
 old-location: kernel\exinterlockedflushslist.htm
@@ -8,10 +8,10 @@ old-project: kernel
 ms.assetid: 98fcada7-5160-4eb2-ac7c-0ab1192340a9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.exinterlockedflushslist, k102_493935e2-44c7-471b-807f-ca6f110d8155.xml, wdm/ExInterlockedFlushSList, ExInterlockedFlushSList, ExInterlockedFlushSList routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.exinterlockedflushslist, k102_493935e2-44c7-471b-807f-ca6f110d8155.xml, wdm/ExInterlockedFlushSList, ExInterlockedFlushSList routine [Kernel-Mode Driver Architecture], ExInterlockedFlushSList
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
@@ -60,12 +60,12 @@ PSLIST_ENTRY ExInterlockedFlushSList(
 
 `ListHead`
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a> structure that serves as the header for the sequenced singly linked list.
+
 
 
 ## Return Value
 
-If there were entries on the specified list, <b>ExInterlockedFlushSList</b> returns a pointer to the first <a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a> structure that was entry on the list; otherwise, it returns <b>NULL</b>.
+None
 
 ## Remarks
 
@@ -90,6 +90,8 @@ Callers of <b>ExInterlockedFlushSList</b> can be running at any IRQL. The storag
 ## See Also
 
 <a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
+
+
 
  
 

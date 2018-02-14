@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 5F4E17CB-3B8B-4BBA-A819-B8E28183F1CB
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtmakeresident, d3dkmthk/D3DKMTMakeResident, D3DKMTMakeResident, D3DKMTMakeResident function [Display Devices]
+ms.keywords: d3dkmthk/D3DKMTMakeResident, display.d3dkmtmakeresident, D3DKMTMakeResident function [Display Devices], D3DKMTMakeResident
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 Returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -93,7 +94,8 @@ The operation was performed successfully.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -110,6 +112,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident.md">D3DDDI_MAKERESIDENT</a>
+
+
 
  
 

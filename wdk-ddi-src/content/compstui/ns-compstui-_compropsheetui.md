@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 7ebf46b7-5c31-482e-8644-a3d81f7dc5cc
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: "*PCOMPROPSHEETUI, compstui/PCOMPROPSHEETUI, compstui/COMPROPSHEETUI, COMPROPSHEETUI, COMPROPSHEETUI structure [Print Devices], PCOMPROPSHEETUI structure pointer [Print Devices], _COMPROPSHEETUI, print.compropsheetui, PCOMPROPSHEETUI, cpsuifnc_9b1aab20-fcd7-41b5-8bc5-959ae606d6b8.xml"
+ms.keywords: compstui/COMPROPSHEETUI, cpsuifnc_9b1aab20-fcd7-41b5-8bc5-959ae606d6b8.xml, print.compropsheetui, *PCOMPROPSHEETUI, PCOMPROPSHEETUI, COMPROPSHEETUI, _COMPROPSHEETUI, COMPROPSHEETUI structure [Print Devices], PCOMPROPSHEETUI structure pointer [Print Devices], compstui/PCOMPROPSHEETUI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -99,12 +99,12 @@ Optional caller-supplied bit flags, as described in the following list:
 
 
 
-
-
-
 #### CPSUIF_ABOUT_CALLBACK
 
 If set, the page's callback function (pointed to by the structure's <b>pfnCallback</b> member), supports CPSUICB_REASON_ABOUT, so CPSUI will call the callback function if the user clicks on the page's <b>About</b> button. (CPSUI supplies an <b>About</b> button for each treeview root node.)
+
+
+
 
 
 #### CPSUIF_ICONID_AS_HICON
@@ -112,6 +112,9 @@ If set, the page's callback function (pointed to by the structure's <b>pfnCallba
 If set, the structure's <b>IconID</b> member contains an icon handle.
 
 If not set, the <b>IconID</b> member contains an icon resource identifier.
+
+
+
 
 
 #### CPSUIF_UPDATE_PERMISSION
@@ -125,6 +128,7 @@ Caller-supplied module instance handle, received by the DLL's entry point functi
 `IconID`
 
 Caller-supplied, can be one of the following:
+
 <ul>
 <li>
 An icon resource identifier. This can be application-defined, or it can be one of the CPSUI-supplied, IDI_CPSUI-prefixed icon resource identifiers.
@@ -134,7 +138,8 @@ An icon resource identifier. This can be application-defined, or it can be one o
 An icon handle. If a handle is specified, CPSUIF_ICONID_AS_HICON must be set in the <b>Flags</b> member.
 
 </li>
-</ul>The specified icon is displayed in the root node of the property sheet page's treeview.
+</ul>
+The specified icon is displayed in the root node of the property sheet page's treeview.
 
 `OptItemVersion`
 
@@ -147,6 +152,7 @@ Caller-supplied pointer to a NULL-terminated text string representing the applic
 `pDlgPage`
 
 This member specifies <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> structures that describe pages to be added to the property sheet. It can be either of the following:
+
 <ul>
 <li>
 A pointer to an array of DLGPAGE structures.

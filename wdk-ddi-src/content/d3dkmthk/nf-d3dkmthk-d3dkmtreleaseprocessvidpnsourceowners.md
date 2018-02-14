@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 65fa0654-25b5-4ead-ac9e-0eb0f404259a
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtreleaseprocessvidpnsourceowners, d3dkmthk/D3DKMTReleaseProcessVidPnSourceOwners, OpenGL_Functions_8c1e2870-c803-4ca4-99f1-8f39a00983c8.xml, D3DKMTReleaseProcessVidPnSourceOwners function [Display Devices], D3DKMTReleaseProcessVidPnSourceOwners
+ms.keywords: d3dkmthk/D3DKMTReleaseProcessVidPnSourceOwners, OpenGL_Functions_8c1e2870-c803-4ca4-99f1-8f39a00983c8.xml, D3DKMTReleaseProcessVidPnSourceOwners, display.d3dkmtreleaseprocessvidpnsourceowners, D3DKMTReleaseProcessVidPnSourceOwners function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ This function has no parameters.
 ## Return Value
 
 <b>D3DKMTReleaseProcessVidPnSourceOwners</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -92,7 +93,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 

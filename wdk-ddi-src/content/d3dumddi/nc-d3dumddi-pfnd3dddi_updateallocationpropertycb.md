@@ -73,6 +73,7 @@ A handle to the display device associated with the allocation
 ## Return Value
 
 <b>pfnUpdateAllocationPropertyCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

@@ -40,7 +40,7 @@ apiname:
 -	MiniportWdiPostAdapterPause
 product: Windows
 targetos: Windows
-req.typenames: SYNTH_STATS, *PSYNTH_STATS
+req.typenames: "*PSYNTH_STATS, SYNTH_STATS"
 ---
 
 
@@ -90,11 +90,17 @@ The return value is only used for logging/informational purposes.
 
 ## See Also
 
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
-
 <a href="..\ndis\ns-ndis-_ndis_miniport_pause_parameters.md">NDIS_MINIPORT_PAUSE_PARAMETERS</a>
 
+
+
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+
+
+
 <a href="..\ndis\nc-ndis-miniport_pause.md">MiniportPause</a>
+
+
 
  
 

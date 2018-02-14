@@ -73,6 +73,7 @@ A pointer to a SIZE_T-typed variable that receives the number of monitor source 
 ## Return Value
 
 The <b>pfnGetNumModes</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -118,7 +119,11 @@ The D3DKMDT_HMONITORSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>
 
+
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorsourcemodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a>
+
+
 
  
 

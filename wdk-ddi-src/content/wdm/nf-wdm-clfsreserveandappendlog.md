@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e3ffbf18-151b-42da-8fc1-ae07c152738c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.clfsreserveandappendlog, ClfsReserveAndAppendLog, Clfs_4378f8c9-0765-48af-9309-2bc0a1af1da5.xml, wdm/ClfsReserveAndAppendLog, ClfsReserveAndAppendLog routine [Kernel-Mode Driver Architecture]
+ms.keywords: ClfsReserveAndAppendLog routine [Kernel-Mode Driver Architecture], Clfs_4378f8c9-0765-48af-9309-2bc0a1af1da5.xml, wdm/ClfsReserveAndAppendLog, ClfsReserveAndAppendLog, kernel.clfsreserveandappendlog
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,6 +98,7 @@ A pointer to an array of LONGLONG-typed variables. The caller sets each element 
 `fFlags`
 
 This parameter can be zero or any combination of the following flags.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -147,6 +148,7 @@ A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that r
 ## Remarks
 
 The <b>ClfsReserveAndAppendLog</b> routine changes its fundamental behavior based on the presence of optional parameters and the state of the CLFS_USE_RESERVATION flag. The following table summarizes common scenarios.
+
 <table>
 <tr>
 <th>Parameter and flag values</th>
@@ -226,7 +228,8 @@ Appends a record to the marshalling area by reserving new space. Also reserves s
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Calling <b>ClfsReserveAndAppendLog</b> is equivalent to calling <a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a> with the <i>cbEntryAlignment</i> parameter set to one.
 
@@ -244,13 +247,21 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a>
+
+
+
 <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 
-<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
 
 <a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
 
-<a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a>
+
 
  
 

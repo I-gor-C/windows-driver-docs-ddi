@@ -73,6 +73,7 @@ A pointer to the D3DKMDT_MONITOR_DESCRIPTOR structure to be released.
 ## Return Value
 
 The <b>pfnReleaseDescriptorInfo</b> function returns one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>

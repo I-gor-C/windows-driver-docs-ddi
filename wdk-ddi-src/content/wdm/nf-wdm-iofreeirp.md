@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4a032d44-c6c2-4dce-97ea-28ac47f6ad6c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_fc262cc4-a482-4a92-9f8e-1e5765c9b1d4.xml, wdm/IoFreeIrp, kernel.iofreeirp, IoFreeIrp, IoFreeIrp routine [Kernel-Mode Driver Architecture]
+ms.keywords: IoFreeIrp routine [Kernel-Mode Driver Architecture], k104_fc262cc4-a482-4a92-9f8e-1e5765c9b1d4.xml, IoFreeIrp, kernel.iofreeirp, wdm/IoFreeIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,15 +88,25 @@ This routine also releases an IRP allocated with <a href="..\ntddk\nf-ntddk-ioma
 
 ## See Also
 
+<a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
+
+
+
 <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 
-<a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
+
 
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
 
 <a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
+
 
  
 

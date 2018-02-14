@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_SMARTCARD_GET_LAST_ERROR
 product: Windows
 targetos: Windows
-req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -90,6 +90,8 @@ Be aware that when your driver uses the smart card driver library, you should st
 ## See Also
 
 <a href="..\winsmcrd\ni-winsmcrd-ioctl_smartcard_get_state.md">IOCTL_SMARTCARD_GET_STATE</a>
+
+
 
  
 

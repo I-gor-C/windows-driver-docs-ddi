@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: fcb06620-8a30-4980-8733-35d7aabcc872
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmddi/DXGKARG_SETPOINTERSHAPE, _DXGKARG_SETPOINTERSHAPE, display.dxgkarg_setpointershape, DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE structure [Display Devices], DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml
+ms.keywords: DXGKARG_SETPOINTERSHAPE, DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml, d3dkmddi/DXGKARG_SETPOINTERSHAPE, display.dxgkarg_setpointershape, DXGKARG_SETPOINTERSHAPE structure [Display Devices], _DXGKARG_SETPOINTERSHAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -78,6 +78,7 @@ typedef struct _DXGKARG_SETPOINTERSHAPE {
 `pPixels`
 
 [in] A pointer to the start of the following bitmap depending on the bit-field flag that is set in the <b>Flags</b> member:
+
 <table>
 <tr>
 <th>Bit-field flag</th>
@@ -157,9 +158,13 @@ The <b>XHot</b> and <b>YHot</b> members are used by display miniport drivers tha
 
 ## See Also
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a>
+
+
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpointershape.md">DxgkDdiSetPointerShape</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a>
+
 
  
 

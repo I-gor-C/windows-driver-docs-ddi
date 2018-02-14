@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 74BE4FF9-0342-4942-A58F-9C6D5F76E5F0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PsMakeSiloContextPermanent, kernel.psmakesilocontextpermanent, ntddk/PsMakeSiloContextPermanent, PsMakeSiloContextPermanent routine [Kernel-Mode Driver Architecture]
+ms.keywords: PsMakeSiloContextPermanent routine [Kernel-Mode Driver Architecture], ntddk/PsMakeSiloContextPermanent, PsMakeSiloContextPermanent, kernel.psmakesilocontextpermanent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsMakeSiloContextPermanent
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -70,6 +70,7 @@ The slot to make read-only. The slot must be previously allocated by the <a href
 ## Return Value
 
 The following NT status codes are returned.
+
 <table>
 <tr>
 <th>Return code</th>

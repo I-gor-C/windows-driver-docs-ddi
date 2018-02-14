@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 6acff4d8-c21f-49c5-a255-5b46aac97c9f
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoQueueRetrieveRequestByFileObject method, wdf.wdfioqueueretrieverequestbyfileobject, kmdf.wdfioqueueretrieverequestbyfileobject, WdfIoQueueRetrieveRequestByFileObject, DFQueueObjectRef_52e014c4-04ca-44b2-a5a8-19185b085cdf.xml, PFN_WDFIOQUEUERETRIEVEREQUESTBYFILEOBJECT, wdfio/WdfIoQueueRetrieveRequestByFileObject
+ms.keywords: WdfIoQueueRetrieveRequestByFileObject, wdfio/WdfIoQueueRetrieveRequestByFileObject, kmdf.wdfioqueueretrieverequestbyfileobject, wdf.wdfioqueueretrieverequestbyfileobject, PFN_WDFIOQUEUERETRIEVEREQUESTBYFILEOBJECT, DFQueueObjectRef_52e014c4-04ca-44b2-a5a8-19185b085cdf.xml, WdfIoQueueRetrieveRequestByFileObject method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ A pointer to a location that receives a handle to a framework request object. If
 ## Return Value
 
 <b>WdfIoQueueRetrieveRequestByFileObject</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -130,7 +131,8 @@ The specified I/O queue is <a href="https://docs.microsoft.com/en-us/windows-har
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -143,6 +145,28 @@ A driver that has configured an I/O queue for manual or sequential dispatching m
 After calling <b>WdfIoQueueRetrieveRequestByFileObject</b> to obtain an I/O request, the driver <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-ownership">owns</a> the request and must <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">process the I/O request</a> in some manner.
 
 For more information about the <b>WdfIoQueueRetrieveRequestByFileObject</b> method, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/managing-i-o-queues">Managing I/O Queues</a>.
+
+
+#### Examples
+
+The following code example obtains, from a specified I/O queue, a handle to the next framework request object that is associated with a specified framework file object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDFREQUEST  request;
+
+status = WdfIoQueueRetrieveRequestByFileObject(
+                                               queue,
+                                               fileObject,
+                                               &amp;request
+                                               );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -159,7 +183,11 @@ For more information about the <b>WdfIoQueueRetrieveRequestByFileObject</b> meth
 
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
 
+
+
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
+
+
 
  
 

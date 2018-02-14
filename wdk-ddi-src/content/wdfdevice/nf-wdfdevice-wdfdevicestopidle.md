@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a394f539-bd66-44e2-a857-d657a123b473
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfdevicestopidle, wdf.wdfdevicestopidle, wdfdevice/WdfDeviceStopIdle, WdfDeviceStopIdle method, WdfDeviceStopIdle, DFDeviceObjectGeneralRef_3dbde224-ecdf-429e-9389-9bdb49b16040.xml
+ms.keywords: DFDeviceObjectGeneralRef_3dbde224-ecdf-429e-9389-9bdb49b16040.xml, wdf.wdfdevicestopidle, WdfDeviceStopIdle method, wdfdevice/WdfDeviceStopIdle, WdfDeviceStopIdle, kmdf.wdfdevicestopidle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -101,7 +101,25 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 
 If <i>WaitForD0</i> is <b>TRUE</b>, <b>WdfDeviceStopIdle</b> must be called at IRQL = PASSIVE_LEVEL. If <i>WaitForD0</i> is <b>FALSE</b>, this method must be called at IRQL &lt;= DISPATCH_LEVEL.
 
-Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a> instead of <b>WdfDeviceStopIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.
+Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a> instead of <b>WdfDeviceStopIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.  
+
+
+#### Examples
+
+In the following code example, <b>WdfDeviceStopIdle</b> returns after the specified device has entered the D0 device power state.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS  status;
+
+status = WdfDeviceStopIdle(Device, TRUE);</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -116,13 +134,21 @@ Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">W
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
-
 <a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
+
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceresumeidle.md">WdfDeviceResumeIdle</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceresumeidle.md">WdfDeviceResumeIdle</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
+
+
 
  
 

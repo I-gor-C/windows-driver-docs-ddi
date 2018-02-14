@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: D94A669E-4293-4235-8BC4-C7883BB0C83C
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.removeprintdeviceobject, RemovePrintDeviceObject, winsplp/RemovePrintDeviceObject, RemovePrintDeviceObject function [Print Devices]
+ms.keywords: RemovePrintDeviceObject function [Print Devices], print.removeprintdeviceobject, winsplp/RemovePrintDeviceObject, RemovePrintDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,8 @@ Call <b>RemovePrintDeviceObject</b> to remove the device object for a printer th
 ## See Also
 
 <a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>
+
+
 
  
 

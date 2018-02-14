@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: d3ad851d-ba09-4052-a2d0-d6cb8315e04f
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hid.hidp_translateusagestoi8042scancodes, hidpi/HidP_TranslateUsagesToI8042ScanCodes, HidP_TranslateUsagesToI8042ScanCodes, HidP_TranslateUsagesToI8042ScanCodes routine [Human Input Devices], hidfunc_da67ba0d-7d82-4b35-9ebb-cdd93b12450b.xml
+ms.keywords: HidP_TranslateUsagesToI8042ScanCodes routine [Human Input Devices], HidP_TranslateUsagesToI8042ScanCodes, hid.hidp_translateusagestoi8042scancodes, hidfunc_da67ba0d-7d82-4b35-9ebb-cdd93b12450b.xml, hidpi/HidP_TranslateUsagesToI8042ScanCodes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,7 @@ Specifies the maximum possible number of usages in the changed usage list.
 `KeyAction`
 
 Identifies the key direction for the specified change usage list. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -89,9 +90,12 @@ Identifies the key direction for the specified change usage list.
 </table></span></div>
 
 
+
+
 #### HidP_Keyboard_Break
 
 Specifies a <i>break</i> direction (key up). The changed usage list contains the usages set to OFF that were previously set to ON (which corresponds to the keys that were previously down, but are now up).
+
 
 
 #### HidPKeyboard_Make
@@ -101,6 +105,7 @@ Specifies a <i>make</i> direction (key down). The changed usage list contains th
 `ModifierState`
 
 Pointer to a _HIDP_KEYBOARD_MODIFIER_STATE structure that the caller maintains for use by the translate usages routine. The modifier state structure identifies the state of the keyboard modifier keys. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -127,13 +132,15 @@ Pointer to a _HIDP_KEYBOARD_MODIFIER_STATE structure that the caller maintains f
 };</pre>
 </td>
 </tr>
-</table></span></div>Each member of the modifier state structure identifies whether the corresponding usage is set to ON (1) or OFF (zero).
+</table></span></div>
+Each member of the modifier state structure identifies whether the corresponding usage is set to ON (1) or OFF (zero).
 
 See the Remarks section for more information about how a modifier state structure is used with the translate usage routine.
 
 `InsertCodesProcedure`
 
 Pointer to a caller-supplied PHIDP_INSERT_SCANCODES-typed callback routine that the translate usage routine uses to return the mapped scan codes to the caller of the translate usage routine.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -150,14 +157,18 @@ Pointer to a caller-supplied PHIDP_INSERT_SCANCODES-typed callback routine that 
 </table></span></div>
 
 
+
+
 #### Context
 
 Pointer to the context of the caller of the translate usage routine. The translate usage routine passes the <i>InsertCodesContext</i> pointer to the <i>InsertCodesProcedure</i> routine.
 
 
+
 #### NewScanCodes
 
 Pointer to the first byte of a scan code that the translate usage routine returns to the caller of the translate usage routine.
+
 
 
 #### Length
@@ -172,6 +183,7 @@ Pointer to a caller-defined context that the translate usage routine passes to t
 ## Return Value
 
 <b>HidP_TranslateUsagesToI8042ScanCodes</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -208,6 +220,7 @@ A usage in the changed usage list mapped to an invalid keyboard scan code.
 <b>HidP_TranslateUsagesToI8042ScanCodes</b> is designed primarily to be used in a processing loop that repeatedly determines the current usage list (usages that are currently set to ON), compares them with a previous usage list (usages that were previously set to ON), and maps the difference between the current and previous usage lists to make scan codes and break scan codes. The following operations illustrate how to use the translate usages routine.
 
 Prior to beginning a processing loop, the processing code typically allocates and initializes the following data:
+
 <ul>
 <li>
 A previous usage list, current usage list, break usage list, and a make usage list.
@@ -221,7 +234,9 @@ A zero-initialized _HIDP_KEYBOARD_MODIFIER_STATE structure for use by the transl
 In the processing loop, the code must maintain this structure for use by the translate usages routine. The processing code can read the state of the modifier keys, but the code must not modify the structure. The translate usage routine uses this structure to maintain internal information about the state of the modifier keys. 
 
 </li>
-</ul>After initializing the required structures, each iteration of the processing loop typically includes the following sequence of operations:
+</ul>
+After initializing the required structures, each iteration of the processing loop typically includes the following sequence of operations:
+
 <ol>
 <li>
 Call <b>HidP_GetUsages</b> to obtain the current usage list of usages that are set to ON. Set the <i>UsagePage</i> input parameter of the get usages routine to HID_USAGE_PAGE_KEYBOARD. 
@@ -243,7 +258,8 @@ Call the translate usage routine, setting <i>ChangedUsageList</i> to the make us
 Update the previous usage list to the current usage list.
 
 </li>
-</ol>For information about the mapping between HID usages and PS/2 keyboard scan codes, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=242210">key support and scan codes</a> website.
+</ol>
+For information about the mapping between HID usages and PS/2 keyboard scan codes, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=242210">key support and scan codes</a> website.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -256,11 +272,17 @@ Update the previous usage list to the current usage list.
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
-
 <a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
 
+
+
 <a href="..\hidpi\nf-hidpi-hidp_usagelistdifference.md">HidP_UsageListDifference</a>
+
+
+
+<a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
+
+
 
  
 

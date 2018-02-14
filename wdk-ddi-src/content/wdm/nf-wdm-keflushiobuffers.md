@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 76954a20-7cd7-454b-a965-8c3f0cdb6e8f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.keflushiobuffers, k105_265e110c-5dad-444c-a97d-6693d7996c51.xml, KeFlushIoBuffers routine [Kernel-Mode Driver Architecture], wdm/KeFlushIoBuffers, KeFlushIoBuffers
+ms.keywords: wdm/KeFlushIoBuffers, k105_265e110c-5dad-444c-a97d-6693d7996c51.xml, KeFlushIoBuffers routine [Kernel-Mode Driver Architecture], kernel.keflushiobuffers, KeFlushIoBuffers
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,7 +90,9 @@ As a general rule, drivers should call <b>KeFlushIoBuffers</b> just before begin
 <b>KeFlushIoBuffers</b> flushes only the memory region that is described by the MDL that the <i>Mdl</i> parameter points to. To flush all the memory regions that are described by an MDL chain requires a separate <b>KeFlushIoBuffers</b> call for each MDL in the chain.
 
 For more information, see the following topics:
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545924">Flushing Cached Data during DMA Operations</a><a href="https://msdn.microsoft.com/library/windows/hardware/ff546503">Flushing Cached Data during PIO Operations</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545924">Flushing Cached Data during DMA Operations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546503">Flushing Cached Data during PIO Operations</a>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,6 +108,8 @@ For more information, see the following topics:
 ## See Also
 
 <a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
+
+
 
  
 

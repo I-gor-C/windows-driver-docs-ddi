@@ -80,6 +80,8 @@ If the miniport driver successfully returns the color-capabilities data, it sets
 
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
+
+
  
 
  

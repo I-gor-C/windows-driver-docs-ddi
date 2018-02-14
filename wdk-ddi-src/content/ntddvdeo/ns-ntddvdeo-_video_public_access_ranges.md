@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 78912da9-ab02-459c-97b0-477949d4a71d
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: ntddvdeo/VIDEO_PUBLIC_ACCESS_RANGES, ntddvdeo/PVIDEO_PUBLIC_ACCESS_RANGES, *PVIDEO_PUBLIC_ACCESS_RANGES, PVIDEO_PUBLIC_ACCESS_RANGES structure pointer [Display Devices], Video_Structs_5f4cdfd0-c59a-4568-9524-3f72416f7daf.xml, display.video_public_access_ranges, _VIDEO_PUBLIC_ACCESS_RANGES, VIDEO_PUBLIC_ACCESS_RANGES structure [Display Devices], PVIDEO_PUBLIC_ACCESS_RANGES, VIDEO_PUBLIC_ACCESS_RANGES
+ms.keywords: display.video_public_access_ranges, VIDEO_PUBLIC_ACCESS_RANGES structure [Display Devices], PVIDEO_PUBLIC_ACCESS_RANGES, _VIDEO_PUBLIC_ACCESS_RANGES, ntddvdeo/VIDEO_PUBLIC_ACCESS_RANGES, Video_Structs_5f4cdfd0-c59a-4568-9524-3f72416f7daf.xml, PVIDEO_PUBLIC_ACCESS_RANGES structure pointer [Display Devices], *PVIDEO_PUBLIC_ACCESS_RANGES, VIDEO_PUBLIC_ACCESS_RANGES, ntddvdeo/PVIDEO_PUBLIC_ACCESS_RANGES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -61,6 +61,7 @@ typedef struct _VIDEO_PUBLIC_ACCESS_RANGES {
 `InIoSpace`
 
 Indicates the location of the range. This parameter can be one of the following values, or certain bitwise combinations of these values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -140,7 +141,11 @@ VIDEO_PUBLIC_ACCESS_RANGES is used as an input buffer with the <a href="..\ntddv
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_public_access_ranges.md">IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES</a>
 
+
+
 <a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
+
+
 
  
 

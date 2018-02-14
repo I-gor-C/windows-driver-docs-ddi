@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8ce2006e-e66c-4b2d-8d26-2eba8d8e2864
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportreleasespinlock, VideoPortReleaseSpinLock function [Display Devices], VideoPort_Functions_43cceda5-f5eb-4567-97f5-d53d0bf93c0b.xml, video/VideoPortReleaseSpinLock, VideoPortReleaseSpinLock
+ms.keywords: video/VideoPortReleaseSpinLock, display.videoportreleasespinlock, VideoPort_Functions_43cceda5-f5eb-4567-97f5-d53d0bf93c0b.xml, VideoPortReleaseSpinLock function [Display Devices], VideoPortReleaseSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,6 +96,8 @@ Callers of <b>VideoPortReleaseSpinLock</b> must be running at IRQL = DISPATCH_LE
 ## See Also
 
 <a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+
+
 
  
 

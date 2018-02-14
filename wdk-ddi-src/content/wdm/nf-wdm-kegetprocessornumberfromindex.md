@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a6c9a7fa-8fef-4d6d-aab5-e712c49c0144
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_c0b567bd-4436-4f6a-87a2-86d8b165e2dc.xml, KeGetProcessorNumberFromIndex routine [Kernel-Mode Driver Architecture], KeGetProcessorNumberFromIndex, kernel.kegetprocessornumberfromindex, wdm/KeGetProcessorNumberFromIndex
+ms.keywords: wdm/KeGetProcessorNumberFromIndex, k105_c0b567bd-4436-4f6a-87a2-86d8b165e2dc.xml, KeGetProcessorNumberFromIndex routine [Kernel-Mode Driver Architecture], KeGetProcessorNumberFromIndex, kernel.kegetprocessornumberfromindex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,6 +71,7 @@ A pointer to a caller-allocated <a href="..\miniport\ns-miniport-_processor_numb
 ## Return Value
 
 <b>KeGetProcessorNumberFromIndex</b> returns STATUS_SUCCESS if the call is successful. Possible error return values include the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -97,7 +98,37 @@ For example, if a multiprocessor system contains two groups, and each group cont
 
 To obtain the total number of active logical processors in the system, call the <a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a> routine.
 
-The <a href="..\ntifs\nf-ntifs-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a> routine converts a group number and a group-relative processor number to a systemwide processor index.
+The <a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a> routine converts a group number and a group-relative processor number to a systemwide processor index.
+
+
+#### Examples
+
+The following code example uses the <b>KeQueryActiveProcessorCountEx</b> and <b>KeGetProcessorNumberFromIndex</b> routines to enumerate all active logical processors in the system:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>ULONG Count;
+ULONG ProcIndex;
+PROCESSOR_NUMBER ProcNumber;
+
+Count = KeQueryActiveProcessorCountEx(ALL_PROCESSOR_GROUPS);
+for (ProcIndex = 0; ProcIndex &lt; Count; ProcIndex += 1)
+{
+    KeGetProcessorNumberFromIndex(ProcIndex, &amp;ProcNumber);
+
+    // Do something with the contents of ProcNumber.
+    ...
+}</pre>
+</td>
+</tr>
+</table></span></div>
+The constant value ALL_PROCESSOR_GROUPS is defined in Winnt.h and Ntdef.h. 
+
+<div class="code"></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,9 +144,15 @@ The <a href="..\ntifs\nf-ntifs-kegetprocessorindexfromnumber.md">KeGetProcessorI
 
 <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
 
+
+
 <a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 
-<a href="..\ntifs\nf-ntifs-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
+
+
+<a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
+
+
 
  
 

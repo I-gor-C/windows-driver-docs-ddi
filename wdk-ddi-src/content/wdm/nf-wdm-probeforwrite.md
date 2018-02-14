@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8f435a52-f087-4d36-bf95-e82f5ab061e4
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ProbeForWrite, k102_62889c29-62cb-43c2-ac19-e8b933783443.xml, kernel.probeforwrite, wdm/ProbeForWrite, ProbeForWrite routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/ProbeForWrite, k102_62889c29-62cb-43c2-ac19-e8b933783443.xml, ProbeForWrite, kernel.probeforwrite, ProbeForWrite routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,6 +105,8 @@ If <i>Length</i> = 0, <b>ProbeForWrite</b> does no checking of the address. In t
 ## See Also
 
 <a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a>
+
+
 
  
 

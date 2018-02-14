@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 9505a0ce-4f4e-43af-97a2-653b5776c423
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: SetValues2, SetValues2 method [Windows Debugging], SetValues2 method [Windows Debugging], IDebugRegisters2 interface, debugger.setvalues2, dbgeng/IDebugRegisters2::SetValues2, IDebugRegisters_4e5c8f37-a5ad-4083-adb9-e75ec18542b2.xml, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], SetValues2 method, IDebugRegisters2::SetValues2
+ms.keywords: dbgeng/IDebugRegisters2::SetValues2, debugger.setvalues2, SetValues2 method [Windows Debugging], IDebugRegisters2, SetValues2, SetValues2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_4e5c8f37-a5ad-4083-adb9-e75ec18542b2.xml, IDebugRegisters2 interface [Windows Debugging], SetValues2 method, IDebugRegisters2::SetValues2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -66,6 +66,7 @@ HRESULT SetValues2(
 Specifies the register source to query.
 
 The possible values are listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -125,6 +126,7 @@ An array that contains the values to which to set the registers.  The number of 
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -164,11 +166,17 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff597642">SetValue</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556883">SetValues</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff597642">SetValue</a>
+
 
  
 

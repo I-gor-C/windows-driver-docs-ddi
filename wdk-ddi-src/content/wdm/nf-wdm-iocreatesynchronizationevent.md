@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ce068ad0-3826-4f5d-a41c-2c3a40200f30
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iocreatesynchronizationevent, IoCreateSynchronizationEvent, k104_413cbfff-08a2-44b5-acdc-0e23d382a3d3.xml, wdm/IoCreateSynchronizationEvent, IoCreateSynchronizationEvent routine [Kernel-Mode Driver Architecture]
+ms.keywords: k104_413cbfff-08a2-44b5-acdc-0e23d382a3d3.xml, wdm/IoCreateSynchronizationEvent, IoCreateSynchronizationEvent, IoCreateSynchronizationEvent routine [Kernel-Mode Driver Architecture], kernel.iocreatesynchronizationevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ When a synchronization event is set to the Signaled state, a single thread of ex
 To release the event, a driver calls <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> with the event handle.
 
 Sharing event objects between user mode and kernel mode requires care. There are two main methods for sharing event objects: 
+
 <ul>
 <li>
 The user-mode application creates the event object and passes a handle to the object to the driver by sending an IOCTL to the driver. The driver must handle the IOCTL in the context of the process that created the event object and must validate the handle by calling <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>. This method is the recommended method for sharing event objects between user and kernel modes.
@@ -90,7 +91,8 @@ The user-mode application creates the event object and passes a handle to the ob
 The driver creates a named event object in the \\BaseNamedObjects object directory. You can open a kernel-mode event named \\BaseNamedObjects\<i>Xxx</i> in user mode under the name <i>Xxx</i>. Note that security settings can prevent an application from opening the event. For more information, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=718194">OpenEvent Fails in a Non-Administrator Account</a> KB article. The \\BaseNamedObjects object directory is not created until the Microsoft Win32 subsystem initializes, so drivers that are loaded at boot time cannot create event objects in the \\BaseNamedObjects directory in their <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routines
 
 </li>
-</ul>For more information about events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544323">Event Objects</a>.
+</ul>
+For more information about events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544323">Event Objects</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,11 +109,19 @@ The driver creates a named event object in the \\BaseNamedObjects object directo
 
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
+
+
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+
+
+<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
+
+
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
-<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
+
 
  
 

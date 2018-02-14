@@ -73,6 +73,7 @@ A handle that identifies the graphics adapter.
 ## Return Value
 
 <b>CreateDevice</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -120,11 +121,17 @@ When the Direct3D runtime calls <b>CreateDevice</b> to create a device, the runt
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_adapterfuncs.md">D3DDDI_ADAPTERFUNCS</a>
 
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroydevice.md">DestroyDevice</a>
+
+
 
  
 

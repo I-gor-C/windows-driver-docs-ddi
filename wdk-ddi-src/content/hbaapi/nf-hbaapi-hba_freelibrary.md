@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 513cdedc-2ecd-4b02-a85b-5abd9c0c7fcd
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_freelibrary, hbaapi/HBA_FreeLibrary, HBA_FreeLibrary routine [Storage Devices], fibreHBA_rtns_ae252017-7aa2-4d15-a387-26ec34cc964c.xml, HBA_FreeLibrary
+ms.keywords: fibreHBA_rtns_ae252017-7aa2-4d15-a387-26ec34cc964c.xml, HBA_FreeLibrary, storage.hba_freelibrary, HBA_FreeLibrary routine [Storage Devices], hbaapi/HBA_FreeLibrary
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,6 +73,8 @@ The <b>HBA_FreeLibrary</b> routine returns a value of type <a href="https://msdn
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
+
 
  
 

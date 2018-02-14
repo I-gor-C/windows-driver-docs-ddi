@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: E98A121A-514A-4437-A542-E8629697B7EA
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IPrinterQueue::SendBidiQuery, IPrinterQueue interface [Print Devices], SendBidiQuery method, print.iprinterqueue_sendbidiquery, SendBidiQuery method [Print Devices], SendBidiQuery method [Print Devices], IPrinterQueue interface, IPrinterQueue, SendBidiQuery, printerextension/IPrinterQueue::SendBidiQuery
+ms.keywords: SendBidiQuery method [Print Devices], IPrinterQueue interface, IPrinterQueue interface [Print Devices], SendBidiQuery method, IPrinterQueue, SendBidiQuery method [Print Devices], IPrinterQueue::SendBidiQuery, printerextension/IPrinterQueue::SendBidiQuery, print.iprinterqueue_sendbidiquery, SendBidiQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -102,11 +102,17 @@ All standard Bidi values (as defined by the port monitor’s embedded Bidi files
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/D0CD9950-DF73-4D46-B901-FA45BA88D3CF">IPrinterQueueEvent::OnBidiResponseReceived</a>
-
 <a href="http://msdn.microsoft.com/en-us/library/dd183365(v=vs.85)">Bidi Communication Interfaces</a>
 
+
+
 <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+
+
+
+<a href="https://msdn.microsoft.com/D0CD9950-DF73-4D46-B901-FA45BA88D3CF">IPrinterQueueEvent::OnBidiResponseReceived</a>
+
+
 
  
 

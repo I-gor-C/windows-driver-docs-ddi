@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b4a4cc4b-8f23-4dd6-81d3-4cb2c861ba4f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/NtQueryInformationTransaction, ZwQueryInformationTransaction, ZwQueryInformationTransaction routine [Kernel-Mode Driver Architecture], wdm/ZwQueryInformationTransaction, NtQueryInformationTransaction, kernel.zwqueryinformationtransaction, ktm_ref_ffef2acc-e180-4adf-8aa5-31ee7dae0592.xml
+ms.keywords: ZwQueryInformationTransaction routine [Kernel-Mode Driver Architecture], wdm/ZwQueryInformationTransaction, wdm/NtQueryInformationTransaction, kernel.zwqueryinformationtransaction, ktm_ref_ffef2acc-e180-4adf-8aa5-31ee7dae0592.xml, ZwQueryInformationTransaction, NtQueryInformationTransaction
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,6 +70,7 @@ A handle to a <a href="https://msdn.microsoft.com/124105bd-70be-49b1-8ea4-af6ba1
 `TransactionInformationClass`
 
 A <a href="..\wdm\ne-wdm-_transaction_information_class.md">TRANSACTION_INFORMATION_CLASS</a>-typed value that specifies the information to obtain. The value must be one of the following values:
+
 <ul>
 <li>
 <b>TransactionBasicInformation</b>
@@ -83,7 +84,8 @@ A <a href="..\wdm\ne-wdm-_transaction_information_class.md">TRANSACTION_INFORMAT
 <b>TransactionEnlistmentInformation</b>
 
 </li>
-</ul>The <b>TransactionFullInformation</b> value is not used with <b>ZwQueryInformationTransaction</b>.
+</ul>
+The <b>TransactionFullInformation</b> value is not used with <b>ZwQueryInformationTransaction</b>.
 
 `TransactionInformation`
 
@@ -101,6 +103,7 @@ A pointer to a caller-allocated variable that receives the length, in bytes, of 
 ## Return Value
 
 <b>ZwQueryInformationTransaction</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, this routine might return one of the following values: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -172,7 +175,8 @@ The buffer that the <i>TransactionInformation </i>parameter specifies is too sma
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The routine might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -197,23 +201,41 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>
+<a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 
-<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
-
-<a href="..\wdm\nf-wdm-tmgettransactionid.md">TmGetTransactionId</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
 
-<a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
+<a href="..\wdm\ne-wdm-_transaction_information_class.md">TRANSACTION_INFORMATION_CLASS</a>
+
+
 
 <a href="..\wdm\ns-wdm-_transaction_properties_information.md">TRANSACTION_PROPERTIES_INFORMATION</a>
 
-<a href="..\wdm\ne-wdm-_transaction_information_class.md">TRANSACTION_INFORMATION_CLASS</a>
+
+
+<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
+
+
+
+<a href="..\wdm\nf-wdm-tmgettransactionid.md">TmGetTransactionId</a>
+
+
 
  
 

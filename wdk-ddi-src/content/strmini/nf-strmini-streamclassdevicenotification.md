@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 80383159-c2c3-4d05-92e8-9245408e5243
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: stream.streamclassdevicenotification, strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, StreamClassDeviceNotification routine [Streaming Media Devices], StreamClassDeviceNotification, strmini/StreamClassDeviceNotification
+ms.keywords: StreamClassDeviceNotification routine [Streaming Media Devices], strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, StreamClassDeviceNotification, strmini/StreamClassDeviceNotification, stream.streamclassdevicenotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,9 +71,11 @@ This is an enumeration value that contains the type of notification that the min
 
 
 
+
 #### DeviceRequestComplete
 
 Indicates that the minidriver has completed its handling of the device stream request block pointed to by the optional third argument of this routine, <i>pSrb</i>. Once the minidriver calls <b>StreamClassDeviceNotification</b> with this value, the relevant SRB is owned by the class driver, which is free to deallocate it.
+
 
 
 #### ReadyForNextDeviceRequest
@@ -81,14 +83,17 @@ Indicates that the minidriver has completed its handling of the device stream re
 Indicates that the minidriver is ready to receive another device request. 
 
 
+
 #### SignalDeviceEvent
 
 Signals that the event specified by the <i>EventEntry</i> parameter has occurred.
 
 
+
 #### SignalMultipleDeviceEvents
 
 Signals all events that match the criteria specified in the <i>EventSet</i> and <i>EventId</i> parameters.
+
 
 
 #### DeleteDeviceEvent
@@ -122,6 +127,8 @@ The minidriver uses this routine for requests or events that apply to the minidr
 ## See Also
 
 <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>
+
+
 
  
 

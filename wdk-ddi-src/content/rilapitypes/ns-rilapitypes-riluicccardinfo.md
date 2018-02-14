@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c49d538c-49c9-43ba-bc97-324706a5a5b9
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapitypes/RILUICCCARDINFO, RILUICCCARDINFO, RILUICCCARDINFO structure [Network Drivers Starting with Windows Vista], *LPRILUICCCARDINFO, netvista.riluicccardinfo_2
+ms.keywords: "*LPRILUICCCARDINFO, rilapitypes/RILUICCCARDINFO, RILUICCCARDINFO structure [Network Drivers Starting with Windows Vista], RILUICCCARDINFO, netvista.riluicccardinfo_2"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	RILUICCCARDINFO
 product: Windows
 targetos: Windows
-req.typenames: RILUICCCARDINFO, *LPRILUICCCARDINFO
+req.typenames: "*LPRILUICCCARDINFO, RILUICCCARDINFO"
 req.product: Windows 10 or later.
 ---
 

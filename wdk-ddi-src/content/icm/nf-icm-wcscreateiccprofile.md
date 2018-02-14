@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: fbe37d6c-9b91-46d8-9d29-1de3ef542c19
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: colorfnc_cb099d17-1109-4cb5-bbdc-76f1df13c60b.xml, WcsCreateIccProfile, print.wcscreateiccprofile, WcsCreateIccProfile function [Print Devices], icm/WcsCreateIccProfile
+ms.keywords: WcsCreateIccProfile function [Print Devices], WcsCreateIccProfile, icm/WcsCreateIccProfile, colorfnc_cb099d17-1109-4cb5-bbdc-76f1df13c60b.xml, print.wcscreateiccprofile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -65,6 +65,7 @@ A handle to the WCS color profile to transform. See Remarks.
 `dwOptions`
 
 A flag value that specifies the profile conversion options. This parameter must take the following value:
+
 
 
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_ACPI_GET_DEVICE_INFORMATION
 product: Windows
 targetos: Windows
-req.typenames: "*PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS"
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_GET_DEVICE_INFORMATION IOCTL
@@ -51,6 +51,7 @@ A driver for a device can use the IOCTL_ACPI_GET_DEVICE_INFORMATION device contr
 
 ### Input Buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
+
 <ul>
 <li>
 <i>IoControlCode</i> is set to IOCTL_ACPI_GET_DEVICE_INFORMATION.
@@ -87,6 +88,7 @@ Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
 
 ### Output Buffer
 Set the <b>IoBuildDeviceIoControlRequest</b> output parameters as follows:
+
 <ul>
 <li>
 <i>OutputBuffer</i> supplies a pointer to an <a href="..\acpiioct\ns-acpiioct-_acpi_device_information_output_buffer.md">ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER</a> structure that contains the output arguments from the control method.
@@ -128,6 +130,8 @@ IOCTL_ACPI_GET_DEVICE_INFORMATION can be used only at IRQL &lt;= DISPATCH_LEVEL.
 ## See Also
 
 <a href="..\acpiioct\ns-acpiioct-_acpi_device_information_output_buffer.md">ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER</a>
+
+
 
  
 

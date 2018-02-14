@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: be05a5b5-e895-402b-bf0a-cbdb75fdef1d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfdevicequeryproperty, kmdf.wdfdevicequeryproperty, WdfDeviceQueryProperty method, PFN_WDFDEVICEQUERYPROPERTY, WdfDeviceQueryProperty, DFDeviceObjectGeneralRef_e3f58989-ddd0-4402-94bf-418481869972.xml, wdfdevice/WdfDeviceQueryProperty
+ms.keywords: wdfdevice/WdfDeviceQueryProperty, PFN_WDFDEVICEQUERYPROPERTY, DFDeviceObjectGeneralRef_e3f58989-ddd0-4402-94bf-418481869972.xml, wdf.wdfdevicequeryproperty, kmdf.wdfdevicequeryproperty, WdfDeviceQueryProperty, WdfDeviceQueryProperty method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,6 +91,7 @@ A caller-supplied location that, on return, contains the size, in bytes, of the 
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceQueryProperty</b> returns STATUS_SUCCESS. Additional return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -129,7 +130,8 @@ The device's drivers have not yet reported the device's properties.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -142,6 +144,32 @@ Before receiving device property data, drivers typically call the <b>WdfDeviceQu
 It is best to use <b>WdfDeviceQueryProperty</b> only if the required buffer size is known and unchanging, because in that case the driver has to call <b>WdfDeviceQueryProperty</b> only once. If the required buffer size is unknown or varies, the driver should call <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a>. 
 
 Alternatively, you can use <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequerypropertyex.md">WdfDeviceQueryPropertyEx</a> to access device properties that are exposed through the Unified Property Model.
+
+
+#### Examples
+
+The following code example obtains a device's <b>DevicePropertyBusTypeGuid</b> property. The example calls <b>WdfDeviceQueryProperty</b> instead of <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a> because the length of a GUID is known.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>GUID  busTypeGuid;
+ULONG  resultLength = 0;
+NTSTATUS  status;
+
+status = WdfDeviceQueryProperty( 
+                                device,
+                                DevicePropertyBusTypeGuid,
+                                sizeof(GUID),
+                                (PVOID)&amp;busTypeGuid,
+                                &amp;resultLength
+                                );</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -156,9 +184,13 @@ Alternatively, you can use <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryprop
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a>
+
+
+
 <a href="..\wdffdo\nf-wdffdo-wdffdoinitqueryproperty.md">WdfFdoInitQueryProperty</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 510197cf-8eab-4e1a-8b51-c1c08c58532b
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: DFDeviceObjectGeneralRef_459b9aad-7503-4319-be67-4b713a32559e.xml, wdfdevice/WdfDeviceGetDeviceState, PFN_WDFDEVICEGETDEVICESTATE, WdfDeviceGetDeviceState, wdf.wdfdevicegetdevicestate, kmdf.wdfdevicegetdevicestate, WdfDeviceGetDeviceState method
+ms.keywords: WdfDeviceGetDeviceState method, kmdf.wdfdevicegetdevicestate, wdfdevice/WdfDeviceGetDeviceState, PFN_WDFDEVICEGETDEVICESTATE, wdf.wdfdevicegetdevicestate, DFDeviceObjectGeneralRef_459b9aad-7503-4319-be67-4b713a32559e.xml, WdfDeviceGetDeviceState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -94,6 +94,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdf_device_state_init.md">WDF_DEVICE_STATE_INIT</a>
+
+
 
  
 

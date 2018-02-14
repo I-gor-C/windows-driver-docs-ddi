@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: c003fb1d-b24b-4e79-b8f4-6ff425f77554
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugSymbols2::SetSymbolPath, IDebugSymbols interface [Windows Debugging], SetSymbolPath method, SetSymbolPath method [Windows Debugging], IDebugSymbols2 interface, debugger.setsymbolpath, SetSymbolPath method [Windows Debugging], IDebugSymbols::SetSymbolPath, dbgeng/IDebugSymbols::SetSymbolPath, IDebugSymbols2::SetSymbolPath, SetSymbolPath, SetSymbolPath method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, dbgeng/IDebugSymbols3::SetSymbolPath, IDebugSymbols3 interface [Windows Debugging], SetSymbolPath method, IDebugSymbols3::SetSymbolPath, IDebugSymbols2 interface [Windows Debugging], SetSymbolPath method, IDebugSymbols_b699ac62-be52-4f79-9762-8ed1274dfb41.xml, SetSymbolPath method [Windows Debugging], IDebugSymbols interface
+ms.keywords: SetSymbolPath, IDebugSymbols2 interface [Windows Debugging], SetSymbolPath method, dbgeng/IDebugSymbols::SetSymbolPath, IDebugSymbols3::SetSymbolPath, IDebugSymbols_b699ac62-be52-4f79-9762-8ed1274dfb41.xml, SetSymbolPath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSymbolPath, IDebugSymbols::SetSymbolPath, IDebugSymbols2::SetSymbolPath, dbgeng/IDebugSymbols2::SetSymbolPath, IDebugSymbols interface [Windows Debugging], SetSymbolPath method, IDebugSymbols2, IDebugSymbols, SetSymbolPath method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3 interface [Windows Debugging], SetSymbolPath method, SetSymbolPath method [Windows Debugging], debugger.setsymbolpath, IDebugSymbols3, SetSymbolPath method [Windows Debugging], IDebugSymbols2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -67,6 +67,7 @@ Specifies the new symbol path.  This is a string that contains symbol path eleme
 ## Return Value
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -98,15 +99,25 @@ For more information about manipulating the symbol path, see <a href="https://ms
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538110">AppendSymbolPath</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549155">GetSymbolPath</a>
 
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538110">AppendSymbolPath</a>
+
+
 
  
 

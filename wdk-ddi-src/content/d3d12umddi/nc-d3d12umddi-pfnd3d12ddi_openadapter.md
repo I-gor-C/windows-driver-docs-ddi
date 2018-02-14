@@ -68,6 +68,7 @@ HRESULT Pfnd3d12ddiOpenadapter(
 ## Return Value
 
 PFND3D12DDI_OPENADAPTER returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

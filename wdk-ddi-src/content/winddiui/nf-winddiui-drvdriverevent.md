@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 84d1f438-b6ee-4199-89ae-9384601203b3
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: DrvDriverEvent, print_interface-graphics_41c98198-e5b7-4725-9b93-d467ec38e4c3.xml, winddiui/DrvDriverEvent, print.drvdriverevent, DrvDriverEvent function [Print Devices]
+ms.keywords: print.drvdriverevent, print_interface-graphics_41c98198-e5b7-4725-9b93-d467ec38e4c3.xml, DrvDriverEvent, DrvDriverEvent function [Print Devices], winddiui/DrvDriverEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	DrvDriverEvent
 product: Windows
 targetos: Windows
-req.typenames: "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
 req.product: Windows 10 or later.
 ---
 
@@ -64,6 +64,7 @@ BOOL DrvDriverEvent(
 `dwDriverEvent`
 
 Caller-supplied bit flag indicating the event that has occurred. Valid flags are listed in the following table.
+
 <table>
 <tr>
 <th>Flag</th>
@@ -94,6 +95,7 @@ The driver has just been installed.
 `dwLevel`
 
 Caller-supplied value indicating the type of structure pointed to by the <i>pDriverInfo</i> parameter, as indicated in the following table.
+
 <table>
 <tr>
 <th><i>dwLevel</i> Value</th>
@@ -129,7 +131,8 @@ DRIVER_INFO_3
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The DRIVER_INFO_<i>N</i> structures are described in the Microsoft Windows SDK documentation.
 

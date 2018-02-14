@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 9cdcf964-9f2d-437f-8693-de5bb4bb9895
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wudfddi_types/WdfIoTargetCancelSentIo, wdf.wdf_io_target_sent_io_action__umdf_, WDF_IO_TARGET_SENT_IO_ACTION enumeration, wudfddi_types/WDF_IO_TARGET_SENT_IO_ACTION, wudfddi_types/WdfIoTargetSentIoMaximum, wudfddi_types/WdfIoTargetSentIoUndefined, WdfIoTargetWaitForSentIoToComplete, wudfddi_types/WdfIoTargetWaitForSentIoToComplete, WDF_IO_TARGET_SENT_IO_ACTION, WdfIoTargetSentIoMaximum, WdfIoTargetLeaveSentIoPending, WdfIoTargetSentIoUndefined, _WDF_IO_TARGET_SENT_IO_ACTION, umdf.wdf_io_target_sent_io_action__umdf_, wudfddi_types/WdfIoTargetLeaveSentIoPending, WdfIoTargetCancelSentIo, umdfstructs_c5c41acc-35ac-4894-bb1b-af3b3a9b75d1.xml
+ms.keywords: WdfIoTargetCancelSentIo, WDF_IO_TARGET_SENT_IO_ACTION enumeration, wudfddi_types/WdfIoTargetWaitForSentIoToComplete, WDF_IO_TARGET_SENT_IO_ACTION, wudfddi_types/WdfIoTargetLeaveSentIoPending, WdfIoTargetLeaveSentIoPending, wudfddi_types/WDF_IO_TARGET_SENT_IO_ACTION, wdf.wdf_io_target_sent_io_action__umdf_, WdfIoTargetSentIoMaximum, wudfddi_types/WdfIoTargetCancelSentIo, WdfIoTargetSentIoUndefined, umdf.wdf_io_target_sent_io_action__umdf_, wudfddi_types/WdfIoTargetSentIoUndefined, WdfIoTargetWaitForSentIoToComplete, umdfstructs_c5c41acc-35ac-4894-bb1b-af3b3a9b75d1.xml, _WDF_IO_TARGET_SENT_IO_ACTION, wudfddi_types/WdfIoTargetSentIoMaximum
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -108,6 +108,8 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
     ## See Also
 
         <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_sent_io_action.md">WDF_IO_TARGET_SENT_IO_ACTION</a>
+
+
 
  
 

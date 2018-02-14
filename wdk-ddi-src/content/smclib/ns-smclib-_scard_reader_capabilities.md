@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: f55b74d0-d545-419a-87fb-c320f789aaf4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: smclib/*PSCARD_READER_CAPABILITIES, _SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], SCARD_READER_CAPABILITIES, smartcrd.scard_reader_capabilities, *PSCARD_READER_CAPABILITIES, smclib/SCARD_READER_CAPABILITIES, scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml
+ms.keywords: smclib/*PSCARD_READER_CAPABILITIES, smartcrd.scard_reader_capabilities, smclib/SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], *PSCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml, _SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -97,6 +97,7 @@ If <b>TRUE</b>, indicates that the smart card was confiscated.
 `Channel`
 
 Contains the logical channel number. This member is optional. The exact meaning of this member depends on the type of smart card, as shown in the following table. 
+
 <table>
 <tr>
 <th>Type of smart card</th>
@@ -152,7 +153,8 @@ Device number
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information, see Part 3 of the <i>Interoperability Specification for ICCs and Personal Computer Systems</i>.
 
@@ -167,6 +169,7 @@ A structure with the following members:
 `CurrentState`
 
 This member contains the status of the card and is required. This member can have one of the values listed in the following table.
+
 <table>
 <tr>
 <th>Status</th>
@@ -242,7 +245,8 @@ A smart card is inserted and a protocol has been selected.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>.
 
@@ -261,6 +265,7 @@ Contains the maximum buffer size of the reader. This value informs the smart car
 `MechProperties`
 
 Contains a value that is formed by taking a bitwise OR of all applicable reader properties shown in the following table. This member is optional. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -305,6 +310,7 @@ Indicates the type of power management that the card supports. A value of zero i
 `ReaderType`
 
 This member contains the reader type and is required. This member can have one of the values in the following table.
+
 <table>
 <tr>
 <th>Value</th>

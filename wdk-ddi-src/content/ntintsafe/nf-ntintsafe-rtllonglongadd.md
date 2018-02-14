@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 94FD1DD3-0799-4E90-A115-9EF065433B05
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtllonglongadd, ntintsafe/RtlLongLongAdd, RtlLongLongAdd, RtlLongLongAdd function [Kernel-Mode Driver Architecture]
+ms.keywords: RtlLongLongAdd function [Kernel-Mode Driver Architecture], kernel.rtllonglongadd, RtlLongLongAdd, ntintsafe/RtlLongLongAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,6 +81,7 @@ None
 This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlIntPtrAdd
 </li>

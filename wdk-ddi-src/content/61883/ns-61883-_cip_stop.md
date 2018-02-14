@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: FE396C2C-B099-47F4-9C27-93D420D54103
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: 61883/CIP_STOP, *PCIP_STOP, IEEE.cip_stop, CIP_STOP structure [Buses], 61883/PCIP_STOP, PCIP_STOP, CIP_STOP, _CIP_STOP, PCIP_STOP structure pointer [Buses]
+ms.keywords: CIP_STOP, _CIP_STOP, CIP_STOP structure [Buses], PCIP_STOP, PCIP_STOP structure pointer [Buses], IEEE.cip_stop, 61883/PCIP_STOP, *PCIP_STOP, 61883/CIP_STOP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	CIP_STOP
 product: Windows
 targetos: Windows
-req.typenames: "*PCIP_STOP, CIP_STOP"
+req.typenames: CIP_STOP, *PCIP_STOP
 ---
 
 # _CIP_STOP structure
@@ -73,6 +73,8 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
+
+
 
  
 

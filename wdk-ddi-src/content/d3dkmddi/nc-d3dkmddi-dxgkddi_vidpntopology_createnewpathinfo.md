@@ -73,6 +73,7 @@ NTSTATUS DxgkddiVidpntopologyCreatenewpathinfo(
 ## Return Value
 
 The <b>pfnCreateNewPathInfo</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -105,6 +106,7 @@ The handle supplied in <i>hVidPnTopology </i>was invalid.
 ## Remarks
 
 After you call <b>pfnCreateNewPathInfo</b> to obtain a D3DKMDT_VIDPN_PRESENT_PATH structure, you must do one, but not both, of the following:
+
 <ul>
 <li>
 Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_addpath.md">pfnAddPath</a>.
@@ -114,7 +116,8 @@ Populate the structure and pass it to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_v
 Release the structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_releasepathinfo.md">pfnReleasePathInfo</a>.
 
 </li>
-</ul>The D3DKMDT_HVIDPNTOPOLOGY data type is defined in <i>D3dkmdt.h</i>.
+</ul>
+The D3DKMDT_HVIDPNTOPOLOGY data type is defined in <i>D3dkmdt.h</i>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -127,9 +130,15 @@ Release the structure by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnt
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
 
+
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_releasepathinfo.md">pfnReleasePathInfo</a>
 
+
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_addpath.md">pfnAddPath</a>
+
+
 
  
 

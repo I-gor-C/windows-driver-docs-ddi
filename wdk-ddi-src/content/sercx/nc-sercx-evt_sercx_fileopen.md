@@ -40,7 +40,7 @@ apiname:
 -	EvtSerCxFileOpen
 product: Windows
 targetos: Windows
-req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.typenames: "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
 req.product: Windows 10 or later.
 ---
 
@@ -78,6 +78,56 @@ To register an <i>EvtSerCxFileOpen</i> callback function, the driver must call t
 
 For more information, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
+
+#### Examples
+
+The function type for this callback is declared in Sercx.h, as follows.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef NTSTATUS
+  EVT_SERCX_FILEOPEN(
+    __in WDFDEVICE Device
+    );</pre>
+</td>
+</tr>
+</table></span></div>
+To define an <i>EvtSerCxFileOpen</i> callback function that is named <code>MyEvtSerCxFileOpen</code>, you must first provide a function declaration that <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV) and other verification tools require, as follows.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>EVT_SERCX_FILEOPEN MyEvtSerCxFileOpen;</pre>
+</td>
+</tr>
+</table></span></div>
+Then, implement your callback function as follows.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS
+  MyEvtSerCxFileOpen(
+    __in WDFDEVICE Device
+    )
+{ ... }</pre>
+</td>
+</tr>
+</table></span></div>
+For more information about SDV requirements for function declarations, see <a href="https://msdn.microsoft.com/73a408ba-0219-4fde-8dad-ca330e4e67c3">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -89,6 +139,8 @@ For more information, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea
 ## See Also
 
 <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
+
+
 
  
 

@@ -79,6 +79,7 @@ The size, in bytes, of the address buffer for input, and the size, in bytes, of 
 
 The 
      <i>NdkGetListenerLocalAddress</i> function returns one of the following NTSTATUS codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -135,7 +136,11 @@ An error occurred.
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_listen.md">NDK_FN_LISTEN</a>
 
+
+
 <a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
+
+
 
  
 

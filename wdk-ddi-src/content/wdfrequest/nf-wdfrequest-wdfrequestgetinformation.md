@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: fd5f29f7-e9c6-48c4-8704-5db37b8c6337
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfrequestgetinformation, wdfrequest/WdfRequestGetInformation, PFN_WDFREQUESTGETINFORMATION, WdfRequestGetInformation, DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml, kmdf.wdfrequestgetinformation, WdfRequestGetInformation method
+ms.keywords: kmdf.wdfrequestgetinformation, wdfrequest/WdfRequestGetInformation, WdfRequestGetInformation, wdf.wdfrequestgetinformation, DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml, PFN_WDFREQUESTGETINFORMATION, WdfRequestGetInformation method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,34 @@ If your driver calls <b>WdfRequestGetInformation</b> after it calls <a href="..\
 
 For more information about <b>WdfRequestGetInformation</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 
+
+#### Examples
+
+The following code example sends an I/O request to an I/O target and then obtains status information that the I/O target provided.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>ULONG_PTR  informationRetrieved = NULL;
+
+status = WdfIoTargetSendWriteSynchronously(
+                                           ioTarget,
+                                           request,
+                                           &amp;outputMemoryDescriptor,
+                                           NULL,
+                                           NULL,
+                                           &amp;bytesWritten
+                                           );
+if (NT_SUCCESS(status)) {
+    informationRetrieved = WdfRequestGetInformation(request);
+}</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -97,7 +125,11 @@ For more information about <b>WdfRequestGetInformation</b>, see <a href="https:/
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetinformation.md">WdfRequestSetInformation</a>
 
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
+
+
 
  
 

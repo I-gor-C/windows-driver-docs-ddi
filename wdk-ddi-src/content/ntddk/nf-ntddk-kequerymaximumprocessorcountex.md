@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6ccc0f8c-d7b7-4043-8580-d35345d884cc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_594dbccc-80ed-4d33-a8ed-a6df6bfdfc09.xml, wdm/KeQueryMaximumProcessorCountEx, KeQueryMaximumProcessorCountEx, kernel.kequerymaximumprocessorcountex, KeQueryMaximumProcessorCountEx routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/KeQueryMaximumProcessorCountEx, KeQueryMaximumProcessorCountEx, k105_594dbccc-80ed-4d33-a8ed-a6df6bfdfc09.xml, KeQueryMaximumProcessorCountEx routine [Kernel-Mode Driver Architecture], kernel.kequerymaximumprocessorcountex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	KeQueryMaximumProcessorCountEx
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -86,9 +86,13 @@ A related routine, <a href="..\wdm\nf-wdm-kequerymaximumprocessorcount.md">KeQue
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+
+
+
 <a href="..\wdm\nf-wdm-kequerymaximumprocessorcount.md">KeQueryMaximumProcessorCount</a>
 
-<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+
 
  
 

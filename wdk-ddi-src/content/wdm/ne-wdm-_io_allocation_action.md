@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 245d35a1-e877-4446-a0da-e50ece3656b1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, wdm/DeallocateObjectKeepRegisters, DeallocateObjectKeepRegisters, kernel.io_allocation_action, wdm/IO_ALLOCATION_ACTION, KeepObject, _IO_ALLOCATION_ACTION, DeallocateObject, sysenum_26c04e01-0e17-4f1b-93c9-b9ad8d9ca4d5.xml, IO_ALLOCATION_ACTION enumeration [Kernel-Mode Driver Architecture], PIO_ALLOCATION_ACTION, wdm/PIO_ALLOCATION_ACTION, wdm/KeepObject, wdm/DeallocateObject, PIO_ALLOCATION_ACTION enumeration pointer [Kernel-Mode Driver Architecture]
+ms.keywords: IO_ALLOCATION_ACTION enumeration [Kernel-Mode Driver Architecture], KeepObject, DeallocateObject, sysenum_26c04e01-0e17-4f1b-93c9-b9ad8d9ca4d5.xml, *PIO_ALLOCATION_ACTION, DeallocateObjectKeepRegisters, PIO_ALLOCATION_ACTION enumeration pointer [Kernel-Mode Driver Architecture], wdm/PIO_ALLOCATION_ACTION, _IO_ALLOCATION_ACTION, kernel.io_allocation_action, wdm/KeepObject, wdm/DeallocateObject, wdm/DeallocateObjectKeepRegisters, PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION, wdm/IO_ALLOCATION_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Called at PASSIVE_LEVEL.
 topictype:
 -	APIRef
 -	kbSyntax
@@ -40,7 +40,7 @@ apiname:
 -	IO_ALLOCATION_ACTION
 product: Windows
 targetos: Windows
-req.typenames: "*PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION"
+req.typenames: IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION
 req.product: Windows 10 or later.
 ---
 

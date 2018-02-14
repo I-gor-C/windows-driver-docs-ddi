@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: b5de2450-8003-4866-86e8-1fd251e1552c
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.getsymbolnamewide, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2::GetSymbolNameWide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide, GetSymbolNameWide
+ms.keywords: IDebugSymbolGroup2::GetSymbolNameWide, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, debugger.getsymbolnamewide, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -106,7 +106,8 @@ The method was successful. However, the name of the symbol did not fit in the bu
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -123,9 +124,13 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
 
  
 

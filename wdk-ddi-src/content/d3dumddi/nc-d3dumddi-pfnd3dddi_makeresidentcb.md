@@ -73,6 +73,7 @@ A handle to the display device.
 ## Return Value
 
 <i>pfnMakeResidentCb</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -136,9 +137,13 @@ For the DirectX 12.0 user mode driver, <i>pfnMakeResidentCb</i> behaves slightly
 
 ## See Also
 
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident.md">D3DDDI_MAKERESIDENT</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_evictcb.md">pfnEvictCb</a>
 
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident.md">D3DDDI_MAKERESIDENT</a>
+
 
  
 

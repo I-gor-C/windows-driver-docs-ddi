@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 832da270-e1e1-41bf-a9cf-0b363c0d2d74
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsReadPreviousRestartArea routine [Kernel-Mode Driver Architecture], wdm/ClfsReadPreviousRestartArea, Clfs_884a8a2f-adbf-415b-968e-2f82c3f5d7fa.xml, kernel.clfsreadpreviousrestartarea, ClfsReadPreviousRestartArea
+ms.keywords: Clfs_884a8a2f-adbf-415b-968e-2f82c3f5d7fa.xml, ClfsReadPreviousRestartArea routine [Kernel-Mode Driver Architecture], wdm/ClfsReadPreviousRestartArea, ClfsReadPreviousRestartArea, kernel.clfsreadpreviousrestartarea
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -107,11 +107,17 @@ With the <b>ReadPreviousLogRestartArea</b> routine, clients can implement a form
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-clfswriterestartarea.md">ClfsWriteRestartArea</a>
+
+
+
 <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
+
+
 
 <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 
-<a href="..\wdm\nf-wdm-clfswriterestartarea.md">ClfsWriteRestartArea</a>
+
 
  
 

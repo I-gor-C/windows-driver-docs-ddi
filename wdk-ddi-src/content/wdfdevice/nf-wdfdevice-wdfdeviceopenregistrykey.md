@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0ccae1e9-23d4-44cd-ae5a-985490db1d86
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfDeviceOpenRegistryKey method, WdfDeviceOpenRegistryKey, kmdf.wdfdeviceopenregistrykey, DFDeviceObjectGeneralRef_ab116304-7951-4b19-b197-3943a4a415db.xml, wdfdevice/WdfDeviceOpenRegistryKey, wdf.wdfdeviceopenregistrykey
+ms.keywords: wdf.wdfdeviceopenregistrykey, kmdf.wdfdeviceopenregistrykey, DFDeviceObjectGeneralRef_ab116304-7951-4b19-b197-3943a4a415db.xml, WdfDeviceOpenRegistryKey method, WdfDeviceOpenRegistryKey, wdfdevice/WdfDeviceOpenRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,6 +74,7 @@ A handle to a framework device object.
 `DeviceInstanceKeyType`
 
 Specifies which key or subkey to open.  This is a bitwise OR of the following flags (which are defined in <i>Wdm.h</i>).
+
 <table>
 <tr>
 <th>DeviceInstanceKeyType flag</th>
@@ -144,6 +145,7 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS
 A KMDF driver typically requests <b>KEY_READ</b>, <b>KEY_WRITE</b>, or <b>KEY_READ | KEY_WRITE</b>.
 
 If you are writing a UMDF driver, use the following table.
+
 <table>
 <tr>
 <th>DeviceInstanceKeyType</th>
@@ -189,7 +191,8 @@ If you are writing a UMDF driver, use the following table.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 As a best practice, ask for only the types of access that your driver needs.
 
@@ -205,6 +208,7 @@ A pointer to a location that receives a handle to the new registry-key object.
 ## Return Value
 
 <b>WdfDeviceOpenRegistryKey</b> returns STATUS_SUCCESS if the operation succeeds. Otherwise, the method might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -255,7 +259,8 @@ The specified registry key does not exist.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For a list of other return values that the <b>WdfDeviceOpenRegistryKey</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
@@ -271,6 +276,13 @@ When the driver has finished using the registry key that it opened with <b>WdfDe
 
 For more information about the registry, hardware and software keys, and registry objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
 
+
+#### Examples
+
+For code examples that use <b>WdfDeviceOpenRegistryKey</b>, see <a href="..\wdfregistry\nf-wdfregistry-wdfregistrycreatekey.md">WdfRegistryCreateKey</a>, <a href="..\wdfregistry\nf-wdfregistry-wdfregistryopenkey.md">WdfRegistryOpenKey</a>, and <a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryvalue.md">WdfRegistryQueryValue</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -285,6 +297,8 @@ For more information about the registry, hardware and software keys, and registr
 ## See Also
 
 <a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
+
+
 
  
 

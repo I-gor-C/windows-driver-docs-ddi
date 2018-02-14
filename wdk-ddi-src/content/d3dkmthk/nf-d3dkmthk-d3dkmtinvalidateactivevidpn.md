@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a7cac46d-b64d-4362-99ab-179aa6525ba2
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTInvalidateActiveVidPn, display.d3dkmtinvalidateactivevidpn, OpenGL_Functions_3c74c218-cf17-4a86-af8e-da565b3cffd4.xml, d3dkmthk/D3DKMTInvalidateActiveVidPn, D3DKMTInvalidateActiveVidPn function [Display Devices]
+ms.keywords: D3DKMTInvalidateActiveVidPn, D3DKMTInvalidateActiveVidPn function [Display Devices], display.d3dkmtinvalidateactivevidpn, d3dkmthk/D3DKMTInvalidateActiveVidPn, OpenGL_Functions_3c74c218-cf17-4a86-af8e-da565b3cffd4.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTInvalidateActiveVidPn</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -146,7 +147,8 @@ The display miniport driver did not recommend a VidPN to replace the VidPN curre
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other NTSTATUS values.
 
@@ -167,9 +169,13 @@ The OpenGL ICD can call <b>D3DKMTInvalidateActiveVidPn</b> for display modes (fo
 
 ## See Also
 
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_invalidateactivevidpn.md">D3DKMT_INVALIDATEACTIVEVIDPN</a>
+
+
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_invalidateactivevidpn.md">D3DKMT_INVALIDATEACTIVEVIDPN</a>
+
 
  
 

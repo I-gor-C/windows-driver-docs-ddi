@@ -7,8 +7,8 @@ old-location: sensors\sensor_value_pair.htm
 old-project: sensors
 ms.assetid: 0D0B06FE-BE88-4FB2-92FC-8B6D396CEFE8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR structure pointer [Sensor Devices], sensorsdef/PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, sensorsdef/SENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR structure [Sensor Devices], sensors.sensor_value_pair
+ms.date: 2/8/2018
+ms.keywords: sensors.sensor_value_pair, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR structure [Sensor Devices], SENSOR_VALUE_PAIR, sensorsdef/SENSOR_VALUE_PAIR, sensorsdef/PSENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR structure pointer [Sensor Devices], PSENSOR_VALUE_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	SENSOR_VALUE_PAIR
 product: Windows
 targetos: Windows
-req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.typenames: "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
 req.product: Windows 10 or later.
 ---
 
@@ -68,6 +68,7 @@ A value that is associated with the property key element.
 
 ## Remarks
 The Value is one of the VT types (VARTYPE) that are supported by the sensor class extension (CX):
+
 <ul>
 <li>VT_I1</li>
 <li>VT_UI1</li>

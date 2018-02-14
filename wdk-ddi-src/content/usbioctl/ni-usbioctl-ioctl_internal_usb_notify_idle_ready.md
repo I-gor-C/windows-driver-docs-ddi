@@ -7,7 +7,7 @@ old-location: buses\ioctl_internal_usb_notify_idle_ready.htm
 old-project: usbref
 ms.assetid: ed013cd2-27b3-4f40-b8a7-536384c6bbac
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
+ms.date: 2/8/2018
 ms.keywords: buses.ioctl_internal_usb_notify_idle_ready, IOCTL_INTERNAL_USB_NOTIFY_IDLE_READY control code [Buses], IOCTL_INTERNAL_USB_NOTIFY_IDLE_READY, usbioctl/IOCTL_INTERNAL_USB_NOTIFY_IDLE_READY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,9 @@ The <b>IOCTL_INTERNAL_USB_NOTIFY_IDLE_READY</b> IOCTL is used by the USB hub dri
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 

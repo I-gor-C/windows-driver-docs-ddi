@@ -69,7 +69,9 @@ In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_NFP_DISABLE
 product: Windows
 targetos: Windows
-req.typenames: "*PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO"
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_DISABLE IOCTL
@@ -69,7 +69,9 @@ None
 
 ### Status Block
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
+
 Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## Remarks
@@ -112,9 +114,15 @@ The driver MUST complete all pended <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_get_n
 
 <a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
 
-<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) overall design guide</a>
+
 
 <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_enable.md">IOCTL_NFP_ENABLE</a>
+
+
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) overall design guide</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 3d129a30-a892-4f4d-b8e3-f277d97980f4
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: DrvSplDeviceCaps function [Print Devices], print.drvspldevicecaps, DrvSplDeviceCaps, winddiui/DrvSplDeviceCaps, print_interface-graphics_8c345fd4-e513-44ff-94b0-2f035db6a022.xml
+ms.keywords: print.drvspldevicecaps, winddiui/DrvSplDeviceCaps, DrvSplDeviceCaps, DrvSplDeviceCaps function [Print Devices], print_interface-graphics_8c345fd4-e513-44ff-94b0-2f035db6a022.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	DrvSplDeviceCaps
 product: Windows
 targetos: Windows
-req.typenames: "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
 req.product: Windows 10 or later.
 ---
 
@@ -110,6 +110,8 @@ This function must be defined in the .def file as DrvSplDeviceCaps @ 254, becaus
 ## See Also
 
 <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a>
+
+
 
  
 

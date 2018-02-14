@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 8f3817e7-8409-4b75-be28-ac7fe32145cb
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.setvalues, IDebugRegisters2 interface [Windows Debugging], SetValues method, dbgeng/IDebugRegisters2::SetValues, SetValues method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters interface [Windows Debugging], SetValues method, IDebugRegisters2, SetValues method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::SetValues, IDebugRegisters2::SetValues, SetValues, IDebugRegisters_0c188698-35b8-4c8f-ad8c-1218695845a8.xml, SetValues method [Windows Debugging], IDebugRegisters::SetValues
+ms.keywords: SetValues, IDebugRegisters_0c188698-35b8-4c8f-ad8c-1218695845a8.xml, SetValues method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::SetValues, IDebugRegisters::SetValues, dbgeng/IDebugRegisters2::SetValues, IDebugRegisters2::SetValues, IDebugRegisters2, SetValues method [Windows Debugging], IDebugRegisters2 interface, SetValues method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], SetValues method, IDebugRegisters interface [Windows Debugging], SetValues method, debugger.setvalues, IDebugRegisters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,6 +81,7 @@ Specifies the array that contains values to which to set the registers.  The num
 ## Return Value
 
 This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549771">HRESULT Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,13 +145,21 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff597642">SetValue</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556884">SetValues2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff597642">SetValue</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+
 
  
 

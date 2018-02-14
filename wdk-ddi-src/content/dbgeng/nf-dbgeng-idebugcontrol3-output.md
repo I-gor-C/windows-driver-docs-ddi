@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 2c748325-3718-4fcc-98a3-3318d361ba6e
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugControl2::Output, dbgeng/IDebugControl::Output, debugger.output, IDebugControl3 interface [Windows Debugging], Output method, dbgeng/IDebugControl2::Output, IDebugControl3::Output, IDebugControl_4b29317b-e521-4deb-84dc-fc4bb7d6ca90.xml, IDebugControl3, Output, Output method [Windows Debugging], IDebugControl interface, Output method [Windows Debugging], IDebugControl3 interface, Output method [Windows Debugging], IDebugControl2 interface [Windows Debugging], Output method, IDebugControl::Output, IDebugControl interface [Windows Debugging], Output method, Output method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::Output
+ms.keywords: IDebugControl2, IDebugControl3 interface [Windows Debugging], Output method, Output method [Windows Debugging], IDebugControl2 interface, IDebugControl2::Output, dbgeng/IDebugControl2::Output, Output, IDebugControl3::Output, Output method [Windows Debugging], IDebugControl_4b29317b-e521-4deb-84dc-fc4bb7d6ca90.xml, IDebugControl3, IDebugControl, IDebugControl::Output, Output method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], Output method, dbgeng/IDebugControl::Output, dbgeng/IDebugControl3::Output, IDebugControl2 interface [Windows Debugging], Output method, Output method [Windows Debugging], IDebugControl interface, debugger.output
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Specifies the output-type bit field.  See <a href="https://msdn.microsoft.com/li
 Specifies the format string, as in <b>printf</b>.  In general, conversion characters work exactly as in C. For the floating-point conversion characters the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It cannot have any modifiers and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
+
 <table>
 <tr>
 <th>Character</th>
@@ -249,6 +250,7 @@ String that contains the name of the specified symbol (and displacement, if any)
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -280,19 +282,33 @@ When generating very large output strings, it is possible to reach the limits of
 
 ## See Also
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564716">.printf</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553280">OutputVaList</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564716">.printf</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
+
+
+
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
 
  
 

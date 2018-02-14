@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 57A8E522-D787-4663-B2E3-46E8430388B7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: 1/SerCxGetWaitMask, SerCxGetWaitMask, serports.sercxgetwaitmask, SerCxGetWaitMask method [Serial Ports]
+ms.keywords: SerCxGetWaitMask, serports.sercxgetwaitmask, SerCxGetWaitMask method [Serial Ports], 1/SerCxGetWaitMask
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,9 +86,15 @@ The wait mask indicates the types of events that can trigger completion of a wai
 
 <a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
 
+
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>
 
+
+
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: AFDDB789-E412-4EF7-8C77-2020EF81DF39
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PAGE_NOACCESS, MEM_PRIVATE, MEM_FREE, MEM_MAPPED, _MEMORY_BASIC_INFORMATION, MEM_RESERVE, MEM_COMMIT, PAGE_EXECUTE, ntifs/PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], PAGE_NOCACHE, ntifs/MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION, PMEMORY_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], MEM_IMAGE, PAGE_READONLY, PAGE_READWRITE, MEMORY_BASIC_INFORMATION, PAGE_GUARD, kernel.memory_basic_information, PAGE_WRITECOMBINE, PMEMORY_BASIC_INFORMATION
+ms.keywords: ntifs/MEMORY_BASIC_INFORMATION, MEM_IMAGE, _MEMORY_BASIC_INFORMATION, MEM_RESERVE, MEM_MAPPED, MEM_PRIVATE, MEM_FREE, MEMORY_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], PAGE_NOCACHE, kernel.memory_basic_information, PMEMORY_BASIC_INFORMATION, PAGE_EXECUTE, *PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION, PAGE_READONLY, ntifs/PMEMORY_BASIC_INFORMATION, PAGE_GUARD, PAGE_WRITECOMBINE, PAGE_READWRITE, PAGE_NOACCESS, PMEMORY_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], MEM_COMMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	MEMORY_BASIC_INFORMATION
 product: Windows
 targetos: Windows
-req.typenames: MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION
+req.typenames: "*PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION"
 ---
 
 # _MEMORY_BASIC_INFORMATION structure
@@ -71,6 +71,7 @@ A pointer to the base address of a range of allocated pages. The page pointed to
 
 The memory protection option when the region was initially allocated. This member can be one of the 
 following constants defined in wdm.h, or 0 if the caller does not have access.
+
 <table>
 <tr>
 <th>Value</th>
@@ -190,6 +191,7 @@ The size of the region in bytes beginning at
 The state of the pages in the region. This member can be one of the following values. 
 
 
+
 <table>
 <tr>
 <th>State</th>
@@ -233,6 +235,7 @@ Indicates reserved pages where a range of the process's virtual address space is
 `Type`
 
 The type of pages in the region. The following types are defined. 
+
 
 
 <table>
@@ -285,6 +288,8 @@ Indicates that the memory pages within the region are private (that is, not shar
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-zwqueryvirtualmemory.md">ZwQueryVirtualMemory</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 73348405-0cc1-412a-b9b1-cfcc300190d7
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: InitializePrintMonitor2, InitializePrintMonitor2 function [Print Devices], print.initializeprintmonitor2, spoolfnc_34b0ce7d-8bb5-4cb1-9539-cd3b1b0113f4.xml, winsplp/InitializePrintMonitor2
+ms.keywords: print.initializeprintmonitor2, InitializePrintMonitor2 function [Print Devices], InitializePrintMonitor2, winsplp/InitializePrintMonitor2, spoolfnc_34b0ce7d-8bb5-4cb1-9539-cd3b1b0113f4.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,6 +77,7 @@ If the operation succeeds, the function should return a pointer to a <a href="..
 The <b>InitializePrintMonitor2</b> function must be exported by <a href="https://msdn.microsoft.com/26ba1c22-390a-4187-b67a-3f3497964f8e">language monitors</a> and by port monitor server DLLs. The function is called immediately after the monitor DLL is loaded, and is not called again until the DLL is reloaded. Its purposes are to allow the monitor to initialize itself, and to provide the spooler with pointers to internal monitor functions. Function pointers are contained in a <a href="..\winsplp\ns-winsplp-_monitor2.md">MONITOR2</a> structure.
 
 The <a href="..\winsplp\ns-winsplp-_monitor2.md">MONITOR2</a> structure is larger in Windows XP than it was in Windows 2000. In order to ensure that a monitor developed with the Windows XP Driver Development Kit (DDK) will install on Windows XP and Windows 2000, the monitor must do the following:
+
 <ul>
 <li>
 Perform a run-time check to determine which operating system version the monitor is running on.
@@ -86,7 +87,9 @@ Perform a run-time check to determine which operating system version the monitor
 If the monitor is running on Windows 2000, it must set the <b>cbSize</b> member of the MONITOR2 structure to MONITOR2_SIZE_WIN2K (defined in Winsplp.h), the size appropriate for Windows 2000 version of this structure.
 
 </li>
-</ul>The following function determines whether the current operating system version is Windows 2000.
+</ul>
+The following function determines whether the current operating system version is Windows 2000.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -117,7 +120,9 @@ If the monitor is running on Windows 2000, it must set the <b>cbSize</b> member 
 }</pre>
 </td>
 </tr>
-</table></span></div>For a monitor that is loading on Windows 2000, the following code sets the MONITOR2 structure's <b>cbSize</b> member appropriately.
+</table></span></div>
+For a monitor that is loading on Windows 2000, the following code sets the MONITOR2 structure's <b>cbSize</b> member appropriately.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -140,6 +145,8 @@ If the monitor is running on Windows 2000, it must set the <b>cbSize</b> member 
 ## See Also
 
 <a href="..\winsplp\ns-winsplp-_monitorinit.md">MONITORINIT</a>
+
+
 
  
 

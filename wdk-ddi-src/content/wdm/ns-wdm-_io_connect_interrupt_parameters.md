@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 450c2e2b-56fa-4896-ba81-0f84f7e3051d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: "*PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/PIO_CONNECT_INTERRUPT_PARAMETERS, kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, _IO_CONNECT_INTERRUPT_PARAMETERS"
+ms.keywords: PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], PIO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, IO_CONNECT_INTERRUPT_PARAMETERS, wdm/PIO_CONNECT_INTERRUPT_PARAMETERS, _IO_CONNECT_INTERRUPT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -100,6 +100,7 @@ typedef struct _IO_CONNECT_INTERRUPT_PARAMETERS {
 `Version`
 
 On input, specifies the particular operation to be performed by <b>IoConnectInterruptEx</b>, as follows.
+
 <table>
 <tr>
 <th>Version value</th>
@@ -135,9 +136,11 @@ Registers an <a href="https://msdn.microsoft.com/library/windows/hardware/ff5479
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 On return, the routine provides information about the operation, as follows.
+
 <table>
 <tr>
 <th>Version value</th>
@@ -186,6 +189,8 @@ The <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> rou
 ## See Also
 
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
+
+
 
  
 

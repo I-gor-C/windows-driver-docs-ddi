@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 1C8610F5-A397-4CDE-890D-7AA5AD94A6AF
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: "*PSERIAL_COMMPROP, serports.serial_commprop, PSERIAL_COMMPROP, _SERIAL_COMMPROP, SERIAL_COMMPROP, SERIAL_COMMPROP structure [Serial Ports], PSERIAL_COMMPROP structure pointer [Serial Ports], ntddser/PSERIAL_COMMPROP, ntddser/SERIAL_COMMPROP"
+ms.keywords: ntddser/SERIAL_COMMPROP, ntddser/PSERIAL_COMMPROP, _SERIAL_COMMPROP, PSERIAL_COMMPROP, PSERIAL_COMMPROP structure pointer [Serial Ports], SERIAL_COMMPROP, serports.serial_commprop, SERIAL_COMMPROP structure [Serial Ports], *PSERIAL_COMMPROP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	SERIAL_COMMPROP
 product: Windows
 targetos: Windows
-req.typenames: SERIAL_COMMPROP, *PSERIAL_COMMPROP
+req.typenames: "*PSERIAL_COMMPROP, SERIAL_COMMPROP"
 ---
 
 # _SERIAL_COMMPROP structure
@@ -92,6 +92,7 @@ For SerCx2 and SerCx, the associated serial controller driver typically sets thi
 The maximum acceptable baud rate. An <a href="https://msdn.microsoft.com/4A9B80F1-4DE1-4D35-ADDF-90058A4F8388">extension-based serial controller driver</a> sets this member to a baud rate expressed in bits per second (bps). For example, if the serial controller supports a maximum baud rate of 115,200 bps, the driver sets <b>MaxBaud</b> = 115200.
 
 However, Serial.sys and many older serial controller drivers set <b>MaxBaud</b> to one of the SERIAL_BAUD_<i>XXX</i> flag bits that are defined in the Ntddser.h header file. The following values are defined for this member.
+
 <table>
 <tr>
 <th>Value</th>
@@ -198,6 +199,7 @@ The version of this structure. The current version number is 2.
 `ProvCapabilities`
 
 The capabilities offered by the provider. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+
 <table>
 <tr>
 <th>Value</th>
@@ -260,6 +262,7 @@ Provider-specific data. Applications should ignore this member unless provider-s
 `ProvSubType`
 
 The specific communications provider type. When the <b>ServiceMask</b> member is set to SERIAL_SP_SERIALCOMM, <b>ProvSubType</b> is set to one of the following values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -336,6 +339,7 @@ Serial controller drivers set the SERIAL_BAUD_USER flag bit in the <b>SettableBa
 `SettableData`
 
 The number of data bits that can be set. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+
 <table>
 <tr>
 <th>Value</th>
@@ -370,6 +374,7 @@ The number of data bits that can be set. This member is set to zero or to the bi
 `SettableParams`
 
 A bitmask that indicates the communication parameter that can be changed. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+
 <table>
 <tr>
 <th>Value</th>
@@ -408,6 +413,7 @@ A bitmask that indicates the communication parameter that can be changed. This m
 `SettableStopParity`
 
 The stop-bit and parity settings that can be selected. This member is set to zero or to the bitwise-OR of one or more of the following flag bits.
+
 <table>
 <tr>
 <th>Value</th>
@@ -458,6 +464,8 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_pr
 ## See Also
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_properties.md">IOCTL_SERIAL_GET_PROPERTIES</a>
+
+
 
  
 

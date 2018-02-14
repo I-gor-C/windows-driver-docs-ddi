@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: E334FEE1-DD78-4906-ADFA-1B496F91BA28
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface [Streaming Media Devices], KsSetPinFramingCache method, KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface, KsSetPinFramingCache, ksproxy/IKsPinPipe::KsSetPinFramingCache, stream.ikspinpipe_kssetpinframingcache, IKsPinPipe::KsSetPinFramingCache, IKsPinPipe
+ms.keywords: ksproxy/IKsPinPipe::KsSetPinFramingCache, IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPinFramingCache method, KsSetPinFramingCache method [Streaming Media Devices], KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface, KsSetPinFramingCache, IKsPinPipe::KsSetPinFramingCache, stream.ikspinpipe_kssetpinframingcache
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,6 +87,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\ksproxy\nn-ksproxy-ikspinpipe.md">IKsPinPipe</a>
+
+
 
  
 

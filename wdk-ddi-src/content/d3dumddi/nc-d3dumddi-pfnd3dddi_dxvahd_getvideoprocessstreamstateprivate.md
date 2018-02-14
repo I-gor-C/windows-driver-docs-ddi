@@ -73,6 +73,7 @@ HRESULT Pfnd3dddiDxvahdGetvideoprocessstreamstateprivate(
 ## Return Value
 
 The <i>GetVideoProcessStreamStatePrivate</i> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,6 +114,8 @@ The stream-state data is successfully retrieved.
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_getvideoprocessstreamstateprivate.md">D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE</a>
+
+
 
  
 

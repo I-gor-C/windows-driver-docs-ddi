@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 2FFF9B54-6E77-4D46-B6C0-5BADD208BFCC
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugOutputCallbacks2, dbgeng/IDebugOutputCallbacks2::Output2, Output2 method [Windows Debugging], DEBUG_OUTCBI_DML, DEBUG_OUTCBI_TEXT, debugger.idebugoutputcallbacks2_output2, Output2 method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::Output2, Output2, DEBUG_OUTCBI_EXPLICIT_FLUSH, IDebugOutputCallbacks2 interface [Windows Debugging], Output2 method, DEBUG_OUTCBI_ANY_FORMAT
+ms.keywords: IDebugOutputCallbacks2, IDebugOutputCallbacks2 interface [Windows Debugging], Output2 method, DEBUG_OUTCBI_EXPLICIT_FLUSH, DEBUG_OUTCBI_DML, Output2 method [Windows Debugging], IDebugOutputCallbacks2 interface, dbgeng/IDebugOutputCallbacks2::Output2, debugger.idebugoutputcallbacks2_output2, DEBUG_OUTCBI_TEXT, IDebugOutputCallbacks2::Output2, Output2 method [Windows Debugging], Output2, DEBUG_OUTCBI_ANY_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -63,6 +63,7 @@ HRESULT Output2(
 `Which`
 
 The kind of notification that is coming in. 
+
 <table>
 <tr>
 <th>Value</th>
@@ -147,6 +148,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks2.md">IDebugOutputCallbacks2</a>
+
+
 
  
 

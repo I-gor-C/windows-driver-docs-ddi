@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: A7801EE9-BFDB-4F77-9DA4-A6612F63AD48
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbchannelmapgpadl, vmbuskernelmodeclientlibapi/VmbChannelMapGpadl, VmbChannelMapGpadl function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_GPADL_FLAG_READ_ONLY, VmbChannelMapGpadl
+ms.keywords: VmbChannelMapGpadl, VMBUS_CHANNEL_GPADL_FLAG_READ_ONLY, VmbChannelMapGpadl function [Network Drivers Starting with Windows Vista], netvista.vmbchannelmapgpadl, vmbuskernelmodeclientlibapi/VmbChannelMapGpadl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	VmbChannelMapGpadl
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -70,6 +70,7 @@ A handle for a channel.
 `Flags`
 
 Flags.  The possible flag values are:
+
 <table>
 <tr>
 <th>Value</th>
@@ -85,7 +86,8 @@ Map with read-only access.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 If
 this flag value is not set, the function tries to map the GPADL for write access. If the GPADL was not
@@ -131,7 +133,11 @@ function with calls to the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskerne
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcreategpadlfrombuffer.md">VmbChannelCreateGpadlFromBuffer</a>
 
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelunmapgpadl.md">VmbChannelUnmapGpadl</a>
+
+
 
  
 

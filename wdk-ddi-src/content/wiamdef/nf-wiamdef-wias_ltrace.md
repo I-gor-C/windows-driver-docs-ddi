@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 513fd718-3d35-4a7b-be28-b002a8108e86
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WIAS_LTRACE, image.wias_ltrace, WIAS_LTRACE macro [Imaging Devices], wiamdef/WIAS_LTRACE, IWiaLog_bb7ae826-5b43-47c1-bf94-bd491d8b91a7.xml
+ms.keywords: WIAS_LTRACE, WIAS_LTRACE macro [Imaging Devices], image.wias_ltrace, wiamdef/WIAS_LTRACE, IWiaLog_bb7ae826-5b43-47c1-bf94-bd491d8b91a7.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	WIAS_LTRACE
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -87,6 +87,7 @@ None
 ## Remarks
 
 The following is an example of how the macro can be used:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -97,7 +98,8 @@ The following is an example of how the macro can be used:
   ("MyClass::MyMethod, This is my text and my lValue = %d", lValue));</pre>
 </td>
 </tr>
-</table></span></div>The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not record its output to the <i>Wiatrace.log </i>diagnostic Log file. It is recommended that the <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a> macro be used instead.
+</table></span></div>
+The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not record its output to the <i>Wiatrace.log </i>diagnostic Log file. It is recommended that the <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a> macro be used instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,11 +113,19 @@ The following is an example of how the macro can be used:
 
 <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
 
+
+
 <a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
+
+
 
 <a href="..\wiamdef\nf-wiamdef-wias_lhresult.md">WIAS_LHRESULT</a>
 
+
+
 <a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
+
+
 
  
 

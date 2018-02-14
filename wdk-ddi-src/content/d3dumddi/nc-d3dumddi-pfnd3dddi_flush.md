@@ -68,6 +68,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <i>Flush</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -112,9 +113,13 @@ To submit commands to the display miniport driver, the user-mode display driver'
 
 ## See Also
 
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
 
  
 

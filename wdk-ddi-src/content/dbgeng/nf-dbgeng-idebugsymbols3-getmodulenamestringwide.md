@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: e1b756b9-394a-4ec4-845e-867460998086
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetModuleNameStringWide method, debugger.getmodulenamestringwide, dbgeng/IDebugSymbols3::GetModuleNameStringWide, IDebugSymbols3, GetModuleNameStringWide, GetModuleNameStringWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetModuleNameStringWide, GetModuleNameStringWide method [Windows Debugging]
+ms.keywords: IDebugSymbols3::GetModuleNameStringWide, GetModuleNameStringWide, dbgeng/IDebugSymbols3::GetModuleNameStringWide, GetModuleNameStringWide method [Windows Debugging], IDebugSymbols3 interface, GetModuleNameStringWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetModuleNameStringWide method, debugger.getmodulenamestringwide, IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -65,6 +65,7 @@ HRESULT GetModuleNameStringWide(
 `Which`
 
 Specifies which of the module's names to return, possible values are:
+
 <table>
 <tr>
 <th>Value</th>
@@ -146,6 +147,7 @@ Receives the size in characters of the module's name.  If <i>NameSize</i> is <b>
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -188,9 +190,13 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547146">GetModuleNames</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 
  
 

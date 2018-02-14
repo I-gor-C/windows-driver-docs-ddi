@@ -7,7 +7,7 @@ old-location: ifsk\ioctl_redir_query_path_ex.htm
 old-project: ifsk
 ms.assetid: 290825dd-d5f6-4e9b-b1a3-3e146d3e1856
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
+ms.date: 2/7/2018
 ms.keywords: ifsk.ioctl_redir_query_path_ex, IOCTL_REDIR_QUERY_PATH_EX control code [Installable File System Drivers], IOCTL_REDIR_QUERY_PATH_EX, ntifs/IOCTL_REDIR_QUERY_PATH_EX, ioctl_ref_de59d691-17c8-4e21-8acc-61d2f27c2799.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,6 +79,7 @@ The provider and the prefix that it claimed are entered in a prefix cache mainta
 
 ### Input Buffer
 <b>IrpSp-&gt;Parameters.DeviceIoControl.Type3InputBuffer</b> is set to a <b>QUERY_PATH_REQUEST_EX</b> data structure that contains the request. 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -93,7 +94,8 @@ The provider and the prefix that it claimed are entered in a prefix cache mainta
 } QUERY_PATH_REQUEST_EX, *PQUERY_PATH_REQUEST_EX;</pre>
 </td>
 </tr>
-</table></span></div><table>
+</table></span></div>
+<table>
 <tr>
 <th>Structure member</th>
 <th>Description</th>
@@ -145,6 +147,7 @@ A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&
 
 ### Output Buffer
 <b>IRP-&gt;UserBuffer</b> is set to a <b>QUERY_PATH_RESPONSE</b> data structure that contains the response.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -156,7 +159,8 @@ A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&
 } QUERY_PATH_RESPONSE, *PQUERY_PATH_RESPONSE;</pre>
 </td>
 </tr>
-</table></span></div><table>
+</table></span></div>
+<table>
 <tr>
 <th>Structure member</th>
 <th>Description</th>
@@ -217,16 +221,24 @@ For more information, see the following sections in the Design Guide:
 
 ## See Also
 
-<a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a>
-
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
-
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex~r3.md">FsRtlRegisterUncProviderEx</a>
+
+
 
 <a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 
- 
+
+
+<a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IOCTL_REDIR_QUERY_PATH_EX control code%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IOCTL_REDIR_QUERY_PATH_EX control code%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -56,6 +56,7 @@ Windows XP and later send this request to the video miniport driver to notify it
 
 ### Input Buffer
 The VRP <b>InputBuffer</b> contains a pointer to a ULONG, which can be one of the two following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -110,6 +111,8 @@ The miniport driver does not set the <b>Information</b> member of the <a href=".
 ## See Also
 
 <a href="..\video\nf-video-videoportcreatesecondarydisplay.md">VideoPortCreateSecondaryDisplay</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2F73ECD7-EC58-43A9-89F8-E0268510A498
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoQueryFullDriverPath routine [Kernel-Mode Driver Architecture], IoQueryFullDriverPath, wdm/IoQueryFullDriverPath, kernel.ioqueryfulldriverpath
+ms.keywords: kernel.ioqueryfulldriverpath, IoQueryFullDriverPath, wdm/IoQueryFullDriverPath, IoQueryFullDriverPath routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	IoQueryFullDriverPath
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -70,6 +70,7 @@ A pointer to a caller-allocated <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.m
 ## Return Value
 
 <b>IoQueryFullDriverPath</b> returns STATUS_SUCCESS if the call successfully fetches the path name. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -130,11 +131,17 @@ The caller is responsible for freeing the storage pointed to by <i>FullPath</i>-
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
 
 <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
 
  
 

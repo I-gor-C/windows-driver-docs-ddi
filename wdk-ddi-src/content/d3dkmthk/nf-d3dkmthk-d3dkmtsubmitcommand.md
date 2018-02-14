@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: E726B4AC-F003-45B3-B467-F123DBE60D87
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTSubmitCommand function [Display Devices], d3dkmthk/D3DKMTSubmitCommand, display.d3dkmtsubmitcommand, D3DKMTSubmitCommand
+ms.keywords: D3DKMTSubmitCommand, display.d3dkmtsubmitcommand, d3dkmthk/D3DKMTSubmitCommand, D3DKMTSubmitCommand function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,7 +101,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -118,6 +119,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_submitcommand.md">D3DKMT_SUBMITCOMMAND</a>
+
+
 
  
 

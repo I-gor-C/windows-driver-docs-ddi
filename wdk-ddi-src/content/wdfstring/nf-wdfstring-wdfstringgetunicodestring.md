@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 39041953-11ef-4f31-9b7e-09ce40b6b930
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfStringGetUnicodeString, wdf.wdfstringgetunicodestring, DFStringObjectRef_d02387c6-8b77-479e-a72a-2b0a323f83a9.xml, WdfStringGetUnicodeString method, kmdf.wdfstringgetunicodestring, PFN_WDFSTRINGGETUNICODESTRING, wdfstring/WdfStringGetUnicodeString
+ms.keywords: kmdf.wdfstringgetunicodestring, WdfStringGetUnicodeString, wdf.wdfstringgetunicodestring, WdfStringGetUnicodeString method, DFStringObjectRef_d02387c6-8b77-479e-a72a-2b0a323f83a9.xml, PFN_WDFSTRINGGETUNICODESTRING, wdfstring/WdfStringGetUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,6 +87,27 @@ After <b>WdfStringGetUnicodeString</b> returns, the UNICODE_STRING structure tha
 
 For more information about framework string objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-string-objects">Using String Objects</a>.
 
+
+#### Examples
+
+The following code example obtains the Unicode string that is assigned to a specified framework string object.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>UNICODE_STRING StringName;
+
+WdfStringGetUnicodeString(
+                          stringHandle,
+                          &amp;StringName
+                          );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -102,7 +123,11 @@ For more information about framework string objects, see <a href="https://docs.m
 
 <a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
 
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
 
  
 

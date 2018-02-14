@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: de56a241-10a3-4f9c-970c-433ab997612d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RILIMSHANDOVERATTEMPT structure [Network Drivers Starting with Windows Vista], *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT, rilapitypes/RILIMSHANDOVERATTEMPT, netvista.rilimshandoverattempt_2
+ms.keywords: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT structure [Network Drivers Starting with Windows Vista], rilapitypes/RILIMSHANDOVERATTEMPT, netvista.rilimshandoverattempt_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	RILIMSHANDOVERATTEMPT
 product: Windows
 targetos: Windows
-req.typenames: "*LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT"
+req.typenames: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT
 req.product: Windows 10 or later.
 ---
 

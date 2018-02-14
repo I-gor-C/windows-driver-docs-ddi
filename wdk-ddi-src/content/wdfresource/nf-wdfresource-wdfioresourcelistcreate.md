@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: aaf3d22d-da54-4478-9bf8-aad4b943788a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfioresourcelistcreate, DFResourceObjectRef_7130ba6a-fc24-4785-9fa3-c8fd159f63fb.xml, wdfresource/WdfIoResourceListCreate, PFN_WDFIORESOURCELISTCREATE, WdfIoResourceListCreate, wdf.wdfioresourcelistcreate, WdfIoResourceListCreate method
+ms.keywords: WdfIoResourceListCreate, WdfIoResourceListCreate method, wdf.wdfioresourcelistcreate, kmdf.wdfioresourcelistcreate, DFResourceObjectRef_7130ba6a-fc24-4785-9fa3-c8fd159f63fb.xml, wdfresource/WdfIoResourceListCreate, PFN_WDFIORESOURCELISTCREATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,6 +92,13 @@ For more information about resource requirements lists and logical configuration
 
 The caller-specified resource-requirements-list object becomes the parent of the new resource-range-list object. The driver cannot change this parent, and the <b>ParentObject</b> member or the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>.
 
+
+#### Examples
+
+For a code example that uses <b>WdfIoResourceListCreate</b>, see <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistappendioreslist.md">WdfIoResourceRequirementsListAppendIoResList</a>.
+
+<div class="code"></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -105,6 +112,8 @@ The caller-specified resource-requirements-list object becomes the parent of the
 ## See Also
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
 
  
 

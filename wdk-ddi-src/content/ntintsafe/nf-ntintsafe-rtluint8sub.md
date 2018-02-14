@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D8BD24AA-64CF-42CB-8AD2-2B6C77D4B195
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtluint8sub, RtlUInt8Sub function [Kernel-Mode Driver Architecture], ntintsafe/RtlUInt8Sub, RtlUInt8Sub
+ms.keywords: RtlUInt8Sub function [Kernel-Mode Driver Architecture], ntintsafe/RtlUInt8Sub, RtlUInt8Sub, kernel.rtluint8sub
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,6 +75,7 @@ A pointer to the result. If the operation results in a value that overflows or u
 ## Return Value
 
 <b>RtlUInt8Sub</b> returns STATUS_SUCCESS if the routine is successful. Possible error return values include the following status code.
+
 <table>
 <tr>
 <th>Return code</th>

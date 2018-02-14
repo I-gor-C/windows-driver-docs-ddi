@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 2D2980D7-6675-4414-AA32-D8782526E039
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFREQUESTISFROMUSERMODEDRIVER, WdfRequestIsFromUserModeDriver method, wdf.wdfrequestisfromusermodedriver, wdfrequest/WdfRequestIsFromUserModeDriver, WdfRequestIsFromUserModeDriver
+ms.keywords: wdf.wdfrequestisfromusermodedriver, WdfRequestIsFromUserModeDriver method, wdfrequest/WdfRequestIsFromUserModeDriver, PFN_WDFREQUESTISFROMUSERMODEDRIVER, WdfRequestIsFromUserModeDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,6 +87,8 @@ If your driver supports <a href="https://docs.microsoft.com/en-us/windows-hardwa
 ## See Also
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestormode.md">WdfRequestGetRequestorMode</a>
+
+
 
  
 

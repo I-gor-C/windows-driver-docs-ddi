@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtIhvInitService
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -116,6 +116,7 @@ Unlike how it treats other IHV Extension and Handler functions whose addresses a
     <i>Dot11ExtIhvInitService</i> function by calling the 
     <b>GetProcAddress</b> function. As a result, the developer of the IHV Extensions DLL must follow these
     guidelines.
+
 <ul>
 <li>
 The DLL must implement a function named Dot11ExtIhvInitService, which has the format that is
@@ -129,7 +130,8 @@ The
       <i>Dot11ExtIhvInitService</i> function.
 
 </li>
-</ul>For more information about 
+</ul>
+For more information about 
     <b>GetProcAddress</b>, refer to the Microsoft Windows SDK documentation.
 
 ## Requirements
@@ -141,11 +143,17 @@ The
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
-
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_handlers.md">DOT11EXT_IHV_HANDLERS</a>
 
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
+
+
+
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a>
+
+
 
  
 

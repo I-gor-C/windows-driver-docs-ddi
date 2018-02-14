@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b41fc37a-d41f-49ca-848f-844e049dd987
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfInterruptSynchronize method, DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml, wdfinterrupt/WdfInterruptSynchronize, kmdf.wdfinterruptsynchronize, PFN_WDFINTERRUPTSYNCHRONIZE, wdf.wdfinterruptsynchronize, WdfInterruptSynchronize
+ms.keywords: WdfInterruptSynchronize, WdfInterruptSynchronize method, wdfinterrupt/WdfInterruptSynchronize, wdf.wdfinterruptsynchronize, DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml, kmdf.wdfinterruptsynchronize, PFN_WDFINTERRUPTSYNCHRONIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,6 +102,28 @@ For passive level interrupts, the driver must call <b>WdfInterruptSynchronize</b
 
 Do not call <b>WdfInterruptSynchronize</b> from an arbitrary thread context,  such as a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers">request handler</a>.
 
+
+#### Examples
+
+The following code example shows how to call <b>WdfInterruptSynchronize</b> to schedule execution of an <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>  callback function.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>BOOLEAN synchronizeReturnValue;
+
+synchronizeReturnValue = WdfInterruptSynchronize(
+                                         WdfInterrupt,
+                                         MyEvtInterruptSynchronize,
+                                         CallbackContext
+                                         );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -115,11 +137,17 @@ Do not call <b>WdfInterruptSynchronize</b> from an arbitrary thread context,  su
 
 ## See Also
 
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547340">WdfInterruptAcquireLock</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
+
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>
+
+
 
  
 

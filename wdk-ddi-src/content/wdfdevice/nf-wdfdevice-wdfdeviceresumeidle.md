@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d63848e8-0e6a-4ad7-a147-8804869b9c9b
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfdeviceresumeidle, PFN_WDFDEVICERESUMEIDLE, WdfDeviceResumeIdle method, DFDeviceObjectGeneralRef_6078e8e8-7d4e-4714-a1b4-74fc973a678c.xml, WdfDeviceResumeIdle, kmdf.wdfdeviceresumeidle, wdfdevice/WdfDeviceResumeIdle
+ms.keywords: DFDeviceObjectGeneralRef_6078e8e8-7d4e-4714-a1b4-74fc973a678c.xml, WdfDeviceResumeIdle method, wdf.wdfdeviceresumeidle, PFN_WDFDEVICERESUMEIDLE, wdfdevice/WdfDeviceResumeIdle, kmdf.wdfdeviceresumeidle, WdfDeviceResumeIdle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -78,6 +78,22 @@ Every call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDevice
 
 Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a> instead of <b>WdfDeviceResumeIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.
 
+
+#### Examples
+
+The following code example informs the framework that the specified device is not in use and can be placed in a device low-power state if it remains idle.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfDeviceResumeIdle(device);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,13 +107,21 @@ Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">W
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
+
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDeviceStopIdle</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
 
-<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
 
  
 

@@ -68,6 +68,7 @@ A structure of type <i>PDXGKARG_CREATEPERIODICFRAMENOTIFICATION</i> containing t
 ## Return Value
 
 DXGKDDI_CREATEPERIODICFRAMENOTIFICATION returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>

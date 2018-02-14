@@ -73,6 +73,7 @@ The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DI
 The <b>Information</b> field is set to the size, in bytes, of the returned data. 
 
 The <b>Status</b> field returns one of the following values:
+
 <ul>
 <li><b>STATUS_SUCCESS</b></li>
 <li><b>STATUS_UNRECOGNIZED_MEDIA</b></li>

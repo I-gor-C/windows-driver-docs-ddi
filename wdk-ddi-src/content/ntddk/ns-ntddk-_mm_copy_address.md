@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9C9A0D46-587C-43F3-808E-38E81CE3EE50
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: "_MM_COPY_ADDRESS, PMM_COPY_ADDRESS, ntddk/PMM_COPY_ADDRESS, MM_COPY_ADDRESS, kernel.mm_copy_address, PMM_COPY_ADDRESS structure pointer [Kernel-Mode Driver Architecture], *PMMCOPY_ADDRESS, ntddk/MM_COPY_ADDRESS, MM_COPY_ADDRESS structure [Kernel-Mode Driver Architecture]"
+ms.keywords: ntddk/PMM_COPY_ADDRESS, _MM_COPY_ADDRESS, *PMMCOPY_ADDRESS, PMM_COPY_ADDRESS structure pointer [Kernel-Mode Driver Architecture], ntddk/MM_COPY_ADDRESS, MM_COPY_ADDRESS, PMM_COPY_ADDRESS, MM_COPY_ADDRESS structure [Kernel-Mode Driver Architecture], kernel.mm_copy_address
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -71,6 +71,8 @@ This structure is used by the <a href="..\ntddk\nf-ntddk-mmcopymemory.md">MmCopy
 ## See Also
 
 <a href="..\ntddk\nf-ntddk-mmcopymemory.md">MmCopyMemory</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	PFN_VMB_CHANNEL_PNP_FAILURE
 product: Windows
 targetos: Windows
-req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.typenames: VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -93,6 +93,8 @@ The <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbcl
 ## See Also
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbclientchannelinitsettargetpnp.md">VmbClientChannelInitSetTargetPnp</a>
+
+
 
  
 

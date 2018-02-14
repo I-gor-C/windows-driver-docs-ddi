@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 08C795F2-64F9-4EFE-AA25-3B2FCB31D062
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.psgetsilocontext, PsGetSiloContext routine [Kernel-Mode Driver Architecture], PsGetSiloContext, ntddk/PsGetSiloContext
+ms.keywords: PsGetSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsGetSiloContext, PsGetSiloContext, kernel.psgetsilocontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	PsGetSiloContext
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -75,6 +75,7 @@ Receives a referenced pointer to the silo context. On failure, the value receive
 ## Return Value
 
 The following NT status codes are returned.
+
 <table>
 <tr>
 <th>Return code</th>

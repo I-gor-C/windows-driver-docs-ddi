@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth.brb_l2ca_open_enhanced_channel, bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth._brb_l2ca_open_enhanced_channel, BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices]
+ms.keywords: "_BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth._brb_l2ca_open_enhanced_channel, BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -120,6 +120,7 @@ The context to pass to the callback function specified in the
 A flag that specifies which events should generate a callback routine to notify the profile driver
      that the event has occurred. Valid flag values are contained in the following table.
      
+
 <table>
 <tr>
 <th>Flag</th>
@@ -191,6 +192,7 @@ If set, the callback routine will be called when the profile driver receives an 
 Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
      the following table:
      
+
 <table>
 <tr>
 <td>
@@ -236,11 +238,11 @@ The profile driver indicates its preference that users not be prompted for a PIN
 
 `ChannelHandle`
 
-#### 
+##### 
 
 
 
-####
+#######
 
 `ConfigIn`
 

@@ -73,6 +73,7 @@ A handle to the display device (graphics context).
 ## Return Value
 
 <b>CryptoSessionKeyExchange</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -119,6 +120,8 @@ For D3DKEYEXCHANGE_RSAES_OAEP, the <b>pData</b> member of the <a href="..\d3dumd
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_cryptosessionkeyexchange.md">D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: d67119c7-ecbe-446c-8a4f-38d33e92a277
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: dbgeng/IDebugControl2::SetInterrupt, IDebugControl2 interface [Windows Debugging], SetInterrupt method, SetInterrupt method [Windows Debugging], IDebugControl interface, IDebugControl::SetInterrupt, debugger.setinterrupt, IDebugControl interface [Windows Debugging], SetInterrupt method, SetInterrupt method [Windows Debugging], IDebugControl3 interface, SetInterrupt method [Windows Debugging], IDebugControl3::SetInterrupt, IDebugControl_dd73562c-6f15-4101-8ab3-3f432de5a002.xml, IDebugControl3 interface [Windows Debugging], SetInterrupt method, SetInterrupt method [Windows Debugging], IDebugControl2 interface, IDebugControl2::SetInterrupt, dbgeng/IDebugControl::SetInterrupt, IDebugControl3, dbgeng/IDebugControl3::SetInterrupt, SetInterrupt
+ms.keywords: IDebugControl3 interface [Windows Debugging], SetInterrupt method, IDebugControl3::SetInterrupt, IDebugControl2, SetInterrupt method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], SetInterrupt method, IDebugControl2::SetInterrupt, SetInterrupt, SetInterrupt method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::SetInterrupt, IDebugControl3, SetInterrupt method [Windows Debugging], IDebugControl interface, debugger.setinterrupt, IDebugControl_dd73562c-6f15-4101-8ab3-3f432de5a002.xml, IDebugControl, dbgeng/IDebugControl3::SetInterrupt, IDebugControl::SetInterrupt, SetInterrupt method [Windows Debugging], dbgeng/IDebugControl2::SetInterrupt, IDebugControl interface [Windows Debugging], SetInterrupt method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -62,6 +62,7 @@ HRESULT SetInterrupt(
 `Flags`
 
 Specifies the type of interrupt to register.  <i>Flags</i> can take one of the values listed in the following table.
+
 <table>
 <tr>
 <th>Value</th>
@@ -107,6 +108,7 @@ Otherwise, when the target is suspended, register a user interrupt.
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -140,17 +142,29 @@ If <i>Flags</i> is DEBUG_INTERRUPT_ACTIVE, and the interrupt times out, the engi
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546944">GetInterrupt</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546955">GetInterruptTimeout</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556725">SetInterruptTimeout</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546944">GetInterrupt</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
 product: Windows
 targetos: Windows
-req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.typenames: ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ---
 
 # IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME IOCTL
@@ -85,6 +85,8 @@ If <b>OutputBufferLength</b> is less than the total length of output data, the <
 ## See Also
 
 <a href="..\mountdev\ns-mountdev-_mountdev_suggested_link_name.md">MOUNTDEV_SUGGESTED_LINK_NAME</a>
+
+
 
  
 

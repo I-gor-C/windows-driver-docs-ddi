@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 74644211-7cf5-48d4-9025-7831cb449979
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml, ntstrsafe/RtlStringCbLengthA, ntstrsafe/RtlStringCbLengthW, RtlStringCbLengthW, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLength, RtlStringCbLengthA, kernel.rtlstringcblength
+ms.keywords: kernel.rtlstringcblength, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml, RtlStringCbLengthA, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLengthW, RtlStringCbLength, ntstrsafe/RtlStringCbLengthA, ntstrsafe/RtlStringCbLengthW
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -43,7 +43,7 @@ apiname:
 -	RtlStringCbLengthW
 product: Windows
 targetos: Windows
-req.typenames: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -82,6 +82,7 @@ TBD
 ## Return Value
 
 The function returns one of the NTSTATUS values that are listed in the following table. For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -116,6 +117,7 @@ This <i>error</i> status means the value in <i>psz</i> is <b>NULL</b>, <i>cbMax<
 <b>RtlStringCbLengthW</b> and <b>RtlStringCbLengthA</b> should be used instead of <b>strlen</b>. Use these functions to ensure that a string is not larger than a given length, in bytes. If that condition is met, <b>RtlStringCbLengthW</b> and <b>RtlStringCbLengthA</b> return the current length of the string in bytes, not including those bytes used for the terminating null character.
 
 Use <b>RtlStringCbLengthW</b> to handle Unicode strings and <b>RtlStringCbLengthA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.
+
 <table>
 <tr>
 <th>String data type</th>
@@ -150,7 +152,8 @@ L"string"
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
@@ -166,6 +169,8 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## See Also
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchlengthw.md">RtlStringCchLength</a>
+
+
 
  
 

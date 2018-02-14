@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: dd981cc1-ab82-49de-8cf1-ba2b7451c7ef
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, *PDVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], ntddcdvd/PDVD_LAYER_DESCRIPTOR, ntddcdvd/DVD_LAYER_DESCRIPTOR, _DVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR structure [Storage Devices], PDVD_LAYER_DESCRIPTOR, storage.dvd_layer_descriptor, DVD_LAYER_DESCRIPTOR
+ms.keywords: PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], DVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR structure [Storage Devices], storage.dvd_layer_descriptor, ntddcdvd/PDVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR, structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, _DVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR, ntddcdvd/DVD_LAYER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	DVD_LAYER_DESCRIPTOR
 product: Windows
 targetos: Windows
-req.typenames: "*PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR"
+req.typenames: DVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR
 ---
 
 # _DVD_LAYER_DESCRIPTOR structure
@@ -77,6 +77,7 @@ Indicates, if set to 1, the presence of data in the burst cutting area (BCA). If
 `BookType`
 
 Specifies the DVD book this media complies with. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -153,6 +154,7 @@ Specifies the last sector of the user data in layer zero. If this media does not
 `LayerType`
 
 Indicates the type of layer. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -193,6 +195,7 @@ Rewritable layer
 `LinearDensity`
 
 Indicates the minimum/maximum pit length used for this layer in units of micrometers per bit. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -253,6 +256,7 @@ Indicates the minimum/maximum pit length used for this layer in units of microme
 `MinimumRate`
 
 Specifies the read rate to use for the media. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -325,6 +329,7 @@ Reserved.
 `StartingDataSector`
 
 Specifies the first block that contains user data. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -355,6 +360,7 @@ An initial block value of 0x30000 indicates that the media type is DVD-RAM or DV
 `TrackDensity`
 
 Indicates the track width used for this media in units of micrometers per track. This member can have one of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -407,6 +413,8 @@ For more information, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specif
 ## See Also
 
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
+
+
 
  
 

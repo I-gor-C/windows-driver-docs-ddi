@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 12a8062a-6d4b-4757-a076-56aeb5e4e48c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndismcompletedmatransfer, NdisMCompleteDmaTransfer, dma_ref_bd601fef-cf06-42ff-9906-d3bf8edef72f.xml, NdisMCompleteDmaTransfer macro [Network Drivers Starting with Windows Vista], ndis/NdisMCompleteDmaTransfer
+ms.keywords: ndis/NdisMCompleteDmaTransfer, NdisMCompleteDmaTransfer macro [Network Drivers Starting with Windows Vista], netvista.ndismcompletedmatransfer, dma_ref_bd601fef-cf06-42ff-9906-d3bf8edef72f.xml, NdisMCompleteDmaTransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -40,7 +40,7 @@ apiname:
 -	NdisMCompleteDmaTransfer
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -112,11 +112,17 @@ None
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 
+
+
 <a href="..\ndis\nf-ndis-ndismsetupdmatransfer.md">NdisMSetupDmaTransfer</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
 
  
 

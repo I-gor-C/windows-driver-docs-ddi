@@ -79,7 +79,11 @@ This function does not return a value.
 
 <a href="..\poscx\nf-poscx-poscxinit.md">PosCxInit</a>
 
+
+
 <a href="..\poscx\ns-poscx-_pos_cx_attributes.md">POS_CX_ATTRIBUTE</a>
+
+
 
  
 

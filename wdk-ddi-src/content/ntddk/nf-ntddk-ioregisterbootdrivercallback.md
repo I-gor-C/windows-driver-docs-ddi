@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 28BA4B54-F493-4D79-89DF-D890EBCF1E9C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.ioregisterbootdrivercallback, IoRegisterBootDriverCallback, ntddk/IoRegisterBootDriverCallback, IoRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture]
+ms.keywords: IoRegisterBootDriverCallback, IoRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture], kernel.ioregisterbootdrivercallback, ntddk/IoRegisterBootDriverCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	IoRegisterBootDriverCallback
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -74,7 +74,10 @@ A handle that represents the registration. This handle must be supplied as an in
 ## Remarks
 
 Boot-start drivers must call <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a> and pass the returned handle to unregister the boot-start driver callback before Windows unloads them.
-<h3><a id="Boot_Driver_Callback"></a><a id="boot_driver_callback"></a><a id="BOOT_DRIVER_CALLBACK"></a>Boot Driver Callback</h3>A boot-start driver's <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine can monitor boot-start driver initialization events and return data to the kernel to enable the kernel to decide whether to initialize each boot-start driver. The function prototype to register a boot-start driver callback routine is as follows.
+
+<h3><a id="Boot_Driver_Callback"></a><a id="boot_driver_callback"></a><a id="BOOT_DRIVER_CALLBACK"></a>Boot Driver Callback</h3>
+A boot-start driver's <b>BOOT_DRIVER_CALLBACK_FUNCTION</b> routine can monitor boot-start driver initialization events and return data to the kernel to enable the kernel to decide whether to initialize each boot-start driver. The function prototype to register a boot-start driver callback routine is as follows.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -90,7 +93,8 @@ BOOT_DRIVER_CALLBACK_FUNCTION (
     );</pre>
 </td>
 </tr>
-</table></span></div>The boot-start callback parameters are as follows:
+</table></span></div>
+The boot-start callback parameters are as follows:
 
 
 
@@ -118,11 +122,17 @@ To be notified of boot-start driver initialization operations, an <i>early launc
 
 ## See Also
 
+<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
+
+
+
 <a href="..\ntddk\ne-ntddk-_bdcb_callback_type.md">BDCB_CALLBACK_TYPE</a>
+
+
 
 <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a>
 
-<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
+
 
  
 

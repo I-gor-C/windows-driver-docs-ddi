@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b15c0ccf-0863-4415-b31f-b4217f249feb
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfioresourcerequirementslistgetioreslist, wdfresource/WdfIoResourceRequirementsListGetIoResList, DFResourceObjectRef_a90ce2a4-5690-49c8-ac63-6ccf89f4e5f3.xml, WdfIoResourceRequirementsListGetIoResList, kmdf.wdfioresourcerequirementslistgetioreslist, WdfIoResourceRequirementsListGetIoResList method, PFN_WDFIORESOURCEREQUIREMENTSLISTGETIORESLIST
+ms.keywords: WdfIoResourceRequirementsListGetIoResList, wdf.wdfioresourcerequirementslistgetioreslist, kmdf.wdfioresourcerequirementslistgetioreslist, DFResourceObjectRef_a90ce2a4-5690-49c8-ac63-6ccf89f4e5f3.xml, wdfresource/WdfIoResourceRequirementsListGetIoResList, PFN_WDFIORESOURCEREQUIREMENTSLISTGETIORESLIST, WdfIoResourceRequirementsListGetIoResList method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,6 +82,7 @@ A system bug check occurs if the driver supplies an invalid object handle.
 For more information about resource requirements lists, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
 The following code example searches a device's resource requirements list to find the first resource descriptor that describes an interrupt resource.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -160,13 +161,21 @@ Example_EvtDeviceFilterRemoveResourceRequirements(
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetcount.md">WdfIoResourceListGetCount</a>
+
+
 
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetdescriptor.md">WdfIoResourceListGetDescriptor</a>
 
+
+
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetcount.md">WdfIoResourceRequirementsListGetCount</a>
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetcount.md">WdfIoResourceListGetCount</a>
+
+
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
+
 
  
 

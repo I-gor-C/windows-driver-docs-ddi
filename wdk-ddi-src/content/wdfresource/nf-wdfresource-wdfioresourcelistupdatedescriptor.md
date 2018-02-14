@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a571c054-380d-4d56-9094-d55868222b33
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfIoResourceListUpdateDescriptor method, DFResourceObjectRef_e9c68945-23e3-47f1-99b1-a0c62944669f.xml, kmdf.wdfioresourcelistupdatedescriptor, wdfresource/WdfIoResourceListUpdateDescriptor, wdf.wdfioresourcelistupdatedescriptor, WdfIoResourceListUpdateDescriptor, PFN_WDFIORESOURCELISTUPDATEDESCRIPTOR
+ms.keywords: DFResourceObjectRef_e9c68945-23e3-47f1-99b1-a0c62944669f.xml, WdfIoResourceListUpdateDescriptor method, wdfresource/WdfIoResourceListUpdateDescriptor, WdfIoResourceListUpdateDescriptor, wdf.wdfioresourcelistupdatedescriptor, PFN_WDFIORESOURCELISTUPDATEDESCRIPTOR, kmdf.wdfioresourcelistupdatedescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,6 +88,42 @@ The <b>WdfIoResourceListUpdateDescriptor</b> method locates the resource descrip
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example initializes a new resource descriptor and then calls <b>WdfIoResourceListUpdateDescriptor</b> to replace the second descriptor in a logical configuration with the new descriptor.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>IO_RESOURCE_DESCRIPTOR newDescriptor;
+
+RtlZeroMemory(
+              &amp;newDescriptor,
+              sizeof(newDescriptor)
+              );
+
+newDescriptor.Option = 0;
+newDescriptor.Type = CmResourceTypePort;
+newDescriptor.ShareDisposition = CmResourceShareDeviceExclusive;
+newDescriptor.Flags = CM_RESOURCE_PORT_IO|CM_RESOURCE_PORT_16_BIT_DECODE;
+newDescriptor.u.Port.Length = 1;
+newDescriptor.u.Port.Alignment = 0x01;
+newDescriptor.u.Port.MinimumAddress.QuadPart = 0;
+newDescriptor.u.Port.MaximumAddress.QuadPart = 0xFFFF;
+
+WdfIoResourceListUpdateDescriptor(
+                                  Reslist,
+                                  &amp;newDescriptor,
+                                  1
+                                  );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -101,6 +137,8 @@ For more information about resource requirements lists and logical configuration
 ## See Also
 
 <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
+
 
  
 

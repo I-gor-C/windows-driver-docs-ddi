@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 0c9db77e-6e5d-45cd-a52c-dcc3acf5cba0
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugBreakpoint2 interface [Windows Debugging], SetCommand method, IDebugBreakpoint interface [Windows Debugging], SetCommand method, ComOther_166ee15d-c9e1-466f-9337-a6d20e9355ee.xml, SetCommand method [Windows Debugging], IDebugBreakpoint interface, debugger.setcommand, SetCommand method [Windows Debugging], IDebugBreakpoint2, SetCommand method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetCommand, IDebugBreakpoint::SetCommand, dbgeng/IDebugBreakpoint::SetCommand, IDebugBreakpoint2::SetCommand, SetCommand
+ms.keywords: SetCommand method [Windows Debugging], IDebugBreakpoint interface, ComOther_166ee15d-c9e1-466f-9337-a6d20e9355ee.xml, IDebugBreakpoint2::SetCommand, SetCommand method [Windows Debugging], IDebugBreakpoint2, dbgeng/IDebugBreakpoint::SetCommand, IDebugBreakpoint interface [Windows Debugging], SetCommand method, IDebugBreakpoint, debugger.setcommand, IDebugBreakpoint2 interface [Windows Debugging], SetCommand method, dbgeng/IDebugBreakpoint2::SetCommand, SetCommand, IDebugBreakpoint::SetCommand, SetCommand method [Windows Debugging], IDebugBreakpoint2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,7 +81,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

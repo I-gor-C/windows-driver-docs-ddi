@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8284fdd4-26de-4622-b164-f33aee1d8742
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: condis_sendrcv_ref_6d1dfac7-b538-402c-ae8b-04f74bd188e9.xml, NdisCoSendNetBufferLists function [Network Drivers Starting with Windows Vista], ndis/NdisCoSendNetBufferLists, NdisCoSendNetBufferLists, netvista.ndiscosendnetbufferlists
+ms.keywords: NdisCoSendNetBufferLists, condis_sendrcv_ref_6d1dfac7-b538-402c-ae8b-04f74bd188e9.xml, ndis/NdisCoSendNetBufferLists, NdisCoSendNetBufferLists function [Network Drivers Starting with Windows Vista], netvista.ndiscosendnetbufferlists
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisCoSendNetBufferLists
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -83,10 +83,12 @@ Flags that define attributes for the send operation. The flags can be combined w
 
 
 
+
 #### NDIS_SEND_FLAGS_DISPATCH_LEVEL
 
 The current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
        <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
+
 
 
 #### NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
@@ -114,6 +116,7 @@ After a CoNDIS protocol driver calls
 
 The protocol driver must allocate each NET_BUFFER_LIST structure from a pool by calling one of the
     following functions:
+
 <ul>
 <li>
 
@@ -135,7 +138,8 @@ The protocol driver must allocate each NET_BUFFER_LIST structure from a pool by 
 
 
 </li>
-</ul>The protocol driver can preallocate NET_BUFFER_LIST structures--for example, in its 
+</ul>
+The protocol driver can preallocate NET_BUFFER_LIST structures--for example, in its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. Alternatively, the protocol
     driver can allocate the structures immediately prior to calling 
     <b>NdisCoSendNetBufferLists</b> and then can free them when the send operation is complete. When NDIS
@@ -193,30 +197,50 @@ Until NDIS calls
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
-   MiniportCoSendNetBufferLists</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
-   NdisAllocateNetBufferAndNetBufferList</a>
-
 <a href="..\ndis\nc-ndis-protocol_co_send_net_buffer_lists_complete.md">
    ProtocolCoSendNetBufferListsComplete</a>
 
+
+
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
+
+<a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+   MiniportCoSendNetBufferLists</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndismcosendnetbufferlistscomplete.md">
    NdisMCoSendNetBufferListsComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
    NdisAllocateCloneNetBufferList</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
+   NdisAllocateNetBufferAndNetBufferList</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a0ffa493-4490-440b-9f67-426a7b5d4442
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfwaitlockcreate, kmdf.wdfwaitlockcreate, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, WdfWaitLockCreate method, WdfWaitLockCreate, wdfsync/WdfWaitLockCreate, PFN_WDFWAITLOCKCREATE
+ms.keywords: wdf.wdfwaitlockcreate, WdfWaitLockCreate, wdfsync/WdfWaitLockCreate, WdfWaitLockCreate method, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, PFN_WDFWAITLOCKCREATE, kmdf.wdfwaitlockcreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,6 +89,30 @@ By default, the new wait-lock object's parent is the framework driver object tha
 
 For more information about wait locks, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/synchronization-techniques-for-wdf-drivers">Synchronization Techniques for Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example initializes a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>, specifies that the wait lock's parent object will be a device object, and calls <b>WdfWaitLockCreate</b>.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_OBJECT_ATTRIBUTES attributes;
+WDFWAITLOCK lockHandle;
+
+WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+attributes.ParentObject = Device;
+status = WdfWaitLockCreate(
+                           &amp;attributes,
+                           &amp;lockHandle
+                           );</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -102,13 +126,21 @@ For more information about wait locks, see <a href="https://docs.microsoft.com/e
 
 ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfsync\nf-wdfsync-wdfwaitlockacquire.md">WdfWaitLockAcquire</a>
+
+
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556116">WdfWaitLockRelease</a>
 
-<a href="..\wdfsync\nf-wdfsync-wdfwaitlockacquire.md">WdfWaitLockAcquire</a>
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
 
  
 

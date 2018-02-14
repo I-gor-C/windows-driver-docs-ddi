@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e240fb49-26e6-4d30-b579-03824ac8b67f
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: LPD3DHAL_DP2TEXBLT structure pointer [Display Devices], LPD3DHAL_DP2TEXBLT, d3dhal/D3DHAL_DP2TEXBLT, d3dstrct_80dddffa-3403-4e1e-a1cc-1cbbfdad09a8.xml, *LPD3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT structure [Display Devices], display.d3dhal_dp2texblt, _D3DHAL_DP2TEXBLT, d3dhal/LPD3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT
+ms.keywords: D3DHAL_DP2TEXBLT structure [Display Devices], D3DHAL_DP2TEXBLT, d3dhal/D3DHAL_DP2TEXBLT, LPD3DHAL_DP2TEXBLT, LPD3DHAL_DP2TEXBLT structure pointer [Display Devices], d3dstrct_80dddffa-3403-4e1e-a1cc-1cbbfdad09a8.xml, display.d3dhal_dp2texblt, _D3DHAL_DP2TEXBLT, *LPD3DHAL_DP2TEXBLT, d3dhal/LPD3DHAL_DP2TEXBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -100,6 +100,7 @@ With TexBlt it is not necessary for the driver to perform any synchronization be
 <b>Sample</b>
 
 The following pseudocode shows how a subrectangle should be computed for consecutive MIP levels, to go to MIP level i + 1 from MIP level i: 
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -123,11 +124,17 @@ rect.bottom = ((bottom - rect.top ) &lt; 1) ? (rect.top + 1) : (bottom); </pre>
 
 ## See Also
 
+D3DDP2OP_TEXBLT
+
+
+
 <a href="https://msdn.microsoft.com/dd07e49c-ec1f-4ba6-8b17-80ce6d3c5813">D3dCreateSurfaceEx</a>
+
+
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
-D3DDP2OP_TEXBLT
+
 
  
 

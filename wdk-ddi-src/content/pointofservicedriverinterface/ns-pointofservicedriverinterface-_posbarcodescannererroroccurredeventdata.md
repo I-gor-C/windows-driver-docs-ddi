@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: c9e18ed0-bc34-49ed-a31e-20c82d43860f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: pointofservicedriverinterface/PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData, _PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData structure, pos.posbarcodescannererroroccurredeventdata
+ms.keywords: PosBarcodeScannerErrorOccurredEventData structure, pos.posbarcodescannererroroccurredeventdata, pointofservicedriverinterface/PosBarcodeScannerErrorOccurredEventData, _PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -97,6 +97,7 @@ Contains a vendor-specific error code.
 
 ## Remarks
 The error data should fill the buffer as shown in the following table (in order).
+
 <table>
 <tr>
 <th>Data</th>

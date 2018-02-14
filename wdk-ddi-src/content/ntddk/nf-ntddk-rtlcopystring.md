@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5295be15-b42e-4e5b-8257-434fb9ed6c83
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlcopystring, ntddk/RtlCopyString, k109_c68983f1-ec02-405f-a3a6-d1f3884fe303.xml, RtlCopyString, RtlCopyString routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.rtlcopystring, k109_c68983f1-ec02-405f-a3a6-d1f3884fe303.xml, ntddk/RtlCopyString, RtlCopyString, RtlCopyString routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	RtlCopyString
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -92,6 +92,8 @@ The <i>DestinationString</i> and <i>SourceString</i> buffers must be resident if
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlcopyunicodestring.md">RtlCopyUnicodeString</a>
+
+
 
  
 

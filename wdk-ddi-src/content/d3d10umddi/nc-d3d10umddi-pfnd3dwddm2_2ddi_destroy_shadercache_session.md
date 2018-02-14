@@ -40,7 +40,7 @@ apiname:
 -	pfnDestroyShaderCacheSession
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -87,6 +87,8 @@ Access this callback function by using the <a href="..\d3d10umddi\ns-d3d10umddi-
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs.md">D3DWDDM2_2DDI_DEVICEFUNCS</a>
+
+
 
  
 

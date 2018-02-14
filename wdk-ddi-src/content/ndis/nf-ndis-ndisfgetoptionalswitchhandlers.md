@@ -41,7 +41,7 @@ apiname:
 -	NdisFGetOptionalSwitchHandlers
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -73,7 +73,9 @@ A pointer to the NDIS_SWITCH_CONTEXT value that identifies the extensible switch
 A pointer to a caller-allocated  <a href="..\ndis\ns-ndis-_ndis_switch_optional_handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure. If the call succeeds, this structure will contain a list of pointers to the extensible switch handler functions.
 
 For more information about these handler functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh598172">Hyper-V Extensible Switch Handler Functions</a>.
-<div class="alert"><b>Note</b>  Before the extension calls <b>NdisFGetOptionalSwitchHandlers</b>, it must initialize the <b>Header</b> member of the <a href="..\ndis\ns-ndis-_ndis_switch_optional_handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Before the extension calls <b>NdisFGetOptionalSwitchHandlers</b>, it must initialize the <b>Header</b> member of the <a href="..\ndis\ns-ndis-_ndis_switch_optional_handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a> structure.</div>
+<div> </div>
 
 
 ## Return Value
@@ -101,9 +103,15 @@ For more information about <b>FilterMediaTypes</b> INF entries for extensible sw
 
 <a href="..\ndis\ns-ndis-_ndis_switch_optional_handlers.md">NDIS_SWITCH_OPTIONAL_HANDLERS</a>
 
+
+
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
+
+
 <b></b>
+
+
 
  
 

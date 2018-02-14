@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 7AC76E6F-1250-49EB-BEA1-3807C65AC2B7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: spbcx/SpbRequestCaptureIoOtherTransferList, SPB.spbrequestcaptureioothertransferlist, SpbRequestCaptureIoOtherTransferList, SpbRequestCaptureIoOtherTransferList method [Buses]
+ms.keywords: spbcx/SpbRequestCaptureIoOtherTransferList, SpbRequestCaptureIoOtherTransferList, SpbRequestCaptureIoOtherTransferList method [Buses], SPB.spbrequestcaptureioothertransferlist
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	SpbRequestCaptureIoOtherTransferList
 product: Windows
 targetos: Windows
-req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.typenames: "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
 req.product: Windows 10 or later.
 ---
 
@@ -67,6 +67,7 @@ TBD
 ## Return Value
 
 <b>SpbRequestCaptureIoOtherTransferList</b> returns STATUS_SUCCESS if the call is successful. Possible return values include the following error codes.
+
 <table>
 <tr>
 <th>Return value</th>
@@ -102,6 +103,62 @@ This method must be called in the context of the process in which the buffer add
 
 The maximum IRQL at which the SPB controller driver can call this method depends on whether the originator of the I/O request is running in user mode or in kernel mode. If the request originated from user mode, the driver must call this method at PASSIVE_LEVEL. If the request originated from kernel mode, the driver must call this method at IRQL &lt;= DISPATCH_LEVEL. The driver can call the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestormode.md">WdfRequestGetRequestorMode</a> method to determine the originator's mode. However, this call is typically unnecessary because the driver can rely on the SPB framework extension (SpbCx) to call the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> function at the appropriate IRQL.
 
+
+#### Examples
+
+The following code example shows how an SPB controller driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> event callback function can use the <b>SpbRequestCaptureIoOtherTransferList</b> method to obtain the I/O buffer or buffers from a custom IOCTL request.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+EvtIoInCallerContext(
+    _In_  WDFDEVICE   SpbController,
+    _In_  WDFREQUEST  FxRequest
+    ) 
+{
+    NTSTATUS status;
+
+    //
+    // NOTE: The driver should check for custom IOCTLs that this
+    // driver handles. If an IOCTL is not recognized, mark the
+    // request as STATUS_NOT_SUPPORTED, and complete the request.
+    //
+
+    status = SpbRequestCaptureIoOtherTransferList((SPBREQUEST)FxRequest);
+
+    //
+    // If the preceding call fails, the driver must complete the
+    // request instead of queueing the request.
+    //
+
+    if (!NT_SUCCESS(status))
+    {
+        goto exit;
+    }
+
+    status = WdfDeviceEnqueueRequest(SpbController, FxRequest);
+
+    if (!NT_SUCCESS(status))
+    {
+        goto exit;
+    }
+
+exit:
+
+    if (!NT_SUCCESS(status))
+    {
+        WdfRequestComplete(FxRequest, status);
+    }
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -113,15 +170,25 @@ The maximum IRQL at which the SPB controller driver can call this method depends
 
 ## See Also
 
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestormode.md">WdfRequestGetRequestorMode</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450907">SpbControllerSetIoOtherCallback</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestormode.md">WdfRequestGetRequestorMode</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450907">SpbControllerSetIoOtherCallback</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ea5e654a-9cb5-4d4d-9660-339410a6a20f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeRestoreExtendedProcessorState routine [Kernel-Mode Driver Architecture], wdm/KeRestoreExtendedProcessorState, KeRestoreExtendedProcessorState, kernel.kerestoreextendedprocessorstate, k105_35142457-ddfe-4773-b4ed-d2d84d5c74d0.xml
+ms.keywords: wdm/KeRestoreExtendedProcessorState, KeRestoreExtendedProcessorState, k105_35142457-ddfe-4773-b4ed-d2d84d5c74d0.xml, kernel.kerestoreextendedprocessorstate, KeRestoreExtendedProcessorState routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,6 +70,7 @@ None
 ## Remarks
 
 Kernel-mode driver code must ensure that calls to <b>KeSaveExtendedProcessorState</b> and <b>KeRestoreExtendedProcessorState</b> are properly nested. This is required so that, at each nesting level, the state that was restored by the <b>KeRestoreExtendedProcessorState</b> call is the same state that was saved by the corresponding <b>KeSaveExtendedProcessorState</b> call. To ensure proper nesting, kernel-mode driver code must follow these rules:
+
 <ul>
 <li>
 A <b>KeRestoreExtendedProcessorState</b> call that restores a saved state must be running at the same IRQL as the <b>KeSaveExtendedProcessorState</b> call that saved the state. 
@@ -87,7 +88,8 @@ Typically, the caller-allocated <b>XSTATE_SAVE</b> structure that contains the s
 The <b>KeRestoreExtendedProcessorState</b> call that restores a saved state must be running in the same thread as the <b>KeSaveExtendedProcessorState</b> call that saved the state. 
 
 </li>
-</ul>A similar set of rules apply to the <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a> and <a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a> routines.
+</ul>
+A similar set of rules apply to the <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a> and <a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a> routines.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,11 +105,19 @@ The <b>KeRestoreExtendedProcessorState</b> call that restores a saved state must
 
 <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
 
+
+
 <a href="..\wdm\nf-wdm-kesaveextendedprocessorstate.md">KeSaveExtendedProcessorState</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
+
+
 
 <a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
+
 
  
 

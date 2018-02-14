@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisDprAcquireReadWriteLock, ndis/NdisDprAcquireReadWriteLock, netvista.ndisdpracquirereadwritelock, NdisDprAcquireReadWriteLock function [Network Drivers Starting with Windows Vista]
+ms.keywords: ndis/NdisDprAcquireReadWriteLock, netvista.ndisdpracquirereadwritelock, NdisDprAcquireReadWriteLock function [Network Drivers Starting with Windows Vista], NdisDprAcquireReadWriteLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	NdisDprAcquireReadWriteLock
 product: Windows
 targetos: Windows
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
 ---
 
 
@@ -136,25 +136,43 @@ For more information about acquiring and releasing NDIS spin locks, see
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisacquirerwlockwrite.md">NdisAcquireRWLockWrite</a>
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
-
-<a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a>
-
-<a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">NdisInitializeReadWriteLock</a>
-
 <a href="..\ndis\nc-ndis-miniport_synchronize_interrupt.md">
    MiniportSynchronizeInterrupt</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
    NdisMSynchronizeWithInterruptEx</a>
 
-<a href="..\ndis\ns-ndis-_lock_state.md">LOCK_STATE</a>
+
 
 <a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">NdisDprReleaseReadWriteLock</a>
 
+
+
+<a href="..\ndis\nf-ndis-ndisacquirerwlockread.md">NdisAcquireRWLockRead</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">NdisInitializeReadWriteLock</a>
+
+
+
 <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
+
+
+
+<a href="..\ndis\ns-ndis-_lock_state.md">LOCK_STATE</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisacquirerwlockwrite.md">NdisAcquireRWLockWrite</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
+
+
 
  
 

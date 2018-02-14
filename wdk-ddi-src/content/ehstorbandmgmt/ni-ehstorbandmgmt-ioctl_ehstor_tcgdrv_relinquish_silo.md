@@ -87,6 +87,8 @@ To prevent the TCG Storage Silo driver from reconfiguring the TCG subsystem in a
 
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities.md">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a>
 
+
+
  
 
  

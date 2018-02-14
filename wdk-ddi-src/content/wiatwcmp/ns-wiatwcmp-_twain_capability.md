@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 79a2155d-eb06-4095-9fe6-b95d93e46211
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: "*PTWAIN_CAPABILITY, wiastrct_12204cb8-d0ad-46d5-a741-4522ba28006b.xml, wiatwcmp/PTWAIN_CAPABILITY, PTWAIN_CAPABILITY structure pointer [Imaging Devices], image.twain_capability, TWAIN_CAPABILITY, PTWAIN_CAPABILITY, TWAIN_CAPABILITY structure [Imaging Devices], _TWAIN_CAPABILITY, wiatwcmp/TWAIN_CAPABILITY"
+ms.keywords: PTWAIN_CAPABILITY, image.twain_capability, wiastrct_12204cb8-d0ad-46d5-a741-4522ba28006b.xml, TWAIN_CAPABILITY structure [Imaging Devices], TWAIN_CAPABILITY, wiatwcmp/TWAIN_CAPABILITY, wiatwcmp/PTWAIN_CAPABILITY, PTWAIN_CAPABILITY structure pointer [Imaging Devices], _TWAIN_CAPABILITY, *PTWAIN_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -75,6 +75,7 @@ Specifies the ID of the capability to set or get.
 `lCC`
 
 Specifies the TWAIN condition code. This value can be one of the following:
+
 <table>
 <tr>
 <th>Value</th>
@@ -123,6 +124,7 @@ Specifies the size, in bytes of the data in the <b>Data</b> array.
 `lMSG`
 
 Specifies the particular TWAIN message, which can be one of the following values: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -183,6 +185,7 @@ Set a capability.
 `lRC`
 
 Specifies the TWAIN return code. This value can be on of the following:
+
 <table>
 <tr>
 <th>Value</th>

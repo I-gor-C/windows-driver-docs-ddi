@@ -73,6 +73,7 @@ NTSTATUS DxgkddiVidpnsourcemodesetGetnummodes(
 ## Return Value
 
 The <b>pfnGetNumModes</b> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -118,7 +119,11 @@ The D3DKMDT_HVIDPNSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirenextmodeinfo.md">pfnAcquireNextModeInfo</a>
 
+
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirefirstmodeinfo.md">pfnAcquireFirstModeInfo</a>
+
+
 
  
 

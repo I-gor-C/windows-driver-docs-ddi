@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 82892740-12f6-469b-a65c-6905d32c0b0d
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: UMDFDeviceObjectRef_516aeba5-c0c2-40a0-a9e6-d1a983835a94.xml, IWDFDeviceInitialize::SetPnpCapability, SetPnpCapability method, umdf.iwdfdeviceinitialize_setpnpcapability, wudfddi/IWDFDeviceInitialize::SetPnpCapability, IWDFDeviceInitialize interface, SetPnpCapability method, IWDFDeviceInitialize, SetPnpCapability, SetPnpCapability method, IWDFDeviceInitialize interface, wdf.iwdfdeviceinitialize_setpnpcapability
+ms.keywords: IWDFDeviceInitialize::SetPnpCapability, SetPnpCapability method, IWDFDeviceInitialize interface, IWDFDeviceInitialize interface, SetPnpCapability method, SetPnpCapability, umdf.iwdfdeviceinitialize_setpnpcapability, SetPnpCapability method, UMDFDeviceObjectRef_516aeba5-c0c2-40a0-a9e6-d1a983835a94.xml, IWDFDeviceInitialize, wdf.iwdfdeviceinitialize_setpnpcapability, wudfddi/IWDFDeviceInitialize::SetPnpCapability
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -68,6 +68,7 @@ A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAP
 `Value`
 
 A WDF_TRI_STATE-typed value that identifies how to set the PnP capability that is specified by <i>Capability</i>. The following table shows the possible values.
+
 <table>
 <tr>
 <th>Value</th>
@@ -125,9 +126,15 @@ None
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAPABILITY</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556974">IWDFDeviceInitialize::GetPnpCapability</a>
 
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
+
 
  
 

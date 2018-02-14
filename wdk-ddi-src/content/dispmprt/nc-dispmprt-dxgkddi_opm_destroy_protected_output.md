@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiOPMDestroyProtectedOutput
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -73,7 +73,9 @@ The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dx
 ## Return Value
 
 <i>DxgkDdiOPMDestroyProtectedOutput</i> returns STATUS_SUCCESS if it succeeds. Otherwise, it returns one of the error codes that are defined in <i>Ntstatus.h</i>. 
-<div class="alert"><b>Note</b>  <i>DxgkDdiOPMDestroyProtectedOutput</i> cannot fail if the ProtectedOutputHandle parameter contains a valid protected output handle. </div><div> </div>
+
+<div class="alert"><b>Note</b>  <i>DxgkDdiOPMDestroyProtectedOutput</i> cannot fail if the ProtectedOutputHandle parameter contains a valid protected output handle. </div>
+<div> </div>
 
 ## Remarks
 
@@ -90,9 +92,13 @@ The DirectX graphics kernel subsystem calls <i>DxgkDdiOPMDestroyProtectedOutput<
 
 ## See Also
 
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a>
+
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a>
+
 
  
 

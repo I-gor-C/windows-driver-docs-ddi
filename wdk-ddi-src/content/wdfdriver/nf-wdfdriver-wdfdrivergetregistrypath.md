@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5f237d2e-5ffd-40af-8cd8-ea1414807086
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFDRIVERGETREGISTRYPATH, DFDriverObjectRef_a21bcb6e-2211-4727-bb87-bb912f8a173b.xml, wdfdriver/WdfDriverGetRegistryPath, kmdf.wdfdrivergetregistrypath, wdf.wdfdrivergetregistrypath, WdfDriverGetRegistryPath, WdfDriverGetRegistryPath method
+ms.keywords: WdfDriverGetRegistryPath method, kmdf.wdfdrivergetregistrypath, wdfdriver/WdfDriverGetRegistryPath, wdf.wdfdrivergetregistrypath, DFDriverObjectRef_a21bcb6e-2211-4727-bb87-bb912f8a173b.xml, PFN_WDFDRIVERGETREGISTRYPATH, WdfDriverGetRegistryPath
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,6 +78,24 @@ The registry path string that <b>WdfDriverGetRegistryPath</b> returns is obtaine
 
 For more information about the registry, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
 
+
+#### Examples
+
+The following code example obtains the path to a driver's registry key in the registry's <b>Services</b> tree.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>PWSTR  registryPath;
+
+registryPath = WdfDriverGetRegistryPath(driver);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -91,13 +109,21 @@ For more information about the registry, see <a href="https://docs.microsoft.com
 
 ## See Also
 
+<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
+
+
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
+
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfdriveropenparametersregistrykey.md">WdfDriverOpenParametersRegistryKey</a>
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
 
  
 

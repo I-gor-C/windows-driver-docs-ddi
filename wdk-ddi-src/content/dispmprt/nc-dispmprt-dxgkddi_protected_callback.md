@@ -40,7 +40,7 @@ apiname:
 -	DxgkProtectedCallback
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -84,6 +84,7 @@ None
 <i>DxgkProtectedCallback</i> must be called only when all access to the display adapter has been halted, as indicated by the status parameter <i>ProtectionStatus.</i>
 
 The driver must ensure that following conditions are met during the callback routine:
+
 <ul>
 <li>
 All interrupts on the device are disabled, and any remaining pending interrupts are handled, including any DPCs that may have been queued on any CPU but not yet serviced.
@@ -118,6 +119,8 @@ The adapter, including its registers and display mode, is maintained in the prop
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a>
+
+
 
  
 

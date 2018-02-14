@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 73e323a4-d40e-4414-92b7-310bfb0f6457
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: MarkCancelable, IWDFIoRequest::MarkCancelable, wudfddi/IWDFIoRequest::MarkCancelable, IWDFIoRequest, MarkCancelable method, IWDFIoRequest interface, MarkCancelable method, UMDFRequestObjectRef_c1304e95-724d-4ced-abc2-801b1606f43b.xml, MarkCancelable method, IWDFIoRequest interface, umdf.iwdfiorequest_markcancelable, wdf.iwdfiorequest_markcancelable
+ms.keywords: wudfddi/IWDFIoRequest::MarkCancelable, umdf.iwdfiorequest_markcancelable, IWDFIoRequest interface, MarkCancelable method, MarkCancelable method, IWDFIoRequest interface, IWDFIoRequest::MarkCancelable, wdf.iwdfiorequest_markcancelable, MarkCancelable method, MarkCancelable, UMDFRequestObjectRef_c1304e95-724d-4ced-abc2-801b1606f43b.xml, IWDFIoRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -82,6 +82,7 @@ The driver must call <a href="https://msdn.microsoft.com/library/windows/hardwar
 After a driver calls <b>MarkCancelable</b> to enable canceling, the request remains cancelable while the driver has possession of the request object, unless the driver calls <a href="https://msdn.microsoft.com/5a3fa72c-241e-4270-92eb-70f135d79871">UnmarkCancelable</a> to disable canceling. 
 
 If the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a> method to forward the request to a different queue, the following rules apply: 
+
 <ul>
 <li>
 Canceling of I/O requests cannot be enabled when the driver forwards the requests to a different queue. 
@@ -99,6 +100,27 @@ After the framework dequeues the request from the second queue and delivers the 
 </li>
 </ul>
 
+#### Examples
+
+The following code example sets up a request so that the framework can cancel it.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    //
+    // The QueryInteraface should not fail.
+    //
+    (VOID)this-&gt;QueryInterface(_uuidof(IRequestCallbackCancel),
+                               (PVOID *)&amp;cancelCallback);
+
+    pWdfRequest-&gt;MarkCancelable(cancelCallback);</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -111,23 +133,41 @@ After the framework dequeues the request from the second queue and delivers the 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556854">IQueueCallbackDeviceIoControl::OnDeviceIoControl</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556875">IQueueCallbackRead::OnRead</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="..\wudfddi\nn-wudfddi-irequestcallbackcancel.md">IRequestCallbackCancel</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885">IQueueCallbackWrite::OnWrite</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556875">IQueueCallbackRead::OnRead</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556854">IQueueCallbackDeviceIoControl::OnDeviceIoControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
 
-<a href="..\wudfddi\nn-wudfddi-irequestcallbackcancel.md">IRequestCallbackCancel</a>
+
 
  
 

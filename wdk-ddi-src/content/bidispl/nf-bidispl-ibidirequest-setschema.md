@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: ca4f7ea4-fcad-42b0-a63a-eee3706e5cbf
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: gdi.ibidirequest_ibidirequest__setschema, SetSchema method [Print Devices], IBidiRequest interface, print.ibidirequest_ibidirequest__setschema, bidispl/IBidiRequest::SetSchema, _win32_IBidiRequest_SetSchema, SetSchema, IBidiRequest interface [Print Devices], SetSchema method, SetSchema method [Print Devices], IBidiRequest::SetSchema, IBidiRequest
+ms.keywords: SetSchema, bidispl/IBidiRequest::SetSchema, IBidiRequest interface [Print Devices], SetSchema method, _win32_IBidiRequest_SetSchema, print.ibidirequest_ibidirequest__setschema, gdi.ibidirequest_ibidirequest__setschema, SetSchema method [Print Devices], IBidiRequest::SetSchema, SetSchema method [Print Devices], IBidiRequest interface, IBidiRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -40,7 +40,7 @@ apiname:
 -	IBidiRequest.SetSchema
 product: Windows
 targetos: Windows
-req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
@@ -65,6 +65,7 @@ Pointer to a schema string.
 ## Return Value
 
 The method returns one of the following values. For more information about COM error codes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544310">Error Handling</a>.
+
 <table>
 <tr>
 <th>Value</th>
@@ -117,11 +118,17 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 
 ## See Also
 
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+
 
  
 

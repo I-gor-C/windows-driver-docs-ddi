@@ -73,6 +73,7 @@ HRESULT Pfnd3dddiDxvahdSetvideoprocessstreamstate(
 ## Return Value
 
 The <i>SetVideoProcessStreamState</i> function returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -113,6 +114,8 @@ The stream state is successfully set.
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_setvideoprocessstreamstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSSTREAMSTATE</a>
+
+
 
  
 

@@ -7,8 +7,8 @@ old-location: audio\synth_portparams.htm
 old-project: audio
 ms.assetid: 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: audio.synth_portparams, dmusprop/SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS, _SYNTH_PORTPARAMS, SYNTH_PORTPARAMS structure [Audio Devices], SYNTH_PORTPARAMS, aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, PSYNTH_PORTPARAMS structure pointer [Audio Devices], dmusprop/PSYNTH_PORTPARAMS
+ms.date: 2/8/2018
+ms.keywords: "_SYNTH_PORTPARAMS, aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, PSYNTH_PORTPARAMS structure pointer [Audio Devices], PSYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS structure [Audio Devices], audio.synth_portparams, SYNTH_PORTPARAMS, dmusprop/SYNTH_PORTPARAMS, dmusprop/PSYNTH_PORTPARAMS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	SYNTH_PORTPARAMS
 product: Windows
 targetos: Windows
-req.typenames: "*PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS"
+req.typenames: SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
 ---
 
 # _SYNTH_PORTPARAMS structure
@@ -76,7 +76,6 @@ Specifies the type of effects produced for audio output from this port. This mem
 
 
 
-If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zero.
 
 
 #### SYNTH_EFFECT_REVERB
@@ -84,14 +83,18 @@ If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zer
 Reverb is enabled.
 
 
+
 #### SYNTH_EFFECT_CHORUS
 
 Chorus effect is enabled.
 
 
+
 #### SYNTH_EFFECT_DELAY
 
 Delay effect is enabled.
+
+If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zero.
 
 `SampleRate`
 
@@ -108,9 +111,11 @@ Specifies which of the SYNTH_PORTPARAMS structure members contain valid data. Th
 
 
 
+
 #### SYNTH_PORTPARAMS_VOICES
 
 The <b>Voices</b> field is valid.
+
 
 
 #### SYNTH_PORTPARAMS_CHANNELGROUPS
@@ -118,9 +123,11 @@ The <b>Voices</b> field is valid.
 The <b>ChannelGroups</b> field is valid.
 
 
+
 #### SYNTH_PORTPARAMS_AUDIOCHANNELS
 
 The <b>AudioChannels</b> field is valid.
+
 
 
 #### SYNTH_PORTPARAMS_SAMPLERATE
@@ -128,9 +135,11 @@ The <b>AudioChannels</b> field is valid.
 The <b>SampleRate</b> field is valid.
 
 
+
 #### SYNTH_PORTPARAMS_EFFECT
 
 The <b>EffectsFlags</b> flag is valid.
+
 
 
 #### SYNTH_PORTPARAMS_SHARE
@@ -153,8 +162,10 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPE
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a>
 
- 
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20SYNTH_PORTPARAMS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [audio\audio]:%20SYNTH_PORTPARAMS structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

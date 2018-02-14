@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: CA189010-0BEB-420A-BE69-5F7FEE322FE3
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfdevicequerypropertyex, WdfDeviceQueryPropertyEx method, wdfdevice/WdfDeviceQueryPropertyEx, PFN_WDFDEVICEQUERYPROPERTYEX, WdfDeviceQueryPropertyEx
+ms.keywords: PFN_WDFDEVICEQUERYPROPERTYEX, WdfDeviceQueryPropertyEx method, WdfDeviceQueryPropertyEx, wdf.wdfdevicequerypropertyex, wdfdevice/WdfDeviceQueryPropertyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,6 +98,7 @@ A pointer to a <b>DEVPROPTYPE</b> variable. If the method is successful, upon re
 ## Return Value
 
 If the operation succeeds, <b>WdfDeviceQueryPropertyEx</b> returns STATUS_SUCCESS. Additional return values include:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,7 +126,8 @@ The specified <i>DeviceProperty</i> value is invalid.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -153,9 +155,13 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
+
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 4ebc90e0-328b-4830-9942-027d3f19d186
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfwmiinstancegetdevice, wdf.wdfwmiinstancegetdevice, WdfWmiInstanceGetDevice, wdfwmi/WdfWmiInstanceGetDevice, DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml, WdfWmiInstanceGetDevice method, PFN_WDFWMIINSTANCEGETDEVICE
+ms.keywords: wdf.wdfwmiinstancegetdevice, kmdf.wdfwmiinstancegetdevice, PFN_WDFWMIINSTANCEGETDEVICE, wdfwmi/WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice method, DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml, WdfWmiInstanceGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## See Also
 
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
+
+
 
  
 

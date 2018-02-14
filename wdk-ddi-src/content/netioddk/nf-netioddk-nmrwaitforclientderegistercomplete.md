@@ -71,6 +71,7 @@ A handle used by the NMR to represent the registration of the client module. The
 
 The 
      <b>NmrWaitForClientDeregisterComplete</b> function returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -151,6 +152,8 @@ A client module typically calls the
 ## See Also
 
 <a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a>
+
+
 
  
 

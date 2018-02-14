@@ -7,8 +7,8 @@ old-location: ifsk\mmprefetchpages.htm
 old-project: ifsk
 ms.assetid: fd76dfed-2c47-4289-a672-1db8129f5a9e
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
-ms.keywords: ntifs/MmPrefetchPages, mmref_6e555336-a134-409a-9c8a-a4a217e38599.xml, MmPrefetchPages, MmPrefetchPages routine [Installable File System Drivers], ifsk.mmprefetchpages
+ms.date: 2/7/2018
+ms.keywords: mmref_6e555336-a134-409a-9c8a-a4a217e38599.xml, MmPrefetchPages, ntifs/MmPrefetchPages, ifsk.mmprefetchpages, MmPrefetchPages routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,6 +70,7 @@ A pointer to an array of read-lists to be prefetched.
 ## Return Value
 
 <b>MmPrefetchPages</b> returns STATUS_SUCCESS or an appropriate error status representing the final completion status of the operation. Possible error status codes include the following: 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -86,7 +87,8 @@ A temporary buffer required by this function could not be allocated.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 <b>MmPrefetchPages</b> returns STATUS_SUCCESS on success and also if all of the requested pages were already in memory indicating no reads from secondary storage were required.
 

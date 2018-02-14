@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 457c4b98-313d-4b31-aa6c-fb62fea6fc7d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasGetImageInformation, wiamdef/wiasGetImageInformation, wiasFncs_6603ae74-b0b9-48f4-9fa9-83cdf3edc1d6.xml, image.wiasgetimageinformation, wiasGetImageInformation function [Imaging Devices]
+ms.keywords: image.wiasgetimageinformation, wiasGetImageInformation function [Imaging Devices], wiasFncs_6603ae74-b0b9-48f4-9fa9-83cdf3edc1d6.xml, wiamdef/wiasGetImageInformation, wiasGetImageInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	wiasGetImageInformation
 product: Windows
 targetos: Windows
-req.typenames: "*LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2"
+req.typenames: DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -67,6 +67,7 @@ Pointer to a WIA item context.
 `lFlags`
 
 Specifies operational flags. Currently, only the following flag is defined:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -113,6 +114,8 @@ If WIAS_INIT_CONTEXT is specified in the <i>lFlags</i> parameter, the MINIDRV_TR
 ## See Also
 
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+
+
 
  
 

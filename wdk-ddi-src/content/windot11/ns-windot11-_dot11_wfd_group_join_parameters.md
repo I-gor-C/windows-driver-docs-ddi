@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7E526179-97B6-4BA3-8F78-C4C04FFF9085
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PDOT11_WFD_GROUP_JOIN_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_wfd_group_join_parameters, _DOT11_WFD_GROUP_JOIN_PARAMETERS, windot11/DOT11_WFD_GROUP_JOIN_PARAMETERS, DOT11_WFD_GROUP_JOIN_PARAMETERS, DOT11_WFD_GROUP_JOIN_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_GROUP_JOIN_PARAMETERS, *PDOT11_WFD_GROUP_JOIN_PARAMETERS, windot11/PDOT11_WFD_GROUP_JOIN_PARAMETERS
+ms.keywords: DOT11_WFD_GROUP_JOIN_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_wfd_group_join_parameters, _DOT11_WFD_GROUP_JOIN_PARAMETERS, DOT11_WFD_GROUP_JOIN_PARAMETERS, PDOT11_WFD_GROUP_JOIN_PARAMETERS, *PDOT11_WFD_GROUP_JOIN_PARAMETERS, windot11/DOT11_WFD_GROUP_JOIN_PARAMETERS, windot11/PDOT11_WFD_GROUP_JOIN_PARAMETERS, PDOT11_WFD_GROUP_JOIN_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -80,6 +80,7 @@ This channel on which the Group Owner (GO) may operate the group. This channel i
 `Header`
 
 The type, revision, and size of the <b>DOT11_WFD_GROUP_JOIN_PARAMETERS</b> structure. The required settings for the members of <b>Header</b> are the following.
+
 <table>
 <tr>
 <th>Member</th>
@@ -109,6 +110,8 @@ The type, revision, and size of the <b>DOT11_WFD_GROUP_JOIN_PARAMETERS</b> struc
 ## See Also
 
 <a href="https://msdn.microsoft.com/8BA9DC85-41DA-4021-BFBC-2C64A38146E9">OID_DOT11_WFD_GROUP_JOIN_PARAMETERS</a>
+
+
 
  
 

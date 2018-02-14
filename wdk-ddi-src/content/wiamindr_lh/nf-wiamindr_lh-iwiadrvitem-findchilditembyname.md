@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 04f446f2-cd59-4191-be0c-60140ecee3b2
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FindChildItemByName method [Imaging Devices], IWiaDrvItem interface, FindChildItemByName, IWiaDrvItem::FindChildItemByName, FindChildItemByName method [Imaging Devices], wiamindr_lh/IWiaDrvItem::FindChildItemByName, DrvItem_afe8c47f-ebf9-484e-94bf-fdcd4713ea2a.xml, image.iwiadrvitem_findchilditembyname, IWiaDrvItem interface [Imaging Devices], FindChildItemByName method, IWiaDrvItem
+ms.keywords: wiamindr_lh/IWiaDrvItem::FindChildItemByName, IWiaDrvItem::FindChildItemByName, image.iwiadrvitem_findchilditembyname, IWiaDrvItem, FindChildItemByName, IWiaDrvItem interface [Imaging Devices], FindChildItemByName method, FindChildItemByName method [Imaging Devices], IWiaDrvItem interface, FindChildItemByName method [Imaging Devices], DrvItem_afe8c47f-ebf9-484e-94bf-fdcd4713ea2a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -88,9 +88,15 @@ Minidrivers typically use this method to search a driver item tree for a specifi
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543870">IWiaDrvItem::FindItemByName</a>
 
+
+
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+
+
 
  
 

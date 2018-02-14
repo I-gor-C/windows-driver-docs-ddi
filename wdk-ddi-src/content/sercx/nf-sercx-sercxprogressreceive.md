@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: A1773CCB-971E-4439-A11F-82761FF8AF71
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: serports.sercxprogressreceive, SerCxProgressReceive, 1/SerCxProgressReceive, SerCxProgressReceive method [Serial Ports]
+ms.keywords: SerCxProgressReceive method [Serial Ports], 1/SerCxProgressReceive, serports.sercxprogressreceive, SerCxProgressReceive
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,16 +71,19 @@ The number of bytes of data that the caller loaded into the receive buffer that 
 `ReceiveStatus`
 
 The current status of the receive operation. Set this parameter to one of the following values:
+
 <ul>
 <li><b>SerCxStatusSuccess</b></li>
 <li><b>SerCxStatusCancelled</b></li>
 <li><b>SerCxStatusTimeout</b></li>
-</ul>For more information about these values, see <a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>.
+</ul>
+For more information about these values, see <a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>.
 
 
 ## Return Value
 
 <b>SerCxProgressReceive</b> returns STATUS_SUCCESS if it is successful. Possible error return values include the following status codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -138,9 +141,13 @@ If the <b>SerCxProgressReceive</b> does not complete all outstanding work for th
 
 ## See Also
 
+<a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>
+
+
+
 <a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a>
 
-<a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>
+
 
  
 

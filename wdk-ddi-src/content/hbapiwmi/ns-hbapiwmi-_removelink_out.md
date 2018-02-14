@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 724e3143-4994-4785-9bbf-afb928e8b166
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: hbapiwmi/PRemoveLink_OUT, hbapiwmi/RemoveLink_OUT, PRemoveLink_OUT structure pointer [Storage Devices], PRemoveLink_OUT, structs-Fibre_0210455d-c6c4-4548-ae14-63aa2e7b9a5d.xml, _RemoveLink_OUT, RemoveLink_OUT, *PRemoveLink_OUT, RemoveLink_OUT structure [Storage Devices], storage.removelink_out
+ms.keywords: PRemoveLink_OUT structure pointer [Storage Devices], PRemoveLink_OUT, storage.removelink_out, hbapiwmi/PRemoveLink_OUT, _RemoveLink_OUT, RemoveLink_OUT, hbapiwmi/RemoveLink_OUT, *PRemoveLink_OUT, RemoveLink_OUT structure [Storage Devices], structs-Fibre_0210455d-c6c4-4548-ae14-63aa2e7b9a5d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -71,6 +71,8 @@ The WMI tool suite generates a declaration of the RemoveLink_OUT structure in <i
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563984">RemoveLink</a>
+
+
 
  
 

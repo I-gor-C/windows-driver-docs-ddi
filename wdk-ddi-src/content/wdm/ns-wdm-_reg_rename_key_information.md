@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 80ffa1dc-aa4f-40b4-936b-7e441b3b123d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/REG_RENAME_KEY_INFORMATION, PREG_RENAME_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION, wdm/PREG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_RENAME_KEY_INFORMATION, kernel.reg_rename_key_information, *PREG_RENAME_KEY_INFORMATION, kstruct_d_f6416cfd-5ace-4366-81a5-87b233551c7a.xml
+ms.keywords: REG_RENAME_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_RENAME_KEY_INFORMATION, kernel.reg_rename_key_information, *PREG_RENAME_KEY_INFORMATION, wdm/REG_RENAME_KEY_INFORMATION, PREG_RENAME_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_RENAME_KEY_INFORMATION, kstruct_d_f6416cfd-5ace-4366-81a5-87b233551c7a.xml, REG_RENAME_KEY_INFORMATION, _REG_RENAME_KEY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -94,9 +94,13 @@ For more information about registry filtering operations, see <a href="https://m
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 688f033b-1f0e-4f0a-9ccd-457ba726d728
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, kernel.rtlappendunicodetostring, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], wdm/RtlAppendUnicodeToString, RtlAppendUnicodeToString
+ms.keywords: RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], kernel.rtlappendunicodetostring, k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, wdm/RtlAppendUnicodeToString, RtlAppendUnicodeToString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,6 +72,7 @@ A pointer to the null-terminated string to append to the <i>Destination</i> stri
 ## Return Value
 
 <b>RtlAppendUnicodeToString</b> can return one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -122,6 +123,8 @@ The <i>Destination</i> buffer must be resident if the caller is running at IRQL 
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+
+
 
  
 

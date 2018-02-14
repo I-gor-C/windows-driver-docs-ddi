@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7918ee03-c1cb-4a38-8773-4a01832357d2
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_CONTEXT_STATE, netvista.ndis_wwan_context_state, *PNDIS_WWAN_CONTEXT_STATE, WwanRef_87098fc7-4dbd-4331-81a4-53d425cc0bb0.xml, PNDIS_WWAN_CONTEXT_STATE, _NDIS_WWAN_CONTEXT_STATE, ndiswwan/NDIS_WWAN_CONTEXT_STATE, PNDIS_WWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords: netvista.ndis_wwan_context_state, PNDIS_WWAN_CONTEXT_STATE, ndiswwan/PNDIS_WWAN_CONTEXT_STATE, _NDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE, PNDIS_WWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_87098fc7-4dbd-4331-81a4-53d425cc0bb0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	NDIS_WWAN_CONTEXT_STATE
 product: Windows
 targetos: Windows
-req.typenames: NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE
+req.typenames: "*PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE"
 ---
 
 # _NDIS_WWAN_CONTEXT_STATE structure
@@ -73,6 +73,7 @@ The header with type, revision, and size information about the NDIS_WWAN_CONTEXT
      <i>set</i> operations. Miniport drivers must set the header with the same values when they send the data
      structure to the MB service.
      
+
 <table>
 <tr>
 <th>Header submember</th>
@@ -108,7 +109,8 @@ sizeof(NDIS_WWAN_CONTEXT_STATE)
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
@@ -118,6 +120,7 @@ For more information about these members, see
 The status of context activation or deactivation operation. The following table shows the possible
      values for this member.
      
+
 <table>
 <tr>
 <th>Value</th>
@@ -186,10 +189,12 @@ The operation failed because the device is in the process of initializing. Retry
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Miniport drivers can return the following error codes (in addition to those previously described)
      only in the event of a failed set PDP activation operation.
+
 <table>
 <tr>
 <th>Value</th>
@@ -320,7 +325,11 @@ The operation failed because the context identified by
 
 <a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
 
+
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+
 
  
 

@@ -40,7 +40,7 @@ apiname:
 -	WskControlClient
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -87,9 +87,11 @@ The control operation that is being performed. A WSK application can specify one
 
 
 
+
 #### WSK_TRANSPORT_LIST_QUERY
 
 Retrieve a list of available network transports.
+
 
 
 #### WSK_TRANSPORT_LIST_CHANGE
@@ -97,9 +99,11 @@ Retrieve a list of available network transports.
 Receive notification of a change to the list of available network transports.
 
 
+
 #### WSK_CACHE_SD
 
 Obtain a cached copy of a security descriptor.
+
 
 
 #### WSK_RELEASE_SD
@@ -107,15 +111,18 @@ Obtain a cached copy of a security descriptor.
 Release a cached copy of a security descriptor.
 
 
+
 #### WSK_SET_STATIC_EVENT_CALLBACKS
 
 Enable specified event callback functions automatically on all sockets.
+
 
 
 #### WSK_TDI_DEVICENAME_MAPPING
 
 Map combinations of address family, socket type, and protocol to device names of 
        <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.
+
 
 
 #### WSK_TDI_BEHAVIOR
@@ -154,6 +161,7 @@ A pointer to a ULONG-typed variable that receives the number of bytes of data th
      <i>OutputBuffer</i> parameter. A WSK application should set this pointer to <b>NULL</b> except when all of the
      following are true:
      
+
 <ul>
 <li>
 The 
@@ -190,6 +198,7 @@ This parameter is required, is optional, or must be <b>NULL</b>, depending on th
 ## Return Value
 
 <b>WskControlClient</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -264,10 +273,12 @@ If the
     <b>ExFree<i>Xxx</i></b> function until after the IRP is completed. If the WSK application allocated the buffers on the
     stack, it cannot return from the function that calls the 
     <b>WskControlClient</b> function until after the IRP is completed.
+
 <div class="alert"><b>Note</b>  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use 
     <a href="https://msdn.microsoft.com/b9d88e59-3c4b-4804-8dd9-02c275927a1e">Windows Filtering
     Platform</a> or 
-    <a href="https://msdn.microsoft.com/90264a3d-f002-4205-8e15-9060644117a3">Winsock Kernel</a> instead.</div><div> </div>
+    <a href="https://msdn.microsoft.com/90264a3d-f002-4205-8e15-9060644117a3">Winsock Kernel</a> instead.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -279,17 +290,29 @@ If the
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_npi.md">WSK_PROVIDER_NPI</a>
+
+
 
 <a href="..\wsk\ns-wsk-_wsk_transport.md">WSK_TRANSPORT</a>
 
+
+
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+
+
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff571157">WSK Client Control Operations</a>
 
-<a href="..\wsk\ns-wsk-_wsk_provider_npi.md">WSK_PROVIDER_NPI</a>
+
+
+<a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
+
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
+
+
 
  
 

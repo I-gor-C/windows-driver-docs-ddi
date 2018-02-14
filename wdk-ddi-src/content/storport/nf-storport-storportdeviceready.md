@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6dd3abdb-9037-4cf5-abe7-7776dcf67bd5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortDeviceReady, storage.storportdeviceready, StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices], storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml
+ms.keywords: storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml, storage.storportdeviceready, storport/StorPortDeviceReady, StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,7 +98,11 @@ It is not generally necessary to notify the target device that new requests are 
 
 <a href="..\storport\nf-storport-storportdevicebusy.md">StorPortDeviceBusy</a>
 
+
+
 <a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
+
+
 
  
 

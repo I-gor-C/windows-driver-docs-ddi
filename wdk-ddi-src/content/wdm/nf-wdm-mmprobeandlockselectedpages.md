@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1DA632FF-FD5F-4C4C-8B8E-5AC26069094A
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmprobeandlockselectedpages_, wdm/MmProbeAndLockSelectedPages, MmProbeAndLockSelectedPages, MmProbeAndLockSelectedPages routine [Kernel-Mode Driver Architecture]
+ms.keywords: MmProbeAndLockSelectedPages, kernel.mmprobeandlockselectedpages_, wdm/MmProbeAndLockSelectedPages, MmProbeAndLockSelectedPages routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,6 +98,8 @@ Calls to <b>MmProbeAndLockSelectedPages</b> must be enclosed in a <b>try/except<
 ## See Also
 
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+
 
  
 

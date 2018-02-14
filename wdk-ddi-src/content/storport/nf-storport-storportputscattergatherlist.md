@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0b380597-09dc-414f-b2c6-f541d35540da
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortPutScatterGatherList routine [Storage Devices], storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml, storage.storportputscattergatherlist, storport/StorPortPutScatterGatherList, StorPortPutScatterGatherList
+ms.keywords: storage.storportputscattergatherlist, storport/StorPortPutScatterGatherList, StorPortPutScatterGatherList routine [Storage Devices], storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml, StorPortPutScatterGatherList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A value that indicates the direction of the DMA transfer that has completed. A v
 ## Return Value
 
 <b>StorPortPutScatterGatherList</b> returns one of the following status codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -145,6 +146,8 @@ After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driv
 ## See Also
 
 <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a>
+
+
 
  
 

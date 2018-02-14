@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 25b49781-2676-4b5e-b17b-dcb1bf98b297
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsProbeStreamIrp, stream.ksprobestreamirp, KsProbeStreamIrp function [Streaming Media Devices], ks/KsProbeStreamIrp, ksfunc_0ed25e85-a785-4021-a7b7-59fa6230eff8.xml
+ms.keywords: KsProbeStreamIrp, ksfunc_0ed25e85-a785-4021-a7b7-59fa6230eff8.xml, stream.ksprobestreamirp, ks/KsProbeStreamIrp, KsProbeStreamIrp function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,6 +84,7 @@ If the function is used only to allocate MDL's and not to probe and lock the add
 If the headers appear to have already been copied to a system buffer, it is not validated again. In general, calling the <b>KsProbeStreamIrp</b> function multiple times with an IRP is not harmful. After calling the function, the stream headers are available in PIRP.AssociatedIrp.SystemBuffer. If the stream buffer MDLs have been allocated, they are available through the PIRP.MdlAddress. 
 
 The following defines are used for the <i>ProbeFlags</i> variable: 
+
 <table>
 <tr>
 <th><i>ProbeFlags </i>Value</th>

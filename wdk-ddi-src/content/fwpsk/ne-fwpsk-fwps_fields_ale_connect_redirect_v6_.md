@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8d728b54-7848-468e-9491-47b09dfc69ff
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, wfp_ref_5_const_3_data_fields_af380b4c-b918-42fb-9964-7afb02360e42.xml, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration [Network Drivers Starting with Windows Vista], netvista.fwps_fields_ale_connect_redirect_v6, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID
+ms.keywords: fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, netvista.fwps_fields_ale_connect_redirect_v6, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration [Network Drivers Starting with Windows Vista], wfp_ref_5_const_3_data_fields_af380b4c-b918-42fb-9964-7afb02360e42.xml, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, fwpsk/FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -81,13 +81,17 @@ typedef enum FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_ {
                 <tr>
                     <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID</td>
                     <td>The full path of the original application for proxy connections. If the application has not been proxied, this path is identical to the xxx_ALE_APP_ID.
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
                     <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID</td>
                     <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
-<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
+
+<div class="alert"><b>Note</b>  Supported starting with Windows 8.</div>
+<div> </div></td>
                 </tr>
             
                 <tr>
@@ -161,6 +165,7 @@ typedef enum FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_ {
         The following macros in 
     <i>Fwpsk.h</i> are defined with FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration
     values:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -176,7 +181,8 @@ typedef enum FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_ {
 </pre>
 </td>
 </tr>
-</table></span></div>These macros are used to access the following IPV6 data fields:
+</table></span></div>
+These macros are used to access the following IPV6 data fields:
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -187,6 +193,8 @@ typedef enum FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_ {
     ## See Also
 
         <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+
+
 
  
 

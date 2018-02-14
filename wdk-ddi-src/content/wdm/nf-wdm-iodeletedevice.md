@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 973549c3-c570-48ab-9a82-9398c920dbd9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoDeleteDevice routine [Kernel-Mode Driver Architecture], wdm/IoDeleteDevice, IoDeleteDevice, k104_246c1fe6-75cc-434e-a1d4-7e573eff96de.xml, kernel.iodeletedevice
+ms.keywords: IoDeleteDevice routine [Kernel-Mode Driver Architecture], IoDeleteDevice, kernel.iodeletedevice, wdm/IoDeleteDevice, k104_246c1fe6-75cc-434e-a1d4-7e573eff96de.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,9 +92,13 @@ When a driver calls <b>IoDeleteDevice</b>, the I/O manager deletes the target de
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
+
+
 <a href="..\wdm\nf-wdm-iodisconnectinterrupt.md">IoDisconnectInterrupt</a>
 
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: A54E56A6-9A6C-435D-83FD-84BB0E072C74
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory interface, RetrieveUnifiedDevicePropertyStore method, wudfddi/IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory interface, umdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory
+ms.keywords: RetrieveUnifiedDevicePropertyStore method, umdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory interface, IWDFUnifiedPropertyStoreFactory, wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory interface, RetrieveUnifiedDevicePropertyStore method, wudfddi/IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,6 +73,7 @@ The address of a location that receives a pointer to an <a href="..\wudfddi\nn-w
 ## Return Value
 
 <b>RetrieveUnifiedDevicePropertyStore</b> returns S_OK if the operation succeeds. Otherwise, the method might return one of the following values.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,7 +101,8 @@ An attempt to allocate memory failed.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method might return one of the other values that <i>Winerror.h</i> contains.
 
@@ -113,6 +115,66 @@ The <b>RootClass</b> member of the <a href="..\wudfddi_types\ns-wudfddi_types-_w
 In addition, if <b>RootClass</b> is set to <b>WdfPropertyStoreRootClassHardwareKey</b>, then the <b>Qualifier.HardwareKey.ServiceName</b> member of <i>RootSpecifier</i> must be NULL.
 
 For more information about accessing the registry, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in UMDF-based Drivers</a>.
+
+
+#### Examples
+
+The following code example retrieves a unified property store interface.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>HRESULT
+GetDevicePropertyStore(
+    _In_  IWDFDevice *                  FxDevice,
+    _Out_ IWDFUnifiedPropertyStore **   ppUnifiedPropertyStore
+    )
+{
+    HRESULT hr;
+    IWDFUnifiedPropertyStore *          pUnifiedPropertyStore = NULL;
+    WDF_PROPERTY_STORE_ROOT             RootSpecifier;
+    IWDFUnifiedPropertyStoreFactory *   pUnifiedPropertyStoreFactory = NULL;
+
+    HRESULT hrQI = FxDevice-&gt;QueryInterface(
+                        IID_PPV_ARGS(&amp;pUnifiedPropertyStoreFactory)
+                        );
+    WUDF_TEST_DRIVER_ASSERT(SUCCEEDED(hrQI));
+
+    RootSpecifier.LengthCb = sizeof(RootSpecifier);
+    RootSpecifier.RootClass = WdfPropertyStoreRootClassHardwareKey;
+    RootSpecifier.Qualifier.HardwareKey.ServiceName = NULL;
+    
+    hr = pUnifiedPropertyStoreFactory-&gt;RetrieveUnifiedDevicePropertyStore(
+            &amp;RootSpecifier,
+            &amp;pUnifiedPropertyStore
+            );
+
+    if (FAILED(hr))
+    {
+        TraceEvents(
+            TRACE_LEVEL_ERROR, 
+            TEST_TRACE_DEVICE, 
+            "Failed to retrieve unified property store for device: ”
+            “hr = %!HRESULT!",
+            hr
+            );
+        goto exit;
+    }
+
+    *ppUnifiedPropertyStore = pUnifiedPropertyStore;
+
+exit:
+    SAFE_RELEASE(pUnifiedPropertyStoreFactory);
+    
+    return hr;
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -128,7 +190,11 @@ For more information about accessing the registry, see <a href="https://docs.mic
 
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
 
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
+
+
 
  
 

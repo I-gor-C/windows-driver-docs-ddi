@@ -40,7 +40,7 @@ apiname:
 -	ResetDevice
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -71,10 +71,12 @@ A pointer to interface-specific context information. The caller passes the value
 `ResetType`
 
 The type of reset being  requested. Set this parameter to one of the following <a href="..\wdm\ne-wdm-_device_reset_type.md">DEVICE_RESET_TYPE</a> enumeration values.
+
 <ul>
 <li><b>FunctionLevelDeviceReset</b>. Specify this value to request a function-level reset, which is restricted to a specific device.</li>
 <li><b>PlatformLevelDeviceReset</b>. Specify this value to request a platform-level reset, which affects a specific device and all other devices that are connected to it via the same power rail or reset line.</li>
-</ul>For more information about how function-level and platform-level resets are implemented in the device stack, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>.
+</ul>
+For more information about how function-level and platform-level resets are implemented in the device stack, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>.
 
 `Flags`
 
@@ -104,9 +106,13 @@ For more information about function-level and platform-level resets, see <a href
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn928420">GUID_DEVICE_RESET_INTERFACE_STANDARD</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
+
 
  
 

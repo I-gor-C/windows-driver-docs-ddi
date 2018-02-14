@@ -1,6 +1,6 @@
 ---
 UID: NF:wdm.ExInterlockedPushEntrySList
-title: ExInterlockedPushEntrySList function
+title: ExInterlockedPushEntrySList macro
 author: windows-driver-content
 description: The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list.
 old-location: kernel\exinterlockedpushentryslist.htm
@@ -8,10 +8,10 @@ old-project: kernel
 ms.assetid: 4bff45b5-c295-444d-82ea-59cfd6c37551
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.exinterlockedpushentryslist, k102_53da8507-cae3-4a71-9c59-49676a8b7a95.xml, wdm/ExInterlockedPushEntrySList, ExInterlockedPushEntrySList routine [Kernel-Mode Driver Architecture], ExInterlockedPushEntrySList
+ms.keywords: ExInterlockedPushEntrySList routine [Kernel-Mode Driver Architecture], k102_53da8507-cae3-4a71-9c59-49676a8b7a95.xml, wdm/ExInterlockedPushEntrySList, ExInterlockedPushEntrySList, kernel.exinterlockedpushentryslist
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
@@ -62,11 +62,11 @@ PSLIST_ENTRY ExInterlockedPushEntrySList(
 
 `ListHead`
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a> structure that serves as the header for the sequenced singly linked list. <i>ListHead</i> must have been initialized by calling <a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>.
+
 
 `ListEntry`
 
-A pointer to the caller-allocated entry to be inserted.
+
 
 `Lock`
 
@@ -75,7 +75,7 @@ A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to 
 
 ## Return Value
 
-<b>ExInterlockedPushEntrySList</b> returns a pointer to the first entry of the list <u>before</u> the new entry was inserted. If the list was empty, the routine returns <b>NULL</b>.
+None
 
 ## Remarks
 
@@ -97,15 +97,25 @@ The <b>ExInterlockedPushEntrySList</b> routine can be called at any IRQL. The st
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 
-<a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
+
 
 <a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
 
+
+
 <a href="..\wdm\nf-wdm-exinterlockedpopentryslist.md">ExInterlockedPopEntrySList</a>
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+
+
+<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
+
+
+
+<a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
+
+
 
  
 

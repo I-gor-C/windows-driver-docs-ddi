@@ -86,7 +86,11 @@ A handle to the display device (graphics context).
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
 
  
 

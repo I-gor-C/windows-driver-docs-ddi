@@ -77,6 +77,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 ## Remarks
 
 With the Windows Display Driver Model (WDDM) v2 it is now the user mode driver's responsibility to handle the following tasks:
+
 <ul>
 <li>Support no-overwrite and discard semantics. The video memory manager no longer supports renaming so it is up to the driver to implement renaming itself.</li>
 <li>
@@ -99,6 +100,8 @@ Synchronization of other lock types (not no-overwrite or discard)
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock2.md">D3DDDICB_LOCK2</a>
+
+
 
  
 

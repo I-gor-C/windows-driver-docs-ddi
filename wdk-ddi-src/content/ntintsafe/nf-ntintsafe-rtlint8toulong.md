@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2C5FA0DA-5517-4BB6-A106-D8A20EDB5D46
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlint8toulong, RtlInt8ToULong function [Kernel-Mode Driver Architecture], RtlInt8ToULong, ntintsafe/RtlInt8ToULong
+ms.keywords: RtlInt8ToULong, RtlInt8ToULong function [Kernel-Mode Driver Architecture], ntintsafe/RtlInt8ToULong, kernel.rtlint8toulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ None
 This is one of a set of inline functions designed to provide type conversions and perform validity checks with minimal impact on performance.
 
 This function uses the following alternate name:
+
 <ul>
 <li>RtlInt8ToDWord</li>
 </ul>

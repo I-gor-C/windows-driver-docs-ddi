@@ -93,6 +93,8 @@ Access this callback function by using a command list functions structure, such 
 
 <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddiarg_resource_barrier_0022.md">D3D12DDIARG_RESOURCE_BARRIER_0022</a>
 
+
+
  
 
  

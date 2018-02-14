@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b02f29a9-1049-4e29-aac3-72bf0c70a21e
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PUNICODE_STRING, kstruct_d_9f862aaa-4cd6-4420-8255-ad577d8a8c59.xml, UNICODE_STRING, UNICODE_STRING structure [Kernel-Mode Driver Architecture], _UNICODE_STRING, *PUNICODE_STRING, kernel.unicode_string, wudfwdm/PUNICODE_STRING, PUNICODE_STRING structure pointer [Kernel-Mode Driver Architecture], wudfwdm/UNICODE_STRING
+ms.keywords: wudfwdm/UNICODE_STRING, *PUNICODE_STRING, UNICODE_STRING, kstruct_d_9f862aaa-4cd6-4420-8255-ad577d8a8c59.xml, wudfwdm/PUNICODE_STRING, UNICODE_STRING structure [Kernel-Mode Driver Architecture], kernel.unicode_string, PUNICODE_STRING, PUNICODE_STRING structure pointer [Kernel-Mode Driver Architecture], _UNICODE_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -83,19 +83,35 @@ The <b>MaximumLength</b> is used to indicate the length of <b>Buffer</b> so that
 
 <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+
+
 
 <a href="..\wdm\nf-wdm-rtlansistringtounicodesize.md">RtlAnsiStringToUnicodeSize</a>
 
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansisize.md">RtlUnicodeStringToAnsiSize</a>
+<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
+
 
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+
+
+<a href="..\wdm\nf-wdm-rtlunicodestringtoansisize.md">RtlUnicodeStringToAnsiSize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
+
+
 
  
 

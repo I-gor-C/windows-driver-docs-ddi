@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8a5eef07-97b7-43ca-b8e0-15af89aa7d82
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTDestroyOverlay function [Display Devices], OpenGL_Functions_57efc2f4-dbbe-4f91-b724-036b5231c058.xml, D3DKMTDestroyOverlay, d3dkmthk/D3DKMTDestroyOverlay, display.d3dkmtdestroyoverlay
+ms.keywords: d3dkmthk/D3DKMTDestroyOverlay, D3DKMTDestroyOverlay, OpenGL_Functions_57efc2f4-dbbe-4f91-b724-036b5231c058.xml, display.d3dkmtdestroyoverlay, D3DKMTDestroyOverlay function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,6 +68,7 @@ TBD
 ## Return Value
 
 <b>D3DKMTDestroyOverlay</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -95,7 +96,8 @@ Parameters were validated and determined to be incorrect.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other <b>NTSTATUS</b> values.
 
@@ -112,6 +114,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroyoverlay.md">D3DKMT_DESTROYOVERLAY</a>
+
+
 
  
 

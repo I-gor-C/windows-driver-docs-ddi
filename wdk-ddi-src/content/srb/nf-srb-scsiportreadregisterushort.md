@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 192a525e-6a42-4bd0-9c50-d13741469a48
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml, ScsiPortReadRegisterUshort routine [Storage Devices], storage.scsiportreadregisterushort, srb/ScsiPortReadRegisterUshort, ScsiPortReadRegisterUshort
+ms.keywords: ScsiPortReadRegisterUshort, storage.scsiportreadregisterushort, ScsiPortReadRegisterUshort routine [Storage Devices], srb/ScsiPortReadRegisterUshort, scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,6 +83,8 @@ Pointer to the register. The given <i>Register</i> must be in a mapped memory-sp
 ## See Also
 
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+
+
 
  
 

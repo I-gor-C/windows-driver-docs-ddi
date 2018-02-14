@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 66170e28-24db-4125-bd4e-ef07e8e82e79
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: SetMatchThreadId method [Windows Debugging], IDebugBreakpoint2 interface, SetMatchThreadId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2 interface [Windows Debugging], SetMatchThreadId method, IDebugBreakpoint::SetMatchThreadId, IDebugBreakpoint2, ComOther_5100cd0c-7d69-4210-9d32-ca1e9bd321aa.xml, dbgeng/IDebugBreakpoint2::SetMatchThreadId, IDebugBreakpoint2::SetMatchThreadId, dbgeng/IDebugBreakpoint::SetMatchThreadId, SetMatchThreadId, IDebugBreakpoint interface [Windows Debugging], SetMatchThreadId method, SetMatchThreadId method [Windows Debugging], debugger.setmatchthreadid
+ms.keywords: ComOther_5100cd0c-7d69-4210-9d32-ca1e9bd321aa.xml, SetMatchThreadId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint interface [Windows Debugging], SetMatchThreadId method, IDebugBreakpoint2::SetMatchThreadId, debugger.setmatchthreadid, SetMatchThreadId method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2, IDebugBreakpoint::SetMatchThreadId, IDebugBreakpoint, SetMatchThreadId, SetMatchThreadId method [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], SetMatchThreadId method, dbgeng/IDebugBreakpoint::SetMatchThreadId, dbgeng/IDebugBreakpoint2::SetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -103,7 +103,8 @@ The target is in a kernel and the breakpoint is a processor breakpoint.  Process
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return other error values.  For more information, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 

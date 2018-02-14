@@ -40,7 +40,7 @@ apiname:
 -	KeLeaveCriticalRegion
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -80,7 +80,11 @@ Highest-level drivers can call this routine while running in the context of the 
 
 <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 
+
+
 <a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
+
+
 
  
 

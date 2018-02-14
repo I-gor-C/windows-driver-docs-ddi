@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 97a8822f-ed0c-43ae-8b4e-08642558773d
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: HidP_GetExtendedAttributes, HidP_GetExtendedAttributes routine [Human Input Devices], hidpi/HidP_GetExtendedAttributes, hid.hidp_getextendedattributes, hidfunc_2870ef44-8659-4c02-9fc6-659581684253.xml
+ms.keywords: hidfunc_2870ef44-8659-4c02-9fc6-659581684253.xml, HidP_GetExtendedAttributes routine [Human Input Devices], HidP_GetExtendedAttributes, hidpi/HidP_GetExtendedAttributes, hid.hidp_getextendedattributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,6 +86,7 @@ Specifies the size, in bytes, of the <i>Attributes</i> buffer (which must be gre
 ## Return Value
 
 <b>HidP_GetExtendedAttributes</b> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -145,11 +146,17 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidpi\ns-hidpi-_hidp_extended_attributes.md">HIDP_EXTENDED_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+
 
 <a href="..\hidpi\ns-hidpi-_hidp_unknown_token.md">HIDP_UNKNOWN_TOKEN</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+
+<a href="..\hidpi\ns-hidpi-_hidp_extended_attributes.md">HIDP_EXTENDED_ATTRIBUTES</a>
+
+
 
  
 

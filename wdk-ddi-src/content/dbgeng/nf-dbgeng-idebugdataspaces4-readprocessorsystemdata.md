@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 8cb63fe6-61da-4c37-975d-d82430195863
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces::ReadProcessorSystemData, IDebugDataSpaces interface [Windows Debugging], ReadProcessorSystemData method, IDebugDataSpaces2 interface [Windows Debugging], ReadProcessorSystemData method, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2::ReadProcessorSystemData, dbgeng/IDebugDataSpaces2::ReadProcessorSystemData, ReadProcessorSystemData, IDebugDataSpaces_a2ffd54a-03f2-4b74-928c-b043bfdac073.xml, IDebugDataSpaces4::ReadProcessorSystemData, IDebugDataSpaces4 interface [Windows Debugging], ReadProcessorSystemData method, ReadProcessorSystemData method [Windows Debugging], dbgeng/IDebugDataSpaces4::ReadProcessorSystemData, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4, dbgeng/IDebugDataSpaces3::ReadProcessorSystemData, dbgeng/IDebugDataSpaces::ReadProcessorSystemData, IDebugDataSpaces3 interface [Windows Debugging], ReadProcessorSystemData method, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces interface, debugger.readprocessorsystemdata, IDebugDataSpaces3::ReadProcessorSystemData
+ms.keywords: IDebugDataSpaces_a2ffd54a-03f2-4b74-928c-b043bfdac073.xml, IDebugDataSpaces interface [Windows Debugging], ReadProcessorSystemData method, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces3::ReadProcessorSystemData, IDebugDataSpaces4 interface [Windows Debugging], ReadProcessorSystemData method, IDebugDataSpaces4, IDebugDataSpaces3 interface [Windows Debugging], ReadProcessorSystemData method, dbgeng/IDebugDataSpaces2::ReadProcessorSystemData, debugger.readprocessorsystemdata, IDebugDataSpaces2::ReadProcessorSystemData, IDebugDataSpaces4::ReadProcessorSystemData, IDebugDataSpaces, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces2 interface, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces3 interface, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces4 interface, ReadProcessorSystemData method [Windows Debugging], IDebugDataSpaces3::ReadProcessorSystemData, IDebugDataSpaces2 interface [Windows Debugging], ReadProcessorSystemData method, IDebugDataSpaces3, dbgeng/IDebugDataSpaces::ReadProcessorSystemData, dbgeng/IDebugDataSpaces4::ReadProcessorSystemData, IDebugDataSpaces::ReadProcessorSystemData, IDebugDataSpaces2, ReadProcessorSystemData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -71,6 +71,7 @@ Specifies the processor whose data is to be read.
 `Index`
 
 Specifies the data type to read.  The following table contains the valid values.  After successful completion, the data returned in the buffer <i>Buffer</i> has the type specified by the middle column.
+
 <table>
 <tr>
 <th>Value</th>
@@ -181,7 +182,8 @@ The method was successful.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This method can also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
 

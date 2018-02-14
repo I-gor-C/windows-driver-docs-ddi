@@ -83,6 +83,8 @@ For more information about <b>IAMStreamConfig::SetFormat</b> and <b>CoCreateInst
 
 <a href="..\ksproxy\nn-ksproxy-iksdatatypecompletion.md">IKsDataTypeCompletion</a>
 
+
+
  
 
  

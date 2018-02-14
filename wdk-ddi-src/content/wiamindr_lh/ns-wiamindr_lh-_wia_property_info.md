@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WIA_PROPERTY_INFO structure [Imaging Devices], WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO, wiamindr_lh/PWIA_PROPERTY_INFO, wiamindr_lh/WIA_PROPERTY_INFO, _WIA_PROPERTY_INFO, wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml, PWIA_PROPERTY_INFO structure pointer [Imaging Devices], PWIA_PROPERTY_INFO, image.wia_property_info
+ms.keywords: image.wia_property_info, *PWIA_PROPERTY_INFO, wiamindr_lh/PWIA_PROPERTY_INFO, wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml, PWIA_PROPERTY_INFO structure pointer [Imaging Devices], _WIA_PROPERTY_INFO, PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO, WIA_PROPERTY_INFO structure [Imaging Devices], wiamindr_lh/WIA_PROPERTY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -143,6 +143,7 @@ A property whose valid values are defined by a bitset of the values 0x01, 0x02, 
 The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a> to set your property values.
 
 Initialization might look like the following example:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -161,7 +162,9 @@ Initialization might look like the following example:
   g_wpiItemDefaults[13].vt           = g_pvItemDefaults [13].vt;</pre>
 </td>
 </tr>
-</table></span></div>At run time, changing the value with <b>wiasWriteMultiple</b> might look like the following example:
+</table></span></div>
+At run time, changing the value with <b>wiasWriteMultiple</b> might look like the following example:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -179,7 +182,8 @@ Initialization might look like the following example:
   hr                  = wiasWriteMultiple(pWiasContext, 1, &amp;propSpec, &amp;propVar);</pre>
 </td>
 </tr>
-</table></span></div><b>Note</b>  WIA uses the COM PROPVARIANT type, VARIANT (defined in the Microsoft Windows SDK documentation), so the default is VT_VECTOR, and not VT_ARRAY (which is also supported).
+</table></span></div>
+<b>Note</b>  WIA uses the COM PROPVARIANT type, VARIANT (defined in the Microsoft Windows SDK documentation), so the default is VT_VECTOR, and not VT_ARRAY (which is also supported).
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -190,6 +194,8 @@ Initialization might look like the following example:
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 92ef7d1a-2ede-4bbb-87bd-dcad53c25ea7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndis_switch_port_property_delete_parameters, *PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS
+ms.keywords: NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, netvista.ndis_switch_port_property_delete_parameters, NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS
 product: Windows
 targetos: Windows
-req.typenames: "*PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS"
+req.typenames: NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure
@@ -70,6 +70,7 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:  
+
 
 
 
@@ -109,13 +110,21 @@ For more information about extensible switch policies, see <a href="https://msdn
 
 ## See Also
 
+<a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598276">OID_SWITCH_PORT_PROPERTY_DELETE</a>
+
+
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
+
 
 <b></b>
+
+
 
  
 

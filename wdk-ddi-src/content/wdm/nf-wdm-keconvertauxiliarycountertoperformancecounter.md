@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 90F4CE6D-F51A-4B18-B328-63AF4D71A690
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeConvertAuxiliaryCounterToPerformanceCounter, KeConvertAuxiliaryCounterToPerformanceCounter routine [Kernel-Mode Driver Architecture], wdm/KeConvertAuxiliaryCounterToPerformanceCounter, kernel.keconvertauxiliarycountertoperformancecounter
+ms.keywords: wdm/KeConvertAuxiliaryCounterToPerformanceCounter, kernel.keconvertauxiliarycountertoperformancecounter, KeConvertAuxiliaryCounterToPerformanceCounter routine [Kernel-Mode Driver Architecture], KeConvertAuxiliaryCounterToPerformanceCounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,6 +76,7 @@ A pointer to a variable that contains the estimated conversion error in units of
 ## Return Value
 
 <b>KeConvertAuxiliaryCounterToPerformanceCounter</b> can return one of the following:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,6 +145,8 @@ Make sure that the specified auxiliary counter value is within +/- 10s compared 
 ## See Also
 
 <a href="..\wdm\nf-wdm-keconvertperformancecountertoauxiliarycounter.md">KeConvertPerformanceCounterToAuxiliaryCounter</a>
+
+
 
  
 

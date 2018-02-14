@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 05dddebc-2a30-4cc5-b905-9ee4ebf8d00e
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMT_WORKINGSETFLAGS structure [Display Devices], OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, d3dkmthk/D3DKMT_WORKINGSETFLAGS, _D3DKMT_WORKINGSETFLAGS, D3DKMT_WORKINGSETFLAGS, display.d3dkmt_workingsetflags
+ms.keywords: OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, D3DKMT_WORKINGSETFLAGS structure [Display Devices], d3dkmthk/D3DKMT_WORKINGSETFLAGS, display.d3dkmt_workingsetflags, _D3DKMT_WORKINGSETFLAGS, D3DKMT_WORKINGSETFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,11 +76,17 @@ Setting this member is equivalent to setting the first bit of a 32-bit value (0x
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_workingsetinfo.md">D3DKMT_WORKINGSETINFO</a>
 
+
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
+
+
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
+
+
 
  
 

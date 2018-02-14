@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: b1489593-9458-4e78-b59d-c8a780a3a3f1
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: IKsClockPropertySet interface [Streaming Media Devices], KsSetTime method, ksproxy/IKsClockPropertySet::KsSetTime, ksproxy_6d169c35-dd1b-4ccb-b028-f6a8d19e51ea.xml, KsSetTime method [Streaming Media Devices], IKsClockPropertySet, KsSetTime, stream.iksclockpropertyset_kssettime, IKsClockPropertySet::KsSetTime, KsSetTime method [Streaming Media Devices], IKsClockPropertySet interface
+ms.keywords: ksproxy_6d169c35-dd1b-4ccb-b028-f6a8d19e51ea.xml, IKsClockPropertySet::KsSetTime, stream.iksclockpropertyset_kssettime, KsSetTime, KsSetTime method [Streaming Media Devices], IKsClockPropertySet interface, IKsClockPropertySet interface [Streaming Media Devices], KsSetTime method, KsSetTime method [Streaming Media Devices], ksproxy/IKsClockPropertySet::KsSetTime, IKsClockPropertySet
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -81,7 +81,11 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559751">IKsClockPropertySet::KsGetTime</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565095">KSPROPERTY_CLOCK_TIME</a>
+
+
 
  
 

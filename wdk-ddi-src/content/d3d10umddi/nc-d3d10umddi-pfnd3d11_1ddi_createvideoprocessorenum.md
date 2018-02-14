@@ -40,7 +40,7 @@ apiname:
 -	CreateVideoProcessorEnum
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -83,6 +83,7 @@ HRESULT Pfnd3d111DdiCreatevideoprocessorenum(
 ## Return Value
 
 <b>CreateVideoProcessorEnum</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -130,7 +131,11 @@ When the runtime  calls <i>CreateVideoProcessorEnum</i>, it passes the handle to
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessorenum.md">D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM</a>
 
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_calcprivatevideoprocessorsize.md">CalcPrivateVideoProcessorEnumSize </a>
+
+
 
  
 

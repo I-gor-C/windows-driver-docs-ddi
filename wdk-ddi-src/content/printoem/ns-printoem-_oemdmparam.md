@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 625980d1-47eb-4427-a9e8-967b1873bbd6
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: POEMDMPARAM structure pointer [Print Devices], OEMDMPARAM structure [Print Devices], _OEMDMPARAM, *POEMDMPARAM, print.oemdmparam, printoem/POEMDMPARAM, print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, OEMDMPARAM, printoem/OEMDMPARAM, POEMDMPARAM
+ms.keywords: "*POEMDMPARAM, OEMDMPARAM, OEMDMPARAM structure [Print Devices], printoem/OEMDMPARAM, print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, POEMDMPARAM structure pointer [Print Devices], POEMDMPARAM, print.oemdmparam, printoem/POEMDMPARAM, _OEMDMPARAM"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	OEMDMPARAM
 product: Windows
 targetos: Windows
-req.typenames: OEMDMPARAM, *POEMDMPARAM
+req.typenames: "*POEMDMPARAM, OEMDMPARAM"
 req.product: Windows 10 or later.
 ---
 
@@ -88,6 +88,7 @@ Handle to the printer device. Supplied by the Unidrv or Pscript5 driver.
 #### For IPrintOemUI::DevMode:
 
 Not used.
+
 
 
 #### For IPrintOemUni::DevMode and IPrintOemPS::DevMode:

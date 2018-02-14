@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0cb2041a-844d-4ddb-9dab-e1c77c28835a
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: PHW_STREAM_OBJECT structure pointer [Streaming Media Devices], _HW_STREAM_OBJECT, strmini/HW_STREAM_OBJECT, HW_STREAM_OBJECT, strclass-struct_c409633a-dccd-4f70-a412-0da08feeae43.xml, PHW_STREAM_OBJECT, *PHW_STREAM_OBJECT, HW_STREAM_OBJECT structure [Streaming Media Devices], stream.hw_stream_object, strmini/PHW_STREAM_OBJECT
+ms.keywords: strmini/HW_STREAM_OBJECT, strmini/PHW_STREAM_OBJECT, HW_STREAM_OBJECT, PHW_STREAM_OBJECT, strclass-struct_c409633a-dccd-4f70-a412-0da08feeae43.xml, *PHW_STREAM_OBJECT, stream.hw_stream_object, _HW_STREAM_OBJECT, PHW_STREAM_OBJECT structure pointer [Streaming Media Devices], HW_STREAM_OBJECT structure [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -139,6 +139,8 @@ When the class driver opens the stream and issues the SRB_OPEN_STREAM request to
 ## See Also
 
 <a href="..\strmini\ns-strmini-_hw_clock_object.md">HW_CLOCK_OBJECT</a>
+
+
 
  
 

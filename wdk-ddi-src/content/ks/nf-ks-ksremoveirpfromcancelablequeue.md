@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 6bc23364-07c9-4a01-b475-e4620f62a674
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], stream.ksremoveirpfromcancelablequeue, KsRemoveIrpFromCancelableQueue, ks/KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml
+ms.keywords: ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml, ks/KsRemoveIrpFromCancelableQueue, KsRemoveIrpFromCancelableQueue, stream.ksremoveirpfromcancelablequeue, KsRemoveIrpFromCancelableQueue function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,6 +85,7 @@ The <b>KsRemoveIrpFromCancelableQueue</b> function returns the next noncanceled 
 ## Remarks
 
 These enumerations are used in the previous parameters to control where the IRP is removed from and how.
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -116,7 +117,11 @@ typedef enum {
 
 <a href="..\ks\nf-ks-ksremovespecificirpfromcancelablequeue.md">KsRemoveSpecificIrpFromCancelableQueue</a>
 
+
+
 <a href="..\ks\nf-ks-ksreleaseirponcancelablequeue.md">KsReleaseIrpOnCancelableQueue</a>
+
+
 
  
 

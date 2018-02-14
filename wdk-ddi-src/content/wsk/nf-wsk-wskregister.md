@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 340933ad-1a71-421c-b1e1-360aa9c441fd
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.wskregister, WskRegister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml, WskRegister function [Network Drivers Starting with Windows Vista], wsk/WskRegister
+ms.keywords: WskRegister function [Network Drivers Starting with Windows Vista], wsk/WskRegister, WskRegister, netvista.wskregister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -41,7 +41,7 @@ apiname:
 -	WskRegister
 product: Windows
 targetos: Windows
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -79,6 +79,7 @@ A pointer to a memory location that identifies a WSK application's registration 
 ## Return Value
 
 <b>WskRegister</b> returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -133,7 +134,6 @@ The block of memory pointed to by
     method for registering and unregistering WSK applications. The 
     <a href="https://msdn.microsoft.com/23c15c42-94aa-410b-8551-fafa8b24ad86">Network Module Registrar</a> remains
     available for compatibility.
-    
 
 For more information about attaching a WSK application to the WSK subsystem, see 
     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
@@ -150,11 +150,17 @@ For more information about attaching a WSK application to the WSK subsystem, see
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
+<a href="..\wsk\nf-wsk-wskderegister.md">WskDeregister</a>
+
+
 
 <a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
 
-<a href="..\wsk\nf-wsk-wskderegister.md">WskDeregister</a>
+
+
+<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
+
+
 
  
 

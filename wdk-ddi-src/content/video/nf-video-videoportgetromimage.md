@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e4930661-fb88-458b-9460-129ab057e0f4
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortGetRomImage function [Display Devices], video/VideoPortGetRomImage, display.videoportgetromimage, VideoPort_Functions_070e50af-a33d-4dc5-9bd1-9f60367f49b2.xml, VideoPortGetRomImage
+ms.keywords: VideoPortGetRomImage, display.videoportgetromimage, VideoPortGetRomImage function [Display Devices], video/VideoPortGetRomImage, VideoPort_Functions_070e50af-a33d-4dc5-9bd1-9f60367f49b2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -107,6 +107,8 @@ The miniport driver can free the buffer allocated by the video port driver by ca
 ## See Also
 
 <a href="..\video\nf-video-videoportscanrom.md">VideoPortScanRom</a>
+
+
 
  
 

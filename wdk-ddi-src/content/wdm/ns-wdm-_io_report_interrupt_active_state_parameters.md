@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 430B8951-37F0-4173-ACC6-89DB542B4081
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], kernel.io_report_interrupt_active_state_parameters, wdm/PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, *PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure [Kernel-Mode Driver Architecture], wdm/IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
+ms.keywords: wdm/PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, wdm/IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, kernel.io_report_interrupt_active_state_parameters, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure [Kernel-Mode Driver Architecture], _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, *PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -71,12 +71,14 @@ For more information, see Remarks.
 `Version`
 
 The interrupt connection type described by this structure. This member must match the connection type the caller obtained from the <b>IoConnectInterruptEx</b> call that connected the interrupt. The following are valid values for this member:
+
 <ul>
 <li>CONNECT_FULLY_SPECIFIED</li>
 <li>CONNECT_LINE_BASED</li>
 <li>CONNECT_MESSAGE_BASED</li>
 <li>CONNECT_FULLY_SPECIFIED_GROUP</li>
-</ul>For more information, see Remarks.
+</ul>
+For more information, see Remarks.
 
 ## Remarks
 This structure is supplied as a parameter to the <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a> and <a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a> routines.
@@ -100,9 +102,15 @@ If the <i>Parameters-</i>&gt;<b>Version</b> value obtained from <b>IoConnectInte
 
 <a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a>
 
+
+
 <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a>
 
+
+
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
+
+
 
  
 

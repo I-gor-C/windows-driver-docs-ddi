@@ -1,6 +1,6 @@
 ---
 UID: NF:wiautil.wiauDbgInit
-title: wiauDbgInit function
+title: wiauDbgInit macro
 author: windows-driver-content
 description: The wiauDbgInit function initializes WIA debugging.
 old-location: image\wiaudbginit.htm
@@ -8,10 +8,10 @@ old-project: image
 ms.assetid: a9308d66-c8b0-4e0e-8203-e2b3f91b7e27
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauFncs_0f18edab-cbf7-4012-85ea-93f101343ecb.xml, wiautil/wiauDbgInit, wiauDbgInit function [Imaging Devices], image.wiaudbginit, wiauDbgInit
+ms.keywords: wiauDbgInit, wiauFncs_0f18edab-cbf7-4012-85ea-93f101343ecb.xml, wiautil/wiauDbgInit, wiauDbgInit function [Imaging Devices], image.wiaudbginit
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.topic: function
+ms.topic: macro
 req.header: wiautil.h
 req.include-header: Wiautil.h
 req.target-type: Desktop
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: wiautil.h
 req.dll: 
 req.irql: 
 topictype:
@@ -60,7 +60,7 @@ void __stdcall wiauDbgInit(
 
 `hInstance`
 
-Is the handle to the DLL instance.
+
 
 
 ## Return Value
@@ -77,4 +77,4 @@ If the <b>wiauDbgInit</b> function not called, all DLLs loaded by a process inhe
 | **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** | NtosKrnl.exe |
+| **Library** | wiautil.h |

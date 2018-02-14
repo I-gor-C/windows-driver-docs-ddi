@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 54fcbb64-09ce-4f18-963b-fee2627d4231
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: "*PRemoveTarget_IN, hbapiwmi/RemoveTarget_IN, _RemoveTarget_IN, RemoveTarget_IN, RemoveTarget_IN structure [Storage Devices], PRemoveTarget_IN structure pointer [Storage Devices], structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml, hbapiwmi/PRemoveTarget_IN, PRemoveTarget_IN, storage.removetarget_in"
+ms.keywords: "*PRemoveTarget_IN, _RemoveTarget_IN, storage.removetarget_in, RemoveTarget_IN structure [Storage Devices], PRemoveTarget_IN structure pointer [Storage Devices], hbapiwmi/PRemoveTarget_IN, PRemoveTarget_IN, hbapiwmi/RemoveTarget_IN, RemoveTarget_IN, structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -81,6 +81,8 @@ The WMI tool suite generates a declaration of the RemoveTarget_IN structure in <
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564030">RemoveTarget</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 02001bad-bafe-432d-bc07-011cb6981ae6
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: IDebugClient5 interface [Windows Debugging], GetNumberEventCallbacks method, IDebugClient5, dbgeng/IDebugClient5::GetNumberEventCallbacks, GetNumberEventCallbacks, debugger.getnumbereventcallbacks, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetNumberEventCallbacks, GetNumberEventCallbacks method [Windows Debugging]
+ms.keywords: GetNumberEventCallbacks method [Windows Debugging], dbgeng/IDebugClient5::GetNumberEventCallbacks, debugger.getnumbereventcallbacks, GetNumberEventCallbacks, IDebugClient5, IDebugClient5::GetNumberEventCallbacks, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetNumberEventCallbacks method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -70,6 +70,7 @@ Receives the number of event callbacks that are interested in at least one of th
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,17 +104,29 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547931">GetNumberOutputCallbacks</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547923">GetNumberInputCallbacks</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546601">GetEventCallbacks</a>
+
+
 
 <a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546601">GetEventCallbacks</a>
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547931">GetNumberOutputCallbacks</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547923">GetNumberInputCallbacks</a>
+
+
 
  
 

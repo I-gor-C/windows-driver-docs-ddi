@@ -76,6 +76,7 @@ A handle to the display device.
 ## Return Value
 
 <b>pfnMapGpuVirtualAddressCb</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -103,7 +104,8 @@ The call was successful, but the operation is not finished. The caller must wait
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return other values.
 
@@ -117,9 +119,13 @@ This function might also return other values.
 
 ## See Also
 
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_mapgpuvirtualaddress.md">D3DDDI_MAPGPUVIRTUALADDRESS</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
 
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_mapgpuvirtualaddress.md">D3DDDI_MAPGPUVIRTUALADDRESS</a>
+
 
  
 

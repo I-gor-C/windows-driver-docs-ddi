@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: abcb1f9c-3de3-430c-87e0-6648d60ca420
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: UPS_fns_855934b9-5f74-4308-9bed-5fd85d039247.xml, upssvc/UPSInit, UPSInit, battery.upsinit, UPSInit function [Battery Devices]
+ms.keywords: upssvc/UPSInit, UPSInit, battery.upsinit, UPSInit function [Battery Devices], UPS_fns_855934b9-5f74-4308-9bed-5fd85d039247.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -63,6 +63,7 @@ This function has no parameters.
 ## Return Value
 
 The <b>UPSInit</b> function returns one of the following DWORD values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -128,6 +129,7 @@ An unidentified error occurred.
 ## Remarks
 
 The <b>UPSInit</b> function is the first function exported by a UPS minidriver that is called by the UPS service. The function must complete all initialization operations for the minidriver, including the following:
+
 <ul>
 <li>
 Opening a communication path to the UPS unit
@@ -146,7 +148,8 @@ Updating <a href="https://msdn.microsoft.com/d0d4ef8f-9df1-48a3-b0fc-cea4eb3cdf4
 Beginning the monitoring of the UPS unit
 
 </li>
-</ul>If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a> function.
+</ul>
+If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -158,6 +161,8 @@ Beginning the monitoring of the UPS unit
 ## See Also
 
 <a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a>
+
+
 
  
 

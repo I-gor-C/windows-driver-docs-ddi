@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 2bb23245-9d5c-4b9d-8f4a-ce5fe552efc2
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: GetModuleByOffset2 method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetModuleByOffset2, IDebugSymbols3::GetModuleByOffset2, debugger.getmodulebyoffset2, GetModuleByOffset2 method [Windows Debugging], GetModuleByOffset2, IDebugSymbols3, IDebugSymbols_0eead97d-6ca0-4682-bc06-71df2cf04c69.xml, IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset2 method
+ms.keywords: IDebugSymbols3::GetModuleByOffset2, debugger.getmodulebyoffset2, IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset2 method, IDebugSymbols_0eead97d-6ca0-4682-bc06-71df2cf04c69.xml, GetModuleByOffset2, GetModuleByOffset2 method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetModuleByOffset2, GetModuleByOffset2 method [Windows Debugging], IDebugSymbols3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -72,6 +72,7 @@ Specifies the index to start searching from.
 `Flags`
 
 Specifies a bit-set containing options used when searching for the module with the specified location.  <i>Flags</i> may contain the following bit-flags:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -111,6 +112,7 @@ Receives the location in the target's memory address space of the base of the mo
 ## Return Value
 
 This method may also return error values.  See <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a> for more details.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,11 +146,17 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547080">GetModuleByIndex</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547132">GetModuleByOffset</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547080">GetModuleByIndex</a>
+
+
 
  
 

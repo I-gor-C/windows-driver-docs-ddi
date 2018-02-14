@@ -7,8 +7,8 @@ old-location: buses\urs_hardware_event.htm
 old-project: usbref
 ms.assetid: 985A7725-1EE1-4419-B8BE-FEE2306E93A7
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, buses.urs_hardware_event, urstypes/UrsHardwareEventPortTypeUfp, _URS_HARDWARE_EVENT, urstypes/UrsHardwareEventDetach, urstypes/UrsHardwareEventIdGround, URS_HARDWARE_EVENT enumeration [Buses], *PURS_HARDWARE_EVENT, urstypes/URS_HARDWARE_EVENT, urstypes/UrsHardwareEventNone, URS_HARDWARE_EVENT, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT enumeration [Buses], UrsHardwareEventPortTypeDfp, UrsHardwareEventDetach, UrsHardwareEventIdGround, UrsHardwareEventIdFloat, urstypes/UrsHardwareEventPortTypeDfp, UrsHardwareEventPortTypeUfp, UrsHardwareEventNone, urstypes/UrsHardwareEventIdFloat
+ms.date: 2/8/2018
+ms.keywords: urstypes/URS_HARDWARE_EVENT, UrsHardwareEventDetach, buses.urs_hardware_event, UrsHardwareEventPortTypeUfp, UrsHardwareEventIdGround, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT enumeration [Buses], URS_HARDWARE_EVENT enumeration [Buses], UrsHardwareEventIdFloat, urstypes/UrsHardwareEventIdFloat, urstypes/UrsHardwareEventPortTypeDfp, urstypes/UrsHardwareEventPortTypeUfp, _URS_HARDWARE_EVENT, urstypes/UrsHardwareEventIdGround, UrsHardwareEventNone, urstypes/UrsHardwareEventNone, urstypes/UrsHardwareEventDetach, *PURS_HARDWARE_EVENT, UrsHardwareEventPortTypeDfp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
