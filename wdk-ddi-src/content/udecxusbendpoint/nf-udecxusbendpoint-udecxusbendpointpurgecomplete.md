@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 91257BC3-C469-44D5-96E2-D1FA599963F1
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UdecxUsbEndpointPurgeComplete function [Buses], buses.udecxusbendpointpurgecomplete, udecxusbendpoint/UdecxUsbEndpointPurgeComplete, UdecxUsbEndpointPurgeComplete
+ms.keywords: UdecxUsbEndpointPurgeComplete, udecxusbendpoint/UdecxUsbEndpointPurgeComplete, buses.udecxusbendpointpurgecomplete, UdecxUsbEndpointPurgeComplete function [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,7 +72,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbendpoint.h (include Udecx.h) |
@@ -81,7 +81,7 @@ This function does not return a value.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 
 
@@ -89,7 +89,7 @@ This function does not return a value.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

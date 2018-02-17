@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d4f9d02a-2541-445a-95f1-e08ebb0c8a39
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/ObReleaseObjectSecurity, k107_b43166d5-3dac-420a-803e-053b272d3405.xml, ObReleaseObjectSecurity, kernel.obreleaseobjectsecurity, ObReleaseObjectSecurity routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.obreleaseobjectsecurity, ObReleaseObjectSecurity, ObReleaseObjectSecurity routine [Kernel-Mode Driver Architecture], wdm/ObReleaseObjectSecurity, k107_b43166d5-3dac-420a-803e-053b272d3405.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ After a successful call to <a href="..\wdm\nf-wdm-obgetobjectsecurity.md">ObGetO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 4831e13b-19e7-458c-a392-a135d43fc989
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: BdaCheckChanges, bdasup/BdaCheckChanges, bdaref_d60c7f03-8188-4be5-807c-e21384429341.xml, BdaCheckChanges function [Streaming Media Devices], stream.bdacheckchanges
+ms.keywords: stream.bdacheckchanges, BdaCheckChanges, bdaref_d60c7f03-8188-4be5-807c-e21384429341.xml, BdaCheckChanges function [Streaming Media Devices], bdasup/BdaCheckChanges
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ A BDA minidriver calls the <b>BdaCheckChanges</b> function to verify a group of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. BdaCheckChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. BdaCheckChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. BdaCheckChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |
@@ -82,7 +82,7 @@ A BDA minidriver calls the <b>BdaCheckChanges</b> function to verify a group of 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563407">KSMETHOD_BDA_CHECK_CHANGES</a>
+<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
 
 
@@ -94,7 +94,7 @@ A BDA minidriver calls the <b>BdaCheckChanges</b> function to verify a group of 
 
 
 
-<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563407">KSMETHOD_BDA_CHECK_CHANGES</a>
 
 
 

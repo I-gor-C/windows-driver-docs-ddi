@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: fbf06a28-d6f8-424c-95e0-ce24653cac64
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/SecLookupWellKnownSid, ksecddref_4c0053b3-cdaa-4cdc-a4d3-6329ccf64f98.xml, ifsk.seclookupwellknownsid, SecLookupWellKnownSid function [Installable File System Drivers], SecLookupWellKnownSid
+ms.keywords: SecLookupWellKnownSid, SecLookupWellKnownSid function [Installable File System Drivers], ksecddref_4c0053b3-cdaa-4cdc-a4d3-6329ccf64f98.xml, ifsk.seclookupwellknownsid, ntifs/SecLookupWellKnownSid
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -531,7 +531,7 @@ If the function cannot find the well known SID for the <i>SidType</i> specified,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This SecLookupWellKnownSid function is only available starting with Windows Server 2003. This SecLookupWellKnownSid function is only available starting with Windows Server 2003. |
+| **Windows version** | This SecLookupWellKnownSid function is only available starting with Windows Server 2003.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | Ksecdd.lib |
@@ -543,11 +543,11 @@ If the function cannot find the well known SID for the <i>SidType</i> specified,
 
 
 
-<a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
-
-
-
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 073feb91-48ae-4ad5-9061-117e6541021c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisinitunicodestring, NdisInitUnicodeString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_a25a98b2-f88b-4a56-9bb7-77a4e6dc10a6.xml, NdisInitUnicodeString, ndis/NdisInitUnicodeString
+ms.keywords: ndis/NdisInitUnicodeString, netvista.ndisinitunicodestring, NdisInitUnicodeString, NdisInitUnicodeString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_a25a98b2-f88b-4a56-9bb7-77a4e6dc10a6.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -92,7 +92,7 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -100,10 +100,6 @@ Callers of
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
-
-<a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
-
-
 
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
@@ -114,16 +110,7 @@ Callers of
 
 
 
-<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisunicodestringtoansistring.md">
-   NdisUnicodeStringToAnsiString</a>
 
 
 
@@ -133,6 +120,19 @@ Callers of
 
 <a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
    Drivers</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisunicodestringtoansistring.md">
+   NdisUnicodeStringToAnsiString</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
 
 
 

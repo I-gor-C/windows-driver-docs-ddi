@@ -140,7 +140,8 @@ HRESULT PdebugExtensionKnownStruct(
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 All other return values indicate that the function failed.  The engine will continue ignoring the contents of <i>Buffer</i>.
 
@@ -162,6 +163,8 @@ After initializing the extension DLL, the engine calls this function to query th
 ## See Also
 
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
+
+
 
  
 

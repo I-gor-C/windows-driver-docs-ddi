@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5e8b6bd7-71e7-45ad-985c-fe197693ce05
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.rtlfreeheap, RtlFreeHeap, ntifs/RtlFreeHeap, rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml, RtlFreeHeap routine [Installable File System Drivers]
+ms.keywords: RtlFreeHeap, RtlFreeHeap routine [Installable File System Drivers], ifsk.rtlfreeheap, rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml, ntifs/RtlFreeHeap
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,7 +101,7 @@ TBD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting in Windows XP. Available starting in Windows XP. |
+| **Windows version** | Available starting in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -110,11 +110,11 @@ TBD
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 
 
 

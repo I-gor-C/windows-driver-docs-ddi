@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 21339CB5-8529-4649-9F1A-9D8C80709407
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.udecxusbdevicesetfunctionsuspendandwakecomplete, UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function [Buses], UdecxUsbDeviceSetFunctionSuspendAndWakeComplete, udecxusbdevice/UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
+ms.keywords: UdecxUsbDeviceSetFunctionSuspendAndWakeComplete, udecxusbdevice/UdecxUsbDeviceSetFunctionSuspendAndWakeComplete, UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function [Buses], buses.udecxusbdevicesetfunctionsuspendandwakecomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
@@ -86,7 +86,7 @@ This function does not return a value.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 
 
@@ -94,7 +94,7 @@ This function does not return a value.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

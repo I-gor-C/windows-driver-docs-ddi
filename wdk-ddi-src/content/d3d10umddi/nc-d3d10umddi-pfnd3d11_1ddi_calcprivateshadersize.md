@@ -83,7 +83,7 @@ The size of the memory region that the driver requires for creating a shader.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 

@@ -81,7 +81,7 @@ The HID source driver must not use the VHFHANDLE for the virtual HID device (cre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Desktop |
 | **Header** | vhf.h |
 | **IRQL** | "<=DISPATCH_LEVEL" |

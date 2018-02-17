@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 925a5481-d626-4824-8cbe-4fc2a0a6ad92
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: InterlockedCompareExchange, InterlockedCompareExchange routine [Kernel-Mode Driver Architecture], kernel.interlockedcompareexchange, wdm/InterlockedCompareExchange, k102_d40d8288-4c0d-43ed-af9f-3f9afabe1455.xml
+ms.keywords: wdm/InterlockedCompareExchange, kernel.interlockedcompareexchange, InterlockedCompareExchange routine [Kernel-Mode Driver Architecture], InterlockedCompareExchange, k102_d40d8288-4c0d-43ed-af9f-3f9afabe1455.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,7 +95,7 @@ Interlocked operations cannot be used on non-cached memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | OneCoreUAP.lib on Windows 10 |
@@ -107,11 +107,7 @@ Interlocked operations cannot be used on non-cached memory.
 
 
 
-<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
-
-
-
-<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
+<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
 
 
 
@@ -123,7 +119,11 @@ Interlocked operations cannot be used on non-cached memory.
 
 
 
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
+<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
+
+
+
+<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
 
 
 

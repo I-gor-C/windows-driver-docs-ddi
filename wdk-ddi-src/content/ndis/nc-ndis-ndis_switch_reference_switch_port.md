@@ -95,14 +95,18 @@ The extension calls <i>ReferenceSwitchPort</i> after the port has reached the <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Windows version** | Supported in NDIS 6.30 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/58C72F81-07B9-45FE-A8BA-0405DBE4CA20">DereferenceSwitchNic</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598273">OID_SWITCH_PORT_DELETE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598277">OID_SWITCH_PORT_PROPERTY_ENUM</a>
 
 
 
@@ -114,11 +118,7 @@ The extension calls <i>ReferenceSwitchPort</i> after the port has reached the <i
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598277">OID_SWITCH_PORT_PROPERTY_ENUM</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598273">OID_SWITCH_PORT_DELETE</a>
+<a href="https://msdn.microsoft.com/58C72F81-07B9-45FE-A8BA-0405DBE4CA20">DereferenceSwitchNic</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 0ffc34ca-ef55-4d14-b100-2f19606a6d55
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_GetHideIdSettings, RIL_GetHideIdSettings method [Network Drivers Starting with Windows Vista], netvista.ril_gethideidsettings, RIL_GetHideIdSettings
+ms.keywords: RIL_GetHideIdSettings method [Network Drivers Starting with Windows Vista], netvista.ril_gethideidsettings, rilapi/RIL_GetHideIdSettings, RIL_GetHideIdSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

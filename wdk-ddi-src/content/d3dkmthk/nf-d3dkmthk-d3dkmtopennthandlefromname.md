@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: PFND3DKMT_OPENNTHANDLEFROMNAME, D3DKMTOpenNtHandleFromName function [Display Devices], display.d3dkmtopennthandlefromname, d3dkmthk/D3DKMTOpenNtHandleFromName, D3DKMTOpenNtHandleFromName
+ms.keywords: D3DKMTOpenNtHandleFromName, D3DKMTOpenNtHandleFromName function [Display Devices], d3dkmthk/D3DKMTOpenNtHandleFromName, display.d3dkmtopennthandlefromname, PFND3DKMT_OPENNTHANDLEFROMNAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,7 +103,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

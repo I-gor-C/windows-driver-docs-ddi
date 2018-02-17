@@ -151,18 +151,18 @@ The RTL_QUERY_REGISTRY_ROUTINE function type is defined in the Wdm.h header file
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
+| **Windows version** | Supported starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **IRQL** | Called at PASSIVE_LEVEL. |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
-
-
-
 <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
+
+
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 
 
 

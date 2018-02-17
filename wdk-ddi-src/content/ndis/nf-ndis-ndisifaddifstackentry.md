@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6927bcdf-e2b5-4a60-8f71-a977f3a1c120
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisIfAddIfStackEntry, net_if_functions_ref_3e652431-fb28-4382-957a-3c532951e847.xml, NdisIfAddIfStackEntry function [Network Drivers Starting with Windows Vista], netvista.ndisifaddifstackentry, NdisIfAddIfStackEntry
+ms.keywords: netvista.ndisifaddifstackentry, NdisIfAddIfStackEntry function [Network Drivers Starting with Windows Vista], NdisIfAddIfStackEntry, ndis/NdisIfAddIfStackEntry, net_if_functions_ref_3e652431-fb28-4382-957a-3c532951e847.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -142,7 +142,7 @@ Any driver that can provide the information about the stack order relationship b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 5CE3F1B5-9C6D-4061-ADF4-B388C81C0674
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcxDefaultEndpointInitSetEventCallbacks method [Buses], UcxDefaultEndpointInitSetEventCallbacks, buses._ucxdefaultendpointinitseteventcallbacks
+ms.keywords: buses._ucxdefaultendpointinitseteventcallbacks, UcxDefaultEndpointInitSetEventCallbacks method [Buses], UcxDefaultEndpointInitSetEventCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ The client driver calls this method to set function pointers to its event callba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

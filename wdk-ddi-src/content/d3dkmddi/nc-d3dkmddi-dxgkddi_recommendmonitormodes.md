@@ -73,6 +73,7 @@ A handle to a context block that is associated with a display adapter. The displ
 ## Return Value
 
 <i>DxgkDdiRecommendMonitorModes</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -100,7 +101,8 @@ The function failed because it was unable to allocate enough memory.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The miniport driver should pass through any error code that it gets from the operating system for which it does not have a fallback code path.
 
@@ -111,7 +113,7 @@ The miniport driver should pass through any error code that it gets from the ope
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 | **IRQL** | "< DISPATCH_LEVEL" |
@@ -119,6 +121,8 @@ The miniport driver should pass through any error code that it gets from the ope
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
+
+
 
  
 

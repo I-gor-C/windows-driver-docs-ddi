@@ -251,7 +251,7 @@ This routine will return both legacy filter driver information and minifilter dr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | FltMgr.lib |
@@ -259,15 +259,15 @@ This routine will return both legacy filter driver information and minifilter dr
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
+
+
+
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
 
 
 
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbydeviceobject.md">FltEnumerateInstanceInformationByDeviceObject</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
 
 
 

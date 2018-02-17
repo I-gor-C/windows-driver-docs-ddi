@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c8972d8b-9eba-4276-af63-1096a76b104f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetLogicalUnit routine [Storage Devices], storage.storportgetlogicalunit, storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml, StorPortGetLogicalUnit, storport/StorPortGetLogicalUnit
+ms.keywords: StorPortGetLogicalUnit, storport/StorPortGetLogicalUnit, storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml, StorPortGetLogicalUnit routine [Storage Devices], storage.storportgetlogicalunit
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,18 +97,18 @@ The operating system-specific port driver can consider a logical unit to be none
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | Storport.lib |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-
-
-
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+
+
+
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 
 
 

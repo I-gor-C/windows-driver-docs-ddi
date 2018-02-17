@@ -122,7 +122,7 @@ The threading and synchronization level for this function is set by how the user
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 | **IRQL** | PASSIVE_LEVEL |
@@ -133,15 +133,15 @@ The threading and synchronization level for this function is set by how the user
 
 
 
+<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
+
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
 
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
-
-
-
-<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f0e6834c-b827-4342-83f1-5980f8edce24
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_registerforlinkevents, fibreHBA_rtns_7fd8f7c4-faaf-4190-99c8-560615e14365.xml, HBA_RegisterForLinkEvents routine [Storage Devices], hbaapi/HBA_RegisterForLinkEvents, HBA_RegisterForLinkEvents
+ms.keywords: fibreHBA_rtns_7fd8f7c4-faaf-4190-99c8-560615e14365.xml, storage.hba_registerforlinkevents, hbaapi/HBA_RegisterForLinkEvents, HBA_RegisterForLinkEvents routine [Storage Devices], HBA_RegisterForLinkEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

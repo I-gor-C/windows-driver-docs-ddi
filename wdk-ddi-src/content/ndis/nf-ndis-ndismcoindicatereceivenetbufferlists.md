@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: dabd472f-9877-4434-a534-e07a047e092f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista], netvista.ndismcoindicatereceivenetbufferlists, NdisMCoIndicateReceiveNetBufferLists, ndis/NdisMCoIndicateReceiveNetBufferLists
+ms.keywords: netvista.ndismcoindicatereceivenetbufferlists, ndis/NdisMCoIndicateReceiveNetBufferLists, NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista], condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, NdisMCoIndicateReceiveNetBufferLists
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -162,7 +162,7 @@ The caller of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -171,20 +171,20 @@ The caller of
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+
+
 <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
    MiniportReturnNetBufferLists</a>
 
 
 
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
-
-
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
 
 

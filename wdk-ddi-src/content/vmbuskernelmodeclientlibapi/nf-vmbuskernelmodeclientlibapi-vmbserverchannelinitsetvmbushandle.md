@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 0ECF76C7-9475-439E-8E59-B2B7CD350D24
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbServerChannelInitSetVmbusHandle, vmbuskernelmodeclientlibapi/VmbServerChannelInitSetVmbusHandle, VmbServerChannelInitSetVmbusHandle function [Network Drivers Starting with Windows Vista], netvista.vmbserverchannelinitsetvmbushandle
+ms.keywords: netvista.vmbserverchannelinitsetvmbushandle, VmbServerChannelInitSetVmbusHandle, vmbuskernelmodeclientlibapi/VmbServerChannelInitSetVmbusHandle, VmbServerChannelInitSetVmbusHandle function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,7 +87,7 @@ This function can be called while running in any thread context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

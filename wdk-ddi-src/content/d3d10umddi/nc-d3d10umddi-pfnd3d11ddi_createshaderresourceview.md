@@ -93,17 +93,13 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | CreateShaderResourceView(D3D11) is supported beginning with the Windows 7 operating system. CreateShaderResourceView(D3D11) is supported beginning with the Windows 7 operating system. |
+| **Windows version** | CreateShaderResourceView(D3D11) is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createshaderresourceview.md">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a>
 
 
 
@@ -116,6 +112,10 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D11)</a>
+
+
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createshaderresourceview.md">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a>
 
 
 

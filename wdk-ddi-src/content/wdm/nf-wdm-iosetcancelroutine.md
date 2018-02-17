@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5bc81897-6463-4588-9348-78a1954216bd
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoSetCancelRoutine routine [Kernel-Mode Driver Architecture], wdm/IoSetCancelRoutine, kernel.iosetcancelroutine, k104_a9ac44bc-fe8a-4392-b9f8-d9a90a03fbc0.xml, IoSetCancelRoutine
+ms.keywords: kernel.iosetcancelroutine, wdm/IoSetCancelRoutine, IoSetCancelRoutine routine [Kernel-Mode Driver Architecture], IoSetCancelRoutine, k104_a9ac44bc-fe8a-4392-b9f8-d9a90a03fbc0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -100,7 +100,7 @@ Driver <i>Cancel</i> routines are called at IRQL = DISPATCH_LEVEL with the cance
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -110,11 +110,11 @@ Driver <i>Cancel</i> routines are called at IRQL = DISPATCH_LEVEL with the cance
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549550">IoReleaseCancelSpinLock</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548196">IoAcquireCancelSpinLock</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549550">IoReleaseCancelSpinLock</a>
 
 
 

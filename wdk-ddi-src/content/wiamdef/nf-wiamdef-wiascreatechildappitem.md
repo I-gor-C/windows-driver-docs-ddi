@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 1dba59b0-5eac-4507-bd42-517a856aa864
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasCreateChildAppItem function [Imaging Devices], image.wiascreatechildappitem, wiasCreateChildAppItem, wiamdef/wiasCreateChildAppItem, wiasFncs_63e9cbb1-6435-433b-a27f-36b66042be8a.xml
+ms.keywords: wiasCreateChildAppItem function [Imaging Devices], image.wiascreatechildappitem, wiamdef/wiasCreateChildAppItem, wiasCreateChildAppItem, wiasFncs_63e9cbb1-6435-433b-a27f-36b66042be8a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: A318FD24-4E48-4DE4-B919-DD1D701F7EA7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbchannelstart, vmbuskernelmodeclientlibapi/VmbChannelStart, VmbChannelStart function [Network Drivers Starting with Windows Vista], VmbChannelStart
+ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelStart, VmbChannelStart function [Network Drivers Starting with Windows Vista], VmbChannelStart, netvista.vmbchannelstart
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e3de4e58-c3e7-426f-bc96-b45cad6b5807
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportisnovesa, VideoPortIsNoVesa function [Display Devices], video/VideoPortIsNoVesa, VideoPortIsNoVesa, VideoPort_Functions_b3e65276-fa78-4599-a3e1-fa097cd86e70.xml
+ms.keywords: VideoPortIsNoVesa, VideoPortIsNoVesa function [Display Devices], video/VideoPortIsNoVesa, VideoPort_Functions_b3e65276-fa78-4599-a3e1-fa097cd86e70.xml, display.videoportisnovesa
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ For more information about the Int10 functions, see <a href="https://msdn.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 and later versions of the Windows operating systems. Available in Windows Server 2003 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Server 2003 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

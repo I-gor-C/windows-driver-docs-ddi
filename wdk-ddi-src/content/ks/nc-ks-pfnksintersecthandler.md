@@ -83,6 +83,7 @@ Specifies the data format returned, or the size, in bytes, of the data format.
 ## Return Value
 
 Returns STATUS_SUCCESS if there is a data intersection that fits in the supplied buffer. Otherwise, one of the following values is returned. 
+
 <table>
 <tr>
 <th>Return code</th>
@@ -133,6 +134,8 @@ If there is no intersection.
 ## See Also
 
 <a href="..\ks\nf-ks-kspindataintersection.md">KsPinDataIntersection</a>
+
+
 
  
 

@@ -111,21 +111,21 @@ The driver's <b>DestroyAuthenticatedChannel</b> function should disable any prot
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | DestroyAuthenticatedChannel is supported beginning with the Windows 7 operating system. DestroyAuthenticatedChannel is supported beginning with the Windows 7 operating system. |
+| **Windows version** | DestroyAuthenticatedChannel is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
-
-
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a>
 
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_destroyauthenicatedchannel.md">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
 
 
 

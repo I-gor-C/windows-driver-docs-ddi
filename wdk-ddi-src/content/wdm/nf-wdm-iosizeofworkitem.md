@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 389f0776-1010-4f3c-b5c5-b8807ff07130
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoSizeofWorkItem routine [Kernel-Mode Driver Architecture], wdm/IoSizeofWorkItem, kernel.iosizeofworkitem, IoSizeofWorkItem, k104_9f2b3349-cd46-48ec-bcff-10e91bd522b5.xml
+ms.keywords: IoSizeofWorkItem routine [Kernel-Mode Driver Architecture], k104_9f2b3349-cd46-48ec-bcff-10e91bd522b5.xml, kernel.iosizeofworkitem, wdm/IoSizeofWorkItem, IoSizeofWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -69,7 +69,7 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

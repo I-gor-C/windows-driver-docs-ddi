@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e6316816-5260-4dd5-9c44-897ed5a88cc8
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTOpenSynchronizationObject, OpenGL_Functions_c6ae5181-a478-47d7-8f0c-49f4f5a7f318.xml, D3DKMTOpenSynchronizationObject function [Display Devices], display.d3dkmtopensynchronizationobject, D3DKMTOpenSynchronizationObject
+ms.keywords: D3DKMTOpenSynchronizationObject function [Display Devices], D3DKMTOpenSynchronizationObject, display.d3dkmtopensynchronizationobject, d3dkmthk/D3DKMTOpenSynchronizationObject, OpenGL_Functions_c6ae5181-a478-47d7-8f0c-49f4f5a7f318.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -125,7 +125,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | D3DKMTOpenSynchronizationObject is supported beginning with the Windows 7 operating system. D3DKMTOpenSynchronizationObject is supported beginning with the Windows 7 operating system. |
+| **Windows version** | D3DKMTOpenSynchronizationObject is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

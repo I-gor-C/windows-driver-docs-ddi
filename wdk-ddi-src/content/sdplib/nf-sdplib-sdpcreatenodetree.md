@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c019f382-1ad3-4b08-a254-ae803e2b6bc6
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: bth_funcs_95027cd6-7f0b-48e1-a574-990754e28e74.xml, SdpCreateNodeTree function [Bluetooth Devices], bltooth.sdpcreatenodetree, sdplib/SdpCreateNodeTree, SdpCreateNodeTree
+ms.keywords: bth_funcs_95027cd6-7f0b-48e1-a574-990754e28e74.xml, sdplib/SdpCreateNodeTree, bltooth.sdpcreatenodetree, SdpCreateNodeTree function [Bluetooth Devices], SdpCreateNodeTree
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	SdpCreateNodeTree
 product: Windows
 targetos: Windows
-req.typenames: SD_TRANSFER_TYPE
+req.typenames: "*PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR"
 req.product: Windows 10 or later.
 ---
 
@@ -92,13 +92,17 @@ Bluetooth profile drivers can obtain a pointer to this function through the BTHD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later.  |
 | **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
 | **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 
 ## See Also
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
+
+
 
 <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
 
@@ -109,10 +113,6 @@ Bluetooth profile drivers can obtain a pointer to this function through the BTHD
 
 
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
-
-
-
-<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
 
 
 

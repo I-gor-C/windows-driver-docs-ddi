@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 14863379-0639-4D24-AFA4-AE2196328B87
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: IoSetFileObjectIgnoreSharing, ntddk/IoSetFileObjectIgnoreSharing, ifsk.iosetfileobjectignoresharing, IoSetFileObjectIgnoreSharing routine [Installable File System Drivers]
+ms.keywords: IoSetFileObjectIgnoreSharing routine [Installable File System Drivers], ntddk/IoSetFileObjectIgnoreSharing, IoSetFileObjectIgnoreSharing, ifsk.iosetfileobjectignoresharing
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ The option information was not created for <i>FileObject</i>. The status of shar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available starting with Windows 7. This routine is available starting with Windows 7. |
+| **Windows version** | This routine is available starting with Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
 | **Library** | NtosKrnl.lib |

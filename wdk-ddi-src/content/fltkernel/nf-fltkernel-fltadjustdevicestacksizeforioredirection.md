@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 48ca0f39-e870-4f9b-92d5-1226972bf2d5
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltAdjustDeviceStackSizeForIoRedirection, fltkernel/FltAdjustDeviceStackSizeForIoRedirection, FltAdjustDeviceStackSizeForIoRedirection routine [Installable File System Drivers], ifsk.fltadjustdevicestacksizeforioredirection
+ms.keywords: ifsk.fltadjustdevicestacksizeforioredirection, FltAdjustDeviceStackSizeForIoRedirection, fltkernel/FltAdjustDeviceStackSizeForIoRedirection, FltAdjustDeviceStackSizeForIoRedirection routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -130,7 +130,7 @@ In the pre-operation callback for every operation that needs redirection, use <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
 | **Library** | FltMgr.lib |
@@ -138,11 +138,15 @@ In the pre-operation callback for every operation that needs redirection, use <a
 
 ## See Also
 
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+
+
+<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
+
+
+
 <a href="..\fltkernel\nf-fltkernel-fltisioredirectionallowedforoperation.md">FltIsIoRedirectionAllowedForOperation</a>
-
-
-
-<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 
 
 
@@ -150,11 +154,7 @@ In the pre-operation callback for every operation that needs redirection, use <a
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-
-
-
-<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 
 
 

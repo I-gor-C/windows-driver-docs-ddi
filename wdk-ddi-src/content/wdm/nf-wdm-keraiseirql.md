@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ee340d85-5a66-4773-b325-831257e9bfd8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/KeRaiseIrql, KeRaiseIrql routine [Kernel-Mode Driver Architecture], k105_66b09c47-8f95-41ee-8432-5784f306ad62.xml, kernel.keraiseirql, KeRaiseIrql
+ms.keywords: KeRaiseIrql, wdm/KeRaiseIrql, KeRaiseIrql routine [Kernel-Mode Driver Architecture], kernel.keraiseirql, k105_66b09c47-8f95-41ee-8432-5784f306ad62.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -84,7 +84,7 @@ A call to <b>KeLowerIrql</b> is valid if it specifies <i>NewIrql</i> &lt;= <i>Cu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Hal.lib |
@@ -93,11 +93,11 @@ A call to <b>KeLowerIrql</b> is valid if it specifies <i>NewIrql</i> &lt;= <i>Cu
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
-
-
-
 <a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
+
+
+
+<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
 
 
 

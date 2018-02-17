@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 74644211-7cf5-48d4-9025-7831cb449979
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlstringcblength, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml, RtlStringCbLengthA, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLengthW, RtlStringCbLength, ntstrsafe/RtlStringCbLengthA, ntstrsafe/RtlStringCbLengthW
+ms.keywords: RtlStringCbLength, RtlStringCbLengthW, ntstrsafe/RtlStringCbLengthW, kernel.rtlstringcblength, RtlStringCbLengthA, ntstrsafe/RtlStringCbLengthA, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml, RtlStringCbLengthW function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -160,7 +160,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |

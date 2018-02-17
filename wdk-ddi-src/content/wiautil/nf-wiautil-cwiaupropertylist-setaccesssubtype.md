@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 207125d3-0833-4c5d-b66f-aa49c96a6a2d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: SetAccessSubType method [Imaging Devices], CWiauPropertyList, image.cwiaupropertylist_setaccesssubtype, SetAccessSubType, wiauFncs_ab4b792f-54f0-4efa-bb13-5b71d94e03e0.xml, wiautil/CWiauPropertyList::SetAccessSubType, CWiauPropertyList::SetAccessSubType, SetAccessSubType method [Imaging Devices], CWiauPropertyList interface, CWiauPropertyList interface [Imaging Devices], SetAccessSubType method
+ms.keywords: SetAccessSubType, CWiauPropertyList, SetAccessSubType method [Imaging Devices], CWiauPropertyList::SetAccessSubType, CWiauPropertyList interface [Imaging Devices], SetAccessSubType method, wiautil/CWiauPropertyList::SetAccessSubType, wiauFncs_ab4b792f-54f0-4efa-bb13-5b71d94e03e0.xml, SetAccessSubType method [Imaging Devices], CWiauPropertyList interface, image.cwiaupropertylist_setaccesssubtype
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,18 +86,18 @@ A property's access and subtype are set originally in a call to the <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
 | **Library** | wiautil.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540391">CWiauPropertyList::DefineProperty</a>
-
-
-
 <a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540391">CWiauPropertyList::DefineProperty</a>
 
 
 

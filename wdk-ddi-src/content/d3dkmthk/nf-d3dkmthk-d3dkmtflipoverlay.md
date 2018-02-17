@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 09424b92-bf55-4348-8b6a-f632a0dc9b2f
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTFlipOverlay function [Display Devices], D3DKMTFlipOverlay, display.d3dkmtflipoverlay, OpenGL_Functions_37a9811c-26a3-46f3-aba1-39dc9526f282.xml, d3dkmthk/D3DKMTFlipOverlay
+ms.keywords: display.d3dkmtflipoverlay, D3DKMTFlipOverlay, d3dkmthk/D3DKMTFlipOverlay, OpenGL_Functions_37a9811c-26a3-46f3-aba1-39dc9526f282.xml, D3DKMTFlipOverlay function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

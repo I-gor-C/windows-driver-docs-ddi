@@ -87,6 +87,7 @@ A pointer to an
 
 A client module's 
      <i>ClientAttachProvider</i> callback function returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -146,6 +147,7 @@ A client module can examine the provider module's registration data. This data i
     pointed to by the 
     <i>ProviderRegistrationInstance</i> parameter. The client module uses this data to determine whether it
     will attach to the provider module:
+
 <ul>
 <li>
 If the client module determines that it will attach to the provider module, then the 
@@ -163,7 +165,8 @@ If the client module determines that it will not attach to the provider module, 
       <i>ClientAttachProvider</i> callback function must return STATUS_NOINTERFACE.
 
 </li>
-</ul>If the client module successfully attaches to the provider module, it must save the handle provided in
+</ul>
+If the client module successfully attaches to the provider module, it must save the handle provided in
     the 
     <i>NmrBindingHandle</i> parameter. The client module passes this handle as a parameter to the 
     <a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
@@ -175,25 +178,37 @@ The NMR calls a client module's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Windows |
 | **Header** | netioddk.h (include Wsk.h) |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
-<a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
-   NmrClientDetachProviderComplete</a>
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
-<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+
 
 <a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
 
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
+
+
+<a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
+   NmrClientDetachProviderComplete</a>
+
+
 
 <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
 
+
+
+<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+
+
+
 <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
+
+
 
  
 

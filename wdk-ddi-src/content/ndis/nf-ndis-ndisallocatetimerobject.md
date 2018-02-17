@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: feb5e4cf-7e23-434e-9dc5-bb445a6f5606
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisAllocateTimerObject, ndis/NdisAllocateTimerObject, netvista.ndisallocatetimerobject, NdisAllocateTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_38e524b5-9210-4c60-b9ea-66fc23593dad.xml
+ms.keywords: NdisAllocateTimerObject function [Network Drivers Starting with Windows Vista], netvista.ndisallocatetimerobject, ndis_timer_ref_38e524b5-9210-4c60-b9ea-66fc23593dad.xml, NdisAllocateTimerObject, ndis/NdisAllocateTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -159,7 +159,7 @@ To free a timer object, you must call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -167,10 +167,6 @@ To free a timer object, you must call the
 | **DDI compliance rules** | Irql_Timer_Function |
 
 ## See Also
-
-<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
-
-
 
 <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
 
@@ -181,6 +177,10 @@ To free a timer object, you must call the
 
 
 <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 
 
 

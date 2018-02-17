@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: a9308d66-c8b0-4e0e-8203-e2b3f91b7e27
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauDbgInit, wiauFncs_0f18edab-cbf7-4012-85ea-93f101343ecb.xml, wiautil/wiauDbgInit, wiauDbgInit function [Imaging Devices], image.wiaudbginit
+ms.keywords: wiauDbgInit, wiautil/wiauDbgInit, image.wiaudbginit, wiauDbgInit function [Imaging Devices], wiauFncs_0f18edab-cbf7-4012-85ea-93f101343ecb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -74,7 +74,7 @@ If the <b>wiauDbgInit</b> function not called, all DLLs loaded by a process inhe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
 | **Library** | wiautil.h |

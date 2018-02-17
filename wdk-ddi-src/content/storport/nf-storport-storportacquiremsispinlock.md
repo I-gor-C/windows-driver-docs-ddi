@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 8aa5a8a6-2024-4b3e-a500-5a484d937a62
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_0db1ab5c-a2a5-4362-84e0-493a5cebc2d3.xml, storage.storportacquiremsispinlock, StorPortAcquireMSISpinLock routine [Storage Devices], StorPortAcquireMSISpinLock, storport/StorPortAcquireMSISpinLock
+ms.keywords: storport/StorPortAcquireMSISpinLock, StorPortAcquireMSISpinLock, StorPortAcquireMSISpinLock routine [Storage Devices], storprt_0db1ab5c-a2a5-4362-84e0-493a5cebc2d3.xml, storage.storportacquiremsispinlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -126,7 +126,7 @@ When a miniport needs to synchronize with all messages, it can use one call to <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Windows version** | This routine is available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |
@@ -134,11 +134,11 @@ When a miniport needs to synchronize with all messages, it can use one call to <
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
-
-
-
 <a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
+
+
+
+<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
 
 

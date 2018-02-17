@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3065dddc-e084-4273-93eb-62a51763e213
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: DXVA_COPPStatusSignalingCmdData structure [Display Devices], dxvaref_6a90a0a1-2173-4698-9e3d-83db1d5062f2.xml, dxva/DXVA_COPPStatusSignalingCmdData, _DXVA_COPPStatusSignalingCmdData, DXVA_COPPStatusSignalingCmdData, display.dxva_coppstatussignalingcmddata
+ms.keywords: DXVA_COPPStatusSignalingCmdData, display.dxva_coppstatussignalingcmddata, _DXVA_COPPStatusSignalingCmdData, DXVA_COPPStatusSignalingCmdData structure [Display Devices], dxvaref_6a90a0a1-2173-4698-9e3d-83db1d5062f2.xml, dxva/DXVA_COPPStatusSignalingCmdData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -140,11 +140,7 @@ Specifies a value that indicates attributes of the connected display monitor tha
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
-
-
-
-<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
+<a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
 
 
 
@@ -152,7 +148,11 @@ Specifies a value that indicates attributes of the connected display monitor tha
 
 
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
+<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
 
 
 

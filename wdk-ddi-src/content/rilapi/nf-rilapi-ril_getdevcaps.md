@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: eb239b03-7e46-4091-adff-86ed95a06704
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_GetDevCaps, RIL_GetDevCaps method [Network Drivers Starting with Windows Vista], RIL_GetDevCaps, netvista.ril_getdevcaps
+ms.keywords: RIL_GetDevCaps, netvista.ril_getdevcaps, rilapi/RIL_GetDevCaps, RIL_GetDevCaps method [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

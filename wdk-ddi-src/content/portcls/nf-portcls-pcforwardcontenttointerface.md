@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 5aa6aa90-ef41-467e-a096-5ab660b3f357
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: PcForwardContentToInterface function [Audio Devices], audio.pcforwardcontenttointerface, audpc-routines_1c3b8e8d-556e-4029-9e25-5a2e083dd17f.xml, PcForwardContentToInterface, portcls/PcForwardContentToInterface
+ms.keywords: audpc-routines_1c3b8e8d-556e-4029-9e25-5a2e083dd17f.xml, audio.pcforwardcontenttointerface, portcls/PcForwardContentToInterface, PcForwardContentToInterface, PcForwardContentToInterface function [Audio Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmforwardcon
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcForwardContentToInterface function in Microsoft Windows XP and later operating systems. The PortCls system driver implements the PcForwardContentToInterface function in Microsoft Windows XP and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcForwardContentToInterface function in Microsoft Windows XP and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |

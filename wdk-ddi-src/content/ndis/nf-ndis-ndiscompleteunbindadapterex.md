@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 3a1daad4-d4b7-4950-be58-73612949fba9
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisCompleteUnbindAdapterEx, ndis/NdisCompleteUnbindAdapterEx, protocol_ndis_functions_ref_3d1252b7-d653-4bd6-a105-b998ffed694c.xml, netvista.ndiscompleteunbindadapterex, NdisCompleteUnbindAdapterEx function [Network Drivers Starting with Windows Vista]
+ms.keywords: netvista.ndiscompleteunbindadapterex, NdisCompleteUnbindAdapterEx function [Network Drivers Starting with Windows Vista], ndis/NdisCompleteUnbindAdapterEx, protocol_ndis_functions_ref_3d1252b7-d653-4bd6-a105-b998ffed694c.xml, NdisCompleteUnbindAdapterEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,7 +93,7 @@ On return from
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -102,7 +102,7 @@ On return from
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
 
 
 
@@ -110,7 +110,7 @@ On return from
 
 
 
-<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: AC51EA77-7F5B-42DE-B366-7BCE46AA5097
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UCM_PD_POWER_DATA_OBJECT_INIT_FIXED, buses.ucm_pd_power_data_object_init_fixed, UCM_PD_POWER_DATA_OBJECT_INIT_FIXED function [Buses], ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_FIXED
+ms.keywords: UCM_PD_POWER_DATA_OBJECT_INIT_FIXED function [Buses], UCM_PD_POWER_DATA_OBJECT_INIT_FIXED, buses.ucm_pd_power_data_object_init_fixed, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_FIXED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ This function initializes the structure and sets Power Data Object as a Fixed Su
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |

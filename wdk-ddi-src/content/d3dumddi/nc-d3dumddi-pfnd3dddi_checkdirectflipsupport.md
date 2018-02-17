@@ -94,7 +94,7 @@ Because the DWM typically creates its own device using the highest possible Micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

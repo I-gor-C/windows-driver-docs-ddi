@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 560cb5a3-ac15-4a11-977a-b66caefc2f6b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_EnableNotifications, RIL_EnableNotifications method [Network Drivers Starting with Windows Vista], netvista.ril_enablenotifications, RIL_EnableNotifications
+ms.keywords: rilapi/RIL_EnableNotifications, RIL_EnableNotifications, RIL_EnableNotifications method [Network Drivers Starting with Windows Vista], netvista.ril_enablenotifications
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

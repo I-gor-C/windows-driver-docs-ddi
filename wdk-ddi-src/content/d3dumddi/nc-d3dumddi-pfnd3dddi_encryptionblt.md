@@ -129,7 +129,7 @@ The Direct3D runtime verifies that the destination surface specified by the <b>D
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | EncryptionBlt is supported beginning with the Windows 7 operating system. EncryptionBlt is supported beginning with the Windows 7 operating system. |
+| **Windows version** | EncryptionBlt is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

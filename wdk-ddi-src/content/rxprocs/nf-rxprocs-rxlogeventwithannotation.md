@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: cb8b757a-cff5-41cf-8155-2c45a8a35f00
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: rxprocs/RxLogEventWithAnnotation, ifsk.rxlogeventwithannotation, RxLogEventWithAnnotation function [Installable File System Drivers], rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, RxLogEventWithAnnotation
+ms.keywords: RxLogEventWithAnnotation function [Installable File System Drivers], rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, rxprocs/RxLogEventWithAnnotation, ifsk.rxlogeventwithannotation, RxLogEventWithAnnotation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

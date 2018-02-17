@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: e340eb98-34d4-49e7-92cd-4f57d8b6efb8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wias_hresult, IWiaLog_3b27b46f-be2e-4fdb-ba65-32fe41c71142.xml, WIAS_HRESULT, WIAS_HRESULT macro [Imaging Devices], wiamdef/WIAS_HRESULT
+ms.keywords: WIAS_HRESULT, IWiaLog_3b27b46f-be2e-4fdb-ba65-32fe41c71142.xml, wiamdef/WIAS_HRESULT, image.wias_hresult, WIAS_HRESULT macro [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -75,7 +75,7 @@ This macro is the recommended way to output HRESULTS on Windows Vista.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the operating system. Available in Windows Vista and later versions of the operating system. |
+| **Windows version** | Available in Windows Vista and later versions of the operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
 | **Library** | wiamdef.h |

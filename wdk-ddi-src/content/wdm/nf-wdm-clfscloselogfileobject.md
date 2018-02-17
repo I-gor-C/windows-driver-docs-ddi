@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 0ebb82bd-b8f2-469b-90a9-5c1773f7b58a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.clfscloselogfileobject, ClfsCloseLogFileObject routine [Kernel-Mode Driver Architecture], ClfsCloseLogFileObject, Clfs_836288b2-fd9b-4855-acfd-ad12d7e25b19.xml, wdm/ClfsCloseLogFileObject
+ms.keywords: ClfsCloseLogFileObject, ClfsCloseLogFileObject routine [Kernel-Mode Driver Architecture], wdm/ClfsCloseLogFileObject, Clfs_836288b2-fd9b-4855-acfd-ad12d7e25b19.xml, kernel.clfscloselogfileobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | Clfs.lib |
@@ -90,11 +90,11 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
-
-
-
 <a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 
 
 

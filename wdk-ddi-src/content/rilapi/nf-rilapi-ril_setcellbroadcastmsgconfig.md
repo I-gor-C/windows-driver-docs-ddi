@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c2b7b9b7-a76f-4bd9-bf25-edb5c103a578
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_SetCellBroadcastMsgConfig method [Network Drivers Starting with Windows Vista], netvista.ril_setcellbroadcastmsgconfig, rilapi/RIL_SetCellBroadcastMsgConfig, RIL_SetCellBroadcastMsgConfig
+ms.keywords: rilapi/RIL_SetCellBroadcastMsgConfig, RIL_SetCellBroadcastMsgConfig, netvista.ril_setcellbroadcastmsgconfig, RIL_SetCellBroadcastMsgConfig method [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1fb993f0-4289-4406-8a56-47b12c73f4e6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlValidRelativeSecurityDescriptor, kernel.rtlvalidrelativesecuritydescriptor, RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], wdm/RtlValidRelativeSecurityDescriptor, k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml
+ms.keywords: wdm/RtlValidRelativeSecurityDescriptor, RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], kernel.rtlvalidrelativesecuritydescriptor, RtlValidRelativeSecurityDescriptor, k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ To check the validity of a security descriptor in absolute format, use <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -93,15 +93,15 @@ To check the validity of a security descriptor in absolute format, use <a href="
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
+
+
+
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
 
 

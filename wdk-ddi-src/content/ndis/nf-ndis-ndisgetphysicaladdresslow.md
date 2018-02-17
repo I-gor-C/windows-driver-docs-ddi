@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: a2e9e398-7b47-49eb-b587-7c42a0162f90
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisGetPhysicalAddressLow macro [Network Drivers Starting with Windows Vista], miniport_memory_shared_ref_20e686ee-bdd4-484d-b3c5-af6bbb764059.xml, NdisGetPhysicalAddressLow, ndis/NdisGetPhysicalAddressLow, netvista.ndisgetphysicaladdresslow
+ms.keywords: miniport_memory_shared_ref_20e686ee-bdd4-484d-b3c5-af6bbb764059.xml, ndis/NdisGetPhysicalAddressLow, NdisGetPhysicalAddressLow macro [Network Drivers Starting with Windows Vista], netvista.ndisgetphysicaladdresslow, NdisGetPhysicalAddressLow
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -70,7 +70,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetPhysicalAddressLow (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetPhysicalAddressLow (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetPhysicalAddressLow (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetPhysicalAddressLow (NDIS   5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetPhysicalAddressLow (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetPhysicalAddressLow (NDIS   5.1)) in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |

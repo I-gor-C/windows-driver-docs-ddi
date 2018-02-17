@@ -94,7 +94,7 @@ Follow these guidelines when you set up profile-type marker events in your user-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 

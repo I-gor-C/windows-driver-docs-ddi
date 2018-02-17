@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: dae9cc3d-b793-4f2a-99a6-1f77af396110
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: WRITE_REGISTER_BUFFER_ULONG routine [Kernel-Mode Driver Architecture], kernel.write_register_buffer_ulong, WRITE_REGISTER_BUFFER_ULONG, wdm/WRITE_REGISTER_BUFFER_ULONG, k103_9ef495b2-fe86-484a-bec2-5390df6ee246.xml
+ms.keywords: WRITE_REGISTER_BUFFER_ULONG, k103_9ef495b2-fe86-484a-bec2-5390df6ee246.xml, kernel.write_register_buffer_ulong, WRITE_REGISTER_BUFFER_ULONG routine [Kernel-Mode Driver Architecture], wdm/WRITE_REGISTER_BUFFER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ Callers of <b>WRITE_REGISTER_BUFFER_ULONG</b> can be running at any IRQL, assumi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

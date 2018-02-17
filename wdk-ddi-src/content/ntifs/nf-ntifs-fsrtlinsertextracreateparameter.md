@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 77ac37eb-9750-4c56-8e1c-41b8a1f50a61
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: fsrtlref_25aa9ff1-4921-4f96-98dc-04230d450e98.xml, FsRtlInsertExtraCreateParameter routine [Installable File System Drivers], ifsk.fsrtlinsertextracreateparameter, ntifs/FsRtlInsertExtraCreateParameter, FsRtlInsertExtraCreateParameter
+ms.keywords: ifsk.fsrtlinsertextracreateparameter, FsRtlInsertExtraCreateParameter, FsRtlInsertExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlInsertExtraCreateParameter, fsrtlref_25aa9ff1-4921-4f96-98dc-04230d450e98.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -109,7 +109,7 @@ Each ECP context structure inserted into the ECP list must have a unique GUID va
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The FltInsertExtraCreateParameter routine is available starting with Windows Vista. The FltInsertExtraCreateParameter routine is available starting with Windows Vista. |
+| **Windows version** | The FltInsertExtraCreateParameter routine is available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -118,11 +118,19 @@ Each ECP context structure inserted into the ECP list must have a unique GUID va
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
 
 
 
@@ -134,15 +142,7 @@ Each ECP context structure inserted into the ECP list must have a unique GUID va
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
 
 
@@ -150,11 +150,11 @@ Each ECP context structure inserted into the ECP list must have a unique GUID va
 
 
 
-<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 
 
 

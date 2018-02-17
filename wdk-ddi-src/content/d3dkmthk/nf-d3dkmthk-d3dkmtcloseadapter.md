@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d8f1a47b-4ba0-41e0-a6e3-0589e1efcf06
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: PFND3DKMT_CLOSEADAPTER, OpenGL_Functions_531edcbd-0ec0-4ae7-8a1a-31ed47084bba.xml, D3DKMTCloseAdapter function [Display Devices], D3DKMTCloseAdapter, display.d3dkmtcloseadapter, d3dkmthk/D3DKMTCloseAdapter
+ms.keywords: PFND3DKMT_CLOSEADAPTER, display.d3dkmtcloseadapter, d3dkmthk/D3DKMTCloseAdapter, D3DKMTCloseAdapter function [Display Devices], D3DKMTCloseAdapter, OpenGL_Functions_531edcbd-0ec0-4ae7-8a1a-31ed47084bba.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,7 +105,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

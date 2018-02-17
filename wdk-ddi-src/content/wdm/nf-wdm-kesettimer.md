@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 81a205cd-a641-4f85-a217-7febf203b62d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeSetTimer routine [Kernel-Mode Driver Architecture], kernel.kesettimer, KeSetTimer, wdm/KeSetTimer, k105_9cd3cb17-0067-4340-8226-ee75392cfdd1.xml
+ms.keywords: KeSetTimer routine [Kernel-Mode Driver Architecture], KeSetTimer, kernel.kesettimer, k105_9cd3cb17-0067-4340-8226-ee75392cfdd1.xml, wdm/KeSetTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -112,7 +112,7 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -122,15 +122,11 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
+<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-
-
-
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
 
 
@@ -138,19 +134,23 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
 
 
 
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+
+
+
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
+
+
+
 <a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
 
 
 
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
+
+
 <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-
-
-
-<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
-
-
-
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
 
 

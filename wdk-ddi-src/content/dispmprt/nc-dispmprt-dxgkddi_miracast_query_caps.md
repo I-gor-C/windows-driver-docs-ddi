@@ -90,7 +90,7 @@ The operating system guarantees that this function follows the third-level synch
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 | **IRQL** | PASSIVE_LEVEL |

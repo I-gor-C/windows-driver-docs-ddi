@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e9daafb1-16ec-4ffe-b863-6f07c4b2a9b7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture], MmIsThisAnNtAsSystem, kernel.mmisthisanntassystem, ntddk/MmIsThisAnNtAsSystem
+ms.keywords: k106_3f6077c8-2ce9-4dce-b29e-afd262be1e80.xml, kernel.mmisthisanntassystem, MmIsThisAnNtAsSystem, ntddk/MmIsThisAnNtAsSystem, MmIsThisAnNtAsSystem routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,7 @@ Drivers can use this routine during initialization, along with <b>MmQuerySystemS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead. Obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead. |
+| **Windows version** | Obsolete for Windows XP and later versions of Windows. Use RtlGetVersion or RtlVerifyVersionInfo instead.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d8e96d49-e4f5-468c-bdce-fbfaa8428eb7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlUnicodeStringCatString function [Kernel-Mode Driver Architecture], RtlUnicodeStringCatString, safestrings_28fc9345-6d09-492c-bda5-94216a260965.xml, kernel.rtlunicodestringcatstring, ntstrsafe/RtlUnicodeStringCatString
+ms.keywords: kernel.rtlunicodestringcatstring, RtlUnicodeStringCatString, RtlUnicodeStringCatString function [Kernel-Mode Driver Architecture], safestrings_28fc9345-6d09-492c-bda5-94216a260965.xml, ntstrsafe/RtlUnicodeStringCatString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -136,7 +136,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |

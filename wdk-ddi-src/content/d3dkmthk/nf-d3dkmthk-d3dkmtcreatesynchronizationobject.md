@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c91686dc-1c6a-4d21-84e8-fd8a2803ff4e
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtcreatesynchronizationobject, D3DKMTCreateSynchronizationObject function [Display Devices], d3dkmthk/D3DKMTCreateSynchronizationObject, D3DKMTCreateSynchronizationObject, OpenGL_Functions_505065c6-f259-4518-adb8-f7d0fa6b56a5.xml
+ms.keywords: d3dkmthk/D3DKMTCreateSynchronizationObject, OpenGL_Functions_505065c6-f259-4518-adb8-f7d0fa6b56a5.xml, D3DKMTCreateSynchronizationObject function [Display Devices], display.d3dkmtcreatesynchronizationobject, D3DKMTCreateSynchronizationObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -125,7 +125,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

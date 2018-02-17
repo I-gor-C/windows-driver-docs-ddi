@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtReleaseVirtualStation
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -106,16 +106,20 @@ A call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 Available in Windows 7 |
+| **Windows version** | Available in Windows 7  |
 | **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
 ## See Also
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
+
+
 <a href="..\wlanihv\nc-wlanihv-dot11ext_request_virtual_station.md">
    Dot11ExtRequestVirtualStation</a>
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
 
  
 

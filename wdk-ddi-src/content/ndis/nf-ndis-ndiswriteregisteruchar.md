@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8f720af6-d70a-4682-86f4-011e70a6f64f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisWriteRegisterUchar, ndis/NdisWriteRegisterUchar, netvista.ndiswriteregisteruchar, miniport_register_ref_60f684ba-a2ca-4fa8-8a80-9e805fb5c453.xml, NdisWriteRegisterUchar macro [Network Drivers Starting with Windows Vista]
+ms.keywords: ndis/NdisWriteRegisterUchar, NdisWriteRegisterUchar, NdisWriteRegisterUchar macro [Network Drivers Starting with Windows Vista], netvista.ndiswriteregisteruchar, miniport_register_ref_60f684ba-a2ca-4fa8-8a80-9e805fb5c453.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -83,7 +83,7 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |
@@ -91,15 +91,11 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 
 
 
@@ -108,6 +104,10 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 
 <a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 
 
 

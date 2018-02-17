@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: fb67b116-12f5-4eef-ab05-f2056ccec4e3
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml, FsRtlValidateReparsePointBuffer, ifsk.fsrtlvalidatereparsepointbuffer, ntifs/FsRtlValidateReparsePointBuffer, FsRtlValidateReparsePointBuffer routine [Installable File System Drivers]
+ms.keywords: fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml, ntifs/FsRtlValidateReparsePointBuffer, ifsk.fsrtlvalidatereparsepointbuffer, FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], FsRtlValidateReparsePointBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -120,7 +120,7 @@ Reparse tags contain several bits that cannot be set except by system components
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -129,11 +129,11 @@ Reparse tags contain several bits that cannot be set except by system components
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_reparse_guid_data_buffer.md">REPARSE_GUID_DATA_BUFFER</a>
-
-
-
 <a href="..\ntifs\ns-ntifs-_reparse_data_buffer.md">REPARSE_DATA_BUFFER</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_reparse_guid_data_buffer.md">REPARSE_GUID_DATA_BUFFER</a>
 
 
 

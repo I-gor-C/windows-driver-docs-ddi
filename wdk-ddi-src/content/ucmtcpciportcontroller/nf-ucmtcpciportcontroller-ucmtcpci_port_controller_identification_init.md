@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 4204b849-8195-4a1b-9bb3-1e9cbeb12223
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ucmtcpci_port_controller_identification_init, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT method [Buses], UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT
+ms.keywords: UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT method [Buses], ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT, buses.ucmtcpci_port_controller_identification_init
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,7 +71,7 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** | NtosKrnl.exe |

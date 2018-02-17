@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 7FAA5C88-2846-4C98-A44A-B53A1A7A953C
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, portcls/IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement, audio.iportclspnp_unregisteradapterpnpmanagement, IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp
+ms.keywords: IPortClsPnp::UnregisterAdapterPnpManagement, IPortClsPnp, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, portcls/IPortClsPnp::UnregisterAdapterPnpManagement, audio.iportclspnp_unregisteradapterpnpmanagement, UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -73,7 +73,7 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows. Available in Windows 10, version 1511 and later versions of Windows. |
+| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | portcls.h |
@@ -81,11 +81,11 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>
+
+
+
+<a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
 
 
 

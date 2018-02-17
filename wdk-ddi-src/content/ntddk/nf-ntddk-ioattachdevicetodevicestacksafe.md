@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: bc403fc7-7862-4c4c-8a82-bd5c740b270e
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers], ntddk/IoAttachDeviceToDeviceStackSafe, ifsk.ioattachdevicetodevicestacksafe, IoAttachDeviceToDeviceStackSafe, ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml
+ms.keywords: ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml, IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers], ntddk/IoAttachDeviceToDeviceStackSafe, ifsk.ioattachdevicetodevicestacksafe, IoAttachDeviceToDeviceStackSafe
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,7 +93,7 @@ At the moment immediately after it is attached to the top of the stack, the <i>S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

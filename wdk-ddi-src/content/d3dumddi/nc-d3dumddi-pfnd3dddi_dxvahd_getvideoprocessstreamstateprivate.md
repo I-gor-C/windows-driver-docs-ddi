@@ -107,7 +107,7 @@ The stream-state data is successfully retrieved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | GetVideoProcessStreamStatePrivate is supported beginning with the Windows 7 operating system. GetVideoProcessStreamStatePrivate is supported beginning with the Windows 7 operating system. |
+| **Windows version** | GetVideoProcessStreamStatePrivate is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

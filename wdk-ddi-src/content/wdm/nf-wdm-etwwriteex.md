@@ -104,7 +104,7 @@ You can call <b>EtwWriteEx</b> at any IRQL. However, when IRQL is greater than A
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 7 Windows 7 |
+| **Windows version** | Windows 7 Windows Server 2008 R2 |
 | **Target Platform** | Universal |
 | **Header** | wdm.h |
 | **Library** | NtosKrnl.lib |

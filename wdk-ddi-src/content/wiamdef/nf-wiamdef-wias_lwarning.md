@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 2959c470-1da7-4396-a591-7a356379f9de
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WIAS_LWARNING macro [Imaging Devices], wiamdef/WIAS_LWARNING, IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, image.wias_lwarning, WIAS_LWARNING
+ms.keywords: WIAS_LWARNING, IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, wiamdef/WIAS_LWARNING, WIAS_LWARNING macro [Imaging Devices], image.wias_lwarning
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -99,7 +99,7 @@ Please note that it does not write to the new log file used in Windows Vista and
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
 | **Library** | wiamdef.h |

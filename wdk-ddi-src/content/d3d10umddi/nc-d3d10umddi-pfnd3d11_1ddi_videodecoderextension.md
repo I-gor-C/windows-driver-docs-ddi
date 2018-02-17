@@ -40,7 +40,7 @@ apiname:
 -	pfnVideoDecoderExtension
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -78,6 +78,7 @@ HRESULT Pfnd3d111DdiVideodecoderextension(
 ## Return Value
 
 <b>VideoDecoderExtension</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -135,7 +136,7 @@ Parameters were validated and determined to be incorrect.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
@@ -143,7 +144,11 @@ Parameters were validated and determined to be incorrect.
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddiarg_videodecoderextension.md">D3D11_1DDIARG_VIDEODECODEREXTENSION</a>
 
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoder.md">CreateVideoDecoder</a>
+
+
 
  
 

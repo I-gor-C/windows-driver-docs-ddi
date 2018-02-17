@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f0e856f8-9c01-4219-b521-ab4a5c9bc35c
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlGetCompressionWorkSpaceSize, ifsk.rtlgetcompressionworkspacesize, RtlGetCompressionWorkSpaceSize function [Installable File System Drivers], ntifs/RtlGetCompressionWorkSpaceSize, rtlref_26332738-6278-49f9-b948-87bcb7e68c83.xml
+ms.keywords: ifsk.rtlgetcompressionworkspacesize, ntifs/RtlGetCompressionWorkSpaceSize, rtlref_26332738-6278-49f9-b948-87bcb7e68c83.xml, RtlGetCompressionWorkSpaceSize, RtlGetCompressionWorkSpaceSize function [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -229,7 +229,7 @@ To decompress only a portion of a compressed buffer (that is, a "fragment" of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and all later versions of Windows operating systems. Available in Windows XP and all later versions of Windows operating systems. |
+| **Windows version** | Available in Windows XP and all later versions of Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -238,7 +238,7 @@ To decompress only a portion of a compressed buffer (that is, a "fragment" of th
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
+<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
 
 
 
@@ -250,7 +250,7 @@ To decompress only a portion of a compressed buffer (that is, a "fragment" of th
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
 
 
 

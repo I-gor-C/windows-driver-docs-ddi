@@ -100,12 +100,16 @@ The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp_release_vi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | videoagp.h (include Video.h) |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
+
+<a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
+
+
 
 <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a>
 
@@ -116,10 +120,6 @@ The miniport driver should call <a href="..\videoagp\nc-videoagp-pagp_release_vi
 
 
 <a href="..\videoagp\nc-videoagp-pagp_release_virtual.md">AgpReleaseVirtual</a>
-
-
-
-<a href="..\videoagp\nc-videoagp-pagp_reserve_physical.md">AgpReservePhysical</a>
 
 
 

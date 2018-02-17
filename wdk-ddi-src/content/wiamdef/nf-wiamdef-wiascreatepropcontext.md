@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: b820c19d-a12b-417b-a9a3-6a3d700009c0
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasFncs_08d1a910-1036-46c9-a7a2-115a86275d60.xml, wiasCreatePropContext function [Imaging Devices], wiasCreatePropContext, wiamdef/wiasCreatePropContext, image.wiascreatepropcontext
+ms.keywords: wiasCreatePropContext function [Imaging Devices], image.wiascreatepropcontext, wiamdef/wiasCreatePropContext, wiasFncs_08d1a910-1036-46c9-a7a2-115a86275d60.xml, wiasCreatePropContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -155,7 +155,7 @@ WIA_IPA_FORMAT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

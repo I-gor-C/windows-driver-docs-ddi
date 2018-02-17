@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 62ED07DF-2DDC-42FD-80C3-75AB3DE839AD
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcmConnectorDataDirectionChanged, ucmmanager/UcmConnectorDataDirectionChanged, buses.ucmconnectordatadirectionchanged, UcmConnectorDataDirectionChanged method [Buses]
+ms.keywords: ucmmanager/UcmConnectorDataDirectionChanged, buses.ucmconnectordatadirectionchanged, UcmConnectorDataDirectionChanged method [Buses], UcmConnectorDataDirectionChanged
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ Alternatively, the client driver might choose to perform a role-swap autonomousl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |

@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: d2745d91-6696-4946-9f90-a9cb48c7980f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasSetValidListStr function [Imaging Devices], wiasFncs_c18aeb74-5c44-43ea-be9e-5132f45a5f77.xml, image.wiassetvalidliststr, wiamdef/wiasSetValidListStr, wiasSetValidListStr
+ms.keywords: wiasSetValidListStr function [Imaging Devices], wiasFncs_c18aeb74-5c44-43ea-be9e-5132f45a5f77.xml, wiamdef/wiasSetValidListStr, wiasSetValidListStr, image.wiassetvalidliststr
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |
@@ -99,11 +99,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidrangefloat.md">wiasSetValidRangeFloat</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidlistguid.md">wiasSetValidListGuid</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetvalidflag.md">wiasSetValidFlag</a>
 
 
 
@@ -111,7 +107,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidrangelong.md">wiasSetValidRangeLong</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetvalidrangefloat.md">wiasSetValidRangeFloat</a>
 
 
 
@@ -119,7 +115,11 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidflag.md">wiasSetValidFlag</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetvalidrangelong.md">wiasSetValidRangeLong</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wiassetvalidlistguid.md">wiasSetValidListGuid</a>
 
 
 

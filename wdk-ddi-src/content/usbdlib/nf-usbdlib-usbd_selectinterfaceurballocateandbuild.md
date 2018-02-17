@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: D0B2E7EA-3D1F-4FD1-AB8D-EAB8406B9127
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: USBD_SelectInterfaceUrbAllocateAndBuild, buses.usbd_selectinterfaceurballocateandbuild, usbdlib/USBD_SelectInterfaceUrbAllocateAndBuild, USBD_SelectInterfaceUrbAllocateAndBuild routine [Buses]
+ms.keywords: USBD_SelectInterfaceUrbAllocateAndBuild, usbdlib/USBD_SelectInterfaceUrbAllocateAndBuild, USBD_SelectInterfaceUrbAllocateAndBuild routine [Buses], buses.usbd_selectinterfaceurballocateandbuild
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -146,7 +146,7 @@ The client driver can reuse an URB allocated by <b>USBD_SelectInterfaceUrbAlloca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
 | **Library** | Usbdex.lib |
@@ -154,11 +154,11 @@ The client driver can reuse an URB allocated by <b>USBD_SelectInterfaceUrbAlloca
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
-
-
-
 <a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
 
 
 

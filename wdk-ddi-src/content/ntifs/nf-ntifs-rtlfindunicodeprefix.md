@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 525db78d-b25c-4325-ac71-b992564a19c0
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/RtlFindUnicodePrefix, RtlFindUnicodePrefix routine [Installable File System Drivers], rtlref_55dbfa12-5de6-44e0-8488-6e83abfaad84.xml, ifsk.rtlfindunicodeprefix, RtlFindUnicodePrefix
+ms.keywords: ntifs/RtlFindUnicodePrefix, RtlFindUnicodePrefix, ifsk.rtlfindunicodeprefix, rtlref_55dbfa12-5de6-44e0-8488-6e83abfaad84.xml, RtlFindUnicodePrefix routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows XP Windows XP |
+| **Windows version** | Windows XP Windows Server 2003 |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -137,15 +137,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 
 
@@ -153,7 +145,15 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 
 
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
 
 
 

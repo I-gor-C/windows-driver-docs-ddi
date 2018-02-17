@@ -253,7 +253,7 @@ The process to which the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems.  |
 | **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
 | **IRQL** | PASSIVE_LEVEL |
@@ -268,11 +268,11 @@ The process to which the
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-
-
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 
 

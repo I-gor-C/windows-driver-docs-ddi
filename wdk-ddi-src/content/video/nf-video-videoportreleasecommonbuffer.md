@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: b3733de1-63ef-43b8-b669-dbe7e573b499
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: video/VideoPortReleaseCommonBuffer, display.videoportreleasecommonbuffer, VideoPortReleaseCommonBuffer function [Display Devices], VideoPortReleaseCommonBuffer, VideoPort_Functions_78edd589-bea5-43e3-8658-8c6c95a1f0f7.xml
+ms.keywords: VideoPortReleaseCommonBuffer function [Display Devices], display.videoportreleasecommonbuffer, VideoPortReleaseCommonBuffer, VideoPort_Functions_78edd589-bea5-43e3-8658-8c6c95a1f0f7.xml, video/VideoPortReleaseCommonBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ The parameters passed to <b>VideoPortFreeCommonBuffer</b> must match exactly tho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h, Ntdef.h) |
 | **Library** | Videoprt.lib |
@@ -112,11 +112,11 @@ The parameters passed to <b>VideoPortFreeCommonBuffer</b> must match exactly tho
 
 
 
-<a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
+
+
+
+<a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>
 
 
 

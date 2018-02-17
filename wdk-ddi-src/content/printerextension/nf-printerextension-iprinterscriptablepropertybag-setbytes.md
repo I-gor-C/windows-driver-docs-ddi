@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 517CF135-A5D7-4C99-8592-59934E24DEE3
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: SetBytes, printerextension/IPrinterScriptablePropertyBag::SetBytes, IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_setbytes, SetBytes method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag interface [Print Devices], SetBytes method, IPrinterScriptablePropertyBag::SetBytes, SetBytes method [Print Devices]
+ms.keywords: printerextension/IPrinterScriptablePropertyBag::SetBytes, IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag interface [Print Devices], SetBytes method, SetBytes method [Print Devices], IPrinterScriptablePropertyBag interface, SetBytes, SetBytes method [Print Devices], IPrinterScriptablePropertyBag::SetBytes, print.iprinterscriptablepropertybag_setbytes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -79,7 +79,7 @@ A call to <b>SetBytes</b> will throw an exception, if the specified property is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ed96b2ec-95ea-47a6-a3b0-f4d018e0c8e2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlRunOnceBeginInitialize routine [Kernel-Mode Driver Architecture], RtlRunOnceBeginInitialize, kernel.rtlrunoncebegininitialize, ntddk/RtlRunOnceBeginInitialize, k109_f7299ad8-4567-4ad8-a13c-2329a12af6ea.xml
+ms.keywords: RtlRunOnceBeginInitialize routine [Kernel-Mode Driver Architecture], kernel.rtlrunoncebegininitialize, ntddk/RtlRunOnceBeginInitialize, RtlRunOnceBeginInitialize, k109_f7299ad8-4567-4ad8-a13c-2329a12af6ea.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -126,7 +126,7 @@ Drivers can alternatively perform one-time initialization by calling <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -135,11 +135,7 @@ Drivers can alternatively perform one-time initialization by calling <a href="..
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
+<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
 
 
 
@@ -151,7 +147,11 @@ Drivers can alternatively perform one-time initialization by calling <a href="..
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
 
 
 

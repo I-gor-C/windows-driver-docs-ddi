@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1D53D6C6-7546-439F-818C-85E65901B5DC
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntifs/ZwSetInformationVirtualMemory, ZwSetInformationVirtualMemory, kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture]
+ms.keywords: ZwSetInformationVirtualMemory, ntifs/ZwSetInformationVirtualMemory, kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -117,7 +117,7 @@ Because this call is  not necessary for correct operation of the driver, it is t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 10, version 1511. Available starting with Windows 10, version 1511. |
+| **Windows version** | Available starting with Windows 10, version 1511.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

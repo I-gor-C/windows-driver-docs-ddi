@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: bc7122e4-acba-4115-98c8-ccb71b71e2c0
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasWritePropLong function [Imaging Devices], wiasFncs_af342c9b-5f61-492d-9765-86d62d492b55.xml, wiamdef/wiasWritePropLong, wiasWritePropLong, image.wiaswriteproplong
+ms.keywords: wiasFncs_af342c9b-5f61-492d-9765-86d62d492b55.xml, wiasWritePropLong, wiamdef/wiasWritePropLong, wiasWritePropLong function [Imaging Devices], image.wiaswriteproplong
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |
@@ -89,7 +89,11 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
+<a href="..\wiamdef\nf-wiamdef-wiaswritepropstr.md">wiasWritePropStr</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
 
 
 
@@ -97,15 +101,11 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropstr.md">wiasWritePropStr</a>
+<a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
 
 
 
 <a href="..\wiamdef\nf-wiamdef-wiaswritepropguid.md">wiasWritePropGuid</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
 
 
 

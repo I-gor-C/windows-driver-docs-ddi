@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5000be89-144c-405c-93ea-3e9372e0a677
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: SecMakeSPNEx, SecMakeSPNEx function [Installable File System Drivers], ifsk.secmakespnex, ksecddref_3c4441b9-ed78-473f-ac3c-35a644018499.xml, ntifs/SecMakeSPNEx
+ms.keywords: ntifs/SecMakeSPNEx, ifsk.secmakespnex, SecMakeSPNEx function [Installable File System Drivers], SecMakeSPNEx, ksecddref_3c4441b9-ed78-473f-ac3c-35a644018499.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -158,7 +158,7 @@ The <i>Allocate</i> parameter was set to true, but the memory allocation request
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This function is only available on Microsoft Windows XP and later. This function is only available on Microsoft Windows XP and later. |
+| **Windows version** | This function is only available on Microsoft Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** | Ksecdd.lib |
@@ -166,11 +166,11 @@ The <i>Allocate</i> parameter was set to true, but the memory allocation request
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-secmakespn.md">SecMakeSPN</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-secmakespnex2.md">SecMakeSPNEx2</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-secmakespn.md">SecMakeSPN</a>
 
 
 

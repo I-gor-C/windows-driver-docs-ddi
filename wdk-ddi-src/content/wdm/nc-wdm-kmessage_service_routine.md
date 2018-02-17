@@ -137,7 +137,7 @@ The KMESSAGE_SERVICE_ROUTINE function type is defined in the Wdm.h header file. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | See Remarks section. See Remarks section. |
+| **Windows version** | See Remarks section.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **IRQL** | See Remarks section. |

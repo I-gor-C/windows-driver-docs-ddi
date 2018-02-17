@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 384E04BE-794F-4F87-81E5-35B974EB6172
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: USBD_UrbAllocate, usbdlib/USBD_UrbAllocate, buses.usbd_urballocate, USBD_UrbAllocate routine [Buses]
+ms.keywords: buses.usbd_urballocate, USBD_UrbAllocate routine [Buses], USBD_UrbAllocate, usbdlib/USBD_UrbAllocate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -150,7 +150,7 @@ CreateandSubmitURBExit:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
 | **Library** | Usbdex.lib |
@@ -162,11 +162,11 @@ CreateandSubmitURBExit:
 
 
 
-<a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a>
 
 
 

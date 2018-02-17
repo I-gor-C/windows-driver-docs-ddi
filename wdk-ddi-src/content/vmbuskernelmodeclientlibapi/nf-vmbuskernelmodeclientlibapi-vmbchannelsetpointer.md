@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: E536B66D-EAF2-4377-8452-7D37A277E7C8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelSetPointer, VmbChannelSetPointer function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsetpointer, vmbuskernelmodeclientlibapi/VmbChannelSetPointer
+ms.keywords: VmbChannelSetPointer, vmbuskernelmodeclientlibapi/VmbChannelSetPointer, VmbChannelSetPointer function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsetpointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ This is intended to be a more efficient way for a client driver to retrieve clie
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

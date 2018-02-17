@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 5a77e59f-ce64-4ff2-ac95-c9062cef20d2
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_2a16bc8c-a92a-4792-8007-29735a19f806.xml, ks/KsInitializeDriver, KsInitializeDriver function [Streaming Media Devices], stream.ksinitializedriver, KsInitializeDriver
+ms.keywords: KsInitializeDriver function [Streaming Media Devices], ks/KsInitializeDriver, avfunc_2a16bc8c-a92a-4792-8007-29735a19f806.xml, KsInitializeDriver, stream.ksinitializedriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ This function is typically called from <b>DriverEntry</b>. If the minidriver pas
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | Ks.lib |
@@ -92,7 +92,7 @@ This function is typically called from <b>DriverEntry</b>. If the minidriver pas
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 
 
@@ -100,23 +100,23 @@ This function is typically called from <b>DriverEntry</b>. If the minidriver pas
 
 
 
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-
-
-
-<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-
-
-
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
+
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 
 
 <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
+
+
+
+<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
 
 
 

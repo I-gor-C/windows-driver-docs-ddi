@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 06dce5c0-f893-47c7-bee9-1b7f61137ba0
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: drvInitItemProperties method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_88720847-db1d-475a-b8c4-62fdb376953a.xml, wiamindr_lh/IWiaMiniDrv::drvInitItemProperties, IWiaMiniDrv interface [Imaging Devices], drvInitItemProperties method, IWiaMiniDrv::drvInitItemProperties, image.iwiaminidrv_drvinititemproperties, IWiaMiniDrv, drvInitItemProperties method [Imaging Devices], drvInitItemProperties
+ms.keywords: IWiaMiniDrv, IWiaMiniDrv::drvInitItemProperties, MiniDrv_88720847-db1d-475a-b8c4-62fdb376953a.xml, IWiaMiniDrv interface [Imaging Devices], drvInitItemProperties method, drvInitItemProperties method [Imaging Devices], wiamindr_lh/IWiaMiniDrv::drvInitItemProperties, image.iwiaminidrv_drvinititemproperties, drvInitItemProperties, drvInitItemProperties method [Imaging Devices], IWiaMiniDrv interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,7 +86,7 @@ The <b>IWiaMiniDrv::drvInitItemProperties</b> method is called once per applicat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Windows version** | Available in Windows Me and in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
@@ -94,14 +94,6 @@ The <b>IWiaMiniDrv::drvInitItemProperties</b> method is called once per applicat
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiasgetdrvitem.md">wiasGetDrvItem</a>
-
-
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
 
 
@@ -114,6 +106,14 @@ The <b>IWiaMiniDrv::drvInitItemProperties</b> method is called once per applicat
 
 
 <a href="..\wiamdef\nf-wiamdef-wiassetitempropnames.md">wiasSetItemPropNames</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wiasgetdrvitem.md">wiasGetDrvItem</a>
+
+
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
 
 

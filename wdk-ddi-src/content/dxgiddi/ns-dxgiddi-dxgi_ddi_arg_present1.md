@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: F8575652-CA6D-472E-A314-91B07C48558B
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: dxgiddi/DXGI_DDI_ARG_PRESENT1, display.dxgi_ddi_arg_present1, DXGI_DDI_ARG_PRESENT1 structure [Display Devices], DXGI_DDI_ARG_PRESENT1
+ms.keywords: dxgiddi/DXGI_DDI_ARG_PRESENT1, display.dxgi_ddi_arg_present1, DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1 structure [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -127,6 +127,10 @@ This member is reserved and should be set to zero.
 
 ## See Also
 
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_flip_interval_type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn469267">pfnPresent1(DXGI)</a>
 
 
@@ -135,11 +139,15 @@ This member is reserved and should be set to zero.
 
 
 
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_flip_interval_type.md">DXGI_DDI_FLIP_INTERVAL_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
 
 
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_present_flags.md">DXGI_DDI_PRESENT_FLAGS</a>
+
+
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a>
 
 
 
@@ -148,14 +156,6 @@ This member is reserved and should be set to zero.
 
 
 <a href="..\dxgiddi\nc-dxgiddi-pfnddxgiddi_presentcb.md">pfnPresentCbDXGI</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
-<a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present.md">DXGIDDICB_PRESENT</a>
 
 
 

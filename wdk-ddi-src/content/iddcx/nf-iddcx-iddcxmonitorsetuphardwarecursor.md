@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 6182898d-d7c0-4ff2-b222-d83bd00cd1ec
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.iddcxmonitorsetuphardwarecursor, iddcx/IddCxMonitorSetupHardwareCursor, IddCxMonitorSetupHardwareCursor, IddCxMonitorSetupHardwareCursor method [Display Devices]
+ms.keywords: IddCxMonitorSetupHardwareCursor, display.iddcxmonitorsetuphardwarecursor, IddCxMonitorSetupHardwareCursor method [Display Devices], iddcx/IddCxMonitorSetupHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ Input arguments of function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **Library** | NtosKrnl.exe |

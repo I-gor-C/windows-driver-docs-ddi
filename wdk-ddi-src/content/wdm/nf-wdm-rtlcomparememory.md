@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1801fc27-53bf-4ac5-be41-072dfd8b0696
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/RtlCompareMemory, RtlCompareMemory routine [Kernel-Mode Driver Architecture], RtlCompareMemory, kernel.rtlcomparememory, k109_3deee1b7-0b3a-4d24-8c0f-5e428d051a02.xml
+ms.keywords: RtlCompareMemory, kernel.rtlcomparememory, RtlCompareMemory routine [Kernel-Mode Driver Architecture], k109_3deee1b7-0b3a-4d24-8c0f-5e428d051a02.xml, wdm/RtlCompareMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,7 +90,7 @@ Callers of <b>RtlCompareMemory</b> can be running at any IRQL if both blocks of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib; OneCoreUAP.lib on Windows 10 |

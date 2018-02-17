@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ED63E47F-B91F-49DC-9CE9-8CFE8F670B16
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfrequest/WdfRequestGetEffectiveIoType, PFN_WDFREQUESTGETEFFECTIVEIOTYPE, wdf.wdfrequestgeteffectiveiotype, WdfRequestGetEffectiveIoType method, WdfRequestGetEffectiveIoType
+ms.keywords: WdfRequestGetEffectiveIoType, WdfRequestGetEffectiveIoType method, wdf.wdfrequestgeteffectiveiotype, wdfrequest/WdfRequestGetEffectiveIoType, PFN_WDFREQUESTGETEFFECTIVEIOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -109,7 +109,7 @@ MyDrvEvtIoWrite(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1  |
 | **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |

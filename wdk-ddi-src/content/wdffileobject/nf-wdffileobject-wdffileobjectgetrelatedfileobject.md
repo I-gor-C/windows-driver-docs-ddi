@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: EB00FF6B-144B-4256-A362-D593FD4CFC98
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFFILEOBJECTGETRELATEDFILEOBJECT, wdffileobject/WdfFileObjectGetRelatedFileObject, WdfFileObjectGetRelatedFileObject, WdfFileObjectGetRelatedFileObject method, wdf.wdffileobjectgetrelatedfileobject
+ms.keywords: PFN_WDFFILEOBJECTGETRELATEDFILEOBJECT, WdfFileObjectGetRelatedFileObject method, wdf.wdffileobjectgetrelatedfileobject, wdffileobject/WdfFileObjectGetRelatedFileObject, WdfFileObjectGetRelatedFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ For more information about related file objects, see the <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1  |
 | **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdffileobject.h (include Wdf.h) |

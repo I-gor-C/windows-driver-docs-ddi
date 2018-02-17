@@ -80,7 +80,7 @@ Returns STATUS_SUCCESS if the target state was accepted.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | wdm.h |
 | **Library** | NtosKrnl.lib |

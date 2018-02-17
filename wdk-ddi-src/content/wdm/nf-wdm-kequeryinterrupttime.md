@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 88c87b11-b34f-43b3-b08e-940abaa23a27
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeQueryInterruptTime, kernel.kequeryinterrupttime, k105_a87c40d1-b9be-42f1-ada4-6e0fb3d33220.xml, KeQueryInterruptTime routine [Kernel-Mode Driver Architecture], wdm/KeQueryInterruptTime
+ms.keywords: KeQueryInterruptTime, KeQueryInterruptTime routine [Kernel-Mode Driver Architecture], wdm/KeQueryInterruptTime, kernel.kequeryinterrupttime, k105_a87c40d1-b9be-42f1-ada4-6e0fb3d33220.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ However, power-management state changes do affect the system interrupt time coun
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -85,18 +85,6 @@ However, power-management state changes do affect the system interrupt time coun
 | **IRQL** | Any level |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/D66E0FC2-3AF2-489B-B4B5-78648905B77B">Acquiring high-resolution time stamps</a>
-
-
-
-<a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
-
-
-
-<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
-
-
 
 <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 
@@ -106,7 +94,19 @@ However, power-management state changes do affect the system interrupt time coun
 
 
 
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
+
+
+
 <b>KeQueryInterruptTimePrecise</b>
+
+
+
+<a href="https://msdn.microsoft.com/D66E0FC2-3AF2-489B-B4B5-78648905B77B">Acquiring high-resolution time stamps</a>
+
+
+
+<a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
 
 
 

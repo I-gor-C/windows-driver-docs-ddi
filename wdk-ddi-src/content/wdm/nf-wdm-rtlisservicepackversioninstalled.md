@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1314ffb5-e6e2-4c22-bc67-388da3bcbe79
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlisservicepackversioninstalled, k109_1552acd9-7036-45d2-bd1c-57b7a2154ecb.xml, RtlIsServicePackVersionInstalled routine [Kernel-Mode Driver Architecture], RtlIsServicePackVersionInstalled, wdm/RtlIsServicePackVersionInstalled
+ms.keywords: k109_1552acd9-7036-45d2-bd1c-57b7a2154ecb.xml, wdm/RtlIsServicePackVersionInstalled, RtlIsServicePackVersionInstalled, RtlIsServicePackVersionInstalled routine [Kernel-Mode Driver Architecture], kernel.rtlisservicepackversioninstalled
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -271,7 +271,7 @@ The Windows kernel implements <b>RtlIsServicePackVersionInstalled</b> only in Wi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. A compatibility library supports this routine in earlier versions of Windows (see Remarks section). Available in Windows Vista and later versions of Windows. A compatibility library supports this routine in earlier versions of Windows (see Remarks section). |
+| **Windows version** | Available in Windows Vista and later versions of Windows. A compatibility library supports this routine in earlier versions of Windows (see Remarks section).  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Rtlver.lib |
@@ -279,15 +279,15 @@ The Windows kernel implements <b>RtlIsServicePackVersionInstalled</b> only in Wi
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-psgetversion.md">PsGetVersion</a>
+
+
+
 <a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
 
 
 
 <a href="..\wdm\nf-wdm-rtlisntddiversionavailable.md">RtlIsNtDdiVersionAvailable</a>
-
-
-
-<a href="..\wdm\nf-wdm-psgetversion.md">PsGetVersion</a>
 
 
 

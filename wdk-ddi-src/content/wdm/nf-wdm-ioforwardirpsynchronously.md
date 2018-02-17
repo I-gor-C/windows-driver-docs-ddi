@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c3e7c79f-2a0d-4011-887d-0f01537cd6e6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/IoForwardIrpSynchronously, IoForwardIrpSynchronously, k104_130c736e-6408-4484-b306-91ba275eaac0.xml, kernel.ioforwardirpsynchronously, IoForwardIrpSynchronously routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.ioforwardirpsynchronously, IoForwardIrpSynchronously, k104_130c736e-6408-4484-b306-91ba275eaac0.xml, IoForwardIrpSynchronously routine [Kernel-Mode Driver Architecture], wdm/IoForwardIrpSynchronously
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ The <b>IoForwardIrpSynchronously</b> routine copies the current stack location t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

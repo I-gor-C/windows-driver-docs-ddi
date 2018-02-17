@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 4349d772-89c6-4201-9d9d-2e0590d61424
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PCHANGER_SET_ACCESS, *PCHANGER_SET_ACCESS, CHANGER_SET_ACCESS, PCHANGER_SET_ACCESS structure pointer [Storage Devices], ntddchgr/CHANGER_SET_ACCESS, ntddchgr/PCHANGER_SET_ACCESS, storage.changer_set_access, structs-changer_01f5a159-3d46-4400-8eae-87367e81ed72.xml, _CHANGER_SET_ACCESS, CHANGER_SET_ACCESS structure [Storage Devices]
+ms.keywords: CHANGER_SET_ACCESS, PCHANGER_SET_ACCESS, storage.changer_set_access, _CHANGER_SET_ACCESS, *PCHANGER_SET_ACCESS, ntddchgr/CHANGER_SET_ACCESS, PCHANGER_SET_ACCESS structure pointer [Storage Devices], CHANGER_SET_ACCESS structure [Storage Devices], structs-changer_01f5a159-3d46-4400-8eae-87367e81ed72.xml, ntddchgr/PCHANGER_SET_ACCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -101,11 +101,11 @@ Contains a <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT
 
 ## See Also
 
+<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_access.md">IOCTL_CHANGER_SET_ACCESS</a>
+
+
+
 <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
-
-
-
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 
 
 
@@ -113,7 +113,7 @@ Contains a <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT
 
 
 
-<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_access.md">IOCTL_CHANGER_SET_ACCESS</a>
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 
 
 

@@ -131,7 +131,7 @@ The EVT_SPB_TARGET_DISCONNECT function type is defined in the Spbcx.h header fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Windows version** | Supported starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | spbcx.h |
 | **IRQL** | Called at PASSIVE_LEVEL. |
@@ -142,7 +142,7 @@ The EVT_SPB_TARGET_DISCONNECT function type is defined in the Spbcx.h header fil
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
 
 
 
@@ -154,7 +154,7 @@ The EVT_SPB_TARGET_DISCONNECT function type is defined in the Spbcx.h header fil
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
 
 

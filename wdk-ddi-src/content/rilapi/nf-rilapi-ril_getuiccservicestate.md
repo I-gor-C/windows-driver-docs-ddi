@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8ce53e64-791d-4e52-a383-b9e407b5b332
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ril_getuiccservicestate, RIL_GetUiccServiceState method [Network Drivers Starting with Windows Vista], RIL_GetUiccServiceState, rilapi/RIL_GetUiccServiceState
+ms.keywords: RIL_GetUiccServiceState, rilapi/RIL_GetUiccServiceState, RIL_GetUiccServiceState method [Network Drivers Starting with Windows Vista], netvista.ril_getuiccservicestate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

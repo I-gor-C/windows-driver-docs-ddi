@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 5b165237-f6fb-449c-878d-0ee09076d203
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_cdbada9a-c5be-48e3-90e7-9414a055350c.xml, video/VideoPortFreeDeviceBase, VideoPortFreeDeviceBase, VideoPortFreeDeviceBase function [Display Devices], display.videoportfreedevicebase
+ms.keywords: VideoPortFreeDeviceBase, video/VideoPortFreeDeviceBase, VideoPortFreeDeviceBase function [Display Devices], VideoPort_Functions_cdbada9a-c5be-48e3-90e7-9414a055350c.xml, display.videoportfreedevicebase
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,7 +92,7 @@ Call <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |
@@ -101,15 +101,15 @@ Call <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyA
 
 ## See Also
 
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+
+
+
 <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 
 
 
 <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
-
-
-
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
 
 
 

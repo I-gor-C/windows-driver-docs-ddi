@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2446dfee-baa4-4f7b-a5a0-ff13bf45ce4b
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/IoGetLowerDeviceObject, IoGetLowerDeviceObject routine [Installable File System Drivers], IoGetLowerDeviceObject, ioref_0739069f-c14d-4b35-accd-8d65954bbc3d.xml, ifsk.iogetlowerdeviceobject
+ms.keywords: ioref_0739069f-c14d-4b35-accd-8d65954bbc3d.xml, IoGetLowerDeviceObject routine [Installable File System Drivers], ifsk.iogetlowerdeviceobject, ntifs/IoGetLowerDeviceObject, IoGetLowerDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,7 +93,7 @@ A file system filter driver typically uses <b>IoGetLowerDeviceObject</b> to dete
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

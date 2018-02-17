@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 25d6dc68-8cd3-4f8c-ad0d-361b4f6c4cf6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlStringCbCopyNExW, safestrings_868bd7e8-88d5-4c41-ba40-ca7934ff86c8.xml, kernel.rtlstringcbcopynex, STRSAFE_IGNORE_NULLS, STRSAFE_NULL_ON_FAILURE, RtlStringCbCopyNExA, ntstrsafe/RtlStringCbCopyNExA, ntstrsafe/RtlStringCbCopyNExW, RtlStringCbCopyNEx, RtlStringCbCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE
+ms.keywords: RtlStringCbCopyNExA, RtlStringCbCopyNEx, STRSAFE_IGNORE_NULLS, RtlStringCbCopyNExW, safestrings_868bd7e8-88d5-4c41-ba40-ca7934ff86c8.xml, RtlStringCbCopyNExW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcopynex, ntstrsafe/RtlStringCbCopyNExA, STRSAFE_FILL_BEHIND_NULL, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_ON_FAILURE, STRSAFE_NO_TRUNCATION, ntstrsafe/RtlStringCbCopyNExW
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -268,7 +268,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |
@@ -276,11 +276,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a>
-
-
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexw.md">RtlStringCchCopyNEx</a>
+
+
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a>
 
 
 

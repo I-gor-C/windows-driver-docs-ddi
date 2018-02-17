@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2AD23AE1-05FF-44AF-807F-1ABD9D0D24DA
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ExInitializeDeleteTimerParameters, kernel.exinitializedeletetimerparameters, ExInitializeDeleteTimerParameters routine [Kernel-Mode Driver Architecture], wdm/ExInitializeDeleteTimerParameters
+ms.keywords: wdm/ExInitializeDeleteTimerParameters, ExInitializeDeleteTimerParameters, kernel.exinitializedeletetimerparameters, ExInitializeDeleteTimerParameters routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ Your driver must call <b>ExInitializeDeleteTimerParameters</b> to initialize an 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |
@@ -82,11 +82,11 @@ Your driver must call <b>ExInitializeDeleteTimerParameters</b> to initialize an 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
-
-
-
 <a href="..\wdm\ns-wdm-_ext_delete_parameters.md">EXT_DELETE_PARAMETERS</a>
+
+
+
+<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
 
 
 

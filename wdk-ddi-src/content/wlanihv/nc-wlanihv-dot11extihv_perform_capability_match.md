@@ -186,22 +186,13 @@ For more information about the Native 802.11 XML schema, refer to the Microsoft 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h, Winclient.h, L2cmn.h) |
 
 ## See Also
 
-<a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
-
-
-
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-
-
-<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_connectivity_profile.md">
-   DOT11EXT_IHV_CONNECTIVITY_PROFILE</a>
 
 
 
@@ -209,7 +200,16 @@ For more information about the Native 802.11 XML schema, refer to the Microsoft 
 
 
 
+<a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
+
+
+
 <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
+
+
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_connectivity_profile.md">
+   DOT11EXT_IHV_CONNECTIVITY_PROFILE</a>
 
 
 

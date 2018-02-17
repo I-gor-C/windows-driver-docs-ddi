@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8748451c-3e57-4acf-b1e6-b80fe7f461d8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml, RemoveHeadList routine [Kernel-Mode Driver Architecture], kernel.removeheadlist, wdm/RemoveHeadList, RemoveHeadList
+ms.keywords: RemoveHeadList, wdm/RemoveHeadList, k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml, RemoveHeadList routine [Kernel-Mode Driver Architecture], kernel.removeheadlist
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |
@@ -87,7 +87,7 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
+<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
 
 
 
@@ -95,15 +95,15 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 
 
 
-<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
+<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
+
+
+
+<a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
 
 
 
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
-
-
-
-<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
 
 
 

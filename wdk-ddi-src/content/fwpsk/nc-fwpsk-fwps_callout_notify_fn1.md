@@ -196,30 +196,14 @@ When a filter that specifies a callout for the filter's action is deleted from t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Windows version** | Available starting with Windows 7.  |
 | **Target Platform** | Windows |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
-
-
-
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
-
-
-
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn2.md">notifyFn2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568802">notifyFn</a>
 
 
 
@@ -227,7 +211,23 @@ When a filter that specifies a callout for the filter's action is deleted from t
 
 
 
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
+
+
+
 <a href="..\fwpsk\ns-fwpsk-fwps_callout0_.md">FWPS_CALLOUT0</a>
+
+
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn2.md">notifyFn2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568802">notifyFn</a>
 
 
 

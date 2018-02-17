@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6AABB3EB-F61A-40DA-BA9F-2AB91FC4B89E
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelInitSetClientContextSize, netvista.vmbchannelinitsetclientcontextsize, vmbuskernelmodeclientlibapi/VmbChannelInitSetClientContextSize, VmbChannelInitSetClientContextSize function [Network Drivers Starting with Windows Vista]
+ms.keywords: netvista.vmbchannelinitsetclientcontextsize, vmbuskernelmodeclientlibapi/VmbChannelInitSetClientContextSize, VmbChannelInitSetClientContextSize, VmbChannelInitSetClientContextSize function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

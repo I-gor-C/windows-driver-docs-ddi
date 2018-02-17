@@ -79,7 +79,7 @@ If the HID source driver does not implement this callback function, VHF uses a d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Desktop |
 | **Header** | vhf.h |
 | **IRQL** | "<=DISPATCH_LEVEL" |

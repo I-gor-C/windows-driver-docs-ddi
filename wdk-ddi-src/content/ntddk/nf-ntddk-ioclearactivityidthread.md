@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2F69FC2F-C336-4B51-8EFC-0A9AA22121B9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoClearActivityIdThread routine [Kernel-Mode Driver Architecture], ntddk/IoClearActivityIdThread, IoClearActivityIdThread, kernel.ioclearactivityidthread
+ms.keywords: IoClearActivityIdThread routine [Kernel-Mode Driver Architecture], kernel.ioclearactivityidthread, ntddk/IoClearActivityIdThread, IoClearActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,7 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Windows version** | Available starting with  Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

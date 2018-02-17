@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8c1f6cd3-f54b-4104-bd14-63d2c284946c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_f56a300b-e5d3-4f08-8d38-f124f73ada9f.xml, RtlConvertLongToLargeInteger, wdm/RtlConvertLongToLargeInteger, RtlConvertLongToLargeInteger routine [Kernel-Mode Driver Architecture], kernel.rtlconvertlongtolargeinteger
+ms.keywords: RtlConvertLongToLargeInteger, k109_f56a300b-e5d3-4f08-8d38-f124f73ada9f.xml, kernel.rtlconvertlongtolargeinteger, RtlConvertLongToLargeInteger routine [Kernel-Mode Driver Architecture], wdm/RtlConvertLongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ This routine is not supported in Windows XP. Use native support for <b>__int64</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

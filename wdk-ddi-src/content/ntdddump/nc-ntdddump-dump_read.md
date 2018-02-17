@@ -88,7 +88,7 @@ Filter drivers can modify the contents of the data buffer contained in <b>Mdl</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
+| **Windows version** | Available starting with Windows 8  |
 | **Target Platform** | Desktop |
 | **Header** | ntdddump.h (include Ntdddump.h) |
 

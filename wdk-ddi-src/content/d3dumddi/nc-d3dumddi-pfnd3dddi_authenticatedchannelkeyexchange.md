@@ -113,7 +113,7 @@ The driver decrypts this secret key and uses the secret key in calls to the driv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | AuthenticatedChannelKeyExchange is supported beginning with the Windows 7 operating system. AuthenticatedChannelKeyExchange is supported beginning with the Windows 7 operating system. |
+| **Windows version** | AuthenticatedChannelKeyExchange is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

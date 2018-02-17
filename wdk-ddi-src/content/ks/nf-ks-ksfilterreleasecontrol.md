@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 4f868e88-ef5c-4fad-be53-2b5116a6385b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsFilterReleaseControl function [Streaming Media Devices], ks/KsFilterReleaseControl, KsFilterReleaseControl, stream.ksfilterreleasecontrol, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml
+ms.keywords: ks/KsFilterReleaseControl, stream.ksfilterreleasecontrol, KsFilterReleaseControl, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, KsFilterReleaseControl function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ For a description of the filter control mutex, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | NtosKrnl.exe |

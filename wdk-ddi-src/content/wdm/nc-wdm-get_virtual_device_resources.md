@@ -40,7 +40,7 @@ apiname:
 -	GetResources
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -120,18 +120,24 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451131">GetRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2012 and later versions of Windows. Supported in Windows Server 2012 and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2012 and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406642">PCI_VIRTUALIZATION_INTERFACE</a>
+
+
+
 <b></b>
+
+
 
  
 

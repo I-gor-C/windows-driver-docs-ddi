@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 9318AB76-48ED-49FF-A4ED-17A07D43A0F8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: 1/SerCxCompleteWait, serports.sercxcompletewait, SerCxCompleteWait, SerCxCompleteWait method [Serial Ports]
+ms.keywords: SerCxCompleteWait method [Serial Ports], SerCxCompleteWait, 1/SerCxCompleteWait, serports.sercxcompletewait
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ Later, when an event in the new wait mask occurs, the driver calls <b>SerCxCompl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
 | **Library** | NtosKrnl.exe |
@@ -107,11 +107,15 @@ Later, when an event in the new wait mask occurs, the driver calls <b>SerCxCompl
 
 ## See Also
 
+<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
+
+
+
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
 
 
 
-<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
+<a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
 
 
 
@@ -120,10 +124,6 @@ Later, when an event in the new wait mask occurs, the driver calls <b>SerCxCompl
 
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
-
-
-
-<a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
 
 
 

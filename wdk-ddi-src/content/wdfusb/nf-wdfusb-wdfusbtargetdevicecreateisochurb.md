@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 2D25A276-A367-4E59-9CA0-4F480675DD77
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfUsbTargetDeviceCreateIsochUrb method, WdfUsbTargetDeviceCreateIsochUrb, wdf.wdfusbtargetdevicecreateisochurb, kmdf.wdfusbtargetdevicecreateisochurb, wdfusb/WdfUsbTargetDeviceCreateIsochUrb, PFN_WDFUSBTARGETDEVICECREATEISOCHURB
+ms.keywords: kmdf.wdfusbtargetdevicecreateisochurb, wdf.wdfusbtargetdevicecreateisochurb, WdfUsbTargetDeviceCreateIsochUrb method, PFN_WDFUSBTARGETDEVICECREATEISOCHURB, WdfUsbTargetDeviceCreateIsochUrb, wdfusb/WdfUsbTargetDeviceCreateIsochUrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -199,7 +199,7 @@ for (packetId = 0; packetId &lt; numberOfPackets; packetId++) {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows Vista Windows Vista |
+| **Windows version** | Windows Vista  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
@@ -209,11 +209,11 @@ for (packetId = 0; packetId &lt; numberOfPackets; packetId++) {
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-
-
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateurb.md">WdfUsbTargetDeviceCreateUrb</a>
+
+
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
 
 

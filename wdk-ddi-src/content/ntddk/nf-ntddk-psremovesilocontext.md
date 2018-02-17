@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.psremovesilocontext, PsRemoveSiloContext, PsRemoveSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsRemoveSiloContext
+ms.keywords: PsRemoveSiloContext routine [Kernel-Mode Driver Architecture], PsRemoveSiloContext, kernel.psremovesilocontext, ntddk/PsRemoveSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -123,7 +123,7 @@ In a successful call to <b>PsRemoveSiloContext</b> where the <i>RemovedSiloConte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.exe |

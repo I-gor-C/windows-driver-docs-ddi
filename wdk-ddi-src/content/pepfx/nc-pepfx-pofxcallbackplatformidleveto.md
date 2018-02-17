@@ -40,7 +40,7 @@ apiname:
 -	PlatformIdleVeto
 product: Windows
 targetos: Windows
-req.typenames: "*PVPCI_PNP_ID, VPCI_PNP_ID"
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 
@@ -83,6 +83,7 @@ Whether to increment or decrement the veto count. Set to TRUE to increment the v
 ## Return Value
 
 <b>PlatformIdleVeto</b> returns STATUS_SUCCESS if the call successfully increments or decrements the veto count. Possible error return values include the following status code.
+
 <table>
 <tr>
 <th>Return value</th>
@@ -112,18 +113,24 @@ This routine must be called at IRQL = PASSIVE_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Windows version** | Supported starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | pepfx.h |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186829">PEP_NOTIFY_PPM_QUERY_VETO_REASONS</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
+
+
 
 <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186829">PEP_NOTIFY_PPM_QUERY_VETO_REASONS</a>
+
 
  
 

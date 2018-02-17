@@ -40,7 +40,7 @@ apiname:
 -	MaskTableEntry
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -74,6 +74,7 @@ The index of the table entry in the MSI-X hardware interrupt table.
 ## Return Value
 
 The <i>MaskTableEntry</i> routine might return one of the following NTSTATUS values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -112,7 +113,7 @@ You can unmask the table entry by calling <a href="..\wdm\nc-wdm-pci_msix_maskun
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system. Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **IRQL** | "<= DIRQL" |
@@ -121,7 +122,11 @@ You can unmask the table entry by calling <a href="..\wdm\nc-wdm-pci_msix_maskun
 
 <a href="..\wdm\nc-wdm-pci_msix_maskunmask_entry.md">UnmaskTableEntry</a>
 
+
+
 <a href="..\wdm\ns-wdm-_pci_msix_table_config_interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
+
+
 
  
 

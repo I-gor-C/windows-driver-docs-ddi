@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 88967BD6-C633-40D0-BE4F-2B08494EA5B0
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.fsrtlpreparetoreuseecp, FsRtlPrepareToReuseEcp, ntifs/FsRtlPrepareToReuseEcp, FsRtlPrepareToReuseEcp routine [Installable File System Drivers]
+ms.keywords: FsRtlPrepareToReuseEcp routine [Installable File System Drivers], ifsk.fsrtlpreparetoreuseecp, FsRtlPrepareToReuseEcp, ntifs/FsRtlPrepareToReuseEcp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ Within a file system minifilter driver, use <a href="..\fltkernel\nf-fltkernel-f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -86,11 +86,15 @@ Within a file system minifilter driver, use <a href="..\fltkernel\nf-fltkernel-f
 
 ## See Also
 
+<a href="..\ntifs\nf-ntifs-fsrtlisecpacknowledged.md">FsRtlIsEcpAcknowledged</a>
+
+
+
 <a href="..\fltkernel\nf-fltkernel-fltpreparetoreuseecp.md">FltPrepareToReuseEcp</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-fsrtlisecpacknowledged.md">FsRtlIsEcpAcknowledged</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveextracreateparameter.md">FsRtlRemoveExtraCreateParameter</a>
 
 
 
@@ -99,10 +103,6 @@ Within a file system minifilter driver, use <a href="..\fltkernel\nf-fltkernel-f
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-fsrtlremoveextracreateparameter.md">FsRtlRemoveExtraCreateParameter</a>
 
 
 

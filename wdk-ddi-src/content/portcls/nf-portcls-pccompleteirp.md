@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: fa0b36bf-0628-4136-9ca7-1d20823969ff
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audpc-routines_f61145f8-9e55-4b2a-a3aa-37f7be4f4df3.xml, PcCompleteIrp, PcCompleteIrp function [Audio Devices], audio.pccompleteirp, portcls/PcCompleteIrp
+ms.keywords: audpc-routines_f61145f8-9e55-4b2a-a3aa-37f7be4f4df3.xml, audio.pccompleteirp, portcls/PcCompleteIrp, PcCompleteIrp function [Audio Devices], PcCompleteIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ The IRP handler should not call this function. An adapter driver's IRP handler i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcCompleteIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcCompleteIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcCompleteIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |
@@ -94,19 +94,19 @@ The IRP handler should not call this function. An adapter driver's IRP handler i
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
-
-
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
-
-
 <a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
+
+
+
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+
+
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
 
 

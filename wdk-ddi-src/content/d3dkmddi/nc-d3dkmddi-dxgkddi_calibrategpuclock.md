@@ -98,18 +98,24 @@ The DirectX graphics kernel subsystem calls this function often enough, typicall
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | DISPATCH_LEVEL |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn467320">DXGKARG_CALIBRATEGPUCLOCK</a>
+
+
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_history_buffer.md">DXGK_HISTORY_BUFFER</a>
+
+
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn467320">DXGKARG_CALIBRATEGPUCLOCK</a>
+
 
  
 

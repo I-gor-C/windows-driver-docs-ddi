@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 8afbd8df-95fc-453f-a1d8-400a993c286a
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: CcGetFileObjectFromSectionPtrsRef, ccref_e38ddec7-5501-40b4-a2a3-0a13c1c0fb4d.xml, ifsk.ccgetfileobjectfromsectionptrsref, CcGetFileObjectFromSectionPtrsRef routine [Installable File System Drivers], ntifs/CcGetFileObjectFromSectionPtrsRef
+ms.keywords: ccref_e38ddec7-5501-40b4-a2a3-0a13c1c0fb4d.xml, ntifs/CcGetFileObjectFromSectionPtrsRef, CcGetFileObjectFromSectionPtrsRef routine [Installable File System Drivers], CcGetFileObjectFromSectionPtrsRef, ifsk.ccgetfileobjectfromsectionptrsref
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ The file object is returned with a reference.  The caller is responsible for cal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 | **Library** | NtosKrnl.lib |
@@ -81,11 +81,11 @@ The file object is returned with a reference.  The caller is responsible for cal
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_section_object_pointers.md">SECTION_OBJECT_POINTERS</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrs.md">CcGetFileObjectFromSectionPtrs</a>
+
+
+
+<a href="..\wdm\ns-wdm-_section_object_pointers.md">SECTION_OBJECT_POINTERS</a>
 
 
 

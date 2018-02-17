@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: f37c9431-8b60-4caa-863c-81de45ffd457
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ril_startdtmf, RIL_StartDTMF, rilapi/RIL_StartDTMF, RIL_StartDTMF method [Network Drivers Starting with Windows Vista]
+ms.keywords: rilapi/RIL_StartDTMF, RIL_StartDTMF, RIL_StartDTMF method [Network Drivers Starting with Windows Vista], netvista.ril_startdtmf
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

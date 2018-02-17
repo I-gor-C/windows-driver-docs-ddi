@@ -119,7 +119,7 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
 
 
@@ -127,7 +127,7 @@ req.typenames: "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 
 
 

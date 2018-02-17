@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: d8d14818-4b84-4c65-a29e-2cd97e8bfbe9
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ScsiPortGetDeviceBase, storage.scsiportgetdevicebase, srb/ScsiPortGetDeviceBase, scsiprt_2924bfb1-e5a0-4533-afd7-65d2d7962b46.xml, ScsiPortGetDeviceBase routine [Storage Devices]
+ms.keywords: scsiprt_2924bfb1-e5a0-4533-afd7-65d2d7962b46.xml, ScsiPortGetDeviceBase, srb/ScsiPortGetDeviceBase, ScsiPortGetDeviceBase routine [Storage Devices], storage.scsiportgetdevicebase
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -147,15 +147,7 @@ The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data ty
 
 ## See Also
 
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
 
 
 
@@ -163,11 +155,19 @@ The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data ty
 
 
 
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
+
+
+
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+
+
+
 <a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
-
-
-
-<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
 
 
 

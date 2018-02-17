@@ -105,7 +105,7 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 

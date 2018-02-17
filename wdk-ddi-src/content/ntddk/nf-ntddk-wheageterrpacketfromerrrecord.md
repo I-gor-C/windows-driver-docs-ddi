@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 8b4a835f-b1ec-4308-8e0d-a13c0f421dc8
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: ntddk/WheaGetErrPacketFromErrRecord, whearef2_c7c202ca-0ed0-4a12-a3f0-64723e6483c6.xml, whea.wheageterrpacketfromerrrecord, WheaGetErrPacketFromErrRecord, WheaGetErrPacketFromErrRecord function [WHEA Drivers and Applications]
+ms.keywords: WheaGetErrPacketFromErrRecord function [WHEA Drivers and Applications], WheaGetErrPacketFromErrRecord, whea.wheageterrpacketfromerrrecord, whearef2_c7c202ca-0ed0-4a12-a3f0-64723e6483c6.xml, ntddk/WheaGetErrPacketFromErrRecord
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ The <b>WheaGetErrPacketFromErrRecord</b> function returns a pointer to the hardw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: eddb6cea-74fc-4faf-85fa-3a35d6890802
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iogetiopriorityhint, IoGetIoPriorityHint routine [Kernel-Mode Driver Architecture], IoGetIoPriorityHint, k104_7d622ea7-68a8-4029-96d4-5c40d4f348de.xml, wdm/IoGetIoPriorityHint
+ms.keywords: IoGetIoPriorityHint routine [Kernel-Mode Driver Architecture], IoGetIoPriorityHint, k104_7d622ea7-68a8-4029-96d4-5c40d4f348de.xml, kernel.iogetiopriorityhint, wdm/IoGetIoPriorityHint
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ For more information about priority hints, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -84,7 +84,7 @@ The <b>VideoPortGetProcAddress</b> member of the <a href="..\video\ns-video-_vid
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **IRQL** | PASSIVE_LEVEL |

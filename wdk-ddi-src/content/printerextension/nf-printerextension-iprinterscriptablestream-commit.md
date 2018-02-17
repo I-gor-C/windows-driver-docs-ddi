@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 5BA1417B-B78B-4582-9DDC-D542413B4BD8
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IPrinterScriptableStream::Commit, print.iprinterscriptablestream__commit, printerextension/IPrinterScriptableStream::Commit, IPrinterScriptableStream, IPrinterScriptableStream interface [Print Devices], Commit method, Commit method [Print Devices], Commit method [Print Devices], IPrinterScriptableStream interface, Commit
+ms.keywords: Commit, IPrinterScriptableStream interface [Print Devices], Commit method, Commit method [Print Devices], IPrinterScriptableStream, printerextension/IPrinterScriptableStream::Commit, print.iprinterscriptablestream__commit, IPrinterScriptableStream::Commit, Commit method [Print Devices], IPrinterScriptableStream interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -68,7 +68,7 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

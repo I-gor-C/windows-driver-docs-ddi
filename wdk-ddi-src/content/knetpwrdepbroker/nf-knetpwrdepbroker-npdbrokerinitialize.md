@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7B23A6DF-2B78-48DF-BDD4-451A19521CAC
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NpdBrokerInitialize function [Network Drivers Starting with Windows Vista], NpdBrokerInitialize, netvista.npdbrokerinitialize, knetpwrdepbroker/NpdBrokerInitialize
+ms.keywords: netvista.npdbrokerinitialize, NpdBrokerInitialize, NpdBrokerInitialize function [Network Drivers Starting with Windows Vista], knetpwrdepbroker/NpdBrokerInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709  |
 | **Target Platform** | Windows |
 | **Header** | knetpwrdepbroker.h (include KNetPwrDepBroker.h) |
 | **Library** | NtosKrnl.exe |

@@ -114,21 +114,21 @@ When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system. The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system. |
+| **Windows version** | The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_startsessionkeyrefresh.md">StartSessionKeyRefresh</a>
+
+
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh.md">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
 
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh.md">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
-
-
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_startsessionkeyrefresh.md">StartSessionKeyRefresh</a>
 
 
 

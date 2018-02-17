@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: f984bb4f-ecc8-4e6c-bb2c-a721395f1958
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_RadioStatePasswordCompare, RIL_RadioStatePasswordCompare method [Network Drivers Starting with Windows Vista], rilapi/RIL_RadioStatePasswordCompare, netvista.ril_radiostatepasswordcompare
+ms.keywords: rilapi/RIL_RadioStatePasswordCompare, RIL_RadioStatePasswordCompare method [Network Drivers Starting with Windows Vista], netvista.ril_radiostatepasswordcompare, RIL_RadioStatePasswordCompare
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

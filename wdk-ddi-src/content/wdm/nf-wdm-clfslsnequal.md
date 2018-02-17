@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e154c9d5-a131-47db-b0fa-d51154637c56
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: Clfs_09dba2f1-3508-488d-b663-8ba0806b9d31.xml, ClfsLsnEqual, ClfsLsnEqual routine [Kernel-Mode Driver Architecture], wdm/ClfsLsnEqual, kernel.clfslsnequal
+ms.keywords: wdm/ClfsLsnEqual, kernel.clfslsnequal, ClfsLsnEqual routine [Kernel-Mode Driver Architecture], ClfsLsnEqual, Clfs_09dba2f1-3508-488d-b663-8ba0806b9d31.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | Clfs.lib |
@@ -93,7 +93,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
+<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
 
 
 
@@ -101,7 +101,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 
 
-<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
 
 
 

@@ -126,7 +126,7 @@ This routine is defined in Wdm.h. Component filter IDs are defined in Dpfilter.h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating system versions. Available in Microsoft Windows XP and later operating system versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating system versions.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Dpfilter.h, Wdm.h, Ntddk.h, Ndis.h) |
 | **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |

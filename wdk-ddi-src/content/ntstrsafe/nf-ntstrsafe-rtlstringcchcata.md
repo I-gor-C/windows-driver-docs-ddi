@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4d2d0c14-a311-4235-9ceb-4b703ef602fe
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlStringCchCat, RtlStringCchCatW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchCatA, RtlStringCchCatA, safestrings_03a0e306-3b4e-4808-b257-a8327b688a08.xml, kernel.rtlstringcchcat, RtlStringCchCatW, ntstrsafe/RtlStringCchCatW
+ms.keywords: ntstrsafe/RtlStringCchCatW, RtlStringCchCatW, ntstrsafe/RtlStringCchCatA, kernel.rtlstringcchcat, RtlStringCchCatW function [Kernel-Mode Driver Architecture], RtlStringCchCat, safestrings_03a0e306-3b4e-4808-b257-a8327b688a08.xml, RtlStringCchCatA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -192,7 +192,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |
@@ -200,15 +200,15 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
-
-
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnw.md">RtlStringCchCatN</a>
 
 
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md">RtlStringCbCat</a>
+
+
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
 
 
 

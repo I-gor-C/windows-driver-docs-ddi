@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 6683C688-CCDD-498B-AA60-81430DC3BCA4
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: usbdlib/ USBD_BuildRegisterCompositeDevice, buses.usbd_buildregistercompositedriver, USBD_BuildRegisterCompositeDevice, USBD_BuildRegisterCompositeDevice routine [Buses]
+ms.keywords: USBD_BuildRegisterCompositeDevice routine [Buses], usbdlib/ USBD_BuildRegisterCompositeDevice, buses.usbd_buildregistercompositedriver, USBD_BuildRegisterCompositeDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,7 +89,7 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
 | **Library** | Usbdex.lib |
@@ -97,11 +97,11 @@ This routine does not return a value.
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
-
-
-
 <a href="..\usbdlib\ns-usbdlib-_register_composite_device.md">REGISTER_COMPOSITE_DEVICE</a>
+
+
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 
 
 

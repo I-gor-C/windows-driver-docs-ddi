@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 667c9524-be12-4f02-b921-6067abfb1dde
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_e33a51e9-4576-4558-9967-9ea27467c326.xml, kernel.iogetdeviceinterfacealias, IoGetDeviceInterfaceAlias routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceInterfaceAlias, IoGetDeviceInterfaceAlias
+ms.keywords: wdm/IoGetDeviceInterfaceAlias, IoGetDeviceInterfaceAlias routine [Kernel-Mode Driver Architecture], kernel.iogetdeviceinterfacealias, k104_e33a51e9-4576-4558-9967-9ea27467c326.xml, IoGetDeviceInterfaceAlias
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -132,7 +132,7 @@ Callers of <b>IoGetDeviceInterfaceAlias</b> must be running at IRQL = PASSIVE_LE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -142,11 +142,11 @@ Callers of <b>IoGetDeviceInterfaceAlias</b> must be running at IRQL = PASSIVE_LE
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
-
-
-
 <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 
 
 

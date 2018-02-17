@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9cb714d5-92f6-481d-bc5e-5fa05b6a0938
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RxCeSendDatagram function [Installable File System Drivers], rxce/RxCeSendDatagram, rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml, RxCeSendDatagram, ifsk.rxcesenddatagram
+ms.keywords: RxCeSendDatagram, ifsk.rxcesenddatagram, rxce/RxCeSendDatagram, RxCeSendDatagram function [Installable File System Drivers], rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -144,7 +144,7 @@ Note that the synchronous <i>Option</i> is disregarded for sending datagrams bec
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
 
 
 
@@ -152,7 +152,7 @@ Note that the synchronous <i>Option</i> is disregarded for sending datagrams bec
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 
 
 

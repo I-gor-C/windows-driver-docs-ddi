@@ -78,7 +78,7 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds; otherwise, it returns one of the e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | DISPATCH_LEVEL |
@@ -86,6 +86,8 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds; otherwise, it returns one of the e
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_formathistorybuffer.md">DXGKARG_FORMATHISTORYBUFFER</a>
+
+
 
  
 

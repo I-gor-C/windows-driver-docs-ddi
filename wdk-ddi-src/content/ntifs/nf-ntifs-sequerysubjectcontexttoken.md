@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: af326cb1-446a-49b7-a381-472deb9ecc82
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: SeQuerySubjectContextToken, SeQuerySubjectContextToken function [Installable File System Drivers], ifsk.sequerysubjectcontexttoken, ntifs/SeQuerySubjectContextToken, seref_5b274dd0-4f8e-4f4c-b7ff-9de9b3da9213.xml
+ms.keywords: SeQuerySubjectContextToken function [Installable File System Drivers], ntifs/SeQuerySubjectContextToken, ifsk.sequerysubjectcontexttoken, seref_5b274dd0-4f8e-4f4c-b7ff-9de9b3da9213.xml, SeQuerySubjectContextToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -77,29 +77,13 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | ntifs.h |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
-
-
 
 <a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
 
@@ -109,7 +93,23 @@ For more information about security and access control, see the documentation on
 
 
 
+<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
 
 
 

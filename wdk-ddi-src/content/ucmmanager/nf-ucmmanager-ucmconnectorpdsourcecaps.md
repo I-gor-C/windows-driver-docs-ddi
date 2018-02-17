@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 7C52EE60-7903-42A7-B535-9B8ED7A4B021
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcmConnectorPdSourceCaps, buses.ucmconnectorpdsourcecaps, UcmConnectorPdSourceCaps method [Buses], ucmmanager/UcmConnectorPdSourceCaps
+ms.keywords: buses.ucmconnectorpdsourcecaps, ucmmanager/UcmConnectorPdSourceCaps, UcmConnectorPdSourceCaps method [Buses], UcmConnectorPdSourceCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,7 @@ If the connector (local connector) is the power source, the client driver can re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |

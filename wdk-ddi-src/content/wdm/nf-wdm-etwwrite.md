@@ -109,7 +109,7 @@ You can call <b>EtwWrite</b> at any IRQL. However, when IRQL is greater than APC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 | **Library** | NtosKrnl.lib |

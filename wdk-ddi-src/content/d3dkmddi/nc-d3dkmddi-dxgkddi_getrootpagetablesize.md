@@ -80,6 +80,6 @@ The page table size in bytes. The size must be a multiple of the page size of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |

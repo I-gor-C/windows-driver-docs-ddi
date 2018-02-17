@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: f8184ae1-878f-46fc-bddc-66c065bc9e75
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wiasupdatescanrect, wiasUpdateScanRect function [Imaging Devices], wiasUpdateScanRect, wiamdef/wiasUpdateScanRect, wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml
+ms.keywords: wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml, wiasUpdateScanRect function [Imaging Devices], wiasUpdateScanRect, image.wiasupdatescanrect, wiamdef/wiasUpdateScanRect
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,7 +89,7 @@ This helper method is called to update the properties making up the scan rectang
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

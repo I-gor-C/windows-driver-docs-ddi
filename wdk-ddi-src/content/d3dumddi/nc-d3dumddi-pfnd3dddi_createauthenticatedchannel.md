@@ -124,7 +124,7 @@ The driver must keep track of the display device (<i>hDevice</i>) that was used 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | CreateAuthenticatedChannel is supported beginning with the Windows 7 operating system. CreateAuthenticatedChannel is supported beginning with the Windows 7 operating system. |
+| **Windows version** | CreateAuthenticatedChannel is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

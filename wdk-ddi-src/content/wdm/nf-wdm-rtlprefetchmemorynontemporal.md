@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d11c3414-86c8-4b68-829e-4523519c5299
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_795dffef-c947-4f0b-a8ab-fcc0cb6cc630.xml, wdm/RtlPrefetchMemoryNonTemporal, RtlPrefetchMemoryNonTemporal, kernel.rtlprefetchmemorynontemporal, RtlPrefetchMemoryNonTemporal routine [Kernel-Mode Driver Architecture]
+ms.keywords: RtlPrefetchMemoryNonTemporal, wdm/RtlPrefetchMemoryNonTemporal, kernel.rtlprefetchmemorynontemporal, k109_795dffef-c947-4f0b-a8ab-fcc0cb6cc630.xml, RtlPrefetchMemoryNonTemporal routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ You should use this routine only for a buffer that will be written to or read fr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h) |
 | **Library** | NtosKrnl.lib |

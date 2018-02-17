@@ -83,7 +83,7 @@ See requirements on calling this function with multiplane overlays in <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | PASSIVE_LEVEL |
@@ -91,6 +91,8 @@ See requirements on calling this function with multiplane overlays in <a href="h
 ## See Also
 
 <a href="https://msdn.microsoft.com/488c929b-3816-457f-b5c2-c176b93d5546">DxgkDdiSetVidPnSourceAddress</a>
+
+
 
  
 

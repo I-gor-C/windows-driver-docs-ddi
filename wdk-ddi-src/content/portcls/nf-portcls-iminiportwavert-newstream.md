@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: efd2eea8-2b05-49a2-b136-a3e1e3e739c5
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: IMiniportWaveRT interface [Audio Devices], NewStream method, NewStream method [Audio Devices], audio.iminiportwavert_newstream, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, NewStream, NewStream method [Audio Devices], IMiniportWaveRT interface, portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT::NewStream, IMiniportWaveRT
+ms.keywords: NewStream method [Audio Devices], IMiniportWaveRT interface, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, IMiniportWaveRT interface [Audio Devices], NewStream method, NewStream method [Audio Devices], NewStream, IMiniportWaveRT, portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -111,7 +111,7 @@ The <i>Stream</i> and <i>PortStream</i> parameters follow the reference-counting
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h |
 | **Library** | portcls.h |
@@ -119,7 +119,15 @@ The <i>Stream</i> and <i>PortStream</i> parameters follow the reference-counting
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>
+
+
+
 <a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
+
+
+
+IMiniportWaveRTStream
 
 
 
@@ -127,15 +135,7 @@ The <i>Stream</i> and <i>PortStream</i> parameters follow the reference-counting
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a>
-
-
-
-IMiniportWaveRTStream
 
 
 

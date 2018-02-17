@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 049BDC6E-2FB2-421F-9229-320F2ED98663
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture], MmIsDriverSuspectForVerifier, wdm/MmIsDriverSuspectForVerifier, kernel.mmisdriversuspectforverifier
+ms.keywords: MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverSuspectForVerifier, MmIsDriverSuspectForVerifier, kernel.mmisdriversuspectforverifier
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ Another related routine, <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -93,11 +93,11 @@ Another related routine, <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md"
 
 
 
-<a href="..\wdm\nf-wdm-mmisdriververifying.md">MmIsDriverVerifying</a>
-
-
-
 <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md">MmIsDriverVerifyingByAddress</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmisdriververifying.md">MmIsDriverVerifying</a>
 
 
 

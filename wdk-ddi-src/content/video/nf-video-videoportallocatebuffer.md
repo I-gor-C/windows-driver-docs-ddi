@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 87289ea8-f727-428d-93a1-2d3b0ab44e8b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortAllocateBuffer function [Display Devices], display.videoportallocatebuffer, VideoPortAllocateBuffer, VideoPort_Functions_6e90fb68-96c2-4163-87dd-0891d2e25254.xml, video/VideoPortAllocateBuffer
+ms.keywords: VideoPort_Functions_6e90fb68-96c2-4163-87dd-0891d2e25254.xml, VideoPortAllocateBuffer, video/VideoPortAllocateBuffer, display.videoportallocatebuffer, VideoPortAllocateBuffer function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ A miniport driver can use the return value of this function to determine whether
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

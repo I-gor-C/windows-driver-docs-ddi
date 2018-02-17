@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6f0ae6fc-4f2f-4a1a-ac2f-93689f6b7d50
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtremovepolicy, ClfsMgmtRemovePolicy, wdm/ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml
+ms.keywords: ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml, kernel.clfsmgmtremovepolicy, ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtRemovePolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -153,7 +153,7 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Clfs.lib |

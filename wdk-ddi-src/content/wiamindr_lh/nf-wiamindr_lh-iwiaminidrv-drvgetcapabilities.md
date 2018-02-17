@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 946a6ea7-5818-4959-adf2-3568c1b64b1a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: drvGetCapabilities, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, image.iwiaminidrv_drvgetcapabilities, IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml
+ms.keywords: image.iwiaminidrv_drvgetcapabilities, drvGetCapabilities method [Imaging Devices], drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, IWiaMiniDrv, drvGetCapabilities, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -98,14 +98,14 @@ The <i>Wiadef.h</i> header lists several predefined commands and events.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Windows version** | Available in Windows Me and in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_dev_cap_drv.md">WIA_DEV_CAP_DRV</a>
 
 
 
@@ -113,7 +113,7 @@ The <i>Wiadef.h</i> header lists several predefined commands and events.
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_dev_cap_drv.md">WIA_DEV_CAP_DRV</a>
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
 
 

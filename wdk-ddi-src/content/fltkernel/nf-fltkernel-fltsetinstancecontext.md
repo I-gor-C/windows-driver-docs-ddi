@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: ddeeb49b-7c7d-4faa-b2ae-cdb09adebce0
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltSetInstanceContext function [Installable File System Drivers], FltSetInstanceContext, fltkernel/FltSetInstanceContext, FltApiRef_p_to_z_a8984c00-54a9-427c-b33d-829b1db55149.xml, ifsk.fltsetinstancecontext
+ms.keywords: FltSetInstanceContext, FltSetInstanceContext function [Installable File System Drivers], ifsk.fltsetinstancecontext, fltkernel/FltSetInstanceContext, FltApiRef_p_to_z_a8984c00-54a9-427c-b33d-829b1db55149.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -175,7 +175,7 @@ For more information about context reference counting, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems. Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems. |
+| **Windows version** | Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | FltMgr.lib |
@@ -184,7 +184,11 @@ For more information about context reference counting, see <a href="https://msdn
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 
 
@@ -196,11 +200,7 @@ For more information about context reference counting, see <a href="https://msdn
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
 
 
 

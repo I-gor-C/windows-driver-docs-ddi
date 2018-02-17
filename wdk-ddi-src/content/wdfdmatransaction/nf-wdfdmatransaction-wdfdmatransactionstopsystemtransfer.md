@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 55674946-A2DA-4695-8673-6BF3123FB5FC
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdmatransaction/WdfDmaTransactionStopSystemTransfer, kmdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer method, wdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer, PFN_WDFDMATRANSACTIONSTOPSYSTEMTRANSFER
+ms.keywords: WdfDmaTransactionStopSystemTransfer method, PFN_WDFDMATRANSACTIONSTOPSYSTEMTRANSFER, wdfdmatransaction/WdfDmaTransactionStopSystemTransfer, wdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer, kmdf.wdfdmatransactionstopsystemtransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -276,7 +276,7 @@ MyRequestCancel(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
@@ -286,11 +286,11 @@ MyRequestCancel(
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
-
-
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncancel.md">WdfDmaTransactionCancel</a>
+
+
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
 
 

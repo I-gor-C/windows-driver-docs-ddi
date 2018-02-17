@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 67dd0ea0-9c69-415a-8b37-0e8700b6fbd8
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: StreamClassStreamNotification, stream.streamclassstreamnotification, strclass-routines_22bc1b48-b75e-4dce-9aae-16e16b1ca1f9.xml, strmini/StreamClassStreamNotification, StreamClassStreamNotification routine [Streaming Media Devices]
+ms.keywords: StreamClassStreamNotification, strmini/StreamClassStreamNotification, strclass-routines_22bc1b48-b75e-4dce-9aae-16e16b1ca1f9.xml, stream.streamclassstreamnotification, StreamClassStreamNotification routine [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

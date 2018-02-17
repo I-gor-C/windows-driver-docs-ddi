@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: f0b7d982-735f-489c-b9f8-81a287f6722a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaMiniDrv, image.iwiaminidrv_drvgetwiaformatinfo, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices]
+ms.keywords: image.iwiaminidrv_drvgetwiaformatinfo, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv::drvGetWiaFormatInfo, MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, drvGetWiaFormatInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -98,18 +98,18 @@ The minidriver can define a global array to hold the WIA_FORMAT_INFO structures,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Windows version** | Available in Windows Me and in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+
+
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
 
 

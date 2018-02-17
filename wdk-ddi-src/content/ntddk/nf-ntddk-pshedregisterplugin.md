@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 8ad93312-932c-417c-8198-9ba515e3d55d
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: whea.pshedregisterplugin, PshedRegisterPlugin, ntddk/PshedRegisterPlugin, whearef_27f04399-dd53-44b3-a31e-350aee53bcb1.xml, PshedRegisterPlugin function [WHEA Drivers and Applications]
+ms.keywords: PshedRegisterPlugin, whearef_27f04399-dd53-44b3-a31e-350aee53bcb1.xml, ntddk/PshedRegisterPlugin, PshedRegisterPlugin function [WHEA Drivers and Applications], whea.pshedregisterplugin
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,7 +102,7 @@ A PSHED plug-in calls the <b>PshedRegisterPlugin</b> function to register itself
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | Pshed.lib |

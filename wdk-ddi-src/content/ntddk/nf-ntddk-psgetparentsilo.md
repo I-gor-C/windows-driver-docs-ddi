@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 57fa5563-3a02-449a-a934-85c75f450500
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/PsGetParentSilo, PsGetParentSilo function [Kernel-Mode Driver Architecture], PsGetParentSilo, kernel.psgetparentsilo
+ms.keywords: kernel.psgetparentsilo, PsGetParentSilo function [Kernel-Mode Driver Architecture], PsGetParentSilo, ntddk/PsGetParentSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,7 +72,7 @@ A pointer to the parent silo of the job. his value may be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.lib |

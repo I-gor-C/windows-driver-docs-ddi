@@ -73,7 +73,7 @@ A handle by the OS to identify the monitor that has an invalid associated swapch
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **IRQL** | "_requires_same_" |

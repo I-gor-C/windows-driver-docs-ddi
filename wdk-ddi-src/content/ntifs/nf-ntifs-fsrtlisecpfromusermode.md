@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: cdc5d6a3-637e-4f0e-bc94-25bfe5763695
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.fsrtlisecpfromusermode, FsRtlIsEcpFromUserMode routine [Installable File System Drivers], FsRtlIsEcpFromUserMode, ntifs/FsRtlIsEcpFromUserMode, fsrtlref_14f09529-adf9-4113-bff4-5183ade20059.xml
+ms.keywords: fsrtlref_14f09529-adf9-4113-bff4-5183ade20059.xml, FsRtlIsEcpFromUserMode, ntifs/FsRtlIsEcpFromUserMode, FsRtlIsEcpFromUserMode routine [Installable File System Drivers], ifsk.fsrtlisecpfromusermode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,7 @@ Pointer to the ECP context structure to test.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | FsRtlIsEcpFromUserMode is available starting with Windows Vista. FsRtlIsEcpFromUserMode is available starting with Windows Vista. |
+| **Windows version** | FsRtlIsEcpFromUserMode is available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

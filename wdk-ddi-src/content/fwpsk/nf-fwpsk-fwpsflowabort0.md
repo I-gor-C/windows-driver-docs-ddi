@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 029dd387-498f-4402-9e61-a46688294949
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.fwpsflowabort0, FwpsFlowAbort0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsFlowAbort0, FwpsFlowAbort0
+ms.keywords: fwpsk/FwpsFlowAbort0, FwpsFlowAbort0 function [Network Drivers Starting with Windows Vista], netvista.fwpsflowabort0, FwpsFlowAbort0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -108,7 +108,7 @@ A callout driver can call the <b>FwpsFlowAbort0</b> function to abort a data flo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** | Fwpkclnt.lib |

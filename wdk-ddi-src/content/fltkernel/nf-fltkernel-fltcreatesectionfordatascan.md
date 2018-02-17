@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: D1215495-C737-45B6-BECD-8CB430C71DE8
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.fltcreatesectionfordatascan, FltCreateSectionForDataScan, fltkernel/FltCreateSectionForDataScan, FltCreateSectionForDataScan routine [Installable File System Drivers]
+ms.keywords: FltCreateSectionForDataScan routine [Installable File System Drivers], FltCreateSectionForDataScan, ifsk.fltcreatesectionfordatascan, fltkernel/FltCreateSectionForDataScan
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -380,7 +380,7 @@ For overview  information on creating mapped sections and views of memory, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The FltCreateSectionForDataScan routine is available starting with  Windows 8. The FltCreateSectionForDataScan routine is available starting with  Windows 8. |
+| **Windows version** | The FltCreateSectionForDataScan routine is available starting with  Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | FltMgr.lib |
@@ -388,35 +388,7 @@ For overview  information on creating mapped sections and views of memory, see <
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-
-
-
-<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
-
-
-
 <a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a>
-
-
-
-<a href="..\fltkernel\nc-fltkernel-pflt_section_conflict_notification_callback.md">PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
 
 
@@ -425,6 +397,34 @@ For overview  information on creating mapped sections and views of memory, see <
 
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+
+
+<a href="..\fltkernel\nc-fltkernel-pflt_section_conflict_notification_callback.md">PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+
+
+
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
 
 
 

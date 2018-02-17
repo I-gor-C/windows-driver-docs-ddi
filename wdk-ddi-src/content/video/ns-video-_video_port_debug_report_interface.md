@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 11536f1e-523c-4796-a973-e53291c756a8
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VIDEO_PORT_DEBUG_REPORT_INTERFACE, _VIDEO_PORT_DEBUG_REPORT_INTERFACE, *PVIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE structure [Display Devices], Video_Structs_4db5be2e-169d-4487-b979-e75cd1b2cb18.xml, display.video_port_debug_report_interface, PVIDEO_PORT_DEBUG_REPORT_INTERFACE structure pointer [Display Devices], video/PVIDEO_PORT_DEBUG_REPORT_INTERFACE, video/VIDEO_PORT_DEBUG_REPORT_INTERFACE, PVIDEO_PORT_DEBUG_REPORT_INTERFACE
+ms.keywords: "*PVIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE structure [Display Devices], display.video_port_debug_report_interface, _VIDEO_PORT_DEBUG_REPORT_INTERFACE, video/PVIDEO_PORT_DEBUG_REPORT_INTERFACE, PVIDEO_PORT_DEBUG_REPORT_INTERFACE structure pointer [Display Devices], VIDEO_PORT_DEBUG_REPORT_INTERFACE, video/VIDEO_PORT_DEBUG_REPORT_INTERFACE, Video_Structs_4db5be2e-169d-4487-b979-e75cd1b2cb18.xml, PVIDEO_PORT_DEBUG_REPORT_INTERFACE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -115,6 +115,10 @@ The video miniport driver supplies the <b>Size</b> and <b>Version</b> members of
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a>
+
+
+
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 
 
@@ -123,15 +127,11 @@ The video miniport driver supplies the <b>Size</b> and <b>Version</b> members of
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a>
-
-
-
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a>
 
 
 

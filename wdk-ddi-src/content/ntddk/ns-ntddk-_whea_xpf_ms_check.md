@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: aa446b31-ac53-4623-bacd-72ab72e94618
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: ntddk/PWHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK union pointer [WHEA Drivers and Applications], whea.whea_xpf_ms_check, WHEA_XPF_MS_CHECK, _WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK, whearef_ebbe0f28-499b-41ad-9e2b-c533c391c154.xml, WHEA_XPF_MS_CHECK union [WHEA Drivers and Applications], ntddk/WHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK
+ms.keywords: WHEA_XPF_MS_CHECK, ntddk/WHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK union pointer [WHEA Drivers and Applications], WHEA_XPF_MS_CHECK union [WHEA Drivers and Applications], *PWHEA_XPF_MS_CHECK, whea.whea_xpf_ms_check, ntddk/PWHEA_XPF_MS_CHECK, _WHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK, whearef_ebbe0f28-499b-41ad-9e2b-c533c391c154.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

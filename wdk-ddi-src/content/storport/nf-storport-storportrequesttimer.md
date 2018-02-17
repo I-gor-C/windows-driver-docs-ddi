@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: EE5A6D39-EC76-4D97-B2EC-4A43225C2FB5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortRequestTimer, StorPortRequestTimer routine [Storage Devices], storage.storportrequesttimer, StorPortRequestTimer
+ms.keywords: storage.storportrequesttimer, StorPortRequestTimer routine [Storage Devices], storport/StorPortRequestTimer, StorPortRequestTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -168,7 +168,7 @@ The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |
@@ -180,7 +180,7 @@ The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the
 
 
 
-<a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>
+<a href="..\storport\nc-storport-hw_timer.md">HwStorTimer</a>
 
 
 
@@ -188,7 +188,7 @@ The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the
 
 
 
-<a href="..\storport\nc-storport-hw_timer.md">HwStorTimer</a>
+<a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>
 
 
 

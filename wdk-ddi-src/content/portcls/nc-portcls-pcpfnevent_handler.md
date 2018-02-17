@@ -101,7 +101,7 @@ The <code>EventHandler</code> routine must reside in nonpaged memory.
 
 ## See Also
 
-<a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_6.md">PCAUTOMATION_TABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
 
 
 
@@ -109,7 +109,7 @@ The <code>EventHandler</code> routine must reside in nonpaged memory.
 
 
 
-<a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_5.md">PCEVENT_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 
 
 
@@ -117,7 +117,7 @@ The <code>EventHandler</code> routine must reside in nonpaged memory.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_6.md">PCAUTOMATION_TABLE</a>
 
 
 
@@ -125,7 +125,7 @@ The <code>EventHandler</code> routine must reside in nonpaged memory.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_5.md">PCEVENT_ITEM</a>
 
 
 

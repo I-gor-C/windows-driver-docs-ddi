@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 76b076d1-640b-4378-bf6d-36d87a8a5042
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisQueryDepthSList macro [Network Drivers Starting with Windows Vista], netvista.ndisquerydepthslist, NdisQueryDepthSList, ndis/NdisQueryDepthSList, ndis_interlocked_ref_f44c64cf-029a-408e-84a0-a8c09bc91592.xml
+ms.keywords: NdisQueryDepthSList macro [Network Drivers Starting with Windows Vista], NdisQueryDepthSList, netvista.ndisquerydepthslist, ndis/NdisQueryDepthSList, ndis_interlocked_ref_f44c64cf-029a-408e-84a0-a8c09bc91592.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -73,7 +73,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisQueryDepthSList (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisQueryDepthSList (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisQueryDepthSList (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisQueryDepthSList (NDIS   5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisQueryDepthSList (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisQueryDepthSList (NDIS   5.1)) in Windows XP.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |
@@ -82,16 +82,16 @@ None
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisinterlockedpushentryslist.md">
-   NdisInterlockedPushEntrySList</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndisinterlockedpopentryslist.md">NdisInterlockedPopEntrySList</a>
 
 
 
 <a href="..\ndis\nf-ndis-ndisinitializeslisthead.md">NdisInitializeSListHead</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisinterlockedpushentryslist.md">
+   NdisInterlockedPushEntrySList</a>
 
 
 

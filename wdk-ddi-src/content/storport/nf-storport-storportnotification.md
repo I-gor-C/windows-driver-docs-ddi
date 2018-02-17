@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3f361f50-3ca2-4fb6-828c-27928b50cf55
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportnotification, storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, StorPortNotification routine [Storage Devices], StorPortNotification, storport/StorPortNotification
+ms.keywords: storport/StorPortNotification, StorPortNotification routine [Storage Devices], StorPortNotification, storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, storage.storportnotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -319,23 +319,7 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567439">StorPortNotification for LinkDown</a>
-
-
-
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567446">StorPortNotification for RequestComplete</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567437">StorPortNotification for BusChangeDetected</a>
 
 
 
@@ -343,7 +327,7 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
 
 
 
@@ -351,7 +335,7 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567437">StorPortNotification for BusChangeDetected</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
 
 
 
@@ -360,6 +344,22 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567447">StorPortNotification for RequestTimerCall</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567446">StorPortNotification for RequestComplete</a>
+
+
+
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567439">StorPortNotification for LinkDown</a>
 
 
 

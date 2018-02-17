@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a73ab33b-3e8c-43d8-8547-1483bcd2af52
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlvalidatecorrelationvector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture], RtlValidateCorrelationVector, ntddk/RtlValidateCorrelationVector
+ms.keywords: kernel.rtlvalidatecorrelationvector, RtlValidateCorrelationVector, ntddk/RtlValidateCorrelationVector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,7 +102,7 @@ The supplied correlation vector is invalid.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.lib |

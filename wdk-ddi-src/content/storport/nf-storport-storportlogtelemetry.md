@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortLogTelemetry routine [Storage Devices], StorPortLogTelemetry, storport/StorPortLogTelemetry, storage.storportlogtelemetry
+ms.keywords: StorPortLogTelemetry routine [Storage Devices], storage.storportlogtelemetry, storport/StorPortLogTelemetry, StorPortLogTelemetry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -137,7 +137,7 @@ If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
+| **Windows version** | Windows 10, version 1703 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

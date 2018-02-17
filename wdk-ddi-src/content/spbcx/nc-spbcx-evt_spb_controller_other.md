@@ -157,7 +157,7 @@ The EVT_SPB_CONTROLLER_OTHER function type is defined in the Spbcx.h header file
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Windows version** | Supported starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | spbcx.h |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
@@ -168,7 +168,7 @@ The EVT_SPB_CONTROLLER_OTHER function type is defined in the Spbcx.h header file
 
 
 
-<a href="https://msdn.microsoft.com/605E2353-8C82-4005-BB72-4CB44146A253">SpbControllerSetIoOther</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
 
 
 
@@ -180,7 +180,7 @@ The EVT_SPB_CONTROLLER_OTHER function type is defined in the Spbcx.h header file
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
+<a href="https://msdn.microsoft.com/605E2353-8C82-4005-BB72-4CB44146A253">SpbControllerSetIoOther</a>
 
 
 

@@ -79,6 +79,7 @@ A handle to a context block associated with a display adapter. The display minip
 The <b>hConstrainingVidPn</b> member of <i>pEnumCofuncModalityArg</i> is a handle to a VidPN object called the constraining VidPN. Other members of <i>pEnumCofuncModalityArg</i> identify one video present source or target as the pivot of the enumeration (or specify that there is no pivot). 
 
 <i>DxgkDdiEnumVidPnCofuncModality</i> must perform the following tasks:
+
 <ul>
 <li>
 Examine the topology and mode sets of the constraining VidPN.
@@ -88,14 +89,15 @@ Examine the topology and mode sets of the constraining VidPN.
 Update each mode set that is not the pivot and does not already have a pinned mode. The updated mode sets must be cofunctional with the VidPN's topology and with any modes that have already been pinned.
 
 </li>
-</ul>Note that if a source or target is identified as the pivot of the enumeration, the mode set for that source or target must not change. For more information about how to update source and target mode sets, see <a href="https://msdn.microsoft.com/f1aa6277-7af6-4ba0-8ff1-d562f7029540">Enumerating Cofunctional VidPN Source and Target Modes</a>. 
+</ul>
+Note that if a source or target is identified as the pivot of the enumeration, the mode set for that source or target must not change. For more information about how to update source and target mode sets, see <a href="https://msdn.microsoft.com/f1aa6277-7af6-4ba0-8ff1-d562f7029540">Enumerating Cofunctional VidPN Source and Target Modes</a>. 
 
 The <i>DxgkDdiEnumVidPnCofuncModality</i> function should be made pageable.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | PASSIVE_LEVEL |

@@ -82,7 +82,7 @@ Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit</p>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10 and later versions of Windows Available in Windows 10 and later versions of Windows |
+| **Windows version** | Available in Windows 10 and later versions of Windows  |
 | **Target Platform** | Windows |
 | **Header** | wdm.h |
 | **Library** | Ntoskrnl.lib |

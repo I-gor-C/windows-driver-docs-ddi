@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c4cc9119-6e95-4c76-a320-536cc2609e3e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_SetRFState_V1 method [Network Drivers Starting with Windows Vista], netvista.ril_setrfstate_v1, RIL_SetRFState_V1, rilapi/RIL_SetRFState_V1
+ms.keywords: RIL_SetRFState_V1, rilapi/RIL_SetRFState_V1, RIL_SetRFState_V1 method [Network Drivers Starting with Windows Vista], netvista.ril_setrfstate_v1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

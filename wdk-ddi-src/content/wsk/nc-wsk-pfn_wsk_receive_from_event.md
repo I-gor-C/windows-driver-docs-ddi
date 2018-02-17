@@ -238,14 +238,14 @@ A WSK application's <i>WskReceiveFromEvent</i> event callback function must not 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Windows |
 | **Header** | wsk.h (include Wsk.h) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
 
 
 
@@ -253,11 +253,11 @@ A WSK application's <i>WskReceiveFromEvent</i> event callback function must not 
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
-
-
-
 <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+
+
+
+<a href="..\wsk\nc-wsk-pfn_wsk_receive_from.md">WskReceiveFrom</a>
 
 
 
@@ -265,7 +265,7 @@ A WSK application's <i>WskReceiveFromEvent</i> event callback function must not 
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
 
 
@@ -273,7 +273,7 @@ A WSK application's <i>WskReceiveFromEvent</i> event callback function must not 
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_receive_from.md">WskReceiveFrom</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
 
 
 

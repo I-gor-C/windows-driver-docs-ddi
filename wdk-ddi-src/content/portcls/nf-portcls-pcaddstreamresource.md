@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: CADB17C6-07EA-4497-AA73-4AECCC1D0A45
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audio.pcaddstreamresource, PcAddStreamResource, portcls/PcAddStreamResource, PcAddStreamResource function [Audio Devices]
+ms.keywords: audio.pcaddstreamresource, portcls/PcAddStreamResource, PcAddStreamResource function [Audio Devices], PcAddStreamResource
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,7 +105,7 @@ Audio drivers that only run in Windows 10 can use  <b>PcAddStreamResource</b> an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | portcls.h |
 | **Library** | Portcls.lib |

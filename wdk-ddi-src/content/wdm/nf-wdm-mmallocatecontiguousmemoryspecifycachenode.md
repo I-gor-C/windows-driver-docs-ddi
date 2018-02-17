@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ce54870e-80af-4588-a0ca-1ad115739256
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/MmAllocateContiguousMemorySpecifyCacheNode, k106_0ccc75e1-5d61-4f89-b576-1c709b50609f.xml, MmAllocateContiguousMemorySpecifyCacheNode, kernel.mmallocatecontiguousmemoryspecifycachenode, MmAllocateContiguousMemorySpecifyCacheNode routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.mmallocatecontiguousmemoryspecifycachenode, MmAllocateContiguousMemorySpecifyCacheNode routine [Kernel-Mode Driver Architecture], k106_0ccc75e1-5d61-4f89-b576-1c709b50609f.xml, MmAllocateContiguousMemorySpecifyCacheNode, wdm/MmAllocateContiguousMemorySpecifyCacheNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -114,7 +114,7 @@ If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |

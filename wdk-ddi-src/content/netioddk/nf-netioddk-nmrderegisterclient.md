@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 64fff189-392e-42c3-8d9a-0d6daa07d2f7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NmrDeregisterClient function [Network Drivers Starting with Windows Vista], nmrref_db73a389-7569-4d1d-9f96-01d4a28cf73e.xml, NmrDeregisterClient, netvista.nmrderegisterclient, netioddk/NmrDeregisterClient
+ms.keywords: netvista.nmrderegisterclient, nmrref_db73a389-7569-4d1d-9f96-01d4a28cf73e.xml, netioddk/NmrDeregisterClient, NmrDeregisterClient, NmrDeregisterClient function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -139,7 +139,7 @@ A client module typically calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
 | **Library** | Netio.lib |
@@ -147,11 +147,11 @@ A client module typically calls the
 
 ## See Also
 
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
+
+
+
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
 
 
@@ -159,8 +159,7 @@ A client module typically calls the
 
 
 
-<a href="..\netioddk\nf-netioddk-nmrwaitforclientderegistercomplete.md">
-   NmrWaitForClientDeregisterComplete</a>
+<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
 
 
 
@@ -168,7 +167,8 @@ A client module typically calls the
 
 
 
-<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
+<a href="..\netioddk\nf-netioddk-nmrwaitforclientderegistercomplete.md">
+   NmrWaitForClientDeregisterComplete</a>
 
 
 

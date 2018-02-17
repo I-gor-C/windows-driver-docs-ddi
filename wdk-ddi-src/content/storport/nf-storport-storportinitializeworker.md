@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 4472A092-B2F4-4220-9685-6BE4FF0A83DB
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportinitializeworker, StorPortInitializeWorker, StorPortInitializeWorker routine [Storage Devices], storport/StorPortInitializeWorker
+ms.keywords: StorPortInitializeWorker routine [Storage Devices], storage.storportinitializeworker, storport/StorPortInitializeWorker, StorPortInitializeWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -132,7 +132,7 @@ If the miniport uses the work item during IO processing, we recommended that <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

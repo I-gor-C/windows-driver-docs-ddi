@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 87B34452-DC2C-4FD4-B0F8-51EFAF2D4AA6
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: ursdevice/UrsSetPoHandle, UrsSetPoHandle function [Buses], buses.urssetpohandle, UrsSetPoHandle
+ms.keywords: UrsSetPoHandle function [Buses], ursdevice/UrsSetPoHandle, buses.urssetpohandle, UrsSetPoHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -168,7 +168,7 @@ EvtDevicePrePoFxUnregister (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | ursdevice.h (include Urscx.h) |

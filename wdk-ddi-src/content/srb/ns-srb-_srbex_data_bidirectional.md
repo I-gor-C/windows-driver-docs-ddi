@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: B61247DC-8AC3-4A96-985B-A4CAC232555E
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PSRBEX_DATA_BIDIRECTIONAL structure pointer [Storage Devices], storage.srbex_data_bidirectional, storport/SRBEX_DATA_BIDIRECTIONAL, *PSRBEX_DATA_BIDIRECTIONAL, PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL structure [Storage Devices], storport/PSRBEX_DATA_BIDIRECTIONAL, _SRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL
+ms.keywords: SRBEX_DATA_BIDIRECTIONAL structure [Storage Devices], PSRBEX_DATA_BIDIRECTIONAL structure pointer [Storage Devices], storage.srbex_data_bidirectional, SRBEX_DATA_BIDIRECTIONAL, *PSRBEX_DATA_BIDIRECTIONAL, storport/PSRBEX_DATA_BIDIRECTIONAL, _SRBEX_DATA_BIDIRECTIONAL, storport/SRBEX_DATA_BIDIRECTIONAL, PSRBEX_DATA_BIDIRECTIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -91,7 +91,7 @@ Data type indicator for the bidirectional extended SRB data structure. Set to <b
 
 ## See Also
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
 
 

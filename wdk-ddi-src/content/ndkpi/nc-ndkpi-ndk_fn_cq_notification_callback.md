@@ -122,18 +122,18 @@ The NDK consumer specified the <i>NdkCqNotificationCallback</i> function  in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_cq.md">NDK_FN_CREATE_CQ</a>
-
-
-
 <a href="https://msdn.microsoft.com/87150E2F-64F2-4EAB-A8B3-8E77622BE36C">NDKPI Completion Handling Requirements</a>
+
+
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_cq.md">NDK_FN_CREATE_CQ</a>
 
 
 

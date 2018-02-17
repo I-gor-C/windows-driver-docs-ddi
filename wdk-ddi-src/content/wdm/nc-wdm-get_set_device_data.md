@@ -40,7 +40,7 @@ apiname:
 -	GetBusData
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -93,6 +93,7 @@ The <i>GetBusData</i> routine returns the length, in bytes, of the configuration
 ## Remarks
 
 Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> routine can be called only from the interrupt request levels (IRQLs) that are defined in the following table.
+
 <table>
 <tr>
 <th><i>DataType</i> value</th>
@@ -152,9 +153,11 @@ Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> r
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 The following remarks apply to drivers for PCI Express (PCIe) virtual functions (VFs) on devices that support the single root I/O virtualization (SR-IOV) interface:
+
 <ul>
 <li>
 Drivers for PCIe VFs should call the <i>GetBusData</i> routine at IRQL &lt;= APC_LEVEL.
@@ -175,9 +178,13 @@ In order to read PCI Configuration data for the VF at IRQL = DISPATCH_LEVEL, the
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_bus_interface_standard.md">BUS_INTERFACE_STANDARD</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>
 
-<a href="..\wdm\ns-wdm-_bus_interface_standard.md">BUS_INTERFACE_STANDARD</a>
+
 
  
 

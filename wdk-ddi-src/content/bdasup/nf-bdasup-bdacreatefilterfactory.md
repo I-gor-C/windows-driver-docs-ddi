@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: bce1a41a-03fa-4f41-aeba-e18c85b07e00
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: bdaref_187ab038-cc22-4f82-a9c9-b326b77fef64.xml, BdaCreateFilterFactory function [Streaming Media Devices], stream.bdacreatefilterfactory, bdasup/BdaCreateFilterFactory, BdaCreateFilterFactory
+ms.keywords: BdaCreateFilterFactory function [Streaming Media Devices], bdasup/BdaCreateFilterFactory, bdaref_187ab038-cc22-4f82-a9c9-b326b77fef64.xml, BdaCreateFilterFactory, stream.bdacreatefilterfactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -106,7 +106,7 @@ If a BDA minidriver requires a pointer to the newly created filter factory (<a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. BdaCreateFilterFactory is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. BdaCreateFilterFactory is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. BdaCreateFilterFactory is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |
@@ -118,10 +118,6 @@ If a BDA minidriver requires a pointer to the newly created filter factory (<a h
 
 
 
-<a href="..\bdasup\nf-bdasup-bdacreatefilterfactoryex.md">BdaCreateFilterFactoryEx</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
 
 
@@ -130,15 +126,19 @@ If a BDA minidriver requires a pointer to the newly created filter factory (<a h
 
 
 
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
+
+
+
+<a href="..\bdasup\nf-bdasup-bdacreatefilterfactoryex.md">BdaCreateFilterFactoryEx</a>
+
+
+
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 
 
 

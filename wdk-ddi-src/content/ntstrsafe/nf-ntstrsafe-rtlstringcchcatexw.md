@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 868cde94-b086-47bc-8ffb-7cf21a2960a7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlstringcchcatex, RtlStringCchCatEx, ntstrsafe/RtlStringCchCatExW, RtlStringCchCatExA, safestrings_8766da59-e5d5-4fc8-af93-73b90c4449ab.xml, STRSAFE_IGNORE_NULLS, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, ntstrsafe/RtlStringCchCatExA, RtlStringCchCatExW, ntstrsafe/RtlStringCchCatEx, RtlStringCchCatEx function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, STRSAFE_FILL_ON_FAILURE
+ms.keywords: ntstrsafe/RtlStringCchCatEx, kernel.rtlstringcchcatex, RtlStringCchCatEx, STRSAFE_IGNORE_NULLS, RtlStringCchCatEx function [Kernel-Mode Driver Architecture], RtlStringCchCatExW, STRSAFE_NULL_ON_FAILURE, RtlStringCchCatExA, ntstrsafe/RtlStringCchCatExW, STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE, STRSAFE_NO_TRUNCATION, ntstrsafe/RtlStringCchCatExA, safestrings_8766da59-e5d5-4fc8-af93-73b90c4449ab.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -267,7 +267,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |
@@ -275,15 +275,15 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatw.md">RtlStringCchCat</a>
+
+
+
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md">RtlStringCbCatEx</a>
 
 
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
-
-
-
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatw.md">RtlStringCchCat</a>
 
 
 

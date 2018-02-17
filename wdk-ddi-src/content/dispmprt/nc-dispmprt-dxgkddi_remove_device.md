@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiRemoveDevice
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -78,7 +78,7 @@ A handle to a context block associated with a display adapter. The display minip
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | dispmprt.h |
 | **IRQL** | PASSIVE_LEVEL |
@@ -86,6 +86,8 @@ A handle to a context block associated with a display adapter. The display minip
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
 
  
 

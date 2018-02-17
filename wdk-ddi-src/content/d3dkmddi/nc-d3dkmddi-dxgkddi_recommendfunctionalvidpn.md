@@ -73,6 +73,7 @@ A handle to a context block associated with a display adapter. The display minip
 ## Return Value
 
 <i>DxgkDdiRecommendFunctionalVidPn </i>returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -116,6 +117,7 @@ The function failed because it was unable to allocate memory.
 ## Remarks
 
 A VidPN is functional if it satisfies the following conditions:
+
 <ul>
 <li>
 It has a topology that has at least one path. (A path is an association between a source and a target.)
@@ -125,7 +127,9 @@ It has a topology that has at least one path. (A path is an association between 
 Every source and target in the topology has a pinned mode.
 
 </li>
-</ul>The job of <i>DxgkDdiRecommendFunctionalVidPn</i> is to create a functional VidPN that can be implemented on the display adapter. The following list gives the steps used to create a functional VidPN.
+</ul>
+The job of <i>DxgkDdiRecommendFunctionalVidPn</i> is to create a functional VidPN that can be implemented on the display adapter. The following list gives the steps used to create a functional VidPN.
+
 <ol>
 <li>
 Start with a handle to an empty VidPN object. This handle was supplied in the <b>hDesiredVidPn</b> member of <i>pRecommendFunctionalVidPnArg.</i>
@@ -143,14 +147,15 @@ Create a new source mode set and add one source mode to the set. Assign the sour
 Create a new target mode set and add one target mode to the set. Assign the target mode set to the target in your path. Pin the target mode.
 
 </li>
-</ol>For information about how to add paths, add mode sets, assign modes, and pin modes, see <a href="https://msdn.microsoft.com/5dedac8c-9a99-4b3a-81be-39819135cd97">VidPN Objects and Interfaces</a>.
+</ol>
+For information about how to add paths, add mode sets, assign modes, and pin modes, see <a href="https://msdn.microsoft.com/5dedac8c-9a99-4b3a-81be-39819135cd97">VidPN Objects and Interfaces</a>.
 
 <i>DxgkDdiRecommendFunctionalVidPn</i> should be made pageable.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | PASSIVE_LEVEL |

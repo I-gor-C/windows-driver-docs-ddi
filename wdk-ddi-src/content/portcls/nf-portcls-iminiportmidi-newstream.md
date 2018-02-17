@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 6760c893-0574-4fb1-b714-d506ebbd0872
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: IMiniportMidi::NewStream, audmp-routines_4cc2fc38-bf0b-467e-83d4-678189d8fc0f.xml, NewStream method [Audio Devices], audio.iminiportmidi_newstream, portcls/IMiniportMidi::NewStream, IMiniportMidi interface [Audio Devices], NewStream method, NewStream, IMiniportMidi, NewStream method [Audio Devices], IMiniportMidi interface
+ms.keywords: NewStream method [Audio Devices], IMiniportMidi, IMiniportMidi interface [Audio Devices], NewStream method, NewStream, audio.iminiportmidi_newstream, NewStream method [Audio Devices], IMiniportMidi interface, IMiniportMidi::NewStream, portcls/IMiniportMidi::NewStream, audmp-routines_4cc2fc38-bf0b-467e-83d4-678189d8fc0f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -112,19 +112,11 @@ The <i>Stream</i>, <i>OuterUnknown</i>, and <i>ServiceGroup</i> parameters follo
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
-
-
-
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
-
-
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
 
 
 
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 
 
 
@@ -132,7 +124,15 @@ The <i>Stream</i>, <i>OuterUnknown</i>, and <i>ServiceGroup</i> parameters follo
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
+
+
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+
+
+<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
 
 
 

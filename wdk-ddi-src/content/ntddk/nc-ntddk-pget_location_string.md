@@ -89,22 +89,22 @@ The <i>PnpGetLocationString</i> routine calls a routine such as <a href="..\wdm\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Server 2003. Available starting with Windows Server 2003. |
+| **Windows version** | Available starting with Windows Server 2003.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_pnp_location_interface.md">PNP_LOCATION_INTERFACE</a>
-
-
-
 <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
 
 
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+
+
+<a href="..\ntddk\ns-ntddk-_pnp_location_interface.md">PNP_LOCATION_INTERFACE</a>
 
 
 

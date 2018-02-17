@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c7e12c2a-3382-478b-a306-7c86c93d45d0
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_SetSlotPower, netvista.ril_setslotpower, RIL_SetSlotPower method [Network Drivers Starting with Windows Vista], RIL_SetSlotPower
+ms.keywords: netvista.ril_setslotpower, RIL_SetSlotPower method [Network Drivers Starting with Windows Vista], RIL_SetSlotPower, rilapi/RIL_SetSlotPower
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

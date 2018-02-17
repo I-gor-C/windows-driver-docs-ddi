@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 44be034e-0c82-4980-a246-132d1b50dee1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_2b3bf223-0427-40e2-9f95-da5aa12c5da2.xml, kernel.iocreatenotificationevent, wdm/IoCreateNotificationEvent, IoCreateNotificationEvent, IoCreateNotificationEvent routine [Kernel-Mode Driver Architecture]
+ms.keywords: k104_2b3bf223-0427-40e2-9f95-da5aa12c5da2.xml, IoCreateNotificationEvent routine [Kernel-Mode Driver Architecture], kernel.iocreatenotificationevent, IoCreateNotificationEvent, wdm/IoCreateNotificationEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -113,7 +113,7 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -123,11 +123,11 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
 
 
-<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
+<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 
 
 
@@ -135,11 +135,7 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 
 
 
-<a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
+<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
 
 
 
@@ -147,7 +143,11 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 
 
 
-<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+
+
+
+<a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
 
 
 

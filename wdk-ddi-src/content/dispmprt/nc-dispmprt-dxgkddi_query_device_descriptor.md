@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiQueryDeviceDescriptor
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -78,6 +78,7 @@ A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_device_descriptor.md">DXGK
 ## Return Value
 
 <i>DxgkDdiQueryDeviceDescriptor </i>returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -144,7 +145,7 @@ The <i>DxgkDdiQueryDeviceDescriptor</i> function can be called several times for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | dispmprt.h |
 | **IRQL** | PASSIVE_LEVEL |
@@ -153,11 +154,19 @@ The <i>DxgkDdiQueryDeviceDescriptor</i> function can be called several times for
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
+
+
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
+
+
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_device_descriptor.md">DXGK_DEVICE_DESCRIPTOR</a>
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
+
 
  
 

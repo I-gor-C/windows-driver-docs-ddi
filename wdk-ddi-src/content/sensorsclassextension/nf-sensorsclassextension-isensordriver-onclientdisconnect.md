@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 9484610b-4cbd-4c4e-9e60-ef052702325c
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: OnClientDisconnect, sensors.isensordriver_onclientdisconnect, ISensorDriver interface [Sensor Devices], OnClientDisconnect method, OnClientDisconnect method [Sensor Devices], sensorsclassextension/ISensorDriver::OnClientDisconnect, ISensorDriver::OnClientDisconnect, ISensorDriver, OnClientDisconnect method [Sensor Devices], ISensorDriver interface, Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml
+ms.keywords: Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml, ISensorDriver::OnClientDisconnect, OnClientDisconnect, OnClientDisconnect method [Sensor Devices], ISensorDriver interface, OnClientDisconnect method [Sensor Devices], sensorsclassextension/ISensorDriver::OnClientDisconnect, ISensorDriver, sensors.isensordriver_onclientdisconnect, ISensorDriver interface [Sensor Devices], OnClientDisconnect method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -170,7 +170,7 @@ The function definition follows.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
+| **Windows version** | Windows 7,Available in Windows 7. None supported |
 | **Target Platform** | Desktop |
 | **Header** | sensorsclassextension.h |
 | **Library** | SensorsClassExtension.lib |

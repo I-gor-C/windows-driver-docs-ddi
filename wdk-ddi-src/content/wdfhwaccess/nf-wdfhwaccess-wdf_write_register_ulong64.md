@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 471B6165-24A0-45E1-AD7F-B7D3468DF573
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfhwaccess/WDF_WRITE_REGISTER_ULONG64, wdf.wdf_write_register_ulong64, WDF_WRITE_REGISTER_ULONG64 function, WDF_WRITE_REGISTER_ULONG64
+ms.keywords: WDF_WRITE_REGISTER_ULONG64 function, wdfhwaccess/WDF_WRITE_REGISTER_ULONG64, wdf.wdf_write_register_ulong64, WDF_WRITE_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1  |
 | **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |

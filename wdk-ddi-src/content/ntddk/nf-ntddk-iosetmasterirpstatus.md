@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 68C7C46B-AFDB-449D-99B5-1F9A5A9AFFA4
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iosetmasterirpstatus, IoSetMasterIrpStatus routine [Kernel-Mode Driver Architecture], ntddk/IoSetMasterIrpStatus, IoSetMasterIrpStatus
+ms.keywords: IoSetMasterIrpStatus routine [Kernel-Mode Driver Architecture], kernel.iosetmasterirpstatus, IoSetMasterIrpStatus, ntddk/IoSetMasterIrpStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,7 +90,7 @@ There are two exceptions to the general rule. A <i>Status</i> value of STATUS_VE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

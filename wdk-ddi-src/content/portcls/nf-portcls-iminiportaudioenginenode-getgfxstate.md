@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: C2D4EB3E-0A39-4458-B0E7-C6D943AB4203
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audio.iminiportaudioenginenode_getgfxstate, portcls/IMiniportAudioEngineNode::GetGfxState, IMiniportAudioEngineNode, GetGfxState, IMiniportAudioEngineNode interface [Audio Devices], GetGfxState method, GetGfxState method [Audio Devices], GetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode::GetGfxState
+ms.keywords: GetGfxState method [Audio Devices], GetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode, GetGfxState, portcls/IMiniportAudioEngineNode::GetGfxState, IMiniportAudioEngineNode interface [Audio Devices], GetGfxState method, audio.iminiportaudioenginenode_getgfxstate, IMiniportAudioEngineNode::GetGfxState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -75,7 +75,7 @@ Pointer to a <b>BOOL</b> data type.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | portcls.h |
 | **Library** | portcls.h |

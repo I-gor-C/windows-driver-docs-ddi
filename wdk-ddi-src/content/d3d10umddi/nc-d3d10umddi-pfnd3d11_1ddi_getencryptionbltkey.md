@@ -40,7 +40,7 @@ apiname:
 -	pfnGetEncryptionBltKey
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -91,7 +91,7 @@ When the <b>GetEncryptionBltKey</b> function is called, the display miniport dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8,Available in Windows Desktop version 10.0.10030.0 Windows 8,Available in Windows Desktop version 10.0.10030.0 |
+| **Windows version** | Windows 8,Available in Windows Desktop version 10.0.10030.0 Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
@@ -99,7 +99,11 @@ When the <b>GetEncryptionBltKey</b> function is called, the display miniport dri
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a>
 
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_encryptionblt.md">EncryptionBlt(D3D11_1)</a>
+
+
 
  
 

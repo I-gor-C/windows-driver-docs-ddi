@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2f26ff14-dd2c-4e80-aea5-38a7dd16d904
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: IFSMiscRef_e375e4a8-9702-41b8-b848-0dcbc0a7d9bd.xml, ntifs/GetSecurityUserInfo, GetSecurityUserInfo function [Installable File System Drivers], ifsk.getsecurityuserinfo, GetSecurityUserInfo
+ms.keywords: ntifs/GetSecurityUserInfo, GetSecurityUserInfo function [Installable File System Drivers], ifsk.getsecurityuserinfo, GetSecurityUserInfo, IFSMiscRef_e375e4a8-9702-41b8-b848-0dcbc0a7d9bd.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -113,7 +113,7 @@ This function obtains information about a logon <a href="http://go.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000 and later. Available in Microsoft Windows 2000 and later. |
+| **Windows version** | Available in Microsoft Windows 2000 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** | Ksecdd.lib |
@@ -121,11 +121,11 @@ This function obtains information about a logon <a href="http://go.microsoft.com
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-mapsecurityerror.md">MapSecurityError</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?linkid=121239">LsaFreeReturnBuffer</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-mapsecurityerror.md">MapSecurityError</a>
 
 
 

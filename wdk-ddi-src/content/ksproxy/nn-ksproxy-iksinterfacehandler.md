@@ -77,7 +77,7 @@ For more information about <b>CoCreateInstance</b>, see the Microsoft Windows SD
 
 ## See Also
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
 
 

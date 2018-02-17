@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/MmCopyMemory, MmCopyMemory, kernel.mmcopymemory, MmCopyMemory routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.mmcopymemory, MmCopyMemory, MmCopyMemory routine [Kernel-Mode Driver Architecture], ntddk/MmCopyMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -118,7 +118,7 @@ If memory at the virtual address specified by <i>SourceAddress</i> is not reside
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h |
 | **Library** | Ntoskrnl.lib |
@@ -126,11 +126,11 @@ If memory at the virtual address specified by <i>SourceAddress</i> is not reside
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_mm_copy_address.md">MM_COPY_ADDRESS</a>
-
-
-
 <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>
+
+
+
+<a href="..\ntddk\ns-ntddk-_mm_copy_address.md">MM_COPY_ADDRESS</a>
 
 
 

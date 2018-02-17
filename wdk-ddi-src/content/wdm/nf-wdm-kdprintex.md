@@ -80,7 +80,7 @@ This routine is defined in ntddk.h and ndis.h; component filter IDs are defined 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later. Available in Microsoft Windows XP and later. |
+| **Windows version** | Available in Microsoft Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib (See DbgPrintEx.) |

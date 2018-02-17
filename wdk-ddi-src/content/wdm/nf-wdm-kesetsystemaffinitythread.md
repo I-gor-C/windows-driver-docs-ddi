@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: eb66ed06-356d-4550-8ccf-10854e4ca259
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeSetSystemAffinityThread routine [Kernel-Mode Driver Architecture], wdm/KeSetSystemAffinityThread, KeSetSystemAffinityThread, kernel.kesetsystemaffinitythread, k105_86ff0d26-a53d-4da4-b776-35ed30b950ad.xml
+ms.keywords: k105_86ff0d26-a53d-4da4-b776-35ed30b950ad.xml, KeSetSystemAffinityThread routine [Kernel-Mode Driver Architecture], KeSetSystemAffinityThread, kernel.kesetsystemaffinitythread, wdm/KeSetSystemAffinityThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ If <b>KeSetSystemAffinityThread</b> is called at IRQL &lt;= APC_LEVEL and the ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Use KeSetSystemAffinityThread only on systems before Windows Vista. In Windows Vista and later versions of the Windows operating system, use KeSetSystemAffinityThreadEx instead. Available in Windows 2000 and later versions of Windows. Use KeSetSystemAffinityThread only on systems before Windows Vista. In Windows Vista and later versions of the Windows operating system, use KeSetSystemAffinityThreadEx instead. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Use KeSetSystemAffinityThread only on systems before Windows Vista. In Windows Vista and later versions of the Windows operating system, use KeSetSystemAffinityThreadEx instead.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

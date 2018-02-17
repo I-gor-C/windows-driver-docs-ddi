@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8ac8d3ff-68ec-4e23-bbf9-0a9b7fa13ce3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ObGetObjectSecurity, kernel.obgetobjectsecurity, k107_a0c800de-984a-427f-b308-415f831e5d34.xml, wdm/ObGetObjectSecurity, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.obgetobjectsecurity, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture], wdm/ObGetObjectSecurity, ObGetObjectSecurity, k107_a0c800de-984a-427f-b308-415f831e5d34.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,7 +88,7 @@ If <b>ObGetObjectSecurity</b> returns STATUS_SUCCESS, the caller must save the v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -40,7 +40,7 @@ apiname:
 -	CryptoSessionGetHandle
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -78,6 +78,7 @@ A handle that is created by the driver for the cryptographic session.
 ## Return Value
 
 <b>CryptoSessionGetHandle</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,18 +126,22 @@ The <b>CryptoSessionGetHandle</b> function returns a driver-specified handle for
 
 
 This function allows the driver to define its own handle to its state data for the cryptographic session. This bypasses any handle mapping that may be performed by the Direct3D runtime.
-<div class="alert"><b>Note</b>  Drivers can return the same handle in the <i>pHandle</i> parameter that was passed  in the <i>hCryptoSession</i> parameter.</div><div> </div>
+
+<div class="alert"><b>Note</b>  Drivers can return the same handle in the <i>pHandle</i> parameter that was passed  in the <i>hCryptoSession</i> parameter.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a>
+
+
 
  
 

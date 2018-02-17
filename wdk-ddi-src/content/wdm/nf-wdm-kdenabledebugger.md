@@ -78,7 +78,7 @@ If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system vari
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000 and later versions of Windows. Available in Microsoft Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Microsoft Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |

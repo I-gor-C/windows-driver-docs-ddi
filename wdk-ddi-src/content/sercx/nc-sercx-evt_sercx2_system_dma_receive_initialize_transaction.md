@@ -125,7 +125,7 @@ The <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION</b> function type is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Desktop |
 | **Header** | sercx.h |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |

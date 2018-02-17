@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 9659d669-ccf3-423a-9c81-12232a978d07
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasGetItemType, wiasFncs_634f945c-e60b-4668-b1a7-19b398a86e7c.xml, wiamdef/wiasGetItemType, image.wiasgetitemtype, wiasGetItemType function [Imaging Devices]
+ms.keywords: wiasFncs_634f945c-e60b-4668-b1a7-19b398a86e7c.xml, image.wiasgetitemtype, wiasGetItemType, wiasGetItemType function [Imaging Devices], wiamdef/wiasGetItemType
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: f3abb5e4-6711-47bb-82b5-7ef838d49258
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsFilterGetDevice, stream.ksfiltergetdevice, KsFilterGetDevice function [Streaming Media Devices], ks/KsFilterGetDevice, avfunc_279c1429-d19f-426c-a1e3-8507f97092ae.xml
+ms.keywords: ks/KsFilterGetDevice, avfunc_279c1429-d19f-426c-a1e3-8507f97092ae.xml, KsFilterGetDevice function [Streaming Media Devices], stream.ksfiltergetdevice, KsFilterGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | NtosKrnl.exe |
@@ -81,15 +81,15 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsG
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-
-
-
 <a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>
 
 
 
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
 
 

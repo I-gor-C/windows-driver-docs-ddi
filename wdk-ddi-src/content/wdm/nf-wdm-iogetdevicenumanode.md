@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a36e9d57-c820-43db-a6e0-e935bffca254
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iogetdevicenumanode, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceNumaNode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode
+ms.keywords: wdm/IoGetDeviceNumaNode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, kernel.iogetdevicenumanode, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture], IoGetDeviceNumaNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ If a system does not have a NUMA architecture, the routine writes zero to the lo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

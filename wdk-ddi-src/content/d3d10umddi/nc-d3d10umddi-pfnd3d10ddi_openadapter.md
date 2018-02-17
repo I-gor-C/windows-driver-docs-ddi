@@ -107,7 +107,7 @@ The Direct3D runtime can open multiple graphics adapter objects from a single gr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 

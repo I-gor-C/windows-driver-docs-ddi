@@ -40,7 +40,7 @@ apiname:
 -	*PHWN_CLIENT_GET_STATE
 product: Windows
 targetos: Windows
-req.typenames: "*PHIDD_ATTRIBUTES, HIDD_ATTRIBUTES"
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 
@@ -123,7 +123,7 @@ If <i>OutputBuffer</i> is not large enough to contain all of the settings reques
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | hwnclx.h |
 | **IRQL** | PASSIVE_LEVEL |

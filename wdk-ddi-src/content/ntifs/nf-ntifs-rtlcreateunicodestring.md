@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f101fc66-40a9-4077-b651-cef0a0e247d4
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlCreateUnicodeString routine [Installable File System Drivers], rtlref_8d7cd5ce-a1c9-48a0-86a9-86120954d328.xml, ntifs/RtlCreateUnicodeString, RtlCreateUnicodeString, ifsk.rtlcreateunicodestring
+ms.keywords: ifsk.rtlcreateunicodestring, ntifs/RtlCreateUnicodeString, RtlCreateUnicodeString, RtlCreateUnicodeString routine [Installable File System Drivers], rtlref_8d7cd5ce-a1c9-48a0-86a9-86120954d328.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -121,7 +121,7 @@ The <i>ResourceManagerNotification</i> callback routine is called at IRQL = PASS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Windows version** | Available in Windows Vista and later operating system versions.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **IRQL** | PASSIVE_LEVEL (See Remarks section) |
@@ -132,11 +132,11 @@ The <i>ResourceManagerNotification</i> callback routine is called at IRQL = PASS
 
 
 
-<a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwgetnotificationresourcemanager.md">ZwGetNotificationResourceManager</a>
 
 
 

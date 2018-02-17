@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: BBE92635-5230-454E-A6CA-80198B5B2C57
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: REGISTER_COMPOSITE_DEVICE structure [Buses], _REGISTER_COMPOSITE_DEVICE, usbdlib/REGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE, PREGISTER_COMPOSITE_DEVICE structure pointer [Buses], PREGISTER_COMPOSITE_DEVICE, usbdlib/PREGISTER_COMPOSITE_DEVICE, buses.register_composite_driver
+ms.keywords: usbdlib/REGISTER_COMPOSITE_DEVICE, PREGISTER_COMPOSITE_DEVICE, _REGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE structure [Buses], REGISTER_COMPOSITE_DEVICE, PREGISTER_COMPOSITE_DEVICE structure pointer [Buses], buses.register_composite_driver, usbdlib/PREGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -94,7 +94,7 @@ The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregister
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-composite_device_capabilities_init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
 
 
 
@@ -102,7 +102,7 @@ The version of this structure. <a href="..\usbdlib\nf-usbdlib-usbd_buildregister
 
 
 
-<a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>
+<a href="..\usbdlib\nf-usbdlib-composite_device_capabilities_init.md">COMPOSITE_DEVICE_CAPABILITIES_INIT</a>
 
 
 

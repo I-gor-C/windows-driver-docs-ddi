@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.fwpsallocatenetbufferandnetbufferlist0, FwpsAllocateNetBufferAndNetBufferList0, fwpsk/FwpsAllocateNetBufferAndNetBufferList0, FwpsAllocateNetBufferAndNetBufferList0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_9a88a8c9-a5fb-48a9-bc42-ae30de234468.xml
+ms.keywords: wfp_ref_2_funct_3_fwps_A-B_9a88a8c9-a5fb-48a9-bc42-ae30de234468.xml, FwpsAllocateNetBufferAndNetBufferList0, FwpsAllocateNetBufferAndNetBufferList0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAllocateNetBufferAndNetBufferList0, netvista.fwpsallocatenetbufferandnetbufferlist0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -168,7 +168,7 @@ After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** | Fwpkclnt.lib |
@@ -176,12 +176,8 @@ After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
-   NdisAllocateNetBufferListPool</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
+   NdisAllocateNetBufferAndNetBufferList</a>
 
 
 
@@ -197,8 +193,12 @@ After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md
 
 
 
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
-   NdisAllocateNetBufferAndNetBufferList</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+   NdisAllocateNetBufferListPool</a>
 
 
 

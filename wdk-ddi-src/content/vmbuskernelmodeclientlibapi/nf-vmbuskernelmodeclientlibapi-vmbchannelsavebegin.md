@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: A0946287-3ED2-4DE1-A3D7-46611B25BB93
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelSaveBegin, VmbChannelSaveBegin function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsavebegin, VmbChannelSaveBegin
+ms.keywords: VmbChannelSaveBegin function [Network Drivers Starting with Windows Vista], VmbChannelSaveBegin, netvista.vmbchannelsavebegin, vmbuskernelmodeclientlibapi/VmbChannelSaveBegin
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ all the state is saved, and then calls the <a href="..\vmbuskernelmodeclientliba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

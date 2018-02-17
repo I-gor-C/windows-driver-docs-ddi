@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 274232FF-573A-47B4-B363-2FA7F810BF84
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdfusbtargetdevicecreateurb, WdfUsbTargetDeviceCreateUrb, kmdf.wdfusbtargetdevicecreateurb, wdfusb/WdfUsbTargetDeviceCreateUrb, PFN_WDFUSBTARGETDEVICECREATEURB, WdfUsbTargetDeviceCreateUrb method
+ms.keywords: PFN_WDFUSBTARGETDEVICECREATEURB, wdfusb/WdfUsbTargetDeviceCreateUrb, wdf.wdfusbtargetdevicecreateurb, kmdf.wdfusbtargetdevicecreateurb, WdfUsbTargetDeviceCreateUrb method, WdfUsbTargetDeviceCreateUrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -195,7 +195,7 @@ if (WdfRequestSend(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows Vista Windows Vista |
+| **Windows version** | Windows Vista  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
@@ -209,7 +209,7 @@ if (WdfRequestSend(
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>
 
 
 
@@ -217,7 +217,7 @@ if (WdfRequestSend(
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
 
 
 

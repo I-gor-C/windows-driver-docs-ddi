@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3d4d4124-9c52-42f5-bc31-b924d9c15c36
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: bdaref_7f3a3695-4599-4b16-8a90-4ac171ab1ec0.xml, BdaPropertyGetControllingPinId function [Streaming Media Devices], BdaPropertyGetControllingPinId, bdasup/BdaPropertyGetControllingPinId, stream.bdapropertygetcontrollingpinid
+ms.keywords: BdaPropertyGetControllingPinId, BdaPropertyGetControllingPinId function [Streaming Media Devices], stream.bdapropertygetcontrollingpinid, bdasup/BdaPropertyGetControllingPinId, bdaref_7f3a3695-4599-4b16-8a90-4ac171ab1ec0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ A BDA minidriver calls the <b>BdaPropertyGetControllingPinId</b> function to ret
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |
@@ -92,7 +92,7 @@ A BDA minidriver calls the <b>BdaPropertyGetControllingPinId</b> function to ret
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564303">KSPROPERTY_BDA_CONTROLLING_PIN_ID</a>
 
 
 
@@ -100,7 +100,7 @@ A BDA minidriver calls the <b>BdaPropertyGetControllingPinId</b> function to ret
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564303">KSPROPERTY_BDA_CONTROLLING_PIN_ID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 1a4787da-2813-4a7a-820a-5c078175aba5
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: OnCompletion method, umdf.irequestcallbackrequestcompletion_oncompletion, IRequestCallbackRequestCompletion, UMDFRequestObjectRef_b3ec1892-f32f-4c52-80f6-8699a358ea8d.xml, OnCompletion method, IRequestCallbackRequestCompletion interface, wdf.irequestcallbackrequestcompletion_oncompletion, wudfddi/IRequestCallbackRequestCompletion::OnCompletion, IRequestCallbackRequestCompletion interface, OnCompletion method, IRequestCallbackRequestCompletion::OnCompletion, OnCompletion
+ms.keywords: UMDFRequestObjectRef_b3ec1892-f32f-4c52-80f6-8699a358ea8d.xml, IRequestCallbackRequestCompletion::OnCompletion, OnCompletion, umdf.irequestcallbackrequestcompletion_oncompletion, wudfddi/IRequestCallbackRequestCompletion::OnCompletion, IRequestCallbackRequestCompletion, IRequestCallbackRequestCompletion interface, OnCompletion method, OnCompletion method, OnCompletion method, IRequestCallbackRequestCompletion interface, wdf.irequestcallbackrequestcompletion_oncompletion
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -97,10 +97,6 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcom
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
 
 
@@ -109,11 +105,15 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcom
 
 
 
+<a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a>
+
+
+
 <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 
 
 

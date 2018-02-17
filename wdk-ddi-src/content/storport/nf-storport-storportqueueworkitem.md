@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7B5DD97C-2E3D-4FF7-BF04-36F016B0C6B3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortQueueWorkItem, storage.storportqueueworkitem, StorPortQueueWorkItem routine [Storage Devices], StorPortQueueWorkItem
+ms.keywords: StorPortQueueWorkItem routine [Storage Devices], storport/StorPortQueueWorkItem, storage.storportqueueworkitem, StorPortQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -137,7 +137,7 @@ The work item was successfully queued.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |
@@ -145,7 +145,7 @@ The work item was successfully queued.
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 
 
 
@@ -153,7 +153,7 @@ The work item was successfully queued.
 
 
 
-<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0bc31a97-661c-463d-a043-9f86f63bb4b4
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: bdaref_492b1847-e4b7-4dfd-a8b1-c6c17fc6aff8.xml, BdaMethodCreatePin, BdaMethodCreatePin function [Streaming Media Devices], stream.bdamethodcreatepin, bdasup/BdaMethodCreatePin
+ms.keywords: BdaMethodCreatePin function [Streaming Media Devices], BdaMethodCreatePin, stream.bdamethodcreatepin, bdaref_492b1847-e4b7-4dfd-a8b1-c6c17fc6aff8.xml, bdasup/BdaMethodCreatePin
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If a BDA minidriver must create a pin without relying on the network provider, t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |
@@ -94,11 +94,11 @@ If a BDA minidriver must create a pin without relying on the network provider, t
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563411">KSMETHOD_BDA_CREATE_PIN_FACTORY</a>
 
 
 
-<a href="..\bdasup\nf-bdasup-bdamethoddeletepin.md">BdaMethodDeletePin</a>
+<a href="..\bdasup\nf-bdasup-bdacreatepin.md">BdaCreatePin</a>
 
 
 
@@ -110,11 +110,11 @@ If a BDA minidriver must create a pin without relying on the network provider, t
 
 
 
-<a href="..\bdasup\nf-bdasup-bdacreatepin.md">BdaCreatePin</a>
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563411">KSMETHOD_BDA_CREATE_PIN_FACTORY</a>
+<a href="..\bdasup\nf-bdasup-bdamethoddeletepin.md">BdaMethodDeletePin</a>
 
 
 

@@ -103,6 +103,7 @@ A pointer to the ID for the type of <i>Value</i>.
 `TypeFlags`
 
 A parameter that you can use to return one of the following flags: 
+
 <table>
 <tr>
 <th>Value</th>
@@ -134,6 +135,7 @@ The value that is pointed to by <i>Value</i> is an address for a pointer to data
 ## Return Value
 
 <b>DebugExtensionProvideValue</b> might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -150,7 +152,8 @@ The function was successfully completed.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return error values. For more information about possible return values, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -168,15 +171,25 @@ The name that the <i>Name</i> parameter specifies must start with <b>$$</b> and 
 
 ## See Also
 
+<i>KnownStructOutput</i>
+
+
+
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
 
-<i>DebugExtensionNotify</i>
+
+
+<i>DebugExtensionUninitialize</i>
+
+
 
 <i>DebugExtensionQueryValueNames</i>
 
-<i>KnownStructOutput</i>
 
-<i>DebugExtensionUninitialize</i>
+
+<i>DebugExtensionNotify</i>
+
+
 
  
 

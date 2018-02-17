@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: E1EAA11F-B32F-4551-9788-49BC8A13BB19
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.udecxurbcompletewithntstatus, UdecxUrbCompleteWithNtStatus function [Buses], udecxurb/UdecxUrbCompleteWithNtStatus, UdecxUrbCompleteWithNtStatus
+ms.keywords: buses.udecxurbcompletewithntstatus, UdecxUrbCompleteWithNtStatus, udecxurb/UdecxUrbCompleteWithNtStatus, UdecxUrbCompleteWithNtStatus function [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxurb.h (include Udecx.h) |
@@ -86,11 +86,11 @@ This function does not return a value.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

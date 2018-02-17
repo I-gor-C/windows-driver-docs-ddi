@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 34d1b945-329c-47ff-913d-5576eef665b8
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltReleasePushLock routine [Installable File System Drivers], ifsk.fltreleasepushlock, FltApiRef_p_to_z_31e736a4-7790-443f-a6bf-e43d3823ad27.xml, FltReleasePushLock, fltkernel/FltReleasePushLock
+ms.keywords: FltReleasePushLock, FltReleasePushLock routine [Installable File System Drivers], FltApiRef_p_to_z_31e736a4-7790-443f-a6bf-e43d3823ad27.xml, fltkernel/FltReleasePushLock, ifsk.fltreleasepushlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -85,7 +85,7 @@ To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later. This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later. |
+| **Windows version** | This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | FltMgr.lib |
@@ -98,7 +98,7 @@ To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
 
 
 
@@ -106,11 +106,11 @@ To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock
 
 
 
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
+
+
+
 <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock.md">FltDeletePushLock</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
 
 
 

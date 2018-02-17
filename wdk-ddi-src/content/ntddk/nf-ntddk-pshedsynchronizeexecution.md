@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 299fd2fc-d7f4-4176-addd-d45d010b1056
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: whea.pshedsynchronizeexecution, whearef_7a6363f4-466d-498a-97c4-b5f7937005dd.xml, PshedSynchronizeExecution, PshedSynchronizeExecution function [WHEA Drivers and Applications], ntddk/PshedSynchronizeExecution
+ms.keywords: PshedSynchronizeExecution function [WHEA Drivers and Applications], ntddk/PshedSynchronizeExecution, whea.pshedsynchronizeexecution, whearef_7a6363f4-466d-498a-97c4-b5f7937005dd.xml, PshedSynchronizeExecution
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -122,7 +122,7 @@ Callers of the <b>PshedSynchronizeExecution</b> function must be running at IRQL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | Pshed.lib |

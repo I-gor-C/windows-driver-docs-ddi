@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: eb7c2318-2658-46ee-bd34-477b29e1b435
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_SetNotificationFilterState, netvista.ril_setnotificationfilterstate, RIL_SetNotificationFilterState method [Network Drivers Starting with Windows Vista], RIL_SetNotificationFilterState
+ms.keywords: RIL_SetNotificationFilterState, RIL_SetNotificationFilterState method [Network Drivers Starting with Windows Vista], rilapi/RIL_SetNotificationFilterState, netvista.ril_setnotificationfilterstate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

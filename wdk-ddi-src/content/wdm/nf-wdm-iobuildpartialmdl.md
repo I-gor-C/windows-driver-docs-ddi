@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 26d88928-798f-46ee-9805-3b7da2056e2e
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_8c9451f6-614c-45a2-b95a-4f0935588d7f.xml, IoBuildPartialMdl routine [Kernel-Mode Driver Architecture], IoBuildPartialMdl, kernel.iobuildpartialmdl, wdm/IoBuildPartialMdl
+ms.keywords: kernel.iobuildpartialmdl, wdm/IoBuildPartialMdl, k104_8c9451f6-614c-45a2-b95a-4f0935588d7f.xml, IoBuildPartialMdl, IoBuildPartialMdl routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,7 +95,7 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -105,11 +105,11 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
-
-
-
 <a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 
 
@@ -121,11 +121,11 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 
 
 
+<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-
-
-
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 
 

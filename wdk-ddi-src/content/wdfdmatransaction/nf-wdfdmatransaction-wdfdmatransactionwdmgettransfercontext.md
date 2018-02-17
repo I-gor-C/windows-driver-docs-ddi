@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: EB156381-FC0E-40A3-A4AF-341AE70B97FF
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext, kmdf.wdfdmatransactionwdmgettransfercontext, PFN_WDFDMATRANSACTIONWDMGETTRANSFERCONTEXT, wdf.wdfdmatransactionwdmgettransfercontext, WdfDmaTransactionWdmGetTransferContext method, WdfDmaTransactionWdmGetTransferContext
+ms.keywords: wdf.wdfdmatransactionwdmgettransfercontext, WdfDmaTransactionWdmGetTransferContext method, wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext, WdfDmaTransactionWdmGetTransferContext, PFN_WDFDMATRANSACTIONWDMGETTRANSFERCONTEXT, kmdf.wdfdmatransactionwdmgettransfercontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,7 +101,7 @@ You must initialize the DMA transaction before calling <b>WdfDmaTransactionWdmGe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |

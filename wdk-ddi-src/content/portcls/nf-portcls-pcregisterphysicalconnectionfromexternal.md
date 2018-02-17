@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 636cf517-5ab0-4709-8026-b51425c81118
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml, portcls/PcRegisterPhysicalConnectionFromExternal, audio.pcregisterphysicalconnectionfromexternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices], PcRegisterPhysicalConnectionFromExternal
+ms.keywords: PcRegisterPhysicalConnectionFromExternal, audio.pcregisterphysicalconnectionfromexternal, portcls/PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices], audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,7 +102,7 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |
@@ -110,7 +110,7 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iport.md">IPort</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 
 
@@ -118,11 +118,11 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
-
-
 <a href="..\portcls\nf-portcls-pcregisterphysicalconnectiontoexternal.md">PcRegisterPhysicalConnectionToExternal</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537027">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionFromExternal</a>
 
 
 
@@ -130,7 +130,7 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537027">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionFromExternal</a>
+<a href="..\portcls\nn-portcls-iport.md">IPort</a>
 
 
 

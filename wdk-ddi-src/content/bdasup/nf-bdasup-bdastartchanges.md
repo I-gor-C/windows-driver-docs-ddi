@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: ee54b382-7b69-4d8d-8728-fe2bff7884cf
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: BdaStartChanges function [Streaming Media Devices], stream.bdastartchanges, bdasup/BdaStartChanges, bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml, BdaStartChanges
+ms.keywords: BdaStartChanges, bdasup/BdaStartChanges, stream.bdastartchanges, BdaStartChanges function [Streaming Media Devices], bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ Calling the <b>BdaStartChanges</b> function causes any previously requested topo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |
@@ -85,6 +85,10 @@ Calling the <b>BdaStartChanges</b> function causes any previously requested topo
 ## See Also
 
 <a href="..\bdasup\nf-bdasup-bdacommitchanges.md">BdaCommitChanges</a>
+
+
+
+<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
 
 
@@ -97,10 +101,6 @@ Calling the <b>BdaStartChanges</b> function causes any previously requested topo
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
-
-
-
-<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
 
 

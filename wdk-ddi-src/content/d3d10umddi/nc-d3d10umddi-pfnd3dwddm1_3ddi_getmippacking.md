@@ -112,7 +112,7 @@ in the packing overall), and thus loses some freedom.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 

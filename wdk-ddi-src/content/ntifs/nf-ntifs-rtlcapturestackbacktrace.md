@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: e4ad1eac-1788-4dfe-9444-f40e0de156c4
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlCaptureStackBackTrace routine [Installable File System Drivers], RtlCaptureStackBackTrace, ifsk.rtlcapturestackbacktrace, ntifs/RtlCaptureStackBackTrace, rtlref_c329ad74-ebb1-478d-a0d2-fd2ae2c8da2a.xml
+ms.keywords: RtlCaptureStackBackTrace routine [Installable File System Drivers], ntifs/RtlCaptureStackBackTrace, RtlCaptureStackBackTrace, ifsk.rtlcapturestackbacktrace, rtlref_c329ad74-ebb1-478d-a0d2-fd2ae2c8da2a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,7 +90,7 @@ The number of captured frames.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in starting with Windows XP. Available in starting with Windows XP. |
+| **Windows version** | Available in starting with Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** | NtosKrnl.lib; OneCoreUAP.lib on Windows 10 |

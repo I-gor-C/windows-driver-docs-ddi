@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 70b9b8b4-8adc-4628-a37b-b513ecaca9ca
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportclearevent, video/VideoPortClearEvent, VideoPort_Functions_4b6d9a3c-ee76-4c45-888f-4ef37f802e6b.xml, VideoPortClearEvent function [Display Devices], VideoPortClearEvent
+ms.keywords: VideoPortClearEvent function [Display Devices], video/VideoPortClearEvent, display.videoportclearevent, VideoPort_Functions_4b6d9a3c-ee76-4c45-888f-4ef37f802e6b.xml, VideoPortClearEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ To set the state of an event object to the signaled state, use <a href="..\video
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

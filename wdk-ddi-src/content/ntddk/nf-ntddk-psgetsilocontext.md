@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 08C795F2-64F9-4EFE-AA25-3B2FCB31D062
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PsGetSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsGetSiloContext, PsGetSiloContext, kernel.psgetsilocontext
+ms.keywords: ntddk/PsGetSiloContext, PsGetSiloContext routine [Kernel-Mode Driver Architecture], kernel.psgetsilocontext, PsGetSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -124,7 +124,7 @@ A context slot may go empty if the silo is being terminated by either having no 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.exe |

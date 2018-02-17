@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 3f1cd0bf-13ce-49bc-a48e-dc3d89f3c7d7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaDrvItem::AddItemToFolder, AddItemToFolder, DrvItem_7979b3e5-dfd3-41bb-ae55-266cbb74866c.xml, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::AddItemToFolder, IWiaDrvItem interface [Imaging Devices], AddItemToFolder method, image.iwiadrvitem_additemtofolder, AddItemToFolder method [Imaging Devices], AddItemToFolder method [Imaging Devices], IWiaDrvItem interface
+ms.keywords: AddItemToFolder, AddItemToFolder method [Imaging Devices], DrvItem_7979b3e5-dfd3-41bb-ae55-266cbb74866c.xml, IWiaDrvItem::AddItemToFolder, image.iwiadrvitem_additemtofolder, AddItemToFolder method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::AddItemToFolder, IWiaDrvItem, IWiaDrvItem interface [Imaging Devices], AddItemToFolder method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -74,18 +74,18 @@ Minidrivers typically use the AddItemToFolder method to add an item to a parent 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/f800427e-d6b6-4f4c-aee7-4b2b0d0aa0c4">RemoveItemFromFolder</a>
-
-
-
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+
+
+
+<a href="https://msdn.microsoft.com/f800427e-d6b6-4f4c-aee7-4b2b0d0aa0c4">RemoveItemFromFolder</a>
 
 
 

@@ -73,6 +73,7 @@ NTSTATUS DxgkddiSetpointershape(
 ## Return Value
 
 <i>DxgkDdiSetPointerShape</i> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -115,7 +116,7 @@ If you run a <i>DxgkDdiSetPointerShape</i> thread simultaneously with another di
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | PASSIVE_LEVEL |
@@ -124,9 +125,15 @@ If you run a <i>DxgkDdiSetPointerShape</i> thread simultaneously with another di
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setpointershape.md">DXGKARG_SETPOINTERSHAPE</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpointerposition.md">DxgkDdiSetPointerPosition</a>
+
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
 
  
 

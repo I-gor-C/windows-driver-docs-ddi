@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e8d5fea6-d0fd-4dc4-b8ec-10c72381285b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmallocatemappingaddress, k106_3ef2863e-218c-4546-a934-152cbd0133e9.xml, MmAllocateMappingAddress routine [Kernel-Mode Driver Architecture], MmAllocateMappingAddress, wdm/MmAllocateMappingAddress
+ms.keywords: wdm/MmAllocateMappingAddress, k106_3ef2863e-218c-4546-a934-152cbd0133e9.xml, MmAllocateMappingAddress routine [Kernel-Mode Driver Architecture], kernel.mmallocatemappingaddress, MmAllocateMappingAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ Specifies a four-character tag used to identify the buffer. Use a distinct <i>Po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -88,7 +88,7 @@ Specifies a four-character tag used to identify the buffer. Use a distinct <i>Po
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
+<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
 
 
 
@@ -96,7 +96,7 @@ Specifies a four-character tag used to identify the buffer. Use a distinct <i>Po
 
 
 
-<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
+<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
 
 
 

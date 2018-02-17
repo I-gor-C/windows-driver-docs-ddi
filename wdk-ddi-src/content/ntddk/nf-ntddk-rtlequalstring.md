@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f8244276-0cf6-4315-9f4a-85890194dad8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlEqualString routine [Kernel-Mode Driver Architecture], ntddk/RtlEqualString, kernel.rtlequalstring, k109_67ef861f-4f4b-4e98-be53-8962b02df08e.xml, RtlEqualString
+ms.keywords: kernel.rtlequalstring, RtlEqualString, ntddk/RtlEqualString, k109_67ef861f-4f4b-4e98-be53-8962b02df08e.xml, RtlEqualString routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

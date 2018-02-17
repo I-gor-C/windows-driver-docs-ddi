@@ -88,16 +88,12 @@ Zero means there were no completions in the CQ.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
-
-
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
 
@@ -108,6 +104,10 @@ Zero means there were no completions in the CQ.
 
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_cq_dispatch.md">NDK_CQ_DISPATCH</a>
+
+
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
 
 
 

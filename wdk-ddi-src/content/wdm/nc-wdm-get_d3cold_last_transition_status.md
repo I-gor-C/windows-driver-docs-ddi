@@ -40,7 +40,7 @@ apiname:
 -	GetLastTransitionStatus
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -69,11 +69,13 @@ A pointer to interface-specific context information. The caller sets this parame
 `LastTransitionStatus`
 
 A pointer to a variable into which the routine writes one of the following <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
+
 <ul>
 <li><b>LastDStateTransitionStatusUnknown</b></li>
 <li><b>LastDStateTransitionD3hot</b></li>
 <li><b>LastDStateTransitionD3cold</b></li>
-</ul> The <b>LastDStateTransitionD3cold</b> value indicates that the most recent transition to D3hot was followed by a transition to D3cold. For more information, see Remarks.
+</ul>
+ The <b>LastDStateTransitionD3cold</b> value indicates that the most recent transition to D3hot was followed by a transition to D3cold. For more information, see Remarks.
 
 
 ## Return Value
@@ -89,16 +91,20 @@ For more information, see <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
+<a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>
+
+
+
 <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
 
-<a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>
+
 
  
 

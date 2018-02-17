@@ -86,6 +86,8 @@ Specifies the status of an operation as a <a href="..\d3d12umddi\ne-d3d12umddi-d
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_status_0020.md">D3D12DDI_VIDEO_DECODE_STATUS</a>
 
+
+
  
 
  

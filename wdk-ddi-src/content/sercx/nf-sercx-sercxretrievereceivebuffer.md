@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 4EC1935D-038C-418C-AB28-A49085877B4A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCxRetrieveReceiveBuffer method [Serial Ports], SerCxRetrieveReceiveBuffer, 1/SerCxRetrieveReceiveBuffer, serports.sercxretrievereceivebuffer
+ms.keywords: SerCxRetrieveReceiveBuffer method [Serial Ports], serports.sercxretrievereceivebuffer, 1/SerCxRetrieveReceiveBuffer, SerCxRetrieveReceiveBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -124,7 +124,7 @@ The serial controller driver calls this method to acquire a buffer to contain in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
 | **Library** | NtosKrnl.exe |
@@ -132,11 +132,11 @@ The serial controller driver calls this method to acquire a buffer to contain in
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a>
-
-
-
 <a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a>
+
+
+
+<a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a>
 
 
 

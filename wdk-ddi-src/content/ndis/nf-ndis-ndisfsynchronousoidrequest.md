@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 01B625EB-AB6D-496F-95F2-22845460324A
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisFSynchronousOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisFSynchronousOidRequest, NdisFSynchronousOidRequest, netvista.ndisfsynchronousoidrequest
+ms.keywords: ndis/NdisFSynchronousOidRequest, NdisFSynchronousOidRequest, netvista.ndisfsynchronousoidrequest, NdisFSynchronousOidRequest function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |

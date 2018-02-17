@@ -40,7 +40,7 @@ apiname:
 -	pfnVideoProcessorGetOutputExtension
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -88,6 +88,7 @@ HRESULT Pfnd3d111DdiVideoprocessorgetoutputextension(
 ## Return Value
 
 <b>VideoProcessorGetOutputExtension</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -149,13 +150,15 @@ The Microsoft Direct3D runtime does not validate any parameter data before it ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
+
+
 
  
 

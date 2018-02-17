@@ -133,7 +133,7 @@ For more information about using this routine, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Windows version** | Available starting with Windows 10.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -141,10 +141,6 @@ For more information about using this routine, see <a href="https://msdn.microso
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
-
-
 
 <a href="..\wdm\nf-wdm-mmunmapiospace.md">MmUnmapIoSpace</a>
 
@@ -155,6 +151,10 @@ For more information about using this routine, see <a href="https://msdn.microso
 
 
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
 
 
 

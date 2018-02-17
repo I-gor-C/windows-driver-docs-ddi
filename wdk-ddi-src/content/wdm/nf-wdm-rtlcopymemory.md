@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d204eeb4-e109-4a86-986f-0fccdda3f8f8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlCopyMemory, RtlCopyMemory routine [Kernel-Mode Driver Architecture], k109_f4bb1fef-aae6-4086-b95a-ae4dc220c04b.xml, kernel.rtlcopymemory, RtlCopyBytes, wdm/RtlCopyMemory
+ms.keywords: k109_f4bb1fef-aae6-4086-b95a-ae4dc220c04b.xml, RtlCopyMemory routine [Kernel-Mode Driver Architecture], RtlCopyMemory, RtlCopyBytes, wdm/RtlCopyMemory, kernel.rtlcopymemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -90,7 +90,7 @@ Callers of <b>RtlCopyMemory</b> can be running at any IRQL if the source and des
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

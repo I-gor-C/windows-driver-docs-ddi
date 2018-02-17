@@ -117,18 +117,14 @@ The Windows kernel calls into the PSHED to clear an error record from the system
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_write_error_record.md">WriteErrorRecord</a>
-
-
-
-<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
+<a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a>
 
 
 
@@ -136,11 +132,15 @@ The Windows kernel calls into the PSHED to clear an error record from the system
 
 
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
 
 
 
 <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
+
+
+<a href="..\ntddk\nc-ntddk-pshed_pi_write_error_record.md">WriteErrorRecord</a>
 
 
 

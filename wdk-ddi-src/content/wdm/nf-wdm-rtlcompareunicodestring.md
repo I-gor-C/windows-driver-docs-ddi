@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 82567434-be54-4436-a26e-9a89a532addf
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/RtlCompareUnicodeString, k109_ddeef320-7510-446b-af6f-756c3999bec1.xml, RtlCompareUnicodeString, RtlCompareUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlcompareunicodestring
+ms.keywords: kernel.rtlcompareunicodestring, wdm/RtlCompareUnicodeString, RtlCompareUnicodeString, RtlCompareUnicodeString routine [Kernel-Mode Driver Architecture], k109_ddeef320-7510-446b-af6f-756c3999bec1.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -121,7 +121,7 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

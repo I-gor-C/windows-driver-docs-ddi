@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 62BE93C6-8E1C-4430-BB07-C25E8D4076B0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.stor_device_capabilities, storport/STOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES structure [Storage Devices], _STOR_DEVICE_CAPABILITIES, storport/PSTOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES, *PSTOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES structure pointer [Storage Devices], STOR_DEVICE_CAPABILITIES
+ms.keywords: storport/STOR_DEVICE_CAPABILITIES, storage.stor_device_capabilities, STOR_DEVICE_CAPABILITIES, *PSTOR_DEVICE_CAPABILITIES, storport/PSTOR_DEVICE_CAPABILITIES, _STOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES structure [Storage Devices], PSTOR_DEVICE_CAPABILITIES structure pointer [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

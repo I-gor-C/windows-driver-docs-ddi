@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 19180ab8-7ac6-45cb-8f17-b16368bbb32b
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlRealSuccessor, RtlRealSuccessor routine [Installable File System Drivers], ifsk.rtlrealsuccessor, ntddk/RtlRealSuccessor, rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml
+ms.keywords: ntddk/RtlRealSuccessor, RtlRealSuccessor routine [Installable File System Drivers], ifsk.rtlrealsuccessor, RtlRealSuccessor, rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,7 +87,7 @@ Callers of <b>RtlRealSuccessor</b> must be running at IRQL &lt;= DISPATCH_LEVEL 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

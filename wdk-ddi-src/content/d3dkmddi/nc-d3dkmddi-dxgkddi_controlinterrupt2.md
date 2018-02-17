@@ -108,7 +108,7 @@ The interrupt type was successfully enabled or disabled on the graphics hardware
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10 and later versions of the Windows operating systems. Available in Windows 10 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 10 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 | **IRQL** | PASSIVE_LEVEL |

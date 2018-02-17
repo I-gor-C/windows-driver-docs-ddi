@@ -75,7 +75,7 @@ A pointer to a caller-allocated variable that receives the session ID for the pr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later. This routine is available on Microsoft Windows Server 2003 SP1 and later. |
+| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

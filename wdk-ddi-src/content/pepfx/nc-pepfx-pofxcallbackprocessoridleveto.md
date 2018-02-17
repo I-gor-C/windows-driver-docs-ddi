@@ -40,7 +40,7 @@ apiname:
 -	ProcessorIdleVeto
 product: Windows
 targetos: Windows
-req.typenames: "*PVPCI_PNP_ID, VPCI_PNP_ID"
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 
@@ -93,13 +93,15 @@ This routine is implemented by the power management framework (PoFx) and is call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Windows version** | Supported starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | pepfx.h |
 
 ## See Also
 
 <a href="..\pepfx\ns-pepfx-_pep_kernel_information_struct_v3.md">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+
+
 
  
 

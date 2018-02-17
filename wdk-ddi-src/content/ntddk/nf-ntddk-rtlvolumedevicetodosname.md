@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e25db70f-04bf-4fb1-8ff5-2beb4c825797
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture], RtlVolumeDeviceToDosName, k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, kernel.rtlvolumedevicetodosname, ntddk/RtlVolumeDeviceToDosName
+ms.keywords: k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, ntddk/RtlVolumeDeviceToDosName, kernel.rtlvolumedevicetodosname, RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture], RtlVolumeDeviceToDosName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,7 +82,7 @@ Drivers that must work on older NT-based operating systems may use this routine.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Obsolete for Microsoft Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead. Obsolete for Microsoft Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead. |
+| **Windows version** | Obsolete for Microsoft Windows XP and later versions of Windows. Use IoVolumeDeviceToDosName instead.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 810faf49-faa9-45f2-af94-af576f4c1075
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: GetFullItemName, DrvItem_1b166476-d17a-4953-9c73-6e3d7c9cd0f9.xml, image.iwiadrvitem_getfullitemname, IWiaDrvItem::GetFullItemName, GetFullItemName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::GetFullItemName, GetFullItemName method [Imaging Devices], IWiaDrvItem interface [Imaging Devices], GetFullItemName method
+ms.keywords: IWiaDrvItem interface [Imaging Devices], GetFullItemName method, image.iwiadrvitem_getfullitemname, GetFullItemName, GetFullItemName method [Imaging Devices], IWiaDrvItem::GetFullItemName, GetFullItemName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem, DrvItem_1b166476-d17a-4953-9c73-6e3d7c9cd0f9.xml, wiamindr_lh/IWiaDrvItem::GetFullItemName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -76,18 +76,18 @@ The name returned in <i>pbstrFullItemName </i>is the name associated with the it
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
-
-
-
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
 
 
 

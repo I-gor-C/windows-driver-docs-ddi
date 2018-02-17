@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 5D108897-93D9-4C67-9138-86C608AD8C4C
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: NfcCxHardwareEvent, nfccx/NfcCxHardwareEvent, nfpdrivers._nfccxhardwareevent, NfcCxHardwareEvent method [Near-Field Proximity Drivers]
+ms.keywords: nfccx/NfcCxHardwareEvent, NfcCxHardwareEvent, nfpdrivers._nfccxhardwareevent, NfcCxHardwareEvent method [Near-Field Proximity Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Windows |
 | **Header** | nfccx.h (include Ncidef.h) |
 | **Library** | Nfccxstub.lib |

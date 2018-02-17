@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 61c8fdbf-b003-4caa-af13-ba6f1e22400c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDICB_RECLAIMALLOCATIONS, _D3DDDICB_RECLAIMALLOCATIONS, display.d3dddicb_reclaimallocations, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices], d3dumddi/D3DDDICB_RECLAIMALLOCATIONS
+ms.keywords: D3DDDICB_RECLAIMALLOCATIONS, _D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices], display.d3dddicb_reclaimallocations, d3dumddi/D3DDDICB_RECLAIMALLOCATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -97,15 +97,15 @@ If <b>pResources</b> is not <b>NULL</b>, the <b>HandleList</b> member must be <b
 
 ## See Also
 
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
+
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 
 
 

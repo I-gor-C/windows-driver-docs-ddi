@@ -119,7 +119,7 @@ Except for those situations in which the application incorrectly specifies an ou
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system. ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system. |
+| **Windows version** | ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

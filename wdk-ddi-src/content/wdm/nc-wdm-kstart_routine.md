@@ -74,7 +74,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
+| **Windows version** | Supported starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **IRQL** | Called at PASSIVE_LEVEL. |

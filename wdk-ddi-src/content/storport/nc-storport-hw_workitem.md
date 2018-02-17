@@ -40,7 +40,7 @@ apiname:
 -	HwStorWorkItem
 product: Windows
 targetos: Windows
-req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.typenames: STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 req.product: Windows 10 or later.
 ---
 
@@ -87,6 +87,7 @@ If needed, a work item can be queued within <b>HwStorWorkItem</b>. Call <a href=
 No locks are acquired by Storport when the callback is invoked. The miniport is responsible for any synchronization required in the callback routine.
 
 The name <i>HwStorWorkItem</i> is just a placeholder for the miniport function that is pointed to by the <i>Callback</i> parameter of  <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -107,18 +108,24 @@ HW_WORKITEM (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
-
 <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 
+
+
 <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
+
+
+
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7cc94f22-37af-420c-824e-ca9c8a4b42be
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlunicodestringcopy, RtlUnicodeStringCopy function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCopy, RtlUnicodeStringCopy, safestrings_d5885cd9-d024-4757-8458-14a787b11a9f.xml
+ms.keywords: safestrings_d5885cd9-d024-4757-8458-14a787b11a9f.xml, kernel.rtlunicodestringcopy, RtlUnicodeStringCopy function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCopy, RtlUnicodeStringCopy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -136,7 +136,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 82B3B3BD-CEAC-427E-A89E-84CBE85BDBE7
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: udecxusbdevice/UdecxUsbDeviceSignalFunctionWake, buses.udecxusbdevicesignalfunctionwake, UdecxUsbDeviceSignalFunctionWake function [Buses], UdecxUsbDeviceSignalFunctionWake
+ms.keywords: UdecxUsbDeviceSignalFunctionWake, udecxusbdevice/UdecxUsbDeviceSignalFunctionWake, buses.udecxusbdevicesignalfunctionwake, UdecxUsbDeviceSignalFunctionWake function [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ If the device is in a low power state, or going to such a state, this call also 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
@@ -92,7 +92,7 @@ If the device is in a low power state, or going to such a state, this call also 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 
 
@@ -100,7 +100,7 @@ If the device is in a low power state, or going to such a state, this call also 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

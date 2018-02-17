@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: HidP_GetCollectionDescription function [Human Input Devices], HidP_GetCollectionDescription, hidpddi/HidP_GetCollectionDescription, hid.hidp_getcollectiondescription
+ms.keywords: hid.hidp_getcollectiondescription, hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -190,7 +190,7 @@ For a raw report descriptor that is specified by the <i>ReportDesc</i> parameter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 | **Library** | Hidparse.lib |

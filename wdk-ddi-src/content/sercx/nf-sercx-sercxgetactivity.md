@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 804D53F2-0F92-4262-A4C8-D171A5E69BFC
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCxGetActivity, SerCxGetActivity method [Serial Ports], 1/SerCxGetActivity, serports.sercxgetactivity
+ms.keywords: SerCxGetActivity, 1/SerCxGetActivity, serports.sercxgetactivity, SerCxGetActivity method [Serial Ports]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,7 @@ A lock protects the <b>SERCX_ACTIVITY</b> structure that is updated by the <b>Se
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Windows version** | Available starting with  Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
 | **Library** | NtosKrnl.exe |
@@ -97,7 +97,7 @@ A lock protects the <b>SERCX_ACTIVITY</b> structure that is updated by the <b>Se
 
 
 
-<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
 
 
 
@@ -105,7 +105,7 @@ A lock protects the <b>SERCX_ACTIVITY</b> structure that is updated by the <b>Se
 
 
 
-<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 
 
 

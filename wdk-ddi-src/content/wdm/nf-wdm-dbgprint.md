@@ -82,7 +82,7 @@ There is no upper limit to the size of the <i>Format</i> string or the number of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000 and later. Available in Microsoft Windows 2000 and later. |
+| **Windows version** | Available in Microsoft Windows 2000 and later.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a6c9a7fa-8fef-4d6d-aab5-e712c49c0144
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/KeGetProcessorNumberFromIndex, k105_c0b567bd-4436-4f6a-87a2-86d8b165e2dc.xml, KeGetProcessorNumberFromIndex routine [Kernel-Mode Driver Architecture], KeGetProcessorNumberFromIndex, kernel.kegetprocessornumberfromindex
+ms.keywords: kernel.kegetprocessornumberfromindex, KeGetProcessorNumberFromIndex, KeGetProcessorNumberFromIndex routine [Kernel-Mode Driver Architecture], k105_c0b567bd-4436-4f6a-87a2-86d8b165e2dc.xml, wdm/KeGetProcessorNumberFromIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -133,7 +133,7 @@ The constant value ALL_PROCESSOR_GROUPS is defined in Winnt.h and Ntdef.h.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Windows version** | Available in Windows 7 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h, Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -142,7 +142,7 @@ The constant value ALL_PROCESSOR_GROUPS is defined in Winnt.h and Ntdef.h.
 
 ## See Also
 
-<a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
+<a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
 
 
 
@@ -150,7 +150,7 @@ The constant value ALL_PROCESSOR_GROUPS is defined in Winnt.h and Ntdef.h.
 
 
 
-<a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
+<a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
 
 
 

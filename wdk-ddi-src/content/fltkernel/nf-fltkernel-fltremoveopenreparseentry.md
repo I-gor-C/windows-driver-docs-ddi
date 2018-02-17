@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: FD8C3A32-E578-47E9-9B2A-E1809D62F7B8
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltAddOpenReparseEntry, FltRemoveOpenReparseEntry, ifsk.fltremoveopenreparseentry, FltAddOpenReparseEntry routine [Installable File System Drivers], fltkernel/FltAddOpenReparseEntry
+ms.keywords: FltAddOpenReparseEntry routine [Installable File System Drivers], FltAddOpenReparseEntry, fltkernel/FltAddOpenReparseEntry, FltRemoveOpenReparseEntry, ifsk.fltremoveopenreparseentry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,7 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | fltkernel.h |
 | **Library** | NtosKrnl.exe |

@@ -80,18 +80,18 @@ The <i>PowerOnDumpDeviceCallback</i> routine is called at IRQL = HIGH_LEVEL with
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Windows version** | Supported starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | pepfx.h |
 | **IRQL** | Called at HIGH_LEVEL. |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
-
-
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_CRASHDUMP_DEVICE</a>
+
+
+
+<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
 
 
 

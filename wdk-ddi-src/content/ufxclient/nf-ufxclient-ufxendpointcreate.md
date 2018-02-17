@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 060CADB7-AAC9-401A-9198-FC306CE74A34
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UfxEndpointCreate method [Buses], buses.ufxendpointcreate, ufxclient/UfxEndpointCreate, UfxEndpointCreate
+ms.keywords: buses.ufxendpointcreate, ufxclient/UfxEndpointCreate, UfxEndpointCreate method [Buses], UfxEndpointCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -264,7 +264,7 @@ End:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
 | **Library** | NtosKrnl.exe |

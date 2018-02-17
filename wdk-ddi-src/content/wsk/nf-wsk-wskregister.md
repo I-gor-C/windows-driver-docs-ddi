@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 340933ad-1a71-421c-b1e1-360aa9c441fd
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WskRegister function [Network Drivers Starting with Windows Vista], wsk/WskRegister, WskRegister, netvista.wskregister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml
+ms.keywords: netvista.wskregister, WskRegister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml, WskRegister function [Network Drivers Starting with Windows Vista], wsk/WskRegister
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -142,7 +142,7 @@ For more information about attaching a WSK application to the WSK subsystem, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
 | **Library** | Netio.lib |
@@ -154,11 +154,11 @@ For more information about attaching a WSK application to the WSK subsystem, see
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
-
-
-
 <a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
+
+
+
+<a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
 
 
 

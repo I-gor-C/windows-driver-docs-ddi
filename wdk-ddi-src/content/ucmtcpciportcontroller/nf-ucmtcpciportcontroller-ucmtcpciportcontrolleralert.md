@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 38700667-d872-4c08-b846-236e94318dba
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcmTcpciPortControllerAlert, UcmTcpciPortControllerAlert method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlert, buses.ucmtcpciportcontrolleralert
+ms.keywords: UcmTcpciPortControllerAlert, buses.ucmtcpciportcontrolleralert, UcmTcpciPortControllerAlert method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlert
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,7 +92,7 @@ When handling alerts, UcmTcpciCx may send hardware requests to the client driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** | NtosKrnl.exe |

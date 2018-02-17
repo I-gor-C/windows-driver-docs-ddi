@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 55b2d603-f3ac-4a7a-91f5-83d908d1e14b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, VideoPortRegisterBugcheckCallback function [Display Devices], VideoPortRegisterBugcheckCallback, video/VideoPortRegisterBugcheckCallback, display.videoportregisterbugcheckcallback
+ms.keywords: VideoPortRegisterBugcheckCallback, video/VideoPortRegisterBugcheckCallback, VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, display.videoportregisterbugcheckcallback, VideoPortRegisterBugcheckCallback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ For more information, see <a href="https://msdn.microsoft.com/181fd4f2-feed-4759
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP SP1 and later versions of the Windows operating systems. Available in Windows XP SP1 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP SP1 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

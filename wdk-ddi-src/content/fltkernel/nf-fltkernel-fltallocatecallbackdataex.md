@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f03851a4-e1e9-4fee-b264-c2f91c6e8180
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, ifsk.fltallocatecallbackdataex, FltAllocateCallbackDataEx, fltkernel/FltAllocateCallbackDataEx, FltAllocateCallbackDataEx routine [Installable File System Drivers]
+ms.keywords: ifsk.fltallocatecallbackdataex, fltkernel/FltAllocateCallbackDataEx, FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, FltAllocateCallbackDataEx routine [Installable File System Drivers], FltAllocateCallbackDataEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -100,7 +100,7 @@ Set <i>FileObject</i> to <b>NULL</b> if this is a CREATE operation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
 | **Library** | FltMgr.lib |

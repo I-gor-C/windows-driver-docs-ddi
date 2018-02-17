@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: iscsiop/PScsiInquiry_OUT, _ScsiInquiry_OUT, structs-iSCSI_0c90b572-8a05-4a75-86ce-5b12d82a1c2f.xml, PScsiInquiry_OUT structure pointer [Storage Devices], storage.scsiinquiry_out, ScsiInquiry_OUT, iscsiop/ScsiInquiry_OUT, PScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], *PScsiInquiry_OUT
+ms.keywords: ScsiInquiry_OUT structure [Storage Devices], iscsiop/ScsiInquiry_OUT, PScsiInquiry_OUT structure pointer [Storage Devices], ScsiInquiry_OUT, PScsiInquiry_OUT, _ScsiInquiry_OUT, iscsiop/PScsiInquiry_OUT, storage.scsiinquiry_out, structs-iSCSI_0c90b572-8a05-4a75-86ce-5b12d82a1c2f.xml, *PScsiInquiry_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -90,7 +90,7 @@ You must implement this method.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
+<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_in.md">ScsiInquiry_IN</a>
 
 
 
@@ -98,7 +98,7 @@ You must implement this method.
 
 
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsiinquiry_in.md">ScsiInquiry_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
 
 
 

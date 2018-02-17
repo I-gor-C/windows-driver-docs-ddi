@@ -99,7 +99,7 @@ The following example shows how to handle setup packet completion.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
 | **Library** | NtosKrnl.exe |

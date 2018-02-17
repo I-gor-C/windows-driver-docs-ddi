@@ -81,7 +81,7 @@ The kernel mode driver reports whether the specified configuration is supported.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 | **IRQL** | PASSIVE_LEVEL |
@@ -89,6 +89,8 @@ The kernel mode driver reports whether the specified configuration is supported.
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_checkmultiplaneoverlaysupport2.md">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2</a>
+
+
 
  
 

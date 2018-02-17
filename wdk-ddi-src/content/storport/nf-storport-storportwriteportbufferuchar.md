@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 44b57aa2-37ef-4491-8a88-9e7f880f5c1b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortWritePortBufferUchar routine [Storage Devices], storport/StorPortWritePortBufferUchar, storage.storportwriteportbufferuchar, StorPortWritePortBufferUchar, storprt_5bdd38fc-5cb0-483e-a0aa-19179c7ad833.xml
+ms.keywords: StorPortWritePortBufferUchar, StorPortWritePortBufferUchar routine [Storage Devices], storprt_5bdd38fc-5cb0-483e-a0aa-19179c7ad833.xml, storage.storportwriteportbufferuchar, storport/StorPortWritePortBufferUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -96,11 +96,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportbufferuchar.md
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportwriteportbufferuchar.md">ScsiPortWritePortBufferUchar</a>
-
-
-
 <a href="..\storport\nf-storport-storportwriteportuchar.md">StorPortWritePortUchar</a>
+
+
+
+<a href="..\srb\nf-srb-scsiportwriteportbufferuchar.md">ScsiPortWritePortBufferUchar</a>
 
 
 

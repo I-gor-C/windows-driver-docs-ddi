@@ -124,22 +124,22 @@ The GPIO_CLIENT_UNMASK_INTERRUPT function type is defined in the Gpioclx.h heade
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Windows version** | Supported starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
 | **IRQL** | See Remarks. |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406464">GPIO_ENABLE_INTERRUPT_PARAMETERS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406464">GPIO_ENABLE_INTERRUPT_PARAMETERS</a>
 
 
 

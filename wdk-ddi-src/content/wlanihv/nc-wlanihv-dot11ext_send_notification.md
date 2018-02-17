@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtSendNotification
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -101,7 +101,7 @@ If the IHV Extensions DLL allocated memory for the notification data referenced 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h, L2cmn.h) |
 
@@ -109,7 +109,11 @@ If the IHV Extensions DLL allocated memory for the notification data referenced 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557044">L2_NOTIFICATION_DATA</a>
+
+
 
  
 

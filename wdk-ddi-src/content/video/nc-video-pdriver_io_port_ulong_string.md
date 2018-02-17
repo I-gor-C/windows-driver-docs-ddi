@@ -118,11 +118,7 @@ If one or more application-issued x86 <b>INSD</b> or <b>OUTSD</b> instructions m
 
 ## See Also
 
-<a href="..\video\nc-video-pdriver_io_port_ulong.md">SvgaHwIoPortUlong</a>
-
-
-
-<a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
+<a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>
 
 
 
@@ -130,11 +126,7 @@ If one or more application-issued x86 <b>INSD</b> or <b>OUTSD</b> instructions m
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
-
-
-
-<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\nc-video-pdriver_io_port_ulong.md">SvgaHwIoPortUlong</a>
 
 
 
@@ -142,7 +134,15 @@ If one or more application-issued x86 <b>INSD</b> or <b>OUTSD</b> instructions m
 
 
 
-<a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
+
+
+
+<a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
+
+
+
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 
 
 

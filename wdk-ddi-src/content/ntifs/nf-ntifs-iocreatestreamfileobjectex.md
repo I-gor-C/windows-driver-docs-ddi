@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 1ecf4536-9669-4437-8919-3c7b0e4a9183
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectex, IoCreateStreamFileObjectEx, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml
+ms.keywords: ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml, ifsk.iocreatestreamfileobjectex, IoCreateStreamFileObjectEx routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,7 +93,7 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObjectEx</b> raises a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Windows version** | This routine is available on Microsoft Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -102,19 +102,7 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObjectEx</b> raises a 
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md">IoCreateStreamFileObjectLite</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
-
-
-
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
 
 
@@ -122,7 +110,19 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObjectEx</b> raises a 
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md">IoCreateStreamFileObjectLite</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
 
 

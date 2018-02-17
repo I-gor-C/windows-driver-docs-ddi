@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 10c69928-a12f-4583-a3cc-7c4a81da4b03
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DDDIARG_DECODEEXTENSIONEXECUTE, _D3DDDIARG_DECODEEXTENSIONEXECUTE, display.d3dddiarg_decodeextensionexecute, UMDisplayDriver_param_Structs_f1b48d7e-6774-465e-99fd-29aaaf0726e1.xml, D3DDDIARG_DECODEEXTENSIONEXECUTE structure [Display Devices], d3dumddi/D3DDDIARG_DECODEEXTENSIONEXECUTE
+ms.keywords: D3DDDIARG_DECODEEXTENSIONEXECUTE, d3dumddi/D3DDDIARG_DECODEEXTENSIONEXECUTE, _D3DDDIARG_DECODEEXTENSIONEXECUTE, UMDisplayDriver_param_Structs_f1b48d7e-6774-465e-99fd-29aaaf0726e1.xml, D3DDDIARG_DECODEEXTENSIONEXECUTE structure [Display Devices], display.d3dddiarg_decodeextensionexecute
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -94,11 +94,7 @@ typedef struct _D3DDDIARG_DECODEEXTENSIONEXECUTE {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
-
-
-
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatebuffer.md">DXVADDI_PRIVATEBUFFER</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodeextensionexecute.md">DecodeExtensionExecute</a>
 
 
 
@@ -106,7 +102,11 @@ typedef struct _D3DDDIARG_DECODEEXTENSIONEXECUTE {
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodeextensionexecute.md">DecodeExtensionExecute</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatebuffer.md">DXVADDI_PRIVATEBUFFER</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
 
 
 

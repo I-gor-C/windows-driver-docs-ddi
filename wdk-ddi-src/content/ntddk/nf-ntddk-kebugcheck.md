@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 46337a5f-dc8a-42bc-a618-0d1440270f91
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/KeBugCheck, KeBugCheck, KeBugCheck routine [Kernel-Mode Driver Architecture], k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, kernel.kebugcheck
+ms.keywords: KeBugCheck routine [Kernel-Mode Driver Architecture], kernel.kebugcheck, k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, KeBugCheck, ntddk/KeBugCheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ When a bug check is unavoidable, most system components call <a href="..\wdm\nf-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -92,7 +92,7 @@ When a bug check is unavoidable, most system components call <a href="..\wdm\nf-
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 
 
 
@@ -100,15 +100,15 @@ When a bug check is unavoidable, most system components call <a href="..\wdm\nf-
 
 
 
-<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
-
-
-
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 
 
 
-<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
+<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+
+
+
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 
 
 

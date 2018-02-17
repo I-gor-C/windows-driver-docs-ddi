@@ -143,14 +143,14 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
+| **Windows version** | Windows 10, version 1703  |
 | **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
 
 
@@ -158,7 +158,7 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
 
 
@@ -166,7 +166,7 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
 
 

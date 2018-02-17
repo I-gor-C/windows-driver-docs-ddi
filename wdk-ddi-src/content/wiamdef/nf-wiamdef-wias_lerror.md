@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 71949653-08c7-4f22-951d-6e1595b10700
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiamdef/WIAS_LERROR, WIAS_LERROR, image.wias_lerror, IWiaLog_b765e146-4e57-447c-9e9d-0f3cdc784291.xml, WIAS_LERROR macro [Imaging Devices]
+ms.keywords: IWiaLog_b765e146-4e57-447c-9e9d-0f3cdc784291.xml, WIAS_LERROR, wiamdef/WIAS_LERROR, image.wias_lerror, WIAS_LERROR macro [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -99,18 +99,18 @@ The WIAS_LERROR macro is not recommended for Windows Vista, because it does not 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_ERROR instead. Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_ERROR instead. |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_ERROR instead.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
 | **Library** | wiamdef.h |
 
 ## See Also
 
+<a href="..\wiamdef\nf-wiamdef-wias_ltrace.md">WIAS_LTRACE</a>
+
+
+
 <a href="..\wiamdef\nf-wiamdef-wias_error.md">WIAS_ERROR</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
 
 
 
@@ -118,7 +118,7 @@ The WIAS_LERROR macro is not recommended for Windows Vista, because it does not 
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wias_ltrace.md">WIAS_LTRACE</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
 
 
 

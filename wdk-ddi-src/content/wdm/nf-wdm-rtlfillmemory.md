@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9a73331a-cc73-4a47-948b-a821600ca6a6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlfillmemory, RtlFillMemory routine [Kernel-Mode Driver Architecture], k109_db7a2a9f-c7b5-40c3-9755-e386bbaf5353.xml, RtlFillMemory, wdm/RtlFillMemory
+ms.keywords: RtlFillMemory routine [Kernel-Mode Driver Architecture], RtlFillMemory, kernel.rtlfillmemory, wdm/RtlFillMemory, k109_db7a2a9f-c7b5-40c3-9755-e386bbaf5353.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -86,7 +86,7 @@ Callers of <b>RtlFillMemory</b> can be running at any IRQL if the destination me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |

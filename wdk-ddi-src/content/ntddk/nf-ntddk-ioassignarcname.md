@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ef8a132a-f593-4a25-bb9e-b4ed57801db2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.ioassignarcname, ntddk/IoAssignArcName, k104_ceeba02c-47cf-4c25-a339-d55ee9ebc216.xml, IoAssignArcName routine [Kernel-Mode Driver Architecture], IoAssignArcName
+ms.keywords: IoAssignArcName routine [Kernel-Mode Driver Architecture], kernel.ioassignarcname, IoAssignArcName, k104_ceeba02c-47cf-4c25-a339-d55ee9ebc216.xml, ntddk/IoAssignArcName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -78,7 +78,7 @@ Drivers of hard disk devices need not call this routine. Drivers of other mass s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

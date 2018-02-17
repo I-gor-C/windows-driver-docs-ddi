@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 8ca0d683-318b-465c-95a7-dc2b5e29c9e7
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: CcGetDirtyPages, ifsk.ccgetdirtypages, CcGetDirtyPages routine [Installable File System Drivers], ntifs/CcGetDirtyPages, ccref_cbefaf71-3c21-445f-ac63-d96bbb47ec16.xml
+ms.keywords: ifsk.ccgetdirtypages, CcGetDirtyPages, ccref_cbefaf71-3c21-445f-ac63-d96bbb47ec16.xml, CcGetDirtyPages routine [Installable File System Drivers], ntifs/CcGetDirtyPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -153,7 +153,7 @@ To set a log handle for a file, use <a href="..\ntifs\nf-ntifs-ccsetloghandlefor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later. Available on Microsoft Windows XP and later. |
+| **Windows version** | Available on Microsoft Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtSetEtherTypeHandling
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -133,6 +133,7 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 When calling the 
     <b>Dot11ExtSetEtherTypeHandling</b> function, the IHV Extensions DLL must follow
     these guidelines:
+
 <ul>
 <li>
 The IHV Extensions DLL can call 
@@ -150,7 +151,8 @@ The IHV Extensions DLL must not call
       Dot11ExtPreAssociateCompletion</a>.
 
 </li>
-</ul>The operating system defaults to an empty list of privacy exemptions and EtherType registrations prior
+</ul>
+The operating system defaults to an empty list of privacy exemptions and EtherType registrations prior
     to the call of the 
     <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
     Handler function.
@@ -158,7 +160,7 @@ The IHV Extensions DLL must not call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
@@ -166,18 +168,30 @@ The IHV Extensions DLL must not call
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
-   Functions</a>
+
+
+<a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">DOT11_PRIVACY_EXEMPTION</a>
+
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a>
+
+
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
    Dot11ExtIhvPerformPreAssociate</a>
 
+
+
 <a href="..\wlanihv\nc-wlanihv-dot11ext_pre_associate_completion.md">
    Dot11ExtPreAssociateCompletion</a>
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a>
 
-<a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">DOT11_PRIVACY_EXEMPTION</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
+
+
 
  
 

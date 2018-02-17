@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 994ba853-88b6-4456-8fdb-3199979df05e
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: AuxKlibGetImageExportDirectory routine [Kernel-Mode Driver Architecture], AuxKlibGetImageExportDirectory, kernel.auxklibgetimageexportdirectory, aux_klib_266e4e59-eaf6-47a4-a5d0-27fc55426273.xml, aux_klib/AuxKlibGetImageExportDirectory
+ms.keywords: AuxKlibGetImageExportDirectory routine [Kernel-Mode Driver Architecture], aux_klib_266e4e59-eaf6-47a4-a5d0-27fc55426273.xml, AuxKlibGetImageExportDirectory, kernel.auxklibgetimageexportdirectory, aux_klib/AuxKlibGetImageExportDirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
+| **Windows version** | Supported starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | aux_klib.h (include Aux_klib.h) |
 | **Library** | Aux_Klib.lib |

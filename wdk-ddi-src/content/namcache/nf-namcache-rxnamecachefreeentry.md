@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: c1adef80-b8f2-49bb-9254-b89c8d1af220
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RxNameCacheFreeEntry function [Installable File System Drivers], RxNameCacheFreeEntry, ifsk.rxnamecachefreeentry, namcache/RxNameCacheFreeEntry, rxref_ca0b7c99-59df-4a51-b28b-4c369b451741.xml
+ms.keywords: namcache/RxNameCacheFreeEntry, RxNameCacheFreeEntry, ifsk.rxnamecachefreeentry, RxNameCacheFreeEntry function [Installable File System Drivers], rxref_ca0b7c99-59df-4a51-b28b-4c369b451741.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,14 +87,6 @@ The <b>RxNameCacheFreeEntry</b> routine frees memory allocated for the name buff
 
 ## See Also
 
-<a href="..\namcache\nf-namcache-rxnamecachefinalize.md">RxNameCacheFinalize</a>
-
-
-
-<a href="..\namcache\nf-namcache-rxnamecacheactivateentry.md">RxNameCacheActivateEntry</a>
-
-
-
 <a href="..\namcache\nf-namcache-rxnamecachefetchentry.md">RxNameCacheFetchEntry</a>
 
 
@@ -103,11 +95,11 @@ The <b>RxNameCacheFreeEntry</b> routine frees memory allocated for the name buff
 
 
 
-<a href="..\namcache\nf-namcache-rxnamecacheinitialize.md">RxNameCacheInitialize</a>
-
-
-
 <a href="..\namcache\nf-namcache-rxnamecacheexpireentry.md">RxNameCacheExpireEntry</a>
+
+
+
+<a href="..\namcache\nf-namcache-rxnamecachefinalize.md">RxNameCacheFinalize</a>
 
 
 
@@ -116,6 +108,14 @@ The <b>RxNameCacheFreeEntry</b> routine frees memory allocated for the name buff
 
 
 <a href="..\namcache\nf-namcache-rxnamecachecreateentry.md">RxNameCacheCreateEntry</a>
+
+
+
+<a href="..\namcache\nf-namcache-rxnamecacheinitialize.md">RxNameCacheInitialize</a>
+
+
+
+<a href="..\namcache\nf-namcache-rxnamecacheactivateentry.md">RxNameCacheActivateEntry</a>
 
 
 

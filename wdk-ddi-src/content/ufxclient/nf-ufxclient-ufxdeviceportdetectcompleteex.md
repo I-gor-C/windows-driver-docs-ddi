@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: EB3A65B5-EB21-45CA-B26D-F57A28F9F2CB
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ufxdeviceportdetectcompleteex, ufxclient/UfxDevicePortDetectCompleteEx, UfxDevicePortDetectCompleteEx method [Buses], UfxDevicePortDetectCompleteEx
+ms.keywords: ufxclient/UfxDevicePortDetectCompleteEx, buses.ufxdeviceportdetectcompleteex, UfxDevicePortDetectCompleteEx method [Buses], UfxDevicePortDetectCompleteEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -122,7 +122,7 @@ The following snippet shows how a client driver calls <b>UfxDevicePortDetectComp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
 | **Library** | NtosKrnl.exe |

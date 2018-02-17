@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 5df074ff-572d-47f7-9c5c-4423b200cddc
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauFncs_dbe56add-64ef-442d-9824-ed0b26aba9ac.xml, wiautil/wiauDbgDump, image.wiaudbgdump, wiauDbgDump, wiauDbgDump function [Imaging Devices]
+ms.keywords: wiauDbgDump, image.wiaudbgdump, wiautil/wiauDbgDump, wiauFncs_dbe56add-64ef-442d-9824-ed0b26aba9ac.xml, wiauDbgDump function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,18 +95,14 @@ This example, which would be placed in a function named <i>SetBuffer</i>, causes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
 | **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
-
-
-
-<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
 
 
 
@@ -114,7 +110,11 @@ This example, which would be placed in a function named <i>SetBuffer</i>, causes
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
+
+
+
+<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
 
 
 

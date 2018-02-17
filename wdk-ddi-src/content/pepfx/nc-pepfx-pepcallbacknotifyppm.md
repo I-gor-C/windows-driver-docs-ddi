@@ -88,18 +88,18 @@ The IRQL at which the PEP's <i>AcceptProcessorNotification</i> routine is called
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Windows version** | Supported starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | pepfx.h |
 | **IRQL** | PASSIVE_LEVEL to HIGH_LEVEL |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
-
-
-
 <a href="..\pepfx\nf-pepfx-pofxregisterpluginex.md">PoFxRegisterPluginEx</a>
+
+
+
+<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 404E9893-97BA-48A7-87CE-0B4AF46692CE
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: printerextension/IPrinterExtensionEventArgs::get_ReasonId, print.iprinterextensioneventargs_reasonid, printerextension/IPrinterExtensionEventArgs::ReasonId, IPrinterExtensionEventArgs interface [Print Devices], ReasonId property, ReasonId property [Print Devices], IPrinterExtensionEventArgs interface, IPrinterExtensionEventArgs, IPrinterExtensionEventArgs.ReasonId, ReasonId property [Print Devices], IPrinterExtensionEventArgs::get_ReasonId, get_ReasonId
+ms.keywords: IPrinterExtensionEventArgs.ReasonId, IPrinterExtensionEventArgs interface [Print Devices], ReasonId property, ReasonId property [Print Devices], printerextension/IPrinterExtensionEventArgs::ReasonId, IPrinterExtensionEventArgs, ReasonId property [Print Devices], IPrinterExtensionEventArgs interface, IPrinterExtensionEventArgs::get_ReasonId, get_ReasonId, print.iprinterextensioneventargs_reasonid, printerextension/IPrinterExtensionEventArgs::get_ReasonId
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -95,7 +95,7 @@ Guid = {23BB1328-63DE-4293-915B-A6A23D929ACB}
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

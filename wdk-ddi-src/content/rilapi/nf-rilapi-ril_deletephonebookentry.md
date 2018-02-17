@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 110c542a-c98a-450d-b943-d8449dcac668
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_DeletePhonebookEntry method [Network Drivers Starting with Windows Vista], RIL_DeletePhonebookEntry, rilapi/RIL_DeletePhonebookEntry, netvista.ril_deletephonebookentry
+ms.keywords: RIL_DeletePhonebookEntry method [Network Drivers Starting with Windows Vista], netvista.ril_deletephonebookentry, rilapi/RIL_DeletePhonebookEntry, RIL_DeletePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,7 +96,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

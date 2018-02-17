@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f1606881-da8b-4034-bbdf-53c75e594032
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_b0beef8e-9d45-4125-a722-0a7189876308.xml, IoSetSystemPartition routine [Kernel-Mode Driver Architecture], kernel.iosetsystempartition, ntddk/IoSetSystemPartition, IoSetSystemPartition
+ms.keywords: k104_b0beef8e-9d45-4125-a722-0a7189876308.xml, IoSetSystemPartition, kernel.iosetsystempartition, ntddk/IoSetSystemPartition, IoSetSystemPartition routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ The specified partition must contain the boot loader.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

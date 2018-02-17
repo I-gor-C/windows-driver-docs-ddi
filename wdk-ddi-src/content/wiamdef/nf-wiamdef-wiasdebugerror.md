@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: fcddc83d-5fb1-43ad-9abd-8d5e2549b580
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasDebugError function [Imaging Devices], wiasFncs_0ccba388-a6ca-42b9-acd5-720b6763a202.xml, wiamdef/wiasDebugError, image.wiasdebugerror, wiasDebugError
+ms.keywords: image.wiasdebugerror, wiasFncs_0ccba388-a6ca-42b9-acd5-720b6763a202.xml, wiamdef/wiasDebugError, wiasDebugError, wiasDebugError function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ The wiasDebugError function is not recommended for Windows XP and later. For Win
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |
@@ -91,11 +91,11 @@ The wiasDebugError function is not recommended for Windows XP and later. For Win
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wias_error.md">WIAS_ERROR</a>
-
-
-
 <a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wias_error.md">WIAS_ERROR</a>
 
 
 

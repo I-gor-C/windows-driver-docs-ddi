@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: f21954a8-66a0-40c5-9116-da6e57d24f53
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisWriteRegisterUlong macro [Network Drivers Starting with Windows Vista], ndis/NdisWriteRegisterUlong, netvista.ndiswriteregisterulong, NdisWriteRegisterUlong, miniport_register_ref_2f7b1091-df45-47d7-9dd7-9a6f39e0b19d.xml
+ms.keywords: miniport_register_ref_2f7b1091-df45-47d7-9dd7-9a6f39e0b19d.xml, NdisWriteRegisterUlong, ndis/NdisWriteRegisterUlong, netvista.ndiswriteregisterulong, NdisWriteRegisterUlong macro [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -83,7 +83,7 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUlong (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUlong (NDIS   5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUlong (NDIS   5.1)) in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |
@@ -95,11 +95,11 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 
 
-<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
 
 
 
@@ -107,7 +107,7 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 
 
-<a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
+<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 
 
 

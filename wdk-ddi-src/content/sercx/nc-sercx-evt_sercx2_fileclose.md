@@ -117,7 +117,7 @@ The <b>EVT_SERCX2_FILECLOSE</b> function type is defined in the Sercx.h header f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Desktop |
 | **Header** | sercx.h |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |

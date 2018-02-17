@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 97757CBA-8291-40A3-B247-D41E7FEB1D7C
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.usbd_register, usbdlib/USBD_CreateHandle, USBD_CreateHandle routine [Buses], USBD_CreateHandle
+ms.keywords: USBD_CreateHandle routine [Buses], buses.usbd_register, USBD_CreateHandle, usbdlib/USBD_CreateHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -51,7 +51,7 @@ req.product: Windows 10 or later.
 # USBD_CreateHandle function
 The  <b>USBD_CreateHandle</b> routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
 
-<b>Note for Windows Driver Framework (WDF) Drivers:  </b>If your client driver is a WDF-based driver, then you do not need the USBD handle. The client driver is registered in its call to the the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a> method.
+<b>Note for Windows Driver Framework (WDF) Drivers:  </b>If your client driver is a WDF-based driver, then you do not need the USBD handle. The client driver is registered in its call to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a> method.
 
 ## Syntax
 
@@ -258,7 +258,7 @@ NTSTATUS MyAddDevice( __in PDRIVER_OBJECT  DriverObject,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
 | **Library** | Usbdex.lib; Ntstrsafe.lib |
@@ -266,11 +266,11 @@ NTSTATUS MyAddDevice( __in PDRIVER_OBJECT  DriverObject,
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_closehandle.md">USBD_CloseHandle</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_closehandle.md">USBD_CloseHandle</a>
 
 
 

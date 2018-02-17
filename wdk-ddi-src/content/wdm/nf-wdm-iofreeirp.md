@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4a032d44-c6c2-4dce-97ea-28ac47f6ad6c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoFreeIrp routine [Kernel-Mode Driver Architecture], k104_fc262cc4-a482-4a92-9f8e-1e5765c9b1d4.xml, IoFreeIrp, kernel.iofreeirp, wdm/IoFreeIrp
+ms.keywords: IoFreeIrp, k104_fc262cc4-a482-4a92-9f8e-1e5765c9b1d4.xml, wdm/IoFreeIrp, IoFreeIrp routine [Kernel-Mode Driver Architecture], kernel.iofreeirp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ This routine also releases an IRP allocated with <a href="..\ntddk\nf-ntddk-ioma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -88,15 +88,15 @@ This routine also releases an IRP allocated with <a href="..\ntddk\nf-ntddk-ioma
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
-
-
-
 <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 
 
 
-<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
+<a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 
 
 
@@ -104,7 +104,7 @@ This routine also releases an IRP allocated with <a href="..\ntddk\nf-ntddk-ioma
 
 
 
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 
 
 

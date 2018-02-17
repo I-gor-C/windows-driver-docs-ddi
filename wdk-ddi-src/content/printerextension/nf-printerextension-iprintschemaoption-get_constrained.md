@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 57E13395-9E23-4708-B4EC-6839CB6FC62B
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IPrintSchemaOption, Constrained property [Print Devices], IPrintSchemaOption interface, IPrintSchemaOption interface [Print Devices], Constrained property, IPrintSchemaOption::get_Constrained, Constrained property [Print Devices], printerextension/IPrintSchemaOption::get_Constrained, get_Constrained, IPrintSchemaOption.Constrained, print.iprintschemaoption_constrained, printerextension/IPrintSchemaOption::Constrained
+ms.keywords: IPrintSchemaOption::get_Constrained, Constrained property [Print Devices], IPrintSchemaOption interface, printerextension/IPrintSchemaOption::get_Constrained, get_Constrained, Constrained property [Print Devices], printerextension/IPrintSchemaOption::Constrained, IPrintSchemaOption.Constrained, IPrintSchemaOption, IPrintSchemaOption interface [Print Devices], Constrained property, print.iprintschemaoption_constrained
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -74,18 +74,18 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\ne-printerextension-tagprintschemaconstrainedsetting.md">PrintSchemaConstrainedSetting</a>
-
-
-
 <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+
+
+
+<a href="..\printerextension\ne-printerextension-tagprintschemaconstrainedsetting.md">PrintSchemaConstrainedSetting</a>
 
 
 

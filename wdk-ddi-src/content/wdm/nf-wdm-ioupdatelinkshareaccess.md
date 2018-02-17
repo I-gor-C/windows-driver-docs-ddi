@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: C92E53C8-3411-4E6E-B48E-B16F6B815488
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.ioupdatelinkshareaccess, IoUpdateLinkShareAccess, IoUpdateLinkShareAccess function [Kernel-Mode Driver Architecture], wdm/IoUpdateLinkShareAccess
+ms.keywords: kernel.ioupdatelinkshareaccess, wdm/IoUpdateLinkShareAccess, IoUpdateLinkShareAccess function [Kernel-Mode Driver Architecture], IoUpdateLinkShareAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ Before calling <b>IoUpdateLinkShareAccess</b>, the caller must successfully call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Universal |
 | **Header** | wdm.h |
 | **Library** | NtosKrnl.lib |
@@ -95,11 +95,11 @@ Before calling <b>IoUpdateLinkShareAccess</b>, the caller must successfully call
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
-
-
-
 <a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
+
+
+
+<a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
 
 
 

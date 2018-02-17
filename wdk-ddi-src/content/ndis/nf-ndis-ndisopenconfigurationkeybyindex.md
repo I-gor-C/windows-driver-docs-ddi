@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: e405853a-cf25-4214-82a9-bc3d76334413
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisOpenConfigurationKeyByIndex, NdisOpenConfigurationKeyByIndex function [Network Drivers Starting with Windows Vista], netvista.ndisopenconfigurationkeybyindex, ndis/NdisOpenConfigurationKeyByIndex, ndis_configuration_ref_71c37932-c758-475c-9c84-c176c6c40cf8.xml
+ms.keywords: ndis_configuration_ref_71c37932-c758-475c-9c84-c176c6c40cf8.xml, NdisOpenConfigurationKeyByIndex function [Network Drivers Starting with Windows Vista], netvista.ndisopenconfigurationkeybyindex, ndis/NdisOpenConfigurationKeyByIndex, NdisOpenConfigurationKeyByIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -153,7 +153,7 @@ After a driver has consumed and, possibly, modified the configuration informatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByIndex (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByIndex (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByIndex (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByIndex (NDIS 5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByIndex (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByIndex (NDIS 5.1)) in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -178,16 +178,8 @@ After a driver has consumed and, possibly, modified the configuration informatio
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
    NdisOpenConfigurationKeyByName</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 
 
 
@@ -196,6 +188,14 @@ After a driver has consumed and, possibly, modified the configuration informatio
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 
 
 

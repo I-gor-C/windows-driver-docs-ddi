@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 22afd9b9-9bed-45b0-afd8-1a5a34b9e6ad
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audio.pcgettimeinterval, PcGetTimeInterval, audpc-routines_a68c0cf5-01b7-4e01-a719-f0bdea2d367f.xml, portcls/PcGetTimeInterval, PcGetTimeInterval function [Audio Devices]
+ms.keywords: audpc-routines_a68c0cf5-01b7-4e01-a719-f0bdea2d367f.xml, PcGetTimeInterval function [Audio Devices], audio.pcgettimeinterval, portcls/PcGetTimeInterval, PcGetTimeInterval
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -107,7 +107,7 @@ and then checking to see whether the required interval has passed
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcGetTimeInterval function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcGetTimeInterval function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcGetTimeInterval function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |

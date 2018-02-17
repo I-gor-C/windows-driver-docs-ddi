@@ -77,7 +77,7 @@ After an <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 | **IRQL** | "<=DISPATCH_LEVEL" |

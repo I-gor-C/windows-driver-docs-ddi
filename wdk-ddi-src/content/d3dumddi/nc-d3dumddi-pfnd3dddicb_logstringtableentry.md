@@ -83,7 +83,7 @@ Returns <b>S_OK</b> or an appropriate error result if the function does not comp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 

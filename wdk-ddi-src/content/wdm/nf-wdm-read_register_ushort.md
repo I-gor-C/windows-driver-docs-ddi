@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d1160b0a-9969-44ba-82e7-14048e1554c2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: READ_REGISTER_USHORT, wdm/READ_REGISTER_USHORT, kernel.read_register_ushort, READ_REGISTER_USHORT routine [Kernel-Mode Driver Architecture], k103_c2fa06bd-05b9-4fbd-b47c-f264d3ed0bd7.xml
+ms.keywords: k103_c2fa06bd-05b9-4fbd-b47c-f264d3ed0bd7.xml, wdm/READ_REGISTER_USHORT, READ_REGISTER_USHORT, kernel.read_register_ushort, READ_REGISTER_USHORT routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ Callers of <b>READ_REGISTER_USHORT</b> can be running at any IRQL, assuming the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

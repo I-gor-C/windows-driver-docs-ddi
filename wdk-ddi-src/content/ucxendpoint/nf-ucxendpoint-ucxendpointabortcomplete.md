@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 754BCC74-1EC2-429E-A711-E8958665A5A8
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcxEndpointAbortComplete method [Buses], ucxendpoint/UcxEndpointAbortComplete, buses._ucxendpointabortcomplete, UcxEndpointAbortComplete
+ms.keywords: ucxendpoint/UcxEndpointAbortComplete, UcxEndpointAbortComplete, UcxEndpointAbortComplete method [Buses], buses._ucxendpointabortcomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,7 +71,7 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

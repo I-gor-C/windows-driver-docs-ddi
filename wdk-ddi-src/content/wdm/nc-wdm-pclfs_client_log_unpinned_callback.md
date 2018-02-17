@@ -40,7 +40,7 @@ apiname:
 -	ClfsLogUnpinnedCallback
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -88,7 +88,7 @@ The <i>ClfsLogGrowthCompleteCallback</i> function is called before the <i>ClfsLo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **IRQL** | Called at IRQL <= APC_LEVEL |
@@ -97,7 +97,11 @@ The <i>ClfsLogGrowthCompleteCallback</i> function is called before the <i>ClfsLo
 
 <a href="..\wdm\nf-wdm-clfsmgmthandlelogfilefull.md">ClfsMgmtHandleLogFileFull</a>
 
+
+
 <a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 6b622b61-ec39-4ffb-b744-2b33ac560af6
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTWaitForSynchronizationObject, OpenGL_Functions_bdec46cd-1e3b-427f-8c65-df2d31171bc5.xml, display.d3dkmtwaitforsynchronizationobject, D3DKMTWaitForSynchronizationObject function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObject
+ms.keywords: OpenGL_Functions_bdec46cd-1e3b-427f-8c65-df2d31171bc5.xml, D3DKMTWaitForSynchronizationObject, D3DKMTWaitForSynchronizationObject function [Display Devices], display.d3dkmtwaitforsynchronizationobject, d3dkmthk/D3DKMTWaitForSynchronizationObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

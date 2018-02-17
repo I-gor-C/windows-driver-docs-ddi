@@ -83,17 +83,19 @@ However, if the architecture of a particular hardware and driver must have a dev
 The driver can write the value that is supplied in the <b>SubmissionFenceId</b> member of DXGKARG_SUBMITCOMMAND into the fence command in the ring buffer. For more information about fence commands, see <a href="https://msdn.microsoft.com/0ec8a4eb-c441-47ae-b5de-d86e6065ffd4">Supplying Fence Identifiers</a>.
 
 If the driver returns an error code, the Microsoft DirectX graphics kernel subsystem  causes a system bugcheck to occur. In a crash dump file, the error is noted by the message <b>BugCheck 0x119</b>, which has the following four parameters.
+
 <ol>
 <li>0x2</li>
 <li>The NTSTATUS error code returned from the failed driver call</li>
 <li>A pointer to the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommand.md">DXGKARG_SUBMITCOMMAND</a> structure</li>
 <li>A pointer to an internal scheduler data structure</li>
-</ol><i>DxgkDdiSubmitCommand</i> should be made nonpageable because it runs at IRQL = DISPATCH_LEVEL.
+</ol>
+<i>DxgkDdiSubmitCommand</i> should be made nonpageable because it runs at IRQL = DISPATCH_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | DISPATCH_LEVEL |
@@ -102,7 +104,11 @@ If the driver returns an error code, the Microsoft DirectX graphics kernel subsy
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommand.md">DXGKARG_SUBMITCOMMAND</a>
 
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
 
  
 

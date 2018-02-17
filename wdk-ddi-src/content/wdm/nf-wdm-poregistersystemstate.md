@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 851c694f-6c47-498c-8035-132a63c0fa62
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.poregistersystemstate, portn_477a2d72-00f7-45a1-b7ca-504b741c5fe0.xml, wdm/PoRegisterSystemState, PoRegisterSystemState, PoRegisterSystemState routine [Kernel-Mode Driver Architecture]
+ms.keywords: portn_477a2d72-00f7-45a1-b7ca-504b741c5fe0.xml, kernel.poregistersystemstate, PoRegisterSystemState routine [Kernel-Mode Driver Architecture], wdm/PoRegisterSystemState, PoRegisterSystemState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -113,7 +113,7 @@ To set the system power state, call <a href="..\wdm\nf-wdm-posetsystemstate.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -122,11 +122,11 @@ To set the system power state, call <a href="..\wdm\nf-wdm-posetsystemstate.md">
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
-
-
-
 <a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
+
+
+
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
 
 
 

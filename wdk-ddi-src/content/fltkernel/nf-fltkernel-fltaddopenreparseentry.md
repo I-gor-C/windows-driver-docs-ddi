@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: D58AB46A-0D87-45B5-8C58-E99ED0F906D2
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltAddOpenReparseEntry, ifsk.fltaddopenreparseentry, fltkernel/FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers]
+ms.keywords: FltAddOpenReparseEntry routine [Installable File System Drivers], FltAddOpenReparseEntry, ifsk.fltaddopenreparseentry, fltkernel/FltAddOpenReparseEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ Use <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | fltkernel.h |
 | **Library** | NtosKrnl.exe |

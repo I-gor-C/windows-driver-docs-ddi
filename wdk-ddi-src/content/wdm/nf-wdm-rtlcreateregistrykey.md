@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2214acc8-b24a-4db4-9ce3-f639291428f2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlcreateregistrykey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture], RtlCreateRegistryKey, k109_9a163bcc-501d-453b-b426-a4267d04135c.xml, wdm/RtlCreateRegistryKey
+ms.keywords: k109_9a163bcc-501d-453b-b426-a4267d04135c.xml, RtlCreateRegistryKey, wdm/RtlCreateRegistryKey, kernel.rtlcreateregistrykey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -146,7 +146,7 @@ Specifies the registry path according to the <i>RelativeTo</i> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -155,15 +155,11 @@ Specifies the registry path according to the <i>RelativeTo</i> value.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlwriteregistryvalue.md">RtlWriteRegistryValue</a>
-
-
-
 <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
 
 
 
@@ -171,11 +167,15 @@ Specifies the registry path according to the <i>RelativeTo</i> value.
 
 
 
+<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
+
+
 <a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+<a href="..\wdm\nf-wdm-rtlwriteregistryvalue.md">RtlWriteRegistryValue</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml, netvista.fwpmengineopen0, fwpmk/FwpmEngineOpen0, FwpmEngineOpen0, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista]
+ms.keywords: FwpmEngineOpen0, fwpmk/FwpmEngineOpen0, wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml, netvista.fwpmengineopen0, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -154,7 +154,7 @@ After a callout driver has finished accessing the filter engine, it calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | fwpmk.h (include Fwpmk.h) |
 | **Library** | Fwpkclnt.lib |
@@ -162,20 +162,11 @@ After a callout driver has finished accessing the filter engine, it calls the
 
 ## See Also
 
-<a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmengineclose0.md">FwpmEngineClose0</a>
 
 
 
 <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
-
-
-
-<a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
-   FwpmBfeStateSubscribeChanges0</a>
-
-
-
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
 
 
 
@@ -184,11 +175,20 @@ After a callout driver has finished accessing the filter engine, it calls the
 
 
 
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+   FwpmBfeStateSubscribeChanges0</a>
+
+
+
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
+
+
+
 <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
 
 
 
-<a href="..\fwpmk\nf-fwpmk-fwpmengineclose0.md">FwpmEngineClose0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
 
 
 

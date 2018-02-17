@@ -210,7 +210,7 @@ The WHEA management application that is injecting the error can pass additional 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **IRQL** | "<=DISPATCH_LEVEL" |

@@ -105,13 +105,15 @@ All other return values will lead to the OS <i>bugcheck</i>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_rendergdi.md">DXGKARG_RENDERGDI</a>
+
+
 
  
 

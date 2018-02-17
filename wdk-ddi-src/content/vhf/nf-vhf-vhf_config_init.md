@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 4A87D9E2-F1FC-4CA8-834C-E545D8F0277B
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hid.vhf_config_init, vhf/VHF_CONFIG_INIT, VHF_CONFIG_INIT, VHF_CONFIG_INIT function [Human Input Devices]
+ms.keywords: VHF_CONFIG_INIT function [Human Input Devices], VHF_CONFIG_INIT, vhf/VHF_CONFIG_INIT, hid.vhf_config_init
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,7 +87,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Desktop |
 | **Header** | vhf.h |
 | **Library** | VhfKm.lib |

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3c540410-6478-4da1-8ef5-b6d21d322b32
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: obref_3d52f727-edc5-4bea-b7c1-24a3aced1079.xml, ntifs/ObQueryNameString, ObQueryNameString, ObQueryNameString routine [Installable File System Drivers], ifsk.obquerynamestring
+ms.keywords: ifsk.obquerynamestring, ObQueryNameString, ntifs/ObQueryNameString, obref_3d52f727-edc5-4bea-b7c1-24a3aced1079.xml, ObQueryNameString routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -124,7 +124,7 @@ The storage for <i>ObjectNameInfo</i> can be allocated from paged or nonpaged po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later operating systems. Available in Windows 2000 and later operating systems. |
+| **Windows version** | Available in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

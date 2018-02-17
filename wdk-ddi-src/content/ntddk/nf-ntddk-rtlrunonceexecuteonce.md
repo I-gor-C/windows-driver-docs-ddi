@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2769eb2c-33e2-4e3f-a1bf-1ebc9213b224
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_c1729bff-038f-4714-b422-1b97dd5a9c19.xml, RtlRunOnceExecuteOnce function [Kernel-Mode Driver Architecture], kernel.rtlrunonceexecuteonce, ntddk/RtlRunOnceExecuteOnce, RtlRunOnceExecuteOnce
+ms.keywords: kernel.rtlrunonceexecuteonce, RtlRunOnceExecuteOnce function [Kernel-Mode Driver Architecture], ntddk/RtlRunOnceExecuteOnce, k109_c1729bff-038f-4714-b422-1b97dd5a9c19.xml, RtlRunOnceExecuteOnce
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,7 +90,7 @@ For the first call to <b>RtlRunOnceExecuteOnce</b> for a particular <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -99,15 +99,7 @@ For the first call to <b>RtlRunOnceExecuteOnce</b> for a particular <a href="htt
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
+<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
 
 
 
@@ -115,7 +107,15 @@ For the first call to <b>RtlRunOnceExecuteOnce</b> for a particular <a href="htt
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
 
 
 

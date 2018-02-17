@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: fbe2c665-a7e8-43e4-95e5-a7e87521e163
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: portcls/PcRequestNewPowerState, PcRequestNewPowerState, audpc-routines_c3341fb0-4609-4b3f-a0b2-ef589c804f1d.xml, audio.pcrequestnewpowerstate, PcRequestNewPowerState function [Audio Devices]
+ms.keywords: audpc-routines_c3341fb0-4609-4b3f-a0b2-ef589c804f1d.xml, PcRequestNewPowerState, PcRequestNewPowerState function [Audio Devices], portcls/PcRequestNewPowerState, audio.pcrequestnewpowerstate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -133,7 +133,7 @@ For more information, see <a href="https://msdn.microsoft.com/3d3d63af-5790-4760
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcRequestNewPowerState function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRequestNewPowerState function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcRequestNewPowerState function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4369ad33-ba4a-45db-9a41-e77d6c55da53
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_23574ace-ab66-43bb-976f-ca7310cece9a.xml, kernel.kequeryactiveprocessorcount, KeQueryActiveProcessorCount routine [Kernel-Mode Driver Architecture], wdm/KeQueryActiveProcessorCount, KeQueryActiveProcessorCount
+ms.keywords: k105_23574ace-ab66-43bb-976f-ca7310cece9a.xml, kernel.kequeryactiveprocessorcount, wdm/KeQueryActiveProcessorCount, KeQueryActiveProcessorCount, KeQueryActiveProcessorCount routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,7 +96,7 @@ Kernel routines that use the KAFFINITY type include <a href="..\wdm\nf-wdm-iocon
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |
@@ -105,7 +105,7 @@ Kernel routines that use the KAFFINITY type include <a href="..\wdm\nf-wdm-iocon
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryActiveProcessors</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 
 
 
@@ -113,7 +113,7 @@ Kernel routines that use the KAFFINITY type include <a href="..\wdm\nf-wdm-iocon
 
 
 
-<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryActiveProcessors</a>
 
 
 

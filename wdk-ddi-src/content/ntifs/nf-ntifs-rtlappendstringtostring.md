@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 8cd94502-c11a-4e6a-87f6-0c6034b6ac09
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/RtlAppendStringToString, ifsk.rtlappendstringtostring, RtlAppendStringToString routine [Installable File System Drivers], rtlref_a5cf2f54-1094-44ea-8b05-0c3d08aa5abc.xml, RtlAppendStringToString
+ms.keywords: ntifs/RtlAppendStringToString, RtlAppendStringToString routine [Installable File System Drivers], RtlAppendStringToString, rtlref_a5cf2f54-1094-44ea-8b05-0c3d08aa5abc.xml, ifsk.rtlappendstringtostring
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000, and later versions of all Windows operating systems. Available in Microsoft Windows 2000, and later versions of all Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows 2000, and later versions of all Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** | NtosKrnl.lib |
@@ -89,15 +89,15 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+
+
+
 <a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>
 
 
 
 <a href="..\wdm\nf-wdm-rtlappendunicodetostring.md">RtlAppendUnicodeToString</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
 
 
 

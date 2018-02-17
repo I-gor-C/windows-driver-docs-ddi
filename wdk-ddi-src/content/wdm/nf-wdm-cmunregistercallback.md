@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6e291139-d7d3-4927-ad01-b09bddb0b945
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml, wdm/CmUnRegisterCallback, kernel.cmunregistercallback, CmUnRegisterCallback, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.cmunregistercallback, CmUnRegisterCallback, ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture], wdm/CmUnRegisterCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ For more information about <b>CmUnRegisterCallback</b> and filtering registry op
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -88,7 +88,7 @@ For more information about <b>CmUnRegisterCallback</b> and filtering registry op
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
 
 
@@ -96,7 +96,7 @@ For more information about <b>CmUnRegisterCallback</b> and filtering registry op
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
 
 
 

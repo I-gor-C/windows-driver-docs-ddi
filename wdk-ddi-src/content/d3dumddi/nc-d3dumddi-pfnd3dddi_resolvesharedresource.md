@@ -124,17 +124,17 @@ The driver implements <i>ResolveSharedResource</i> to appropriately manage resou
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | ResolveSharedResource is supported beginning with the Windows 7 operating system. ResolveSharedResource is supported beginning with the Windows 7 operating system. |
+| **Windows version** | ResolveSharedResource is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_resolvesharedresource.md">D3DDDIARG_RESOLVESHAREDRESOURCE</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
 
 

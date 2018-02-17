@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3cc84381-fa1e-4c6c-bb5b-459a93676cfd
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTOfferAllocations, display.d3dkmtofferallocations, d3dkmthk/D3DKMTOfferAllocations, PFND3DKMT_OFFERALLOCATIONS, D3DKMTOfferAllocations function [Display Devices]
+ms.keywords: D3DKMTOfferAllocations function [Display Devices], PFND3DKMT_OFFERALLOCATIONS, d3dkmthk/D3DKMTOfferAllocations, display.d3dkmtofferallocations, D3DKMTOfferAllocations
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -113,7 +113,7 @@ Parameters were validated and determined to be incorrect.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |
@@ -121,11 +121,11 @@ Parameters were validated and determined to be incorrect.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_offerallocations.md">D3DKMT_OFFERALLOCATIONS</a>
-
-
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations.md">D3DKMTReclaimAllocations</a>
+
+
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_offerallocations.md">D3DKMT_OFFERALLOCATIONS</a>
 
 
 

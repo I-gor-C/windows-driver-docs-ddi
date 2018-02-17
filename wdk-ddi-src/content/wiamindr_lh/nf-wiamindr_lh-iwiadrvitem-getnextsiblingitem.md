@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: bc348f40-aaa4-4cd4-9dee-c02748d7412c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaDrvItem::GetNextSiblingItem, GetNextSiblingItem, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::GetNextSiblingItem, DrvItem_659ed27a-dca2-40de-acb7-f057178e9ab7.xml, IWiaDrvItem interface [Imaging Devices], GetNextSiblingItem method, GetNextSiblingItem method [Imaging Devices], IWiaDrvItem interface, GetNextSiblingItem method [Imaging Devices], image.iwiadrvitem_getnextsiblingitem
+ms.keywords: GetNextSiblingItem method [Imaging Devices], IWiaDrvItem interface, DrvItem_659ed27a-dca2-40de-acb7-f057178e9ab7.xml, image.iwiadrvitem_getnextsiblingitem, GetNextSiblingItem method [Imaging Devices], wiamindr_lh/IWiaDrvItem::GetNextSiblingItem, IWiaDrvItem::GetNextSiblingItem, GetNextSiblingItem, IWiaDrvItem, IWiaDrvItem interface [Imaging Devices], GetNextSiblingItem method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -74,14 +74,14 @@ Minidrivers obtain a pointer to the first child item in a folder by calling <a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543892">IWiaDrvItem::GetParentItem</a>
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
 
 
@@ -89,7 +89,7 @@ Minidrivers obtain a pointer to the first child item in a folder by calling <a h
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543892">IWiaDrvItem::GetParentItem</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: b667f0c9-7746-432e-ae58-3fe5b48309e0
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FsRtlTestAnsiCharacter, FsRtlTestAnsiCharacter function [Installable File System Drivers], fsrtlref_7ef89c09-f42e-433a-90bf-59452fd1b7c4.xml, ifsk.fsrtltestansicharacter, ntifs/FsRtlTestAnsiCharacter
+ms.keywords: FsRtlTestAnsiCharacter function [Installable File System Drivers], fsrtlref_7ef89c09-f42e-433a-90bf-59452fd1b7c4.xml, ntifs/FsRtlTestAnsiCharacter, FsRtlTestAnsiCharacter, ifsk.fsrtltestansicharacter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -95,15 +95,15 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
 
 
 
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
 
 
 

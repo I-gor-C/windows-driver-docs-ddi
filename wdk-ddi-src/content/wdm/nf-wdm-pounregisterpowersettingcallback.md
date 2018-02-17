@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 900db70b-4cdb-41e7-a4cf-0dc435b9fe7d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PoUnregisterPowerSettingCallback, wdm/PoUnregisterPowerSettingCallback, PoUnregisterPowerSettingCallback routine [Kernel-Mode Driver Architecture], portn_52c569d1-68d0-48a4-88e7-c2ffb27aa530.xml, kernel.pounregisterpowersettingcallback
+ms.keywords: PoUnregisterPowerSettingCallback routine [Kernel-Mode Driver Architecture], portn_52c569d1-68d0-48a4-88e7-c2ffb27aa530.xml, wdm/PoUnregisterPowerSettingCallback, kernel.pounregisterpowersettingcallback, PoUnregisterPowerSettingCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,7 +105,7 @@ A driver must call <b>PoUnregisterPowerSettingCallback</b> to unregister each ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

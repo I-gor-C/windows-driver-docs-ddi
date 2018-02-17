@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d391a7ed-220e-412a-8e32-22b206c7a062
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.clfsreadrestartarea, Clfs_bce9c012-cc19-472e-a1b3-c2d83435c6c0.xml, ClfsReadRestartArea routine [Kernel-Mode Driver Architecture], ClfsReadRestartArea, wdm/ClfsReadRestartArea
+ms.keywords: ClfsReadRestartArea, kernel.clfsreadrestartarea, Clfs_bce9c012-cc19-472e-a1b3-c2d83435c6c0.xml, ClfsReadRestartArea routine [Kernel-Mode Driver Architecture], wdm/ClfsReadRestartArea
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | Clfs.lib |
@@ -108,7 +108,11 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
+<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
+
+
+
+<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 
 
 
@@ -116,11 +120,7 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 
 
 
-<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
-
-
-
-<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
 
 
 

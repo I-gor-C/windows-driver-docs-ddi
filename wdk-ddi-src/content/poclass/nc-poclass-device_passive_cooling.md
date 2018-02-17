@@ -40,7 +40,7 @@ apiname:
 -	PassiveCooling
 product: Windows
 targetos: Windows
-req.typenames: PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
+req.typenames: "*PPMI_THRESHOLD_CONFIGURATION, PMI_THRESHOLD_CONFIGURATION"
 ---
 
 
@@ -95,7 +95,7 @@ For more information about passive cooling, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Windows version** | Supported starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | poclass.h (include Poclass.h) |
 | **IRQL** | Called at PASSIVE_LEVEL. |
@@ -103,6 +103,8 @@ For more information about passive cooling, see <a href="https://msdn.microsoft.
 ## See Also
 
 <a href="..\poclass\ns-poclass-_thermal_cooling_interface.md">THERMAL_COOLING_INTERFACE</a>
+
+
 
  
 

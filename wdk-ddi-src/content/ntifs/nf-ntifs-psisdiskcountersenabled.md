@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: E4626CF9-5E76-4C48-9B38-274178E41E30
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: PsIsDiskCountersEnabled, ifsk.psisdiskcountersenabled, ntifs/PsIsDiskCountersEnabled, PsIsDiskCountersEnabled routine [Installable File System Drivers]
+ms.keywords: ntifs/PsIsDiskCountersEnabled, PsIsDiskCountersEnabled, PsIsDiskCountersEnabled routine [Installable File System Drivers], ifsk.psisdiskcountersenabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,7 +68,7 @@ A file system driver uses the <b>PsIsDiskCountersEnabled</b> routine to query th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 5e458e3b-cfe2-4d48-b386-34d2a6c1d15e
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: winsplp/SplPromptUIInUsersSession, SplPromptUIInUsersSession, SplPromptUIInUsersSession function [Print Devices], print.splpromptuiinuserssession, spoolfnc_5b2379b2-c34b-4a98-b148-25a09f55be2b.xml
+ms.keywords: spoolfnc_5b2379b2-c34b-4a98-b148-25a09f55be2b.xml, winsplp/SplPromptUIInUsersSession, SplPromptUIInUsersSession function [Print Devices], SplPromptUIInUsersSession, print.splpromptuiinuserssession
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The SplPromptUIInUsersSession function is available in Windows XP and later The SplPromptUIInUsersSession function is available in Windows XP and later |
+| **Windows version** | The SplPromptUIInUsersSession function is available in Windows XP and later  |
 | **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
 | **Library** | Spoolss.lib |
@@ -99,11 +99,11 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</a>
-
-
-
 <a href="..\winsplp\nf-winsplp-splissessionzero.md">SplIsSessionZero</a>
+
+
+
+<a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</a>
 
 
 

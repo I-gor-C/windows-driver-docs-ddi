@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: e6197993-b998-424e-ab5d-a91a57c7398c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaDrvItem::GetParentItem, IWiaDrvItem, GetParentItem method [Imaging Devices], IWiaDrvItem interface, DrvItem_47782466-b345-43e7-9fd1-8c4b355c6d46.xml, GetParentItem, GetParentItem method [Imaging Devices], image.iwiadrvitem_getparentitem, IWiaDrvItem interface [Imaging Devices], GetParentItem method, wiamindr_lh/IWiaDrvItem::GetParentItem
+ms.keywords: IWiaDrvItem interface [Imaging Devices], GetParentItem method, GetParentItem method [Imaging Devices], IWiaDrvItem interface, image.iwiadrvitem_getparentitem, DrvItem_47782466-b345-43e7-9fd1-8c4b355c6d46.xml, GetParentItem, IWiaDrvItem, IWiaDrvItem::GetParentItem, GetParentItem method [Imaging Devices], wiamindr_lh/IWiaDrvItem::GetParentItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -74,7 +74,7 @@ Minidrivers typically use this method to obtain a pointer to the nonroot parent 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
@@ -85,11 +85,11 @@ Minidrivers typically use this method to obtain a pointer to the nonroot parent 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>
-
-
-
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 54ca9dc8-8095-4b62-9ebc-f297abb429ca
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iocreatedevice, k104_1e38a631-7e65-4b4b-8d51-3150a8073511.xml, IoCreateDevice routine [Kernel-Mode Driver Architecture], wdm/IoCreateDevice, IoCreateDevice
+ms.keywords: wdm/IoCreateDevice, kernel.iocreatedevice, k104_1e38a631-7e65-4b4b-8d51-3150a8073511.xml, IoCreateDevice routine [Kernel-Mode Driver Architecture], IoCreateDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -118,7 +118,7 @@ If a driver's call to <b>IoCreateDevice</b> returns an error, the driver should 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -128,7 +128,7 @@ If a driver's call to <b>IoCreateDevice</b> returns an error, the driver should 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+<a href="..\wdm\ns-wdm-_device_object.md"> DEVICE_OBJECT</a>
 
 
 
@@ -140,11 +140,7 @@ If a driver's call to <b>IoCreateDevice</b> returns an error, the driver should 
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md"> DEVICE_OBJECT</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a>
+<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
 
 
 
@@ -152,7 +148,11 @@ If a driver's call to <b>IoCreateDevice</b> returns an error, the driver should 
 
 
 
-<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548407">IoCreateDeviceSecure</a>
 
 
 

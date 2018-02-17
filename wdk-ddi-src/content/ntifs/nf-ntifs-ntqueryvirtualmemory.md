@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 011BE902-5ED3-4AD8-B825-6850A72C1D5F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ZwQueryVirtualMemory routine [Kernel-Mode Driver Architecture], kernel.zwqueryvirtualmemory, ntifs/ZwQueryVirtualMemory, NtQueryVirtualMemory, ZwQueryVirtualMemory, ntifs/NtQueryVirtualMemory
+ms.keywords: ZwQueryVirtualMemory, ZwQueryVirtualMemory routine [Kernel-Mode Driver Architecture], kernel.zwqueryvirtualmemory, ntifs/ZwQueryVirtualMemory, NtQueryVirtualMemory, ntifs/NtQueryVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -175,7 +175,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Windows version** | Available starting with Windows 10.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h |
 | **Library** | NtosKrnl.lib |

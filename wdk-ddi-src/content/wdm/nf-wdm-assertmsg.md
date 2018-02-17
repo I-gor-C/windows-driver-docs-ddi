@@ -76,7 +76,7 @@ If <i>Expression</i> evaluates to <b>FALSE</b>, a message is displayed in the De
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000 and later. Available in Microsoft Windows 2000 and later. |
+| **Windows version** | Available in Microsoft Windows 2000 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 

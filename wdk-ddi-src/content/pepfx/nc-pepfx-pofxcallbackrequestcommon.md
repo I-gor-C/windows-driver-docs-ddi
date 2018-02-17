@@ -83,7 +83,7 @@ A PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Windows version** | Supported starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | pepfx.h |
 | **IRQL** | "<= HIGH_LEVEL" |

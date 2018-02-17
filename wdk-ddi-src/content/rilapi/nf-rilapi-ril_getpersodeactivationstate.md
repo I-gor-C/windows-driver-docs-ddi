@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: c82cfde4-f214-4722-8f59-d727ad5bfe7e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_GetPersoDeactivationState, netvista.ril_getpersodeactivationstate, RIL_GetPersoDeactivationState method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetPersoDeactivationState
+ms.keywords: RIL_GetPersoDeactivationState, rilapi/RIL_GetPersoDeactivationState, netvista.ril_getpersodeactivationstate, RIL_GetPersoDeactivationState method [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

@@ -82,19 +82,7 @@ Pointer to the miniport driver's per-adapter storage area. For more information,
 
 ## See Also
 
-<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
-
-
-
-<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
-
-
-
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
 
 
 
@@ -103,6 +91,18 @@ Pointer to the miniport driver's per-adapter storage area. For more information,
 
 
 <a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+
+
+
+<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
+
+
+
+<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
 
 
 

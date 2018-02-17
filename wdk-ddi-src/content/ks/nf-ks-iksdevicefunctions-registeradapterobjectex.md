@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e5dc54a6-e26a-455b-9990-92f5cfece923
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions, ks/IKsDeviceFunctions::RegisterAdapterObjectEx, IKsDeviceFunctions::RegisterAdapterObjectEx, IKsDeviceFunctions interface [Streaming Media Devices], RegisterAdapterObjectEx method, avintfc_ffa27a2d-8330-498f-bec2-dbde3c665671.xml, RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions interface, stream.iksdevicefunctions_registeradapterobjectex, RegisterAdapterObjectEx
+ms.keywords: stream.iksdevicefunctions_registeradapterobjectex, ks/IKsDeviceFunctions::RegisterAdapterObjectEx, IKsDeviceFunctions, RegisterAdapterObjectEx method [Streaming Media Devices], avintfc_ffa27a2d-8330-498f-bec2-dbde3c665671.xml, RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions interface, RegisterAdapterObjectEx, IKsDeviceFunctions interface [Streaming Media Devices], RegisterAdapterObjectEx method, IKsDeviceFunctions::RegisterAdapterObjectEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -95,7 +95,7 @@ Also see <a href="https://msdn.microsoft.com/1173a83f-8d9e-4678-bfb5-f2fb91e827b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | ks.h |

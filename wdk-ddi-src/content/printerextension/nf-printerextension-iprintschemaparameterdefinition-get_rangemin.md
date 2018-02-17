@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: ED8A29D9-84CE-4FB5-BCEE-C31DA9AB3D00
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: RangeMin property [Print Devices], IPrintSchemaParameterDefinition interface, RangeMin property [Print Devices], printerextension/IPrintSchemaParameterDefinition::get_RangeMin, IPrintSchemaParameterDefinition::get_RangeMin, IPrintSchemaParameterDefinition interface [Print Devices], RangeMin property, IPrintSchemaParameterDefinition.RangeMin, IPrintSchemaParameterDefinition, printerextension/IPrintSchemaParameterDefinition::RangeMin, print._iprintschemaparameterdefinition_rangemin, get_RangeMin
+ms.keywords: IPrintSchemaParameterDefinition, IPrintSchemaParameterDefinition interface [Print Devices], RangeMin property, RangeMin property [Print Devices], IPrintSchemaParameterDefinition interface, print._iprintschemaparameterdefinition_rangemin, printerextension/IPrintSchemaParameterDefinition::get_RangeMin, RangeMin property [Print Devices], printerextension/IPrintSchemaParameterDefinition::RangeMin, IPrintSchemaParameterDefinition.RangeMin, get_RangeMin, IPrintSchemaParameterDefinition::get_RangeMin
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -79,7 +79,7 @@ For the <b>PrintSchemaParameterDataType_NumericString</b> and <b>PrintSchemaPara
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

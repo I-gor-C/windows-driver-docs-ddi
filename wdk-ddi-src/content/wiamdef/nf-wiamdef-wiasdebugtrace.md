@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: db39c7f6-d966-4538-8ee9-d3623995535c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasDebugTrace, wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml, wiamdef/wiasDebugTrace, image.wiasdebugtrace, wiasDebugTrace function [Imaging Devices]
+ms.keywords: image.wiasdebugtrace, wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml, wiasDebugTrace function [Imaging Devices], wiasDebugTrace, wiamdef/wiasDebugTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,7 @@ To enable tracing in free builds, drivers must define the WIAS_DEBUG macro. Trac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |
@@ -93,11 +93,11 @@ To enable tracing in free builds, drivers must define the WIAS_DEBUG macro. Trac
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
-
-
-
 <a href="..\wiamdef\nf-wiamdef-wias_ltrace.md">WIAS_LTRACE</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
 
 
 

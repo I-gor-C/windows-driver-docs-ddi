@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1007c8ba-c503-4522-aef8-23b89bec3d62
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTOpenAdapterFromLuid function [Display Devices], D3DKMTOpenAdapterFromLuid, display.d3dkmtopenadapterfromluid, d3dkmthk/D3DKMTOpenAdapterFromLuid
+ms.keywords: display.d3dkmtopenadapterfromluid, d3dkmthk/D3DKMTOpenAdapterFromLuid, D3DKMTOpenAdapterFromLuid function [Display Devices], D3DKMTOpenAdapterFromLuid
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,7 +105,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | GDI32.lib |

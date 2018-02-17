@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 38601573-750f-46fc-ae04-cef0d90d9ea9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], wdm/ExFlushLookasideListEx, kernel.exflushlookasidelistex, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml, ExFlushLookasideListEx
+ms.keywords: wdm/ExFlushLookasideListEx, kernel.exflushlookasidelistex, ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], ExFlushLookasideListEx, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -85,11 +85,11 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
+
+
+
+<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
 
 
 

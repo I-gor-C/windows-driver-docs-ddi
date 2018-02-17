@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7b7fed83-dcf8-466d-8bd7-42a5ed15cced
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsAleEndpointSetSecurityInfo0, fwpsk/FwpsAleEndpointSetSecurityInfo0, wfp_ref_2_funct_3_fwps_A-B_7999c73b-ee7d-4a54-b279-8a691a99d94d.xml, netvista.fwpsaleendpointsetsecurityinfo0, FwpsAleEndpointSetSecurityInfo0 function [Network Drivers Starting with Windows Vista]
+ms.keywords: FwpsAleEndpointSetSecurityInfo0, FwpsAleEndpointSetSecurityInfo0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_7999c73b-ee7d-4a54-b279-8a691a99d94d.xml, netvista.fwpsaleendpointsetsecurityinfo0, fwpsk/FwpsAleEndpointSetSecurityInfo0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -133,7 +133,7 @@ An error occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Windows version** | Available starting with Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** | Fwpkclnt.lib |

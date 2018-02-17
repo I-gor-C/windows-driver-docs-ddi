@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: a9e2537d-4d67-4495-b391-55f885b7041a
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], audio.pcregisteradapterpowermanagement, portcls/PcRegisterAdapterPowerManagement
+ms.keywords: audio.pcregisteradapterpowermanagement, PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, portcls/PcRegisterAdapterPowerManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting in Windows 2000. Available starting in Windows 2000. |
+| **Windows version** | Available starting in Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |
@@ -84,11 +84,11 @@ Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
-
-
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+
+
+<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
 
 
 

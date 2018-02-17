@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 2185a1c0-e952-4dbd-b1a9-82339e417774
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauFncs_db71e773-84d8-40b9-9688-9fa33aad9182.xml, wiauDbgFlags, image.wiaudbgflags, wiauDbgFlags function [Imaging Devices], wiautil/wiauDbgFlags
+ms.keywords: wiauDbgFlags function [Imaging Devices], wiauDbgFlags, image.wiaudbgflags, wiautil/wiauDbgFlags, wiauFncs_db71e773-84d8-40b9-9688-9fa33aad9182.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,7 +93,7 @@ If message logging to log file, or debugger, or both is enabled and the particul
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
 | **Library** | NtosKrnl.exe |

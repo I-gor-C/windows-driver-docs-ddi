@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7e60d536-607f-469f-8de4-5f6b77443b3e
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FwpsCalloutRegister2 function [Network Drivers Starting with Windows Vista], netvista.fwpscalloutregister2, fwpsk/FwpsCalloutRegister2, FwpsCalloutRegister2
+ms.keywords: FwpsCalloutRegister2 function [Network Drivers Starting with Windows Vista], FwpsCalloutRegister2, netvista.fwpscalloutregister2, fwpsk/FwpsCalloutRegister2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -167,7 +167,7 @@ This function is essentially identical to the previous version,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** | Fwpkclnt.lib |
@@ -175,11 +175,7 @@ This function is essentially identical to the previous version,
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
+<a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
 
 
 
@@ -187,23 +183,15 @@ This function is essentially identical to the previous version,
 
 
 
-<a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutunregisterbyid0.md">FwpsCalloutUnregisterById0</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>
-
-
-
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutunregisterbykey0.md">FwpsCalloutUnregisterByKey0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
+
+
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a>
 
 
 
@@ -211,7 +199,11 @@ This function is essentially identical to the previous version,
 
 
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542862">Creating a Device Object</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 
 
 
@@ -220,6 +212,14 @@ This function is essentially identical to the previous version,
 
 
 <a href="..\fwpsk\nf-fwpsk-fwpsstreaminjectasync0.md">FwpsStreamInjectAsync0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
+
+
+
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutunregisterbyid0.md">FwpsCalloutUnregisterById0</a>
 
 
 

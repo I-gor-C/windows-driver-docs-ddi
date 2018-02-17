@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 74BE4FF9-0342-4942-A58F-9C6D5F76E5F0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PsMakeSiloContextPermanent routine [Kernel-Mode Driver Architecture], ntddk/PsMakeSiloContextPermanent, PsMakeSiloContextPermanent, kernel.psmakesilocontextpermanent
+ms.keywords: PsMakeSiloContextPermanent routine [Kernel-Mode Driver Architecture], PsMakeSiloContextPermanent, ntddk/PsMakeSiloContextPermanent, kernel.psmakesilocontextpermanent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -118,7 +118,7 @@ Before calling this routine, the slot must contain a valid object. After it comp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.exe |

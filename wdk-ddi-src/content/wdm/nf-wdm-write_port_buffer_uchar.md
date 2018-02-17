@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 59a7b11a-c6b6-4452-9518-1e5c7c07ec18
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: WRITE_PORT_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture], kernel.write_port_buffer_uchar, WRITE_PORT_BUFFER_UCHAR, wdm/WRITE_PORT_BUFFER_UCHAR, k103_189a5664-0e12-4e18-a52c-6d04c3e8a7fd.xml
+ms.keywords: kernel.write_port_buffer_uchar, wdm/WRITE_PORT_BUFFER_UCHAR, WRITE_PORT_BUFFER_UCHAR, k103_189a5664-0e12-4e18-a52c-6d04c3e8a7fd.xml, WRITE_PORT_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,7 +87,7 @@ Callers of <b>WRITE_PORT_BUFFER_UCHAR</b> can be running at any IRQL, assuming t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Hal.lib |

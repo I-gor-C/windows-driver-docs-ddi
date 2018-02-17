@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: F97642A2-FE77-41D0-A194-8DE6F9B17BB0
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: udecxusbendpoint/UdecxUsbEndpointCreate, buses.udecxusbendpointcreate, UdecxUsbEndpointCreate, UdecxUsbEndpointCreate function [Buses]
+ms.keywords: buses.udecxusbendpointcreate, UdecxUsbEndpointCreate function [Buses], udecxusbendpoint/UdecxUsbEndpointCreate, UdecxUsbEndpointCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,7 +82,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbendpoint.h (include Udecx.h) |
@@ -91,7 +91,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 
 
@@ -99,7 +99,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

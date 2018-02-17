@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f3c1e2d5-8bb8-486c-a78a-3ddde6ab64bd
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlConvertUlongToLuid, k109_25b3458f-dc47-436f-af5b-7d6a9d8eeb2a.xml, kernel.rtlconvertulongtoluid, ntddk/RtlConvertUlongToLuid, RtlConvertUlongToLuid routine [Kernel-Mode Driver Architecture]
+ms.keywords: k109_25b3458f-dc47-436f-af5b-7d6a9d8eeb2a.xml, ntddk/RtlConvertUlongToLuid, RtlConvertUlongToLuid routine [Kernel-Mode Driver Architecture], RtlConvertUlongToLuid, kernel.rtlconvertulongtoluid
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,13 +73,17 @@ Specifies the unsigned long integer to convert.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561842">RtlEqualLuid</a>
+
+
 
 <a href="..\ntddk\nf-ntddk-sesingleprivilegecheck.md">SeSinglePrivilegeCheck</a>
 
@@ -90,10 +94,6 @@ Specifies the unsigned long integer to convert.
 
 
 <a href="..\ntddk\nf-ntddk-rtlconvertlongtoluid.md">RtlConvertLongToLuid</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561842">RtlEqualLuid</a>
 
 
 

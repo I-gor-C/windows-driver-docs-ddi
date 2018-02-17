@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 483147CF-B15D-435C-B5AA-31723D4C2A85
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcxControllerResetComplete method [Buses], ucxcontroller/UcxControllerResetComplete, UcxControllerResetComplete, buses._ucxcontrollerresetcomplete
+ms.keywords: UcxControllerResetComplete, buses._ucxcontrollerresetcomplete, UcxControllerResetComplete method [Buses], ucxcontroller/UcxControllerResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

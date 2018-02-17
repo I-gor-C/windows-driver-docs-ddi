@@ -123,7 +123,7 @@ The type ID of the type relative to the module specified by <b>m_TypeModBase</b>
 
 ## See Also
 
-<a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
+<a href="..\engextcpp\nl-engextcpp-extremotetypedlist.md">ExtRemoteTypedList::ExtRemoteTypedList(ULONG64)</a>
 
 
 
@@ -131,7 +131,11 @@ The type ID of the type relative to the module specified by <b>m_TypeModBase</b>
 
 
 
-<a href="..\engextcpp\nl-engextcpp-extremotetypedlist.md">ExtRemoteTypedList::ExtRemoteTypedList(ULONG64)</a>
+<a href="..\engextcpp\nl-engextcpp-extremotelist.md">ExtRemoteList</a>
+
+
+
+<a href="..\engextcpp\nl-engextcpp-extremotetypedlist.md">ExtRemoteTypedList::ExtRemoteTypedList(ExtRemoteData)</a>
 
 
 
@@ -143,11 +147,7 @@ The type ID of the type relative to the module specified by <b>m_TypeModBase</b>
 
 
 
-<a href="..\engextcpp\nl-engextcpp-extremotelist.md">ExtRemoteList</a>
-
-
-
-<a href="..\engextcpp\nl-engextcpp-extremotetypedlist.md">ExtRemoteTypedList::ExtRemoteTypedList(ExtRemoteData)</a>
+<a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
 
 
 

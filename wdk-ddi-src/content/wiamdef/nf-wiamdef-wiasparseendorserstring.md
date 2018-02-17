@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: c724a4f5-55ef-413d-bd1a-9cd39d3e42f5
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasParseEndorserString function [Imaging Devices], wiasFncs_09a845d0-52f1-4985-baf6-2cb2676fad3e.xml, wiamdef/wiasParseEndorserString, image.wiasparseendorserstring, wiasParseEndorserString
+ms.keywords: wiamdef/wiasParseEndorserString, image.wiasparseendorserstring, wiasFncs_09a845d0-52f1-4985-baf6-2cb2676fad3e.xml, wiasParseEndorserString, wiasParseEndorserString function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -110,7 +110,7 @@ Assuming that the WIA_DPS_ENDORSER_STRING property contains "This is $MY_TOKEN$"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

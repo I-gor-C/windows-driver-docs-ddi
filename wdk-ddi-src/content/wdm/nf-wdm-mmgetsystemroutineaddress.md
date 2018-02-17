@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 87e20abc-eb65-40c0-943e-eb194022a2de
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmgetsystemroutineaddress, k106_4cd56243-e8f4-428a-95f2-4e7a1d2a7396.xml, MmGetSystemRoutineAddress, MmGetSystemRoutineAddress routine [Kernel-Mode Driver Architecture], wdm/MmGetSystemRoutineAddress
+ms.keywords: k106_4cd56243-e8f4-428a-95f2-4e7a1d2a7396.xml, wdm/MmGetSystemRoutineAddress, MmGetSystemRoutineAddress, kernel.mmgetsystemroutineaddress, MmGetSystemRoutineAddress routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ Drivers can use this routine to determine if a routine is available on a specifi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 | **Library** | NtosKrnl.lib |

@@ -91,7 +91,7 @@ On completion of handling the sequence, the client driver notifies the NFC CX th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Desktop |
 | **Header** | nfccx.h (include Ncidef.h) |
 

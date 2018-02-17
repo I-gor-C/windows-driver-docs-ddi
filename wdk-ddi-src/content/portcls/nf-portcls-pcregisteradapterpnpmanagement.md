@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: DF597216-FB81-466C-871E-5E08C69B78DA
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: PcRegisterAdapterPnPManagement function [Audio Devices], PcRegisterAdapterPnpManagement, portcls/PcRegisterAdapterPnPManagement, audio.pcregisteradapterpnpmanagement, PcRegisterAdapterPnPManagement
+ms.keywords: PcRegisterAdapterPnPManagement, PcRegisterAdapterPnpManagement, portcls/PcRegisterAdapterPnPManagement, audio.pcregisteradapterpnpmanagement, PcRegisterAdapterPnPManagement function [Audio Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows. Available in Windows 10, version 1511 and later versions of Windows. |
+| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |
@@ -89,19 +89,19 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>
-
-
-
 <a href="..\portcls\nf-portcls-pcunregisteradapterpnpmanagement.md">PcUnregisterAdapterPnpManagement</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
-
-
 <a href="..\portcls\nn-portcls-iadapterpnpmanagement.md">IAdapterPnpManagement</a>
+
+
+
+<a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>
+
+
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 
 

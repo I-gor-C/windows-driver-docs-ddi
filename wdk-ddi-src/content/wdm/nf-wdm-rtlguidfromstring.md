@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7bdfc781-93d6-4f49-95f1-46f102908ec5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_d6fe22b7-9d81-4024-819c-03bce65d3d14.xml, kernel.rtlguidfromstring, RtlGUIDFromString routine [Kernel-Mode Driver Architecture], wdm/RtlGUIDFromString, RtlGUIDFromString
+ms.keywords: RtlGUIDFromString, k109_d6fe22b7-9d81-4024-819c-03bce65d3d14.xml, RtlGUIDFromString routine [Kernel-Mode Driver Architecture], wdm/RtlGUIDFromString, kernel.rtlguidfromstring
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ If the conversion succeeds, <b>RtlGUIDFromString</b> returns STATUS_SUCCESS. Oth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

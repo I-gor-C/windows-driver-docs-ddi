@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: A7C7FBE5-9046-48C7-AEE6-85C17CDE83AD
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/AppendTailList, AppendTailList routine [Kernel-Mode Driver Architecture], kernel.appendtaillist, AppendTailList
+ms.keywords: kernel.appendtaillist, wdm/AppendTailList, AppendTailList routine [Kernel-Mode Driver Architecture], AppendTailList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -122,7 +122,7 @@ The <code>MyAppendTailList</code> function in this code example treats both the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |
@@ -130,7 +130,7 @@ The <code>MyAppendTailList</code> function in this code example treats both the 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
 
 
@@ -138,7 +138,7 @@ The <code>MyAppendTailList</code> function in this code example treats both the 
 
 
 
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
 
 
 

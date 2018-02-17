@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: c4165eab-c62e-436d-b4d4-a1f72ee9c1bd
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.fltisfltmgrvolumedeviceobject, fltkernel/FltIsFltMgrVolumeDeviceObject, FltIsFltMgrVolumeDeviceObject, FltIsFltMgrVolumeDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_95cc07b6-722c-4d2a-bec1-57fff9e2c6e3.xml
+ms.keywords: ifsk.fltisfltmgrvolumedeviceobject, FltIsFltMgrVolumeDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_95cc07b6-722c-4d2a-bec1-57fff9e2c6e3.xml, FltIsFltMgrVolumeDeviceObject, fltkernel/FltIsFltMgrVolumeDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Vista or later versions of the Windows operating system. Available in Vista or later versions of the Windows operating system. |
+| **Windows version** | Available in Vista or later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | FltMgr.lib |

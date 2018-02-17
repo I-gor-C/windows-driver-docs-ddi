@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 67986bf8-b070-44e9-95a2-eea35100b0e7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.pocreatepowerrequest, portn_059f00e2-74ea-4c61-8fcd-6b257c084161.xml, PoCreatePowerRequest, wdm/PoCreatePowerRequest, PoCreatePowerRequest routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.pocreatepowerrequest, wdm/PoCreatePowerRequest, PoCreatePowerRequest routine [Kernel-Mode Driver Architecture], portn_059f00e2-74ea-4c61-8fcd-6b257c084161.xml, PoCreatePowerRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -117,7 +117,7 @@ When the power request object is no longer needed, the caller must delete the ob
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Windows version** | Available starting with Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -126,11 +126,11 @@ When the power request object is no longer needed, the caller must delete the ob
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-podeletepowerrequest.md">PoDeletePowerRequest</a>
-
-
-
 <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a>
+
+
+
+<a href="..\wdm\nf-wdm-podeletepowerrequest.md">PoDeletePowerRequest</a>
 
 
 

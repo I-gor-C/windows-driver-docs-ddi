@@ -78,7 +78,7 @@ If this routine succeeds, it returns <b>NTSTATUS_SUCCESS</b>. The driver should 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 | **IRQL** | INTERRUPT_LEVEL |
@@ -86,6 +86,8 @@ If this routine succeeds, it returns <b>NTSTATUS_SUCCESS</b>. The driver should 
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay2.md">DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2</a>
+
+
 
  
 

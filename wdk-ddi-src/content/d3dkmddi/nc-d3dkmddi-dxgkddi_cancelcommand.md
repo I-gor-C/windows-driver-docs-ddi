@@ -76,7 +76,10 @@ Returns <b>STATUS_SUCCESS</b> upon successful completion. If the driver instead 
 
 ## Remarks
 
-<div class="alert"><b>Note</b>  The DirectX graphics kernel subsystem calls this function only if the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a>.<b>CancelCommandAware</b> member is set.</div><div> </div>If the driver returns an error code, the DirectX graphics kernel subsystem  causes a system bugcheck to occur. In a crash dump file, the error is noted by the message <b>BugCheck 0x119</b>, which has the following four parameters.
+<div class="alert"><b>Note</b>  The DirectX graphics kernel subsystem calls this function only if the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a>.<b>CancelCommandAware</b> member is set.</div>
+<div> </div>
+If the driver returns an error code, the DirectX graphics kernel subsystem  causes a system bugcheck to occur. In a crash dump file, the error is noted by the message <b>BugCheck 0x119</b>, which has the following four parameters.
+
 <ol>
 <li>0x9</li>
 <li>The NTSTATUS error code returned from the failed driver call</li>
@@ -87,18 +90,24 @@ Returns <b>STATUS_SUCCESS</b> upon successful completion. If the driver instead 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a>
+
+
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_cancelcommand.md">DXGKARG_CANCELCOMMAND</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a>
+
 
  
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfusb/WdfUsbTargetDeviceQueryUsbCapability, kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method, PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY
+ms.keywords: kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method, wdfusb/WdfUsbTargetDeviceQueryUsbCapability, PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -254,7 +254,7 @@ This GUID applies to KMDF and UMDF drivers.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows Vista Windows Vista |
+| **Windows version** | Windows Vista  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |

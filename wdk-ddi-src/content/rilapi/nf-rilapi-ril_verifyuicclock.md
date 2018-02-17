@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: e32e4b7d-715b-4eae-832f-314980ab89b3
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_VerifyUiccLock method [Network Drivers Starting with Windows Vista], rilapi/RIL_VerifyUiccLock, netvista.ril_verifyuicclock, RIL_VerifyUiccLock
+ms.keywords: netvista.ril_verifyuicclock, rilapi/RIL_VerifyUiccLock, RIL_VerifyUiccLock, RIL_VerifyUiccLock method [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: BA1D5AD2-E3E5-42CB-8E77-627B23078F80
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ZwPowerInformation routine [Kernel-Mode Driver Architecture], kernel.zwpowerinformation, wdm/ZwPowerInformation, wdm/NtPowerInformation, PlatformInformation, NtPowerInformation, ZwPowerInformation
+ms.keywords: wdm/NtPowerInformation, wdm/ZwPowerInformation, kernel.zwpowerinformation, ZwPowerInformation routine [Kernel-Mode Driver Architecture], NtPowerInformation, ZwPowerInformation, PlatformInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -172,7 +172,7 @@ NTSTATUS Result = NtPowerInformation(PlatformInformation, NULL, 0, &amp;Platform
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | Ntoskrnl.lib |

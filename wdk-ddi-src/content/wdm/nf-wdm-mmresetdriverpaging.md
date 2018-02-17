@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6d1d1f0d-d6da-488d-a120-713b77da86a9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: MmResetDriverPaging, MmResetDriverPaging routine [Kernel-Mode Driver Architecture], k106_4b691510-4e1f-4da2-bfba-d008a83ef43e.xml, kernel.mmresetdriverpaging, wdm/MmResetDriverPaging
+ms.keywords: kernel.mmresetdriverpaging, k106_4b691510-4e1f-4da2-bfba-d008a83ef43e.xml, wdm/MmResetDriverPaging, MmResetDriverPaging routine [Kernel-Mode Driver Architecture], MmResetDriverPaging
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ For more information about paging an entire driver, see <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -90,11 +90,15 @@ For more information about paging an entire driver, see <a href="https://msdn.mi
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmunlockpagableimagesection.md">MmUnlockPagableImageSection</a>
+<a href="..\ntddk\nf-ntddk-mmlockpagablesectionbyhandle.md">MmLockPagableSectionByHandle</a>
 
 
 
 <a href="..\wdm\nf-wdm-mmlockpagabledatasection.md">MmLockPagableDataSection</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmunlockpagableimagesection.md">MmUnlockPagableImageSection</a>
 
 
 
@@ -103,10 +107,6 @@ For more information about paging an entire driver, see <a href="https://msdn.mi
 
 
 <a href="..\wdm\nf-wdm-mmpageentiredriver.md">MmPageEntireDriver</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-mmlockpagablesectionbyhandle.md">MmLockPagableSectionByHandle</a>
 
 
 

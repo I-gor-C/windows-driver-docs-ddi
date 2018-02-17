@@ -107,7 +107,7 @@ The bitblt state is successfully set.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | SetVideoProcessBltState is supported beginning with the Windows 7 operating system. SetVideoProcessBltState is supported beginning with the Windows 7 operating system. |
+| **Windows version** | SetVideoProcessBltState is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

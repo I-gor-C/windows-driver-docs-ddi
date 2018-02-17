@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtNicSpecificExtension
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -115,23 +115,29 @@ The
     
     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-nic-specific-extension">
     OID_DOT11_NIC_SPECIFIC_EXTENSION</a> object identifier (OID).
+
 <div class="alert"><b>Note</b>  OID_DOT11_NIC_SPECIFIC_EXTENSION is an optional OID for support by the Native
     802.11 miniport driver. If the driver does not support this OID, 
-    <b>Dot11ExtNicSpecificExtension</b> will return a value of ERROR_NOT_SUPPORTED.</div><div> </div>
+    <b>Dot11ExtNicSpecificExtension</b> will return a value of ERROR_NOT_SUPPORTED.</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
 ## See Also
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
+
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-nic-specific-extension">
    OID_DOT11_NIC_SPECIFIC_EXTENSION</a>
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
 
  
 

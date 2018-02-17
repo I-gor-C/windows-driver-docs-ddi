@@ -81,7 +81,7 @@ The <b>DestroyVideoProcessor</b> function notifies the driver to destroy the han
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | DestroyVideoProcessor is supported beginning with the Windows 7 operating system. DestroyVideoProcessor is supported beginning with the Windows 7 operating system. |
+| **Windows version** | DestroyVideoProcessor is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ce068ad0-3826-4f5d-a41c-2c3a40200f30
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_413cbfff-08a2-44b5-acdc-0e23d382a3d3.xml, wdm/IoCreateSynchronizationEvent, IoCreateSynchronizationEvent, IoCreateSynchronizationEvent routine [Kernel-Mode Driver Architecture], kernel.iocreatesynchronizationevent
+ms.keywords: IoCreateSynchronizationEvent, k104_413cbfff-08a2-44b5-acdc-0e23d382a3d3.xml, kernel.iocreatesynchronizationevent, wdm/IoCreateSynchronizationEvent, IoCreateSynchronizationEvent routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,7 +97,7 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -107,11 +107,11 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
-
-
-
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+
+
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
 
 
@@ -119,7 +119,7 @@ For more information about events, see <a href="https://msdn.microsoft.com/libra
 
 
 
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: DFB59020-1F4A-4ABB-8BBE-85F9C8615249
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/PoFxQueryCurrentComponentPerfState, kernel.pofxquerycurrentcomponentperfstate, PoFxQueryCurrentComponentPerfState routine [Kernel-Mode Driver Architecture], PoFxQueryCurrentComponentPerfState
+ms.keywords: PoFxQueryCurrentComponentPerfState routine [Kernel-Mode Driver Architecture], wdm/PoFxQueryCurrentComponentPerfState, kernel.pofxquerycurrentcomponentperfstate, PoFxQueryCurrentComponentPerfState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -118,7 +118,7 @@ This call always executes synchronously.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Windows version** | Available starting with Windows 10.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h |
 | **Library** | Ntoskrnl.lib |
@@ -127,11 +127,11 @@ This call always executes synchronously.
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
-
-
-
 <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
+
+
+
+<a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_COMPONENT_PERF_INFO</a>
 
 
 
@@ -139,7 +139,7 @@ This call always executes synchronously.
 
 
 
-<a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_COMPONENT_PERF_INFO</a>
+<a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
 
 
 

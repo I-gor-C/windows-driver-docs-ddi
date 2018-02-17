@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b2f51d54-3fda-4cbf-a148-0572122ed9fa
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlioencodememioresource, k109_2e51e72a-98c4-4600-8e9c-41251c3e9849.xml, wdm/RtlIoEncodeMemIoResource, RtlIoEncodeMemIoResource, RtlIoEncodeMemIoResource routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/RtlIoEncodeMemIoResource, RtlIoEncodeMemIoResource, RtlIoEncodeMemIoResource routine [Kernel-Mode Driver Architecture], kernel.rtlioencodememioresource, k109_2e51e72a-98c4-4600-8e9c-41251c3e9849.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -176,7 +176,7 @@ Lowest 32 bits must be zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 090e5fc5-a0cf-4df2-b9b9-abaf4833aef7
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RxUnregisterMinirdr, ifsk.rxunregisterminirdr, rxref_5c58f656-5d6a-46db-9c7e-f3331e48a66a.xml, RxUnregisterMinirdr routine [Installable File System Drivers], rxstruc/RxUnregisterMinirdr
+ms.keywords: rxref_5c58f656-5d6a-46db-9c7e-f3331e48a66a.xml, ifsk.rxunregisterminirdr, RxUnregisterMinirdr, rxstruc/RxUnregisterMinirdr, RxUnregisterMinirdr routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,14 +89,6 @@ Note that the inline routine, <b>RxUnregisterMinirdr</b>, is the preferred way t
 
 
 
-<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
-
-
-
-<a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMiniRdr</a>
-
-
-
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
 
@@ -106,6 +98,14 @@ Note that the inline routine, <b>RxUnregisterMinirdr</b>, is the preferred way t
 
 
 <a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
+
+
+
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
+
+
+
+<a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMiniRdr</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 28d45b36-c20d-40a5-bdf9-5fb754e36e74
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.keinitializeguardedmutex, wdm/KeInitializeGuardedMutex, KeInitializeGuardedMutex, KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml
+ms.keywords: k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml, wdm/KeInitializeGuardedMutex, kernel.keinitializeguardedmutex, KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], KeInitializeGuardedMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ For more information about guarded mutexes, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -86,11 +86,11 @@ For more information about guarded mutexes, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554235">KGUARDED_MUTEX</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551892">KeAcquireGuardedMutex</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554235">KGUARDED_MUTEX</a>
 
 
 

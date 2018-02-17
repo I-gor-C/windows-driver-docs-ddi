@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8af5a397-7945-4f72-a253-04d227bf3ca1
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_1ee3a02f-e0bb-4230-8161-957ceba37206.xml, video/VideoPortCompleteDma, VideoPortCompleteDma, VideoPortCompleteDma function [Display Devices], display.videoportcompletedma
+ms.keywords: VideoPortCompleteDma, VideoPortCompleteDma function [Display Devices], video/VideoPortCompleteDma, VideoPort_Functions_1ee3a02f-e0bb-4230-8161-957ceba37206.xml, display.videoportcompletedma
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ It is important to note that the scatter/gather list built by <b>VideoPortStartD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |
@@ -104,11 +104,11 @@ It is important to note that the scatter/gather list built by <b>VideoPortStartD
 
 
 
-<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
-
-
-
 <a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
+
+
+
+<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
 
 
 

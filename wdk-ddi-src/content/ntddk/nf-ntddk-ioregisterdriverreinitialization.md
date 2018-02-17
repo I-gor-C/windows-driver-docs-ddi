@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: bdee26f9-e108-4753-b2e5-a1427212bce9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoRegisterDriverReinitialization routine [Kernel-Mode Driver Architecture], IoRegisterDriverReinitialization, ntddk/IoRegisterDriverReinitialization, kernel.ioregisterdriverreinitialization, k104_998f1835-132c-49f3-886d-6d78dee35b9d.xml
+ms.keywords: k104_998f1835-132c-49f3-886d-6d78dee35b9d.xml, IoRegisterDriverReinitialization, kernel.ioregisterdriverreinitialization, IoRegisterDriverReinitialization routine [Kernel-Mode Driver Architecture], ntddk/IoRegisterDriverReinitialization
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ Usually, a driver with a <i>Reinitialize</i> routine is a higher-level driver th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

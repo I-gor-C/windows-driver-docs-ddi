@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F9688E1F-D8A3-432E-8724-2D601946E707
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdf.wdf_read_port_ushort, wdfhwaccess/WDF_READ_PORT_USHORT, WDF_READ_PORT_USHORT, WDF_READ_PORT_USHORT function
+ms.keywords: WDF_READ_PORT_USHORT, wdfhwaccess/WDF_READ_PORT_USHORT, WDF_READ_PORT_USHORT function, wdf.wdf_read_port_ushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ Specifies the port address, which must be a mapped memory range in I/O space.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1  |
 | **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |

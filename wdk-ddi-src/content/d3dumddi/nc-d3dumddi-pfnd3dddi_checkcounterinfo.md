@@ -87,7 +87,7 @@ The driver's <i>pfnCheckCounterInfo</i> function cannot call the <a href="..\d3d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
@@ -97,11 +97,11 @@ The driver's <i>pfnCheckCounterInfo</i> function cannot call the <a href="..\d3d
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_counter_info.md">D3DDDIARG_COUNTER_INFO</a>
-
-
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_counter_info.md">D3DDDIARG_COUNTER_INFO</a>
 
 
 

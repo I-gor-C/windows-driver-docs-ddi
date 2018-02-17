@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: dbf8c1a3-cc59-40d7-8355-62891b5b45d2
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::StartSymbolMatchWide, IDebugSymbols3::StartSymbolMatchWide, IDebugSymbols3, debugger.startsymbolmatchwide, StartSymbolMatchWide, StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], StartSymbolMatchWide method
+ms.keywords: debugger.startsymbolmatchwide, StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3::StartSymbolMatchWide, IDebugSymbols3, dbgeng/IDebugSymbols3::StartSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], StartSymbolMatchWide method, StartSymbolMatchWide, StartSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -115,7 +115,7 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
 
 
 
@@ -123,7 +123,7 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 
 

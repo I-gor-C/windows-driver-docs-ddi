@@ -969,7 +969,7 @@ wdm.h contains the following programming interfaces:
 | [_FILE_IS_REMOTE_DEVICE_INFORMATION](ns-wdm-_file_is_remote_device_information.md) | The FILE_IS_REMOTE_DEVICE_INFORMATION structure is used as an argument to the ZwQueryInformationFile routine. |
 | [_FILE_MEMORY_PARTITION_INFORMATION](ns-wdm-_file_memory_partition_information.md) | Stores information about memory partition. This structure is used by the ZwSetInformationFile function. |
 | [_FILE_NETWORK_OPEN_INFORMATION](ns-wdm-_file_network_open_information.md) | The FILE_NETWORK_OPEN_INFORMATION structure is used as an argument to ZwQueryInformationFile. |
-| [_FILE_OBJECT](ns-wdm-_file_object.md) | The Common Log File System (CLFS) uses the LOG_FILE_OBJECT structure to represent logs. |
+| [_FILE_OBJECT](ns-wdm-_file_object.md) | The FILE_OBJECT structure is used by the system to represent a file object. |
 | [_FILE_POSITION_INFORMATION](ns-wdm-_file_position_information.md) | The FILE_POSITION_INFORMATION structure is used as an argument to routines that query or set file information. |
 | [_FILE_STANDARD_INFORMATION](ns-wdm-_file_standard_information.md) | The FILE_STANDARD_INFORMATION structure is used as an argument to routines that query or set file information. |
 | [_FILE_STANDARD_INFORMATION_EX](ns-wdm-_file_standard_information_ex.md) | The FILE_STANDARD_INFORMATION_EX structure is used as an argument to routines that query or set file information. |

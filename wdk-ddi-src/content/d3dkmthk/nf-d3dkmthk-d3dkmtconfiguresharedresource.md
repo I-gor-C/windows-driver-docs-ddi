@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 3664ef23-f7bc-4a94-8085-aa5a3d0ba550
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtconfiguresharedresource, D3DKMTConfigureSharedResource function [Display Devices], OpenGL_Functions_f95f6a64-49a7-4a93-a544-6d4315f12212.xml, D3DKMTConfigureSharedResource, d3dkmthk/D3DKMTConfigureSharedResource, PFND3DKMT_CONFIGURESHAREDRESOURCE
+ms.keywords: display.d3dkmtconfiguresharedresource, d3dkmthk/D3DKMTConfigureSharedResource, D3DKMTConfigureSharedResource function [Display Devices], D3DKMTConfigureSharedResource, OpenGL_Functions_f95f6a64-49a7-4a93-a544-6d4315f12212.xml, PFND3DKMT_CONFIGURESHAREDRESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | D3DKMTConfigureSharedResource is supported beginning with the Windows 7 operating system. D3DKMTConfigureSharedResource is supported beginning with the Windows 7 operating system. |
+| **Windows version** | D3DKMTConfigureSharedResource is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

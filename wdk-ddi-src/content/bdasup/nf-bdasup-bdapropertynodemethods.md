@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 52cb13a6-6efe-4934-a6ec-178d4b2afb0a
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: BdaPropertyNodeMethods, stream.bdapropertynodemethods, BdaPropertyNodeMethods function [Streaming Media Devices], bdasup/BdaPropertyNodeMethods, bdaref_15a0d157-4e7d-43ae-9f1f-6ffb70bd4f9b.xml
+ms.keywords: BdaPropertyNodeMethods function [Streaming Media Devices], BdaPropertyNodeMethods, stream.bdapropertynodemethods, bdaref_15a0d157-4e7d-43ae-9f1f-6ffb70bd4f9b.xml, bdasup/BdaPropertyNodeMethods
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ A BDA minidriver calls the <b>BdaPropertyNodeMethods</b> function to retrieve th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |

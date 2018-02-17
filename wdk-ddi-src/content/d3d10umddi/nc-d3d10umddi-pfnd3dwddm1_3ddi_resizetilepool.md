@@ -117,6 +117,6 @@ The Direct3D runtime performs minimal validation of parameters, but it will fail
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

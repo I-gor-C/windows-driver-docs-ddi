@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e73a8111-9e54-4040-a38a-441948e10212
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: IddCxMonitorArrival, display.iddcxmonitorarrival, iddcx/IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices]
+ms.keywords: display.iddcxmonitorarrival, IddCxMonitorArrival, iddcx/IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ Output arguments to the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **Library** | NtosKrnl.exe |

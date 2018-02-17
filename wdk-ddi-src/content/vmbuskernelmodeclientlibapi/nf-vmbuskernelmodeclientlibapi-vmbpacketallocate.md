@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: F121A7BC-5504-4CF5-8C8A-0568D6C4F77F
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbPacketAllocate function [Network Drivers Starting with Windows Vista], VmbPacketAllocate, vmbuskernelmodeclientlibapi/VmbPacketAllocate, netvista.vmbpacketallocate
+ms.keywords: VmbPacketAllocate, vmbuskernelmodeclientlibapi/VmbPacketAllocate, VmbPacketAllocate function [Network Drivers Starting with Windows Vista], netvista.vmbpacketallocate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ client should call the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmod
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

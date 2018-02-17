@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3C36DB8F-46C2-4E81-B2F3-6DE78D91566E
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storport/StorPortWriteRegisterBufferUlong64, StorPortWriteRegisterBufferUlong64, StorPortWriteRegisterBufferUlong64 routine [Storage Devices], storage.storportwriteregisterbufferulong64
+ms.keywords: storage.storportwriteregisterbufferulong64, StorPortWriteRegisterBufferUlong64 routine [Storage Devices], storport/StorPortWriteRegisterBufferUlong64, StorPortWriteRegisterBufferUlong64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -88,7 +88,7 @@ The <b>StorPortWriteRegisterBufferUlong64</b> routine is only available on the 6
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | storport.h |

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: E8EF5995-67AE-4F34-B885-CBADDF3D151F
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortInitializeSListHead routine [Storage Devices], storport/StorPortInitializeSListHead, StorPortInitializeSListHead, storage.storportinitializeslisthead
+ms.keywords: StorPortInitializeSListHead routine [Storage Devices], storage.storportinitializeslisthead, storport/StorPortInitializeSListHead, StorPortInitializeSListHead
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -121,7 +121,7 @@ When memory for the list head is freed, any deallocation code must account for t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Windows version** | Available in starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |
@@ -129,11 +129,7 @@ When memory for the list head is freed, any deallocation code must account for t
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
-
-
-
-<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
+<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
 
 
@@ -141,7 +137,11 @@ When memory for the list head is freed, any deallocation code must account for t
 
 
 
-<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
+<a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
+
+
+
+<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
 
 
 

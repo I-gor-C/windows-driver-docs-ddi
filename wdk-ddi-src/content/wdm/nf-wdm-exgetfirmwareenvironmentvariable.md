@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5AD76955-A44C-4231-9394-0B6595CFB33D
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.exgetfirmwareenvironmentvariable, ExGetFirmwareEnvironmentVariable, ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], wdm/ExGetFirmwareEnvironmentVariable
+ms.keywords: ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], wdm/ExGetFirmwareEnvironmentVariable, ExGetFirmwareEnvironmentVariable, kernel.exgetfirmwareenvironmentvariable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -219,7 +219,7 @@ If you create a backup datastore, you can use this function to save all the boot
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -228,7 +228,7 @@ If you create a backup datastore, you can use this function to save all the boot
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/18e74e54-ecfe-46bf-8c9d-9eb16d22f3ba">GetFirmwareEnvironmentVariable</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 
 
@@ -236,7 +236,7 @@ If you create a backup datastore, you can use this function to save all the boot
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/18e74e54-ecfe-46bf-8c9d-9eb16d22f3ba">GetFirmwareEnvironmentVariable</a>
 
 
 

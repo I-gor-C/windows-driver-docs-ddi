@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 045c45fe-c971-4d41-a43d-415c2a4d464b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.wmitracemessage, WmiTraceMessage routine [Kernel-Mode Driver Architecture], WmiTraceMessage, wdm/WmiTraceMessage, k902_114717ae-d439-4ddd-b939-913795610dee.xml
+ms.keywords: WmiTraceMessage, kernel.wmitracemessage, k902_114717ae-d439-4ddd-b939-913795610dee.xml, wdm/WmiTraceMessage, WmiTraceMessage routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -219,7 +219,7 @@ All message buffers allocated to software tracing session are full.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -232,15 +232,15 @@ All message buffers allocated to software tracing session are full.
 
 
 
+<a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a>
+
+
+
 <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>
 
 
 
 <a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a>
-
-
-
-<a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a>
 
 
 

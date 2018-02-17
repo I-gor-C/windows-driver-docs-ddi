@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6aaa4ae9-fd3c-4cdd-ac37-0533c45143af
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: net_if_functions_ref_d375ff1d-3f7f-4f11-8fd3-c41340276d30.xml, NdisIfGetInterfaceIndexFromNetLuid, ndis/NdisIfGetInterfaceIndexFromNetLuid, netvista.ndisifgetinterfaceindexfromnetluid, NdisIfGetInterfaceIndexFromNetLuid function [Network Drivers Starting with Windows Vista]
+ms.keywords: NdisIfGetInterfaceIndexFromNetLuid, net_if_functions_ref_d375ff1d-3f7f-4f11-8fd3-c41340276d30.xml, NdisIfGetInterfaceIndexFromNetLuid function [Network Drivers Starting with Windows Vista], netvista.ndisifgetinterfaceindexfromnetluid, ndis/NdisIfGetInterfaceIndexFromNetLuid
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -157,7 +157,7 @@ NDIS provides the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -170,7 +170,7 @@ NDIS provides the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 
 
 
@@ -178,7 +178,7 @@ NDIS provides the
 
 
 
-<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 
 
 
@@ -186,12 +186,12 @@ NDIS provides the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndisifgetnetluidfrominterfaceindex.md">
    NdisIfGetNetLuidFromInterfaceIndex</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 
 
 

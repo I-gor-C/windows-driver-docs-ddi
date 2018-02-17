@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b24ec573-4164-4016-a19d-574ebd75ec8f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.popentrylist, PopEntryList, k109_a5d1634c-e1ab-43ac-ab3f-d0993263f5bb.xml, wdm/PopEntryList, PopEntryList routine [Kernel-Mode Driver Architecture]
+ms.keywords: PopEntryList, PopEntryList routine [Kernel-Mode Driver Architecture], kernel.popentrylist, wdm/PopEntryList, k109_a5d1634c-e1ab-43ac-ab3f-d0993263f5bb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ Callers of <b>PopEntryList</b> can be running at any IRQL. If <b>PopEntryList</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |

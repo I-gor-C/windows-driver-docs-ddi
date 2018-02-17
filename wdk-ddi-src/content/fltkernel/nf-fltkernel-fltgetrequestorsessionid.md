@@ -80,7 +80,7 @@ If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 7 and later versions of the Windows operating system. Available in Microsoft Windows 7 and later versions of the Windows operating system. |
+| **Windows version** | Available in Microsoft Windows 7 and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
 | **Library** | FltMgr.lib |

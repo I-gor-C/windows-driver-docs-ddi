@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 495191f4-a5c6-4223-8c5d-e4c0ecb0cc5d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMGetBusData, NdisMGetBusData function [Network Drivers Starting with Windows Vista], ndis/NdisMGetBusData, netvista.ndismgetbusdata, hardware_configuration_ref_e2ffab8c-2dba-4b49-a7dc-246a4792ca43.xml
+ms.keywords: netvista.ndismgetbusdata, NdisMGetBusData, ndis/NdisMGetBusData, NdisMGetBusData function [Network Drivers Starting with Windows Vista], hardware_configuration_ref_e2ffab8c-2dba-4b49-a7dc-246a4792ca43.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -100,7 +100,7 @@ This function replaces the NDIS 5.1
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -108,11 +108,11 @@ This function replaces the NDIS 5.1
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismsetbusdata.md">NdisMSetBusData</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismsetbusdata.md">NdisMSetBusData</a>
 
 
 

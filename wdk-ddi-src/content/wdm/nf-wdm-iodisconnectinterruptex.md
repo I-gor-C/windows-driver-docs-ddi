@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6c538468-2f7c-48b0-90f8-deb975c85970
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iodisconnectinterruptex, k104_3bfae096-0af6-4f61-ae4b-4c83e748b071.xml, IoDisconnectInterruptEx routine [Kernel-Mode Driver Architecture], wdm/WdmlibIoDisconnectInterruptEx, wdm/IoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx, IoDisconnectInterruptEx
+ms.keywords: kernel.iodisconnectinterruptex, wdm/IoDisconnectInterruptEx, IoDisconnectInterruptEx, IoDisconnectInterruptEx routine [Kernel-Mode Driver Architecture], k104_3bfae096-0af6-4f61-ae4b-4c83e748b071.xml, wdm/WdmlibIoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibiodisconnecti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Drivers that must also work Microsoft Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine. Available starting with Windows Vista. Drivers that must also work Microsoft Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine. |
+| **Windows version** | Available starting with Windows Vista. Drivers that must also work Microsoft Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib; Iointex.lib |

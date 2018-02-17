@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 29359aa3-2429-45fc-bc19-b58df60c4e89
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: safestrings_95156244-d97b-452b-bd09-3e68d3c25392.xml, RtlStringCbVPrintfExA, RtlStringCbVPrintfEx, kernel.rtlstringcbvprintfex, RtlStringCbVPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_IGNORE_NULLS, ntstrsafe/RtlStringCbVPrintfExW, STRSAFE_NULL_ON_FAILURE, RtlStringCbVPrintfExW, ntstrsafe/RtlStringCbVPrintfExA, STRSAFE_NO_TRUNCATION, STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE
+ms.keywords: safestrings_95156244-d97b-452b-bd09-3e68d3c25392.xml, STRSAFE_IGNORE_NULLS, RtlStringCbVPrintfEx, RtlStringCbVPrintfExW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbVPrintfExA, STRSAFE_NULL_ON_FAILURE, STRSAFE_NO_TRUNCATION, ntstrsafe/RtlStringCbVPrintfExW, STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE, RtlStringCbVPrintfExW, RtlStringCbVPrintfExA, kernel.rtlstringcbvprintfex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -288,7 +288,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |
@@ -296,11 +296,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfexw.md">RtlStringCchVPrintfEx</a>
-
-
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfw.md">RtlStringCbVPrintf</a>
+
+
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfexw.md">RtlStringCchVPrintfEx</a>
 
 
 

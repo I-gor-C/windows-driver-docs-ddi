@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 4a2be8af-e393-4c7f-9377-cb2842778104
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: video/VideoPortDisableInterrupt, display.videoportdisableinterrupt, VideoPortDisableInterrupt function [Display Devices], VideoPort_Functions_b01a5ae8-7e44-4ac8-9e11-ee266f34a4da.xml, VideoPortDisableInterrupt
+ms.keywords: display.videoportdisableinterrupt, VideoPortDisableInterrupt, VideoPort_Functions_b01a5ae8-7e44-4ac8-9e11-ee266f34a4da.xml, video/VideoPortDisableInterrupt, VideoPortDisableInterrupt function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -94,7 +94,7 @@ If the video miniport driver has not registered an <a href="..\video\nc-video-pv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |
@@ -103,19 +103,19 @@ If the video miniport driver has not registered an <a href="..\video\nc-video-pv
 
 ## See Also
 
-<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
-
-
-
 <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 
 
-<a href="..\video\nf-video-videoportenableinterrupt.md">VideoPortEnableInterrupt</a>
+<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
 
 
 
 <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
+
+
+
+<a href="..\video\nf-video-videoportenableinterrupt.md">VideoPortEnableInterrupt</a>
 
 
 

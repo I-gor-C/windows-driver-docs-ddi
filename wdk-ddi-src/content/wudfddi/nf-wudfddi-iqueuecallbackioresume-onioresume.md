@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d34f6e2c-4227-41bb-a1c0-f6206daa700b
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IQueueCallbackIoResume interface, OnIoResume method, IQueueCallbackIoResume::OnIoResume, umdf.iqueuecallbackioresume_onioresume, IQueueCallbackIoResume, OnIoResume method, IQueueCallbackIoResume interface, OnIoResume, OnIoResume method, wudfddi/IQueueCallbackIoResume::OnIoResume, wdf.iqueuecallbackioresume_onioresume, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml
+ms.keywords: OnIoResume, IQueueCallbackIoResume interface, OnIoResume method, wudfddi/IQueueCallbackIoResume::OnIoResume, OnIoResume method, IQueueCallbackIoResume interface, IQueueCallbackIoResume, OnIoResume method, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, umdf.iqueuecallbackioresume_onioresume, wdf.iqueuecallbackioresume_onioresume, IQueueCallbackIoResume::OnIoResume
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -87,11 +87,11 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md"
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-
-
-
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
 
 
 
@@ -99,7 +99,7 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md"
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
 
 

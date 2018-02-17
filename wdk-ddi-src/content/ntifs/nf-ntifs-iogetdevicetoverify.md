@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3dcd33ac-845a-4519-b697-5917687a9672
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/IoGetDeviceToVerify, ifsk.iogetdevicetoverify, IoGetDeviceToVerify, k104_47163b80-0b35-40e0-9a30-3f5e2fe51bba.xml, IoGetDeviceToVerify routine [Installable File System Drivers]
+ms.keywords: ifsk.iogetdevicetoverify, k104_47163b80-0b35-40e0-9a30-3f5e2fe51bba.xml, IoGetDeviceToVerify, ntifs/IoGetDeviceToVerify, IoGetDeviceToVerify routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ An underlying removable-media device driver is responsible for notifying higher-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -85,11 +85,11 @@ An underlying removable-media device driver is responsible for notifying higher-
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
 
 
 

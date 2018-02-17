@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5d82342e-c800-44ac-8618-468355d14dd0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml, wdm/PoUnregisterSystemState, kernel.pounregistersystemstate, PoUnregisterSystemState
+ms.keywords: PoUnregisterSystemState, PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], wdm/PoUnregisterSystemState, portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml, kernel.pounregistersystemstate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ This routine cancels a system busy state registration established by <b>PoRegist
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

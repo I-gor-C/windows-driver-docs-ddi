@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 51BBE9F6-7661-45A1-8416-9AAA307FCA10
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: PcUnregisterAdapterPnpManagement function [Audio Devices], portcls/PcUnregisterAdapterPnpManagement, audio.pcunregisteradapterpnpmanagement, PcUnregisterAdapterPnpManagement
+ms.keywords: audio.pcunregisteradapterpnpmanagement, portcls/PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement function [Audio Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows. Available in Windows 10, version 1511 and later versions of Windows. |
+| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |
@@ -89,11 +89,11 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<a href="..\portcls\nf-portcls-pcregisteradapterpnpmanagement.md">PcRegisterAdapterPnpManagement</a>
-
-
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+
+
+<a href="..\portcls\nf-portcls-pcregisteradapterpnpmanagement.md">PcRegisterAdapterPnpManagement</a>
 
 
 

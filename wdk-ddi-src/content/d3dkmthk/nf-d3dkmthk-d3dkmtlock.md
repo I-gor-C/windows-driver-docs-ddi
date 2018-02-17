@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d64abd43-edf2-465a-8d99-8fdce1fcd25f
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTLock function [Display Devices], display.d3dkmtlock, d3dkmthk/D3DKMTLock, OpenGL_Functions_ca085861-b8a0-434a-843d-9b8052376df5.xml, D3DKMTLock
+ms.keywords: OpenGL_Functions_ca085861-b8a0-434a-843d-9b8052376df5.xml, D3DKMTLock, display.d3dkmtlock, D3DKMTLock function [Display Devices], d3dkmthk/D3DKMTLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -180,7 +180,7 @@ The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTLock<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2a124a6e-30ff-4c0d-9a09-8cf43e65a657
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: rxref_1a97be61-3797-49f0-ad90-e426e43505c1.xml, RxNameCacheInitialize function [Installable File System Drivers], ifsk.rxnamecacheinitialize, RxNameCacheInitialize, namcache/RxNameCacheInitialize
+ms.keywords: RxNameCacheInitialize, namcache/RxNameCacheInitialize, rxref_1a97be61-3797-49f0-ad90-e426e43505c1.xml, RxNameCacheInitialize function [Installable File System Drivers], ifsk.rxnamecacheinitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,14 +87,6 @@ None
 
 ## See Also
 
-<a href="..\namcache\nf-namcache-rxnamecachefinalize.md">RxNameCacheFinalize</a>
-
-
-
-<a href="..\namcache\nf-namcache-rxnamecacheactivateentry.md">RxNameCacheActivateEntry</a>
-
-
-
 <a href="..\namcache\nf-namcache-rxnamecachefetchentry.md">RxNameCacheFetchEntry</a>
 
 
@@ -103,11 +95,15 @@ None
 
 
 
-<a href="..\namcache\nf-namcache-rxnamecachefreeentry.md">RxNameCacheFreeEntry</a>
-
-
-
 <a href="..\namcache\nf-namcache-rxnamecacheexpireentry.md">RxNameCacheExpireEntry</a>
+
+
+
+<a href="..\namcache\nf-namcache-rxnamecachefinalize.md">RxNameCacheFinalize</a>
+
+
+
+<a href="..\namcache\nf-namcache-rxnamecachefreeentry.md">RxNameCacheFreeEntry</a>
 
 
 
@@ -116,6 +112,10 @@ None
 
 
 <a href="..\namcache\nf-namcache-rxnamecachecreateentry.md">RxNameCacheCreateEntry</a>
+
+
+
+<a href="..\namcache\nf-namcache-rxnamecacheactivateentry.md">RxNameCacheActivateEntry</a>
 
 
 

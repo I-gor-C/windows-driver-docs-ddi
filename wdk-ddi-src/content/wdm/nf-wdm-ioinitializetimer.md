@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f2b0f74d-7417-443e-96ec-5101b1289f9d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/IoInitializeTimer, IoInitializeTimer, k104_28bd2888-4ec7-4de8-b2ea-f006a8f39209.xml, IoInitializeTimer routine [Kernel-Mode Driver Architecture], kernel.ioinitializetimer
+ms.keywords: kernel.ioinitializetimer, wdm/IoInitializeTimer, IoInitializeTimer, IoInitializeTimer routine [Kernel-Mode Driver Architecture], k104_28bd2888-4ec7-4de8-b2ea-f006a8f39209.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -90,7 +90,7 @@ When the timer is running, the I/O manager calls the driver-supplied <i>IoTimer<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -100,15 +100,15 @@ When the timer is running, the I/O manager calls the driver-supplied <i>IoTimer<
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-
-
-
-<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
-
-
-
 <a href="..\wdm\nf-wdm-iostoptimer.md">IoStopTimer</a>
+
+
+
+<a href="..\wdm\nc-wdm-io_timer_routine.md">IoTimer</a>
+
+
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 
 
 
@@ -116,7 +116,7 @@ When the timer is running, the I/O manager calls the driver-supplied <i>IoTimer<
 
 
 
-<a href="..\wdm\nc-wdm-io_timer_routine.md">IoTimer</a>
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 
 
 

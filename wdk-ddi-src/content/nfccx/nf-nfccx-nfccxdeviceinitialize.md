@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: E9282552-93AB-4380-A270-1A538CCF8C0E
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: NfcCxDeviceInitialize, nfccx/NfcCxDeviceInitialize, NfcCxDeviceInitialize method [Near-Field Proximity Drivers], nfpdrivers._nfccxdeviceinitialize
+ms.keywords: NfcCxDeviceInitialize, nfccx/NfcCxDeviceInitialize, nfpdrivers._nfccxdeviceinitialize, NfcCxDeviceInitialize method [Near-Field Proximity Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,7 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Windows |
 | **Header** | nfccx.h (include Ncidef.h) |
 | **Library** | Nfccxstub.lib |

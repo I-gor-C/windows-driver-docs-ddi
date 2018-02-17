@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 083cf25d-7436-4c4e-b29a-c9a2702b136d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisFReturnNetBufferLists function [Network Drivers Starting with Windows Vista], NdisFReturnNetBufferLists, ndis/NdisFReturnNetBufferLists, filter_ndis_functions_ref_3473c0c3-077c-4df7-b9d4-8392cf1ed918.xml, netvista.ndisfreturnnetbufferlists
+ms.keywords: NdisFReturnNetBufferLists, ndis/NdisFReturnNetBufferLists, filter_ndis_functions_ref_3473c0c3-077c-4df7-b9d4-8392cf1ed918.xml, NdisFReturnNetBufferLists function [Network Drivers Starting with Windows Vista], netvista.ndisfreturnnetbufferlists
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -121,7 +121,7 @@ If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -129,6 +129,10 @@ If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 
 ## See Also
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
@@ -139,10 +143,6 @@ If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the
 
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 
 

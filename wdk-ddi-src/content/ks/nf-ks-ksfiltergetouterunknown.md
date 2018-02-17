@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 599a6583-dcf2-4fe3-949a-5072bff9915c
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_32947579-50ca-4942-a594-b991c42d6681.xml, KsFilterGetOuterUnknown function [Streaming Media Devices], KsFilterGetOuterUnknown, stream.ksfiltergetouterunknown, ks/KsFilterGetOuterUnknown
+ms.keywords: ks/KsFilterGetOuterUnknown, stream.ksfiltergetouterunknown, avfunc_32947579-50ca-4942-a594-b991c42d6681.xml, KsFilterGetOuterUnknown, KsFilterGetOuterUnknown function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | NtosKrnl.exe |
@@ -85,7 +85,7 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.m
 
 
 
-<b>KsRegisterAggregatedClientUnknown</b>
+<a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
 
 
 
@@ -93,11 +93,7 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.m
 
 
 
-<a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
-
-
-
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
 
 
@@ -105,7 +101,11 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.m
 
 
 
-<a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
+
+
+
+<b>KsRegisterAggregatedClientUnknown</b>
 
 
 

@@ -84,11 +84,11 @@ The type of statistics data from the <a href="..\netdispumdddi\ne-netdispumdddi-
 
 
 
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_info.md">MIRACAST_CHUNK_INFO</a>
-
-
-
 <a href="..\netdispumdddi\ne-netdispumdddi-miracast_statistic_type.md">MIRACAST_STATISTIC_TYPE</a>
+
+
+
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_info.md">MIRACAST_CHUNK_INFO</a>
 
 
 

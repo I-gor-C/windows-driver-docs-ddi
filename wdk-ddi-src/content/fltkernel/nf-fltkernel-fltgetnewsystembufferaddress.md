@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 83a5e9b7-1731-422f-a0df-c1efbc8cad81
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.fltgetnewsystembufferaddress, fltkernel/FltGetNewSystemBufferAddress, FltGetNewSystemBufferAddress function [Installable File System Drivers], FltApiRef_e_to_o_a9a2a8aa-92e5-4843-a1e9-5b1a15d870fa.xml, FltGetNewSystemBufferAddress
+ms.keywords: FltGetNewSystemBufferAddress, fltkernel/FltGetNewSystemBufferAddress, FltGetNewSystemBufferAddress function [Installable File System Drivers], ifsk.fltgetnewsystembufferaddress, FltApiRef_e_to_o_a9a2a8aa-92e5-4843-a1e9-5b1a15d870fa.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ If the FLTFL_CALLBACK_DATA_NEW_SYSTEM_BUFFER flag is not set, then this routine 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 7 and later versions of the Windows operating system. Available in Microsoft Windows 7 and later versions of the Windows operating system. |
+| **Windows version** | Available in Microsoft Windows 7 and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | Fltmgr.lib |

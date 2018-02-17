@@ -113,7 +113,7 @@ For D3DKEYEXCHANGE_RSAES_OAEP, the <b>pData</b> member of the <a href="..\d3dumd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | CryptoSessionKeyExchange is supported beginning with the Windows 7 operating system. CryptoSessionKeyExchange is supported beginning with the Windows 7 operating system. |
+| **Windows version** | CryptoSessionKeyExchange is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

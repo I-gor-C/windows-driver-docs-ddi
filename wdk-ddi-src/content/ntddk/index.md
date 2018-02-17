@@ -28,6 +28,7 @@ ntddk.h contains the following programming interfaces:
 | [PCREATE_PROCESS_NOTIFY_ROUTINE_EX](nc-ntddk-pcreate_process_notify_routine_ex.md) | A callback routine implemented by a driver to notify the caller when a process is created or exits. |
 | [PCREATE_THREAD_NOTIFY_ROUTINE](nc-ntddk-pcreate_thread_notify_routine.md) | A callback routine implemented by a driver to notify the caller when a thread is created or deleted. |
 | [PGET_LOCATION_STRING](nc-ntddk-pget_location_string.md) | The PnpGetLocationString routine provides the device-specific part of the device's SPDRP_LOCATION_PATHS property. |
+| [pHalExamineMBR](nc-ntddk-phalexaminembr.md) | The HalExamineMBR routine reads the master boot record (MBR) of a disk and returns data from the MBR if the MBR is of the type specified by the caller. |
 | [PLOAD_IMAGE_NOTIFY_ROUTINE](nc-ntddk-pload_image_notify_routine.md) | Called by the operating system to notify the driver when a driver image or a user image (for example, a DLL or EXE) is mapped into virtual memory. |
 | [PSHED_PI_ATTEMPT_ERROR_RECOVERY](nc-ntddk-pshed_pi_attempt_error_recovery.md) | A PSHED plug-in's AttemptRecovery callback function attempts to recover from a recoverable hardware error. |
 | [PSHED_PI_CLEAR_ERROR_RECORD](nc-ntddk-pshed_pi_clear_error_record.md) | A PSHED plug-in's ClearErrorRecord callback function clears the specified error record from the system's persistent data storage. |

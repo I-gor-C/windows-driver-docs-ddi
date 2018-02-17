@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: e99ebbe8-8605-4bf2-9ec0-d7cde25058f7
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netdma/NetDmaProviderStart, NetDmaProviderStart function [Network Drivers Starting with Windows Vista], netdma_ref_bdb7c400-1c73-4dcb-8eb2-4121172302ad.xml, netvista.netdmaproviderstart, NetDmaProviderStart
+ms.keywords: netvista.netdmaproviderstart, NetDmaProviderStart, NetDmaProviderStart function [Network Drivers Starting with Windows Vista], netdma_ref_bdb7c400-1c73-4dcb-8eb2-4121172302ad.xml, netdma/NetDmaProviderStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -110,7 +110,7 @@ Before a DMA provider driver calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NetDMA 1.0 drivers in Windows Vista. Supported for NetDMA 1.0 drivers in Windows Vista. |
+| **Windows version** | Supported for NetDMA 1.0 drivers in Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | netdma.h (include Netdma.h) |
 | **Library** | NtosKrnl.exe |
@@ -118,7 +118,11 @@ Before a DMA provider driver calls
 
 ## See Also
 
-<a href="..\netdma\nf-netdma-netdmaproviderstop.md">NetDmaProviderStop</a>
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
+
+
+
+<a href="..\netdma\ns-netdma-_net_dma_provider_attributes.md">NET_DMA_PROVIDER_ATTRIBUTES</a>
 
 
 
@@ -126,11 +130,7 @@ Before a DMA provider driver calls
 
 
 
-<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
-
-
-
-<a href="..\netdma\ns-netdma-_net_dma_provider_attributes.md">NET_DMA_PROVIDER_ATTRIBUTES</a>
+<a href="..\netdma\nf-netdma-netdmaproviderstop.md">NetDmaProviderStop</a>
 
 
 

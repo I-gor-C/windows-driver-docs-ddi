@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 76B7F24C-5376-4DE1-86E7-D2D688B86BCF
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcxControllerSetFailed, buses._ucxcontrollersetfailed, ucxcontroller/UcxControllerSetFailed, UcxControllerSetFailed method [Buses]
+ms.keywords: UcxControllerSetFailed, UcxControllerSetFailed method [Buses], ucxcontroller/UcxControllerSetFailed, buses._ucxcontrollersetfailed
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ The client driver for host controller must call this function if the driver fail
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 | **Library** | NtosKrnl.exe |

@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiGetChildContainerId
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -78,6 +78,7 @@ A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_container_id.md">DXG
 ## Return Value
 
 Returns one of the following error codes.
+
 <table>
 <tr>
 <th>Return code</th>
@@ -107,7 +108,8 @@ The driver has accepted the default container ID information provided in the str
 <div> </div>
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 Otherwise the function returns one of the status codes defined in Ntstatus.h.
 
@@ -124,7 +126,7 @@ For more information about Container IDs, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | dispmprt.h |
 | **IRQL** | PASSIVE_LEVEL |
@@ -133,11 +135,19 @@ For more information about Container IDs, see <a href="https://msdn.microsoft.co
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_device_descriptor.md">DxgkDdiQueryDeviceDescriptor</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_container_id.md">DXGK_CHILD_CONTAINER_ID</a>
+
+
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_container_id.md">DXGK_CHILD_CONTAINER_ID</a>
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+
+
 
  
 

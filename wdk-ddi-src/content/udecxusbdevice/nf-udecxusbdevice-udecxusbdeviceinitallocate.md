@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 127D132B-6A40-4F6F-BCDA-473F89A1A747
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.udecxusbdeviceinitallocate, UdecxUsbDeviceInitAllocate, UdecxUsbDeviceInitAllocate function [Buses], udecxusbdevice/UdecxUsbDeviceInitAllocate
+ms.keywords: UdecxUsbDeviceInitAllocate, buses.udecxusbdeviceinitallocate, udecxusbdevice/UdecxUsbDeviceInitAllocate, UdecxUsbDeviceInitAllocate function [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ The UDE client driver calls this method to allocate parameters for the virtual d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
@@ -84,11 +84,11 @@ The UDE client driver calls this method to allocate parameters for the virtual d
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

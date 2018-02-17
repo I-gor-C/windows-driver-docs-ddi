@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: BA86280E-8324-4D98-B16C-504D427A6A4B
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ufxdevicecreate, UfxDeviceCreate, ufxclient/UfxDeviceCreate, UfxDeviceCreate method [Buses]
+ms.keywords: UfxDeviceCreate, ufxclient/UfxDeviceCreate, buses.ufxdevicecreate, UfxDeviceCreate method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -191,7 +191,7 @@ Return Value:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
 | **Library** | NtosKrnl.exe |

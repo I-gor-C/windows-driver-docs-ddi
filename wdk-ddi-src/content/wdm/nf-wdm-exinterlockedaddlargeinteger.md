@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ace8405b-74a7-4797-8d3d-3caf673dace2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/ExInterlockedAddLargeInteger, kernel.exinterlockedaddlargeinteger, ExInterlockedAddLargeInteger routine [Kernel-Mode Driver Architecture], ExInterlockedAddLargeInteger, k102_934a3a64-9f63-402c-8b55-db7e2b4d9d4b.xml
+ms.keywords: k102_934a3a64-9f63-402c-8b55-db7e2b4d9d4b.xml, wdm/ExInterlockedAddLargeInteger, ExInterlockedAddLargeInteger routine [Kernel-Mode Driver Architecture], ExInterlockedAddLargeInteger, kernel.exinterlockedaddlargeinteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,7 +92,7 @@ Callers of <b>ExInterlockedAddLargeInteger</b> run at any IRQL. The storage for 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Not available in Windows 98 or Windows Me. Available in Windows 2000 and later versions of Windows. Not available in Windows 98 or Windows Me. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Not available in Windows 98 or Windows Me.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -101,11 +101,11 @@ Callers of <b>ExInterlockedAddLargeInteger</b> run at any IRQL. The storage for 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-
-
-
 <a href="..\wdm\nf-wdm-exinterlockedaddulong.md">ExInterlockedAddUlong</a>
+
+
+
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 
 
 

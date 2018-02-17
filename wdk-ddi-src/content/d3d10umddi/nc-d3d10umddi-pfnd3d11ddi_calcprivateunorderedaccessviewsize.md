@@ -78,7 +78,7 @@ SIZE_T Pfnd3d11ddiCalcprivateunorderedaccessviewsize(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | CalcPrivateUnorderedAccessViewSize is supported beginning with the Windows 7 operating system. CalcPrivateUnorderedAccessViewSize is supported beginning with the Windows 7 operating system. |
+| **Windows version** | CalcPrivateUnorderedAccessViewSize is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 

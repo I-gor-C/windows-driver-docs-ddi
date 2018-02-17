@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: FAE099E4-6BE9-4637-934F-9F86FFDCAA6A
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses._ucxcontrollerneedsreset, ucxcontroller/UcxControllerNeedsReset, UcxControllerNeedsReset, UcxControllerNeedsReset method [Buses]
+ms.keywords: UcxControllerNeedsReset, buses._ucxcontrollerneedsreset, UcxControllerNeedsReset method [Buses], ucxcontroller/UcxControllerNeedsReset
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -72,7 +72,7 @@ If the operation is successful, the method returns TRUE. Otherwise it returns FA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 17EBEEF1-4C86-4948-AADA-669B2952755A
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "_D3DDDIARG_PRESENT1, D3DDDIARG_PRESENT1 structure [Display Devices], display.d3dddiarg_present1, d3dumddi/D3DDDIARG_PRESENT1, D3DDDIARG_PRESENT1"
+ms.keywords: d3dumddi/D3DDDIARG_PRESENT1, _D3DDDIARG_PRESENT1, display.d3dddiarg_present1, D3DDDIARG_PRESENT1, D3DDDIARG_PRESENT1 structure [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -114,6 +114,10 @@ This member is reserved and should be set to zero.
 
 ## See Also
 
+<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
+
+
+
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_presentflags.md">D3DDDI_PRESENTFLAGS</a>
 
 
@@ -127,10 +131,6 @@ This member is reserved and should be set to zero.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
-<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
 
 
 

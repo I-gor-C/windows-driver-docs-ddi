@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: FC0F6C02-C53A-4F7E-B718-70788FA807F3
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ucxcontrollersetidstrings, UcxControllerSetIdStrings function [Buses], UcxControllerSetIdStrings, ucxcontroller/UcxControllerSetIdStrings
+ms.keywords: ucxcontroller/UcxControllerSetIdStrings, UcxControllerSetIdStrings function [Buses], buses.ucxcontrollersetidstrings, UcxControllerSetIdStrings
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,7 +88,7 @@ The function returns STATUS_SUCCESS if the operation succeeds. Otherwise, this m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

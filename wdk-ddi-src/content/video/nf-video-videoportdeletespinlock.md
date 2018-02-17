@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 74845e4d-0fa1-4625-96a7-2fddec8b901d
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml, display.videoportdeletespinlock, VideoPortDeleteSpinLock function [Display Devices], video/VideoPortDeleteSpinLock, VideoPortDeleteSpinLock
+ms.keywords: VideoPortDeleteSpinLock, VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml, VideoPortDeleteSpinLock function [Display Devices], video/VideoPortDeleteSpinLock, display.videoportdeletespinlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ This routine cannot be called from an ISR or from a <a href="..\video\nf-video-v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

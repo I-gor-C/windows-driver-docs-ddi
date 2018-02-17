@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 43294943-cc73-45d4-8e0b-e7d29420bb7e
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfchildlist/WdfRetrieveUnspecified, wdfchildlist/WDF_RETRIEVE_CHILD_FLAGS, WdfRetrievePresentChildren, wdfchildlist/WdfRetrievePresentChildren, WDF_RETRIEVE_CHILD_FLAGS enumeration, WdfRetrieveMissingChildren, WdfRetrievePendingChildren, wdfchildlist/WdfRetrievePendingChildren, WdfRetrieveUnspecified, wdfchildlist/WdfRetrieveAddedChildren, WDF_RETRIEVE_CHILD_FLAGS, wdf.wdf_retrieve_child_flags, WdfRetrieveAllChildren, _WDF_RETRIEVE_CHILD_FLAGS, wdfchildlist/WdfRetrieveMissingChildren, WdfRetrieveAddedChildren, wdfchildlist/WdfRetrieveAllChildren, DFDeviceObjectChildListRef_f82096f7-f6f9-4e49-a3e3-2641f60f98d9.xml, kmdf.wdf_retrieve_child_flags
+ms.keywords: WdfRetrieveAddedChildren, WdfRetrieveAllChildren, WdfRetrieveMissingChildren, WDF_RETRIEVE_CHILD_FLAGS, wdfchildlist/WdfRetrieveAllChildren, WdfRetrievePresentChildren, wdfchildlist/WdfRetrieveMissingChildren, WdfRetrievePendingChildren, wdfchildlist/WdfRetrieveUnspecified, _WDF_RETRIEVE_CHILD_FLAGS, wdfchildlist/WdfRetrievePendingChildren, wdf.wdf_retrieve_child_flags, wdfchildlist/WDF_RETRIEVE_CHILD_FLAGS, DFDeviceObjectChildListRef_f82096f7-f6f9-4e49-a3e3-2641f60f98d9.xml, WdfRetrieveUnspecified, wdfchildlist/WdfRetrievePresentChildren, WDF_RETRIEVE_CHILD_FLAGS enumeration, wdfchildlist/WdfRetrieveAddedChildren, kmdf.wdf_retrieve_child_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -108,11 +108,11 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 
     ## See Also
 
-        <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
+        <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
 
 
 
-<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
 
 
 
@@ -120,7 +120,7 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 
 
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
+<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
 
 
 

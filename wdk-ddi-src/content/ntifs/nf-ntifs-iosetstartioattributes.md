@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 47ae3578-231c-49c8-a851-9f165db27fb1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoSetStartIoAttributes routine [Kernel-Mode Driver Architecture], wdm/IoSetStartIoAttributes, kernel.iosetstartioattributes, k104_cf8613cc-f891-45f7-816c-224b3294f8dd.xml, IoSetStartIoAttributes
+ms.keywords: wdm/IoSetStartIoAttributes, kernel.iosetstartioattributes, IoSetStartIoAttributes, k104_cf8613cc-f891-45f7-816c-224b3294f8dd.xml, IoSetStartIoAttributes routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available for Microsoft Windows XP and later versions of the Windows operating system. Available for Microsoft Windows XP and later versions of the Windows operating system. |
+| **Windows version** | Available for Microsoft Windows XP and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -90,11 +90,11 @@ None
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a>
+
+
+
+<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 0BDC6629-9C0E-4437-888D-1EF730714CA4
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.psupdatediskcounters, ntifs/PsUpdateDiskCounters, PsUpdateDiskCounters routine [Installable File System Drivers], PsUpdateDiskCounters
+ms.keywords: ntifs/PsUpdateDiskCounters, PsUpdateDiskCounters routine [Installable File System Drivers], ifsk.psupdatediskcounters, PsUpdateDiskCounters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,7 +98,7 @@ File system drivers use <b>PsUpdateDiskCounters</b> to update counts for disk I/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

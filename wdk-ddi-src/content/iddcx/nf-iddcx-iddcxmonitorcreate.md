@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2e089827-dd50-43cb-9e1a-34c439780831
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: IddCxMonitorCreate, display.iddcxmonitorcreate, IddCxMonitorCreate method [Display Devices], iddcx/IddCxMonitorCreate
+ms.keywords: display.iddcxmonitorcreate, IddCxMonitorCreate method [Display Devices], IddCxMonitorCreate, iddcx/IddCxMonitorCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ Output arguments to the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **Library** | NtosKrnl.exe |

@@ -149,7 +149,7 @@ If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Windows version** | Available starting with Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

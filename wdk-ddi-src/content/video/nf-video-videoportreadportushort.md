@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a5277cee-40e8-4c87-8521-8ae59c9b33a3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportreadportushort, VideoPortReadPortUshort function [Display Devices], video/VideoPortReadPortUshort, VideoPortReadPortUshort, VideoPort_Functions_cb14aa82-3092-4982-83c5-4682d7a487c0.xml
+ms.keywords: VideoPortReadPortUshort, VideoPort_Functions_cb14aa82-3092-4982-83c5-4682d7a487c0.xml, VideoPortReadPortUshort function [Display Devices], video/VideoPortReadPortUshort, display.videoportreadportushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ Callers of <b>VideoPortReadPortUshort</b> can be running at any IRQL, provided t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |
@@ -85,15 +85,15 @@ Callers of <b>VideoPortReadPortUshort</b> can be running at any IRQL, provided t
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-
-
-
 <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 
 
 <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
+
+
+
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 
 
 

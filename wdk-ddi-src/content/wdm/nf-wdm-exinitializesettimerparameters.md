@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 43A07E6E-C69F-4D6C-9B9C-EB7FFDF7651E
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.exinitializesettimerparameters, ExInitializeSetTimerParameters routine [Kernel-Mode Driver Architecture], ExInitializeSetTimerParameters, wdm/ExInitializeSetTimerParameters
+ms.keywords: ExInitializeSetTimerParameters, ExInitializeSetTimerParameters routine [Kernel-Mode Driver Architecture], wdm/ExInitializeSetTimerParameters, kernel.exinitializesettimerparameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ Your driver must call <b>ExInitializeSetTimerParameters</b> to initialize an <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |

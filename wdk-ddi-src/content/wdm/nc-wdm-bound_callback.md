@@ -40,7 +40,7 @@ apiname:
 -	BoundCallback
 product: Windows
 targetos: Windows
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product: Windows 10 or later.
 ---
 
@@ -76,15 +76,19 @@ Use <a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Windows version** | Available starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | wdm.h |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a>
+
+
+
 <a href="..\wdm\nf-wdm-kederegisterboundcallback.md">KeDeregisterBoundCallback</a>
 
-<a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a>
+
 
  
 

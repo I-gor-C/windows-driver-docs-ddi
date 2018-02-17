@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 94e7c36a-e45c-4d98-aeb7-f23769347ca5
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcmTcpciPortControllerStart method [Buses], UcmTcpciPortControllerStart, buses.ucmtcpciportcontrollerstart, ucmtcpciportcontroller/UcmTcpciPortControllerStart
+ms.keywords: UcmTcpciPortControllerStart, UcmTcpciPortControllerStart method [Buses], buses.ucmtcpciportcontrollerstart, ucmtcpciportcontroller/UcmTcpciPortControllerStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -114,7 +114,7 @@ On boot, if the BIOS had already negotiated a PD contract, UcmTcpciCx starts fro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** | Ucmtcpcicxstub.lib |

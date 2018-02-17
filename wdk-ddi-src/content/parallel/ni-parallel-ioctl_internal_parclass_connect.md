@@ -82,11 +82,11 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 ## See Also
 
-<a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a>
-
-
-
 <a href="..\parallel\ni-parallel-ioctl_internal_parclass_disconnect.md">IOCTL_INTERNAL_PARCLASS_DISCONNECT</a>
+
+
+
+<a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a>
 
 
 

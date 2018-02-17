@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 29862d9b-c004-445b-b90b-6990e5e01966
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: ucmtcpciportcontroller/UcmTcpciPortControllerCreate, buses.ucmtcpciportcontrollercreate, UcmTcpciPortControllerCreate, UcmTcpciPortControllerCreate method [Buses]
+ms.keywords: UcmTcpciPortControllerCreate method [Buses], buses.ucmtcpciportcontrollercreate, UcmTcpciPortControllerCreate, ucmtcpciportcontroller/UcmTcpciPortControllerCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -117,7 +117,7 @@ Invalid size for the structure pointed to by <i>Config</i> or <i> Config-&gt;Cap
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** | Ucmtcpcicxstub.lib |
@@ -125,15 +125,15 @@ Invalid size for the structure pointed to by <i>Config</i> or <i> Config-&gt;Cap
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
+
+
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EVT_WDF_DRIVER_DEVICE_ADD</a>
 
 
 
 <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_config.md">UCMTCPCI_PORT_CONTROLLER_CONFIG</a>
-
-
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 
 
 

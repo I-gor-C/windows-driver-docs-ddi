@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 445A9EBA-EF15-4FE4-9747-3E1E138E13E7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoGetActivityIdThread routine [Kernel-Mode Driver Architecture], kernel.iogetactivityidthread, ntddk/IoGetActivityIdThread, IoGetActivityIdThread
+ms.keywords: kernel.iogetactivityidthread, IoGetActivityIdThread routine [Kernel-Mode Driver Architecture], IoGetActivityIdThread, ntddk/IoGetActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,7 +67,7 @@ The activity ID associated with the current thread.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Windows version** | Available starting with  Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

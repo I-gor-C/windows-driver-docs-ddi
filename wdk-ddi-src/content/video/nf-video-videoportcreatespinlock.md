@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: bb5f3b3e-3358-4181-9c4d-1871be1a7b7b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportcreatespinlock, VideoPortCreateSpinLock function [Display Devices], VideoPortCreateSpinLock, video/VideoPortCreateSpinLock, VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml
+ms.keywords: VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml, VideoPortCreateSpinLock, VideoPortCreateSpinLock function [Display Devices], display.videoportcreatespinlock, video/VideoPortCreateSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ This routine must be called before an initial call to <a href="..\video\nf-video
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

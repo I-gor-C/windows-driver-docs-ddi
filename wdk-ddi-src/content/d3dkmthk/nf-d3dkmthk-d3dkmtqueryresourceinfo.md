@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d195634e-d626-43c9-8212-f32b95c1f526
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTQueryResourceInfo, D3DKMTQueryResourceInfo function [Display Devices], display.d3dkmtqueryresourceinfo, D3DKMTQueryResourceInfo, OpenGL_Functions_77dad2ba-a352-4b1a-b2be-53c41589bf90.xml
+ms.keywords: OpenGL_Functions_77dad2ba-a352-4b1a-b2be-53c41589bf90.xml, D3DKMTQueryResourceInfo function [Display Devices], D3DKMTQueryResourceInfo, d3dkmthk/D3DKMTQueryResourceInfo, display.d3dkmtqueryresourceinfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -129,7 +129,7 @@ For an example of how an OpenGL ICD can use <b>D3DKMTQueryResourceInfo</b> to re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |
@@ -137,11 +137,11 @@ For an example of how an OpenGL ICD can use <b>D3DKMTQueryResourceInfo</b> to re
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
-
-
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryresourceinfo.md">D3DKMT_QUERYRESOURCEINFO</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
 
 
 

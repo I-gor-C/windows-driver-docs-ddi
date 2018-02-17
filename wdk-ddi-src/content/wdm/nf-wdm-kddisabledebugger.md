@@ -80,7 +80,7 @@ After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000 and later versions of Windows. Available in Microsoft Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Microsoft Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |

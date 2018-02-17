@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 235ec93e-5b3c-4a19-876f-f668271a56a5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture], k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, wdm/KeQueryGroupAffinity, kernel.kequerygroupaffinity
+ms.keywords: KeQueryGroupAffinity, kernel.kequerygroupaffinity, wdm/KeQueryGroupAffinity, k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ A related routine, <a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryAct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Windows version** | Available in Windows 7 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -83,11 +83,11 @@ A related routine, <a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryAct
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryActiveProcessors</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
+
+
+
+<a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryActiveProcessors</a>
 
 
 

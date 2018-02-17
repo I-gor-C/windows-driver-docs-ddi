@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0ad85551-a8d2-4f7f-958b-fe23111de340
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.iocreatedisk, ntddk/IoCreateDisk, rtns-disk_5f69686f-f812-4ccc-8bc8-4caa70230d20.xml, IoCreateDisk, IoCreateDisk routine [Storage Devices]
+ms.keywords: ntddk/IoCreateDisk, IoCreateDisk routine [Storage Devices], rtns-disk_5f69686f-f812-4ccc-8bc8-4caa70230d20.xml, IoCreateDisk, storage.iocreatedisk
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is only available on Windows XP and later. This routine is only available on Windows XP and later. |
+| **Windows version** | This routine is only available on Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -86,11 +86,11 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
-
-
-
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a>
+
+
+
+<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2DFC2C13-19C4-4DFD-B18B-459B38521962
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: IoGetOplockKeyContextEx, ifsk.iogetoplockkeycontextex, IoGetOplockKeyContextEx routine [Installable File System Drivers], ntddk/IoGetOplockKeyContextEx
+ms.keywords: ntddk/IoGetOplockKeyContextEx, IoGetOplockKeyContextEx routine [Installable File System Drivers], IoGetOplockKeyContextEx, ifsk.iogetoplockkeycontextex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,7 +71,7 @@ An pointer to an <a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The IoGetOplockKeyContextEx routine is available starting with Windows 8. The IoGetOplockKeyContextEx routine is available starting with Windows 8. |
+| **Windows version** | The IoGetOplockKeyContextEx routine is available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h |
 | **Library** | Ntoskrnl.lib |
@@ -79,7 +79,7 @@ An pointer to an <a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_C
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
 
 
 
@@ -87,7 +87,7 @@ An pointer to an <a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_C
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_CONTEXT</a>
 
 
 

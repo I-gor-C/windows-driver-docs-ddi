@@ -86,7 +86,7 @@ The minidriver specifies this routine's address in the <i>Handshake</i> paramete
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
 
@@ -94,9 +94,15 @@ The minidriver specifies this routine's address in the <i>Handshake</i> paramete
 
 <a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
 
+
+
 <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
 
+
+
 <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a>
+
+
 
  
 

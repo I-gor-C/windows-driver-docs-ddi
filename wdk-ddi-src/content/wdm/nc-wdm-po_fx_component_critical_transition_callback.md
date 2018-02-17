@@ -99,7 +99,7 @@ A PEP can call this routine at IRQL TBD.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Windows version** | Supported starting with Windows 10.  |
 | **Target Platform** | Windows |
 | **Header** | wdm.h |
 | **IRQL** | TBD |

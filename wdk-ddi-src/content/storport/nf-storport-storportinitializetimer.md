@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1F43EEDC-5DB4-4ABE-BBC6-A4A51FCAF0B6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortInitializeTimer routine [Storage Devices], storport/StorPortInitializeTimer, StorPortInitializeTimer, storage.storportinitializetimer
+ms.keywords: storport/StorPortInitializeTimer, StorPortInitializeTimer, StorPortInitializeTimer routine [Storage Devices], storage.storportinitializetimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -148,7 +148,7 @@ Starting with Windows 8, there is no maximum timers limitation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |
@@ -156,7 +156,7 @@ Starting with Windows 8, there is no maximum timers limitation.
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportfreetimer.md">StorPortFreeTimer</a>
+<a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
 
 
 
@@ -164,11 +164,11 @@ Starting with Windows 8, there is no maximum timers limitation.
 
 
 
-<a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
-
-
-
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
+
+
+<a href="..\storport\nf-storport-storportfreetimer.md">StorPortFreeTimer</a>
 
 
 

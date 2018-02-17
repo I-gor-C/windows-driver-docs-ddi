@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: a4e8aee0-d3ac-4086-99a3-a0339b198372
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audpc-routines_0f94b5f4-2667-488d-a191-4cf13a1f3a27.xml, audio.pcgetcontentrights, PcGetContentRights function [Audio Devices], PcGetContentRights, portcls/PcGetContentRights
+ms.keywords: PcGetContentRights function [Audio Devices], PcGetContentRights, audpc-routines_0f94b5f4-2667-488d-a191-4cf13a1f3a27.xml, portcls/PcGetContentRights, audio.pcgetcontentrights
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmgetcontent
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcGetContentRights function in Microsoft Windows XP and later operating systems. The PortCls system driver implements the PcGetContentRights function in Microsoft Windows XP and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcGetContentRights function in Microsoft Windows XP and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |

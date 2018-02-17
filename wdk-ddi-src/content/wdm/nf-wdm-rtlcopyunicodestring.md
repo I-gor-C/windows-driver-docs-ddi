@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 241801a5-4a02-46f3-a007-f571d58c7825
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_5d0b341c-a440-4137-bdc3-77e0da0db58c.xml, wdm/RtlCopyUnicodeString, RtlCopyUnicodeString, kernel.rtlcopyunicodestring, RtlCopyUnicodeString routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.rtlcopyunicodestring, k109_5d0b341c-a440-4137-bdc3-77e0da0db58c.xml, RtlCopyUnicodeString, RtlCopyUnicodeString routine [Kernel-Mode Driver Architecture], wdm/RtlCopyUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,7 +88,7 @@ The <i>DestinationString</i> and <i>SourceString</i> buffers must be resident if
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

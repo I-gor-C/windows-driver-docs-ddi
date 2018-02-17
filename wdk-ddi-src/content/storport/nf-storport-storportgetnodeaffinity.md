@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 183940c9-f8d9-411f-a593-e283f72e05f8
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortGetNodeAffinity routine [Storage Devices], storprt_fdd62c09-d9ce-49cd-b390-c7c9a76a098f.xml, StorPortGetNodeAffinity, storage.storportgetnodeaffinity, storport/StorPortGetNodeAffinity
+ms.keywords: storage.storportgetnodeaffinity, StorPortGetNodeAffinity, StorPortGetNodeAffinity routine [Storage Devices], storport/StorPortGetNodeAffinity, storprt_fdd62c09-d9ce-49cd-b390-c7c9a76a098f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -121,7 +121,7 @@ The operation fails with this return value if one or more of the parameters are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

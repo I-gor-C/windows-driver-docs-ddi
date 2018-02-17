@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d3e90c3b-5ead-40d1-9143-a2b1fc8c255d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeLeaveCriticalRegion routine [Kernel-Mode Driver Architecture], kernel.keleavecriticalregion, KeLeaveCriticalRegion, wdm/KeLeaveCriticalRegion, k105_f9344044-a57f-4ee4-800c-a03edcc27196.xml
+ms.keywords: KeLeaveCriticalRegion routine [Kernel-Mode Driver Architecture], KeLeaveCriticalRegion, wdm/KeLeaveCriticalRegion, k105_f9344044-a57f-4ee4-800c-a03edcc27196.xml, kernel.keleavecriticalregion
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -68,7 +68,7 @@ Highest-level drivers can call this routine while running in the context of the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

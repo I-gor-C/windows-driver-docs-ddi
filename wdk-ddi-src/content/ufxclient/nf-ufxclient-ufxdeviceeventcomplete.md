@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: DAC18721-5747-4D5E-8A25-24B80DE77C99
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ufxdeviceeventcomplete, ufxclient/UfxDeviceEventComplete, UfxDeviceEventComplete, UfxDeviceEventComplete method [Buses]
+ms.keywords: UfxDeviceEventComplete method [Buses], buses.ufxdeviceeventcomplete, UfxDeviceEventComplete, ufxclient/UfxDeviceEventComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -137,7 +137,7 @@ For example, your callback function could use the following code:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
 | **Library** | NtosKrnl.exe |

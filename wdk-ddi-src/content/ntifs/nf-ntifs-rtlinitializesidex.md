@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 367D8BC1-07F4-474E-913A-5F825320A70C
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.rtlinitializesidex, RtlInitializeSidEx routine [Installable File System Drivers], RtlInitializeSidEx, ntifs/RtlInitializeSidEx
+ms.keywords: RtlInitializeSidEx routine [Installable File System Drivers], RtlInitializeSidEx, ntifs/RtlInitializeSidEx, ifsk.rtlinitializesidex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -117,7 +117,7 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Windows 10 and later. This routine is available on Windows 10 and later. |
+| **Windows version** | This routine is available on Windows 10 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -126,15 +126,15 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
+<a href="..\ntifs\ns-ntifs-_sid_identifier_authority.md">SID_IDENTIFIER_AUTHORITY</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
 
 
 
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_sid_identifier_authority.md">SID_IDENTIFIER_AUTHORITY</a>
 
 
 

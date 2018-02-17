@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: cd6d2ab6-ce17-47db-b5d0-4f9543e15487
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/FsRtlRegisterFileSystemFilterCallbacks, FsRtlRegisterFileSystemFilterCallbacks routine [Installable File System Drivers], ifsk.fsrtlregisterfilesystemfiltercallbacks, fsrtlref_a831a0f3-f819-45e3-9121-ae50ef1b95bf.xml, FsRtlRegisterFileSystemFilterCallbacks
+ms.keywords: ntifs/FsRtlRegisterFileSystemFilterCallbacks, FsRtlRegisterFileSystemFilterCallbacks, fsrtlref_a831a0f3-f819-45e3-9121-ae50ef1b95bf.xml, FsRtlRegisterFileSystemFilterCallbacks routine [Installable File System Drivers], ifsk.fsrtlregisterfilesystemfiltercallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -674,7 +674,7 @@ ReleaseForModWrite
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows XP and later versions of the Windows operating system. This routine is available on Microsoft Windows XP and later versions of the Windows operating system. |
+| **Windows version** | This routine is available on Microsoft Windows XP and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

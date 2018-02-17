@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 057b548a-d9e4-4db4-b34f-d867b7be3971
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiamicro/Scan, Scan function [Imaging Devices], Scan, image.scan, MicroDrv_ab289619-86b7-47fd-a5f5-e8533da4db31.xml
+ms.keywords: image.scan, MicroDrv_ab289619-86b7-47fd-a5f5-e8533da4db31.xml, wiamicro/Scan, Scan, Scan function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -130,7 +130,7 @@ If the function succeeds, it returns S_OK. If the function fails, it returns a s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamicro.h (include Wiamicro.h) |
 | **Library** | NtosKrnl.lib |
@@ -138,15 +138,15 @@ If the function succeeds, it returns S_OK. If the function fails, it returns a s
 
 ## See Also
 
-<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a>
+
+
+
+<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
 
 
 

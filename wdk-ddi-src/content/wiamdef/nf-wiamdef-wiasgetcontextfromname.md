@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: d15bf48e-132d-4f89-8f19-64f57deed500
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wiasgetcontextfromname, wiasGetContextFromName, wiasGetContextFromName function [Imaging Devices], wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml, wiamdef/wiasGetContextFromName
+ms.keywords: wiasGetContextFromName function [Imaging Devices], wiasGetContextFromName, wiamdef/wiasGetContextFromName, image.wiasgetcontextfromname, wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ This function should be used by minidrivers when they need to move from one appl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

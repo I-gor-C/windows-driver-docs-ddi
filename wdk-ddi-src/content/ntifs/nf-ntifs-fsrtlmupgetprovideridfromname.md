@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: a572398c-1755-4fc6-844b-85059d4d02cb
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FsRtlMupGetProviderIdFromName, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml, FsRtlMupGetProviderIdFromName routine [Installable File System Drivers], ntifs/FsRtlMupGetProviderIdFromName, ifsk.fsrtlmupgetprovideridfromname
+ms.keywords: FsRtlMupGetProviderIdFromName routine [Installable File System Drivers], ntifs/FsRtlMupGetProviderIdFromName, ifsk.fsrtlmupgetprovideridfromname, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml, FsRtlMupGetProviderIdFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -122,7 +122,7 @@ To get the provider identifier of a network redirector from a file object, a fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The FsRtlMupGetProviderIdFromName function is available in Windows Vista and later versions of Windows. The FsRtlMupGetProviderIdFromName function is available in Windows Vista and later versions of Windows. |
+| **Windows version** | The FsRtlMupGetProviderIdFromName function is available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

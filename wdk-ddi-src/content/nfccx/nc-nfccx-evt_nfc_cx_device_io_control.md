@@ -96,7 +96,7 @@ The client can complete the request either synchronously or asynchronously. The 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Desktop |
 | **Header** | nfccx.h (include Ncidef.h) |
 | **IRQL** | Requires same |

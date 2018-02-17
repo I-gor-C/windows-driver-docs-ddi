@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5f2bb0ef-af54-48e7-a2f5-8c8877bedb4a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k106_48bc7719-e11c-4c70-a976-c7fbecbff464.xml, MmUnmapReservedMapping, kernel.mmunmapreservedmapping, wdm/MmUnmapReservedMapping, MmUnmapReservedMapping routine [Kernel-Mode Driver Architecture]
+ms.keywords: MmUnmapReservedMapping routine [Kernel-Mode Driver Architecture], MmUnmapReservedMapping, wdm/MmUnmapReservedMapping, kernel.mmunmapreservedmapping, k106_48bc7719-e11c-4c70-a976-c7fbecbff464.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -90,15 +90,15 @@ None
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
-
-
-
 <a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
 
 
 
 <a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
 
 
 

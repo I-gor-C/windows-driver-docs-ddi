@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 42e0a96b-2b0b-4d22-8c91-14457d02e9c7
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: HidD_GetInputReport, hidsdi/HidD_GetInputReport, hidfunc_fdcd7a5b-6623-419f-abdf-de19370ee793.xml, HidD_GetInputReport routine [Human Input Devices], hid.hidd_getinputreport
+ms.keywords: HidD_GetInputReport, hidfunc_fdcd7a5b-6623-419f-abdf-de19370ee793.xml, HidD_GetInputReport routine [Human Input Devices], hidsdi/HidD_GetInputReport, hid.hidd_getinputreport
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -141,7 +141,7 @@ Only user-mode applications can call <b>HidD_GetInputReport</b>. Kernel-mode dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | hidsdi.h (include Hidsdi.h) |
 | **Library** | Hid.lib |
@@ -149,11 +149,7 @@ Only user-mode applications can call <b>HidD_GetInputReport</b>. Kernel-mode dri
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_set_feature.md">IOCTL_HID_SET_FEATURE</a>
-
-
-
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_feature.md">IOCTL_HID_GET_FEATURE</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_setoutputreport.md">HidD_SetOutputReport</a>
 
 
 
@@ -161,15 +157,19 @@ Only user-mode applications can call <b>HidD_GetInputReport</b>. Kernel-mode dri
 
 
 
-<a href="..\hidsdi\nf-hidsdi-hidd_setoutputreport.md">HidD_SetOutputReport</a>
-
-
-
 <a href="..\hidclass\ni-hidclass-ioctl_hid_set_output_report.md">IOCTL_HID_SET_OUTPUT_REPORT</a>
 
 
 
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_feature.md">IOCTL_HID_GET_FEATURE</a>
+
+
+
 <a href="..\hidsdi\nf-hidsdi-hidd_setfeature.md">HidD_SetFeature</a>
+
+
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_set_feature.md">IOCTL_HID_SET_FEATURE</a>
 
 
 

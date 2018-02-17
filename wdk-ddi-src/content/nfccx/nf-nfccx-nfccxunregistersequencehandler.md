@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 689BF221-22CA-43B4-A5EB-ECE0B78F520B
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: NfcCxUnregisterSequenceHandler method [Near-Field Proximity Drivers], nfccx/NfcCxUnregisterSequenceHandler, nfpdrivers._nfccxunregistersequencehandler, NfcCxUnregisterSequenceHandler
+ms.keywords: NfcCxUnregisterSequenceHandler method [Near-Field Proximity Drivers], NfcCxUnregisterSequenceHandler, nfccx/NfcCxUnregisterSequenceHandler, nfpdrivers._nfccxunregistersequencehandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Windows |
 | **Header** | nfccx.h (include Ncidef.h) |
 | **Library** | Nfccxstub.lib |

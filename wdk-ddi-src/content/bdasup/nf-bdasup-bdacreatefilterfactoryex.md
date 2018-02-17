@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 105b6a66-5800-4079-af88-f44d01134ff0
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: bdaref_9a145859-e899-4180-ac91-63479e4e04c0.xml, stream.bdacreatefilterfactoryex, BdaCreateFilterFactoryEx, BdaCreateFilterFactoryEx function [Streaming Media Devices], bdasup/BdaCreateFilterFactoryEx
+ms.keywords: bdaref_9a145859-e899-4180-ac91-63479e4e04c0.xml, BdaCreateFilterFactoryEx, BdaCreateFilterFactoryEx function [Streaming Media Devices], stream.bdacreatefilterfactoryex, bdasup/BdaCreateFilterFactoryEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -111,17 +111,13 @@ A BDA minidriver calls <b>BdaCreateFilterFactoryEx</b> rather than the <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.  |
 | **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
 | **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
-
-<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
-
-
 
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
@@ -135,7 +131,11 @@ A BDA minidriver calls <b>BdaCreateFilterFactoryEx</b> rather than the <a href="
 
 
 
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
+<a href="..\ks\nf-ks-_ksedit.md">_KsEdit</a>
+
+
+
+<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
 
 
 
@@ -147,11 +147,11 @@ A BDA minidriver calls <b>BdaCreateFilterFactoryEx</b> rather than the <a href="
 
 
 
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
+
+
+
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-
-
-
-<a href="..\ks\nf-ks-_ksedit.md">_KsEdit</a>
 
 
 

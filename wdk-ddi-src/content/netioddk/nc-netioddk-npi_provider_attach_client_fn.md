@@ -124,6 +124,7 @@ A pointer to a variable into which the provider module will store a pointer to i
 
 A provider module's 
      <i>ProviderAttachClient</i> callback function returns one of the following NTSTATUS codes:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -175,6 +176,7 @@ A provider module can examine the client module's registration data. This data i
     pointed to by the 
     <i>ClientRegistrationInstance</i> parameter. The provider module uses this data to determine whether it
     will attach to the client module:
+
 <ul>
 <li>If the provider module determines that it will attach to the client module, then the 
      <i>ProviderAttachClient</i> callback function must do the following:
@@ -202,7 +204,8 @@ If the provider module determines that it will not attach to the client module, 
       <i>ProviderAttachClient</i> callback function must return STATUS_NOINTERFACE.
 
 </li>
-</ul>If the provider module attaches to the client module and it dynamically allocated memory for its
+</ul>
+If the provider module attaches to the client module and it dynamically allocated memory for its
     binding context, it should free that allocated memory when the NMR calls the provider module's 
     <a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
     ProviderCleanupBindingContext</a> callback function after the client module and provider module are
@@ -214,28 +217,42 @@ The NMR calls a provider module's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Windows |
 | **Header** | netioddk.h (include Wsk.h) |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
-<a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
-   ProviderCleanupBindingContext</a>
-
-<a href="..\netioddk\nf-netioddk-nmrregisterprovider.md">NmrRegisterProvider</a>
-
 <a href="..\netioddk\nf-netioddk-nmrproviderdetachclientcomplete.md">
    NmrProviderDetachClientComplete</a>
 
-<a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
 
-<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
 
 <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
 
+
+
+<a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
+
+
+
 <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
+
+
+
+<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+
+
+
+<a href="..\netioddk\nf-netioddk-nmrregisterprovider.md">NmrRegisterProvider</a>
+
+
+
+<a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
+   ProviderCleanupBindingContext</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: a681b704-80cc-406a-b60f-31ef5f953164
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMFlushLog, ndis/NdisMFlushLog, NdisMFlushLog function [Network Drivers Starting with Windows Vista], miniport_logging_ref_9de3f5b8-80d8-4f98-82ac-c4b490a3c8a4.xml, netvista.ndismflushlog
+ms.keywords: ndis/NdisMFlushLog, NdisMFlushLog, miniport_logging_ref_9de3f5b8-80d8-4f98-82ac-c4b490a3c8a4.xml, NdisMFlushLog function [Network Drivers Starting with Windows Vista], netvista.ndismflushlog
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ The driver must release any spin lock it is holding before calling
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -91,15 +91,15 @@ The driver must release any spin lock it is holding before calling
 
 
 
+<a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>
 
 
 
 <a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
 
 
 

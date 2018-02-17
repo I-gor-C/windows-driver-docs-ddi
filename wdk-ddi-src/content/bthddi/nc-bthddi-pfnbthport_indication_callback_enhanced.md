@@ -110,6 +110,6 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows 8 and later versions of Windows. Supported in Windows 8 and later versions of Windows. |
+| **Windows version** | Supported in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | bthddi.h (include Bthddi.h) |

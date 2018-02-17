@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 7C1DD018-2EDF-48BB-8DFC-ADAF72A1909D
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses._ucxiodevicecontrol, ucxcontroller/UcxIoDeviceControl, UcxIoDeviceControl, UcxIoDeviceControl method [Buses]
+ms.keywords: buses._ucxiodevicecontrol, UcxIoDeviceControl, ucxcontroller/UcxIoDeviceControl, UcxIoDeviceControl method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -191,7 +191,7 @@ WdfEvtIoDeviceControlEnd:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 | **Library** | NtosKrnl.exe |

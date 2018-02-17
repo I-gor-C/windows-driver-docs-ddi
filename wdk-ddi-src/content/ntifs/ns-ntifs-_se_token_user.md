@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3B870461-0C5D-46DF-A850-EB796AE5A4CB
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: PSE_TOKEN_USER, SE_TOKEN_USER structure [Installable File System Drivers], SE_TOKEN_USER, ntifs/PSE_TOKEN_USER, ifsk.se_token_user, PSE_TOKEN_USER structure pointer [Installable File System Drivers], ntifs/SE_TOKEN_USER, _SE_TOKEN_USER
+ms.keywords: PSE_TOKEN_USER structure pointer [Installable File System Drivers], PSE_TOKEN_USER, ntifs/SE_TOKEN_USER, ifsk.se_token_user, SE_TOKEN_USER, SE_TOKEN_USER structure [Installable File System Drivers], ntifs/PSE_TOKEN_USER, _SE_TOKEN_USER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,7 +79,7 @@ typedef struct _SE_TOKEN_USER {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556742">SID_AND_ATTRIBUTES</a>
+<a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
 
 
 
@@ -87,7 +87,7 @@ typedef struct _SE_TOKEN_USER {
 
 
 
-<a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556742">SID_AND_ATTRIBUTES</a>
 
 
 

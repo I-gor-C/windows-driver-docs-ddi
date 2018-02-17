@@ -74,11 +74,11 @@ Any event sink that implements <a href="..\printerextension\nn-printerextension-
 
 ## See Also
 
-<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a>
-
-
-
 <a href="..\printerextension\nn-printerextension-iprintschemaasyncoperationevent.md">IPrintSchemaAsyncOperationEvent</a>
+
+
+
+<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms694318(v=vs.85).aspx">IConnectionPoint</a>
 
 
 

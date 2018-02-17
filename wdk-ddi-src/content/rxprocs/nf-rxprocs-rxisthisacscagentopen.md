@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: b3bd9b9f-e859-4d7f-9735-5995cb3ef6e8
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RxIsThisACscAgentOpen function [Installable File System Drivers], rxprocs/RxIsThisACscAgentOpen, RxIsThisACscAgentOpen, ifsk.rxisthisacscagentopen, rxref_1d515511-d1dd-4090-9c9d-b87960d56f5c.xml
+ms.keywords: RxIsThisACscAgentOpen function [Installable File System Drivers], rxprocs/RxIsThisACscAgentOpen, RxIsThisACscAgentOpen, rxref_1d515511-d1dd-4090-9c9d-b87960d56f5c.xml, ifsk.rxisthisacscagentopen
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ The <b>RxIsThisACscAgentOpen</b> routine is called internally by RDBSS when init
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later. The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later. |
+| **Windows version** | The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxcontx.h, Rxprocs.h) |
 | **Library** | NtosKrnl.exe |

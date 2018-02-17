@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 93d5076c-d8db-4b4b-b390-5f9072d2ae63
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: stream.ksgateaddoffinputtoor, ks/KsGateAddOffInputToOr, KsGateAddOffInputToOr, avfunc_abee7d7c-388b-4a48-a573-6b46a1c9dc46.xml, KsGateAddOffInputToOr function [Streaming Media Devices]
+ms.keywords: stream.ksgateaddoffinputtoor, ks/KsGateAddOffInputToOr, KsGateAddOffInputToOr function [Streaming Media Devices], KsGateAddOffInputToOr, avfunc_abee7d7c-388b-4a48-a573-6b46a1c9dc46.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,13 +75,17 @@ This call is an empty function. It should be used for code readability and clari
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
 
 ## See Also
+
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
+
+
 
 <a href="..\ks\nf-ks-ksgateremoveoffinputfromor.md">KsGateRemoveOffInputFromOr</a>
 
@@ -91,15 +95,11 @@ This call is an empty function. It should be used for code readability and clari
 
 
 
-<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
-
-
-
-<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
-
-
-
 <a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
+
+
+
+<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 33140445-e312-4495-990a-033a87598fa1
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtopenkeyedmutex2, d3dkmthk/D3DKMTOpenKeyedMutex2, D3DKMTOpenKeyedMutex2 function [Display Devices], PFND3DKMT_OPENKEYEDMUTEX2, D3DKMTOpenKeyedMutex2
+ms.keywords: d3dkmthk/D3DKMTOpenKeyedMutex2, display.d3dkmtopenkeyedmutex2, D3DKMTOpenKeyedMutex2, D3DKMTOpenKeyedMutex2 function [Display Devices], PFND3DKMT_OPENKEYEDMUTEX2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

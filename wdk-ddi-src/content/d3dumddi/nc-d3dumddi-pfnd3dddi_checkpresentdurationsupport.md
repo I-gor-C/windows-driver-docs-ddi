@@ -78,7 +78,7 @@ If this routine succeeds, it returns <b>S_OK</b>. The driver should always retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 

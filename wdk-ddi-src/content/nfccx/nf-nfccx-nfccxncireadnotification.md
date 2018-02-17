@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 0D2FB16D-ABBC-428F-95D4-4B17E262D115
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: nfccx/NfcCxNciReadNotification, nfpdrivers._nfccxncireadnotification, NfcCxNciReadNotification, NfcCxNciReadNotification method [Near-Field Proximity Drivers]
+ms.keywords: nfccx/NfcCxNciReadNotification, NfcCxNciReadNotification method [Near-Field Proximity Drivers], nfpdrivers._nfccxncireadnotification, NfcCxNciReadNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Windows |
 | **Header** | nfccx.h (include Ncidef.h) |
 | **Library** | Nfccxstub.lib |

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream, audio.iminiportwavertinputstream_getreadpacket, GetReadPacket, portcls/IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface, IMiniportWaveRTInputStream::GetReadPacket, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method
+ms.keywords: IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, GetReadPacket method [Audio Devices], portcls/IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface, audio.iminiportwavertinputstream_getreadpacket, IMiniportWaveRTInputStream, IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -96,7 +96,7 @@ The packet size is the WaveRT buffer size divided by the NotificationCount passe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10 and later. Available in Windows 10 and later. |
+| **Windows version** | Available in Windows 10 and later.  |
 | **Target Platform** | Windows |
 | **Header** | portcls.h |
 | **Library** | portcls.h |

@@ -40,7 +40,7 @@ apiname:
 -	DxgkDdiDpcRoutine
 product: Windows
 targetos: Windows
-req.typenames: "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -78,7 +78,7 @@ If the display miniport driver is supporting several display adapters, the <i>Dx
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | dispmprt.h |
 | **IRQL** | DISPATCH_LEVEL |
@@ -86,6 +86,8 @@ If the display miniport driver is supporting several display adapters, the <i>Dx
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_interrupt_routine.md">DxgkDdiInterruptRoutine</a>
+
+
 
  
 

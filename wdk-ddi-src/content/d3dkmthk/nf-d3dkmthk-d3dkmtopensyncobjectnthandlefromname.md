@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 29EF6C90-E25F-4E03-8834-EC2546B670AA
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtopensyncobjectnthandlefromname, D3DKMTOpenSyncObjectNtHandleFromName function [Display Devices], D3DKMTOpenSyncObjectNtHandleFromName, d3dkmthk/D3DKMTOpenSyncObjectNtHandleFromName
+ms.keywords: D3DKMTOpenSyncObjectNtHandleFromName, d3dkmthk/D3DKMTOpenSyncObjectNtHandleFromName, display.d3dkmtopensyncobjectnthandlefromname, D3DKMTOpenSyncObjectNtHandleFromName function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -102,7 +102,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | GDI32.lib |

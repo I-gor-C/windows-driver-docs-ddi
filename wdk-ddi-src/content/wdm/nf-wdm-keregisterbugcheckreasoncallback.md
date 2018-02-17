@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 01528aa0-c580-4527-a64d-83f4ed39a471
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeRegisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], wdm/KeRegisterBugCheckReasonCallback, k105_6b2fbc25-072d-470f-9860-e820e60cdf90.xml, KeRegisterBugCheckReasonCallback, kernel.keregisterbugcheckreasoncallback
+ms.keywords: k105_6b2fbc25-072d-470f-9860-e820e60cdf90.xml, KeRegisterBugCheckReasonCallback, wdm/KeRegisterBugCheckReasonCallback, kernel.keregisterbugcheckreasoncallback, KeRegisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -150,7 +150,7 @@ To display secondary dump data, you can use the <a href="http://go.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows. Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows. |
+| **Windows version** | Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -158,26 +158,6 @@ To display secondary dump data, you can use the <a href="http://go.microsoft.com
 | **IRQL** | Any level |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-kederegisterbugcheckreasoncallback.md">KeDeregisterBugCheckReasonCallback</a>
-
-
-
-<a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
-
-
-
-<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
-
-
-
-<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
-
-
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
 
@@ -187,7 +167,27 @@ To display secondary dump data, you can use the <a href="http://go.microsoft.com
 
 
 
+<a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
+
+
+
+<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
+
+
+
 <a href="..\wdm\ne-wdm-_kbugcheck_callback_reason.md">KBUGCHECK_CALLBACK_REASON</a>
+
+
+
+<a href="..\wdm\nf-wdm-kederegisterbugcheckreasoncallback.md">KeDeregisterBugCheckReasonCallback</a>
+
+
+
+<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
 
 
 

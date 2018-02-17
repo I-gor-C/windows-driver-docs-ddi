@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 676A458E-A6E0-4F09-AAF2-21EA122EF74D
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, kmdf.wdfdevicewdmassignpowerframeworksettings, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, WdfDeviceWdmAssignPowerFrameworkSettings, wdf.wdfdevicewdmassignpowerframeworksettings, WdfDeviceWdmAssignPowerFrameworkSettings method
+ms.keywords: wdf.wdfdevicewdmassignpowerframeworksettings, kmdf.wdfdevicewdmassignpowerframeworksettings, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, WdfDeviceWdmAssignPowerFrameworkSettings, wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, WdfDeviceWdmAssignPowerFrameworkSettings method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -169,7 +169,7 @@ status = WdfDeviceWdmAssignPowerFrameworkSettings(Device, &amp;poFxSettings);</p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |

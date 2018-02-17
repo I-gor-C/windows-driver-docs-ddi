@@ -95,6 +95,8 @@ After <i>FreeStackSymFrames</i> is called, the debugger calls the stack provider
 
 <a href="..\dbgeng\nc-dbgeng-pdebug_stack_provider_endthreadstackreconstruction.md">EndThreadStackReconstruction</a>
 
+
+
  
 
  

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: FFCD2329-FD6A-48AE-8E9D-56AA7D79B174
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FsRtlIsDaxVolume, ntifs/FsRtlIsDaxVolume, ifsk.fsrtlisdaxvolume, FsRtlIsDaxVolume routine [Installable File System Drivers]
+ms.keywords: FsRtlIsDaxVolume routine [Installable File System Drivers], ifsk.fsrtlisdaxvolume, ntifs/FsRtlIsDaxVolume, FsRtlIsDaxVolume
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ In DAX volumes,  user files
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntifs.h |
 | **Library** | NtosKrnl.exe |

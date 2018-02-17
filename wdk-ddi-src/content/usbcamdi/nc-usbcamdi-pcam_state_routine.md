@@ -40,7 +40,7 @@ apiname:
 -	MyCamState
 product: Windows
 targetos: Windows
-req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -104,13 +104,15 @@ This function is optional.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Windows operating system versions prior to Windows XP. Available on Windows operating system versions prior to Windows XP. |
+| **Windows version** | Available on Windows operating system versions prior to Windows XP.  |
 | **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568157">SRB_CHANGE_POWER_STATE</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 7D496443-F68D-41E6-B377-BC9E6F6ABB83
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtopenresource2, d3dkmthk/D3DKMTOpenResource2, D3DKMTOpenResource2, D3DKMTOpenResource2 function [Display Devices]
+ms.keywords: D3DKMTOpenResource2, display.d3dkmtopenresource2, D3DKMTOpenResource2 function [Display Devices], d3dkmthk/D3DKMTOpenResource2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -70,7 +70,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

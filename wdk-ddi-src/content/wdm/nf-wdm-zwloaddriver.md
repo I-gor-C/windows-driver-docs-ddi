@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ab5afdc8-d4d3-4be0-a613-d92f1b847b27
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/NtLoadDriver, wdm/ZwLoadDriver, kernel.zwloaddriver, ZwLoadDriver routine [Kernel-Mode Driver Architecture], NtLoadDriver, ZwLoadDriver, k111_b421f181-1a7d-4122-a73c-604f6b98686d.xml
+ms.keywords: NtLoadDriver, k111_b421f181-1a7d-4122-a73c-604f6b98686d.xml, ZwLoadDriver, kernel.zwloaddriver, wdm/NtLoadDriver, ZwLoadDriver routine [Kernel-Mode Driver Architecture], wdm/ZwLoadDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -61,7 +61,7 @@ NTSTATUS ZwLoadDriver(
 
 `DriverServiceName`
 
-Pointer to a counted Unicode string that specifies a path to the driver's registry key, <b>\Registry\Machine\System\CurrentControlSet\Services\</b><i>DriverName</i>, where <i>DriverName</i> is the name of the driver.
+Pointer to a counted Unicode string that specifies a path to the driver's registry key, <b>\Registry\Machine\System\CurrentControlSet\Services\<i>DriverName</i></b>, where <i>DriverName</i> is the name of the driver.
 
 
 ## Return Value
@@ -83,7 +83,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -93,14 +93,6 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a>
-
-
-
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
 
@@ -109,7 +101,15 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
+<a href="..\fltkernel\nf-fltkernel-fltloadfilter.md">FltLoadFilter</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 
 

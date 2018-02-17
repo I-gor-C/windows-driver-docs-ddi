@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: f54951fe-c79e-435e-9f31-9c39da26da6c
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTOpenAdapterFromHdc function [Display Devices], OpenGL_Functions_f12cc225-0315-4dfa-ae28-52657ea0f030.xml, D3DKMTOpenAdapterFromHdc, display.d3dkmtopenadapterfromhdc, d3dkmthk/D3DKMTOpenAdapterFromHdc
+ms.keywords: D3DKMTOpenAdapterFromHdc function [Display Devices], D3DKMTOpenAdapterFromHdc, OpenGL_Functions_f12cc225-0315-4dfa-ae28-52657ea0f030.xml, display.d3dkmtopenadapterfromhdc, d3dkmthk/D3DKMTOpenAdapterFromHdc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -165,7 +165,7 @@ The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTOpenA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

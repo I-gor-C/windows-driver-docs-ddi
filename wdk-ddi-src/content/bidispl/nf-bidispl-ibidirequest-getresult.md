@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: d3d37fd2-b3fa-4664-ba4b-c355197d9b40
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: IBidiRequest interface [Print Devices], GetResult method, gdi.ibidirequest_ibidirequest__getresult, IBidiRequest::GetResult, GetResult, print.ibidirequest_ibidirequest__getresult, GetResult method [Print Devices], _win32_IBidiRequest_GetResult, GetResult method [Print Devices], IBidiRequest interface, bidispl/IBidiRequest::GetResult, IBidiRequest
+ms.keywords: GetResult, bidispl/IBidiRequest::GetResult, gdi.ibidirequest_ibidirequest__getresult, _win32_IBidiRequest_GetResult, IBidiRequest::GetResult, IBidiRequest, IBidiRequest interface [Print Devices], GetResult method, GetResult method [Print Devices], IBidiRequest interface, GetResult method [Print Devices], print.ibidirequest_ibidirequest__getresult
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -124,7 +124,7 @@ Note that the return value indicates whether the method was successful. It does 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows XP Windows XP |
+| **Windows version** | Windows XP Windows Server 2003 |
 | **Target Platform** | Desktop |
 | **Header** | bidispl.h |
 | **Library** | bidispl.h |

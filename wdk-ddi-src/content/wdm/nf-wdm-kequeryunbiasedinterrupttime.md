@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2a041946-0335-466e-b2f9-b486031e777a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_34119e3c-6e9a-4e27-9d0e-3d9eb579df46.xml, KeQueryUnbiasedInterruptTime, kernel.kequeryunbiasedinterrupttime, KeQueryUnbiasedInterruptTime routine [Kernel-Mode Driver Architecture], wdm/KeQueryUnbiasedInterruptTime
+ms.keywords: KeQueryUnbiasedInterruptTime routine [Kernel-Mode Driver Architecture], kernel.kequeryunbiasedinterrupttime, KeQueryUnbiasedInterruptTime, k105_34119e3c-6e9a-4e27-9d0e-3d9eb579df46.xml, wdm/KeQueryUnbiasedInterruptTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ In Windows 2000 and later versions of the Windows operating system, the <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Windows version** | Available starting with Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -88,11 +88,11 @@ In Windows 2000 and later versions of the Windows operating system, the <a href=
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+
+
+
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-
-
-
-<a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
 
 
 
@@ -100,11 +100,11 @@ In Windows 2000 and later versions of the Windows operating system, the <a href=
 
 
 
-<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
-
-
-
 <a href="..\wdm\nf-wdm-kequeryinterrupttimeprecise.md">KeQueryInterruptTimePrecise</a>
+
+
+
+<a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
 
 
 

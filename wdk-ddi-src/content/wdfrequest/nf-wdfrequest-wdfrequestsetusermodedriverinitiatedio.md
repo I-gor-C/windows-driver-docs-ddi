@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F477ABEA-5E29-4934-995C-D7FB1EF87A5B
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WdfRequestSetUserModeDriverInitiatedIo, wdfrequest/WdfRequestSetUserModeDriverInitiatedIo, PFN_WDFREQUESTSETUSERMODEDRIVERINITIATEDIO, wdf.wdfrequestsetusermodedriverinitiatedio, WdfRequestSetUserModeDriverInitiatedIo method
+ms.keywords: PFN_WDFREQUESTSETUSERMODEDRIVERINITIATEDIO, WdfRequestSetUserModeDriverInitiatedIo method, wdfrequest/WdfRequestSetUserModeDriverInitiatedIo, wdf.wdfrequestsetusermodedriverinitiatedio, WdfRequestSetUserModeDriverInitiatedIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,7 +92,7 @@ Requests that the driver created on its own are already marked as having origina
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1  |
 | **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |

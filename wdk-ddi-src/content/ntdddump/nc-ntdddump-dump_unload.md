@@ -73,7 +73,7 @@ If the routine succeeds, it must return STATUS_SUCCESS. Otherwise, it must retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista and Windows Server 2008. Available starting with Windows Vista and Windows Server 2008. |
+| **Windows version** | Available starting with Windows Vista and Windows Server 2008.  |
 | **Target Platform** | Desktop |
 | **Header** | ntdddump.h (include Ntdddump.h) |
 

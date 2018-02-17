@@ -81,7 +81,7 @@ Use the <a href="https://msdn.microsoft.com/library/windows/hardware/dn268326">E
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Windows version** | Available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 | **Library** | NtosKrnl.lib |

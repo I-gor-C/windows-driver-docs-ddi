@@ -82,13 +82,15 @@ During process creation the kernel mode driver is allowed to call the <b>DxgkCbR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
 
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createprocess.md">DXGKARG_CREATEPROCESS</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: ae8257a6-4d4c-446e-b144-1adfe0a28e50
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.iddcxswapchaingetmoveregions, IddCxSwapChainGetMoveRegions, IddCxSwapChainGetMoveRegions method [Display Devices], iddcx/IddCxSwapChainGetMoveRegions
+ms.keywords: IddCxSwapChainGetMoveRegions method [Display Devices], iddcx/IddCxSwapChainGetMoveRegions, IddCxSwapChainGetMoveRegions, display.iddcxswapchaingetmoveregions
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ Output arguments of the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **Library** | NtosKrnl.exe |

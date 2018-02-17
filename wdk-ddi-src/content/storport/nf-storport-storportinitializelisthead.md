@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: E37C54C1-209F-4944-940B-2247E86C8130
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortInitializeListHead, storage.storportinitializelisthead, storport/StorPortInitializeListHead, StorPortInitializeListHead routine [Storage Devices]
+ms.keywords: storport/StorPortInitializeListHead, storage.storportinitializelisthead, StorPortInitializeListHead, StorPortInitializeListHead routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ This routine does not return a value.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
 
 
@@ -96,7 +96,7 @@ This routine does not return a value.
 
 
 
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
 
 
 

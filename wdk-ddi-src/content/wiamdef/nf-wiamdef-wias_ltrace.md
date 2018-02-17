@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 513fd718-3d35-4a7b-be28-b002a8108e86
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: WIAS_LTRACE, WIAS_LTRACE macro [Imaging Devices], image.wias_ltrace, wiamdef/WIAS_LTRACE, IWiaLog_bb7ae826-5b43-47c1-bf94-bd491d8b91a7.xml
+ms.keywords: wiamdef/WIAS_LTRACE, image.wias_ltrace, WIAS_LTRACE macro [Imaging Devices], IWiaLog_bb7ae826-5b43-47c1-bf94-bd491d8b91a7.xml, WIAS_LTRACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -104,18 +104,14 @@ The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me, Windows XP, and later versions of the operating system. Obsolete for Windows Vista and later. Use WIAS_TRACE instead. Available in Windows Me, Windows XP, and later versions of the operating system. Obsolete for Windows Vista and later. Use WIAS_TRACE instead. |
+| **Windows version** | Available in Windows Me, Windows XP, and later versions of the operating system. Obsolete for Windows Vista and later. Use WIAS_TRACE instead.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
 | **Library** | wiamdef.h |
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
 
 
 
@@ -123,7 +119,11 @@ The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not 
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
+
+
+
+<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
 
 
 

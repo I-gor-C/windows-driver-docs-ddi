@@ -70,7 +70,7 @@ The following sample shows how to use <b>KdRefreshDebuggerNotPresent</b>:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Server 2003 and later. Available in Microsoft Windows Server 2003 and later. |
+| **Windows version** | Available in Microsoft Windows Server 2003 and later.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 | **Library** | NtosKrnl.lib |

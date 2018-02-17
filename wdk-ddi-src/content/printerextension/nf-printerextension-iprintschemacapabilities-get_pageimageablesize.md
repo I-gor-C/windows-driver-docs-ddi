@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 5FA7613C-8714-481D-8439-9F3334D2E9E5
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: printerextension/IPrintSchemaCapabilities::PageImageableSize, PageImageableSize property [Print Devices], print.iprintschemacapabilities_pageimageablesize, IPrintSchemaCapabilities::get_PageImageableSize, PageImageableSize property [Print Devices], IPrintSchemaCapabilities interface, printerextension/IPrintSchemaCapabilities::get_PageImageableSize, IPrintSchemaCapabilities, IPrintSchemaCapabilities.PageImageableSize, IPrintSchemaCapabilities interface [Print Devices], PageImageableSize property, get_PageImageableSize
+ms.keywords: IPrintSchemaCapabilities.PageImageableSize, PageImageableSize property [Print Devices], IPrintSchemaCapabilities interface, IPrintSchemaCapabilities, PageImageableSize property [Print Devices], printerextension/IPrintSchemaCapabilities::PageImageableSize, get_PageImageableSize, IPrintSchemaCapabilities::get_PageImageableSize, IPrintSchemaCapabilities interface [Print Devices], PageImageableSize property, print.iprintschemacapabilities_pageimageablesize, printerextension/IPrintSchemaCapabilities::get_PageImageableSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -74,7 +74,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 18e5b394-b0ea-481c-b634-83a2ebec4784
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PCHANGER_PRODUCT_DATA, *PCHANGER_PRODUCT_DATA, PCHANGER_PRODUCT_DATA structure pointer [Storage Devices], structs-changer_10598085-7fbc-40f9-a04c-ca8973faace7.xml, CHANGER_PRODUCT_DATA, storage.changer_product_data, CHANGER_PRODUCT_DATA structure [Storage Devices], _CHANGER_PRODUCT_DATA, ntddchgr/CHANGER_PRODUCT_DATA, ntddchgr/PCHANGER_PRODUCT_DATA
+ms.keywords: PCHANGER_PRODUCT_DATA structure pointer [Storage Devices], ntddchgr/CHANGER_PRODUCT_DATA, ntddchgr/PCHANGER_PRODUCT_DATA, storage.changer_product_data, CHANGER_PRODUCT_DATA, *PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA structure [Storage Devices], structs-changer_10598085-7fbc-40f9-a04c-ca8973faace7.xml, _CHANGER_PRODUCT_DATA, PCHANGER_PRODUCT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -88,7 +88,7 @@ Specifies the name of the device manufacturer.
 
 ## See Also
 
-<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
+<a href="..\mcd\nf-mcd-changergetproductdata.md">ChangerGetProductData</a>
 
 
 
@@ -96,7 +96,7 @@ Specifies the name of the device manufacturer.
 
 
 
-<a href="..\mcd\nf-mcd-changergetproductdata.md">ChangerGetProductData</a>
+<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
 
 
 

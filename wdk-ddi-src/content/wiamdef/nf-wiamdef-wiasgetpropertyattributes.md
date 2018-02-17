@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: b12ff158-73e7-4fdf-b7b1-2969d161ed93
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiamdef/wiasGetPropertyAttributes, wiasGetPropertyAttributes, wiasGetPropertyAttributes function [Imaging Devices], image.wiasgetpropertyattributes, wiasFncs_d1a6ee77-54bc-400f-a670-e39889c71835.xml
+ms.keywords: wiasFncs_d1a6ee77-54bc-400f-a670-e39889c71835.xml, wiasGetPropertyAttributes function [Imaging Devices], image.wiasgetpropertyattributes, wiasGetPropertyAttributes, wiamdef/wiasGetPropertyAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -220,7 +220,7 @@ The PROPSPEC and PROPVARIANT structures are defined in the Microsoft Windows SDK
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

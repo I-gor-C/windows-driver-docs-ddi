@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 34733e8f-cbe0-4fcd-abcf-6791e298282f
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: PWDI_FRAME_METADATA structure pointer [Network Drivers Starting with Windows Vista], netvista.wifi_frame_metadata, PWDI_FRAME_METADATA, dot11wdi/WDI_FRAME_METADATA, *PWDI_FRAME_METADATA, dot11wdi/PWDI_FRAME_METADATA, netvista.wdi_frame_metadata, _WDI_FRAME_METADATA, WDI_FRAME_METADATA, WDI_FRAME_METADATA structure [Network Drivers Starting with Windows Vista]
+ms.keywords: dot11wdi/PWDI_FRAME_METADATA, WDI_FRAME_METADATA structure [Network Drivers Starting with Windows Vista], WDI_FRAME_METADATA, PWDI_FRAME_METADATA, *PWDI_FRAME_METADATA, netvista.wdi_frame_metadata, _WDI_FRAME_METADATA, dot11wdi/WDI_FRAME_METADATA, PWDI_FRAME_METADATA structure pointer [Network Drivers Starting with Windows Vista], netvista.wifi_frame_metadata
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -100,11 +100,15 @@ Padding.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt297642">WDI_FRAME_ID</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
+
+
+
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_tx_metadata.md">WDI_TX_METADATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt297642">WDI_FRAME_ID</a>
 
 
 
@@ -113,10 +117,6 @@ Padding.
 
 
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_rx_metadata.md">WDI_RX_METADATA</a>
-
-
-
-<a href="..\dot11wdi\ns-dot11wdi-_wdi_tx_metadata.md">WDI_TX_METADATA</a>
 
 
 

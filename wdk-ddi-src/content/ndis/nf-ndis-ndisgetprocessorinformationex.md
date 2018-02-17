@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 9af21f56-d93d-4130-888c-c7009dc2854d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisGetProcessorInformationEx function [Network Drivers Starting with Windows Vista], NdisGetProcessorInformationEx, ndis/NdisGetProcessorInformationEx, netvista.ndisgetprocessorinformationex, ndis_processor_group_ref_f387710b-fb49-4202-9ff5-496021972695.xml
+ms.keywords: netvista.ndisgetprocessorinformationex, ndis/NdisGetProcessorInformationEx, NdisGetProcessorInformationEx function [Network Drivers Starting with Windows Vista], NdisGetProcessorInformationEx, ndis_processor_group_ref_f387710b-fb49-4202-9ff5-496021972695.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -148,7 +148,7 @@ NDIS drivers call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Windows version** | Supported in NDIS 6.20 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -156,11 +156,11 @@ NDIS drivers call the
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
 
 
@@ -172,7 +172,7 @@ NDIS drivers call the
 
 
 
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 
 
@@ -180,7 +180,7 @@ NDIS drivers call the
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 
 

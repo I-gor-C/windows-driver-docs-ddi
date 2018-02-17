@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: B77297BF-09F7-46BD-A75F-D36E5E233E05
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GetAt method [Print Devices], IPrintSchemaOptionCollection interface, GetAt method [Print Devices], print.iprintschemaoptioncollection_getat, IPrintSchemaOptionCollection interface [Print Devices], GetAt method, GetAt, printerextension/IPrintSchemaOptionCollection::GetAt, IPrintSchemaOptionCollection, IPrintSchemaOptionCollection::GetAt
+ms.keywords: GetAt method [Print Devices], GetAt method [Print Devices], IPrintSchemaOptionCollection interface, printerextension/IPrintSchemaOptionCollection::GetAt, IPrintSchemaOptionCollection::GetAt, IPrintSchemaOptionCollection interface [Print Devices], GetAt method, IPrintSchemaOptionCollection, GetAt, print.iprintschemaoptioncollection_getat
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -76,7 +76,7 @@ Returns an <b>HRESULT</b> value. If the method call was not successful,  it retu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

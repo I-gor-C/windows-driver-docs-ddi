@@ -40,7 +40,7 @@ apiname:
 -	CamProcessUSBPacketEx
 product: Windows
 targetos: Windows
-req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -105,6 +105,7 @@ Pointer to a BOOLEAN value that the camera minidriver sets to indicate whether t
 `PacketFlag`
 
 Pointer to a value that the minidriver sets to indicate the contents of the current frame. It should be set to one of the following values:
+
 <table>
 <tr>
 <th>Flag</th>
@@ -172,7 +173,11 @@ This function is optional.
 
 <a href="..\usb\ns-usb-_usbd_iso_packet_descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a>
 
+
+
 <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a>
+
+
 
  
 

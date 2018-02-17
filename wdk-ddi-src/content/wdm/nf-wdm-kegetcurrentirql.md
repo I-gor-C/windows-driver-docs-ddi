@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 63c33017-d827-4a8f-bb6f-fd13a2528e0c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k105_04c845e8-a239-4400-8a5f-15996754494a.xml, KeGetCurrentIrql, kernel.kegetcurrentirql, wdm/KeGetCurrentIrql, KeGetCurrentIrql routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/KeGetCurrentIrql, KeGetCurrentIrql, kernel.kegetcurrentirql, k105_04c845e8-a239-4400-8a5f-15996754494a.xml, KeGetCurrentIrql routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,7 +67,7 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Hal.lib |
@@ -76,15 +76,15 @@ This function has no parameters.
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
+
+
+
 <a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
 
 
 
 <a href="..\wdm\nf-wdm-keacquirespinlockatdpclevel.md">KeAcquireSpinLockAtDpcLevel</a>
-
-
-
-<a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
 
 
 

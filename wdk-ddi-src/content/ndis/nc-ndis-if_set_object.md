@@ -40,7 +40,7 @@ apiname:
 -	*IFP_SET_OBJECT
 product: Windows
 targetos: Windows
-req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+req.typenames: "*LPVIDEO_STREAM_INIT_PARMS, VIDEO_STREAM_INIT_PARMS"
 ---
 
 
@@ -92,6 +92,7 @@ A pointer to an input buffer that specifies the information that the interface p
 ## Return Value
 
 <i>ProviderSetObject</i> returns one of the following status values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -159,7 +160,7 @@ NDIS calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
 | **IRQL** | PASSIVE_LEVEL |
@@ -167,6 +168,8 @@ NDIS calls
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
+
+
 
  
 

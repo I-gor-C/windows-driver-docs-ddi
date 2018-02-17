@@ -71,7 +71,7 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000 and later. Available in Microsoft Windows 2000 and later. |
+| **Windows version** | Available in Microsoft Windows 2000 and later.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 | **Library** | Ntdll.lib (user mode); NtosKrnl.lib (kernel mode) |

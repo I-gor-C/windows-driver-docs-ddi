@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 3a7e50e9-0aeb-46e8-a1d2-7267df4921ad
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeQueryActiveProcessors routine [Kernel-Mode Driver Architecture], KeQueryActiveProcessors, kernel.kequeryactiveprocessors, wdm/KeQueryActiveProcessors, k105_963f6993-c875-4939-89ce-7abf2e7a9c22.xml
+ms.keywords: wdm/KeQueryActiveProcessors, KeQueryActiveProcessors, kernel.kequeryactiveprocessors, k105_963f6993-c875-4939-89ce-7abf2e7a9c22.xml, KeQueryActiveProcessors routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -117,7 +117,7 @@ Starting with Windows XP, <b>KeNumberProcessors</b> is an 8-bit integer value t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |
@@ -127,11 +127,11 @@ Starting with Windows XP, <b>KeNumberProcessors</b> is an 8-bit integer value t
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
-
-
-
 <a href="..\wdm\nf-wdm-kequeryactiveprocessorcount.md">KeQueryActiveProcessorCount</a>
+
+
+
+<a href="..\wdm\nf-wdm-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
 
 
 

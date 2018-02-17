@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 283f398e-4162-4c46-847b-834f8f303052
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: "_DXGKARG_RECOMMENDMONITORMODES, DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, display.dxgkarg_recommendmonitormodes, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices]"
+ms.keywords: DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], display.dxgkarg_recommendmonitormodes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -79,11 +79,11 @@ An integer that identifies a video present target on the display adapter.
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
-
-
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendmonitormodes.md">DxgkDdiRecommendMonitorModes</a>
+
+
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
 
 
 

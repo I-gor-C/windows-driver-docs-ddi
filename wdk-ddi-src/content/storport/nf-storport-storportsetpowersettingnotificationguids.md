@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], Adaptive Setting, storage.storportsetpowersettingnotificationguids, HIPM/DIPM Setting, storport/StorPortSetPowerSettingNotificationGuids
+ms.keywords: storport/StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], HIPM/DIPM Setting, storage.storportsetpowersettingnotificationguids, Adaptive Setting, StorPortSetPowerSettingNotificationGuids
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -175,7 +175,7 @@ The AHCI Link Power management settings are part of the Disk Settings subgroup (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Windows version** | Available in starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |
@@ -183,11 +183,11 @@ The AHCI Link Power management settings are part of the Disk Settings subgroup (
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-
-
-
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+
+
+
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
 
 

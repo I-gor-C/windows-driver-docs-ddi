@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 06affa2e-d22c-4d24-8c5f-6ef52e3051fa
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GetJobAttributes, print.getjobattributes, GetJobAttributes function [Print Devices], winsplp/GetJobAttributes, spoolfnc_5f511391-a38e-4d0b-8d45-4464b798a7c9.xml
+ms.keywords: spoolfnc_5f511391-a38e-4d0b-8d45-4464b798a7c9.xml, print.getjobattributes, winsplp/GetJobAttributes, GetJobAttributes, GetJobAttributes function [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ Caller-supplied pointer to an <a href="..\winddiui\ns-winddiui-_attribute_info_3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This function is available in Microsoft Windows Server 2003 and later operating system versions. This function is available in Microsoft Windows Server 2003 and later operating system versions. |
+| **Windows version** | This function is available in Microsoft Windows Server 2003 and later operating system versions.  |
 | **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
 | **Library** | Spoolss.lib |
@@ -95,11 +95,11 @@ Caller-supplied pointer to an <a href="..\winddiui\ns-winddiui-_attribute_info_3
 
 
 
-<a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
+
+
+
+<a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
 
 
 

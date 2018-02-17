@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: cb831371-4684-4756-bc01-6c42e5af7e1b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtsetmonitorcolorspacetransform, d3dkmthk/D3DKMTSetMonitorColorSpaceTransform, D3DKMTSetMonitorColorSpaceTransform, D3DKMTSetMonitorColorSpaceTransform method [Display Devices]
+ms.keywords: d3dkmthk/D3DKMTSetMonitorColorSpaceTransform, D3DKMTSetMonitorColorSpaceTransform, display.d3dkmtsetmonitorcolorspacetransform, D3DKMTSetMonitorColorSpaceTransform method [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,7 +67,7 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
 | **Library** | NtosKrnl.exe |

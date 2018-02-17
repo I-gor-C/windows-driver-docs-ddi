@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5822b642-0ba4-46ee-bb60-b109c50691eb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_e928372b-1222-4421-bea7-c2457c38a09f.xml, kernel.iodetachdevice, wdm/IoDetachDevice, IoDetachDevice, IoDetachDevice routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/IoDetachDevice, kernel.iodetachdevice, k104_e928372b-1222-4421-bea7-c2457c38a09f.xml, IoDetachDevice routine [Kernel-Mode Driver Architecture], IoDetachDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -84,11 +84,11 @@ None
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
-
-
-
 <a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
 
 
 

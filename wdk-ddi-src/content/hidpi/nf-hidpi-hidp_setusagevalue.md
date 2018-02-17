@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: e59d7087-58eb-4bc3-a4e0-4597ee28dcd6
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: HidP_SetUsageValue routine [Human Input Devices], hid.hidp_setusagevalue, HidP_SetUsageValue, hidpi/HidP_SetUsageValue, hidfunc_8e494117-11e2-42b8-96b0-6aaa2cb35d44.xml
+ms.keywords: hidfunc_8e494117-11e2-42b8-96b0-6aaa2cb35d44.xml, hid.hidp_setusagevalue, hidpi/HidP_SetUsageValue, HidP_SetUsageValue, HidP_SetUsageValue routine [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -195,7 +195,7 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
 | **Library** | Hidparse.lib |
@@ -203,11 +203,11 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-
-
 <a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
+
+
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 14657843-bd48-4cab-b913-c95aeb6a6083
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: SeValidSecurityDescriptor routine [Kernel-Mode Driver Architecture], wdm/SeValidSecurityDescriptor, SeValidSecurityDescriptor, k110_f193d746-c75f-4003-a2b3-a6b752652f9b.xml, kernel.sevalidsecuritydescriptor
+ms.keywords: SeValidSecurityDescriptor routine [Kernel-Mode Driver Architecture], kernel.sevalidsecuritydescriptor, SeValidSecurityDescriptor, k110_f193d746-c75f-4003-a2b3-a6b752652f9b.xml, wdm/SeValidSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ To validate a security descriptor that was passed in from user mode, call <b>Rtl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

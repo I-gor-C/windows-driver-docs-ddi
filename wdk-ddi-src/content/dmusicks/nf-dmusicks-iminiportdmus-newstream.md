@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: aa221279-8d59-4f6f-8fc6-ad09e36a12a9
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: NewStream method [Audio Devices], IMiniportDMus interface [Audio Devices], NewStream method, audio.iminiportdmus_newstream, audmp-routines_a6630d1b-4a9d-4d4e-973a-09d541d7db70.xml, NewStream, IMiniportDMus::NewStream, IMiniportDMus, dmusicks/IMiniportDMus::NewStream, NewStream method [Audio Devices], IMiniportDMus interface
+ms.keywords: audio.iminiportdmus_newstream, NewStream method [Audio Devices], audmp-routines_a6630d1b-4a9d-4d4e-973a-09d541d7db70.xml, dmusicks/IMiniportDMus::NewStream, IMiniportDMus interface [Audio Devices], NewStream method, IMiniportDMus, NewStream, IMiniportDMus::NewStream, NewStream method [Audio Devices], IMiniportDMus interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -163,7 +163,7 @@ The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF<
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
 
 
 
@@ -171,27 +171,11 @@ The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF<
 
 
 
-<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 
 
 
-<a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
-
-
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-
-
-
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
-
-
-<a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
-
-
-
-<a href="..\dmusicks\nn-dmusicks-imxf.md">IMXF</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 
 
 
@@ -199,11 +183,27 @@ The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF<
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
 
 
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
+<a href="..\dmusicks\nn-dmusicks-imxf.md">IMXF</a>
+
+
+
+<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
+
+
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+
+
+<a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
+
+
+
+<a href="..\dmusicks\nn-dmusicks-imasterclock.md">IMasterClock</a>
 
 
 

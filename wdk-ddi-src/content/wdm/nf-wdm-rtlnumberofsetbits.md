@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6208f750-4871-43b9-b848-011180d39fd8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_b8b2c3f8-3ec3-4690-90bb-e5b120b5b062.xml, RtlNumberOfSetBits, kernel.rtlnumberofsetbits, wdm/RtlNumberOfSetBits, RtlNumberOfSetBits routine [Kernel-Mode Driver Architecture]
+ms.keywords: k109_b8b2c3f8-3ec3-4690-90bb-e5b120b5b062.xml, RtlNumberOfSetBits routine [Kernel-Mode Driver Architecture], wdm/RtlNumberOfSetBits, RtlNumberOfSetBits, kernel.rtlnumberofsetbits
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ Callers of <b>RtlNumberOfSetBits</b> must be running at IRQL &lt;= APC_LEVEL if 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -88,7 +88,7 @@ Callers of <b>RtlNumberOfSetBits</b> must be running at IRQL &lt;= APC_LEVEL if 
 
 
 
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
 
 
 
@@ -96,7 +96,7 @@ Callers of <b>RtlNumberOfSetBits</b> must be running at IRQL &lt;= APC_LEVEL if 
 
 
 
-<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
 
 
 

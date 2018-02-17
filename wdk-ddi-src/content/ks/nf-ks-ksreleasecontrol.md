@@ -78,7 +78,7 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | Ks.lib |
@@ -86,7 +86,7 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>
+<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 
 
 
@@ -94,15 +94,15 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 
 
+<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
+
+
+
 <a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>
 
 
 
-<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
-
-
-
-<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
+<a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>
 
 
 

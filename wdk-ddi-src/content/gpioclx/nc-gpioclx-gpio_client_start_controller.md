@@ -133,7 +133,7 @@ The GPIO_CLIENT_START_CONTROLLER function type is defined in the Gpioclx.h heade
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Windows version** | Supported starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
 | **IRQL** | Called at PASSIVE_LEVEL (see Remarks). |

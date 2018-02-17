@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9CF77F14-93E5-4742-A01C-770BC814507C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ExReleaseRundownProtectionEx, wdm/ExReleaseRundownProtectionEx, kernel.exreleaserundownprotectionex, ExReleaseRundownProtectionEx routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.exreleaserundownprotectionex, ExReleaseRundownProtectionEx, ExReleaseRundownProtectionEx routine [Kernel-Mode Driver Architecture], wdm/ExReleaseRundownProtectionEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Server 2003. Available starting with Windows Server 2003. |
+| **Windows version** | Available starting with Windows Server 2003.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |
@@ -95,7 +95,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 
 
-<a href="..\wdm\nf-wdm-exacquirerundownprotectionex.md">ExAcquireRundownProtectionEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj569379">EX_RUNDOWN_REF</a>
 
 
 
@@ -103,11 +103,11 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj569379">EX_RUNDOWN_REF</a>
-
-
-
 <a href="..\wdm\nf-wdm-exacquirerundownprotection.md">ExAcquireRundownProtection</a>
+
+
+
+<a href="..\wdm\nf-wdm-exacquirerundownprotectionex.md">ExAcquireRundownProtectionEx</a>
 
 
 

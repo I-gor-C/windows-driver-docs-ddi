@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e6ad3bc5-9e19-4d32-bc08-b894ac802f41
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ZwDeleteFile routine [Kernel-Mode Driver Architecture], ZwDeleteFile, kernel.zwdeletefile, NtDeleteFile, ntifs/ZwDeleteFile, ntifs/NtDeleteFile, k111_4f0117b0-323a-46b6-a1c0-74de4db2ca4d.xml
+ms.keywords: ntifs/ZwDeleteFile, ZwDeleteFile, ZwDeleteFile routine [Kernel-Mode Driver Architecture], kernel.zwdeletefile, k111_4f0117b0-323a-46b6-a1c0-74de4db2ca4d.xml, ntifs/NtDeleteFile, NtDeleteFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -167,7 +167,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Windows version** | Available starting with Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -177,15 +177,15 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
+<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 
 
 <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
 
 
 

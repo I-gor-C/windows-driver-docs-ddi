@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 51148c26-c10d-4c57-9e3e-c7d82d6a1c79
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_f2a97e55-d165-4884-a121-52e98f8f46cd.xml, video/VideoPortMapDmaMemory, VideoPortMapDmaMemory, VideoPortMapDmaMemory function [Display Devices], display.videoportmapdmamemory
+ms.keywords: display.videoportmapdmamemory, video/VideoPortMapDmaMemory, VideoPort_Functions_f2a97e55-d165-4884-a121-52e98f8f46cd.xml, VideoPortMapDmaMemory function [Display Devices], VideoPortMapDmaMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -168,7 +168,7 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

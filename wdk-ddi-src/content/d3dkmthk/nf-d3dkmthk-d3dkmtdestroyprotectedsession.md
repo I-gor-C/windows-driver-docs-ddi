@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e27ab1db-647d-447c-b79d-2553aa088398
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTDestroyProtectedSession method [Display Devices], display.d3dkmtdestroyprotectedsession, D3DKMTDestroyProtectedSession, d3dkmthk/D3DKMTDestroyProtectedSession
+ms.keywords: d3dkmthk/D3DKMTDestroyProtectedSession, display.d3dkmtdestroyprotectedsession, D3DKMTDestroyProtectedSession method [Display Devices], D3DKMTDestroyProtectedSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,7 +67,7 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
 | **Library** | NtosKrnl.exe |

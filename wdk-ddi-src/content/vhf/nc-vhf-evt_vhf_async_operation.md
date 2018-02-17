@@ -102,7 +102,7 @@ When the operation is complete, HID source calls <a href="..\vhf\nf-vhf-vhfasync
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 None supported |
 | **Target Platform** | Desktop |
 | **Header** | vhf.h |
 | **IRQL** | "<=DISPATCH_LEVEL" |

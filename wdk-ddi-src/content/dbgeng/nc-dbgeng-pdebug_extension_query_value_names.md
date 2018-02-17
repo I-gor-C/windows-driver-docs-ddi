@@ -98,6 +98,7 @@ The number of wide characters that this function needs to complete successfully.
 ## Return Value
 
 <b>DebugExtensionQueryValueNames</b> might return one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -125,7 +126,8 @@ The function completed without error, but it obtained only partial results.
 
 </td>
 </tr>
-</table> 
+</table>
+ 
 
 This function might also return error values.  For more information about possible return values, see <a href="https://msdn.microsoft.com/713f3ee2-2f5b-415e-9908-90f5ae428b43">Return Values</a>.
 
@@ -143,15 +145,25 @@ Value names must start with <b>$$</b> and have a terminating NULL character. The
 
 ## See Also
 
+<i>KnownStructOutput</i>
+
+
+
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
 
-<i>DebugExtensionNotify</i>
 
-<i>KnownStructOutput</i>
+
+<i>DebugExtensionUninitialize</i>
+
+
 
 <i>DebugExtensionProvideValue</i>
 
-<i>DebugExtensionUninitialize</i>
+
+
+<i>DebugExtensionNotify</i>
+
+
 
  
 

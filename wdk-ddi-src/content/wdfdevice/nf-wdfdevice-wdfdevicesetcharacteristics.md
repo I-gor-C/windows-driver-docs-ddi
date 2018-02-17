@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 07b5d7ed-fc4c-45e5-8748-2630c91d912a
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: PFN_WDFDEVICESETCHARACTERISTICS, WdfDeviceSetCharacteristics method, wdfdevice/WdfDeviceSetCharacteristics, WdfDeviceSetCharacteristics, kmdf.wdfdevicesetcharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, wdf.wdfdevicesetcharacteristics
+ms.keywords: kmdf.wdfdevicesetcharacteristics, wdf.wdfdevicesetcharacteristics, WdfDeviceSetCharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, PFN_WDFDEVICESETCHARACTERISTICS, WdfDeviceSetCharacteristics method, wdfdevice/WdfDeviceSetCharacteristics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -114,11 +114,11 @@ The following code example sets the FILE_REMOVABLE_MEDIA characteristic for a sp
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetcharacteristics.md">WdfDeviceGetCharacteristics</a>
-
-
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
+
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetcharacteristics.md">WdfDeviceGetCharacteristics</a>
 
 
 

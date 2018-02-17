@@ -86,7 +86,7 @@ The driver must create at least one monitor mode for the monitor description.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **IRQL** | "_requires_same_" |

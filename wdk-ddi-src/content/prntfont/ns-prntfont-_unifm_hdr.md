@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 9490d090-2156-4653-9e56-a233d23c2fb3
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: print.unifm_hdr, _UNIFM_HDR, UNIFM_HDR, print_unidrv-pscript_fonts_eaf5dd18-df64-41bc-91b5-836b6ed165b6.xml, UNIFM_HDR structure [Print Devices], *PUNIFM_HDR, PUNIFM_HDR, prntfont/UNIFM_HDR, prntfont/PUNIFM_HDR, PUNIFM_HDR structure pointer [Print Devices]
+ms.keywords: print_unidrv-pscript_fonts_eaf5dd18-df64-41bc-91b5-836b6ed165b6.xml, UNIFM_HDR structure [Print Devices], UNIFM_HDR, *PUNIFM_HDR, prntfont/UNIFM_HDR, _UNIFM_HDR, prntfont/PUNIFM_HDR, PUNIFM_HDR, print.unifm_hdr, PUNIFM_HDR structure pointer [Print Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -171,11 +171,7 @@ If <b>lGlyphSetDataRCID</b> is CC_DEFAULT, there are no restrictions on the valu
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a>
-
-
-
-<a href="..\prntfont\ns-prntfont-_printifi32.md">PRINTIFI32</a>
+<a href="..\prntfont\ns-prntfont-_exttextmetric.md">EXTTEXTMETRIC</a>
 
 
 
@@ -187,11 +183,15 @@ If <b>lGlyphSetDataRCID</b> is CC_DEFAULT, there are no restrictions on the valu
 
 
 
+<a href="..\prntfont\ns-prntfont-_printifi32.md">PRINTIFI32</a>
+
+
+
+<a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a>
+
+
+
 <a href="..\prntfont\ns-prntfont-_widthtable.md">WIDTHTABLE</a>
-
-
-
-<a href="..\prntfont\ns-prntfont-_exttextmetric.md">EXTTEXTMETRIC</a>
 
 
 

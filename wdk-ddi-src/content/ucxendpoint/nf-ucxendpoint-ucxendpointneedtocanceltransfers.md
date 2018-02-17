@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 4DA3FB63-D2D3-43E1-9420-29303176B837
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: ucxendpoint/UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses], buses._ucxendpointneedtocanceltransfers
+ms.keywords: ucxendpoint/UcxEndpointNeedToCancelTransfers, buses._ucxendpointneedtocanceltransfers, UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ If needed, UCX coordinates with the hub driver to send a Clear TT buffer command
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

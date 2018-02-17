@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e79ed9a1-b271-4c0a-a82f-9fecab930569
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: portn_09bfa419-5a6c-4305-87ee-58a0e032d0c4.xml, PoSetSystemWake routine [Kernel-Mode Driver Architecture], kernel.posetsystemwake, PoSetSystemWake, wdm/PoSetSystemWake
+ms.keywords: kernel.posetsystemwake, wdm/PoSetSystemWake, PoSetSystemWake, PoSetSystemWake routine [Kernel-Mode Driver Architecture], portn_09bfa419-5a6c-4305-87ee-58a0e032d0c4.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ The power manager logs an Event Tracing for Windows (ETW) event (viewable in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

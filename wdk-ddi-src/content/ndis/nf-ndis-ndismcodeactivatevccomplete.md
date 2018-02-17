@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8ea36895-4728-45ad-84f7-3517afd2327d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMCoDeactivateVcComplete function [Network Drivers Starting with Windows Vista], condis_miniport_ref_b4ad1f67-6e33-45ca-9d55-323aed8820be.xml, netvista.ndismcodeactivatevccomplete, NdisMCoDeactivateVcComplete, ndis/NdisMCoDeactivateVcComplete
+ms.keywords: ndis/NdisMCoDeactivateVcComplete, netvista.ndismcodeactivatevccomplete, NdisMCoDeactivateVcComplete function [Network Drivers Starting with Windows Vista], NdisMCoDeactivateVcComplete, condis_miniport_ref_b4ad1f67-6e33-45ca-9d55-323aed8820be.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -107,7 +107,7 @@ A call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoDeactivateVcComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoDeactivateVcComplete   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoDeactivateVcComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoDeactivateVcComplete   (NDIS 5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoDeactivateVcComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoDeactivateVcComplete   (NDIS 5.1)) in Windows XP.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -116,8 +116,7 @@ A call to
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
-   ProtocolCmDeactivateVcComplete</a>
+<a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
 
 
 
@@ -125,11 +124,12 @@ A call to
 
 
 
+<a href="..\ndis\nc-ndis-protocol_cm_deactivate_vc_complete.md">
+   ProtocolCmDeactivateVcComplete</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
 
 
 

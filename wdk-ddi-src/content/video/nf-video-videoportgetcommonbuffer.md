@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c8329d26-fb6f-46f1-aacd-ba78ee4ea5d5
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportgetcommonbuffer, video/VideoPortGetCommonBuffer, VideoPortGetCommonBuffer, VideoPort_Functions_eead14aa-271b-49a2-8ded-482ffc73741e.xml, VideoPortGetCommonBuffer function [Display Devices]
+ms.keywords: video/VideoPortGetCommonBuffer, VideoPortGetCommonBuffer, display.videoportgetcommonbuffer, VideoPort_Functions_eead14aa-271b-49a2-8ded-482ffc73741e.xml, VideoPortGetCommonBuffer function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -101,7 +101,7 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

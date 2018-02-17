@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 55d6d93b-c20f-435b-ba99-2df26bd17240
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaMiniDrv::drvNotifyPnpEvent, IWiaMiniDrv interface [Imaging Devices], drvNotifyPnpEvent method, wiamindr_lh/IWiaMiniDrv::drvNotifyPnpEvent, MiniDrv_7684a7e5-7ca5-4d20-a1a8-fc38400815ce.xml, drvNotifyPnpEvent method [Imaging Devices], drvNotifyPnpEvent method [Imaging Devices], IWiaMiniDrv interface, drvNotifyPnpEvent, image.iwiaminidrv_drvnotifypnpevent, IWiaMiniDrv
+ms.keywords: drvNotifyPnpEvent method [Imaging Devices], IWiaMiniDrv, drvNotifyPnpEvent method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvnotifypnpevent, IWiaMiniDrv::drvNotifyPnpEvent, IWiaMiniDrv interface [Imaging Devices], drvNotifyPnpEvent method, wiamindr_lh/IWiaMiniDrv::drvNotifyPnpEvent, MiniDrv_7684a7e5-7ca5-4d20-a1a8-fc38400815ce.xml, drvNotifyPnpEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,18 +86,18 @@ If this method is called with *<i>pEventGuid</i> set to WIA_EVENT_CANCEL_IO devi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Windows version** | Available in Windows Me and in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
+
+
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
 
 

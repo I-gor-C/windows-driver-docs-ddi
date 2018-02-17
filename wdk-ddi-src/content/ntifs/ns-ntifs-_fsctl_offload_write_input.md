@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 4ADBBBDC-02DD-4D1A-B697-6286D7513B2E
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FSCTL_OFFLOAD_WRITE_INPUT structure [Installable File System Drivers], ntifs/PFSCTL_OFFLOAD_WRITE_INPUT, _FSCTL_OFFLOAD_WRITE_INPUT, ifsk.fsctl_offload_write_input, PFSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT, PFSCTL_OFFLOAD_WRITE_INPUT structure pointer [Installable File System Drivers], ntifs/FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT
+ms.keywords: FSCTL_OFFLOAD_WRITE_INPUT structure [Installable File System Drivers], ntifs/PFSCTL_OFFLOAD_WRITE_INPUT, PFSCTL_OFFLOAD_WRITE_INPUT structure pointer [Installable File System Drivers], PFSCTL_OFFLOAD_WRITE_INPUT, ifsk.fsctl_offload_write_input, ntifs/FSCTL_OFFLOAD_WRITE_INPUT, _FSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -96,7 +96,7 @@ The position in the data associated with <b>Token</b> to begin writing from.
 
 ## See Also
 
-<a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
 
 
 
@@ -104,11 +104,11 @@ The position in the data associated with <b>Token</b> to begin writing from.
 
 
 
+<a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
 
 
 

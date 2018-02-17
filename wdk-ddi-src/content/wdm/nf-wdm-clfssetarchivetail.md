@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 58c1d222-72c5-4b40-9ae5-f633bac599f0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: Clfs_f5685e7e-3098-461d-aff1-807011c36526.xml, wdm/ClfsSetArchiveTail, ClfsSetArchiveTail routine [Kernel-Mode Driver Architecture], kernel.clfssetarchivetail, ClfsSetArchiveTail
+ms.keywords: kernel.clfssetarchivetail, wdm/ClfsSetArchiveTail, ClfsSetArchiveTail routine [Kernel-Mode Driver Architecture], ClfsSetArchiveTail, Clfs_f5685e7e-3098-461d-aff1-807011c36526.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,7 +82,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | Clfs.lib |
@@ -91,15 +91,15 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
+
+
+
 <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 
 
 
 <a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
-
-
-
-<a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
 
 
 

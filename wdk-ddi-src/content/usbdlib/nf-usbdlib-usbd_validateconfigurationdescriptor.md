@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2fbe08ca-a9eb-4e3b-aa28-1ff34ad22a46
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: USBD_ValidateConfigurationDescriptor, buses.usbd_validateconfigurationdescriptor, USBD_ValidateConfigurationDescriptor routine [Buses], usbdlib/USBD_ValidateConfigurationDescriptor
+ms.keywords: USBD_ValidateConfigurationDescriptor, USBD_ValidateConfigurationDescriptor routine [Buses], usbdlib/USBD_ValidateConfigurationDescriptor, buses.usbd_validateconfigurationdescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ USBD_STATUS_SUCCESS, or appropriate USBD error code if validation failed.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later operating systems. Available in Windows Vista and later operating systems. |
+| **Windows version** | Available in Windows Vista and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | usbdlib.h (include Usbdlib.h) |
 | **Library** | Usbd.lib |

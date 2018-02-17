@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: f7ff16ac-fe20-4998-a8b3-d1d02c418938
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_cfdde7e3-bc8b-46df-abf4-fe43ac9b0bfc.xml, stream.ksgetfirstchild, KsGetFirstChild function [Streaming Media Devices], ks/KsGetFirstChild, KsGetFirstChild
+ms.keywords: KsGetFirstChild, ks/KsGetFirstChild, avfunc_cfdde7e3-bc8b-46df-abf4-fe43ac9b0bfc.xml, stream.ksgetfirstchild, KsGetFirstChild function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,17 +76,13 @@ Minidrivers rarely call this function directly. Those that do must manually perf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
-
-<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
-
-
 
 <a href="..\ks\nf-ks-ksgetparent.md">KsGetParent</a>
 
@@ -97,6 +93,10 @@ Minidrivers rarely call this function directly. Those that do must manually perf
 
 
 <a href="..\ks\nf-ks-ksfilterfactorygetfirstchildfilter.md">KsFilterFactoryGetFirstChildFilter</a>
+
+
+
+<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
 
 
 

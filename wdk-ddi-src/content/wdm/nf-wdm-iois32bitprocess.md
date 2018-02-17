@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/IoIs32bitProcess, k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess routine [Kernel-Mode Driver Architecture], kernel.iois32bitprocess, IoIs32bitProcess
+ms.keywords: IoIs32bitProcess routine [Kernel-Mode Driver Architecture], IoIs32bitProcess, wdm/IoIs32bitProcess, kernel.iois32bitprocess, k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system. Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system. |
+| **Windows version** | Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

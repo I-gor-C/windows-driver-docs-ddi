@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: DF329B68-3995-4B38-8208-4C779B0626A6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.storportpofxidlecomponent, StorPortPoFxIdleComponent, StorPortPoFxIdleComponent routine [Storage Devices], storport/StorPortPoFxIdleComponent
+ms.keywords: storport/StorPortPoFxIdleComponent, storage.storportpofxidlecomponent, StorPortPoFxIdleComponent routine [Storage Devices], StorPortPoFxIdleComponent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -182,7 +182,7 @@ Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Windows version** | Available in starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h |
 | **Library** | NtosKrnl.exe |
@@ -190,11 +190,11 @@ Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous ca
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
-
-
-
 <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
+
+
+
+<a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 
 
 

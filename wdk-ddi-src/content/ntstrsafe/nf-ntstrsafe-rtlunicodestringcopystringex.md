@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c7008875-f820-41ae-812f-304391240c34
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlunicodestringcopystringex, safestrings_fdb0a962-cf2b-4e58-a1c5-351d57b2e73e.xml, RtlUnicodeStringCopyStringEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCopyStringEx, RtlUnicodeStringCopyStringEx
+ms.keywords: safestrings_fdb0a962-cf2b-4e58-a1c5-351d57b2e73e.xml, kernel.rtlunicodestringcopystringex, RtlUnicodeStringCopyStringEx, RtlUnicodeStringCopyStringEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCopyStringEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -188,7 +188,7 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1).  |
 | **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
 | **Library** | Ntstrsafe.lib |

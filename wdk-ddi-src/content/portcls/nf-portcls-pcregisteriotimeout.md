@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 9cd7c366-1745-45b0-b9e9-87a259110621
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, audio.pcregisteriotimeout, PcRegisterIoTimeout, PcRegisterIoTimeout function [Audio Devices], portcls/PcRegisterIoTimeout
+ms.keywords: PcRegisterIoTimeout function [Audio Devices], audio.pcregisteriotimeout, PcRegisterIoTimeout, portcls/PcRegisterIoTimeout, audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -142,7 +142,7 @@ The <i>DeviceObject</i> and <i>Context</i> parameters are the same values that t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 5d1dd418-5a2f-448f-ae65-695c4f97ff29
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ucmtcpciportcontrollerstop, UcmTcpciPortControllerStop, UcmTcpciPortControllerStop method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerStop
+ms.keywords: UcmTcpciPortControllerStop, buses.ucmtcpciportcontrollerstop, UcmTcpciPortControllerStop method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ Stopping the controller ends any active PD contract and the Type-C connection.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** | Ucmtcpcicxstub.lib |

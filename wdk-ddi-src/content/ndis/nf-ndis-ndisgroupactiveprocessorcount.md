@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d6631aa7-e3ba-4768-a55a-6a66d1ee84c6
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisGroupActiveProcessorCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_43adb4cc-e1a6-4a67-ada7-47b38078e357.xml, ndis/NdisGroupActiveProcessorCount, netvista.ndisgroupactiveprocessorcount, NdisGroupActiveProcessorCount
+ms.keywords: ndis/NdisGroupActiveProcessorCount, netvista.ndisgroupactiveprocessorcount, NdisGroupActiveProcessorCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_43adb4cc-e1a6-4a67-ada7-47b38078e357.xml, NdisGroupActiveProcessorCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -104,7 +104,7 @@ To obtain the maximum number of processors in a group, call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Windows version** | Supported in NDIS 6.20 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -112,8 +112,7 @@ To obtain the maximum number of processors in a group, call the
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
-   NdisSystemActiveProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>
 
 
 
@@ -121,11 +120,12 @@ To obtain the maximum number of processors in a group, call the
 
 
 
-<a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
+   NdisSystemActiveProcessorCount</a>
 
 
 

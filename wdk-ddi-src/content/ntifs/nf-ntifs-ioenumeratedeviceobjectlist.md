@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: ce6cec58-2122-49c3-8c5c-172df2c4dd04
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/IoEnumerateDeviceObjectList, ifsk.ioenumeratedeviceobjectlist, IoEnumerateDeviceObjectList routine [Installable File System Drivers], ioref_5bfd9f2c-73c0-4f69-8a5e-4cc105c2f92a.xml, IoEnumerateDeviceObjectList
+ms.keywords: IoEnumerateDeviceObjectList routine [Installable File System Drivers], IoEnumerateDeviceObjectList, ifsk.ioenumeratedeviceobjectlist, ioref_5bfd9f2c-73c0-4f69-8a5e-4cc105c2f92a.xml, ntifs/IoEnumerateDeviceObjectList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -133,7 +133,7 @@ In the latter case, the filter driver typically calls <b>IoEnumerateDeviceObject
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -142,11 +142,15 @@ In the latter case, the filter driver typically calls <b>IoEnumerateDeviceObject
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-zwunloaddriver.md">ZwUnloadDriver</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
+
+
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-
-
-
-<a href="..\wdm\nf-wdm-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 
 
 
@@ -154,11 +158,7 @@ In the latter case, the filter driver typically calls <b>IoEnumerateDeviceObject
 
 
 
-<a href="..\wdm\nf-wdm-zwunloaddriver.md">ZwUnloadDriver</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
+<a href="..\wdm\nf-wdm-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 
 
 

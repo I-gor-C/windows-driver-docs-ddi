@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: B5873B19-17EF-4DF8-A3E7-7E7F6440A2B7
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.udecxwdfdeviceresetcomplete, UdecxWdfDeviceResetComplete, UdecxWdfDeviceResetComplete function [Buses], udecxwdfdevice/UdecxWdfDeviceResetComplete
+ms.keywords: buses.udecxwdfdeviceresetcomplete, udecxwdfdevice/UdecxWdfDeviceResetComplete, UdecxWdfDeviceResetComplete function [Buses], UdecxWdfDeviceResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ When the class extension calls the  <a href="..\udecxwdfdevice\nc-udecxwdfdevice
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
@@ -84,7 +84,7 @@ When the class extension calls the  <a href="..\udecxwdfdevice\nc-udecxwdfdevice
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 
 
@@ -92,7 +92,7 @@ When the class extension calls the  <a href="..\udecxwdfdevice\nc-udecxwdfdevice
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

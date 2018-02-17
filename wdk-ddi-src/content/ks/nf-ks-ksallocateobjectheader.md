@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 18f5ea44-3f70-4c26-beb3-2f03568df03b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KsAllocateObjectHeader, ksfunc_0ab53e6c-a934-4c4a-9377-c81ec37833f6.xml, stream.ksallocateobjectheader, KsAllocateObjectHeader function [Streaming Media Devices], ks/KsAllocateObjectHeader
+ms.keywords: ksfunc_0ab53e6c-a934-4c4a-9377-c81ec37833f6.xml, stream.ksallocateobjectheader, KsAllocateObjectHeader, ks/KsAllocateObjectHeader, KsAllocateObjectHeader function [Streaming Media Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -145,7 +145,7 @@ Drivers must not free the memory allocated for the subobject
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfreeobjectheader.md">KsFreeObjectHeader</a>
+<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
 
 
 
@@ -153,7 +153,7 @@ Drivers must not free the memory allocated for the subobject
 
 
 
-<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+<a href="..\ks\nf-ks-ksfreeobjectheader.md">KsFreeObjectHeader</a>
 
 
 

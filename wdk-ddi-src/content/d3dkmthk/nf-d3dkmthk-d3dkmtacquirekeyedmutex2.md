@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 94ebfeb6-2035-4dd6-bbc9-ba82939b51ec
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTAcquireKeyedMutex2, D3DKMTAcquireKeyedMutex2 function [Display Devices], display.d3dkmtacquirekeyedmutex2, PFND3DKMT_ACQUIREKEYEDMUTEX2, D3DKMTAcquireKeyedMutex2
+ms.keywords: PFND3DKMT_ACQUIREKEYEDMUTEX2, D3DKMTAcquireKeyedMutex2 function [Display Devices], display.d3dkmtacquirekeyedmutex2, d3dkmthk/D3DKMTAcquireKeyedMutex2, D3DKMTAcquireKeyedMutex2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

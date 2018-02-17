@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: ba23f4d4-7e3d-4bfc-acf7-68dab01d2f61
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPort_Functions_5aed176c-b0d1-4b0d-8d0d-7689bc31d661.xml, video/VideoPortAllocateContiguousMemory, VideoPortAllocateContiguousMemory function [Display Devices], VideoPortAllocateContiguousMemory, display.videoportallocatecontiguousmemory
+ms.keywords: VideoPort_Functions_5aed176c-b0d1-4b0d-8d0d-7689bc31d661.xml, VideoPortAllocateContiguousMemory function [Display Devices], VideoPortAllocateContiguousMemory, display.videoportallocatecontiguousmemory, video/VideoPortAllocateContiguousMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -88,7 +88,7 @@ A miniport driver that must use contiguous memory should allocate only what it n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

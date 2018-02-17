@@ -130,7 +130,7 @@ The GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type is defined in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Windows version** | Supported starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
 | **IRQL** | Called at DIRQL. |

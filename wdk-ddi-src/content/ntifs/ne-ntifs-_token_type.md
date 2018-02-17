@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2ad78d17-9baa-45cf-a620-01c2ccd14338
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: TokenPrimary, ntifs/TokenPrimary, ntifs/TokenImpersonation, securitystructures_b570f2e6-2426-4c9d-8552-81131cf4bd66.xml, PTOKEN_TYPE, TokenImpersonation, TOKEN_TYPE enumeration [Installable File System Drivers], ifsk.token_type, ntifs/PTOKEN_TYPE, ntifs/TOKEN_TYPE, *PTOKEN_TYPE, TOKEN_TYPE, _TOKEN_TYPE, PTOKEN_TYPE enumeration pointer [Installable File System Drivers]
+ms.keywords: TOKEN_TYPE enumeration [Installable File System Drivers], securitystructures_b570f2e6-2426-4c9d-8552-81131cf4bd66.xml, TokenImpersonation, ntifs/TokenPrimary, ntifs/PTOKEN_TYPE, TOKEN_TYPE, *PTOKEN_TYPE, ntifs/TokenImpersonation, PTOKEN_TYPE, TokenPrimary, ntifs/TOKEN_TYPE, _TOKEN_TYPE, PTOKEN_TYPE enumeration pointer [Installable File System Drivers], ifsk.token_type
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -77,15 +77,7 @@ typedef enum _TOKEN_TYPE {
 
     ## See Also
 
-        <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
-
-
-
-<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
+        <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
 
 
 
@@ -93,7 +85,15 @@ typedef enum _TOKEN_TYPE {
 
 
 
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2B2F721C-9201-472B-8629-352CB212235C
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: USBD_SelectConfigUrbAllocateAndBuild, buses.usbd_selectconfigurballocateandbuild, usbdlib/USBD_SelectConfigUrbAllocateAndBuild, USBD_SelectConfigUrbAllocateAndBuild routine [Buses]
+ms.keywords: USBD_SelectConfigUrbAllocateAndBuild routine [Buses], usbdlib/USBD_SelectConfigUrbAllocateAndBuild, buses.usbd_selectconfigurballocateandbuild, USBD_SelectConfigUrbAllocateAndBuild
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -152,7 +152,7 @@ You can use the received pointer to the <a href="..\usb\ns-usb-_urb.md">URB</a> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
 | **Library** | Usbdex.lib |
@@ -160,11 +160,11 @@ You can use the received pointer to the <a href="..\usb\ns-usb-_urb.md">URB</a> 
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
-
-
-
 <a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
 
 
 

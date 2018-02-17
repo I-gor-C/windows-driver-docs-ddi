@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9347bc8d-e8fb-440c-8ceb-ce5e8cb1429e
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FltApiRef_e_to_o_8b8316b0-5943-425e-a978-a2999629f93c.xml, FltIsVolumeWritable routine [Installable File System Drivers], fltkernel/FltIsVolumeWritable, ifsk.fltisvolumewritable, FltIsVolumeWritable
+ms.keywords: fltkernel/FltIsVolumeWritable, ifsk.fltisvolumewritable, FltIsVolumeWritable routine [Installable File System Drivers], FltApiRef_e_to_o_8b8316b0-5943-425e-a978-a2999629f93c.xml, FltIsVolumeWritable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -109,7 +109,7 @@ In versions of Windows prior to Windows Vista, the <b>FltIsVolumeWritable</b> ro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The FltIsVolumeWritable routine is available in Windows Vista and later versions of Windows. The FltIsVolumeWritable routine is available in Windows Vista and later versions of Windows. |
+| **Windows version** | The FltIsVolumeWritable routine is available in Windows Vista and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** | Fltmgr.lib |

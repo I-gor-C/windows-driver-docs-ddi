@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: A38B30F9-D55B-4CC2-9B71-3B597ACCE0EB
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlQueryThreadPlaceholderCompatibilityMode routine [Installable File System Drivers], ifsk.rtlquerythreadplaceholdercompatibilitymode, RtlQueryThreadPlaceholderCompatibilityMode, ntifs/RtlQueryThreadPlaceholderCompatibilityMode
+ms.keywords: ifsk.rtlquerythreadplaceholdercompatibilitymode, ntifs/RtlQueryThreadPlaceholderCompatibilityMode, RtlQueryThreadPlaceholderCompatibilityMode routine [Installable File System Drivers], RtlQueryThreadPlaceholderCompatibilityMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,7 +98,7 @@ Returns the thread's placeholder compatibility mode. If there was an error it re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Windows version** | Available starting with Windows 10, version 1709.  |
 | **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.exe |

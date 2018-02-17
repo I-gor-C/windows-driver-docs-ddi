@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: bf034ecd-5c1b-4117-a7b0-bcca3971386b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisfgetoptionalswitchhandlers, ndis/NdisFGetOptionalSwitchHandlers, NdisFGetOptionalSwitchHandlers function [Network Drivers Starting with Windows Vista], NdisFGetOptionalSwitchHandlers
+ms.keywords: NdisFGetOptionalSwitchHandlers function [Network Drivers Starting with Windows Vista], netvista.ndisfgetoptionalswitchhandlers, ndis/NdisFGetOptionalSwitchHandlers, NdisFGetOptionalSwitchHandlers
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -93,7 +93,7 @@ For more information about <b>FilterMediaTypes</b> INF entries for extensible sw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Windows version** | Supported in NDIS 6.30 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |

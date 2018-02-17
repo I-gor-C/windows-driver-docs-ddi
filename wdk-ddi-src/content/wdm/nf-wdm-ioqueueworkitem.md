@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 92ec386e-205a-4704-bd13-941dd6d7d987
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/IoQueueWorkItem, IoQueueWorkItem routine [Kernel-Mode Driver Architecture], k104_6f5cb4e5-75d1-433a-864e-19de914aa2e7.xml, kernel.ioqueueworkitem, IoQueueWorkItem
+ms.keywords: IoQueueWorkItem routine [Kernel-Mode Driver Architecture], k104_6f5cb4e5-75d1-433a-864e-19de914aa2e7.xml, IoQueueWorkItem, kernel.ioqueueworkitem, wdm/IoQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,7 +89,7 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -98,11 +98,7 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566380">WorkItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
 
 
 
@@ -110,7 +106,11 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566380">WorkItem</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
 
 
 

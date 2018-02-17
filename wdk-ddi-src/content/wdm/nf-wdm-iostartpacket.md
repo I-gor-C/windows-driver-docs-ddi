@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b1fa148e-73e2-437f-bd3a-e879bd457c76
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_d27461b9-32fe-4d7b-853d-fd110fcdb644.xml, IoStartPacket, wdm/IoStartPacket, IoStartPacket routine [Kernel-Mode Driver Architecture], kernel.iostartpacket
+ms.keywords: k104_d27461b9-32fe-4d7b-853d-fd110fcdb644.xml, IoStartPacket, wdm/IoStartPacket, kernel.iostartpacket, IoStartPacket routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -95,7 +95,7 @@ Callers of <b>IoStartPacket</b> must be running at IRQL &lt;= DISPATCH_LEVEL. Us
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -108,7 +108,7 @@ Callers of <b>IoStartPacket</b> must be running at IRQL &lt;= DISPATCH_LEVEL. Us
 
 
 
-<a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a>
+<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
 
 
 
@@ -116,7 +116,7 @@ Callers of <b>IoStartPacket</b> must be running at IRQL &lt;= DISPATCH_LEVEL. Us
 
 
 
-<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
+<a href="..\wdm\nf-wdm-iosetcancelroutine.md">IoSetCancelRoutine</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c23d0d24-b043-4e39-afd3-abab6bb84769
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.iddcxadapterinitasync, IddCxAdapterInitAsync, IddCxAdapterInitAsync method [Display Devices], iddcx/IddCxAdapterInitAsync
+ms.keywords: display.iddcxadapterinitasync, iddcx/IddCxAdapterInitAsync, IddCxAdapterInitAsync method [Display Devices], IddCxAdapterInitAsync
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ Output arguments to the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **Library** | NtosKrnl.exe |

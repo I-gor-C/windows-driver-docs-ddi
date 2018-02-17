@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: bb252dd5-9bf3-41bd-ab46-9524735970c5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlIncrementCorrelationVector function [Kernel-Mode Driver Architecture], RtlIncrementCorrelationVector, kernel.rtlincrementcorrelationvector, ntddk/RtlIncrementCorrelationVector
+ms.keywords: ntddk/RtlIncrementCorrelationVector, RtlIncrementCorrelationVector, RtlIncrementCorrelationVector function [Kernel-Mode Driver Architecture], kernel.rtlincrementcorrelationvector
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,7 +103,7 @@ Incrementing the correlation vector resulted in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.lib |

@@ -156,7 +156,7 @@ If <i>*pPrivateDataLength</i> is greater than or equal to <i>RDS</i>, the provid
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 | **IRQL** | "<=DISPATCH_LEVEL" |

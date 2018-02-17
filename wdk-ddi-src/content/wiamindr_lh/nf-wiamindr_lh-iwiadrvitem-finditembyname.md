@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 59a77753-1f34-4224-af11-c6bbfa847619
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.iwiadrvitem_finditembyname, wiamindr_lh/IWiaDrvItem::FindItemByName, FindItemByName, DrvItem_d3717889-b428-4dbc-8ef9-c501a52f3328.xml, IWiaDrvItem, IWiaDrvItem interface [Imaging Devices], FindItemByName method, FindItemByName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::FindItemByName, FindItemByName method [Imaging Devices]
+ms.keywords: FindItemByName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::FindItemByName, DrvItem_d3717889-b428-4dbc-8ef9-c501a52f3328.xml, FindItemByName method [Imaging Devices], wiamindr_lh/IWiaDrvItem::FindItemByName, image.iwiadrvitem_finditembyname, FindItemByName, IWiaDrvItem interface [Imaging Devices], FindItemByName method, IWiaDrvItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -86,14 +86,14 @@ This method starts the search for the specified item at the root item in the dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
 
 
@@ -101,7 +101,7 @@ This method starts the search for the specified item at the root item in the dri
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
 
 
 

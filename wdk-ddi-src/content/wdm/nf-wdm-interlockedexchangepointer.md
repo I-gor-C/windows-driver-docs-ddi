@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8c39a62d-0c05-4d26-b104-90c436e821cb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: InterlockedExchangePointer routine [Kernel-Mode Driver Architecture], InterlockedExchangePointer, kernel.interlockedexchangepointer, k102_4959af35-65d8-4768-94f7-a2dad0a2db46.xml, wdm/InterlockedExchangePointer
+ms.keywords: InterlockedExchangePointer routine [Kernel-Mode Driver Architecture], InterlockedExchangePointer, k102_4959af35-65d8-4768-94f7-a2dad0a2db46.xml, wdm/InterlockedExchangePointer, kernel.interlockedexchangepointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,7 +87,7 @@ Interlocked operations cannot be used on non-cached memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.exe |
@@ -99,11 +99,11 @@ Interlocked operations cannot be used on non-cached memory.
 
 
 
-<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
-
-
-
 <a href="..\wdm\nf-wdm-interlockedcompareexchange.md">InterlockedCompareExchange</a>
+
+
+
+<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
 
 
 

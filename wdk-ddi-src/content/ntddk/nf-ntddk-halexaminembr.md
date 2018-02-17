@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6db72f2c-af24-4807-b90b-65dc2b309dc7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ntddk/HalExamineMBR, k103_86ff3079-34b8-4200-a0e9-88c921579b3f.xml, HalExamineMBR, HalExamineMBR routine [Kernel-Mode Driver Architecture], kernel.halexaminembr
+ms.keywords: ntddk/HalExamineMBR, kernel.halexaminembr, HalExamineMBR, HalExamineMBR routine [Kernel-Mode Driver Architecture], k103_86ff3079-34b8-4200-a0e9-88c921579b3f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -40,7 +40,7 @@ apiname:
 -	HalExamineMBR
 product: Windows
 targetos: Windows
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -90,7 +90,7 @@ For a list of system-defined MBR partition type identifiers, see the table in <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Windows version** | Available starting with Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -102,7 +102,11 @@ For a list of system-defined MBR partition type identifiers, see the table in <a
 
 <a href="..\ntdddisk\ns-ntdddisk-_partition_information.md">PARTITION_INFORMATION</a>
 
+
+
 <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 300cdd3b-0c12-45e3-ae45-c26084f3ec12
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/KeReleaseSpinLock, KeReleaseSpinLock routine [Kernel-Mode Driver Architecture], kernel.kereleasespinlock, KeReleaseSpinLock, k105_68224d09-0ef9-4231-af5f-c6f8761889dd.xml
+ms.keywords: wdm/KeReleaseSpinLock, kernel.kereleasespinlock, k105_68224d09-0ef9-4231-af5f-c6f8761889dd.xml, KeReleaseSpinLock routine [Kernel-Mode Driver Architecture], KeReleaseSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -84,7 +84,7 @@ Callers of this routine are running at IRQL = DISPATCH_LEVEL. On return from <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Hal.lib |

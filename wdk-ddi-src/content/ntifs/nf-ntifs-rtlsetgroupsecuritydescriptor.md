@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f0473975-7ab6-46ba-bdb7-eb227e6bc258
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlSetGroupSecurityDescriptor routine [Installable File System Drivers], ntifs/RtlSetGroupSecurityDescriptor, RtlSetGroupSecurityDescriptor, rtlref_113e5ca7-5db3-4c93-a26f-c568e2164de9.xml, ifsk.rtlsetgroupsecuritydescriptor
+ms.keywords: RtlSetGroupSecurityDescriptor, ifsk.rtlsetgroupsecuritydescriptor, RtlSetGroupSecurityDescriptor routine [Installable File System Drivers], rtlref_113e5ca7-5db3-4c93-a26f-c568e2164de9.xml, ntifs/RtlSetGroupSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -117,7 +117,7 @@ For more information about security and access control, see the Microsoft Window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later. This routine is available on Microsoft Windows Server 2003 SP1 and later. |
+| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -126,7 +126,15 @@ For more information about security and access control, see the Microsoft Window
 
 ## See Also
 
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+
+
+
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 
 
 
@@ -135,14 +143,6 @@ For more information about security and access control, see the Microsoft Window
 
 
 <a href="..\ntifs\nf-ntifs-rtlgetgroupsecuritydescriptor.md">RtlGetGroupSecurityDescriptor</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
 
 
 

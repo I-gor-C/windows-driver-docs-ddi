@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: aa40633e-1881-4bf4-a57b-f7ee3ce23438
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent function [Display Devices], OpenGL_Functions_9e2c6684-7429-43d7-b43a-0f11aea6807f.xml, display.d3dkmtwaitforverticalblankevent
+ms.keywords: D3DKMTWaitForVerticalBlankEvent function [Display Devices], d3dkmthk/D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent, display.d3dkmtwaitforverticalblankevent, OpenGL_Functions_9e2c6684-7429-43d7-b43a-0f11aea6807f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 80450bfb-ae3a-46cd-8cf2-905df5adf70d
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlDecompressFragment function [Installable File System Drivers], rtlref_40a25add-c5bc-40f5-bb79-d5dcd6c11d69.xml, ifsk.rtldecompressfragment, ntifs/RtlDecompressFragment, RtlDecompressFragment
+ms.keywords: RtlDecompressFragment function [Installable File System Drivers], ifsk.rtldecompressfragment, RtlDecompressFragment, rtlref_40a25add-c5bc-40f5-bb79-d5dcd6c11d69.xml, ntifs/RtlDecompressFragment
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -207,7 +207,7 @@ To decompress an entire compressed buffer, use the <a href="..\ntifs\nf-ntifs-rt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of all Windows operating systems. Available in Windows XP and later versions of all Windows operating systems. |
+| **Windows version** | Available in Windows XP and later versions of all Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -216,11 +216,11 @@ To decompress an entire compressed buffer, use the <a href="..\ntifs\nf-ntifs-rt
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressbufferex2.md">RtlDecompressBufferEx2</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
+<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
 
 
 
@@ -228,15 +228,15 @@ To decompress an entire compressed buffer, use the <a href="..\ntifs\nf-ntifs-rt
 
 
 
-<a href="..\ntifs\nf-ntifs-rtldecompressbufferex2.md">RtlDecompressBufferEx2</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-rtldecompressbufferex.md">RtlDecompressBufferEx</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
 
 
 

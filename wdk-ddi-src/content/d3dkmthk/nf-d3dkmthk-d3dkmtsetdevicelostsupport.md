@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 9b7469cb-d489-4428-8167-91b26e1fa348
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTSetDeviceLostSupport method [Display Devices], display.d3dkmtsetdevicelostsupport, D3DKMTSetDeviceLostSupport, d3dkmthk/D3DKMTSetDeviceLostSupport
+ms.keywords: display.d3dkmtsetdevicelostsupport, D3DKMTSetDeviceLostSupport, d3dkmthk/D3DKMTSetDeviceLostSupport, D3DKMTSetDeviceLostSupport method [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -67,7 +67,7 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
 | **Library** | NtosKrnl.exe |

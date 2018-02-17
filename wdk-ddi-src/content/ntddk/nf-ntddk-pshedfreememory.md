@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: e0784b46-9929-480c-88d0-9983d80fd753
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: PshedFreeMemory, whearef_e17812c6-f817-490d-b1f7-bf5fa16d769b.xml, PshedFreeMemory function [WHEA Drivers and Applications], whea.pshedfreememory, ntddk/PshedFreeMemory
+ms.keywords: whea.pshedfreememory, whearef_e17812c6-f817-490d-b1f7-bf5fa16d769b.xml, ntddk/PshedFreeMemory, PshedFreeMemory function [WHEA Drivers and Applications], PshedFreeMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ A PSHED plug-in calls the <b>PshedFreeMemory</b> function to free a block of mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | Pshed.lib |

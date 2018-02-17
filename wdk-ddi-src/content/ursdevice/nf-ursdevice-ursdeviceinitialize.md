@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 8A9C76C0-70F5-4F65-A460-CCFCD236A242
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses.ursdeviceinitialize, ursdevice/UrsDeviceInitialize, UrsDeviceInitialize function [Buses], UrsDeviceInitialize
+ms.keywords: UrsDeviceInitialize function [Buses], UrsDeviceInitialize, ursdevice/UrsDeviceInitialize, buses.ursdeviceinitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -144,7 +144,7 @@ EvtDriverDeviceAdd (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | ursdevice.h (include Urscx.h) |
@@ -153,11 +153,11 @@ EvtDriverDeviceAdd (
 
 ## See Also
 
-<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
-
-
-
 <a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>
+
+
+
+<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
 
 
 

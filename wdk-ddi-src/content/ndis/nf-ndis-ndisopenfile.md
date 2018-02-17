@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 48d54092-d055-449c-a409-829213db2989
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.ndisopenfile, ndis/NdisOpenFile, NdisOpenFile function [Network Drivers Starting with Windows Vista], ndis_file_ref_0931368e-111b-4b25-a42d-12d0cc5d9d44.xml, NdisOpenFile
+ms.keywords: NdisOpenFile function [Network Drivers Starting with Windows Vista], netvista.ndisopenfile, NdisOpenFile, ndis_file_ref_0931368e-111b-4b25-a42d-12d0cc5d9d44.xml, ndis/NdisOpenFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -151,7 +151,7 @@ When
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -159,14 +159,6 @@ When
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
-
-<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
-
-
 
 <a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
 
@@ -176,7 +168,15 @@ When
 
 
 
+<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
 
 
 

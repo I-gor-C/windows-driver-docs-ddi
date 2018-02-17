@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9b8601ad-5605-46a3-9dbe-47dc8ed5906c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: KeGetCurrentNodeNumber, KeGetCurrentNodeNumber routine [Kernel-Mode Driver Architecture], k105_08763d94-700c-4662-aebe-a8aa15a7ed4f.xml, kernel.kegetcurrentnodenumber, wdm/KeGetCurrentNodeNumber
+ms.keywords: wdm/KeGetCurrentNodeNumber, k105_08763d94-700c-4662-aebe-a8aa15a7ed4f.xml, kernel.kegetcurrentnodenumber, KeGetCurrentNodeNumber routine [Kernel-Mode Driver Architecture], KeGetCurrentNodeNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -71,7 +71,7 @@ In a NUMA multiprocessor system that contains <i>n</i> nodes, the nodes are numb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Windows version** | Available in Windows 7 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h, Ntddk.h) |
 | **Library** | NtosKrnl.lib |

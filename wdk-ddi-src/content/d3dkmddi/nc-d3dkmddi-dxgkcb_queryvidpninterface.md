@@ -134,7 +134,7 @@ The interface version specified by <i>VidPnInterfaceVersion</i> is not supported
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 | **IRQL** | "<= APC_LEVEL" |
@@ -145,11 +145,11 @@ The interface version specified by <i>VidPnInterfaceVersion</i> is not supported
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPN Interface</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPN Source Mode Set Interface</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
 
 
 
@@ -157,7 +157,7 @@ The interface version specified by <i>VidPnInterfaceVersion</i> is not supported
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPN Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
 
 
 

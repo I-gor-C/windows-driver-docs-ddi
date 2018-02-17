@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 10d77823-fcaa-43c3-b55e-74f2da97ecf0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml, StorPortGetCurrentProcessorNumber routine [Storage Devices], storage.storportgetcurrentprocessornumber, storport/StorPortGetCurrentProcessorNumber, StorPortGetCurrentProcessorNumber
+ms.keywords: StorPortGetCurrentProcessorNumber, storage.storportgetcurrentprocessornumber, storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml, StorPortGetCurrentProcessorNumber routine [Storage Devices], storport/StorPortGetCurrentProcessorNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ The operation fails with this return value if one or more of the parameters are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Windows version** | Available starting with Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

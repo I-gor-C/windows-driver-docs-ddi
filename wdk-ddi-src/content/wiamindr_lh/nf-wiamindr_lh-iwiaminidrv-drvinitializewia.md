@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 93b155eb-0254-441f-b01f-3da8eb7376a5
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: IWiaMiniDrv, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv interface [Imaging Devices], drvInitializeWia method, drvInitializeWia, IWiaMiniDrv::drvInitializeWia, drvInitializeWia method [Imaging Devices], MiniDrv_04485b20-ff45-4cf7-a861-841bf03befcf.xml, wiamindr_lh/IWiaMiniDrv::drvInitializeWia, image.iwiaminidrv_drvinitializewia
+ms.keywords: IWiaMiniDrv, MiniDrv_04485b20-ff45-4cf7-a861-841bf03befcf.xml, image.iwiaminidrv_drvinitializewia, IWiaMiniDrv::drvInitializeWia, drvInitializeWia, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvInitializeWia method, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvInitializeWia
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -120,18 +120,14 @@ For example, if the user right-clicks a WIA scanner icon in <b>My Computer</b>, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Windows version** | Available in Windows Me and in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 | **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545010">IWiaMiniDrv::drvUnInitializeWia</a>
-
-
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
 
 
@@ -139,11 +135,15 @@ For example, if the user right-clicks a WIA scanner icon in <b>My Computer</b>, 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543856">IWiaDrvItem::AddItemToFolder</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545010">IWiaMiniDrv::drvUnInitializeWia</a>
+
+
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d0b0ada7-afb1-4cb7-ada6-7c5c7abe7d19
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: net_if_functions_ref_baca325c-667d-4472-9c91-dbc8fd41d033.xml, NdisIfRegisterInterface function [Network Drivers Starting with Windows Vista], NdisIfRegisterInterface, ndis/NdisIfRegisterInterface, netvista.ndisifregisterinterface
+ms.keywords: ndis/NdisIfRegisterInterface, netvista.ndisifregisterinterface, net_if_functions_ref_baca325c-667d-4472-9c91-dbc8fd41d033.xml, NdisIfRegisterInterface, NdisIfRegisterInterface function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -199,7 +199,7 @@ To indicate that an interface should be removed from the list of known interface
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Windows version** | Supported in NDIS 6.0 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -212,7 +212,11 @@ To indicate that an interface should be removed from the list of known interface
 
 
 
-<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
+<a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">NdisIfDeregisterInterface</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 
 
 
@@ -220,15 +224,11 @@ To indicate that an interface should be removed from the list of known interface
 
 
 
+<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">NdisIfDeregisterInterface</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 
 
 

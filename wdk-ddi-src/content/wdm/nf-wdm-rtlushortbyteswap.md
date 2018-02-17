@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 83f6a599-0b35-4a02-b20f-80abcc6eae4f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml, RtlUshortByteSwap, wdm/RtlUshortByteSwap, RtlUshortByteSwap routine [Kernel-Mode Driver Architecture], kernel.rtlushortbyteswap
+ms.keywords: RtlUshortByteSwap, kernel.rtlushortbyteswap, wdm/RtlUshortByteSwap, RtlUshortByteSwap routine [Kernel-Mode Driver Architecture], k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -80,7 +80,7 @@ To reverse the ordering of bytes in a ULONG value, use the <a href="..\wdm\nf-wd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 15688701-2385-4F17-A944-D398EEF3C277
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbPacketFree function [Network Drivers Starting with Windows Vista], netvista.vmbpacketfree, VmbPacketFree, vmbuskernelmodeclientlibapi/VmbPacketFree
+ms.keywords: VmbPacketFree function [Network Drivers Starting with Windows Vista], netvista.vmbpacketfree, vmbuskernelmodeclientlibapi/VmbPacketFree, VmbPacketFree
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

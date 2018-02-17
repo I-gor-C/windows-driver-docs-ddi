@@ -106,21 +106,21 @@ Indicates that the miniport driver successfully started the datapath components.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | dot11wdi.h |
 
 ## See Also
 
-<a href="..\dot11wdi\ns-dot11wdi-_tal_txrx_parameters.md">TAL_TXRX_PARAMETERS</a>
-
-
-
-<a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_configuration.md">WDI_TXRX_TARGET_CONFIGURATION</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297625">TAL_TXRX_HANDLE</a>
+
+
+
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
+
+
+
+<a href="..\dot11wdi\ns-dot11wdi-_tal_txrx_parameters.md">TAL_TXRX_PARAMETERS</a>
 
 
 
@@ -128,7 +128,7 @@ Indicates that the miniport driver successfully started the datapath components.
 
 
 
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_configuration.md">WDI_TXRX_TARGET_CONFIGURATION</a>
 
 
 

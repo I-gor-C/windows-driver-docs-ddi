@@ -74,6 +74,7 @@ void PdebugExtensionNotify(
 `Notify`
 
 Can be any of the following values:
+
 <table>
 <tr>
 <th>Value</th>
@@ -147,6 +148,8 @@ After the extension DLL is initialized, the engine will use this function to not
 ## See Also
 
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
+
+
 
  
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: A6936B25-F804-4EF3-909C-7838346AC37E
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMIdleNotificationComplete function [Network Drivers Starting with Windows Vista], NdisMIdleNotificationComplete, ndis/NdisMIdleNotificationComplete, netvista.ndismidlenotificationcomplete
+ms.keywords: netvista.ndismidlenotificationcomplete, NdisMIdleNotificationComplete, NdisMIdleNotificationComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMIdleNotificationComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ For more information on how miniport drivers complete NDIS selective suspend  id
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Windows version** | Supported in NDIS 6.30 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -95,11 +95,11 @@ For more information on how miniport drivers complete NDIS selective suspend  id
 
 
 
-<a href="..\ndis\nc-ndis-miniport_cancel_idle_notification.md">MiniportCancelIdleNotification</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_idle_notification.md">MiniportIdleNotification</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_cancel_idle_notification.md">MiniportCancelIdleNotification</a>
 
 
 

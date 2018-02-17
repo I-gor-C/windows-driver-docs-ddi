@@ -40,7 +40,7 @@ apiname:
 -	pfnVideoProcessorSetStreamExtension
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -93,6 +93,7 @@ HRESULT Pfnd3d111DdiVideoprocessorsetstreamextension(
 ## Return Value
 
 <b>VideoProcessorSetStreamExtension</b> returns one of the following values:
+
 <table>
 <tr>
 <th>Return code</th>
@@ -151,13 +152,15 @@ Parameters were validated and determined to be incorrect.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
+
+
 
  
 

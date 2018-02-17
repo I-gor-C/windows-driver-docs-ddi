@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9ee590ce-e822-4c15-bb01-6f726268f163
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture], k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml, wdm/IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification, IoRegisterLastChanceShutdownNotification
+ms.keywords: k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml, IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture], IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification, wdm/IoRegisterLastChanceShutdownNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,7 +98,7 @@ The registered <i>DispatchShutdown</i> routine is called before the power manage
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me. Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -108,11 +108,11 @@ The registered <i>DispatchShutdown</i> routine is called before the power manage
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
-
-
-
 <a href="..\wdm\nf-wdm-ioregistershutdownnotification.md">IoRegisterShutdownNotification</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 7bb56650-a75e-4b49-bfb3-83848ede29c0
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: LogHandle, CcSetLogHandleForFile, ccref_e4928c2e-41c5-4744-83c6-9c22766e9cfa.xml, ntifs/CcSetLogHandleForFile, ifsk.ccsetloghandleforfile, CcSetLogHandleForFile routine [Installable File System Drivers], Lsn
+ms.keywords: ifsk.ccsetloghandleforfile, Lsn, LogHandle, CcSetLogHandleForFile routine [Installable File System Drivers], ccref_e4928c2e-41c5-4744-83c6-9c22766e9cfa.xml, ntifs/CcSetLogHandleForFile, CcSetLogHandleForFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -109,7 +109,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available on Microsoft Windows XP and later. Available on Microsoft Windows XP and later. |
+| **Windows version** | Available on Microsoft Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

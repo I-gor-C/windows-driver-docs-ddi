@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4537447a-17d5-4431-929c-7a8fda0f2986
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ExRegisterCallback, kernel.exregistercallback, wdm/ExRegisterCallback, k102_db841434-fe00-448d-b5bb-2c35d1ad0ec4.xml, ExRegisterCallback routine [Kernel-Mode Driver Architecture]
+ms.keywords: ExRegisterCallback routine [Kernel-Mode Driver Architecture], k102_db841434-fe00-448d-b5bb-2c35d1ad0ec4.xml, ExRegisterCallback, wdm/ExRegisterCallback, kernel.exregistercallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -135,7 +135,7 @@ The operating system calls registered callback routines at the same IRQL at whic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -145,11 +145,7 @@ The operating system calls registered callback routines at the same IRQL at whic
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
-
-
-
-<a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
+<a href="..\wdm\nf-wdm-exunregistercallback.md">ExUnregisterCallback</a>
 
 
 
@@ -157,11 +153,15 @@ The operating system calls registered callback routines at the same IRQL at whic
 
 
 
-<a href="..\wdm\nf-wdm-exunregistercallback.md">ExUnregisterCallback</a>
+<a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
 
 
 
 <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
+
+
+
+<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
 
 
 

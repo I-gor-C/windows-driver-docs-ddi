@@ -88,21 +88,21 @@ To safely modify the data for the dump write, a filter driver should allocate a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista and Windows Server 2008. Available starting with Windows Vista and Windows Server 2008. |
+| **Windows version** | Available starting with Windows Vista and Windows Server 2008.  |
 | **Target Platform** | Desktop |
 | **Header** | ntdddump.h (include Ntdddump.h) |
 
 ## See Also
-
-<a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>
-
-
 
 <a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
 
 
 
 <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
+
+
+
+<a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>
 
 
 

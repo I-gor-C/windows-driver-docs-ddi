@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 786635b4-db99-4b35-9fb5-23233997d091
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ifsk.fsrtldeleteextracreateparameterlookasidelist, FsRtlDeleteExtraCreateParameterLookasideList, ntifs/FsRtlDeleteExtraCreateParameterLookasideList, FsRtlDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], fsrtlref_43144ea3-5cbc-43ce-b3f8-4101b1e3aeaa.xml
+ms.keywords: FsRtlDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], ntifs/FsRtlDeleteExtraCreateParameterLookasideList, ifsk.fsrtldeleteextracreateparameterlookasidelist, fsrtlref_43144ea3-5cbc-43ce-b3f8-4101b1e3aeaa.xml, FsRtlDeleteExtraCreateParameterLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,7 +82,7 @@ Drivers must explicitly free all ECP context structures and ECP lookaside lists 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | FsRtlDeleteExtraCreateParameterLookasideList is available starting with Windows Vista. FsRtlDeleteExtraCreateParameterLookasideList is available starting with Windows Vista. |
+| **Windows version** | FsRtlDeleteExtraCreateParameterLookasideList is available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -91,11 +91,11 @@ Drivers must explicitly free all ECP context structures and ECP lookaside lists 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
 
 
 
@@ -103,7 +103,7 @@ Drivers must explicitly free all ECP context structures and ECP lookaside lists 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
 
 
 

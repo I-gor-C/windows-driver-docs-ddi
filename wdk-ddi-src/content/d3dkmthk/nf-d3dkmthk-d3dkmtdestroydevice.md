@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 7699214a-0cd2-401a-9f66-199d181abce4
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTDestroyDevice, D3DKMTDestroyDevice, OpenGL_Functions_66b283a1-deee-4a49-a02d-217567d35873.xml, display.d3dkmtdestroydevice, D3DKMTDestroyDevice function [Display Devices]
+ms.keywords: OpenGL_Functions_66b283a1-deee-4a49-a02d-217567d35873.xml, display.d3dkmtdestroydevice, D3DKMTDestroyDevice, d3dkmthk/D3DKMTDestroyDevice, D3DKMTDestroyDevice function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,7 +105,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

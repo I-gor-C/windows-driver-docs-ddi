@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d911089a-f23a-4d0e-a333-c01ec3ac89dc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/ObfReferenceObject, ObReferenceObject, wdm/ObReferenceObject, k107_97bb0a8c-e445-484c-959a-03f1c41ab3fe.xml, ObfReferenceObject, kernel.obreferenceobject, ObReferenceObject routine [Kernel-Mode Driver Architecture]
+ms.keywords: ObReferenceObject routine [Kernel-Mode Driver Architecture], ObReferenceObject, kernel.obreferenceobject, k107_97bb0a8c-e445-484c-959a-03f1c41ab3fe.xml, wdm/ObfReferenceObject, wdm/ObReferenceObject, ObfReferenceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -79,7 +79,7 @@ When the reference count for an object reaches zero, a kernel-mode component can
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -93,11 +93,11 @@ When the reference count for an object reaches zero, a kernel-mode component can
 
 
 
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-
-
-
 <a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
+
+
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
 
 

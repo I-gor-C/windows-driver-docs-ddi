@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ccc20b5b-0f16-422d-8900-03b57f08b1bc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: MmIsDriverVerifyingByAddress routine [Kernel-Mode Driver Architecture], MmIsDriverVerifyingByAddress, wdm/MmIsDriverVerifyingByAddress, k106_37d22f13-de6a-4423-b148-9a7481570aaf.xml, kernel.mmisdriververifyingbyaddress
+ms.keywords: kernel.mmisdriververifyingbyaddress, MmIsDriverVerifyingByAddress routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverVerifyingByAddress, MmIsDriverVerifyingByAddress, k106_37d22f13-de6a-4423-b148-9a7481570aaf.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ For example, if driver A has an import table through which it calls one or more 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Windows version** | Available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** | NtosKrnl.lib |

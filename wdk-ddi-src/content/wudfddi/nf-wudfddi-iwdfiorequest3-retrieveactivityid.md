@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: A90FCF3C-B648-4E97-887E-FCE58D7FA13A
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: IWDFIoRequest3 interface, RetrieveActivityId method, wudfddi/IWDFIoRequest3::RetrieveActivityId, IWDFIoRequest3, RetrieveActivityId method, IWDFIoRequest3 interface, wdf.iwdfiorequest3_retrieveactivityid, RetrieveActivityId, umdf.iwdfiorequest3_retrieveactivityid, RetrieveActivityId method, IWDFIoRequest3::RetrieveActivityId
+ms.keywords: wudfddi/IWDFIoRequest3::RetrieveActivityId, IWDFIoRequest3::RetrieveActivityId, RetrieveActivityId, umdf.iwdfiorequest3_retrieveactivityid, RetrieveActivityId method, IWDFIoRequest3 interface, RetrieveActivityId method, IWDFIoRequest3, wdf.iwdfiorequest3_retrieveactivityid, IWDFIoRequest3 interface, RetrieveActivityId method
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -136,7 +136,7 @@ pNewRequest3-&gt;Release();
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8  |
 | **End of support** | Unavailable in UMDF 2.0 and later.  |
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
@@ -146,11 +146,11 @@ pNewRequest3-&gt;Release();
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/57CB3CED-FE46-4A74-9E23-82640B7EF1DC">IWDFIoRequest3::SetActivityId</a>
-
-
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
+
+
+
+<a href="https://msdn.microsoft.com/57CB3CED-FE46-4A74-9E23-82640B7EF1DC">IWDFIoRequest3::SetActivityId</a>
 
 
 

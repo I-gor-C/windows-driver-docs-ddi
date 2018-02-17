@@ -130,18 +130,14 @@ The RTL_RUN_ONCE_INIT_FN function type is defined in the Wdm.h header file. To m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Drivers can implement the RunOnceInitialization routine only on Windows Vista and later versions of Windows. Drivers can implement the RunOnceInitialization routine only on Windows Vista and later versions of Windows. |
+| **Windows version** | Drivers can implement the RunOnceInitialization routine only on Windows Vista and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **IRQL** | Called at IRQL <= APC_LEVEL. |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
+<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
 
 
 
@@ -153,7 +149,11 @@ The RTL_RUN_ONCE_INIT_FN function type is defined in the Wdm.h header file. To m
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
+<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
 
 
 

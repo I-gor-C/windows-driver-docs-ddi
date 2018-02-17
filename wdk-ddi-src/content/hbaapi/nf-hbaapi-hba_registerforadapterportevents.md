@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 596bfba5-7025-4cdc-b1f9-c8df546f6dac
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: fibreHBA_rtns_147e7408-58e4-47bc-8d3f-185c8ee68b83.xml, HBA_RegisterForAdapterPortEvents, storage.hba_registerforadapterportevents, HBA_RegisterForAdapterPortEvents routine [Storage Devices], hbaapi/HBA_RegisterForAdapterPortEvents
+ms.keywords: storage.hba_registerforadapterportevents, fibreHBA_rtns_147e7408-58e4-47bc-8d3f-185c8ee68b83.xml, HBA_RegisterForAdapterPortEvents, HBA_RegisterForAdapterPortEvents routine [Storage Devices], hbaapi/HBA_RegisterForAdapterPortEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

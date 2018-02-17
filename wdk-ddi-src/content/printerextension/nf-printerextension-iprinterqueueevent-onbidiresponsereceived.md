@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: D0CD9950-DF73-4D46-B901-FA45BA88D3CF
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: OnBidiResponseReceived method [Print Devices], printerextension/IPrinterQueueEvent::OnBidiResponseReceived, OnBidiResponseReceived method [Print Devices], IPrinterQueueEvent interface, print.iprinterqueueevent_onbidiresponsereceived, OnBidiResponseReceived, IPrinterQueueEvent interface [Print Devices], OnBidiResponseReceived method, IPrinterQueueEvent::OnBidiResponseReceived, IPrinterQueueEvent
+ms.keywords: print.iprinterqueueevent_onbidiresponsereceived, IPrinterQueueEvent::OnBidiResponseReceived, OnBidiResponseReceived method [Print Devices], IPrinterQueueEvent interface, IPrinterQueueEvent interface [Print Devices], OnBidiResponseReceived method, OnBidiResponseReceived method [Print Devices], printerextension/IPrinterQueueEvent::OnBidiResponseReceived, IPrinterQueueEvent, OnBidiResponseReceived
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -79,7 +79,7 @@ The <i>bstrResponse</i> parameter is formatted according to the schema that is d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |
@@ -94,11 +94,11 @@ The <i>bstrResponse</i> parameter is formatted according to the schema that is d
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueueevent.md">IPrinterQueueEvent</a>
-
-
-
 <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+
+
+
+<a href="..\printerextension\nn-printerextension-iprinterqueueevent.md">IPrinterQueueEvent</a>
 
 
 

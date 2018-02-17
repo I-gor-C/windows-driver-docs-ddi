@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d672d99a-973f-46b3-b46c-cb0a82a85ede
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTUnlock, OpenGL_Functions_6741960d-1f19-4000-948c-aeb71330eb1e.xml, D3DKMTUnlock function [Display Devices], D3DKMTUnlock, display.d3dkmtunlock
+ms.keywords: OpenGL_Functions_6741960d-1f19-4000-948c-aeb71330eb1e.xml, display.d3dkmtunlock, D3DKMTUnlock, d3dkmthk/D3DKMTUnlock, D3DKMTUnlock function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -144,7 +144,7 @@ The following code examples demonstrates how an OpenGL ICD can use <b>D3DKMTUnlo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

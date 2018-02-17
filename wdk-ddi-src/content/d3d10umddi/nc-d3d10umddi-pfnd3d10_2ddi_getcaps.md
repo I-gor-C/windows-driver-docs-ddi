@@ -110,17 +110,17 @@ The data that is returned by the <i>GetCaps(D3D10_2)</i> function in the <b>pDat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | GetCaps(D3D10_2) is supported beginning with the Windows 7 operating system. GetCaps(D3D10_2) is supported beginning with the Windows 7 operating system. |
+| **Windows version** | GetCaps(D3D10_2) is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10_2ddiarg_getcaps.md">D3D10_2DDIARG_GETCAPS</a>
-
-
-
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_2ddi_adapterfuncs.md">D3D10_2DDI_ADAPTERFUNCS</a>
+
+
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10_2ddiarg_getcaps.md">D3D10_2DDIARG_GETCAPS</a>
 
 
 

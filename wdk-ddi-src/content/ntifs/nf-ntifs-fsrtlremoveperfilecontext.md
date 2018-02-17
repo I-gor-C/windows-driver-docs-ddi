@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 1a4b6759-84d9-4731-8920-ef6ea1e51102
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: fsrtlref_90f829b2-a8ed-44fd-adb3-61c57f5f9aad.xml, FsRtlRemovePerFileContext, ntifs/FsRtlRemovePerFileContext, FsRtlRemovePerFileContext routine [Installable File System Drivers], ifsk.fsrtlremoveperfilecontext
+ms.keywords: ntifs/FsRtlRemovePerFileContext, FsRtlRemovePerFileContext, FsRtlRemovePerFileContext routine [Installable File System Drivers], fsrtlref_90f829b2-a8ed-44fd-adb3-61c57f5f9aad.xml, ifsk.fsrtlremoveperfilecontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -100,7 +100,7 @@ Do not use this routine inside your IRP_CLOSE handler. You will not be notified 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -109,7 +109,7 @@ Do not use this routine inside your IRP_CLOSE handler. You will not be notified 
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperfilecontext.md">FsRtlInsertPerFileContext</a>
 
 
 
@@ -117,7 +117,7 @@ Do not use this routine inside your IRP_CLOSE handler. You will not be notified 
 
 
 
-<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a>
 
 
 
@@ -125,7 +125,7 @@ Do not use this routine inside your IRP_CLOSE handler. You will not be notified 
 
 
 
-<a href="..\ntifs\nf-ntifs-fsrtlinsertperfilecontext.md">FsRtlInsertPerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
 
 
 

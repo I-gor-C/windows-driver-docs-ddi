@@ -118,7 +118,7 @@ An error occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with  Windows 7. Available starting with  Windows 7. |
+| **Windows version** | Available starting with  Windows 7.  |
 | **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** | NtosKrnl.exe |

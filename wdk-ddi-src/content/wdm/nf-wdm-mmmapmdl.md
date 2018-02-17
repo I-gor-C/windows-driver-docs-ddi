@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: wdm/MmMapMdl, MmMapMdl function [Kernel-Mode Driver Architecture], MmMapMdl, kernel.mmmapmdl
+ms.keywords: kernel.mmmapmdl, MmMapMdl, MmMapMdl function [Kernel-Mode Driver Architecture], wdm/MmMapMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -87,7 +87,7 @@ If the callback function pointed to by <i>DriverRoutine</i> was invoked, this fu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | wdm.h |
 | **Library** | NtosKrnl.lib |

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 1BF79756-F55D-4F13-A03C-35F7880C5B21
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UdecxUsbSimpleEndpointInitAllocate, udecxusbendpoint/UdecxUsbSimpleEndpointInitAllocate, buses.udecxusbsimpleendpointinitallocate, UdecxUsbSimpleEndpointInitAllocate function [Buses]
+ms.keywords: UdecxUsbSimpleEndpointInitAllocate, UdecxUsbSimpleEndpointInitAllocate function [Buses], udecxusbendpoint/UdecxUsbSimpleEndpointInitAllocate, buses.udecxusbsimpleendpointinitallocate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -77,7 +77,7 @@ The only valid time to create simple endpoints is after creating a the UDE devic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbendpoint.h (include Udecx.h) |
@@ -86,7 +86,7 @@ The only valid time to create simple endpoints is after creating a the UDE devic
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 
 
@@ -94,7 +94,7 @@ The only valid time to create simple endpoints is after creating a the UDE devic
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

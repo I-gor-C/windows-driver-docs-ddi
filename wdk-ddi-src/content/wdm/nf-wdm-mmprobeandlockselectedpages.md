@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1DA632FF-FD5F-4C4C-8B8E-5AC26069094A
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: MmProbeAndLockSelectedPages, kernel.mmprobeandlockselectedpages_, wdm/MmProbeAndLockSelectedPages, MmProbeAndLockSelectedPages routine [Kernel-Mode Driver Architecture]
+ms.keywords: MmProbeAndLockSelectedPages routine [Kernel-Mode Driver Architecture], MmProbeAndLockSelectedPages, kernel.mmprobeandlockselectedpages_, wdm/MmProbeAndLockSelectedPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,7 +89,7 @@ Calls to <b>MmProbeAndLockSelectedPages</b> must be enclosed in a <b>try/except<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h |
 | **Library** | NtosKrnl.exe |

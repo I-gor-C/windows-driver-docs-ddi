@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: d9be3108-27fe-4899-bf23-0f51d9309888
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortWritePortBufferUshort function [Display Devices], VideoPortWritePortBufferUshort, VideoPort_Functions_cf88884e-2891-4e82-b7e0-afaa605a2d65.xml, display.videoportwriteportbufferushort, video/VideoPortWritePortBufferUshort
+ms.keywords: VideoPort_Functions_cf88884e-2891-4e82-b7e0-afaa605a2d65.xml, VideoPortWritePortBufferUshort, VideoPortWritePortBufferUshort function [Display Devices], video/VideoPortWritePortBufferUshort, display.videoportwriteportbufferushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ Callers of <b>VideoPortWritePortBufferUshort</b> can be running at any IRQL, pro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

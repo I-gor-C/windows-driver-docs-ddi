@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 96827d2e-0fee-4276-a758-82f5b7383eec
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: VideoPortZeroMemory, VideoPortZeroMemory function [Display Devices], video/VideoPortZeroMemory, display.videoportzeromemory, VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml
+ms.keywords: VideoPortZeroMemory, VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml, VideoPortZeroMemory function [Display Devices], video/VideoPortZeroMemory, display.videoportzeromemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -85,7 +85,7 @@ Callers of <b>VideoPortZeroMemory</b> can be running at any IRQL if the memory p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |
@@ -94,7 +94,7 @@ Callers of <b>VideoPortZeroMemory</b> can be running at any IRQL if the memory p
 
 ## See Also
 
-<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 
 
@@ -110,15 +110,15 @@ Callers of <b>VideoPortZeroMemory</b> can be running at any IRQL if the memory p
 
 
 
+<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
+
+
+
 <a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
 
 
 
 <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
-
-
-
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 
 

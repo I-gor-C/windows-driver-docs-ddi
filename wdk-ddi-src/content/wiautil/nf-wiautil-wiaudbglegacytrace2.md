@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 911a7089-d4ac-4da0-8be6-a3a36567635c
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: image.wiaudbglegacytrace2, wiauDbgLegacyTrace2 function [Imaging Devices], wiautil/wiauDbgLegacyTrace2, wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml
+ms.keywords: wiauDbgLegacyTrace2, image.wiaudbglegacytrace2, wiauDbgLegacyTrace2 function [Imaging Devices], wiautil/wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ The <b>wiauDbgLegacyTrace2</b> function is identical to the <a href="..\wiautil\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
 | **Library** | NtosKrnl.exe |

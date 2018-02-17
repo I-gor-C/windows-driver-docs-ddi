@@ -139,16 +139,12 @@ The PO_FX_COMPONENT_IDLE_STATE_CALLBACK function type is defined in the Wdm.h he
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows 8 and later versions of Windows. Supported in Windows 8 and later versions of Windows. |
+| **Windows version** | Supported in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-pofxcompleteidlestate.md">PoFxCompleteIdleState</a>
-
-
 
 <a href="..\wdm\nf-wdm-pofxsetcomponentlatency.md">PoFxSetComponentLatency</a>
 
@@ -158,11 +154,15 @@ The PO_FX_COMPONENT_IDLE_STATE_CALLBACK function type is defined in the Wdm.h he
 
 
 
-<a href="..\wdm\nf-wdm-pofxsetcomponentresidency.md">PoFxSetComponentResidency</a>
+<a href="..\wdm\nf-wdm-pofxcompleteidlestate.md">PoFxCompleteIdleState</a>
 
 
 
 <a href="..\wdm\nf-wdm-pofxsetcomponentwake.md">PoFxSetComponentWake</a>
+
+
+
+<a href="..\wdm\nf-wdm-pofxsetcomponentresidency.md">PoFxSetComponentResidency</a>
 
 
 

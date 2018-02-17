@@ -75,7 +75,7 @@ This routine returns <b>STATUS_SUCCESS</b> on success, or the appropriate <b>NTS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8. Available in Windows 8. |
+| **Windows version** | Available in Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | Ntoskrnl.lib |

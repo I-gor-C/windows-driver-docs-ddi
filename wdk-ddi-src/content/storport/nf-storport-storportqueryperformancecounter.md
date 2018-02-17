@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6502E3AE-5841-41C9-BEB7-B00620DBF02D
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortQueryPerformanceCounter, storport/StorPortQueryPerformanceCounter, storage.storportqueryperformancecounter, StorPortQueryPerformanceCounter routine [Storage Devices]
+ms.keywords: storage.storportqueryperformancecounter, StorPortQueryPerformanceCounter, storport/StorPortQueryPerformanceCounter, StorPortQueryPerformanceCounter routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -110,7 +110,7 @@ The <i>PerformanceCounter</i> parameter is <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: EE7644A9-AA57-4C53-9FA5-F844F2BFB0D7
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UdecxWdfDeviceAddUsbDeviceEmulation, udecxwdfdevice/UdecxWdfDeviceAddUsbDeviceEmulation, buses.udecxwdfdeviceaddusbdeviceemulation, UdecxWdfDeviceAddUsbDeviceEmulation function [Buses]
+ms.keywords: buses.udecxwdfdeviceaddusbdeviceemulation, UdecxWdfDeviceAddUsbDeviceEmulation function [Buses], UdecxWdfDeviceAddUsbDeviceEmulation, udecxwdfdevice/UdecxWdfDeviceAddUsbDeviceEmulation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -84,7 +84,7 @@ The method makes the framework device object capable of performing operations re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
@@ -93,11 +93,11 @@ The method makes the framework device object capable of performing operations re
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 

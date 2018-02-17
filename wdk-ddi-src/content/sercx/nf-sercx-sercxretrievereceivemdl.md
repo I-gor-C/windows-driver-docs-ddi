@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 7BC76F62-CA51-4C3F-BBF0-0B192EE871E6
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCxRetrieveReceiveMdl, serports.sercxretrievereceivemdl, SerCxRetrieveReceiveMdl method [Serial Ports], 1/SerCxRetrieveReceiveMdl
+ms.keywords: 1/SerCxRetrieveReceiveMdl, SerCxRetrieveReceiveMdl method [Serial Ports], SerCxRetrieveReceiveMdl, serports.sercxretrievereceivemdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -105,7 +105,7 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
 | **Library** | NtosKrnl.exe |

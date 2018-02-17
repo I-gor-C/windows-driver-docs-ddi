@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 92e4ea13-156b-4d5e-8268-ddb45f6d7b50
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: FilterPreviewImage method [Imaging Devices], IWiaImageFilter interface, IWiaImageFilter, FilterPreviewImage method [Imaging Devices], FilterPreviewImage, IWiaImageFilter interface [Imaging Devices], FilterPreviewImage method, image.iwiaimagefilter_filterpreviewimage, IWiaErrorHandler_22a9ad6b-b9f4-49e5-9c62-2d32fbaf3d02.xml, IWiaImageFilter::FilterPreviewImage, wia_lh/IWiaImageFilter::FilterPreviewImage
+ms.keywords: FilterPreviewImage method [Imaging Devices], wia_lh/IWiaImageFilter::FilterPreviewImage, IWiaImageFilter, image.iwiaimagefilter_filterpreviewimage, IWiaErrorHandler_22a9ad6b-b9f4-49e5-9c62-2d32fbaf3d02.xml, FilterPreviewImage, IWiaImageFilter interface [Imaging Devices], FilterPreviewImage method, FilterPreviewImage method [Imaging Devices], IWiaImageFilter interface, IWiaImageFilter::FilterPreviewImage
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -91,7 +91,7 @@ The <b>IStream </b>and <b>IWiaPreview</b> interfaces are described in the Micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wia_lh.h (include Wia_lh.h) |
 | **Library** | wia_lh.h |

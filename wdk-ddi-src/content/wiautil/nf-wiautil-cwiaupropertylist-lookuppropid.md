@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 454e51fc-f81a-49c8-9e07-e32819af2642
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: LookupPropId method [Imaging Devices], CWiauPropertyList, wiautil/CWiauPropertyList::LookupPropId, wiauFncs_087766c2-718f-4d02-be7f-869df198c3a7.xml, LookupPropId method [Imaging Devices], CWiauPropertyList interface, image.cwiaupropertylist_lookuppropid, CWiauPropertyList interface [Imaging Devices], LookupPropId method, CWiauPropertyList::LookupPropId, LookupPropId
+ms.keywords: CWiauPropertyList, image.cwiaupropertylist_lookuppropid, CWiauPropertyList::LookupPropId, CWiauPropertyList interface [Imaging Devices], LookupPropId method, LookupPropId, wiautil/CWiauPropertyList::LookupPropId, LookupPropId method [Imaging Devices], CWiauPropertyList interface, LookupPropId method [Imaging Devices], wiauFncs_087766c2-718f-4d02-be7f-869df198c3a7.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -71,7 +71,7 @@ On success, the method returns the index of the property within the property lis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
 | **Library** | wiautil.h |

@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: aa04ef8c-5b69-4d7e-8af4-8cbdb680a23a
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasWritePageBufToFile function [Imaging Devices], wiasWritePageBufToFile, wiasFncs_1d5b96b4-4737-481a-ae6a-e1ec4e8affef.xml, image.wiaswritepagebuftofile, wiamdef/wiasWritePageBufToFile
+ms.keywords: wiasWritePageBufToFile, image.wiaswritepagebuftofile, wiamdef/wiasWritePageBufToFile, wiasWritePageBufToFile function [Imaging Devices], wiasFncs_1d5b96b4-4737-481a-ae6a-e1ec4e8affef.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -120,7 +120,7 @@ This is essentially what you would do if you used the file handle directly. The 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |
@@ -128,7 +128,7 @@ This is essentially what you would do if you used the file handle directly. The 
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftostream.md">wiasWritePageBufToStream</a>
 
 
 
@@ -136,7 +136,7 @@ This is essentially what you would do if you used the file handle directly. The 
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftostream.md">wiasWritePageBufToStream</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
 
 
 

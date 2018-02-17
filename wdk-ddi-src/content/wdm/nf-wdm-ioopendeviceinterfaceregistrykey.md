@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d9ca4b9d-dacc-4164-9198-a71a771b145b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoOpenDeviceInterfaceRegistryKey, wdm/IoOpenDeviceInterfaceRegistryKey, kernel.ioopendeviceinterfaceregistrykey, k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture]
+ms.keywords: k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], wdm/IoOpenDeviceInterfaceRegistryKey, IoOpenDeviceInterfaceRegistryKey, kernel.ioopendeviceinterfaceregistrykey
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -138,15 +138,15 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
-
-
-
 <a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>
 
 
 
 <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 
 
 

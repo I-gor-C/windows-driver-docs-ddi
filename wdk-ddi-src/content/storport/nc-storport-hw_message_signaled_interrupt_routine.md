@@ -40,7 +40,7 @@ apiname:
 -	HwMSInterruptRoutine
 product: Windows
 targetos: Windows
-req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.typenames: STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
 req.product: Windows 10 or later.
 ---
 
@@ -88,6 +88,7 @@ A miniport driver can retrieve additional information about the message by calli
 It should not call the <b>StorPortGetMSIInfo</b> routine from inside the <b>HwMSInterruptRoutine</b> routine.
 
 The name <b>HwMSInterruptRoutine</b> is just a placeholder. The actual prototype for this routine is defined in <i>Storport.h</i> as follows:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -104,6 +105,44 @@ BOOLEAN
 </tr>
 </table></span></div>
 
+#### Examples
+
+To define an <b>HwMSInterruptRoutine</b> callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
+
+ For example, to define a <b>HwMSInterruptRoutine</b> callback routine that is named <i>MyHwMSIRoutine</i>, use the <b>HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE</b> type as shown in this code example:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE MyHwMSIRoutine;</pre>
+</td>
+</tr>
+</table></span></div>
+Then, implement your callback routine as follows:
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>_Use_decl_annotations_
+BOOLEAN
+MyHwMSIRoutine (
+  _In_ PVOID  DeviceExtension,
+  _In_ ULONG  MessageId
+  );
+  {
+      ...
+  }</pre>
+</td>
+</tr>
+</table></span></div>
+The <b>HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE</b> function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="https://msdn.microsoft.com/40BD11CD-A559-4F90-BF39-4ED2FB800392">Declaring Functions Using Function Role Types for Storport Drivers</a>. For information about _Use_decl_annotations_, see <a href="https://msdn.microsoft.com/en-us/library/jj159529.aspx">Annotating Function Behavior</a>.
+
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -113,13 +152,21 @@ BOOLEAN
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
-
 <a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
+
+
 
 <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
+
+
 <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
+
+
+
+<a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
+
+
 
  
 

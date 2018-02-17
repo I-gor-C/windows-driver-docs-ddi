@@ -40,7 +40,7 @@ apiname:
 -	pfnVideoProcessorSetStreamMirror
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -86,15 +86,19 @@ Indicates whether mirroring support is enabled or disabled.
 Indicates whether the input stream should be flipped horizontally.
 
 
-<div class="alert"><b>Note</b>  This should be ignored when <b>Enable</b> is <b>FALSE</b>.</div><div> </div>
+
+<div class="alert"><b>Note</b>  This should be ignored when <b>Enable</b> is <b>FALSE</b>.</div>
+<div> </div>
 
 `FlipVertical`
 
 Indicates whether the input stream should be flipped vertically.
 
 
+
 <div class="alert"><b>Note</b>  This should be ignored when <b>Enable</b> is <b>FALSE</b>.
-</div><div> </div>
+</div>
+<div> </div>
 
 
 ## Return Value
@@ -108,13 +112,15 @@ Operations are conceptually applied in the following order:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
+
+
 
  
 

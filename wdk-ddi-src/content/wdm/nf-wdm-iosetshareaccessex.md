@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4DCC4A37-0099-4C6F-B00D-B6CAA7D1EC68
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: IoSetShareAccessEx, kernel.iosetshareaccessex, IoSetShareAccessEx routine [Kernel-Mode Driver Architecture], wdm/IoSetShareAccessEx
+ms.keywords: IoSetShareAccessEx routine [Kernel-Mode Driver Architecture], wdm/IoSetShareAccessEx, IoSetShareAccessEx, kernel.iosetshareaccessex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -98,18 +98,18 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Windows version** | Available in Windows 7 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h |
 | **Library** | Ntoskrnl.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-
-
-
 <a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 

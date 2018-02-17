@@ -40,7 +40,7 @@ apiname:
 -	pfnSetHardwareProtection
 product: Windows
 targetos: Windows
-req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -88,13 +88,15 @@ Destroying and re-creating the DWM swap chain buffers is a heavyweight operation
 <b>SetHardwareProtection</b> is called on the non-visible swap chain buffers allowing it to transition between protected and unprotected modes without causing a visual artifact.  When the DWM flips to the newly changed buffer, the DWM will call <b>SetHardwareProtection</b> on the next buffer in the swap chain buffer, and so on until the new protection state has been set on each of the swap chain buffers.
 
 
+
 <div class="alert"><b>Note</b>  The DWM is guaranteed to re-render the entire swap chain buffer after the hardware protection state has changed.
-</div><div> </div>
+</div>
+<div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
@@ -102,7 +104,11 @@ Destroying and re-creating the DWM swap chain buffers is a heavyweight operation
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
 
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+
+
 
  
 

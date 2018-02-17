@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ebf404dd-479a-4573-9372-4b777c3cd5e7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ExFreePoolWithTag, kernel.exfreepoolwithtag, k102_03ac2997-acff-40b6-a110-718261627130.xml, ExFreePoolWithTag routine [Kernel-Mode Driver Architecture], wdm/ExFreePoolWithTag
+ms.keywords: ExFreePoolWithTag routine [Kernel-Mode Driver Architecture], wdm/ExFreePoolWithTag, kernel.exfreepoolwithtag, k102_03ac2997-acff-40b6-a110-718261627130.xml, ExFreePoolWithTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ Callers of <b>ExFreePoolWithTag</b> must be running at IRQL &lt;= DISPATCH_LEVEL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -89,15 +89,15 @@ Callers of <b>ExFreePoolWithTag</b> must be running at IRQL &lt;= DISPATCH_LEVEL
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
-
-
-
 <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
 
 
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
 
 
 

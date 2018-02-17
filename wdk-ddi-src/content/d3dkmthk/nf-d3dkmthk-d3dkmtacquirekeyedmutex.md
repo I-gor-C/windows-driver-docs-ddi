@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 0d9627c3-ed1d-49d4-bdca-bc0e49efc234
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: D3DKMTAcquireKeyedMutex, D3DKMTAcquireKeyedMutex function [Display Devices], display.d3dkmtacquirekeyedmutex, PFND3DKMT_ACQUIREKEYEDMUTEX, OpenGL_Functions_547da245-f41b-4e73-bf9c-7a72f6104def.xml, d3dkmthk/D3DKMTAcquireKeyedMutex
+ms.keywords: D3DKMTAcquireKeyedMutex, OpenGL_Functions_547da245-f41b-4e73-bf9c-7a72f6104def.xml, d3dkmthk/D3DKMTAcquireKeyedMutex, display.d3dkmtacquirekeyedmutex, PFND3DKMT_ACQUIREKEYEDMUTEX, D3DKMTAcquireKeyedMutex function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -125,7 +125,7 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | D3DKMTAcquireKeyedMutex is supported beginning with the Windows 7 operating system. D3DKMTAcquireKeyedMutex is supported beginning with the Windows 7 operating system. |
+| **Windows version** | D3DKMTAcquireKeyedMutex is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

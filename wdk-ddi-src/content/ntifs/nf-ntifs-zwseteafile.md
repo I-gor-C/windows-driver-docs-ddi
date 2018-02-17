@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: e791900a-06a8-4c8b-8ca8-c4e73d94f609
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.zwseteafile, ZwSetEaFile, ntifs/ZwSetEaFile, ZwSetEaFile routine [Kernel-Mode Driver Architecture]
+ms.keywords: ZwSetEaFile, ntifs/ZwSetEaFile, ZwSetEaFile routine [Kernel-Mode Driver Architecture], kernel.zwseteafile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,7 +103,7 @@ The EaList parameter is not formatted correctly. This is an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows 2000   and later versions of the Windows operating system. Available in Microsoft Windows 2000   and later versions of the Windows operating system. |
+| **Windows version** | Available in Microsoft Windows 2000   and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

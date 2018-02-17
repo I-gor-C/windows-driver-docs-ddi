@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: f9dc5379-0efa-4743-9460-bfb16945768b
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiasPrintDebugHResult function [Imaging Devices], image.wiasprintdebughresult, wiasPrintDebugHResult, wiamdef/wiasPrintDebugHResult, wiasFncs_932e688a-da37-4a53-91ff-f0c0abca4f98.xml
+ms.keywords: wiasPrintDebugHResult, wiasFncs_932e688a-da37-4a53-91ff-f0c0abca4f98.xml, wiamdef/wiasPrintDebugHResult, wiasPrintDebugHResult function [Imaging Devices], image.wiasprintdebughresult
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -78,7 +78,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
 | **Library** | Wiaservc.lib |

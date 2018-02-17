@@ -90,6 +90,8 @@ This function retrieves the number of formats supported for a decode configurati
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_configuration_flags_0020.md">3D12DDI_VIDEO_DECODE_CONFIGURATION</a>
 
+
+
  
 
  

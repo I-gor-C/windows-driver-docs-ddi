@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c56d767f-598c-46b8-bab1-ce4de0780076
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: rtns-disk_4bd8bcea-c43a-45ea-a074-013b8eb30e01.xml, ntddk/IoReadDiskSignature, IoReadDiskSignature routine [Storage Devices], storage.ioreaddisksignature, IoReadDiskSignature
+ms.keywords: ntddk/IoReadDiskSignature, rtns-disk_4bd8bcea-c43a-45ea-a074-013b8eb30e01.xml, storage.ioreaddisksignature, IoReadDiskSignature, IoReadDiskSignature routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ The routine returns STATUS_SUCCESS on success, or the appropriate error code on 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is only available on Windows XP and later. This routine is only available on Windows XP and later. |
+| **Windows version** | This routine is only available on Windows XP and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |

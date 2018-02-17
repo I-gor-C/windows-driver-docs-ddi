@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 20ba1eef-2377-4e17-a2ff-002f1bbe15f0
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisUnmapFile, netvista.ndisunmapfile, NdisUnmapFile function [Network Drivers Starting with Windows Vista], ndis_file_ref_5be88800-5866-4969-8534-2d76953bf4de.xml, NdisUnmapFile
+ms.keywords: NdisUnmapFile, ndis/NdisUnmapFile, ndis_file_ref_5be88800-5866-4969-8534-2d76953bf4de.xml, NdisUnmapFile function [Network Drivers Starting with Windows Vista], netvista.ndisunmapfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -82,7 +82,7 @@ To reduce resource usage, a miniport driver should always call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |
@@ -91,19 +91,19 @@ To reduce resource usage, a miniport driver should always call
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
 
 
 
+<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+
+
+
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
 
 
 

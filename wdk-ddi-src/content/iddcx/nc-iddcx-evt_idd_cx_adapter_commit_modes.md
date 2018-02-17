@@ -86,7 +86,7 @@ The OS always provides the IDDCX_PATH for every connected monitor even if it is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
 | **IRQL** | "_requires_same_" |

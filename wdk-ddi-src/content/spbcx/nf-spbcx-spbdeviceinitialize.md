@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 2EB57066-164F-445C-8621-7B65E6715E97
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SpbDeviceInitialize, SPB.spbdeviceinitialize, spbcx/SpbDeviceInitialize, SpbDeviceInitialize method [Buses]
+ms.keywords: spbcx/SpbDeviceInitialize, SPB.spbdeviceinitialize, SpbDeviceInitialize, SpbDeviceInitialize method [Buses]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | spbcx.h |
 | **Library** | Spbcxstubs.lib |
@@ -94,11 +94,11 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406207">SPB_CONTROLLER_CONFIG_INIT</a>
-
-
-
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
 
 
@@ -106,7 +106,7 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
 
 

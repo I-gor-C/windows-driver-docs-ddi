@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 19C3A3C5-446B-48FD-8E77-2E0F787B16B1
 ms.author: windowsdriverdev
 ms.date: 2/2/2018
-ms.keywords: GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2, GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2 interface, IPrintSchemaCapabilities2::GetParameterDefinition, GetParameterDefinition, printerextension/IPrintSchemaCapabilities2::GetParameterDefinition, print.iprintschemacapabilities2_getparameterdefinition, IPrintSchemaCapabilities2 interface [Print Devices], GetParameterDefinition method
+ms.keywords: GetParameterDefinition, print.iprintschemacapabilities2_getparameterdefinition, IPrintSchemaCapabilities2 interface [Print Devices], GetParameterDefinition method, printerextension/IPrintSchemaCapabilities2::GetParameterDefinition, IPrintSchemaCapabilities2::GetParameterDefinition, IPrintSchemaCapabilities2, GetParameterDefinition method [Print Devices], GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2 interface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -90,22 +90,22 @@ For more information about the data types that you can use with the &lt;psf:Para
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |
 
 ## See Also
 
+<a href="..\printerextension\nn-printerextension-iprintschemacapabilities2.md">IPrintSchemaCapabilities2</a>
+
+
+
 <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463385.aspx">Print Schema Specification</a>
 
 
 
 <a href="..\printerextension\nn-printerextension-iprintschemaparameterdefinition.md">IPrintSchemaParameterDefinition</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities2.md">IPrintSchemaCapabilities2</a>
 
 
 

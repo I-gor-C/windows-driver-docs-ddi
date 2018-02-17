@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: F7AA10E3-5F56-4751-A603-54A0BFB00927
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: buses._ucxstaticstreamscreate, ucxsstreams/UcxStaticStreamsCreate, UcxStaticStreamsCreate, UcxStaticStreamsCreate method [Buses]
+ms.keywords: UcxStaticStreamsCreate method [Buses], UcxStaticStreamsCreate, buses._ucxstaticstreamscreate, ucxsstreams/UcxStaticStreamsCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ Typically, the client driver calls this method in its implementation of the <a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

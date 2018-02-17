@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 57ed4f33-6ce6-41ae-b424-147318ba7656
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.keinitializetimerex, KeInitializeTimerEx routine [Kernel-Mode Driver Architecture], KeInitializeTimerEx, k105_62ca8d08-a87a-4cbd-80fa-18b646b8500d.xml, wdm/KeInitializeTimerEx
+ms.keywords: kernel.keinitializetimerex, k105_62ca8d08-a87a-4cbd-80fa-18b646b8500d.xml, KeInitializeTimerEx routine [Kernel-Mode Driver Architecture], KeInitializeTimerEx, wdm/KeInitializeTimerEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -89,7 +89,7 @@ Use <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a> or <a href="..\wdm\nf-w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -99,11 +99,11 @@ Use <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a> or <a href="..\wdm\nf-w
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
-
-
-
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+
+
+
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
 
 
 

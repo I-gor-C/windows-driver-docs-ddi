@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 1DC215DF-1F53-4910-84D5-17E13BE6202A
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: netvista.vmbchannelpacketcomplete, VmbChannelPacketComplete function [Network Drivers Starting with Windows Vista], VmbChannelPacketComplete, vmbuskernelmodeclientlibapi/VmbChannelPacketComplete
+ms.keywords: VmbChannelPacketComplete function [Network Drivers Starting with Windows Vista], netvista.vmbchannelpacketcomplete, vmbuskernelmodeclientlibapi/VmbChannelPacketComplete, VmbChannelPacketComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -92,7 +92,7 @@ or it may be called later.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

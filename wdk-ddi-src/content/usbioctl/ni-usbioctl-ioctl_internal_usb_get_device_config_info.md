@@ -86,11 +86,11 @@ Upon successful completion, the HardwareIds, CompatibleIds, DeviceDescription <a
 
 ## See Also
 
-<a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HUB_DEVICE_CONFIG_INFO</a>
-
-
-
 <a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a>
+
+
+
+<a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HUB_DEVICE_CONFIG_INFO</a>
 
 
 

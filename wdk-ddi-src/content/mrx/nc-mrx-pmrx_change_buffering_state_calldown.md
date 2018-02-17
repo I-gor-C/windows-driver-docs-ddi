@@ -143,11 +143,11 @@ RDBSS ignores the return value from <i>MRxCompleteBufferingStateChangeRequest</i
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549856">MRxComputeNewBufferingState</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550687">MRxGetConnectionId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549856">MRxComputeNewBufferingState</a>
 
 
 

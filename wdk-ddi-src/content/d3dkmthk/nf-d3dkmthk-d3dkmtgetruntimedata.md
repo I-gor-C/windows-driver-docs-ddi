@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a73ebde8-a1d5-4f97-8457-1f01244bb266
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: d3dkmthk/D3DKMTGetRuntimeData, OpenGL_Functions_c2273a4f-9a28-41b5-97c2-daa8eaa9f128.xml, D3DKMTGetRuntimeData function [Display Devices], PFND3DKMT_GETRUNTIMEDATA, D3DKMTGetRuntimeData, display.d3dkmtgetruntimedata
+ms.keywords: display.d3dkmtgetruntimedata, D3DKMTGetRuntimeData, D3DKMTGetRuntimeData function [Display Devices], PFND3DKMT_GETRUNTIMEDATA, d3dkmthk/D3DKMTGetRuntimeData, OpenGL_Functions_c2273a4f-9a28-41b5-97c2-daa8eaa9f128.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ This function is reserved for system use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h |
 | **Library** | GDI32.lib |

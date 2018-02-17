@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 1cb829e1-bd4f-4d6b-a936-0e7cf8024381
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisZeroMemory macro [Network Drivers Starting with Windows Vista], netvista.ndiszeromemory, ndis_memory_ref_06fa3e0b-cb08-41c7-8e09-debec8e323c0.xml, NdisZeroMemory, ndis/NdisZeroMemory
+ms.keywords: NdisZeroMemory macro [Network Drivers Starting with Windows Vista], ndis/NdisZeroMemory, NdisZeroMemory, netvista.ndiszeromemory, ndis_memory_ref_06fa3e0b-cb08-41c7-8e09-debec8e323c0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -85,7 +85,7 @@ As long as the given range was allocated from nonpaged pool, the caller can be r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlZeroMemory instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlZeroMemory instead. |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlZeroMemory instead.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |

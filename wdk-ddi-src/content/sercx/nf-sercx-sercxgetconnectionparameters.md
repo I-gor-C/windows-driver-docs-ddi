@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 361BC3A7-AE86-4C92-B7E1-A30D467D4A65
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SerCxGetConnectionParameters method [Serial Ports], SerCxGetConnectionParameters, 1/SerCxGetConnectionParameters, serports.sercxgetconnectionparameters
+ms.keywords: serports.sercxgetconnectionparameters, SerCxGetConnectionParameters, SerCxGetConnectionParameters method [Serial Ports], 1/SerCxGetConnectionParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ For more information about the data format of the connection parameters, see <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
 | **Library** | NtosKrnl.exe |

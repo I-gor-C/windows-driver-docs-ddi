@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 49fb1062-9709-4691-9655-8cbf3c5055fb
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: RtlCompressBuffer, COMPRESSION_FORMAT_DEFAULT, rtlref_5d0857eb-eefe-4e85-8f89-fcbfe37ce41f.xml, ntifs/RtlCompressBuffer, COMPRESSION_FORMAT_LZNT1, COMPRESSION_ENGINE_MAXIMUM, COMPRESSION_ENGINE_STANDARD, RtlCompressBuffer function [Installable File System Drivers], COMPRESSION_FORMAT_XPRESS, ifsk.rtlcompressbuffer, COMPRESSION_ENGINE_HIBER, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_XPRESS_HUFF
+ms.keywords: RtlCompressBuffer function [Installable File System Drivers], ntifs/RtlCompressBuffer, COMPRESSION_FORMAT_DEFAULT, ifsk.rtlcompressbuffer, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_XPRESS_HUFF, COMPRESSION_ENGINE_HIBER, rtlref_5d0857eb-eefe-4e85-8f89-fcbfe37ce41f.xml, COMPRESSION_FORMAT_LZNT1, COMPRESSION_ENGINE_STANDARD, RtlCompressBuffer, COMPRESSION_ENGINE_MAXIMUM, COMPRESSION_FORMAT_XPRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -293,7 +293,7 @@ To extract an uncompressed fragment from a compressed buffer, use the <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting in Windows XP. Available starting in Windows XP. |
+| **Windows version** | Available starting in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -302,7 +302,7 @@ To extract an uncompressed fragment from a compressed buffer, use the <a href=".
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
+<a href="..\ntifs\nf-ntifs-rtlgetcompressionworkspacesize.md">RtlGetCompressionWorkSpaceSize</a>
 
 
 
@@ -314,7 +314,7 @@ To extract an uncompressed fragment from a compressed buffer, use the <a href=".
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlgetcompressionworkspacesize.md">RtlGetCompressionWorkSpaceSize</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
 
 
 

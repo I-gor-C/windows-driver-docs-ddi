@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 760f7bd8-0957-4dd0-b201-64173961cbb2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: procgrp_ba92a7bb-1a2b-4056-bebd-d9df299768c1.xml, kernel.wdmlibprocgrpinitialize, WdmlibProcgrpInitialize, WdmlibProcgrpInitialize function [Kernel-Mode Driver Architecture], procgrp/WdmlibProcgrpInitialize
+ms.keywords: WdmlibProcgrpInitialize function [Kernel-Mode Driver Architecture], procgrp/WdmlibProcgrpInitialize, kernel.wdmlibprocgrpinitialize, procgrp_ba92a7bb-1a2b-4056-bebd-d9df299768c1.xml, WdmlibProcgrpInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -128,7 +128,7 @@ For more information about the ProcGrp library, see <a href="https://msdn.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Compatible with Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003, Windows XP, and Windows 2000. Compatible with Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003, Windows XP, and Windows 2000. |
+| **Windows version** | Compatible with Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003, Windows XP, and Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | procgrp.h (include Procgrp.h) |
 | **Library** | Procgrp.lib |

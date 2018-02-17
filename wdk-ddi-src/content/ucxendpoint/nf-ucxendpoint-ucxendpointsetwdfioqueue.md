@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: DC23B286-8A52-4642-B345-D76802C83C55
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UcxEndpointSetWdfIoQueue, buses._ucxendpointsetwdfioqueue, UcxEndpointSetWdfIoQueue method [Buses]
+ms.keywords: UcxEndpointSetWdfIoQueue method [Buses], UcxEndpointSetWdfIoQueue, buses._ucxendpointsetwdfioqueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -83,7 +83,7 @@ For a code example, see <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |

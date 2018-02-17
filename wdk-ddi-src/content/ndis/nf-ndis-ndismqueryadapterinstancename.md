@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 7af6ee73-814b-49f8-8641-d3e8dc672ee5
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisMQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista], netvista.ndismqueryadapterinstancename, ndis/NdisMQueryAdapterInstanceName, miniport_ndis_functions_ref_5e04ebd4-3db8-4cb2-a75c-ce67d938804c.xml, NdisMQueryAdapterInstanceName
+ms.keywords: miniport_ndis_functions_ref_5e04ebd4-3db8-4cb2-a75c-ce67d938804c.xml, netvista.ndismqueryadapterinstancename, NdisMQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista], ndis/NdisMQueryAdapterInstanceName, NdisMQueryAdapterInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -97,7 +97,7 @@ Friendly names are intended to help the user quickly and accurately identify a p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see       NdisMQueryAdapterInstanceName (NDIS 5.1). Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see       NdisMQueryAdapterInstanceName (NDIS 5.1). |
+| **Windows version** | Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see       NdisMQueryAdapterInstanceName (NDIS 5.1).  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | Ndis.lib |

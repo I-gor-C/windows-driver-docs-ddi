@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 86e04896-2921-4f77-9bee-283ceb9a66bc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], ntifs/NtFlushVirtualMemory, ZwFlushVirtualMemory, k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, kernel.zwflushvirtualmemory, NtFlushVirtualMemory, ntifs/ZwFlushVirtualMemory
+ms.keywords: ntifs/ZwFlushVirtualMemory, k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, NtFlushVirtualMemory, ntifs/NtFlushVirtualMemory, kernel.zwflushvirtualmemory, ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], ZwFlushVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -187,7 +187,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Windows version** | Available starting with Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

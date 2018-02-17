@@ -78,7 +78,7 @@ SIZE_T Pfnd3d11ddiCalcprivateresourcesize(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | CalcPrivateResourceSize(D3D11) is supported beginning with the Windows 7 operating system. CalcPrivateResourceSize(D3D11) is supported beginning with the Windows 7 operating system. |
+| **Windows version** | CalcPrivateResourceSize(D3D11) is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 

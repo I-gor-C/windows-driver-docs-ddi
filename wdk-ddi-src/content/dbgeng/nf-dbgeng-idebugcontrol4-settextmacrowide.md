@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 98e93636-33e3-4642-a4fb-8590a7a0e784
 ms.author: windowsdriverdev
 ms.date: 1/19/2018
-ms.keywords: debugger.settextmacrowide, SetTextMacroWide method [Windows Debugging], dbgeng/IDebugControl4::SetTextMacroWide, SetTextMacroWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, SetTextMacroWide, IDebugControl4 interface [Windows Debugging], SetTextMacroWide method, IDebugControl4::SetTextMacroWide
+ms.keywords: dbgeng/IDebugControl4::SetTextMacroWide, debugger.settextmacrowide, SetTextMacroWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], SetTextMacroWide method, SetTextMacroWide method [Windows Debugging], IDebugControl4::SetTextMacroWide, IDebugControl4, SetTextMacroWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -104,7 +104,11 @@ For an overview of aliases used by the debugger engine, see <a href="https://msd
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549270">GetTextMacro</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
 
 
 
@@ -112,11 +116,7 @@ For an overview of aliases used by the debugger engine, see <a href="https://msd
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549270">GetTextMacro</a>
 
 
 

@@ -92,11 +92,11 @@ If at all possible, <i>HwVidInitialize</i> should avoid programming the device h
 
 
 
-<a href="..\video\nc-video-pvideo_hw_reset_hw.md">HwVidResetHw</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556178">DrvAssertMode</a>
+
+
+
+<a href="..\video\nc-video-pvideo_hw_reset_hw.md">HwVidResetHw</a>
 
 
 

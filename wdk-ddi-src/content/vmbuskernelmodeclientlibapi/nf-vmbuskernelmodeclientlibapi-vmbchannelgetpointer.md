@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: F3BEE6FB-51C5-4C3C-A831-3B7C06B3C14D
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelGetPointer function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelGetPointer, VmbChannelGetPointer, netvista.vmbchannelgetpointer
+ms.keywords: VmbChannelGetPointer, netvista.vmbchannelgetpointer, vmbuskernelmodeclientlibapi/VmbChannelGetPointer, VmbChannelGetPointer function [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ The value previously saved by using <a href="..\vmbuskernelmodeclientlibapi\nf-v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_066ba440-b7d8-4c75-99bd-7b7cb38e4d70.xml, stream.ksfilterfactorygetsymboliclink, KsFilterFactoryGetSymbolicLink function [Streaming Media Devices], KsFilterFactoryGetSymbolicLink, ks/KsFilterFactoryGetSymbolicLink
+ms.keywords: KsFilterFactoryGetSymbolicLink, avfunc_066ba440-b7d8-4c75-99bd-7b7cb38e4d70.xml, KsFilterFactoryGetSymbolicLink function [Streaming Media Devices], ks/KsFilterFactoryGetSymbolicLink, stream.ksfilterfactorygetsymboliclink
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -74,7 +74,7 @@ If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | Ks.lib |

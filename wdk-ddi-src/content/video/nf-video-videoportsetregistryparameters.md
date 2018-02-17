@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 39cf1829-2caf-44e0-8528-acb0def0dd54
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportsetregistryparameters, VideoPort_Functions_a1d6dbfd-595b-4396-a1d3-9ec4fa3a6bfb.xml, VideoPortSetRegistryParameters function [Display Devices], video/VideoPortSetRegistryParameters, VideoPortSetRegistryParameters
+ms.keywords: VideoPortSetRegistryParameters function [Display Devices], VideoPortSetRegistryParameters, VideoPort_Functions_a1d6dbfd-595b-4396-a1d3-9ec4fa3a6bfb.xml, display.videoportsetregistryparameters, video/VideoPortSetRegistryParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,7 +99,7 @@ In a checked build of any version of the operating system, a value name that beg
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |
@@ -108,7 +108,7 @@ In a checked build of any version of the operating system, a value name that beg
 
 ## See Also
 
-<a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
 
 
 
@@ -116,11 +116,11 @@ In a checked build of any version of the operating system, a value name that beg
 
 
 
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
-
-
-
 <a href="..\video\nf-video-videoportflushregistry.md">VideoPortFlushRegistry</a>
+
+
+
+<a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
 
 
 

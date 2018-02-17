@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: d0bc4e8b-b173-4568-8c0f-7b87fd84e2cf
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: avfunc_f91aca67-5d6c-42f7-9e24-3b15b54c2b69.xml, KsFreeObjectBag function [Streaming Media Devices], KsFreeObjectBag, ks/KsFreeObjectBag, stream.ksfreeobjectbag
+ms.keywords: KsFreeObjectBag, stream.ksfreeobjectbag, avfunc_f91aca67-5d6c-42f7-9e24-3b15b54c2b69.xml, KsFreeObjectBag function [Streaming Media Devices], ks/KsFreeObjectBag
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
 | **Library** | Ks.lib |
@@ -88,11 +88,7 @@ For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead
 
 
 
-<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
-
-
-
-<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 
 
 
@@ -100,7 +96,11 @@ For more information, see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead
 
 
 
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
+
+
+
+<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
 
 
 

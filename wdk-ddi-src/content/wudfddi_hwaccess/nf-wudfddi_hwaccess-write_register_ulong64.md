@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 50C407F2-657F-451F-8A6B-BEEB533D89DE
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: WRITE_REGISTER_ULONG64, wdf.write_register_ulong64, umdf.write_register_ulong64, WRITE_REGISTER_ULONG64 function, wudfddi_hwaccess/WRITE_REGISTER_ULONG64
+ms.keywords: WRITE_REGISTER_ULONG64, wudfddi_hwaccess/WRITE_REGISTER_ULONG64, umdf.write_register_ulong64, wdf.write_register_ulong64, WRITE_REGISTER_ULONG64 function
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | 64-bit Windows 64-bit Windows |
+| **Windows version** | 64-bit Windows  |
 | **End of support** | Unavailable in UMDF 2.0 and later.  |
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |

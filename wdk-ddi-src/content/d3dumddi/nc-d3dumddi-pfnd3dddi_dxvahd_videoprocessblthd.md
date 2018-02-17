@@ -107,7 +107,7 @@ The DirectX VA video processing operation is successfully performed.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | VideoProcessBltHD is supported beginning with the Windows 7 operating system. VideoProcessBltHD is supported beginning with the Windows 7 operating system. |
+| **Windows version** | VideoProcessBltHD is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

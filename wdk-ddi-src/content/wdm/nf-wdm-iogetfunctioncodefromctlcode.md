@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8bbde78d-49f4-4181-9d92-312010322a7a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.iogetfunctioncodefromctlcode, IoGetFunctionCodeFromCtlCode, k104_211d730a-0df4-45f4-af58-25d2609c7696.xml, wdm/IoGetFunctionCodeFromCtlCode, IoGetFunctionCodeFromCtlCode function [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/IoGetFunctionCodeFromCtlCode, IoGetFunctionCodeFromCtlCode, k104_211d730a-0df4-45f4-af58-25d2609c7696.xml, IoGetFunctionCodeFromCtlCode function [Kernel-Mode Driver Architecture], kernel.iogetfunctioncodefromctlcode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -74,7 +74,7 @@ For information about the layout of IOCTL codes, see <a href="https://msdn.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | wdm.h |

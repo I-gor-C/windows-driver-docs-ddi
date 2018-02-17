@@ -94,7 +94,7 @@ Typically, the GPIO controller driver calls this method from its <a href="..\wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | gpioclx.h |
 | **Library** | Msgpioclxstub.lib |

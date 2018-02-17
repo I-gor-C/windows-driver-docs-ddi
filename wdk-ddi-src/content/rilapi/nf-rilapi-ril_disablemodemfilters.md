@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: eb1ac5cc-f757-4aee-9a21-ed4b03d4b6a8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: rilapi/RIL_DisableModemFilters, RIL_DisableModemFilters, RIL_DisableModemFilters method [Network Drivers Starting with Windows Vista], netvista.ril_disablemodemfilters
+ms.keywords: netvista.ril_disablemodemfilters, RIL_DisableModemFilters, RIL_DisableModemFilters method [Network Drivers Starting with Windows Vista], rilapi/RIL_DisableModemFilters
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

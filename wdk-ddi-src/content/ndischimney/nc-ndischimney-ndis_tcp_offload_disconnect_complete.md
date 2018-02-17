@@ -93,6 +93,7 @@ None
 
 If the offload target issued an abortive disconnect, it must do the following before calling the 
     <b>NdisTcpOffloadDisconnectComplete</b> function:
+
 <ul>
 <li>
 Complete all outstanding send requests on the connection with a status value of
@@ -110,10 +111,12 @@ Write a status value to the
       <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>.
 
 </li>
-</ul><b>Completing a Graceful Disconnect
+</ul>
+<b>Completing a Graceful Disconnect
     </b>
 
 Before completing a graceful disconnect request, the offload target must:
+
 <ul>
 <li>
 Write a status value to the 
@@ -153,7 +156,8 @@ Call the
       <i>FreeMdl</i> parameter should be <b>NULL</b>.
 
 </li>
-</ul>Note that the 
+</ul>
+Note that the 
     <b>NdisTcpOffloadDisconnectComplete</b> function returns only the NET_BUFFER_LIST structure and associated
     structures that NDIS passed to the offload target's 
     <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
@@ -171,21 +175,35 @@ Call the
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
+
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+
 
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
+<a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
+   MiniportTcpOffloadDisconnect</a>
+
+
 
 <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
    NdisAdvanceNetBufferDataStart</a>
 
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
-<a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
-   MiniportTcpOffloadDisconnect</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
 
  
 

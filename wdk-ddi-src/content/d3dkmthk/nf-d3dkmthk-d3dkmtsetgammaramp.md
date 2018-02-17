@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 48f1d2ba-747a-4588-8238-db6ac2aa89d6
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.d3dkmtsetgammaramp, D3DKMTSetGammaRamp, d3dkmthk/D3DKMTSetGammaRamp, OpenGL_Functions_4d684cea-8528-489d-bc35-b70a5f05a57b.xml, D3DKMTSetGammaRamp function [Display Devices]
+ms.keywords: display.d3dkmtsetgammaramp, d3dkmthk/D3DKMTSetGammaRamp, D3DKMTSetGammaRamp function [Display Devices], D3DKMTSetGammaRamp, OpenGL_Functions_4d684cea-8528-489d-bc35-b70a5f05a57b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 | **Library** | Gdi32.lib |

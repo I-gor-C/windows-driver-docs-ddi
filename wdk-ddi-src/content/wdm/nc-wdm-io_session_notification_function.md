@@ -149,22 +149,22 @@ The IO_SESSION_NOTIFICATION_FUNCTION function type is defined in the Wdm.h heade
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
+| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 | **IRQL** | Called at IRQL <= APC_LEVEL. |
 
 ## See Also
 
+<a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
+
+
+
 <a href="..\wdm\ns-wdm-_io_session_state_notification.md">IO_SESSION_STATE_NOTIFICATION</a>
 
 
 
 <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
-
-
-
-<a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
 
 
 

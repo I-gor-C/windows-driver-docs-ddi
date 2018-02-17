@@ -128,7 +128,7 @@ Virtualization_GetVendorAndDevice (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | pcivirt.h |
 | **IRQL** | PASSIVE_LEVEL |

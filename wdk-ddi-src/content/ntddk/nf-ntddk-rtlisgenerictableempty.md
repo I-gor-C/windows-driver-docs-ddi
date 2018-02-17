@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9d032bd1-3ee7-4044-951f-c6730a28f3a1
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: rtlref_07ea645e-b497-445c-a872-34947a2f7e54.xml, RtlIsGenericTableEmpty, RtlIsGenericTableEmpty routine [Installable File System Drivers], ifsk.rtlisgenerictableempty, ntddk/RtlIsGenericTableEmpty
+ms.keywords: rtlref_07ea645e-b497-445c-a872-34947a2f7e54.xml, ntddk/RtlIsGenericTableEmpty, ifsk.rtlisgenerictableempty, RtlIsGenericTableEmpty, RtlIsGenericTableEmpty routine [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ Callers of <b>RtlIsGenericTableEmpty</b> must be running at ≤ APC_LEVEL if the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

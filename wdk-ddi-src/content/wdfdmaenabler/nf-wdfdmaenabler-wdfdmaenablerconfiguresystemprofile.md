@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3374EBB8-F43A-4A2A-92AC-623B39F5EFA0
 ms.author: windowsdriverdev
 ms.date: 1/11/2018
-ms.keywords: kmdf.wdfdmaenablerconfiguresystemprofile, WdfDmaEnablerConfigureSystemProfile method, wdfdmaenabler/WdfDmaEnablerConfigureSystemProfile, WdfDmaEnablerConfigureSystemProfile, PFN_WDFDMAENABLERCONFIGURESYSTEMPROFILE, wdf.wdfdmaenablerconfiguresystemprofile
+ms.keywords: WdfDmaEnablerConfigureSystemProfile method, wdf.wdfdmaenablerconfiguresystemprofile, WdfDmaEnablerConfigureSystemProfile, kmdf.wdfdmaenablerconfiguresystemprofile, wdfdmaenabler/WdfDmaEnablerConfigureSystemProfile, PFN_WDFDMAENABLERCONFIGURESYSTEMPROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -181,7 +181,7 @@ ntStatus = WdfDmaEnablerConfigureSystemProfile(fdoExtension-&gt;DmaEnabler,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8 Windows 8 |
+| **Windows version** | Windows 8  |
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
@@ -190,6 +190,10 @@ ntStatus = WdfDmaEnablerConfigureSystemProfile(fdoExtension-&gt;DmaEnabler,
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
+
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
+
+
 
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
@@ -200,10 +204,6 @@ ntStatus = WdfDmaEnablerConfigureSystemProfile(fdoExtension-&gt;DmaEnabler,
 
 
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf_dma_system_profile_config_init.md">WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT</a>
-
-
-
-<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
 
 
 

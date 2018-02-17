@@ -8,7 +8,7 @@ old-project: image
 ms.assetid: 18d248d9-d447-4d3e-9eaa-f6befb4bef58
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: wiauFncs_1400188e-53d1-481c-a470-8a2247b7f34f.xml, wiauDbgErrorHr, wiautil/wiauDbgErrorHr, image.wiaudbgerrorhr, wiauDbgErrorHr function [Imaging Devices]
+ms.keywords: wiauDbgErrorHr, wiauFncs_1400188e-53d1-481c-a470-8a2247b7f34f.xml, image.wiaudbgerrorhr, wiautil/wiauDbgErrorHr, wiauDbgErrorHr function [Imaging Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -99,18 +99,14 @@ The <b>wiauDbgErrorHr</b> function typically logs two lines to the log file, or 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
 | **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
-
-
-
-<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
 
 
 
@@ -118,7 +114,11 @@ The <b>wiauDbgErrorHr</b> function typically logs two lines to the log file, or 
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
+
+
+
+<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
 
 
 

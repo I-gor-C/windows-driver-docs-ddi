@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 5506dd53-ac15-44c6-aded-a71451a1c15d
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_GetCallWaitingSettings, netvista.ril_getcallwaitingsettings, RIL_GetCallWaitingSettings method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetCallWaitingSettings
+ms.keywords: RIL_GetCallWaitingSettings method [Network Drivers Starting with Windows Vista], RIL_GetCallWaitingSettings, netvista.ril_getcallwaitingsettings, rilapi/RIL_GetCallWaitingSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

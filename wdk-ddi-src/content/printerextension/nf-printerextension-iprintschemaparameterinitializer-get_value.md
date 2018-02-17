@@ -102,7 +102,7 @@ The <b>Value</b> (get_Value) property returns the current value of the <b>IPrint
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
 | **Library** | printerextension.h |

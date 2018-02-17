@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 1bd9a156-a366-4f35-956f-d195c41ae722
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: display.videoportgetdmacontext, video/VideoPortGetDmaContext, VideoPort_Functions_97335d32-fa36-4130-a050-39fbdfc08517.xml, VideoPortGetDmaContext, VideoPortGetDmaContext function [Display Devices]
+ms.keywords: VideoPort_Functions_97335d32-fa36-4130-a050-39fbdfc08517.xml, VideoPortGetDmaContext function [Display Devices], VideoPortGetDmaContext, display.videoportgetdmacontext, video/VideoPortGetDmaContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
 | **Library** | Videoprt.lib |

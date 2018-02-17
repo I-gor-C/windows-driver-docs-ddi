@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: StorPortStateChangeDetected, STATE_CHANGE_BUS, ATTRIBUTE_VM_PASSTHROUGH_LUN, StorPortStateChangeDetected routine [Storage Devices], STATE_CHANGE_TARGET, STATE_CHANGE_LUN, storage.storportstatechangedetected, storport/StorPortStateChangeDetected
+ms.keywords: STATE_CHANGE_LUN, storage.storportstatechangedetected, STATE_CHANGE_TARGET, storport/StorPortStateChangeDetected, StorPortStateChangeDetected, StorPortStateChangeDetected routine [Storage Devices], ATTRIBUTE_VM_PASSTHROUGH_LUN, STATE_CHANGE_BUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -200,7 +200,7 @@ If multiple flags are specified in <i>ChangedEntity</i>, the  flag with greater 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
 | **Library** | NtosKrnl.exe |

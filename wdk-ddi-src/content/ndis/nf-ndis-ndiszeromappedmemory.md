@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 210e20a5-c101-4005-97fb-e549ff97e7ce
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: NdisZeroMappedMemory, miniport_memory_mapped_ref_41b91ff3-a113-4a69-bb38-ec3ba89cc0d7.xml, ndis/NdisZeroMappedMemory, NdisZeroMappedMemory function [Network Drivers Starting with Windows Vista], netvista.ndiszeromappedmemory
+ms.keywords: NdisZeroMappedMemory, miniport_memory_mapped_ref_41b91ff3-a113-4a69-bb38-ec3ba89cc0d7.xml, NdisZeroMappedMemory function [Network Drivers Starting with Windows Vista], ndis/NdisZeroMappedMemory, netvista.ndiszeromappedmemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -86,7 +86,7 @@ A miniport driver can call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisZeroMappedMemory (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisZeroMappedMemory (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisZeroMappedMemory (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisZeroMappedMemory (NDIS   5.1)) in Windows XP. |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisZeroMappedMemory (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisZeroMappedMemory (NDIS   5.1)) in Windows XP.  |
 | **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |
@@ -98,11 +98,11 @@ A miniport driver can call
 
 
 
-<a href="..\ndis\nf-ndis-ndiszeromemory.md">NdisZeroMemory</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndiszeromemory.md">NdisZeroMemory</a>
 
 
 

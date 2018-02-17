@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6a79896a-0591-40dd-8e2d-6e3796556564
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: storage.hba_sendrps, fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml, HBA_SendRPS routine [Storage Devices], hbaapi/HBA_SendRPS, HBA_SendRPS
+ms.keywords: storage.hba_sendrps, HBA_SendRPS routine [Storage Devices], HBA_SendRPS, hbaapi/HBA_SendRPS, fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

@@ -40,7 +40,7 @@ apiname:
 -	Dot11ExtPostAssociateCompletion
 product: Windows
 targetos: Windows
-req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
+req.typenames: DRIVER_INFO_8W, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -88,8 +88,10 @@ The media access control (MAC) address of the access point (AP) with which the I
      performed a security operation. This parameter is formatted as a 
      <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure.
      
+
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
-     service set (BSS) networks.</div><div> </div>
+     service set (BSS) networks.</div>
+<div> </div>
 
 `dwReasonCode`
 
@@ -122,6 +124,7 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 
 The IHV Extensions DLL calls the 
     <i>Dot11ExtPostAssociateCompletion</i> function to do any of the following:
+
 <ul>
 <li>
 Complete the post-association operation initiated by a call to the 
@@ -139,8 +142,10 @@ For example, if the authorization state of the port changes, the IHV Extensions 
       <i>Dot11ExtPostAssociateCompletion</i>.
 
 </li>
-</ul>The IHV Extensions DLL must follow these guidelines when calling the 
+</ul>
+The IHV Extensions DLL must follow these guidelines when calling the 
     <b>Dot11ExtPostAssociateCompletion</b> function.
+
 <ul>
 <li>
 If the post-association operation completed successfully, the IHV Extensions DLL must set 
@@ -209,27 +214,41 @@ The IHV Extensions DLL must call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems.  |
 | **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">Dot11ExtIhvDeinitAdapter</a>
-
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
-<a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
-   Functions</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
    Dot11ExtIhvPerformPostAssociate</a>
 
+
+
 <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a>
+
+
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">Dot11ExtIhvDeinitAdapter</a>
+
+
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_adapter_reset.md">Dot11ExtIhvAdapterReset</a>
+
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
+
+
 
  
 

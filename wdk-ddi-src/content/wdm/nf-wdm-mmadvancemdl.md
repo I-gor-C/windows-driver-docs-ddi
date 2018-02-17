@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 93e84c80-d671-4f04-8532-6c374e1ae72b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.mmadvancemdl, wdm/MmAdvanceMdl, k106_14f78a97-f29c-4996-b8aa-94a04b62f11c.xml, MmAdvanceMdl, MmAdvanceMdl routine [Kernel-Mode Driver Architecture]
+ms.keywords: wdm/MmAdvanceMdl, kernel.mmadvancemdl, MmAdvanceMdl, k106_14f78a97-f29c-4996-b8aa-94a04b62f11c.xml, MmAdvanceMdl routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -130,7 +130,7 @@ Drivers that do not satisfy these conditions must instead use the <b>IoBuildPart
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

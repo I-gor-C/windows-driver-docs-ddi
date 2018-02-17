@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6397d96e-f3b1-4e2f-91ce-b123c9e8de81
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: ObReferenceObjectByHandle, wdm/ObReferenceObjectByHandle, ObReferenceObjectByHandle routine [Kernel-Mode Driver Architecture], kernel.obreferenceobjectbyhandle, k107_97ce2cea-8f20-4b30-996c-9ea268951aef.xml
+ms.keywords: kernel.obreferenceobjectbyhandle, k107_97ce2cea-8f20-4b30-996c-9ea268951aef.xml, ObReferenceObjectByHandle routine [Kernel-Mode Driver Architecture], wdm/ObReferenceObjectByHandle, ObReferenceObjectByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -262,7 +262,7 @@ If the call succeeds, a pointer to the object body is returned to the caller and
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -272,7 +272,7 @@ If the call succeeds, a pointer to the object body is returned to the caller and
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+<a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
 
 
 
@@ -280,11 +280,11 @@ If the call succeeds, a pointer to the object body is returned to the caller and
 
 
 
-<a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
-
-
-
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 

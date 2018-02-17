@@ -211,7 +211,7 @@ Your driver typically won't need to call this function.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION |
+| **Windows version** | Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 | **Library** | NtosKrnl.exe |

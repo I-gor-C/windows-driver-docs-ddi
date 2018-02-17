@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 0ec10c43-df57-4661-9106-8edc6b76f5d7
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, rxworkq/RxSpinDownMRxDispatcher, ifsk.rxspindownmrxdispatcher, RxSpinDownMRxDispatcher, RxSpinDownMRxDispatcher function [Installable File System Drivers]
+ms.keywords: ifsk.rxspindownmrxdispatcher, rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, RxSpinDownMRxDispatcher function [Installable File System Drivers], RxSpinDownMRxDispatcher, rxworkq/RxSpinDownMRxDispatcher
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>R
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The RxSpinDownMRxDispatcher routine is only available on Windows XP and later. The RxSpinDownMRxDispatcher routine is only available on Windows XP and later. |
+| **Windows version** | The RxSpinDownMRxDispatcher routine is only available on Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | rxworkq.h (include Rxworkq.h, Rxstruc.h) |
 | **Library** | NtosKrnl.exe |

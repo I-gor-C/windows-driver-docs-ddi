@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c46aee6e-f31d-4b8d-8244-3c364aa79ae4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_SendRNIDV2 routine [Storage Devices], hbaapi/HBA_SendRNIDV2, HBA_SendRNIDV2, storage.hba_sendrnidv2, fibreHBA_rtns_8e5796fe-6cfa-42e8-9855-9ab89752bfec.xml
+ms.keywords: storage.hba_sendrnidv2, fibreHBA_rtns_8e5796fe-6cfa-42e8-9855-9ab89752bfec.xml, HBA_SendRNIDV2, hbaapi/HBA_SendRNIDV2, HBA_SendRNIDV2 routine [Storage Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function

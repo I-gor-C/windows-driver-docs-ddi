@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 521928f8-6434-443a-83f0-7e8e00c756b5
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml, HidRegisterMinidriver, hidport/HidRegisterMinidriver, HidRegisterMinidriver routine [Human Input Devices], hid.hidregisterminidriver
+ms.keywords: HidRegisterMinidriver, hidfunc_83ef5fb3-46fc-427e-a9de-8aa554ef26b6.xml, hid.hidregisterminidriver, hidport/HidRegisterMinidriver, HidRegisterMinidriver routine [Human Input Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -116,7 +116,7 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Windows version** | Available in Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | hidport.h (include Hidport.h) |
 | **Library** | Hid.lib |

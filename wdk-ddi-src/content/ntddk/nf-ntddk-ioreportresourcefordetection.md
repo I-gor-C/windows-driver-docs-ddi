@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 83b8e0b0-112c-4263-91f8-0c2e20dd76a4
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: k104_e2a8d386-d1bb-4bf5-aa30-d3a905e91174.xml, IoReportResourceForDetection routine [Kernel-Mode Driver Architecture], ntddk/IoReportResourceForDetection, kernel.ioreportresourcefordetection, IoReportResourceForDetection
+ms.keywords: k104_e2a8d386-d1bb-4bf5-aa30-d3a905e91174.xml, kernel.ioreportresourcefordetection, IoReportResourceForDetection, ntddk/IoReportResourceForDetection, IoReportResourceForDetection routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -158,7 +158,7 @@ Callers of <b>IoReportResourceForDetection</b> must be running at IRQL = PASSIVE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtosKrnl.lib |
@@ -167,11 +167,11 @@ Callers of <b>IoReportResourceForDetection</b> must be running at IRQL = PASSIVE
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-ioreportdetecteddevice.md">IoReportDetectedDevice</a>
-
-
-
 <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-ioreportdetecteddevice.md">IoReportDetectedDevice</a>
 
 
 

@@ -90,6 +90,7 @@ The handler declaration used for <i>KStrMethodHandler</i> and <i>KStrSupportHand
 When a helper function such as <a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a> calls a method handler whose data buffer is defined as a write or modify buffer, the method handler must set the <b>Information</b> member of the IO_STATUS_BLOCK structure for the <b>IoStatus</b> member within the IRP (<i>Irp</i> parameter) to the size of that data buffer. The minidriver sets the <b>Flags</b> member of the KSMETHOD_ITEM structure for the method to KSMETHOD_TYPE_WRITE or KSMETHOD_TYPE_MODIFY to define the method handler's data buffer as write or modify respectively. 
 
 The following code snippet shows an example of an implementation of a method handler that sets the size of the returning data buffer in the IRP:
+
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -127,13 +128,21 @@ The following code snippet shows an example of an implementation of a method han
 
 ## See Also
 
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
+
+
 <a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 
-<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+
 
 <a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
+
+<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+
+
 
  
 

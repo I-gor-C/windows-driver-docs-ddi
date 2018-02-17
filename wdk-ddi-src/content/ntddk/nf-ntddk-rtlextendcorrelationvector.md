@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 26de5890-edef-4e38-834a-9823327a74c2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: kernel.rtlextendcorrelationvector, RtlExtendCorrelationVector, ntddk/RtlExtendCorrelationVector, RtlExtendCorrelationVector function [Kernel-Mode Driver Architecture]
+ms.keywords: RtlExtendCorrelationVector, ntddk/RtlExtendCorrelationVector, kernel.rtlextendcorrelationvector, RtlExtendCorrelationVector function [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -103,7 +103,7 @@ Extending the correlation vector resulted in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Windows version** | Windows 10, version 1709 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
 | **Library** | NtosKrnl.lib |

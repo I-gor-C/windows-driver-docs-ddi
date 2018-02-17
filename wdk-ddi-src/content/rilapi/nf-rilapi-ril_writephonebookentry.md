@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 03fc6240-ccc8-48de-87e0-b1ee5db3bac8
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_WritePhonebookEntry method [Network Drivers Starting with Windows Vista], RIL_WritePhonebookEntry, rilapi/RIL_WritePhonebookEntry, netvista.ril_writephonebookentry
+ms.keywords: RIL_WritePhonebookEntry method [Network Drivers Starting with Windows Vista], rilapi/RIL_WritePhonebookEntry, netvista.ril_writephonebookentry, RIL_WritePhonebookEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -96,7 +96,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

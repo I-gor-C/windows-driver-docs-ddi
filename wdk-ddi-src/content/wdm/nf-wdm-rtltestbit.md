@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 52f892a8-e82d-465d-aef5-630f5e971e8f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: RtlTestBit routine [Kernel-Mode Driver Architecture], RtlTestBit, k109_552764bc-c69d-4039-8284-8cc8f41dc16a.xml, kernel.rtltestbit, wdm/RtlTestBit
+ms.keywords: RtlTestBit routine [Kernel-Mode Driver Architecture], wdm/RtlTestBit, RtlTestBit, k109_552764bc-c69d-4039-8284-8cc8f41dc16a.xml, kernel.rtltestbit
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -79,7 +79,7 @@ Callers of <b>RtlTestBit</b> must be running at IRQL &lt;= APC_LEVEL if the memo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Windows version** | Available in Windows XP and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |
@@ -88,11 +88,11 @@ Callers of <b>RtlTestBit</b> must be running at IRQL &lt;= APC_LEVEL if the memo
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
-
-
-
 <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
 
 
 

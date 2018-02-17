@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 28C73FBA-9122-4CFD-959E-495062CEEF41
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method, portcls/IMiniportWaveRTOutputStream::SetWritePacket, audio.iminiportwavertoutputstream_setwritepacket, SetWritePacket, IMiniportWaveRTOutputStream, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface
+ms.keywords: IMiniportWaveRTOutputStream, audio.iminiportwavertoutputstream_setwritepacket, SetWritePacket method [Audio Devices], SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface, IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method, SetWritePacket, portcls/IMiniportWaveRTOutputStream::SetWritePacket, IMiniportWaveRTOutputStream::SetWritePacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -108,7 +108,7 @@ Depending on hardware capabilities, if the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows 10 and later. Available in Windows 10 and later. |
+| **Windows version** | Available in Windows 10 and later.  |
 | **Target Platform** | Windows |
 | **Header** | portcls.h |
 | **Library** | portcls.h |

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: AE0DA609-90E5-452F-B24E-0902C5E868A8
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UDECX_USB_ENDPOINT_CALLBACKS_INIT method [Buses], udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS_INIT, buses.udecx_usb_endpoint_callbacks_init, UDECX_USB_ENDPOINT_CALLBACKS_INIT
+ms.keywords: udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS_INIT, buses.udecx_usb_endpoint_callbacks_init, UDECX_USB_ENDPOINT_CALLBACKS_INIT method [Buses], UDECX_USB_ENDPOINT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Header** | udecxusbendpoint.h (include Udecx.h) |

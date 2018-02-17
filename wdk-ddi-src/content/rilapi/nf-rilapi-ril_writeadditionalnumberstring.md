@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 9ddf148b-7d36-4a95-a866-57e26220a549
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_WriteAdditionalNumberString, netvista.ril_writeadditionalnumberstring, RIL_WriteAdditionalNumberString method [Network Drivers Starting with Windows Vista], rilapi/RIL_WriteAdditionalNumberString
+ms.keywords: RIL_WriteAdditionalNumberString, netvista.ril_writeadditionalnumberstring, rilapi/RIL_WriteAdditionalNumberString, RIL_WriteAdditionalNumberString method [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -86,7 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

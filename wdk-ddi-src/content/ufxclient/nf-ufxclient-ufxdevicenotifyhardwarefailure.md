@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2EEA262C-5186-4450-A01D-212278ED710B
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: UfxDeviceNotifyHardwareFailure method [Buses], buses.ufxdevicenotifyhardwarefailure, UfxDeviceNotifyHardwareFailure, ufxclient/UfxDeviceNotifyHardwareFailure
+ms.keywords: UfxDeviceNotifyHardwareFailure, ufxclient/UfxDeviceNotifyHardwareFailure, UfxDeviceNotifyHardwareFailure method [Buses], buses.ufxdevicenotifyhardwarefailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -94,7 +94,7 @@ The client driver calls <b>UfxDeviceNotifyHardwareFailure</b> when the controlle
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
 | **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: a4b59403-9a2f-4857-947b-dff8e3ea079c
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: PcCompletePendingPropertyRequest function [Audio Devices], PcCompletePendingPropertyRequest, audio.pccompletependingpropertyrequest, portcls/PcCompletePendingPropertyRequest, audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml
+ms.keywords: PcCompletePendingPropertyRequest function [Audio Devices], portcls/PcCompletePendingPropertyRequest, PcCompletePendingPropertyRequest, audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml, audio.pccompletependingpropertyrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -81,7 +81,7 @@ The driver should call <b>PcCompletePendingPropertyRequest</b> only when the req
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The PortCls system driver implements the PcCompletePendingPropertyRequest function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcCompletePendingPropertyRequest function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Windows version** | The PortCls system driver implements the PcCompletePendingPropertyRequest function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** | Portcls.lib |

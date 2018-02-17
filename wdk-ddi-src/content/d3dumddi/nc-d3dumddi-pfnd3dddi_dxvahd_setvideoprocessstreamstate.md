@@ -107,7 +107,7 @@ The stream state is successfully set.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | SetVideoProcessStreamState is supported beginning with the Windows 7 operating system. SetVideoProcessStreamState is supported beginning with the Windows 7 operating system. |
+| **Windows version** | SetVideoProcessStreamState is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 

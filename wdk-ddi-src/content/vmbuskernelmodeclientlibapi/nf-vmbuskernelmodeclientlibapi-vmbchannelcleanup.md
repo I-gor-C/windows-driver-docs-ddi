@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: E079527D-1687-4A12-B86E-96C89CE458CE
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: VmbChannelCleanup, netvista.vmbchannelcleanup, VmbChannelCleanup function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelCleanup
+ms.keywords: netvista.vmbchannelcleanup, VmbChannelCleanup, VmbChannelCleanup function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelCleanup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -80,7 +80,7 @@ Before you call this function, the channel must be disabled.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |

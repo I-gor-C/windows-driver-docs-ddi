@@ -132,13 +132,13 @@ The Direct3D runtime verifies that the source surface specified by the <b>SrcSub
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | DecryptionBlt is supported beginning with the Windows 7 operating system. DecryptionBlt is supported beginning with the Windows 7 operating system. |
+| **Windows version** | DecryptionBlt is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a>
 
 
 
@@ -146,7 +146,7 @@ The Direct3D runtime verifies that the source surface specified by the <b>SrcSub
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 55f759dc-8fc7-4d47-9b3d-55d8902ed805
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: READ_PORT_USHORT, kernel.read_port_ushort, k103_b7b22427-572f-43d7-b6bd-dcf2dd7ac104.xml, wdm/READ_PORT_USHORT, READ_PORT_USHORT routine [Kernel-Mode Driver Architecture]
+ms.keywords: kernel.read_port_ushort, READ_PORT_USHORT, wdm/READ_PORT_USHORT, k103_b7b22427-572f-43d7-b6bd-dcf2dd7ac104.xml, READ_PORT_USHORT routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ Callers of <b>READ_PORT_USHORT</b> can be running at any IRQL, assuming the <i>P
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** | Hal.lib |

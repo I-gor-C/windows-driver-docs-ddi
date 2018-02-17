@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: af6ecdb7-8713-460d-8fd9-ef027ac15b39
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: FsRtlRemoveDotsFromPath, ntifs/FsRtlRemoveDotsFromPath, fsrtlref_93b15313-3292-4122-9852-731b995e9d20.xml, ifsk.fsrtlremovedotsfrompath, FsRtlRemoveDotsFromPath routine [Installable File System Drivers]
+ms.keywords: ntifs/FsRtlRemoveDotsFromPath, FsRtlRemoveDotsFromPath routine [Installable File System Drivers], FsRtlRemoveDotsFromPath, ifsk.fsrtlremovedotsfrompath, fsrtlref_93b15313-3292-4122-9852-731b995e9d20.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -120,7 +120,7 @@ The routine will fail with STATUS_IO_REPARSE_DATA_INVALID if any of the followin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 | **Library** | NtosKrnl.lib |

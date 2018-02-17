@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: A7917082-4C3F-445A-AD26-32DE670754E5
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: portcls/PcGetPhysicalDeviceObject, PcGetPhysicalDeviceObject, audio.pcgetphysicaldeviceobject, PcGetPhysicalDeviceObject function [Audio Devices]
+ms.keywords: portcls/PcGetPhysicalDeviceObject, PcGetPhysicalDeviceObject function [Audio Devices], audio.pcgetphysicaldeviceobject, PcGetPhysicalDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -76,7 +76,7 @@ The <b>PcGetPhysicalDeviceObject</b> function returns STATUS_SUCCESS if the func
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Available starting in Windows 8. Available starting in Windows 8. |
+| **Windows version** | Available starting in Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | portcls.h |
 | **Library** | Portcls.lib |

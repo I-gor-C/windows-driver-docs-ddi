@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 7175453E-DF6D-45F0-B666-CF4FCF1F880C
 ms.author: windowsdriverdev
 ms.date: 2/8/2018
-ms.keywords: GetModes method [Audio Devices], IMiniportAudioSignalProcessing::GetModes, GetModes, audio.iminiportaudiosignalprocessing_getmodes, portcls/IMiniportAudioSignalProcessing::GetModes, IMiniportAudioSignalProcessing interface [Audio Devices], GetModes method, GetModes method [Audio Devices], IMiniportAudioSignalProcessing interface, IMiniportAudioSignalProcessing
+ms.keywords: audio.iminiportaudiosignalprocessing_getmodes, IMiniportAudioSignalProcessing interface [Audio Devices], GetModes method, IMiniportAudioSignalProcessing::GetModes, IMiniportAudioSignalProcessing, GetModes method [Audio Devices], IMiniportAudioSignalProcessing interface, portcls/IMiniportAudioSignalProcessing::GetModes, GetModes, GetModes method [Audio Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: method
@@ -106,7 +106,7 @@ The following table presents and explains  the error messages than can be return
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Universal |
 | **Header** | portcls.h |
 | **Library** | portcls.h |

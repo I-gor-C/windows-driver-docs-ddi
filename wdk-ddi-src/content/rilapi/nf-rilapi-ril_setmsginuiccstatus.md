@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 0f24bddd-9e22-4710-9028-dbeeac29e2d5
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: RIL_SetMsgInUiccStatus method [Network Drivers Starting with Windows Vista], RIL_SetMsgInUiccStatus, netvista.ril_setmsginuiccstatus, rilapi/RIL_SetMsgInUiccStatus
+ms.keywords: netvista.ril_setmsginuiccstatus, rilapi/RIL_SetMsgInUiccStatus, RIL_SetMsgInUiccStatus method [Network Drivers Starting with Windows Vista], RIL_SetMsgInUiccStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -91,7 +91,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Windows 10 Windows 10 |
+| **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
 | **Library** | NtosKrnl.exe |

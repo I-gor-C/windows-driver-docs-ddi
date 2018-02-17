@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9ba6f693-b0b7-4176-b951-7bb259bec391
 ms.author: windowsdriverdev
 ms.date: 2/7/2018
-ms.keywords: ntifs/RtlNtStatusToDosError, rtlref_8afdfe24-1071-4bab-b935-b1b91eb52766.xml, RtlNtStatusToDosError, ifsk.rtlntstatustodoserror, RtlNtStatusToDosError routine [Installable File System Drivers]
+ms.keywords: ifsk.rtlntstatustodoserror, RtlNtStatusToDosError routine [Installable File System Drivers], rtlref_8afdfe24-1071-4bab-b935-b1b91eb52766.xml, ntifs/RtlNtStatusToDosError, RtlNtStatusToDosError
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -75,7 +75,7 @@ There is no function that provides the inverse functionality of <b>RtlNtStatusTo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | The RtlNtStatusToDosError routine is available on Microsoft Windows 2000 and later versions of Windows. The RtlNtStatusToDosError routine is available on Microsoft Windows 2000 and later versions of Windows. |
+| **Windows version** | The RtlNtStatusToDosError routine is available on Microsoft Windows 2000 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** | NtosKrnl.lib |

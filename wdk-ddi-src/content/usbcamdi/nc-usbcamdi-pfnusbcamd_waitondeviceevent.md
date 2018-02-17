@@ -175,7 +175,7 @@ The typical usage scenario for this function is a camera with a snapshot button 
 
 ## See Also
 
-<a href="..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md">USBCAMD_InitializeNewInterface</a>
+<a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
 
 
 
@@ -183,7 +183,7 @@ The typical usage scenario for this function is a camera with a snapshot button 
 
 
 
-<a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
+<a href="..\usbcamdi\nf-usbcamdi-usbcamd_initializenewinterface.md">USBCAMD_InitializeNewInterface</a>
 
 
 

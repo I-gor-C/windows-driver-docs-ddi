@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 8f3abf40-bb47-4fa6-862b-6126edb00b36
 ms.author: windowsdriverdev
 ms.date: 1/18/2018
-ms.keywords: ndis/NdisEqualUnicodeString, netvista.ndisequalunicodestring, NdisEqualUnicodeString, ndis_string_ref_ccfcf1e6-b983-47a3-a46e-3a6ff1eb7158.xml, NdisEqualUnicodeString macro [Network Drivers Starting with Windows Vista]
+ms.keywords: NdisEqualUnicodeString, ndis_string_ref_ccfcf1e6-b983-47a3-a46e-3a6ff1eb7158.xml, NdisEqualUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisEqualUnicodeString, netvista.ndisequalunicodestring
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -87,7 +87,7 @@ Starting with Windows 2000 and later drivers, a string of type NDIS_STRING is a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead. |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead.  |
 | **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** | ndis.h |
