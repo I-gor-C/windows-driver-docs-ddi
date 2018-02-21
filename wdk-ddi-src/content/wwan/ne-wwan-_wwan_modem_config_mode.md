@@ -83,9 +83,9 @@ typedef enum _WWAN_MODEM_CONFIG_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The modem configuration mode shall not change during runtime. If a change is detected, it will be ignored by the OS.
+The modem configuration mode shall not change during runtime. If a change is detected, it will be ignored by the OS.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,9 +93,9 @@ typedef enum _WWAN_MODEM_CONFIG_MODE {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
 
 
 

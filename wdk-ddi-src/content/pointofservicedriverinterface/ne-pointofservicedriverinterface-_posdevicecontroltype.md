@@ -374,9 +374,9 @@ typedef enum _PosDeviceControlType {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration provides values for each IOCTL that you can send to the device driver. It is a convenient way to indicate which IOCTL to dispatch when calling functions like <b>SendDeviceCommand()</b>.
+This enumeration provides values for each IOCTL that you can send to the device driver. It is a convenient way to indicate which IOCTL to dispatch when calling functions like <b>SendDeviceCommand()</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

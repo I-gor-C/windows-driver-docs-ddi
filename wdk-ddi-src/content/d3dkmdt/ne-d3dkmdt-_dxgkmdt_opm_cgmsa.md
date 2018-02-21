@@ -99,9 +99,9 @@ DXGKMDT_OPM_REDISTRIBUTION_CONTROL_REQUIRED can be used only if a protected outp
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        CGMS-A protects analog TV signals. Currently, OPM can use CGMS-A to protect signals from composite outputs, S-Video outputs, or component outputs. For more information about CGMS-A, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70568">CGMS-A article</a>.
+CGMS-A protects analog TV signals. Currently, OPM can use CGMS-A to protect signals from composite outputs, S-Video outputs, or component outputs. For more information about CGMS-A, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70568">CGMS-A article</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -109,9 +109,9 @@ DXGKMDT_OPM_REDISTRIBUTION_CONTROL_REQUIRED can be used only if a protected outp
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
 
 
 

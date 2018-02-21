@@ -78,9 +78,9 @@ typedef enum _DOT11_MSONEX_RESULT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        After the IHV Extensions DLL initiates an 802.1X authentication operation, the operating system calls
+After the IHV Extensions DLL initiates an 802.1X authentication operation, the operating system calls
     the 
     <a href="..\wlanihv\nc-wlanihv-dot11extihv_onex_indicate_result.md">
     Dot11ExtIhvOneXIndicateResult</a> IHV handler function to complete the operation. When it calls this
@@ -93,9 +93,9 @@ typedef enum _DOT11_MSONEX_RESULT {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>
 
 
 

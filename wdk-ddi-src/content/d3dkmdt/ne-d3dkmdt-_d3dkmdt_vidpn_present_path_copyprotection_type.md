@@ -81,9 +81,9 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>CopyProtectionType</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_copyprotection.md">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enumeration.
+The <b>CopyProtectionType</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_copyprotection.md">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |

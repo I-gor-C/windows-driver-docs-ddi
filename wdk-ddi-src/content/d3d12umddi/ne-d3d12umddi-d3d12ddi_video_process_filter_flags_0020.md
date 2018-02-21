@@ -111,18 +111,18 @@ typedef enum D3D12DDI_VIDEO_PROCESS_FILTER_FLAGS_0020 {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Brightness, hue, contrast, and saturation support are always supported. These capability flags indicate support for the image filters defined by the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER</a> enumeration. To apply a particular filter, call the SetInputStreamFilter method.
+Brightness, hue, contrast, and saturation support are always supported. These capability flags indicate support for the image filters defined by the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER</a> enumeration. To apply a particular filter, call the SetInputStreamFilter method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER</a>
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER</a>
 
 
 

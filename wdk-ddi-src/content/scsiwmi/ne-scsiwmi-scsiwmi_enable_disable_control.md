@@ -77,9 +77,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | scsiwmi.h (include Scsiwmi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557338">HwScsiWmiFunctionControl</a>
 
 
 

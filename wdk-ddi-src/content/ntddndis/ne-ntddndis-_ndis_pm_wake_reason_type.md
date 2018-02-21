@@ -125,9 +125,9 @@ For more information about NLO, see <a href="https://msdn.microsoft.com/528838AA
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The  
+The  
     <b>WakeReason</b> member of the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wake_reason.md">NDIS_PM_WAKE_REASON</a> structure contains an <b>NDIS_PM_WAKE_REASON_TYPE</b> enumeration value.
 
@@ -137,9 +137,9 @@ For more information about NLO, see <a href="https://msdn.microsoft.com/528838AA
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wake_reason.md">NDIS_PM_WAKE_REASON</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_pm_wake_reason.md">NDIS_PM_WAKE_REASON</a>
 
 
 

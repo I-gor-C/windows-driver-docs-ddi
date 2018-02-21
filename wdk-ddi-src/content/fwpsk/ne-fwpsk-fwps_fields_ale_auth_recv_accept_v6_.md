@@ -395,9 +395,9 @@ typedef enum FWPS_FIELDS_ALE_AUTH_RECV_ACCEPT_V6_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        In Windows Server 2008, Windows Vista SP1, and later versions of Windows, when an outbound packet is
+In Windows Server 2008, Windows Vista SP1, and later versions of Windows, when an outbound packet is
     indicated to this layer during a reauthorization call to the callout filter's 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function, all arrival network
     interface related fields are set to FWP_EMPTY.
@@ -451,9 +451,9 @@ These macros are used to access the following IPV6 data fields:
 | **Windows version** | Unless otherwise noted, supported starting with Windows Vista. Unless otherwise noted, supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 
 

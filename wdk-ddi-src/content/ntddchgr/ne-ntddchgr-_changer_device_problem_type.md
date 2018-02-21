@@ -147,9 +147,9 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
 | ---- |:---- |
 | **Header** | ntddchgr.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
+<a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
 
 
 

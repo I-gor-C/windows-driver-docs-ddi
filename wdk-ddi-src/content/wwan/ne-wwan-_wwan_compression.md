@@ -77,9 +77,9 @@ typedef enum _WWAN_COMPRESSION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration applies only to GSM devices. The MB Service specifies 
+This enumeration applies only to GSM devices. The MB Service specifies 
     <b>WwanCompressionNone</b> as the compression type for CDMA-based devices.
 
 ## Requirements
@@ -88,9 +88,9 @@ typedef enum _WWAN_COMPRESSION {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
+<a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
 
 
 

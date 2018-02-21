@@ -81,9 +81,9 @@ typedef enum D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_0020 {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The alpha fill mode is used in <b>D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_PARAMETERS</b>.  The <b>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_OPAQUE</b> flag is always supported.  The background, destination, and source stream modes are only supported when the driver reports <b>D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_ALPHA_FILL</b>.
+The alpha fill mode is used in <b>D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_PARAMETERS</b>.  The <b>D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE_OPAQUE</b> flag is always supported.  The background, destination, and source stream modes are only supported when the driver reports <b>D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_ALPHA_FILL</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

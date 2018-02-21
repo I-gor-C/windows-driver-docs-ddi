@@ -75,9 +75,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>MeasurementType</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure specifies the type of PMI measurement data reported by a power meter. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
+The <b>MeasurementType</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure specifies the type of PMI measurement data reported by a power meter. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
 
 PMI measurement data is returned through a query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>.
 
@@ -87,9 +87,9 @@ PMI measurement data is returned through a query request of <a href="..\pmi\ni-p
 | **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems |
 | **Header** | pmi.h (include Pmi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 
 
 

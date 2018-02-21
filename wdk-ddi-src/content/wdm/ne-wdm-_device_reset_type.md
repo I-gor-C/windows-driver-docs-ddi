@@ -76,9 +76,9 @@ typedef enum _DEVICE_RESET_TYPE {
 | ---- |:---- |
 | **Header** | wdm.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn939354">DeviceReset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939354">DeviceReset</a>
 
 
 

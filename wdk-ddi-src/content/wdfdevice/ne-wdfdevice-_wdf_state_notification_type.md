@@ -90,9 +90,9 @@ typedef enum _WDF_STATE_NOTIFICATION_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        When the framework's state machine for a driver's device changes from state <i>a</i> to state <i>b</i>, the framework notifies the driver (if the driver registered an appropriate event callback function), in the following sequence:
+When the framework's state machine for a driver's device changes from state <i>a</i> to state <i>b</i>, the framework notifies the driver (if the driver registered an appropriate event callback function), in the following sequence:
 
 <ol>
 <li>
@@ -141,9 +141,9 @@ To register for notification of a change in state, the driver can call the follo
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a>
 
 
 

@@ -153,9 +153,9 @@ The
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        An IHV can assign a value for its proprietary PHY types from 
+An IHV can assign a value for its proprietary PHY types from 
     <b>dot11_phy_type_IHV_start</b> through 
     <b>dot11_phy_type_IHV_end</b>. The IHV must assign a unique number from this range for each of its
     proprietary PHY types.
@@ -166,9 +166,9 @@ The
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
 
 
 

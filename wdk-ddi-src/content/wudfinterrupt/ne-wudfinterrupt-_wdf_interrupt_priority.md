@@ -85,9 +85,9 @@ typedef enum _WDF_INTERRUPT_PRIORITY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a> enumeration type is used as input to the <a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a> method.
+The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a> enumeration type is used as input to the <a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,9 +95,9 @@ typedef enum _WDF_INTERRUPT_PRIORITY {
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a>
+<a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a>
 
 
 

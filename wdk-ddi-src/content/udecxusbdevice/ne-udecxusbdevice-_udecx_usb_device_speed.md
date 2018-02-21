@@ -88,9 +88,9 @@ typedef enum _UDECX_USB_DEVICE_SPEED {
 | ---- |:---- |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetspeed.md">UdecxUsbDeviceInitSetSpeed</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetspeed.md">UdecxUsbDeviceInitSetSpeed</a>
 
 
 

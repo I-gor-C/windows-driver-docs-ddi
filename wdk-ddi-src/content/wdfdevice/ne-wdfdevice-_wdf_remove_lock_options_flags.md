@@ -66,9 +66,9 @@ typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about using remove locks in a framework-based driver, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>.
+For more information about using remove locks in a framework-based driver, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,9 +76,9 @@ typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS {
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
 
 
 

@@ -78,9 +78,9 @@ typedef enum _WDF_DEVICE_FAILED_ACTION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WDF_DEVICE_FAILED_ACTION enumeration is used as an input argument to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>.
+The WDF_DEVICE_FAILED_ACTION enumeration is used as an input argument to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>.
 
 Drivers typically specify <b>WdfDeviceFailedAttemptRestart</b> if they encounter an unrecoverable software error, because specifying this enumerator reloads the drivers. A driver might specify <b>WdfDeviceFailedNoRestart</b> if it encounters an unrecoverable hardware error that affects all of the driver's devices.
 
@@ -93,9 +93,9 @@ For information about specifying <b>WdfDeviceFailedAttemptRestart</b> in a UMDF 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetfailed.md">WdfDeviceSetFailed</a>
 
 
 

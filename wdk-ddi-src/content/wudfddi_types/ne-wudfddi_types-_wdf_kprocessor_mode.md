@@ -84,9 +84,9 @@ typedef enum _WDF_KPROCESSOR_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.
+The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,9 +94,9 @@ typedef enum _WDF_KPROCESSOR_MODE {
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
 
 
 

@@ -123,9 +123,9 @@ The BT709, SMPTE296M, SMPTE170M, BT470, and SMPTE274M primaries (that is, the DX
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
+One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
 
 DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.
 
@@ -150,9 +150,9 @@ The following constants can also be used for gamma function:
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
+<a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
 
 
 

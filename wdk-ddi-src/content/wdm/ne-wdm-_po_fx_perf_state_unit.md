@@ -82,9 +82,9 @@ typedef enum _PO_FX_PERF_STATE_UNIT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Unit</b> member of the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure is a value from the <b>PO_FX_PERF_STATE_UNIT</b> enumeration.
+The <b>Unit</b> member of the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure is a value from the <b>PO_FX_PERF_STATE_UNIT</b> enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,9 +92,9 @@ typedef enum _PO_FX_PERF_STATE_UNIT {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | wdm.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
+<a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
 
 
 

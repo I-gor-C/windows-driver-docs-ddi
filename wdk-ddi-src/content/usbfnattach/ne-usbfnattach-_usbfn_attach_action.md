@@ -99,9 +99,9 @@ typedef enum _USBFN_ATTACH_ACTION {
 | ---- |:---- |
 | **Header** | usbfnattach.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a>
+<a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a>
 
 
 

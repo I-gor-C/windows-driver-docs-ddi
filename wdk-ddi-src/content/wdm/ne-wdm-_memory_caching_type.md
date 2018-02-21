@@ -105,9 +105,9 @@ typedef enum _MEMORY_CACHING_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Processor translation buffers cache virtual to physical address translations. These translation buffers allow many virtual addresses to map a single physical address. However, only one caching behavior is allowed for any given physical address translation. Therefore, if a driver maps two different virtual address ranges to the same physical address, it must ensure that it specifies the same caching behavior for both. Otherwise, the processor behavior is undefined with unpredictable system results.
+Processor translation buffers cache virtual to physical address translations. These translation buffers allow many virtual addresses to map a single physical address. However, only one caching behavior is allowed for any given physical address translation. Therefore, if a driver maps two different virtual address ranges to the same physical address, it must ensure that it specifies the same caching behavior for both. Otherwise, the processor behavior is undefined with unpredictable system results.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -115,9 +115,9 @@ typedef enum _MEMORY_CACHING_TYPE {
 | **Windows version** | Supported in Windows 2000 and later versions of Windows. Supported in Windows 2000 and later versions of Windows. |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
 
 

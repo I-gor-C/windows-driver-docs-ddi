@@ -93,9 +93,9 @@ typedef enum _DXVAHDDDI_BLT_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_setvideoprocessbltstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessbltstate.md">SetVideoProcessBltState</a> function, sets the state of a bitblt for a video processor. Bitblt data that corresponds to the supplied DXVAHDDDI_BLT_STATE-typed value is pointed to by the <b>pData</b> member of D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE.
+A DXVAHDDDI_BLT_STATE-typed value, which is specified in the <b>State</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_setvideoprocessbltstate.md">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a> structure in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessbltstate.md">SetVideoProcessBltState</a> function, sets the state of a bitblt for a video processor. Bitblt data that corresponds to the supplied DXVAHDDDI_BLT_STATE-typed value is pointed to by the <b>pData</b> member of D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,9 +103,9 @@ typedef enum _DXVAHDDDI_BLT_STATE {
 | **Windows version** | DXVAHDDDI_BLT_STATE is supported beginning with the Windows 7 operating system. DXVAHDDDI_BLT_STATE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_background_color_data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_background_color_data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>
 
 
 

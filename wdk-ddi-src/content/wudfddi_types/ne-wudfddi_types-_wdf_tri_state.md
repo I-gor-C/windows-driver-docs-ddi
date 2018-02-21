@@ -79,9 +79,9 @@ typedef enum _WDF_TRI_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WDF_TRI_STATE enumeration type is available in version 1.0 and later versions of KMDF.
+The WDF_TRI_STATE enumeration type is available in version 1.0 and later versions of KMDF.
 
 ## Requirements
 | &nbsp; | &nbsp; |

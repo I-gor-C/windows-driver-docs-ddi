@@ -99,9 +99,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The PCOLORDATATYPE and LPCOLORDATATYPE data types are defined as pointers to this enumeration:
+The PCOLORDATATYPE and LPCOLORDATATYPE data types are defined as pointers to this enumeration:
 
 <div class="code"><span codelanguage=""><table>
 <tr>

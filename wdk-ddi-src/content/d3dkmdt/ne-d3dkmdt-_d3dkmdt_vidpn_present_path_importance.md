@@ -123,9 +123,9 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        As the numeric value of a D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE value increases, the importance decreases. For example, level 3 is less important than level 2.
+As the numeric value of a D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE value increases, the importance decreases. For example, level 3 is less important than level 2.
 
 A variable of type D3DKMDT_VIDPN_PRESENT_PATH_IMPORTANCE can have any integer value in the range 0 through 255, but only the values 0 through 10 have names.
 
@@ -139,9 +139,9 @@ The <b>ImportanceOrdinal</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkm
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a>
 
 
 

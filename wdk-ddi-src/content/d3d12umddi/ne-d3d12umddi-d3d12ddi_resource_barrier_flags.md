@@ -87,9 +87,9 @@ typedef enum D3D12DDI_RESOURCE_BARRIER_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The absence of both <b>D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY</b> and <b>D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY</b> denotes both an acquire and release.
+The absence of both <b>D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY</b> and <b>D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY</b> denotes both an acquire and release.
 
 During an acquire, GPU caches may need to be explicitly invalidated. During a release, GPU caches may need to be explicitly flushed.
 

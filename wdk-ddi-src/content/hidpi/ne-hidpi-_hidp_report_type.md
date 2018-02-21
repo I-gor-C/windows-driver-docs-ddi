@@ -81,9 +81,9 @@ typedef enum _HIDP_REPORT_TYPE {
 | ---- |:---- |
 | **Header** | hidpi.h (include Hidpi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
 
 
 

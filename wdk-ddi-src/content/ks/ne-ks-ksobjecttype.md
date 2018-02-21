@@ -87,9 +87,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
+<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
 
 
 

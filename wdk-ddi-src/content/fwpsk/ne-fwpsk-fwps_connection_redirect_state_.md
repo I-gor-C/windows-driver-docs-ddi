@@ -87,9 +87,9 @@ typedef enum FWPS_CONNECTION_REDIRECT_STATE_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The FWPS_CONNECTION_REDIRECT_STATE enumeration is the return type for a call to the <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>  function.
+The FWPS_CONNECTION_REDIRECT_STATE enumeration is the return type for a call to the <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>  function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,9 +97,9 @@ typedef enum FWPS_CONNECTION_REDIRECT_STATE_ {
 | **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>
 
 
 

@@ -76,9 +76,9 @@ typedef enum _NDIS_RECEIVE_QUEUE_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_RECEIVE_QUEUE_TYPE enumeration is used in the 
+The NDIS_RECEIVE_QUEUE_TYPE enumeration is used in the 
     <b>QueueType</b> member of the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">
     NDIS_RECEIVE_QUEUE_PARAMETERS</a> and 
@@ -91,9 +91,9 @@ typedef enum _NDIS_RECEIVE_QUEUE_TYPE {
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info.md">NDIS_RECEIVE_QUEUE_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info.md">NDIS_RECEIVE_QUEUE_INFO</a>
 
 
 

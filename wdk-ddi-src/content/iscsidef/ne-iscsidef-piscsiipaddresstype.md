@@ -87,9 +87,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
 
 

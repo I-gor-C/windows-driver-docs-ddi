@@ -111,9 +111,9 @@ typedef enum _NFC_CX_DRIVER_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NFC CX allows the NFC client driver to provide some driver flags that can be used to configure the run-time implementation of the class extension. These flags enable the NFC CX to implement some standard NCI operations slightly differently to support different firmware implementations due to ambiguities in the NCI specification.
+The NFC CX allows the NFC client driver to provide some driver flags that can be used to configure the run-time implementation of the class extension. These flags enable the NFC CX to implement some standard NCI operations slightly differently to support different firmware implementations due to ambiguities in the NCI specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -121,9 +121,9 @@ typedef enum _NFC_CX_DRIVER_FLAGS {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
 
 
 

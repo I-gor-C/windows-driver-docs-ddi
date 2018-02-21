@@ -83,9 +83,9 @@ typedef enum _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY {
 | **Windows version** | Available in Windows 8. Available in Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_device_service_entry.md">WWAN_DEVICE_SERVICE_ENTRY</a>
+<a href="..\wwan\ns-wwan-_wwan_device_service_entry.md">WWAN_DEVICE_SERVICE_ENTRY</a>
 
 
 

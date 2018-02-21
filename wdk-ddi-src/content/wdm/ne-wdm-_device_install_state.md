@@ -82,9 +82,9 @@ typedef enum _DEVICE_INSTALL_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routine supplies a <b>DEVICE_INSTALL_STATE</b> enumeration value when a driver requests <b>DevicePropertyInstallState</b>. The operating system uses the value as a hint about the install state of the device.
+The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routine supplies a <b>DEVICE_INSTALL_STATE</b> enumeration value when a driver requests <b>DevicePropertyInstallState</b>. The operating system uses the value as a hint about the install state of the device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,9 +92,9 @@ typedef enum _DEVICE_INSTALL_STATE {
 | **Windows version** | Available in Microsoft Windows XP and later versions of the Windows operating system. Available in Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 
 
 

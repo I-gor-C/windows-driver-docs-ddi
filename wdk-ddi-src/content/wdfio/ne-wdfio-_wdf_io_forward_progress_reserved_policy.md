@@ -84,9 +84,9 @@ typedef enum _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
+The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

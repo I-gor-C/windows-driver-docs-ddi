@@ -87,9 +87,9 @@ On operating systems earlier than Windows 8, the behavior is the same as <b>Dri
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
+The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,9 +98,9 @@ On operating systems earlier than Windows 8, the behavior is the same as <b>Dri
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
 
 
 

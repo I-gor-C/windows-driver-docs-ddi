@@ -108,9 +108,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>.
+The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -118,9 +118,9 @@ typedef enum  {
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h, Ntpoapi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
 
 
 

@@ -99,18 +99,18 @@ typedef enum _IRQ_DEVICE_POLICY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Interrupt.AffinityPolicy</b> member of the <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure is an <b>IRQ_DEVICE_POLICY</b> enumeration value.
+The <b>Interrupt.AffinityPolicy</b> member of the <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure is an <b>IRQ_DEVICE_POLICY</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
 
 
 

@@ -82,9 +82,9 @@ typedef enum _BOUND_CALLBACK_STATUS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a> routine is a <b>BOUND_CALLBACK_STATUS</b> value.
+The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a> routine is a <b>BOUND_CALLBACK_STATUS</b> value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,9 +92,9 @@ typedef enum _BOUND_CALLBACK_STATUS {
 | **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
 | **Header** | wdm.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a>
+<a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a>
 
 
 

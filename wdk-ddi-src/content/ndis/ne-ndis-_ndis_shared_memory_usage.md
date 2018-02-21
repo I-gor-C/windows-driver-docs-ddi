@@ -124,9 +124,9 @@ typedef enum _NDIS_SHARED_MEMORY_USAGE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_SHARED_MEMORY_USAGE enumeration is used in the 
+The NDIS_SHARED_MEMORY_USAGE enumeration is used in the 
     <a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">
     NDIS_SHARED_MEMORY_PARAMETERS</a> and 
     <a href="..\ndis\ns-ndis-_ndis_scatter_gather_list_parameters.md">
@@ -138,9 +138,9 @@ typedef enum _NDIS_SHARED_MEMORY_USAGE {
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
 
 
 

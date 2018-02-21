@@ -70,9 +70,9 @@ typedef enum _PSCREATEPROCESSNOTIFYTYPE {
 | **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex2.md">PsSetCreateProcessNotifyRoutineEx2</a>
+<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex2.md">PsSetCreateProcessNotifyRoutineEx2</a>
 
 
 

@@ -75,9 +75,9 @@ typedef enum _DXVAHDDDI_OUTPUT_RATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>.
+For more information about output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,9 +85,9 @@ typedef enum _DXVAHDDDI_OUTPUT_RATE {
 | **Windows version** | DXVAHDDDI_OUTPUT_RATE is supported beginning with the Windows 7 operating system. DXVAHDDDI_OUTPUT_RATE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
 
 
 

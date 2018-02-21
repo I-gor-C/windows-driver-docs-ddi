@@ -123,9 +123,9 @@ typedef enum _DXVA_VideoPrimaries {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        One of the enumerators of DXVA_VideoPrimaries can be specified in the <b>VideoPrimaries</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
+One of the enumerators of DXVA_VideoPrimaries can be specified in the <b>VideoPrimaries</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -133,9 +133,9 @@ typedef enum _DXVA_VideoPrimaries {
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 
 
 

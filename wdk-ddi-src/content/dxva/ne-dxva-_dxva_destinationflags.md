@@ -94,9 +94,9 @@ typedef enum _DXVA_DestinationFlags {
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
+<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
 
 
 

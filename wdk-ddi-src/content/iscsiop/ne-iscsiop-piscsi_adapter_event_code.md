@@ -69,9 +69,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
 
 
 

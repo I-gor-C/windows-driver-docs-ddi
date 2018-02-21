@@ -147,9 +147,9 @@ typedef enum _NDIS_REQUEST_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_REQUEST_TYPE enumeration is used in the 
+The NDIS_REQUEST_TYPE enumeration is used in the 
     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.
 
 <div class="alert"><b>Note</b>  For any NDIS_REQUEST_TYPE value, the OID_<i>Xxx</i> that is specified in the 
@@ -163,9 +163,9 @@ typedef enum _NDIS_REQUEST_TYPE {
 | **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 
 

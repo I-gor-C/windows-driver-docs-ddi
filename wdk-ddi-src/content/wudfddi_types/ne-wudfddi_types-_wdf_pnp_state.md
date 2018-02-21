@@ -108,18 +108,18 @@ typedef enum _WDF_PNP_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a> method to identify the PnP property to retrieve or set status for.
+A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a> method to identify the PnP property to retrieve or set status for.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
 
 
 

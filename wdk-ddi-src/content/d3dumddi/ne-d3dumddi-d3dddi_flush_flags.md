@@ -74,9 +74,9 @@ Supported starting with Windows 8.1.</td>
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush1.md">pfnFlush1</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush1.md">pfnFlush1</a>
 
 
 

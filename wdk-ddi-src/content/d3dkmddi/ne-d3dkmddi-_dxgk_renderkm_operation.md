@@ -106,9 +106,9 @@ typedef enum _DXGK_RENDERKM_OPERATION {
 | **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a>
 
 
 

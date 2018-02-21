@@ -82,9 +82,9 @@ typedef enum  {
 | **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callcontrol.md">KSTELEPHONY_CALLCONTROL</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callcontrol.md">KSTELEPHONY_CALLCONTROL</a>
 
 
 

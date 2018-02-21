@@ -239,9 +239,9 @@ Supported starting with Windows 8.1.</td>
 | **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 
 
 

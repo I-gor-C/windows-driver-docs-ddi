@@ -116,9 +116,9 @@ typedef enum _WDF_POWER_DEVICE_STATE {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
 
 
 

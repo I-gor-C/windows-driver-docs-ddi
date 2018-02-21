@@ -70,9 +70,9 @@ typedef enum _SCO_LINK_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The 
+The 
     <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a> structure
     uses this enumeration.
 
@@ -82,9 +82,9 @@ typedef enum _SCO_LINK_TYPE {
 | **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
 
 
 

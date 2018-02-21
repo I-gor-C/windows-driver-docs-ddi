@@ -421,9 +421,9 @@ Before passing a large TCP packet to a miniport driver for segmentation, the TCP
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>NDIS_NET_BUFFER_LIST_INFO</b> enumeration is used in the 
+The <b>NDIS_NET_BUFFER_LIST_INFO</b> enumeration is used in the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 Use these enumeration values with the 
@@ -437,9 +437,9 @@ Use these enumeration values with the
 | **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
 
 

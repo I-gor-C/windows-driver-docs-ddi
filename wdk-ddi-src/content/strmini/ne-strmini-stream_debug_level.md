@@ -106,9 +106,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | strmini.h (include Strmini.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\strmini\nf-strmini-streamclassdebugprint.md">StreamClassDebugPrint</a>
+<a href="..\strmini\nf-strmini-streamclassdebugprint.md">StreamClassDebugPrint</a>
 
 
 

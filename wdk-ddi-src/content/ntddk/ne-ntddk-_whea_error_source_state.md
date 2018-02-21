@@ -69,9 +69,9 @@ typedef enum _WHEA_ERROR_SOURCE_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_STATE that indicates the runtime state of the error source.
+The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_STATE that indicates the runtime state of the error source.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,9 +79,9 @@ typedef enum _WHEA_ERROR_SOURCE_STATE {
 | **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
 
 

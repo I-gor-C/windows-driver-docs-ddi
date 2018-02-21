@@ -87,18 +87,18 @@ typedef enum _KSPIN_FLAG_AVC {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        These bit flags are used by the intersect handler to determine plug compatibility, as well as to indicate whether the intersect handler is responsible for obtaining a plug handle from <i>61883.sys</i>.
+These bit flags are used by the intersect handler to determine plug compatibility, as well as to indicate whether the intersect handler is responsible for obtaining a plug handle from <i>61883.sys</i>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a>
 
 
 

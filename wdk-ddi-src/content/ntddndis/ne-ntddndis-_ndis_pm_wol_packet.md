@@ -107,9 +107,9 @@ typedef enum _NDIS_PM_WOL_PACKET {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the 
+The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the 
     <b>WoLPacketType</b> member of the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.
 
@@ -124,9 +124,9 @@ typedef enum _NDIS_PM_WOL_PACKET {
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a>
 
 
 

@@ -106,9 +106,9 @@ typedef enum _DXVAHDDDI_FILTER {
 | **Windows version** | DXVAHDDDI_FILTER is supported beginning with the Windows 7 operating system. DXVAHDDDI_FILTER is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
 
 

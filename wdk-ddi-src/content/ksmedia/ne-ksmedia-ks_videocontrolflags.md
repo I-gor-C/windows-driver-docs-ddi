@@ -133,9 +133,9 @@ Supported starting with Windows 8.1.</td>
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_caps_s.md">KSPROPERTY_VIDEOCONTROL_CAPS_S</a>
+<a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_caps_s.md">KSPROPERTY_VIDEOCONTROL_CAPS_S</a>
 
 
 

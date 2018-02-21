@@ -95,9 +95,9 @@ This constant value is available beginning with Windows 7.</td>
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
 
 
 

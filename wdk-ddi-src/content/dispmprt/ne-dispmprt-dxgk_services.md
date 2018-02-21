@@ -104,9 +104,9 @@ Supported starting with Windows 8.</td>
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.
+An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |

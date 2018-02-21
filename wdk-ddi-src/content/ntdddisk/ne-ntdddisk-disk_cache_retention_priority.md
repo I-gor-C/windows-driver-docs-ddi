@@ -81,9 +81,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
 
 
 

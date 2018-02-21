@@ -225,9 +225,9 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 | ---- |:---- |
 | **Header** | usb.h (include Usb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
 
 
 

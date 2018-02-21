@@ -425,9 +425,9 @@ The data that the driver associates with this query type is a BOOL. This BOOL is
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Values for D3D10DDI_COUNTER_VERTEX_PROCESSING, D3D10DDI_COUNTER_GEOMETRY_PROCESSING, D3D10DDI_COUNTER_PIXEL_PROCESSING, and D3D10DDI_COUNTER_OTHER_GPU_PROCESSING can add up to a driver defined value, which is the number of detectable parallel units. This number is published by the driver as part of the graphics adapter capabilities. The number of detectable parallel units can be 1, 2, 3, or 4 depending on hardware architecture details, the ability of performance counters to discern where time is actually being spent, or at the complete discretion of the hardware vendor. For architectures that report the number of detectable parallel units equal to 1 (== 1) in the <b>NumDetectableParallelUnits</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_counter_info.md">D3D10DDI_COUNTER_INFO</a> structure in response to a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a> function, the following equation applies:  
+Values for D3D10DDI_COUNTER_VERTEX_PROCESSING, D3D10DDI_COUNTER_GEOMETRY_PROCESSING, D3D10DDI_COUNTER_PIXEL_PROCESSING, and D3D10DDI_COUNTER_OTHER_GPU_PROCESSING can add up to a driver defined value, which is the number of detectable parallel units. This number is published by the driver as part of the graphics adapter capabilities. The number of detectable parallel units can be 1, 2, 3, or 4 depending on hardware architecture details, the ability of performance counters to discern where time is actually being spent, or at the complete discretion of the hardware vendor. For architectures that report the number of detectable parallel units equal to 1 (== 1) in the <b>NumDetectableParallelUnits</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_counter_info.md">D3D10DDI_COUNTER_INFO</a> structure in response to a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a> function, the following equation applies:  
 
 (D3D10DDI_COUNTER_VERTEX_PROCESSING + D3D10DDI_COUNTER_GEOMETRY_PROCESSING + D3D10DDI_COUNTER_PIXEL_PROCESSING + D3D10DDI_COUNTER_OTHER_GPU_PROCESSING) / <b>NumDetectableParallelUnits</b> = 1.0 - D3D10DDI_COUNTER_GPU_IDLE
 
@@ -443,9 +443,9 @@ D3D10DDI_COUNTER_HOST_ADAPTER_BANDWIDTH_UTILIZATION, D3D10DDI_COUNTER_LOCAL_VIDM
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_checkcounterinfo.md">CheckCounterInfo</a>
 
 
 

@@ -76,9 +76,9 @@ typedef enum _DOT11_BSS_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The 
+The 
     <b>dot11_BSS_type_any</b> enumerator is valid only if it is specified when 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is set. 
     <b>dot11_BSS_type_any</b> is used to request a scan for all types of BSSs that are visible to the 802.11
@@ -90,9 +90,9 @@ typedef enum _DOT11_BSS_TYPE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\windot11\ns-windot11-dot11_bss_entry.md">DOT11_BSS_ENTRY</a>
+<a href="..\windot11\ns-windot11-dot11_bss_entry.md">DOT11_BSS_ENTRY</a>
 
 
 

@@ -70,9 +70,9 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 | ---- |:---- |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucxendpoint\ns-ucxendpoint-_endpoint_reset.md">ENDPOINT_RESET</a>
+<a href="..\ucxendpoint\ns-ucxendpoint-_endpoint_reset.md">ENDPOINT_RESET</a>
 
 
 

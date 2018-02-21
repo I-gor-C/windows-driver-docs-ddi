@@ -147,9 +147,9 @@ typedef enum _BUS_DATA_TYPE {
 | ---- |:---- |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
 
 
 

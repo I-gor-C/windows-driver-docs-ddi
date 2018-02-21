@@ -107,9 +107,9 @@ typedef enum _UMDETW_ALLOCATION_SEMANTIC {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | umdprovider.h (include Umdprovider.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
 
 
 

@@ -89,9 +89,9 @@ typedef enum _TRANSACTION_INFORMATION_CLASS {
 | **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 
 
 

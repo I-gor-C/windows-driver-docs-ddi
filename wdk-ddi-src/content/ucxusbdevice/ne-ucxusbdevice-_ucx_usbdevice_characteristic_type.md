@@ -71,9 +71,9 @@ typedef enum _UCX_USBDEVICE_CHARACTERISTIC_TYPE {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic.md">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
 
 
 

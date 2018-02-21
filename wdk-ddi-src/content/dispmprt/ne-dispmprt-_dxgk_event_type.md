@@ -93,9 +93,9 @@ typedef enum _DXGK_EVENT_TYPE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_acpi_event.md">DxgkDdiNotifyAcpiEvent</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_notify_acpi_event.md">DxgkDdiNotifyAcpiEvent</a>
 
 
 

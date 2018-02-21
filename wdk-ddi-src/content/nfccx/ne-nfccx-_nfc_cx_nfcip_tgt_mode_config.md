@@ -97,9 +97,9 @@ typedef enum _NFC_CX_NFCIP_TGT_MODE_CONFIG {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
 
 
 

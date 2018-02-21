@@ -82,9 +82,9 @@ typedef enum  {
 | **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ne-ksmedia-telephony_callstate.md">TELEPHONY_CALLSTATE</a>
+<a href="..\ksmedia\ne-ksmedia-telephony_callstate.md">TELEPHONY_CALLSTATE</a>
 
 
 

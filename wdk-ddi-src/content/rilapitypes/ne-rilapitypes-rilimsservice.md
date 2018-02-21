@@ -115,9 +115,9 @@ enum RILIMSSERVICE  {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
 
 
 

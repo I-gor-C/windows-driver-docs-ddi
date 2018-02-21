@@ -76,9 +76,9 @@ typedef enum _DOT11_WFD_SCAN_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The system will set only one scan type at a time. The driver should use this setting to determine how it scans during device discovery.
+The system will set only one scan type at a time. The driver should use this setting to determine how it scans during device discovery.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,9 +86,9 @@ typedef enum _DOT11_WFD_SCAN_TYPE {
 | **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | windot11.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
 
 
 

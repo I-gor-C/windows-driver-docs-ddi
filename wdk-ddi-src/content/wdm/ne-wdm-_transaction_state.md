@@ -76,9 +76,9 @@ typedef enum _TRANSACTION_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
+The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,9 +86,9 @@ typedef enum _TRANSACTION_STATE {
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
 
 
 

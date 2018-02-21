@@ -208,9 +208,9 @@ Nonpaged pool can be accessed from any IRQL, but it is a scarce resource and dri
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
+<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
 
 
 

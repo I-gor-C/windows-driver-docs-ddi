@@ -75,9 +75,9 @@ typedef enum _NDIS_SWITCH_PROPERTY_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>PropertyType</b> member of the following structures is an <b>NDIS_SWITCH_PROPERTY_TYPE</b> enumeration data type: 
+The <b>PropertyType</b> member of the following structures is an <b>NDIS_SWITCH_PROPERTY_TYPE</b> enumeration data type: 
 
 
 
@@ -109,9 +109,9 @@ For more information about extensible switch  policies, see <a href="https://msd
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_parameters.md">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_parameters.md">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
 
 
 

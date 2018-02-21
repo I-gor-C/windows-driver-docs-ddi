@@ -83,9 +83,9 @@ typedef enum _ENLISTMENT_INFORMATION_CLASS {
 | **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_enlistment_basic_information.md">ENLISTMENT_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_enlistment_basic_information.md">ENLISTMENT_BASIC_INFORMATION</a>
 
 
 

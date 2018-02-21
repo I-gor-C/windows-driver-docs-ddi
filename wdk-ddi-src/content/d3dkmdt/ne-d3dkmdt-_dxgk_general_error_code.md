@@ -76,9 +76,9 @@ typedef enum _DXGK_GENERAL_ERROR_CODE {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
 
 
 

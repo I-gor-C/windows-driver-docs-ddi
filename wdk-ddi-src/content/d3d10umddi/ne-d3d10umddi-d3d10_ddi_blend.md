@@ -159,9 +159,9 @@ typedef enum D3D10_DDI_BLEND {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A <i>blend mode</i> is an algorithm that is used to determine how a texture is blended with the colors of the surface that the texture is applied to. A <i>blend factor</i> is a description of how each color component is blended in texture blending.
+A <i>blend mode</i> is an algorithm that is used to determine how a texture is blended with the colors of the surface that the texture is applied to. A <i>blend factor</i> is a description of how each color component is blended in texture blending.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -169,9 +169,9 @@ typedef enum D3D10_DDI_BLEND {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createblendstate.md">CreateBlendState</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createblendstate.md">CreateBlendState</a>
 
 
 

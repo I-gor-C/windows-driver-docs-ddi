@@ -70,9 +70,9 @@ typedef enum _IO_CONTAINER_NOTIFICATION_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        To register for notifications, a driver calls the <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a> routine and sets this routine's <i>NotificationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerNotificationClass</b>). Currently, <b>IoRegisterContainerNotification</b> supports only <i>NotificationClass</i> = <b>IoSessionStateNotification</b>.
+To register for notifications, a driver calls the <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a> routine and sets this routine's <i>NotificationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerNotificationClass</b>). Currently, <b>IoRegisterContainerNotification</b> supports only <i>NotificationClass</i> = <b>IoSessionStateNotification</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +80,9 @@ typedef enum _IO_CONTAINER_NOTIFICATION_CLASS {
 | **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a>
+<a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a>
 
 
 

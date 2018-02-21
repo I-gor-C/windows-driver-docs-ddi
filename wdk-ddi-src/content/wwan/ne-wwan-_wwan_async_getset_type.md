@@ -495,9 +495,9 @@ typedef enum _WWAN_ASYNC_GETSET_TYPE {
 | **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/922b6b55-c332-4721-bbd1-571b0e154df3">MB Data Model</a>
+<a href="https://msdn.microsoft.com/922b6b55-c332-4721-bbd1-571b0e154df3">MB Data Model</a>
 
 
 

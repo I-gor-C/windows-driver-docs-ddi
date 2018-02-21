@@ -89,9 +89,9 @@ enum RILIMSIPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
 
 

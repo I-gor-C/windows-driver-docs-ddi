@@ -76,9 +76,9 @@ typedef enum _UCX_CONTROLLER_STATE {
 | ---- |:---- |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_reset_complete_info.md">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
+<a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_reset_complete_info.md">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
 
 
 

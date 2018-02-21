@@ -93,9 +93,9 @@ typedef enum _tagAvcCommandType {
 | ---- |:---- |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554163">AVC_FUNCTION_GET_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554163">AVC_FUNCTION_GET_REQUEST</a>
 
 
 

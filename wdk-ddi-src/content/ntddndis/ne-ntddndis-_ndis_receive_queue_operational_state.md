@@ -105,9 +105,9 @@ typedef enum _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>
+The <b>
        NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</b> enumeration is used in the 
     <a href="..\ndis\ns-ndis-_ndis_receive_queue_state.md">NDIS_RECEIVE_QUEUE_STATE</a> and 
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info.md">
@@ -119,9 +119,9 @@ typedef enum _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE {
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
    OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</a>
 
 

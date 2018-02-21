@@ -76,18 +76,18 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.
+The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
+<a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
 
 
 

@@ -97,9 +97,9 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
 
 
 

@@ -63,9 +63,9 @@ typedef enum _D3DKMDT_TEXT_RENDERING_FORMAT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Format.Text</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.
+The <b>Format.Text</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,9 +73,9 @@ typedef enum _D3DKMDT_TEXT_RENDERING_FORMAT {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
 
 
 

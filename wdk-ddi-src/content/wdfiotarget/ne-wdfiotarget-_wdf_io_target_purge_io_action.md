@@ -80,9 +80,9 @@ typedef enum _WDF_IO_TARGET_PURGE_IO_ACTION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_IO_TARGET_PURGE_IO_ACTION</b> enumeration is used as an input parameter to the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a> method.
+The <b>WDF_IO_TARGET_PURGE_IO_ACTION</b> enumeration is used as an input parameter to the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a> method.
 
 If your driver specifies the <b>WdfIoTargetPurgeIoAndWait</b> flag, the driver must not call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a> from a request handler, a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, or an <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a> callback function.
 
@@ -93,9 +93,9 @@ If your driver specifies the <b>WdfIoTargetPurgeIoAndWait</b> flag, the driver m
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetpurge.md">WdfIoTargetPurge</a>
 
 
 

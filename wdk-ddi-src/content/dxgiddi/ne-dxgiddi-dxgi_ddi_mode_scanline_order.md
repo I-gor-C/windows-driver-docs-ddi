@@ -81,9 +81,9 @@ typedef enum DXGI_DDI_MODE_SCANLINE_ORDER {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The values of the DXGI_DDI_MODE_SCANLINE_ORDER enumeration type indicate whether the image that is displayed on the monitor contains the entire content of a video frame or only half of the content (that is, either the even or odd scan lines, which occur interchangeably). The values also indicate which field comes first in the order.
+The values of the DXGI_DDI_MODE_SCANLINE_ORDER enumeration type indicate whether the image that is displayed on the monitor contains the entire content of a video frame or only half of the content (that is, either the even or odd scan lines, which occur interchangeably). The values also indicate which field comes first in the order.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,9 +91,9 @@ typedef enum DXGI_DDI_MODE_SCANLINE_ORDER {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
 
 
 

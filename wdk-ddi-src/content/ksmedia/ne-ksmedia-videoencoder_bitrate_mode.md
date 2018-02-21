@@ -75,9 +75,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For all three modes, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> must be set to the expected average bit rate over a 5 minute period.
+For all three modes, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> must be set to the expected average bit rate over a 5 minute period.
 
 When <b>VariableBitRatePeak</b> mode is used, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a> must also be set to the peak bit rate, which the VBR encoder must not exceed over a 500ms period (typically one GOP for MPEG-2 video).
 
@@ -86,9 +86,9 @@ When <b>VariableBitRatePeak</b> mode is used, the <a href="https://msdn.microsof
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>
 
 
 

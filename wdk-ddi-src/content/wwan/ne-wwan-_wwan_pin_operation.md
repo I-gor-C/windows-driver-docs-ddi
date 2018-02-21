@@ -89,9 +89,9 @@ typedef enum _WWAN_PIN_OPERATION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        If a PIN disable operation for a given PIN type is tried when that PIN type is locked, miniport
+If a PIN disable operation for a given PIN type is tried when that PIN type is locked, miniport
     drivers can either fail the request with WWAN_STATUS_PIN_REQUIRED or they can successfully complete the
     request. If miniport drivers complete the request successfully, the disable operation should also unlock
     the PIN.
@@ -102,9 +102,9 @@ typedef enum _WWAN_PIN_OPERATION {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_pin_action.md">WWAN_PIN_ACTION</a>
+<a href="..\wwan\ns-wwan-_wwan_pin_action.md">WWAN_PIN_ACTION</a>
 
 
 

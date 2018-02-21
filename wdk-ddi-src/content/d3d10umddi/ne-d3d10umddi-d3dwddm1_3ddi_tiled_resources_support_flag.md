@@ -83,9 +83,9 @@ If this flag is set, the Direct3D runtime assumes that the support level of the 
 | **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_d3d11_options_data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_d3d11_options_data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
 
 
 

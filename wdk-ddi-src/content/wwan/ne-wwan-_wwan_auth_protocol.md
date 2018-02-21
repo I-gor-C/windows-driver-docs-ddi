@@ -94,9 +94,9 @@ typedef enum _WWAN_AUTH_PROTOCOL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration applies only to GSM devices. The MB Service specifies 
+This enumeration applies only to GSM devices. The MB Service specifies 
     <b>WwanAuthProtocolNone</b> as the authentication type for CDMA-based devices.
 
 ## Requirements
@@ -105,9 +105,9 @@ typedef enum _WWAN_AUTH_PROTOCOL {
 | **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
+<a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
 
 
 

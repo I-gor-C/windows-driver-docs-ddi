@@ -107,9 +107,9 @@ typedef enum _NDIS_SWITCH_PORT_PROPERTY_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>PropertyType</b> member of the following structures is an <b>NDIS_SWITCH_PORT_PROPERTY_TYPE</b> enumeration data type: 
+The <b>PropertyType</b> member of the following structures is an <b>NDIS_SWITCH_PORT_PROPERTY_TYPE</b> enumeration data type: 
 
 
 
@@ -147,9 +147,9 @@ For more information about extensible switch port policies, see <a href="https:/
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_enum_parameters.md">NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_enum_parameters.md">NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS</a>
 
 
 

@@ -75,9 +75,9 @@ typedef enum _DXVAHDDDI_NOMINAL_RANGE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information on luminance range, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.
+For more information on luminance range, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

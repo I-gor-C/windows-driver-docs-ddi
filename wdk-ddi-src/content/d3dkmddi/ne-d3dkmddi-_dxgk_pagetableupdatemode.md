@@ -82,9 +82,9 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
 
 
 

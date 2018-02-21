@@ -125,9 +125,9 @@ The display mode is pruned (that is, the monitor does not support the display mo
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmdt_displaymode_flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.
+The setting of the <b>ValidatedAgainstMonitorCaps</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmdt_displaymode_flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a> structure indicates whether the monitor supports a display mode or not. If the monitor does not support a display mode, the operating system removes the display mode from the list of display modes that are available to the monitor.
 
 When a display mode is supported, the reason type can be one of the following:
 
@@ -176,9 +176,9 @@ D3DKMDT_MPR_ALLCAPS
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmdt_displaymode_flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmdt_displaymode_flags.md">D3DKMDT_DISPLAYMODE_FLAGS</a>
 
 
 

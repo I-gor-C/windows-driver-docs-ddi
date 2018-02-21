@@ -82,9 +82,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The values in this enumeration indicate the directions of the individual transfers in an I/O transfer sequence. The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that specifies a list of transfers for the sequence. Each transfer is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that contains the transfer parameters, which include the transfer direction. The transfer direction is <b>SpbTransferDirectionFromDevice</b> for a read operation, and is <b>SpbTransferDirectionToDevice</b> for a write operation.
+The values in this enumeration indicate the directions of the individual transfers in an I/O transfer sequence. The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that specifies a list of transfers for the sequence. Each transfer is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that contains the transfer parameters, which include the transfer direction. The transfer direction is <b>SpbTransferDirectionFromDevice</b> for a read operation, and is <b>SpbTransferDirectionToDevice</b> for a write operation.
 
 Your SPB controller driver can call  the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method to retrieve a set of SPB-specific parameters from an I/O request. One of these parameters is an <b>SPB_TRANSFER_DIRECTION</b> enumeration value that indicates the transfer direction of the previous I/O request. The SPB controller driver can use this direction value to determine whether the current read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request requires a change in transfer direction on the bus.
 
@@ -98,9 +98,9 @@ A lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">I
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spb.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
 
 
 

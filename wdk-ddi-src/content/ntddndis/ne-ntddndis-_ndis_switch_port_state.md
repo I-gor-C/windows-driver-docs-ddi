@@ -81,9 +81,9 @@ typedef enum _NDIS_SWITCH_PORT_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>PortState</b>  member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a> structure is an <b>NDIS_SWITCH_PORT_STATE</b> enumeration data type. 
+The <b>PortState</b>  member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a> structure is an <b>NDIS_SWITCH_PORT_STATE</b> enumeration data type. 
 
 
 For more information about extensible switch port states, see <a href="https://msdn.microsoft.com/FD6B6014-B840-4EC8-96F4-34C08EC303EA">Overview of Hyper-V Extensible Switch Ports</a>.
@@ -94,9 +94,9 @@ For more information about extensible switch port states, see <a href="https://m
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a>
 
 
 

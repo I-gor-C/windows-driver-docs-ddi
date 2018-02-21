@@ -148,9 +148,9 @@ typedef enum _WWAN_CONTEXT_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration indicates the usage of the provisioned context. For example, whether the context is
+This enumeration indicates the usage of the provisioned context. For example, whether the context is
     used to connect to the Internet, or to a VPN into a corporate network. Miniport driver should specify 
     <b>WwanContextTypeNone</b> for empty (unprovisioned) context slots.
 
@@ -160,9 +160,9 @@ typedef enum _WWAN_CONTEXT_TYPE {
 | **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
+<a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
 
 
 

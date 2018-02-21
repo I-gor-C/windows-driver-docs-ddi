@@ -130,9 +130,9 @@ typedef enum _EATTRIBUTE_DATATYPE {
 | ---- |:---- |
 | **Header** | printoem.h (include Printoem.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a>
+<a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a>
 
 
 

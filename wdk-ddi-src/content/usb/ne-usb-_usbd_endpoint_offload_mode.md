@@ -83,9 +83,9 @@ typedef enum _USBD_ENDPOINT_OFFLOAD_MODE {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | usb.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
 
 
 

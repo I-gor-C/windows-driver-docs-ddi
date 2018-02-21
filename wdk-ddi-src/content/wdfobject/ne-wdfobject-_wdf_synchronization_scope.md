@@ -102,9 +102,9 @@ For framework versions 1.9 and later, a driver should set <b>WdfSynchronizationS
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Drivers use the WDF_SYNCHRONIZATION_SCOPE enumeration type to specify the <b>SynchronizationScope</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
+Drivers use the WDF_SYNCHRONIZATION_SCOPE enumeration type to specify the <b>SynchronizationScope</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 You can specify a <b>SynchronizationScope</b> value for only the following objects:
 
@@ -133,9 +133,9 @@ For more information about synchronization of a driver's event callback function
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 
 

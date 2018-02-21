@@ -87,9 +87,9 @@ typedef enum DOT11_DIRECTION {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key.md">Dot11ExtSetDefaultKey</a>
+<a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key.md">Dot11ExtSetDefaultKey</a>
 
 
 

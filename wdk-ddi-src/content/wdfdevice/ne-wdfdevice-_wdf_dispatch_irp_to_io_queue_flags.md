@@ -78,9 +78,9 @@ typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about specifying queues for IRPs as they arrive, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-irps-to-i-o-queues">Dispatching IRPs to I/O Queues</a>.
+For more information about specifying queues for IRPs as they arrive, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-irps-to-i-o-queues">Dispatching IRPs to I/O Queues</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,9 +88,9 @@ typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
 
 
 

@@ -94,9 +94,9 @@ typedef enum _UFS_PURGE_STATUS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        When the <b>UFS_PURGE_STATUS</b> is equal to
+When the <b>UFS_PURGE_STATUS</b> is equal to
 the values 2, 3, 4, or 5, the
 <b>UFS_PURGE_STATUS</b> is automatically
 cleared to <b>UFS_PurgeStatusIdle</b> the first time
@@ -107,9 +107,9 @@ that it is read.
 | ---- |:---- |
 | **Header** | ufs.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ufs\ne-ufs-ufs_attributes_descriptor.md">UFS_ATTRIBUTES_DESCRIPTOR</a>
+<a href="..\ufs\ne-ufs-ufs_attributes_descriptor.md">UFS_ATTRIBUTES_DESCRIPTOR</a>
 
 
 

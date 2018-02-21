@@ -75,9 +75,9 @@ typedef enum _PEP_PERF_STATE_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_component_perf_set.md">PEP_COMPONENT_PERF_SET</a> structure is a <b>PEP_PERF_STATE_TYPE</b> enumeration value.
+The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_component_perf_set.md">PEP_COMPONENT_PERF_SET</a> structure is a <b>PEP_PERF_STATE_TYPE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,9 +85,9 @@ typedef enum _PEP_PERF_STATE_TYPE {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\pepfx\ns-pepfx-_pep_component_perf_set.md">PEP_COMPONENT_PERF_SET</a>
+<a href="..\pepfx\ns-pepfx-_pep_component_perf_set.md">PEP_COMPONENT_PERF_SET</a>
 
 
 

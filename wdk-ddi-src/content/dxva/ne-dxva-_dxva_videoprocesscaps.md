@@ -149,9 +149,9 @@ Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Occasionally, the aspect ratio adjustment performed by <b>DXVA_VideoProcess_AlphaBlend</b> is combined with a general picture resizing operation to scale the video image within an application-defined composition space, which is rare and not an essential feature. It is best if the scaling needed for resizing the video to fit into the application window can be done simultaneously to the scaling needed for deinterlacing, which avoids cumulative artifacts. 
+Occasionally, the aspect ratio adjustment performed by <b>DXVA_VideoProcess_AlphaBlend</b> is combined with a general picture resizing operation to scale the video image within an application-defined composition space, which is rare and not an essential feature. It is best if the scaling needed for resizing the video to fit into the application window can be done simultaneously to the scaling needed for deinterlacing, which avoids cumulative artifacts. 
 
 Color space conversion performed by <b>DXVA_VideoProcess_YUV2RGB</b> is particularly useful within the VMR if it is combined with any (and ideally, all) of the following enumerators: <b>DXVA_VideoProcess_StretchX</b>, <b>DXVA_VideoProcess_StretchY</b>, and <b>DXVA_VideoProcess_AlphaBlend</b>. There is no requirement to convert from the RGB color space to the YUV color space.
 
@@ -160,9 +160,9 @@ Color space conversion performed by <b>DXVA_VideoProcess_YUV2RGB</b> is particul
 | ---- |:---- |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
+<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
 
 
 

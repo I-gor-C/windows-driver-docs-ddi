@@ -78,9 +78,9 @@ typedef enum _WDF_IO_FORWARD_PROGRESS_ACTION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_IO_FORWARD_PROGRESS_ACTION</b> enumeration is used as the return value for the <a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.
+The <b>WDF_IO_FORWARD_PROGRESS_ACTION</b> enumeration is used as the return value for the <a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,9 +88,9 @@ typedef enum _WDF_IO_FORWARD_PROGRESS_ACTION {
 | **Minimum KMDF version** | 1.9 |
 | **Header** | wdfio.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a>
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress.md">EvtIoWdmIrpForForwardProgress</a>
 
 
 

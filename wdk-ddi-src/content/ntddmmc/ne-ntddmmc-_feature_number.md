@@ -387,9 +387,9 @@ typedef enum _FEATURE_NUMBER {
 | ---- |:---- |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
 
 
 

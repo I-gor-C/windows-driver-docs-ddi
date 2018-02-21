@@ -100,9 +100,9 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_CONVERSION_CAPS {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_output_rate.md">DXVAHDDDI_OUTPUT_RATE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_output_rate.md">DXVAHDDDI_OUTPUT_RATE</a>
 
 
 

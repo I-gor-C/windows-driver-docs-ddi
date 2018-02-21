@@ -83,9 +83,9 @@ This type of session does not support transmission of user data, and the Plug an
 | ---- |:---- |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 
 
 

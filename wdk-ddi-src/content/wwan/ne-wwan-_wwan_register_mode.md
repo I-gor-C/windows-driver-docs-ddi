@@ -83,9 +83,9 @@ typedef enum _WWAN_REGISTER_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        <b>WwanRegisterModeAutomatic</b> and 
+<b>WwanRegisterModeAutomatic</b> and 
     <b>WwanRegisterModeManual</b> are the only acceptable values. Miniport drivers can return 
     <b>WwanRegisterModeManual</b> in cases where it is not able to get this value from device.
 
@@ -95,9 +95,9 @@ typedef enum _WWAN_REGISTER_MODE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
+<a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
 
 
 

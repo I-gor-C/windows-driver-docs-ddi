@@ -100,9 +100,9 @@ typedef enum _HDAUDIO_CODEC_POWER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about power states, see <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>.
+For more information about power states, see <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

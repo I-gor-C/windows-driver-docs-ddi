@@ -69,9 +69,9 @@ typedef enum _DXGK_VIDPN_INTERFACE_VERSION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <i>VidPnInterfaceVersion</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_queryvidpninterface.md">DxgkCbQueryVidPnInterface</a> function and the <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpn_interface.md">DXGK_VIDPN_INTERFACE</a> structure are DXGK_VIDPN_INTERFACE_VERSION values.
+The <i>VidPnInterfaceVersion</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_queryvidpninterface.md">DxgkCbQueryVidPnInterface</a> function and the <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpn_interface.md">DXGK_VIDPN_INTERFACE</a> structure are DXGK_VIDPN_INTERFACE_VERSION values.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,9 +79,9 @@ typedef enum _DXGK_VIDPN_INTERFACE_VERSION {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn Interface</a>
 
 
 

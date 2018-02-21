@@ -420,9 +420,9 @@ typedef enum _WDF_DEVICE_PNP_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a> method.
+The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |

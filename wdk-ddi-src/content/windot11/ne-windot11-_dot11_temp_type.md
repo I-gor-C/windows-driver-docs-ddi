@@ -77,9 +77,9 @@ typedef enum _DOT11_TEMP_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        There are different operating temperature requirements dependent on the anticipated environmental
+There are different operating temperature requirements dependent on the anticipated environmental
     conditions. The DOT11_TEMP_TYPE enumeration describes a PHY's operating temperature range capability.
 
 ## Requirements
@@ -88,9 +88,9 @@ typedef enum _DOT11_TEMP_TYPE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
 
 
 

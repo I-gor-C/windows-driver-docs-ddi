@@ -105,9 +105,9 @@ typedef enum _AVCSTRM_FORMAT {
 | ---- |:---- |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\avcstrm\ns-avcstrm-_avcstrm_format_info.md">AVCSTRM_FORMAT_INFO</a>
+<a href="..\avcstrm\ns-avcstrm-_avcstrm_format_info.md">AVCSTRM_FORMAT_INFO</a>
 
 
 

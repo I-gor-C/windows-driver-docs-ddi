@@ -3714,9 +3714,9 @@ typedef enum _DEBUG_FLR_PARAM_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        There are several hundred tags in the <b>DEBUG_FLR_PARAM_TYPE</b> enumeration. You can see all the tags in the extsfns.h header file, which in the Debugging Tools for Windows package.
+There are several hundred tags in the <b>DEBUG_FLR_PARAM_TYPE</b> enumeration. You can see all the tags in the extsfns.h header file, which in the Debugging Tools for Windows package.
 
 The tags are grouped by categories, with the first entry of a new category being assigned an explicit value.  For example, the tags that are used for structured data begin with DEBUG_FLR_STACK = 0x200000.
 
@@ -3727,9 +3727,9 @@ For more information about tags, see <a href="https://msdn.microsoft.com/7648F78
 | ---- |:---- |
 | **Header** | extsfns.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 
 
 

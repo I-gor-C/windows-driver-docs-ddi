@@ -117,9 +117,9 @@ typedef enum D3D12DDI_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS_0022 {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        These flags are only hints at the type of processing driver performs when automatic processing is enabled.
+These flags are only hints at the type of processing driver performs when automatic processing is enabled.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -96,9 +96,9 @@ typedef enum _DEVICE_POWER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>.
+The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,9 +106,9 @@ typedef enum _DEVICE_POWER_STATE {
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
 
 
 

@@ -123,9 +123,9 @@ typedef enum _WHEA_RAW_DATA_FORMAT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.
+The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -133,9 +133,9 @@ typedef enum _WHEA_RAW_DATA_FORMAT {
 | **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>
 
 
 

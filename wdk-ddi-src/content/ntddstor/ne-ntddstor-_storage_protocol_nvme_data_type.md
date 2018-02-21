@@ -81,9 +81,9 @@ typedef enum _STORAGE_PROTOCOL_NVME_DATA_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        When using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="..\ntddstor\ns-ntddstor-_storage_protocol_data_descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> structure as follows:
+When using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="..\ntddstor\ns-ntddstor-_storage_protocol_data_descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> structure as follows:
 
 <ul>
 <li>
@@ -127,9 +127,9 @@ Set the <b>DataType</b>  field to an enumeration value defined by <b>STORAGE_PRO
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 
 
 

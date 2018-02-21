@@ -76,18 +76,18 @@ typedef enum _INTERRUPT_SYNCHRONIZATION_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure.
+Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a>
+<a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a>
 
 
 

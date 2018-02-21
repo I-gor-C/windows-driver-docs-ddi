@@ -84,9 +84,9 @@ typedef enum _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</b> enumeration is used to specify the <b>Status</b> member of a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a> structure.
+The <b>WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</b> enumeration is used to specify the <b>Status</b> member of a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,9 +94,9 @@ typedef enum _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS {
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
 
 
 

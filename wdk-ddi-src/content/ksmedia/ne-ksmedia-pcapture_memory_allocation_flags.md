@@ -98,9 +98,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff565130">KSPROPERTY_CURRENT_CAPTURE_SURFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565130">KSPROPERTY_CURRENT_CAPTURE_SURFACE</a>
 
 
 

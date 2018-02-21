@@ -107,9 +107,9 @@ enum SensorState {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration also defines values used for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_STATE</a> property.
+This enumeration also defines values used for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_STATE</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,9 +117,9 @@ enum SensorState {
 | **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
 | **Header** | sensorsclassextension.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
 
 
 

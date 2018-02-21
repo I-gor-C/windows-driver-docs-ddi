@@ -94,9 +94,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | sffdisk.h (include Sffdisk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/7ded516a-0369-4aa9-bb77-c17065b373fb">SFFDISK_DEVICE_PASSWORD_DATA</a>
+<a href="https://msdn.microsoft.com/7ded516a-0369-4aa9-bb77-c17065b373fb">SFFDISK_DEVICE_PASSWORD_DATA</a>
 
 
 

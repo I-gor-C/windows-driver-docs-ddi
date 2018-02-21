@@ -87,9 +87,9 @@ typedef enum _DEBUG_FAILURE_TYPE {
 | ---- |:---- |
 | **Header** | extsfns.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 
 
 

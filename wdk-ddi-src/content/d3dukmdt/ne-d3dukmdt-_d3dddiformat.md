@@ -711,9 +711,9 @@ The texture sampler does not normalize the colors when looking up into a pixel s
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Note that formats are supplied by hardware vendors and many FOURCC codes are not listed in the D3DDDIFORMAT enumeration type. The formats in D3DDDIFORMAT are unique because they are sanctioned by the Microsoft Direct3D runtime; that is, the reference rasterizer operates on all of them. Vendors support vendor-supplied formats on a card-by-card basis.
+Note that formats are supplied by hardware vendors and many FOURCC codes are not listed in the D3DDDIFORMAT enumeration type. The formats in D3DDDIFORMAT are unique because they are sanctioned by the Microsoft Direct3D runtime; that is, the reference rasterizer operates on all of them. Vendors support vendor-supplied formats on a card-by-card basis.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -721,9 +721,9 @@ The texture sampler does not normalize the colors when looking up into a pixel s
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 
 
 

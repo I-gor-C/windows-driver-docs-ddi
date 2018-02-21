@@ -303,9 +303,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The last four values were added to the BMFORMAT enumeration beginning with Windows Vista.
+The last four values were added to the BMFORMAT enumeration beginning with Windows Vista.
 
 The PBMFORMAT and LPBMFORMAT data types are defined as pointers to this enumeration:
 

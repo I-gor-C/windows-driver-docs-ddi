@@ -83,9 +83,9 @@ typedef enum _IDDCX_ADAPTER_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Indirect display automatically supports OS virtual modes.  Mode changes can be performed seamlessly by the OS using DWM scaling on a per frame basis without any display mode change. The disadvantage of this is that when a smaller desktop mode is used by the user, the desktop image provided to the driver will be bigger than the desktop size. 		This wastes encode and transmit bandwidth.
+Indirect display automatically supports OS virtual modes.  Mode changes can be performed seamlessly by the OS using DWM scaling on a per frame basis without any display mode change. The disadvantage of this is that when a smaller desktop mode is used by the user, the desktop image provided to the driver will be bigger than the desktop size. 		This wastes encode and transmit bandwidth.
 
 ## Requirements
 | &nbsp; | &nbsp; |

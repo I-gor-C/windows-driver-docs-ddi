@@ -105,9 +105,9 @@ typedef enum _DXVA_NominalRange {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        One of the enumerators of DXVA_NominalRange can be specified in the <b>NominalRange</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
+One of the enumerators of DXVA_NominalRange can be specified in the <b>NominalRange</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
 
 Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235) must be differentiated from normal <a href="http://go.microsoft.com/fwlink/p/?linkid=10112">sRGB</a>.
 
@@ -117,9 +117,9 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 
 
 

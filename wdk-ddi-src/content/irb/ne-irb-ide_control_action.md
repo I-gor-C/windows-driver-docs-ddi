@@ -94,9 +94,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | irb.h (include Irb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
 
 

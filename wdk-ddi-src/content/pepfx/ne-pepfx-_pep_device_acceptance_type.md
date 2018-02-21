@@ -76,9 +76,9 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a> structure to indicate whether a PEP accepts ownership of a device.
+This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a> structure to indicate whether a PEP accepts ownership of a device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,9 +86,9 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
+<a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
 
 
 

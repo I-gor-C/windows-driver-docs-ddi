@@ -91,9 +91,9 @@ typedef enum _UCM_TYPE_C_CURRENT {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypeccurrentadchanged.md">UcmConnectorTypeCCurrentAdChanged</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypeccurrentadchanged.md">UcmConnectorTypeCCurrentAdChanged</a>
 
 
 

@@ -85,9 +85,9 @@ typedef enum _SCO_DISCONNECT_REASON {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A value from this enumeration is used as the 
+A value from this enumeration is used as the 
     <b>Reason</b> member of the 
     <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">
     SCO_INDICATION_PARAMETERS</a> structure.
@@ -106,9 +106,9 @@ Currently,
 | **Windows version** | Versions:\_Supported in Windows Vista and later versions of Windows. Versions:\_Supported in Windows Vista and later versions of Windows. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
+<a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
 
 
 

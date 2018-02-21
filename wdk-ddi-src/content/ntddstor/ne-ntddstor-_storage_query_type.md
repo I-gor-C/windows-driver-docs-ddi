@@ -81,9 +81,9 @@ typedef enum _STORAGE_QUERY_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Caller specifies the type of query by choosing one of the enumeration values.
+Caller specifies the type of query by choosing one of the enumeration values.
 
 Caller defines the exact nature of an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request by specifying the query type together with the property ID. See <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> for an explanation of how these two values are combined to define the query.
 
@@ -92,9 +92,9 @@ Caller defines the exact nature of an <a href="..\ntddstor\ni-ntddstor-ioctl_sto
 | ---- |:---- |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
 
 
 

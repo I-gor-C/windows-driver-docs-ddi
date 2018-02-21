@@ -63,9 +63,9 @@ typedef enum _MEMORY_INFORMATION_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Currently, only the <b>MemoryBasicInformation</b> value is supported for use with the <a href="..\ntifs\nf-ntifs-zwqueryvirtualmemory.md">ZwQueryVirtualMemory</a> routine.
+Currently, only the <b>MemoryBasicInformation</b> value is supported for use with the <a href="..\ntifs\nf-ntifs-zwqueryvirtualmemory.md">ZwQueryVirtualMemory</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,9 +73,9 @@ typedef enum _MEMORY_INFORMATION_CLASS {
 | **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
 | **Header** | ntifs.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntifs\nf-ntifs-zwqueryvirtualmemory.md">ZwQueryVirtualMemory</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvirtualmemory.md">ZwQueryVirtualMemory</a>
 
 
 

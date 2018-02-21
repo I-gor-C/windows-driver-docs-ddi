@@ -77,9 +77,9 @@ typedef enum _XPSRAS_BACKGROUND_COLOR {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | xpsrassvc.h (include Xpsrassvc.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/C31681A0-17C6-4255-9068-7486A2101AB7">IXpsRasterizationFactory2::CreateRasterizer</a>
+<a href="https://msdn.microsoft.com/C31681A0-17C6-4255-9068-7486A2101AB7">IXpsRasterizationFactory2::CreateRasterizer</a>
 
 
 

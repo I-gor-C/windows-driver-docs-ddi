@@ -76,9 +76,9 @@ typedef enum _CONTROLLER_TYPE {
 | ---- |:---- |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucxroothub\ns-ucxroothub-_roothub_info.md">ROOTHUB_INFO</a>
+<a href="..\ucxroothub\ns-ucxroothub-_roothub_info.md">ROOTHUB_INFO</a>
 
 
 

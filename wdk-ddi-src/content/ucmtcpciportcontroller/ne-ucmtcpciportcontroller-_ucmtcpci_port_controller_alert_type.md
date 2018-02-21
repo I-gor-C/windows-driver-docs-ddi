@@ -150,9 +150,9 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
 | ---- |:---- |
 | **Header** | ucmtcpciportcontroller.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_data.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
+<a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_data.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
 
 
 

@@ -88,9 +88,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | usbspec.h (include Usbspec.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
 
 
 

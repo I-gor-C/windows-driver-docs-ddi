@@ -101,9 +101,9 @@ If this value is set to 0, the queue does not automatically dispatch requests to
 | ---- |:---- |
 | **Header** | wudfddi_types.h (include Wudfddi_types.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff558946">IWDFIoQueue::ConfigureRequestDispatching</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558946">IWDFIoQueue::ConfigureRequestDispatching</a>
 
 
 

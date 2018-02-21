@@ -75,9 +75,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 
 

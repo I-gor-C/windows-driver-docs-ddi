@@ -69,9 +69,9 @@ typedef enum _AUDIO_CURVE_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
+The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
 
 // Fade In:
 // Curve begins at 0 when nFrame = 0
@@ -113,9 +113,9 @@ And the following diagram shows a graphical representation of the preceding pseu
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_volumelevel.md">KSAUDIOENGINE_VOLUMELEVEL</a>
+<a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_volumelevel.md">KSAUDIOENGINE_VOLUMELEVEL</a>
 
 
 

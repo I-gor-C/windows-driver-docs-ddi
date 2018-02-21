@@ -81,18 +81,18 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information, see <a href="https://msdn.microsoft.com/359e6e12-903f-4037-8f35-b090ce41f770">Quality Management</a>.
+For more information, see <a href="https://msdn.microsoft.com/359e6e12-903f-4037-8f35-b090ce41f770">Quality Management</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ks\ns-ks-ksidentifier.md">KSDEGRADE</a>
+<a href="..\ks\ns-ks-ksidentifier.md">KSDEGRADE</a>
 
 
 

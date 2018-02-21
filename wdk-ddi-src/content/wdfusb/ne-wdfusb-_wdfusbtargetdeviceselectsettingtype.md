@@ -78,9 +78,9 @@ typedef enum _WdfUsbTargetDeviceSelectSettingType {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.
+The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,9 +89,9 @@ typedef enum _WdfUsbTargetDeviceSelectSettingType {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
 
 
 

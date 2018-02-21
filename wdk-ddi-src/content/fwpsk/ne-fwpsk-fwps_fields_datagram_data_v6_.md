@@ -167,9 +167,9 @@ typedef enum FWPS_FIELDS_DATAGRAM_DATA_V6_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following macros in 
+The following macros in 
     <i>Fwpsk.h</i> are defined with FWPS_FIELDS_DATAGRAM_DATA_V6 enumeration vallues:
 
 <div class="code"><span codelanguage=""><table>
@@ -196,9 +196,9 @@ These macros are used to access the following IPV6 data fields:
 | **Windows version** | Supported starting with Windows Vista. Supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 
 

@@ -88,9 +88,9 @@ typedef enum _KBUGCHECK_DUMP_IO_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        <b>KBUGCHECK_DUMP_IO_TYPE</b> values are used in the <b>Type</b> member of <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a> to specify the type of data in an I/O operation on the crash dump file.
+<b>KBUGCHECK_DUMP_IO_TYPE</b> values are used in the <b>Type</b> member of <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a> to specify the type of data in an I/O operation on the crash dump file.
 
 For more information about how this enumeration type is used, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>.
 
@@ -100,9 +100,9 @@ For more information about how this enumeration type is used, see <a href="https
 | **Windows version** | Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a>
+<a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a>
 
 
 

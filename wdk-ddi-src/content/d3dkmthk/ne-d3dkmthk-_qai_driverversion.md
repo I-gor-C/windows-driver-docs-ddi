@@ -121,9 +121,9 @@ Supported starting with Windows 10.</td>
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a> returns a D3DKMT_DRIVERVERSION value in a variable that the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a> structure points to when the OpenGL installable client driver (ICD) sets the <b>Type</b> member of <b>D3DKMT_QUERYADAPTERINFO</b> to KMTQAITYPE_DRIVERVERSION.
+The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a> returns a D3DKMT_DRIVERVERSION value in a variable that the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a> structure points to when the OpenGL installable client driver (ICD) sets the <b>Type</b> member of <b>D3DKMT_QUERYADAPTERINFO</b> to KMTQAITYPE_DRIVERVERSION.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,9 +131,9 @@ Supported starting with Windows 10.</td>
 | **Windows version** | D3DKMT_DRIVERVERSION is supported beginning with the Windows 7 operating system. D3DKMT_DRIVERVERSION is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
 
 
 

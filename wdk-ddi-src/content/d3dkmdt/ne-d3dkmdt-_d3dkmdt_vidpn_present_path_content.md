@@ -81,9 +81,9 @@ typedef enum _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Content</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration.
+The <b>Content</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |

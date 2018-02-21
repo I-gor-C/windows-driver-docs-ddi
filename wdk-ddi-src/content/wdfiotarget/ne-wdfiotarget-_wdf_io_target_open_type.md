@@ -94,9 +94,9 @@ The driver is identifying a remote I/O target by supplying a pointer to a Window
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_IO_TARGET_OPEN_TYPE</b> enumeration is used in the <b>Type</b> member of the <a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a> structure.
+The <b>WDF_IO_TARGET_OPEN_TYPE</b> enumeration is used in the <b>Type</b> member of the <a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a> structure.
 
 The driver can specify <b>WdfIoTargetOpenReopen</b> only if it specified <b>WdfIoTargetOpenByName</b> when it originally opened the remote I/O target.
 
@@ -116,9 +116,9 @@ In this situation, you can use <b>WdfIoTargetOpenLocalTargetByFile</b> to cause 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 
 

@@ -84,9 +84,9 @@ typedef enum _WDF_PROPERTY_STORE_ROOT_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_PROPERTY_STORE_ROOT_CLASS</b> enumeration is used in the <a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a> structure.
+The <b>WDF_PROPERTY_STORE_ROOT_CLASS</b> enumeration is used in the <a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,9 +94,9 @@ typedef enum _WDF_PROPERTY_STORE_ROOT_CLASS {
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a>
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a>
 
 
 

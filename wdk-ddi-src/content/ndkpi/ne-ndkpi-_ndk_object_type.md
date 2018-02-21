@@ -129,9 +129,9 @@ typedef enum _NDK_OBJECT_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.
+NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,9 +139,9 @@ typedef enum _NDK_OBJECT_TYPE {
 | **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
 
 
 

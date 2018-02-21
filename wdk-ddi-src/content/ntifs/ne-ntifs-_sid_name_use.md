@@ -122,18 +122,18 @@ typedef enum _SID_NAME_USE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration type is the same as the Win32 SID_NAME_USE enumeration type defined in <i>winnt.h</i> used by the Win32 <b>LookupAccountName</b> and <b>LookupAccountSid</b> functions.
+This enumeration type is the same as the Win32 SID_NAME_USE enumeration type defined in <i>winnt.h</i> used by the Win32 <b>LookupAccountName</b> and <b>LookupAccountSid</b> functions.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
+<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
 
 
 

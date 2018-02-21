@@ -78,9 +78,9 @@ typedef enum _WDF_WMI_PROVIDER_CONTROL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a> method and the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function.
+The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a> method and the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,9 +88,9 @@ typedef enum _WDF_WMI_PROVIDER_CONTROL {
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfwmi.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
 
 
 

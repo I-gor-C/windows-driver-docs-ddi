@@ -89,9 +89,9 @@ typedef enum _UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxendpoint.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a>
 
 
 

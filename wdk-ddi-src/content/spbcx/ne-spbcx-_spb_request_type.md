@@ -118,9 +118,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure contains an <b>SPB_REQUEST_TYPE</b> enumeration value.
+The <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure contains an <b>SPB_REQUEST_TYPE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -128,9 +128,9 @@ typedef enum  {
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spbcx.h (include Spb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 
 
 

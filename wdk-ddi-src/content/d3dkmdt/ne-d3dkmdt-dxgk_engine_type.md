@@ -121,9 +121,9 @@ The workload packets for workload tests must appear on either the video processi
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The display miniport driver should follow these rules to determine the engine type:
+The display miniport driver should follow these rules to determine the engine type:
 
 <ol>
 <li>If the engine performs the adapter's 3-D workloads, the driver must specify only <b>DXGK_ENGINE_TYPE_3D</b>.<div class="alert"><b>Note</b>  The driver must expose exactly one 3-D engine per adapter.</div>

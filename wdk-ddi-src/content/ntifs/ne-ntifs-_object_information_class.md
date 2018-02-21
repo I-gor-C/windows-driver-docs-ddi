@@ -76,9 +76,9 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 | **Windows version** | Available starting with Microsoft Windows 2000. Available starting with Microsoft Windows 2000. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntifs\nf-ntifs-zwqueryobject.md">ZwQueryObject</a>
+<a href="..\ntifs\nf-ntifs-zwqueryobject.md">ZwQueryObject</a>
 
 
 

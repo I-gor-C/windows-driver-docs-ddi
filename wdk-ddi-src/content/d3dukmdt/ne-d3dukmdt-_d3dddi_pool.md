@@ -91,9 +91,9 @@ Must be supported by WDDM 1.3 and later drivers. Available starting with Windows
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Pool memory types are defined as an enumeration type rather than separate flags because the types are all mutually exclusive.
+Pool memory types are defined as an enumeration type rather than separate flags because the types are all mutually exclusive.
 
 Note that the D3DDDIPOOL_LOCALVIDMEM and D3DDDIPOOL_NONLOCALVIDMEM values are provided as hints to the user-mode display driver so it can improve performance. For more information about these values, see <a href="https://msdn.microsoft.com/b4691de0-d3c9-4a6f-a9f4-aafb22ea3e97">Specifying Memory Type for a Resource</a>.
 
@@ -103,9 +103,9 @@ Note that the D3DDDIPOOL_LOCALVIDMEM and D3DDDIPOOL_NONLOCALVIDMEM values are pr
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 
 
 

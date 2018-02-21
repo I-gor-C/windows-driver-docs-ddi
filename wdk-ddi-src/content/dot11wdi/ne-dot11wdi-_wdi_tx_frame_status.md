@@ -106,9 +106,9 @@ typedef enum _WDI_TX_FRAME_STATUS {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_capabilities.md">WDI_TXRX_CAPABILITIES</a>
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_capabilities.md">WDI_TXRX_CAPABILITIES</a>
 
 
 

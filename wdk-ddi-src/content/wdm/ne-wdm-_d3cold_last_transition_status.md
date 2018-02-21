@@ -76,18 +76,18 @@ typedef enum _D3COLD_LAST_TRANSITION_STATUS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <i>LastTransitionStatus</i> parameter of the <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a> routine is a pointer to a variable of type <b>D3COLD_LAST_TRANSITION_STATUS</b>.
+The <i>LastTransitionStatus</i> parameter of the <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a> routine is a pointer to a variable of type <b>D3COLD_LAST_TRANSITION_STATUS</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a>
+<a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a>
 
 
 

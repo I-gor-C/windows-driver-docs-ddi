@@ -106,9 +106,9 @@ The controller should select the target before performing the transfer, and rele
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A client (peripheral driver) of the SPB controller can perform an I/O transfer sequence by sending a series of read and write requests to a target device on the bus. Each read or write request in the series occupies a position in the list of transfers for the sequence. The values in the <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicate the relative positions of the read and write requests in this list.
+A client (peripheral driver) of the SPB controller can perform an I/O transfer sequence by sending a series of read and write requests to a target device on the bus. Each read or write request in the series occupies a position in the list of transfers for the sequence. The values in the <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicate the relative positions of the read and write requests in this list.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method retrieves the SPB-specific parameter values from an I/O request and writes them to an <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure. Included in these parameters is an <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration value that indicates the position of the I/O request in the I/O transfer sequence that it is part of.
 
@@ -134,9 +134,9 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spbcx.h (include Spb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
 
 
 

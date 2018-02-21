@@ -114,9 +114,9 @@ typedef enum _WDF_DMA_PROFILE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        <b>WDF_DMA_PROFILE</b>-typed values are used within the driver's <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure. The driver supplies <b>WDF_DMA_ENABLER_CONFIG</b> when it calls <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>.
+<b>WDF_DMA_PROFILE</b>-typed values are used within the driver's <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure. The driver supplies <b>WDF_DMA_ENABLER_CONFIG</b> when it calls <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>.
 
 If the driver selects one of the system-mode DMA profiles, the framework requests the DMA version 3 interface from WDM.  System-mode DMA is available starting in Windows 8. For more information about system-mode DMA, see <a href="https://msdn.microsoft.com/CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6">Supporting System-Mode DMA</a>.
 
@@ -128,9 +128,9 @@ Kernel-Mode Driver Framework (KMDF) miniport drivers such as NDIS miniport drive
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
 
 
 

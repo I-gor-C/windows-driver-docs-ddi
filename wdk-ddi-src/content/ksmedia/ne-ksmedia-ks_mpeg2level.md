@@ -87,9 +87,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-tagks_mpegvideoinfo2.md">KS_MPEGVIDEOINFO2</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_mpegvideoinfo2.md">KS_MPEGVIDEOINFO2</a>
 
 
 

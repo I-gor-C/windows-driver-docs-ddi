@@ -77,9 +77,9 @@ typedef enum _RESOURCEMANAGER_INFORMATION_CLASS {
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_resourcemanager_basic_information.md">RESOURCEMANAGER_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_resourcemanager_basic_information.md">RESOURCEMANAGER_BASIC_INFORMATION</a>
 
 
 

@@ -93,9 +93,9 @@ typedef enum _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure is a constant from the D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration.
+The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a> structure is a constant from the D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,9 +103,9 @@ typedef enum _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568435">Monitor Source Mode Set Interface</a>
 
 
 

@@ -75,9 +75,9 @@ typedef enum D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020 {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The definition of each buffer type is dependent upon the decode profile and is defined in each codec specification.
+The definition of each buffer type is dependent upon the decode profile and is defined in each codec specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |

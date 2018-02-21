@@ -78,9 +78,9 @@ typedef enum _WDF_USB_DEVICE_TRAITS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_USB_DEVICE_TRAITS</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a> structure.
+The <b>WDF_USB_DEVICE_TRAITS</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,9 +89,9 @@ typedef enum _WDF_USB_DEVICE_TRAITS {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a>
 
 
 

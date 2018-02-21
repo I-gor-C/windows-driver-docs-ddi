@@ -89,9 +89,9 @@ typedef enum _WDF_DRIVER_INIT_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WDF_DRIVER_INIT_FLAGS enumeration is used to specify the value for the <b>DriverInitFlags</b> member of the <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a> structure.
+The WDF_DRIVER_INIT_FLAGS enumeration is used to specify the value for the <b>DriverInitFlags</b> member of the <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,9 +100,9 @@ typedef enum _WDF_DRIVER_INIT_FLAGS {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a>
+<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a>
 
 
 

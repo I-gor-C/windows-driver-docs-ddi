@@ -253,9 +253,9 @@ typedef enum FWPS_FIELDS_INBOUND_ICMP_ERROR_V4_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following macros in 
+The following macros in 
     <i>Fwpsk.h</i> are defined with FWPS_FIELDS_INBOUND_ICMP_ERROR_V4 enumeration
     values:
 
@@ -293,9 +293,9 @@ These macros are used to access the following IPV4 data fields:
 | **Windows version** | Unless otherwise noted, supported starting with Windows Vista. Unless otherwise noted, supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 
 

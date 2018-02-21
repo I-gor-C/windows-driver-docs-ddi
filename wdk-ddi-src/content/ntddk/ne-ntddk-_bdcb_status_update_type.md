@@ -82,9 +82,9 @@ typedef enum _BDCB_STATUS_UPDATE_TYPE {
 | **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\ns-ntddk-_bdcb_status_update_context.md">BDCB_STATUS_UPDATE_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk-_bdcb_status_update_context.md">BDCB_STATUS_UPDATE_CONTEXT</a>
 
 
 

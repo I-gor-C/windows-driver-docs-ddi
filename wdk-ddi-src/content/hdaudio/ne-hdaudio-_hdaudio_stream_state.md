@@ -81,9 +81,9 @@ typedef enum _HDAUDIO_STREAM_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">PSET_DMA_ENGINE_STATE</a>.
+This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">PSET_DMA_ENGINE_STATE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

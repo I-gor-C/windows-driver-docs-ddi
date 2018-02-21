@@ -91,9 +91,9 @@ typedef enum _UCM_TYPEC_OPERATING_MODE {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_config_init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_config_init.md">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
 
 
 

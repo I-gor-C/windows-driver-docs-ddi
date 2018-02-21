@@ -84,9 +84,9 @@ typedef enum _WDF_DEVICE_IO_BUFFER_RETRIEVAL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_DEVICE_IO_BUFFER_RETRIEVAL</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a>.
+The <b>WDF_DEVICE_IO_BUFFER_RETRIEVAL</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a>.
 
 In UMDF versions prior to version 1.9, UMDF always makes an I/O request's buffers available to the driver (by copying the buffers into the <a href="https://msdn.microsoft.com/8b469c91-d33d-4fb0-8c7d-e90f86a1e339">UMDF driver host process</a>) as soon as UMDF receives the I/O request. <a href="https://msdn.microsoft.com/library/windows/hardware/ff559100">IWDFIoRequest::GetInputMemory</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559112">IWDFIoRequest::GetOutputMemory</a> are the only object methods that drivers can call to access the buffers.
 
@@ -120,9 +120,9 @@ For more information about accessing an I/O request's data buffers, see <a href=
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE (UMDF)</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE (UMDF)</a>
 
 
 

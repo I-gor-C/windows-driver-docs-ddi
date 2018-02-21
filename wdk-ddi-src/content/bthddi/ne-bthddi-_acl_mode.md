@@ -111,9 +111,9 @@ typedef enum _ACL_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The 
+The 
     <a href="..\bthddi\ns-bthddi-_brb_acl_get_mode.md">_BRB_ACL_GET_MODE</a> structure uses this
     enumeration.
 
@@ -123,9 +123,9 @@ typedef enum _ACL_MODE {
 | **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\ns-bthddi-_brb_acl_get_mode.md">_BRB_ACL_GET_MODE</a>
+<a href="..\bthddi\ns-bthddi-_brb_acl_get_mode.md">_BRB_ACL_GET_MODE</a>
 
 
 

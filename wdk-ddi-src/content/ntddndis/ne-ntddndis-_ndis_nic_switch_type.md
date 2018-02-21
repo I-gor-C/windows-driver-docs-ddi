@@ -75,9 +75,9 @@ typedef enum _NDIS_NIC_SWITCH_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>SwitchType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a> structures is an <b>NDIS_NIC_SWITCH_TYPE</b> enumeration data type. 
+The <b>SwitchType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a> structures is an <b>NDIS_NIC_SWITCH_TYPE</b> enumeration data type. 
 
 
 
@@ -89,9 +89,9 @@ For more information about the NIC switch, see <a href="https://msdn.microsoft.c
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a>
 
 
 

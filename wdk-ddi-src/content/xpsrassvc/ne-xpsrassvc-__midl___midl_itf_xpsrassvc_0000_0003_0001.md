@@ -76,9 +76,9 @@ typedef enum _XPSRAS_PIXEL_FORMAT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about rasterizing XPS documents, see <a href="https://msdn.microsoft.com/a6a3746a-3638-464b-bca0-60003f37af76">Using the XPS Rasterization Service</a>.
+For more information about rasterizing XPS documents, see <a href="https://msdn.microsoft.com/a6a3746a-3638-464b-bca0-60003f37af76">Using the XPS Rasterization Service</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,9 +86,9 @@ typedef enum _XPSRAS_PIXEL_FORMAT {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | xpsrassvc.h (include Xpsrassvc.h) |
 
-    ## See Also
+## See Also
 
-        <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a>
+<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a>
 
 
 

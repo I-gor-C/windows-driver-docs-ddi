@@ -84,9 +84,9 @@ typedef enum _WDF_IO_TARGET_SENT_IO_ACTION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration is used as an input parameter to the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> method.
+The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration is used as an input parameter to the <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> method.
 
 If your driver specifies the <b>WdfIoTargetWaitForSentIoToComplete</b> flag, the driver must not call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a> from a request handler, a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, or an <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a> callback function.
 
@@ -99,9 +99,9 @@ For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
 
 
 

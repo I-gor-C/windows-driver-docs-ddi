@@ -81,9 +81,9 @@ typedef enum _STORAGE_PROTOCOL_UFS_DATA_TYPE {
 | ---- |:---- |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddstor\ns-ntddstor-_storage_protocol_data_descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_protocol_data_descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>
 
 
 

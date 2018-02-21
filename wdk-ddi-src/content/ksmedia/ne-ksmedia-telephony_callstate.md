@@ -88,9 +88,9 @@ typedef enum  {
 | **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ne-ksmedia-telephony_providerchangeop.md">TELEPHONY_PROVIDERCHANGEOP</a>
+<a href="..\ksmedia\ne-ksmedia-telephony_providerchangeop.md">TELEPHONY_PROVIDERCHANGEOP</a>
 
 
 

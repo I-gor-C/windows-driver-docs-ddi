@@ -82,9 +82,9 @@ typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
 | ---- |:---- |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
 
 
 

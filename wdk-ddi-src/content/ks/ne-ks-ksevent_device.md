@@ -86,9 +86,9 @@ typedef enum  {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/jj156039">KSEVENT_DEVICE_LOST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj156039">KSEVENT_DEVICE_LOST</a>
 
 
 

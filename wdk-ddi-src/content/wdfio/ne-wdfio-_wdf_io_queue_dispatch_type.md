@@ -90,9 +90,9 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-methods-for-i-o-requests">Dispatching Methods for I/O Requests</a>.
+For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/dispatching-methods-for-i-o-requests">Dispatching Methods for I/O Requests</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

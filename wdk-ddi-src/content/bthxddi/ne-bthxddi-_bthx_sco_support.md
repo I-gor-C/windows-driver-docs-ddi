@@ -75,9 +75,9 @@ typedef enum _BTHX_SCO_SUPPORT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_query_capabilities.md">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
+Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_query_capabilities.md">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
 
 The output buffer of this IOCTL is defined by the <a href="..\bthxddi\ns-bthxddi-_bthx_capabilities.md">BTHX_CAPABILITIES</a> structure which contains the 
 BTHX_SCO_SUPPORT structure.

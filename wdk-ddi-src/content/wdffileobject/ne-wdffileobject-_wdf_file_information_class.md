@@ -379,9 +379,9 @@ typedef enum _WDF_FILE_INFORMATION_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration is used as an input value to <a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a> and as an output value from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>.
+The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration is used as an input value to <a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a> and as an output value from <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>.
 
 For most values that the <b>WDF_FILE_INFORMATION_CLASS</b> enumeration defines, the wdm.h or ntifs.h header file defines a FILE_XXXX_INFORMATION-named structure that the driver can use when obtaining or setting the file information.
 
@@ -393,9 +393,9 @@ For more information about the enumeration value and associated structures, see 
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wdffileobject.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559009">IWDFIoRequest2::GetSetInformationParameters</a>
 
 
 

@@ -75,9 +75,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following bitmasks are used by the HLOS to request state-change alerts for geofences:
+The following bitmasks are used by the HLOS to request state-change alerts for geofences:
 <pre class="syntax" xml:space="preserve"><code>#define GNSS_GEOFENCEALERTTYPE_ENTRY  GNSS_GeofenceState_Entered    // Enter Geofence
 #define GNSS_GEOFENCEALERTTYPE_EXIT   GNSS_GeofenceState_Exited     // Exit Geofence
 </code></pre>An entry alert is raised when the previous state of the geofence was unknown or exited and the device has now entered the geofence.

@@ -83,9 +83,9 @@ typedef enum _NDIS_MSIX_TABLE_CONFIG {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_MSIX_TABLE_OPERATION enumeration is used in the 
+The NDIS_MSIX_TABLE_OPERATION enumeration is used in the 
     <a href="..\ndis\ns-ndis-_ndis_msix_config_parameters.md">
     NDIS_MSIX_CONFIG_PARAMETERS</a> structure.
 
@@ -95,9 +95,9 @@ typedef enum _NDIS_MSIX_TABLE_CONFIG {
 | **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_ndis_msix_config_parameters.md">NDIS_MSIX_CONFIG_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_msix_config_parameters.md">NDIS_MSIX_CONFIG_PARAMETERS</a>
 
 
 

@@ -212,9 +212,9 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_ASSIGNMENT_V6_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For the case of an implicit bind, the local address and port information might not be available. In
+For the case of an implicit bind, the local address and port information might not be available. In
     this situation, the FWPS_FIELD_ALE_RESOURCE_ASSIGNMENT_V6_IP_LOCAL_ADDRESS,
     FWPS_FIELD_ALE_RESOURCE_ASSIGNMENT_V6_IP_LOCAL_ADDRESS_TYPE, and/or
     <b>FWPS_FIELD_ALE_RESOURCE_ASSIGNMENT_V6_IP_LOCAL_PORT</b> data fields might be of type FWP_EMPTY.
@@ -225,9 +225,9 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_ASSIGNMENT_V6_ {
 | **Windows version** | Unless otherwise noted, supported starting with Windows Vista. Unless otherwise noted, supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 
 

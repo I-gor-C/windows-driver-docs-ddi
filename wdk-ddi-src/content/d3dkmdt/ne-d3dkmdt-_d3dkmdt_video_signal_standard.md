@@ -255,9 +255,9 @@ typedef enum _D3DKMDT_VIDEO_SIGNAL_STANDARD {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>SignalInfo</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md">D3DKMDT_VIDPN_TARGET_MODE</a> structure is a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_signal_info.md">D3DKMDT_VIDEO_SIGNAL_MODE</a> structure.
+The <b>SignalInfo</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md">D3DKMDT_VIDPN_TARGET_MODE</a> structure is a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_signal_info.md">D3DKMDT_VIDEO_SIGNAL_MODE</a> structure.
 
 The <b>VideoStandard</b> member of the D3DKMDT_VIDEO_SIGNAL_MODE structure is a D3DKMDT_VIDEO_SIGNAL_STANDARD value.
 
@@ -267,9 +267,9 @@ The <b>VideoStandard</b> member of the D3DKMDT_VIDEO_SIGNAL_MODE structure is a 
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570559">VidPn Target Mode Set Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570559">VidPn Target Mode Set Interface</a>
 
 
 

@@ -159,9 +159,9 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 | ---- |:---- |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537612">PCMCIA_SOCKET_INFORMATION</a>
 
 
 

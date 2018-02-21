@@ -237,9 +237,9 @@ typedef enum _FLT_FILESYSTEM_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        New file systems that are not part of the <b>FLT_FILESYSTEM_TYPE</b> enumeration are treated as <b>FLT_FSTYPE_UNKNOWN</b>.
+New file systems that are not part of the <b>FLT_FILESYSTEM_TYPE</b> enumeration are treated as <b>FLT_FSTYPE_UNKNOWN</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -247,9 +247,9 @@ typedef enum _FLT_FILESYSTEM_TYPE {
 | **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
 | **Header** | fltuserstructures.h (include FltUser.h, FltKernel.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\fltkernel\nf-fltkernel-fltgetfilesystemtype.md">FltGetFileSystemType</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilesystemtype.md">FltGetFileSystemType</a>
 
 
 

@@ -82,9 +82,9 @@ typedef enum _STOR_SPINLOCK {
 | ---- |:---- |
 | **Header** | storport.h (include Storport.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
+<a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
 
 
 

@@ -82,9 +82,9 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPN</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPN</a>
 
 
 

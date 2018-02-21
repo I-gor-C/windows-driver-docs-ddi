@@ -81,9 +81,9 @@ typedef enum _WDF_CALLBACK_CONSTRAINT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications.
+Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications.
 
 ## Requirements
 | &nbsp; | &nbsp; |

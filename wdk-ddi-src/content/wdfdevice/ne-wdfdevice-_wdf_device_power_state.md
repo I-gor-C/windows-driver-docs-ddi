@@ -666,9 +666,9 @@ typedef enum _WDF_DEVICE_POWER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_DEVICE_POWER_STATE</b> enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a> method.
+The <b>WDF_DEVICE_POWER_STATE</b> enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |

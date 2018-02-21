@@ -143,9 +143,9 @@ The GNSS driver raises this event as needed. The command and data are packaged i
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Events can be of various types. Certain events occur as a result of a previous request initiated by the driver, for example, start fix request. Certain events are raised for informational purpose. Assistance events are raised when the driver requires the adapter to inject specific assistance data.
+Events can be of various types. Certain events occur as a result of a previous request initiated by the driver, for example, start fix request. Certain events are raised for informational purpose. Assistance events are raised when the driver requires the adapter to inject specific assistance data.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -140,9 +140,9 @@ typedef enum FWPS_VSWITCH_EVENT_TYPE_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The 
+The 
     FWPS_VSWITCH_EVENT_TYPE  enumeration defines the values for the <i>eventType</i> parameter of the  virtual switch notification functions that are included in the <a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a> structure.
 
 ## Requirements
@@ -151,9 +151,9 @@ typedef enum FWPS_VSWITCH_EVENT_TYPE_ {
 | **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
 
 
 

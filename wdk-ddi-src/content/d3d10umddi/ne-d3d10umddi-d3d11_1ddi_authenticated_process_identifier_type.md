@@ -82,9 +82,9 @@ typedef enum D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_restricted_shared_resource_process_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_restricted_shared_resource_process_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_OUTPUT</a>
 
 
 

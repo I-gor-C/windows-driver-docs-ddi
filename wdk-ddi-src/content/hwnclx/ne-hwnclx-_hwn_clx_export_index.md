@@ -94,9 +94,9 @@ typedef enum _HWN_CLX_EXPORT_INDEX {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | hwnclx.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a>
 
 
 

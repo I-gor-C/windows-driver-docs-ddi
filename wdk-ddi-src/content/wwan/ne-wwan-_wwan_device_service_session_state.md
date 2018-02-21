@@ -70,9 +70,9 @@ typedef enum _WWAN_DEVICE_SERVICE_SESSION_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WWAN_DEVICE_SERVICE_SESSION structure uses the WWAN_DEVICE_SERVICE_SESSION_STATE enumeration to set or report the state of a session.
+The WWAN_DEVICE_SERVICE_SESSION structure uses the WWAN_DEVICE_SERVICE_SESSION_STATE enumeration to set or report the state of a session.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +80,9 @@ typedef enum _WWAN_DEVICE_SERVICE_SESSION_STATE {
 | **Windows version** | Available in Windows 8. Available in Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_device_service_session.md">WWAN_DEVICE_SERVICE_SESSION</a>
+<a href="..\wwan\ns-wwan-_wwan_device_service_session.md">WWAN_DEVICE_SERVICE_SESSION</a>
 
 
 

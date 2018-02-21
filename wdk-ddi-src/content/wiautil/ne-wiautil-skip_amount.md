@@ -83,9 +83,9 @@ typedef enum  {
 | **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff540369">CWiauFormatConverter::ConvertToBmp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540369">CWiauFormatConverter::ConvertToBmp</a>
 
 
 

@@ -343,9 +343,9 @@ If the token resulted from network authentication, such as a call to user-mode <
 | ---- |:---- |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
+<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
 
 
 

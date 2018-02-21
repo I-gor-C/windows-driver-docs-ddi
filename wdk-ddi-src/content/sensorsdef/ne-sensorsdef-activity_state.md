@@ -118,18 +118,18 @@ typedef enum _ACTIVITY_STATES {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about the sensor data fields that use this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957013">Activity detection sensor data fields</a>.
+For more information about the sensor data fields that use this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957013">Activity detection sensor data fields</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | sensorsdef.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn957013">Activity detection sensor data fields</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957013">Activity detection sensor data fields</a>
 
 
 

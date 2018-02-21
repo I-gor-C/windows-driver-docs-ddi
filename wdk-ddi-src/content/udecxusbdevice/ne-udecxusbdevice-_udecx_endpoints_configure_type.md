@@ -88,9 +88,9 @@ typedef enum _UDECX_ENDPOINTS_CONFIGURE_TYPE {
 | ---- |:---- |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md">EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE</a>
 
 
 

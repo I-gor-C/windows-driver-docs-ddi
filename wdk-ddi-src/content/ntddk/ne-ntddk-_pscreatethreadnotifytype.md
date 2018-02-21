@@ -76,9 +76,9 @@ typedef enum _PSCREATETHREADNOTIFYTYPE {
 | **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
+<a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
 
 
 

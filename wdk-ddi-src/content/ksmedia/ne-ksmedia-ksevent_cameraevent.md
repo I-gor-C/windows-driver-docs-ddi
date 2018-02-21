@@ -63,9 +63,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The camera event DDI is defined by <b>KSEVENTSETID_CameraEvent</b>, a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver. This is a filter level event meaning that the driver must implement and define the event in the filter’s automation table and use <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a> (or <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a> with filter object) to generate event notifications.
+The camera event DDI is defined by <b>KSEVENTSETID_CameraEvent</b>, a kernel streaming event set that can be used by the pipeline to enable or disable camera event notifications from the driver. This is a filter level event meaning that the driver must implement and define the event in the filter’s automation table and use <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a> (or <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a> with filter object) to generate event notifications.
 
 KSEVENTSETID_CameraEvent and its related data structures are defined in Ksmedia.h as follows.
 

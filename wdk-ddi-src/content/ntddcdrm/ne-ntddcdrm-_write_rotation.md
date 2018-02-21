@@ -75,9 +75,9 @@ typedef enum _WRITE_ROTATION {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_speed_request.md">CDROM_SPEED_REQUEST</a>
+<a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_speed_request.md">CDROM_SPEED_REQUEST</a>
 
 
 

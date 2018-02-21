@@ -75,9 +75,9 @@ typedef enum _DXGKMDT_DPCP_PROTECTION_LEVEL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        DPCP protects digital video signals from DisplayPort output connectors. For more information about DisplayPort, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71382">DisplayPort article</a>.
+DPCP protects digital video signals from DisplayPort output connectors. For more information about DisplayPort, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71382">DisplayPort article</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,9 +85,9 @@ typedef enum _DXGKMDT_DPCP_PROTECTION_LEVEL {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
 
 
 

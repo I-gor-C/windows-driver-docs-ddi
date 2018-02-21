@@ -75,18 +75,18 @@ typedef enum _EXCLUSIVE_ACCESS_REQUEST_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.
+The EXCLUSIVE_ACCESS_REQUEST_TYPE enumeration is used with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a> request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_exclusive_access.md">IOCTL_CDROM_EXCLUSIVE_ACCESS</a>
 
 
 

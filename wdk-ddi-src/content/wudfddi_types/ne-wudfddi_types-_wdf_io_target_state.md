@@ -103,9 +103,9 @@ typedef enum _WDF_IO_TARGET_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        To obtain an I/O target's current state, call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>.
+To obtain an I/O target's current state, call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>.
 
 For more information about states for I/O targets, see <a href="https://msdn.microsoft.com/37f756bf-b655-428e-b72c-f86c71f1a2db">Controlling a General I/O Target's State</a>.
 
@@ -116,9 +116,9 @@ For more information about states for I/O targets, see <a href="https://msdn.mic
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_types.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
 
 
 

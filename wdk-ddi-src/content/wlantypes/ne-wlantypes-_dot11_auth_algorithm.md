@@ -167,9 +167,9 @@ When the WPA PSK algorithm is enabled, the 802.11 station will associate only wi
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        An IHV can assign a value for its proprietary authentication algorithms from 
+An IHV can assign a value for its proprietary authentication algorithms from 
     DOT11_AUTH_ALGO_IHV_START through 
     DOT11_AUTH_ALGO_IHV_END. The IHV must assign a unique number from this range for each of its
     proprietary authentication algorithms.
@@ -205,9 +205,9 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a>
+<a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a>
 
 
 

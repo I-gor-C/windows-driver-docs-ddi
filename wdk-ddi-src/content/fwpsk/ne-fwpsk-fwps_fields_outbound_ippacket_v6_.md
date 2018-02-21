@@ -142,9 +142,9 @@ typedef enum FWPS_FIELDS_OUTBOUND_IPPACKET_V6_ {
 | **Windows version** | Supported starting with Windows Vista. Supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 
 

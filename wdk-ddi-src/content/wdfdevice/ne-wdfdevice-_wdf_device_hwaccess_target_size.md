@@ -104,9 +104,9 @@ typedef enum __WDF_IO_TARGET_STATE {
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
 
 
 

@@ -94,9 +94,9 @@ typedef enum DXGI_DDI_MODE_ROTATION {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_mode_desc.md">DXGI_DDI_MODE_DESC</a>
 
 
 

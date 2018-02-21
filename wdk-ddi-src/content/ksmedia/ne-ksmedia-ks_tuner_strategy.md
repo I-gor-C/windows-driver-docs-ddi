@@ -81,9 +81,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md">KSPROPERTY_TUNER_MODE_CAPS_S</a>
+<a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md">KSPROPERTY_TUNER_MODE_CAPS_S</a>
 
 
 

@@ -119,9 +119,9 @@ Specifies that the sample contains a video substream.</td>
 | ---- |:---- |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a>
+<a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a>
 
 
 

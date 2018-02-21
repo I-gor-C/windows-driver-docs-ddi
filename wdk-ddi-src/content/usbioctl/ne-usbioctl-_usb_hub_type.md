@@ -87,9 +87,9 @@ typedef enum _USB_HUB_TYPE {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
 
 
 

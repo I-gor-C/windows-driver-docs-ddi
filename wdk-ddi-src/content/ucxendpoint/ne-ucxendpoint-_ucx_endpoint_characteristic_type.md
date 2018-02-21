@@ -71,9 +71,9 @@ typedef enum _UCX_ENDPOINT_CHARACTERISTIC_TYPE {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxendpoint.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucxendpoint\ns-ucxendpoint-_ucx_endpoint_characteristic.md">UCX_ENDPOINT_CHARACTERISTIC</a>
+<a href="..\ucxendpoint\ns-ucxendpoint-_ucx_endpoint_characteristic.md">UCX_ENDPOINT_CHARACTERISTIC</a>
 
 
 

@@ -69,9 +69,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>.
+For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,9 +79,9 @@ typedef enum  {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/jj156037">KSEVENT_CAMERACONTROL_FOCUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj156037">KSEVENT_CAMERACONTROL_FOCUS</a>
 
 
 

@@ -78,9 +78,9 @@ typedef enum _WWAN_RADIO {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_radio_state.md">NDIS_WWAN_SET_RADIO_STATE</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_radio_state.md">NDIS_WWAN_SET_RADIO_STATE</a>
 
 
 

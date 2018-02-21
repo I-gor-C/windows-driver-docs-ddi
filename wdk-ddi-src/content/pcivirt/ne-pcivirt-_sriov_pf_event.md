@@ -81,9 +81,9 @@ typedef enum _SRIOV_PF_EVENT {
 | ---- |:---- |
 | **Header** | pcivirt.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/5299ec17-1fcb-4449-9ec4-73a4d818df0d">IOCTL_SRIOV_EVENT_COMPLETE</a>
+<a href="https://msdn.microsoft.com/5299ec17-1fcb-4449-9ec4-73a4d818df0d">IOCTL_SRIOV_EVENT_COMPLETE</a>
 
 
 

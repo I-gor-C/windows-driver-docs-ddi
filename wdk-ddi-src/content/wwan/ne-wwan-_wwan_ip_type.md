@@ -94,9 +94,9 @@ typedef enum _WWAN_IP_TYPE {
 | **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
+<a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
 
 
 

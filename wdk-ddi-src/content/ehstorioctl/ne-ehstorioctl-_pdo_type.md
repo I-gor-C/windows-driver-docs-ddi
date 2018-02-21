@@ -93,9 +93,9 @@ typedef enum _PDO_TYPE {
 | ---- |:---- |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
 
 
 

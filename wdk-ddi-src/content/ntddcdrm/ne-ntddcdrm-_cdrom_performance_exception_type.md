@@ -81,9 +81,9 @@ typedef enum _CDROM_PERFORMANCE_EXCEPTION_TYPE {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
 
 
 

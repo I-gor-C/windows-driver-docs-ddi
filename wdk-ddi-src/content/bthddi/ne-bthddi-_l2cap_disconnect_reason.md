@@ -85,9 +85,9 @@ typedef enum _L2CAP_DISCONNECT_REASON {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A value from this enumeration is used as the 
+A value from this enumeration is used as the 
     <b>Reason</b> member of the 
     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure.
 
@@ -106,9 +106,9 @@ Currently,
 | **Windows version** | Versions:\_Supported in Windows Vista and later versions of Windows. Versions:\_Supported in Windows Vista and later versions of Windows. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
 
 
 

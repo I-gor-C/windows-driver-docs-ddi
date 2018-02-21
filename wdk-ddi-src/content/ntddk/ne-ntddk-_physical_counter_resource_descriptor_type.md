@@ -87,9 +87,9 @@ typedef enum _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Type</b> member of a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure uses a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE</b> enumeration constant to indicate the type of counter resource that is described by the structure.
+The <b>Type</b> member of a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure uses a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE</b> enumeration constant to indicate the type of counter resource that is described by the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,9 +97,9 @@ typedef enum _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE {
 | **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
 
 
 

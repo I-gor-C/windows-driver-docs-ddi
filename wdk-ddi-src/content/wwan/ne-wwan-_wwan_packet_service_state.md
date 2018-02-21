@@ -90,9 +90,9 @@ typedef enum _WWAN_PACKET_SERVICE_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The packet service attach or detach state is typically reflected in the device's user interface.
+The packet service attach or detach state is typically reflected in the device's user interface.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,9 +100,9 @@ typedef enum _WWAN_PACKET_SERVICE_STATE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_packet_service.md">WWAN_PACKET_SERVICE</a>
+<a href="..\wwan\ns-wwan-_wwan_packet_service.md">WWAN_PACKET_SERVICE</a>
 
 
 

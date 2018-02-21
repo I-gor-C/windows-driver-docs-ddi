@@ -92,9 +92,9 @@ If not set, the framework cancels requests from the I/O manager and <a href="..\
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WDF_IO_QUEUE_STATE enumeration type is used as the return value for the <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> method.
+The WDF_IO_QUEUE_STATE enumeration type is used as the return value for the <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> method.
 
 The following functions are defined in <i>wdfio.h</i>:
 
@@ -105,9 +105,9 @@ The following functions are defined in <i>wdfio.h</i>:
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a>
 
 
 

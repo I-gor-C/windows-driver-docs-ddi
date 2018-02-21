@@ -96,9 +96,9 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
+<a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
    OID_DOT11_DIVERSITY_SELECTION_RX</a>
 
 

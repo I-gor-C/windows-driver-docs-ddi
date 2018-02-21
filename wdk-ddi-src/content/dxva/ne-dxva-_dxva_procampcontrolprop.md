@@ -94,9 +94,9 @@ typedef enum _DXVA_ProcAmpControlProp {
 | **Windows version** | DirectX 9.0 and later versions only. DirectX 9.0 and later versions only. |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxva\ns-dxva-_dxva_procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
+<a href="..\dxva\ns-dxva-_dxva_procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
 
 
 

@@ -118,9 +118,9 @@ Note that if a device is locked because it requires a PIN type other than PIN1 o
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For devices that use a SIM card, this enumeration indicates if the SIM card has been initialized and
+For devices that use a SIM card, this enumeration indicates if the SIM card has been initialized and
     is ready for access.
 
 ## Requirements
@@ -129,9 +129,9 @@ Note that if a device is locked because it requires a PIN type other than PIN1 o
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_ready_info.md">WWAN_READY_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_ready_info.md">WWAN_READY_INFO</a>
 
 
 

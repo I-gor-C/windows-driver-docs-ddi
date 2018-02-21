@@ -78,9 +78,9 @@ typedef enum _WDF_INTERRUPT_POLARITY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member of the <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
+The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member of the <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,9 +89,9 @@ typedef enum _WDF_INTERRUPT_POLARITY {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
+<a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
 
 
 

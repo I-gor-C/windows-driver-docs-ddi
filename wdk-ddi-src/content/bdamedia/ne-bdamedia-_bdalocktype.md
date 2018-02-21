@@ -87,9 +87,9 @@ typedef enum _BdaLockType {
 | ---- |:---- |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff564369">KSPROPERTY_BDA_SIGNAL_LOCK_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564369">KSPROPERTY_BDA_SIGNAL_LOCK_CAPS</a>
 
 
 

@@ -102,9 +102,9 @@ The <b>WdfFileObjectCanBeOptional</b> value is available in version 1.9 and late
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_FILEOBJECT_CLASS</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_fileobject_config.md">WDF_FILEOBJECT_CONFIG</a> structure.
+The <b>WDF_FILEOBJECT_CLASS</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_fileobject_config.md">WDF_FILEOBJECT_CONFIG</a> structure.
 
 If your driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a> to obtain framework file objects for I/O requests, and if you know that some of the WDM I/O request packets (IRPs) that your driver receives do not include WDM file objects, the driver can set the <b>WdfFileObjectCanBeOptional</b> bit flag. 
 
@@ -129,9 +129,9 @@ If the <b>WdfFileObjectCanBeOptional</b> bit flag is set, the framework's verifi
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\ns-wdfdevice-_wdf_fileobject_config.md">WDF_FILEOBJECT_CONFIG</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_fileobject_config.md">WDF_FILEOBJECT_CONFIG</a>
 
 
 

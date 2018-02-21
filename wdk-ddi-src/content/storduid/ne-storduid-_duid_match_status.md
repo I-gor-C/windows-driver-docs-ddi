@@ -136,9 +136,9 @@ typedef enum _DUID_MATCH_STATUS {
 | ---- |:---- |
 | **Header** | storduid.h (include Storduid.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
 
 
 

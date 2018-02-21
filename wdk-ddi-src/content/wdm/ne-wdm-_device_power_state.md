@@ -94,9 +94,9 @@ typedef enum _DEVICE_POWER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A power state indicates the level of power consumption—and thus the extent of computing activity—by the system or by a single device. The power manager sets the power state of the system as a whole, where the system power state is indicated by one of the values of the <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> enumeration type. Device drivers set the power state of their individual devices, where the device power state is indicated by one of the values of the <b>DEVICE_POWER_STATE</b> enumeration type.
+A power state indicates the level of power consumption—and thus the extent of computing activity—by the system or by a single device. The power manager sets the power state of the system as a whole, where the system power state is indicated by one of the values of the <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> enumeration type. Device drivers set the power state of their individual devices, where the device power state is indicated by one of the values of the <b>DEVICE_POWER_STATE</b> enumeration type.
 
 For more information about system power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a>. For more information about device power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554397">Managing Power for Individual Devices</a>. For more information about power management in general, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548108">Introduction to Power Management</a>.
 
@@ -105,9 +105,9 @@ For more information about system power states, see <a href="https://msdn.micros
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
+<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
 
 
 

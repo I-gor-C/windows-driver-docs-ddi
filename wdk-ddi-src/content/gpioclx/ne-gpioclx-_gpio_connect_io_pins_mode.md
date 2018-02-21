@@ -81,9 +81,9 @@ typedef enum _GPIO_CONNECT_IO_PINS_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>ConnectMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a> structure contains a <b>GPIO_CONNECT_IO_PINS_MODE</b> enumeration constant.
+The <b>ConnectMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a> structure contains a <b>GPIO_CONNECT_IO_PINS_MODE</b> enumeration constant.
 
 The <b>ConnectModeInput</b> enumeration constant labels a set of GPIO pins that can be read by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406483">IOCTL_GPIO_READ_PINS</a> request. <b>ConnectModeOutput</b> labels a set of GPIO pins that can be written to by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406487">IOCTL_GPIO_WRITE_PINS</a> request.
 
@@ -93,9 +93,9 @@ The <b>ConnectModeInput</b> enumeration constant labels a set of GPIO pins that 
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a>
 
 
 

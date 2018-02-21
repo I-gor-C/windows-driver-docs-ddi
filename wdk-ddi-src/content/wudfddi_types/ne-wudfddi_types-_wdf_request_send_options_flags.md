@@ -97,9 +97,9 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A driver that sets the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag typically does not format the I/O request before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> to send the request to an I/O target. In fact, a driver that sets this flag must not call any of the <b>IWdfIoTarget::FormatRequestFor</b><i>Xxx</i> methods before it calls <b>IWDFIoRequest::Send</b>. The driver can use only the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559077">IWDFIoRequest::FormatUsingCurrentType</a> method to format the request.
+A driver that sets the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag typically does not format the I/O request before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> to send the request to an I/O target. In fact, a driver that sets this flag must not call any of the <b>IWdfIoTarget::FormatRequestFor</b><i>Xxx</i> methods before it calls <b>IWDFIoRequest::Send</b>. The driver can use only the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559077">IWDFIoRequest::FormatUsingCurrentType</a> method to format the request.
 
 Your driver cannot set the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag if the <i>pIoTarget</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> points to a file-handle-based I/O target object. For more information about this type of I/O target, see <a href="https://msdn.microsoft.com/cf1b39c3-4c82-411b-8eef-117ac0fe793e">Initializing a General I/O Target in UMDF</a>.
 
@@ -115,9 +115,9 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 | **Minimum UMDF version** | 1.0 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 
 
 

@@ -76,9 +76,9 @@ typedef enum _SERCX_STATUS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> and <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
+The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> and <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,9 +86,9 @@ typedef enum _SERCX_STATUS {
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | sercx.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 
 
 

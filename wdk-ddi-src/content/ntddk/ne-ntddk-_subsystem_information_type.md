@@ -88,9 +88,9 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 | ---- |:---- |
 | **Header** | ntddk.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
+<a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
 
 
 

@@ -120,9 +120,9 @@ typedef enum _WDF_USB_REQUEST_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
+The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,9 +131,9 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a>
 
 
 

@@ -183,18 +183,18 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        You can combine the values in the KS_AnalogVideoStandard enumeration with a bitwise OR  indicate support for multiple analog video standards.
+You can combine the values in the KS_AnalogVideoStandard enumeration with a bitwise OR  indicate support for multiple analog video standards.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md">KS_VBIINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md">KS_VBIINFOHEADER</a>
 
 
 

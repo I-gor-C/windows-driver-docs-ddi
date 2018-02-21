@@ -172,9 +172,9 @@ For more information about the Use Group Key cipher suite, refer to Clause 7.3.2
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        An IHV can assign a value for its proprietary cipher algorithms from 
+An IHV can assign a value for its proprietary cipher algorithms from 
     <b>DOT11_CIPHER_ALGO_IHV_START</b> through 
     <b>DOT11_CIPHER_ALGO_IHV_END</b>. The IHV must assign a unique number in this range to each of its
     proprietary cipher algorithms.
@@ -225,9 +225,9 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 | **Windows version** | Available in Windows 8 and later versions of the Windows operating   systems. Available in Windows 8 and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
+<a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
    DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
 
 

@@ -75,9 +75,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ntddsd.h (include Ntddsd.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
 
 
 

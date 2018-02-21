@@ -146,9 +146,9 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_RELEASE_V4_ {
 | **Windows version** | Supported starting with Windows 7. Supported starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 
 

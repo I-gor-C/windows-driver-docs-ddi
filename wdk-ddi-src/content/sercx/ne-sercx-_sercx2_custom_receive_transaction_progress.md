@@ -70,18 +70,18 @@ typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a> method.
+The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | sercx.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a>
 
 
 

@@ -91,9 +91,9 @@ typedef enum _UCM_PD_CONN_STATE {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
 
 
 

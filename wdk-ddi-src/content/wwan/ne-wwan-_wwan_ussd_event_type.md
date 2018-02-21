@@ -94,9 +94,9 @@ typedef enum _WWAN_USSD_EVENT_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Network-initiated USSD events use <i>WwanUssdEventActionRequired</i> to indicate when further information is needed after an MB device initiated operation. <i>WwanUssdEventActionRequired</i> events also indicate that the session is still open. All other events indicate that the existing USSD session has been closed.
+Network-initiated USSD events use <i>WwanUssdEventActionRequired</i> to indicate when further information is needed after an MB device initiated operation. <i>WwanUssdEventActionRequired</i> events also indicate that the session is still open. All other events indicate that the existing USSD session has been closed.
 
 <i>WwanUssdEventNoActionRequired</i> and <i>WwanUssdEventActionRequired</i> are the only events that require a non-empty USSD string to accompany them with a string length from 1 to 160 bytes. All other events must set the USSD string length to 0 to indicate that the string is empty.
 
@@ -108,9 +108,9 @@ The value of the <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</
 | **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</a>
+<a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</a>
 
 
 

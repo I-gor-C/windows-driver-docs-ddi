@@ -89,9 +89,9 @@ typedef enum tagPrintSchemaConstrainedSetting {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | printerextension.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/57E13395-9E23-4708-B4EC-6839CB6FC62B">IPrintSchemaOption::Constrained</a>
+<a href="https://msdn.microsoft.com/57E13395-9E23-4708-B4EC-6839CB6FC62B">IPrintSchemaOption::Constrained</a>
 
 
 

@@ -107,9 +107,9 @@ enum RILGSMMNMRPARAMMASK {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        In most situations both serving and neighbor cell sites will return all of these values.
+In most situations both serving and neighbor cell sites will return all of these values.
 
 <b>Serving network</b>
 
@@ -403,9 +403,9 @@ Same as RxLevel in serving cell
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
 
 

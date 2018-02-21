@@ -111,9 +111,9 @@ typedef enum _ELEMENT_TYPE {
 | ---- |:---- |
 | **Header** | ntddchgr.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
+<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 
 
 

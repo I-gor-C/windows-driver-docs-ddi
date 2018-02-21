@@ -81,9 +81,9 @@ typedef enum _POS_CX_EVENT_PRIORITY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        <div class="alert"><b>Note</b>  PosCx will deliver all Control level events before Data level events.</div>
+<div class="alert"><b>Note</b>  PosCx will deliver all Control level events before Data level events.</div>
 <div> </div>
 
 ## Requirements

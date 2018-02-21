@@ -86,9 +86,9 @@ This maps to the Print Schema’s StringParamType parameters, with UnitType not 
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | printerextension.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/82CC79A8-0281-4100-B3FB-1FFFB2454B8D">IPrintSchemaParameterDefinition::DataType</a>
+<a href="https://msdn.microsoft.com/82CC79A8-0281-4100-B3FB-1FFFB2454B8D">IPrintSchemaParameterDefinition::DataType</a>
 
 
 

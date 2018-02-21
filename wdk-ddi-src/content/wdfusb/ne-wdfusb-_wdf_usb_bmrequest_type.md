@@ -78,9 +78,9 @@ typedef enum _WDF_USB_BMREQUEST_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_USB_BMREQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
+The <b>WDF_USB_BMREQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
 For more information about data transfer types for a USB control transfer, see the USB specification.
 
@@ -91,9 +91,9 @@ For more information about data transfer types for a USB control transfer, see t
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
 
 
 

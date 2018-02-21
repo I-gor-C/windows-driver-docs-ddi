@@ -96,9 +96,9 @@ typedef enum _WDF_INTERRUPT_POLICY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_INTERRUPT_POLICY</b> enumeration type is used as input to the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a> method.
+The <b>WDF_INTERRUPT_POLICY</b> enumeration type is used as input to the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,9 +107,9 @@ typedef enum _WDF_INTERRUPT_POLICY {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
 
 
 

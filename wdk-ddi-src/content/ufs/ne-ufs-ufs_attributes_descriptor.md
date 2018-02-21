@@ -391,9 +391,9 @@ relevant event has occurred
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        <b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
+<b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
 is not in Active power mode or Idle power mode, a <b>QUERY REQUEST UPIU</b> to access descriptors, flags, or attributes other than <b>bCurrentPowerMode</b> may fail.
 
 <b>UFS_bDeviceFFUStatu</b>s value is kept after power cycle, hardware reset or any other type of reset. This attribute may change value when a
@@ -407,9 +407,9 @@ microcode activation event occurs.
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ufs.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
 
 
 

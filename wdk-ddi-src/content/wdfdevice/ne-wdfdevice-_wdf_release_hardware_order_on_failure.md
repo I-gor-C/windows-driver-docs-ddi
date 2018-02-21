@@ -79,9 +79,9 @@ typedef enum _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE</b> enumeration is used as input to  <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>.
+The <b>WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE</b> enumeration is used as input to  <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>.
 
 If a driver specifies <b>WdfReleaseHardwareOrderOnFailureEarly</b>, then in normal device removal, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates. However, in the event of a device power-up or power-down failure, the framework might call the  driver's <i>EvtDeviceReleaseHardware</i> before it has called the <i>EvtDeviceReleaseHardware</i> functions for all child devices.
 
@@ -94,9 +94,9 @@ If a driver specifies <b>WdfReleaseHardwareOrderOnFailureAfterDescendants</b>, t
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>
 
 
 

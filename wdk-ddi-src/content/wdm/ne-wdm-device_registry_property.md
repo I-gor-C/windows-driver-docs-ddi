@@ -202,9 +202,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 
 
 

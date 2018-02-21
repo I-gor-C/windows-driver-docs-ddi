@@ -78,9 +78,9 @@ typedef enum _WDF_INTERRUPT_POLARITY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify a member of the <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
+The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a> enumeration type is used to specify a member of the <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

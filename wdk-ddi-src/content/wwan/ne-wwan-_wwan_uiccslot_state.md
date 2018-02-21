@@ -115,9 +115,9 @@ typedef enum _WWAN_UICCSLOT_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The set of reported states is constrained by the capability of the slot hardware. In the most restrictive case, the slot hardware may only be able to determine that a card is present when it is powered on and active; in such a case the <b>OffEmpty</b> and <b>Off</b> states will not be reported.
+The set of reported states is constrained by the capability of the slot hardware. In the most restrictive case, the slot hardware may only be able to determine that a card is present when it is powered on and active; in such a case the <b>OffEmpty</b> and <b>Off</b> states will not be reported.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -125,9 +125,9 @@ typedef enum _WWAN_UICCSLOT_STATE {
 | **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_slot_info.md">WWAN_SLOT_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_slot_info.md">WWAN_SLOT_INFO</a>
 
 
 

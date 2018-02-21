@@ -81,9 +81,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers to this enumeration:
+The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers to this enumeration:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -102,9 +102,9 @@ typedef enum  {
 | **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
+<a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
 
 
 

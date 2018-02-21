@@ -83,9 +83,9 @@ enum D3DWDDM1_3DDI_TILE_COPY_FLAG {
 | **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_copytiles.md">CopyTiles</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_copytiles.md">CopyTiles</a>
 
 
 

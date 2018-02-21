@@ -69,9 +69,9 @@ typedef enum _CDROM_OPC_INFO_TYPE {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
 
 
 

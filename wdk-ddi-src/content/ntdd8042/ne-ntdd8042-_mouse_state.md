@@ -93,18 +93,18 @@ typedef enum _MOUSE_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The MOUSE_STATE enumerator is used as input to a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback.
+The MOUSE_STATE enumerator is used as input to a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ntdd8042.h (include Ntdd8042.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a>
 
 
 

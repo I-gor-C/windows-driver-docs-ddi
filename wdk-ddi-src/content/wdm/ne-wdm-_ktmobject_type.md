@@ -88,9 +88,9 @@ typedef enum _KTMOBJECT_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>KTMOBJECT_TYPE</b> enumeration is used with the <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a> routine.
+The <b>KTMOBJECT_TYPE</b> enumeration is used with the <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a> routine.
 
 For more information about KTM objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554272">KTM Objects</a>.
 
@@ -100,9 +100,9 @@ For more information about KTM objects, see <a href="https://msdn.microsoft.com/
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a>
+<a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a>
 
 
 

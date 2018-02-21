@@ -76,9 +76,9 @@ typedef enum _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
 
 
 

@@ -101,9 +101,9 @@ typedef enum _WWAN_SMS_FORMAT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        CDMA-based devices support only 
+CDMA-based devices support only 
     <b>WwanSmsFormatCdma</b>. The 
     <b>WwanSmsFormatCdma</b> format is not applicable for GSM-based devices.
 
@@ -113,9 +113,9 @@ typedef enum _WWAN_SMS_FORMAT {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a>
+<a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a>
 
 
 

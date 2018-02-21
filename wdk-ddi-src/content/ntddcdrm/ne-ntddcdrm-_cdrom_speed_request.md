@@ -75,9 +75,9 @@ typedef enum _CDROM_SPEED_REQUEST {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_set_streaming.md">CDROM_SET_STREAMING</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_set_streaming.md">CDROM_SET_STREAMING</a>
 
 
 

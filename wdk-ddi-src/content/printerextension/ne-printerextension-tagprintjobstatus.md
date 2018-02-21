@@ -144,9 +144,9 @@ typedef enum _PrintJobStatus {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A <b>PrintJobStatus_Retained</b> flag can be raised for several reasons. For example, jobs could be kept in the queue if the administrator of the queue used the desktop print queue UI to set the “Keep Printed Jobs” feature to be on.
+A <b>PrintJobStatus_Retained</b> flag can be raised for several reasons. For example, jobs could be kept in the queue if the administrator of the queue used the desktop print queue UI to set the “Keep Printed Jobs” feature to be on.
 
 It is possible for a job to have multiple  flag values specified simultaneously.
 
@@ -156,9 +156,9 @@ It is possible for a job to have multiple  flag values specified simultaneously.
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | printerextension.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/3C806C3B-78A1-44B6-A9AC-E7258D216637">IPrintJob::Status</a>
+<a href="https://msdn.microsoft.com/3C806C3B-78A1-44B6-A9AC-E7258D216637">IPrintJob::Status</a>
 
 
 

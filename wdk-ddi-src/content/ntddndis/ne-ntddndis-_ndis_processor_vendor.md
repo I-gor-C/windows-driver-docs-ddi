@@ -80,9 +80,9 @@ typedef enum _NDIS_PROCESSOR_VENDOR {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_PROCESSOR_VENDOR enumeration is used in the 
+The NDIS_PROCESSOR_VENDOR enumeration is used in the 
     <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">
     NDIS_SYSTEM_PROCESSOR_INFO</a> structure.
 
@@ -92,9 +92,9 @@ typedef enum _NDIS_PROCESSOR_VENDOR {
 | **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
+<a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
 
 
 

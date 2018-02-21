@@ -117,9 +117,9 @@ typedef enum _D3DKMT_PRESENT_MODEL {
 | **Windows version** | D3DKMT_PRESENT_MODEL is supported beginning with the Windows 7 operating system. D3DKMT_PRESENT_MODEL is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
 
 
 

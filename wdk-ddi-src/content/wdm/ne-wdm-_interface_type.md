@@ -184,9 +184,9 @@ typedef enum _INTERFACE_TYPE {
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
 
 
 

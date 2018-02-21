@@ -102,9 +102,9 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the <b>Type</b> member of the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure. That structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a> method.
+The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the <b>Type</b> member of the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure. That structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,9 +113,9 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
 
 
 

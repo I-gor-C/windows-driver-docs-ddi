@@ -249,9 +249,9 @@ typedef enum _TAPE_STATUS {
 | ---- |:---- |
 | **Header** | minitape.h (include Ntddtape.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_status.md">IOCTL_TAPE_GET_STATUS</a>
+<a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_status.md">IOCTL_TAPE_GET_STATUS</a>
 
 
 

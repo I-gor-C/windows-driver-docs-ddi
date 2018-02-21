@@ -96,9 +96,9 @@ typedef enum _WDF_SPECIAL_FILE_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
+For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,9 +106,9 @@ typedef enum _WDF_SPECIAL_FILE_TYPE {
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetspecialfilesupport.md">WdfDeviceSetSpecialFileSupport</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetspecialfilesupport.md">WdfDeviceSetSpecialFileSupport</a>
 
 
 

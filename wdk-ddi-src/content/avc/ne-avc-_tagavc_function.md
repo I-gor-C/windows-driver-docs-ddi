@@ -181,9 +181,9 @@ This function code is available only to peer instances of <i>avc.sys</i>.</td>
 | ---- |:---- |
 | **Header** | avc.h (include Avc.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\avc\ns-avc-_avc_irb.md">AVC_IRB</a>
+<a href="..\avc\ns-avc-_avc_irb.md">AVC_IRB</a>
 
 
 

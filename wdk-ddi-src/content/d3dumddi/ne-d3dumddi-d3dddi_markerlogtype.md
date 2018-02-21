@@ -82,9 +82,9 @@ typedef enum D3DDDI_MARKERLOGTYPE {
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ne-d3dumddi-d3dddi_markertype.md">D3DDDI_MARKERTYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_markertype.md">D3DDDI_MARKERTYPE</a>
 
 
 

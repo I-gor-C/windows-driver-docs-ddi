@@ -83,9 +83,9 @@ typedef enum _WWAN_UICC_PASSTHROUGH_STATUS {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-reset-operations">MB UICC reset operations</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-reset-operations">MB UICC reset operations</a>
 
 
 

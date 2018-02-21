@@ -81,9 +81,9 @@ typedef enum _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>RequestReason</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_recommendfunctionalvidpn.md">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure is a DXGK_RECOMMENDFUNCTIONALVIDPN_REASON value.
+The <b>RequestReason</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_recommendfunctionalvidpn.md">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure is a DXGK_RECOMMENDFUNCTIONALVIDPN_REASON value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,9 +91,9 @@ typedef enum _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn.md">DxgkDdiRecommendFunctionalVidPn</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn.md">DxgkDdiRecommendFunctionalVidPn</a>
 
 
 

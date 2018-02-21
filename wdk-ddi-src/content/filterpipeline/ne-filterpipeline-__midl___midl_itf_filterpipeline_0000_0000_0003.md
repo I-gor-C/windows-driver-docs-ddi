@@ -75,9 +75,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A rendering filter uses the <a href="..\filterpipeline\nn-filterpipeline-iprintpipelineprogressreport.md">IPrintPipelineProgressReport</a> interface to send updates to the pipeline. 
+A rendering filter uses the <a href="..\filterpipeline\nn-filterpipeline-iprintpipelineprogressreport.md">IPrintPipelineProgressReport</a> interface to send updates to the pipeline. 
 
 Rendering filters convert XPS to the page description language (PDL). 
 

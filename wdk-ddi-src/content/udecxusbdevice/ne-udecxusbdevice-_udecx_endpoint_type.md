@@ -82,9 +82,9 @@ typedef enum _UDECX_ENDPOINT_TYPE {
 | ---- |:---- |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetendpointstype.md">UdecxUsbDeviceInitSetEndpointsType</a>
+<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetendpointstype.md">UdecxUsbDeviceInitSetEndpointsType</a>
 
 
 

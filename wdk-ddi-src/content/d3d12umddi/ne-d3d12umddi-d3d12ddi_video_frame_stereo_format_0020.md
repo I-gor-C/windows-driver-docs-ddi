@@ -151,9 +151,9 @@ typedef enum D3D12DDI_VIDEO_FRAME_STEREO_FORMAT_0020 {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        All drivers that support stereo must support all the formats in this enumeration.
+All drivers that support stereo must support all the formats in this enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |

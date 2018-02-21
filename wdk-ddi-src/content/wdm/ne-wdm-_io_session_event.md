@@ -105,9 +105,9 @@ typedef enum _IO_SESSION_EVENT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        When the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function, it sets the <i>Event</i> parameter of this function to an <b>IO_SESSION_EVENT</b> enumeration constant (other than <b>IoSessionEventMax</b>).
+When the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function, it sets the <i>Event</i> parameter of this function to an <b>IO_SESSION_EVENT</b> enumeration constant (other than <b>IoSessionEventMax</b>).
 
 A session event causes a transition from one session state to another. For more information about session state transitions, see <a href="..\wdm\ne-wdm-_io_session_state.md">IO_SESSION_STATE</a>.
 
@@ -117,9 +117,9 @@ A session event causes a transition from one session state to another. For more 
 | **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ne-wdm-_io_session_state.md">IO_SESSION_STATE</a>
+<a href="..\wdm\ne-wdm-_io_session_state.md">IO_SESSION_STATE</a>
 
 
 

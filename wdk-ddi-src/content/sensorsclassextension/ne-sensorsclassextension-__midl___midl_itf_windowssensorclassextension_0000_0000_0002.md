@@ -84,9 +84,9 @@ enum SensorConnectionType {
 | **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
 | **Header** | sensorsclassextension.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
 
 
 

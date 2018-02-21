@@ -267,9 +267,9 @@ typedef enum _FEATURE_PROFILE_TYPE {
 | ---- |:---- |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddmmc\ns-ntddmmc-_feature_data_profile_list.md">FEATURE_DATA_PROFILE_LIST</a>
+<a href="..\ntddmmc\ns-ntddmmc-_feature_data_profile_list.md">FEATURE_DATA_PROFILE_LIST</a>
 
 
 

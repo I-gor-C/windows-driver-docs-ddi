@@ -80,9 +80,9 @@ typedef enum _PCW_CALLBACK_TYPE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <dl>
+<dl>
 <dt>
 <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a>
 </dt>

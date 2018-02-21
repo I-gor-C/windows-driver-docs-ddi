@@ -96,9 +96,9 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Before calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>, your driver must set <b>WDF_RETRIEVE_CHILD_FLAGS</b>-typed flags in a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure.
+Before calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>, your driver must set <b>WDF_RETRIEVE_CHILD_FLAGS</b>-typed flags in a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,9 +106,9 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
 
 
 

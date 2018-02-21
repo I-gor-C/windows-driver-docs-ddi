@@ -83,9 +83,9 @@ typedef enum _NDIS_RECEIVE_FILTER_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_RECEIVE_FILTER_TYPE enumeration is used in the 
+The NDIS_RECEIVE_FILTER_TYPE enumeration is used in the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
     NDIS_RECEIVE_FILTER_PARAMETERS</a> structure.
 
@@ -101,9 +101,9 @@ For more information about packet coalescing, see <a href="https://msdn.microsof
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
    NDIS_RECEIVE_FILTER_PARAMETERS</a>
 
 

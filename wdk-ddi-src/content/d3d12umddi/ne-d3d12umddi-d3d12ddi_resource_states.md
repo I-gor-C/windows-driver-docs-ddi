@@ -171,9 +171,9 @@ typedef enum D3D12DDI_RESOURCE_STATES {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Resource barriers allow transitioning between hardware specific states for a corresponding operation and to synchronize read after write.  
+Resource barriers allow transitioning between hardware specific states for a corresponding operation and to synchronize read after write.  
 
 Resource barriers are an existing concept in D3D12 that is extended to support video decode by adding new usage flags.
 The write state is used for the decode target.  The write state is also used when decode conversion is enabled for the non-converted reference.

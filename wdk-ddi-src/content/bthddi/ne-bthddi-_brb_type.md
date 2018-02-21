@@ -291,9 +291,9 @@ typedef enum _BRB_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The type of BRB is specified in the 
+The type of BRB is specified in the 
     <b>Type</b> member of the 
     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure. The 
     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a> and 
@@ -307,9 +307,9 @@ typedef enum _BRB_TYPE {
 | **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
+<a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
 
 
 

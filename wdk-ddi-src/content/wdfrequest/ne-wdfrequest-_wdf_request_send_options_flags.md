@@ -96,9 +96,9 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A driver that sets the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag typically does not format the I/O request before it calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> to send the request to an I/O target. In fact, a driver that sets this flag must not call any of the <b>WdfIoTargetFormatRequestFor</b><i>Xxx</i> methods before it calls <b>WdfRequestSend</b>. The driver can use only the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestformatrequestusingcurrenttype.md">WdfRequestFormatRequestUsingCurrentType</a> or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestwdmformatusingstacklocation.md">WdfRequestWdmFormatUsingStackLocation</a> method to format the request.
+A driver that sets the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag typically does not format the I/O request before it calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> to send the request to an I/O target. In fact, a driver that sets this flag must not call any of the <b>WdfIoTargetFormatRequestFor</b><i>Xxx</i> methods before it calls <b>WdfRequestSend</b>. The driver can use only the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestformatrequestusingcurrenttype.md">WdfRequestFormatRequestUsingCurrentType</a> or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestwdmformatusingstacklocation.md">WdfRequestWdmFormatUsingStackLocation</a> method to format the request.
 
 Your driver <i>cannot</i> set the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag in the following situations:
 
@@ -129,9 +129,9 @@ For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
 
 
 

@@ -82,9 +82,9 @@ typedef enum _eEngineFormatType {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn265082">GetEngineFormatSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265082">GetEngineFormatSize</a>
 
 
 

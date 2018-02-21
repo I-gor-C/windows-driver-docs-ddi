@@ -76,9 +76,9 @@ typedef enum _DXGK_PTE_PAGE_SIZE {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dukmdt.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dukmdt\ns-d3dukmdt-_dxgk_pte.md">DXGK_PTE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_dxgk_pte.md">DXGK_PTE</a>
 
 
 

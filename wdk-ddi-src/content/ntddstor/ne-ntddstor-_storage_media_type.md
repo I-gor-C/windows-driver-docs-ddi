@@ -441,9 +441,9 @@ typedef enum _STORAGE_MEDIA_TYPE {
 | ---- |:---- |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
+<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
 
 
 

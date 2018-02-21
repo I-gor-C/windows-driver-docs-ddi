@@ -84,9 +84,9 @@ typedef enum _WDF_REQUEST_STOP_ACTION_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        When the framework calls a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a> callback function, it sets either the <b>WdfRequestStopActionSuspend</b> or <b>WdfRequestStopActionPurge</b> flag. If the request is cancelable, the framework also sets the <b>WdfRequestStopRequestCancelable</b> flag.
+When the framework calls a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a> callback function, it sets either the <b>WdfRequestStopActionSuspend</b> or <b>WdfRequestStopActionPurge</b> flag. If the request is cancelable, the framework also sets the <b>WdfRequestStopRequestCancelable</b> flag.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,9 +95,9 @@ typedef enum _WDF_REQUEST_STOP_ACTION_FLAGS {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a>
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a>
 
 
 

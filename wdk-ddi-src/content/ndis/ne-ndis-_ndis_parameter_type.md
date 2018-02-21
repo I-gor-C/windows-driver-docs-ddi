@@ -87,9 +87,9 @@ typedef enum _NDIS_PARAMETER_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NDIS_PARAMETER_TYPE enumeration type is used in the 
+The NDIS_PARAMETER_TYPE enumeration type is used in the 
     <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
     NDIS_CONFIGURATION_PARAMETER</a> structure and in the 
     <i>ParameterType</i> parameter of the 
@@ -101,9 +101,9 @@ typedef enum _NDIS_PARAMETER_TYPE {
 | **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP. |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
 
 
 

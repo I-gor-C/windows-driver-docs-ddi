@@ -117,9 +117,9 @@ typedef enum D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Note that the <b>D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</b> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> enumerations are defined as the same type.
+Note that the <b>D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE</b> and <b>D3D11_1DDI_VIDEO_DECODER_BUFFER_TYPE</b> enumerations are defined as the same type.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -127,9 +127,9 @@ typedef enum D3D11_DDI_VIDEO_DECODER_BUFFER_TYPE {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a>
 
 
 

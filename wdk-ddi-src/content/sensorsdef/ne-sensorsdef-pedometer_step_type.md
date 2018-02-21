@@ -88,18 +88,18 @@ typedef enum _PEDOMETER_STEP_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about the sensor data fields that use this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957076">Pedometer data fields</a>.
+For more information about the sensor data fields that use this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957076">Pedometer data fields</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | sensorsdef.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn957076">Pedometer data fields</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957076">Pedometer data fields</a>
 
 
 

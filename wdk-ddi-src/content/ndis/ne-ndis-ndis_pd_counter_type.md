@@ -94,9 +94,9 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a>
 
 
 

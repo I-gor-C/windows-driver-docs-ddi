@@ -74,9 +74,9 @@ typedef enum _PEP_ACPI_OBJECT_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a> structure is an <b>PEP_ACPI_OBJECT_TYPE</b> enumeration value.
+The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a> structure is an <b>PEP_ACPI_OBJECT_TYPE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,9 +84,9 @@ typedef enum _PEP_ACPI_OBJECT_TYPE {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>
+<a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>
 
 
 

@@ -81,9 +81,9 @@ typedef enum _FSRTL_CHANGE_BACKING_TYPE {
 | ---- |:---- |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntifs\nf-ntifs-fsrtlchangebackingfileobject.md">FsRtlChangeBackingFileObject</a>
+<a href="..\ntifs\nf-ntifs-fsrtlchangebackingfileobject.md">FsRtlChangeBackingFileObject</a>
 
 
 

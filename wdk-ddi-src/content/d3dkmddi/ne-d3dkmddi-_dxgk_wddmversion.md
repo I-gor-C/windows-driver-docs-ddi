@@ -109,9 +109,9 @@ Reserved for system use.</td>
 | **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn Interface</a>
 
 
 

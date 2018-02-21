@@ -77,9 +77,9 @@ typedef enum _NDIS_UDP_HEADER_FIELD {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>NDIS_UDP_HEADER_FIELD</b> enumeration is used in the 
+The <b>NDIS_UDP_HEADER_FIELD</b> enumeration is used in the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
     NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
@@ -89,9 +89,9 @@ typedef enum _NDIS_UDP_HEADER_FIELD {
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
 

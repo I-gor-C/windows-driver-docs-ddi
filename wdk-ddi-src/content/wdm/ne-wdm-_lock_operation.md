@@ -83,9 +83,9 @@ typedef enum  {
 | **Windows version** | Available in Windows 2000 and later versions of the Windows operating system. Available in Windows 2000 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 
 

@@ -94,18 +94,18 @@ typedef enum _IO_PRIORITY_HINT {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about priority hints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565403">Using IRP Priority Hints</a>.
+For more information about priority hints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565403">Using IRP Priority Hints</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-iosetiopriorityhint.md">IoSetIoPriorityHint</a>
+<a href="..\wdm\nf-wdm-iosetiopriorityhint.md">IoSetIoPriorityHint</a>
 
 
 

@@ -76,9 +76,9 @@ typedef enum _POS_CX_EVENT_ATTRIBUTES {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        <div class="alert"><b>Note</b>  PosCx will deliver all Control level events before Data level events.</div>
+<div class="alert"><b>Note</b>  PosCx will deliver all Control level events before Data level events.</div>
 <div> </div>
 
 ## Requirements
@@ -86,9 +86,9 @@ typedef enum _POS_CX_EVENT_ATTRIBUTES {
 | ---- |:---- |
 | **Header** | poscx.h (include Poscx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\poscx\ne-poscx-_pos_cx_event_dest.md">POS_CX_EVENT_DEST</a>
+<a href="..\poscx\ne-poscx-_pos_cx_event_dest.md">POS_CX_EVENT_DEST</a>
 
 
 

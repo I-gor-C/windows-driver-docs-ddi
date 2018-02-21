@@ -96,9 +96,9 @@ For more info, see <a href="https://msdn.microsoft.com/windows/hardware/drivers/
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        You can specify a valid bitwise OR of the values on this page for the <b>Flags</b> member of the <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure.
+You can specify a valid bitwise OR of the values on this page for the <b>Flags</b> member of the <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,9 +106,9 @@ For more info, see <a href="https://msdn.microsoft.com/windows/hardware/drivers/
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement.md">WdfDmaTransactionSetSingleTransferRequirement</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement.md">WdfDmaTransactionSetSingleTransferRequirement</a>
 
 
 

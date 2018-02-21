@@ -84,9 +84,9 @@ typedef enum _ENUMERATOR_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A value from this enumeration is returned as the 
+A value from this enumeration is returned as the 
     <b>EnumeratorType</b> member of the 
     <a href="..\bthddi\ns-bthddi-_bth_enumerator_info.md">BTH_ENUMERATOR_INFO</a> structure, which the 
     <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
@@ -98,9 +98,9 @@ typedef enum _ENUMERATOR_TYPE {
 | **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\ns-bthddi-_bth_enumerator_info.md">BTH_ENUMERATOR_INFO</a>
+<a href="..\bthddi\ns-bthddi-_bth_enumerator_info.md">BTH_ENUMERATOR_INFO</a>
 
 
 

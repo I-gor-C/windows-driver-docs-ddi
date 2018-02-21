@@ -84,9 +84,9 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Impersonation is the ability of a process to take on the security attributes of another process.
+Impersonation is the ability of a process to take on the security attributes of another process.
 
 <div class="alert"><b>Note</b>  Be aware of the following derived types:<pre class="syntax" xml:space="preserve"><code>#define DEFAULT_IMPERSONATION_LEVEL SecurityImpersonation
 #define SECURITY_MAX_IMPERSONATION_LEVEL SecurityDelegation
@@ -99,9 +99,9 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
+<a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
 
 
 

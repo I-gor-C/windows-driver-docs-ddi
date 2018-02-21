@@ -77,9 +77,9 @@ typedef enum _WWAN_PACKET_SERVICE_ACTION {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_packet_service.md">NDIS_WWAN_SET_PACKET_SERVICE</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_packet_service.md">NDIS_WWAN_SET_PACKET_SERVICE</a>
 
 
 

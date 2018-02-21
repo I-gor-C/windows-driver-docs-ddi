@@ -99,9 +99,9 @@ typedef enum _DXVA_VideoLighting {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
+One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
 
 The video lighting enumerators can be used to alter the gamma to generate a comparable experience in a different lighting condition.
 
@@ -111,9 +111,9 @@ The video lighting enumerators can be used to alter the gamma to generate a comp
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 
 
 

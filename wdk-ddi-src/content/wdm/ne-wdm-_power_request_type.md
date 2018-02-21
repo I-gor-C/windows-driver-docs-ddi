@@ -82,9 +82,9 @@ typedef enum _POWER_REQUEST_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration is used by the kernel-mode <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.
+This enumeration is used by the kernel-mode <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.
 
 The other three enumeration values—<b>PowerRequestDisplayRequired</b>, <b>PowerRequestAwayModeRequired</b>, and <b>PowerRequestExecutionRequired</b>—are not used by drivers. Applications specify these power request types in calls to the <a href="https://msdn.microsoft.com/85249de8-5832-4f25-bbd9-3576cfd1caa0">PowerSetRequest</a> and <a href="https://msdn.microsoft.com/794248b1-5aa8-495e-aca6-1a1f35dc9c7f">PowerClearRequest</a> functions.
 
@@ -114,9 +114,9 @@ While a <b>PowerRequestExecutionRequired</b> power request is in effect, the cal
 | **Windows version** | Supported starting with Windows 7. Supported starting with Windows 7. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/794248b1-5aa8-495e-aca6-1a1f35dc9c7f">PowerClearRequest</a>
+<a href="https://msdn.microsoft.com/794248b1-5aa8-495e-aca6-1a1f35dc9c7f">PowerClearRequest</a>
 
 
 

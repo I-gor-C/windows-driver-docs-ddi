@@ -82,9 +82,9 @@ typedef enum _UDECX_USB_DEVICE_FUNCTION_POWER {
 | ---- |:---- |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_set_function_suspend_and_wake.md">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
+<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_set_function_suspend_and_wake.md">EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE</a>
 
 
 

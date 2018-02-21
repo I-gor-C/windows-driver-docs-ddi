@@ -117,9 +117,9 @@ typedef enum _AVCSTRM_FUNCTION {
 | ---- |:---- |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
 
 
 

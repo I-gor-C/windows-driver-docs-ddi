@@ -90,9 +90,9 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a>
+<a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a>
 
 
 

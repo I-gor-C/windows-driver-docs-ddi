@@ -75,9 +75,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | 61883.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
 
 
 

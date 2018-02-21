@@ -111,9 +111,9 @@ typedef enum D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020 {
 | ---- |:---- |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a>
+<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING</a>
 
 
 

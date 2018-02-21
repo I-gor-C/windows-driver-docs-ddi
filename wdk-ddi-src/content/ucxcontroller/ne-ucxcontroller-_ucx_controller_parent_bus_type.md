@@ -87,9 +87,9 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 | ---- |:---- |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a>
+<a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a>
 
 
 

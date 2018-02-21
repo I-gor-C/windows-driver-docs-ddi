@@ -92,9 +92,9 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about Hyper-V parent and child partitions, see <a href="https://msdn.microsoft.com/467996B2-9319-47F9-BAEB-5AC1F20B6E01">Virtualized Networking Concepts and Terms</a>.
+For more information about Hyper-V parent and child partitions, see <a href="https://msdn.microsoft.com/467996B2-9319-47F9-BAEB-5AC1F20B6E01">Virtualized Networking Concepts and Terms</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,9 +102,9 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
 
 
 

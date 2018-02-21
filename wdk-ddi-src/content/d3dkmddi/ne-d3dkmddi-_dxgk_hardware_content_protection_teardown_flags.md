@@ -70,9 +70,9 @@ typedef enum _DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_hardwarecontentprotectionteardown.md">DxgkCbHardwareContentProtectionTeardown</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_hardwarecontentprotectionteardown.md">DxgkCbHardwareContentProtectionTeardown</a>
 
 
 

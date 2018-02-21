@@ -147,9 +147,9 @@ typedef enum _TAPE_DRIVE_PROBLEM_TYPE {
 | ---- |:---- |
 | **Header** | ntddtape.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a>
 
 
 

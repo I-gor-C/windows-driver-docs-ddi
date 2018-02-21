@@ -105,9 +105,9 @@ typedef enum _STORAGE_PROTOCOL_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Protocol types that are 128 (0x80) and above in value are reserved for Microsoft use.
+Protocol types that are 128 (0x80) and above in value are reserved for Microsoft use.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -75,9 +75,9 @@ typedef enum _WWAN_PCO_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Currently, in Windows 10, version 1709, some modems can only pass up operator specific PCO elements. These will have the type is set as <b>WwanPcoTypePartial</b>, and the header should have the following:
+Currently, in Windows 10, version 1709, some modems can only pass up operator specific PCO elements. These will have the type is set as <b>WwanPcoTypePartial</b>, and the header should have the following:
 
 <ul>
 <li>Octet1: IEI = 27H</li>
@@ -92,9 +92,9 @@ The OS will not check if the PCO data is valid and leaves the validation to the 
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-">MB Protocol Configuration Operations (PCO)</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-">MB Protocol Configuration Operations (PCO)</a>
 
 
 

@@ -98,9 +98,9 @@ typedef enum _UCM_CHARGING_STATE {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+<a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
 
 
 

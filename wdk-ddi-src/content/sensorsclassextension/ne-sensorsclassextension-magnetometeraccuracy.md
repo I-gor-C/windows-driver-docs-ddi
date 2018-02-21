@@ -82,9 +82,9 @@ typedef enum _MagnetometerAccuracy {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Device drivers that support magnetometer accuracy should only report the <b>Unreliable</b>, <b>Approximate</b>, and <b>High</b> values.
+Device drivers that support magnetometer accuracy should only report the <b>Unreliable</b>, <b>Approximate</b>, and <b>High</b> values.
 
 Apps that need calibration may periodically ask the user to calibrate the device. We suggest doing this once every 10 minutes.
 
@@ -94,9 +94,9 @@ Apps that need calibration may periodically ask the user to calibrate the device
 | **Windows version** | Windows 8.1,Available in Windows 8.1. Windows 8.1,Available in Windows 8.1. |
 | **Header** | sensorsclassextension.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor Properties</a>
 
 
 

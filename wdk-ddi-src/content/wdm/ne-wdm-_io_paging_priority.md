@@ -88,18 +88,18 @@ typedef enum _IO_PAGING_PRIORITY {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a> routine returns an <b>IO_PAGING_PRIORITY</b> value to indicate the priority value of a paging I/O IRP.
+The <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a> routine returns an <b>IO_PAGING_PRIORITY</b> value to indicate the priority value of a paging I/O IRP.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a>
+<a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</a>
 
 
 

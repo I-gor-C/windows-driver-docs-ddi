@@ -93,9 +93,9 @@ typedef enum D3D12DDI_VIDEO_DECODE_STATUS_0020 {
 | ---- |:---- |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_query_data_video_decode_statistics_0022.md">D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS</a>
+<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_query_data_video_decode_statistics_0022.md">D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS</a>
 
 
 

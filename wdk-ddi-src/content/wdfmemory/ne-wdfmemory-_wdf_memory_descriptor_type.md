@@ -92,9 +92,9 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfmemory.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
+<a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
 
 
 

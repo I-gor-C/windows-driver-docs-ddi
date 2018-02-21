@@ -69,9 +69,9 @@ typedef enum _HARDWARE_COUNTER_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>Type</b> member of the <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a> structure contains a <b>HARDWARE_COUNTER_TYPE</b> enumeration value.
+The <b>Type</b> member of the <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a> structure contains a <b>HARDWARE_COUNTER_TYPE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,9 +79,9 @@ typedef enum _HARDWARE_COUNTER_TYPE {
 | **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Winnt.h, Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
+<a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
 
 
 

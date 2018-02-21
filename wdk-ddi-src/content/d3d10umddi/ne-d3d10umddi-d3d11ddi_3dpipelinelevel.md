@@ -119,9 +119,9 @@ The driver supports Direct3D version 9.3 pipeline.</td>
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The driver uses one of the values from the D3D11DDI_3DPIPELINELEVEL enumeration and the following macro to encode the 3-D pipeline level:
+The driver uses one of the values from the D3D11DDI_3DPIPELINELEVEL enumeration and the following macro to encode the 3-D pipeline level:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -161,9 +161,9 @@ For more information about the Direct3D version 11 pipelines, see <a href="https
 | **Windows version** | D3D11DDI_3DPIPELINELEVEL is supported beginning with the Windows 7 operating system. D3D11DDI_3DPIPELINELEVEL is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
 
 
 

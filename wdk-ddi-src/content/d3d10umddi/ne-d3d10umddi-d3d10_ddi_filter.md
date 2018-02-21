@@ -317,9 +317,9 @@ Supported starting with Windows 8.1, and used by WDDM 1.3 and later drivers.</t
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Filtering determines a representative value from the sample coordinates of a texture and derivatives for those coordinates. The magnitude of the derivative determines the level of detail (LOD) on the texture to read.
+Filtering determines a representative value from the sample coordinates of a texture and derivatives for those coordinates. The magnitude of the derivative determines the level of detail (LOD) on the texture to read.
 
 If the LOD is positive (which indicates that the region that is sampled is smaller than roughly the size of a texel in the largest active MIP-map level of the texture), the filter is a <i>magnifying</i> filter. Otherwise, the filter is a <i>minifying</i> filter. When magnifying, the largest active MIP-map level of the texture is used. When minifying, the two MIP-map levels that are closest to the LOD are used. For a given MIP-map level that is accessed on a texture, filtering can be <i>point</i> or <i>linear</i>. Point filtering returns the nearest texel to the lookup coordinates. Linear filtering returns the linear-weighted blend of the nearest 4 texels to the sample location.
 
@@ -337,9 +337,9 @@ Filtering can also be described by a comparison component. By default (no compar
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createsampler.md">CreateSampler</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createsampler.md">CreateSampler</a>
 
 
 

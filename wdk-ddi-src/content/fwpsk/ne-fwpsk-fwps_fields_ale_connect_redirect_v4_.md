@@ -160,9 +160,9 @@ typedef enum FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4_ {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following macros in 
+The following macros in 
     <i>Fwpsk.h</i> are defined with FWPS_FIELDS_ALE_CONNECT_REDIRECT_V4 enumeration
     values:
 
@@ -190,9 +190,9 @@ These macros are used to access the following IPV4 data fields:
 | **Windows version** | Unless otherwise noted, supported starting with Windows 7. Unless otherwise noted, supported starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
 
 

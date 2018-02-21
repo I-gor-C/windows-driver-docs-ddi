@@ -75,9 +75,9 @@ typedef enum _REFS_SMR_VOLUME_GC_METHOD {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Currently the only supported value  is <b>SmrGcMethodCompaction</b>.
+Currently the only supported value  is <b>SmrGcMethodCompaction</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,9 +85,9 @@ typedef enum _REFS_SMR_VOLUME_GC_METHOD {
 | **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/782542C4-CFC5-4BF7-AF38-3247A3AC6AB9">FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/782542C4-CFC5-4BF7-AF38-3247A3AC6AB9">FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS</a>
 
 
 

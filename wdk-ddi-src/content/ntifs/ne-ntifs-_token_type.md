@@ -75,9 +75,9 @@ typedef enum _TOKEN_TYPE {
 | ---- |:---- |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
+<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
 
 
 

@@ -109,9 +109,9 @@ typedef enum _D3DKMT_DEVICEEXECUTION_STATE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
 
 
 

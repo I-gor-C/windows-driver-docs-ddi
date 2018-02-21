@@ -70,9 +70,9 @@ typedef enum _IO_CONTAINER_INFORMATION_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine and sets this routine's <i>InformationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerInformationClass</b>). Currently, <b>IoGetContainerInformation</b> supports only <i>InformationClass</i> = <b>IoSessionStateInformation</b>.
+To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine and sets this routine's <i>InformationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerInformationClass</b>). Currently, <b>IoGetContainerInformation</b> supports only <i>InformationClass</i> = <b>IoSessionStateInformation</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +80,9 @@ typedef enum _IO_CONTAINER_INFORMATION_CLASS {
 | **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
+<a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
 
 
 

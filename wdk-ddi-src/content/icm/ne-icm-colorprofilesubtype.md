@@ -109,9 +109,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For a description of rendering intents, see <a href="http://go.microsoft.com/fwlink/p/?linkid=52269">Rendering Intents</a> in the Windows SDK documentation.
+For a description of rendering intents, see <a href="http://go.microsoft.com/fwlink/p/?linkid=52269">Rendering Intents</a> in the Windows SDK documentation.
 
 The PCOLORPROFILESUBTYPE and LPCOLORPROFILESUBTYPE data types are defined as pointers to this enumeration:
 
@@ -132,9 +132,9 @@ The PCOLORPROFILESUBTYPE and LPCOLORPROFILESUBTYPE data types are defined as poi
 | **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
+<a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
 
 
 

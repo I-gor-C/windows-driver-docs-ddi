@@ -70,9 +70,9 @@ typedef enum _HFP_BYPASS_CODEC_ID_VERSION {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | bthhfpddi.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthhfpddi\ns-bthhfpddi-_hfp_bypass_codec_id_v1.md">HFP_BYPASS_CODEC_ID_V1</a>
+<a href="..\bthhfpddi\ns-bthhfpddi-_hfp_bypass_codec_id_v1.md">HFP_BYPASS_CODEC_ID_V1</a>
 
 
 

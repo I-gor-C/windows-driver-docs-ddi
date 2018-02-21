@@ -106,9 +106,9 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The NET_DMA_PNP_NOTIFICATION_CODE enumeration is used in the 
+The NET_DMA_PNP_NOTIFICATION_CODE enumeration is used in the 
     <a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">
     NET_DMA_PNP_NOTIFICATION</a> structure.
 
@@ -118,9 +118,9 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
 | **Windows version** | Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. |
 | **Header** | netdma.h (include Netdma.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">NET_DMA_PNP_NOTIFICATION</a>
+<a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">NET_DMA_PNP_NOTIFICATION</a>
 
 
 

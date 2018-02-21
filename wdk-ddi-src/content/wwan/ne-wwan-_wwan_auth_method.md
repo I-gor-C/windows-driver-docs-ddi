@@ -82,9 +82,9 @@ typedef enum _WWAN_AUTH_METHOD {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a> and <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a> structures use this enumeration.
+The <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a> and <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a> structures use this enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,9 +92,9 @@ typedef enum _WWAN_AUTH_METHOD {
 | **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a>
+<a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a>
 
 
 

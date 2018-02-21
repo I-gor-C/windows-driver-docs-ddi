@@ -93,9 +93,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure contains information about the type of PMI event data that is referenced by the <b>Event</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> request.
+The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure contains information about the type of PMI event data that is referenced by the <b>Event</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,9 +103,9 @@ typedef enum  {
 | **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
+<a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
 
 
 

@@ -78,9 +78,9 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an SA is used in the 
+The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an SA is used in the 
     <b>Operation</b> member of the 
     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure.
@@ -91,9 +91,9 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
 | **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
 
 

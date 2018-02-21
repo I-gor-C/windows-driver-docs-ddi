@@ -66,9 +66,9 @@ typedef enum _WDF_REQUEST_FORWARD_OPTIONS_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Currently, drivers must set the WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET flag.
+Currently, drivers must set the WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET flag.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,9 +76,9 @@ typedef enum _WDF_REQUEST_FORWARD_OPTIONS_FLAGS {
 | **Minimum KMDF version** | 1.9 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
 
 
 

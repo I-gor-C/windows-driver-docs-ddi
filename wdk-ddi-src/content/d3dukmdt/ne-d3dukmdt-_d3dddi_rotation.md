@@ -88,9 +88,9 @@ typedef enum _D3DDDI_ROTATION {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 
 
 

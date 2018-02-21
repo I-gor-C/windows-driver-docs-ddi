@@ -131,9 +131,9 @@ typedef enum _EPcMiniportEngineEvent {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.
+The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.
 
 
 <table>
@@ -265,9 +265,9 @@ The following table shows the members of the  EPcMiniportEngineEvent enum that w
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
 
 
 

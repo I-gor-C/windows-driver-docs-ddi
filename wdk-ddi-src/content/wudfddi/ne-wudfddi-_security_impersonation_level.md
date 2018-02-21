@@ -84,9 +84,9 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information about impersonation in the UMDF, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">Handling Client Impersonation</a>.
+For more information about impersonation in the UMDF, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">Handling Client Impersonation</a>.
 
 A UMDF driver supplies one of the values of <b>SECURITY_IMPERSONATION_LEVEL</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a> method to set the security impersonation level.
 
@@ -97,9 +97,9 @@ For more information about the security impersonation levels, see the <b>SECURIT
 | ---- |:---- |
 | **Header** | wudfddi.h (include Wudfddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
 
 
 

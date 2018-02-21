@@ -137,9 +137,9 @@ enum RILPOSITIONINFOUMTSPARAMMASK {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Networks will vary, but the following table summarizes which items are returned for common UMTS networks. 
+Networks will vary, but the following table summarizes which items are returned for common UMTS networks. 
 
 <b>Serving network</b>
 
@@ -547,9 +547,9 @@ No
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
 
 

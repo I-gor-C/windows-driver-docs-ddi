@@ -129,9 +129,9 @@ typedef enum _DXGKMDT_OPM_BUS_TYPE_AND_IMPLEMENTATION {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A graphics adapter's display miniport driver should use one bus type (DXGKMDT_OPM_BUS_TYPE_Xxx) and can also use one optional implementation modifier (DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_Xxx). A graphics adapter must report the DXGKMDT_OPM_BUS_TYPE_OTHER value if its bus cannot be described by any other bus-type value or a combination of a bus-type value and an implementation-modifier value.
+A graphics adapter's display miniport driver should use one bus type (DXGKMDT_OPM_BUS_TYPE_Xxx) and can also use one optional implementation modifier (DXGKMDT_OPM_BUS_IMPLEMENTATION_MODIFIER_Xxx). A graphics adapter must report the DXGKMDT_OPM_BUS_TYPE_OTHER value if its bus cannot be described by any other bus-type value or a combination of a bus-type value and an implementation-modifier value.
 
 OPM stores a bus's characteristics in a 32-bit ULONG value. A graphics adapter's display miniport driver uses the bitwise OR operator (|) to combine a bus-type value, an optional implementation-modifier value, and, possibly, the DXGKMDT_OPM_BUS_IMPLEMENTATION_NON_STANDARD flag. The DXGKMDT_OPM_BUS_IMPLEMENTATION_NON_STANDARD value is optional and is set only if an implementation-modifier value is set. This 32-bit ULONG is used when the Microsoft DirectX graphics kernel subsystem (<i>Dxgkrnl.sys</i>) passes the DXGKMDT_OPM_GET_ADAPTER_BUS_TYPE GUID in a call to the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> or <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> function. The driver sets this 32-bit ULONG in the <b>ulInformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_standard_information.md">DXGKMDT_OPM_STANDARD_INFORMATION</a> structure that is retrieved in the <i>DxgkDdiOPMGetInformation</i> or <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> call. For more information about retrieving the graphics adapter's bus type, see the <a href="https://msdn.microsoft.com/20e268b8-fea0-48dd-a3cd-3cbb4233ef99">Retrieving Information about a Protected Output</a> or <a href="https://msdn.microsoft.com/9114f232-4123-47a8-b43d-62d14b9f6b08">Retrieving COPP-Compatible Information about a Protected Output</a> section.
 
@@ -143,9 +143,9 @@ When a bus-type value (for example, DXGKMDT_OPM_BUS_TYPE_PCI) is combined with a
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_standard_information.md">DXGKMDT_OPM_STANDARD_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_standard_information.md">DXGKMDT_OPM_STANDARD_INFORMATION</a>
 
 
 

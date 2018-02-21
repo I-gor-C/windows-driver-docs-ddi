@@ -109,9 +109,9 @@ typedef enum _NDIS_DEVICE_POWER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Depending on the capabilities of the network adapter and its miniport driver, the device might be able to generate a wake-up signal from device states D0 through D3.
+Depending on the capabilities of the network adapter and its miniport driver, the device might be able to generate a wake-up signal from device states D0 through D3.
 
 <div class="alert"><b>Note</b>  If the wake-up signal is generated from D0, the signal does not cause a system wake-up. However, the wake-up signal can be used to signal a run-time event.</div>
 <div> </div>
@@ -122,9 +122,9 @@ typedef enum _NDIS_DEVICE_POWER_STATE {
 | ---- |:---- |
 | **Header** | ntddndis.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\ns-ndis-_net_pnp_event.md">NET_PNP_EVENT</a>
+<a href="..\ndis\ns-ndis-_net_pnp_event.md">NET_PNP_EVENT</a>
 
 
 

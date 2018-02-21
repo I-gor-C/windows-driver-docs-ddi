@@ -97,9 +97,9 @@ The operating system sets this value only when only full-screen video content is
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more information on usage scenarios involving <b>DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</b> enumeration values, see Remarks in the <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_backlight_optimization.md">DxgkDdiSetBacklightOptimization</a> function.
+For more information on usage scenarios involving <b>DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</b> enumeration values, see Remarks in the <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_backlight_optimization.md">DxgkDdiSetBacklightOptimization</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,9 +107,9 @@ The operating system sets this value only when only full-screen video content is
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_backlight_optimization.md">DxgkDdiSetBacklightOptimization</a>
+<a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_backlight_optimization.md">DxgkDdiSetBacklightOptimization</a>
 
 
 

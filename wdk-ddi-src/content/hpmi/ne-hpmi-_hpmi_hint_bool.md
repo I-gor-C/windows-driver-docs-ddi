@@ -90,9 +90,9 @@ typedef enum _HPMI_HINT_BOOL {
 | **Windows version** | Available in Windows 10, version 1709 and later versions of the Windows operating systems. Available in Windows 10, version 1709 and later versions of the Windows operating systems. |
 | **Header** | hpmi.h (include Hpmi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
+<a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
 
 
 

@@ -97,9 +97,9 @@ typedef enum _PEP_WORK_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        This enumeration is used by the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure to describe the type of work item that the PEP is requesting.
+This enumeration is used by the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure to describe the type of work item that the PEP is requesting.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,9 +107,9 @@ typedef enum _PEP_WORK_TYPE {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
 
 
 

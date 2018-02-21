@@ -76,9 +76,9 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 | ---- |:---- |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
+<a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
 
 
 

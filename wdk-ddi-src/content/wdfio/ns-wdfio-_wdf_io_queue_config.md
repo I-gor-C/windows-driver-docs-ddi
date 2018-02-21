@@ -87,7 +87,7 @@ A Boolean value that, if <b>TRUE</b>, indicates that the queue will be the devic
 
 `DispatchType`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
+A <a href="..\wdfio\ne-wdfio-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
 
 `Driver`
 
@@ -176,7 +176,7 @@ For parallel queues,
 
 
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
+<a href="..\wdfio\ne-wdfio-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
 
 
 

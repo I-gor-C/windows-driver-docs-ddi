@@ -70,9 +70,9 @@ typedef enum D3DDDI_CHECK_DIRECT_FLIP_FLAGS {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\ne-d3dumddi-d3dddi_check_direct_flip_flags.md">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_check_direct_flip_flags.md">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
 
 
 

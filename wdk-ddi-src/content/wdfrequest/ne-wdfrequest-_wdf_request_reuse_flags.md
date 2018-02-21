@@ -80,9 +80,9 @@ typedef enum _WDF_REQUEST_REUSE_FLAGS {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
 
 
 

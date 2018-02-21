@@ -76,9 +76,9 @@ typedef enum _D3DKMT_QUEUEDLIMIT_TYPE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setqueuedlimit.md">D3DKMT_SETQUEUEDLIMIT</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setqueuedlimit.md">D3DKMT_SETQUEUEDLIMIT</a>
 
 
 

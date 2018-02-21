@@ -167,9 +167,9 @@ typedef enum _INDICATION_CODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A value from this enumeration is passed to a profile driver's 
+A value from this enumeration is passed to a profile driver's 
     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a> to notify
     it of an event.
 
@@ -179,9 +179,9 @@ typedef enum _INDICATION_CODE {
 | **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
 
 
 

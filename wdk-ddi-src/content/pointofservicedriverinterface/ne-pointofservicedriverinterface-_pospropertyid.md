@@ -620,9 +620,9 @@ typedef enum _PosPropertyId {
 | ---- |:---- |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>
+<a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>
 
 
 

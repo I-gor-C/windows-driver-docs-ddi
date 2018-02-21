@@ -88,9 +88,9 @@ typedef enum _NDIS_PD_QUEUE_TYPE {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndis\nc-ndis-ndis_pd_allocate_queue.md">NdisPDAllocateQueue</a>
+<a href="..\ndis\nc-ndis-ndis_pd_allocate_queue.md">NdisPDAllocateQueue</a>
 
 
 

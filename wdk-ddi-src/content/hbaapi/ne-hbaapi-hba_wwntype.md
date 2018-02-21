@@ -75,9 +75,9 @@ typedef enum HBA_wwntype {
 | ---- |:---- |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
+<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
 
 
 

@@ -112,9 +112,9 @@ typedef enum _NDK_OPERATION_TYPE {
 | **Windows version** | None supported,Supported in NDIS 6.40 and later. None supported,Supported in NDIS 6.40 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a>
 
 
 

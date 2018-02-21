@@ -93,9 +93,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ksmedia\ns-ksmedia-_ks_dvdcopy_set_copy_state.md">KS_DVDCOPY_SET_COPY_STATE</a>
+<a href="..\ksmedia\ns-ksmedia-_ks_dvdcopy_set_copy_state.md">KS_DVDCOPY_SET_COPY_STATE</a>
 
 
 

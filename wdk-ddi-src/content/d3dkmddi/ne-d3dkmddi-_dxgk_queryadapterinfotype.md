@@ -221,9 +221,9 @@ Supported starting with Windows 10.</td>
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The display miniport driver must fill the buffer pointed to by the <b>pOutputData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a> structure as follows:
+The display miniport driver must fill the buffer pointed to by the <b>pOutputData</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a> structure as follows:
 
 <table>
 <tr>
@@ -266,9 +266,9 @@ Supported starting with Windows 10.</td>
 | **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 
 
 

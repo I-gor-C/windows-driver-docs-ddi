@@ -119,9 +119,9 @@ enum RILC2KMRLPARAMMASK {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Networks will vary, but the following table summarizes which items are returned for typical CDMA networks.
+Networks will vary, but the following table summarizes which items are returned for typical CDMA networks.
 
 <b>Serving and neighbor networks</b> (subject to availability from network)
 
@@ -301,9 +301,9 @@ Yes
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
 
 
 

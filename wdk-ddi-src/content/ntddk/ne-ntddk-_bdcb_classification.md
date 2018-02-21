@@ -94,9 +94,9 @@ typedef enum _BDCB_CLASSIFICATION {
 | **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
 
 
 

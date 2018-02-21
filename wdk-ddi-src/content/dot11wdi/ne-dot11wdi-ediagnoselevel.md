@@ -88,9 +88,9 @@ typedef enum _eDiagnoseLevel {
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_adapter_hang_diagnose.md">MiniportWdiAdapterHangDiagnose</a>
+<a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_adapter_hang_diagnose.md">MiniportWdiAdapterHangDiagnose</a>
 
 
 

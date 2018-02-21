@@ -139,9 +139,9 @@ typedef enum FWPS_FIELDS_ALE_BIND_REDIRECT_V4_ {
 | **Windows version** | Unless otherwise noted, supported starting with Windows 7. Unless otherwise noted, supported starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
 
 

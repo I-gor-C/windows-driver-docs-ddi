@@ -71,9 +71,9 @@ enum D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG {
 | **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels(D3D11_2)</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels(D3D11_2)</a>
 
 
 

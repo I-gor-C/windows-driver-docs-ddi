@@ -84,9 +84,9 @@ typedef enum _STI_DEVICE_MJ_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following macros are used to extract the major device type and subtype:
+The following macros are used to extract the major device type and subtype:
 
 <div class="code"><span codelanguage=""><table>
 <tr>

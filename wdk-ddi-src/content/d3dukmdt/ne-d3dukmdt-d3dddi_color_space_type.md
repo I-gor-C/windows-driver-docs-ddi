@@ -712,9 +712,9 @@ This colorspace can be used as an input to the video processor DDIs, but will ne
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The following color parameters are defined:
+The following color parameters are defined:
 
 
 

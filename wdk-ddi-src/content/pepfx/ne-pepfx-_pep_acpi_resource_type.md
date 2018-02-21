@@ -124,9 +124,9 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
+<a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
 
 
 

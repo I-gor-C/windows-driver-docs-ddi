@@ -99,9 +99,9 @@ typedef enum DVD_STRUCTURE_FORMAT {
 | ---- |:---- |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
+<a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
 
 
 

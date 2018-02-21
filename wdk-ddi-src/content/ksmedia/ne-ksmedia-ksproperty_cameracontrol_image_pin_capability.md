@@ -69,9 +69,9 @@ typedef enum _KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY {
 | ---- |:---- |
 | **Header** | ksmedia.h |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/jj553706">KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj553706">KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY</a>
 
 
 

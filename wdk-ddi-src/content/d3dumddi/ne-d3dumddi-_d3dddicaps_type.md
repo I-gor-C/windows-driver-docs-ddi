@@ -427,9 +427,9 @@ For more information, see <a href="https://msdn.microsoft.com/770e0fce-d3b5-4599
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For information on how to specify <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> member values along with <b>D3DDDICAPS_TYPE</b> constant values, see Remarks of <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>.
+For information on how to specify <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> member values along with <b>D3DDDICAPS_TYPE</b> constant values, see Remarks of <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -437,9 +437,9 @@ For more information, see <a href="https://msdn.microsoft.com/770e0fce-d3b5-4599
 | **Windows version** | Supported starting with  Windows Vista. Supported starting with  Windows Vista. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
 
 

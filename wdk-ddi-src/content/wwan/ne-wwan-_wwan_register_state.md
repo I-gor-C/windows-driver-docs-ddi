@@ -110,9 +110,9 @@ typedef enum _WWAN_REGISTER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The current registration state is typically reflected in the device's user interface.
+The current registration state is typically reflected in the device's user interface.
 
 The 
     <b>WwanRegisterStatePartner</b> value indicates that the device is roaming on a preferred partner network,
@@ -127,9 +127,9 @@ The
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
+<a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
 
 
 

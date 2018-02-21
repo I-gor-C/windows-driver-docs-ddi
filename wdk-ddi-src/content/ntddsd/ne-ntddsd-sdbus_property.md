@@ -160,9 +160,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        To read or set a property on an SD device, a device driver must do the following:
+To read or set a property on an SD device, a device driver must do the following:
 
 <ol>
 <li>
@@ -184,9 +184,9 @@ Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACK
 | ---- |:---- |
 | **Header** | ntddsd.h (include Ntddsd.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
 
 
 

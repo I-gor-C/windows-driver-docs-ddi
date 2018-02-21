@@ -99,9 +99,9 @@ typedef enum _TRACK_MODE_TYPE {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddcdrm\ns-ntddcdrm-__raw_read_info.md">RAW_READ_INFO</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-__raw_read_info.md">RAW_READ_INFO</a>
 
 
 

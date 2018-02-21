@@ -82,9 +82,9 @@ Supported starting with Windows 8.1 for WDDM 1.3 and later user-mode display dr
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_flush.md">Flush(D3D11_1)</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_flush.md">Flush(D3D11_1)</a>
 
 
 

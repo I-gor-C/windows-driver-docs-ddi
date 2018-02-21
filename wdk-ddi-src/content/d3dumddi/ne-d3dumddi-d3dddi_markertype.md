@@ -78,9 +78,9 @@ See Remarks of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setmarkermode.md">
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setmarkermode.md">pfnSetMarkerMode</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setmarkermode.md">pfnSetMarkerMode</a>
 
 
 

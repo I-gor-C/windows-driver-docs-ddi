@@ -185,9 +185,9 @@ typedef enum _EXT_TDOP {
 | ---- |:---- |
 | **Header** | wdbgexts.h (include WdbgExts.h, DbgEng.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdbgexts\ns-wdbgexts-_ext_typed_data.md">EXT_TYPED_DATA</a>
+<a href="..\wdbgexts\ns-wdbgexts-_ext_typed_data.md">EXT_TYPED_DATA</a>
 
 
 

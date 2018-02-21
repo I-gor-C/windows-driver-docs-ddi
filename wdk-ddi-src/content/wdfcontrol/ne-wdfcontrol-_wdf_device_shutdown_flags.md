@@ -72,9 +72,9 @@ typedef enum _WDF_DEVICE_SHUTDOWN_FLAGS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter to <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>.
+The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter to <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,9 +82,9 @@ typedef enum _WDF_DEVICE_SHUTDOWN_FLAGS {
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfcontrol.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>
+<a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>
 
 
 

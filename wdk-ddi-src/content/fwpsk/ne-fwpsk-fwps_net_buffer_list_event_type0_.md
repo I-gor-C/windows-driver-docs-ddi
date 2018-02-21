@@ -221,9 +221,9 @@ Upon asynchronous context removal resulting from a call to the
 | **Windows version** | Unless otherwise indicated, supported starting with  Windows Vista. Unless otherwise indicated, supported starting with  Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">
+<a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">
   FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>
 
 

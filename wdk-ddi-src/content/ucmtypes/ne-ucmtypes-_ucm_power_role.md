@@ -85,9 +85,9 @@ typedef enum _UCM_POWER_ROLE {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/mt187914">UcmConnectorPowerDirectionChanged</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187914">UcmConnectorPowerDirectionChanged</a>
 
 
 

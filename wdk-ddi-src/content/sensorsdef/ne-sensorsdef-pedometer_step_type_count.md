@@ -70,9 +70,9 @@ typedef enum _PEDOMETER_STEP_TYPE_COUNT {
 | ---- |:---- |
 | **Header** | sensorsdef.h |
 
-    ## See Also
+## See Also
 
-        <a href="..\sensorsdef\ne-sensorsdef-pedometer_step_type.md">PEDOMETER_STEP_TYPE</a>
+<a href="..\sensorsdef\ne-sensorsdef-pedometer_step_type.md">PEDOMETER_STEP_TYPE</a>
 
 
 

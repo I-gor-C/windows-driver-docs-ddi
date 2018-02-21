@@ -105,9 +105,9 @@ typedef enum _KEY_SET_INFORMATION_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can receive a pointer to a <b>KEY_SET_INFORMATION_CLASS</b> structure as an input parameter.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can receive a pointer to a <b>KEY_SET_INFORMATION_CLASS</b> structure as an input parameter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -115,9 +115,9 @@ typedef enum _KEY_SET_INFORMATION_CLASS {
 | **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a>
 
 
 

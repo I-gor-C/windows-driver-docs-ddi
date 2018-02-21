@@ -75,18 +75,18 @@ typedef enum _DETECTION_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format.
+Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
 
 
 

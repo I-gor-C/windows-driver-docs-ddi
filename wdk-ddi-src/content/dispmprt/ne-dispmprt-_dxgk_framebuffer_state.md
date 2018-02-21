@@ -75,9 +75,9 @@ typedef enum _DXGK_FRAMEBUFFER_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        FrameBufferStateUnknown will be reported if the frame buffer state is undefined, or if the frame buffer has been initialized but may have been changed by the Basic Display Driver.  The other two states should only be reported if that state is reliable.
+FrameBufferStateUnknown will be reported if the frame buffer state is undefined, or if the frame buffer has been initialized but may have been changed by the Basic Display Driver.  The other two states should only be reported if that state is reliable.
 
 ## Requirements
 | &nbsp; | &nbsp; |

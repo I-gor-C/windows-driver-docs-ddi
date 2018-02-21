@@ -146,9 +146,9 @@ typedef enum FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ {
 | **Windows version** | Windows 7 Windows 7 |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\fwpsk\ne-fwpsk-fwps_fields_inbound_mac_frame_ethernet_.md">FWPS_FIELDS_INBOUND_MAC_FRAME_ETHERNET</a>
+<a href="..\fwpsk\ne-fwpsk-fwps_fields_inbound_mac_frame_ethernet_.md">FWPS_FIELDS_INBOUND_MAC_FRAME_ETHERNET</a>
 
 
 

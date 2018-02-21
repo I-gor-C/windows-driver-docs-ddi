@@ -425,9 +425,9 @@ enum REG_NOTIFY_CLASS {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        When the configuration manager calls a driver's <i>RegistryCallback</i> routine, it passes a <b>REG_NOTIFY_CLASS</b> enumeration value to the routine. The configuration manager also passes a notification-specific structure that contains information about the notification. For a list of these structures, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>.
+When the configuration manager calls a driver's <i>RegistryCallback</i> routine, it passes a <b>REG_NOTIFY_CLASS</b> enumeration value to the routine. The configuration manager also passes a notification-specific structure that contains information about the notification. For a list of these structures, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -435,9 +435,9 @@ enum REG_NOTIFY_CLASS {
 | **Windows version** | Available for Windows XP and later versions of the Windows operating system, but some enumeration values are available only for specified later versions of the Windows operating system. Available for Windows XP and later versions of the Windows operating system, but some enumeration values are available only for specified later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
+<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
 
 
 

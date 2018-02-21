@@ -99,18 +99,18 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
+The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ks.h (include Ks.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a>
+<a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a>
 
 
 

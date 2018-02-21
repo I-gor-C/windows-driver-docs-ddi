@@ -75,9 +75,9 @@ typedef enum _BTHX_HCI_PACKET_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The IOCTL_BTHX_HCI_READ and IOCTL_BTHX_HCI_WRITE IOCTLs are used to read/write data to/from the transport driver. The BTHX_HCI_PACKET_TYPE enumeration is used to specify with which type of packet the read/write is associated.
+The IOCTL_BTHX_HCI_READ and IOCTL_BTHX_HCI_WRITE IOCTLs are used to read/write data to/from the transport driver. The BTHX_HCI_PACKET_TYPE enumeration is used to specify with which type of packet the read/write is associated.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,9 +85,9 @@ typedef enum _BTHX_HCI_PACKET_TYPE {
 | **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE</a>
+<a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE</a>
 
 
 

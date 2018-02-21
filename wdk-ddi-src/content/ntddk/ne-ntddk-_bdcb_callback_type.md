@@ -69,9 +69,9 @@ typedef enum _BDCB_CALLBACK_TYPE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The two callback types have unique context structures that provide additional information specific to the callback.
+The two callback types have unique context structures that provide additional information specific to the callback.
 
 <table>
 <tr>
@@ -110,9 +110,9 @@ BdCbInitializeImage
 | **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
+<a href="..\ntddk\ne-ntddk-_bdcb_classification.md">BDCB_CLASSIFICATION</a>
 
 
 

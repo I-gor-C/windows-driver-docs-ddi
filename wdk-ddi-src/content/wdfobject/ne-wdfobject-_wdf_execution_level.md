@@ -84,9 +84,9 @@ typedef enum _WDF_EXECUTION_LEVEL {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
+Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 You can specify an <b>ExecutionLevel</b> value for the following objects:
 
@@ -131,9 +131,9 @@ For more information about execution levels for event callback functions, see <a
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 
 

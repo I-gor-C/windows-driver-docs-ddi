@@ -81,9 +81,9 @@ typedef enum  {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        For more info on how the driver uses these enumeration values with reporting calls to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_statistic.md">ReportStatistic</a> callback function, see <a href="https://msdn.microsoft.com/E1CE637F-42ED-4BEB-A2FF-04B4B88469DC">Reporting Miracast encode chunks and statistics</a>.
+For more info on how the driver uses these enumeration values with reporting calls to the <a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_statistic.md">ReportStatistic</a> callback function, see <a href="https://msdn.microsoft.com/E1CE637F-42ED-4BEB-A2FF-04B4B88469DC">Reporting Miracast encode chunks and statistics</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,9 +91,9 @@ typedef enum  {
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_statistic.md">ReportStatistic</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_statistic.md">ReportStatistic</a>
 
 
 

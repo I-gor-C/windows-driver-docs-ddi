@@ -85,9 +85,9 @@ typedef enum _UCM_PD_POWER_DATA_OBJECT_TYPE {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\ucmtypes\nf-ucmtypes-ucm_pd_power_data_object_get_type.md">UCM_PD_POWER_DATA_OBJECT_GET_TYPE</a>
+<a href="..\ucmtypes\nf-ucmtypes-ucm_pd_power_data_object_get_type.md">UCM_PD_POWER_DATA_OBJECT_GET_TYPE</a>
 
 
 

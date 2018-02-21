@@ -77,9 +77,9 @@ typedef enum _DOT11_POWER_MODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        An 802.11 station advertises its power management mode through the Power Management subfield of the
+An 802.11 station advertises its power management mode through the Power Management subfield of the
     Frame Control field in the 802.11 MAC header of transmitted frames. For more information about the Power
     Management subfield, refer to Clause 8.2.4.1.7 of the IEEE 802.11-2012 standard.
 
@@ -89,9 +89,9 @@ typedef enum _DOT11_POWER_MODE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569359">OID_DOT11_ENUM_ASSOCIATION_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569359">OID_DOT11_ENUM_ASSOCIATION_INFO</a>
 
 
 

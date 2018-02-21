@@ -81,9 +81,9 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a> structure contains a <b>PEP_PROCESSOR_IDLE_CANCEL_CODE</b> enumeration value.
+The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a> structure contains a <b>PEP_PROCESSOR_IDLE_CANCEL_CODE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,9 +91,9 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
-    ## See Also
+## See Also
 
-        <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a>
+<a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a>
 
 
 

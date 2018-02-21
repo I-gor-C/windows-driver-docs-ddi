@@ -105,9 +105,9 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 | **Windows version** | Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-    ## See Also
+## See Also
 
-        <a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
 
 
 

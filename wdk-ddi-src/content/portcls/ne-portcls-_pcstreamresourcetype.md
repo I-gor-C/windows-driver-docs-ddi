@@ -75,9 +75,9 @@ typedef enum PcStreamResourceType {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it.
+Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. Two type of stream resources are supported: interrupts and driver-owned threads. Audio drivers should register a resource after creating the resource, and unregister the resource before deleted it.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -990,9 +990,9 @@ typedef enum _WDF_DEVICE_POWER_POLICY_STATE {
                 </tr>
 </table>
 
-    ## Remarks
+## Remarks
 
-        The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> method.
+The WDF_DEVICE_POWER_POLICY_STATE enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
