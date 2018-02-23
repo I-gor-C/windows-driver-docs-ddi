@@ -7,8 +7,8 @@ old-location: sensors\gnss_event_type.htm
 old-project: sensors
 ms.assetid: BC862E22-992E-497D-B370-97ABE8897728
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: gnssdriver/GNSS_Event_NiRequest, GNSS_Event_BreadcrumbAlertEvent, GNSS_Event_DriverRequest, gnssdriver/GNSS_Event_RequireAgnss, gnssdriver/GNSS_Event_NmeaData, gnssdriver/GNSS_Event_GeofencesTrackingStatus, gnssdriver/GNSS_Event_Custom, GNSS_Event_NmeaData, GNSS_EVENT_TYPE enumeration [Sensor Devices], gnssdriver/GNSS_Event_GeofenceAlertData, GNSS_Event_RequireAgnss, gnssdriver/GNSS_Event_Error, GNSS_Event_FixAvailable, GNSS_Event_GeofencesTrackingStatus, GNSS_Event_Custom, GNSS_Event_Error, sensors.gnss_event_type, GNSS_Event_GeofenceAlertData, gnssdriver/GNSS_Event_FixAvailable, GNSS_EVENT_TYPE, gnssdriver/GNSS_EVENT_TYPE, GNSS_Event_NiRequest, gnssdriver/GNSS_Event_BreadcrumbAlertEvent, gnssdriver/GNSS_Event_DriverRequest
+ms.date: 2/15/2018
+ms.keywords: GNSS_Event_GeofencesTrackingStatus, gnssdriver/GNSS_Event_Error, gnssdriver/GNSS_Event_FixAvailable, gnssdriver/GNSS_Event_DriverRequest, GNSS_Event_FixAvailable, GNSS_Event_BreadcrumbAlertEvent, GNSS_EVENT_TYPE enumeration [Sensor Devices], GNSS_Event_NiRequest, gnssdriver/GNSS_Event_NmeaData, gnssdriver/GNSS_Event_NiRequest, gnssdriver/GNSS_Event_Custom, GNSS_Event_NmeaData, sensors.gnss_event_type, gnssdriver/GNSS_Event_GeofenceAlertData, gnssdriver/GNSS_Event_BreadcrumbAlertEvent, gnssdriver/GNSS_EVENT_TYPE, GNSS_Event_DriverRequest, GNSS_Event_Error, GNSS_Event_GeofenceAlertData, GNSS_Event_RequireAgnss, gnssdriver/GNSS_Event_RequireAgnss, gnssdriver/GNSS_Event_GeofencesTrackingStatus, GNSS_EVENT_TYPE, GNSS_Event_Custom
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -71,6 +71,7 @@ typedef enum  {
                 <tr>
                     <td>GNSS_Event_BreadcrumbAlertEvent</td>
                     <td>Reserved for future extension:
+
 <table>
 <tr>
 <td>
@@ -88,6 +89,7 @@ For each new event type, there will be a well-defined IOCTL describing the initi
                 <tr>
                     <td>GNSS_Event_Custom</td>
                     <td>Reserved for vendor-specific custom actions:
+
 <table>
 <tr>
 <td>

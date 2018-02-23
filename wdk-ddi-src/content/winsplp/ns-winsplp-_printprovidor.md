@@ -7,8 +7,8 @@ old-location: print\printprovidor.htm
 old-project: print
 ms.assetid: c030cb9d-23c0-4d0e-970f-f447e9af7528
 ms.author: windowsdriverdev
-ms.date: 2/2/2018
-ms.keywords: print.printprovidor, PRINTPROVIDOR, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, LPPRINTPROVIDOR, PRINTPROVIDOR structure [Print Devices], winsplp/LPPRINTPROVIDOR, winsplp/PRINTPROVIDOR, LPPRINTPROVIDOR structure pointer [Print Devices], _PRINTPROVIDOR, *LPPRINTPROVIDOR
+ms.date: 2/21/2018
+ms.keywords: winsplp/LPPRINTPROVIDOR, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, *LPPRINTPROVIDOR, winsplp/PRINTPROVIDOR, LPPRINTPROVIDOR structure pointer [Print Devices], _PRINTPROVIDOR, print.printprovidor, PRINTPROVIDOR structure [Print Devices], LPPRINTPROVIDOR, PRINTPROVIDOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -729,7 +729,7 @@ For internal use only. Must be <b>NULL</b>.
 
 `fpFindFirstPrinterChangeNotification`
 
-(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a> function (described in the Windows SDK documentation).
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>FindFirstPrinterChangeNotification</b> function (described in the Windows SDK documentation).
 
 `fpFlushPrinter`
 
@@ -839,7 +839,7 @@ Not used. Must be <b>NULL</b>.
 
 `fpRefreshPrinterChangeNotification`
 
-(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function.
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>RefreshPrinterChangeNotification</b> function.
 
 `fpReportJobProcessingProgress`
 
@@ -915,7 +915,7 @@ Obsolete. Must be <b>NULL</b>.
 
 `fpXcvData`
 
-(Optional. Can be <b>NULL</b>.) Pointer to the provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function.
+(Optional. Can be <b>NULL</b>.) Pointer to the provider's <b>XcvData</b> function.
 
 ## Remarks
 Function pointers are listed in the order they are specified within the PRINTPROVIDOR structure. To see function descriptions grouped by related capabilities, see <a href="https://msdn.microsoft.com/4fae4b69-ed4b-47b6-b6e8-41733aed51a5">Functions Defined by Print Providers</a>.
@@ -931,7 +931,7 @@ Function pointers are listed in the order they are specified within the PRINTPRO
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
 
 
 
@@ -943,7 +943,7 @@ Function pointers are listed in the order they are specified within the PRINTPRO
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>
 
 
 
@@ -951,4 +951,4 @@ Function pointers are listed in the order they are specified within the PRINTPRO
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PRINTPROVIDOR structure%20 RELEASE:%20(2/2/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PRINTPROVIDOR structure%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

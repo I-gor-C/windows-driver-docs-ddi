@@ -29,6 +29,9 @@ swenum.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
+| [PFNDEREFERENCEDEVICEOBJECT](nc-swenum-pfndereferencedeviceobject.md) | The driver can use this routine to decrement the reference count of the PDO. |
+| [PFNQUERYREFERENCESTRING](nc-swenum-pfnqueryreferencestring.md) | This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using ExFreePool. |
+| [PFNREFERENCEDEVICEOBJECT](nc-swenum-pfnreferencedeviceobject.md) | The driver can use this routine to increment the reference count of the PDO. |
 | [KsCreateBusEnumObject](nf-swenum-kscreatebusenumobject.md) | The KsCreateBusEnumObject function creates a demand-load bus enumerator object and initializes it for use with the demand-load bus enumerator services. |
 | [KsDereferenceSoftwareBusObject](nf-swenum-ksdereferencesoftwarebusobject.md) | The KsDereferenceSoftwareBusObject function decrements the reference count of the demand-load bus enumerator object's PDO. |
 | [KsGetBusEnumIdentifier](nf-swenum-ksgetbusenumidentifier.md) | The KsGetBusEnumIdentifier function retrieves the software bus enumerator identifier for the bus device associated with the given IRP. |

@@ -7,8 +7,8 @@ old-location: kernel\mmmaplockedpagesspecifycache.htm
 old-project: kernel
 ms.assetid: fb759043-ffdf-4edf-819b-669631927bc5
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: MmMapLockedPagesSpecifyCache, MmMapLockedPagesSpecifyCache routine [Kernel-Mode Driver Architecture], kernel.mmmaplockedpagesspecifycache, wdm/MmMapLockedPagesSpecifyCache, k106_337c0e8a-c098-46a8-b820-db78be002148.xml
+ms.date: 2/16/2018
+ms.keywords: MmMapLockedPagesSpecifyCache routine [Kernel-Mode Driver Architecture], kernel.mmmaplockedpagesspecifycache, wdm/MmMapLockedPagesSpecifyCache, k106_337c0e8a-c098-46a8-b820-db78be002148.xml, MmMapLockedPagesSpecifyCache
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -73,7 +73,7 @@ Specifies the access mode in which to map the MDL: <b>KernelMode</b> or <b>UserM
 
 `CacheType`
 
-Specifies a <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the MDL. For more information, see the following Remarks section.
+Specifies a <a href="..\wudfwdm\ne-wudfwdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the MDL. For more information, see the following Remarks section.
 
 `RequestedAddress`
 
@@ -139,7 +139,7 @@ If <i>AccessMode</i> is <b>UserMode</b>, the caller must be running at IRQL &lt;
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
 
 
@@ -147,11 +147,11 @@ If <i>AccessMode</i> is <b>UserMode</b>, the caller must be running at IRQL &lt;
 
 
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
 
 
 
-<a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
 
 
 
@@ -159,7 +159,7 @@ If <i>AccessMode</i> is <b>UserMode</b>, the caller must be running at IRQL &lt;
 
 
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
+<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
 
 
@@ -167,4 +167,4 @@ If <i>AccessMode</i> is <b>UserMode</b>, the caller must be running at IRQL &lt;
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapLockedPagesSpecifyCache routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmMapLockedPagesSpecifyCache routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

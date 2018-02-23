@@ -86,6 +86,8 @@ winsplp.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
+| [_ATTRIBUTE_INFO_3](ns-winsplp-_attribute_info_3.md) | The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied. |
+| [_ATTRIBUTE_INFO_4](ns-winsplp-_attribute_info_4.md) | The ATTRIBUTE_INFO_4 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. |
 | [_MONITOR](ns-winsplp-_monitor.md) | The MONITOR structure is obsolete and is supported only for compatibility reasons. |
 | [_MONITOR2](ns-winsplp-_monitor2.md) | The MONITOR2 structure contains pointers to the functions defined by print monitors. |
 | [_MONITOREX](ns-winsplp-_monitorex.md) | The MONITOREX structure is obsolete and supported for compatibility purposes only. |

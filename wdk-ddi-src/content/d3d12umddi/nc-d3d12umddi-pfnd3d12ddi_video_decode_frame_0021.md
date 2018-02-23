@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_decode_frame.htm
 old-project: display
 ms.assetid: 8EA34C58-9B2D-4B69-ABAB-D67F6BCD6229
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 2/20/2018
 ms.keywords: display.pfnd3d12ddi_video_decode_frame, pfnDecodeFrame callback function [Display Devices], pfnDecodeFrame, PFND3D12DDI_VIDEO_DECODE_FRAME_0021, PFND3D12DDI_VIDEO_DECODE_FRAME_0021, d3d12umddi/pfnDecodeFrame
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -95,23 +95,3 @@ This callback function does not return a value.
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-
-## See Also
-
-<a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_video_decoder_trim_allocations_0021.md">pfnDecoderTrimAllocations</a>
-
-
-
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_input_stream_arguments_0020.md">D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS</a>
-
-
-
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_output_stream_arguments_0021.md">D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D12DDI_VIDEO_DECODE_FRAME_0021 callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

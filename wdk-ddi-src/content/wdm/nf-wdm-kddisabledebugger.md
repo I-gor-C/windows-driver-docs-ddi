@@ -7,8 +7,8 @@ old-location: devtest\kddisabledebugger.htm
 old-project: devtest
 ms.assetid: 491f1b10-342d-4edf-9b70-732f9d4755f2
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: KdDisableDebugger
+ms.date: 2/20/2018
+ms.keywords: KdDisableDebugger routine [Driver Development Tools], devtest.kddisabledebugger, DebugFns_e280d38c-6f87-4540-a782-d7669815a0f5.xml, wdm/KdDisableDebugger, KdDisableDebugger
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt: Available in Microsoft Windows 2000 and later version
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: KdDisableDebugger
-req.alt-loc: NtosKrnl.exe
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -31,6 +29,17 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KdDisableDebugger
+product: Windows
+targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
@@ -50,18 +59,6 @@ NTSTATUS KdDisableDebugger(void);
 This function has no parameters.
 
 ## Return Value
-
-<b>KdDisableDebugger</b> returns STATUS_SUCCESS if the kernel debugger was successfully disabled. Otherwise, the return value can be one of the following error status codes:
-
-STATUS_ACCESS_DENIED
-
-STATUS_DEBUGGER_INACTIVE
-
-<b>KdDisableDebugger</b> returns STATUS_SUCCESS if the kernel debugger was successfully disabled. Otherwise, the return value can be one of the following error status codes:
-
-STATUS_ACCESS_DENIED
-
-STATUS_DEBUGGER_INACTIVE
 
 <b>KdDisableDebugger</b> returns STATUS_SUCCESS if the kernel debugger was successfully disabled. Otherwise, the return value can be one of the following error status codes:
 
@@ -89,13 +86,12 @@ After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, th
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-kdenabledebugger.md">KdEnableDebugger</a>
-</dt>
-</dl>
- 
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20KdDisableDebugger routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20KdDisableDebugger routine%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

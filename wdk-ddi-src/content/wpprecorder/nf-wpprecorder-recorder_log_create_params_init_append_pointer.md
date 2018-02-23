@@ -7,8 +7,8 @@ old-location: devtest\recorder_log_create_params_init_append_pointer.htm
 old-project: devtest
 ms.assetid: EC94E27C-C863-49F0-B13C-B661E96991B7
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER
+ms.date: 2/20/2018
+ms.keywords: devtest.recorder_log_create_params_init_append_pointer, wpprecorder/RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER, RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER, RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER function [Driver Development Tools]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER
-req.alt-loc: wpprecorder.h
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -28,10 +26,21 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: NtosKrnl.exe
 req.dll: 
 req.irql: 
-req.typenames: *PWNODE_HEADER, WNODE_HEADER
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wpprecorder.h
+apiname:
+-	RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER
+product: Windows
+targetos: Windows
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
@@ -74,3 +83,4 @@ This function does not return a value.
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
+| **Library** | NtosKrnl.exe |

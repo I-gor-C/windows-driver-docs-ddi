@@ -7,8 +7,8 @@ old-location: bltooth\_brb_l2ca_open_channel.htm
 old-project: bltooth
 ms.assetid: 16f79360-c8fd-4be9-9c94-7fa2a1d8c6b5
 ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: "_BRB_L2CA_OPEN_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_OPEN_CHANNEL, _BRB_L2CA_OPEN_CHANNEL, bth_structs_342ad84f-74fb-481f-b549-8f87c375c4d1.xml, bltooth._brb_l2ca_open_channel"
+ms.date: 2/15/2018
+ms.keywords: bthddi/_BRB_L2CA_OPEN_CHANNEL, bltooth._brb_l2ca_open_channel, bth_structs_342ad84f-74fb-481f-b549-8f87c375c4d1.xml, _BRB_L2CA_OPEN_CHANNEL structure [Bluetooth Devices], _BRB_L2CA_OPEN_CHANNEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -243,10 +243,168 @@ The profile driver indicates its preference that users not be prompted for a PIN
 The substructure that contains parameter settings to validate incoming
      <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b> BRBs that are sent from a remote device.
 
+
+
+#### Flags
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+      the following table:
+      
+
+<table>
+<tr>
+<td>
+<b>Flag</b>
+
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+#### Mtu
+
+The range of message transfer units (MTUs) that is used to negotiate the size of the outbound
+      half of channel.
+
+
+
+#### FlushTO
+
+The range of possible values to be used for the flush timeout for the outbound half of the
+      channel.
+
 `ConfigOut`
 
 The substructure that contains parameter settings for a <b>BRB_L2CA_OPEN_CHANNEL</b> BRB sent to a remote
      device.
+
+
+
+#### Flags
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+      the following table:
+      
+
+<table>
+<tr>
+<td>
+<b>Flag</b>
+
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+#### Mtu
+
+The range of message transfer units (MTUs) that is used to negotiate the size of the outbound
+      half of channel.
+
+
+
+#### FlushTO
+
+The range of possible values to be used for the flush timeout for the outbound half of the
+      channel.
+
+
+
+#### Flow
+
+Reserved for future use. Do not use.
+
+
+
+#### LinkTO
+
+The Link Manager link timeout.
+
+
+
+#### NumExtraOptions
+
+The number of array items that are contained in the 
+      <b>ExtraOptions</b> member. This value should be zero for most clients.
+
+
+
+#### ExtraOptions
+
+The number of array items that are contained in the 
+      <b>ExtraOptions</b> member. This value should be zero for most clients.
 
 `Hdr`
 
@@ -359,11 +517,15 @@ Profile drivers must allocate the memory to store the array that is stored in th
 
 
 
-<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
+<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
+<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 
 
@@ -371,7 +533,7 @@ Profile drivers must allocate the memory to store the array that is stored in th
 
 
 
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536618">BRB_L2CA_REGISTER_SERVER</a>
 
 
 
@@ -383,11 +545,11 @@ Profile drivers must allocate the memory to store the array that is stored in th
 
 
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536618">BRB_L2CA_REGISTER_SERVER</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
 
 
-<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
+<a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a>
 
 
 
@@ -395,12 +557,8 @@ Profile drivers must allocate the memory to store the array that is stored in th
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_OPEN_CHANNEL structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_OPEN_CHANNEL structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

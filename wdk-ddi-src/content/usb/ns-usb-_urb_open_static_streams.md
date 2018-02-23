@@ -4,11 +4,11 @@ title: "_URB_OPEN_STATIC_STREAMS"
 author: windows-driver-content
 description: The _URB_OPEN_STATIC_STREAMS structure is used by a USB client driver to open streams in the specified bulk endpoint.
 old-location: buses\_urb_open_basic_streams.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: B3C329D6-541B-410D-A9AB-AF91F1141DFD
 ms.author: windowsdriverdev
-ms.date: 2/8/2018
-ms.keywords: buses._urb_open_basic_streams, usb/_URB_OPEN_STATIC_STREAMS, _URB_OPEN_STATIC_STREAMS, _URB_OPEN_STATIC_STREAMS structure [Buses]
+ms.date: 2/15/2018
+ms.keywords: "_URB_OPEN_STATIC_STREAMS, _URB_OPEN_STATIC_STREAMS structure [Buses], buses._urb_open_basic_streams, usb/_URB_OPEN_STATIC_STREAMS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -64,10 +64,6 @@ struct _URB_OPEN_STATIC_STREAMS {
 ## Members
 
 
-`_URB_HEADER`
-
-
-
 `Hdr`
 
 The <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must be URB_FUNCTION_OPEN_STATIC_STREAMS, and <b>Hdr.Length</b> must be <code>sizeof(_URB_OPEN_STATIC_STREAMS)</code>.
@@ -116,11 +112,11 @@ When the client driver is finished using the streams, the driver can close all s
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
-
-
 <a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 
 
@@ -132,4 +128,4 @@ When the client driver is finished using the streams, the driver can close all s
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_OPEN_STATIC_STREAMS structure%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20_URB_OPEN_STATIC_STREAMS structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

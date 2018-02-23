@@ -7,8 +7,8 @@ old-location: display\d3dkmt_workingsetflags.htm
 old-project: display
 ms.assetid: 05dddebc-2a30-4cc5-b905-9ee4ebf8d00e
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, d3dkmthk/D3DKMT_WORKINGSETFLAGS, D3DKMT_WORKINGSETFLAGS structure [Display Devices], display.d3dkmt_workingsetflags, _D3DKMT_WORKINGSETFLAGS, D3DKMT_WORKINGSETFLAGS
+ms.date: 2/20/2018
+ms.keywords: D3DKMT_WORKINGSETFLAGS structure [Display Devices], _D3DKMT_WORKINGSETFLAGS, d3dkmthk/D3DKMT_WORKINGSETFLAGS, OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, display.d3dkmt_workingsetflags, D3DKMT_WORKINGSETFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,11 +76,11 @@ Setting this member is equivalent to setting the first bit of a 32-bit value (0x
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
-
-
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
 
 
 
@@ -92,4 +92,4 @@ Setting this member is equivalent to setting the first bit of a 32-bit value (0x
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_WORKINGSETFLAGS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_WORKINGSETFLAGS structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

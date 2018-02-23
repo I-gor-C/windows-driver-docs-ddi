@@ -7,8 +7,8 @@ old-location: storage\hybrid_information.htm
 old-project: storage
 ms.assetid: 5CD8E422-8CEE-43E8-9703-520FDBE6BF5E
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: NvCacheStatusDisabling, ntddscsi/HYBRID_INFORMATION, ntddscsi/PHYBRID_INFORMATION, NvCacheNone, NvCacheTypeUnknown, NvCacheTypeWriteThrough, storage.hybrid_information, HYBRID_INFORMATION, HYBRID_INFORMATION structure [Storage Devices], NvCacheStatusDisabled, NvCacheStatusUnknown, NvCacheTypeWriteBack, NvCacheStatusEnabled, *PHYBRID_INFORMATION, _HYBRID_INFORMATION, PHYBRID_INFORMATION structure pointer [Storage Devices], PHYBRID_INFORMATION
+ms.date: 2/16/2018
+ms.keywords: PHYBRID_INFORMATION, ntddscsi/PHYBRID_INFORMATION, ntddscsi/HYBRID_INFORMATION, NvCacheTypeWriteThrough, HYBRID_INFORMATION structure [Storage Devices], NvCacheStatusDisabling, PHYBRID_INFORMATION structure pointer [Storage Devices], HYBRID_INFORMATION, NvCacheTypeUnknown, NvCacheStatusDisabled, *PHYBRID_INFORMATION, storage.hybrid_information, NvCacheTypeWriteBack, NvCacheStatusUnknown, _HYBRID_INFORMATION, NvCacheNone, NvCacheStatusEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	HYBRID_INFORMATION
 product: Windows
 targetos: Windows
-req.typenames: "*PHYBRID_INFORMATION, HYBRID_INFORMATION"
+req.typenames: HYBRID_INFORMATION, *PHYBRID_INFORMATION
 ---
 
 # _HYBRID_INFORMATION structure
@@ -91,6 +91,36 @@ typedef struct _HYBRID_INFORMATION {
 `Attributes`
 
 The hybrid disk attributes.
+
+
+
+#### WriteCacheChangeable
+
+Support for changes in write caching policy. The value is 1 policy changes are allowed. Otherwise, changes are ignored.
+
+
+
+#### WriteThroughIoSupported
+
+Support for individual write operations when write-through caching is used. The value is 1 if individual writes are supported. Otherwise, the values is 0.
+
+
+
+#### FlushCacheSupported
+
+Support for non-volatile cache flush. The value is 1 if flushes are supported. Otherwise, the value is 0.
+
+
+
+#### Removable
+
+Support of removal of the non-volatile cache from the disk. The value is 1 if the cache is removable. Otherwise, the value is 0.
+
+
+
+#### ReservedBits
+
+Reserved.
 
 `CacheSize`
 
@@ -162,6 +192,36 @@ Miniport supports for hybrid disks. Set to <b>TRUE</b> if hybrid disks are suppo
 `Priorities`
 
 Priority settings for the hybrid disk.
+
+
+
+#### PriorityLevelCount
+
+The number of priority levels supported by the cache. Currently, a non-zero value indicates support for all priorities.
+
+
+
+#### MaxPriorityBehavior
+
+If <b>TRUE</b>, the disk I/O can fail at maximum priority if the cache is full.  Otherwise, if <b>FALSE</b>, the operation will complete to disk.
+
+
+
+#### DirtyThresholdLow
+
+The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.
+
+
+
+#### DirtyThresholdHigh
+
+The low threshold for a cache flush. This value is ratio in the range of <b>FractionBase</b>.
+
+
+
+#### Priority
+
+An array of priority level descriptors. The number of descriptors present in the array is set in <b>PriorityLevelCount</b>.
 
 `Size`
 
@@ -239,4 +299,4 @@ The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HYBRID_INFORMATION structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HYBRID_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -70,6 +70,7 @@ pointofservicedriverinterface.h contains the following programming interfaces:
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
+| [_MsrAuthenticationProtocol](ne-pointofservicedriverinterface-_msrauthenticationprotocol.md) | This enumeration defines magnetic stripe reader (MSR) authentication protocols. |
 | [_MsrCardType](ne-pointofservicedriverinterface-_msrcardtype.md) | This enumeration defines the kinds of magnetic stripe cards. |
 | [_MsrDataEncryption](ne-pointofservicedriverinterface-_msrdataencryption.md) | This enumeration defines the kind of encryption algorithm supported by the magnetic stripe reader (MSR). |
 | [_MsrErrorReportingType](ne-pointofservicedriverinterface-_msrerrorreportingtype.md) | This enumeration defines the constants that indicate the error reporting type for the magnetic stripe reader (MSR). |

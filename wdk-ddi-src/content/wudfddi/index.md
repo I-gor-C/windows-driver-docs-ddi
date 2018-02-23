@@ -97,3 +97,5 @@ wudfddi.h contains the following programming interfaces:
 | [__MIDL___MIDL_itf_wudfddi_0000_0000_0001](ne-wudfddi-__midl___midl_itf_wudfddi_0000_0000_0001.md) | The POWER_ACTION enumeration identifies the system power actions that can occur on a computer. |
 | [_DEVICE_POWER_STATE](ne-wudfddi-_device_power_state.md) | The DEVICE_POWER_STATE enumeration identifies the device power states that a device can enter. |
 | [_SECURITY_IMPERSONATION_LEVEL](ne-wudfddi-_security_impersonation_level.md) | The SECURITY_IMPERSONATION_LEVEL enumeration contains values that identify security impersonation levels. |
+| [_WDF_INTERRUPT_POLICY](ne-wudfddi-_wdf_interrupt_policy.md) | The WDF_INTERRUPT_POLICY enumeration type identifies the affinity policies that the PnP manager can use when it assigns a device's interrupts to the processors of a multiprocessor system. |
+| [_WDF_INTERRUPT_PRIORITY](ne-wudfddi-_wdf_interrupt_priority.md) | The WDF_INTERRUPT_PRIORITY enumeration type identifies relative priorities for device interrupts. |

@@ -7,13 +7,13 @@ old-location: netvista\rilpositioninfo_v2.htm
 old-project: netvista
 ms.assetid: 881e85a2-4ba2-4940-94c0-61a2d335e52a
 ms.author: windowsdriverdev
-ms.date: 1/18/2018
-ms.keywords: RILPOSITIONINFO, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfo_v2, rilapitypes/RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2, *LPRILPOSITIONINFO
+ms.date: 2/16/2018
+ms.keywords: "*LPRILPOSITIONINFO, netvista.rilpositioninfo_v2, RILPOSITIONINFO_V2, rilapitypes/RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista], RILPOSITIONINFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: rilapitypes.h
-req.include-header: Rilapitypes.h
+req.include-header: Rilapitypes.h, Ntddrilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,7 +40,7 @@ apiname:
 -	RILPOSITIONINFO_V2
 product: Windows
 targetos: Windows
-req.typenames: RILPOSITIONINFO, *LPRILPOSITIONINFO, RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2
+req.typenames: RILPOSITIONINFO, *LPRILPOSITIONINFO, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2
 req.product: Windows 10 or later.
 ---
 
@@ -98,19 +98,19 @@ The number of entries in the UMTS measured results list <b>ruMRL</b>.
 
 `dwSystemType`
 
-Indicates the system type or types for which serving cell information is valid, a bitmask of one or more <a href="..\rilapitypes\ne-rilapitypes-rilsystemtype.md">RILSYSTEMTYPE</a> values. For example, on an SVLTE system, this could be <code>RIL_SYSTEMTYPE_LTE|RIL_SYSTEMTYPE_1XRTT</code>, indicating that both the CDMA cell information (including serving cell(s)) in <b>rc2kMRL</b> and <b>stLTEServingCellInfo</b> are valid.
+Indicates the system type or types for which serving cell information is valid, a bitmask of one or more <a href="..\ntddrilapitypes\ne-ntddrilapitypes-rilsystemtype.md">RILSYSTEMTYPE</a> values. For example, on an SVLTE system, this could be <code>RIL_SYSTEMTYPE_LTE|RIL_SYSTEMTYPE_1XRTT</code>, indicating that both the CDMA cell information (including serving cell(s)) in <b>rc2kMRL</b> and <b>stLTEServingCellInfo</b> are valid.
 
 `rc2kMRL`
 
-The cdma2000 measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rilc2kmrl.md">RILC2KMRL</a> structs.
+The cdma2000 measured results list, an array of <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rilc2kmrl.md">RILC2KMRL</a> structs.
 
 `reMRL`
 
-E-UTRAN (LTE) measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rileutramrl.md">RILEUTRAMRL</a> structs.
+E-UTRAN (LTE) measured results list, an array of <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rileutramrl.md">RILEUTRAMRL</a> structs.
 
 `rgNMR`
 
-GSM network measurement reports, an array of <a href="..\rilapitypes\ns-rilapitypes-rilgsmnmr.md">RILGSMNMR</a> structs.
+GSM network measurement reports, an array of <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rilgsmnmr.md">RILGSMNMR</a> structs.
 
 `rtMRL`
 
@@ -122,25 +122,25 @@ GSM network measurement reports, an array of <a href="..\rilapitypes\ns-rilapity
 
 `stGSMServingCellInfo`
 
-GSM serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfogsm.md">RILPOSITIONINFOGSM</a> struct.
+GSM serving cell information, a <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rilpositioninfogsm.md">RILPOSITIONINFOGSM</a> struct.
 
 `stLTEServingCellInfo`
 
-LTE serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfolte.md">RILPOSITIONINFOLTE</a> struct.
+LTE serving cell information, a <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rilpositioninfolte.md">RILPOSITIONINFOLTE</a> struct.
 
 `stTDSCDMAServingCellInfo`
 
-TD-SCDMA serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfotdscdma.md">RILPOSITIONINFOTDSCDMA</a> struct. This field is not present in <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfo_v1.md">RILPOSITIONINFO_V1</a>.
+TD-SCDMA serving cell information, a <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rilpositioninfotdscdma.md">RILPOSITIONINFOTDSCDMA</a> struct. This field is not present in <a href="https://msdn.microsoft.com/library/windows/hardware/dn931134">RILPOSITIONINFO_V1</a>.
 
 `stUMTSServingCellInfo`
 
-UMTS serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositioninfoumts.md">RILPOSITIONINFOUMTS</a> struct.
+UMTS serving cell information, a <a href="..\ntddrilapitypes\ns-ntddrilapitypes-rilpositioninfoumts.md">RILPOSITIONINFOUMTS</a> struct.
 
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | rilapitypes.h (include Rilapitypes.h) |
+| **Header** | rilapitypes.h (include Rilapitypes.h, Ntddrilapitypes.h) |
 
 ## See Also
 
@@ -152,4 +152,4 @@ UMTS serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilposit
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFO_V2 structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILPOSITIONINFO_V2 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

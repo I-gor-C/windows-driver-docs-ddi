@@ -7,13 +7,13 @@ old-location: kernel\pci_common_config.htm
 old-project: kernel
 ms.assetid: 239d0c0a-e78e-40d5-b359-36910bdd9358
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: wdm/PCI_COMMON_CONFIG, wdm/PPCI_COMMON_CONFIG, PPCI_COMMON_CONFIG structure pointer [Kernel-Mode Driver Architecture], *PPCI_COMMON_CONFIG, PCI_COMMON_CONFIG, PCI_COMMON_CONFIG structure [Kernel-Mode Driver Architecture], PPCI_COMMON_CONFIG, _PCI_COMMON_CONFIG, kstruct_c_42f21057-e812-4a4d-96c5-f1177a03982b.xml, kernel.pci_common_config
+ms.date: 2/16/2018
+ms.keywords: wdm/PCI_COMMON_CONFIG, wdm/PPCI_COMMON_CONFIG, PPCI_COMMON_CONFIG structure pointer [Kernel-Mode Driver Architecture], PCI_COMMON_CONFIG structure [Kernel-Mode Driver Architecture], kstruct_c_42f21057-e812-4a4d-96c5-f1177a03982b.xml, _PCI_COMMON_CONFIG, PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG, kernel.pci_common_config, PPCI_COMMON_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Miniport.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,7 +40,7 @@ apiname:
 -	PCI_COMMON_CONFIG
 product: Windows
 targetos: Windows
-req.typenames: "*PPCI_COMMON_CONFIG, PCI_COMMON_CONFIG"
+req.typenames: PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -97,11 +97,11 @@ Other members are provisionally read-only: that is, the system initializes them 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Miniport.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
 
 
 
@@ -109,11 +109,7 @@ Other members are provisionally read-only: that is, the system initializes them 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
 
 
 
@@ -121,8 +117,12 @@ Other members are provisionally read-only: that is, the system initializes them 
 
 
 
- 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCI_COMMON_CONFIG structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCI_COMMON_CONFIG structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

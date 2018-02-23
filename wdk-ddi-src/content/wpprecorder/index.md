@@ -22,6 +22,16 @@ wpprecorder.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
+| [imp_WppRecorderConfigure](nf-wpprecorder-imp_wpprecorderconfigure.md) | The WppRecorderConfigure method enables or disables the default log to which WPP prints. |
+| [imp_WppRecorderDumpLiveDriverData](nf-wpprecorder-imp_wpprecorderdumplivedriverdata.md) | The WppRecorderDumpLiveDriverData method gets the buffer associated with the specified Inflight Trace Recorder log. |
+| [imp_WppRecorderGetCounterHandle](nf-wpprecorder-imp_wpprecordergetcounterhandle.md) | The WppRecorderGetCounterHandle method. |
+| [imp_WppRecorderGetTriageInfo](nf-wpprecorder-imp_wpprecordergettriageinfo.md) | The WppRecorderGetTriageInfo. |
+| [imp_WppRecorderIsDefaultLogAvailable](nf-wpprecorder-imp_wpprecorderisdefaultlogavailable.md) | The WppRecorderIsDefaultLogAvailable method determines whether the default log is available. |
+| [imp_WppRecorderLinkCounters](nf-wpprecorder-imp_wpprecorderlinkcounters.md) | The WppRecorderLinkCounters. |
+| [imp_WppRecorderLogCreate](nf-wpprecorder-imp_wpprecorderlogcreate.md) | The WppRecorderLogCreate method creates a buffer to contain the recorder log. |
+| [imp_WppRecorderLogDelete](nf-wpprecorder-imp_wpprecorderlogdelete.md) | The WppRecorderLogDelete method deletes the specified recorder log. |
+| [imp_WppRecorderLogGetDefault](nf-wpprecorder-imp_wpprecorderloggetdefault.md) | The WppRecorderLogGetDefault method gets a handle to the default recorder log. |
+| [imp_WppRecorderLogSetIdentifier](nf-wpprecorder-imp_wpprecorderlogsetidentifier.md) | The WppRecorderLogSetIdentifier method sets a string identifier for the recorder log. |
 | [RECORDER_CONFIGURE_PARAMS_INIT](nf-wpprecorder-recorder_configure_params_init.md) | The RECORDER_CONFIGURE_PARAMS_INIT function is used to initialize the RECORDER_CONFIGURE_PARAMS structure. |
 | [RECORDER_LOG_CREATE_PARAMS_INIT](nf-wpprecorder-recorder_log_create_params_init.md) | The RECORDER_LOG_CREATE_PARAMS_INIT function is used to initialize the RECORDER_LOG_CREATE_PARAMS structure. |
 | [RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER](nf-wpprecorder-recorder_log_create_params_init_append_pointer.md) | The RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER method initializes the RECORDER_LOG_CREATE_PARAMS with the pointer to link logs. |

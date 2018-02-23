@@ -7,8 +7,8 @@ old-location: devtest\etwproviderenabled.htm
 old-project: devtest
 ms.assetid: 28b0a40e-e8e8-4953-8a3a-f3f1b58ad80f
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: EtwProviderEnabled
+ms.date: 2/20/2018
+ms.keywords: wdm/EtwProviderEnabled, EtwProviderEnabled, devtest.etwproviderenabled, EtwProviderEnabled function [Driver Development Tools], etw_km_ea4989d3-f349-4dda-9d86-f1b9528ddf1c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt: Available in Windows Vista and later versions of Wind
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: EtwProviderEnabled
-req.alt-loc: NtosKrnl.exe
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -31,6 +29,17 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	EtwProviderEnabled
+product: Windows
+targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
@@ -86,13 +95,12 @@ If an event descriptor is already available, use the <a href="..\wdm\nf-wdm-etwe
 
 ## See Also
 
-<dl>
-<dt>
 <a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
-</dt>
-</dl>
- 
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwProviderEnabled function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwProviderEnabled function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

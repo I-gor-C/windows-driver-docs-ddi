@@ -7,8 +7,8 @@ old-location: sensors\gnss_event.htm
 old-project: sensors
 ms.assetid: FECF2444-CFF7-4B4D-AC3A-D3DD9B045AFD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: gnssdriver/GNSS_EVENT, GNSS_EVENT, *PGNSS_EVENT, PGNSS_EVENT, PGNSS_EVENT structure pointer [Sensor Devices], GNSS_EVENT structure [Sensor Devices], gnssdriver/PGNSS_EVENT, sensors.gnss_event
+ms.date: 2/15/2018
+ms.keywords: sensors.gnss_event, GNSS_EVENT, PGNSS_EVENT structure pointer [Sensor Devices], PGNSS_EVENT, *PGNSS_EVENT, GNSS_EVENT structure [Sensor Devices], gnssdriver/GNSS_EVENT, gnssdriver/PGNSS_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	GNSS_EVENT
 product: Windows
 targetos: Windows
-req.typenames: "*PGNSS_EVENT, GNSS_EVENT"
+req.typenames: GNSS_EVENT, *PGNSS_EVENT
 ---
 
 # GNSS_EVENT structure

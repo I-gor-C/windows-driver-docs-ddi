@@ -7,13 +7,13 @@ old-location: kernel\bus_data_type.htm
 old-project: kernel
 ms.assetid: a2a2e964-b9ae-4367-85de-f0ebe3c7a952
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: PNPISAConfiguration, ntddk/ConfigurationSpaceUndefined, CbusConfiguration, PCMCIAConfiguration, MaximumBusDataType, EisaConfiguration, _BUS_DATA_TYPE, ntddk/PBUS_DATA_TYPE, SgiInternalConfiguration, sysenum_3f6df31a-39d8-463e-8d44-44e51cd9989d.xml, MPSAConfiguration, ntddk/MPSAConfiguration, ntddk/CbusConfiguration, ntddk/MPIConfiguration, VMEConfiguration, ConfigurationSpaceUndefined, ntddk/Pos, ntddk/SgiInternalConfiguration, ntddk/Cmos, ntddk/NuBusConfiguration, MPIConfiguration, PBUS_DATA_TYPE enumeration pointer [Kernel-Mode Driver Architecture], ntddk/PNPISAConfiguration, kernel.bus_data_type, ntddk/VMEConfiguration, *PBUS_DATA_TYPE, BUS_DATA_TYPE enumeration [Kernel-Mode Driver Architecture], PBUS_DATA_TYPE, BUS_DATA_TYPE, Cmos, NuBusConfiguration, ntddk/EisaConfiguration, PCIConfiguration, ntddk/BUS_DATA_TYPE, ntddk/PCIConfiguration, ntddk/MaximumBusDataType, ntddk/PCMCIAConfiguration, Pos
+ms.date: 2/16/2018
+ms.keywords: PCIConfiguration, *PBUS_DATA_TYPE, ntddk/MPIConfiguration, ntddk/MaximumBusDataType, kernel.bus_data_type, MPSAConfiguration, PCMCIAConfiguration, BUS_DATA_TYPE enumeration [Kernel-Mode Driver Architecture], ntddk/CbusConfiguration, ntddk/PNPISAConfiguration, PBUS_DATA_TYPE, PBUS_DATA_TYPE enumeration pointer [Kernel-Mode Driver Architecture], CbusConfiguration, ntddk/PCIConfiguration, ntddk/NuBusConfiguration, SgiInternalConfiguration, ntddk/PBUS_DATA_TYPE, ntddk/BUS_DATA_TYPE, MaximumBusDataType, EisaConfiguration, NuBusConfiguration, sysenum_3f6df31a-39d8-463e-8d44-44e51cd9989d.xml, _BUS_DATA_TYPE, ntddk/MPSAConfiguration, ntddk/Cmos, ntddk/VMEConfiguration, VMEConfiguration, BUS_DATA_TYPE, ConfigurationSpaceUndefined, ntddk/Pos, Cmos, Pos, ntddk/PCMCIAConfiguration, ntddk/EisaConfiguration, ntddk/ConfigurationSpaceUndefined, PNPISAConfiguration, MPIConfiguration, ntddk/SgiInternalConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: ntddk.h
-req.include-header: Ntddk.h
+req.include-header: Ntddk.h, Miniport.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,7 +40,7 @@ apiname:
 -	BUS_DATA_TYPE
 product: Windows
 targetos: Windows
-req.typenames: "*PBUS_DATA_TYPE, BUS_DATA_TYPE"
+req.typenames: BUS_DATA_TYPE, *PBUS_DATA_TYPE
 ---
 
 # _BUS_DATA_TYPE Enumeration
@@ -145,7 +145,7 @@ typedef enum _BUS_DATA_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | ntddk.h (include Ntddk.h) |
+| **Header** | ntddk.h (include Ntddk.h, Miniport.h) |
 
 ## See Also
 
@@ -153,7 +153,7 @@ typedef enum _BUS_DATA_TYPE {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
 
 
 
@@ -161,7 +161,7 @@ typedef enum _BUS_DATA_TYPE {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
 
 
 
@@ -169,4 +169,4 @@ typedef enum _BUS_DATA_TYPE {
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BUS_DATA_TYPE enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BUS_DATA_TYPE enumeration%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -7,13 +7,13 @@ old-location: stream\kstrqueryreferencestring.htm
 old-project: stream
 ms.assetid: 08fd750f-19cc-4d78-a26b-9f790c5c3acf
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
+ms.date: 2/20/2018
 ms.keywords: stream.kstrqueryreferencestring, KStrQueryReferenceString routine [Streaming Media Devices], KStrQueryReferenceString, PFNQUERYREFERENCESTRING, PFNQUERYREFERENCESTRING, ks/KStrQueryReferenceString, ksfunc_ce750f42-efeb-4861-b451-ef0f8be40f9a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
 req.header: ks.h
-req.include-header: Ks.h
+req.include-header: Ks.h, Swenum.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,12 +40,12 @@ apiname:
 -	KStrQueryReferenceString
 product: Windows
 targetos: Windows
-req.typenames: KEYWORDSELECTOR
+req.typenames: SOUNDDETECTOR_PATTERNHEADER
 ---
 
 
 # PFNQUERYREFERENCESTRING callback function
-This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>.
+This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>.
 
 ## Syntax
 
@@ -82,4 +82,4 @@ The driver can access this method through the <b>QueryReferenceString</b> member
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Target Platform** | Desktop |
-| **Header** | ks.h (include Ks.h) |
+| **Header** | ks.h (include Ks.h, Swenum.h) |

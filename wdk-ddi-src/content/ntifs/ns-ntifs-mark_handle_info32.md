@@ -7,8 +7,8 @@ old-location: ifsk\mark_handle_info32.htm
 old-project: ifsk
 ms.assetid: BAC97D72-23C4-49A6-A13D-0F011113DB32
 ms.author: windowsdriverdev
-ms.date: 2/7/2018
-ms.keywords: MARK_HANDLE_INFO32 structure [Installable File System Drivers], USN_SOURCE_DATA_MANAGEMENT, ntifs/PMARK_HANDLE_INFO32, PMARK_HANDLE_INFO32 structure pointer [Installable File System Drivers], USN_SOURCE_REPLICATION_MANAGEMENT, MARK_HANDLE_PROTECT_CLUSTERS, MARK_HANDLE_TXF_SYSTEM_LOG, MARK_HANDLE_NOT_TXF_SYSTEM_LOG, PMARK_HANDLE_INFO32, MARK_HANDLE_REALTIME, *PMARK_HANDLE_INFO32, MARK_HANDLE_NOT_REALTIME, MARK_HANDLE_INFO32, USN_SOURCE_AUXILIARY_DATA, ifsk.mark_handle_info32, ntifs/MARK_HANDLE_INFO32
+ms.date: 2/16/2018
+ms.keywords: ntifs/PMARK_HANDLE_INFO32, PMARK_HANDLE_INFO32 structure pointer [Installable File System Drivers], PMARK_HANDLE_INFO32, MARK_HANDLE_TXF_SYSTEM_LOG, ifsk.mark_handle_info32, MARK_HANDLE_PROTECT_CLUSTERS, MARK_HANDLE_INFO32, USN_SOURCE_AUXILIARY_DATA, USN_SOURCE_REPLICATION_MANAGEMENT, ntifs/MARK_HANDLE_INFO32, MARK_HANDLE_NOT_TXF_SYSTEM_LOG, MARK_HANDLE_NOT_REALTIME, *PMARK_HANDLE_INFO32, MARK_HANDLE_REALTIME, USN_SOURCE_DATA_MANAGEMENT, MARK_HANDLE_INFO32 structure [Installable File System Drivers]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -316,4 +316,4 @@ When running on a 64-bit system, file system minifilters must interpret the inpu
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MARK_HANDLE_INFO32 structure%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MARK_HANDLE_INFO32 structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

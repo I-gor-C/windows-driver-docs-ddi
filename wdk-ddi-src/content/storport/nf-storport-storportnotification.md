@@ -7,8 +7,8 @@ old-location: storage\storportnotification.htm
 old-project: storage
 ms.assetid: 3f361f50-3ca2-4fb6-828c-27928b50cf55
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: storport/StorPortNotification, StorPortNotification routine [Storage Devices], StorPortNotification, storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, storage.storportnotification
+ms.date: 2/16/2018
+ms.keywords: storport/StorPortNotification, StorPortNotification, StorPortNotification routine [Storage Devices], storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, storage.storportnotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -159,7 +159,7 @@ QueryTickCount
 
 </td>
 <td>
-This notification type returns a LARGE_INTEGER that holds the value from <a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>. The value returned in TickCount is the count of the interval timer interrupts that have occurred since the system was booted
+This notification type returns a LARGE_INTEGER that holds the value from <a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>. The value returned in TickCount is the count of the interval timer interrupts that have occurred since the system was booted
 
 <div class="code"><span codelanguage="ManagedCPlusPlus"><table>
 <tr>
@@ -319,23 +319,7 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567437">StorPortNotification for BusChangeDetected</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567452">StorPortNotification for WMIEvent</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567441">StorPortNotification for LinkUp</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 
 
 
@@ -343,7 +327,19 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567447">StorPortNotification for RequestTimerCall</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567456">StorPortNotification for WMIReregister</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567450">StorPortNotification for ResetDetected</a>
 
 
 
@@ -355,7 +351,7 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567434">StorPortNotification for BufferOverrunDetected</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567445">StorPortNotification for QueryTickCount</a>
 
 
 
@@ -363,8 +359,12 @@ Because StorPortNotification returns VOID, the scanning engine should assume the
 
 
 
- 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567446">StorPortNotification for RequestComplete</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortNotification routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortNotification routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

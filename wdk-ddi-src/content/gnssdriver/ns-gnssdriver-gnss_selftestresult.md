@@ -7,8 +7,8 @@ old-location: sensors\gnss_selftestresult.htm
 old-project: sensors
 ms.assetid: 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: gnssdriver/PGNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT structure [Sensor Devices], gnssdriver/GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT, sensors.gnss_selftestresult, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices]
+ms.date: 2/15/2018
+ms.keywords: "*PGNSS_SELFTESTRESULT, gnssdriver/GNSS_SELFTESTRESULT, gnssdriver/PGNSS_SELFTESTRESULT, sensors.gnss_selftestresult, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices], GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT structure [Sensor Devices]"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	GNSS_SELFTESTRESULT
 product: Windows
 targetos: Windows
-req.typenames: GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT
+req.typenames: "*PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT"
 ---
 
 # GNSS_SELFTESTRESULT structure
@@ -86,6 +86,7 @@ Structure size.
 `TestResultStatus`
 
 NTSTATUS value indicating:
+
 <ul>
 <li>
 Success (self-test passed).

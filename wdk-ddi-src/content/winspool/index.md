@@ -24,12 +24,15 @@ winspool.h contains the following programming interfaces:
 | ---- |:---- |
 | [DeleteJobNamedProperty](nf-winspool-deletejobnamedproperty.md) | Deletes the named property for the specified print job on the specified printer. |
 | [EnumJobNamedProperties](nf-winspool-enumjobnamedproperties.md) | "." |
+| [EnumPrintProcessorDatatypesA](nf-winspool-enumprintprocessordatatypesa.md) | A print processor's EnumPrintProcessorDatatypes function enumerates the data types that the print processor supports. |
 | [ExtDeviceMode](nf-winspool-extdevicemode.md) | The ExtDeviceMode function is provided only for compatibility with 16-bit applications. |
 | [FindFirstPrinterChangeNotification](nf-winspool-findfirstprinterchangenotification.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
 | [FreePrintNamedPropertyArray](nf-winspool-freeprintnamedpropertyarray.md) | "." |
 | [FreePrintPropertyValue](nf-winspool-freeprintpropertyvalue.md) | Frees the value that is retrieved using GetJobNamedPropertyValue function. |
 | [GetJobNamedPropertyValue](nf-winspool-getjobnamedpropertyvalue.md) | Retrieves the value of the named property for the specified print job on the specified printer. |
 | [GetPrintOutputInfo](nf-winspool-getprintoutputinfo.md) | "." |
+| [IsValidDevmodeA](nf-winspool-isvaliddevmodea.md) | The print spooler's IsValidDevmode function verifies that the contents of a DEVMODE structure are valid. |
+| [IsValidDevmodeW](nf-winspool-isvaliddevmodew.md) | The print spooler's IsValidDevmode function verifies that the contents of a DEVMODE structure are valid. |
 | [PrinterMessageBoxA](nf-winspool-printermessageboxa.md) | "." |
 | [PrinterMessageBoxW](nf-winspool-printermessageboxw.md) | "." |
 | [SetJobNamedProperty](nf-winspool-setjobnamedproperty.md) | "." |

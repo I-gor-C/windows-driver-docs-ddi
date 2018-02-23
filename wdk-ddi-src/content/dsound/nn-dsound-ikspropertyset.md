@@ -7,13 +7,13 @@ old-location: stream\ikspropertyset.htm
 old-project: stream
 ms.assetid: 9999d6ec-977c-4425-ad38-0c5478272c76
 ms.author: windowsdriverdev
-ms.date: 1/9/2018
+ms.date: 2/20/2018
 ms.keywords: stream.ikspropertyset, IKsPropertySet interface [Streaming Media Devices], IKsPropertySet interface [Streaming Media Devices], described, IKsPropertySet, dsound/IKsPropertySet, ksproxy_5f6316c6-5bcf-4155-b4a5-976a0cee8aa5.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
 req.header: dsound.h
-req.include-header: 
+req.include-header: Ksproxy.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,7 +40,7 @@ apiname:
 -	IKsPropertySet
 product: Windows
 targetos: Windows
-req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
+req.typenames: DRMRIGHTS, *PDRMRIGHTS
 ---
 
 # IKsPropertySet interface
@@ -58,6 +58,7 @@ The IID for this interface is IID_IKsPropertySet.
 
 | Method | Description |
 | ---- |:---- |
+| [dsound.IKsPropertySet.Get](nf-dsound-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
 | [dsound.IKsPropertySet.Set](nf-dsound-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
 
 ## Remarks
@@ -70,4 +71,4 @@ KS objects include, for example, KS filters, KS pins, and KS clocks.
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Target Platform** | Windows |
-| **Header** | dsound.h |
+| **Header** | dsound.h (include Ksproxy.h) |

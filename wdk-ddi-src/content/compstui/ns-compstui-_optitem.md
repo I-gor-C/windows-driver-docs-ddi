@@ -7,8 +7,8 @@ old-location: print\optitem.htm
 old-project: print
 ms.assetid: 983f9774-d498-473a-bdfb-ec55cc4298cf
 ms.author: windowsdriverdev
-ms.date: 2/2/2018
-ms.keywords: OPTITEM structure [Print Devices], cpsuifnc_0d0609c0-cb09-4428-b083-8db736570309.xml, OPTITEM, POPTITEM structure pointer [Print Devices], print.optitem, _OPTITEM, compstui/OPTITEM, *POPTITEM, POPTITEM, compstui/POPTITEM
+ms.date: 2/21/2018
+ms.keywords: print.optitem, POPTITEM structure pointer [Print Devices], OPTITEM, *POPTITEM, compstui/POPTITEM, cpsuifnc_0d0609c0-cb09-4428-b083-8db736570309.xml, OPTITEM structure [Print Devices], POPTITEM, _OPTITEM, compstui/OPTITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

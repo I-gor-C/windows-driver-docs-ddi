@@ -19,6 +19,7 @@ engextcpp.h contains the following programming interfaces:
 ## Classes
 | Title | Description |
 | ---- |:---- |
+| [ExtExtension](nl-engextcpp-extextension~r1.md) | The ExtExtension class is the base class for the C++ class that represents the EngExtCpp extension library. |
 | [ExtRemoteData](nl-engextcpp-extremotedata.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
 | [ExtRemoteList](nl-engextcpp-extremotelist.md) | The ExtRemoteList class provides a wrapper around a singly-linked or doubly-linked list. The class contains methods that can be used to move both forward and backward through the list. |
 | [ExtRemoteTypedList](nl-engextcpp-extremotetypedlist.md) | The ExtRemoteTypedList class extends the ExtRemoteList class. The ExtRemoteTypedList class adds type information allowing each item in the list to be represented by an instance of the ExtRemoteTyped class. |

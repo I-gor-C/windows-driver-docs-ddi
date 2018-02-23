@@ -7,8 +7,8 @@ old-location: ifsk\query_file_layout_input.htm
 old-project: ifsk
 ms.assetid: 7404BFC3-8942-4927-9F5B-9FA860F9F95F
 ms.author: windowsdriverdev
-ms.date: 2/7/2018
-ms.keywords: PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, _QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_NAMES, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, PQUERY_FILE_LAYOUT_INPUT, ntifs/QUERY_FILE_LAYOUT_INPUT, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, QUERY_FILE_LAYOUT_RESTART, ntifs/PQUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_STREAMS
+ms.date: 2/16/2018
+ms.keywords: "_QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, QUERY_FILE_LAYOUT_INCLUDE_STREAMS, PQUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_NAMES, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, ntifs/PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, QUERY_FILE_LAYOUT_RESTART, ntifs/QUERY_FILE_LAYOUT_INPUT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	QUERY_FILE_LAYOUT_INPUT
 product: Windows
 targetos: Windows
-req.typenames: QUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT
+req.typenames: "*PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT"
 ---
 
 # _QUERY_FILE_LAYOUT_INPUT structure
@@ -68,6 +68,49 @@ typedef struct _QUERY_FILE_LAYOUT_INPUT {
 An array of filter structures used to select specific layout information. These contain either cluster or file reference ranges. The array length is specified by the <b>NumberOfPairs</b> member. Each range must be distinct and cannot overlap with any other range.
 
 This member is ignored if <b>QUERY_FILE_LAYOUT_FILTER_TYPE_NONE</b> is specified in <b>FilterType</b>.
+
+
+
+#### ClusterRanges
+
+Specifies a set of cluster ranges to filter layout information. The range structure has the following format.
+
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _CLUSTER_RANGE {
+    LARGE_INTEGER    StartingCluster;
+    LARGE_INTEGER    ClusterCount;
+} CLUSTER_RANGE, *PCLUSTER_RANGE;</pre>
+</td>
+</tr>
+</table></span></div>
+
+
+
+
+#### FileReferenceRanges
+
+Specifies a set of file reference ranges to filter layout information. The range structure has the following format.
+
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>typedef struct _FILE_REFERENCE_RANGE {
+    LARGE_INTEGER    StartingFileReference;
+    LARGE_INTEGER    EndingReferenceNumber;
+} FILE_REFERENCE_RANGE, *PFILE_REFERENCE_RANGE;</pre>
+</td>
+</tr>
+</table></span></div>
 
 `FilterType`
 
@@ -218,4 +261,4 @@ When <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>, the <b>
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(2/7/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20QUERY_FILE_LAYOUT_INPUT structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

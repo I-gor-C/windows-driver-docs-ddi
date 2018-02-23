@@ -7,13 +7,13 @@ old-location: kernel\pep_ppm_idle_complete_v2.htm
 old-project: kernel
 ms.assetid: 2807D1D7-DCAF-446C-8DAD-CAF244B52CD2
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: pepfx/PPEP_PPM_IDLE_COMPLETE_V2, pepfx/PEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2, PPEP_PPM_IDLE_COMPLETE_V2 structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2 structure [Kernel-Mode Driver Architecture], _PEP_PPM_IDLE_COMPLETE_V2, kernel.pep_ppm_idle_complete_v2
+ms.date: 2/16/2018
+ms.keywords: "_PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2, PPEP_PPM_IDLE_COMPLETE_V2 structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_IDLE_COMPLETE_V2, PPEP_PPM_IDLE_COMPLETE_V2, pepfx/PPEP_PPM_IDLE_COMPLETE_V2, pepfx/PEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2 structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_complete_v2"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: pepfx.h
-req.include-header: 
+req.include-header: Pep_x.h
 req.target-type: Windows
 req.target-min-winverclnt: Supported starting with Windows 10.
 req.target-min-winversvr: 
@@ -80,4 +80,4 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
-| **Header** | pepfx.h |
+| **Header** | pepfx.h (include Pep_x.h) |

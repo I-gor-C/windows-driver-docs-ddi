@@ -1,0 +1,80 @@
+---
+UID: NS:pep_x._PEP_LOW_POWER_EPOCH
+title: "_PEP_LOW_POWER_EPOCH"
+author: windows-driver-content
+description: The PEP_LOW_POWER_EPOCH structure is used to provide data for a PEP_DPM_LOW_POWER_EPOCH notification (deprecated).
+old-location: kernel\pep_low_power_epoch.htm
+old-project: kernel
+ms.assetid: 730312DE-5F11-46C8-8298-55AA5756C995
+ms.author: windowsdriverdev
+ms.date: 2/16/2018
+ms.keywords: kernel.pep_low_power_epoch, _PEP_LOW_POWER_EPOCH, PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH, pepfx/PPEP_LOW_POWER_EPOCH, PPEP_LOW_POWER_EPOCH structure pointer [Kernel-Mode Driver Architecture], PPEP_LOW_POWER_EPOCH, PEP_LOW_POWER_EPOCH structure [Kernel-Mode Driver Architecture], pepfx/PEP_LOW_POWER_EPOCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pep_x.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_LOW_POWER_EPOCH
+product: Windows
+targetos: Windows
+req.typenames: PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH
+---
+
+# _PEP_LOW_POWER_EPOCH structure
+The <b>PEP_LOW_POWER_EPOCH</b> structure is used to provide data for a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186748">PEP_DPM_LOW_POWER_EPOCH</a> notification (deprecated).
+
+## Syntax
+````
+typedef struct _PEP_LOW_POWER_EPOCH {
+  BOOLEAN LowPowerEpoch;
+} PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH;
+````
+
+## Members
+
+
+`LowPowerEpoch`
+
+When <b>TRUE</b>, indicates that the low power epoch is on.
+
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Header** | pep_x.h (include Pep_x.h) |
+
+## See Also
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186748">PEP_DPM_LOW_POWER_EPOCH notification</a>
+
+
+
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_LOW_POWER_EPOCH structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

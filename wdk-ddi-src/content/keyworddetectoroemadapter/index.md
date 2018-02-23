@@ -29,6 +29,7 @@ keyworddetectoroemadapter.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
+| [__MIDL___MIDL_itf_keyworddetectoroemadapter_0000_0000_0001](ns-keyworddetectoroemadapter-__midl___midl_itf_keyworddetectoroemadapter_0000_0000_0001.md) | The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property. |
 | [__MIDL_IKeywordDetectorOemAdapter_0003](ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003.md) | The KEYWORDSELECTOR struct is a triplet of IDs that uniquely select a particular keyword, language, and user combination. |
 
 

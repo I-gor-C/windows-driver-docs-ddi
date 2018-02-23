@@ -7,8 +7,8 @@ old-location: devtest\assertmsg.htm
 old-project: devtest
 ms.assetid: 88c0cd30-607b-48f4-b2b6-3c21be1ce31a
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: ASSERTMSG
+ms.date: 2/20/2018
+ms.keywords: ASSERTMSG function [Driver Development Tools], devtest.assertmsg, ASSERTMSG, DebugFns_998b520e-90e6-440f-94d4-55ff0b6e102f.xml, ntddk/ASSERTMSG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: ASSERTMSG
-req.alt-loc: ntddk.h
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -28,9 +26,20 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: wdm.h
 req.dll: 
 req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	ASSERTMSG
+product: Windows
+targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
@@ -52,11 +61,11 @@ VOID ASSERTMSG(
 
 `msg`
 
-
+TBD
 
 `exp`
 
-
+TBD
 
 
 ## Return Value
@@ -79,16 +88,16 @@ If <i>Expression</i> evaluates to <b>FALSE</b>, a message is displayed in the De
 | **Windows version** | Available in Microsoft Windows 2000 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
+| **Library** | wdm.h |
 
 ## See Also
 
-<dl>
-<dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542107">ASSERT</a>
-</dt>
-</dl>
- 
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20ASSERTMSG function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20ASSERTMSG function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

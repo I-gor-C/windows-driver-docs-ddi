@@ -19,6 +19,11 @@ smcnt.h contains the following programming interfaces:
 
 
 
+## Functions
+| Title | Description |
+| ---- |:---- |
+| [ExAllocatePool](nf-smcnt-exallocatepool.md) | The ExAllocatePool routine is obsolete, and is exported only for existing binaries. Use ExAllocatePoolWithTag instead.ExAllocatePool allocates pool memory of the specified type and returns a pointer to the allocated block. |
+
 
 
 ## Structures

@@ -7,13 +7,13 @@ old-location: wdf\write_register_ulong64.htm
 old-project: wdf
 ms.assetid: 50C407F2-657F-451F-8A6B-BEEB533D89DE
 ms.author: windowsdriverdev
-ms.date: 1/11/2018
-ms.keywords: WRITE_REGISTER_ULONG64, wudfddi_hwaccess/WRITE_REGISTER_ULONG64, umdf.write_register_ulong64, wdf.write_register_ulong64, WRITE_REGISTER_ULONG64 function
+ms.date: 2/20/2018
+ms.keywords: wdf.write_register_ulong64, WRITE_REGISTER_ULONG64 function, umdf.write_register_ulong64, wudfddi_hwaccess/WRITE_REGISTER_ULONG64, WRITE_REGISTER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wudfddi_hwaccess.h
-req.include-header: 
+req.include-header: Wdm.h, Miniport.h, Wudfwdm.h
 req.target-type: Desktop
 req.target-min-winverclnt: 64-bit Windows
 req.target-min-winversvr: 
@@ -64,7 +64,7 @@ void WRITE_REGISTER_ULONG64(
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+
 
 `Register`
 
@@ -90,5 +90,5 @@ For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD
 | **End of support** | Unavailable in UMDF 2.0 and later.  |
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
-| **Header** | wudfddi_hwaccess.h |
+| **Header** | wudfddi_hwaccess.h (include Wdm.h, Miniport.h, Wudfwdm.h) |
 | **Library** | NtosKrnl.exe |

@@ -7,8 +7,8 @@ old-location: devtest\etwwriteex.htm
 old-project: devtest
 ms.assetid: E2EF929A-61EB-412B-B8E8-D51FD6944B1D
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: EtwWriteEx
+ms.date: 2/20/2018
+ms.keywords: wdm/EtwWriteEx, EtwWriteEx function [Driver Development Tools], devtest.etwwriteex, EtwWriteEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: Windows Server 2008 R2
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: EtwWriteEx
-req.alt-loc: NtosKrnl.exe
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -31,6 +29,17 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	EtwWriteEx
+product: Windows
+targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
@@ -112,19 +121,20 @@ You can call <b>EtwWriteEx</b> at any IRQL. However, when IRQL is greater than A
 
 ## See Also
 
-<dl>
-<dt>
-<a href="https://msdn.microsoft.com/00b907cb-45cd-48c7-bea4-4d8a39b4fa24">EventWriteEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-etwwrite.md">EtwWrite</a>
-</dt>
-<dt>
 <a href="https://msdn.microsoft.com/93070eb7-c167-4419-abff-e861877dad07">EventWrite</a>
-</dt>
-</dl>
- 
+
+
+
+<a href="https://msdn.microsoft.com/00b907cb-45cd-48c7-bea4-4d8a39b4fa24">EventWriteEx</a>
+
+
+
+<a href="..\wdm\nf-wdm-etwwrite.md">EtwWrite</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWriteEx function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWriteEx function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -7,8 +7,8 @@ old-location: bltooth\_brb_l2ca_open_enhanced_channel.htm
 old-project: bltooth
 ms.assetid: 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth._brb_l2ca_open_enhanced_channel
+ms.date: 2/15/2018
+ms.keywords: bltooth.brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth._brb_l2ca_open_enhanced_channel, bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -249,10 +249,205 @@ The profile driver indicates its preference that users not be prompted for a PIN
 The substructure that contains parameter settings to validate incoming
      <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL_RESPONSE</b> BRBs that are sent from a remote device.
 
+
+
+#### Flags
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+      the following table:
+      
+
+<table>
+<tr>
+<td>
+<b>Flag</b>
+
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+#### Mtu
+
+The range of message transfer units (MTUs) that is used to negotiate the size of the inbound
+      half of channel.
+
+
+
+#### FlushTO
+
+The range of possible values to be used for the flush timeout for the inbound half of the
+      channel.
+
 `ConfigOut`
 
 The substructure that contains parameter settings for a <b>BRB_L2CA_OPEN_ENHANCED_CHANNEL</b> BRB sent to a remote
      device.
+
+
+
+#### Flags
+
+Flags that specify the requirements for the channel to be opened. Valid flag values are listed in
+      the following table:
+      
+
+<table>
+<tr>
+<td>
+<b>Flag</b>
+
+</td>
+<td>
+<b>Description</b>
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_AUTHENTICATED
+
+</td>
+<td>
+The link must be authenticated.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_ENCRYPTED
+
+</td>
+<td>
+The link must be encrypted. Setting this flag also sets the CF_LINK_AUTHENTICATED flag.
+
+</td>
+</tr>
+<tr>
+<td>
+CF_LINK_SUPPRESS_PIN
+
+</td>
+<td>
+The profile driver indicates its preference that users not be prompted for a PIN.
+
+</td>
+</tr>
+<tr>
+<td>
+CFG_ENHANCED
+
+</td>
+<td>
+Specifies that the ModeConfig structure is valid.
+
+</td>
+</tr>
+<tr>
+<td>
+CFG_FCS
+
+</td>
+<td>
+Specifies that the Fcs value is valid.
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+#### Mtu
+
+The range of message transfer units (MTUs) that is used to negotiate the size of the outbound
+      half of channel.
+
+
+
+#### FlushTO
+
+The range of possible values to be used for the flush timeout for the outbound half of the
+      channel.
+
+
+
+#### Flow
+
+Reserved for future use. Do not use.
+
+
+
+#### LinkTO
+
+The Link Manager link timeout.
+
+
+
+#### NumExtraOptions
+
+The number of array items that are contained in the 
+      <b>ExtraOptions</b> member. This value should be zero for most clients.
+
+
+
+#### ExtraOptions
+
+Extra options. This value should be zero for most clients.
+
+
+
+#### Fcs
+
+Specifies whether FCS should be used for the enhanced L2CAP channel. This value is valid only if CM_RETRANSMISSION_AND_FLOW or CM_STREAMING flag is specified in the <b>Flags</b> member.
+
+
+
+#### ExtendedFlowSpec
+
+Not supported.
+
+
+
+#### ExtendedWindowSize
+
+Not supported.
 
 `Hdr`
 

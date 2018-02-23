@@ -350,6 +350,7 @@ wdm.h contains the following programming interfaces:
 | [IoGetRelatedDeviceObject](nf-wdm-iogetrelateddeviceobject.md) | Given a file object, the IoGetRelatedDeviceObject routine returns a pointer to the corresponding device object. |
 | [IoGetRemainingStackSize](nf-wdm-iogetremainingstacksize.md) | The IoGetRemainingStackSize routine returns the current amount of available kernel-mode stack space. |
 | [IoGetStackLimits](nf-wdm-iogetstacklimits.md) | The IoGetStackLimits routine returns the boundaries of the current thread's stack frame. |
+| [IoGetTopLevelIrp](nf-wdm-iogettoplevelirp.md) | The IoGetTopLevelIrp routine returns the value of the TopLevelIrp field of the current thread. |
 | [IoInitializeDpcRequest](nf-wdm-ioinitializedpcrequest.md) | The IoInitializeDpcRequest routine registers a driver-supplied DpcForIsr routine. |
 | [IoInitializeIrp](nf-wdm-ioinitializeirp.md) | The IoInitializeIrp routine initializes a given IRP that was allocated by the caller. |
 | [IoInitializeRemoveLock](nf-wdm-ioinitializeremovelock.md) | The IoInitializeRemoveLock routine initializes a remove lock for a device object. |
@@ -393,6 +394,7 @@ wdm.h contains the following programming interfaces:
 | [IoSetShareAccess](nf-wdm-iosetshareaccess.md) | The IoSetShareAccess routine sets the access rights for sharing the given file object. |
 | [IoSetShareAccessEx](nf-wdm-iosetshareaccessex.md) | The IoSetShareAccessEx routine sets the access rights for sharing the specified file object. |
 | [IoSetStartIoAttributes](nf-wdm-iosetstartioattributes.md) | The IoSetStartIoAttributes routine sets attributes for the driver's StartIo routine. |
+| [IoSetTopLevelIrp](nf-wdm-iosettoplevelirp.md) | The IoSetTopLevelIrp routine sets the value of the TopLevelIrp field of the current thread. |
 | [IoSizeOfIrp](nf-wdm-iosizeofirp.md) | The IoSizeOfIrp routine determines the size in bytes for an IRP, given the number of stack locations in the IRP. |
 | [IoSizeofWorkItem](nf-wdm-iosizeofworkitem.md) | The IoSizeofWorkItem routine returns the size, in bytes, of an IO_WORKITEM structure. |
 | [IoStartNextPacket](nf-wdm-iostartnextpacket.md) | The IoStartNextPacket routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's StartIo routine. |
@@ -705,9 +707,11 @@ wdm.h contains the following programming interfaces:
 | [READ_PORT_USHORT](nf-wdm-read_port_ushort.md) | The READ_PORT_USHORT routine reads a USHORT value from the specified port address. |
 | [READ_REGISTER_BUFFER_UCHAR](nf-wdm-read_register_buffer_uchar.md) | The READ_REGISTER_BUFFER_UCHAR routine reads a number of bytes from the specified register address into a buffer. |
 | [READ_REGISTER_BUFFER_ULONG](nf-wdm-read_register_buffer_ulong.md) | The READ_REGISTER_BUFFER_ULONG routine reads a number of ULONG values from the specified register address into a buffer. |
+| [READ_REGISTER_BUFFER_ULONG64](nf-wdm-read_register_buffer_ulong64.md) | The READ_REGISTER_BUFFER_ULONG64 function reads a number of ULONG64 values from the specified register address into a buffer. |
 | [READ_REGISTER_BUFFER_USHORT](nf-wdm-read_register_buffer_ushort.md) | The READ_REGISTER_BUFFER_USHORT routine reads a number of USHORT values from the specified register address into a buffer. |
 | [READ_REGISTER_UCHAR](nf-wdm-read_register_uchar.md) | The READ_REGISTER_UCHAR routine reads a byte from the specified register address. |
 | [READ_REGISTER_ULONG](nf-wdm-read_register_ulong.md) | The READ_REGISTER_ULONG routine reads a ULONG value from the specified register address. |
+| [READ_REGISTER_ULONG64](nf-wdm-read_register_ulong64.md) | The READ_REGISTER_ULONG64 function reads a ULONG64 value from the specified register address. |
 | [READ_REGISTER_USHORT](nf-wdm-read_register_ushort.md) | The READ_REGISTER_USHORT routine reads a USHORT value from the specified register address. |
 | [RemoveEntryList](nf-wdm-removeentrylist.md) | The RemoveEntryList routine removes an entry from a doubly linked list of LIST_ENTRY structures. |
 | [RemoveHeadList](nf-wdm-removeheadlist.md) | The RemoveHeadList routine removes an entry from the beginning of a doubly linked list of LIST_ENTRY structures. |
@@ -801,8 +805,12 @@ wdm.h contains the following programming interfaces:
 | [SeAccessCheck](nf-wdm-seaccesscheck.md) | The SeAccessCheck routine determines whether the requested access rights can be granted to an object protected by a security descriptor and an object owner. |
 | [SeAssignSecurity](nf-wdm-seassignsecurity.md) | The SeAssignSecurity routine builds a self-relative security descriptor for a new object, given the security descriptor of its parent directory and any originally requested security for the object. |
 | [SeAssignSecurityEx](nf-wdm-seassignsecurityex.md) | The SeAssignSecurityEx routine builds a self-relative security descriptor for a new object given the following optional parameters:\_a security descriptor of the object's parent directory, an explicit security descriptor for the object, and the object type. |
+| [SeCaptureSubjectContext](nf-wdm-secapturesubjectcontext.md) | The SeCaptureSubjectContext routine captures the security context of the calling thread for access validation and auditing. |
 | [SeDeassignSecurity](nf-wdm-sedeassignsecurity.md) | The SeDeassignSecurity routine deallocates the memory associated with a security descriptor that was assigned using SeAssignSecurity. |
 | [SeEtwWriteKMCveEvent](nf-wdm-seetwwritekmcveevent.md) | The SeEtwWriteKMCveEvent function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers. |
+| [SeLockSubjectContext](nf-wdm-selocksubjectcontext.md) | The SeLockSubjectContext routine locks the primary and impersonation tokens of a captured subject context. |
+| [SeReleaseSubjectContext](nf-wdm-sereleasesubjectcontext.md) | The SeReleaseSubjectContext routine releases a subject security context captured by an earlier call to SeCaptureSubjectContext. |
+| [SeUnlockSubjectContext](nf-wdm-seunlocksubjectcontext.md) | The SeUnlockSubjectContext routine unlocks the tokens of a captured subject context that were locked by a call to SeLockSubjectContext. |
 | [SeValidSecurityDescriptor](nf-wdm-sevalidsecuritydescriptor.md) | The SeValidSecurityDescriptor routine returns whether a given security descriptor is structurally valid. |
 | [TmCommitComplete](nf-wdm-tmcommitcomplete.md) | The TmCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction. |
 | [TmCommitEnlistment](nf-wdm-tmcommitenlistment.md) | The TmCommitEnlistment routine initiates the commit operation for a specified enlistment's transaction. |
@@ -841,9 +849,11 @@ wdm.h contains the following programming interfaces:
 | [WRITE_PORT_USHORT](nf-wdm-write_port_ushort.md) | The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address. |
 | [WRITE_REGISTER_BUFFER_UCHAR](nf-wdm-write_register_buffer_uchar.md) | The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register. |
 | [WRITE_REGISTER_BUFFER_ULONG](nf-wdm-write_register_buffer_ulong.md) | The WRITE_REGISTER_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified register. |
+| [WRITE_REGISTER_BUFFER_ULONG64](nf-wdm-write_register_buffer_ulong64.md) | The WRITE_REGISTER_BUFFER_ULONG64 function writes a number of ULONG64 values from a buffer to the specified register. |
 | [WRITE_REGISTER_BUFFER_USHORT](nf-wdm-write_register_buffer_ushort.md) | The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register. |
 | [WRITE_REGISTER_UCHAR](nf-wdm-write_register_uchar.md) | The WRITE_REGISTER_UCHAR routine writes a byte to the specified address. |
 | [WRITE_REGISTER_ULONG](nf-wdm-write_register_ulong.md) | The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address. |
+| [WRITE_REGISTER_ULONG64](nf-wdm-write_register_ulong64.md) | The WRITE_REGISTER_ULONG64 function writes a ULONG64 value to the specified address. |
 | [WRITE_REGISTER_USHORT](nf-wdm-write_register_ushort.md) | The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address. |
 | [ZwClose](nf-wdm-zwclose.md) | The ZwClose routine closes an object handle. |
 | [ZwCommitComplete](nf-wdm-zwcommitcomplete.md) | The ZwCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction's data. |
@@ -1116,6 +1126,7 @@ wdm.h contains the following programming interfaces:
 | [_TRANSACTIONMANAGER_RECOVERY_INFORMATION](ns-wdm-_transactionmanager_recovery_information.md) | The TRANSACTIONMANAGER_RECOVERY_INFORMATION structure contains information about a transaction manager object. |
 | [_VPB](ns-wdm-_vpb.md) | The volume parameter block (VPB) structure is used to map a device object that represents a mounted file system volume to a device object that represents a physical or virtual disk device. |
 | [_WORK_QUEUE_ITEM](ns-wdm-_work_queue_item.md) | The WORK_QUEUE_ITEM structure is used to post a work items to a system work queue. |
+| [BATTERY_REPORTING_SCALE](ns-wdm-battery_reporting_scale.md) | Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests. |
 | [CM_Power_Data_s](ns-wdm-cm_power_data_s.md) | The CM_POWER_DATA structure contains information about a device's power management state and capabilities. |
 | [PCI_X_CAPABILITY](ns-wdm-pci_x_capability.md) | The PCI_X_CAPABILITY structure reports the contents of the command and status registers of a device that is compliant with the PCI-X Addendum to the PCI Local Bus Specification. |
 
@@ -1181,3 +1192,4 @@ wdm.h contains the following programming interfaces:
 | [DEVICE_REGISTRY_PROPERTY](ne-wdm-device_registry_property.md) | The DEVICE_REGISTRY_PROPERTY enumeration identifies device properties that are stored in the registry. |
 | [DMA_COMPLETION_STATUS](ne-wdm-dma_completion_status.md) | The DMA_COMPLETION_STATUS enumeration describes the completion status of a DMA transfer. |
 | [POWER_INFORMATION_LEVEL](ne-wdm-power_information_level.md) | Indicates power level information. |
+| [*PPOWER_ACTION](ne-wdm-ppower_action.md) | The POWER_ACTION enumeration identifies the system power actions that can occur on a computer. |

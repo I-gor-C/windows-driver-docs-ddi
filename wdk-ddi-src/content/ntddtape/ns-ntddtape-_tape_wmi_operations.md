@@ -7,13 +7,13 @@ old-location: storage\tape_wmi_operations.htm
 old-project: storage
 ms.assetid: 430d982e-4740-46ad-8391-aba5813a833a
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: "_TAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS structure [Storage Devices], PTAPE_WMI_OPERATIONS, storage.tape_wmi_operations, ntddtape/TAPE_WMI_OPERATIONS, *PTAPE_WMI_OPERATIONS, ntddtape/PTAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS structure pointer [Storage Devices], structs-tape_93f1d9af-45b2-4121-9b4c-70ed7eaf1782.xml, TAPE_WMI_OPERATIONS"
+ms.date: 2/16/2018
+ms.keywords: TAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS structure pointer [Storage Devices], ntddtape/TAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS, ntddtape/PTAPE_WMI_OPERATIONS, storage.tape_wmi_operations, TAPE_WMI_OPERATIONS structure [Storage Devices], _TAPE_WMI_OPERATIONS, *PTAPE_WMI_OPERATIONS, structs-tape_93f1d9af-45b2-4121-9b4c-70ed7eaf1782.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: ntddtape.h
-req.include-header: Ntddchgr.h
+req.include-header: Ntddchgr.h, Minitape.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,7 +40,7 @@ apiname:
 -	TAPE_WMI_OPERATIONS
 product: Windows
 targetos: Windows
-req.typenames: TAPE_WMI_OPERATIONS, *PTAPE_WMI_OPERATIONS
+req.typenames: "*PTAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS"
 ---
 
 # _TAPE_WMI_OPERATIONS structure
@@ -98,7 +98,7 @@ Returns general I/O error data, such as read/write errors, based on the I/O erro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | ntddtape.h (include Ntddchgr.h) |
+| **Header** | ntddtape.h (include Ntddchgr.h, Minitape.h) |
 
 ## See Also
 
@@ -114,4 +114,4 @@ Returns general I/O error data, such as read/write errors, based on the I/O erro
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_WMI_OPERATIONS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_WMI_OPERATIONS structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

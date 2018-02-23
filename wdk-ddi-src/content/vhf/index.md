@@ -37,4 +37,5 @@ vhf.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
+| [_HID_XFER_PACKET](ns-vhf-_hid_xfer_packet.md) | The HID_XFER_PACKET structure contains information about a HID report that the HID class driver uses with I/O requests to get or set a report. |
 | [_VHF_CONFIG](ns-vhf-_vhf_config.md) | Contains initial configuration information that is provided by the HID source driver when it calls VhfCreate to create a virtual HID device. |

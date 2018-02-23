@@ -7,13 +7,13 @@ old-location: storage\port_configuration_information__scsi_.htm
 old-project: storage
 ms.assetid: f3c9d851-d30d-4757-82a3-225ee67528c1
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: "_PORT_CONFIGURATION_INFORMATION, srb/PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, srb/_PORT_CONFIGURATION_INFORMATION, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml, _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION structure [Storage Devices], PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], storage.port_configuration_information__scsi_, *PPORT_CONFIGURATION_INFORMATION"
+ms.date: 2/16/2018
+ms.keywords: PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], *PPORT_CONFIGURATION_INFORMATION, srb/_PORT_CONFIGURATION_INFORMATION, srb/PPORT_CONFIGURATION_INFORMATION, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml, PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, storage.port_configuration_information__scsi_, PORT_CONFIGURATION_INFORMATION structure [Storage Devices], _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], _PORT_CONFIGURATION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: srb.h
-req.include-header: Srb.h
+req.include-header: Srb.h, Storport.h, Strmini.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -174,7 +174,7 @@ Indicates when <b>TRUE</b> that the HBA has 32 address lines and can access memo
 
 `Dma64BitAddresses`
 
-Indicates that the HBA is able to access addresses greater than 4 GB, or 0x0FFFFFFFF if <b>Dma64BitAddresses</b> contains a value of SCSI_DMA64_MINIPORT_SUPPORTED. Prior to Windows 2000 the ScsiPort set this value based on the contents of <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>. This is no longer the case. In Windows 2000 the value of <b>Dma64BitAddresses</b> is determined by the miniport driver callback <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> alone. If the operating system supports a 64-bit address space, the port driver passes a value of SCSI_DMA64_SYSTEM_SUPPORTED to the miniport driver in this member. If the HBA described by PORT_CONFIGURATION_INFORMATION also supports address spaces greater than 32-bits then the port/miniport driver is required to support full 64-bit addressing, and the miniport driver's callback <i>HwScsiFindAdapter</i> indicates this by assigning a value of SCSI_DMA64_MINIPORT_SUPPORTED to <b>Dma64BitAddresses</b>, writing over any previous value assigned by the port driver. The correct value must be assigned to the <b>Dma64BitAddresses</b> member before the miniport driver calls <a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>.
+Indicates that the HBA is able to access addresses greater than 4 GB, or 0x0FFFFFFFF if <b>Dma64BitAddresses</b> contains a value of SCSI_DMA64_MINIPORT_SUPPORTED. Prior to Windows 2000 the ScsiPort set this value based on the contents of <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>. This is no longer the case. In Windows 2000 the value of <b>Dma64BitAddresses</b> is determined by the miniport driver callback <a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a> alone. If the operating system supports a 64-bit address space, the port driver passes a value of SCSI_DMA64_SYSTEM_SUPPORTED to the miniport driver in this member. If the HBA described by PORT_CONFIGURATION_INFORMATION also supports address spaces greater than 32-bits then the port/miniport driver is required to support full 64-bit addressing, and the miniport driver's callback <i>HwScsiFindAdapter</i> indicates this by assigning a value of SCSI_DMA64_MINIPORT_SUPPORTED to <b>Dma64BitAddresses</b>, writing over any previous value assigned by the port driver. The correct value must be assigned to the <b>Dma64BitAddresses</b> member before the miniport driver calls <a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>.
 
 `DmaChannel`
 
@@ -334,31 +334,11 @@ This means that if the miniport driver needs additional space in either the LUN 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | srb.h (include Srb.h) |
+| **Header** | srb.h (include Srb.h, Storport.h, Strmini.h) |
 
 ## See Also
 
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
-
-
-
-<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+<a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a>
 
 
 
@@ -366,12 +346,32 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 
 
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+
+
+
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
+
+
+
+<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+
+
+
+<a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
+
+
+
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 
 
 
- 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_PORT_CONFIGURATION_INFORMATION structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_PORT_CONFIGURATION_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -4,11 +4,11 @@ title: "_UCM_PD_POWER_DATA_OBJECT"
 author: windows-driver-content
 description: Describes a Power Data Object. For information about these members, see the Power Delivery specification.
 old-location: buses\ucm_pd_power_data_object.htm
-old-project: usbref
+old-project: UsbRef
 ms.assetid: C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.author: windowsdriverdev
-ms.date: 2/8/2018
-ms.keywords: UCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], _UCM_PD_POWER_DATA_OBJECT, ucmtypes/PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT, buses.ucm_pd_power_data_object, PUCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT union [Buses]
+ms.date: 2/15/2018
+ms.keywords: PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT union [Buses], buses.ucm_pd_power_data_object, UCM_PD_POWER_DATA_OBJECT, _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], ucmtypes/PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -89,13 +89,107 @@ typedef union _UCM_PD_POWER_DATA_OBJECT {
 
 Contains bitfields describing a battery supply PD object.
 
+
+
+#### MaximumAllowablePowerIn250mW
+
+Describes the maximum allowable power in multiples of 250 mW.
+
+
+
+#### MinimumVoltageIn50mV
+
+Describes the minimum voltage in multiples of 50 mV.
+
+
+
+#### MaximumVoltageIn50mV
+
+Describes the maximum voltage in multiples of 50 mV.
+
+
+
+#### Battery
+
+Battery type.
+
 `Common`
 
+#### Reserved
 
+Reserved.
+
+
+
+#### Type
+
+Type of Power Data Object.
 
 `FixedSupplyPdo`
 
 Describing a Fixed Supply type Power Data Object.
+
+
+
+#### MaximumCurrentIn10mA
+
+Maximum current in multiples of 10 mA.
+
+
+
+#### VoltageIn50mV
+
+Voltage in multiples of 50 mV.
+
+
+
+#### PeakCurrent
+
+Peak current.
+
+
+
+#### Reserved
+
+Reserved for future use.
+
+
+
+#### DataRoleSwap
+
+If set, indicates the Power Data Object can perform a data role swap.
+
+
+
+#### UsbCommunicationCapable
+
+If set, indicates the Power Data Object is USB communication capable. 
+
+
+
+#### ExternallyPowered
+
+If set, indicates the Power Data Object is externally powered.
+
+
+
+#### UsbSuspendSupported
+
+Indicates support for USB suspend.
+
+
+
+
+
+#### DualRolePower
+
+Dual role power
+
+
+
+#### FixedSupply
+
+fixed supply
 
 `Ul`
 
@@ -104,6 +198,30 @@ Size of the structure.
 `VariableSupplyNonBatteryPdo`
 
 Contains bitfields describing a variable-supply non-battery PD object.
+
+
+
+#### MaximumCurrentIn10mA
+
+Describes the maximum current in multiples of 10 mA.
+
+
+
+#### MinimumVoltageIn50mV
+
+Desribes the minimum voltage in multiples of 50 mV.
+
+
+
+#### MaximumVoltageIn50mV
+
+Describes the maximum voltage in multiples of 50 mV.
+
+
+
+#### VariableSupportNonBattery
+
+Variable Support Non Battery type.
 
 
 ## Requirements

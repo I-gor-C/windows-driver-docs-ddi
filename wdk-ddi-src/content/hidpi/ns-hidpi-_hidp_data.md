@@ -7,8 +7,8 @@ old-location: hid\hidp_data.htm
 old-project: hid
 ms.assetid: f48bbf84-027f-4579-b83c-7dfb1cbe6b65
 ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: HIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, PHIDP_DATA structure pointer [Human Input Devices], *PHIDP_DATA, hidpi/HIDP_DATA, hidpi/PHIDP_DATA, HIDP_DATA structure [Human Input Devices], PHIDP_DATA, _HIDP_DATA, hid.hidp_data
+ms.date: 2/15/2018
+ms.keywords: HIDP_DATA structure [Human Input Devices], *PHIDP_DATA, _HIDP_DATA, hidpi/PHIDP_DATA, PHIDP_DATA, PHIDP_DATA structure pointer [Human Input Devices], hid.hidp_data, hidpi/HIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, HIDP_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -91,4 +91,4 @@ See <a href="https://msdn.microsoft.com/d26d169f-4116-4d81-94c7-63c92d22877d">Ex
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_DATA structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_DATA structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

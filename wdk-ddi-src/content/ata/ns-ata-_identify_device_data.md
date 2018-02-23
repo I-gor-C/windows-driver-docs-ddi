@@ -7,8 +7,8 @@ old-location: storage\identify_device_data.htm
 old-project: storage
 ms.assetid: 7f2edd6f-16bf-47a6-8546-7871435a56ac
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: PIDENTIFY_DEVICE_DATA, structs-ATA_904f6e71-4dd9-4ecb-9928-0d7ce44b83ef.xml, IDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA structure pointer [Storage Devices], *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA structure [Storage Devices], _IDENTIFY_DEVICE_DATA, ata/PIDENTIFY_DEVICE_DATA, ata/IDENTIFY_DEVICE_DATA, storage.identify_device_data
+ms.date: 2/16/2018
+ms.keywords: IDENTIFY_DEVICE_DATA structure [Storage Devices], *PIDENTIFY_DEVICE_DATA, ata/IDENTIFY_DEVICE_DATA, structs-ATA_904f6e71-4dd9-4ecb-9928-0d7ce44b83ef.xml, IDENTIFY_DEVICE_DATA, storage.identify_device_data, PIDENTIFY_DEVICE_DATA structure pointer [Storage Devices], ata/PIDENTIFY_DEVICE_DATA, _IDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -324,7 +324,57 @@ typedef struct _IDENTIFY_DEVICE_DATA {
 
 `Capabilities`
 
+#### ReservedByte49
 
+Reserved.
+
+
+
+#### DmaSupported
+
+Indicates that the device supports DMA operations.
+
+
+
+#### LbaSupported
+
+Indicates that the device supports logical block addressing.
+
+
+
+#### IordyDisable
+
+Indicates when set to 1 that I/O channel ready is disabled for the device.
+
+
+
+#### IordySupported
+
+Indicates when set to 1 that I/O channel ready is supported by the device.
+
+
+
+#### Reserved1
+
+Reserved.
+
+
+
+#### StandybyTimerSupport
+
+Indicates when set to 1 that the device supports standby timers.
+
+
+
+#### Reserved2
+
+Reserved.
+
+
+
+#### ReservedWord50
+
+Reserved.
 
 `CfaPowerMode1`
 
@@ -336,13 +386,333 @@ Indicates the checksum.
 
 `CommandSetActive`
 
-####
+#### 
+
+
+
+#### SmartCommands
+
+Indicates when <b>TRUE</b> that the device supports the SMART feature set.
+
+
+
+#### SecurityMode
+
+Indicates when <b>TRUE</b> that the device supports the security mode feature set.
+
+
+
+#### PowerManagement
+
+Indicates when <b>TRUE</b> that the device supports the mandatory power management feature set.
+
+
+
+#### Reserved1
+
+Reserved.
+
+
+
+#### WriteCache
+
+Indicates when <b>TRUE</b> that the device supports a write cache.
+
+
+
+#### LookAhead
+
+Indicates when <b>TRUE</b> that the device supports lookahead.
+
+
+
+#### ReleaseInterrupt
+
+Indicates when <b>TRUE</b> that the device supports release interrupt.
+
+
+
+#### ServiceInterrupt
+
+Indicates when <b>TRUE</b> that the device supports service interrupt.
+
+
+
+#### DeviceReset
+
+Indicates when <b>TRUE</b> that the device supports the device reset command.
+
+
+
+#### HostProtectedArea
+
+Indicates when <b>TRUE</b> that the device supports the host protected area feature set.
+
+
+
+#### Obsolete1
+
+This member is obsolete. Do not use.
+
+
+
+#### WriteBuffer
+
+Indicates when <b>TRUE</b> that the device supports the write buffer command.
+
+
+
+#### ReadBuffer
+
+Indicates when <b>TRUE</b> that the device supports the read buffer command.
+
+
+
+#### Nop
+
+Indicates when <b>TRUE</b> that the device supports the NOP command.
+
+
+
+#### Obsolete2
+
+Obsolete. Do not use.
+
+
+
+#### DownloadMicrocode
+
+Indicates when <b>TRUE</b> that the device supports the DOWNLOAD MICROCODE command.
+
+
+
+#### DmaQueued
+
+Indicates when <b>TRUE</b> that the device supports READ/WRITE DMA QUEUED command.
+
+
+
+#### Cfa
+
+Indicates when <b>TRUE</b> that the device supports the CFA feature set.
+
+
+
+#### AdvancedPm
+
+Indicates when <b>TRUE</b> that the device supports the advanced power management feature set.
+
+
+
+#### Msn
+
+Indicates when <b>TRUE</b> that the device supports the media status notification feature set.
+
+
+
+#### PowerUpInStandby
+
+Indicates when <b>TRUE</b> that the device supports power-up in standby feature set.
+
+
+
+#### ManualPowerUp
+
+Indicates when <b>TRUE</b> that the device supports the SET FEATURES subcommand required to spin up the device after power-up.
+
+
+
+#### Reserved2
+
+Reserved.
+
+
+
+#### SetMax
+
+Indicates when <b>TRUE</b> that the device supports the SET MAX security extension command.
+
+
+
+#### Acoustics
+
+Indicates when <b>TRUE</b> that the device supports the automatic acoustic management feature set.
+
+
+
+#### BigLba
+
+Indicates when <b>TRUE</b> that the device supports the 48-bit address feature set.
+
+
+
+#### Resrved3
+
+Reserved.
 
 `CommandSetActiveExt`
 
+#### Reserved1
 
+Reserved.
 
 `CommandSetSupport`
+
+#### SmartCommands
+
+Indicates when <b>TRUE</b> that the device supports the SMART feature set.
+
+
+
+#### SecurityMode
+
+Indicates when <b>TRUE</b> that the device supports the security mode feature set.
+
+
+
+#### PowerManagement
+
+Indicates when <b>TRUE</b> that the device supports the mandatory power management feature set.
+
+
+
+#### Reserved1
+
+Reserved.
+
+
+
+#### WriteCache
+
+Indicates when <b>TRUE</b> that the device supports a write cache.
+
+
+
+#### LookAhead
+
+Indicates when <b>TRUE</b> that the device supports lookahead.
+
+
+
+#### ReleaseInterrupt
+
+Indicates when <b>TRUE</b> that the device supports release interrupt.
+
+
+
+#### ServiceInterrupt
+
+Indicates when <b>TRUE</b> that the device supports service interrupt.
+
+
+
+#### DeviceReset
+
+Indicates when <b>TRUE</b> that the device supports the device reset command.
+
+
+
+#### HostProtectedArea
+
+Indicates when <b>TRUE</b> that the device supports the host protected area feature set.
+
+
+
+#### Obsolete1
+
+This member is obsolete. Do not use.
+
+
+
+#### WriteBuffer
+
+Indicates when <b>TRUE</b> that the device supports the write buffer command.
+
+
+
+#### ReadBuffer
+
+Indicates when <b>TRUE</b> that the device supports the read buffer command.
+
+
+
+#### Nop
+
+Indicates when <b>TRUE</b> that the device supports the NOP command.
+
+
+
+#### Obsolete2
+
+Obsolete. Do not use.
+
+
+
+#### DownloadMicrocode
+
+Indicates when <b>TRUE</b> that the device supports the DOWNLOAD MICROCODE command.
+
+
+
+#### DmaQueued
+
+Indicates when <b>TRUE</b> that the device supports READ/WRITE DMA QUEUED command.
+
+
+
+#### Cfa
+
+Indicates when <b>TRUE</b> that the device supports the CFA feature set.
+
+
+
+#### AdvancedPm
+
+Indicates when <b>TRUE</b> that the device supports the advanced power management feature set.
+
+
+
+#### Msn
+
+Indicates when <b>TRUE</b> that the device supports the media status notification feature set.
+
+
+
+#### PowerUpInStandby
+
+Indicates when <b>TRUE</b> that the device supports power-up in standby feature set.
+
+
+
+#### ManualPowerUp
+
+Indicates when <b>TRUE</b> that the device supports the SET FEATURES subcommand required to spin up the device after power-up.
+
+
+
+#### Reserved2
+
+Reserved.
+
+
+
+#### SetMax
+
+Indicates when <b>TRUE</b> that the device supports the SET MAX security extension command.
+
+
+
+#### Acoustics
+
+Indicates when <b>TRUE</b> that the device supports the automatic acoustic management feature set.
+
+
+
+#### BigLba
+
+Indicates when <b>TRUE</b> that the device supports the 48-bit address feature set.
+
+
 
 #### Resrved3
 
@@ -408,7 +778,51 @@ Contains the revision number of the device's firmware.
 
 `GeneralConfiguration`
 
+#### Reserved1
 
+Reserved.
+
+
+
+#### Retired3
+
+This member is no longer used.
+
+
+
+#### ResponseIncomplete
+
+Indicates that the response was incomplete.
+
+
+
+#### Retired2
+
+This member is no longer used.
+
+
+
+#### FixedDevice
+
+Indicates when set to 1 that the device is fixed.
+
+
+
+#### RemovableMedia
+
+Indicates when set to 1 that the media is removable.
+
+
+
+#### Retired1
+
+This member is no longer used.
+
+
+
+#### DeviceType
+
+Indicates when set to 1 that the device is an ATA device.
 
 `HardwareResetResult`
 
@@ -512,7 +926,9 @@ Indicates the number of sectors per track.
 
 `NVCacheCapabilities`
 
+#### Reserved1
 
+Reserved.
 
 `NVCacheOptions`
 
@@ -544,7 +960,9 @@ This member is obsolete. Do not use.
 
 `PhysicalLogicalSectorSize`
 
+#### Reserved1
 
+Reserved.
 
 `QueueDepth`
 
@@ -657,6 +1075,12 @@ This member is no longer used.
 `SecurityStatus`
 
 Contains a bitmap that indicates the security status. For more information about the meaning of each individual bit, see the <i>ATA/ATAPI specification</i>.
+
+
+
+#### Reserved1
+
+Reserved.
 
 `SerialAtaCapabilities`
 

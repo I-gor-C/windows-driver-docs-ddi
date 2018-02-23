@@ -7,8 +7,8 @@ old-location: devtest\seetwwritekmcveevent.htm
 old-project: devtest
 ms.assetid: 9CF6C8FC-869A-4667-9859-845BFF093549
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: SeEtwWriteKMCveEvent
+ms.date: 2/20/2018
+ms.keywords: SeEtwWriteKMCveEvent function [Display Devices], SeEtwWriteKMCveEvent, wdm/SeEtwWriteKMCveEvent, devtest.seetwwritekmcveevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt: Available in Windows 10 and later versions of Windows
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: SeEtwWriteKMCveEvent
-req.alt-loc: Ntoskrnl.exe
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -31,6 +29,17 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: Ntoskrnl.exe
 req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	SeEtwWriteKMCveEvent
+product: Windows
+targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
@@ -62,12 +71,37 @@ A pointer to a string giving additional details that the event producer may want
 ## Return Value
 
 <b>SeEtwWriteKMCveEvent</b> returns one of the following values:
+
+<table>
+<tr>
+<th>Return code</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The driver was successfully published
+</dl>
+</td>
+<td width="60%">
+The driver was successfully published
+
+</td>
+</tr>
+<tr>
+<td width="40%">
 <dl>
 <dt><b>ERROR_INVALID_PARAMETER</b></dt>
-</dl>Invalid pointer to CVE-ID passed
+</dl>
+</td>
+<td width="60%">
+Invalid pointer to CVE-ID passed
+
+<div class="alert"><b>Note</b>  Events can be lost for several reasons; for example, if the event rate is too high or if the event size is greater than the buffer size. In these cases, the <b>EventsLost</b> counter, a member of the <a href="https://msdn.microsoft.com/0c967971-8df1-4679-a8a9-a783f5b35860">EVENT_TRACE_PROPERTIES</a> structure for the corresponding logger, is updated with the number of events that were not recorded.</div>
+<div> </div>
+</td>
+</tr>
+</table>
 
 ## Remarks
 
@@ -77,7 +111,35 @@ The <b> 	SeEtwWriteKMCveEvent</b> function publishes a CVE-based event. This fun
 
 Provider GUID: 85a62a0d-7e17-485f-9d4f-749a287193a6
 
-Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit</p>
+Source Name: Microsoft-Windows-Audit-CVE or CVE-Audit
+
+
+#### Examples
+
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>//
+
+NTStatus status;
+UNICODE_STRING CVEID;
+UNICODE_STRING EventDetails;
+
+…
+
+RtlInitUnicodeString(&amp;CVEID, L“CVE-2015-0000”);
+RtlInitUnicodeString(&amp;EventDetails, L”Vulnerable request with data is logged in %temp%\abc.log”);
+
+status = SeEtwWriteKMCveEvent( &amp;CVEID, &amp;EventDetails);
+
+//
+</pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |

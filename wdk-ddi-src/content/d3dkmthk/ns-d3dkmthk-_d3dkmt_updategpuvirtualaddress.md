@@ -7,8 +7,8 @@ old-location: display\d3dkmt_updategpuvirtualaddress.htm
 old-project: display
 ms.assetid: B6586406-6CAD-479F-AE41-93EFBA195B99
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: D3DKMT_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DKMT_UPDATEGPUVIRTUALADDRESS, display.d3dkmt_updategpuvirtualaddress, D3DKMT_UPDATEGPUVIRTUALADDRESS, d3dkmthk/D3DKMT_UPDATEGPUVIRTUALADDRESS
+ms.date: 2/20/2018
+ms.keywords: display.d3dkmt_updategpuvirtualaddress, d3dkmthk/D3DKMT_UPDATEGPUVIRTUALADDRESS, D3DKMT_UPDATEGPUVIRTUALADDRESS, D3DKMT_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DKMT_UPDATEGPUVIRTUALADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,7 +76,9 @@ Specifies the <b>FenceValue</b> for <b>hFenceObject</b> that the map operation s
 
 `Flags`
 
+#### Value
 
+The consolidated value of the <b>Flags</b> union.
 
 `hContext`
 

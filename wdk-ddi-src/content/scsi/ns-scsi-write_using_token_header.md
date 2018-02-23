@@ -7,13 +7,13 @@ old-location: storage\write_using_token_header.htm
 old-project: storage
 ms.assetid: A46ED23A-7DB0-4792-B903-F748BCDAD55E
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: "*PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], PWRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER, storage.write_using_token_header, scsi/PWRITE_USING_TOKEN_HEADER, scsi/WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER structure [Storage Devices]"
+ms.date: 2/16/2018
+ms.keywords: "*PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER, scsi/PWRITE_USING_TOKEN_HEADER, storage.write_using_token_header, PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], WRITE_USING_TOKEN_HEADER structure [Storage Devices], scsi/WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: scsi.h
-req.include-header: Scsi.h
+req.include-header: Scsi.h, Minitape.h, Storport.h
 req.target-type: Windows
 req.target-min-winverclnt: Available starting with Windows 8.
 req.target-min-winversvr: 
@@ -67,11 +67,11 @@ typedef struct _WRITE_USING_TOKEN_HEADER {
 
 `BlockDeviceRangeDescriptor`
 
-An array of <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.
+An array of <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the destination data blocks for the offload write data transfer.
 
 `BlockDeviceRangeDescriptorListLength`
 
-The length, in bytes, for all  of the <a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
+The length, in bytes, for all  of the <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
 
 `BlockOffsetIntoToken`
 
@@ -108,15 +108,15 @@ All multibyte values are in big endian format. Prior to setting, these values mu
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
-| **Header** | scsi.h (include Scsi.h) |
+| **Header** | scsi.h (include Scsi.h, Minitape.h, Storport.h) |
 
 ## See Also
 
-<a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
+<a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
 
 
 
-<a href="..\scsi\ns-scsi-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
+<a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
 
 
 
@@ -124,4 +124,4 @@ All multibyte values are in big endian format. Prior to setting, these values mu
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20WRITE_USING_TOKEN_HEADER structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20WRITE_USING_TOKEN_HEADER structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

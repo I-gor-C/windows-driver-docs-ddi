@@ -86,6 +86,8 @@ srb.h contains the following programming interfaces:
 | [_ACCESS_RANGE](ns-srb-_access_range.md) | An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [_HW_INITIALIZATION_DATA](ns-srb-_hw_initialization_data.md) | Each SCSI miniport driver's DriverEntry routine must initialize with zeros and, then, fill in the relevant HW_INITIALIZATION_DATA (SCSI) information for the OS-specific port driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
 | [_PORT_CONFIGURATION_INFORMATION](ns-srb-_port_configuration_information.md) | PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA. |
+| [_SCSI_PNP_REQUEST_BLOCK](ns-srb-_scsi_pnp_request_block.md) | TheSCSI_PNP_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for plug and play (PNP) requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [_SCSI_POWER_REQUEST_BLOCK](ns-srb-_scsi_power_request_block.md) | The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [_SCSI_REQUEST_BLOCK](ns-srb-_scsi_request_block.md) | SCSI_REQUEST_BLOCK structure |
 | [_SCSI_WMI_REQUEST_BLOCK](ns-srb-_scsi_wmi_request_block.md) | This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands. |
 | [_SRBEX_DATA](ns-srb-_srbex_data.md) | The SRBEX_DATA structure is the generalized format for containing extended SRB data. |
@@ -97,4 +99,13 @@ srb.h contains the following programming interfaces:
 | [_SRBEX_DATA_SCSI_CDB16](ns-srb-_srbex_data_scsi_cdb16.md) | The SRBEX_DATA_SCSI_CDB16 structure contains the extended SRB data for a 16-byte SCSI command data block (CDB). |
 | [_SRBEX_DATA_SCSI_CDB32](ns-srb-_srbex_data_scsi_cdb32.md) | The SRBEX_DATA_SCSI_CDB32 structure contains the extended SRB data for a 32-byte SCSI command data block (CDB). |
 | [_SRBEX_DATA_WMI](ns-srb-_srbex_data_wmi.md) | The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB. |
+| [_STOR_DEVICE_CAPABILITIES](ns-srb-_stor_device_capabilities.md) | The STOR_DEVICE_CAPABILITIES structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP. |
+| [_STOR_DEVICE_CAPABILITIES_EX](ns-srb-_stor_device_capabilities_ex.md) | The STOR_DEVICE_CAPABILITIES_EX structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP. |
 | [_STORAGE_REQUEST_BLOCK](ns-srb-_storage_request_block.md) | The STORAGE_REQUEST_BLOCK is the extended format SCSI Request Block (SRB) structure. |
+
+
+## Enumerations
+| Title | Description |
+| ---- |:---- |
+| [_STOR_DEVICE_POWER_STATE](ne-srb-_stor_device_power_state.md) | The STOR_DEVICE_POWER_STATE enumerator specifies a device power state. |
+| [*PSTOR_POWER_ACTION](ne-srb-pstor_power_action.md) | The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. |

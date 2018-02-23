@@ -43,7 +43,7 @@ mcd.h contains the following programming interfaces:
 | [ChangerReinitializeUnit](nf-mcd-changerreinitializeunit.md) | ChangerReinitializeUnit handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_REINITIALIZE_TRANSPORT. |
 | [ChangerSetAccess](nf-mcd-changersetaccess.md) | ChangerSetAccess handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_SET_ACCESS. |
 | [ChangerSetPosition](nf-mcd-changersetposition.md) | ChangerSetPosition handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_SET_POSITION. |
-| [DriverEntry](nf-mcd-driverentry.md) | DriverEntry is the first routine called after a driver is loaded, and is responsible for initializing the driver. |
+| [DriverEntry](nf-mcd-driverentry.md) | The DriverEntry miniport driver routine is called when the miniport driver is loaded.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 
 
 

@@ -7,13 +7,13 @@ old-location: kernel\read_port_ulong.htm
 old-project: kernel
 ms.assetid: 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: k103_04794cc7-88eb-4456-8613-6fcf9947ebe4.xml, READ_PORT_ULONG routine [Kernel-Mode Driver Architecture], wdm/READ_PORT_ULONG, READ_PORT_ULONG, kernel.read_port_ulong
+ms.date: 2/16/2018
+ms.keywords: READ_PORT_ULONG routine [Kernel-Mode Driver Architecture], READ_PORT_ULONG, kernel.read_port_ulong, k103_04794cc7-88eb-4456-8613-6fcf9947ebe4.xml, wdm/READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Ioaccess.h, Miniport.h
 req.target-type: Universal
 req.target-min-winverclnt: Available starting with Windows 2000.
 req.target-min-winversvr: 
@@ -61,7 +61,7 @@ ULONG READ_PORT_ULONG(
 
 `Port`
 
-Specifies the port address, which must be a mapped range in I/O space.
+
 
 
 ## Return Value
@@ -77,6 +77,6 @@ Callers of <b>READ_PORT_ULONG</b> can be running at any IRQL, assuming the <i>Po
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Ioaccess.h, Miniport.h) |
 | **Library** | Hal.lib |
 | **IRQL** | Any level (see Remarks section) |

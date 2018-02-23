@@ -63,6 +63,7 @@ portcls.h contains the following programming interfaces:
 | [IPortMidi](nn-portcls-iportmidi.md) | The IPortMidi interface is the MIDI port driver's primary interface. |
 | [IPortTopology](nn-portcls-iporttopology.md) | The IPortTopology interface provides generic port driver support to a topology miniport driver. |
 | [IPortWaveCyclic](nn-portcls-iportwavecyclic.md) | The IPortWaveCyclic interface is the WaveCyclic port driver's primary interface. |
+| [IPortWavePci](nn-portcls-iportwavepci.md) | The IPortWavePci interface is the WavePci port driver's primary interface. |
 | [IPortWavePciStream](nn-portcls-iportwavepcistream.md) | The IPortWavePciStream interface is the stream-associated callback interface that provides mapping services to WavePci miniport stream objects. |
 | [IPortWaveRT](nn-portcls-iportwavert.md) | The IPortWaveRT interface is supported in Windows Vista and later operating systems and it is the main interface that the WaveRT port driver exposes to the adapter driver that implements the WaveRT miniport driver object. |
 | [IPortWaveRTStream](nn-portcls-iportwavertstream.md) | The IPortWaveRTStream interface is supported in Windows Vista and later operating systems, and it is a stream-specific interface that provides helper methods for use by the WaveRT miniport driver. |

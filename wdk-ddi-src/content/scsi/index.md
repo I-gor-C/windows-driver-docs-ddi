@@ -24,6 +24,12 @@ scsi.h contains the following programming interfaces:
 | [IOCTL_SCSI_MINIPORT_DSM](ni-scsi-ioctl_scsi_miniport_dsm.md) | A Data Set Management (DSM) notification is transferred to a miniport driver in a IOCTL_SCSI_MINIPORT_DSM control code request. |
 
 
+## Functions
+| Title | Description |
+| ---- |:---- |
+| [FIELD_OFFSET](nf-scsi-field_offset.md) | The FIELD_OFFSET macro returns the byte offset of a named field in a known structure type. |
+| [RtlZeroMemory](nf-scsi-rtlzeromemory.md) | The RtlZeroMemory routine fills a block of memory with zeros, given a pointer to the block and the length, in bytes, to be filled. |
+
 
 
 ## Structures
@@ -45,6 +51,10 @@ scsi.h contains the following programming interfaces:
 | [BLOCK_DEVICE_RANGE_DESCRIPTOR](ns-scsi-block_device_range_descriptor.md) | The BLOCK_DEVICE_RANGE_DESCRIPTOR structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation. |
 | [BLOCK_DEVICE_TOKEN_DESCRIPTOR](ns-scsi-block_device_token_descriptor.md) | BLOCK_DEVICE_TOKEN_DESCRIPTOR contains the token returned from a the POPULATE TOKEN command for an offload read data operation. |
 | [POPULATE_TOKEN_HEADER](ns-scsi-populate_token_header.md) | A populate token parameter list starts with a POPULATE_TOKEN_HEADER structure. This is the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command. |
+| [PRI_REGISTRATION_LIST](ns-scsi-pri_registration_list.md) | The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS. |
+| [PRI_RESERVATION_DESCRIPTOR](ns-scsi-pri_reservation_descriptor.md) | The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
+| [PRI_RESERVATION_LIST](ns-scsi-pri_reservation_list.md) | The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
+| [PRO_PARAMETER_LIST](ns-scsi-pro_parameter_list.md) | The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server. |
 | [RECEIVE_TOKEN_INFORMATION_HEADER](ns-scsi-receive_token_information_header.md) | The RECEIVE_TOKEN_INFORMATION_HEADER structure contains information returned as status from an offload data transfer operation. |
 | [RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER](ns-scsi-receive_token_information_response_header.md) | A token, created as a representation of data (ROD), for an offload read data operation is returned in a RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure. |
 | [RT_PARAMETER_DATA](ns-scsi-rt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |

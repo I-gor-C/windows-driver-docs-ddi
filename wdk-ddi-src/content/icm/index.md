@@ -31,6 +31,8 @@ icm.h contains the following programming interfaces:
 | [WcsGetDefaultColorProfile](nf-icm-wcsgetdefaultcolorprofile.md) | The WcsGetDefaultColorProfile function retrieves the default color profile for a device, or the device-independent default if the device is not specified. |
 | [WcsGetDefaultColorProfileSize](nf-icm-wcsgetdefaultcolorprofilesize.md) | The WcsGetDefaultColorProfileSize function returns the size, in bytes, of the default color profile name for a device, including the NULL terminator. |
 | [WcsGetUsePerUserProfiles](nf-icm-wcsgetuseperuserprofiles.md) | The WcsGetUsePerUserProfiles function determines whether the user has chosen to use a per-user profile association list for the specified device. |
+| [WcsOpenColorProfileA](nf-icm-wcsopencolorprofilea.md) | The WcsOpenColorProfile function creates a handle to a specified color profile. |
+| [WcsOpenColorProfileW](nf-icm-wcsopencolorprofilew.md) | The WcsOpenColorProfile function creates a handle to a specified color profile. |
 | [WcsSetDefaultColorProfile](nf-icm-wcssetdefaultcolorprofile.md) | The WcsSetDefaultColorProfile function sets the default color profile name of the specified profile type in the specified profile management scope. |
 | [WcsSetUsePerUserProfiles](nf-icm-wcssetuseperuserprofiles.md) | The WcsSetUsePerUserProfiles function allows the user to specify whether or not to use a per-user profile association list for the specified device. |
 | [WcsTranslateColors](nf-icm-wcstranslatecolors.md) | The WcsTranslateColors function translates an array of colors from the source color space to the destination color space as defined by a color transform. |

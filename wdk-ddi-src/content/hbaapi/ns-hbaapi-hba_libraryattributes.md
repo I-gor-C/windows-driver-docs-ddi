@@ -7,8 +7,8 @@ old-location: storage\hba_libraryattributes.htm
 old-project: storage
 ms.assetid: 9dc03c5d-5e14-4399-b282-f0385a85a16c
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: HBA_LibraryAttributes, hbaapi/PHBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES, hbaapi/HBA_LibraryAttributes, storage.hba_libraryattributes, HBA_LibraryAttributes structure [Storage Devices], HBA_LIBRARYATTRIBUTES structure [Storage Devices], PHBA_LIBRARYATTRIBUTES structure pointer [Storage Devices], structs-Fibre_1be227ba-622d-475f-811e-2d65de5cbaa8.xml, PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES
+ms.date: 2/16/2018
+ms.keywords: hbaapi/HBA_LibraryAttributes, PHBA_LIBRARYATTRIBUTES, hbaapi/PHBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES, structs-Fibre_1be227ba-622d-475f-811e-2d65de5cbaa8.xml, storage.hba_libraryattributes, PHBA_LIBRARYATTRIBUTES structure pointer [Storage Devices], HBA_LIBRARYATTRIBUTES structure [Storage Devices], HBA_LibraryAttributes, HBA_LibraryAttributes structure [Storage Devices], HBA_LIBRARYATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -83,10 +83,6 @@ Indicates, when <b>TRUE</b>, that the library implements the final and most rece
 `LibPath`
 
 Contains the fully qualified path name of the library DLL file.
-
-`tm`
-
-
 
 `VName`
 

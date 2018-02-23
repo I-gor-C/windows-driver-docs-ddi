@@ -7,8 +7,8 @@ old-location: display\dxgk_gpummucaps.htm
 old-project: display
 ms.assetid: 999820D0-FDEB-49FD-920A-75FD9886492A
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: "_DXGK_GPUMMUCAPS, d3dkmddi/DXGK_GPUMMUCAPS, DXGK_GPUMMUCAPS structure [Display Devices], display.dxgk_gpummucaps, DXGK_GPUMMUCAPS"
+ms.date: 2/20/2018
+ms.keywords: "_DXGK_GPUMMUCAPS, DXGK_GPUMMUCAPS, DXGK_GPUMMUCAPS structure [Display Devices], d3dkmddi/DXGK_GPUMMUCAPS, display.dxgk_gpummucaps"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -85,7 +85,9 @@ The size of a leaf page table when 64KB pages are used. The size must be a multi
 
 `LegacyBehaviors`
 
+#### SourcePageTableVaInTransfer
 
+When set to 1, video memory manager sets <b>SourcePageTable</b> address in <b>TransferVirtual</b> during allocation eviction.
 
 `PageTableLevelCount`
 

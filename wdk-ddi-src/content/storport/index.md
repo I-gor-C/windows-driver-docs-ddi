@@ -18,6 +18,11 @@ storport.h contains the following programming interfaces:
 
 
 
+## IOCTLs
+| Title | Description |
+| ---- |:---- |
+| [IOCTL_SCSI_MINIPORT_DSM](ni-storport-ioctl_scsi_miniport_dsm.md) | A Data Set Management (DSM) notification is transferred to a miniport driver in a IOCTL_SCSI_MINIPORT_DSM control code request. |
+
 
 ## Functions
 | Title | Description |
@@ -43,6 +48,32 @@ storport.h contains the following programming interfaces:
 | [HW_UNIT_CONTROL](nc-storport-hw_unit_control.md) | A miniport driver's HwStorUnitControl routine is called to perform synchronous operations to control the state of storage unit device. The miniport driver is notified to start a unit or handle a power state transition for a unit device. |
 | [HW_WORKITEM](nc-storport-hw_workitem.md) | A miniport-provided callback function for processing a Storport work item request. |
 | [VIRTUAL_HW_FIND_ADAPTER](nc-storport-virtual_hw_find_adapter.md) | The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself. |
+| [FIELD_OFFSET](nf-storport-field_offset.md) | The FIELD_OFFSET macro returns the byte offset of a named field in a known structure type. |
+| [RtlZeroMemory](nf-storport-rtlzeromemory.md) | The RtlZeroMemory routine fills a block of memory with zeros, given a pointer to the block and the length, in bytes, to be filled. |
+| [ScsiPortReadPortBufferUchar](nf-storport-scsiportreadportbufferuchar.md) | The ScsiPortReadPortBufferUchar routine transfers a given number of unsigned byte values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadPortBufferUlong](nf-storport-scsiportreadportbufferulong.md) | The ScsiPortReadPortBufferUlong routine transfers a given number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadPortBufferUshort](nf-storport-scsiportreadportbufferushort.md) | The ScsiPortReadPortBufferUshort routine transfers a given number of USHORT values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadPortUchar](nf-storport-scsiportreadportuchar.md) | The ScsiPortReadPortUchar routine reads an unsigned byte value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadPortUlong](nf-storport-scsiportreadportulong.md) | The ScsiPortReadPortUlong routine reads a ULONG value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadPortUshort](nf-storport-scsiportreadportushort.md) | The ScsiPortReadPortUshort routine reads a USHORT value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadRegisterBufferUchar](nf-storport-scsiportreadregisterbufferuchar.md) | The ScsiPortReadRegisterBufferUchar routine transfers a specified number of unsigned bytes from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadRegisterBufferUlong](nf-storport-scsiportreadregisterbufferulong.md) | The ScsiPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadRegisterBufferUshort](nf-storport-scsiportreadregisterbufferushort.md) | The ScsiPortReadRegisterBufferUshort routine transfers a specified number of USHORT values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadRegisterUchar](nf-storport-scsiportreadregisteruchar.md) | The ScsiPortReadRegisterUchar routine reads an unsigned byte value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadRegisterUlong](nf-storport-scsiportreadregisterulong.md) | The ScsiPortReadRegisterUlong routine reads a ULONG value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortReadRegisterUshort](nf-storport-scsiportreadregisterushort.md) | The ScsiPortReadRegisterUshort routine reads a USHORT value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWritePortBufferUchar](nf-storport-scsiportwriteportbufferuchar.md) | The ScsiPortWritePortBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWritePortBufferUlong](nf-storport-scsiportwriteportbufferulong.md) | The ScsiPortWritePortBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWritePortBufferUshort](nf-storport-scsiportwriteportbufferushort.md) | The ScsiPortWritePortBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWritePortUchar](nf-storport-scsiportwriteportuchar.md) | The ScsiPortWritePortUchar routine transfers an unsigned byte to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWritePortUlong](nf-storport-scsiportwriteportulong.md) | The ScsiPortWritePortUlong routine transfers a ULONG value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWritePortUshort](nf-storport-scsiportwriteportushort.md) | The ScsiPortWritePortUshort routine transfers a USHORT value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWriteRegisterBufferUchar](nf-storport-scsiportwriteregisterbufferuchar.md) | The ScsiPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWriteRegisterBufferUlong](nf-storport-scsiportwriteregisterbufferulong.md) | The ScsiPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWriteRegisterBufferUshort](nf-storport-scsiportwriteregisterbufferushort.md) | The ScsiPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWriteRegisterUchar](nf-storport-scsiportwriteregisteruchar.md) | The ScsiPortWriteRegisterUchar routine transfers a unsigned byte value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWriteRegisterUlong](nf-storport-scsiportwriteregisterulong.md) | The ScsiPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [ScsiPortWriteRegisterUshort](nf-storport-scsiportwriteregisterushort.md) | The ScsiPortWriteRegisterUshort routine transfers a USHORT value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [StorPortAcquireMSISpinLock](nf-storport-storportacquiremsispinlock.md) | The StorPortAcquireMSISpinLock routine acquires the message signaled interrupt (MSI) spin lock that is associated with the specified message. |
 | [StorPortAcquireSpinLock](nf-storport-storportacquirespinlock.md) | The StorPortAcquireSpinLock routine acquires the specified spin lock. |
 | [StorPortAllocateContiguousMemorySpecifyCacheNode](nf-storport-storportallocatecontiguousmemoryspecifycachenode.md) | The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory. |
@@ -191,14 +222,18 @@ storport.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
+| [_ACCESS_RANGE](ns-storport-_access_range.md) | An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [_HW_INITIALIZATION_DATA](ns-storport-_hw_initialization_data.md) | The HW_INITIALIZATION_DATA (Storport) structure contains information particular to each miniport driver and the hardware that the miniport driver manages. |
+| [_INQUIRYDATA](ns-storport-_inquirydata.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
 | [_MEMORY_REGION](ns-storport-_memory_region.md) | The MEMORY_REGION structure describes a region of physically contiguous memory. |
 | [_MESSAGE_INTERRUPT_INFORMATION](ns-storport-_message_interrupt_information.md) | The MESSAGE_INTERRUPT_INFORMATION structure describes a message signaled interrupt (MSI). |
 | [_MINIPORT_DUMP_POINTERS](ns-storport-_miniport_dump_pointers.md) | A Storport miniport driver uses this structure to support the SCSI_REQUEST_BLOCK (SRB) function code SRB_FUNCTION_DUMP_POINTERS. |
 | [_PERF_CONFIGURATION_DATA](ns-storport-_perf_configuration_data.md) | The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine. |
+| [_PORT_CONFIGURATION_INFORMATION](ns-storport-_port_configuration_information.md) | PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA. |
 | [_REPORT_ZONES_DATA](ns-storport-_report_zones_data.md) | Note  This structure is for internal use only and should not be called from your code. . |
 | [_SCSI_PNP_REQUEST_BLOCK](ns-storport-_scsi_pnp_request_block.md) | TheSCSI_PNP_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for plug and play (PNP) requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [_SCSI_POWER_REQUEST_BLOCK](ns-storport-_scsi_power_request_block.md) | The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [_SCSI_REQUEST_BLOCK](ns-storport-_scsi_request_block.md) | SCSI_REQUEST_BLOCK structure |
 | [_SCSI_WMI_REQUEST_BLOCK](ns-storport-_scsi_wmi_request_block.md) | This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands. |
 | [_SES_CONFIGURATION_DIAGNOSTIC_PAGE](ns-storport-_ses_configuration_diagnostic_page.md) | TBD. |
 | [_SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE](ns-storport-_ses_download_microcode_control_diagnostic_page.md) | The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process. |
@@ -238,15 +273,24 @@ storport.h contains the following programming interfaces:
 | [_STOR_UNIT_ATTRIBUTES](ns-storport-_stor_unit_attributes.md) | The STOR_UNIT_ATTRIBUTES structure contains bitfields indicating attribute support for a storage device unit. |
 | [_STORAGE_REQUEST_BLOCK](ns-storport-_storage_request_block.md) | The STORAGE_REQUEST_BLOCK is the extended format SCSI Request Block (SRB) structure. |
 | [_STORPORT_TELEMETRY_EVENT](ns-storport-_storport_telemetry_event.md) | The STORPORT_TELEMETRY_EVENT structure describes the miniport telemetry data payload. |
+| [_TRACK_INFORMATION2](ns-storport-_track_information2.md) | The TRACK_INFORMATION2 structure is used to report track information. |
 | [_VIRTUAL_HW_INITIALIZATION_DATA](ns-storport-_virtual_hw_initialization_data.md) | The VIRTUAL_HW_INITIALIZATION_DATA structure contains information particular to each virtual miniport driver. |
+| [_VPD_THIRD_PARTY_COPY_PAGE](ns-storport-_vpd_third_party_copy_page.md) | The VPD_THIRD_PARTY_COPY_PAGE structure defines the vital product data (VPD) page for offload data transfer operations. |
 | [_VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE](ns-storport-_vpd_zoned_block_device_characteristics_page.md) | Note  This structure is for internal use only and should not be called from your code. . |
+| [_WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR](ns-storport-_windows_block_device_token_limits_descriptor.md) | The WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR structure is the third party copy descriptor for Windows systems. |
 | [_ZONE_DESCRIPTIOR](ns-storport-_zone_descriptior.md) | Note  This structure is for internal use only and should not be called from your code. . |
+| [BLOCK_DEVICE_RANGE_DESCRIPTOR](ns-storport-block_device_range_descriptor.md) | The BLOCK_DEVICE_RANGE_DESCRIPTOR structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation. |
+| [BLOCK_DEVICE_TOKEN_DESCRIPTOR](ns-storport-block_device_token_descriptor.md) | BLOCK_DEVICE_TOKEN_DESCRIPTOR contains the token returned from a the POPULATE TOKEN command for an offload read data operation. |
+| [POPULATE_TOKEN_HEADER](ns-storport-populate_token_header.md) | A populate token parameter list starts with a POPULATE_TOKEN_HEADER structure. This is the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command. |
 | [PRI_REGISTRATION_LIST](ns-storport-pri_registration_list.md) | The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS. |
 | [PRI_RESERVATION_DESCRIPTOR](ns-storport-pri_reservation_descriptor.md) | The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
 | [PRI_RESERVATION_LIST](ns-storport-pri_reservation_list.md) | The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS. |
 | [PRO_PARAMETER_LIST](ns-storport-pro_parameter_list.md) | The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server. |
+| [RECEIVE_TOKEN_INFORMATION_HEADER](ns-storport-receive_token_information_header.md) | The RECEIVE_TOKEN_INFORMATION_HEADER structure contains information returned as status from an offload data transfer operation. |
+| [RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER](ns-storport-receive_token_information_response_header.md) | A token, created as a representation of data (ROD), for an offload read data operation is returned in a RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure. |
 | [RT_PARAMETER_DATA](ns-storport-rt_parameter_data.md) | The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command. |
 | [ST_PARAMETER_DATA](ns-storport-st_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
+| [WRITE_USING_TOKEN_HEADER](ns-storport-write_using_token_header.md) | The WRITE_USING_TOKEN_HEADER structure describes the destination data locations for an offload write data operation. |
 
 
 ## Enumerations

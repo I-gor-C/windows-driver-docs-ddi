@@ -7,8 +7,8 @@ old-location: netvista\ndis_rss_set_indirection_entries.htm
 old-project: netvista
 ms.assetid: 9AB69EC6-FE78-4242-89C7-D36AA16676BF
 ms.author: windowsdriverdev
-ms.date: 1/18/2018
-ms.keywords: NDIS_RSS_SET_INDIRECTION_ENTRIES, PNDIS_RSS_SET_INDIRECTION_ENTRIES, netvista.ndis_rss_set_indirection_entries, NDIS_RSS_SET_INDIRECTION_ENTRIES structure [Network Drivers Starting with Windows Vista], *PNDIS_RSS_SET_INDIRECTION_ENTRIES, _NDIS_RSS_SET_INDIRECTION_ENTRIES, PNDIS_RSS_SET_INDIRECTION_ENTRIES structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRIES, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRIES
+ms.date: 2/16/2018
+ms.keywords: NDIS_RSS_SET_INDIRECTION_ENTRIES structure [Network Drivers Starting with Windows Vista], NDIS_RSS_SET_INDIRECTION_ENTRIES, *PNDIS_RSS_SET_INDIRECTION_ENTRIES, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRIES, _NDIS_RSS_SET_INDIRECTION_ENTRIES, ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRIES, netvista.ndis_rss_set_indirection_entries, PNDIS_RSS_SET_INDIRECTION_ENTRIES, PNDIS_RSS_SET_INDIRECTION_ENTRIES structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	NDIS_RSS_SET_INDIRECTION_ENTRIES
 product: Windows
 targetos: Windows
-req.typenames: NDIS_RSS_SET_INDIRECTION_ENTRIES, *PNDIS_RSS_SET_INDIRECTION_ENTRIES
+req.typenames: "*PNDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES"
 ---
 
 # _NDIS_RSS_SET_INDIRECTION_ENTRIES structure
@@ -98,7 +98,9 @@ The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_ent
 
 ## See Also
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a>
+
+
 
 
 
@@ -106,11 +108,12 @@ The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_ent
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">NDIS_NIC_SWITCH_CAPABILITIES</a>
+
+
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
 
 
 
@@ -118,7 +121,7 @@ The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_ent
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rss-set-indirection-table-entries">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -126,4 +129,4 @@ The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_ent
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_SET_INDIRECTION_ENTRIES structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_SET_INDIRECTION_ENTRIES structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

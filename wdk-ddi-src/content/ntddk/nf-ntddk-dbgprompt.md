@@ -7,8 +7,8 @@ old-location: devtest\dbgprompt.htm
 old-project: devtest
 ms.assetid: 4bb44aab-7032-4cc7-89e3-6ac3bee233d3
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: DbgPrompt
+ms.date: 2/20/2018
+ms.keywords: devtest.dbgprompt, DbgPrompt, DebugFns_bf0bb6f5-3664-4f8d-811e-5d55fbb94081.xml, DbgPrompt routine [Driver Development Tools], ntddk/DbgPrompt
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: DbgPrompt
-req.alt-loc: NtDll.dll,NtosKrnl.exe
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -30,8 +28,20 @@ req.assembly:
 req.type-library: 
 req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql: <= DIRQL
-req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtDll.dll
+-	NtosKrnl.exe
+apiname:
+-	DbgPrompt
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
 ---
 
 
@@ -60,7 +70,7 @@ A pointer to a character array buffer that receives the user's response, includi
 
 `Length`
 
-
+TBD
 
 
 ## Return Value
@@ -73,7 +83,41 @@ The <b>DbgPrompt</b> routine displays the specified prompt string on the kernel 
 
 After <b>DbgPrompt</b> returns, the <i>Response</i> buffer contains the user's response, including the terminating newline character. The user response string is not NULL-terminated.
 
-The following code example asks if the user wants to continue and accepts the letter "y" for yes and the letter "n" for no.</p>
+The following code example asks if the user wants to continue and accepts the letter "y" for yes and the letter "n" for no.
+
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>CHAR Response[2];
+BOOLEAN Continue = FALSE;
+ULONG CharCount;
+for (;;) {
+ CharCount = DbgPrompt(
+  "Do you want to continue? (Type y or n, then type Enter.) ",
+  Response,
+  sizeof(Response)
+  );
+
+ if (CharCount == 2) {
+ if (Response[0] == 'y') {
+  Continue = TRUE;
+  break;
+  } else if (Response[0] == 'n') {
+  break;
+     }
+    }
+
+    //
+    // Incorrect response. Display the prompt again.
+    //
+}
+ </pre>
+</td>
+</tr>
+</table></span></div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,4 +126,4 @@ The following code example asks if the user wants to continue and accepts the le
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |
 | **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
-| **IRQL** | <= DIRQL |
+| **IRQL** | "<= DIRQL" |

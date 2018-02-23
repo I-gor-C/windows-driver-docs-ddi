@@ -7,13 +7,13 @@ old-location: kernel\write_port_ulong.htm
 old-project: kernel
 ms.assetid: fe7c8a20-dadb-4c8d-b208-8fbbf8c719a6
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: wdm/WRITE_PORT_ULONG, WRITE_PORT_ULONG, kernel.write_port_ulong, WRITE_PORT_ULONG routine [Kernel-Mode Driver Architecture], k103_3cc5c915-f77f-4cec-af7c-bee345e2137a.xml
+ms.date: 2/16/2018
+ms.keywords: k103_3cc5c915-f77f-4cec-af7c-bee345e2137a.xml, wdm/WRITE_PORT_ULONG, WRITE_PORT_ULONG routine [Kernel-Mode Driver Architecture], WRITE_PORT_ULONG, kernel.write_port_ulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Ioaccess.h, Miniport.h
 req.target-type: Universal
 req.target-min-winverclnt: Available starting with Windows 2000.
 req.target-min-winversvr: 
@@ -62,11 +62,11 @@ The <b>WRITE_PORT_ULONG</b> routine writes a ULONG value to the specified port a
 
 `Port`
 
-Pointer to the port, which must be a mapped memory range in I/O space.
+
 
 `Value`
 
-Specifies a ULONG value to be written to the port.
+
 
 
 ## Return Value
@@ -82,6 +82,6 @@ Callers of <b>WRITE_PORT_ULONG</b> can be running at any IRQL, assuming the <i>P
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Ioaccess.h, Miniport.h) |
 | **Library** | Hal.lib |
 | **IRQL** | Any level (see Remarks section) |

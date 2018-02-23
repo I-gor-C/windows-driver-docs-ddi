@@ -7,8 +7,8 @@ old-location: pcmcia\pcmcia_interface_standard.htm
 old-project: PCMCIA
 ms.assetid: 3c98fe7b-e60a-4494-b1f0-847a7cbe9d3a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PCMCIA_INTERFACE_STANDARD structure [Buses], memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml, PCMCIA_INTERFACE_STANDARD, _PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, ntddpcm/PCMCIA_INTERFACE_STANDARD, PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], PCMCIA.pcmcia_interface_standard, PPCMCIA_INTERFACE_STANDARD, ntddpcm/PPCMCIA_INTERFACE_STANDARD
+ms.date: 2/15/2018
+ms.keywords: PCMCIA.pcmcia_interface_standard, PPCMCIA_INTERFACE_STANDARD, _PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, ntddpcm/PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD structure [Buses], PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], ntddpcm/PCMCIA_INTERFACE_STANDARD, memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -69,11 +69,11 @@ Pointer to an opaque handle that contains interface context information. Drivers
 
 `InterfaceDereference`
 
-Pointer to the <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
+Pointer to the <a href="..\miniport\nc-miniport-pinterface_dereference.md">InterfaceDereference</a> implementation.
 
 `InterfaceReference`
 
-Pointer to the <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> implementation.
+Pointer to the <a href="..\miniport\nc-miniport-pinterface_reference.md">InterfaceReference</a> implementation.
 
 `IsWriteProtected`
 
@@ -103,11 +103,11 @@ Indicates the version of the returned interface.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
 
 
 
@@ -119,4 +119,4 @@ Indicates the version of the returned interface.
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20PCMCIA_INTERFACE_STANDARD structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCMCIA\buses]:%20PCMCIA_INTERFACE_STANDARD structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

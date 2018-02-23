@@ -7,8 +7,8 @@ old-location: bltooth\brb.htm
 old-project: bltooth
 ms.assetid: b9fc6eb9-6793-442a-a736-18929df14f20
 ms.author: windowsdriverdev
-ms.date: 12/21/2017
-ms.keywords: BRB structure [Bluetooth Devices], bthddi/PBRB, BRB, PBRB structure pointer [Bluetooth Devices], bth_structs_7ccc2ad1-dd10-4ae9-be41-fa79229b32aa.xml, bthddi/BRB, _BRB, PBRB, bltooth.brb, *PBRB
+ms.date: 2/15/2018
+ms.keywords: PBRB, BRB structure [Bluetooth Devices], _BRB, bthddi/BRB, bltooth.brb, *PBRB, bth_structs_7ccc2ad1-dd10-4ae9-be41-fa79229b32aa.xml, BRB, PBRB structure pointer [Bluetooth Devices], bthddi/PBRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -90,28 +90,7 @@ typedef struct _BRB {
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_close_channel.md">_BRB_L2CA_CLOSE_CHANNEL</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_get_device_interface_string.md">
-   _BRB_GET_DEVICE_INTERFACE_STRING</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_update_channel.md">_BRB_L2CA_UPDATE_CHANNEL</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_sco_flush_channel.md">_BRB_SCO_FLUSH_CHANNEL</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_sco_open_channel.md">_BRB_SCO_OPEN_CHANNEL</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_psm.md">_BRB_PSM</a>
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
 
 
 
@@ -123,27 +102,12 @@ typedef struct _BRB {
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_get_local_bd_addr.md">_BRB_GET_LOCAL_BD_ADDR</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_acl_transfer.md">_BRB_L2CA_ACL_TRANSFER</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
 <a href="..\bthddi\ns-bthddi-_brb_acl_enter_active_mode.md">_BRB_ACL_ENTER_ACTIVE_MODE</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_get_system_info.md">_BRB_SCO_GET_SYSTEM_INFO</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_ping.md">_BRB_L2CA_PING</a>
+<a href="..\bthddi\ns-bthddi-_brb_get_device_interface_string.md">
+   _BRB_GET_DEVICE_INTERFACE_STRING</a>
 
 
 
@@ -151,19 +115,23 @@ typedef struct _BRB {
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">_BRB_SCO_GET_CHANNEL_INFO</a>
+<a href="..\bthddi\ns-bthddi-_brb_sco_flush_channel.md">_BRB_SCO_FLUSH_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
+<a href="..\bthddi\ns-bthddi-_brb_sco_get_system_info.md">_BRB_SCO_GET_SYSTEM_INFO</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_close_channel.md">_BRB_SCO_CLOSE_CHANNEL</a>
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_close_channel.md">_BRB_L2CA_CLOSE_CHANNEL</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 
 
@@ -171,12 +139,44 @@ typedef struct _BRB {
 
 
 
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_acl_transfer.md">_BRB_L2CA_ACL_TRANSFER</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_sco_close_channel.md">_BRB_SCO_CLOSE_CHANNEL</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_get_local_bd_addr.md">_BRB_GET_LOCAL_BD_ADDR</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_ping.md">_BRB_L2CA_PING</a>
+
+
+
 <a href="..\bthddi\ns-bthddi-_brb_sco_unregister_server.md">_BRB_SCO_UNREGISTER_SERVER</a>
 
 
 
- 
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_update_channel.md">_BRB_L2CA_UPDATE_CHANNEL</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_psm.md">_BRB_PSM</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_unregister_server.md">_BRB_L2CA_UNREGISTER_SERVER</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">_BRB_SCO_GET_CHANNEL_INFO</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BRB structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

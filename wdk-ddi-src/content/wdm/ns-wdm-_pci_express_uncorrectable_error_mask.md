@@ -7,13 +7,13 @@ old-location: pci\pci_express_uncorrectable_error_mask.htm
 old-project: PCI
 ms.assetid: 0dfc6e49-5556-4163-abef-b00a26a7a2ad
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: PCI.pci_express_uncorrectable_error_mask, PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK union pointer [Buses], *PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, _PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, wdm/PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, wdm/PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, pci_struct_309db853-f6d7-4f88-9a73-861d63a1e927.xml, PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK union [Buses], PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK
+ms.date: 2/15/2018
+ms.keywords: PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, pci_struct_309db853-f6d7-4f88-9a73-861d63a1e927.xml, PCI.pci_express_uncorrectable_error_mask, PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK union pointer [Buses], *PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, wdm/PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, wdm/PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK union [Buses], _PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: wdm.h
-req.include-header: Ntddk.h, Wdm.h
+req.include-header: Ntddk.h, Wdm.h, Miniport.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,7 +40,7 @@ apiname:
 -	PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK
 product: Windows
 targetos: Windows
-req.typenames: "*PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK"
+req.typenames: PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK, *PPCI_EXPRESS_UNCORRECTABLE_ERROR_MASK
 req.product: Windows 10 or later.
 ---
 
@@ -90,7 +90,7 @@ A PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK structure is contained in the <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | wdm.h (include Ntddk.h, Wdm.h) |
+| **Header** | wdm.h (include Ntddk.h, Wdm.h, Miniport.h) |
 
 ## See Also
 
@@ -98,16 +98,16 @@ A PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK structure is contained in the <a href="ht
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 
 
 
- 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK union%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_EXPRESS_UNCORRECTABLE_ERROR_MASK union%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

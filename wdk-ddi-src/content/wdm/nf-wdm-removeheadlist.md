@@ -7,13 +7,13 @@ old-location: kernel\removeheadlist.htm
 old-project: kernel
 ms.assetid: 8748451c-3e57-4acf-b1e6-b80fe7f461d8
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: RemoveHeadList, wdm/RemoveHeadList, k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml, RemoveHeadList routine [Kernel-Mode Driver Architecture], kernel.removeheadlist
+ms.date: 2/16/2018
+ms.keywords: wdm/RemoveHeadList, kernel.removeheadlist, k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml, RemoveHeadList, RemoveHeadList routine [Kernel-Mode Driver Architecture]
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Wudfwdm.h
 req.target-type: Desktop
 req.target-min-winverclnt: Available starting with Windows 2000.
 req.target-min-winversvr: 
@@ -80,22 +80,22 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Wudfwdm.h) |
 | **Library** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
 | **DDI compliance rules** | CancelSpinLock, CompleteRequest, DoubleCompletion, IoAllocateFree, IoReuseIrp, IrpProcessingComplete, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, PendedCompletedRequest, PendedCompletedRequest2, PendedCompletedRequest3, PendedCompletedRequestEx, RemoveLock, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockMnRemove, RemoveLockMnSurpriseRemove, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePnp, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite, InvalidReqAccessLocal, DoubleExFreePool, Init_NdisAllocateIoWorkItem |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
+<a href="..\wudfwdm\nf-wudfwdm-removetaillist.md">RemoveTailList</a>
 
 
 
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializelisthead.md">InitializeListHead</a>
 
 
 
-<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
+<a href="..\wudfwdm\nf-wudfwdm-islistempty.md">IsListEmpty</a>
 
 
 
@@ -103,7 +103,7 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 
 
 
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+<a href="..\wudfwdm\nf-wudfwdm-removeentrylist.md">RemoveEntryList</a>
 
 
 
@@ -111,4 +111,4 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RemoveHeadList routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RemoveHeadList routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

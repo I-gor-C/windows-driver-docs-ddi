@@ -7,8 +7,8 @@ old-location: devtest\etwwrite.htm
 old-project: devtest
 ms.assetid: b9d4f6da-694d-4737-9cbe-3666e693c0a2
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: EtwWrite
+ms.date: 2/20/2018
+ms.keywords: etw_km_af581b5c-6124-4bb0-8756-c4a0009e7a00.xml, EtwWrite, EtwWrite function [Driver Development Tools], devtest.etwwrite, wdm/EtwWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -19,8 +19,6 @@ req.target-min-winverclnt: Available in Windows Vista and later versions of Wind
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: EtwWrite
-req.alt-loc: NtosKrnl.exe
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -31,6 +29,17 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (See Comments section.)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	EtwWrite
+product: Windows
+targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
@@ -96,6 +105,55 @@ If the provider is not enabled for any session, <b>EtwWrite</b> returns STATUS_S
 
 Events can be lost for several reasons; for example, if the event rate is too high or if the event size is greater than the buffer size. In these cases, the <b>EventsLost</b> counter, a member of the EVENT_TRACE_PROPERTIES structure for the corresponding logger, is updated with the number of events that were not recorded.
 
+
+
+<h3><a id="example"></a><a id="EXAMPLE"></a>Example</h3>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre> 
+ //
+ // Register the provider with ETW in DriverEntry
+ // Unregister the provider in DriverUnload 
+    //
+ //  Build the EVENT_DATA_DESCRIPTOR structures using 
+ //   the EventDataDescCreate macros 
+ 
+ if (RegHandle != (REGHANDLE)NULL) {
+ //
+ // Log an Event with : DeviceNameLength
+ //                      DeviceName
+ //                      Status
+ //
+ 
+ EventDataDescCreate(&amp;EventDataDescriptor[0],
+                            (PVOID)&amp;DeviceName.Length,
+ sizeof(USHORT));
+ 
+
+ EventDataDescCreate(&amp;EventDataDescriptor[1],
+                            (PVOID)DeviceName.Buffer,
+ DeviceName.Length);
+ 
+ EventDataDescCreate(&amp;EventDataDescriptor[2],
+                            (PVOID)&amp;Status,
+ sizeof(ULONG));
+ 
+ EtwWrite(RegHandle,            // Handle from EtwRegister
+                 &amp;StartEvent,          // EventDescriptor
+                 NULL,                 // Activity ID
+                 3,                    // Number of data items
+ EventDataDescriptor); // Array of data descriptors
+    }              
+
+//</pre>
+</td>
+</tr>
+</table></span></div>
+
 ## Remarks
 
 The <b>EtwWrite</b> function is the kernel-mode equivalent of the user-mode <b>EventWrite</b> function. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a> or <a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>. 
@@ -118,32 +176,40 @@ You can call <b>EtwWrite</b> at any IRQL. However, when IRQL is greater than APC
 
 ## See Also
 
-<dl>
-<dt>
-<a href="..\wdm\nf-wdm-etwwriteex.md">EtwWriteEx</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-etwwritetransfer.md">EtwWriteTransfer</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-etwwritestring.md">EtwWriteString</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
-</dt>
-<dt>
-<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
-</dt>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=70404">EventDataDescCreate</a></dt>
-<dt>
 <a href="..\wdm\nf-wdm-etwunregister.md">EtwUnregister</a>
-</dt>
-</dl>
- 
+
+
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=70404">EventDataDescCreate</a>
+
+
+
+<a href="..\wdm\nf-wdm-etwwritestring.md">EtwWriteString</a>
+
+
+
+<a href="..\wdm\nf-wdm-etwwriteex.md">EtwWriteEx</a>
+
+
+
+<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
+
+
+
+<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
+
+
+
+<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
+
+
+
+<a href="..\wdm\nf-wdm-etwwritetransfer.md">EtwWriteTransfer</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWrite function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20EtwWrite function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

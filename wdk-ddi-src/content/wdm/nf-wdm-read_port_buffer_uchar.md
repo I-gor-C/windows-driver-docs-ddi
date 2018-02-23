@@ -7,13 +7,13 @@ old-location: kernel\read_port_buffer_uchar.htm
 old-project: kernel
 ms.assetid: a32a7c6a-16dd-4d12-aa32-6bdb60990568
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: wdm/READ_PORT_BUFFER_UCHAR, READ_PORT_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture], kernel.read_port_buffer_uchar, READ_PORT_BUFFER_UCHAR, k103_020afa73-5210-42d8-a2a5-dc9ac663af2c.xml
+ms.date: 2/16/2018
+ms.keywords: k103_020afa73-5210-42d8-a2a5-dc9ac663af2c.xml, READ_PORT_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture], wdm/READ_PORT_BUFFER_UCHAR, kernel.read_port_buffer_uchar, READ_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Miniport.h
 req.target-type: Universal
 req.target-min-winverclnt: Available starting with Windows 2000.
 req.target-min-winversvr: 
@@ -89,6 +89,6 @@ Callers of <b>READ_PORT_BUFFER_UCHAR</b> can be running at any IRQL, assuming th
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Miniport.h) |
 | **Library** | Hal.lib |
 | **IRQL** | Any level (see Remarks section) |

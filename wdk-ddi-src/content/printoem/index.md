@@ -23,6 +23,15 @@ printoem.h contains the following programming interfaces:
 | Title | Description |
 | ---- |:---- |
 | [OEMCUIPCALLBACK](nc-printoem-oemcuipcallback.md) | The OEMCUIPCALLBACK function type is used for defining callback functions that are specified by a user interface plug-in's IPrintOemUI::CommonUIProp method. The structure is defined in printoem.h. |
+| [PFN_DrvGetDriverSetting](nc-printoem-pfn_drvgetdriversetting.md) | The DrvGetDriverSetting function is obsolete. |
+| [PFN_DrvGetStandardVariable](nc-printoem-pfn_drvgetstandardvariable.md) | This DrvGetStandardVariable function is obsolete. |
+| [PFN_DrvUnidriverTextOut](nc-printoem-pfn_drvunidrivertextout.md) | The DrvUnidriverTextOut function is obsolete. |
+| [PFN_DrvUpdateUISetting](nc-printoem-pfn_drvupdateuisetting.md) | The DrvUpdateUISetting function is obsolete. |
+| [PFN_DrvUpgradeRegistrySetting](nc-printoem-pfn_drvupgraderegistrysetting.md) | The DrvUpgradeRegistrySetting function is obsolete. |
+| [PFN_DrvWriteAbortBuf](nc-printoem-pfn_drvwriteabortbuf.md) | The DrvWriteAbortBuf function is obsolete. |
+| [PFN_DrvWriteSpoolBuf](nc-printoem-pfn_drvwritespoolbuf.md) | The DrvWriteSpoolBuf function pointed to by this function pointer is obsolete. |
+| [PFN_DrvXMoveTo](nc-printoem-pfn_drvxmoveto.md) | The DrvXMoveTo function is obsolete. |
+| [PFN_DrvYMoveTo](nc-printoem-pfn_drvymoveto.md) | The DrvYMoveTo function is obsolete. |
 | [PFNGETINFO](nc-printoem-pfngetinfo.md) | The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information. |
 | [OEMAlphaBlend](nf-printoem-oemalphablend.md) | OEMAlphaBlend function |
 | [OEMBitBlt](nf-printoem-oembitblt.md) | The OEMBitBlt function provides general bit-block transfer capabilities between device-managed surfaces, between GDI-managed standard-format bitmaps, or between a device-managed surface and a GDI-managed standard-format bitmap. |

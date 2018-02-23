@@ -7,13 +7,13 @@ old-location: kernel\interlockedexchangeadd.htm
 old-project: kernel
 ms.assetid: f61878b4-6bfa-463e-9fb1-c95171ce65b4
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: InterlockedExchangeAdd, kernel.interlockedexchangeadd, InterlockedExchangeAdd routine [Kernel-Mode Driver Architecture], k102_ed690604-0379-476d-b838-4820f47b850a.xml, wdm/InterlockedExchangeAdd
+ms.date: 2/16/2018
+ms.keywords: kernel.interlockedexchangeadd, InterlockedExchangeAdd routine [Kernel-Mode Driver Architecture], wdm/InterlockedExchangeAdd, k102_ed690604-0379-476d-b838-4820f47b850a.xml, InterlockedExchangeAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Miniport.h
 req.target-type: Universal
 req.target-min-winverclnt: Available starting with Windows 2000.
 req.target-min-winversvr: 
@@ -92,25 +92,25 @@ Interlocked operations cannot be used on non-cached memory.
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Miniport.h) |
 | **Library** | OneCoreUAP.lib on Windows 10 |
 | **IRQL** | Any level |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinterlockedaddulong.md">ExInterlockedAddUlong</a>
-
-
-
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
-
-
-
 <a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
+<a href="..\wdm\nf-wdm-exinterlockedaddulong.md">ExInterlockedAddUlong</a>
+
+
+
+<a href="..\miniport\nf-miniport-interlockeddecrement.md">InterlockedDecrement</a>
+
+
+
+<a href="..\miniport\nf-miniport-interlockedincrement.md">InterlockedIncrement</a>
 
 
 
@@ -118,4 +118,4 @@ Interlocked operations cannot be used on non-cached memory.
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20InterlockedExchangeAdd routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20InterlockedExchangeAdd routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

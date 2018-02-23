@@ -7,8 +7,8 @@ old-location: whea\whea_error_status.htm
 old-project: whea
 ms.assetid: 5b11112b-e900-4894-a9ce-6895a4fa1956
 ms.author: windowsdriverdev
-ms.date: 2/8/2018
-ms.keywords: WHEA_ERROR_STATUS union [WHEA Drivers and Applications], *PWHEA_ERROR_STATUS, whea.whea_error_status, WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], _WHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS, whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, ntddk/PWHEA_ERROR_STATUS
+ms.date: 2/20/2018
+ms.keywords: "*PWHEA_ERROR_STATUS, whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, ntddk/WHEA_ERROR_STATUS, whea.whea_error_status, WHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], _WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_STATUS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -40,7 +40,7 @@ apiname:
 -	WHEA_ERROR_STATUS
 product: Windows
 targetos: Windows
-req.typenames: "*PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS"
+req.typenames: WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
 ---
 
 # _WHEA_ERROR_STATUS structure
@@ -97,7 +97,7 @@ A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_wh
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
 
 
 
@@ -105,4 +105,4 @@ A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_wh
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_STATUS union%20 RELEASE:%20(2/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [whea\whea]:%20WHEA_ERROR_STATUS union%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

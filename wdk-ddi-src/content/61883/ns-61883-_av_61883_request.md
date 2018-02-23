@@ -7,8 +7,8 @@ old-location: ieee\av_61883_request.htm
 old-project: IEEE
 ms.assetid: 697fbf86-5c99-4e35-bcb4-a6f5272cc987
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, AV_61883_REQUEST, 61883/PAV_61883_REQUEST, *PAV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], IEEE.av_61883_request, _AV_61883_REQUEST, AV_61883_REQUEST structure [Buses], 61883/AV_61883_REQUEST, PAV_61883_REQUEST
+ms.date: 2/15/2018
+ms.keywords: 61883/PAV_61883_REQUEST, AV_61883_REQUEST structure [Buses], 61883/AV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, AV_61883_REQUEST, *PAV_61883_REQUEST, PAV_61883_REQUEST, _AV_61883_REQUEST, IEEE.av_61883_request
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -118,4 +118,4 @@ The <b>Parameters-&gt;</b><b>Others.Arguments1</b> member of an <a href="https:/
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20AV_61883_REQUEST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [IEEE\buses]:%20AV_61883_REQUEST structure%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

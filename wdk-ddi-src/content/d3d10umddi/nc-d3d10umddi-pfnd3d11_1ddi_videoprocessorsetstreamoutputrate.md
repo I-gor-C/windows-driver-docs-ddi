@@ -7,7 +7,7 @@ old-location: display\videoprocessorsetstreamoutputrate.htm
 old-project: display
 ms.assetid: fc1236f2-fcbf-4b3f-978f-a34260b78159
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 2/20/2018
 ms.keywords: display.videoprocessorsetstreamoutputrate, pfnVideoProcessorSetStreamOutputRate callback function [Display Devices], pfnVideoProcessorSetStreamOutputRate, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE, d3d10umddi/pfnVideoProcessorSetStreamOutputRate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,20 +106,9 @@ If the driver supports custom rates for rate conversion or inverse telecine, it 
 <div> </div>
 Depending on the output rate, the driver might have to convert the frame rate. If so, the value of the <i>RepeatFrame</i> parameter controls whether the driver creates interpolated frames or repeats input frames.
 
-## Requirements
-| &nbsp; | &nbsp; |
-| ---- |:---- |
-| **Windows version** | Windows 8 Windows Server 2012 |
-| **Target Platform** | Desktop |
-| **Header** | d3d10umddi.h (include D3d10umddi.h) |
-
-## See Also
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcustomrate.md">GetVideoProcessorCustomRate</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
 
 
 
@@ -131,8 +120,23 @@ Depending on the output rate, the driver might have to convert the frame rate. I
 
 
 
- 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
+
+
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcustomrate.md">GetVideoProcessorCustomRate</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE callback function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+
+## Requirements
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Windows version** | Windows 8 Windows Server 2012 |
+| **Target Platform** | Desktop |
+| **Header** | d3d10umddi.h (include D3d10umddi.h) |

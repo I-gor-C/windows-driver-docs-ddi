@@ -174,6 +174,7 @@ ntifs.h contains the following programming interfaces:
 | [IoGetAttachedDevice](nf-ntifs-iogetattacheddevice.md) | The IoGetAttachedDevice routine returns a pointer to the highest-level device object associated with the specified device. |
 | [IoGetAttachedDeviceReference](nf-ntifs-iogetattacheddevicereference.md) | The IoGetAttachedDeviceReference routine returns a pointer to the highest level device object in a driver stack and increments the reference count on that object. |
 | [IoGetBaseFileSystemDeviceObject](nf-ntifs-iogetbasefilesystemdeviceobject.md) | Reserved for system use. |
+| [IoGetConfigurationInformation](nf-ntifs-iogetconfigurationinformation.md) | The IoGetConfigurationInformation routine returns a pointer to the I/O manager's global configuration information structure, which contains the current values for how many physical disk, floppy, CD-ROM, tape, SCSI HBA, serial, and parallel devices have device objects created to represent them by drivers as they are loaded. |
 | [IoGetDeviceAttachmentBaseRef](nf-ntifs-iogetdeviceattachmentbaseref.md) | The IoGetDeviceAttachmentBaseRef routine returns a pointer to the lowest-level device object in a file system or device driver stack. |
 | [IoGetDeviceToVerify](nf-ntifs-iogetdevicetoverify.md) | The IoGetDeviceToVerify routine returns a pointer to the device object, representing a removable-media device, that is the target of the given thread's I/O request. |
 | [IoGetDiskDeviceObject](nf-ntifs-iogetdiskdeviceobject.md) | The IoGetDiskDeviceObject routine retrieves a pointer to the disk device object associated with a given file system volume device object. |
@@ -220,6 +221,7 @@ ntifs.h contains the following programming interfaces:
 | [KeAttachProcess](nf-ntifs-keattachprocess.md) | Obsolete. |
 | [KeDetachProcess](nf-ntifs-kedetachprocess.md) | Obsolete. |
 | [KeGetProcessorIndexFromNumber](nf-ntifs-kegetprocessorindexfromnumber.md) | The KeGetProcessorIndexFromNumber routine converts a group number and a group-relative processor number to a systemwide processor index. |
+| [KeGetProcessorNumberFromIndex](nf-ntifs-kegetprocessornumberfromindex.md) | The KeGetProcessorNumberFromIndex routine converts a systemwide processor index to a group number and a group-relative processor number. |
 | [KeInitializeMutant](nf-ntifs-keinitializemutant.md) | Reserved for system use. |
 | [KeInitializeQueue](nf-ntifs-keinitializequeue.md) | The KeInitializeQueue routine initializes a queue object on which threads can wait for entries. |
 | [KeInsertHeadQueue](nf-ntifs-keinsertheadqueue.md) | The KeInsertHeadQueue routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait. |
@@ -249,6 +251,7 @@ ntifs.h contains the following programming interfaces:
 | [NtAllocateVirtualMemory](nf-ntifs-ntallocatevirtualmemory.md) | The ZwAllocateVirtualMemory routine reserves, commits, or both, a region of pages within the user-mode virtual address space of a specified process. |
 | [NtClose](nf-ntifs-ntclose.md) | The ZwClose routine closes an object handle. |
 | [NtCreateFile](nf-ntifs-ntcreatefile.md) | The ZwCreateFile routine creates a new file or opens an existing file. |
+| [NtCreateSection](nf-ntifs-ntcreatesection.md) | The ZwCreateSection routine creates a section object. |
 | [NtDeviceIoControlFile](nf-ntifs-ntdeviceiocontrolfile.md) | The ZwDeviceIoControlFile routine sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified operation. |
 | [NtDuplicateToken](nf-ntifs-ntduplicatetoken.md) | The ZwDuplicateToken function creates a handle to a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token. |
 | [NtFlushBuffersFileEx](nf-ntifs-ntflushbuffersfileex.md) | The ZwFlushBuffersFileEx routine is called by a file system filter driver to send a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage. |
@@ -268,6 +271,7 @@ ntifs.h contains the following programming interfaces:
 | [NtQueryVolumeInformationFile](nf-ntifs-ntqueryvolumeinformationfile.md) | The ZwQueryVolumeInformationFile routine retrieves information about the volume associated with a given file, directory, storage device, or volume. |
 | [NtReadFile](nf-ntifs-ntreadfile.md) | The ZwReadFile routine reads data from an open file. |
 | [NtSetInformationFile](nf-ntifs-ntsetinformationfile.md) | The ZwSetInformationFile routine changes various kinds of information about a file object. |
+| [NtSetInformationThread](nf-ntifs-ntsetinformationthread.md) | The ZwSetInformationThread routine sets the priority of a thread. |
 | [NtSetInformationToken](nf-ntifs-ntsetinformationtoken.md) | The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information. |
 | [NtSetQuotaInformationFile](nf-ntifs-ntsetquotainformationfile.md) | The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume. |
 | [NtSetSecurityObject](nf-ntifs-ntsetsecurityobject.md) | The ZwSetSecurityObject routine sets an object's security state. |

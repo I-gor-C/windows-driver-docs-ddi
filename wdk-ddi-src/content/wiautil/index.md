@@ -29,6 +29,14 @@ wiautil.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
+| [WIAS_ASSERT](nf-wiautil-wias_assert.md) | The WIAS_ASSERT macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_ERROR](nf-wiautil-wias_error.md) | The WIAS_ERROR macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_HRESULT](nf-wiautil-wias_hresult.md) | The WIAS_HRESULT macro writes a diagnostic message to the Wiatrace.log file. |
+| [WIAS_LERROR](nf-wiautil-wias_lerror.md) | The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the WIAS_ERROR macro be used instead.The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file. |
+| [WIAS_LHRESULT](nf-wiautil-wias_lhresult.md) | The WIAS_LHRESULT macro is obsolete for Windows Vista and later. It is recommended that the WIAS_HRESULT macro be used instead. The WIAS_LHRESULT macro translates an HRESULT value into a string and writes the string to the diagnostic log file. |
+| [WIAS_LTRACE](nf-wiautil-wias_ltrace.md) | The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file. |
+| [WIAS_LWARNING](nf-wiautil-wias_lwarning.md) | The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file. |
+| [WIAS_TRACE](nf-wiautil-wias_trace.md) | The WIAS_TRACE macro writes a diagnostic message to the Wiatrace.log file. |
 | [wiauDbgDump](nf-wiautil-wiaudbgdump.md) | The wiauDbgDump function logs a message containing one or more data values. |
 | [wiauDbgError](nf-wiautil-wiaudbgerror.md) | The wiauDbgError function logs an error message. |
 | [wiauDbgErrorHr](nf-wiautil-wiaudbgerrorhr.md) | The wiauDbgErrorHr function logs a message containing an HRESULT and its error message string. |

@@ -7,8 +7,8 @@ old-location: devtest\wpprecorderdumplivedriverdata.htm
 old-project: devtest
 ms.assetid: FE3DE2A8-8EE5-4F34-BEE6-731987E5F5BD
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: WppRecorderDumpLiveDriverData
+ms.date: 2/20/2018
+ms.keywords: wpprecorder/imp_WppRecorderDumpLiveDriverData, imp_WppRecorderDumpLiveDriverData function [Driver Development Tools], WppRecorderDumpLiveDriverData, devtest.wpprecorderdumplivedriverdata, imp_WppRecorderDumpLiveDriverData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -19,8 +19,6 @@ req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: WppRecorderDumpLiveDriverData
-req.alt-loc: Wpprecorder.h
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -28,21 +26,32 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: wpprecorder.h
 req.dll: 
 req.irql: 
-req.typenames: *PWNODE_HEADER, WNODE_HEADER
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wpprecorder.h
+apiname:
+-	imp_WppRecorderDumpLiveDriverData
+product: Windows
+targetos: Windows
+req.typenames: "*PWNODE_HEADER, WNODE_HEADER"
 req.product: Windows 10 or later.
 ---
 
 
 # WppRecorderDumpLiveDriverData function
-The <a href="..\wpprecorder\nf-wpprecorder-wpprecorderdumplivedriverdata.md">WppRecorderDumpLiveDriverData</a> method gets the buffer associated with the specified Inflight Trace Recorder log.
+The <a href="..\wpprecorder\nf-wpprecorder-imp_wpprecorderdumplivedriverdata.md">WppRecorderDumpLiveDriverData</a> method gets the buffer associated with the specified Inflight Trace Recorder log.
 
 ## Syntax
 
 ````
-NTSTATUS WppRecorderDumpLiveDriverData(
+NTSTATUS imp_WppRecorderDumpLiveDriverData(
    NULL OutBuffer,
    NULL OutBufferLength,
    NULL Guid
@@ -74,3 +83,4 @@ None
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
+| **Library** | wpprecorder.h |

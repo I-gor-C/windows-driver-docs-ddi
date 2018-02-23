@@ -19,6 +19,11 @@ prdrvcom.h contains the following programming interfaces:
 
 
 
+## Functions
+| Title | Description |
+| ---- |:---- |
+| [GetSupportedVersions](nf-prdrvcom-getsupportedversions.md) | The GetSupportedVersions function queries for the Direct3D interface versions that the driver supports. |
+
 
 
 

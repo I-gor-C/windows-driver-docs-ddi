@@ -49,6 +49,7 @@ usbsidebandaudio.h contains the following programming interfaces:
 | [_USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR](ns-usbsidebandaudio-_usbsidebandaudio_endpoint_descriptor.md) | TBD. |
 | [_USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES](ns-usbsidebandaudio-_usbsidebandaudio_ep_shadow_resources.md) | TBD. |
 | [_USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION](ns-usbsidebandaudio-_usbsidebandaudio_ep_shadow_resources_function.md) | TBD. |
+| [_USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS](ns-usbsidebandaudio-_usbsidebandaudio_ep_shadow_resources_params.md) | TBD. |
 | [_USBSIDEBANDAUDIO_MUTE_PARAMS](ns-usbsidebandaudio-_usbsidebandaudio_mute_params.md) | TBD. |
 | [_USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR](ns-usbsidebandaudio-_usbsidebandaudio_sidetone_descriptor.md) | TBD. |
 | [_USBSIDEBANDAUDIO_SIDETONE_PARAMS](ns-usbsidebandaudio-_usbsidebandaudio_sidetone_params.md) | TBD. |

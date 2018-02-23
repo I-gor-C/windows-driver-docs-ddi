@@ -7,13 +7,13 @@ old-location: kernel\read_port_ushort.htm
 old-project: kernel
 ms.assetid: 55f759dc-8fc7-4d47-9b3d-55d8902ed805
 ms.author: windowsdriverdev
-ms.date: 1/4/2018
-ms.keywords: kernel.read_port_ushort, READ_PORT_USHORT, wdm/READ_PORT_USHORT, k103_b7b22427-572f-43d7-b6bd-dcf2dd7ac104.xml, READ_PORT_USHORT routine [Kernel-Mode Driver Architecture]
+ms.date: 2/16/2018
+ms.keywords: READ_PORT_USHORT, k103_b7b22427-572f-43d7-b6bd-dcf2dd7ac104.xml, wdm/READ_PORT_USHORT, READ_PORT_USHORT routine [Kernel-Mode Driver Architecture], kernel.read_port_ushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
 req.header: wdm.h
-req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Ioaccess.h, Miniport.h
 req.target-type: Universal
 req.target-min-winverclnt: Available starting with Windows 2000.
 req.target-min-winversvr: 
@@ -61,7 +61,7 @@ USHORT READ_PORT_USHORT(
 
 `Port`
 
-Specifies the port address, which must be a mapped range in I/O space.
+
 
 
 ## Return Value
@@ -77,6 +77,6 @@ Callers of <b>READ_PORT_USHORT</b> can be running at any IRQL, assuming the <i>P
 | ---- |:---- |
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Universal |
-| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
+| **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Ioaccess.h, Miniport.h) |
 | **Library** | Hal.lib |
 | **IRQL** | Any level (see Remarks section) |

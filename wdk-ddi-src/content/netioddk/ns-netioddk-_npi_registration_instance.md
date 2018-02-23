@@ -7,8 +7,8 @@ old-location: netvista\npi_registration_instance.htm
 old-project: netvista
 ms.assetid: a368f9d9-a7e0-4b35-ba14-b0919f74029d
 ms.author: windowsdriverdev
-ms.date: 1/18/2018
-ms.keywords: PNPI_REGISTRATION_INSTANCE, nmrref_a31a8531-bab8-47d5-b79e-a239dcde475f.xml, NPI_REGISTRATION_INSTANCE structure [Network Drivers Starting with Windows Vista], netioddk/NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE, netioddk/PNPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE structure pointer [Network Drivers Starting with Windows Vista], _NPI_REGISTRATION_INSTANCE, netvista.npi_registration_instance
+ms.date: 2/16/2018
+ms.keywords: NPI_REGISTRATION_INSTANCE, netioddk/NPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE structure pointer [Network Drivers Starting with Windows Vista], nmrref_a31a8531-bab8-47d5-b79e-a239dcde475f.xml, NPI_REGISTRATION_INSTANCE structure [Network Drivers Starting with Windows Vista], _NPI_REGISTRATION_INSTANCE, netvista.npi_registration_instance, netioddk/PNPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -146,7 +146,7 @@ A network module must make sure that the memory for the NPIID pointed to by the
 
 ## See Also
 
-<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
+<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
 
 
 
@@ -154,7 +154,7 @@ A network module must make sure that the memory for the NPIID pointed to by the
 
 
 
-<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
+<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
 
 
 
@@ -162,7 +162,7 @@ A network module must make sure that the memory for the NPIID pointed to by the
 
 
 
-<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 
 
 
@@ -170,4 +170,4 @@ A network module must make sure that the memory for the NPIID pointed to by the
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(1/18/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_REGISTRATION_INSTANCE structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

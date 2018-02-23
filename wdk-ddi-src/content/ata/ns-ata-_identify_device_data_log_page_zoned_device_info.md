@@ -7,8 +7,8 @@ old-location: storage\identify_device_data_log_page_zoned_device_info.htm
 old-project: storage
 ms.assetid: 2F0B6C1F-54CC-47CF-B0D0-A53FAB80AF91
 ms.author: windowsdriverdev
-ms.date: 1/10/2018
-ms.keywords: storage.identify_device_data_log_page_zoned_device_info, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure pointer [Storage Devices], IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure [Storage Devices], ata/IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, ata/PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
+ms.date: 2/16/2018
+ms.keywords: PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure pointer [Storage Devices], _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, ata/IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure [Storage Devices], IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, storage.identify_device_data_log_page_zoned_device_info, ata/PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -96,15 +96,57 @@ N/A
 
 `MaxNumberOfOpenSequentialWriteRequiredZones`
 
+#### Number
 
+N/A
+
+
+
+#### Reserved
+
+N/A
+
+
+
+#### Valid
+
+N/A
 
 `OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones`
 
+#### Number
 
+N/A
+
+
+
+#### Reserved
+
+N/A
+
+
+
+#### Valid
+
+N/A
 
 `OptimalNumberOfOpenSequentialWritePreferredZones`
 
+#### Number
 
+N/A
+
+
+
+#### Reserved
+
+N/A
+
+
+
+#### Valid
+
+N/A
 
 `Reserved`
 
@@ -112,15 +154,51 @@ N/A
 
 `Version`
 
+#### ZacMinorVersion
 
+N/A
+
+
+
+#### Reserved0
+
+N/A
+
+
+
+#### Valid
+
+N/A
 
 `ZonedDeviceCapabilities`
 
+#### URSWRZ
 
+N/A
+
+
+
+#### Reserved
+
+N/A
+
+
+
+#### Valid
+
+N/A
 
 `ZonedDeviceSettings`
 
+#### Reserved
 
+N/A
+
+
+
+#### Valid
+
+N/A
 
 
 ## Requirements
