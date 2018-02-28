@@ -32,7 +32,10 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows-hardware/drivers/ddi/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-driver-docs-ddi",
+      "feedback_product_url": "https://wpdev.uservoice.com/"
     },
     "fileMetadata": {},
     "template": [],
