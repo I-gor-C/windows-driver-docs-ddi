@@ -7,8 +7,8 @@ old-location: print\iprintoemengine.htm
 old-project: print
 ms.assetid: DE86FA8C-2E27-4B39-B52D-6227AF56F399
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintoemengine, IPrintOemEngine interface [Print Devices], IPrintOemEngine interface [Print Devices], described, IPrintOemEngine, prcomoem/IPrintOemEngine
+ms.date: 2/23/2018
+ms.keywords: IPrintOemEngine, IPrintOemEngine interface [Print Devices], IPrintOemEngine interface [Print Devices], described, prcomoem/IPrintOemEngine, print.iprintoemengine
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: prcomoem.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Prcomoem.h
-apiname:
+api_name:
 -	IPrintOemEngine
 -	IPrintOemEngine.EnableDriver
 -	IPrintOemEngine.DisableDriver
@@ -45,7 +45,7 @@ apiname:
 -	IPrintOemEngine.ResetPDEV
 product: Windows
 targetos: Windows
-req.typenames: "*POEMPTOPTS, OEMPTOPTS"
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -59,11 +59,11 @@ req.product: Windows 10 or later.
 
 | Method | Description |
 | ---- |:---- |
-| [prcomoem.IPrintOemEngine.DisableDriver](nf-prcomoem-iprintoemengine-disabledriver.md) | "." |
-| [prcomoem.IPrintOemEngine.DisablePDEV](nf-prcomoem-iprintoemengine-disablepdev.md) | "." |
-| [prcomoem.IPrintOemEngine.EnableDriver](nf-prcomoem-iprintoemengine-enabledriver.md) | "." |
-| [prcomoem.IPrintOemEngine.EnablePDEV](nf-prcomoem-iprintoemengine-enablepdev.md) | "." |
-| [prcomoem.IPrintOemEngine.ResetPDEV](nf-prcomoem-iprintoemengine-resetpdev.md) | "." |
+| [IPrintOemEngine::DisableDriver](nf-prcomoem-iprintoemengine-disabledriver.md) | "." |
+| [IPrintOemEngine::DisablePDEV](nf-prcomoem-iprintoemengine-disablepdev.md) | "." |
+| [IPrintOemEngine::EnableDriver](nf-prcomoem-iprintoemengine-enabledriver.md) | "." |
+| [IPrintOemEngine::EnablePDEV](nf-prcomoem-iprintoemengine-enablepdev.md) | "." |
+| [IPrintOemEngine::ResetPDEV](nf-prcomoem-iprintoemengine-resetpdev.md) | "." |
 
 ## Remarks
 

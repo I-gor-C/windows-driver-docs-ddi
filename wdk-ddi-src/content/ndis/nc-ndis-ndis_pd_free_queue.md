@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 1DE8582C-AF11-4CBA-8F4C-159266A7F3BA
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.ndispdfreequeue, NdisPDFreeQueue callback function [Network Drivers Starting with Windows Vista], NdisPDFreeQueue, NDIS_PD_FREE_QUEUE, NDIS_PD_FREE_QUEUE, ndis/NdisPDFreeQueue
+ms.keywords: NDIS_PD_FREE_QUEUE, NdisPDFreeQueue, NdisPDFreeQueue callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDFreeQueue, netvista.ndispdfreequeue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	NdisPDFreeQueue
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_PD_FREE_QUEUE function
+# NDIS_PD_FREE_QUEUE callback function
 The PacketDirect (PD) platform calls a PD-capable miniport driver's 
    <i>NdisPDFreeQueue</i> function to free a queue.<div class="alert"><b>Note</b>  You must declare the function by using the <b>NDIS_PD_FREE_QUEUE</b> type. For more
    information, see the following Examples section.</div>

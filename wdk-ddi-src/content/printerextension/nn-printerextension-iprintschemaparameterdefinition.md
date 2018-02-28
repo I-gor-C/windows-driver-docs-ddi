@@ -7,8 +7,8 @@ old-location: print\iprintschemaparameterdefinition.htm
 old-project: print
 ms.assetid: 205A4F09-6FE5-459E-A94A-13B1839AF489
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintschemaparameterdefinition, IPrintSchemaParameterDefinition interface [Print Devices], IPrintSchemaParameterDefinition interface [Print Devices], described, IPrintSchemaParameterDefinition, printerextension/IPrintSchemaParameterDefinition
+ms.date: 2/23/2018
+ms.keywords: IPrintSchemaParameterDefinition, IPrintSchemaParameterDefinition interface [Print Devices], IPrintSchemaParameterDefinition interface [Print Devices], described, print.iprintschemaparameterdefinition, printerextension/IPrintSchemaParameterDefinition
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrintSchemaParameterDefinition
 product: Windows
 targetos: Windows
@@ -56,11 +56,11 @@ For more information about the four data types that you can use with the &lt;psf
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrintSchemaParameterDefinition.get_DataType](nf-printerextension-iprintschemaparameterdefinition-get_datatype.md) | The DataType property gets the PrintSchemaParameterDataType enumerated value that indicates the expected data type for the Print Schema parameter. |
-| [printerextension.IPrintSchemaParameterDefinition.get_RangeMax](nf-printerextension-iprintschemaparameterdefinition-get_rangemax.md) | The RangeMax property gets the maximum value of the allowed data range. |
-| [printerextension.IPrintSchemaParameterDefinition.get_RangeMin](nf-printerextension-iprintschemaparameterdefinition-get_rangemin.md) | The RangeMin property gets the minimum value of the allowed data range. |
-| [printerextension.IPrintSchemaParameterDefinition.get_UnitType](nf-printerextension-iprintschemaparameterdefinition-get_unittype.md) | The UnitType property gets the unit type. |
-| [printerextension.IPrintSchemaParameterDefinition.get_UserInputRequired](nf-printerextension-iprintschemaparameterdefinition-get_userinputrequired.md) | The UserInputRequired property gets the Boolean value that indicates whether or not a user input value is required for the Print Schema parameter. |
+| [IPrintSchemaParameterDefinition::get_DataType](nf-printerextension-iprintschemaparameterdefinition-get_datatype.md) | The DataType property gets the PrintSchemaParameterDataType enumerated value that indicates the expected data type for the Print Schema parameter. |
+| [IPrintSchemaParameterDefinition::get_RangeMax](nf-printerextension-iprintschemaparameterdefinition-get_rangemax.md) | The RangeMax property gets the maximum value of the allowed data range. |
+| [IPrintSchemaParameterDefinition::get_RangeMin](nf-printerextension-iprintschemaparameterdefinition-get_rangemin.md) | The RangeMin property gets the minimum value of the allowed data range. |
+| [IPrintSchemaParameterDefinition::get_UnitType](nf-printerextension-iprintschemaparameterdefinition-get_unittype.md) | The UnitType property gets the unit type. |
+| [IPrintSchemaParameterDefinition::get_UserInputRequired](nf-printerextension-iprintschemaparameterdefinition-get_userinputrequired.md) | The UserInputRequired property gets the Boolean value that indicates whether or not a user input value is required for the Print Schema parameter. |
 
 ## Remarks
 
@@ -75,16 +75,16 @@ For more information about the four data types that you can use with the &lt;psf
 
 ## See Also
 
-<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463385.aspx">Print Schema Specification</a>
-
-
-
 <a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
 
 
 
- 
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/gg463385.aspx">Print Schema Specification</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaParameterDefinition interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaParameterDefinition interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

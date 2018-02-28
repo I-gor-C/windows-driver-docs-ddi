@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d85b5c70-4e03-4a12-bc0b-e738d4dab6cf
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackiocanceledonqueue, IQueueCallbackIoCanceledOnQueue interface, IQueueCallbackIoCanceledOnQueue interface, described, IQueueCallbackIoCanceledOnQueue, wudfddi/IQueueCallbackIoCanceledOnQueue, UMDFQueueObjectRef_65c767dc-7b2b-4b25-a546-d0f3fb6fba14.xml, umdf.iqueuecallbackiocanceledonqueue
+ms.keywords: IQueueCallbackIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue interface, IQueueCallbackIoCanceledOnQueue interface, described, UMDFQueueObjectRef_65c767dc-7b2b-4b25-a546-d0f3fb6fba14.xml, umdf.iqueuecallbackiocanceledonqueue, wdf.iqueuecallbackiocanceledonqueue, wudfddi/IQueueCallbackIoCanceledOnQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackIoCanceledOnQueue
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IQueueCallbackIoCanceledOnQueue</b> interface is optional. Your driver ca
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue](nf-wudfddi-iqueuecallbackiocanceledonqueue-oniocanceledonqueue.md) | A driver's OnIoCanceledOnQueue event callback function informs the driver that an I/O request was canceled while it was in an I/O queue. |
+| [IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue](nf-wudfddi-iqueuecallbackiocanceledonqueue-oniocanceledonqueue.md) | A driver's OnIoCanceledOnQueue event callback function informs the driver that an I/O request was canceled while it was in an I/O queue. |
 
 ## Remarks
 

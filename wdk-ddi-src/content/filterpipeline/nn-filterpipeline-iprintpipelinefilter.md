@@ -7,8 +7,8 @@ old-location: print\iprintpipelinefilter.htm
 old-project: print
 ms.assetid: e8841091-1d62-4770-aa85-993b49efbd48
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintpipelinefilter, IPrintPipelineFilter interface [Print Devices], IPrintPipelineFilter interface [Print Devices], described, IPrintPipelineFilter, filterpipeline/IPrintPipelineFilter, filterpipeline_67beec81-fbba-43d2-af2f-ddbc32c68fce.xml
+ms.date: 2/23/2018
+ms.keywords: IPrintPipelineFilter, IPrintPipelineFilter interface [Print Devices], IPrintPipelineFilter interface [Print Devices], described, filterpipeline/IPrintPipelineFilter, filterpipeline_67beec81-fbba-43d2-af2f-ddbc32c68fce.xml, print.iprintpipelinefilter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IPrintPipelineFilter
 product: Windows
 targetos: Windows
@@ -53,9 +53,9 @@ The methods in the <code>IPrintPipelineFilter</code> interface are called for in
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IPrintPipelineFilter.InitializeFilter](nf-filterpipeline-iprintpipelinefilter-initializefilter.md) | The InitializeFilter method initializes a filter. |
-| [filterpipeline.IPrintPipelineFilter.ShutdownOperation](nf-filterpipeline-iprintpipelinefilter-shutdownoperation.md) | The Pipeline Manager uses the ShutdownOperation method to shut down a filter if the print job is canceled or an error occurs. |
-| [filterpipeline.IPrintPipelineFilter.StartOperation](nf-filterpipeline-iprintpipelinefilter-startoperation.md) | The StartOperation method starts the operation of a filter. The filter reads, processes, and writes data in this method. |
+| [IPrintPipelineFilter::InitializeFilter](nf-filterpipeline-iprintpipelinefilter-initializefilter.md) | The InitializeFilter method initializes a filter. |
+| [IPrintPipelineFilter::ShutdownOperation](nf-filterpipeline-iprintpipelinefilter-shutdownoperation.md) | The Pipeline Manager uses the ShutdownOperation method to shut down a filter if the print job is canceled or an error occurs. |
+| [IPrintPipelineFilter::StartOperation](nf-filterpipeline-iprintpipelinefilter-startoperation.md) | The StartOperation method starts the operation of a filter. The filter reads, processes, and writes data in this method. |
 
 ## Remarks
 

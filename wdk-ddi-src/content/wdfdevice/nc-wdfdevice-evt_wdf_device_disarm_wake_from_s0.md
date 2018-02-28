@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: e944c299-d0b4-4ee3-8f46-0458807e4cee
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicedisarmwakefroms0, EvtDeviceDisarmWakeFromS0 callback function, EvtDeviceDisarmWakeFromS0, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, wdfdevice/EvtDeviceDisarmWakeFromS0, DFDeviceObjectGeneralRef_75c64592-ec2c-471f-9f9d-484ab181e432.xml, kmdf.evtdevicedisarmwakefroms0
+ms.keywords: DFDeviceObjectGeneralRef_75c64592-ec2c-471f-9f9d-484ab181e432.xml, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, EvtDeviceDisarmWakeFromS0, EvtDeviceDisarmWakeFromS0 callback function, kmdf.evtdevicedisarmwakefroms0, wdf.evtdevicedisarmwakefroms0, wdfdevice/EvtDeviceDisarmWakeFromS0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceDisarmWakeFromS0
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0 function
+# EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0 callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceDisarmWakeFromS0</i> event callback function disarms (that is, disables) a device's ability to trigger a wake signal while in a low-power device state, if the system remains in the <a href="https://msdn.microsoft.com/93ab0943-a4cc-4ef0-a250-1c63b2c915d5">system working state</a> (S0).
@@ -133,11 +133,11 @@ The <b>EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0</b> function type is defined in the Wd
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_s0.md">EvtDeviceArmWakeFromS0</a>
-
-
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx.md">EvtDeviceDisarmWakeFromSx</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_s0.md">EvtDeviceArmWakeFromS0</a>
 
 
 

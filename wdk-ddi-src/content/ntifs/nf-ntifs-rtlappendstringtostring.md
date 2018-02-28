@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: "<= APC_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	RtlAppendStringToString
 product: Windows
 targetos: Windows
@@ -89,15 +89,15 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
-
-
-
 <a href="..\wudfwdm\nf-wudfwdm-rtlappendunicodetostring.md">RtlAppendUnicodeToString</a>
 
 
 
 <a href="..\wudfwdm\nf-wudfwdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>
 
 
 

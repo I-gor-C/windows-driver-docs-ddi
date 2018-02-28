@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ada475ae-e697-475c-b461-8e3a36ae9ab1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfdriver, IWDFDriver interface, IWDFDriver interface, described, IWDFDriver, wudfddi/IWDFDriver, UMDFDriverObjectRef_2bce205e-d670-4dae-870a-f5b01c3ea49e.xml, umdf.iwdfdriver
+ms.keywords: IWDFDriver, IWDFDriver interface, IWDFDriver interface, described, UMDFDriverObjectRef_2bce205e-d670-4dae-870a-f5b01c3ea49e.xml, umdf.iwdfdriver, wdf.iwdfdriver, wudfddi/IWDFDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFDriver
 product: Windows
 targetos: Windows
@@ -56,12 +56,12 @@ The <b>IWDFDriver</b> interface exposes the framework driver object that represe
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFDriver.CreateDevice](nf-wudfddi-iwdfdriver-createdevice.md) | The CreateDevice method configures and creates a new framework device object. |
-| [wudfddi.IWDFDriver.CreatePreallocatedWdfMemory](nf-wudfddi-iwdfdriver-createpreallocatedwdfmemory.md) | The CreatePreallocatedWdfMemory method creates a framework memory object for the specified buffer. |
-| [wudfddi.IWDFDriver.CreateWdfMemory](nf-wudfddi-iwdfdriver-createwdfmemory.md) | The CreateWdfMemory method creates a framework memory object and allocates, for the memory object, a data buffer of the specified nonzero size. |
-| [wudfddi.IWDFDriver.CreateWdfObject](nf-wudfddi-iwdfdriver-createwdfobject.md) | The CreateWdfObject method creates a custom (or user) WDF object from a parent WDF object. |
-| [wudfddi.IWDFDriver.IsVersionAvailable](nf-wudfddi-iwdfdriver-isversionavailable.md) | The IsVersionAvailable method determines whether the specified version of the framework is available. |
-| [wudfddi.IWDFDriver.RetrieveVersionString](nf-wudfddi-iwdfdriver-retrieveversionstring.md) | The RetrieveVersionString method retrieves the version of the framework. |
+| [IWDFDriver::CreateDevice](nf-wudfddi-iwdfdriver-createdevice.md) | The CreateDevice method configures and creates a new framework device object. |
+| [IWDFDriver::CreatePreallocatedWdfMemory](nf-wudfddi-iwdfdriver-createpreallocatedwdfmemory.md) | The CreatePreallocatedWdfMemory method creates a framework memory object for the specified buffer. |
+| [IWDFDriver::CreateWdfMemory](nf-wudfddi-iwdfdriver-createwdfmemory.md) | The CreateWdfMemory method creates a framework memory object and allocates, for the memory object, a data buffer of the specified nonzero size. |
+| [IWDFDriver::CreateWdfObject](nf-wudfddi-iwdfdriver-createwdfobject.md) | The CreateWdfObject method creates a custom (or user) WDF object from a parent WDF object. |
+| [IWDFDriver::IsVersionAvailable](nf-wudfddi-iwdfdriver-isversionavailable.md) | The IsVersionAvailable method determines whether the specified version of the framework is available. |
+| [IWDFDriver::RetrieveVersionString](nf-wudfddi-iwdfdriver-retrieveversionstring.md) | The RetrieveVersionString method retrieves the version of the framework. |
 
 ## Remarks
 

@@ -2,7 +2,7 @@
 UID: NA:video
 ms.assetid: 674c88a6-47af-3f20-8f7a-e79f72def812
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,45 +22,6 @@ video.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
-| [PDRIVER_IO_PORT_UCHAR](nc-video-pdriver_io_port_uchar.md) | SvgaHwIoPortUchar traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending UCHAR-sized data. |
-| [PDRIVER_IO_PORT_UCHAR_STRING](nc-video-pdriver_io_port_uchar_string.md) | SvgaHwIoPortUcharString traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of UCHAR-sized data. |
-| [PDRIVER_IO_PORT_ULONG](nc-video-pdriver_io_port_ulong.md) | SvgaHwIoPortUlong traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data. |
-| [PDRIVER_IO_PORT_ULONG_STRING](nc-video-pdriver_io_port_ulong_string.md) | SvgaHwIoPortUlongString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data. |
-| [PDRIVER_IO_PORT_USHORT](nc-video-pdriver_io_port_ushort.md) | SvgaHwIoPortUshort traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data. |
-| [PDRIVER_IO_PORT_USHORT_STRING](nc-video-pdriver_io_port_ushort_string.md) | SvgaHwIoPortUshortString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data. |
-| [PEXECUTE_DMA](nc-video-pexecute_dma.md) | HwVidExecuteDma is a miniport driver-implemented callback routine that is responsible for retrieving physical address/length pairs from a scatter/gather list, and for programming the hardware to start the actual DMA transfer. |
-| [PI2C_READ](nc-video-pi2c_read.md) | The I2CRead function reads data over the I2C channel. |
-| [PI2C_START](nc-video-pi2c_start.md) | The I2CStart function starts I2C communication. |
-| [PI2C_STOP](nc-video-pi2c_stop.md) | The I2CStop function ends I2C communication. |
-| [PI2C_WRITE](nc-video-pi2c_write.md) | The I2CWrite function writes data over the I2C channel. |
-| [PINT10_ALLOCATE_BUFFER](nc-video-pint10_allocate_buffer.md) | The Int10AllocateBuffer function can be used to allocate a single 4 KB block of memory in the context of another thread. After the block of memory has been allocated, it must be freed before another block of memory can be allocated. |
-| [PINT10_CALL_BIOS](nc-video-pint10_call_bios.md) | The Int10CallBios function allows a miniport driver to call the kernel to perform an INT 10h operation, causing the BIOS ROM code on the device to execute natively. |
-| [PINT10_FREE_BUFFER](nc-video-pint10_free_buffer.md) | The Int10FreeBuffer function frees a buffer previously allocated by Int10AllocateBuffer. |
-| [PINT10_READ_MEMORY](nc-video-pint10_read_memory.md) | The Int10ReadMemory function reads a block of memory in the context of another thread and stores it in an output buffer. |
-| [PINT10_WRITE_MEMORY](nc-video-pint10_write_memory.md) | The Int10WriteMemory function writes the contents of an input buffer to memory in the context of another thread. |
-| [PMINIPORT_DPC_ROUTINE](nc-video-pminiport_dpc_routine.md) | The HwVidDpcRoutine function is a miniport driver-implemented callback that is called when a queued DPC gets scheduled. |
-| [PMINIPORT_GET_REGISTRY_ROUTINE](nc-video-pminiport_get_registry_routine.md) | HwVidQueryNamedValueCallback processes the specified data retrieved from the registry. |
-| [PMINIPORT_QUERY_DEVICE_ROUTINE](nc-video-pminiport_query_device_routine.md) | HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure. |
-| [PMINIPORT_SYNCHRONIZE_ROUTINE](nc-video-pminiport_synchronize_routine.md) | HwVidSynchronizeExecutionCallback is an optional miniport driver function, passed in calls to VideoPortSynchronizeExecution. |
-| [PROTECT_WC_MEMORY](nc-video-protect_wc_memory.md) | The VideoPortProtectWCMemory callback routine protects Write Combined (WC) video memory from being accessed by the CPU. |
-| [PVIDEO_BUGCHECK_CALLBACK](nc-video-pvideo_bugcheck_callback.md) | The HwVidBugcheckCallback function enables the miniport driver to append data to a dump file when a bug check occurs. |
-| [PVIDEO_HW_FIND_ADAPTER](nc-video-pvideo_hw_find_adapter.md) | HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver. |
-| [PVIDEO_HW_GET_CHILD_DESCRIPTOR](nc-video-pvideo_hw_get_child_descriptor.md) | HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter. |
-| [PVIDEO_HW_INITIALIZE](nc-video-pvideo_hw_initialize.md) | HwVidInitialize performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver. |
-| [PVIDEO_HW_INTERRUPT](nc-video-pvideo_hw_interrupt.md) | HwVidInterrupt detects and dismisses interrupts generated by the associated video adapter. |
-| [PVIDEO_HW_LEGACYRESOURCES](nc-video-pvideo_hw_legacyresources.md) | HwVidLegacyResources returns a list of resources that are not listed in a device's PCI configuration space but that are decoded by the device. |
-| [PVIDEO_HW_POWER_GET](nc-video-pvideo_hw_power_get.md) | HwVidGetPowerState queries whether the device can support the requested power state. |
-| [PVIDEO_HW_POWER_SET](nc-video-pvideo_hw_power_set.md) | HwVidSetPowerState sets the power state of the specified device. |
-| [PVIDEO_HW_QUERY_INTERFACE](nc-video-pvideo_hw_query_interface.md) | HwVidQueryInterface returns a miniport driver-implemented functional interface that a child device can call. |
-| [PVIDEO_HW_RESET_HW](nc-video-pvideo_hw_reset_hw.md) | HwVidResetHw resets the adapter to character mode. |
-| [PVIDEO_HW_START_IO](nc-video-pvideo_hw_start_io.md) | HwVidStartIO processes the specified VRP. |
-| [PVIDEO_HW_TIMER](nc-video-pvideo_hw_timer.md) | HwVidTimer is a video miniport driver routine called at timed intervals by the video port driver. |
-| [PVIDEO_PORT_GET_PROC_ADDRESS](nc-video-pvideo_port_get_proc_address.md) | The VideoPortGetProcAddress callback routine retrieves the address of a Windows 2000 or later video port driver function. |
-| [PVIDEO_READ_CLOCK_LINE](nc-video-pvideo_read_clock_line.md) | ReadClockLine reads a single data bit from the I2C serial clock line. |
-| [PVIDEO_READ_DATA_LINE](nc-video-pvideo_read_data_line.md) | ReadDataLine reads a single data bit from the I2C serial data line. |
-| [PVIDEO_WRITE_CLOCK_LINE](nc-video-pvideo_write_clock_line.md) | WriteClockLine sets the I2C serial clock line to high or low. |
-| [PVIDEO_WRITE_DATA_LINE](nc-video-pvideo_write_data_line.md) | WriteDataLine sets the I2C serial data line to high or low. |
-| [RESTORE_WC_MEMORY](nc-video-restore_wc_memory.md) | The VideoPortRestoreWCMemory callback routine restores Write Combined video memory from a protected state after the VideoPortProtectWCMemory callback routine was called. |
 | [VideoPortAcquireDeviceLock](nf-video-videoportacquiredevicelock.md) | The VideoPortAcquireDeviceLock function acquires the device lock maintained by the video port driver. |
 | [VideoPortAcquireSpinLock](nf-video-videoportacquirespinlock.md) | The VideoPortAcquireSpinLock function obtains the specified spin lock. |
 | [VideoPortAcquireSpinLockAtDpcLevel](nf-video-videoportacquirespinlockatdpclevel.md) | The VideoPortAcquireSpinLockAtDpcLevel function acquires a spin lock when the caller is already running at IRQL = DISPATCH_LEVEL. |
@@ -175,6 +136,49 @@ video.h contains the following programming interfaces:
 | [VideoPortZeroDeviceMemory](nf-video-videoportzerodevicememory.md) | The VideoPortZeroDeviceMemory function fills an adapter frame buffer or other device memory with zeros. |
 | [VideoPortZeroMemory](nf-video-videoportzeromemory.md) | The VideoPortZeroMemory function fills a block of system memory with zeros. |
 
+
+## Callback functions
+| Title | Description |
+| ---- |:---- |
+| [PDRIVER_IO_PORT_UCHAR](nc-video-pdriver_io_port_uchar.md) | SvgaHwIoPortUchar traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending UCHAR-sized data. |
+| [PDRIVER_IO_PORT_UCHAR_STRING](nc-video-pdriver_io_port_uchar_string.md) | SvgaHwIoPortUcharString traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of UCHAR-sized data. |
+| [PDRIVER_IO_PORT_ULONG](nc-video-pdriver_io_port_ulong.md) | SvgaHwIoPortUlong traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data. |
+| [PDRIVER_IO_PORT_ULONG_STRING](nc-video-pdriver_io_port_ulong_string.md) | SvgaHwIoPortUlongString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data. |
+| [PDRIVER_IO_PORT_USHORT](nc-video-pdriver_io_port_ushort.md) | SvgaHwIoPortUshort traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data. |
+| [PDRIVER_IO_PORT_USHORT_STRING](nc-video-pdriver_io_port_ushort_string.md) | SvgaHwIoPortUshortString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data. |
+| [PEXECUTE_DMA](nc-video-pexecute_dma.md) | HwVidExecuteDma is a miniport driver-implemented callback routine that is responsible for retrieving physical address/length pairs from a scatter/gather list, and for programming the hardware to start the actual DMA transfer. |
+| [PI2C_READ](nc-video-pi2c_read.md) | The I2CRead function reads data over the I2C channel. |
+| [PI2C_START](nc-video-pi2c_start.md) | The I2CStart function starts I2C communication. |
+| [PI2C_STOP](nc-video-pi2c_stop.md) | The I2CStop function ends I2C communication. |
+| [PI2C_WRITE](nc-video-pi2c_write.md) | The I2CWrite function writes data over the I2C channel. |
+| [PINT10_ALLOCATE_BUFFER](nc-video-pint10_allocate_buffer.md) | The Int10AllocateBuffer function can be used to allocate a single 4 KB block of memory in the context of another thread. After the block of memory has been allocated, it must be freed before another block of memory can be allocated. |
+| [PINT10_CALL_BIOS](nc-video-pint10_call_bios.md) | The Int10CallBios function allows a miniport driver to call the kernel to perform an INT 10h operation, causing the BIOS ROM code on the device to execute natively. |
+| [PINT10_FREE_BUFFER](nc-video-pint10_free_buffer.md) | The Int10FreeBuffer function frees a buffer previously allocated by Int10AllocateBuffer. |
+| [PINT10_READ_MEMORY](nc-video-pint10_read_memory.md) | The Int10ReadMemory function reads a block of memory in the context of another thread and stores it in an output buffer. |
+| [PINT10_WRITE_MEMORY](nc-video-pint10_write_memory.md) | The Int10WriteMemory function writes the contents of an input buffer to memory in the context of another thread. |
+| [PMINIPORT_DPC_ROUTINE](nc-video-pminiport_dpc_routine.md) | The HwVidDpcRoutine function is a miniport driver-implemented callback that is called when a queued DPC gets scheduled. |
+| [PMINIPORT_GET_REGISTRY_ROUTINE](nc-video-pminiport_get_registry_routine.md) | HwVidQueryNamedValueCallback processes the specified data retrieved from the registry. |
+| [PMINIPORT_QUERY_DEVICE_ROUTINE](nc-video-pminiport_query_device_routine.md) | HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure. |
+| [PMINIPORT_SYNCHRONIZE_ROUTINE](nc-video-pminiport_synchronize_routine.md) | HwVidSynchronizeExecutionCallback is an optional miniport driver function, passed in calls to VideoPortSynchronizeExecution. |
+| [PROTECT_WC_MEMORY](nc-video-protect_wc_memory.md) | The VideoPortProtectWCMemory callback routine protects Write Combined (WC) video memory from being accessed by the CPU. |
+| [PVIDEO_BUGCHECK_CALLBACK](nc-video-pvideo_bugcheck_callback.md) | The HwVidBugcheckCallback function enables the miniport driver to append data to a dump file when a bug check occurs. |
+| [PVIDEO_HW_FIND_ADAPTER](nc-video-pvideo_hw_find_adapter.md) | HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver. |
+| [PVIDEO_HW_GET_CHILD_DESCRIPTOR](nc-video-pvideo_hw_get_child_descriptor.md) | HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter. |
+| [PVIDEO_HW_INITIALIZE](nc-video-pvideo_hw_initialize.md) | HwVidInitialize performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver. |
+| [PVIDEO_HW_INTERRUPT](nc-video-pvideo_hw_interrupt.md) | HwVidInterrupt detects and dismisses interrupts generated by the associated video adapter. |
+| [PVIDEO_HW_LEGACYRESOURCES](nc-video-pvideo_hw_legacyresources.md) | HwVidLegacyResources returns a list of resources that are not listed in a device's PCI configuration space but that are decoded by the device. |
+| [PVIDEO_HW_POWER_GET](nc-video-pvideo_hw_power_get.md) | HwVidGetPowerState queries whether the device can support the requested power state. |
+| [PVIDEO_HW_POWER_SET](nc-video-pvideo_hw_power_set.md) | HwVidSetPowerState sets the power state of the specified device. |
+| [PVIDEO_HW_QUERY_INTERFACE](nc-video-pvideo_hw_query_interface.md) | HwVidQueryInterface returns a miniport driver-implemented functional interface that a child device can call. |
+| [PVIDEO_HW_RESET_HW](nc-video-pvideo_hw_reset_hw.md) | HwVidResetHw resets the adapter to character mode. |
+| [PVIDEO_HW_START_IO](nc-video-pvideo_hw_start_io.md) | HwVidStartIO processes the specified VRP. |
+| [PVIDEO_HW_TIMER](nc-video-pvideo_hw_timer.md) | HwVidTimer is a video miniport driver routine called at timed intervals by the video port driver. |
+| [PVIDEO_PORT_GET_PROC_ADDRESS](nc-video-pvideo_port_get_proc_address.md) | The VideoPortGetProcAddress callback routine retrieves the address of a Windows 2000 or later video port driver function. |
+| [PVIDEO_READ_CLOCK_LINE](nc-video-pvideo_read_clock_line.md) | ReadClockLine reads a single data bit from the I2C serial clock line. |
+| [PVIDEO_READ_DATA_LINE](nc-video-pvideo_read_data_line.md) | ReadDataLine reads a single data bit from the I2C serial data line. |
+| [PVIDEO_WRITE_CLOCK_LINE](nc-video-pvideo_write_clock_line.md) | WriteClockLine sets the I2C serial clock line to high or low. |
+| [PVIDEO_WRITE_DATA_LINE](nc-video-pvideo_write_data_line.md) | WriteDataLine sets the I2C serial data line to high or low. |
+| [RESTORE_WC_MEMORY](nc-video-restore_wc_memory.md) | The VideoPortRestoreWCMemory callback routine restores Write Combined video memory from a protected state after the VideoPortProtectWCMemory callback routine was called. |
 
 
 ## Structures

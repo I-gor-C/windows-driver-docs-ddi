@@ -7,8 +7,8 @@ old-location: print\iprinterqueue_interface.htm
 old-project: print
 ms.assetid: 2DB57234-E783-4C6B-A743-F1E9F7D34D97
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprinterqueue_interface, IPrinterQueue interface [Print Devices], IPrinterQueue interface [Print Devices], described, IPrinterQueue, printerextension/IPrinterQueue
+ms.date: 2/23/2018
+ms.keywords: IPrinterQueue, IPrinterQueue interface [Print Devices], IPrinterQueue interface [Print Devices], described, print.iprinterqueue_interface, printerextension/IPrinterQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrinterQueue
 product: Windows
 targetos: Windows
@@ -54,10 +54,10 @@ Represents a single printer queue.
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrinterQueue.get_Handle](nf-printerextension-iprinterqueue-get_handle.md) | Gets the underlying native handle for this print queue. |
-| [printerextension.IPrinterQueue.get_Name](nf-printerextension-iprinterqueue-get_name.md) | Gets the name of the printer for this print queue. |
-| [printerextension.IPrinterQueue.GetProperties](nf-printerextension-iprinterqueue-getproperties.md) | Gets the properties in the property bag for the queue. |
-| [printerextension.IPrinterQueue.SendBidiQuery](nf-printerextension-iprinterqueue-sendbidiquery.md) | Performs an asynchronous refresh operation with the specified query, and invokes the IPrinterQueueEvent::OnBidiResponseReceived method. |
+| [IPrinterQueue::get_Handle](nf-printerextension-iprinterqueue-get_handle.md) | Gets the underlying native handle for this print queue. |
+| [IPrinterQueue::get_Name](nf-printerextension-iprinterqueue-get_name.md) | Gets the name of the printer for this print queue. |
+| [IPrinterQueue::GetProperties](nf-printerextension-iprinterqueue-getproperties.md) | Gets the properties in the property bag for the queue. |
+| [IPrinterQueue::SendBidiQuery](nf-printerextension-iprinterqueue-sendbidiquery.md) | Performs an asynchronous refresh operation with the specified query, and invokes the IPrinterQueueEvent::OnBidiResponseReceived method. |
 
 ## Remarks
 
@@ -88,4 +88,4 @@ Any event sink that implements <a href="..\printerextension\nn-printerextension-
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterQueue interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterQueue interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: cf880701-d1e9-4bda-8d6c-35f35b707e9b
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: kmdf.wdfusbtargetpipeformatrequestforwrite, DFUsbRef_4f71425c-5d39-433c-9820-d736b9f4f531.xml, WdfUsbTargetPipeFormatRequestForWrite method, wdfusb/WdfUsbTargetPipeFormatRequestForWrite, WdfUsbTargetPipeFormatRequestForWrite, wdf.wdfusbtargetpipeformatrequestforwrite
+ms.keywords: DFUsbRef_4f71425c-5d39-433c-9820-d736b9f4f531.xml, WdfUsbTargetPipeFormatRequestForWrite, WdfUsbTargetPipeFormatRequestForWrite method, kmdf.wdfusbtargetpipeformatrequestforwrite, wdf.wdfusbtargetpipeformatrequestforwrite, wdfusb/WdfUsbTargetPipeFormatRequestForWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,21 +29,21 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfUsbTargetPipeFormatRequestForWrite
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -80,7 +80,7 @@ A handle to a framework memory object. This object represents a buffer that cont
 
 `WriteOffset`
 
-A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the write buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the buffer, and the transfer size is the buffer size.
+A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the write buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the buffer, and the transfer size is the buffer size.
 
 
 ## Return Value

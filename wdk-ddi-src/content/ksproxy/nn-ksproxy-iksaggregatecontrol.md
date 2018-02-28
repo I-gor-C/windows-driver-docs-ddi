@@ -7,8 +7,8 @@ old-location: stream\iksaggregatecontrol.htm
 old-project: stream
 ms.assetid: ed239516-bbaf-4e16-a3b8-4f9f34cab4ef
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.iksaggregatecontrol, IKsAggregateControl interface [Streaming Media Devices], IKsAggregateControl interface [Streaming Media Devices], described, IKsAggregateControl, ksproxy/IKsAggregateControl, ksproxy_ccd980b0-abd1-4354-9f2c-3c0613b18d07.xml
+ms.date: 2/23/2018
+ms.keywords: IKsAggregateControl, IKsAggregateControl interface [Streaming Media Devices], IKsAggregateControl interface [Streaming Media Devices], described, ksproxy/IKsAggregateControl, ksproxy_ccd980b0-abd1-4354-9f2c-3c0613b18d07.xml, stream.iksaggregatecontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Ksproxy.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
-apiname:
+api_name:
 -	IKsAggregateControl
 product: Windows
 targetos: Windows
@@ -55,8 +55,8 @@ The interface identifier (IID) for this interface is IID_IKsAggregateControl.
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsAggregateControl.KsAddAggregate](nf-ksproxy-iksaggregatecontrol-ksaddaggregate.md) | The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
-| [ksproxy.IKsAggregateControl.KsRemoveAggregate](nf-ksproxy-iksaggregatecontrol-ksremoveaggregate.md) | The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
+| [IKsAggregateControl::KsAddAggregate](nf-ksproxy-iksaggregatecontrol-ksaddaggregate.md) | The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
+| [IKsAggregateControl::KsRemoveAggregate](nf-ksproxy-iksaggregatecontrol-ksremoveaggregate.md) | The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
 
 ## Remarks
 
@@ -103,7 +103,7 @@ For more information about <b>IDistributorNotify</b>, <b>IUnknown</b>, and <b>Co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/f625b1ed-ccab-4072-9eb9-c4ebbddb1199">KsRemoveAggregate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559890">IKsObject::KsGetObjectHandle</a>
 
 
 
@@ -111,11 +111,11 @@ For more information about <b>IDistributorNotify</b>, <b>IUnknown</b>, and <b>Co
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559890">IKsObject::KsGetObjectHandle</a>
+<a href="https://msdn.microsoft.com/f625b1ed-ccab-4072-9eb9-c4ebbddb1199">KsRemoveAggregate</a>
 
 
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
 
 
@@ -123,4 +123,4 @@ For more information about <b>IDistributorNotify</b>, <b>IUnknown</b>, and <b>Co
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsAggregateControl interface%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsAggregateControl interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

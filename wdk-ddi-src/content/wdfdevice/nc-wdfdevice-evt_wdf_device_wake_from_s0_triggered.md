@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 4395b1c1-ae67-42fc-b6c7-b1bdbf090c5b
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicewakefroms0triggered, EvtDeviceWakeFromS0Triggered callback function, EvtDeviceWakeFromS0Triggered, EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED, EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED, wdfdevice/EvtDeviceWakeFromS0Triggered, DFDeviceObjectGeneralRef_d5f1f5da-3fa1-4d26-ab15-587b66c7d5c2.xml, kmdf.evtdevicewakefroms0triggered
+ms.keywords: DFDeviceObjectGeneralRef_d5f1f5da-3fa1-4d26-ab15-587b66c7d5c2.xml, EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED, EvtDeviceWakeFromS0Triggered, EvtDeviceWakeFromS0Triggered callback function, kmdf.evtdevicewakefroms0triggered, wdf.evtdevicewakefroms0triggered, wdfdevice/EvtDeviceWakeFromS0Triggered
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceWakeFromS0Triggered
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED function
+# EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceWakeFromS0Triggered</i> event callback function informs the driver that its device, which had previously entered a low-power device state while the system power state remained at S0, might have triggered a wake signal.
@@ -135,7 +135,7 @@ The <b>EVT_WDF_DEVICE_WAKE_FROM_S0_TRIGGERED</b> function type is defined in the
 
 
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0.md">EvtDeviceDisarmWakeFromS0</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_wake_from_sx_triggered.md">EvtDeviceWakeFromSxTriggered</a>
 
 
 

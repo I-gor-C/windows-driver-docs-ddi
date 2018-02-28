@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: A9E4404C-D307-4137-B640-AF28A962B2AD
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: nfpdrivers.ioctl_smartcard_is_absent, IOCTL_SMARTCARD_IS_ABSENT control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_IS_ABSENT, winsmcrd/IOCTL_SMARTCARD_IS_ABSENT
+ms.keywords: IOCTL_SMARTCARD_IS_ABSENT, IOCTL_SMARTCARD_IS_ABSENT control code [Near-Field Proximity Drivers], nfpdrivers.ioctl_smartcard_is_absent, winsmcrd/IOCTL_SMARTCARD_IS_ABSENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	winsmcrd.h
-apiname:
+api_name:
 -	IOCTL_SMARTCARD_IS_ABSENT
 product: Windows
 targetos: Windows
@@ -117,11 +117,11 @@ The driver must support CancelIo on this pended IOCTL.
 
 ## See Also
 
-<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
-
-
-
 <a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
+
+
+
+<a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
 
 
 

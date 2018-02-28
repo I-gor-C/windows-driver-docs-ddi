@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8ce3d316-3976-4af5-a0ae-af4e93f380a1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtfilecleanup, EvtFileCleanup callback function, EvtFileCleanup, EVT_WDF_FILE_CLEANUP, EVT_WDF_FILE_CLEANUP, wdfdevice/EvtFileCleanup, DFDeviceObjectGeneralRef_e784bb8d-f1f3-48ac-94c5-d88f2517efd1.xml, kmdf.evtfilecleanup
+ms.keywords: DFDeviceObjectGeneralRef_e784bb8d-f1f3-48ac-94c5-d88f2517efd1.xml, EVT_WDF_FILE_CLEANUP, EvtFileCleanup, EvtFileCleanup callback function, kmdf.evtfilecleanup, wdf.evtfilecleanup, wdfdevice/EvtFileCleanup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtFileCleanup
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_FILE_CLEANUP function
+# EVT_WDF_FILE_CLEANUP callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtFileCleanup</i> callback function handles operations that must be performed when an application is closing all accesses to a device.

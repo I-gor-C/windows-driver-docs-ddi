@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 31FED6BE-2E89-4D36-A833-9144AD61B885
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.evt_vmb_channel_suspend, EvtVmbChannelSuspend callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelSuspend, EVT_VMB_CHANNEL_SUSPEND, EVT_VMB_CHANNEL_SUSPEND, vmbuskernelmodeclientlibapi/EvtVmbChannelSuspend, PFN_VMB_CHANNEL_SUSPEND callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_SUSPEND
+ms.keywords: EVT_VMB_CHANNEL_SUSPEND, EvtVmbChannelSuspend, EvtVmbChannelSuspend callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_SUSPEND, PFN_VMB_CHANNEL_SUSPEND callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_suspend, vmbuskernelmodeclientlibapi/EvtVmbChannelSuspend
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	VmbusKernelModeClientLibApi.h
-apiname:
+api_name:
 -	PFN_VMB_CHANNEL_SUSPEND
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_VMB_CHANNEL_SUSPEND function
+# EVT_VMB_CHANNEL_SUSPEND callback function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <i>EvtVmbChannelSuspend</i> callback function is invoked at the server endpoint when the channel is being
@@ -107,19 +107,7 @@ or the guest virtual machine may have crashed.  The server must retire any outst
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md">EvtVmbChannelProcessPacket</a>
-
-
-
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a>
-
-
-
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpause.md">VmbChannelPause</a>
-
-
-
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>
 
 
 
@@ -127,11 +115,23 @@ or the guest virtual machine may have crashed.  The server must retire any outst
 
 
 
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a>
+
+
+
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a>
+
+
+
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>
 
 
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldisable.md">VmbChannelDisable</a>
+<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md">EvtVmbChannelProcessPacket</a>
+
+
+
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>
 
 
 

@@ -7,8 +7,8 @@ old-location: print\iprinterpropertybag_interface.htm
 old-project: print
 ms.assetid: 421397FF-4956-4052-B63D-32F8E79A22D0
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprinterpropertybag_interface, IPrinterPropertyBag interface [Print Devices], IPrinterPropertyBag interface [Print Devices], described, IPrinterPropertyBag, printerextension/IPrinterPropertyBag
+ms.date: 2/23/2018
+ms.keywords: IPrinterPropertyBag, IPrinterPropertyBag interface [Print Devices], IPrinterPropertyBag interface [Print Devices], described, print.iprinterpropertybag_interface, printerextension/IPrinterPropertyBag
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrinterPropertyBag
 product: Windows
 targetos: Windows
@@ -63,16 +63,16 @@ The <b>IPrinterPropertyBag</b> interface is used by all the printer property bag
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrinterPropertyBag.GetBool](nf-printerextension-iprinterpropertybag-getbool.md) | Reads a specified boolean property. |
-| [printerextension.IPrinterPropertyBag.GetBytes](nf-printerextension-iprinterpropertybag-getbytes.md) | Reads a byte array property. |
-| [printerextension.IPrinterPropertyBag.GetInt32](nf-printerextension-iprinterpropertybag-getint32.md) | Reads an integer property. |
-| [printerextension.IPrinterPropertyBag.GetReadStream](nf-printerextension-iprinterpropertybag-getreadstream.md) | Gets a stream in order to read from a stream property. |
-| [printerextension.IPrinterPropertyBag.GetString](nf-printerextension-iprinterpropertybag-getstring.md) | Reads a string property. |
-| [printerextension.IPrinterPropertyBag.GetWriteStream](nf-printerextension-iprinterpropertybag-getwritestream.md) | Gets a stream in order to write a stream property. |
-| [printerextension.IPrinterPropertyBag.SetBool](nf-printerextension-iprinterpropertybag-setbool.md) | Writes a specified boolean property value. |
-| [printerextension.IPrinterPropertyBag.SetBytes](nf-printerextension-iprinterpropertybag-setbytes.md) | Writes a byte array property. |
-| [printerextension.IPrinterPropertyBag.SetInt32](nf-printerextension-iprinterpropertybag-setint32.md) | Writes an integer property. |
-| [printerextension.IPrinterPropertyBag.SetString](nf-printerextension-iprinterpropertybag-setstring.md) | Writes a string property. |
+| [IPrinterPropertyBag::GetBool](nf-printerextension-iprinterpropertybag-getbool.md) | Reads a specified boolean property. |
+| [IPrinterPropertyBag::GetBytes](nf-printerextension-iprinterpropertybag-getbytes.md) | Reads a byte array property. |
+| [IPrinterPropertyBag::GetInt32](nf-printerextension-iprinterpropertybag-getint32.md) | Reads an integer property. |
+| [IPrinterPropertyBag::GetReadStream](nf-printerextension-iprinterpropertybag-getreadstream.md) | Gets a stream in order to read from a stream property. |
+| [IPrinterPropertyBag::GetString](nf-printerextension-iprinterpropertybag-getstring.md) | Reads a string property. |
+| [IPrinterPropertyBag::GetWriteStream](nf-printerextension-iprinterpropertybag-getwritestream.md) | Gets a stream in order to write a stream property. |
+| [IPrinterPropertyBag::SetBool](nf-printerextension-iprinterpropertybag-setbool.md) | Writes a specified boolean property value. |
+| [IPrinterPropertyBag::SetBytes](nf-printerextension-iprinterpropertybag-setbytes.md) | Writes a byte array property. |
+| [IPrinterPropertyBag::SetInt32](nf-printerextension-iprinterpropertybag-setint32.md) | Writes an integer property. |
+| [IPrinterPropertyBag::SetString](nf-printerextension-iprinterpropertybag-setstring.md) | Writes a string property. |
 
 ## Remarks
 
@@ -91,11 +91,7 @@ The <b>IPrinterPropertyBag</b> interface is used by all the printer property bag
 
 
 
-<a href="https://msdn.microsoft.com/21B370C9-BDF7-42A6-B0CC-BC9B19F9D2D5">IPrinterExtensionContext::UserProperties</a>
-
-
-
-<a href="https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</a>
+<a href="https://msdn.microsoft.com/87EED8B5-676C-4056-812B-B0424148FCFA">IPrinterQueue::GetProperties</a>
 
 
 
@@ -107,7 +103,11 @@ The <b>IPrinterPropertyBag</b> interface is used by all the printer property bag
 
 
 
-<a href="https://msdn.microsoft.com/87EED8B5-676C-4056-812B-B0424148FCFA">IPrinterQueue::GetProperties</a>
+<a href="https://msdn.microsoft.com/21B370C9-BDF7-42A6-B0CC-BC9B19F9D2D5">IPrinterExtensionContext::UserProperties</a>
+
+
+
+<a href="https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</a>
 
 
 
@@ -115,4 +115,4 @@ The <b>IPrinterPropertyBag</b> interface is used by all the printer property bag
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterPropertyBag interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterPropertyBag interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

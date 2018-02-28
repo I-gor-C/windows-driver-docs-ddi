@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: dbb061a6-a770-411c-9c3a-8453662b4362
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: WDF_IO_QUEUE_PURGED, wdf.wdf_io_queue_purged, WDF_IO_QUEUE_PURGED function, DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml, kmdf.wdf_io_queue_purged, wdfio/WDF_IO_QUEUE_PURGED
+ms.keywords: DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml, WDF_IO_QUEUE_PURGED, WDF_IO_QUEUE_PURGED function, kmdf.wdf_io_queue_purged, wdf.wdf_io_queue_purged, wdfio/WDF_IO_QUEUE_PURGED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,15 +29,15 @@ req.type-library:
 req.lib: None
 req.dll: 
 req.irql: Any IRQL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	None
 -	None.dll
-apiname:
+api_name:
 -	WDF_IO_QUEUE_PURGED
 product: Windows
 targetos: Windows
@@ -63,7 +63,7 @@ BOOLEAN WDF_IO_QUEUE_PURGED(
 
 `State`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value that <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> returns.
+A <a href="..\wdfio\ne-wdfio-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value that <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> returns.
 
 
 ## Return Value
@@ -76,7 +76,7 @@ An I/O queue is purged if the queue is empty and not accepting new I/O requests,
 
 Your driver can call <b>WDF_IO_QUEUE_PURGED</b> after it has called <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a>.
 
-For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
+For more information about I/O queue states, see <a href="..\wdfio\ne-wdfio-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
 
 
 #### Examples
@@ -117,7 +117,7 @@ IsQueuePurged(
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
 
 
 
@@ -125,7 +125,7 @@ IsQueuePurged(
 
 
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
 
 
 

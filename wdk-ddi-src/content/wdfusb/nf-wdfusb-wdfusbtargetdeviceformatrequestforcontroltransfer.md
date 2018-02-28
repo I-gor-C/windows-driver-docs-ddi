@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 72ba7550-9153-4ff7-8478-c9cc71151a25
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: kmdf.wdfusbtargetdeviceformatrequestforcontroltransfer, wdfusb/WdfUsbTargetDeviceFormatRequestForControlTransfer, WdfUsbTargetDeviceFormatRequestForControlTransfer method, wdf.wdfusbtargetdeviceformatrequestforcontroltransfer, DFUsbRef_7f2ef529-05f2-46c2-861e-d9557c6bb7bc.xml, WdfUsbTargetDeviceFormatRequestForControlTransfer
+ms.keywords: DFUsbRef_7f2ef529-05f2-46c2-861e-d9557c6bb7bc.xml, WdfUsbTargetDeviceFormatRequestForControlTransfer, WdfUsbTargetDeviceFormatRequestForControlTransfer method, kmdf.wdfusbtargetdeviceformatrequestforcontroltransfer, wdf.wdfusbtargetdeviceformatrequestforcontroltransfer, wdfusb/WdfUsbTargetDeviceFormatRequestForControlTransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,21 +29,21 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfUsbTargetDeviceFormatRequestForControlTransfer
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -85,7 +85,7 @@ A handle to a framework memory object that describes either an input or an outpu
 
 `TransferOffset`
 
-A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the buffer that <i>TransferMemory</i> specifies. If this pointer is <b>NULL</b>, the framework uses the entire buffer.
+A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the buffer that <i>TransferMemory</i> specifies. If this pointer is <b>NULL</b>, the framework uses the entire buffer.
 
 
 ## Return Value
@@ -280,11 +280,11 @@ if (WdfRequestSend(
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
-
-
-
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
+
+
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
 
 
 

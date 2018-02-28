@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 61edeb80-a686-4b8c-ae19-4757616151ef
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportenableinterruptex, MiniportEnableInterruptEx callback function [Network Drivers Starting with Windows Vista], MiniportEnableInterruptEx, MINIPORT_ENABLE_INTERRUPT, MINIPORT_ENABLE_INTERRUPT, ndis/MiniportEnableInterruptEx, ndis_interrupts_miniport_functions_ref_4a4172dc-19bc-4405-8fc1-48bb8af2ae8d.xml
+ms.keywords: MINIPORT_ENABLE_INTERRUPT, MiniportEnableInterruptEx, MiniportEnableInterruptEx callback function [Network Drivers Starting with Windows Vista], ndis/MiniportEnableInterruptEx, ndis_interrupts_miniport_functions_ref_4a4172dc-19bc-4405-8fc1-48bb8af2ae8d.xml, netvista.miniportenableinterruptex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportEnableInterruptEx
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_ENABLE_INTERRUPT function
+# MINIPORT_ENABLE_INTERRUPT callback function
 NDIS can call a miniport driver's 
    <i>MiniportEnableInterruptEx</i> handler to enable interrupts for diagnostic and troubleshooting
    purposes.
@@ -144,16 +144,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
-
-
-
 <a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 
 
 
@@ -161,7 +161,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
 
 
 

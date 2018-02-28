@@ -7,8 +7,8 @@ old-location: audio\iportevents.htm
 old-project: audio
 ms.assetid: bbbb5486-1217-4c4d-9421-96994a5fec82
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportevents, IPortEvents interface [Audio Devices], IPortEvents interface [Audio Devices], described, IPortEvents, portcls/IPortEvents, audmp-routines_8e6cf7c4-af42-4c89-8c00-29470317a455.xml
+ms.date: 2/22/2018
+ms.keywords: IPortEvents, IPortEvents interface [Audio Devices], IPortEvents interface [Audio Devices], described, audio.iportevents, audmp-routines_8e6cf7c4-af42-4c89-8c00-29470317a455.xml, portcls/IPortEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortEvents
 product: Windows
 targetos: Windows
@@ -101,8 +101,8 @@ This section also describes the following routine for handling event requests:
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortEvents.AddEventToEventList](nf-portcls-iportevents-addeventtoeventlist.md) | The AddEventToEventList method adds an event to the port driver's event list. |
-| [portcls.IPortEvents.GenerateEventList](nf-portcls-iportevents-generateeventlist.md) | The GenerateEventList method notifies clients through the port driver's list of event entries that a particular event has occurred. |
+| [IPortEvents::AddEventToEventList](nf-portcls-iportevents-addeventtoeventlist.md) | The AddEventToEventList method adds an event to the port driver's event list. |
+| [IPortEvents::GenerateEventList](nf-portcls-iportevents-generateeventlist.md) | The GenerateEventList method notifies clients through the port driver's list of event entries that a particular event has occurred. |
 
 ## Remarks
 

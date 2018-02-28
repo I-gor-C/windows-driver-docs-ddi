@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: D97C3A17-309E-4364-8DFB-9073901D332E
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: SPB.evtspbcontrolleriowrite, EvtSpbControllerIoWrite callback function [Buses], EvtSpbControllerIoWrite, EVT_SPB_CONTROLLER_WRITE, EVT_SPB_CONTROLLER_WRITE, spbcx/EvtSpbControllerIoWrite
+ms.keywords: EVT_SPB_CONTROLLER_WRITE, EvtSpbControllerIoWrite, EvtSpbControllerIoWrite callback function [Buses], SPB.evtspbcontrolleriowrite, spbcx/EvtSpbControllerIoWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Spbcx.h
-apiname:
+api_name:
 -	EvtSpbControllerIoWrite
 product: Windows
 targetos: Windows
-req.typenames: "*PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY"
+req.typenames: SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
 req.product: Windows 10 or later.
 ---
 
 
-# EVT_SPB_CONTROLLER_WRITE function
+# EVT_SPB_CONTROLLER_WRITE callback function
 An SPB controller driver's <i>EvtSpbControllerIoWrite</i> event callback function writes data to the specified target device from the buffers that are supplied with the write request.
 
 ## Syntax
@@ -152,7 +152,7 @@ The EVT_SPB_CONTROLLER_WRITE function type is defined in the Spbcx.h header file
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
 
 
 
@@ -164,19 +164,19 @@ The EVT_SPB_CONTROLLER_WRITE function type is defined in the Spbcx.h header file
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
+<a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a>
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a>
-
-
-
-<a href="https://msdn.microsoft.com/2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43">EvtSpbControllerIoRead</a>
 
 
 

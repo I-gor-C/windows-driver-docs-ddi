@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: C4AEC0DA-EB93-481D-A94C-7BB7BF15EFBC
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfdevice3, IWDFDevice3 interface, IWDFDevice3 interface, described, IWDFDevice3, wudfddi/IWDFDevice3, umdf.iwdfdevice3
+ms.keywords: IWDFDevice3, IWDFDevice3 interface, IWDFDevice3 interface, described, umdf.iwdfdevice3, wdf.iwdfdevice3, wudfddi/IWDFDevice3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFDevice3
 product: Windows
 targetos: Windows
@@ -56,14 +56,14 @@ To obtain the <b>IWDFDevice3</b> interface, drivers call <b>IWDFDevice::QueryInt
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFDevice3.AssignS0IdleSettingsEx](nf-wudfddi-iwdfdevice3-assigns0idlesettingsex.md) | The AssignS0IdleSettingsEx method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state. |
-| [wudfddi.IWDFDevice3.CreateInterrupt](nf-wudfddi-iwdfdevice3-createinterrupt.md) | The CreateInterrupt method creates a framework interrupt object. |
-| [wudfddi.IWDFDevice3.CreateWorkItem](nf-wudfddi-iwdfdevice3-createworkitem.md) | The CreateWorkItem method creates a framework work-item object, which can subsequently be added to the framework’s work-item queue. |
-| [wudfddi.IWDFDevice3.GetHardwareRegisterMappedAddress](nf-wudfddi-iwdfdevice3-gethardwareregistermappedaddress.md) | A driver calls GetHardwareRegisterMappedAddress to get the user-mode mapped address of the memory resource it earlier mapped using MapIoSpace. |
-| [wudfddi.IWDFDevice3.MapIoSpace](nf-wudfddi-iwdfdevice3-mapiospace.md) | The MapIoSpace method maps the given physical address range to system address space and returns a pseudo base address. |
-| [wudfddi.IWDFDevice3.ReadFromHardware](nf-wudfddi-iwdfdevice3-readfromhardware.md) | The ReadFromHardware method is used internally by the framework. Do not use. |
-| [wudfddi.IWDFDevice3.UnmapIoSpace](nf-wudfddi-iwdfdevice3-unmapiospace.md) | The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method. |
-| [wudfddi.IWDFDevice3.WriteToHardware](nf-wudfddi-iwdfdevice3-writetohardware.md) | The WriteToHardware method is used internally by the framework. Do not use. |
+| [IWDFDevice3::AssignS0IdleSettingsEx](nf-wudfddi-iwdfdevice3-assigns0idlesettingsex.md) | The AssignS0IdleSettingsEx method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state. |
+| [IWDFDevice3::CreateInterrupt](nf-wudfddi-iwdfdevice3-createinterrupt.md) | The CreateInterrupt method creates a framework interrupt object. |
+| [IWDFDevice3::CreateWorkItem](nf-wudfddi-iwdfdevice3-createworkitem.md) | The CreateWorkItem method creates a framework work-item object, which can subsequently be added to the framework’s work-item queue. |
+| [IWDFDevice3::GetHardwareRegisterMappedAddress](nf-wudfddi-iwdfdevice3-gethardwareregistermappedaddress.md) | A driver calls GetHardwareRegisterMappedAddress to get the user-mode mapped address of the memory resource it earlier mapped using MapIoSpace. |
+| [IWDFDevice3::MapIoSpace](nf-wudfddi-iwdfdevice3-mapiospace.md) | The MapIoSpace method maps the given physical address range to system address space and returns a pseudo base address. |
+| [IWDFDevice3::ReadFromHardware](nf-wudfddi-iwdfdevice3-readfromhardware.md) | The ReadFromHardware method is used internally by the framework. Do not use. |
+| [IWDFDevice3::UnmapIoSpace](nf-wudfddi-iwdfdevice3-unmapiospace.md) | The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method. |
+| [IWDFDevice3::WriteToHardware](nf-wudfddi-iwdfdevice3-writetohardware.md) | The WriteToHardware method is used internally by the framework. Do not use. |
 
 ## Remarks
 

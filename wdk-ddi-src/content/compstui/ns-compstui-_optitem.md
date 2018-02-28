@@ -7,8 +7,8 @@ old-location: print\optitem.htm
 old-project: print
 ms.assetid: 983f9774-d498-473a-bdfb-ec55cc4298cf
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.optitem, POPTITEM structure pointer [Print Devices], OPTITEM, *POPTITEM, compstui/POPTITEM, cpsuifnc_0d0609c0-cb09-4428-b083-8db736570309.xml, OPTITEM structure [Print Devices], POPTITEM, _OPTITEM, compstui/OPTITEM
+ms.date: 2/23/2018
+ms.keywords: "*POPTITEM, OPTITEM, OPTITEM structure [Print Devices], POPTITEM, POPTITEM structure pointer [Print Devices], _OPTITEM, compstui/OPTITEM, compstui/POPTITEM, cpsuifnc_0d0609c0-cb09-4428-b083-8db736570309.xml, print.optitem"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	compstui.h
-apiname:
+api_name:
 -	OPTITEM
 product: Windows
 targetos: Windows
-req.typenames: "*POPTITEM, OPTITEM"
+req.typenames: OPTITEM, *POPTITEM
 ---
 
 # _OPTITEM structure

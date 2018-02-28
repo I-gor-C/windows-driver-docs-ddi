@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: fcc1e631-c77b-483b-9b5e-ec8d643f9930
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: WDF_INTERRUPT_EXTENDED_POLICY_INIT function, kmdf.wdf_interrupt_extended_policy_init, WDF_INTERRUPT_EXTENDED_POLICY_INIT, wdfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY_INIT, wdf.wdf_interrupt_extended_policy_init, DFInterruptObjectRef_47d18efc-03a4-47b7-a022-ba9ed3247f1f.xml
+ms.keywords: DFInterruptObjectRef_47d18efc-03a4-47b7-a022-ba9ed3247f1f.xml, WDF_INTERRUPT_EXTENDED_POLICY_INIT, WDF_INTERRUPT_EXTENDED_POLICY_INIT function, kmdf.wdf_interrupt_extended_policy_init, wdf.wdf_interrupt_extended_policy_init, wdfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.exe
 req.dll: 
 req.irql: Any level
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	wdfinterrupt.h
-apiname:
+api_name:
 -	WDF_INTERRUPT_EXTENDED_POLICY_INIT
 product: Windows
 targetos: Windows
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 # WDF_INTERRUPT_EXTENDED_POLICY_INIT function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WDF_INTERRUPT_EXTENDED_POLICY_INIT</b> function initializes a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure.
+The <b>WDF_INTERRUPT_EXTENDED_POLICY_INIT</b> function initializes a <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure.
 
 ## Syntax
 
@@ -71,7 +71,7 @@ None.
 
 ## Remarks
 
-The <b>WDF_INTERRUPT_EXTENDED_POLICY_INIT</b> function zeros the specified <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure and sets the structure's <b>Size</b> member. It also sets the structure's <b>Policy</b> member to <b>WdfIrqPolicyMachineDefault</b> and sets the structure's <b>Priority</b> member to <b>WdfIrqPriorityUndefined</b>.
+The <b>WDF_INTERRUPT_EXTENDED_POLICY_INIT</b> function zeros the specified <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure and sets the structure's <b>Size</b> member. It also sets the structure's <b>Policy</b> member to <b>WdfIrqPolicyMachineDefault</b> and sets the structure's <b>Priority</b> member to <b>WdfIrqPriorityUndefined</b>.
 
 
 #### Examples
@@ -92,7 +92,7 @@ For a code example that uses <b>WDF_INTERRUPT_EXTENDED_POLICY_INIT</b>, see <a h
 
 ## See Also
 
-<a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a>
+<a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a>
 
 
 

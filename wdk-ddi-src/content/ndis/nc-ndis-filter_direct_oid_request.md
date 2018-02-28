@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: a39f4b50-0183-4f92-82f2-3c8e2e2d0632
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.filterdirectoidrequest, FilterDirectOidRequest callback function [Network Drivers Starting with Windows Vista], FilterDirectOidRequest, FILTER_DIRECT_OID_REQUEST, FILTER_DIRECT_OID_REQUEST, ndis/FilterDirectOidRequest, ndis_request_direct_ref_47a005b0-4a5b-4539-a1dc-2d9423022567.xml
+ms.keywords: FILTER_DIRECT_OID_REQUEST, FilterDirectOidRequest, FilterDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/FilterDirectOidRequest, ndis_request_direct_ref_47a005b0-4a5b-4539-a1dc-2d9423022567.xml, netvista.filterdirectoidrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	FilterDirectOidRequest
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# FILTER_DIRECT_OID_REQUEST function
+# FILTER_DIRECT_OID_REQUEST callback function
 NDIS calls a filter driver's 
   <i>FilterDirectOidRequest</i> function to process a direct OID request that is
   associated with the specified filter module.
@@ -318,7 +318,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 
 
@@ -327,20 +327,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
+<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
    NdisFDirectOidRequestComplete</a>
 
 
 
-<a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
-
-
-
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">NdisAllocateCloneOidRequest</a>
 
 
 
@@ -352,7 +348,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">NdisAllocateCloneOidRequest</a>
+<a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
 
 
 

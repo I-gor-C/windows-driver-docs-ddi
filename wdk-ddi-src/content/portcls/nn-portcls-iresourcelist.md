@@ -7,8 +7,8 @@ old-location: audio\iresourcelist.htm
 old-project: audio
 ms.assetid: e99ed3bc-368c-433f-ad40-98deda668c51
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iresourcelist, IResourceList interface [Audio Devices], IResourceList interface [Audio Devices], described, IResourceList, portcls/IResourceList, audmp-routines_beb718b9-c62d-46b8-9147-c9e4aa7faa28.xml
+ms.date: 2/22/2018
+ms.keywords: IResourceList, IResourceList interface [Audio Devices], IResourceList interface [Audio Devices], described, audio.iresourcelist, audmp-routines_beb718b9-c62d-46b8-9147-c9e4aa7faa28.xml, portcls/IResourceList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IResourceList
 product: Windows
 targetos: Windows
@@ -589,14 +589,14 @@ AddEntryFromParent((p),CmResourceTypeSubAllocateFrom,(n))
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IResourceList.AddEntry](nf-portcls-iresourcelist-addentry.md) | The AddEntry method adds an entry to a resource list. |
-| [portcls.IResourceList.AddEntryFromParent](nf-portcls-iresourcelist-addentryfromparent.md) | The AddEntryFromParent method adds to a resource list an entry found in the resource list's parent list. |
-| [portcls.IResourceList.FindTranslatedEntry](nf-portcls-iresourcelist-findtranslatedentry.md) | The FindTranslatedEntry method returns a pointer to a translated entry of the specified type, or NULL if no such entry is found. |
-| [portcls.IResourceList.FindUntranslatedEntry](nf-portcls-iresourcelist-finduntranslatedentry.md) | The FindUntranslatedEntry method returns a pointer to an untranslated entry of the specified type, or NULL if no such pointer is found. |
-| [portcls.IResourceList.NumberOfEntries](nf-portcls-iresourcelist-numberofentries.md) | The NumberOfEntries method returns the number of resource items in the resource list. |
-| [portcls.IResourceList.NumberOfEntriesOfType](nf-portcls-iresourcelist-numberofentriesoftype.md) | The NumberOfEntriesOfType method returns the number of resource items of a given type in the resource list. For each resource type, a macro is defined to call this method as previously described. |
-| [portcls.IResourceList.TranslatedList](nf-portcls-iresourcelist-translatedlist.md) | The TranslatedList method returns the list of translated resources. |
-| [portcls.IResourceList.UntranslatedList](nf-portcls-iresourcelist-untranslatedlist.md) | The UntranslatedList method returns the list of untranslated resources. |
+| [IResourceList::AddEntry](nf-portcls-iresourcelist-addentry.md) | The AddEntry method adds an entry to a resource list. |
+| [IResourceList::AddEntryFromParent](nf-portcls-iresourcelist-addentryfromparent.md) | The AddEntryFromParent method adds to a resource list an entry found in the resource list's parent list. |
+| [IResourceList::FindTranslatedEntry](nf-portcls-iresourcelist-findtranslatedentry.md) | The FindTranslatedEntry method returns a pointer to a translated entry of the specified type, or NULL if no such entry is found. |
+| [IResourceList::FindUntranslatedEntry](nf-portcls-iresourcelist-finduntranslatedentry.md) | The FindUntranslatedEntry method returns a pointer to an untranslated entry of the specified type, or NULL if no such pointer is found. |
+| [IResourceList::NumberOfEntries](nf-portcls-iresourcelist-numberofentries.md) | The NumberOfEntries method returns the number of resource items in the resource list. |
+| [IResourceList::NumberOfEntriesOfType](nf-portcls-iresourcelist-numberofentriesoftype.md) | The NumberOfEntriesOfType method returns the number of resource items of a given type in the resource list. For each resource type, a macro is defined to call this method as previously described. |
+| [IResourceList::TranslatedList](nf-portcls-iresourcelist-translatedlist.md) | The TranslatedList method returns the list of translated resources. |
+| [IResourceList::UntranslatedList](nf-portcls-iresourcelist-untranslatedlist.md) | The UntranslatedList method returns the list of untranslated resources. |
 
 ## Remarks
 

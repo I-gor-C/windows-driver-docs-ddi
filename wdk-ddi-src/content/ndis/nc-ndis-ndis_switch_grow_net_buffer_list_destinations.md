@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 9A79F41F-566F-4844-BF1A-E8889E6FDCE8
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.grownetbufferlistdestinations, GrowNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], GrowNetBufferListDestinations, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, ndis/GrowNetBufferListDestinations
+ms.keywords: GrowNetBufferListDestinations, GrowNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, ndis/GrowNetBufferListDestinations, netvista.grownetbufferlistdestinations
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	GrowNetBufferListDestinations
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS function
+# NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS callback function
 The <i>GrowNetBufferListDestinations</i> function adds space for additional Hyper-V extensible switch destination ports to a packet that is specified by a <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 ## Syntax
@@ -103,11 +103,11 @@ For more information on how to add destination ports to a packet, see <a href="h
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
+<a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a>
 
 
 
-<a href="https://msdn.microsoft.com/9A740524-0FC1-4585-8059-F678D4777F66">UpdateNetBufferListDestinations</a>
+<a href="..\ndis\ns-ndis-_ndis_switch_forwarding_destination_array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a>
 
 
 
@@ -115,11 +115,7 @@ For more information on how to add destination ports to a packet, see <a href="h
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_switch_port_destination.md">NDIS_SWITCH_PORT_DESTINATION</a>
-
-
-
-<a href="https://msdn.microsoft.com/C8A80DB2-4273-4FBA-82D4-4E8146812B16">AllocateNetBufferListForwardingContext</a>
+<a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
 
 
 
@@ -127,7 +123,11 @@ For more information on how to add destination ports to a packet, see <a href="h
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_switch_forwarding_destination_array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a>
+<a href="https://msdn.microsoft.com/9A740524-0FC1-4585-8059-F678D4777F66">UpdateNetBufferListDestinations</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_switch_port_destination.md">NDIS_SWITCH_PORT_DESTINATION</a>
 
 
 

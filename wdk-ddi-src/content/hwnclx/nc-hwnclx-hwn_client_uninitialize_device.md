@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: 19ed1c21-d041-4876-8f90-4319e43a7004
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: gpiobtn.hwn_client_uninitialize_device, HwnClientUninitializeDevice callback function, HwnClientUninitializeDevice, HWN_CLIENT_UNINITIALIZE_DEVICE, HWN_CLIENT_UNINITIALIZE_DEVICE, hwnclx/HwnClientUninitializeDevice, *PHWN_CLIENT_UNINITIALIZE_DEVICE callback function pointer, *PHWN_CLIENT_UNINITIALIZE_DEVICE
+ms.keywords: "*PHWN_CLIENT_UNINITIALIZE_DEVICE, *PHWN_CLIENT_UNINITIALIZE_DEVICE callback function pointer, HWN_CLIENT_UNINITIALIZE_DEVICE, HwnClientUninitializeDevice, HwnClientUninitializeDevice callback function, gpiobtn.hwn_client_uninitialize_device, hwnclx/HwnClientUninitializeDevice"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,22 +29,22 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Hwnclx.h
-apiname:
+api_name:
 -	*PHWN_CLIENT_UNINITIALIZE_DEVICE
 product: Windows
 targetos: Windows
-req.typenames: "*PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE"
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 
-# HWN_CLIENT_UNINITIALIZE_DEVICE function
+# HWN_CLIENT_UNINITIALIZE_DEVICE callback function
 Implemented by the client driver and invoked as  invoked as a result of a call to <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EVT_WDF_DEVICE_RELEASE_HARDWARE</a>. This callback function uninitializes the hardware notification component.
 
 ## Syntax

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: BFA54990-E1BB-4E86-B806-F3021FB0075B
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.setnetbufferlistswitchcontext, SetNetBufferListSwitchContext callback function [Network Drivers Starting with Windows Vista], SetNetBufferListSwitchContext, NDIS_SWITCH_SET_NET_BUFFER_LIST_SWITCH_CONTEXT, NDIS_SWITCH_SET_NET_BUFFER_LIST_SWITCH_CONTEXT, ndis/SetNetBufferListSwitchContext
+ms.keywords: NDIS_SWITCH_SET_NET_BUFFER_LIST_SWITCH_CONTEXT, SetNetBufferListSwitchContext, SetNetBufferListSwitchContext callback function [Network Drivers Starting with Windows Vista], ndis/SetNetBufferListSwitchContext, netvista.setnetbufferlistswitchcontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	SetNetBufferListSwitchContext
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_SWITCH_SET_NET_BUFFER_LIST_SWITCH_CONTEXT function
+# NDIS_SWITCH_SET_NET_BUFFER_LIST_SWITCH_CONTEXT callback function
 The Hyper-V extensible switch extension calls the <i>SetNetBufferListSwitchContext</i> function to attach an extension-allocated context buffer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>. The context is then accessible for the lifetime of that NET_BUFFER_LIST, including if the context is set on ingress and the NBL is seen again on egress, regardless of whether other extensions set their own context. This type of access is not possible using the existing NDIS NET_BUFFER_LIST context APIs (<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">NdisAllocateNetBufferListContext</a>/ <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568391">NET_BUFFER_LIST_CONTEXT_DATA_START</a>) because another extension can allocate NDIS context when it gets ownership of the NET_BUFFER_LIST, at which point the pointer to the original NDIS context is lost.
 
 ## Syntax
@@ -105,27 +105,7 @@ For more information about the extensible switch forwarding context, see <a href
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
-
-
-
 <a href="https://msdn.microsoft.com/55B5C0B4-5359-410B-9110-79EDDBA3010C">GetNetBufferListDestinations</a>
-
-
-
-<a href="..\ndis\ns-ndis-_ndis_switch_port_destination.md">NDIS_SWITCH_PORT_DESTINATION</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
-
-
-
-<a href="..\ndis\nc-ndis-ndis_switch_get_net_buffer_list_switch_context.md">GetNetBufferListSwitchContext</a>
 
 
 
@@ -133,7 +113,27 @@ For more information about the extensible switch forwarding context, see <a href
 
 
 
+<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
+
+
+
+<a href="..\ndis\nc-ndis-ndis_switch_get_net_buffer_list_switch_context.md">GetNetBufferListSwitchContext</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_switch_port_destination.md">NDIS_SWITCH_PORT_DESTINATION</a>
 
 
 

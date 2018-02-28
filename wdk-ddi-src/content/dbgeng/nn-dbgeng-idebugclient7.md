@@ -4,11 +4,11 @@ title: IDebugClient7
 author: windows-driver-content
 description: The IDebugClient7 interface is reserved for internal use.
 old-location: debugger\idebugclient7.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 16FBD831-D7AE-4B10-B76E-6CA42C9CABEB
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugclient7, IDebugClient7 interface [Windows Debugging], IDebugClient7 interface [Windows Debugging], described, IDebugClient7, dbgeng/IDebugClient7
+ms.date: 2/23/2018
+ms.keywords: IDebugClient7, IDebugClient7 interface [Windows Debugging], IDebugClient7 interface [Windows Debugging], described, dbgeng/IDebugClient7, debugger.idebugclient7
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugClient7
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ The <b>IDebugClient7</b> interface is reserved for internal use.
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugClient7.SetClientContext](nf-dbgeng-idebugclient7-setclientcontext.md) | The SetClientContext method is reserved for internal use. |
+| [IDebugClient7::SetClientContext](nf-dbgeng-idebugclient7-setclientcontext.md) | The SetClientContext method is reserved for internal use. |
 
 ## Remarks
 

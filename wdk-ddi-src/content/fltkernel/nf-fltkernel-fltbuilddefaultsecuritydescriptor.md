@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 0e886c08-38dd-4960-9b79-4c6e68ac488d
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: FltBuildDefaultSecurityDescriptor function [Installable File System Drivers], FltBuildDefaultSecurityDescriptor, FltApiRef_a_to_d_5b763c42-6bea-4c52-8148-60c18a2f2aeb.xml, ifsk.fltbuilddefaultsecuritydescriptor, fltkernel/FltBuildDefaultSecurityDescriptor
+ms.keywords: FltApiRef_a_to_d_5b763c42-6bea-4c52-8148-60c18a2f2aeb.xml, FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor function [Installable File System Drivers], fltkernel/FltBuildDefaultSecurityDescriptor, ifsk.fltbuilddefaultsecuritydescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,15 +29,15 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: "<= APC_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	FltMgr.lib
 -	FltMgr.dll
-apiname:
+api_name:
 -	FltBuildDefaultSecurityDescriptor
 product: Windows
 targetos: Windows
@@ -135,11 +135,11 @@ Minifilter drivers usually call <b>FltBuildDefaultSecurityDescriptor</b> immedia
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltfreesecuritydescriptor.md">FltFreeSecurityDescriptor</a>
 
 
 
@@ -147,19 +147,19 @@ Minifilter drivers usually call <b>FltBuildDefaultSecurityDescriptor</b> immedia
 
 
 
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+
+
 <a href="..\fltkernel\nf-fltkernel-fltcreatecommunicationport.md">FltCreateCommunicationPort</a>
 
 
 
+<a href="..\fltkernel\nf-fltkernel-fltfreesecuritydescriptor.md">FltFreeSecurityDescriptor</a>
+
+
+
 <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
 
 

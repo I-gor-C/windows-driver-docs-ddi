@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 6e3cc0ae-e214-4096-834b-b435ee0fcb46
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: bltooth.sdpconverttreetostream, SdpConvertTreeToStream callback function [Bluetooth Devices], SdpConvertTreeToStream, PCONVERTTREETOSTREAM, PCONVERTTREETOSTREAM, bthsdpddi/SdpConvertTreeToStream, bth_funcs_0f0b531b-9391-475c-a3a2-ac2b2a94e1dd.xml
+ms.keywords: PCONVERTTREETOSTREAM, SdpConvertTreeToStream, SdpConvertTreeToStream callback function [Bluetooth Devices], bltooth.sdpconverttreetostream, bth_funcs_0f0b531b-9391-475c-a3a2-ac2b2a94e1dd.xml, bthsdpddi/SdpConvertTreeToStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= PASSIVE_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	BthSdpddi.h
-apiname:
+api_name:
 -	SdpConvertTreeToStream
 product: Windows
 targetos: Windows
@@ -111,7 +111,7 @@ The
 
 <b>SdpConvertTreeToStream</b> allocates the necessary memory to store the stream version of the SDP
     record. When the memory is no longer needed, the caller is responsible for freeing the memory using the 
-    <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> driver support routine.
+    <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> driver support routine.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>.
@@ -126,7 +126,7 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
 
 
 
@@ -134,13 +134,7 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 
 
-<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-
-
-
-
-
-<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
 
 

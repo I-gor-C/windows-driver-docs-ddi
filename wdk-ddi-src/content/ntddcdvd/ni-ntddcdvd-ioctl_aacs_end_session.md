@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_end_session.htm
 old-project: storage
 ms.assetid: 5a86c871-ed6e-4c96-bc12-03b3a900953d
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
-ms.keywords: storage.ioctl_aacs_end_session, IOCTL_AACS_END_SESSION control code [Storage Devices], IOCTL_AACS_END_SESSION, ntddcdvd/IOCTL_AACS_END_SESSION, k307_608ddec6-9661-433b-8b82-22ce3b06267d.xml
+ms.date: 2/24/2018
+ms.keywords: IOCTL_AACS_END_SESSION, IOCTL_AACS_END_SESSION control code [Storage Devices], k307_608ddec6-9661-433b-8b82-22ce3b06267d.xml, ntddcdvd/IOCTL_AACS_END_SESSION, storage.ioctl_aacs_end_session
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	Ntddcdvd.h
-apiname:
+api_name:
 -	IOCTL_AACS_END_SESSION
 product: Windows
 targetos: Windows

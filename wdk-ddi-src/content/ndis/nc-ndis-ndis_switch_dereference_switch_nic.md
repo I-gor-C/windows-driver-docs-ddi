@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 58C72F81-07B9-45FE-A8BA-0405DBE4CA20
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.DereferenceSwitchNic, DereferenceSwitchNic callback function [Network Drivers Starting with Windows Vista], DereferenceSwitchNic, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, ndis/DereferenceSwitchNic
+ms.keywords: DereferenceSwitchNic, DereferenceSwitchNic callback function [Network Drivers Starting with Windows Vista], NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, ndis/DereferenceSwitchNic, netvista.DereferenceSwitchNic
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	DereferenceSwitchNic
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_SWITCH_DEREFERENCE_SWITCH_NIC function
+# NDIS_SWITCH_DEREFERENCE_SWITCH_NIC callback function
 The <i>DereferenceSwitchNic</i> function decrements the Hyper-V extensible switch reference counter for a network adapter that is connected to an extensible switch port. The reference counter was incremented through a previous call to <a href="https://msdn.microsoft.com/8F4C76FA-A386-4A3D-8C9F-3CFF69382702">ReferenceSwitchNic</a>.
 
 ## Syntax

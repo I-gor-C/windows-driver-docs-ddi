@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 3331C043-CFB2-434C-8475-2F5F094F2460
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.evt_vmb_channel_pnp_failure, EvtChannelPnpFailure callback function [Network Drivers Starting with Windows Vista], EvtChannelPnpFailure, EVT_VMB_CHANNEL_PNP_FAILURE, EVT_VMB_CHANNEL_PNP_FAILURE, vmbuskernelmodeclientlibapi/EvtChannelPnpFailure, PFN_VMB_CHANNEL_PNP_FAILURE callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PNP_FAILURE
+ms.keywords: EVT_VMB_CHANNEL_PNP_FAILURE, EvtChannelPnpFailure, EvtChannelPnpFailure callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PNP_FAILURE, PFN_VMB_CHANNEL_PNP_FAILURE callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_pnp_failure, vmbuskernelmodeclientlibapi/EvtChannelPnpFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	VmbusKernelModeClientLibApi.h
-apiname:
+api_name:
 -	PFN_VMB_CHANNEL_PNP_FAILURE
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_VMB_CHANNEL_PNP_FAILURE function
+# EVT_VMB_CHANNEL_PNP_FAILURE callback function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <i>EvtChannelPnpFailure</i> callback function is invoked if the client endpoint in the

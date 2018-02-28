@@ -7,8 +7,8 @@ old-location: display\dxgkarg_getstandardallocationdriverdata.htm
 old-project: display
 ms.assetid: 4327ba59-bd74-4018-85d2-54a1693c62c1
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: "*INOUT_PDXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, d3dkmddi/DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, display.dxgkarg_getstandardallocationdriverdata, DmStructs_2ef51052-bc21-4374-9471-c03b2a81b8b3.xml, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure [Display Devices]"
+ms.date: 2/24/2018
+ms.keywords: "*INOUT_PDXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure [Display Devices], DmStructs_2ef51052-bc21-4374-9471-c03b2a81b8b3.xml, _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, d3dkmddi/DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, display.dxgkarg_getstandardallocationdriverdata"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	d3dkmddi.h
-apiname:
+api_name:
 -	DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
 product: Windows
 targetos: Windows
@@ -109,23 +109,15 @@ Although the driver can set <b>ResourcePrivateDriverDataSize</b> or <b>Allocatio
 
 ## See Also
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
-
-
-
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
-
-
-
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md">D3DKMDT_SHADOWSURFACEDATA</a>
 
 
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a>
 
 
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_standardallocation_type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
 
 
 
@@ -133,8 +125,16 @@ Although the driver can set <b>ResourcePrivateDriverDataSize</b> or <b>Allocatio
 
 
 
- 
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_standardallocation_type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>
+
+
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

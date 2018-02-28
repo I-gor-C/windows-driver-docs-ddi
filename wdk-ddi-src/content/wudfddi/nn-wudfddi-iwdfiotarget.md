@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: bebe79c8-28d1-4976-b314-b73e6e9b7b9c
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfiotarget, IWDFIoTarget interface, IWDFIoTarget interface, described, IWDFIoTarget, wudfddi/IWDFIoTarget, UMDFIoTargetObjectRef_3def2530-811a-4ac8-b9bd-c39cc4cb8fb2.xml, umdf.iwdfiotarget
+ms.keywords: IWDFIoTarget, IWDFIoTarget interface, IWDFIoTarget interface, described, UMDFIoTargetObjectRef_3def2530-811a-4ac8-b9bd-c39cc4cb8fb2.xml, umdf.iwdfiotarget, wdf.iwdfiotarget, wudfddi/IWDFIoTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoTarget
 product: Windows
 targetos: Windows
@@ -56,11 +56,11 @@ The <b>IWDFIoTarget</b> interface exposes the I/O target object that typically r
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoTarget.CancelSentRequestsForFile](nf-wudfddi-iwdfiotarget-cancelsentrequestsforfile.md) | The CancelSentRequestsForFile method cancels all I/O requests that have been sent on behalf of the specified file object. |
-| [wudfddi.IWDFIoTarget.FormatRequestForIoctl](nf-wudfddi-iwdfiotarget-formatrequestforioctl.md) | The FormatRequestForIoctl method formats an I/O request object for an I/O control operation. |
-| [wudfddi.IWDFIoTarget.FormatRequestForRead](nf-wudfddi-iwdfiotarget-formatrequestforread.md) | The FormatRequestForRead method formats an I/O request object for a read operation. |
-| [wudfddi.IWDFIoTarget.FormatRequestForWrite](nf-wudfddi-iwdfiotarget-formatrequestforwrite.md) | The FormatRequestForWrite method formats an I/O request object for a write operation. |
-| [wudfddi.IWDFIoTarget.GetTargetFile](nf-wudfddi-iwdfiotarget-gettargetfile.md) | The GetTargetFile method retrieves the framework file object that is associated with the I/O target object. |
+| [IWDFIoTarget::CancelSentRequestsForFile](nf-wudfddi-iwdfiotarget-cancelsentrequestsforfile.md) | The CancelSentRequestsForFile method cancels all I/O requests that have been sent on behalf of the specified file object. |
+| [IWDFIoTarget::FormatRequestForIoctl](nf-wudfddi-iwdfiotarget-formatrequestforioctl.md) | The FormatRequestForIoctl method formats an I/O request object for an I/O control operation. |
+| [IWDFIoTarget::FormatRequestForRead](nf-wudfddi-iwdfiotarget-formatrequestforread.md) | The FormatRequestForRead method formats an I/O request object for a read operation. |
+| [IWDFIoTarget::FormatRequestForWrite](nf-wudfddi-iwdfiotarget-formatrequestforwrite.md) | The FormatRequestForWrite method formats an I/O request object for a write operation. |
+| [IWDFIoTarget::GetTargetFile](nf-wudfddi-iwdfiotarget-gettargetfile.md) | The GetTargetFile method retrieves the framework file object that is associated with the I/O target object. |
 
 ## Remarks
 

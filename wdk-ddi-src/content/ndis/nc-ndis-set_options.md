@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 342e23ad-d38b-4100-949a-220b8fbdcf6e
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolsetoptions, SetOptions callback function [Network Drivers Starting with Windows Vista], SetOptions, SET_OPTIONS, SET_OPTIONS, ndis/SetOptions, protocol_functions_ref_be1126b7-c5ae-4d43-90d4-8e10d97f422d.xml
+ms.keywords: SET_OPTIONS, SetOptions, SetOptions callback function [Network Drivers Starting with Windows Vista], ndis/SetOptions, netvista.protocolsetoptions, protocol_functions_ref_be1126b7-c5ae-4d43-90d4-8e10d97f422d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	SetOptions
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# SET_OPTIONS function
+# SET_OPTIONS callback function
 NDIS calls a driver's 
   <i>XxxSetOptions</i> function to allow the driver to register optional services. This function is defined as <i>MiniportSetOptions</i> for miniport drivers,  <i>ProtocolSetOptions</i> for protocol drivers, or <i>FilterSetOptions</i> for filter drivers.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>Xxx_SET_OPTIONS</b> type. For more
@@ -285,8 +285,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_protocol_co_characteristics.md">
-   NDIS_PROTOCOL_CO_CHARACTERISTICS</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
 
 
@@ -295,12 +294,13 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
-
-
-
 <a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
    NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_protocol_co_characteristics.md">
+   NDIS_PROTOCOL_CO_CHARACTERISTICS</a>
 
 
 
@@ -308,11 +308,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
-
-
-
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
 
 

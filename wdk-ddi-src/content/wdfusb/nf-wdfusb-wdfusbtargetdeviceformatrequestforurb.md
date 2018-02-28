@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 886120f0-da2a-4a00-b440-ce1274c516d4
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: DFUsbRef_c7b76463-570c-4f0d-b4d5-37ef192ba30f.xml, WdfUsbTargetDeviceFormatRequestForUrb method, wdf.wdfusbtargetdeviceformatrequestforurb, kmdf.wdfusbtargetdeviceformatrequestforurb, WdfUsbTargetDeviceFormatRequestForUrb, wdfusb/WdfUsbTargetDeviceFormatRequestForUrb
+ms.keywords: DFUsbRef_c7b76463-570c-4f0d-b4d5-37ef192ba30f.xml, WdfUsbTargetDeviceFormatRequestForUrb, WdfUsbTargetDeviceFormatRequestForUrb method, kmdf.wdfusbtargetdeviceformatrequestforurb, wdf.wdfusbtargetdeviceformatrequestforurb, wdfusb/WdfUsbTargetDeviceFormatRequestForUrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,19 +29,19 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
-apiname:
+api_name:
 -	WdfUsbTargetDeviceFormatRequestForUrb
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -80,7 +80,7 @@ If the driver previously called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicec
 
 `UrbMemoryOffset`
 
-A pointer to a caller-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address of the URB within the memory that <i>UrbMemory</i> specifies. If this pointer is <b>NULL</b>, the URB is located at the beginning of the <i>UrbMemory</i> memory.
+A pointer to a caller-allocated <a href="..\wdfmemory\ns-wdfmemory-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address of the URB within the memory that <i>UrbMemory</i> specifies. If this pointer is <b>NULL</b>, the URB is located at the beginning of the <i>UrbMemory</i> memory.
 
 
 ## Return Value
@@ -221,27 +221,29 @@ if (WdfRequestSend(
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-
-
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-
-
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendurbsynchronously.md">WdfUsbTargetDeviceSendUrbSynchronously</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
-
-
-
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-
-
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+
+
+
+
+
+
+
+
+
+<a href="..\wdfmemory\ns-wdfmemory-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
+
+
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
 
 

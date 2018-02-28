@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: a239889e-ec39-48fc-9e82-c8bc3d7ca51a
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.filterpause, FilterPause callback function [Network Drivers Starting with Windows Vista], FilterPause, FILTER_PAUSE, FILTER_PAUSE, ndis/FilterPause, filter_functions_ref_2f28fa9f-47cb-4638-b673-e938872f54f1.xml
+ms.keywords: FILTER_PAUSE, FilterPause, FilterPause callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_2f28fa9f-47cb-4638-b673-e938872f54f1.xml, ndis/FilterPause, netvista.filterpause
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	FilterPause
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# FILTER_PAUSE function
+# FILTER_PAUSE callback function
 NDIS calls a filter driver's 
   <i>FilterPause</i> function to initiate a pause operation for the specified filter module.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>FILTER_PAUSE</b> type. For more
@@ -224,7 +224,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
+<a href="..\ndis\nf-ndis-ndisfpausecomplete.md">NdisFPauseComplete</a>
 
 
 
@@ -232,11 +232,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>
-
-
-
-<a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 
 
 
@@ -244,11 +240,28 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndisfpausecomplete.md">NdisFPauseComplete</a>
+<a href="..\ndis\nc-ndis-filter_return_net_buffer_lists.md">FilterReturnNetBufferLists</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
+   NdisFSendNetBufferListsComplete</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_receive_net_buffer_lists.md">FilterReceiveNetBufferLists</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">FilterSendNetBufferLists</a>
 
 
 
 <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 
 
@@ -258,19 +271,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
    FilterSendNetBufferListsComplete</a>
-
-
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfpausecomplete.md">NdisFPauseComplete</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
-   NdisFSendNetBufferListsComplete</a>
 
 
 

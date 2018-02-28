@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: cc20c2d6-c76b-4f72-9762-23b9aa5fe946
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: "_WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO union [WHEA Drivers and Applications], whea.whea_processor_family_info, PWHEA_PROCESSOR_FAMILY_INFO union pointer [WHEA Drivers and Applications], whearef_f15c7bb5-aee5-4a59-9869-285828d92b5e.xml, ntddk/PWHEA_PROCESSOR_FAMILY_INFO, ntddk/WHEA_PROCESSOR_FAMILY_INFO, PWHEA_PROCESSOR_FAMILY_INFO"
+ms.keywords: "*PWHEA_PROCESSOR_FAMILY_INFO, PWHEA_PROCESSOR_FAMILY_INFO, PWHEA_PROCESSOR_FAMILY_INFO union pointer [WHEA Drivers and Applications], WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO union [WHEA Drivers and Applications], _WHEA_PROCESSOR_FAMILY_INFO, ntddk/PWHEA_PROCESSOR_FAMILY_INFO, ntddk/WHEA_PROCESSOR_FAMILY_INFO, whea.whea_processor_family_info, whearef_f15c7bb5-aee5-4a59-9869-285828d92b5e.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ntddk.h
-apiname:
+api_name:
 -	WHEA_PROCESSOR_FAMILY_INFO
 product: Windows
 targetos: Windows
-req.typenames: "*PWHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO"
+req.typenames: WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO
 ---
 
 # _WHEA_PROCESSOR_FAMILY_INFO structure

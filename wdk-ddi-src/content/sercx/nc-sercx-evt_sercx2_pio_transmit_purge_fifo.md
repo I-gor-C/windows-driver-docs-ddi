@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 2BB02F84-01C1-432D-A4A9-6035F3ED32D7
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercx2piotransmitpurgefifo, EvtSerCx2PioTransmitPurgeFifo callback function [Serial Ports], EvtSerCx2PioTransmitPurgeFifo, EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO, EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO, 2/EvtSerCx2PioTransmitPurgeFifo
+ms.keywords: 2/EvtSerCx2PioTransmitPurgeFifo, EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO, EvtSerCx2PioTransmitPurgeFifo, EvtSerCx2PioTransmitPurgeFifo callback function [Serial Ports], serports.evtsercx2piotransmitpurgefifo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	2.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCx2PioTransmitPurgeFifo
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO function
+# EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO callback function
 The <i>EvtSerCx2PioTransmitPurgeFifo</i> event callback function is called by version 2 of the serial framework extension (SerCx2) to discard any bytes of unsent data that remain in the transmit FIFO in the serial controller.
 
 ## Syntax
@@ -137,6 +137,14 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO</b> function type is defined in the Se
 
 ## See Also
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a>
+
+
+
+<a href="..\sercx\nf-sercx-sercx2piotransmitpurgefifocomplete.md">SerCx2PioTransmitPurgeFifoComplete</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 
 
@@ -150,14 +158,6 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO</b> function type is defined in the Se
 
 
 <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
-
-
-
-<a href="..\sercx\nf-sercx-sercx2piotransmitpurgefifocomplete.md">SerCx2PioTransmitPurgeFifoComplete</a>
-
-
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 25c803cf-f8a6-4e41-a731-c3ae7f1db211
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportdriverunload, MiniportDriverUnload callback function [Network Drivers Starting with Windows Vista], MiniportDriverUnload, MINIPORT_UNLOAD, MINIPORT_UNLOAD, ndis/MiniportDriverUnload, miniport_functions_ref_8f9795d0-00aa-4059-8dbf-8f7eed303cae.xml
+ms.keywords: MINIPORT_UNLOAD, MiniportDriverUnload, MiniportDriverUnload callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_8f9795d0-00aa-4059-8dbf-8f7eed303cae.xml, ndis/MiniportDriverUnload, netvista.miniportdriverunload
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportDriverUnload
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_UNLOAD function
+# MINIPORT_UNLOAD callback function
 NDIS calls a miniport driver's 
    <i>MiniportDriverUnload</i> function to request the driver to release resources before the system completes
    a driver unload operation.
@@ -162,27 +162,28 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 
 
 <a href="..\ndis\nf-ndis-ndisderegisterprotocoldriver.md">NdisDeregisterProtocolDriver</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
+   NdisMDeregisterMiniportDriver</a>
 
 
 

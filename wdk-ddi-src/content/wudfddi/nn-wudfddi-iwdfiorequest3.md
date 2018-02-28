@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 12F4CDB7-EEA5-49D1-AD41-6F5F0C9ED6C3
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfiorequest3, IWDFIoRequest3 interface, IWDFIoRequest3 interface, described, IWDFIoRequest3, wudfddi/IWDFIoRequest3, umdf.iwdfiorequest3
+ms.keywords: IWDFIoRequest3, IWDFIoRequest3 interface, IWDFIoRequest3 interface, described, umdf.iwdfiorequest3, wdf.iwdfiorequest3, wudfddi/IWDFIoRequest3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoRequest3
 product: Windows
 targetos: Windows
@@ -56,10 +56,10 @@ To obtain the <b>IWDFIoRequest3</b> interface, drivers call <b>IWDFIoRequest::Qu
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoRequest3.GetUserModeDriverInitiatedIo](nf-wudfddi-iwdfiorequest3-getusermodedriverinitiatedio.md) | The GetUserModeDriverInitiatedIo method determines whether an I/O request is marked as initiated by a UMDF driver. |
-| [wudfddi.IWDFIoRequest3.RetrieveActivityId](nf-wudfddi-iwdfiorequest3-retrieveactivityid.md) | The RetrieveActivityId method retrieves the current activity identifier associated with an I/O request. |
-| [wudfddi.IWDFIoRequest3.SetActivityId](nf-wudfddi-iwdfiorequest3-setactivityid.md) | The SetActivityId method associates an activity identifier with an I/O request. |
-| [wudfddi.IWDFIoRequest3.SetUserModeDriverInitiatedIo](nf-wudfddi-iwdfiorequest3-setusermodedriverinitiatedio.md) | The SetUserModeDriverInitiatedIo method indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver. |
+| [IWDFIoRequest3::GetUserModeDriverInitiatedIo](nf-wudfddi-iwdfiorequest3-getusermodedriverinitiatedio.md) | The GetUserModeDriverInitiatedIo method determines whether an I/O request is marked as initiated by a UMDF driver. |
+| [IWDFIoRequest3::RetrieveActivityId](nf-wudfddi-iwdfiorequest3-retrieveactivityid.md) | The RetrieveActivityId method retrieves the current activity identifier associated with an I/O request. |
+| [IWDFIoRequest3::SetActivityId](nf-wudfddi-iwdfiorequest3-setactivityid.md) | The SetActivityId method associates an activity identifier with an I/O request. |
+| [IWDFIoRequest3::SetUserModeDriverInitiatedIo](nf-wudfddi-iwdfiorequest3-setusermodedriverinitiatedio.md) | The SetUserModeDriverInitiatedIo method indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver. |
 
 ## Remarks
 

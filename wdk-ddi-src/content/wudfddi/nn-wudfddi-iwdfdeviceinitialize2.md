@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 78d0c888-955f-481f-aa59-f2e5eea1aa81
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfdeviceinitialize2, IWDFDeviceInitialize2 interface, IWDFDeviceInitialize2 interface, described, IWDFDeviceInitialize2, wudfddi/IWDFDeviceInitialize2, UMDFDeviceObjectRef_0a7dcdea-43e7-4a0a-b55c-34d18eca65e8.xml, umdf.iwdfdeviceinitialize2
+ms.keywords: IWDFDeviceInitialize2, IWDFDeviceInitialize2 interface, IWDFDeviceInitialize2 interface, described, UMDFDeviceObjectRef_0a7dcdea-43e7-4a0a-b55c-34d18eca65e8.xml, umdf.iwdfdeviceinitialize2, wdf.iwdfdeviceinitialize2, wudfddi/IWDFDeviceInitialize2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFDeviceInitialize2
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IWDFDeviceInitialize2</b> interface is a helper interface that allows a d
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFDeviceInitialize2.SetIoTypePreference](nf-wudfddi-iwdfdeviceinitialize2-setiotypepreference.md) | The SetIoTypePreference method specifies your preferences for how UMDF and the driver access the data buffers of a device's I/O requests. |
+| [IWDFDeviceInitialize2::SetIoTypePreference](nf-wudfddi-iwdfdeviceinitialize2-setiotypepreference.md) | The SetIoTypePreference method specifies your preferences for how UMDF and the driver access the data buffers of a device's I/O requests. |
 
 ## Remarks
 

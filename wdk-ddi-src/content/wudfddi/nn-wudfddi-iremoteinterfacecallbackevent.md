@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 72b68ed0-d14c-44b1-b848-40c427fe6c9a
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iremoteinterfacecallbackevent, IRemoteInterfaceCallbackEvent interface, IRemoteInterfaceCallbackEvent interface, described, IRemoteInterfaceCallbackEvent, wudfddi/IRemoteInterfaceCallbackEvent, UMDFIoTargetObjectRef_9ce0aebc-e132-4d0e-b575-7ef1e19d9c30.xml, umdf.iremoteinterfacecallbackevent
+ms.keywords: IRemoteInterfaceCallbackEvent, IRemoteInterfaceCallbackEvent interface, IRemoteInterfaceCallbackEvent interface, described, UMDFIoTargetObjectRef_9ce0aebc-e132-4d0e-b575-7ef1e19d9c30.xml, umdf.iremoteinterfacecallbackevent, wdf.iremoteinterfacecallbackevent, wudfddi/IRemoteInterfaceCallbackEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IRemoteInterfaceCallbackEvent
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IRemoteInterfaceCallbackEvent</b> interface provides a callback function 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IRemoteInterfaceCallbackEvent.OnRemoteInterfaceEvent](nf-wudfddi-iremoteinterfacecallbackevent-onremoteinterfaceevent.md) | A UMDF-based driver's OnRemoteInterfaceEvent event callback function handles device events that are associated with a device interface. |
+| [IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent](nf-wudfddi-iremoteinterfacecallbackevent-onremoteinterfaceevent.md) | A UMDF-based driver's OnRemoteInterfaceEvent event callback function handles device events that are associated with a device interface. |
 
 ## Remarks
 

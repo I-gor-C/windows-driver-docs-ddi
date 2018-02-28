@@ -2,12 +2,43 @@
 UID: NA:winbio_ioctl
 ms.assetid: 0308c48b-3f20-376a-b09d-1540b1d30380
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Winbio_Ioctl.h header
+
+
+
+This header is used by biometric. For more information, see
+- [biometric](../_biometric/index.md)
+
+Winbio_Ioctl.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_WINBIO_BLANK_PAYLOAD structure](ns-winbio_ioctl-_winbio_blank_payload.md) | The IOCTL_BIOMETRIC_RESET and IOCTL_BIOMETRIC_UPDATE_FIRMWARE IOCTLs return the WINBIO_BLANK_PAYLOAD structure as output. |
+| [_WINBIO_CALIBRATION_INFO structure](ns-winbio_ioctl-_winbio_calibration_info.md) | The IOCTL_BIOMETRIC_CALIBRATE IOCTL returns the WINBIO_CALIBRATION_INFO structure as output. |
+| [_WINBIO_CAPTURE_DATA structure](ns-winbio_ioctl-_winbio_capture_data.md) | The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL returns the WINBIO_CAPTURE_DATA structure as output. |
+| [_WINBIO_CAPTURE_PARAMETERS structure](ns-winbio_ioctl-_winbio_capture_parameters.md) | The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL uses the WINBIO_CAPTURE_PARAMETERS structure as input. |
+| [_WINBIO_DATA structure](ns-winbio_ioctl-_winbio_data.md) | The WINBIO_DATA structure specifies data in IOCTL payloads. |
+| [_WINBIO_DIAGNOSTICS structure](ns-winbio_ioctl-_winbio_diagnostics.md) | The IOCTL_BIOMETRIC_GET_SENSOR_STATUS IOCTL returns the WINBIO_DIAGNOSTICS structure as output. |
+| [_WINBIO_GET_INDICATOR structure](ns-winbio_ioctl-_winbio_get_indicator.md) | The WINBIO_GET_INDICATOR structure is the OUT payload for IOCTL_BIOMETRIC_GET_INDICATOR. |
+| [_WINBIO_SENSOR_ATTRIBUTES structure](ns-winbio_ioctl-_winbio_sensor_attributes.md) | The IOCTL_BIOMETRIC_GET_ATTRIBUTES structure returns the WINBIO_SENSOR_ATTRIBUTES structure as output. |
+| [_WINBIO_SET_INDICATOR structure](ns-winbio_ioctl-_winbio_set_indicator.md) | The WINBIO_SET_INDICATOR structure is the IN payload for IOCTL_BIOMETRIC_SET_INDICATOR. |
+| [_WINBIO_SUPPORTED_ALGORITHMS structure](ns-winbio_ioctl-_winbio_supported_algorithms.md) | The WINBIO_SUPPORTED_ALGORITHMS structure is the OUT payload for IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS. |
+| [_WINBIO_UPDATE_FIRMWARE structure](ns-winbio_ioctl-_winbio_update_firmware.md) | The WINBIO_UPDATE_FIRMWARE structure is the IN payload for IOCTL_BIOMETRIC_UPDATE_FIRMWARE. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # winbio_ioctl.h header
 

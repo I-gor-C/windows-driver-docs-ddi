@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ea74a539-d0a0-41ea-9fe1-8d7880a4187d
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfdrivercreatedfile, IWDFDriverCreatedFile interface, IWDFDriverCreatedFile interface, described, IWDFDriverCreatedFile, wudfddi/IWDFDriverCreatedFile, UMDFDriverCreatedFileObjectRef_5299de07-06ff-484c-a60f-4abe8828a725.xml, umdf.iwdfdrivercreatedfile
+ms.keywords: IWDFDriverCreatedFile, IWDFDriverCreatedFile interface, IWDFDriverCreatedFile interface, described, UMDFDriverCreatedFileObjectRef_5299de07-06ff-484c-a60f-4abe8828a725.xml, umdf.iwdfdrivercreatedfile, wdf.iwdfdrivercreatedfile, wudfddi/IWDFDriverCreatedFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFDriverCreatedFile
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IWDFDriverCreatedFile</b> interface exposes a UMDF driver-created-file ob
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFDriverCreatedFile.Close](nf-wudfddi-iwdfdrivercreatedfile-close.md) | The Close method closes an instance of a UMDF driver-created-file object that was created by calling the IWDFDevice::CreateWdfFile method. |
+| [IWDFDriverCreatedFile::Close](nf-wudfddi-iwdfdrivercreatedfile-close.md) | The Close method closes an instance of a UMDF driver-created-file object that was created by calling the IWDFDevice::CreateWdfFile method. |
 
 ## Remarks
 

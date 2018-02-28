@@ -7,8 +7,8 @@ old-location: stream\iksobject.htm
 old-project: stream
 ms.assetid: c4422564-3fc0-4087-b628-056488c723e6
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.iksobject, IKsObject interface [Streaming Media Devices], IKsObject interface [Streaming Media Devices], described, IKsObject, ksproxy_6432effa-13f1-4b39-a158-c315a93108d4.xml
+ms.date: 2/23/2018
+ms.keywords: IKsObject, IKsObject interface [Streaming Media Devices], IKsObject interface [Streaming Media Devices], described, ksproxy_6432effa-13f1-4b39-a158-c315a93108d4.xml, stream.iksobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,15 +29,15 @@ req.type-library:
 req.lib: Ksproxy.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
 -	ksproxy.h.dll
-apiname:
+api_name:
 -	IKsObject
 product: Windows
 targetos: Windows
@@ -54,7 +54,7 @@ The <b>IKsObject</b> interface provides a method to retrieve the file handle of 
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsObject.KsGetObjectHandle](nf-ksproxy-iksobject-ksgetobjecthandle.md) | The KsGetObjectHandle method retrieves a file handle to a KS object. |
+| [IKsObject::KsGetObjectHandle](nf-ksproxy-iksobject-ksgetobjecthandle.md) | The KsGetObjectHandle method retrieves a file handle to a KS object. |
 
 ## Remarks
 

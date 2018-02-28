@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 50b8acc6-5f08-47d5-b45d-31ff33a06be1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackcreate, IQueueCallbackCreate interface, IQueueCallbackCreate interface, described, IQueueCallbackCreate, wudfddi/IQueueCallbackCreate, UMDFQueueObjectRef_dfb85326-329e-4d5b-9889-1894c53e4cb7.xml, umdf.iqueuecallbackcreate
+ms.keywords: IQueueCallbackCreate, IQueueCallbackCreate interface, IQueueCallbackCreate interface, described, UMDFQueueObjectRef_dfb85326-329e-4d5b-9889-1894c53e4cb7.xml, umdf.iqueuecallbackcreate, wdf.iqueuecallbackcreate, wudfddi/IQueueCallbackCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackCreate
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ An I/O queue notifies a driver when an open file request is available for the dr
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackCreate.OnCreateFile](nf-wudfddi-iqueuecallbackcreate-oncreatefile.md) | The OnCreateFile method is called to handle an open file request when an application opens a device through the Microsoft Win32 CreateFile function. |
+| [IQueueCallbackCreate::OnCreateFile](nf-wudfddi-iqueuecallbackcreate-oncreatefile.md) | The OnCreateFile method is called to handle an open file request when an application opens a device through the Microsoft Win32 CreateFile function. |
 
 ## Remarks
 

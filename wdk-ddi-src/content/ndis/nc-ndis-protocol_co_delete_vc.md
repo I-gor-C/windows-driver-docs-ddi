@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: d761270f-bf77-441e-834c-9ac7fb3d350f
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolcodeletevc, ProtocolCoDeleteVc callback function [Network Drivers Starting with Windows Vista], ProtocolCoDeleteVc, PROTOCOL_CO_DELETE_VC, PROTOCOL_CO_DELETE_VC, ndis/ProtocolCoDeleteVc, condis_protocol_ref_bd593797-8284-4b3e-980e-c5401776014f.xml
+ms.keywords: PROTOCOL_CO_DELETE_VC, ProtocolCoDeleteVc, ProtocolCoDeleteVc callback function [Network Drivers Starting with Windows Vista], condis_protocol_ref_bd593797-8284-4b3e-980e-c5401776014f.xml, ndis/ProtocolCoDeleteVc, netvista.protocolcodeletevc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolCoDeleteVc
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CO_DELETE_VC function
+# PROTOCOL_CO_DELETE_VC callback function
 The 
   <i>ProtocolCoDeleteVc</i> function is required. This function tears down the client's or call manager's
   state for an established virtual connection that is being closed by the original creator of that VC.
@@ -180,7 +180,12 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingclosecall.md">
+   NdisCmDispatchIncomingCloseCall</a>
+
+
+
+<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
 
 
 
@@ -188,11 +193,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-
-
-
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
 
 

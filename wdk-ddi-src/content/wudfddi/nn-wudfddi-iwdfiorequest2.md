@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 6a6285c9-8366-4487-a1c5-38aa24d172a9
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfiorequest2, IWDFIoRequest2 interface, IWDFIoRequest2 interface, described, IWDFIoRequest2, wudfddi/IWDFIoRequest2, UMDFRequestObjectRef_0aa42362-60ac-4be7-8101-6395a709f420.xml, umdf.iwdfiorequest2
+ms.keywords: IWDFIoRequest2, IWDFIoRequest2 interface, IWDFIoRequest2 interface, described, UMDFRequestObjectRef_0aa42362-60ac-4be7-8101-6395a709f420.xml, umdf.iwdfiorequest2, wdf.iwdfiorequest2, wudfddi/IWDFIoRequest2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoRequest2
 product: Windows
 targetos: Windows
@@ -56,21 +56,21 @@ To obtain the <b>IWDFIoRequest2</b> interface, drivers call <b>IWDFIoRequest::Qu
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoRequest2.GetCreateParametersEx](nf-wudfddi-iwdfiorequest2-getcreateparametersex.md) | The GetCreateParametersEx method retrieves file creation parameters that are associated with a file that is being created or opened. |
-| [wudfddi.IWDFIoRequest2.GetEffectiveIoType](nf-wudfddi-iwdfiorequest2-geteffectiveiotype.md) | The GetEffectiveIoType method returns the buffer access method that UMDF is using for the data buffers of the I/O request that the IWDFIoRequest2 interface represents. |
-| [wudfddi.IWDFIoRequest2.GetQueryInformationParameters](nf-wudfddi-iwdfiorequest2-getqueryinformationparameters.md) | The GetQueryInformationParameters method retrieves parameters that are associated with a WdfRequestQueryInformation-typed I/O request. |
-| [wudfddi.IWDFIoRequest2.GetRequestorMode](nf-wudfddi-iwdfiorequest2-getrequestormode.md) | The GetRequestorMode method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver). |
-| [wudfddi.IWDFIoRequest2.GetSetInformationParameters](nf-wudfddi-iwdfiorequest2-getsetinformationparameters.md) | The GetSetInformationParameters method retrieves parameters that are associated with a WdfRequestSetInformation-typed I/O request. |
-| [wudfddi.IWDFIoRequest2.GetStatus](nf-wudfddi-iwdfiorequest2-getstatus.md) | The GetStatus method returns the status of an I/O request. |
-| [wudfddi.IWDFIoRequest2.IsCanceled](nf-wudfddi-iwdfiorequest2-iscanceled.md) | The IsCanceled method determines whether the I/O manager has attempted to cancel an I/O request. |
-| [wudfddi.IWDFIoRequest2.IsFromUserModeDriver](nf-wudfddi-iwdfiorequest2-isfromusermodedriver.md) | The IsFromUserModeDriver method indicates whether an I/O request came from a user-mode driver or an application. |
-| [wudfddi.IWDFIoRequest2.Requeue](nf-wudfddi-iwdfiorequest2-requeue.md) | The Requeue method returns an I/O request to the head of the I/O queue from which it was delivered to the driver. |
-| [wudfddi.IWDFIoRequest2.RetrieveInputBuffer](nf-wudfddi-iwdfiorequest2-retrieveinputbuffer.md) | The RequestRetrieveInputBuffer method retrieves an I/O request's input buffer. |
-| [wudfddi.IWDFIoRequest2.RetrieveInputMemory](nf-wudfddi-iwdfiorequest2-retrieveinputmemory.md) | The RetrieveInputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's input buffer. |
-| [wudfddi.IWDFIoRequest2.RetrieveOutputBuffer](nf-wudfddi-iwdfiorequest2-retrieveoutputbuffer.md) | The RequestRetrieveOutputBuffer method retrieves an I/O request's output buffer. |
-| [wudfddi.IWDFIoRequest2.RetrieveOutputMemory](nf-wudfddi-iwdfiorequest2-retrieveoutputmemory.md) | The RetrieveOutputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's output buffer. |
-| [wudfddi.IWDFIoRequest2.Reuse](nf-wudfddi-iwdfiorequest2-reuse.md) | The Reuse method reinitializes a framework request object so that it can be reused. |
-| [wudfddi.IWDFIoRequest2.StopAcknowledge](nf-wudfddi-iwdfiorequest2-stopacknowledge.md) | The StopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request. |
+| [IWDFIoRequest2::GetCreateParametersEx](nf-wudfddi-iwdfiorequest2-getcreateparametersex.md) | The GetCreateParametersEx method retrieves file creation parameters that are associated with a file that is being created or opened. |
+| [IWDFIoRequest2::GetEffectiveIoType](nf-wudfddi-iwdfiorequest2-geteffectiveiotype.md) | The GetEffectiveIoType method returns the buffer access method that UMDF is using for the data buffers of the I/O request that the IWDFIoRequest2 interface represents. |
+| [IWDFIoRequest2::GetQueryInformationParameters](nf-wudfddi-iwdfiorequest2-getqueryinformationparameters.md) | The GetQueryInformationParameters method retrieves parameters that are associated with a WdfRequestQueryInformation-typed I/O request. |
+| [IWDFIoRequest2::GetRequestorMode](nf-wudfddi-iwdfiorequest2-getrequestormode.md) | The GetRequestorMode method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver). |
+| [IWDFIoRequest2::GetSetInformationParameters](nf-wudfddi-iwdfiorequest2-getsetinformationparameters.md) | The GetSetInformationParameters method retrieves parameters that are associated with a WdfRequestSetInformation-typed I/O request. |
+| [IWDFIoRequest2::GetStatus](nf-wudfddi-iwdfiorequest2-getstatus.md) | The GetStatus method returns the status of an I/O request. |
+| [IWDFIoRequest2::IsCanceled](nf-wudfddi-iwdfiorequest2-iscanceled.md) | The IsCanceled method determines whether the I/O manager has attempted to cancel an I/O request. |
+| [IWDFIoRequest2::IsFromUserModeDriver](nf-wudfddi-iwdfiorequest2-isfromusermodedriver.md) | The IsFromUserModeDriver method indicates whether an I/O request came from a user-mode driver or an application. |
+| [IWDFIoRequest2::Requeue](nf-wudfddi-iwdfiorequest2-requeue.md) | The Requeue method returns an I/O request to the head of the I/O queue from which it was delivered to the driver. |
+| [IWDFIoRequest2::RetrieveInputBuffer](nf-wudfddi-iwdfiorequest2-retrieveinputbuffer.md) | The RequestRetrieveInputBuffer method retrieves an I/O request's input buffer. |
+| [IWDFIoRequest2::RetrieveInputMemory](nf-wudfddi-iwdfiorequest2-retrieveinputmemory.md) | The RetrieveInputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's input buffer. |
+| [IWDFIoRequest2::RetrieveOutputBuffer](nf-wudfddi-iwdfiorequest2-retrieveoutputbuffer.md) | The RequestRetrieveOutputBuffer method retrieves an I/O request's output buffer. |
+| [IWDFIoRequest2::RetrieveOutputMemory](nf-wudfddi-iwdfiorequest2-retrieveoutputmemory.md) | The RetrieveOutputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's output buffer. |
+| [IWDFIoRequest2::Reuse](nf-wudfddi-iwdfiorequest2-reuse.md) | The Reuse method reinitializes a framework request object so that it can be reused. |
+| [IWDFIoRequest2::StopAcknowledge](nf-wudfddi-iwdfiorequest2-stopacknowledge.md) | The StopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5c2ec27c-2d88-4e0c-8f11-4f58d720df46
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtchildlistidentificationdescriptionduplicate, EvtChildListIdentificationDescriptionDuplicate callback function, EvtChildListIdentificationDescriptionDuplicate, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE, wdfchildlist/EvtChildListIdentificationDescriptionDuplicate, DFDeviceObjectChildListRef_3ee2ef4e-8131-454a-b821-19eb5de4c8f9.xml, kmdf.evtchildlistidentificationdescriptionduplicate
+ms.keywords: DFDeviceObjectChildListRef_3ee2ef4e-8131-454a-b821-19eb5de4c8f9.xml, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE, EvtChildListIdentificationDescriptionDuplicate, EvtChildListIdentificationDescriptionDuplicate callback function, kmdf.evtchildlistidentificationdescriptionduplicate, wdf.evtchildlistidentificationdescriptionduplicate, wdfchildlist/EvtChildListIdentificationDescriptionDuplicate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	WdfChildlist.h
-apiname:
+api_name:
 -	EvtChildListIdentificationDescriptionDuplicate
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE function
+# EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE callback function
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtChildListIdentificationDescriptionDuplicate</i> event callback function duplicates a child identification description.
@@ -186,7 +186,7 @@ The <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE</b> function type
 
 ## See Also
 
-<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_identification_description_compare.md">EvtChildListIdentificationDescriptionCompare</a>
+<a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
 
 
 
@@ -194,7 +194,15 @@ The <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE</b> function type
 
 
 
-<a href="..\wdm\nf-wdm-exallocatepool.md">ExAllocatePool</a>
+<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_identification_description_compare.md">EvtChildListIdentificationDescriptionCompare</a>
+
+
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>
+
+
+
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetdefaultchildlistconfig.md">WdfFdoInitSetDefaultChildListConfig</a>
 
 
 
@@ -202,7 +210,11 @@ The <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE</b> function type
 
 
 
-<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_identification_description_cleanup.md">EvtChildListIdentificationDescriptionCleanup</a>
+<a href="..\wdm\nf-wdm-exallocatepool.md">ExAllocatePool</a>
+
+
+
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 
 
 
@@ -211,18 +223,6 @@ The <b>EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_DUPLICATE</b> function type
 
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>
-
-
-
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
-
-
-
-<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetdefaultchildlistconfig.md">WdfFdoInitSetDefaultChildListConfig</a>
-
-
-
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 
 
 

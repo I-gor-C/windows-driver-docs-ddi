@@ -7,8 +7,8 @@ old-location: kernel\zwsetinformationtoken.htm
 old-project: kernel
 ms.assetid: fdb1245c-7804-4cb9-9632-bedb9f7f7b2b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
-ms.keywords: NtSetInformationToken, kernel.zwsetinformationtoken, ntifs/ZwSetInformationToken, k111_1122461b-dab8-4a40-8f05-db62ca25763b.xml, ZwSetInformationToken routine [Kernel-Mode Driver Architecture], ntifs/NtSetInformationToken, ZwSetInformationToken
+ms.date: 2/24/2018
+ms.keywords: NtSetInformationToken, ZwSetInformationToken, ZwSetInformationToken routine [Kernel-Mode Driver Architecture], k111_1122461b-dab8-4a40-8f05-db62ca25763b.xml, kernel.zwsetinformationtoken, ntifs/NtSetInformationToken, ntifs/ZwSetInformationToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	ZwSetInformationToken
 -	NtSetInformationToken
 product: Windows
@@ -344,11 +344,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
 
 
 
@@ -356,7 +352,11 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
-<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
 
 
 
@@ -364,19 +364,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
-<a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
-
-
-
-<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 
 
@@ -384,31 +372,15 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
+<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
+
+
+
 <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
-
-
-
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
-
-
-
-<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
 
 
 
@@ -420,7 +392,35 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
-<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
+<a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
+
+
+
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
+
+
+
+<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
 
 
 
@@ -428,4 +428,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationToken routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationToken routine%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

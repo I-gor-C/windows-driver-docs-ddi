@@ -7,8 +7,8 @@ old-location: audio\iminiportwavertstreamnotification.htm
 old-project: audio
 ms.assetid: e009c459-77f7-43ee-9e95-8408324b0a9b
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportwavertstreamnotification, IMiniportWaveRTStreamNotification interface [Audio Devices], IMiniportWaveRTStreamNotification interface [Audio Devices], described, IMiniportWaveRTStreamNotification, portcls/IMiniportWaveRTStreamNotification, audmp-routines_a49bf74b-367b-44f4-b8de-a3adf6240b36.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportWaveRTStreamNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], IMiniportWaveRTStreamNotification interface [Audio Devices], described, audio.iminiportwavertstreamnotification, audmp-routines_a49bf74b-367b-44f4-b8de-a3adf6240b36.xml, portcls/IMiniportWaveRTStreamNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportWaveRTStreamNotification
 product: Windows
 targetos: Windows
@@ -57,10 +57,10 @@ To access the <code>IMiniportWaveRTStreamNotification</code> interface, the <a h
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportWaveRTStreamNotification.AllocateBufferWithNotification](nf-portcls-iminiportwavertstreamnotification-allocatebufferwithnotification.md) | The AllocateAudioBufferWithNotification method allocates a cyclic buffer for audio data when you want to implement DMA-driven event notification. If you do not want event notification, you must use IMiniportWaveRTStream::AllocateAudioBuffer. |
-| [portcls.IMiniportWaveRTStreamNotification.FreeBufferWithNotification](nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification.md) | The FreeBufferWithNotification method is used to free an audio buffer previously allocated with a call to IMiniportWaveRTStreamNotification::AllocateBufferWithNotification. |
-| [portcls.IMiniportWaveRTStreamNotification.RegisterNotificationEvent](nf-portcls-iminiportwavertstreamnotification-registernotificationevent.md) | The RegisterNotificationEvent method registers an event to be notified for DMA-driven event notification. |
-| [portcls.IMiniportWaveRTStreamNotification.UnregisterNotificationEvent](nf-portcls-iminiportwavertstreamnotification-unregisternotificationevent.md) | The UnregisterNotificationEvent method unregisters an event from DMA driven event notification. |
+| [IMiniportWaveRTStreamNotification::AllocateBufferWithNotification](nf-portcls-iminiportwavertstreamnotification-allocatebufferwithnotification.md) | The AllocateAudioBufferWithNotification method allocates a cyclic buffer for audio data when you want to implement DMA-driven event notification. If you do not want event notification, you must use IMiniportWaveRTStream::AllocateAudioBuffer. |
+| [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification.md) | The FreeBufferWithNotification method is used to free an audio buffer previously allocated with a call to IMiniportWaveRTStreamNotification::AllocateBufferWithNotification. |
+| [IMiniportWaveRTStreamNotification::RegisterNotificationEvent](nf-portcls-iminiportwavertstreamnotification-registernotificationevent.md) | The RegisterNotificationEvent method registers an event to be notified for DMA-driven event notification. |
+| [IMiniportWaveRTStreamNotification::UnregisterNotificationEvent](nf-portcls-iminiportwavertstreamnotification-unregisternotificationevent.md) | The UnregisterNotificationEvent method unregisters an event from DMA driven event notification. |
 
 ## Remarks
 

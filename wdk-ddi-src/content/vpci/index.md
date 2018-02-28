@@ -2,12 +2,36 @@
 UID: NA:vpci
 ms.assetid: 223913a9-9bdc-37cb-bc90-4bb619db3fb6
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Vpci.h header
+
+
+
+This header is used by Windows kernel, PCI. For more information, see
+- [Windows kernel](../_kernel/index.md)
+- [PCI](../_PCI/index.md)
+
+Vpci.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_VPCI_INVALIDATE_BLOCK_OUTPUT structure](ns-vpci-_vpci_invalidate_block_output.md) | The VPCI_INVALIDATE_BLOCK_OUTPUT structure is used in an IOCTL_VPCI_INVALIDATE_BLOCK IOCTL request. |
+| [_VPCI_READ_BLOCK_INPUT structure](ns-vpci-_vpci_read_block_input.md) | The VPCI_READ_BLOCK_INPUT structure is used in an IOCTL_VPCI_READ_BLOCK IOCTL request to read data from a specified configuration block of data for a PCI Express (PCIe) virtual function (VF). |
+| [_VPCI_WRITE_BLOCK_INPUT structure](ns-vpci-_vpci_write_block_input.md) | The VPCI_WRITE_BLOCK_INPUT structure is used in an IOCTL_VPCI_WRITE_BLOCK IOCTL request to write data to a specified configuration block for a PCI Express (PCIe) virtual function (VF). |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # vpci.h header
 

@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: E2B7FE14-1D06-48E7-95FB-C103358340EA
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercx2systemdmareceiveenablenewdatanotification, EvtSerCx2SystemDmaReceiveEnableNewDataNotification callback function [Serial Ports], EvtSerCx2SystemDmaReceiveEnableNewDataNotification, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, 2/EvtSerCx2SystemDmaReceiveEnableNewDataNotification
+ms.keywords: 2/EvtSerCx2SystemDmaReceiveEnableNewDataNotification, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, EvtSerCx2SystemDmaReceiveEnableNewDataNotification, EvtSerCx2SystemDmaReceiveEnableNewDataNotification callback function [Serial Ports], serports.evtsercx2systemdmareceiveenablenewdatanotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	2.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCx2SystemDmaReceiveEnableNewDataNotification
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION function
+# EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION callback function
 The <i>EvtSerCx2SystemDmaReceiveEnableNewDataNotification</i> event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the serial controller receives new data.
 
 ## Syntax
@@ -136,23 +136,15 @@ The <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION</b> function t
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_receive_cancel_new_data_notification.md">EvtSerCx2SystemDmaReceiveCancelNewDataNotification</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a>
 
 
 
-<a href="..\wdm\nc-wdm-pread_dma_counter.md">ReadDmaCounter</a>
+<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_receive_cancel_new_data_notification.md">EvtSerCx2SystemDmaReceiveCancelNewDataNotification</a>
 
 
 
 <a href="..\sercx\nf-sercx-sercx2systemdmareceivenewdatanotification.md">SerCx2SystemDmaReceiveNewDataNotification</a>
-
-
-
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
 
 
@@ -161,6 +153,14 @@ The <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION</b> function t
 
 
 <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a>
+
+
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+
+
+<a href="..\wdm\nc-wdm-pread_dma_counter.md">ReadDmaCounter</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3a614b58-8230-4137-aae9-5c50e94bea5e
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.wdfregistryassignunicodestring, WdfRegistryAssignUnicodeString, DFRegKeyObjectRef_83d456aa-06de-47c9-94df-b5b9684a95ac.xml, kmdf.wdfregistryassignunicodestring, wdfregistry/WdfRegistryAssignUnicodeString, WdfRegistryAssignUnicodeString method
+ms.keywords: DFRegKeyObjectRef_83d456aa-06de-47c9-94df-b5b9684a95ac.xml, WdfRegistryAssignUnicodeString, WdfRegistryAssignUnicodeString method, kmdf.wdfregistryassignunicodestring, wdf.wdfregistryassignunicodestring, wdfregistry/WdfRegistryAssignUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,17 +29,17 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfRegistryAssignUnicodeString
 product: Windows
 targetos: Windows
@@ -194,7 +194,23 @@ status = WdfRegistryAssignUnicodeString(
 
 ## See Also
 
+<a href="..\wudfwdm\nf-wudfwdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
+
+
+
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmultistring.md">WdfRegistryAssignMultiString</a>
+
+
+
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignstring.md">WdfRegistryAssignString</a>
+
+
+
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignvalue.md">WdfRegistryAssignValue</a>
 
 
 
@@ -203,22 +219,6 @@ status = WdfRegistryAssignUnicodeString(
 
 
 <a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignulong.md">WdfRegistryAssignULong</a>
-
-
-
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmultistring.md">WdfRegistryAssignMultiString</a>
-
-
-
-<a href="..\wudfwdm\nf-wudfwdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
-
-
-
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignvalue.md">WdfRegistryAssignValue</a>
-
-
-
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignstring.md">WdfRegistryAssignString</a>
 
 
 

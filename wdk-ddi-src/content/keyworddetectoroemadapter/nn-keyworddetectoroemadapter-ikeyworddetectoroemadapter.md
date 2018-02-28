@@ -7,8 +7,8 @@ old-location: audio\ikeyworddetectoroemadapter.htm
 old-project: audio
 ms.assetid: FB243792-C0B0-4BCA-B4C4-B6E17FDB615C
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.ikeyworddetectoroemadapter, IKeywordDetectorOemAdapter interface [Audio Devices], IKeywordDetectorOemAdapter interface [Audio Devices], described, IKeywordDetectorOemAdapter, keyworddetectoroemadapter/IKeywordDetectorOemAdapter
+ms.date: 2/22/2018
+ms.keywords: IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], IKeywordDetectorOemAdapter interface [Audio Devices], described, audio.ikeyworddetectoroemadapter, keyworddetectoroemadapter/IKeywordDetectorOemAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: keyworddetectoroemadapter.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	keyworddetectoroemadapter.h
-apiname:
+api_name:
 -	IKeywordDetectorOemAdapter
 product: Windows
 targetos: Windows
@@ -66,11 +66,11 @@ In fact, internal C++ classes likely do not need any member variables beyond tho
 
 | Method | Description |
 | ---- |:---- |
-| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.BuildArmingPatternData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-buildarmingpatterndata.md) | The BuildArmingPatternData method is called by the operating system to build OEM-specific pattern data that includes any keyword and user-specific model data for detection. |
-| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ComputeAndAddUserModelData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-computeandaddusermodeldata.md) | The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword. |
-| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.GetCapabilities](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-getcapabilities.md) | The GetCapabilities method returns the keywords and languages supported by the object. |
-| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ParseDetectionResultData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-parsedetectionresultdata.md) | The ParseDetectionResultData method is called by the operating system after handling a keyword detection event and after retrieving the result data from KSPROPERTY_SOUNDDETECTOR_MATCHRESULT. |
-| [keyworddetectoroemadapter.IKeywordDetectorOemAdapter.VerifyUserKeyword](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-verifyuserkeyword.md) | The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance. |
+| [IKeywordDetectorOemAdapter::BuildArmingPatternData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-buildarmingpatterndata.md) | The BuildArmingPatternData method is called by the operating system to build OEM-specific pattern data that includes any keyword and user-specific model data for detection. |
+| [IKeywordDetectorOemAdapter::ComputeAndAddUserModelData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-computeandaddusermodeldata.md) | The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword. |
+| [IKeywordDetectorOemAdapter::GetCapabilities](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-getcapabilities.md) | The GetCapabilities method returns the keywords and languages supported by the object. |
+| [IKeywordDetectorOemAdapter::ParseDetectionResultData](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-parsedetectionresultdata.md) | The ParseDetectionResultData method is called by the operating system after handling a keyword detection event and after retrieving the result data from KSPROPERTY_SOUNDDETECTOR_MATCHRESULT. |
+| [IKeywordDetectorOemAdapter::VerifyUserKeyword](nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-verifyuserkeyword.md) | The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance. |
 
 ## Remarks
 

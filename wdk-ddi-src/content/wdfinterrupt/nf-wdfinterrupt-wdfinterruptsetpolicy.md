@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f61bef13-d9b5-4e6a-8657-995a1fcbf7b1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.wdfinterruptsetpolicy, kmdf.wdfinterruptsetpolicy, WdfInterruptSetPolicy method, WdfInterruptSetPolicy, wdfinterrupt/WdfInterruptSetPolicy, DFInterruptObjectRef_86b7a562-3aee-4c0b-9a68-f98a2b76588f.xml
+ms.keywords: DFInterruptObjectRef_86b7a562-3aee-4c0b-9a68-f98a2b76588f.xml, WdfInterruptSetPolicy, WdfInterruptSetPolicy method, kmdf.wdfinterruptsetpolicy, wdf.wdfinterruptsetpolicy, wdfinterrupt/WdfInterruptSetPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,17 +29,17 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfInterruptSetPolicy
 product: Windows
 targetos: Windows
@@ -72,11 +72,11 @@ A handle to a framework interrupt object.
 
 `Policy`
 
-A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>-typed enumerator that specifies a processor affinity policy for the interrupt.
+A <a href="..\wdfinterrupt\ne-wdfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>-typed enumerator that specifies a processor affinity policy for the interrupt.
 
 `Priority`
 
-A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>-typed enumerator that specifies a priority for the interrupt.
+A <a href="..\wdfinterrupt\ne-wdfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>-typed enumerator that specifies a priority for the interrupt.
 
 `TargetProcessorSet`
 
@@ -139,7 +139,7 @@ WdfInterruptSetPolicy(
 
 ## See Also
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>
 
 
 
@@ -147,7 +147,7 @@ WdfInterruptSetPolicy(
 
 
 
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetextendedpolicy.md">WdfInterruptSetExtendedPolicy</a>
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
 
 

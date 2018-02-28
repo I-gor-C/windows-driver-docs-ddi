@@ -7,8 +7,8 @@ old-location: stream\iksdatatypehandler.htm
 old-project: stream
 ms.assetid: ef08d375-1ac6-489f-9fd4-f791ce82c553
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.iksdatatypehandler, IKsDataTypeHandler interface [Streaming Media Devices], IKsDataTypeHandler interface [Streaming Media Devices], described, IKsDataTypeHandler, ksproxy/IKsDataTypeHandler, ksproxy_fd2ab182-1556-438e-bc5e-fe1339d0d865.xml
+ms.date: 2/23/2018
+ms.keywords: IKsDataTypeHandler, IKsDataTypeHandler interface [Streaming Media Devices], IKsDataTypeHandler interface [Streaming Media Devices], described, ksproxy/IKsDataTypeHandler, ksproxy_fd2ab182-1556-438e-bc5e-fe1339d0d865.xml, stream.iksdatatypehandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Ksproxy.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
-apiname:
+api_name:
 -	IKsDataTypeHandler
 product: Windows
 targetos: Windows
@@ -55,11 +55,11 @@ The IID for this interface is IID_IKsDataTypeHandler.
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsDataTypeHandler.KsCompleteIoOperation](nf-ksproxy-iksdatatypehandler-kscompleteiooperation.md) | The KsCompleteIoOperation method cleans up the extended header and completes the input and output (I/O) operation. |
-| [ksproxy.IKsDataTypeHandler.KsIsMediaTypeInRanges](nf-ksproxy-iksdatatypehandler-ksismediatypeinranges.md) | The KsIsMediaTypeInRanges method validates that a media type is within the provided data ranges. |
-| [ksproxy.IKsDataTypeHandler.KsPrepareIoOperation](nf-ksproxy-iksdatatypehandler-ksprepareiooperation.md) | The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation. |
-| [ksproxy.IKsDataTypeHandler.KsQueryExtendedSize](nf-ksproxy-iksdatatypehandler-ksqueryextendedsize.md) | The KsQueryExtendedSize method retrieves extended header information required for input and output (I/O) operations. |
-| [ksproxy.IKsDataTypeHandler.KsSetMediaType](nf-ksproxy-iksdatatypehandler-kssetmediatype.md) | The KsSetMediaType method sets the media type for a data type handler. |
+| [IKsDataTypeHandler::KsCompleteIoOperation](nf-ksproxy-iksdatatypehandler-kscompleteiooperation.md) | The KsCompleteIoOperation method cleans up the extended header and completes the input and output (I/O) operation. |
+| [IKsDataTypeHandler::KsIsMediaTypeInRanges](nf-ksproxy-iksdatatypehandler-ksismediatypeinranges.md) | The KsIsMediaTypeInRanges method validates that a media type is within the provided data ranges. |
+| [IKsDataTypeHandler::KsPrepareIoOperation](nf-ksproxy-iksdatatypehandler-ksprepareiooperation.md) | The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation. |
+| [IKsDataTypeHandler::KsQueryExtendedSize](nf-ksproxy-iksdatatypehandler-ksqueryextendedsize.md) | The KsQueryExtendedSize method retrieves extended header information required for input and output (I/O) operations. |
+| [IKsDataTypeHandler::KsSetMediaType](nf-ksproxy-iksdatatypehandler-kssetmediatype.md) | The KsSetMediaType method sets the media type for a data type handler. |
 
 ## Remarks
 
@@ -89,4 +89,4 @@ For more information about <b>IAMStreamConfig::SetFormat</b> and <b>CoCreateInst
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler interface%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

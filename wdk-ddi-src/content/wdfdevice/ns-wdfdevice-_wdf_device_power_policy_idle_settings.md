@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8d5acd3a-3ec3-4190-98d4-e7ce9ea8d3e8
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.wdf_device_power_policy_idle_settings, DFDeviceObjectGeneralRef_82f4a32c-ff51-4b0f-a67a-c45b4777ce23.xml, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure pointer, kmdf.wdf_device_power_policy_idle_settings, *PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, wdfdevice/WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure, wdfdevice/PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+ms.keywords: "*PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, DFDeviceObjectGeneralRef_82f4a32c-ff51-4b0f-a67a-c45b4777ce23.xml, PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure pointer, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure, _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, kmdf.wdf_device_power_policy_idle_settings, wdf.wdf_device_power_policy_idle_settings, wdfdevice/PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, wdfdevice/WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	wdfdevice.h
-apiname:
+api_name:
 -	WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
 product: Windows
 targetos: Windows
@@ -73,7 +73,7 @@ A <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>-
 
 `Enabled`
 
-A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0. This member can have one of the following values:
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0. This member can have one of the following values:
 
 <b>WdfTrue</b> - Powering down is enabled.
 
@@ -85,7 +85,7 @@ If powering down is enabled, the device has a wake-up capability, and the idle t
 
 `ExcludeD3Cold`
 
-A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the D3cold power state should be an allowable choice for the low-power state that the device will enter when the idle timeout period expires. The <b>ExcludeD3Cold</b> member can have one of the following values:
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the D3cold power state should be an allowable choice for the low-power state that the device will enter when the idle timeout period expires. The <b>ExcludeD3Cold</b> member can have one of the following values:
 
 <b>WdfTrue</b> - The framework will move a device to a low-power D-state when the idle timeout period expires.  If that D-state is D3, the device will be moved to D3hot.  If <b>ExcludeD3Cold</b> is set to <b>WdfTrue</b>, then no further transition from D3hot to D3cold will be allowed.
 
@@ -104,7 +104,7 @@ The <b>ExcludeD3Cold</b> member is available starting in KMDF version 1.11, as w
 
 `IdleCaps`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_power_policy_s0_idle_capabilities.md">WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</a>-typed enumerator that identifies the device's ability to wake itself up after being set to a low-power state, while the system remains in its working (S0) state.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_policy_s0_idle_capabilities.md">WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</a>-typed enumerator that identifies the device's ability to wake itself up after being set to a low-power state, while the system remains in its working (S0) state.
 
 `IdleTimeout`
 
@@ -118,7 +118,7 @@ The <b>IdleTimeoutType</b> member is available in version 1.11 and later version
 
 `PowerUpIdleDeviceOnSystemWake`
 
-A <a href="..\wdftypes\ne-wdftypes-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will return to its working (D0) state when the system returns to its working (S0) state. This member is valid only if the driver sets the <b>IdleCaps</b> member to <a href="..\wdfdevice\ne-wdfdevice-_wdf_power_policy_s0_idle_capabilities.md">IdleCannotWakeFromS0</a>. The <b>PowerUpIdleDeviceOnSystemWake</b> member can have one of the following values:
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device will return to its working (D0) state when the system returns to its working (S0) state. This member is valid only if the driver sets the <b>IdleCaps</b> member to <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_policy_s0_idle_capabilities.md">IdleCannotWakeFromS0</a>. The <b>PowerUpIdleDeviceOnSystemWake</b> member can have one of the following values:
 
 <b>WdfTrue</b> - If both the device and the system are in a low-power state, the device returns to its working state when the system returns to its working state.
 
@@ -136,7 +136,7 @@ The size, in bytes, of this structure.
 
 `UserControlOfIdleSettings`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_power_policy_s0_idle_user_control.md">WDF_POWER_POLICY_S0_IDLE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's idle settings.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_policy_s0_idle_user_control.md">WDF_POWER_POLICY_S0_IDLE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's idle settings.
 
 ## Remarks
 The <b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b> structure is used as input to <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigns0idlesettings.md">WdfDeviceAssignS0IdleSettings</a>. 

@@ -7,8 +7,8 @@ old-location: print\iprintpipelinemanagercontrol.htm
 old-project: print
 ms.assetid: 82efbe8d-0928-4550-9de1-a806a00791eb
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintpipelinemanagercontrol, IPrintPipelineManagerControl interface [Print Devices], IPrintPipelineManagerControl interface [Print Devices], described, IPrintPipelineManagerControl, filterpipeline/IPrintPipelineManagerControl, filterpipeline_5b9732d1-6a75-4059-84fa-1bbbdeb70eb3.xml
+ms.date: 2/23/2018
+ms.keywords: IPrintPipelineManagerControl, IPrintPipelineManagerControl interface [Print Devices], IPrintPipelineManagerControl interface [Print Devices], described, filterpipeline/IPrintPipelineManagerControl, filterpipeline_5b9732d1-6a75-4059-84fa-1bbbdeb70eb3.xml, print.iprintpipelinemanagercontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IPrintPipelineManagerControl
 product: Windows
 targetos: Windows
@@ -63,8 +63,8 @@ Report when the filters are finished processing.
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IPrintPipelineManagerControl.FilterFinished](nf-filterpipeline-iprintpipelinemanagercontrol-filterfinished.md) | The FilterFinished method reports that a filter is finished processing. |
-| [filterpipeline.IPrintPipelineManagerControl.RequestShutdown](nf-filterpipeline-iprintpipelinemanagercontrol-requestshutdown.md) | The RequestShutdown method requests that a pipeline be shut down. |
+| [IPrintPipelineManagerControl::FilterFinished](nf-filterpipeline-iprintpipelinemanagercontrol-filterfinished.md) | The FilterFinished method reports that a filter is finished processing. |
+| [IPrintPipelineManagerControl::RequestShutdown](nf-filterpipeline-iprintpipelinemanagercontrol-requestshutdown.md) | The RequestShutdown method requests that a pipeline be shut down. |
 
 ## Remarks
 

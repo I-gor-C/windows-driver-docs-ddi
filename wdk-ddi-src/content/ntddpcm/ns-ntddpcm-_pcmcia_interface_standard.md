@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: 3c98fe7b-e60a-4494-b1f0-847a7cbe9d3a
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: PCMCIA.pcmcia_interface_standard, PPCMCIA_INTERFACE_STANDARD, _PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, ntddpcm/PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD structure [Buses], PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], ntddpcm/PCMCIA_INTERFACE_STANDARD, memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml
+ms.keywords: "*PPCMCIA_INTERFACE_STANDARD, PCMCIA.pcmcia_interface_standard, PCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD structure [Buses], PPCMCIA_INTERFACE_STANDARD, PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], _PCMCIA_INTERFACE_STANDARD, memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml, ntddpcm/PCMCIA_INTERFACE_STANDARD, ntddpcm/PPCMCIA_INTERFACE_STANDARD"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ntddpcm.h
-apiname:
+api_name:
 -	PCMCIA_INTERFACE_STANDARD
 product: Windows
 targetos: Windows
@@ -69,11 +69,11 @@ Pointer to an opaque handle that contains interface context information. Drivers
 
 `InterfaceDereference`
 
-Pointer to the <a href="..\miniport\nc-miniport-pinterface_dereference.md">InterfaceDereference</a> implementation.
+Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
 
 `InterfaceReference`
 
-Pointer to the <a href="..\miniport\nc-miniport-pinterface_reference.md">InterfaceReference</a> implementation.
+Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a> implementation.
 
 `IsWriteProtected`
 
@@ -103,11 +103,11 @@ Indicates the version of the returned interface.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 052e7995-fab8-4863-a3a2-8b9bd6f21ec9
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: ifsk.rxfinalizenetfobx, RxFinalizeNetFobx function [Installable File System Drivers], fcb/RxFinalizeNetFobx, RxFinalizeNetFobx, rxref_72a759e2-f9e6-44ce-b561-cb968b668a6f.xml
+ms.keywords: RxFinalizeNetFobx, RxFinalizeNetFobx function [Installable File System Drivers], fcb/RxFinalizeNetFobx, ifsk.rxfinalizenetfobx, rxref_72a759e2-f9e6-44ce-b561-cb968b668a6f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: NtosKrnl.exe
 req.dll: 
 req.irql: "<= APC_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	fcb.h
-apiname:
+api_name:
 -	RxFinalizeNetFobx
 product: Windows
 targetos: Windows
-req.typenames: "*PFA_ENTRY, FA_ENTRY"
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 
@@ -96,39 +96,7 @@ The <b>RxFinalizeNetFOBX</b> routine will call the <b>MRxDeallocateForFobx</b> r
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxcreatevnetroot.md">RxCreateVNetRoot</a>
-
-
-
-<a href="..\rxprocs\nf-rxprocs-rxfinalizeconnection.md">RxFinalizeConnection</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxfinalizesrvopen.md">RxFinalizeSrvOpen</a>
-
-
-
-<a href="..\rxprocs\nf-rxprocs-rxforcefinalizeallvnetroots.md">RxForceFinalizeAllVNetRoots</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/the-fobx-structure">The FOBX Structure</a>
-
-
-
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxcreatesrvopen.md">RxCreateSrvOpen</a>
 
 
 
@@ -136,31 +104,11 @@ The <b>RxFinalizeNetFOBX</b> routine will call the <b>MRxDeallocateForFobx</b> r
 
 
 
-<a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a>
+<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
 
 
 
-<a href="..\fcb\nf-fcb-rxcreatenetroot.md">RxCreateNetRoot</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxfinalizenetroot.md">RxFinalizeNetRoot</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxcreatenetfobx.md">RxCreateNetFobx</a>
-
-
-
-<a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFcb</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
-
-
-
-<a href="..\fcb\nf-fcb-rxcreatenetfcb.md">RxCreateNetFcb</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvopen.md">RxFinalizeSrvOpen</a>
 
 
 
@@ -168,7 +116,43 @@ The <b>RxFinalizeNetFOBX</b> routine will call the <b>MRxDeallocateForFobx</b> r
 
 
 
+<a href="..\fcb\nf-fcb-rxcreatevnetroot.md">RxCreateVNetRoot</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxforcefinalizeallvnetroots.md">RxForceFinalizeAllVNetRoots</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+
+
+
 <a href="..\fcb\nf-fcb-rxfinishfcbinitialization.md">RxFinishFcbInitialization</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxcreatenetroot.md">RxCreateNetRoot</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxcreatenetfobx.md">RxCreateNetFobx</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFcb</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxsetsrvcalldomainname.md">RxSetSrvCallDomainName</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxcreatesrvopen.md">RxCreateSrvOpen</a>
 
 
 
@@ -176,7 +160,23 @@ The <b>RxFinalizeNetFOBX</b> routine will call the <b>MRxDeallocateForFobx</b> r
 
 
 
-<a href="..\rxprocs\nf-rxprocs-rxsetsrvcalldomainname.md">RxSetSrvCallDomainName</a>
+<a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxcreatenetfcb.md">RxCreateNetFcb</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxfinalizeconnection.md">RxFinalizeConnection</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxfinalizenetroot.md">RxFinalizeNetRoot</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: be0fce3e-7308-42fa-b63a-4d5cfec7ea6c
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolcmdropparty, ProtocolCmDropParty callback function [Network Drivers Starting with Windows Vista], ProtocolCmDropParty, PROTOCOL_CM_DROP_PARTY, PROTOCOL_CM_DROP_PARTY, ndis/ProtocolCmDropParty, condis_call_manager_ref_cda3b3ab-baf4-43a7-b560-7a717687508e.xml
+ms.keywords: PROTOCOL_CM_DROP_PARTY, ProtocolCmDropParty, ProtocolCmDropParty callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_cda3b3ab-baf4-43a7-b560-7a717687508e.xml, ndis/ProtocolCmDropParty, netvista.protocolcmdropparty
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolCmDropParty
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CM_DROP_PARTY function
+# PROTOCOL_CM_DROP_PARTY callback function
 The 
   <i>ProtocolCmDropParty</i> function is required. NDIS calls 
   <i>ProtocolCmDropParty</i> to request that the call manager remove a party from an existing multipoint
@@ -205,11 +205,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
+
+
+
+<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
 
 
 

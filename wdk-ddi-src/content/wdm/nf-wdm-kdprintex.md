@@ -7,8 +7,8 @@ old-location: devtest\kdprintex.htm
 old-project: devtest
 ms.assetid: 8383e9c8-0058-47bf-9a6e-ed05e61a58f1
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: wdm/KdPrintEx, DebugFns_375418aa-5241-4b2c-9369-c930c3ca1ca6.xml, devtest.kdprintex, KdPrintEx, KdPrintEx function [Driver Development Tools]
+ms.date: 2/23/2018
+ms.keywords: DebugFns_375418aa-5241-4b2c-9369-c930c3ca1ca6.xml, KdPrintEx, KdPrintEx function [Driver Development Tools], devtest.kdprintex, wdm/KdPrintEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: macro
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib (See DbgPrintEx.)
 req.dll: NtosKrnl.exe
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	KdPrintEx
 product: Windows
 targetos: Windows
@@ -97,10 +97,6 @@ This routine is defined in ntddk.h and ndis.h; component filter IDs are defined 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
-
-
-
 <a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 
 
@@ -109,8 +105,12 @@ This routine is defined in ntddk.h and ndis.h; component filter IDs are defined 
 
 
 
- 
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20KdPrintEx function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20KdPrintEx function%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

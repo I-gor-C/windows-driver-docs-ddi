@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: bc27f7b8-8de0-4eae-a22b-0e5c76378b1a
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: RILUICCLOCKSTATE, RILUICCLOCKSTATE structure [Network Drivers Starting with Windows Vista], *LPRILUICCLOCKSTATE, rilapitypes/RILUICCLOCKSTATE, netvista.riluicclockstate
+ms.keywords: "*LPRILUICCLOCKSTATE, RILUICCLOCKSTATE, RILUICCLOCKSTATE structure [Network Drivers Starting with Windows Vista], netvista.riluicclockstate, rilapitypes/RILUICCLOCKSTATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	rilapitypes.h
-apiname:
+api_name:
 -	RILUICCLOCKSTATE
 product: Windows
 targetos: Windows
@@ -68,11 +68,11 @@ The size of the structure in bytes.
 
 `dwLockState`
 
-The current state of the lock, a bitmask of <a href="..\ntddrilapitypes\ne-ntddrilapitypes-riluicclockstatelockstate.md">RILUICCLOCKSTATELOCKSTATE</a>.
+The current state of the lock, a bitmask of <a href="..\rilapitypes\ne-rilapitypes-riluicclockstatelockstate.md">RILUICCLOCKSTATELOCKSTATE</a>.
 
 `dwParams`
 
-A bitwise combination of <a href="..\ntddrilapitypes\ne-ntddrilapitypes-riluicclockstateparammask.md">RILUICCLOCKSTATEPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
+A bitwise combination of <a href="..\rilapitypes\ne-rilapitypes-riluicclockstateparammask.md">RILUICCLOCKSTATEPARAMMASK</a> enumeration values that indicates which members of the structure contain valid data. A member of the structure is valid if the corresponding bit flag is set.
 
 `dwUnblockAttemptsLeft`
 
@@ -84,7 +84,7 @@ The number of verification attempts that remain before the lock is blocked.
 
 `rilUiccLock`
 
-Specifies the lock of type <a href="..\ntddrilapitypes\ns-ntddrilapitypes-riluicclock.md">RILUICCLOCK</a>.
+Specifies the lock of type <a href="..\rilapitypes\ns-rilapitypes-riluicclock.md">RILUICCLOCK</a>.
 
 
 ## Requirements

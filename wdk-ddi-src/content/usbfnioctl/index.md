@@ -2,12 +2,33 @@
 UID: NA:usbfnioctl
 ms.assetid: 346c06db-ae00-3b42-a05a-d786904c5f0f
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Usbfnioctl.h header
+
+
+
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
+
+Usbfnioctl.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_USBFN_POWER_FILTER_STATE structure](ns-usbfnioctl-_usbfn_power_filter_state.md) | Reserved. Do not use. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # usbfnioctl.h header
 

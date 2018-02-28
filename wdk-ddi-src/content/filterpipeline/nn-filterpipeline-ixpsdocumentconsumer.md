@@ -7,8 +7,8 @@ old-location: print\ixpsdocumentconsumer.htm
 old-project: print
 ms.assetid: 98e603e6-2786-4bc8-ad8a-0e91b0d444d8
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.ixpsdocumentconsumer, IXpsDocumentConsumer interface [Print Devices], IXpsDocumentConsumer interface [Print Devices], described, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer, filterpipeline_230eb0f6-427a-4986-b8ad-bc1d41853d67.xml
+ms.date: 2/23/2018
+ms.keywords: IXpsDocumentConsumer, IXpsDocumentConsumer interface [Print Devices], IXpsDocumentConsumer interface [Print Devices], described, filterpipeline/IXpsDocumentConsumer, filterpipeline_230eb0f6-427a-4986-b8ad-bc1d41853d67.xml, print.ixpsdocumentconsumer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IXpsDocumentConsumer
 product: Windows
 targetos: Windows
@@ -54,13 +54,13 @@ A filter uses the <code>IXpsDocumentConsumer</code> interface when it generates 
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IXpsDocumentConsumer.CloseSender](nf-filterpipeline-ixpsdocumentconsumer-closesender.md) | The CloseSender method tells the Pipeline Manager that the filter is done sending XPS parts. |
-| [filterpipeline.IXpsDocumentConsumer.GetNewEmptyPart](nf-filterpipeline-ixpsdocumentconsumer-getnewemptypart.md) | The GetNewEmptyPart method creates a new XPS part. |
-| [filterpipeline.IXpsDocumentConsumer.SendFixedDocument](nf-filterpipeline-ixpsdocumentconsumer-sendfixeddocument.md) | The SendFixedDocument method sends a fixed document object to the pipeline. |
-| [filterpipeline.IXpsDocumentConsumer.SendFixedDocumentSequence](nf-filterpipeline-ixpsdocumentconsumer-sendfixeddocumentsequence.md) | The SendFixedDocumentSequence method sends a fixed document sequence to the pipeline. |
-| [filterpipeline.IXpsDocumentConsumer.SendFixedPage](nf-filterpipeline-ixpsdocumentconsumer-sendfixedpage.md) | The SendFixedPage method sends a fixed page of an XPS document to the pipeline. |
-| [filterpipeline.IXpsDocumentConsumer.SendXpsDocument](nf-filterpipeline-ixpsdocumentconsumer-sendxpsdocument.md) | The SendXpsDocument method sends an XPS document to the pipeline. |
-| [filterpipeline.IXpsDocumentConsumer.SendXpsUnknown](nf-filterpipeline-ixpsdocumentconsumer-sendxpsunknown.md) | The SendXpsUnknown method sends an XPS document part that cannot be identified to the filter pipeline. |
+| [IXpsDocumentConsumer::CloseSender](nf-filterpipeline-ixpsdocumentconsumer-closesender.md) | The CloseSender method tells the Pipeline Manager that the filter is done sending XPS parts. |
+| [IXpsDocumentConsumer::GetNewEmptyPart](nf-filterpipeline-ixpsdocumentconsumer-getnewemptypart.md) | The GetNewEmptyPart method creates a new XPS part. |
+| [IXpsDocumentConsumer::SendFixedDocument](nf-filterpipeline-ixpsdocumentconsumer-sendfixeddocument.md) | The SendFixedDocument method sends a fixed document object to the pipeline. |
+| [IXpsDocumentConsumer::SendFixedDocumentSequence](nf-filterpipeline-ixpsdocumentconsumer-sendfixeddocumentsequence.md) | The SendFixedDocumentSequence method sends a fixed document sequence to the pipeline. |
+| [IXpsDocumentConsumer::SendFixedPage](nf-filterpipeline-ixpsdocumentconsumer-sendfixedpage.md) | The SendFixedPage method sends a fixed page of an XPS document to the pipeline. |
+| [IXpsDocumentConsumer::SendXpsDocument](nf-filterpipeline-ixpsdocumentconsumer-sendxpsdocument.md) | The SendXpsDocument method sends an XPS document to the pipeline. |
+| [IXpsDocumentConsumer::SendXpsUnknown](nf-filterpipeline-ixpsdocumentconsumer-sendxpsunknown.md) | The SendXpsUnknown method sends an XPS document part that cannot be identified to the filter pipeline. |
 
 ## Remarks
 

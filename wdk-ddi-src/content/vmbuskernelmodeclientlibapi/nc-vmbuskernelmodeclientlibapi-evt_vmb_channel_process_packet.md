@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 46020122-0B0E-4C05-8B13-68100B227E93
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.evt_vmb_channel_process_packet, EvtVmbChannelProcessPacket callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelProcessPacket, EVT_VMB_CHANNEL_PROCESS_PACKET, EVT_VMB_CHANNEL_PROCESS_PACKET, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessPacket, VMBUS_CHANNEL_PROCESS_PACKET_FLAGS, PFN_VMB_CHANNEL_PROCESS_PACKET callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESS_PACKET
+ms.keywords: EVT_VMB_CHANNEL_PROCESS_PACKET, EvtVmbChannelProcessPacket, EvtVmbChannelProcessPacket callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESS_PACKET, PFN_VMB_CHANNEL_PROCESS_PACKET callback function pointer [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_PROCESS_PACKET_FLAGS, netvista.evt_vmb_channel_process_packet, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessPacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	VmbusKernelModeClientLibApi.h
-apiname:
+api_name:
 -	PFN_VMB_CHANNEL_PROCESS_PACKET
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_VMB_CHANNEL_PROCESS_PACKET function
+# EVT_VMB_CHANNEL_PROCESS_PACKET callback function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <i>EvtVmbChannelProcessPacket</i> callback function is invoked when a packet arrives in the incoming ring buffer.

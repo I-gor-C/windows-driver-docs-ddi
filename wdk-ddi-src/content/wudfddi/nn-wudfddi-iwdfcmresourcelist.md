@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8C03A1A3-1757-4622-9652-0D84DC0AFE59
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfcmresourcelist, IWDFCmResourceList interface, IWDFCmResourceList interface, described, IWDFCmResourceList, wudfddi/IWDFCmResourceList, umdf.iwdfcmresourcelist
+ms.keywords: IWDFCmResourceList, IWDFCmResourceList interface, IWDFCmResourceList interface, described, umdf.iwdfcmresourcelist, wdf.iwdfcmresourcelist, wudfddi/IWDFCmResourceList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFCmResourceList
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ This interface represents a list of hardware resources for a device.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFCmResourceList.GetCount](nf-wudfddi-iwdfcmresourcelist-getcount.md) | The GetCount method returns the number of resource descriptors that are contained in this interface's resource list. |
-| [wudfddi.IWDFCmResourceList.GetDescriptor](nf-wudfddi-iwdfcmresourcelist-getdescriptor.md) | The GetDescriptor method returns a pointer to a resource descriptor that is contained in this interface's resource list. |
+| [IWDFCmResourceList::GetCount](nf-wudfddi-iwdfcmresourcelist-getcount.md) | The GetCount method returns the number of resource descriptors that are contained in this interface's resource list. |
+| [IWDFCmResourceList::GetDescriptor](nf-wudfddi-iwdfcmresourcelist-getdescriptor.md) | The GetDescriptor method returns a pointer to a resource descriptor that is contained in this interface's resource list. |
 
 ## Remarks
 
@@ -73,11 +73,11 @@ After a UMDF driver receives a translated resource list in its <a href="https://
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/2361CEA9-A58C-4019-B4F6-BA1D7DEE3A80">Framework Resource-List Object Methods</a>
-
-
-
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
+
+
+<a href="https://msdn.microsoft.com/2361CEA9-A58C-4019-B4F6-BA1D7DEE3A80">Framework Resource-List Object Methods</a>
 
 
 

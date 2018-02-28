@@ -7,8 +7,8 @@ old-location: audio\iportclspower.htm
 old-project: audio
 ms.assetid: bebd704b-2824-4bea-aae8-d77c66830715
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportclspower, IPortClsPower interface [Audio Devices], IPortClsPower interface [Audio Devices], described, IPortClsPower, portcls/IPortClsPower, audmp-routines_d6815c8f-a34f-423a-a58d-e45a1292d22d.xml
+ms.date: 2/22/2018
+ms.keywords: IPortClsPower, IPortClsPower interface [Audio Devices], IPortClsPower interface [Audio Devices], described, audio.iportclspower, audmp-routines_d6815c8f-a34f-423a-a58d-e45a1292d22d.xml, portcls/IPortClsPower
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortClsPower
 product: Windows
 targetos: Windows
@@ -53,9 +53,9 @@ The <code>IPortClsPower</code> interface is supported in Windows Vista and later
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortClsPower.RegisterAdapterPowerManagement](nf-portcls-iportclspower-registeradapterpowermanagement.md) | The RegisterAdapterPowerManagement method registers the power management interface of the adapter with PortCls. |
-| [portcls.IPortClsPower.SetIdlePowerManagement](nf-portcls-iportclspower-setidlepowermanagement.md) | The SetIdlePowerManagement method provides a way for the adapter driver to opt in or opt out of idle state detection. |
-| [portcls.IPortClsPower.UnregisterAdapterPowerManagement](nf-portcls-iportclspower-unregisteradapterpowermanagement.md) | The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls. |
+| [IPortClsPower::RegisterAdapterPowerManagement](nf-portcls-iportclspower-registeradapterpowermanagement.md) | The RegisterAdapterPowerManagement method registers the power management interface of the adapter with PortCls. |
+| [IPortClsPower::SetIdlePowerManagement](nf-portcls-iportclspower-setidlepowermanagement.md) | The SetIdlePowerManagement method provides a way for the adapter driver to opt in or opt out of idle state detection. |
+| [IPortClsPower::UnregisterAdapterPowerManagement](nf-portcls-iportclspower-unregisteradapterpowermanagement.md) | The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls. |
 
 ## Remarks
 

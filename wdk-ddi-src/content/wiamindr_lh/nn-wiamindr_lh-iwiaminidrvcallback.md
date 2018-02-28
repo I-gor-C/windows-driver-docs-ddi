@@ -4,11 +4,11 @@ title: IWiaMiniDrvCallBack
 author: windows-driver-content
 description: The IWiaMiniDrvCallBack interface provides the MiniDrvCallback method, which enables minidrivers to transfer image header data and image data from the imaging device to the WIA service.
 old-location: image\iwiaminidrvcallback_interface.htm
-old-project: Image
+old-project: image
 ms.assetid: cf2460c5-325f-43c3-a1fe-5b6982234194
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: image.iwiaminidrvcallback_interface, IWiaMiniDrvCallBack interface [Imaging Devices], IWiaMiniDrvCallBack interface [Imaging Devices], described, IWiaMiniDrvCallBack, wiamindr_lh/IWiaMiniDrvCallBack, CallBack_2e94f80e-dde0-4289-8911-a769a909b4d8.xml
+ms.date: 2/23/2018
+ms.keywords: CallBack_2e94f80e-dde0-4289-8911-a769a909b4d8.xml, IWiaMiniDrvCallBack, IWiaMiniDrvCallBack interface [Imaging Devices], IWiaMiniDrvCallBack interface [Imaging Devices], described, image.iwiaminidrvcallback_interface, wiamindr_lh/IWiaMiniDrvCallBack
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wiamindr_lh.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wiamindr_lh.h
-apiname:
+api_name:
 -	IWiaMiniDrvCallBack
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ This method can also convey status information, such as the percentage of data t
 
 | Method | Description |
 | ---- |:---- |
-| [wiamindr_lh.IWiaMiniDrvCallBack.MiniDrvCallback](nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback.md) | The MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer. |
+| [IWiaMiniDrvCallBack::MiniDrvCallback](nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback.md) | The MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer. |
 
 ## Remarks
 

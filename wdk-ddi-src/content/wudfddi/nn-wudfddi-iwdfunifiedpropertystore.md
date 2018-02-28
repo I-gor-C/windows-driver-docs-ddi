@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F039450D-3B66-4891-9078-7058E889C2F0
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfunifiedpropertystore, IWDFUnifiedPropertyStore interface, IWDFUnifiedPropertyStore interface, described, IWDFUnifiedPropertyStore, wudfddi/IWDFUnifiedPropertyStore, umdf.iwdfunifiedpropertystore
+ms.keywords: IWDFUnifiedPropertyStore, IWDFUnifiedPropertyStore interface, IWDFUnifiedPropertyStore interface, described, umdf.iwdfunifiedpropertystore, wdf.iwdfunifiedpropertystore, wudfddi/IWDFUnifiedPropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFUnifiedPropertyStore
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ The <b>IWDFUnifiedPropertyStore</b> interface exposes a unified property store.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFUnifiedPropertyStore.GetPropertyData](nf-wudfddi-iwdfunifiedpropertystore-getpropertydata.md) | The GetPropertyData method retrieves the current setting for a device property. |
-| [wudfddi.IWDFUnifiedPropertyStore.SetPropertyData](nf-wudfddi-iwdfunifiedpropertystore-setpropertydata.md) | The SetPropertyData method modifies the current setting of a device property. |
+| [IWDFUnifiedPropertyStore::GetPropertyData](nf-wudfddi-iwdfunifiedpropertystore-getpropertydata.md) | The GetPropertyData method retrieves the current setting for a device property. |
+| [IWDFUnifiedPropertyStore::SetPropertyData](nf-wudfddi-iwdfunifiedpropertystore-setpropertydata.md) | The SetPropertyData method modifies the current setting of a device property. |
 
 ## Remarks
 

@@ -7,8 +7,8 @@ old-location: stream\iksreferenceclock.htm
 old-project: stream
 ms.assetid: 92a84bf3-34bf-4ee7-97c0-f5e6427c0464
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.iksreferenceclock, IKsReferenceClock interface [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], described, IKsReferenceClock, ks/IKsReferenceClock, avintfc_7146002a-d8ab-4789-b752-863f8b2d94d2.xml
+ms.date: 2/23/2018
+ms.keywords: IKsReferenceClock, IKsReferenceClock interface [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], described, avintfc_7146002a-d8ab-4789-b752-863f8b2d94d2.xml, ks/IKsReferenceClock, stream.iksreferenceclock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ks.h
-apiname:
+api_name:
 -	IKsReferenceClock
 product: Windows
 targetos: Windows
@@ -53,12 +53,12 @@ The <b>IKsReferenceClock</b> interface is a COM-style interface that is provided
 
 | Method | Description |
 | ---- |:---- |
-| [ks.IKsReferenceClock.GetCorrelatedPhysicalTime](nf-ks-iksreferenceclock-getcorrelatedphysicaltime.md) | The IKsReferenceClock::GetCorrelatedPhysicalTime method queries the associated reference clock for the current physical time and retrieves the correlated system time. |
-| [ks.IKsReferenceClock.GetCorrelatedTime](nf-ks-iksreferenceclock-getcorrelatedtime.md) | The IKsReferenceClock::GetCorrelatedTime method queries the associated reference clock for current stream time and acquires the correlated system time. |
-| [ks.IKsReferenceClock.GetPhysicalTime](nf-ks-iksreferenceclock-getphysicaltime.md) | The IKsReferenceClock::GetPhysicalTime method queries the associated reference clock for the current physical time. |
-| [ks.IKsReferenceClock.GetResolution](nf-ks-iksreferenceclock-getresolution.md) | The IKsReferenceClock::GetResolution method queries the associated reference clock for its resolution. |
-| [ks.IKsReferenceClock.GetState](nf-ks-iksreferenceclock-getstate.md) | The IKsReferenceClock::GetState method queries the associated reference clock for its current streaming state. |
-| [ks.IKsReferenceClock.GetTime](nf-ks-iksreferenceclock-gettime.md) | The IKsReferenceClock::GetTime method queries the associated reference clock for the current time. |
+| [IKsReferenceClock::GetCorrelatedPhysicalTime](nf-ks-iksreferenceclock-getcorrelatedphysicaltime.md) | The IKsReferenceClock::GetCorrelatedPhysicalTime method queries the associated reference clock for the current physical time and retrieves the correlated system time. |
+| [IKsReferenceClock::GetCorrelatedTime](nf-ks-iksreferenceclock-getcorrelatedtime.md) | The IKsReferenceClock::GetCorrelatedTime method queries the associated reference clock for current stream time and acquires the correlated system time. |
+| [IKsReferenceClock::GetPhysicalTime](nf-ks-iksreferenceclock-getphysicaltime.md) | The IKsReferenceClock::GetPhysicalTime method queries the associated reference clock for the current physical time. |
+| [IKsReferenceClock::GetResolution](nf-ks-iksreferenceclock-getresolution.md) | The IKsReferenceClock::GetResolution method queries the associated reference clock for its resolution. |
+| [IKsReferenceClock::GetState](nf-ks-iksreferenceclock-getstate.md) | The IKsReferenceClock::GetState method queries the associated reference clock for its current streaming state. |
+| [IKsReferenceClock::GetTime](nf-ks-iksreferenceclock-gettime.md) | The IKsReferenceClock::GetTime method queries the associated reference clock for the current time. |
 
 ## Remarks
 
@@ -116,20 +116,20 @@ For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
-
-
-
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
-
-
-
 <a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
 
 
 
- 
+<a href="..\ks\nf-ks-kspingetconnectedfilterinterface.md">KsPinGetConnectedFilterInterface</a>
+
+
+
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock interface%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

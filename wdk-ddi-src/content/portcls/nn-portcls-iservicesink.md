@@ -7,8 +7,8 @@ old-location: audio\iservicesink.htm
 old-project: audio
 ms.assetid: 329ae226-02fb-438b-b461-da51e3afd6eb
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iservicesink, IServiceSink interface [Audio Devices], IServiceSink interface [Audio Devices], described, IServiceSink, portcls/IServiceSink, audmp-routines_68a03e77-6246-44e7-acad-6de0fbe10c41.xml
+ms.date: 2/22/2018
+ms.keywords: IServiceSink, IServiceSink interface [Audio Devices], IServiceSink interface [Audio Devices], described, audio.iservicesink, audmp-routines_68a03e77-6246-44e7-acad-6de0fbe10c41.xml, portcls/IServiceSink
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IServiceSink
 product: Windows
 targetos: Windows
@@ -59,7 +59,7 @@ For more information, see <a href="https://msdn.microsoft.com/00e17e01-8889-4fae
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IServiceSink.RequestService](nf-portcls-iservicesink-requestservice.md) | The RequestService method is called to forward a service request to an IServiceSink object. |
+| [IServiceSink::RequestService](nf-portcls-iservicesink-requestservice.md) | The RequestService method is called to forward a service request to an IServiceSink object. |
 
 ## Remarks
 

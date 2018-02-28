@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 9a3ec86a-6a1d-4c65-a65a-7cb85bbd1ab8
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfioqueue, IWDFIoQueue interface, IWDFIoQueue interface, described, IWDFIoQueue, wudfddi/IWDFIoQueue, UMDFQueueObjectRef_57878b3d-0771-425d-b8ca-3e4713c96fcc.xml, umdf.iwdfioqueue
+ms.keywords: IWDFIoQueue, IWDFIoQueue interface, IWDFIoQueue interface, described, UMDFQueueObjectRef_57878b3d-0771-425d-b8ca-3e4713c96fcc.xml, umdf.iwdfioqueue, wdf.iwdfioqueue, wudfddi/IWDFIoQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoQueue
 product: Windows
 targetos: Windows
@@ -56,18 +56,18 @@ The <b>IWDFIoQueue</b> interface exposes an I/O queue object.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoQueue.ConfigureRequestDispatching](nf-wudfddi-iwdfioqueue-configurerequestdispatching.md) | The ConfigureRequestDispatching method configures the queuing of I/O requests of the given type. |
-| [wudfddi.IWDFIoQueue.Drain](nf-wudfddi-iwdfioqueue-drain.md) | The Drain method directs the queue to reject new incoming I/O requests and allow already-queued requests to be delivered to the driver for processing. |
-| [wudfddi.IWDFIoQueue.DrainSynchronously](nf-wudfddi-iwdfioqueue-drainsynchronously.md) | The DrainSynchronously method directs the queue to reject new incoming I/O requests and allows already-queued requests to be delivered to the driver for processing. This method returns after all requests are completed or canceled. |
-| [wudfddi.IWDFIoQueue.GetDevice](nf-wudfddi-iwdfioqueue-getdevice.md) | The GetDevice method retrieves the interface to the device that owns the I/O queue. |
-| [wudfddi.IWDFIoQueue.GetState](nf-wudfddi-iwdfioqueue-getstate.md) | The GetState method retrieves the state of an I/O queue. |
-| [wudfddi.IWDFIoQueue.Purge](nf-wudfddi-iwdfioqueue-purge.md) | The Purge method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests. |
-| [wudfddi.IWDFIoQueue.PurgeSynchronously](nf-wudfddi-iwdfioqueue-purgesynchronously.md) | The PurgeSynchronously method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests. The method returns after all outstanding requests are canceled. |
-| [wudfddi.IWDFIoQueue.RetrieveNextRequest](nf-wudfddi-iwdfioqueue-retrievenextrequest.md) | The RetrieveNextRequest method retrieves the next I/O request from an I/O queue. |
-| [wudfddi.IWDFIoQueue.RetrieveNextRequestByFileObject](nf-wudfddi-iwdfioqueue-retrievenextrequestbyfileobject.md) | The RetrieveNextRequestByFileObject method retrieves from an I/O queue the next I/O request whose file object matches the specified file object. |
-| [wudfddi.IWDFIoQueue.Start](nf-wudfddi-iwdfioqueue-start.md) | The Start method enables an I/O queue to start receiving new I/O requests and delivering them to a driver. |
-| [wudfddi.IWDFIoQueue.Stop](nf-wudfddi-iwdfioqueue-stop.md) | The Stop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests. |
-| [wudfddi.IWDFIoQueue.StopSynchronously](nf-wudfddi-iwdfioqueue-stopsynchronously.md) | The StopSynchronously method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests. The method returns after all delivered requests have been canceled or completed. |
+| [IWDFIoQueue::ConfigureRequestDispatching](nf-wudfddi-iwdfioqueue-configurerequestdispatching.md) | The ConfigureRequestDispatching method configures the queuing of I/O requests of the given type. |
+| [IWDFIoQueue::Drain](nf-wudfddi-iwdfioqueue-drain.md) | The Drain method directs the queue to reject new incoming I/O requests and allow already-queued requests to be delivered to the driver for processing. |
+| [IWDFIoQueue::DrainSynchronously](nf-wudfddi-iwdfioqueue-drainsynchronously.md) | The DrainSynchronously method directs the queue to reject new incoming I/O requests and allows already-queued requests to be delivered to the driver for processing. This method returns after all requests are completed or canceled. |
+| [IWDFIoQueue::GetDevice](nf-wudfddi-iwdfioqueue-getdevice.md) | The GetDevice method retrieves the interface to the device that owns the I/O queue. |
+| [IWDFIoQueue::GetState](nf-wudfddi-iwdfioqueue-getstate.md) | The GetState method retrieves the state of an I/O queue. |
+| [IWDFIoQueue::Purge](nf-wudfddi-iwdfioqueue-purge.md) | The Purge method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests. |
+| [IWDFIoQueue::PurgeSynchronously](nf-wudfddi-iwdfioqueue-purgesynchronously.md) | The PurgeSynchronously method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests. The method returns after all outstanding requests are canceled. |
+| [IWDFIoQueue::RetrieveNextRequest](nf-wudfddi-iwdfioqueue-retrievenextrequest.md) | The RetrieveNextRequest method retrieves the next I/O request from an I/O queue. |
+| [IWDFIoQueue::RetrieveNextRequestByFileObject](nf-wudfddi-iwdfioqueue-retrievenextrequestbyfileobject.md) | The RetrieveNextRequestByFileObject method retrieves from an I/O queue the next I/O request whose file object matches the specified file object. |
+| [IWDFIoQueue::Start](nf-wudfddi-iwdfioqueue-start.md) | The Start method enables an I/O queue to start receiving new I/O requests and delivering them to a driver. |
+| [IWDFIoQueue::Stop](nf-wudfddi-iwdfioqueue-stop.md) | The Stop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests. |
+| [IWDFIoQueue::StopSynchronously](nf-wudfddi-iwdfioqueue-stopsynchronously.md) | The StopSynchronously method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests. The method returns after all delivered requests have been canceled or completed. |
 
 ## Remarks
 

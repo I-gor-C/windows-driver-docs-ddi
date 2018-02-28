@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: aba4cccd-267d-48cc-a6ff-be19802adfdc
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdfdevice/WdfDeviceConfigureRequestDispatching, DFDeviceObjectGeneralRef_d1874c0c-e889-4225-8bbf-e8292edcb716.xml, WdfDeviceConfigureRequestDispatching, kmdf.wdfdeviceconfigurerequestdispatching, wdf.wdfdeviceconfigurerequestdispatching, WdfDeviceConfigureRequestDispatching method
+ms.keywords: DFDeviceObjectGeneralRef_d1874c0c-e889-4225-8bbf-e8292edcb716.xml, WdfDeviceConfigureRequestDispatching, WdfDeviceConfigureRequestDispatching method, kmdf.wdfdeviceconfigurerequestdispatching, wdf.wdfdeviceconfigurerequestdispatching, wdfdevice/WdfDeviceConfigureRequestDispatching
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,17 +29,17 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfDeviceConfigureRequestDispatching
 product: Windows
 targetos: Windows
@@ -75,7 +75,7 @@ Supplies a handle to a framework queue object.
 
 `RequestType`
 
-Supplies a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>-typed enumerator that identifies the type of request to be queued. The only valid enumerators are: 
+Supplies a <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_type.md">WDF_REQUEST_TYPE</a>-typed enumerator that identifies the type of request to be queued. The only valid enumerators are: 
 
 <b>WdfRequestTypeCreate</b>
 

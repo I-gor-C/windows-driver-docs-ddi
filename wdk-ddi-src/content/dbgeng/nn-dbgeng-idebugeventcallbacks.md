@@ -4,11 +4,11 @@ title: IDebugEventCallbacks
 author: windows-driver-content
 description: IDebugEventCallbacks interface
 old-location: debugger\idebugeventcallbacks.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f5e51d0e-0967-4e35-b24b-4bd99c975569
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugeventcallbacks, IDebugEventCallbacks interface [Windows Debugging], IDebugEventCallbacks interface [Windows Debugging], described, IDebugEventCallbacks, dbgeng/IDebugEventCallbacks, ComCallbacks_72745555-ec34-41fa-9305-cf23357bcd17.xml
+ms.date: 2/23/2018
+ms.keywords: ComCallbacks_72745555-ec34-41fa-9305-cf23357bcd17.xml, IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], IDebugEventCallbacks interface [Windows Debugging], described, dbgeng/IDebugEventCallbacks, debugger.idebugeventcallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugEventCallbacks
 product: Windows
 targetos: Windows
@@ -53,20 +53,20 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugEventCallbacks.Breakpoint](nf-dbgeng-idebugeventcallbacks-breakpoint.md) | The Breakpoint callback method is called by the engine when the target issues a breakpointexception. |
-| [dbgeng.IDebugEventCallbacks.ChangeDebuggeeState](nf-dbgeng-idebugeventcallbacks-changedebuggeestate.md) | The ChangeDebuggeeState callback method is called by the engine when it makes or detects changes to the target. |
-| [dbgeng.IDebugEventCallbacks.ChangeEngineState](nf-dbgeng-idebugeventcallbacks-changeenginestate.md) | The ChangeEngineState callback method is called by the engine when its state has changed. |
-| [dbgeng.IDebugEventCallbacks.ChangeSymbolState](nf-dbgeng-idebugeventcallbacks-changesymbolstate.md) | The ChangeSymbolState callback method is called by the engine when the symbol state changes. |
-| [dbgeng.IDebugEventCallbacks.CreateProcess](nf-dbgeng-idebugeventcallbacks-createprocess.md) | The CreateProcess callback method is called by the engine when a create-processdebugging event occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.CreateThread](nf-dbgeng-idebugeventcallbacks-createthread.md) | The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.Exception](nf-dbgeng-idebugeventcallbacks-exception.md) | The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.ExitProcess](nf-dbgeng-idebugeventcallbacks-exitprocess.md) | The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.ExitThread](nf-dbgeng-idebugeventcallbacks-exitthread.md) | The ExitThread callback method is called by the engine when an exit-threaddebugging event occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.GetInterestMask](nf-dbgeng-idebugeventcallbacks-getinterestmask.md) | The GetInterestMask callback method is called to determine which events the IDebugEventCallbacks object is interested in. The engine calls GetInterestMask when the object is registered with a client by using SetEventCallbacks. |
-| [dbgeng.IDebugEventCallbacks.LoadModule](nf-dbgeng-idebugeventcallbacks-loadmodule.md) | The LoadModule callback method is called by the engine when a module-load debugging event occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.SessionStatus](nf-dbgeng-idebugeventcallbacks-sessionstatus.md) | The SessionStatus callback method is called by the engine when a change occurs in the debugger session. |
-| [dbgeng.IDebugEventCallbacks.SystemError](nf-dbgeng-idebugeventcallbacks-systemerror.md) | The SystemError callback method is called by the engine when a system error occurs in the target. |
-| [dbgeng.IDebugEventCallbacks.UnloadModule](nf-dbgeng-idebugeventcallbacks-unloadmodule.md) | The UnloadModule callback method is called by the engine when a module-unload debugging event occurs in the target. |
+| [IDebugEventCallbacks::Breakpoint](nf-dbgeng-idebugeventcallbacks-breakpoint.md) | The Breakpoint callback method is called by the engine when the target issues a breakpointexception. |
+| [IDebugEventCallbacks::ChangeDebuggeeState](nf-dbgeng-idebugeventcallbacks-changedebuggeestate.md) | The ChangeDebuggeeState callback method is called by the engine when it makes or detects changes to the target. |
+| [IDebugEventCallbacks::ChangeEngineState](nf-dbgeng-idebugeventcallbacks-changeenginestate.md) | The ChangeEngineState callback method is called by the engine when its state has changed. |
+| [IDebugEventCallbacks::ChangeSymbolState](nf-dbgeng-idebugeventcallbacks-changesymbolstate.md) | The ChangeSymbolState callback method is called by the engine when the symbol state changes. |
+| [IDebugEventCallbacks::CreateProcess](nf-dbgeng-idebugeventcallbacks-createprocess.md) | The CreateProcess callback method is called by the engine when a create-processdebugging event occurs in the target. |
+| [IDebugEventCallbacks::CreateThread](nf-dbgeng-idebugeventcallbacks-createthread.md) | The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target. |
+| [IDebugEventCallbacks::Exception](nf-dbgeng-idebugeventcallbacks-exception.md) | The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target. |
+| [IDebugEventCallbacks::ExitProcess](nf-dbgeng-idebugeventcallbacks-exitprocess.md) | The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target. |
+| [IDebugEventCallbacks::ExitThread](nf-dbgeng-idebugeventcallbacks-exitthread.md) | The ExitThread callback method is called by the engine when an exit-threaddebugging event occurs in the target. |
+| [IDebugEventCallbacks::GetInterestMask](nf-dbgeng-idebugeventcallbacks-getinterestmask.md) | The GetInterestMask callback method is called to determine which events the IDebugEventCallbacks object is interested in. The engine calls GetInterestMask when the object is registered with a client by using SetEventCallbacks. |
+| [IDebugEventCallbacks::LoadModule](nf-dbgeng-idebugeventcallbacks-loadmodule.md) | The LoadModule callback method is called by the engine when a module-load debugging event occurs in the target. |
+| [IDebugEventCallbacks::SessionStatus](nf-dbgeng-idebugeventcallbacks-sessionstatus.md) | The SessionStatus callback method is called by the engine when a change occurs in the debugger session. |
+| [IDebugEventCallbacks::SystemError](nf-dbgeng-idebugeventcallbacks-systemerror.md) | The SystemError callback method is called by the engine when a system error occurs in the target. |
+| [IDebugEventCallbacks::UnloadModule](nf-dbgeng-idebugeventcallbacks-unloadmodule.md) | The UnloadModule callback method is called by the engine when a module-unload debugging event occurs in the target. |
 
 ## Remarks
 

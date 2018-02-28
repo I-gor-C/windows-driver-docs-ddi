@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 6870b6fa-1a90-4a7a-935a-4ce8eda940a1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfiotargetstatemanagement, IWDFIoTargetStateManagement interface, IWDFIoTargetStateManagement interface, described, IWDFIoTargetStateManagement, wudfddi/IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_667496e9-fa1f-4c90-911d-d456ffc3b59e.xml, umdf.iwdfiotargetstatemanagement
+ms.keywords: IWDFIoTargetStateManagement, IWDFIoTargetStateManagement interface, IWDFIoTargetStateManagement interface, described, UMDFIoTargetObjectRef_667496e9-fa1f-4c90-911d-d456ffc3b59e.xml, umdf.iwdfiotargetstatemanagement, wdf.iwdfiotargetstatemanagement, wudfddi/IWDFIoTargetStateManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoTargetStateManagement
 product: Windows
 targetos: Windows
@@ -56,10 +56,10 @@ The <b>IWDFIoTargetStateManagement</b> interface exposes methods that manage and
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoTargetStateManagement.GetState](nf-wudfddi-iwdfiotargetstatemanagement-getstate.md) | The GetState method returns the current state of a local I/O target. |
-| [wudfddi.IWDFIoTargetStateManagement.Remove](nf-wudfddi-iwdfiotargetstatemanagement-remove.md) | The Remove method removes a local I/O target. |
-| [wudfddi.IWDFIoTargetStateManagement.Start](nf-wudfddi-iwdfiotargetstatemanagement-start.md) | The Start method starts sending queued requests to a local I/O target. |
-| [wudfddi.IWDFIoTargetStateManagement.Stop](nf-wudfddi-iwdfiotargetstatemanagement-stop.md) | The Stop method stops sending queued requests to a local I/O target. |
+| [IWDFIoTargetStateManagement::GetState](nf-wudfddi-iwdfiotargetstatemanagement-getstate.md) | The GetState method returns the current state of a local I/O target. |
+| [IWDFIoTargetStateManagement::Remove](nf-wudfddi-iwdfiotargetstatemanagement-remove.md) | The Remove method removes a local I/O target. |
+| [IWDFIoTargetStateManagement::Start](nf-wudfddi-iwdfiotargetstatemanagement-start.md) | The Start method starts sending queued requests to a local I/O target. |
+| [IWDFIoTargetStateManagement::Stop](nf-wudfddi-iwdfiotargetstatemanagement-stop.md) | The Stop method stops sending queued requests to a local I/O target. |
 
 ## Remarks
 

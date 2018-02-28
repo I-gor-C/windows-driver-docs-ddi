@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: C4F35016-3F93-4258-A42F-D692AF690020
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.evt_vmb_channel_started, EvtVmbChannelStarted callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelStarted, EVT_VMB_CHANNEL_STARTED, EVT_VMB_CHANNEL_STARTED, vmbuskernelmodeclientlibapi/EvtVmbChannelStarted, PFN_VMB_CHANNEL_STARTED callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_STARTED
+ms.keywords: EVT_VMB_CHANNEL_STARTED, EvtVmbChannelStarted, EvtVmbChannelStarted callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_STARTED, PFN_VMB_CHANNEL_STARTED callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_started, vmbuskernelmodeclientlibapi/EvtVmbChannelStarted
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	VmbusKernelModeClientLibApi.h
-apiname:
+api_name:
 -	PFN_VMB_CHANNEL_STARTED
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_VMB_CHANNEL_STARTED function
+# EVT_VMB_CHANNEL_STARTED callback function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <i>EvtVmbChannelStarted</i> callback function is invoked at either endpoint when a channel is
@@ -95,7 +95,7 @@ Waiting for a sent packet to complete, such as by the <a href="..\vmbuskernelmod
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_post_started.md">EvtVmbChannelPostStarted</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmb_channel_state_change_callbacks_init.md">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a>
 
 
 
@@ -103,7 +103,7 @@ Waiting for a sent packet to complete, such as by the <a href="..\vmbuskernelmod
 
 
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsendsynchronousrequest.md">VmbChannelSendSynchronousRequest</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>
 
 
 
@@ -111,15 +111,15 @@ Waiting for a sent packet to complete, such as by the <a href="..\vmbuskernelmod
 
 
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmb_channel_state_change_callbacks_init.md">VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT</a>
-
-
-
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>
-
-
-
 <a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_opened.md">EvtVmbChannelOpened</a>
+
+
+
+<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_post_started.md">EvtVmbChannelPostStarted</a>
+
+
+
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsendsynchronousrequest.md">VmbChannelSendSynchronousRequest</a>
 
 
 

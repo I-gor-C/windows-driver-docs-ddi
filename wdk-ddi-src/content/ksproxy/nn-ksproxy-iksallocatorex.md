@@ -7,8 +7,8 @@ old-location: stream\iksallocatorex.htm
 old-project: stream
 ms.assetid: 42abaf2b-8ee9-450e-aef3-fa29d1b558e5
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.iksallocatorex, IKsAllocatorEx interface [Streaming Media Devices], IKsAllocatorEx interface [Streaming Media Devices], described, IKsAllocatorEx, ksproxy/IKsAllocatorEx, ksproxy_58c9c83a-1a11-4e08-bf7f-e0694bf2eda5.xml
+ms.date: 2/23/2018
+ms.keywords: IKsAllocatorEx, IKsAllocatorEx interface [Streaming Media Devices], IKsAllocatorEx interface [Streaming Media Devices], described, ksproxy/IKsAllocatorEx, ksproxy_58c9c83a-1a11-4e08-bf7f-e0694bf2eda5.xml, stream.iksallocatorex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Ksproxy.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
-apiname:
+api_name:
 -	IKsAllocatorEx
 product: Windows
 targetos: Windows
@@ -55,9 +55,9 @@ The IID for this interface is IID_IKsAllocatorEx.
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsAllocatorEx.KsGetProperties](nf-ksproxy-iksallocatorex-ksgetproperties.md) | Returns the properties for an allocator. |
-| [ksproxy.IKsAllocatorEx.KsSetAllocatorHandle](nf-ksproxy-iksallocatorex-kssetallocatorhandle.md) | Sets the handle for an allocator. |
-| [ksproxy.IKsAllocatorEx.KsSetProperties](nf-ksproxy-iksallocatorex-kssetproperties.md) | Sets the properties for an allocator. |
+| [IKsAllocatorEx::KsGetProperties](nf-ksproxy-iksallocatorex-ksgetproperties.md) | Returns the properties for an allocator. |
+| [IKsAllocatorEx::KsSetAllocatorHandle](nf-ksproxy-iksallocatorex-kssetallocatorhandle.md) | Sets the handle for an allocator. |
+| [IKsAllocatorEx::KsSetProperties](nf-ksproxy-iksallocatorex-kssetproperties.md) | Sets the properties for an allocator. |
 
 ## Remarks
 
@@ -79,4 +79,4 @@ The IID for this interface is IID_IKsAllocatorEx.
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsAllocatorEx interface%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsAllocatorEx interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

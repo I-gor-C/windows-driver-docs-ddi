@@ -7,8 +7,8 @@ old-location: pci\sriov_set_power_state.htm
 old-project: PCI
 ms.assetid: d43a21cb-5cee-4e72-8f0c-7aa8b2453507
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: PCI.sriov_set_power_state, SRIOV_SET_POWER_STATE callback function [Buses], SRIOV_SET_POWER_STATE, pcivirt/SRIOV_SET_POWER_STATE
+ms.date: 2/24/2018
+ms.keywords: PCI.sriov_set_power_state, SRIOV_SET_POWER_STATE, SRIOV_SET_POWER_STATE callback function [Buses], pcivirt/SRIOV_SET_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Pcivirt.h
-apiname:
+api_name:
 -	SRIOV_SET_POWER_STATE
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 
-# SRIOV_SET_POWER_STATE function
+# SRIOV_SET_POWER_STATE callback function
 Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF).
 
 ## Syntax

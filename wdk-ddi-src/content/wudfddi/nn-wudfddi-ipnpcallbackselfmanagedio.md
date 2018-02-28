@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ipnpcallbackselfmanagedio, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, described, IPnpCallbackSelfManagedIo, wudfddi/IPnpCallbackSelfManagedIo, UMDFDeviceObjectRef_0f139c45-68eb-4429-ac90-675d7eddea5a.xml, umdf.ipnpcallbackselfmanagedio
+ms.keywords: IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, described, UMDFDeviceObjectRef_0f139c45-68eb-4429-ac90-675d7eddea5a.xml, umdf.ipnpcallbackselfmanagedio, wdf.ipnpcallbackselfmanagedio, wudfddi/IPnpCallbackSelfManagedIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IPnpCallbackSelfManagedIo
 product: Windows
 targetos: Windows
@@ -56,12 +56,12 @@ The <b>IPnpCallbackSelfManagedIo</b> interface is a Plug and Play (PnP) and powe
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoCleanup](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediocleanup.md) | The OnSelfManagedIoCleanup method releases memory for a device's self-managed I/O operations, after the device is removed. |
-| [wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoFlush](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagedioflush.md) | The OnSelfManagedIoFlush method flushes the device for a device's self-managed I/O operations. |
-| [wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoInit](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagedioinit.md) | The OnSelfManagedIoInit method initializes a device's self-managed I/O operations. |
-| [wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoRestart](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediorestart.md) | The OnSelfManagedIoRestart method restarts a device's self-managed I/O operations. |
-| [wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoStop](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediostop.md) | The OnSelfManagedIoStop method is not used in the current version of the UMDF. |
-| [wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoSuspend](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediosuspend.md) | The OnSelfManagedIoSuspend method suspends a device's self-managed I/O operations. |
+| [IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediocleanup.md) | The OnSelfManagedIoCleanup method releases memory for a device's self-managed I/O operations, after the device is removed. |
+| [IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagedioflush.md) | The OnSelfManagedIoFlush method flushes the device for a device's self-managed I/O operations. |
+| [IPnpCallbackSelfManagedIo::OnSelfManagedIoInit](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagedioinit.md) | The OnSelfManagedIoInit method initializes a device's self-managed I/O operations. |
+| [IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediorestart.md) | The OnSelfManagedIoRestart method restarts a device's self-managed I/O operations. |
+| [IPnpCallbackSelfManagedIo::OnSelfManagedIoStop](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediostop.md) | The OnSelfManagedIoStop method is not used in the current version of the UMDF. |
+| [IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend](nf-wudfddi-ipnpcallbackselfmanagedio-onselfmanagediosuspend.md) | The OnSelfManagedIoSuspend method suspends a device's self-managed I/O operations. |
 
 ## Remarks
 

@@ -2,7 +2,7 @@
 UID: NA:d3d10umddi
 ms.assetid: 431c5cab-5fae-3d70-8c9e-f9908747c0b3
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,8 @@ d3d10umddi.h contains the following programming interfaces:
 
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PFND3D10_1DDI_CALCPRIVATEBLENDSTATESIZE](nc-d3d10umddi-pfnd3d10_1ddi_calcprivateblendstatesize.md) | The CalcPrivateBlendStateSize(D3D10_1) function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a blend state. |
@@ -333,7 +334,6 @@ d3d10umddi.h contains the following programming interfaces:
 | [PFND3DWDDM2_2DDI_SHADERCACHE_STORE_VALUE_CB](nc-d3d10umddi-pfnd3dwddm2_2ddi_shadercache_store_value_cb.md) | The pfnShaderCacheStoreValue callback function stores a shader cache value. |
 
 
-
 ## Structures
 | Title | Description |
 | ---- |:---- |
@@ -433,10 +433,10 @@ d3d10umddi.h contains the following programming interfaces:
 | [D3D11_1DDI_VIDEO_COLOR_RGBA](ns-d3d10umddi-d3d11_1ddi_video_color_rgba.md) | Specifies an RGB color value. |
 | [D3D11_1DDI_VIDEO_COLOR_YCbCrA](ns-d3d10umddi-d3d11_1ddi_video_color_ycbcra.md) | Specifies a YCbCr color value. |
 | [D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS](ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md) | Describes the content-protection capabilities of the user-mode display driver. |
+| [D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC](ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_desc.md) | Describes a compressed buffer for Microsoft DirectX Video Acceleration (DXVA) decoding. |
 | [D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO](ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md) | Specifies information about a video decoder buffer. |
 | [D3D11_1DDI_VIDEO_DECODER_CONFIG](ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md) | Describes the configuration of a Microsoft Direct3D 11 decoder device for Microsoft DirectX Video Acceleration (DXVA). |
 | [D3D11_1DDI_VIDEO_DECODER_DESC](ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md) | Describes a video stream for a Microsoft Direct3D video decoder or video processor. |
-| [D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC](ns-d3d10umddi-d3d11_1ddi_video_decoderr_buffer_desc.md) | Describes a compressed buffer for Microsoft DirectX Video Acceleration (DXVA) decoding. |
 | [D3D11_1DDI_VIDEO_INPUT](ns-d3d10umddi-d3d11_1ddi_video_input.md) | Reserved for system use. Do not use in your driver. |
 | [D3D11_1DDI_VIDEO_OUTPUT](ns-d3d10umddi-d3d11_1ddi_video_output.md) | Reserved for system use. Do not use in your driver. |
 | [D3D11_1DDI_VIDEO_PROCESSOR_CAPS](ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md) | Describes the capabilities of a Microsoft Direct3D 11 video processor. |

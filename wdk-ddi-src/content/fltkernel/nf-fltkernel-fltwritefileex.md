@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 18B2B486-5525-4132-96E8-EEA74342E0EA
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: FltWriteFileEx, fltkernel/FltWriteFileEx, FltWriteFileEx function [Installable File System Drivers], ifsk.fltwritefileex
+ms.keywords: FltWriteFileEx, FltWriteFileEx function [Installable File System Drivers], fltkernel/FltWriteFileEx, ifsk.fltwritefileex
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	fltmgr.sys
-apiname:
+api_name:
 -	FltWriteFileEx
 product: Windows
 targetos: Windows
@@ -231,7 +231,7 @@ The <i>Mdl</i> parameter is provided as a convenience when a minifilter already 
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfileex.md">FltReadFileEx</a>
 
 
 
@@ -243,7 +243,7 @@ The <i>Mdl</i> parameter is provided as a convenience when a minifilter already 
 
 
 
-<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 
 
 
@@ -251,15 +251,15 @@ The <i>Mdl</i> parameter is provided as a convenience when a minifilter already 
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
 
 
 
 <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>
+
+
+
+<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
 
 
 

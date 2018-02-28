@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ccae49a2-2081-44f2-b1f6-cb1e98b74e5d
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackread, IQueueCallbackRead interface, IQueueCallbackRead interface, described, IQueueCallbackRead, wudfddi/IQueueCallbackRead, UMDFQueueObjectRef_ea1187c2-6bd1-43a0-aeeb-6d9e1ee48cd7.xml, umdf.iqueuecallbackread
+ms.keywords: IQueueCallbackRead, IQueueCallbackRead interface, IQueueCallbackRead interface, described, UMDFQueueObjectRef_ea1187c2-6bd1-43a0-aeeb-6d9e1ee48cd7.xml, umdf.iqueuecallbackread, wdf.iqueuecallbackread, wudfddi/IQueueCallbackRead
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackRead
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ An I/O queue notifies a driver when a read request is available for the driver. 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackRead.OnRead](nf-wudfddi-iqueuecallbackread-onread.md) | The OnRead method is called to handle a read request when an application reads information from a device through the Microsoft Win32 ReadFile or ReadFileEx function. |
+| [IQueueCallbackRead::OnRead](nf-wudfddi-iqueuecallbackread-onread.md) | The OnRead method is called to handle a read request when an application reads information from a device through the Microsoft Win32 ReadFile or ReadFileEx function. |
 
 ## Remarks
 

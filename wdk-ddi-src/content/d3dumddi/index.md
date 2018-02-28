@@ -2,7 +2,7 @@
 UID: NA:d3dumddi
 ms.assetid: 64c7511b-6379-3c2f-bd00-f08eab970dc2
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,8 @@ d3dumddi.h contains the following programming interfaces:
 
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PFND3DDDI_ALLOCATECB](nc-d3dumddi-pfnd3dddi_allocatecb.md) | The pfnAllocateCb function allocates system or video memory. |
@@ -230,7 +231,6 @@ d3dumddi.h contains the following programming interfaces:
 | [PFND3DDDICB_LOGSTRINGTABLEENTRY](nc-d3dumddi-pfnd3dddicb_logstringtableentry.md) | Locates a string table entry that is used by the LogMarkerStringTable function to log an Event Tracing for Windows (ETW) marker event. Optionally implemented by Windows Display Driver Model (WDDM) 1.3 and later drivers. |
 
 
-
 ## Structures
 | Title | Description |
 | ---- |:---- |
@@ -437,6 +437,8 @@ d3dumddi.h contains the following programming interfaces:
 | [_DXVADDI_PRIVATEBUFFER](ns-d3dumddi-_dxvaddi_privatebuffer.md) | The DXVADDI_PRIVATEBUFFER structure describes a private buffer that a nonstandard decoder uses to perform a decode operation. |
 | [_DXVADDI_PRIVATEDATA](ns-d3dumddi-_dxvaddi_privatedata.md) | The DXVADDI_PRIVATEDATA structure describes data that is required for a particular decoder to operate. |
 | [_DXVADDI_PROCAMPVALUES](ns-d3dumddi-_dxvaddi_procampvalues.md) | The DXVADDI_PROCAMPVALUES structure describes the ProcAmp control adjustment values. |
+| [_DXVADDI_PVP_BLOCK128](ns-d3dumddi-_dxvaddi_pvp_block128.md) | The DXVADDI_PVP_KEY128 structure contains a 128-bit key that the decode device uses to start decoding a frame. |
+| [_DXVADDI_PVP_HW_IV](ns-d3dumddi-_dxvaddi_pvp_hw_iv.md) | The DXVADDI_PVP_HW_IV structure contains two 64-bit values that combine to form a 128-bit protected video path (PVP) value. |
 | [_DXVADDI_PVP_SETKEY](ns-d3dumddi-_dxvaddi_pvp_setkey.md) | The DXVADDI_PVP_SETKEY structure describes a key that the decode device uses to start decoding a frame. |
 | [_DXVADDI_QUERYEXTENSIONCAPSINPUT](ns-d3dumddi-_dxvaddi_queryextensioncapsinput.md) | The DXVADDI_QUERYEXTENSIONCAPSINPUT structure describes a capability of an extension GUID that information is requested for. |
 | [_DXVADDI_QUERYFILTERPROPERTYRANGEINPUT](ns-d3dumddi-_dxvaddi_queryfilterpropertyrangeinput.md) | The DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure describes a filter setting on a video stream that range information is requested for. |

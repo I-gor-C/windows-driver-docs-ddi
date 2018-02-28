@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 0f595daa-9822-4ca6-8f25-e6f82030d4ea
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolclnotifycloseaf, ProtocolClNotifyCloseAf callback function [Network Drivers Starting with Windows Vista], ProtocolClNotifyCloseAf, PROTOCOL_CL_NOTIFY_CLOSE_AF, PROTOCOL_CL_NOTIFY_CLOSE_AF, ndis/ProtocolClNotifyCloseAf, condis_client_ref_0b778346-7d48-4d72-807d-16d8be2da913.xml
+ms.keywords: PROTOCOL_CL_NOTIFY_CLOSE_AF, ProtocolClNotifyCloseAf, ProtocolClNotifyCloseAf callback function [Network Drivers Starting with Windows Vista], condis_client_ref_0b778346-7d48-4d72-807d-16d8be2da913.xml, ndis/ProtocolClNotifyCloseAf, netvista.protocolclnotifycloseaf
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolClNotifyCloseAf
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CL_NOTIFY_CLOSE_AF function
+# PROTOCOL_CL_NOTIFY_CLOSE_AF callback function
 The 
   <i>ProtocolClNotifyCloseAf</i> function
   notifies a CoNDIS client that the client should close the associated address family (AF).
@@ -221,11 +221,8 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
+<a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
+   NdisClNotifyCloseAddressFamilyComplete</a>
 
 
 
@@ -233,8 +230,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
-   NdisClNotifyCloseAddressFamilyComplete</a>
+<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
 
 
 
@@ -243,6 +239,10 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 
 
 

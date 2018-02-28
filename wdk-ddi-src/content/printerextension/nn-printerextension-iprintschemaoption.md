@@ -7,8 +7,8 @@ old-location: print\iprintschemaoption_interface.htm
 old-project: print
 ms.assetid: B520875A-7882-43D5-A890-0F82654EFD6C
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintschemaoption_interface, IPrintSchemaOption interface [Print Devices], IPrintSchemaOption interface [Print Devices], described, IPrintSchemaOption, printerextension/IPrintSchemaOption
+ms.date: 2/23/2018
+ms.keywords: IPrintSchemaOption, IPrintSchemaOption interface [Print Devices], IPrintSchemaOption interface [Print Devices], described, print.iprintschemaoption_interface, printerextension/IPrintSchemaOption
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrintSchemaOption
 product: Windows
 targetos: Windows
@@ -54,9 +54,9 @@ Exposes a Print Schema Option object.
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrintSchemaOption.get_Constrained](nf-printerextension-iprintschemaoption-get_constrained.md) | Gets the constraint setting type for the schema option. |
-| [printerextension.IPrintSchemaOption.get_Selected](nf-printerextension-iprintschemaoption-get_selected.md) | Indicates whether this option is selected. |
-| [printerextension.IPrintSchemaOption.GetPropertyValue](nf-printerextension-iprintschemaoption-getpropertyvalue.md) | Gets the XML node for the &#0034;value&#0034; child element of a &#0034;Property&#0034; or a &#0034;ScoredProperty&#0034; element with the given name. |
+| [IPrintSchemaOption::get_Constrained](nf-printerextension-iprintschemaoption-get_constrained.md) | Gets the constraint setting type for the schema option. |
+| [IPrintSchemaOption::get_Selected](nf-printerextension-iprintschemaoption-get_selected.md) | Indicates whether this option is selected. |
+| [IPrintSchemaOption::GetPropertyValue](nf-printerextension-iprintschemaoption-getpropertyvalue.md) | Gets the XML node for the &#0034;value&#0034; child element of a &#0034;Property&#0034; or a &#0034;ScoredProperty&#0034; element with the given name. |
 
 ## Remarks
 
@@ -71,19 +71,11 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md">IPrintSchemaPageMediaSizeOption</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
-
-
-
 <a href="https://msdn.microsoft.com/C22BC037-05D2-4F44-8704-D1D56909B603">IPrintSchemaFeature::SelectedOption</a>
 
 
 
-<a href="https://msdn.microsoft.com/C9C4E085-1F2A-4610-AF2A-8F87E5CE7BCA">IPrintSchemaFeature::GetOption</a>
+<a href="..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md">IPrintSchemaPageMediaSizeOption</a>
 
 
 
@@ -91,8 +83,16 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
 
 
- 
+<a href="https://msdn.microsoft.com/C9C4E085-1F2A-4610-AF2A-8F87E5CE7BCA">IPrintSchemaFeature::GetOption</a>
+
+
+
+<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaOption interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaOption interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

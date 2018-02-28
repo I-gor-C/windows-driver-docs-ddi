@@ -7,8 +7,8 @@ old-location: audio\iminiportwavepci.htm
 old-project: audio
 ms.assetid: 74619f9b-cd67-47f2-8c67-6fb42b794b9a
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportwavepci, IMiniportWavePci interface [Audio Devices], IMiniportWavePci interface [Audio Devices], described, IMiniportWavePci, portcls/IMiniportWavePci, audmp-routines_bd4a9d9c-d3eb-40bc-93d9-277abe4ee258.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportWavePci, IMiniportWavePci interface [Audio Devices], IMiniportWavePci interface [Audio Devices], described, audio.iminiportwavepci, audmp-routines_bd4a9d9c-d3eb-40bc-93d9-277abe4ee258.xml, portcls/IMiniportWavePci
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportWavePci
 product: Windows
 targetos: Windows
@@ -57,9 +57,9 @@ The <code>IMiniportWavePci</code> interface provides a method for initializing t
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportWavePci.Init](nf-portcls-iminiportwavepci-init.md) | The Init method initializes the WavePci miniport object. Initialization includes verification of the hardware using the resources specified in the resource list. |
-| [portcls.IMiniportWavePci.NewStream](nf-portcls-iminiportwavepci-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
-| [portcls.IMiniportWavePci.Service](nf-portcls-iminiportwavepci-service.md) | The Service method notifies the miniport driver of a request for service. |
+| [IMiniportWavePci::Init](nf-portcls-iminiportwavepci-init.md) | The Init method initializes the WavePci miniport object. Initialization includes verification of the hardware using the resources specified in the resource list. |
+| [IMiniportWavePci::NewStream](nf-portcls-iminiportwavepci-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
+| [IMiniportWavePci::Service](nf-portcls-iminiportwavepci-service.md) | The Service method notifies the miniport driver of a request for service. |
 
 ## Remarks
 

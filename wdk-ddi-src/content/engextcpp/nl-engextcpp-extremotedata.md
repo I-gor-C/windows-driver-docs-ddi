@@ -7,8 +7,8 @@ old-location: debugger\extremotedata.htm
 old-project: debugger
 ms.assetid: d645867c-3264-45ae-b0bd-4d21e388fb97
 ms.author: windowsdriverdev
-ms.date: 1/19/2018
-ms.keywords: debugger.extremotedata, ExtRemoteData class [Windows Debugging], ExtRemoteData class [Windows Debugging], described, ExtRemoteData, engextcpp/ExtRemoteData, EngExtCpp_Ref_e84c03ce-1156-481b-a429-f0a918797565.xml
+ms.date: 2/23/2018
+ms.keywords: EngExtCpp_Ref_e84c03ce-1156-481b-a429-f0a918797565.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], ExtRemoteData class [Windows Debugging], described, debugger.extremotedata, engextcpp/ExtRemoteData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: class
@@ -261,48 +261,48 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 
 | Method | Description |
 | ---- |:---- |
-| [engextcpp.ExtRemoteData.Clear](nf-engextcpp-extremotedata-clear.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.ExtRemoteData](nf-engextcpp-extremotedata-extremotedata.md) | The ExtRemoteData constructor creates a new instance of the ExtRemoteData class. |
-| [engextcpp.ExtRemoteData.GetBoolean](nf-engextcpp-extremotedata-getboolean.md) | The GetBoolean method returns a Boolean version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetChar](nf-engextcpp-extremotedata-getchar.md) | The GetChar method returns a CHAR version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetData](nf-engextcpp-extremotedata-getdata.md) | The GetData method returns the contents of the target's memory, represented by the ExtRemoteData object. |
-| [engextcpp.ExtRemoteData.GetDouble](nf-engextcpp-extremotedata-getdouble.md) | The GetDouble method returns a double version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetFloat](nf-engextcpp-extremotedata-getfloat.md) | The GetFloat method returns a float version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetLong](nf-engextcpp-extremotedata-getlong.md) | The GetLong method returns a LONG version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetLong64](nf-engextcpp-extremotedata-getlong64.md) | The GetLong64 method returns a LONG64 version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetLongPtr](nf-engextcpp-extremotedata-getlongptr.md) | The GetLongPtr method returns a signed integer version (extended to LONG64) of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target. |
-| [engextcpp.ExtRemoteData.GetPtr](nf-engextcpp-extremotedata-getptr.md) | The GetPtr method returns a pointer from the target's memory version of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target. |
-| [engextcpp.ExtRemoteData.GetShort](nf-engextcpp-extremotedata-getshort.md) | The GetShort method returns a SHORT version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetStdBool](nf-engextcpp-extremotedata-getstdbool.md) | The GetStdBool method returns a bool version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetString](nf-engextcpp-extremotedata-getstring.md) | The GetString method reads a null-terminated string from the target's memory. The string is located in the beginning of the region represented by the ExtRemoteData object. |
-| [engextcpp.ExtRemoteData.GetUchar](nf-engextcpp-extremotedata-getuchar.md) | The GetUChar method returns a UCHAR version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetUlong](nf-engextcpp-extremotedata-getulong.md) | The GetUlong method returns a ULONG version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetUlong64](nf-engextcpp-extremotedata-getulong64.md) | The GetUlong64 method returns a ULONG64 version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetUlongPtr](nf-engextcpp-extremotedata-getulongptr.md) | The GetUlongPtr method returns an unsigned integer version (extended to ULONG64) of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetUshort](nf-engextcpp-extremotedata-getushort.md) | The GetUshort method returns a USHORT version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.GetW32Bool](nf-engextcpp-extremotedata-getw32bool.md) | The GetW32Bool method returns a BOOL version of the ExtRemoteData object, which represents the contents of the target's memory. |
-| [engextcpp.ExtRemoteData.Read](nf-engextcpp-extremotedata-read.md) | The Read method reads the contents of the target's memory, represented by the ExtRemoteData object, and then caches the data. |
-| [engextcpp.ExtRemoteData.ReadBuffer](nf-engextcpp-extremotedata-readbuffer.md) | The ReadBuffer method reads data from the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different. |
-| [engextcpp.ExtRemoteData.Set](nf-engextcpp-extremotedata-set.md) | The Set method sets the region of the target's memory represented by the ExtRemoteData object. |
-| [engextcpp.ExtRemoteData.SetBoolean](nf-engextcpp-extremotedata-setboolean.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetChar](nf-engextcpp-extremotedata-setchar.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetData](nf-engextcpp-extremotedata-setdata.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetDouble](nf-engextcpp-extremotedata-setdouble.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetFloat](nf-engextcpp-extremotedata-setfloat.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetLong](nf-engextcpp-extremotedata-setlong.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetLong64](nf-engextcpp-extremotedata-setlong64.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetLongPtr](nf-engextcpp-extremotedata-setlongptr.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetPtr](nf-engextcpp-extremotedata-setptr.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetShort](nf-engextcpp-extremotedata-setshort.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetStdBool](nf-engextcpp-extremotedata-setstdbool.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetUchar](nf-engextcpp-extremotedata-setuchar.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetUlong](nf-engextcpp-extremotedata-setulong.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetUlong64](nf-engextcpp-extremotedata-setulong64.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetUlongPtr](nf-engextcpp-extremotedata-setulongptr.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetUshort](nf-engextcpp-extremotedata-setushort.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.SetW32Bool](nf-engextcpp-extremotedata-setw32bool.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
-| [engextcpp.ExtRemoteData.Write](nf-engextcpp-extremotedata-write.md) | The Write method writes the data cached by the ExtRemoteData object to the region of memory on the target, represented by this object. |
-| [engextcpp.ExtRemoteData.WriteBuffer](nf-engextcpp-extremotedata-writebuffer.md) | The WriteBuffer method writes data to the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different. |
+| [ExtRemoteData::Clear](nf-engextcpp-extremotedata-clear.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::ExtRemoteData](nf-engextcpp-extremotedata-extremotedata.md) | The ExtRemoteData constructor creates a new instance of the ExtRemoteData class. |
+| [ExtRemoteData::GetBoolean](nf-engextcpp-extremotedata-getboolean.md) | The GetBoolean method returns a Boolean version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetChar](nf-engextcpp-extremotedata-getchar.md) | The GetChar method returns a CHAR version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetData](nf-engextcpp-extremotedata-getdata.md) | The GetData method returns the contents of the target's memory, represented by the ExtRemoteData object. |
+| [ExtRemoteData::GetDouble](nf-engextcpp-extremotedata-getdouble.md) | The GetDouble method returns a double version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetFloat](nf-engextcpp-extremotedata-getfloat.md) | The GetFloat method returns a float version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetLong](nf-engextcpp-extremotedata-getlong.md) | The GetLong method returns a LONG version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetLong64](nf-engextcpp-extremotedata-getlong64.md) | The GetLong64 method returns a LONG64 version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetLongPtr](nf-engextcpp-extremotedata-getlongptr.md) | The GetLongPtr method returns a signed integer version (extended to LONG64) of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target. |
+| [ExtRemoteData::GetPtr](nf-engextcpp-extremotedata-getptr.md) | The GetPtr method returns a pointer from the target's memory version of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target. |
+| [ExtRemoteData::GetShort](nf-engextcpp-extremotedata-getshort.md) | The GetShort method returns a SHORT version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetStdBool](nf-engextcpp-extremotedata-getstdbool.md) | The GetStdBool method returns a bool version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetString](nf-engextcpp-extremotedata-getstring.md) | The GetString method reads a null-terminated string from the target's memory. The string is located in the beginning of the region represented by the ExtRemoteData object. |
+| [ExtRemoteData::GetUchar](nf-engextcpp-extremotedata-getuchar.md) | The GetUChar method returns a UCHAR version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetUlong](nf-engextcpp-extremotedata-getulong.md) | The GetUlong method returns a ULONG version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetUlong64](nf-engextcpp-extremotedata-getulong64.md) | The GetUlong64 method returns a ULONG64 version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetUlongPtr](nf-engextcpp-extremotedata-getulongptr.md) | The GetUlongPtr method returns an unsigned integer version (extended to ULONG64) of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetUshort](nf-engextcpp-extremotedata-getushort.md) | The GetUshort method returns a USHORT version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::GetW32Bool](nf-engextcpp-extremotedata-getw32bool.md) | The GetW32Bool method returns a BOOL version of the ExtRemoteData object, which represents the contents of the target's memory. |
+| [ExtRemoteData::Read](nf-engextcpp-extremotedata-read.md) | The Read method reads the contents of the target's memory, represented by the ExtRemoteData object, and then caches the data. |
+| [ExtRemoteData::ReadBuffer](nf-engextcpp-extremotedata-readbuffer.md) | The ReadBuffer method reads data from the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different. |
+| [ExtRemoteData::Set](nf-engextcpp-extremotedata-set.md) | The Set method sets the region of the target's memory represented by the ExtRemoteData object. |
+| [ExtRemoteData::SetBoolean](nf-engextcpp-extremotedata-setboolean.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetChar](nf-engextcpp-extremotedata-setchar.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetData](nf-engextcpp-extremotedata-setdata.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetDouble](nf-engextcpp-extremotedata-setdouble.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetFloat](nf-engextcpp-extremotedata-setfloat.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetLong](nf-engextcpp-extremotedata-setlong.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetLong64](nf-engextcpp-extremotedata-setlong64.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetLongPtr](nf-engextcpp-extremotedata-setlongptr.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetPtr](nf-engextcpp-extremotedata-setptr.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetShort](nf-engextcpp-extremotedata-setshort.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetStdBool](nf-engextcpp-extremotedata-setstdbool.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetUchar](nf-engextcpp-extremotedata-setuchar.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetUlong](nf-engextcpp-extremotedata-setulong.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetUlong64](nf-engextcpp-extremotedata-setulong64.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetUlongPtr](nf-engextcpp-extremotedata-setulongptr.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetUshort](nf-engextcpp-extremotedata-setushort.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::SetW32Bool](nf-engextcpp-extremotedata-setw32bool.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
+| [ExtRemoteData::Write](nf-engextcpp-extremotedata-write.md) | The Write method writes the data cached by the ExtRemoteData object to the region of memory on the target, represented by this object. |
+| [ExtRemoteData::WriteBuffer](nf-engextcpp-extremotedata-writebuffer.md) | The WriteBuffer method writes data to the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different. |
 
 
 ## Requirements
@@ -313,18 +313,28 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/a335f881-7b6f-4069-87fe-c036867b0c77">ExtRemoteData::Set(Typed)</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544083">ExtRemoteData::Read</a>
 
-<a href="https://msdn.microsoft.com/a335f881-7b6f-4069-87fe-c036867b0c77">ExtRemoteData::Set(Typed)</a>
+
 
 <a href="https://msdn.microsoft.com/50b4bee4-3a8c-45a1-9a3f-b416aa8a19e5">ExtRemoteData::Set(Offset Bytes)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544006">ExtRemoteData::ExtRemoteData</a>
+
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554311">ReadPhysical2</a>
 
- 
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544006">ExtRemoteData::ExtRemoteData</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtRemoteData class%20 RELEASE:%20(1/19/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtRemoteData class%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

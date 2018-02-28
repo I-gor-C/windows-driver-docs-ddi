@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 1A473A08-EA23-4DFE-8B58-EBB4AC977891
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtinterruptworkitem, EvtInterruptWorkItem callback function, EvtInterruptWorkItem, EVT_WDF_INTERRUPT_WORKITEM, EVT_WDF_INTERRUPT_WORKITEM, wdfinterrupt/EvtInterruptWorkItem, kmdf.evtinterruptworkitem
+ms.keywords: EVT_WDF_INTERRUPT_WORKITEM, EvtInterruptWorkItem, EvtInterruptWorkItem callback function, kmdf.evtinterruptworkitem, wdf.evtinterruptworkitem, wdfinterrupt/EvtInterruptWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfinterrupt.h
-apiname:
+api_name:
 -	EvtInterruptWorkItem
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_INTERRUPT_WORKITEM function
+# EVT_WDF_INTERRUPT_WORKITEM callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtInterruptWorkItem</i> event callback function processes interrupt information that the driver's <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a> callback function has stored.

@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 45512F88-D4B8-4488-99EB-B47EE7443425
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: nfpdrivers.evtnfccxdeviceiocontrol_, EvtNfcCxDeviceIoControl callback function [Near-Field Proximity Drivers], EvtNfcCxDeviceIoControl, EVT_NFC_CX_DEVICE_IO_CONTROL, EVT_NFC_CX_DEVICE_IO_CONTROL, nfccx/EvtNfcCxDeviceIoControl
+ms.keywords: EVT_NFC_CX_DEVICE_IO_CONTROL, EvtNfcCxDeviceIoControl, EvtNfcCxDeviceIoControl callback function [Near-Field Proximity Drivers], nfccx/EvtNfcCxDeviceIoControl, nfpdrivers.evtnfccxdeviceiocontrol_
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Requires same
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	nfccx.h
-apiname:
+api_name:
 -	EvtNfcCxDeviceIoControl
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: NET_PNP_EVENT, *PNET_PNP_EVENT
 ---
 
 
-# EVT_NFC_CX_DEVICE_IO_CONTROL function
+# EVT_NFC_CX_DEVICE_IO_CONTROL callback function
 Called by the NFC CX to send an unhandled IOCTL to the client driver.
 
 ## Syntax

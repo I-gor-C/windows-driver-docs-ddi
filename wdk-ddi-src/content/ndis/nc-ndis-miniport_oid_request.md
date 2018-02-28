@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 733d84f5-c1d4-42a0-a59b-4ba50247f165
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportoidrequest, MiniportOidRequest callback function [Network Drivers Starting with Windows Vista], MiniportOidRequest, MINIPORT_OID_REQUEST, MINIPORT_OID_REQUEST, ndis/MiniportOidRequest, ndis_request_ref_a05061c1-4fa7-485a-9751-05b146e8f961.xml
+ms.keywords: MINIPORT_OID_REQUEST, MiniportOidRequest, MiniportOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/MiniportOidRequest, ndis_request_ref_a05061c1-4fa7-485a-9751-05b146e8f961.xml, netvista.miniportoidrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportOidRequest
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_OID_REQUEST function
+# MINIPORT_OID_REQUEST callback function
 NDIS calls a miniport driver's 
    <i>MiniportOidRequest</i> function to handle an OID request to query or set information in the driver.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_OID_REQUEST</b> type. For more
@@ -305,11 +305,23 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
 
 
 
@@ -322,7 +334,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndismoidrequestcomplete.md">NdisMOidRequestComplete</a>
+<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
 
 
 
@@ -330,19 +342,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
-
-
-
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
+<a href="..\ndis\nf-ndis-ndismoidrequestcomplete.md">NdisMOidRequestComplete</a>
 
 
 

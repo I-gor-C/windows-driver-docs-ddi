@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 430ee7fd-cffb-452d-b2e8-0dc252987487
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackiostop, IQueueCallbackIoStop interface, IQueueCallbackIoStop interface, described, IQueueCallbackIoStop, wudfddi/IQueueCallbackIoStop, UMDFQueueObjectRef_cf62ed54-43d3-4a9e-8e82-85695bf30527.xml, umdf.iqueuecallbackiostop
+ms.keywords: IQueueCallbackIoStop, IQueueCallbackIoStop interface, IQueueCallbackIoStop interface, described, UMDFQueueObjectRef_cf62ed54-43d3-4a9e-8e82-85695bf30527.xml, umdf.iqueuecallbackiostop, wdf.iqueuecallbackiostop, wudfddi/IQueueCallbackIoStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackIoStop
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IQueueCallbackIoStop</b> interface contains a method that stops the proce
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackIoStop.OnIoStop](nf-wudfddi-iqueuecallbackiostop-oniostop.md) | The OnIoStop callback function stops the processing of the specified I/O request from the specified queue. |
+| [IQueueCallbackIoStop::OnIoStop](nf-wudfddi-iqueuecallbackiostop-oniostop.md) | The OnIoStop callback function stops the processing of the specified I/O request from the specified queue. |
 
 ## Remarks
 

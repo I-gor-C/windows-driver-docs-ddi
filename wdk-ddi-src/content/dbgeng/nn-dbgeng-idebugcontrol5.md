@@ -4,11 +4,11 @@ title: IDebugControl5
 author: windows-driver-content
 description: "."
 old-location: debugger\idebugcontrol5.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6C358D49-970D-4687-B16E-7D1B44CB0A8E
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugcontrol5, IDebugControl5 interface [Windows Debugging], IDebugControl5 interface [Windows Debugging], described, IDebugControl5, dbgeng/IDebugControl5
+ms.date: 2/23/2018
+ms.keywords: IDebugControl5, IDebugControl5 interface [Windows Debugging], IDebugControl5 interface [Windows Debugging], described, dbgeng/IDebugControl5, debugger.idebugcontrol5
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugControl5
 product: Windows
 targetos: Windows
@@ -53,11 +53,11 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugControl5.GetBreakpointByGuid](nf-dbgeng-idebugcontrol5-getbreakpointbyguid.md) | The GetBreakpointByGuid method returns the breakpoint with the specified breakpoint GUID. |
-| [dbgeng.IDebugControl5.GetContextStackTraceEx](nf-dbgeng-idebugcontrol5-getcontextstacktraceex.md) | The GetContextStackTraceEx method returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame. |
-| [dbgeng.IDebugControl5.GetStackTraceEx](nf-dbgeng-idebugcontrol5-getstacktraceex.md) | The GetStackTraceEx method returns the frames at the top of the specified call stack. The GetStackTraceEx method provides inline frame support. For more information about working with inline functions, see Debugging Optimized Code and Inline Functions. |
-| [dbgeng.IDebugControl5.OutputContextStackTraceEx](nf-dbgeng-idebugcontrol5-outputcontextstacktraceex.md) | The OutputContextStackTraceEx method prints the call stack specified by an array of stack frames and corresponding register contexts. |
-| [dbgeng.IDebugControl5.OutputStackTraceEx](nf-dbgeng-idebugcontrol5-outputstacktraceex.md) | The OutputStackTraceEx method outputs either the supplied stack frame or the current stack frames. |
+| [IDebugControl5::GetBreakpointByGuid](nf-dbgeng-idebugcontrol5-getbreakpointbyguid.md) | The GetBreakpointByGuid method returns the breakpoint with the specified breakpoint GUID. |
+| [IDebugControl5::GetContextStackTraceEx](nf-dbgeng-idebugcontrol5-getcontextstacktraceex.md) | The GetContextStackTraceEx method returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame. |
+| [IDebugControl5::GetStackTraceEx](nf-dbgeng-idebugcontrol5-getstacktraceex.md) | The GetStackTraceEx method returns the frames at the top of the specified call stack. The GetStackTraceEx method provides inline frame support. For more information about working with inline functions, see Debugging Optimized Code and Inline Functions. |
+| [IDebugControl5::OutputContextStackTraceEx](nf-dbgeng-idebugcontrol5-outputcontextstacktraceex.md) | The OutputContextStackTraceEx method prints the call stack specified by an array of stack frames and corresponding register contexts. |
+| [IDebugControl5::OutputStackTraceEx](nf-dbgeng-idebugcontrol5-outputstacktraceex.md) | The OutputStackTraceEx method outputs either the supplied stack frame or the current stack frames. |
 
 ## Remarks
 
@@ -71,15 +71,7 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
 
 
@@ -87,8 +79,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 
 
- 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl5 interface%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl5 interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

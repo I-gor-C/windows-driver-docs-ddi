@@ -7,8 +7,8 @@ old-location: print\iprinterqueueview.htm
 old-project: print
 ms.assetid: 81B3D4A3-7176-4656-B23D-04F0F84D9000
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprinterqueueview, IPrinterQueueView interface [Print Devices], IPrinterQueueView interface [Print Devices], described, IPrinterQueueView, printerextension/IPrinterQueueView
+ms.date: 2/23/2018
+ms.keywords: IPrinterQueueView, IPrinterQueueView interface [Print Devices], IPrinterQueueView interface [Print Devices], described, print.iprinterqueueview, printerextension/IPrinterQueueView
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrinterQueueView
 product: Windows
 targetos: Windows
@@ -54,7 +54,7 @@ Provides a way to change the range of print jobs being monitored.
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrinterQueueView.SetViewRange](nf-printerextension-iprinterqueueview-setviewrange.md) | Sets the range of print jobs being monitored. |
+| [IPrinterQueueView::SetViewRange](nf-printerextension-iprinterqueueview-setviewrange.md) | Sets the range of print jobs being monitored. |
 
 ## Remarks
 
@@ -85,4 +85,4 @@ And also, note that job enumeration starts when the first event handler is added
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterQueueView interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrinterQueueView interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

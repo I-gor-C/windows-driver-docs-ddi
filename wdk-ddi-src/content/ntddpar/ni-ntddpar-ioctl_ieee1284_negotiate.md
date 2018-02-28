@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 893af02d-ba26-4367-b2cc-b35d5baa9473
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: parports.ioctl_ieee1284_negotiate, IOCTL_IEEE1284_NEGOTIATE control code [Parallel Ports], IOCTL_IEEE1284_NEGOTIATE, ntddpar/IOCTL_IEEE1284_NEGOTIATE, cisspd_7d757685-3a5b-47cf-bba9-e7051956ae78.xml
+ms.keywords: IOCTL_IEEE1284_NEGOTIATE, IOCTL_IEEE1284_NEGOTIATE control code [Parallel Ports], cisspd_7d757685-3a5b-47cf-bba9-e7051956ae78.xml, ntddpar/IOCTL_IEEE1284_NEGOTIATE, parports.ioctl_ieee1284_negotiate
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ntddpar.h
-apiname:
+api_name:
 -	IOCTL_IEEE1284_NEGOTIATE
 product: Windows
 targetos: Windows
-req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+req.typenames: OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_IEEE1284_NEGOTIATE IOCTL
@@ -82,7 +82,7 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 ## See Also
 
-<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
+<a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a>
 
 
 
@@ -94,7 +94,7 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 
 
-<a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a>
+<a href="..\ntddpar\ni-ntddpar-ioctl_ieee1284_get_mode.md">IOCTL_IEEE1284_GET_MODE</a>
 
 
 

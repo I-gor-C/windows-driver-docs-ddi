@@ -2,12 +2,38 @@
 UID: NA:wditypes
 ms.assetid: 1d30a1e9-569c-3c34-a668-04e872d0716f
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Wditypes.h header
+
+
+
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+
+Wditypes.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_WDI_CHANNEL_MAPPING_ENTRY structure](ns-wditypes-_wdi_channel_mapping_entry.md) | The WDI_CHANNEL_MAPPING_ENTRY structure defines a channel mapping entry. |
+| [_WDI_DATA_RATE_ENTRY structure](ns-wditypes-_wdi_data_rate_entry.md) | The WDI_DATA_RATE_ENTRY structure defines a data rate entry. |
+| [_WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure](ns-wditypes-_wdi_ethertype_encapsulation_entry.md) | The WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure defines an EtherType encapsulation entry. |
+| [_WDI_TYPE_MIC structure](ns-wditypes-_wdi_type_mic.md) | The WDI_TYPE_MIC structure defines the MIC (802.11r). |
+| [_WDI_TYPE_NONCE structure](ns-wditypes-_wdi_type_nonce.md) | The WDI_TYPE_NONCE structure defines the SNonce or ANonce (802.11r). |
+| [_WDI_TYPE_PMK_NAME structure](ns-wditypes-_wdi_type_pmk_name.md) | The WDI_TYPE_PMK_NAME structure defines the PMKR0Name or PMKR1Name (802.11r). |
+
+## Enumerations
+
+| Title   | Description   |
+| ---- |:----
 
 # wditypes.h header
 

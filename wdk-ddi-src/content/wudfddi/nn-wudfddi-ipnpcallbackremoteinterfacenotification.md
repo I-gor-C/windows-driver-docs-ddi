@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 99d670dd-2358-4f1a-b111-72484bf3132c
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ipnpcallbackremoteinterfacenotification, IPnpCallbackRemoteInterfaceNotification interface, IPnpCallbackRemoteInterfaceNotification interface, described, IPnpCallbackRemoteInterfaceNotification, wudfddi/IPnpCallbackRemoteInterfaceNotification, UMDFDeviceObjectRef_4701eb20-04aa-412f-8511-f44a2590ee5b.xml, umdf.ipnpcallbackremoteinterfacenotification
+ms.keywords: IPnpCallbackRemoteInterfaceNotification, IPnpCallbackRemoteInterfaceNotification interface, IPnpCallbackRemoteInterfaceNotification interface, described, UMDFDeviceObjectRef_4701eb20-04aa-412f-8511-f44a2590ee5b.xml, umdf.ipnpcallbackremoteinterfacenotification, wdf.ipnpcallbackremoteinterfacenotification, wudfddi/IPnpCallbackRemoteInterfaceNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IPnpCallbackRemoteInterfaceNotification
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ A driver's <b>IPnpCallbackRemoteInterfaceNotification</b> interface provides a c
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IPnpCallbackRemoteInterfaceNotification.OnRemoteInterfaceArrival](nf-wudfddi-ipnpcallbackremoteinterfacenotification-onremoteinterfacearrival.md) | A driver's OnRemoteInterfaceArrival event callback function informs the driver when a device interface is available. |
+| [IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival](nf-wudfddi-ipnpcallbackremoteinterfacenotification-onremoteinterfacearrival.md) | A driver's OnRemoteInterfaceArrival event callback function informs the driver when a device interface is available. |
 
 ## Remarks
 

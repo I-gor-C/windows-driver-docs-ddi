@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 4D3DE8AE-99FB-48C8-A2FC-099CA908EC18
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: gpioclx/PCONTROLLER_ATTRIBUTE_FLAGS, _CONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS structure [Parallel Ports], PCONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS, gpioclx/CONTROLLER_ATTRIBUTE_FLAGS, GPIO.controller_attribute_flags, PCONTROLLER_ATTRIBUTE_FLAGS structure pointer [Parallel Ports]
+ms.keywords: "*PCONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS structure [Parallel Ports], GPIO.controller_attribute_flags, PCONTROLLER_ATTRIBUTE_FLAGS, PCONTROLLER_ATTRIBUTE_FLAGS structure pointer [Parallel Ports], _CONTROLLER_ATTRIBUTE_FLAGS, gpioclx/CONTROLLER_ATTRIBUTE_FLAGS, gpioclx/PCONTROLLER_ATTRIBUTE_FLAGS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	Gpioclx.h
-apiname:
+api_name:
 -	CONTROLLER_ATTRIBUTE_FLAGS
 product: Windows
 targetos: Windows
@@ -88,11 +88,7 @@ Some GPIO controllers implement active-both interrupt inputs in hardware. Howeve
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a>
 
 
 
@@ -100,7 +96,15 @@ Some GPIO controllers implement active-both interrupt inputs in hardware. Howeve
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a>
 
 
 
@@ -108,11 +112,7 @@ Some GPIO controllers implement active-both interrupt inputs in hardware. Howeve
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
 
 
 

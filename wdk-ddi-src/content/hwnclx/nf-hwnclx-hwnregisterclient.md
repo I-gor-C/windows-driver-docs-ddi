@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: 69de1551-e41f-4d18-89db-28d190676922
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: hwnclx/HwNRegisterClient, HwNRegisterClient function, HwNRegisterClient, gpiobtn.hwnregisterclient
+ms.keywords: HwNRegisterClient, HwNRegisterClient function, gpiobtn.hwnregisterclient, hwnclx/HwNRegisterClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,24 +29,24 @@ req.type-library:
 req.lib: Mshwnclxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Mshwnclxstub.lib
 -	Mshwnclxstub.dll
-apiname:
+api_name:
 -	HwNRegisterClient
 product: Windows
 targetos: Windows
-req.typenames: "*PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX"
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 
 # HwNRegisterClient function
-Registers the hardware notification client driver and its callback functions with the class extension. This function should be invoked when the client driver is loaded and the <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine is called for initialization. F
+Registers the hardware notification client driver and its callback functions with the class extension. This function should be invoked when the client driver is loaded and the <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine is called for initialization. F
 
 ## Syntax
 

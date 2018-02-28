@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: ac73b23d-7742-43a4-8950-b301bd0ba330
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtinterruptsynchronize, EvtInterruptSynchronize callback function, EvtInterruptSynchronize, EVT_WDF_INTERRUPT_SYNCHRONIZE, EVT_WDF_INTERRUPT_SYNCHRONIZE, wdfinterrupt/EvtInterruptSynchronize, DFInterruptObjectRef_4310d770-645e-48c8-bd33-b9edcc8cb667.xml, kmdf.evtinterruptsynchronize
+ms.keywords: DFInterruptObjectRef_4310d770-645e-48c8-bd33-b9edcc8cb667.xml, EVT_WDF_INTERRUPT_SYNCHRONIZE, EvtInterruptSynchronize, EvtInterruptSynchronize callback function, kmdf.evtinterruptsynchronize, wdf.evtinterruptsynchronize, wdfinterrupt/EvtInterruptSynchronize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "(See Remarks section.)"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfinterrupt.h
-apiname:
+api_name:
 -	EvtInterruptSynchronize
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_INTERRUPT_SYNCHRONIZE function
+# EVT_WDF_INTERRUPT_SYNCHRONIZE callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtInterruptSynchronize</i> event callback function performs operations that must be synchronized with an <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a> callback function.
@@ -141,15 +141,15 @@ The <b>EVT_WDF_INTERRUPT_SYNCHRONIZE</b> function type is defined in the Wdfinte
 
 ## See Also
 
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsynchronize.md">WdfInterruptSynchronize</a>
-
-
-
 <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a>
 
 
 
 <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_config.md">WDF_INTERRUPT_CONFIG</a>
+
+
+
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsynchronize.md">WdfInterruptSynchronize</a>
 
 
 

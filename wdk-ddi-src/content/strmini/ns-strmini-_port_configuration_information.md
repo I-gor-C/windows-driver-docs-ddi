@@ -7,8 +7,8 @@ old-location: storage\port_configuration_information__scsi_.htm
 old-project: storage
 ms.assetid: f3c9d851-d30d-4757-82a3-225ee67528c1
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
-ms.keywords: PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], *PPORT_CONFIGURATION_INFORMATION, srb/_PORT_CONFIGURATION_INFORMATION, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml, srb/PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, storage.port_configuration_information__scsi_, PORT_CONFIGURATION_INFORMATION structure [Storage Devices], _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], _PORT_CONFIGURATION_INFORMATION
+ms.date: 2/24/2018
+ms.keywords: "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION structure [Storage Devices], PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], _PORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], srb/PPORT_CONFIGURATION_INFORMATION, srb/_PORT_CONFIGURATION_INFORMATION, storage.port_configuration_information__scsi_, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	srb.h
-apiname:
+api_name:
 -	PORT_CONFIGURATION_INFORMATION
 product: Windows
 targetos: Windows
@@ -114,7 +114,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 
 `AdapterInterfaceType`
 
-Identifies the I/O bus interface. The OS-specific port driver always sets this member to the value specified by the miniport driver in the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a> structure.
+Identifies the I/O bus interface. The OS-specific port driver always sets this member to the value specified by the miniport driver in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a> structure.
 
 `BusInterruptLevel`
 
@@ -204,23 +204,15 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 ## See Also
 
-<a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
-
-
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
+<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
 
 
 
 <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
 
 
 
@@ -232,7 +224,15 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+
+
+
+<a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a>
+
+
+
+<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
 
 
 
@@ -240,4 +240,4 @@ This means that if the miniport driver needs additional space in either the LUN 
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_PORT_CONFIGURATION_INFORMATION structure%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20_PORT_CONFIGURATION_INFORMATION structure%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

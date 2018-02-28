@@ -2,12 +2,36 @@
 UID: NA:pointofservicecommontypes
 ms.assetid: b4acf337-75d5-37f2-8097-812ec2347de2
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Pointofservicecommontypes.h header
+
+
+
+This header is used by Point of Service (POS). For more information, see
+- [Point of Service (POS)](../_pos/index.md)
+
+Pointofservicecommontypes.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_BarcodeSymbologyAttributesData structure](ns-pointofservicecommontypes-_barcodesymbologyattributesdata.md) | The BarcodeSymbologyAttributesData structure contains the attribute information for a barcode symbology. |
+| [_LineDisplayCursorCoordinates structure](ns-pointofservicecommontypes-_linedisplaycursorcoordinates.md) | This enumeration is not implemented. |
+| [_LineDisplaySizeInPixelsType structure](ns-pointofservicecommontypes-_linedisplaysizeinpixelstype.md) | This structure is not implemented. |
+| [_PosDeviceInformation structure](ns-pointofservicecommontypes-_posdeviceinformation.md) | This structure provides device information as defined in and required by the Unified Point of Service (UPOS) standard. |
+
+## Enumerations
+
+| Title   | Description   |
+| ---- |:----
 
 # pointofservicecommontypes.h header
 

@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: b16dd19f-1a67-4066-9dae-b36ff6f44d43
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: PWHEA_ERROR_RECORD_HEADER_VALIDBITS union pointer [WHEA Drivers and Applications], _WHEA_ERROR_RECORD_HEADER_VALIDBITS, ntddk/WHEA_ERROR_RECORD_HEADER_VALIDBITS, PWHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS union [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_RECORD_HEADER_VALIDBITS, whea.whea_error_record_header_validbits, *PWHEA_ERROR_RECORD_HEADER_VALIDBITS, whearef_66b0c2f7-6fad-4cdb-ac15-f4d942d208e1.xml, WHEA_ERROR_RECORD_HEADER_VALIDBITS
+ms.keywords: "*PWHEA_ERROR_RECORD_HEADER_VALIDBITS, PWHEA_ERROR_RECORD_HEADER_VALIDBITS, PWHEA_ERROR_RECORD_HEADER_VALIDBITS union pointer [WHEA Drivers and Applications], WHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS union [WHEA Drivers and Applications], _WHEA_ERROR_RECORD_HEADER_VALIDBITS, ntddk/PWHEA_ERROR_RECORD_HEADER_VALIDBITS, ntddk/WHEA_ERROR_RECORD_HEADER_VALIDBITS, whea.whea_error_record_header_validbits, whearef_66b0c2f7-6fad-4cdb-ac15-f4d942d208e1.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ntddk.h
-apiname:
+api_name:
 -	WHEA_ERROR_RECORD_HEADER_VALIDBITS
 product: Windows
 targetos: Windows

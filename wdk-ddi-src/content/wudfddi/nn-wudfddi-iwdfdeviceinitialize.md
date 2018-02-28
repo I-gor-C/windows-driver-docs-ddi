@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a776069c-0cbb-4ae9-bf6b-1d300dbcec34
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfdeviceinitialize, IWDFDeviceInitialize interface, IWDFDeviceInitialize interface, described, IWDFDeviceInitialize, wudfddi/IWDFDeviceInitialize, UMDFDeviceObjectRef_b63038ef-0e6e-4417-96de-0c3f5ec1866e.xml, umdf.iwdfdeviceinitialize
+ms.keywords: IWDFDeviceInitialize, IWDFDeviceInitialize interface, IWDFDeviceInitialize interface, described, UMDFDeviceObjectRef_b63038ef-0e6e-4417-96de-0c3f5ec1866e.xml, umdf.iwdfdeviceinitialize, wdf.iwdfdeviceinitialize, wudfddi/IWDFDeviceInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFDeviceInitialize
 product: Windows
 targetos: Windows
@@ -56,14 +56,14 @@ The <b>IWDFDeviceInitialize</b> interface is a helper interface that the framewo
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFDeviceInitialize.AutoForwardCreateCleanupClose](nf-wudfddi-iwdfdeviceinitialize-autoforwardcreatecleanupclose.md) | The AutoForwardCreateCleanupClose method controls when create, cleanup, and close notifications are forwarded to the next lower driver in the device stack. |
-| [wudfddi.IWDFDeviceInitialize.GetPnpCapability](nf-wudfddi-iwdfdeviceinitialize-getpnpcapability.md) | The GetPnpCapability method determines the state of the specified Plug and Play (PnP) capability. |
-| [wudfddi.IWDFDeviceInitialize.RetrieveDeviceInstanceId](nf-wudfddi-iwdfdeviceinitialize-retrievedeviceinstanceid.md) | The RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device. |
-| [wudfddi.IWDFDeviceInitialize.RetrieveDevicePropertyStore](nf-wudfddi-iwdfdeviceinitialize-retrievedevicepropertystore.md) | The RetrieveDevicePropertyStore method retrieves a device property store that clients can read and write device properties through. |
-| [wudfddi.IWDFDeviceInitialize.SetFilter](nf-wudfddi-iwdfdeviceinitialize-setfilter.md) | The SetFilter method sets the property that enables a device as a filter device. |
-| [wudfddi.IWDFDeviceInitialize.SetLockingConstraint](nf-wudfddi-iwdfdeviceinitialize-setlockingconstraint.md) | The SetLockingConstraint method sets the synchronization (or locking) model for callback functions into the driver. |
-| [wudfddi.IWDFDeviceInitialize.SetPnpCapability](nf-wudfddi-iwdfdeviceinitialize-setpnpcapability.md) | The SetPnpCapability method sets the specified Plug and Play (PnP) capability of a device to the specified state. |
-| [wudfddi.IWDFDeviceInitialize.SetPowerPolicyOwnership](nf-wudfddi-iwdfdeviceinitialize-setpowerpolicyownership.md) | The SetPowerPolicyOwnership method sets the ownership of the power policy to a driver or removes ownership from the driver. |
+| [IWDFDeviceInitialize::AutoForwardCreateCleanupClose](nf-wudfddi-iwdfdeviceinitialize-autoforwardcreatecleanupclose.md) | The AutoForwardCreateCleanupClose method controls when create, cleanup, and close notifications are forwarded to the next lower driver in the device stack. |
+| [IWDFDeviceInitialize::GetPnpCapability](nf-wudfddi-iwdfdeviceinitialize-getpnpcapability.md) | The GetPnpCapability method determines the state of the specified Plug and Play (PnP) capability. |
+| [IWDFDeviceInitialize::RetrieveDeviceInstanceId](nf-wudfddi-iwdfdeviceinitialize-retrievedeviceinstanceid.md) | The RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device. |
+| [IWDFDeviceInitialize::RetrieveDevicePropertyStore](nf-wudfddi-iwdfdeviceinitialize-retrievedevicepropertystore.md) | The RetrieveDevicePropertyStore method retrieves a device property store that clients can read and write device properties through. |
+| [IWDFDeviceInitialize::SetFilter](nf-wudfddi-iwdfdeviceinitialize-setfilter.md) | The SetFilter method sets the property that enables a device as a filter device. |
+| [IWDFDeviceInitialize::SetLockingConstraint](nf-wudfddi-iwdfdeviceinitialize-setlockingconstraint.md) | The SetLockingConstraint method sets the synchronization (or locking) model for callback functions into the driver. |
+| [IWDFDeviceInitialize::SetPnpCapability](nf-wudfddi-iwdfdeviceinitialize-setpnpcapability.md) | The SetPnpCapability method sets the specified Plug and Play (PnP) capability of a device to the specified state. |
+| [IWDFDeviceInitialize::SetPowerPolicyOwnership](nf-wudfddi-iwdfdeviceinitialize-setpowerpolicyownership.md) | The SetPowerPolicyOwnership method sets the ownership of the power policy to a driver or removes ownership from the driver. |
 
 ## Remarks
 

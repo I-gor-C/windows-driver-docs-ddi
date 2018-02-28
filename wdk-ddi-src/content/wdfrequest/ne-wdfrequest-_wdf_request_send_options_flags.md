@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 68be1034-62f0-4444-b4c9-097277a7561f
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE, wdfrequest/WDF_REQUEST_SEND_OPTION_SYNCHRONOUS, WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET, WDF_REQUEST_SEND_OPTION_TIMEOUT, wdfrequest/WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE, WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration, wdfrequest/WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE, wdf.wdf_request_send_options_flags, WDF_REQUEST_SEND_OPTION_SYNCHRONOUS, DFRequestObjectRef_0344916f-2437-4c32-9e05-c8204ac4f925.xml, WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT, WDF_REQUEST_SEND_OPTIONS_FLAGS, wdfrequest/WDF_REQUEST_SEND_OPTIONS_FLAGS, wdfrequest/WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET, wdfrequest/WDF_REQUEST_SEND_OPTION_TIMEOUT, kmdf.wdf_request_send_options_flags, _WDF_REQUEST_SEND_OPTIONS_FLAGS, wdfrequest/WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT, WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE
+ms.keywords: DFRequestObjectRef_0344916f-2437-4c32-9e05-c8204ac4f925.xml, WDF_REQUEST_SEND_OPTIONS_FLAGS, WDF_REQUEST_SEND_OPTIONS_FLAGS enumeration, WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE, WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT, WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE, WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET, WDF_REQUEST_SEND_OPTION_SYNCHRONOUS, WDF_REQUEST_SEND_OPTION_TIMEOUT, _WDF_REQUEST_SEND_OPTIONS_FLAGS, kmdf.wdf_request_send_options_flags, wdf.wdf_request_send_options_flags, wdfrequest/WDF_REQUEST_SEND_OPTIONS_FLAGS, wdfrequest/WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE, wdfrequest/WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT, wdfrequest/WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE, wdfrequest/WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET, wdfrequest/WDF_REQUEST_SEND_OPTION_SYNCHRONOUS, wdfrequest/WDF_REQUEST_SEND_OPTION_TIMEOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	wdfrequest.h
-apiname:
+api_name:
 -	WDF_REQUEST_SEND_OPTIONS_FLAGS
 product: Windows
 targetos: Windows
@@ -116,11 +116,11 @@ The driver is sending the I/O request to a remote I/O target, and the driver spe
 
 </li>
 <li>
-The request type is <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WdfRequestTypeCreate</a> and the driver has not set the <a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WdfFileObjectNotRequired</a> flag. (For more information about this situation, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.)
+The request type is <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_type.md">WdfRequestTypeCreate</a> and the driver has not set the <a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WdfFileObjectNotRequired</a> flag. (For more information about this situation, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.)
 
 </li>
 </ul>
-For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_send_options_flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS (UMDF)</a>.
+For the UMDF version of this enumeration, see <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_send_options_flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS (UMDF)</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

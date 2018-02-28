@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: E30A169E-0EC6-4128-B268-5FC1CD37A877
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.evt_vmb_channel_processing_complete, EvtVmbChannelProcessingComplete callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelProcessingComplete, EVT_VMB_CHANNEL_PROCESSING_COMPLETE, EVT_VMB_CHANNEL_PROCESSING_COMPLETE, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessingComplete, PFN_VMB_CHANNEL_PROCESSING_COMPLETE callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESSING_COMPLETE
+ms.keywords: EVT_VMB_CHANNEL_PROCESSING_COMPLETE, EvtVmbChannelProcessingComplete, EvtVmbChannelProcessingComplete callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESSING_COMPLETE, PFN_VMB_CHANNEL_PROCESSING_COMPLETE callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_processing_complete, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessingComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	VmbusKernelModeClientLibApi.h
-apiname:
+api_name:
 -	PFN_VMB_CHANNEL_PROCESSING_COMPLETE
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_VMB_CHANNEL_PROCESSING_COMPLETE function
+# EVT_VMB_CHANNEL_PROCESSING_COMPLETE callback function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <i>EvtVmbChannelProcessingComplete</i> callback function is invoked when a group of packets has been delivered by
@@ -97,11 +97,11 @@ has been configured to defer packet processing to a worker thread.
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md">EvtVmbChannelProcessPacket</a>
-
-
-
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelinitsetprocesspacketcallbacks.md">VmbChannelInitSetProcessPacketCallbacks</a>
+
+
+
+<a href="..\vmbuskernelmodeclientlibapi\nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md">EvtVmbChannelProcessPacket</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b4c17e57-688c-4c76-892c-5c8abbf83f20
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicereleasehardware, EvtDeviceReleaseHardware callback function, EvtDeviceReleaseHardware, EVT_WDF_DEVICE_RELEASE_HARDWARE, EVT_WDF_DEVICE_RELEASE_HARDWARE, wdfdevice/EvtDeviceReleaseHardware, DFDeviceObjectGeneralRef_aaaf477b-f2be-4b26-a607-cb057d976dc1.xml, kmdf.evtdevicereleasehardware
+ms.keywords: DFDeviceObjectGeneralRef_aaaf477b-f2be-4b26-a607-cb057d976dc1.xml, EVT_WDF_DEVICE_RELEASE_HARDWARE, EvtDeviceReleaseHardware, EvtDeviceReleaseHardware callback function, kmdf.evtdevicereleasehardware, wdf.evtdevicereleasehardware, wdfdevice/EvtDeviceReleaseHardware
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceReleaseHardware
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_RELEASE_HARDWARE function
+# EVT_WDF_DEVICE_RELEASE_HARDWARE callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceReleaseHardware</i> event callback function performs operations that are needed when a device is no longer accessible.

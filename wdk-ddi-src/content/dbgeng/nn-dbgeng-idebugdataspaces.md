@@ -4,11 +4,11 @@ title: IDebugDataSpaces
 author: windows-driver-content
 description: IDebugDataSpaces interface
 old-location: debugger\idebugdataspaces.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 9477821c-4f4f-4ea2-9968-d43f87c496b2
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugdataspaces, IDebugDataSpaces interface [Windows Debugging], IDebugDataSpaces interface [Windows Debugging], described, IDebugDataSpaces, dbgeng/IDebugDataSpaces, IDebugDataSpaces_83f3a88c-f7e6-4b5c-a2b2-4e8bccef4281.xml
+ms.date: 2/23/2018
+ms.keywords: IDebugDataSpaces, IDebugDataSpaces interface [Windows Debugging], IDebugDataSpaces interface [Windows Debugging], described, IDebugDataSpaces_83f3a88c-f7e6-4b5c-a2b2-4e8bccef4281.xml, dbgeng/IDebugDataSpaces, debugger.idebugdataspaces
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugDataSpaces
 product: Windows
 targetos: Windows
@@ -53,26 +53,26 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugDataSpaces.CheckLowMemory](nf-dbgeng-idebugdataspaces-checklowmemory.md) | The CheckLowMemory method checks for memory corruption in the low 4 GB of memory. |
-| [dbgeng.IDebugDataSpaces.ReadBusData](nf-dbgeng-idebugdataspaces-readbusdata.md) | The ReadBusData method reads data from a system bus. |
-| [dbgeng.IDebugDataSpaces.ReadControl](nf-dbgeng-idebugdataspaces-readcontrol.md) | The ReadControl method reads implementation-specific system data. |
-| [dbgeng.IDebugDataSpaces.ReadDebuggerData](nf-dbgeng-idebugdataspaces-readdebuggerdata.md) | The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session. |
-| [dbgeng.IDebugDataSpaces.ReadIo](nf-dbgeng-idebugdataspaces-readio.md) | The ReadIo method reads from the system and bus I/O memory. |
-| [dbgeng.IDebugDataSpaces.ReadMsr](nf-dbgeng-idebugdataspaces-readmsr.md) | The ReadMsr method reads a specified Model-Specific Register (MSR). |
-| [dbgeng.IDebugDataSpaces.ReadPhysical](nf-dbgeng-idebugdataspaces-readphysical.md) | The ReadPhysical method reads the target's memory from the specified physical address. |
-| [dbgeng.IDebugDataSpaces.ReadPointersVirtual](nf-dbgeng-idebugdataspaces-readpointersvirtual.md) | The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space. |
-| [dbgeng.IDebugDataSpaces.ReadProcessorSystemData](nf-dbgeng-idebugdataspaces-readprocessorsystemdata.md) | The ReadProcessorSystemData method returns data about the specified processor. |
-| [dbgeng.IDebugDataSpaces.ReadVirtual](nf-dbgeng-idebugdataspaces-readvirtual.md) | The ReadVirtual method reads memory from the target's virtual address space. |
-| [dbgeng.IDebugDataSpaces.ReadVirtualUncached](nf-dbgeng-idebugdataspaces-readvirtualuncached.md) | The ReadVirtualUncached method reads memory from the target's virtual address space. |
-| [dbgeng.IDebugDataSpaces.SearchVirtual](nf-dbgeng-idebugdataspaces-searchvirtual.md) | The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes. |
-| [dbgeng.IDebugDataSpaces.WriteBusData](nf-dbgeng-idebugdataspaces-writebusdata.md) | The WriteBusData method writes data to a system bus. |
-| [dbgeng.IDebugDataSpaces.WriteControl](nf-dbgeng-idebugdataspaces-writecontrol.md) | The WriteControl method writes implementation-specific system data. |
-| [dbgeng.IDebugDataSpaces.WriteIo](nf-dbgeng-idebugdataspaces-writeio.md) | The WriteIo method writes to the system and bus I/O memory. |
-| [dbgeng.IDebugDataSpaces.WriteMsr](nf-dbgeng-idebugdataspaces-writemsr.md) | The WriteMsr method writes a value to the specified Model-Specific Register (MSR). |
-| [dbgeng.IDebugDataSpaces.WritePhysical](nf-dbgeng-idebugdataspaces-writephysical.md) | The WritePhysical method writes data to the specified physical address in the target's memory. |
-| [dbgeng.IDebugDataSpaces.WritePointersVirtual](nf-dbgeng-idebugdataspaces-writepointersvirtual.md) | The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space. |
-| [dbgeng.IDebugDataSpaces.WriteVirtual](nf-dbgeng-idebugdataspaces-writevirtual.md) | The WriteVirtual method writes data to the target's virtual address space. |
-| [dbgeng.IDebugDataSpaces.WriteVirtualUncached](nf-dbgeng-idebugdataspaces-writevirtualuncached.md) | The WriteVirtualUncached method writes data to the target's virtual address space. |
+| [IDebugDataSpaces::CheckLowMemory](nf-dbgeng-idebugdataspaces-checklowmemory.md) | The CheckLowMemory method checks for memory corruption in the low 4 GB of memory. |
+| [IDebugDataSpaces::ReadBusData](nf-dbgeng-idebugdataspaces-readbusdata.md) | The ReadBusData method reads data from a system bus. |
+| [IDebugDataSpaces::ReadControl](nf-dbgeng-idebugdataspaces-readcontrol.md) | The ReadControl method reads implementation-specific system data. |
+| [IDebugDataSpaces::ReadDebuggerData](nf-dbgeng-idebugdataspaces-readdebuggerdata.md) | The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session. |
+| [IDebugDataSpaces::ReadIo](nf-dbgeng-idebugdataspaces-readio.md) | The ReadIo method reads from the system and bus I/O memory. |
+| [IDebugDataSpaces::ReadMsr](nf-dbgeng-idebugdataspaces-readmsr.md) | The ReadMsr method reads a specified Model-Specific Register (MSR). |
+| [IDebugDataSpaces::ReadPhysical](nf-dbgeng-idebugdataspaces-readphysical.md) | The ReadPhysical method reads the target's memory from the specified physical address. |
+| [IDebugDataSpaces::ReadPointersVirtual](nf-dbgeng-idebugdataspaces-readpointersvirtual.md) | The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space. |
+| [IDebugDataSpaces::ReadProcessorSystemData](nf-dbgeng-idebugdataspaces-readprocessorsystemdata.md) | The ReadProcessorSystemData method returns data about the specified processor. |
+| [IDebugDataSpaces::ReadVirtual](nf-dbgeng-idebugdataspaces-readvirtual.md) | The ReadVirtual method reads memory from the target's virtual address space. |
+| [IDebugDataSpaces::ReadVirtualUncached](nf-dbgeng-idebugdataspaces-readvirtualuncached.md) | The ReadVirtualUncached method reads memory from the target's virtual address space. |
+| [IDebugDataSpaces::SearchVirtual](nf-dbgeng-idebugdataspaces-searchvirtual.md) | The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes. |
+| [IDebugDataSpaces::WriteBusData](nf-dbgeng-idebugdataspaces-writebusdata.md) | The WriteBusData method writes data to a system bus. |
+| [IDebugDataSpaces::WriteControl](nf-dbgeng-idebugdataspaces-writecontrol.md) | The WriteControl method writes implementation-specific system data. |
+| [IDebugDataSpaces::WriteIo](nf-dbgeng-idebugdataspaces-writeio.md) | The WriteIo method writes to the system and bus I/O memory. |
+| [IDebugDataSpaces::WriteMsr](nf-dbgeng-idebugdataspaces-writemsr.md) | The WriteMsr method writes a value to the specified Model-Specific Register (MSR). |
+| [IDebugDataSpaces::WritePhysical](nf-dbgeng-idebugdataspaces-writephysical.md) | The WritePhysical method writes data to the specified physical address in the target's memory. |
+| [IDebugDataSpaces::WritePointersVirtual](nf-dbgeng-idebugdataspaces-writepointersvirtual.md) | The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space. |
+| [IDebugDataSpaces::WriteVirtual](nf-dbgeng-idebugdataspaces-writevirtual.md) | The WriteVirtual method writes data to the target's virtual address space. |
+| [IDebugDataSpaces::WriteVirtualUncached](nf-dbgeng-idebugdataspaces-writevirtualuncached.md) | The WriteVirtualUncached method writes data to the target's virtual address space. |
 
 ## Remarks
 
@@ -86,6 +86,10 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
+
+
+
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
 
 
@@ -94,12 +98,8 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
-
-
-
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugDataSpaces interface%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

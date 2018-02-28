@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 07ba6437-655b-417a-87a8-5374812ca4d7
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtioallocateresourcesforreservedrequest, EvtIoAllocateResourcesForReservedRequest callback function, EvtIoAllocateResourcesForReservedRequest, EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST, EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST, wdfio/EvtIoAllocateResourcesForReservedRequest, DFQueueObjectRef_7fafb899-1038-409b-af8e-f45776b18abe.xml, kmdf.evtioallocateresourcesforreservedrequest
+ms.keywords: DFQueueObjectRef_7fafb899-1038-409b-af8e-f45776b18abe.xml, EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST, EvtIoAllocateResourcesForReservedRequest, EvtIoAllocateResourcesForReservedRequest callback function, kmdf.evtioallocateresourcesforreservedrequest, wdf.evtioallocateresourcesforreservedrequest, wdfio/EvtIoAllocateResourcesForReservedRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfio.h
-apiname:
+api_name:
 -	EvtIoAllocateResourcesForReservedRequest
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST function
+# EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST callback function
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtIoAllocateResourcesForReservedRequest</i> callback function allocates request-specific resources that the driver can use to process an I/O request in the future. The framework is pre-allocating the specified request object for future use in low-memory situations.
@@ -154,11 +154,11 @@ The <b>EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST</b> function type is d
 
 
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
-
-
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestisreserved.md">WdfRequestIsReserved</a>
+
+
+
+<a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
 
 
 

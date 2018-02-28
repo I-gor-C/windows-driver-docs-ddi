@@ -7,8 +7,8 @@ old-location: audio\iinterruptsync.htm
 old-project: audio
 ms.assetid: fffdee8e-6298-45b9-94ee-23426598fbee
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iinterruptsync, IInterruptSync interface [Audio Devices], IInterruptSync interface [Audio Devices], described, IInterruptSync, portcls/IInterruptSync, audmp-routines_5b5b2127-b0d5-48de-9840-2cdffa0bea6a.xml
+ms.date: 2/22/2018
+ms.keywords: IInterruptSync, IInterruptSync interface [Audio Devices], IInterruptSync interface [Audio Devices], described, audio.iinterruptsync, audmp-routines_5b5b2127-b0d5-48de-9840-2cdffa0bea6a.xml, portcls/IInterruptSync
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IInterruptSync
 product: Windows
 targetos: Windows
@@ -75,11 +75,11 @@ For more information, see <a href="https://msdn.microsoft.com/c9e228e0-6178-442d
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IInterruptSync.CallSynchronizedRoutine](nf-portcls-iinterruptsync-callsynchronizedroutine.md) | The CallSynchronizedRoutine method calls a routine that is not an interrupt service routine (ISR) but whose execution needs to be synchronized with ISRs. |
-| [portcls.IInterruptSync.Connect](nf-portcls-iinterruptsync-connect.md) | The Connect method connects the synchronization object to the interrupt. |
-| [portcls.IInterruptSync.Disconnect](nf-portcls-iinterruptsync-disconnect.md) | The Disconnect method disconnects the synchronization object from the interrupt. |
-| [portcls.IInterruptSync.GetKInterrupt](nf-portcls-iinterruptsync-getkinterrupt.md) | The GetKInterrupt method gets a WDM interrupt object from a port-class synchronization object. |
-| [portcls.IInterruptSync.RegisterServiceRoutine](nf-portcls-iinterruptsync-registerserviceroutine.md) | The RegisterServiceRoutine method registers an interrupt service routine (ISR) that is to be called when an interrupt occurs. |
+| [IInterruptSync::CallSynchronizedRoutine](nf-portcls-iinterruptsync-callsynchronizedroutine.md) | The CallSynchronizedRoutine method calls a routine that is not an interrupt service routine (ISR) but whose execution needs to be synchronized with ISRs. |
+| [IInterruptSync::Connect](nf-portcls-iinterruptsync-connect.md) | The Connect method connects the synchronization object to the interrupt. |
+| [IInterruptSync::Disconnect](nf-portcls-iinterruptsync-disconnect.md) | The Disconnect method disconnects the synchronization object from the interrupt. |
+| [IInterruptSync::GetKInterrupt](nf-portcls-iinterruptsync-getkinterrupt.md) | The GetKInterrupt method gets a WDM interrupt object from a port-class synchronization object. |
+| [IInterruptSync::RegisterServiceRoutine](nf-portcls-iinterruptsync-registerserviceroutine.md) | The RegisterServiceRoutine method registers an interrupt service routine (ISR) that is to be called when an interrupt occurs. |
 
 ## Remarks
 

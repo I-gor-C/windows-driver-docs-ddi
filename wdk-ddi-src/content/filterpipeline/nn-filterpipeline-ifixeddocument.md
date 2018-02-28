@@ -7,8 +7,8 @@ old-location: print\ifixeddocument.htm
 old-project: print
 ms.assetid: 3f9f64a1-8681-4b70-8cdc-7c944912f767
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.ifixeddocument, IFixedDocument interface [Print Devices], IFixedDocument interface [Print Devices], described, IFixedDocument, filterpipeline/IFixedDocument, filterpipeline_f295da8e-1444-40c4-8ecf-e3aadc1d324f.xml
+ms.date: 2/23/2018
+ms.keywords: IFixedDocument, IFixedDocument interface [Print Devices], IFixedDocument interface [Print Devices], described, filterpipeline/IFixedDocument, filterpipeline_f295da8e-1444-40c4-8ecf-e3aadc1d324f.xml, print.ifixeddocument
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IFixedDocument
 product: Windows
 targetos: Windows
@@ -53,9 +53,9 @@ The <b>IFixedDocument</b> interface represents a fixed document for an XPS docum
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IFixedDocument.GetPrintTicket](nf-filterpipeline-ifixeddocument-getprintticket.md) | The GetPrintTicket method gets the print ticket object for the fixed document. |
-| [filterpipeline.IFixedDocument.GetUri](nf-filterpipeline-ifixeddocument-geturi.md) | The GetUri method gets the URI of the fixed document. |
-| [filterpipeline.IFixedDocument.SetPrintTicket](nf-filterpipeline-ifixeddocument-setprintticket.md) | The SetPrintTicket method inserts a print ticket into the fixed document. |
+| [IFixedDocument::GetPrintTicket](nf-filterpipeline-ifixeddocument-getprintticket.md) | The GetPrintTicket method gets the print ticket object for the fixed document. |
+| [IFixedDocument::GetUri](nf-filterpipeline-ifixeddocument-geturi.md) | The GetUri method gets the URI of the fixed document. |
+| [IFixedDocument::SetPrintTicket](nf-filterpipeline-ifixeddocument-setprintticket.md) | The SetPrintTicket method inserts a print ticket into the fixed document. |
 
 ## Remarks
 

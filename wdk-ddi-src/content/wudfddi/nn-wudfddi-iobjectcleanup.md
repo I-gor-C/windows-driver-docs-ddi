@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 5e465c90-3290-4c89-bf47-521280c0fe5c
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iobjectcleanup, IObjectCleanup interface, IObjectCleanup interface, described, IObjectCleanup, wudfddi/IObjectCleanup, UMDFBaseObjectRef_4e434f46-a62e-4410-b8ed-663ab59c89dd.xml, umdf.iobjectcleanup
+ms.keywords: IObjectCleanup, IObjectCleanup interface, IObjectCleanup interface, described, UMDFBaseObjectRef_4e434f46-a62e-4410-b8ed-663ab59c89dd.xml, umdf.iobjectcleanup, wdf.iobjectcleanup, wudfddi/IObjectCleanup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IObjectCleanup
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ Any driver that stores a reference-counted COM interface to a WDF object must su
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IObjectCleanup.OnCleanup](nf-wudfddi-iobjectcleanup-oncleanup.md) | The OnCleanup method releases any references to a WDF object to prevent interface leakage. |
+| [IObjectCleanup::OnCleanup](nf-wudfddi-iobjectcleanup-oncleanup.md) | The OnCleanup method releases any references to a WDF object to prevent interface leakage. |
 
 ## Remarks
 

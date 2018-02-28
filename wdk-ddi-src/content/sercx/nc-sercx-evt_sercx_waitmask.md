@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 41F60807-5A00-4B0E-A57D-70D25C73F575
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercxwaitmask, EvtSerCxWaitmask callback function [Serial Ports], EvtSerCxWaitmask, EVT_SERCX_WAITMASK, EVT_SERCX_WAITMASK, 1/EvtSerCxWaitmask
+ms.keywords: 1/EvtSerCxWaitmask, EVT_SERCX_WAITMASK, EvtSerCxWaitmask, EvtSerCxWaitmask callback function [Serial Ports], serports.evtsercxwaitmask
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	1.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCxWaitmask
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX_WAITMASK function
+# EVT_SERCX_WAITMASK callback function
 The <i>EvtSerCxWaitmask</i> event callback function configures the serial controller to monitor the events in a wait mask, which is a bitmask value that specifies a set of hardware events.
 
 ## Syntax
@@ -144,10 +144,6 @@ For more information about SDV requirements for function declarations, see <a hr
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
-
-
-
 <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 
 
@@ -156,15 +152,19 @@ For more information about SDV requirements for function declarations, see <a hr
 
 
 
+<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
+
+
+
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>
-
-
-
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
+
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>
 
 
 

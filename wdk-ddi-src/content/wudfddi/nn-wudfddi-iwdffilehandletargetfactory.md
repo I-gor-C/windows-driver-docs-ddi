@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: b4754176-53a2-4ee4-a441-5d9a4a4a17e2
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdffilehandletargetfactory, IWDFFileHandleTargetFactory interface, IWDFFileHandleTargetFactory interface, described, IWDFFileHandleTargetFactory, wudfddi/IWDFFileHandleTargetFactory, UMDFDeviceObjectRef_01a7fcc5-c259-4bad-b44c-9a20eeae1751.xml, umdf.iwdffilehandletargetfactory
+ms.keywords: IWDFFileHandleTargetFactory, IWDFFileHandleTargetFactory interface, IWDFFileHandleTargetFactory interface, described, UMDFDeviceObjectRef_01a7fcc5-c259-4bad-b44c-9a20eeae1751.xml, umdf.iwdffilehandletargetfactory, wdf.iwdffilehandletargetfactory, wudfddi/IWDFFileHandleTargetFactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFFileHandleTargetFactory
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IWDFFileHandleTargetFactory</b> interface is a factory interface that is 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFFileHandleTargetFactory.CreateFileHandleTarget](nf-wudfddi-iwdffilehandletargetfactory-createfilehandletarget.md) | The CreateFileHandleTarget method creates a file-handle-based I/O target object. |
+| [IWDFFileHandleTargetFactory::CreateFileHandleTarget](nf-wudfddi-iwdffilehandletargetfactory-createfilehandletarget.md) | The CreateFileHandleTarget method creates a file-handle-based I/O target object. |
 
 ## Remarks
 

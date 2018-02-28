@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: efb33bc5-2a9b-40c7-9584-c762daf016f6
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackdeviceiocontrol, IQueueCallbackDeviceIoControl interface, IQueueCallbackDeviceIoControl interface, described, IQueueCallbackDeviceIoControl, wudfddi/IQueueCallbackDeviceIoControl, UMDFQueueObjectRef_43ec96af-39ec-4d9c-89bd-c8d08bec3999.xml, umdf.iqueuecallbackdeviceiocontrol
+ms.keywords: IQueueCallbackDeviceIoControl, IQueueCallbackDeviceIoControl interface, IQueueCallbackDeviceIoControl interface, described, UMDFQueueObjectRef_43ec96af-39ec-4d9c-89bd-c8d08bec3999.xml, umdf.iqueuecallbackdeviceiocontrol, wdf.iqueuecallbackdeviceiocontrol, wudfddi/IQueueCallbackDeviceIoControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackDeviceIoControl
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ An I/O queue object notifies a driver when a device I/O control request is avail
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackDeviceIoControl.OnDeviceIoControl](nf-wudfddi-iqueuecallbackdeviceiocontrol-ondeviceiocontrol.md) | The OnDeviceIoControl method is called to handle a device I/O control request when an application performs a specific operation on a device through the Microsoft Win32 OnDeviceIoControl function. |
+| [IQueueCallbackDeviceIoControl::OnDeviceIoControl](nf-wudfddi-iqueuecallbackdeviceiocontrol-ondeviceiocontrol.md) | The OnDeviceIoControl method is called to handle a device I/O control request when an application performs a specific operation on a device through the Microsoft Win32 OnDeviceIoControl function. |
 
 ## Remarks
 

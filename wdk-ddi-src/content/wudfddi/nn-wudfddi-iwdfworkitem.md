@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: F9EDA26E-92E0-4936-87B7-E1E2A02A9D96
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfworkitem, IWDFWorkItem interface, IWDFWorkItem interface, described, IWDFWorkItem, wudfddi/IWDFWorkItem, umdf.iwdfworkitem
+ms.keywords: IWDFWorkItem, IWDFWorkItem interface, IWDFWorkItem interface, described, umdf.iwdfworkitem, wdf.iwdfworkitem, wudfddi/IWDFWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFWorkItem
 product: Windows
 targetos: Windows
@@ -56,9 +56,9 @@ This interface exposes a work item object.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFWorkItem.Enqueue](nf-wudfddi-iwdfworkitem-enqueue.md) | The Enqueue method adds this interface's framework work-item object to the system's work-item queue. |
-| [wudfddi.IWDFWorkItem.Flush](nf-wudfddi-iwdfworkitem-flush.md) | The Flush method returns after this interface's work item has been serviced. |
-| [wudfddi.IWDFWorkItem.GetParentObject](nf-wudfddi-iwdfworkitem-getparentobject.md) | The GetParentObject method returns the parent framework object of this interface's work item. |
+| [IWDFWorkItem::Enqueue](nf-wudfddi-iwdfworkitem-enqueue.md) | The Enqueue method adds this interface's framework work-item object to the system's work-item queue. |
+| [IWDFWorkItem::Flush](nf-wudfddi-iwdfworkitem-flush.md) | The Flush method returns after this interface's work item has been serviced. |
+| [IWDFWorkItem::GetParentObject](nf-wudfddi-iwdfworkitem-getparentobject.md) | The GetParentObject method returns the parent framework object of this interface's work item. |
 
 ## Remarks
 

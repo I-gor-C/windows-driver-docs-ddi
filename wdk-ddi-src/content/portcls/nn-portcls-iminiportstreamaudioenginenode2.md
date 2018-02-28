@@ -7,8 +7,8 @@ old-location: audio\iminiportstreamaudioenginenode2.htm
 old-project: audio
 ms.assetid: 38888C17-31FC-47F4-A49B-A46A9DF962AF
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportstreamaudioenginenode2, IMiniportStreamAudioEngineNode2 interface [Audio Devices], IMiniportStreamAudioEngineNode2 interface [Audio Devices], described, IMiniportStreamAudioEngineNode2, portcls/IMiniportStreamAudioEngineNode2
+ms.date: 2/22/2018
+ms.keywords: IMiniportStreamAudioEngineNode2, IMiniportStreamAudioEngineNode2 interface [Audio Devices], IMiniportStreamAudioEngineNode2 interface [Audio Devices], described, audio.iminiportstreamaudioenginenode2, portcls/IMiniportStreamAudioEngineNode2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Portcls.h
-apiname:
+api_name:
 -	IMiniportStreamAudioEngineNode2
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ The <b>IMiniportStreamAudioEngineNode2</b> interface allows an audio miniport dr
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportStreamAudioEngineNode2.SetStreamCurrentWritePositionForLastBuffer](nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer.md) | Sets the current cursor position in the last audio data stream that was written to the audio buffer. |
+| [IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer](nf-portcls-iminiportstreamaudioenginenode2-setstreamcurrentwritepositionforlastbuffer.md) | Sets the current cursor position in the last audio data stream that was written to the audio buffer. |
 
 ## Remarks
 

@@ -4,11 +4,11 @@ title: IDebugClient6
 author: windows-driver-content
 description: This interface supports event context callbacks.
 old-location: debugger\idebugclient6.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 9F8DFF33-DE07-4061-9A9E-3C8172F75EB5
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugclient6, IDebugClient6 interface [Windows Debugging], IDebugClient6 interface [Windows Debugging], described, IDebugClient6, dbgeng/IDebugClient6
+ms.date: 2/23/2018
+ms.keywords: IDebugClient6, IDebugClient6 interface [Windows Debugging], IDebugClient6 interface [Windows Debugging], described, dbgeng/IDebugClient6, debugger.idebugclient6
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugClient6
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ This interface supports event context callbacks.
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugClient6.SetEventContextCallbacks](nf-dbgeng-idebugclient6-seteventcontextcallbacks.md) | Registers an event callbacks object with this client. |
+| [IDebugClient6::SetEventContextCallbacks](nf-dbgeng-idebugclient6-seteventcontextcallbacks.md) | Registers an event callbacks object with this client. |
 
 ## Remarks
 

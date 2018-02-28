@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: DC73A00D-F7FA-492A-ABAF-04A5CFD85881
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: GPIO.client_releasecontroller, CLIENT_ReleaseController callback function [Parallel Ports], CLIENT_ReleaseController, GPIO_CLIENT_RELEASE_CONTROLLER, GPIO_CLIENT_RELEASE_CONTROLLER, gpioclx/CLIENT_ReleaseController
+ms.keywords: CLIENT_ReleaseController, CLIENT_ReleaseController callback function [Parallel Ports], GPIO.client_releasecontroller, GPIO_CLIENT_RELEASE_CONTROLLER, gpioclx/CLIENT_ReleaseController
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,22 +29,22 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Gpioclx.h
-apiname:
+api_name:
 -	CLIENT_ReleaseController
 product: Windows
 targetos: Windows
-req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+req.typenames: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
 ---
 
 
-# GPIO_CLIENT_RELEASE_CONTROLLER function
+# GPIO_CLIENT_RELEASE_CONTROLLER callback function
 The <i>CLIENT_ReleaseController</i> event callback function performs operations that are needed when the general-purpose I/O (GPIO) controller device is no longer accessible.
 
 ## Syntax
@@ -133,11 +133,11 @@ The GPIO_CLIENT_RELEASE_CONTROLLER function type is defined in the Gpioclx.h hea
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
 
 
 

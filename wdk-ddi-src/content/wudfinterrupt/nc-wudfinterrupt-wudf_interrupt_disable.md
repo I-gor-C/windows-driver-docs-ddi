@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3ADBD4C2-075E-4988-BF13-EB0C3E0C02BF
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.oninterruptdisable, OnInterruptDisable callback function, OnInterruptDisable, WUDF_INTERRUPT_DISABLE, WUDF_INTERRUPT_DISABLE, wudfinterrupt/OnInterruptDisable, umdf.oninterruptdisable
+ms.keywords: OnInterruptDisable, OnInterruptDisable callback function, WUDF_INTERRUPT_DISABLE, umdf.oninterruptdisable, wdf.oninterruptdisable, wudfinterrupt/OnInterruptDisable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wudfinterrupt.h
-apiname:
+api_name:
 -	OnInterruptDisable
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# WUDF_INTERRUPT_DISABLE function
+# WUDF_INTERRUPT_DISABLE callback function
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 A driver's <i>OnInterruptDisable</i> event callback function disables a specified hardware interrupt.
@@ -157,15 +157,15 @@ Then, implement your callback function as follows:
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice::CreateInterrupt</a>
-
-
-
 <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interrupt_enable.md">OnInterruptEnable</a>
 
 
 
 <a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
+
+
+
+<a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice::CreateInterrupt</a>
 
 
 

@@ -7,8 +7,8 @@ old-location: stream\iksqualityforwarder.htm
 old-project: stream
 ms.assetid: 1f0ebadc-4a6c-4d57-ba96-936ce138142b
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.iksqualityforwarder, IKsQualityForwarder interface [Streaming Media Devices], IKsQualityForwarder interface [Streaming Media Devices], described, IKsQualityForwarder, ksproxy/IKsQualityForwarder, ksproxy_ed147fca-8a84-407c-861a-f33625d90bc7.xml
+ms.date: 2/23/2018
+ms.keywords: IKsQualityForwarder, IKsQualityForwarder interface [Streaming Media Devices], IKsQualityForwarder interface [Streaming Media Devices], described, ksproxy/IKsQualityForwarder, ksproxy_ed147fca-8a84-407c-861a-f33625d90bc7.xml, stream.iksqualityforwarder
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Ksproxy.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
-apiname:
+api_name:
 -	IKsQualityForwarder
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="..\
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsQualityForwarder.KsFlushClient](nf-ksproxy-iksqualityforwarder-ksflushclient.md) | The KsFlushClient method flushes information from a pin. |
+| [IKsQualityForwarder::KsFlushClient](nf-ksproxy-iksqualityforwarder-ksflushclient.md) | The KsFlushClient method flushes information from a pin. |
 
 ## Remarks
 

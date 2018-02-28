@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ed9b6ad1-059b-47d9-b1f7-10d498c5d2d4
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportcodeletevc, MiniportCoDeleteVc callback function [Network Drivers Starting with Windows Vista], MiniportCoDeleteVc, MINIPORT_CO_DELETE_VC, MINIPORT_CO_DELETE_VC, ndis/MiniportCoDeleteVc, condis_miniport_ref_4a19285a-9595-4ea0-bf86-ec69474a9716.xml
+ms.keywords: MINIPORT_CO_DELETE_VC, MiniportCoDeleteVc, MiniportCoDeleteVc callback function [Network Drivers Starting with Windows Vista], condis_miniport_ref_4a19285a-9595-4ea0-bf86-ec69474a9716.xml, ndis/MiniportCoDeleteVc, netvista.miniportcodeletevc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportCoDeleteVc
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_CO_DELETE_VC function
+# MINIPORT_CO_DELETE_VC callback function
 The 
   <i>MiniportCoDeleteVc</i> function is required for connection-oriented miniports. 
   <i>MiniportCoDeleteVc</i> indicates that a VC is being torn down and deleted by NDIS.

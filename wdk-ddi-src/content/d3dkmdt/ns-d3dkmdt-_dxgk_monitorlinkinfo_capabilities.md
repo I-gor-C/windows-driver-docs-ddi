@@ -7,8 +7,8 @@ old-location: display\dxgk_monitorlinkinfo_capabilities.htm
 old-project: display
 ms.assetid: 9838DF74-6561-40DB-A745-A15005B97AAC
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: "_DXGK_MONITORLINKINFO_CAPABILITIES, PDXGK_MONITORLINKINFO_CAPABILITIES, display.dxgk_monitorlinkinfo_capabilities, DXGK_MONITORLINKINFO_CAPABILITIES union [Display Devices], *PDXGK_MONITORLINKINFO_CAPABILITIES, d3dkmdt/PDXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES, d3dkmdt/DXGK_MONITORLINKINFO_CAPABILITIES, PDXGK_MONITORLINKINFO_CAPABILITIES union pointer [Display Devices]"
+ms.date: 2/24/2018
+ms.keywords: "*PDXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES union [Display Devices], PDXGK_MONITORLINKINFO_CAPABILITIES, PDXGK_MONITORLINKINFO_CAPABILITIES union pointer [Display Devices], _DXGK_MONITORLINKINFO_CAPABILITIES, d3dkmdt/DXGK_MONITORLINKINFO_CAPABILITIES, d3dkmdt/PDXGK_MONITORLINKINFO_CAPABILITIES, display.dxgk_monitorlinkinfo_capabilities"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	d3dkmdt.h
-apiname:
+api_name:
 -	DXGK_MONITORLINKINFO_CAPABILITIES
 product: Windows
 targetos: Windows

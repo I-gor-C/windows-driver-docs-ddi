@@ -29,14 +29,14 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	fltmgr.sys
-apiname:
+api_name:
 -	FltReferenceContext
 product: Windows
 targetos: Windows
@@ -87,14 +87,6 @@ To allocate a new context, call <a href="..\fltkernel\nf-fltkernel-fltallocateco
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 
@@ -103,11 +95,11 @@ To allocate a new context, call <a href="..\fltkernel\nf-fltkernel-fltallocateco
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+
+
+<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
 
 
 
@@ -115,7 +107,15 @@ To allocate a new context, call <a href="..\fltkernel\nf-fltkernel-fltallocateco
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
 
 
 

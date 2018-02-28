@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 9A740524-0FC1-4585-8059-F678D4777F66
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.UpdateNetBufferListDestinations, UpdateNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], UpdateNetBufferListDestinations, NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS, NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS, ndis/UpdateNetBufferListDestinations
+ms.keywords: NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS, UpdateNetBufferListDestinations, UpdateNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], ndis/UpdateNetBufferListDestinations, netvista.UpdateNetBufferListDestinations
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	UpdateNetBufferListDestinations
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS function
+# NDIS_SWITCH_UPDATE_NET_BUFFER_LIST_DESTINATIONS callback function
 The Hyper-V extensible switch extension calls the <i>UpdateNetBufferListDestinations</i> function to commit modifications that the extension made to a packet that contains multiple extensible switch destination ports. The function saves these modifications to the out-of-band (OOB) extensible switch forwarding context of the packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 ## Syntax
@@ -133,27 +133,7 @@ For more information about the extensible switch forwarding context, see <a href
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598264">OID_SWITCH_NIC_DELETE</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
-
-
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-
-
 <a href="https://msdn.microsoft.com/55B5C0B4-5359-410B-9110-79EDDBA3010C">GetNetBufferListDestinations</a>
-
-
-
-<a href="..\ndis\ns-ndis-_ndis_switch_port_destination.md">NDIS_SWITCH_PORT_DESTINATION</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
 
 
 
@@ -161,7 +141,27 @@ For more information about the extensible switch forwarding context, see <a href
 
 
 
+<a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisfgetoptionalswitchhandlers.md">NdisFGetOptionalSwitchHandlers</a>
+
+
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598264">OID_SWITCH_NIC_DELETE</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_switch_port_destination.md">NDIS_SWITCH_PORT_DESTINATION</a>
 
 
 

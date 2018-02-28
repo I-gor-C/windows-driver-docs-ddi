@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: FF89A868-1289-4D1D-BFA8-17E65ED7F8C4
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: nfpdrivers.ioctl_nfp_set_payload, IOCTL_NFP_SET_PAYLOAD control code [Near-Field Proximity Drivers], IOCTL_NFP_SET_PAYLOAD, nfpdev/IOCTL_NFP_SET_PAYLOAD
+ms.keywords: IOCTL_NFP_SET_PAYLOAD, IOCTL_NFP_SET_PAYLOAD control code [Near-Field Proximity Drivers], nfpdev/IOCTL_NFP_SET_PAYLOAD, nfpdrivers.ioctl_nfp_set_payload
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	nfpdev.h
-apiname:
+api_name:
 -	IOCTL_NFP_SET_PAYLOAD
 product: Windows
 targetos: Windows
@@ -114,11 +114,11 @@ If a device is currently proximate when this IOCTL is successfully completed, th
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) overall design guide</a>
+
+
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
 
 
 

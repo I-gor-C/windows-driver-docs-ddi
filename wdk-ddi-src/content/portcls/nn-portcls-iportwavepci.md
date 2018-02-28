@@ -7,8 +7,8 @@ old-location: audio\iportwavepci.htm
 old-project: audio
 ms.assetid: a3489a6a-e993-4f89-9242-714323ec64ec
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportwavepci, IPortWavePci interface [Audio Devices], IPortWavePci interface [Audio Devices], described, IPortWavePci, portcls/IPortWavePci, audmp-routines_4948783a-44c9-42c3-ba67-c3c66a0a2951.xml
+ms.date: 2/22/2018
+ms.keywords: IPortWavePci, IPortWavePci interface [Audio Devices], IPortWavePci interface [Audio Devices], described, audio.iportwavepci, audmp-routines_4948783a-44c9-42c3-ba67-c3c66a0a2951.xml, portcls/IPortWavePci
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortWavePci
 product: Windows
 targetos: Windows
@@ -55,8 +55,8 @@ An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportWa
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortWavePci.NewMasterDmaChannel](nf-portcls-iportwavepci-newmasterdmachannel.md) | The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel. |
-| [portcls.IPortWavePci.Notify](nf-portcls-iportwavepci-notify.md) | The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred. |
+| [IPortWavePci::NewMasterDmaChannel](nf-portcls-iportwavepci-newmasterdmachannel.md) | The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel. |
+| [IPortWavePci::Notify](nf-portcls-iportwavepci-notify.md) | The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred. |
 
 ## Remarks
 

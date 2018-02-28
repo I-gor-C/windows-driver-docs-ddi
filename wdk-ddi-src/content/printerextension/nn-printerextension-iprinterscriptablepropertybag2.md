@@ -7,8 +7,8 @@ old-location: print\iprinterscriptablepropertybag2.htm
 old-project: print
 ms.assetid: 97586B8D-D070-4DF1-AECE-50EB4D28414B
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprinterscriptablepropertybag2, IPrinterScriptablePropertyBag2 interface [Print Devices], IPrinterScriptablePropertyBag2 interface [Print Devices], described, IPrinterScriptablePropertyBag2, printerextension/IPrinterScriptablePropertyBag2
+ms.date: 2/23/2018
+ms.keywords: IPrinterScriptablePropertyBag2, IPrinterScriptablePropertyBag2 interface [Print Devices], IPrinterScriptablePropertyBag2 interface [Print Devices], described, print.iprinterscriptablepropertybag2, printerextension/IPrinterScriptablePropertyBag2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrinterScriptablePropertyBag2
 -	IPrinterScriptablePropertyBag2.GetReadStreamAsXML
 product: Windows
@@ -55,7 +55,7 @@ req.product: Windows 10 or later.
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrinterScriptablePropertyBag2.GetReadStreamAsXML](nf-printerextension-iprinterscriptablepropertybag2-getreadstreamasxml.md) | "." |
+| [IPrinterScriptablePropertyBag2::GetReadStreamAsXML](nf-printerextension-iprinterscriptablepropertybag2-getreadstreamasxml.md) | "." |
 
 ## Remarks
 

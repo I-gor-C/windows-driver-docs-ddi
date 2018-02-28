@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8f57c3b3-2dcf-44a3-a3c2-c9585bdfa253
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdeviced0exitpreinterruptsdisabled, EvtDeviceD0ExitPreInterruptsDisabled callback function, EvtDeviceD0ExitPreInterruptsDisabled, EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED, EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED, wdfdevice/EvtDeviceD0ExitPreInterruptsDisabled, DFDeviceObjectGeneralRef_f10df6b2-b5ef-49ad-8333-9289c164ea40.xml, kmdf.evtdeviced0exitpreinterruptsdisabled
+ms.keywords: DFDeviceObjectGeneralRef_f10df6b2-b5ef-49ad-8333-9289c164ea40.xml, EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED, EvtDeviceD0ExitPreInterruptsDisabled, EvtDeviceD0ExitPreInterruptsDisabled callback function, kmdf.evtdeviced0exitpreinterruptsdisabled, wdf.evtdeviced0exitpreinterruptsdisabled, wdfdevice/EvtDeviceD0ExitPreInterruptsDisabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceD0ExitPreInterruptsDisabled
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED function
+# EVT_WDF_DEVICE_D0_EXIT_PRE_INTERRUPTS_DISABLED callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceD0ExitPreInterruptsDisabled</i> event callback function performs device-specific operations that are required before the driver disables the device's hardware interrupts.
@@ -70,7 +70,7 @@ A handle to a framework device object.
 
 `TargetState`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the device power state that the device is about to enter.
+A <a href="..\wdfdevice\ne-wdfdevice-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the device power state that the device is about to enter.
 
 
 ## Return Value

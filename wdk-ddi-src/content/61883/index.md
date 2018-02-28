@@ -2,7 +2,7 @@
 UID: NA:61883
 ms.assetid: e401eb24-793e-3800-b0b7-55496f44fbb8
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -24,13 +24,13 @@ ms.topic: portal
 | [IOCTL_61883_CLASS](ni-61883-ioctl_61883_class.md) | An IEC-61883 client driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP with IoControlCode IOCTL_61883_CLASS to communicate with 1394 driver stack using the IEC-61883 protocol. |
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PBUS_RESET_ROUTINE](nc-61883-pbus_reset_routine.md) | This is a caller-supplied function to be called by the protocol driver when the 1394 bus is reset. |
 | [PCMP_MONITOR_ROUTINE](nc-61883-pcmp_monitor_routine.md) | This routine is called for plug monitoring. |
 | [PCMP_NOTIFY_ROUTINE](nc-61883-pcmp_notify_routine.md) | This routine is called for plug notification. |
-
 
 
 ## Structures

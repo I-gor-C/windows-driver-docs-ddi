@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 50e04b5a-e430-484c-aabb-cc7b9ecb53b0
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportadddevice, MiniportAddDevice callback function [Network Drivers Starting with Windows Vista], MiniportAddDevice, MINIPORT_ADD_DEVICE, MINIPORT_ADD_DEVICE, ndis/MiniportAddDevice, ndis_msix_ref_60df66e2-2e17-4bd1-8793-8310326d883d.xml
+ms.keywords: MINIPORT_ADD_DEVICE, MiniportAddDevice, MiniportAddDevice callback function [Network Drivers Starting with Windows Vista], ndis/MiniportAddDevice, ndis_msix_ref_60df66e2-2e17-4bd1-8793-8310326d883d.xml, netvista.miniportadddevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportAddDevice
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_ADD_DEVICE function
+# MINIPORT_ADD_DEVICE callback function
 The 
    <i>MiniportAddDevice</i> function enables a miniport driver to establish a context area
    for an added device.
@@ -230,7 +230,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
 
 
@@ -239,7 +239,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
+
+
+
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
+   NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
+
+
+
+<a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
+   IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
 
 
@@ -247,29 +261,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_remove_device.md">MiniportRemoveDevice</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_pnp_irp.md">MiniportStartDevice</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559452(d=robot)">
    MiniportFilterResourceRequirements</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
-
-
-
-<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
-   NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: eae6f032-2f31-43e1-9ac0-38ccc4840580
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.idriverentry, IDriverEntry interface, IDriverEntry interface, described, IDriverEntry, wudfddi/IDriverEntry, UMDFDriverObjectRef_83709367-02f2-433f-a20b-b98eff736657.xml, umdf.idriverentry
+ms.keywords: IDriverEntry, IDriverEntry interface, IDriverEntry interface, described, UMDFDriverObjectRef_83709367-02f2-433f-a20b-b98eff736657.xml, umdf.idriverentry, wdf.idriverentry, wudfddi/IDriverEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IDriverEntry
 product: Windows
 targetos: Windows
@@ -56,9 +56,9 @@ The <b>IDriverEntry</b> interface exposes the user-mode driver's main entry and 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IDriverEntry.OnDeinitialize](nf-wudfddi-idriverentry-ondeinitialize.md) | The OnDeinitialize method performs any operations that are necessary before a system unloads a driver. |
-| [wudfddi.IDriverEntry.OnDeviceAdd](nf-wudfddi-idriverentry-ondeviceadd.md) | The OnDeviceAdd method adds a new device to a system. |
-| [wudfddi.IDriverEntry.OnInitialize](nf-wudfddi-idriverentry-oninitialize.md) | The OnInitialize method performs any operations that are necessary to initialize a driver. |
+| [IDriverEntry::OnDeinitialize](nf-wudfddi-idriverentry-ondeinitialize.md) | The OnDeinitialize method performs any operations that are necessary before a system unloads a driver. |
+| [IDriverEntry::OnDeviceAdd](nf-wudfddi-idriverentry-ondeviceadd.md) | The OnDeviceAdd method adds a new device to a system. |
+| [IDriverEntry::OnInitialize](nf-wudfddi-idriverentry-oninitialize.md) | The OnInitialize method performs any operations that are necessary to initialize a driver. |
 
 ## Remarks
 

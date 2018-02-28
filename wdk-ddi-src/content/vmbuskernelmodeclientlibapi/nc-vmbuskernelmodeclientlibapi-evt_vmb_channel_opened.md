@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 4E35AAA4-B9BA-4248-BBE6-FB576CAFD046
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.evt_vmb_channel_opened, EvtVmbChannelOpened callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelOpened, EVT_VMB_CHANNEL_OPENED, EVT_VMB_CHANNEL_OPENED, vmbuskernelmodeclientlibapi/EvtVmbChannelOpened, PFN_VMB_CHANNEL_OPENED callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_OPENED
+ms.keywords: EVT_VMB_CHANNEL_OPENED, EvtVmbChannelOpened, EvtVmbChannelOpened callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_OPENED, PFN_VMB_CHANNEL_OPENED callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_opened, vmbuskernelmodeclientlibapi/EvtVmbChannelOpened
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	VmbusKernelModeClientLibApi.h
-apiname:
+api_name:
 -	PFN_VMB_CHANNEL_OPENED
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_VMB_CHANNEL_OPENED function
+# EVT_VMB_CHANNEL_OPENED callback function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <i>EvtVmbChannelOpened</i> callback function is invoked when the client endpoint in the guest virtual machine opens a

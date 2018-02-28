@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 79BD2B77-E99A-4CFA-9F7B-AFC984D5F0B3
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercx2systemdmatransmitpurgefifo, EvtSerCx2SystemDmaTransmitPurgeFifo callback function [Serial Ports], EvtSerCx2SystemDmaTransmitPurgeFifo, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, 2/EvtSerCx2SystemDmaTransmitPurgeFifo
+ms.keywords: 2/EvtSerCx2SystemDmaTransmitPurgeFifo, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, EvtSerCx2SystemDmaTransmitPurgeFifo, EvtSerCx2SystemDmaTransmitPurgeFifo callback function [Serial Ports], serports.evtsercx2systemdmatransmitpurgefifo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	2.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCx2SystemDmaTransmitPurgeFifo
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO function
+# EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO callback function
 The <i>EvtSerCx2SystemDmaTransmitPurgeFifo</i> event callback function is called by version 2 of the serial framework extension (SerCx2) to discard any bytes of unsent data that remain in the transmit FIFO in the serial controller hardware.
 
 ## Syntax
@@ -140,15 +140,7 @@ The <b>EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO</b> function type is defined in
 
 
 
-<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_drain_fifo.md">EvtSerCx2SystemDmaTransmitDrainFifo</a>
-
-
-
-<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_cancel_drain_fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a>
-
-
-
-<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
 
 
 
@@ -156,7 +148,15 @@ The <b>EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO</b> function type is defined in
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
+<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_drain_fifo.md">EvtSerCx2SystemDmaTransmitDrainFifo</a>
+
+
+
+<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
+
+
+
+<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_cancel_drain_fifo.md">EvtSerCx2SystemDmaTransmitCancelDrainFifo</a>
 
 
 

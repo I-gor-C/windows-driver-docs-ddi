@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 83bfddd5-fc4d-4f5c-9904-7564810f5b4c
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: WdfIoQueueGetState method, DFQueueObjectRef_756666e1-e5eb-4bcc-907e-65b10e580396.xml, wdf.wdfioqueuegetstate, WdfIoQueueGetState, wdfio/WdfIoQueueGetState, kmdf.wdfioqueuegetstate
+ms.keywords: DFQueueObjectRef_756666e1-e5eb-4bcc-907e-65b10e580396.xml, WdfIoQueueGetState, WdfIoQueueGetState method, kmdf.wdfioqueuegetstate, wdf.wdfioqueuegetstate, wdfio/WdfIoQueueGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,17 +29,17 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfIoQueueGetState
 product: Windows
 targetos: Windows
@@ -80,7 +80,7 @@ A pointer to a location that receives the number of I/O requests that have been 
 
 ## Return Value
 
-<b>WdfIoQueueGetState</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value, which can contain the bitwise OR of several <b>WDF_IO_QUEUE_STATE</b> enumerators. 
+<b>WdfIoQueueGetState</b> returns a <a href="..\wdfio\ne-wdfio-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value, which can contain the bitwise OR of several <b>WDF_IO_QUEUE_STATE</b> enumerators. 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -160,11 +160,11 @@ IsQueueIdle(
 
 ## See Also
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
-
-
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
+
+
+
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
 
 

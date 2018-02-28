@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 60daba60-3e04-4e98-a458-4dc263f17761
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportdirectoidrequest, MiniportDirectOidRequest callback function [Network Drivers Starting with Windows Vista], MiniportDirectOidRequest, MINIPORT_DIRECT_OID_REQUEST, MINIPORT_DIRECT_OID_REQUEST, ndis/MiniportDirectOidRequest, ndis_request_direct_ref_8650027d-37db-4165-9bf6-c239b6db2919.xml
+ms.keywords: MINIPORT_DIRECT_OID_REQUEST, MiniportDirectOidRequest, MiniportDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/MiniportDirectOidRequest, ndis_request_direct_ref_8650027d-37db-4165-9bf6-c239b6db2919.xml, netvista.miniportdirectoidrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportDirectOidRequest
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_DIRECT_OID_REQUEST function
+# MINIPORT_DIRECT_OID_REQUEST callback function
 NDIS calls a miniport driver's 
    <i>MiniportDirectOidRequest</i> function to handle a direct OID request to query or set information in the
    driver.
@@ -308,12 +308,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_cancel_direct_oid_request.md">
-   MiniportCancelDirectOidRequest</a>
+<a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">MiniportDirectOidRequest</a>
 
 
 
@@ -321,8 +320,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
-   MiniportDevicePnPEventNotify</a>
+<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 
 
 
@@ -335,7 +333,20 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
+<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
+   MiniportDevicePnPEventNotify</a>
+
+
+
 <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
 
 
 
@@ -345,18 +356,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 <a href="..\ndis\nc-ndis-miniport_cancel_direct_oid_request.md">
    MiniportCancelDirectOidRequest</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">MiniportDirectOidRequest</a>
 
 
 

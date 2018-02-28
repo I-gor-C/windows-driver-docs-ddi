@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 697fbf86-5c99-4e35-bcb4-a6f5272cc987
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: 61883/PAV_61883_REQUEST, AV_61883_REQUEST structure [Buses], 61883/AV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, AV_61883_REQUEST, *PAV_61883_REQUEST, PAV_61883_REQUEST, _AV_61883_REQUEST, IEEE.av_61883_request
+ms.keywords: "*PAV_61883_REQUEST, 61883/AV_61883_REQUEST, 61883/PAV_61883_REQUEST, 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, AV_61883_REQUEST, AV_61883_REQUEST structure [Buses], IEEE.av_61883_request, PAV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], _AV_61883_REQUEST"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	61883.h
-apiname:
+api_name:
 -	AV_61883_REQUEST
 product: Windows
 targetos: Windows
-req.typenames: "*PAV_61883_REQUEST, AV_61883_REQUEST"
+req.typenames: AV_61883_REQUEST, *PAV_61883_REQUEST
 ---
 
 # _AV_61883_REQUEST structure
@@ -106,11 +106,11 @@ The <b>Parameters-&gt;</b><b>Others.Arguments1</b> member of an <a href="https:/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537234">IOCTL_61883_CLASS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537219">INIT_61883_HEADER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537234">IOCTL_61883_CLASS</a>
 
 
 

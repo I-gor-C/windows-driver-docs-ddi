@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 627a4633-6857-43a5-af2d-36e4e554ca83
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfusbtargetdevice, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface, described, IWDFUsbTargetDevice, wudfusb/IWDFUsbTargetDevice, UMDFUSBref_4ff51830-55c1-4e2c-b095-8ca88bd2e56f.xml, umdf.iwdfusbtargetdevice
+ms.keywords: IWDFUsbTargetDevice, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface, described, UMDFUSBref_4ff51830-55c1-4e2c-b095-8ca88bd2e56f.xml, umdf.iwdfusbtargetdevice, wdf.iwdfusbtargetdevice, wudfusb/IWDFUsbTargetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wudfusb.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFUsbTargetDevice
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,14 +57,14 @@ The <b>IWDFUsbTargetDevice</b> interface exposes a USB device I/O target object.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfusb.IWDFUsbTargetDevice.FormatRequestForControlTransfer](nf-wudfusb-iwdfusbtargetdevice-formatrequestforcontroltransfer.md) | The FormatRequestForControlTransfer method formats an I/O request object for a USB control transfer. |
-| [wudfusb.IWDFUsbTargetDevice.GetNumInterfaces](nf-wudfusb-iwdfusbtargetdevice-getnuminterfaces.md) | The GetNumInterfaces method retrieves the number of USB interfaces for the USB device. |
-| [wudfusb.IWDFUsbTargetDevice.GetWinUsbHandle](nf-wudfusb-iwdfusbtargetdevice-getwinusbhandle.md) | The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a I/O target device object. |
-| [wudfusb.IWDFUsbTargetDevice.RetrieveDescriptor](nf-wudfusb-iwdfusbtargetdevice-retrievedescriptor.md) | The RetrieveDescriptor method retrieves a USB descriptor, which can describe a device, configuration, or string. |
-| [wudfusb.IWDFUsbTargetDevice.RetrieveDeviceInformation](nf-wudfusb-iwdfusbtargetdevice-retrievedeviceinformation.md) | The RetrieveDeviceInformation method retrieves device information of the specified type. |
-| [wudfusb.IWDFUsbTargetDevice.RetrievePowerPolicy](nf-wudfusb-iwdfusbtargetdevice-retrievepowerpolicy.md) | The RetrievePowerPolicy method retrieves a WinUsb power policy. |
-| [wudfusb.IWDFUsbTargetDevice.RetrieveUsbInterface](nf-wudfusb-iwdfusbtargetdevice-retrieveusbinterface.md) | The RetrieveUsbInterface method retrieves the specified USB interface for a USB device. |
-| [wudfusb.IWDFUsbTargetDevice.SetPowerPolicy](nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy.md) | The SetPowerPolicy method sets the WinUsb power policy. |
+| [IWDFUsbTargetDevice::FormatRequestForControlTransfer](nf-wudfusb-iwdfusbtargetdevice-formatrequestforcontroltransfer.md) | The FormatRequestForControlTransfer method formats an I/O request object for a USB control transfer. |
+| [IWDFUsbTargetDevice::GetNumInterfaces](nf-wudfusb-iwdfusbtargetdevice-getnuminterfaces.md) | The GetNumInterfaces method retrieves the number of USB interfaces for the USB device. |
+| [IWDFUsbTargetDevice::GetWinUsbHandle](nf-wudfusb-iwdfusbtargetdevice-getwinusbhandle.md) | The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a I/O target device object. |
+| [IWDFUsbTargetDevice::RetrieveDescriptor](nf-wudfusb-iwdfusbtargetdevice-retrievedescriptor.md) | The RetrieveDescriptor method retrieves a USB descriptor, which can describe a device, configuration, or string. |
+| [IWDFUsbTargetDevice::RetrieveDeviceInformation](nf-wudfusb-iwdfusbtargetdevice-retrievedeviceinformation.md) | The RetrieveDeviceInformation method retrieves device information of the specified type. |
+| [IWDFUsbTargetDevice::RetrievePowerPolicy](nf-wudfusb-iwdfusbtargetdevice-retrievepowerpolicy.md) | The RetrievePowerPolicy method retrieves a WinUsb power policy. |
+| [IWDFUsbTargetDevice::RetrieveUsbInterface](nf-wudfusb-iwdfusbtargetdevice-retrieveusbinterface.md) | The RetrieveUsbInterface method retrieves the specified USB interface for a USB device. |
+| [IWDFUsbTargetDevice::SetPowerPolicy](nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy.md) | The SetPowerPolicy method sets the WinUsb power policy. |
 
 ## Remarks
 

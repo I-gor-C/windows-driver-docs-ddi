@@ -4,11 +4,11 @@ title: IDebugAdvanced2
 author: windows-driver-content
 description: IDebugAdvanced2 interface
 old-location: debugger\idebugadvanced2.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 9b5f73db-1fb8-4e07-8053-67cb5020505e
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugadvanced2, IDebugAdvanced2 interface [Windows Debugging], IDebugAdvanced2 interface [Windows Debugging], described, IDebugAdvanced2, dbgeng/IDebugAdvanced2
+ms.date: 2/23/2018
+ms.keywords: IDebugAdvanced2, IDebugAdvanced2 interface [Windows Debugging], IDebugAdvanced2 interface [Windows Debugging], described, dbgeng/IDebugAdvanced2, debugger.idebugadvanced2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugAdvanced2
 product: Windows
 targetos: Windows
@@ -53,13 +53,13 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugAdvanced2.FindSourceFileAndToken](nf-dbgeng-idebugadvanced2-findsourcefileandtoken.md) | The FindSourceFileAndToken method returns the filename of a source file on the source path or return the value of a variable associated with a file token. |
-| [dbgeng.IDebugAdvanced2.GetSourceFileInformation](nf-dbgeng-idebugadvanced2-getsourcefileinformation.md) | The GetSourceFileInformation method returns specified information about a source file. |
-| [dbgeng.IDebugAdvanced2.GetSymbolInformation](nf-dbgeng-idebugadvanced2-getsymbolinformation.md) | The GetSymbolInformation method returns specified information about a symbol. |
-| [dbgeng.IDebugAdvanced2.GetSystemObjectInformation](nf-dbgeng-idebugadvanced2-getsystemobjectinformation.md) | The GetSystemObjectInformation method returns information about operating system objects on the target. |
-| [dbgeng.IDebugAdvanced2.GetThreadContext](nf-dbgeng-idebugadvanced2-getthreadcontext.md) | The GetThreadContext method returns the current thread context. |
-| [dbgeng.IDebugAdvanced2.Request](nf-dbgeng-idebugadvanced2-request.md) | The Request method performs a variety of different operations. |
-| [dbgeng.IDebugAdvanced2.SetThreadContext](nf-dbgeng-idebugadvanced2-setthreadcontext.md) | The SetThreadContext method sets the current thread context. |
+| [IDebugAdvanced2::FindSourceFileAndToken](nf-dbgeng-idebugadvanced2-findsourcefileandtoken.md) | The FindSourceFileAndToken method returns the filename of a source file on the source path or return the value of a variable associated with a file token. |
+| [IDebugAdvanced2::GetSourceFileInformation](nf-dbgeng-idebugadvanced2-getsourcefileinformation.md) | The GetSourceFileInformation method returns specified information about a source file. |
+| [IDebugAdvanced2::GetSymbolInformation](nf-dbgeng-idebugadvanced2-getsymbolinformation.md) | The GetSymbolInformation method returns specified information about a symbol. |
+| [IDebugAdvanced2::GetSystemObjectInformation](nf-dbgeng-idebugadvanced2-getsystemobjectinformation.md) | The GetSystemObjectInformation method returns information about operating system objects on the target. |
+| [IDebugAdvanced2::GetThreadContext](nf-dbgeng-idebugadvanced2-getthreadcontext.md) | The GetThreadContext method returns the current thread context. |
+| [IDebugAdvanced2::Request](nf-dbgeng-idebugadvanced2-request.md) | The Request method performs a variety of different operations. |
+| [IDebugAdvanced2::SetThreadContext](nf-dbgeng-idebugadvanced2-setthreadcontext.md) | The SetThreadContext method sets the current thread context. |
 
 ## Remarks
 
@@ -73,16 +73,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
-
-
-
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced.md">IDebugAdvanced</a>
 
 
 
- 
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugAdvanced2 interface%20 RELEASE:%20(2/15/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugAdvanced2 interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

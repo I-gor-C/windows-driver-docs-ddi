@@ -2,12 +2,36 @@
 UID: NA:d4drvif
 ms.assetid: caf37378-22f9-3683-8178-815716ae30bc
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# D4Drvif.h header
+
+
+
+This header is used by print. For more information, see
+- [print](../_print/index.md)
+
+D4Drvif.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_DOT4_DC_CREATE_DATA structure](ns-d4drvif-_dot4_dc_create_data.md) | Defines the DOT4_DC_CREATE_DATA construct. |
+| [_DOT4_DC_DESTROY_DATA structure](ns-d4drvif-_dot4_dc_destroy_data.md) | This topic describes the DOT4_DC_DESTROY_DATA structure. |
+| [_DOT4_DC_OPEN_DATA structure](ns-d4drvif-_dot4_dc_open_data.md) | This topic describes the DOT4_DC_OPEN_DATA structure. |
+| [_DOT4_DRIVER_CMD structure](ns-d4drvif-_dot4_driver_cmd.md) | This topic describes the DOT4_DRIVER_CMD structure. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # d4drvif.h header
 

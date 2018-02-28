@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 4EB36115-2783-4FD5-9CEE-1F7C971C334D
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: SPB.evtspbcontrollerunlock, EvtSpbControllerUnlock callback function [Buses], EvtSpbControllerUnlock, EVT_SPB_CONTROLLER_UNLOCK, EVT_SPB_CONTROLLER_UNLOCK, spbcx/EvtSpbControllerUnlock
+ms.keywords: EVT_SPB_CONTROLLER_UNLOCK, EvtSpbControllerUnlock, EvtSpbControllerUnlock callback function [Buses], SPB.evtspbcontrollerunlock, spbcx/EvtSpbControllerUnlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Spbcx.h
-apiname:
+api_name:
 -	EvtSpbControllerUnlock
 product: Windows
 targetos: Windows
-req.typenames: "*PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY"
+req.typenames: SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
 req.product: Windows 10 or later.
 ---
 
 
-# EVT_SPB_CONTROLLER_UNLOCK function
+# EVT_SPB_CONTROLLER_UNLOCK callback function
 An SPB controller driver's <i>EvtSpbControllerUnlock</i> event callback function unlocks the SPB controller, which was locked by a previous call to the <a href="https://msdn.microsoft.com/E08674F1-CE63-464B-9C70-96F93C574753">EvtSpbControllerLock</a> event callback function.
 
 ## Syntax
@@ -146,11 +146,15 @@ The EVT_SPB_CONTROLLER_UNLOCK function type is defined in the Spbcx.h header fil
 
 ## See Also
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
+
+
+
 <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
 
 
 
@@ -158,15 +162,11 @@ The EVT_SPB_CONTROLLER_UNLOCK function type is defined in the Spbcx.h header fil
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
 
 
 

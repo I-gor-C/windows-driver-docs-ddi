@@ -7,8 +7,8 @@ old-location: print\ixpsdocument.htm
 old-project: print
 ms.assetid: 1d4a9ad3-6ac1-44c3-9ddd-0dc5f996d70d
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.ixpsdocument, IXpsDocument interface [Print Devices], IXpsDocument interface [Print Devices], described, IXpsDocument, filterpipeline/IXpsDocument, filterpipeline_d2db5467-7b2d-439c-8ad1-3ffb607a3167.xml
+ms.date: 2/23/2018
+ms.keywords: IXpsDocument, IXpsDocument interface [Print Devices], IXpsDocument interface [Print Devices], described, filterpipeline/IXpsDocument, filterpipeline_d2db5467-7b2d-439c-8ad1-3ffb607a3167.xml, print.ixpsdocument
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IXpsDocument
 product: Windows
 targetos: Windows
@@ -53,8 +53,8 @@ The <code>IXpsDocument</code> interface represents the root of an XPS document.
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IXpsDocument.GetThumbnail](nf-filterpipeline-ixpsdocument-getthumbnail.md) | The GetThumbnail method gets the document thumbnail object. |
-| [filterpipeline.IXpsDocument.SetThumbnail](nf-filterpipeline-ixpsdocument-setthumbnail.md) | The SetThumbnail method removes the current thumbnail object from the document and inserts a new one. |
+| [IXpsDocument::GetThumbnail](nf-filterpipeline-ixpsdocument-getthumbnail.md) | The GetThumbnail method gets the document thumbnail object. |
+| [IXpsDocument::SetThumbnail](nf-filterpipeline-ixpsdocument-setthumbnail.md) | The SetThumbnail method removes the current thumbnail object from the document and inserts a new one. |
 
 ## Remarks
 

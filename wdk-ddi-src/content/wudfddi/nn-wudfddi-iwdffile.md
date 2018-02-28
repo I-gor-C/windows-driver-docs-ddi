@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: bf8e5ab1-9a17-4eb5-8c54-34670ea27068
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdffile, IWDFFile interface, IWDFFile interface, described, IWDFFile, wudfddi/IWDFFile, UMDFFileObjectRef_41506c7e-3abb-4f41-ab23-a69114c3fdbd.xml, umdf.iwdffile
+ms.keywords: IWDFFile, IWDFFile interface, IWDFFile interface, described, UMDFFileObjectRef_41506c7e-3abb-4f41-ab23-a69114c3fdbd.xml, umdf.iwdffile, wdf.iwdffile, wudfddi/IWDFFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFFile
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ The <a href="..\wudfddi\nn-wudfddi-iwdffilehandletargetfactory.md">IWDFFile</a> 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFFile.GetDevice](nf-wudfddi-iwdffile-getdevice.md) | The GetDevice method returns the interface to the device object that a file object is associated with. |
-| [wudfddi.IWDFFile.RetrieveFileName](nf-wudfddi-iwdffile-retrievefilename.md) | The RetrieveFileName method retrieves the full name of the file that is associated with the underlying kernel-mode device. |
+| [IWDFFile::GetDevice](nf-wudfddi-iwdffile-getdevice.md) | The GetDevice method returns the interface to the device object that a file object is associated with. |
+| [IWDFFile::RetrieveFileName](nf-wudfddi-iwdffile-retrievefilename.md) | The RetrieveFileName method retrieves the full name of the file that is associated with the underlying kernel-mode device. |
 
 ## Remarks
 

@@ -2,12 +2,38 @@
 UID: NA:ntddvol
 ms.assetid: 8e87c3d1-6f05-3860-b49c-2ea9e281b96f
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Ntddvol.h header
+
+
+
+This header is used by Storage. For more information, see
+- [Storage](../_storage/index.md)
+
+Ntddvol.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_DISK_EXTENT structure](ns-ntddvol-_disk_extent.md) | The DISK_EXTENT structure contains information defining the location and length of a volume extent on a disk. |
+| [_VOLUME_DISK_EXTENTS structure](ns-ntddvol-_volume_disk_extents.md) | The VOLUME_DISK_EXTENTS structure is used in conjunction with the IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS request to retrieve information about all the extents on a given volume. |
+| [_VOLUME_LOGICAL_OFFSET structure](ns-ntddvol-_volume_logical_offset.md) | The VOLUME_LOGICAL_OFFSET structure contains a logical offset into a volume. |
+| [_VOLUME_PHYSICAL_OFFSET structure](ns-ntddvol-_volume_physical_offset.md) | The VOLUME_PHYSICAL_OFFSET structure contains a physical offset into a volume and its accompanying physical disk number and is used with IOCTL_VOLUME_PHYSICAL_TO_LOGICAL and IOCTL_VOLUME_LOGICAL_TO_PHYSICAL to request a logical offset equivalent of a physical offset or a physical offset equivalent of a logical offset, respectively. |
+| [_VOLUME_PHYSICAL_OFFSETS structure](ns-ntddvol-_volume_physical_offsets.md) | The VOLUME_PHYSICAL_OFFSETS structure contains an array of physical offsets and accompanying physical disk numbers and is used with IOCTL_VOLUME_LOGICAL_TO_PHYSICAL to request a series of pairs of physical offsets and disk numbers that correspond to a single logical offset. |
+| [_VOLUME_READ_PLEX_INPUT structure](ns-ntddvol-_volume_read_plex_input.md) | This structure is used in conjunction with IOCTL_VOLUME_READ_PLEX to read data from a specific plex in a volume. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # ntddvol.h header
 

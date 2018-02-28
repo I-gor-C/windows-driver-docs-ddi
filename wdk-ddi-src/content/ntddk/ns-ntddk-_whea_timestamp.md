@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 70a6555d-1da9-4013-911a-4a9d011b0205
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: ntddk/PWHEA_TIMESTAMP, PWHEA_TIMESTAMP union pointer [WHEA Drivers and Applications], WHEA_TIMESTAMP union [WHEA Drivers and Applications], whea.whea_timestamp, whearef_d0fafe3b-0cea-4adf-a68a-b565e04ae258.xml, ntddk/WHEA_TIMESTAMP, _WHEA_TIMESTAMP, WHEA_TIMESTAMP, PWHEA_TIMESTAMP, *PWHEA_TIMESTAMP
+ms.keywords: "*PWHEA_TIMESTAMP, PWHEA_TIMESTAMP, PWHEA_TIMESTAMP union pointer [WHEA Drivers and Applications], WHEA_TIMESTAMP, WHEA_TIMESTAMP union [WHEA Drivers and Applications], _WHEA_TIMESTAMP, ntddk/PWHEA_TIMESTAMP, ntddk/WHEA_TIMESTAMP, whea.whea_timestamp, whearef_d0fafe3b-0cea-4adf-a68a-b565e04ae258.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ntddk.h
-apiname:
+api_name:
 -	WHEA_TIMESTAMP
 product: Windows
 targetos: Windows

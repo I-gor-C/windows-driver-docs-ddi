@@ -7,8 +7,8 @@ old-location: audio\iminiportwavert.htm
 old-project: audio
 ms.assetid: 5b98802e-c1a8-4613-85fe-f734ecc4670a
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportwavert, IMiniportWaveRT interface [Audio Devices], IMiniportWaveRT interface [Audio Devices], described, IMiniportWaveRT, portcls/IMiniportWaveRT, audmp-routines_8d8d9bf9-09f1-4c1f-9113-c03e506e4edb.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportWaveRT, IMiniportWaveRT interface [Audio Devices], IMiniportWaveRT interface [Audio Devices], described, audio.iminiportwavert, audmp-routines_8d8d9bf9-09f1-4c1f-9113-c03e506e4edb.xml, portcls/IMiniportWaveRT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportWaveRT
 product: Windows
 targetos: Windows
@@ -57,9 +57,9 @@ An adapter driver forms a miniport-port driver pair by binding an <code>IMinipor
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportWaveRT.GetDeviceDescription](nf-portcls-iminiportwavert-getdevicedescription.md) | The GetDeviceDescription method returns a pointer to a DEVICE_DESCRIPTION structure describing the device. |
-| [portcls.IMiniportWaveRT.Init](nf-portcls-iminiportwavert-init.md) | The Init method initializes the WaveRT miniport driver object. |
-| [portcls.IMiniportWaveRT.NewStream](nf-portcls-iminiportwavert-newstream.md) | The NewStream method creates a new instance of a WaveRT stream object. |
+| [IMiniportWaveRT::GetDeviceDescription](nf-portcls-iminiportwavert-getdevicedescription.md) | The GetDeviceDescription method returns a pointer to a DEVICE_DESCRIPTION structure describing the device. |
+| [IMiniportWaveRT::Init](nf-portcls-iminiportwavert-init.md) | The Init method initializes the WaveRT miniport driver object. |
+| [IMiniportWaveRT::NewStream](nf-portcls-iminiportwavert-newstream.md) | The NewStream method creates a new instance of a WaveRT stream object. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 59e6a8bc-e2f9-4d26-92b0-8f8944e1aa88
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicequeryremove, EvtDeviceQueryRemove callback function, EvtDeviceQueryRemove, EVT_WDF_DEVICE_QUERY_REMOVE, EVT_WDF_DEVICE_QUERY_REMOVE, wdfdevice/EvtDeviceQueryRemove, DFDeviceObjectGeneralRef_e982c552-e635-4fa9-8d84-dc4d7c143925.xml, kmdf.evtdevicequeryremove
+ms.keywords: DFDeviceObjectGeneralRef_e982c552-e635-4fa9-8d84-dc4d7c143925.xml, EVT_WDF_DEVICE_QUERY_REMOVE, EvtDeviceQueryRemove, EvtDeviceQueryRemove callback function, kmdf.evtdevicequeryremove, wdf.evtdevicequeryremove, wdfdevice/EvtDeviceQueryRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceQueryRemove
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_QUERY_REMOVE function
+# EVT_WDF_DEVICE_QUERY_REMOVE callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceQueryRemove</i> event callback function determines whether a specified device can be stopped and removed.

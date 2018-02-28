@@ -7,8 +7,8 @@ old-location: audio\iportdmus.htm
 old-project: audio
 ms.assetid: 96388400-56f9-4a43-bc37-cfe6cfb233cb
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportdmus, IPortDMus interface [Audio Devices], IPortDMus interface [Audio Devices], described, IPortDMus, dmusicks/IPortDMus, audmp-routines_20e57cde-9732-4592-8bb6-b5775609b833.xml
+ms.date: 2/22/2018
+ms.keywords: IPortDMus, IPortDMus interface [Audio Devices], IPortDMus interface [Audio Devices], described, audio.iportdmus, audmp-routines_20e57cde-9732-4592-8bb6-b5775609b833.xml, dmusicks/IPortDMus
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dmusicks.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dmusicks.h
-apiname:
+api_name:
 -	IPortDMus
 product: Windows
 targetos: Windows
@@ -55,8 +55,8 @@ An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportDM
 
 | Method | Description |
 | ---- |:---- |
-| [dmusicks.IPortDMus.Notify](nf-dmusicks-iportdmus-notify.md) | The Notify method should be called from the miniport driver's interrupt service routine (ISR) when a hardware interrupt has occurred. |
-| [dmusicks.IPortDMus.RegisterServiceGroup](nf-dmusicks-iportdmus-registerservicegroup.md) | The RegisterServiceGroup method registers a service group with the DMus port driver. |
+| [IPortDMus::Notify](nf-dmusicks-iportdmus-notify.md) | The Notify method should be called from the miniport driver's interrupt service routine (ISR) when a hardware interrupt has occurred. |
+| [IPortDMus::RegisterServiceGroup](nf-dmusicks-iportdmus-registerservicegroup.md) | The RegisterServiceGroup method registers a service group with the DMus port driver. |
 
 ## Remarks
 

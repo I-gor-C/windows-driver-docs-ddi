@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 729A2361-6FE1-4096-AC8B-3D042326EE5C
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfinterrupt, IWDFInterrupt interface, IWDFInterrupt interface, described, IWDFInterrupt, wudfddi/IWDFInterrupt, umdf.iwdfinterrupt
+ms.keywords: IWDFInterrupt, IWDFInterrupt interface, IWDFInterrupt interface, described, umdf.iwdfinterrupt, wdf.iwdfinterrupt, wudfddi/IWDFInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFInterrupt
 product: Windows
 targetos: Windows
@@ -56,16 +56,16 @@ This interface exposes an interrupt object.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFInterrupt.AcquireInterruptLock](nf-wudfddi-iwdfinterrupt-acquireinterruptlock.md) | The AcquireInterruptLock method begins a code sequence that executes while holding an interrupt object's lock. |
-| [wudfddi.IWDFInterrupt.Disable](nf-wudfddi-iwdfinterrupt-disable.md) | The Disable method disables a specified device interrupt by calling the driver's OnInterruptDisable callback function. |
-| [wudfddi.IWDFInterrupt.Enable](nf-wudfddi-iwdfinterrupt-enable.md) | The Enable method enables a specified device interrupt by calling the driver's OnInterruptEnable callback function. |
-| [wudfddi.IWDFInterrupt.GetDevice](nf-wudfddi-iwdfinterrupt-getdevice.md) | The GetDevice method returns the framework device object interface for this interrupt object. |
-| [wudfddi.IWDFInterrupt.GetInfo](nf-wudfddi-iwdfinterrupt-getinfo.md) | The GetInfo method retrieves information about a specified interrupt. |
-| [wudfddi.IWDFInterrupt.QueueWorkItemForIsr](nf-wudfddi-iwdfinterrupt-queueworkitemforisr.md) | The QueueWorkItemForIsr method queues a work item to process interrupt-related work outside of the interrupt service routine. |
-| [wudfddi.IWDFInterrupt.ReleaseInterruptLock](nf-wudfddi-iwdfinterrupt-releaseinterruptlock.md) | The ReleaseInterruptLock method ends a code sequence that executes while holding an interrupt object's lock. |
-| [wudfddi.IWDFInterrupt.SetExtendedPolicy](nf-wudfddi-iwdfinterrupt-setextendedpolicy.md) | The SetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt. |
-| [wudfddi.IWDFInterrupt.SetPolicy](nf-wudfddi-iwdfinterrupt-setpolicy.md) | The SetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt. |
-| [wudfddi.IWDFInterrupt.TryToAcquireInterruptLock](nf-wudfddi-iwdfinterrupt-trytoacquireinterruptlock.md) | The TryToAcquireInterruptLock method acquires the interrupt lock if no other thread has already acquired it. |
+| [IWDFInterrupt::AcquireInterruptLock](nf-wudfddi-iwdfinterrupt-acquireinterruptlock.md) | The AcquireInterruptLock method begins a code sequence that executes while holding an interrupt object's lock. |
+| [IWDFInterrupt::Disable](nf-wudfddi-iwdfinterrupt-disable.md) | The Disable method disables a specified device interrupt by calling the driver's OnInterruptDisable callback function. |
+| [IWDFInterrupt::Enable](nf-wudfddi-iwdfinterrupt-enable.md) | The Enable method enables a specified device interrupt by calling the driver's OnInterruptEnable callback function. |
+| [IWDFInterrupt::GetDevice](nf-wudfddi-iwdfinterrupt-getdevice.md) | The GetDevice method returns the framework device object interface for this interrupt object. |
+| [IWDFInterrupt::GetInfo](nf-wudfddi-iwdfinterrupt-getinfo.md) | The GetInfo method retrieves information about a specified interrupt. |
+| [IWDFInterrupt::QueueWorkItemForIsr](nf-wudfddi-iwdfinterrupt-queueworkitemforisr.md) | The QueueWorkItemForIsr method queues a work item to process interrupt-related work outside of the interrupt service routine. |
+| [IWDFInterrupt::ReleaseInterruptLock](nf-wudfddi-iwdfinterrupt-releaseinterruptlock.md) | The ReleaseInterruptLock method ends a code sequence that executes while holding an interrupt object's lock. |
+| [IWDFInterrupt::SetExtendedPolicy](nf-wudfddi-iwdfinterrupt-setextendedpolicy.md) | The SetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt. |
+| [IWDFInterrupt::SetPolicy](nf-wudfddi-iwdfinterrupt-setpolicy.md) | The SetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt. |
+| [IWDFInterrupt::TryToAcquireInterruptLock](nf-wudfddi-iwdfinterrupt-trytoacquireinterruptlock.md) | The TryToAcquireInterruptLock method acquires the interrupt lock if no other thread has already acquired it. |
 
 ## Remarks
 

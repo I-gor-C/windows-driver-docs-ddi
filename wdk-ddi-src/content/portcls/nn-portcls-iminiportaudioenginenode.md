@@ -7,8 +7,8 @@ old-location: audio\iminiportaudioenginenode.htm
 old-project: audio
 ms.assetid: 58170D54-869A-49CC-865A-AB64BFB41A4B
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportaudioenginenode, IMiniportAudioEngineNode interface [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], described, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode
+ms.date: 2/22/2018
+ms.keywords: IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], described, audio.iminiportaudioenginenode, portcls/IMiniportAudioEngineNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Portcls.h
-apiname:
+api_name:
 -	IMiniportAudioEngineNode
 product: Windows
 targetos: Windows
@@ -53,22 +53,22 @@ This interface allows a miniport driver to use KS properties that access the aud
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportAudioEngineNode.GetAudioEngineDescriptor](nf-portcls-iminiportaudioenginenode-getaudioenginedescriptor.md) | Gets the descriptor for the audio engine node. |
-| [portcls.IMiniportAudioEngineNode.GetBufferSizeRange](nf-portcls-iminiportaudioenginenode-getbuffersizerange.md) | Gets the minimum and maximum buffer size that the hardware audio engine can support. |
-| [portcls.IMiniportAudioEngineNode.GetDeviceAttributeSteppings](nf-portcls-iminiportaudioenginenode-getdeviceattributesteppings.md) | Gets the allowed stepping value for the audio device attribute. |
-| [portcls.IMiniportAudioEngineNode.GetDeviceChannelCount](nf-portcls-iminiportaudioenginenode-getdevicechannelcount.md) | Gets a count of the number of channels supported by the audio device. |
-| [portcls.IMiniportAudioEngineNode.GetDeviceChannelMute](nf-portcls-iminiportaudioenginenode-getdevicechannelmute.md) | Gets the state of the Mute node for the audio device channel. |
-| [portcls.IMiniportAudioEngineNode.GetDeviceChannelPeakMeter](nf-portcls-iminiportaudioenginenode-getdevicechannelpeakmeter.md) | Gets the PeakMeter value for the audio device channel. |
-| [portcls.IMiniportAudioEngineNode.GetDeviceChannelVolume](nf-portcls-iminiportaudioenginenode-getdevicechannelvolume.md) | Gets the volume level for a given channel of the audio device. |
-| [portcls.IMiniportAudioEngineNode.GetDeviceFormat](nf-portcls-iminiportaudioenginenode-getdeviceformat.md) | Gets the audio data format for an audio device. |
-| [portcls.IMiniportAudioEngineNode.GetEngineFormatSize](nf-portcls-iminiportaudioenginenode-getengineformatsize.md) | Gets the format type and the buffer size for the audio engine's audio data format. |
-| [portcls.IMiniportAudioEngineNode.GetGfxState](nf-portcls-iminiportaudioenginenode-getgfxstate.md) | Gets the state of the global effects (GFX) node in the audio engine. |
-| [portcls.IMiniportAudioEngineNode.GetMixFormat](nf-portcls-iminiportaudioenginenode-getmixformat.md) | Gets the audio data format for the audio engine mixer. |
-| [portcls.IMiniportAudioEngineNode.GetSupportedDeviceFormats](nf-portcls-iminiportaudioenginenode-getsupporteddeviceformats.md) | Gets the supported audio data formats for the audio device. |
-| [portcls.IMiniportAudioEngineNode.SetDeviceChannelMute](nf-portcls-iminiportaudioenginenode-setdevicechannelmute.md) | Sets the state of the Mute node for the audio device channel. |
-| [portcls.IMiniportAudioEngineNode.SetDeviceChannelVolume](nf-portcls-iminiportaudioenginenode-setdevicechannelvolume.md) | Sets the volume level for a given channel of the audio device. |
-| [portcls.IMiniportAudioEngineNode.SetDeviceFormat](nf-portcls-iminiportaudioenginenode-setdeviceformat.md) | Sets the audio data format for an audio device. |
-| [portcls.IMiniportAudioEngineNode.SetGfxState](nf-portcls-iminiportaudioenginenode-setgfxstate.md) | Sets the state of the global effects (GFX) node in the audio engine. |
+| [IMiniportAudioEngineNode::GetAudioEngineDescriptor](nf-portcls-iminiportaudioenginenode-getaudioenginedescriptor.md) | Gets the descriptor for the audio engine node. |
+| [IMiniportAudioEngineNode::GetBufferSizeRange](nf-portcls-iminiportaudioenginenode-getbuffersizerange.md) | Gets the minimum and maximum buffer size that the hardware audio engine can support. |
+| [IMiniportAudioEngineNode::GetDeviceAttributeSteppings](nf-portcls-iminiportaudioenginenode-getdeviceattributesteppings.md) | Gets the allowed stepping value for the audio device attribute. |
+| [IMiniportAudioEngineNode::GetDeviceChannelCount](nf-portcls-iminiportaudioenginenode-getdevicechannelcount.md) | Gets a count of the number of channels supported by the audio device. |
+| [IMiniportAudioEngineNode::GetDeviceChannelMute](nf-portcls-iminiportaudioenginenode-getdevicechannelmute.md) | Gets the state of the Mute node for the audio device channel. |
+| [IMiniportAudioEngineNode::GetDeviceChannelPeakMeter](nf-portcls-iminiportaudioenginenode-getdevicechannelpeakmeter.md) | Gets the PeakMeter value for the audio device channel. |
+| [IMiniportAudioEngineNode::GetDeviceChannelVolume](nf-portcls-iminiportaudioenginenode-getdevicechannelvolume.md) | Gets the volume level for a given channel of the audio device. |
+| [IMiniportAudioEngineNode::GetDeviceFormat](nf-portcls-iminiportaudioenginenode-getdeviceformat.md) | Gets the audio data format for an audio device. |
+| [IMiniportAudioEngineNode::GetEngineFormatSize](nf-portcls-iminiportaudioenginenode-getengineformatsize.md) | Gets the format type and the buffer size for the audio engine's audio data format. |
+| [IMiniportAudioEngineNode::GetGfxState](nf-portcls-iminiportaudioenginenode-getgfxstate.md) | Gets the state of the global effects (GFX) node in the audio engine. |
+| [IMiniportAudioEngineNode::GetMixFormat](nf-portcls-iminiportaudioenginenode-getmixformat.md) | Gets the audio data format for the audio engine mixer. |
+| [IMiniportAudioEngineNode::GetSupportedDeviceFormats](nf-portcls-iminiportaudioenginenode-getsupporteddeviceformats.md) | Gets the supported audio data formats for the audio device. |
+| [IMiniportAudioEngineNode::SetDeviceChannelMute](nf-portcls-iminiportaudioenginenode-setdevicechannelmute.md) | Sets the state of the Mute node for the audio device channel. |
+| [IMiniportAudioEngineNode::SetDeviceChannelVolume](nf-portcls-iminiportaudioenginenode-setdevicechannelvolume.md) | Sets the volume level for a given channel of the audio device. |
+| [IMiniportAudioEngineNode::SetDeviceFormat](nf-portcls-iminiportaudioenginenode-setdeviceformat.md) | Sets the audio data format for an audio device. |
+| [IMiniportAudioEngineNode::SetGfxState](nf-portcls-iminiportaudioenginenode-setgfxstate.md) | Sets the state of the global effects (GFX) node in the audio engine. |
 
 ## Remarks
 

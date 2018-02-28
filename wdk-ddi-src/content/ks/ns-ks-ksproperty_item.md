@@ -7,8 +7,8 @@ old-location: stream\ksproperty_item.htm
 old-project: stream
 ms.assetid: 58530a72-6e07-44f5-9d7d-04bc37ff1ec9
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: KSPROPERTY_ITEM structure [Streaming Media Devices], ks-struct_ae02482e-27d1-4485-8fe2-3b9a7393c683.xml, ks/PKSPROPERTY_ITEM, *PKSPROPERTY_ITEM, ks/KSPROPERTY_ITEM, KSPROPERTY_ITEM, stream.ksproperty_item, PKSPROPERTY_ITEM, PKSPROPERTY_ITEM structure pointer [Streaming Media Devices]
+ms.date: 2/23/2018
+ms.keywords: "*PKSPROPERTY_ITEM, KSPROPERTY_ITEM, KSPROPERTY_ITEM structure [Streaming Media Devices], PKSPROPERTY_ITEM, PKSPROPERTY_ITEM structure pointer [Streaming Media Devices], ks-struct_ae02482e-27d1-4485-8fe2-3b9a7393c683.xml, ks/KSPROPERTY_ITEM, ks/PKSPROPERTY_ITEM, stream.ksproperty_item"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ks.h
-apiname:
+api_name:
 -	KSPROPERTY_ITEM
 product: Windows
 targetos: Windows
-req.typenames: "*PKSPROPERTY_ITEM, KSPROPERTY_ITEM"
+req.typenames: KSPROPERTY_ITEM, *PKSPROPERTY_ITEM
 ---
 
 # KSPROPERTY_ITEM structure
@@ -77,7 +77,7 @@ Specifies the minimum buffer length to hold the data read from or written to thi
 
 `MinProperty`
 
-Specifies the minimum buffer length to hold the property identifier. This must be at least <b>sizeof</b>(<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>).
+Specifies the minimum buffer length to hold the property identifier. This must be at least <b>sizeof</b>(<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>).
 
 `PropertyId`
 
@@ -85,7 +85,7 @@ Specifies the ID of the property being described.
 
 `Relations`
 
-Points to an array of <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structures representing properties related to this one. Two properties are considered related if changing one property may affect the value of the other property. The <b>Flags</b> member of each entry is unused.
+Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structures representing properties related to this one. Two properties are considered related if changing one property may affect the value of the other property. The <b>Flags</b> member of each entry is unused.
 
 `RelationsCount`
 
@@ -93,7 +93,7 @@ Specifies the number of entries in the array pointed to by the <b>Relations</b> 
 
 `SerializedSize`
 
-Specifies the size of the property when serialized in a KSPROPERTY_TYPE_SERIALIZESET request. This should be zero if the property cannot be serialized. See <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> for more information.
+Specifies the size of the property when serialized in a KSPROPERTY_TYPE_SERIALIZESET request. This should be zero if the property cannot be serialized. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> for more information.
 
 `SupportHandler`
 
@@ -187,6 +187,10 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568170">SRB_GET_DEVICE_PROPERTY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568207">SRB_SET_STREAM_PROPERTY</a>
 
 
@@ -195,15 +199,11 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
 
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568175">SRB_GET_STREAM_PROPERTY</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568170">SRB_GET_DEVICE_PROPERTY</a>
-
-
-
-<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 
 
 
@@ -211,7 +211,7 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568175">SRB_GET_STREAM_PROPERTY</a>
+<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
 
 
 
@@ -219,4 +219,4 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_ITEM structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_ITEM structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

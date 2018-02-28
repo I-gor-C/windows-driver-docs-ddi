@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# PFN_WDFINTERRUPTACQUIRELOCK function
+# PFN_WDFINTERRUPTACQUIRELOCK callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfInterruptAcquireLock</b> method begins a code sequence that executes at the device's device interrupt request level (DIRQL) while holding an interrupt object's spin lock.

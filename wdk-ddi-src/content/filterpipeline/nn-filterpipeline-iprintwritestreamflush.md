@@ -7,8 +7,8 @@ old-location: print\iprintwritestreamflush.htm
 old-project: print
 ms.assetid: DB3E1127-B3B1-4C48-9819-EEF705B9985A
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintwritestreamflush, IPrintWriteStreamFlush interface [Print Devices], IPrintWriteStreamFlush interface [Print Devices], described, IPrintWriteStreamFlush, filterpipeline/IPrintWriteStreamFlush
+ms.date: 2/23/2018
+ms.keywords: IPrintWriteStreamFlush, IPrintWriteStreamFlush interface [Print Devices], IPrintWriteStreamFlush interface [Print Devices], described, filterpipeline/IPrintWriteStreamFlush, print.iprintwritestreamflush
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IPrintWriteStreamFlush
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ Filters use the IPrintWriteStreamFlush interface to explicitly flush data as a r
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IPrintWriteStreamFlush.FlushData](nf-filterpipeline-iprintwritestreamflush-flushdata.md) | The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream. |
+| [IPrintWriteStreamFlush::FlushData](nf-filterpipeline-iprintwritestreamflush-flushdata.md) | The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream. |
 
 ## Remarks
 

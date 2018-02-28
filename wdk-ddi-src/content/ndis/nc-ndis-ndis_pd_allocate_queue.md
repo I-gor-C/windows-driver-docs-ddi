@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: E9091C69-0E21-40CC-B3D3-1F770ABA0D47
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.ndispdallocatequeue, NdisPDAllocateQueue callback function [Network Drivers Starting with Windows Vista], NdisPDAllocateQueue, NDIS_PD_ALLOCATE_QUEUE, NDIS_PD_ALLOCATE_QUEUE, ndis/NdisPDAllocateQueue
+ms.keywords: NDIS_PD_ALLOCATE_QUEUE, NdisPDAllocateQueue, NdisPDAllocateQueue callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDAllocateQueue, netvista.ndispdallocatequeue
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	NdisPDAllocateQueue
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_PD_ALLOCATE_QUEUE function
+# NDIS_PD_ALLOCATE_QUEUE callback function
 The PacketDirect (PD) platform calls a PD-capable miniport driver's 
    <i>NdisPDAllocateQueue</i> function to allocate a queue.<div class="alert"><b>Note</b>  You must declare the function by using the <b>NDIS_PD_ALLOCATE_QUEUE</b> type. For more
    information, see the following Examples section.</div>

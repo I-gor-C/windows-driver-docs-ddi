@@ -2,12 +2,49 @@
 UID: NA:ntddvdeo
 ms.assetid: d139e37c-aaeb-32a4-a038-0fe5f25ee5e9
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Ntddvdeo.h header
+
+
+
+This header is used by Display. For more information, see
+- [Display](../_display/index.md)
+
+Ntddvdeo.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_DISPLAY_BRIGHTNESS structure](ns-ntddvdeo-_display_brightness.md) | The DISPLAY_BRIGHTNESS structure is reserved for system use. |
+| [_DXGK_WIN32K_PARAM_DATA structure](ns-ntddvdeo-_dxgk_win32k_param_data.md) | The DXGK_WIN32K_PARAM_DATA structure is reserved for system use. |
+| [_ENG_EVENT structure](ns-ntddvdeo-_eng_event.md) | The ENG_EVENT structure is reserved for system use. |
+| [_VIDEO_MEMORY structure](ns-ntddvdeo-_video_memory.md) | The VIDEO_MEMORY structure holds the address of a requested block of kernel-mode video memory. |
+| [_VIDEO_MEMORY_INFORMATION structure](ns-ntddvdeo-_video_memory_information.md) | The VIDEO_MEMORY_INFORMATION structure contains information about a mapping of video memory into system space or the private virtual address space of a user-mode process. |
+| [_VIDEO_MODE structure](ns-ntddvdeo-_video_mode.md) | The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with IOCTL_VIDEO_SET_CURRENT_MODE. |
+| [_VIDEO_MODE_INFORMATION structure](ns-ntddvdeo-_video_mode_information.md) | The VIDEO_MODE_INFORMATION structure contains all of the information about one mode of a video adapter. |
+| [_VIDEO_NUM_MODES structure](ns-ntddvdeo-_video_num_modes.md) | The VIDEO_NUM_MODES structure contains the number of modes supported by a video adapter, and the size of the structure that describes each mode. |
+| [_VIDEO_POINTER_ATTRIBUTES structure](ns-ntddvdeo-_video_pointer_attributes.md) | The VIDEO_POINTER_ATTRIBUTES structure contains attributes of the screen pointer. |
+| [_VIDEO_POINTER_CAPABILITIES structure](ns-ntddvdeo-_video_pointer_capabilities.md) | Contains capabilities of the screen pointer. |
+| [_VIDEO_POINTER_POSITION structure](ns-ntddvdeo-_video_pointer_position.md) | The VIDEO_POINTER_POSITION structure contains the location of the screen pointer relative to the top left corner of the screen. |
+| [_VIDEO_POWER_MANAGEMENT structure](ns-ntddvdeo-_video_power_management.md) | The VIDEO_POWER_MANAGEMENT structure contains information required by the miniport driver to perform power management. |
+| [_VIDEO_PUBLIC_ACCESS_RANGES structure](ns-ntddvdeo-_video_public_access_ranges.md) | The VIDEO_PUBLIC_ACCESS_RANGES structure contains information about video resources other than frame buffers and video RAM, such as memory-mapped I/O registers or ports. |
+| [_VIDEO_SHARE_MEMORY structure](ns-ntddvdeo-_video_share_memory.md) | The VIDEO_SHARE_MEMORY structure is used in a request to the video miniport driver for a block of user-mode memory to be shared with the specified process. |
+| [_VIDEO_SHARE_MEMORY_INFORMATION structure](ns-ntddvdeo-_video_share_memory_information.md) | The VIDEO_SHARE_MEMORY_INFORMATION structure is used to communicate to the display driver that a request for a block of user-mode memory has been fulfilled. |
+| [_VIDEO_WIN32K_CALLBACKS structure](ns-ntddvdeo-_video_win32k_callbacks.md) | The VIDEO_WIN32K_CALLBACKS structure is reserved for system use. |
+| [_VIDEO_WIN32K_CALLBACKS_PARAMS structure](ns-ntddvdeo-_video_win32k_callbacks_params.md) | The VIDEO_WIN32K_CALLBACKS_PARAMS structure and the VIDEO_WIN32K_CALLBACKS_PARAMS_TYPE enumeration are reserved for system use. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # ntddvdeo.h header
 

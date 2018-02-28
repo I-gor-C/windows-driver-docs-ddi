@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 05E5F48B-4E82-4BC3-B6D1-7E9E3435BDB3
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercx2piotransmitenablereadynotification, EvtSerCx2PioTransmitEnableReadyNotification callback function [Serial Ports], EvtSerCx2PioTransmitEnableReadyNotification, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, 2/EvtSerCx2PioTransmitEnableReadyNotification
+ms.keywords: 2/EvtSerCx2PioTransmitEnableReadyNotification, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, EvtSerCx2PioTransmitEnableReadyNotification, EvtSerCx2PioTransmitEnableReadyNotification callback function [Serial Ports], serports.evtsercx2piotransmitenablereadynotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	2.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCx2PioTransmitEnableReadyNotification
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION function
+# EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION callback function
 The <i>EvtSerCx2PioTransmitEnableReadyNotification</i> event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the transmit FIFO in the serial controller is ready to accept more data.
 
 ## Syntax
@@ -138,6 +138,10 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION</b> function type is de
 
 ## See Also
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 
 
@@ -147,10 +151,6 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION</b> function type is de
 
 
 <a href="..\sercx\nc-sercx-evt_sercx2_pio_transmit_write_buffer.md">EvtSerCx2PioTransmitWriteBuffer</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 9f54c7e2-0c8a-46ee-9318-6db934c1aab6
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicepowerstatechange, EvtDevicePowerStateChange callback function, EvtDevicePowerStateChange, EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION, EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION, wdfdevice/EvtDevicePowerStateChange, DFDeviceObjectGeneralRef_fc945165-b31d-4d35-b3be-5586c280d8ca.xml, kmdf.evtdevicepowerstatechange
+ms.keywords: DFDeviceObjectGeneralRef_fc945165-b31d-4d35-b3be-5586c280d8ca.xml, EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION, EvtDevicePowerStateChange, EvtDevicePowerStateChange callback function, kmdf.evtdevicepowerstatechange, wdf.evtdevicepowerstatechange, wdfdevice/EvtDevicePowerStateChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDevicePowerStateChange
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION function
+# EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION callback function
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtDevicePowerStateChange</i> event callback function informs the driver that a device's power state machine is moving from one state to another.
@@ -132,11 +132,11 @@ The <b>EVT_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION</b> function type is defin
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a>
-
-
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_power_policy_state_change_notification.md">EvtDevicePowerPolicyStateChange</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a>
 
 
 

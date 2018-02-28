@@ -7,8 +7,8 @@ old-location: audio\iportclsruntimepower.htm
 old-project: audio
 ms.assetid: 8D03B2A0-6C8C-4EBE-86F4-70C8DE179947
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportclsruntimepower, IPortClsRuntimePower interface [Audio Devices], IPortClsRuntimePower interface [Audio Devices], described, IPortClsRuntimePower, portcls/IPortClsRuntimePower
+ms.date: 2/22/2018
+ms.keywords: IPortClsRuntimePower, IPortClsRuntimePower interface [Audio Devices], IPortClsRuntimePower interface [Audio Devices], described, audio.iportclsruntimepower, portcls/IPortClsRuntimePower
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortClsRuntimePower
 product: Windows
 targetos: Windows
@@ -53,9 +53,9 @@ IPortClsRuntimePower is the interface that the port class driver (PortCls)  uses
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortClsRuntimePower.RegisterPowerControlCallback](nf-portcls-iportclsruntimepower-registerpowercontrolcallback.md) | The port class driver (PortCls) uses the RegisterPowerControlCallback method to register a power control callback. |
-| [portcls.IPortClsRuntimePower.SendPowerControl](nf-portcls-iportclsruntimepower-sendpowercontrol.md) | The port class driver (PortCls) uses the SendPowerControl method to send power control codes to the audio adapter. |
-| [portcls.IPortClsRuntimePower.UnregisterPowerControlCallback](nf-portcls-iportclsruntimepower-unregisterpowercontrolcallback.md) | The port class driver (PortCls) uses the UnregisterPowerControlCallback method to unregister a power control callback. |
+| [IPortClsRuntimePower::RegisterPowerControlCallback](nf-portcls-iportclsruntimepower-registerpowercontrolcallback.md) | The port class driver (PortCls) uses the RegisterPowerControlCallback method to register a power control callback. |
+| [IPortClsRuntimePower::SendPowerControl](nf-portcls-iportclsruntimepower-sendpowercontrol.md) | The port class driver (PortCls) uses the SendPowerControl method to send power control codes to the audio adapter. |
+| [IPortClsRuntimePower::UnregisterPowerControlCallback](nf-portcls-iportclsruntimepower-unregisterpowercontrolcallback.md) | The port class driver (PortCls) uses the UnregisterPowerControlCallback method to unregister a power control callback. |
 
 ## Remarks
 

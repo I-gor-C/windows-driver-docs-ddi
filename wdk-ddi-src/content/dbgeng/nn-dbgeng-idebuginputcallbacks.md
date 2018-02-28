@@ -4,11 +4,11 @@ title: IDebugInputCallbacks
 author: windows-driver-content
 description: IDebugInputCallbacks interface
 old-location: debugger\idebuginputcallbacks.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 2122d970-1d1c-4ef0-b8f7-92ef6e4f0731
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebuginputcallbacks, IDebugInputCallbacks interface [Windows Debugging], IDebugInputCallbacks interface [Windows Debugging], described, IDebugInputCallbacks, dbgeng/IDebugInputCallbacks, ComCallbacks_9dd6d3d2-e92d-41bc-8276-fa8b7818a372.xml
+ms.date: 2/23/2018
+ms.keywords: ComCallbacks_9dd6d3d2-e92d-41bc-8276-fa8b7818a372.xml, IDebugInputCallbacks, IDebugInputCallbacks interface [Windows Debugging], IDebugInputCallbacks interface [Windows Debugging], described, dbgeng/IDebugInputCallbacks, debugger.idebuginputcallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugInputCallbacks
 product: Windows
 targetos: Windows
@@ -53,8 +53,8 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugInputCallbacks.EndInput](nf-dbgeng-idebuginputcallbacks-endinput.md) | The EndInput callback method is called by the engine to indicate that it is no longer waiting for input. |
-| [dbgeng.IDebugInputCallbacks.StartInput](nf-dbgeng-idebuginputcallbacks-startinput.md) | The StartInput callback method is called by the engine to indicate that it is waiting for a line of input. |
+| [IDebugInputCallbacks::EndInput](nf-dbgeng-idebuginputcallbacks-endinput.md) | The EndInput callback method is called by the engine to indicate that it is no longer waiting for input. |
+| [IDebugInputCallbacks::StartInput](nf-dbgeng-idebuginputcallbacks-startinput.md) | The StartInput callback method is called by the engine to indicate that it is waiting for a line of input. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 2A88BA68-48A7-4C00-8031-CCC50A0C090D
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercxcontrol, EvtSerCxControl callback function [Serial Ports], EvtSerCxControl, EVT_SERCX_CONTROL, EVT_SERCX_CONTROL, 1/EvtSerCxControl
+ms.keywords: 1/EvtSerCxControl, EVT_SERCX_CONTROL, EvtSerCxControl, EvtSerCxControl callback function [Serial Ports], serports.evtsercxcontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	1.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCxControl
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX_CONTROL function
+# EVT_SERCX_CONTROL callback function
 The <i>EvtSerCxControl</i> event callback function handles an I/O control request that has an I/O control code (IOCTL) that the serial framework extension (SerCx) supports.
 
 ## Syntax
@@ -196,11 +196,11 @@ For more information about SDV requirements for function declarations, see <a hr
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
-
-
-
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+
+
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 
 
 

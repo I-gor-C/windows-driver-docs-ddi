@@ -7,8 +7,8 @@ old-location: hid\ioctl_hid_get_driver_config.htm
 old-project: hid
 ms.assetid: F648EF1E-2673-499D-81BF-03B7B2148FA2
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: hid.ioctl_hid_get_driver_config, IOCTL_HID_GET_DRIVER_CONFIG control code [Human Input Devices], IOCTL_HID_GET_DRIVER_CONFIG, hidclass/IOCTL_HID_GET_DRIVER_CONFIG
+ms.date: 2/24/2018
+ms.keywords: IOCTL_HID_GET_DRIVER_CONFIG, IOCTL_HID_GET_DRIVER_CONFIG control code [Human Input Devices], hid.ioctl_hid_get_driver_config, hidclass/IOCTL_HID_GET_DRIVER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	hidclass.h
-apiname:
+api_name:
 -	IOCTL_HID_GET_DRIVER_CONFIG
 product: Windows
 targetos: Windows

@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 78d7fca7-d705-407f-95f1-670a417e2202
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.ioctl_serial_set_wait_mask, IOCTL_SERIAL_SET_WAIT_MASK control code [Serial Ports], IOCTL_SERIAL_SET_WAIT_MASK, ntddser/IOCTL_SERIAL_SET_WAIT_MASK, serref_8aa3f08e-f48b-44b2-91aa-849890097cef.xml
+ms.keywords: IOCTL_SERIAL_SET_WAIT_MASK, IOCTL_SERIAL_SET_WAIT_MASK control code [Serial Ports], ntddser/IOCTL_SERIAL_SET_WAIT_MASK, serports.ioctl_serial_set_wait_mask, serref_8aa3f08e-f48b-44b2-91aa-849890097cef.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	Ntddser.h
-apiname:
+api_name:
 -	IOCTL_SERIAL_SET_WAIT_MASK
 product: Windows
 targetos: Windows
@@ -207,7 +207,11 @@ For more information about SerCx2, SerCx, and Serial.sys, see <a href="https://m
 
 ## See Also
 
-<a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>
+<a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>
+
+
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
 
 
 
@@ -215,7 +219,7 @@ For more information about SerCx2, SerCx, and Serial.sys, see <a href="https://m
 
 
 
-<a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>
+<a href="..\ntddser\ni-ntddser-ioctl_serial_get_chars.md">IOCTL_SERIAL_GET_CHARS</a>
 
 
 
@@ -224,10 +228,6 @@ For more information about SerCx2, SerCx, and Serial.sys, see <a href="https://m
 
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
-
-
-
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
 
 
 

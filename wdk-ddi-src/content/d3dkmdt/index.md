@@ -2,12 +2,95 @@
 UID: NA:d3dkmdt
 ms.assetid: 019f4ae8-bb25-3ccb-9dae-26b111c96303
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# D3Dkmdt.h header
+
+
+
+This header is used by Display. For more information, see
+- [Display](../_display/index.md)
+
+D3Dkmdt.h contain these programming interfaces:
+
+
+## Functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [D3DKMDT_VPPR_GET_CONTENT_ROTATION function](nf-d3dkmdt-d3dkmdt_vppr_get_content_rotation.md) | A helper function that extracts the combined rotation that the user sees from the default display orientation from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration. |
+| [D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function](nf-d3dkmdt-d3dkmdt_vppr_get_content_rotation_part.md) | A helper function that extracts the rotation angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration. |
+| [D3DKMDT_VPPR_GET_OFFSET_ROTATION function](nf-d3dkmdt-d3dkmdt_vppr_get_offset_rotation.md) | A helper function that extracts the offset angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_D3DKMDT_2DREGION structure](ns-d3dkmdt-_d3dkmdt_2dregion.md) | The D3DKMDT_2DREGION structure is used to represent a point or an offset in a two-dimensional space. |
+| [_D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES structure](ns-d3dkmdt-_d3dkmdt_color_coeff_dynamic_ranges.md) | The D3DKMDT_COLOR_COEFF_DYNAMIC_RANGES contains values that indicate the dynamic range of each color channel of a video present target or a monitor. |
+| [_D3DKMDT_FREQUENCY_RANGE structure](ns-d3dkmdt-_d3dkmdt_frequency_range.md) | The D3DKMDT_FREQUENCY_RANGE structure contains the minimum and maximum refresh rates supported by a monitor. |
+| [_D3DKMDT_GAMMA_RAMP structure](ns-d3dkmdt-_d3dkmdt_gamma_ramp.md) | The D3DKMDT_GAMMA_RAMP structure contains descriptive information about a gamma lookup table and a pointer to the lookup table. |
+| [_D3DKMDT_GDISURFACEDATA structure](ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md) | The D3DKMDT_GDISURFACEDATA structure describes surfaces that are used by GDI hardware acceleration and the Desktop Window Manager (DWM). |
+| [_D3DKMDT_GDISURFACEFLAGS structure](ns-d3dkmdt-_d3dkmdt_gdisurfaceflags.md) | The D3DKMDT_GDISURFACEFLAGS structure is reserved for system use. Do not use it in your driver. |
+| [_D3DKMDT_GRAPHICS_RENDERING_FORMAT structure](ns-d3dkmdt-_d3dkmdt_graphics_rendering_format.md) | The D3DKMDT_GRAPHICS_RENDERING_FORMAT structure contains information about a primary rendering surface. |
+| [_D3DKMDT_MONITOR_DESCRIPTOR structure](ns-d3dkmdt-_d3dkmdt_monitor_descriptor.md) | The D3DKMDT_MONITOR_DESCRIPTOR structure contains a pointer to a monitor descriptor along with information about the monitor descriptor. |
+| [_D3DKMDT_MONITOR_FREQUENCY_RANGE structure](ns-d3dkmdt-_d3dkmdt_monitor_frequency_range.md) | The D3DKMDT_MONITOR_FREQUENCY_RANGE structure contains information about a range of frequencies supported by a monitor. |
+| [_D3DKMDT_MONITOR_SOURCE_MODE structure](ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md) | The D3DKMDT_MONITOR_SOURCE_MODE structure contains information about a monitor source mode. |
+| [_D3DKMDT_PALETTEDATA structure](ns-d3dkmdt-_d3dkmdt_palettedata.md) | The D3DKMDT_PALETTEDATA structure describes a palette entry for the display. |
+| [_D3DKMDT_PREEMPTION_CAPS structure](ns-d3dkmdt-_d3dkmdt_preemption_caps.md) | Specifies the capabilities for the preemption of graphic processing unit (GPU) graphics requests that the display miniport driver supports. |
+| [_D3DKMDT_SHADOWSURFACEDATA structure](ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md) | The D3DKMDT_SHADOWSURFACEDATA structure describes a lockable shadow surface, which matches the primary surface in format and resolution for a given display mode. |
+| [_D3DKMDT_SHAREDPRIMARYSURFACEDATA structure](ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md) | The D3DKMDT_SHAREDPRIMARYSURFACEDATA structure describes a shared primary surface. |
+| [_D3DKMDT_STAGINGSURFACEDATA structure](ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md) | The D3DKMDT_STAGINGSURFACEDATA structure describes the lockable staging surface that data is transferred into from an application's back buffer. |
+| [_D3DKMDT_VIDEO_PRESENT_SOURCE structure](ns-d3dkmdt-_d3dkmdt_video_present_source.md) | The D3DKMDT_VIDEO_PRESENT_SOURCE structure contains the unique identifier of a video present source. |
+| [_D3DKMDT_VIDEO_PRESENT_TARGET structure](ns-d3dkmdt-_d3dkmdt_video_present_target.md) | The D3DKMDT_VIDEO_PRESENT_TARGET structure contains information about a video present target. |
+| [_D3DKMDT_VIDEO_SIGNAL_INFO structure](ns-d3dkmdt-_d3dkmdt_video_signal_info.md) | The D3DKMDT_VIDEO_SIGNAL_INFO structure contains information about a video signal driven by a video output on a display adapter. |
+| [_D3DKMDT_VIDPN_HW_CAPABILITY structure](ns-d3dkmdt-_d3dkmdt_vidpn_hw_capability.md) | The D3DKMDT_VIDPN_HW_CAPABILITY structure describes the capabilities of the display miniport driver to perform display operations on a specified functional VidPN without dedicated GPU hardware support. |
+| [_D3DKMDT_VIDPN_PRESENT_PATH structure](ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md) | The D3DKMDT_VIDPN_PRESENT_PATH structure contains information about a video present path. |
+| [_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure](ns-d3dkmdt-_d3dkmdt_vidpn_present_path_copyprotection.md) | The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure contains information about the copy protection that is supported (as well as the copy protection that is currently active) on a particular VidPN present path. |
+| [_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure](ns-d3dkmdt-_d3dkmdt_vidpn_present_path_copyprotection_support.md) | The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure is used to indicate the types of copy protection that are supported by a particular VidPN present path. |
+| [_D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure](ns-d3dkmdt-_d3dkmdt_vidpn_present_path_rotation_support.md) | The D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure is used to indicate the angles of rotation that are supported by a particular VidPN present path. |
+| [_D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure](ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md) | The D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure is used to indicate the types of scaling (and centering) that are supported by a particular VidPN present path. |
+| [_D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure](ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md) | The D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure contains information about the transformations (for example, rotation, scaling, centering) that are pinned and the transformations that are supported for a path in a video present network (VIDPN). |
+| [_D3DKMDT_VIDPN_SOURCE_MODE structure](ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md) | The D3DKMDT_VIDPN_SOURCE_MODE structure contains information about a video present network (VidPN) source mode. |
+| [_D3DKMDT_VIDPN_TARGET_MODE structure](ns-d3dkmdt-_d3dkmdt_vidpn_target_mode.md) | The D3DKMDT_VIDPN_TARGET_MODE structure contains information about a video present network (VidPN) target mode. |
+| [_D3DKMDT_WIRE_FORMAT_AND_PREFERENCE structure](ns-d3dkmdt-_d3dkmdt_wire_format_and_preference.md) | Holds information about the preferred pixel encoding format. |
+| [_D3DKMT_MOVE_RECT structure](ns-d3dkmdt-_d3dkmt_move_rect.md) | Provides information on a screen-to-screen move and a dirty rectangle copy operation. |
+| [_DISPLAYID_DETAILED_TIMING_TYPE_I structure](ns-d3dkmdt-_displayid_detailed_timing_type_i.md) | The DISPLAYID_DETAILED_TIMING_TYPE_I structure specifies an additional target mode set for a video present target. |
+| [_DXGKARG_SETPALETTE structure](ns-d3dkmdt-_dxgkarg_setpalette.md) | The DXGKARG_SETPALETTE structure describes the palette to set for a display. |
+| [_DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure](ns-d3dkmdt-_dxgkmdt_opm_acp_and_cgmsa_signaling.md) | The DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure describes how the signal that goes through the physical connector that is associated with the protected output object is protected. |
+| [_DXGKMDT_OPM_ACTUAL_OUTPUT_FORMAT structure](ns-d3dkmdt-_dxgkmdt_opm_actual_output_format.md) | The DXGKMDT_OPM_ACTUAL_OUTPUT_FORMAT structure describes the format of the signal that is transmitted from a physical connector that is associated with a protected output to a monitor. |
+| [_DXGKMDT_OPM_CONFIGURE_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_configure_parameters.md) | The DXGKMDT_OPM_CONFIGURE_PARAMETERS structure contains parameters that are used to configure a protected output object in a call to the DxgkDdiOPMConfigureProtectedOutput function. |
+| [_DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure](ns-d3dkmdt-_dxgkmdt_opm_connected_hdcp_device_information.md) | The DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure contains High-bandwidth Digital Content Protection (HDCP) information that is retrieved in a call to the DxgkDdiOPMGetInformation function. |
+| [_DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md) | The DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure contains parameters that are used to retrieve information from a protected output object in a call to the DxgkDdiOPMGetCOPPCompatibleInformation function. |
+| [_DXGKMDT_OPM_ENCRYPTED_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_encrypted_parameters.md) | The DXGKMDT_OPM_ENCRYPTED_PARAMETERS structure contains data that is encrypted with the public key from an appropriate certificate. |
+| [_DXGKMDT_OPM_GET_INFO_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_get_info_parameters.md) | The DXGKMDT_OPM_GET_INFO_PARAMETERS structure contains parameters that are used to retrieve information from a protected output object in a call to the DxgkDdiOPMGetInformation function. |
+| [_DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR structure](ns-d3dkmdt-_dxgkmdt_opm_hdcp_key_selection_vector.md) | The DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR structure contains a key-selection vector (KSV) for a High-bandwidth Digital Content Protection (HDCP) protected output. |
+| [_DXGKMDT_OPM_OMAC structure](ns-d3dkmdt-_dxgkmdt_opm_omac.md) | The DXGKMDT_OPM_OMAC structure contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity. |
+| [_DXGKMDT_OPM_OUTPUT_ID structure](ns-d3dkmdt-_dxgkmdt_opm_output_id.md) | The DXGKMDT_OPM_OUTPUT_ID structure identifies the output connector. |
+| [_DXGKMDT_OPM_RANDOM_NUMBER structure](ns-d3dkmdt-_dxgkmdt_opm_random_number.md) | The DXGKMDT_OPM_RANDOM_NUMBER structure contains a 128-bit cryptographically secure random number. |
+| [_DXGKMDT_OPM_REQUESTED_INFORMATION structure](ns-d3dkmdt-_dxgkmdt_opm_requested_information.md) | The DXGKMDT_OPM_REQUESTED_INFORMATION structure contains information that was requested in a call to the DxgkDdiOPMGetInformation or DxgkDdiOPMGetCOPPCompatibleInformation function. |
+| [_DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.md) | The DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure contains parameters to set Analog Content Protection (ACP) and Content Generation Management System Analog (CGMS-A) signaling for a protected output. |
+| [_DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_set_hdcp_srm_parameters.md) | The DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS structure contains parameters to set the version of a High-bandwidth Digital Content Protection (HDCP) System Renewability Message (SRM) for a protected output. |
+| [_DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure](ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md) | The DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure contains parameters to set the protection level of a protected output in a call to the DxgkDdiOPMConfigureProtectedOutput function. |
+| [_DXGKMDT_OPM_STANDARD_INFORMATION structure](ns-d3dkmdt-_dxgkmdt_opm_standard_information.md) | The DXGKMDT_OPM_STANDARD_INFORMATION structure contains information that is retrieved in a call to the DxgkDdiOPMGetInformation or DxgkDdiOPMGetCOPPCompatibleInformation function. The type of information is described in the ulInformation member. |
+| [_DXGK_BACKLIGHT_INFO structure](ns-d3dkmdt-_dxgk_backlight_info.md) | Contains the current level of backlight reduction that is applied to the integrated display panel. Used by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers that support adaptive brightness control. |
+| [_DXGK_BRIGHTNESS_CAPS structure](ns-d3dkmdt-_dxgk_brightness_caps.md) | Identifies brightness control capabilities of an integrated display panel that the display miniport driver provides through a call to its DxgkDdiGetBrightnessCaps function. |
+| [_DXGK_BRIGHTNESS_STATE structure](ns-d3dkmdt-_dxgk_brightness_state.md) | Used to enable smooth brightness control for an integrated display panel. |
+| [_DXGK_DISPLAY_INFORMATION structure](ns-d3dkmdt-_dxgk_display_information.md) | Contains the display information that is passed between the operating system and the display miniport driver when the driver is started or stopped in response to a Plug and Play (PnP) event. |
+| [_DXGK_FAULT_ERROR_CODE structure](ns-d3dkmdt-_dxgk_fault_error_code.md) | The DXGK_FAULT_ERROR_CODE structure provides a status code for the graphics processing unit (GPU) error reported via a page fault interrupt. |
+| [_DXGK_MONITORLINKINFO_CAPABILITIES structure](ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities.md) | Flags which describe the capabilities for driving the monitor. |
+| [_DXGK_MONITORLINKINFO_USAGEHINTS structure](ns-d3dkmdt-_dxgk_monitorlinkinfo_usagehints.md) | Hints to the driver on the intended usage of the display device. |
+| [_DXGK_TARGETMODE_DETAIL_TIMING structure](ns-d3dkmdt-_dxgk_targetmode_detail_timing.md) | The DXGK_TARGETMODE_DETAIL_TIMING structure describes a video present target's additional timing modes that are compatible with the display device. |
+
+## Enumerations
+
+| Title   | Description   |
+| ---- |:----
 
 # d3dkmdt.h header
 

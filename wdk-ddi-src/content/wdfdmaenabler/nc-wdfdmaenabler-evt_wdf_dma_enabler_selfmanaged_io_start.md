@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 397791c1-c394-48ae-b6cf-42f4494438f1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdmaenablerselfmanagediostart, EvtDmaEnablerSelfManagedIoStart callback function, EvtDmaEnablerSelfManagedIoStart, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, wdfdmaenabler/EvtDmaEnablerSelfManagedIoStart, DFDmaObjectRef_6ccb5cb2-c30f-4ae0-a47e-cb58e24de25b.xml, kmdf.evtdmaenablerselfmanagediostart
+ms.keywords: DFDmaObjectRef_6ccb5cb2-c30f-4ae0-a47e-cb58e24de25b.xml, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, EvtDmaEnablerSelfManagedIoStart, EvtDmaEnablerSelfManagedIoStart callback function, kmdf.evtdmaenablerselfmanagediostart, wdf.evtdmaenablerselfmanagediostart, wdfdmaenabler/EvtDmaEnablerSelfManagedIoStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	WdfDmaEnabler.h
-apiname:
+api_name:
 -	EvtDmaEnablerSelfManagedIoStart
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START function
+# EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START callback function
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtDmaEnablerSelfManagedIoStart</i> event callback function starts a DMA device's self-managed I/O operations.
@@ -126,15 +126,15 @@ The <b>EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START</b> function type is defined in 
 
 ## See Also
 
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
+
+
+
 <a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md">EvtDmaEnablerSelfManagedIoStop</a>
 
 
 
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-
-
-
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md">EvtDmaEnablerSelfManagedIoStop</a>
 
 
 

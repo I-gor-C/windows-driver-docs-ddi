@@ -7,8 +7,8 @@ old-location: audio\iprefetchoffset.htm
 old-project: audio
 ms.assetid: 8c6a3766-c959-4979-8dc9-3b5234003272
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iprefetchoffset, IPreFetchOffset interface [Audio Devices], IPreFetchOffset interface [Audio Devices], described, IPreFetchOffset, portcls/IPreFetchOffset, audmp-routines_71e52125-c3a2-4434-96f3-e3a66b482a3a.xml
+ms.date: 2/22/2018
+ms.keywords: IPreFetchOffset, IPreFetchOffset interface [Audio Devices], IPreFetchOffset interface [Audio Devices], described, audio.iprefetchoffset, audmp-routines_71e52125-c3a2-4434-96f3-e3a66b482a3a.xml, portcls/IPreFetchOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPreFetchOffset
 product: Windows
 targetos: Windows
@@ -55,7 +55,7 @@ For more information about the <code>IPreFetchOffset</code> interface, see <a hr
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPreFetchOffset.SetPreFetchOffset](nf-portcls-iprefetchoffset-setprefetchoffset.md) | The SetPreFetchOffset method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream. |
+| [IPreFetchOffset::SetPreFetchOffset](nf-portcls-iprefetchoffset-setprefetchoffset.md) | The SetPreFetchOffset method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream. |
 
 ## Remarks
 

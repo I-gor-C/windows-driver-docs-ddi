@@ -2,7 +2,7 @@
 UID: NA:netdispumdddi
 ms.assetid: 1d7e00a7-9659-3240-83d0-8e90cdbbd29a
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,8 @@ netdispumdddi.h contains the following programming interfaces:
 
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PFN_CREATE_MIRACAST_CONTEXT](nc-netdispumdddi-pfn_create_miracast_context.md) | Called by the operating system to create a user-mode Miracast context. |
@@ -34,7 +35,6 @@ netdispumdddi.h contains the following programming interfaces:
 | [PFN_START_MIRACAST_SESSION](nc-netdispumdddi-pfn_start_miracast_session.md) | Called by the operating system to start a Miracast connected session. |
 | [PFN_STOP_MIRACAST_SESSION](nc-netdispumdddi-pfn_stop_miracast_session.md) | Called by the operating system to start a Miracast connected session that had earlier been started by a call to the StartMiracastSession function. |
 | [QUERY_MIRACAST_DRIVER_INTERFACE](nc-netdispumdddi-query_miracast_driver_interface.md) | Called by the operating system to query the Miracast user-mode driver interface, MIRACAST_DRIVER_INTERFACE. |
-
 
 
 ## Structures

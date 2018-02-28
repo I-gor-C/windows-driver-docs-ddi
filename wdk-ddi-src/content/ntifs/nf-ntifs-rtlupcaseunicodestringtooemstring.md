@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3d81c5e4-780b-4b1f-ad3a-6d59cab5650f
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: ifsk.rtlupcaseunicodestringtooemstring, ntifs/RtlUpcaseUnicodeStringToOemString, RtlUpcaseUnicodeStringToOemString routine [Installable File System Drivers], rtlref_a98f9782-c665-40fa-af3d-47eb2bef27d9.xml, RtlUpcaseUnicodeStringToOemString
+ms.keywords: RtlUpcaseUnicodeStringToOemString, RtlUpcaseUnicodeStringToOemString routine [Installable File System Drivers], ifsk.rtlupcaseunicodestringtooemstring, ntifs/RtlUpcaseUnicodeStringToOemString, rtlref_a98f9782-c665-40fa-af3d-47eb2bef27d9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: "< DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	RtlUpcaseUnicodeStringToOemString
 product: Windows
 targetos: Windows
@@ -97,7 +97,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\ntifs\nf-ntifs-rtlupcaseunicodetooemn.md">RtlUpcaseUnicodeToOemN</a>
 
 
 
@@ -105,11 +105,11 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodetooemn.md">RtlUpcaseUnicodeToOemN</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md">RtlUnicodeStringToOemString</a>
+
+
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 
 
@@ -117,11 +117,11 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlfreeoemstring.md">RtlFreeOemString</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-rtlfreeoemstring.md">RtlFreeOemString</a>
 
 
 

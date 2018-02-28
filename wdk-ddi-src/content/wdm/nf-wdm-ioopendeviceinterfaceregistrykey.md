@@ -7,8 +7,8 @@ old-location: kernel\ioopendeviceinterfaceregistrykey.htm
 old-project: kernel
 ms.assetid: d9ca4b9d-dacc-4164-9198-a71a771b145b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
-ms.keywords: k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, IoOpenDeviceInterfaceRegistryKey, kernel.ioopendeviceinterfaceregistrykey, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], wdm/IoOpenDeviceInterfaceRegistryKey
+ms.date: 2/24/2018
+ms.keywords: IoOpenDeviceInterfaceRegistryKey, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, kernel.ioopendeviceinterfaceregistrykey, wdm/IoOpenDeviceInterfaceRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL (see Remarks section)
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	IoOpenDeviceInterfaceRegistryKey
 product: Windows
 targetos: Windows
@@ -68,9 +68,9 @@ Pointer to a string identifying the device interface instance. This string was o
 
 Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller requires to the key, such as KEY_READ, KEY_WRITE, or KEY_ALL_ACCESS. See <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> for a description of each KEY_<i>XXX</i> access right.
 
-`DeviceInterfaceKey`
+`DeviceInterfaceRegKey`
 
-Pointer to a returned handle to the requested registry key if the call is successful.
+
 
 
 ## Return Value
@@ -138,11 +138,7 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+<a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>
 
 
 
@@ -150,16 +146,20 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+
+
 <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>
-
-
-
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoOpenDeviceInterfaceRegistryKey routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoOpenDeviceInterfaceRegistryKey routine%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

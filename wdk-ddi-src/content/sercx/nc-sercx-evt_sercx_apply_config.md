@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: DC0AB4E3-AA73-4DD5-B91D-95F9D3792321
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercxapplyconfig, EvtSerCxApplyConfig callback function [Serial Ports], EvtSerCxApplyConfig, EVT_SERCX_APPLY_CONFIG, EVT_SERCX_APPLY_CONFIG, 1/EvtSerCxApplyConfig
+ms.keywords: 1/EvtSerCxApplyConfig, EVT_SERCX_APPLY_CONFIG, EvtSerCxApplyConfig, EvtSerCxApplyConfig callback function [Serial Ports], serports.evtsercxapplyconfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at IRQL <= DISPATCH_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	1.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCxApplyConfig
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX_APPLY_CONFIG function
+# EVT_SERCX_APPLY_CONFIG callback function
 The <i>EvtSerCxApplyConfig</i> event callback function instructs the serial controller driver to apply a list of configuration settings to the serial controller hardware.
 
 ## Syntax
@@ -241,7 +241,7 @@ The PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER and PPNP_SERIAL_BUS_DESCRIPTOR
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
+<a href="..\sercx\nf-sercx-sercxgetconnectionparameters.md">SerCxGetConnectionParameters</a>
 
 
 
@@ -249,7 +249,7 @@ The PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER and PPNP_SERIAL_BUS_DESCRIPTOR
 
 
 
-<a href="..\sercx\nf-sercx-sercxgetconnectionparameters.md">SerCxGetConnectionParameters</a>
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 
 
 

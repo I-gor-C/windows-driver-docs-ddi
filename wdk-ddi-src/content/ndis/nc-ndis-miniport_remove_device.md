@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 24dd887b-575f-4790-bb53-7c3fb825bd61
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportremovedevice, MiniportRemoveDevice callback function [Network Drivers Starting with Windows Vista], MiniportRemoveDevice, MINIPORT_REMOVE_DEVICE, MINIPORT_REMOVE_DEVICE, ndis/MiniportRemoveDevice, ndis_msix_ref_daeef188-96e7-4917-b37f-2af8ba18eda9.xml
+ms.keywords: MINIPORT_REMOVE_DEVICE, MiniportRemoveDevice, MiniportRemoveDevice callback function [Network Drivers Starting with Windows Vista], ndis/MiniportRemoveDevice, ndis_msix_ref_daeef188-96e7-4917-b37f-2af8ba18eda9.xml, netvista.miniportremovedevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportRemoveDevice
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_REMOVE_DEVICE function
+# MINIPORT_REMOVE_DEVICE callback function
 The 
    <i>MiniportRemoveDevice</i> function releases resources that the 
    <a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a> function
@@ -144,16 +144,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
+<a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a>
+
+
+
 <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
 
 
 
 <a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
    NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_add_device.md">MiniportAddDevice</a>
 
 
 

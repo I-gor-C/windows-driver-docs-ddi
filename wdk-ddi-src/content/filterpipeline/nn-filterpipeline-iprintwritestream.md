@@ -7,8 +7,8 @@ old-location: print\iprintwritestream.htm
 old-project: print
 ms.assetid: b76a58fb-fbd4-4afe-83dc-582242b53e05
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintwritestream, IPrintWriteStream interface [Print Devices], IPrintWriteStream interface [Print Devices], described, IPrintWriteStream, filterpipeline/IPrintWriteStream, filterpipeline_edf6ac16-09e1-433a-8f41-50ba308dc7a7.xml
+ms.date: 2/23/2018
+ms.keywords: IPrintWriteStream, IPrintWriteStream interface [Print Devices], IPrintWriteStream interface [Print Devices], described, filterpipeline/IPrintWriteStream, filterpipeline_edf6ac16-09e1-433a-8f41-50ba308dc7a7.xml, print.iprintwritestream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IPrintWriteStream
 product: Windows
 targetos: Windows
@@ -53,8 +53,8 @@ Filters use the <code>IPrintWriteStream</code> interface to write data as a raw 
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IPrintWriteStream.Close](nf-filterpipeline-iprintwritestream-close.md) | The Close method closes a stream and ends the writing to that stream. This method is mandatory. You must call this method when the filter is done writing. |
-| [filterpipeline.IPrintWriteStream.WriteBytes](nf-filterpipeline-iprintwritestream-writebytes.md) | The WriteBytes method writes a specified number of bytes to a stream. |
+| [IPrintWriteStream::Close](nf-filterpipeline-iprintwritestream-close.md) | The Close method closes a stream and ends the writing to that stream. This method is mandatory. You must call this method when the filter is done writing. |
+| [IPrintWriteStream::WriteBytes](nf-filterpipeline-iprintwritestream-writebytes.md) | The WriteBytes method writes a specified number of bytes to a stream. |
 
 ## Remarks
 

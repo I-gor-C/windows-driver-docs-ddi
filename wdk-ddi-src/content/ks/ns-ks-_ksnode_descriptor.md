@@ -7,8 +7,8 @@ old-location: stream\ksnode_descriptor.htm
 old-project: stream
 ms.assetid: dfc5760f-fdd6-45f3-aeac-4406892e518a
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: "_KSNODE_DESCRIPTOR, *PKSNODE_DESCRIPTOR, PKSNODE_DESCRIPTOR structure pointer [Streaming Media Devices], ks/PKSNODE_DESCRIPTOR, stream.ksnode_descriptor, KSNODE_DESCRIPTOR structure [Streaming Media Devices], ks/KSNODE_DESCRIPTOR, avstruct_c4e79318-e112-4f57-ad6f-58e71ec53532.xml, PKSNODE_DESCRIPTOR, KSNODE_DESCRIPTOR"
+ms.date: 2/23/2018
+ms.keywords: "*PKSNODE_DESCRIPTOR, KSNODE_DESCRIPTOR, KSNODE_DESCRIPTOR structure [Streaming Media Devices], PKSNODE_DESCRIPTOR, PKSNODE_DESCRIPTOR structure pointer [Streaming Media Devices], _KSNODE_DESCRIPTOR, avstruct_c4e79318-e112-4f57-ad6f-58e71ec53532.xml, ks/KSNODE_DESCRIPTOR, ks/PKSNODE_DESCRIPTOR, stream.ksnode_descriptor"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ks.h
-apiname:
+api_name:
 -	KSNODE_DESCRIPTOR
 product: Windows
 targetos: Windows
@@ -58,6 +58,22 @@ typedef struct _KSNODE_DESCRIPTOR {
 ## Members
 
 
+`Alignment`
+
+
+
+`AutomationTable`
+
+A pointer to a <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a> structure for this topology node. The automation table contains the properties, methods, and events supported by this topology node.
+
+`Name`
+
+A pointer to a GUID that represents the name of this topology node. This is used to return information about a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565809">KSPROPERTY_TOPOLOGY_NAME</a> query.
+
+`Type`
+
+A pointer to a GUID defining the topology node.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,4 +91,4 @@ typedef struct _KSNODE_DESCRIPTOR {
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSNODE_DESCRIPTOR structure%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSNODE_DESCRIPTOR structure%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

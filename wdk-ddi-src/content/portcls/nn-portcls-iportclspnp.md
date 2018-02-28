@@ -7,8 +7,8 @@ old-location: audio\iportclspnp.htm
 old-project: audio
 ms.assetid: AC04051E-8412-4B61-B452-C05A9D8D5CD9
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportclspnp, IPortClsPnp interface [Audio Devices], IPortClsPnp interface [Audio Devices], described, IPortClsPnp, portcls/IPortClsPnp
+ms.date: 2/22/2018
+ms.keywords: IPortClsPnp, IPortClsPnp interface [Audio Devices], IPortClsPnp interface [Audio Devices], described, audio.iportclspnp, portcls/IPortClsPnp
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortClsPnp
 product: Windows
 targetos: Windows
@@ -57,8 +57,8 @@ The <code>IPortClsPnp</code> interface is available in Windows 10, version 1511
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortClsPnp.RegisterAdapterPnpManagement](nf-portcls-iportclspnp-registeradapterpnpmanagement.md) | The RegisterAdapterPowerManagement method registers the PnP management interface of the adapter with PortCls. |
-| [portcls.IPortClsPnp.UnregisterAdapterPnpManagement](nf-portcls-iportclspnp-unregisteradapterpnpmanagement.md) | The UnRegisterAdapterPowerManagement method unregisters the PnP management interface of the adapter from PortCls. |
+| [IPortClsPnp::RegisterAdapterPnpManagement](nf-portcls-iportclspnp-registeradapterpnpmanagement.md) | The RegisterAdapterPowerManagement method registers the PnP management interface of the adapter with PortCls. |
+| [IPortClsPnp::UnregisterAdapterPnpManagement](nf-portcls-iportclspnp-unregisteradapterpnpmanagement.md) | The UnRegisterAdapterPowerManagement method unregisters the PnP management interface of the adapter from PortCls. |
 
 ## Remarks
 

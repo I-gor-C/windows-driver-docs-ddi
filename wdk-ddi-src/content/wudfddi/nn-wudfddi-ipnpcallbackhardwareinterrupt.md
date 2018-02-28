@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: C66A570A-EEAF-4D18-A834-B50576F51E29
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ipnpcallbackhardwareinterrupt, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt interface, described, IPnpCallbackHardwareInterrupt, wudfddi/IPnpCallbackHardwareInterrupt, umdf.ipnpcallbackhardwareinterrupt
+ms.keywords: IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt interface, described, umdf.ipnpcallbackhardwareinterrupt, wdf.ipnpcallbackhardwareinterrupt, wudfddi/IPnpCallbackHardwareInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IPnpCallbackHardwareInterrupt
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ req.product: Windows 10 or later.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IPnpCallbackHardwareInterrupt.OnD0EntryPostInterruptsEnabled](nf-wudfddi-ipnpcallbackhardwareinterrupt-ond0entrypostinterruptsenabled.md) | A driver's OnD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required when the driver enables the device's hardware interrupts. |
-| [wudfddi.IPnpCallbackHardwareInterrupt.OnD0ExitPreInterruptsDisabled](nf-wudfddi-ipnpcallbackhardwareinterrupt-ond0exitpreinterruptsdisabled.md) | A driver's OnD0ExitPreInterruptsDisabled event callback function performs device-specific operations that are required before the driver disables the device's hardware interrupts. |
+| [IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled](nf-wudfddi-ipnpcallbackhardwareinterrupt-ond0entrypostinterruptsenabled.md) | A driver's OnD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required when the driver enables the device's hardware interrupts. |
+| [IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled](nf-wudfddi-ipnpcallbackhardwareinterrupt-ond0exitpreinterruptsdisabled.md) | A driver's OnD0ExitPreInterruptsDisabled event callback function performs device-specific operations that are required before the driver disables the device's hardware interrupts. |
 
 ## Remarks
 

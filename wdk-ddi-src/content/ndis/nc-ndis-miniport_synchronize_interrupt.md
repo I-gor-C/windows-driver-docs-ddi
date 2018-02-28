@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: aac1ff91-76aa-46a0-8e8a-85b9f8c3323c
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportsynchronizeinterrupt, MiniportSynchronizeInterrupt callback function [Network Drivers Starting with Windows Vista], MiniportSynchronizeInterrupt, MINIPORT_SYNCHRONIZE_INTERRUPT, MINIPORT_SYNCHRONIZE_INTERRUPT, ndis/MiniportSynchronizeInterrupt, (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER), ndis_interrupts_miniport_functions_ref_68ebc08d-67f9-42d8-9ade-669dc35a4242.xml
+ms.keywords: "(*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER), (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER) callback function [Network Drivers Starting with Windows Vista], MINIPORT_SYNCHRONIZE_INTERRUPT, MiniportSynchronizeInterrupt, MiniportSynchronizeInterrupt callback function [Network Drivers Starting with Windows Vista], ndis/MiniportSynchronizeInterrupt, ndis_interrupts_miniport_functions_ref_68ebc08d-67f9-42d8-9ade-669dc35a4242.xml, netvista.miniportsynchronizeinterrupt"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	(*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER)
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_SYNCHRONIZE_INTERRUPT function
+# MINIPORT_SYNCHRONIZE_INTERRUPT callback function
 A miniport driver must provide a 
    <i>MiniportSynchronizeInterrupt</i> handler if any driver function that runs at less than DIRQL shares
    resources with the 
@@ -187,19 +187,19 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInetrrupt</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 
 
 
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+
+
+
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInetrrupt</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInetrrupt</a>
 
 
 

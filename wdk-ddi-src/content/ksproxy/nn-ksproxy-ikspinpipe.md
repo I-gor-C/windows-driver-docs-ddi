@@ -7,8 +7,8 @@ old-location: stream\ikspinpipe.htm
 old-project: stream
 ms.assetid: bb9ebe0b-4a6e-41ff-a460-6c0b3a749d8d
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.ikspinpipe, IKsPinPipe interface [Streaming Media Devices], IKsPinPipe interface [Streaming Media Devices], described, IKsPinPipe, ksproxy/IKsPinPipe, ksproxy_baf35b14-3ad8-491c-86cf-9ac2b76d9504.xml
+ms.date: 2/23/2018
+ms.keywords: IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], IKsPinPipe interface [Streaming Media Devices], described, ksproxy/IKsPinPipe, ksproxy_baf35b14-3ad8-491c-86cf-9ac2b76d9504.xml, stream.ikspinpipe
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Ksproxy.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
-apiname:
+api_name:
 -	IKsPinPipe
 product: Windows
 targetos: Windows
@@ -55,17 +55,17 @@ The IID for this interface is IID_IKsPinPipe.
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsPinPipe.KsGetConnectedPin](nf-ksproxy-ikspinpipe-ksgetconnectedpin.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsGetFilterName](nf-ksproxy-ikspinpipe-ksgetfiltername.md) | Returns the name of a filter. |
-| [ksproxy.IKsPinPipe.KsGetPinBusCache](nf-ksproxy-ikspinpipe-ksgetpinbuscache.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsGetPinFramingCache](nf-ksproxy-ikspinpipe-ksgetpinframingcache.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsGetPinName](nf-ksproxy-ikspinpipe-ksgetpinname.md) | Returns the name of a pin. |
-| [ksproxy.IKsPinPipe.KsGetPipe](nf-ksproxy-ikspinpipe-ksgetpipe.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsGetPipeAllocatorFlag](nf-ksproxy-ikspinpipe-ksgetpipeallocatorflag.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsSetPinBusCache](nf-ksproxy-ikspinpipe-kssetpinbuscache.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsSetPinFramingCache](nf-ksproxy-ikspinpipe-kssetpinframingcache.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsSetPipe](nf-ksproxy-ikspinpipe-kssetpipe.md) | Not recommended for application use. |
-| [ksproxy.IKsPinPipe.KsSetPipeAllocatorFlag](nf-ksproxy-ikspinpipe-kssetpipeallocatorflag.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetConnectedPin](nf-ksproxy-ikspinpipe-ksgetconnectedpin.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetFilterName](nf-ksproxy-ikspinpipe-ksgetfiltername.md) | Returns the name of a filter. |
+| [IKsPinPipe::KsGetPinBusCache](nf-ksproxy-ikspinpipe-ksgetpinbuscache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPinFramingCache](nf-ksproxy-ikspinpipe-ksgetpinframingcache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPinName](nf-ksproxy-ikspinpipe-ksgetpinname.md) | Returns the name of a pin. |
+| [IKsPinPipe::KsGetPipe](nf-ksproxy-ikspinpipe-ksgetpipe.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPipeAllocatorFlag](nf-ksproxy-ikspinpipe-ksgetpipeallocatorflag.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPinBusCache](nf-ksproxy-ikspinpipe-kssetpinbuscache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPinFramingCache](nf-ksproxy-ikspinpipe-kssetpinframingcache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPipe](nf-ksproxy-ikspinpipe-kssetpipe.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPipeAllocatorFlag](nf-ksproxy-ikspinpipe-kssetpipeallocatorflag.md) | Not recommended for application use. |
 
 ## Remarks
 

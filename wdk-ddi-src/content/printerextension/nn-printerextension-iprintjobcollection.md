@@ -7,8 +7,8 @@ old-location: print\iprintjobcollection.htm
 old-project: print
 ms.assetid: 757328A6-DD2C-4057-820B-39EB83277194
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintjobcollection, IPrintJobCollection interface [Print Devices], IPrintJobCollection interface [Print Devices], described, IPrintJobCollection, printerextension/IPrintJobCollection
+ms.date: 2/23/2018
+ms.keywords: IPrintJobCollection, IPrintJobCollection interface [Print Devices], IPrintJobCollection interface [Print Devices], described, print.iprintjobcollection, printerextension/IPrintJobCollection
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrintJobCollection
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ The enumerated list of jobs represents a snapshot of the current job status.
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrintJobCollection.get_Count](nf-printerextension-iprintjobcollection-get_count.md) | Gets a count of the number of IPrinterExtensionContext objects in the collection. |
-| [printerextension.IPrintJobCollection.GetAt](nf-printerextension-iprintjobcollection-getat.md) | Gets a pointer to an IPrintJob object. |
+| [IPrintJobCollection::get_Count](nf-printerextension-iprintjobcollection-get_count.md) | Gets a count of the number of IPrinterExtensionContext objects in the collection. |
+| [IPrintJobCollection::GetAt](nf-printerextension-iprintjobcollection-getat.md) | Gets a pointer to an IPrintJob object. |
 
 ## Remarks
 
@@ -86,4 +86,4 @@ The order of print jobs in the enumerated list is the same as the order provided
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintJobCollection interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintJobCollection interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

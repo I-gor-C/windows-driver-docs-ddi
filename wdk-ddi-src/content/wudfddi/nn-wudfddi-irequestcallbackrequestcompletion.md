@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 65803145-8043-4902-981a-9dbbda2d69e9
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.irequestcallbackrequestcompletion, IRequestCallbackRequestCompletion interface, IRequestCallbackRequestCompletion interface, described, IRequestCallbackRequestCompletion, wudfddi/IRequestCallbackRequestCompletion, UMDFRequestObjectRef_9940e95b-e321-4cdf-95bb-3540e95f6094.xml, umdf.irequestcallbackrequestcompletion
+ms.keywords: IRequestCallbackRequestCompletion, IRequestCallbackRequestCompletion interface, IRequestCallbackRequestCompletion interface, described, UMDFRequestObjectRef_9940e95b-e321-4cdf-95bb-3540e95f6094.xml, umdf.irequestcallbackrequestcompletion, wdf.irequestcallbackrequestcompletion, wudfddi/IRequestCallbackRequestCompletion
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IRequestCallbackRequestCompletion
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ A driver implements the <b>IRequestCallbackRequestCompletion</b> interface to co
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IRequestCallbackRequestCompletion.OnCompletion](nf-wudfddi-irequestcallbackrequestcompletion-oncompletion.md) | The OnCompletion method completes the specified request. |
+| [IRequestCallbackRequestCompletion::OnCompletion](nf-wudfddi-irequestcallbackrequestcompletion-oncompletion.md) | The OnCompletion method completes the specified request. |
 
 ## Remarks
 

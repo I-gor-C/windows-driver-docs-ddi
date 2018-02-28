@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ddd5d14f-f886-40d0-9fc8-eeb37da63ebd
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportprocesssglist, MiniportProcessSGList callback function [Network Drivers Starting with Windows Vista], MiniportProcessSGList, MINIPORT_PROCESS_SG_LIST, MINIPORT_PROCESS_SG_LIST, ndis/MiniportProcessSGList, ndis_sgdma_ref_e9dec598-19ce-4d50-98e3-508ffbb444bc.xml
+ms.keywords: MINIPORT_PROCESS_SG_LIST, MiniportProcessSGList, MiniportProcessSGList callback function [Network Drivers Starting with Windows Vista], ndis/MiniportProcessSGList, ndis_sgdma_ref_e9dec598-19ce-4d50-98e3-508ffbb444bc.xml, netvista.miniportprocesssglist
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportProcessSGList
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_PROCESS_SG_LIST function
+# MINIPORT_PROCESS_SG_LIST callback function
 A bus-master miniport driver provides a
    <i>MiniportProcessSGList</i> function to process scatter/gather lists for network data.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_PROCESS_SG_LIST</b> type. For more
@@ -163,12 +163,12 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
 
 
 

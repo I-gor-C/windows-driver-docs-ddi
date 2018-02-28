@@ -29,14 +29,14 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: "<= APC_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	fltmgr.sys
-apiname:
+api_name:
 -	FltIs32bitProcess
 product: Windows
 targetos: Windows
@@ -110,11 +110,7 @@ To determine whether a callback data structure represents a file system filter (
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+<a href="..\wdm\nf-wdm-iois32bitprocess.md">IoIs32bitProcess</a>
 
 
 
@@ -122,7 +118,11 @@ To determine whether a callback data structure represents a file system filter (
 
 
 
-<a href="..\wdm\nf-wdm-iois32bitprocess.md">IoIs32bitProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 
 
 

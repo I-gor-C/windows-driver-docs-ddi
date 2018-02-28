@@ -4,11 +4,11 @@ title: CWiauFormatConverter
 author: windows-driver-content
 description: The CWiauFormatConverter class is a helper class for converting images to BMP format.
 old-location: image\cwiauformatconverter_class.htm
-old-project: Image
+old-project: image
 ms.assetid: b30c3336-ddc6-459d-97c4-244ca0b50cfc
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: image.cwiauformatconverter_class, CWiauFormatConverter interface [Imaging Devices], CWiauFormatConverter interface [Imaging Devices], described, CWiauFormatConverter, wiautil/CWiauFormatConverter, wiauFncs_8d01dc38-ef09-425a-ade6-d06bd0e1e08a.xml
+ms.date: 2/23/2018
+ms.keywords: CWiauFormatConverter, CWiauFormatConverter interface [Imaging Devices], CWiauFormatConverter interface [Imaging Devices], described, image.cwiauformatconverter_class, wiauFncs_8d01dc38-ef09-425a-ade6-d06bd0e1e08a.xml, wiautil/CWiauFormatConverter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: class
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.exe
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wiautil.h
-apiname:
+api_name:
 -	CWiauFormatConverter
 product: Windows
 targetos: Windows
@@ -53,11 +53,11 @@ The <b>CWiauFormatConverter</b> class is a helper class for converting images to
 
 | Method | Description |
 | ---- |:---- |
-| [wiautil.CWiauFormatConverter.~CWiauFormatConverter](nf-wiautil-cwiauformatconverter-~cwiauformatconverter.md) | The CWiauFormatConverter::~CWiauFormatConverter method is the destructor for the CWiauFormatConverter class. |
-| [wiautil.CWiauFormatConverter.ConvertToBmp](nf-wiautil-cwiauformatconverter-converttobmp.md) | The CWiauFormatConverter::ConvertToBmp method converts an image to BMP format. |
-| [wiautil.CWiauFormatConverter.CWiauFormatConverter](nf-wiautil-cwiauformatconverter-cwiauformatconverter.md) | The CWiauFormatConverter::CWiauFormatConverter method is the constructor for the CWiauFormatConverter class. |
-| [wiautil.CWiauFormatConverter.Init](nf-wiautil-cwiauformatconverter-init.md) | The CWiauFormatConverter::Init method initializes the CWiauFormatConverter class and GDI+ for converting images. This method should be called only once. |
-| [wiautil.CWiauFormatConverter.IsFormatSupported](nf-wiautil-cwiauformatconverter-isformatsupported.md) | The CWiauFormatConverter::IsFormatSupported method verifies that GDI+ supports the image format that is to be converted. |
+| [CWiauFormatConverter::~CWiauFormatConverter](nf-wiautil-cwiauformatconverter-~cwiauformatconverter.md) | The CWiauFormatConverter::~CWiauFormatConverter method is the destructor for the CWiauFormatConverter class. |
+| [CWiauFormatConverter::ConvertToBmp](nf-wiautil-cwiauformatconverter-converttobmp.md) | The CWiauFormatConverter::ConvertToBmp method converts an image to BMP format. |
+| [CWiauFormatConverter::CWiauFormatConverter](nf-wiautil-cwiauformatconverter-cwiauformatconverter.md) | The CWiauFormatConverter::CWiauFormatConverter method is the constructor for the CWiauFormatConverter class. |
+| [CWiauFormatConverter::Init](nf-wiautil-cwiauformatconverter-init.md) | The CWiauFormatConverter::Init method initializes the CWiauFormatConverter class and GDI+ for converting images. This method should be called only once. |
+| [CWiauFormatConverter::IsFormatSupported](nf-wiautil-cwiauformatconverter-isformatsupported.md) | The CWiauFormatConverter::IsFormatSupported method verifies that GDI+ supports the image format that is to be converted. |
 
 
 ## Requirements

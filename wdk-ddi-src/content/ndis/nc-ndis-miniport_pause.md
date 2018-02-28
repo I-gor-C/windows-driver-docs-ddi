@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 047241a5-6f52-4a82-a334-8508f0de5e1a
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportpause, MiniportPause callback function [Network Drivers Starting with Windows Vista], MiniportPause, MINIPORT_PAUSE, MINIPORT_PAUSE, ndis/MiniportPause, miniport_functions_ref_ff1257db-4c3e-4e0d-8d46-1736567339ba.xml
+ms.keywords: MINIPORT_PAUSE, MiniportPause, MiniportPause callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_ff1257db-4c3e-4e0d-8d46-1736567339ba.xml, ndis/MiniportPause, netvista.miniportpause
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportPause
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_PAUSE function
+# MINIPORT_PAUSE callback function
 NDIS calls a miniport driver's 
    <i>MiniportPause</i> function to stop the flow of network data through a specified miniport adapter.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_PAUSE</b> type. For more
@@ -297,59 +297,19 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
-   NdisMIndicateReceiveNetBufferLists</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
-   MiniportDevicePnPEventNotify</a>
-
-
-
-<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismpausecomplete.md">NdisMPauseComplete</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
-   MiniportReturnNetBufferLists</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
-   NdisMSendNetBufferListsComplete</a>
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndismpausecomplete.md">NdisMPauseComplete</a>
 
 
 
@@ -358,11 +318,51 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-
-
 <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+   NdisMIndicateReceiveNetBufferLists</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+   MiniportReturnNetBufferLists</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
+   MiniportDevicePnPEventNotify</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+   NdisMSendNetBufferListsComplete</a>
 
 
 

@@ -4,11 +4,11 @@ title: CWiauPropertyList
 author: windows-driver-content
 description: The CWiauPropertyList class can be used to create and maintain a list of properties for a device.
 old-location: image\cwiaupropertylist_class.htm
-old-project: Image
+old-project: image
 ms.assetid: 4f11bec0-8ff4-4fa0-824c-71ce9774d5d1
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: image.cwiaupropertylist_class, CWiauPropertyList class [Imaging Devices], CWiauPropertyList class [Imaging Devices], described, CWiauPropertyList, wiautil/CWiauPropertyList, wiauFncs_b6021ff9-9843-4f31-b2c1-aff36af0cbc6.xml
+ms.date: 2/23/2018
+ms.keywords: CWiauPropertyList, CWiauPropertyList class [Imaging Devices], CWiauPropertyList class [Imaging Devices], described, image.cwiaupropertylist_class, wiauFncs_b6021ff9-9843-4f31-b2c1-aff36af0cbc6.xml, wiautil/CWiauPropertyList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: class
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.exe
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wiautil.h
-apiname:
+api_name:
 -	CWiauPropertyList
 product: Windows
 targetos: Windows
@@ -253,14 +253,16 @@ The <b>SetValidValues(LONG, range)</b> method sets the type, as well as default,
 
 | Method | Description |
 | ---- |:---- |
-| [wiautil.CWiauPropertyList.~CWiauPropertyList](nf-wiautil-cwiaupropertylist-~cwiaupropertylist.md) | The CWiauPropertyList::~CWiauPropertyList method is the destructor for the CWiauPropertyList class. |
-| [wiautil.CWiauPropertyList.CWiauPropertyList](nf-wiautil-cwiaupropertylist-cwiaupropertylist.md) | The CWiauPropertyList::CWiauPropertyList method is the constructor for the CWiauPropertyList class. |
-| [wiautil.CWiauPropertyList.DefineProperty](nf-wiautil-cwiaupropertylist-defineproperty.md) | The CWiauPropertyList::DefineProperty method adds a property definition to a property list object. |
-| [wiautil.CWiauPropertyList.GetPropId](nf-wiautil-cwiaupropertylist-getpropid.md) | The CWiauPropertyList::GetPropId method finds the property ID for a property, given its index in the property list. |
-| [wiautil.CWiauPropertyList.Init](nf-wiautil-cwiaupropertylist-init.md) | The CWiauPropertyList::Init method initializes a property list object. |
-| [wiautil.CWiauPropertyList.LookupPropId](nf-wiautil-cwiaupropertylist-lookuppropid.md) | The CWiauPropertyList::LookupPropId method finds a property's index, given its property ID. |
-| [wiautil.CWiauPropertyList.SendToWia](nf-wiautil-cwiaupropertylist-sendtowia.md) | The CWiauPropertyList::SendToWia method calls the WIA service to define all of the properties currently contained in the property list object. |
-| [wiautil.CWiauPropertyList.SetAccessSubType](nf-wiautil-cwiaupropertylist-setaccesssubtype.md) | The CWiauPropertyList::SetAccessSubType method resets a property's access and subtype. |
+| [CWiauPropertyList::~CWiauPropertyList](nf-wiautil-cwiaupropertylist-~cwiaupropertylist.md) | The CWiauPropertyList::~CWiauPropertyList method is the destructor for the CWiauPropertyList class. |
+| [CWiauPropertyList::CWiauPropertyList](nf-wiautil-cwiaupropertylist-cwiaupropertylist.md) | The CWiauPropertyList::CWiauPropertyList method is the constructor for the CWiauPropertyList class. |
+| [CWiauPropertyList::DefineProperty](nf-wiautil-cwiaupropertylist-defineproperty.md) | The CWiauPropertyList::DefineProperty method adds a property definition to a property list object. |
+| [CWiauPropertyList::GetPropId](nf-wiautil-cwiaupropertylist-getpropid.md) | The CWiauPropertyList::GetPropId method finds the property ID for a property, given its index in the property list. |
+| [CWiauPropertyList::Init](nf-wiautil-cwiaupropertylist-init.md) | The CWiauPropertyList::Init method initializes a property list object. |
+| [CWiauPropertyList::LookupPropId](nf-wiautil-cwiaupropertylist-lookuppropid.md) | The CWiauPropertyList::LookupPropId method finds a property's index, given its property ID. |
+| [CWiauPropertyList::SendToWia](nf-wiautil-cwiaupropertylist-sendtowia.md) | The CWiauPropertyList::SendToWia method calls the WIA service to define all of the properties currently contained in the property list object. |
+| [CWiauPropertyList::SetAccessSubType](nf-wiautil-cwiaupropertylist-setaccesssubtype.md) | The CWiauPropertyList::SetAccessSubType method resets a property's access and subtype. |
+| [CWiauPropertyList::SetCurrentValue](nf-wiautil-cwiaupropertylist-setcurrentvalue.md) | The CWiauPropertyList::SetCurrentValue(BSTR) method sets the current value of a property of type BSTR, and sets its type to VT_BSTR. |
+| [CWiauPropertyList::SetValidValues](nf-wiautil-cwiaupropertylist-setvalidvalues.md) | The CWiauPropertyList::SetValidValues(BSTR, list) method sets the type, as well as default, current, and valid values for a BSTR property associated with a list of values. |
 
 
 ## Requirements

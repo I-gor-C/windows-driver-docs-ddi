@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d42eb7d5-6bf6-4f0f-a249-a869db486b6f
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ifilecallbackcleanup, IFileCallbackCleanup interface, IFileCallbackCleanup interface, described, IFileCallbackCleanup, wudfddi/IFileCallbackCleanup, UMDFFileObjectRef_8f409e94-4586-4f25-a8ba-1c39544ec661.xml, umdf.ifilecallbackcleanup
+ms.keywords: IFileCallbackCleanup, IFileCallbackCleanup interface, IFileCallbackCleanup interface, described, UMDFFileObjectRef_8f409e94-4586-4f25-a8ba-1c39544ec661.xml, umdf.ifilecallbackcleanup, wdf.ifilecallbackcleanup, wudfddi/IFileCallbackCleanup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IFileCallbackCleanup
 product: Windows
 targetos: Windows
@@ -58,7 +58,7 @@ A driver registers the <b>IFileCallbackCleanup</b> interface when it calls the <
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IFileCallbackCleanup.OnCleanupFile](nf-wudfddi-ifilecallbackcleanup-oncleanupfile.md) | The OnCleanupFile method cancels all I/O requests that a driver has pending in the framework queue. |
+| [IFileCallbackCleanup::OnCleanupFile](nf-wudfddi-ifilecallbackcleanup-oncleanupfile.md) | The OnCleanupFile method cancels all I/O requests that a driver has pending in the framework queue. |
 
 ## Remarks
 

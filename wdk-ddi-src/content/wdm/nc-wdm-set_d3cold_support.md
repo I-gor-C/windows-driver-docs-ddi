@@ -7,8 +7,8 @@ old-location: kernel\setd3coldsupport.htm
 old-project: kernel
 ms.assetid: 423C621D-0AE3-468A-94A0-AA3922B410F0
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
-ms.keywords: kernel.setd3coldsupport, SetD3ColdSupport routine [Kernel-Mode Driver Architecture], SetD3ColdSupport, SET_D3COLD_SUPPORT, SET_D3COLD_SUPPORT, wdm/SetD3ColdSupport
+ms.date: 2/24/2018
+ms.keywords: SET_D3COLD_SUPPORT, SetD3ColdSupport, SetD3ColdSupport routine [Kernel-Mode Driver Architecture], kernel.setd3coldsupport, wdm/SetD3ColdSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdm.h
-apiname:
+api_name:
 -	SetD3ColdSupport
 product: Windows
 targetos: Windows
-req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
 
-# SET_D3COLD_SUPPORT function
+# SET_D3COLD_SUPPORT callback function
 The <i>SetD3ColdSupport</i> routine enables or disables transitions to the D3cold device power state.
 
 ## Syntax
@@ -121,36 +121,6 @@ Needs = PciD3ColdSupported
 </table></span></div>
 Windows 8 is the first version of Windows to support devices that can enter and exit the D3cold substate while the computer remains in the S0 state. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543186">Device Low-Power States</a>.
 
-
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>
-
-
-
-<a href="..\wdm\nc-wdm-get_d3cold_capability.md">GetD3ColdCapability</a>
-
-
-
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a>
-
-
-
-<a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
-
-
-
- 
-
- 
-
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SET_D3COLD_SUPPORT routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
@@ -158,3 +128,31 @@ Windows 8 is the first version of Windows to support devices that can enter and
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
 | **IRQL** | PASSIVE_LEVEL |
+
+## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
+
+
+
+<a href="..\wdm\nc-wdm-get_d3cold_capability.md">GetD3ColdCapability</a>
+
+
+
+<a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>
+
+
+
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SET_D3COLD_SUPPORT routine%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

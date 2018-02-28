@@ -2,12 +2,34 @@
 UID: NA:scsiscan
 ms.assetid: fb5a05ac-d1d3-3550-a11a-67ef84846ede
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Scsiscan.h header
+
+
+
+This header is used by Imaging devices. For more information, see
+- [Imaging devices](../_image/index.md)
+
+Scsiscan.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_SCSISCAN_CMD structure](ns-scsiscan-_scsiscan_cmd.md) | The SCSISCAN_CMD structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SCSISCAN_CMD. |
+| [_SCSISCAN_INFO structure](ns-scsiscan-_scsiscan_info.md) | The SCSISCAN_INFO structure is used as a parameter to DeviceIoControl (described in the Microsoft Windows SDK documentation), when the specified I/O control code is IOCTL_SCSISCAN_GET_INFO. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # scsiscan.h header
 

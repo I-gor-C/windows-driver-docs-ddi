@@ -2,12 +2,41 @@
 UID: NA:usbbusif
 ms.assetid: ef304279-d2bf-341c-bda2-c51a3077b4a4
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Usbbusif.h header
+
+
+
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
+
+Usbbusif.h contain these programming interfaces:
+
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PUSB_BUSIFFN_ENUM_LOG_ENTRY callback](nc-usbbusif-pusb_busiffn_enum_log_entry.md) | This callback function is not supported.The EnumLogEntry routine makes a log entry. |
+| [PUSB_BUSIFFN_GETUSBDI_VERSION callback](nc-usbbusif-pusb_busiffn_getusbdi_version.md) | The GetUSBDIVersion routine returns the USB interface version number and the version number of the USB specification that defines the interface, along with information about host controller capabilities. |
+| [PUSB_BUSIFFN_IS_DEVICE_HIGH_SPEED callback](nc-usbbusif-pusb_busiffn_is_device_high_speed.md) | The USB_BUSIFFN_IS_DEVICE_HIGH_SPEED routine returns TRUE if the device is operating at high speed. |
+| [PUSB_BUSIFFN_QUERY_BUS_INFORMATION callback](nc-usbbusif-pusb_busiffn_query_bus_information.md) | The QueryBusInformation routine gets information about the bus. |
+| [PUSB_BUSIFFN_QUERY_BUS_TIME callback](nc-usbbusif-pusb_busiffn_query_bus_time.md) | The QueryBusTime function gets the current 32-bit USB frame number. |
+| [PUSB_BUSIFFN_QUERY_BUS_TIME_EX callback](nc-usbbusif-pusb_busiffn_query_bus_time_ex.md) | The QueryBusTimeEx routine gets the current 32-bit USB micro-frame number. |
+| [PUSB_BUSIFFN_QUERY_CONTROLLER_TYPE callback](nc-usbbusif-pusb_busiffn_query_controller_type.md) | The QueryControllerType routine gets information about the USB host controller to which the USB device is attached. |
+| [PUSB_BUSIFFN_SUBMIT_ISO_OUT_URB callback](nc-usbbusif-pusb_busiffn_submit_iso_out_urb.md) | This callback function is not supported.The SubmitIsoOutUrb function submits a USB request block (URB) directly to the bus driver without requiring the allocation of an IRP. |
+| [USBC_START_DEVICE_CALLBACK callback](nc-usbbusif-usbc_start_device_callback.md) | The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:----
 
 # usbbusif.h header
 
@@ -19,7 +48,8 @@ usbbusif.h contains the following programming interfaces:
 
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PUSB_BUSIFFN_ENUM_LOG_ENTRY](nc-usbbusif-pusb_busiffn_enum_log_entry.md) | This callback function is not supported.The EnumLogEntry routine makes a log entry. |
@@ -27,10 +57,10 @@ usbbusif.h contains the following programming interfaces:
 | [PUSB_BUSIFFN_IS_DEVICE_HIGH_SPEED](nc-usbbusif-pusb_busiffn_is_device_high_speed.md) | The USB_BUSIFFN_IS_DEVICE_HIGH_SPEED routine returns TRUE if the device is operating at high speed. |
 | [PUSB_BUSIFFN_QUERY_BUS_INFORMATION](nc-usbbusif-pusb_busiffn_query_bus_information.md) | The QueryBusInformation routine gets information about the bus. |
 | [PUSB_BUSIFFN_QUERY_BUS_TIME](nc-usbbusif-pusb_busiffn_query_bus_time.md) | The QueryBusTime function gets the current 32-bit USB frame number. |
+| [PUSB_BUSIFFN_QUERY_BUS_TIME_EX](nc-usbbusif-pusb_busiffn_query_bus_time_ex.md) | The QueryBusTimeEx routine gets the current 32-bit USB micro-frame number. |
 | [PUSB_BUSIFFN_QUERY_CONTROLLER_TYPE](nc-usbbusif-pusb_busiffn_query_controller_type.md) | The QueryControllerType routine gets information about the USB host controller to which the USB device is attached. |
 | [PUSB_BUSIFFN_SUBMIT_ISO_OUT_URB](nc-usbbusif-pusb_busiffn_submit_iso_out_urb.md) | This callback function is not supported.The SubmitIsoOutUrb function submits a USB request block (URB) directly to the bus driver without requiring the allocation of an IRP. |
 | [USBC_START_DEVICE_CALLBACK](nc-usbbusif-usbc_start_device_callback.md) | The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device. |
-
 
 
 ## Structures

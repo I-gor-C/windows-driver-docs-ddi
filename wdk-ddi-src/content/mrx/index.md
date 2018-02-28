@@ -2,12 +2,40 @@
 UID: NA:mrx
 ms.assetid: 557bbb65-58fa-337b-b612-f931bb1252ff
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Mrx.h header
+
+
+
+This header is used by Installable file system. For more information, see
+- [Installable file system](../_ifsk/index.md)
+
+Mrx.h contain these programming interfaces:
+
+
+## Functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [RxFsdDispatch function](nf-mrx-rxfsddispatch.md) | RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP). |
+| [RxMakeLateDeviceAvailable function](nf-mrx-rxmakelatedeviceavailable.md) | RxMakeLateDeviceAvailable modifies the device object to make a &#0034;late device&#0034; available. A late device is one that is not created in the driver's load routine. |
+| [RxRegisterMinirdr function](nf-mrx-rxregisterminirdr.md) | RxRegisterMinirdr is called by a network mini-redirector driver to register the driver with RDBSS, which adds the registration information to an internal registration table. RDBSS also builds a device object for the network mini-redirector. |
+| [RxSetDomainForMailslotBroadcast function](nf-mrx-rxsetdomainformailslotbroadcast.md) | RxSetDomainForMailslotBroadcast is called by a network mini-redirector driver to set the domain used for mailslot broadcasts if mailslots are supported by the driver. |
+| [RxStartMinirdr function](nf-mrx-rxstartminirdr.md) | RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS. |
+| [RxStopMinirdr function](nf-mrx-rxstopminirdr.md) | RxStopMinirdr is called to stop a network mini-redirector that has previously been started. |
+| [RxpUnregisterMinirdr function](nf-mrx-rxpunregisterminirdr.md) | RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table. |
+| [__RxFillAndInstallFastIoDispatch function](nf-mrx-__rxfillandinstallfastiodispatch.md) | RxFillAndInstallFastIoDispatch fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed. |
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:----
 
 # mrx.h header
 
@@ -20,6 +48,19 @@ mrx.h contains the following programming interfaces:
 
 
 ## Functions
+| Title | Description |
+| ---- |:---- |
+| [__RxFillAndInstallFastIoDispatch](nf-mrx-__rxfillandinstallfastiodispatch.md) | RxFillAndInstallFastIoDispatch fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed. |
+| [RxFsdDispatch](nf-mrx-rxfsddispatch.md) | RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP). |
+| [RxMakeLateDeviceAvailable](nf-mrx-rxmakelatedeviceavailable.md) | RxMakeLateDeviceAvailable modifies the device object to make a &#0034;late device&#0034; available. A late device is one that is not created in the driver's load routine. |
+| [RxpUnregisterMinirdr](nf-mrx-rxpunregisterminirdr.md) | RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table. |
+| [RxRegisterMinirdr](nf-mrx-rxregisterminirdr.md) | RxRegisterMinirdr is called by a network mini-redirector driver to register the driver with RDBSS, which adds the registration information to an internal registration table. RDBSS also builds a device object for the network mini-redirector. |
+| [RxSetDomainForMailslotBroadcast](nf-mrx-rxsetdomainformailslotbroadcast.md) | RxSetDomainForMailslotBroadcast is called by a network mini-redirector driver to set the domain used for mailslot broadcasts if mailslots are supported by the driver. |
+| [RxStartMinirdr](nf-mrx-rxstartminirdr.md) | RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS. |
+| [RxStopMinirdr](nf-mrx-rxstopminirdr.md) | RxStopMinirdr is called to stop a network mini-redirector that has previously been started. |
+
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PMRX_CALLDOWN](nc-mrx-pmrx_calldown.md) | This callback is called by RDBSS to request that the network mini-redirector perform an action based in the supplied IRP. |
@@ -42,11 +83,3 @@ mrx.h contains the following programming interfaces:
 | [PMRX_IS_LOCK_REALIZABLE](nc-mrx-pmrx_is_lock_realizable.md) | The MRxIsLockRealizable routine is called by RDBSS to request that a network mini-redirector indicate whether a specific byte-range lock is supported on this NET_ROOT structure. |
 | [PMRX_PREPARSE_NAME](nc-mrx-pmrx_preparse_name.md) | The MRxPreparseName routine is called by RDBSS to give a network mini-redirector the opportunity to preparse a name. |
 | [PMRX_SRVCALL_WINNER_NOTIFY](nc-mrx-pmrx_srvcall_winner_notify.md) | The MRxSrvCallWinnerNotify routine is called by RDBSS to notify a network mini-redirector that it was chosen when multiple redirectors could fulfill the request. |
-| [__RxFillAndInstallFastIoDispatch](nf-mrx-__rxfillandinstallfastiodispatch.md) | RxFillAndInstallFastIoDispatch fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed. |
-| [RxFsdDispatch](nf-mrx-rxfsddispatch.md) | RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP). |
-| [RxMakeLateDeviceAvailable](nf-mrx-rxmakelatedeviceavailable.md) | RxMakeLateDeviceAvailable modifies the device object to make a &#0034;late device&#0034; available. A late device is one that is not created in the driver's load routine. |
-| [RxpUnregisterMinirdr](nf-mrx-rxpunregisterminirdr.md) | RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table. |
-| [RxRegisterMinirdr](nf-mrx-rxregisterminirdr.md) | RxRegisterMinirdr is called by a network mini-redirector driver to register the driver with RDBSS, which adds the registration information to an internal registration table. RDBSS also builds a device object for the network mini-redirector. |
-| [RxSetDomainForMailslotBroadcast](nf-mrx-rxsetdomainformailslotbroadcast.md) | RxSetDomainForMailslotBroadcast is called by a network mini-redirector driver to set the domain used for mailslot broadcasts if mailslots are supported by the driver. |
-| [RxStartMinirdr](nf-mrx-rxstartminirdr.md) | RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS. |
-| [RxStopMinirdr](nf-mrx-rxstopminirdr.md) | RxStopMinirdr is called to stop a network mini-redirector that has previously been started. |

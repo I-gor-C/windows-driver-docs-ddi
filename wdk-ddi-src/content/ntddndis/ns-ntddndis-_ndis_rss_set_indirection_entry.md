@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 4430E19F-C603-4C52-8FC8-C36197FD2996
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRY, PNDIS_RSS_SET_INDIRECTION_ENTRY structure pointer [Network Drivers Starting with Windows Vista], NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR, _NDIS_RSS_SET_INDIRECTION_ENTRY, *PNDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR, netvista.ndis_rss_set_indirection_entry, PNDIS_RSS_SET_INDIRECTION_ENTRY, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY structure [Network Drivers Starting with Windows Vista]
+ms.keywords: "*PNDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY structure [Network Drivers Starting with Windows Vista], NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR, NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR, PNDIS_RSS_SET_INDIRECTION_ENTRY, PNDIS_RSS_SET_INDIRECTION_ENTRY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RSS_SET_INDIRECTION_ENTRY, netvista.ndis_rss_set_indirection_entry, ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRY, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRY"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	Ntddndis.h
-apiname:
+api_name:
 -	NDIS_RSS_SET_INDIRECTION_ENTRY
 product: Windows
 targetos: Windows
-req.typenames: "*PNDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY"
+req.typenames: NDIS_RSS_SET_INDIRECTION_ENTRY, *PNDIS_RSS_SET_INDIRECTION_ENTRY
 ---
 
 # _NDIS_RSS_SET_INDIRECTION_ENTRY structure
@@ -126,6 +126,10 @@ An NDIS_NIC_SWITCH_VPORT_ID value that represents the VPort identifier.
 
 ## See Also
 
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rss-set-indirection-table-entries">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a>
+
+
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entries.md">NDIS_RSS_SET_INDIRECTION_ENTRIES</a>
 
 
@@ -134,15 +138,7 @@ An NDIS_NIC_SWITCH_VPORT_ID value that represents the VPort identifier.
 
 
 
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rss-set-indirection-table-entries">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a>
-
-
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
-
-
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 50a0c8c9-06c6-48c9-a799-0949cf415f6e
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfusbrequestcompletionparams, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface, described, IWDFUsbRequestCompletionParams, wudfusb/IWDFUsbRequestCompletionParams, UMDFRequestObjectRef_f55ce370-f488-405f-a104-9a85fcab6cbb.xml, umdf.iwdfusbrequestcompletionparams
+ms.keywords: IWDFUsbRequestCompletionParams, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface, described, UMDFRequestObjectRef_f55ce370-f488-405f-a104-9a85fcab6cbb.xml, umdf.iwdfusbrequestcompletionparams, wdf.iwdfusbrequestcompletionparams, wudfusb/IWDFUsbRequestCompletionParams
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wudfusb.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFUsbRequestCompletionParams
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,10 +56,10 @@ The <b>IWDFUsbRequestCompletionParams</b> interface exposes the parameters objec
 
 | Method | Description |
 | ---- |:---- |
-| [wudfusb.IWDFUsbRequestCompletionParams.GetCompletedUsbRequestType](nf-wudfusb-iwdfusbrequestcompletionparams-getcompletedusbrequesttype.md) | The GetCompletedUsbRequestType method retrieves the type of operation that the request to be completed contains. |
-| [wudfusb.IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters](nf-wudfusb-iwdfusbrequestcompletionparams-getdevicecontroltransferparameters.md) | The GetDeviceControlTransferParameters method retrieves parameters that are associated with the completion of a device I/O control request. |
-| [wudfusb.IWDFUsbRequestCompletionParams.GetPipeReadParameters](nf-wudfusb-iwdfusbrequestcompletionparams-getpipereadparameters.md) | The GetPipeReadParameters method retrieves parameters that are associated with the completion of a read request. |
-| [wudfusb.IWDFUsbRequestCompletionParams.GetPipeWriteParameters](nf-wudfusb-iwdfusbrequestcompletionparams-getpipewriteparameters.md) | The GetPipeWriteParameters method retrieves parameters that are associated with the completion of a write request. |
+| [IWDFUsbRequestCompletionParams::GetCompletedUsbRequestType](nf-wudfusb-iwdfusbrequestcompletionparams-getcompletedusbrequesttype.md) | The GetCompletedUsbRequestType method retrieves the type of operation that the request to be completed contains. |
+| [IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters](nf-wudfusb-iwdfusbrequestcompletionparams-getdevicecontroltransferparameters.md) | The GetDeviceControlTransferParameters method retrieves parameters that are associated with the completion of a device I/O control request. |
+| [IWDFUsbRequestCompletionParams::GetPipeReadParameters](nf-wudfusb-iwdfusbrequestcompletionparams-getpipereadparameters.md) | The GetPipeReadParameters method retrieves parameters that are associated with the completion of a read request. |
+| [IWDFUsbRequestCompletionParams::GetPipeWriteParameters](nf-wudfusb-iwdfusbrequestcompletionparams-getpipewriteparameters.md) | The GetPipeWriteParameters method retrieves parameters that are associated with the completion of a write request. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d2668856-a25d-4329-b230-f36992f8f9a4
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfobject, IWDFObject interface, IWDFObject interface, described, IWDFObject, wudfddi/IWDFObject, UMDFBaseObjectRef_b2026a30-0f91-4793-8622-093ca142f794.xml, umdf.iwdfobject
+ms.keywords: IWDFObject, IWDFObject interface, IWDFObject interface, described, UMDFBaseObjectRef_b2026a30-0f91-4793-8622-093ca142f794.xml, umdf.iwdfobject, wdf.iwdfobject, wudfddi/IWDFObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFObject
 product: Windows
 targetos: Windows
@@ -56,11 +56,11 @@ The <b>IWDFObject</b> interface exposes the framework base object that provides 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFObject.AcquireLock](nf-wudfddi-iwdfobject-acquirelock.md) | The AcquireLock method prevents the framework from calling methods of interfaces that a driver registered. |
-| [wudfddi.IWDFObject.AssignContext](nf-wudfddi-iwdfobject-assigncontext.md) | The AssignContext method registers a context and a driver-supplied cleanup callback function for the object. |
-| [wudfddi.IWDFObject.DeleteWdfObject](nf-wudfddi-iwdfobject-deletewdfobject.md) | The DeleteWdfObject method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object. |
-| [wudfddi.IWDFObject.ReleaseLock](nf-wudfddi-iwdfobject-releaselock.md) | The ReleaseLock method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the IWDFObject::AcquireLock method. |
-| [wudfddi.IWDFObject.RetrieveContext](nf-wudfddi-iwdfobject-retrievecontext.md) | The RetrieveContext method retrieves a context that was previously registered through the IWDFObject::AssignContext method. |
+| [IWDFObject::AcquireLock](nf-wudfddi-iwdfobject-acquirelock.md) | The AcquireLock method prevents the framework from calling methods of interfaces that a driver registered. |
+| [IWDFObject::AssignContext](nf-wudfddi-iwdfobject-assigncontext.md) | The AssignContext method registers a context and a driver-supplied cleanup callback function for the object. |
+| [IWDFObject::DeleteWdfObject](nf-wudfddi-iwdfobject-deletewdfobject.md) | The DeleteWdfObject method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object. |
+| [IWDFObject::ReleaseLock](nf-wudfddi-iwdfobject-releaselock.md) | The ReleaseLock method allows the framework to call methods of interfaces that are registered by the driver that the framework previously prevented from calling because the driver called the IWDFObject::AcquireLock method. |
+| [IWDFObject::RetrieveContext](nf-wudfddi-iwdfobject-retrievecontext.md) | The RetrieveContext method retrieves a context that was previously registered through the IWDFObject::AssignContext method. |
 
 ## Remarks
 

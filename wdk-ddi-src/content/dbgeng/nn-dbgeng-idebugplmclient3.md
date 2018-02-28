@@ -4,11 +4,11 @@ title: IDebugPlmClient3
 author: windows-driver-content
 description: This interface supports Process Lifecycle Management (PLM) for the debug client.
 old-location: debugger\idebugplmclient3.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5B0580FF-0829-406A-B511-C0CD91A08D5F
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugplmclient3, IDebugPlmClient3 interface [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], described, IDebugPlmClient3, dbgeng/IDebugPlmClient3
+ms.date: 2/23/2018
+ms.keywords: IDebugPlmClient3, IDebugPlmClient3 interface [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], described, dbgeng/IDebugPlmClient3, debugger.idebugplmclient3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugPlmClient3
 product: Windows
 targetos: Windows
@@ -53,15 +53,15 @@ This interface supports Process Lifecycle Management (PLM) for the debug client.
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugPlmClient3.ActivateAndDebugPlmBgTaskWide](nf-dbgeng-idebugplmclient3-activateanddebugplmbgtaskwide.md) | Launches and attaches to a Process Lifecycle Management (PLM) background task. |
-| [dbgeng.IDebugPlmClient3.DisablePlmPackageDebugWide](nf-dbgeng-idebugplmclient3-disableplmpackagedebugwide.md) | Disables a Process Lifecycle Management (PLM) package debug. |
-| [dbgeng.IDebugPlmClient3.EnablePlmPackageDebugWide](nf-dbgeng-idebugplmclient3-enableplmpackagedebugwide.md) | Enables a Process Lifecycle Management (PLM) package debug. |
-| [dbgeng.IDebugPlmClient3.LaunchAndDebugPlmAppWide](nf-dbgeng-idebugplmclient3-launchanddebugplmappwide.md) | Launches and attaches to a Process Lifecycle Management (PLM) application. |
-| [dbgeng.IDebugPlmClient3.QueryPlmPackageList](nf-dbgeng-idebugplmclient3-queryplmpackagelist.md) | Query a Process Lifecycle Management (PLM) package list. |
-| [dbgeng.IDebugPlmClient3.QueryPlmPackageWide](nf-dbgeng-idebugplmclient3-queryplmpackagewide.md) | Query a Process Lifecycle Management (PLM) package. |
-| [dbgeng.IDebugPlmClient3.ResumePlmPackageWide](nf-dbgeng-idebugplmclient3-resumeplmpackagewide.md) | Resumes a Process Lifecycle Management (PLM) package. |
-| [dbgeng.IDebugPlmClient3.SuspendPlmPackageWide](nf-dbgeng-idebugplmclient3-suspendplmpackagewide.md) | Suspends a Process Lifecycle Management (PLM) package. |
-| [dbgeng.IDebugPlmClient3.TerminatePlmPackageWide](nf-dbgeng-idebugplmclient3-terminateplmpackagewide.md) | Ends a Process Lifecycle Management (PLM) package. |
+| [IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide](nf-dbgeng-idebugplmclient3-activateanddebugplmbgtaskwide.md) | Launches and attaches to a Process Lifecycle Management (PLM) background task. |
+| [IDebugPlmClient3::DisablePlmPackageDebugWide](nf-dbgeng-idebugplmclient3-disableplmpackagedebugwide.md) | Disables a Process Lifecycle Management (PLM) package debug. |
+| [IDebugPlmClient3::EnablePlmPackageDebugWide](nf-dbgeng-idebugplmclient3-enableplmpackagedebugwide.md) | Enables a Process Lifecycle Management (PLM) package debug. |
+| [IDebugPlmClient3::LaunchAndDebugPlmAppWide](nf-dbgeng-idebugplmclient3-launchanddebugplmappwide.md) | Launches and attaches to a Process Lifecycle Management (PLM) application. |
+| [IDebugPlmClient3::QueryPlmPackageList](nf-dbgeng-idebugplmclient3-queryplmpackagelist.md) | Query a Process Lifecycle Management (PLM) package list. |
+| [IDebugPlmClient3::QueryPlmPackageWide](nf-dbgeng-idebugplmclient3-queryplmpackagewide.md) | Query a Process Lifecycle Management (PLM) package. |
+| [IDebugPlmClient3::ResumePlmPackageWide](nf-dbgeng-idebugplmclient3-resumeplmpackagewide.md) | Resumes a Process Lifecycle Management (PLM) package. |
+| [IDebugPlmClient3::SuspendPlmPackageWide](nf-dbgeng-idebugplmclient3-suspendplmpackagewide.md) | Suspends a Process Lifecycle Management (PLM) package. |
+| [IDebugPlmClient3::TerminatePlmPackageWide](nf-dbgeng-idebugplmclient3-terminateplmpackagewide.md) | Ends a Process Lifecycle Management (PLM) package. |
 
 ## Remarks
 

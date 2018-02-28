@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: D679DEF0-1229-4731-8024-4DEDAE5B0185
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportidlenotification, MiniportIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportIdleNotification, MINIPORT_IDLE_NOTIFICATION, MINIPORT_IDLE_NOTIFICATION, ndis/MiniportIdleNotification
+ms.keywords: MINIPORT_IDLE_NOTIFICATION, MiniportIdleNotification, MiniportIdleNotification callback function [Network Drivers Starting with Windows Vista], ndis/MiniportIdleNotification, netvista.miniportidlenotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportIdleNotification
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_IDLE_NOTIFICATION function
+# MINIPORT_IDLE_NOTIFICATION callback function
 NDIS calls the  <i>MiniportIdleNotification</i> handler function to start the NDIS selective suspend operation on an idle network adapter. Through this operation, the network adapter is suspended and transitioned to a low-power state.
 
 ## Syntax

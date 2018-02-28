@@ -4,11 +4,11 @@ title: IDebugOutputStream
 author: windows-driver-content
 description: Supports the debug output stream.
 old-location: debugger\idebugoutputstream.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 7A9AB25B-2B8B-4E8A-9E67-79C56181E5D9
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugoutputstream, IDebugOutputStream interface [Windows Debugging], IDebugOutputStream interface [Windows Debugging], described, IDebugOutputStream, dbgeng/IDebugOutputStream
+ms.date: 2/23/2018
+ms.keywords: IDebugOutputStream, IDebugOutputStream interface [Windows Debugging], IDebugOutputStream interface [Windows Debugging], described, dbgeng/IDebugOutputStream, debugger.idebugoutputstream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dbgeng.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dbgeng.h
-apiname:
+api_name:
 -	IDebugOutputStream
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ Supports the debug output stream.
 
 | Method | Description |
 | ---- |:---- |
-| [dbgeng.IDebugOutputStream.Write](nf-dbgeng-idebugoutputstream-write.md) | Writes to the debug output stream. |
+| [IDebugOutputStream::Write](nf-dbgeng-idebugoutputstream-write.md) | Writes to the debug output stream. |
 
 ## Remarks
 

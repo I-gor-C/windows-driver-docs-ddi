@@ -7,8 +7,8 @@ old-location: stream\ikstopology.htm
 old-project: stream
 ms.assetid: 418a415c-b4db-41a1-825e-66704c45e134
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.ikstopology, IKsTopology interface [Streaming Media Devices], IKsTopology interface [Streaming Media Devices], described, IKsTopology, ksproxy/IKsTopology, ksproxy_521e5b73-c9cc-4cb2-acf5-746e470678cd.xml
+ms.date: 2/23/2018
+ms.keywords: IKsTopology, IKsTopology interface [Streaming Media Devices], IKsTopology interface [Streaming Media Devices], described, ksproxy/IKsTopology, ksproxy_521e5b73-c9cc-4cb2-acf5-746e470678cd.xml, stream.ikstopology
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Ksproxy.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	ksproxy.h
-apiname:
+api_name:
 -	IKsTopology
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ The <b>IKsTopology</b> interface provides a method that opens topology node obje
 
 | Method | Description |
 | ---- |:---- |
-| [ksproxy.IKsTopology.CreateNodeInstance](nf-ksproxy-ikstopology-createnodeinstance.md) | The CreateNodeInstance method requests a KS filter object to open a topology node object. |
+| [IKsTopology::CreateNodeInstance](nf-ksproxy-ikstopology-createnodeinstance.md) | The CreateNodeInstance method requests a KS filter object to open a topology node object. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.filtercanceldirectoidrequest, FilterCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], FilterCancelDirectOidRequest, FILTER_CANCEL_DIRECT_OID_REQUEST, FILTER_CANCEL_DIRECT_OID_REQUEST, ndis/FilterCancelDirectOidRequest, ndis_request_direct_ref_e9bd9db7-8a50-485e-9592-e43461963137.xml
+ms.keywords: FILTER_CANCEL_DIRECT_OID_REQUEST, FilterCancelDirectOidRequest, FilterCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/FilterCancelDirectOidRequest, ndis_request_direct_ref_e9bd9db7-8a50-485e-9592-e43461963137.xml, netvista.filtercanceldirectoidrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	FilterCancelDirectOidRequest
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# FILTER_CANCEL_DIRECT_OID_REQUEST function
+# FILTER_CANCEL_DIRECT_OID_REQUEST callback function
 NDIS calls a filter driver's 
   <i>FilterCancelDirectOidRequest</i> function to cancel a direct OID request.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>FILTER_CANCEL_DIRECT_OID_REQUEST</b> type. For more
@@ -167,20 +167,20 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
    NdisFDirectOidRequestComplete</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-
-
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 
 

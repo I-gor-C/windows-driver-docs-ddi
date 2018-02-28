@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b2c46419-644b-4ad4-aa50-7c6e541638aa
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: ndis/NdisIMAssociateMiniport, NdisIMAssociateMiniport, NdisIMAssociateMiniport function [Network Drivers Starting with Windows Vista], netvista.ndisimassociateminiport, intermediate_ref_2f9545a6-262c-4347-b192-16ea23314410.xml
+ms.keywords: NdisIMAssociateMiniport, NdisIMAssociateMiniport function [Network Drivers Starting with Windows Vista], intermediate_ref_2f9545a6-262c-4347-b192-16ea23314410.xml, ndis/NdisIMAssociateMiniport, netvista.ndisimassociateminiport
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,19 +29,19 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	ndis.lib
 -	ndis.dll
-apiname:
+api_name:
 -	NdisIMAssociateMiniport
 product: Windows
 targetos: Windows
-req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -86,7 +86,7 @@ Any NDIS intermediate driver that exports both
     <b>NdisIMAssociateMiniport</b> to inform the NDIS library about its miniport upper edge and its protocol
     lower edge. Such an intermediate driver calls 
     <b>NdisIMAssociateMiniport</b> during its 
-    <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. For more information about 
+    <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine. For more information about 
     <b>DriverEntry</b>, see 
     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548818">DriverEntry of NDIS
     Intermediate Drivers</a>.
@@ -103,7 +103,7 @@ Any NDIS intermediate driver that exports both
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
 
 
@@ -111,7 +111,7 @@ Any NDIS intermediate driver that exports both
 
 
 
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+<a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: d8a2fa19-8f44-4088-b515-69c9f2119714
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: RtlInsertUnicodePrefix routine [Installable File System Drivers], ifsk.rtlinsertunicodeprefix, ntifs/RtlInsertUnicodePrefix, RtlInsertUnicodePrefix, rtlref_5c8e1a42-5c73-4029-9c1f-5426e43e123c.xml
+ms.keywords: RtlInsertUnicodePrefix, RtlInsertUnicodePrefix routine [Installable File System Drivers], ifsk.rtlinsertunicodeprefix, ntifs/RtlInsertUnicodePrefix, rtlref_5c8e1a42-5c73-4029-9c1f-5426e43e123c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: "< DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	RtlInsertUnicodePrefix
 product: Windows
 targetos: Windows
@@ -100,15 +100,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-rtlremoveunicodeprefix.md">RtlRemoveUnicodePrefix</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 
 
@@ -116,7 +108,15 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 
 
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
 
 
 

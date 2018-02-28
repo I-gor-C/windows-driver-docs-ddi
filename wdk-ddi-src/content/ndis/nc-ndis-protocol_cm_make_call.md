@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ede0a18a-cd3b-4fbb-a16b-e7493940d633
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolcmmakecall, ProtocolCmMakeCall callback function [Network Drivers Starting with Windows Vista], ProtocolCmMakeCall, PROTOCOL_CM_MAKE_CALL, PROTOCOL_CM_MAKE_CALL, ndis/ProtocolCmMakeCall, condis_call_manager_ref_4f72c0f7-470b-496c-adbb-ea465246fb48.xml
+ms.keywords: PROTOCOL_CM_MAKE_CALL, ProtocolCmMakeCall, ProtocolCmMakeCall callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_4f72c0f7-470b-496c-adbb-ea465246fb48.xml, ndis/ProtocolCmMakeCall, netvista.protocolcmmakecall
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolCmMakeCall
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CM_MAKE_CALL function
+# PROTOCOL_CM_MAKE_CALL callback function
 The 
   <i>ProtocolCmMakeCall</i> function is a required function that sets up media specific parameters for a
   virtual connection (VC) and activates the virtual connection.
@@ -263,7 +263,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 
 
@@ -272,10 +276,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
 
 
 

@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 6C091427-59FF-4101-ACD6-353C959794F6
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.oninterruptenable, OnInterruptEnable callback function, OnInterruptEnable, WUDF_INTERRUPT_ENABLE, WUDF_INTERRUPT_ENABLE, wudfinterrupt/OnInterruptEnable, umdf.oninterruptenable
+ms.keywords: OnInterruptEnable, OnInterruptEnable callback function, WUDF_INTERRUPT_ENABLE, umdf.oninterruptenable, wdf.oninterruptenable, wudfinterrupt/OnInterruptEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wudfinterrupt.h
-apiname:
+api_name:
 -	OnInterruptEnable
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# WUDF_INTERRUPT_ENABLE function
+# WUDF_INTERRUPT_ENABLE callback function
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 A driver's <i>OnInterruptEnable</i> event callback function enables a specified hardware interrupt.
@@ -160,7 +160,7 @@ Then, implement your callback function as follows:
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice::CreateInterrupt</a>
+<a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
 
 
 
@@ -168,7 +168,7 @@ Then, implement your callback function as follows:
 
 
 
-<a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
+<a href="https://msdn.microsoft.com/EE68BED8-5FDC-4590-8E95-B228F1DFD32D">IWDFDevice::CreateInterrupt</a>
 
 
 

@@ -4,11 +4,11 @@ title: IDebugFAEntryTags
 author: windows-driver-content
 description: When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins.
 old-location: debugger\idebugfaentrytags.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: B52DFB0E-0035-40C2-B2F5-5E16B16931C2
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.idebugfaentrytags, IDebugFAEntryTags interface [Windows Debugging], IDebugFAEntryTags interface [Windows Debugging], described, IDebugFAEntryTags, extsfns/IDebugFAEntryTags
+ms.date: 2/23/2018
+ms.keywords: IDebugFAEntryTags, IDebugFAEntryTags interface [Windows Debugging], IDebugFAEntryTags interface [Windows Debugging], described, debugger.idebugfaentrytags, extsfns/IDebugFAEntryTags
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: extsfns.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	extsfns.h
-apiname:
+api_name:
 -	IDebugFAEntryTags
 product: Windows
 targetos: Windows
@@ -149,12 +149,12 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991816">SetTy
 
 | Method | Description |
 | ---- |:---- |
-| [extsfns.IDebugFAEntryTags.GetProperties](nf-extsfns-idebugfaentrytags-getproperties.md) | The GetProperties method gets the name or description (or both) of a tag in a DebugFailureAnalysisTags object. |
-| [extsfns.IDebugFAEntryTags.GetTagByName](nf-extsfns-idebugfaentrytags-gettagbyname.md) | The GetTagByName method searches for a tag that has a specified name. |
-| [extsfns.IDebugFAEntryTags.GetType](nf-extsfns-idebugfaentrytags-gettype.md) | The GetType method gets the data type that is associated with a tag in a DebugFailureAnalysisTags object. |
-| [extsfns.IDebugFAEntryTags.IsValidTagToSet](nf-extsfns-idebugfaentrytags-isvalidtagtoset.md) | The IsValidTagToSet method determines whether it is OK to set the data of a specified tag. |
-| [extsfns.IDebugFAEntryTags.SetProperties](nf-extsfns-idebugfaentrytags-setproperties.md) | The SetProperties method sets the name or description (or both) of a tag in a DebugFailureAnalysisTags object. |
-| [extsfns.IDebugFAEntryTags.SetType](nf-extsfns-idebugfaentrytags-settype.md) | The SetType method sets the data type that is associated with a tag in a DebugFailureAnalysisTags object. |
+| [IDebugFAEntryTags::GetProperties](nf-extsfns-idebugfaentrytags-getproperties.md) | The GetProperties method gets the name or description (or both) of a tag in a DebugFailureAnalysisTags object. |
+| [IDebugFAEntryTags::GetTagByName](nf-extsfns-idebugfaentrytags-gettagbyname.md) | The GetTagByName method searches for a tag that has a specified name. |
+| [IDebugFAEntryTags::GetType](nf-extsfns-idebugfaentrytags-gettype.md) | The GetType method gets the data type that is associated with a tag in a DebugFailureAnalysisTags object. |
+| [IDebugFAEntryTags::IsValidTagToSet](nf-extsfns-idebugfaentrytags-isvalidtagtoset.md) | The IsValidTagToSet method determines whether it is OK to set the data of a specified tag. |
+| [IDebugFAEntryTags::SetProperties](nf-extsfns-idebugfaentrytags-setproperties.md) | The SetProperties method sets the name or description (or both) of a tag in a DebugFailureAnalysisTags object. |
+| [IDebugFAEntryTags::SetType](nf-extsfns-idebugfaentrytags-settype.md) | The SetType method sets the data type that is associated with a tag in a DebugFailureAnalysisTags object. |
 
 ## Remarks
 

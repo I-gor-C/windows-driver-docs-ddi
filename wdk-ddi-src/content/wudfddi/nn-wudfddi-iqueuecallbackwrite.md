@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 8b44e1e1-c648-4eec-bb3e-ab327dc08f98
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackwrite, IQueueCallbackWrite interface, IQueueCallbackWrite interface, described, IQueueCallbackWrite, wudfddi/IQueueCallbackWrite, UMDFQueueObjectRef_4abdce88-185f-4dab-823a-00da96d7d630.xml, umdf.iqueuecallbackwrite
+ms.keywords: IQueueCallbackWrite, IQueueCallbackWrite interface, IQueueCallbackWrite interface, described, UMDFQueueObjectRef_4abdce88-185f-4dab-823a-00da96d7d630.xml, umdf.iqueuecallbackwrite, wdf.iqueuecallbackwrite, wudfddi/IQueueCallbackWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackWrite
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ An I/O queue object notifies a driver when a write request is available for the 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackWrite.OnWrite](nf-wudfddi-iqueuecallbackwrite-onwrite.md) | The OnWrite method is called to handle a write request when an application writes information to a device through the Microsoft Win32 WriteFile or WriteFileEx function. |
+| [IQueueCallbackWrite::OnWrite](nf-wudfddi-iqueuecallbackwrite-onwrite.md) | The OnWrite method is called to handle a write request when an application writes information to a device through the Microsoft Win32 WriteFile or WriteFileEx function. |
 
 ## Remarks
 

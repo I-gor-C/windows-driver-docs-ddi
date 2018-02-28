@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 54954874-d67a-4e8b-b791-105e8018f8ca
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfremoteinterfaceinitialize, IWDFRemoteInterfaceInitialize interface, IWDFRemoteInterfaceInitialize interface, described, IWDFRemoteInterfaceInitialize, wudfddi/IWDFRemoteInterfaceInitialize, UMDFIoTargetObjectRef_0536631b-c316-41e7-856b-94a3c991c318.xml, umdf.iwdfremoteinterfaceinitialize
+ms.keywords: IWDFRemoteInterfaceInitialize, IWDFRemoteInterfaceInitialize interface, IWDFRemoteInterfaceInitialize interface, described, UMDFIoTargetObjectRef_0536631b-c316-41e7-856b-94a3c991c318.xml, umdf.iwdfremoteinterfaceinitialize, wdf.iwdfremoteinterfaceinitialize, wudfddi/IWDFRemoteInterfaceInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFRemoteInterfaceInitialize
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ UMDF-based drivers receive the <b>IWDFRemoteInterfaceInitialize</b> interface as
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFRemoteInterfaceInitialize.GetInterfaceGuid](nf-wudfddi-iwdfremoteinterfaceinitialize-getinterfaceguid.md) | The GetInterfaceGuid method retrieves the GUID that identifies a device interface. |
-| [wudfddi.IWDFRemoteInterfaceInitialize.RetrieveSymbolicLink](nf-wudfddi-iwdfremoteinterfaceinitialize-retrievesymboliclink.md) | The RetrieveSymbolicLink method retrieves the symbolic link name that the operating system assigned to a device interface. |
+| [IWDFRemoteInterfaceInitialize::GetInterfaceGuid](nf-wudfddi-iwdfremoteinterfaceinitialize-getinterfaceguid.md) | The GetInterfaceGuid method retrieves the GUID that identifies a device interface. |
+| [IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink](nf-wudfddi-iwdfremoteinterfaceinitialize-retrievesymboliclink.md) | The RetrieveSymbolicLink method retrieves the symbolic link name that the operating system assigned to a device interface. |
 
 ## Remarks
 

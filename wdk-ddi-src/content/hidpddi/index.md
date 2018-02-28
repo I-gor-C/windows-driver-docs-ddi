@@ -2,12 +2,33 @@
 UID: NA:hidpddi
 ms.assetid: 4eebcc15-de7e-3d7d-b3d9-c8f7b86b35cb
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Hidpddi.h header
+
+
+
+This header is used by Human Interface Devices (HID). For more information, see
+- [Human Interface Devices (HID)](../_hid/index.md)
+
+Hidpddi.h contain these programming interfaces:
+
+
+## Functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [HidP_GetCollectionDescription function](nf-hidpddi-hidp_getcollectiondescription.md) | Fills a device description block with collection description and the corresponding report ID information for the specified report descriptor. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:----
 
 # hidpddi.h header
 

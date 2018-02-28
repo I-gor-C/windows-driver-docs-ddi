@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: E697F53C-2642-4E3F-AA8C-D0802B39D187
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.wdfdevicegetdevicestackiotype, wdfdevice/WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method
+ms.keywords: WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method, wdf.wdfdevicegetdevicestackiotype, wdfdevice/WdfDeviceGetDeviceStackIoType
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: WUDFx02000.lib
 req.dll: WUDFx02000.dll; TBD
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	WUDFx02000.dll
-apiname:
+api_name:
 -	WdfDeviceGetDeviceStackIoType
 product: Windows
 targetos: Windows
@@ -68,11 +68,11 @@ A handle to a framework device object.
 
 `ReadWriteIoType`
 
-A pointer to a driver-allocated location that receives a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.
+A pointer to a driver-allocated location that receives a <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.
 
 `IoControlIoType`
 
-A pointer to a driver-allocated location that receives a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.
+A pointer to a driver-allocated location that receives a <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.
 
 
 ## Return Value

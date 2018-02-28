@@ -7,8 +7,8 @@ old-location: stream\ikspropertyset.htm
 old-project: stream
 ms.assetid: 9999d6ec-977c-4425-ad38-0c5478272c76
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: stream.ikspropertyset, IKsPropertySet interface [Streaming Media Devices], IKsPropertySet interface [Streaming Media Devices], described, IKsPropertySet, dsound/IKsPropertySet, ksproxy_5f6316c6-5bcf-4155-b4a5-976a0cee8aa5.xml
+ms.date: 2/23/2018
+ms.keywords: IKsPropertySet, IKsPropertySet interface [Streaming Media Devices], IKsPropertySet interface [Streaming Media Devices], described, dsound/IKsPropertySet, ksproxy_5f6316c6-5bcf-4155-b4a5-976a0cee8aa5.xml, stream.ikspropertyset
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dsound.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dsound.h
-apiname:
+api_name:
 -	IKsPropertySet
 product: Windows
 targetos: Windows
@@ -58,8 +58,8 @@ The IID for this interface is IID_IKsPropertySet.
 
 | Method | Description |
 | ---- |:---- |
-| [dsound.IKsPropertySet.Get](nf-dsound-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
-| [dsound.IKsPropertySet.Set](nf-dsound-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
+| [IKsPropertySet::Get](nf-dsound-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
+| [IKsPropertySet::Set](nf-dsound-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
 
 ## Remarks
 

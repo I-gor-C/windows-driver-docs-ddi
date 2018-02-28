@@ -7,8 +7,8 @@ old-location: audio\imasterclock.htm
 old-project: audio
 ms.assetid: 754aad8a-834c-4197-8505-dbf1cd74c697
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.imasterclock, IMasterClock interface [Audio Devices], IMasterClock interface [Audio Devices], described, IMasterClock, dmusicks/IMasterClock, audmp-routines_b8172e0e-55ac-4abd-8b62-39be5d708f9b.xml
+ms.date: 2/22/2018
+ms.keywords: IMasterClock, IMasterClock interface [Audio Devices], IMasterClock interface [Audio Devices], described, audio.imasterclock, audmp-routines_b8172e0e-55ac-4abd-8b62-39be5d708f9b.xml, dmusicks/IMasterClock
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dmusicks.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dmusicks.h
-apiname:
+api_name:
 -	IMasterClock
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ The <code>IMasterClock</code> interface provides Microsoft DirectMusic streams w
 
 | Method | Description |
 | ---- |:---- |
-| [dmusicks.IMasterClock.GetTime](nf-dmusicks-imasterclock-gettime.md) | The GetTime method retrieves the current reference time read from the master clock. |
+| [IMasterClock::GetTime](nf-dmusicks-imasterclock-gettime.md) | The GetTime method retrieves the current reference time read from the master clock. |
 
 ## Remarks
 

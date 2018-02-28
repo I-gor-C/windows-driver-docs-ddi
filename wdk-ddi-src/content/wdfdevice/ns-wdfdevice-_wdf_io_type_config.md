@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: EB3CEC0E-5635-410D-B8D2-031FDB0557C1
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: WDF_IO_TYPE_CONFIG, wdf.wdf_io_type_config, *PWDF_IO_TYPE_CONFIG, PWDF_IO_TYPE_CONFIG structure pointer, wdfdevice/WDF_IO_TYPE_CONFIG, PWDF_IO_TYPE_CONFIG, _WDF_IO_TYPE_CONFIG, wdfdevice/PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG structure
+ms.keywords: "*PWDF_IO_TYPE_CONFIG, PWDF_IO_TYPE_CONFIG, PWDF_IO_TYPE_CONFIG structure pointer, WDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG structure, _WDF_IO_TYPE_CONFIG, wdf.wdf_io_type_config, wdfdevice/PWDF_IO_TYPE_CONFIG, wdfdevice/WDF_IO_TYPE_CONFIG"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	wdfdevice.h
-apiname:
+api_name:
 -	WDF_IO_TYPE_CONFIG
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG"
+req.typenames: WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +66,7 @@ typedef struct _WDF_IO_TYPE_CONFIG {
 
 This member does not apply to KMDF.
 
-<b>UMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
+<b>UMDF </b>A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
     buffers of IOCTL requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
 
 `DirectTransferThreshold`
@@ -81,11 +81,11 @@ This member does not apply to KMDF.
 
 `ReadWriteIoType`
 
-<b>KMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
+<b>KMDF </b>A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
     that it receives for read and write requests.
 
 
-<b>UMDF </b>A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
+<b>UMDF </b>A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
 
 `Size`
 
@@ -110,15 +110,15 @@ If you are writing a driver using UMDF version 1.<i>x</i>, your driver calls <a 
 
 ## See Also
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
-
-
-
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
+<a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
 
 
 
 <a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>
+
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
 
 
 

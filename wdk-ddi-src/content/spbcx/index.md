@@ -2,7 +2,7 @@
 UID: NA:spbcx
 ms.assetid: 6b009b60-06dc-3225-88b1-4c355dadc70e
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,14 +22,6 @@ spbcx.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
-| [EVT_SPB_CONTROLLER_LOCK](nc-spbcx-evt_spb_controller_lock.md) | An SPB controller driver's EvtSpbControllerLock event callback function locks the SPB controller for accesses of a single target device on the bus. |
-| [EVT_SPB_CONTROLLER_OTHER](nc-spbcx-evt_spb_controller_other.md) | An SPB controller driver's EvtSpbControllerIoOther event callback function handles device I/O control requests that are not handled by other event callback functions or by the SPB framework extension (SpbCx). |
-| [EVT_SPB_CONTROLLER_READ](nc-spbcx-evt_spb_controller_read.md) | An SPB controller driver's EvtSpbControllerIoRead event callback function reads data from the specified target device into the buffers that are supplied with the read request. |
-| [EVT_SPB_CONTROLLER_SEQUENCE](nc-spbcx-evt_spb_controller_sequence.md) | An SPB controller driver's EvtSpbControllerIoSequence event callback function performs a sequence of data transfers between the specified target device and the buffers that are supplied with the sequence request. |
-| [EVT_SPB_CONTROLLER_UNLOCK](nc-spbcx-evt_spb_controller_unlock.md) | An SPB controller driver's EvtSpbControllerUnlock event callback function unlocks the SPB controller, which was locked by a previous call to the EvtSpbControllerLock event callback function. |
-| [EVT_SPB_CONTROLLER_WRITE](nc-spbcx-evt_spb_controller_write.md) | An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request. |
-| [EVT_SPB_TARGET_CONNECT](nc-spbcx-evt_spb_target_connect.md) | An SPB controller driver's EvtSpbTargetConnect event callback function opens a connection to a target device on the bus. |
-| [EVT_SPB_TARGET_DISCONNECT](nc-spbcx-evt_spb_target_disconnect.md) | An SPB controller driver's EvtSpbTargetDisconnect event callback function closes a connection to a target device that was previously opened by a call to the driver's EvtSpbTargetConnect event callback function. |
 | [SPB_CONNECTION_PARAMETERS_INIT](nf-spbcx-spb_connection_parameters_init.md) | The SPB_CONNECTION_PARAMETERS_INIT function initializes an SPB_CONNECTION_PARAMETERS structure. |
 | [SPB_CONTROLLER_CONFIG_INIT](nf-spbcx-spb_controller_config_init.md) | The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure. |
 | [SPB_REQUEST_PARAMETERS_INIT](nf-spbcx-spb_request_parameters_init.md) | The SPB_REQUEST_PARAMETERS_INIT function initializes an SPB_REQUEST_PARAMETERS structure. |
@@ -48,6 +40,18 @@ spbcx.h contains the following programming interfaces:
 | [SpbTargetGetConnectionParameters](nf-spbcx-spbtargetgetconnectionparameters.md) | The SpbTargetGetConnectionParameters method retrieves the connection parameters for a target device on the bus. |
 | [SpbTargetGetFileObject](nf-spbcx-spbtargetgetfileobject.md) | The SpbTargetGetFileObject method accepts, as an input parameter, an SPBTARGET handle to an open target device, and returns a WDFFILEOBJECT handle to this target. |
 
+
+## Callback functions
+| Title | Description |
+| ---- |:---- |
+| [EVT_SPB_CONTROLLER_LOCK](nc-spbcx-evt_spb_controller_lock.md) | An SPB controller driver's EvtSpbControllerLock event callback function locks the SPB controller for accesses of a single target device on the bus. |
+| [EVT_SPB_CONTROLLER_OTHER](nc-spbcx-evt_spb_controller_other.md) | An SPB controller driver's EvtSpbControllerIoOther event callback function handles device I/O control requests that are not handled by other event callback functions or by the SPB framework extension (SpbCx). |
+| [EVT_SPB_CONTROLLER_READ](nc-spbcx-evt_spb_controller_read.md) | An SPB controller driver's EvtSpbControllerIoRead event callback function reads data from the specified target device into the buffers that are supplied with the read request. |
+| [EVT_SPB_CONTROLLER_SEQUENCE](nc-spbcx-evt_spb_controller_sequence.md) | An SPB controller driver's EvtSpbControllerIoSequence event callback function performs a sequence of data transfers between the specified target device and the buffers that are supplied with the sequence request. |
+| [EVT_SPB_CONTROLLER_UNLOCK](nc-spbcx-evt_spb_controller_unlock.md) | An SPB controller driver's EvtSpbControllerUnlock event callback function unlocks the SPB controller, which was locked by a previous call to the EvtSpbControllerLock event callback function. |
+| [EVT_SPB_CONTROLLER_WRITE](nc-spbcx-evt_spb_controller_write.md) | An SPB controller driver's EvtSpbControllerIoWrite event callback function writes data to the specified target device from the buffers that are supplied with the write request. |
+| [EVT_SPB_TARGET_CONNECT](nc-spbcx-evt_spb_target_connect.md) | An SPB controller driver's EvtSpbTargetConnect event callback function opens a connection to a target device on the bus. |
+| [EVT_SPB_TARGET_DISCONNECT](nc-spbcx-evt_spb_target_disconnect.md) | An SPB controller driver's EvtSpbTargetDisconnect event callback function closes a connection to a target device that was previously opened by a call to the driver's EvtSpbTargetConnect event callback function. |
 
 
 ## Structures

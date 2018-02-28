@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: a1899d90-4906-458d-b7e3-122655f4d926
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicewakefromsxtriggered, EvtDeviceWakeFromSxTriggered callback function, EvtDeviceWakeFromSxTriggered, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, wdfdevice/EvtDeviceWakeFromSxTriggered, DFDeviceObjectGeneralRef_38946496-1155-44d9-8636-8343c4623000.xml, kmdf.evtdevicewakefromsxtriggered
+ms.keywords: DFDeviceObjectGeneralRef_38946496-1155-44d9-8636-8343c4623000.xml, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, EvtDeviceWakeFromSxTriggered, EvtDeviceWakeFromSxTriggered callback function, kmdf.evtdevicewakefromsxtriggered, wdf.evtdevicewakefromsxtriggered, wdfdevice/EvtDeviceWakeFromSxTriggered
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceWakeFromSxTriggered
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED function
+# EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceWakeFromSxTriggered</i> event callback function informs the driver that its device, which had previously entered a low-power device state because system power was reduced, might have triggered a wake signal.
@@ -131,15 +131,15 @@ The <b>EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED</b> function type is defined in the
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_wake_from_s0_triggered.md">EvtDeviceWakeFromS0Triggered</a>
-
-
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_sx.md">EvtDeviceArmWakeFromSx</a>
 
 
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx.md">EvtDeviceDisarmWakeFromSx</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_wake_from_s0_triggered.md">EvtDeviceWakeFromS0Triggered</a>
 
 
 

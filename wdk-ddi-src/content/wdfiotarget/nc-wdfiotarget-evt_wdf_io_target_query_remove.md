@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: cb7c97e5-081e-44fc-a759-9a1ae81de41c
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtiotargetqueryremove, EvtIoTargetQueryRemove callback function, EvtIoTargetQueryRemove, EVT_WDF_IO_TARGET_QUERY_REMOVE, EVT_WDF_IO_TARGET_QUERY_REMOVE, wdfiotarget/EvtIoTargetQueryRemove, DFIOTargetRef_9a471005-a4c8-4918-bc4c-4147bd6018f0.xml, kmdf.evtiotargetqueryremove
+ms.keywords: DFIOTargetRef_9a471005-a4c8-4918-bc4c-4147bd6018f0.xml, EVT_WDF_IO_TARGET_QUERY_REMOVE, EvtIoTargetQueryRemove, EvtIoTargetQueryRemove callback function, kmdf.evtiotargetqueryremove, wdf.evtiotargetqueryremove, wdfiotarget/EvtIoTargetQueryRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	WdfIoTarget.h
-apiname:
+api_name:
 -	EvtIoTargetQueryRemove
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY"
+req.typenames: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
 req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_IO_TARGET_QUERY_REMOVE function
+# EVT_WDF_IO_TARGET_QUERY_REMOVE callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtIoTargetQueryRemove</i> event callback function indicates whether the framework can safely remove a specified remote I/O target's device.
@@ -131,7 +131,11 @@ The <b>EVT_WDF_IO_TARGET_QUERY_REMOVE</b> function type is defined in the WdfIoT
 
 ## See Also
 
-<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_complete.md">EvtIoTargetRemoveComplete</a>
+<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
+
+
+
+<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
 
 
 
@@ -139,11 +143,7 @@ The <b>EVT_WDF_IO_TARGET_QUERY_REMOVE</b> function type is defined in the WdfIoT
 
 
 
-<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
-
-
-
-<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
+<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_complete.md">EvtIoTargetRemoveComplete</a>
 
 
 

@@ -7,8 +7,8 @@ old-location: print\iprintschemafeature_interface.htm
 old-project: print
 ms.assetid: AAC2A60B-9E70-4809-969A-68783A91B093
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintschemafeature_interface, IPrintSchemaFeature interface [Print Devices], IPrintSchemaFeature interface [Print Devices], described, IPrintSchemaFeature, printerextension/IPrintSchemaFeature
+ms.date: 2/23/2018
+ms.keywords: IPrintSchemaFeature, IPrintSchemaFeature interface [Print Devices], IPrintSchemaFeature interface [Print Devices], described, print.iprintschemafeature_interface, printerextension/IPrintSchemaFeature
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: printerextension.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Printerextension.h
-apiname:
+api_name:
 -	IPrintSchemaFeature
 product: Windows
 targetos: Windows
@@ -54,11 +54,11 @@ Exposes a Print Schema Feature element.
 
 | Method | Description |
 | ---- |:---- |
-| [printerextension.IPrintSchemaFeature.get_DisplayUI](nf-printerextension-iprintschemafeature-get_displayui.md) | Gets the setting that indicates whether or not to show the print UI. |
-| [printerextension.IPrintSchemaFeature.get_SelectedOption](nf-printerextension-iprintschemafeature-get_selectedoption.md) | Changes the selected option of the Print Schema Feature element to the specified IPrintSchemaOption element. |
-| [printerextension.IPrintSchemaFeature.get_SelectionType](nf-printerextension-iprintschemafeature-get_selectiontype.md) | Gets the selection type of the Feature. |
-| [printerextension.IPrintSchemaFeature.GetOption](nf-printerextension-iprintschemafeature-getoption.md) | Gets the option with the given name. |
-| [printerextension.IPrintSchemaFeature.put_SelectedOption](nf-printerextension-iprintschemafeature-put_selectedoption.md) | Changes the selected option of the Print Schema Feature element to the specified IPrintSchemaOption element. |
+| [IPrintSchemaFeature::get_DisplayUI](nf-printerextension-iprintschemafeature-get_displayui.md) | Gets the setting that indicates whether or not to show the print UI. |
+| [IPrintSchemaFeature::get_SelectedOption](nf-printerextension-iprintschemafeature-get_selectedoption.md) | Changes the selected option of the Print Schema Feature element to the specified IPrintSchemaOption element. |
+| [IPrintSchemaFeature::get_SelectionType](nf-printerextension-iprintschemafeature-get_selectiontype.md) | Gets the selection type of the Feature. |
+| [IPrintSchemaFeature::GetOption](nf-printerextension-iprintschemafeature-getoption.md) | Gets the option with the given name. |
+| [IPrintSchemaFeature::put_SelectedOption](nf-printerextension-iprintschemafeature-put_selectedoption.md) | Changes the selected option of the Print Schema Feature element to the specified IPrintSchemaOption element. |
 
 ## Remarks
 
@@ -73,11 +73,7 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/AC6434F5-0892-4426-98BB-BC02AD17917B">IPrintSchemaCapabilities::GetFeature</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+<a href="https://msdn.microsoft.com/3BD7B8D6-B06F-492F-A73E-DA0799387B2A">IPrintSchemaTicket::GetFeatureByKeyName</a>
 
 
 
@@ -85,7 +81,11 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
 
 
-<a href="https://msdn.microsoft.com/3BD7B8D6-B06F-492F-A73E-DA0799387B2A">IPrintSchemaTicket::GetFeatureByKeyName</a>
+<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+
+
+
+<a href="https://msdn.microsoft.com/AC6434F5-0892-4426-98BB-BC02AD17917B">IPrintSchemaCapabilities::GetFeature</a>
 
 
 
@@ -93,4 +93,4 @@ You must ensure that each Feature or Option in a PrintTicket or PrintCapabilitie
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaFeature interface%20 RELEASE:%20(2/21/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaFeature interface%20 RELEASE:%20(2/23/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

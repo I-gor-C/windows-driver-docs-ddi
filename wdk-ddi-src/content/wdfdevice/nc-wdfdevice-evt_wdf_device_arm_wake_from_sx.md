@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 4954a278-8470-402c-a8ba-5e46ca56ddf7
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtdevicearmwakefromsx, EvtDeviceArmWakeFromSx callback function, EvtDeviceArmWakeFromSx, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX, wdfdevice/EvtDeviceArmWakeFromSx, DFDeviceObjectGeneralRef_7d373786-c5fd-41fe-a5b8-341fdb703984.xml, kmdf.evtdevicearmwakefromsx
+ms.keywords: DFDeviceObjectGeneralRef_7d373786-c5fd-41fe-a5b8-341fdb703984.xml, EVT_WDF_DEVICE_ARM_WAKE_FROM_SX, EvtDeviceArmWakeFromSx, EvtDeviceArmWakeFromSx callback function, kmdf.evtdevicearmwakefromsx, wdf.evtdevicearmwakefromsx, wdfdevice/EvtDeviceArmWakeFromSx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfdevice.h
-apiname:
+api_name:
 -	EvtDeviceArmWakeFromSx
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_DEVICE_ARM_WAKE_FROM_SX function
+# EVT_WDF_DEVICE_ARM_WAKE_FROM_SX callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtDeviceArmWakeFromSx</i> event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state. The wake signal causes the device to enter its working state (D0) and causes the system to enter its working state (S0).
@@ -158,11 +158,11 @@ The <b>EVT_WDF_DEVICE_ARM_WAKE_FROM_SX</b> function type is defined in the <i>Wd
 
 
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_s0.md">EvtDeviceArmWakeFromS0</a>
-
-
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx.md">EvtDeviceDisarmWakeFromSx</a>
+
+
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_arm_wake_from_s0.md">EvtDeviceArmWakeFromS0</a>
 
 
 

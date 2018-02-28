@@ -7,8 +7,8 @@ old-location: audio\iminiportmidistream.htm
 old-project: audio
 ms.assetid: a3b763af-2800-4e6d-b9f8-060ba80de7e6
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportmidistream, IMiniportMidiStream interface [Audio Devices], IMiniportMidiStream interface [Audio Devices], described, IMiniportMidiStream, portcls/IMiniportMidiStream, audmp-routines_604abeae-e44f-418a-913f-39502b6f266b.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportMidiStream, IMiniportMidiStream interface [Audio Devices], IMiniportMidiStream interface [Audio Devices], described, audio.iminiportmidistream, audmp-routines_604abeae-e44f-418a-913f-39502b6f266b.xml, portcls/IMiniportMidiStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportMidiStream
 product: Windows
 targetos: Windows
@@ -55,10 +55,10 @@ The <code>IMiniportMidiStream</code> interface represents the MIDI stream that f
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportMidiStream.Read](nf-portcls-iminiportmidistream-read.md) | The Read method reads data from an incoming MIDI stream. |
-| [portcls.IMiniportMidiStream.SetFormat](nf-portcls-iminiportmidistream-setformat.md) | The SetFormat method sets the KS data format of the MIDI stream. |
-| [portcls.IMiniportMidiStream.SetState](nf-portcls-iminiportmidistream-setstate.md) | The SetState method sets the stream's transport state to a new state value. |
-| [portcls.IMiniportMidiStream.Write](nf-portcls-iminiportmidistream-write.md) | The Write method writes data to an outgoing MIDI stream. |
+| [IMiniportMidiStream::Read](nf-portcls-iminiportmidistream-read.md) | The Read method reads data from an incoming MIDI stream. |
+| [IMiniportMidiStream::SetFormat](nf-portcls-iminiportmidistream-setformat.md) | The SetFormat method sets the KS data format of the MIDI stream. |
+| [IMiniportMidiStream::SetState](nf-portcls-iminiportmidistream-setstate.md) | The SetState method sets the stream's transport state to a new state value. |
+| [IMiniportMidiStream::Write](nf-portcls-iminiportmidistream-write.md) | The Write method writes data to an outgoing MIDI stream. |
 
 ## Remarks
 

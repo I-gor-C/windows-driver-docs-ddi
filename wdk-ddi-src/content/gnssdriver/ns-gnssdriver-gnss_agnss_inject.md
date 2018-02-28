@@ -7,8 +7,8 @@ old-location: sensors\gnss_agnss_inject.htm
 old-project: sensors
 ms.assetid: B81F5D71-9928-412C-8199-787E71CE2638
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: PGNSS_AGNSS_INJECT structure pointer [Sensor Devices], gnssdriver/GNSS_AGNSS_INJECT, gnssdriver/PGNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT structure [Sensor Devices], *PGNSS_AGNSS_INJECT, sensors.gnss_agnss_inject, GNSS_AGNSS_INJECT
+ms.date: 2/22/2018
+ms.keywords: "*PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT structure [Sensor Devices], PGNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT structure pointer [Sensor Devices], gnssdriver/GNSS_AGNSS_INJECT, gnssdriver/PGNSS_AGNSS_INJECT, sensors.gnss_agnss_inject"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	gnssdriver.h
-apiname:
+api_name:
 -	GNSS_AGNSS_INJECT
 product: Windows
 targetos: Windows

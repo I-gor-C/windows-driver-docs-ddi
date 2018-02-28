@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: f5f8959f-edde-4d45-b93c-8f5acb08ec98
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: ntddndis/NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, *PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, ntddndis/PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, netvista.ndis_sriov_write_vf_config_space_parameters, PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS
+ms.keywords: "*PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, netvista.ndis_sriov_write_vf_config_space_parameters, ntddndis/NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS, ntddndis/PNDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	Ntddndis.h
-apiname:
+api_name:
 -	NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS
 product: Windows
 targetos: Windows
@@ -108,11 +108,11 @@ The <b>NDIS_SRIOV_WRITE_VF_CONFIG_SPACE_PARAMETERS</b> structure is used in an O
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451925">OID_SRIOV_WRITE_VF_CONFIG_SPACE</a>
+
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 
 

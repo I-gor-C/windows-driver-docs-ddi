@@ -167,13 +167,13 @@ The number of steps taken in the current list iteration.  For doubly-linked list
 
 | Method | Description |
 | ---- |:---- |
-| [engextcpp.ExtRemoteList.ExtRemoteList](nf-engextcpp-extremotelist-extremotelist.md) | The ExtRemoteList class provides a wrapper around a singly-linked or doubly-linked list. The class contains methods that can be used to move both forward and backward through the list. |
-| [engextcpp.ExtRemoteList.GetNodeOffset](nf-engextcpp-extremotelist-getnodeoffset.md) | The GetNodeOffset method returns the address of the current list item. |
-| [engextcpp.ExtRemoteList.HasNode](nf-engextcpp-extremotelist-hasnode.md) | The HasNode method determines if there is a current item in the list iteration. |
-| [engextcpp.ExtRemoteList.Next](nf-engextcpp-extremotelist-next.md) | The Next method changes the current item to the next item in the list. |
-| [engextcpp.ExtRemoteList.Prev](nf-engextcpp-extremotelist-prev.md) | The Prev method changes the current item to the previous item in the list. |
-| [engextcpp.ExtRemoteList.StartHead](nf-engextcpp-extremotelist-starthead.md) | The StartHead method initializes the list for iterating forward starting at the head. |
-| [engextcpp.ExtRemoteList.StartTail](nf-engextcpp-extremotelist-starttail.md) | The StartTail method initializes the list for iterating backward, starting at the head. |
+| [ExtRemoteList::ExtRemoteList](nf-engextcpp-extremotelist-extremotelist.md) | The ExtRemoteList class provides a wrapper around a singly-linked or doubly-linked list. The class contains methods that can be used to move both forward and backward through the list. |
+| [ExtRemoteList::GetNodeOffset](nf-engextcpp-extremotelist-getnodeoffset.md) | The GetNodeOffset method returns the address of the current list item. |
+| [ExtRemoteList::HasNode](nf-engextcpp-extremotelist-hasnode.md) | The HasNode method determines if there is a current item in the list iteration. |
+| [ExtRemoteList::Next](nf-engextcpp-extremotelist-next.md) | The Next method changes the current item to the next item in the list. |
+| [ExtRemoteList::Prev](nf-engextcpp-extremotelist-prev.md) | The Prev method changes the current item to the previous item in the list. |
+| [ExtRemoteList::StartHead](nf-engextcpp-extremotelist-starthead.md) | The StartHead method initializes the list for iterating forward starting at the head. |
+| [ExtRemoteList::StartTail](nf-engextcpp-extremotelist-starttail.md) | The StartTail method initializes the list for iterating backward, starting at the head. |
 
 
 ## Requirements

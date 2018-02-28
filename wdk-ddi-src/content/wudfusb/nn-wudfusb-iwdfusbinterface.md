@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 90770016-1267-437e-af70-99741231dc29
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfusbinterface, IWDFUsbInterface interface, IWDFUsbInterface interface, described, IWDFUsbInterface, wudfusb/IWDFUsbInterface, UMDFUSBref_d505d36b-9a59-452d-b35f-ceeff7a0b818.xml, umdf.iwdfusbinterface
+ms.keywords: IWDFUsbInterface, IWDFUsbInterface interface, IWDFUsbInterface interface, described, UMDFUSBref_d505d36b-9a59-452d-b35f-ceeff7a0b818.xml, umdf.iwdfusbinterface, wdf.iwdfusbinterface, wudfusb/IWDFUsbInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wudfusb.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFUsbInterface
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,13 +57,13 @@ The <b>IWDFUsbInterface</b> interface exposes a USB interface that a USB device 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfusb.IWDFUsbInterface.GetConfiguredSettingIndex](nf-wudfusb-iwdfusbinterface-getconfiguredsettingindex.md) | The GetConfiguredSettingIndex method retrieves the current setting index for a USB interface. |
-| [wudfusb.IWDFUsbInterface.GetInterfaceDescriptor](nf-wudfusb-iwdfusbinterface-getinterfacedescriptor.md) | The GetInterfaceDescriptor method retrieves a descriptor for a USB interface. |
-| [wudfusb.IWDFUsbInterface.GetInterfaceNumber](nf-wudfusb-iwdfusbinterface-getinterfacenumber.md) | The GetInterfaceNumber method retrieves the index of a USB interface. |
-| [wudfusb.IWDFUsbInterface.GetNumEndPoints](nf-wudfusb-iwdfusbinterface-getnumendpoints.md) | The GetNumEndPoints method retrieves the number of endpoints (pipes) on a USB interface. |
-| [wudfusb.IWDFUsbInterface.GetWinUsbHandle](nf-wudfusb-iwdfusbinterface-getwinusbhandle.md) | The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a USB interface. |
-| [wudfusb.IWDFUsbInterface.RetrieveUsbPipeObject](nf-wudfusb-iwdfusbinterface-retrieveusbpipeobject.md) | The RetrieveUsbPipeObject method retrieves a USB pipe object for the specified pipe index. |
-| [wudfusb.IWDFUsbInterface.SelectSetting](nf-wudfusb-iwdfusbinterface-selectsetting.md) | The SelectSetting method selects the specified alternate setting on a USB interface. |
+| [IWDFUsbInterface::GetConfiguredSettingIndex](nf-wudfusb-iwdfusbinterface-getconfiguredsettingindex.md) | The GetConfiguredSettingIndex method retrieves the current setting index for a USB interface. |
+| [IWDFUsbInterface::GetInterfaceDescriptor](nf-wudfusb-iwdfusbinterface-getinterfacedescriptor.md) | The GetInterfaceDescriptor method retrieves a descriptor for a USB interface. |
+| [IWDFUsbInterface::GetInterfaceNumber](nf-wudfusb-iwdfusbinterface-getinterfacenumber.md) | The GetInterfaceNumber method retrieves the index of a USB interface. |
+| [IWDFUsbInterface::GetNumEndPoints](nf-wudfusb-iwdfusbinterface-getnumendpoints.md) | The GetNumEndPoints method retrieves the number of endpoints (pipes) on a USB interface. |
+| [IWDFUsbInterface::GetWinUsbHandle](nf-wudfusb-iwdfusbinterface-getwinusbhandle.md) | The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a USB interface. |
+| [IWDFUsbInterface::RetrieveUsbPipeObject](nf-wudfusb-iwdfusbinterface-retrieveusbpipeobject.md) | The RetrieveUsbPipeObject method retrieves a USB pipe object for the specified pipe index. |
+| [IWDFUsbInterface::SelectSetting](nf-wudfusb-iwdfusbinterface-selectsetting.md) | The SelectSetting method selects the specified alternate setting on a USB interface. |
 
 ## Remarks
 

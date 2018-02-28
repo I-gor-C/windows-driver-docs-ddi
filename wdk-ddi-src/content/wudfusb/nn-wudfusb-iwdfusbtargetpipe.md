@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 16364b13-d902-4ba3-8d0a-c044946afa1e
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfusbtargetpipe, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe interface, described, IWDFUsbTargetPipe, wudfusb/IWDFUsbTargetPipe, UMDFUSBref_985f9453-7475-4e9b-894c-5d4e7b8d3971.xml, umdf.iwdfusbtargetpipe
+ms.keywords: IWDFUsbTargetPipe, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe interface, described, UMDFUSBref_985f9453-7475-4e9b-894c-5d4e7b8d3971.xml, umdf.iwdfusbtargetpipe, wdf.iwdfusbtargetpipe, wudfusb/IWDFUsbTargetPipe
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wudfusb.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFUsbTargetPipe
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,15 +57,15 @@ The <b>IWDFUsbTargetPipe</b> interface exposes a USB pipe (endpoint), which is a
 
 | Method | Description |
 | ---- |:---- |
-| [wudfusb.IWDFUsbTargetPipe.Abort](nf-wudfusb-iwdfusbtargetpipe-abort.md) | The Abort method aborts all pending transfers on a USB pipe. |
-| [wudfusb.IWDFUsbTargetPipe.Flush](nf-wudfusb-iwdfusbtargetpipe-flush.md) | The Flush method discards any data that WinUsb saved when the device returned more data than the client requested. |
-| [wudfusb.IWDFUsbTargetPipe.GetInformation](nf-wudfusb-iwdfusbtargetpipe-getinformation.md) | The GetInformation method retrieves information about a USB pipe (endpoint). |
-| [wudfusb.IWDFUsbTargetPipe.GetType](nf-wudfusb-iwdfusbtargetpipe-gettype.md) | The GetType method retrieves the type of a USB pipe. |
-| [wudfusb.IWDFUsbTargetPipe.IsInEndPoint](nf-wudfusb-iwdfusbtargetpipe-isinendpoint.md) | The IsInEndPoint method determines whether a USB pipe (endpoint) is an IN pipe. |
-| [wudfusb.IWDFUsbTargetPipe.IsOutEndPoint](nf-wudfusb-iwdfusbtargetpipe-isoutendpoint.md) | The IsOutEndPoint method determines whether a USB pipe (endpoint) is an OUT pipe. |
-| [wudfusb.IWDFUsbTargetPipe.Reset](nf-wudfusb-iwdfusbtargetpipe-reset.md) | The Reset method resets the data toggle and clears the stall condition on a USB pipe. |
-| [wudfusb.IWDFUsbTargetPipe.RetrievePipePolicy](nf-wudfusb-iwdfusbtargetpipe-retrievepipepolicy.md) | The RetrievePipePolicy method retrieves a WinUsb pipe policy. |
-| [wudfusb.IWDFUsbTargetPipe.SetPipePolicy](nf-wudfusb-iwdfusbtargetpipe-setpipepolicy.md) | The SetPipePolicy method sets the WinUsb pipe policy. |
+| [IWDFUsbTargetPipe::Abort](nf-wudfusb-iwdfusbtargetpipe-abort.md) | The Abort method aborts all pending transfers on a USB pipe. |
+| [IWDFUsbTargetPipe::Flush](nf-wudfusb-iwdfusbtargetpipe-flush.md) | The Flush method discards any data that WinUsb saved when the device returned more data than the client requested. |
+| [IWDFUsbTargetPipe::GetInformation](nf-wudfusb-iwdfusbtargetpipe-getinformation.md) | The GetInformation method retrieves information about a USB pipe (endpoint). |
+| [IWDFUsbTargetPipe::GetType](nf-wudfusb-iwdfusbtargetpipe-gettype.md) | The GetType method retrieves the type of a USB pipe. |
+| [IWDFUsbTargetPipe::IsInEndPoint](nf-wudfusb-iwdfusbtargetpipe-isinendpoint.md) | The IsInEndPoint method determines whether a USB pipe (endpoint) is an IN pipe. |
+| [IWDFUsbTargetPipe::IsOutEndPoint](nf-wudfusb-iwdfusbtargetpipe-isoutendpoint.md) | The IsOutEndPoint method determines whether a USB pipe (endpoint) is an OUT pipe. |
+| [IWDFUsbTargetPipe::Reset](nf-wudfusb-iwdfusbtargetpipe-reset.md) | The Reset method resets the data toggle and clears the stall condition on a USB pipe. |
+| [IWDFUsbTargetPipe::RetrievePipePolicy](nf-wudfusb-iwdfusbtargetpipe-retrievepipepolicy.md) | The RetrievePipePolicy method retrieves a WinUsb pipe policy. |
+| [IWDFUsbTargetPipe::SetPipePolicy](nf-wudfusb-iwdfusbtargetpipe-setpipepolicy.md) | The SetPipePolicy method sets the WinUsb pipe policy. |
 
 ## Remarks
 

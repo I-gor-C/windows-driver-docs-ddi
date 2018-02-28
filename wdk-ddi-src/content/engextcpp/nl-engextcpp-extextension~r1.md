@@ -4,11 +4,11 @@ title: ExtExtension
 author: windows-driver-content
 description: The ExtExtension class is the base class for the C++ class that represents the EngExtCpp extension library.
 old-location: debugger\extextension.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 9c6c4633-df49-4f49-8116-d680bb20c3f5
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: debugger.extextension, ExtExtension class [Windows Debugging], ExtExtension class [Windows Debugging], described, ExtExtension, engextcpp/ExtExtension, EngExtCpp_Ref_3a533353-f008-4887-b937-2098acf1c68e.xml
+ms.date: 2/22/2018
+ms.keywords: EngExtCpp_Ref_3a533353-f008-4887-b937-2098acf1c68e.xml, ExtExtension, ExtExtension class [Windows Debugging], ExtExtension class [Windows Debugging], described, debugger.extextension, engextcpp/ExtExtension
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: class
@@ -476,19 +476,19 @@ public:
 
 | Method | Description |
 | ---- |:---- |
-| [engextcpp.ExtExtension.GetNumUnnamedArgs](nf-engextcpp-extextension-getnumunnamedargs.md) | The GetNumUnnamedArgs method returns the number of unnamed arguments in the command line used to invoke the current extension command. |
-| [engextcpp.ExtExtension.GetRawArgStr](nf-engextcpp-extextension-getrawargstr.md) | The GetRawArgStr method returns a string that represents the arguments passed to the extension command. |
-| [engextcpp.ExtExtension.GetUnnamedArgStr](nf-engextcpp-extextension-getunnamedargstr.md) | The GetUnnamedArgStr method returns an unnamed string argument from the command line used to invoke the current extension command. |
-| [engextcpp.ExtExtension.GetUnnamedArgU64](nf-engextcpp-extextension-getunnamedargu64.md) | The GetUnnamedArgU64 method returns the value of an unnamed expression argument from the command line used to invoke the current extension command. |
-| [engextcpp.ExtExtension.HasUnnamedArg](nf-engextcpp-extextension-hasunnamedarg.md) | The HasUnnamedArg method indicates whether a specified unnamed argument is present in the command line used to invoke the current extension command. |
-| [engextcpp.ExtExtension.OnSessionAccessible](nf-engextcpp-extextension-onsessionaccessible.md) | The OnSessionAccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes accessible. |
-| [engextcpp.ExtExtension.OnSessionActive](nf-engextcpp-extextension-onsessionactive.md) | The OnSessionActive method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes active. |
-| [engextcpp.ExtExtension.OnSessionInaccessible](nf-engextcpp-extextension-onsessioninaccessible.md) | The OnSessionInaccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inaccessible. |
-| [engextcpp.ExtExtension.OnSessionInactive](nf-engextcpp-extextension-onsessioninactive.md) | The OnSessionInactive method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inactive. |
-| [engextcpp.ExtExtension.SetUnnamedArg](nf-engextcpp-extextension-setunnamedarg.md) | The SetUnnamedArg method sets an unnamed argument for the current extension command. |
-| [engextcpp.ExtExtension.SetUnnamedArgStr](nf-engextcpp-extextension-setunnamedargstr.md) | The SetUnnamedArgStr method sets an unnamed string argument for the current extension command. |
-| [engextcpp.ExtExtension.SetUnnamedArgU64](nf-engextcpp-extextension-setunnamedargu64.md) | The SetUnnamedArgU64 method sets the value of an unnamed expression argument for the current extension command. |
-| [engextcpp.ExtExtension.Uninitialize](nf-engextcpp-extextension-uninitialize.md) | The Uninitialize method is called by the engine to uninitialize an EngExtCpp extension library before it is unloaded. |
+| [ExtExtension::GetNumUnnamedArgs](nf-engextcpp-extextension-getnumunnamedargs.md) | The GetNumUnnamedArgs method returns the number of unnamed arguments in the command line used to invoke the current extension command. |
+| [ExtExtension::GetRawArgStr](nf-engextcpp-extextension-getrawargstr.md) | The GetRawArgStr method returns a string that represents the arguments passed to the extension command. |
+| [ExtExtension::GetUnnamedArgStr](nf-engextcpp-extextension-getunnamedargstr.md) | The GetUnnamedArgStr method returns an unnamed string argument from the command line used to invoke the current extension command. |
+| [ExtExtension::GetUnnamedArgU64](nf-engextcpp-extextension-getunnamedargu64.md) | The GetUnnamedArgU64 method returns the value of an unnamed expression argument from the command line used to invoke the current extension command. |
+| [ExtExtension::HasUnnamedArg](nf-engextcpp-extextension-hasunnamedarg.md) | The HasUnnamedArg method indicates whether a specified unnamed argument is present in the command line used to invoke the current extension command. |
+| [ExtExtension::OnSessionAccessible](nf-engextcpp-extextension-onsessionaccessible.md) | The OnSessionAccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes accessible. |
+| [ExtExtension::OnSessionActive](nf-engextcpp-extextension-onsessionactive.md) | The OnSessionActive method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes active. |
+| [ExtExtension::OnSessionInaccessible](nf-engextcpp-extextension-onsessioninaccessible.md) | The OnSessionInaccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inaccessible. |
+| [ExtExtension::OnSessionInactive](nf-engextcpp-extextension-onsessioninactive.md) | The OnSessionInactive method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inactive. |
+| [ExtExtension::SetUnnamedArg](nf-engextcpp-extextension-setunnamedarg.md) | The SetUnnamedArg method sets an unnamed argument for the current extension command. |
+| [ExtExtension::SetUnnamedArgStr](nf-engextcpp-extextension-setunnamedargstr.md) | The SetUnnamedArgStr method sets an unnamed string argument for the current extension command. |
+| [ExtExtension::SetUnnamedArgU64](nf-engextcpp-extextension-setunnamedargu64.md) | The SetUnnamedArgU64 method sets the value of an unnamed expression argument for the current extension command. |
+| [ExtExtension::Uninitialize](nf-engextcpp-extextension-uninitialize.md) | The Uninitialize method is called by the engine to uninitialize an EngExtCpp extension library before it is unloaded. |
 
 
 ## Requirements

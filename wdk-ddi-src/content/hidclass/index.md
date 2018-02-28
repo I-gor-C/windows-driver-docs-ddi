@@ -2,12 +2,40 @@
 UID: NA:hidclass
 ms.assetid: de170db5-5638-39ba-ba11-68718e93aef6
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Hidclass.h header
+
+
+
+This header is used by Human Interface Devices (HID). For more information, see
+- [Human Interface Devices (HID)](../_hid/index.md)
+
+Hidclass.h contain these programming interfaces:
+
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PHIDP_GETCAPS callback](nc-hidclass-phidp_getcaps.md) | The HidP_GetCaps routine returns a top-level collection's HIDP_CAPS structure. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_HID_COLLECTION_INFORMATION structure](ns-hidclass-_hid_collection_information.md) | The HID_COLLECTION_INFORMATION structure contains general information about a top-level collection. |
+| [_HID_XFER_PACKET structure](ns-hidclass-_hid_xfer_packet.md) | The HID_XFER_PACKET structure contains information about a HID report that the HID class driver uses with I/O requests to get or set a report. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # hidclass.h header
 
@@ -48,6 +76,11 @@ hidclass.h contains the following programming interfaces:
 | [IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS](ni-hidclass-ioctl_set_num_device_input_buffers.md) | The IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS request sets the number of buffers for the input report queue of a top-level collection. |
 
 
+
+## Callback functions
+| Title | Description |
+| ---- |:---- |
+| [PHIDP_GETCAPS](nc-hidclass-phidp_getcaps.md) | The HidP_GetCaps routine returns a top-level collection's HIDP_CAPS structure. |
 
 
 ## Structures

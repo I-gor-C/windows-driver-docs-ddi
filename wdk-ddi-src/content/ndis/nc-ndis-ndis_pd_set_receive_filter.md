@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 49587142-9C84-4F73-BE0C-D256A8E6BF4B
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.ndispdsetreceivefilter, NdisPDSetReceiveFilter callback function [Network Drivers Starting with Windows Vista], NdisPDSetReceiveFilter, NDIS_PD_SET_RECEIVE_FILTER, NDIS_PD_SET_RECEIVE_FILTER, ndis/NdisPDSetReceiveFilter
+ms.keywords: NDIS_PD_SET_RECEIVE_FILTER, NdisPDSetReceiveFilter, NdisPDSetReceiveFilter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDSetReceiveFilter, netvista.ndispdsetreceivefilter
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	NdisPDSetReceiveFilter
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# NDIS_PD_SET_RECEIVE_FILTER function
+# NDIS_PD_SET_RECEIVE_FILTER callback function
 The PacketDirect (PD) platform calls a PD-capable miniport driver's 
    <i>NdisPDSetReceiveFilter</i> function to direct specific flows of packets to a specific PD receive queue.<div class="alert"><b>Note</b>  You must declare the function by using the <b>NDIS_PD_SET_RECEIVE_FILTER</b> type. For more
    information, see the following Examples section.</div>

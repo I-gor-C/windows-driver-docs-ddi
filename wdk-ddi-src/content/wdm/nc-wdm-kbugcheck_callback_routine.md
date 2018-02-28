@@ -7,8 +7,8 @@ old-location: kernel\bugcheckcallback.htm
 old-project: kernel
 ms.assetid: ecd777f0-bba2-4f14-9fa6-8f47ac83fe7f
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
-ms.keywords: kernel.bugcheckcallback, BugCheckCallback, BugCheckCallback routine [Kernel-Mode Driver Architecture], BugCheckCallback, KBUGCHECK_CALLBACK_ROUTINE, KBUGCHECK_CALLBACK_ROUTINE, wdm/BugCheckCallback, DrvrRtns_e968f3db-9875-4f94-8781-074029354e2c.xml
+ms.date: 2/24/2018
+ms.keywords: BugCheckCallback, BugCheckCallback routine [Kernel-Mode Driver Architecture], DrvrRtns_e968f3db-9875-4f94-8781-074029354e2c.xml, KBUGCHECK_CALLBACK_ROUTINE, kernel.bugcheckcallback, wdm/BugCheckCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at HIGH_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdm.h
-apiname:
+api_name:
 -	BugCheckCallback
 product: Windows
 targetos: Windows
-req.typenames: "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
 
-# KBUGCHECK_CALLBACK_ROUTINE function
+# KBUGCHECK_CALLBACK_ROUTINE callback function
 The <i>BugCheckCallback</i> routine is executed whenever the system issues a bug check.
 
 ## Syntax
@@ -137,15 +137,7 @@ The KBUGCHECK_CALLBACK_ROUTINE function type is defined in the Wdm.h header file
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
 
 
@@ -157,7 +149,7 @@ The KBUGCHECK_CALLBACK_ROUTINE function type is defined in the Wdm.h header file
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
 
 
@@ -165,4 +157,4 @@ The KBUGCHECK_CALLBACK_ROUTINE function type is defined in the Wdm.h header file
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KBUGCHECK_CALLBACK_ROUTINE routine%20 RELEASE:%20(2/16/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KBUGCHECK_CALLBACK_ROUTINE routine%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

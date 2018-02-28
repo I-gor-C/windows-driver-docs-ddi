@@ -2,12 +2,37 @@
 UID: NA:ntddsysenv
 ms.assetid: 8081c1fb-7fac-3c8c-b9a7-bcc62bf38982
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Ntddsysenv.h header
+
+
+
+This header is used by Windows kernel. For more information, see
+- [Windows kernel](../_kernel/index.md)
+
+Ntddsysenv.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_SYSENV_VALUE structure](ns-ntddsysenv-_sysenv_value.md) | Stores the value of a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_GET_VARIABLE request. |
+| [_SYSENV_VARIABLE structure](ns-ntddsysenv-_sysenv_variable.md) | Stores the name a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_GET_VARIABLE request. |
+| [_SYSENV_VARIABLE_INFO structure](ns-ntddsysenv-_sysenv_variable_info.md) | Stores the information about a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_QUERY_VARIABLE_INFO request. |
+| [_XVARIABLE_NAME structure](ns-ntddsysenv-_xvariable_name.md) | Stores the name of a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_ENUM_VARIABLES request. |
+| [_XVARIABLE_NAME_AND_VALUE structure](ns-ntddsysenv-_xvariable_name_and_value.md) | Stores the name and value of a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_ENUM_VARIABLES and IOCTL_SYSENV_SET_VARIABLE requests. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # ntddsysenv.h header
 

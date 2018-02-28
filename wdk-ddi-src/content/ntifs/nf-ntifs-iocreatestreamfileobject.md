@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 4186a362-f75d-4633-b9eb-5b0810bf56dc
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: IoCreateStreamFileObject, IoCreateStreamFileObject routine [Installable File System Drivers], ntifs/IoCreateStreamFileObject, ioref_b800437d-cde5-4605-955f-c14152aa0576.xml, ifsk.iocreatestreamfileobject
+ms.keywords: IoCreateStreamFileObject, IoCreateStreamFileObject routine [Installable File System Drivers], ifsk.iocreatestreamfileobject, ioref_b800437d-cde5-4605-955f-c14152aa0576.xml, ntifs/IoCreateStreamFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	IoCreateStreamFileObject
 product: Windows
 targetos: Windows
@@ -96,11 +96,7 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObject</b> raises a ST
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
-
-
-
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
 
 
 
@@ -108,7 +104,11 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObject</b> raises a ST
 
 
 
-<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md">IoCreateStreamFileObjectLite</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
 
 
@@ -116,7 +116,7 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObject</b> raises a ST
 
 
 
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md">IoCreateStreamFileObjectLite</a>
 
 
 

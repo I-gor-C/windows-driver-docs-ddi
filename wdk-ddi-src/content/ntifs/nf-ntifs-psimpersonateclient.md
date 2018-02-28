@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 69cc1253-07eb-43cf-abc7-5ad02ecb014d
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: PsImpersonateClient, ntifs/PsImpersonateClient, PsImpersonateClient routine [Installable File System Drivers], ifsk.psimpersonateclient, psref_57279501-1e5a-4113-93ea-a04825989e73.xml
+ms.keywords: PsImpersonateClient, PsImpersonateClient routine [Installable File System Drivers], ifsk.psimpersonateclient, ntifs/PsImpersonateClient, psref_57279501-1e5a-4113-93ea-a04825989e73.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	DllExport
-apilocation:
+api_location:
 -	NtosKrnl.exe
-apiname:
+api_name:
 -	PsImpersonateClient
 product: Windows
 targetos: Windows
@@ -147,11 +147,7 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-psgetcurrentthread.md">PsGetCurrentThread</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
 
 
 
@@ -159,11 +155,15 @@ For more information about security and access control, see the documentation on
 
 
 
-<a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
-
-
-
 <a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
 
 
 

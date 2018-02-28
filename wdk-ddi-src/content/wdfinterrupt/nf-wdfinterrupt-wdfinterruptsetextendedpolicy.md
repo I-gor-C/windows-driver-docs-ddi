@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 043c15dc-ebd7-4d91-8f65-d89d6064cc7c
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy, kmdf.wdfinterruptsetextendedpolicy, wdfinterrupt/WdfInterruptSetExtendedPolicy, WdfInterruptSetExtendedPolicy method, DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml
+ms.keywords: DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, WdfInterruptSetExtendedPolicy, WdfInterruptSetExtendedPolicy method, kmdf.wdfinterruptsetextendedpolicy, wdf.wdfinterruptsetextendedpolicy, wdfinterrupt/WdfInterruptSetExtendedPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,17 +29,17 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfInterruptSetExtendedPolicy
 product: Windows
 targetos: Windows
@@ -70,7 +70,7 @@ A handle to a framework interrupt object.
 
 `PolicyAndGroup`
 
-A pointer to a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure that the caller allocates and initializes.
+A pointer to a <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure that the caller allocates and initializes.
 
 
 ## Return Value
@@ -100,7 +100,7 @@ For more information about handling interrupts in framework-based drivers, see <
 
 #### Examples
 
-The following code example calls <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a> to initialize a <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure; sets values for the policy, priority, and target processor set; and calls <b>WdfInterruptSetExtendedPolicy</b>. The example sets normal priority for the interrupt and assigns the interrupt to processor 0 in processor group 2. 
+The following code example calls <a hrefwdfinterrupt\nf-wdfinterrupt-wdf_interrupt_extended_policy_init.md">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a> to initialize a <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_extended_policy.md">WDF_INTERRUPT_EXTENDED_POLICY</a> structure; sets values for the policy, priority, and target processor set; and calls <b>WdfInterruptSetExtendedPolicy</b>. The example sets normal priority for the interrupt and assigns the interrupt to processor 0 in processor group 2. 
 
 <div class="code"><span codelanguage=""><table>
 <tr>

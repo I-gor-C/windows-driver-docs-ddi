@@ -7,8 +7,8 @@ old-location: audio\iservicegroup.htm
 old-project: audio
 ms.assetid: eef2741e-e1a3-471b-a756-d89990929738
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iservicegroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, IServiceGroup, portcls/IServiceGroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml
+ms.date: 2/22/2018
+ms.keywords: IServiceGroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, audio.iservicegroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml, portcls/IServiceGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IServiceGroup
 product: Windows
 targetos: Windows
@@ -55,12 +55,12 @@ Port drivers typically use service group objects to demultiplex requests for int
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IServiceGroup.AddMember](nf-portcls-iservicegroup-addmember.md) | The AddMember method adds a member to the service group. |
-| [portcls.IServiceGroup.CancelDelayedService](nf-portcls-iservicegroup-canceldelayedservice.md) | The CancelDelayedService method cancels the previously requested delayed service. |
-| [portcls.IServiceGroup.RemoveMember](nf-portcls-iservicegroup-removemember.md) | The RemoveMember method removes the specified member from the service group. |
-| [portcls.IServiceGroup.RequestDelayedService](nf-portcls-iservicegroup-requestdelayedservice.md) | The RequestDelayedService method requests service after the specified delay. |
-| [portcls.IServiceGroup.RequestService](nf-portcls-iservicegroup-requestservice.md) | TBD |
-| [portcls.IServiceGroup.SupportDelayedService](nf-portcls-iservicegroup-supportdelayedservice.md) | The SupportDelayedService method indicates that the service group should prepare to support delayed service. |
+| [IServiceGroup::AddMember](nf-portcls-iservicegroup-addmember.md) | The AddMember method adds a member to the service group. |
+| [IServiceGroup::CancelDelayedService](nf-portcls-iservicegroup-canceldelayedservice.md) | The CancelDelayedService method cancels the previously requested delayed service. |
+| [IServiceGroup::RemoveMember](nf-portcls-iservicegroup-removemember.md) | The RemoveMember method removes the specified member from the service group. |
+| [IServiceGroup::RequestDelayedService](nf-portcls-iservicegroup-requestdelayedservice.md) | The RequestDelayedService method requests service after the specified delay. |
+| [IServiceGroup::RequestService](nf-portcls-iservicegroup-requestservice.md) | TBD |
+| [IServiceGroup::SupportDelayedService](nf-portcls-iservicegroup-supportdelayedservice.md) | The SupportDelayedService method indicates that the service group should prepare to support delayed service. |
 
 ## Remarks
 

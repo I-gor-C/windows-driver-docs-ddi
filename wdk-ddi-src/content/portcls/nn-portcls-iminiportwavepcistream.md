@@ -7,8 +7,8 @@ old-location: audio\iminiportwavepcistream.htm
 old-project: audio
 ms.assetid: 2341f914-d877-4a87-ac74-fb51e646510e
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportwavepcistream, IMiniportWavePciStream interface [Audio Devices], IMiniportWavePciStream interface [Audio Devices], described, IMiniportWavePciStream, portcls/IMiniportWavePciStream, audmp-routines_4bb3e6fe-950d-4981-a35a-bc9106d98edb.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportWavePciStream, IMiniportWavePciStream interface [Audio Devices], IMiniportWavePciStream interface [Audio Devices], described, audio.iminiportwavepcistream, audmp-routines_4bb3e6fe-950d-4981-a35a-bc9106d98edb.xml, portcls/IMiniportWavePciStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportWavePciStream
 product: Windows
 targetos: Windows
@@ -55,14 +55,14 @@ The <code>IMiniportWavePciStream</code> interface provides methods for managing 
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportWavePciStream.GetAllocatorFraming](nf-portcls-iminiportwavepcistream-getallocatorframing.md) | The GetAllocatorFraming method gets the preferred allocator-framing parameters for the stream. |
-| [portcls.IMiniportWavePciStream.GetPosition](nf-portcls-iminiportwavepcistream-getposition.md) | The GetPosition method gets the current position of the stream. |
-| [portcls.IMiniportWavePciStream.MappingAvailable](nf-portcls-iminiportwavepcistream-mappingavailable.md) | The MappingAvailable method indicates that a new mapping is available. |
-| [portcls.IMiniportWavePciStream.NormalizePhysicalPosition](nf-portcls-iminiportwavepcistream-normalizephysicalposition.md) | The NormalizePhysicalPosition method converts a physical buffer position to a time-based value. |
-| [portcls.IMiniportWavePciStream.RevokeMappings](nf-portcls-iminiportwavepcistream-revokemappings.md) | The RevokeMappings method revokes mappings that were previously obtained through IPortWavePciStream::GetMapping. |
-| [portcls.IMiniportWavePciStream.Service](nf-portcls-iminiportwavepcistream-service.md) | The Service method notifies the miniport driver of a request for service. |
-| [portcls.IMiniportWavePciStream.SetFormat](nf-portcls-iminiportwavepcistream-setformat.md) | The SetFormat method sets the KS data format of the wave stream. |
-| [portcls.IMiniportWavePciStream.SetState](nf-portcls-iminiportwavepcistream-setstate.md) | The SetState method changes the state of the stream transport. |
+| [IMiniportWavePciStream::GetAllocatorFraming](nf-portcls-iminiportwavepcistream-getallocatorframing.md) | The GetAllocatorFraming method gets the preferred allocator-framing parameters for the stream. |
+| [IMiniportWavePciStream::GetPosition](nf-portcls-iminiportwavepcistream-getposition.md) | The GetPosition method gets the current position of the stream. |
+| [IMiniportWavePciStream::MappingAvailable](nf-portcls-iminiportwavepcistream-mappingavailable.md) | The MappingAvailable method indicates that a new mapping is available. |
+| [IMiniportWavePciStream::NormalizePhysicalPosition](nf-portcls-iminiportwavepcistream-normalizephysicalposition.md) | The NormalizePhysicalPosition method converts a physical buffer position to a time-based value. |
+| [IMiniportWavePciStream::RevokeMappings](nf-portcls-iminiportwavepcistream-revokemappings.md) | The RevokeMappings method revokes mappings that were previously obtained through IPortWavePciStream::GetMapping. |
+| [IMiniportWavePciStream::Service](nf-portcls-iminiportwavepcistream-service.md) | The Service method notifies the miniport driver of a request for service. |
+| [IMiniportWavePciStream::SetFormat](nf-portcls-iminiportwavepcistream-setformat.md) | The SetFormat method sets the KS data format of the wave stream. |
+| [IMiniportWavePciStream::SetState](nf-portcls-iminiportwavepcistream-setstate.md) | The SetState method changes the state of the stream transport. |
 
 ## Remarks
 

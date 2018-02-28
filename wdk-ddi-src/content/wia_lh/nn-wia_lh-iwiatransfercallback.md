@@ -4,11 +4,11 @@ title: IWiaTransferCallback
 author: windows-driver-content
 description: The IWiaTransferCallback interface is implemented by image processing filter developers and called by Microsoft Windows Image Acquisition (WIA).
 old-location: image\iwiatransfercallback_interface.htm
-old-project: Image
+old-project: image
 ms.assetid: c85e5faa-b14b-4775-a5cc-cec5e20dc974
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: image.iwiatransfercallback_interface, IWiaTransferCallback interface [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], described, IWiaTransferCallback, wia_lh/IWiaTransferCallback, IWiaTransfercallback_ae8874d9-135f-4627-bbec-51cebd6c3d69.xml
+ms.date: 2/23/2018
+ms.keywords: IWiaTransferCallback, IWiaTransferCallback interface [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], described, IWiaTransfercallback_ae8874d9-135f-4627-bbec-51cebd6c3d69.xml, image.iwiatransfercallback_interface, wia_lh/IWiaTransferCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wia_lh.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wia_lh.h
-apiname:
+api_name:
 -	IWiaTransferCallback
 product: Windows
 targetos: Windows
-req.typenames: "*PBMP_IMAGE_INFO, BMP_IMAGE_INFO"
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -60,8 +60,8 @@ The methods on this interface depend on the <b>IWiaTransfer</b> and <b>IWiaPrevi
 
 | Method | Description |
 | ---- |:---- |
-| [wia_lh.IWiaTransferCallback.GetNextStream](nf-wia_lh-iwiatransfercallback-getnextstream.md) | The IWiaTransferCallback::GetNextStream method is implemented by an image processing filter. |
-| [wia_lh.IWiaTransferCallback.TransferCallback](nf-wia_lh-iwiatransfercallback-transfercallback.md) | The IWiaTransferCallback::TransferCallback method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling IWiaTransfer::Download or the preview component's IWiaPreview::GetNewPreview. |
+| [IWiaTransferCallback::GetNextStream](nf-wia_lh-iwiatransfercallback-getnextstream.md) | The IWiaTransferCallback::GetNextStream method is implemented by an image processing filter. |
+| [IWiaTransferCallback::TransferCallback](nf-wia_lh-iwiatransfercallback-transfercallback.md) | The IWiaTransferCallback::TransferCallback method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling IWiaTransfer::Download or the preview component's IWiaPreview::GetNewPreview. |
 
 ## Remarks
 

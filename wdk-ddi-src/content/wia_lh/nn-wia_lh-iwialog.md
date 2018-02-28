@@ -4,11 +4,11 @@ title: IWiaLog
 author: windows-driver-content
 description: The IWiaLog interface provides methods to enable minidrivers to log trace, error, and warning messages to the diagnostic log file Wiaservc.log.
 old-location: image\iwialog_interface.htm
-old-project: Image
+old-project: image
 ms.assetid: b56cb3f0-1053-4104-b223-e7448a832f33
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: image.iwialog_interface, IWiaLog interface [Imaging Devices], IWiaLog interface [Imaging Devices], described, IWiaLog, wia_lh/IWiaLog, IWiaLog_0284e394-6bc5-40b8-8174-0041bfc0d5dd.xml
+ms.date: 2/23/2018
+ms.keywords: IWiaLog, IWiaLog interface [Imaging Devices], IWiaLog interface [Imaging Devices], described, IWiaLog_0284e394-6bc5-40b8-8174-0041bfc0d5dd.xml, image.iwialog_interface, wia_lh/IWiaLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wia_lh.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wia_lh.h
-apiname:
+api_name:
 -	IWiaLog
 product: Windows
 targetos: Windows
-req.typenames: "*PBMP_IMAGE_INFO, BMP_IMAGE_INFO"
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -57,9 +57,9 @@ The <b>IWiaLog</b> interface provides methods to enable minidrivers to log trace
 
 | Method | Description |
 | ---- |:---- |
-| [wia_lh.IWiaLog.hResult](nf-wia_lh-iwialog-hresult.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. |
-| [wia_lh.IWiaLog.InitializeLog](nf-wia_lh-iwialog-initializelog.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog::InitializeLog method initializes the lWiaLog interface. |
-| [wia_lh.IWiaLog.Log](nf-wia_lh-iwialog-log.md) | The IWiaLog interface is obsolete for Windows XP and later, and is no longer supported. Use the Diagnostic Log Macros instead.The IWiaLog::Log method writes a diagnostic log message to Wiaservc.log. |
+| [IWiaLog::hResult](nf-wia_lh-iwialog-hresult.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. |
+| [IWiaLog::InitializeLog](nf-wia_lh-iwialog-initializelog.md) | Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog::InitializeLog method initializes the lWiaLog interface. |
+| [IWiaLog::Log](nf-wia_lh-iwialog-log.md) | The IWiaLog interface is obsolete for Windows XP and later, and is no longer supported. Use the Diagnostic Log Macros instead.The IWiaLog::Log method writes a diagnostic log message to Wiaservc.log. |
 
 ## Remarks
 

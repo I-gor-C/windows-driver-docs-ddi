@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3104284a-4277-4f05-ae3f-3b2bb3c3437d
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfiorequest, IWDFIoRequest interface, IWDFIoRequest interface, described, IWDFIoRequest, wudfddi/IWDFIoRequest, UMDFRequestObjectRef_65cbf2de-e966-4eb3-8f3f-2012dba23d99.xml, umdf.iwdfiorequest
+ms.keywords: IWDFIoRequest, IWDFIoRequest interface, IWDFIoRequest interface, described, UMDFRequestObjectRef_65cbf2de-e966-4eb3-8f3f-2012dba23d99.xml, umdf.iwdfiorequest, wdf.iwdfiorequest, wudfddi/IWDFIoRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoRequest
 product: Windows
 targetos: Windows
@@ -56,29 +56,29 @@ The <b>IWDFIoRequest</b> interface exposes an I/O request object.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoRequest.CancelSentRequest](nf-wudfddi-iwdfiorequest-cancelsentrequest.md) | The CancelSentRequest method attempts to cancel the I/O request that the driver previously submitted to an I/O target. |
-| [wudfddi.IWDFIoRequest.Complete](nf-wudfddi-iwdfiorequest-complete.md) | The Complete method completes an I/O request. |
-| [wudfddi.IWDFIoRequest.CompleteWithInformation](nf-wudfddi-iwdfiorequest-completewithinformation.md) | The CompleteWithInformation method completes a request with the supplied information. |
-| [wudfddi.IWDFIoRequest.FormatUsingCurrentType](nf-wudfddi-iwdfiorequest-formatusingcurrenttype.md) | The FormatUsingCurrentType method formats an I/O request so that the driver can forward it, unmodified, to the next-lower driver. |
-| [wudfddi.IWDFIoRequest.ForwardToIoQueue](nf-wudfddi-iwdfiorequest-forwardtoioqueue.md) | The ForwardToIoQueue method forwards (that is, requeues) an I/O request to one of the calling driver's I/O queues. |
-| [wudfddi.IWDFIoRequest.GetCompletionParams](nf-wudfddi-iwdfiorequest-getcompletionparams.md) | The GetCompletionParams method retrieves the parameters object for the completion of an I/O request object. |
-| [wudfddi.IWDFIoRequest.GetCreateParameters](nf-wudfddi-iwdfiorequest-getcreateparameters.md) | The GetCreateParameters method retrieves the request parameters for a create-type request. |
-| [wudfddi.IWDFIoRequest.GetDeviceIoControlParameters](nf-wudfddi-iwdfiorequest-getdeviceiocontrolparameters.md) | The GetDeviceIoControlParameters method retrieves the request parameters for a device I/O control-type request. |
-| [wudfddi.IWDFIoRequest.GetFileObject](nf-wudfddi-iwdfiorequest-getfileobject.md) | The GetFileObject method retrieves a pointer to the IWDFFile interface that is associated with an I/O request. |
-| [wudfddi.IWDFIoRequest.GetInputMemory](nf-wudfddi-iwdfiorequest-getinputmemory.md) | The GetInputMemory method retrieves the memory object that represents the input buffer in an I/O request. |
-| [wudfddi.IWDFIoRequest.GetIoQueue](nf-wudfddi-iwdfiorequest-getioqueue.md) | The GetIoQueue method retrieves the I/O queue object that is associated with an I/O request. |
-| [wudfddi.IWDFIoRequest.GetOutputMemory](nf-wudfddi-iwdfiorequest-getoutputmemory.md) | The GetOutputMemory method retrieves the memory object that represents the output buffer for an I/O request. |
-| [wudfddi.IWDFIoRequest.GetReadParameters](nf-wudfddi-iwdfiorequest-getreadparameters.md) | The GetReadParameters method retrieves the request parameters for a read-type request. |
-| [wudfddi.IWDFIoRequest.GetRequestorProcessId](nf-wudfddi-iwdfiorequest-getrequestorprocessid.md) | The GetRequestorProcessId method retrieves the identifier of the process that sent an I/O request. |
-| [wudfddi.IWDFIoRequest.GetType](nf-wudfddi-iwdfiorequest-gettype.md) | The GetType method retrieves the type of operation that a request contains. |
-| [wudfddi.IWDFIoRequest.GetWriteParameters](nf-wudfddi-iwdfiorequest-getwriteparameters.md) | The GetWriteParameters method retrieves the request parameters for a write-type request. |
-| [wudfddi.IWDFIoRequest.Impersonate](nf-wudfddi-iwdfiorequest-impersonate.md) | The Impersonate method registers the interface for the method that the framework should call for impersonation. |
-| [wudfddi.IWDFIoRequest.IsFrom32BitProcess](nf-wudfddi-iwdfiorequest-isfrom32bitprocess.md) | The IsFrom32BitProcess method determines whether a request originated from a 32-bit process. |
-| [wudfddi.IWDFIoRequest.MarkCancelable](nf-wudfddi-iwdfiorequest-markcancelable.md) | The MarkCancelable method enables the canceling of the I/O request. |
-| [wudfddi.IWDFIoRequest.Send](nf-wudfddi-iwdfiorequest-send.md) | The Send method sends a request to the specified I/O target. |
-| [wudfddi.IWDFIoRequest.SetCompletionCallback](nf-wudfddi-iwdfiorequest-setcompletioncallback.md) | The SetCompletionCallback method registers the interface for the OnCompletion method that the framework should call when an I/O request completes. |
-| [wudfddi.IWDFIoRequest.SetInformation](nf-wudfddi-iwdfiorequest-setinformation.md) | The SetInformation method sets the size of information for a request. |
-| [wudfddi.IWDFIoRequest.UnmarkCancelable](nf-wudfddi-iwdfiorequest-unmarkcancelable.md) | The UnmarkCancelable method disables the canceling of an I/O request. |
+| [IWDFIoRequest::CancelSentRequest](nf-wudfddi-iwdfiorequest-cancelsentrequest.md) | The CancelSentRequest method attempts to cancel the I/O request that the driver previously submitted to an I/O target. |
+| [IWDFIoRequest::Complete](nf-wudfddi-iwdfiorequest-complete.md) | The Complete method completes an I/O request. |
+| [IWDFIoRequest::CompleteWithInformation](nf-wudfddi-iwdfiorequest-completewithinformation.md) | The CompleteWithInformation method completes a request with the supplied information. |
+| [IWDFIoRequest::FormatUsingCurrentType](nf-wudfddi-iwdfiorequest-formatusingcurrenttype.md) | The FormatUsingCurrentType method formats an I/O request so that the driver can forward it, unmodified, to the next-lower driver. |
+| [IWDFIoRequest::ForwardToIoQueue](nf-wudfddi-iwdfiorequest-forwardtoioqueue.md) | The ForwardToIoQueue method forwards (that is, requeues) an I/O request to one of the calling driver's I/O queues. |
+| [IWDFIoRequest::GetCompletionParams](nf-wudfddi-iwdfiorequest-getcompletionparams.md) | The GetCompletionParams method retrieves the parameters object for the completion of an I/O request object. |
+| [IWDFIoRequest::GetCreateParameters](nf-wudfddi-iwdfiorequest-getcreateparameters.md) | The GetCreateParameters method retrieves the request parameters for a create-type request. |
+| [IWDFIoRequest::GetDeviceIoControlParameters](nf-wudfddi-iwdfiorequest-getdeviceiocontrolparameters.md) | The GetDeviceIoControlParameters method retrieves the request parameters for a device I/O control-type request. |
+| [IWDFIoRequest::GetFileObject](nf-wudfddi-iwdfiorequest-getfileobject.md) | The GetFileObject method retrieves a pointer to the IWDFFile interface that is associated with an I/O request. |
+| [IWDFIoRequest::GetInputMemory](nf-wudfddi-iwdfiorequest-getinputmemory.md) | The GetInputMemory method retrieves the memory object that represents the input buffer in an I/O request. |
+| [IWDFIoRequest::GetIoQueue](nf-wudfddi-iwdfiorequest-getioqueue.md) | The GetIoQueue method retrieves the I/O queue object that is associated with an I/O request. |
+| [IWDFIoRequest::GetOutputMemory](nf-wudfddi-iwdfiorequest-getoutputmemory.md) | The GetOutputMemory method retrieves the memory object that represents the output buffer for an I/O request. |
+| [IWDFIoRequest::GetReadParameters](nf-wudfddi-iwdfiorequest-getreadparameters.md) | The GetReadParameters method retrieves the request parameters for a read-type request. |
+| [IWDFIoRequest::GetRequestorProcessId](nf-wudfddi-iwdfiorequest-getrequestorprocessid.md) | The GetRequestorProcessId method retrieves the identifier of the process that sent an I/O request. |
+| [IWDFIoRequest::GetType](nf-wudfddi-iwdfiorequest-gettype.md) | The GetType method retrieves the type of operation that a request contains. |
+| [IWDFIoRequest::GetWriteParameters](nf-wudfddi-iwdfiorequest-getwriteparameters.md) | The GetWriteParameters method retrieves the request parameters for a write-type request. |
+| [IWDFIoRequest::Impersonate](nf-wudfddi-iwdfiorequest-impersonate.md) | The Impersonate method registers the interface for the method that the framework should call for impersonation. |
+| [IWDFIoRequest::IsFrom32BitProcess](nf-wudfddi-iwdfiorequest-isfrom32bitprocess.md) | The IsFrom32BitProcess method determines whether a request originated from a 32-bit process. |
+| [IWDFIoRequest::MarkCancelable](nf-wudfddi-iwdfiorequest-markcancelable.md) | The MarkCancelable method enables the canceling of the I/O request. |
+| [IWDFIoRequest::Send](nf-wudfddi-iwdfiorequest-send.md) | The Send method sends a request to the specified I/O target. |
+| [IWDFIoRequest::SetCompletionCallback](nf-wudfddi-iwdfiorequest-setcompletioncallback.md) | The SetCompletionCallback method registers the interface for the OnCompletion method that the framework should call when an I/O request completes. |
+| [IWDFIoRequest::SetInformation](nf-wudfddi-iwdfiorequest-setinformation.md) | The SetInformation method sets the size of information for a request. |
+| [IWDFIoRequest::UnmarkCancelable](nf-wudfddi-iwdfiorequest-unmarkcancelable.md) | The UnmarkCancelable method disables the canceling of an I/O request. |
 
 ## Remarks
 

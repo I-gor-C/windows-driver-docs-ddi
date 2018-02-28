@@ -7,8 +7,8 @@ old-location: audio\iminiportwavecyclic.htm
 old-project: audio
 ms.assetid: 12f19ef8-ce7c-4a04-814a-a8c34beca1b9
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportwavecyclic, IMiniportWaveCyclic interface [Audio Devices], IMiniportWaveCyclic interface [Audio Devices], described, IMiniportWaveCyclic, portcls/IMiniportWaveCyclic, audmp-routines_e9dda3e8-2545-4734-bf66-e08ff0c4a1e0.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportWaveCyclic, IMiniportWaveCyclic interface [Audio Devices], IMiniportWaveCyclic interface [Audio Devices], described, audio.iminiportwavecyclic, audmp-routines_e9dda3e8-2545-4734-bf66-e08ff0c4a1e0.xml, portcls/IMiniportWaveCyclic
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportWaveCyclic
 product: Windows
 targetos: Windows
@@ -57,8 +57,8 @@ The <code>IMiniportWaveCyclic</code> interface provides a method for initializin
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportWaveCyclic.Init](nf-portcls-iminiportwavecyclic-init.md) | The Init method initializes the WaveCyclic miniport object. Initialization includes verification of the hardware using the resources specified in the resource list. |
-| [portcls.IMiniportWaveCyclic.NewStream](nf-portcls-iminiportwavecyclic-newstream.md) | The NewStream method creates a new instance of a logical stream that is associated with a specified physical channel. |
+| [IMiniportWaveCyclic::Init](nf-portcls-iminiportwavecyclic-init.md) | The Init method initializes the WaveCyclic miniport object. Initialization includes verification of the hardware using the resources specified in the resource list. |
+| [IMiniportWaveCyclic::NewStream](nf-portcls-iminiportwavecyclic-newstream.md) | The NewStream method creates a new instance of a logical stream that is associated with a specified physical channel. |
 
 ## Remarks
 

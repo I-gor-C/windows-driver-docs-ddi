@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 622e09eb-37ae-403e-9d18-acf2e7761b43
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: WDF_IO_QUEUE_READY function, WDF_IO_QUEUE_READY, kmdf.wdf_io_queue_ready, DFQueueObjectRef_d5c37eea-044b-41b6-9c0a-f910fef04d00.xml, wdf.wdf_io_queue_ready, wdfio/WDF_IO_QUEUE_READY
+ms.keywords: DFQueueObjectRef_d5c37eea-044b-41b6-9c0a-f910fef04d00.xml, WDF_IO_QUEUE_READY, WDF_IO_QUEUE_READY function, kmdf.wdf_io_queue_ready, wdf.wdf_io_queue_ready, wdfio/WDF_IO_QUEUE_READY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,15 +29,15 @@ req.type-library:
 req.lib: None
 req.dll: 
 req.irql: Any IRQL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	None
 -	None.dll
-apiname:
+api_name:
 -	WDF_IO_QUEUE_READY
 product: Windows
 targetos: Windows
@@ -63,7 +63,7 @@ BOOLEAN WDF_IO_QUEUE_READY(
 
 `State`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value that <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> returns.
+A <a href="..\wdfio\ne-wdfio-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value that <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> returns.
 
 
 ## Return Value
@@ -76,7 +76,7 @@ An I/O queue is ready if the queue can accept and dispatch I/O requests.
 
 Your driver can call <b>WDF_IO_QUEUE_READY</b> after it has called <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a>.
 
-For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
+For more information about I/O queue states, see <a href="..\wdfio\ne-wdfio-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>.
 
 
 #### Examples
@@ -117,19 +117,19 @@ IsQueueReady(
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
-
-
-
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
-
-
-
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
 
 
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>
+
+
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>
+
+
+
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
 
 
 

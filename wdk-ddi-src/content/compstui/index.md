@@ -2,12 +2,44 @@
 UID: NA:compstui
 ms.assetid: b7caed49-be56-3b9d-90b7-dce65c62402e
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Compstui.h header
+
+
+
+This header is used by print. For more information, see
+- [print](../_print/index.md)
+
+Compstui.h contain these programming interfaces:
+
+
+## Functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [CommonPropertySheetUIA function](nf-compstui-commonpropertysheetuia.md) | CPSUI's CommonPropertySheetUI function displays property sheet pages and allows user modifications to displayed values. |
+| [CommonPropertySheetUIW function](nf-compstui-commonpropertysheetuiw.md) | CPSUI's CommonPropertySheetUI function displays property sheet pages and allows user modifications to displayed values. |
+| [GetCPSUIUserData function](nf-compstui-getcpsuiuserdata.md) | CPSUI's GetCPSUIUserData function retrieves data that was previously stored using the SetCPSUIUserData function. |
+| [SetCPSUIUserData function](nf-compstui-setcpsuiuserdata.md) | CPSUI's SetCPSUIUserData function allows CPSUI applications (including printer interface DLLs) to associate nondisplayed data with a property sheet dialog box. |
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PFNCOMPROPSHEET callback](nc-compstui-pfncompropsheet.md) | The ComPropSheet function is supplied by CPSUI and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages. |
+| [PFNPROPSHEETUI callback](nc-compstui-pfnpropsheetui.md) | The PFNPROPSHEETUI function type is used by CPSUI applications (including printer interface DLLs) for defining page creation callbacks, which specify property sheet pages for creation. |
+| [_CPSUICALLBACK callback](nc-compstui-_cpsuicallback.md) | The _CPSUICALLBACK function type is used by CPSUI applications (including printer interface DLLs) for defining a callback function intended for use as a CPSUI message handler. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:----
 
 # compstui.h header
 
@@ -22,12 +54,18 @@ compstui.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
-| [_CPSUICALLBACK](nc-compstui-_cpsuicallback.md) | The _CPSUICALLBACK function type is used by CPSUI applications (including printer interface DLLs) for defining a callback function intended for use as a CPSUI message handler. |
-| [PFNCOMPROPSHEET](nc-compstui-pfncompropsheet.md) | Pointer to the common UI callback function to add, delete, or set user data. |
-| [PFNPROPSHEETUI](nc-compstui-pfnpropsheetui.md) | The PFNPROPSHEETUI function type is used by CPSUI applications (including printer interface DLLs) for defining page creation callbacks, which specify property sheet pages for creation. |
+| [CommonPropertySheetUIA](nf-compstui-commonpropertysheetuia.md) | CPSUI's CommonPropertySheetUI function displays property sheet pages and allows user modifications to displayed values. |
+| [CommonPropertySheetUIW](nf-compstui-commonpropertysheetuiw.md) | CPSUI's CommonPropertySheetUI function displays property sheet pages and allows user modifications to displayed values. |
 | [GetCPSUIUserData](nf-compstui-getcpsuiuserdata.md) | CPSUI's GetCPSUIUserData function retrieves data that was previously stored using the SetCPSUIUserData function. |
 | [SetCPSUIUserData](nf-compstui-setcpsuiuserdata.md) | CPSUI's SetCPSUIUserData function allows CPSUI applications (including printer interface DLLs) to associate nondisplayed data with a property sheet dialog box. |
 
+
+## Callback functions
+| Title | Description |
+| ---- |:---- |
+| [_CPSUICALLBACK](nc-compstui-_cpsuicallback.md) | The _CPSUICALLBACK function type is used by CPSUI applications (including printer interface DLLs) for defining a callback function intended for use as a CPSUI message handler. |
+| [PFNCOMPROPSHEET](nc-compstui-pfncompropsheet.md) | The ComPropSheet function is supplied by CPSUI and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages. |
+| [PFNPROPSHEETUI](nc-compstui-pfnpropsheetui.md) | The PFNPROPSHEETUI function type is used by CPSUI applications (including printer interface DLLs) for defining page creation callbacks, which specify property sheet pages for creation. |
 
 
 ## Structures

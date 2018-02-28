@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 8D9BC698-1E62-4DC2-B233-37022F330F98
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: serports.evtsercx2applyconfig, EvtSerCx2ApplyConfig callback function [Serial Ports], EvtSerCx2ApplyConfig, EVT_SERCX2_APPLY_CONFIG, EVT_SERCX2_APPLY_CONFIG, 2/EvtSerCx2ApplyConfig
+ms.keywords: 2/EvtSerCx2ApplyConfig, EVT_SERCX2_APPLY_CONFIG, EvtSerCx2ApplyConfig, EvtSerCx2ApplyConfig callback function [Serial Ports], serports.evtsercx2applyconfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	2.0\Sercx.h
-apiname:
+api_name:
 -	EvtSerCx2ApplyConfig
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_SERCX2_APPLY_CONFIG function
+# EVT_SERCX2_APPLY_CONFIG callback function
 The <i>EvtSerCx2ApplyConfig</i> event callback function is called by version 2 of the serial framework extension (SerCx2) to supply the serial controller driver with a list of device-specific configuration settings to apply to the serial controller hardware.
 
 ## Syntax
@@ -235,15 +235,15 @@ The pshpack1.h and poppack.h header files in the preceding code example control 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj938063">RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER</a>
-
-
-
-<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
+<a href="..\ntddser\ni-ntddser-ioctl_serial_apply_default_configuration.md">IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj938062">PNP_SERIAL_BUS_DESCRIPTOR</a>
+
+
+
+<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
 
 
 

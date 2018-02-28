@@ -7,8 +7,8 @@ old-location: display\dxgkddisystemdisplayenable.htm
 old-project: display
 ms.assetid: D938F7F4-E1FA-4C63-A31D-5ED160276565
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: display.dxgkddisystemdisplayenable, DxgkDdiSystemDisplayEnable callback function [Display Devices], DxgkDdiSystemDisplayEnable, DXGKDDI_SYSTEM_DISPLAY_ENABLE, DXGKDDI_SYSTEM_DISPLAY_ENABLE, dispmprt/DxgkDdiSystemDisplayEnable
+ms.date: 2/24/2018
+ms.keywords: DXGKDDI_SYSTEM_DISPLAY_ENABLE, DxgkDdiSystemDisplayEnable, DxgkDdiSystemDisplayEnable callback function [Display Devices], display.dxgkddisystemdisplayenable, dispmprt/DxgkDdiSystemDisplayEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	dispmprt.h
-apiname:
+api_name:
 -	DxgkDdiSystemDisplayEnable
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
-# DXGKDDI_SYSTEM_DISPLAY_ENABLE function
+# DXGKDDI_SYSTEM_DISPLAY_ENABLE callback function
 Called by the operating system to request the display miniport driver to reset the current  display device to a specified state.
 
 Starting with Windows 8, the operating system calls this function during a bugcheck operation following a system stop error.
@@ -141,19 +141,7 @@ Windows kernel-mode functions might not be available while this function is bein
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_system_display_write.md">DxgkDdiSystemDisplayWrite</a>
-
-
-
-
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_reset_device.md">DxgkDdiResetDevice</a>
-
-
-
-
-
-
 
 
 
@@ -165,18 +153,20 @@ Windows kernel-mode functions might not be available while this function is bein
 
 
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-
-
-
-
 <a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a>
 
 
 
- 
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
+
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_system_display_write.md">DxgkDdiSystemDisplayWrite</a>
+
+
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_SYSTEM_DISPLAY_ENABLE callback function%20 RELEASE:%20(2/20/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_SYSTEM_DISPLAY_ENABLE callback function%20 RELEASE:%20(2/24/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>

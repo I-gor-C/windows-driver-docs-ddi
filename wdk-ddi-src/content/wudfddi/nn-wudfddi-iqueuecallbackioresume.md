@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3f27f104-7a06-4f81-9605-2a47c7de7e01
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackioresume, IQueueCallbackIoResume interface, IQueueCallbackIoResume interface, described, IQueueCallbackIoResume, wudfddi/IQueueCallbackIoResume, UMDFQueueObjectRef_3ee832e4-15ba-4c39-bb77-38ebbc91983d.xml, umdf.iqueuecallbackioresume
+ms.keywords: IQueueCallbackIoResume, IQueueCallbackIoResume interface, IQueueCallbackIoResume interface, described, UMDFQueueObjectRef_3ee832e4-15ba-4c39-bb77-38ebbc91983d.xml, umdf.iqueuecallbackioresume, wdf.iqueuecallbackioresume, wudfddi/IQueueCallbackIoResume
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackIoResume
 product: Windows
 targetos: Windows
@@ -58,7 +58,7 @@ A driver registers the <b>IQueueCallbackIoResume</b> interface when the driver c
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackIoResume.OnIoResume](nf-wudfddi-iqueuecallbackioresume-onioresume.md) | The OnIoResume method resumes the processing of the specified I/O request from the specified queue. |
+| [IQueueCallbackIoResume::OnIoResume](nf-wudfddi-iqueuecallbackioresume-onioresume.md) | The OnIoResume method resumes the processing of the specified I/O request from the specified queue. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 99eaba29-ce17-4e79-878e-5fdf7411e56c
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportcocreatevc, MiniportCoCreateVc callback function [Network Drivers Starting with Windows Vista], MiniportCoCreateVc, MINIPORT_CO_CREATE_VC, MINIPORT_CO_CREATE_VC, ndis/MiniportCoCreateVc, condis_miniport_ref_73192f8d-af71-40f8-8118-52124bc38e94.xml
+ms.keywords: MINIPORT_CO_CREATE_VC, MiniportCoCreateVc, MiniportCoCreateVc callback function [Network Drivers Starting with Windows Vista], condis_miniport_ref_73192f8d-af71-40f8-8118-52124bc38e94.xml, ndis/MiniportCoCreateVc, netvista.miniportcocreatevc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportCoCreateVc
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_CO_CREATE_VC function
+# MINIPORT_CO_CREATE_VC callback function
 The 
   <i>MiniportCoCreateVc</i> function is required for connection-oriented miniports. 
   <i>MiniportCoCreateVc</i> is called by NDIS to indicate to the miniport driver that a
@@ -198,11 +198,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
+
+
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 
 

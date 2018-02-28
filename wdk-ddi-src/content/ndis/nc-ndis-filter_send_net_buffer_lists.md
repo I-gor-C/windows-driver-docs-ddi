@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 1b3fc0c8-95da-47e5-8ff1-b7967f5148e7
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.filtersendnetbufferlists, FilterSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterSendNetBufferLists, FILTER_SEND_NET_BUFFER_LISTS, FILTER_SEND_NET_BUFFER_LISTS, ndis/FilterSendNetBufferLists, filter_functions_ref_576e3ac8-da80-4302-a0d5-41a1168336ee.xml
+ms.keywords: FILTER_SEND_NET_BUFFER_LISTS, FilterSendNetBufferLists, FilterSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_576e3ac8-da80-4302-a0d5-41a1168336ee.xml, ndis/FilterSendNetBufferLists, netvista.filtersendnetbufferlists
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	FilterSendNetBufferLists
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# FILTER_SEND_NET_BUFFER_LISTS function
+# FILTER_SEND_NET_BUFFER_LISTS callback function
 NDIS calls the 
   <i>FilterSendNetBufferLists</i> function to allow a filter driver to filter a linked list of 
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
@@ -274,23 +274,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>
-
-
-
-<a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 
 
@@ -298,20 +282,23 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
+<a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
+
+
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
 
 
-<a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
-   FilterSendNetBufferListsComplete</a>
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>
 
 
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+<a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
 
 
 
@@ -321,6 +308,19 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 <a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
    NdisFSendNetBufferListsComplete</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
+
+
+
+<a href="..\ndis\nc-ndis-filter_send_net_buffer_lists_complete.md">
+   FilterSendNetBufferListsComplete</a>
 
 
 

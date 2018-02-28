@@ -2,12 +2,41 @@
 UID: NA:mountmgr
 ms.assetid: f85c530f-35d6-36ba-99e3-5ed06a65e9c8
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Mountmgr.h header
+
+
+
+This header is used by Storage. For more information, see
+- [Storage](../_storage/index.md)
+
+Mountmgr.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_MOUNTDEV_NAME structure](ns-mountmgr-_mountdev_name.md) | The MOUNTDEV_NAME structure holds the name of a device. |
+| [_MOUNTMGR_CHANGE_NOTIFY_INFO structure](ns-mountmgr-_mountmgr_change_notify_info.md) | The MOUNTMGR_CHANGE_NOTIFY_INFO structure is used by the mount manager to send epic numbers to its clients and vice versa. |
+| [_MOUNTMGR_CREATE_POINT_INPUT structure](ns-mountmgr-_mountmgr_create_point_input.md) | The MOUNTMGR_CREATE_POINT_INPUT structure is used by the mount manager to send a symbolic link name to a client that has requested symbolic link name by means of an IOCTL_MOUNTMGR_CREATE_POINT request. |
+| [_MOUNTMGR_DRIVE_LETTER_INFORMATION structure](ns-mountmgr-_mountmgr_drive_letter_information.md) | The MOUNTMGR_DRIVE_LETTER_INFORMATION structure is used by the mount manager to furnish a drive letter to a client that has requested a driver letter by means of an IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER request. |
+| [_MOUNTMGR_DRIVE_LETTER_TARGET structure](ns-mountmgr-_mountmgr_drive_letter_target.md) | The MOUNTMGR_DRIVE_LETTER_TARGET structure is used by a mount manager client with an IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER request to furnish a nonpersistent target device name to the mount manager. |
+| [_MOUNTMGR_MOUNT_POINT structure](ns-mountmgr-_mountmgr_mount_point.md) | The MOUNTMGR_MOUNT_POINT structure is used by mount manager clients in conjunction with an IOCTL_MOUNTMGR_QUERY_POINTS request to query the mount manager for all of the mount points (symbolic links) associated with a device. |
+| [_MOUNTMGR_MOUNT_POINTS structure](ns-mountmgr-_mountmgr_mount_points.md) | The MOUNTMGR_MOUNT_POINTS structure is used by mount manager to send a client the list of mount points associated with a device. |
+| [_MOUNTMGR_TARGET_NAME structure](ns-mountmgr-_mountmgr_target_name.md) | The MOUNTMGR_TARGET_NAME structure contains the nonpersistent target device name for a device and is used by mount manager clients with the IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE request to tell the mount manager to keep the symbolic link for a device active even after the device has gone offline. |
+| [_MOUNTMGR_VOLUME_MOUNT_POINT structure](ns-mountmgr-_mountmgr_volume_mount_point.md) | The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED request to inform the mount manager that a volume mount point has been created. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # mountmgr.h header
 

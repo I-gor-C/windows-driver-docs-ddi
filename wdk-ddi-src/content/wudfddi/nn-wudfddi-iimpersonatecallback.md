@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 811cb070-9cbe-4906-9db0-ee8316cc18c9
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iimpersonatecallback, IImpersonateCallback interface, IImpersonateCallback interface, described, IImpersonateCallback, wudfddi/IImpersonateCallback, UMDFRequestObjectRef_a92c4df0-b16b-4fc0-b858-4b2cdd59c3b2.xml, umdf.iimpersonatecallback
+ms.keywords: IImpersonateCallback, IImpersonateCallback interface, IImpersonateCallback interface, described, UMDFRequestObjectRef_a92c4df0-b16b-4fc0-b858-4b2cdd59c3b2.xml, umdf.iimpersonatecallback, wdf.iimpersonatecallback, wudfddi/IImpersonateCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IImpersonateCallback
 product: Windows
 targetos: Windows
@@ -58,7 +58,7 @@ A driver registers the <b>IImpersonateCallback</b> interface when the driver cal
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IImpersonateCallback.OnImpersonate](nf-wudfddi-iimpersonatecallback-onimpersonate.md) | The OnImpersonate method handles impersonation. |
+| [IImpersonateCallback::OnImpersonate](nf-wudfddi-iimpersonatecallback-onimpersonate.md) | The OnImpersonate method handles impersonation. |
 
 ## Remarks
 

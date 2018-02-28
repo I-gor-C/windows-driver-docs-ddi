@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 97731224-bf08-4578-958e-729acbb5a628
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtioresume, EvtIoResume callback function, EvtIoResume, EVT_WDF_IO_QUEUE_IO_RESUME, EVT_WDF_IO_QUEUE_IO_RESUME, wdfio/EvtIoResume, DFQueueObjectRef_1ecb2f86-9461-47b7-967d-6cb14edbbe82.xml, kmdf.evtioresume
+ms.keywords: DFQueueObjectRef_1ecb2f86-9461-47b7-967d-6cb14edbbe82.xml, EVT_WDF_IO_QUEUE_IO_RESUME, EvtIoResume, EvtIoResume callback function, kmdf.evtioresume, wdf.evtioresume, wdfio/EvtIoResume
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfio.h
-apiname:
+api_name:
 -	EvtIoResume
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_IO_QUEUE_IO_RESUME function
+# EVT_WDF_IO_QUEUE_IO_RESUME callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtIoResume</i> event callback function resumes processing a specified I/O request after the underlying device returns to its working (D0) power state.

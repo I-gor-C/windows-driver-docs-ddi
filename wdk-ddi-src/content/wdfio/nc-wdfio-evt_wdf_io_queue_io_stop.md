@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 71a789f1-4f10-44c3-8bd0-a0ea74ec28ab
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtiostop, EvtIoStop callback function, EvtIoStop, EVT_WDF_IO_QUEUE_IO_STOP, EVT_WDF_IO_QUEUE_IO_STOP, wdfio/EvtIoStop, DFQueueObjectRef_b9df4689-1de5-4c08-b2a2-c9f126a7d0bc.xml, kmdf.evtiostop
+ms.keywords: DFQueueObjectRef_b9df4689-1de5-4c08-b2a2-c9f126a7d0bc.xml, EVT_WDF_IO_QUEUE_IO_STOP, EvtIoStop, EvtIoStop callback function, kmdf.evtiostop, wdf.evtiostop, wdfio/EvtIoStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,23 +29,23 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wdfio.h
-apiname:
+api_name:
 -	EvtIoStop
 product: Windows
 targetos: Windows
-req.typenames: "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_IO_QUEUE_IO_STOP function
+# EVT_WDF_IO_QUEUE_IO_STOP callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 A driver's <i>EvtIoStop</i> event callback function completes, requeues, or suspends processing of a specified request because the request's I/O queue is being stopped.
@@ -75,7 +75,7 @@ A handle to a framework request object.
 
 `ActionFlags`
 
-A bitwise OR of one or more <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_stop_action_flags.md">WDF_REQUEST_STOP_ACTION_FLAGS</a>-typed flags that identify the reason that the callback function is being called and whether the request is cancelable.
+A bitwise OR of one or more <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_stop_action_flags.md">WDF_REQUEST_STOP_ACTION_FLAGS</a>-typed flags that identify the reason that the callback function is being called and whether the request is cancelable.
 
 
 ## Return Value
@@ -120,7 +120,7 @@ A driver might choose to take no action in <i>EvtIoStop</i> for requests that ar
 
    In this case, the framework waits until the specified request is complete before moving the device (or system) to a lower power state or removing the device. Potentially, this inaction can prevent a system from entering its hibernation state or another low system power state. In extreme cases, it can cause the system to crash with bugcheck code 9F.
 
-If the <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_stop_action_flags.md">WdfRequestStopRequestCancelable</a> flag is set in the <i>ActionFlags</i> parameter, the driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestunmarkcancelable.md">WdfRequestUnmarkCancelable</a> before it calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> to complete (or cancel) the request or <a href="..\wdfrequest\nf-wdfrequest-wdfrequeststopacknowledge.md">WdfRequestStopAcknowledge</a> to requeue the request.
+If the <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_stop_action_flags.md">WdfRequestStopRequestCancelable</a> flag is set in the <i>ActionFlags</i> parameter, the driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestunmarkcancelable.md">WdfRequestUnmarkCancelable</a> before it calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> to complete (or cancel) the request or <a href="..\wdfrequest\nf-wdfrequest-wdfrequeststopacknowledge.md">WdfRequestStopAcknowledge</a> to requeue the request.
 
 If the driver forwards an I/O request from one of its <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/request-handlers">request handlers</a>
 and specifies the <b>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</b> flag in the request's <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a> structure, the framework does not call the driver's <i>EvtIoStop</i> callback function for this request. However, if the driver forwards the same I/O request from another thread, the framework might call <i>EvtIoStop</i> for this request.
@@ -178,19 +178,13 @@ The <b>EVT_WDF_IO_QUEUE_IO_STOP</b> function type is defined in the Wdfio.h head
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
-
-
-
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
-
-
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_stop_action_flags.md">WDF_REQUEST_STOP_ACTION_FLAGS</a>
-
-
-
 <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
+
+
+
+<a href="..\wdfrequest\ne-wdfrequest-_wdf_request_stop_action_flags.md">WDF_REQUEST_STOP_ACTION_FLAGS</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
 
 
 
@@ -199,6 +193,10 @@ The <b>EVT_WDF_IO_QUEUE_IO_STOP</b> function type is defined in the Wdfio.h head
 
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+
+
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_resume.md">EvtIoResume</a>
 
 
 

@@ -7,8 +7,8 @@ old-location: sensors\isensordriver.htm
 old-project: sensors
 ms.assetid: 4f468f1e-598e-46ae-b50e-28f73e73afda
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: sensors.isensordriver, ISensorDriver interface [Sensor Devices], ISensorDriver interface [Sensor Devices], described, ISensorDriver, sensorsclassextension/ISensorDriver, Sensor_IFaces_014342f2-5466-426b-bb11-cb4e89a7691a.xml
+ms.date: 2/22/2018
+ms.keywords: ISensorDriver, ISensorDriver interface [Sensor Devices], ISensorDriver interface [Sensor Devices], described, Sensor_IFaces_014342f2-5466-426b-bb11-cb4e89a7691a.xml, sensors.isensordriver, sensorsclassextension/ISensorDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,15 +29,15 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	SensorsClassExtension.lib
 -	SensorsClassExtension.dll
-apiname:
+api_name:
 -	ISensorDriver
 product: Windows
 targetos: Windows
@@ -55,18 +55,18 @@ The ISensorDriver interface provides callback methods that the sensor class exte
 
 | Method | Description |
 | ---- |:---- |
-| [sensorsclassextension.ISensorDriver.OnClientConnect](nf-sensorsclassextension-isensordriver-onclientconnect.md) | The ISensorDriver::OnClientConnect method notifies the sensor driver that a client application has connected. |
-| [sensorsclassextension.ISensorDriver.OnClientDisconnect](nf-sensorsclassextension-isensordriver-onclientdisconnect.md) | The ISensorDriver::OnClientDisconnect method notifies the sensor driver that a client application has disconnected. |
-| [sensorsclassextension.ISensorDriver.OnClientSubscribeToEvents](nf-sensorsclassextension-isensordriver-onclientsubscribetoevents.md) | The ISensorDriver::OnClientSubscribeToEvents method notifies the sensor driver that an authorized client application is requesting event notifications. |
-| [sensorsclassextension.ISensorDriver.OnClientUnsubscribeFromEvents](nf-sensorsclassextension-isensordriver-onclientunsubscribefromevents.md) | The ISensorDriver::OnClientUnsubscribeFromEvents method notifies the sensor driver that a client application no longer requests event notifications. |
-| [sensorsclassextension.ISensorDriver.OnGetDataFields](nf-sensorsclassextension-isensordriver-ongetdatafields.md) | The ISensorDriver::OnGetDataFields method retrieves current sensor data. |
-| [sensorsclassextension.ISensorDriver.OnGetProperties](nf-sensorsclassextension-isensordriver-ongetproperties.md) | The ISensorDriver::OnGetProperties method retrieves values for the specified properties from the specified sensor. |
-| [sensorsclassextension.ISensorDriver.OnGetSupportedDataFields](nf-sensorsclassextension-isensordriver-ongetsupporteddatafields.md) | The ISensorDriver::OnGetSupportedDataFields method retrieves the list of data fields that the specified sensor can provide. |
-| [sensorsclassextension.ISensorDriver.OnGetSupportedEvents](nf-sensorsclassextension-isensordriver-ongetsupportedevents.md) | The ISensorDriver::OnGetSupportedEvents method retrieves the list of events that the specified sensor can raise. |
-| [sensorsclassextension.ISensorDriver.OnGetSupportedProperties](nf-sensorsclassextension-isensordriver-ongetsupportedproperties.md) | The ISensorDriver::OnGetSupportedProperties method retrieves the list of properties that the specified sensor provides. |
-| [sensorsclassextension.ISensorDriver.OnGetSupportedSensorObjects](nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects.md) | The ISensorDriver::OnGetSupportedSensorObjects method retrieves the list of sensors that the driver provides. |
-| [sensorsclassextension.ISensorDriver.OnProcessWpdMessage](nf-sensorsclassextension-isensordriver-onprocesswpdmessage.md) | The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally. |
-| [sensorsclassextension.ISensorDriver.OnSetProperties](nf-sensorsclassextension-isensordriver-onsetproperties.md) | The ISensorDriver::OnSetProperties method specifies values for the specified list of properties. |
+| [ISensorDriver::OnClientConnect](nf-sensorsclassextension-isensordriver-onclientconnect.md) | The ISensorDriver::OnClientConnect method notifies the sensor driver that a client application has connected. |
+| [ISensorDriver::OnClientDisconnect](nf-sensorsclassextension-isensordriver-onclientdisconnect.md) | The ISensorDriver::OnClientDisconnect method notifies the sensor driver that a client application has disconnected. |
+| [ISensorDriver::OnClientSubscribeToEvents](nf-sensorsclassextension-isensordriver-onclientsubscribetoevents.md) | The ISensorDriver::OnClientSubscribeToEvents method notifies the sensor driver that an authorized client application is requesting event notifications. |
+| [ISensorDriver::OnClientUnsubscribeFromEvents](nf-sensorsclassextension-isensordriver-onclientunsubscribefromevents.md) | The ISensorDriver::OnClientUnsubscribeFromEvents method notifies the sensor driver that a client application no longer requests event notifications. |
+| [ISensorDriver::OnGetDataFields](nf-sensorsclassextension-isensordriver-ongetdatafields.md) | The ISensorDriver::OnGetDataFields method retrieves current sensor data. |
+| [ISensorDriver::OnGetProperties](nf-sensorsclassextension-isensordriver-ongetproperties.md) | The ISensorDriver::OnGetProperties method retrieves values for the specified properties from the specified sensor. |
+| [ISensorDriver::OnGetSupportedDataFields](nf-sensorsclassextension-isensordriver-ongetsupporteddatafields.md) | The ISensorDriver::OnGetSupportedDataFields method retrieves the list of data fields that the specified sensor can provide. |
+| [ISensorDriver::OnGetSupportedEvents](nf-sensorsclassextension-isensordriver-ongetsupportedevents.md) | The ISensorDriver::OnGetSupportedEvents method retrieves the list of events that the specified sensor can raise. |
+| [ISensorDriver::OnGetSupportedProperties](nf-sensorsclassextension-isensordriver-ongetsupportedproperties.md) | The ISensorDriver::OnGetSupportedProperties method retrieves the list of properties that the specified sensor provides. |
+| [ISensorDriver::OnGetSupportedSensorObjects](nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects.md) | The ISensorDriver::OnGetSupportedSensorObjects method retrieves the list of sensors that the driver provides. |
+| [ISensorDriver::OnProcessWpdMessage](nf-sensorsclassextension-isensordriver-onprocesswpdmessage.md) | The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally. |
+| [ISensorDriver::OnSetProperties](nf-sensorsclassextension-isensordriver-onsetproperties.md) | The ISensorDriver::OnSetProperties method specifies values for the specified list of properties. |
 
 ## Remarks
 

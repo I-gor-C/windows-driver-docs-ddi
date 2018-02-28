@@ -7,8 +7,8 @@ old-location: print\iprintpipelineprogressreport.htm
 old-project: print
 ms.assetid: 7a2644af-fdfe-4481-8c44-c40244b8a00e
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintpipelineprogressreport, IPrintPipelineProgressReport interface [Print Devices], IPrintPipelineProgressReport interface [Print Devices], described, IPrintPipelineProgressReport, filterpipeline/IPrintPipelineProgressReport, filterpipeline_de104fc6-8ac2-4a10-ab09-09596a093835.xml
+ms.date: 2/23/2018
+ms.keywords: IPrintPipelineProgressReport, IPrintPipelineProgressReport interface [Print Devices], IPrintPipelineProgressReport interface [Print Devices], described, filterpipeline/IPrintPipelineProgressReport, filterpipeline_de104fc6-8ac2-4a10-ab09-09596a093835.xml, print.iprintpipelineprogressreport
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IPrintPipelineProgressReport
 product: Windows
 targetos: Windows
@@ -55,7 +55,7 @@ A rendering filter should search for the <b>XPS_FP_PROGRESS_REPORT</b> property 
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IPrintPipelineProgressReport.ReportProgress](nf-filterpipeline-iprintpipelineprogressreport-reportprogress.md) | The ReportProgress method reports the progress of the XPS job consumption to the pipeline manager. |
+| [IPrintPipelineProgressReport::ReportProgress](nf-filterpipeline-iprintpipelineprogressreport-reportprogress.md) | The ReportProgress method reports the progress of the XPS job consumption to the pipeline manager. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 17111aa3-c02f-494a-af97-5ab34c152451
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.miniportcancelsend, MiniportCancelSend callback function [Network Drivers Starting with Windows Vista], MiniportCancelSend, MINIPORT_CANCEL_SEND, MINIPORT_CANCEL_SEND, ndis/MiniportCancelSend, ndis_sendrcv_ref_86f1ff8c-c68b-49e3-8d77-883d7e055961.xml
+ms.keywords: MINIPORT_CANCEL_SEND, MiniportCancelSend, MiniportCancelSend callback function [Network Drivers Starting with Windows Vista], ndis/MiniportCancelSend, ndis_sendrcv_ref_86f1ff8c-c68b-49e3-8d77-883d7e055961.xml, netvista.miniportcancelsend
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	MiniportCancelSend
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# MINIPORT_CANCEL_SEND function
+# MINIPORT_CANCEL_SEND callback function
 NDIS calls a miniport driver's 
    <i>MiniportCancelSend</i> function to cancel the transmission of all 
    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are marked
@@ -192,20 +192,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567299">
-   NDIS_GET_NET_BUFFER_LIST_CANCEL_ID</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
-   NdisMSendNetBufferListsComplete</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-
-
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 
@@ -214,7 +200,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+   NdisMSendNetBufferListsComplete</a>
+
+
+
 <a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
+
+
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567299">
+   NDIS_GET_NET_BUFFER_LIST_CANCEL_ID</a>
 
 
 

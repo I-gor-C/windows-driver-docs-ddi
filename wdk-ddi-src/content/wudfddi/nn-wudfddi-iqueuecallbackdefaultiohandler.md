@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 3b2980f9-2f55-4fe3-99ac-1da578688f4b
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iqueuecallbackdefaultiohandler, IQueueCallbackDefaultIoHandler interface, IQueueCallbackDefaultIoHandler interface, described, IQueueCallbackDefaultIoHandler, wudfddi/IQueueCallbackDefaultIoHandler, UMDFQueueObjectRef_31f05689-d38c-444b-b930-9c6c5136c60d.xml, umdf.iqueuecallbackdefaultiohandler
+ms.keywords: IQueueCallbackDefaultIoHandler, IQueueCallbackDefaultIoHandler interface, IQueueCallbackDefaultIoHandler interface, described, UMDFQueueObjectRef_31f05689-d38c-444b-b930-9c6c5136c60d.xml, umdf.iqueuecallbackdefaultiohandler, wdf.iqueuecallbackdefaultiohandler, wudfddi/IQueueCallbackDefaultIoHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wudfddi.h
-apiname:
+api_name:
 -	IQueueCallbackDefaultIoHandler
 product: Windows
 targetos: Windows
@@ -56,7 +56,7 @@ The <b>IQueueCallbackDefaultIoHandler</b> interface contains a method that handl
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IQueueCallbackDefaultIoHandler.OnDefaultIoHandler](nf-wudfddi-iqueuecallbackdefaultiohandler-ondefaultiohandler.md) | The OnDefaultIoHandler method handles I/O requests that no other method is registered to handle. |
+| [IQueueCallbackDefaultIoHandler::OnDefaultIoHandler](nf-wudfddi-iqueuecallbackdefaultiohandler-ondefaultiohandler.md) | The OnDefaultIoHandler method handles I/O requests that no other method is registered to handle. |
 
 ## Remarks
 

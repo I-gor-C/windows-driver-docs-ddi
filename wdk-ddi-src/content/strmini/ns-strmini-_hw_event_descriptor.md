@@ -7,8 +7,8 @@ old-location: stream\hw_event_descriptor.htm
 old-project: stream
 ms.assetid: c0efec37-4897-4ece-9f53-4a62204e5af3
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
-ms.keywords: strmini/PHW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, strmini/HW_EVENT_DESCRIPTOR, stream.hw_event_descriptor, HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, _HW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices]
+ms.date: 2/23/2018
+ms.keywords: "*PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], PHW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices], _HW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, stream.hw_event_descriptor, strmini/HW_EVENT_DESCRIPTOR, strmini/PHW_EVENT_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	strmini.h
-apiname:
+api_name:
 -	HW_EVENT_DESCRIPTOR
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 # _HW_EVENT_DESCRIPTOR structure
-When the class driver calls one of the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568457">StrMiniEvent</a> routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled.
+When the class driver calls one of the minidriver's <a href="..\strmini\nc-strmini-phw_event_routine.md">StrMiniEvent</a> routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled.
 
 ## Syntax
 ````

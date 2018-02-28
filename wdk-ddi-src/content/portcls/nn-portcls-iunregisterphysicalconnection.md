@@ -7,8 +7,8 @@ old-location: audio\iunregisterphysicalconnection.htm
 old-project: audio
 ms.assetid: 876a457e-8774-4c51-bd23-6451b3e3a7b7
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iunregisterphysicalconnection, IUnregisterPhysicalConnection interface [Audio Devices], IUnregisterPhysicalConnection interface [Audio Devices], described, IUnregisterPhysicalConnection, portcls/IUnregisterPhysicalConnection, audmp-routines_b26d005c-70d9-4df0-80ae-446907f22fd4.xml
+ms.date: 2/22/2018
+ms.keywords: IUnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], IUnregisterPhysicalConnection interface [Audio Devices], described, audio.iunregisterphysicalconnection, audmp-routines_b26d005c-70d9-4df0-80ae-446907f22fd4.xml, portcls/IUnregisterPhysicalConnection
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IUnregisterPhysicalConnection
 product: Windows
 targetos: Windows
@@ -81,9 +81,9 @@ When deleting a subdevice from an adapter's topology, the driver must unregister
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IUnregisterPhysicalConnection.UnregisterPhysicalConnection](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnection.md) | The UnregisterPhysicalConnection method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnection. |
-| [portcls.IUnregisterPhysicalConnection.UnregisterPhysicalConnectionFromExternal](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnectionfromexternal.md) | The UnregisterPhysicalConnectionFromExternal method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnectionFromExternal. |
-| [portcls.IUnregisterPhysicalConnection.UnregisterPhysicalConnectionToExternal](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnectiontoexternal.md) | The UnregisterPhysicalConnectionToExternal method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnectionToExternal. |
+| [IUnregisterPhysicalConnection::UnregisterPhysicalConnection](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnection.md) | The UnregisterPhysicalConnection method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnection. |
+| [IUnregisterPhysicalConnection::UnregisterPhysicalConnectionFromExternal](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnectionfromexternal.md) | The UnregisterPhysicalConnectionFromExternal method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnectionFromExternal. |
+| [IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnectiontoexternal.md) | The UnregisterPhysicalConnectionToExternal method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnectionToExternal. |
 
 ## Remarks
 

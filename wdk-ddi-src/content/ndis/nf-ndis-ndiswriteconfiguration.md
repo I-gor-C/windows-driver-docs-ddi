@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 63c94f4d-1c8c-43c2-ae58-993da42a80a4
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.ndiswriteconfiguration, NdisWriteConfiguration, ndis_configuration_ref_7d603433-49ed-46d5-8a57-000c06d83d4a.xml, NdisWriteConfiguration function [Network Drivers Starting with Windows Vista], ndis/NdisWriteConfiguration
+ms.keywords: NdisWriteConfiguration, NdisWriteConfiguration function [Network Drivers Starting with Windows Vista], ndis/NdisWriteConfiguration, ndis_configuration_ref_7d603433-49ed-46d5-8a57-000c06d83d4a.xml, netvista.ndiswriteconfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,19 +29,19 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	ndis.lib
 -	ndis.dll
-apiname:
+api_name:
 -	NdisWriteConfiguration
 product: Windows
 targetos: Windows
-req.typenames: "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -171,33 +171,11 @@ For more information about setup and installation files for Windows 2000 and lat
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisinitunicodestring.md">NdisInitUnicodeString</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisansistringtounicodestring.md">
-   NdisAnsiStringToUnicodeString</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
-   NdisOpenConfigurationKeyByName</a>
+<a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
 
 
 
@@ -205,7 +183,12 @@ For more information about setup and installation files for Windows 2000 and lat
 
 
 
-<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
+   NdisOpenConfigurationKeyByIndex</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 
 
 
@@ -214,12 +197,29 @@ For more information about setup and installation files for Windows 2000 and lat
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
+<a href="..\ndis\nf-ndis-ndisinitunicodestring.md">NdisInitUnicodeString</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
-   NdisOpenConfigurationKeyByIndex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
+   NdisOpenConfigurationKeyByName</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndisansistringtounicodestring.md">
+   NdisAnsiStringToUnicodeString</a>
 
 
 
@@ -235,7 +235,7 @@ For more information about setup and installation files for Windows 2000 and lat
 
 
 
-<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 
 
 

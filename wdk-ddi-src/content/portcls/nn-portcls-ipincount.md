@@ -7,8 +7,8 @@ old-location: audio\ipincount.htm
 old-project: audio
 ms.assetid: 9e02584a-4c65-4400-b06e-58ba095c8dd0
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.ipincount, IPinCount interface [Audio Devices], IPinCount interface [Audio Devices], described, IPinCount, portcls/IPinCount, audmp-routines_05698591-4c80-4f02-a420-a87afff949ad.xml
+ms.date: 2/22/2018
+ms.keywords: IPinCount, IPinCount interface [Audio Devices], IPinCount interface [Audio Devices], described, audio.ipincount, audmp-routines_05698591-4c80-4f02-a420-a87afff949ad.xml, portcls/IPinCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPinCount
 product: Windows
 targetos: Windows
@@ -75,7 +75,7 @@ The <code>IPinCount</code> interface provides a single method. The port driver t
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPinCount.PinCount](nf-portcls-ipincount-pincount.md) | The PinCount method queries the miniport driver for its pin count. |
+| [IPinCount::PinCount](nf-portcls-ipincount-pincount.md) | The PinCount method queries the miniport driver for its pin count. |
 
 ## Remarks
 

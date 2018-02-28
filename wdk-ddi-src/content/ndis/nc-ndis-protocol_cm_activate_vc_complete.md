@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 6ec9e73e-8abd-4d27-b598-6176f2125348
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolcmactivatevccomplete, ProtocolCmActivateVcComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCmActivateVcComplete, PROTOCOL_CM_ACTIVATE_VC_COMPLETE, PROTOCOL_CM_ACTIVATE_VC_COMPLETE, ndis/ProtocolCmActivateVcComplete, condis_call_manager_ref_2a632e5a-975c-44a2-8b30-088c128561c2.xml
+ms.keywords: PROTOCOL_CM_ACTIVATE_VC_COMPLETE, ProtocolCmActivateVcComplete, ProtocolCmActivateVcComplete callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_2a632e5a-975c-44a2-8b30-088c128561c2.xml, ndis/ProtocolCmActivateVcComplete, netvista.protocolcmactivatevccomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolCmActivateVcComplete
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CM_ACTIVATE_VC_COMPLETE function
+# PROTOCOL_CM_ACTIVATE_VC_COMPLETE callback function
 The 
   <i>ProtocolCmActivateVcComplete</i> function is required. This function indicates to the call manager that a
   previous call to 
@@ -168,11 +168,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
-
-
-
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
+
+
+
+<a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
 
 
 

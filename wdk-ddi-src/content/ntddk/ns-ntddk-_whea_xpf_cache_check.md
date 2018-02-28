@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 61dd30b9-5290-4c72-b053-586066c58108
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: "_WHEA_XPF_CACHE_CHECK, ntddk/PWHEA_XPF_CACHE_CHECK, whearef_354fb32d-8724-4d6e-acc4-6d1a4cfd77a0.xml, PWHEA_XPF_CACHE_CHECK union pointer [WHEA Drivers and Applications], WHEA_XPF_CACHE_CHECK, ntddk/WHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK, WHEA_XPF_CACHE_CHECK union [WHEA Drivers and Applications], whea.whea_xpf_cache_check, PWHEA_XPF_CACHE_CHECK"
+ms.keywords: "*PWHEA_XPF_CACHE_CHECK, PWHEA_XPF_CACHE_CHECK, PWHEA_XPF_CACHE_CHECK union pointer [WHEA Drivers and Applications], WHEA_XPF_CACHE_CHECK, WHEA_XPF_CACHE_CHECK union [WHEA Drivers and Applications], _WHEA_XPF_CACHE_CHECK, ntddk/PWHEA_XPF_CACHE_CHECK, ntddk/WHEA_XPF_CACHE_CHECK, whea.whea_xpf_cache_check, whearef_354fb32d-8724-4d6e-acc4-6d1a4cfd77a0.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ntddk.h
-apiname:
+api_name:
 -	WHEA_XPF_CACHE_CHECK
 product: Windows
 targetos: Windows
-req.typenames: "*PWHEA_XPF_CACHE_CHECK, WHEA_XPF_CACHE_CHECK"
+req.typenames: WHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK
 ---
 
 # _WHEA_XPF_CACHE_CHECK structure

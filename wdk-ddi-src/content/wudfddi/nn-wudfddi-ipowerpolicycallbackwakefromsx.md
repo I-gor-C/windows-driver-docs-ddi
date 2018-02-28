@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: dac93565-e67a-44a3-acf0-e1f58ce8dd9e
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ipowerpolicycallbackwakefromsx, IPowerPolicyCallbackWakeFromSx interface, IPowerPolicyCallbackWakeFromSx interface, described, IPowerPolicyCallbackWakeFromSx, wudfddi/IPowerPolicyCallbackWakeFromSx, UMDFDeviceObjectRef_bc620403-691d-42df-9bdf-2a859e5718ea.xml, umdf.ipowerpolicycallbackwakefromsx
+ms.keywords: IPowerPolicyCallbackWakeFromSx, IPowerPolicyCallbackWakeFromSx interface, IPowerPolicyCallbackWakeFromSx interface, described, UMDFDeviceObjectRef_bc620403-691d-42df-9bdf-2a859e5718ea.xml, umdf.ipowerpolicycallbackwakefromsx, wdf.ipowerpolicycallbackwakefromsx, wudfddi/IPowerPolicyCallbackWakeFromSx
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IPowerPolicyCallbackWakeFromSx
 product: Windows
 targetos: Windows
@@ -56,9 +56,9 @@ A driver's <b>IPowerPolicyCallbackWakeFromSx</b> interface provides callback fun
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IPowerPolicyCallbackWakeFromSx.OnArmWakeFromSx](nf-wudfddi-ipowerpolicycallbackwakefromsx-onarmwakefromsx.md) | A driver's OnArmWakeFromSx event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state. |
-| [wudfddi.IPowerPolicyCallbackWakeFromSx.OnDisarmWakeFromSx](nf-wudfddi-ipowerpolicycallbackwakefromsx-ondisarmwakefromsx.md) | A driver's OnDisarmWakeFromSx event callback function disarms (that is, disables) a device's ability to trigger a wake signal while the device and system are in low-power states. |
-| [wudfddi.IPowerPolicyCallbackWakeFromSx.OnWakeFromSxTriggered](nf-wudfddi-ipowerpolicycallbackwakefromsx-onwakefromsxtriggered.md) | A driver's OnWakeFromSxTriggered event callback function informs the driver that its device, which had previously entered a low-power device state because system power was reduced, might have triggered a wake signal. |
+| [IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx](nf-wudfddi-ipowerpolicycallbackwakefromsx-onarmwakefromsx.md) | A driver's OnArmWakeFromSx event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state. |
+| [IPowerPolicyCallbackWakeFromSx::OnDisarmWakeFromSx](nf-wudfddi-ipowerpolicycallbackwakefromsx-ondisarmwakefromsx.md) | A driver's OnDisarmWakeFromSx event callback function disarms (that is, disables) a device's ability to trigger a wake signal while the device and system are in low-power states. |
+| [IPowerPolicyCallbackWakeFromSx::OnWakeFromSxTriggered](nf-wudfddi-ipowerpolicycallbackwakefromsx-onwakefromsxtriggered.md) | A driver's OnWakeFromSxTriggered event callback function informs the driver that its device, which had previously entered a low-power device state because system power was reduced, might have triggered a wake signal. |
 
 ## Remarks
 

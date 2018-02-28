@@ -2,12 +2,82 @@
 UID: NA:ndischimney
 ms.assetid: 900f2233-6276-3f86-a288-4789cc50ae6f
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Ndischimney.h header
+
+
+
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+
+Ndischimney.h contain these programming interfaces:
+
+
+## Functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [NdisInitiateOffload function](nf-ndischimney-ndisinitiateoffload.md) | A protocol or intermediate driver calls the NdisInitiateOffload function to offload TCP chimney state objects. |
+| [NdisInvalidateOffload function](nf-ndischimney-ndisinvalidateoffload.md) | A protocol or intermediate driver calls the NdisInvalidateOffload function to invalidate previously offloaded TCP chimney state objects. |
+| [NdisMGetOffloadHandlers function](nf-ndischimney-ndismgetoffloadhandlers.md) | This function obtains the entry points of the NDIS functions for a particular chimney type. |
+| [NdisMInitiateOffloadComplete function](nf-ndischimney-ndisminitiateoffloadcomplete.md) | An offload target calls the NdisMInitiateOffloadComplete function to complete an offload operation that was initiated by a previous call to the MiniportInitiateOffload function. |
+| [NdisMInvalidateOffloadComplete function](nf-ndischimney-ndisminvalidateoffloadcomplete.md) | An offload target calls the NdisMInvalidateOffloadComplete function to complete an invalidate offload operation that was initiated by a previous call to the MiniportInvalidateOffload function of the offload target. |
+| [NdisMOffloadEventIndicate function](nf-ndischimney-ndismoffloadeventindicate.md) | An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack. |
+| [NdisMQueryOffloadStateComplete function](nf-ndischimney-ndismqueryoffloadstatecomplete.md) | An offload target calls the NdisMQueryOffloadStateComplete function to complete a query offload operation that was initiated by a previous call to the offload target's MiniportQueryOffload function. |
+| [NdisMTerminateOffloadComplete function](nf-ndischimney-ndismterminateoffloadcomplete.md) | An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target. |
+| [NdisMUpdateOffloadComplete function](nf-ndischimney-ndismupdateoffloadcomplete.md) | An offload target calls the NdisMUpdateOffloadComplete function to complete an update offload operation that was initiated by a previous call to the MiniportUpdateOffload function of the offload target. |
+| [NdisOffloadTcpDisconnect function](nf-ndischimney-ndisoffloadtcpdisconnect.md) | A protocol or intermediate driver calls the NdisOffloadTcpDisconnect function to close the send half of an offloaded TCP connection. |
+| [NdisOffloadTcpForward function](nf-ndischimney-ndisoffloadtcpforward.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target. |
+| [NdisOffloadTcpReceive function](nf-ndischimney-ndisoffloadtcpreceive.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpReceive function to post receive requests (receive buffers) on an offloaded TCP connection. |
+| [NdisOffloadTcpReceiveReturn function](nf-ndischimney-ndisoffloadtcpreceivereturn.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target. |
+| [NdisOffloadTcpSend function](nf-ndischimney-ndisoffloadtcpsend.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection. |
+| [NdisQueryOffloadState function](nf-ndischimney-ndisqueryoffloadstate.md) | A protocol or intermediate driver calls the NdisQueryOffloadState function to query previously offloaded TCP chimney state objects. |
+| [NdisTerminateOffload function](nf-ndischimney-ndisterminateoffload.md) | A protocol driver or intermediate driver calls the NdisTerminateOffload function to terminate the offload of one or more state objects |
+| [NdisUpdateOffload function](nf-ndischimney-ndisupdateoffload.md) | A protocol or intermediate driver calls the NdisUpdateOffload function to update previously offloaded TCP chimney state objects. |
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [INDICATE_OFFLOAD_EVENT_HANDLER callback](nc-ndischimney-indicate_offload_event_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisMOffloadEventIndicate function. |
+| [INITIATE_OFFLOAD_COMPLETE_HANDLER callback](nc-ndischimney-initiate_offload_complete_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolInitiateOffloadComplete function to complete an offload operation that the driver previously initiated by calling the NdisInitiateOffload function. |
+| [INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback](nc-ndischimney-invalidate_offload_complete_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolInvalidateOffloadComplete function to complete an invalidate operation that the driver previously initiated by calling the NdisInvalidateOffload function. |
+| [NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback](nc-ndischimney-ndis_tcp_offload_disconnect_complete.md) | An offload target calls the NdisTcpOffloadDisconnectComplete function to complete a disconnect request that was initiated by a previous call to the MiniportTcpOffloadDisconnect function of the offload target. |
+| [NDIS_TCP_OFFLOAD_EVENT_INDICATE callback](nc-ndischimney-ndis_tcp_offload_event_indicate.md) | An offload target calls the NdisTcpOffloadEventHandler function to indicate an event that pertains to an offloaded TCP connection. |
+| [NDIS_TCP_OFFLOAD_FORWARD_COMPLETE callback](nc-ndischimney-ndis_tcp_offload_forward_complete.md) | An offload target calls the NdisTcpOffloadForwardComplete function to complete one or more forward requests that were made to the MiniportTcpOffloadForward function of the offload target. |
+| [NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE callback](nc-ndischimney-ndis_tcp_offload_receive_complete.md) | An offload target calls the NdisTcpOffloadReceiveComplete function to return posted receive requests (receive buffers) to the host stack. |
+| [NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback](nc-ndischimney-ndis_tcp_offload_receive_indicate.md) | An offload target calls the NdisTcpOffloadReceiveHandler function to indicate that received network data is available for consumption by a client application. |
+| [NDIS_TCP_OFFLOAD_SEND_COMPLETE callback](nc-ndischimney-ndis_tcp_offload_send_complete.md) | An offload target calls the NdisTcpOffloadSendComplete function to complete one or more send requests that were made to the MiniportTcpOffloadSend function of the offload target. |
+| [QUERY_OFFLOAD_COMPLETE_HANDLER callback](nc-ndischimney-query_offload_complete_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolQueryOffloadComplete function to complete a query offload operation that the driver previously initiated by calling the NdisQueryOffload function. |
+| [TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER callback](nc-ndischimney-tcp_offload_disconnect_complete_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolTcpOffloadDisconnectComplete function to complete a disconnect operation that the driver previously initiated by calling the NdisOffloadTcpDisconnect function. |
+| [TCP_OFFLOAD_EVENT_HANDLER callback](nc-ndischimney-tcp_offload_event_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisTcpOffloadEventHandler function. |
+| [TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER callback](nc-ndischimney-tcp_offload_forward_complete_handler.md) | NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadForwardComplete function to complete a forward operation that the driver previously initiated by calling the NdisOffloadTcpForward function. |
+| [TCP_OFFLOAD_RECEIVE_INDICATE_HANDLER callback](nc-ndischimney-tcp_offload_receive_indicate_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolTcpOffloadReceiveIndicate function to deliver received data that is being indicated by an underlying driver or offload target. |
+| [TCP_OFFLOAD_RECV_COMPLETE_HANDLER callback](nc-ndischimney-tcp_offload_recv_complete_handler.md) | NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadReceiveComplete function to complete a receive operation that the driver previously initiated by calling the NdisOffloadTcpReceive function. |
+| [TCP_OFFLOAD_SEND_COMPLETE_HANDLER callback](nc-ndischimney-tcp_offload_send_complete_handler.md) | NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadSendComplete function to complete a send operation that the driver previously initiated by calling the NdisOffloadTcpSend function. |
+| [TERMINATE_OFFLOAD_COMPLETE_HANDLER callback](nc-ndischimney-terminate_offload_complete_handler.md) | NDIS calls a protocol or intermediate driver's ProtocolTerminateOffloadComplete function to complete a terminate offload operation that the driver previously initiated by calling the NdisTerminateOffload function. |
+| [UPDATE_OFFLOAD_COMPLETE_HANDLER callback](nc-ndischimney-update_offload_complete_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolUpdateOffloadComplete function to complete an update offload operation that the driver previously initiated by calling the NdisUpdateOffload function. |
+| [W_INITIATE_OFFLOAD_HANDLER callback](nc-ndischimney-w_initiate_offload_handler.md) | MiniportInitiateOffload offloads TCP chimney state from the host stack. |
+| [W_INVALIDATE_OFFLOAD_HANDLER callback](nc-ndischimney-w_invalidate_offload_handler.md) | The MiniportInvalidateOffload function invalidates previously offloaded TCP chimney state objects. |
+| [W_QUERY_OFFLOAD_HANDLER callback](nc-ndischimney-w_query_offload_handler.md) | The MiniportQueryOffload function queries previously offloaded TCP chimney state objects. |
+| [W_TCP_OFFLOAD_DISCONNECT_HANDLER callback](nc-ndischimney-w_tcp_offload_disconnect_handler.md) | The MiniportTcpOffloadDisconnect function closes the send half of an offloaded TCP connection. |
+| [W_TCP_OFFLOAD_FORWARD_HANDLER callback](nc-ndischimney-w_tcp_offload_forward_handler.md) | NDIS calls the MiniportTcpOffloadForward function to forward unacknowledged received TCP segments to an offload target. |
+| [W_TCP_OFFLOAD_RECEIVE_HANDLER callback](nc-ndischimney-w_tcp_offload_receive_handler.md) | NDIS calls the MiniportTcpOffloadReceive function to post receive requests (receive buffers) on an offloaded TCP connection. |
+| [W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback](nc-ndischimney-w_tcp_offload_receive_return_handler.md) | NDIS calls the MiniportTcpOffloadReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an offload target. |
+| [W_TCP_OFFLOAD_SEND_HANDLER callback](nc-ndischimney-w_tcp_offload_send_handler.md) | NDIS calls the MiniportTcpOffloadSend function to transmit data on an offloaded TCP connection. |
+| [W_TERMINATE_OFFLOAD_HANDLER callback](nc-ndischimney-w_terminate_offload_handler.md) | The MiniportTerminateOffload function terminates the offload of one or more state objects. |
+| [W_UPDATE_OFFLOAD_HANDLER callback](nc-ndischimney-w_update_offload_handler.md) | The MiniportUpdateOffload function updates previously offloaded TCP chimney state objects. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:----
 
 # ndischimney.h header
 
@@ -20,6 +90,28 @@ ndischimney.h contains the following programming interfaces:
 
 
 ## Functions
+| Title | Description |
+| ---- |:---- |
+| [NdisInitiateOffload](nf-ndischimney-ndisinitiateoffload.md) | A protocol or intermediate driver calls the NdisInitiateOffload function to offload TCP chimney state objects. |
+| [NdisInvalidateOffload](nf-ndischimney-ndisinvalidateoffload.md) | A protocol or intermediate driver calls the NdisInvalidateOffload function to invalidate previously offloaded TCP chimney state objects. |
+| [NdisMGetOffloadHandlers](nf-ndischimney-ndismgetoffloadhandlers.md) | This function obtains the entry points of the NDIS functions for a particular chimney type. |
+| [NdisMInitiateOffloadComplete](nf-ndischimney-ndisminitiateoffloadcomplete.md) | An offload target calls the NdisMInitiateOffloadComplete function to complete an offload operation that was initiated by a previous call to the MiniportInitiateOffload function. |
+| [NdisMInvalidateOffloadComplete](nf-ndischimney-ndisminvalidateoffloadcomplete.md) | An offload target calls the NdisMInvalidateOffloadComplete function to complete an invalidate offload operation that was initiated by a previous call to the MiniportInvalidateOffload function of the offload target. |
+| [NdisMOffloadEventIndicate](nf-ndischimney-ndismoffloadeventindicate.md) | An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack. |
+| [NdisMQueryOffloadStateComplete](nf-ndischimney-ndismqueryoffloadstatecomplete.md) | An offload target calls the NdisMQueryOffloadStateComplete function to complete a query offload operation that was initiated by a previous call to the offload target's MiniportQueryOffload function. |
+| [NdisMTerminateOffloadComplete](nf-ndischimney-ndismterminateoffloadcomplete.md) | An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target. |
+| [NdisMUpdateOffloadComplete](nf-ndischimney-ndismupdateoffloadcomplete.md) | An offload target calls the NdisMUpdateOffloadComplete function to complete an update offload operation that was initiated by a previous call to the MiniportUpdateOffload function of the offload target. |
+| [NdisOffloadTcpDisconnect](nf-ndischimney-ndisoffloadtcpdisconnect.md) | A protocol or intermediate driver calls the NdisOffloadTcpDisconnect function to close the send half of an offloaded TCP connection. |
+| [NdisOffloadTcpForward](nf-ndischimney-ndisoffloadtcpforward.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target. |
+| [NdisOffloadTcpReceive](nf-ndischimney-ndisoffloadtcpreceive.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpReceive function to post receive requests (receive buffers) on an offloaded TCP connection. |
+| [NdisOffloadTcpReceiveReturn](nf-ndischimney-ndisoffloadtcpreceivereturn.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target. |
+| [NdisOffloadTcpSend](nf-ndischimney-ndisoffloadtcpsend.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection. |
+| [NdisQueryOffloadState](nf-ndischimney-ndisqueryoffloadstate.md) | A protocol or intermediate driver calls the NdisQueryOffloadState function to query previously offloaded TCP chimney state objects. |
+| [NdisTerminateOffload](nf-ndischimney-ndisterminateoffload.md) | A protocol driver or intermediate driver calls the NdisTerminateOffload function to terminate the offload of one or more state objects |
+| [NdisUpdateOffload](nf-ndischimney-ndisupdateoffload.md) | A protocol or intermediate driver calls the NdisUpdateOffload function to update previously offloaded TCP chimney state objects. |
+
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [INDICATE_OFFLOAD_EVENT_HANDLER](nc-ndischimney-indicate_offload_event_handler.md) | NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisMOffloadEventIndicate function. |
@@ -50,24 +142,6 @@ ndischimney.h contains the following programming interfaces:
 | [W_TCP_OFFLOAD_SEND_HANDLER](nc-ndischimney-w_tcp_offload_send_handler.md) | NDIS calls the MiniportTcpOffloadSend function to transmit data on an offloaded TCP connection. |
 | [W_TERMINATE_OFFLOAD_HANDLER](nc-ndischimney-w_terminate_offload_handler.md) | The MiniportTerminateOffload function terminates the offload of one or more state objects. |
 | [W_UPDATE_OFFLOAD_HANDLER](nc-ndischimney-w_update_offload_handler.md) | The MiniportUpdateOffload function updates previously offloaded TCP chimney state objects. |
-| [NdisInitiateOffload](nf-ndischimney-ndisinitiateoffload.md) | A protocol or intermediate driver calls the NdisInitiateOffload function to offload TCP chimney state objects. |
-| [NdisInvalidateOffload](nf-ndischimney-ndisinvalidateoffload.md) | A protocol or intermediate driver calls the NdisInvalidateOffload function to invalidate previously offloaded TCP chimney state objects. |
-| [NdisMGetOffloadHandlers](nf-ndischimney-ndismgetoffloadhandlers.md) | This function obtains the entry points of the NDIS functions for a particular chimney type. |
-| [NdisMInitiateOffloadComplete](nf-ndischimney-ndisminitiateoffloadcomplete.md) | An offload target calls the NdisMInitiateOffloadComplete function to complete an offload operation that was initiated by a previous call to the MiniportInitiateOffload function. |
-| [NdisMInvalidateOffloadComplete](nf-ndischimney-ndisminvalidateoffloadcomplete.md) | An offload target calls the NdisMInvalidateOffloadComplete function to complete an invalidate offload operation that was initiated by a previous call to the MiniportInvalidateOffload function of the offload target. |
-| [NdisMOffloadEventIndicate](nf-ndischimney-ndismoffloadeventindicate.md) | An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack. |
-| [NdisMQueryOffloadStateComplete](nf-ndischimney-ndismqueryoffloadstatecomplete.md) | An offload target calls the NdisMQueryOffloadStateComplete function to complete a query offload operation that was initiated by a previous call to the offload target's MiniportQueryOffload function. |
-| [NdisMTerminateOffloadComplete](nf-ndischimney-ndismterminateoffloadcomplete.md) | An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target. |
-| [NdisMUpdateOffloadComplete](nf-ndischimney-ndismupdateoffloadcomplete.md) | An offload target calls the NdisMUpdateOffloadComplete function to complete an update offload operation that was initiated by a previous call to the MiniportUpdateOffload function of the offload target. |
-| [NdisOffloadTcpDisconnect](nf-ndischimney-ndisoffloadtcpdisconnect.md) | A protocol or intermediate driver calls the NdisOffloadTcpDisconnect function to close the send half of an offloaded TCP connection. |
-| [NdisOffloadTcpForward](nf-ndischimney-ndisoffloadtcpforward.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target. |
-| [NdisOffloadTcpReceive](nf-ndischimney-ndisoffloadtcpreceive.md) | A protocol driver or an intermediate driver calls the NdisOffloadTcpReceive function to post receive requests (receive buffers) on an offloaded TCP connection. |
-| [NdisOffloadTcpReceiveReturn](nf-ndischimney-ndisoffloadtcpreceivereturn.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target. |
-| [NdisOffloadTcpSend](nf-ndischimney-ndisoffloadtcpsend.md) | A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection. |
-| [NdisQueryOffloadState](nf-ndischimney-ndisqueryoffloadstate.md) | A protocol or intermediate driver calls the NdisQueryOffloadState function to query previously offloaded TCP chimney state objects. |
-| [NdisTerminateOffload](nf-ndischimney-ndisterminateoffload.md) | A protocol driver or intermediate driver calls the NdisTerminateOffload function to terminate the offload of one or more state objects |
-| [NdisUpdateOffload](nf-ndischimney-ndisupdateoffload.md) | A protocol or intermediate driver calls the NdisUpdateOffload function to update previously offloaded TCP chimney state objects. |
-
 
 
 ## Structures

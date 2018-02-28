@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: a7ba1ab2-04c9-45b5-a184-e1ad1448561a
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolclclosecallcomplete, ProtocolClCloseCallComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClCloseCallComplete, PROTOCOL_CL_CLOSE_CALL_COMPLETE, PROTOCOL_CL_CLOSE_CALL_COMPLETE, ndis/ProtocolClCloseCallComplete, condis_client_ref_a35e2fe4-8437-4c41-9ec1-13a8926108b5.xml
+ms.keywords: PROTOCOL_CL_CLOSE_CALL_COMPLETE, ProtocolClCloseCallComplete, ProtocolClCloseCallComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_a35e2fe4-8437-4c41-9ec1-13a8926108b5.xml, ndis/ProtocolClCloseCallComplete, netvista.protocolclclosecallcomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolClCloseCallComplete
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CL_CLOSE_CALL_COMPLETE function
+# PROTOCOL_CL_CLOSE_CALL_COMPLETE callback function
 The 
   <i>ProtocolClCloseCallComplete</i> function is used by connection-oriented NDIS clients. All
   connection-oriented NDIS clients must have 
@@ -190,11 +190,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscmclosecallcomplete.md">NdisCmCloseCallComplete</a>
+<a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
 
 
 
@@ -202,15 +198,19 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndismcmclosecallcomplete.md">NdisMCmCloseCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmclosecallcomplete.md">NdisCmCloseCallComplete</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
 
 
 <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+
+
+
+<a href="..\ndis\nf-ndis-ndismcmclosecallcomplete.md">NdisMCmCloseCallComplete</a>
 
 
 

@@ -2,12 +2,35 @@
 UID: NA:poclass
 ms.assetid: e8e59bde-a107-30c0-9d4b-dd962feae2e4
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Poclass.h header
+
+
+
+This header is used by Battery, Windows kernel. For more information, see
+- [Battery](../_battery/index.md)
+- [Windows kernel](../_kernel/index.md)
+
+Poclass.h contain these programming interfaces:
+
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [DEVICE_ACTIVE_COOLING callback](nc-poclass-device_active_cooling.md) | The ActiveCooling callback routine engages or disengages a device's active-cooling function. |
+| [DEVICE_PASSIVE_COOLING callback](nc-poclass-device_passive_cooling.md) | The PassiveCooling callback routine controls the degree to which the device must throttle its performance to meet cooling requirements. |
+
+## Structures
+
+| Title   | Description   |
+| ---- |:----
 
 # poclass.h header
 
@@ -19,12 +42,12 @@ poclass.h contains the following programming interfaces:
 
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [DEVICE_ACTIVE_COOLING](nc-poclass-device_active_cooling.md) | The ActiveCooling callback routine engages or disengages a device's active-cooling function. |
 | [DEVICE_PASSIVE_COOLING](nc-poclass-device_passive_cooling.md) | The PassiveCooling callback routine controls the degree to which the device must throttle its performance to meet cooling requirements. |
-
 
 
 ## Structures

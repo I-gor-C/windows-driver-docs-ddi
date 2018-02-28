@@ -4,11 +4,11 @@ title: IWiaErrorHandler
 author: windows-driver-content
 description: The IWiaErrorHandler interface provides the GetStatusDescription and ReportStatus methods, which enable minidrivers to give users information about status or errors during a data transfer and possibly give an opportunity to recover from errors.
 old-location: image\iwiaerrorhandler_interface.htm
-old-project: Image
+old-project: image
 ms.assetid: b441fbca-75fe-4b9d-a9d5-2ad5a4a55801
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: image.iwiaerrorhandler_interface, IWiaErrorHandler interface [Imaging Devices], IWiaErrorHandler interface [Imaging Devices], described, IWiaErrorHandler, wia_lh/IWiaErrorHandler, IWiaErrorHandler_0a501695-14b7-4aab-aee8-19ce74caea94.xml
+ms.date: 2/23/2018
+ms.keywords: IWiaErrorHandler, IWiaErrorHandler interface [Imaging Devices], IWiaErrorHandler interface [Imaging Devices], described, IWiaErrorHandler_0a501695-14b7-4aab-aee8-19ce74caea94.xml, image.iwiaerrorhandler_interface, wia_lh/IWiaErrorHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: wia_lh.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	wia_lh.h
-apiname:
+api_name:
 -	IWiaErrorHandler
 product: Windows
 targetos: Windows
-req.typenames: "*PBMP_IMAGE_INFO, BMP_IMAGE_INFO"
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -54,8 +54,8 @@ The <b>IWiaErrorHandler</b> interface provides the <a href="https://msdn.microso
 
 | Method | Description |
 | ---- |:---- |
-| [wia_lh.IWiaErrorHandler.GetStatusDescription](nf-wia_lh-iwiaerrorhandler-getstatusdescription.md) | The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension. |
-| [wia_lh.IWiaErrorHandler.ReportStatus](nf-wia_lh-iwiaerrorhandler-reportstatus.md) | The ReportStatus method displays information about an error or status during a transfer. In some cases this method allows the user to recover from an error. |
+| [IWiaErrorHandler::GetStatusDescription](nf-wia_lh-iwiaerrorhandler-getstatusdescription.md) | The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension. |
+| [IWiaErrorHandler::ReportStatus](nf-wia_lh-iwiaerrorhandler-reportstatus.md) | The ReportStatus method displays information about an error or status during a transfer. In some cases this method allows the user to recover from an error. |
 
 ## Remarks
 

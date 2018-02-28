@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: b086dd24-74f5-474a-8684-09bf92ac731b
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolcocreatevc, ProtocolCoCreateVc callback function [Network Drivers Starting with Windows Vista], ProtocolCoCreateVc, PROTOCOL_CO_CREATE_VC, PROTOCOL_CO_CREATE_VC, ndis/ProtocolCoCreateVc, condis_protocol_ref_f0a7e657-70d5-4cd1-a42a-684cefe1dc60.xml
+ms.keywords: PROTOCOL_CO_CREATE_VC, ProtocolCoCreateVc, ProtocolCoCreateVc callback function [Network Drivers Starting with Windows Vista], condis_protocol_ref_f0a7e657-70d5-4cd1-a42a-684cefe1dc60.xml, ndis/ProtocolCoCreateVc, netvista.protocolcocreatevc
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolCoCreateVc
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_CO_CREATE_VC function
+# PROTOCOL_CO_CREATE_VC callback function
 The 
   <i>ProtocolCoCreateVc</i> function is a required function that allocates resources necessary for a call
   manager or client to activate and maintain a virtual connection (VC).
@@ -261,6 +261,10 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+
+
+
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
 
 
@@ -269,11 +273,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
+<a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
 
 
 
@@ -281,11 +285,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
-
-
-
-<a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 
 
 

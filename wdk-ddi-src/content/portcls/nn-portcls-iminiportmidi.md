@@ -7,8 +7,8 @@ old-location: audio\iminiportmidi.htm
 old-project: audio
 ms.assetid: 42170a24-377c-4cc5-962e-97ed74302d63
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportmidi, IMiniportMidi interface [Audio Devices], IMiniportMidi interface [Audio Devices], described, IMiniportMidi, portcls/IMiniportMidi, audmp-routines_bba7ae00-6719-49dd-9770-9292a96f42ec.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportMidi, IMiniportMidi interface [Audio Devices], IMiniportMidi interface [Audio Devices], described, audio.iminiportmidi, audmp-routines_bba7ae00-6719-49dd-9770-9292a96f42ec.xml, portcls/IMiniportMidi
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IMiniportMidi
 product: Windows
 targetos: Windows
@@ -57,9 +57,9 @@ The <code>IMiniportMidi</code> interface provides methods for initializing the m
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IMiniportMidi.Init](nf-portcls-iminiportmidi-init.md) | The Init method initializes the MIDI miniport object. |
-| [portcls.IMiniportMidi.NewStream](nf-portcls-iminiportmidi-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
-| [portcls.IMiniportMidi.Service](nf-portcls-iminiportmidi-service.md) | The Service method notifies the miniport driver of a request for service. |
+| [IMiniportMidi::Init](nf-portcls-iminiportmidi-init.md) | The Init method initializes the MIDI miniport object. |
+| [IMiniportMidi::NewStream](nf-portcls-iminiportmidi-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
+| [IMiniportMidi::Service](nf-portcls-iminiportmidi-service.md) | The Service method notifies the miniport driver of a request for service. |
 
 ## Remarks
 

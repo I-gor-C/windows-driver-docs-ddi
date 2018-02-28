@@ -7,8 +7,8 @@ old-location: audio\iportclsnotifications.htm
 old-project: audio
 ms.assetid: 03F65E4E-C942-4748-8D3E-938A6AC51B2A
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportclsnotifications, IPortClsNotifications interface [Audio Devices], IPortClsNotifications interface [Audio Devices], described, IPortClsNotifications, portcls/IPortClsNotifications
+ms.date: 2/22/2018
+ms.keywords: IPortClsNotifications, IPortClsNotifications interface [Audio Devices], IPortClsNotifications interface [Audio Devices], described, audio.iportclsnotifications, portcls/IPortClsNotifications
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortClsNotifications
 product: Windows
 targetos: Windows
@@ -60,9 +60,9 @@ The miniport audio driver will call into their port to create and send the notif
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortClsNotifications.AllocNotificationBuffer](nf-portcls-iportclsnotifications-allocnotificationbuffer.md) | Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps. |
-| [portcls.IPortClsNotifications.FreeNotificationBuffer](nf-portcls-iportclsnotifications-freenotificationbuffer.md) | Frees a previously allocated IPortClsNotifications buffer. The buffer is used in sending notifications, to allow for communications between audio modules and UWP apps. |
-| [portcls.IPortClsNotifications.SendNotification](nf-portcls-iportclsnotifications-sendnotification.md) | Sends a notification to the listening UWP apps, to allow for communications between audio modules and UWP apps. |
+| [IPortClsNotifications::AllocNotificationBuffer](nf-portcls-iportclsnotifications-allocnotificationbuffer.md) | Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps. |
+| [IPortClsNotifications::FreeNotificationBuffer](nf-portcls-iportclsnotifications-freenotificationbuffer.md) | Frees a previously allocated IPortClsNotifications buffer. The buffer is used in sending notifications, to allow for communications between audio modules and UWP apps. |
+| [IPortClsNotifications::SendNotification](nf-portcls-iportclsnotifications-sendnotification.md) | Sends a notification to the listening UWP apps, to allow for communications between audio modules and UWP apps. |
 
 ## Remarks
 

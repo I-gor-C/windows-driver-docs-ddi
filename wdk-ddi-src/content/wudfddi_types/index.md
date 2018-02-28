@@ -2,12 +2,36 @@
 UID: NA:wudfddi_types
 ms.assetid: 4b61f22a-ca30-3fe9-9635-a2872e82d5dd
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Wudfddi_Types.h header
+
+
+
+This header is used by Windows Driver Framework. For more information, see
+- [Windows Driver Framework](../_wdf/index.md)
+
+Wudfddi_Types.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [UMDF_VERSION_DATA structure](ns-wudfddi_types-umdf_version_data.md) | The UMDF_VERSION_DATA structure describes a version of the framework. |
+| [_WDFMEMORY_OFFSET structure](ns-wudfddi_types-_wdfmemory_offset.md) | The WDFMEMORY_OFFSET structure describes the location and size of information that is accessed within a memory block. |
+| [_WDF_PROPERTY_STORE_ROOT structure](ns-wudfddi_types-_wdf_property_store_root.md) | The WDF_PROPERTY_STORE_ROOT structure contains information that identifies a UMDF property store. |
+| [_WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure](ns-wudfddi_types-_wudf_device_power_policy_idle_settings.md) | The WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure contains driver-supplied information that the framework uses when a device is idle and the system is in the system working state (S0). |
+
+## Enumerations
+
+| Title   | Description   |
+| ---- |:----
 
 # wudfddi_types.h header
 

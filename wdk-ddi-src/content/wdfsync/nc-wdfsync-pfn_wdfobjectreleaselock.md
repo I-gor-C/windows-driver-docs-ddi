@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# PFN_WDFOBJECTRELEASELOCK function
+# PFN_WDFOBJECTRELEASELOCK callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfObjectReleaseLock</b> method releases an object's synchronization lock.

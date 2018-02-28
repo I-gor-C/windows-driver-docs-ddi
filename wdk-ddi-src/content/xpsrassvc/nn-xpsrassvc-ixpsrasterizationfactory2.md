@@ -7,8 +7,8 @@ old-location: print\ixpsrasterizationfactory2.htm
 old-project: print
 ms.assetid: 23994CD9-A65B-4BD7-9070-3F575D011953
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.ixpsrasterizationfactory2, IXpsRasterizationFactory2 interface [Print Devices], IXpsRasterizationFactory2 interface [Print Devices], described, IXpsRasterizationFactory2, xpsrassvc/IXpsRasterizationFactory2
+ms.date: 2/23/2018
+ms.keywords: IXpsRasterizationFactory2, IXpsRasterizationFactory2 interface [Print Devices], IXpsRasterizationFactory2 interface [Print Devices], described, print.ixpsrasterizationfactory2, xpsrassvc/IXpsRasterizationFactory2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: xpsrassvc.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	xpsrassvc.h
-apiname:
+api_name:
 -	IXpsRasterizationFactory2
 product: Windows
 targetos: Windows
@@ -54,7 +54,7 @@ In Windows 10, the <b>IXpsRasterizationFactory2</b> interface represents an obj
 
 | Method | Description |
 | ---- |:---- |
-| [xpsrassvc.IXpsRasterizationFactory2.CreateRasterizer](nf-xpsrassvc-ixpsrasterizationfactory2-createrasterizer.md) | The CreateRasterizer method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs. |
+| [IXpsRasterizationFactory2::CreateRasterizer](nf-xpsrassvc-ixpsrasterizationfactory2-createrasterizer.md) | The CreateRasterizer method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs. |
 
 ## Remarks
 

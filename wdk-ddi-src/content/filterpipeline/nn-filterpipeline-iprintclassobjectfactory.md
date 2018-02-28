@@ -7,8 +7,8 @@ old-location: print\iprintclassobjectfactory.htm
 old-project: print
 ms.assetid: 09691b81-6488-4972-8cbc-7873e6717287
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.iprintclassobjectfactory, IPrintClassObjectFactory interface [Print Devices], IPrintClassObjectFactory interface [Print Devices], described, IPrintClassObjectFactory, filterpipeline/IPrintClassObjectFactory, filterpipeline_dfad10be-6be6-4a74-8efb-e53182e469b7.xml
+ms.date: 2/23/2018
+ms.keywords: IPrintClassObjectFactory, IPrintClassObjectFactory interface [Print Devices], IPrintClassObjectFactory interface [Print Devices], described, filterpipeline/IPrintClassObjectFactory, filterpipeline_dfad10be-6be6-4a74-8efb-e53182e469b7.xml, print.iprintclassobjectfactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IPrintClassObjectFactory
 product: Windows
 targetos: Windows
@@ -53,7 +53,7 @@ The<b>IPrintClassObjectFactory</b> interface creates print filter-related interf
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IPrintClassObjectFactory.GetPrintClassObject](nf-filterpipeline-iprintclassobjectfactory-getprintclassobject.md) | The GetPrintClassObject method creates a print filter-related object for a specified printer by using the IID of the interface object to create. |
+| [IPrintClassObjectFactory::GetPrintClassObject](nf-filterpipeline-iprintclassobjectfactory-getprintclassobject.md) | The GetPrintClassObject method creates a print filter-related object for a specified printer by using the IID of the interface object to create. |
 
 ## Remarks
 

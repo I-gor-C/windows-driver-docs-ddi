@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: f31a88c1-468f-4756-a5fa-b4aa0b8fe51d
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfnamedpropertystore, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, described, IWDFNamedPropertyStore, wudfddi/IWDFNamedPropertyStore, UMDFPropertyStoreObjectRef_139eb19f-8bb7-42ba-ab86-44f5f35e0faf.xml, umdf.iwdfnamedpropertystore
+ms.keywords: IWDFNamedPropertyStore, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, described, UMDFPropertyStoreObjectRef_139eb19f-8bb7-42ba-ab86-44f5f35e0faf.xml, umdf.iwdfnamedpropertystore, wdf.iwdfnamedpropertystore, wudfddi/IWDFNamedPropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFNamedPropertyStore
 product: Windows
 targetos: Windows
@@ -56,10 +56,10 @@ The <b>IWDFNamedPropertyStore</b> interface exposes a property-store object.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFNamedPropertyStore.GetNameAt](nf-wudfddi-iwdfnamedpropertystore-getnameat.md) | The GetNameAt method retrieves the name of a property. |
-| [wudfddi.IWDFNamedPropertyStore.GetNameCount](nf-wudfddi-iwdfnamedpropertystore-getnamecount.md) | The GetNameCount method retrieves the number of properties in a property store. |
-| [wudfddi.IWDFNamedPropertyStore.GetNamedValue](nf-wudfddi-iwdfnamedpropertystore-getnamedvalue.md) | The GetNamedValue method retrieves the value of a property. |
-| [wudfddi.IWDFNamedPropertyStore.SetNamedValue](nf-wudfddi-iwdfnamedpropertystore-setnamedvalue.md) | The SetNamedValue method sets the value of a property. |
+| [IWDFNamedPropertyStore::GetNameAt](nf-wudfddi-iwdfnamedpropertystore-getnameat.md) | The GetNameAt method retrieves the name of a property. |
+| [IWDFNamedPropertyStore::GetNameCount](nf-wudfddi-iwdfnamedpropertystore-getnamecount.md) | The GetNameCount method retrieves the number of properties in a property store. |
+| [IWDFNamedPropertyStore::GetNamedValue](nf-wudfddi-iwdfnamedpropertystore-getnamedvalue.md) | The GetNamedValue method retrieves the value of a property. |
+| [IWDFNamedPropertyStore::SetNamedValue](nf-wudfddi-iwdfnamedpropertystore-setnamedvalue.md) | The SetNamedValue method sets the value of a property. |
 
 ## Remarks
 

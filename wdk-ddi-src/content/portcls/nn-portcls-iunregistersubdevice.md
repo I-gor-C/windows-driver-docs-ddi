@@ -7,8 +7,8 @@ old-location: audio\iunregistersubdevice.htm
 old-project: audio
 ms.assetid: 023b0a03-a572-459b-a1eb-b25fcde6ecc5
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iunregistersubdevice, IUnregisterSubdevice interface [Audio Devices], IUnregisterSubdevice interface [Audio Devices], described, IUnregisterSubdevice, portcls/IUnregisterSubdevice, audmp-routines_1af8aada-2816-4e82-abe4-579ba672866b.xml
+ms.date: 2/22/2018
+ms.keywords: IUnregisterSubdevice, IUnregisterSubdevice interface [Audio Devices], IUnregisterSubdevice interface [Audio Devices], described, audio.iunregistersubdevice, audmp-routines_1af8aada-2816-4e82-abe4-579ba672866b.xml, portcls/IUnregisterSubdevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IUnregisterSubdevice
 product: Windows
 targetos: Windows
@@ -79,7 +79,7 @@ The <code>IUnregisterSubdevice</code> object maintains its own internal referenc
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IUnregisterSubdevice.UnregisterSubdevice](nf-portcls-iunregistersubdevice-unregistersubdevice.md) | The UnregisterSubdevice method deletes the registration of a subdevice that was previously registered by a call to PcRegisterSubdevice. |
+| [IUnregisterSubdevice::UnregisterSubdevice](nf-portcls-iunregistersubdevice-unregistersubdevice.md) | The UnregisterSubdevice method deletes the registration of a subdevice that was previously registered by a call to PcRegisterSubdevice. |
 
 ## Remarks
 

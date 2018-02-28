@@ -7,8 +7,8 @@ old-location: audio\iportwavertstream.htm
 old-project: audio
 ms.assetid: ca5039ff-d34a-4a61-b288-64f0c1f31b91
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iportwavertstream, IPortWaveRTStream interface [Audio Devices], IPortWaveRTStream interface [Audio Devices], described, IPortWaveRTStream, portcls/IPortWaveRTStream, audmp-routines_485f04fa-bdd1-4b92-bb3b-4f8653393811.xml
+ms.date: 2/22/2018
+ms.keywords: IPortWaveRTStream, IPortWaveRTStream interface [Audio Devices], IPortWaveRTStream interface [Audio Devices], described, audio.iportwavertstream, audmp-routines_485f04fa-bdd1-4b92-bb3b-4f8653393811.xml, portcls/IPortWaveRTStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	portcls.h
-apiname:
+api_name:
 -	IPortWaveRTStream
 product: Windows
 targetos: Windows
@@ -59,13 +59,13 @@ The methods in the <code>IPortWaveRTStream</code> interface are based on, and ar
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortWaveRTStream.AllocateContiguousPagesForMdl](nf-portcls-iportwavertstream-allocatecontiguouspagesformdl.md) | The AllocateContiguousPagesForMdl method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them. |
-| [portcls.IPortWaveRTStream.AllocatePagesForMdl](nf-portcls-iportwavertstream-allocatepagesformdl.md) | The AllocatePagesForMdl method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them. |
-| [portcls.IPortWaveRTStream.FreePagesFromMdl](nf-portcls-iportwavertstream-freepagesfrommdl.md) | The FreePagesFromMdl method frees a memory descriptor list (MDL). |
-| [portcls.IPortWaveRTStream.GetPhysicalPageAddress](nf-portcls-iportwavertstream-getphysicalpageaddress.md) | The GetPhysicalPageAddress method returns the physical address for a page within a memory descriptor list (MDL). |
-| [portcls.IPortWaveRTStream.GetPhysicalPagesCount](nf-portcls-iportwavertstream-getphysicalpagescount.md) | The GetPhysicalPagesCount method returns the count of the physical pages in a memory descriptor list (MDL). |
-| [portcls.IPortWaveRTStream.MapAllocatedPages](nf-portcls-iportwavertstream-mapallocatedpages.md) | The MapAllocatedPages method maps a list of previously allocated physical pages into a contiguous block of virtual memory that is accessible from kernel-mode. |
-| [portcls.IPortWaveRTStream.UnmapAllocatedPages](nf-portcls-iportwavertstream-unmapallocatedpages.md) | The UnmapAllocatedPages method releases a mapping. |
+| [IPortWaveRTStream::AllocateContiguousPagesForMdl](nf-portcls-iportwavertstream-allocatecontiguouspagesformdl.md) | The AllocateContiguousPagesForMdl method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them. |
+| [IPortWaveRTStream::AllocatePagesForMdl](nf-portcls-iportwavertstream-allocatepagesformdl.md) | The AllocatePagesForMdl method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them. |
+| [IPortWaveRTStream::FreePagesFromMdl](nf-portcls-iportwavertstream-freepagesfrommdl.md) | The FreePagesFromMdl method frees a memory descriptor list (MDL). |
+| [IPortWaveRTStream::GetPhysicalPageAddress](nf-portcls-iportwavertstream-getphysicalpageaddress.md) | The GetPhysicalPageAddress method returns the physical address for a page within a memory descriptor list (MDL). |
+| [IPortWaveRTStream::GetPhysicalPagesCount](nf-portcls-iportwavertstream-getphysicalpagescount.md) | The GetPhysicalPagesCount method returns the count of the physical pages in a memory descriptor list (MDL). |
+| [IPortWaveRTStream::MapAllocatedPages](nf-portcls-iportwavertstream-mapallocatedpages.md) | The MapAllocatedPages method maps a list of previously allocated physical pages into a contiguous block of virtual memory that is accessible from kernel-mode. |
+| [IPortWaveRTStream::UnmapAllocatedPages](nf-portcls-iportwavertstream-unmapallocatedpages.md) | The UnmapAllocatedPages method releases a mapping. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: 3f50bcba-c7d2-4d81-bd8b-6080e08fbe74
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.protocolnetpnpevent, ProtocolNetPnPEvent callback function [Network Drivers Starting with Windows Vista], ProtocolNetPnPEvent, PROTOCOL_NET_PNP_EVENT, PROTOCOL_NET_PNP_EVENT, ndis/ProtocolNetPnPEvent, protocol_functions_ref_24f290b7-d0fc-4d50-9aff-f40f4847a451.xml
+ms.keywords: PROTOCOL_NET_PNP_EVENT, ProtocolNetPnPEvent, ProtocolNetPnPEvent callback function [Network Drivers Starting with Windows Vista], ndis/ProtocolNetPnPEvent, netvista.protocolnetpnpevent, protocol_functions_ref_24f290b7-d0fc-4d50-9aff-f40f4847a451.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Ndis.h
-apiname:
+api_name:
 -	ProtocolNetPnPEvent
 product: Windows
 targetos: Windows
@@ -44,7 +44,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 
-# PROTOCOL_NET_PNP_EVENT function
+# PROTOCOL_NET_PNP_EVENT callback function
 NDIS calls the 
   <i>ProtocolNetPnPEvent</i> function to indicate a network Plug and Play event, an NDIS
   PnP event, or a power management event to a protocol driver.
@@ -297,11 +297,11 @@ The protocol driver should save the
 A protocol driver should always succeed a 
     <b>NetEventQueryPower</b> event. After establishing an active connection, a
     protocol driver can call the 
-    <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a> function to
+    <a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a> function to
     register a continuously busy state. As long as the state registration is in effect, the power manager
     does not attempt to put the system to sleep. After the connection becomes inactive, the protocol driver
     cancels the state registration by calling the 
-    <a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a> function. A
+    <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a> function. A
     protocol driver should never try to prevent the system from transitioning to the sleeping state by
     failing a 
     <b>NetEventQueryPower</b> event. Note that a 
@@ -379,14 +379,6 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
-
-
-
-<a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
-
-
-
 <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
 
 
@@ -395,7 +387,15 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 
 
-<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
+<a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a>
+
+
+
+<a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
+
+
+
+<a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>
 
 
 

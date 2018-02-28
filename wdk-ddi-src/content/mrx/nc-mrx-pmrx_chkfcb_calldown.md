@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 273266b3-98f4-4c93-a06b-8e149440ad24
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: ifsk.mrxarefilesaliased, MRxAreFilesAliased, MRxAreFilesAliased routine [Installable File System Drivers], MRxAreFilesAliased, PMRX_CHKFCB_CALLDOWN, PMRX_CHKFCB_CALLDOWN, mrx/MRxAreFilesAliased, mrxref_5d6e6988-84d7-43ac-860e-4f184686a9e6.xml
+ms.keywords: MRxAreFilesAliased, MRxAreFilesAliased routine [Installable File System Drivers], PMRX_CHKFCB_CALLDOWN, ifsk.mrxarefilesaliased, mrx/MRxAreFilesAliased, mrxref_5d6e6988-84d7-43ac-860e-4f184686a9e6.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	mrx.h
-apiname:
+api_name:
 -	MRxAreFilesAliased
 product: Windows
 targetos: Windows
@@ -118,21 +118,7 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549841">MRxCleanupFobx</a>
-
-
-
-<a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a>
-
-
-
-<a href="..\mrx\nc-mrx-pmrx_extendfile_calldown.md">MRxExtendForCache</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
-
-
+<a href="..\mrx\nc-mrx-pmrx_deallocate_for_fcb.md">MRxDeallocateForFcb</a>
 
 
 
@@ -140,15 +126,7 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550677">MRxForceClosed</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550817">MRxShouldTryToCollapseThisOpen</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549847">MRxCollapseOpen</a>
 
 
 
@@ -156,14 +134,7 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 
 
-<a href="..\mrx\nc-mrx-pmrx_deallocate_for_fcb.md">MRxDeallocateForFcb</a>
-
-
-
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550669">MRxFlush</a>
+<a href="..\mrx\nc-mrx-pmrx_forceclosed_calldown.md">MRxForceClosed</a>
 
 
 
@@ -171,20 +142,23 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549847">MRxCollapseOpen</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550669">MRxFlush</a>
 
 
 
-<a href="..\mrx\nc-mrx-pmrx_calldown.md">MRxCloseSrvOpen</a>
+<a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a>
 
 
 
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550844">MRxZeroExtend</a>
-
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550817">MRxShouldTryToCollapseThisOpen</a>
 
 
-<a href="..\mrx\nc-mrx-pmrx_forceclosed_calldown.md">MRxForceClosed</a>
+
+<a href="..\mrx\nc-mrx-pmrx_extendfile_calldown.md">MRxExtendForCache</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549841">MRxCleanupFobx</a>
 
 
 
@@ -193,6 +167,18 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 
 <a href="..\mrx\nc-mrx-pmrx_calldown.md">MRxCloseSrvOpen</a>
+
+
+
+<a href="..\scavengr\nf-scavengr-rxpurgerelatedfobxs.md">RxPurgeRelatedFobxs</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550844">MRxZeroExtend</a>
 
 
 

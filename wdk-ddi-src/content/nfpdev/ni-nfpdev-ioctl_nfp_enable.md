@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 25D4C7BB-782D-4BDB-9E07-F152E3705705
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: nfpdrivers.ioctl_nfp_enable, IOCTL_NFP_ENABLE, _IOCTL_NFP_ENABLE, IOCTL_NFP_ENABLE control code [Near-Field Proximity Drivers], IOCTL_NFP_ENABLE, nfpdev/IOCTL_NFP_ENABLE
+ms.keywords: IOCTL_NFP_ENABLE, IOCTL_NFP_ENABLE control code [Near-Field Proximity Drivers], _IOCTL_NFP_ENABLE, nfpdev/IOCTL_NFP_ENABLE, nfpdrivers.ioctl_nfp_enable
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	nfpdev.h
-apiname:
+api_name:
 -	IOCTL_NFP_ENABLE
 product: Windows
 targetos: Windows
@@ -98,15 +98,15 @@ If a device is currently proximate when this IOCTL is successfully completed, th
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) overall design guide</a>
 
 
 
 <a href="..\nfpdev\ni-nfpdev-ioctl_nfp_disable.md">IOCTL_NFP_DISABLE</a>
+
+
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfp-design-guide">Near field proximity design guide (Tap and Do, NFP provider model, driver requirements)</a>
 
 
 

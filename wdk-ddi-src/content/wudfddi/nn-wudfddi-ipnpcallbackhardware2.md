@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: C0DB967F-0A1A-4749-B902-EBA0D59A3E45
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ipnpcallbackhardware2, IPnpCallbackHardware2 interface, IPnpCallbackHardware2 interface, described, IPnpCallbackHardware2, wudfddi/IPnpCallbackHardware2, umdf.ipnpcallbackhardware2
+ms.keywords: IPnpCallbackHardware2, IPnpCallbackHardware2 interface, IPnpCallbackHardware2 interface, described, umdf.ipnpcallbackhardware2, wdf.ipnpcallbackhardware2, wudfddi/IPnpCallbackHardware2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IPnpCallbackHardware2
 product: Windows
 targetos: Windows
@@ -56,8 +56,8 @@ req.product: Windows 10 or later.
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IPnpCallbackHardware2.OnPrepareHardware](nf-wudfddi-ipnpcallbackhardware2-onpreparehardware.md) | The OnPrepareHardware method performs any operations that are needed to make a device accessible to the driver. |
-| [wudfddi.IPnpCallbackHardware2.OnReleaseHardware](nf-wudfddi-ipnpcallbackhardware2-onreleasehardware.md) | The OnReleaseHardware method performs operations that are needed when a device is no longer accessible. |
+| [IPnpCallbackHardware2::OnPrepareHardware](nf-wudfddi-ipnpcallbackhardware2-onpreparehardware.md) | The OnPrepareHardware method performs any operations that are needed to make a device accessible to the driver. |
+| [IPnpCallbackHardware2::OnReleaseHardware](nf-wudfddi-ipnpcallbackhardware2-onreleasehardware.md) | The OnReleaseHardware method performs operations that are needed when a device is no longer accessible. |
 
 ## Remarks
 

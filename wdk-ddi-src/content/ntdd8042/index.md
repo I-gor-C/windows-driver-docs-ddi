@@ -2,7 +2,7 @@
 UID: NA:ntdd8042
 ms.assetid: 20253ca3-2ef9-33f0-991d-bd37be11cc04
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ ntdd8042.h contains the following programming interfaces:
 | [IOCTL_INTERNAL_I8042_MOUSE_WRITE_BUFFER](ni-ntdd8042-ioctl_internal_i8042_mouse_write_buffer.md) | The IOCTL_INTERNAL_I8042_MOUSE_WRITE_BUFFER request writes data to the i8042 port controller to control operation of a mouse device. |
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PI8042_ISR_WRITE_PORT](nc-ntdd8042-pi8042_isr_write_port.md) | The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback. |
@@ -40,7 +41,6 @@ ntdd8042.h contains the following programming interfaces:
 | [PI8042_QUEUE_PACKET](nc-ntdd8042-pi8042_queue_packet.md) | The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for processing by the ISR DPC of a keyboard or mouse device. I8042prt provides this callback. |
 | [PI8042_SYNCH_READ_PORT](nc-ntdd8042-pi8042_synch_read_port.md) | The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from an i8042 port. I8042prt supplies this callback. |
 | [PI8042_SYNCH_WRITE_PORT](nc-ntdd8042-pi8042_synch_write_port.md) | The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized write to an i8042 port. I8042prt supplies this routine. |
-
 
 
 ## Structures

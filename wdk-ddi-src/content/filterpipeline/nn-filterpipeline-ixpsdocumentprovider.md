@@ -7,8 +7,8 @@ old-location: print\ixpsdocumentprovider.htm
 old-project: print
 ms.assetid: e1fac90f-5c21-4857-a52f-04c5366d7b18
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: print.ixpsdocumentprovider, IXpsDocumentProvider interface [Print Devices], IXpsDocumentProvider interface [Print Devices], described, IXpsDocumentProvider, filterpipeline/IXpsDocumentProvider, filterpipeline_5c7b0fb9-f191-47c7-b0fc-96371c21f993.xml
+ms.date: 2/23/2018
+ms.keywords: IXpsDocumentProvider, IXpsDocumentProvider interface [Print Devices], IXpsDocumentProvider interface [Print Devices], described, filterpipeline/IXpsDocumentProvider, filterpipeline_5c7b0fb9-f191-47c7-b0fc-96371c21f993.xml, print.ixpsdocumentprovider
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: filterpipeline.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	filterpipeline.h
-apiname:
+api_name:
 -	IXpsDocumentProvider
 product: Windows
 targetos: Windows
@@ -54,7 +54,7 @@ The <code>IxpsDocumentProvider</code> interface provides interfaces to consume p
 
 | Method | Description |
 | ---- |:---- |
-| [filterpipeline.IXpsDocumentProvider.GetXpsPart](nf-filterpipeline-ixpsdocumentprovider-getxpspart.md) | The GetXpsPart method retrieves several objects that make up an XPS document. |
+| [IXpsDocumentProvider::GetXpsPart](nf-filterpipeline-ixpsdocumentprovider-getxpspart.md) | The GetXpsPart method retrieves several objects that make up an XPS document. |
 
 ## Remarks
 

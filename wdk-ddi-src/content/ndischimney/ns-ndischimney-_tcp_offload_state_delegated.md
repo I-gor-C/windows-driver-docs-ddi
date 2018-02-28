@@ -8,7 +8,7 @@ old-project: netvista
 ms.assetid: ab16cfa1-24f6-434a-a687-07e19172f185
 ms.author: windowsdriverdev
 ms.date: 2/16/2018
-ms.keywords: netvista.tcp_offload_state_delegated, TCP_OFFLOAD_STATE_DELEGATED, ndischimney/TCP_OFFLOAD_STATE_DELEGATED, _TCP_OFFLOAD_STATE_DELEGATED, *PTCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], ndischimney/PTCP_OFFLOAD_STATE_DELEGATED, tcp_chim_struct_e835c163-e154-4b9c-b1bb-b658376fd89d.xml, TCP_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista]
+ms.keywords: "*PTCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], _TCP_OFFLOAD_STATE_DELEGATED, ndischimney/PTCP_OFFLOAD_STATE_DELEGATED, ndischimney/TCP_OFFLOAD_STATE_DELEGATED, netvista.tcp_offload_state_delegated, tcp_chim_struct_e835c163-e154-4b9c-b1bb-b658376fd89d.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -29,18 +29,18 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	HeaderDef
-apilocation:
+api_location:
 -	ndischimney.h
-apiname:
+api_name:
 -	TCP_OFFLOAD_STATE_DELEGATED
 product: Windows
 targetos: Windows
-req.typenames: "*PTCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED"
+req.typenames: TCP_OFFLOAD_STATE_DELEGATED, *PTCP_OFFLOAD_STATE_DELEGATED
 ---
 
 # _TCP_OFFLOAD_STATE_DELEGATED structure
@@ -351,15 +351,7 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is ass
 
 ## See Also
 
-<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
-
-
-
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-
-
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
+<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
 
 
 
@@ -367,11 +359,19 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is ass
 
 
 
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
+
+
+
 <a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
 
 
 
-<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
+<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
+
+
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 
 

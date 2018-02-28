@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 10677BC2-2A98-41C8-BAE9-1FA3689ACD93
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.oninterruptworkitem, OnInterruptWorkItem callback function, OnInterruptWorkItem, WUDF_INTERRUPT_WORKITEM, WUDF_INTERRUPT_WORKITEM, wudfinterrupt/OnInterruptWorkItem, umdf.oninterruptworkitem
+ms.keywords: OnInterruptWorkItem, OnInterruptWorkItem callback function, WUDF_INTERRUPT_WORKITEM, umdf.oninterruptworkitem, wdf.oninterruptworkitem, wudfinterrupt/OnInterruptWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	Wudfinterrupt.h
-apiname:
+api_name:
 -	OnInterruptWorkItem
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# WUDF_INTERRUPT_WORKITEM function
+# WUDF_INTERRUPT_WORKITEM callback function
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 

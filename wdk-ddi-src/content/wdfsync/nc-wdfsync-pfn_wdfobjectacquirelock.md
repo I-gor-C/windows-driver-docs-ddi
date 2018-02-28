@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# PFN_WDFOBJECTACQUIRELOCK function
+# PFN_WDFOBJECTACQUIRELOCK callback function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
 The <b>WdfObjectAcquireLock</b> method acquires an object's synchronization lock.

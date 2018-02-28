@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 404436c3-6ddb-4212-ad51-23a956d7df52
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.evtchildlistdevicereenumerated, EvtChildListDeviceReenumerated callback function, EvtChildListDeviceReenumerated, EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED, EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED, wdfchildlist/EvtChildListDeviceReenumerated, DFDeviceObjectChildListRef_70b8a1c2-d157-4d57-85d3-09566977b649.xml, kmdf.evtchildlistdevicereenumerated
+ms.keywords: DFDeviceObjectChildListRef_70b8a1c2-d157-4d57-85d3-09566977b649.xml, EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED, EvtChildListDeviceReenumerated, EvtChildListDeviceReenumerated callback function, kmdf.evtchildlistdevicereenumerated, wdf.evtchildlistdevicereenumerated, wdfchildlist/EvtChildListDeviceReenumerated
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	UserDefined
-apilocation:
+api_location:
 -	WdfChildlist.h
-apiname:
+api_name:
 -	EvtChildListDeviceReenumerated
 product: Windows
 targetos: Windows
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED function
+# EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED callback function
 <p class="CCE_Message">[Applies to KMDF only]
 
 A driver's <i>EvtChildListDeviceReenumerated</i> event callback function enables the driver to approve or cancel a reenumeration of a specified device.
@@ -158,6 +158,14 @@ The <b>EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED</b> function type is defined in th
 
 ## See Also
 
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_description_header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
+
+
+
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetdefaultchildlistconfig.md">WdfFdoInitSetDefaultChildListConfig</a>
+
+
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 
 
@@ -166,15 +174,7 @@ The <b>EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED</b> function type is defined in th
 
 
 
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_description_header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
-
-
-
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>
-
-
-
-<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetdefaultchildlistconfig.md">WdfFdoInitSetDefaultChildListConfig</a>
 
 
 

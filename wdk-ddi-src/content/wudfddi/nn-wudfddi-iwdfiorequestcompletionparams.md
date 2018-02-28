@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 36bed6be-7202-4dff-989d-57d790b8eb52
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.iwdfiorequestcompletionparams, IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams interface, described, IWDFIoRequestCompletionParams, wudfddi/IWDFIoRequestCompletionParams, UMDFRequestObjectRef_0670626e-575e-482b-bed6-da7d7d86495d.xml, umdf.iwdfiorequestcompletionparams
+ms.keywords: IWDFIoRequestCompletionParams, IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams interface, described, UMDFRequestObjectRef_0670626e-575e-482b-bed6-da7d7d86495d.xml, umdf.iwdfiorequestcompletionparams, wdf.iwdfiorequestcompletionparams, wudfddi/IWDFIoRequestCompletionParams
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	WUDFx.dll
-apiname:
+api_name:
 -	IWDFIoRequestCompletionParams
 product: Windows
 targetos: Windows
@@ -56,9 +56,9 @@ The <b>IWDFIoRequestCompletionParams</b> interface exposes methods that drivers 
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IWDFIoRequestCompletionParams.GetIoctlParameters](nf-wudfddi-iwdfiorequestcompletionparams-getioctlparameters.md) | The GetIoctlParameters method retrieves parameters that are associated with the completion of a device I/O control request. |
-| [wudfddi.IWDFIoRequestCompletionParams.GetReadParameters](nf-wudfddi-iwdfiorequestcompletionparams-getreadparameters.md) | The GetReadParameters method retrieves parameters that are associated with the completion of a read request. |
-| [wudfddi.IWDFIoRequestCompletionParams.GetWriteParameters](nf-wudfddi-iwdfiorequestcompletionparams-getwriteparameters.md) | The GetWriteParameters method retrieves parameters that are associated with the completion of a write request. |
+| [IWDFIoRequestCompletionParams::GetIoctlParameters](nf-wudfddi-iwdfiorequestcompletionparams-getioctlparameters.md) | The GetIoctlParameters method retrieves parameters that are associated with the completion of a device I/O control request. |
+| [IWDFIoRequestCompletionParams::GetReadParameters](nf-wudfddi-iwdfiorequestcompletionparams-getreadparameters.md) | The GetReadParameters method retrieves parameters that are associated with the completion of a read request. |
+| [IWDFIoRequestCompletionParams::GetWriteParameters](nf-wudfddi-iwdfiorequestcompletionparams-getwriteparameters.md) | The GetWriteParameters method retrieves parameters that are associated with the completion of a write request. |
 
 ## Remarks
 

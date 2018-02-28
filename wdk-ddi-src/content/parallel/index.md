@@ -2,7 +2,7 @@
 UID: NA:parallel
 ms.assetid: e507d2c6-0d63-3a57-be51-7db3ba17a47f
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -43,7 +43,8 @@ parallel.h contains the following programming interfaces:
 | [IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT](ni-parallel-ioctl_internal_unlock_port_no_deselect.md) | The IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT request frees a parallel device's parent parallel port. |
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PDETERMINE_IEEE_MODES](nc-parallel-pdetermine_ieee_modes.md) | The PDETERMINE_IEEE_MODES-typed callback routine determines which IEEE 1284 protocols a parallel device supports. The system-supplied bus driver for parallel ports supplies this routine. |
@@ -60,7 +61,6 @@ parallel.h contains the following programming interfaces:
 | [PPARALLEL_TRY_SELECT_ROUTINE](nc-parallel-pparallel_try_select_routine.md) | The PPARALLEL_TRY_SELECT_ROUTINE-typed callback routine selects an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. The system-supplied function driver for parallel ports supplies this routine. |
 | [PPARALLEL_WRITE](nc-parallel-pparallel_write.md) | The PPARALLEL_WRITE-typed callback routine writes data to a parallel device. The system-supplied bus driver for parallel ports supplies this routine. |
 | [PTERMINATE_IEEE_MODE](nc-parallel-pterminate_ieee_mode.md) | The PTERMINATE_IEEE_MODE-typed callback routine terminates the current IEEE operating mode and sets the mode to IEEE 1284-compatible. The system-supplied bus driver for parallel ports supplies this routine. |
-
 
 
 ## Structures

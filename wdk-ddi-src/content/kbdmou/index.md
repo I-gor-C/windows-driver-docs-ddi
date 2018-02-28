@@ -2,7 +2,7 @@
 UID: NA:kbdmou
 ms.assetid: 7916a78e-8897-372f-8e32-22081a9589d3
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -27,11 +27,11 @@ kbdmou.h contains the following programming interfaces:
 | [IOCTL_INTERNAL_MOUSE_DISCONNECT](ni-kbdmou-ioctl_internal_mouse_disconnect.md) | The IOCTL_INTERNAL_MOUSE_DISCONNECT request is completed by Moufiltr with an error status of STATUS_NOT_IMPLEMENTED. |
 
 
-## Functions
+
+## Callback functions
 | Title | Description |
 | ---- |:---- |
 | [PSERVICE_CALLBACK_ROUTINE](nc-kbdmou-pservice_callback_routine.md) | A function driver calls the class service callback in its ISR dispatch completion routine. The class service callback transfers input data from the input data buffer of a device to the class data queue. |
-
 
 
 ## Structures

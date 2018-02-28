@@ -7,8 +7,8 @@ old-location: audio\iminiportdmus.htm
 old-project: audio
 ms.assetid: 12cd3533-1830-46cd-a1eb-350f7461a61d
 ms.author: windowsdriverdev
-ms.date: 2/21/2018
-ms.keywords: audio.iminiportdmus, IMiniportDMus interface [Audio Devices], IMiniportDMus interface [Audio Devices], described, IMiniportDMus, dmusicks/IMiniportDMus, audmp-routines_b123c50b-e4b9-4f19-a2c4-b33fb335bec6.xml
+ms.date: 2/22/2018
+ms.keywords: IMiniportDMus, IMiniportDMus interface [Audio Devices], IMiniportDMus interface [Audio Devices], described, audio.iminiportdmus, audmp-routines_b123c50b-e4b9-4f19-a2c4-b33fb335bec6.xml, dmusicks/IMiniportDMus
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: dmusicks.h
 req.dll: 
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	dmusicks.h
-apiname:
+api_name:
 -	IMiniportDMus
 product: Windows
 targetos: Windows
@@ -57,9 +57,9 @@ The <code>IMiniportDMus</code> interface provides methods for initializing the m
 
 | Method | Description |
 | ---- |:---- |
-| [dmusicks.IMiniportDMus.Init](nf-dmusicks-iminiportdmus-init.md) | The Init method initializes the DMus miniport object. |
-| [dmusicks.IMiniportDMus.NewStream](nf-dmusicks-iminiportdmus-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
-| [dmusicks.IMiniportDMus.Service](nf-dmusicks-iminiportdmus-service.md) | This method does not currently need to be implemented in the miniport driver. The Service method is currently unused. |
+| [IMiniportDMus::Init](nf-dmusicks-iminiportdmus-init.md) | The Init method initializes the DMus miniport object. |
+| [IMiniportDMus::NewStream](nf-dmusicks-iminiportdmus-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
+| [IMiniportDMus::Service](nf-dmusicks-iminiportdmus-service.md) | This method does not currently need to be implemented in the miniport driver. The Service method is currently unused. |
 
 ## Remarks
 

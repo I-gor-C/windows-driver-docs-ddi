@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: d1b29916-9800-4276-860c-f7d143deb962
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: wdf.ipowerpolicycallbackwakefroms0, IPowerPolicyCallbackWakeFromS0 interface, IPowerPolicyCallbackWakeFromS0 interface, described, IPowerPolicyCallbackWakeFromS0, wudfddi/IPowerPolicyCallbackWakeFromS0, UMDFDeviceObjectRef_e79ecf1d-279d-4945-941a-ed53b00f6242.xml, umdf.ipowerpolicycallbackwakefroms0
+ms.keywords: IPowerPolicyCallbackWakeFromS0, IPowerPolicyCallbackWakeFromS0 interface, IPowerPolicyCallbackWakeFromS0 interface, described, UMDFDeviceObjectRef_e79ecf1d-279d-4945-941a-ed53b00f6242.xml, umdf.ipowerpolicycallbackwakefroms0, wdf.ipowerpolicycallbackwakefroms0, wudfddi/IPowerPolicyCallbackWakeFromS0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: interface
@@ -29,14 +29,14 @@ req.type-library:
 req.lib: wudfddi.h
 req.dll: WUDFx.dll
 req.irql: 
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	COM
-apilocation:
+api_location:
 -	Wudfddi.h
-apiname:
+api_name:
 -	IPowerPolicyCallbackWakeFromS0
 product: Windows
 targetos: Windows
@@ -56,9 +56,9 @@ A driver's <b>IPowerPolicyCallbackWakeFromS0</b> interface provides callback fun
 
 | Method | Description |
 | ---- |:---- |
-| [wudfddi.IPowerPolicyCallbackWakeFromS0.OnArmWakeFromS0](nf-wudfddi-ipowerpolicycallbackwakefroms0-onarmwakefroms0.md) | A driver's OnArmWakeFromS0 callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0). |
-| [wudfddi.IPowerPolicyCallbackWakeFromS0.OnDisarmWakeFromS0](nf-wudfddi-ipowerpolicycallbackwakefroms0-ondisarmwakefroms0.md) | A driver's OnDisarmWakeFromS0 event callback function disarms (that is, disables) a device's ability to trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0). |
-| [wudfddi.IPowerPolicyCallbackWakeFromS0.OnWakeFromS0Triggered](nf-wudfddi-ipowerpolicycallbackwakefroms0-onwakefroms0triggered.md) | A driver's OnWakeFromS0Triggered event callback function informs the driver that its device, which had previously entered a low-power device state while the system power state remained at S0, might have triggered a wake signal. |
+| [IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0](nf-wudfddi-ipowerpolicycallbackwakefroms0-onarmwakefroms0.md) | A driver's OnArmWakeFromS0 callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0). |
+| [IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0](nf-wudfddi-ipowerpolicycallbackwakefroms0-ondisarmwakefroms0.md) | A driver's OnDisarmWakeFromS0 event callback function disarms (that is, disables) a device's ability to trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0). |
+| [IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered](nf-wudfddi-ipowerpolicycallbackwakefroms0-onwakefroms0triggered.md) | A driver's OnWakeFromS0Triggered event callback function informs the driver that its device, which had previously entered a low-power device state while the system power state remained at S0, might have triggered a wake signal. |
 
 ## Remarks
 

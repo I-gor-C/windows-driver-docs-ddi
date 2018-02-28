@@ -8,7 +8,7 @@ old-project: wdf
 ms.assetid: 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
 ms.author: windowsdriverdev
 ms.date: 2/20/2018
-ms.keywords: DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, wdf.wdfrequestgetfileobject, kmdf.wdfrequestgetfileobject, WdfRequestGetFileObject, wdfrequest/WdfRequestGetFileObject, WdfRequestGetFileObject method
+ms.keywords: DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject, WdfRequestGetFileObject method, kmdf.wdfrequestgetfileobject, wdf.wdfrequestgetfileobject, wdfrequest/WdfRequestGetFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -29,17 +29,17 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
-topictype:
+topic_type:
 -	APIRef
 -	kbSyntax
-apitype:
+api_type:
 -	LibDef
-apilocation:
+api_location:
 -	Wdf01000.sys
 -	Wdf01000.sys.dll
 -	WUDFx02000.dll
 -	WUDFx02000.dll.dll
-apiname:
+api_name:
 -	WdfRequestGetFileObject
 product: Windows
 targetos: Windows
@@ -84,7 +84,7 @@ Your driver has not called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfi
 
 </li>
 <li>
-Another driver sent a read, write, or I/O control request to your driver without first sending a request type of <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WdfRequestTypeCreate</a>.
+Another driver sent a read, write, or I/O control request to your driver without first sending a request type of <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_type.md">WdfRequestTypeCreate</a>.
 
 </li>
 </ul>
@@ -131,11 +131,11 @@ MyEvtIoWrite(
 
 ## See Also
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WDF_FILEOBJECT_CLASS</a>
-
-
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a>
+
+
+
+<a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WDF_FILEOBJECT_CLASS</a>
 
 
 

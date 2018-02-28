@@ -2,12 +2,45 @@
 UID: NA:ehstorbandmgmt
 ms.assetid: 5620fe38-a1b7-3b18-8f1d-4366b8866138
 ms.author: windowsdriverdev
-ms.date: 01/18/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: portal
 ---
+
+# Ehstorbandmgmt.h header
+
+
+
+This header is used by Storage. For more information, see
+- [Storage](../_storage/index.md)
+
+Ehstorbandmgmt.h contain these programming interfaces:
+
+
+## Structures
+
+| Title   | Description   |
+| ---- |:---- |
+| [_BAND_LOCATION_INFO structure](ns-ehstorbandmgmt-_band_location_info.md) | The BAND_LOCATION_INFO structure specifies the location information for a band table entry query. |
+| [_BAND_MANAGEMENT_CAPABILITIES structure](ns-ehstorbandmgmt-_band_management_capabilities.md) | The BAND_MANAGEMENT_CAPABILITIES structure contains the security capabilities available for a storage device. This structure is returned in the system buffer by the IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES request. |
+| [_BAND_SECURITY_INFO structure](ns-ehstorbandmgmt-_band_security_info.md) | The BAND_SECURITY_INFO structure specifies the security information for a band table entry query. |
+| [_BAND_TABLE structure](ns-ehstorbandmgmt-_band_table.md) | The BAND_TABLE structure contains the table of bands returned from an IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request. |
+| [_BAND_TABLE_ENTRY structure](ns-ehstorbandmgmt-_band_table_entry.md) | Banding information entries in BAND_TABLE are represented as BAND_TABLE_ENTRY structures. These entries contain location and security properties for a band configuration. |
+| [_CREATE_BAND_PARAMETERS structure](ns-ehstorbandmgmt-_create_band_parameters.md) | The parameters to create a band on a storage device for an IOCTL_EHSTOR_BANDMGMT_CREATE_BAND request are specified in a CREATE_BAND_PARAMETERS structure. |
+| [_DELETE_BAND_PARAMETERS structure](ns-ehstorbandmgmt-_delete_band_parameters.md) | A configured band is deleted according to the parameters in a DELETE_BAND_PARAMETERS structure. This structure is input for an IOCTL_EHSTOR_BANDMGMT_DELETE_BAND request. |
+| [_ENUMERATE_BANDS_PARAMETERS structure](ns-ehstorbandmgmt-_enumerate_bands_parameters.md) | The ENUMERATE_BANDS_PARAMETERS structure is used to select which band information entries are selected for return from an IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request. |
+| [_ERASE_BAND_PARAMETERS structure](ns-ehstorbandmgmt-_erase_band_parameters.md) | The ERASE_BAND_PARAMETERS structure contains the selection criteria for a band to erase. Additionally, a new authentication key can be set. This structure is input for an IOCTL_EHSTOR_BANDMGMT_ERASE_BAND request. |
+| [_GET_BAND_METADATA_PARAMETERS structure](ns-ehstorbandmgmt-_get_band_metadata_parameters.md) | The metadata for a configured band is retrieved according to the parameters in a GET_BAND_METADATA_PARAMETERS structure. This structure is input for an IOCTL_EHSTOR_BANDMGMT_GET_BAND_METADATA request. |
+| [_SET_BAND_LOCATION_PARAMETERS structure](ns-ehstorbandmgmt-_set_band_location_parameters.md) | The SET_BAND_LOCATION_PARAMETERS structure specifies the parameters to set location properties for a band on a storage device for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION request. |
+| [_SET_BAND_METADATA_PARAMETERS structure](ns-ehstorbandmgmt-_set_band_metadata_parameters.md) | The metadata for a configured band is set to the parameters in a SET_BAND_METADATA_PARAMETERS structure. This structure is input for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request. |
+| [_SET_BAND_SECURITY_PARAMETERS structure](ns-ehstorbandmgmt-_set_band_security_parameters.md) | The parameters to set security properties for a band on a storage device for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY request are specified in a SET_BAND_SECURITY_PARAMETERS structure. |
+
+## I/O control codes
+
+| Title   | Description   |
+| ---- |:----
 
 # ehstorbandmgmt.h header
 
