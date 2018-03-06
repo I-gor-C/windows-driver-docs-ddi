@@ -249,8 +249,11 @@ d3d12umddi.h contains the following programming interfaces:
 | [PFND3D12DDI_CALCPRIVATEOPENEDCRYPTOSESSIONSIZE_0030](nc-d3d12umddi-pfnd3d12ddi_calcprivateopenedcryptosessionsize_0030.md) | Used to calculate the size of an opened session. |
 | [PFND3D12DDI_CALCPRIVATEOPENEDPROTECTEDRESOURCESESSIONSIZE_0030](nc-d3d12umddi-pfnd3d12ddi_calcprivateopenedprotectedresourcesessionsize_0030.md) | Used to calculate the size of an opened protected resource session. |
 | [PFND3D12DDI_CALCPRIVATEPROTECTEDRESOURCESESSIONSIZE_0030](nc-d3d12umddi-pfnd3d12ddi_calcprivateprotectedresourcesessionsize_0030.md) | Used to calculate the size of a protected resource session. |
+| [PFND3D12DDI_CALCPRIVATEVIDEODECODERHEAPSIZE_0032](nc-d3d12umddi-pfnd3d12ddi_calcprivatevideodecoderheapsize_0032.md) | Used to calculate the size of a video decoder heap. |
 | [PFND3D12DDI_CALCPRIVATEVIDEODECODERHEAPSIZE_0033](nc-d3d12umddi-pfnd3d12ddi_calcprivatevideodecoderheapsize_0033.md) | Used to calculate the size of a video decoder heap. |
+| [PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0021](nc-d3d12umddi-pfnd3d12ddi_calcprivatevideodecodersize_0021.md) | The pfnCalcPrivateVideoDecoderSize callback function calculates the size of a private video decoder. |
 | [PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032](nc-d3d12umddi-pfnd3d12ddi_calcprivatevideodecodersize_0032.md) | Used to calculate the size of a video decoder. |
+| [PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0021](nc-d3d12umddi-pfnd3d12ddi_calcprivatevideoprocessorsize_0021.md) | The pfnCalcPrivateVideoProcessorSize callback function calculates the size of the private video processor. |
 | [PFND3D12DDI_CALCPRIVATEVIDEOPROCESSORSIZE_0032](nc-d3d12umddi-pfnd3d12ddi_calcprivatevideoprocessorsize_0032.md) | Used to calculate the size of a video processor. |
 | [PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022](nc-d3d12umddi-pfnd3d12ddi_checkexisitingresourceallocationinfo_0022.md) | The pfnCheckExistingResourceAllocationInfo callback function supports checking existing resource allocation information. |
 | [PFND3D12DDI_CHECKRESOURCEALLOCATIONINFO_0022](nc-d3d12umddi-pfnd3d12ddi_checkresourceallocationinfo_0022.md) | The pfnCheckResourceAllocationInfo callback function supports checking resource allocation information. |
@@ -263,8 +266,11 @@ d3d12umddi.h contains the following programming interfaces:
 | [PFND3D12DDI_CREATEDEVICE_0003](nc-d3d12umddi-pfnd3d12ddi_createdevice_0003.md) | The PFND3D12DDI_CREATEDEVICE_0003 function creates a graphics context that is referenced in subsequent calls. |
 | [PFND3D12DDI_CREATEHEAPANDRESOURCE_0030](nc-d3d12umddi-pfnd3d12ddi_createheapandresource_0030.md) | Used to simultaneously create a heap and resource. |
 | [PFND3D12DDI_CREATEPROTECTEDRESOURCESESSION_0030](nc-d3d12umddi-pfnd3d12ddi_createprotectedresourcesession_0030.md) | Used to create a protected resource session. |
+| [PFND3D12DDI_CREATEVIDEODECODER_0021](nc-d3d12umddi-pfnd3d12ddi_createvideodecoder_0021.md) | The pfnCreateVideoDecoder callback function creates a video decoder. |
 | [PFND3D12DDI_CREATEVIDEODECODER_0032](nc-d3d12umddi-pfnd3d12ddi_createvideodecoder_0032.md) | Used to create a video decoder. |
+| [PFND3D12DDI_CREATEVIDEODECODERHEAP_0032](nc-d3d12umddi-pfnd3d12ddi_createvideodecoderheap_0032.md) | Used to create a video decoder heap. |
 | [PFND3D12DDI_CREATEVIDEODECODERHEAP_0033](nc-d3d12umddi-pfnd3d12ddi_createvideodecoderheap_0033.md) | Used to create a video decoder heap. |
+| [PFND3D12DDI_CREATEVIDEOPROCESSOR_0021](nc-d3d12umddi-pfnd3d12ddi_createvideoprocessor_0021.md) | The pfnCreateVideoProcessor callback function creates a video processor. |
 | [PFND3D12DDI_CREATEVIDEOPROCESSOR_0032](nc-d3d12umddi-pfnd3d12ddi_createvideoprocessor_0032.md) | Used to create a video processor. |
 | [PFND3D12DDI_DEALLOCATE_CB_0022](nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022.md) | The pfnDeallocateCb callback function controls heap deallocation by using a D3D12DDICB_DEALLOCATE_0022 structure. |
 | [PFND3D12DDI_DESTROYCRYPTOSESSION_0030](nc-d3d12umddi-pfnd3d12ddi_destroycryptosession_0030.md) | Used to destroy a crypto session. |
@@ -274,6 +280,7 @@ d3d12umddi.h contains the following programming interfaces:
 | [PFND3D12DDI_DESTROYVIDEODECODERHEAP_0032](nc-d3d12umddi-pfnd3d12ddi_destroyvideodecoderheap_0032.md) | Used to destroy a video decoder heap. |
 | [PFND3D12DDI_DESTROYVIDEOPROCESSOR_0021](nc-d3d12umddi-pfnd3d12ddi_destroyvideoprocessor_0021.md) | The pfnDestroyVideoProcessor callback function destroys a video processor. |
 | [PFND3D12DDI_GETKEYBASEDATA_0030](nc-d3d12umddi-pfnd3d12ddi_getkeybasedata_0030.md) | Used to get key base data. |
+| [PFND3D12DDI_GETPAGEABLESIZE_0020](nc-d3d12umddi-pfnd3d12ddi_getpageablesize_0020.md) | The pfnGetPageableSize callback function gets the pageable size. |
 | [PFND3D12DDI_OPENADAPTER](nc-d3d12umddi-pfnd3d12ddi_openadapter.md) | The PFND3D12DDI_OPENADAPTER function creates a graphics adapter object that is referenced in subsequent calls. |
 | [PFND3D12DDI_OPENCRYPTOSESSION_0030](nc-d3d12umddi-pfnd3d12ddi_opencryptosession_0030.md) | Used to open a crypto session. |
 | [PFND3D12DDI_OPENCRYPTOSESSIONPOLICY_0030](nc-d3d12umddi-pfnd3d12ddi_opencryptosessionpolicy_0030.md) | Used to open a crypto session policy. |
@@ -287,9 +294,17 @@ d3d12umddi.h contains the following programming interfaces:
 | [PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021](nc-d3d12umddi-pfnd3d12ddi_shadercachegetvalue_cb_0021.md) | The pfnShaderCacheGetValueCb callback function gets a shader cache value. |
 | [PFND3D12DDI_SHADERCACHESTOREVALUE_CB_0021](nc-d3d12umddi-pfnd3d12ddi_shadercachestorevalue_cb_0021.md) | The pfnShaderCacheStoreValueCb callback function stores a shader cache value. |
 | [PFND3D12DDI_TRANSFORMENCRYPTEDDATA_0030](nc-d3d12umddi-pfnd3d12ddi_transformencrypteddata_0030.md) | Used to transform encrypted data. |
+| [PFND3D12DDI_VIDEO_DECODE_FRAME_0021](nc-d3d12umddi-pfnd3d12ddi_video_decode_frame_0021.md) | The pfnDecodeFrame callback function records a decode frame operation to the command list. |
+| [PFND3D12DDI_VIDEO_DECODE_FRAME_0030](nc-d3d12umddi-pfnd3d12ddi_video_decode_frame_0030.md) | Used to decode a video frame. |
 | [PFND3D12DDI_VIDEO_DECODE_FRAME_0032](nc-d3d12umddi-pfnd3d12ddi_video_decode_frame_0032.md) | Used to decode a video frame. |
+| [PFND3D12DDI_VIDEO_DECODER_TRIM_ALLOCATIONS_0021](nc-d3d12umddi-pfnd3d12ddi_video_decoder_trim_allocations_0021.md) | The pfnDecoderTrimAllocations callback function trims allocations for submissions that are finished. |
+| [PFND3D12DDI_VIDEO_GET_BITSTREAM_ENCRYPTION_SCHEME_COUNT_0020](nc-d3d12umddi-pfnd3d12ddi_video_get_bitstream_encryption_scheme_count_0020.md) | The pfnGetBitstreamEncryptionSchemeCount callback function retrieves the number of encryption schemes supported for a decode profile. |
+| [PFND3D12DDI_VIDEO_GET_DECODE_FORMAT_COUNT_0020](nc-d3d12umddi-pfnd3d12ddi_video_get_decode_format_count_0020.md) | The pfnGetDecodeFormatCount callback function retrieves the number of formats supported for a decode configuration. |
+| [PFND3D12DDI_VIDEO_GET_DECODE_PROFILE_COUNT_0020](nc-d3d12umddi-pfnd3d12ddi_video_get_decode_profile_count_0020.md) | The pfnGetDecodeProfileCount callback function retrieves the number of decode profiles supported by the driver. |
 | [PFND3D12DDI_VIDEO_GETCAPS](nc-d3d12umddi-pfnd3d12ddi_video_getcaps.md) | The pfnGetCaps callback function defines an entry point for video specific caps. |
+| [PFND3D12DDI_VIDEO_PROCESS_FRAME_0021](nc-d3d12umddi-pfnd3d12ddi_video_process_frame_0021.md) | The pfnProcessFrame callback function performs a video processing operation on one or more input samples and writes the result to an output surface. |
 | [PFND3D12DDI_VIDEO_PROCESS_FRAME_0032](nc-d3d12umddi-pfnd3d12ddi_video_process_frame_0032.md) | Used to process a video frame. |
+| [PFND3D12DDI_VIDEO_PROCESSOR_TRIM_ALLOCATIONS_0021](nc-d3d12umddi-pfnd3d12ddi_video_processor_trim_allocations_0021.md) | The pfnProcessorTrimAllocations callback function trims allocations for submissions that are finished. |
 | [PFND3D12DDI_WRITEBUFFERIMMEDIATE_0032](nc-d3d12umddi-pfnd3d12ddi_writebufferimmediate_0032.md) | Used to create a write buffer. |
 
 
@@ -300,7 +315,9 @@ d3d12umddi.h contains the following programming interfaces:
 | [D3D12DDI_COMMAND_LIST_FUNCS_3D_0030](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0030.md) | The command list functions for 3D. |
 | [D3D12DDI_COMMAND_LIST_FUNCS_3D_0032](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0032.md) | The command list functions for 3D. |
 | [D3D12DDI_COMMAND_LIST_FUNCS_3D_0033](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0033.md) | The command list functions for 3D. |
+| [D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0030](ns-d3d12umddi-d3d12ddi_command_list_funcs_video_decode_0030.md) | Command list functions for video decode. |
 | [D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0032](ns-d3d12umddi-d3d12ddi_command_list_funcs_video_decode_0032.md) | Command list functions for video decode. |
+| [D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0030](ns-d3d12umddi-d3d12ddi_command_list_funcs_video_process_0030.md) | Command list functions for video process. |
 | [D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032](ns-d3d12umddi-d3d12ddi_command_list_funcs_video_process_0032.md) | The command list functions for video processing. |
 | [D3D12DDI_COMMAND_QUEUE_FUNCS_VIDEO_0020](ns-d3d12umddi-d3d12ddi_command_queue_funcs_video_0020.md) | Command queue functions for video. |
 | [D3D12DDI_CONTENT_PROTECTION_CALLBACKS_0030](ns-d3d12umddi-d3d12ddi_content_protection_callbacks_0030.md) | Content protection callbacks. |
@@ -319,6 +336,10 @@ d3d12umddi.h contains the following programming interfaces:
 | [D3D12DDI_DEVICE_FUNCS_CORE_0021](ns-d3d12umddi-d3d12ddi_device_funcs_core_0021.md) | Specifies core device functions. |
 | [D3D12DDI_DEVICE_FUNCS_CORE_0030](ns-d3d12umddi-d3d12ddi_device_funcs_core_0030.md) | Core device functions. |
 | [D3D12DDI_DEVICE_FUNCS_CORE_0033](ns-d3d12umddi-d3d12ddi_device_funcs_core_0033.md) | Core device functions. |
+| [D3D12DDI_DEVICE_FUNCS_CORE_VIDEO_0020](ns-d3d12umddi-d3d12ddi_device_funcs_core_video_0020.md) | This structure contains device functions for core features in video. |
+| [D3D12DDI_DEVICE_FUNCS_VIDEO_0021](ns-d3d12umddi-d3d12ddi_device_funcs_video_0021.md) | Contains video functions. |
+| [D3D12DDI_DEVICE_FUNCS_VIDEO_0030](ns-d3d12umddi-d3d12ddi_device_funcs_video_0030.md) | Video device functions. |
+| [D3D12DDI_DEVICE_FUNCS_VIDEO_0032](ns-d3d12umddi-d3d12ddi_device_funcs_video_0032.md) | Video device functions. |
 | [D3D12DDI_DEVICE_FUNCS_VIDEO_0033](ns-d3d12umddi-d3d12ddi_device_funcs_video_0033.md) | The device functions of video. |
 | [D3D12DDI_EXTENDED_FEATURES_FUNCS_0020](ns-d3d12umddi-d3d12ddi_extended_features_funcs_0020.md) | This structure contains device functions for extended features in video. |
 | [D3D12DDI_EXTENDED_FEATURES_FUNCS_0021](ns-d3d12umddi-d3d12ddi_extended_features_funcs_0021.md) | Specifies callback functions for extended features. |
@@ -341,25 +362,32 @@ d3d12umddi.h contains the following programming interfaces:
 | [D3D12DDI_VIDEO_CRYPTO_SESSION_TRANSFORM_SUPPORT_DATA_0030](ns-d3d12umddi-d3d12ddi_video_crypto_session_transform_support_data_0030.md) | Video crypto session transform support data. |
 | [D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT_DATA_0032](ns-d3d12umddi-d3d12ddi_video_decode_bitstream_encryption_scheme_count_data_0032.md) | Video decode bitstream encryption scheme count data. |
 | [D3D12DDI_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEMES_DATA_0020](ns-d3d12umddi-d3d12ddi_video_decode_bitstream_encryption_schemes_data_0020.md) | Specifies information used to retrieve the bitstream encryption schemes supported for a decode profile. |
+| [D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020](ns-d3d12umddi-d3d12ddi_video_decode_compressed_bitstream_0020.md) | Contains the compressed bitstream from which to decode. |
 | [D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0032](ns-d3d12umddi-d3d12ddi_video_decode_compressed_bitstream_0032.md) | Video decode compressed bitstream. |
 | [D3D12DDI_VIDEO_DECODE_CONFIGURATION_0020](ns-d3d12umddi-d3d12ddi_video_decode_configuration_0020.md) | Includes information about the video decode configuration. |
 | [D3D12DDI_VIDEO_DECODE_CONVERSION_ARGUMENTS_0021](ns-d3d12umddi-d3d12ddi_video_decode_conversion_arguments_0021.md) | Specifies the arguments for decode output conversion. |
+| [D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0022](ns-d3d12umddi-d3d12ddi_video_decode_conversion_support_data_0022.md) | Specifies information used to check whether a color space conversion, format conversion, and scale are supported and whether it is required for real-time reasons or reference buffer format. |
 | [D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032](ns-d3d12umddi-d3d12ddi_video_decode_conversion_support_data_0032.md) | Video decode conversion support data. |
 | [D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030](ns-d3d12umddi-d3d12ddi_video_decode_decryption_arguments_0030.md) | Video decode decryption arguments. |
 | [D3D12DDI_VIDEO_DECODE_FORMAT_COUNT_DATA_0032](ns-d3d12umddi-d3d12ddi_video_decode_format_count_data_0032.md) | Video decode format count data. |
 | [D3D12DDI_VIDEO_DECODE_FORMATS_DATA_0020](ns-d3d12umddi-d3d12ddi_video_decode_formats_data_0020.md) | Specifies information used to retrieve a list of supported formats for a decode configuration. |
 | [D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020](ns-d3d12umddi-d3d12ddi_video_decode_frame_argument_0020.md) | Contains the decode parameters for the frame. |
+| [D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0020](ns-d3d12umddi-d3d12ddi_video_decode_input_stream_arguments_0020.md) | Specifies input stream arguments. |
+| [D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0030](ns-d3d12umddi-d3d12ddi_video_decode_input_stream_arguments_0030.md) | Video decode input stream arguments. |
 | [D3D12DDI_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS_0032](ns-d3d12umddi-d3d12ddi_video_decode_input_stream_arguments_0032.md) | Video decode input stream arguments. |
 | [D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0021](ns-d3d12umddi-d3d12ddi_video_decode_output_stream_arguments_0021.md) | Output stream arguments for video decode. |
 | [D3D12DDI_VIDEO_DECODE_PROFILE_COUNT_DATA_0032](ns-d3d12umddi-d3d12ddi_video_decode_profile_count_data_0032.md) | Video decode profile count data. |
 | [D3D12DDI_VIDEO_DECODE_PROFILES_DATA_0020](ns-d3d12umddi-d3d12ddi_video_decode_profiles_data_0020.md) | Specifies information used to retrieve a list of profiles. |
+| [D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0020](ns-d3d12umddi-d3d12ddi_video_decode_reference_frames_0020.md) | Contains the reference frames for the current decode operation. |
 | [D3D12DDI_VIDEO_DECODE_REFERENCE_FRAMES_0032](ns-d3d12umddi-d3d12ddi_video_decode_reference_frames_0032.md) | Video decode reference frames. |
 | [D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020](ns-d3d12umddi-d3d12ddi_video_decode_support_data_0020.md) | Specifies data used to determine support of hardware for a configuration. |
+| [D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0032](ns-d3d12umddi-d3d12ddi_video_decoder_heap_size_data_0032.md) | Data structure for the D3D12DDICAPS_TYPE_VIDEO_0032_DECODER_HEAP_SIZE capability check. Retrieves the memory allocation size of a video decoder heap created with the given properties. |
 | [D3D12DDI_VIDEO_DECODER_HEAP_SIZE_DATA_0033](ns-d3d12umddi-d3d12ddi_video_decoder_heap_size_data_0033.md) | The video decoder heap size data. |
 | [D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020](ns-d3d12umddi-d3d12ddi_video_format_description_0020.md) | Defines the combination of a pixel format and color space for a resource content description. |
 | [D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING_0020](ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md) | Specifies whether alpha blending is enabled and, if so, the planar alpha value. |
 | [D3D12DDI_VIDEO_PROCESS_FILTER_RANGE_0020](ns-d3d12umddi-d3d12ddi_video_process_filter_range_0020.md) | Defines the range of supported values for an image filter. |
 | [D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_0020](ns-d3d12umddi-d3d12ddi_video_process_input_stream_0020.md) | Contains stream information for the video processor blend functionality. |
+| [D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO_0020](ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0020.md) | Information for the input stream rate to use for video processing in a pattern, such as deinterlacing or frame-rate conversion. |
 | [D3D12DDI_VIDEO_PROCESS_INPUT_STREAM_RATE_INFO_0032](ns-d3d12umddi-d3d12ddi_video_process_input_stream_rate_info_0032.md) | The video process input stream rate info. |
 | [D3D12DDI_VIDEO_PROCESS_LUMA_KEY_0020](ns-d3d12umddi-d3d12ddi_video_process_luma_key_0020.md) | Specifies values for luma keying. |
 | [D3D12DDI_VIDEO_PROCESS_MAX_INPUT_STREAMS_DATA_0020](ns-d3d12umddi-d3d12ddi_video_process_max_input_streams_data_0020.md) | Specifies information used to retrieve the maximum number of input data streams that can be enabled for a video processor. |
@@ -368,11 +396,14 @@ d3d12umddi.h contains the following programming interfaces:
 | [D3D12DDI_VIDEO_PROCESS_PALETTE_0020](ns-d3d12umddi-d3d12ddi_video_process_palette_0020.md) | Specifies whether the palette is enabled and an array of palette entries. |
 | [D3D12DDI_VIDEO_PROCESS_REFERENCE_INFO_DATA_0020](ns-d3d12umddi-d3d12ddi_video_process_reference_info_data_0020.md) | Data structure for D3D12DDICAPS_VIDEO_PROCESS_REFERENCE_INFO capability check. Retrieves the number of past and future frames required for a given deinterlace mode. |
 | [D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020](ns-d3d12umddi-d3d12ddi_video_process_references_info_0020.md) | Contains the reference frames needed to perform video processing. |
+| [D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0022](ns-d3d12umddi-d3d12ddi_video_process_support_data_0022.md) | Specifies information used to retrieve capabilities for a video processor. |
 | [D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032](ns-d3d12umddi-d3d12ddi_video_process_support_data_0032.md) | Video process support data. |
+| [D3D12DDI_VIDEO_PROCESS_TRANSFORM_0020](ns-d3d12umddi-d3d12ddi_video_process_transform_0020.md) | Contains information for a transform. |
 | [D3D12DDI_VIDEO_PROCESS_TRANSFORM_0032](ns-d3d12umddi-d3d12ddi_video_process_transform_0032.md) | Video process transform. |
 | [D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032](ns-d3d12umddi-d3d12ddi_video_processor_input_stream_desc_0032.md) | Describes input stream properties for the video processor. |
 | [D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0032](ns-d3d12umddi-d3d12ddi_video_processor_size_data_0032.md) | Data structure for the D3D12DDICAPS_TYPE_VIDEO_0032_PROCESSOR_SIZE capability check. Retrieves the memory allocation size of a video processor created with the given properties. |
 | [D3D12DDI_VIDEO_SAMPLE_DESCRIPTION_0020](ns-d3d12umddi-d3d12ddi_video_sample_description_0020.md) | Describes the width, height, format, and color space of a picture buffer. |
+| [D3D12DDI_VIDEO_SCALE_SUPPORT_0022](ns-d3d12umddi-d3d12ddi_video_scale_support_0022.md) | Describes a supported range of output sizes for a scaler. |
 | [D3D12DDI_VIDEO_SCALE_SUPPORT_0032](ns-d3d12umddi-d3d12ddi_video_scale_support_0032.md) | Video scale support. |
 | [D3D12DDI_VIDEO_SIZE_RANGE_0032](ns-d3d12umddi-d3d12ddi_video_size_range_0032.md) | Video size range. |
 | [D3D12DDI_VIEW_INSTANCE_LOCATION](ns-d3d12umddi-d3d12ddi_view_instance_location.md) | View instance location. |
@@ -382,18 +413,24 @@ d3d12umddi.h contains the following programming interfaces:
 | [D3D12DDIARG_CREATE_CRYPTO_SESSION_POLICY_0030](ns-d3d12umddi-d3d12ddiarg_create_crypto_session_policy_0030.md) | Creates a crypto session policy. |
 | [D3D12DDIARG_CREATE_PIPELINE_STATE_0033](ns-d3d12umddi-d3d12ddiarg_create_pipeline_state_0033.md) | Creates a pipeline state. |
 | [D3D12DDIARG_CREATE_PROTECTED_RESOURCE_SESSION_0030](ns-d3d12umddi-d3d12ddiarg_create_protected_resource_session_0030.md) | Creates a protected resource session. |
+| [D3D12DDIARG_CREATE_VIDEO_DECODER_0021](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_0021.md) | Used to create a decoder object for a decode session. |
 | [D3D12DDIARG_CREATE_VIDEO_DECODER_0032](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_0032.md) | Creates a video decoder. |
+| [D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0032](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_heap_0032.md) | Creates a video decoder heap. |
 | [D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_heap_0033.md) | Create a video decoder heap. |
+| [D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0021](ns-d3d12umddi-d3d12ddiarg_create_video_processor_0021.md) | Specifies arguments used to create a video processor. |
 | [D3D12DDIARG_CREATE_VIDEO_PROCESSOR_0032](ns-d3d12umddi-d3d12ddiarg_create_video_processor_0032.md) | Creates a video processor. |
 | [D3D12DDIARG_CREATECOMMANDQUEUE_0023](ns-d3d12umddi-d3d12ddiarg_createcommandqueue_0023.md) | Contains arguments used to create a command queue. |
 | [D3D12DDIARG_CREATEDEVICE_0003](ns-d3d12umddi-d3d12ddiarg_createdevice_0003.md) | The D3D10DDIARG_CREATEDEVICE_0003 structure describes the display device to create. |
+| [D3D12DDIARG_GET_PAGEABLE_SIZE_0020](ns-d3d12umddi-d3d12ddiarg_get_pageable_size_0020.md) | Specifies information used to get the driver reported size for an array of allocations. |
 | [D3D12DDIARG_OPEN_CRYPTO_SESSION_0030](ns-d3d12umddi-d3d12ddiarg_open_crypto_session_0030.md) | Opens a crypto session. |
 | [D3D12DDIARG_OPEN_CRYPTO_SESSION_POLICY_0030](ns-d3d12umddi-d3d12ddiarg_open_crypto_session_policy_0030.md) | Opens a crypto session policy. |
 | [D3D12DDIARG_OPEN_PROTECTED_RESOURCE_SESSION_0030](ns-d3d12umddi-d3d12ddiarg_open_protected_resource_session_0030.md) | Opens a protected resource session. |
 | [D3D12DDIARG_OPENADAPTER](ns-d3d12umddi-d3d12ddiarg_openadapter.md) | The D3D12DDIARG_OPENADAPTER structure describes the graphics adapter object. |
 | [D3D12DDIARG_RESOURCE_BARRIER_0022](ns-d3d12umddi-d3d12ddiarg_resource_barrier_0022.md) | Describes a resource barrier. |
 | [D3D12DDIARG_VIDEO_GETCAPS_0020](ns-d3d12umddi-d3d12ddiarg_video_getcaps_0020.md) | Specifies values used to get capabilities of a type. |
+| [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0020](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0020.md) | Specifies input stream parameters for an input stream passed to the pfnProcessFrame callback function. |
 | [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS_0032](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0032.md) | The video process input stream arguments. |
+| [D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020](ns-d3d12umddi-d3d12ddiarg_video_process_output_stream_arguments_0020.md) | Specifies output stream parameters for the output to be processed. |
 | [D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0032](ns-d3d12umddi-d3d12ddiarg_video_process_output_stream_arguments_0032.md) | The video process output stream arguments. |
 | [D3D12DDICAPS_UMD_BASED_COMMAND_QUEUE_PRIORITY_DATA_0023](ns-d3d12umddi-d3d12ddicaps_umd_based_command_queue_priority_data_0023.md) | Contains priority data for a user-mode driver (UMD)-based command queue. |
 | [D3D12DDICB_ALLOCATE_0022](ns-d3d12umddi-d3d12ddicb_allocate_0022.md) | Specifies information for use in an allocation callback function. |
@@ -447,6 +484,7 @@ d3d12umddi.h contains the following programming interfaces:
 | [D3D12DDI_VIDEO_PROCESS_ORIENTATION_0020](ne-d3d12umddi-d3d12ddi_video_process_orientation_0020.md) | The orientation to be performed by the video processor. |
 | [D3D12DDI_VIDEO_PROCESS_SUPPORT_FLAGS_0022](ne-d3d12umddi-d3d12ddi_video_process_support_flags_0022.md) | Contains values that specify whether the conversion from the source format and color space to destination format and color space is supported. |
 | [D3D12DDI_VIDEO_SCALE_SUPPORT_FLAGS_0022](ne-d3d12umddi-d3d12ddi_video_scale_support_flags_0022.md) | Contains the options for video scale support. |
+| [D3D12DDI_VIDEO_USAGE](ne-d3d12umddi-d3d12ddi_video_usage.md) | A hint for the graphics driver to optimize for different scenarios. |
 | [D3D12DDI_VIEW_INSTANCING_FLAGS](ne-d3d12umddi-d3d12ddi_view_instancing_flags.md) | Defines the view instancing flags. |
 | [D3D12DDI_VIEW_INSTANCING_TIER](ne-d3d12umddi-d3d12ddi_view_instancing_tier.md) | Defines the view instancing tier. |
 | [D3D12DDI_WRITEBUFFERIMMEDIATE_MODE_0032](ne-d3d12umddi-d3d12ddi_writebufferimmediate_mode_0032.md) | The write buffer immediate mode. |

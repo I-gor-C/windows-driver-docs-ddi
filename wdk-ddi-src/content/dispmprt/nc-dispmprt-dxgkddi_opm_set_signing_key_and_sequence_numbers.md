@@ -55,7 +55,7 @@ DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS DxgkddiOpmSetSigningKeyAndSeque
 NTSTATUS DxgkddiOpmSetSigningKeyAndSequenceNumbers(
   PVOID MiniportDeviceContext,
   HANDLE ProtectedOutputHandle,
-  CONST DXGKMDT_OPM_ENCRYPTED_PARAMETERS
+  CONST PDXGKMDT_OPM_ENCRYPTED_PARAMETERS
 )
 {...}
 ```
@@ -70,7 +70,7 @@ A handle to a context block associated with a display adapter. Previously, the d
 
 The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object.
 
-`DXGKMDT_OPM_ENCRYPTED_PARAMETERS`
+`PDXGKMDT_OPM_ENCRYPTED_PARAMETERS`
 
 
 

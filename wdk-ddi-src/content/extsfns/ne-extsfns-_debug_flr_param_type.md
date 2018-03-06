@@ -624,6 +624,66 @@ typedef enum _DEBUG_FLR_PARAM_TYPE {
                 </tr>
             
                 <tr>
+                    <td>DEBUG_FLR_DISKSEC_ISSUEDESCSTRING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_MFGID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_MODEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_ORGID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_PRIVATE_DATASIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_PRIVATE_OFFSET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_PRIVATE_TOTSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_PUBLIC_DATASIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_PUBLIC_OFFSET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_PUBLIC_TOTSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_REASON</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FLR_DISKSEC_TOTALSIZE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
                     <td>DEBUG_FLR_DPC_RUNTIME</td>
                     <td></td>
                 </tr>

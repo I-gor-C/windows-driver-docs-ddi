@@ -433,10 +433,10 @@ d3d10umddi.h contains the following programming interfaces:
 | [D3D11_1DDI_VIDEO_COLOR_RGBA](ns-d3d10umddi-d3d11_1ddi_video_color_rgba.md) | Specifies an RGB color value. |
 | [D3D11_1DDI_VIDEO_COLOR_YCbCrA](ns-d3d10umddi-d3d11_1ddi_video_color_ycbcra.md) | Specifies a YCbCr color value. |
 | [D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS](ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md) | Describes the content-protection capabilities of the user-mode display driver. |
-| [D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC](ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_desc.md) | Describes a compressed buffer for Microsoft DirectX Video Acceleration (DXVA) decoding. |
 | [D3D11_1DDI_VIDEO_DECODER_BUFFER_INFO](ns-d3d10umddi-d3d11_1ddi_video_decoder_buffer_info.md) | Specifies information about a video decoder buffer. |
 | [D3D11_1DDI_VIDEO_DECODER_CONFIG](ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md) | Describes the configuration of a Microsoft Direct3D 11 decoder device for Microsoft DirectX Video Acceleration (DXVA). |
 | [D3D11_1DDI_VIDEO_DECODER_DESC](ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md) | Describes a video stream for a Microsoft Direct3D video decoder or video processor. |
+| [D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC](ns-d3d10umddi-d3d11_1ddi_video_decoderr_buffer_desc.md) | Describes a compressed buffer for Microsoft DirectX Video Acceleration (DXVA) decoding. |
 | [D3D11_1DDI_VIDEO_INPUT](ns-d3d10umddi-d3d11_1ddi_video_input.md) | Reserved for system use. Do not use in your driver. |
 | [D3D11_1DDI_VIDEO_OUTPUT](ns-d3d10umddi-d3d11_1ddi_video_output.md) | Reserved for system use. Do not use in your driver. |
 | [D3D11_1DDI_VIDEO_PROCESSOR_CAPS](ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md) | Describes the capabilities of a Microsoft Direct3D 11 video processor. |

@@ -55,9 +55,9 @@ DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT DxgkddiOpmConfigureProtectedOutput;
 NTSTATUS DxgkddiOpmConfigureProtectedOutput(
   PVOID MiniportDeviceContext,
   HANDLE ProtectedOutputHandle,
-  CONST DXGKMDT_OPM_CONFIGURE_PARAMETERS,
+  CONST PDXGKMDT_OPM_CONFIGURE_PARAMETERS,
   ULONG AdditionalParametersSize,
-  CONST VOID
+  CONST PVOID
 )
 {...}
 ```
@@ -72,7 +72,7 @@ A handle to a context block associated with a display adapter. The display minip
 
 The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object.
 
-`DXGKMDT_OPM_CONFIGURE_PARAMETERS`
+`PDXGKMDT_OPM_CONFIGURE_PARAMETERS`
 
 
 
@@ -80,7 +80,7 @@ The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dx
 
 The size, in bytes, of the additional parameters in the buffer that is pointed to by <i>AdditionalParameters</i>. For Certified Output Protection Protocol (COPP) emulation, this is 0.
 
-`VOID`
+`PVOID`
 
 
 

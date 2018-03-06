@@ -417,6 +417,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [D3DKMTConfigureSharedResource](nf-d3dkmthk-d3dkmtconfiguresharedresource.md) | The D3DKMTConfigureSharedResource function configures a shared resource. |
 | [D3DKMTCreateAllocation](nf-d3dkmthk-d3dkmtcreateallocation.md) | The D3DKMTCreateAllocation function creates allocations of system or video memory. |
 | [D3DKMTCreateAllocation2](nf-d3dkmthk-d3dkmtcreateallocation2.md) | Reserved for system use. Do not use in your driver. |
+| [D3DKMTCreateBundleObject](nf-d3dkmthk-d3dkmtcreatebundleobject.md) | Used to create a bundle object. |
 | [D3DKMTCreateContext](nf-d3dkmthk-d3dkmtcreatecontext.md) | The D3DKMTCreateContext function creates a kernel-mode device context. |
 | [D3DKMTCreateContextVirtual](nf-d3dkmthk-d3dkmtcreatecontextvirtual.md) | The D3DKMTCreateContextVirtual function creates a kernel mode device context that supports virtual addressing. |
 | [D3DKMTCreateDCFromMemory](nf-d3dkmthk-d3dkmtcreatedcfrommemory.md) | The D3DKMTCreateDCFromMemory function creates a display context from a specified block of memory. |
@@ -445,6 +446,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [D3DKMTEnumAdapters](nf-d3dkmthk-d3dkmtenumadapters.md) | Enumerates all graphics adapters on the system. |
 | [D3DKMTEscape](nf-d3dkmthk-d3dkmtescape.md) | The D3DKMTEscape function exchanges information with the display miniport driver. |
 | [D3DKMTEvict](nf-d3dkmthk-d3dkmtevict.md) | D3DKMTEvict is used to decrement the allocation residency reference count. Once this count reaches zero, it will remove the allocation from the device residency list. |
+| [D3DKMTExtractBundleObject](nf-d3dkmthk-d3dkmtextractbundleobject.md) | Used to extract the bundle object. |
 | [D3DKMTFlipOverlay](nf-d3dkmthk-d3dkmtflipoverlay.md) | The D3DKMTFlipOverlay function changes the allocation to display on the overlay. |
 | [D3DKMTFreeGpuVirtualAddress](nf-d3dkmthk-d3dkmtfreegpuvirtualaddress.md) | D3DKMTFreeGpuVirtualAddress releases a range of graphics processing unit (GPU) virtual addresses, which was previously reserved or mapped. |
 | [D3DKMTGetContextInProcessSchedulingPriority](nf-d3dkmthk-d3dkmtgetcontextinprocessschedulingpriority.md) | Called by an in-process (in-proc) Microsoft Direct3D composition device to retrieve the scheduling priority for a device context that is in the same process as other device contexts. |
@@ -454,6 +456,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [D3DKMTGetMultisampleMethodList](nf-d3dkmthk-d3dkmtgetmultisamplemethodlist.md) | The D3DKMTGetMultisampleMethodList function retrieves a list of multiple-sample methods that are used for an allocation. |
 | [D3DKMTGetOverlayState](nf-d3dkmthk-d3dkmtgetoverlaystate.md) | The D3DKMTGetOverlayState function retrieves the status about an overlay. |
 | [D3DKMTGetPresentHistory](nf-d3dkmthk-d3dkmtgetpresenthistory.md) | The D3DKMTGetPresentHistory function retrieves copying history. |
+| [D3DKMTGetProcessDeviceLostSupport](nf-d3dkmthk-d3dkmtgetprocessdevicelostsupport.md) | Used to get the indicated process. |
 | [D3DKMTGetProcessSchedulingPriorityClass](nf-d3dkmthk-d3dkmtgetprocessschedulingpriorityclass.md) | The D3DKMTGetProcessSchedulingPriorityClass function retrieves the scheduling priority for a process. |
 | [D3DKMTGetRuntimeData](nf-d3dkmthk-d3dkmtgetruntimedata.md) | The D3DKMTGetRuntimeData function is for system use only. |
 | [D3DKMTGetScanLine](nf-d3dkmthk-d3dkmtgetscanline.md) | The D3DKMTGetScanLine function determines whether the given video present source of a video present network (VidPN) is in vertical blanking mode and retrieves the current scan line. |
@@ -502,6 +505,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [D3DKMTSetAllocationPriority](nf-d3dkmthk-d3dkmtsetallocationpriority.md) | The D3DKMTSetAllocationPriority function sets the priority level of a resource or list of allocations. |
 | [D3DKMTSetContextInProcessSchedulingPriority](nf-d3dkmthk-d3dkmtsetcontextinprocessschedulingpriority.md) | Called by an in-process (in-proc) Microsoft Direct3D composition device to set the scheduling priority for a device context that is in the same process as other device contexts. |
 | [D3DKMTSetContextSchedulingPriority](nf-d3dkmthk-d3dkmtsetcontextschedulingpriority.md) | The D3DKMTSetContextSchedulingPriority function sets the scheduling priority for a device context. |
+| [D3DKMTSetDeviceLostSupport](nf-d3dkmthk-d3dkmtsetdevicelostsupport.md) | Used to indicate that the device has lost support. |
 | [D3DKMTSetDisplayMode](nf-d3dkmthk-d3dkmtsetdisplaymode.md) | The D3DKMTSetDisplayMode function sets the allocation that is used to scan out to the display. |
 | [D3DKMTSetDisplayPrivateDriverFormat](nf-d3dkmthk-d3dkmtsetdisplayprivatedriverformat.md) | The D3DKMTSetDisplayPrivateDriverFormat function changes the private-format attribute of a video present source. |
 | [D3DKMTSetGammaRamp](nf-d3dkmthk-d3dkmtsetgammaramp.md) | The D3DKMTSetGammaRamp function sets the gamma ramp. |
@@ -600,6 +604,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [_D3DKMT_CONFIGURESHAREDRESOURCE](ns-d3dkmthk-_d3dkmt_configuresharedresource.md) | The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the D3DKMTConfigureSharedResource function uses to configure a shared resource. |
 | [_D3DKMT_CREATEALLOCATION](ns-d3dkmthk-_d3dkmt_createallocation.md) | The D3DKMT_CREATEALLOCATION structure describes parameters for creating allocations. |
 | [_D3DKMT_CREATEALLOCATIONFLAGS](ns-d3dkmthk-_d3dkmt_createallocationflags.md) | The D3DKMT_CREATEALLOCATIONFLAGS structure identifies how to create an allocation in a call to the D3DKMTCreateAllocation function. |
+| [_D3DKMT_CREATEBUNDLEOBJECT](ns-d3dkmthk-_d3dkmt_createbundleobject.md) | Holds information to create a bundle object. |
 | [_D3DKMT_CREATECONTEXT](ns-d3dkmthk-_d3dkmt_createcontext.md) | The D3DKMT_CREATECONTEXT structure describes a kernel-mode device context to create. |
 | [_D3DKMT_CREATECONTEXTVIRTUAL](ns-d3dkmthk-_d3dkmt_createcontextvirtual.md) | D3DKMT_CREATECONTEXTVIRTUAL is used with D3DKMTCreateContextVirtual to create a kernel mode device context that supports virtual addressing. |
 | [_D3DKMT_CREATEDCFROMMEMORY](ns-d3dkmthk-_d3dkmt_createdcfrommemory.md) | The D3DKMT_CREATEDCFROMMEMORY structure describes parameters for creating the display context. |
@@ -642,6 +647,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [_D3DKMT_ENUMADAPTERS](ns-d3dkmthk-_d3dkmt_enumadapters.md) | Supplies information for enumerating all graphics adapters on the system. |
 | [_D3DKMT_ESCAPE](ns-d3dkmthk-_d3dkmt_escape.md) | The D3DKMT_ESCAPE structure describes information that is exchanged with the display miniport driver. |
 | [_D3DKMT_EVICT](ns-d3dkmthk-_d3dkmt_evict.md) | D3DKMT_EVICT is used with D3DKMTEvict to subtract one from the residency reference count. |
+| [_D3DKMT_EXTRACTBUNDLEOBJECT](ns-d3dkmthk-_d3dkmt_extractbundleobject.md) | Used to extract the bundle object. |
 | [_D3DKMT_FENCE_PRESENTHISTORYTOKEN](ns-d3dkmthk-_d3dkmt_fence_presenthistorytoken.md) | The D3DKMT_FENCE_PRESENTHISTORYTOKEN structure identifies a fence present-history operation. |
 | [_D3DKMT_FLIPINFOFLAGS](ns-d3dkmthk-_d3dkmt_flipinfoflags.md) | The D3DKMT_FLIPINFOFLAGS structure identifies flipping capabilities of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function. |
 | [_D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN](ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytoken.md) | The D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure identifies a flip present-history operation. |
@@ -658,6 +664,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [_D3DKMT_GETMULTISAMPLEMETHODLIST](ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist.md) | The D3DKMT_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve the list of multiple-sample methods for an allocation. |
 | [_D3DKMT_GETOVERLAYSTATE](ns-d3dkmthk-_d3dkmt_getoverlaystate.md) | The D3DKMT_GETOVERLAYSTATE structure describes parameters that the D3DKMTGetOverlayState function uses to retrieve status about an overlay. |
 | [_D3DKMT_GETPRESENTHISTORY](ns-d3dkmthk-_d3dkmt_getpresenthistory.md) | The D3DKMT_GETPRESENTHISTORY structure describes the state of copying history. |
+| [_D3DKMT_GETPROCESSDEVICELOSTSUPPORT](ns-d3dkmthk-_d3dkmt_getprocessdevicelostsupport.md) | Used to get the indicated process. |
 | [_D3DKMT_GETSCANLINE](ns-d3dkmthk-_d3dkmt_getscanline.md) | The D3DKMT_GETSCANLINE structure contains information about a video present source's vertical blanking status. |
 | [_D3DKMT_GETSHAREDPRIMARYHANDLE](ns-d3dkmthk-_d3dkmt_getsharedprimaryhandle.md) | The D3DKMT_GETSHAREDPRIMARYHANDLE structure describes the parameters that are required to retrieve the global shared handle for the primary surface. |
 | [_D3DKMT_GETSHAREDRESOURCEADAPTERLUID](ns-d3dkmthk-_d3dkmt_getsharedresourceadapterluid.md) | Provides information that describes a shared resource and the graphics adapter that the resource was created on. |
@@ -716,6 +723,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [_D3DKMT_SETALLOCATIONPRIORITY](ns-d3dkmthk-_d3dkmt_setallocationpriority.md) | The D3DKMT_SETALLOCATIONPRIORITY structure describes the priority level to set a resource or list of allocations to. |
 | [_D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY](ns-d3dkmthk-_d3dkmt_setcontextinprocessschedulingpriority.md) | Describes parameters for an in-process (in-proc) Microsoft Direct3D composition device to set the scheduling priority for a device context that is in the same process as other device contexts. |
 | [_D3DKMT_SETCONTEXTSCHEDULINGPRIORITY](ns-d3dkmthk-_d3dkmt_setcontextschedulingpriority.md) | The D3DKMT_SETCONTEXTSCHEDULINGPRIORITY structure describes parameters for setting scheduling priority for a device context. |
+| [_D3DKMT_SETDEVICELOSTSUPPORT](ns-d3dkmthk-_d3dkmt_setdevicelostsupport.md) | Used to indicate whether a device can recover from losing a graphics device. |
 | [_D3DKMT_SETDISPLAYMODE](ns-d3dkmthk-_d3dkmt_setdisplaymode.md) | The D3DKMT_SETDISPLAYMODE structure describes the primary allocation that is used for scanning out to the display. |
 | [_D3DKMT_SETDISPLAYMODE_FLAGS](ns-d3dkmthk-_d3dkmt_setdisplaymode_flags.md) | The D3DKMT_SETDISPLAYMODE_FLAGS structure identifies attributes for setting the display mode. |
 | [_D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT](ns-d3dkmthk-_d3dkmt_setdisplayprivatedriverformat.md) | The D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure describes the private-format attribute to set for a video present source. |
@@ -758,6 +766,7 @@ d3dkmthk.h contains the following programming interfaces:
 | [_D3DKMT_WAITFORVERTICALBLANKEVENT2](ns-d3dkmthk-_d3dkmt_waitforverticalblankevent2.md) | Describes parameters for multiple wait objects, including a vertical blank event. Supported starting with Windows 8. |
 | [_D3DKMT_WORKINGSETFLAGS](ns-d3dkmthk-_d3dkmt_workingsetflags.md) | The D3DKMT_WORKINGSETFLAGS structure identifies working-set properties of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function. |
 | [_D3DKMT_WORKINGSETINFO](ns-d3dkmthk-_d3dkmt_workingsetinfo.md) | The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function. |
+| [_DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1](ns-d3dkmthk-_dxgk_graphicspower_register_input_v_1_1.md) | Used to register the power state of a new input. |
 | [_DXGK_GRAPHICSPOWER_REGISTER_OUTPUT](ns-d3dkmthk-_dxgk_graphicspower_register_output.md) | A structure containing output data used to manage shared power components. |
 
 

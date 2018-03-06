@@ -112,6 +112,11 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
                     <td>WwanModemConfigReasonSIMDetected</td>
                     <td>Required. A SIM card was detected by a modem.</td>
                 </tr>
+            
+                <tr>
+                    <td>WwanModemConfigReasonSIMRemoved</td>
+                    <td>Optional. A SIM card was removed.</td>
+                </tr>
 </table>
 
 

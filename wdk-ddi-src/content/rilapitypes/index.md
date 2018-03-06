@@ -432,6 +432,9 @@ rilapitypes.h contains the following programming interfaces:
 | [RILREMOTEPARTYINFO](ns-rilapitypes-rilremotepartyinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREMOVECALLFORWARDINGPARAMS](ns-rilapitypes-rilremovecallforwardingparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREQUESTGEOLOCATIONDATA](ns-rilapitypes-rilrequestgeolocationdata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMCONFIGITEM](ns-rilapitypes-rilresetmodemconfigitem.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMCONFIGVALUE](ns-rilapitypes-rilresetmodemconfigvalue.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMPARAMS](ns-rilapitypes-rilresetmodemparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRFSTATE](ns-rilapitypes-rilrfstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRTTDATA](ns-rilapitypes-rilrttdata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDDTMFPARAMS](ns-rilapitypes-rilsenddtmfparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -683,9 +686,12 @@ rilapitypes.h contains the following programming interfaces:
 | [RILREMOTEPARTYINFOVALUE](ne-rilapitypes-rilremotepartyinfovalue.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREMOTEPARTYINFOVALUEPARAM](ne-rilapitypes-rilremotepartyinfovalueparam.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREQUESTGEOLOCATIONDATAPARAMMASK](ne-rilapitypes-rilrequestgeolocationdataparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMCONFIGPARAMETER](ne-rilapitypes-rilresetmodemconfigparameter.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMIMSENABLEMENTSTATE](ne-rilapitypes-rilresetmodemimsenablementstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRESETMODEMKIND](ne-rilapitypes-rilresetmodemkind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRFSTATEPARAMMASK](ne-rilapitypes-rilrfstateparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRILREGSTATUSINFOREJECTREASON](ne-rilapitypes-rilrilregstatusinforejectreason.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRMCVTYPE](ne-rilapitypes-rilrmcvtype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDMSGOPTIONS](ne-rilapitypes-rilsendmsgoptions.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDMSGRESPONSEPARAMMASK](ne-rilapitypes-rilsendmsgresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSERVICEPROVISIONINGSTATUS](ne-rilapitypes-rilserviceprovisioningstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

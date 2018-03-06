@@ -430,6 +430,9 @@ ntddrilapitypes.h contains the following programming interfaces:
 | [RILREMOTEPARTYINFO](ns-ntddrilapitypes-rilremotepartyinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREMOVECALLFORWARDINGPARAMS](ns-ntddrilapitypes-rilremovecallforwardingparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREQUESTGEOLOCATIONDATA](ns-ntddrilapitypes-rilrequestgeolocationdata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMCONFIGITEM](ns-ntddrilapitypes-rilresetmodemconfigitem.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMCONFIGVALUE](ns-ntddrilapitypes-rilresetmodemconfigvalue.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMPARAMS](ns-ntddrilapitypes-rilresetmodemparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRFSTATE](ns-ntddrilapitypes-rilrfstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRTTDATA](ns-ntddrilapitypes-rilrttdata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDDTMFPARAMS](ns-ntddrilapitypes-rilsenddtmfparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -681,9 +684,12 @@ ntddrilapitypes.h contains the following programming interfaces:
 | [RILREMOTEPARTYINFOVALUE](ne-ntddrilapitypes-rilremotepartyinfovalue.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREMOTEPARTYINFOVALUEPARAM](ne-ntddrilapitypes-rilremotepartyinfovalueparam.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREQUESTGEOLOCATIONDATAPARAMMASK](ne-ntddrilapitypes-rilrequestgeolocationdataparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMCONFIGPARAMETER](ne-ntddrilapitypes-rilresetmodemconfigparameter.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRESETMODEMIMSENABLEMENTSTATE](ne-ntddrilapitypes-rilresetmodemimsenablementstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRESETMODEMKIND](ne-ntddrilapitypes-rilresetmodemkind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRFSTATEPARAMMASK](ne-ntddrilapitypes-rilrfstateparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRILREGSTATUSINFOREJECTREASON](ne-ntddrilapitypes-rilrilregstatusinforejectreason.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILRMCVTYPE](ne-ntddrilapitypes-rilrmcvtype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDMSGOPTIONS](ne-ntddrilapitypes-rilsendmsgoptions.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSENDMSGRESPONSEPARAMMASK](ne-ntddrilapitypes-rilsendmsgresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSERVICEPROVISIONINGSTATUS](ne-ntddrilapitypes-rilserviceprovisioningstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

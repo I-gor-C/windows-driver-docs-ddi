@@ -53,7 +53,7 @@ The <i>DxgkProtectedCallback</i> callback routine is implemented by the display 
 DXGKDDI_PROTECTED_CALLBACK DxgkddiProtectedCallback;
 
 void DxgkddiProtectedCallback(
-  IN_CONST_PVOID MiniportDeviceContext,
+  CONST PVOID,
   PVOID ProtectedCallbackContext,
   NTSTATUS ProtectionStatus
 )
@@ -62,7 +62,7 @@ void DxgkddiProtectedCallback(
 
 ## Parameters
 
-`MiniportDeviceContext`
+`PVOID`
 
 
 

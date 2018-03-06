@@ -53,7 +53,7 @@ The <i>DxgkDdiQueryChildRelations</i> function enumerates the child devices of a
 DXGKDDI_QUERY_CHILD_RELATIONS DxgkddiQueryChildRelations;
 
 NTSTATUS DxgkddiQueryChildRelations(
-  IN_CONST_PVOID MiniportDeviceContext,
+  CONST PVOID MiniportDeviceContext,
   PDXGK_CHILD_DESCRIPTOR ChildRelations,
   ULONG ChildRelationsSize
 )

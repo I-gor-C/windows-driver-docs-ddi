@@ -170,6 +170,7 @@ wwan.h contains the following programming interfaces:
 | [_WWAN_LTE_MRL_INFO](ns-wwan-_wwan_lte_mrl_info.md) | The WWAN_LTE_MRL_INFO structure represents information about a neighboring LTE cell. |
 | [_WWAN_LTE_SERVING_CELL_INFO](ns-wwan-_wwan_lte_serving_cell_info.md) | The WWAN_LTE_SERVING_CELL_INFO structure represents information about the LTE serving cell. |
 | [_WWAN_MODEM_CONFIG_INFO](ns-wwan-_wwan_modem_config_info.md) | The WWAN_MODEM_CONFIG_INFO structure represents the modem's configuration information. |
+| [_WWAN_MODEM_CONFIG_STATUS](ns-wwan-_wwan_modem_config_status.md) | The WWAN_MODEM_CONFIG_STATUS structure represents a modem's configuration (config) status. |
 | [_WWAN_NETWORK_IDLE_HINT](ns-wwan-_wwan_network_idle_hint.md) | The WWAN_NETWORK_IDLE_HINT structure contains a hint for the network interface regarding whether data is expected to be active or idle on the interface. |
 | [_WWAN_PACKET_SERVICE](ns-wwan-_wwan_packet_service.md) | The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB device. |
 | [_WWAN_PCO_VALUE](ns-wwan-_wwan_pco_value.md) | The WWAN_PCO_VALUE structure represents the PCO information payload from the network as defined in the 3GPP TS24.008 spec. |

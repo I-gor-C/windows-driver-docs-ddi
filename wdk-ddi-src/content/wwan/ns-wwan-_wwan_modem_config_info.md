@@ -62,6 +62,10 @@ typedef struct _WWAN_MODEM_CONFIG_INFO {
 
 The modem's configuration mode. For a list of defined values, see <a href="..\wwan\ne-wwan-_wwan_modem_config_mode.md">WWAN_MODEM_CONFIG_MODE</a>.
 
+`ConfigStatus`
+
+A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a> structure containing the modem's configuration (config) status.
+
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -137,6 +137,7 @@ pcivirt.h contains the following programming interfaces:
 | [_SRIOV_MITIGATED_RANGES_OUTPUT](ns-pcivirt-_sriov_mitigated_ranges_output.md) | This structure is the output buffer received by the IOCTL_SRIOV_QUERY_MITIGATED_RANGES request to get the specific ranges on which intercepts must be placed. |
 | [_SRIOV_PNP_EVENT_COMPLETE](ns-pcivirt-_sriov_pnp_event_complete.md) | Stores the status for an event that the SR-IOV Physical Function (PF) driver should set for Plug and Play even completion. This structure is used in the input buffer of the IOCTL_SRIOV_EVENT_COMPLETE request. |
 | [_SRIOV_PROXY_QUERY_LUID_OUTPUT](ns-pcivirt-_sriov_proxy_query_luid_output.md) | Stores the local unique identifier of the SR_IOV device implementing the interface. This structure is the output buffer for the IOCTL_SRIOV_PROXY_QUERY_LUID request. |
+| [_VPCI_PNP_ID](ns-pcivirt-_vpci_pnp_id.md) | Stores the PnP identifiers for a virtual PCI device. For example strings, see Identifiers for PCI Devices. |
 
 
 ## Enumerations

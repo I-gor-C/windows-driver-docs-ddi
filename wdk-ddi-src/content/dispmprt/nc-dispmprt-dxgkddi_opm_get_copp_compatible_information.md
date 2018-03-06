@@ -55,7 +55,7 @@ DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION DxgkddiOpmGetCoppCompatibleInformati
 NTSTATUS DxgkddiOpmGetCoppCompatibleInformation(
   PVOID MiniportDeviceContext,
   HANDLE ProtectedOutputHandle,
-  CONST DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS,
+  CONST PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS,
   PDXGKMDT_OPM_REQUESTED_INFORMATION RequestedInformation
 )
 {...}
@@ -71,7 +71,7 @@ A handle to a context block associated with a display adapter. Previously, the d
 
 The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_create_protected_output.md">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object. The protected output object that corresponds to this handle should have COPP semantics.
 
-`DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS`
+`PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS`
 
 
 

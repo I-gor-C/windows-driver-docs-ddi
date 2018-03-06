@@ -124,6 +124,7 @@ rilapi.h contains the following programming interfaces:
 | [RIL_RegisterUiccToolkitService](nf-rilapi-ril_registeruicctoolkitservice.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RIL_RemoveCallForwarding](nf-rilapi-ril_removecallforwarding.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RIL_ResetModem](nf-rilapi-ril_resetmodem.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RIL_ResetModem_V2](nf-rilapi-ril_resetmodem_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RIL_SendDTMF](nf-rilapi-ril_senddtmf.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RIL_SendFlash](nf-rilapi-ril_sendflash.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RIL_SendMsg](nf-rilapi-ril_sendmsg.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

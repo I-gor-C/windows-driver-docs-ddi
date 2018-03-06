@@ -57,7 +57,7 @@ NTSTATUS DxgkddiI2cTransmitDataToDisplay(
   D3DDDI_VIDEO_PRESENT_TARGET_ID VidPnTargetId,
   ULONG SevenBitI2CAddress,
   ULONG DataLength,
-  CONST VOID
+  CONST PVOID
 )
 {...}
 ```
@@ -80,7 +80,7 @@ The address of the I2C device to which data will be transmitted.
 
 The length, in bytes, of the data to be transmitted. This parameter must be between 1 and 64, inclusive.
 
-`VOID`
+`PVOID`
 
 
 

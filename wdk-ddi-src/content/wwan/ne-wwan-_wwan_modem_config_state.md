@@ -62,6 +62,11 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 <table>
             
                 <tr>
+                    <td>WwanModemConfigStateActivated</td>
+                    <td>The modem has completed its configuration and modem subcomponents are aware of the new configuration.</td>
+                </tr>
+            
+                <tr>
                     <td>WwanModemConfigStateMax</td>
                     <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
