@@ -130,11 +130,11 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlcompareunicodestring.md">RtlCompareUnicodeString</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-rtlequalstring.md">RtlEqualString</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlcompareunicodestring.md">RtlCompareUnicodeString</a>
 
 
 

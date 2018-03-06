@@ -70,9 +70,6 @@ This section describes the methods defined for the <a href="https://msdn.microso
 | [IStillImageW::UnregisterLaunchApplication](nf-sti-istillimagew-unregisterlaunchapplication.md) | The IStillImage::UnregisterLaunchApplication method removes an application from the still image event monitor's list of push-model aware applications. |
 | [IStillImageW::WriteToErrorLog](nf-sti-istillimagew-writetoerrorlog.md) | The IStillImage::WriteToErrorLog method writes a message to the still image error log. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

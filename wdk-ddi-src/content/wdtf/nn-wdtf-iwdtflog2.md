@@ -60,7 +60,6 @@ Defines operations that enable the test case author to add to the WDTF test log.
 | [IWDTFLOG2::StartTestCase](nf-wdtf-iwdtflog2-starttestcase.md) | Marks the start of a test case. |
 
 ## Remarks
-
 You access the logging interface from the <a href="https://msdn.microsoft.com/4c229367-bcdc-466f-ae38-f5c56ae4b840">IWDTF2::Log</a> property.
 
 ## Requirements

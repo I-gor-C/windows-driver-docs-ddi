@@ -106,11 +106,11 @@ The <b>wiauDbgHelper2</b> function enables those using it to write <b>printf</b>
 
 ## See Also
 
+<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
+
+
+
 <a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
-
-
-
-<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 
 
 
@@ -122,11 +122,11 @@ The <b>wiauDbgHelper2</b> function enables those using it to write <b>printf</b>
 
 
 
+<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
+
+
+
 <a href="..\wiautil\nf-wiautil-wiaudbghelper.md">wiauDbgHelper</a>
-
-
-
-<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
 
 
 

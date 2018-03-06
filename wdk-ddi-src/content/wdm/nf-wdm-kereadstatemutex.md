@@ -86,11 +86,11 @@ For more information about mutex objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kereleasemutex.md">KeReleaseMutex</a>
-
-
-
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+
+
+
+<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
 
 
 
@@ -98,7 +98,7 @@ For more information about mutex objects, see <a href="https://msdn.microsoft.co
 
 
 
-<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
+<a href="..\wdm\nf-wdm-kereleasemutex.md">KeReleaseMutex</a>
 
 
 

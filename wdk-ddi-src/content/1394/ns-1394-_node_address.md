@@ -73,11 +73,11 @@ Specifies the 6-bit node number. This member contains bits 10-15 of the node add
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537020">BUS_GENERATION_NODE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537346">IO_ADDRESS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537020">BUS_GENERATION_NODE</a>
 
 
 

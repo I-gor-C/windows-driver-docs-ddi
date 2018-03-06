@@ -143,19 +143,7 @@ See the documentation for <b>KeSetTimerEx</b> for details on implementation of t
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-
-
-
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-
-
-
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 
 
 
@@ -163,7 +151,19 @@ See the documentation for <b>KeSetTimerEx</b> for details on implementation of t
 
 
 
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+<a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
+
+
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+
+
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
 
 
 

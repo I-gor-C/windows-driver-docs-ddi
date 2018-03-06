@@ -56,7 +56,6 @@ The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="..\
 | [IKsQualityForwarder::KsFlushClient](nf-ksproxy-iksqualityforwarder-ksflushclient.md) | The KsFlushClient method flushes information from a pin. |
 
 ## Remarks
-
 The IID for this interface is IID_IKsQualityForwarder.
 
 ## Requirements

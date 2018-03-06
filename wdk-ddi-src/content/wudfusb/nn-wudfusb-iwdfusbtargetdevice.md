@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetdevice.htm
 old-project: wdf
 ms.assetid: 627a4633-6857-43a5-af2d-36e4e554ca83
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFUsbTargetDevice, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface, described, UMDFUSBref_4ff51830-55c1-4e2c-b095-8ca88bd2e56f.xml, umdf.iwdfusbtargetdevice, wdf.iwdfusbtargetdevice, wudfusb/IWDFUsbTargetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,9 +65,6 @@ The <b>IWDFUsbTargetDevice</b> interface exposes a USB device I/O target object.
 | [IWDFUsbTargetDevice::RetrievePowerPolicy](nf-wudfusb-iwdfusbtargetdevice-retrievepowerpolicy.md) | The RetrievePowerPolicy method retrieves a WinUsb power policy. |
 | [IWDFUsbTargetDevice::RetrieveUsbInterface](nf-wudfusb-iwdfusbtargetdevice-retrieveusbinterface.md) | The RetrieveUsbInterface method retrieves the specified USB interface for a USB device. |
 | [IWDFUsbTargetDevice::SetPowerPolicy](nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy.md) | The SetPowerPolicy method sets the WinUsb power policy. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -7,7 +7,7 @@ old-location: print\ixpsrasterizer_interface.htm
 old-project: print
 ms.assetid: 1ef99120-2b3b-45aa-bcf7-16bcb9656089
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IXpsRasterizer, IXpsRasterizer interface [Print Devices], IXpsRasterizer interface [Print Devices], described, print.ixpsrasterizer_interface, print_xpsrast_e8c45bd1-2f79-4e4f-b6c4-034c703ff173.xml, xpsrassvc/IXpsRasterizer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,9 +58,6 @@ A client obtains an <b>IXpsRasterizer</b> interface instance by calling the <a h
 | ---- |:---- |
 | [IXpsRasterizer::RasterizeRect](nf-xpsrassvc-ixpsrasterizer-rasterizerect.md) | The RasterizeRect method rasterizes an axis-aligned, rectangular region of an XPS fixed page. |
 | [IXpsRasterizer::SetMinimalLineWidth](nf-xpsrassvc-ixpsrasterizer-setminimallinewidth.md) | The SetMinimalLineWidth method allows the caller to set the minimum thickness (in pixels) of the lines that the device can render. |
-
-## Remarks
-
 
 
 ## Requirements

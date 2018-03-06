@@ -7,7 +7,7 @@ old-location: audio\iservicegroup.htm
 old-project: audio
 ms.assetid: eef2741e-e1a3-471b-a756-d89990929738
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IServiceGroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, audio.iservicegroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml, portcls/IServiceGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,9 +61,6 @@ Port drivers typically use service group objects to demultiplex requests for int
 | [IServiceGroup::RequestDelayedService](nf-portcls-iservicegroup-requestdelayedservice.md) | The RequestDelayedService method requests service after the specified delay. |
 | [IServiceGroup::RequestService](nf-portcls-iservicegroup-requestservice.md) | TBD |
 | [IServiceGroup::SupportDelayedService](nf-portcls-iservicegroup-supportdelayedservice.md) | The SupportDelayedService method indicates that the service group should prepare to support delayed service. |
-
-## Remarks
-
 
 
 ## Requirements

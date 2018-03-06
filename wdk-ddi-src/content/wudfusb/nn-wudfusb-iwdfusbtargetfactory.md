@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetfactory.htm
 old-project: wdf
 ms.assetid: 00f89160-b880-4882-bf2e-28e9ed15f844
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFUsbTargetFactory, IWDFUsbTargetFactory interface, IWDFUsbTargetFactory interface, described, UMDFDeviceObjectRef_71a85574-e7e1-483e-8d16-06cb784ff30e.xml, umdf.iwdfusbtargetfactory, wdf.iwdfusbtargetfactory, wudfusb/IWDFUsbTargetFactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,9 +57,6 @@ The <b>IWDFUsbTargetFactory</b> interface is a factory interface that is used to
 | Method | Description |
 | ---- |:---- |
 | [IWDFUsbTargetFactory::CreateUsbTargetDevice](nf-wudfusb-iwdfusbtargetfactory-createusbtargetdevice.md) | The CreateUsbTargetDevice method creates a USB device object that is also an I/O target. |
-
-## Remarks
-
 
 
 ## Requirements

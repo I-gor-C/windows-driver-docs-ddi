@@ -81,15 +81,15 @@ Pointer to a buffered Unicode string that is the user-visible name for the symbo
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocreatesymboliclink.md">IoCreateSymbolicLink</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-iodeassignarcname.md">IoDeassignArcName</a>
 
 
 
 <a href="..\wdm\nf-wdm-iocreateunprotectedsymboliclink.md">IoCreateUnprotectedSymbolicLink</a>
+
+
+
+<a href="..\wdm\nf-wdm-iocreatesymboliclink.md">IoCreateSymbolicLink</a>
 
 
 

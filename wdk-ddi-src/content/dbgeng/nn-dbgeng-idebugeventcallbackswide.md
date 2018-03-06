@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide.htm
 old-project: debugger
 ms.assetid: 717fad3a-91b1-41c8-ac71-e9ea52533efd
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IDebugEventCallbacksWide, IDebugEventCallbacksWide interface [Windows Debugging], IDebugEventCallbacksWide interface [Windows Debugging], described, dbgeng/IDebugEventCallbacksWide, debugger.idebugeventcallbackswide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,9 +67,6 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 | [IDebugEventCallbacksWide::SessionStatus](nf-dbgeng-idebugeventcallbackswide-sessionstatus.md) | The SessionStatus callback method is called by the engine when a change occurs in the debugger session. |
 | [IDebugEventCallbacksWide::SystemError](nf-dbgeng-idebugeventcallbackswide-systemerror.md) | The SystemError callback method is called by the engine when a system error occurs in the target. |
 | [IDebugEventCallbacksWide::UnloadModule](nf-dbgeng-idebugeventcallbackswide-unloadmodule.md) | The UnloadModule callback method is called by the engine when a module-unload debugging event occurs in the target. |
-
-## Remarks
-
 
 
 ## Requirements

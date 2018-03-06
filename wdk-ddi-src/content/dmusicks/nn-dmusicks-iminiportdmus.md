@@ -7,7 +7,7 @@ old-location: audio\iminiportdmus.htm
 old-project: audio
 ms.assetid: 12cd3533-1830-46cd-a1eb-350f7461a61d
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IMiniportDMus, IMiniportDMus interface [Audio Devices], IMiniportDMus interface [Audio Devices], described, audio.iminiportdmus, audmp-routines_b123c50b-e4b9-4f19-a2c4-b33fb335bec6.xml, dmusicks/IMiniportDMus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,9 +60,6 @@ The <code>IMiniportDMus</code> interface provides methods for initializing the m
 | [IMiniportDMus::Init](nf-dmusicks-iminiportdmus-init.md) | The Init method initializes the DMus miniport object. |
 | [IMiniportDMus::NewStream](nf-dmusicks-iminiportdmus-newstream.md) | The NewStream method creates a new instance of a logical stream associated with a specified physical channel. |
 | [IMiniportDMus::Service](nf-dmusicks-iminiportdmus-service.md) | This method does not currently need to be implemented in the miniport driver. The Service method is currently unused. |
-
-## Remarks
-
 
 
 ## Requirements

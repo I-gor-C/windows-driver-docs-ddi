@@ -68,9 +68,6 @@ Defines operations and properties for the collection of Plug and Play (PNP) devi
 | [IWDTFPNPActions2::RescanParentDevice](nf-wdtfpnpaction-iwdtfpnpactions2-rescanparentdevice.md) | Rescans and re-enumerates the target device's parent device. |
 | [IWDTFPNPActions2::RestartDevice](nf-wdtfpnpaction-iwdtfpnpactions2-restartdevice.md) | Initiates a device restart. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

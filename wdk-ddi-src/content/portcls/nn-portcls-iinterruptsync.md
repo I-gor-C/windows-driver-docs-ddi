@@ -7,7 +7,7 @@ old-location: audio\iinterruptsync.htm
 old-project: audio
 ms.assetid: fffdee8e-6298-45b9-94ee-23426598fbee
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IInterruptSync, IInterruptSync interface [Audio Devices], IInterruptSync interface [Audio Devices], described, audio.iinterruptsync, audmp-routines_5b5b2127-b0d5-48de-9840-2cdffa0bea6a.xml, portcls/IInterruptSync
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,9 +80,6 @@ For more information, see <a href="https://msdn.microsoft.com/c9e228e0-6178-442d
 | [IInterruptSync::Disconnect](nf-portcls-iinterruptsync-disconnect.md) | The Disconnect method disconnects the synchronization object from the interrupt. |
 | [IInterruptSync::GetKInterrupt](nf-portcls-iinterruptsync-getkinterrupt.md) | The GetKInterrupt method gets a WDM interrupt object from a port-class synchronization object. |
 | [IInterruptSync::RegisterServiceRoutine](nf-portcls-iinterruptsync-registerserviceroutine.md) | The RegisterServiceRoutine method registers an interrupt service routine (ISR) that is to be called when an interrupt occurs. |
-
-## Remarks
-
 
 
 ## Requirements

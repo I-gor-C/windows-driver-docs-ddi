@@ -62,9 +62,6 @@ The ISensorClassExtension interface provides methods that the sensor driver uses
 | [ISensorClassExtension::ProcessIoControl](nf-sensorsclassextension-isensorclassextension-processiocontrol.md) | The ISensorClassExtension::ProcessControl method sends Windows Portable Devices (WPD) I/O control requests to the sensor class extension for processing. |
 | [ISensorClassExtension::Uninitialize](nf-sensorsclassextension-isensorclassextension-uninitialize.md) | The ISensorClassExtension::Uninitialize method uninitializes the sensor class extension object. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

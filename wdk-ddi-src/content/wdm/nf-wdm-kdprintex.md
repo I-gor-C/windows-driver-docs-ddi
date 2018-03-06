@@ -101,11 +101,11 @@ This routine is defined in ntddk.h and ndis.h; component filter IDs are defined 
 
 
 
-<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
-
-
-
 <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
+
+
+
+<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
 
 
 

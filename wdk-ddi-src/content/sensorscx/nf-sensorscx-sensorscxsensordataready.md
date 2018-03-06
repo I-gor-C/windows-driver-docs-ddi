@@ -105,7 +105,7 @@ This function is implemented by the class extension and the driver must call it.
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+<a href="..\sensorscx\nc-sensorscx-evt_sensor_driver_set_batch_latency.md">EvtSensorSetBatchLatency</a>
 
 
 
@@ -113,7 +113,7 @@ This function is implemented by the class extension and the driver must call it.
 
 
 
-<a href="..\sensorscx\nc-sensorscx-evt_sensor_driver_set_batch_latency.md">EvtSensorSetBatchLatency</a>
+<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
 
 
 

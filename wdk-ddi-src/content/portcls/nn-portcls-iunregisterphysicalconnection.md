@@ -7,7 +7,7 @@ old-location: audio\iunregisterphysicalconnection.htm
 old-project: audio
 ms.assetid: 876a457e-8774-4c51-bd23-6451b3e3a7b7
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IUnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], IUnregisterPhysicalConnection interface [Audio Devices], described, audio.iunregisterphysicalconnection, audmp-routines_b26d005c-70d9-4df0-80ae-446907f22fd4.xml, portcls/IUnregisterPhysicalConnection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,9 +84,6 @@ When deleting a subdevice from an adapter's topology, the driver must unregister
 | [IUnregisterPhysicalConnection::UnregisterPhysicalConnection](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnection.md) | The UnregisterPhysicalConnection method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnection. |
 | [IUnregisterPhysicalConnection::UnregisterPhysicalConnectionFromExternal](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnectionfromexternal.md) | The UnregisterPhysicalConnectionFromExternal method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnectionFromExternal. |
 | [IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal](nf-portcls-iunregisterphysicalconnection-unregisterphysicalconnectiontoexternal.md) | The UnregisterPhysicalConnectionToExternal method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnectionToExternal. |
-
-## Remarks
-
 
 
 ## Requirements

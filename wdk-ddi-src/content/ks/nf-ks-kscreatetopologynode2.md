@@ -98,11 +98,11 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-
-
-
 <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
+
+
+
+<a href="..\ks\nf-ks-kscreatetopologynode.md">KsCreateTopologyNode</a>
 
 
 
@@ -110,7 +110,7 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 
 
 
-<a href="..\ks\nf-ks-kscreatetopologynode.md">KsCreateTopologyNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 

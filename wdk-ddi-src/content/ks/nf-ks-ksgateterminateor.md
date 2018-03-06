@@ -85,11 +85,11 @@ Logical gates should be deleted in a front to back manner. <b>KsGateTerminateOr<
 
 
 
-<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
-
-
-
 <a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
+
+
+
+<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
 
 
 

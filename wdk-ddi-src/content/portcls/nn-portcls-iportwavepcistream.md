@@ -7,7 +7,7 @@ old-location: audio\iportwavepcistream.htm
 old-project: audio
 ms.assetid: c59ea7d7-17f1-4751-a948-387d7568b832
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPortWavePciStream, IPortWavePciStream interface [Audio Devices], IPortWavePciStream interface [Audio Devices], described, audio.iportwavepcistream, audmp-routines_2ccb79d5-48b9-4b7b-8656-0d427ae99c22.xml, portcls/IPortWavePciStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,9 +58,6 @@ The stream is associated with a pin on the WavePci filter, which the adapter dri
 | [IPortWavePciStream::GetMapping](nf-portcls-iportwavepcistream-getmapping.md) | The GetMapping method obtains a mapping from the port driver and associates a tag with the mapping. |
 | [IPortWavePciStream::ReleaseMapping](nf-portcls-iportwavepcistream-releasemapping.md) | The ReleaseMapping method releases a mapping that was obtained by a previous call to IPortWavePciStream::GetMapping. |
 | [IPortWavePciStream::TerminatePacket](nf-portcls-iportwavepcistream-terminatepacket.md) | The TerminatePacket method terminates the packet currently being mapped. |
-
-## Remarks
-
 
 
 ## Requirements

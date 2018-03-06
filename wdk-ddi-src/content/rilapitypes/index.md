@@ -282,10 +282,10 @@ rilapitypes.h contains the following programming interfaces:
 | [RILADDCALLFORWARDINGPARAMS](ns-rilapitypes-riladdcallforwardingparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALCALLERINFO](ns-rilapitypes-riladditionalcallerinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALNUMBERSTRINGUPDATE](ns-rilapitypes-riladditionalnumberstringupdate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILADDRESS](ns-rilapitypes-riladdress.md) | This structure represents a phone number. |
+| [RILADDRESS](ns-rilapitypes-riladdress.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIER](ns-rilapitypes-rilalphaidentifier.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILAVOIDCDMASYSTEMPARAMS](ns-rilapitypes-rilavoidcdmasystemparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILC2KMRL](ns-rilapitypes-rilc2kmrl.md) | This structure represents a RILC2KMRL. |
+| [RILC2KMRL](ns-rilapitypes-rilc2kmrl.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLAUDIOMEDIASTATE](ns-rilapitypes-rilcallaudiomediastate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLCUSTOMMEDIASTATE](ns-rilapitypes-rilcallcustommediastate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLDISCONNECTDETAILS](ns-rilapitypes-rilcalldisconnectdetails.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -333,7 +333,7 @@ rilapitypes.h contains the following programming interfaces:
 | [RILEMERGENCYNUMBER](ns-rilapitypes-rilemergencynumber.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEMERGENCYNUMBERSLIST](ns-rilapitypes-rilemergencynumberslist.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILS](ns-rilapitypes-rilerrordetails.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILEUTRAMRL](ns-rilapitypes-rileutramrl.md) | This structure represents RILEUTRAMRL, which is a EUTRA (LTE) network measurement report. |
+| [RILEUTRAMRL](ns-rilapitypes-rileutramrl.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDUPARAMS](ns-rilapitypes-rilexchangeuiccapduparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDURESPONSE](ns-rilapitypes-rilexchangeuiccapduresponse.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXECUTORCONFIG](ns-rilapitypes-rilexecutorconfig.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -356,12 +356,12 @@ rilapitypes.h contains the following programming interfaces:
 | [RILGPP2CAUSE](ns-rilapitypes-rilgpp2cause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILGPPCAUSE](ns-rilapitypes-rilgppcause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILGPPREJECTCAUSE](ns-rilapitypes-rilgpprejectcause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILGSMNMR](ns-rilapitypes-rilgsmnmr.md) | This structure represents RILGSMNMR, which is a GSM network measurement report. |
+| [RILGSMNMR](ns-rilapitypes-rilgsmnmr.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILHIDECONNECTEDIDSETTINGS](ns-rilapitypes-rilhideconnectedidsettings.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILHIDEIDSETTINGS](ns-rilapitypes-rilhideidsettings.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSFAILURE](ns-rilapitypes-rilimsfailure.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSHANDOVERATTEMPT](ns-rilapitypes-rilimshandoverattempt.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSI](ns-rilapitypes-rilimsi.md) | This structure represents a RILIMSI. |
+| [RILIMSI](ns-rilapitypes-rilimsi.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPCAUSE](ns-rilapitypes-rilimssipcause.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSTATUS_V1](ns-rilapitypes-rilimsstatus_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSTATUS_V2](ns-rilapitypes-rilimsstatus_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -391,14 +391,14 @@ rilapitypes.h contains the following programming interfaces:
 | [RILMSGMWISUMMARYLIST](ns-rilapitypes-rilmsgmwisummarylist.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGOUTSUBMIT](ns-rilapitypes-rilmsgoutsubmit.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGSERVICEINFO](ns-rilapitypes-rilmsgserviceinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNETWORKCODE](ns-rilapitypes-rilnetworkcode.md) | This structure represents a RILNETWORKCODE. |
+| [RILNETWORKCODE](ns-rilapitypes-rilnetworkcode.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNITZINFO_V1](ns-rilapitypes-rilnitzinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNITZINFO_V2](ns-rilapitypes-rilnitzinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNOTIFICATIONPARAMS](ns-rilapitypes-rilnotificationparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELINFO](ns-rilapitypes-rilopenuicclogicalchannelinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELPARAMS](ns-rilapitypes-rilopenuicclogicalchannelparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPERATORINFO](ns-rilapitypes-riloperatorinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILOPERATORNAMES](ns-rilapitypes-riloperatornames.md) | This structure represents the RILOPERATORNAMES. |
+| [RILOPERATORNAMES](ns-rilapitypes-riloperatornames.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOSGEOLOCATIONINFO](ns-rilapitypes-rilosgeolocationinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPERSODEACTIVATIONSTATE](ns-rilapitypes-rilpersodeactivationstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPHONEBOOKADDITIONALNUMBER](ns-rilapitypes-rilphonebookadditionalnumber.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -410,11 +410,11 @@ rilapitypes.h contains the following programming interfaces:
 | [RILPHONEBOOKLOCATION](ns-rilapitypes-rilphonebooklocation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPHONEBOOKREADYSTATE](ns-rilapitypes-rilphonebookreadystate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPOSITIONINFO_V1](ns-rilapitypes-rilpositioninfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILPOSITIONINFO_V2](ns-rilapitypes-rilpositioninfo_v2.md) | This structure represents the RILPOSITIONINFO_V2. |
-| [RILPOSITIONINFOGSM](ns-rilapitypes-rilpositioninfogsm.md) | This structure represents RILPOSITIONINFOGSM. |
-| [RILPOSITIONINFOLTE](ns-rilapitypes-rilpositioninfolte.md) | This structure represents the RILPOSITIONINFOLTE. |
-| [RILPOSITIONINFOTDSCDMA](ns-rilapitypes-rilpositioninfotdscdma.md) | This structure represents the RILPOSITIONINFOTDSCDMA. |
-| [RILPOSITIONINFOUMTS](ns-rilapitypes-rilpositioninfoumts.md) | This structure represents a RILPOSITIONINFOUMTS. |
+| [RILPOSITIONINFO_V2](ns-rilapitypes-rilpositioninfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOGSM](ns-rilapitypes-rilpositioninfogsm.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOLTE](ns-rilapitypes-rilpositioninfolte.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOTDSCDMA](ns-rilapitypes-rilpositioninfotdscdma.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOUMTS](ns-rilapitypes-rilpositioninfoumts.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPROVISIONSTATUS](ns-rilapitypes-rilprovisionstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPSMEDIACONFIGURATION](ns-rilapitypes-rilpsmediaconfiguration.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPSMEDIACONFIGURATIONSET](ns-rilapitypes-rilpsmediaconfigurationset.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -468,13 +468,13 @@ rilapitypes.h contains the following programming interfaces:
 | [RILSMSREADYSTATUS](ns-rilapitypes-rilsmsreadystatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSTARTDTMFPARAMS](ns-rilapitypes-rilstartdtmfparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESS](ns-rilapitypes-rilsubaddress.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSUBSCRIBERINFO](ns-rilapitypes-rilsubscriberinfo.md) | This structure represents RILSUBSCRIBERINFO. |
+| [RILSUBSCRIBERINFO](ns-rilapitypes-rilsubscriberinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATA](ns-rilapitypes-rilsupservicedata.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSVCINFO](ns-rilapitypes-rilsupsvcinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMSELECTIONPREFS_V1](ns-rilapitypes-rilsystemselectionprefs_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMSELECTIONPREFS_V2](ns-rilapitypes-rilsystemselectionprefs_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMTIME](ns-rilapitypes-rilsystemtime.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILTDSCDMAMRL](ns-rilapitypes-riltdscdmamrl.md) | This structure represents RILTDSCDMAMRL, which is a TD_SCDMA network measurement report. |
+| [RILTDSCDMAMRL](ns-rilapitypes-riltdscdmamrl.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTERMINALCAPABILITYINFO](ns-rilapitypes-rilterminalcapabilityinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTONESIGNALINFO_V1](ns-rilapitypes-riltonesignalinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTONESIGNALINFO_V2](ns-rilapitypes-riltonesignalinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -484,22 +484,22 @@ rilapitypes.h contains the following programming interfaces:
 | [RILUICCATRINFO](ns-rilapitypes-riluiccatrinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCARDINFO](ns-rilapitypes-riluicccardinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCMDPARAMETERS](ns-rilapitypes-riluicccmdparameters.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCFILELOCKSTATUS](ns-rilapitypes-riluiccfilelockstatus.md) | This structure represents RILUICCFILELOCKSTATUS. |
+| [RILUICCFILELOCKSTATUS](ns-rilapitypes-riluiccfilelockstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCFILEPATH](ns-rilapitypes-riluiccfilepath.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCFILES](ns-rilapitypes-riluiccfiles.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCLOCK](ns-rilapitypes-riluicclock.md) | This structure represents a RILUICCLOCK. |
+| [RILUICCLOCK](ns-rilapitypes-riluicclock.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCLOCKCREDENTIAL](ns-rilapitypes-riluicclockcredential.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCLOCKSTATE](ns-rilapitypes-riluicclockstate.md) | This structure represents a RILUICCLOCKSTATE. |
-| [RILUICCRECORDSTATUS](ns-rilapitypes-riluiccrecordstatus.md) | This structure represents RILUICCRECORDSTATUS. |
+| [RILUICCLOCKSTATE](ns-rilapitypes-riluicclockstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCRECORDSTATUS](ns-rilapitypes-riluiccrecordstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSE](ns-rilapitypes-riluiccresponse.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSERVICE](ns-rilapitypes-riluiccservice.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSERVICEINFO](ns-rilapitypes-riluiccserviceinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSERVICEPARAMS](ns-rilapitypes-riluiccserviceparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSLOTINFO](ns-rilapitypes-riluiccslotinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCSUBSCRIBERNUMBERS](ns-rilapitypes-riluiccsubscribernumbers.md) | This structure represents RILUICCSUBSCRIBERNUMBERS. |
+| [RILUICCSUBSCRIBERNUMBERS](ns-rilapitypes-riluiccsubscribernumbers.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCTOOLKITCMD](ns-rilapitypes-riluicctoolkitcmd.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCTOOLKITPROFILE](ns-rilapitypes-riluicctoolkitprofile.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUMTSMRL](ns-rilapitypes-rilumtsmrl.md) | This structure represents a RILUMTSMRL. |
+| [RILUMTSMRL](ns-rilapitypes-rilumtsmrl.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUNBLOCKUICCLOCKPARAMS](ns-rilapitypes-rilunblockuicclockparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUNSOLICITEDSSINFO_V1](ns-rilapitypes-rilunsolicitedssinfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUNSOLICITEDSSINFO_V2](ns-rilapitypes-rilunsolicitedssinfo_v2.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -518,12 +518,12 @@ rilapitypes.h contains the following programming interfaces:
 | [RIL3GPPTONE](ne-rilapitypes-ril3gpptone.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILACCESSTECHNOLOGYPARAMMASK](ne-rilapitypes-rilaccesstechnologyparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALCALLERINFOPARAMMASK](ne-rilapitypes-riladditionalcallerinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILADDRESSNUMPLAN](ne-rilapitypes-riladdressnumplan.md) | This enumeration describes the RILADDRESSNUMPLAN. |
-| [RILADDRESSPARAMMASK](ne-rilapitypes-riladdressparammask.md) | This enumeration describes the RILADDRESSPARAMMASK enumeration. |
-| [RILADDRESSTYPE](ne-rilapitypes-riladdresstype.md) | This enumeration describes the RILADDRESSTYPE. |
+| [RILADDRESSNUMPLAN](ne-rilapitypes-riladdressnumplan.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILADDRESSPARAMMASK](ne-rilapitypes-riladdressparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILADDRESSTYPE](ne-rilapitypes-riladdresstype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIDERTYPE](ne-rilapitypes-rilalphaidentifidertype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILALPHAIDENTIFIERPARAMMASK](ne-rilapitypes-rilalphaidentifierparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILC2KMRLPARAMMASK](ne-rilapitypes-rilc2kmrlparammask.md) | This enumeration describes the RILC2KMRLPARAMMASK. |
+| [RILC2KMRLPARAMMASK](ne-rilapitypes-rilc2kmrlparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLAUDIOMEDIASTATEPARAMMASK](ne-rilapitypes-rilcallaudiomediastateparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLAUDIOQUALITY](ne-rilapitypes-rilcallaudioquality.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCALLAUDIOSOURCE](ne-rilapitypes-rilcallaudiosource.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -567,7 +567,7 @@ rilapitypes.h contains the following programming interfaces:
 | [RILCOMMANDS](ne-rilapitypes-rilcommands.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILCONFPARTICIPANTSTATUSPARAMMASK](ne-rilapitypes-rilconfparticipantstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDCSLANG](ne-rilapitypes-rildcslang.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILDEVICEINFORMATION](ne-rilapitypes-rildeviceinformation.md) | This enumeration describes the RILDEVICEINFORMATION. |
+| [RILDEVICEINFORMATION](ne-rilapitypes-rildeviceinformation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDIALEDIDSETTINGSPARAMMASK](ne-rilapitypes-rildialedidsettingsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDIALPARAMSOPTIONS](ne-rilapitypes-rildialparamsoptions.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILDISPLAYINFOPARAMMASK](ne-rilapitypes-rildisplayinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -581,7 +581,7 @@ rilapitypes.h contains the following programming interfaces:
 | [RILEQUIPMENTSTATE](ne-rilapitypes-rilequipmentstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORCODES](ne-rilapitypes-rilerrorcodes.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILSPARAMMASK](ne-rilapitypes-rilerrordetailsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILEUTRAMRLPARAMMASK](ne-rilapitypes-rileutramrlparammask.md) | This enumeration describes the RILEUTRAMRLPARAMMASK. |
+| [RILEUTRAMRLPARAMMASK](ne-rilapitypes-rileutramrlparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEVDOKIND](ne-rilapitypes-rilevdokind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXCHANGEUICCAPDURESPONSEPARAMMASK](ne-rilapitypes-rilexchangeuiccapduresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEXECUTORFLAG](ne-rilapitypes-rilexecutorflag.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -593,19 +593,19 @@ rilapitypes.h contains the following programming interfaces:
 | [RILGEOSCOPE](ne-rilapitypes-rilgeoscope.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILGETPREFERENCEDOPERATORLISTFORMAT](ne-rilapitypes-rilgetpreferencedoperatorlistformat.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILGSMKIND](ne-rilapitypes-rilgsmkind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILGSMMNMRPARAMMASK](ne-rilapitypes-rilgsmmnmrparammask.md) | This enumeration describes the RILGSMMNMRPARAMMASK. |
+| [RILGSMMNMRPARAMMASK](ne-rilapitypes-rilgsmmnmrparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILHIDECONNECTEDIDSETTINGSPARAMMASK](ne-rilapitypes-rilhideconnectedidsettingsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILHIDEIDSETTINGSPARAMMASK](ne-rilapitypes-rilhideidsettingsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSFAILUREMESSAGETYPE](ne-rilapitypes-rilimsfailuremessagetype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSFAILUREPARAMMASK](ne-rilapitypes-rilimsfailureparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSIPARAMMASK](ne-rilapitypes-rilimsiparammask.md) | This enumeration describes the RILIMSIPARAMMASK. |
+| [RILIMSIPARAMMASK](ne-rilapitypes-rilimsiparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSNWENABLEDFLAGS](ne-rilapitypes-rilimsnwenabledflags.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSSERVICE](ne-rilapitypes-rilimsservice.md) | The RILIMSSERVICE enumeration has the following values. |
+| [RILIMSSERVICE](ne-rilapitypes-rilimsservice.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPCAUSECODE](ne-rilapitypes-rilimssipcausecode.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSIPREASON](ne-rilapitypes-rilimssipreason.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSSTATUSPARAMMASK](ne-rilapitypes-rilimssstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILIMSSUBSCRIBETYPE](ne-rilapitypes-rilimssubscribetype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILIMSSYSTEMTYPE](ne-rilapitypes-rilimssystemtype.md) | The RILIMSSYSTEMTYPE enumeration has the following values. |
+| [RILIMSSYSTEMTYPE](ne-rilapitypes-rilimssystemtype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILINFOCLASS](ne-rilapitypes-rilinfoclass.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILLOCATIONINFOPARAMMASK](ne-rilapitypes-rillocationinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILLTEKIND](ne-rilapitypes-rilltekind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -642,16 +642,16 @@ rilapitypes.h contains the following programming interfaces:
 | [RILMSGPROTOCOLID](ne-rilapitypes-rilmsgprotocolid.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGSERVICEINFOMSGSUPPORT](ne-rilapitypes-rilmsgserviceinfomsgsupport.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILMSGSERVICEINFOPARAMMASK](ne-rilapitypes-rilmsgserviceinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNETWORKCODEPARAMMASK](ne-rilapitypes-rilnetworkcodeparammask.md) | This enumeration describes the RILNETWORKCODEPARAMMASK. |
+| [RILNETWORKCODEPARAMMASK](ne-rilapitypes-rilnetworkcodeparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNITZINFOPARAMMASK](ne-rilapitypes-rilnitzinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNITZNOTIFICATIONCAPS](ne-rilapitypes-rilnitznotificationcaps.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNOTIFICATIONCLASSES](ne-rilapitypes-rilnotificationclasses.md) | This enumeration describes the RILNOTIFICATIONCLASSES. |
+| [RILNOTIFICATIONCLASSES](ne-rilapitypes-rilnotificationclasses.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILNOTIFICATIONFILTERMASK](ne-rilapitypes-rilnotificationfiltermask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILNOTIFICATIONS](ne-rilapitypes-rilnotifications.md) | This enumeration describes RILNOTIFICATIONS. |
+| [RILNOTIFICATIONS](ne-rilapitypes-rilnotifications.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPENUICCLOGICALCHANNELPARAMMASK](ne-rilapitypes-rilopenuicclogicalchannelparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPERATORINFOPARAMMASK](ne-rilapitypes-riloperatorinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOPERATORINFOSTATUS](ne-rilapitypes-riloperatorinfostatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILOPERATORNAMESPARAMMASK](ne-rilapitypes-riloperatornamesparammask.md) | This enumeration describes the RILOPERATORNAMESPARAMMASK. |
+| [RILOPERATORNAMESPARAMMASK](ne-rilapitypes-riloperatornamesparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILOSGEOLOCATIONINFOPARAMMASK](ne-rilapitypes-rilosgeolocationinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPARTICIPANTOPERATION](ne-rilapitypes-rilparticipantoperation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPERSODEACTIVATIONSTATEDEPERSOSTATE](ne-rilapitypes-rilpersodeactivationstatedepersostate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -665,10 +665,10 @@ rilapitypes.h contains the following programming interfaces:
 | [RILPHONEBOOKLOCATIONCAPS](ne-rilapitypes-rilphonebooklocationcaps.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPHONEBOOKMAILADDRESSPARAMMASK](ne-rilapitypes-rilphonebookmailaddressparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPHONEENTRYSTORELOCATION](ne-rilapitypes-rilphoneentrystorelocation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILPOSITIONINFOGSMPARAMMASK](ne-rilapitypes-rilpositioninfogsmparammask.md) | This enumeration describes the RILPOSITIONINFOGSMPARAMMASK. |
-| [RILPOSITIONINFOLTEPARAMMASK](ne-rilapitypes-rilpositioninfolteparammask.md) | This enumeration describes the RILPOSITIONINFOLTEPARAMMASK. |
-| [RILPOSITIONINFOTDSCDMAPARAMMASK](ne-rilapitypes-rilpositioninfotdscdmaparammask.md) | This enumeration describes the RILPOSITIONINFOTDSCDMAPARAMMASK. |
-| [RILPOSITIONINFOUMTSPARAMMASK](ne-rilapitypes-rilpositioninfoumtsparammask.md) | This enumeration describes the RILPOSITIONINFOUMTSPARAMMASK. |
+| [RILPOSITIONINFOGSMPARAMMASK](ne-rilapitypes-rilpositioninfogsmparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOLTEPARAMMASK](ne-rilapitypes-rilpositioninfolteparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOTDSCDMAPARAMMASK](ne-rilapitypes-rilpositioninfotdscdmaparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFOUMTSPARAMMASK](ne-rilapitypes-rilpositioninfoumtsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPROVISIONSTATUSPROVISIONSTATUS](ne-rilapitypes-rilprovisionstatusprovisionstatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPSMEDIAPREFERENCE](ne-rilapitypes-rilpsmediapreference.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRADIOCONFIGURATIONRADIOTYPE](ne-rilapitypes-rilradioconfigurationradiotype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -678,7 +678,7 @@ rilapitypes.h contains the following programming interfaces:
 | [RILRADIOSTATEITEMATTRIBUTES](ne-rilapitypes-rilradiostateitemattributes.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRADIOSTATEITEMFLAG](ne-rilapitypes-rilradiostateitemflag.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILRADIOSTATEITEMID](ne-rilapitypes-rilradiostateitemid.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILREGSTAT](ne-rilapitypes-rilregstat.md) | This enumeration describes the RILREGSTAT. |
+| [RILREGSTAT](ne-rilapitypes-rilregstat.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREGSTATUSINFOPARAMMASK](ne-rilapitypes-rilregstatusinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREMOTEPARTYINFOVALUE](ne-rilapitypes-rilremotepartyinfovalue.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILREMOTEPARTYINFOVALUEPARAM](ne-rilapitypes-rilremotepartyinfovalueparam.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -694,14 +694,14 @@ rilapitypes.h contains the following programming interfaces:
 | [RILSIGNALQUALITYCAPS](ne-rilapitypes-rilsignalqualitycaps.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSIGNALQUALITYPARAMMASK](ne-rilapitypes-rilsignalqualityparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSMSACKOPT](ne-rilapitypes-rilsmsackopt.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSMSFORMAT](ne-rilapitypes-rilsmsformat.md) | The RILSMSFORMAT enumeration has the following values. |
+| [RILSMSFORMAT](ne-rilapitypes-rilsmsformat.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSMSMSGINFLAGS](ne-rilapitypes-rilsmsmsginflags.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSMSREADYSTATE](ne-rilapitypes-rilsmsreadystate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSMSSUPPORTCAPS](ne-rilapitypes-rilsmssupportcaps.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESSPARAMMASK](ne-rilapitypes-rilsubaddressparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUBADDRESSTYPE](ne-rilapitypes-rilsubaddresstype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSUBSCRIBERINFOPARAMMASK](ne-rilapitypes-rilsubscriberinfoparammask.md) | This enumeration describes the RILSUBSCRIBERINFOPARAMMASK. |
-| [RILSUBSCRIBERINFOSERVICE](ne-rilapitypes-rilsubscriberinfoservice.md) | This enumeration describes the RILSUBSCRIBERINFOSERVICE. |
+| [RILSUBSCRIBERINFOPARAMMASK](ne-rilapitypes-rilsubscriberinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILSUBSCRIBERINFOSERVICE](ne-rilapitypes-rilsubscriberinfoservice.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATAPARAMMASK](ne-rilapitypes-rilsupservicedataparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSERVICEDATASTATUS](ne-rilapitypes-rilsupservicedatastatus.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSUPSVCACTION](ne-rilapitypes-rilsupsvcaction.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -711,34 +711,34 @@ rilapitypes.h contains the following programming interfaces:
 | [RILSYSTEMSELECTIONPREFSMODE](ne-rilapitypes-rilsystemselectionprefsmode.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMSELECTIONPREFSPARAMMASK](ne-rilapitypes-rilsystemselectionprefsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILSYSTEMSELECTIONPREFSROAMINGMODE](ne-rilapitypes-rilsystemselectionprefsroamingmode.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILSYSTEMTYPE](ne-rilapitypes-rilsystemtype.md) | This enumeration represents RILSYSTEMTYPE. |
+| [RILSYSTEMTYPE](ne-rilapitypes-rilsystemtype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTDSCDMAKIND](ne-rilapitypes-riltdscdmakind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILTDSCDMAMRLPARAMMASK](ne-rilapitypes-riltdscdmamrlparammask.md) | This enumeration describes the RILTDSCDMAMRLPARAMMASK. |
+| [RILTDSCDMAMRLPARAMMASK](ne-rilapitypes-riltdscdmamrlparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILTONESIGNALINFOPARAMMASK](ne-rilapitypes-riltonesignalinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPDATACHANGEENUM](ne-rilapitypes-riluiccappdatachangeenum.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPINFOPARAMMASK](ne-rilapitypes-riluiccappinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPPERSOCHECKSTATUSPARAMMASK](ne-rilapitypes-riluiccapppersocheckstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCAPPPERSOCHECKSTATUSSTATE](ne-rilapitypes-riluiccapppersocheckstatusstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCAPPTYPE](ne-rilapitypes-riluiccapptype.md) | This enumeration describes the RILUICCAPPTYPE. |
+| [RILUICCAPPTYPE](ne-rilapitypes-riluiccapptype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCARDINFOPARAMMASK](ne-rilapitypes-riluicccardinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCHANNELGROUP](ne-rilapitypes-riluiccchannelgroup.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCMDPARAMETERSPARAMMASK](ne-rilapitypes-riluicccmdparametersparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCCOMMAND](ne-rilapitypes-riluicccommand.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCFILELOCKSTATUSACCESSCONDITION](ne-rilapitypes-riluiccfilelockstatusaccesscondition.md) | This enumeration describes the RILUICCFILELOCKSTATUSACCESSCONDITION. |
-| [RILUICCFILELOCKSTATUSPARAMMASK](ne-rilapitypes-riluiccfilelockstatusparammask.md) | This enumeration describes the RILUICCFILELOCKSTATUSPARAMMASK. |
-| [RILUICCKEYREF](ne-rilapitypes-riluicckeyref.md) | This enumeration describes the RILUICCAPPTYPE. |
-| [RILUICCLOCKSTATELOCKSTATE](ne-rilapitypes-riluicclockstatelockstate.md) | This enumeration describes the RILUICCLOCKSTATELOCKSTATE. |
-| [RILUICCLOCKSTATEPARAMMASK](ne-rilapitypes-riluicclockstateparammask.md) | This enumeration describes the RILUICCLOCKSTATEPARAMMASK. |
+| [RILUICCFILELOCKSTATUSACCESSCONDITION](ne-rilapitypes-riluiccfilelockstatusaccesscondition.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCFILELOCKSTATUSPARAMMASK](ne-rilapitypes-riluiccfilelockstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCKEYREF](ne-rilapitypes-riluicckeyref.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCLOCKSTATELOCKSTATE](ne-rilapitypes-riluicclockstatelockstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCLOCKSTATEPARAMMASK](ne-rilapitypes-riluicclockstateparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCPRLID](ne-rilapitypes-riluiccprlid.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCRECORDSTATUSPARAMMASK](ne-rilapitypes-riluiccrecordstatusparammask.md) | This enumeration describes the RILUICCRECORDSTATUSPARAMMASK. |
-| [RILUICCRECORDTYPE](ne-rilapitypes-riluiccrecordtype.md) | This enumeration describes the RILUICCRECORDTYPE. |
+| [RILUICCRECORDSTATUSPARAMMASK](ne-rilapitypes-riluiccrecordstatusparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILUICCRECORDTYPE](ne-rilapitypes-riluiccrecordtype.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCRESPONSEPARAMMASK](ne-rilapitypes-riluiccresponseparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSERVICESERVICE](ne-rilapitypes-riluiccserviceservice.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSERVICESTATE](ne-rilapitypes-riluiccservicestate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUICCSLOTINFOPARAMMASK](ne-rilapitypes-riluiccslotinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUICCSLOTSTATE](ne-rilapitypes-riluiccslotstate.md) | This enumeration describes the RILUICCSLOTSTATE. |
+| [RILUICCSLOTSTATE](ne-rilapitypes-riluiccslotstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUMTSKIND](ne-rilapitypes-rilumtskind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
-| [RILUMTSMRLPARAMMASK](ne-rilapitypes-rilumtsmrlparammask.md) | This enumeration describes the RILUMTSMRLPARAMMASK. |
+| [RILUMTSMRLPARAMMASK](ne-rilapitypes-rilumtsmrlparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUNSOLICITEDSSINFONOTIFICATIONCODE](ne-rilapitypes-rilunsolicitedssinfonotificationcode.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILUNSOLICITEDSSINFOPARAMMASK](ne-rilapitypes-rilunsolicitedssinfoparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILVOICEDOMAIN](ne-rilapitypes-rilvoicedomain.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

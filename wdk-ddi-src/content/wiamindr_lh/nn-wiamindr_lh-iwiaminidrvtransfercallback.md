@@ -57,9 +57,6 @@ This is a Callback interface that is called by the WIA mini-driver for stream-ba
 | [IWiaMiniDrvTransferCallback::GetNextStream](nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream.md) | Called by the WIA mini-driver to obtain a stream for the current data transfer (download or upload). |
 | [IWiaMiniDrvTransferCallback::SendMessage](nf-wiamindr_lh-iwiaminidrvtransfercallback-sendmessage.md) | Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,7 +71,7 @@ This is a Callback interface that is called by the WIA mini-driver for stream-ba
 
 
 
-<a href="https://msdn.microsoft.com/83817277-3526-4f64-8e7c-7e02c8cd77bd">Data Transfer Between Legacy Application and Windows Vista Driver</a>
+<a href="http://msdn.microsoft.com/windows/hardware/gg463512">Introduction to WIA 2.0</a>
 
 
 
@@ -82,7 +79,7 @@ This is a Callback interface that is called by the WIA mini-driver for stream-ba
 
 
 
-<a href="http://msdn.microsoft.com/windows/hardware/gg463512">Introduction to WIA 2.0</a>
+<a href="https://msdn.microsoft.com/83817277-3526-4f64-8e7c-7e02c8cd77bd">Data Transfer Between Legacy Application and Windows Vista Driver</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: debugger\idebugplmclient3.htm
 old-project: debugger
 ms.assetid: 5B0580FF-0829-406A-B511-C0CD91A08D5F
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IDebugPlmClient3, IDebugPlmClient3 interface [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], described, dbgeng/IDebugPlmClient3, debugger.idebugplmclient3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,9 +62,6 @@ This interface supports Process Lifecycle Management (PLM) for the debug client.
 | [IDebugPlmClient3::ResumePlmPackageWide](nf-dbgeng-idebugplmclient3-resumeplmpackagewide.md) | Resumes a Process Lifecycle Management (PLM) package. |
 | [IDebugPlmClient3::SuspendPlmPackageWide](nf-dbgeng-idebugplmclient3-suspendplmpackagewide.md) | Suspends a Process Lifecycle Management (PLM) package. |
 | [IDebugPlmClient3::TerminatePlmPackageWide](nf-dbgeng-idebugplmclient3-terminateplmpackagewide.md) | Ends a Process Lifecycle Management (PLM) package. |
-
-## Remarks
-
 
 
 ## Requirements

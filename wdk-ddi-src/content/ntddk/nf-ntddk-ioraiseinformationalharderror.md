@@ -105,7 +105,7 @@ Starting with Windows Vista, if the routine is called from a thread in session 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 
 
 

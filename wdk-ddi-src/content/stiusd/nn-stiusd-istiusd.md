@@ -71,9 +71,6 @@ This section describes the methods defined for the <a href="https://msdn.microso
 | [IStiUSD::SetNotificationHandle](nf-stiusd-istiusd-setnotificationhandle.md) | A still image minidriver's IStiUSD::SetNotificationHandle method specifies an event handle that the minidriver should use to inform the caller of device events. |
 | [IStiUSD::UnLockDevice](nf-stiusd-istiusd-unlockdevice.md) | A still image minidriver's IStiUSD::UnLockDevice method unlocks a device that was locked by a previous call to IStiUSD::LockDevice. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

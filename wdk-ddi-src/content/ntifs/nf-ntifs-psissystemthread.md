@@ -82,11 +82,11 @@ For more information about using system threads and managing synchronization wit
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-ioissystemthread.md">IoIsSystemThread</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 
 
 

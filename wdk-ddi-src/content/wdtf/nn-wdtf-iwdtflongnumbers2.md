@@ -60,9 +60,6 @@ Defines operations and properties for a collection of long numbers.
 | [IWDTFLongNumbers2::get_Item](nf-wdtf-iwdtflongnumbers2-get_item.md) | Gets an individual device in the DeviceDepot. |
 | [IWDTFLongNumbers2::Remove](nf-wdtf-iwdtflongnumbers2-remove.md) | Removes a long number from the collection. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

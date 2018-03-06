@@ -182,11 +182,11 @@ NTSTATUS Result = NtPowerInformation(PlatformInformation, NULL, 0, &amp;Platform
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_power_platform_information.md">POWER_PLATFORM_INFORMATION</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
+<a href="..\wdm\ns-wdm-_power_platform_information.md">POWER_PLATFORM_INFORMATION</a>
 
 
 

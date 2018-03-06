@@ -103,7 +103,7 @@ A similar set of rules apply to the <a href="..\wdm\nf-wdm-kesavefloatingpointst
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
+<a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
 
 
 
@@ -111,7 +111,7 @@ A similar set of rules apply to the <a href="..\wdm\nf-wdm-kesavefloatingpointst
 
 
 
-<a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
 
 
 

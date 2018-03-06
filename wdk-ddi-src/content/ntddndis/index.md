@@ -343,6 +343,7 @@ ntddndis.h contains the following programming interfaces:
 | [_NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE](ne-ntddndis-_ndis_receive_queue_operational_state.md) | The NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE enumeration identifies the current queue state of a receive queue. |
 | [_NDIS_RECEIVE_QUEUE_TYPE](ne-ntddndis-_ndis_receive_queue_type.md) | The NDIS_RECEIVE_QUEUE_TYPE enumeration identifies the type of a receive queue. |
 | [_NDIS_REQUEST_TYPE](ne-ntddndis-_ndis_request_type.md) | The NDIS_REQUEST_TYPE enumeration identifies the request type in an OID request. |
+| [_NDIS_RSS_PROFILE](ne-ntddndis-_ndis_rss_profile.md) | This enumeration is not supported. |
 | [_NDIS_SWITCH_FEATURE_STATUS_TYPE](ne-ntddndis-_ndis_switch_feature_status_type.md) | The NDIS_SWITCH_FEATURE_STATUS_TYPE enumeration specifies the type of status information for a custom policy property, or feature, of a Hyper-V extensible switch. |
 | [_NDIS_SWITCH_NIC_STATE](ne-ntddndis-_ndis_switch_nic_state.md) | The NDIS_SWITCH_NIC_STATE enumeration specifies the current state of the Hyper-V extensible switch network adapter. |
 | [_NDIS_SWITCH_NIC_TYPE](ne-ntddndis-_ndis_switch_nic_type.md) | The NDIS_SWITCH_NIC_TYPE enumeration specifies the type of the virtual network adapter that is attached to a Hyper-V extensible switch port. |

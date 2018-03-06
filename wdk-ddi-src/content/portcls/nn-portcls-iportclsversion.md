@@ -7,7 +7,7 @@ old-location: audio\iportclsversion.htm
 old-project: audio
 ms.assetid: 8a367bcb-680b-41be-975f-1a1f4bec3b60
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPortClsVersion, IPortClsVersion interface [Audio Devices], IPortClsVersion interface [Audio Devices], described, audio.iportclsversion, audmp-routines_47212df8-c1b8-4e77-bd5f-90b74a6ae08c.xml, portcls/IPortClsVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,9 +88,6 @@ To determine whether a port driver supports the <code>IPortClsVersion</code> int
 | Method | Description |
 | ---- |:---- |
 | [IPortClsVersion::GetVersion](nf-portcls-iportclsversion-getversion.md) | The GetVersion method returns the version of the Windows operating system that the driver is running on. |
-
-## Remarks
-
 
 
 ## Requirements

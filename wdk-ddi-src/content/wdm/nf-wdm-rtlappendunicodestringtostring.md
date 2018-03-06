@@ -119,7 +119,7 @@ The <i>Destination</i> and <i>Source</i> buffers must be resident if the caller 
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlappendunicodetostring.md">RtlAppendUnicodeToString</a>
+<a href="..\wdm\nf-wdm-rtlappendunicodetostring.md">RtlAppendUnicodeToString</a>
 
 
 

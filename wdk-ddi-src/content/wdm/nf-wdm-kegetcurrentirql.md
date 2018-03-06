@@ -76,15 +76,15 @@ This function has no parameters.
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
+
+
+
 <a href="..\wdm\nf-wdm-keacquirespinlockatdpclevel.md">KeAcquireSpinLockAtDpcLevel</a>
 
 
 
 <a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
-
-
-
-<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
 
 
 

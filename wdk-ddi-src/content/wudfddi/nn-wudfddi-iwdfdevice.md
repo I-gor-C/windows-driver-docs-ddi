@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice.htm
 old-project: wdf
 ms.assetid: b0f8a156-e0e0-48d1-9e23-4ac07795df07
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFDevice, IWDFDevice interface, IWDFDevice interface, described, UMDFDeviceObjectRef_d0dc8041-1d51-457b-8632-e500bf4df724.xml, umdf.iwdfdevice, wdf.iwdfdevice, wudfddi/IWDFDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,7 +75,6 @@ The <b>IWDFDevice</b> interface exposes a device object, which is a representati
 | [IWDFDevice::SetPnpState](nf-wudfddi-iwdfdevice-setpnpstate.md) | The SetPnpState method turns on or off (or sets to the default state) the specified Plug and Play (PnP) property of a device. |
 
 ## Remarks
-
 Each device object has a parent driver object. When a new device arrives in the system, the framework calls the parent driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> callback function to notify the driver about the arrival. The driver can then call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to receive a pointer to the <b>IWDFDevice</b> interface for the new device object.
 
 ## Requirements

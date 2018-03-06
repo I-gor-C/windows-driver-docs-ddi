@@ -60,7 +60,6 @@ The<b>IKsAllocator</b> interface provides methods that control and query an allo
 | [IKsAllocator::KsSetAllocatorMode](nf-ksproxy-iksallocator-kssetallocatormode.md) | Sets the mode in which an allocator allocates memory. |
 
 ## Remarks
-
 The IID for this interface is IID_IKsAllocator.
 
 ## Requirements

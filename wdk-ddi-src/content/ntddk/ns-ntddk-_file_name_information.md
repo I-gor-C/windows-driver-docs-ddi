@@ -77,11 +77,11 @@ Callers of <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile<
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-
-
-
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
+
+
+
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 
 
 

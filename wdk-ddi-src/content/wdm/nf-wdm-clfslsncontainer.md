@@ -84,7 +84,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfslsncreate.md">ClfsLsnCreate</a>
+<a href="..\wdm\nf-wdm-clfslsnblockoffset.md">ClfsLsnBlockOffset</a>
 
 
 
@@ -92,7 +92,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 
 
-<a href="..\wdm\nf-wdm-clfslsnblockoffset.md">ClfsLsnBlockOffset</a>
+<a href="..\wdm\nf-wdm-clfslsncreate.md">ClfsLsnCreate</a>
 
 
 

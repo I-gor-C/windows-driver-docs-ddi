@@ -7,7 +7,7 @@ old-location: print\iprintoemuni3_interface.htm
 old-project: print
 ms.assetid: cf5705fb-8420-4eec-99d4-d56f192da581
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintOemUni3, IPrintOemUni3 interface [Print Devices], IPrintOemUni3 interface [Print Devices], described, prcomoem/IPrintOemUni3, print.iprintoemuni3_interface, print_unidrv-pscript_rendering_631f975d-1d52-4db8-8e90-71cdb99f4ef1.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,9 +62,6 @@ The <b>IPrintOemUni3</b> COM interface is available in Windows Vista and later.
 | [IPrintOemUni3::GetImplementedMethod](nf-prcomoem-iprintoemuni3-getimplementedmethod.md) | The IPrintOemUni3::GetImplementedMethod method is used by Unidrv to determine which IPrintOemUni interface methods a rendering plug-in has implemented. |
 | [IPrintOemUni3::GetPDEVAdjustment](nf-prcomoem-iprintoemuni3-getpdevadjustment.md) | The IPrintOemUni3::GetPDEVAdjustment method enables a plug-in to override specific PDEV settings. |
 | [IPrintOemUni3::SetBandSize](nf-prcomoem-iprintoemuni3-setbandsize.md) | The IPrintOemUni3::SetBandSize method can be used with Unidrv-supported printers to specify the desired band size on the printed output. |
-
-## Remarks
-
 
 
 ## Requirements

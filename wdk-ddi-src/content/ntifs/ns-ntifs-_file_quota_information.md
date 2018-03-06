@@ -108,6 +108,10 @@ On 64-bit platforms, this structure must be aligned on a LONGLONG (8-byte) bound
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
+
+
+
 <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
 
 
@@ -117,10 +121,6 @@ On 64-bit platforms, this structure must be aligned on a LONGLONG (8-byte) bound
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
 
 
 

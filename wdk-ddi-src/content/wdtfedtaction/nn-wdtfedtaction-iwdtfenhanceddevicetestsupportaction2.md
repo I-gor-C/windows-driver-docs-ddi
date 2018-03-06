@@ -61,7 +61,6 @@ Defines operations and properties that support the Enhanced Device Test (EDT) fi
 | [IWDTFEnhancedDeviceTestSupportAction2::put_SkipRestart](nf-wdtfedtaction-iwdtfenhanceddevicetestsupportaction2-put_skiprestart.md) | Sets a value that indicates whether the target device should be restarted by default. |
 
 ## Remarks
-
 The EDT filter driver provides support for the 
 <a href="..\wdtfpnpaction\nn-wdtfpnpaction-iwdtfpnpaction2.md">IWDTFPNPAction2</a> interface methods 
 that are prefixed with <b>EDT</b>.

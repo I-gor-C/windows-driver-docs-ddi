@@ -115,11 +115,11 @@ The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider inf
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632443">FSCTL_SET_EXTERNAL_BACKING</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a>
 
 
 

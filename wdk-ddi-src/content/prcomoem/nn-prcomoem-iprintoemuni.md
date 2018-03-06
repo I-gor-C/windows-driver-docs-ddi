@@ -7,7 +7,7 @@ old-location: print\iprintoemuni_interface.htm
 old-project: print
 ms.assetid: 097366a0-2ded-435c-9b63-2b736b716032
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintOemUni, IPrintOemUni interface [Print Devices], IPrintOemUni interface [Print Devices], described, prcomoem/IPrintOemUni, print.iprintoemuni_interface, print_unidrv-pscript_rendering_e715c57a-f4a8-4dde-894b-a19761ea0755.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -77,9 +77,6 @@ This section describes the methods defined for the IPrintOemUni COM interface.
 | [IPrintOemUni::TextOutAsBitmap](nf-prcomoem-iprintoemuni-textoutasbitmap.md) | The IPrintOemUni::TextOutAsBitmap method allows a rendering plug-in to create a bitmap image of a text string, in case a downloadable font is not available. |
 | [IPrintOemUni::TTDownloadMethod](nf-prcomoem-iprintoemuni-ttdownloadmethod.md) | The IPrintOemUni::TTDownloadMethod method enables a rendering plug-in to indicate the format that Unidrv should use for a specified TrueType soft font. |
 | [IPrintOemUni::TTYGetInfo](nf-prcomoem-iprintoemuni-ttygetinfo.md) | The IPrintOemUni::TTYGetInfo method enables a rendering plug-in to supply Unidrv with information relevant to text-only printers. |
-
-## Remarks
-
 
 
 ## Requirements

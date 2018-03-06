@@ -88,7 +88,7 @@ For more info about this function and its usage, see <a href="https://msdn.micro
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
 
 
 

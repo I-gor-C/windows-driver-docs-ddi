@@ -7,7 +7,7 @@ old-location: print\ipartdiscardcontrol.htm
 old-project: print
 ms.assetid: 30c6fb0c-42ea-441f-b0a2-3310f8a5b407
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPartDiscardControl, IPartDiscardControl interface [Print Devices], IPartDiscardControl interface [Print Devices], described, filterpipeline/IPartDiscardControl, filterpipeline_c29b91d3-ecf6-4697-bf5f-5b536cfb7071.xml, print.ipartdiscardcontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,9 +56,6 @@ Filters can also create discard controls. To create a discard control, the filte
 | Method | Description |
 | ---- |:---- |
 | [IPartDiscardControl::GetDiscardProperties](nf-filterpipeline-ipartdiscardcontrol-getdiscardproperties.md) | The GetDiscardProperties method gets the properties of the discard control. |
-
-## Remarks
-
 
 
 ## Requirements

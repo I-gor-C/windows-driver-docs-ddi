@@ -58,7 +58,6 @@ The <b>ITracing </b>interface sets an object's <a href="..\wdtf\ne-wdtf-__midl__
 | [ITracing::SetTraceLevel](nf-wdtf-itracing-settracelevel.md) | The SetTraceLevel method sets the tracing level for an object. |
 
 ## Remarks
-
 Because the <a href="..\wdtf\nn-wdtf-iaction.md">IAction</a> interface inherits from the <b>ITracing</b> interface, all WDTF plug-ins will support <b>ITracing</b>. All of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539628">WDTF core interfaces</a> should also support <b>ITracing</b>.
 
 ## Requirements
@@ -73,11 +72,11 @@ Because the <a href="..\wdtf\nn-wdtf-iaction.md">IAction</a> interface inherits 
 
 
 
-<a href="..\wdtf\nn-wdtf-itracing.md">ITracing</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538787">IAction</a>
+
+
+
+<a href="..\wdtf\nn-wdtf-itracing.md">ITracing</a>
 
 
 

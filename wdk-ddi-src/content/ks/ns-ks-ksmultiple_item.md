@@ -73,7 +73,7 @@ Specifies the size in bytes of this header and the property data that follows.
 
 ## See Also
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 
 
 
@@ -81,7 +81,7 @@ Specifies the size in bytes of this header and the property data that follows.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 
 

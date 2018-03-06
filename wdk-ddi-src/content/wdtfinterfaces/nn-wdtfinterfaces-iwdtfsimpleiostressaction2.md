@@ -63,9 +63,6 @@ Defines operations for a simple asynchronous I/O functionality test.
 | [IWDTFSimpleIOStressAction2::StopAsync](nf-wdtfinterfaces-iwdtfsimpleiostressaction2-stopasync.md) | Asynchronously signals the stop event to occur. |
 | [IWDTFSimpleIOStressAction2::WaitAsyncCompletion](nf-wdtfinterfaces-iwdtfsimpleiostressaction2-waitasynccompletion.md) | Waits for the completion of any of the asynchronous events. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

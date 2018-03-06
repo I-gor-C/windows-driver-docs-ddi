@@ -63,9 +63,6 @@ The methods on this interface depend on the <b>IWiaTransfer</b> and <b>IWiaPrevi
 | [IWiaTransferCallback::GetNextStream](nf-wia_lh-iwiatransfercallback-getnextstream.md) | The IWiaTransferCallback::GetNextStream method is implemented by an image processing filter. |
 | [IWiaTransferCallback::TransferCallback](nf-wia_lh-iwiatransfercallback-transfercallback.md) | The IWiaTransferCallback::TransferCallback method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling IWiaTransfer::Download or the preview component's IWiaPreview::GetNewPreview. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

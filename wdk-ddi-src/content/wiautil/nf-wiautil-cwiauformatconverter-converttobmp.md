@@ -107,11 +107,11 @@ The caller of this method can pass a result buffer in <i>ppDest</i> and the size
 
 ## See Also
 
-<a href="..\wiautil\ns-wiautil-_bmp_image_info.md">BMP_IMAGE_INFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540379">CWiauFormatConverter::IsFormatSupported</a>
+
+
+
+<a href="..\wiautil\ns-wiautil-_bmp_image_info.md">BMP_IMAGE_INFO</a>
 
 
 

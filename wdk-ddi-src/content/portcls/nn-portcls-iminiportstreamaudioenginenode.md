@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode.htm
 old-project: audio
 ms.assetid: B3F7D3AC-C756-47D2-9E7C-7930621753C3
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], IMiniportStreamAudioEngineNode interface [Audio Devices], described, audio.iminiportstreamaudioenginenode, portcls/IMiniportStreamAudioEngineNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,9 +66,6 @@ This interface allows a miniport driver to use KS properties that access the aud
 | [IMiniportStreamAudioEngineNode::SetStreamChannelVolume](nf-portcls-iminiportstreamaudioenginenode-setstreamchannelvolume.md) | Sets the volume level to be applied to the audio stream. |
 | [IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition](nf-portcls-iminiportstreamaudioenginenode-setstreamcurrentwriteposition.md) | Sets the current cursor position in the audio data stream that is being captured from the endpoint. |
 | [IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection](nf-portcls-iminiportstreamaudioenginenode-setstreamloopbackprotection.md) | Sets the loopback protection status of the audio engine node. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -68,11 +68,11 @@ typedef struct _AV_PCR {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536995">Av61883_SetPlug</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536961">Av61883_CreatePlug</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536995">Av61883_SetPlug</a>
 
 
 

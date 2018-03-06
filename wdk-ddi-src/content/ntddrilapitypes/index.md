@@ -275,6 +275,7 @@ ntddrilapitypes.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
+| [GETDEVICEINFORESPONSE](ns-ntddrilapitypes-getdeviceinforesponse.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILACCESSTECHNOLOGY](ns-ntddrilapitypes-rilaccesstechnology.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDCALLFORWARDINGPARAMS](ns-ntddrilapitypes-riladdcallforwardingparams.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILADDITIONALCALLERINFO](ns-ntddrilapitypes-riladditionalcallerinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
@@ -406,6 +407,7 @@ ntddrilapitypes.h contains the following programming interfaces:
 | [RILPHONEBOOKINFO](ns-ntddrilapitypes-rilphonebookinfo.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPHONEBOOKLOCATION](ns-ntddrilapitypes-rilphonebooklocation.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPHONEBOOKREADYSTATE](ns-ntddrilapitypes-rilphonebookreadystate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILPOSITIONINFO_V1](ns-ntddrilapitypes-rilpositioninfo_v1.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILPOSITIONINFO_V2](ns-ntddrilapitypes-rilpositioninfo_v2.md) | This structure represents the RILPOSITIONINFO_V2. |
 | [RILPOSITIONINFOGSM](ns-ntddrilapitypes-rilpositioninfogsm.md) | This structure represents RILPOSITIONINFOGSM. |
 | [RILPOSITIONINFOLTE](ns-ntddrilapitypes-rilpositioninfolte.md) | This structure represents the RILPOSITIONINFOLTE. |
@@ -575,6 +577,7 @@ ntddrilapitypes.h contains the following programming interfaces:
 | [RILEMERGENCYNUMBERCATEGORY](ne-ntddrilapitypes-rilemergencynumbercategory.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEMERGENCYNUMBERPARAMMASK](ne-ntddrilapitypes-rilemergencynumberparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEQUIPMENTSTATE](ne-ntddrilapitypes-rilequipmentstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILERRORCODES](ne-ntddrilapitypes-rilerrorcodes.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILSPARAMMASK](ne-ntddrilapitypes-rilerrordetailsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEUTRAMRLPARAMMASK](ne-ntddrilapitypes-rileutramrlparammask.md) | This enumeration describes the RILEUTRAMRLPARAMMASK. |
 | [RILEVDOKIND](ne-ntddrilapitypes-rilevdokind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

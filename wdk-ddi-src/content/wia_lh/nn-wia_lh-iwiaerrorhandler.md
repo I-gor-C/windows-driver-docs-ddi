@@ -57,9 +57,6 @@ The <b>IWiaErrorHandler</b> interface provides the <a href="https://msdn.microso
 | [IWiaErrorHandler::GetStatusDescription](nf-wia_lh-iwiaerrorhandler-getstatusdescription.md) | The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension. |
 | [IWiaErrorHandler::ReportStatus](nf-wia_lh-iwiaerrorhandler-reportstatus.md) | The ReportStatus method displays information about an error or status during a transfer. In some cases this method allows the user to recover from an error. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

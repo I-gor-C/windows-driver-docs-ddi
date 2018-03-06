@@ -67,9 +67,6 @@ Defines properties and operations for the collection.
 | [IWDTFTargets2::QuerySingle](nf-wdtf-iwdtftargets2-querysingle.md) | Returns a single item from the collection. |
 | [IWDTFTargets2::Remove](nf-wdtf-iwdtftargets2-remove.md) | Removes an item from the collection. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

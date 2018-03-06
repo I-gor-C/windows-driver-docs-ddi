@@ -93,11 +93,11 @@ The <b>USBD_CalculateUsbBandwidth</b> routine approximates the bandwidth using t
 
 ## See Also
 
-<a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
+
+
+<a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a>
 
 
 

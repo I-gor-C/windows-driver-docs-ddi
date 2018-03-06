@@ -62,9 +62,6 @@ Defines properties and operations for the collection of devices on a computer.
 | [IWDTFDeviceDepot2::Query](nf-wdtf-iwdtfdevicedepot2-query.md) | Returns a subset of the devices in the DeviceDepot. |
 | [IWDTFDeviceDepot2::QuerySingle](nf-wdtf-iwdtfdevicedepot2-querysingle.md) | Returns a single target device from the DeviceDepot. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

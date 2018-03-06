@@ -78,7 +78,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-The wiasDebugError function is not recommended for Windows XP and later. For Windows XP use the <a href="..\wiautil\nf-wiautil-wias_lerror.md">WIAS_LERROR</a> macro instead. For Windows Vista use the <a href="..\wiautil\nf-wiautil-wias_error.md">WIAS_ERROR</a> macro instead.
+The wiasDebugError function is not recommended for Windows XP and later. For Windows XP use the <a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a> macro instead. For Windows Vista use the <a href="..\wiamdef\nf-wiamdef-wias_error.md">WIAS_ERROR</a> macro instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,11 +91,11 @@ The wiasDebugError function is not recommended for Windows XP and later. For Win
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wias_lerror.md">WIAS_LERROR</a>
+<a href="..\wiamdef\nf-wiamdef-wias_error.md">WIAS_ERROR</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_error.md">WIAS_ERROR</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
 
 
 

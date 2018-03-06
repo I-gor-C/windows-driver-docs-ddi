@@ -96,7 +96,7 @@ A PnP driver might register a shutdown routine to perform certain tasks before s
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
 
 
 
@@ -104,7 +104,7 @@ A PnP driver might register a shutdown routine to perform certain tasks before s
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
+<a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
 
 
 

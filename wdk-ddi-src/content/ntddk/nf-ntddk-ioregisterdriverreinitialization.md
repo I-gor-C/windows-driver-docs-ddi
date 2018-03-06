@@ -61,7 +61,7 @@ VOID IoRegisterDriverReinitialization(
 
 `DriverObject`
 
-Pointer to the driver object that was input to the <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine.
+Pointer to the driver object that was input to the <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
 
 `DriverReinitializationRoutine`
 

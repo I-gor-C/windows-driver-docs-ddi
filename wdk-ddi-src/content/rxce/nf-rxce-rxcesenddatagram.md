@@ -144,15 +144,15 @@ Note that the synchronous <i>Option</i> is disregarded for sending datagrams bec
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
-
-
-
 <a href="..\rxce\nf-rxce-rxcesend.md">RxCeSend</a>
 
 
 
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
 
 
 

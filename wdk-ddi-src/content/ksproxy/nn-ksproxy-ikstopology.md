@@ -56,7 +56,6 @@ The <b>IKsTopology</b> interface provides a method that opens topology node obje
 | [IKsTopology::CreateNodeInstance](nf-ksproxy-ikstopology-createnodeinstance.md) | The CreateNodeInstance method requests a KS filter object to open a topology node object. |
 
 ## Remarks
-
 The IID for this interface is IID_IKsTopology.
 
 The <b>IKsTopology</b> interface is supported by filters.

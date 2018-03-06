@@ -7,7 +7,7 @@ old-location: print\iprintoemprintticketprovider_interface.htm
 old-project: print
 ms.assetid: a32b5ec9-b4f2-4f33-879d-252806bd34ed
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintOemPrintTicketProvider, IPrintOemPrintTicketProvider interface [Print Devices], IPrintOemPrintTicketProvider interface [Print Devices], described, prcomoem/IPrintOemPrintTicketProvider, print.iprintoemprintticketprovider_interface, print_ticket-package_73ff5919-5d89-4fe1-b10f-03f2b14b716f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,9 +63,6 @@ This section describes the methods that are defined for the <b>IPrintOemPrintTic
 | [IPrintOemPrintTicketProvider::PublishPrintTicketHelperInterface](nf-prcomoem-iprintoemprintticketprovider-publishprinttickethelperinterface.md) | The IPrintOemPrintTicketProvider::PublishPrintTicketHelperInterface method publishes the print ticket helper interface for either Unidrv or Pscript5 user interface (UI) plug-ins. |
 | [IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace](nf-prcomoem-iprintoemprintticketprovider-querydevicedefaultnamespace.md) | The IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace method queries the device for its default namespace uniform resource identifier (URI). |
 | [IPrintOemPrintTicketProvider::ValidatePrintTicket](nf-prcomoem-iprintoemprintticketprovider-validateprintticket.md) | The IPrintOemPrintTicketProvider::ValidatePrintTicket method validates a print ticket. |
-
-## Remarks
-
 
 
 ## Requirements

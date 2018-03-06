@@ -82,11 +82,11 @@ Unlike other sequenced singly linked list routines, the <b>FirstEntrySList</b> r
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a>
+
+
+
+<a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a>
 
 
 

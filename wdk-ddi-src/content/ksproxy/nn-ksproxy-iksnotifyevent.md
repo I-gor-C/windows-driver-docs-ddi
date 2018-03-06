@@ -60,9 +60,6 @@ The IID for this interface is IID_IKsNotifyEvent
 | ---- |:---- |
 | [IKsNotifyEvent::KsNotifyEvent](nf-ksproxy-iksnotifyevent-ksnotifyevent.md) | The KsNotifyEvent method requests that the KS object that owns the given DirectShow event notify the calling application with the given parameters whenever action related to the event occurs. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

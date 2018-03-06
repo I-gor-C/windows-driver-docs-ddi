@@ -68,9 +68,6 @@ The <b>IWiaDrvItem</b> interface provides methods that a WIA minidriver can use 
 | [IWiaDrvItem::RemoveItemFromFolder](nf-wiamindr_lh-iwiadrvitem-removeitemfromfolder.md) | The IWiaDrvItem::RemoveItemFromFolder method removes an item from a parent folder. |
 | [IWiaDrvItem::UnlinkItemTree](nf-wiamindr_lh-iwiadrvitem-unlinkitemtree.md) | The IWiaDrvItem::UnlinkItemTree method unlinks the driver item tree and releases all items in the tree. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

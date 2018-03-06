@@ -60,7 +60,7 @@ VOID IoSetTopLevelIrp(
 
 `Irp`
 
-I/O request packet (IRP) pointer to be stored in the <b>TopLevelIrp</b> field of the current thread.
+
 
 
 ## Return Value

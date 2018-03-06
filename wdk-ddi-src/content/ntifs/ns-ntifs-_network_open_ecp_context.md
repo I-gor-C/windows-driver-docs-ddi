@@ -98,7 +98,7 @@ Drivers that run on Windows 7 and later versions of Windows and that must interp
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md">NETWORK_OPEN_ECP_CONTEXT_V0</a>
+<a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>
 
 
 
@@ -106,7 +106,7 @@ Drivers that run on Windows 7 and later versions of Windows and that must interp
 
 
 
-<a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>
+<a href="..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md">NETWORK_OPEN_ECP_CONTEXT_V0</a>
 
 
 

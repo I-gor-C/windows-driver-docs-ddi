@@ -113,11 +113,11 @@ The sensors class extension writes a set of properties for each sensor when Sens
 
 ## See Also
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=313456">WDF_OBJECT_ATTRIBUTES</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>
+
+
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=313456">WDF_OBJECT_ATTRIBUTES</a>
 
 
 

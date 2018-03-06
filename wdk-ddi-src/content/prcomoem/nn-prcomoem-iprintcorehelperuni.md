@@ -7,7 +7,7 @@ old-location: print\iprintcorehelperuni_interface.htm
 old-project: print
 ms.assetid: e581d190-8185-45c1-80c7-ff8eb305360e
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintCoreHelperUni, IPrintCoreHelperUni interface [Print Devices], IPrintCoreHelperUni interface [Print Devices], described, prcomoem/IPrintCoreHelperUni, print.iprintcorehelperuni_interface, print_unidrv-pscript_allplugins_ca505d1f-1b52-4a61-a2d8-d8fea10cda76.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,9 +65,6 @@ This section describes the methods that are defined for the <code>IPrintCoreHelp
 | [IPrintCoreHelperUni::SetFontSubstitution](nf-prcomoem-iprintcorehelperuni-setfontsubstitution.md) | The IPrintCoreHelperUni::SetFontSubstitution method specifies the device font to print in place of a given TrueType font. |
 | [IPrintCoreHelperUni::SetOptions](nf-prcomoem-iprintcorehelperuni-setoptions.md) | The IPrintCoreHelperUni::SetOptions method sets multiple feature-option pairs at the same time. |
 | [IPrintCoreHelperUni::WhyConstrained](nf-prcomoem-iprintcorehelperuni-whyconstrained.md) | The IPrintCoreHelperUni::WhyConstrained method provides a list of options that constrain the specified feature-option pair in the current configuration. |
-
-## Remarks
-
 
 
 ## Requirements

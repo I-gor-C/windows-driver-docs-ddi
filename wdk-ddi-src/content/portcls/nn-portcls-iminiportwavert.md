@@ -7,7 +7,7 @@ old-location: audio\iminiportwavert.htm
 old-project: audio
 ms.assetid: 5b98802e-c1a8-4613-85fe-f734ecc4670a
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IMiniportWaveRT, IMiniportWaveRT interface [Audio Devices], IMiniportWaveRT interface [Audio Devices], described, audio.iminiportwavert, audmp-routines_8d8d9bf9-09f1-4c1f-9113-c03e506e4edb.xml, portcls/IMiniportWaveRT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,9 +60,6 @@ An adapter driver forms a miniport-port driver pair by binding an <code>IMinipor
 | [IMiniportWaveRT::GetDeviceDescription](nf-portcls-iminiportwavert-getdevicedescription.md) | The GetDeviceDescription method returns a pointer to a DEVICE_DESCRIPTION structure describing the device. |
 | [IMiniportWaveRT::Init](nf-portcls-iminiportwavert-init.md) | The Init method initializes the WaveRT miniport driver object. |
 | [IMiniportWaveRT::NewStream](nf-portcls-iminiportwavert-newstream.md) | The NewStream method creates a new instance of a WaveRT stream object. |
-
-## Remarks
-
 
 
 ## Requirements

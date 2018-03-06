@@ -86,7 +86,7 @@ Callers of <b>PopEntryList</b> can be running at any IRQL. If <b>PopEntryList</b
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-pushentrylist.md">PushEntryList</a>
+<a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
 
 
 

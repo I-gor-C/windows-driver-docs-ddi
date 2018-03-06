@@ -83,11 +83,11 @@ The connection between the current target device object and the controller objec
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-ioallocatecontroller.md">IoAllocateController</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
 
 
 

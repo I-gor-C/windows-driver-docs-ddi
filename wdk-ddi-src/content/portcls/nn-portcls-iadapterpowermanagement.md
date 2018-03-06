@@ -7,7 +7,7 @@ old-location: audio\iadapterpowermanagement.htm
 old-project: audio
 ms.assetid: 20c898fd-a782-4d73-bf1b-a25db4440632
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IAdapterPowerManagement, IAdapterPowerManagement interface [Audio Devices], IAdapterPowerManagement interface [Audio Devices], described, audio.iadapterpowermanagement, audmp-routines_9daec120-c61d-426c-b30f-80484e1fb652.xml, portcls/IAdapterPowerManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,9 +60,6 @@ For more information, see <a href="https://msdn.microsoft.com/654b86a7-845c-415b
 | [IAdapterPowerManagement::PowerChangeState](nf-portcls-iadapterpowermanagement-powerchangestate.md) | The PowerChangeState method requests that the device change to a new power state. |
 | [IAdapterPowerManagement::QueryDeviceCapabilities](nf-portcls-iadapterpowermanagement-querydevicecapabilities.md) | The QueryDeviceCapabilities method is called by PortCls in response to a Plug and Play IRP_MN_QUERY_CAPABILITIES IRP. |
 | [IAdapterPowerManagement::QueryPowerChangeState](nf-portcls-iadapterpowermanagement-querypowerchangestate.md) | The QueryPowerChangeState method is called by PortCls in response to the receipt of an IRP_MN_QUERY_POWER power IRP. |
-
-## Remarks
-
 
 
 ## Requirements

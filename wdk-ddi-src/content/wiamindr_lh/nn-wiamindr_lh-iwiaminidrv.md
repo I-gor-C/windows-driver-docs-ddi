@@ -74,9 +74,6 @@ A WIA minidriver writer must implement each method in this interface, although t
 | [IWiaMiniDrv::drvValidateItemProperties](nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties.md) | The IWiaMiniDrv::drvValidateItemProperties method validates an item's properties against the set of valid values for each property and will update those properties if necessary. |
 | [IWiaMiniDrv::drvWriteItemProperties](nf-wiamindr_lh-iwiaminidrv-drvwriteitemproperties.md) | The IWiaMiniDrv::drvWriteItemProperties method writes driver item properties to a WIA hardware device. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

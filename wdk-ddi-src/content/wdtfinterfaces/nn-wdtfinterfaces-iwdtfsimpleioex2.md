@@ -59,7 +59,6 @@ Defines operations for a simple synchronous I/O functionality test.
 | [IWDTFSimpleIOEx2::PerformIO](nf-wdtfinterfaces-iwdtfsimpleioex2-performio.md) | Performs a small amount of simple I/O to the device. |
 
 ## Remarks
-
 The <b>IWDTFSimpleIOEx2</b> action interface acts on an instance of the 
 <a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a> interface that is retrieved by querying the 
 device depot. You can retrieve a target-specific implementation of an action interface by calling the 

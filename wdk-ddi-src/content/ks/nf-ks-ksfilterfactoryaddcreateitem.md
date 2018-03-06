@@ -102,7 +102,7 @@ For more information, see <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3
 
 
 
-<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+<a href="..\ks\nf-ks-ksaddobjectcreateitemtodeviceheader.md">KsAddObjectCreateItemToDeviceHeader</a>
 
 
 
@@ -114,11 +114,11 @@ For more information, see <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3
 
 
 
-<a href="..\ks\nf-ks-ksaddobjectcreateitemtodeviceheader.md">KsAddObjectCreateItemToDeviceHeader</a>
-
-
-
 <a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
+
+
+
+<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
 
 
 

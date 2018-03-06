@@ -79,7 +79,7 @@ A thread inside a guarded region or running at IRQL &gt;= APC_LEVEL has all APCs
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
+<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
 
 
 

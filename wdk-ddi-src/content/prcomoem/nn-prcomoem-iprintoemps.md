@@ -7,7 +7,7 @@ old-location: print\iprintoemps_interface.htm
 old-project: print
 ms.assetid: 14c545b7-8080-424f-9164-f97ef8a1acc2
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintOemPS, IPrintOemPS interface [Print Devices], IPrintOemPS interface [Print Devices], described, prcomoem/IPrintOemPS, print.iprintoemps_interface, print_unidrv-pscript_rendering_f48d01c9-e49f-40b6-90ab-6904f0081305.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,9 +63,6 @@ This section describes the methods defined for the <b>IPrintOemPS</b> COM interf
 | [IPrintOemPS::GetInfo](nf-prcomoem-iprintoemps-getinfo.md) | A rendering plug-in's IPrintOemPS::GetInfo method returns identification information. |
 | [IPrintOemPS::PublishDriverInterface](nf-prcomoem-iprintoemps-publishdriverinterface.md) | The IPrintOemPS::PublishDriverInterface method allows a rendering plug-in for Pscript5 to obtain the Pscript5 driver's IPrintCorePS2, IPrintOemDriverPS, or IPrintCoreHelperPS interface. |
 | [IPrintOemPS::ResetPDEV](nf-prcomoem-iprintoemps-resetpdev.md) | The IPrintOemPS::ResetPDEV method allows a rendering plug-in for Pscript5 to reset its PDEV structure. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -82,10 +82,6 @@ A BDA minidriver calls the <b>BdaCheckChanges</b> function to verify a group of 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563407">KSMETHOD_BDA_CHECK_CHANGES</a>
 
 
@@ -95,6 +91,10 @@ A BDA minidriver calls the <b>BdaCheckChanges</b> function to verify a group of 
 
 
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
 
 
 

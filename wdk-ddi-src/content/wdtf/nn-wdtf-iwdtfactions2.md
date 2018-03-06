@@ -66,9 +66,6 @@ method returns.
 | [IWDTFActions2::get_Item](nf-wdtf-iwdtfactions2-get_item.md) | Gets an individual device in the DeviceDepot. |
 | [IWDTFActions2::Remove](nf-wdtf-iwdtfactions2-remove.md) | Remove an action from the collection. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

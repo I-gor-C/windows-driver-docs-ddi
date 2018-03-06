@@ -80,7 +80,7 @@ For more information about guarded regions, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+<a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
 
 
 

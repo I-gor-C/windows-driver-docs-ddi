@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest.htm
 old-project: wdf
 ms.assetid: 3104284a-4277-4f05-ae3f-3b2bb3c3437d
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFIoRequest, IWDFIoRequest interface, IWDFIoRequest interface, described, UMDFRequestObjectRef_65cbf2de-e966-4eb3-8f3f-2012dba23d99.xml, umdf.iwdfiorequest, wdf.iwdfiorequest, wudfddi/IWDFIoRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,9 +79,6 @@ The <b>IWDFIoRequest</b> interface exposes an I/O request object.
 | [IWDFIoRequest::SetCompletionCallback](nf-wudfddi-iwdfiorequest-setcompletioncallback.md) | The SetCompletionCallback method registers the interface for the OnCompletion method that the framework should call when an I/O request completes. |
 | [IWDFIoRequest::SetInformation](nf-wudfddi-iwdfiorequest-setinformation.md) | The SetInformation method sets the size of information for a request. |
 | [IWDFIoRequest::UnmarkCancelable](nf-wudfddi-iwdfiorequest-unmarkcancelable.md) | The UnmarkCancelable method disables the canceling of an I/O request. |
-
-## Remarks
-
 
 
 ## Requirements

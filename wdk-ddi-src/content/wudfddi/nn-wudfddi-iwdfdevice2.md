@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice2.htm
 old-project: wdf
 ms.assetid: f4d3d2cf-8877-4071-8e75-f971803beca4
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFDevice2, IWDFDevice2 interface, IWDFDevice2 interface, described, UMDFDeviceObjectRef_0b02d642-234d-4f98-b6d1-5557aa74eb14.xml, umdf.iwdfdevice2, wdf.iwdfdevice2, wudfddi/IWDFDevice2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,9 +66,6 @@ Drivers obtain the <b>IWDFDevice2</b> interface by calling <b>IWDFDevice::QueryI
 | [IWDFDevice2::RegisterRemoteInterfaceNotification](nf-wudfddi-iwdfdevice2-registerremoteinterfacenotification.md) | The RegisterRemoteInterfaceNotification method registers a driver to receive a notification when a specified device interface becomes available. |
 | [IWDFDevice2::ResumeIdle](nf-wudfddi-iwdfdevice2-resumeidle.md) | The ResumeIdle method informs the framework that the device is not in use and can be placed in a device low-power state if it remains idle. |
 | [IWDFDevice2::StopIdle](nf-wudfddi-iwdfdevice2-stopidle.md) | The StopIdle method informs the framework that the device must be placed in its working (D0) power state. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -7,7 +7,7 @@ old-location: wdf\iwdffile.htm
 old-project: wdf
 ms.assetid: bf8e5ab1-9a17-4eb5-8c54-34670ea27068
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFFile, IWDFFile interface, IWDFFile interface, described, UMDFFileObjectRef_41506c7e-3abb-4f41-ab23-a69114c3fdbd.xml, umdf.iwdffile, wdf.iwdffile, wudfddi/IWDFFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,9 +58,6 @@ The <a href="..\wudfddi\nn-wudfddi-iwdffilehandletargetfactory.md">IWDFFile</a> 
 | ---- |:---- |
 | [IWDFFile::GetDevice](nf-wudfddi-iwdffile-getdevice.md) | The GetDevice method returns the interface to the device object that a file object is associated with. |
 | [IWDFFile::RetrieveFileName](nf-wudfddi-iwdffile-retrievefilename.md) | The RetrieveFileName method retrieves the full name of the file that is associated with the underlying kernel-mode device. |
-
-## Remarks
-
 
 
 ## Requirements

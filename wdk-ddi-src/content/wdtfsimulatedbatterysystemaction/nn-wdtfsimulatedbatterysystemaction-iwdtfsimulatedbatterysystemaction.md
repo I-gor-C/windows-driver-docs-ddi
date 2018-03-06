@@ -62,9 +62,6 @@ IWDTFSimulatedBatterySystemAction Interface
 | [IWDTFSimulatedBatterySystemAction::SetSimulatedBatteryToAC](nf-wdtfsimulatedbatterysystemaction-iwdtfsimulatedbatterysystemaction-setsimulatedbatterytoac.md) | Sets the simulated battery status to AC power. |
 | [IWDTFSimulatedBatterySystemAction::SetSimulatedBatteryToDC](nf-wdtfsimulatedbatterysystemaction-iwdtfsimulatedbatterysystemaction-setsimulatedbatterytodc.md) | Sets the simulated battery status to DC power. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

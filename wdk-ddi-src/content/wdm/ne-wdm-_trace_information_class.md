@@ -171,10 +171,6 @@ typedef enum _TRACE_INFORMATION_CLASS {
 
 ## See Also
 
-<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
-
-
-
 <a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a>
 
 
@@ -184,6 +180,10 @@ typedef enum _TRACE_INFORMATION_CLASS {
 
 
 <a href="..\wdm\nf-wdm-wmitracemessage.md">WmiTraceMessage</a>
+
+
+
+<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
 
 
 

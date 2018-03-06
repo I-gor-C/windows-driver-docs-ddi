@@ -91,7 +91,7 @@ The <i>DestinationString</i> and <i>SourceString</i> buffers must be resident if
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlcopyunicodestring.md">RtlCopyUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlcopyunicodestring.md">RtlCopyUnicodeString</a>
 
 
 

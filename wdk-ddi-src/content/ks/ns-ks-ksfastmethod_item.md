@@ -72,11 +72,11 @@ Contains the identifier of the method and the flags describing the type of metho
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567173">KStrFastHandler</a>
-
-
-
 <a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567173">KStrFastHandler</a>
 
 
 

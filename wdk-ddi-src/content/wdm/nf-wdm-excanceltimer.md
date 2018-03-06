@@ -94,15 +94,15 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-exsettimer.md">ExSetTimer</a>
+
+
+
 <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a>
 
 
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/exxxxtimer-routines-and-ex-timer-objects">EX_TIMER</a>
-
-
-
-<a href="..\wdm\nf-wdm-exsettimer.md">ExSetTimer</a>
 
 
 

@@ -93,7 +93,7 @@ For more information about removable-media devices, see <a href="https://msdn.mi
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
 
 
@@ -101,11 +101,11 @@ For more information about removable-media devices, see <a href="https://msdn.mi
 
 
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 
 
 

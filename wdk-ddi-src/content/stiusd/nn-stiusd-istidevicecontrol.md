@@ -62,9 +62,6 @@ This section describes the methods defined for the <a href="https://msdn.microso
 | [IStiDeviceControl::Release](nf-stiusd-istidevicecontrol-release.md) | The IStiDeviceControl::Release method closes the instance of the COM object that was created when a minidriver client called IStiUSD::Initialize. |
 | [IStiDeviceControl::WriteToErrorLog](nf-stiusd-istidevicecontrol-writetoerrorlog.md) | The IStiDeviceControl::WriteToErrorLog method allows a user-mode still image minidriver to write a message into the still image error log. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

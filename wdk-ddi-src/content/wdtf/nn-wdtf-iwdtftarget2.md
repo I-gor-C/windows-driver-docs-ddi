@@ -73,7 +73,6 @@ Defines operations and properties for a testable item.
 | [IWDTFTarget2::put_Context](nf-wdtf-iwdtftarget2-put_context.md) | Gets and sets a name-value pair that represents user data for the target. |
 
 ## Remarks
-
 The <b>IWDTFTarget2</b> interface abstracts the notion of a testable item, 
 which is the central focus of the WDTF object model.
 You can retrieve instances of the <b>IWDTFTarget2</b> interface only 

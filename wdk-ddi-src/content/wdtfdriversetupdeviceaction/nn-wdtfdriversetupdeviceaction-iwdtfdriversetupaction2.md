@@ -57,9 +57,6 @@ Defines operations that control the target device during driver setup.
 | [IWDTFDriverSetupAction2::UnInstallDriverPermanently](nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-uninstalldriverpermanently.md) | Uninstalls the current driver for the target device. |
 | [IWDTFDriverSetupAction2::UpdateDriver](nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver.md) | Updates the target device with a driver from the driver package. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

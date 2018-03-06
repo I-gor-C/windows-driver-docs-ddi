@@ -56,9 +56,6 @@ The <b>IWiaSegmentationFilter</b> interface provides the <a href="https://msdn.m
 | ---- |:---- |
 | [IWiaSegmentationFilter::DetectRegions](nf-wia_lh-iwiasegmentationfilter-detectregions.md) | The IWiaSegmentationFilter::DetectRegions method determines the subregions of an image laid out on the flatbed platen so that each subregion can be acquired into a separate image item. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

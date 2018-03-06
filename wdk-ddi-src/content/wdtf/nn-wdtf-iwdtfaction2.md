@@ -64,9 +64,6 @@ Defines operations and properties that can control an instance of the
 | [IWDTFAction2::GetStatusString](nf-wdtf-iwdtfaction2-getstatusstring.md) | Returns the status for the last operation as a string. |
 | [IWDTFAction2::IsStatusSuccess](nf-wdtf-iwdtfaction2-isstatussuccess.md) | Gets a value that indicates whether the last operation was successful. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

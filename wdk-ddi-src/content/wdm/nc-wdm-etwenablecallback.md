@@ -124,11 +124,7 @@ Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in t
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
-
-
-
-<a href="http://go.microsoft.com/fwlink/p/?linkid=103398">EnableTraceEx</a>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a>
 
 
 
@@ -136,7 +132,11 @@ Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in t
 
 
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a>
+<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
+
+
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=103398">EnableTraceEx</a>
 
 
 
@@ -144,7 +144,7 @@ Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in t
 
 
 
-<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
+<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
 
 
 

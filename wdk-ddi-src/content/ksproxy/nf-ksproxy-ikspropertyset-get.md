@@ -65,31 +65,31 @@ HRESULT Get(
 
 `PropSet`
 
-GUID that identifies the property set.
+
 
 `Id`
 
-Identifier of the property within the property set.
+
 
 `InstanceData`
 
-Pointer to instance data for the property.
+
 
 `InstanceLength`
 
-Size, in bytes, of the buffer at <i>InstanceData</i>.
+
 
 `PropertyData`
 
-Pointer to a buffer that receives the value of the property.
+
 
 `DataLength`
 
-Size, in bytes, of the buffer at <i>PropertyData</i>.
+
 
 `BytesReturned`
 
-Pointer to a variable that receives the size, in bytes, of the data that <b>Get</b> stores in the buffer at <i>PropertyData</i>.
+
 
 
 ## Return Value

@@ -86,11 +86,11 @@ For more information about semaphore objects, see <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kereleasesemaphore.md">KeReleaseSemaphore</a>
-
-
-
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+
+
+
+<a href="..\wdm\nf-wdm-kereleasesemaphore.md">KeReleaseSemaphore</a>
 
 
 

@@ -60,7 +60,6 @@ Defines operations that control <b>WDTF</b> objects within a test script.
 | [IWDTFCONFIG2::EnableObjectLogging](nf-wdtf-iwdtfconfig2-enableobjectlogging.md) | Enables object logging for all objects. |
 
 ## Remarks
-
 <b>WDTF</b> object logging defaults to disabled. If object logging is enabled, 
 each <b>WDTF</b> object writes to the test scripts log. If object logging is enabled, 
 object error logging is enabled by default.

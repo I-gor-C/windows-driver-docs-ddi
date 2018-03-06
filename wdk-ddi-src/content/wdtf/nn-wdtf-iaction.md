@@ -59,7 +59,6 @@ The <b>IAction</b> interfaces are plug-ins that can control an instance of the
 | [IAction::SetTarget](nf-wdtf-iaction-settarget.md) | The SetTarget method is used internally by WDTF. Do not call this method directly. |
 
 ## Remarks
-
 You can retrieve an <b>IAction</b> interface for a target by calling 
 <a href="https://msdn.microsoft.com/dddd631e-7ccf-4554-9236-b567c5108fe2">IWDTFTarget2::GetInterface</a>.
 
@@ -79,15 +78,15 @@ For a listing of all action interfaces included in WDTF, see <a href="https://ms
 
 ## See Also
 
+<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+
+
+
 <a href="https://msdn.microsoft.com/dddd631e-7ccf-4554-9236-b567c5108fe2">IWDTFTarget2::GetInterface</a>
 
 
 
 <a href="..\wdtf\nn-wdtf-itracing.md">ITracing</a>
-
-
-
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
 
 
 

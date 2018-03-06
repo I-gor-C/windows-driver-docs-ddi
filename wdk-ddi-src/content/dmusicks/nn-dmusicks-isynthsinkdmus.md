@@ -7,7 +7,7 @@ old-location: audio\isynthsinkdmus.htm
 old-project: audio
 ms.assetid: 3bff4242-3e7b-424e-ac86-121267a2c32a
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: ISynthSinkDMus, ISynthSinkDMus interface [Audio Devices], ISynthSinkDMus interface [Audio Devices], described, audio.isynthsinkdmus, audmp-routines_744ae6c7-7f7e-4a66-9624-5a5d82e2eb86.xml, dmusicks/ISynthSinkDMus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,9 +59,6 @@ The <code>ISynthSinkDMus</code> interface provides methods to render, convert sa
 | [ISynthSinkDMus::Render](nf-dmusicks-isynthsinkdmus-render.md) | The Render method renders wave data into a destination sink. |
 | [ISynthSinkDMus::SampleToRefTime](nf-dmusicks-isynthsinkdmus-sampletoreftime.md) | The SampleToRefTime method converts a sample time to a reference time. |
 | [ISynthSinkDMus::SyncToMaster](nf-dmusicks-isynthsinkdmus-synctomaster.md) | The SyncToMaster method allows synchronization to the master clock in order to avoid drift. |
-
-## Remarks
-
 
 
 ## Requirements

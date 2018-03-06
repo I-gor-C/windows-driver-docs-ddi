@@ -82,7 +82,7 @@ Specifies the value to be written to the address specified by <b>MessageAddress<
 
 `Mode`
 
-Specifies a <a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> value that determines whether the interrupt is level-sensitive or latched.
+Specifies a <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> value that determines whether the interrupt is level-sensitive or latched.
 
 `Polarity`
 

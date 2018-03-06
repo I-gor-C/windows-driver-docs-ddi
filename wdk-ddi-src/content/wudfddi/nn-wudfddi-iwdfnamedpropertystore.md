@@ -7,7 +7,7 @@ old-location: wdf\iwdfnamedpropertystore.htm
 old-project: wdf
 ms.assetid: f31a88c1-468f-4756-a5fa-b4aa0b8fe51d
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFNamedPropertyStore, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, described, UMDFPropertyStoreObjectRef_139eb19f-8bb7-42ba-ab86-44f5f35e0faf.xml, umdf.iwdfnamedpropertystore, wdf.iwdfnamedpropertystore, wudfddi/IWDFNamedPropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,9 +60,6 @@ The <b>IWDFNamedPropertyStore</b> interface exposes a property-store object.
 | [IWDFNamedPropertyStore::GetNameCount](nf-wudfddi-iwdfnamedpropertystore-getnamecount.md) | The GetNameCount method retrieves the number of properties in a property store. |
 | [IWDFNamedPropertyStore::GetNamedValue](nf-wudfddi-iwdfnamedpropertystore-getnamedvalue.md) | The GetNamedValue method retrieves the value of a property. |
 | [IWDFNamedPropertyStore::SetNamedValue](nf-wudfddi-iwdfnamedpropertystore-setnamedvalue.md) | The SetNamedValue method sets the value of a property. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -90,6 +90,10 @@ typedef enum _CLFS_CONTEXT_MODE {
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
+
+
+
 <a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 
 
@@ -99,10 +103,6 @@ typedef enum _CLFS_CONTEXT_MODE {
 
 
 <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
-
-
-
-<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
 
 
 

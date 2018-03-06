@@ -132,11 +132,11 @@ The  copy provider retains the data read for the duration in the <b>TokenTimeToL
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_fsctl_offload_read_input.md">FSCTL_OFFLOAD_READ_INPUT</a>
-
-
-
 <a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_fsctl_offload_read_input.md">FSCTL_OFFLOAD_READ_INPUT</a>
 
 
 

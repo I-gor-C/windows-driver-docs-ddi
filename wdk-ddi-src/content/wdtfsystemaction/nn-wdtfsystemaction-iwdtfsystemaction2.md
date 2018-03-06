@@ -71,9 +71,6 @@ Defines operations and properties that support driver testing.
 | [IWDTFSystemAction2::RebootRestartWithContext](nf-wdtfsystemaction-iwdtfsystemaction2-rebootrestartwithcontext.md) | Reboots the system and restarts the test script with context data. |
 | [IWDTFSystemAction2::Sleep](nf-wdtfsystemaction-iwdtfsystemaction2-sleep.md) | Puts the system into the desired sleep state. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -99,15 +99,15 @@ Profile drivers obtain a pointer to the
 
 ## See Also
 
-pool tag
-
-
-
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
 
 
 <a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
+
+
+
+pool tag
 
 
 

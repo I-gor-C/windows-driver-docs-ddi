@@ -60,9 +60,6 @@ Defines operations and properties for a collection of strings.
 | [IWDTFStrings2::get_Item](nf-wdtf-iwdtfstrings2-get_item.md) | Gets an individual device in the DeviceDepot. |
 | [IWDTFStrings2::Remove](nf-wdtf-iwdtfstrings2-remove.md) | Removes a string from the collection. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

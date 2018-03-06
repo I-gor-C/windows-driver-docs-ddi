@@ -80,11 +80,11 @@ The <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwa
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
+
+
+
+<a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
 
 
 

@@ -76,11 +76,11 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksaggregatecontrol.md">IKsAggregateControl</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559713">IKsAggregateControl::KsAddAggregate</a>
+
+
+
+<a href="..\ksproxy\nn-ksproxy-iksaggregatecontrol.md">IKsAggregateControl</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver.htm
 old-project: wdf
 ms.assetid: ada475ae-e697-475c-b461-8e3a36ae9ab1
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFDriver, IWDFDriver interface, IWDFDriver interface, described, UMDFDriverObjectRef_2bce205e-d670-4dae-870a-f5b01c3ea49e.xml, umdf.iwdfdriver, wdf.iwdfdriver, wudfddi/IWDFDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,9 +62,6 @@ The <b>IWDFDriver</b> interface exposes the framework driver object that represe
 | [IWDFDriver::CreateWdfObject](nf-wudfddi-iwdfdriver-createwdfobject.md) | The CreateWdfObject method creates a custom (or user) WDF object from a parent WDF object. |
 | [IWDFDriver::IsVersionAvailable](nf-wudfddi-iwdfdriver-isversionavailable.md) | The IsVersionAvailable method determines whether the specified version of the framework is available. |
 | [IWDFDriver::RetrieveVersionString](nf-wudfddi-iwdfdriver-retrieveversionstring.md) | The RetrieveVersionString method retrieves the version of the framework. |
-
-## Remarks
-
 
 
 ## Requirements

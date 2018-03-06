@@ -75,7 +75,7 @@ A pointer to the MDL that is to be mapped. This MDL must describe physical pages
 
 `CacheType`
 
-Specifies the <a href="..\wudfwdm\ne-wudfwdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value to use to create the mapping.
+Specifies the <a href="..\miniport\ne-miniport-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value to use to create the mapping.
 
 
 ## Return Value
@@ -119,7 +119,11 @@ The routine uses the <i>CacheType</i> parameter only if the pages that are descr
 
 ## See Also
 
-<a href="..\wudfwdm\ne-wudfwdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
+<a href="..\miniport\ne-miniport-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>
 
 
 
@@ -127,7 +131,7 @@ The routine uses the <i>CacheType</i> parameter only if the pages that are descr
 
 
 
-<a href="..\wdm\nf-wdm-mmunmapreservedmapping.md">MmUnmapReservedMapping</a>
+<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
 
 
 
@@ -139,15 +143,11 @@ The routine uses the <i>CacheType</i> parameter only if the pages that are descr
 
 
 
-<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
-
-
-
-<a href="..\wdm\nf-wdm-mmfreemappingaddress.md">MmFreeMappingAddress</a>
-
-
-
 <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
+
+
+
+<a href="..\wdm\nf-wdm-mmallocatemappingaddress.md">MmAllocateMappingAddress</a>
 
 
 

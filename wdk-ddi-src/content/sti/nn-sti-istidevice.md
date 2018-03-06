@@ -73,9 +73,6 @@ This section describes the methods defined for the <a href="https://msdn.microso
 | [IStiDevice::UnLockDevice](nf-sti-istidevice-unlockdevice.md) | The IStiDevice::UnLockDevice method unlocks a device that was locked by a previous call to IStiDevice::LockDevice. |
 | [IStiDevice::UnSubscribe](nf-sti-istidevice-unsubscribe.md) | The IStiDevice::UnSubscribe method removes the caller from the list of applications registered to receive notification of device events. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

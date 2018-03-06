@@ -66,13 +66,13 @@ typedef enum _POWER_STATE_TYPE {
             
                 <tr>
                     <td>SystemPowerState</td>
-                    <td>Indicates a <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> value.</td>
+                    <td>Indicates a <a href="..\ntpoapi\ne-ntpoapi-_system_power_state.md">SYSTEM_POWER_STATE</a> value.</td>
                 </tr>
 </table>
 
 ## Remarks
 
-The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\wdm\ns-wdm-_power_state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.
+The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\ntpoapi\ns-ntpoapi-_power_state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,7 +85,7 @@ The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value
 
 
 
-<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
+<a href="..\ntpoapi\ne-ntpoapi-_system_power_state.md">SYSTEM_POWER_STATE</a>
 
 
 
@@ -93,7 +93,7 @@ The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value
 
 
 
-<a href="..\wdm\ns-wdm-_power_state.md">POWER_STATE</a>
+<a href="..\ntpoapi\ns-ntpoapi-_power_state.md">POWER_STATE</a>
 
 
 

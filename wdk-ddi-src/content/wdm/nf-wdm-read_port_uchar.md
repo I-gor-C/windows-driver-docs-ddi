@@ -61,7 +61,7 @@ UCHAR READ_PORT_UCHAR(
 
 `Port`
 
-Specifies the port address, which must be a mapped memory range in I/O space.
+
 
 
 ## Return Value

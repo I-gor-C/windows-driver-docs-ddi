@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallback.htm
 old-project: wdf
 ms.assetid: b6ab28e1-08d5-49ee-931a-8e2fe68bd75e
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IPnpCallback, IPnpCallback interface, IPnpCallback interface, described, UMDFDeviceObjectRef_1e101e13-802b-4196-a76c-ed4103d6fbe3.xml, umdf.ipnpcallback, wdf.ipnpcallback, wudfddi/IPnpCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,6 @@ The <b>IPnpCallback</b> interface is a Plug and Play (PnP) and power management 
 | [IPnpCallback::OnSurpriseRemoval](nf-wudfddi-ipnpcallback-onsurpriseremoval.md) | The OnSurpriseRemoval method notifies a driver after a device is removed from a computer unexpectedly so that the driver can perform necessary operations. |
 
 ## Remarks
-
 A driver registers the <b>IPnpCallback</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object.
 
 ## Requirements

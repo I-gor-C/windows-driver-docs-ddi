@@ -71,9 +71,6 @@ driver packages.
 | [IWDTFDriverPackageAction2::GetQueryForDeviceUsingPackage](nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-getqueryfordeviceusingpackage.md) | Returns an SDEL statement that queries for all devices that use the driver package. |
 | [IWDTFDriverPackageAction2::SetPackageInfFileName](nf-wdtfdriverpackageaction-iwdtfdriverpackageaction2-setpackageinffilename.md) | Sets the pre-imported driver package path. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

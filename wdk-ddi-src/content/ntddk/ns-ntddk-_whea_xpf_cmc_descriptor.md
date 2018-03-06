@@ -96,7 +96,7 @@ A WHEA_XPF_CMC_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_mc_bank_descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
 
 
@@ -104,7 +104,7 @@ A WHEA_XPF_CMC_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_mc_bank_descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a>
 
 
 

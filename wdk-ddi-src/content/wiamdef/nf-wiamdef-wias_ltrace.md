@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 
 # WIAS_LTRACE function
-The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the <a href="..\wiautil\nf-wiautil-wias_trace.md">WIAS_TRACE</a> macro be used instead.
+The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a> macro be used instead.
 
 The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file.
 
@@ -99,7 +99,7 @@ The following is an example of how the macro can be used:
 </td>
 </tr>
 </table></span></div>
-The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not record its output to the <i>Wiatrace.log </i>diagnostic Log file. It is recommended that the <a href="..\wiautil\nf-wiautil-wias_trace.md">WIAS_TRACE</a> macro be used instead.
+The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not record its output to the <i>Wiatrace.log </i>diagnostic Log file. It is recommended that the <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a> macro be used instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,19 +111,19 @@ The WIAS_LTRACE macro is not recommended for Windows Vista, because it does not 
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wias_lwarning.md">WIAS_LWARNING</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lhresult.md">WIAS_LHRESULT</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_trace.md">WIAS_TRACE</a>
+<a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_lhresult.md">WIAS_LHRESULT</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_lerror.md">WIAS_LERROR</a>
+<a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
 
 
 

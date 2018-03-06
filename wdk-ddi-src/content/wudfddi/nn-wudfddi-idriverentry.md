@@ -7,7 +7,7 @@ old-location: wdf\idriverentry.htm
 old-project: wdf
 ms.assetid: eae6f032-2f31-43e1-9ac0-38ccc4840580
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IDriverEntry, IDriverEntry interface, IDriverEntry interface, described, UMDFDriverObjectRef_83709367-02f2-433f-a20b-b98eff736657.xml, umdf.idriverentry, wdf.idriverentry, wudfddi/IDriverEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,9 +59,6 @@ The <b>IDriverEntry</b> interface exposes the user-mode driver's main entry and 
 | [IDriverEntry::OnDeinitialize](nf-wudfddi-idriverentry-ondeinitialize.md) | The OnDeinitialize method performs any operations that are necessary before a system unloads a driver. |
 | [IDriverEntry::OnDeviceAdd](nf-wudfddi-idriverentry-ondeviceadd.md) | The OnDeviceAdd method adds a new device to a system. |
 | [IDriverEntry::OnInitialize](nf-wudfddi-idriverentry-oninitialize.md) | The OnInitialize method performs any operations that are necessary to initialize a driver. |
-
-## Remarks
-
 
 
 ## Requirements

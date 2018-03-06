@@ -136,11 +136,11 @@ If <i>hrStatus</i> is S_OK, the data transfer has resumed and no delay or error 
 
 ## See Also
 
-<a href="..\wia_lh\nn-wia_lh-iwiaerrorhandler.md">IWiaErrorHandler</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543904">IWiaErrorHandler::GetStatusDescription</a>
+
+
+
+<a href="..\wia_lh\nn-wia_lh-iwiaerrorhandler.md">IWiaErrorHandler</a>
 
 
 

@@ -55,9 +55,6 @@ Defines operations for a collection of simple asynchronous I/O functionality tes
 | Method | Description |
 | ---- |:---- |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

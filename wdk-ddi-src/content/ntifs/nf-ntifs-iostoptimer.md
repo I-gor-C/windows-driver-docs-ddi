@@ -84,11 +84,11 @@ Do not call <b>IoStopTimer</b> from within the <i>IoTimer</i> routine.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>
-
-
-
 <a href="..\wdm\nf-wdm-iostarttimer.md">IoStartTimer</a>
+
+
+
+<a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>
 
 
 

@@ -88,6 +88,10 @@ For more information about event objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
+
+
+
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
 
 
@@ -97,10 +101,6 @@ For more information about event objects, see <a href="https://msdn.microsoft.co
 
 
 <a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
-
-
-
-<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
 
 
 

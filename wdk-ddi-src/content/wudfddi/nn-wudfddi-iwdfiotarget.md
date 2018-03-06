@@ -7,7 +7,7 @@ old-location: wdf\iwdfiotarget.htm
 old-project: wdf
 ms.assetid: bebe79c8-28d1-4976-b314-b73e6e9b7b9c
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFIoTarget, IWDFIoTarget interface, IWDFIoTarget interface, described, UMDFIoTargetObjectRef_3def2530-811a-4ac8-b9bd-c39cc4cb8fb2.xml, umdf.iwdfiotarget, wdf.iwdfiotarget, wudfddi/IWDFIoTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,9 +61,6 @@ The <b>IWDFIoTarget</b> interface exposes the I/O target object that typically r
 | [IWDFIoTarget::FormatRequestForRead](nf-wudfddi-iwdfiotarget-formatrequestforread.md) | The FormatRequestForRead method formats an I/O request object for a read operation. |
 | [IWDFIoTarget::FormatRequestForWrite](nf-wudfddi-iwdfiotarget-formatrequestforwrite.md) | The FormatRequestForWrite method formats an I/O request object for a write operation. |
 | [IWDFIoTarget::GetTargetFile](nf-wudfddi-iwdfiotarget-gettargetfile.md) | The GetTargetFile method retrieves the framework file object that is associated with the I/O target object. |
-
-## Remarks
-
 
 
 ## Requirements

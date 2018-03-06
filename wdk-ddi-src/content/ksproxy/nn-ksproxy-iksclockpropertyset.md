@@ -66,7 +66,6 @@ The <b>IKsClockPropertySet</b> interface provides methods that let the proxy acc
 | [IKsClockPropertySet::KsSetTime](nf-ksproxy-iksclockpropertyset-kssettime.md) | The KsSetTime method sets the current time on the underlying clock. |
 
 ## Remarks
-
 The IID for this interface is IID_IKsClockPropertySet.
 
 ## Requirements

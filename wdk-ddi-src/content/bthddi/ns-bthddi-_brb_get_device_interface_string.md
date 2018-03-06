@@ -100,16 +100,16 @@ If the buffer pointed to by the
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536856">
+   BRB_GET_DEVICE_INTERFACE_STRING</a>
+
+
+
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 
 
 <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
-
-
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536856">
-   BRB_GET_DEVICE_INTERFACE_STRING</a>
 
 
 

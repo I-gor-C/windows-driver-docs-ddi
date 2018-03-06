@@ -7,7 +7,7 @@ old-location: print\xpsrasterizationfactory1.htm
 old-project: print
 ms.assetid: 65EFEC4F-60DC-41DF-81F2-5A5C4EEE4BF8
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IXpsRasterizationFactory1, IXpsRasterizationFactory1 interface [Print Devices], IXpsRasterizationFactory1 interface [Print Devices], described, print.xpsrasterizationfactory1, xpsrassvc/IXpsRasterizationFactory1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,9 +54,6 @@ In Windows 8, the improvement of XPSRas to handle high precision colors has led
 
 | Method | Description |
 | ---- |:---- |
-
-## Remarks
-
 
 
 ## Requirements

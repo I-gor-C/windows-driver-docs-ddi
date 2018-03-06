@@ -7,7 +7,7 @@ old-location: print\iprintoemui_interface.htm
 old-project: print
 ms.assetid: 0ef635dd-9598-4356-94fc-7e5237df9bd9
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintOemUI, IPrintOemUI interface [Print Devices], IPrintOemUI interface [Print Devices], described, prcomoem/IPrintOemUI, print.iprintoemui_interface, print_unidrv-pscript_ui_d2e42772-2604-4ef1-a667-70139ac8a62a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,9 +68,6 @@ This section describes the methods defined for the <b>IPrintOemUI</b> COM interf
 | [IPrintOemUI::QueryColorProfile](nf-prcomoem-iprintoemui-querycolorprofile.md) | The IPrintOemUI::QueryColorProfile method allows a user interface plug-in to specify an ICC profile to use for color management. |
 | [IPrintOemUI::UpdateExternalFonts](nf-prcomoem-iprintoemui-updateexternalfonts.md) | The IPrintOemUI::UpdateExternalFonts method allows a user interface plug-in to update a printer's Unidrv Font Format Files (.uff file). |
 | [IPrintOemUI::UpgradePrinter](nf-prcomoem-iprintoemui-upgradeprinter.md) | The IPrintOemUI::UpgradePrinter method allows a user interface plug-in to upgrade device option values that are stored in the registry. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -59,9 +59,6 @@ The IID for this interface is IID_IKsAllocatorEx.
 | [IKsAllocatorEx::KsSetAllocatorHandle](nf-ksproxy-iksallocatorex-kssetallocatorhandle.md) | Sets the handle for an allocator. |
 | [IKsAllocatorEx::KsSetProperties](nf-ksproxy-iksallocatorex-kssetproperties.md) | Sets the properties for an allocator. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -88,10 +88,6 @@ This function is an inline call to <b>KsGateInitialize</b>.
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
-
-
-
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 
 
@@ -105,6 +101,10 @@ This function is an inline call to <b>KsGateInitialize</b>.
 
 
 <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+
+
+
+<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
 
 
 

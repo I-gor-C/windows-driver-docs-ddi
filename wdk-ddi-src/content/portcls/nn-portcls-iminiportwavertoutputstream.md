@@ -7,7 +7,7 @@ old-location: audio\iminiportwavertoutputstream.htm
 old-project: audio
 ms.assetid: 40210313-1216-4E1A-B696-B23D2ACED605
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IMiniportWaveRTOutputStream, IMiniportWaveRTOutputStream interface [Audio Devices], IMiniportWaveRTOutputStream interface [Audio Devices], described, audio.iminiportwavertoutputstream, portcls/IMiniportWaveRTOutputStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,9 +58,6 @@ The <code>IMiniportWaveRTOutputStream</code> interface represents the output wav
 | [IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition](nf-portcls-iminiportwavertoutputstream-getoutputstreampresentationposition.md) | Returns stream presentation information. |
 | [IMiniportWaveRTOutputStream::GetPacketCount](nf-portcls-iminiportwavertoutputstream-getpacketcount.md) | GetPacketCount returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware. |
 | [IMiniportWaveRTOutputStream::SetWritePacket](nf-portcls-iminiportwavertoutputstream-setwritepacket.md) | SetWritePacket informs the driver that the OS has written valid data to the WaveRT buffer. |
-
-## Remarks
-
 
 
 ## Requirements

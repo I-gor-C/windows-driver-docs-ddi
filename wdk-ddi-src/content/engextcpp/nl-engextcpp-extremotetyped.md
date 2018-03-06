@@ -265,7 +265,7 @@ Indicates whether or not the destructor for this instance of <b>ExtRemoteTyped</
 | [ExtRemoteTyped::~ExtRemoteTyped](nf-engextcpp-extremotetyped-~extremotetyped.md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
 | [ExtRemoteTyped::ArrayElement](nf-engextcpp-extremotetyped-arrayelement.md) | The ArrayElement method returns the typed data in the specified array element of the typed data represented by the ExtRemoteTyped object. |
 | [ExtRemoteTyped::Clear](nf-engextcpp-extremotetyped-clear.md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
-| [ExtRemoteTyped::Copy](nf-engextcpp-extremotetyped-copy.md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
+| [ExtRemoteTyped::Copy](nf-engextcpp-extremotetyped-copy.md) | The Copy method sets the typed data represented by the ExtRemoteTyped object by copying the information from another object. |
 | [ExtRemoteTyped::Dereference](nf-engextcpp-extremotetyped-dereference.md) | The Dereference method returns the typed data that is pointed to by the typed data represented by this object. |
 | [ExtRemoteTyped::ErtIoctl](nf-engextcpp-extremotetyped-ertioctl.md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
 | [ExtRemoteTyped::Eval](nf-engextcpp-extremotetyped-eval.md) | The Eval method returns typed data that is the result of evaluating an expression. |
@@ -279,14 +279,14 @@ Indicates whether or not the destructor for this instance of <b>ExtRemoteTyped</
 | [ExtRemoteTyped::GetTypeSize](nf-engextcpp-extremotetyped-gettypesize.md) | The GetTypeSize method returns the size of the type represented by this object. |
 | [ExtRemoteTyped::HasField](nf-engextcpp-extremotetyped-hasfield.md) | The HasField method determines if the type of the data represented by this object contains the specified member. |
 | [ExtRemoteTyped::operator*](nf-engextcpp-extremotetyped-operator.md) | The operator* overloaded operator returns the typed data that is pointed to by the typed data represented by this object. |
-| [ExtRemoteTyped::operator[]](nf-engextcpp-extremotetyped-operator[].md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
+| [ExtRemoteTyped::operator[]](nf-engextcpp-extremotetyped-operator[].md) | The operator[] overloaded operator returns the typed data in the specified array element of the typed data represented by this object. |
 | [ExtRemoteTyped::operator=](nf-engextcpp-extremotetyped-operator=.md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
 | [ExtRemoteTyped::OutFullValue](nf-engextcpp-extremotetyped-outfullvalue.md) | The OutFullValue method prints the type and value of the typed data represented by this object. |
 | [ExtRemoteTyped::OutSimpleValue](nf-engextcpp-extremotetyped-outsimplevalue.md) | The OutSimpleValue method prints the value of the typed data represented by this object. |
 | [ExtRemoteTyped::OutTypeDefinition](nf-engextcpp-extremotetyped-outtypedefinition.md) | The OutTypeDefinition method prints the type of the typed data represented by this object. |
 | [ExtRemoteTyped::OutTypeName](nf-engextcpp-extremotetyped-outtypename.md) | The OutTypeName method prints the type name of the typed data represented by this object. |
 | [ExtRemoteTyped::Release](nf-engextcpp-extremotetyped-release.md) | The Release method releases any resources held by this object. |
-| [ExtRemoteTyped::Set](nf-engextcpp-extremotetyped-set.md) | The ExtRemoteTyped class provides the ability to manipulate typed data on the target. |
+| [ExtRemoteTyped::Set](nf-engextcpp-extremotetyped-set.md) | The Set method sets the typed data represented by the ExtRemoteTyped object. |
 | [ExtRemoteTyped::SetPrint](nf-engextcpp-extremotetyped-setprint.md) | The SetPrint method sets the typed data represented by the ExtRemoteTyped object by formatting an expression and then evaluating that expression. |
 
 

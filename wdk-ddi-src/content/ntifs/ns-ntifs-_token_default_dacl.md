@@ -70,7 +70,7 @@ The <b>SeQueryInformationToken</b> support routine retrieves the default DACL fo
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
 
 
@@ -78,11 +78,11 @@ The <b>SeQueryInformationToken</b> support routine retrieves the default DACL fo
 
 
 
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
-
-
-
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
 
 

@@ -60,9 +60,6 @@ Defines operations and properties for a collection of numbers.
 | [IWDTFNumbers2::get_Item](nf-wdtf-iwdtfnumbers2-get_item.md) | Gets an individual device in the DeviceDepot. |
 | [IWDTFNumbers2::Remove](nf-wdtf-iwdtfnumbers2-remove.md) | Removes a number from the collection. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

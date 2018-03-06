@@ -87,15 +87,15 @@ If <b>IoCreateController</b> returns <b>NULL</b>, the driver should fail device 
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iofreecontroller.md">IoFreeController</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-ioallocatecontroller.md">IoAllocateController</a>
 
 
 
 <a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-iofreecontroller.md">IoFreeController</a>
 
 
 

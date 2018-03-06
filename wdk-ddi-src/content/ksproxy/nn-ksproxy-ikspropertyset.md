@@ -63,7 +63,6 @@ The IID for this interface is IID_IKsPropertySet.
 | [IKsPropertySet::Set](nf-ksproxy-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |
 
 ## Remarks
-
 The <b>IKsPropertySet</b> interface methods translate user-mode property requests into kernel-mode property sets that are used by KS minidrivers. 
 
 KS objects include, for example, KS filters, KS pins, and KS clocks.

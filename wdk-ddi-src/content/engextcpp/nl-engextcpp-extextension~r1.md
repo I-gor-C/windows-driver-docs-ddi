@@ -476,15 +476,22 @@ public:
 
 | Method | Description |
 | ---- |:---- |
+| [ExtExtension::GetArgStr](nf-engextcpp-extextension-getargstr.md) | The GetArgStr method returns a named string argument from the command line used to invoke the current extension command. |
+| [ExtExtension::GetArgU64](nf-engextcpp-extextension-getargu64.md) | The GetArgU64 method returns the value of a named expression argument from the command line used to invoke the current extension command. |
 | [ExtExtension::GetNumUnnamedArgs](nf-engextcpp-extextension-getnumunnamedargs.md) | The GetNumUnnamedArgs method returns the number of unnamed arguments in the command line used to invoke the current extension command. |
 | [ExtExtension::GetRawArgStr](nf-engextcpp-extextension-getrawargstr.md) | The GetRawArgStr method returns a string that represents the arguments passed to the extension command. |
 | [ExtExtension::GetUnnamedArgStr](nf-engextcpp-extextension-getunnamedargstr.md) | The GetUnnamedArgStr method returns an unnamed string argument from the command line used to invoke the current extension command. |
 | [ExtExtension::GetUnnamedArgU64](nf-engextcpp-extextension-getunnamedargu64.md) | The GetUnnamedArgU64 method returns the value of an unnamed expression argument from the command line used to invoke the current extension command. |
+| [ExtExtension::HasArg](nf-engextcpp-extextension-hasarg.md) | The HasArg method indicates whether a specified named argument is present in the command line used to invoke the current extension command. |
+| [ExtExtension::HasCharArg](nf-engextcpp-extextension-haschararg.md) | The HasCharArg method indicates whether a specified single-character named argument is present in the command line used to invoke the current extension command. |
 | [ExtExtension::HasUnnamedArg](nf-engextcpp-extextension-hasunnamedarg.md) | The HasUnnamedArg method indicates whether a specified unnamed argument is present in the command line used to invoke the current extension command. |
+| [ExtExtension::Initialize](nf-engextcpp-extextension-initialize.md) | The Initialize method is called by the engine to initialize an EngExtCpp extension library after loading it. |
 | [ExtExtension::OnSessionAccessible](nf-engextcpp-extextension-onsessionaccessible.md) | The OnSessionAccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes accessible. |
 | [ExtExtension::OnSessionActive](nf-engextcpp-extextension-onsessionactive.md) | The OnSessionActive method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes active. |
 | [ExtExtension::OnSessionInaccessible](nf-engextcpp-extextension-onsessioninaccessible.md) | The OnSessionInaccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inaccessible. |
 | [ExtExtension::OnSessionInactive](nf-engextcpp-extextension-onsessioninactive.md) | The OnSessionInactive method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inactive. |
+| [ExtExtension::SetArg](nf-engextcpp-extextension-setarg.md) | The SetArg method sets a named argument for the current extension command. |
+| [ExtExtension::SetArgStr](nf-engextcpp-extextension-setargstr.md) | The SetArgStr method sets a named string argument for the current expression command. |
 | [ExtExtension::SetUnnamedArg](nf-engextcpp-extextension-setunnamedarg.md) | The SetUnnamedArg method sets an unnamed argument for the current extension command. |
 | [ExtExtension::SetUnnamedArgStr](nf-engextcpp-extextension-setunnamedargstr.md) | The SetUnnamedArgStr method sets an unnamed string argument for the current extension command. |
 | [ExtExtension::SetUnnamedArgU64](nf-engextcpp-extextension-setunnamedargu64.md) | The SetUnnamedArgU64 method sets the value of an unnamed expression argument for the current extension command. |

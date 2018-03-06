@@ -81,11 +81,11 @@ The <i>swenum</i> driver uses device interface instances as placeholders for sof
 
 ## See Also
 
-<a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
-
-
-
 <a href="..\swenum\nf-swenum-ksinstallbusenuminterface.md">KsInstallBusEnumInterface</a>
+
+
+
+<a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
 
 
 

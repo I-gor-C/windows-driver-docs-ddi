@@ -73,11 +73,11 @@ This member specifies a pointer to a structure of type <a href="..\ksmedia\ns-ks
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-vram_surface_info.md">VRAM_SURFACE_INFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+
+
+
+<a href="..\ksmedia\ns-ksmedia-vram_surface_info.md">VRAM_SURFACE_INFO</a>
 
 
 

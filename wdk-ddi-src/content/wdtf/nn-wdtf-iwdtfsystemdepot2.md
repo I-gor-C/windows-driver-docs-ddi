@@ -58,9 +58,6 @@ local computer.
 | [IWDTFSystemDepot2::get_ThisSystem](nf-wdtf-iwdtfsystemdepot2-get_thissystem.md) | Gets an IWDTFTarget2 value that represents the local computer. |
 | [IWDTFSystemDepot2::get_WDTF](nf-wdtf-iwdtfsystemdepot2-get_wdtf.md) | Gets the main WDTF aggregation object. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

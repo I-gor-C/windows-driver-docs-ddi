@@ -107,11 +107,11 @@ For more information about using driver-managed internal queues, see <a href="ht
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-keinsertheadqueue.md">KeInsertHeadQueue</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-keinsertqueue.md">KeInsertQueue</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-keinsertheadqueue.md">KeInsertHeadQueue</a>
 
 
 

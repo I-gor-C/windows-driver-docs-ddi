@@ -7,7 +7,7 @@ old-location: audio\iregistrykey.htm
 old-project: audio
 ms.assetid: 41601234-7b8e-4d53-9455-626a5a3c4ff3
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IRegistryKey, IRegistryKey interface [Audio Devices], IRegistryKey interface [Audio Devices], described, audio.iregistrykey, audmp-routines_40bea095-17f2-4b5f-96e8-ab2fed6d82d4.xml, portcls/IRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,9 +63,6 @@ For more information, see <a href="https://msdn.microsoft.com/c666f0cc-5a8a-4df8
 | [IRegistryKey::QueryRegistryValues](nf-portcls-iregistrykey-queryregistryvalues.md) | The QueryRegistryValues method allows the caller to query several values from the registry with a single call. |
 | [IRegistryKey::QueryValueKey](nf-portcls-iregistrykey-queryvaluekey.md) | The QueryValueKey method retrieves information about a registry key's value entries, including their names, types, data sizes, and values. |
 | [IRegistryKey::SetValueKey](nf-portcls-iregistrykey-setvaluekey.md) | The SetValueKey method replaces or creates a value entry under the open key. |
-
-## Remarks
-
 
 
 ## Requirements

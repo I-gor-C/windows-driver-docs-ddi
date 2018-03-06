@@ -7,7 +7,7 @@ old-location: audio\iallocatormxf.htm
 old-project: audio
 ms.assetid: 4ed81d77-e140-4633-8582-d21170ecc645
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IAllocatorMXF, IAllocatorMXF interface [Audio Devices], IAllocatorMXF interface [Audio Devices], described, audio.iallocatormxf, audmp-routines_3ab3f61f-aa26-4a37-b1ff-68c1b0ae97c4.xml, dmusicks/IAllocatorMXF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,9 +61,6 @@ The allocator also abstracts the allocation of the additional memory that is nee
 | [IAllocatorMXF::GetBufferSize](nf-dmusicks-iallocatormxf-getbuffersize.md) | The GetBufferSize method gets the buffer size from the allocator. |
 | [IAllocatorMXF::GetMessage](nf-dmusicks-iallocatormxf-getmessage.md) | The GetMessage method serves as the retrieval point for any DirectMusic kernel-mode component that utilizes the port driver's allocator to reuse DMUS_KERNEL_EVENT structures. |
 | [IAllocatorMXF::PutBuffer](nf-dmusicks-iallocatormxf-putbuffer.md) | This method is not currently used by the miniport driver. The PutBuffer method passes a buffer to the allocator, but this occurs automatically when IMXF::PutMessage is called anyway. |
-
-## Remarks
-
 
 
 ## Requirements

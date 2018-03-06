@@ -106,7 +106,7 @@ To post the initialized work item to a system work queue, call <a href="..\wdm\n
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
+<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
 
 
 
@@ -118,7 +118,7 @@ To post the initialized work item to a system work queue, call <a href="..\wdm\n
 
 
 
-<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
+<a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
 
 
 

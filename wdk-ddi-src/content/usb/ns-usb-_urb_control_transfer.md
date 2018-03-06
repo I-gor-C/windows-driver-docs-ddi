@@ -179,7 +179,7 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+<a href="..\usb\ns-usb-_urb_control_transfer_ex.md">URB_CONTROL_TRANSFER_EX</a>
 
 
 
@@ -187,7 +187,7 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 
 
-<a href="..\usb\ns-usb-_urb_control_transfer_ex.md">URB_CONTROL_TRANSFER_EX</a>
+<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
 
 
 

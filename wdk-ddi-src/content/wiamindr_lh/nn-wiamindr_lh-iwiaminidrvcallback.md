@@ -58,9 +58,6 @@ This method can also convey status information, such as the percentage of data t
 | ---- |:---- |
 | [IWiaMiniDrvCallBack::MiniDrvCallback](nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback.md) | The MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

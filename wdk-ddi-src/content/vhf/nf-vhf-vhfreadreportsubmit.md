@@ -66,7 +66,7 @@ A handle to a virtual HID device that your HID source driver received in the pre
 
 `HidTransferPacket`
 
-A pointer to a <a href="..\vhf\ns-vhf-_hid_xfer_packet.md">HID_XFER_PACKET</a> structure that describes the HID report.
+A pointer to a <a href="..\hidclass\ns-hidclass-_hid_xfer_packet.md">HID_XFER_PACKET</a> structure that describes the HID report.
 
 
 ## Return Value

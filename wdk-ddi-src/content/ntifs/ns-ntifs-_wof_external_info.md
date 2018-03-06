@@ -74,11 +74,11 @@ The overlay service version. Set to WOF_CURRENT_VERSION.
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_wof_external_file_id.md">WOF_EXTERNAL_FILE_ID</a>
-
-
-
 <a href="..\ntifs\ns-ntifs-_wof_version_info.md">WOF_VERSION_INFO</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_wof_external_file_id.md">WOF_EXTERNAL_FILE_ID</a>
 
 
 

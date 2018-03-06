@@ -7,7 +7,7 @@ old-location: print\iprintcoreui2_interface.htm
 old-project: print
 ms.assetid: e2d2e486-d69d-4a6d-aaab-a7b8806665b4
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintCoreUI2, IPrintCoreUI2 interface [Print Devices], IPrintCoreUI2 interface [Print Devices], described, prcomoem/IPrintCoreUI2, print.iprintcoreui2_interface, print_unidrv-pscript_ui_e96a2262-fab6-4128-b312-90fde72006e0.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,9 +69,6 @@ This interface inherits from the <a href="https://msdn.microsoft.com/ed11789f-75
 | [IPrintCoreUI2::QuerySimulationSupport](nf-prcomoem-iprintcoreui2-querysimulationsupport.md) | The IPrintCoreUI2::QuerySimulationSupport method retrieves a spooler simulation capability structure, which indicates the kinds of simulation the spooler supports. |
 | [IPrintCoreUI2::SetOptions](nf-prcomoem-iprintcoreui2-setoptions.md) | The IPrintCoreUI2::SetOptions method sets the driver's feature settings. |
 | [IPrintCoreUI2::WhyConstrained](nf-prcomoem-iprintcoreui2-whyconstrained.md) | The IPrintCoreUI2::WhyConstrained method determines why the specified feature/option selection is constrained. |
-
-## Remarks
-
 
 
 ## Requirements

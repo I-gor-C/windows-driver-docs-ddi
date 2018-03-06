@@ -80,15 +80,15 @@ Callers of <b>KeRaiseIrqlToDpcLevel</b> must be running at IRQL &lt;= DISPATCH_L
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
+
+
+
 <a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
 
 
 
 <a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
-
-
-
-<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
 
 
 

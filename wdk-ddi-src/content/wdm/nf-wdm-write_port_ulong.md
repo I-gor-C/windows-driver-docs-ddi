@@ -62,11 +62,11 @@ The <b>WRITE_PORT_ULONG</b> routine writes a ULONG value to the specified port a
 
 `Port`
 
-Pointer to the port, which must be a mapped memory range in I/O space.
+
 
 `Value`
 
-Specifies a ULONG value to be written to the port.
+
 
 
 ## Return Value

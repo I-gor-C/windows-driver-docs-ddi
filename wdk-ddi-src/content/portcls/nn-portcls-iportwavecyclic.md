@@ -7,7 +7,7 @@ old-location: audio\iportwavecyclic.htm
 old-project: audio
 ms.assetid: de241c4c-2012-4d57-b069-d169b1e0aec3
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPortWaveCyclic, IPortWaveCyclic interface [Audio Devices], IPortWaveCyclic interface [Audio Devices], described, audio.iportwavecyclic, audmp-routines_079bd398-d9f2-4a35-9ee0-6ced8fecdeb4.xml, portcls/IPortWaveCyclic
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,9 +58,6 @@ An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportWa
 | [IPortWaveCyclic::NewMasterDmaChannel](nf-portcls-iportwavecyclic-newmasterdmachannel.md) | The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel. |
 | [IPortWaveCyclic::NewSlaveDmaChannel](nf-portcls-iportwavecyclic-newslavedmachannel.md) | The NewSlaveDmaChannel method creates a new instance of a subordinate DMA channel. |
 | [IPortWaveCyclic::Notify](nf-portcls-iportwavecyclic-notify.md) | The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred. It should be called from the miniport driver's interrupt service routine (ISR). |
-
-## Remarks
-
 
 
 ## Requirements

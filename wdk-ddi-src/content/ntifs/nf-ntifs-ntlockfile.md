@@ -85,7 +85,7 @@ A pointer to a caller-specified context for the APC routine. This value is passe
 
 `IoStatusBlock`
 
-A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains the final status.
+A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains the final status.
 
 `ByteOffset`
 

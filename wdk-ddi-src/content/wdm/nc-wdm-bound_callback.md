@@ -82,11 +82,11 @@ Use <a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a>
-
-
-
 <a href="..\wdm\nf-wdm-kederegisterboundcallback.md">KeDeregisterBoundCallback</a>
+
+
+
+<a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a>
 
 
 

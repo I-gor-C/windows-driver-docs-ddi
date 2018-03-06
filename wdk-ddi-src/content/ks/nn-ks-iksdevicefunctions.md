@@ -55,9 +55,6 @@ The IKsDeviceFunctions interface is a COM-style interface implemented on AVStrea
 | ---- |:---- |
 | [IKsDeviceFunctions::RegisterAdapterObjectEx](nf-ks-iksdevicefunctions-registeradapterobjectex.md) | The IKsDeviceFunctions::RegisterAdapterObjectEx method registers a DMA adapter object with AVStream. All drivers compiled for Win64 platforms should use this method instead of KsDeviceRegisterAdapterObject. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -78,11 +78,11 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-__public_object_type_information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-zwqueryobject.md">ZwQueryObject</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-__public_object_type_information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a>
 
 
 

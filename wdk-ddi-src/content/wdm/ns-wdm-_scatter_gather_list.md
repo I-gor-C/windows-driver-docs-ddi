@@ -90,15 +90,15 @@ For more information about scatter/gather lists, see <a href="https://msdn.micro
 
 ## See Also
 
+<a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a>
+
+
+
 <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list.md">BuildScatterGatherList</a>
 
 
 
 <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
-
-
-
-<a href="..\wdm\nc-wdm-pget_scatter_gather_list.md">GetScatterGatherList</a>
 
 
 

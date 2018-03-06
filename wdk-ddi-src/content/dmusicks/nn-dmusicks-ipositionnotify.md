@@ -7,7 +7,7 @@ old-location: audio\ipositionnotify.htm
 old-project: audio
 ms.assetid: DB18BD9D-4BAA-48D8-BA30-E4F7EF4CDEE5
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPositionNotify, IPositionNotify interface [Audio Devices], IPositionNotify interface [Audio Devices], described, audio.ipositionnotify, dmusicks/IPositionNotify
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,9 +54,6 @@ req.typenames: DMUS_STREAM_TYPE
 | Method | Description |
 | ---- |:---- |
 | [IPositionNotify::PositionNotify](nf-dmusicks-ipositionnotify-positionnotify.md) | Byte position notify for MXF graph. |
-
-## Remarks
-
 
 
 ## Requirements

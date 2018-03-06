@@ -88,11 +88,11 @@ Two structures are passed to the function. A <a href="..\wiamicro\ns-wiamicro-va
 
 ## See Also
 
+<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
-
-
-
-<a href="..\wiamicro\ns-wiamicro-val.md">VAL</a>
 
 
 
@@ -100,7 +100,7 @@ Two structures are passed to the function. A <a href="..\wiamicro\ns-wiamicro-va
 
 
 
-<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
+<a href="..\wiamicro\ns-wiamicro-val.md">VAL</a>
 
 
 

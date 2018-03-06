@@ -78,11 +78,7 @@ Number of PIDs in the <b>aulPIDs</b> array.
 
 ## See Also
 
-<a href="..\bdatypes\ns-bdatypes-_bda_pid_unmap.md">BDA_PID_UNMAP</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566551">KSPROPSETID_BdaPIDFilter</a>
+<a href="..\bdatypes\ns-bdatypes-pid_map.md">PID_MAP</a>
 
 
 
@@ -90,7 +86,11 @@ Number of PIDs in the <b>aulPIDs</b> array.
 
 
 
-<a href="..\bdatypes\ns-bdatypes-pid_map.md">PID_MAP</a>
+<a href="..\bdatypes\ns-bdatypes-_bda_pid_unmap.md">BDA_PID_UNMAP</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566551">KSPROPSETID_BdaPIDFilter</a>
 
 
 

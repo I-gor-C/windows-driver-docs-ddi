@@ -7,7 +7,7 @@ old-location: display\d3dddi_hdr_metadata_hdr10.htm
 old-project: display
 ms.assetid: F7316327-C860-4138-A19B-3326CE9210C0
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 2/26/2018
 ms.keywords: D3DDDI_HDR_METADATA_HDR10, D3DDDI_HDR_METADATA_HDR10 structure [Display Devices], _D3DDDI_HDR_METADATA_HDR10, d3dukmdt/D3DDDI_HDR_METADATA_HDR10, display.d3dddi_hdr_metadata_hdr10
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,36 +64,38 @@ typedef struct _D3DDDI_HDR_METADATA_HDR10 {
 
 `BluePrimary`
 
-The chromaticity coordinates of the 1.0 blue value. Index 0 contains the X coordinate and index 1 contains the Y coordinate.
+The chromaticity coordinates of the blue color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
 `GreenPrimary`
 
-The chromaticity coordinates of the 1.0 green value. Index 0 contains the X coordinate and index 1 contains the Y coordinate.
+The chromaticity coordinates of the green color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
 `MaxContentLightLevel`
 
-The maximum nit value used anywhere in the content.
+The maximum content light level (MaxCLL). This is the nit value corresponding to the brightest pixel used anywhere in the content.
 
 `MaxFrameAverageLightLevel`
 
-The per-frame average of the maximum nit values.
+The maximum frame average light level (MaxFALL). This is the nit value corresponding to the average luminance of the frame which has the brightest average luminance anywhere in the content.
 
 `MaxMasteringLuminance`
 
-The maximum number of nits of the display used to master the content.
+The maximum number of nits of the display used to master the content. Values are normalized to 10,000.
 
 `MinMasteringLuminance`
 
-The minimum number of nits of the display used to master the content.
+The minimum number of nits of the display used to master the content. Values are normalized to 10,000.
 
 `RedPrimary`
 
-The chromaticity coordinates of the 1.0 red value. Index 0 contains the X coordinate and index 1 contains the Y coordinate.
+The chromaticity coordinates of the red color primary in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
 `WhitePoint`
 
+The chromaticity coordinates of the white point in the CIE xy color space. Index 0 contains the x coordinate and index 1 contains the y coordinate. Values are normalized to 50,000.
 
-
+## Remarks
+D3DDDI_HDR_METADATA_HDR10 has equivalent definitions to <a href="https://msdn.microsoft.com/library/windows/desktop/mt732700.aspx">DXGI_HDR_METADATA_HDR10</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

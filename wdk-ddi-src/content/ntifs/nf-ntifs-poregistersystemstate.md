@@ -121,11 +121,11 @@ To set the system power state, call <a href="..\wdm\nf-wdm-posetsystemstate.md">
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
-
-
-
 <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
+
+
+
+<a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
 
 
 

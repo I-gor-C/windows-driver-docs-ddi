@@ -100,7 +100,7 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">Contr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">ControllerControl</a>
+<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
 
 
 
@@ -112,7 +112,7 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">Contr
 
 
 
-<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">ControllerControl</a>
 
 
 

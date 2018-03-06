@@ -67,9 +67,6 @@ The IID for this interface is IID_IKsPinPipe.
 | [IKsPinPipe::KsSetPipe](nf-ksproxy-ikspinpipe-kssetpipe.md) | Not recommended for application use. |
 | [IKsPinPipe::KsSetPipeAllocatorFlag](nf-ksproxy-ikspinpipe-kssetpipeallocatorflag.md) | Not recommended for application use. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

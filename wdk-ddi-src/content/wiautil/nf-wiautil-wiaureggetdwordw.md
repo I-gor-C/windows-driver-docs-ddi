@@ -88,11 +88,11 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550179">wiauRegOpenData</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550178">wiauRegGetStr</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550179">wiauRegOpenData</a>
 
 
 

@@ -111,11 +111,11 @@ The Server Message Block (SMB) redirector uses <i>MRxComputeNewBufferingState</i
 
 ## See Also
 
-<a href="..\mrx\nc-mrx-pmrx_change_buffering_state_calldown.md">MRxCompleteBufferingStateChangeRequest</a>
-
-
-
 <a href="..\mrx\nc-mrx-pmrx_get_connection_id.md">MRxGetConnectionId</a>
+
+
+
+<a href="..\mrx\nc-mrx-pmrx_change_buffering_state_calldown.md">MRxCompleteBufferingStateChangeRequest</a>
 
 
 

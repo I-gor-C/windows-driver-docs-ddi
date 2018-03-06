@@ -77,7 +77,7 @@ typedef enum  {
 
 ## See Also
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
 
 
 
@@ -85,7 +85,7 @@ typedef enum  {
 
 
 
-<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 
 

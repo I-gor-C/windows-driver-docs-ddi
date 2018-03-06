@@ -68,9 +68,6 @@ The ISensorDriver interface provides callback methods that the sensor class exte
 | [ISensorDriver::OnProcessWpdMessage](nf-sensorsclassextension-isensordriver-onprocesswpdmessage.md) | The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally. |
 | [ISensorDriver::OnSetProperties](nf-sensorsclassextension-isensordriver-onsetproperties.md) | The ISensorDriver::OnSetProperties method specifies values for the specified list of properties. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -7,7 +7,7 @@ old-location: print\iprintschemapageimageablesize_interface.htm
 old-project: print
 ms.assetid: C8E9278D-D24A-4EEC-8F68-D77C76ECCC40
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IPrintSchemaPageImageableSize, IPrintSchemaPageImageableSize interface [Print Devices], IPrintSchemaPageImageableSize interface [Print Devices], described, print.iprintschemapageimageablesize_interface, printerextension/IPrintSchemaPageImageableSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,9 +60,6 @@ Exposes the PageImageableSize property of PrintCapabilities. The properties of t
 | [IPrintSchemaPageImageableSize::get_ImageableSizeWidthInMicrons](nf-printerextension-iprintschemapageimageablesize-get_imageablesizewidthinmicrons.md) | Gets the horizontal dimension of the application media size relative to the page orientation. |
 | [IPrintSchemaPageImageableSize::get_OriginHeightInMicrons](nf-printerextension-iprintschemapageimageablesize-get_originheightinmicrons.md) | Gets the vertical origin of the imageable area relative to the application media size. |
 | [IPrintSchemaPageImageableSize::get_OriginWidthInMicrons](nf-printerextension-iprintschemapageimageablesize-get_originwidthinmicrons.md) | Gets the horizontal origin of the imageable area relative to the application media size. |
-
-## Remarks
-
 
 
 ## Requirements

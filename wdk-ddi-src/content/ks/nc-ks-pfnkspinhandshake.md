@@ -92,15 +92,15 @@ The minidriver specifies this routine's address in the <i>Handshake</i> paramete
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
-
-
-
 <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a>
 
 
 
 <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
+
+
+
+<a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
 
 
 

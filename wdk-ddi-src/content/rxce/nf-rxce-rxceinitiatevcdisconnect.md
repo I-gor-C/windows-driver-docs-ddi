@@ -110,11 +110,11 @@ The <i>pVc</i> parameter passed to this routine was invalid.
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxcebuildvc.md">RxCeBuildVC</a>
-
-
-
 <a href="..\rxce\nf-rxce-rxceteardownvc.md">RxCeTearDownVC</a>
+
+
+
+<a href="..\rxce\nf-rxce-rxcebuildvc.md">RxCeBuildVC</a>
 
 
 

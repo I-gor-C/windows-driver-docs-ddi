@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbinterface.htm
 old-project: wdf
 ms.assetid: 90770016-1267-437e-af70-99741231dc29
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFUsbInterface, IWDFUsbInterface interface, IWDFUsbInterface interface, described, UMDFUSBref_d505d36b-9a59-452d-b35f-ceeff7a0b818.xml, umdf.iwdfusbinterface, wdf.iwdfusbinterface, wudfusb/IWDFUsbInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,9 +64,6 @@ The <b>IWDFUsbInterface</b> interface exposes a USB interface that a USB device 
 | [IWDFUsbInterface::GetWinUsbHandle](nf-wudfusb-iwdfusbinterface-getwinusbhandle.md) | The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a USB interface. |
 | [IWDFUsbInterface::RetrieveUsbPipeObject](nf-wudfusb-iwdfusbinterface-retrieveusbpipeobject.md) | The RetrieveUsbPipeObject method retrieves a USB pipe object for the specified pipe index. |
 | [IWDFUsbInterface::SelectSetting](nf-wudfusb-iwdfusbinterface-selectsetting.md) | The SelectSetting method selects the specified alternate setting on a USB interface. |
-
-## Remarks
-
 
 
 ## Requirements

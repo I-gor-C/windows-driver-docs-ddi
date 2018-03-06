@@ -59,7 +59,6 @@ The IID for this interface is IID_IKsPinEx.
 | [IKsPinEx::KsNotifyError](nf-ksproxy-ikspinex-ksnotifyerror.md) | The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt. |
 
 ## Remarks
-
 An interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>) uses many of the <b>IKsPinEx</b> methods to route media samples of a particular media type.
 
 ## Requirements

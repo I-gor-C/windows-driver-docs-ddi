@@ -101,7 +101,15 @@ Other members are provisionally read-only: that is, the system initializes them 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
 
 
 
@@ -110,14 +118,6 @@ Other members are provisionally read-only: that is, the system initializes them 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: wdf\iwdfmemory.htm
 old-project: wdf
 ms.assetid: 8746eb43-7a6e-4e1d-b8fb-c8b7891295d6
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFMemory, IWDFMemory interface, IWDFMemory interface, described, UMDFMemoryObjectRef_14266bd8-214b-4244-a96b-9bea5cfa9d84.xml, umdf.iwdfmemory, wdf.iwdfmemory, wudfddi/IWDFMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,9 +62,6 @@ The <b>IWDFMemory</b> interface exposes the framework memory object that provide
 | [IWDFMemory::GetDataBuffer](nf-wudfddi-iwdfmemory-getdatabuffer.md) | The GetDataBuffer method retrieves the data buffer that is associated with a memory object. |
 | [IWDFMemory::GetSize](nf-wudfddi-iwdfmemory-getsize.md) | The GetSize method retrieves the size of the data buffer that is associated with a memory object. |
 | [IWDFMemory::SetBuffer](nf-wudfddi-iwdfmemory-setbuffer.md) | The SetBuffer method assigns a specified buffer to a memory object that a driver created by calling IWDFDriver::CreatePreallocatedWdfMemory. |
-
-## Remarks
-
 
 
 ## Requirements

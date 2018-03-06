@@ -122,7 +122,7 @@ The <i>Destination</i> buffer must be resident if the caller is running at IRQL 
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: debugger\idebugplmclient2.htm
 old-project: debugger
 ms.assetid: 22AACAD1-292B-42D9-95F7-A3654E2077FB
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IDebugPlmClient2, IDebugPlmClient2 interface [Windows Debugging], IDebugPlmClient2 interface [Windows Debugging], described, dbgeng/IDebugPlmClient2, debugger.idebugplmclient2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,9 +54,6 @@ This interface supports Process Lifecycle Management (PLM) for the debug client.
 | Method | Description |
 | ---- |:---- |
 | [IDebugPlmClient2::LaunchPlmBgTaskForDebugWide](nf-dbgeng-idebugplmclient2-launchplmbgtaskfordebugwide.md) | Launches a suspended Process Lifecycle Management (PLM) background task. |
-
-## Remarks
-
 
 
 ## Requirements

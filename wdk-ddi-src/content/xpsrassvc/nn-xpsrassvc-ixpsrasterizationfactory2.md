@@ -7,7 +7,7 @@ old-location: print\ixpsrasterizationfactory2.htm
 old-project: print
 ms.assetid: 23994CD9-A65B-4BD7-9070-3F575D011953
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IXpsRasterizationFactory2, IXpsRasterizationFactory2 interface [Print Devices], IXpsRasterizationFactory2 interface [Print Devices], described, print.ixpsrasterizationfactory2, xpsrassvc/IXpsRasterizationFactory2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,9 +55,6 @@ In Windows 10, the <b>IXpsRasterizationFactory2</b> interface represents an obj
 | Method | Description |
 | ---- |:---- |
 | [IXpsRasterizationFactory2::CreateRasterizer](nf-xpsrassvc-ixpsrasterizationfactory2-createrasterizer.md) | The CreateRasterizer method creates an XPS rasterizer object that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs. |
-
-## Remarks
-
 
 
 ## Requirements

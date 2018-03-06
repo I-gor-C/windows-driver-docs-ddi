@@ -58,7 +58,6 @@ The <b>IKsInterfaceHandler</b> interface provides methods that marshal samples i
 | [IKsInterfaceHandler::KsSetPin](nf-ksproxy-iksinterfacehandler-kssetpin.md) | The KsSetPin method informs the streaming interface handler about the pin with which to communicate when passing data. |
 
 ## Remarks
-
 In order to keep the proxy neutral with regard to the interface used to stream data, interface handlers are loaded to translate DirectShow media samples to and from a kernel-level driver. An interface handler implements the methods of the <b>IKsInterfaceHandler</b> interface to perform preprocessing and postprocessing on all media samples and to signal the completion of input and output (I/O).
 
 Each interface handler can marshal media samples using its own method. The standard interface handler that KS proxy implements uses IOCTL_KS_WRITE_STREAM for the receive operation and IOCTL_KS_READ_STREAM for the send operation, but a custom interface handler can use some other method.
@@ -77,11 +76,11 @@ For more information about <b>CoCreateInstance</b>, see the Microsoft Windows SD
 
 ## See Also
 
+<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>
-
-
-
-<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
 
 

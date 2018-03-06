@@ -123,7 +123,11 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+<a href="..\ntifs\nf-ntifs-rtladdace.md">RtlAddAce</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 
 
 
@@ -131,15 +135,11 @@ For more information about security and access control, see the documentation on
 
 
 
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+
+
+
 <a href="..\ntifs\nf-ntifs-rtlgetace.md">RtlGetAce</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-rtladdace.md">RtlAddAce</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 
 
 

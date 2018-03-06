@@ -57,7 +57,6 @@ The <b>IKsObject</b> interface provides a method to retrieve the file handle of 
 | [IKsObject::KsGetObjectHandle](nf-ksproxy-iksobject-ksgetobjecthandle.md) | The KsGetObjectHandle method retrieves a file handle to a KS object. |
 
 ## Remarks
-
 The IID for this interface is IID_IKsObject.
 
 <b>IKsObject</b> is defined in <i>Ksproxy.h</i> within the #ifdef __STREAMS__ section.

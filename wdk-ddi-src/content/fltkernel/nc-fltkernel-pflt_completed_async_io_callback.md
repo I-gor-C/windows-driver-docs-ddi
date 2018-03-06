@@ -110,7 +110,7 @@ It cannot acquire resources, mutexes, or fast mutexes. However, it can acquire s
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 
 
 
@@ -122,7 +122,7 @@ It cannot acquire resources, mutexes, or fast mutexes. However, it can acquire s
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 
 
 

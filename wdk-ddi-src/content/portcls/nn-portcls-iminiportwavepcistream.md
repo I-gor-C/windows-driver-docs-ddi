@@ -7,7 +7,7 @@ old-location: audio\iminiportwavepcistream.htm
 old-project: audio
 ms.assetid: 2341f914-d877-4a87-ac74-fb51e646510e
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IMiniportWavePciStream, IMiniportWavePciStream interface [Audio Devices], IMiniportWavePciStream interface [Audio Devices], described, audio.iminiportwavepcistream, audmp-routines_4bb3e6fe-950d-4981-a35a-bc9106d98edb.xml, portcls/IMiniportWavePciStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,9 +63,6 @@ The <code>IMiniportWavePciStream</code> interface provides methods for managing 
 | [IMiniportWavePciStream::Service](nf-portcls-iminiportwavepcistream-service.md) | The Service method notifies the miniport driver of a request for service. |
 | [IMiniportWavePciStream::SetFormat](nf-portcls-iminiportwavepcistream-setformat.md) | The SetFormat method sets the KS data format of the wave stream. |
 | [IMiniportWavePciStream::SetState](nf-portcls-iminiportwavepcistream-setstate.md) | The SetState method changes the state of the stream transport. |
-
-## Remarks
-
 
 
 ## Requirements

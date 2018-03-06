@@ -85,11 +85,11 @@ Callers of <b>RtlAnsiStringToUnicodeSize</b> must be running at IRQL = PASSIVE_L
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlxansistringtounicodesize.md">RtlxAnsiStringToUnicodeSize</a>
-
-
-
 <a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
+
+
+<a href="..\wdm\nf-wdm-rtlxansistringtounicodesize.md">RtlxAnsiStringToUnicodeSize</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest2.htm
 old-project: wdf
 ms.assetid: 6a6285c9-8366-4487-a1c5-38aa24d172a9
 ms.author: windowsdriverdev
-ms.date: 2/20/2018
+ms.date: 2/26/2018
 ms.keywords: IWDFIoRequest2, IWDFIoRequest2 interface, IWDFIoRequest2 interface, described, UMDFRequestObjectRef_0aa42362-60ac-4be7-8101-6395a709f420.xml, umdf.iwdfiorequest2, wdf.iwdfiorequest2, wudfddi/IWDFIoRequest2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,9 +71,6 @@ To obtain the <b>IWDFIoRequest2</b> interface, drivers call <b>IWDFIoRequest::Qu
 | [IWDFIoRequest2::RetrieveOutputMemory](nf-wudfddi-iwdfiorequest2-retrieveoutputmemory.md) | The RetrieveOutputMemory method retrieves the IWDFMemory interface of a framework memory object that represents an I/O request's output buffer. |
 | [IWDFIoRequest2::Reuse](nf-wudfddi-iwdfiorequest2-reuse.md) | The Reuse method reinitializes a framework request object so that it can be reused. |
 | [IWDFIoRequest2::StopAcknowledge](nf-wudfddi-iwdfiorequest2-stopacknowledge.md) | The StopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request. |
-
-## Remarks
-
 
 
 ## Requirements

@@ -57,7 +57,6 @@ The <b>IKsPinFactory</b> interface provides a method that retrieves the identifi
 | [IKsPinFactory::KsPinFactory](nf-ksproxy-ikspinfactory-kspinfactory.md) | The KsPinFactory method retrieves the identifier of a pin factory. |
 
 ## Remarks
-
 The IID for this interface is IID_IKsPinFactory.
 
 ## Requirements

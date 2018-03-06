@@ -7,7 +7,7 @@ old-location: audio\iportwmiregistration.htm
 old-project: audio
 ms.assetid: 0fb18e82-4853-459f-b8d3-4841ca3d8301
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPortWMIRegistration, IPortWMIRegistration interface [Audio Devices], IPortWMIRegistration interface [Audio Devices], described, audio.iportwmiregistration, audmp-routines_c7591b25-80f3-4d0e-ac6b-bc1dea55adb1.xml, portcls/IPortWMIRegistration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,9 +57,6 @@ ETW provides a mechanism to trace and log events that are raised by user-mode ap
 | ---- |:---- |
 | [IPortWMIRegistration::RegisterWMIProvider](nf-portcls-iportwmiregistration-registerwmiprovider.md) | The RegisterWMIProvider method registers the Event Tracing for Windows (ETW) capability of the miniport driver with PortCls. |
 | [IPortWMIRegistration::UnregisterWMIProvider](nf-portcls-iportwmiregistration-unregisterwmiprovider.md) | The UnregisterWMIProvider method unregisters the Event Tracing for Windows (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls. |
-
-## Remarks
-
 
 
 ## Requirements

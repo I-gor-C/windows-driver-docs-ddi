@@ -83,11 +83,11 @@ A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
-
-
-
 <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+
+
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: audio\iportdmus.htm
 old-project: audio
 ms.assetid: 96388400-56f9-4a43-bc37-cfe6cfb233cb
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPortDMus, IPortDMus interface [Audio Devices], IPortDMus interface [Audio Devices], described, audio.iportdmus, audmp-routines_20e57cde-9732-4592-8bb6-b5775609b833.xml, dmusicks/IPortDMus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,9 +57,6 @@ An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportDM
 | ---- |:---- |
 | [IPortDMus::Notify](nf-dmusicks-iportdmus-notify.md) | The Notify method should be called from the miniport driver's interrupt service routine (ISR) when a hardware interrupt has occurred. |
 | [IPortDMus::RegisterServiceGroup](nf-dmusicks-iportdmus-registerservicegroup.md) | The RegisterServiceGroup method registers a service group with the DMus port driver. |
-
-## Remarks
-
 
 
 ## Requirements

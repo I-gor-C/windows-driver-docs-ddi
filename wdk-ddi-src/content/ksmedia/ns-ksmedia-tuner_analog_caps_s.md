@@ -163,6 +163,10 @@ The smallest possible step size, in Hz, between two settings of the tuning frequ
 
 ## See Also
 
+<a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565887">KSPROPERTY_TUNER_SCAN_CAPS</a>
 
 
@@ -172,10 +176,6 @@ The smallest possible step size, in Hz, between two settings of the tuning frequ
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a>
-
-
-
-<a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
 
 
 

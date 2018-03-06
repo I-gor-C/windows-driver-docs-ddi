@@ -62,9 +62,6 @@ Defines operations that control the system during driver setup.
 | [IWDTFDriverSetupSystemAction2::SnapTriageLogs](nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-snaptriagelogs.md) | Copies the driver setup triage logs. |
 | [IWDTFDriverSetupSystemAction2::WaitNoPendingInstallEvents](nf-wdtfdriversetupsystemaction-iwdtfdriversetupsystemaction2-waitnopendinginstallevents.md) | Waits until all device installations have completed. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

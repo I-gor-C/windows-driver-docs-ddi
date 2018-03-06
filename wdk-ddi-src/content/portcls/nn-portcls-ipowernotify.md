@@ -7,7 +7,7 @@ old-location: audio\ipowernotify.htm
 old-project: audio
 ms.assetid: f4856f40-b462-4e69-9324-a2cc837b2893
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
+ms.date: 2/26/2018
 ms.keywords: IPowerNotify, IPowerNotify interface [Audio Devices], IPowerNotify interface [Audio Devices], described, audio.ipowernotify, audmp-routines_345bcede-d886-4423-b56e-0b7c15596744.xml, portcls/IPowerNotify
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,9 +94,6 @@ For more information, see <a href="https://msdn.microsoft.com/8bd8b4c8-1961-41ea
 | Method | Description |
 | ---- |:---- |
 | [IPowerNotify::PowerChangeNotify](nf-portcls-ipowernotify-powerchangenotify.md) | The PowerChangeNotify method notifies the miniport driver of changes in the power state. |
-
-## Remarks
-
 
 
 ## Requirements

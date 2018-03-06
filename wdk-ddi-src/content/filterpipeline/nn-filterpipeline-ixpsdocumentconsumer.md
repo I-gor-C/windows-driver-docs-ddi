@@ -7,7 +7,7 @@ old-location: print\ixpsdocumentconsumer.htm
 old-project: print
 ms.assetid: 98e603e6-2786-4bc8-ad8a-0e91b0d444d8
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/26/2018
 ms.keywords: IXpsDocumentConsumer, IXpsDocumentConsumer interface [Print Devices], IXpsDocumentConsumer interface [Print Devices], described, filterpipeline/IXpsDocumentConsumer, filterpipeline_230eb0f6-427a-4986-b8ad-bc1d41853d67.xml, print.ixpsdocumentconsumer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,9 +61,6 @@ A filter uses the <code>IXpsDocumentConsumer</code> interface when it generates 
 | [IXpsDocumentConsumer::SendFixedPage](nf-filterpipeline-ixpsdocumentconsumer-sendfixedpage.md) | The SendFixedPage method sends a fixed page of an XPS document to the pipeline. |
 | [IXpsDocumentConsumer::SendXpsDocument](nf-filterpipeline-ixpsdocumentconsumer-sendxpsdocument.md) | The SendXpsDocument method sends an XPS document to the pipeline. |
 | [IXpsDocumentConsumer::SendXpsUnknown](nf-filterpipeline-ixpsdocumentconsumer-sendxpsunknown.md) | The SendXpsUnknown method sends an XPS document part that cannot be identified to the filter pipeline. |
-
-## Remarks
-
 
 
 ## Requirements

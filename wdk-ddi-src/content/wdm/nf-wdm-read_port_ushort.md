@@ -61,7 +61,7 @@ USHORT READ_PORT_USHORT(
 
 `Port`
 
-Specifies the port address, which must be a mapped range in I/O space.
+
 
 
 ## Return Value

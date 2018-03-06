@@ -57,9 +57,6 @@ The <b>IWiaImageFilter</b> interface is an extension interface implemented by im
 | [IWiaImageFilter::FilterPreviewImage](nf-wia_lh-iwiaimagefilter-filterpreviewimage.md) | The IWiaImageFilter::FilterPreviewImage method is called by the WIA Preview component, when an application calls the IWiaPreview::UpdatePreview method. |
 | [IWiaImageFilter::InitializeFilter](nf-wia_lh-iwiaimagefilter-initializefilter.md) | The IWiaImageFilter::InitializeFilter method stores the references to pWiaItem2 and pWiaTransferCallback parameters passed into the method. |
 
-## Remarks
-
-
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -87,7 +87,7 @@ This routine will return <b>TRUE</b> if any dirty pages exist including temporar
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 
 
 
@@ -95,7 +95,7 @@ This routine will return <b>TRUE</b> if any dirty pages exist including temporar
 
 
 
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 
 
 

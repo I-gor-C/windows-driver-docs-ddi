@@ -60,11 +60,11 @@ VOID WRITE_REGISTER_ULONG(
 
 `Register`
 
-Pointer to the register which must be a mapped range in memory space.
+
 
 `Value`
 
-Specifies a ULONG value to be written to the register.
+
 
 
 ## Return Value
