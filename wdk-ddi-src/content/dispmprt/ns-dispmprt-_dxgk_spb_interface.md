@@ -240,7 +240,7 @@ This parameter can be <b>NULL</b>.
 
 #### IoStatusBlock
 
-A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested read operation. The  <b>Information</b> member of the <b>IO_STATUS_BLOCK</b> structure receives the number of bytes actually read from the SPB resource.
+A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested read operation. The  <b>Information</b> member of the <b>IO_STATUS_BLOCK</b> structure receives the number of bytes actually read from the SPB resource.
 
 `Size`
 
@@ -310,7 +310,7 @@ This parameter can be <b>NULL</b>.
 
 #### IoStatusBlock
 
-A pointer to a variable that receives the final completion status and information about the requested I/O control operation. For successful calls that return data, the number of bytes written to the buffer pointed to by the <i>OutputBuffer</i> parameter is returned in the <b>Information</b> member of the <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure.
+A pointer to a variable that receives the final completion status and information about the requested I/O control operation. For successful calls that return data, the number of bytes written to the buffer pointed to by the <i>OutputBuffer</i> parameter is returned in the <b>Information</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure.
 
 `Version`
 
@@ -381,7 +381,7 @@ This parameter can be <b>NULL</b>.
 
 #### IoStatusBlock
 
-A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested write operation. The <b>Information</b> member of the  <b>IO_STATUS_BLOCK</b> structure receives the number of bytes actually written to the SPB resource.
+A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested write operation. The <b>Information</b> member of the  <b>IO_STATUS_BLOCK</b> structure receives the number of bytes actually written to the SPB resource.
 
 
 ## Requirements
@@ -392,7 +392,7 @@ A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439824">ReadSpbResource</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439861">SpbResourceIoControl</a>
 
 
 
@@ -404,11 +404,11 @@ A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> 
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439824">ReadSpbResource</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439861">SpbResourceIoControl</a>
 
 
 

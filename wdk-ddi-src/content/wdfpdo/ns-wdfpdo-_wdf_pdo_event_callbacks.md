@@ -111,11 +111,11 @@ Drivers must call <a href="..\wdfpdo\nf-wdfpdo-wdf_pdo_event_callbacks_init.md">
 
 ## See Also
 
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitseteventcallbacks.md">WdfFdoInitSetEventCallbacks</a>
+
+
+
 <a href="..\wdfpdo\nf-wdfpdo-wdf_pdo_event_callbacks_init.md">WDF_PDO_EVENT_CALLBACKS_INIT</a>
-
-
-
-<a href="..\wdffdo\ns-wdffdo-_wdf_fdo_event_callbacks.md">WDF_FDO_EVENT_CALLBACKS</a>
 
 
 
@@ -123,7 +123,7 @@ Drivers must call <a href="..\wdfpdo\nf-wdfpdo-wdf_pdo_event_callbacks_init.md">
 
 
 
-<a href="..\wdffdo\nf-wdffdo-wdffdoinitseteventcallbacks.md">WdfFdoInitSetEventCallbacks</a>
+<a href="..\wdffdo\ns-wdffdo-_wdf_fdo_event_callbacks.md">WDF_FDO_EVENT_CALLBACKS</a>
 
 
 

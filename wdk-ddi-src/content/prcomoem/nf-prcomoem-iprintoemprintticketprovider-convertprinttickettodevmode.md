@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -98,15 +98,14 @@ Before the system converts a print ticket back to a <a href="https://msdn.micros
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h (include Prcomoem.h) |
-| **Library** | prcomoem.h |
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemprintticketprovider.md">IPrintOemPrintTicketProvider</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553161">IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</a>
+
+
+
+<a href="..\prcomoem\nn-prcomoem-iprintoemprintticketprovider.md">IPrintOemPrintTicketProvider</a>
 
 
 

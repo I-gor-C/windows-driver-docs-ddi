@@ -268,11 +268,11 @@ Defines the encryption protocol type for residual difference decoding data buffe
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a>
-
-
-
 <a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a>
+
+
+
+<a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a>
 
 
 

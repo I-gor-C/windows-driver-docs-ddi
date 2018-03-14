@@ -314,14 +314,6 @@ To get the settings and statistics of a SCO channel, profile drivers should
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a>
-
-
-
 <a href="..\bthddi\ne-bthddi-_sco_retransmission_effort.md">SCO_RETRANSMISSION_EFFORT</a>
 
 
@@ -330,7 +322,15 @@ To get the settings and statistics of a SCO channel, profile drivers should
 
 
 
+<a href="..\bthddi\ne-bthddi-_sco_link_type.md">SCO_LINK_TYPE</a>
+
+
+
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_baseband_channel_info.md">BASEBAND_CHANNEL_INFO</a>
 
 
 

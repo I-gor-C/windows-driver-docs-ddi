@@ -106,7 +106,7 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md">KS_TRUECOLORINFO</a>
 
 
 
@@ -114,7 +114,7 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md">KS_TRUECOLORINFO</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
 
 
 

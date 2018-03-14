@@ -75,11 +75,11 @@ To receive messages from a kernel-mode minifilter, a user-mode application typic
 
 ## See Also
 
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_reply_header.md">FILTER_REPLY_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>
+
+
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_reply_header.md">FILTER_REPLY_HEADER</a>
 
 
 

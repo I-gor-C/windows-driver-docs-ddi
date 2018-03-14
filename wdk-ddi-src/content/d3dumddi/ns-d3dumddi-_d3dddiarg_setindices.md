@@ -74,11 +74,11 @@ typedef struct _D3DDDIARG_SETINDICES {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setstreamsourceum.md">SetStreamSourceUM</a>
-
-
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setindices.md">SetIndices</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setstreamsourceum.md">SetStreamSourceUM</a>
 
 
 

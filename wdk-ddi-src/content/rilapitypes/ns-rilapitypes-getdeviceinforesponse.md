@@ -3,17 +3,17 @@ UID: NS:rilapitypes.GETDEVICEINFORESPONSE
 title: GETDEVICEINFORESPONSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\getdeviceinforesponse_2.htm
+old-location: netvista\getdeviceinforesponse.htm
 old-project: netvista
-ms.assetid: 318927ab-6134-4a01-bf9c-a85619d2bbdf
+ms.assetid: 312b60ba-9df4-4171-a831-ab402cc99664
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
-ms.keywords: "*LPGETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE structure [Network Drivers Starting with Windows Vista], netvista.getdeviceinforesponse_2, rilapitypes/GETDEVICEINFORESPONSE"
+ms.date: 2/27/2018
+ms.keywords: "*LPGETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE structure [Network Drivers Starting with Windows Vista], netvista.getdeviceinforesponse, ntddrilapitypes/GETDEVICEINFORESPONSE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Ntddrilapitypes.h, Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -30,12 +30,11 @@ req.lib:
 req.dll: 
 req.irql: 
 topic_type:
--	APIRef
 -	kbSyntax
 api_type:
--	HeaderDef
+-	<TBD>
 api_location:
--	rilapitypes.h
+-
 api_name:
 -	GETDEVICEINFORESPONSE
 product: Windows
@@ -50,7 +49,7 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 ## Syntax
 ````
 typedef struct _GETDEVICEINFORESPONSE {
-  char [MAXLENGTH_ADDRESS] Result;
+  char [256] Result;
 } GETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE;
 ````
 
@@ -59,10 +58,10 @@ typedef struct _GETDEVICEINFORESPONSE {
 
 `Result`
 
-
+TBD
 
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | rilapitypes.h |
+| **Header** | rilapitypes.h (include Ntddrilapitypes.h, Rilapitypes.h) |

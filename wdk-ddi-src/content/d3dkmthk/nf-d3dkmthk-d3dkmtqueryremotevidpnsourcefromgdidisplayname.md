@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -45,7 +45,7 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 
 # D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function
-Maps a GDI display name to a remote video present network (VidPN) source ID that is needed for a call to the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_outputduplpresent.md">D3DKMTOutputDuplPresent</a> function.
+Maps a GDI display name to a remote video present network (VidPN) source ID that is needed for a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtoutputduplpresent.md">D3DKMTOutputDuplPresent</a> function.
 
 ## Syntax
 
@@ -103,7 +103,6 @@ This function might also return other NTSTATUS values.
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
@@ -111,7 +110,7 @@ This function might also return other NTSTATUS values.
 
 
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_outputduplpresent.md">D3DKMTOutputDuplPresent</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtoutputduplpresent.md">D3DKMTOutputDuplPresent</a>
 
 
 

@@ -56,7 +56,7 @@ None.
 None.
 
 ### Output Buffer
-The driver returns the <a href="..\minitape\ns-minitape-_tape_get_media_parameters.md">TAPE_GET_MEDIA_PARAMETERS</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. For a description of the TAPE_GET_MEDIA_PARAMETERS structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>.
+The driver returns the <a href="..\ntddtape\ns-ntddtape-_tape_get_media_parameters.md">TAPE_GET_MEDIA_PARAMETERS</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. For a description of the TAPE_GET_MEDIA_PARAMETERS structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>.
 
 ### Output Buffer Length
 <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be &gt;= <b>sizeof</b>(TAPE_GET_MEDIA_PARAMETERS).
@@ -78,15 +78,15 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 ## See Also
 
+<a href="..\ntddtape\ns-ntddtape-_tape_get_media_parameters.md">TAPE_GET_MEDIA_PARAMETERS</a>
+
+
+
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567937">TapeMiniGetMediaParameters</a>
-
-
-
-<a href="..\minitape\ns-minitape-_tape_get_media_parameters.md">TAPE_GET_MEDIA_PARAMETERS</a>
 
 
 

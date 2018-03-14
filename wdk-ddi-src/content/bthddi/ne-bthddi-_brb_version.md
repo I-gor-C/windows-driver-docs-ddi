@@ -79,6 +79,14 @@ enum BRB_VERSION {
 
 ## See Also
 
+<a href="..\bthddi\ns-bthddi-_brb.md">BRB</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+
+
 <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
 
 
@@ -87,15 +95,7 @@ enum BRB_VERSION {
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb.md">BRB</a>
-
-
-
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 
 

@@ -91,7 +91,7 @@ Data type indicator for the bidirectional extended SRB data structure. Set to <b
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
 
 

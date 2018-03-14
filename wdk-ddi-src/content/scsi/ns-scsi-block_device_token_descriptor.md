@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 # BLOCK_DEVICE_TOKEN_DESCRIPTOR structure
-<b>BLOCK_DEVICE_TOKEN_DESCRIPTOR</b> contains the token returned from a the POPULATE TOKEN command for an offload read data operation. The token information is included as part of the <a href="..\minitape\ns-minitape-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure.
+<b>BLOCK_DEVICE_TOKEN_DESCRIPTOR</b> contains the token returned from a the POPULATE TOKEN command for an offload read data operation. The token information is included as part of the <a href="..\storport\ns-storport-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure.
 
 ## Syntax
 ````
@@ -75,7 +75,7 @@ An identifier value assigned by the copy provider to provide uniqueness to <b>To
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
+<a href="..\storport\ns-storport-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
 
 
 

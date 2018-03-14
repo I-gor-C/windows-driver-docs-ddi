@@ -94,7 +94,7 @@ A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_
 
 ## See Also
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 
 
 
@@ -102,11 +102,11 @@ A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_
 
 
 
+<a href="..\netdispumdddi\nc-netdispumdddi-query_miracast_driver_interface.md">QueryMiracastDriverInterface</a>
+
+
+
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_handle_kmd_message.md">HandleKernelModeMessage</a>
-
-
-
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 
 
 
@@ -114,7 +114,7 @@ A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_
 
 
 
-<a href="..\netdispumdddi\nc-netdispumdddi-query_miracast_driver_interface.md">QueryMiracastDriverInterface</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
 
 
 

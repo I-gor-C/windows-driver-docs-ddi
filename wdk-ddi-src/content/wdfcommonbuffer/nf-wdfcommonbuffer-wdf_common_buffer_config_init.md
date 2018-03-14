@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -84,7 +84,6 @@ The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function zeros the specified <a href=".
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

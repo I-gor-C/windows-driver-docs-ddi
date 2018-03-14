@@ -44,7 +44,7 @@ req.typenames: D3DKMT_CONFIGURESHAREDRESOURCE
 ---
 
 # _D3DKMT_CONFIGURESHAREDRESOURCE structure
-The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_configuresharedresource.md">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource.
+The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource.
 
 ## Syntax
 ````
@@ -62,7 +62,7 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 
 `AllowAccess`
 
-[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_configuresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access.
+[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access.
 
 `hDevice`
 
@@ -89,7 +89,7 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_configuresharedresource.md">D3DKMTConfigureSharedResource</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a>
 
 
 

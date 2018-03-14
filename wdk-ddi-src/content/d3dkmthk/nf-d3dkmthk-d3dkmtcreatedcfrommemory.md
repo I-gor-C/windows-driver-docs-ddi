@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -107,7 +107,6 @@ During the execution of the <b>D3DKMTCreateDCFromMemory</b> function, the kernel
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

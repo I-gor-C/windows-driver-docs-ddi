@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "_IRQL_requires_max_(APC_LEVEL)"
 topic_type:
@@ -119,7 +119,6 @@ Use <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOp
 | **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | fltkernel.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "_IRQL_requires_max_(APC_LEVEL)" |
 
 ## See Also

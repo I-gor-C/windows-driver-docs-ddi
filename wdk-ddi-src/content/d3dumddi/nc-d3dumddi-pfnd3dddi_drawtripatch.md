@@ -125,11 +125,11 @@ The driver receives notification to release cached patch information through the
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawtripatch.md">D3DDDIARG_DRAWTRIPATCH</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawtripatch.md">D3DDDIARG_DRAWTRIPATCH</a>
 
 
 

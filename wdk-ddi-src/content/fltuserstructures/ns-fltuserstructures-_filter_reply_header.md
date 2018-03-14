@@ -75,11 +75,11 @@ This structure is allocated by a user-mode application. It is a container for a 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
-
-
-
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_message_header.md">FILTER_MESSAGE_HEADER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
 
 
 

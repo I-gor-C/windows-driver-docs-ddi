@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -76,7 +76,6 @@ The <b>IoInitializePriorityInfo</b> routine is used to initialize the IO_PRIORIT
 | **Windows version** | This routine is available starting with Windows Vista.  |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
@@ -85,11 +84,11 @@ The <b>IoInitializePriorityInfo</b> routine is used to initialize the IO_PRIORIT
 
 
 
-<a href="..\ntifs\ns-ntifs-_io_priority_info.md">IO_PRIORITY_INFO</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltretrieveiopriorityinfo.md">FltRetrieveIoPriorityInfo</a>
+
+
+
+<a href="..\ntifs\ns-ntifs-_io_priority_info.md">IO_PRIORITY_INFO</a>
 
 
 

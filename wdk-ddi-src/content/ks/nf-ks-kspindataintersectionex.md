@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -134,7 +134,6 @@ These differences excepted, <b>KsPinDataIntersection</b> and <b>KsPinDataInterse
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

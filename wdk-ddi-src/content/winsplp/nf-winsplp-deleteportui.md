@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -125,11 +125,14 @@ Call <b>ClosePrinter</b>, specifying the handle received from <b>OpenPrinter</b>
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564254">XcvClosePort</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564258">XcvDataPort</a>
 
 
 
@@ -137,11 +140,7 @@ Call <b>ClosePrinter</b>, specifying the handle received from <b>OpenPrinter</b>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564254">XcvClosePort</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564258">XcvDataPort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564259">XcvOpenPort</a>
 
 
 

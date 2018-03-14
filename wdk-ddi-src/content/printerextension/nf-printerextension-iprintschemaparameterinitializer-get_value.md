@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -105,7 +105,6 @@ The <b>Value</b> (get_Value) property returns the current value of the <b>IPrint
 | **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 

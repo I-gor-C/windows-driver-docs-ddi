@@ -68,10 +68,6 @@ struct _URB_ISOCH_TRANSFER {
 ## Members
 
 
-`_URB`
-
-
-
 `ErrorCount`
 
 Contains the number of packets that completed with an error condition on return from the host controller driver.
@@ -270,15 +266,7 @@ Treat other members that are part of this structure but not described here as op
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406225">How to Transfer Data to USB Isochronous Endpoints</a>
-
-
-
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-
-
-
-<a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>
 
 
 
@@ -290,7 +278,15 @@ Treat other members that are part of this structure but not described here as op
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406225">How to Transfer Data to USB Isochronous Endpoints</a>
+
+
+
 <a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>
 
 
 

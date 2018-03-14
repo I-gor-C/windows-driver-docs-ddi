@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any level
 topic_type:
@@ -89,7 +89,6 @@ For a code example that uses <b>WDF_INTERRUPT_INFO_INIT</b>, see <a href="..\wdf
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
 
 ## See Also

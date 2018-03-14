@@ -222,11 +222,7 @@ To list volume information for all volumes that are known to the Filter Manager,
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
-
-
-
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
 
 
 
@@ -234,15 +230,15 @@ To list volume information for all volumes that are known to the Filter Manager,
 
 
 
-<a href="..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md">IoEnumerateRegisteredFiltersList</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
+
+
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a>
 
 
 
@@ -250,11 +246,15 @@ To list volume information for all volumes that are known to the Filter Manager,
 
 
 
+<a href="..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md">IoEnumerateRegisteredFiltersList</a>
+
+
+
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
 
 
 
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
 
 
 

@@ -83,15 +83,15 @@ Specifies the format of the sample as defined by a <a href="..\dxva\ne-dxva-_dxv
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
-
-
-
 <a href="..\dxva\ns-dxva-_dxva_deinterlaceblt.md">DXVA_DeinterlaceBlt</a>
 
 
 
 <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
 
 
 

@@ -221,11 +221,11 @@ Returns <b>TRUE</b> if the file is cached, <b>FALSE</b> otherwise.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccuninitializecachemap.md">CcUninitializeCacheMap</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-ccuninitializecachemap.md">CcUninitializeCacheMap</a>
 
 
 

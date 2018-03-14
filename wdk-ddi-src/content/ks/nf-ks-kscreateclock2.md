@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -88,7 +88,6 @@ This is a new version of the <a href="..\ks\nf-ks-kscreateclock.md">KsCreateCloc
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also

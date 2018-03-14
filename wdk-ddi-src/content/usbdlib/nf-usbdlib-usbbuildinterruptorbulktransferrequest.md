@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: usbdlib.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -122,11 +122,10 @@ None
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h (include Usbdlib.h) |
-| **Library** | usbdlib.h |
 
 ## See Also
 
-<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 
 
 
@@ -134,7 +133,7 @@ None
 
 
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
 
 
 

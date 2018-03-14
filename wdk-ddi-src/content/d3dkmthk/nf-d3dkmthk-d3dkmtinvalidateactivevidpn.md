@@ -169,11 +169,11 @@ The OpenGL ICD can call <b>D3DKMTInvalidateActiveVidPn</b> for display modes (fo
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>
-
-
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_invalidateactivevidpn.md">D3DKMT_INVALIDATEACTIVEVIDPN</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>
 
 
 

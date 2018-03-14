@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -103,16 +103,15 @@ If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>Doma
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Mrxfcb.h, Rxprocs.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
-
-
-
 <a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
 
 
 

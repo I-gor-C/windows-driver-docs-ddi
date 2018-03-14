@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -161,7 +161,6 @@ If the <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b> flag is set in the <b>Flags</
 | **Windows version** | Available in starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

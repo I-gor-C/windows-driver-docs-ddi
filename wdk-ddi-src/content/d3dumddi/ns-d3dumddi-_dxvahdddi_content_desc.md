@@ -101,11 +101,11 @@ The driver can use the information in the members of DXVAHDDDI_CONTENT_DESC to o
 
 ## See Also
 
-<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_frame_format.md">DXVAHDDDI_FRAME_FORMAT</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a>
+
+
+
+<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_frame_format.md">DXVAHDDDI_FRAME_FORMAT</a>
 
 
 

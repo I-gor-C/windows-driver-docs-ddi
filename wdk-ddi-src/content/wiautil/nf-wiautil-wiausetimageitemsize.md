@@ -7,7 +7,7 @@ old-location: image\wiausetimageitemsize.htm
 old-project: image
 ms.assetid: 5bf56435-df81-4555-91ca-5419883bb1e8
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/27/2018
 ms.keywords: image.wiausetimageitemsize, wiauFncs_9def0e29-20fe-4e9b-b473-a2dbca9088da.xml, wiauSetImageItemSize, wiauSetImageItemSize function [Imaging Devices], wiautil/wiauSetImageItemSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -102,4 +102,3 @@ If the format is not BMP, this function assumes that the value passed in the <i>
 | **Windows version** | Available in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** | NtosKrnl.exe |

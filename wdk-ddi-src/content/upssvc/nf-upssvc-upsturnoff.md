@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -82,4 +82,3 @@ On the other hand, the function must not turn off power from a UPS system that d
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** | NtosKrnl.exe |

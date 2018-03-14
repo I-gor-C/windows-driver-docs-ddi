@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -109,7 +109,7 @@ Parameters were validated and determined to be incorrect.
 </td>
 <td width="60%">
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyedmutex2.md">D3DKMTAcquireKeyedMutex2</a> could not complete because of insufficient memory.
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex2.md">D3DKMTAcquireKeyedMutex2</a> could not complete because of insufficient memory.
 
 </td>
 </tr>
@@ -120,7 +120,7 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## Remarks
 
-<b>D3DKMTAcquireKeyedMutex2</b> behaves like the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.
+<b>D3DKMTAcquireKeyedMutex2</b> behaves like the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> function but lets the caller specify private data to associate with the keyed mutex.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -128,11 +128,10 @@ This function might also return other <b>NTSTATUS</b> values.
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a>
 
 
 

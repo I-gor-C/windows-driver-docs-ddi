@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -80,4 +80,3 @@ A filter that uses the <a href="..\filterpipeline\nn-filterpipeline-ixpsdocument
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** | filterpipeline.h |

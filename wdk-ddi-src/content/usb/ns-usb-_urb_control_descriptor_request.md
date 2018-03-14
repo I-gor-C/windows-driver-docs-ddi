@@ -69,10 +69,6 @@ struct _URB_CONTROL_DESCRIPTOR_REQUEST {
 ## Members
 
 
-`_URB`
-
-
-
 `DescriptorType`
 
 Indicates what type of descriptor is being retrieved or set. One of the following values must be specified:
@@ -149,7 +145,7 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec-_usb_string_descriptor.md">USB_STRING_DESCRIPTOR</a>
 
 
 
@@ -165,11 +161,11 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_string_descriptor.md">USB_STRING_DESCRIPTOR</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
+
+
+<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
 
 
 

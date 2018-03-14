@@ -113,15 +113,15 @@ typedef enum _ELEMENT_TYPE {
 
 ## See Also
 
-<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
-
-
-
 <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
 
 
 
 <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
+
+
+
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 
 
 

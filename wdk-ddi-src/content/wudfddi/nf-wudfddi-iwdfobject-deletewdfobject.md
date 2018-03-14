@@ -26,7 +26,7 @@ req.max-support: Unavailable in UMDF 2.0 and later.
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wudfddi.h
+req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
 topic_type:
@@ -86,7 +86,6 @@ For a code example of how to use the <b>DeleteWdfObject</b> method, see <a href=
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** | wudfddi.h |
 | **DLL** | WUDFx.dll |
 
 ## See Also

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -140,7 +140,6 @@ For a monitor that is loading on Windows 2000, the following code sets the MONIT
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

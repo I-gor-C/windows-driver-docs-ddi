@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any IRQL
 topic_type:
@@ -74,7 +74,6 @@ None.
 | **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any IRQL |
 
 ## See Also

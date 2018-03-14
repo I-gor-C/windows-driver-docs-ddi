@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -78,4 +78,3 @@ In DAX volumes,  user files
 | **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntifs.h |
-| **Library** | NtosKrnl.exe |

@@ -89,11 +89,11 @@ If the miniport driver supports asynchronous notifications, the <b>AsyncNotifica
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
-
-
-
 <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
+
+
+
+<a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
 
 
 

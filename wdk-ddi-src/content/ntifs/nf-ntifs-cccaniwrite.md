@@ -121,7 +121,11 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccfastcopywrite.md">CcFastCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 
 
 
@@ -133,11 +137,7 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 
 
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-ccfastcopywrite.md">CcFastCopyWrite</a>
 
 
 

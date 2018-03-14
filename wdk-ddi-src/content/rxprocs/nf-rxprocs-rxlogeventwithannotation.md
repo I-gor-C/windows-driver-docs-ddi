@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -110,16 +110,15 @@ The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h, Rxstruc.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
 
-<a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
-
-
-
 <a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
 
 
 

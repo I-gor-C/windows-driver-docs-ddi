@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -171,7 +171,6 @@ The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the
 | **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
 
 ## See Also
@@ -184,11 +183,11 @@ The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the
 
 
 
-<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
-
-
-
 <a href="..\storport\nc-storport-hw_timer.md">HwStorTimer</a>
+
+
+
+<a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 
 
 

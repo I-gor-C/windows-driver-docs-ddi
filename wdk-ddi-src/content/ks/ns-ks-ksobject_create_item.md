@@ -129,7 +129,7 @@ The minidriver might retrieve this pointer when creating a new object to examine
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
+<a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
 
 
 
@@ -137,7 +137,7 @@ The minidriver might retrieve this pointer when creating a new object to examine
 
 
 
-<a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
+<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
 
 
 

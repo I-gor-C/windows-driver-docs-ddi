@@ -86,11 +86,11 @@ The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="https://msdn.mi
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
-
-
-
 <a href="..\iscsicfg\ns-iscsicfg-_msiscsi_securitycapabilities.md">MSiSCSI_SecurityCapabilities</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
 
 
 

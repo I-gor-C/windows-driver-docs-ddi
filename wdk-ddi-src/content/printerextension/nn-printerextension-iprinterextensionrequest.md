@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -67,11 +67,11 @@ Completes the given extension event with either a cancellation  or success.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/2F11C510-B649-4DC6-B0BC-89C4159E464C">IPrinterExtensionEventArgs::Request</a>
-
-
-
 <a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+
+
+
+<a href="https://msdn.microsoft.com/2F11C510-B649-4DC6-B0BC-89C4159E464C">IPrinterExtensionEventArgs::Request</a>
 
 
 

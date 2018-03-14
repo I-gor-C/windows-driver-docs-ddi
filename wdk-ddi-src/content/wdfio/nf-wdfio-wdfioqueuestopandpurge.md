@@ -139,19 +139,19 @@ WdfIoQueueStopAndPurge(
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
-
-
-
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a>
-
-
-
 <a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurgesynchronously.md">WdfIoQueueStopAndPurgeSynchronously</a>
 
 
 
+<a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
+
+
+
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+
+
+
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a>
 
 
 

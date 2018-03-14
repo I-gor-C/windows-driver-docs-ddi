@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntifs.h
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -79,7 +79,6 @@ For more information about security and access control, see the documentation on
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | ntifs.h |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also

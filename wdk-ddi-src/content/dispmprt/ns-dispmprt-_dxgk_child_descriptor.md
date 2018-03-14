@@ -88,11 +88,11 @@ Each child device of type <b>TypeVideoOutput</b> is associated with a video pres
 
 ## See Also
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
-
-
-
 <a href="..\dispmprt\ne-dispmprt-_dxgk_child_device_type.md">DXGK_CHILD_DEVICE_TYPE</a>
+
+
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
 
 
 

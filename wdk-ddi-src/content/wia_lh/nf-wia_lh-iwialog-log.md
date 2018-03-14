@@ -7,7 +7,7 @@ old-location: image\iwialog_log.htm
 old-project: image
 ms.assetid: bca012b4-76ae-4ba5-99b4-92a367774de7
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/27/2018
 ms.keywords: IWiaLog, IWiaLog interface [Imaging Devices], Log method, IWiaLog::Log, IWiaLog_e3605b5e-0494-46a7-85c1-3a0707a74764.xml, Log method [Imaging Devices], Log method [Imaging Devices], IWiaLog interface, Log,IWiaLog.Log, image.iwialog_log, wia_lh/IWiaLog::Log
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wia_lh.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -146,4 +146,3 @@ If the method succeeds, it returns S_OK.  If the method fails, it returns a stan
 | **Windows version** | Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.  |
 | **Target Platform** | Desktop |
 | **Header** | wia_lh.h |
-| **Library** | wia_lh.h |

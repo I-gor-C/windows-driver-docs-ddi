@@ -7,7 +7,7 @@ old-location: netvista\ril_getsmsc.htm
 old-project: netvista
 ms.assetid: 07181f26-8fcc-4a0d-8ce6-bfaaea785ef6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 2/27/2018
 ms.keywords: RIL_GetSMSC, RIL_GetSMSC method [Network Drivers Starting with Windows Vista], netvista.ril_getsmsc, rilapi/RIL_GetSMSC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -84,4 +84,3 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 | **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** | NtosKrnl.exe |

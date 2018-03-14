@@ -112,10 +112,6 @@ pfileObject = WdfIoTargetWdmGetTargetFileObject(IoTarget);</pre>
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
-
-
-
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
 
@@ -125,6 +121,10 @@ pfileObject = WdfIoTargetWdmGetTargetFileObject(IoTarget);</pre>
 
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetdeviceobject.md">WdfIoTargetWdmGetTargetDeviceObject</a>
+
+
+
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 
 
 

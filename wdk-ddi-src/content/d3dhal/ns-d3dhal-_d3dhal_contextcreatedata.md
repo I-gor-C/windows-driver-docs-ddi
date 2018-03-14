@@ -161,7 +161,7 @@ If the driver successfully creates a context, the driver returns the context ID 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a>
 
 
 
@@ -169,7 +169,7 @@ If the driver successfully creates a context, the driver returns the context ID 
 
 
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
 
 
 

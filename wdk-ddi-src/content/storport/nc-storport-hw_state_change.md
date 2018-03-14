@@ -79,7 +79,7 @@ The type of the address in <i>Address</i>.
 
 `Address`
 
-A pointer to a <a href="..\minitape\ns-minitape-_stor_address.md">STOR_ADDRESS</a> structure for the entity whose state change was processed.
+A pointer to a <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a> structure for the entity whose state change was processed.
 
 `Status`
 
@@ -129,11 +129,11 @@ HW_STATE_CHANGE (
 
 ## See Also
 
+<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
+
+
+
 <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>
-
-
-
-<a href="..\minitape\ns-minitape-_stor_address.md">STOR_ADDRESS</a>
 
 
 

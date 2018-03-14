@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: dsound.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -109,7 +109,6 @@ If an application must include both <i>ksproxy.h</i> and <i>dsound.h</i>, whiche
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | dsound.h (include Ksproxy.h, Ksproxy.h, Dsound.h, Ksproxy.h, Ksproxy.h, Dsound.h) |
-| **Library** | dsound.h |
 
 ## See Also
 

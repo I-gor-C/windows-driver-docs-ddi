@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -77,20 +77,19 @@ On checked builds, <b>RxpReferenceNetFcb</b> causes the system to ASSERT if the 
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | fcb.h (include Fcb.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
-
-<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
-
-
 
 <a href="..\fcb\nf-fcb-rxpdereferencenetfcb.md">RxpDereferenceNetFcb</a>
 
 
 
 <a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+
+
+
+<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
 
 
 

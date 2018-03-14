@@ -47,7 +47,7 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 
 # D3DKMTOpenSyncObjectNtHandleFromName function
-<b>D3DKMTOpenSyncObjectNtHandleFromName</b> opens an NT handle for a named shared monitored fence object, similar to what <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_opennthandlefromname.md">D3DKMTOpenNtHandleFromName</a> does for shared allocations.
+<b>D3DKMTOpenSyncObjectNtHandleFromName</b> opens an NT handle for a named shared monitored fence object, similar to what <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopennthandlefromname.md">D3DKMTOpenNtHandleFromName</a> does for shared allocations.
 
 ## Syntax
 
@@ -110,7 +110,7 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_opennthandlefromname.md">D3DKMTOpenNtHandleFromName</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopennthandlefromname.md">D3DKMTOpenNtHandleFromName</a>
 
 
 

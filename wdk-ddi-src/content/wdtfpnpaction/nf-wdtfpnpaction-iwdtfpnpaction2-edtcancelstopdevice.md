@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFDriverPNPAction.Interop.dll
 req.type-library: 
-req.lib: wdtfpnpaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -86,7 +86,6 @@ by setting EDTRS_QueryStopVetoed in ppResult.
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Desktop |
 | **Header** | wdtfpnpaction.h |
-| **Library** | wdtfpnpaction.h |
 
 ## See Also
 

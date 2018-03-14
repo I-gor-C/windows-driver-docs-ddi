@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -169,11 +169,14 @@ FORCEINLINE void UMDEtwLogMapAllocation(ULONGLONG hD3DAllocation,
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | umdprovider.h (include Umdprovider.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+
+
+
+<a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
 
 
 
@@ -182,10 +185,6 @@ FORCEINLINE void UMDEtwLogMapAllocation(ULONGLONG hD3DAllocation,
 
 
 <a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
-
-
-
-<a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
 
 
 

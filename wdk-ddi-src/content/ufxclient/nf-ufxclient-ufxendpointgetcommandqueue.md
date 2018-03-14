@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
 topic_type:
@@ -77,7 +77,6 @@ For an code example that shows how to create an endpoint object and initialize i
 | **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
 
 ## See Also

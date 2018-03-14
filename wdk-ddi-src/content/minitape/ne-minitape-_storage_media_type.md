@@ -443,15 +443,15 @@ typedef enum _STORAGE_MEDIA_TYPE {
 
 ## See Also
 
+<a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
+
+
+
+<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
+
+
+
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
-
-
-
-<a href="..\minitape\ns-minitape-_device_media_info.md">DEVICE_MEDIA_INFO</a>
-
-
-
-<a href="..\minitape\ns-minitape-_get_media_types.md">GET_MEDIA_TYPES</a>
 
 
 

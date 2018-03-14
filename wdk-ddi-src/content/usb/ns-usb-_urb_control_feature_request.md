@@ -68,10 +68,6 @@ struct _URB_CONTROL_FEATURE_REQUEST {
 ## Members
 
 
-`_URB`
-
-
-
 `FeatureSelector`
 
 Specifies the USB-defined feature code to be cleared or set. Using a feature code that is invalid, cannot be set, or cannot be cleared will cause the target to stall. The bus driver will copy the value in the <b>FeatureSelector</b> member to the <b>wValue</b> field of the setup packet.
@@ -138,15 +134,15 @@ Likewise, when a driver issues a URB with a function type of URB_FUNCTION_SYNC_R
 
 ## See Also
 
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 
 
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-
-
-
-<a href="..\usb\ns-usb-_urb.md">URB</a>
 
 
 

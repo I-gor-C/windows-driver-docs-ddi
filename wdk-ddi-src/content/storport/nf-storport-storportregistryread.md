@@ -259,11 +259,11 @@ The buffer used in this routine is allocated by calling <a href="..\storport\nf-
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportfreeregistrybuffer.md">StorPortFreeRegistryBuffer</a>
-
-
-
 <a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>
+
+
+
+<a href="..\storport\nf-storport-storportfreeregistrybuffer.md">StorPortFreeRegistryBuffer</a>
 
 
 

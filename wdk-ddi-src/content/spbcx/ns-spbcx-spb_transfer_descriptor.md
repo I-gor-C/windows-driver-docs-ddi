@@ -94,7 +94,7 @@ The <b>DelayInUs</b> member specifies a delay before the start of the transfer. 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
 
 
 
@@ -102,7 +102,7 @@ The <b>DelayInUs</b> member specifies a delay before the start of the transfer. 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
 
 
 

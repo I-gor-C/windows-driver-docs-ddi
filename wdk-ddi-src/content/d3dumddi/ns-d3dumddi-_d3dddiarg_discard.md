@@ -89,11 +89,11 @@ An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff56923
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a>
 
 
 

@@ -89,10 +89,6 @@ Only a single stream source is set by a <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
 D3DDP2OP_SETSTREAMSOURCE
 
 
@@ -102,6 +98,10 @@ D3DDP2OP_SETSTREAMSOURCE
 
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2setstreamsourceum.md">D3DHAL_DP2SETSTREAMSOURCEUM</a>
+
+
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 
 

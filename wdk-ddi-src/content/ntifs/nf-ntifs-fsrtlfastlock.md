@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntifs.h
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -127,7 +127,6 @@ A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure point
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | ntifs.h |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

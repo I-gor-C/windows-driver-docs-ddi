@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
 topic_type:
@@ -76,7 +76,6 @@ The <b>WheaIsValidErrorRecordSignature </b>function verifies that the specified 
 | **Windows version** | Supported in Windows 7 and later versions of Windows.  |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also

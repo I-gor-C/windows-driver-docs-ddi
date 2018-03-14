@@ -78,7 +78,7 @@ A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_property_data.md">
 
 `PoolType`
 
-A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>-typed enumerator that specifies the type of memory to be allocated.
+A <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>-typed enumerator that specifies the type of memory to be allocated.
 
 `PropertyMemoryAttributes`
 

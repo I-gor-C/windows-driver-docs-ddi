@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -150,15 +150,14 @@ To obtain a list of available fonts, create an information context for the curre
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h (include Prcomoem.h) |
-| **Library** | prcomoem.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552941">IPrintCoreHelperUni::SetFontSubstitution</a>
-
-
-
 <a href="..\prcomoem\nn-prcomoem-iprintcorehelperuni.md">IPrintCoreHelperUni</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552941">IPrintCoreHelperUni::SetFontSubstitution</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -85,7 +85,6 @@ This method returns an <b>HRESULT</b> value.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** | printerextension.h |
 
 ## See Also
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -157,19 +157,18 @@ For more information, see <a href="https://msdn.microsoft.com/4a87cedf-066a-445b
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h (include Prcomoem.h) |
-| **Library** | prcomoem.h |
 
 ## See Also
+
+<a href="..\prcomoem\nn-prcomoem-iprintcoreps2.md">IPrintCorePS2</a>
+
+
 
 <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552996">IPrintCorePS2::EnumOptions</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintcoreps2.md">IPrintCorePS2</a>
 
 
 

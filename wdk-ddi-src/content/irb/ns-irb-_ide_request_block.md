@@ -468,7 +468,7 @@ Specifies the target ID of the device.
 Indicates the time in seconds after which the request will time out.
 
 ## Remarks
-The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\minitape\ns-minitape-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
+The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -477,11 +477,11 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
 
 ## See Also
 
+<a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
-
-
-
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
 
 
 
@@ -489,7 +489,7 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
 
 
 
-<a href="..\minitape\ns-minitape-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaportDeviceBusy</a>
 
 
 

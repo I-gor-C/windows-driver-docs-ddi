@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -78,7 +78,6 @@ This function returns STATUS_SUCCESS when completed successfully. When an invali
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -44,7 +44,7 @@ req.typenames: D3DKMT_RELEASEKEYEDMUTEX2
 ---
 
 # _D3DKMT_RELEASEKEYEDMUTEX2 structure
-Describes a keyed mutex object that the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_releasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a> function releases that includes private data.
+Describes a keyed mutex object that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a> function releases that includes private data.
 
 ## Syntax
 ````
@@ -89,7 +89,7 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX2 {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_releasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a>
 
 
 

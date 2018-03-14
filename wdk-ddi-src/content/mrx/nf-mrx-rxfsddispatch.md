@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -151,7 +151,6 @@ A few IRPs are treated as special and handled internally by RDBSS. For example, 
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | mrx.h (include Mrx.h, Rxstruc.h, Struchdr.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

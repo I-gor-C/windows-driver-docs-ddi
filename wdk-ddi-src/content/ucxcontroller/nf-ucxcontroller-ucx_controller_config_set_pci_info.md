@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -105,7 +105,6 @@ This function does not return a value.
 | **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

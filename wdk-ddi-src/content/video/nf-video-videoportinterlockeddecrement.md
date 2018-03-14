@@ -85,11 +85,11 @@ This function is atomic only with respect to other <b>VideoPortInterlocked</b><i
 
 ## See Also
 
-<a href="..\video\nf-video-videoportinterlockedexchange.md">VideoPortInterlockedExchange</a>
-
-
-
 <a href="..\video\nf-video-videoportinterlockedincrement.md">VideoPortInterlockedIncrement</a>
+
+
+
+<a href="..\video\nf-video-videoportinterlockedexchange.md">VideoPortInterlockedExchange</a>
 
 
 

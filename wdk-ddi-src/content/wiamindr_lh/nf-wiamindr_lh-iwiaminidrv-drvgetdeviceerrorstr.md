@@ -7,7 +7,7 @@ old-location: image\iwiaminidrv_drvgetdeviceerrorstr.htm
 old-project: image
 ms.assetid: c34a6834-8875-400c-9634-6c2b9b68164f
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 2/27/2018
 ms.keywords: IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, IWiaMiniDrv::drvGetDeviceErrorStr, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, drvGetDeviceErrorStr method [Imaging Devices], drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface, drvGetDeviceErrorStr,IWiaMiniDrv.drvGetDeviceErrorStr, image.iwiaminidrv_drvgetdeviceerrorstr, wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wiamindr_lh.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -92,4 +92,3 @@ To obtain an error string that describes a device-specific minidriver-generated 
 | **Windows version** | Available in Windows Me and in Windows XP and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** | wiamindr_lh.h |

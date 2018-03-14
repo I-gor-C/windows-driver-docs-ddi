@@ -82,11 +82,7 @@ The DirectX 9.0 runtime sets <b>dwHandle</b> to zero to indicate a fixed functio
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
-
-
-
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+D3DDP2OP_CREATEVERTEXSHADERFUNC
 
 
 
@@ -94,7 +90,11 @@ The DirectX 9.0 runtime sets <b>dwHandle</b> to zero to indicate a fixed functio
 
 
 
-D3DDP2OP_CREATEVERTEXSHADERFUNC
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
+
+
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 
 

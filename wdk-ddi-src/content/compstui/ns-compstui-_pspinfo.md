@@ -74,7 +74,7 @@ CPSUI-supplied handle to the property sheet page.
 
 `pfnComPropSheet`
 
-CPSUI-supplied pointer to its <a href="..\compstui\nc-compstui-pfncompropsheet.md">ComPropSheet</a> function.
+CPSUI-supplied pointer to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.
 
 `wReserved`
 

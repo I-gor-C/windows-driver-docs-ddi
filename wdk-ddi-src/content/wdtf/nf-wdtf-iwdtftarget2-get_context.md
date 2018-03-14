@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTF.Interop.metadata_dll
 req.type-library: 
-req.lib: wdtf.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -102,7 +102,6 @@ see <a href="https://msdn.microsoft.com/f9e3de20-28be-40c6-802c-f4637b3f6c20">Cr
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtf.h (include WDTF.h) |
-| **Library** | wdtf.h |
 
 ## See Also
 

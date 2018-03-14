@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -153,7 +153,6 @@ Available performance optimizations depend on the version of <a href="..\storpor
 | ---- |:---- |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **DDI compliance rules** | StorPortPerfOpts |
 
 ## See Also

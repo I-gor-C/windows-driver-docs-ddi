@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -184,7 +184,6 @@ The caller should subsequently call <a href="https://msdn.microsoft.com/686D141E
 | ---- |:---- |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

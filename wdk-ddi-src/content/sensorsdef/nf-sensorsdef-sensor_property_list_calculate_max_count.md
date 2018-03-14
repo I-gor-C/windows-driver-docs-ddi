@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,7 +73,6 @@ The <b>SENSOR_PROPERTY_LIST_CALCULATE_MAX_COUNT</b> function returns a ULONG val
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | sensorsdef.h |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

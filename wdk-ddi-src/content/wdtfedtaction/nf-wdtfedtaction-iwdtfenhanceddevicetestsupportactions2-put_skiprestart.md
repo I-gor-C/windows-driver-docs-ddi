@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFDriverEDTAction.Interop.dll
 req.type-library: 
-req.lib: wdtfedtaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -82,7 +82,6 @@ attempt to restart the target device by default. Use this method to skip that st
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtfedtaction.h |
-| **Library** | wdtfedtaction.h |
 
 ## See Also
 

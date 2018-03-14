@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= PASSIVE_LEVEL"
 topic_type:
@@ -95,7 +95,6 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 | **Windows version** | Versions:\_Supported in Windows Vista, and later.  |
 | **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 
 ## See Also

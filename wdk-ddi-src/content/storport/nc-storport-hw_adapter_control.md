@@ -987,7 +987,11 @@ The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header 
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+<a href="..\storport\nf-storport-storportsetpowersettingnotificationguids.md">StorPortSetPowerSettingNotificationGuids</a>
+
+
+
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 
 
 
@@ -999,11 +1003,7 @@ The <b>HW_ADAPTER_CONTROL</b> function type is defined in the Storport.h header 
 
 
 
-<a href="..\storport\nf-storport-storportsetpowersettingnotificationguids.md">StorPortSetPowerSettingNotificationGuids</a>
-
-
-
-<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
 
 

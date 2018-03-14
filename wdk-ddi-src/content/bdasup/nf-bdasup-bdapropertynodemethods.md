@@ -96,11 +96,11 @@ A BDA minidriver calls the <b>BdaPropertyNodeMethods</b> function to retrieve th
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564328">KSPROPERTY_BDA_NODE_METHODS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564328">KSPROPERTY_BDA_NODE_METHODS</a>
 
 
 

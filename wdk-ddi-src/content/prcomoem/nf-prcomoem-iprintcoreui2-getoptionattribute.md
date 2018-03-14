@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -179,9 +179,16 @@ For more information, see <a href="https://msdn.microsoft.com/d35f0811-d572-422c
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h (include Prcomoem.h) |
-| **Library** | prcomoem.h |
 
 ## See Also
+
+<a href="..\prcomoem\nn-prcomoem-iprintcoreui2.md">IPrintCoreUI2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553056">IPrintCoreUI2::GetFeatureAttribute</a>
+
+
 
 <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a>
 
@@ -192,14 +199,6 @@ For more information, see <a href="https://msdn.microsoft.com/d35f0811-d572-422c
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553052">IPrintCoreUI2::EnumOptions</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintcoreui2.md">IPrintCoreUI2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553056">IPrintCoreUI2::GetFeatureAttribute</a>
 
 
 

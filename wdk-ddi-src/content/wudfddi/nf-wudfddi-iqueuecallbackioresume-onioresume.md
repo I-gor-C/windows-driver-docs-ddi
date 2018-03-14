@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wudfddi.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -83,7 +83,6 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md"
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** | wudfddi.h |
 
 ## See Also
 
@@ -95,11 +94,11 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md"
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md">IQueueCallbackIoResume</a>
-
-
-
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md">IQueueCallbackIoResume</a>
 
 
 

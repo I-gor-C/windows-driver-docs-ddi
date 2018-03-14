@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -74,5 +74,4 @@ None
 | **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.23 |
 | **Header** | wdfcompaniontarget.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |

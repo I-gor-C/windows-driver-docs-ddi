@@ -88,11 +88,11 @@ Only PMI configuration data that the power meter supports with read/write permis
 
 ## See Also
 
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+
+
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
-
-
-<a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
 
 
 
@@ -100,7 +100,7 @@ Only PMI configuration data that the power meter supports with read/write permis
 
 
 
-<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
 
 
 

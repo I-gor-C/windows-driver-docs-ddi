@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -75,4 +75,3 @@ Use <b>QueryInterface</b> on the value that the <b>GetXpsPart</b> method returns
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** | filterpipeline.h |

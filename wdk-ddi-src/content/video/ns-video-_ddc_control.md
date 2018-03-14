@@ -79,11 +79,11 @@ Specifies the size, in bytes, of this DDC_CONTROL structure.
 
 ## See Also
 
+<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
-
-
-
-<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
 
 
 
@@ -91,11 +91,11 @@ Specifies the size, in bytes, of this DDC_CONTROL structure.
 
 
 
-<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
-
-
-
 <a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
+
+
+
+<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
 
 
 

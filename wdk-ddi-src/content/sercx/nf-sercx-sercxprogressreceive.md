@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -136,7 +136,6 @@ If the <b>SerCxProgressReceive</b> does not complete all outstanding work for th
 | **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also

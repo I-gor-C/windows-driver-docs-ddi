@@ -104,15 +104,15 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrolsflags.md">D3DDDI_OVERLAYCOLORCONTROLSFLAGS</a>
 
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getoverlaycolorcontrols.md">D3DDDIARG_GETOVERLAYCOLORCONTROLS</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
 
 
 

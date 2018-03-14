@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -123,7 +123,6 @@ The <i>pTransport</i> parameter passed to this routine was invalid.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
@@ -132,11 +131,11 @@ The <i>pTransport</i> parameter passed to this routine was invalid.
 
 
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a>
-
-
-
 <a href="..\rxce\nf-rxce-rxcequeryinformation.md">RxCeQueryInformation</a>
+
+
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a>
 
 
 

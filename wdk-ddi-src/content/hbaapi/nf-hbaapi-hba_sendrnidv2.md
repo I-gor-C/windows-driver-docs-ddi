@@ -112,15 +112,15 @@ The <b>HBA_SendRNIDV2</b> library routine serves a purpose very similar to the <
 
 ## See Also
 
+<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
+
+
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
 
 
 

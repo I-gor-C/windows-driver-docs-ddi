@@ -137,7 +137,7 @@ The <b>EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART</b> function type is defined in th
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_flush.md">EvtDeviceSelfManagedIoFlush</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a>
 
 
 
@@ -149,7 +149,7 @@ The <b>EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART</b> function type is defined in th
 
 
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_flush.md">EvtDeviceSelfManagedIoFlush</a>
 
 
 

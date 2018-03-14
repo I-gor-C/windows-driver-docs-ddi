@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -178,20 +178,19 @@ When <b>RxCeBuildConnectionOverMultipleTransports</b> is successful, the virtual
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
+
+
 
 <a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
 
 
 
 <a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
 
 
 

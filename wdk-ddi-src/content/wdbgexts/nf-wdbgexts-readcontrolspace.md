@@ -7,7 +7,7 @@ old-location: debugger\readcontrolspace.htm
 old-project: debugger
 ms.assetid: 4b6955a5-ca03-418d-9eba-fdbe48599922
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 2/27/2018
 ms.keywords: ReadControlSpace, ReadControlSpace function [Windows Debugging], WdbgExts_Ref_8337344a-4a97-4f74-9be4-8fdd771d8bbf.xml, debugger.readcontrolspace, wdbgexts/ReadControlSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -93,4 +93,3 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** | NtosKrnl.exe |

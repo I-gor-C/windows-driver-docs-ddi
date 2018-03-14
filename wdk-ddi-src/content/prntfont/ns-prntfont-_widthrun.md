@@ -111,11 +111,11 @@ For East Asian device fonts, the <b>fwdAveCharWidth</b> and <b>fwdMaxCharInc</b>
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_widthtable.md">WIDTHTABLE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
+
+
+
+<a href="..\prntfont\ns-prntfont-_widthtable.md">WIDTHTABLE</a>
 
 
 

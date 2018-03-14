@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFDriverSetupDeviceAction.Interop.dll
 req.type-library: 
-req.lib: wdtfdriversetupdeviceaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -79,7 +79,6 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Desktop |
 | **Header** | wdtfdriversetupdeviceaction.h |
-| **Library** | wdtfdriversetupdeviceaction.h |
 
 ## See Also
 

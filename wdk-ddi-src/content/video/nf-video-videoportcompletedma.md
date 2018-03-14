@@ -104,7 +104,7 @@ It is important to note that the scatter/gather list built by <b>VideoPortStartD
 
 
 
-<a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
 
 
 
@@ -112,7 +112,7 @@ It is important to note that the scatter/gather list built by <b>VideoPortStartD
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
+<a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
 
 
 

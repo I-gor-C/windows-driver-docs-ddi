@@ -118,7 +118,11 @@ The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
 
 
 
@@ -126,15 +130,11 @@ The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport 
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
 
 
 

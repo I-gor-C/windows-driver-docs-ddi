@@ -77,11 +77,11 @@ The system time is acquired from <a href="..\wdm\nf-wdm-kequeryperformancecounte
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a>
-
-
-
 <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a>
 
 
 

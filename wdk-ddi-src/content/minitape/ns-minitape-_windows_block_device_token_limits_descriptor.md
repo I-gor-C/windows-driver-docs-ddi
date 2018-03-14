@@ -65,7 +65,7 @@ typedef struct _WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR {
 
 `DefaultInactivityTimer`
 
-The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="..\minitape\ns-minitape-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure is set to 0.
+The default value that is used by the copy provider when the <b>InactivityTimeout</b> of the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure is set to 0.
 
 `DescriptorLength`
 
@@ -77,19 +77,19 @@ The descriptor type identifying this structure. The descriptor type is defined i
 
 `MaximumInactivityTimer`
 
-The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="..\minitape\ns-minitape-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure.
+The maximum available to specify as the timeout value in the <b>InactivityTimeout</b> member of the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> structure.
 
 `MaximumRangeDescriptors`
 
-The maximum number of range descriptors that may be included along with the <a href="..\minitape\ns-minitape-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\minitape\ns-minitape-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
+The maximum number of range descriptors that may be included along with the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
 
 `MaximumTokenTransferSize`
 
-The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="..\minitape\ns-minitape-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\minitape\ns-minitape-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
+The maximum number of logical blocks that can be specified as a total of the block range descriptors in the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures.
 
 `OptimalTransferCount`
 
-The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="..\minitape\ns-minitape-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\minitape\ns-minitape-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.
+The optimal number of logical blocks, as a maximum, to specify as a total of the block range descriptors in the <a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a> or the <a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a> structures. Offload data transfer performance may degrade if the transfer count is larger than this value.
 
 `VendorSpecific`
 
@@ -106,15 +106,15 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
+<a href="..\storport\ns-storport-_vpd_third_party_copy_page.md">VPD_THIRD_PARTY_COPY_PAGE</a>
 
 
 
-<a href="..\minitape\ns-minitape-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a>
+<a href="..\storport\ns-storport-write_using_token_header.md">WRITE_USING_TOKEN_HEADER</a>
 
 
 
-<a href="..\minitape\ns-minitape-_vpd_third_party_copy_page.md">VPD_THIRD_PARTY_COPY_PAGE</a>
+<a href="..\storport\ns-storport-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
 
 
 

@@ -74,7 +74,7 @@ typedef struct _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_queryremotevidpnsourcefromgdidisplayname.md">D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryremotevidpnsourcefromgdidisplayname.md">D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ksproxy.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -75,15 +75,14 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** | ksproxy.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565095">KSPROPERTY_CLOCK_TIME</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559751">IKsClockPropertySet::KsGetTime</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565095">KSPROPERTY_CLOCK_TIME</a>
 
 
 

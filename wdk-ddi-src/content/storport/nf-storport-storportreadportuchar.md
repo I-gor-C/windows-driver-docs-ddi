@@ -75,7 +75,7 @@ None
 
 ## Remarks
 
-For more information, see the <a href="..\srb\nf-srb-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadportbufferuchar.md">StorPortReadPortBufferUchar</a>.
+For more information, see the <a href="..\storport\nf-storport-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadportbufferuchar.md">StorPortReadPortBufferUchar</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,7 +86,7 @@ For more information, see the <a href="..\srb\nf-srb-scsiportreadportbufferuchar
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a>
+<a href="..\storport\nf-storport-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a>
 
 
 

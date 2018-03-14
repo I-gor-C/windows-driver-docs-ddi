@@ -26,7 +26,7 @@ req.max-support: Unavailable in UMDF 2.0 and later.
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wudfusb.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -125,7 +125,6 @@ For more information about the <b>OnReaderCompletion</b> callback function and U
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** | wudfusb.h |
 
 ## See Also
 

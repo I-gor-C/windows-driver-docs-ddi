@@ -103,11 +103,7 @@ The Bluetooth driver stack determines the number of array items in the
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
-
-
-
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_attribute_search.md">IOCTL_BTH_SDP_ATTRIBUTE_SEARCH</a>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a>
 
 
 
@@ -115,7 +111,11 @@ The Bluetooth driver stack determines the number of array items in the
 
 
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a>
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_attribute_search.md">IOCTL_BTH_SDP_ATTRIBUTE_SEARCH</a>
+
+
+
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
 
 
 

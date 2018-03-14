@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -97,7 +97,6 @@ For a code example that uses WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, see <a hr
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

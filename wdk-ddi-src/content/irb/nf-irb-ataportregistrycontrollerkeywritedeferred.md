@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -142,7 +142,6 @@ The buffer pointed to by <i>Buffer </i>must be allocated by using <a href="..\ir
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -79,11 +79,11 @@ See <a href="https://msdn.microsoft.com/d26d169f-4116-4d81-94c7-63c92d22877d">Ex
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
-
-
-
 <a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
+
+
+
+<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
 
 
 

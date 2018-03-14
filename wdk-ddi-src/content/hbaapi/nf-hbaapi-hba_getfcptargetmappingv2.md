@@ -152,7 +152,7 @@ The difference between the <b>HBA_GetFcpTargetMappingV2</b> routine and the <a h
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+<a href="..\hbaapi\ns-hbaapi-hba_fcptargetmappingv2.md">HBA_FCPTargetMappingV2</a>
 
 
 
@@ -160,7 +160,7 @@ The difference between the <b>HBA_GetFcpTargetMappingV2</b> routine and the <a h
 
 
 
-<a href="..\hbaapi\ns-hbaapi-hba_fcptargetmappingv2.md">HBA_FCPTargetMappingV2</a>
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
 
 

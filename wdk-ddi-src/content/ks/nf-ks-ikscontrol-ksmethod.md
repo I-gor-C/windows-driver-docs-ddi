@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ks.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -95,11 +95,10 @@ To determine the buffer size that is required for a specific method request, you
 | ---- |:---- |
 | **Target Platform** | DesktopMobile |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | ks.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
+<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 
 
 
@@ -107,7 +106,7 @@ To determine the buffer size that is required for a specific method request, you
 
 
 
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
 
 
 

@@ -382,11 +382,11 @@ The version number of the System Firmware Table interface. Version number consta
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh802471">ReadSystemFirmwareTable</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh802466">EnumSystemFirmwareTables</a>
 
 
 

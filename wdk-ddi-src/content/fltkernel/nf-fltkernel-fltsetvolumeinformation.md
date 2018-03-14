@@ -189,10 +189,6 @@ To query information about a volume, call <a href="..\fltkernel\nf-fltkernel-flt
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 
 
@@ -202,6 +198,10 @@ To query information about a volume, call <a href="..\fltkernel\nf-fltkernel-flt
 
 
 <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
+
+
+
+<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
 
 
 

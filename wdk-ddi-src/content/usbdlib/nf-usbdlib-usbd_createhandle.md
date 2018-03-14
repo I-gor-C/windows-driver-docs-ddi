@@ -266,15 +266,15 @@ NTSTATUS MyAddDevice( __in PDRIVER_OBJECT  DriverObject,
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
 
 
 
 <a href="..\usbdlib\nf-usbdlib-usbd_closehandle.md">USBD_CloseHandle</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>
 
 
 

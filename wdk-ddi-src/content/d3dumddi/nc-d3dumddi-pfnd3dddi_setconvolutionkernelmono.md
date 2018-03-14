@@ -144,11 +144,11 @@ alpha = V<sub>f</sub> - truncate(V<sub>f</sub>)
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setconvolutionkernelmono.md">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setconvolutionkernelmono.md">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ks.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -74,7 +74,6 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 | ---- |:---- |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | ks.h |
 
 ## See Also
 

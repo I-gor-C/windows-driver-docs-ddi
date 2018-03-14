@@ -88,11 +88,11 @@ When the reset state is terminated, the pin can again accept new data and pass d
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
-
-
-
 <a href="..\ks\nc-ks-pfnksfiltervoid.md">AVStrMiniFilterReset</a>
+
+
+
+<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
 
 
 

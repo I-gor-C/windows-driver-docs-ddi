@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -79,7 +79,6 @@ None
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 

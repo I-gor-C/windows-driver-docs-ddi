@@ -76,7 +76,7 @@ Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">P
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk_mbr.md">CREATE_DISK_MBR</a>
+<a href="..\ntdddisk\ns-ntdddisk-_create_disk_gpt.md">CREATE_DISK_GPT</a>
 
 
 
@@ -84,11 +84,11 @@ Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">P
 
 
 
+<a href="..\ntdddisk\ns-ntdddisk-_create_disk_mbr.md">CREATE_DISK_MBR</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a>
-
-
-
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk_gpt.md">CREATE_DISK_GPT</a>
 
 
 

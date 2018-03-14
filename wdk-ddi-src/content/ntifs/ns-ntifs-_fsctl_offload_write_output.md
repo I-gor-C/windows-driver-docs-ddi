@@ -101,11 +101,11 @@ The resulting length written, <b>LengthWritten</b>, may be smaller than what was
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
-
-
-
 <a href="..\ntifs\ns-ntifs-_fsctl_offload_write_input.md">FSCTL_OFFLOAD_WRITE_INPUT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
 
 
 

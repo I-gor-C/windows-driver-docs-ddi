@@ -94,7 +94,7 @@ For code examples that show how to use the <b>IOCTL_GPIO_WRITE_PINS</b> request 
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
 
 
@@ -102,7 +102,7 @@ For code examples that show how to use the <b>IOCTL_GPIO_WRITE_PINS</b> request 
 
 
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 
 
 

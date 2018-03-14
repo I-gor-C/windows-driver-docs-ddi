@@ -220,11 +220,11 @@ Reserved. Should be set to zero.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
-
-
-
 <a href="..\dxva\ns-dxva-_dxva_coppcommand.md">DXVA_COPPCommand</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -93,4 +93,3 @@ None
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** | NtosKrnl.exe |

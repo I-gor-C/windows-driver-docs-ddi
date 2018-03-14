@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ks.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -79,15 +79,10 @@ The macro is defined as follows:
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | ks.h |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksmethodhandlerwithallocator.md">KsMethodHandlerWithAllocator</a>
-
-
-
-<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 
 
 
@@ -99,11 +94,15 @@ The macro is defined as follows:
 
 
 
+<a href="..\ks\nf-ks-ksmethodhandlerwithallocator.md">KsMethodHandlerWithAllocator</a>
+
+
+
+<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+
+
+
 <a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
-
-
-
-<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 
 
 

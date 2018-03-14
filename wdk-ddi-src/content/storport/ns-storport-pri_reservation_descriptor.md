@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 # PRI_RESERVATION_DESCRIPTOR structure
-The PRI_RESERVATION_DESCRIPTOR structure is used to construct the <a href="..\scsi\ns-scsi-pri_reservation_list.md">PRI_RESERVATION_LIST</a> structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
+The PRI_RESERVATION_DESCRIPTOR structure is used to construct the <a href="..\storport\ns-storport-pri_reservation_list.md">PRI_RESERVATION_LIST</a> structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
 
 ## Syntax
 ````
@@ -96,11 +96,11 @@ The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOC
 
 ## See Also
 
-<a href="..\scsi\ns-scsi-pri_reservation_list.md">PRI_RESERVATION_LIST</a>
-
-
-
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
+
+
+
+<a href="..\storport\ns-storport-pri_reservation_list.md">PRI_RESERVATION_LIST</a>
 
 
 

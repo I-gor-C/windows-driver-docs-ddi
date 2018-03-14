@@ -72,11 +72,11 @@ typedef struct _D3DDDI_CREATECONTEXTFLAGS {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createcontext.md">D3DDDICB_CREATECONTEXT</a>
+
+
+
+<a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
 
 
 

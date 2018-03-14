@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -78,4 +78,3 @@ The client driver uses the <b>UFX_DEVICE_CALLBACKS_INIT</b> macro the initialize
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** | NtosKrnl.exe |

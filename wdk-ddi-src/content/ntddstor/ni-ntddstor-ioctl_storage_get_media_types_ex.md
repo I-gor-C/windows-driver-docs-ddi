@@ -56,7 +56,7 @@ None.
 None.
 
 ### Output Buffer
-The driver returns an array of <a href="..\minitape\ns-minitape-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures, one for each media type supported by the device, embedded in a <a href="..\minitape\ns-minitape-_get_media_types.md">GET_MEDIA_TYPES</a> structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+The driver returns an array of <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures, one for each media type supported by the device, embedded in a <a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a> structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 ### Output Buffer Length
 <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be &gt;= <b>sizeof(</b>GET_MEDIA_TYPES<b>)</b> plus additional device-type-specific data, if any.
@@ -78,11 +78,11 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_device_media_info.md">DEVICE_MEDIA_INFO</a>
+<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
 
 
 
-<a href="..\minitape\ns-minitape-_get_media_types.md">GET_MEDIA_TYPES</a>
+<a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
 
 
 

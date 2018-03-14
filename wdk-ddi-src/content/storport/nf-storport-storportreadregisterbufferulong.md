@@ -85,7 +85,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterulong.md">StorPortReadRegisterUlong</a>.
+For more information, see <a href="..\storport\nf-storport-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterulong.md">StorPortReadRegisterUlong</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,7 +96,7 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferulong
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>
+<a href="..\storport\nf-storport-scsiportreadregisterbufferulong.md">ScsiPortReadRegisterBufferUlong</a>
 
 
 

@@ -61,7 +61,7 @@ PVOID ChangerClassAllocatePool(
 
 `PoolType`
 
-Indicates the type of pool memory to allocate. See <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> for a list of types.
+Indicates the type of pool memory to allocate. See <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a> for a list of types.
 
 `NumberOfBytes`
 
@@ -82,7 +82,7 @@ None
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
+<a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>
 
 
 

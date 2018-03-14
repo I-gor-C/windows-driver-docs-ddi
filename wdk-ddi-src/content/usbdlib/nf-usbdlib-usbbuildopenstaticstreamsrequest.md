@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -98,15 +98,14 @@ For a code example that shows the URB format required for an open-streams reques
 | **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>
+
+
+
+<a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
 
 
 

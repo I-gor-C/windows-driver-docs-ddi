@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -132,4 +132,3 @@ When <b>DrvConvertDevMode</b> is called with a <b>NULL</b> DEVMODEW structure po
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** | NtosKrnl.exe |

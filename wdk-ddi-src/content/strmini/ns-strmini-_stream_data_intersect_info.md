@@ -77,7 +77,7 @@ Specifies the size in bytes of the <b>DataFormatBuffer</b>.
 Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.
 
 ## Remarks
-The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="..\strmini\nc-strmini-phw_receive_device_srb.md">StrMiniReceiveDevicePacket</a>.
+The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

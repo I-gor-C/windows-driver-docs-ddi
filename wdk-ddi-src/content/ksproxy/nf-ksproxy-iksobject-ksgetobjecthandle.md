@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ksproxy.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -70,7 +70,6 @@ Applications can use the handle that <b>KsGetObjectHandle</b> returns to send co
 | ---- |:---- |
 | **Target Platform** | DesktopMobile |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** | ksproxy.h |
 
 ## See Also
 

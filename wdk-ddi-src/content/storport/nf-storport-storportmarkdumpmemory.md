@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -130,7 +130,7 @@ An invalid flag value was specified in the <i>Flags</i> parameter.
 
 ## Remarks
 
-The <b>StorPortMarkDumpMemory</b> routine must only be called by a miniport driver in its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> or <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> routines.
+The <b>StorPortMarkDumpMemory</b> routine must only be called by a miniport driver in its <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> or <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> routines.
 
 If <i>Length</i> = 0, the entire section containing <i>Address</i> is marked.
 
@@ -142,5 +142,4 @@ Miniport drivers should call <b>StorPortMarkDumpMemory</b> to ensure that the me
 | **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |

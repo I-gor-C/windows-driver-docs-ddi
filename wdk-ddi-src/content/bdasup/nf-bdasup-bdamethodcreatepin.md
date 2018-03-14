@@ -94,19 +94,11 @@ If a BDA minidriver must create a pin without relying on the network provider, t
 
 ## See Also
 
-<a href="..\bdasup\nf-bdasup-bdamethoddeletepin.md">BdaMethodDeletePin</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
-
-
-
-<a href="..\bdasup\nf-bdasup-bdacreatepin.md">BdaCreatePin</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563411">KSMETHOD_BDA_CREATE_PIN_FACTORY</a>
+
+
+
+<a href="..\bdasup\nf-bdasup-bdamethoddeletepin.md">BdaMethodDeletePin</a>
 
 
 
@@ -115,6 +107,14 @@ If a BDA minidriver must create a pin without relying on the network provider, t
 
 
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
+
+
+
+<a href="..\bdasup\nf-bdasup-bdacreatepin.md">BdaCreatePin</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
 
 
 

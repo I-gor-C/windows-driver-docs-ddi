@@ -79,11 +79,11 @@ typedef struct _D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensyncobjectfromnthandle2.md">D3DKMTOpenSyncObjectFromNtHandle2</a>
-
-
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensyncobjectnthandlefromname.md">D3DKMTOpenSyncObjectNtHandleFromName</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopensyncobjectfromnthandle2.md">D3DKMTOpenSyncObjectFromNtHandle2</a>
 
 
 

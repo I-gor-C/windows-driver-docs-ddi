@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -96,5 +96,4 @@ Typically, the client driver calls this method in its implementation of the <a h
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxsstreams.h (include Ucxclass.h, Ucxstreams.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |

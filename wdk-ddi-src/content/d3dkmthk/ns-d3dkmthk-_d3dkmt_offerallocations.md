@@ -44,7 +44,7 @@ req.typenames: D3DKMT_OFFERALLOCATIONS
 ---
 
 # _D3DKMT_OFFERALLOCATIONS structure
-Defines the video memory allocations that the driver offers for reuse. Used with the  <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_offerallocations.md">D3DKMTOfferAllocations</a>  function.
+Defines the video memory allocations that the driver offers for reuse. Used with the  <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>  function.
 
 ## Syntax
 ````
@@ -97,11 +97,11 @@ If the user-mode driver uses the array specified by <b>HandleList</b> to offer a
 
 ## See Also
 
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>
+
+
+
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_offer_priority.md">D3DKMT_OFFER_PRIORITY</a>
-
-
-
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_offerallocations.md">D3DKMTOfferAllocations</a>
 
 
 

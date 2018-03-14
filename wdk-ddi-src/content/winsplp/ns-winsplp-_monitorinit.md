@@ -94,11 +94,11 @@ Caller-supplied pointer to a string representing a server name.
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
-
-
-
 <a href="..\winsplp\ns-winsplp-_monitorreg.md">MONITORREG</a>
+
+
+
+<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
 
 
 

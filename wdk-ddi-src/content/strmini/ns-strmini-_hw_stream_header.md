@@ -67,7 +67,7 @@ typedef struct _HW_STREAM_HEADER {
 
 `DeviceEventRoutine`
 
-Points to the minidriver's <a href="..\strmini\nc-strmini-phw_event_routine.md">StrMiniEvent</a> routine.
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568457">StrMiniEvent</a> routine.
 
 `DeviceEventsArray`
 
@@ -117,11 +117,11 @@ Pointer to the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure that
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
-
-
-
 <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
+
+
+
+<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
 
 
 

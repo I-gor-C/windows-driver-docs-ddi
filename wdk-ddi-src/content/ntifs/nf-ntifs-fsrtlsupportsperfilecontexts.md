@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntifs.h
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -76,7 +76,6 @@ None
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** | ntifs.h |
 | **IRQL** | Any |
 
 ## See Also

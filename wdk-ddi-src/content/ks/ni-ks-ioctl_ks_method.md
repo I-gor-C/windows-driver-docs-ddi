@@ -78,7 +78,7 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 
 
 
@@ -86,7 +86,7 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
 
-<a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>
+<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
 
 
 
@@ -94,7 +94,7 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
 
-<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
+<a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>
 
 
 

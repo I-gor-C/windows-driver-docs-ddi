@@ -184,11 +184,7 @@ Pointer to a miniport driver-supplied context that is passed back to the driver 
 
 ## See Also
 
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
-
-
-
-<a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567322">HwVidBankedMemoryCallback</a>
 
 
 
@@ -196,11 +192,7 @@ Pointer to a miniport driver-supplied context that is passed back to the driver 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567322">HwVidBankedMemoryCallback</a>
-
-
-
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
 
 
 
@@ -209,6 +201,14 @@ Pointer to a miniport driver-supplied context that is passed back to the driver 
 
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unshare_video_memory.md">IOCTL_VIDEO_UNSHARE_VIDEO_MEMORY</a>
+
+
+
+<a href="..\video\nf-video-videoportmapmemory.md">VideoPortMapMemory</a>
+
+
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
 
 
 

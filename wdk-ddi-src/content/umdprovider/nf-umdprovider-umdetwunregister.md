@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -90,7 +90,6 @@ The <a href="https://msdn.microsoft.com/fdcccf6f-2f31-4356-a4ee-3b6229c01b75">Ev
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | umdprovider.h (include Umdprovider.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

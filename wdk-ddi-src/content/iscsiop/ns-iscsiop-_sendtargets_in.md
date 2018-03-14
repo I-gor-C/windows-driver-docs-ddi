@@ -75,19 +75,19 @@ You must implement this method.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_sendtargets_out.md">SendTargets_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+
+
+
+<a href="..\iscsiop\ns-iscsiop-_sendtargets_out.md">SendTargets_OUT</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -104,15 +104,14 @@ If the plug-in cannot complete the operation, it should return an appropriate fa
 | **Windows version** | Available with Windows Vista and later versions of Unidrvui.dll and Ps5ui.dll, which are redistributable. This method is also available for XPSDrv drivers in Microsoft Windows XP if you have installed the XPS Essentials Pack.  |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h (include Prcomoem.h) |
-| **Library** | prcomoem.h |
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemuimxdc.md">IPrintOemUIMXDC</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+
+
+
+<a href="..\prcomoem\nn-prcomoem-iprintoemuimxdc.md">IPrintOemUIMXDC</a>
 
 
 

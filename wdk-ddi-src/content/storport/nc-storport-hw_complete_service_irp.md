@@ -138,11 +138,11 @@ The <b>HW_COMPLETE_SERVICE_IRP</b> function type is defined in the Storport.h he
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportcompleteserviceirp.md">StorPortCompleteServiceIrp</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
+
+
+
+<a href="..\storport\nf-storport-storportcompleteserviceirp.md">StorPortCompleteServiceIrp</a>
 
 
 

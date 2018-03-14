@@ -7,7 +7,7 @@ old-location: debugger\readiospace.htm
 old-project: debugger
 ms.assetid: 31118f7f-fcc4-45f9-a248-a1d6f929f3a2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 2/27/2018
 ms.keywords: ReadIoSpace, ReadIoSpace function [Windows Debugging], WdbgExts_Ref_e34c76a6-de5d-4347-90a7-959d5392680e.xml, debugger.readiospace, wdbgexts/ReadIoSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -88,4 +88,3 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** | NtosKrnl.exe |

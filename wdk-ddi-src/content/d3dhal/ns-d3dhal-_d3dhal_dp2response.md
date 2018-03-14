@@ -94,15 +94,15 @@ Specifies the number of responses (that is, the number of <a href="..\d3dhal\ns-
 
 
 
+D3DDP2OP_RESPONSECONTINUE
+
+
+
 D3DDP2OP_RESPONSEQUERY
 
 
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
-D3DDP2OP_RESPONSECONTINUE
 
 
 

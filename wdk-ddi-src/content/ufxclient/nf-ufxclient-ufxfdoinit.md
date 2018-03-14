@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -145,5 +145,4 @@ Return Value:
 | **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |

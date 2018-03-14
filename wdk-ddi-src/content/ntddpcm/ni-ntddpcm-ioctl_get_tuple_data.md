@@ -86,7 +86,7 @@ If there is no card in the indicated socket, the <b>Status</b> field is set to S
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551769">IRP_MN_WRITE_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538895">TUPLE_REQUEST</a>
 
 
 
@@ -94,7 +94,7 @@ If there is no card in the indicated socket, the <b>Status</b> field is set to S
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538895">TUPLE_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551769">IRP_MN_WRITE_CONFIG</a>
 
 
 

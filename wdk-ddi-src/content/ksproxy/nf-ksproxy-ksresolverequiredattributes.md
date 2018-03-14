@@ -82,7 +82,7 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
 
 
 
@@ -90,7 +90,7 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 
 
-<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 
 
 

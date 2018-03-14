@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -109,7 +109,6 @@ A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> inter
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

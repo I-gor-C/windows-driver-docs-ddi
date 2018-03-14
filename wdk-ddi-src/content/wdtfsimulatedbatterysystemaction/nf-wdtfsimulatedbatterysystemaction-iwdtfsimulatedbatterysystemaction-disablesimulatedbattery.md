@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdtfsimulatedbatterysystemaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -79,7 +79,6 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 | **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | wdtfsimulatedbatterysystemaction.h |
-| **Library** | wdtfsimulatedbatterysystemaction.h |
 
 ## See Also
 

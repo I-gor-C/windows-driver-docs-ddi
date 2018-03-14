@@ -76,11 +76,11 @@ The level that is specified in the <b>Level</b> member must be within the range 
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
 
 

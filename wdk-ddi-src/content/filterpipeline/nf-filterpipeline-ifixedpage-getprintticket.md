@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -75,7 +75,6 @@ After calling this method to get the page-level print ticket, a print driver fil
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** | filterpipeline.h |
 
 ## See Also
 

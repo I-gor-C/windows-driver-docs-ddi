@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -97,16 +97,19 @@ If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin2</b> cre
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
+
+<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
+
+
 
 <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
 
 
 
-<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 
 
 
@@ -115,10 +118,6 @@ If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin2</b> cre
 
 
 <a href="..\ks\ns-ks-kspin_connect.md">KSPIN_CONNECT</a>
-
-
-
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 
 
 

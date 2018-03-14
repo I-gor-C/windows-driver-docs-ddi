@@ -84,11 +84,11 @@ For more information about opportunistic locks, see the Microsoft Windows SDK do
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentoplock.md">FsRtlCurrentOplock</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
 
 
 

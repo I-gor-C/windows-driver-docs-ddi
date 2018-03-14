@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -81,4 +81,3 @@ The input print ticket should be used to determine and describe constraints on t
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prdrvcom.h (include Prdrvcom.h) |
-| **Library** | NtosKrnl.exe |

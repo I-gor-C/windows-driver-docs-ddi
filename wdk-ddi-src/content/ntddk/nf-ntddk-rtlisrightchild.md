@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntddk.h
+req.lib: 
 req.dll: 
 req.irql: See Remarks section.
 topic_type:
@@ -79,18 +79,9 @@ Callers of <b>RtlIsRightChild</b> can be running at IRQL &lt;= DISPATCH_LEVEL if
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** | ntddk.h |
 | **IRQL** | See Remarks section. |
 
 ## See Also
-
-<a href="..\ntddk\nf-ntddk-rtlisleftchild.md">RtlIsLeftChild</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
-
-
 
 <a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
 
@@ -100,7 +91,15 @@ Callers of <b>RtlIsRightChild</b> can be running at IRQL &lt;= DISPATCH_LEVEL if
 
 
 
+<a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
+
+
+
 <a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-rtlisleftchild.md">RtlIsLeftChild</a>
 
 
 

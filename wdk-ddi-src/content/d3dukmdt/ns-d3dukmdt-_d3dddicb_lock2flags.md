@@ -72,11 +72,11 @@ typedef struct _D3DDDICB_LOCK2FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a>
-
-
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock.md">Lock</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a>
 
 
 

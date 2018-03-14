@@ -78,7 +78,7 @@ Number of pairs of pins in the <b>pPinPairs</b> array.
 
 ## See Also
 
-<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
+<a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
 
 
 
@@ -86,7 +86,7 @@ Number of pairs of pins in the <b>pPinPairs</b> array.
 
 
 
-<a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
+<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Not applicable
 topic_type:
@@ -90,6 +90,5 @@ None
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wdfobject.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Not applicable |
 | **DDI compliance rules** | DriverCreate |

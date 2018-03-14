@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -99,4 +99,3 @@ STATUS_NOT_FOUND is returned if there was an error constructing the controller o
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** | NtosKrnl.exe |

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntddk.h
+req.lib: 
 req.dll: 
 req.irql: See Remarks section.
 topic_type:
@@ -77,7 +77,6 @@ Callers of <b>RtlIsRoot</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the 
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** | ntddk.h |
 | **IRQL** | See Remarks section. |
 
 ## See Also
@@ -86,11 +85,11 @@ Callers of <b>RtlIsRoot</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the 
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlisrightchild.md">RtlIsRightChild</a>
-
-
-
 <a href="..\ntddk\nf-ntddk-rtlisleftchild.md">RtlIsLeftChild</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-rtlisrightchild.md">RtlIsRightChild</a>
 
 
 

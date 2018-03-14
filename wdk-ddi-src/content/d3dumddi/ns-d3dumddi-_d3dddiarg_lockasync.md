@@ -129,11 +129,11 @@ Only one of the <b>RangeValid</b>, <b>AreaValid</b>, and <b>BoxValid</b> bit-fie
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_lockasyncflags.md">D3DDDI_LOCKASYNCFLAGS</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
 
 
 

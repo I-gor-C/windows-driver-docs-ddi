@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -467,16 +467,15 @@ Events generated from StorPort miniport drivers are published to the "Microsoft-
 | **Windows version** | Available in starting with Windows 8.1.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportetwevent2.md">StorPortEtwEvent2</a>
-
-
-
 <a href="..\storport\nf-storport-storportetwevent4.md">StorPortEtwEvent4</a>
+
+
+
+<a href="..\storport\nf-storport-storportetwevent2.md">StorPortEtwEvent2</a>
 
 
 

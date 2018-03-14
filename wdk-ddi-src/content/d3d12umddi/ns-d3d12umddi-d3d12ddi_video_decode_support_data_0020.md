@@ -115,15 +115,15 @@ This structure is retrieved through the <a href="..\d3d12umddi\nc-d3d12umddi-pfn
 
 ## See Also
 
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_support_flags_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_FLAGS</a>
-
-
-
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_configuration_flags_0020.md">D3D12DDI_VIDEO_DECODE_CONFIGURATION</a>
 
 
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_tier_0020.md">D3D12DDI_VIDEO_DECODE_TIER</a>
+
+
+
+<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_decode_support_flags_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_FLAGS</a>
 
 
 

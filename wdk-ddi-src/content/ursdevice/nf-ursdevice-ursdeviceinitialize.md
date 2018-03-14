@@ -153,11 +153,11 @@ EvtDriverDeviceAdd (
 
 ## See Also
 
-<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
-
-
-
 <a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>
+
+
+
+<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
 
 
 

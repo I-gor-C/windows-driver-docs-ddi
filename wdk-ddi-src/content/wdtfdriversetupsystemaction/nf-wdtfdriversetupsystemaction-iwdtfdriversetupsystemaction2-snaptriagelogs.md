@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFDriverSetupSystemAction.Interop.dll
 req.type-library: 
-req.lib: wdtfdriversetupsystemaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,7 +73,6 @@ triage logs to the current directory.
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Desktop |
 | **Header** | wdtfdriversetupsystemaction.h |
-| **Library** | wdtfdriversetupsystemaction.h |
 
 ## See Also
 

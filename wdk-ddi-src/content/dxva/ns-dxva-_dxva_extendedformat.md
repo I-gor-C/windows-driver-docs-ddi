@@ -99,15 +99,7 @@ Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are
 
 ## See Also
 
-<a href="..\dxva\ne-dxva-_dxva_videochromasubsampling.md">DXVA_VideoChromaSubsampling</a>
-
-
-
-<a href="..\dxva\ne-dxva-_dxva_videotransferfunction.md">DXVA_VideoTransferFunction</a>
-
-
-
-<a href="..\dxva\ne-dxva-_dxva_videoprimaries.md">DXVA_VideoPrimaries</a>
+<a href="..\dxva\ne-dxva-_dxva_nominalrange.md">DXVA_NominalRange</a>
 
 
 
@@ -115,15 +107,23 @@ Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are
 
 
 
-<a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
-
-
-
-<a href="..\dxva\ne-dxva-_dxva_nominalrange.md">DXVA_NominalRange</a>
+<a href="..\dxva\ne-dxva-_dxva_videotransferfunction.md">DXVA_VideoTransferFunction</a>
 
 
 
 <a href="..\dxva\ne-dxva-_dxva_videotransfermatrix.md">DXVA_VideoTransferMatrix</a>
+
+
+
+<a href="..\dxva\ne-dxva-_dxva_videochromasubsampling.md">DXVA_VideoChromaSubsampling</a>
+
+
+
+<a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
+
+
+
+<a href="..\dxva\ne-dxva-_dxva_videoprimaries.md">DXVA_VideoPrimaries</a>
 
 
 

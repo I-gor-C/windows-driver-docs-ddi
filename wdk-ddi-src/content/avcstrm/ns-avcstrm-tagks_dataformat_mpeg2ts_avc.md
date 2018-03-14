@@ -73,11 +73,11 @@ Specifies the data format of the MPEG2 connection.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-
-
-
 <a href="..\avc\ns-avc-_avcconnectinfo.md">AVCCONNECTINFO</a>
+
+
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 
 
 

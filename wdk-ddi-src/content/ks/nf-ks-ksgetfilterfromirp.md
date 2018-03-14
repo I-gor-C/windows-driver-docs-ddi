@@ -81,11 +81,11 @@ A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure for which to 
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetpinfromirp.md">KsGetPinFromIrp</a>
-
-
-
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+
+
+
+<a href="..\ks\nf-ks-ksgetpinfromirp.md">KsGetPinFromIrp</a>
 
 
 

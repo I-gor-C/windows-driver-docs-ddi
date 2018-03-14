@@ -103,11 +103,11 @@ A profile driver negotiates these values separately from the flush timeout setti
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
-
-
-
 <a href="..\bthddi\ns-bthddi-_l2cap_config_value_range.md">L2CAP_CONFIG_VALUE_RANGE</a>
+
+
+
+<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
 
 
 

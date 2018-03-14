@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -90,7 +90,6 @@ The DEVMODEW structure fields that correlate with the part of the DEVMODEW struc
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prdrvcom.h (include Prdrvcom.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -82,7 +82,6 @@ The print ticket passed to the <b>Completed</b> method is the final validated, m
 | **Windows version** | Windows 8  |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 

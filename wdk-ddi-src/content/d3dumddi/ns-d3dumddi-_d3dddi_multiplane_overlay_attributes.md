@@ -147,15 +147,7 @@ Specifies YUV range and conversion info given as a value from the <a href="..\d3
 
 
 
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
-
-
-
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a>
-
-
-
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
 
 
 
@@ -163,7 +155,15 @@ Specifies YUV range and conversion info given as a value from the <a href="..\d3
 
 
 
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
+
+
+
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_blend.md">D3DDDI_MULTIPLANE_OVERLAY_BLEND</a>
+
+
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -87,7 +87,6 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** | printerextension.h |
 
 ## See Also
 

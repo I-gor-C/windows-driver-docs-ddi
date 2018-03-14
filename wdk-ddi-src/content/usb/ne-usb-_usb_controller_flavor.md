@@ -227,11 +227,11 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539256">USB_CONTROLLER_INFO_0</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539256">USB_CONTROLLER_INFO_0</a>
 
 
 

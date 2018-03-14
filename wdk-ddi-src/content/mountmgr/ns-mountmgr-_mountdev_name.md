@@ -73,15 +73,15 @@ Contains the length of the name, in bytes.
 
 ## See Also
 
+<a href="..\mountdev\ni-mountdev-ioctl_mountdev_link_created.md">IOCTL_MOUNTDEV_LINK_CREATED</a>
+
+
+
 <a href="..\mountdev\ni-mountdev-ioctl_mountdev_link_deleted.md">IOCTL_MOUNTDEV_LINK_DELETED</a>
 
 
 
 <a href="..\mountmgr\ni-mountmgr-ioctl_mountdev_query_device_name.md">IOCTL_MOUNTDEV_QUERY_DEVICE_NAME</a>
-
-
-
-<a href="..\mountdev\ni-mountdev-ioctl_mountdev_link_created.md">IOCTL_MOUNTDEV_LINK_CREATED</a>
 
 
 

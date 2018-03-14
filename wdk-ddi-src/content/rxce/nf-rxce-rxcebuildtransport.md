@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -117,7 +117,6 @@ The connection engine routines in RDBSS do not participate in the computation of
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

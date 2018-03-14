@@ -74,11 +74,11 @@ typedef struct _D3DKMT_DEVICEPRESENT_STATE {
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_present_stats.md">D3DKMT_PRESENT_STATS</a>
-
-
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
+
+
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_present_stats.md">D3DKMT_PRESENT_STATS</a>
 
 
 

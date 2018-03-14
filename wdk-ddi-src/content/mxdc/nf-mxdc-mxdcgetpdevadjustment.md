@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -403,7 +403,6 @@ All rotation will be done on the imageable area. If a configuration component (U
 | **Windows version** | Available in Microsoft Windows XP and later versions of the Windows operating system.  |
 | **Target Platform** | Desktop |
 | **Header** | mxdc.h (include Mxdc.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
@@ -411,11 +410,11 @@ All rotation will be done on the imageable area. If a configuration component (U
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemuimxdc.md">IPrintOemUIMXDC Interface</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484">GDIINFO</a>
+
+
+
+<a href="..\prcomoem\nn-prcomoem-iprintoemuimxdc.md">IPrintOemUIMXDC Interface</a>
 
 
 

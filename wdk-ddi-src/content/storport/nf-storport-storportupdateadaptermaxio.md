@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -104,11 +104,10 @@ This function returns of the following values.
 | **Windows version** | Available starting with Windows 10, version 1709.  |
 | **Target Platform** | Windows |
 | **Header** | storport.h |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HwInitialize</a>
+<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HwInitialize</a>
 
 
 

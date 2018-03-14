@@ -60,7 +60,7 @@ typedef struct _TAPE_WMI_OPERATIONS {
 
 `DataBuffer`
 
-Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\minitape\ne-minitape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data.
+Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data.
 
 `DataBufferSize`
 
@@ -106,7 +106,7 @@ Returns general I/O error data, such as read/write errors, based on the I/O erro
 
 
 
-<a href="..\minitape\ne-minitape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>
+<a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -116,7 +116,6 @@ The driver should write event data to the buffer pointed to by <i>EventData</i> 
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -99,7 +99,7 @@ The address type. This member is set to <b>STOR_ADDRESS_TYPE_BTL8</b>.
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_stor_address.md">STOR_ADDRESS</a>
+<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
 
 
 

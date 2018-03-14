@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -72,4 +72,3 @@ A filter returns the <code>StartOperation</code> call only when the filter proce
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** | filterpipeline.h |

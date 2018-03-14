@@ -101,7 +101,7 @@ typedef struct _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_queryresourceinfofromnthandle.md">D3DKMTQueryResourceInfoFromNtHandle</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfofromnthandle.md">D3DKMTQueryResourceInfoFromNtHandle</a>
 
 
 

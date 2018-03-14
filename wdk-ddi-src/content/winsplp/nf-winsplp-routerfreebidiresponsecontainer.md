@@ -79,11 +79,11 @@ Pointer to the BIDI_RESPONSE_CONTAINER structure to be freed.
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
-
-
-
 <a href="..\winspool\ns-winspool-_bidi_response_container.md">BIDI_RESPONSE_CONTAINER</a>
+
+
+
+<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -78,7 +78,6 @@ A pointer to a DUID to compare with the DUID that <i>Duid1</i> points to.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | storduid.h (include Storduid.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

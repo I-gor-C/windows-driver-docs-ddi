@@ -99,15 +99,15 @@ The index of the destination subresource to which data is to be copied.
 
 ## See Also
 
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a>
+
+
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updatesubresourceup.md">pfnUpdateSubresourceUP</a>
 
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>
-
-
-
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a>
 
 
 

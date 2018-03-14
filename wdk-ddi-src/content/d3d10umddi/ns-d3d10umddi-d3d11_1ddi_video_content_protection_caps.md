@@ -84,11 +84,11 @@ The total amount of memory, in bytes, that can be used to hold protected surface
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_content_protection_caps.md">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a>
-
-
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getcryptokeyexchangetype.md">GetCryptoKeyExchangeType</a>
+
+
+
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_content_protection_caps.md">D3D11_1DDI_CONTENT_PROTECTION_CAPS</a>
 
 
 

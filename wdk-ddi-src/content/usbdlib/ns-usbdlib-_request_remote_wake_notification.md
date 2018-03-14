@@ -85,11 +85,11 @@ The version of this structure. Set to 0.
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_request_remote_wake_notification.md">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
-
-
-
 <a href="https://msdn.microsoft.com/91F96D30-CD18-4DDC-BA5A-7BFFA8FBED9B">How to Implement Function Suspend in a Composite Driver</a>
+
+
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_request_remote_wake_notification.md">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
 
 
 

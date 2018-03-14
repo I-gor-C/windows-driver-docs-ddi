@@ -73,11 +73,11 @@ The <i>pBuf</i> parameter of the <a href="https://msdn.microsoft.com/library/win
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553189">IPrintOemPS2::GetPDEVAdjustment</a>
 
 
 

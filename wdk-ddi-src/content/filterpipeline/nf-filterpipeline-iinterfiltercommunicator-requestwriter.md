@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -75,7 +75,6 @@ The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a hr
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **Library** | filterpipeline.h |
 
 ## See Also
 

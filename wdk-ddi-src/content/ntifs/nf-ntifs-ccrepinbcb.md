@@ -82,11 +82,7 @@ Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href=
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 
 
 
@@ -94,7 +90,11 @@ Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href=
 
 
 
-<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
+<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
 
 
 

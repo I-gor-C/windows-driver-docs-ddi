@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -140,7 +140,6 @@ The miniport driver must call <b>AtaPortRegistryControllerKeyRead</b> either in 
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
@@ -148,11 +147,11 @@ The miniport driver must call <b>AtaPortRegistryControllerKeyRead</b> either in 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
 
 
 

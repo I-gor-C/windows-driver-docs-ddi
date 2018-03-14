@@ -87,11 +87,11 @@ Note that the object hierarchy is guaranteed stable only while the appropriate m
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfiltergetchildpincount.md">KsFilterGetChildPinCount</a>
-
-
-
 <a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
+
+
+
+<a href="..\ks\nf-ks-ksfiltergetchildpincount.md">KsFilterGetChildPinCount</a>
 
 
 

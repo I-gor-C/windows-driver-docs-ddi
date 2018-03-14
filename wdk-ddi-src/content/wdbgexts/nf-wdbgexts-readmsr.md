@@ -7,7 +7,7 @@ old-location: debugger\readmsr.htm
 old-project: debugger
 ms.assetid: 1cb51f88-a943-43e6-af18-0e9e301d8382
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 2/27/2018
 ms.keywords: ReadMsr, ReadMsr function [Windows Debugging], WdbgExts_Ref_37577d05-a60b-4064-850a-d73616d93f37.xml, debugger.readmsr, wdbgexts/ReadMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -81,4 +81,3 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** | NtosKrnl.exe |

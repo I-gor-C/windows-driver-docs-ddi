@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -80,4 +80,3 @@ When a thread enters this function, no threads can subsequently  log to this buf
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
-| **Library** | NtosKrnl.exe |

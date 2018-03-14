@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,4 +73,3 @@ This function does not return a value.
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** | NtosKrnl.exe |

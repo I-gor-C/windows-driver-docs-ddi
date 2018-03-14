@@ -116,11 +116,11 @@ There is no upper limit to the size of the <i>Format</i> string or the number of
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
-
-
-
 <a href="..\wdm\nf-wdm-kdprintex.md">KdPrintEx</a>
+
+
+
+<a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 
 
 

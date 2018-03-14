@@ -71,7 +71,7 @@ Set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
 ## See Also
 
-<a href="..\hpmi\ns-hpmi-_hpmi_query_capabilities_response.md">HPMI_QUERY_CAPABILITIES_RESPONSE</a>
+<a href="..\hpmi\ni-hpmi-ioctl_hpmi_query_capabilities.md">IOCTL_HPMI_QUERY_CAPABILITIES</a>
 
 
 
@@ -79,7 +79,7 @@ Set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
 
 
-<a href="..\hpmi\ni-hpmi-ioctl_hpmi_query_capabilities.md">IOCTL_HPMI_QUERY_CAPABILITIES</a>
+<a href="..\hpmi\ns-hpmi-_hpmi_query_capabilities_response.md">HPMI_QUERY_CAPABILITIES_RESPONSE</a>
 
 
 

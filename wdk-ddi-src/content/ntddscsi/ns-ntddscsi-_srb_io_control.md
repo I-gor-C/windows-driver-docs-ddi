@@ -95,11 +95,11 @@ This structure is used by applications to send requests directly to an applicati
 
 ## See Also
 
+<a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+
+
 SCSI Port I/O Control Codes
-
-
-
-<a href="..\minitape\ns-minitape-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdtfpnpaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,7 +73,6 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdtfpnpaction.h |
-| **Library** | wdtfpnpaction.h |
 
 ## See Also
 

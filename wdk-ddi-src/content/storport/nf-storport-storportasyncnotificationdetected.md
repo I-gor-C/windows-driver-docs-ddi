@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -198,5 +198,4 @@ If the <i>Flags</i> parameter is 0, Storport will indicate all status values in 
 | **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |

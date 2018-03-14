@@ -26,7 +26,7 @@ req.max-support: Unavailable in UMDF 2.0 and later.
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -64,7 +64,7 @@ void WRITE_REGISTER_ULONG64(
 
 `pDevice`
 
-
+Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Register`
 
@@ -91,4 +91,3 @@ For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_hwaccess.h (include Wdm.h, Miniport.h, Wudfwdm.h) |
-| **Library** | NtosKrnl.exe |

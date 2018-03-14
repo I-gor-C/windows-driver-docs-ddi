@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -91,7 +91,6 @@ An IRP allocated with an associated memory descriptor list allocated with <b>RxC
 | **Windows version** | The RxCeAllocateIrpWithMDL routine is only available on Windows XP.  |
 | **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

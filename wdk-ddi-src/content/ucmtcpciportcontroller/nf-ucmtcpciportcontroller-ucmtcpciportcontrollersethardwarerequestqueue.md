@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
 topic_type:
@@ -87,7 +87,6 @@ A client driver may choose to use the same queue across multiple port controller
 | **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also

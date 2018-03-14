@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: storport.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -86,7 +86,6 @@ The <b>StorPortWriteRegisterUlong64</b> routine is only available on the 64-bit 
 | **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | storport.h |
 
 ## See Also
 

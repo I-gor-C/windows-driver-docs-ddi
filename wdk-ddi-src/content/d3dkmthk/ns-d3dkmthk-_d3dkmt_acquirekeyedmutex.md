@@ -44,7 +44,7 @@ req.typenames: D3DKMT_ACQUIREKEYEDMUTEX
 ---
 
 # _D3DKMT_ACQUIREKEYEDMUTEX structure
-The D3DKMT_ACQUIREKEYEDMUTEX structure describes a keyed mutex that the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> function acquires.
+The D3DKMT_ACQUIREKEYEDMUTEX structure describes a keyed mutex that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> function acquires.
 
 ## Syntax
 ````
@@ -77,7 +77,7 @@ typedef struct _D3DKMT_ACQUIREKEYEDMUTEX {
 
 A positive value specifies an absolute time, relative to January 1, 1601. A negative value specifies an interval relative to the current time. Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes. 
 
-If *<b>pTimeout</b> = 0, <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> returns without waiting. If the caller supplies a <b>NULL</b> pointer, <b>D3DKMTAcquireKeyedMutex</b> waits indefinitely until the mutex object is set to the signaled state.
+If *<b>pTimeout</b> = 0, <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a> returns without waiting. If the caller supplies a <b>NULL</b> pointer, <b>D3DKMTAcquireKeyedMutex</b> waits indefinitely until the mutex object is set to the signaled state.
 
 
 ## Requirements
@@ -88,7 +88,7 @@ If *<b>pTimeout</b> = 0, <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyed
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_acquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmutex.md">D3DKMTAcquireKeyedMutex</a>
 
 
 

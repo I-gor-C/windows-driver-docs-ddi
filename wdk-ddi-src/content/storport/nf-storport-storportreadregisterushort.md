@@ -75,7 +75,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\srb\nf-srb-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterbufferushort.md">StorPortReadRegisterBufferUshort</a>.
+For more information, see <a href="..\storport\nf-storport-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadregisterbufferushort.md">StorPortReadRegisterBufferUshort</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,11 +86,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterushort.md">
 
 ## See Also
 
+<a href="..\storport\nf-storport-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>
+
+
+
 <a href="..\storport\nf-storport-storportreadregisterbufferushort.md">StorPortReadRegisterBufferUshort</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportreadregisterushort.md">ScsiPortReadRegisterUshort</a>
 
 
 

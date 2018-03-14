@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -77,7 +77,6 @@ The client driver for host controller must call this function if the driver fail
 | **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also

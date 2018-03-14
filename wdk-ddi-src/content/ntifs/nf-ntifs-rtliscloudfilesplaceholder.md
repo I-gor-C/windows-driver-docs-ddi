@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: Ntdll.dll
 req.irql: 
 topic_type:
@@ -80,7 +80,6 @@ This function returns <b>TRUE</b> if the file or directory is a CloudFiles parti
 | **Windows version** | Available starting with Windows 10, version 1709.  |
 | **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | NtosKrnl.exe |
 | **DLL** | Ntdll.dll |
 
 ## See Also

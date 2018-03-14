@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -72,4 +72,3 @@ An <a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** | filterpipeline.h |

@@ -83,7 +83,7 @@ For Windows XP and Windows Server 2003, <b>PortAttributes</b> value might be s
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a>
 
 
 
@@ -91,7 +91,7 @@ For Windows XP and Windows Server 2003, <b>PortAttributes</b> value might be s
 
 
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_attributes.md">IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -79,7 +79,6 @@ Returns an <b>HRESULT</b> value. If the method call was not successful,  it retu
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any IRQL
 topic_type:
@@ -76,16 +76,15 @@ Your SPB controller driver must use this function to initialize an <b>SPB_TRANSF
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | spbcx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any IRQL |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450924">SpbRequestGetTransferParameters</a>
 
 
 

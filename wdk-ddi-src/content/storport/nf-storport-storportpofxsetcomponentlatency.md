@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -152,7 +152,6 @@ The current IRQL &gt; DISPATCH_LEVEL.
 | **Windows version** | Available in starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also

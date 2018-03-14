@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -70,4 +70,3 @@ Returns STATUS_SUCCESS if completed successfully.
 | **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** | NtosKrnl.exe |

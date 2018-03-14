@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -215,7 +215,6 @@ The driver should use the output value of the <i>Rotation</i> parameter to rotat
 | **Windows version** | Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

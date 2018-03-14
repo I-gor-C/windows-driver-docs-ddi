@@ -87,11 +87,11 @@ This function allows IRPs to be forwarded through an object by ensuring that any
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561665">KsDefaultDispatchPnp</a>
+
+
+
 <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
-
-
-
-<a href="..\ks\nf-ks-kssetdevicepnpandbaseobject.md">KsSetDevicePnpAndBaseObject</a>
 
 
 
@@ -99,7 +99,7 @@ This function allows IRPs to be forwarded through an object by ensuring that any
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561665">KsDefaultDispatchPnp</a>
+<a href="..\ks\nf-ks-kssetdevicepnpandbaseobject.md">KsSetDevicePnpAndBaseObject</a>
 
 
 

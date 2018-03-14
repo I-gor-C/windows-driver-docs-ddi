@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -163,15 +163,14 @@ The <a href="https://msdn.microsoft.com/6025c3a6-7d88-49dc-bbc3-655c172dde3c">Ev
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | umdprovider.h (include Umdprovider.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\umdprovider\nf-umdprovider-umdetwunregister.md">UMDEtwUnregister</a>
-
-
-
 <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
+
+
+
+<a href="..\umdprovider\nf-umdprovider-umdetwunregister.md">UMDEtwUnregister</a>
 
 
 

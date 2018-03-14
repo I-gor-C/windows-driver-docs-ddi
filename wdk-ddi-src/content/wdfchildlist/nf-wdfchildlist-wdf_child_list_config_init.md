@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any level
 topic_type:
@@ -98,7 +98,6 @@ For a code example that uses <b>WDF_CHILD_LIST_CONFIG_INIT</b>, see <a href="..\
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
 
 ## See Also

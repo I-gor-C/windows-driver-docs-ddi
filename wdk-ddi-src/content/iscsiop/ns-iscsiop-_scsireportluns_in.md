@@ -70,11 +70,11 @@ You must implement this method.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
+
+
+<a href="..\iscsiop\ns-iscsiop-_scsireportluns_out.md">ScsiReportLuns_OUT</a>
 
 
 
@@ -82,7 +82,7 @@ You must implement this method.
 
 
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsireportluns_out.md">ScsiReportLuns_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
 
 
 

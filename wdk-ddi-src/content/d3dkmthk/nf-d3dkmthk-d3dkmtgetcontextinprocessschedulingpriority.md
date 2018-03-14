@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -102,7 +102,6 @@ This function might also return other NTSTATUS values.
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

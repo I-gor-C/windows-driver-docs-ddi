@@ -122,19 +122,19 @@ Contains the same data as the <b>BridgeSupport</b> member.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537583">PCI_PMCSR</a>
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537581">PCI_PMC</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537587">PCI_PMCSR_BSE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537454">PCI_CAPABILITIES_HEADER</a>
 
 
 

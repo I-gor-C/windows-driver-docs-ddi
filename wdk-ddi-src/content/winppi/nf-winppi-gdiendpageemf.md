@@ -116,11 +116,11 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 
 ## See Also
 
-<a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a>
-
-
-
 <a href="..\winppi\nf-winppi-gdistartpageemf.md">GdiStartPageEMF</a>
+
+
+
+<a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a>
 
 
 

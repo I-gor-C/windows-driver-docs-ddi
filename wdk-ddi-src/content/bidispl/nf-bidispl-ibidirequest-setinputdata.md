@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: bidispl.h
+req.lib: 
 req.dll: Bidispl.dll
 req.irql: 
 topic_type:
@@ -235,12 +235,11 @@ If an application calls <b>SetInputData</b> more than once, only the value of th
 | **Windows version** | Windows XP Windows Server 2003 |
 | **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** | bidispl.h |
 | **DLL** | Bidispl.dll |
 
 ## See Also
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 
 
 
@@ -248,7 +247,7 @@ If an application calls <b>SetInputData</b> more than once, only the value of th
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
 
 

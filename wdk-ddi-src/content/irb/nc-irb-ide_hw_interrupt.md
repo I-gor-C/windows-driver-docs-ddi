@@ -128,11 +128,11 @@ The worker routine must clear the interrupt on the HBA before it returns <b>TRUE
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
-
-
-
 <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
+
+
+
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 
 
 

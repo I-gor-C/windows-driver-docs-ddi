@@ -130,7 +130,7 @@ The length of the storage device address structure at the offset of <b>StorAddre
 
 `StorAddressOffset`
 
-The location of the target device's <a href="..\minitape\ns-minitape-_stor_addr_btl8.md">STOR_ADDR_BTL8</a> address structure, in bytes, from the beginning of this structure.
+The location of the target device's <a href="..\storport\ns-storport-_stor_addr_btl8.md">STOR_ADDR_BTL8</a> address structure, in bytes, from the beginning of this structure.
 
 `TimeOutValue`
 
@@ -154,7 +154,7 @@ The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used with <a href="..\ntddsc
 
 ## See Also
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 
 
 
@@ -162,11 +162,11 @@ The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used with <a href="..\ntddsc
 
 
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
+<a href="..\storport\ns-storport-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
 
 
 
-<a href="..\minitape\ns-minitape-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 
 
 

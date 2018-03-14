@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -74,7 +74,6 @@ The <b>RequestCancel</b> method does not wait for the cancellation of a print jo
 | **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 

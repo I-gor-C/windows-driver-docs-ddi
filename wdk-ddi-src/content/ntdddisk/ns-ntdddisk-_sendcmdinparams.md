@@ -97,7 +97,7 @@ The SENDCMDINPARAMS structure is also used with the <a href="https://msdn.micros
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
+<a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
 
 
 
@@ -105,7 +105,7 @@ The SENDCMDINPARAMS structure is also used with the <a href="https://msdn.micros
 
 
 
-<a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
 
 
 

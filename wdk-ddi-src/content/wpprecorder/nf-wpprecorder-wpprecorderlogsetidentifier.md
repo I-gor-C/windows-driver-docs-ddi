@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wpprecorder.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -81,4 +81,3 @@ Do not call <a href="..\wpprecorder\nf-wpprecorder-imp_wpprecorderlogsetidentifi
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
-| **Library** | wpprecorder.h |

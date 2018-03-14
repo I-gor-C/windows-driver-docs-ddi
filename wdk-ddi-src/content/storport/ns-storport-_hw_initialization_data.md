@@ -265,15 +265,11 @@ Starting in Windows 8, both physical and virtual Storport miniports use <b>HW_I
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
-
-
-
-<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
-
-
-
 <a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
+
+
+
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 
 
 
@@ -281,15 +277,11 @@ Starting in Windows 8, both physical and virtual Storport miniports use <b>HW_I
 
 
 
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-
-
-
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
-
-
-
 <a href="..\storport\ns-storport-_virtual_hw_initialization_data.md">VIRTUAL_HW_INITIALIZATION_DATA</a>
+
+
+
+<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
 
 
 
@@ -297,7 +289,15 @@ Starting in Windows 8, both physical and virtual Storport miniports use <b>HW_I
 
 
 
-<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+
+
+
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
+
+
+<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
 
 
 

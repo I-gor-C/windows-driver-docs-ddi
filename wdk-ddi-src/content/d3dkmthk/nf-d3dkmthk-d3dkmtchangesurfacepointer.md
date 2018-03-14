@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -76,4 +76,3 @@ This function is for system use only.
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems.  |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmthk.h |
-| **Library** | NtosKrnl.exe |

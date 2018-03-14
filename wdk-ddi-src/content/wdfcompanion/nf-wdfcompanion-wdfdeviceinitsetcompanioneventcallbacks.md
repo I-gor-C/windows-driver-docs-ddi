@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -79,5 +79,4 @@ This method does not return a value.
 | **Target Platform** | Windows |
 | **Minimum UMDF version** | 2.23 |
 | **Header** | wdfcompanion.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |

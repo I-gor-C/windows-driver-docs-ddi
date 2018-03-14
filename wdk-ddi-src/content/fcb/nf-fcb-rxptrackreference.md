@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -136,12 +136,11 @@ For retail builds, this function does nothing.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | fcb.h (include Fcb.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
 
 
 
@@ -149,15 +148,15 @@ For retail builds, this function does nothing.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
-
-
-
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
 
 
 
 <a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 
 
 

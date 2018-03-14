@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -89,7 +89,6 @@ After <b>UPSStop</b> returns, the only function the UPS service can call is <a h
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

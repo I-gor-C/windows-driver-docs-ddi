@@ -65,10 +65,6 @@ struct _URB_CONTROL_TRANSFER {
 ## Members
 
 
-`_URB`
-
-
-
 `hca`
 
 Reserved. Do not use.
@@ -179,11 +175,7 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_control_transfer_ex.md">URB_CONTROL_TRANSFER_EX</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 
 
 
@@ -191,7 +183,11 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
+
+
+<a href="..\usb\ns-usb-_urb_control_transfer_ex.md">URB_CONTROL_TRANSFER_EX</a>
 
 
 

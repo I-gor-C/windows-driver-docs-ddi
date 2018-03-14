@@ -103,23 +103,7 @@ If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesWCMemoryProte
 
 ## See Also
 
-<a href="..\video\ns-video-_video_port_i2c_interface.md">VIDEO_PORT_I2C_INTERFACE</a>
-
-
-
-<a href="..\video\ns-video-_video_port_wcmemoryprotection_interface.md">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a>
-
-
-
-<a href="..\video\ns-video-_video_port_agp_interface_2.md">VIDEO_PORT_AGP_INTERFACE_2</a>
-
-
-
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-
-
-
-<a href="..\video\ns-video-_video_port_agp_interface.md">VIDEO_PORT_AGP_INTERFACE</a>
 
 
 
@@ -131,7 +115,23 @@ If the <i>ServicesType</i> parameter is set to <b>VideoPortServicesWCMemoryProte
 
 
 
+<a href="..\video\ns-video-_video_port_i2c_interface.md">VIDEO_PORT_I2C_INTERFACE</a>
+
+
+
+<a href="..\video\ns-video-_video_port_agp_interface_2.md">VIDEO_PORT_AGP_INTERFACE_2</a>
+
+
+
+<a href="..\video\ns-video-_video_port_wcmemoryprotection_interface.md">VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE</a>
+
+
+
 <a href="..\video\ns-video-_video_port_int10_interface.md">VIDEO_PORT_INT10_INTERFACE</a>
+
+
+
+<a href="..\video\ns-video-_video_port_agp_interface.md">VIDEO_PORT_AGP_INTERFACE</a>
 
 
 

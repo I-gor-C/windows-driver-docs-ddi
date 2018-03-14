@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: xpsrassvc.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -158,7 +158,6 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HRE
 | **Windows version** | Windows 10  |
 | **Target Platform** | Desktop |
 | **Header** | xpsrassvc.h (include Xpsrassvc.h) |
-| **Library** | xpsrassvc.h |
 
 ## See Also
 

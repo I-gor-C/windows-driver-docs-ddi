@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ks.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -95,19 +95,18 @@ To determine the buffer size that is required for a specific property request, y
 | ---- |:---- |
 | **Target Platform** | DesktopMobile |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | ks.h |
 
 ## See Also
-
-<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
-
-
 
 <a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+
+
+
+<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support: Unavailable in UMDF 2.0 and later.
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -99,4 +99,3 @@ For a code example that uses <b>WUDF_INTERRUPT_CONFIG_INIT</b>, see <a href="htt
 | **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
-| **Library** | NtosKrnl.exe |

@@ -102,11 +102,11 @@ The <b>HBA_SendRNID</b> library routine serves a purpose very similar to the <a 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
-
-
-
 <a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565459">SendRNID</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -88,7 +88,6 @@ The ATA port driver passes a pointer to the channel extension to the timer routi
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

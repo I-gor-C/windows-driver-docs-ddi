@@ -104,7 +104,7 @@ pDrvObj = WdfDriverWdmGetDriverObject(Driver);</pre>
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 
 
 
@@ -112,7 +112,7 @@ pDrvObj = WdfDriverWdmGetDriverObject(Driver);</pre>
 
 
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 
 

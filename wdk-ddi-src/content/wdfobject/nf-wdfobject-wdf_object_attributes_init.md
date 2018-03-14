@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -82,7 +82,6 @@ For code examples that use WDF_OBJECT_ATTRIBUTES_INIT, see <a href="..\wdfobject
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

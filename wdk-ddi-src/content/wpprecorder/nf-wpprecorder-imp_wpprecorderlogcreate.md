@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -94,4 +94,3 @@ If a successful NTSTATUS is not returned, the driver must use a <b>RECORDER_LOG<
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
-| **Library** | NtosKrnl.exe |

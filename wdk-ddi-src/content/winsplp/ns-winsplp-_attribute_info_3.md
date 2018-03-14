@@ -213,11 +213,15 @@ For information about other ATTRIBUTE_INFO_3 structure members, see <a href="..\
 
 ## See Also
 
-<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
+<a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>
 
 
 
 <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
+
+
+
+<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
 
 
 
@@ -226,10 +230,6 @@ For information about other ATTRIBUTE_INFO_3 structure members, see <a href="..\
 
 
 <a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
-
-
-
-<a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>
 
 
 

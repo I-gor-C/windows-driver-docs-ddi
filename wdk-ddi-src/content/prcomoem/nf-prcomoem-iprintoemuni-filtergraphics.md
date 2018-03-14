@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -182,31 +182,10 @@ For more information about customizing Unidrv's rendering operations, see <a hre
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h (include Prcomoem.h) |
-| **Library** | prcomoem.h |
 
 ## See Also
 
-<a href="..\printoem\nc-printoem-pfn_drvwritespoolbuf.md">DrvWriteSpoolBuf</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556250">DrvNextBand</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintoemuni.md">IPrintOemUni</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556281">DrvSendPage</a>
 
 
 
@@ -214,7 +193,27 @@ For more information about customizing Unidrv's rendering operations, see <a hre
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556250">DrvNextBand</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556281">DrvSendPage</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
+
+
+
+<a href="..\prcomoem\nn-prcomoem-iprintoemuni.md">IPrintOemUni</a>
+
+
+
+<a href="..\printoem\nc-printoem-pfn_drvwritespoolbuf.md">DrvWriteSpoolBuf</a>
 
 
 

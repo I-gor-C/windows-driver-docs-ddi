@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,4 +73,3 @@ This function is obsolete for Windows XP and later. It is supported only for ear
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** | NtosKrnl.exe |

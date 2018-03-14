@@ -129,11 +129,11 @@ Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539522">I
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-itracer.md">ITracer</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539522">ITracing::SetTraceLevel</a>
+
+
+
+<a href="..\wdtf\nn-wdtf-itracer.md">ITracer</a>
 
 
 

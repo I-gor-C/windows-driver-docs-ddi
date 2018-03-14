@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -220,19 +220,10 @@ Here's an example of how this function can provide your driver with the info it 
 | **Windows version** | Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION Windows Server 2012 R2 |
 | **Target Platform** | Desktop |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentflags.md">DXGK_PRESENTFLAGS</a>
-
-
-
 <a href="..\d3dkmdt\nf-d3dkmdt-d3dkmdt_vppr_get_offset_rotation.md">D3DKMDT_VPPR_GET_OFFSET_ROTATION</a>
-
-
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
 
 
 
@@ -241,6 +232,14 @@ Here's an example of how this function can provide your driver with the info it 
 
 
 <a href="..\d3dkmdt\nf-d3dkmdt-d3dkmdt_vppr_get_content_rotation_part.md">D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART</a>
+
+
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentflags.md">DXGK_PRESENTFLAGS</a>
+
+
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
 
 
 

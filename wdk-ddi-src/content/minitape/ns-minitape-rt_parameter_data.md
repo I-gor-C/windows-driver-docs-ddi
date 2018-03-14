@@ -158,7 +158,7 @@ Contains the current value of a device clock.
 
 ## See Also
 
-<a href="..\scsi\ns-scsi-st_parameter_data.md">ST_PARAMETER_DATA</a>
+<a href="..\storport\ns-storport-st_parameter_data.md">ST_PARAMETER_DATA</a>
 
 
 

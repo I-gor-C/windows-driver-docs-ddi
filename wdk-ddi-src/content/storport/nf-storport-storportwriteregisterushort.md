@@ -88,7 +88,7 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportwriteregisterushort.md">ScsiPortWriteRegisterUshort</a>
+<a href="..\storport\nf-storport-scsiportwriteregisterushort.md">ScsiPortWriteRegisterUshort</a>
 
 
 

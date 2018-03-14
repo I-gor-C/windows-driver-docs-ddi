@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -45,7 +45,7 @@ req.typenames: TOKEN_TYPE
 
 
 # IoCheckQuerySetVolumeInformation function
-The <b>IoCheckQuerySetVolumeInformation</b> routine is reserved for system use. See <a href="..\ntddk\nf-ntddk-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>.
+The <b>IoCheckQuerySetVolumeInformation</b> routine is reserved for system use. See <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>.
 
 ## Syntax
 
@@ -80,4 +80,3 @@ None
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | NtosKrnl.exe |

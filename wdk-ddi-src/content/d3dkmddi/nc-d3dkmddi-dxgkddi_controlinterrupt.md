@@ -128,7 +128,7 @@ The driver must return STATUS_NOT_IMPLEMENTED if an interrupt type other than DX
 
 ## See Also
 
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
 
 
@@ -136,7 +136,7 @@ The driver must return STATUS_NOT_IMPLEMENTED if an interrupt type other than DX
 
 
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
 
 
 

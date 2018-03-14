@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -76,7 +76,6 @@ If necessary, the <code>IPrintOemPrintTicketProvider::ValidatePrintTicket</code>
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prdrvcom.h (include Prdrvcom.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<=DISPATCH_LEVEL"
 topic_type:
@@ -194,7 +194,6 @@ WdfEvtIoDeviceControlEnd:
 | **Windows version** | Windows 10  |
 | **Target Platform** | Windows |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 
 ## See Also

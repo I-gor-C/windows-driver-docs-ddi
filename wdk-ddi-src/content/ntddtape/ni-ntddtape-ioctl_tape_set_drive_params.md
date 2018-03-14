@@ -50,7 +50,7 @@ Adjusts a tape drive's configurable parameters. The miniclass driver can ignore 
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The <a href="..\minitape\ns-minitape-_tape_set_drive_parameters.md">TAPE_SET_DRIVE_PARAMETERS</a> structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the values to be set.
+The <a href="..\ntddtape\ns-ntddtape-_tape_set_drive_parameters.md">TAPE_SET_DRIVE_PARAMETERS</a> structure in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the values to be set.
 
 ### Input Buffer Length
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be &gt;= <b>sizeof</b>(TAPE_SET_DRIVE_PARAMETERS).
@@ -78,11 +78,11 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_tape_set_drive_parameters.md">TAPE_SET_DRIVE_PARAMETERS</a>
-
-
-
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
+
+
+
+<a href="..\ntddtape\ns-ntddtape-_tape_set_drive_parameters.md">TAPE_SET_DRIVE_PARAMETERS</a>
 
 
 

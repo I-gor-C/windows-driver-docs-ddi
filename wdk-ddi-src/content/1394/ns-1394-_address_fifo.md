@@ -73,11 +73,11 @@ Specifies the MDL for the FIFO element described by this entry of the list.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537437">NOTIFICATION_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
 
 
 

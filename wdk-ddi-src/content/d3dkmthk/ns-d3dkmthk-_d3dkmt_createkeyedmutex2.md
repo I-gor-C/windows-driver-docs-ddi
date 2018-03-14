@@ -44,7 +44,7 @@ req.typenames: D3DKMT_CREATEKEYEDMUTEX2
 ---
 
 # _D3DKMT_CREATEKEYEDMUTEX2 structure
-Describes a keyed mutex that the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_createkeyedmutex2.md">D3DKMTCreateKeyedMutex2</a> function creates that includes private data.
+Describes a keyed mutex that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a> function creates that includes private data.
 
 ## Syntax
 ````
@@ -94,11 +94,11 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_createkeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
-
-
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
+
+
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
 
 
 

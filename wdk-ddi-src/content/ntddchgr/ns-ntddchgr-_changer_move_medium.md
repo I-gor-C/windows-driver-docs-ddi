@@ -83,6 +83,10 @@ Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.m
 
 ## See Also
 
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
+
+
+
 <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
 
 
@@ -92,10 +96,6 @@ Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.m
 
 
 <a href="..\mcd\nf-mcd-changermovemedium.md">ChangerMoveMedium</a>
-
-
-
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 
 
 

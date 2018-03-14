@@ -56,10 +56,10 @@ None.
 None.
 
 ### Output Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the returned inquiry data. For a description of the layout of the inquiry data in the output buffer, see <a href="..\minitape\ns-minitape-_inquirydata.md">INQUIRYDATA</a>.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the returned inquiry data. For a description of the layout of the inquiry data in the output buffer, see <a href="..\storport\ns-storport-_inquirydata.md">INQUIRYDATA</a>.
 
 ### Output Buffer Length
-<b>Parameters.DeviceIoControl.OutputBufferLength</b> indicates the number of bytes that can be written to <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="..\minitape\ns-minitape-_inquirydata.md">INQUIRYDATA</a>).
+<b>Parameters.DeviceIoControl.OutputBufferLength</b> indicates the number of bytes that can be written to <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="..\storport\ns-storport-_inquirydata.md">INQUIRYDATA</a>).
 
 ### Input / Output Buffer
 <text></text>
@@ -80,7 +80,7 @@ TBD
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_inquirydata.md">INQUIRYDATA</a>
+<a href="..\storport\ns-storport-_inquirydata.md">INQUIRYDATA</a>
 
 
 

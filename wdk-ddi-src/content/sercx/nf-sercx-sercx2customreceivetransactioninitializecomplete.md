@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -86,7 +86,6 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 | **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also

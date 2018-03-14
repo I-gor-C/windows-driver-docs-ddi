@@ -154,7 +154,7 @@ The <b>SCSI_PASS_THROUGH_EX</b> structure is used with the  <a href="..\ntddscsi
 
 ## See Also
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
 
 
 
@@ -162,7 +162,7 @@ The <b>SCSI_PASS_THROUGH_EX</b> structure is used with the  <a href="..\ntddscsi
 
 
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
 
 
 

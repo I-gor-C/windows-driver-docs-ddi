@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -88,7 +88,6 @@ For a code example that uses <b>WDF_POWER_FRAMEWORK_SETTINGS_INIT</b>, see <a hr
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

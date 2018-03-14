@@ -263,11 +263,11 @@ This routine will return both legacy filter driver information and minifilter dr
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbydeviceobject.md">FltEnumerateInstanceInformationByDeviceObject</a>
-
-
-
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
+
+
+
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbydeviceobject.md">FltEnumerateInstanceInformationByDeviceObject</a>
 
 
 

@@ -50,7 +50,7 @@ Resets the block size of the media in the drive.
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\minitape\ns-minitape-_tape_set_media_parameters.md">TAPE_SET_MEDIA_PARAMETERS</a> structure containing the block size to be set.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddtape\ns-ntddtape-_tape_set_media_parameters.md">TAPE_SET_MEDIA_PARAMETERS</a> structure containing the block size to be set.
 
 ### Input Buffer Length
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be &gt;= <b>sizeof</b>(TAPE_SET_MEDIA_PARAMETERS).
@@ -78,7 +78,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_tape_set_media_parameters.md">TAPE_SET_MEDIA_PARAMETERS</a>
+<a href="..\ntddtape\ns-ntddtape-_tape_set_media_parameters.md">TAPE_SET_MEDIA_PARAMETERS</a>
 
 
 

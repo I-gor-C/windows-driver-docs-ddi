@@ -215,11 +215,11 @@ Points to an optional caller-defined context for the function at <b>pfnValidate<
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
 
 
 

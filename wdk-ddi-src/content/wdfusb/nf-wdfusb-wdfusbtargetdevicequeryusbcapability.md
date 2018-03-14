@@ -265,11 +265,11 @@ This GUID applies to KMDF and UMDF drivers.
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_queryusbcapability.md">USBD_QueryUsbCapability</a>
-
-
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_queryusbcapability.md">USBD_QueryUsbCapability</a>
 
 
 

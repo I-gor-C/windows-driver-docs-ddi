@@ -85,15 +85,15 @@ None
 
 ## See Also
 
+<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+
+
+
 <a href="..\irb\nf-irb-ataportwriteportushort.md">AtaPortWritePortUshort</a>
 
 
 
 <a href="..\irb\nf-irb-ataportwriteportuchar.md">AtaPortWritePortUchar</a>
-
-
-
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
 
 
 

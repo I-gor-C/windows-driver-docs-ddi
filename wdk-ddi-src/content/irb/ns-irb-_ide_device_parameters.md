@@ -197,7 +197,7 @@ The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
+<a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a>
 
 
 
@@ -205,7 +205,7 @@ The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver 
 
 
 
-<a href="..\irb\ne-irb-ata_address_translation.md">ATA_ADDRESS_TRANSLATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
 
 
 

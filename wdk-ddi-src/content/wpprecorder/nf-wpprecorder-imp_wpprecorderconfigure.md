@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -82,4 +82,3 @@ This method only configures the default log. By default that log is enabled. If 
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
-| **Library** | NtosKrnl.exe |

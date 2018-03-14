@@ -69,7 +69,7 @@ typedef struct _D3DKMT_CHECKOCCLUSION {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_checkocclusion.md">D3DKMTCheckOcclusion</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcheckocclusion.md">D3DKMTCheckOcclusion</a>
 
 
 

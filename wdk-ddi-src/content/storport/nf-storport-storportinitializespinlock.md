@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -125,19 +125,18 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 | ---- |:---- |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
+
+
 
 <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>
-
-
-
-<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
 
 
 

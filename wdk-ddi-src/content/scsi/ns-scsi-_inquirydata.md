@@ -185,6 +185,10 @@ Indicates, when set to one, that the operating system supports the relative addr
 
 Indicates, when <b>TRUE</b>, that the media is removable, and when <b>FALSE</b> that the media is not removable.
 
+`Reserved`
+
+Reserved.
+
 `Reserved2`
 
 
@@ -224,6 +228,10 @@ Contains 20 bytes of vendor-specific data.
 `VersionDescriptors`
 
 
+
+`Versions`
+
+Indicates the version of the inquiry data standard that this data conforms to. For more information about the version values allowed in this field, see the <i>SCSI Primary Commands - 2 (SPC-2)</i> specification.
 
 `Wide16Bit`
 

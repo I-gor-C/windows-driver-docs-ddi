@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -75,4 +75,3 @@ A pointer to a BSTR that receives the namespace URI. The driver places the names
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prdrvcom.h (include Prdrvcom.h) |
-| **Library** | NtosKrnl.exe |

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntifs.h
+req.lib: 
 req.dll: 
 req.irql: Any level
 topic_type:
@@ -78,7 +78,6 @@ File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> 
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | ntifs.h |
 | **IRQL** | Any level |
 
 ## See Also

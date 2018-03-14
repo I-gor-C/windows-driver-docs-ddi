@@ -144,11 +144,11 @@ Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/har
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565933">KSPROPERTY_TVAUDIO_CAPS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567811">PROPSETID_VIDCAP_TVAUDIO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565933">KSPROPERTY_TVAUDIO_CAPS</a>
 
 
 

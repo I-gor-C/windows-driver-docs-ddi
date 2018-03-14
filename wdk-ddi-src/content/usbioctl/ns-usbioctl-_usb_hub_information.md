@@ -74,7 +74,7 @@ A Boolean value that indicates whether the hub is bus-powered. <b>TRUE</b>, the 
 
 ## See Also
 
-<a href="..\usbspec\ns-usbspec-_usb_hub_descriptor.md">USB_HUB_DESCRIPTOR</a>
+<a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a>
 
 
 
@@ -82,7 +82,7 @@ A Boolean value that indicates whether the hub is bus-powered. <b>TRUE</b>, the 
 
 
 
-<a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a>
+<a href="..\usbspec\ns-usbspec-_usb_hub_descriptor.md">USB_HUB_DESCRIPTOR</a>
 
 
 

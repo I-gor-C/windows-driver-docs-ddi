@@ -348,7 +348,7 @@ The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures 
 
 ## See Also
 
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a>
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
 
 
 
@@ -356,7 +356,7 @@ The video miniport driver returns an array of VIDEO_MODE_INFORMATION structures 
 
 
 
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_current_mode.md">IOCTL_VIDEO_QUERY_CURRENT_MODE</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: kernel\psinsertpermanentsilocontext.htm
 old-project: kernel
 ms.assetid: ADBAB25B-7646-4E0E-AFD8-18B87A293674
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/1/2018
 ms.keywords: PsInsertPermanentSiloContext, PsInsertPermanentSiloContext routine [Kernel-Mode Driver Architecture], kernel.psinsertpermanentsilocontext, ntddk/PsInsertPermanentSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -126,4 +126,3 @@ A successful call to <b>PsInsertPermanentSiloContext</b> increments the referenc
 | **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** | NtosKrnl.exe |

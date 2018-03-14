@@ -171,11 +171,11 @@ The <i>Allocate</i> parameter was set to <b>TRUE</b>, but the memory allocation 
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-secmakespnex.md">SecMakeSPNEx</a>
-
-
-
 <a href="..\ntifs\nf-ntifs-secmakespn.md">SecMakeSPN</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-secmakespnex.md">SecMakeSPNEx</a>
 
 
 

@@ -91,7 +91,7 @@ Subguard-band drivers should ignore and skip over these instructions and continu
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+D3DDP2OP_VIEWPORTINFO
 
 
 
@@ -99,7 +99,7 @@ Subguard-band drivers should ignore and skip over these instructions and continu
 
 
 
-D3DDP2OP_VIEWPORTINFO
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 
 

@@ -67,7 +67,7 @@ A pointer to the driver-supplied callback context. The operating system passes t
 
 `pIoStatusBlock`
 
-A pointer to a driver-supplied buffer to hold the returned <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the completed or canceled user-mode message. This structure holds the status of the I/O call and the number of bytes that the user-mode driver wrote to the output buffer.
+A pointer to a driver-supplied buffer to hold the returned <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the completed or canceled user-mode message. This structure holds the status of the I/O call and the number of bytes that the user-mode driver wrote to the output buffer.
 
 
 ## Return Value
@@ -91,7 +91,7 @@ The operating system guarantees that this function follows the zero level synchr
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+<a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 
 
 

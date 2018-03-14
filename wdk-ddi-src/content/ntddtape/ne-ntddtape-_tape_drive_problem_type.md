@@ -153,7 +153,7 @@ typedef enum _TAPE_DRIVE_PROBLEM_TYPE {
 
 
 
-<a href="..\minitape\ns-minitape-_tape_wmi_operations.md">TAPE_WMI_OPERATIONS</a>
+<a href="..\ntddtape\ns-ntddtape-_tape_wmi_operations.md">TAPE_WMI_OPERATIONS</a>
 
 
 

@@ -85,11 +85,11 @@ The miniport driver should release the device lock as quickly as possible by cal
 
 ## See Also
 
-<a href="..\video\nf-video-videoportreleasedevicelock.md">VideoPortReleaseDeviceLock</a>
-
-
-
 <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>
+
+
+
+<a href="..\video\nf-video-videoportreleasedevicelock.md">VideoPortReleaseDeviceLock</a>
 
 
 

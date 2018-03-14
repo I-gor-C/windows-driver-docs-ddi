@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ntifs.h
+req.lib: 
 req.dll: 
 req.irql: "< DISPATCH_LEVEL"
 topic_type:
@@ -77,7 +77,6 @@ For information about other string-handling routines, see <a href="https://msdn.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | ntifs.h |
 | **IRQL** | "< DISPATCH_LEVEL" |
 
 ## See Also

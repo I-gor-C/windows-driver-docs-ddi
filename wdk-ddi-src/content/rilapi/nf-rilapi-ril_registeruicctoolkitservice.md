@@ -7,7 +7,7 @@ old-location: netvista\ril_registeruicctoolkitservice.htm
 old-project: netvista
 ms.assetid: 1f406818-b81c-4dc8-bfc7-0c977495b285
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 2/27/2018
 ms.keywords: RIL_RegisterUiccToolkitService, RIL_RegisterUiccToolkitService method [Network Drivers Starting with Windows Vista], netvista.ril_registeruicctoolkitservice, rilapi/RIL_RegisterUiccToolkitService
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -84,4 +84,3 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 | **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** | NtosKrnl.exe |

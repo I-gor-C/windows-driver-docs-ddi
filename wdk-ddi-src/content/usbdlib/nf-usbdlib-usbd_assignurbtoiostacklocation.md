@@ -102,7 +102,7 @@ For a code example, see <a href="https://msdn.microsoft.com/library/windows/hard
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_urballocate.md">USBD_UrbAllocate</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>
 
 
 
@@ -110,15 +110,15 @@ For a code example, see <a href="https://msdn.microsoft.com/library/windows/hard
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>
-
-
-
 <a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>
 
 
 
-<a href="..\usbdlib\nf-usbdlib-usbd_selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>
+
+
+
+<a href="..\usbdlib\nf-usbdlib-usbd_urballocate.md">USBD_UrbAllocate</a>
 
 
 

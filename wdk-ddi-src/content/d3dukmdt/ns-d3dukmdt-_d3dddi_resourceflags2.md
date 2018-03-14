@@ -78,11 +78,11 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource2.md">CreateResource2</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_formatop.md">FORMATOP</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource2.md">CreateResource2</a>
 
 
 

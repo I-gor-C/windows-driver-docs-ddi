@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -88,7 +88,6 @@ Print providers are required to define an <b>InitializePrintProvidor</b> functio
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

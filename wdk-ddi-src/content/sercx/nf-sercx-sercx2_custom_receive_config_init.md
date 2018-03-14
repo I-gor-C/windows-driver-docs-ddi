@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any level.
 topic_type:
@@ -79,16 +79,15 @@ Your serial controller driver must use this function to initialize a <a href="..
 | **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
 
 ## See Also
 
-<a href="..\sercx\ns-sercx-_sercx2_custom_receive_config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a>
-
-
-
 <a href="..\sercx\nf-sercx-sercx2customreceivecreate.md">SerCx2CustomReceiveCreate</a>
+
+
+
+<a href="..\sercx\ns-sercx-_sercx2_custom_receive_config.md">SERCX2_CUSTOM_RECEIVE_CONFIG</a>
 
 
 

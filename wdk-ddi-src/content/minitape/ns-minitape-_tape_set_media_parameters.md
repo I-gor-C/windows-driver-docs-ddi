@@ -68,11 +68,11 @@ Indicates the requested block size, in bytes, or zero for variable block size in
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567953">TapeMiniSetMediaParameters</a>
-
-
-
 <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_media_params.md">IOCTL_TAPE_SET_MEDIA_PARAMS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567953">TapeMiniSetMediaParameters</a>
 
 
 

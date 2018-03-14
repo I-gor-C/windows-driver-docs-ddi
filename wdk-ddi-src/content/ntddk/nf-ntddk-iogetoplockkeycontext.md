@@ -86,7 +86,7 @@ Use the <b>IoGetOplockKeyContext</b> routine only in Windows 7. Because  <a hre
 
 
 
-<a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551003">OPLOCK_KEY_ECP_CONTEXT</a>
 
 
 
@@ -94,7 +94,7 @@ Use the <b>IoGetOplockKeyContext</b> routine only in Windows 7. Because  <a hre
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551003">OPLOCK_KEY_ECP_CONTEXT</a>
+<a href="..\ntddk\ns-ntddk-_oplock_key_context.md">OPLOCK_KEY_CONTEXT</a>
 
 
 

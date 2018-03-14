@@ -223,7 +223,7 @@ If <b>ConfigIntraResidUnsigned</b> is 1, spatial domain blocks for intra macrobl
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 
 
 
@@ -231,7 +231,7 @@ If <b>ConfigIntraResidUnsigned</b> is 1, spatial domain blocks for intra macrobl
 
 
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
 
 

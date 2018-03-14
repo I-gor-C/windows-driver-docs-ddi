@@ -80,6 +80,10 @@ You must implement this method.
 
 ## See Also
 
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
+
+
+
 <a href="..\iscsiop\ns-iscsiop-_removepersistentlogin_out.md">RemovePersistentLogin_OUT</a>
 
 
@@ -89,10 +93,6 @@ You must implement this method.
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a>
-
-
-
-<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
 
 
 

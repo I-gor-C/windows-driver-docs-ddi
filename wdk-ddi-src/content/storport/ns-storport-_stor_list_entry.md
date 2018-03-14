@@ -60,10 +60,6 @@ typedef struct _STOR_LIST_ENTRY {
 ## Members
 
 
-`_STOR_LIST_ENTRY`
-
-
-
 `Blink`
 
 For a <b>LIST_ENTRY</b> structure that serves as a list entry, the <b>Blink</b> member points to the previous entry in the list or to the list header if there is no previous entry in the list.
@@ -91,27 +87,11 @@ For more information about how to use <b>STOR_LIST_ENTRY</b> structures to imple
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
+<a href="..\wudfwdm\nf-wudfwdm-islistempty.md">IsListEmpty</a>
 
 
 
-<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
-
-
-
-<a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
-
-
-
-<a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
-
-
-
-<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-
-
-
-<a href="..\storport\nf-storport-storportinterlockedinsertheadlist.md">StorPortInterlockedInsertHeadList</a>
+<a href="..\wudfwdm\nf-wudfwdm-removeentrylist.md">RemoveEntryList</a>
 
 
 
@@ -119,15 +99,31 @@ For more information about how to use <b>STOR_LIST_ENTRY</b> structures to imple
 
 
 
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+<a href="..\wudfwdm\nf-wudfwdm-insertheadlist.md">InsertHeadList</a>
 
 
 
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+<a href="..\storport\nf-storport-storportinterlockedinsertheadlist.md">StorPortInterlockedInsertHeadList</a>
 
 
 
-<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializelisthead.md">InitializeListHead</a>
+
+
+
+<a href="..\wudfwdm\nf-wudfwdm-removetaillist.md">RemoveTailList</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
+
+
+
+<a href="..\wudfwdm\nf-wudfwdm-removeheadlist.md">RemoveHeadList</a>
+
+
+
+<a href="..\wudfwdm\nf-wudfwdm-inserttaillist.md">InsertTailList</a>
 
 
 

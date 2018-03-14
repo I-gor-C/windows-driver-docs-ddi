@@ -88,7 +88,7 @@ Minidrivers using this function must include <i>kcom.h</i> and use a C++ compile
 
 
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 
 
 
@@ -100,11 +100,11 @@ Minidrivers using this function must include <i>kcom.h</i> and use a C++ compile
 
 
 
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
+
+
+
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
-
-
-
-<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 
 
 

@@ -69,10 +69,6 @@ struct _URB_CONTROL_VENDOR_OR_CLASS_REQUEST {
 ## Members
 
 
-`_URB`
-
-
-
 `hca`
 
 Reserved. Do not use.
@@ -177,15 +173,15 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 ## See Also
 
+<a href="..\usb\ns-usb-_urb.md">URB</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 
 
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
-
-
-
-<a href="..\usb\ns-usb-_urb.md">URB</a>
 
 
 

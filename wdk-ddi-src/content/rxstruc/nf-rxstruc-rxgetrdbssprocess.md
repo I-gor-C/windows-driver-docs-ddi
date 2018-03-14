@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any level
 topic_type:
@@ -71,16 +71,15 @@ When <b>RxDriverEntry</b> is called to initialize RDBSS, a pointer to the kernel
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxstruc.h (include Rxstruc.h, Ntddk.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
 
 ## See Also
 
-<a href="..\rxprocs\nf-rxprocs-rxdriverentry.md">RxDriverEntry</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
+
+
+
+<a href="..\rxprocs\nf-rxprocs-rxdriverentry.md">RxDriverEntry</a>
 
 
 

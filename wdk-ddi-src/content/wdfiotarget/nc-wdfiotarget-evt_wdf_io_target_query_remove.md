@@ -131,7 +131,7 @@ The <b>EVT_WDF_IO_TARGET_QUERY_REMOVE</b> function type is defined in the WdfIoT
 
 ## See Also
 
-<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcloseforqueryremove.md">WdfIoTargetCloseForQueryRemove</a>
 
 
 
@@ -143,7 +143,7 @@ The <b>EVT_WDF_IO_TARGET_QUERY_REMOVE</b> function type is defined in the WdfIoT
 
 
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcloseforqueryremove.md">WdfIoTargetCloseForQueryRemove</a>
+<a href="..\wdfiotarget\nc-wdfiotarget-evt_wdf_io_target_remove_canceled.md">EvtIoTargetRemoveCanceled</a>
 
 
 

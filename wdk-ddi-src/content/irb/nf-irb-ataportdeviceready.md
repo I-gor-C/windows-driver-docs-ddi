@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -86,7 +86,6 @@ The port driver resumes the paused request queue for the indicated device. If th
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

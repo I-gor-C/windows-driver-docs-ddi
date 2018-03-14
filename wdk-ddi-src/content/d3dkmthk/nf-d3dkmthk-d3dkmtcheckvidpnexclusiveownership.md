@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -138,7 +138,6 @@ This function might also return other <b>NTSTATUS</b> values.
 | **Windows version** | D3DKMTCheckVidPnExclusiveOwnership is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

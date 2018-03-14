@@ -61,11 +61,11 @@ The STOR_DPC structure is an opaque structure that represents a DPC object. Do n
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
-
-
-
 <a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
+
+
+
+<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
 
 
 

@@ -68,7 +68,7 @@ Contains an array whose first element holds the first DEVICE_MEDIA_INFO structur
 
 `MediaInfoCount`
 
-Contains the number of <a href="..\minitape\ns-minitape-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.
+Contains the number of <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.
 
 ## Remarks
 A storage class driver must handle the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request to support any device that the Removable Storage Manager (RSM) accesses, whether the device is a stand-alone device or a data transfer element (drive) in a media library or changer.
@@ -80,11 +80,11 @@ A storage class driver must handle the <a href="..\ntddstor\ni-ntddstor-ioctl_st
 
 ## See Also
 
+<a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
+
+
+
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
-
-
-
-<a href="..\minitape\ns-minitape-_device_media_info.md">DEVICE_MEDIA_INFO</a>
 
 
 

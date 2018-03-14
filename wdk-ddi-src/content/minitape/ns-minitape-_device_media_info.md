@@ -44,7 +44,7 @@ req.typenames: DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO
 ---
 
 # _DEVICE_MEDIA_INFO structure
-A storage class driver returns an array of <b>DEVICE_MEDIA_INFO</b> structures, embedded in a <a href="..\minitape\ns-minitape-_get_media_types.md">GET_MEDIA_TYPES</a> structure, in response to an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> device-control request.
+A storage class driver returns an array of <b>DEVICE_MEDIA_INFO</b> structures, embedded in a <a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a> structure, in response to an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> device-control request.
 
 ## Syntax
 ````
@@ -94,7 +94,7 @@ typedef struct _DEVICE_MEDIA_INFO {
 ## Remarks
 This structure is used by a storage driver to indicate the types of media supported by a device and which type is currently mounted, if any. A driver must provide this information if it might control drives in a media library or changer or if its device might be accessed by the Removable Storage Manager (RSM). 
 
-The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for each medium type supported by the device, embedded in a <a href="..\minitape\ns-minitape-_get_media_types.md">GET_MEDIA_TYPES</a> structure.
+The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for each medium type supported by the device, embedded in a <a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,11 +103,11 @@ The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for eac
 
 ## See Also
 
+<a href="..\ntddstor\ne-ntddstor-_storage_media_type.md">STORAGE_MEDIA_TYPE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a>
-
-
-
-<a href="..\minitape\ne-minitape-_storage_media_type.md">STORAGE_MEDIA_TYPE</a>
 
 
 

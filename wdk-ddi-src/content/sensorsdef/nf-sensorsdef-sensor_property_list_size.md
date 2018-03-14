@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,4 +73,3 @@ The <b>SENSOR_PROPERTY_LIST_SIZE</b> function returns a ULONG value that represe
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | sensorsdef.h |
-| **Library** | NtosKrnl.exe |

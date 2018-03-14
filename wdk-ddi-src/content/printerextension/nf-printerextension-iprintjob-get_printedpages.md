@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -80,7 +80,6 @@ If the <b>PrintedPages</b> and <a href="https://msdn.microsoft.com/1035337F-2EDD
 | **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: scsiwmi.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -97,7 +97,6 @@ This routine is a simplified version of the <a href="..\scsiwmi\nf-scsiwmi-scsip
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
-| **Library** | scsiwmi.h |
 
 ## See Also
 

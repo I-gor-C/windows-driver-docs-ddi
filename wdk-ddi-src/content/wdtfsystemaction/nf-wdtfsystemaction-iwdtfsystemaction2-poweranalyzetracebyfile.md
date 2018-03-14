@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFSystemAction.Interop.dll
 req.type-library: 
-req.lib: wdtfsystemaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -76,7 +76,6 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Desktop |
 | **Header** | wdtfsystemaction.h |
-| **Library** | wdtfsystemaction.h |
 
 ## See Also
 

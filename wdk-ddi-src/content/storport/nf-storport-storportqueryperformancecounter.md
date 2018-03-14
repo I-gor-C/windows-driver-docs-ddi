@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -113,7 +113,6 @@ The <i>PerformanceCounter</i> parameter is <b>NULL</b>.
 | **Windows version** | Available starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
 
 ## See Also

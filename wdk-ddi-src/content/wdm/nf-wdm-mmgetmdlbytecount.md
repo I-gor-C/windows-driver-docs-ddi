@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdm.h
+req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
 topic_type:
@@ -77,14 +77,13 @@ Callers of <b>MmGetMdlByteCount</b> can be running at any IRQL. Usually, callers
 | **Windows version** | Available starting with Windows 2000.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** | wdm.h |
 | **IRQL** | Any level (see Remarks section) |
 | **DDI compliance rules** | MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
+
+
+
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>

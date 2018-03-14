@@ -126,11 +126,11 @@ Specifies the offset, in bytes, from the beginning of the .uff file to the begin
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_data_header.md">DATA_HEADER</a>
-
-
-
 <a href="..\prntfont\ns-prntfont-_uff_fontdirectory.md">UFF_FONTDIRECTORY</a>
+
+
+
+<a href="..\prntfont\ns-prntfont-_data_header.md">DATA_HEADER</a>
 
 
 

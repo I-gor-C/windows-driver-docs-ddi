@@ -87,7 +87,7 @@ If a miniport driver has work to be done at regular intervals of more than 50 mi
 
 ## See Also
 
-<a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>
+<a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a>
 
 
 
@@ -95,7 +95,7 @@ If a miniport driver has work to be done at regular intervals of more than 50 mi
 
 
 
-<a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a>
+<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
 
 
 
@@ -103,7 +103,7 @@ If a miniport driver has work to be done at regular intervals of more than 50 mi
 
 
 
-<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
+<a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>
 
 
 

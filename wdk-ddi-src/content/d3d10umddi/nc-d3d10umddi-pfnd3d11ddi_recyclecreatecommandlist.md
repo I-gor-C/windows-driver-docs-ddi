@@ -132,6 +132,10 @@ For more information about <i>RecycleCreateCommandList</i>, see <a href="https:/
 
 
 
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createcommandlist.md">D3D11DDIARG_CREATECOMMANDLIST</a>
+
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
 
 
@@ -141,10 +145,6 @@ For more information about <i>RecycleCreateCommandList</i>, see <a href="https:/
 
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatecommandlistsize.md">CalcPrivateCommandListSize</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createcommandlist.md">D3D11DDIARG_CREATECOMMANDLIST</a>
 
 
 

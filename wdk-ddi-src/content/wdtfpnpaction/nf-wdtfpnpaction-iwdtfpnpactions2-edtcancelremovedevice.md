@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdtfpnpaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -80,7 +80,6 @@ by intentionally failing an IRP_MN_QUERY_REMOVE_DEVICE event.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdtfpnpaction.h |
-| **Library** | wdtfpnpaction.h |
 
 ## See Also
 

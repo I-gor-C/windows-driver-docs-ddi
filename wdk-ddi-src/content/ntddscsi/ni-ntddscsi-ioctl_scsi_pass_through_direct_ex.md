@@ -144,7 +144,7 @@ In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</b> request, the under
 
 ## See Also
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
 
 
 
@@ -152,7 +152,7 @@ In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</b> request, the under
 
 
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 
 
 

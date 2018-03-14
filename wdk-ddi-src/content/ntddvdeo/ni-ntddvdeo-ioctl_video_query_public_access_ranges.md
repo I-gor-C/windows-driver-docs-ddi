@@ -78,11 +78,11 @@ If the miniport driver returns an address range or ranges, it sets the <b>Inform
 
 ## See Also
 
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_public_access_ranges.md">VIDEO_PUBLIC_ACCESS_RANGES</a>
-
-
-
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
+
+
+
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_public_access_ranges.md">VIDEO_PUBLIC_ACCESS_RANGES</a>
 
 
 

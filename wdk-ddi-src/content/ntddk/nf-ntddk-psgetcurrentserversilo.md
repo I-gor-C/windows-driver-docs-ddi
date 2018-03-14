@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentserversilo.htm
 old-project: kernel
 ms.assetid: 4E30CD53-C078-40D7-BEF8-A39F57D71D42
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/1/2018
 ms.keywords: PsGetCurrentServerSilo, PsGetCurrentServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentserversilo, ntddk/PsGetCurrentServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "_IRQL_requires_max_(DISPATCH_LEVEL)"
 topic_type:
@@ -68,5 +68,4 @@ A pointer to the current server silo.  This pointer is valid for the current thr
 | **Windows version** | Windows 10, version 1607 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "_IRQL_requires_max_(DISPATCH_LEVEL)" |

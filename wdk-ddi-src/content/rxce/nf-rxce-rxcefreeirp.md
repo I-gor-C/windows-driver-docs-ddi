@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -76,16 +76,15 @@ An IRP allocated with an associated memory descriptor list allocated with <b>RxC
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-
-
-
 <a href="..\rxce\nf-rxce-rxceallocateirpwithmdl.md">RxCeAllocateIrpWithMDL</a>
+
+
+
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 
 
 

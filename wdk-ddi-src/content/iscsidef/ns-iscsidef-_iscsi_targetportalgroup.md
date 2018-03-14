@@ -73,11 +73,11 @@ A variable-length array of <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561576">ISCSI_TargetPortalGroup WMI Class</a>
-
-
-
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561576">ISCSI_TargetPortalGroup WMI Class</a>
 
 
 

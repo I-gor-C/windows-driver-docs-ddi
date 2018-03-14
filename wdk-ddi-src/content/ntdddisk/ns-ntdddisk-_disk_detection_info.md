@@ -99,7 +99,7 @@ Contains the quantity, in bytes, of retrieved detect information.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_int13_info.md">DISK_INT13_INFO</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
 
 
 
@@ -107,7 +107,7 @@ Contains the quantity, in bytes, of retrieved detect information.
 
 
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_int13_info.md">DISK_INT13_INFO</a>
 
 
 

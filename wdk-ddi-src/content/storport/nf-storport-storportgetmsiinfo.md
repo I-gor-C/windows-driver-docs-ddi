@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any level.
 topic_type:
@@ -143,7 +143,6 @@ The HBA does not support MSI.
 | **Windows version** | This routine is available starting with Windows Vista.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
 
 ## See Also

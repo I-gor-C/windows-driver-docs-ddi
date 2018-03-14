@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -96,7 +96,6 @@ If a <b>NULL</b> pointer is passed as the <i>pWorkItem</i> parameter, this routi
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxtimer.h (include Rxtimer.h, Rxworkq.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

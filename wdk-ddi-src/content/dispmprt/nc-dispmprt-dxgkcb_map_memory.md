@@ -88,7 +88,7 @@ A Boolean value that specifies whether the range is mapped into user-mode space 
 
 `CacheType`
 
-A <a href="..\miniport\ne-miniport-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> enumerator that specifies the caching behavior of the mapped range.
+A <a href="..\wudfwdm\ne-wudfwdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> enumerator that specifies the caching behavior of the mapped range.
 
 `*VirtualAddress`
 
@@ -131,7 +131,7 @@ The PHYSICAL_ADDRESS data type is defined in <i>Ntdef.h</i>.
 
 ## See Also
 
-<a href="..\miniport\ne-miniport-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
+<a href="..\wudfwdm\ne-wudfwdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
 
 
 

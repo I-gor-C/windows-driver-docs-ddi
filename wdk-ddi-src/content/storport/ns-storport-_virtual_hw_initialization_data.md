@@ -216,7 +216,7 @@ The vendor identifier.
 The length, in bytes, of the vendor identifier.
 
 ## Remarks
-If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.
+If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -225,15 +225,7 @@ If a virtual miniport driver will execute only on Windows 8 or later, the drive
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a>
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 
 
 
@@ -245,11 +237,11 @@ If a virtual miniport driver will execute only on Windows 8 or later, the drive
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a>
 
 
 
@@ -257,7 +249,15 @@ If a virtual miniport driver will execute only on Windows 8 or later, the drive
 
 
 
-<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a>
+
+
+
+<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
 
 
 

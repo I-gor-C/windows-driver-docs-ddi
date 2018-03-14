@@ -98,11 +98,11 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
-
-
-
 <a href="..\ks\nf-ks-ksstreampointergetmdl.md">KsStreamPointerGetMdl</a>
+
+
+
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 
 
 

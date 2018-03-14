@@ -80,7 +80,7 @@ You must implement this method.
 
 ## See Also
 
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 
 
@@ -88,11 +88,11 @@ You must implement this method.
 
 
 
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a>
+
+
+
 <a href="..\iscsifnd\ns-iscsifnd-_reportdiscoveredtargets2_out.md">ReportDiscoveredTargets2_OUT</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 
 

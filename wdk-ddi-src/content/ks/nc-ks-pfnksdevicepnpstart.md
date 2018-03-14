@@ -73,11 +73,11 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff55
 
 `TranslatedResourceList`
 
-Pointer to a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that contains the translated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if <i>Device</i> has no assigned resources. Optional.
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that contains the translated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if <i>Device</i> has no assigned resources. Optional.
 
 `UntranslatedResourceList`
 
-Pointer to a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that contains the untranslated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if the <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> member of this parameter list has no assigned resources. Optional.
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that contains the untranslated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if the <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> member of this parameter list has no assigned resources. Optional.
 
 
 ## Return Value
@@ -109,7 +109,7 @@ This routine is optional.
 
 
 
-<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
+<a href="..\wudfwdm\ns-wudfwdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
 
 
 

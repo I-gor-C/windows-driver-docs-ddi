@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -156,7 +156,6 @@ If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS se
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

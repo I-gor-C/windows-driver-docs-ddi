@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -80,7 +80,6 @@ Returns<b> STATUS_SUCCESS</b> if <i>IsPartialPlaceholder</i> is valid and not un
 | **Windows version** | Available starting with Windows 10, version 1709.  |
 | **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

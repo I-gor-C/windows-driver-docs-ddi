@@ -85,7 +85,7 @@ None
 
 ## Remarks
 
-For more information, see the <a href="..\srb\nf-srb-scsiportreadportbufferulong.md">ScsiPortReadPortBufferUlong</a> routine. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadportulong.md">StorPortReadPortUlong</a>.
+For more information, see the <a href="..\storport\nf-storport-scsiportreadportbufferulong.md">ScsiPortReadPortBufferUlong</a> routine. For a nonbuffered version of this routine, see <a href="..\storport\nf-storport-storportreadportulong.md">StorPortReadPortUlong</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,7 +96,7 @@ For more information, see the <a href="..\srb\nf-srb-scsiportreadportbufferulong
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportreadportbufferulong.md">ScsiPortReadPortBufferUlong</a>
+<a href="..\storport\nf-storport-scsiportreadportbufferulong.md">ScsiPortReadPortBufferUlong</a>
 
 
 

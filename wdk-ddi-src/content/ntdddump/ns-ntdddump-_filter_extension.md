@@ -106,11 +106,11 @@ The partition information in <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_in
 
 
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
-
-
-
 <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a>
+
+
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any level.
 topic_type:
@@ -109,7 +109,6 @@ Your serial controller driver must use either this function or the <a href="..\s
 | **Windows version** | Available starting with Windows 8.1.  |
 | **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
 
 ## See Also

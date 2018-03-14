@@ -229,7 +229,7 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a>
 
 
 
@@ -237,7 +237,7 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a>
+<a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
 
 
 

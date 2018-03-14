@@ -108,7 +108,7 @@ typedef struct _WDF_REQUEST_COMPLETION_PARAMS {
 
 `IoStatus`
 
-An <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the request.
+An <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the request.
 
 `Parameters`
 
@@ -140,10 +140,6 @@ The <b>Parameters.Others.Argument</b>  members are custom arguments that a drive
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-
-
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
 
 
@@ -152,11 +148,15 @@ The <b>Parameters.Others.Argument</b>  members are custom arguments that a drive
 
 
 
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>
+
+
+
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>
+<a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 
 
 

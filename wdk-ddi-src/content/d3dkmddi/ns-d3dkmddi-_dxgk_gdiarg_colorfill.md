@@ -101,7 +101,7 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_gdirop_colorfill.md">DXGK_GDIROP_COLORFILL</a>
 
 
 
@@ -109,11 +109,11 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 
 
 
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_gdirop_colorfill.md">DXGK_GDIROP_COLORFILL</a>
 
 
 

@@ -134,11 +134,11 @@ The PCOLORPROFILESUBTYPE and LPCOLORPROFILESUBTYPE data types are defined as poi
 
 ## See Also
 
-<a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
-
-
-
 <a href="..\icm\nf-icm-wcssetdefaultcolorprofile.md">WcsSetDefaultColorProfile</a>
+
+
+
+<a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
 
 
 

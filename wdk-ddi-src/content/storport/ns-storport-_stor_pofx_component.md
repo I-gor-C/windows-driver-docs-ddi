@@ -105,7 +105,7 @@ For a unit device component, if an additional F-state is included in the <b>FSta
 
 ## See Also
 
-<a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a>
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 
 
 
@@ -113,7 +113,7 @@ For a unit device component, if an additional F-state is included in the <b>FSta
 
 
 
-<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
+<a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a>
 
 
 

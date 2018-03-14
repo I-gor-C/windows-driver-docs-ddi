@@ -73,11 +73,11 @@ Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_Scs
 
 ## See Also
 
-<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
-
-
-
 <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_ScsiId</a>
+
+
+
+<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
 
 
 

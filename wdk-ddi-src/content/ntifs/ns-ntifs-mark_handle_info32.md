@@ -300,7 +300,7 @@ When running on a 64-bit system, file system minifilters must interpret the inpu
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/c96b49d8-12f3-4281-9f9f-6621769359f0">FSCTL_MARK_HANDLE</a>
+<a href="..\fltkernel\nf-fltkernel-fltis32bitprocess.md">FltIs32bitProcess</a>
 
 
 
@@ -308,7 +308,7 @@ When running on a 64-bit system, file system minifilters must interpret the inpu
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltis32bitprocess.md">FltIs32bitProcess</a>
+<a href="https://msdn.microsoft.com/c96b49d8-12f3-4281-9f9f-6621769359f0">FSCTL_MARK_HANDLE</a>
 
 
 

@@ -137,11 +137,11 @@ For a code example that uses <b>WdfCollectionCreate</b>, see <a href="..\wdfcoll
 
 ## See Also
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremove.md">WdfCollectionRemove</a>
-
-
-
 <a href="..\wdfcollection\nf-wdfcollection-wdfcollectionadd.md">WdfCollectionAdd</a>
+
+
+
+<a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremove.md">WdfCollectionRemove</a>
 
 
 

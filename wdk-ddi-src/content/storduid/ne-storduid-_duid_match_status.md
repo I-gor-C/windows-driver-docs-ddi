@@ -142,11 +142,11 @@ typedef enum _DUID_MATCH_STATUS {
 
 
 
-<a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a>
-
-
-
 <a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+
+
+
+<a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a>
 
 
 

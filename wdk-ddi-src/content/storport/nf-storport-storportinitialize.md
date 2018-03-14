@@ -64,15 +64,15 @@ STORPORT_API ULONG StorPortInitialize(
 
 `Argument1`
 
-The first pointer with which the operating system called the miniport's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
+The first pointer with which the operating system called the miniport's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine.
 
 `Argument2`
 
-The second pointer with which the operating system called the miniports's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
+The second pointer with which the operating system called the miniports's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine.
 
 `HwInitializationData`
 
-Pointer to the initialization and configuration information set by the miniport driver in it's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
+Pointer to the initialization and configuration information set by the miniport driver in it's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine.
 
 `HwContext`
 
@@ -81,7 +81,7 @@ Is the address of a context value to be passed to the miniport driver's <a href=
 
 ## Return Value
 
-The result of the initialization actions performed by <b>StorPortInitilize</b>. The miniport driver will return this value as the return value for its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
+The result of the initialization actions performed by <b>StorPortInitilize</b>. The miniport driver will return this value as the return value for its <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine.
 
 <b>StorPortInitilize</b> returns one of the following status codes:
 
@@ -157,11 +157,11 @@ The allocation failed for the driver object extension data.
 
 ## Remarks
 
-This routine must be called from the miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine.
+This routine must be called from the miniport driver's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine.
 
 Because Storport miniport drivers must support PnP, the Storport driver does not use the <i>HwContext</i> parameter passed to <b>StorPortInitilize</b>.
 
-Every miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine must call <b>StorPortInitilize</b> after the miniport driver has first zeroed and then set the members of <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>.
+Every miniport driver's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine must call <b>StorPortInitilize</b> after the miniport driver has first zeroed and then set the members of <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -172,7 +172,7 @@ Every miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry
 
 ## See Also
 
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
 
 
 

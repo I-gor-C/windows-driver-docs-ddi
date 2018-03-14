@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= DISPATCH_LEVEL"
 topic_type:
@@ -135,20 +135,19 @@ If the miniport uses the work item during IO processing, we recommended that <b>
 | **Windows version** | Available in Windows 8 and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
-
-<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
-
-
 
 <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 
 
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
+
+
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -112,7 +112,7 @@ Parameters were validated and determined to be incorrect.
 </td>
 <td width="60%">
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_configuresharedresource.md">D3DKMTConfigureSharedResource</a> could not complete because of insufficient memory.
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> could not complete because of insufficient memory.
 
 </td>
 </tr>
@@ -128,7 +128,6 @@ This function might also return other <b>NTSTATUS</b> values.
 | **Windows version** | D3DKMTConfigureSharedResource is supported beginning with the Windows 7 operating system.  |
 | **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

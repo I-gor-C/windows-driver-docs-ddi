@@ -95,11 +95,11 @@ Every device identification page (page code 0x83) of SCSI vital product data con
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
 
 
 

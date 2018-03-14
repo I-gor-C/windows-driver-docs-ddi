@@ -44,7 +44,7 @@ req.typenames: D3DKMT_OPENKEYEDMUTEX2
 ---
 
 # _D3DKMT_OPENKEYEDMUTEX2 structure
-Describes a keyed mutex that the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_openkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a> function opens.
+Describes a keyed mutex that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a> function opens.
 
 ## Syntax
 ````
@@ -84,7 +84,7 @@ typedef struct _D3DKMT_OPENKEYEDMUTEX2 {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_openkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenkeyedmutex2.md">D3DKMTOpenKeyedMutex2</a>
 
 
 

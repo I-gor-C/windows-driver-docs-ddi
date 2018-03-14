@@ -85,7 +85,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\srb\nf-srb-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>. For a non-buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportushort.md">StorPortWritePortUshort</a>.
+For more information, see <a href="..\storport\nf-storport-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>. For a non-buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportushort.md">StorPortWritePortUshort</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,7 +100,7 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportbufferushort.m
 
 
 
-<a href="..\srb\nf-srb-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>
+<a href="..\storport\nf-storport-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>
 
 
 

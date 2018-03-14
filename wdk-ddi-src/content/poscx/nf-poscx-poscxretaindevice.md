@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -93,4 +93,3 @@ Possible return values are:
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** | NtosKrnl.exe |

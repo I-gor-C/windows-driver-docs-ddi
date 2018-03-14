@@ -136,11 +136,7 @@ Status requests are passed in the <i>pInput</i> parameter of the <a href="https:
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatussignalingcmddata.md">DXVA_COPPStatusSignalingCmdData</a>
-
-
-
-<a href="..\dxva\ns-dxva-_dxva_coppstatusdata.md">DXVA_COPPStatusData</a>
+<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
 
 
@@ -148,11 +144,7 @@ Status requests are passed in the <i>pInput</i> parameter of the <a href="https:
 
 
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatushdcpkeydata.md">DXVA_COPPStatusHDCPKeyData</a>
-
-
-
-<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
+<a href="..\dxva\ns-dxva-_dxva_coppstatussignalingcmddata.md">DXVA_COPPStatusSignalingCmdData</a>
 
 
 
@@ -161,6 +153,14 @@ Status requests are passed in the <i>pInput</i> parameter of the <a href="https:
 
 
 <a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
+
+
+
+<a href="..\dxva\ns-dxva-_dxva_coppstatusdata.md">DXVA_COPPStatusData</a>
+
+
+
+<a href="..\dxva\ns-dxva-_dxva_coppstatushdcpkeydata.md">DXVA_COPPStatusHDCPKeyData</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: ks.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -98,7 +98,6 @@ Also see <a href="https://msdn.microsoft.com/1173a83f-8d9e-4678-bfb5-f2fb91e827b
 | **Windows version** | Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.  |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | ks.h |
 
 ## See Also
 

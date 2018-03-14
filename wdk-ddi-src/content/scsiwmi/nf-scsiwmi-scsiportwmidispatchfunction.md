@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -126,7 +126,6 @@ Call <b>ScsiPortNotification</b> with <b>RequestComplete</b> and again with <b>N
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 
@@ -138,7 +137,11 @@ Call <b>ScsiPortNotification</b> with <b>RequestComplete</b> and again with <b>N
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
+<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
+
+
+
+<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
 
 
 
@@ -146,11 +149,7 @@ Call <b>ScsiPortNotification</b> with <b>RequestComplete</b> and again with <b>N
 
 
 
-<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
-
-
-
-<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
 
 
 

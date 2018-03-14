@@ -82,11 +82,11 @@ A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which t
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>
-
-
-
 <a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
+
+
+
+<a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>
 
 
 

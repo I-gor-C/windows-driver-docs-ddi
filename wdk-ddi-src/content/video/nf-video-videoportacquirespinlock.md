@@ -112,11 +112,11 @@ The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as 
 
 ## See Also
 
-<a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
-
-
-
 <a href="..\video\nf-video-videoportacquirespinlockatdpclevel.md">VideoPortAcquireSpinLockAtDpcLevel</a>
+
+
+
+<a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
 
 
 

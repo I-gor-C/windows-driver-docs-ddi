@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: filterpipeline.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -135,31 +135,14 @@ A filter can create new XPS parts by using the <code>GetNewEmptyPart</code> meth
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** | filterpipeline.h |
 
 ## See Also
-
-<a href="..\filterpipeline\nn-filterpipeline-ipartfont.md">IPartFont</a>
-
-
-
-<a href="..\filterpipeline\nn-filterpipeline-ixpsdocumentconsumer.md">IXpsDocumentConsumer</a>
-
-
-
-<a href="..\filterpipeline\nn-filterpipeline-ipartprintticket.md">IPartPrintTicket</a>
-
-
-
-<a href="..\filterpipeline\nn-filterpipeline-ipartthumbnail.md">IPartThumbnail</a>
-
-
 
 <a href="..\filterpipeline\nn-filterpipeline-ifixedpage.md">IFixedPage</a>
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-ipartcolorprofile.md">IPartColorProfile</a>
+<a href="..\filterpipeline\nn-filterpipeline-ifixeddocument.md">IFixedDocument</a>
 
 
 
@@ -167,7 +150,23 @@ A filter can create new XPS parts by using the <code>GetNewEmptyPart</code> meth
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-ifixeddocument.md">IFixedDocument</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartthumbnail.md">IPartThumbnail</a>
+
+
+
+<a href="..\filterpipeline\nn-filterpipeline-ipartcolorprofile.md">IPartColorProfile</a>
+
+
+
+<a href="..\filterpipeline\nn-filterpipeline-ixpsdocumentconsumer.md">IXpsDocumentConsumer</a>
+
+
+
+<a href="..\filterpipeline\nn-filterpipeline-ipartfont.md">IPartFont</a>
+
+
+
+<a href="..\filterpipeline\nn-filterpipeline-ipartprintticket.md">IPartPrintTicket</a>
 
 
 

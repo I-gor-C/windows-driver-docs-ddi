@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -185,20 +185,19 @@ Each call to <b>StorPortPoFxIdleComponent</b> must be matched with a previous ca
 | **Windows version** | Available in starting with Windows 8.  |
 | **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
 
 ## See Also
+
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
+
+
 
 <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>
 
 
 
 <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
-
-
-
-<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 
 
 

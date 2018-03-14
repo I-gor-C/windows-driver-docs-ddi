@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
 topic_type:
@@ -93,12 +93,11 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 | **Windows version** | Windows 8 Windows Server 2012 |
 | **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
+<a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a>
 
 
 
@@ -106,7 +105,7 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 
 
 
-<a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a>
+<a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
 
 
 

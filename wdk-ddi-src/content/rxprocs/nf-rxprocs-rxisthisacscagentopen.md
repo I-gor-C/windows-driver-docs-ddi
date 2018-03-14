@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -79,7 +79,6 @@ The <b>RxIsThisACscAgentOpen</b> routine is called internally by RDBSS when init
 | **Windows version** | The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxcontx.h, Rxprocs.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

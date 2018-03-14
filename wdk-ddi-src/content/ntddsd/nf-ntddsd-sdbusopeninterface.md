@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "< DISPATCH_LEVEL"
 topic_type:
@@ -92,7 +92,6 @@ SD card drivers must call this routine to establish communication with the bus d
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | ntddsd.h (include Ntddsd.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
 
 ## See Also

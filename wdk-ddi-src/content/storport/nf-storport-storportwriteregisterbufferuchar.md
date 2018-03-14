@@ -92,7 +92,7 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportwriteregisterbufferuchar.md">ScsiPortWriteRegisterBufferUchar</a>
+<a href="..\storport\nf-storport-scsiportwriteregisterbufferuchar.md">ScsiPortWriteRegisterBufferUchar</a>
 
 
 

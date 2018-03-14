@@ -251,11 +251,11 @@ For more information about operation regions, see <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>
-
-
-
 <a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
+
+
+
+<a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>
 
 
 

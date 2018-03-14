@@ -124,7 +124,7 @@ The <b>EVT_WDF_DMA_ENABLER_DISABLE</b> function type is defined in the WdfDmaEna
 
 ## See Also
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
+<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md">EvtDmaEnablerEnable</a>
 
 
 
@@ -132,7 +132,7 @@ The <b>EVT_WDF_DMA_ENABLER_DISABLE</b> function type is defined in the WdfDmaEna
 
 
 
-<a href="..\wdfdmaenabler\nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md">EvtDmaEnablerEnable</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
 
 

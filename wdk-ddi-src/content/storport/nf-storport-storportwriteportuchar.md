@@ -80,7 +80,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\srb\nf-srb-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>. For a buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportbufferuchar.md">StorPortWritePortBufferUchar</a>.
+For more information, see <a href="..\storport\nf-storport-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>. For a buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportbufferuchar.md">StorPortWritePortBufferUchar</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,11 +91,11 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportuchar.md">Scsi
 
 ## See Also
 
+<a href="..\storport\nf-storport-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>
+
+
+
 <a href="..\storport\nf-storport-storportwriteportbufferuchar.md">StorPortWritePortBufferUchar</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportwriteportuchar.md">ScsiPortWritePortUchar</a>
 
 
 

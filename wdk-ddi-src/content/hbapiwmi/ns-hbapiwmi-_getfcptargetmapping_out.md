@@ -87,7 +87,7 @@ The WMI tool suite generates a declaration of the GetFcpTargetMapping_OUT struct
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
 
 
 
@@ -95,7 +95,7 @@ The WMI tool suite generates a declaration of the GetFcpTargetMapping_OUT struct
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
 
 

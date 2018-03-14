@@ -50,7 +50,7 @@ Loads or unloads the tape, resets tape tension, locks or unlocks the ejection me
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\minitape\ns-minitape-_tape_prepare.md">TAPE_PREPARE</a> structure that indicates the type of operation.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddtape\ns-ntddtape-_tape_prepare.md">TAPE_PREPARE</a> structure that indicates the type of operation.
 
 If the <b>Immediate</b> member is <b>TRUE</b>, the operation should be asynchronous.
 
@@ -80,15 +80,15 @@ The <b>Information</b> field is set to the number of bytes transferred. The <b>S
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
-
-
-
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
 
 
 
-<a href="..\minitape\ns-minitape-_tape_prepare.md">TAPE_PREPARE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
+
+
+
+<a href="..\ntddtape\ns-ntddtape-_tape_prepare.md">TAPE_PREPARE</a>
 
 
 

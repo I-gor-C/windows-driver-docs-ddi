@@ -96,11 +96,11 @@ Initiators should register each instance of the MSiSCSI_NICConfig class by using
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>
-
-
-
 <a href="..\iscsicfg\ne-iscsicfg-piscsi_nic_linkstate.md">ISCSI_NIC_LINKSTATE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563083">MSiSCSI_NICConfig WMI Class</a>
 
 
 

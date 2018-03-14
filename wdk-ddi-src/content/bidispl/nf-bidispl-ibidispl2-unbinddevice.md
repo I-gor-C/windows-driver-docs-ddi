@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: bidispl.h
+req.lib: 
 req.dll: Bidispl.dll
 req.irql: 
 topic_type:
@@ -108,7 +108,6 @@ The <b>HRESULT</b> contains an error code that corresponds to the last error.
 | **Windows version** | Windows Vista Windows Server 2008 |
 | **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** | bidispl.h |
 | **DLL** | Bidispl.dll |
 
 ## See Also
@@ -117,7 +116,7 @@ The <b>HRESULT</b> contains an error code that corresponds to the last error.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidispl2.md">IBidiSpl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 
 
 
@@ -125,7 +124,7 @@ The <b>HRESULT</b> contains an error code that corresponds to the last error.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="..\bidispl\nn-bidispl-ibidispl2.md">IBidiSpl2</a>
 
 
 

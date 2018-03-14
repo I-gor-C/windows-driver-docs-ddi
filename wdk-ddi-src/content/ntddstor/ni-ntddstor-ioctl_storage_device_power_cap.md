@@ -87,11 +87,11 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 ## See Also
 
-<a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a>
-
-
-
 <a href="..\ntddstor\ne-ntddstor-_storage_device_power_cap_units.md">STORAGE_DEVICE_POWER_CAP_UNITS</a>
+
+
+
+<a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a>
 
 
 

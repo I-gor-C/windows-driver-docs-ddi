@@ -104,7 +104,11 @@ Before calling <b>CcPurgeCacheSection</b>, the caller must acquire the file excl
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 
 
 
@@ -116,11 +120,7 @@ Before calling <b>CcPurgeCacheSection</b>, the caller must acquire the file excl
 
 
 
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
 
 
 

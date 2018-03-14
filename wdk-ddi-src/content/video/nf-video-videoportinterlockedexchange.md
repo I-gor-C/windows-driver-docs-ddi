@@ -90,15 +90,15 @@ When the buffer is not being read from or written to, the lock variable should h
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetCommonBuffer</a>
-
-
-
 <a href="..\video\nf-video-videoportinterlockeddecrement.md">VideoPortInterlockedDecrement</a>
 
 
 
 <a href="..\video\nf-video-videoportinterlockedincrement.md">VideoPortInterlockedIncrement</a>
+
+
+
+<a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetCommonBuffer</a>
 
 
 

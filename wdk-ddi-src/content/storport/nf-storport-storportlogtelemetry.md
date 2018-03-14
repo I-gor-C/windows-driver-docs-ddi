@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any
 topic_type:
@@ -140,7 +140,6 @@ If miniport has no payload to fill in Event-&gt;EventBuffer, it should set Event
 | **Windows version** | Windows 10, version 1703 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | storport.h (include Storport.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
 
 ## See Also

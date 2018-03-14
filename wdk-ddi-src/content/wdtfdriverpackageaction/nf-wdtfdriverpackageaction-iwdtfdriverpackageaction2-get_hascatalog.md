@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFDriverPackageAction.Interop.dll
 req.type-library: 
-req.lib: wdtfdriverpackageaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -77,7 +77,6 @@ None
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtfdriverpackageaction.h |
-| **Library** | wdtfdriverpackageaction.h |
 
 ## See Also
 

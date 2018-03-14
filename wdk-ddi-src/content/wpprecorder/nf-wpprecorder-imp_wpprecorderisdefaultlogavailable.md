@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -71,4 +71,3 @@ TRUE if the default log is available; otherwise, FALSE.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wpprecorder.h |
-| **Library** | NtosKrnl.exe |

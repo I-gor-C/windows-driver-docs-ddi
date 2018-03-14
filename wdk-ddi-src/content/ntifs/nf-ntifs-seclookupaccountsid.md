@@ -207,11 +207,11 @@ In addition to looking up SIDs for local accounts, local domain accounts, and ex
 
 
 
-<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
-
-
-
 <a href="..\ntifs\ne-ntifs-_sid_name_use.md">SID_NAME_USE</a>
+
+
+
+<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
 
 
 

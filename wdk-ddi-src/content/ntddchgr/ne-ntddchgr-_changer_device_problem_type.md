@@ -149,11 +149,11 @@ typedef enum _CHANGER_DEVICE_PROBLEM_TYPE {
 
 ## See Also
 
-<a href="..\wmidata\ns-wmidata-_wmi_changer_problem_device_error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
-
-
-
 <a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
+
+
+
+<a href="..\wmidata\ns-wmidata-_wmi_changer_problem_device_error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
 
 
 

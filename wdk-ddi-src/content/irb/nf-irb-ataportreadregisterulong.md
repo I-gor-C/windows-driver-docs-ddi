@@ -80,7 +80,7 @@ A pointer to the register to read. The address value that is assigned to this pa
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreadregisterushort.md">AtaPortReadRegisterUshort</a>
+<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
 
 
 
@@ -88,7 +88,7 @@ A pointer to the register to read. The address value that is assigned to this pa
 
 
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="..\irb\nf-irb-ataportreadregisterushort.md">AtaPortReadRegisterUshort</a>
 
 
 

@@ -85,11 +85,11 @@ A miniport driver cannot call <b>VideoPortStartTimer</b> or <b>VideoPortStopTime
 
 ## See Also
 
-<a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a>
-
-
-
 <a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
+
+
+
+<a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a>
 
 
 

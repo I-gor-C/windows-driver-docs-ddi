@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -105,7 +105,6 @@ This function must be defined in the .def file as DrvSplDeviceCaps @ 254, becaus
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -143,11 +143,11 @@ See the documentation for <b>KeSetTimerEx</b> for details on implementation of t
 
 ## See Also
 
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+
+
 <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
 
 
 
@@ -155,7 +155,7 @@ See the documentation for <b>KeSetTimerEx</b> for details on implementation of t
 
 
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
 
 
 

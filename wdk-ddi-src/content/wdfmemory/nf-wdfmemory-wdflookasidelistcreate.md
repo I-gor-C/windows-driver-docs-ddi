@@ -76,7 +76,7 @@ The nonzero size, in bytes, of the buffer that the framework will allocate for e
 
 `PoolType`
 
-A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated.
+A <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated.
 
 `MemoryAttributes`
 
@@ -166,11 +166,11 @@ For a code example that uses <b>WdfLookasideListCreate</b>, see <a href="..\wdfm
 
 ## See Also
 
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>
-
-
-
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+
+
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>
 
 
 

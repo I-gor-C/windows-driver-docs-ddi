@@ -80,15 +80,15 @@ A pointer to the I/O port. The address value that is assigned to this parameter 
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
-
-
-
 <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
 
 
 
 <a href="..\irb\nf-irb-ataportreadportuchar.md">AtaPortReadPortUchar</a>
+
+
+
+<a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
 
 
 

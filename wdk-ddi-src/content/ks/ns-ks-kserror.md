@@ -75,11 +75,11 @@ Streaming error notifications can be generated against the Quality Management si
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565211">KSPROPERTY_QUALITY_ERROR</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561671">KSDEGRADE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565211">KSPROPERTY_QUALITY_ERROR</a>
 
 
 

@@ -79,11 +79,11 @@ typedef struct _D3DDDIARG_SETDECODERENDERTARGET {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdecoderendertarget.md">SetDecodeRenderTarget</a>
-
-
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
+
+
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdecoderendertarget.md">SetDecodeRenderTarget</a>
 
 
 

@@ -90,15 +90,15 @@ You must implement this method.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a>
-
-
-
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsireadcapacity_in.md">ScsiReadCapacity_IN</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
+
+
+<a href="..\iscsiop\ns-iscsiop-_scsireadcapacity_in.md">ScsiReadCapacity_IN</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564890">ScsiReadCapacity</a>
 
 
 

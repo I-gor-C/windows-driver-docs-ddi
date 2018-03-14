@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: usbdlib.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -73,15 +73,10 @@ None
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | usbdlib.h (include Usbdlib.h) |
-| **Library** | usbdlib.h |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist">Routines for USB Client Drivers</a>
-
-
-
-<a href="..\usb\ns-usb-_urb_isoch_transfer.md">_URB_ISOCH_TRANSFER</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 
 
 
@@ -89,7 +84,11 @@ None
 
 
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist">Routines for USB Client Drivers</a>
+
+
+
+<a href="..\usb\ns-usb-_urb_isoch_transfer.md">_URB_ISOCH_TRANSFER</a>
 
 
 

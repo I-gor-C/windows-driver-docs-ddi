@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -96,7 +96,6 @@ WDF_COINSTALLER_INSTALL_OPTIONS_INIT(&amp;clientOptions);</pre>
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

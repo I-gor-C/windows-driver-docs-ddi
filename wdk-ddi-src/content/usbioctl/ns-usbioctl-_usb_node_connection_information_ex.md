@@ -115,11 +115,11 @@ The <b>Speed</b> member of the <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structu
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
-
-
 <a href="..\usbioctl\ne-usbioctl-_usb_connection_status.md">USB_CONNECTION_STATUS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 
 

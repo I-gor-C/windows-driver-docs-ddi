@@ -50,7 +50,7 @@ Creates the specified number of fixed, select, or initiator partition(s) of the 
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a structure of type <a href="..\minitape\ns-minitape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a> that specifies the partition(s) to be created.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a structure of type <a href="..\ntddtape\ns-ntddtape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a> that specifies the partition(s) to be created.
 
 ### Input Buffer Length
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be &gt;= <b>sizeof</b>(TAPE_CREATE_PARTITION).
@@ -82,7 +82,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 
 
-<a href="..\minitape\ns-minitape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a>
+<a href="..\ntddtape\ns-ntddtape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a>
 
 
 

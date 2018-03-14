@@ -3,12 +3,12 @@ UID: NS:gnssdriver.GNSS_EVENT
 title: GNSS_EVENT
 author: windows-driver-content
 description: This structure defines the information required for a GNSS event.
-old-location: sensors\gnss_event.htm
-old-project: sensors
+old-location: gnss\gnss_event.htm
+old-project: gnss
 ms.assetid: FECF2444-CFF7-4B4D-AC3A-D3DD9B045AFD
 ms.author: windowsdriverdev
-ms.date: 2/22/2018
-ms.keywords: "*PGNSS_EVENT, GNSS_EVENT, GNSS_EVENT structure [Sensor Devices], PGNSS_EVENT, PGNSS_EVENT structure pointer [Sensor Devices], gnssdriver/GNSS_EVENT, gnssdriver/PGNSS_EVENT, sensors.gnss_event"
+ms.date: 2/15/2018
+ms.keywords: "*PGNSS_EVENT, GNSS_EVENT, GNSS_EVENT structure [Sensor Devices], PGNSS_EVENT, PGNSS_EVENT structure pointer [Sensor Devices], gnss.gnss_event, gnssdriver/GNSS_EVENT, gnssdriver/PGNSS_EVENT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct

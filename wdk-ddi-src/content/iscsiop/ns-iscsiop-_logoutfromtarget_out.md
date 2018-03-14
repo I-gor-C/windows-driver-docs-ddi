@@ -70,7 +70,7 @@ You must implement this method.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561602">LogoutFromTarget</a>
 
 
 
@@ -78,15 +78,15 @@ You must implement this method.
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_logoutfromtarget_in.md">LogoutFromTarget_IN</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561602">LogoutFromTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
+
+
+<a href="..\iscsiop\ns-iscsiop-_logoutfromtarget_in.md">LogoutFromTarget_IN</a>
 
 
 

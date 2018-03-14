@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -88,4 +88,3 @@ If this function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | winspool.h |
-| **Library** | NtosKrnl.exe |

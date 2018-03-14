@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -96,4 +96,3 @@ If you call into the core driver, cast the call using the <b>PFN_DrvPaint</b> fu
 | ---- |:---- |
 | **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** | NtosKrnl.exe |

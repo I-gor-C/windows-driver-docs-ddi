@@ -162,7 +162,7 @@ For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>
+<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
 
 
 
@@ -170,11 +170,11 @@ For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07
 
 
 
+<a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>
+
+
+
 <a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
-
-
-
-<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
 
 
 

@@ -187,11 +187,11 @@ The values that a rendering plug-in specifies for the <b>dwTypeIn </b>and <b>pGl
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554267">IPrintOemUni::OutputCharStr</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554267">IPrintOemUni::OutputCharStr</a>
 
 
 

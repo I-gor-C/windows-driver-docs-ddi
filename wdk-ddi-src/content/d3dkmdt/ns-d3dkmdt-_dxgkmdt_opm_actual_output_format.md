@@ -104,19 +104,19 @@ A bitwise OR combination of the values of the <a href="..\d3dkmdt\ne-d3dkmdt-_dx
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-
-
 <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_status.md">DXGKMDT_OPM_STATUS</a>
 
 
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_interleave_format.md">DXGKMDT_OPM_INTERLEAVE_FORMAT</a>
-
-
-
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_random_number.md">DXGKMDT_OPM_RANDOM_NUMBER</a>
+
+
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
+
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_interleave_format.md">DXGKMDT_OPM_INTERLEAVE_FORMAT</a>
 
 
 

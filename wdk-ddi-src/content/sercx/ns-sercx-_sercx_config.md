@@ -132,7 +132,7 @@ Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitializ
 
 ## See Also
 
-<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a>
+<a href="..\sercx\nc-sercx-evt_sercx_receive_cancel.md">EvtSerCxReceiveCancel</a>
 
 
 
@@ -140,19 +140,11 @@ Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitializ
 
 
 
-<a href="..\sercx\nc-sercx-evt_sercx_receive_cancel.md">EvtSerCxReceiveCancel</a>
-
-
-
-<a href="..\sercx\nc-sercx-evt_sercx_receive.md">EvtSerCxReceive</a>
-
-
-
 <a href="..\sercx\nc-sercx-evt_sercx_fileclose.md">EvtSerCxFileClose</a>
 
 
 
-<a href="..\sercx\nc-sercx-evt_sercx_transmit_cancel.md">EvtSerCxTransmitCancel</a>
+<a href="..\sercx\nc-sercx-evt_sercx_transmit.md">EvtSerCxTransmit</a>
 
 
 
@@ -160,11 +152,15 @@ Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitializ
 
 
 
-<a href="..\sercx\nc-sercx-evt_sercx_control.md">EvtSerCxControl</a>
+<a href="..\sercx\nc-sercx-evt_sercx_receive.md">EvtSerCxReceive</a>
 
 
 
-<a href="..\sercx\nc-sercx-evt_sercx_transmit.md">EvtSerCxTransmit</a>
+<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
+
+
+
+<a href="..\sercx\nc-sercx-evt_sercx_transmit_cancel.md">EvtSerCxTransmitCancel</a>
 
 
 
@@ -176,11 +172,11 @@ Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitializ
 
 
 
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a>
+
+
+
 <a href="..\sercx\nc-sercx-evt_sercx_fileopen.md">EvtSerCxFileOpen</a>
-
-
-
-<a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
 
 
 
@@ -188,7 +184,11 @@ Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitializ
 
 
 
-<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
+<a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
+
+
+
+<a href="..\sercx\nc-sercx-evt_sercx_control.md">EvtSerCxControl</a>
 
 
 

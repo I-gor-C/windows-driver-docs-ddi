@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -112,4 +112,3 @@ The function should return the minimum required buffer size in the location poin
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | winspool.h (include Winspool.h) |
-| **Library** | NtosKrnl.exe |

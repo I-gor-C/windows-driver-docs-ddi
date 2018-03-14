@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "_Must_inspect_result_"
 topic_type:
@@ -73,5 +73,4 @@ The monitor object that is departing
 | **Windows version** | Windows 10 Windows Server 2016 |
 | **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |

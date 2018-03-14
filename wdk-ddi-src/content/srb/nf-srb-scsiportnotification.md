@@ -421,11 +421,15 @@ A miniport driver that is registered as a WMI data provider can call <b>ScsiPort
 
 ## See Also
 
+<a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
+
+
+
 <a href="..\strmini\nc-strmini-phw_interrupt.md">HwScsiDisableInterruptsCallback</a>
 
 
 
-<a href="..\srb\nc-srb-phw_timer.md">HwScsiTimer</a>
+<a href="..\strmini\nc-strmini-phw_interrupt.md">HwScsiEnableInterruptsCallback</a>
 
 
 
@@ -433,11 +437,7 @@ A miniport driver that is registered as a WMI data provider can call <b>ScsiPort
 
 
 
-<a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
-
-
-
-<a href="..\strmini\nc-strmini-phw_interrupt.md">HwScsiEnableInterruptsCallback</a>
+<a href="..\srb\nc-srb-phw_timer.md">HwScsiTimer</a>
 
 
 

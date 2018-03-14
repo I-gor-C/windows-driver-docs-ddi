@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -95,7 +95,6 @@ The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="htt
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

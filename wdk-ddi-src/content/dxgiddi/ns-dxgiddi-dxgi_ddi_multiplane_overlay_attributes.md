@@ -169,7 +169,19 @@ Specifies YUV range and conversion info as one of the applicable values in the <
 
 ## See Also
 
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_stereo_format.md">DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
+
+
+
 <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_flags.md">DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS</a>
+
+
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_video_frame_format.md">DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+
+
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_stereo_flip_mode.md">DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
 
 
 
@@ -185,23 +197,11 @@ Specifies YUV range and conversion info as one of the applicable values in the <
 
 
 
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_stereo_format.md">DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
-
-
-
 <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_ycbcr_flags.md">DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
 
 
 
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_video_frame_format.md">DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_stereo_flip_mode.md">DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
 
 
 

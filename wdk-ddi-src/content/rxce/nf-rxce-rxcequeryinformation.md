@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: "<= APC_LEVEL"
 topic_type:
@@ -181,7 +181,6 @@ For some values of <i>InformationClass</i>, <b>RxCeQueryInformation</b> calls <b
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h, Rxcehdlr.h, Tdi.h) |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 
 ## See Also

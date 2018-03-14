@@ -82,7 +82,7 @@ should be the number of milliseconds that have elapsed since midnight, 1 January
 
 ## See Also
 
-<a href="..\scsi\ns-scsi-rt_parameter_data.md">RT_PARAMETER_DATA</a>
+<a href="..\storport\ns-storport-rt_parameter_data.md">RT_PARAMETER_DATA</a>
 
 
 

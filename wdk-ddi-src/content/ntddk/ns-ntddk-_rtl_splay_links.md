@@ -58,10 +58,6 @@ typedef struct _RTL_SPLAY_LINKS {
 ## Members
 
 
-`_RTL_SPLAY_LINKS`
-
-
-
 `LeftChild`
 
 An opaque pointer to the left child node for this node.  If no left-child node exists, the value of this member is <b>NULL</b>.
@@ -107,11 +103,7 @@ Callers of the <b>Rtl</b><b><i>Xxx</i></b> splay tree routines are responsible f
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-rtlleftchild.md">RtlLeftChild</a>
+<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
 
 
 
@@ -119,7 +111,11 @@ Callers of the <b>Rtl</b><b><i>Xxx</i></b> splay tree routines are responsible f
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
+<a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
+
+
+
+<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
 
 
 
@@ -127,7 +123,7 @@ Callers of the <b>Rtl</b><b><i>Xxx</i></b> splay tree routines are responsible f
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
+<a href="..\ntddk\nf-ntddk-rtlleftchild.md">RtlLeftChild</a>
 
 
 

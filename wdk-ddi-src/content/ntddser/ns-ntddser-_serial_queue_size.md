@@ -75,11 +75,11 @@ This structure is used by <a href="..\ntddser\ni-ntddser-ioctl_serial_set_queue_
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-
-
-
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_queue_size.md">IOCTL_SERIAL_SET_QUEUE_SIZE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
 
 

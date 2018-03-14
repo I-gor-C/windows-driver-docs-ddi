@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdm.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -88,7 +88,6 @@ If <i>Expression</i> evaluates to <b>FALSE</b>, a message is displayed in the De
 | **Windows version** | Available in Microsoft Windows 2000 and later.  |
 | **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
-| **Library** | wdm.h |
 
 ## See Also
 

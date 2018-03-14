@@ -94,7 +94,7 @@ Pointer to a STATUS_BLOCK structure in the <a href="https://msdn.microsoft.com/a
 
 ## See Also
 
-<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
 
 
 
@@ -102,7 +102,7 @@ Pointer to a STATUS_BLOCK structure in the <a href="https://msdn.microsoft.com/a
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
+<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
 
 

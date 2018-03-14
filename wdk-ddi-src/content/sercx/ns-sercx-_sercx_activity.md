@@ -86,6 +86,10 @@ Typically, <b>SerCxGetActivity</b> is called from the main loop of the transmit/
 
 ## See Also
 
+<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
+
+
+
 <a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a>
 
 
@@ -94,15 +98,11 @@ Typically, <b>SerCxGetActivity</b> is called from the main loop of the transmit/
 
 
 
-<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
-
-
-
 <a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a>
 
 
 
-<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 
 
 

@@ -44,7 +44,7 @@ req.typenames: SCSI_POWER_REQUEST_BLOCK, *PSCSI_POWER_REQUEST_BLOCK
 ---
 
 # _SCSI_POWER_REQUEST_BLOCK structure
-The <b>SCSI_POWER_REQUEST_BLOCK</b> structure is a special version of a <a href="..\minitape\ns-minitape-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> that is used for power management requests.
+The <b>SCSI_POWER_REQUEST_BLOCK</b> structure is a special version of a <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> that is used for power management requests.
 <div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
@@ -77,10 +77,6 @@ typedef struct _SCSI_POWER_REQUEST_BLOCK {
 ## Members
 
 
-`_SCSI_REQUEST_BLOCK`
-
-
-
 `DataBuffer`
 
 Miniport driver should ignore this member.
@@ -91,7 +87,7 @@ Miniport driver should ignore this member.
 
 `DevicePowerState`
 
-An enumerator value of type <a href="..\minitape\ne-minitape-_stor_device_power_state.md">STOR_DEVICE_POWER_STATE</a> that specifies the requested power state of the device.
+An enumerator value of type <a href="..\storport\ne-storport-_stor_device_power_state.md">STOR_DEVICE_POWER_STATE</a> that specifies the requested power state of the device.
 
 `Function`
 
@@ -119,7 +115,7 @@ The SCSI port or bus identifier for the request. This value is zero based.
 
 `PowerAction`
 
-An enumerator value of type <a href="..\minitape\ne-minitape-pstor_power_action.md">STOR_POWER_ACTION</a> that specifies the type of system shutdown that is about to occur. This value is meaningful only if the device is moving into the D1, D2, or D3 power state as indicated by the <b>DevicePowerState</b> member.
+An enumerator value of type <a href="..\storport\ne-storport-pstor_power_action.md">STOR_POWER_ACTION</a> that specifies the type of system shutdown that is about to occur. This value is meaningful only if the device is moving into the D1, D2, or D3 power state as indicated by the <b>DevicePowerState</b> member.
 
 `Reserved`
 
@@ -135,7 +131,7 @@ Miniport driver should ignore this member.
 
 `SrbExtension`
 
-A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine.
+A pointer to the SRB extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the <a href="..\storport\nf-storport-storportgetphysicaladdress.md">StorPortGetPhysicalAddress</a> routine.
 
 `SrbFlags`
 
@@ -149,7 +145,7 @@ The power management flags. Currently, the only flag allowed is SRB_POWER_FLAGS_
 
 The status of the completed request. This member should be set by the miniport driver before it notifies the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a> function with the <a href="https://msdn.microsoft.com/abceaf2c-3512-409c-9274-096eab810ab2">RequestComplete</a> notification type.
 
-See <a href="..\minitape\ns-minitape-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> in the WDK documentation for a list of possible values for this member.
+See <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> in the WDK documentation for a list of possible values for this member.
 
 `TargetId`
 
@@ -194,7 +190,7 @@ The miniport can access the adapter's hardware resources.
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
+<a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
 
 
@@ -202,7 +198,7 @@ The miniport can access the adapter's hardware resources.
 
 
 
-<a href="..\minitape\ns-minitape-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: prcomoem.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -105,7 +105,6 @@ The <b>GetNamedCommand</b> method will not return commands containing references
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | prcomoem.h |
-| **Library** | prcomoem.h |
 
 ## See Also
 

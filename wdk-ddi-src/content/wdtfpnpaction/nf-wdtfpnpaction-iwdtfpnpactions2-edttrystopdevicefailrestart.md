@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdtfpnpaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -94,7 +94,6 @@ is a USB mouse, you can run this method on the parent USB controller instead.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdtfpnpaction.h |
-| **Library** | wdtfpnpaction.h |
 
 ## See Also
 

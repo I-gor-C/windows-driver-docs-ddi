@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: Any IRQL
 topic_type:
@@ -76,16 +76,15 @@ Your SPB controller driver must use this function to initialize an <b>SPB_CONTRO
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | spbcx.h |
-| **Library** | NtosKrnl.exe |
 | **IRQL** | Any IRQL |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406206">SPB_CONTROLLER_CONFIG</a>
 
 
 

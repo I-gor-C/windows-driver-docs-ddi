@@ -295,7 +295,11 @@ The video miniport driver supplies the <b>Size</b> and <b>Version</b> members of
 
 ## See Also
 
-<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a>
 
 
 
@@ -303,15 +307,11 @@ The video miniport driver supplies the <b>Size</b> and <b>Version</b> members of
 
 
 
-<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a>
 
 
 

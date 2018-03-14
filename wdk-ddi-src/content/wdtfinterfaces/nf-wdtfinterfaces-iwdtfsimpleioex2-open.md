@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFInterfaces.Interop.dll
 req.type-library: 
-req.lib: wdtfinterfaces.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -78,7 +78,6 @@ the <a href="https://msdn.microsoft.com/795dcbed-e0ce-444d-a6a8-95d0bc658f5b">IW
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Desktop |
 | **Header** | wdtfinterfaces.h |
-| **Library** | wdtfinterfaces.h |
 
 ## See Also
 

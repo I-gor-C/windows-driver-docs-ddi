@@ -114,7 +114,7 @@ typedef struct _PORT_CONFIGURATION_INFORMATION {
 
 `AdapterInterfaceType`
 
-Identifies the I/O bus interface. The OS-specific port driver always sets this member to the value specified by the miniport driver in the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a> structure.
+Identifies the I/O bus interface. The OS-specific port driver always sets this member to the value specified by the miniport driver in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a> structure.
 
 `BusInterruptLevel`
 
@@ -204,19 +204,11 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
+<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
 
 
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
-
-
-
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
+<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
 
 
 
@@ -224,7 +216,7 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 
 
-<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 
 
 
@@ -232,7 +224,15 @@ This means that if the miniport driver needs additional space in either the LUN 
 
 
 
-<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+
+
+
+<a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
 
 
 

@@ -102,7 +102,7 @@ typedef enum _STOR_DEVICE_POWER_STATE {
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_scsi_power_request_block.md">SCSI_POWER_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_scsi_power_request_block.md">SCSI_POWER_REQUEST_BLOCK</a>
 
 
 

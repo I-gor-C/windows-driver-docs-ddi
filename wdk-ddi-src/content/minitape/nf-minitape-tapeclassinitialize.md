@@ -94,11 +94,11 @@ A tape miniclass driver allocates a TAPE_INIT_DATA_EX structure on the stack, cl
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+
+
+
+<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
 
 
 

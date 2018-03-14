@@ -44,7 +44,7 @@ req.typenames: D3DKMT_VIDPNSOURCEOWNER_FLAGS
 ---
 
 # _D3DKMT_VIDPNSOURCEOWNER_FLAGS structure
-Specifies output duplication options for use with the <a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_setvidpnsourceowner1.md">D3DKMTSetVidPnSourceOwner1</a> function.
+Specifies output duplication options for use with the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner1.md">D3DKMTSetVidPnSourceOwner1</a> function.
 
 ## Syntax
 ````
@@ -71,7 +71,7 @@ typedef struct _D3DKMT_VIDPNSOURCEOWNER_FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmthk\nc-d3dkmthk-pfnd3dkmt_setvidpnsourceowner1.md">D3DKMTSetVidPnSourceOwner1</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetvidpnsourceowner1.md">D3DKMTSetVidPnSourceOwner1</a>
 
 
 

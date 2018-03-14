@@ -80,11 +80,11 @@ Returns the current counter. A count of zero implies that the task list has been
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksregistercountedworker.md">KsRegisterCountedWorker</a>
-
-
-
 <a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a>
+
+
+
+<a href="..\ks\nf-ks-ksregistercountedworker.md">KsRegisterCountedWorker</a>
 
 
 

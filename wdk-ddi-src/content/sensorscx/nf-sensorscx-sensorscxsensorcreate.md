@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -109,7 +109,6 @@ The sensors class extension writes a set of properties for each sensor when Sens
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

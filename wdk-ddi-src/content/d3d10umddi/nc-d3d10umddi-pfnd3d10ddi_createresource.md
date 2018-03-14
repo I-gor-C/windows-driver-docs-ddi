@@ -112,7 +112,7 @@ Additionally, to support stereo presentation, the <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt.md">DXGI_DDI_ARG_BLT</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
 
 
 
@@ -120,7 +120,15 @@ Additionally, to support stereo presentation, the <a href="https://msdn.microsof
 
 
 
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
+
+
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_destroyresource.md">DestroyResource(D3D10)</a>
+
+
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt.md">DXGI_DDI_ARG_BLT</a>
 
 
 
@@ -129,14 +137,6 @@ Additionally, to support stereo presentation, the <a href="https://msdn.microsof
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
-
-
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 
 
 

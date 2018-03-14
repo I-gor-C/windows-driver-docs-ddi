@@ -77,7 +77,7 @@ The following figure shows a portion of a sample command buffer containing a D3D
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+D3DDP2OP_TRIANGLEFAN
 
 
 
@@ -85,7 +85,7 @@ The following figure shows a portion of a sample command buffer containing a D3D
 
 
 
-D3DDP2OP_TRIANGLEFAN
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 
 

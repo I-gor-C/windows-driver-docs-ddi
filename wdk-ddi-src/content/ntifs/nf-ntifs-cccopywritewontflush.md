@@ -87,7 +87,7 @@ Length in bytes of the data to be copied.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 
 
 
@@ -95,7 +95,7 @@ Length in bytes of the data to be copied.
 
 
 
-<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccaniwrite.md">CcCanIWrite</a>
 
 
 

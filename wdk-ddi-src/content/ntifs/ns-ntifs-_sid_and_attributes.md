@@ -71,7 +71,7 @@ A group is represented by a SID. SIDs have attributes that indicate whether they
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
 
 
 
@@ -79,7 +79,7 @@ A group is represented by a SID. SIDs have attributes that indicate whether they
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
 
 
 

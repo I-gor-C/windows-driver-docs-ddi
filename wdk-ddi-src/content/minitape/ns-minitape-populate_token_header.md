@@ -65,11 +65,11 @@ typedef struct _POPULATE_TOKEN_HEADER {
 
 `BlockDeviceRangeDescriptor`
 
-An array of <a href="..\minitape\ns-minitape-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.
+An array of <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the logical blocks representing the file being read from the LUN.
 
 `BlockDeviceRangeDescriptorListLength`
 
-The length, in bytes, for all  of the <a href="..\minitape\ns-minitape-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
+The length, in bytes, for all  of the <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures in the <b>BlockDeviceRangeDescriptor</b> array.
 
 `Immediate`
 
@@ -96,7 +96,7 @@ Reserved.
 Reserved.
 
 ## Remarks
-The <b>POPULATE_TOKEN_HEADER</b> structure contains a series of <a href="..\minitape\ns-minitape-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the token ROD.
+The <b>POPULATE_TOKEN_HEADER</b> structure contains a series of <a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a> structures which describe the token ROD.
 
 All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.
 
@@ -108,7 +108,7 @@ All multibyte values are in big endian format. Prior to setting, these values mu
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
+<a href="..\storport\ns-storport-block_device_range_descriptor.md">BLOCK_DEVICE_RANGE_DESCRIPTOR</a>
 
 
 

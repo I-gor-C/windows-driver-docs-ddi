@@ -90,7 +90,7 @@ You must implement this method.
 
 ## See Also
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsiinquiry_in.md">ScsiInquiry_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 
 
@@ -98,7 +98,7 @@ You must implement this method.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_in.md">ScsiInquiry_IN</a>
 
 
 

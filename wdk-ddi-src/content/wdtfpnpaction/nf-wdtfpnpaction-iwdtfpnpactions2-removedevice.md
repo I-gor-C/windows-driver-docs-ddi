@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: wdtfpnpaction.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -76,7 +76,6 @@ Under the covers, this will call DIF_REMOVE.
 | ---- |:---- |
 | **Target Platform** | Desktop |
 | **Header** | wdtfpnpaction.h |
-| **Library** | wdtfpnpaction.h |
 
 ## See Also
 

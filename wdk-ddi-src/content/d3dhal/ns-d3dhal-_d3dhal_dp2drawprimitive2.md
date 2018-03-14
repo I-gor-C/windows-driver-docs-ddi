@@ -83,15 +83,7 @@ The vertex data has been transformed by the runtime.
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-
-
-
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-
-
-D3DDP2OP_DRAWPRIMITIVE2
+D3DDP2OP_DRAWPRIMITIVE
 
 
 
@@ -99,7 +91,15 @@ D3DDP2OP_DRAWPRIMITIVE2
 
 
 
-D3DDP2OP_DRAWPRIMITIVE
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+
+
+D3DDP2OP_DRAWPRIMITIVE2
+
+
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 
 

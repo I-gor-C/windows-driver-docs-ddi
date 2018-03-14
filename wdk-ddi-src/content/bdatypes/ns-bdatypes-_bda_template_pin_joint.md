@@ -73,11 +73,11 @@ Index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or
 
 ## See Also
 
-<a href="..\bdatypes\ns-bdatypes-_bda_template_connection.md">BDA_TEMPLATE_CONNECTION</a>
-
-
-
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+
+
+
+<a href="..\bdatypes\ns-bdatypes-_bda_template_connection.md">BDA_TEMPLATE_CONNECTION</a>
 
 
 

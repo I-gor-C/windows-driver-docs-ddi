@@ -103,7 +103,7 @@ The operating system guarantees that only one of the <i>CreateMiracastContext</i
 
 
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
 
 
 
@@ -111,7 +111,7 @@ The operating system guarantees that only one of the <i>CreateMiracastContext</i
 
 
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
 
 
 

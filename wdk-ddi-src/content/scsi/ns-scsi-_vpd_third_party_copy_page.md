@@ -79,7 +79,7 @@ The length, in bytes, of the VPD page. For offload data transfer on Windows, <b>
 
 `ThirdPartyCopyDescriptors`
 
-Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="..\minitape\ns-minitape-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.
+Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="..\storport\ns-storport-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.
 
 ## Remarks
 All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
@@ -92,7 +92,7 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
+<a href="..\storport\ns-storport-_windows_block_device_token_limits_descriptor.md">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
 
 
 

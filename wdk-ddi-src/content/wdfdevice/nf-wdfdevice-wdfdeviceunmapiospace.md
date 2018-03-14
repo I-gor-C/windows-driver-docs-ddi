@@ -98,11 +98,11 @@ If a driver calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">Wdf
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
-
-
-
 <a href="https://msdn.microsoft.com/E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18">IWDFDevice3::UnmapIoSpace</a>
+
+
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
 
 
 

@@ -101,7 +101,7 @@ Specifies whether <b>Device Manager</b> should suppress all installation dialog 
 
 `SurpriseRemovalOK`
 
-Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\minitape\ns-minitape-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in.
+Specifies whether the miniport driver for the device can handle the case where the device is removed before Storport can send SRB_FUNCTION_PNP with <b>StorRemoveDevice</b> as the <b>PnPAction</b> in the <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If <b>SurpriseRemovalOK</b> is set to <b>TRUE</b>, the device can be safely removed from its immediate parent regardless of the state that its driver is in.
 
 `UniqueID`
 
@@ -112,11 +112,11 @@ Specifies whether the device's instance ID is unique system-wide. This bit is cl
 Specifies the version of the structure. Set to STOR_DEVICE_CAPABILITIES_EX_VERSION_1 by Storport.
 
 ## Remarks
-When a miniport driver receives an SRB in its <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="..\minitape\ns-minitape-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES</b> structure in the <b>DataBuffer</b> member of the SRB.
+When a miniport driver receives an SRB in its <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine where the SRB function is SRB_FUNCTION_PNP, the SRB is formatted as a <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a> structure. If the <b>PnPAction</b> member of the SRB is <b>StorQueryCapabilities</b>, the miniport can return a <b>STOR_DEVICE_CAPABILITIES</b> structure in the <b>DataBuffer</b> member of the SRB.
 
 Storport sends this structure to the miniport with all members initialized to 0. On return, only the <b>Removable</b> field is used from this structure.
 
-Starting with Windows 8, miniports should use the <a href="..\minitape\ns-minitape-_stor_device_capabilities_ex.md">STOR_DEVICE_CAPABILITIES_EX</a> structure to indicate support for additional capabilities.
+Starting with Windows 8, miniports should use the <a href="..\storport\ns-storport-_stor_device_capabilities_ex.md">STOR_DEVICE_CAPABILITIES_EX</a> structure to indicate support for additional capabilities.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -126,7 +126,7 @@ Starting with Windows 8, miniports should use the <a href="..\minitape\ns-minit
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_stor_device_capabilities_ex.md">STOR_DEVICE_CAPABILITIES_EX</a>
+<a href="..\storport\ns-storport-_stor_device_capabilities_ex.md">STOR_DEVICE_CAPABILITIES_EX</a>
 
 
 
@@ -134,7 +134,7 @@ Starting with Windows 8, miniports should use the <a href="..\minitape\ns-minit
 
 
 
-<a href="..\minitape\ns-minitape-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a>
 
 
 

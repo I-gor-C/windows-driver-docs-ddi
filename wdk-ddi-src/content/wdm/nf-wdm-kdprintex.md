@@ -97,15 +97,15 @@ This routine is defined in ntddk.h and ndis.h; component filter IDs are defined 
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
+
+
+
 <a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 
 
 
 <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
-
-
-
-<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
 
 
 

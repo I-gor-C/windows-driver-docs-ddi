@@ -97,11 +97,11 @@ Version of this structure.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/5F71CCBE-F93F-4DCD-A673-1D6DE49C7400">IOCTL_STORAGE_DIAGNOSTIC</a>
-
-
-
 <a href="..\ntddstor\ns-ntddstor-_storage_diagnostic_request.md">STORAGE_DIAGNOSTIC_REQUEST</a>
+
+
+
+<a href="https://msdn.microsoft.com/5F71CCBE-F93F-4DCD-A673-1D6DE49C7400">IOCTL_STORAGE_DIAGNOSTIC</a>
 
 
 

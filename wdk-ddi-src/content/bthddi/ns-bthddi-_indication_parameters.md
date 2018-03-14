@@ -151,11 +151,7 @@ When the Bluetooth driver stack passes
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
-
-
-
-<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
+<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
 
 
 
@@ -163,7 +159,11 @@ When the Bluetooth driver stack passes
 
 
 
-<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
+<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
+
+
+
+<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
 
 
 

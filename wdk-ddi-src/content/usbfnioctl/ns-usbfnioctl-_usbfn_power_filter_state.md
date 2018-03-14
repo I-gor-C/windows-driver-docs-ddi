@@ -73,11 +73,11 @@ Describes the USB device states for the device/controller.  These states corresp
 
 ## See Also
 
-<a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_set_power_filter_exit_lpm.md">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM</a>
-
-
-
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_set_power_filter_state.md">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE</a>
+
+
+
+<a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_set_power_filter_exit_lpm.md">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM</a>
 
 
 

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -72,5 +72,4 @@ None
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfverifier.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 | **DDI compliance rules** | DriverCreate |

@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: NtosKrnl.exe
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -91,7 +91,6 @@ For a code example that uses <b>WDF_WMI_PROVIDER_CONFIG_INIT</b>, see <a href=".
 | **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** | NtosKrnl.exe |
 
 ## See Also
 

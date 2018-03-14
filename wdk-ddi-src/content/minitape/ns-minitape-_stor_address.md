@@ -111,11 +111,11 @@ The address is an 8-bit Bus-Target-LUN address.
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
-
-
-
 <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
+
+
+
+<a href="..\storport\ns-storport-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
 
 
 

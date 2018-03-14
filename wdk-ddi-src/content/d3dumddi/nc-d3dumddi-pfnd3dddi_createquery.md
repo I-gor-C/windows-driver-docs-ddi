@@ -133,10 +133,6 @@ For more information about issue query states, see <a href="..\d3dumddi\ns-d3dum
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddidevinfo_vcache.md">D3DDDIDEVINFO_VCACHE</a>
-
-
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_issuequeryflags.md">D3DDDI_ISSUEQUERYFLAGS</a>
 
 
@@ -146,6 +142,10 @@ For more information about issue query states, see <a href="..\d3dumddi\ns-d3dum
 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddidevinfo_vcache.md">D3DDDIDEVINFO_VCACHE</a>
 
 
 
